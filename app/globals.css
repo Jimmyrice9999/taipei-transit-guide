@@ -1,0 +1,630 @@
+/*
+ * Taipei Transit Guide — site styles.
+ *
+ * Light only, by decision: this is a data reference read in daylight and
+ * screenshotted. `color-scheme: light` stops the browser auto-inverting.
+ *
+ * Colour comes from one place — the line registry in lib/lines.ts. Pages set
+ * --accent and --accent-map from their line's frontmatter; nothing here
+ * hardcodes a line colour.
+ */
+
+:root {
+  /* Neutrals, biased slightly cool so they sit under the blue and green lines
+     without going muddy against brown and orange. */
+  --bg: #ffffff;
+  --bg-well: #f4f5f7;
+  --text: #14171a;
+  --text-2: #5a6370;
+  --text-3: #79828e;
+  --rule: #e2e5ea;
+  --rule-strong: #c6ccd4;
+
+  /* Overridden per page from the line registry. Defaults are the site neutral. */
+  --accent: #3d454e; /* text-safe: accent type, rules, eyebrows */
+  --accent-map: #3d454e; /* official line colour: large fills only */
+
+  --link: #0f5ca8;
+
+  /* Set by next/font in app/layout.tsx. */
+  --font-display: var(--font-zilla), Georgia, serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
+  --measure: 68ch;
+
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  font-feature-settings: 'tnum' off;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Station code badge — the signature element                          */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Colours arrive as inline custom properties from the line registry, already
+ * checked against WCAG AA. Always shows the letter code as well as the colour:
+ * brown, orange and red are exactly the set that colour-vision deficiency
+ * confuses, so colour alone must never carry the meaning.
+ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.82em;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* Slightly larger where a badge is the row's subject rather than an aside. */
+td > .badge:only-child,
+th > .badge:only-child {
+  font-size: 0.9em;
+  padding: 3px 7px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Chinese                                                             */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Han runs are tagged lang="zh-Hant" by the build. The font stack is declared
+ * in app/layout.tsx with size-adjust, so Han sits optically level with Latin.
+ */
+:lang(zh-Hant) {
+  font-family: var(--font-han), var(--font-body);
+}
+
+/* ------------------------------------------------------------------ */
+/* Page frame                                                          */
+/* ------------------------------------------------------------------ */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 32px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+.wordmark {
+  display: block;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: var(--rule-strong);
+}
+
+.site-nav a[aria-current='true'] {
+  border-bottom-color: var(--text);
+}
+
+/*
+ * The accent bar. Uses the official line colour, with a 1px hairline of the
+ * text-safe variant beneath it — brown, orange and yellow measure under 3:1 on
+ * white, so the bar alone would have no defined edge on those lines.
+ */
+.accent-bar {
+  height: 4px;
+  background: var(--accent-map);
+}
+
+.accent-bar-hairline {
+  height: 1px;
+  background: var(--accent);
+}
+
+main {
+  padding: 26px 0 72px;
+}
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 18px 0 40px;
+  font-size: 13px;
+  color: var(--text-3);
+}
+
+.site-footer p {
+  margin: 0;
+  max-width: 76ch;
+}
+
+/* ------------------------------------------------------------------ */
+/* Page header                                                         */
+/* ------------------------------------------------------------------ */
+
+.breadcrumbs {
+  font-size: 13px;
+  color: var(--text-2);
+  margin-bottom: 12px;
+}
+
+.breadcrumbs a {
+  color: var(--text-2);
+}
+
+.breadcrumbs .sep {
+  padding: 0 6px;
+  color: var(--rule-strong);
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 9px;
+  text-wrap: balance;
+}
+
+.page-summary {
+  font-size: 17.5px;
+  line-height: 1.5;
+  color: var(--text-2);
+  margin: 0 0 24px;
+  max-width: var(--measure);
+}
+
+/* ------------------------------------------------------------------ */
+/* Content page: prose column + facts rail                             */
+/* ------------------------------------------------------------------ */
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 44px;
+  align-items: start;
+}
+
+@media (max-width: 960px) {
+  .page-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  /* Facts move above the prose when the rail collapses. */
+  .page-rail {
+    order: -1;
+  }
+}
+
+.note {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  background: var(--bg-well);
+  border-radius: 3px;
+  padding: 11px 15px;
+  font-size: 14.5px;
+  margin: 0 0 24px;
+  max-width: var(--measure);
+}
+
+.note strong {
+  font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* Quick facts                                                         */
+/* ------------------------------------------------------------------ */
+
+.facts {
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.facts-caption {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  padding: 8px 13px;
+  background: var(--bg-well);
+  border-bottom: 1px solid var(--rule);
+}
+
+.facts table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.facts th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-2);
+  width: 40%;
+  vertical-align: top;
+  padding: 8px 13px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.facts td {
+  padding: 8px 13px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+
+.facts tr:last-child th,
+.facts tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Prose                                                               */
+/* ------------------------------------------------------------------ */
+
+.prose {
+  max-width: var(--measure);
+}
+
+.prose > * {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.prose > *:last-child {
+  margin-bottom: 0;
+}
+
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--accent);
+  text-wrap: balance;
+}
+
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4em;
+}
+
+.prose li {
+  margin-bottom: 0.3em;
+}
+
+.prose blockquote {
+  margin-left: 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--rule-strong);
+  color: var(--text-2);
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  background: var(--bg-well);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* ------------------------------------------------------------------ */
+/* Data tables                                                         */
+/* ------------------------------------------------------------------ */
+
+/* Wide tables scroll inside themselves; the page never scrolls sideways. */
+.table-scroll {
+  overflow-x: auto;
+  margin-bottom: 1.4em;
+  border-radius: 3px;
+}
+
+.table-scroll:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14.5px;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+
+.prose thead th {
+  text-align: left;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  background: transparent;
+  border-bottom: 2px solid var(--accent);
+  padding: 7px 14px 7px 0;
+  white-space: nowrap;
+}
+
+.prose tbody td,
+.prose tbody th {
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 14px 8px 0;
+  vertical-align: baseline;
+}
+
+.prose tbody th {
+  text-align: left;
+  font-weight: 600;
+}
+
+.prose tbody tr:last-child td,
+.prose tbody tr:last-child th {
+  border-bottom: 0;
+}
+
+.prose tbody tr:hover {
+  background: var(--bg-well);
+}
+
+/* Markdown's alignment syntax (|---:|) survives into the output. */
+.prose th[align='right'],
+.prose td[align='right'] {
+  text-align: right;
+  padding-right: 0;
+}
+
+.prose th[align='center'],
+.prose td[align='center'] {
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* Index listings                                                      */
+/* ------------------------------------------------------------------ */
+
+.section-heading {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 34px 0 3px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.section-heading .all-link {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.section-desc {
+  color: var(--text-2);
+  font-size: 15px;
+  margin: 0 0 14px;
+  max-width: var(--measure);
+}
+
+/*
+ * Index rows. The whole row is the link — the title is a heading, not a blue
+ * underlined link, and the arrow carries the affordance instead.
+ */
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  max-width: 780px;
+  border-top: 1px solid var(--rule);
+}
+
+.card-list li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.card-list a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 16px;
+  padding: 13px 12px 13px 2px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.card-list a:hover {
+  background: var(--bg-well);
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--text);
+}
+
+.card-desc {
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-3);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.card-arrow {
+  color: var(--rule-strong);
+  transition: transform 0.12s ease, color 0.12s ease;
+}
+
+.card-list a:hover .card-arrow {
+  color: var(--accent);
+  transform: translateX(2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-arrow {
+    transition: none;
+  }
+}
+
+.empty {
+  color: var(--text-3);
+  font-size: 15px;
+  font-style: italic;
+  padding: 10px 0 18px;
+}
+
+.page-updated {
+  margin-top: 36px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--text-3);
+  max-width: var(--measure);
+}
+
+/* ------------------------------------------------------------------ */
+/* Small screens                                                       */
+/* ------------------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .page-title {
+    font-size: 29px;
+  }
+  .prose h2 {
+    font-size: 21px;
+  }
+  .facts th {
+    width: 44%;
+  }
+  .site-header .container {
+    gap: 10px 20px;
+  }
+}

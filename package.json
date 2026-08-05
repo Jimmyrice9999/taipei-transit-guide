@@ -1,0 +1,43 @@
+{
+  "name": "taipei-transit-guide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fonts": "node scripts/subset-cjk.mjs",
+    "palette": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/palette.mts",
+    "favicon": "node scripts/make-favicon.mjs",
+    "metrics": "node scripts/type-metrics.mjs",
+    "weigh": "node scripts/weigh.mjs",
+    "wordmark": "node scripts/make-wordmark.mjs",
+    "assets": "npm run fonts && npm run favicon && npm run wordmark"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5"
+  },
+  "devDependencies": {
+    "@expo-google-fonts/noto-sans-tc": "^0.4.3",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/bitter": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/zilla-slab": "^5.3.0",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "fontkit": "^2.0.4",
+    "subset-font": "^2.5.0",
+    "typescript": "^7.0.2"
+  }
+}

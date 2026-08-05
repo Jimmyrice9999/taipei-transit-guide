@@ -1,0 +1,15 @@
+{
+  "generated": "npm run fonts",
+  "characters": "內廠文木柵機湖線",
+  "count": 8,
+  "files": {
+    "noto-sans-tc-subset-400.woff2": {
+      "weight": 400,
+      "bytes": 2588
+    },
+    "noto-sans-tc-subset-700.woff2": {
+      "weight": 700,
+      "bytes": 2628
+    }
+  }
+}
