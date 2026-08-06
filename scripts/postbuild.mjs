@@ -111,7 +111,48 @@ if (dangling.length) {
   process.exit(1)
 }
 
-/* ---- 4. every rendered Han character is in the subset that page loads ---- */
+/* ---- 4. /train → /rail redirect stubs ------------------------------ */
+
+/*
+ * The section was renamed in run 5 (the network includes LRT, conventional
+ * rail and HSR — "train" read oddly across them). A static host cannot issue
+ * real redirects, so every old /train/... URL gets a stub: meta refresh for
+ * humans, canonical for crawlers, noindex so the stub itself never ranks.
+ * Generated from what the build actually exported under /rail, so a new page
+ * gets its redirect for free and a removed one stops redirecting.
+ */
+
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || 'https://jimmyrice9999.github.io'
+const RAIL = path.join(OUT, 'rail')
+
+function redirectStub(target) {
+  return [
+    '<!doctype html><html lang="en"><head><meta charset="utf-8">',
+    `<title>Moved — Taipei Transit Guide</title>`,
+    `<link rel="canonical" href="${ORIGIN}${target}">`,
+    `<meta http-equiv="refresh" content="0; url=${target}">`,
+    '<meta name="robots" content="noindex">',
+    '</head><body>',
+    `<p>This page moved to <a href="${target}">${target}</a> when the Train section became Rail.</p>`,
+    '</body></html>\n',
+  ].join('')
+}
+
+let stubs = 0
+if (fs.existsSync(RAIL)) {
+  for (const file of walk(RAIL).filter((f) => f.endsWith('.html'))) {
+    const rel = path.relative(RAIL, file).split(path.sep).join('/')
+    const target = `${BASE}/rail/${rel.replace(/index\.html$/, '')}`
+    const stub = path.join(OUT, 'train', ...rel.split('/'))
+    fs.mkdirSync(path.dirname(stub), { recursive: true })
+    fs.writeFileSync(stub, redirectStub(target))
+    stubs++
+  }
+}
+console.log(`postbuild: wrote ${stubs} /train → /rail redirect stub(s)`)
+
+/* ---- 5. every rendered Han character is in the subset that page loads ---- */
 
 /*
  * ─────────────────────────────────────────────────────────────────────────────

@@ -374,50 +374,44 @@ main {
  * media query below.
  *
  * **Deliberately NOT done on desktop**, and the reason is the layout it would
- * break. Wide elements — spec tables, maps, references — reclaim the spine's
- * column with a negative margin and `clear: left`. `clear` resolves against the
- * float's *static* position, so a float that then slides down the page ends up
- * painted over the very elements that took its space. Measured: the spec table's
- * row labels disappear behind the strip map.
+ * break. Wide elements — spec tables, maps, references — clear the float, and
+ * `clear` resolves against the float's *static* position, so a float that then
+ * slides down the page ends up painted over the very elements that cleared it.
+ * Measured in run 3: the spec table's row labels disappear behind the strip map.
  *
- * The float was chosen in run 1 precisely so the column would be reclaimable,
- * and that trade is still the right one. On desktop the strip map is a station
- * list you read down, and it starts at the top of the article where the reading
- * does. On mobile it is an indicator that has to follow you, because SpineSync
- * has nothing to light otherwise — and there the wide elements do not reclaim
- * anything, so nothing can be overlapped.
+ * ── The wrap, run 5 ─────────────────────────────────────────────────────────
+ * Run 3 reserved the spine's column for the full page height with a
+ * margin-left, and said re-flowing below the float "can't be expressed in
+ * CSS". Re-examined: that is true only of a *centred* column, which must
+ * change its own width mid-element to re-centre below a float. This column is
+ * left-set, and for a left-set column classic float behaviour is exactly the
+ * wanted behaviour — text lines shorten beside the float and reclaim the full
+ * measure below it, for free. No shape-outside (the float is a rectangle), no
+ * container queries, no exclusions.
+ *
+ * Two rules make it work:
+ *   boxed elements   `display: flow-root` — a border or background must not
+ *                    run under the float, so the box becomes a BFC and sits
+ *                    beside it, narrowed. (Scroll containers — .table-scroll,
+ *                    .formation-scroll — are BFCs already, via overflow.)
+ *   wide elements    `clear: left; max-width: none` — a spec table or a map
+ *                    drops below the float and uses the full page. The old
+ *                    negative-margin reclaim is gone because there is no
+ *                    reserved column left to reclaim.
  */
 .page-spine {
   float: left;
   width: var(--spine-w, 0);
-  margin: 0 40px 28px 0;
+  margin: 0 var(--spine-gap, 40px) 28px 0;
 }
 
 .page-grid.has-map {
   --spine-w: 224px;
+  --spine-gap: 40px;
 }
 
 .page-grid.has-rail {
   --spine-w: 54px;
-}
-
-.page-grid.has-rail .page-spine {
-  margin-right: 30px;
-}
-
-/* Content sits beside the float rather than flowing under it — block boxes
-   extend under floats even though their text wraps, and half-indented
-   paragraphs read as a bug. */
-.page-main,
-.page-body {
-  margin-left: calc(var(--spine-w, 0px) + var(--spine-gap, 0px));
-}
-
-.page-grid.has-map .page-main {
-  --spine-gap: 40px;
-}
-
-.page-grid.has-rail .page-main {
   --spine-gap: 30px;
 }
 
@@ -427,16 +421,37 @@ main {
   min-width: 0;
 }
 
-/*
- * Wide elements clear the spine and then reclaim the space it occupied, so a
- * specification table or a map genuinely uses the page rather than sitting in
- * the prose column.
- */
 .page-main > .wide,
 .page-body > .wide {
   clear: left;
   max-width: none;
-  margin-left: calc(-1 * (var(--spine-w, 0px) + var(--spine-gap, 0px)));
+}
+
+/*
+ * The two exceptions to "wide clears": the facts strip and the hero sit at
+ * the top of the page, where clearing would throw them below the whole
+ * spine. They stay beside it instead, as BFCs, spanning float edge to page
+ * edge — which is also what a platform sign is: a wide strip over the
+ * platform, not a column beside it.
+ */
+.page-main > .platform,
+.page-main > .figure {
+  clear: none;
+  display: flow-root;
+}
+
+/* Boxed prose furniture must not slide under the float. BFC, same reason. */
+.prose blockquote,
+.page-main > .note {
+  display: flow-root;
+}
+
+/* In-prose tables are wide elements too: they clear rather than squeeze.
+   The first one ends the wrapped region — everything after it flows below
+   the float at full width, which is the predictable rhythm: prose beside
+   the spine, data below it. */
+.prose .table-scroll {
+  clear: left;
 }
 
 /* No spine: the body is simply an editorial column. */
@@ -449,14 +464,6 @@ main {
     float: none;
     width: auto;
     margin: 26px 0 0;
-  }
-  .page-main,
-  .page-body {
-    margin-left: 0;
-  }
-  .page-main > .wide,
-  .page-body > .wide {
-    margin-left: 0;
   }
   /*
    * The spine comes FIRST on mobile, reversing run 1's decision.
@@ -677,17 +684,29 @@ main {
   border-style: dotted;
 }
 
-.spine-code {
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  font-weight: 600;
-  color: var(--text-3);
-  letter-spacing: 0.02em;
-  min-width: 30px;
+/*
+ * One anchor per station: code pills concatenated, then the name. The codes
+ * cluster reads as a single unit — BR10 BL15 Zhongxiao Fuxing — which is also
+ * one tap target at full row height rather than several small ones.
+ */
+.spine-station {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex: 1 1 auto;
+  min-width: 0;
+  text-decoration: none;
 }
 
-.spine-stop[data-marked] .spine-code {
-  color: var(--accent);
+a.spine-station:hover .spine-name,
+a.spine-station:focus-visible .spine-name {
+  text-decoration: underline;
+}
+
+.spine-codes {
+  display: inline-flex;
+  gap: 2px;
+  flex: none;
 }
 
 .spine-name {
@@ -709,13 +728,6 @@ main {
 
 .spine-stop[data-current] .spine-tick {
   box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--accent);
-}
-
-.spine-ix {
-  display: inline-flex;
-  gap: 3px;
-  margin-left: 5px;
-  vertical-align: baseline;
 }
 
 /* Same badge, one size down. Not a separate treatment. */
@@ -816,6 +828,25 @@ main {
   min-height: 15px;
 }
 
+/*
+ * The rail encodes exactly one fact — the marked stretch — and its key
+ * explains exactly that one fact. The strip map's underground fill is keyed
+ * there ("elevated"); on the rail it was unexplained ink, and it was louder
+ * than the mark itself: BR13/BR14 rendered as solid line-colour dots while
+ * the depot junction the key promised was a faint outline. Found by looking
+ * at a screenshot, which is how it should have been found the first time.
+ * On the rail: marked ticks are solid in the line colour, everything else is
+ * hollow, and structure is not encoded at all.
+ */
+.spine-rail .spine-stop[data-structure='underground'] .spine-tick {
+  background: var(--bg);
+}
+
+.spine-rail .spine-stop[data-marked] .spine-tick {
+  background: var(--accent-map);
+  border-color: var(--accent-map);
+}
+
 .spine-rail .spine-key {
   writing-mode: horizontal-tb;
   font-size: 9px;
@@ -875,9 +906,8 @@ main {
     font-size: 14px;
   }
 
-  .spine-map .spine-code {
-    font-size: 11.5px;
-    min-width: 34px;
+  .spine-map .spine-codes .badge {
+    font-size: 10.5px;
   }
 
   .spine-map .spine-stop {
@@ -899,8 +929,16 @@ main {
     padding: 5px 2px;
   }
 
+  /*
+   * Shrink allowed, and the basis small enough that all 24 stops fit a 320px
+   * viewport. With `1 0 14px` the row overflowed a 375px screen by ~14px —
+   * and the stop that fell off the end was BR24, the one marked tick on the
+   * Neihu Depot page. A scrollable tick strip hides exactly the information
+   * it exists to show; the ticks compress instead.
+   */
   .spine-rail .spine-stop {
-    flex: 1 0 14px;
+    flex: 1 1 10px;
+    min-width: 0;
     min-height: 0;
     height: 11px;
     padding: 0;
@@ -2904,7 +2942,7 @@ a.adjacent-link:hover {
 
   /*
    * Not on anything whose href is already its own label. A strip map entry
-   * reading "BR01 [/train/stations/br01/]" would treble in length and say
+   * reading "BR01 [/rail/stations/br01/]" would treble in length and say
    * nothing it did not already say.
    */
   .badge::after,
@@ -2953,5 +2991,305 @@ a.adjacent-link:hover {
     padding-top: 8pt;
     font-size: 8pt;
     color: #333;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Article layout (ARTICLE_TYPES pages — see lib/content.ts)           */
+/* ------------------------------------------------------------------ */
+
+/*
+ * A reading page, not an entity record. No spine: beside a narrative the
+ * marker rail is an unlabelled column of ticks — decoration pretending to be
+ * data — so the article renders none and takes the full frame for one centred
+ * column at reading measure. The line's presence survives as the accent bar,
+ * the short rule under the standfirst, and the badges in the prose.
+ */
+.page-article {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* The container-level measure does the work; the inner cap would fight it. */
+.page-article .prose {
+  max-width: none;
+}
+
+.article-head {
+  margin: 6px 0 30px;
+}
+
+.article-title {
+  font-size: 46px;
+  margin: 14px 0 16px;
+}
+
+.article-standfirst {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-2);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* The line's colour, carried by a mark rather than a device. */
+.article-head::after {
+  content: '';
+  display: block;
+  width: 64px;
+  border-top: 4px solid var(--accent);
+  margin-top: 24px;
+}
+
+/* Long-form rhythm: a bigger opening, more air around section heads. */
+.article-lede {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.page-article .platform {
+  margin: 32px 0;
+}
+
+.page-article .article-body h2 {
+  font-size: 26px;
+  margin-top: 2.1em;
+}
+
+.page-article .page-updated {
+  margin-top: 28px;
+}
+
+/*
+ * Threads — a fork in the article's argument, shown as parallel cards so the
+ * reader sees the split before reading a word. Produced by rehypeArticleLayout
+ * from an h2 followed by two or more strong-led paragraphs.
+ */
+.threads {
+  display: grid;
+  gap: 14px;
+  margin: 1.5em 0;
+}
+
+.thread {
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  background: var(--bg-well);
+  padding: 16px 18px 15px;
+}
+
+.thread p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.thread p > strong:first-child {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 18.5px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 960px) {
+  .page-article .threads {
+    grid-template-columns: 1fr 1fr;
+    margin-inline: -70px;
+  }
+}
+
+/*
+ * Timeline — a chronology as a sequence to follow, not a spreadsheet to look
+ * up. On an article the dates are the spine the page actually has. Produced
+ * by rehypeArticleLayout from any table whose first header is Date or Stage.
+ */
+.timeline {
+  list-style: none;
+  margin: 1.6em 0;
+  padding: 0;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  column-gap: 32px;
+  padding-bottom: 18px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 2px;
+}
+
+/* The rail, drawn between the dates and the entries. */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 121px;
+  top: 12px;
+  bottom: -4px;
+  width: 2px;
+  background: var(--rule);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/* The stop. Same language as the strip map's ticks: accent ring, paper fill. */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 115px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+}
+
+.timeline-when {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+  color: var(--text-2);
+  text-align: right;
+  padding-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+.timeline-what {
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    padding-left: 26px;
+  }
+
+  .timeline-when {
+    text-align: left;
+    padding-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .timeline-item::before {
+    left: 5px;
+    top: 10px;
+    bottom: 0;
+  }
+
+  .timeline-item::after {
+    left: -1px;
+    top: 1px;
+  }
+}
+
+/* Pull quote: centred, display face, ruled top and bottom. Overrides the
+   prose default (left bar), which remains right for quoted source passages
+   on entity pages. */
+.page-article .prose blockquote {
+  margin: 2.2em auto;
+  padding: 1.25em 8px 1.15em;
+  border: 0;
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+  text-align: center;
+  color: var(--text);
+}
+
+.page-article .prose blockquote p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+.page-article .prose blockquote p + p {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-3);
+  margin-top: 10px;
+}
+
+/* Section break: a short centred rule, quieter than a heading. */
+.page-article .prose hr {
+  border: 0;
+  width: 84px;
+  margin: 2.6em auto;
+  border-top: 1px solid var(--rule-strong);
+}
+
+/* Station badges that are links (article pages — no map to do it instead). */
+a.badge-link {
+  text-decoration: none;
+}
+
+a.badge-link:hover,
+a.badge-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+@media (max-width: 600px) {
+  .article-title {
+    font-size: 34px;
+  }
+
+  .article-standfirst {
+    font-size: 18px;
+  }
+
+  .article-lede {
+    font-size: 17px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Station index (/rail/stations)                                      */
+/* ------------------------------------------------------------------ */
+
+.station-index {
+  list-style: none;
+  margin: 0 0 1.6em;
+  padding: 0;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.station-index li {
+  break-inside: avoid;
+  margin-bottom: 2px;
+}
+
+.station-index-link {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 2px;
+  text-decoration: none;
+}
+
+.station-index-link:hover {
+  text-decoration: underline;
+}
+
+.station-index-zh {
+  color: var(--text-3);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .station-index {
+    columns: 1;
   }
 }

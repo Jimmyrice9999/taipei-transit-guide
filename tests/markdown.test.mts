@@ -98,7 +98,7 @@ test('the station code pattern is anchored to whole words', () => {
 /* ---- rendered HTML ------------------------------------------------ */
 
 test('badges render as spans carrying the line colours', async () => {
-  const page = await getPage('train', 'lines', 'wenhu-line')
+  const page = await getPage('rail', 'lines', 'wenhu-line')
   assert.match(page.html, /class="badge"/, 'no badge rendered on the Wenhu Line page')
 
   const line = getLine('BR')!
@@ -124,17 +124,17 @@ test('every badge in rendered content resolves to a real station', async () => {
 })
 
 test('Chinese in rendered content is tagged zh-Hant', async () => {
-  const page = await getPage('train', 'depots', 'muzha-depot')
+  const page = await getPage('rail', 'depots', 'muzha-depot')
   assert.match(page.html, /<span lang="zh-Hant">木柵機廠<\/span>/)
 })
 
 test('tables are wrapped in a keyboard-reachable scroll container', async () => {
-  const page = await getPage('train', 'lines', 'wenhu-line')
+  const page = await getPage('rail', 'lines', 'wenhu-line')
   assert.match(page.html, /<div class="table-scroll" tabindex="0">\s*<table>/)
 })
 
 test('headings carry ids, so the spine can sync and links can anchor', async () => {
-  const page = await getPage('train', 'lines', 'wenhu-line')
+  const page = await getPage('rail', 'lines', 'wenhu-line')
   assert.match(page.html, /<h2 id="history">/)
   assert.ok(Object.keys(page.sectionStations).length > 0, 'no section-to-station map built')
 })

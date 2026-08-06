@@ -35,7 +35,7 @@ export const SITE_DESCRIPTION =
 /**
  * A site-absolute path turned into an absolute URL.
  *
- * Takes the path as written in the app — "/train/network/" — and returns the
+ * Takes the path as written in the app — "/rail/network/" — and returns the
  * full address including the base path. Passing an already-prefixed path would
  * double the prefix, so callers should hand over the logical path only.
  */

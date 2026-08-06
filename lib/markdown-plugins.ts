@@ -5,7 +5,7 @@
  * prose and a table, and the build applies the styling consistently.
  */
 
-import { CATALOGUED_LINES, getStation } from './stations.ts'
+import { CATALOGUED_LINES, getStation, getStationHref } from './stations.ts'
 import { getLine } from './lines.ts'
 import { isPlain, tokenize } from './text-tokens.ts'
 import { CITE_MARKER_PATTERN, type Source } from './sources.ts'
@@ -20,18 +20,27 @@ const OPAQUE = new Set(['code', 'pre', 'script', 'style'])
  * Walk every text node, letting `transform` replace it with a list of nodes.
  * Skips anything inside OPAQUE elements — that is how backticks work as an
  * opt-out: `BR01` in a Markdown file stays literal text.
+ *
+ * The transform also learns whether the text sits inside an `<a>`, because a
+ * transform that emits links (station badges on article pages) must not nest
+ * an anchor inside an anchor — that is invalid HTML that browsers repair by
+ * silently splitting the outer link.
  */
-function transformText(tree: Node, transform: (value: string) => Node[] | null) {
-  const walk = (node: Node) => {
+function transformText(
+  tree: Node,
+  transform: (value: string, context: { inAnchor: boolean }) => Node[] | null,
+) {
+  const walk = (node: Node, inAnchor: boolean) => {
     if (!node?.children) return
     if (node.type === 'element' && OPAQUE.has(node.tagName)) return
 
+    const inside = inAnchor || (node.type === 'element' && node.tagName === 'a')
     const out: Node[] = []
     let changed = false
 
     for (const child of node.children) {
       if (child.type === 'text') {
-        const replacement = transform(child.value)
+        const replacement = transform(child.value, { inAnchor: inside })
         if (replacement) {
           out.push(...replacement)
           changed = true
@@ -39,12 +48,12 @@ function transformText(tree: Node, transform: (value: string) => Node[] | null) 
         }
       }
       out.push(child)
-      walk(child)
+      walk(child, inside)
     }
 
     if (changed) node.children = out
   }
-  walk(tree)
+  walk(tree, false)
 }
 
 /* ------------------------------------------------------------------ */
@@ -74,12 +83,21 @@ export type BadgeWarning = {
 export function rehypeRichText({
   file,
   onWarning,
+  linkStations = false,
 }: {
   file: string
   onWarning: (warning: BadgeWarning) => void
+  /**
+   * Render each station badge as a link to its station page. On by default
+   * nowhere: line pages already link every station from the strip map, and a
+   * spec-sheet page linking BR01 four times in one table is clutter. Article
+   * pages turn it on — they have no map, so the inline mention IS the way to
+   * a station. A badge inside an existing link stays a span.
+   */
+  linkStations?: boolean
 }) {
   return (tree: Node) => {
-    transformText(tree, (value) => {
+    transformText(tree, (value, { inAnchor }) => {
       const tokens = tokenize(value)
       if (isPlain(tokens)) return null
 
@@ -121,11 +139,13 @@ export function rehypeRichText({
           continue
         }
 
+        const href = linkStations && !inAnchor ? getStationHref(token.value) : null
         out.push({
           type: 'element',
-          tagName: 'span',
+          tagName: href ? 'a' : 'span',
           properties: {
-            className: ['badge'],
+            className: href ? ['badge', 'badge-link'] : ['badge'],
+            ...(href ? { href } : {}),
             style: `--badge-bg:${line.badgeBg};--badge-fg:${line.badgeFg}`,
             title: station ? `${token.value} ${station.name}` : token.value,
           },
@@ -487,5 +507,314 @@ export function rehypeBasePath(basePath: string) {
       for (const child of node?.children ?? []) walk(child)
     }
     walk(tree)
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Article layout devices                                              */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Structural devices for long-form article pages (the `history` type).
+ *
+ * Two transforms, both driven by conventions an author can hit from plain
+ * Markdown — no markup in the content file, same contract as everything else
+ * in this module:
+ *
+ * **Timeline** — a table whose first header cell is "Date" or "Stage" becomes
+ * an `<ol class="timeline">`: one item per row, first cell as the date rail,
+ * remaining cells merged into the entry. A chronology set as a spreadsheet
+ * reads as data to be looked up; set as a timeline it reads as a sequence to
+ * be followed, and on an article the dates ARE the page's spine. Tables with
+ * any other first header (a keyless facts grid, a comparison) stay tables.
+ *
+ * **Threads** — an `<h2>` followed immediately by two or more paragraphs that
+ * each open with a `<strong>` run gets those paragraphs wrapped in
+ * `<div class="threads">`, one `.thread` card each, the bold opener as the
+ * card's label. This is how an article shows a fork in its argument — the
+ * Matra page's two-disputes distinction — as layout rather than as a sentence
+ * asking the reader to notice.
+ *
+ * Runs only on article pages, and must run before rehypeTableScroll — a
+ * timeline is no longer a table and must not be wrapped as one.
+ */
+export function rehypeArticleLayout() {
+  const textOf = (node: Node): string => {
+    if (node?.type === 'text') return node.value
+    return (node?.children ?? []).map(textOf).join('')
+  }
+  const elementsOf = (nodes: Node[]) => (nodes ?? []).filter((n: Node) => n.type === 'element')
+
+  const toTimeline = (table: Node): Node | null => {
+    const head = elementsOf(table.children).find((n: Node) => n.tagName === 'thead')
+    const body = elementsOf(table.children).find((n: Node) => n.tagName === 'tbody')
+    if (!head || !body) return null
+
+    const headerRow = elementsOf(head.children)[0]
+    const firstHeader = headerRow ? textOf(elementsOf(headerRow.children)[0] ?? null).trim() : ''
+    if (!/^(date|stage)$/i.test(firstHeader)) return null
+
+    const items = elementsOf(body.children)
+      .filter((row: Node) => row.tagName === 'tr')
+      .map((row: Node) => {
+        const cells = elementsOf(row.children).filter((c: Node) => c.tagName === 'td')
+        if (cells.length === 0) return null
+        const what: Node[] = []
+        for (const cell of cells.slice(1)) {
+          if (!textOf(cell).trim() && elementsOf(cell.children).length === 0) continue
+          if (what.length) what.push({ type: 'text', value: ' ' })
+          what.push(...(cell.children ?? []))
+        }
+        return {
+          type: 'element',
+          tagName: 'li',
+          properties: { className: ['timeline-item'] },
+          children: [
+            {
+              type: 'element',
+              tagName: 'span',
+              properties: { className: ['timeline-when'] },
+              children: cells[0].children ?? [],
+            },
+            {
+              type: 'element',
+              tagName: 'div',
+              properties: { className: ['timeline-what'] },
+              children: what,
+            },
+          ],
+        }
+      })
+      .filter(Boolean)
+
+    if (items.length === 0) return null
+    return {
+      type: 'element',
+      tagName: 'ol',
+      properties: { className: ['timeline'] },
+      children: items,
+    }
+  }
+
+  const opensWithStrong = (node: Node) =>
+    node?.type === 'element' &&
+    node.tagName === 'p' &&
+    node.children?.[0]?.type === 'element' &&
+    node.children[0].tagName === 'strong'
+
+  return (tree: Node) => {
+    const walk = (node: Node) => {
+      if (!node?.children) return
+
+      const kids: Node[] = node.children
+      const out: Node[] = []
+      let changed = false
+
+      for (let i = 0; i < kids.length; i++) {
+        const child = kids[i]
+
+        if (child.type === 'element' && child.tagName === 'table') {
+          const timeline = toTimeline(child)
+          if (timeline) {
+            out.push(timeline)
+            changed = true
+            continue
+          }
+        }
+
+        out.push(child)
+        walk(child)
+
+        if (child.type === 'element' && child.tagName === 'h2') {
+          // Gather the run of strong-led paragraphs that follows, keeping the
+          // whitespace text nodes between them out of the cards.
+          const cards: Node[] = []
+          let j = i + 1
+          while (j < kids.length) {
+            const next = kids[j]
+            if (next.type === 'text' && !next.value.trim()) {
+              j++
+              continue
+            }
+            if (opensWithStrong(next)) {
+              cards.push(next)
+              j++
+              continue
+            }
+            break
+          }
+
+          if (cards.length >= 2) {
+            out.push({
+              type: 'element',
+              tagName: 'div',
+              properties: { className: ['threads'] },
+              children: cards.map((card) => ({
+                type: 'element',
+                tagName: 'div',
+                properties: { className: ['thread'] },
+                children: [card],
+              })),
+            })
+            changed = true
+            i = j - 1
+          }
+        }
+      }
+
+      if (changed) node.children = out
+    }
+    walk(tree)
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Entity auto-linking                                                 */
+/* ------------------------------------------------------------------ */
+
+/** A linkable entity: one name string that should resolve to one page. */
+export type LinkEntity = { name: string; href: string }
+
+/**
+ * Links the first mention of every known entity, from plain Markdown, with no
+ * manual syntax — the same contract as the station badges: writing a name is
+ * enough, and the build does the rest.
+ *
+ * The rules, each of which exists because its absence produced a bug in
+ * something this site already shipped:
+ *
+ *   first mention only   A reference work links a name once per page. The
+ *                        linked set is seeded with every href the page has
+ *                        already linked manually, so an author's deliberate
+ *                        link suppresses the automatic one instead of
+ *                        doubling it. A page never links to itself.
+ *   no nested anchors    Ancestry is tracked; text inside an existing <a> is
+ *                        never matched. (Learned with badges inside links.)
+ *   headings excluded    A linked heading reads as navigation, not prose.
+ *   ASCII: word-bounded  "Muzha Depot" must not match inside "Muzha Depots".
+ *                        Longest name wins, so "Muzha Depot" beats the
+ *                        station "Muzha".
+ *   Han: whole segments  A Chinese alias matches only when it fills an entire
+ *                        punctuation-delimited segment of a Han run. 文湖線
+ *                        links; the same characters inside 文湖線車輛 do not,
+ *                        because two-character names embedded in longer nouns
+ *                        are how mislinks happen.
+ */
+export function rehypeAutoLink({
+  entities,
+  currentHref,
+  onLink,
+}: {
+  entities: LinkEntity[]
+  /** The page being rendered; it never links to itself. */
+  currentHref: string
+  /** Called once per link added, for the audit report. */
+  onLink?: (entity: LinkEntity) => void
+}) {
+  const SKIP = new Set(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+  const HAN_SEGMENT_BREAK = /[「」『』【】（）《》〈〉，。、；：！？·　]/
+
+  // Longest first, so the most specific name wins the overlap.
+  const sorted = [...entities].sort((a, b) => b.name.length - a.name.length)
+  const ascii = sorted.filter((e) => !/[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
+  const han = sorted.filter((e) => /[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
+
+  const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  const asciiPattern = ascii.length
+    ? new RegExp(`(?<![\\w–-])(${ascii.map((e) => escape(e.name)).join('|')})(?![\\w–-])`)
+    : null
+  const byName = new Map(sorted.map((e) => [e.name, e]))
+
+  const anchor = (entity: LinkEntity, text: string): Node => ({
+    type: 'element',
+    tagName: 'a',
+    properties: { href: entity.href, className: ['entity-link'] },
+    children: [{ type: 'text', value: text }],
+  })
+
+  return (tree: Node) => {
+    const linked = new Set<string>([currentHref])
+
+    // Seed with the page's own manual links, so deliberate linking wins.
+    const seed = (node: Node) => {
+      if (node?.type === 'element' && node.tagName === 'a' && node.properties?.href) {
+        linked.add(String(node.properties.href))
+      }
+      for (const child of node?.children ?? []) seed(child)
+    }
+    seed(tree)
+
+    const tryLink = (value: string): Node[] | null => {
+      // Han names: the whole value (one Han run) split on punctuation; an
+      // alias must fill a whole segment.
+      for (const entity of han) {
+        if (linked.has(entity.href)) continue
+        const index = value.indexOf(entity.name)
+        if (index === -1) continue
+        const before = value[index - 1]
+        const after = value[index + entity.name.length]
+        const okBefore = index === 0 || HAN_SEGMENT_BREAK.test(before)
+        const okAfter = after === undefined || HAN_SEGMENT_BREAK.test(after)
+        if (!okBefore || !okAfter) continue
+        linked.add(entity.href)
+        onLink?.(entity)
+        const out: Node[] = []
+        if (index > 0) out.push({ type: 'text', value: value.slice(0, index) })
+        out.push(anchor(entity, entity.name))
+        const rest = value.slice(index + entity.name.length)
+        if (rest) out.push({ type: 'text', value: rest })
+        return out
+      }
+
+      if (!asciiPattern) return null
+      const match = asciiPattern.exec(value)
+      if (!match) return null
+      const entity = byName.get(match[1])
+      if (!entity || linked.has(entity.href)) {
+        // Matched a name already linked — try again past this match so a
+        // later, different name in the same text node still links.
+        const rest = value.slice(match.index + match[1].length)
+        const restOut = rest ? tryLink(rest) : null
+        if (!restOut) return null
+        return [{ type: 'text', value: value.slice(0, match.index + match[1].length) }, ...restOut]
+      }
+      linked.add(entity.href)
+      onLink?.(entity)
+      const out: Node[] = []
+      if (match.index > 0) out.push({ type: 'text', value: value.slice(0, match.index) })
+      out.push(anchor(entity, match[1]))
+      const rest = value.slice(match.index + match[1].length)
+      if (rest) {
+        const restOut = tryLink(rest)
+        if (restOut) out.push(...restOut)
+        else out.push({ type: 'text', value: rest })
+      }
+      return out
+    }
+
+    const walk = (node: Node, inAnchor: boolean) => {
+      if (!node?.children) return
+      if (node.type === 'element' && (OPAQUE.has(node.tagName) || SKIP.has(node.tagName))) return
+
+      const inside = inAnchor || (node.type === 'element' && node.tagName === 'a')
+      const out: Node[] = []
+      let changed = false
+
+      for (const child of node.children) {
+        if (child.type === 'text' && !inside) {
+          const replacement = tryLink(child.value)
+          if (replacement) {
+            out.push(...replacement)
+            changed = true
+            continue
+          }
+        }
+        out.push(child)
+        walk(child, inside)
+      }
+
+      if (changed) node.children = out
+    }
+    walk(tree, false)
   }
 }

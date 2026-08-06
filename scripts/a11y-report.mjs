@@ -38,7 +38,8 @@ if (!fs.existsSync(OUT)) {
   process.exit(2)
 }
 
-const pages = walk(OUT)
+// out/train holds the /train → /rail redirect stubs, not pages — skipped.
+const pages = walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
 
 for (const file of pages) {
   const rel = '/' + path.relative(OUT, file).split(path.sep).join('/').replace(/index\.html$/, '')

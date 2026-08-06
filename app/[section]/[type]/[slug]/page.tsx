@@ -1,5 +1,5 @@
 /**
- * A content page: /train/lines/wenhu-line/
+ * A content page: /rail/lines/wenhu-line/
  *
  * Three columns: the spine, the prose, the platform panel. The spine's variant
  * changes with the page type — a line page gets the full strip map, everything
@@ -23,7 +23,7 @@ import SpineSync from '@/components/SpineSync'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { getAccent } from '@/lib/lines'
 import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
-import { getAllPages, getPage, getPages, getSection, getType } from '@/lib/content'
+import { ARTICLE_TYPES, getAllPages, getPage, getPages, getSection, getType } from '@/lib/content'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 
@@ -121,10 +121,95 @@ export default async function ContentPage({ params }: Props) {
   const typeMeta = getType(section, type)
   const accent = getAccent(page.line)
 
+  /*
+   * Articles get a reading layout, not the entity grid. The spine is right on
+   * an entity page because "which stretch of line" is one of its facts; beside
+   * a narrative it is an unlabelled rail of ticks — decoration pretending to
+   * be data — so it is not rendered at all. See ARTICLE_TYPES in lib/content.
+   */
+  if (ARTICLE_TYPES.has(type)) {
+    /*
+     * The facts strip belongs after the opening, not after the title: a
+     * narrative page should begin by being read, not consulted. The rendered
+     * body is split at its first <h2> — everything before it is the lede.
+     * Deterministic because every article opens with prose before its first
+     * section heading; if one ever does not, the whole body lands after the
+     * strip and the page degrades to the old order rather than breaking.
+     */
+    const splitAt = page.html.indexOf('<h2')
+    const lede = splitAt > 0 ? page.html.slice(0, splitAt) : ''
+    const body = splitAt > 0 ? page.html.slice(splitAt) : page.html
+
+    return (
+      <PageShell accent={accent}>
+        <JsonLd
+          data={[
+            articleSchema({
+              title: page.title,
+              description: page.summary,
+              path: page.href,
+              updated: page.updated || undefined,
+            }),
+            breadcrumbSchema([
+              { name: 'Home', path: '/' },
+              { name: getSection(section).title, path: `/${section}/` },
+              { name: typeMeta.title, path: typeMeta.href },
+              { name: page.title, path: page.href },
+            ]),
+          ]}
+        />
+
+        <article className="page-article">
+          <Link className="up-link" href={typeMeta.href}>
+            ‹ {typeMeta.title}
+          </Link>
+
+          <header className="article-head">
+            <h1 className="page-title article-title">
+              <RichText>{page.title}</RichText>
+            </h1>
+            {page.summary && (
+              <p className="article-standfirst">
+                <RichText>{page.summary}</RichText>
+              </p>
+            )}
+          </header>
+
+          {lede && <div className="prose article-lede" dangerouslySetInnerHTML={{ __html: lede }} />}
+
+          <FactsPanel
+            facts={page.facts}
+            line={accent}
+            title={page.title}
+            references={page.references}
+          />
+
+          <div className="prose article-body" dangerouslySetInnerHTML={{ __html: body }} />
+
+          <References references={page.references} />
+
+          {page.updated && <p className="page-updated">Last updated: {page.updated}</p>}
+        </article>
+      </PageShell>
+    )
+  }
+
   const stations = getLineStations(page.line)
   const hasSpine = stations.length > 0
   const variant = type === 'lines' ? 'map' : 'rail'
   const marked = hasSpine ? resolveSpine(page.spine, page.line) : new Set<string>()
+
+  /*
+   * The rail key states the page subject's relationship to the line, and that
+   * relationship differs by type: a fleet serves stations, a depot joins the
+   * line at one. The audit that added this found "Serves 1 of 24 stations" on
+   * the depot pages — a small false claim, in the furniture, on the exact
+   * pages whose Corrections sections discuss a misplaced depot junction.
+   */
+  const railNote =
+    type === 'depots' && marked.size > 0
+      ? `Joins the line at ${[...marked].join(', ')}`
+      : undefined
 
   /*
    * The geographic map goes on line pages only. On a fleet or depot page it
@@ -230,7 +315,7 @@ export default async function ContentPage({ params }: Props) {
                 stations={stations}
                 marked={marked}
                 depots={variant === 'map' ? depotMarks(section, page.line) : []}
-                railVerb={type === 'history' ? 'Concerns' : 'Serves'}
+                railNote={railNote}
               />
             </div>
           )}

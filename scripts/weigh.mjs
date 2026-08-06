@@ -314,12 +314,12 @@ console.log('  client-side navigation, never on a first visit.')
 
 const PAGE_TYPES = [
   ['Home', 'index.html'],
-  ['Line page', 'train/lines/wenhu-line/index.html'],
-  ['Station page', 'train/stations/br13/index.html'],
-  ['Rolling stock', 'train/rolling-stock/val256/index.html'],
-  ['Network', 'train/network/index.html'],
+  ['Line page', 'rail/lines/wenhu-line/index.html'],
+  ['Station page', 'rail/stations/br13/index.html'],
+  ['Rolling stock', 'rail/rolling-stock/val256/index.html'],
+  ['Network', 'rail/network/index.html'],
   ['Station records', 'data/stations/index.html'],
-  ['Section index', 'train/index.html'],
+  ['Section index', 'rail/index.html'],
   ['About', 'about/index.html'],
 ]
 
@@ -374,7 +374,7 @@ if (stationPage) {
 
 /* ---- which font files nobody fetches ---- */
 
-const line = weighPage('train/lines/wenhu-line/index.html')
+const line = weighPage('rail/lines/wenhu-line/index.html')
 if (line) {
   console.log('\n\n═══ Font files a reader never downloads ═══\n')
   console.log('  Measured against the line page. These are emitted, committed and')

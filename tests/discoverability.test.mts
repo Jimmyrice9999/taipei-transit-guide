@@ -28,7 +28,8 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  return walk(OUT)
+  // out/train holds the /train → /rail redirect stubs, not pages — skipped.
+  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
 }
 
 const attr = (html: string, re: RegExp) => html.match(re)?.[1]
@@ -128,8 +129,8 @@ test('canonical URLs are unique', () => {
 })
 
 test('a station canonical points at its own URL', () => {
-  const html = read('train/stations/br13/index.html')
-  assert.equal(canonicalOf(html), `${SITE_URL}/train/stations/br13/`)
+  const html = read('rail/stations/br13/index.html')
+  assert.equal(canonicalOf(html), `${SITE_URL}/rail/stations/br13/`)
 })
 
 /* ---- share images ---------------------------------------------------- */
@@ -193,13 +194,13 @@ test('content and station pages get their own share image', () => {
     assert.ok(fs.existsSync(path.join(OUT, rel)), `${page.href} has no share image`)
   }
   for (const station of getLineStations('BR')) {
-    const rel = `train/stations/${station.code.toLowerCase()}/opengraph-image.png`
+    const rel = `rail/stations/${station.code.toLowerCase()}/opengraph-image.png`
     assert.ok(fs.existsSync(path.join(OUT, rel)), `${station.code} has no share image`)
   }
 })
 
 test('pages declare a large summary card', () => {
-  const html = read('train/lines/wenhu-line/index.html')
+  const html = read('rail/lines/wenhu-line/index.html')
   assert.match(html, /twitter:card" content="summary_large_image"/)
 })
 
@@ -215,7 +216,7 @@ test('the sitemap lists every page and nothing else', () => {
     assert.ok(locs.includes(`${SITE_URL}${page.href}`), `${page.href} is missing from the sitemap`)
   }
   for (const station of getLineStations('BR')) {
-    const url = `${SITE_URL}/train/stations/${station.code.toLowerCase()}/`
+    const url = `${SITE_URL}/rail/stations/${station.code.toLowerCase()}/`
     assert.ok(locs.includes(url), `${station.code} is missing from the sitemap`)
   }
   assert.ok(locs.includes(`${SITE_URL}/about/`), '/about/ is missing from the sitemap')
@@ -272,7 +273,7 @@ test('every JSON-LD node declares a context and a type', () => {
 })
 
 test('a station is marked up as a SubwayStation with real coordinates', () => {
-  const nodes = jsonLdIn(read('train/stations/br10/index.html'))
+  const nodes = jsonLdIn(read('rail/stations/br10/index.html'))
   const station = nodes.find((n) => n['@type'] === 'SubwayStation')
   assert.ok(station, 'no SubwayStation node')
 

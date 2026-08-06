@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getLine, type Line } from '@/lib/lines'
-import { getStationHref, type Station } from '@/lib/stations'
+import { STATIONS, getStationHref, type Station } from '@/lib/stations'
 
 /**
  * The guideway spine — the line itself, run down the page.
@@ -28,7 +28,7 @@ export default function Spine({
   stations,
   marked,
   depots = [],
-  railVerb = 'Serves',
+  railNote,
 }: {
   variant: 'map' | 'rail'
   line: Line
@@ -38,11 +38,12 @@ export default function Spine({
   /** Depot junctions, drawn from the depot pages' own `spine:` frontmatter. */
   depots?: DepotMark[]
   /**
-   * The verb in the rail key: a depot or a fleet *serves* stations, but a
-   * history article *concerns* them. Wrong verb, wrong claim — the same
-   * standard the site holds its figures to.
+   * Overrides the rail key's wording. The default says "Serves N of M
+   * stations", which is a fleet's relationship to the line — a depot's is
+   * "joins it here", and saying "serves" there is a small false claim in the
+   * page furniture. The page decides; this component just refuses to guess.
    */
-  railVerb?: string
+  railNote?: string
 }) {
   if (stations.length === 0) return null
 
@@ -77,50 +78,75 @@ export default function Spine({
             >
               <span className="spine-tick" aria-hidden="true" />
 
-              {variant === 'map' && (
-                <>
-                  <span className="spine-code">{station.code}</span>
-                  <span className="spine-name">
-                    {/* The strip map is how people scan a line, so it is the
-                        most useful place for a station to be reachable from. */}
-                    {getStationHref(station.code) ? (
-                      <Link href={getStationHref(station.code)!}>{station.name}</Link>
-                    ) : (
-                      station.name
-                    )}
-                    {station.interchange.length > 0 && (
-                      <span className="spine-ix">
-                        {/*
-                          Real badges in the interchanging line's own colours,
-                          not a spine-specific treatment. The spine has to stay
-                          the badge system arranged along an axis; the moment it
-                          grows its own vocabulary for line codes it becomes a
-                          second device competing with the badges.
-                        */}
-                        {station.interchange.map((code) => {
-                          const other = getLine(code)
-                          if (!other) return null
-                          return (
-                            <span
-                              className="badge badge-mini"
-                              key={code}
-                              title={`Interchange with the ${other.name} Line`}
-                              style={
-                                {
-                                  '--badge-bg': other.badgeBg,
-                                  '--badge-fg': other.badgeFg,
-                                } as React.CSSProperties
-                              }
-                            >
-                              {code}
-                            </span>
-                          )
-                        })}
+              {variant === 'map' &&
+                (() => {
+                  /*
+                   * One linked unit per station: its own code, its interchange
+                   * codes concatenated, then the name — the way LTG sets a
+                   * station list, and one tap target instead of several small
+                   * ones. The interchange codes ride inside the same link
+                   * because they are facts about this station, not separate
+                   * destinations; each still wears its own line's colours, so
+                   * the spine stays the badge system arranged along an axis.
+                   */
+                  const codes = (
+                    <span className="spine-codes">
+                      <span
+                        className="badge badge-mini"
+                        style={
+                          {
+                            '--badge-bg': line.badgeBg,
+                            '--badge-fg': line.badgeFg,
+                          } as React.CSSProperties
+                        }
+                      >
+                        {station.code}
                       </span>
-                    )}
-                  </span>
-                </>
-              )}
+                      {station.interchange.map((code) => {
+                        const other = getLine(code)
+                        if (!other) return null
+                        /*
+                         * The interchange pill carries the *station's* code on
+                         * the other line — BL12, not BL — because that is the
+                         * code on the signs a transferring rider follows. The
+                         * registry lists the same station once per line under
+                         * the same name, which is what makes this resolvable.
+                         */
+                        const twin = STATIONS.find(
+                          (s) => s.line === code && s.name === station.name,
+                        )
+                        return (
+                          <span
+                            className="badge badge-mini"
+                            key={code}
+                            title={`Interchange with the ${other.name} Line`}
+                            style={
+                              {
+                                '--badge-bg': other.badgeBg,
+                                '--badge-fg': other.badgeFg,
+                              } as React.CSSProperties
+                            }
+                          >
+                            {twin?.code ?? code}
+                          </span>
+                        )
+                      })}
+                    </span>
+                  )
+
+                  const href = getStationHref(station.code)
+                  return href ? (
+                    <Link className="spine-station" href={href}>
+                      {codes}
+                      <span className="spine-name">{station.name}</span>
+                    </Link>
+                  ) : (
+                    <span className="spine-station">
+                      {codes}
+                      <span className="spine-name">{station.name}</span>
+                    </span>
+                  )
+                })()}
 
               {variant === 'rail' && <span className="sr-only">{station.code} {station.name}</span>}
 
@@ -162,9 +188,10 @@ export default function Spine({
       {variant === 'rail' && (
         <div className="spine-key spine-key-rail">
           <span className="spine-key-item" data-marked="">
-            {marked.size === stations.length
-              ? `${railVerb} all ${stations.length} stations`
-              : `${railVerb} ${marked.size} of ${stations.length} stations`}
+            {railNote ??
+              (marked.size === stations.length
+                ? `Serves all ${stations.length} stations`
+                : `Serves ${marked.size} of ${stations.length} stations`)}
           </span>
         </div>
       )}

@@ -25,7 +25,7 @@ Read this before the site.
 **The headline is §2.1.** The site was publishing a route length 1.25 km too
 long, and asserting on three separate pages that TDX does not publish the real
 one. It does, and the data was already committed to this repository. The same
-file also settles the 25.1-vs-25.7 question that `docs/research-findings.md` was
+file also settles the 25.1-vs-25.7 question that `docs/research/research-findings.md` was
 commissioned to investigate.
 
 **Second headline, §2.4.** The network map drew seven lines distinguished by
@@ -188,7 +188,7 @@ line codes vanish entirely. Caveat in §4.
 
 ## Part 9 — Research
 
-`docs/research-findings.md`. Nothing promoted to content except the route
+`docs/research/research-findings.md`. Nothing promoted to content except the route
 length, which is argued in §2.1 and §3. Headline results: **BR13 and BR14
 confirmed** as the underground pair (your assumption was right); the
 25.1-vs-25.7 question **resolved** as two different measurements; the Innovia
@@ -261,7 +261,7 @@ disagrees by more has holes in its geometry, and **the size of the disagreement
 matches the size of the holes found independently** in the chaining audit. That
 is the check working, and it is now visible on the page rather than asserted.
 
-Research (§9 of `research-findings.md`) then closed the loop: zh.wikipedia's
+Research (§9 of `docs/research/research-findings.md`) then closed the loop: zh.wikipedia's
 infobox carries **both** 「營運長度 25.18公里」 and 「路線長度 25.7公里」. The
 three figures were never in conflict — they are revenue length, total route
 length including non-revenue track, and (ours) the whole drawn alignment.
@@ -482,7 +482,7 @@ premature figure.
 **To revert:** `content/train/lines/wenhu-line.md` and the `officialKm` column
 in `app/train/network/page.tsx`. The rest of the code change stands alone.
 
-Everything in `docs/research-findings.md` — the underground stations, the
+Everything in `docs/research/research-findings.md` — the underground stations, the
 depot areas, the fleet figures, the Matra dispute — is untouched in content, as
 instructed.
 
@@ -563,7 +563,7 @@ design decision with a real cost on both sides, and not one to take unattended.
    someone who knows the colour science better than I do.
 3. **Whether 26 or 18 is the right interchange count** (§2b.3).
 4. **The Innovia APM 256 fleet size.** Sources differ threefold. See
-   `research-findings.md` §5.
+   `docs/research/research-findings.md` §5.
 5. **Whether Muzha Depot houses one fleet or both.** The site says VAL256 only;
    zh.wikipedia says both types. The site's claim is currently unsourced.
 6. **The Neihu Depot siting dispute**, which the site asserts as fact. I found
@@ -1290,7 +1290,7 @@ given for it is not.
 original Matra signalling stripped out and replaced with the Bombardier CITYFLO
 650."**
 
-The timing looks wrong. Research (run 1, `research-findings.md` §6) puts the
+The timing looks wrong. Research (run 1, `docs/research/research-findings.md` §6) puts the
 CBTC conversion as *beginning* 4 July 2009 — the day the extension opened — with
 converted units returning to passenger service **26 December 2010**. "Ahead of"
 inverts that.
@@ -1728,7 +1728,7 @@ does, twice, and both times the sweep was done carefully.
 
 # 24. Research findings by topic
 
-Full detail in `docs/research-findings.md` §11–§15 and `docs/drafts/matra-dispute.md`.
+Full detail in `docs/research/research-findings.md` §11–§15 and `docs/drafts/matra-dispute.md`.
 Headlines only here.
 
 ## Rolling stock
@@ -1851,7 +1851,7 @@ Asked for explicitly, because the line-colour episode proved they can be wrong.
 **Two cross-checks, both against DORTS, both of which held** — the underground
 pair and the section lengths. Everything else rests on the secondary source's own
 accuracy. The full matrix of what was and was not verified is in
-`research-findings.md` §15, including the one case where verification was
+`docs/research/research-findings.md` §15, including the one case where verification was
 impossible: 〈龐巴迪INNOVIA APM 256型電聯車〉 cites Bombardier product pages that
 were retired after the Alstom acquisition, so the primary layer under the site's
 best rolling-stock source is currently unreachable.
@@ -2436,3 +2436,158 @@ in `for-jamie.md`.
   on one page survives URL-level dedup on the bibliography.
 - Full suite green: 172 tests, citations clean, claims 192 sourced / 9 TBC /
   33 asserted, facts 16 cross-checks no contradictions, verify pass.
+
+---
+
+# Run 4.1 — the article layout, done properly this time
+
+Jamie's finding, verbatim in spirit: the Matra article shipped with a spine
+that is an unlabelled column of circles, prose squeezed off-centre beside it,
+and nobody had rendered the page before shipping. All true. Screenshots at
+1440/768/375 are in docs/screenshots/ (`matra-*-before.png` is the failure,
+`matra-*-final.png` the fix), and this entry records what looking found.
+
+## 40.1 Articles now have a layout of their own
+
+`ARTICLE_TYPES` in lib/content.ts (currently `history`) drives it:
+
+- **No spine, no map.** On an entity page "which stretch of line" is a fact;
+  beside a narrative the rail is decoration pretending to be data. Articles
+  render neither, and take one centred column at reading measure instead.
+- **The facts strip moved off the title.** The rendered body splits at its
+  first `<h2>`; the lede reads first, the strip follows it. A narrative page
+  begins by being read, not consulted.
+- **Timeline device** (`rehypeArticleLayout`): a table whose first header is
+  Date or Stage becomes a dated rail — on an article the dates are the spine
+  the page actually has. The incidents and litigation chronologies use it.
+- **Threads device**: an h2 followed by two or more strong-led paragraphs
+  becomes side-by-side cards, so the two-disputes fork — the article's whole
+  argument — is visible before a word is read.
+- **Pull quote and section rule** styling for blockquotes and `---`; the
+  馬特拉不拉 quotation now sits as the centrepiece of the political ledger.
+- **Stations link inline** (badge → station page), articles only — no map
+  there to do that job. Badges inside an existing link stay spans; nested
+  anchors are invalid HTML.
+
+## 40.2 The audit: the spine was wrong three more ways, all found by looking
+
+Asked which other page types the spine is wrong for, the honest answer turned
+out to be "the device is right everywhere else, and its *claims* were wrong
+in three places":
+
+1. **Fleet spines asserted stale facts.** VAL256 marked BR01–BR12 and its key
+   said "Serves 12 of 24 stations" — contradicted by the same page's prose,
+   which says the fleet has run the full route since December 2010. Innovia
+   likewise. Both now mark the whole line: "Serves all 24 stations", true.
+2. **Depot keys used the wrong verb.** "Serves 1 of 24 stations" on pages
+   whose Corrections sections discuss a misplaced junction. Now "Joins the
+   line at BR24" (a `railNote` override the page computes per type).
+3. **The rail's loudest ink was an unkeyed encoding.** BR13/BR14 rendered as
+   solid line-colour dots (the strip map's underground fill, keyed there,
+   unexplained here) while the marked station was a faint outline. On the
+   rail, the mark is now the only ink.
+4. **And the mark itself was off-screen.** At 375px the rail overflowed by
+   ~14px, and the stop that fell off the end was BR24 — the one marked tick
+   on the Neihu Depot page. Ticks now compress to fit a 320px viewport.
+
+Finding 4 is the process lesson restated: the DOM said `marked: BR24` and
+every test passed while the pixel was unreachable. Only a screenshot showed
+it — which is why `scripts/article-shot.mjs` now exists and why the
+before/after images are committed alongside this entry.
+
+## 40.3 Suite
+
+172/172 tests, citations clean, claims unchanged (192 sourced / 9 TBC / 33
+asserted, at baseline), no new colours in the stylesheet (everything uses
+existing custom properties), fonts unchanged (no new Han). The `hero:` and
+`spine:` fields came off the article frontmatter — an article renders
+neither, and dead config invites the next confusion.
+
+---
+
+# Run 5 — the wrap, the skeleton, the entity graph, the linker
+
+Four-part brief, executed in order. Plan and its critique in
+`docs/plans/run5-plan.md`; screenshots prefixed `wrap-` and `r5-` in
+docs/screenshots/.
+
+## 41. The wrap — and the correction of run 3's "can't be done"
+
+Run 3 claimed prose re-flow below a float "can't be expressed in CSS for
+block boxes." **Wrong, and now on the record as wrong:** that limitation is
+real only for a *centred* column, which would need to change its own width
+mid-element. This site's column is left-set, and for a left-set column plain
+float behaviour is exactly the wanted behaviour. The reserved-column
+margin-left is gone; prose text now wraps beside the spine and reclaims the
+full measure below it. Boxed elements (`display: flow-root`) sit beside the
+float without their borders running under it; wide elements — tables, maps,
+spec tables, references — `clear: left` and take the full page. The facts
+strip and hero are the two deliberate exceptions: they stay beside the spine
+as BFCs, because clearing would throw the page's identity below its fold.
+No shape-outside, no container queries, no exclusions — the rectangle case
+never needed them.
+
+## 42. /train → /rail, with 62 redirect stubs
+
+Sections are now rail, bus, bike, gondola, ferry, ticketing — each with a
+scope statement in its own words (what exists, what is missing, why that
+order), none saying "stub". The rename generates meta-refresh + absolute
+canonical + noindex stubs for every old /train URL from what the build
+actually exports, so redirects cannot drift from content. The station index
+gained a real page at /rail/stations (generated from the registry), since
+the type had app-route pages but no index.
+
+## 43. The entity graph, and the Sanying Line while it is news
+
+Twenty-three new entity pages: eight lines, five fleets, six depots, three
+operators — every one a scope statement holding sourced facts or none, with
+Jamie's unverified research flagged as *to be verified* rather than
+borrowed. The claims counter confirms the discipline held: **32 unsourced
+assertions site-wide, one below the pre-run baseline, with 23 pages added.**
+Baseline re-tightened to 32.
+
+**The Sanying Line page is the exception — a real page, verified this run:**
+opened 30 June 2026, 14.29 km, 12 elevated stations, driverless two-car
+sets, free trial to 31 August, NT$20–35 fares after — all cited to the
+operator's own announcement (snapshotted today) plus 自由時報 and
+zh.wikipedia. Two of Jamie's notes did not survive verification, which is
+what verification is for: trial hours are no longer 10:00–20:00 (extended
+to 08:00–22:00 from 1 August), and "over 750,000 in the first month" checks
+out but the themed train's "runs at random" is nobody's sourced claim — the
+page marks it as this site editorialising. The Hitachi plant question
+(Kasado vs Italy) is published as a disagreement.
+
+## 44. The linker
+
+- `getLinkEntities()` — every page title + `aliases:` (English and Chinese)
+  + every station name in both languages. 300-odd names.
+- `rehypeAutoLink` — first mention per page, manual links suppress
+  automatic ones, no nested anchors, no heading links, ASCII word-bounded,
+  Han whole-segment matched. **20 links added site-wide** on top of the
+  existing manual linking; scope pages gained none because their entity
+  mentions were written as manual links, which is the suppression working.
+- `npm run entities` — the audit plus the generated backlog
+  (docs/entity-backlog.json). Current backlog, all genuine: Losheng
+  Sanatorium, 三峽機廠, Lyon Metro, VAL206.
+- Spine station rows are single linked units, LTG-style, with interchange
+  pills carrying the *station's* code on the other line — `R10 BL15 Taipei
+  Main Station` — resolved from the registry by same-name lookup.
+
+## 45. Weight, honestly
+
+Line page first visit: **457.5 KB** (383.9 before run 4). Nearly all of the
+increase is the Han subset — 71.6 → 141.4 KB across the two weights —
+because the Matra article, the Sanying page and the scope statements quote
+sources in Chinese. Decision 3 (run 4) says fonts are not to be optimised;
+the number is reported, not acted on. Every page after the first still
+costs its HTML alone. `npm run weigh` had been silently measuring the
+/train redirect stubs after the rename — 0.3 KB pages reported as the whole
+site — which is a reminder that a measurement tool is a page consumer too;
+fixed alongside the tests.
+
+## 46. Suite
+
+173/173 tests (redirect-stub coverage added; walkers exempt the stub tree
+explicitly), verify pass, facts 16 cross-checks clean, citations clean,
+fonts regenerated from the built output, claims 216 sourced / 13 TBC / 32
+asserted / 13 meta, ratchet tightened 33 → 32.

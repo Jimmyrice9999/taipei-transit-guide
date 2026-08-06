@@ -1,5 +1,5 @@
 /**
- * A section landing page: /train/ or /bus/
+ * A section landing page: /rail/ or /bus/
  *
  * The square brackets make this a dynamic route — one file rendering many URLs.
  * `generateStaticParams` lists the ones that exist; `dynamicParams = false`
@@ -75,18 +75,34 @@ export default async function SectionPage({ params }: Props) {
 
       {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
 
-      {/* The network overview is generated from data rather than Markdown, so it
-          has no content folder to be listed from. Without this it was reachable
-          only by typing the URL. */}
-      {section === 'train' && (
+      {/* The network overview and the station index are generated from data
+          rather than Markdown, so they have no content folder to be listed
+          from. Without these cards they were reachable only by typing the URL. */}
+      {section === 'rail' && (
         <ul className="card-list">
           <li>
-            <Link href="/train/network/">
+            <Link href="/rail/network/">
               <span>
                 <span className="card-title">The network</span>
                 <span className="card-desc">
                   All seven lines across three operators, with a geographic map drawn
                   from official route geometry.
+                </span>
+              </span>
+              <span className="card-meta">
+                <span className="card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/rail/stations/">
+              <span>
+                <span className="card-title">Stations</span>
+                <span className="card-desc">
+                  Every station with a page so far — generated from the same registry
+                  that draws the maps.
                 </span>
               </span>
               <span className="card-meta">

@@ -65,10 +65,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: absoluteUrl('/train/network/'),
+      url: absoluteUrl('/rail/network/'),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
+    },
+    {
+      url: absoluteUrl('/rail/stations/'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
     },
     {
       url: absoluteUrl('/data/'),
@@ -135,7 +141,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   for (const station of getLineStations('BR')) {
     entries.push({
-      url: absoluteUrl(`/train/stations/${station.code.toLowerCase()}/`),
+      url: absoluteUrl(`/rail/stations/${station.code.toLowerCase()}/`),
       lastModified: now,
       changeFrequency: 'yearly',
       priority: 0.5,

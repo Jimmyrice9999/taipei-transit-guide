@@ -13,15 +13,28 @@ metro guide calling itself a transit guide.
 
 ## What it will cover
 
-**Routes.** The trunk corridors first — the numbered services and the bus lanes
-along Zhongxiao, Renai, Xinyi and Nanjing — rather than an attempt at all of
-them. Taipei City and New Taipei between them run several hundred routes, and a
-few hundred stub pages would be worth less than twenty written ones.
+**The network itself, before anything else.** Taipei's city buses run as 聯營公車 — a joint
+operation. Private companies operate under one fare structure, one numbering
+scheme and one brand, so that to a passenger it looks like a single network
+when it is not. That structural fact is the most valuable thing this section
+can explain, almost no English source states it, and it is why
+[Network](/bus/network/) sits above the operator and route pages rather than
+below them.
 
 **Operators.** More than a dozen companies work the network under contract, each
-with its own fleet, liveries and garages. The relationships between them are
-poorly documented in English, which makes this the part most likely to be worth
-reading rather than merely present.
+with its own fleet, liveries and garages. The relationships between them —
+including who owns whom — are poorly documented in English, which makes this
+the part most likely to be worth reading rather than merely present.
+
+**Routes.** The trunk corridors to begin with — the numbered services and the bus lanes
+along Zhongxiao, Renai, Xinyi and Nanjing — rather than attempting the lot. Taipei City and New Taipei between them run several hundred routes, and a
+few hundred stub pages would be worth less than twenty written ones. The route
+*numbering system* itself needs an explainer before any route page makes sense.
+
+**Vehicles and garages.** Fleet lists exist through enthusiast sources and
+operator publications; they churn constantly, which is why
+[Models](/bus/models/) and [Garages](/bus/garages/) wait for a data pipeline
+rather than a transcription.
 
 **Fares and payment.** Section-based fares, the EasyCard transfer discount
 between bus and metro, and where the section boundaries actually fall — which is
@@ -42,4 +55,4 @@ transcription, and building one before there is anything to put through it would
 be the wrong order of work.
 
 See [about](/about/) for how this site sources material, and
-[the network](/train/network/) for what is covered today.
+[the network](/rail/network/) for what is covered today.

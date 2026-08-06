@@ -21,7 +21,7 @@ const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } })
 
 /* A. exact computed colours of every flagged muted-text style */
-await page.goto(base + '/train/stations/br13/', { waitUntil: 'load' })
+await page.goto(base + '/rail/stations/br13/', { waitUntil: 'load' })
 const colours = await page.evaluate(() => {
   const probe = (sel) => {
     const el = document.querySelector(sel)

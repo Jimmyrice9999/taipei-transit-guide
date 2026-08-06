@@ -1,0 +1,23 @@
+---
+title: New Taipei Metro Corporation
+summary: New Taipei City's own operator — light rail, the Circular Line, and now the Sanying Line.
+order: 2
+aliases:
+  - NTMC
+  - 新北捷運公司
+  - New Taipei Metro
+updated: 2026-08-06
+---
+
+New Taipei runs its own metro company, and the boundary between it and
+Taipei's operator explains several things riders notice without knowing why —
+separate promotions, separate apps, and lines that feel like one network but
+answer to two city halls. Its portfolio is the newer, lighter side of the
+map: the [Danhai](/rail/lines/danhai-lrt/) and [Ankeng](/rail/lines/ankeng-lrt/)
+light rail lines, the [Circular Line](/rail/lines/circular-line/), and the
+new [Sanying Line](/rail/lines/sanying-line/).
+
+*This is a scope page.* Founding, ownership and the operating agreements with
+the city that built the lines are still to be written up.
+
+*Nothing numerical is asserted on this page.*

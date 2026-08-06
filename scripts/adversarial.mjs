@@ -28,7 +28,7 @@ import path from 'node:path'
 import { spawnSync } from 'node:child_process'
 
 const ROOT = process.cwd()
-const CONTENT = path.join(ROOT, 'content', 'train', 'lines')
+const CONTENT = path.join(ROOT, 'content', 'rail', 'lines')
 const OUT = path.join(ROOT, 'out')
 
 const created = new Set()
@@ -89,15 +89,15 @@ const CASES = [
   {
     name: 'frontmatter with no body',
     expect: 'clean',
-    files: { 'content/train/lines/zz-empty-body.md': '---\ntitle: Empty Body\nline: BR\n---\n' },
-    assert: () => (read('train/lines/zz-empty-body/index.html') ? null : 'page was not generated'),
+    files: { 'content/rail/lines/zz-empty-body.md': '---\ntitle: Empty Body\nline: BR\n---\n' },
+    assert: () => (read('rail/lines/zz-empty-body/index.html') ? null : 'page was not generated'),
   },
   {
     name: 'completely empty file',
     expect: 'clean',
-    files: { 'content/train/lines/zz-empty.md': '' },
+    files: { 'content/rail/lines/zz-empty.md': '' },
     assert: () => {
-      const html = read('train/lines/zz-empty/index.html')
+      const html = read('rail/lines/zz-empty/index.html')
       if (!html) return 'page was not generated'
       // Must fall back to a title derived from the slug, never render blank.
       return /<h1[^>]*>\s*<\/h1>/.test(html) ? 'rendered an empty <h1>' : null
@@ -112,21 +112,21 @@ const CASES = [
      */
     name: 'unterminated frontmatter fence',
     expect: 'build-fails',
-    files: { 'content/train/lines/zz-unterminated.md': '---\ntitle: Unterminated\nline: BR\n\nBody text here.\n' },
+    files: { 'content/rail/lines/zz-unterminated.md': '---\ntitle: Unterminated\nline: BR\n\nBody text here.\n' },
     namesFile: 'zz-unterminated',
   },
   {
     name: 'invalid YAML in frontmatter',
     expect: 'build-fails',
-    files: { 'content/train/lines/zz-bad-yaml.md': '---\ntitle: "unclosed\nline: [BR\nfacts: {{{\n---\n\nBody.\n' },
+    files: { 'content/rail/lines/zz-bad-yaml.md': '---\ntitle: "unclosed\nline: [BR\nfacts: {{{\n---\n\nBody.\n' },
     namesFile: 'zz-bad-yaml',
   },
   {
     name: 'unknown station code in prose',
     expect: 'warns',
-    files: { 'content/train/lines/zz-badcode.md': '---\ntitle: Bad Code\nline: BR\n---\n\nTrains run to BR99 and back.\n' },
+    files: { 'content/rail/lines/zz-badcode.md': '---\ntitle: Bad Code\nline: BR\n---\n\nTrains run to BR99 and back.\n' },
     assert: () => {
-      const html = read('train/lines/zz-badcode/index.html')
+      const html = read('rail/lines/zz-badcode/index.html')
       if (!html) return 'page was not generated'
       return html.includes('class="badge"') && html.includes('>BR99<')
         ? 'BR99 rendered as a real badge'
@@ -136,19 +136,19 @@ const CASES = [
   {
     name: 'nonexistent line code in frontmatter',
     expect: 'warns',
-    files: { 'content/train/lines/zz-badline.md': '---\ntitle: Bad Line\nline: ZZ\n---\n\nBody.\n' },
+    files: { 'content/rail/lines/zz-badline.md': '---\ntitle: Bad Line\nline: ZZ\n---\n\nBody.\n' },
   },
   {
     name: 'spine range referencing unknown stations',
     expect: 'warns',
-    files: { 'content/train/lines/zz-badspine.md': '---\ntitle: Bad Spine\nline: BR\nspine: BR97-BR99\n---\n\nBody.\n' },
+    files: { 'content/rail/lines/zz-badspine.md': '---\ntitle: Bad Spine\nline: BR\nspine: BR97-BR99\n---\n\nBody.\n' },
   },
   {
     name: 'broken formation syntax',
     expect: 'clean',
-    files: { 'content/train/lines/zz-formation.md': '---\ntitle: Bad Formation\nline: BR\nformation: "=== + + = ="\n---\n\nBody.\n' },
+    files: { 'content/rail/lines/zz-formation.md': '---\ntitle: Bad Formation\nline: BR\nformation: "=== + + = ="\n---\n\nBody.\n' },
     assert: () => {
-      const html = read('train/lines/zz-formation/index.html')
+      const html = read('rail/lines/zz-formation/index.html')
       if (!html) return 'page was not generated'
       /*
        * Scoped to the formation section. Searching the whole document matched
@@ -164,11 +164,11 @@ const CASES = [
     name: 'enormous title and summary',
     expect: 'clean',
     files: {
-      'content/train/lines/zz-huge.md':
+      'content/rail/lines/zz-huge.md':
         `---\ntitle: ${'Very '.repeat(400)}Long\nsummary: ${'word '.repeat(3000)}\nline: BR\n---\n\nBody.\n`,
     },
     assert: () => {
-      const html = read('train/lines/zz-huge/index.html')
+      const html = read('rail/lines/zz-huge/index.html')
       if (!html) return 'page was not generated'
       const description = html.match(/<meta name="description" content="([^"]*)"/)?.[1] ?? ''
       return description.length > 400 ? `meta description is ${description.length} chars, unbounded` : null
@@ -180,11 +180,11 @@ const CASES = [
     name: 'RTL override injection in a title',
     expect: 'clean',
     files: {
-      'content/train/lines/zz-rtl.md':
+      'content/rail/lines/zz-rtl.md':
         '---\ntitle: "Wenhu ‮ enil uhneW ‬ Line"\nline: BR\n---\n\nBody with ‮ reversed ‬ text.\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-rtl/index.html')
+      const html = read('rail/lines/zz-rtl/index.html')
       if (!html) return 'page was not generated'
       // A bidi override that escapes its element can reorder unrelated UI.
       // It must at minimum still be inside the page, not in an attribute that
@@ -196,11 +196,11 @@ const CASES = [
     name: 'zero-width joiners, combining marks, emoji',
     expect: 'clean',
     files: {
-      'content/train/lines/zz-unicode.md':
+      'content/rail/lines/zz-unicode.md':
         '---\ntitle: "Zero‍width é́́́ and 🚇🚊"\nline: BR\n---\n\nStation 動物園‍園 with emoji 🚇 and combining á́́.\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-unicode/index.html')
+      const html = read('rail/lines/zz-unicode/index.html')
       if (!html) return 'page was not generated'
       return html.includes('🚇') ? null : 'emoji was dropped from the output'
     },
@@ -222,7 +222,7 @@ const CASES = [
     expect: 'build-fails',
     files: {
       // Deliberately obscure characters that the committed subset cannot hold.
-      'content/train/lines/zz-han.md': '---\ntitle: Rare Han\nline: BR\n---\n\nRare: 龘齾靐龗 here.\n',
+      'content/rail/lines/zz-han.md': '---\ntitle: Rare Han\nline: BR\n---\n\nRare: 龘齾靐龗 here.\n',
     },
     assert: ({ output = '' } = {}) => {
       if (!/not in the subset they load/.test(output)) {
@@ -237,11 +237,11 @@ const CASES = [
     name: 'javascript: URL in a Markdown link',
     expect: 'warns',
     files: {
-      'content/train/lines/zz-jsurl.md':
+      'content/rail/lines/zz-jsurl.md':
         '---\ntitle: JS URL\nline: BR\n---\n\n[click](javascript:alert(1)) and <javascript:alert(2)>\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-jsurl/index.html')
+      const html = read('rail/lines/zz-jsurl/index.html')
       if (!html) return 'page was not generated'
       return /href="javascript:/i.test(html) ? 'javascript: URL survived into the output' : null
     },
@@ -250,11 +250,11 @@ const CASES = [
     name: 'data: URL in a Markdown image',
     expect: 'warns',
     files: {
-      'content/train/lines/zz-dataurl.md':
+      'content/rail/lines/zz-dataurl.md':
         '---\ntitle: Data URL\nline: BR\n---\n\n![x](data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==)\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-dataurl/index.html')
+      const html = read('rail/lines/zz-dataurl/index.html')
       if (!html) return 'page was not generated'
       return /src="data:text\/html/i.test(html) ? 'data:text/html URL survived' : null
     },
@@ -263,11 +263,11 @@ const CASES = [
     name: 'raw HTML and event handlers in Markdown',
     expect: 'clean',
     files: {
-      'content/train/lines/zz-html.md':
+      'content/rail/lines/zz-html.md':
         '---\ntitle: Raw HTML\nline: BR\n---\n\n<script>alert(1)</script>\n\n<img src=x onerror=alert(2)>\n\n<span onmouseover="alert(3)">x</span>\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-html/index.html')
+      const html = read('rail/lines/zz-html/index.html')
       if (!html) return 'page was not generated'
       const prose = html.match(/<div class="prose">[\s\S]*?<\/div>/)?.[0] ?? ''
       if (/<script/i.test(prose)) return 'a <script> element was emitted into the prose'
@@ -279,11 +279,11 @@ const CASES = [
     name: 'HTML in frontmatter values',
     expect: 'clean',
     files: {
-      'content/train/lines/zz-fmhtml.md':
+      'content/rail/lines/zz-fmhtml.md':
         '---\ntitle: \'FM <script>alert(1)</script>\'\nsummary: \'<img src=x onerror=alert(2)>\'\nline: BR\nfacts:\n  - label: \'<b>L</b>\'\n    value: \'</td><script>alert(3)</script>\'\n---\n\nBody.\n',
     },
     assert: () => {
-      const html = read('train/lines/zz-fmhtml/index.html')
+      const html = read('rail/lines/zz-fmhtml/index.html')
       if (!html) return 'page was not generated'
       const body = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, '')
       return /<script>alert/.test(body) ? 'frontmatter HTML was not escaped' : null

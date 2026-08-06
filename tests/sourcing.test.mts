@@ -35,8 +35,8 @@ const OUT = path.join(ROOT, 'out')
 const BASELINE = path.join(ROOT, 'docs', 'claims-baseline.json')
 
 const contentPages = () =>
-  ['train/lines/wenhu-line', 'train/rolling-stock/val256', 'train/rolling-stock/innovia-apm-256-c370',
-   'train/depots/muzha-depot', 'train/depots/neihu-depot', 'train/history/matra-dispute']
+  ['rail/lines/wenhu-line', 'rail/rolling-stock/val256', 'rail/rolling-stock/innovia-apm-256-c370',
+   'rail/depots/muzha-depot', 'rail/depots/neihu-depot', 'rail/history/matra-dispute']
     .map((slug) => ({ slug, file: path.join(OUT, slug, 'index.html') }))
     .filter((page) => fs.existsSync(page.file))
 

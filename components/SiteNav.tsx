@@ -17,7 +17,7 @@ import { usePathname } from 'next/navigation'
 
 type NavItem = { href: string; title: string }
 
-/** "/train/" and "/train" should both count as being in the Train section. */
+/** "/rail/" and "/rail" should both count as being in the Train section. */
 function isInSection(pathname: string, href: string) {
   const base = href.replace(/\/+$/, '')
   return pathname === base || pathname.startsWith(base + '/')

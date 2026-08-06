@@ -50,7 +50,9 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  return walk(OUT)
+  // out/train holds the generated /train → /rail redirect stubs — tiny
+  // meta-refresh pages, not site pages. They have their own test below.
+  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
 }
 
 /* ---- page inventory ------------------------------------------------ */
@@ -64,7 +66,7 @@ test('every content page exported an index.html', () => {
 
 test('every Wenhu station exported a page', () => {
   const missing = getLineStations('BR')
-    .map((s) => `train/stations/${s.code.toLowerCase()}/index.html`)
+    .map((s) => `rail/stations/${s.code.toLowerCase()}/index.html`)
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
 })
@@ -72,7 +74,7 @@ test('every Wenhu station exported a page', () => {
 test('the generated routes exported', () => {
   for (const rel of [
     'index.html',
-    'train/network/index.html',
+    'rail/network/index.html',
     'data/index.html',
     'data/stations/index.html',
     'data/line-colours/index.html',
@@ -92,11 +94,15 @@ test('the expected number of pages was generated', () => {
    */
   const content = getAllPages().length
   const stations = getLineStations('BR').length
-  const sections = 2 // /train, /bus
-  const types = 6 // lines, rolling-stock, depots, history, routes, operators
-  // /, /train/network, /data, /data/stations, /data/line-colours,
-  // /data/provenance, /data/sources, /about, /404, /_not-found
-  const generated = 10
+  const sections = 6 // /rail, /bus, /bike, /gondola, /ferry, /ticketing
+  // rail: lines, rolling-stock, depots, history, systems, operators
+  // bus: network, operators, routes, models, garages
+  // bike: history, generations, stations
+  const types = 14
+  // /, /rail/network, /rail/stations, /data, /data/stations,
+  // /data/line-colours, /data/provenance, /data/sources, /about, /404,
+  // /_not-found
+  const generated = 11
   const expected = content + stations + sections + types + generated
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
@@ -105,6 +111,22 @@ test('the expected number of pages was generated', () => {
     expected,
     `${actual} pages exported, expected ${expected}. If you added a page, update the count here.`,
   )
+})
+
+test('every /rail page has a /train redirect stub pointing back at it', () => {
+  const railPages = allHtml().filter((f) =>
+    path.relative(OUT, f).startsWith('rail' + path.sep),
+  )
+  for (const file of railPages) {
+    const rel = path.relative(path.join(OUT, 'rail'), file)
+    const stub = path.join(OUT, 'train', rel)
+    assert.ok(fs.existsSync(stub), `no redirect stub for rail/${rel}`)
+    const html = fs.readFileSync(stub, 'utf8')
+    const target = '/rail/' + rel.split(path.sep).join('/').replace(/index\.html$/, '')
+    assert.ok(html.includes(`url=${target}`), `stub for ${rel} does not refresh to ${target}`)
+    assert.ok(html.includes('rel="canonical"'), `stub for ${rel} carries no canonical`)
+    assert.ok(html.includes('noindex'), `stub for ${rel} is indexable`)
+  }
 })
 
 test('a 404 page exists for unknown paths', () => {
@@ -151,13 +173,13 @@ test('no page leaks a literal undefined, NaN or [object Object]', () => {
 })
 
 test('the Wenhu Line page states the official route length', () => {
-  const html = read('train/lines/wenhu-line/index.html')
+  const html = read('rail/lines/wenhu-line/index.html')
   assert.ok(html.includes('25.17'), 'official route length missing')
   assert.ok(!html.includes('26.4'), 'the inflated 26.4 km figure is still being printed')
 })
 
 test('the network table prints both a length and a measurement per line', () => {
-  const html = read('train/network/index.html')
+  const html = read('rail/network/index.html')
   for (const line of LINES) {
     assert.ok(html.includes(line.name), `${line.name} missing from the network table`)
   }
@@ -174,7 +196,7 @@ test('the footer no longer calls the line colours community-sourced', () => {
 })
 
 test('every page carries the official palette, not a stale copy', () => {
-  const html = read('train/network/index.html')
+  const html = read('rail/network/index.html')
   for (const line of LINES) {
     assert.ok(
       html.includes(line.map),
@@ -220,7 +242,7 @@ test('no internal link 404s', () => {
 })
 
 test('no page links to a bare .html file', () => {
-  // The export uses trailing-slash folders. A link to /train/lines/wenhu-line.html
+  // The export uses trailing-slash folders. A link to /rail/lines/wenhu-line.html
   // would resolve locally and 404 on the host.
   const offenders: string[] = []
   for (const file of allHtml()) {

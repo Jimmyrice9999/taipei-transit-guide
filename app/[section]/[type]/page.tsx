@@ -1,4 +1,4 @@
-/** A page-type index: /train/lines/, /train/rolling-stock/, /train/depots/ */
+/** A page-type index: /rail/lines/, /rail/rolling-stock/, /rail/depots/ */
 
 import Link from 'next/link'
 import { notFound } from 'next/navigation'

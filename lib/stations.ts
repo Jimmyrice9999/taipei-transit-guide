@@ -100,7 +100,7 @@ export const LINES_WITH_STATION_PAGES = new Set(['BR'])
 export function getStationHref(code: string): string | null {
   const station = getStation(code)
   if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) return null
-  return `/train/stations/${station.code.toLowerCase()}/`
+  return `/rail/stations/${station.code.toLowerCase()}/`
 }
 
 /**

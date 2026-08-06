@@ -33,6 +33,7 @@
     "facts": "node scripts/fact-check.mjs",
     "cite": "node scripts/citations.mjs",
     "claims": "node scripts/claims.mjs",
+    "entities": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/entities.mts",
     "determinism": "node scripts/determinism.mjs",
     "verify": "npm run check && npm run a11y && npm run facts && npm run cite && npm run claims && npm run geometry:audit && npm run cvd"
   },

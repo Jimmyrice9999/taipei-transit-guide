@@ -7,7 +7,7 @@
  * WHY
  *
  * The same fact is stated in up to four places — Markdown prose, frontmatter
- * `facts:`, frontmatter `specs:`, and a generated page like /train/network or
+ * `facts:`, frontmatter `specs:`, and a generated page like /rail/network or
  * /data/stations. Nothing kept them in step. The consequences were not
  * hypothetical: the route length said 26.42 on one page and "unsettled between
  * 25.1 and 25.7" on another, and the footer contradicted /data about the
@@ -121,25 +121,25 @@ const ok = (label) => checks.push(label)
     ok('station and line counts on /data/stations')
   }
 
-  const network = text(read('train/network/index.html') ?? '')
+  const network = text(read('rail/network/index.html') ?? '')
   const netClaim = network.match(/(\d+) lines, (\d+) stations/)
   if (netClaim) {
     if (Number(netClaim[2]) !== data.totalStations) {
-      fail('/train/network', `claims ${netClaim[2]} stations; registry holds ${data.totalStations}`)
+      fail('/rail/network', `claims ${netClaim[2]} stations; registry holds ${data.totalStations}`)
     }
     if (Number(netClaim[1]) !== data.lineCount) {
-      fail('/train/network', `claims ${netClaim[1]} lines; registry holds ${data.lineCount}`)
+      fail('/rail/network', `claims ${netClaim[1]} lines; registry holds ${data.lineCount}`)
     }
-    ok('line and station counts on /train/network')
+    ok('line and station counts on /rail/network')
   }
 
   const interchangeClaim = network.match(/(\d+) places where you can change lines/)
   if (interchangeClaim && Number(interchangeClaim[1]) !== data.interchanges.length) {
     fail(
-      '/train/network',
+      '/rail/network',
       `claims ${interchangeClaim[1]} interchanges; getInterchanges() finds ${data.interchanges.length}`,
     )
-  } else if (interchangeClaim) ok('interchange count on /train/network')
+  } else if (interchangeClaim) ok('interchange count on /rail/network')
 }
 
 /* ------------------------------------------------------------------ */
@@ -147,7 +147,7 @@ const ok = (label) => checks.push(label)
 /* ------------------------------------------------------------------ */
 
 {
-  const source = fs.readFileSync(path.join(CONTENT, 'train/lines/wenhu-line.md'), 'utf8')
+  const source = fs.readFileSync(path.join(CONTENT, 'rail/lines/wenhu-line.md'), 'utf8')
 
   /*
    * ── Harness bug, found by this run's own edits ─────────────────────────────
@@ -261,7 +261,7 @@ const ok = (label) => checks.push(label)
    * would have caught it is the citation on the row.
    */
   for (const depot of ['muzha-depot', 'neihu-depot']) {
-    const file = path.join(CONTENT, 'train/depots', `${depot}.md`)
+    const file = path.join(CONTENT, 'rail/depots', `${depot}.md`)
     if (!fs.existsSync(file)) continue
     const depotData = matter(fs.readFileSync(file, 'utf8')).data
     const at = String(depotData.spine ?? '').trim().toUpperCase()
@@ -288,7 +288,7 @@ const ok = (label) => checks.push(label)
 {
   let mismatches = 0
   for (const station of data.br) {
-    const html = visible(read(`train/stations/${station.code.toLowerCase()}/index.html`) ?? '')
+    const html = visible(read(`rail/stations/${station.code.toLowerCase()}/index.html`) ?? '')
     if (!html) {
       fail(station.code, 'station page missing')
       mismatches++
@@ -326,7 +326,7 @@ const ok = (label) => checks.push(label)
 /* ------------------------------------------------------------------ */
 
 {
-  const html = visible(read('train/lines/wenhu-line/index.html') ?? '')
+  const html = visible(read('rail/lines/wenhu-line/index.html') ?? '')
   const spineOrder = [...html.matchAll(/data-station="([^"]+)"/g)].map((m) => m[1])
   const expected = data.br.map((s) => s.code)
 
@@ -346,7 +346,7 @@ const ok = (label) => checks.push(label)
   let checked = 0
   for (const leg of data.runTimes) {
     if (leg.sec == null) continue
-    const html = visible(read(`train/stations/${leg.from.toLowerCase()}/index.html`) ?? '')
+    const html = visible(read(`rail/stations/${leg.from.toLowerCase()}/index.html`) ?? '')
     if (!html) continue
     const expected = `${Math.round(leg.sec / 60)} min`
     const alt = `${leg.sec} sec`
@@ -511,7 +511,7 @@ const ok = (label) => checks.push(label)
   }
 
   // The same claims, in the generated pages.
-  for (const rel of ['data/provenance/index.html', 'train/network/index.html', 'about/index.html']) {
+  for (const rel of ['data/provenance/index.html', 'rail/network/index.html', 'about/index.html']) {
     const html = visible(read(rel) ?? '')
     for (const claim of CLAIMS) {
       if (claim.pattern.test(html) && !claim.holdsIf(html)) fail(rel, claim.message)

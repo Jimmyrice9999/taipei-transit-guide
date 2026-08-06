@@ -150,7 +150,7 @@ export default function ProvenancePage() {
             <strong>Measured route lengths.</strong> Distances computed along the drawn
             geometry, between the first station and the last. These are ours, and they sit
             beside the operators' own figures on{' '}
-            <Link href="/train/network/">the network page</Link> rather than replacing them
+            <Link href="/rail/network/">the network page</Link> rather than replacing them
             — printing both is what makes the check visible.
           </li>
         </ul>

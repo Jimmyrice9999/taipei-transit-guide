@@ -2,9 +2,9 @@
  * Reads the /content folder and turns it into pages.
  *
  * The folder layout IS the site structure. A file at
- *   content/train/lines/wenhu-line.md
+ *   content/rail/lines/wenhu-line.md
  * becomes the page
- *   /train/lines/wenhu-line/
+ *   /rail/lines/wenhu-line/
  *
  * Three levels, always:
  *   content/<section>/<type>/<page>.md
@@ -27,6 +27,7 @@ import remarkRehype from 'remark-rehype'
 import rehypeSlug from 'rehype-slug'
 import rehypeStringify from 'rehype-stringify'
 import {
+  rehypeArticleLayout,
   rehypeBasePath,
   rehypeCitations,
   rehypeFigures,
@@ -39,9 +40,22 @@ import {
 import { numberSources, validateSource, type NumberedSource, type Source } from './sources.ts'
 import { getImageSize } from './image-size.ts'
 import { LINES, getLine } from './lines.ts'
-import { getStation } from './stations.ts'
+import { STATIONS, getStation, getStationHref } from './stations.ts'
+import { rehypeAutoLink, type LinkEntity } from './markdown-plugins.ts'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
+
+/**
+ * Types whose pages are long-form articles rather than entity records.
+ *
+ * The distinction drives real differences: an article gets no spine (a rail of
+ * unlabelled ticks beside a narrative is decoration pretending to be data), a
+ * centred reading column instead of the three-column grid, timeline and
+ * thread devices in its prose, and inline station links in place of a map.
+ * An entity page (a line, a fleet, a depot) keeps the spine because "which
+ * stretch of the line this concerns" is one of its facts.
+ */
+export const ARTICLE_TYPES = new Set(['history'])
 
 /** Prefix for GitHub Pages subpath hosting; empty when served from the root. */
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
@@ -129,6 +143,12 @@ export type PageMeta = {
   hero: Hero | null
   /** Everything this page cites, in the order it is numbered on the page. */
   sources: Source[]
+  /**
+   * Extra strings that should auto-link to this page — Chinese names,
+   * abbreviations, alternate spellings. The page title links without being
+   * listed here.
+   */
+  aliases: string[]
 }
 
 /** One row of the technical specification table. */
@@ -154,6 +174,8 @@ export type Page = PageMeta & {
   sectionStations: Record<string, string[]>
   /** The page's sources with their numbers, and whether anything cites them. */
   references: NumberedSource[]
+  /** Entity links the auto-linker added, in order — the audit trail. */
+  autoLinks: LinkEntity[]
 }
 
 /* ------------------------------------------------------------------ */
@@ -532,6 +554,7 @@ function readPageMeta(section: string, type: string, slug: string): PageMeta {
     formation: toText(data.formation),
     hero: toHero(data.hero),
     sources: toSources(data.sources),
+    aliases: Array.isArray(data.aliases) ? data.aliases.map(toText).filter(Boolean) : [],
   }
 
   validateFrontmatter(`content/${section}/${type}/${slug}.md`, meta)
@@ -553,6 +576,30 @@ export function getAllPages(): PageMeta[] {
   )
 }
 
+/**
+ * Everything a name in prose can resolve to: every content page under its
+ * title and aliases, every station with a page under its English and Chinese
+ * names. This is the auto-linker's registry — see rehypeAutoLink for the
+ * matching rules. Memoised: it is identical for every page in a build.
+ */
+let linkEntities: LinkEntity[] | null = null
+export function getLinkEntities(): LinkEntity[] {
+  if (linkEntities) return linkEntities
+  const entities: LinkEntity[] = []
+  for (const page of getAllPages()) {
+    entities.push({ name: page.title, href: page.href })
+    for (const alias of page.aliases) entities.push({ name: alias, href: page.href })
+  }
+  for (const station of STATIONS) {
+    const href = getStationHref(station.code)
+    if (!href) continue
+    entities.push({ name: station.name, href })
+    if (station.nameZh) entities.push({ name: station.nameZh, href })
+  }
+  linkEntities = entities
+  return entities
+}
+
 /** One page, with its Markdown body converted to HTML. */
 export async function getPage(section: string, type: string, slug: string): Promise<Page> {
   const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
@@ -560,6 +607,7 @@ export async function getPage(section: string, type: string, slug: string): Prom
 
   const relative = `content/${section}/${type}/${slug}.md`
   const sectionStations: Record<string, string[]> = {}
+  const autoLinks: LinkEntity[] = []
   const meta = readPageMeta(section, type, slug)
 
   /*
@@ -571,13 +619,16 @@ export async function getPage(section: string, type: string, slug: string): Prom
     [...meta.facts, ...meta.specs].map((row) => row.source).filter(Boolean),
   )
 
-  const html = await unified()
+  const article = ARTICLE_TYPES.has(type)
+
+  const processor = unified()
     .use(remarkParse) // Markdown text -> syntax tree
     .use(remarkGfm) // adds tables, strikethrough, task lists
     .use(remarkRehype) // Markdown tree -> HTML tree
     .use(rehypeSlug) // give every heading an id, so headings are linkable
-    // station code badges + <span lang="zh-Hant"> around Chinese, one pass
-    .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning })
+    // station code badges + <span lang="zh-Hant"> around Chinese, one pass;
+    // on article pages the badges also link — no map there to do it instead
+    .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning, linkStations: article })
     // After rehypeRichText: a marker is plain ASCII and survives that pass
     // untouched, but running first would let a `[^br01-thing]` id be eaten by
     // the station-code tokenizer.
@@ -586,8 +637,21 @@ export async function getPage(section: string, type: string, slug: string): Prom
       used,
       onWarning: (message: string) => console.warn(`  ⚠ ${relative}: ${message}`),
     })
+    // Every named entity links on first mention. After citations (marker text
+    // is out of the text nodes), before the section-station scan.
+    .use(rehypeAutoLink, {
+      entities: getLinkEntities(),
+      currentHref: meta.href,
+      onLink: (entity: LinkEntity) => autoLinks.push(entity),
+    })
     .use(rehypeSectionStations, { into: sectionStations }) // for the spine
     .use(rehypeFigures, { getSize: getImageSize }) // captions, credits, real dimensions
+
+  // Timeline and thread devices, articles only. Before rehypeTableScroll: a
+  // timeline is no longer a table and must not be wrapped as one.
+  if (article) processor.use(rehypeArticleLayout)
+
+  const html = await processor
     .use(rehypeTableScroll) // let wide tables scroll instead of the page
     // Before rehypeBasePath, so a blocked href is gone before anything tries
     // to prefix it.
@@ -613,6 +677,7 @@ export async function getPage(section: string, type: string, slug: string): Prom
     html: String(html),
     sectionStations,
     references: numberSources(meta.sources, used),
+    autoLinks,
   }
 }
 

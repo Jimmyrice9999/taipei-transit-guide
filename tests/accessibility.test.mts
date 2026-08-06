@@ -31,7 +31,8 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  return walk(OUT)
+  // out/train holds the /train → /rail redirect stubs, not pages — skipped.
+  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
 }
 
 const visible = (html: string) => html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
@@ -59,7 +60,7 @@ test('the network map labels every line with its code', () => {
    * indistinguishable — so a reader with it could not tell which line was
    * which anywhere on the page's main illustration.
    */
-  const html = read('train/network/index.html')
+  const html = read('rail/network/index.html')
   for (const line of LINES) {
     assert.ok(
       html.includes(`class="routemap-linelabel-text">${line.code}<`),
@@ -69,7 +70,7 @@ test('the network map labels every line with its code', () => {
 })
 
 test('the network table identifies lines by code, not only by colour', () => {
-  const html = visible(read('train/network/index.html'))
+  const html = visible(read('rail/network/index.html'))
   // A bare colour swatch with no adjacent token would leave the table
   // unreadable for the same reader the map labels were added for.
   assert.ok(!html.includes('network-swatch'), 'the colour-only swatch is back')
@@ -81,7 +82,7 @@ test('the network table identifies lines by code, not only by colour', () => {
 test('no interchange is shown by colour alone', () => {
   // Interchange badges carry the interchanging line's letter code, not just its
   // colour. If the code were dropped the badge would be a coloured chip.
-  const html = visible(read('train/stations/br10/index.html'))
+  const html = visible(read('rail/stations/br10/index.html'))
   assert.ok(html.includes('BL'), 'BR10 does not name the Bannan Line it interchanges with')
 })
 
@@ -128,7 +129,7 @@ test('the 404 page offers a way back into the site', () => {
   const html = visible(read('404.html'))
   assert.ok(html.includes('href="/"'), 'no link home')
   assert.ok(html.includes('/data/stations/'), 'does not point at the station records')
-  assert.ok(html.includes('/train/network/'), 'does not point at the network page')
+  assert.ok(html.includes('/rail/network/'), 'does not point at the network page')
 })
 
 test('no image is missing alt text or explicit dimensions', () => {
