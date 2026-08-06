@@ -1,0 +1,192 @@
+[
+  {
+    "FromLineID": "Y",
+    "FromLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "FromLineNo": "Y",
+    "FromStationID": "Y07",
+    "FromStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G04",
+    "ToStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "FromLineID": "Y",
+    "FromLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "FromLineNo": "Y",
+    "FromStationID": "Y11",
+    "FromStationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O02",
+    "ToStationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "TransferDescription": "",
+    "TransferTime": 6,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "FromLineID": "Y",
+    "FromLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "FromLineNo": "Y",
+    "FromStationID": "Y16",
+    "FromStationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "IsOnSiteTransfer": 0,
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL07",
+    "ToStationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "TransferDescription": "",
+    "TransferTime": 11,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "FromLineID": "Y",
+    "FromLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "FromLineNo": "Y",
+    "FromStationID": "Y17",
+    "FromStationName": {
+      "En": "Xinpu Minsheng",
+      "Ja": "新埔民生",
+      "Ko": "신푸민셩",
+      "Zh_tw": "新埔民生"
+    },
+    "IsOnSiteTransfer": 0,
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL08",
+    "ToStationName": {
+      "En": "Xinpu",
+      "Ja": "新埔",
+      "Ko": "신푸",
+      "Zh_tw": "新埔"
+    },
+    "TransferDescription": "",
+    "TransferTime": 9,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "FromLineID": "Y",
+    "FromLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "FromLineNo": "Y",
+    "FromStationID": "Y18",
+    "FromStationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O17",
+    "ToStationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "TransferDescription": "",
+    "TransferTime": 6,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

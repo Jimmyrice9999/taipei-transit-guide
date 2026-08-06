@@ -1,61 +1,69 @@
 /**
- * The line registry — the single source of truth for colour on this site.
+ * The line registry — the single source of colour on this site.
  *
  * ─────────────────────────────────────────────────────────────────────────────
- * SOURCE AND ACCURACY
+ * SOURCE: OFFICIAL
  *
- * These are community-sourced values, NOT an official TRTC specification.
- * Treat them as provisional and do not present them to readers as authoritative.
+ * Line colours come from `LineColor` in Taiwan MOTC's TDX platform, fetched with
+ * `npm run tdx` and committed under data/tdx/. They are government open data,
+ * not community transcription, and they superseded the values this file used to
+ * carry — see docs/design-reference.md §1 for the old-to-new record.
  *
- * DORTS states its signage system defines fixed Pantone, RGB and CMYK values per
- * line, but that spec is not published openly. Conflicting values circulate: the
- * English Wikipedia sandbox module carries BR #9E652E, R #CB2C30 and G #007749,
- * which disagree with the values below. At least one of the two sets is wrong.
+ * The Circular Line and the Airport MRT are not operated by TRTC, so their
+ * colours come from the New Taipei Metro and Taoyuan Metro line records
+ * respectively. Same platform, different operator.
  *
- * TO VERIFY: sample the colours directly from TRTC's official route map and
- * treat those as canonical. Then update `map` below and re-run
- * `npm run palette` — every derived value regenerates from it.
+ * To refresh: `npm run tdx`, then `npm run palette` to confirm every derived
+ * value still clears WCAG AA.
  * ─────────────────────────────────────────────────────────────────────────────
  *
- * Each entry carries ONE hand-maintained colour, `map` — the official line
- * colour. `badge` and `ink` are derived from it at build time (see below), so a
- * correction to `map` propagates automatically and cannot go stale.
+ * Each line carries ONE colour from source, `map`. `badge` and `ink` are derived
+ * from it at build time, so a change at source propagates automatically and
+ * cannot go stale.
  */
 
-// Explicit .ts extension so `npm run palette` can run this file directly under
-// Node's native TypeScript support, sharing the exact code the site ships.
-import { AA, NEAR_BLACK, WHITE, contrast, darkenUntil, readableOn } from './color.ts'
+import { AA_DERIVE, NEAR_BLACK, WHITE, contrast, darkenUntil, readableOn } from './color.ts'
+// `with { type: 'json' }` is required by Node's ESM loader, which `npm run
+// palette` uses to import this file directly. Bundlers accept it too.
+import trtcLines from '../data/tdx/TRTC/line.json' with { type: 'json' }
+import ntmcLines from '../data/tdx/NTMC/line.json' with { type: 'json' }
+import tymcLines from '../data/tdx/TYMC/line.json' with { type: 'json' }
 
-type LineSource = {
-  code: string
-  name: string
-  /** The official line colour, as published on route maps. */
-  map: string
-  /** Provenance for this specific value. Keep it honest and per-value. */
-  source: string
+type TdxLine = {
+  LineID: string
+  LineColor: string
+  LineName: { En: string; Zh_tw: string }
 }
 
-const SOURCES: LineSource[] = [
-  { code: 'BR', name: 'Wenhu', map: '#C48C31', source: 'Wikidata, cited to TRTC 2025 route map' },
-  { code: 'R', name: 'Tamsui–Xinyi', map: '#E3002C', source: 'en.wikipedia Module:Adjacent stations' },
-  { code: 'G', name: 'Songshan–Xindian', map: '#008659', source: 'en.wikipedia Module:Adjacent stations' },
-  { code: 'O', name: 'Zhonghe–Xinlu', map: '#F8B61C', source: 'en.wikipedia Module:Adjacent stations' },
-  { code: 'BL', name: 'Bannan', map: '#0070BD', source: 'en.wikipedia Module:Adjacent stations' },
-  { code: 'A', name: 'Taoyuan Airport MRT', map: '#8E47AD', source: 'Wikidata (commuter service)' },
+/** Every line record we hold, keyed by line code, with its operator. */
+const SOURCE_LINES = new Map<string, { record: TdxLine; operator: string }>()
 
-  // UNSOURCED — weaker provenance than everything above. This value does not
-  // appear in docs/design-reference.md; it is a plausible yellow carried over
-  // from an earlier draft. Verify before any Circular Line page is published.
-  { code: 'Y', name: 'Circular', map: '#FFDB00', source: 'UNSOURCED — not in design reference' },
+for (const [operator, records] of [
+  ['TRTC', trtcLines],
+  ['NTMC', ntmcLines],
+  ['TYMC', tymcLines],
+] as const) {
+  for (const record of records as unknown as TdxLine[]) {
+    if (record?.LineID && record?.LineColor) {
+      SOURCE_LINES.set(record.LineID.toUpperCase(), { record, operator })
+    }
+  }
+}
 
-  // Future lines already have assigned colours (Wanda–Zhonghe–Shulin is light
-  // green, code LG). Add them here and the whole system extends: nav, badges,
-  // accents and contrast checks all follow from this one array.
-]
+/**
+ * Which lines the site displays, in network order.
+ *
+ * Listed explicitly rather than taken from the data wholesale, so that adding an
+ * operator to the fetch does not silently change the palette. A code here with
+ * no source record throws at build — better than rendering a colourless badge.
+ */
+const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'A'] as const
 
 export type Line = {
   code: string
   name: string
+  /** Traditional Chinese line name, from source. */
+  nameZh: string
   /** Official colour. Large fills only — several lines fail contrast on white. */
   map: string
   /** Badge background. The official colour wherever it can carry text. */
@@ -69,29 +77,45 @@ export type Line = {
    * bar needs its 1px ink hairline to have a defined edge.
    */
   needsHairline: boolean
-  source: string
+  /** Which operator's records this came from. */
+  operator: string
 }
 
-function derive(line: LineSource): Line {
+/** TDX names lines "Wenhu Line"; the UI appends "Line" itself. */
+const trimLine = (name: string) => name.replace(/\s+Line$/i, '').trim()
+
+function derive(code: string): Line {
+  const source = SOURCE_LINES.get(code)
+  if (!source) {
+    throw new Error(
+      `No TDX line record for "${code}". Run \`npm run tdx\`, or remove it from DISPLAY_ORDER.`,
+    )
+  }
+
+  const { record, operator } = source
+  // TDX publishes lowercase hex; normalise so it matches everywhere else.
+  const map = record.LineColor.trim().toUpperCase()
+
   // Prefer the official colour untouched. Most lines can carry white or
   // near-black text at AA; only darken the fill when neither works.
-  const direct = readableOn(line.map)
-  const badgeBg = direct ? line.map : darkenUntil(line.map, (c) => contrast(WHITE, c) >= AA)
-  const badgeFg = direct ?? WHITE
+  // Derived against AA_DERIVE, not AA, so nothing lands on the threshold.
+  const direct = readableOn(map)
+  const badgeBg = direct ? map : darkenUntil(map, (c) => contrast(WHITE, c) >= AA_DERIVE)
 
   return {
-    code: line.code,
-    name: line.name,
-    map: line.map,
+    code,
+    name: trimLine(record.LineName?.En ?? code),
+    nameZh: trimLine(record.LineName?.Zh_tw ?? ''),
+    map,
     badgeBg,
-    badgeFg,
-    ink: darkenUntil(line.map, (c) => contrast(c, WHITE) >= AA),
-    needsHairline: contrast(line.map, WHITE) < 3,
-    source: line.source,
+    badgeFg: direct ?? WHITE,
+    ink: darkenUntil(map, (c) => contrast(c, WHITE) >= AA_DERIVE),
+    needsHairline: contrast(map, WHITE) < 3,
+    operator,
   }
 }
 
-export const LINES: Line[] = SOURCES.map(derive)
+export const LINES: Line[] = DISPLAY_ORDER.map(derive)
 
 const BY_CODE = new Map(LINES.map((l) => [l.code, l]))
 
@@ -99,12 +123,13 @@ const BY_CODE = new Map(LINES.map((l) => [l.code, l]))
 export const NEUTRAL_LINE: Line = {
   code: '',
   name: 'No line',
+  nameZh: '',
   map: '#3D454E',
   badgeBg: '#3D454E',
   badgeFg: WHITE,
   ink: '#3D454E',
   needsHairline: false,
-  source: 'Site neutral, not a line colour',
+  operator: 'site',
 }
 
 export function getLine(code: string | undefined | null): Line | undefined {

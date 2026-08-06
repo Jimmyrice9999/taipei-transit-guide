@@ -1,7 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getPages, getSections, getTypes } from '@/lib/content'
+
+// Stated rather than inherited, so the home page's canonical is deliberate and
+// so the test that every page declares one has something to find here too.
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function HomePage() {
   const sections = getSections()

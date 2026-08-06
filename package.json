@@ -2,9 +2,13 @@
   "name": "taipei-transit-guide",
   "version": "0.1.0",
   "private": true,
+  "//engines": "Node 24 because the data scripts and the test suite are .mts and rely on Node executing TypeScript directly. Unflagged from 23.6; on 22 the tests do not run at all.",
+  "engines": {
+    "node": ">=23.6"
+  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/postbuild.mjs",
     "start": "next start",
     "fonts": "node scripts/subset-cjk.mjs",
     "palette": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/palette.mts",
@@ -12,7 +16,25 @@
     "metrics": "node scripts/type-metrics.mjs",
     "weigh": "node scripts/weigh.mjs",
     "wordmark": "node scripts/make-wordmark.mjs",
-    "assets": "npm run fonts && npm run favicon && npm run wordmark"
+    "assets": "npm run fonts && npm run favicon && npm run wordmark",
+    "tdx": "node scripts/fetch-tdx.mjs",
+    "stations": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-stations.mts",
+    "geometry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/geometry-report.mts",
+    "colours": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/export-colours.mts",
+    "data": "npm run stations && npm run colours",
+    "check": "node scripts/check-links.mjs",
+    "a11y": "node scripts/a11y-report.mjs",
+    "cvd": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/cvd-report.mts",
+    "geometry:audit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/geometry-audit.mts",
+    "test:unit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mts",
+    "test": "npm run cite && npm run build && npm run test:unit && npm run facts",
+    "verify:browser": "node scripts/browser-verify.mjs",
+    "adversarial": "node scripts/adversarial.mjs",
+    "facts": "node scripts/fact-check.mjs",
+    "cite": "node scripts/citations.mjs",
+    "claims": "node scripts/claims.mjs",
+    "determinism": "node scripts/determinism.mjs",
+    "verify": "npm run check && npm run a11y && npm run facts && npm run cite && npm run claims && npm run geometry:audit && npm run cvd"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -36,7 +58,9 @@
     "@types/node": "^26.1.2",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "axe-core": "^4.12.1",
     "fontkit": "^2.0.4",
+    "playwright": "^1.62.1",
     "subset-font": "^2.5.0",
     "typescript": "^7.0.2"
   }

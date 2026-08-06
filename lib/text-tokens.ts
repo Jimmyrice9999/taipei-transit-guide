@@ -9,6 +9,7 @@
  */
 
 import { LINE_CODES_BY_LENGTH } from './lines.ts'
+import { getStation } from './stations.ts'
 
 /**
  * Han and CJK punctuation.
@@ -21,11 +22,19 @@ export const HAN_PATTERN =
   /[\u2E80-\u2FDF\u3000-\u303F\u3100-\u312F\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF]+/g
 
 /**
- * A station code: a known line code followed by one or two digits, as a whole
- * word. Longest line codes first so BR and BL match before R and B.
+ * A station code: a known line code, one or two digits, and an optional single
+ * letter for a branch station. Longest line codes first so BR and BL match
+ * before R and B.
+ *
+ * The branch suffix is not decoration. Three stations carry one — R22A
+ * Xinbeitou, G03A Xiaobitan and A14a Airport Hotel — and without it the pattern
+ * did not match them *at all*: `\b` after the digits fails when the next
+ * character is a letter. So "R22A" in a Markdown file produced no badge AND no
+ * warning, which is the worst of both. The proofreading guarantee the README
+ * advertises did not cover branch stations.
  */
 export const STATION_CODE_PATTERN = new RegExp(
-  `\\b(${LINE_CODES_BY_LENGTH.join('|')})(\\d{1,2})\\b`,
+  `\\b(${LINE_CODES_BY_LENGTH.join('|')})(\\d{1,2})([A-Za-z])?\\b`,
   'g',
 )
 
@@ -59,8 +68,26 @@ export function tokenize(value: string): Token[] {
 
   while ((match = STATION_CODE_PATTERN.exec(value)) !== null) {
     if (match.index > last) out.push(...splitHan(value.slice(last, match.index)))
-    out.push({ kind: 'code', value: match[0], line: match[1] })
-    last = match.index + match[0].length
+
+    const [full, line, digits, suffix] = match
+
+    /*
+     * A trailing letter is only part of the code when it makes a real station.
+     * Otherwise it belongs to the sentence: "BR01s" is a plural, not a station,
+     * and swallowing the 's' would drop a character from the prose.
+     *
+     * An unknown code still emits a `code` token, so the caller can warn about
+     * it — that is the proofreading, and silently downgrading a typo to text
+     * would defeat it.
+     */
+    if (suffix && !getStation(full) && getStation(line + digits)) {
+      out.push({ kind: 'code', value: line + digits, line })
+      out.push({ kind: 'text', value: suffix })
+    } else {
+      out.push({ kind: 'code', value: full, line })
+    }
+
+    last = match.index + full.length
   }
 
   if (last < value.length) out.push(...splitHan(value.slice(last)))

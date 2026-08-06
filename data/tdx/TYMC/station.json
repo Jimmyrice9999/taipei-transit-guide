@@ -1,0 +1,530 @@
+[
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "中正區",
+    "LocationTownCode": "63000050",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "台北市中正區鄭州路8號",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqmpgzp",
+      "PositionLat": 25.04869,
+      "PositionLon": 121.51428
+    },
+    "StationUID": "TYMC-A1",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "蘆竹區",
+    "LocationTownCode": "68000050",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市蘆竹區南山路三段155號",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnxvuf5",
+      "PositionLat": 25.0808,
+      "PositionLon": 121.28476
+    },
+    "StationUID": "TYMC-A10",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "蘆竹區",
+    "LocationTownCode": "68000050",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市蘆竹區坑菓路460號",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnxqz7p",
+      "PositionLat": 25.08646,
+      "PositionLon": 121.26637
+    },
+    "StationUID": "TYMC-A11",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區航站南路17之1號",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnwvftw",
+      "PositionLat": 25.0814,
+      "PositionLon": 121.23783
+    },
+    "StationUID": "TYMC-A12",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區航站南路9號地下一層之1號",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnwtnw1",
+      "PositionLat": 25.07735,
+      "PositionLon": 121.23213
+    },
+    "StationUID": "TYMC-A13",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區航站南路1之2號",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnw7yex",
+      "PositionLat": 25.07007,
+      "PositionLon": 121.22142
+    },
+    "StationUID": "TYMC-A14a",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區橫湳一路50號",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnw1qc2",
+      "PositionLat": 25.05595,
+      "PositionLon": 121.21048
+    },
+    "StationUID": "TYMC-A15",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區大竹南路1180號",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnqmf3p",
+      "PositionLat": 25.03665,
+      "PositionLon": 121.21556
+    },
+    "StationUID": "TYMC-A16",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "大園區",
+    "LocationTownCode": "68000060",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市大園區橫峰里37鄰領航北路四段351號",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnq7w2k",
+      "PositionLat": 25.02417,
+      "PositionLon": 121.22095
+    },
+    "StationUID": "TYMC-A17",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市中壢區青埔里2鄰高鐵北路一段5號",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnq397s",
+      "PositionLat": 25.01374,
+      "PositionLon": 121.21406
+    },
+    "StationUID": "TYMC-A18",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市中壢區芝芭里1鄰高鐵南路二段350號",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnnp3xn",
+      "PositionLat": 25.00199,
+      "PositionLon": 121.20349
+    },
+    "StationUID": "TYMC-A19",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "三重區",
+    "LocationTownCode": "65000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市三重區捷運路36號",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqs3j4b",
+      "PositionLat": 25.0548,
+      "PositionLon": 121.48273
+    },
+    "StationUID": "TYMC-A2",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市中壢區興和里6鄰中豐北路一段685號",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnn7dbx",
+      "PositionLat": 24.98025,
+      "PositionLon": 121.21627
+    },
+    "StationUID": "TYMC-A20",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市中壢區中豐北路一段26號",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnn3ns9",
+      "PositionLat": 24.96722,
+      "PositionLon": 121.22114
+    },
+    "StationUID": "TYMC-A21",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市中壢區中豐路289號",
+    "StationID": "A22",
+    "StationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqjyrt0p",
+      "PositionLat": 24.95823,
+      "PositionLon": 121.21936
+    },
+    "StationUID": "TYMC-A22",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新莊區",
+    "LocationTownCode": "65000050",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市新莊區五工路37號",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqef7gh",
+      "PositionLat": 25.06171,
+      "PositionLon": 121.45918
+    },
+    "StationUID": "TYMC-A3",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "泰山區",
+    "LocationTownCode": "65000160",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市新莊區新北大道四段188號",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqe9cux",
+      "PositionLat": 25.05924,
+      "PositionLon": 121.44561
+    },
+    "StationUID": "TYMC-A4",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "泰山區",
+    "LocationTownCode": "65000160",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市泰山區新北大道四段431號",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqe2v3x",
+      "PositionLat": 25.05321,
+      "PositionLon": 121.43943
+    },
+    "StationUID": "TYMC-A5",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "泰山區",
+    "LocationTownCode": "65000160",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市泰山區新北大道六段460號",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq7j1m0",
+      "PositionLat": 25.03321,
+      "PositionLon": 121.42262
+    },
+    "StationUID": "TYMC-A6",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "龜山區",
+    "LocationTownCode": "68000070",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市龜山區文化一路688號",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq6nw5v",
+      "PositionLat": 25.04124,
+      "PositionLon": 121.38543
+    },
+    "StationUID": "TYMC-A7",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "龜山區",
+    "LocationTownCode": "68000070",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "桃園市龜山區文化一路6號",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq9f5kn",
+      "PositionLat": 25.06053,
+      "PositionLon": 121.37073
+    },
+    "StationUID": "TYMC-A8",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  },
+  {
+    "BikeAllowOnHoliday": true,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "林口區",
+    "LocationTownCode": "65000170",
+    "SrcUpdateTime": "2026-03-13T00:00:00+08:00",
+    "StationAddress": "新北市林口區八德路290號",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq9ehdu",
+      "PositionLat": 25.0658,
+      "PositionLon": 121.36134
+    },
+    "StationUID": "TYMC-A9",
+    "UpdateTime": "2026-08-05T12:38:18+08:00",
+    "VersionID": 526
+  }
+]

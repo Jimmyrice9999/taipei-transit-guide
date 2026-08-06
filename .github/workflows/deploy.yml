@@ -1,12 +1,19 @@
-# Builds the site and publishes it to GitHub Pages on every push to main.
+# Tests, builds and publishes the site to GitHub Pages.
 #
 # One-time setup in your repository: Settings > Pages > Build and deployment >
 # Source: "GitHub Actions".
-name: Deploy to GitHub Pages
+#
+# Three jobs in a chain. The point of the chain is that a broken push fails
+# loudly at `test` instead of quietly publishing: `deploy` cannot start until
+# `build` succeeds, and `build` cannot start until `test` does.
+#
+# Pull requests run `test` only. Nothing deploys from a branch.
+name: Test, build and deploy
 
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -18,15 +25,101 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# Node 24, not 22. The test suite and the data scripts are written as .mts and
+# rely on Node running TypeScript directly — unflagged from 23.6, experimental
+# and opt-in before that. On 22 the tests do not run at all.
+env:
+  NODE_VERSION: '24'
+
 jobs:
-  build:
+  test:
+    name: Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+
+      # Builds for the root path and runs all five suites against the export.
+      # Deliberately not built with NEXT_PUBLIC_BASE_PATH here: the tests assert
+      # on site-absolute paths, and the base path is verified separately below.
+      - name: Run tests
+        run: npm test
+
+      # The palette check is a separate guarantee from the contrast tests: it
+      # re-derives every badge and accent from source and exits non-zero on
+      # anything below AA.
+      - name: Verify the derived palette still clears WCAG AA
+        run: npm run palette
+
+      # Whether the committed geometry still chains and no station has drifted
+      # more than 200 m from its alignment.
+      - name: Audit route geometry
+        run: npm run geometry:audit
+
+      # Heading order, alt text, SVG semantics, landmarks, language tagging.
+      # Also run inside the test suite; kept here as a named step so a failure
+      # is legible in the checks list rather than buried in test output.
+      - name: Accessibility audit
+        run: npm run a11y
+
+      # Every figure the site states, against the data it came from. This is
+      # the guard against the class of bug that survived four builds: the same
+      # fact stated in four places with nothing keeping them in step.
+      - name: Cross-check stated facts
+        run: npm run facts
+
+      # Real Chromium: reflow at 200%/400% zoom, keyboard traversal, the
+      # accessibility tree, and axe-core over every page. Structure checks
+      # cannot see any of this.
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Browser verification
+        run: npm run verify:browser
+
+      # Hostile fixtures: malformed frontmatter, injection, unicode, and the
+      # inputs that used to build silently. Slow (one full build per case), so
+      # it runs after everything cheaper has passed.
+      - name: Adversarial fixtures
+        run: npm run adversarial
+
+      - name: Upload verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verification
+          path: |
+            docs/browser-verification.json
+            docs/adversarial-results.json
+            docs/screenshots/
+            docs/print/
+          retention-days: 14
+
+      # Not gating — the confusable pairs are a property of the operators'
+      # official colours and cannot be "fixed". This prints the current state so
+      # a colour change that makes two lines harder to tell apart is visible in
+      # the log rather than discovered by a reader.
+      - name: Report colour vision deficiency simulation
+        run: npm run cvd
+        continue-on-error: true
+
+  build:
+    name: Build for Pages
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
           cache: npm
 
       - run: npm ci
@@ -38,6 +131,14 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
 
+      # Re-check links against the deployment build specifically. A base-path
+      # bug cannot show up in the root-path build the tests use, and it is
+      # exactly the kind of breakage that only appears once published.
+      - name: Check links in the deployment build
+        run: npm run check
+        env:
+          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
@@ -45,6 +146,7 @@ jobs:
           path: ./out
 
   deploy:
+    name: Deploy
     needs: build
     runs-on: ubuntu-latest
     environment:

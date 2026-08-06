@@ -31,7 +31,9 @@ for (const line of [...LINES, NEUTRAL_LINE]) {
   const notes: string[] = []
   if (line.badgeBg.toUpperCase() !== line.map.toUpperCase()) notes.push('badge darkened')
   if (line.needsHairline) notes.push('bar needs ink hairline')
-  if (line.source.startsWith('UNSOURCED')) notes.push('UNSOURCED')
+  if (line.operator && line.operator !== 'TRTC' && line.operator !== 'site') {
+    notes.push(`operator ${line.operator}`)
+  }
 
   console.log(
     pad(line.code || '—', 5) +
@@ -47,9 +49,9 @@ for (const line of [...LINES, NEUTRAL_LINE]) {
 
 console.log(`\nthresholds: text ${AA}:1, non-text ${AA_NON_TEXT}:1`)
 
-console.log('\nprovenance:')
+console.log('\nprovenance: Taiwan MOTC TDX LineColor, government open data')
 for (const line of LINES) {
-  console.log(`  ${pad(line.code, 4)} ${line.source}`)
+  console.log(`  ${pad(line.code, 4)} ${pad(line.name, 22)} operator ${line.operator}`)
 }
 
 if (failures > 0) {

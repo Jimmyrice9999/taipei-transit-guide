@@ -16,7 +16,20 @@
   --bg-well: #f4f5f7;
   --text: #14171a;
   --text-2: #5a6370;
-  --text-3: #79828e;
+  /*
+   * Was #79828e, which measures 3.89:1 on white — a real WCAG AA failure on
+   * every element this colours, and it colours a lot: the facts-panel labels,
+   * figcaptions, the footer, the spine key, table footnotes. Roughly three
+   * hundred rendered text nodes failed axe on it.
+   *
+   * The irony is recorded deliberately: this site derives its seven line
+   * colours against a 4.6 safety margin and fails the build if any slips below
+   * 4.5 — and never once pointed that machinery at its own neutral greys. The
+   * replacement is the old hue and saturation darkened until it clears 4.6 on
+   * the most demanding background it sits on (--bg-well), same discipline as
+   * the line inks: 5.16 on white, 4.73 on the well, 4.90 on map paper.
+   */
+  --text-3: #666e79;
   --rule: #e2e5ea;
   --rule-strong: #c6ccd4;
 
@@ -25,6 +38,14 @@
   --accent-map: #3d454e; /* official line colour: large fills only */
 
   --link: #0f5ca8;
+
+  /* The header band. Deliberately a shade lighter than the blind panel
+     (#0C0D0F) so the wordmark reads as hardware recessed into the band rather
+     than a black rectangle floating on it. */
+  --band: #16191c;
+  --band-ink: #e7eaee;
+  --band-ink-dim: #98a2ac;
+  --amber: #ffb000;
 
   /* Set by next/font in app/layout.tsx. */
   --font-display: var(--font-zilla), Georgia, serif;
@@ -78,9 +99,14 @@ a:hover {
 
 /*
  * Colours arrive as inline custom properties from the line registry, already
- * checked against WCAG AA. Always shows the letter code as well as the colour:
- * brown, orange and red are exactly the set that colour-vision deficiency
- * confuses, so colour alone must never carry the meaning.
+ * checked against WCAG AA. Always shows the letter code as well as the colour,
+ * because colour alone must never carry the meaning.
+ *
+ * The comment here used to justify that with "brown, orange and red are exactly
+ * the set that colour-vision deficiency confuses". Measured (`npm run cvd`),
+ * that is wrong: brown/orange never confuse, and the worst pair is Bannan blue
+ * against Airport MRT purple at CIEDE2000 2.5 under protanopia. The rule is
+ * right; the reason given for it was not.
  */
 .badge {
   display: inline-flex;
@@ -130,16 +156,23 @@ th > .badge:only-child {
   padding: 0 24px;
 }
 
+/*
+ * Full-width dark band. The dot-matrix blind needs a dark field to sit in or it
+ * reads as a rendering artifact — a black rectangle dropped on white. Committing
+ * to the band also gives the page a horizontal anchor that a centred column
+ * layout otherwise lacks.
+ */
 .site-header {
-  border-bottom: 1px solid var(--rule);
+  background: var(--band);
+  color: var(--band-ink);
 }
 
 .site-header .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px 32px;
-  padding-top: 15px;
+  gap: 10px 32px;
+  padding-top: 13px;
   padding-bottom: 13px;
 }
 
@@ -155,30 +188,43 @@ th > .badge:only-child {
   text-decoration: none;
 }
 
+/* Recessed into the band: a dark ring below, a faint light edge above. */
 .wordmark {
   display: block;
+  border-radius: 3px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.55),
+    0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .site-nav {
   display: flex;
-  gap: 24px;
+  gap: 26px;
 }
 
 .site-nav a {
-  color: var(--text);
+  color: var(--band-ink-dim);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  padding: 3px 0;
+  letter-spacing: 0.02em;
+  padding: 4px 0;
   border-bottom: 2px solid transparent;
 }
 
 .site-nav a:hover {
-  border-bottom-color: var(--rule-strong);
+  color: var(--band-ink);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
 .site-nav a[aria-current='true'] {
-  border-bottom-color: var(--text);
+  color: var(--band-ink);
+  border-bottom-color: var(--amber);
+}
+
+.site-header :focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
 }
 
 /*
@@ -210,6 +256,17 @@ main {
 .site-footer p {
   margin: 0;
   max-width: 76ch;
+}
+
+.footer-source {
+  margin-top: 8px !important;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  color: var(--text-3);
+}
+
+.footer-source a {
+  color: var(--text-2);
 }
 
 /* ------------------------------------------------------------------ */
@@ -262,22 +319,238 @@ main {
 /* Content page: prose column + facts rail                             */
 /* ------------------------------------------------------------------ */
 
+/*
+ * ── The editorial grid ──────────────────────────────────────────────────
+ *
+ * Two levels. The outer grid sets the spine against the content area; the inner
+ * grid gives content two spans to choose from.
+ *
+ *   prose   min(68ch, 100%), centred in the content area. Long lines are worse
+ *           to read, not better, so prose never widens to fill space.
+ *   wide    the full content width. Specs, comparisons, formation diagrams and
+ *           maps are data, not prose — the measure rule does not apply to them.
+ *
+ * There is no right-hand rail. The facts panel used to occupy one, which
+ * reserved a full-height column and left prose stranded in a narrow band with
+ * dead space either side once the panel's content ran out. It is now a
+ * horizontal strip at the top of the content area.
+ */
+/*
+ * ── The editorial grid ──────────────────────────────────────────────────
+ *
+ * The spine is a FLOAT, not a grid column. A grid column exists for the whole
+ * grid whether or not anything occupies it, which is what left prose pinned to a
+ * narrow band with dead space beside it long after the spine had ended.
+ *
+ * Floating means the space the spine occupies is reclaimable. Wide elements
+ * clear the float and take the entire container width; prose keeps its measure
+ * in the column beside it.
+ *
+ * The trade-off, stated plainly: the spine is no longer sticky. For the strip
+ * map that is right — it is a station list you read down, not an indicator. For
+ * the 54px marker rail it is a small loss, and if it turns out to matter the
+ * answer is a separate sticky mini-indicator, not undoing this.
+ *
+ * What is NOT achieved: prose itself re-centring in the full width below the
+ * spine's end. CSS cannot express "after this float ends" for block boxes, and
+ * that is not worth JavaScript on a reading page.
+ */
 .page-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 44px;
-  align-items: start;
+  display: flow-root; /* contains the float */
 }
 
-@media (max-width: 960px) {
+/*
+ * ── On the spine and stickiness, settled at last ────────────────────────────
+ *
+ * `.spine { position: sticky; top: 16px }` sat in this stylesheet from run 1,
+ * and runs 1 and 2 both recorded the desktop spine as sticky. **It never was.**
+ * A sticky box is constrained to its containing block, and `.spine`'s
+ * containing block was this float — whose height is exactly its content's
+ * height. Zero range to travel in. Declared, inert, and asserted as working in
+ * two run logs, because nobody scrolled a page and watched.
+ *
+ * Making it work means moving the declaration one level out, onto the float
+ * itself, so the containing block becomes `.page-grid`. Done on mobile, in the
+ * media query below.
+ *
+ * **Deliberately NOT done on desktop**, and the reason is the layout it would
+ * break. Wide elements — spec tables, maps, references — reclaim the spine's
+ * column with a negative margin and `clear: left`. `clear` resolves against the
+ * float's *static* position, so a float that then slides down the page ends up
+ * painted over the very elements that took its space. Measured: the spec table's
+ * row labels disappear behind the strip map.
+ *
+ * The float was chosen in run 1 precisely so the column would be reclaimable,
+ * and that trade is still the right one. On desktop the strip map is a station
+ * list you read down, and it starts at the top of the article where the reading
+ * does. On mobile it is an indicator that has to follow you, because SpineSync
+ * has nothing to light otherwise — and there the wide elements do not reclaim
+ * anything, so nothing can be overlapped.
+ */
+.page-spine {
+  float: left;
+  width: var(--spine-w, 0);
+  margin: 0 40px 28px 0;
+}
+
+.page-grid.has-map {
+  --spine-w: 224px;
+}
+
+.page-grid.has-rail {
+  --spine-w: 54px;
+}
+
+.page-grid.has-rail .page-spine {
+  margin-right: 30px;
+}
+
+/* Content sits beside the float rather than flowing under it — block boxes
+   extend under floats even though their text wraps, and half-indented
+   paragraphs read as a bug. */
+.page-main,
+.page-body {
+  margin-left: calc(var(--spine-w, 0px) + var(--spine-gap, 0px));
+}
+
+.page-grid.has-map .page-main {
+  --spine-gap: 40px;
+}
+
+.page-grid.has-rail .page-main {
+  --spine-gap: 30px;
+}
+
+.page-main > *,
+.page-body > * {
+  max-width: var(--measure);
+  min-width: 0;
+}
+
+/*
+ * Wide elements clear the spine and then reclaim the space it occupied, so a
+ * specification table or a map genuinely uses the page rather than sitting in
+ * the prose column.
+ */
+.page-main > .wide,
+.page-body > .wide {
+  clear: left;
+  max-width: none;
+  margin-left: calc(-1 * (var(--spine-w, 0px) + var(--spine-gap, 0px)));
+}
+
+/* No spine: the body is simply an editorial column. */
+.page-body {
+  display: flow-root;
+}
+
+@media (max-width: 780px) {
+  .page-spine {
+    float: none;
+    width: auto;
+    margin: 26px 0 0;
+  }
+  .page-main,
+  .page-body {
+    margin-left: 0;
+  }
+  .page-main > .wide,
+  .page-body > .wide {
+    margin-left: 0;
+  }
+  /*
+   * The spine comes FIRST on mobile, reversing run 1's decision.
+   *
+   * The old reasoning was that on a phone the strip map is the station list,
+   * and a station list is something you scroll to rather than past. That is
+   * true of the strip map read as a list, and it ignored what the spine is for
+   * while you are reading: SpineSync lights the stations the current section
+   * mentions, and a spine below the fold cannot show that to anybody. Placed
+   * first and pinned, it does both jobs — it is the first thing on the page and
+   * it stays with you.
+   */
   .page-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
   }
-  /* Facts move above the prose when the rail collapses. */
-  .page-rail {
-    order: -1;
+  /*
+   * Sticky HERE, on the float itself — see the note on `.page-spine` above for
+   * why this cannot work from `.spine`, and why it is mobile-only.
+   */
+  .page-spine {
+    order: 0;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 5;
   }
+  .page-main {
+    order: 1;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Platform information panel — horizontal                             */
+/* ------------------------------------------------------------------ */
+
+.platform {
+  border: 1px solid var(--rule);
+  border-top: 0;
+  margin-bottom: 30px;
+}
+
+.platform-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  background: var(--band);
+  flex-wrap: wrap;
+}
+
+.platform-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--band-ink);
+}
+
+.platform-zh {
+  font-size: 12px;
+  color: var(--band-ink-dim);
+}
+
+.platform-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 0;
+}
+
+.platform-fact {
+  padding: 9px 14px;
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  min-width: 0;
+}
+
+.platform-fact dt {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 3px;
+}
+
+.platform-fact dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
 }
 
 .note {
@@ -293,6 +566,1784 @@ main {
 
 .note strong {
   font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ */
+/* The guideway spine                                                  */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Deliberately shares the badge system's language rather than inventing its own:
+ * line colour, station codes, monospaced figures. It is the badges arranged
+ * along an axis. Nothing here is a gradient, a shadow, or a colour the registry
+ * did not supply.
+ */
+/* Stickiness lives on .page-spine — see the note there for why it cannot
+   work from here. */
+.spine {
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * The strip map is content — 24 stops you read down. Sticky keeps it beside the
+ * prose, but it must never pin so tall that BR24 becomes unreachable, so it
+ * scrolls inside itself on a short viewport.
+ */
+.spine-map {
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.spine-head,
+.spine-key {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.spine-head {
+  padding-bottom: 9px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.spine-track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* The rule itself: the line, run down the page. */
+.spine-stop {
+  position: relative;
+  padding-left: 17px;
+  min-height: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.spine-stop::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent-map);
+}
+
+.spine-stop:first-child::before {
+  top: 8px;
+}
+
+.spine-stop:last-child::before {
+  bottom: calc(100% - 11px);
+}
+
+/* Stations this page is not about: the guideway continues, the stop is muted. */
+.spine-stop:not([data-marked])::before {
+  background: var(--rule);
+}
+
+.spine-tick {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--accent-map);
+}
+
+.spine-stop:not([data-marked]) .spine-tick {
+  border-color: var(--rule-strong);
+}
+
+/* Underground, and not-yet-established, are drawn differently from elevated —
+   hollow versus solid, so the distinction survives greyscale and colour-vision
+   deficiency. */
+.spine-stop[data-structure='underground'] .spine-tick {
+  background: var(--accent-map);
+}
+
+.spine-stop[data-structure='unknown'] .spine-tick {
+  border-style: dotted;
+}
+
+.spine-code {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-3);
+  letter-spacing: 0.02em;
+  min-width: 30px;
+}
+
+.spine-stop[data-marked] .spine-code {
+  color: var(--accent);
+}
+
+.spine-name {
+  font-size: 12.5px;
+  line-height: 1.35;
+  color: var(--text-2);
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.spine-stop[data-marked] .spine-name {
+  color: var(--text);
+}
+
+/* The section you are reading mentions this station. */
+.spine-stop[data-current] .spine-name {
+  font-weight: 600;
+}
+
+.spine-stop[data-current] .spine-tick {
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--accent);
+}
+
+.spine-ix {
+  display: inline-flex;
+  gap: 3px;
+  margin-left: 5px;
+  vertical-align: baseline;
+}
+
+/* Same badge, one size down. Not a separate treatment. */
+.badge-mini {
+  font-size: 9.5px;
+  padding: 1px 4px;
+  letter-spacing: 0.03em;
+}
+
+.spine-depot {
+  flex: 1 0 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 1px 0 3px;
+  font-size: 11.5px;
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.spine-depot:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.spine-depot-mark {
+  width: 7px;
+  height: 7px;
+  background: var(--accent-map);
+  transform: rotate(45deg);
+  flex: none;
+}
+
+/* The rail ends on purpose: a buffer-stop cap, not a truncation. */
+.spine-terminus {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-left: 0;
+  margin-top: -1px;
+}
+
+.spine-terminus-cap {
+  width: 11px;
+  height: 3px;
+  background: var(--accent-map);
+  flex: none;
+}
+
+.spine-terminus-label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.spine-rail .spine-terminus {
+  justify-content: flex-start;
+}
+
+.spine-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid var(--rule);
+}
+
+.spine-key-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.spine-key-item::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2.5px solid var(--accent-map);
+  background: var(--bg);
+}
+
+.spine-key-item[data-structure='unknown']::before {
+  border-style: dotted;
+}
+
+.spine-key-item[data-marked]::before {
+  background: var(--accent-map);
+}
+
+/* The marker rail: ticks only. */
+.spine-rail .spine-stop {
+  padding-left: 0;
+  min-height: 15px;
+}
+
+.spine-rail .spine-key {
+  writing-mode: horizontal-tb;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.spine-rail .spine-key-item::before {
+  width: 7px;
+  height: 7px;
+  border-width: 2px;
+}
+
+/*
+ * Mobile.
+ *
+ * ── Why the spine is sticky here now ────────────────────────────────────────
+ * It was not, and that made SpineSync incoherent rather than merely imperfect.
+ * SpineSync exists to light the stations the section you are reading mentions.
+ * The spine sat *after* the prose in source order and did not follow the
+ * scroll, so on a phone — the stated primary reading context — that highlight
+ * was never on screen while anyone was reading. The component ran, cost an
+ * IntersectionObserver, and could not be seen. Either it goes or the spine
+ * moves; the spine moves.
+ *
+ * Two changes make it work, and both are ordinary CSS:
+ *
+ *   .page-spine order 0    The spine comes before the prose. Sticky positioning
+ *                          is relative to the containing block, so a spine
+ *                          placed last can only stick once you have already
+ *                          scrolled past everything it was meant to annotate.
+ *   .spine sticky, top 0   Both variants, not just the rail.
+ *
+ * The strip map is capped at 30vh with its own scrollbar rather than pinning
+ * all 24 stops. That is the trade and it is a real one: a third of a phone
+ * screen is a lot to give a navigation strip. It buys the highlight being
+ * visible, keeps every station reachable as a full-size text link (which is
+ * what makes the SC 2.5.8 Equivalent argument work for the sub-24px map
+ * targets), and it is one number to change if it reads as too much. The marker
+ * rail is about 30px and costs nothing.
+ */
+@media (max-width: 780px) {
+  .spine {
+    /* Opaque, or prose scrolls visibly through the pinned strip. */
+    background: var(--bg);
+  }
+
+  .spine-map {
+    max-height: 30vh;
+    padding: 8px 0 6px;
+    border-bottom: 1px solid var(--rule);
+    /* Cancels the desktop 16px offset, which would leave a transparent band
+       above the pinned strip at top: 0. */
+    margin-top: 0;
+  }
+
+  .spine-map .spine-name {
+    font-size: 14px;
+  }
+
+  .spine-map .spine-code {
+    font-size: 11.5px;
+    min-width: 34px;
+  }
+
+  .spine-map .spine-stop {
+    min-height: 26px;
+  }
+
+  .spine-rail {
+    background: var(--bg);
+    padding: 7px 0 6px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 4px;
+  }
+
+  .spine-rail .spine-track {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 0;
+    padding: 5px 2px;
+  }
+
+  .spine-rail .spine-stop {
+    flex: 1 0 14px;
+    min-height: 0;
+    height: 11px;
+    padding: 0;
+  }
+
+  .spine-rail .spine-stop::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    width: auto;
+    height: 3px;
+    transform: translateY(-50%);
+  }
+
+  .spine-rail .spine-stop:first-child::before {
+    left: 5px;
+    top: 50%;
+  }
+
+  .spine-rail .spine-stop:last-child::before {
+    right: 5px;
+    bottom: auto;
+  }
+
+  .spine-rail .spine-tick {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border-width: 2.5px;
+  }
+
+  .spine-rail .spine-key {
+    border-top: 0;
+    padding-top: 4px;
+    margin-top: 0;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Platform information panel                                          */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Not an encyclopedia infobox. Square corners, a dark header strip in the same
+ * near-black as the site band, the line badge sitting in it, monospaced labels.
+ * The reference is the sign hanging over a platform.
+ */
+.panel {
+  border: 1px solid var(--rule);
+}
+
+.panel-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 12px;
+  background: var(--band);
+}
+
+.panel-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--band-ink);
+}
+
+.panel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.panel-table th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  width: 42%;
+  vertical-align: top;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.panel-table td {
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.panel-table tr:last-child th,
+.panel-table tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Specifications — engineering data                                   */
+/* ------------------------------------------------------------------ */
+
+.specs,
+.formation {
+  margin: 2.2em 0 1.6em;
+  max-width: var(--measure);
+}
+
+.specs-head,
+.formation-head {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 12px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.specs table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Tighter than body text on purpose. Specs are scanned, not read. */
+  font-size: 14px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+
+.specs th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-2);
+  padding: 6px 12px 6px 0;
+  border-bottom: 1px solid var(--rule);
+  width: 55%;
+}
+
+/*
+ * ── Why neither column is `white-space: nowrap` any more ────────────────────
+ * Both were, and it held for as long as every value was a number and every
+ * unit was two characters. The moment this run added rows like
+ * "GEC Alsthom armature chopper" and "V DC, third rail", the table stopped
+ * fitting and pushed the whole document sideways at 320px — a WCAG 1.4.10
+ * failure on three pages, caught by the browser check rather than by reading
+ * the CSS.
+ *
+ * `nowrap` on author-supplied content is a landmine: it works until someone
+ * writes a longer string, and nothing in the authoring path warns them. Wrapping
+ * costs a little of the decimal alignment on the rare long value and makes the
+ * table proof against whatever anyone types next. Numbers are short and do not
+ * wrap in practice, so the alignment the table exists for is unaffected.
+ *
+ * `break-word`, NOT `anywhere`, and the difference is the whole reason this
+ * comment is two paragraphs. `anywhere` participates in min-content sizing;
+ * combined with the `width: 1%` shrink-to-fit on the unit column it collapses
+ * that column to one character wide and sets "118 kW each" as a vertical
+ * ladder. `break-word` breaks a long word only when it has to, and leaves the
+ * minimum width alone. Both keywords "wrap long strings"; only one of them
+ * keeps a table looking like a table.
+ */
+.specs-value {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--text);
+  padding: 6px 8px 6px 0;
+  border-bottom: 1px solid var(--rule);
+  overflow-wrap: break-word;
+}
+
+/* Units a step lighter than the numbers they qualify. */
+.specs-unit {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--text-3);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--rule);
+  width: 1%;
+  overflow-wrap: break-word;
+}
+
+.specs tr:last-child th,
+.specs tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Citations and references                                            */
+/* ------------------------------------------------------------------ */
+
+/*
+ * The citation mark.
+ *
+ * Monospaced and set in the accent, because on this site the accent means "the
+ * line this page is about" everywhere else and a citation is the one other
+ * thing that earns emphasis. Small, but not so small it cannot be tapped: the
+ * padding gives the anchor a target taller than the superscript itself.
+ *
+ * `vertical-align: super` with a reduced font-size rather than <sup>'s default,
+ * so a marked line of prose keeps its leading — a raw <sup> pushes the line box
+ * open and makes a paragraph with three citations visibly looser than one
+ * without.
+ */
+.cite {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 0;
+  vertical-align: super;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.cite a {
+  color: var(--accent);
+  text-decoration: none;
+  padding: 0 1px;
+  border-bottom: 0;
+}
+
+.cite a:hover,
+.cite a:focus-visible {
+  text-decoration: underline;
+}
+
+/*
+ * An unresolved marker. This should never reach a reader — `npm run cite` fails
+ * the build on it — so it is styled to be impossible to miss if it ever does.
+ * Border rather than colour alone: the site's own rule is that colour never
+ * carries meaning by itself.
+ */
+.cite-unresolved {
+  color: var(--text);
+  background: var(--bg-well);
+  border: 1px solid var(--text);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+.refs {
+  margin: 2.6em 0 1.6em;
+  max-width: var(--measure);
+}
+
+.refs-head {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--accent);
+}
+
+/*
+ * The primary/secondary count, stated before the list rather than left for the
+ * reader to tally. This is the number the whole mechanism exists to expose.
+ */
+.refs-summary {
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text-2);
+  margin: 0 0 14px;
+}
+
+.refs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.refs-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.refs-item:last-child {
+  border-bottom: 0;
+}
+
+.refs-number {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 22px;
+  padding-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.refs-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.refs-title {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+/* Long URLs and Chinese titles must not push the page sideways. */
+.refs-title a {
+  overflow-wrap: anywhere;
+}
+
+.refs-original {
+  font-size: 14.5px;
+  line-height: 1.4;
+  color: var(--text-2);
+}
+
+.refs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-3);
+}
+
+/*
+ * Primary and secondary are distinguished by weight and border as well as by
+ * fill, so the distinction survives monochrome print and every dichromacy.
+ */
+.refs-kind {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 2px;
+  border: 1px solid var(--rule-strong);
+  color: var(--text-2);
+}
+
+.refs-kind[data-kind='primary'] {
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.refs-kind[data-kind='secondary'] {
+  font-weight: 400;
+}
+
+.refs-uncited {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.refs-note {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-2);
+  margin-top: 2px;
+}
+
+.biblio-count {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-3);
+  vertical-align: middle;
+}
+
+/* ------------------------------------------------------------------ */
+/* Formation diagram                                                   */
+/* ------------------------------------------------------------------ */
+
+.formation-scroll {
+  overflow-x: auto;
+  padding: 4px 0 2px;
+}
+
+.formation-train {
+  display: flex;
+  align-items: stretch;
+  min-width: min-content;
+}
+
+.formation-unit {
+  display: flex;
+  align-items: stretch;
+}
+
+.formation-cars {
+  display: flex;
+  align-items: stretch;
+  /* Permanently coupled: cars butt together, sharing an edge. */
+  gap: 0;
+}
+
+.formation-car {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  border: 1.5px solid var(--text);
+  padding: 10px 13px;
+  min-width: 54px;
+  text-align: center;
+  background: var(--bg);
+}
+
+.formation-car + .formation-car {
+  border-left-width: 0.75px;
+}
+
+/* Cab end: a wedge, so the front of the train is visible at a glance. */
+.formation-car[data-cab='left'] {
+  border-left-width: 4px;
+  border-left-color: var(--accent-map);
+}
+
+.formation-car[data-cab='right'] {
+  border-right-width: 4px;
+  border-right-color: var(--accent-map);
+}
+
+/* Coupling between units: a visible gap with a bar across it. */
+.formation-coupler {
+  align-self: center;
+  width: 16px;
+  height: 3px;
+  background: var(--text-3);
+  flex: none;
+}
+
+.formation-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 13px;
+  margin: 10px 0 0;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.formation-key-sep {
+  color: var(--rule-strong);
+}
+
+.formation-key-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.formation-key-swatch {
+  width: 12px;
+  height: 3px;
+  background: var(--text);
+}
+
+.formation-key-swatch[data-kind='coupler'] {
+  background: var(--text-3);
+}
+
+.formation-key-swatch[data-kind='cab'] {
+  width: 4px;
+  height: 12px;
+  background: var(--accent-map);
+}
+
+/* ------------------------------------------------------------------ */
+/* Data section                                                        */
+/* ------------------------------------------------------------------ */
+
+.lede {
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--text);
+  margin: 0 0 30px;
+  max-width: 60ch;
+}
+
+.data-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-bottom: 36px;
+}
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 16px 18px 18px;
+  background: var(--bg);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.data-card:hover {
+  background: var(--bg-well);
+}
+
+.data-card-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.data-card-desc {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-2);
+  flex: 1;
+}
+
+.data-card-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.colour-table,
+.station-table,
+.prov-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.colour-table thead th,
+.station-table thead th,
+.prov-table thead th {
+  text-align: left;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  border-bottom: 2px solid var(--rule-strong);
+  padding: 8px 16px 8px 0;
+  white-space: nowrap;
+}
+
+.colour-table tbody th,
+.colour-table tbody td,
+.station-table tbody th,
+.station-table tbody td,
+.prov-table tbody th,
+.prov-table tbody td {
+  text-align: left;
+  font-weight: 400;
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 16px 8px 0;
+  vertical-align: middle;
+}
+
+.colour-table .num,
+.station-table .num,
+.prov-table .num {
+  text-align: right;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+.station-table tbody tr:hover,
+.colour-table tbody tr:hover {
+  background: var(--bg-well);
+}
+
+.colour-table code,
+.station-table code,
+.prov-table code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.colour-chip {
+  display: inline-block;
+  width: 26px;
+  height: 13px;
+  border-radius: 2px;
+  margin-right: 8px;
+  vertical-align: -2px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.colour-line {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.colour-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.colour-zh {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.colour-sub {
+  display: block;
+  font-size: 10.5px;
+  color: var(--text-3);
+  margin-top: 1px;
+}
+
+.colour-operator,
+.colour-source {
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.ok {
+  color: #0d7a4f;
+  font-weight: 600;
+}
+
+.weak {
+  color: #a8631a;
+  font-weight: 600;
+}
+
+.download {
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  background: var(--bg-well);
+  margin: 36px 0 0;
+}
+
+.download-head {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin: 0 0 10px;
+}
+
+.download-links {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+}
+
+.download-links a {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.download-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.download-note {
+  font-size: 13px;
+  color: var(--text-2);
+  line-height: 1.5;
+  margin: 0 0 8px;
+  max-width: 68ch;
+}
+
+.download-note:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Figures                                                             */
+/* ------------------------------------------------------------------ */
+
+.figure {
+  margin: 0 0 28px;
+}
+
+.figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+.figure figcaption,
+.routemap figcaption {
+  margin-top: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-3);
+  max-width: var(--measure);
+}
+
+.figure-credit {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+/*
+ * The placeholder is deliberately visible. A page with no photograph and no gap
+ * looks finished; a labelled empty frame says what is still missing.
+ */
+.figure-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+  min-height: 180px;
+  padding: 26px 20px;
+  border: 1px dashed var(--rule-strong);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--bg-well),
+    var(--bg-well) 9px,
+    var(--bg) 9px,
+    var(--bg) 18px
+  );
+}
+
+.figure-placeholder-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.figure-placeholder-what {
+  font-size: 14px;
+  color: var(--text-2);
+  max-width: 46ch;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------ */
+/* Provenance matrix                                                   */
+/* ------------------------------------------------------------------ */
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.matrix-table thead th {
+  text-align: left;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  border-bottom: 2px solid var(--rule-strong);
+  padding: 8px 14px 8px 0;
+  white-space: nowrap;
+}
+
+.matrix-table tbody th,
+.matrix-table tbody td {
+  text-align: left;
+  font-weight: 400;
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 14px 8px 0;
+}
+
+.matrix-table .num {
+  text-align: right;
+  padding-right: 14px;
+  white-space: nowrap;
+}
+
+.matrix-table code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+.matrix-note {
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.empty-set {
+  color: var(--text-3);
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------------ */
+/* Network page — the one place the full palette is used                */
+/* ------------------------------------------------------------------ */
+
+.network-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.network-table thead th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  border-bottom: 2px solid var(--rule-strong);
+  padding: 8px 16px 8px 0;
+  white-space: nowrap;
+}
+
+.network-table th.num,
+.network-table td.num {
+  text-align: right;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+.network-table tbody th,
+.network-table tbody td {
+  border-bottom: 1px solid var(--rule);
+  padding: 9px 16px 9px 0;
+  vertical-align: middle;
+  text-align: left;
+  font-weight: 400;
+}
+
+.network-table tbody tr:hover {
+  background: var(--bg-well);
+}
+
+.network-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The swatch IS the data here — but it never carries meaning alone, because the
+   station code badges beside it always name the line. */
+.network-swatch {
+  width: 5px;
+  height: 26px;
+  border-radius: 2px;
+  flex: none;
+}
+
+.network-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.network-zh {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--text-3);
+}
+
+.network-termini {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-3);
+}
+
+.network-operator {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+}
+
+.network-note {
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+
+.absent {
+  color: var(--rule-strong);
+}
+
+.badge-absent {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--text-3);
+}
+
+.interchange-list {
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0 24px;
+}
+
+.interchange-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.interchange-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.interchange-zh {
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.interchange-codes {
+  display: inline-flex;
+  gap: 4px;
+  flex: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Geographic route map                                                */
+/* ------------------------------------------------------------------ */
+
+.routemap {
+  margin: 0 0 28px;
+}
+
+.routemap-interactive {
+  position: relative;
+}
+
+.routemap-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+}
+
+/* A very slightly warm ground, so the map reads as paper rather than as a
+   chart panel. Not enough to tint the line colours. */
+.routemap-ground {
+  fill: #faf9f7;
+}
+
+.routemap-graticule line {
+  stroke: #e4e1dc;
+  stroke-width: 1;
+}
+
+.routemap-grat-label {
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  fill: #a9a49c;
+}
+
+/* Casing: a pale halo under each line so crossings read as one passing over
+   the other rather than as a junction. */
+.routemap-casing {
+  fill: none;
+  stroke: #faf9f7;
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.routemap-interchange-ring {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+
+.routemap-hit {
+  fill: transparent;
+  stroke: none;
+}
+
+.routemap-station {
+  cursor: pointer;
+}
+
+.routemap-station circle:not(.routemap-hit) {
+  transition: r 0.1s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .routemap-station circle:not(.routemap-hit) {
+    transition: none;
+  }
+}
+
+.routemap-station.is-link:hover circle:not(.routemap-hit):not(.routemap-interchange-ring),
+.routemap-station.is-link:focus-visible circle:not(.routemap-hit):not(.routemap-interchange-ring) {
+  r: 7;
+  stroke-width: 3;
+}
+
+.routemap-station.is-link:focus-visible {
+  outline: none;
+}
+
+.routemap-station.is-link:focus-visible .routemap-hit {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.routemap-station[data-current] circle:not(.routemap-hit):not(.routemap-interchange-ring) {
+  r: 7;
+  stroke-width: 3.4;
+}
+
+.routemap-leader {
+  stroke: #c9c4bc;
+  stroke-width: 1;
+}
+
+.routemap-code {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  fill: var(--text);
+  dominant-baseline: middle;
+}
+
+.routemap-name {
+  font-family: var(--font-body);
+  font-size: 9.5px;
+  fill: var(--text-2);
+  dominant-baseline: middle;
+}
+
+.routemap-label[data-current] .routemap-code,
+.routemap-label[data-current] .routemap-name {
+  font-weight: 700;
+  fill: var(--text);
+}
+
+/*
+ * The line code drawn on the map itself.
+ *
+ * Set in the same monospaced face at the same weight as an inline station badge,
+ * because it is the same device: the badge system arranged on a map rather than
+ * a second vocabulary for line identity. The white stroke on the rect is a
+ * knockout so a badge landing on top of a coloured stroke still reads.
+ */
+.routemap-linelabel-text {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.routemap-scale {
+  stroke: #6f6a63;
+  stroke-width: 1.5;
+}
+
+.routemap-scale-label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  fill: #6f6a63;
+  text-anchor: middle;
+}
+
+.routemap-north {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  fill: #6f6a63;
+  text-anchor: end;
+}
+
+/* Touch detail panel. */
+.routemap-panel {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 11px;
+  background: var(--band);
+  color: var(--band-ink);
+  border-radius: 3px;
+  font-size: 13.5px;
+  box-shadow: 0 4px 16px rgba(16, 20, 26, 0.28);
+}
+
+.routemap-panel-code {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.routemap-panel-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  flex: 1;
+  min-width: 0;
+}
+
+.routemap-panel-zh {
+  font-size: 11.5px;
+  color: var(--band-ink-dim);
+}
+
+.routemap-panel-go {
+  color: var(--amber);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.routemap-panel-close {
+  background: none;
+  border: 0;
+  color: var(--band-ink-dim);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 2px;
+  cursor: pointer;
+}
+
+.routemap figcaption {
+  margin-top: 9px;
+  font-size: 13px;
+  color: var(--text-3);
+  max-width: var(--measure);
+}
+
+/*
+ * On a phone the map keeps its full shape — the Wenhu bounding box is close to
+ * square, so it fits without rotating or scrolling. What gives way is labelling
+ * density: station names go, codes stay. Names remain reachable via the SVG
+ * title on tap.
+ */
+@media (max-width: 640px) {
+  .routemap-name {
+    display: none;
+  }
+  .routemap-code {
+    font-size: 10px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Side-by-side comparison                                             */
+/* ------------------------------------------------------------------ */
+
+.compare {
+  margin: 0 0 34px;
+}
+
+.compare-scroll {
+  overflow-x: auto;
+}
+
+.compare table {
+  border-collapse: collapse;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+  min-width: 100%;
+}
+
+.compare thead th {
+  text-align: left;
+  vertical-align: bottom;
+  padding: 0 18px 9px 0;
+  border-bottom: 2px solid var(--rule-strong);
+  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.compare thead th a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.compare thead th a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.compare-corner {
+  border-bottom-color: var(--rule) !important;
+}
+
+.compare-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  text-transform: uppercase;
+}
+
+.compare tbody th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-2);
+  padding: 7px 18px 7px 0;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+.compare tbody td {
+  padding: 7px 18px 7px 0;
+  border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+.compare tbody tr:last-child th,
+.compare tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.compare-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.compare-unit {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+  margin-left: 4px;
+}
+
+.compare-absent {
+  color: var(--rule-strong);
+}
+
+/* ------------------------------------------------------------------ */
+/* Station pages                                                       */
+/* ------------------------------------------------------------------ */
+
+.station-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.station-head .badge {
+  font-size: 15px;
+  padding: 5px 9px;
+  margin-top: 6px;
+}
+
+.station-head .page-title {
+  margin-bottom: 2px;
+}
+
+.station-zh {
+  margin: 0;
+  font-size: 17px;
+  color: var(--text-2);
+}
+
+.detail-list {
+  margin: 0 0 26px;
+  display: grid;
+  gap: 0;
+}
+
+.detail-list > div {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.detail-list dt {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-top: 2px;
+}
+
+.detail-list dd {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.adjacent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin: 34px 0 0;
+}
+
+.adjacent-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 13px 15px;
+  background: var(--bg);
+  text-decoration: none;
+  color: var(--text);
+}
+
+a.adjacent-link:hover {
+  background: var(--bg-well);
+}
+
+.adjacent-link.next {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.adjacent-link.is-end {
+  color: var(--text-3);
+}
+
+.adjacent-dir {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.adjacent-station {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.adjacent-link.next .adjacent-station {
+  flex-direction: row-reverse;
+}
+
+.adjacent-time {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-2);
+}
+
+@media (max-width: 560px) {
+  .adjacent {
+    grid-template-columns: 1fr;
+  }
+  .adjacent-link.next {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .adjacent-link.next .adjacent-station {
+    flex-direction: row;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.up-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-2);
+  text-decoration: none;
+  margin-bottom: 14px;
+}
+
+.up-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -626,5 +2677,281 @@ main {
   }
   .site-header .container {
     gap: 10px 20px;
+  }
+}
+
+/* ==================================================================== */
+/* PRINT                                                                */
+/* ==================================================================== */
+
+/*
+ * Reference material gets printed and saved as PDF, and this site is more
+ * likely to be than most: a station page is exactly the sort of thing someone
+ * prints before a trip, and a spec table is what an enthusiast puts in a folder.
+ *
+ * Three things drive every rule below.
+ *
+ *   1. The badges must survive. They are how a line is identified, and they are
+ *      the non-colour cue that makes the whole colour system safe. Browsers
+ *      drop background colours when printing by default, which would leave
+ *      white text on white paper — the code would not merely lose its colour,
+ *      it would disappear. Every badge therefore forces its background AND
+ *      gains a border, so it still reads as a badge on a monochrome printer.
+ *
+ *   2. Nothing may be trapped in a scroll container. On screen a wide table
+ *      scrolls inside itself; on paper the part outside the box does not exist,
+ *      and the reader has no way to know it was ever there.
+ *
+ *   3. The spine must not reserve a column. It is a left float with a matching
+ *      margin on the prose, which on paper would leave a 224px empty gutter
+ *      down every page after the strip map had ended.
+ */
+
+@media print {
+  /* ---- page setup ---- */
+
+  @page {
+    margin: 16mm 14mm;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    /* Only the size drops. Changing typeface would change the line breaks the
+       author actually saw while writing. */
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  /* ---- chrome that means nothing on paper ---- */
+
+  .site-header,
+  .site-nav,
+  .up-link,
+  .breadcrumbs,
+  .adjacent,
+  .routemap-panel,
+  .routemap-panel-close,
+  .card-arrow,
+  .all-link,
+  .data-card-meta {
+    display: none !important;
+  }
+
+  /* The accent bar is the one piece of chrome worth keeping — it is how a
+     printed page says which line it is about before you read a word. Thinned,
+     because a 10px band of solid ink is a waste of toner. */
+  .accent-bar {
+    height: 3px !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .accent-bar-hairline {
+    display: none;
+  }
+
+  /* ---- the spine stops reserving a column ---- */
+
+  .page-grid,
+  .page-grid.has-map,
+  .page-grid.has-rail {
+    --spine-w: 0px;
+    --spine-gap: 0px;
+    display: block;
+  }
+
+  .page-main,
+  .page-body {
+    margin-left: 0 !important;
+  }
+
+  .page-main > *,
+  .page-body > * {
+    max-width: none;
+  }
+
+  .page-body > .wide,
+  .page-main > .wide {
+    margin-left: 0 !important;
+  }
+
+  /*
+   * The strip map is a station list, and a station list is worth printing. It
+   * runs full width in normal flow instead of floating — left as a float it
+   * would have pushed 24 stations down the left margin of three pages.
+   *
+   * The narrow marker rail is not worth printing: without names it is a column
+   * of ticks that means nothing away from the screen.
+   */
+  .page-spine {
+    float: none !important;
+    width: auto !important;
+    margin: 0 0 16pt !important;
+    break-inside: avoid;
+  }
+
+  .spine-rail {
+    display: none !important;
+  }
+
+  .spine-track {
+    /* Two columns, so 24 stations do not take a whole page on their own. */
+    columns: 2;
+    column-gap: 18pt;
+  }
+
+  .spine-stop {
+    break-inside: avoid;
+  }
+
+  /* ---- nothing trapped in a scroll box ---- */
+
+  .table-scroll,
+  .compare-scroll,
+  .formation-scroll,
+  .routemap-interactive {
+    overflow: visible !important;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse;
+    font-size: 9pt;
+  }
+
+  /* Repeat the header when a long table crosses a page boundary — otherwise
+     page two is a grid of unlabelled numbers. */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img,
+  figure,
+  .platform,
+  .specs,
+  .formation,
+  .routemap {
+    break-inside: avoid;
+  }
+
+  /* ---- maps ---- */
+
+  .routemap-svg {
+    /* Bounded, so a tall line map does not claim two pages by itself. */
+    max-height: 180mm;
+    width: auto;
+    max-width: 100%;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .routemap-ground {
+    fill: #fff;
+  }
+
+  /* ---- badges must not vanish ---- */
+
+  .badge,
+  .badge-mini,
+  .badge-link,
+  .routemap-linelabel rect {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /*
+   * The safety net. If the reader printed in monochrome, or their browser
+   * ignored print-color-adjust, the fill is gone — so a border keeps the code
+   * reading as a badge. A badge that has lost its colour is still a badge; a
+   * badge that has lost its code is nothing at all.
+   */
+  .badge,
+  .badge-mini {
+    border: 0.5pt solid #444;
+    padding: 1px 4px;
+  }
+
+  /* ---- link URLs, expanded ---- */
+
+  /*
+   * Printed inline after the link text rather than gathered into numbered
+   * footnotes at the foot of each page. Real footnotes need the URLs collected
+   * and renumbered per printed page, which CSS cannot do — it would take
+   * JavaScript running at print time, and this site ships almost none. Inline
+   * expansion is the standard print idiom and needs no script.
+   *
+   * Internal links expand to their path only; the origin is stated once in the
+   * footer rather than repeated on every link. External links get the full URL,
+   * because a bare path would be useless.
+   */
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .prose a[href^="/"]::after,
+  .page-body a[href^="/"]::after,
+  .page-main a[href^="/"]::after,
+  a[href^="http"]::after {
+    content: ' [' attr(href) ']';
+    font-family: var(--font-mono);
+    font-size: 0.78em;
+    color: #444;
+    word-break: break-all;
+  }
+
+  /*
+   * Not on anything whose href is already its own label. A strip map entry
+   * reading "BR01 [/train/stations/br01/]" would treble in length and say
+   * nothing it did not already say.
+   */
+  .badge::after,
+  .badge-link::after,
+  .spine a::after,
+  .interchange-codes a::after,
+  .network-termini a::after,
+  .compare th a::after,
+  .data-card::after,
+  .card-list a::after,
+  .site-footer a::after,
+  h1 a::after,
+  h2 a::after,
+  h3 a::after {
+    content: none !important;
+  }
+
+  /* ---- typography and page breaks ---- */
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* The stub notice matters more on paper than on screen: a printout has no
+     address bar and outlives the page it came from. */
+  .note {
+    border: 0.5pt solid #999;
+    padding: 6pt 8pt;
+    break-inside: avoid;
+  }
+
+  /* ---- provenance ---- */
+
+  .site-footer {
+    border-top: 0.5pt solid #999;
+    margin-top: 14pt;
+    padding-top: 8pt;
+    font-size: 8pt;
+    color: #333;
   }
 }

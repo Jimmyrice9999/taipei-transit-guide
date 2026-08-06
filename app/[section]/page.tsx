@@ -13,7 +13,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
-import { getPages, getSection, getSections, getTypes } from '@/lib/content'
+import { getFolderBody, getPages, getSection, getSections, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string }> }
 
@@ -32,7 +32,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { section } = await params
   const meta = getSection(section)
-  return { title: meta.title, description: meta.description || undefined }
+  return {
+    title: meta.title,
+    description: meta.description || undefined,
+    alternates: { canonical: meta.href },
+    openGraph: {
+      title: meta.title,
+      description: meta.description || undefined,
+      url: meta.href,
+    },
+  }
 }
 
 export default async function SectionPage({ params }: Props) {
@@ -42,12 +51,53 @@ export default async function SectionPage({ params }: Props) {
 
   const meta = getSection(section)
   const types = getTypes(section)
+  const body = await getFolderBody([], section)
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ label: meta.title }]} />
       <h1 className="page-title">{meta.title}</h1>
       {meta.description && <p className="page-summary">{meta.description}</p>}
+
+      {/*
+        A section that is deliberately empty says so, once, at the top — and
+        then explains itself in its own prose. The alternative was three
+        repetitions of "No pages yet.", which reads as abandonment rather than
+        as scope.
+      */}
+      {meta.status === 'planned' && (
+        <p className="note note-planned">
+          <strong>Planned for v2.</strong> Nothing in this section is written yet. What
+          follows is what it will cover and why it does not exist — stated deliberately,
+          rather than left as an empty listing.
+        </p>
+      )}
+
+      {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
+
+      {/* The network overview is generated from data rather than Markdown, so it
+          has no content folder to be listed from. Without this it was reachable
+          only by typing the URL. */}
+      {section === 'train' && (
+        <ul className="card-list">
+          <li>
+            <Link href="/train/network/">
+              <span>
+                <span className="card-title">The network</span>
+                <span className="card-desc">
+                  All seven lines across three operators, with a geographic map drawn
+                  from official route geometry.
+                </span>
+              </span>
+              <span className="card-meta">
+                <span className="card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
+        </ul>
+      )}
 
       {types.map((type) => {
         const pages = getPages(section, type.slug)
@@ -61,7 +111,12 @@ export default async function SectionPage({ params }: Props) {
             </h2>
             {type.description && <p className="section-desc">{type.description}</p>}
             {pages.length === 0 ? (
-              <p className="empty">No pages yet.</p>
+              /* Under a planned section the notice at the top has already said
+                 this, and repeating "No pages yet." once per type is what made
+                 the section read as neglected rather than deliberate. */
+              meta.status === 'planned' ? null : (
+                <p className="empty">No pages yet.</p>
+              )
             ) : (
               <ul className="card-list">
                 {pages.map((page) => (

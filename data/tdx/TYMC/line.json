@@ -1,0 +1,21 @@
+[
+  {
+    "IsBranch": false,
+    "LineColor": "#8246AF",
+    "LineID": "A",
+    "LineName": {
+      "En": "Airport MRT Line",
+      "Ja": "桃園空港MRT",
+      "Ko": "타오위안 공항 MRT",
+      "Zh_tw": "桃園機場捷運線"
+    },
+    "LineNo": "A",
+    "LineSectionName": {
+      "En": "Taipei Main Station - Laojie River",
+      "Zh_tw": "台北車站-老街溪"
+    },
+    "SrcUpdateTime": "2023-07-31T00:00:00+08:00",
+    "UpdateTime": "2026-08-05T14:38:18+08:00",
+    "VersionID": 529
+  }
+]

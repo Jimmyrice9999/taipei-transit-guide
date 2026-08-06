@@ -1,0 +1,340 @@
+[
+  {
+    "Direction": 0,
+    "LineID": "Y",
+    "LineNo": "Y",
+    "RouteID": "Y-1",
+    "RouteName": {
+      "En": "Dapinglin - New Taipei Industrial Park",
+      "Zh_tw": "大坪林－新北產業園區"
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "Y07",
+        "StationName": {
+          "En": "Dapinglin",
+          "Ja": "大坪林",
+          "Ko": "다핑린",
+          "Zh_tw": "大坪林"
+        }
+      },
+      {
+        "CumulativeDistance": 1.55,
+        "Sequence": 2,
+        "StationID": "Y08",
+        "StationName": {
+          "En": "Shisizhang",
+          "Ja": "十四張",
+          "Ko": "스쓰장",
+          "Zh_tw": "十四張"
+        }
+      },
+      {
+        "CumulativeDistance": 2.43,
+        "Sequence": 3,
+        "StationID": "Y09",
+        "StationName": {
+          "En": "Xiulang Bridge",
+          "Ja": "秀朗橋",
+          "Ko": "시우랑챠오",
+          "Zh_tw": "秀朗橋"
+        }
+      },
+      {
+        "CumulativeDistance": 3.34,
+        "Sequence": 4,
+        "StationID": "Y10",
+        "StationName": {
+          "En": "Jingping",
+          "Ja": "景平",
+          "Ko": "징핑",
+          "Zh_tw": "景平"
+        }
+      },
+      {
+        "CumulativeDistance": 4.42,
+        "Sequence": 5,
+        "StationID": "Y11",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 5.94,
+        "Sequence": 6,
+        "StationID": "Y12",
+        "StationName": {
+          "En": "Zhonghe",
+          "Ja": "中和",
+          "Ko": "중허",
+          "Zh_tw": "中和"
+        }
+      },
+      {
+        "CumulativeDistance": 6.57,
+        "Sequence": 7,
+        "StationID": "Y13",
+        "StationName": {
+          "En": "Qiaohe",
+          "Ja": "橋和",
+          "Ko": "챠오허",
+          "Zh_tw": "橋和"
+        }
+      },
+      {
+        "CumulativeDistance": 7.32,
+        "Sequence": 8,
+        "StationID": "Y14",
+        "StationName": {
+          "En": "Zhongyuan",
+          "Ja": "中原",
+          "Ko": "중위엔",
+          "Zh_tw": "中原"
+        }
+      },
+      {
+        "CumulativeDistance": 8.72,
+        "Sequence": 9,
+        "StationID": "Y15",
+        "StationName": {
+          "En": "Banxin",
+          "Ja": "板新",
+          "Ko": "반신",
+          "Zh_tw": "板新"
+        }
+      },
+      {
+        "CumulativeDistance": 9.62,
+        "Sequence": 10,
+        "StationID": "Y16",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 11.04,
+        "Sequence": 11,
+        "StationID": "Y17",
+        "StationName": {
+          "En": "Xinpu Minsheng",
+          "Ja": "新埔民生",
+          "Ko": "신푸민셩",
+          "Zh_tw": "新埔民生"
+        }
+      },
+      {
+        "CumulativeDistance": 12.67,
+        "Sequence": 12,
+        "StationID": "Y18",
+        "StationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        }
+      },
+      {
+        "CumulativeDistance": 13.82,
+        "Sequence": 13,
+        "StationID": "Y19",
+        "StationName": {
+          "En": "Xingfu",
+          "Ja": "幸福",
+          "Ko": "씽푸",
+          "Zh_tw": "幸福"
+        }
+      },
+      {
+        "CumulativeDistance": 15.06,
+        "Sequence": 14,
+        "StationID": "Y20",
+        "StationName": {
+          "En": "New Taipei Industrial Park",
+          "Ja": "新北産業園区",
+          "Ko": "신베이 산업원 단지",
+          "Zh_tw": "新北產業園區"
+        }
+      }
+    ],
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "Direction": 1,
+    "LineID": "Y",
+    "LineNo": "Y",
+    "RouteID": "Y-1",
+    "RouteName": {
+      "En": "New Taipei Industrial Park - Dapinglin",
+      "Zh_tw": "新北產業園區－大坪林"
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "Y20",
+        "StationName": {
+          "En": "New Taipei Industrial Park",
+          "Ja": "新北産業園区",
+          "Ko": "신베이 산업원 단지",
+          "Zh_tw": "新北產業園區"
+        }
+      },
+      {
+        "CumulativeDistance": 1.24,
+        "Sequence": 2,
+        "StationID": "Y19",
+        "StationName": {
+          "En": "Xingfu",
+          "Ja": "幸福",
+          "Ko": "씽푸",
+          "Zh_tw": "幸福"
+        }
+      },
+      {
+        "CumulativeDistance": 2.39,
+        "Sequence": 3,
+        "StationID": "Y18",
+        "StationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        }
+      },
+      {
+        "CumulativeDistance": 4.02,
+        "Sequence": 4,
+        "StationID": "Y17",
+        "StationName": {
+          "En": "Xinpu Minsheng",
+          "Ja": "新埔民生",
+          "Ko": "신푸민셩",
+          "Zh_tw": "新埔民生"
+        }
+      },
+      {
+        "CumulativeDistance": 5.44,
+        "Sequence": 5,
+        "StationID": "Y16",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 6.34,
+        "Sequence": 6,
+        "StationID": "Y15",
+        "StationName": {
+          "En": "Banxin",
+          "Ja": "板新",
+          "Ko": "반신",
+          "Zh_tw": "板新"
+        }
+      },
+      {
+        "CumulativeDistance": 7.74,
+        "Sequence": 7,
+        "StationID": "Y14",
+        "StationName": {
+          "En": "Zhongyuan",
+          "Ja": "中原",
+          "Ko": "중위엔",
+          "Zh_tw": "中原"
+        }
+      },
+      {
+        "CumulativeDistance": 8.49,
+        "Sequence": 8,
+        "StationID": "Y13",
+        "StationName": {
+          "En": "Qiaohe",
+          "Ja": "橋和",
+          "Ko": "챠오허",
+          "Zh_tw": "橋和"
+        }
+      },
+      {
+        "CumulativeDistance": 9.12,
+        "Sequence": 9,
+        "StationID": "Y12",
+        "StationName": {
+          "En": "Zhonghe",
+          "Ja": "中和",
+          "Ko": "중허",
+          "Zh_tw": "中和"
+        }
+      },
+      {
+        "CumulativeDistance": 10.64,
+        "Sequence": 10,
+        "StationID": "Y11",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 11.72,
+        "Sequence": 11,
+        "StationID": "Y10",
+        "StationName": {
+          "En": "Jingping",
+          "Ja": "景平",
+          "Ko": "징핑",
+          "Zh_tw": "景平"
+        }
+      },
+      {
+        "CumulativeDistance": 12.63,
+        "Sequence": 12,
+        "StationID": "Y09",
+        "StationName": {
+          "En": "Xiulang Bridge",
+          "Ja": "秀朗橋",
+          "Ko": "시우랑챠오",
+          "Zh_tw": "秀朗橋"
+        }
+      },
+      {
+        "CumulativeDistance": 13.51,
+        "Sequence": 13,
+        "StationID": "Y08",
+        "StationName": {
+          "En": "Shisizhang",
+          "Ja": "十四張",
+          "Ko": "스쓰장",
+          "Zh_tw": "十四張"
+        }
+      },
+      {
+        "CumulativeDistance": 15.06,
+        "Sequence": 14,
+        "StationID": "Y07",
+        "StationName": {
+          "En": "Dapinglin",
+          "Ja": "大坪林",
+          "Ko": "다핑린",
+          "Zh_tw": "大坪林"
+        }
+      }
+    ],
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

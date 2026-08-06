@@ -1,69 +1,140 @@
 /**
- * The station registry.
+ * The station registry — composed, not hand-written.
  *
- * Two jobs:
- *   1. Gives every station code badge a name, for tooltips and (later) links.
- *   2. Turns the badge system into a proofreading tool — a code written in a
- *      Markdown file that is not listed here fails the build with a warning
- *      naming the file, rather than rendering a badge for a station that does
- *      not exist.
+ *   lib/stations.generated.ts   official data, written by `npm run stations`
+ *   lib/station-overlay.ts      local research TDX does not publish
+ *   this file                   merges the two and serves the site
  *
- * Only lines with a written page need listing. Add a line's stations here when
- * you start writing about it; until then, its codes will warn.
+ * Nothing here is edited to add a station. Fetch with `npm run tdx`, regenerate
+ * with `npm run stations`.
  *
- * Station names follow TRTC's English romanisation. The Wenhu list below still
- * needs checking against TRTC's published network map — see the note on
- * content/train/lines/wenhu-line.md.
+ * Three jobs, as before:
+ *   1. Gives every station code badge a name.
+ *   2. Makes the badge system a proofreading tool — a code that is not in this
+ *      registry fails the build with a warning naming the file, so BR25 cannot
+ *      quietly render as though it were a real station.
+ *   3. Draws the guideway spine, in official sequence.
  */
+
+import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
+import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
+
+export type { Structure }
+export { PROVENANCE }
 
 export type Station = {
   code: string
+  /** Line prefix, e.g. "BR". */
+  line: string
+  /** Operator publishing this line: TRTC, NTMC or TYMC. */
+  operator: string
   name: string
+  /** Traditional Chinese name, where the source publishes one. */
+  nameZh: string
+  /** District, from the source's LocationTown. */
+  district: string
+  address: string
+  lat: number | null
+  lon: number | null
+  /** Position along the line, 1-based. */
+  sequence: number
+  /** Line codes this station interchanges with — not station codes. */
+  interchange: string[]
+  /** From the local overlay: TDX does not publish this. */
+  structure: Structure
 }
 
-/** Wenhu Line, BR01–BR24, south-west to north-east. */
-const WENHU: Station[] = [
-  { code: 'BR01', name: 'Taipei Zoo' },
-  { code: 'BR02', name: 'Muzha' },
-  { code: 'BR03', name: 'Wanfang Community' },
-  { code: 'BR04', name: 'Wanfang Hospital' },
-  { code: 'BR05', name: 'Xinhai' },
-  { code: 'BR06', name: 'Linguang' },
-  { code: 'BR07', name: 'Liuzhangli' },
-  { code: 'BR08', name: 'Technology Building' },
-  { code: 'BR09', name: 'Daan' },
-  { code: 'BR10', name: 'Zhongxiao Fuxing' },
-  { code: 'BR11', name: 'Nanjing Fuxing' },
-  { code: 'BR12', name: 'Zhongshan Junior High School' },
-  { code: 'BR13', name: 'Songshan Airport' },
-  { code: 'BR14', name: 'Dazhi' },
-  { code: 'BR15', name: 'Jiannan Road' },
-  { code: 'BR16', name: 'Xihu' },
-  { code: 'BR17', name: 'Gangqian' },
-  { code: 'BR18', name: 'Wende' },
-  { code: 'BR19', name: 'Neihu' },
-  { code: 'BR20', name: 'Dahu Park' },
-  { code: 'BR21', name: 'Huzhou' },
-  { code: 'BR22', name: 'Donghu' },
-  { code: 'BR23', name: 'Nangang Software Park' },
-  { code: 'BR24', name: 'Nangang Exhibition Center' },
-]
+export const STATIONS: Station[] = GENERATED_STATIONS.map((station) => ({
+  ...station,
+  structure: STATION_OVERLAY[station.code]?.structure ?? 'unknown',
+}))
 
-export const STATIONS: Station[] = [...WENHU]
-
-const BY_CODE = new Map(STATIONS.map((s) => [s.code, s]))
+/*
+ * Keyed on the UPPERCASED code, because lookups uppercase too.
+ *
+ * Three stations carry a letter suffix — R22A Xinbeitou, G03A Xiaobitan, and
+ * A14a Airport Hotel — and TDX publishes that last one with a lowercase 'a'.
+ * Keying on the raw code while looking up an uppercased one meant A14a never
+ * resolved: it rendered as `badge-absent` on /data/stations, which is the site
+ * stating that a station it lists is not a real station.
+ */
+const BY_CODE = new Map(STATIONS.map((s) => [s.code.toUpperCase(), s]))
 
 export function getStation(code: string): Station | undefined {
-  return BY_CODE.get(code.toUpperCase())
+  return BY_CODE.get(code.trim().toUpperCase())
+}
+
+/**
+ * Every station on one line, in official running order.
+ *
+ * Returns nothing for an empty code — a page with no `line:` set has no spine,
+ * and an empty prefix would otherwise match every station on every line.
+ */
+export function getLineStations(lineCode: string): Station[] {
+  const prefix = lineCode.trim().toUpperCase()
+  if (!prefix) return []
+  return STATIONS.filter((s) => s.line === prefix).sort((a, b) => a.sequence - b.sequence)
 }
 
 /**
  * Lines we hold station data for.
  *
- * Every code must resolve to a station here to render as a badge — a badge
- * asserts "this is a real station", so an unverified one is never drawn. This
- * set only decides which of two warnings you get: a code on a catalogued line
- * is almost certainly a typo, while a code on an uncatalogued line means the
- * line's stations have not been added yet.
+ * Every code must resolve to a station to render as a badge — a badge asserts
+ * "this is a real station", so an unverified one is never drawn. This set only
+ * decides which of two warnings you get: a code on a catalogued line is almost
+ * certainly a typo, while a code on an uncatalogued line means that line's
+ * stations have not been pulled yet.
  */
-export const CATALOGUED_LINES = new Set(['BR'])
+export const CATALOGUED_LINES = new Set(STATIONS.map((s) => s.line).filter(Boolean))
+
+/**
+ * Lines whose stations have their own pages.
+ *
+ * Depth over breadth: every station on every line is *registered*, so codes
+ * validate network-wide, but only Wenhu's are written up. Linking a code to a
+ * page that does not exist would be worse than not linking it.
+ */
+export const LINES_WITH_STATION_PAGES = new Set(['BR'])
+
+/** The URL for a station's page, or null when it does not have one. */
+export function getStationHref(code: string): string | null {
+  const station = getStation(code)
+  if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) return null
+  return `/train/stations/${station.code.toLowerCase()}/`
+}
+
+/**
+ * Expands a `spine:` frontmatter value into the set of stations a page marks.
+ *
+ *   spine: BR01-BR12   a range, for a fleet that works part of the line
+ *   spine: BR01        a single point, for a depot connection
+ *   spine: BR01, BR19  several points
+ *   (omitted)          the whole line
+ */
+export function resolveSpine(value: string, lineCode: string): Set<string> {
+  const all = getLineStations(lineCode)
+  if (!value.trim()) return new Set(all.map((s) => s.code))
+
+  const marked = new Set<string>()
+  for (const part of value.split(',').map((p) => p.trim()).filter(Boolean)) {
+    // The endpoints may carry a branch suffix (BR01-G03A), so allow one.
+    const range = part.match(/^([A-Z]+\d+[A-Z]?)\s*[-–—]\s*([A-Z]+\d+[A-Z]?)$/i)
+    if (range) {
+      // Compare case-insensitively: A14a is spelled with a lowercase suffix.
+      const at = (code: string) =>
+        all.findIndex((s) => s.code.toUpperCase() === code.toUpperCase())
+      const from = at(range[1])
+      const to = at(range[2])
+      if (from >= 0 && to >= 0) {
+        const [lo, hi] = from <= to ? [from, to] : [to, from]
+        all.slice(lo, hi + 1).forEach((s) => marked.add(s.code))
+        continue
+      }
+    }
+    // Add the registry's own spelling, not the caller's. The spine matches on
+    // `station.code`, so an uppercased "A14A" would never light A14a's tick.
+    const station = getStation(part)
+    if (station) marked.add(station.code)
+  }
+  return marked
+}

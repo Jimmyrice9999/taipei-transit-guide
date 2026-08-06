@@ -1,0 +1,64 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "Y20",
+    "EndStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "LineID": "Y",
+    "LineNo": "Y",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 33,
+    "RouteID": "Y-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Dapinglin - New Taipei Industrial Park",
+      "Zh_tw": "大坪林－新北產業園區"
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StartStationID": "Y07",
+    "StartStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "TravelTime": 34,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "Y07",
+    "EndStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "LineID": "Y",
+    "LineNo": "Y",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 33,
+    "RouteID": "Y-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "New Taipei Industrial Park - Dapinglin",
+      "Zh_tw": "新北產業園區－大坪林"
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StartStationID": "Y20",
+    "StartStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "TravelTime": 34,
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

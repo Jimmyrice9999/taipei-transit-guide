@@ -1,0 +1,4380 @@
+[
+  {
+    "Direction": 0,
+    "LineID": "BL",
+    "LineNo": "BL",
+    "RouteID": "BL-1",
+    "RouteName": {
+      "En": "Dingpu - Taipei Nangang Exhibition Center",
+      "Zh_tw": "頂埔－南港展覽館"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BL01",
+        "StationName": {
+          "En": "Dingpu",
+          "Ja": "頂埔",
+          "Ko": "딩푸",
+          "Zh_tw": "頂埔"
+        }
+      },
+      {
+        "CumulativeDistance": 1.95,
+        "Sequence": 2,
+        "StationID": "BL02",
+        "StationName": {
+          "En": "Yongning",
+          "Ja": "永寧",
+          "Ko": "융닝",
+          "Zh_tw": "永寧"
+        }
+      },
+      {
+        "CumulativeDistance": 3.06,
+        "Sequence": 3,
+        "StationID": "BL03",
+        "StationName": {
+          "En": "Tucheng",
+          "Ja": "土城",
+          "Ko": "투청",
+          "Zh_tw": "土城"
+        }
+      },
+      {
+        "CumulativeDistance": 4.53,
+        "Sequence": 4,
+        "StationID": "BL04",
+        "StationName": {
+          "En": "Haishan",
+          "Ja": "海山",
+          "Ko": "하이산",
+          "Zh_tw": "海山"
+        }
+      },
+      {
+        "CumulativeDistance": 6.17,
+        "Sequence": 5,
+        "StationID": "BL05",
+        "StationName": {
+          "En": "Far Eastern Hospital",
+          "Ja": "亜東病院",
+          "Ko": "야둥 병원",
+          "Zh_tw": "亞東醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 7.45,
+        "Sequence": 6,
+        "StationID": "BL06",
+        "StationName": {
+          "En": "Fuzhong",
+          "Ja": "府中",
+          "Ko": "푸중",
+          "Zh_tw": "府中"
+        }
+      },
+      {
+        "CumulativeDistance": 8.1,
+        "Sequence": 7,
+        "StationID": "BL07",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 9.38,
+        "Sequence": 8,
+        "StationID": "BL08",
+        "StationName": {
+          "En": "Xinpu",
+          "Ja": "新埔",
+          "Ko": "신푸",
+          "Zh_tw": "新埔"
+        }
+      },
+      {
+        "CumulativeDistance": 10.25,
+        "Sequence": 9,
+        "StationID": "BL09",
+        "StationName": {
+          "En": "Jiangzicui",
+          "Ja": "江子翠",
+          "Ko": "장쯔추이",
+          "Zh_tw": "江子翠"
+        }
+      },
+      {
+        "CumulativeDistance": 13.33,
+        "Sequence": 10,
+        "StationID": "BL10",
+        "StationName": {
+          "En": "Longshan Temple",
+          "Ja": "龍山寺",
+          "Ko": "용산사",
+          "Zh_tw": "龍山寺"
+        }
+      },
+      {
+        "CumulativeDistance": 14.64,
+        "Sequence": 11,
+        "StationID": "BL11",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 15.99,
+        "Sequence": 12,
+        "StationID": "BL12",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 16.67,
+        "Sequence": 13,
+        "StationID": "BL13",
+        "StationName": {
+          "En": "Shandao Temple",
+          "Ja": "善導寺",
+          "Ko": "산다오사",
+          "Zh_tw": "善導寺"
+        }
+      },
+      {
+        "CumulativeDistance": 17.61,
+        "Sequence": 14,
+        "StationID": "BL14",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 18.73,
+        "Sequence": 15,
+        "StationID": "BL15",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 19.4,
+        "Sequence": 16,
+        "StationID": "BL16",
+        "StationName": {
+          "En": "Zhongxiao Dunhua",
+          "Ja": "忠孝敦化",
+          "Ko": "중샤오 둔화",
+          "Zh_tw": "忠孝敦化"
+        }
+      },
+      {
+        "CumulativeDistance": 20.13,
+        "Sequence": 17,
+        "StationID": "BL17",
+        "StationName": {
+          "En": "Sun Yat-Sen Memorial Hall",
+          "Ja": "国父紀念館",
+          "Ko": "국부 기념관",
+          "Zh_tw": "國父紀念館"
+        }
+      },
+      {
+        "CumulativeDistance": 20.97,
+        "Sequence": 18,
+        "StationID": "BL18",
+        "StationName": {
+          "En": "Taipei City Hall",
+          "Ja": "台北市政府",
+          "Ko": "타이베이 시청",
+          "Zh_tw": "市政府"
+        }
+      },
+      {
+        "CumulativeDistance": 21.96,
+        "Sequence": 19,
+        "StationID": "BL19",
+        "StationName": {
+          "En": "Yongchun",
+          "Ja": "永春",
+          "Ko": "융춘",
+          "Zh_tw": "永春"
+        }
+      },
+      {
+        "CumulativeDistance": 22.78,
+        "Sequence": 20,
+        "StationID": "BL20",
+        "StationName": {
+          "En": "Houshanpi",
+          "Ja": "後山埤",
+          "Ko": "허우산피",
+          "Zh_tw": "後山埤"
+        }
+      },
+      {
+        "CumulativeDistance": 24.14,
+        "Sequence": 21,
+        "StationID": "BL21",
+        "StationName": {
+          "En": "Kunyang",
+          "Ja": "昆陽",
+          "Ko": "쿤양",
+          "Zh_tw": "昆陽"
+        }
+      },
+      {
+        "CumulativeDistance": 25.56,
+        "Sequence": 22,
+        "StationID": "BL22",
+        "StationName": {
+          "En": "Nangang",
+          "Ja": "南港",
+          "Ko": "난강",
+          "Zh_tw": "南港"
+        }
+      },
+      {
+        "CumulativeDistance": 26.65,
+        "Sequence": 23,
+        "StationID": "BL23",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "BL",
+    "LineNo": "BL",
+    "RouteID": "BL-1",
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Dingpu",
+      "Zh_tw": "南港展覽館－頂埔"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BL23",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      },
+      {
+        "CumulativeDistance": 1.09,
+        "Sequence": 2,
+        "StationID": "BL22",
+        "StationName": {
+          "En": "Nangang",
+          "Ja": "南港",
+          "Ko": "난강",
+          "Zh_tw": "南港"
+        }
+      },
+      {
+        "CumulativeDistance": 2.51,
+        "Sequence": 3,
+        "StationID": "BL21",
+        "StationName": {
+          "En": "Kunyang",
+          "Ja": "昆陽",
+          "Ko": "쿤양",
+          "Zh_tw": "昆陽"
+        }
+      },
+      {
+        "CumulativeDistance": 3.87,
+        "Sequence": 4,
+        "StationID": "BL20",
+        "StationName": {
+          "En": "Houshanpi",
+          "Ja": "後山埤",
+          "Ko": "허우산피",
+          "Zh_tw": "後山埤"
+        }
+      },
+      {
+        "CumulativeDistance": 4.69,
+        "Sequence": 5,
+        "StationID": "BL19",
+        "StationName": {
+          "En": "Yongchun",
+          "Ja": "永春",
+          "Ko": "융춘",
+          "Zh_tw": "永春"
+        }
+      },
+      {
+        "CumulativeDistance": 5.68,
+        "Sequence": 6,
+        "StationID": "BL18",
+        "StationName": {
+          "En": "Taipei City Hall",
+          "Ja": "台北市政府",
+          "Ko": "타이베이 시청",
+          "Zh_tw": "市政府"
+        }
+      },
+      {
+        "CumulativeDistance": 6.52,
+        "Sequence": 7,
+        "StationID": "BL17",
+        "StationName": {
+          "En": "Sun Yat-Sen Memorial Hall",
+          "Ja": "国父紀念館",
+          "Ko": "국부 기념관",
+          "Zh_tw": "國父紀念館"
+        }
+      },
+      {
+        "CumulativeDistance": 7.25,
+        "Sequence": 8,
+        "StationID": "BL16",
+        "StationName": {
+          "En": "Zhongxiao Dunhua",
+          "Ja": "忠孝敦化",
+          "Ko": "중샤오 둔화",
+          "Zh_tw": "忠孝敦化"
+        }
+      },
+      {
+        "CumulativeDistance": 7.92,
+        "Sequence": 9,
+        "StationID": "BL15",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 9.04,
+        "Sequence": 10,
+        "StationID": "BL14",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 9.98,
+        "Sequence": 11,
+        "StationID": "BL13",
+        "StationName": {
+          "En": "Shandao Temple",
+          "Ja": "善導寺",
+          "Ko": "산다오사",
+          "Zh_tw": "善導寺"
+        }
+      },
+      {
+        "CumulativeDistance": 10.66,
+        "Sequence": 12,
+        "StationID": "BL12",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 12.01,
+        "Sequence": 13,
+        "StationID": "BL11",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 13.32,
+        "Sequence": 14,
+        "StationID": "BL10",
+        "StationName": {
+          "En": "Longshan Temple",
+          "Ja": "龍山寺",
+          "Ko": "용산사",
+          "Zh_tw": "龍山寺"
+        }
+      },
+      {
+        "CumulativeDistance": 16.4,
+        "Sequence": 15,
+        "StationID": "BL09",
+        "StationName": {
+          "En": "Jiangzicui",
+          "Ja": "江子翠",
+          "Ko": "장쯔추이",
+          "Zh_tw": "江子翠"
+        }
+      },
+      {
+        "CumulativeDistance": 17.27,
+        "Sequence": 16,
+        "StationID": "BL08",
+        "StationName": {
+          "En": "Xinpu",
+          "Ja": "新埔",
+          "Ko": "신푸",
+          "Zh_tw": "新埔"
+        }
+      },
+      {
+        "CumulativeDistance": 18.55,
+        "Sequence": 17,
+        "StationID": "BL07",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 19.2,
+        "Sequence": 18,
+        "StationID": "BL06",
+        "StationName": {
+          "En": "Fuzhong",
+          "Ja": "府中",
+          "Ko": "푸중",
+          "Zh_tw": "府中"
+        }
+      },
+      {
+        "CumulativeDistance": 20.48,
+        "Sequence": 19,
+        "StationID": "BL05",
+        "StationName": {
+          "En": "Far Eastern Hospital",
+          "Ja": "亜東病院",
+          "Ko": "야둥 병원",
+          "Zh_tw": "亞東醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 22.12,
+        "Sequence": 20,
+        "StationID": "BL04",
+        "StationName": {
+          "En": "Haishan",
+          "Ja": "海山",
+          "Ko": "하이산",
+          "Zh_tw": "海山"
+        }
+      },
+      {
+        "CumulativeDistance": 23.59,
+        "Sequence": 21,
+        "StationID": "BL03",
+        "StationName": {
+          "En": "Tucheng",
+          "Ja": "土城",
+          "Ko": "투청",
+          "Zh_tw": "土城"
+        }
+      },
+      {
+        "CumulativeDistance": 24.7,
+        "Sequence": 22,
+        "StationID": "BL02",
+        "StationName": {
+          "En": "Yongning",
+          "Ja": "永寧",
+          "Ko": "융닝",
+          "Zh_tw": "永寧"
+        }
+      },
+      {
+        "CumulativeDistance": 26.65,
+        "Sequence": 23,
+        "StationID": "BL01",
+        "StationName": {
+          "En": "Dingpu",
+          "Ja": "頂埔",
+          "Ko": "딩푸",
+          "Zh_tw": "頂埔"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "BL",
+    "LineNo": "BL",
+    "RouteID": "BL-2",
+    "RouteName": {
+      "En": "Far Eastern Hospital - Taipei Nangang Exhibition Center",
+      "Zh_tw": "亞東醫院－南港展覽館"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BL05",
+        "StationName": {
+          "En": "Far Eastern Hospital",
+          "Ja": "亜東病院",
+          "Ko": "야둥 병원",
+          "Zh_tw": "亞東醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 1.28,
+        "Sequence": 2,
+        "StationID": "BL06",
+        "StationName": {
+          "En": "Fuzhong",
+          "Ja": "府中",
+          "Ko": "푸중",
+          "Zh_tw": "府中"
+        }
+      },
+      {
+        "CumulativeDistance": 1.93,
+        "Sequence": 3,
+        "StationID": "BL07",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 3.21,
+        "Sequence": 4,
+        "StationID": "BL08",
+        "StationName": {
+          "En": "Xinpu",
+          "Ja": "新埔",
+          "Ko": "신푸",
+          "Zh_tw": "新埔"
+        }
+      },
+      {
+        "CumulativeDistance": 4.08,
+        "Sequence": 5,
+        "StationID": "BL09",
+        "StationName": {
+          "En": "Jiangzicui",
+          "Ja": "江子翠",
+          "Ko": "장쯔추이",
+          "Zh_tw": "江子翠"
+        }
+      },
+      {
+        "CumulativeDistance": 7.16,
+        "Sequence": 6,
+        "StationID": "BL10",
+        "StationName": {
+          "En": "Longshan Temple",
+          "Ja": "龍山寺",
+          "Ko": "용산사",
+          "Zh_tw": "龍山寺"
+        }
+      },
+      {
+        "CumulativeDistance": 8.47,
+        "Sequence": 7,
+        "StationID": "BL11",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 9.82,
+        "Sequence": 8,
+        "StationID": "BL12",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 10.5,
+        "Sequence": 9,
+        "StationID": "BL13",
+        "StationName": {
+          "En": "Shandao Temple",
+          "Ja": "善導寺",
+          "Ko": "산다오사",
+          "Zh_tw": "善導寺"
+        }
+      },
+      {
+        "CumulativeDistance": 11.44,
+        "Sequence": 10,
+        "StationID": "BL14",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 12.56,
+        "Sequence": 11,
+        "StationID": "BL15",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 13.23,
+        "Sequence": 12,
+        "StationID": "BL16",
+        "StationName": {
+          "En": "Zhongxiao Dunhua",
+          "Ja": "忠孝敦化",
+          "Ko": "중샤오 둔화",
+          "Zh_tw": "忠孝敦化"
+        }
+      },
+      {
+        "CumulativeDistance": 13.96,
+        "Sequence": 13,
+        "StationID": "BL17",
+        "StationName": {
+          "En": "Sun Yat-Sen Memorial Hall",
+          "Ja": "国父紀念館",
+          "Ko": "국부 기념관",
+          "Zh_tw": "國父紀念館"
+        }
+      },
+      {
+        "CumulativeDistance": 14.8,
+        "Sequence": 14,
+        "StationID": "BL18",
+        "StationName": {
+          "En": "Taipei City Hall",
+          "Ja": "台北市政府",
+          "Ko": "타이베이 시청",
+          "Zh_tw": "市政府"
+        }
+      },
+      {
+        "CumulativeDistance": 15.79,
+        "Sequence": 15,
+        "StationID": "BL19",
+        "StationName": {
+          "En": "Yongchun",
+          "Ja": "永春",
+          "Ko": "융춘",
+          "Zh_tw": "永春"
+        }
+      },
+      {
+        "CumulativeDistance": 16.61,
+        "Sequence": 16,
+        "StationID": "BL20",
+        "StationName": {
+          "En": "Houshanpi",
+          "Ja": "後山埤",
+          "Ko": "허우산피",
+          "Zh_tw": "後山埤"
+        }
+      },
+      {
+        "CumulativeDistance": 17.97,
+        "Sequence": 17,
+        "StationID": "BL21",
+        "StationName": {
+          "En": "Kunyang",
+          "Ja": "昆陽",
+          "Ko": "쿤양",
+          "Zh_tw": "昆陽"
+        }
+      },
+      {
+        "CumulativeDistance": 19.39,
+        "Sequence": 18,
+        "StationID": "BL22",
+        "StationName": {
+          "En": "Nangang",
+          "Ja": "南港",
+          "Ko": "난강",
+          "Zh_tw": "南港"
+        }
+      },
+      {
+        "CumulativeDistance": 20.48,
+        "Sequence": 19,
+        "StationID": "BL23",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "BL",
+    "LineNo": "BL",
+    "RouteID": "BL-2",
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Far Eastern Hospital",
+      "Zh_tw": "南港展覽館－亞東醫院"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BL23",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      },
+      {
+        "CumulativeDistance": 1.09,
+        "Sequence": 2,
+        "StationID": "BL22",
+        "StationName": {
+          "En": "Nangang",
+          "Ja": "南港",
+          "Ko": "난강",
+          "Zh_tw": "南港"
+        }
+      },
+      {
+        "CumulativeDistance": 2.51,
+        "Sequence": 3,
+        "StationID": "BL21",
+        "StationName": {
+          "En": "Kunyang",
+          "Ja": "昆陽",
+          "Ko": "쿤양",
+          "Zh_tw": "昆陽"
+        }
+      },
+      {
+        "CumulativeDistance": 3.87,
+        "Sequence": 4,
+        "StationID": "BL20",
+        "StationName": {
+          "En": "Houshanpi",
+          "Ja": "後山埤",
+          "Ko": "허우산피",
+          "Zh_tw": "後山埤"
+        }
+      },
+      {
+        "CumulativeDistance": 4.69,
+        "Sequence": 5,
+        "StationID": "BL19",
+        "StationName": {
+          "En": "Yongchun",
+          "Ja": "永春",
+          "Ko": "융춘",
+          "Zh_tw": "永春"
+        }
+      },
+      {
+        "CumulativeDistance": 5.68,
+        "Sequence": 6,
+        "StationID": "BL18",
+        "StationName": {
+          "En": "Taipei City Hall",
+          "Ja": "台北市政府",
+          "Ko": "타이베이 시청",
+          "Zh_tw": "市政府"
+        }
+      },
+      {
+        "CumulativeDistance": 6.52,
+        "Sequence": 7,
+        "StationID": "BL17",
+        "StationName": {
+          "En": "Sun Yat-Sen Memorial Hall",
+          "Ja": "国父紀念館",
+          "Ko": "국부 기념관",
+          "Zh_tw": "國父紀念館"
+        }
+      },
+      {
+        "CumulativeDistance": 7.25,
+        "Sequence": 8,
+        "StationID": "BL16",
+        "StationName": {
+          "En": "Zhongxiao Dunhua",
+          "Ja": "忠孝敦化",
+          "Ko": "중샤오 둔화",
+          "Zh_tw": "忠孝敦化"
+        }
+      },
+      {
+        "CumulativeDistance": 7.92,
+        "Sequence": 9,
+        "StationID": "BL15",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 9.04,
+        "Sequence": 10,
+        "StationID": "BL14",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 9.98,
+        "Sequence": 11,
+        "StationID": "BL13",
+        "StationName": {
+          "En": "Shandao Temple",
+          "Ja": "善導寺",
+          "Ko": "산다오사",
+          "Zh_tw": "善導寺"
+        }
+      },
+      {
+        "CumulativeDistance": 10.66,
+        "Sequence": 12,
+        "StationID": "BL12",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 12.01,
+        "Sequence": 13,
+        "StationID": "BL11",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 13.32,
+        "Sequence": 14,
+        "StationID": "BL10",
+        "StationName": {
+          "En": "Longshan Temple",
+          "Ja": "龍山寺",
+          "Ko": "용산사",
+          "Zh_tw": "龍山寺"
+        }
+      },
+      {
+        "CumulativeDistance": 16.4,
+        "Sequence": 15,
+        "StationID": "BL09",
+        "StationName": {
+          "En": "Jiangzicui",
+          "Ja": "江子翠",
+          "Ko": "장쯔추이",
+          "Zh_tw": "江子翠"
+        }
+      },
+      {
+        "CumulativeDistance": 17.27,
+        "Sequence": 16,
+        "StationID": "BL08",
+        "StationName": {
+          "En": "Xinpu",
+          "Ja": "新埔",
+          "Ko": "신푸",
+          "Zh_tw": "新埔"
+        }
+      },
+      {
+        "CumulativeDistance": 18.55,
+        "Sequence": 17,
+        "StationID": "BL07",
+        "StationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "CumulativeDistance": 19.2,
+        "Sequence": 18,
+        "StationID": "BL06",
+        "StationName": {
+          "En": "Fuzhong",
+          "Ja": "府中",
+          "Ko": "푸중",
+          "Zh_tw": "府中"
+        }
+      },
+      {
+        "CumulativeDistance": 20.48,
+        "Sequence": 19,
+        "StationID": "BL05",
+        "StationName": {
+          "En": "Far Eastern Hospital",
+          "Ja": "亜東病院",
+          "Ko": "야둥 병원",
+          "Zh_tw": "亞東醫院"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "BR",
+    "LineNo": "BR",
+    "RouteID": "BR-1",
+    "RouteName": {
+      "En": "Taipei Zoo - Taipei Nangang Exhibition Center",
+      "Zh_tw": "動物園－南港展覽館"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BR01",
+        "StationName": {
+          "En": "Taipei Zoo",
+          "Ja": "動物園",
+          "Ko": "동물원",
+          "Zh_tw": "動物園"
+        }
+      },
+      {
+        "CumulativeDistance": 0.68,
+        "Sequence": 2,
+        "StationID": "BR02",
+        "StationName": {
+          "En": "Muzha",
+          "Ja": "木柵",
+          "Ko": "무자",
+          "Zh_tw": "木柵"
+        }
+      },
+      {
+        "CumulativeDistance": 1.2,
+        "Sequence": 3,
+        "StationID": "BR03",
+        "StationName": {
+          "En": "Wanfang Community",
+          "Ja": "万芳コミュニティ",
+          "Ko": "완팡 단지",
+          "Zh_tw": "萬芳社區"
+        }
+      },
+      {
+        "CumulativeDistance": 2.34,
+        "Sequence": 4,
+        "StationID": "BR04",
+        "StationName": {
+          "En": "Wanfang Hospital",
+          "Ja": "万芳病院",
+          "Ko": "완팡 병원",
+          "Zh_tw": "萬芳醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 3.1,
+        "Sequence": 5,
+        "StationID": "BR05",
+        "StationName": {
+          "En": "Xinhai",
+          "Ja": "辛亥",
+          "Ko": "신하이",
+          "Zh_tw": "辛亥"
+        }
+      },
+      {
+        "CumulativeDistance": 4.7,
+        "Sequence": 6,
+        "StationID": "BR06",
+        "StationName": {
+          "En": "Linguang",
+          "Ja": "麟光",
+          "Ko": "린광",
+          "Zh_tw": "麟光"
+        }
+      },
+      {
+        "CumulativeDistance": 5.52,
+        "Sequence": 7,
+        "StationID": "BR07",
+        "StationName": {
+          "En": "Liuzhangli",
+          "Ja": "六張犁",
+          "Ko": "류장리",
+          "Zh_tw": "六張犁"
+        }
+      },
+      {
+        "CumulativeDistance": 6.65,
+        "Sequence": 8,
+        "StationID": "BR08",
+        "StationName": {
+          "En": "Technology Building",
+          "Ja": "テクノロジービル",
+          "Ko": "테크놀로지 빌딩",
+          "Zh_tw": "科技大樓"
+        }
+      },
+      {
+        "CumulativeDistance": 7.4,
+        "Sequence": 9,
+        "StationID": "BR09",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      },
+      {
+        "CumulativeDistance": 8.29,
+        "Sequence": 10,
+        "StationID": "BR10",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 9.56,
+        "Sequence": 11,
+        "StationID": "BR11",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 10.49,
+        "Sequence": 12,
+        "StationID": "BR12",
+        "StationName": {
+          "En": "Zhongshan Junior High School",
+          "Ja": "中山中学校",
+          "Ko": "중산 중학교",
+          "Zh_tw": "中山國中"
+        }
+      },
+      {
+        "CumulativeDistance": 11.97,
+        "Sequence": 13,
+        "StationID": "BR13",
+        "StationName": {
+          "En": "Songshan Airport",
+          "Ja": "松山空港",
+          "Ko": "송산공항",
+          "Zh_tw": "松山機場"
+        }
+      },
+      {
+        "CumulativeDistance": 14.55,
+        "Sequence": 14,
+        "StationID": "BR14",
+        "StationName": {
+          "En": "Dazhi",
+          "Ja": "大直",
+          "Ko": "다즈",
+          "Zh_tw": "大直"
+        }
+      },
+      {
+        "CumulativeDistance": 15.88,
+        "Sequence": 15,
+        "StationID": "BR15",
+        "StationName": {
+          "En": "Jiannan Rd.",
+          "Ja": "剣南路",
+          "Ko": "젠난루",
+          "Zh_tw": "劍南路"
+        }
+      },
+      {
+        "CumulativeDistance": 17.17,
+        "Sequence": 16,
+        "StationID": "BR16",
+        "StationName": {
+          "En": "Xihu",
+          "Ja": "西湖",
+          "Ko": "시후",
+          "Zh_tw": "西湖"
+        }
+      },
+      {
+        "CumulativeDistance": 17.99,
+        "Sequence": 17,
+        "StationID": "BR17",
+        "StationName": {
+          "En": "Gangqian",
+          "Ja": "港墘",
+          "Ko": "강첸",
+          "Zh_tw": "港墘"
+        }
+      },
+      {
+        "CumulativeDistance": 19,
+        "Sequence": 18,
+        "StationID": "BR18",
+        "StationName": {
+          "En": "Wende",
+          "Ja": "文徳",
+          "Ko": "원더",
+          "Zh_tw": "文德"
+        }
+      },
+      {
+        "CumulativeDistance": 20.13,
+        "Sequence": 19,
+        "StationID": "BR19",
+        "StationName": {
+          "En": "Neihu",
+          "Ja": "内湖",
+          "Ko": "네이후",
+          "Zh_tw": "內湖"
+        }
+      },
+      {
+        "CumulativeDistance": 21,
+        "Sequence": 20,
+        "StationID": "BR20",
+        "StationName": {
+          "En": "Dahu Park",
+          "Ja": "大湖公園",
+          "Ko": "다후 공원",
+          "Zh_tw": "大湖公園"
+        }
+      },
+      {
+        "CumulativeDistance": 22.63,
+        "Sequence": 21,
+        "StationID": "BR21",
+        "StationName": {
+          "En": "Huzhou",
+          "Ja": "葫洲",
+          "Ko": "후저우",
+          "Zh_tw": "葫洲"
+        }
+      },
+      {
+        "CumulativeDistance": 23.48,
+        "Sequence": 22,
+        "StationID": "BR22",
+        "StationName": {
+          "En": "Donghu",
+          "Ja": "東湖",
+          "Ko": "둥후",
+          "Zh_tw": "東湖"
+        }
+      },
+      {
+        "CumulativeDistance": 24.52,
+        "Sequence": 23,
+        "StationID": "BR23",
+        "StationName": {
+          "En": "Nangang Software Park",
+          "Ja": "南港ソフトウェアパーク",
+          "Ko": "난강 소프트웨어 단지",
+          "Zh_tw": "南港軟體園區"
+        }
+      },
+      {
+        "CumulativeDistance": 25.17,
+        "Sequence": 24,
+        "StationID": "BR24",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "BR",
+    "LineNo": "BR",
+    "RouteID": "BR-1",
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Taipei Zoo",
+      "Zh_tw": "南港展覽館－動物園"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "BR24",
+        "StationName": {
+          "En": "Taipei Nangang Exhibition Center",
+          "Ja": "南港展覧館",
+          "Ko": "난강 전람관",
+          "Zh_tw": "南港展覽館"
+        }
+      },
+      {
+        "CumulativeDistance": 0.65,
+        "Sequence": 2,
+        "StationID": "BR23",
+        "StationName": {
+          "En": "Nangang Software Park",
+          "Ja": "南港ソフトウェアパーク",
+          "Ko": "난강 소프트웨어 단지",
+          "Zh_tw": "南港軟體園區"
+        }
+      },
+      {
+        "CumulativeDistance": 1.69,
+        "Sequence": 3,
+        "StationID": "BR22",
+        "StationName": {
+          "En": "Donghu",
+          "Ja": "東湖",
+          "Ko": "둥후",
+          "Zh_tw": "東湖"
+        }
+      },
+      {
+        "CumulativeDistance": 2.54,
+        "Sequence": 4,
+        "StationID": "BR21",
+        "StationName": {
+          "En": "Huzhou",
+          "Ja": "葫洲",
+          "Ko": "후저우",
+          "Zh_tw": "葫洲"
+        }
+      },
+      {
+        "CumulativeDistance": 4.17,
+        "Sequence": 5,
+        "StationID": "BR20",
+        "StationName": {
+          "En": "Dahu Park",
+          "Ja": "大湖公園",
+          "Ko": "다후 공원",
+          "Zh_tw": "大湖公園"
+        }
+      },
+      {
+        "CumulativeDistance": 5.04,
+        "Sequence": 6,
+        "StationID": "BR19",
+        "StationName": {
+          "En": "Neihu",
+          "Ja": "内湖",
+          "Ko": "네이후",
+          "Zh_tw": "內湖"
+        }
+      },
+      {
+        "CumulativeDistance": 6.17,
+        "Sequence": 7,
+        "StationID": "BR18",
+        "StationName": {
+          "En": "Wende",
+          "Ja": "文徳",
+          "Ko": "원더",
+          "Zh_tw": "文德"
+        }
+      },
+      {
+        "CumulativeDistance": 7.18,
+        "Sequence": 8,
+        "StationID": "BR17",
+        "StationName": {
+          "En": "Gangqian",
+          "Ja": "港墘",
+          "Ko": "강첸",
+          "Zh_tw": "港墘"
+        }
+      },
+      {
+        "CumulativeDistance": 8,
+        "Sequence": 9,
+        "StationID": "BR16",
+        "StationName": {
+          "En": "Xihu",
+          "Ja": "西湖",
+          "Ko": "시후",
+          "Zh_tw": "西湖"
+        }
+      },
+      {
+        "CumulativeDistance": 9.29,
+        "Sequence": 10,
+        "StationID": "BR15",
+        "StationName": {
+          "En": "Jiannan Rd.",
+          "Ja": "剣南路",
+          "Ko": "젠난루",
+          "Zh_tw": "劍南路"
+        }
+      },
+      {
+        "CumulativeDistance": 10.62,
+        "Sequence": 11,
+        "StationID": "BR14",
+        "StationName": {
+          "En": "Dazhi",
+          "Ja": "大直",
+          "Ko": "다즈",
+          "Zh_tw": "大直"
+        }
+      },
+      {
+        "CumulativeDistance": 13.2,
+        "Sequence": 12,
+        "StationID": "BR13",
+        "StationName": {
+          "En": "Songshan Airport",
+          "Ja": "松山空港",
+          "Ko": "송산공항",
+          "Zh_tw": "松山機場"
+        }
+      },
+      {
+        "CumulativeDistance": 14.68,
+        "Sequence": 13,
+        "StationID": "BR12",
+        "StationName": {
+          "En": "Zhongshan Junior High School",
+          "Ja": "中山中学校",
+          "Ko": "중산 중학교",
+          "Zh_tw": "中山國中"
+        }
+      },
+      {
+        "CumulativeDistance": 15.61,
+        "Sequence": 14,
+        "StationID": "BR11",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 16.88,
+        "Sequence": 15,
+        "StationID": "BR10",
+        "StationName": {
+          "En": "Zhongxiao Fuxing",
+          "Ja": "忠孝復興",
+          "Ko": "중샤오 푸싱",
+          "Zh_tw": "忠孝復興"
+        }
+      },
+      {
+        "CumulativeDistance": 17.77,
+        "Sequence": 16,
+        "StationID": "BR09",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      },
+      {
+        "CumulativeDistance": 18.52,
+        "Sequence": 17,
+        "StationID": "BR08",
+        "StationName": {
+          "En": "Technology Building",
+          "Ja": "テクノロジービル",
+          "Ko": "테크놀로지 빌딩",
+          "Zh_tw": "科技大樓"
+        }
+      },
+      {
+        "CumulativeDistance": 19.65,
+        "Sequence": 18,
+        "StationID": "BR07",
+        "StationName": {
+          "En": "Liuzhangli",
+          "Ja": "六張犁",
+          "Ko": "류장리",
+          "Zh_tw": "六張犁"
+        }
+      },
+      {
+        "CumulativeDistance": 20.47,
+        "Sequence": 19,
+        "StationID": "BR06",
+        "StationName": {
+          "En": "Linguang",
+          "Ja": "麟光",
+          "Ko": "린광",
+          "Zh_tw": "麟光"
+        }
+      },
+      {
+        "CumulativeDistance": 22.07,
+        "Sequence": 20,
+        "StationID": "BR05",
+        "StationName": {
+          "En": "Xinhai",
+          "Ja": "辛亥",
+          "Ko": "신하이",
+          "Zh_tw": "辛亥"
+        }
+      },
+      {
+        "CumulativeDistance": 22.83,
+        "Sequence": 21,
+        "StationID": "BR04",
+        "StationName": {
+          "En": "Wanfang Hospital",
+          "Ja": "万芳病院",
+          "Ko": "완팡 병원",
+          "Zh_tw": "萬芳醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 23.97,
+        "Sequence": 22,
+        "StationID": "BR03",
+        "StationName": {
+          "En": "Wanfang Community",
+          "Ja": "万芳コミュニティ",
+          "Ko": "완팡 단지",
+          "Zh_tw": "萬芳社區"
+        }
+      },
+      {
+        "CumulativeDistance": 24.49,
+        "Sequence": 23,
+        "StationID": "BR02",
+        "StationName": {
+          "En": "Muzha",
+          "Ja": "木柵",
+          "Ko": "무자",
+          "Zh_tw": "木柵"
+        }
+      },
+      {
+        "CumulativeDistance": 25.17,
+        "Sequence": 24,
+        "StationID": "BR01",
+        "StationName": {
+          "En": "Taipei Zoo",
+          "Ja": "動物園",
+          "Ko": "동물원",
+          "Zh_tw": "動物園"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-1",
+    "RouteName": {
+      "En": "Xindian - Songshan",
+      "Zh_tw": "新店－松山"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G01",
+        "StationName": {
+          "En": "Xindian",
+          "Ja": "新店",
+          "Ko": "신뎬",
+          "Zh_tw": "新店"
+        }
+      },
+      {
+        "CumulativeDistance": 1.11,
+        "Sequence": 2,
+        "StationID": "G02",
+        "StationName": {
+          "En": "Xindian District Office",
+          "Ja": "新店区役所",
+          "Ko": "신뎬 구청",
+          "Zh_tw": "新店區公所"
+        }
+      },
+      {
+        "CumulativeDistance": 2.01,
+        "Sequence": 3,
+        "StationID": "G03",
+        "StationName": {
+          "En": "Qizhang",
+          "Ja": "七張",
+          "Ko": "치장",
+          "Zh_tw": "七張"
+        }
+      },
+      {
+        "CumulativeDistance": 2.86,
+        "Sequence": 4,
+        "StationID": "G04",
+        "StationName": {
+          "En": "Dapinglin",
+          "Ja": "大坪林",
+          "Ko": "다핑린",
+          "Zh_tw": "大坪林"
+        }
+      },
+      {
+        "CumulativeDistance": 4.01,
+        "Sequence": 5,
+        "StationID": "G05",
+        "StationName": {
+          "En": "Jingmei",
+          "Ja": "景美",
+          "Ko": "징메이",
+          "Zh_tw": "景美"
+        }
+      },
+      {
+        "CumulativeDistance": 5.07,
+        "Sequence": 6,
+        "StationID": "G06",
+        "StationName": {
+          "En": "Wanlong",
+          "Ja": "万隆",
+          "Ko": "완룽",
+          "Zh_tw": "萬隆"
+        }
+      },
+      {
+        "CumulativeDistance": 6.63,
+        "Sequence": 7,
+        "StationID": "G07",
+        "StationName": {
+          "En": "Gongguan",
+          "Ja": "公館",
+          "Ko": "궁관",
+          "Zh_tw": "公館"
+        }
+      },
+      {
+        "CumulativeDistance": 7.53,
+        "Sequence": 8,
+        "StationID": "G08",
+        "StationName": {
+          "En": "Taipower Building",
+          "Ja": "台湾電力ビル",
+          "Ko": "대만 전력공사 빌딩",
+          "Zh_tw": "台電大樓"
+        }
+      },
+      {
+        "CumulativeDistance": 8.41,
+        "Sequence": 9,
+        "StationID": "G09",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 9.34,
+        "Sequence": 10,
+        "StationID": "G10",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 10.1,
+        "Sequence": 11,
+        "StationID": "G11",
+        "StationName": {
+          "En": "Xiaonanmen",
+          "Ja": "小南門",
+          "Ko": "샤오난먼",
+          "Zh_tw": "小南門"
+        }
+      },
+      {
+        "CumulativeDistance": 10.92,
+        "Sequence": 12,
+        "StationID": "G12",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 11.73,
+        "Sequence": 13,
+        "StationID": "G13",
+        "StationName": {
+          "En": "Beimen",
+          "Ja": "北門",
+          "Ko": "베이먼",
+          "Zh_tw": "北門"
+        }
+      },
+      {
+        "CumulativeDistance": 12.99,
+        "Sequence": 14,
+        "StationID": "G14",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 14.29,
+        "Sequence": 15,
+        "StationID": "G15",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 15.28,
+        "Sequence": 16,
+        "StationID": "G16",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 16.22,
+        "Sequence": 17,
+        "StationID": "G17",
+        "StationName": {
+          "En": "Taipei Arena",
+          "Ja": "台北アリーナ",
+          "Ko": "타이베이 아레나",
+          "Zh_tw": "台北小巨蛋"
+        }
+      },
+      {
+        "CumulativeDistance": 17.42,
+        "Sequence": 18,
+        "StationID": "G18",
+        "StationName": {
+          "En": "Nanjing Sanmin",
+          "Ja": "南京三民",
+          "Ko": "난징 싼민",
+          "Zh_tw": "南京三民"
+        }
+      },
+      {
+        "CumulativeDistance": 18.77,
+        "Sequence": 19,
+        "StationID": "G19",
+        "StationName": {
+          "En": "Songshan",
+          "Ja": "松山",
+          "Ko": "송산",
+          "Zh_tw": "松山"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-1",
+    "RouteName": {
+      "En": "Songshan - Xindian",
+      "Zh_tw": "松山－新店"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G19",
+        "StationName": {
+          "En": "Songshan",
+          "Ja": "松山",
+          "Ko": "송산",
+          "Zh_tw": "松山"
+        }
+      },
+      {
+        "CumulativeDistance": 1.35,
+        "Sequence": 2,
+        "StationID": "G18",
+        "StationName": {
+          "En": "Nanjing Sanmin",
+          "Ja": "南京三民",
+          "Ko": "난징 싼민",
+          "Zh_tw": "南京三民"
+        }
+      },
+      {
+        "CumulativeDistance": 2.55,
+        "Sequence": 3,
+        "StationID": "G17",
+        "StationName": {
+          "En": "Taipei Arena",
+          "Ja": "台北アリーナ",
+          "Ko": "타이베이 아레나",
+          "Zh_tw": "台北小巨蛋"
+        }
+      },
+      {
+        "CumulativeDistance": 3.49,
+        "Sequence": 4,
+        "StationID": "G16",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 4.48,
+        "Sequence": 5,
+        "StationID": "G15",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 5.78,
+        "Sequence": 6,
+        "StationID": "G14",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 7.04,
+        "Sequence": 7,
+        "StationID": "G13",
+        "StationName": {
+          "En": "Beimen",
+          "Ja": "北門",
+          "Ko": "베이먼",
+          "Zh_tw": "北門"
+        }
+      },
+      {
+        "CumulativeDistance": 7.85,
+        "Sequence": 8,
+        "StationID": "G12",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 8.67,
+        "Sequence": 9,
+        "StationID": "G11",
+        "StationName": {
+          "En": "Xiaonanmen",
+          "Ja": "小南門",
+          "Ko": "샤오난먼",
+          "Zh_tw": "小南門"
+        }
+      },
+      {
+        "CumulativeDistance": 9.43,
+        "Sequence": 10,
+        "StationID": "G10",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 10.36,
+        "Sequence": 11,
+        "StationID": "G09",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 11.24,
+        "Sequence": 12,
+        "StationID": "G08",
+        "StationName": {
+          "En": "Taipower Building",
+          "Ja": "台湾電力ビル",
+          "Ko": "대만 전력공사 빌딩",
+          "Zh_tw": "台電大樓"
+        }
+      },
+      {
+        "CumulativeDistance": 12.14,
+        "Sequence": 13,
+        "StationID": "G07",
+        "StationName": {
+          "En": "Gongguan",
+          "Ja": "公館",
+          "Ko": "궁관",
+          "Zh_tw": "公館"
+        }
+      },
+      {
+        "CumulativeDistance": 13.7,
+        "Sequence": 14,
+        "StationID": "G06",
+        "StationName": {
+          "En": "Wanlong",
+          "Ja": "万隆",
+          "Ko": "완룽",
+          "Zh_tw": "萬隆"
+        }
+      },
+      {
+        "CumulativeDistance": 14.76,
+        "Sequence": 15,
+        "StationID": "G05",
+        "StationName": {
+          "En": "Jingmei",
+          "Ja": "景美",
+          "Ko": "징메이",
+          "Zh_tw": "景美"
+        }
+      },
+      {
+        "CumulativeDistance": 15.91,
+        "Sequence": 16,
+        "StationID": "G04",
+        "StationName": {
+          "En": "Dapinglin",
+          "Ja": "大坪林",
+          "Ko": "다핑린",
+          "Zh_tw": "大坪林"
+        }
+      },
+      {
+        "CumulativeDistance": 16.76,
+        "Sequence": 17,
+        "StationID": "G03",
+        "StationName": {
+          "En": "Qizhang",
+          "Ja": "七張",
+          "Ko": "치장",
+          "Zh_tw": "七張"
+        }
+      },
+      {
+        "CumulativeDistance": 17.66,
+        "Sequence": 18,
+        "StationID": "G02",
+        "StationName": {
+          "En": "Xindian District Office",
+          "Ja": "新店区役所",
+          "Ko": "신뎬 구청",
+          "Zh_tw": "新店區公所"
+        }
+      },
+      {
+        "CumulativeDistance": 18.77,
+        "Sequence": 19,
+        "StationID": "G01",
+        "StationName": {
+          "En": "Xindian",
+          "Ja": "新店",
+          "Ko": "신뎬",
+          "Zh_tw": "新店"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-2",
+    "RouteName": {
+      "En": "Taipower Building - Songshan",
+      "Zh_tw": "台電大樓－松山"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G08",
+        "StationName": {
+          "En": "Taipower Building",
+          "Ja": "台湾電力ビル",
+          "Ko": "대만 전력공사 빌딩",
+          "Zh_tw": "台電大樓"
+        }
+      },
+      {
+        "CumulativeDistance": 0.88,
+        "Sequence": 2,
+        "StationID": "G09",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 1.81,
+        "Sequence": 3,
+        "StationID": "G10",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 2.57,
+        "Sequence": 4,
+        "StationID": "G11",
+        "StationName": {
+          "En": "Xiaonanmen",
+          "Ja": "小南門",
+          "Ko": "샤오난먼",
+          "Zh_tw": "小南門"
+        }
+      },
+      {
+        "CumulativeDistance": 3.39,
+        "Sequence": 5,
+        "StationID": "G12",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 4.2,
+        "Sequence": 6,
+        "StationID": "G13",
+        "StationName": {
+          "En": "Beimen",
+          "Ja": "北門",
+          "Ko": "베이먼",
+          "Zh_tw": "北門"
+        }
+      },
+      {
+        "CumulativeDistance": 5.46,
+        "Sequence": 7,
+        "StationID": "G14",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 6.76,
+        "Sequence": 8,
+        "StationID": "G15",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 7.75,
+        "Sequence": 9,
+        "StationID": "G16",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 8.69,
+        "Sequence": 10,
+        "StationID": "G17",
+        "StationName": {
+          "En": "Taipei Arena",
+          "Ja": "台北アリーナ",
+          "Ko": "타이베이 아레나",
+          "Zh_tw": "台北小巨蛋"
+        }
+      },
+      {
+        "CumulativeDistance": 9.89,
+        "Sequence": 11,
+        "StationID": "G18",
+        "StationName": {
+          "En": "Nanjing Sanmin",
+          "Ja": "南京三民",
+          "Ko": "난징 싼민",
+          "Zh_tw": "南京三民"
+        }
+      },
+      {
+        "CumulativeDistance": 11.24,
+        "Sequence": 12,
+        "StationID": "G19",
+        "StationName": {
+          "En": "Songshan",
+          "Ja": "松山",
+          "Ko": "송산",
+          "Zh_tw": "松山"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-2",
+    "RouteName": {
+      "En": "Songshan - Taipower Building",
+      "Zh_tw": "松山－台電大樓"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G19",
+        "StationName": {
+          "En": "Songshan",
+          "Ja": "松山",
+          "Ko": "송산",
+          "Zh_tw": "松山"
+        }
+      },
+      {
+        "CumulativeDistance": 1.35,
+        "Sequence": 2,
+        "StationID": "G18",
+        "StationName": {
+          "En": "Nanjing Sanmin",
+          "Ja": "南京三民",
+          "Ko": "난징 싼민",
+          "Zh_tw": "南京三民"
+        }
+      },
+      {
+        "CumulativeDistance": 2.55,
+        "Sequence": 3,
+        "StationID": "G17",
+        "StationName": {
+          "En": "Taipei Arena",
+          "Ja": "台北アリーナ",
+          "Ko": "타이베이 아레나",
+          "Zh_tw": "台北小巨蛋"
+        }
+      },
+      {
+        "CumulativeDistance": 3.49,
+        "Sequence": 4,
+        "StationID": "G16",
+        "StationName": {
+          "En": "Nanjing Fuxing",
+          "Ja": "南京復興",
+          "Ko": "난징 푸싱",
+          "Zh_tw": "南京復興"
+        }
+      },
+      {
+        "CumulativeDistance": 4.48,
+        "Sequence": 5,
+        "StationID": "G15",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 5.78,
+        "Sequence": 6,
+        "StationID": "G14",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 7.04,
+        "Sequence": 7,
+        "StationID": "G13",
+        "StationName": {
+          "En": "Beimen",
+          "Ja": "北門",
+          "Ko": "베이먼",
+          "Zh_tw": "北門"
+        }
+      },
+      {
+        "CumulativeDistance": 7.85,
+        "Sequence": 8,
+        "StationID": "G12",
+        "StationName": {
+          "En": "Ximen",
+          "Ja": "西門",
+          "Ko": "시먼",
+          "Zh_tw": "西門"
+        }
+      },
+      {
+        "CumulativeDistance": 8.67,
+        "Sequence": 9,
+        "StationID": "G11",
+        "StationName": {
+          "En": "Xiaonanmen",
+          "Ja": "小南門",
+          "Ko": "샤오난먼",
+          "Zh_tw": "小南門"
+        }
+      },
+      {
+        "CumulativeDistance": 9.43,
+        "Sequence": 10,
+        "StationID": "G10",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 10.36,
+        "Sequence": 11,
+        "StationID": "G09",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 11.24,
+        "Sequence": 12,
+        "StationID": "G08",
+        "StationName": {
+          "En": "Taipower Building",
+          "Ja": "台湾電力ビル",
+          "Ko": "대만 전력공사 빌딩",
+          "Zh_tw": "台電大樓"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-3",
+    "RouteName": {
+      "En": "Qizhang - Xiaobitan",
+      "Zh_tw": "七張－小碧潭"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G03",
+        "StationName": {
+          "En": "Qizhang",
+          "Ja": "七張",
+          "Ko": "치장",
+          "Zh_tw": "七張"
+        }
+      },
+      {
+        "CumulativeDistance": 1.94,
+        "Sequence": 2,
+        "StationID": "G03A",
+        "StationName": {
+          "En": "Xiaobitan",
+          "Ja": "小碧潭",
+          "Ko": "샤오비탄",
+          "Zh_tw": "小碧潭"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "G",
+    "LineNo": "G",
+    "RouteID": "G-3",
+    "RouteName": {
+      "En": "Xiaobitan - Qizhang",
+      "Zh_tw": "小碧潭－七張"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "G03A",
+        "StationName": {
+          "En": "Xiaobitan",
+          "Ja": "小碧潭",
+          "Ko": "샤오비탄",
+          "Zh_tw": "小碧潭"
+        }
+      },
+      {
+        "CumulativeDistance": 1.94,
+        "Sequence": 2,
+        "StationID": "G03",
+        "StationName": {
+          "En": "Qizhang",
+          "Ja": "七張",
+          "Ko": "치장",
+          "Zh_tw": "七張"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "O",
+    "LineNo": "O",
+    "RouteID": "O-1",
+    "RouteName": {
+      "En": "Nanshijiao - Huilong",
+      "Zh_tw": "南勢角－迴龍"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "O01",
+        "StationName": {
+          "En": "Nanshijiao",
+          "Ja": "南勢角",
+          "Ko": "난스자오",
+          "Zh_tw": "南勢角"
+        }
+      },
+      {
+        "CumulativeDistance": 0.81,
+        "Sequence": 2,
+        "StationID": "O02",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 1.89,
+        "Sequence": 3,
+        "StationID": "O03",
+        "StationName": {
+          "En": "Yongan Market",
+          "Ja": "永安市場",
+          "Ko": "융안 시장",
+          "Zh_tw": "永安市場"
+        }
+      },
+      {
+        "CumulativeDistance": 3.22,
+        "Sequence": 4,
+        "StationID": "O04",
+        "StationName": {
+          "En": "Dingxi",
+          "Ja": "頂渓",
+          "Ko": "딩시",
+          "Zh_tw": "頂溪"
+        }
+      },
+      {
+        "CumulativeDistance": 5.36,
+        "Sequence": 5,
+        "StationID": "O05",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 6.94,
+        "Sequence": 6,
+        "StationID": "O06",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 8.14,
+        "Sequence": 7,
+        "StationID": "O07",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 9.28,
+        "Sequence": 8,
+        "StationID": "O08",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 10.08,
+        "Sequence": 9,
+        "StationID": "O09",
+        "StationName": {
+          "En": "Xingtian Temple",
+          "Ja": "行天宮",
+          "Ko": "싱톈궁",
+          "Zh_tw": "行天宮"
+        }
+      },
+      {
+        "CumulativeDistance": 11.03,
+        "Sequence": 10,
+        "StationID": "O10",
+        "StationName": {
+          "En": "Zhongshan Elementary School",
+          "Ja": "中山小学校",
+          "Ko": "중산 초등학교",
+          "Zh_tw": "中山國小"
+        }
+      },
+      {
+        "CumulativeDistance": 11.74,
+        "Sequence": 11,
+        "StationID": "O11",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 12.4,
+        "Sequence": 12,
+        "StationID": "O12",
+        "StationName": {
+          "En": "Daqiaotou",
+          "Ja": "大橋頭",
+          "Ko": "다차오터우",
+          "Zh_tw": "大橋頭"
+        }
+      },
+      {
+        "CumulativeDistance": 13.73,
+        "Sequence": 13,
+        "StationID": "O13",
+        "StationName": {
+          "En": "Taipei Bridge",
+          "Ja": "台北橋",
+          "Ko": "타이베이 대교",
+          "Zh_tw": "台北橋"
+        }
+      },
+      {
+        "CumulativeDistance": 14.72,
+        "Sequence": 14,
+        "StationID": "O14",
+        "StationName": {
+          "En": "Cailiao",
+          "Ja": "菜寮",
+          "Ko": "차이랴오",
+          "Zh_tw": "菜寮"
+        }
+      },
+      {
+        "CumulativeDistance": 15.59,
+        "Sequence": 15,
+        "StationID": "O15",
+        "StationName": {
+          "En": "Sanchong",
+          "Ja": "三重",
+          "Ko": "싼충",
+          "Zh_tw": "三重"
+        }
+      },
+      {
+        "CumulativeDistance": 17.31,
+        "Sequence": 16,
+        "StationID": "O16",
+        "StationName": {
+          "En": "Xianse Temple",
+          "Ja": "先嗇宮",
+          "Ko": "셴써궁",
+          "Zh_tw": "先嗇宮"
+        }
+      },
+      {
+        "CumulativeDistance": 18.58,
+        "Sequence": 17,
+        "StationID": "O17",
+        "StationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        }
+      },
+      {
+        "CumulativeDistance": 19.6,
+        "Sequence": 18,
+        "StationID": "O18",
+        "StationName": {
+          "En": "Xinzhuang",
+          "Ja": "新荘",
+          "Ko": "신좡",
+          "Zh_tw": "新莊"
+        }
+      },
+      {
+        "CumulativeDistance": 21.34,
+        "Sequence": 19,
+        "StationID": "O19",
+        "StationName": {
+          "En": "Fu Jen University",
+          "Ja": "輔仁大学",
+          "Ko": "푸런 대학교",
+          "Zh_tw": "輔大"
+        }
+      },
+      {
+        "CumulativeDistance": 22.71,
+        "Sequence": 20,
+        "StationID": "O20",
+        "StationName": {
+          "En": "Danfeng",
+          "Ja": "丹鳳",
+          "Ko": "단펑",
+          "Zh_tw": "丹鳳"
+        }
+      },
+      {
+        "CumulativeDistance": 24.11,
+        "Sequence": 21,
+        "StationID": "O21",
+        "StationName": {
+          "En": "Huilong",
+          "Ja": "迴龍",
+          "Ko": "후이룽",
+          "Zh_tw": "迴龍"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "O",
+    "LineNo": "O",
+    "RouteID": "O-1",
+    "RouteName": {
+      "En": "Huilong - Nanshijiao",
+      "Zh_tw": "迴龍－南勢角"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "O21",
+        "StationName": {
+          "En": "Huilong",
+          "Ja": "迴龍",
+          "Ko": "후이룽",
+          "Zh_tw": "迴龍"
+        }
+      },
+      {
+        "CumulativeDistance": 1.4,
+        "Sequence": 2,
+        "StationID": "O20",
+        "StationName": {
+          "En": "Danfeng",
+          "Ja": "丹鳳",
+          "Ko": "단펑",
+          "Zh_tw": "丹鳳"
+        }
+      },
+      {
+        "CumulativeDistance": 2.77,
+        "Sequence": 3,
+        "StationID": "O19",
+        "StationName": {
+          "En": "Fu Jen University",
+          "Ja": "輔仁大学",
+          "Ko": "푸런 대학교",
+          "Zh_tw": "輔大"
+        }
+      },
+      {
+        "CumulativeDistance": 4.51,
+        "Sequence": 4,
+        "StationID": "O18",
+        "StationName": {
+          "En": "Xinzhuang",
+          "Ja": "新荘",
+          "Ko": "신좡",
+          "Zh_tw": "新莊"
+        }
+      },
+      {
+        "CumulativeDistance": 5.53,
+        "Sequence": 5,
+        "StationID": "O17",
+        "StationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        }
+      },
+      {
+        "CumulativeDistance": 6.8,
+        "Sequence": 6,
+        "StationID": "O16",
+        "StationName": {
+          "En": "Xianse Temple",
+          "Ja": "先嗇宮",
+          "Ko": "셴써궁",
+          "Zh_tw": "先嗇宮"
+        }
+      },
+      {
+        "CumulativeDistance": 8.52,
+        "Sequence": 7,
+        "StationID": "O15",
+        "StationName": {
+          "En": "Sanchong",
+          "Ja": "三重",
+          "Ko": "싼충",
+          "Zh_tw": "三重"
+        }
+      },
+      {
+        "CumulativeDistance": 9.39,
+        "Sequence": 8,
+        "StationID": "O14",
+        "StationName": {
+          "En": "Cailiao",
+          "Ja": "菜寮",
+          "Ko": "차이랴오",
+          "Zh_tw": "菜寮"
+        }
+      },
+      {
+        "CumulativeDistance": 10.38,
+        "Sequence": 9,
+        "StationID": "O13",
+        "StationName": {
+          "En": "Taipei Bridge",
+          "Ja": "台北橋",
+          "Ko": "타이베이 대교",
+          "Zh_tw": "台北橋"
+        }
+      },
+      {
+        "CumulativeDistance": 11.71,
+        "Sequence": 10,
+        "StationID": "O12",
+        "StationName": {
+          "En": "Daqiaotou",
+          "Ja": "大橋頭",
+          "Ko": "다차오터우",
+          "Zh_tw": "大橋頭"
+        }
+      },
+      {
+        "CumulativeDistance": 12.37,
+        "Sequence": 11,
+        "StationID": "O11",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 13.08,
+        "Sequence": 12,
+        "StationID": "O10",
+        "StationName": {
+          "En": "Zhongshan Elementary School",
+          "Ja": "中山小学校",
+          "Ko": "중산 초등학교",
+          "Zh_tw": "中山國小"
+        }
+      },
+      {
+        "CumulativeDistance": 14.03,
+        "Sequence": 13,
+        "StationID": "O09",
+        "StationName": {
+          "En": "Xingtian Temple",
+          "Ja": "行天宮",
+          "Ko": "싱톈궁",
+          "Zh_tw": "行天宮"
+        }
+      },
+      {
+        "CumulativeDistance": 14.83,
+        "Sequence": 14,
+        "StationID": "O08",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 15.97,
+        "Sequence": 15,
+        "StationID": "O07",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 17.17,
+        "Sequence": 16,
+        "StationID": "O06",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 18.75,
+        "Sequence": 17,
+        "StationID": "O05",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 20.89,
+        "Sequence": 18,
+        "StationID": "O04",
+        "StationName": {
+          "En": "Dingxi",
+          "Ja": "頂渓",
+          "Ko": "딩시",
+          "Zh_tw": "頂溪"
+        }
+      },
+      {
+        "CumulativeDistance": 22.22,
+        "Sequence": 19,
+        "StationID": "O03",
+        "StationName": {
+          "En": "Yongan Market",
+          "Ja": "永安市場",
+          "Ko": "융안 시장",
+          "Zh_tw": "永安市場"
+        }
+      },
+      {
+        "CumulativeDistance": 23.3,
+        "Sequence": 20,
+        "StationID": "O02",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 24.11,
+        "Sequence": 21,
+        "StationID": "O01",
+        "StationName": {
+          "En": "Nanshijiao",
+          "Ja": "南勢角",
+          "Ko": "난스자오",
+          "Zh_tw": "南勢角"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "O",
+    "LineNo": "O",
+    "RouteID": "O-2",
+    "RouteName": {
+      "En": "Nanshijiao - Luzhou",
+      "Zh_tw": "南勢角－蘆洲"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "O01",
+        "StationName": {
+          "En": "Nanshijiao",
+          "Ja": "南勢角",
+          "Ko": "난스자오",
+          "Zh_tw": "南勢角"
+        }
+      },
+      {
+        "CumulativeDistance": 0.81,
+        "Sequence": 2,
+        "StationID": "O02",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 1.89,
+        "Sequence": 3,
+        "StationID": "O03",
+        "StationName": {
+          "En": "Yongan Market",
+          "Ja": "永安市場",
+          "Ko": "융안 시장",
+          "Zh_tw": "永安市場"
+        }
+      },
+      {
+        "CumulativeDistance": 3.22,
+        "Sequence": 4,
+        "StationID": "O04",
+        "StationName": {
+          "En": "Dingxi",
+          "Ja": "頂渓",
+          "Ko": "딩시",
+          "Zh_tw": "頂溪"
+        }
+      },
+      {
+        "CumulativeDistance": 5.36,
+        "Sequence": 5,
+        "StationID": "O05",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 6.94,
+        "Sequence": 6,
+        "StationID": "O06",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 8.14,
+        "Sequence": 7,
+        "StationID": "O07",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 9.28,
+        "Sequence": 8,
+        "StationID": "O08",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 10.08,
+        "Sequence": 9,
+        "StationID": "O09",
+        "StationName": {
+          "En": "Xingtian Temple",
+          "Ja": "行天宮",
+          "Ko": "싱톈궁",
+          "Zh_tw": "行天宮"
+        }
+      },
+      {
+        "CumulativeDistance": 11.03,
+        "Sequence": 10,
+        "StationID": "O10",
+        "StationName": {
+          "En": "Zhongshan Elementary School",
+          "Ja": "中山小学校",
+          "Ko": "중산 초등학교",
+          "Zh_tw": "中山國小"
+        }
+      },
+      {
+        "CumulativeDistance": 11.74,
+        "Sequence": 11,
+        "StationID": "O11",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 12.4,
+        "Sequence": 12,
+        "StationID": "O12",
+        "StationName": {
+          "En": "Daqiaotou",
+          "Ja": "大橋頭",
+          "Ko": "다차오터우",
+          "Zh_tw": "大橋頭"
+        }
+      },
+      {
+        "CumulativeDistance": 14.28,
+        "Sequence": 13,
+        "StationID": "O50",
+        "StationName": {
+          "En": "Sanchong Elementary School",
+          "Ja": "三重小学校",
+          "Ko": "싼충 초등학교",
+          "Zh_tw": "三重國小"
+        }
+      },
+      {
+        "CumulativeDistance": 15.51,
+        "Sequence": 14,
+        "StationID": "O51",
+        "StationName": {
+          "En": "Sanhe Junior High School",
+          "Ja": "三和中学校",
+          "Ko": "싼허 중학교",
+          "Zh_tw": "三和國中"
+        }
+      },
+      {
+        "CumulativeDistance": 16.34,
+        "Sequence": 15,
+        "StationID": "O52",
+        "StationName": {
+          "En": "St.lgnatius High School",
+          "Ja": "徐匯高校",
+          "Ko": "쉬후이 고등학교",
+          "Zh_tw": "徐匯中學"
+        }
+      },
+      {
+        "CumulativeDistance": 17.24,
+        "Sequence": 16,
+        "StationID": "O53",
+        "StationName": {
+          "En": "Sanmin Senior High School",
+          "Ja": "三民高校",
+          "Ko": "싼민 고등학교",
+          "Zh_tw": "三民高中"
+        }
+      },
+      {
+        "CumulativeDistance": 18.41,
+        "Sequence": 17,
+        "StationID": "O54",
+        "StationName": {
+          "En": "Luzhou",
+          "Ja": "蘆洲",
+          "Ko": "루저우",
+          "Zh_tw": "蘆洲"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "O",
+    "LineNo": "O",
+    "RouteID": "O-2",
+    "RouteName": {
+      "En": "Luzhou - Nanshijiao",
+      "Zh_tw": "蘆洲－南勢角"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "O54",
+        "StationName": {
+          "En": "Luzhou",
+          "Ja": "蘆洲",
+          "Ko": "루저우",
+          "Zh_tw": "蘆洲"
+        }
+      },
+      {
+        "CumulativeDistance": 1.17,
+        "Sequence": 2,
+        "StationID": "O53",
+        "StationName": {
+          "En": "Sanmin Senior High School",
+          "Ja": "三民高校",
+          "Ko": "싼민 고등학교",
+          "Zh_tw": "三民高中"
+        }
+      },
+      {
+        "CumulativeDistance": 2.07,
+        "Sequence": 3,
+        "StationID": "O52",
+        "StationName": {
+          "En": "St.lgnatius High School",
+          "Ja": "徐匯高校",
+          "Ko": "쉬후이 고등학교",
+          "Zh_tw": "徐匯中學"
+        }
+      },
+      {
+        "CumulativeDistance": 2.9,
+        "Sequence": 4,
+        "StationID": "O51",
+        "StationName": {
+          "En": "Sanhe Junior High School",
+          "Ja": "三和中学校",
+          "Ko": "싼허 중학교",
+          "Zh_tw": "三和國中"
+        }
+      },
+      {
+        "CumulativeDistance": 4.13,
+        "Sequence": 5,
+        "StationID": "O50",
+        "StationName": {
+          "En": "Sanchong Elementary School",
+          "Ja": "三重小学校",
+          "Ko": "싼충 초등학교",
+          "Zh_tw": "三重國小"
+        }
+      },
+      {
+        "CumulativeDistance": 6.01,
+        "Sequence": 6,
+        "StationID": "O12",
+        "StationName": {
+          "En": "Daqiaotou",
+          "Ja": "大橋頭",
+          "Ko": "다차오터우",
+          "Zh_tw": "大橋頭"
+        }
+      },
+      {
+        "CumulativeDistance": 6.67,
+        "Sequence": 7,
+        "StationID": "O11",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 7.38,
+        "Sequence": 8,
+        "StationID": "O10",
+        "StationName": {
+          "En": "Zhongshan Elementary School",
+          "Ja": "中山小学校",
+          "Ko": "중산 초등학교",
+          "Zh_tw": "中山國小"
+        }
+      },
+      {
+        "CumulativeDistance": 8.33,
+        "Sequence": 9,
+        "StationID": "O09",
+        "StationName": {
+          "En": "Xingtian Temple",
+          "Ja": "行天宮",
+          "Ko": "싱톈궁",
+          "Zh_tw": "行天宮"
+        }
+      },
+      {
+        "CumulativeDistance": 9.13,
+        "Sequence": 10,
+        "StationID": "O08",
+        "StationName": {
+          "En": "Songjiang Nanjing",
+          "Ja": "松江南京",
+          "Ko": "송장 난징",
+          "Zh_tw": "松江南京"
+        }
+      },
+      {
+        "CumulativeDistance": 10.27,
+        "Sequence": 11,
+        "StationID": "O07",
+        "StationName": {
+          "En": "Zhongxiao Xinsheng",
+          "Ja": "忠孝新生",
+          "Ko": "중샤오 신성",
+          "Zh_tw": "忠孝新生"
+        }
+      },
+      {
+        "CumulativeDistance": 11.47,
+        "Sequence": 12,
+        "StationID": "O06",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 13.05,
+        "Sequence": 13,
+        "StationID": "O05",
+        "StationName": {
+          "En": "Guting",
+          "Ja": "古亭",
+          "Ko": "구팅",
+          "Zh_tw": "古亭"
+        }
+      },
+      {
+        "CumulativeDistance": 15.19,
+        "Sequence": 14,
+        "StationID": "O04",
+        "StationName": {
+          "En": "Dingxi",
+          "Ja": "頂渓",
+          "Ko": "딩시",
+          "Zh_tw": "頂溪"
+        }
+      },
+      {
+        "CumulativeDistance": 16.52,
+        "Sequence": 15,
+        "StationID": "O03",
+        "StationName": {
+          "En": "Yongan Market",
+          "Ja": "永安市場",
+          "Ko": "융안 시장",
+          "Zh_tw": "永安市場"
+        }
+      },
+      {
+        "CumulativeDistance": 17.6,
+        "Sequence": 16,
+        "StationID": "O02",
+        "StationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "CumulativeDistance": 18.41,
+        "Sequence": 17,
+        "StationID": "O01",
+        "StationName": {
+          "En": "Nanshijiao",
+          "Ja": "南勢角",
+          "Ko": "난스자오",
+          "Zh_tw": "南勢角"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-1",
+    "RouteName": {
+      "En": "Xiangs - Tamsui",
+      "Zh_tw": "象山－淡水"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R02",
+        "StationName": {
+          "En": "Xiangshan",
+          "Ja": "象山",
+          "Ko": "샹산",
+          "Zh_tw": "象山"
+        }
+      },
+      {
+        "CumulativeDistance": 0.74,
+        "Sequence": 2,
+        "StationID": "R03",
+        "StationName": {
+          "En": "Taipei 101/World Trade Center",
+          "Ja": "台北101 / 世界貿易センター",
+          "Ko": "타이베이101/세계무역센터",
+          "Zh_tw": "台北101/世貿"
+        }
+      },
+      {
+        "CumulativeDistance": 1.73,
+        "Sequence": 3,
+        "StationID": "R04",
+        "StationName": {
+          "En": "Xinyi Anhe",
+          "Ja": "信義安和",
+          "Ko": "신이 안허",
+          "Zh_tw": "信義安和"
+        }
+      },
+      {
+        "CumulativeDistance": 2.72,
+        "Sequence": 4,
+        "StationID": "R05",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      },
+      {
+        "CumulativeDistance": 3.51,
+        "Sequence": 5,
+        "StationID": "R06",
+        "StationName": {
+          "En": "Daan Park",
+          "Ja": "大安森林公園",
+          "Ko": "다안 삼림 공원",
+          "Zh_tw": "大安森林公園"
+        }
+      },
+      {
+        "CumulativeDistance": 4.18,
+        "Sequence": 6,
+        "StationID": "R07",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 5.74,
+        "Sequence": 7,
+        "StationID": "R08",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 6.73,
+        "Sequence": 8,
+        "StationID": "R09",
+        "StationName": {
+          "En": "NTU Hospital",
+          "Ja": "台湾大学病院",
+          "Ko": "대만 대학 병원",
+          "Zh_tw": "台大醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 7.36,
+        "Sequence": 9,
+        "StationID": "R10",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 8.02,
+        "Sequence": 10,
+        "StationID": "R11",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 8.57,
+        "Sequence": 11,
+        "StationID": "R12",
+        "StationName": {
+          "En": "Shuanglian",
+          "Ja": "双連",
+          "Ko": "솽롄",
+          "Zh_tw": "雙連"
+        }
+      },
+      {
+        "CumulativeDistance": 9.1,
+        "Sequence": 12,
+        "StationID": "R13",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 10.13,
+        "Sequence": 13,
+        "StationID": "R14",
+        "StationName": {
+          "En": "Yuanshan",
+          "Ja": "圓山",
+          "Ko": "위안산",
+          "Zh_tw": "圓山"
+        }
+      },
+      {
+        "CumulativeDistance": 11.65,
+        "Sequence": 14,
+        "StationID": "R15",
+        "StationName": {
+          "En": "Jiantan",
+          "Ja": "剣潭",
+          "Ko": "젠탄",
+          "Zh_tw": "劍潭"
+        }
+      },
+      {
+        "CumulativeDistance": 12.74,
+        "Sequence": 15,
+        "StationID": "R16",
+        "StationName": {
+          "En": "Shilin",
+          "Ja": "士林",
+          "Ko": "스린",
+          "Zh_tw": "士林"
+        }
+      },
+      {
+        "CumulativeDistance": 13.84,
+        "Sequence": 16,
+        "StationID": "R17",
+        "StationName": {
+          "En": "Zhishan",
+          "Ja": "芝山",
+          "Ko": "즈산",
+          "Zh_tw": "芝山"
+        }
+      },
+      {
+        "CumulativeDistance": 14.72,
+        "Sequence": 17,
+        "StationID": "R18",
+        "StationName": {
+          "En": "Mingde",
+          "Ja": "明徳",
+          "Ko": "밍더",
+          "Zh_tw": "明德"
+        }
+      },
+      {
+        "CumulativeDistance": 15.32,
+        "Sequence": 18,
+        "StationID": "R19",
+        "StationName": {
+          "En": "Shipai",
+          "Ja": "石牌",
+          "Ko": "스파이",
+          "Zh_tw": "石牌"
+        }
+      },
+      {
+        "CumulativeDistance": 16.58,
+        "Sequence": 19,
+        "StationID": "R20",
+        "StationName": {
+          "En": "Qilian",
+          "Ja": "唭哩岸",
+          "Ko": "치리안",
+          "Zh_tw": "唭哩岸"
+        }
+      },
+      {
+        "CumulativeDistance": 17.41,
+        "Sequence": 20,
+        "StationID": "R21",
+        "StationName": {
+          "En": "Qiyan",
+          "Ja": "奇岩",
+          "Ko": "치옌",
+          "Zh_tw": "奇岩"
+        }
+      },
+      {
+        "CumulativeDistance": 18.17,
+        "Sequence": 21,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      },
+      {
+        "CumulativeDistance": 19.78,
+        "Sequence": 22,
+        "StationID": "R23",
+        "StationName": {
+          "En": "Fuxinggang",
+          "Ja": "復興崗",
+          "Ko": "푸싱강",
+          "Zh_tw": "復興崗"
+        }
+      },
+      {
+        "CumulativeDistance": 21.23,
+        "Sequence": 23,
+        "StationID": "R24",
+        "StationName": {
+          "En": "Zhongyi",
+          "Ja": "忠義",
+          "Ko": "중이",
+          "Zh_tw": "忠義"
+        }
+      },
+      {
+        "CumulativeDistance": 22.1,
+        "Sequence": 24,
+        "StationID": "R25",
+        "StationName": {
+          "En": "Guandu",
+          "Ja": "関渡",
+          "Ko": "관두",
+          "Zh_tw": "關渡"
+        }
+      },
+      {
+        "CumulativeDistance": 24.24,
+        "Sequence": 25,
+        "StationID": "R26",
+        "StationName": {
+          "En": "Zhuwei",
+          "Ja": "竹囲",
+          "Ko": "주웨이",
+          "Zh_tw": "竹圍"
+        }
+      },
+      {
+        "CumulativeDistance": 26.15,
+        "Sequence": 26,
+        "StationID": "R27",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      },
+      {
+        "CumulativeDistance": 28.24,
+        "Sequence": 27,
+        "StationID": "R28",
+        "StationName": {
+          "En": "Tamsui",
+          "Ja": "淡水",
+          "Ko": "단수이",
+          "Zh_tw": "淡水"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-1",
+    "RouteName": {
+      "En": "Tamsui - Xiangs",
+      "Zh_tw": "淡水－象山"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R28",
+        "StationName": {
+          "En": "Tamsui",
+          "Ja": "淡水",
+          "Ko": "단수이",
+          "Zh_tw": "淡水"
+        }
+      },
+      {
+        "CumulativeDistance": 2.09,
+        "Sequence": 2,
+        "StationID": "R27",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      },
+      {
+        "CumulativeDistance": 4,
+        "Sequence": 3,
+        "StationID": "R26",
+        "StationName": {
+          "En": "Zhuwei",
+          "Ja": "竹囲",
+          "Ko": "주웨이",
+          "Zh_tw": "竹圍"
+        }
+      },
+      {
+        "CumulativeDistance": 6.14,
+        "Sequence": 4,
+        "StationID": "R25",
+        "StationName": {
+          "En": "Guandu",
+          "Ja": "関渡",
+          "Ko": "관두",
+          "Zh_tw": "關渡"
+        }
+      },
+      {
+        "CumulativeDistance": 7.01,
+        "Sequence": 5,
+        "StationID": "R24",
+        "StationName": {
+          "En": "Zhongyi",
+          "Ja": "忠義",
+          "Ko": "중이",
+          "Zh_tw": "忠義"
+        }
+      },
+      {
+        "CumulativeDistance": 8.46,
+        "Sequence": 6,
+        "StationID": "R23",
+        "StationName": {
+          "En": "Fuxinggang",
+          "Ja": "復興崗",
+          "Ko": "푸싱강",
+          "Zh_tw": "復興崗"
+        }
+      },
+      {
+        "CumulativeDistance": 10.07,
+        "Sequence": 7,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      },
+      {
+        "CumulativeDistance": 10.83,
+        "Sequence": 8,
+        "StationID": "R21",
+        "StationName": {
+          "En": "Qiyan",
+          "Ja": "奇岩",
+          "Ko": "치옌",
+          "Zh_tw": "奇岩"
+        }
+      },
+      {
+        "CumulativeDistance": 11.66,
+        "Sequence": 9,
+        "StationID": "R20",
+        "StationName": {
+          "En": "Qilian",
+          "Ja": "唭哩岸",
+          "Ko": "치리안",
+          "Zh_tw": "唭哩岸"
+        }
+      },
+      {
+        "CumulativeDistance": 12.92,
+        "Sequence": 10,
+        "StationID": "R19",
+        "StationName": {
+          "En": "Shipai",
+          "Ja": "石牌",
+          "Ko": "스파이",
+          "Zh_tw": "石牌"
+        }
+      },
+      {
+        "CumulativeDistance": 13.52,
+        "Sequence": 11,
+        "StationID": "R18",
+        "StationName": {
+          "En": "Mingde",
+          "Ja": "明徳",
+          "Ko": "밍더",
+          "Zh_tw": "明德"
+        }
+      },
+      {
+        "CumulativeDistance": 14.4,
+        "Sequence": 12,
+        "StationID": "R17",
+        "StationName": {
+          "En": "Zhishan",
+          "Ja": "芝山",
+          "Ko": "즈산",
+          "Zh_tw": "芝山"
+        }
+      },
+      {
+        "CumulativeDistance": 15.5,
+        "Sequence": 13,
+        "StationID": "R16",
+        "StationName": {
+          "En": "Shilin",
+          "Ja": "士林",
+          "Ko": "스린",
+          "Zh_tw": "士林"
+        }
+      },
+      {
+        "CumulativeDistance": 16.59,
+        "Sequence": 14,
+        "StationID": "R15",
+        "StationName": {
+          "En": "Jiantan",
+          "Ja": "剣潭",
+          "Ko": "젠탄",
+          "Zh_tw": "劍潭"
+        }
+      },
+      {
+        "CumulativeDistance": 18.11,
+        "Sequence": 15,
+        "StationID": "R14",
+        "StationName": {
+          "En": "Yuanshan",
+          "Ja": "圓山",
+          "Ko": "위안산",
+          "Zh_tw": "圓山"
+        }
+      },
+      {
+        "CumulativeDistance": 19.14,
+        "Sequence": 16,
+        "StationID": "R13",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 19.67,
+        "Sequence": 17,
+        "StationID": "R12",
+        "StationName": {
+          "En": "Shuanglian",
+          "Ja": "双連",
+          "Ko": "솽롄",
+          "Zh_tw": "雙連"
+        }
+      },
+      {
+        "CumulativeDistance": 20.22,
+        "Sequence": 18,
+        "StationID": "R11",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 20.88,
+        "Sequence": 19,
+        "StationID": "R10",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 21.51,
+        "Sequence": 20,
+        "StationID": "R09",
+        "StationName": {
+          "En": "NTU Hospital",
+          "Ja": "台湾大学病院",
+          "Ko": "대만 대학 병원",
+          "Zh_tw": "台大醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 22.5,
+        "Sequence": 21,
+        "StationID": "R08",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 24.06,
+        "Sequence": 22,
+        "StationID": "R07",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 24.73,
+        "Sequence": 23,
+        "StationID": "R06",
+        "StationName": {
+          "En": "Daan Park",
+          "Ja": "大安森林公園",
+          "Ko": "다안 삼림 공원",
+          "Zh_tw": "大安森林公園"
+        }
+      },
+      {
+        "CumulativeDistance": 25.52,
+        "Sequence": 24,
+        "StationID": "R05",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      },
+      {
+        "CumulativeDistance": 26.51,
+        "Sequence": 25,
+        "StationID": "R04",
+        "StationName": {
+          "En": "Xinyi Anhe",
+          "Ja": "信義安和",
+          "Ko": "신이 안허",
+          "Zh_tw": "信義安和"
+        }
+      },
+      {
+        "CumulativeDistance": 27.5,
+        "Sequence": 26,
+        "StationID": "R03",
+        "StationName": {
+          "En": "Taipei 101/World Trade Center",
+          "Ja": "台北101 / 世界貿易センター",
+          "Ko": "타이베이101/세계무역센터",
+          "Zh_tw": "台北101/世貿"
+        }
+      },
+      {
+        "CumulativeDistance": 28.24,
+        "Sequence": 27,
+        "StationID": "R02",
+        "StationName": {
+          "En": "Xiangshan",
+          "Ja": "象山",
+          "Ko": "샹산",
+          "Zh_tw": "象山"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-2",
+    "RouteName": {
+      "En": "Daan - Beitou",
+      "Zh_tw": "大安－北投"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R05",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      },
+      {
+        "CumulativeDistance": 0.79,
+        "Sequence": 2,
+        "StationID": "R06",
+        "StationName": {
+          "En": "Daan Park",
+          "Ja": "大安森林公園",
+          "Ko": "다안 삼림 공원",
+          "Zh_tw": "大安森林公園"
+        }
+      },
+      {
+        "CumulativeDistance": 1.46,
+        "Sequence": 3,
+        "StationID": "R07",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 3.02,
+        "Sequence": 4,
+        "StationID": "R08",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 4.01,
+        "Sequence": 5,
+        "StationID": "R09",
+        "StationName": {
+          "En": "NTU Hospital",
+          "Ja": "台湾大学病院",
+          "Ko": "대만 대학 병원",
+          "Zh_tw": "台大醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 4.64,
+        "Sequence": 6,
+        "StationID": "R10",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 5.3,
+        "Sequence": 7,
+        "StationID": "R11",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 5.85,
+        "Sequence": 8,
+        "StationID": "R12",
+        "StationName": {
+          "En": "Shuanglian",
+          "Ja": "双連",
+          "Ko": "솽롄",
+          "Zh_tw": "雙連"
+        }
+      },
+      {
+        "CumulativeDistance": 6.38,
+        "Sequence": 9,
+        "StationID": "R13",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 7.41,
+        "Sequence": 10,
+        "StationID": "R14",
+        "StationName": {
+          "En": "Yuanshan",
+          "Ja": "圓山",
+          "Ko": "위안산",
+          "Zh_tw": "圓山"
+        }
+      },
+      {
+        "CumulativeDistance": 8.93,
+        "Sequence": 11,
+        "StationID": "R15",
+        "StationName": {
+          "En": "Jiantan",
+          "Ja": "剣潭",
+          "Ko": "젠탄",
+          "Zh_tw": "劍潭"
+        }
+      },
+      {
+        "CumulativeDistance": 10.02,
+        "Sequence": 12,
+        "StationID": "R16",
+        "StationName": {
+          "En": "Shilin",
+          "Ja": "士林",
+          "Ko": "스린",
+          "Zh_tw": "士林"
+        }
+      },
+      {
+        "CumulativeDistance": 11.12,
+        "Sequence": 13,
+        "StationID": "R17",
+        "StationName": {
+          "En": "Zhishan",
+          "Ja": "芝山",
+          "Ko": "즈산",
+          "Zh_tw": "芝山"
+        }
+      },
+      {
+        "CumulativeDistance": 12,
+        "Sequence": 14,
+        "StationID": "R18",
+        "StationName": {
+          "En": "Mingde",
+          "Ja": "明徳",
+          "Ko": "밍더",
+          "Zh_tw": "明德"
+        }
+      },
+      {
+        "CumulativeDistance": 12.6,
+        "Sequence": 15,
+        "StationID": "R19",
+        "StationName": {
+          "En": "Shipai",
+          "Ja": "石牌",
+          "Ko": "스파이",
+          "Zh_tw": "石牌"
+        }
+      },
+      {
+        "CumulativeDistance": 13.86,
+        "Sequence": 16,
+        "StationID": "R20",
+        "StationName": {
+          "En": "Qilian",
+          "Ja": "唭哩岸",
+          "Ko": "치리안",
+          "Zh_tw": "唭哩岸"
+        }
+      },
+      {
+        "CumulativeDistance": 14.69,
+        "Sequence": 17,
+        "StationID": "R21",
+        "StationName": {
+          "En": "Qiyan",
+          "Ja": "奇岩",
+          "Ko": "치옌",
+          "Zh_tw": "奇岩"
+        }
+      },
+      {
+        "CumulativeDistance": 15.45,
+        "Sequence": 18,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-2",
+    "RouteName": {
+      "En": "Beitou - Daan",
+      "Zh_tw": "北投－大安"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      },
+      {
+        "CumulativeDistance": 0.76,
+        "Sequence": 2,
+        "StationID": "R21",
+        "StationName": {
+          "En": "Qiyan",
+          "Ja": "奇岩",
+          "Ko": "치옌",
+          "Zh_tw": "奇岩"
+        }
+      },
+      {
+        "CumulativeDistance": 1.59,
+        "Sequence": 3,
+        "StationID": "R20",
+        "StationName": {
+          "En": "Qilian",
+          "Ja": "唭哩岸",
+          "Ko": "치리안",
+          "Zh_tw": "唭哩岸"
+        }
+      },
+      {
+        "CumulativeDistance": 2.85,
+        "Sequence": 4,
+        "StationID": "R19",
+        "StationName": {
+          "En": "Shipai",
+          "Ja": "石牌",
+          "Ko": "스파이",
+          "Zh_tw": "石牌"
+        }
+      },
+      {
+        "CumulativeDistance": 3.45,
+        "Sequence": 5,
+        "StationID": "R18",
+        "StationName": {
+          "En": "Mingde",
+          "Ja": "明徳",
+          "Ko": "밍더",
+          "Zh_tw": "明德"
+        }
+      },
+      {
+        "CumulativeDistance": 4.33,
+        "Sequence": 6,
+        "StationID": "R17",
+        "StationName": {
+          "En": "Zhishan",
+          "Ja": "芝山",
+          "Ko": "즈산",
+          "Zh_tw": "芝山"
+        }
+      },
+      {
+        "CumulativeDistance": 5.43,
+        "Sequence": 7,
+        "StationID": "R16",
+        "StationName": {
+          "En": "Shilin",
+          "Ja": "士林",
+          "Ko": "스린",
+          "Zh_tw": "士林"
+        }
+      },
+      {
+        "CumulativeDistance": 6.52,
+        "Sequence": 8,
+        "StationID": "R15",
+        "StationName": {
+          "En": "Jiantan",
+          "Ja": "剣潭",
+          "Ko": "젠탄",
+          "Zh_tw": "劍潭"
+        }
+      },
+      {
+        "CumulativeDistance": 8.04,
+        "Sequence": 9,
+        "StationID": "R14",
+        "StationName": {
+          "En": "Yuanshan",
+          "Ja": "圓山",
+          "Ko": "위안산",
+          "Zh_tw": "圓山"
+        }
+      },
+      {
+        "CumulativeDistance": 9.07,
+        "Sequence": 10,
+        "StationID": "R13",
+        "StationName": {
+          "En": "Minquan W. Rd.",
+          "Ja": "民権西路",
+          "Ko": "민취안시루",
+          "Zh_tw": "民權西路"
+        }
+      },
+      {
+        "CumulativeDistance": 9.6,
+        "Sequence": 11,
+        "StationID": "R12",
+        "StationName": {
+          "En": "Shuanglian",
+          "Ja": "双連",
+          "Ko": "솽롄",
+          "Zh_tw": "雙連"
+        }
+      },
+      {
+        "CumulativeDistance": 10.15,
+        "Sequence": 12,
+        "StationID": "R11",
+        "StationName": {
+          "En": "Zhongshan",
+          "Ja": "中山",
+          "Ko": "중산",
+          "Zh_tw": "中山"
+        }
+      },
+      {
+        "CumulativeDistance": 10.81,
+        "Sequence": 13,
+        "StationID": "R10",
+        "StationName": {
+          "En": "Taipei Main Station",
+          "Ja": "台北駅",
+          "Ko": "타이베이 역",
+          "Zh_tw": "台北車站"
+        }
+      },
+      {
+        "CumulativeDistance": 11.44,
+        "Sequence": 14,
+        "StationID": "R09",
+        "StationName": {
+          "En": "NTU Hospital",
+          "Ja": "台湾大学病院",
+          "Ko": "대만 대학 병원",
+          "Zh_tw": "台大醫院"
+        }
+      },
+      {
+        "CumulativeDistance": 12.43,
+        "Sequence": 15,
+        "StationID": "R08",
+        "StationName": {
+          "En": "Chiang Kai-Shek Memorial Hall",
+          "Ja": "中正紀念堂",
+          "Ko": "중정 기념당",
+          "Zh_tw": "中正紀念堂"
+        }
+      },
+      {
+        "CumulativeDistance": 13.99,
+        "Sequence": 16,
+        "StationID": "R07",
+        "StationName": {
+          "En": "Dongmen",
+          "Ja": "東門",
+          "Ko": "둥먼",
+          "Zh_tw": "東門"
+        }
+      },
+      {
+        "CumulativeDistance": 14.66,
+        "Sequence": 17,
+        "StationID": "R06",
+        "StationName": {
+          "En": "Daan Park",
+          "Ja": "大安森林公園",
+          "Ko": "다안 삼림 공원",
+          "Zh_tw": "大安森林公園"
+        }
+      },
+      {
+        "CumulativeDistance": 15.45,
+        "Sequence": 18,
+        "StationID": "R05",
+        "StationName": {
+          "En": "Daan",
+          "Ja": "大安",
+          "Ko": "다안",
+          "Zh_tw": "大安"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-3",
+    "RouteName": {
+      "En": "Beitou - Xinbeitou",
+      "Zh_tw": "北投－新北投"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      },
+      {
+        "CumulativeDistance": 1.03,
+        "Sequence": 2,
+        "StationID": "R22A",
+        "StationName": {
+          "En": "Xinbeitou",
+          "Ja": "新北投",
+          "Ko": "신베이터우",
+          "Zh_tw": "新北投"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "R",
+    "LineNo": "R",
+    "RouteID": "R-3",
+    "RouteName": {
+      "En": "Xinbeitou - Beitou",
+      "Zh_tw": "新北投－北投"
+    },
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "R22A",
+        "StationName": {
+          "En": "Xinbeitou",
+          "Ja": "新北投",
+          "Ko": "신베이터우",
+          "Zh_tw": "新北投"
+        }
+      },
+      {
+        "CumulativeDistance": 1.03,
+        "Sequence": 2,
+        "StationID": "R22",
+        "StationName": {
+          "En": "Beitou",
+          "Ja": "北投",
+          "Ko": "베이터우",
+          "Zh_tw": "北投"
+        }
+      }
+    ],
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  }
+]

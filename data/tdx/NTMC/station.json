@@ -1,0 +1,338 @@
+[
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23143新北市新店區北新路3段190號",
+    "StationID": "Y07",
+    "StationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqjezwy",
+      "PositionLat": 24.98272,
+      "PositionLon": 121.54134
+    },
+    "StationUID": "NTMCC-Y07",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新店區",
+    "LocationTownCode": "65000060",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23141新北市新店區民權路282號",
+    "StationID": "Y08",
+    "StationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqjkmb2",
+      "PositionLat": 24.984333,
+      "PositionLon": 121.527698
+    },
+    "StationUID": "NTMCC-Y08",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23582新北市中和區景平路2號",
+    "StationID": "Y09",
+    "StationName": {
+      "En": "Xiulang Bridge",
+      "Ja": "秀朗橋",
+      "Ko": "시우랑챠오",
+      "Zh_tw": "秀朗橋"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqjm7u6",
+      "PositionLat": 24.990549,
+      "PositionLon": 121.525051
+    },
+    "StationUID": "NTMCC-Y09",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23578新北市中和區景平路121號",
+    "StationID": "Y10",
+    "StationName": {
+      "En": "Jingping",
+      "Ja": "景平",
+      "Ko": "징핑",
+      "Zh_tw": "景平"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqjjttc",
+      "PositionLat": 24.992143,
+      "PositionLon": 121.516386
+    },
+    "StationUID": "NTMCC-Y10",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23582新北市中和區景平路486號",
+    "StationID": "Y11",
+    "StationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqhyj24",
+      "PositionLat": 24.99392,
+      "PositionLon": 121.505114
+    },
+    "StationUID": "NTMCC-Y11",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23558新北市中和區中山路二段271號",
+    "StationID": "Y12",
+    "StationName": {
+      "En": "Zhonghe",
+      "Ja": "中和",
+      "Ko": "중허",
+      "Zh_tw": "中和"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqhxw9m",
+      "PositionLat": 25.002382,
+      "PositionLon": 121.495978
+    },
+    "StationUID": "NTMCC-Y12",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23557新北市中和區板南路430號",
+    "StationID": "Y13",
+    "StationName": {
+      "En": "Qiaohe",
+      "Ja": "橋和",
+      "Ko": "챠오허",
+      "Zh_tw": "橋和"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqhxftk",
+      "PositionLat": 25.004413,
+      "PositionLon": 121.490461
+    },
+    "StationUID": "NTMCC-Y13",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "中和區",
+    "LocationTownCode": "65000030",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "23556新北市中和區板南路510號",
+    "StationID": "Y14",
+    "StationName": {
+      "En": "Zhongyuan",
+      "Ja": "中原",
+      "Ko": "중위엔",
+      "Zh_tw": "中原"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqk2whd",
+      "PositionLat": 25.00841,
+      "PositionLon": 121.484159
+    },
+    "StationUID": "NTMCC-Y14",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "板橋區",
+    "LocationTownCode": "65000010",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "22066新北市板橋區板新路109號",
+    "StationID": "Y15",
+    "StationName": {
+      "En": "Banxin",
+      "Ja": "板新",
+      "Ko": "반신",
+      "Zh_tw": "板新"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqk1trt",
+      "PositionLat": 25.014436,
+      "PositionLon": 121.472269
+    },
+    "StationUID": "NTMCC-Y15",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "板橋區",
+    "LocationTownCode": "65000010",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "22041新北市板橋區新站路66號",
+    "StationID": "Y16",
+    "StationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq7czgz",
+      "PositionLat": 25.015156,
+      "PositionLon": 121.464825
+    },
+    "StationUID": "NTMCC-Y16",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "板橋區",
+    "LocationTownCode": "65000010",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "22047新北市板橋區民生路3段70號",
+    "StationID": "Y17",
+    "StationName": {
+      "En": "Xinpu Minsheng",
+      "Ja": "新埔民生",
+      "Ko": "신푸민셩",
+      "Zh_tw": "新埔民生"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqk5ckw",
+      "PositionLat": 25.026282,
+      "PositionLon": 121.466831
+    },
+    "StationUID": "NTMCC-Y17",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新莊區",
+    "LocationTownCode": "65000050",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "24251新北市新莊區思源路18號B1",
+    "StationID": "Y18",
+    "StationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq7ykgf",
+      "PositionLat": 25.039862,
+      "PositionLon": 121.460479
+    },
+    "StationUID": "NTMCC-Y18",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新莊區",
+    "LocationTownCode": "65000050",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "24250新北市新莊區思源路292號",
+    "StationID": "Y19",
+    "StationName": {
+      "En": "Xingfu",
+      "Ja": "幸福",
+      "Ko": "씽푸",
+      "Zh_tw": "幸福"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqebhqw",
+      "PositionLat": 25.049984,
+      "PositionLon": 121.45998
+    },
+    "StationUID": "NTMCC-Y19",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "BikeAllowOnHoliday": false,
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "新莊區",
+    "LocationTownCode": "65000050",
+    "SrcUpdateTime": "2023-10-12T00:00:00+08:00",
+    "StationAddress": "24886新北市新莊區五工路35號",
+    "StationID": "Y20",
+    "StationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqefk6j",
+      "PositionLat": 25.061548,
+      "PositionLon": 121.459926
+    },
+    "StationUID": "NTMCC-Y20",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  }
+]

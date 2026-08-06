@@ -1,0 +1,135 @@
+{
+  "source": "Taiwan MOTC TDX (Transport Data eXchange), LineColor field",
+  "sourceUrl": "https://tdx.transportdata.tw/",
+  "licence": "Open Government Data Licence (Taiwan). See https://data.gov.tw/licenses",
+  "retrieved": "2026-08-05T09:38:28.743Z",
+  "note": "Official line colours as published by each operator. Community-sourced values in circulation (Wikipedia modules, Wikidata) differ from every one of these. badge and ink are derived by this project, not official: same hue, lightness reduced until the pair clears WCAG AA (4.5:1) with a 0.1 margin.",
+  "lines": [
+    {
+      "code": "BR",
+      "name": "Wenhu",
+      "nameZh": "文湖線",
+      "operator": "TRTC",
+      "official": "#B57A25",
+      "contrast": {
+        "officialOnWhite": 3.64,
+        "officialOnBlack": 4.95
+      },
+      "derived": {
+        "badgeBackground": "#B57A25",
+        "badgeText": "#14171A",
+        "badgeContrast": 4.95,
+        "accentInk": "#9C6920",
+        "accentInkOnWhite": 4.71
+      }
+    },
+    {
+      "code": "R",
+      "name": "Tamsui-Xinyi",
+      "nameZh": "淡水信義線",
+      "operator": "TRTC",
+      "official": "#D90023",
+      "contrast": {
+        "officialOnWhite": 5.28,
+        "officialOnBlack": 3.41
+      },
+      "derived": {
+        "badgeBackground": "#D90023",
+        "badgeText": "#FFFFFF",
+        "badgeContrast": 5.28,
+        "accentInk": "#D90023",
+        "accentInkOnWhite": 5.28
+      }
+    },
+    {
+      "code": "G",
+      "name": "Songshan-Xindian",
+      "nameZh": "松山新店線",
+      "operator": "TRTC",
+      "official": "#107547",
+      "contrast": {
+        "officialOnWhite": 5.74,
+        "officialOnBlack": 3.13
+      },
+      "derived": {
+        "badgeBackground": "#107547",
+        "badgeText": "#FFFFFF",
+        "badgeContrast": 5.74,
+        "accentInk": "#107547",
+        "accentInkOnWhite": 5.74
+      }
+    },
+    {
+      "code": "O",
+      "name": "Zhonghe-Xinlu",
+      "nameZh": "中和新蘆線",
+      "operator": "TRTC",
+      "official": "#F5A818",
+      "contrast": {
+        "officialOnWhite": 2,
+        "officialOnBlack": 8.99
+      },
+      "derived": {
+        "badgeBackground": "#F5A818",
+        "badgeText": "#14171A",
+        "badgeContrast": 8.99,
+        "accentInk": "#9B6707",
+        "accentInkOnWhite": 4.84
+      }
+    },
+    {
+      "code": "BL",
+      "name": "Bannan",
+      "nameZh": "板南線",
+      "operator": "TRTC",
+      "official": "#0A59AE",
+      "contrast": {
+        "officialOnWhite": 6.88,
+        "officialOnBlack": 2.62
+      },
+      "derived": {
+        "badgeBackground": "#0A59AE",
+        "badgeText": "#FFFFFF",
+        "badgeContrast": 6.88,
+        "accentInk": "#0A59AE",
+        "accentInkOnWhite": 6.88
+      }
+    },
+    {
+      "code": "Y",
+      "name": "Circular",
+      "nameZh": "環狀線",
+      "operator": "NTMC",
+      "official": "#FEDB00",
+      "contrast": {
+        "officialOnWhite": 1.37,
+        "officialOnBlack": 13.15
+      },
+      "derived": {
+        "badgeBackground": "#FEDB00",
+        "badgeText": "#14171A",
+        "badgeContrast": 13.15,
+        "accentInk": "#847100",
+        "accentInkOnWhite": 4.84
+      }
+    },
+    {
+      "code": "A",
+      "name": "Airport MRT",
+      "nameZh": "桃園機場捷運線",
+      "operator": "TYMC",
+      "official": "#8246AF",
+      "contrast": {
+        "officialOnWhite": 6.1,
+        "officialOnBlack": 2.95
+      },
+      "derived": {
+        "badgeBackground": "#8246AF",
+        "badgeText": "#FFFFFF",
+        "badgeContrast": 6.1,
+        "accentInk": "#8246AF",
+        "accentInkOnWhite": 6.1
+      }
+    }
+  ]
+}

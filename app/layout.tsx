@@ -7,7 +7,30 @@ import Link from 'next/link'
 import { Zilla_Slab, Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteNav from '@/components/SiteNav'
 import { getSections } from '@/lib/content'
+import { PROVENANCE } from '@/lib/stations'
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
+import JsonLd from '@/components/JsonLd'
+import { websiteSchema } from '@/lib/structured-data'
+import meta from '@/data/tdx/meta.json' with { type: 'json' }
 import './globals.css'
+
+/**
+ * MOTC's own oldest last-updated stamp across the fetched datasets, which is
+ * older than the date we retrieved them. Showing only the retrieval date would
+ * imply the data is fresher than it is.
+ */
+const SOURCE_UPDATED = (() => {
+  const operators = Object.values(
+    (meta as { operators?: Record<string, { datasets: Record<string, { srcUpdatedOldest?: string | null }> }> })
+      .operators ?? {},
+  )
+  const dates = operators
+    .flatMap((op) => Object.values(op.datasets))
+    .map((d) => d.srcUpdatedOldest)
+    .filter((d): d is string => typeof d === 'string')
+    .sort()
+  return dates[0] ?? 'unknown'
+})()
 
 /*
  * The wordmark is a static file, not inline SVG. Drawn inline it put 700
@@ -93,35 +116,96 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const HAN_RANGE =
   'U+2E80-2FDF, U+3000-303F, U+3100-312F, U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF, U+FF00-FFEF'
 
-const HAN_FONT_FACE = `
+/**
+ * Builds the two @font-face rules for one Han subset.
+ *
+ * Exported so /data/stations can declare its own family from the same
+ * definition. That page renders 200-odd station names in Chinese and every
+ * other page renders a few dozen proper nouns, so one shared subset meant 45
+ * pages carrying ~40 KB of glyphs only the 46th needs. See scripts/subset-cjk.mjs.
+ *
+ * The size-adjust values are per weight and are measured, not guessed — they
+ * belong to the typeface, not to the subset, so both families use the same ones.
+ */
+export function hanFontFace(family: string, file: (weight: 400 | 700) => string) {
+  return `
 @font-face {
-  font-family: 'TTG Han';
+  font-family: '${family}';
   font-style: normal;
   font-weight: 400;
   font-display: block;
   size-adjust: 94%;
   unicode-range: ${HAN_RANGE};
-  src: url('${BASE_PATH}/fonts/noto-sans-tc-subset-400.woff2') format('woff2');
+  src: url('${BASE_PATH}/fonts/${file(400)}') format('woff2');
 }
 @font-face {
-  font-family: 'TTG Han';
+  font-family: '${family}';
   font-style: normal;
   font-weight: 700;
   font-display: block;
   size-adjust: 82%;
   unicode-range: ${HAN_RANGE};
-  src: url('${BASE_PATH}/fonts/noto-sans-tc-subset-700.woff2') format('woff2');
+  src: url('${BASE_PATH}/fonts/${file(700)}') format('woff2');
 }
+`
+}
+
+const HAN_FONT_FACE = `${hanFontFace('TTG Han', (w) => `noto-sans-tc-subset-${w}.woff2`)}
 :root { --font-han: 'TTG Han'; }
 `
 
+/**
+ * Site-wide metadata defaults.
+ *
+ * `metadataBase` is what makes every relative URL below resolve to an absolute
+ * one — OpenGraph and canonical tags are meaningless relative, because the
+ * consumer is another server, not the browser. Without it Next emits relative
+ * og:image values and every share preview breaks.
+ *
+ * Each page overrides `title`, `description` and `alternates.canonical`; the
+ * rest is inherited, so a new page gets correct social metadata by default
+ * rather than by remembering to add it.
+ */
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Taipei Transit Guide',
-    template: '%s — Taipei Transit Guide',
+    default: SITE_NAME,
+    template: `%s — ${SITE_NAME}`,
   },
-  description:
-    'An English-language reference for public transport in Taipei: metro lines, rolling stock, depots and bus routes.',
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  /*
+   * Deliberately NO default `alternates.canonical` here.
+   *
+   * A site-wide default of '/' is inherited by any page that does not set its
+   * own, which means a forgotten canonical does not merely go missing — it
+   * actively tells search engines that page is really the homepage and should
+   * not be indexed. /about and /bus were both doing exactly that. Absent is a
+   * recoverable mistake; wrong is not, and the test suite fails on either.
+   */
+  openGraph: {
+    type: 'website',
+    siteName: SITE_NAME,
+    locale: 'en',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: '/',
+  },
+  twitter: {
+    // A summary card with a large image: the OG images are 1200×630 line
+    // colour panels, which are worth showing at size rather than as a thumbnail.
+    card: 'summary_large_image',
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+  },
+  category: 'reference',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -138,6 +222,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${zilla.variable} ${inter.variable} ${plexMono.variable}`}>
       <head>
         <style dangerouslySetInnerHTML={{ __html: HAN_FONT_FACE }} />
+        <JsonLd data={websiteSchema()} />
       </head>
       <body>
         <header className="site-header">
@@ -152,7 +237,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={WORDMARK.height}
               />
             </Link>
-            <SiteNav items={sections.map((s) => ({ href: s.href, title: s.title }))} />
+            {/* Data is an explicit nav item, not a content folder: it is
+                generated from the TDX records rather than written in Markdown. */}
+            <SiteNav
+              items={[
+                ...sections.map((s) => ({ href: s.href, title: s.title })),
+                { href: '/data/', title: 'Data' },
+              ]}
+            />
           </div>
         </header>
 
@@ -160,11 +252,48 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="site-footer">
           <div className="container">
+            {/*
+              The last sentence used to read "Line colours are community-sourced
+              and pending verification against TRTC's official route map." That
+              stopped being true when the palette moved to TDX, and it sat in the
+              footer of every page contradicting /data, lib/lines.ts and the
+              design reference — a disclaimer that undersold the work and told
+              readers the opposite of the truth on 45 pages at once.
+            */}
             <p>
               An independent, non-commercial reference site. Not affiliated with Taipei
               Rapid Transit Corporation, Taipei City Government, or any bus operator.
-              Line colours are community-sourced and pending verification against TRTC's
-              official route map.
+              Line colours are the official values published by each operator through
+              Taiwan MOTC's open data platform. <Link href="/about/">About this site</Link>.
+            </p>
+            {/* Where the station data came from, and how current it is. Readers
+                of a reference site are entitled to know both. */}
+            <p className="footer-source">
+              {PROVENANCE.source === 'tdx' ? (
+                <>
+                  Station names, codes and sequence from{' '}
+                  <a href={PROVENANCE.sourceUrl} rel="noreferrer">
+                    TDX Transport Data eXchange
+                  </a>
+                  , Ministry of Transportation and Communications, operator{' '}
+                  {PROVENANCE.operator}. Government open data.
+                  {PROVENANCE.fetchedAt && (
+                    <> Retrieved {PROVENANCE.fetchedAt.slice(0, 10)};</>
+                  )}{' '}
+                  {/* The retrieval date flatters the data — MOTC's own records
+                      are older than that, and a reader deserves the real one. */}
+                  source last updated {SOURCE_UPDATED}.{' '}
+                  <Link href="/data/provenance/">Provenance</Link>.
+                </>
+              ) : (
+                <>
+                  Station data is hand-transcribed and not yet verified against{' '}
+                  <a href={PROVENANCE.sourceUrl} rel="noreferrer">
+                    TDX
+                  </a>
+                  , the Ministry of Transportation and Communications open data platform.
+                </>
+              )}
             </p>
           </div>
         </footer>

@@ -1,0 +1,117 @@
+{
+  "generated": "2026-08-05T19:03:48.174Z",
+  "results": [
+    {
+      "name": "frontmatter with no body",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "completely empty file",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "unterminated frontmatter fence",
+      "expect": "build-fails",
+      "code": 1,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "invalid YAML in frontmatter",
+      "expect": "build-fails",
+      "code": 1,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "unknown station code in prose",
+      "expect": "warns",
+      "code": 0,
+      "warned": true,
+      "verdict": null
+    },
+    {
+      "name": "nonexistent line code in frontmatter",
+      "expect": "warns",
+      "code": 0,
+      "warned": true,
+      "verdict": null
+    },
+    {
+      "name": "spine range referencing unknown stations",
+      "expect": "warns",
+      "code": 0,
+      "warned": true,
+      "verdict": null
+    },
+    {
+      "name": "broken formation syntax",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "enormous title and summary",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "RTL override injection in a title",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "zero-width joiners, combining marks, emoji",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "Han characters not in the font subset",
+      "expect": "build-fails",
+      "code": 1,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "javascript: URL in a Markdown link",
+      "expect": "warns",
+      "code": 0,
+      "warned": true,
+      "verdict": null
+    },
+    {
+      "name": "data: URL in a Markdown image",
+      "expect": "warns",
+      "code": 0,
+      "warned": true,
+      "verdict": null
+    },
+    {
+      "name": "raw HTML and event handlers in Markdown",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    },
+    {
+      "name": "HTML in frontmatter values",
+      "expect": "clean",
+      "code": 0,
+      "warned": false,
+      "verdict": null
+    }
+  ]
+}

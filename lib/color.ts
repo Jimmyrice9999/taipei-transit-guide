@@ -10,11 +10,29 @@
 export const WHITE = '#FFFFFF'
 export const NEAR_BLACK = '#14171A'
 
-/** WCAG AA for normal-size text. */
+/** WCAG AA for normal-size text. The threshold everything is *checked* against. */
 export const AA = 4.5
 
 /** WCAG AA for non-text UI (a rule or bar that must have a defined edge). */
 export const AA_NON_TEXT = 3
+
+/**
+ * Safety margin used when *deriving* a colour, as opposed to checking one.
+ *
+ * `darkenUntil` walks lightness down in 1% steps and stops at the first value
+ * that passes, so deriving against 4.5 produces a colour that clears the
+ * threshold by almost nothing — Wenhu's accent ink measured 4.50 against a 4.50
+ * requirement. That is technically a pass and practically a trap: any future
+ * correction to the official colour, or a rounding difference in another
+ * contrast implementation, drops it below.
+ *
+ * Deriving against 4.6 costs a barely perceptible darkening and buys headroom.
+ * Validation still uses the real 4.5, so this can never mask a genuine failure.
+ */
+export const AA_MARGIN = 0.1
+
+/** What derivation aims for. Checks still use AA. */
+export const AA_DERIVE = AA + AA_MARGIN
 
 function hexToRgb(hex: string): [number, number, number] {
   const h = hex.replace('#', '')
@@ -99,7 +117,7 @@ export function darkenUntil(hex: string, test: (candidate: string) => boolean): 
  * neither does, in which case the caller must darken the fill.
  */
 export function readableOn(background: string): string | null {
-  if (contrast(WHITE, background) >= AA) return WHITE
-  if (contrast(NEAR_BLACK, background) >= AA) return NEAR_BLACK
+  if (contrast(WHITE, background) >= AA_DERIVE) return WHITE
+  if (contrast(NEAR_BLACK, background) >= AA_DERIVE) return NEAR_BLACK
   return null
 }

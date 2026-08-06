@@ -5,3 +5,10 @@ next-env.d.ts
 *.tsbuildinfo
 .DS_Store
 .env*.local
+
+# Browser-verification artifacts. The reports and screenshots under docs/ ARE
+# committed — they are review deliverables — but Playwright's own scratch
+# output is not.
+test-results/
+playwright-report/
+.playwright/

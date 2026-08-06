@@ -4,9 +4,9 @@ Source material for the site's visual identity. Drawn from the Taipei MRT's own
 design system rather than invented from scratch.
 
 Status: implemented, except where noted. The line colours, station code badges,
-typography and the dot-matrix wordmark are all built. Two things remain open —
-verifying the line colours against TRTC's official route map (section 1) and the
-Cast licensing question (section 3).
+typography and the dot-matrix wordmark are all built, and station and colour data
+now come from Taiwan MOTC's TDX platform rather than transcription. One thing
+remains open — the Cast licensing question (section 3).
 
 Where implementation disproved a note here, the note has been corrected in place
 and marked **superseded**, with the evidence. Nothing is silently overwritten.
@@ -19,29 +19,73 @@ The MRT's line colour system is the single strongest visual asset available, and
 it's already how riders navigate the network. Use it as the site's palette rather
 than choosing arbitrary brand colours.
 
-| Line | Code | Hex | Source |
-|---|---|---|---|
-| Wenhu (Brown) | BR | `#C48C31` | Wikidata, cited to TRTC 2025 route map |
-| Tamsui–Xinyi (Red) | R | `#E3002C` | en.wikipedia Module:Adjacent stations |
-| Songshan–Xindian (Green) | G | `#008659` | en.wikipedia Module:Adjacent stations |
-| Zhonghe–Xinlu (Orange) | O | `#F8B61C` | en.wikipedia Module:Adjacent stations |
-| Bannan (Blue) | BL | `#0070BD` | en.wikipedia Module:Adjacent stations |
-| Taoyuan Airport MRT | A | `#8E47AD` (commuter) | Wikidata |
+**Accuracy caveat: RESOLVED.** The values below are now taken from `LineColor` in
+Taiwan MOTC's TDX platform — government open data, fetched with `npm run tdx` and
+committed under `data/tdx/`. They are no longer community-sourced, and no line is
+unsourced. The earlier plan to sample colours off a route map PNG is unnecessary
+and has been dropped.
 
-**Accuracy caveat — verify before publishing.** These are community-sourced values,
-not an official spec. The Wikipedia sandbox module carries different values for
-several lines (BR `#9E652E`, R `#CB2C30`, G `#007749`), so at least one set is
-wrong. DORTS states its signage system defines fixed Pantone, RGB and CMYK values
-per line, but the spec is not published openly, and at least one designer writing
-about the network has noted the official codes are not clearly identifiable in
-public sources.
+| Line | Code | Official (TDX) | Operator | Superseded value | Old source |
+|---|---|---|---|---|---|
+| Wenhu (Brown) | BR | `#B57A25` | TRTC | `#C48C31` | Wikidata |
+| Tamsui–Xinyi (Red) | R | `#D90023` | TRTC | `#E3002C` | en.wikipedia module |
+| Songshan–Xindian (Green) | G | `#107547` | TRTC | `#008659` | en.wikipedia module |
+| Zhonghe–Xinlu (Orange) | O | `#F5A818` | TRTC | `#F8B61C` | en.wikipedia module |
+| Bannan (Blue) | BL | `#0A59AE` | TRTC | `#0070BD` | en.wikipedia module |
+| Circular (Yellow) | Y | `#FEDB00` | NTMC | `#FFDB00` | **unsourced** |
+| Taoyuan Airport MRT | A | `#8246AF` | TYMC | `#8E47AD` | Wikidata |
 
-Action: sample the colours directly from TRTC's official route map PNG and treat
-those as canonical. Document the method on the site so readers know where the
-numbers came from.
+**Every community-sourced value was wrong.** Not badly wrong — most are within a
+few percent — but not one matched. Two are worth recording specifically:
+
+- **Wenhu.** The Wikidata value `#C48C31`, cited to a TRTC 2025 route map, was
+  adopted here as a correction to an earlier `#B57A28`. Official data says
+  `#B57A25`. The "correction" moved away from the right answer.
+- **Airport MRT.** Same pattern: `#8E47AD` from Wikidata replaced an earlier
+  `#8246AF`. Official data says `#8246AF` exactly.
+
+The lesson is not that Wikidata is bad, but that a *citation* to an official
+source is not the same as the official source, and that a confident correction
+can be worse than the value it replaced. Where an API publishes the data, use it.
+
+**Circular and Airport MRT are not TRTC.** Circular belongs to New Taipei Metro
+and the Airport MRT to Taoyuan Metro, so their colours come from those operators'
+line records — same platform, different operator code. A fetch limited to TRTC
+returns five lines and would leave these two community-sourced.
+
+Contrast was recomputed against all seven official colours: **every badge and
+accent pair still clears WCAG AA.** Two notes, though —
+
+- **Wenhu no longer needs the hairline** under its accent bar. The official brown
+  is darker than the community value and clears 3:1 on white unaided. Only
+  Orange and Yellow still need it.
+
+### Derivation carries a safety margin
+
+Derived colours are generated against **4.6**, not the 4.5 they are checked
+against. The 0.1 is deliberate, and it applies to every derived value on the
+site, not to one troublesome colour.
+
+The reason is structural. `darkenUntil` walks lightness down in 1% steps and
+stops at the first value that passes, so deriving against the threshold itself
+always lands *on* it. Wenhu's accent ink measured 4.50 against a 4.50
+requirement — technically a pass, practically a trap: any correction to the
+official colour, or a rounding difference in someone else's contrast
+implementation, would drop it below AA with no warning.
+
+| Line | ink before | after |
+|---|---|---|
+| BR Wenhu | `#A06C21` — 4.50 | `#9C6920` — 4.71 |
+| O Zhonghe–Xinlu | `#A06B07` — 4.56 | `#9B6707` — 4.84 |
+| Y Circular | `#897600` — 4.51 | `#847100` — 4.84 |
+
+The cost is a barely perceptible darkening of three accent colours. Validation
+still uses the real 4.5, so the margin can never mask a genuine failure —
+`npm run palette` exits non-zero on anything below AA.
 
 Future lines already have assigned colours (e.g. Wanda–Zhonghe–Shulin is light
-green, coded LG), so the palette needs to extend cleanly.
+green, coded LG). Add the code to `DISPLAY_ORDER` in `lib/lines.ts` once TDX
+publishes the line record; everything else derives.
 
 ### Applying line colour
 
@@ -50,7 +94,75 @@ green, coded LG), so the palette needs to extend cleanly.
   (orange) on white fails contrast requirements badly; brown and green are
   borderline at small sizes.
 - Always pair colour with the letter code. Roughly 1 in 12 men has some colour
-  vision deficiency, and brown/orange/red are exactly the confusable set.
+  vision deficiency. **Which colours actually confuse is measured below — the
+  answer is not the one this document assumed.**
+
+### Which line colours actually confuse — measured
+
+**Superseded.** This document said in two places that "brown, orange and red
+are exactly the confusable set". That was asserted from general knowledge about
+colour deficiency, never measured against these seven specific colours, and it
+is **wrong in both directions**: it names a pair that never confuses and misses
+the pair that confuses worst.
+
+Measured with `npm run cvd` — Brettel (1997) two-plane dichromat simulation,
+differences in CIEDE2000. Both instruments are verified before use: CIEDE2000
+against the Sharma, Wu & Dalal (2005) test vectors (worst error 4×10⁻⁵), and
+the simulation against the requirement that it leave the achromatic axis
+untouched.
+
+| Pair | Normal | Protanopia | Deuteranopia | Tritanopia | Verdict |
+|---|---|---|---|---|---|
+| **BL / A** blue vs purple | 21.6 | **2.5** | 4.9 | 35.0 | **Indistinguishable.** The worst pair on the network. |
+| **BR / R** brown vs red | 31.0 | 21.1 | **6.8** | 17.1 | Unreliable under deuteranopia. |
+| **O / Y** orange vs yellow | 16.7 | 11.6 | **8.6** | 12.2 | Unreliable under deuteranopia. |
+| **G / BL** green vs blue | 42.8 | 47.1 | 38.3 | **4.0** | Unreliable under tritanopia. |
+| BR / O brown vs orange | 16.3 | 16.3 | 16.2 | 15.5 | **Never confusable.** |
+| R / O red vs orange | 42.4 | 40.6 | 22.5 | 27.3 | **Never confusable.** |
+
+So of the three pairings the old claim implies — brown/orange, brown/red,
+red/orange — **only brown/red is real**, and only under deuteranopia. Orange is
+comfortably separable from both, because it is far lighter: the L/M confusion
+that collapses hue leaves the luminance difference intact.
+
+What the claim missed is worse than what it got wrong. **Bannan `#0A59AE` and
+the Airport MRT `#8246AF` collapse to ΔE 2.5 under protanopia** — the same
+colour, for practical purposes. Purple is blue plus red, so removing the red
+response leaves blue. And **green against blue fails under tritanopia**, which
+the old framing did not consider at all because it only thought about the
+red–green axis.
+
+**The general lesson, which does survive:** colour must never carry meaning
+alone. The specific lesson is narrower and sharper — *guessing which colours
+confuse is unreliable even when the guess sounds professional.* Brown, orange
+and red is the textbook answer. It is not this palette's answer.
+
+### The mitigation, and why the badge alone is enough here
+
+`/train/network/` draws all seven lines at once and was, until this was
+measured, distinguishing them by colour alone. Each line now carries its code
+badge at both ends of its longest run, and the network table identifies lines by
+the same badge rather than a colour swatch.
+
+Stroke patterns — dashing or dotting the confusable lines — were considered and
+rejected. They would degrade the map for every reader to solve a problem for
+some, they would collide with the convention that a dashed transit line means
+*under construction*, and they would introduce a second visual vocabulary for
+line identity when the badge system already is one.
+
+One caveat worth recording: CIEDE2000 was fitted to small uniform patches, and
+map strokes are 5 px wide, where chromatic discrimination is *worse* than the
+standard observer. The figures above are therefore optimistic for the map
+specifically. That argues for the text label, not against it.
+
+**The derived inks are far more confusable than the map colours** — BR/O inks
+sit at ΔE 0.7 under tritanopia — because darkening every ink to ~4.7:1 on white
+compresses them into one narrow luminance band. This costs nothing today: a
+page carries exactly one accent, so two inks are never seen together, and the
+one page listing all seven shows them as hex strings in a table with names
+attached. It would start costing something the moment ink colour is used to
+distinguish two lines in the same view. Recorded so that is a decision rather
+than an accident.
 
 ---
 
@@ -190,6 +302,38 @@ Do not set navigation, tables, or prose in it.
   but confirm Traditional Chinese coverage before relying on it, since it was
   designed for Japanese
 - Respect `prefers-reduced-motion` if anything scrolls
+
+---
+
+## 4a. The octolinear schematic — DEFERRED, not abandoned
+
+A Beck-convention octolinear network diagram (all segments horizontal, vertical
+or 45°, even station spacing, straightened for legibility rather than accuracy)
+belongs on this site. It answers "how do I get from here to there", which the
+geographic map does not — that one answers "where are the lines actually".
+
+**Why it has not been built.** Not difficulty in the abstract: a specific,
+concrete blocker. Twenty-six interchanges must land on coincident points across
+seven lines. Octolinear layout is a constraint-satisfaction problem, and every
+published approach relies on iterating against the rendered result. Producing it
+without being able to see the render means hand-solving a 26-constraint jigsaw
+blind, and the failure mode is a diagram that is subtly wrong in ways only
+visible to someone looking at it. A bad schematic is worse than no schematic,
+because people trust diagrams.
+
+**The tractable route when it is picked up.** A hand-authored topology file —
+runs of `{line, from, direction, stations}` — rendered by code, reviewed over two
+or three iterations with someone who can see the output. Not automatic
+octolinearisation from coordinates.
+
+**What is deliberately not the answer:** copying, tracing or closely imitating
+TRTC's official map. It is copyrighted. The octolinear *convention* is a design
+language anyone may use; that operator's specific arrangement is not.
+
+A single-line octolinear diagram for Wenhu alone is tractable — one line has no
+coincidence constraints — but the strip map beside the prose already answers
+station order for a single line, so it would be a second device doing the first
+one's job.
 
 ---
 

@@ -1,0 +1,1294 @@
+[
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL07",
+    "FromStationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "IsOnSiteTransfer": 0,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "Y",
+    "ToLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "ToLineNo": "Y",
+    "ToStationID": "Y16",
+    "ToStationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "TransferDescription": "",
+    "TransferTime": 11,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL08",
+    "FromStationName": {
+      "En": "Xinpu",
+      "Ja": "新埔",
+      "Ko": "신푸",
+      "Zh_tw": "新埔"
+    },
+    "IsOnSiteTransfer": 0,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "Y",
+    "ToLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "ToLineNo": "Y",
+    "ToStationID": "Y17",
+    "ToStationName": {
+      "En": "Xinpu Minsheng",
+      "Ja": "新埔民生",
+      "Ko": "신푸민셩",
+      "Zh_tw": "新埔民生"
+    },
+    "TransferDescription": "",
+    "TransferTime": 9,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL11",
+    "FromStationName": {
+      "En": "Ximen",
+      "Ja": "西門",
+      "Ko": "시먼",
+      "Zh_tw": "西門"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G12",
+    "ToStationName": {
+      "En": "Ximen",
+      "Ja": "西門",
+      "Ko": "시먼",
+      "Zh_tw": "西門"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL12",
+    "FromStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R10",
+    "ToStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TransferDescription": "",
+    "TransferTime": 4,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL14",
+    "FromStationName": {
+      "En": "Zhongxiao Xinsheng",
+      "Ja": "忠孝新生",
+      "Ko": "중샤오 신성",
+      "Zh_tw": "忠孝新生"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O07",
+    "ToStationName": {
+      "En": "Zhongxiao Xinsheng",
+      "Ja": "忠孝新生",
+      "Ko": "중샤오 신성",
+      "Zh_tw": "忠孝新生"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL15",
+    "FromStationName": {
+      "En": "Zhongxiao Fuxing",
+      "Ja": "忠孝復興",
+      "Ko": "중샤오 푸싱",
+      "Zh_tw": "忠孝復興"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BR",
+    "ToLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "ToLineNo": "BR",
+    "ToStationID": "BR10",
+    "ToStationName": {
+      "En": "Zhongxiao Fuxing",
+      "Ja": "忠孝復興",
+      "Ko": "중샤오 푸싱",
+      "Zh_tw": "忠孝復興"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BL",
+    "FromLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "FromLineNo": "BL",
+    "FromStationID": "BL23",
+    "FromStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BR",
+    "ToLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "ToLineNo": "BR",
+    "ToStationID": "BR24",
+    "ToStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BR",
+    "FromLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "FromLineNo": "BR",
+    "FromStationID": "BR09",
+    "FromStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R05",
+    "ToStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BR",
+    "FromLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "FromLineNo": "BR",
+    "FromStationID": "BR10",
+    "FromStationName": {
+      "En": "Zhongxiao Fuxing",
+      "Ja": "忠孝復興",
+      "Ko": "중샤오 푸싱",
+      "Zh_tw": "忠孝復興"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL15",
+    "ToStationName": {
+      "En": "Zhongxiao Fuxing",
+      "Ja": "忠孝復興",
+      "Ko": "중샤오 푸싱",
+      "Zh_tw": "忠孝復興"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BR",
+    "FromLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "FromLineNo": "BR",
+    "FromStationID": "BR11",
+    "FromStationName": {
+      "En": "Nanjing Fuxing",
+      "Ja": "南京復興",
+      "Ko": "난징 푸싱",
+      "Zh_tw": "南京復興"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G16",
+    "ToStationName": {
+      "En": "Nanjing Fuxing",
+      "Ja": "南京復興",
+      "Ko": "난징 푸싱",
+      "Zh_tw": "南京復興"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "BR",
+    "FromLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "FromLineNo": "BR",
+    "FromStationID": "BR24",
+    "FromStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL23",
+    "ToStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G03",
+    "FromStationName": {
+      "En": "Qizhang",
+      "Ja": "七張",
+      "Ko": "치장",
+      "Zh_tw": "七張"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G03",
+    "ToStationName": {
+      "En": "Qizhang",
+      "Ja": "七張",
+      "Ko": "치장",
+      "Zh_tw": "七張"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G04",
+    "FromStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "Y",
+    "ToLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "ToLineNo": "Y",
+    "ToStationID": "Y07",
+    "ToStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G09",
+    "FromStationName": {
+      "En": "Guting",
+      "Ja": "古亭",
+      "Ko": "구팅",
+      "Zh_tw": "古亭"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O05",
+    "ToStationName": {
+      "En": "Guting",
+      "Ja": "古亭",
+      "Ko": "구팅",
+      "Zh_tw": "古亭"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G10",
+    "FromStationName": {
+      "En": "Chiang Kai-Shek Memorial Hall",
+      "Ja": "中正紀念堂",
+      "Ko": "중정 기념당",
+      "Zh_tw": "中正紀念堂"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R08",
+    "ToStationName": {
+      "En": "Chiang Kai-Shek Memorial Hall",
+      "Ja": "中正紀念堂",
+      "Ko": "중정 기념당",
+      "Zh_tw": "中正紀念堂"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G12",
+    "FromStationName": {
+      "En": "Ximen",
+      "Ja": "西門",
+      "Ko": "시먼",
+      "Zh_tw": "西門"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL11",
+    "ToStationName": {
+      "En": "Ximen",
+      "Ja": "西門",
+      "Ko": "시먼",
+      "Zh_tw": "西門"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G14",
+    "FromStationName": {
+      "En": "Zhongshan",
+      "Ja": "中山",
+      "Ko": "중산",
+      "Zh_tw": "中山"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R11",
+    "ToStationName": {
+      "En": "Zhongshan",
+      "Ja": "中山",
+      "Ko": "중산",
+      "Zh_tw": "中山"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G15",
+    "FromStationName": {
+      "En": "Songjiang Nanjing",
+      "Ja": "松江南京",
+      "Ko": "송장 난징",
+      "Zh_tw": "松江南京"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O08",
+    "ToStationName": {
+      "En": "Songjiang Nanjing",
+      "Ja": "松江南京",
+      "Ko": "송장 난징",
+      "Zh_tw": "松江南京"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "G",
+    "FromLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "FromLineNo": "G",
+    "FromStationID": "G16",
+    "FromStationName": {
+      "En": "Nanjing Fuxing",
+      "Ja": "南京復興",
+      "Ko": "난징 푸싱",
+      "Zh_tw": "南京復興"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BR",
+    "ToLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "ToLineNo": "BR",
+    "ToStationID": "BR11",
+    "ToStationName": {
+      "En": "Nanjing Fuxing",
+      "Ja": "南京復興",
+      "Ko": "난징 푸싱",
+      "Zh_tw": "南京復興"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O02",
+    "FromStationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "Y",
+    "ToLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "ToLineNo": "Y",
+    "ToStationID": "Y11",
+    "ToStationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "TransferDescription": "",
+    "TransferTime": 6,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O05",
+    "FromStationName": {
+      "En": "Guting",
+      "Ja": "古亭",
+      "Ko": "구팅",
+      "Zh_tw": "古亭"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G09",
+    "ToStationName": {
+      "En": "Guting",
+      "Ja": "古亭",
+      "Ko": "구팅",
+      "Zh_tw": "古亭"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O06",
+    "FromStationName": {
+      "En": "Dongmen",
+      "Ja": "東門",
+      "Ko": "둥먼",
+      "Zh_tw": "東門"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R07",
+    "ToStationName": {
+      "En": "Dongmen",
+      "Ja": "東門",
+      "Ko": "둥먼",
+      "Zh_tw": "東門"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O07",
+    "FromStationName": {
+      "En": "Zhongxiao Xinsheng",
+      "Ja": "忠孝新生",
+      "Ko": "중샤오 신성",
+      "Zh_tw": "忠孝新生"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL14",
+    "ToStationName": {
+      "En": "Zhongxiao Xinsheng",
+      "Ja": "忠孝新生",
+      "Ko": "중샤오 신성",
+      "Zh_tw": "忠孝新生"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O08",
+    "FromStationName": {
+      "En": "Songjiang Nanjing",
+      "Ja": "松江南京",
+      "Ko": "송장 난징",
+      "Zh_tw": "松江南京"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G15",
+    "ToStationName": {
+      "En": "Songjiang Nanjing",
+      "Ja": "松江南京",
+      "Ko": "송장 난징",
+      "Zh_tw": "松江南京"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O11",
+    "FromStationName": {
+      "En": "Minquan W. Rd.",
+      "Ja": "民権西路",
+      "Ko": "민취안시루",
+      "Zh_tw": "民權西路"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R13",
+    "ToStationName": {
+      "En": "Minquan W. Rd.",
+      "Ja": "民権西路",
+      "Ko": "민취안시루",
+      "Zh_tw": "民權西路"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O12",
+    "FromStationName": {
+      "En": "Daqiaotou",
+      "Ja": "大橋頭",
+      "Ko": "다차오터우",
+      "Zh_tw": "大橋頭"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O12",
+    "ToStationName": {
+      "En": "Daqiaotou",
+      "Ja": "大橋頭",
+      "Ko": "다차오터우",
+      "Zh_tw": "大橋頭"
+    },
+    "TransferDescription": "",
+    "TransferTime": 1,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O17",
+    "FromStationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "Y",
+    "ToLineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "ToLineNo": "Y",
+    "ToStationID": "Y18",
+    "ToStationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "TransferDescription": "",
+    "TransferTime": 6,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R05",
+    "FromStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BR",
+    "ToLineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "ToLineNo": "BR",
+    "ToStationID": "BR09",
+    "ToStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "TransferDescription": "",
+    "TransferTime": 5,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R07",
+    "FromStationName": {
+      "En": "Dongmen",
+      "Ja": "東門",
+      "Ko": "둥먼",
+      "Zh_tw": "東門"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O06",
+    "ToStationName": {
+      "En": "Dongmen",
+      "Ja": "東門",
+      "Ko": "둥먼",
+      "Zh_tw": "東門"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R08",
+    "FromStationName": {
+      "En": "Chiang Kai-Shek Memorial Hall",
+      "Ja": "中正紀念堂",
+      "Ko": "중정 기념당",
+      "Zh_tw": "中正紀念堂"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G10",
+    "ToStationName": {
+      "En": "Chiang Kai-Shek Memorial Hall",
+      "Ja": "中正紀念堂",
+      "Ko": "중정 기념당",
+      "Zh_tw": "中正紀念堂"
+    },
+    "TransferDescription": "",
+    "TransferTime": 2,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R10",
+    "FromStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "BL",
+    "ToLineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "ToLineNo": "BL",
+    "ToStationID": "BL12",
+    "ToStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TransferDescription": "",
+    "TransferTime": 4,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R11",
+    "FromStationName": {
+      "En": "Zhongshan",
+      "Ja": "中山",
+      "Ko": "중산",
+      "Zh_tw": "中山"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "G",
+    "ToLineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "ToLineNo": "G",
+    "ToStationID": "G14",
+    "ToStationName": {
+      "En": "Zhongshan",
+      "Ja": "中山",
+      "Ko": "중산",
+      "Zh_tw": "中山"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R13",
+    "FromStationName": {
+      "En": "Minquan W. Rd.",
+      "Ja": "民権西路",
+      "Ko": "민취안시루",
+      "Zh_tw": "民權西路"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O11",
+    "ToStationName": {
+      "En": "Minquan W. Rd.",
+      "Ja": "民権西路",
+      "Ko": "민취안시루",
+      "Zh_tw": "民權西路"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R22",
+    "FromStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "IsOnSiteTransfer": 1,
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R22",
+    "ToStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "TransferDescription": "",
+    "TransferTime": 3,
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  }
+]

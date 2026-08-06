@@ -1,0 +1,260 @@
+[
+  {
+    "LineID": "Y",
+    "LineNo": "Y",
+    "RouteID": "Y-1",
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "TrainType": 1,
+    "TravelTimes": [
+      {
+        "FromStationID": "Y20",
+        "FromStationName": {
+          "En": "New Taipei Industrial Park",
+          "Ja": "新北産業園区",
+          "Ko": "신베이 산업원 단지",
+          "Zh_tw": "新北產業園區"
+        },
+        "RunTime": 135,
+        "Sequence": 1,
+        "StopTime": 0,
+        "ToStationID": "Y19",
+        "ToStationName": {
+          "En": "Xingfu",
+          "Ja": "幸福",
+          "Ko": "씽푸",
+          "Zh_tw": "幸福"
+        }
+      },
+      {
+        "FromStationID": "Y19",
+        "FromStationName": {
+          "En": "Xingfu",
+          "Ja": "幸福",
+          "Ko": "씽푸",
+          "Zh_tw": "幸福"
+        },
+        "RunTime": 95,
+        "Sequence": 2,
+        "StopTime": 23,
+        "ToStationID": "Y18",
+        "ToStationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        }
+      },
+      {
+        "FromStationID": "Y18",
+        "FromStationName": {
+          "En": "Touqianzhuang",
+          "Ja": "頭前庄",
+          "Ko": "터우첸좡",
+          "Zh_tw": "頭前庄"
+        },
+        "RunTime": 143,
+        "Sequence": 3,
+        "StopTime": 35,
+        "ToStationID": "Y17",
+        "ToStationName": {
+          "En": "Xinpu Minsheng",
+          "Ja": "新埔民生",
+          "Ko": "신푸민셩",
+          "Zh_tw": "新埔民生"
+        }
+      },
+      {
+        "FromStationID": "Y17",
+        "FromStationName": {
+          "En": "Xinpu Minsheng",
+          "Ja": "新埔民生",
+          "Ko": "신푸민셩",
+          "Zh_tw": "新埔民生"
+        },
+        "RunTime": 191,
+        "Sequence": 4,
+        "StopTime": 25,
+        "ToStationID": "Y16",
+        "ToStationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        }
+      },
+      {
+        "FromStationID": "Y16",
+        "FromStationName": {
+          "En": "Banqiao",
+          "Ja": "板橋",
+          "Ko": "반차오",
+          "Zh_tw": "板橋"
+        },
+        "RunTime": 153,
+        "Sequence": 5,
+        "StopTime": 40,
+        "ToStationID": "Y15",
+        "ToStationName": {
+          "En": "Banxin",
+          "Ja": "板新",
+          "Ko": "반신",
+          "Zh_tw": "板新"
+        }
+      },
+      {
+        "FromStationID": "Y15",
+        "FromStationName": {
+          "En": "Banxin",
+          "Ja": "板新",
+          "Ko": "반신",
+          "Zh_tw": "板新"
+        },
+        "RunTime": 111,
+        "Sequence": 6,
+        "StopTime": 25,
+        "ToStationID": "Y14",
+        "ToStationName": {
+          "En": "Zhongyuan",
+          "Ja": "中原",
+          "Ko": "중위엔",
+          "Zh_tw": "中原"
+        }
+      },
+      {
+        "FromStationID": "Y14",
+        "FromStationName": {
+          "En": "Zhongyuan",
+          "Ja": "中原",
+          "Ko": "중위엔",
+          "Zh_tw": "中原"
+        },
+        "RunTime": 72,
+        "Sequence": 7,
+        "StopTime": 25,
+        "ToStationID": "Y13",
+        "ToStationName": {
+          "En": "Qiaohe",
+          "Ja": "橋和",
+          "Ko": "챠오허",
+          "Zh_tw": "橋和"
+        }
+      },
+      {
+        "FromStationID": "Y13",
+        "FromStationName": {
+          "En": "Qiaohe",
+          "Ja": "橋和",
+          "Ko": "챠오허",
+          "Zh_tw": "橋和"
+        },
+        "RunTime": 104,
+        "Sequence": 8,
+        "StopTime": 25,
+        "ToStationID": "Y12",
+        "ToStationName": {
+          "En": "Zhonghe",
+          "Ja": "中和",
+          "Ko": "중허",
+          "Zh_tw": "中和"
+        }
+      },
+      {
+        "FromStationID": "Y12",
+        "FromStationName": {
+          "En": "Zhonghe",
+          "Ja": "中和",
+          "Ko": "중허",
+          "Zh_tw": "中和"
+        },
+        "RunTime": 194,
+        "Sequence": 9,
+        "StopTime": 25,
+        "ToStationID": "Y11",
+        "ToStationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        }
+      },
+      {
+        "FromStationID": "Y11",
+        "FromStationName": {
+          "En": "Jingan",
+          "Ja": "景安",
+          "Ko": "징안",
+          "Zh_tw": "景安"
+        },
+        "RunTime": 84,
+        "Sequence": 10,
+        "StopTime": 35,
+        "ToStationID": "Y10",
+        "ToStationName": {
+          "En": "Jingping",
+          "Ja": "景平",
+          "Ko": "징핑",
+          "Zh_tw": "景平"
+        }
+      },
+      {
+        "FromStationID": "Y10",
+        "FromStationName": {
+          "En": "Jingping",
+          "Ja": "景平",
+          "Ko": "징핑",
+          "Zh_tw": "景平"
+        },
+        "RunTime": 79,
+        "Sequence": 11,
+        "StopTime": 25,
+        "ToStationID": "Y09",
+        "ToStationName": {
+          "En": "Xiulang Bridge",
+          "Ja": "秀朗橋",
+          "Ko": "시우랑챠오",
+          "Zh_tw": "秀朗橋"
+        }
+      },
+      {
+        "FromStationID": "Y09",
+        "FromStationName": {
+          "En": "Xiulang Bridge",
+          "Ja": "秀朗橋",
+          "Ko": "시우랑챠오",
+          "Zh_tw": "秀朗橋"
+        },
+        "RunTime": 111,
+        "Sequence": 12,
+        "StopTime": 23,
+        "ToStationID": "Y08",
+        "ToStationName": {
+          "En": "Shisizhang",
+          "Ja": "十四張",
+          "Ko": "스쓰장",
+          "Zh_tw": "十四張"
+        }
+      },
+      {
+        "FromStationID": "Y08",
+        "FromStationName": {
+          "En": "Shisizhang",
+          "Ja": "十四張",
+          "Ko": "스쓰장",
+          "Zh_tw": "十四張"
+        },
+        "RunTime": 145,
+        "Sequence": 13,
+        "StopTime": 23,
+        "ToStationID": "Y07",
+        "ToStationName": {
+          "En": "Dapinglin",
+          "Ja": "大坪林",
+          "Ko": "다핑린",
+          "Zh_tw": "大坪林"
+        }
+      }
+    ],
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

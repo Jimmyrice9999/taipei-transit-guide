@@ -1,0 +1,5762 @@
+[
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:30",
+    "LastTrainTime": "23:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:38",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:38",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:30",
+    "LastTrainTime": "23:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:15",
+    "LastTrainTime": "19:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:00",
+    "LastTrainTime": "18:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A1",
+    "StationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "23:44",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "23:44",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:20",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:20",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A10",
+    "StationName": {
+      "En": "Shanbi Station",
+      "Ja": "山鼻駅",
+      "Ko": "샨비 역",
+      "Zh_tw": "山鼻站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:41",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:41",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:23",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:23",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:53",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:53",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A11",
+    "StationName": {
+      "En": "Kengkou Station",
+      "Ja": "坑口駅",
+      "Ko": "컹커우역",
+      "Zh_tw": "坑口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "22:58",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:37",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:37",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "22:58",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "00:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:39",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "00:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:39",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:22",
+    "LastTrainTime": "19:37",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:37",
+    "LastTrainTime": "18:37",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "23:57",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "23:57",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A12",
+    "StationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:55",
+    "LastTrainTime": "22:55",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "23:35",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:55",
+    "LastTrainTime": "22:55",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "23:35",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:26",
+    "LastTrainTime": "19:41",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:41",
+    "LastTrainTime": "18:41",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:59",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:59",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A13",
+    "StationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:31",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:31",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:02",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:02",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A14a",
+    "StationName": {
+      "En": "Airport Hotel Station",
+      "Ja": "空港ホテル駅",
+      "Ko": "공항호텔 역",
+      "Zh_tw": "機場旅館站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "23:28",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "23:28",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "00:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "00:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:05",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:05",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A15",
+    "StationName": {
+      "En": "Dayuan Station",
+      "Ja": "大園駅",
+      "Ko": "다위안 역",
+      "Zh_tw": "大園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:24",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:24",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:11",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:11",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A16",
+    "StationName": {
+      "En": "Hengshan Station",
+      "Ja": "橫山駅",
+      "Ko": "항산 역",
+      "Zh_tw": "橫山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "23:21",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "23:21",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:08",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "00:11",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:12",
+    "LastTrainTime": "00:11",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A17",
+    "StationName": {
+      "En": "Linghang Station",
+      "Ja": "領航駅",
+      "Ko": "링항 역",
+      "Zh_tw": "領航站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "07:26",
+    "LastTrainTime": "20:26",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:47",
+    "LastTrainTime": "23:17",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:47",
+    "LastTrainTime": "23:17",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "14:26",
+    "LastTrainTime": "19:26",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:47",
+    "LastTrainTime": "00:04",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:47",
+    "LastTrainTime": "00:04",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:39",
+    "LastTrainTime": "19:54",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:54",
+    "LastTrainTime": "18:54",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A18",
+    "StationName": {
+      "En": "Taoyuan HSR Station",
+      "Ja": "高鉄桃園駅",
+      "Ko": "타오위안 고속철도 역",
+      "Zh_tw": "高鐵桃園站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "23:14",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "23:14",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "00:01",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "00:01",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A19",
+    "StationName": {
+      "En": "Taoyuan Sports Park Station",
+      "Ja": "桃園体育園区駅",
+      "Ko": "타오위안 체육 공원 역",
+      "Zh_tw": "桃園體育園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:18",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "23:46",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "23:46",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "23:16",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "23:16",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A2",
+    "StationName": {
+      "En": "Sanchong Station",
+      "Ja": "三重駅",
+      "Ko": "싼충 역",
+      "Zh_tw": "三重站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:09",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:09",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:56",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "23:56",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "00:23",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "00:23",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A20",
+    "StationName": {
+      "En": "Xingnan Station",
+      "Ja": "興南駅",
+      "Ko": "싱난 역",
+      "Zh_tw": "興南站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "07:15",
+    "LastTrainTime": "20:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:35",
+    "LastTrainTime": "23:05",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "14:15",
+    "LastTrainTime": "19:15",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:35",
+    "LastTrainTime": "23:05",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:35",
+    "LastTrainTime": "23:52",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:35",
+    "LastTrainTime": "23:52",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "00:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:14",
+    "LastTrainTime": "00:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A21",
+    "StationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:33",
+    "LastTrainTime": "23:03",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A22",
+    "StationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:33",
+    "LastTrainTime": "23:03",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A22",
+    "StationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:33",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A22",
+    "StationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A12",
+    "DestinationStationName": {
+      "En": "Airport Terminal 1 Station",
+      "Ja": "空港第1ターミナル駅",
+      "Ko": "공항 터미널 1 역",
+      "Zh_tw": "機場第一航廈站"
+    },
+    "FirstTrainTime": "05:33",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A22",
+    "StationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第一航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:14",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:14",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:40",
+    "LastTrainTime": "23:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "23:50",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:40",
+    "LastTrainTime": "23:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:25",
+    "LastTrainTime": "19:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:10",
+    "LastTrainTime": "18:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "23:20",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "23:20",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A3",
+    "StationName": {
+      "En": "New Taipei Industrial Park Station",
+      "Ja": "新北産業園区駅",
+      "Ko": "뉴 타이베이 산업 단지 역",
+      "Zh_tw": "新北產業園區站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "00:12",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:59",
+    "LastTrainTime": "00:12",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:52",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:52",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "23:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A4",
+    "StationName": {
+      "En": "Xinzhuang Fuduxin Station",
+      "Ja": "新荘副都心駅",
+      "Ko": "신좡 부도심 역",
+      "Zh_tw": "新莊副都心站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "00:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:57",
+    "LastTrainTime": "00:10",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:54",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:54",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:24",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "23:24",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A5",
+    "StationName": {
+      "En": "Taishan Station",
+      "Ja": "泰山駅",
+      "Ko": "타이산 역",
+      "Zh_tw": "泰山站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:07",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:09",
+    "LastTrainTime": "00:07",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "23:57",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "23:57",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "23:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:10",
+    "LastTrainTime": "23:27",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A6",
+    "StationName": {
+      "En": "Taishan Guihe Station",
+      "Ja": "泰山貴和駅",
+      "Ko": "타이산 구이허",
+      "Zh_tw": "泰山貴和站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:00",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:02",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:02",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:32",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "23:32",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A7",
+    "StationName": {
+      "En": "National Taiwan Sport University Station",
+      "Ja": "体育大学駅",
+      "Ko": "국립 체육대학교 역",
+      "Zh_tw": "體育大學站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:56",
+    "LastTrainTime": "23:13",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "23:56",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:58",
+    "LastTrainTime": "23:56",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "05:56",
+    "LastTrainTime": "23:13",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:52",
+    "LastTrainTime": "23:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:06",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "00:06",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "05:52",
+    "LastTrainTime": "23:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "06:07",
+    "LastTrainTime": "19:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A21",
+    "DestinationStationName": {
+      "En": "Huanbei Station",
+      "Ja": "環北駅",
+      "Ko": "환베이 역",
+      "Zh_tw": "環北站"
+    },
+    "FirstTrainTime": "13:22",
+    "LastTrainTime": "18:22",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往環北站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:36",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:08",
+    "LastTrainTime": "23:36",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A8",
+    "StationName": {
+      "En": "Chang Gung Memorial Hospital Station",
+      "Ja": "長庚病院駅",
+      "Ko": "창컹병원 역",
+      "Zh_tw": "長庚醫院站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "23:53",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A1",
+    "DestinationStationName": {
+      "En": "Taipei Main Station",
+      "Ja": "台北駅",
+      "Ko": "타이베이 역",
+      "Zh_tw": "台北車站"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "23:53",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往台北車站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "00:09",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A13",
+    "DestinationStationName": {
+      "En": "Airport Terminal 2 Station",
+      "Ja": "空港第2ターミナル駅",
+      "Ko": "공항 터미널 2 역",
+      "Zh_tw": "機場第二航廈站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "00:09",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往機場第二航廈站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:39",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": false,
+      "Saturday": false,
+      "ServiceTag": "平日",
+      "Sunday": false,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  },
+  {
+    "DestinationStaionID": "A22",
+    "DestinationStationName": {
+      "En": "Laojie River Station",
+      "Ja": "老街溪駅",
+      "Ko": "라오제시 역",
+      "Zh_tw": "老街溪站"
+    },
+    "FirstTrainTime": "06:11",
+    "LastTrainTime": "23:39",
+    "LineID": "A",
+    "LineNo": "A",
+    "ServiceDay": {
+      "Friday": false,
+      "Monday": false,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "ServiceTag": "假日",
+      "Sunday": true,
+      "Thursday": false,
+      "Tuesday": false,
+      "Wednesday": false
+    },
+    "SrcUpdateTime": "2026-08-05T03:38:22+08:00",
+    "StationID": "A9",
+    "StationName": {
+      "En": "Linkou Station",
+      "Ja": "林口駅",
+      "Ko": "린커우 역",
+      "Zh_tw": "林口站"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往老街溪站",
+    "UpdateTime": "2026-08-05T08:38:23+08:00",
+    "VersionID": 1021
+  }
+]

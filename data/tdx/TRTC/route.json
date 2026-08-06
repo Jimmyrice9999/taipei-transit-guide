@@ -1,0 +1,684 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "BL23",
+    "EndStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "LineID": "BL",
+    "LineNo": "BL",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BL-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Dingpu - Taipei Nangang Exhibition Center",
+      "Zh_tw": "頂埔－南港展覽館"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BL01",
+    "StartStationName": {
+      "En": "Dingpu",
+      "Ja": "頂埔",
+      "Ko": "딩푸",
+      "Zh_tw": "頂埔"
+    },
+    "TravelTime": 48,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "BL01",
+    "EndStationName": {
+      "En": "Dingpu",
+      "Ja": "頂埔",
+      "Ko": "딩푸",
+      "Zh_tw": "頂埔"
+    },
+    "LineID": "BL",
+    "LineNo": "BL",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BL-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Dingpu",
+      "Zh_tw": "南港展覽館－頂埔"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BL23",
+    "StartStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "TravelTime": 48,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "BL23",
+    "EndStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "LineID": "BL",
+    "LineNo": "BL",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BL-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Far Eastern Hospital - Taipei Nangang Exhibition Center",
+      "Zh_tw": "亞東醫院－南港展覽館"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BL05",
+    "StartStationName": {
+      "En": "Far Eastern Hospital",
+      "Ja": "亜東病院",
+      "Ko": "야둥 병원",
+      "Zh_tw": "亞東醫院"
+    },
+    "TravelTime": 38,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "BL05",
+    "EndStationName": {
+      "En": "Far Eastern Hospital",
+      "Ja": "亜東病院",
+      "Ko": "야둥 병원",
+      "Zh_tw": "亞東醫院"
+    },
+    "LineID": "BL",
+    "LineNo": "BL",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BL-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Far Eastern Hospital",
+      "Zh_tw": "南港展覽館－亞東醫院"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BL23",
+    "StartStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "TravelTime": 38,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "BR24",
+    "EndStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "LineID": "BR",
+    "LineNo": "BR",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BR-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Taipei Zoo - Taipei Nangang Exhibition Center",
+      "Zh_tw": "動物園－南港展覽館"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BR01",
+    "StartStationName": {
+      "En": "Taipei Zoo",
+      "Ja": "動物園",
+      "Ko": "동물원",
+      "Zh_tw": "動物園"
+    },
+    "TravelTime": 45,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "BR01",
+    "EndStationName": {
+      "En": "Taipei Zoo",
+      "Ja": "動物園",
+      "Ko": "동물원",
+      "Zh_tw": "動物園"
+    },
+    "LineID": "BR",
+    "LineNo": "BR",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "BR-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Taipei Nangang Exhibition Center - Taipei Zoo",
+      "Zh_tw": "南港展覽館－動物園"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "BR24",
+    "StartStationName": {
+      "En": "Taipei Nangang Exhibition Center",
+      "Ja": "南港展覧館",
+      "Ko": "난강 전람관",
+      "Zh_tw": "南港展覽館"
+    },
+    "TravelTime": 45,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "G19",
+    "EndStationName": {
+      "En": "Songshan",
+      "Ja": "松山",
+      "Ko": "송산",
+      "Zh_tw": "松山"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Xindian - Songshan",
+      "Zh_tw": "新店－松山"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G01",
+    "StartStationName": {
+      "En": "Xindian",
+      "Ja": "新店",
+      "Ko": "신뎬",
+      "Zh_tw": "新店"
+    },
+    "TravelTime": 37,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "G01",
+    "EndStationName": {
+      "En": "Xindian",
+      "Ja": "新店",
+      "Ko": "신뎬",
+      "Zh_tw": "新店"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Songshan - Xindian",
+      "Zh_tw": "松山－新店"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G19",
+    "StartStationName": {
+      "En": "Songshan",
+      "Ja": "松山",
+      "Ko": "송산",
+      "Zh_tw": "松山"
+    },
+    "TravelTime": 37,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "G19",
+    "EndStationName": {
+      "En": "Songshan",
+      "Ja": "松山",
+      "Ko": "송산",
+      "Zh_tw": "松山"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Taipower Building - Songshan",
+      "Zh_tw": "台電大樓－松山"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G08",
+    "StartStationName": {
+      "En": "Taipower Building",
+      "Ja": "台湾電力ビル",
+      "Ko": "대만 전력공사 빌딩",
+      "Zh_tw": "台電大樓"
+    },
+    "TravelTime": 23,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "G08",
+    "EndStationName": {
+      "En": "Taipower Building",
+      "Ja": "台湾電力ビル",
+      "Ko": "대만 전력공사 빌딩",
+      "Zh_tw": "台電大樓"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Songshan - Taipower Building",
+      "Zh_tw": "松山－台電大樓"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G19",
+    "StartStationName": {
+      "En": "Songshan",
+      "Ja": "松山",
+      "Ko": "송산",
+      "Zh_tw": "松山"
+    },
+    "TravelTime": 23,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "G03A",
+    "EndStationName": {
+      "En": "Xiaobitan",
+      "Ja": "小碧潭",
+      "Ko": "샤오비탄",
+      "Zh_tw": "小碧潭"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-3",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Qizhang - Xiaobitan",
+      "Zh_tw": "七張－小碧潭"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G03",
+    "StartStationName": {
+      "En": "Qizhang",
+      "Ja": "七張",
+      "Ko": "치장",
+      "Zh_tw": "七張"
+    },
+    "TravelTime": 4,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "G03",
+    "EndStationName": {
+      "En": "Qizhang",
+      "Ja": "七張",
+      "Ko": "치장",
+      "Zh_tw": "七張"
+    },
+    "LineID": "G",
+    "LineNo": "G",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "G-3",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Xiaobitan - Qizhang",
+      "Zh_tw": "小碧潭－七張"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "G03A",
+    "StartStationName": {
+      "En": "Xiaobitan",
+      "Ja": "小碧潭",
+      "Ko": "샤오비탄",
+      "Zh_tw": "小碧潭"
+    },
+    "TravelTime": 4,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "O21",
+    "EndStationName": {
+      "En": "Huilong",
+      "Ja": "迴龍",
+      "Ko": "후이룽",
+      "Zh_tw": "迴龍"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "O-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Nanshijiao - Huilong",
+      "Zh_tw": "南勢角－迴龍"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "O01",
+    "StartStationName": {
+      "En": "Nanshijiao",
+      "Ja": "南勢角",
+      "Ko": "난스자오",
+      "Zh_tw": "南勢角"
+    },
+    "TravelTime": 48,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "O01",
+    "EndStationName": {
+      "En": "Nanshijiao",
+      "Ja": "南勢角",
+      "Ko": "난스자오",
+      "Zh_tw": "南勢角"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "O-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Huilong - Nanshijiao",
+      "Zh_tw": "迴龍－南勢角"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "O21",
+    "StartStationName": {
+      "En": "Huilong",
+      "Ja": "迴龍",
+      "Ko": "후이룽",
+      "Zh_tw": "迴龍"
+    },
+    "TravelTime": 48,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "O54",
+    "EndStationName": {
+      "En": "Luzhou",
+      "Ja": "蘆洲",
+      "Ko": "루저우",
+      "Zh_tw": "蘆洲"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "O-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Nanshijiao - Luzhou",
+      "Zh_tw": "南勢角－蘆洲"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "O01",
+    "StartStationName": {
+      "En": "Nanshijiao",
+      "Ja": "南勢角",
+      "Ko": "난스자오",
+      "Zh_tw": "南勢角"
+    },
+    "TravelTime": 38,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "O01",
+    "EndStationName": {
+      "En": "Nanshijiao",
+      "Ja": "南勢角",
+      "Ko": "난스자오",
+      "Zh_tw": "南勢角"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "O-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Luzhou - Nanshijiao",
+      "Zh_tw": "蘆洲－南勢角"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "O54",
+    "StartStationName": {
+      "En": "Luzhou",
+      "Ja": "蘆洲",
+      "Ko": "루저우",
+      "Zh_tw": "蘆洲"
+    },
+    "TravelTime": 38,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "R28",
+    "EndStationName": {
+      "En": "Tamsui",
+      "Ja": "淡水",
+      "Ko": "단수이",
+      "Zh_tw": "淡水"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Xiangs - Tamsui",
+      "Zh_tw": "象山－淡水"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R02",
+    "StartStationName": {
+      "En": "Xiangshan",
+      "Ja": "象山",
+      "Ko": "샹산",
+      "Zh_tw": "象山"
+    },
+    "TravelTime": 54,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "R02",
+    "EndStationName": {
+      "En": "Xiangshan",
+      "Ja": "象山",
+      "Ko": "샹산",
+      "Zh_tw": "象山"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-1",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Tamsui - Xiangs",
+      "Zh_tw": "淡水－象山"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R28",
+    "StartStationName": {
+      "En": "Tamsui",
+      "Ja": "淡水",
+      "Ko": "단수이",
+      "Zh_tw": "淡水"
+    },
+    "TravelTime": 54,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "R22",
+    "EndStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Daan - Beitou",
+      "Zh_tw": "大安－北投"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R05",
+    "StartStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "TravelTime": 32,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "R05",
+    "EndStationName": {
+      "En": "Daan",
+      "Ja": "大安",
+      "Ko": "다안",
+      "Zh_tw": "大安"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-2",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Beitou - Daan",
+      "Zh_tw": "北投－大安"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R22",
+    "StartStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "TravelTime": 32,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "R22A",
+    "EndStationName": {
+      "En": "Xinbeitou",
+      "Ja": "新北投",
+      "Ko": "신베이터우",
+      "Zh_tw": "新北投"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-3",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Beitou - Xinbeitou",
+      "Zh_tw": "北投－新北投"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R22",
+    "StartStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "TravelTime": 4,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "R22",
+    "EndStationName": {
+      "En": "Beitou",
+      "Ja": "北投",
+      "Ko": "베이터우",
+      "Zh_tw": "北投"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "TRTC",
+    "RailRouteType": 33,
+    "RouteID": "R-3",
+    "RouteLength": 0,
+    "RouteName": {
+      "En": "Xinbeitou - Beitou",
+      "Zh_tw": "新北投－北投"
+    },
+    "SrcUpdateTime": "2022-05-23T00:00:00+08:00",
+    "StartStationID": "R22A",
+    "StartStationName": {
+      "En": "Xinbeitou",
+      "Ja": "新北投",
+      "Ko": "신베이터우",
+      "Zh_tw": "新北投"
+    },
+    "TravelTime": 4,
+    "UpdateTime": "2022-05-23T08:00:00+08:00",
+    "VersionID": 3
+  }
+]

@@ -1,0 +1,912 @@
+[
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y07",
+    "StationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:30",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y08",
+    "StationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y08",
+    "StationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:27",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y09",
+    "StationName": {
+      "En": "Xiulang Bridge",
+      "Ja": "秀朗橋",
+      "Ko": "시우랑챠오",
+      "Zh_tw": "秀朗橋"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:04",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y09",
+    "StationName": {
+      "En": "Xiulang Bridge",
+      "Ja": "秀朗橋",
+      "Ko": "시우랑챠오",
+      "Zh_tw": "秀朗橋"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:26",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y10",
+    "StationName": {
+      "En": "Jingping",
+      "Ja": "景平",
+      "Ko": "징핑",
+      "Zh_tw": "景平"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:06",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y10",
+    "StationName": {
+      "En": "Jingping",
+      "Ja": "景平",
+      "Ko": "징핑",
+      "Zh_tw": "景平"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:24",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y11",
+    "StationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:08",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y11",
+    "StationName": {
+      "En": "Jingan",
+      "Ja": "景安",
+      "Ko": "징안",
+      "Zh_tw": "景安"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:20",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y12",
+    "StationName": {
+      "En": "Zhonghe",
+      "Ja": "中和",
+      "Ko": "중허",
+      "Zh_tw": "中和"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:05",
+    "LastTrainTime": "00:12",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y12",
+    "StationName": {
+      "En": "Zhonghe",
+      "Ja": "中和",
+      "Ko": "중허",
+      "Zh_tw": "中和"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:18",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y13",
+    "StationName": {
+      "En": "Qiaohe",
+      "Ja": "橋和",
+      "Ko": "챠오허",
+      "Zh_tw": "橋和"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:14",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y13",
+    "StationName": {
+      "En": "Qiaohe",
+      "Ja": "橋和",
+      "Ko": "챠오허",
+      "Zh_tw": "橋和"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:16",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y14",
+    "StationName": {
+      "En": "Zhongyuan",
+      "Ja": "中原",
+      "Ko": "중위엔",
+      "Zh_tw": "中原"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:01",
+    "LastTrainTime": "00:16",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y14",
+    "StationName": {
+      "En": "Zhongyuan",
+      "Ja": "中原",
+      "Ko": "중위엔",
+      "Zh_tw": "中原"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:14",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y15",
+    "StationName": {
+      "En": "Banxin",
+      "Ja": "板新",
+      "Ko": "반신",
+      "Zh_tw": "板新"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:18",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y15",
+    "StationName": {
+      "En": "Banxin",
+      "Ja": "板新",
+      "Ko": "반신",
+      "Zh_tw": "板新"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:11",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y16",
+    "StationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:21",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y16",
+    "StationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:07",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y17",
+    "StationName": {
+      "En": "Xinpu Minsheng",
+      "Ja": "新埔民生",
+      "Ko": "신푸민셩",
+      "Zh_tw": "新埔民生"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:03",
+    "LastTrainTime": "00:25",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y17",
+    "StationName": {
+      "En": "Xinpu Minsheng",
+      "Ja": "新埔民生",
+      "Ko": "신푸민셩",
+      "Zh_tw": "新埔民生"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:04",
+    "LastTrainTime": "00:04",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y18",
+    "StationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:06",
+    "LastTrainTime": "00:28",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y18",
+    "StationName": {
+      "En": "Touqianzhuang",
+      "Ja": "頭前庄",
+      "Ko": "터우첸좡",
+      "Zh_tw": "頭前庄"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:02",
+    "LastTrainTime": "00:02",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y19",
+    "StationName": {
+      "En": "Xingfu",
+      "Ja": "幸福",
+      "Ko": "씽푸",
+      "Zh_tw": "幸福"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y20",
+    "DestinationStationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:30",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y19",
+    "StationName": {
+      "En": "Xingfu",
+      "Ja": "幸福",
+      "Ko": "씽푸",
+      "Zh_tw": "幸福"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往新北產業園區",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  },
+  {
+    "DestinationStaionID": "Y07",
+    "DestinationStationName": {
+      "En": "Dapinglin",
+      "Ja": "大坪林",
+      "Ko": "다핑린",
+      "Zh_tw": "大坪林"
+    },
+    "FirstTrainTime": "06:00",
+    "LastTrainTime": "00:00",
+    "LineID": "Y",
+    "LineNo": "Y",
+    "ServiceDay": {
+      "Friday": true,
+      "Monday": true,
+      "NationalHolidays": true,
+      "Saturday": true,
+      "Sunday": true,
+      "Thursday": true,
+      "Tuesday": true,
+      "Wednesday": true
+    },
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "StationID": "Y20",
+    "StationName": {
+      "En": "New Taipei Industrial Park",
+      "Ja": "新北産業園区",
+      "Ko": "신베이 산업원 단지",
+      "Zh_tw": "新北產業園區"
+    },
+    "TrainType": 0,
+    "TripHeadSign": "往大坪林",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

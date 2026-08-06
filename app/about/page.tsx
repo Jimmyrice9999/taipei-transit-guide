@@ -1,0 +1,207 @@
+/**
+ * /about — what this site is, who made it, and how it sources material.
+ *
+ * A hand-built route rather than a content page, because it belongs at the root
+ * rather than under a section, and because the sourcing policy should live
+ * beside the code that enforces it rather than in a Markdown file that could
+ * drift away from what the build actually does.
+ *
+ * Register: plain. A reference site earns trust by being specific about its
+ * limits, not by describing its mission.
+ */
+
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import PageShell from '@/components/PageShell'
+import { NEUTRAL_LINE } from '@/lib/lines'
+import { PROVENANCE, STATIONS } from '@/lib/stations'
+import { LINES } from '@/lib/lines'
+import { getAllPages } from '@/lib/content'
+
+export const metadata: Metadata = {
+  // Without an explicit canonical this page inherits the root layout's,
+  // which declares '/' — telling search engines this page is really the
+  // homepage, and that it should not be indexed in its own right.
+  alternates: { canonical: '/about/' },
+  title: 'About',
+  description:
+    'What this site is, what it covers so far, how it sources material, and how to report a correction.',
+}
+
+export default function AboutPage() {
+  const written = getAllPages().length
+  const stubs = getAllPages().filter((p) => p.stub).length
+
+  return (
+    <PageShell accent={NEUTRAL_LINE}>
+      <h1 className="page-title">About</h1>
+      <p className="page-summary">
+        An English-language reference for public transport in Taipei, written because
+        the material exists in Mandarin and nowhere else in a form you can look
+        something up in.
+      </p>
+
+      <div className="page-body">
+        <h2 className="section-heading">What this is</h2>
+        <p>
+          Taipei's transport network is unusually well documented — in Mandarin. Between{' '}
+          <span lang="zh-Hant">批踢踢</span> (PTT), Mobile01 and the Chinese Wikipedia there
+          is detailed, argued-over coverage of rolling stock, depot allocations, signalling
+          contracts and construction history. Some of it is better than anything published
+          officially.
+        </p>
+        <p>
+          In English there is an encyclopedia article per line and a great deal of
+          visitor-facing advice about which exit to use. What is missing is the layer in
+          between: structured reference material you can look a fact up in, with the
+          source attached. That gap is what this site is for.
+        </p>
+        <p>
+          It is independent and non-commercial. It is not affiliated with Taipei Rapid
+          Transit Corporation, New Taipei Metro, Taoyuan Metro, the Taipei City Government
+          or any bus operator, and it carries no advertising.
+        </p>
+
+        <h2 className="section-heading">How it sources material</h2>
+
+        <h3>Official data where it exists</h3>
+        <p>
+          Station names, codes, running order, coordinates, interchanges, route lengths and
+          end-to-end times come from{' '}
+          <a href={PROVENANCE.sourceUrl} rel="noreferrer">
+            TDX
+          </a>
+          , the Ministry of Transportation and Communications' open data platform. So do the
+          line colours — all {LINES.length} of them, from the publishing operator's own line
+          record. None of it is transcribed by hand, and the pipeline that reads it is
+          committed to the repository, so the same figures come out for anyone who runs it.
+        </p>
+        <p>
+          That decision has already paid for itself twice. Every English-language line
+          colour we could find was wrong, including two cases where a confident correction
+          citing an official map moved <em>away</em> from the official value — the working
+          is on <Link href="/data/line-colours/">the colours page</Link>. And the route
+          length this site published was 1.4 km too long, because it measured geometry that
+          runs past both termini into depot leads, while the operator's own figure sat
+          unread in a field nobody had looked in.
+        </p>
+
+        <h3>Mandarin sources, synthesised rather than translated</h3>
+        <p>
+          Where official data stops — fleet histories, depot facilities, the Matra contract
+          dispute, why a line was built the way it was — the material is in Mandarin. The
+          policy is to read it, cross-check it, and write it in English from scratch, citing
+          the original in its own language rather than an English mirror of it. Translating
+          a forum thread wholesale would be both a copyright problem and a way of importing
+          its errors without noticing them.
+        </p>
+        <p>
+          Where sources disagree, the intention is to record every value rather than pick
+          the most plausible one and present it as settled.
+        </p>
+
+        <h3>TBC rather than a guess</h3>
+        <p>
+          A figure marked <em>TBC</em> means nobody here has traced it to a source worth
+          citing. It does not mean the number is unknown to the world. It would be easy to
+          fill those gaps with figures that are probably right, and the site would look
+          more finished; it would also stop being usable as a reference, because you could
+          no longer tell which numbers had been checked.
+        </p>
+        <p>
+          The same applies structurally. The <Link href="/bus/">bus section</Link> is empty
+          and says so rather than being hidden. Where a figure has been settled since — the
+          two underground Wenhu stations were marked &ldquo;not established&rdquo; for four
+          builds and are now named, from the builder&rsquo;s own record and an encyclopedia
+          agreeing from different directions — the page says how it was settled rather than
+          quietly filling the gap.
+        </p>
+
+        <h3>Citations, and a count of what has none</h3>
+        <p>
+          Every page carries a source list, and a figure that rests on one says so with a
+          numbered mark you can follow. Each entry records the title in English and in the
+          original language, the publisher, the date the URL was read, and whether the
+          source is <strong>primary</strong> — the operator, the builder, a government
+          department, a court — or <strong>secondary</strong>. That last field is required
+          and has no default: this site has already found a case where a citation to an
+          official route map was further from the published colour than the value it
+          replaced, so who says a thing has to travel with the thing.
+        </p>
+        <p>
+          Everything cited anywhere is collected in the{' '}
+          <Link href="/data/sources/">bibliography</Link>, with the primary-to-secondary
+          ratio stated at the top. It is currently about a third primary, which is not good
+          enough and is published anyway.
+        </p>
+        <p>
+          The build also counts statements that carry <em>no</em> source at all, separately
+          from those marked TBC, and refuses to let that number grow. A labelled gap and an
+          unlabelled assertion are different failures, and only one of them is honest.
+        </p>
+
+        <h3>What is not used</h3>
+        <p>
+          No operator's route map, photography or signage artwork. Those are copyrighted.
+          The maps on this site are drawn from published coordinate geometry, and the line
+          colours are the published hex values — a colour specification is a fact, an
+          operator's specific map is a design.
+        </p>
+        <p>
+          <Link href="/data/provenance/">Data provenance</Link> sets out field by field what
+          is official, what is researched here, what is derived, and what is still open.
+        </p>
+
+        <h2 className="section-heading">Where it has got to</h2>
+        <p>
+          This is version 1, and it covers one line properly rather than seven badly. The
+          Wenhu Line has a page per station built from official records; its line, depot and
+          rolling stock pages are written but still marked as stubs —{' '}
+          {stubs} of the {written} written pages carry that flag, meaning figures on them
+          still need tracing to a primary source.
+        </p>
+        <p>
+          The other six lines are present in the data rather than in prose. All{' '}
+          {STATIONS.length} stations across the network are registered, so any station code
+          on the site validates and any of them can be looked up on{' '}
+          <Link href="/data/stations/">the station records page</Link> — but only Wenhu's
+          have pages written about them. Linking a code to a page that does not exist would
+          be worse than not linking it.
+        </p>
+
+        <h2 className="section-heading">Corrections</h2>
+        <p>
+          Corrections are welcome, and specific ones are most useful: the page, the figure,
+          and what it should be, with a source. A source in Mandarin is as good as one in
+          English, and often better.
+        </p>
+        <p>
+          The most valuable corrections are the ones that catch something stated
+          confidently and wrongly, rather than something already marked TBC — a gap that is
+          labelled is doing its job, but a wrong figure presented as checked undermines
+          everything next to it.
+        </p>
+        <p className="note">
+          <strong>Reporting a correction.</strong> Open an issue on the repository this site
+          is built from, quoting the page URL and the figure in question. If you would
+          rather not use an issue tracker, the same information sent any other way is just
+          as welcome — what matters is the source, not the channel.
+        </p>
+
+        <h2 className="section-heading">How it is built</h2>
+        <p>
+          Content is Markdown; the site is generated as static HTML and served as files,
+          with no server and no runtime API calls. Station code badges, Chinese language
+          tagging, strip maps and geographic maps are all produced at build time from the
+          data, which is why a station code that is not real fails the build rather than
+          rendering as though it were.
+        </p>
+        <p className="page-updated">
+          Station and line data retrieved from MOTC TDX
+          {PROVENANCE.fetchedAt && <> on {PROVENANCE.fetchedAt.slice(0, 10)}</>}. Government
+          open data, used under the Open Government Data Licence.
+        </p>
+      </div>
+    </PageShell>
+  )
+}

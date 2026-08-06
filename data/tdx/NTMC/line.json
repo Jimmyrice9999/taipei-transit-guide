@@ -1,0 +1,18 @@
+[
+  {
+    "IsBranch": false,
+    "LineColor": "#fedb00",
+    "LineID": "Y",
+    "LineName": {
+      "En": "Circular Line",
+      "Ja": "環状線",
+      "Ko": "환좡선",
+      "Zh_tw": "環狀線"
+    },
+    "LineNo": "Y",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2023-05-23T00:00:00+08:00",
+    "UpdateTime": "2023-06-30T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

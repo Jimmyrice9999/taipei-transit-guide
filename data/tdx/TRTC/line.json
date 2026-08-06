@@ -1,0 +1,82 @@
+[
+  {
+    "IsBranch": false,
+    "LineColor": "#0a59ae",
+    "LineID": "BL",
+    "LineName": {
+      "En": "Bannan Line",
+      "Ja": "板南線",
+      "Ko": "반난선",
+      "Zh_tw": "板南線"
+    },
+    "LineNo": "BL",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "IsBranch": false,
+    "LineColor": "#b57a25",
+    "LineID": "BR",
+    "LineName": {
+      "En": "Wenhu Line",
+      "Ja": "文湖線",
+      "Ko": "원후선",
+      "Zh_tw": "文湖線"
+    },
+    "LineNo": "BR",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "IsBranch": false,
+    "LineColor": "#107547",
+    "LineID": "G",
+    "LineName": {
+      "En": "Songshan-Xindian Line",
+      "Ja": "松山新店線",
+      "Ko": "숭산신뎬선",
+      "Zh_tw": "松山新店線"
+    },
+    "LineNo": "G",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "IsBranch": false,
+    "LineColor": "#f5a818",
+    "LineID": "O",
+    "LineName": {
+      "En": "Zhonghe-Xinlu Line",
+      "Ja": "中和新蘆線",
+      "Ko": "중허신루선",
+      "Zh_tw": "中和新蘆線"
+    },
+    "LineNo": "O",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "IsBranch": false,
+    "LineColor": "#d90023",
+    "LineID": "R",
+    "LineName": {
+      "En": "Tamsui-Xinyi Line",
+      "Ja": "淡水信義線",
+      "Ko": "단수이신이선",
+      "Zh_tw": "淡水信義線"
+    },
+    "LineNo": "R",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2020-01-31T14:00:00+08:00",
+    "UpdateTime": "2020-05-20T12:00:00+08:00",
+    "VersionID": 2
+  }
+]
