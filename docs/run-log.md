@@ -2633,3 +2633,101 @@ two more pages' worth.
 Verified locally in CI's exact order: cite, build, 173/173 unit tests,
 facts, palette, geometry, a11y, browser verification clean, 16/16
 adversarial cases.
+
+---
+
+# Run 6 — photographs
+
+The diagnosis in the brief: the site was bland because it had no photographs,
+and every layout pass since run 1 has been rearranging that absence. Plan and
+critique in docs/plans/run6-plan.md; the critique moved image processing out
+of the build (committed WebP, CI only verifies), made attribution a visible
+line rather than a tooltip, and killed the 400 KB hero-page target with
+arithmetic before the work started rather than after.
+
+## 47. The pipeline
+
+`npm run image -- "File:X.jpg" dest/slug` fetches from the Commons API,
+captures photographer/licence/licence-URL/source from extmetadata, refuses
+anything outside CC0/PD/CC BY/CC BY-SA, downloads the original to a
+git-ignored cache, and commits 1600/800/400 WebP with a JSON attribution
+sidecar. The budget (180 KB/file) is enforced at encode time — quality steps
+down, then pixels — and again in tests/images.test.mts, which also requires
+the visible credit line, explicit dimensions on every img, a 400 KB per-page
+imagery cap, and an allowed licence in every sidecar. Two licence gates on
+purpose: the fetch script judges at download, the test judges what is in the
+tree.
+
+**The gate worked on its first day.** The best photo found for the Matra
+article — a VAL256 carriage being unloaded at the Port of Keelung in 1990 —
+is licensed under Commons' bare "Attribution" template, which is free but is
+neither CC nor PD, and the script refused it. It stays refused; the article
+gets a period VAL256 in service instead. Also refused by circumstance: two
+files whose category placement lied (a fern filed under "Taipei Metro Brown
+Line").
+
+## 48. What got photographs
+
+Selected by eye from ~120 candidate thumbnails (filenames lie; two Commons
+categories contained wrong-subject files): Wenhu Line (VAL256 crossing the
+Keelung River — CC0), Sanying Line (the Dahan River arch bridge, shot in
+opening week), VAL256 (head-on at Daan, the front-window shot the page's
+placeholder asked for), Innovia (threading the Liuzhangli curve), Muzha
+Depot (the depot approach at Taipei Zoo), Neihu Depot (aerial between
+expressway and river). Heroes render before the title — recognition before
+naming — with srcset, eager+high-priority for the hero, lazy for everything
+below, and the credit line linking photographer and licence deed.
+
+The Matra article's hero (a VAL256 above the zoo gateway, 2007) and the
+three station heroes — BR10 Zhongxiao Fuxing (exit and the round-cornered
+Xieda building), BR13 Songshan Airport (the B3 concourse), BR24 Nangang
+Exhibition Center (the elevated frontage) — all landed on later retries,
+were reviewed by eye, and shipped. Adding 玄史生's credit to a station page
+put Han on a base-subset page; the postbuild gate refused the build until
+the subsets were regenerated, which is that gate doing precisely its job.
+Still bare: the other 21 station pages and the entity scope pages. The "photograph wanted" placeholders
+stay, saying what to shoot.
+
+## 49. Navigation and the wordmark
+
+Full breadcrumb trails returned (run 3's single parent link was an economy
+that became a dead end as the tree deepened), and /about, /data and every
+data subpage — which had NO in-page route up at all — now carry them.
+The wordmark investigation ended in an alibi: every current context grounds
+the mark (header band, self-grounded favicon, text-only OG, print hides the
+header). The black-on-white Jamie saw is the two-day-old deployed version,
+which predates the band — resolved by run 5.1's deploy fix, verified in this
+run's screenshots.
+
+## 50. Weight, before and after
+
+Three-way CJK split implemented (base / content / stations, classified by
+which font family each built page declares — the same detection postbuild
+enforces, so classification cannot drift):
+
+| Page type | Run 5 | Now (no hero) | Hero adds |
+| --- | --- | --- | --- |
+| Station page | 439.3 KB | 337.1 KB | +~110 KB where one exists |
+| Network | 462.5 KB | 360.2 KB | — |
+| Line page | 457.5 KB | 438.8 KB | +89 KB (CC0 hero) |
+| Home | 290.9 KB | 291.0 KB | — |
+
+Base Han subset: 450 → 111 characters (141 → 39 KB); content pages carry
+their own 392-character subset, which is the honest cost of quoting sources
+in Chinese. **The 400 KB target for a content page with a hero is not
+reachable** — framework 172.5 + Latin 100.1 + content-Han ~120 + HTML ~30 =
+~423 KB before one image byte — and the plan said so before building. What
+was reachable: station pages under 340 without heroes, ~450 with; and the
+line page with its hero at ~528, down from a photo-less 457.5 in run 5.
+
+## 51. Decisions argued in the plan
+
+Hero-before-title: for (implemented). Big station badge: for (implemented).
+Big facts figure: for, narrowly. Section-opener imagery: against — indexes
+are wayfinding, and a hero would push the links below the mobile fold for
+decoration. Colour beyond the accent: against — more colour without more
+meaning is what the brief itself ruled out. Density variation: arrived free
+with the photographs.
+
+Suite: 177/177 (four new image-compliance tests), claims steady at 32,
+citations clean, postbuild verifies all 147 pages against the three subsets.

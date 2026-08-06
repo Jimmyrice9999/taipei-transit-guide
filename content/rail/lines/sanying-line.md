@@ -3,6 +3,10 @@ title: Sanying Line
 summary: New Taipei's newest railway — a driverless elevated line to Sanxia and Yingge, open five weeks and still free to ride, written up here while every English source is still a machine translation.
 order: 2
 updated: 2026-08-06
+hero:
+  image: sanying-line/hero
+  alt: The Sanying Line's arched viaduct crossing the Dahan River, hills behind.
+  caption: The Dahan River crossing, photographed in the line's opening week.
 facts:
   - label: Operator
     value: New Taipei Metro Corporation

@@ -12,6 +12,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import HanContentSubset from '@/components/HanContentSubset'
 import RichText from '@/components/RichText'
 import { getAllSources } from '@/lib/content'
 import { NEUTRAL_LINE } from '@/lib/lines'
@@ -51,6 +53,7 @@ export default async function SourcesPage() {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
+      <HanContentSubset />
       <JsonLd
         data={[
           breadcrumbSchema([
@@ -61,9 +64,7 @@ export default async function SourcesPage() {
         ]}
       />
 
-      <Link className="up-link" href="/data/">
-        ‹ Data
-      </Link>
+      <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Bibliography' }]} />
 
       <h1 className="page-title">Bibliography</h1>
       <p className="page-summary">

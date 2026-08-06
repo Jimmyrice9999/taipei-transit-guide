@@ -35,7 +35,8 @@
     "claims": "node scripts/claims.mjs",
     "entities": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/entities.mts",
     "determinism": "node scripts/determinism.mjs",
-    "verify": "npm run check && npm run a11y && npm run facts && npm run cite && npm run claims && npm run geometry:audit && npm run cvd"
+    "verify": "npm run check && npm run a11y && npm run facts && npm run cite && npm run claims && npm run geometry:audit && npm run cvd",
+    "image": "node scripts/fetch-commons.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -62,6 +63,7 @@
     "axe-core": "^4.12.1",
     "fontkit": "^2.0.4",
     "playwright": "^1.62.1",
+    "sharp": "^0.35.3",
     "subset-font": "^2.5.0",
     "typescript": "^7.0.2"
   }

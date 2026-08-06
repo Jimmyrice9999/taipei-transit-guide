@@ -92,11 +92,28 @@ const WEIGHTS = [
   { weight: 700, file: '700Bold/NotoSansTC_700Bold.ttf' },
 ]
 
-/** The two subsets, and the file each weight is written to. */
+/**
+ * The three subsets, and the file each weight is written to.
+ *
+ * Three-way since run 6: content pages quote sources in Chinese and grew the
+ * shared subset threefold; splitting them off gives the sixty-odd station,
+ * data and chrome pages back the small subset they actually use. A page's
+ * sink is decided by which family its built HTML declares — the same
+ * detection postbuild verifies against — so classification cannot drift from
+ * what ships.
+ */
 const SUBSETS = [
   { key: 'base', name: (w) => `noto-sans-tc-subset-${w}.woff2` },
+  { key: 'content', name: (w) => `noto-sans-tc-content-${w}.woff2` },
   { key: 'stations', name: (w) => `noto-sans-tc-stations-${w}.woff2` },
 ]
+
+/** Which subset a built page loads, from what it actually declares. */
+export function sinkOf(html) {
+  if (/noto-sans-tc-stations-/.test(html)) return 'stations'
+  if (/noto-sans-tc-content-/.test(html)) return 'content'
+  return 'base'
+}
 
 /* ------------------------------------------------------------------ */
 
@@ -194,19 +211,19 @@ export function collectFromBuild() {
   const pages = builtPages()
   if (pages.length === 0) return null
 
-  const base = new Set()
-  const stations = new Set()
+  const sinks = { base: new Set(), content: new Set(), stations: new Set() }
   const perPage = new Map()
 
   for (const { route, file } of pages) {
-    const chars = hanOf(fs.readFileSync(file, 'utf8'))
+    const html = fs.readFileSync(file, 'utf8')
+    const chars = hanOf(html)
     if (chars.size === 0) continue
     perPage.set(route || '/', chars.size)
-    const sink = route === SPLIT_ROUTE ? stations : base
+    const sink = sinks[sinkOf(html)]
     for (const ch of chars) sink.add(ch)
   }
 
-  return { base, stations, perPage, pages: pages.length }
+  return { ...sinks, perPage, pages: pages.length }
 }
 
 const sorted = (set) => [...set].sort((a, b) => a.codePointAt(0) - b.codePointAt(0)).join('')
@@ -220,27 +237,25 @@ async function main() {
 
   if (fromBuild) {
     mode = 'build'
-    sets = { base: fromBuild.base, stations: fromBuild.stations }
+    sets = { base: fromBuild.base, content: fromBuild.content, stations: fromBuild.stations }
     console.log(`subset-cjk: read ${fromBuild.pages} built pages from out/`)
-    console.log(
-      `  base subset      ${String(sets.base.size).padStart(3)} characters ` +
-        `(every page except /${SPLIT_ROUTE}/)`,
-    )
+    console.log(`  base subset      ${String(sets.base.size).padStart(3)} characters (chrome, stations, data)`)
+    console.log(`  content subset   ${String(sets.content.size).padStart(3)} characters (md-backed pages, indexes, bibliography)`)
     console.log(`  stations subset  ${String(sets.stations.size).padStart(3)} characters (/${SPLIT_ROUTE}/ only)`)
   } else {
     mode = 'source'
     const { chars, perFile } = collectFromSource()
-    sets = { base: chars, stations: chars }
+    sets = { base: chars, content: chars, stations: chars }
     console.warn(
-      'subset-cjk: ⚠ out/ is empty or missing, so the two-way split could NOT be applied.\n' +
-        '  Falling back to scanning source, and writing the same union into both subsets.\n' +
-        '  Nothing will render as tofu, but every page carries the full set —\n' +
-        '  about 40 KB more than it needs. Run `npm run build` first, then this again.',
+      'subset-cjk: ⚠ out/ is empty or missing, so the three-way split could NOT be applied.\n' +
+        '  Falling back to scanning source, and writing the same union into every subset.\n' +
+        '  Nothing will render as tofu, but every page carries the full set.\n' +
+        '  Run `npm run build` first, then this again.',
     )
     console.log(`subset-cjk: ${chars.size} distinct Han characters across ${perFile.size} source files`)
   }
 
-  if (sets.base.size === 0 && sets.stations.size === 0) {
+  if (sets.base.size === 0 && sets.content.size === 0 && sets.stations.size === 0) {
     console.log('subset-cjk: no Han characters found — nothing to build.')
     return
   }

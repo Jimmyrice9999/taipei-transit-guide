@@ -9,6 +9,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import { AA, AA_NON_TEXT, NEAR_BLACK, WHITE, contrast } from '@/lib/color'
@@ -81,6 +82,7 @@ export default function LineColoursPage() {
         ‹ Data
       </Link>
 
+      <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Line colours' }]} />
       <h1 className="page-title">Official line colours</h1>
       <p className="page-summary">
         Taken from the <code>LineColor</code> field published by each operator through

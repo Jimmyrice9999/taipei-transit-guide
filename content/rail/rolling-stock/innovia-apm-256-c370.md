@@ -10,8 +10,10 @@ aliases:
   - Innovia APM 256 (C370)
 updated: 2026-08-06
 hero:
+  image: innovia-apm-256-c370/hero
+  alt: An Innovia APM 256 train curving between apartment towers on the approach to Liuzhangli station.
+  caption: An Innovia set threads the curve into Liuzhangli.
   wanted: An Innovia APM 256 set, framed to allow comparison with the VAL256 photograph — same angle if possible.
-  caption: An Innovia APM 256 set in service.
 formation: Mc1=M2 + M2=Mc1
 facts:
   - label: Builder

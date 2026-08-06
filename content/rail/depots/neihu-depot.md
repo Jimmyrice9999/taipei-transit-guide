@@ -9,8 +9,10 @@ aliases:
   - 內湖機廠
 updated: 2026-08-06
 hero:
+  image: neihu-depot/hero
+  alt: Aerial view of Neihu Depot's blue-roofed stabling building beside the expressway and the Keelung River.
+  caption: The depot from above, pressed between the expressway and the Keelung River.
   wanted: The depot from a public vantage point near BR24, or from the Keelung River bank. Do not enter the site.
-  caption: Neihu Depot.
 facts:
   - label: Chinese name
     value: 內湖機廠

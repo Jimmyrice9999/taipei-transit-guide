@@ -9,8 +9,10 @@ aliases:
   - 木柵機廠
 updated: 2026-08-06
 hero:
+  image: muzha-depot/hero
+  alt: A VAL256 train on the elevated guideway between Taipei Zoo station and Muzha Depot, hills and the incinerator tower behind.
+  caption: The depot approach beside Taipei Zoo, where the line meets its oldest depot.
   wanted: The depot from a public vantage point near BR01. Do not enter the site.
-  caption: Muzha Depot from the south.
 facts:
   - label: Chinese name
     value: 木柵機廠

@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
@@ -55,6 +56,7 @@ export default async function SectionPage({ params }: Props) {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
+      <HanContentSubset />
       <Breadcrumbs trail={[{ label: meta.title }]} />
       <h1 className="page-title">{meta.title}</h1>
       {meta.description && <p className="page-summary">{meta.description}</p>}

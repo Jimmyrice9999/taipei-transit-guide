@@ -9,9 +9,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import Figure from '@/components/Figure'
 import PageShell from '@/components/PageShell'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
+import { getImage } from '@/lib/images'
 import { getLineGeometry } from '@/lib/geometry'
 import { getAccent, getLine } from '@/lib/lines'
 import { getLineStations, getStation } from '@/lib/stations'
@@ -93,6 +96,7 @@ export default async function StationPage({ params }: Props) {
   if (!station || station.line !== LINE) notFound()
 
   const line = getAccent(station.line)
+  const heroImage = getImage(`stations/${station.code.toLowerCase()}`)
   const stations = getLineStations(station.line)
   const index = stations.findIndex((s) => s.code === station.code)
   const previous = index > 0 ? stations[index - 1] : null
@@ -124,9 +128,22 @@ export default async function StationPage({ params }: Props) {
         ]}
       />
 
-      <Link className="up-link" href="/rail/lines/wenhu-line/">
-        ‹ Wenhu Line
-      </Link>
+      {heroImage && (
+        <Figure
+          image={heroImage}
+          alt={`${station.name} station`}
+          priority
+          className="figure page-hero"
+        />
+      )}
+
+      <Breadcrumbs
+        trail={[
+          { label: 'Rail', href: '/rail/' },
+          { label: 'Wenhu Line', href: '/rail/lines/wenhu-line/' },
+          { label: `${station.code} ${station.name}` },
+        ]}
+      />
 
       <div className="station-head">
         <StationBadge code={station.code} />

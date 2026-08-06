@@ -151,9 +151,10 @@ th > .badge:only-child {
 /* ------------------------------------------------------------------ */
 
 .container {
+  --container-pad: 24px;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 var(--container-pad);
 }
 
 /*
@@ -2716,7 +2717,8 @@ a.adjacent-link:hover {
     font-size: 16px;
   }
   .container {
-    padding: 0 16px;
+    --container-pad: 16px;
+    padding: 0 var(--container-pad);
   }
   .page-title {
     font-size: 29px;
@@ -3310,4 +3312,52 @@ a.badge-link:focus-visible {
   .station-index {
     columns: 1;
   }
+}
+
+/* ------------------------------------------------------------------ */
+/* Hero photographs (run 6)                                            */
+/* ------------------------------------------------------------------ */
+
+/*
+ * The photograph opens the page, before the title — recognition before
+ * naming. Full content width on desktop; edge-to-edge on mobile, where the
+ * container padding would otherwise shave a photo into a letterboxed strip.
+ */
+.page-hero {
+  margin: 4px 0 18px;
+}
+
+.page-hero img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.figure-credit a {
+  color: inherit;
+}
+
+@media (max-width: 780px) {
+  .page-hero {
+    margin: 0 calc(-1 * var(--container-pad, 20px)) 14px;
+  }
+
+  .page-hero img {
+    border-radius: 0;
+    max-height: 300px;
+  }
+
+  .page-hero figcaption {
+    padding: 0 var(--container-pad, 20px);
+  }
+}
+
+/* The station page wears its badge at platform-sign scale — the signature
+   device, given the space it earns on the one page that IS the station. */
+.station-head .badge {
+  font-size: 30px;
+  padding: 8px 14px;
+  border-radius: 6px;
 }

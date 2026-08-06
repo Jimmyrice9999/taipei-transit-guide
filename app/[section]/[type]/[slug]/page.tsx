@@ -10,6 +10,8 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import HanContentSubset from '@/components/HanContentSubset'
 import FactsPanel from '@/components/FactsPanel'
 import Figure from '@/components/Figure'
 import FormationDiagram from '@/components/FormationDiagram'
@@ -24,6 +26,7 @@ import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { getAccent } from '@/lib/lines'
 import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
 import { ARTICLE_TYPES, getAllPages, getPage, getPages, getSection, getType } from '@/lib/content'
+import { getImage } from '@/lib/images'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 
@@ -122,6 +125,15 @@ export default async function ContentPage({ params }: Props) {
   const accent = getAccent(page.line)
 
   /*
+   * The hero photograph leads the page — before the title, the way a reader
+   * recognises a place before they read its name. `hero.image` names a
+   * pipeline image (lib/images); when it resolves, the photo opens the page
+   * and the old in-flow slot renders nothing. When it does not, the
+   * "photograph wanted" placeholder stays in the flow, saying what to shoot.
+   */
+  const heroImage = page.hero?.image ? getImage(page.hero.image) : null
+
+  /*
    * Articles get a reading layout, not the entity grid. The spine is right on
    * an entity page because "which stretch of line" is one of its facts; beside
    * a narrative it is an unlabelled rail of ticks — decoration pretending to
@@ -142,6 +154,7 @@ export default async function ContentPage({ params }: Props) {
 
     return (
       <PageShell accent={accent}>
+      <HanContentSubset />
         <JsonLd
           data={[
             articleSchema({
@@ -160,9 +173,23 @@ export default async function ContentPage({ params }: Props) {
         />
 
         <article className="page-article">
-          <Link className="up-link" href={typeMeta.href}>
-            ‹ {typeMeta.title}
-          </Link>
+          {heroImage && (
+            <Figure
+              image={heroImage}
+              alt={page.hero?.alt || page.title}
+              caption={page.hero?.caption}
+              priority
+              className="figure page-hero"
+            />
+          )}
+
+          <Breadcrumbs
+            trail={[
+              { label: getSection(section).title, href: `/${section}/` },
+              { label: typeMeta.title, href: typeMeta.href },
+              { label: page.title },
+            ]}
+          />
 
           <header className="article-head">
             <h1 className="page-title article-title">
@@ -262,6 +289,7 @@ export default async function ContentPage({ params }: Props) {
 
   return (
     <PageShell accent={accent}>
+      <HanContentSubset />
       {/*
         Article, not a transit-specific type: schema.org has station types but
         nothing for a line or route, and stretching Place over a railway would
@@ -284,14 +312,28 @@ export default async function ContentPage({ params }: Props) {
         ]}
       />
 
+      {heroImage && (
+        <Figure
+          image={heroImage}
+          alt={page.hero?.alt || page.title}
+          caption={page.hero?.caption}
+          priority
+          className="figure page-hero"
+        />
+      )}
+
       {/*
-        Collapsed from the full Home > Train > Lines > Wenhu Line trail. The
-        trail was encyclopedia furniture and cost a whole line on mobile; the
-        parent link is the only part anyone used.
+        The full trail, restored in run 6. Run 3 collapsed it to a single
+        parent link to save a line on mobile — defensible at five pages, a
+        dead end at eighty. Depth returned faster than the economy paid.
       */}
-      <Link className="up-link" href={typeMeta.href}>
-        ‹ {typeMeta.title}
-      </Link>
+      <Breadcrumbs
+        trail={[
+          { label: getSection(section).title, href: `/${section}/` },
+          { label: typeMeta.title, href: typeMeta.href },
+          { label: page.title },
+        ]}
+      />
 
       <article>
         {/* The eyebrow that sat here said "Line · Wenhu Line" above an <h1>
@@ -329,7 +371,7 @@ export default async function ContentPage({ params }: Props) {
               references={page.references}
             />
 
-            {page.hero && (
+            {page.hero && !heroImage && (
               <Figure
                 src={page.hero.src || undefined}
                 alt={page.hero.alt}

@@ -12,6 +12,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
 import { getAllLineGeometry } from '@/lib/geometry'
@@ -86,9 +87,7 @@ export default function NetworkPage() {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
-      <Link className="up-link" href="/rail/">
-        ‹ Train
-      </Link>
+      <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'The network' }]} />
 
       <h1 className="page-title">The network</h1>
       <p className="page-summary">

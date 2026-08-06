@@ -23,7 +23,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
-import { hanOf } from './subset-cjk.mjs'
+import { hanOf, sinkOf } from './subset-cjk.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 
@@ -188,7 +188,7 @@ if (fs.existsSync(MANIFEST)) {
 
     // Which subset this page declares, read from the page itself rather than
     // from a list here — so the check cannot disagree with what shipped.
-    const key = /noto-sans-tc-stations-/.test(html) ? 'stations' : 'base'
+    const key = sinkOf(html)
     const available = subsets[key]
     if (!available) continue
 

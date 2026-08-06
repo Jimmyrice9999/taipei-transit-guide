@@ -9,6 +9,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import meta from '@/data/tdx/meta.json' with { type: 'json' }
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
@@ -54,6 +55,7 @@ export default function ProvenancePage() {
         ‹ Data
       </Link>
 
+      <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Provenance' }]} />
       <h1 className="page-title">Provenance</h1>
       <p className="page-summary">
         Which facts on this site are official records, which are our own research, and

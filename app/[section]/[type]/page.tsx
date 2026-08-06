@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import ComparisonTable from '@/components/ComparisonTable'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import HanContentSubset from '@/components/HanContentSubset'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderBody, getPages, getSection, getSections, getType, getTypes } from '@/lib/content'
@@ -51,9 +53,8 @@ export default async function TypeIndexPage({ params }: Props) {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
-      <Link className="up-link" href={sectionMeta.href}>
-        ‹ {sectionMeta.title}
-      </Link>
+      <HanContentSubset />
+      <Breadcrumbs trail={[{ label: sectionMeta.title, href: sectionMeta.href }, { label: typeMeta.title }]} />
       <h1 className="page-title">{typeMeta.title}</h1>
       {typeMeta.description && <p className="page-summary">{typeMeta.description}</p>}
 

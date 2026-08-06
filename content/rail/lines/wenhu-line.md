@@ -11,8 +11,10 @@ aliases:
   - Brown Line
 updated: 2026-08-06
 hero:
+  image: wenhu-line/hero
+  alt: A four-car VAL256 train crossing the Keelung River on the elevated guideway, apartment towers behind.
+  caption: A VAL256 crosses the Keelung River into Neihu.
   wanted: A train on the elevated guideway, shot from street level — the line is fully elevated here, so the structure and a passing train are both reachable without a permit.
-  caption: The Wenhu Line guideway.
 facts:
   - label: Line code
     value: BR

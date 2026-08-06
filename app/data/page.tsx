@@ -9,6 +9,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import { NEUTRAL_LINE, LINES } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
 export default function DataPage() {
   return (
     <PageShell accent={NEUTRAL_LINE}>
+      <Breadcrumbs trail={[{ label: 'Data' }]} />
       <h1 className="page-title">Data</h1>
 
       <div className="page-body">

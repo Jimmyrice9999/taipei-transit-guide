@@ -6,6 +6,10 @@ line: BR
 aliases:
   - Matra dispute
 updated: 2026-08-06
+hero:
+  image: matra-dispute/hero
+  alt: A VAL256 train on the elevated Muzha Line guideway near Taipei Zoo station, 2007.
+  caption: The system Matra built and left — a VAL256 near Taipei Zoo, a decade after the walkout.
 facts:
   - label: Client
     value: DORTS, Taipei City Government

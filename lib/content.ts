@@ -161,6 +161,8 @@ export type Spec = { label: string; value: string; unit: string; source: string 
  * placeholder says something useful instead of just marking a hole.
  */
 export type Hero = {
+  /** Pipeline image id, e.g. `wenhu-line/hero` — resolved via lib/images. */
+  image: string
   src: string
   alt: string
   caption: string
@@ -316,13 +318,14 @@ function toHero(value: unknown): Hero | null {
   if (!value || typeof value !== 'object') return null
   const h = value as Record<string, unknown>
   const hero = {
+    image: toText(h.image),
     src: toText(h.src),
     alt: toText(h.alt),
     caption: toText(h.caption),
     credit: toText(h.credit),
     wanted: toText(h.wanted),
   }
-  return hero.src || hero.wanted ? hero : null
+  return hero.image || hero.src || hero.wanted ? hero : null
 }
 
 /** Sort by explicit `order`, then alphabetically. */

@@ -10,6 +10,7 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageShell from '@/components/PageShell'
+import Breadcrumbs from '@/components/Breadcrumbs'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema } from '@/lib/structured-data'
 import { NEUTRAL_LINE, getLine } from '@/lib/lines'
@@ -44,9 +45,7 @@ export default function StationsIndexPage() {
         ]}
       />
 
-      <Link className="up-link" href="/rail/">
-        ‹ Rail
-      </Link>
+      <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'Stations' }]} />
       <h1 className="page-title">Stations</h1>
       <p className="page-summary">
         Every station with a page so far. Lines whose stations are not listed here are not
