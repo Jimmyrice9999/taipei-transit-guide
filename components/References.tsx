@@ -80,6 +80,14 @@ export default function References({ references }: { references: NumberedSource[
                     archived
                   </a>
                 )}
+                {/* A second, independent archive — carried where one archive
+                    service cannot reach the origin, so a citation is never
+                    one outage from unfollowable. */}
+                {reference.snapshotAlt && (
+                  <a className="refs-archive" href={reference.snapshotAlt} rel="nofollow noopener">
+                    mirror
+                  </a>
+                )}
                 {!reference.cited && (
                   <span className="refs-uncited">listed but not cited on this page</span>
                 )}

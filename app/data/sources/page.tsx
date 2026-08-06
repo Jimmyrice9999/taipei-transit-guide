@@ -135,6 +135,15 @@ export default async function SourcesPage() {
                                 archived
                               </a>
                             )}
+                            {source.snapshotAlt && (
+                              <a
+                                className="refs-archive"
+                                href={source.snapshotAlt}
+                                rel="nofollow noopener"
+                              >
+                                mirror
+                              </a>
+                            )}
                           </span>
 
                           {source.note && (

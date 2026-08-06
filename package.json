@@ -36,7 +36,8 @@
     "entities": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/entities.mts",
     "determinism": "node scripts/determinism.mjs",
     "verify": "npm run check && npm run a11y && npm run facts && npm run cite && npm run claims && npm run geometry:audit && npm run cvd",
-    "image": "node scripts/fetch-commons.mjs"
+    "image": "node scripts/fetch-commons.mjs",
+    "archive": "node scripts/archive-sources.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

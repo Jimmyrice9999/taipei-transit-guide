@@ -110,6 +110,7 @@ export function sourcesOf(data) {
       url: String(s.url ?? ''),
       accessed: s.accessed instanceof Date ? s.accessed.toISOString().slice(0, 10) : String(s.accessed ?? ''),
       snapshot: String(s.snapshot ?? ''),
+      snapshotAlt: String(s.snapshotAlt ?? ''),
       kind: String(s.kind ?? ''),
       lang: String(s.lang ?? ''),
       note: String(s.note ?? ''),
@@ -129,6 +130,8 @@ function validate(source) {
   else if (!ISO_DATE.test(source.accessed)) problems.push(`accessed "${source.accessed}" is not YYYY-MM-DD`)
   if (source.snapshot && !/^https?:\/\//i.test(source.snapshot))
     problems.push(`snapshot "${source.snapshot}" is not an http(s) URL`)
+  if (source.snapshotAlt && !/^https?:\/\//i.test(source.snapshotAlt))
+    problems.push(`snapshotAlt "${source.snapshotAlt}" is not an http(s) URL`)
   if (!KINDS.has(source.kind))
     problems.push(`kind "${source.kind || '(missing)'}" must be primary or secondary`)
   if (source.titleOriginal && !source.lang) problems.push('titleOriginal without a lang tag')

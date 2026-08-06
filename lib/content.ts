@@ -265,6 +265,7 @@ function toSources(value: unknown): Source[] {
         url: toText(r.url),
         accessed: toText(r.accessed),
         snapshot: toText(r.snapshot),
+        snapshotAlt: toText(r.snapshotAlt),
         kind: toText(r.kind) as Source['kind'],
         lang: toText(r.lang),
         note: toText(r.note),
@@ -714,6 +715,9 @@ export async function getAllSources(): Promise<
       // exactly the rot the field exists to prevent.
       if (!entry.source.snapshot && reference.snapshot) {
         entry.source = { ...entry.source, snapshot: reference.snapshot }
+      }
+      if (!entry.source.snapshotAlt && reference.snapshotAlt) {
+        entry.source = { ...entry.source, snapshotAlt: reference.snapshotAlt }
       }
       byUrl.set(key, entry)
     }

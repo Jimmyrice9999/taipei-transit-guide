@@ -1,76 +1,53 @@
 # For Jamie
 
-Written 6 August 2026, after run 4 — the content run. Assume you read this and
-nothing else.
+Written 6 August 2026, updated after run 6.1 — your decisions on the run-6
+items are executed. Assume you read this and nothing else.
 
-The one-line version: **the Matra article is published, the line page is
-finished, all six of your decisions are executed, and the suite is green** —
-172 tests, citations clean, zero unsourced assertions on the new page, ratchet
-tightened 34 → 33.
+The one-line version: **the site has photographs, working CI, an entity graph
+with auto-linking, and one featured original article on the front page.**
+Suite: 177 tests green, claims ratchet at 32, full verify passing.
 
-What you decided, done: article published (1/A), 30vh kept + scroll-into-view
-added (2), font tables deleted from the run log (3B), all primary sources
-archived with `snapshot:` fields (4A), ratchet left alone (5), corrections
-moved to a foot-of-page section on all five pages (6).
+## Your decisions, done
 
-Two upgrades happened during publication, recorded in run-log §33: the fire
-mechanism found a second independent source (自由時報 2008), and the
-「馬特拉不拉，我們自己拉」 quote found a primary one — 陳水扁 himself,
-retelling it in 鏡週刊 this March. The draft's red lines held: no dongle
-story, no 1999 date, no withdrawal year — the 1996-vs-1997 disagreement is
-published as a disagreement.
+- **1 — the 57 KB stays.** Recorded in run-log §6.1. The Chinese quotations
+  are the evidence; the weight is their cost. Closed.
+- **2 — second archive (your call, overruling my recommendation).** The
+  schema now carries `snapshotAlt:`, rendered as a "mirror" link beside
+  "archived". You were right about the reasoning: 民報 died mid-run.
+  **Caveat on execution:** archive.today rate-limits automation brutally,
+  and the four blocked-origin captures may not all have landed this run —
+  `npm run archive` is now a committed command that reports what is missing
+  and retries both services with polite pacing. Run it occasionally; that is
+  decision 2's "keep retrying" as a tool rather than a habit. If it keeps
+  refusing, one manual visit to archive.today per URL settles it in a
+  minute each.
+- **3 — the judgment.** Corrected in the log: the 2005 Supreme Court civil
+  judgment is retrievable FREE via 司法院法學資料檢索系統 — no purchase.
+  The only actual purchase on the follow-up list is 商業周刊 445.
+- **Home page** — the Matra article is featured: one card above the section
+  listing, with its photo and CC credit. Not a redesign.
 
----
+## Open items, in order of value
 
-## Decision 1 — The article made every page ~57 KB heavier, and I did not act
+1. **Fetch the judgment** (yours, free, above) — it moves the article's
+   whole litigation section to primary sourcing.
+2. **Station photographs** — 3 of 24 station pages have them (BR10, BR13,
+   BR24). The pipeline is one command per image: find a file on Commons,
+   `npm run image -- "File:X.jpg" stations/br0N`. The licence gate and
+   budgets do the rest.
+3. **The entity backlog is generated, not maintained**: `npm run entities`
+   currently lists Losheng Sanatorium, 三峽機廠, Lyon Metro, VAL206 as
+   named-but-pageless. The Losheng history article is the strongest next
+   piece of original work after the Sanying page.
+4. **Sanying follow-up on 1 September** — the free trial ends 31 August;
+   the page was written to be updated rather than rewritten when charging
+   begins.
 
-Quoting sources in their own language has a price: the article's Chinese
-quotations grew the base Han subset from 217 to 404 characters — **71.6 KB to
-128.5 KB, loaded by 45 of 46 pages**. Your decision 3 said stop optimising
-fonts, so I am reporting this, not acting on it.
+## Standing cautions
 
-| Option | Trade |
-| --- | --- |
-| **A. Accept it** | First visit ~437 KB. Every page after is still ~15 KB. Nothing to maintain. |
-| B. Shorten the article's Chinese quotations | Free bytes, worse article. The quotes are the evidence. |
-| C. Reopen the split, article on its own subset | The mechanism exists (it is the `/data/stations` mechanism). It is also exactly the work you told this project to stop doing. |
-
-**Recommend A.** If the number nags at you when more Chinese-heavy articles
-exist, C is one more subset — but let there be more articles first.
-
-## Decision 2 — The Internet Archive cannot reach Taiwan's government sites
-
-All four fresh captures of `.gov.taipei` / `metro.taipei` pages failed with
-HTTP 523 — the Archive's crawler is blocked or unroutable from their side. The
-`snapshot:` fields point at the newest *existing* captures instead (DORTS:
-Feb 2026; headways: 3 days old; the two others: mid-2025). Meanwhile the rot
-argument proved itself mid-run: **the 民報 source died** — 404 on the day the
-archiving decision was executed — and survives only because a 2019 capture
-exists. It is now cited via that capture.
-
-| Option | |
-| --- | --- |
-| **A. Accept existing captures, retry occasionally** | The mid-2025 ones predate our access date; content is stable government boilerplate. |
-| B. Add a second archive (archive.today) for the blocked four | Another dependency, no schema change — `snapshot:` takes any URL. |
-
-**Recommend A** now, B only if a gov page actually changes or dies.
-
-## Decision 3 — Two purchases, both small, both yours
-
-- **The 2005 Supreme Court judgment.** Taiwan's judgments are indexed; the 22
-  July 2005 civil judgment would move the article's whole litigation section
-  from reportage to primary record and settle the intermediate dates it
-  declines to give. Needs a human with the judicial database.
-- **商業周刊 445 (30 May 1996).** The only near-contemporaneous account of the
-  breakdown, paywalled. The article currently cites its date and title only.
-
-## Not a decision — where the article lives
-
-`/train/history/matra-dispute/`, under a new **History** type, linked from the
-line page and VAL256. Nothing links it from the home page; if you want it
-featured there, say so — I did not redesign the home page on a content run.
-
-## What I'd do next
-
-Retrieve the judgment, then write the next article. The pattern held: writing
-content found better sources than three runs of infrastructure did.
+- The deployed site only catches up when you push — everything above is
+  local until then, and the push should finally go green end-to-end after
+  the run-5.1 CI fixes.
+- The claims ratchet is at 32 and the baseline is committed; new prose with
+  years/figures needs citations or TBC phrasing, which is now demonstrated
+  across 23 scope pages if you want the pattern.

@@ -3361,3 +3361,97 @@ a.badge-link:focus-visible {
   padding: 8px 14px;
   border-radius: 6px;
 }
+
+/* ------------------------------------------------------------------ */
+/* Featured card (home)                                                */
+/* ------------------------------------------------------------------ */
+
+/*
+ * One card, hand-picked, above the wayfinding. The home page's job does not
+ * change; this is a shop window for the one piece of original work.
+ */
+.feature-card {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--accent);
+  border-radius: 3px;
+  padding: 0;
+  margin: 6px 0 34px;
+  max-width: 720px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.feature-card:hover .feature-title {
+  text-decoration: underline;
+}
+
+.feature-card img {
+  width: 148px;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+  flex: none;
+}
+
+.feature-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px 14px 0;
+}
+
+.feature-card img + .feature-body {
+  padding-left: 0;
+}
+
+.feature-card > .feature-body:first-child {
+  padding-left: 18px;
+}
+
+.feature-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.feature-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.feature-summary {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.feature-card .figure-credit {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .feature-card {
+    flex-direction: column;
+  }
+
+  .feature-card img {
+    width: 100%;
+    max-height: 180px;
+  }
+
+  .feature-body,
+  .feature-card img + .feature-body {
+    padding: 0 16px 14px;
+  }
+}

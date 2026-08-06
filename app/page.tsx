@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getPages, getSections, getTypes } from '@/lib/content'
+import { getImage, src as imageSrc } from '@/lib/images'
 
 // Stated rather than inherited, so the home page's canonical is deliberate and
 // so the test that every page declares one has something to find here too.
@@ -13,6 +15,15 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const sections = getSections()
 
+  /*
+   * One featured page, hand-picked: the Matra article is the only original
+   * long-form work the site has published, and until this card existed
+   * nothing on the front page led to it. A single card, not a redesign —
+   * the home page's job is still wayfinding. Swap the slug to re-feature.
+   */
+  const featured = getPages('rail', 'history').find((p) => p.slug === 'matra-dispute')
+  const featuredImage = getImage('matra-dispute/hero')
+
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <h1 className="page-title">Taipei Transit Guide</h1>
@@ -20,6 +31,41 @@ export default function HomePage() {
         An English-language reference for public transport in Taipei — metro lines,
         rolling stock, depots and bus routes.
       </p>
+
+      {featured && (
+        <Link className="feature-card" href={featured.href}>
+          {featuredImage && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={imageSrc(featuredImage).replace(/-\d+\.webp$/, '-400.webp')}
+              alt=""
+              width={400}
+              height={533}
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+          <span className="feature-body">
+            <span className="feature-eyebrow">Featured · History</span>
+            <span className="feature-title">
+              <RichText>{featured.title}</RichText>
+            </span>
+            {featured.summary && (
+              <span className="feature-summary">
+                <RichText>{featured.summary}</RichText>
+              </span>
+            )}
+            {featuredImage && (
+              <span className="figure-credit">
+                <RichText>{featuredImage.artist}</RichText>
+                {' · '}
+                {featuredImage.license}
+                {' · Wikimedia Commons'}
+              </span>
+            )}
+          </span>
+        </Link>
+      )}
 
       {sections.map((section) => {
         const types = getTypes(section.slug)

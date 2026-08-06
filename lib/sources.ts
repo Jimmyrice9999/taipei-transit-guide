@@ -52,6 +52,14 @@ export type Source = {
    * that was never captured cannot be conjured retroactively.
    */
   snapshot: string
+  /**
+   * A second, independent archive of the same URL (in practice archive.today,
+   * where `snapshot` is the Wayback Machine). Added for the sources whose
+   * origin blocks Wayback's crawler: one archive was a single point of
+   * failure, and the 民報 rot proved the failure mode is real rather than
+   * theoretical. Optional; most sources need only one archive.
+   */
+  snapshotAlt: string
   kind: SourceKind
   /** BCP-47 tag for `titleOriginal`, e.g. `zh-Hant`. Empty when English. */
   lang: string
@@ -116,6 +124,9 @@ export function validateSource(source: Source): SourceProblem[] {
 
   if (source.snapshot && !/^https?:\/\//i.test(source.snapshot))
     fail('snapshot', `"${source.snapshot}" is not an http(s) URL`)
+
+  if (source.snapshotAlt && !/^https?:\/\//i.test(source.snapshotAlt))
+    fail('snapshotAlt', `"${source.snapshotAlt}" is not an http(s) URL`)
 
   if (!SOURCE_KINDS.includes(source.kind))
     fail(

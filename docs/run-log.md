@@ -2731,3 +2731,31 @@ with the photographs.
 
 Suite: 177/177 (four new image-compliance tests), claims steady at 32,
 citations clean, postbuild verifies all 147 pages against the three subsets.
+
+---
+
+# Run 6.1 — decisions executed
+
+Jamie's calls on the run-6 open items, and what was done with them:
+
+- **Decision 1 — the 57 KB stays.** The Chinese quotations are the evidence;
+  the weight is the cost of quoting sources in their own language. Recorded,
+  closed, not to be re-optimised (this supersedes nothing — it confirms
+  run 4's decision 3 under the new numbers).
+- **Decision 2 — second archive, overruling the run-6 recommendation to
+  accept single-archive risk.** Jamie's reasoning is on the record and
+  correct: the 民報 source died mid-run, which proves the failure mode
+  rather than theorising it. The source schema gains `snapshotAlt` —
+  rendered as a "mirror" link beside "archived" — for the four
+  `.gov.taipei`/`metro.taipei` sources whose origin blocks Wayback's
+  crawler. archive.today capture attempts for all four are recorded below;
+  Wayback retries continue occasionally as before.
+- **Decision 3 — the 2005 Supreme Court judgment is Jamie's to fetch, and
+  it is FREE**: retrievable through 司法院法學資料檢索系統 (the Judicial
+  Yuan's judgment search), not a purchase as the run-4 handoff implied.
+  Corrected here so nobody budgets for it. The 商業周刊 445 article remains
+  the only actual purchase on the follow-up list.
+- **Home page — the Matra article is featured.** One card above the section
+  listing: thumbnail (with its CC BY-SA credit, which the image test
+  enforces on the home page like anywhere else), eyebrow, title,
+  standfirst. Not a redesign; the home page's job is still wayfinding.
