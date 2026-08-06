@@ -25,11 +25,13 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
-# Node 24, not 22. The test suite and the data scripts are written as .mts and
-# rely on Node running TypeScript directly — unflagged from 23.6, experimental
-# and opt-in before that. On 22 the tests do not run at all.
+# Pinned to the exact version development runs, not a floating major. The
+# suite and the data scripts are .mts and rely on Node executing TypeScript
+# directly (unflagged from 23.6); pinning the patch level means CI and local
+# cannot silently diverge on runtime behaviour. Bump deliberately, with the
+# local toolchain, not by letting the runner drift ahead.
 env:
-  NODE_VERSION: '24'
+  NODE_VERSION: '24.18.0'
 
 jobs:
   test:
@@ -45,11 +47,21 @@ jobs:
 
       - run: npm ci
 
-      # Builds for the root path and runs all five suites against the export.
-      # Deliberately not built with NEXT_PUBLIC_BASE_PATH here: the tests assert
+      # `npm test` bundles four commands; run here as named steps so the
+      # checks UI says WHICH phase failed instead of "Tests → exit code 1".
+      # Deliberately not built with NEXT_PUBLIC_BASE_PATH: the tests assert
       # on site-absolute paths, and the base path is verified separately below.
-      - name: Run tests
-        run: npm test
+      - name: Citations resolve
+        run: npm run cite
+
+      - name: Build (root path, for the test suites)
+        run: npm run build
+
+      - name: Unit and regression tests
+        run: npm run test:unit
+
+      - name: Cross-check stated facts
+        run: npm run facts
 
       # The palette check is a separate guarantee from the contrast tests: it
       # re-derives every badge and accent from source and exits non-zero on
@@ -68,15 +80,11 @@ jobs:
       - name: Accessibility audit
         run: npm run a11y
 
-      # Every figure the site states, against the data it came from. This is
-      # the guard against the class of bug that survived four builds: the same
-      # fact stated in four places with nothing keeping them in step.
-      - name: Cross-check stated facts
-        run: npm run facts
-
       # Real Chromium: reflow at 200%/400% zoom, keyboard traversal, the
       # accessibility tree, and axe-core over every page. Structure checks
-      # cannot see any of this.
+      # cannot see any of this. The verify script exits 2 with instructions if
+      # this install step is ever removed, and emits ::error annotations per
+      # finding — runs #2–#4 failed here saying only "exit code 1".
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 

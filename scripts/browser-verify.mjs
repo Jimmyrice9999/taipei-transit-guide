@@ -113,10 +113,12 @@ function serve() {
 /** One representative per page type, for the expensive checks. */
 const PAGE_TYPES = [
   { name: 'home', url: '/' },
-  { name: 'section-train', url: '/train/' },
+  { name: 'section-rail', url: '/rail/' },
   { name: 'section-bus', url: '/bus/' },
   { name: 'type-lines', url: '/rail/lines/' },
   { name: 'line-wenhu', url: '/rail/lines/wenhu-line/' },
+  { name: 'line-sanying', url: '/rail/lines/sanying-line/' },
+  { name: 'article-matra', url: '/rail/history/matra-dispute/' },
   { name: 'station-br13', url: '/rail/stations/br13/' },
   { name: 'station-br10', url: '/rail/stations/br10/' },
   { name: 'stock-val256', url: '/rail/rolling-stock/val256/' },
@@ -136,6 +138,11 @@ function allPages() {
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name)
+      // out/train holds the /train → /rail redirect stubs. They meta-refresh
+      // instantly, so navigating to one destroys the execution context mid-
+      // measurement — the harness crashes on its own redirects. Not pages;
+      // they have their own test in build-output.test.mts.
+      if (entry.isDirectory() && dir === OUT && entry.name === 'train') continue
       if (entry.isDirectory()) walk(full)
       else if (entry.name === 'index.html') {
         // path.relative(OUT, OUT) is '' — naive joining produced '//', which
@@ -161,6 +168,16 @@ function allPages() {
  * own box is wider than the viewport, which is exactly the bug being hunted.
  */
 async function measureOverflow(page) {
+  /*
+   * Wait for the webfonts before measuring. `load` fires before font swap on
+   * a cold cache, so an early measurement sees fallback-font metrics — which
+   * differ per OS. That is how a page can measure clean on the machine that
+   * wrote it (Arial fallback) and overflow by a few pixels on a CI runner
+   * (Liberation fallback): same HTML, same CSS, same Chromium, different
+   * interim glyph widths. The site's own fonts are identical everywhere, so
+   * measuring after they apply is what makes the number portable.
+   */
+  await page.evaluate(() => document.fonts.ready)
   return page.evaluate(() => {
     const doc = document.documentElement
     const overflow = doc.scrollWidth - doc.clientWidth
@@ -342,7 +359,30 @@ async function ariaProbes(page) {
 
 const { server, port } = await serve()
 const base = `http://127.0.0.1:${port}`
-const browser = await chromium.launch()
+/*
+ * A missing browser is an environment problem, not a finding — it exits 2
+ * with the command that fixes it, so a CI log says "install Chromium" rather
+ * than "exit code 1". The tests this script runs are not weakened or skipped:
+ * with no browser they cannot run at all, and the step fails saying why.
+ */
+let browser
+try {
+  browser = await chromium.launch()
+} catch (error) {
+  console.error(
+    'Could not launch Chromium — browser verification cannot run.\n' +
+      'Install it first:  npx playwright install --with-deps chromium\n\n' +
+      String(error.message).split('\n')[0],
+  )
+  if (process.env.GITHUB_ACTIONS) {
+    console.log(
+      '::error title=Browser verification::Chromium is not installed on this runner. ' +
+        'Add `npx playwright install --with-deps chromium` before this step.',
+    )
+  }
+  server.close()
+  process.exit(2)
+}
 const axeSource = fs.readFileSync(AXE_PATH, 'utf8')
 
 const report = {
@@ -555,12 +595,44 @@ fs.writeFileSync(
   JSON.stringify(report, null, 2),
 )
 
-const failures =
-  report.reflow.length +
-  Object.values(report.keyboard).filter((k) => k.trapped || k.noRing.length).length +
-  Object.values(report.axeSummary).reduce((a, b) => a + b, 0) +
-  report.print.filter((p) => Object.values(p).includes(false)).length
+/*
+ * Every finding as one line, so a failure names itself — in the console, as
+ * a GitHub annotation on the run, and in the step summary. "Exit code 1" is
+ * not a failure message; these are.
+ */
+const findings = []
+for (const r of report.reflow) {
+  findings.push(`reflow: ${r.url} at ${r.width}px overflows by ${r.overflow}px`)
+}
+for (const [name, k] of Object.entries(report.keyboard)) {
+  if (k.trapped) findings.push(`keyboard: focus trap on ${name}`)
+  if (k.noRing.length) {
+    findings.push(`keyboard: no visible focus ring on ${name}: ${k.noRing.slice(0, 3).join(', ')}`)
+  }
+}
+for (const [name, count] of Object.entries(report.axeSummary)) {
+  if (count) findings.push(`axe: ${count} violation(s) on ${name} — details in browser-verification.json`)
+}
+for (const p of report.print) {
+  const bad = Object.entries(p)
+    .filter(([, v]) => v === false)
+    .map(([key]) => key)
+  if (bad.length) findings.push(`print: ${p.name} failed ${bad.join(', ')}`)
+}
+
+if (process.env.GITHUB_ACTIONS) {
+  for (const finding of findings) console.log(`::error title=Browser verification::${finding}`)
+}
+if (process.env.GITHUB_STEP_SUMMARY) {
+  fs.appendFileSync(
+    process.env.GITHUB_STEP_SUMMARY,
+    `## Browser verification\n\n` +
+      (findings.length ? findings.map((f) => `- ✗ ${f}`).join('\n') : '✓ clean — no findings') +
+      `\n\nFull data in the \`verification\` artifact (browser-verification.json).\n`,
+  )
+}
 
 console.log(`\nFull data → docs/browser-verification.json`)
-console.log(failures === 0 ? '\n✓ browser verification clean\n' : `\n✗ ${failures} finding(s)\n`)
-process.exit(failures === 0 ? 0 : 1)
+console.log(findings.length === 0 ? '\n✓ browser verification clean\n' : `\n✗ ${findings.length} finding(s):\n`)
+for (const finding of findings) console.log(`  ✗ ${finding}`)
+process.exit(findings.length === 0 ? 0 : 1)

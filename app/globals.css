@@ -197,9 +197,23 @@ th > .badge:only-child {
     0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
+/*
+ * Wraps. Six sections plus Data stopped fitting a phone in run 5 — 428px of
+ * links on a 320px screen, which put a horizontal scrollbar on every page of
+ * the site and was caught by browser verification, not by eye. Wrapping keeps
+ * every section visible; a scrolling nav would hide the ones that matter
+ * least often behind an affordance the dark band cannot show.
+ */
 .site-nav {
   display: flex;
-  gap: 26px;
+  flex-wrap: wrap;
+  gap: 2px 26px;
+}
+
+@media (max-width: 480px) {
+  .site-nav {
+    gap: 2px 16px;
+  }
 }
 
 .site-nav a {
@@ -3073,10 +3087,14 @@ a.adjacent-link:hover {
   margin: 1.5em 0;
 }
 
+/* Plain paper, not the well: citation marks inside the card are set in the
+   accent ink, which is certified against --bg — putting it on the tinted
+   well dropped four of them below AA. Axe found it; the border and the
+   accent bar carry the card identity without a fill. */
 .thread {
   border: 1px solid var(--rule);
   border-top: 3px solid var(--accent);
-  background: var(--bg-well);
+  background: var(--bg);
   padding: 16px 18px 15px;
 }
 

@@ -2591,3 +2591,45 @@ fixed alongside the tests.
 explicitly), verify pass, facts 16 cross-checks clean, citations clean,
 fonts regenerated from the built output, claims 216 sourced / 13 TBC / 32
 asserted / 13 meta, ratchet tightened 33 → 32.
+
+---
+
+# Run 5.1 — why CI never deployed, from the outside
+
+No logs were readable without repo admin, so the diagnosis came from the
+public Actions API: all three failed runs (#2, #3, #4) died at the **Browser
+verification** step — never at `npm test`, which passed on the runner every
+time. The job is *named* Tests, which is why the failure read as a test
+failure. Neither suspected cause was real: Chromium installs successfully
+two steps earlier, and the Node warning is cosmetic.
+
+What was actually wrong, found by running the step locally and reading it:
+
+1. **The harness crashed on its own redirect stubs (#4).** `allPages()`
+   walked `out/train/`, and a stub's instant meta-refresh destroys the
+   execution context mid-measurement. Excluded, with the reason in place.
+2. **Measurements ran before webfonts settled (the #2/#3 class).** `load`
+   fires before font swap, so reflow was measured against fallback-font
+   metrics — Arial-family locally, Liberation on the runner. Same HTML, same
+   Chromium, different interim glyph widths, findings only where it is
+   tight. Now `document.fonts.ready` gates every overflow measurement; the
+   site's own fonts are identical everywhere, so the number is portable.
+3. **Re-running the fixed harness found three real run-5 regressions**,
+   which would have failed the next push: the six-section nav overflowed
+   every page at 320px (now wraps); the thread cards put accent-ink cite
+   marks on the tinted well, dropping four below AA (cards now sit on plain
+   paper); the contract table had an empty header row (headers added). The
+   article and Sanying pages are now in the browser-verified page set — new
+   layouts get browser coverage, which is how two of these were caught.
+
+Workflow changes: Node pinned to 24.18.0 (was a floating '24'); `npm test`
+split into four named steps so the checks UI names the failing phase;
+browser-verify exits 2 with the install command if Chromium is missing, and
+emits per-finding `::error` annotations plus a step summary — the next
+failure, if any, names itself on the run page instead of saying "exit
+code 1". Nothing was weakened: every check that ran before still runs, plus
+two more pages' worth.
+
+Verified locally in CI's exact order: cite, build, 173/173 unit tests,
+facts, palette, geometry, a11y, browser verification clean, 16/16
+adversarial cases.

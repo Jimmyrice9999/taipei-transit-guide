@@ -172,7 +172,7 @@ second[^ltn-2005].
 
 ## The contract
 
-| | | |
+| Term | Agreed | Source |
 | --- | --- | --- |
 | Matra selected as preferred bidder | 20 April 1988 | [^zh-muzha] |
 | Negotiations concluded | 25 June 1988 | [^zh-muzha] |
