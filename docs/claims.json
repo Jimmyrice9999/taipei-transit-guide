@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 240,
-    "tbc": 13,
-    "asserted": 32,
-    "meta": 15
+    "sourced": 262,
+    "tbc": 14,
+    "asserted": 31,
+    "meta": 17
   },
   "files": [
     {
@@ -57,12 +57,20 @@
       "meta": 0
     },
     {
+      "file": "content/bus/network/joint-operation.md",
+      "sources": 2,
+      "sourced": 12,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/network/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/bus/operators/_index.md",
@@ -178,7 +186,7 @@
     },
     {
       "file": "content/rail/history/matra-dispute.md",
-      "sources": 12,
+      "sources": 13,
       "sourced": 64,
       "tbc": 0,
       "asserted": 0,
@@ -258,11 +266,11 @@
     },
     {
       "file": "content/rail/lines/wenhu-line.md",
-      "sources": 12,
-      "sourced": 49,
-      "tbc": 0,
+      "sources": 15,
+      "sourced": 56,
+      "tbc": 1,
       "asserted": 5,
-      "meta": 4
+      "meta": 5
     },
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
@@ -355,17 +363,17 @@
     {
       "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
       "sources": 11,
-      "sourced": 31,
+      "sourced": 32,
       "tbc": 2,
       "asserted": 7,
       "meta": 0
     },
     {
       "file": "content/rail/rolling-stock/val256.md",
-      "sources": 9,
-      "sourced": 30,
+      "sources": 11,
+      "sourced": 32,
       "tbc": 2,
-      "asserted": 8,
+      "asserted": 7,
       "meta": 0
     },
     {
@@ -619,18 +627,9 @@
       "file": "content/rail/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
-      "text": "| 4 July 2009 | The Neihu extension opens.",
+      "text": "The conversion did not precede the Neihu extension — it was triggered by it, and the sequence is the story: | Date | Event | | 4 July 2009 |",
       "signals": [
         "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "So for nearly eighteen months the whole 24-station line ran on the Bombardier fleet alone, while the trains that had opened the railway sat ",
-      "signals": [
         "count"
       ]
     },

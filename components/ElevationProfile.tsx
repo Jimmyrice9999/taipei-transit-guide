@@ -1,3 +1,4 @@
+import RichText from './RichText'
 import type { Line } from '@/lib/lines'
 import type { Station } from '@/lib/stations'
 
@@ -308,8 +309,11 @@ export default function ElevationProfile({
         <li data-structure="unknown">structure changes somewhere in here; no source says where</li>
       </ul>
 
+      {/* RichText, not a bare string: these captions quote sources in Chinese,
+          and untagged Han loads the wrong font and fails the language audit.
+          Caught by that audit rather than by review. */}
       <figcaption>
-        {caption}
+        <RichText>{caption}</RichText>
         {underground && (
           <>
             {' '}
@@ -320,7 +324,7 @@ export default function ElevationProfile({
             stations, which is fixed by the operator&rsquo;s own chainage. The
             remaining {unlocatedKm.toFixed(2)} km is ramp at the two portals, and
             no source divides it between them — so it is drawn as unplaced rather
-            than split. {underground.note}
+            than split. <RichText>{underground.note}</RichText>
           </>
         )}{' '}
         <span className="profile-caveat">

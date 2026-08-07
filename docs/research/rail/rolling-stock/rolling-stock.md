@@ -301,3 +301,23 @@ single best framing for a `/rail/systems` article.**
 **Secondary:** en.wikipedia Taipei Metro C341 (the Continental Engineering
 procurement); zh.wikipedia 台北捷運371型電聯車, 臺北捷運列車, 大陸工程; NTNU
 document on C371; itcphoto blog; HouseFeel (Circular Line design).
+
+---
+
+## Checked and failed
+
+Claims in this file verified against a source that did not survive. Kept here
+rather than deleted, so the same lead is not chased twice.
+
+- **"51 pairs / 25 trains" and "101 pairs / 51 trains"** — neither divides.
+  Checked 7 August 2026, run 7. A four-car train is two pairs, so 25 trains need
+  50 pairs and 51 trains need 102; both fleet counts here are odd. The totals do
+  reconcile (152 pairs, 304 cars, 76 trains) but the per-fleet figures cannot
+  both be train counts and pair counts of the same thing. The site publishes the
+  arithmetic problem openly rather than picking a reading. Note zh.wikipedia
+  describes the VAL256 as 「非固定編組」, which is one possible explanation and is
+  not the one this file assumes.
+- **"C370" used as the contract number** — the contract is **CB370**. Checked
+  7 August 2026, run 7, against DORTS's own procurement FAQ, which gives
+  木柵線 CC350 and 文湖線 CB370. C370 is the fleet designation, in the C301 /
+  C321 / C341 / C371 / C381 series. Both names are correct for different things.

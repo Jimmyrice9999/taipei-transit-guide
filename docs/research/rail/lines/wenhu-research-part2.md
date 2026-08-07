@@ -247,3 +247,24 @@ be chased:
 - **Business Weekly issue 445** (30 May 1996) — contemporaneous, paywalled, likely
   the best single account of the dispute
 - TRTC press releases for the renewal programme
+
+---
+
+## Checked and failed
+
+Claims in this file verified against a source that did not survive. Kept here
+rather than deleted, so the same lead is not chased twice.
+
+- **The 福州山隧道 on the Muzha section's route** — DORTS's own alignment text
+  says the line 「穿越辛亥隧道北側接和平東路」, passing the north side of the
+  Xinhai road tunnel, and closes 「全線以高架方式興建」, built entirely on
+  viaduct. Checked 7 August 2026, run 7, against the builder's project page.
+  zh.wikipedia 文湖線 does read 「穿越福州山隧道後」, so the two accounts of that
+  half-kilometre disagree — but a viaduct does not run through a hill, and the
+  site's section drawing follows the builder. Not settled; do not publish a
+  tunnel here.
+- **"The 1993 fire" as a single event** — there were two, and the second is
+  recorded as exactly that. Checked 7 August 2026, run 7, against zh.wikipedia
+  麟光站: 「1993年5月5日：辛亥站前發生火燒車事件」 and 「1993年9月24日：發生第二次
+  火燒車事件」. Treating the year as one incident understates the pattern that
+  produced the Control Yuan impeachments.

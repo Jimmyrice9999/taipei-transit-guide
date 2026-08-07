@@ -1,8 +1,8 @@
 {
   "note": "The ratchet in tests/sourcing.test.mts. May fall, may not rise. Regenerate with npm run claims and copy totals here.",
-  "recorded": "2026-08-06",
-  "sourced": 216,
-  "tbc": 13,
-  "asserted": 32,
-  "meta": 13
+  "recorded": "2026-08-07",
+  "sourced": 262,
+  "tbc": 14,
+  "asserted": 31,
+  "meta": 17
 }

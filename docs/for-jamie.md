@@ -1,92 +1,143 @@
 # For Jamie
 
-Written 7 August 2026, after run 7. Assume you read this and nothing else.
+Written 7 August 2026, after runs 7.1 and 7.2 — your nine decisions and the
+formation fix are executed. Assume you read this and nothing else.
 
-The one-line version: **the corpus is indexed, the two devices it deserved are
-built, and the site was contradicting itself about how its trains take power.**
-Suite: 178 tests green, 18 fact cross-checks clean, claims ratchet holding at 32
-with sourced claims up 216 → 240, axe-core at zero across 85 pages.
+The one-line version: **two of your three verifiable calls checked out, one
+didn't, and writing the bus page killed most of what the research said about
+buses.** Suite: 178 tests green, 18 fact cross-checks clean, `npm run research`
+clean and new, axe-core zero across 86 pages, **ratchet tightened 32 → 31** with
+a new page and two new sections added, sourced claims 240 → 262.
 
-## The five screenshots worth your time
+## Where I have to correct you
 
-| File in `docs/screenshots/` | Why |
-| --- | --- |
-| `prof-1440-r7prof3.png` | **The section drawing.** The line dives under the airport and the river; the two hatched wedges are the portals, whose positions no source gives. The thing the brief said no English source has. |
-| `ladderc-1440-r7ladder2.png` | **The numbering X.** Two orders, twenty-four hairlines, one crossing. It is the finding rather than a description of it. |
-| `st-1440-r7station.png` | The station page rebuilt: code at platform-sign scale, exits, engineering number, and the planned-interchange strip that must not read as an interchange. |
-| `idx-1440-r7index.png` | `/rail/lines/` listing all ten lines again — see decision 4. |
-| `profm-375-r7prof3.png` | The section drawing on a phone, opened so the tunnel is on screen before you scroll. The mobile answer that is not "hide it". |
+**Decision 1, the tunnel. Your conclusion is right and both your reasons are
+wrong.** The two sources do not use the same 北側 construction — DORTS says
+「穿越**辛亥隧道北側**接和平東路」, zh.wikipedia says 「穿越福州山隧道**後**」,
+*after passing through*. And 麟光站 does not mention 福州山隧道 at all; the string
+is not on the page. (富陽自然生態公園 is, in Exit 1's list — a different landmark.
+There is no 福州山隧道 article either; the URL 404s.) You told me to verify that
+listing before publishing, which is exactly why I found it.
 
-## Decisions only you can make
+The conclusion survives on something better: **DORTS says the Muzha section is
+「全線以高架方式興建」, built entirely on viaduct.** Primary, unambiguous, and about
+structure rather than about what the line passes near. A viaduct does not run
+through a hill. The drawing is unchanged; the caption now makes that argument
+instead of yours.
 
-**1 — The Fuzhou Mountain Tunnel.** DORTS says the Muzha section is
-「全線以高架方式興建」, built entirely on viaduct, and describes the alignment as
-passing the *north side* of the Xinhai road tunnel. zh.wikipedia and the research
-corpus both say the line goes *through* a Fuzhou Mountain tunnel between BR05 and
-BR06. The section drawing follows the builder and its caption names the
-disagreement — but one stretch of a published illustration is uncertain, and
-illustrations are where nobody reads a footnote. **Someone needs to look at that
-half-kilometre.** It is the only thing in this run I would call unfinished.
+**Decision 2, the fleet arithmetic. Your hypothesis argues against its own
+conclusion.** Moving a pair from Bombardier to Matra gives 52/100, which is
+worse. Getting to 25 and 51 trains needs a pair moved the *other* way — out of
+the Matra fleet and into a Bombardier train — which is a mixed train, the thing
+the hypothesis was meant to rule out.
 
-**2 — The fleet arithmetic, fourth run of asking.** 51 VAL pairs, 101 Innovia
-pairs, four-car trains made of two pairs. Both numbers are odd, so *neither fleet
-alone forms a whole number of trains* — only the sum does. Either a pair is
-stabled spare in each fleet, or at least one train is formed across both. **If it
-is the second, this site's framing of the two fleets as separate is wrong**, and
-that framing is load-bearing on three pages. The corpus reproduces the same
-arithmetic without noticing.
+But the search turned up something that does rescue it: **zh.wikipedia says the
+VAL256 runs 「非固定編組」, a non-fixed formation.** If pairs are re-formed in
+maintenance, the two counts are just two things measured on different days and
+there is no discrepancy at all. Not confirmed, so — as you instructed — the
+arithmetic is now published openly on the line page with all three readings and a
+note saying which one would make the page wrong.
 
-**3 — `docs/research/research-findings.md` does not exist.** The run log cites it
-a dozen times. Its content appears to have been absorbed into the per-line
-research files. Either restore it or let me rewrite the references — but a
-document citing a file that is not in the repository is the same failure as a
-citation to a dead URL.
+Side effect worth knowing: 非固定編組 contradicts "permanently coupled pairs",
+which the site said in three places. All three are fixed — see *the formation
+claim* below.
 
-**4 — The lines index was hiding seven of nine line pages, and I changed it
-without asking.** The comparison table replaced the link list whenever two pages
-had specs. Written when there were two line pages; still in place at ten. I put
-the list back above the comparison. If you wanted the comparison to lead, say so
-and I will reverse it — but the index has to list the pages.
+## What confirmed, and what changed because of it
 
-**5 — `docs/framework.md` is out of date in three places.** It calls
-`blue-highway.md` "thin, gap statement only" when it is 261 lines with primary
-sourcing; it maps twenty-five research files when twenty-one exist; and its
-publication queue still lists the Sanying Line as unwritten. I have not edited it
-— it is your document and it records intent, not state.
+**Decision 3, two fires — confirmed verbatim**, including 「發生**第二次**火燒車
+事件」. Both dates and the numbering are now on the Matra article and the line
+page, framed as you put it: one fire is an accident, two is a pattern, and the
+pattern is what makes the impeachments and the eight-year council refusal
+explicable. It also closes the flag I raised last run — the September entry was
+on 〈麟光站〉, not 〈木柵線〉, one article away from where I looked.
 
-**6 — I disagree with the publication queue in two places**, argued in run-log
-§59.2. Short version: **the joint bus network explainer should be second, not
-ninth** — it is primary-sourced, one page, needs no research pass, and corrects
-something no English source carries. And **the C341 procurement should come off
-the list** until it has a second source: it is a specific and embarrassing claim
-about a named company resting on one encyclopedia, and it currently outranks two
-items with primary sourcing.
+**Decision 9, both 麟光 details — confirmed and published.** First station
+completed with two exits, fewest ticket machines on the network. They sit in the
+exits section where they earn their place.
 
-## The highest-value page you could write this week
+**Decision 9, the 1986 plan — half confirmed.** 八德路, 慶城街, 木柵公園 and
+木柵國小 do not appear in 〈木柵線〉; I checked each string individually. What does
+is better than nothing and is now a short section on the line page: a 13 km
+scheme was already settled, **Muzha residents objected, and on 4 May the northern
+section was moved onto Fuxing South and North Roads**. The earliest instance of
+the pattern the site records twice more. The station cancellations may well be
+real; they are not confirmed and are not published.
 
-**`/bus/network`.** Not the Xinyi East Extension — its window is narrow and its
-sourcing is a wiki, which is the worst thing to be writing against a deadline.
-Not the Circular 403 article — it is the better story and it is not a week's work
-done properly.
+## The bus page, and what it cost
 
-The bus explainer, because someone in Taipei looking at a 藍26 has no way in
-English to know it is a Bannan Line feeder, and four rows of a table fix that
-permanently. It needs four things, all listed in run-log §59.3, and none of them
-is a research programme.
+`/bus/network/joint-operation/` is written. **Four claims from the research died
+on first contact**, including the two the corpus calls its best content:
 
-## Standing items, carried
+- The number bands are **not geographic** — the better-sourced reading is fare
+  segments and service type. Published as an unresolved disagreement, with the
+  geographic bands deliberately *not* tabulated, because a table is an assertion.
+- The feeder-colour table was **missing a line**: 橘 = O = Zhonghe–Xinlu. Five
+  prefixes, not four.
+- The trunk network is **八橫八縱, eight and eight**, not 19 routes.
+- **The revenue-pooling model — the whole point of the page — is not described by
+  the Public Transport Office.** It is in a "what this page does not yet say"
+  section rather than published on a paraphrase.
 
-- **archive.today still refuses automation** (429 on all six). One manual visit
-  per URL settles it. **Wayback, though, now accepts `.gov.taipei`** — it was
-  returning 523 in run 4 and is not today, so 20 new snapshots landed this run.
-- **Ten station pages are still bare.** Fourteen of twenty-four now have a
-  photograph, up from three. The remaining ten have a *reviewed* shortlist at
-  `docs/commons-candidates.txt`, so the next attempt starts from a list rather
-  than a search — Commons rate-limits the search hard, which is what stopped it.
-  Three candidates were rejected on sight, including a photograph of the Maokong
-  Gondola station filed as Taipei Zoo MRT.
-- **The corpus has no memory.** `sanying-line.md` still carries two claims run 5
-  checked and killed. Anyone reading it fresh will reintroduce them. Worth a
-  convention — a "checked and failed" line in each research file — before the
-  corpus is used again.
-- The claims ratchet is at 32 and the baseline is committed.
+The colour collision you and I both wanted is unsourced on two attempts and is
+recorded as a gap. What is published is what survived, and the page says so.
+
+## Decisions with nothing to argue about
+
+**4** — eight dead references rewritten to point at the file and section each
+claim now lives in. Nothing restored. **5** — noted, thank you. **6** —
+framework at Version 1.1 with a standing staleness note, the ferry file
+reclassified, the count corrected to 21, the queue rewritten. **7** — bus to
+second, C341 off with the reason written into the framework rather than left in a
+run log. **8** — `## Checked and failed` on four research files, nine claims
+recorded, and `npm run research` enforcing a date, a reason, and that a dead
+claim is not still asserted earlier in the same file. It found a bug in itself on
+its first run, which is in the script's comments.
+
+## Done since: the formation claim
+
+It was in **three** places, not two — the third was the formation diagram's own
+key, which printed "permanently coupled" on both fleet pages. An unsourced
+assertion inside an illustration. The key now says "one unit", which is what the
+notation actually encodes; the spec rows went from "Married pairs" to "Pairs" and
+are re-sourced to DORTS.
+
+**VAL256** now carries the non-fixed formation as the sourced position, marked
+Medium, with the sentence that matters: it is the reading that rescues the
+line-level arithmetic, *which is a reason to want it to be true and therefore a
+reason to mark it carefully.*
+
+**Innovia**: checked, and nothing says either way — 2M+2M and silence on
+permanence. The page's old line ("nothing sourced indicates the two fleets
+differ") was an argument from silence carrying an assertion nobody had made.
+Both gone.
+
+One thing worth knowing: `npm run facts` **refused my first draft** of that
+paragraph, because I wrote "TRTC does not publish it" and the absence-register
+rule requires naming the field looked for. Registering one would have been
+nonsense — it is not a dataset field. The sentence was wrong in a subtler way,
+and now says nothing searched *here* has answered it, which is a claim about this
+site rather than about the operator.
+
+Ratchet **tightened to 31**, one below baseline, with two new sections added.
+
+## What still needs you
+
+1. **What the Innovia's formation actually is.** Two fleets on one line, one
+   described as non-fixed, the other described not at all. A TRTC maintenance
+   document or an Alstom product sheet would settle it — and would settle the
+   line-level arithmetic that depends on it.
+2. **The trunk-bus colour claim** — best unwritten thing on the bus page,
+   unsourced twice.
+3. **How the bus revenue pool works** — the structural claim the section was
+   built on.
+4. **Read 〈木柵線〉 in full.** Two things this run wanted were in it or not, and a
+   summarising read could not tell: the 1986 station cancellations, and whether
+   the September fire is there at all.
+5. archive.today still refuses automation (six URLs). Ten station pages still
+   bare, shortlist at `docs/commons-candidates.txt`.
+
+## Screenshots
+
+`bus-1440-r71.png` is the new page. The five from last run still stand — the
+section drawing, the numbering X, the station page, the lines index, and the
+profile on a phone.

@@ -5,8 +5,21 @@
  *
  *   formation: Mc1=M2 + M2=Mc1
  *
- *   =   permanently coupled within a unit (a married pair)
+ *   =   cars within one unit (a pair)
  *   +   coupling between units
+ *
+ * ── Why `=` no longer says "permanently" ─────────────────────────────────────
+ * It used to, in the notation and in the rendered key, on both Wenhu fleet
+ * pages. That is a claim about how the units are held together, and it turned
+ * out to be contradicted for one of the two fleets: zh.wikipedia describes the
+ * VAL256 as 「非固定編組」, a NON-fixed formation, with four consecutively
+ * numbered cars making a train rather than a permanent set. Nothing found says
+ * either way for the Innovia.
+ *
+ * The notation only ever encoded car order and unit boundaries. Permanence was
+ * an extra assertion riding along inside an illustration, on two pages, where
+ * nobody reads a footnote. The key now states what the drawing knows.
+ * ─────────────────────────────────────────────────────────────────────────────
  *   Mc  a car with a driving cab, by the usual convention — Mc cars at the ends
  *       of the train get a cab wedge drawn on their outer end
  *
@@ -86,7 +99,7 @@ export default function FormationDiagram({ formation }: { formation: string }) {
         <span className="formation-key-sep">·</span>
         <span className="formation-key-item">
           <span className="formation-key-swatch" data-kind="pair" aria-hidden="true" />
-          permanently coupled
+          one unit
         </span>
         <span className="formation-key-item">
           <span className="formation-key-swatch" data-kind="coupler" aria-hidden="true" />

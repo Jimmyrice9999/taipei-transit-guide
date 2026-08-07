@@ -105,9 +105,9 @@ specs:
     value: "202"
     unit: cars
     source: zh-innovia
-  - label: Married pairs
+  - label: Pairs
     value: "101"
-    source: zh-innovia
+    source: dorts-fleet-faq
   - label: Tyre replacement interval
     value: TBC
 sources:
@@ -140,7 +140,7 @@ sources:
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
-    note: Source for the C370 contract designation and the Tang Eng final-assembly split.
+    note: "Source for the C370 fleet designation and the Tang Eng final-assembly split. Also the only source found describing the VAL256 as 「非固定編組」, a non-fixed formation — cited here because it is what makes the two fleets' formations a possible difference rather than an assumed sameness."
   - id: zh-val256
     title: Taipei Metro VAL256 electric multiple unit
     titleOriginal: 台北捷運VAL256型電聯車
@@ -269,10 +269,26 @@ C370 takes power through **side-contact** shoes with a fourth-rail
 return[^zh-innovia], where the VAL256 uses a bottom-contact shoe[^zh-val256].
 Both work off the same 750 V supply on the same guideway.
 
-*Interior layout, air conditioning, passenger information and tyre
-specification are still to be documented. Nothing sourced so far indicates the
-two fleets differ in formation — both are four cars in two permanently coupled
-pairs, and the diagrams above say so.*
+### Formation — and a difference this page used to deny
+
+Cars come in pairs, 101 of them under contract CB370[^dorts-fleet-faq], and a
+train is two pairs: **2M+2M**[^zh-innovia]. That much is settled.
+
+**Whether the pairs are permanently married into fixed sets is not stated in
+anything found here.** zh.wikipedia gives the formation as 2M+2M and says
+nothing about coupling permanence, and no Bombardier or Alstom document survives
+the retirement of the product pages. Nothing searched on the operator's side has
+answered it either — which is a statement about this site's searching, not about
+what the operator publishes.
+
+That matters because **the other fleet on this line is described as
+「非固定編組」 — non-fixed**[^zh-taipei-fleet]. So the two fleets may well differ
+here, and this page used to say the opposite: that nothing sourced indicated a
+difference in formation and both were "permanently coupled pairs" — an argument
+from silence carrying an assertion nobody had made. Both are gone.
+
+*Interior layout, air conditioning, passenger information and tyre specification
+are still to be documented.*
 
 ## Fleet history
 

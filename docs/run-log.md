@@ -25,8 +25,10 @@ Read this before the site.
 **The headline is §2.1.** The site was publishing a route length 1.25 km too
 long, and asserting on three separate pages that TDX does not publish the real
 one. It does, and the data was already committed to this repository. The same
-file also settles the 25.1-vs-25.7 question that `docs/research/research-findings.md` was
-commissioned to investigate.
+file also settles the 25.1-vs-25.7 question the run-1 research was commissioned
+to investigate. *(That research file no longer exists; its content is now in
+`docs/research/rail/lines/wenhu-line.md`, §“The length question”. Re-pointed in
+run 7 — see decision 4 in `docs/for-jamie.md`.)*
 
 **Second headline, §2.4.** The network map drew seven lines distinguished by
 colour alone, and two of the seven are indistinguishable under protanopia — a
@@ -188,7 +190,8 @@ line codes vanish entirely. Caveat in §4.
 
 ## Part 9 — Research
 
-`docs/research/research-findings.md`. Nothing promoted to content except the route
+Written up as `docs/research/research-findings.md`, since absorbed into the
+per-line files. Nothing promoted to content except the route
 length, which is argued in §2.1 and §3. Headline results: **BR13 and BR14
 confirmed** as the underground pair (your assumption was right); the
 25.1-vs-25.7 question **resolved** as two different measurements; the Innovia
@@ -261,7 +264,8 @@ disagrees by more has holes in its geometry, and **the size of the disagreement
 matches the size of the holes found independently** in the chaining audit. That
 is the check working, and it is now visible on the page rather than asserted.
 
-Research (§9 of `docs/research/research-findings.md`) then closed the loop: zh.wikipedia's
+Research — now `docs/research/rail/lines/wenhu-line.md`, “The length question” —
+then closed the loop: zh.wikipedia's
 infobox carries **both** 「營運長度 25.18公里」 and 「路線長度 25.7公里」. The
 three figures were never in conflict — they are revenue length, total route
 length including non-revenue track, and (ours) the whole drawn alignment.
@@ -482,7 +486,10 @@ premature figure.
 **To revert:** `content/train/lines/wenhu-line.md` and the `officialKm` column
 in `app/train/network/page.tsx`. The rest of the code change stands alone.
 
-Everything in `docs/research/research-findings.md` — the underground stations, the
+Everything in the run-1 research — now split across
+`docs/research/rail/lines/wenhu-line.md`,
+`docs/research/rail/rolling-stock/rolling-stock.md` and
+`docs/research/rail/depots/depots.md` — the underground stations, the
 depot areas, the fleet figures, the Matra dispute — is untouched in content, as
 instructed.
 
@@ -563,7 +570,9 @@ design decision with a real cost on both sides, and not one to take unattended.
    someone who knows the colour science better than I do.
 3. **Whether 26 or 18 is the right interchange count** (§2b.3).
 4. **The Innovia APM 256 fleet size.** Sources differ threefold. See
-   `docs/research/research-findings.md` §5.
+   `docs/research/rail/rolling-stock/rolling-stock.md`, “Bombardier Innovia APM
+   256 / C370”, and `docs/research/rail/lines/wenhu-line.md`, “A manufacturing
+   conflict”.
 5. **Whether Muzha Depot houses one fleet or both.** The site says VAL256 only;
    zh.wikipedia says both types. The site's claim is currently unsourced.
 6. **The Neihu Depot siting dispute**, which the site asserts as fact. I found
@@ -1290,7 +1299,8 @@ given for it is not.
 original Matra signalling stripped out and replaced with the Bombardier CITYFLO
 650."**
 
-The timing looks wrong. Research (run 1, `docs/research/research-findings.md` §6) puts the
+The timing looks wrong. Research (run 1; now
+`docs/research/rail/lines/wenhu-line.md`, “VAL256”) puts the
 CBTC conversion as *beginning* 4 July 2009 — the day the extension opened — with
 converted units returning to passenger service **26 December 2010**. "Ahead of"
 inverts that.
@@ -1728,7 +1738,9 @@ does, twice, and both times the sweep was done carefully.
 
 # 24. Research findings by topic
 
-Full detail in `docs/research/research-findings.md` §11–§15 and `docs/drafts/matra-dispute.md`.
+Full detail now lives in `docs/research/rail/lines/wenhu-research-2026-08.md`,
+`docs/research/rail/lines/wenhu-research-part2.md` and
+`docs/research/rail/depots/depots.md`, plus `docs/drafts/matra-dispute.md`.
 Headlines only here.
 
 ## Rolling stock
@@ -1851,7 +1863,8 @@ Asked for explicitly, because the line-colour episode proved they can be wrong.
 **Two cross-checks, both against DORTS, both of which held** — the underground
 pair and the section lengths. Everything else rests on the secondary source's own
 accuracy. The full matrix of what was and was not verified is in
-`docs/research/research-findings.md` §15, including the one case where verification was
+`docs/research/rail/lines/wenhu-research-part2.md`, “Source quality”, including
+the one case where verification was
 impossible: 〈龐巴迪INNOVIA APM 256型電聯車〉 cites Bombardier product pages that
 were retired after the Alstom acquisition, so the primary layer under the site's
 best rolling-stock source is currently unreachable.
@@ -3588,8 +3601,11 @@ suffixes.
    Fourth run of asking.
 3. **The 24 September 1993 second fire** (§53.2). Needs somebody to read 〈木柵線〉
    in full rather than a summary of it.
-4. **`docs/research/research-findings.md` does not exist** and this log cites it a
-   dozen times. Either restore it or rewrite the references.
+4. ~~**`docs/research/research-findings.md` does not exist** and this log cites it
+   a dozen times.~~ **Done in run 7.1** — decision 4 was "rewrite the references,
+   don't restore a file we'd have to keep in sync". All eight citations now point
+   at the per-line file and section the claim actually lives in. The three
+   remaining mentions are statements *about* the file, not citations to it.
 5. **`docs/framework.md` is out of date** in three places: it calls
    `blue-highway.md` "thin, gap statement only" when it is 261 lines with primary
    sourcing; it maps twenty-five research files when twenty-one exist; and its
@@ -3601,3 +3617,412 @@ suffixes.
    still have no second archive. One manual visit each settles it.
 8. **Ten station pages are still bare**, with a reviewed shortlist waiting at
    `docs/commons-candidates.txt`.
+
+---
+
+# Run 7.1 — decisions executed
+
+Nine items. Two of the three that needed verification confirmed; one did not, and
+the correction is §64.1. **The bus page was written, and writing it killed most
+of what the research said about buses** — §70.
+
+Final state: build green, **178 tests**, citations clean, 18 fact cross-checks,
+`npm run research` clean (new), axe-core zero across **86** pages, ratchet
+holding at 32 **with a new page added**, sourced claims 240 → 259.
+
+---
+
+# 64. Decision 1 — the tunnel: right conclusion, wrong reasons
+
+**The conclusion holds. Neither stated reason does, and both were checkable.**
+
+## 64.1 The two sources do not use the same construction
+
+The decision says both use 北側 and differ only on which tunnel they name. They
+do not.
+
+| Source | Actual wording |
+| --- | --- |
+| DORTS | 「穿越**辛亥隧道北側**接和平東路」 — the north side of the **Xinhai** tunnel |
+| zh.wikipedia 文湖線 | 「穿越**福州山隧道後**，再沿著和平東路」 — **after passing through** the **Fuzhou Mountain** tunnel |
+
+後, not 北側. Checked twice, the second time asking explicitly which of the two
+constructions appears. The parallel that the argument rests on is not there.
+
+## 64.2 The corroboration does not exist
+
+麟光站 does not mention 福州山隧道 anywhere — the string is not on the page. What
+is there is 富陽自然生態公園, in Exit 1's list of what the exit serves, which is a
+different landmark. There is also no 福州山隧道 article on zh.wikipedia to
+establish it as a road tunnel; the URL 404s.
+
+The instruction was "verify the 麟光站 attraction listing yourself before
+publishing", and this is what verifying it found.
+
+## 64.3 The conclusion is still right, on better evidence
+
+**DORTS says the Muzha section is 「全線以高架方式興建」 — built entirely on
+viaduct.** That is primary, unambiguous, and about structure rather than about
+what the line passes near. A viaduct does not run through a hill.
+
+That is a stronger argument than either of the two offered, and it is the one the
+site now makes. The drawing is unchanged. The caption is rewritten to say what is
+actually in dispute: not whether the railway is in a tunnel, but two irreconcilable
+descriptions of the same half-kilometre, one of which implies a tunnel and one of
+which rules one out.
+
+**Recorded in the corpus** as a checked-and-failed claim against
+`wenhu-research-part2.md`, so the tunnel is not chased again.
+
+---
+
+# 65. Decision 2 — the fleet arithmetic: tested, and the hypothesis does not hold
+
+Tested against TRTC rather than DORTS, as instructed. **The hypothesis does not
+survive its own arithmetic**, and something better turned up.
+
+## 65.1 Why 50/102 does not rescue the separate-fleets framing
+
+The decision proposes a contract split of 51/101 and an operational split of
+50/102, "one pair moved from Bombardier to Matra".
+
+Moving a pair from the *Bombardier* column to the *Matra* column gives 52/100,
+which is worse. Getting to 25 Matra trains (50 pairs) and 51 Bombardier trains
+(102 pairs) requires moving a pair the other way — **out of the Matra fleet and
+into a Bombardier train**. That train would then be one fleet's pair coupled to
+the other's, which is precisely the mixed formation the framing says does not
+happen. The hypothesis, followed through, argues against its own conclusion.
+
+## 65.2 What the search actually turned up
+
+TRTC has no published fleet-count page; the renewal reporting is the only source
+of train counts, and it gives 25 and 51. But zh.wikipedia 臺北捷運列車 carries
+something neither of us had: **the VAL256 runs 「非固定編組」 — a non-fixed
+formation**, four consecutively-numbered cars making a train rather than a
+permanent set.
+
+If pairs are re-formed in maintenance, "51 pairs" and "25 trains" are simply two
+different things counted on two different days, and **there is no discrepancy to
+explain and no mixed train required**. That is the reading that rescues the
+framing, and it is not the one the hypothesis proposed.
+
+It is also not confirmed. So, as instructed:
+
+## 65.3 Published as an unresolved question
+
+`/rail/lines/wenhu-line/` now carries a section — *The fleet totals do not
+divide, and this site cannot say why* — stating the arithmetic, listing all
+three readings (a spare pair per fleet; non-fixed formations; one mixed train),
+and saying which one would make the page wrong. Four runs of asking is enough;
+it is visible now.
+
+**One consequence.** The site described both fleets as "permanently coupled
+pairs". 非固定編組 contradicts that for the VAL256, so the line page no longer
+says it. The fleet pages still do, and that needs a proper look.
+
+---
+
+# 66. Decision 3 — two fires, confirmed, and every page corrected
+
+**Confirmed verbatim** from zh.wikipedia 麟光站:
+
+- 「1993年5月5日：辛亥站前發生火燒車事件」
+- 「1993年9月24日：發生**第二次**火燒車事件」
+
+The second is explicitly numbered as the second. 自由時報 in 2005 independently
+describes 「接連被兩把大火燒得焦黑的電聯車」 — trains burned black by two
+successive fires.
+
+**This also closes the flag run 7 raised and could not settle.** That pass
+re-read 〈木柵線〉, which carries the May fire and not the September one, and
+concluded — correctly, and cautiously — that a source failing to confirm is not a
+source contradicting. The September entry was on 〈麟光站〉 all along. The right
+call was made for the right reason and the answer was one article away.
+
+**Which fire DORTS's 輪胎起火意外事故 refers to: it does not say.** No date, no
+ordinal, and nothing found resolves it. That is now the gap on the article rather
+than the date.
+
+Changed:
+
+- **The Matra article** — the fires section is rewritten around there being two,
+  and why two matters: *one fire during testing is an accident; two is a
+  pattern*, and a pattern is what makes MOTC halting all work, eight impeachments
+  and an eight-year council refusal explicable. Both table rows updated with the
+  Chinese wording and the correct location for the first (辛亥站前).
+- **The Wenhu line page** — "a tyre ignition accident during system testing" was
+  singular and is now "two fires during testing in 1993, on 5 May and 24
+  September".
+- **Both pages** gain 麟光站 as a source.
+
+---
+
+# 67. Decision 4 — the dead references, rewritten
+
+Eight citations to `docs/research/research-findings.md` now point at the file and
+section where the claim actually lives — mostly
+`docs/research/rail/lines/wenhu-line.md`,
+`wenhu-research-part2.md` and `rolling-stock.md`. Nothing was restored, per the
+instruction.
+
+Three mentions of the filename remain and are meant to: one recording that run 1
+wrote it, and two in the run-7 report noting that it does not exist.
+
+---
+
+# 68. Decision 6 — the framework updated, with a staleness line
+
+`docs/framework.md` is now **Version 1.1, last updated 7 August 2026**, with a
+standing note at the top: this document records intent, it goes stale silently,
+and where it disagrees with the run log the run log wins.
+
+- **`blue-highway.md` reclassified** from "thin, gap statement only" to good —
+  261 lines, primary-sourced on the 2004 origin, the four operators and the
+  EasyCard integration.
+- **The file count corrected to 21**, with an accounting of the four that were
+  miscounted, and a pointer to `docs/research/INDEX.md`.
+- **The publication queue rewritten** per decision 7 (§69).
+- **Known open items refreshed**: the three suspect claims are struck (corrected
+  in run 3), the photograph count is 10 bare rather than 21, and the archive note
+  now records that Wayback accepts `.gov.taipei` again.
+- **The 「Checked and failed」 convention documented** where the research layout
+  is described.
+
+---
+
+# 69. Decision 7 — the queue
+
+Both changes taken. The bus explainer to second; the C341 procurement off the
+list until it has a second source, with the reason written into the framework
+rather than left in a run log. Airport MRT held for the same class of reason —
+the Marubeni outcome is unknown and the arc is the article.
+
+---
+
+# 70. The bus page — written, and it cost the section most of what it knew
+
+`/bus/network/joint-operation/`. **Four claims from `bus-network.md` did not
+survive their first verification**, including the two the corpus calls its best
+content. This is the corpus behaving exactly as a lead file should, and it is
+worth setting out because the page that resulted is a different page from the
+one that was promised.
+
+| Research claim | What checking found |
+| --- | --- |
+| **Number bands are geographic** — 1–99 core, 100–199 outward, 200–299 cross-district | zh.wikipedia says the leading digit records **fare segments and service type**, not geography: 1xx leisure, 2xx originally two-segment, 3xx three-segment, 5/6/7xx air-conditioned, 9xx express. **Materially different claim.** The corpus flagged this as needing confirmation against PTO; PTO publishes no numbering principles at all. |
+| **Four feeder colour prefixes** — 紅 綠 藍 棕 | **Five.** 橘 = O = Zhonghe–Xinlu is missing from the corpus's table — from the table it calls "probably the highest-value thing the bus section could publish". |
+| **19 trunk routes** | The 八橫八縱 network is **eight and eight**. The 19 is not confirmed. |
+| **Revenue pooled and centrally redistributed** (營業收入統一，統籌分配) | **The Public Transport Office's own introduction does not describe it.** This was the corpus's "single most useful thing a page could explain" and it is the one thing the primary source does not say. |
+
+**What is published is what survived**, and the page says plainly what it cannot
+yet say:
+
+- **Primary, from the regulator:** ~280 routes, 14 operators, ~3,500 vehicles,
+  the 1976 preparatory committee, and the six official service categories —
+  which are 一般路線 / 幹線公車 / 捷運接駁公車 / 山區公車 / 休閒公車 / 市民小巴,
+  not the four-tier 快速·幹線·支線·微循環 hierarchy the corpus gives (that is a
+  2014 campaign policy, not the operating taxonomy).
+- **Confirmed, secondary:** the five feeder prefixes with the line each feeds;
+  the Airport MRT having none; the suffix vocabulary; 八橫八縱; and 棕9 becoming
+  南京幹線, which is the colour prefix being dropped from a route that had one.
+- **Published as unresolved:** what the numeric bands encode. Both readings are
+  described; **the geographic bands are deliberately not tabulated**, because
+  nothing found attaches a source to them, and a table is an assertion.
+- **Published as absent:** the money, and the trunk colour-direction claim. Both
+  are in a *What this page does not yet say* section rather than omitted
+  silently, because a reader should be able to see the shape of the hole.
+
+**The colour collision — the page's best available content — is not there**, and
+that is the honest outcome. The claim that trunk green means north–south while
+feeder green means Songshan–Xindian is unsourced on both this run's checking and
+the corpus's own admission. If it holds it is the best thing on the page; it is
+recorded as a gap, not written up.
+
+**The ratchet held at 32 with a whole new page added**, which is the discipline
+working: three sentences on the new page needed citations before the suite went
+green, and one needed rewording because it asserted bands nobody sources.
+
+---
+
+# 71. Decision 8 — the corpus now has a memory
+
+`## Checked and failed` sections added to four research files, recording nine
+claims that have been verified and did not survive — what the claim was, what
+disproved it, and when.
+
+`npm run research` (new, wired into `npm run verify`) enforces three things:
+
+1. Every entry names a **date**. When it was checked is the whole value of the
+   record.
+2. Every entry gives a **reason**, not just a verdict.
+3. **A claim recorded as failed does not still appear, unqualified, earlier in
+   the same file** — which is the exact rot `sanying-line.md` had for two runs.
+
+`sanying-line.md`'s two dead claims are struck through in place rather than
+deleted, so the same lead is not chased twice, and the check now guards them.
+
+**The check found a bug in itself on its first run**, which is recorded in the
+script: a lookahead ending in `$` under the `m` flag stops at the first newline,
+so multi-line entries were truncated to their first line and it reported a
+missing date on an entry whose date was on line two. Entries are split on the
+bullet marker now.
+
+It cannot detect an *unrecorded* contradiction — nothing can, short of reading.
+What it can do is stop a recorded one rotting back in, which is the case that
+actually happened.
+
+---
+
+# 72. Decision 9 — the two 麟光 details, and the 1986 protest
+
+## 72.1 Both Linguang details confirmed and published
+
+From 麟光站, verbatim: 「共有兩個出入口，也是台北捷運1996年通車後第一座完工時就有
+兩座出入口的車站」 and 「本站也是台北捷運全系統中自動售票機最少的車站（僅有兩台）」.
+
+Published on the line page's exits section, where they belong: BR06 is the
+exception that shows the single-exit constraint was real, and it is the station
+with the fewest ticket machines on the network. Small, verifiable, and the kind
+of thing this site is for — exactly as the decision put it.
+
+## 72.2 The 1986 alignment changes — partly confirmed, and less than described
+
+**Not found in 〈木柵線〉:** 八德路, 慶城街, 木柵公園 or 木柵國小. Checked by
+asking for each string individually; none appears.
+
+**Found, and it is the important half:** 「然而在隔年1月時，雖然長13公里的木柵線在
+動物園至六張犁段已定案，但**木柵地區的居民對此反對**，隨後，木柵線走線在同年5月4日
+決定在北段改走復興南北路。」 — a 13 km scheme from the zoo to Liuzhangli had been
+settled; Muzha residents objected; on 4 May the northern section was redirected
+onto Fuxing South and North Roads, where it runs today.
+
+Published as a short section on the line page: **the alignment was redrawn by
+protest before a metre of it was built**, and it is the earliest instance of the
+pattern the site already records twice — the Songshan–Xindian Line redesigned to
+fully underground in 1987, the Neihu extension delayed for years over the same
+argument. What exactly moved, and which proposed stations went with it, is
+explicitly not established and flagged as worth a proper look.
+
+The specific station cancellations are not published. They may well be real —
+they are the kind of detail a long article carries in a section a summarising
+read misses — but they are not confirmed here and a reference site does not
+publish what it has not seen.
+
+---
+
+# 73. What still needs a human
+
+1. **The fleet pages still say "permanently coupled married pairs".** The line
+   page no longer does, because 非固定編組 contradicts it for the VAL256. The
+   two fleet pages need the same treatment and a proper source for what the
+   Innovia does.
+2. **The trunk-bus colour claim.** Green = north–south, blue = east–west would
+   collide head-on with the feeder prefixes and is the best unwritten thing on
+   the bus page. Unsourced on two attempts.
+3. **How the bus revenue pool actually works.** The structural claim the whole
+   section was supposed to rest on, and the regulator's own introduction does not
+   make it.
+4. **The 1986 station cancellations** (§72.2) — worth reading 〈木柵線〉 in full
+   for, along with the second-fire entry that turned out to be on a different
+   article.
+5. **Which 1993 fire DORTS classifies as 輪胎起火意外事故.** Unknowable from what
+   is published.
+6. **archive.today still refuses automation.** Six blocked-origin URLs.
+7. **Ten station pages are still bare**, shortlist at
+   `docs/commons-candidates.txt`.
+
+---
+
+# Run 7.2 — the formation claim, removed from three places
+
+"Permanently coupled married pairs" lived in three places, not two, and the
+third was the one that mattered: **the formation diagram's own key rendered the
+words "permanently coupled" on both fleet pages** — an unsourced assertion
+inside an illustration, which is where nobody reads a footnote.
+
+## 74.1 The notation was carrying a claim it never encoded
+
+`components/FormationDiagram.tsx` documented `=` as "permanently coupled within
+a unit (a married pair)" and printed that in the rendered key.
+
+The notation only ever encoded **car order and unit boundaries**. Permanence was
+an extra assertion riding along inside it, applied identically to both fleets,
+and contradicted for one of them: zh.wikipedia describes the VAL256 as
+「非固定編組」 — a non-fixed formation, four consecutively-numbered cars making a
+train rather than a permanent set.
+
+The key now says **"one unit"**, which is what the drawing knows. Verified by
+screenshot rather than by grep: `docs/screenshots/val-1440-r72.png` shows
+`4 CARS · 2 UNITS OF 2 · ONE UNIT · COUPLING · CAB`.
+
+The same claim was also in a spec row on both pages — `Married pairs` — now
+`Pairs`, and re-sourced from the encyclopedia to **DORTS's procurement table**,
+which is where the pair counts actually come from.
+
+## 74.2 VAL256 — the sourced position, and what it resolves
+
+New section, *The formation is not fixed*. Cars are counted in pairs (51, DORTS,
+primary), two pairs make a train, **but the pairs are not permanently married**.
+
+That does more work than it looks. TRTC's own seat-programme announcement counts
+**25 four-car trains** — primary — and 25 trains is 50 pairs against a fleet of
+51. Under a fixed formation the odd pair is a permanent orphan needing an
+explanation. Under a non-fixed one there is nothing to explain.
+
+**Confidence is marked Medium and the page says why.** The pair count and the
+train count are both primary; 非固定編組 is one encyclopedia and no manufacturer
+or operator document says it. It is also the reading that rescues the line-level
+arithmetic without requiring a mixed train — *which is a reason to want it to be
+true, and therefore a reason to mark it carefully.* That sentence is on the page.
+
+The page previously said "the 51 pairs form 25 trains with one pair spare",
+which was the site's own arithmetic stated as fact. It is now the sourced
+reading with the inference shown.
+
+## 74.3 Innovia — nothing says either way, and the page now admits it
+
+Checked: zh.wikipedia gives the C370's formation as **2M+2M** and says nothing
+about coupling permanence. Nothing else survives — the Bombardier product pages
+the article cites were retired after the Alstom acquisition.
+
+So the page's old sentence — *"Nothing sourced so far indicates the two fleets
+differ in formation — both are four cars in two permanently coupled pairs"* —
+was wrong twice over. The first half was an argument from silence; the second
+was an assertion nobody had made. And something sourced **does** now indicate a
+possible difference, because the other fleet is described as non-fixed and this
+one is described as nothing at all.
+
+Replaced with what is actually known, and the difference is flagged rather than
+denied.
+
+## 74.4 The absence guard fired, correctly
+
+`npm run facts` refused the first version of that paragraph: it read "…and TRTC
+does not publish it", which is a claim that a named source does not publish
+something, and run 3's ABSENCE_REGISTER rule requires such a claim to name the
+field it looked for.
+
+Registering a field would have been nonsense — formation permanence is not a TDX
+field and never was. The sentence was wrong in a subtler way: **"the operator
+does not publish it" is a claim about the operator; "nothing searched here has
+answered it" is a claim about this site's searching**, and only the second is
+supportable. Reworded to the second, which is both true and weaker.
+
+The guard did exactly what it was built for, on a class of error it had not seen
+before.
+
+## 74.5 The ratchet tightened
+
+**31 unsourced assertions, one below the committed baseline of 32**, with two
+new sections added. Baseline re-recorded at 31 / 262 sourced / 14 TBC / 17 meta.
+
+Suite: 178 tests, 18 fact cross-checks clean, citations clean,
+`npm run research` clean, axe-core zero across 86 pages, links and a11y clean.
+
+## 74.6 Still open
+
+**What the Innovia's formation actually is.** The honest answer is now on the
+page, and it is unsatisfying: two fleets on one line, one described as non-fixed,
+the other described not at all. A TRTC maintenance document or an Alstom product
+sheet would settle it, and would also settle the line-level arithmetic that
+depends on it.

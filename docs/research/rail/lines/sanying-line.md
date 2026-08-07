@@ -127,7 +127,7 @@ another attempt — Hitachi Rail's own releases would settle it.
 | Off-peak headway (initial) | 8–9 minutes |
 | Design maximum | **27 trains/hour, 2.2 min headway** |
 | Projected daily ridership | ~40,000 |
-| Actual first month | **over 750,000 passengers** |
+| Actual first month | **over 750,000 passengers** — verified, run 5 |
 
 The gap between initial and design headway is worth stating — a new line runs
 conservatively while stability is proven, exactly as Wenhu did in 2009.
@@ -152,9 +152,8 @@ Pay, and TWQR ride codes.
 
 ### Free trial period
 
-30 June – 31 August 2026. **Hours conflict:** most guides say 10:00–20:00; run 3
-found this superseded on 1 August to 08:00–22:00. Verify current hours before
-publishing — this is live information people will act on.
+30 June – 31 August 2026. ~~Most guides say 10:00–20:00~~ — **see "Checked and
+failed" below; the hours changed on 1 August 2026 and this file was wrong.**
 
 ---
 
@@ -208,3 +207,20 @@ sunmerry.com.tw and shinygoods.tw guides (trial period, extension); DailyView
 
 **Gaps:** Hitachi Rail's own material on the trainsets; NTMC press releases;
 depot details; official English station names.
+
+
+---
+
+## Checked and failed
+
+Claims in this file that have been verified against a source and did not survive.
+Struck through above rather than deleted, so the same lead is not chased twice.
+
+- **Free trial hours of 10:00–20:00** — superseded on 1 August 2026, when the
+  trial was extended to 08:00–22:00. Checked run 5, 2026, against the operator's
+  own announcement. Every guide in this file's source list still prints the old
+  hours.
+- **The themed trains "run at random"** — no source says this. Checked run 5,
+  2026: it appears in no operator material and no cited guide. It was published
+  on the site marked as this site editorialising, which is the only honest way
+  to carry it, and it should not be repeated as a fact.

@@ -76,6 +76,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The man who said it, on the record thirty years later. Primary for the quotation and for his own account of the parts-pricing fight behind it — and read with the caution any memoir earns: it is the speaker's version, published on an anniversary."
+  - id: zh-linguang
+    title: Linguang station
+    titleOriginal: 麟光站
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/麟光站
+    accessed: 2026-08-07
+    kind: secondary
+    lang: zh-Hant
+    note: "The station chronology that dates both 1993 fires and, decisively, numbers the second: 「1993年5月5日：辛亥站前發生火燒車事件」 and 「1993年9月24日：發生第二次火燒車事件」. 〈木柵線〉 carries the May incident but not the September one, which is why an earlier pass on this page could not confirm the second date."
   - id: zh-muzha
     title: Muzha Line
     titleOriginal: 木柵線
@@ -209,28 +218,36 @@ France[^huang-2021]. He reports them as rumours; so does this page.
 
 ## The fires, and the engineering behind them
 
-### What the builder calls it
+### Two fires, and what the builder calls them
 
-DORTS's own project record for this line does not use the word fire. It says:
+**There were two, four and a half months apart**, and the second is recorded as
+exactly that: 「1993年5月5日：辛亥站前發生火燒車事件」 and
+「1993年9月24日：發生**第二次**火燒車事件」[^zh-linguang]. A second
+vehicle-fire incident. 自由時報 in 2005 said the same from the other end,
+describing 「接連被兩把大火燒得焦黑的電聯車」 — trains burned black by two
+successive fires[^ltn-2005].
+
+That matters more than the count suggests. **One fire during testing is an
+accident. Two is a pattern**, and a pattern is what makes the rest of the year
+explicable: MOTC halting all work, the Control Yuan impeaching eight officials
+the following February, and a city council that then spent eight years refusing
+to let the same technology go north.
+
+**DORTS's own project record does not use the word fire at all.** It says
 「木柵線於82年系統測試階段發生**輪胎起火意外事故**」 — during the Muzha Line's
-system-testing phase in 1993, **a tyre ignition accident**[^dorts-wenhu].
+system-testing phase in 1993, a **tyre ignition accident**[^dorts-wenhu]. One
+noun phrase, no date, no count, and it is the most precise wording anyone has
+used about the mechanism: what burned was a tyre, not a train.
 
-That is the builder describing its own worst construction year, in the document
-it still publishes, and it is the most precise wording anyone has used. What
-burned was a tyre, not a train.
+**Which of the two it refers to, the builder does not say.** It may be either,
+or it may be the class of event rather than an instance of it. This page does
+not choose, because there is nothing to choose from.
 
-The wording that circulates is different. zh.wikipedia's chronology of the
-testing year records a 火燒車 — a vehicle fire[^zh-muzha] — and 自由時報 in 2005
-described 「接連被兩把大火燒得焦黑的電聯車」, trains burned black by two
-successive fires[^ltn-2005]. Those are not corrections of each other. They are a
-builder's incident classification and a newspaper's description of the same
-events, and the gap between them is roughly the gap between "an overheated tyre
-ignited" and "the train was on fire" — which, from a platform, look identical.
-
-**This page leads with the primary wording and keeps the secondary framing
-beside it.** Collapsing them either way would lose something: DORTS's phrasing
-is more accurate about the mechanism and is also the phrasing of the organisation
-that was impeached over it, and it is worth seeing both at once.
+So the two vocabularies are kept side by side rather than collapsed. The gap
+between 輪胎起火 and 火燒車 is roughly the gap between "an overheated tyre
+ignited" and "the train was on fire", which from a platform look identical — and
+the more precise phrasing belongs to the organisation that was impeached over
+it, which is worth seeing at the same time as the other.
 
 ### The mechanism
 
@@ -261,10 +278,10 @@ found. That gap is flagged again at the foot of this page.
 
 | Date | Event | |
 | --- | --- | --- |
-| 5 May 1993 | First fire, during testing, near BR05 Xinhai[^zh-muzha]; attributed to 「煞車系統故障及人為疏忽」 — brake failure and human error; Matra apologised publicly on 14 May[^zh-muzha] | |
+| 5 May 1993 | **First fire**, during testing, 辛亥站前 — in front of BR05 Xinhai[^zh-linguang]; attributed to 「煞車系統故障及人為疏忽」 — brake failure and human error; Matra apologised publicly on 14 May[^zh-muzha] | |
 | From April 1993 | Cracked cap beams found at BR07 Liuzhangli, BR03 Wanfang Community and elsewhere; investigation and reinforcement demanded. | [^zh-muzha] |
 | 19 June 1993 | Testing suspended after further smoke and fire events; in July Matra attributed them to 「晶片問題」 — chip faults. | [^zh-muzha] |
-| 24 September 1993 | Second fire, between BR07 Liuzhangli and BR06 Linguang. | [^zh-muzha][^ltn-2008] |
+| 24 September 1993 | **Second fire**, recorded as 第二次火燒車事件, between BR07 Liuzhangli and BR06 Linguang. | [^zh-linguang][^ltn-2008] |
 | 1 July 1994 | Matra stops work, resuming on 23 July. | [^zh-muzha] |
 | 25 August 1994 | Final inspections conclude. | [^zh-muzha] |
 | 28 March 1996 | The line opens — four and a quarter years after the completion date the contract envisaged. | [^dorts-wenhu][^zh-muzha] |
@@ -471,15 +488,10 @@ The gaps, recorded so they are searched for rather than papered over:
   classification of the testing-phase incident — 輪胎起火意外事故, a tyre
   ignition accident[^dorts-wenhu] — is as close as the primary record gets, and
   it names no date, no unit and no location.
-- **The date of the second fire.** The table above dates it to September 1993 on
-  two secondary sources[^zh-muzha][^ltn-2008]. A re-reading of 〈木柵線〉 during
-  this site's last research pass did not find that entry, and it may have been
-  edited since, or the date may belong to a different incident — a 電聯車爆胎,
-  a tyre burst, is recorded on the same day and month in a different
-  year[^zh-muzha]. The claim keeps its citations and this note until somebody
-  reads the article in full rather than a summary of it. Flagged rather than
-  removed: a source failing to confirm on one re-reading is not the same as a
-  source contradicting.
+- **Which fire DORTS's 輪胎起火意外事故 describes.** The builder names an
+  incident and gives it no date and no ordinal[^dorts-wenhu]. There were two.
+  Nothing found says which, or whether the phrase names the class rather than an
+  instance.
 - **Matra's side.** Every substantive source on this page is Taiwanese. The
   French trade press of the day, Lagardère's archive and Siemens's own history
   of the VAL business would give the other account, and none has been found.

@@ -483,3 +483,26 @@ renaming, the 2009 free trial and fare promotion); zh.wikipedia 臺北捷運列�
 dimensions, interior height, Pittsburgh and Tang Eng manufacture, the conversion
 deadline and breach); zh.wikipedia 西湖站 (ridership, public art); baike.baidu
 (alignment corroboration).
+
+---
+
+## Checked and failed
+
+Claims in this file verified against a source that did not survive. Kept here
+rather than deleted, so the same lead is not chased twice.
+
+- **The DORTS 車站建築設計 URL given in Sources** — `cp.aspx?n=980C85299DA2890A`
+  lands on a general overview containing none of the material quoted from it.
+  Checked 7 August 2026, run 7. The page actually quoted is the same node with
+  its sub-section id: `cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F`, which does
+  carry 「除大直站為地下車站外，其餘共有十座高架車站」 verbatim. Following the
+  citation as written would suggest the quotations were invented.
+- **"Eleven stations have a single exit"** — this file's own transcribed station
+  table gives eight. Checked 7 August 2026, run 7, by counting the table:
+  8 stations with one exit, 8 with two, 4 with three, 1 with five, 1 with six,
+  2 with eight. Sixty-three exits across twenty-four stations. The site
+  publishes eight and cross-checks the sentence against the registry.
+- **"Total length ≈25.7 km" in the Basics table** — inconsistent with this
+  file's own length section, which correctly says to publish 25.17 km as the
+  operating length. Checked 7 August 2026, run 7. 25.7 is the sum of two project
+  lengths, not a measurement of the railway.

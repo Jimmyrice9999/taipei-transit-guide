@@ -33,7 +33,7 @@ profile:
     - BR24
   underground:
     km: 3.9
-    note: The 3.9 km is DORTS's own figure for the Neihu section. DORTS also records the Muzha section as built entirely on viaduct; zh.wikipedia's route description puts a Fuzhou Mountain tunnel between BR05 and BR06, which the builder's own text does not mention, and this drawing follows the builder.
+    note: "The 3.9 km is DORTS's own figure for the Neihu section, and it is the line's only underground running: the builder records the Muzha section as 全線以高架方式興建, built entirely on viaduct. zh.wikipedia's route description reads 穿越福州山隧道後, which implies a tunnel between BR05 and BR06 where DORTS instead has the line passing the north side of the Xinhai road tunnel. A viaduct does not run through a hill, so the drawing follows the builder — but the two accounts of that half-kilometre have not been reconciled."
 facts:
   - label: Line code
     value: BR
@@ -153,6 +153,35 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The builder's own project record for both halves: 木柵線 約10.9公里，設12座車站 and 內湖線 約14.8公里，設12座車站（地下段3.9公里，2座地下站）. Those two lengths are what add to the 25.7 km that circulates as this line's route length."
+  - id: zh-linguang
+    title: Linguang station
+    titleOriginal: 麟光站
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/麟光站
+    accessed: 2026-08-07
+    kind: secondary
+    lang: zh-Hant
+    note: "The station chronology that dates both 1993 fires and numbers the second one: 「1993年5月5日：辛亥站前發生火燒車事件」 and 「1993年9月24日：發生第二次火燒車事件」. Also the source for this station having been the first completed with two exits after the 1996 opening, and for its two ticket machines being the fewest on the network."
+  - id: dorts-fleet-faq
+    title: How many trains were procured for each line of the Taipei metro network?
+    titleOriginal: 台北都會區大眾捷運系統路網中，各路線所採購之列車數為何？
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    url: "https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91"
+    snapshot: https://web.archive.org/web/20260807044541/https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
+    accessed: 2026-08-07
+    kind: primary
+    lang: zh-Hant
+    note: "The builder's own procurement table, by contract: 木柵線 CC350 51對電聯車（102輛）and 文湖線 CB370 101對電聯車（202輛）. Cited here for the pair counts that do not divide into the reported train counts."
+  - id: zh-taipei-fleet
+    title: Taipei Metro rolling stock
+    titleOriginal: 臺北捷運列車
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-hant/臺北捷運列車
+    snapshot: https://web.archive.org/web/20260807045301/https://zh.wikipedia.org/zh-hant/%E8%87%BA%E5%8C%97%E6%8D%B7%E9%81%8B%E5%88%97%E8%BB%8A
+    accessed: 2026-08-07
+    kind: secondary
+    lang: zh-Hant
+    note: "Source for the 25-and-51 train split, and for the VAL256 running 非固定編組 — four consecutively-numbered cars forming a train rather than a permanent set, which is one of the three readings of the arithmetic problem."
   - id: dorts-architecture
     title: Station architectural design
     titleOriginal: 車站建築設計
@@ -272,13 +301,27 @@ one of the strangest procurement stories in modern transit.
 | Muzha Line | BR01 — BR12 | 10.9 km[^dorts-wenhu] | 28 March 1996[^dorts-wenhu] |
 | Neihu extension | BR13 — BR24 | 14.8 km[^dorts-wenhu] | 4 July 2009[^dorts-wenhu] |
 
+### The alignment was redrawn by protest before a metre of it was built
+
+The route that opened in 1996 is not the route that was approved. A 13 km
+scheme from Taipei Zoo to Liuzhangli had already been settled when **residents
+in Muzha objected, and on 4 May the northern section was redirected onto
+Fuxing South and North Roads** — where it runs today[^zh-muzha].
+
+That is the earliest instance of a pattern this site records twice more: the
+Songshan–Xindian Line redesigned from part-elevated to fully underground in
+1987 on street-width and visual-impact grounds, and the Neihu extension held up
+for years over the same argument. **The objection came first, before the line
+existed, and it worked.** What exactly was moved, and which proposed stations
+went with it, is not established here and is worth a proper look.
+
 The original section was bought in 1988 as a turnkey system from France's
-Matra[^zh-muzha]. What followed — what DORTS's own record calls a
-輪胎起火意外事故, a tyre ignition accident, during system testing in
-1993[^dorts-wenhu], an opening four and a quarter years late, the builder's
-withdrawal from maintaining its own system, and a lawsuit that ran until the
-Supreme Court ordered the city to pay roughly NT$1.64 billion in
-2005[^zh-muzha][^ltn-2005] — is told in full on
+Matra[^zh-muzha]. What followed — **two fires during testing in 1993**, on 5
+May and 24 September, the second recorded as exactly that, 第二次火燒車事件, a
+second vehicle-fire incident[^zh-linguang]; an opening four and a quarter years
+late; the builder's withdrawal from maintaining its own system; and a lawsuit
+that ran until the Supreme Court ordered the city to pay roughly NT$1.64 billion
+in 2005[^zh-muzha][^ltn-2005] — is told in full on
 its own page: **[The Matra dispute](/rail/history/matra-dispute/)**. The short
 version is that Taipei learned, expensively, how not to buy a railway, and
 bought the second half differently.
@@ -347,6 +390,12 @@ it[^dorts-architecture]. The exits are the same economy, at street level.
 Every station page carries its own count, from the same
 table[^dorts-wenhu].
 
+**BR06 Linguang is the exception that proves the constraint was real.** It has
+two exits and it is the first station on the Taipei Metro that opened with both
+of them already built[^zh-linguang] — everywhere else, a second exit was
+something added later or not at all. The same station has **two ticket machines,
+the fewest anywhere on the network**[^zh-linguang].
+
 ## Operations
 
 Trains run without on-board drivers under automatic train control, at GoA4 —
@@ -388,13 +437,43 @@ passengers[^tdx].
 
 ## Rolling stock
 
-Two fleets share the line, both four-car formations built as permanently coupled
+Two fleets share the line, both running as four cars made up of two coupled
 pairs:
 
 - [VAL256](/rail/rolling-stock/val256/) — 51 pairs, the original Muzha Line
   fleet[^zh-val256]
 - [Innovia APM 256 (C370)](/rail/rolling-stock/innovia-apm-256-c370/) — 101
   pairs, delivered for the Neihu extension[^zh-innovia]
+
+### The fleet totals do not divide, and this site cannot say why
+
+A four-car train on this line is two coupled pairs. DORTS's procurement record
+gives **51 pairs of VAL256 and 101 pairs of Innovia**[^dorts-fleet-faq]. The
+renewal reporting counts **25 Matra trains and 51 Bombardier trains**, 76 in
+total[^zh-taipei-fleet].
+
+Those do not reconcile[^dorts-fleet-faq][^zh-taipei-fleet]. 25 four-car trains
+need 50 pairs, not 51; 51 trains need 102 pairs, not 101. The totals agree — 152 pairs, 304 cars, 76 trains — but
+**neither fleet on its own divides into whole trains.**
+
+Three readings, and nothing found settles between them:
+
+- **A spare pair in each fleet.** 25 Matra trains plus one pair out of service,
+  50 Bombardier trains plus one — which makes the "76 trains" figure a count of
+  the two fleets' nominal sizes rather than of trains in traffic.
+- **Formations are not fixed.** zh.wikipedia describes the VAL256 as
+  「非固定編組」, running as four consecutively-numbered cars rather than as a
+  permanent set[^zh-taipei-fleet]. If pairs are re-formed in maintenance, the two
+  counts are simply two different things measured on two different
+  days[^zh-taipei-fleet], and there is no discrepancy to explain.
+- **One train is mixed.** Moving a pair across the boundary makes both counts
+  work — and would mean exactly one train on this line runs one fleet's pair
+  coupled to the other's.
+
+**The third would make this page wrong**, because it describes the fleets as
+separate. It is also the only one of the three that requires something no source
+found here reports[^zh-taipei-fleet]. It is recorded here because leaving it out would be picking
+an answer quietly.
 
 They are not the same vehicle and not the same design lineage — the second was
 built by a competitor to fit the first's guideway, which is the Matra story's
