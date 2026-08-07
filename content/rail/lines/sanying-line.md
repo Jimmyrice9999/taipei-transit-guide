@@ -93,6 +93,7 @@ sources:
     titleOriginal: 三鶯線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/三鶯線
+    snapshot: https://web.archive.org/web/20260703063216/https://zh.wikipedia.org/zh-tw/三鶯線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant

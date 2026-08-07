@@ -41,6 +41,7 @@ sources:
     titleOriginal: 木柵捷運線 馬特拉勝訴 北市要賠16.4億
     publisher: 孫友廉, 陳曉宜, 鄭學庸, 自由時報, 23 July 2005 (via 大紀元 reprint)
     url: https://www.epochtimes.com/b5/5/7/23/n995027.htm
+    snapshot: https://web.archive.org/web/20260807043739/https://www.epochtimes.com/b5/5/7/23/n995027.htm
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -50,6 +51,7 @@ sources:
     titleOriginal: 改車廂火燒車 還賠馬特拉16億
     publisher: 洪敏隆, 劉榮, 自由時報, 14 November 2008
     url: https://news.ltn.com.tw/news/life/paper/258078
+    snapshot: https://web.archive.org/web/20260807043814/https://news.ltn.com.tw/news/life/paper/258078
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -59,6 +61,7 @@ sources:
     titleOriginal: 台北捷運如何成為「拼裝捷運」？科技混生性與北捷的誕生
     publisher: 黃令名, 巷仔口社會學 (Streetcorner Sociology), 6 April 2021
     url: https://twstreetcorner.org/2021/04/06/台北捷運如何成為「拼裝捷運」？科技混生性與北/
+    snapshot: https://web.archive.org/web/20260807043954/https://twstreetcorner.org/2021/04/06/%E5%8F%B0%E5%8C%97%E6%8D%B7%E9%81%8B%E5%A6%82%E4%BD%95%E6%88%90%E7%82%BA%E3%80%8C%E6%8B%BC%E8%A3%9D%E6%8D%B7%E9%81%8B%E3%80%8D%EF%BC%9F%E7%A7%91%E6%8A%80%E6%B7%B7%E7%94%9F%E6%80%A7%E8%88%87%E5%8C%97/
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -78,6 +81,7 @@ sources:
     titleOriginal: 木柵線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/木柵線
+    snapshot: https://web.archive.org/web/20250531163800/https://zh.wikipedia.org/zh-tw/木柵線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -87,6 +91,7 @@ sources:
     titleOriginal: 文湖線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/文湖線
+    snapshot: https://web.archive.org/web/20250714045049/https://zh.wikipedia.org/zh-tw/文湖線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -96,6 +101,7 @@ sources:
     titleOriginal: 台北捷運的「馬特拉」恩怨情仇
     publisher: 古文全, 商業周刊 445, 30 May 1996
     url: https://www.businessweekly.com.tw/Archive/Article?StrId=1967
+    snapshot: https://web.archive.org/web/20260807044117/https://www.businessweekly.com.tw/Archive/Article?StrId=1967
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -106,10 +112,10 @@ sources:
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
     snapshot: https://web.archive.org/web/20260209210832/https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    accessed: 2026-08-06
+    accessed: 2026-08-07
     kind: primary
     lang: zh-Hant
-    note: The builder's own project record — section lengths, opening dates. It says nothing at all about the dispute, which is itself informative.
+    note: "The builder's own project record — section lengths, opening dates, and its own classification of the testing-phase incident: 「木柵線於82年系統測試階段發生輪胎起火意外事故」. It says nothing at all about the dispute, which is itself informative; and it names Matra nowhere."
   - id: lagardere-siemens
     title: Siemens increases its stake in MATRA Transport International
     publisher: Lagardère (press release, 1 October 1998)
@@ -122,6 +128,7 @@ sources:
     title: Matra Transport changes its name
     publisher: Metro Magazine
     url: https://www.metro-magazine.com/news/matra-transport-changes-its-name
+    snapshot: https://web.archive.org/web/20260807044158/https://www.metro-magazine.com/news/matra-transport-changes-its-name
     accessed: 2026-08-06
     kind: secondary
     note: Trade press reporting Siemens completing to 100% and the rename to Siemens Transportation Systems in November 2001.
@@ -130,6 +137,7 @@ sources:
     titleOriginal: 台北捷運VAL256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
+    snapshot: https://web.archive.org/web/20221006051618/https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -138,6 +146,7 @@ sources:
     titleOriginal: 龐巴迪INNOVIA APM 256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
+    snapshot: https://web.archive.org/web/20150531215555/https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -199,6 +208,31 @@ endorsing, that the award fed rumours connecting it to arms purchases from
 France[^huang-2021]. He reports them as rumours; so does this page.
 
 ## The fires, and the engineering behind them
+
+### What the builder calls it
+
+DORTS's own project record for this line does not use the word fire. It says:
+「木柵線於82年系統測試階段發生**輪胎起火意外事故**」 — during the Muzha Line's
+system-testing phase in 1993, **a tyre ignition accident**[^dorts-wenhu].
+
+That is the builder describing its own worst construction year, in the document
+it still publishes, and it is the most precise wording anyone has used. What
+burned was a tyre, not a train.
+
+The wording that circulates is different. zh.wikipedia's chronology of the
+testing year records a 火燒車 — a vehicle fire[^zh-muzha] — and 自由時報 in 2005
+described 「接連被兩把大火燒得焦黑的電聯車」, trains burned black by two
+successive fires[^ltn-2005]. Those are not corrections of each other. They are a
+builder's incident classification and a newspaper's description of the same
+events, and the gap between them is roughly the gap between "an overheated tyre
+ignited" and "the train was on fire" — which, from a platform, look identical.
+
+**This page leads with the primary wording and keeps the secondary framing
+beside it.** Collapsing them either way would lose something: DORTS's phrasing
+is more accurate about the mechanism and is also the phrasing of the organisation
+that was impeached over it, and it is worth seeing both at once.
+
+### The mechanism
 
 There is an actual mechanism here, and it is better than "the French trains
 kept catching fire".
@@ -431,9 +465,21 @@ The gaps, recorded so they are searched for rather than papered over:
   and settle the intermediate dates this page declines to give. The
   single highest-value follow-up here.
 - **A contemporaneous report of the withdrawal**, which would close the
-  1996-versus-1997 question above.
+  question above of which year it happened in[^zh-muzha][^zh-wenhu].
 - **Any accident investigation** into the 1993 fires, which would confirm or
-  kill the coupling explanation two secondary sources agree on.
+  kill the coupling explanation two secondary sources agree on. DORTS's own
+  classification of the testing-phase incident — 輪胎起火意外事故, a tyre
+  ignition accident[^dorts-wenhu] — is as close as the primary record gets, and
+  it names no date, no unit and no location.
+- **The date of the second fire.** The table above dates it to September 1993 on
+  two secondary sources[^zh-muzha][^ltn-2008]. A re-reading of 〈木柵線〉 during
+  this site's last research pass did not find that entry, and it may have been
+  edited since, or the date may belong to a different incident — a 電聯車爆胎,
+  a tyre burst, is recorded on the same day and month in a different
+  year[^zh-muzha]. The claim keeps its citations and this note until somebody
+  reads the article in full rather than a summary of it. Flagged rather than
+  removed: a source failing to confirm on one re-reading is not the same as a
+  source contradicting.
 - **Matra's side.** Every substantive source on this page is Taiwanese. The
   French trade press of the day, Lagardère's archive and Siemens's own history
   of the VAL business would give the other account, and none has been found.

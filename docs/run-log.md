@@ -2759,3 +2759,845 @@ Jamie's calls on the run-6 open items, and what was done with them:
   listing: thumbnail (with its CC BY-SA credit, which the image test
   enforces on the home page like anywhere else), eyebrow, title,
   standfirst. Not a redesign; the home page's job is still wayfinding.
+
+---
+
+# Run 7 — the corpus, and the flatness
+
+Two jobs: absorb a 21-file research corpus without publishing any of it on its
+own authority, and stop every page reading at the same texture. Plan and its
+self-critique in `docs/plans/run7-plan.md`; the corpus index is
+`docs/research/INDEX.md`.
+
+**Headline: the site was contradicting itself about how its trains take
+power.** The line page's facts panel said `750 V DC third rail`. The VAL256
+page, two clicks away, explains at length that the current comes off the
+lateral guide bars and states outright that this is *why a VAL guideway needs
+no separate conductor rail*. Both were live, on the same site, for four builds.
+Run 3 corrected the guidance claim on the fleet page and never looked at the
+line page. §54.1.
+
+**Second: five bugs, and three were found by looking rather than by any check.**
+A strip map drawing two stations differently with nothing in its key to say why;
+a badge system asserting that engineering numbers are real stations; seven of
+nine line pages with no link from the page whose job is to list them; and an
+adversarial fixture that has been failing since run 6 because nobody ran the
+suite. §54.
+
+**Third: the corpus is a lead file and it needed treating as one.** Every figure
+the new devices rest on was verified against DORTS directly before anything was
+drawn. Three of those checks changed something: one research URL is wrong and
+lands on a page that does not contain what is quoted from it; the corpus's
+exit-count summary is a miscount of its own table (eleven against a real eight,
+and this run's brief inherited the error); and a claim the corpus puts on the
+Muzha section contradicts the builder's own alignment text. §52.
+
+Final state: build green, **178 unit tests**, citations clean, **18 fact
+cross-checks** with no contradictions, `npm run check` and `npm run a11y` clean,
+browser verification clean with **axe-core at zero across 85 pages**,
+`npm run adversarial` back to **16/16**, claims ratchet holding at 32 with
+sourced claims up 216 → 240.
+
+---
+
+# 51. The corpus, indexed
+
+`docs/research/INDEX.md`. Twenty-one files — **not the twenty-five the brief
+describes**; §5 of the index accounts for the difference, and two of the four
+missing are referenced by other documents and do not exist anywhere in the tree.
+`docs/research/research-findings.md` is cited a dozen times in this log and is
+not in the repository.
+
+What the index revealed beyond the per-file summaries:
+
+**The site is missing a depot.** Zhonghe Depot — 1.47 hectares including a
+passenger station, the smallest on the network, built on a closed TRA station's
+site, and so constrained that DORTS says it can only stable and clean trains —
+has no page. There are eight depot pages and it is not one of them. It is a
+complete page from a single primary source and it is the best effort-to-value
+ratio in the corpus.
+
+**The highest-value table in the corpus is in the bus file, not a rail one.**
+Taipei's coloured bus routes are not decorative: 紅 = R = Tamsui–Xinyi, 綠 = G =
+Songshan–Xindian, 藍 = BL = Bannan, 棕 = BR = Wenhu. They are MRT feeder services
+named after the line they feed. Someone standing at a stop looking at 藍26 has no
+way in English to know it is a Bannan feeder. Four rows fix that, and TRTC's own
+documentation is the source. Better still: on the *trunk* network green and blue
+mean compass direction instead — the same two colours, two meanings, one city.
+
+**The most valuable source in the corpus has never been opened.** 李政安 &
+蘇瑞文, 臺北捷運內湖線中運量系統概述, hosted by New Taipei DORTS. Two separate
+files name it as important and largely unexploited. It probably answers the
+running-surface, signalling and electrification gaps at once.
+
+**The corpus has no memory.** `sanying-line.md` is dated as current research and
+run 5 already killed two of its claims — the trial hours it gives were superseded
+on 1 August, and "runs at random" is nobody's sourced claim. Anyone reading it
+fresh would reintroduce both. That is a structural weakness of the corpus rather
+than of any file in it, and it is in `for-jamie.md`.
+
+## 51.1 Archiving
+
+`npm run archive` run against the site's own citations: **20 new Wayback
+snapshots captured and written into frontmatter**, including both sources added
+this run. The site now carries 31 distinct cited URLs.
+
+**One thing has changed since run 4 and it is worth recording: `.gov.taipei`
+accepted Wayback captures this time.** Run 4 found all four government captures
+failing with HTTP 523 and concluded the Archive's crawler was blocked at that
+origin. It is not blocked today — DORTS's project page, its architecture page and
+its procurement FAQ all captured on request. **archive.today still refuses
+everything** (HTTP 429 on all six blocked-origin URLs), which is the same finding
+run 6.1 recorded and the same remedy.
+
+The corpus's own reading list is *not* archived and `npm run archive` cannot do
+it — the command reads the site's citations, not the research. That is the right
+design (archiving a URL nobody has read records a page, not a claim), and it
+means fourteen government CMS node ids in the corpus are unprotected until
+somebody actually uses one.
+
+---
+
+# 52. Contradictions between the research and what is published
+
+Full list in `docs/research/INDEX.md` §3. The ones that changed something:
+
+## 52.1 The research's citation URL does not go where it says
+
+`wenhu-line.md` cites DORTS's 車站建築設計 page as `cp.aspx?n=980C85299DA2890A`.
+That lands on a general overview carrying two sentences and **none** of the
+material quoted from it. The page actually being quoted is the same node with its
+sub-section id — `cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F`. Anyone
+following the citation as written would conclude the research had invented the
+quotations.
+
+Verified at the correct URL, verbatim, and it says exactly what the corpus says
+it does: 「文湖線內湖段為木柵段之延伸，屬中運量系統，除大直站為地下車站外，其餘
+共有十座高架車站」. The site cites the working URL.
+
+## 52.2 The exit-count summary is a miscount, and the brief inherited it
+
+The corpus says eleven Wenhu stations have a single exit. Its own transcribed
+table says eight. This run's brief repeated the eleven.
+
+The builder's table, verified verbatim: **8 stations with one exit, 8 with two,
+4 with three, 1 with five, 1 with six, 2 with eight.** Sixty-three exits across
+twenty-four stations. The published prose says eight, and `npm run facts` now
+cross-checks that sentence against the registry — verified by planting *eleven*
+and watching it fail.
+
+## 52.3 A tunnel the builder does not mention
+
+`wenhu-research-part2.md` puts a **福州山隧道 Fuzhou Mountain Tunnel** on the
+Muzha section's route, between BR05 and BR06. zh.wikipedia agrees:
+「穿越福州山隧道後，再沿著和平東路」.
+
+DORTS's own alignment text says something different: 「穿越辛亥隧道北側接和平
+東路」 — passing the *north side* of the Xinhai road tunnel — and closes
+「全線以高架方式興建」, built entirely as elevated.
+
+Those are not the same claim, and between BR05 and BR06 the line has to cross a
+ridge somehow. **Unresolved, and published as unresolved**: the section drawing
+follows the primary source and its caption names the disagreement. It matters
+because it is the one stretch of that drawing where the picture could be wrong.
+
+## 52.4 The fleet arithmetic still does not divide, and no file notices
+
+51 VAL pairs and 101 Innovia pairs. A four-car train is two pairs. **51 and 101
+are both odd, so neither fleet alone forms a whole number of four-car trains** —
+only the sum does (152 pairs = 76 trains). `rolling-stock.md` prints "51 pairs /
+25 trains" and "101 pairs / 51 trains", and neither matches its own pair count.
+
+Either a pair is stabled spare in each fleet, or at least one train is formed
+across both. **If it is the second, this site's framing of the two fleets as
+separated at formation level is wrong.** Open since run 3; the corpus reproduces
+the arithmetic without flagging it. It is the sharpest unresolved question in the
+whole corpus.
+
+---
+
+# 53. Part 2 — the three corrections, all verified before changing anything
+
+Every one was checked against the cited primary source directly, not against the
+research file that names it.
+
+## 53.1 BR13 and BR14: upgraded from an encyclopedia to two primary sources
+
+The brief said these were marked `structure: unknown` with a dotted tick. **They
+were not** — run 3 set them to `underground`. What was still true is that the
+facts panel cited zh.wikipedia for it.
+
+They now rest on two DORTS documents that never mention each other:
+
+- The project record gives the Neihu section as 「地下段3.9公里，2座地下站」 — two
+  underground stations in 3.9 km of tunnel, which narrows the pair to BR13–BR24
+  without naming either.
+- The station architecture page names one and counts the rest:
+  「除大直站為地下車站外，其餘共有十座高架車站」. Ten elevated plus Dazhi is
+  eleven of the section's twelve. The twelfth is Songshan Airport.
+
+Two primary documents, and the identification falls out of the arithmetic between
+them. zh.wikipedia now agrees with the pair rather than establishing it. The
+Wenhu line page went from 4 primary citations to 5.
+
+## 53.2 The 1993 incident: the builder's own wording now leads
+
+DORTS's project page says 「木柵線於82年系統測試階段發生**輪胎起火意外事故**」 —
+during system testing in 1993, **a tyre ignition accident**. Verified verbatim.
+That is the builder describing its own worst construction year, in the document it
+still publishes, and it is the most precise wording anyone has used: what burned
+was a tyre, not a train.
+
+The Matra article now opens its fires section with that, then sets the secondary
+framing beside it — zh.wikipedia's 火燒車 and 自由時報's 「接連被兩把大火燒得焦黑
+的電聯車」 — and says explicitly that neither is a correction of the other. They
+are an incident classification and a newspaper description of the same events, and
+the gap between them is roughly the gap between "an overheated tyre ignited" and
+"the train was on fire", which from a platform look identical.
+
+**One thing I did not do, and the reason.** Re-reading 〈木柵線〉 this run did not
+find the 24 September 1993 second fire the article's chronology dates from it, and
+a 電聯車爆胎 — a tyre burst — appears on the same day and month in a different
+year. I have **not** removed or redated the claim. A summarising fetch failing to
+confirm a source is not the same as a source contradicting it, and deleting a
+twice-cited claim on that basis would be the same error in the opposite direction.
+It is flagged on the page, in its gaps list, where somebody reading the article in
+full can settle it.
+
+## 53.3 The four lengths
+
+The page carried three figures. It now carries four, states **25.17 km as the
+operating length** in bold before the table, and explains each:
+
+| Figure | What it measures |
+| --- | --- |
+| **25.17 km** | Operating length, BR01 to BR24 — TDX `CumulativeDistance` |
+| 25.7 km | The two construction projects added: DORTS's 10.9 + 14.8 |
+| 25.04 km | The same railway, measured here along MOTC's geometry |
+| 26.42 km | The whole alignment, including 635 m of depot lead and 744 m of tail track |
+
+The fourth row is the one this site got wrong for four builds, and it is now
+published *as* the finding rather than omitted. The spec row was renamed
+`Route length, revenue` → `Route length, operating`, matching 營運長度, the term
+both DORTS and zh.wikipedia use; `npm run facts` looks that row up by exact label
+and was updated in the same commit, because the lookup fails loudly rather than
+skipping.
+
+---
+
+# 54. Four bugs, found in passing
+
+## 54.1 The site contradicted itself about how the trains take power
+
+`content/rail/lines/wenhu-line.md` facts panel: **`Electrification: 750 V DC
+third rail`**, cited to zh.wikipedia.
+
+`content/rail/rolling-stock/val256.md`, two clicks away: pairs of horizontal
+wheels bear outward against lateral guide bars, and those bars carry the 750 V
+supply, *"which is why a VAL guideway needs no separate conductor rail"*.
+
+Run 3 corrected the guidance claim on the fleet page — the central-rail error —
+and never looked at the line page's power row. Both statements have been live
+together since. **Corrected to `750 V DC, off the guide bars`**, cited to the
+guideway description rather than the encyclopedia.
+
+Recorded plainly because the whole point of the citation system is that a figure
+can be traced, and two pages of one site tracing the same fact to opposite answers
+is the failure that system exists to make visible.
+
+## 54.2 "C370" was labelled as a contract number. It is not.
+
+DORTS's own procurement FAQ — found while checking the fleet arithmetic, and
+richer than the corpus records: **sixteen contracts with line and quantity against
+each** — gives the Wenhu fleet's contract as **CB370**, in the same CB series as
+the Neihu civil contracts CB410/CB420/CB430 into which the E&M scope was folded.
+C370 is the *fleet designation*, in the same series as C301, C321, C341, C371 and
+C381.
+
+Both names are correct for different things and the page used one to mean the
+other. Now two rows — `Fleet designation: C370` and `Procurement contract: CB370`
+— on separate sources, with the correction recorded on the page. The URL keeps
+`c370`, which is what the fleet is called.
+
+## 54.3 The badge system asserted that engineering numbers are stations
+
+`components/RichText.tsx` renders frontmatter strings with station codes as
+badges. Its own comment said an unrecognised code "is rendered as plain text".
+**It was not.** The check was on the *line* — `getLine('BR')` resolves — so any
+`<known prefix><digits>` string got a badge whether or not it was a station.
+
+Found the moment a page needed to say `BR1`: on the new numbering page, whose
+entire subject is that BR1 is an engineering number and *not* a station code, BR1
+rendered as a brown badge titled "BR1".
+
+A badge means "this is a real station". That is what the README sells the badge
+system on, and it is the same failure `badge-absent` was introduced to prevent on
+`/data/stations` in run 1, arriving through a different door. The station now has
+to resolve too, and a test scans every built page for a badge whose title is a
+bare code with no name after it.
+
+## 54.4 Seven of nine line pages had no link from the lines index
+
+`/rail/lines/` rendered a two-column comparison table of Wenhu and Sanying and
+nothing else. The comparison table *replaced* the link list whenever two pages had
+specs — written when there were two line pages, still in place when there were
+ten. The others were reachable only from prose elsewhere.
+
+The list is not optional. An index navigates; a comparison compares. Both are on
+the page now, in that order, and the comparison renders only when two or more
+pages actually have specs to compare.
+
+**No static check would have caught this.** `npm run check` reports orphans, and
+these pages were not orphans — they were linked from body prose on other pages.
+The index simply stopped listing them. Found by looking at a screenshot taken for
+a different reason, which is the third time this project has found something that
+way.
+
+## 54.5 Also fixed, smaller
+
+- **The strip map had an unkeyed encoding.** BR13 and BR14 render as solid ticks
+  against everyone else's hollow ring, and the key listed only "elevated" — the
+  "not established" entry it used to pair with disappeared when the last unknown
+  structure was resolved in run 3, and nothing replaced it. Exactly the fault run
+  4.1 fixed on the rail variant, still live on the map variant.
+- **A systems page said it "serves" stations.** Same class of small false claim in
+  the page furniture that run 4.1 found on the depot pages; caught before shipping
+  this time. Systems pages now say "concerns".
+- **Untagged Han in a new component**, caught by the language-tagging audit rather
+  than by review.
+
+## 54.6 A fifth: an adversarial fixture that had been failing since run 6
+
+`npm run adversarial` came back **15/16**, and the failing case was
+"zero-width joiners, combining marks, emoji" — a fixture that plants a page
+containing a ZWJ, stacked combining marks and emoji, and expects a clean build.
+
+It was failing on none of those. The fixture's Han was 動物園, and **run 6's
+three-way CJK split means a new Han character on a new content page correctly
+fails the build** — the font gate exists because tofu is invisible on any machine
+with a system CJK font, which includes every machine that builds this site. So
+the fixture had quietly turned into a second, accidental test of the font gate,
+which the case immediately below it already tests deliberately.
+
+It has been failing since run 6 and nobody saw it, because **run 6 and 6.1 did
+not run the adversarial suite** — run 5.1 was the last to report it, at 16/16,
+and that was before the split. Run 3 itself called the harness disproportionate
+as a routine check and it was dropped in practice; this is what dropping it cost.
+
+Fixed by giving the fixture Han that is in the content subset by construction
+(文湖線, which is on the line page), so the case tests what its name says. Back
+to **16/16**.
+
+---
+
+# 55. Part 3 — what was built
+
+Plan and full self-critique in `docs/plans/run7-plan.md`. The critique changed
+five things before building; §57.
+
+## 55.1 The elevation profile — `components/ElevationProfile.tsx`
+
+A section drawing of the Wenhu Line: distance along the horizontal from TDX's own
+`CumulativeDistance`, structure from `lib/station-overlay.ts`.
+
+**The horizontal axis is not drawn by hand.** `chainageKm` is now a field on the
+generated station registry, from the same TDX field whose last value is the route
+length the page prints. The registry regenerates from `data/tdx/`, so the drawing
+cannot drift from the number above it.
+
+**What it refuses to draw is the point.** DORTS gives 3.9 km of underground
+running and two underground stations. Those two stations are 2.58 km apart by the
+operator's own chainage. The remaining 1.32 km is ramp at the two portals, and
+**no source divides it between them** — so the located run is drawn solid and the
+unlocated part as two hatched wedges, with the arithmetic printed under the
+drawing. Guessing the portals would have produced a better picture asserting two
+chainages nobody published, and this project has already drawn one thing in the
+wrong place for four builds.
+
+Height is not to scale and the caption says so once: no source gives a rail level,
+and an invented vertical axis dressed as a measurement would be worse than none.
+
+**Not built for Tamsui–Xinyi**, which the brief named and which is the obvious
+second subject. **No station on the R line has a sourced structure value.** The
+research describes the alignment in prose — at grade at Guizikeng, elevated from
+the embankment, underground after Minzu West Road — but that does not assign a
+structure to R21 Qiyan. The component takes any line; building it today would have
+meant inventing twenty-eight station structures to fill a picture.
+
+**Mobile:** 540 px minimum, scrolling in its own keyboard-reachable container. 540
+is chosen rather than rounded — at that width the visible ~343 px reaches BR14, so
+the tunnel is on screen before anyone scrolls. A wider drawing reads better and
+opens on a viaduct, which is the least informative part of it.
+
+## 55.2 Two numberings, one line — `components/NumberingLadder.tsx`
+
+New page at **`/rail/systems/station-numbering/`**.
+
+The engineering numbers are now a registry field, transcribed verbatim from
+DORTS's station table — verified row by row this run, all twenty-four.
+
+**Assessment, as the brief asked for before building:**
+
+- *Should the registry carry them?* **Yes.** A per-station fact from a primary
+  source, exactly like `structure`, and the generator already reports an overlay
+  entry whose station TDX does not recognise.
+- *Hover, or a toggle on the strip map?* **No.** Hover has no touch equivalent,
+  and a toggle costs a client component and a second state on the site's most-used
+  navigation device to surface a fact that is historical rather than navigational.
+  Nobody standing on a platform needs the engineering number.
+- *A diagram that makes the inversion legible at a glance?* **Yes, and it is the
+  reason to do this at all.**
+
+The device is a crossing ladder: the line in operating order on the left, the same
+twenty-four stations in engineering order on the right, a hairline joining each
+station to itself. Where the orders agree the hairlines run parallel; where they
+invert, they cross. **The Muzha half draws a solid X and the Neihu half draws a
+ladder, and the reason is the data.** BR07 Liuzhangli is the fixed point — the one
+station whose two numbers land in the same place, because 7 + 7 is the fourteen
+every Muzha pair sums to.
+
+The full table is published below the diagram as the evidence. The diagram is the
+argument; the table is the appendix, and the plan's first draft had that the wrong
+way round.
+
+**One inference is marked as one.** DORTS gives the Songshan Airport station's
+chronology — study directed February 2000, Executive Yuan agreement 1 August 2001,
+funding approved 4 January 2002 — and the table shows the station carries a
+BR-series number although it is a Neihu-section station. The reading that it was
+folded into the other series because it arrived after the B series was allocated is
+**this site's**, and the page says so in those words.
+
+## 55.3 Typographic scale
+
+**The lead figure.** One number at 58 px, on pages where a figure is the page's
+argument. On the Wenhu page that is 25.17 km with the other three underneath it.
+**One figure, not three** — three would be the KPI strip every marketing page has
+had since 2014, and all three would already be in the facts panel eight lines
+below, which is a second copy of a fact wearing a data costume. The plan proposed
+three; the critique cut it to one.
+
+**The station code at platform-sign scale.** 40 px, same badge token, same
+AA-checked colour pair from the line registry, only the scale changes. On a station
+page the code *is* the identity — it is what is printed largest on the real
+platform — and it was set at 15 px beside the title, which is the size it takes
+when it is an aside inside a sentence.
+
+**The index tally.** Section indexes now open with counts computed from the content
+tree: how many pages, how many written up, how many are scope statements. No new
+colour, and it makes the barest pages say something true.
+
+## 55.4 Exits — the device of my own
+
+Not a chart. A fact per station and a paragraph on the line page.
+
+**Eight of Wenhu's twenty-four stations have exactly one exit, and seven of the
+eight are consecutive** — BR02 Muzha through BR08 Technology Building, an unbroken
+run from Wenshan into Daan where every station has one way in and one way out.
+Twenty of twenty-four have three or fewer. A quarter of the line's sixty-three
+exits are at two stations.
+
+That is not a trivia column. A single-exit station is one lift, one stair, one
+escalator bank and one crowd, and when it closes the station closes. It is the
+predictable consequence of a medium-capacity railway on a single row of columns
+down the middle of an existing road — and DORTS gives that same constraint as the
+reason these stations carry no decoration, because a single-column support system
+limits what can hang on it. The exits are the same economy at street level.
+
+Primary, per-station, absent from every English source, and not a design
+convention: no transit reference site draws exit counts. Every station page carries
+its own, and `npm run facts` pins the prose to the registry.
+
+## 55.5 Planned interchanges
+
+Three, all primary-sourced and verified this run:
+
+| Station | Planned | Source |
+| --- | --- | --- |
+| BR01 Taipei Zoo | Circular South Ring | DORTS 環狀線北環及南環 |
+| BR15 Jiannan Rd. | Circular North Ring | DORTS 環狀線北環及南環 |
+| BR22 Donghu | Xidong Line | New Taipei DORTS 汐東捷運 |
+
+**They render, and they must not render like an interchange.** No fill, no coloured
+pill, no station code — the code does not exist yet and printing one would be
+inventing data. A dashed outline carrying the *line's name*, the word "planned" in
+a label, and the citation inline, because station pages are generated from the
+registry and have no references list to resolve a source id against. Colour is not
+the cue; fill and wording are, so it survives greyscale, print and every
+dichromacy.
+
+## 55.6 Length bars on the network table
+
+Inline, in the existing cell, beside the number that is still printed. Seven
+figures between 15 and 52 km read as seven figures; drawn, the Airport MRT is
+visibly twice the Bannan Line and three times the Circular.
+
+**This is the one place colour was added this run.** §56.
+
+## 55.7 The index pages
+
+Argued in the plan, changed by the critique in one respect.
+
+**Against a borrowed photograph:** it would decorate a parent with a picture of one
+of its children, and push the links — the page's entire job — below the fold on a
+phone. Run 6 rejected section-opener imagery on exactly that argument. **Against a
+map:** `/rail/lines/` would get the network map, which is already the whole content
+of `/rail/network/`.
+
+**For data:** an index of ten line pages can say something true in the space a
+photograph would take, and the honest number is how many are actually written. It
+is computed from the tree, so it cannot flatter the site.
+
+The critique cut the progress bars that were in the first draft. A bar turns a
+status into a score and implies a scope statement is fifteen per cent of a page. It
+is not a partial page; it is a different and complete thing, and run 5 argued that
+properly. A word per row says the same without the implication.
+
+---
+
+# 56. Colour — the restraint holds, with one exception
+
+Asked again, and the answer is again mostly no.
+
+Colouring the comparison devices would mean colouring by line. On a depot chart
+that means colouring by which line the depot serves — but the comparison is *area*,
+and the line is not the variable. Colour there encodes nothing, which is the
+definition the brief itself set.
+
+**The one exception is the network table's length bars**, where the line *is* the
+variable, every row already carries the same colour in its badge two cells to the
+left, and the bar is therefore colour restating an encoding that is already
+redundant. That is the only safe use available here.
+
+Everything else was left alone. The section drawing and the numbering ladder are
+both single-accent, and both distinguish their categories by **position and fill
+only** — above, on or below the ground line; solid, hollow or hatched — so nothing
+is lost in greyscale, in print, or under any of the three dichromacies. That is the
+badge rule applied to diagrams, and it was not relaxed because a diagram looks like
+a place where colour would be nice.
+
+---
+
+# 57. What I proposed and what I cut
+
+## Cut before building, in the plan's own critique
+
+1. **Three big numbers on the line page → one.** The KPI strip every product page
+   has, and two of the three were already in the facts panel below.
+2. **The elevation profile as a chart → as a section.** The first wireframe had
+   three abstract bands, an axis and a legend. A section has a ground line, a deck
+   on piers above it and a bore below it, because that is what the railway is.
+3. **Names on both rails of the ladder → names on one.** Twenty-four stations
+   listed twice is a table with lines drawn on it, and the brief said this deserved
+   better than a table.
+4. **Progress bars on the index → a word.**
+5. **The exit strip promoted from a footnote to the lead device.** It had been
+   ranked under a proportional depot chart, which is the more conventional piece of
+   work. It is the thing no English source has.
+
+## Cut during the build
+
+**The proportional depot-area diagram.** The device is right and the data is not
+there. **Exactly two depots on this site have a sourced area** — Muzha 6.2 ha and
+Neihu 7.11 ha. The corpus adds Nangang, Zhonghe, Xinzhuang and Xindian, but those
+are research, and publishing research figures to make a chart look full is the
+precise failure this site was built to avoid. A two-bar chart is not a comparison;
+it is two numbers with rectangles behind them. It becomes available the day the
+depot pages are written from the corpus, which is a Part 4 recommendation.
+
+**Exit counts on the strip map rows.** The plan had them there. The strip map is
+navigation, and a number against every row makes it noisier at its primary job. The
+station pages carry the count and the line page carries the finding.
+
+## Not considered, recorded as not considered
+
+No animation anywhere. Nothing on this site changes over time.
+
+---
+
+# 58. Density — Part 3E
+
+Audited, and most of the answer arrived with the devices.
+
+**Line page, before:** hero photograph, then 5,000 px of uniformly-spaced 17 px
+prose broken only by 25 px headings, then a map, a spec table and a reference list.
+One tonal event at the top and nothing after it.
+
+**Line page, now:** hero → title → one 58 px figure → dense facts grid → prose →
+**section drawing** → geographic map → dense spec table → references. Dense, open,
+dense. The two new devices are both pictures in a run of text, which is the
+alternation LTG gets from photographs and this site could not get that way, because
+most of its subjects cannot be photographed usefully.
+
+**Station page:** hero → 40 px code → dense facts strip → map → tables. Also
+alternating, where before it was badge-title-panel-map-table at one weight
+throughout.
+
+**Index pages:** large tally → list. Was: title, one line of prose, list.
+
+**Still uniform, and honestly so: the scope pages.** A scope statement is three
+paragraphs saying what a page will cover and why it does not exist yet. There is
+nothing to alternate against and inventing something would be decoration. They now
+at least sit under an index that says how many of them there are.
+
+---
+
+# 59. Part 4 — what is now publishable
+
+## 59.1 Scope statements that could become real content today
+
+Ranked by material × source quality × work needed. Everything here names a source
+specific enough to go and read.
+
+| Page | What it gets | Best source |
+| --- | --- | --- |
+| **`/rail/depots/zhonghe-depot`** — does not exist | The whole page: 1.47 ha including a passenger station, the former TRA site, stabling and cleaning only, and DORTS's own 因用地面積之限制 as the reason | DORTS 中和新蘆線, **primary** |
+| **`/bus/network`** | The feeder-colour table, the four-tier hierarchy, the number bands, the revenue-pooling model | Taipei PTO + TRTC's own feeder documentation, **primary** |
+| **`/gondola`** | Crystal cabins — 48 mm of glass, 213 kg, five passengers instead of eight — the T16 foundation failure, numeric suspension thresholds | 土木技師公會 journal + gondola.taipei, **primary** |
+| **`/ticketing`** | The two things English sources get wrong: the TPASS card is not required, and the NT$100 fee is refunded | NTPC TPASS documentation, **primary** |
+| **`/ferry`** | Weekend headways of 3–5 minutes on the Tamsui–Bali crossing; four operators doing different things; the concession trap | Taipei DoT 2004 release + operator sites, **primary** |
+| **`/rail/lines/circular-line`** | The 403 earthquake and the bearing mechanism | Control Yuan report, **primary** |
+| **`/rail/lines/songshan-xindian-line`** | The 1987 all-underground decision; Xiaobitan; the end of cross-colour running | DORTS 松山新店線, **primary** |
+| **`/rail/lines/bannan-line`** | Three simultaneous service patterns; empty trains run into the peak purely to absorb loading | TRTC operations, **primary** |
+| **`/bike`** | Why 2.0 exists: no electricity in the dock, so no excavation and no Taipower connection | EasyCard + Taipei DGBAS, **primary** |
+| **12 Sanying station pages** | Codes, names, locations, sub-names | NTMC route page, **primary** |
+
+## 59.2 The publication queue — where I disagree
+
+**#2 Sanying Line is done.** Run 5 wrote it. The queue is stale. What remains is
+its twelve station pages, which is a different job.
+
+**#1 Xinyi East Extension stays first, but the first task is not writing.** The
+corpus's own sourcing note says the extension material is zh.wikipedia-sourced and
+needs a primary pass. Time-critical *and* under-sourced is the worst combination,
+because deadline pressure is exactly what makes people publish from a wiki. **Do
+the primary pass first, then write.**
+
+**#6 the C341 procurement should come off the list until it has a second source.**
+It is a strong, specific and embarrassing claim about a named company — a
+contractor forced to buy from a supplier it did not want, at 1.5× the price —
+resting on one encyclopedia. It currently outranks two items with primary sourcing.
+By this site's own rule 5 it is not ready.
+
+**#9 the joint bus network explainer should be second.** Primary sourcing, one
+page, no new research pass, and it corrects something no English source carries.
+Best effort-to-value ratio on the list and it is ninth. And the site's wordmark
+*is* a bus destination blind: the design reference makes dot-matrix "the bus half
+of the identity", and the bus section has been a scope statement since run 1. The
+site looks like it is about buses and contains nothing about them.
+
+**#7 Airport MRT should hold until the Marubeni question is answered.** The arc is
+the article — six missed openings, a NT$7.2 bn claim, now profitable and debt-free —
+and the corpus cannot say whether the claim was ever settled. An article that ends
+"a NT$7.2 bn claim was announced" is half a story.
+
+**Zhonghe Depot is not on the list and should be.**
+
+### Revised order
+
+1. **Xinyi East Extension** — primary pass, then write. Opens this month.
+2. **The joint bus network explainer** — best ratio, primary, no research needed.
+3. **Circular Line 403 earthquake** — the richest primary trail available.
+4. **Losheng and Xinzhuang Depot** — with the handling the corpus specifies.
+5. **Zhonghe Depot** *(new)* — one primary source, one complete page.
+6. **Maokong Gondola** *(new)* — crystal cabins and T16.
+7. **Ticketing: the two corrections** *(new)*.
+8. **YouBike** — the 2.0 dock decision.
+9. **The 2014 naming transition** — partly told already on the new numbering page,
+   which is where the 2014 and 2016 dates now live.
+10. **Sanying station pages** — replaces "Sanying Line", done.
+
+Off the list until sourced: **C341** (needs a second source), **Airport MRT**
+(needs the Marubeni outcome).
+
+## 59.3 The single highest-value page this week
+
+**The joint bus network explainer, `/bus/network`.**
+
+Not Xinyi East: its value window is real but narrow — after the end of August it is
+routine — and its sourcing is a wiki. Not the Circular 403 article: it is the best
+*story* on the list and it is a research-heavy write with a three-hundred-line
+source trail, which is not a week's work done well.
+
+The bus explainer, because a visitor standing at a stop in Taipei looking at 藍26
+has no way in English to know it is a Bannan Line feeder, and four rows of a table
+fix that permanently.
+
+**What it needs, and it is a short list:**
+
+1. Confirm the number bands — 1–99 core, 100–199 outward, 200–299 cross-district —
+   against Taipei PTO. Currently one secondary source, and the corpus flags it.
+2. Establish whether the Airport MRT has been given a feeder colour prefix.
+3. The URL for TRTC's own feeder documentation, so the 藍7 and 棕10 worked examples
+   cite the operator rather than a summary of it.
+4. A decision on how to present the colour collision — trunk green and blue mean
+   compass direction, feeder green and blue mean MRT line. It is the page's best
+   content and it needs care, not a footnote.
+
+No TDX pull, no fleet data, no photographs. One page. Two days: one chasing
+sources, one writing.
+
+---
+
+# 60. Weight and contrast
+
+## Contrast
+
+**No change to any colour, and none needed.** Everything added this run uses
+existing custom properties. `lib/surfaces.ts` classifies every colour in the
+stylesheet by role and three tests enforce it; nothing new was declared, so nothing
+new needed classifying.
+
+axe-core: **zero violations across 85 pages**, including the two new layouts, which
+were added to the browser-verified page set — run 5.1's lesson that a layout not in
+that list has no browser coverage, and two of its three regressions were exactly
+that.
+
+## Weight, before and after
+
+Run 6's figures against this run's, same script, unchanged:
+
+| Page type | Run 6 | Run 7 | Δ |
+| --- | --- | --- | --- |
+| Home | 291.0 KB | 292.6 KB | +1.6 |
+| Station page (no hero) | 337.1 KB | 339.5 KB | +2.4 |
+| Network | 360.2 KB | 362.7 KB | +2.5 |
+| Line page (with hero) | 438.8 KB | 458.0 KB | **+19.2** |
+
+The line page's 19 KB is HTML: the exits section, the numbering hand-off, the
+fourth length row and the section drawing's SVG, plus the Chinese quotations the
+two new DORTS citations bring with them. Fonts are unchanged in kind — the content
+Han subset carries the new characters, which is the cost of quoting sources in
+their own language, and **decision 3 (run 4, reconfirmed as decision 1 in run 6.1)
+says that is not to be optimised.** Reported, not acted on.
+
+Every page after the first still costs its HTML alone.
+
+**269.5 KB of font files are still emitted, committed and deployed that no
+English-reading visitor ever downloads.** Unchanged, same decision.
+
+---
+
+# 61. Housekeeping
+
+## 61.1 Station photographs
+
+`scripts/commons-candidates.mjs` — a new discovery script that searches Commons for
+each bare station page and prints a licence-filtered shortlist with thumbnails,
+with pacing. It downloads nothing: `npm run image` is still the only thing that
+commits a file, and it re-checks the licence at the door.
+
+**Fourteen of twenty-four station pages now have a photograph, up from three.**
+BR02, BR03, BR05, BR06, BR07, BR08, BR09, BR11, BR12, BR15 and BR18 added.
+
+**Every candidate was looked at before it shipped, and three were rejected on
+sight:**
+
+- The top result for BR01 Taipei Zoo is a photograph of the **Maokong Gondola**
+  station, not the MRT station. The sign in the frame reads 動物園站 and the file
+  title says Gondola. Run 6's lesson, recurring: filenames lie.
+- BR14 Dazhi's best candidate shows the surface entrance **shuttered before
+  opening**. Historically interesting; a poor and potentially misleading lead image
+  for a station open since 2009.
+- BR16 Xihu's best candidate is a row of ticket machines, which identifies no
+  station.
+
+**Commons rate-limits hard** — HTTP 429 after six thumbnail fetches at 400 ms
+spacing, and again after nine at 5 s. Ten stations remain bare because the *search*
+half of the job ran out of budget, not because nothing exists: the shortlist for
+all twenty-one is committed at `docs/commons-candidates.txt`, so the next run
+starts from a reviewed list rather than a search.
+
+Two of the new images (BR06, BR08) have no 1600 px variant because their sources
+are 800 px wide. The pipeline records the widths it actually produced rather than
+upscaling, and the image tests pass.
+
+## 61.2 Print
+
+Every new device has a print rule, written with it rather than after it:
+
+- The section drawing loses its scroll container and its tinted well, and its
+  ground and axis lines darken, because a background fill browsers drop is not
+  something a drawing may depend on.
+- The numbering ladder likewise.
+- **The network length bars print as outlines**, not fills — a bar whose background
+  is dropped is a gap in a table, which is worse than no bar.
+- The lead figure prints black rather than in the line accent.
+
+Seventeen print PDFs regenerate clean.
+
+## 61.3 Accessibility on everything new
+
+- **Keyboard:** both new scroll containers carry `tabIndex` and a group role, so a
+  region that scrolls can be scrolled from the keyboard (WCAG 2.1.1). Full
+  traversal passes on every page type, including the two new ones.
+- **Screen readers:** the big station code is `aria-hidden` with the code restored
+  inside the `<h1>`, so it is announced once rather than twice. Both diagrams carry
+  a sentence-length `aria-label` describing what they show, not what they are. The
+  ladder renders two layouts and hides one with `display: none`, which removes it
+  from the accessibility tree — exactly one diagram is announced.
+- **Contrast:** no new colours; everything inherits values already classified and
+  tested.
+- **400% zoom:** no document-level horizontal scrollbar on any page.
+- **Touch:** the planned-interchange citation is an inline link inside a paragraph,
+  the same target size as every other inline link on the site. No new sub-24 px
+  controls were introduced.
+- **The mobile answer for both diagrams is not "hide it"** — the section drawing
+  scrolls at a width chosen so the tunnel is visible before anyone scrolls, and the
+  ladder switches to a layout without station names because at 375 px the wide
+  layout renders its text at about 6 px. A diagram that technically fits and cannot
+  be read is the same failure as hiding it with extra steps.
+
+## 61.4 Tooling
+
+| Command | What changed |
+| --- | --- |
+| `npm run facts` | +2 cross-checks: single-exit count and total exits, prose against the registry. Verified by planting a wrong number and watching it fail. |
+| `npm run stations` | Emits `chainageKm` per station from TDX `CumulativeDistance`. |
+| `scripts/shot.mjs` *(new)* | Screenshots any route at any width, with `--clip` for 1:1 bands. Generalises `article-shot.mjs`, which hardcoded one route. Waits on `document.fonts.ready`. |
+| `scripts/commons-candidates.mjs` *(new)* | §61.1. |
+| `npm run verify:browser` | Two pages added to the verified set: the numbering page and BR22. |
+| `tests/build-output.test.mts` | +1 test: no badge may be titled with a bare code. The 26.42 assertion was rewritten to check what it was protecting rather than banning a substring the page now publishes deliberately. |
+
+---
+
+# 62. Screenshots worth looking at
+
+All in `docs/screenshots/`. Before-and-after pairs use the `r7before` and `r7*`
+suffixes.
+
+| File | What it shows |
+| --- | --- |
+| `prof-1440-r7prof3.png` | The section drawing at full size — the tunnel, the two hatched portal wedges, the arithmetic under it. |
+| `profm-375-r7prof3.png` | The same on a phone, opened so the tunnel is on screen before any scrolling. |
+| `ladderc-1440-r7ladder2.png` | The numbering X. The finding, drawn. |
+| `ladderm-375-r7ladder3.png` | The compact ladder — the mobile answer that is not "hide it". |
+| `st-1440-r7station.png` | The station page: code at sign scale, exits, engineering number, the planned-interchange strip. |
+| `idx-1440-r7index.png` | The lines index, listing all ten lines again. |
+| `linetop-1440-r7before-top.png` | The before, for comparison: everything between 10 and 17 px. |
+
+---
+
+# 63. What still needs a human
+
+1. **The Fuzhou Mountain Tunnel** (§52.3). The builder says the Muzha section is
+   entirely elevated; two secondary sources put a tunnel between BR05 and BR06. The
+   section drawing follows the primary and names the disagreement, but one stretch
+   of a published illustration is uncertain and that is worth settling.
+2. **The fleet arithmetic** (§52.4). 51 and 101 are both odd. If any train is
+   formed across both fleets, this site's framing of them as separate is wrong.
+   Fourth run of asking.
+3. **The 24 September 1993 second fire** (§53.2). Needs somebody to read 〈木柵線〉
+   in full rather than a summary of it.
+4. **`docs/research/research-findings.md` does not exist** and this log cites it a
+   dozen times. Either restore it or rewrite the references.
+5. **`docs/framework.md` is out of date** in three places: it calls
+   `blue-highway.md` "thin, gap statement only" when it is 261 lines with primary
+   sourcing; it maps twenty-five research files when twenty-one exist; and its
+   publication queue lists Sanying as unwritten.
+6. **What TRTC's depot "Level 3" and "Level 5" actually mean.** The site publishes
+   "Third-level depot" on a live page and cannot say what it means. The corpus notes
+   the terms are referenced constantly and defined nowhere.
+7. **archive.today still refuses every automated capture.** Six blocked-origin URLs
+   still have no second archive. One manual visit each settles it.
+8. **Ten station pages are still bare**, with a reviewed shortlist waiting at
+   `docs/commons-candidates.txt`.

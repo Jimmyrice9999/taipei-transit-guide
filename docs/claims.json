@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 216,
+    "sourced": 240,
     "tbc": 13,
     "asserted": 32,
-    "meta": 13
+    "meta": 15
   },
   "files": [
     {
@@ -179,7 +179,7 @@
     {
       "file": "content/rail/history/matra-dispute.md",
       "sources": 12,
-      "sourced": 60,
+      "sourced": 64,
       "tbc": 0,
       "asserted": 0,
       "meta": 4
@@ -258,11 +258,11 @@
     },
     {
       "file": "content/rail/lines/wenhu-line.md",
-      "sources": 11,
-      "sourced": 44,
+      "sources": 12,
+      "sourced": 49,
       "tbc": 0,
       "asserted": 5,
-      "meta": 3
+      "meta": 4
     },
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
@@ -354,8 +354,8 @@
     },
     {
       "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
-      "sources": 10,
-      "sourced": 30,
+      "sources": 11,
+      "sourced": 31,
       "tbc": 2,
       "asserted": 7,
       "meta": 0
@@ -375,6 +375,14 @@
       "tbc": 0,
       "asserted": 0,
       "meta": 0
+    },
+    {
+      "file": "content/rail/systems/station-numbering.md",
+      "sources": 2,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
     },
     {
       "file": "content/rail/systems/_index.md",

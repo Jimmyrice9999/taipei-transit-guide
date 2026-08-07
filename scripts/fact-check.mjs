@@ -55,6 +55,7 @@ const data = JSON.parse(
       const br = getLineStations('BR').map((s,i) => ({
         code: s.code, name: s.name, nameZh: s.nameZh, position: i+1,
         structure: s.structure, interchange: s.interchange, district: s.district,
+        exits: s.exits, engineering: s.engineering,
       }))
       console.log(JSON.stringify({
         totalStations: STATIONS.length,
@@ -186,11 +187,18 @@ const ok = (label) => checks.push(label)
   }
 
   // Route length, in frontmatter and in prose, against the official record.
-  const specLength = number('specs', 'Route length, revenue')
+  /*
+   * Renamed from "Route length, revenue" in run 7 to match 營運長度, the term
+   * both DORTS and zh.wikipedia use and the one the page's prose now uses.
+   * The rename is here as well as in the content because this lookup is by
+   * exact label and fails loudly rather than skipping — which is the whole
+   * point of the exact-label rule above.
+   */
+  const specLength = number('specs', 'Route length, operating')
   if (specLength === undefined) {
     fail(
       'wenhu-line.md',
-      'no numeric specs row labelled "Route length, revenue" — the cross-check ' +
+      'no numeric specs row labelled "Route length, operating" — the cross-check ' +
         'against TDX cannot run. Rename the row back or update this check; a ' +
         'silently skipped check is the thing this file exists to prevent.',
     )
@@ -227,6 +235,45 @@ const ok = (label) => checks.push(label)
           `(${data.br.filter((s) => s.structure === 'unknown').length} still unknown)`,
       )
     } else ok('elevated count matches the station overlay')
+  }
+
+  /*
+   * Exit counts, prose against the registry.
+   *
+   * Added in run 7 because the research corpus — and, following it, this run's
+   * own brief — said eleven Wenhu stations have a single exit. The builder's
+   * table says eight. The miscount was in a lead file rather than on the site,
+   * but it would have reached the site if nobody had counted, and prose numbers
+   * that restate a registry are exactly where drift happens silently.
+   */
+  const withExits = data.br.filter((s) => typeof s.exits === 'number')
+  if (withExits.length === data.br.length) {
+    const singles = withExits.filter((s) => s.exits === 1).length
+    const totalExits = withExits.reduce((sum, s) => sum + s.exits, 0)
+    const words = { 8: 'Eight', 11: 'Eleven', 20: 'Twenty', 24: 'Twenty-four' }
+
+    const prosePattern = /\*\*(\w+) of the twenty-four stations have exactly one exit\*\*/
+    const proseMatch = source.match(prosePattern)
+    if (!proseMatch) {
+      fail(
+        'wenhu-line.md',
+        'no "N of the twenty-four stations have exactly one exit" sentence found — ' +
+          'the exit cross-check cannot run. Update this check or restore the sentence; ' +
+          'a check that silently skips is what this file exists to prevent.',
+      )
+    } else if (proseMatch[1] !== words[singles]) {
+      fail(
+        'wenhu-line.md',
+        `prose says ${proseMatch[1].toLowerCase()} single-exit stations; ` +
+          `the registry counts ${singles}`,
+      )
+    } else ok(`single-exit station count ${singles} matches the registry`)
+
+    if (!source.includes(`sixty-three between its twenty-four stations`) && totalExits === 63) {
+      // The written total is spelled out; only flag when the number moves.
+    } else if (totalExits !== 63) {
+      fail('wenhu-line.md', `prose says sixty-three exits in total; the registry counts ${totalExits}`)
+    } else ok(`total exit count ${totalExits} matches the registry`)
   }
 
   // End-to-end time against TDX.

@@ -11,7 +11,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import CiteMark from '@/components/CiteMark'
+import ElevationProfile from '@/components/ElevationProfile'
 import HanContentSubset from '@/components/HanContentSubset'
+import NumberingLadder from '@/components/NumberingLadder'
 import FactsPanel from '@/components/FactsPanel'
 import Figure from '@/components/Figure'
 import FormationDiagram from '@/components/FormationDiagram'
@@ -236,7 +239,17 @@ export default async function ContentPage({ params }: Props) {
   const railNote =
     type === 'depots' && marked.size > 0
       ? `Joins the line at ${[...marked].join(', ')}`
-      : undefined
+      : /*
+         * A systems page does not serve stations either — it describes
+         * something about them. Same class of small false claim in the page
+         * furniture that run 4.1 found on the depot pages, caught this time
+         * before shipping rather than after.
+         */
+        type === 'systems' && marked.size > 0
+        ? marked.size === stations.length
+          ? `Concerns all ${stations.length} stations`
+          : `Concerns ${marked.size} of ${stations.length} stations`
+        : undefined
 
   /*
    * The geographic map goes on line pages only. On a fleet or depot page it
@@ -363,6 +376,23 @@ export default async function ContentPage({ params }: Props) {
           )}
 
           <div className="page-main">
+            {/*
+              One figure, set large, above the facts panel — where a page has a
+              figure that is its argument rather than one of its attributes.
+              Singular by decision: see the Lead type in lib/content.
+            */}
+            {page.lead && (
+              <div className="lead-figure">
+                <p className="lead-value">
+                  {page.lead.value}
+                  {page.lead.unit && <span className="lead-unit">{page.lead.unit}</span>}
+                  <CiteMark id={page.lead.source} references={page.references} />
+                </p>
+                <p className="lead-label">{page.lead.label}</p>
+                {page.lead.note && <p className="lead-note">{page.lead.note}</p>}
+              </div>
+            )}
+
             {/* Spans the content width: a platform sign is a wide strip. */}
             <FactsPanel
               facts={page.facts}
@@ -393,12 +423,37 @@ export default async function ContentPage({ params }: Props) {
             {page.formation && <FormationDiagram formation={page.formation} />}
 
             {/*
+              A named device leads the page, above the prose, because on the
+              pages that carry one the diagram IS the argument and the prose
+              is the explanation of it. See DEVICES in lib/content.
+            */}
+            {page.device === 'numbering-ladder' && (
+              <NumberingLadder line={accent} stations={stations} seriesBreakAfter="BR13" />
+            )}
+
+            {/*
               The Markdown body was converted to HTML at build time, including
               station badges and Chinese language tagging. React needs this
               explicit opt-in to insert raw HTML — only ever safe because the
               content is our own files in /content.
             */}
             <div className="prose" dangerouslySetInnerHTML={{ __html: page.html }} />
+
+            {/*
+              The section drawing goes above the geographic map, because they
+              answer different questions and this is the one nobody else draws:
+              the map says where the line goes, the profile says what it is
+              built on. Opt-in per page — see toProfile in lib/content.
+            */}
+            {page.profile && (
+              <ElevationProfile
+                line={accent}
+                stations={stations}
+                caption={page.profile.caption}
+                label={page.profile.label}
+                underground={page.profile.underground ?? undefined}
+              />
+            )}
 
             {map}
 

@@ -141,6 +141,19 @@ export type PageMeta = {
   formation: string
   /** Lead photograph, or a description of the one that is wanted. */
   hero: Hero | null
+  /** The section drawing, on line pages whose structures are sourced. */
+  profile: Profile | null
+  /** One figure set large, where a page has a figure that is its point. */
+  lead: Lead | null
+  /**
+   * A named diagram this page leads with, rendered above its prose.
+   *
+   * Deliberately a short allowlist rather than a plugin system: a device is a
+   * claim about data the site holds, so adding one should mean writing a
+   * component and naming it here, not dropping an identifier into frontmatter
+   * and hoping. An unknown name renders nothing and the build says so.
+   */
+  device: string
   /** Everything this page cites, in the order it is numbered on the page. */
   sources: Source[]
   /**
@@ -168,6 +181,38 @@ export type Hero = {
   caption: string
   credit: string
   wanted: string
+}
+
+/**
+ * The `lead:` block — one figure, set large.
+ *
+ *   lead:
+ *     value: "25.17"
+ *     unit: km
+ *     label: operating length, BR01 to BR24
+ *     source: tdx
+ *     note: Also published as 25.7, 25.04 and 26.42 — see below.
+ *
+ * Deliberately singular. A row of three big numbers is the marketing-page KPI
+ * strip, and on this site all three would already be in the facts panel eight
+ * lines below — a second copy of a fact is decoration with a data costume on.
+ * One figure earns the scale only when it is what the page argues about.
+ */
+export type Lead = {
+  value: string
+  unit: string
+  label: string
+  source: string
+  note: string
+}
+
+/** The `profile:` block — see toProfile and components/ElevationProfile. */
+export type Profile = {
+  caption: string
+  /** Station codes that keep a printed label on the drawing at every width. */
+  label: string[]
+  /** Total underground running, where a source gives one. */
+  underground: { km: number; note: string } | null
 }
 
 export type Page = PageMeta & {
@@ -327,6 +372,78 @@ function toHero(value: unknown): Hero | null {
     wanted: toText(h.wanted),
   }
   return hero.image || hero.src || hero.wanted ? hero : null
+}
+
+/**
+ * Normalises the `profile:` frontmatter block — the section drawing.
+ *
+ *   profile:
+ *     caption: One sentence saying what the reader is looking at.
+ *     label: [BR01, BR12, BR13, BR14, BR15, BR24]
+ *     underground:
+ *       km: 3.9
+ *       note: Where that figure comes from.
+ *
+ * Opt-in per page rather than automatic, because the drawing is only honest on
+ * a line whose stations carry sourced structure values. Eight of the nine line
+ * pages have none, and rendering an empty section for them would say something
+ * false about the railway rather than about the site.
+ */
+function toProfile(value: unknown): Profile | null {
+  if (!value || typeof value !== 'object') return null
+  const p = value as Record<string, unknown>
+  const caption = toText(p.caption)
+  if (!caption) return null
+
+  const u = p.underground
+  const underground =
+    u && typeof u === 'object'
+      ? (() => {
+          const row = u as Record<string, unknown>
+          const km = Number(row.km)
+          return Number.isFinite(km) && km > 0 ? { km, note: toText(row.note) } : null
+        })()
+      : null
+
+  return {
+    caption,
+    label: Array.isArray(p.label) ? p.label.map(toText).filter(Boolean) : [],
+    underground,
+  }
+}
+
+function toLead(value: unknown): Lead | null {
+  if (!value || typeof value !== 'object') return null
+  const l = value as Record<string, unknown>
+  const lead = {
+    value: toText(l.value),
+    unit: toText(l.unit),
+    label: toText(l.label),
+    source: toText(l.source),
+    note: toText(l.note),
+  }
+  return lead.value && lead.label ? lead : null
+}
+
+/**
+ * The devices a page may name in `device:`.
+ *
+ * An allowlist on purpose. A device asserts something about data the site
+ * holds, so adding one means writing a component; letting frontmatter name an
+ * arbitrary identifier would let a typo silently render nothing, which is the
+ * `spine: BR97-BR99` failure the adversarial harness already closed once.
+ */
+const DEVICES = new Set(['numbering-ladder'])
+
+function toDevice(value: string, file: string): string {
+  if (!value) return ''
+  if (DEVICES.has(value)) return value
+  warnOnce(
+    `${file}::device`,
+    `  ⚠ ${file}: device: "${value}" is not a known device (${[...DEVICES].join(', ')}). ` +
+      `Nothing will render.`,
+  )
+  return ''
 }
 
 /** Sort by explicit `order`, then alphabetically. */
@@ -557,6 +674,9 @@ function readPageMeta(section: string, type: string, slug: string): PageMeta {
     specs: toSpecs(data.specs),
     formation: toText(data.formation),
     hero: toHero(data.hero),
+    profile: toProfile(data.profile),
+    lead: toLead(data.lead),
+    device: toDevice(toText(data.device), file),
     sources: toSources(data.sources),
     aliases: Array.isArray(data.aliases) ? data.aliases.map(toText).filter(Boolean) : [],
   }

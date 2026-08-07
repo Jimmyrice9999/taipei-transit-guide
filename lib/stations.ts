@@ -19,6 +19,14 @@
 import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
 import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
 
+/** A line that will serve a station but does not yet. See the overlay. */
+export type PlannedInterchange = {
+  line: string
+  note: string
+  sourceTitle: string
+  sourceUrl: string
+}
+
 export type { Structure }
 export { PROVENANCE }
 
@@ -38,15 +46,26 @@ export type Station = {
   lon: number | null
   /** Position along the line, 1-based. */
   sequence: number
+  /** Distance along the route in km, from TDX. Null on branch stations. */
+  chainageKm: number | null
   /** Line codes this station interchanges with — not station codes. */
   interchange: string[]
   /** From the local overlay: TDX does not publish this. */
   structure: Structure
+  /** Construction-project number, where the builder published one. Overlay. */
+  engineering: string
+  /** Street exits, where the builder published a count. Overlay. */
+  exits: number | null
+  /** Lines that will serve this station but do not yet. Overlay. */
+  planned: PlannedInterchange[]
 }
 
 export const STATIONS: Station[] = GENERATED_STATIONS.map((station) => ({
   ...station,
   structure: STATION_OVERLAY[station.code]?.structure ?? 'unknown',
+  engineering: STATION_OVERLAY[station.code]?.engineering ?? '',
+  exits: STATION_OVERLAY[station.code]?.exits ?? null,
+  planned: STATION_OVERLAY[station.code]?.planned ?? [],
 }))
 
 /*

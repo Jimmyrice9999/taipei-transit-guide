@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import Figure from '@/components/Figure'
 import PageShell from '@/components/PageShell'
 import RouteMap from '@/components/RouteMap'
+import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
 import { getImage } from '@/lib/images'
 import { getLineGeometry } from '@/lib/geometry'
@@ -145,15 +146,49 @@ export default async function StationPage({ params }: Props) {
         ]}
       />
 
+      {/*
+        The code at platform-sign scale.
+        ────────────────────────────────────────────────────────────────────
+        On a station page the code IS the identity — it is what is printed
+        largest on the platform, what someone reads off a wall, and what this
+        site's whole visual system is built around. It was set at 0.82em beside
+        the title, which is the size it takes when it is an aside inside a
+        sentence. Here it is not an aside.
+
+        Same token, same colours, same contrast guarantee; the only thing that
+        changes is the scale, which is why this costs no new colour and cannot
+        drift from the badge system.
+      */}
       <div className="station-head">
-        <StationBadge code={station.code} />
-        <div>
-          <h1 className="page-title">{station.name}</h1>
+        <span
+          className="station-code"
+          style={
+            { '--badge-bg': line.badgeBg, '--badge-fg': line.badgeFg } as React.CSSProperties
+          }
+          aria-hidden="true"
+        >
+          {station.code}
+        </span>
+        <div className="station-titles">
+          <h1 className="page-title">
+            <span className="sr-only">{station.code} </span>
+            {station.name}
+          </h1>
           {station.nameZh && (
             <p className="station-zh" lang="zh-Hant">
               {station.nameZh}
             </p>
           )}
+          <p className="station-standfirst">
+            Stop {index + 1} of {stations.length}
+            {station.district && (
+              <>
+                {' · '}
+                <span lang="zh-Hant">{station.district}</span>
+              </>
+            )}
+            {station.structure !== 'unknown' && <> · {structureLabel.toLowerCase()}</>}
+          </p>
         </div>
       </div>
 
@@ -221,6 +256,29 @@ export default async function StationPage({ params }: Props) {
               <dt>Structure</dt>
               <dd>{structureLabel}</dd>
             </div>
+            {/*
+              Exits, from the builder's own station table. Eleven of Wenhu's
+              twenty-four have exactly one, which is a real characteristic of
+              an elevated line built down the middle of a road and appears in
+              no English source. It is a fact about the station, so it goes in
+              the station's facts.
+            */}
+            {station.exits !== null && (
+              <div className="platform-fact">
+                <dt>Street exits</dt>
+                <dd>{station.exits}</dd>
+              </div>
+            )}
+            {station.engineering && (
+              <div className="platform-fact">
+                <dt>
+                  <Link href="/rail/systems/station-numbering/">Engineering no.</Link>
+                </dt>
+                <dd>
+                  <code>{station.engineering}</code>
+                </dd>
+              </div>
+            )}
             <div className="platform-fact">
               <dt>Opened</dt>
               <dd>TBC</dd>
@@ -230,6 +288,36 @@ export default async function StationPage({ params }: Props) {
               <dd>{station.operator}</dd>
             </div>
           </dl>
+
+          {/*
+            Planned interchanges.
+            ──────────────────────────────────────────────────────────────────
+            A future connection is real information — it changes where people
+            buy flats — and it must never be mistaken for something you can use
+            today. So it is not in the Interchange row, does not get a coloured
+            pill, and does not print a station code, because the code does not
+            exist yet. It gets a plainly-labelled strip that says "planned".
+          */}
+          {station.planned.length > 0 && (
+            <div className="platform-planned">
+              <span className="platform-planned-label">Planned</span>
+              <ul>
+                {station.planned.map((entry) => (
+                  <li key={entry.line}>
+                    {/* RichText, not a bare string: these notes name stations
+                        in Chinese, and untagged Han loads the wrong font and
+                        fails the language-tagging audit. Caught by that audit
+                        rather than by review. */}
+                    <span className="pill-planned">{entry.line}</span>{' '}
+                    <RichText>{entry.note}</RichText>{' '}
+                    <a className="planned-cite" href={entry.sourceUrl}>
+                      <RichText>{entry.sourceTitle}</RichText>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
 
         {geometry && (

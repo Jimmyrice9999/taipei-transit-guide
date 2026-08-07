@@ -2249,17 +2249,47 @@ a.spine-station:focus-visible .spine-name {
 /* Station pages                                                       */
 /* ------------------------------------------------------------------ */
 
+/*
+ * The station code at platform-sign scale.
+ *
+ * Everything on this site had been mid-sized: a 40px title and then nothing
+ * above 17px. The code is the one thing on a station page that earns scale —
+ * it is the largest thing printed on the real platform, it is what someone
+ * checks against a wall, and it is the site's signature token. Setting it at
+ * 15px beside the title made it an aside inside its own headline.
+ *
+ * It is the same badge: same background, same foreground, same AA-checked
+ * pair from the line registry. Only the scale changes, so this introduces no
+ * colour and cannot drift from the badge system. Marked aria-hidden with the
+ * code restored inside the h1 for screen readers, so it is announced once.
+ */
 .station-head {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 22px;
+  gap: 20px;
+  margin-bottom: 26px;
 }
 
-.station-head .badge {
-  font-size: 15px;
-  padding: 5px 9px;
-  margin-top: 6px;
+.station-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+  padding: 14px 16px;
+  border-radius: 4px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  white-space: nowrap;
+}
+
+.station-titles {
+  min-width: 0;
 }
 
 .station-head .page-title {
@@ -2270,6 +2300,84 @@ a.spine-station:focus-visible .spine-name {
   margin: 0;
   font-size: 17px;
   color: var(--text-2);
+}
+
+/* The one-line orientation under the name: where on the line, which district,
+   what it is built on. All three are already facts on the page; here they are
+   the sentence that stops the title standing alone. */
+.station-standfirst {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  color: var(--text-3);
+}
+
+@media (max-width: 560px) {
+  .station-head {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .station-code {
+    font-size: 30px;
+    padding: 10px 12px;
+    align-self: flex-start;
+  }
+}
+
+/*
+ * A planned interchange is real information and is not an interchange.
+ *
+ * It renders unfilled, carries the line's NAME rather than a station code —
+ * the code does not exist yet, and inventing one would be exactly the class of
+ * error this site exists to fix — and says "planned" in words. Colour is not
+ * the cue: fill and wording are, so it reads correctly in greyscale, in print
+ * and under every dichromacy.
+ */
+.platform-planned {
+  border-top: 1px solid var(--rule);
+  padding: 10px 14px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.platform-planned-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  flex: none;
+}
+
+.platform-planned ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  color: var(--text-2);
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.platform-planned li + li {
+  margin-top: 5px;
+}
+
+.pill-planned {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px dashed var(--rule-strong);
+  color: var(--text-2);
+  background: none;
+  white-space: nowrap;
 }
 
 .detail-list {
@@ -3454,4 +3562,508 @@ a.badge-link:focus-visible {
   .feature-card img + .feature-body {
     padding: 0 16px 14px;
   }
+}
+
+/* ------------------------------------------------------------------ */
+/* The line in section — components/ElevationProfile.tsx               */
+/* ------------------------------------------------------------------ */
+
+/*
+ * A section drawing, not a chart. There is a ground line, a deck on piers above
+ * it and a bore below it, because that is what the railway is; abstract stacked
+ * bands with an axis would have been a chart of the same numbers and a worse
+ * picture of the railway.
+ *
+ * Only the accent is used. The three structures are told apart by POSITION
+ * (above, on, below the ground line) and by FILL, never by hue — so the drawing
+ * survives greyscale, print and all three dichromacies with nothing lost. That
+ * is the same rule the badges follow and it is not relaxed here because a
+ * diagram looks like a place where colour would be nice.
+ */
+.profile {
+  margin: 26px 0;
+}
+
+.profile-frame {
+  background: var(--bg-well);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 14px 12px 8px;
+}
+
+.profile-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-ground {
+  stroke: var(--rule-strong);
+  stroke-width: 1.5;
+}
+
+.profile-axis {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.profile-run {
+  stroke: var(--accent-map);
+  stroke-linecap: butt;
+}
+
+/* Viaduct: the heaviest stroke on the drawing, because it is a structure. */
+.profile-run-elevated {
+  stroke-width: 7;
+}
+
+/* Bore: drawn as an outline, the way a tunnel is drawn on a section. */
+.profile-run-underground {
+  stroke-width: 7;
+  opacity: 0.55;
+}
+
+.profile-run-at-grade {
+  stroke-width: 7;
+}
+
+.profile-piers line {
+  stroke: var(--accent-map);
+  stroke-width: 2;
+  opacity: 0.5;
+}
+
+/* The hatched region: an extent that exists and whose ends are not published. */
+.profile-uncertain-edge {
+  fill: none;
+  stroke: var(--accent-map);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  opacity: 0.7;
+}
+
+.profile-drop {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.profile-stop {
+  fill: var(--bg);
+  stroke: var(--accent-map);
+  stroke-width: 3;
+}
+
+/* Same fill convention as the strip map: hollow above ground, solid below. */
+.profile-stop[data-structure='underground'] {
+  fill: var(--accent-map);
+}
+
+.profile-code,
+.profile-scale {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--text-3);
+  letter-spacing: 0.02em;
+}
+
+.profile-code {
+  fill: var(--text-2);
+  font-weight: 600;
+}
+
+.profile-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 11.5px;
+  color: var(--text-3);
+}
+
+.profile-key li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.profile-key li::before {
+  content: '';
+  width: 20px;
+  height: 7px;
+  background: var(--accent-map);
+  flex: none;
+}
+
+.profile-key li[data-structure='underground']::before {
+  opacity: 0.55;
+}
+
+.profile-key li[data-structure='unknown']::before {
+  background: none;
+  border: 1px dashed var(--accent-map);
+  height: 11px;
+}
+
+.profile-caveat {
+  display: block;
+  margin-top: 6px;
+}
+
+.profile-frame:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/*
+ * Mobile.
+ *
+ * Squeezing 25 km into 343px would put the closest pair of stations five pixels
+ * apart and the whole tunnel inside 35px, so the drawing keeps a minimum width
+ * and scrolls sideways in its own container — the sanctioned pattern here,
+ * already used by every wide table, and not "hide it".
+ *
+ * 540px is chosen, not rounded: at that width the visible ~343px reaches
+ * BR14, so the tunnel — the thing the drawing exists to show — is on screen
+ * before anyone scrolls. A wider drawing would read better and open on a
+ * viaduct, which is the least informative part of it.
+ */
+@media (max-width: 640px) {
+  .profile-frame {
+    overflow-x: auto;
+    padding: 12px 10px 6px;
+  }
+
+  .profile-svg {
+    width: 540px;
+    max-width: none;
+  }
+}
+
+@media print {
+  .profile-frame {
+    overflow-x: visible;
+    background: none;
+    border-color: #999;
+  }
+
+  .profile-svg {
+    width: 100%;
+  }
+
+  /* Browsers drop background fills; the hatch pattern is a stroke, so it
+     survives, but the well behind it does not and does not need to. */
+  .profile-ground,
+  .profile-axis {
+    stroke: #666;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Two numberings, one line — components/NumberingLadder.tsx           */
+/* ------------------------------------------------------------------ */
+
+/*
+ * A slope chart, but drawn in this site's own vocabulary rather than a chart
+ * library's: mono numerals, the accent for the rails, neutral text for names.
+ *
+ * The crossing is the whole content. Everything else is set back so the lines
+ * are what the eye lands on — which is why the connectors are drawn before the
+ * labels and why a crossing connector is darker than a parallel one.
+ */
+.ladder {
+  margin: 22px 0 26px;
+}
+
+.ladder-frame {
+  background: var(--bg-well);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 12px 8px;
+  overflow-x: auto;
+}
+
+.ladder-frame:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.ladder-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * Two layouts, one hidden. The wide one carries station names; the compact one
+ * does not, because at 375px the wide viewBox renders its 11px text at about
+ * 6px — small enough that the diagram would be present and unreadable, which
+ * is the same failure as hiding it with extra steps. `display: none` also
+ * removes the hidden variant from the accessibility tree, so exactly one
+ * diagram is announced.
+ */
+.ladder-compact {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .ladder-wide {
+    display: none;
+  }
+
+  .ladder-compact {
+    display: block;
+  }
+}
+
+.ladder-head {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  fill: var(--text-2);
+  font-weight: 600;
+}
+
+.ladder-sub {
+  font-family: var(--font-body);
+  font-size: 9px;
+  fill: var(--text-3);
+}
+
+.ladder-link {
+  fill: none;
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+/*
+ * A connector that crosses is doing the work. Darkening it is not decoration:
+ * the reader's question is "which ones cross", and the answer is encoded in
+ * the geometry already — the weight just stops the parallel half of the
+ * drawing competing with the half that carries the finding.
+ */
+.ladder-link[data-crossing] {
+  stroke: var(--accent-map);
+  stroke-width: 1.2;
+  opacity: 0.75;
+}
+
+.ladder-break {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+}
+
+.ladder-code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.ladder-name {
+  font-family: var(--font-body);
+  font-size: 11px;
+  fill: var(--text-2);
+}
+
+/* The two engineering series are told apart by weight, not colour: the second
+   series is a different contract, and that is a fact about the drawing set. */
+.ladder-eng[data-series='B'] {
+  fill: var(--text-2);
+}
+
+@media print {
+  .ladder-frame {
+    overflow-x: visible;
+    background: none;
+    border-color: #999;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* The lead figure                                                     */
+/* ------------------------------------------------------------------ */
+
+/*
+ * One number, set large.
+ *
+ * The site had no big. A 40px title, then a 25px section heading, then
+ * everything else between 9 and 17px — which is why every page read at the
+ * same texture whatever it was about. This is the cheapest available scale
+ * contrast and it costs no new colour.
+ *
+ * It is deliberately ONE figure, not three. Three would be the KPI strip every
+ * marketing page has, and on a line page all three would already be in the
+ * facts panel a few lines below — a second copy of a fact, which is decoration
+ * with a data costume on. This figure earns the scale because it is what the
+ * page argues about: which of four circulating numbers the site stands behind.
+ */
+.lead-figure {
+  margin: 0 0 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.lead-value {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 58px;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
+.lead-unit {
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin-left: 0.22em;
+  color: var(--text-2);
+}
+
+.lead-label {
+  margin: 8px 0 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.lead-note {
+  margin: 8px 0 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text-3);
+  max-width: 56ch;
+}
+
+@media (max-width: 560px) {
+  .lead-value {
+    font-size: 44px;
+  }
+}
+
+@media print {
+  .lead-value {
+    color: #000;
+  }
+}
+
+/* Length bars in the network table. The value stays printed; the bar adds
+   proportion, which seven numbers in a column cannot carry. */
+.km-cell {
+  display: block;
+}
+
+.km-value {
+  display: block;
+}
+
+.km-bar {
+  display: block;
+  height: 4px;
+  width: var(--km-width);
+  min-width: 2px;
+  margin-top: 4px;
+  margin-left: auto;
+  background: var(--km-fill);
+  border-radius: 1px;
+}
+
+@media print {
+  /* Browsers drop background colours; a bar with no fill is a gap in a table,
+     so it prints as an outline of the same length instead. */
+  .km-bar {
+    background: none;
+    border: 1px solid #444;
+    height: 5px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Index and scope pages                                               */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Content pages have photographs; index pages do not, and run 6 was right to
+ * refuse them one — an index is wayfinding, and a hero would push the links
+ * below the fold on a phone to decorate a page with a picture of one of its
+ * children.
+ *
+ * What goes in that space instead is a count of what the folder holds and how
+ * much of it is actually written. It is computed from the tree, so it cannot
+ * flatter the site, and the uncomfortable half of it is the half worth having.
+ */
+.index-tally {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 30px;
+  margin: 0 0 22px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.index-tally b {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--accent);
+  margin-right: 6px;
+  vertical-align: -3px;
+}
+
+/* A word, not a bar. See the comment where it is rendered. */
+.card-status {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.card-status[data-written] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .card-list a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .card-meta {
+    justify-content: flex-start;
+  }
+}
+
+/* The planned-interchange citation. Station pages are generated from the
+   registry and have no references list, so the source travels inline. */
+.planned-cite {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* The key's swatch must match the tick it explains. Underground ticks are
+   filled; at-grade is drawn on the ground line, so it takes the half state.
+   Added in run 7 with the key itself — the previous key named one structure
+   and the map drew three. */
+.spine-key-item[data-structure='underground']::before {
+  background: var(--accent-map);
+}
+
+.spine-key-item[data-structure='at-grade']::before {
+  background: linear-gradient(to bottom, var(--bg) 50%, var(--accent-map) 50%);
 }

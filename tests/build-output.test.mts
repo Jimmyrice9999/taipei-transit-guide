@@ -161,6 +161,25 @@ test('no unresolved station badge appears anywhere', () => {
   assert.deepEqual(offenders, [])
 })
 
+/*
+ * Run 7: `RichText` badged any <known-line-prefix><digits> string in
+ * frontmatter, real station or not — it checked the line and never the
+ * station. `BR1` rendered as a brown badge titled "BR1" on the page about
+ * engineering numbers, which is the site asserting that an engineering number
+ * is a station. A badge means "this is a real station" or it means nothing.
+ */
+test('every rendered badge names a station that exists', () => {
+  const offenders: string[] = []
+  for (const file of allHtml()) {
+    const html = fs.readFileSync(file, 'utf8')
+    // A badge whose title is a bare code with no name after it.
+    for (const m of html.matchAll(/class="badge[^"]*" title="([A-Z]+\d+[a-z]?)"/g)) {
+      offenders.push(`${path.relative(OUT, file)}: badge titled "${m[1]}" with no station name`)
+    }
+  }
+  assert.deepEqual(offenders, [])
+})
+
 test('no page leaks a literal undefined, NaN or [object Object]', () => {
   const offenders: string[] = []
   for (const file of allHtml()) {
@@ -175,7 +194,27 @@ test('no page leaks a literal undefined, NaN or [object Object]', () => {
 test('the Wenhu Line page states the official route length', () => {
   const html = read('rail/lines/wenhu-line/index.html')
   assert.ok(html.includes('25.17'), 'official route length missing')
-  assert.ok(!html.includes('26.4'), 'the inflated 26.4 km figure is still being printed')
+
+  /*
+   * This used to assert 26.4 appeared nowhere, because the page had been
+   * printing the untrimmed alignment AS the route length. Run 7 publishes it
+   * deliberately as the fourth of four figures, with what it measures beside
+   * it — which is the finding, not the bug.
+   *
+   * So the check moves to what it was actually protecting: 26.42 may appear
+   * only in the row that says it includes depot lead and tail track, and the
+   * spec table's route-length value must still be the operating figure.
+   */
+  const specValue = html.match(/Route length, operating[\s\S]{0,400}?>([\d.]+)</)
+  assert.ok(specValue, 'no "Route length, operating" row found in the spec table')
+  assert.equal(specValue![1], '25.17', 'the spec table is not printing the operating length')
+
+  if (html.includes('26.42')) {
+    assert.ok(
+      /26\.42[\s\S]{0,400}?(depot lead|tail track)/.test(html),
+      '26.42 km appears without the explanation that it includes non-revenue track',
+    )
+  }
 })
 
 test('the network table prints both a length and a measurement per line', () => {

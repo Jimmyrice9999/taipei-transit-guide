@@ -84,6 +84,7 @@ sources:
     titleOriginal: 內湖機廠
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/內湖機廠
+    snapshot: https://web.archive.org/web/20260807043713/https://zh.wikipedia.org/zh-tw/%E5%85%A7%E6%B9%96%E6%A9%9F%E5%BB%A0
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -93,6 +94,7 @@ sources:
     titleOriginal: 木柵機廠
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/木柵機廠
+    snapshot: https://web.archive.org/web/20220520160336/https://zh.wikipedia.org/zh-tw/木柵機廠
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant

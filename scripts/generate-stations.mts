@@ -67,6 +67,17 @@ type Built = {
   lon: number | null
   sequence: number
   interchange: string[]
+  /**
+   * Distance along the route to this station, in km, from TDX's
+   * `CumulativeDistance`.
+   *
+   * The same field whose last value is the route's official length — the one
+   * this project spent a run insisting TDX did not publish. Carried per station
+   * because a section drawing needs a real horizontal axis, and the only honest
+   * one is the operator's own chainage. Null on branch stations, which have no
+   * position along the trunk.
+   */
+  chainageKm: number | null
 }
 
 /** Reads one operator's dataset. Null when that operator does not publish it. */
@@ -179,7 +190,12 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
       continue
     }
 
-    const build = (code: string, sequence: number, fallbackName?: any): Built => {
+    const build = (
+      code: string,
+      sequence: number,
+      fallbackName?: any,
+      chainageKm: number | null = null,
+    ): Built => {
       const record = byId.get(code) ?? {}
       const position = record.StationPosition ?? {}
       const fromTransfers = interchangeByStation.get(code)
@@ -198,6 +214,7 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
         interchange: fromTransfers
           ? [...fromTransfers].sort()
           : (seedInterchange.get(code) ?? []),
+        chainageKm,
       }
     }
 
@@ -208,6 +225,7 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
           String(stop.StationID),
           typeof stop.Sequence === 'number' ? stop.Sequence : index + 1,
           stop.StationName,
+          typeof stop.CumulativeDistance === 'number' ? stop.CumulativeDistance : null,
         ),
       )
       .sort((a, b) => a.sequence - b.sequence)
@@ -252,6 +270,7 @@ function buildFromSeed(): Built[] {
     lon: null,
     sequence: index + 1,
     interchange: station.interchange,
+    chainageKm: null,
   }))
 }
 
@@ -397,6 +416,11 @@ export type GeneratedStation = {
   sequence: number
   /** Line codes this station interchanges with. */
   interchange: string[]
+  /**
+   * Distance along the route in km, from TDX \`CumulativeDistance\`. The last
+   * value on a route is that route's official length. Null on branch stations.
+   */
+  chainageKm: number | null
 }
 
 /**
@@ -425,7 +449,8 @@ ${stations
       `name: ${JSON.stringify(s.name)}, nameZh: ${JSON.stringify(s.nameZh)}, ` +
       `district: ${JSON.stringify(s.district)}, address: ${JSON.stringify(s.address)}, ` +
       `lat: ${s.lat}, lon: ${s.lon}, ` +
-      `sequence: ${s.sequence}, interchange: ${JSON.stringify(s.interchange)} },`,
+      `sequence: ${s.sequence}, interchange: ${JSON.stringify(s.interchange)}, ` +
+      `chainageKm: ${s.chainageKm} },`,
   )
   .join('\n')}
 ]

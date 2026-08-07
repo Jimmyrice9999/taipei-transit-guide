@@ -53,7 +53,30 @@ export default function Spine({
     depotsAt.get(depot.at)!.push(depot)
   }
 
-  const hasUnknown = stations.some((s) => s.structure === 'unknown')
+  /*
+   * The key names every structure the map actually draws.
+   *
+   * It used to name only "elevated", plus "not established" when anything was
+   * unknown. That was correct while the underground pair was unknown — the
+   * dotted tick had an entry. Run 3 resolved BR13 and BR14, the "not
+   * established" entry disappeared with the last unknown, and the solid fill
+   * those two now carry was left with nothing explaining it: two stations drawn
+   * differently from the other twenty-two and no legend for the difference.
+   *
+   * The same fault run 4.1 found on the rail variant, still live on the map
+   * variant, and found the same way — by looking at a screenshot. Built from
+   * what is present now, so it cannot fall out of step with the data again.
+   */
+  const present = new Set(stations.map((s) => s.structure))
+  const KEY_LABELS: Record<string, string> = {
+    elevated: 'elevated',
+    'at-grade': 'at grade',
+    underground: 'underground',
+    unknown: 'not established',
+  }
+  const keyItems = (['elevated', 'at-grade', 'underground', 'unknown'] as const).filter((s) =>
+    present.has(s),
+  )
 
   return (
     <nav
@@ -173,14 +196,11 @@ export default function Spine({
 
       {variant === 'map' && (
         <div className="spine-key">
-          <span className="spine-key-item" data-structure="elevated">
-            elevated
-          </span>
-          {hasUnknown && (
-            <span className="spine-key-item" data-structure="unknown">
-              not established
+          {keyItems.map((structure) => (
+            <span className="spine-key-item" data-structure={structure} key={structure}>
+              {KEY_LABELS[structure]}
             </span>
-          )}
+          ))}
         </div>
       )}
 

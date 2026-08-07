@@ -195,9 +195,25 @@ const CASES = [
   {
     name: 'zero-width joiners, combining marks, emoji',
     expect: 'clean',
+    /*
+     * The Han here must already be in the content subset, and that is not
+     * fussiness — it is what stops this case testing two things at once.
+     *
+     * It used to use 動物園. Run 6 split the CJK subset three ways, after which
+     * a NEW Han character on a NEW content page correctly fails the build: the
+     * font gate exists because tofu is invisible on any machine that has a
+     * system CJK font, which includes every machine that builds this site. So
+     * this fixture began failing for a reason with nothing to do with
+     * zero-width joiners — and the case immediately below already asserts the
+     * font gate deliberately, so this one was duplicating it by accident.
+     *
+     * 文湖線 is on the line page, so it is in the content subset by
+     * construction. This case now tests what it says it tests: that a ZWJ, a
+     * stack of combining marks and emoji all survive the pipeline.
+     */
     files: {
       'content/rail/lines/zz-unicode.md':
-        '---\ntitle: "Zero‍width é́́́ and 🚇🚊"\nline: BR\n---\n\nStation 動物園‍園 with emoji 🚇 and combining á́́.\n',
+        '---\ntitle: "Zero‍width é́́́ and 🚇🚊"\nline: BR\n---\n\nThe 文湖線‍線 with emoji 🚇 and combining á́́.\n',
     },
     assert: () => {
       const html = read('rail/lines/zz-unicode/index.html')

@@ -22,9 +22,12 @@ facts:
   - label: Product name
     value: Innovia APM 256
     source: zh-innovia
-  - label: Contract
+  - label: Fleet designation
     value: C370
     source: zh-taipei-fleet
+  - label: Procurement contract
+    value: CB370
+    source: dorts-fleet-faq
   - label: Operator
     value: Taipei Rapid Transit Corporation
   - label: Line
@@ -108,11 +111,22 @@ specs:
   - label: Tyre replacement interval
     value: TBC
 sources:
+  - id: dorts-fleet-faq
+    title: How many trains were procured for each line of the Taipei metro network?
+    titleOriginal: 台北都會區大眾捷運系統路網中，各路線所採購之列車數為何？
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    url: "https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91"
+    snapshot: https://web.archive.org/web/20260807044541/https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
+    accessed: 2026-08-07
+    kind: primary
+    lang: zh-Hant
+    note: "The builder's own procurement table, by contract: 木柵線 CC350 51對電聯車（102輛）and 文湖線 CB370 101對電聯車（202輛）. It is the source for the contract designations and it settles the fleet totals — 51 + 101 = 152 pairs = 304 cars. Published 8 July 2008, last updated 18 March 2026."
   - id: zh-innovia
     title: Bombardier INNOVIA APM 256 electric multiple unit
     titleOriginal: 龐巴迪INNOVIA APM 256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
+    snapshot: https://web.archive.org/web/20150531215555/https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -122,6 +136,7 @@ sources:
     titleOriginal: 臺北捷運列車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-hant/臺北捷運列車
+    snapshot: https://web.archive.org/web/20260807045301/https://zh.wikipedia.org/zh-hant/%E8%87%BA%E5%8C%97%E6%8D%B7%E9%81%8B%E5%88%97%E8%BB%8A
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -131,6 +146,7 @@ sources:
     titleOriginal: 台北捷運VAL256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
+    snapshot: https://web.archive.org/web/20221006051618/https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -140,6 +156,7 @@ sources:
     titleOriginal: 文湖線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/文湖線
+    snapshot: https://web.archive.org/web/20250714045049/https://zh.wikipedia.org/zh-tw/文湖線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -158,6 +175,7 @@ sources:
     titleOriginal: 木柵機廠
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/木柵機廠
+    snapshot: https://web.archive.org/web/20220520160336/https://zh.wikipedia.org/zh-tw/木柵機廠
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -174,6 +192,7 @@ sources:
     title: Matra Transport changes its name
     publisher: Metro Magazine
     url: https://www.metro-magazine.com/news/matra-transport-changes-its-name
+    snapshot: https://web.archive.org/web/20260807044158/https://www.metro-magazine.com/news/matra-transport-changes-its-name
     accessed: 2026-08-06
     kind: secondary
     note: Trade press reporting the completion to 100% and the rename to Siemens Transportation Systems in November 2001.
@@ -189,6 +208,7 @@ sources:
     title: Adtranz takeover completed
     publisher: Railway Gazette International, 1 June 2001
     url: https://www.railwaygazette.com/news/adtranz-takeover-completed/28337.article
+    snapshot: https://web.archive.org/web/20260807045328/https://www.railwaygazette.com/news/2001/06/01/adtranz-takeover-completed/
     accessed: 2026-08-06
     kind: secondary
 ---
@@ -286,3 +306,10 @@ split.
 - **This page previously said Muzha Depot was VAL256-only.** No source
   supports a one-fleet-per-depot split; Muzha stables both
   types[^zh-muzha-depot].
+- **"C370" was labelled as the contract number. It is not.** DORTS's own
+  procurement table gives the contract as **CB370**[^dorts-fleet-faq] — the same
+  CB series as the Neihu civil contracts CB410, CB420 and CB430, into which the
+  E&M scope was folded. C370 is the fleet designation, in the same series as the
+  high-capacity C301, C321, C341, C371 and C381[^zh-taipei-fleet]. Both are
+  correct names for different things, and the page was using one to mean the
+  other. The URL keeps `c370`, which is what the fleet is called.

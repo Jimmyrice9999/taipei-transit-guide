@@ -32,6 +32,11 @@ export const metadata: Metadata = {
 
 export default function NetworkPage() {
   const summaries = getLineSummaries().filter((s) => s.stations.length > 0)
+
+  /* The scale for the length bars: the longest line, not a rounded number, so
+     one bar always reaches the full width and the comparison is against the
+     network rather than against an invented maximum. */
+  const longestKm = Math.max(...summaries.map((s) => s.officialKm ?? 0), 1)
   const interchanges = getInterchanges()
   const geometry = getAllLineGeometry()
 
@@ -186,9 +191,39 @@ export default function NetworkPage() {
                     <td className="num">
                       {travelTimeMin ? `${travelTimeMin} min` : <span className="absent">—</span>}
                     </td>
+                    {/*
+                      The bar is the number, drawn to scale against the longest
+                      line on the network. Seven figures between 15 and 52 km
+                      read as seven figures; drawn, the Airport MRT is visibly
+                      twice the Bannan Line and three times the Circular.
+                      Nothing new is asserted — same value, same cell, and the
+                      figure is still printed beside it, because a bar cannot
+                      be read to two decimal places.
+
+                      It takes the line's own colour, and that is the one place
+                      in run 7 where colour was added. It is defensible here and
+                      almost nowhere else: on this table the LINE is the
+                      variable, every row already carries the same colour in its
+                      badge two cells to the left, and the bar is therefore
+                      colour restating an encoding that is already redundant.
+                      On a chart of depot areas, by contrast, the line is not
+                      the variable and colouring by it would encode nothing.
+                    */}
                     <td className="num">
                       {officialKm ? (
-                        `${officialKm.toFixed(2)} km`
+                        <span className="km-cell">
+                          <span className="km-value">{officialKm.toFixed(2)} km</span>
+                          <span
+                            className="km-bar"
+                            style={
+                              {
+                                '--km-fill': line.map,
+                                '--km-width': `${(officialKm / longestKm) * 100}%`,
+                              } as React.CSSProperties
+                            }
+                            aria-hidden="true"
+                          />
+                        </span>
                       ) : (
                         <span className="absent">—</span>
                       )}

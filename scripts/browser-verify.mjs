@@ -119,6 +119,13 @@ const PAGE_TYPES = [
   { name: 'line-wenhu', url: '/rail/lines/wenhu-line/' },
   { name: 'line-sanying', url: '/rail/lines/sanying-line/' },
   { name: 'article-matra', url: '/rail/history/matra-dispute/' },
+  /* Added in run 7 with the layouts they exercise: station-numbering is the
+     only page carrying the numbering ladder, and BR22 is the only station page
+     with a planned-interchange strip. Run 5.1's lesson — a new layout that is
+     not in this list has no browser coverage, and two of its three regressions
+     were exactly that. */
+  { name: 'systems-numbering', url: '/rail/systems/station-numbering/' },
+  { name: 'station-br22', url: '/rail/stations/br22/' },
   { name: 'station-br13', url: '/rail/stations/br13/' },
   { name: 'station-br10', url: '/rail/stations/br10/' },
   { name: 'stock-val256', url: '/rail/rolling-stock/val256/' },

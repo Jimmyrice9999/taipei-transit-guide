@@ -15,6 +15,25 @@ hero:
   alt: A four-car VAL256 train crossing the Keelung River on the elevated guideway, apartment towers behind.
   caption: A VAL256 crosses the Keelung River into Neihu.
   wanted: A train on the elevated guideway, shot from street level — the line is fully elevated here, so the structure and a passing train are both reachable without a permit.
+lead:
+  value: "25.17"
+  unit: km
+  label: operating length, BR01 to BR24
+  source: tdx
+  note: Also published as 25.7 km (two construction projects added together), 25.04 km (this site's own measurement) and 26.42 km (the whole alignment, depot leads included). Four figures, four different things — the section below says which is which.
+profile:
+  caption: The Wenhu Line in section. It runs on viaduct for all but 3.9 km of its length, dives under Songshan Airport and the Keelung River, and comes back up beside the south portal of the Ziqiang road tunnel at Dazhi.
+  label:
+    - BR01
+    - BR09
+    - BR12
+    - BR13
+    - BR14
+    - BR15
+    - BR24
+  underground:
+    km: 3.9
+    note: The 3.9 km is DORTS's own figure for the Neihu section. DORTS also records the Muzha section as built entirely on viaduct; zh.wikipedia's route description puts a Fuzhou Mountain tunnel between BR05 and BR06, which the builder's own text does not mention, and this drawing follows the builder.
 facts:
   - label: Line code
     value: BR
@@ -30,7 +49,7 @@ facts:
     source: dorts-wenhu
   - label: Underground
     value: BR13, BR14
-    source: zh-wenhu
+    source: dorts-architecture
   - label: Opened
     value: 28 March 1996
     source: dorts-wenhu
@@ -44,8 +63,8 @@ facts:
     value: Rubber-tyred, side-guided
     source: railway-tech-lille
   - label: Electrification
-    value: 750 V DC third rail
-    source: zh-wenhu
+    value: 750 V DC, off the guide bars
+    source: railway-tech-lille
   - label: Signalling
     value: CITYFLO 650, Bombardier (now Alstom)
     source: zh-wenhu
@@ -55,7 +74,7 @@ facts:
   - label: Depots
     value: Muzha, Neihu
 specs:
-  - label: Route length, revenue
+  - label: Route length, operating
     value: "25.17"
     unit: km
     source: tdx
@@ -134,6 +153,16 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The builder's own project record for both halves: 木柵線 約10.9公里，設12座車站 and 內湖線 約14.8公里，設12座車站（地下段3.9公里，2座地下站）. Those two lengths are what add to the 25.7 km that circulates as this line's route length."
+  - id: dorts-architecture
+    title: Station architectural design
+    titleOriginal: 車站建築設計
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    url: "https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F"
+    snapshot: https://web.archive.org/web/20260807045159/https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F
+    accessed: 2026-08-07
+    kind: primary
+    lang: zh-Hant
+    note: "The builder's own account of why the stations look as they do, and — from a completely different direction than the project record — a count that identifies the underground pair: 「文湖線內湖段為木柵段之延伸，屬中運量系統，除大直站為地下車站外，其餘共有十座高架車站」. Ten elevated plus Dazhi is eleven of the Neihu section's twelve; the twelfth is Songshan Airport. Also the source for the single-column load constraint on the Muzha section and the 「空中之河」 / 「湖城故事」 framing of the Neihu section."
   - id: trtc-headways
     title: Routes and headways
     titleOriginal: 路線及班距
@@ -149,6 +178,7 @@ sources:
     titleOriginal: 文湖線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/文湖線
+    snapshot: https://web.archive.org/web/20250714045049/https://zh.wikipedia.org/zh-tw/文湖線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -158,6 +188,7 @@ sources:
     titleOriginal: 木柵線
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/木柵線
+    snapshot: https://web.archive.org/web/20250531163800/https://zh.wikipedia.org/zh-tw/木柵線
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -167,6 +198,7 @@ sources:
     titleOriginal: 木柵捷運線 馬特拉勝訴 北市要賠16.4億
     publisher: 孫友廉, 陳曉宜, 鄭學庸, 自由時報, 23 July 2005 (via 大紀元 reprint)
     url: https://www.epochtimes.com/b5/5/7/23/n995027.htm
+    snapshot: https://web.archive.org/web/20260807043739/https://www.epochtimes.com/b5/5/7/23/n995027.htm
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -176,6 +208,7 @@ sources:
     titleOriginal: 台北捷運VAL256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
+    snapshot: https://web.archive.org/web/20221006051618/https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -184,6 +217,7 @@ sources:
     titleOriginal: 龐巴迪INNOVIA APM 256型電聯車
     publisher: 維基百科 (Chinese Wikipedia)
     url: https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
+    snapshot: https://web.archive.org/web/20150531215555/https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
     accessed: 2026-08-06
     kind: secondary
     lang: zh-Hant
@@ -200,6 +234,7 @@ sources:
     title: Lille VAL — project profile
     publisher: Railway Technology
     url: https://www.railway-technology.com/projects/lille_val/
+    snapshot: https://web.archive.org/web/20260807044500/https://www.railway-technology.com/projects/lille_val/
     accessed: 2026-08-06
     kind: secondary
     note: Describes the VAL guideway — running surfaces with lateral H-section guide bars that also carry the 750 V supply. Side guidance, not a central rail.
@@ -238,10 +273,12 @@ one of the strangest procurement stories in modern transit.
 | Neihu extension | BR13 — BR24 | 14.8 km[^dorts-wenhu] | 4 July 2009[^dorts-wenhu] |
 
 The original section was bought in 1988 as a turnkey system from France's
-Matra[^zh-muzha]. What followed — two test-track fires in 1993, an opening
-four and a quarter years late, the builder's withdrawal from maintaining its
-own system, and a lawsuit that ran until the Supreme Court ordered the city to
-pay roughly NT$1.64 billion in 2005[^zh-muzha][^ltn-2005] — is told in full on
+Matra[^zh-muzha]. What followed — what DORTS's own record calls a
+輪胎起火意外事故, a tyre ignition accident, during system testing in
+1993[^dorts-wenhu], an opening four and a quarter years late, the builder's
+withdrawal from maintaining its own system, and a lawsuit that ran until the
+Supreme Court ordered the city to pay roughly NT$1.64 billion in
+2005[^zh-muzha][^ltn-2005] — is told in full on
 its own page: **[The Matra dispute](/rail/history/matra-dispute/)**. The short
 version is that Taipei learned, expensively, how not to buy a railway, and
 bought the second half differently.
@@ -261,14 +298,54 @@ Wenshan District, crosses central Taipei on an east–west alignment, then turns
 north-east across the Keelung River into Neihu.
 
 **Two of the twenty-four stations are underground: BR13 Songshan Airport and
-BR14 Dazhi**[^zh-wenhu]. Both are on the Neihu section, which DORTS records as
-carrying 3.9 km of underground running and two underground
-stations[^dorts-wenhu] — so the primary record and the encyclopedia agree, from
-different directions. The platform depths are still not established here and are
-not asserted.
+BR14 Dazhi**, and both are now settled by DORTS itself rather than inferred.
+
+The builder's project record gives the Neihu section as 14.8 km with
+「地下段3.9公里，2座地下站」 — 3.9 km underground, two underground
+stations[^dorts-wenhu] — which narrows the pair to BR13–BR24 without naming
+them. Its station architecture page then names one of the two and counts the
+rest: 「除大直站為地下車站外，其餘共有十座高架車站」, apart from Dazhi being
+underground, the remaining ten are elevated[^dorts-architecture]. Ten elevated
+plus Dazhi is eleven of the section's twelve stations, and the project record
+says there are exactly two underground[^dorts-wenhu]. The twelfth station is
+Songshan Airport, so Songshan Airport is the second. Two primary documents that
+never mention each other, and the identification falls out of the arithmetic
+between them. zh.wikipedia names the same pair outright[^zh-wenhu]; it is no
+longer what the claim rests on.
+
+The platform depths are still not established here and are not asserted.
 
 Every platform on the line has full-height platform screen doors: Faiveley
 equipment from BR01 to BR12, ST Electronics from BR13 to BR24[^trtc-psd].
+
+## How many ways out
+
+DORTS's station table counts the street exits at every station, and the
+distribution is lopsided in a way that says something about how the line was
+built[^dorts-wenhu].
+
+**Eight of the twenty-four stations have exactly one exit**[^dorts-wenhu], and
+seven of those eight are consecutive: BR02 Muzha through BR08 Technology
+Building, an unbroken run from Wenshan into Daan where every station has one way
+in and one way out. BR12 Zhongshan Junior High School is the
+eighth[^dorts-wenhu].
+
+Twenty of the twenty-four have three exits or fewer. The whole line has
+sixty-three between its twenty-four stations, and a quarter of those are at two
+stations: BR11 Nanjing Fuxing and BR24 Nangang Exhibition Center have eight
+each. BR09 Daan has six, BR10 Zhongxiao Fuxing five. All four are
+interchanges[^dorts-wenhu].
+
+That is not a trivia column. A single-exit station is one lift, one stair, one
+escalator bank and one crowd; when it closes, the station closes. It is a
+predictable consequence of building a medium-capacity railway on a single row
+of columns down the middle of an existing road — the same constraint DORTS
+gives for why these stations carry no decoration, which is that a single-column
+support system limits what you can hang on
+it[^dorts-architecture]. The exits are the same economy, at street level.
+
+Every station page carries its own count, from the same
+table[^dorts-wenhu].
 
 ## Operations
 
@@ -284,14 +361,23 @@ and no primary source for it was found.
 
 ## How long the line is
 
-Three figures circulate, and they are not in conflict — they measure three
-different things.
+Four figures circulate, and they are not in conflict — they measure four
+different things. **This site publishes 25.17 km, the operating length**, and
+says what each of the others counts.
 
 | Figure | What it measures | Source |
 | --- | --- | --- |
-| **25.17 km** | Revenue length, BR01 to BR24 | TDX `CumulativeDistance` against the last station of route BR-1[^tdx] |
-| **25.7 km** | The two construction projects added together | 10.9 km + 14.8 km, both DORTS's own figures[^dorts-wenhu] |
-| 25.04 km | This site's own measurement along MOTC's surveyed geometry | the map below |
+| **25.17 km** | **Operating length** — the railway that carries passengers, BR01 to BR24 | TDX `CumulativeDistance` against the last station of route BR-1[^tdx] |
+| 25.7 km | The two construction projects added together | 10.9 km + 14.8 km, both DORTS's own figures[^dorts-wenhu] |
+| 25.04 km | The same railway, measured by this site along MOTC's surveyed geometry from the first station to the last | the map below |
+| 26.42 km | The whole published alignment, including 635 m of depot lead beyond BR01 and 744 m of tail track beyond BR24 | the same geometry, untrimmed |
+
+The last row is the one this site got wrong: it printed the untrimmed figure as
+the route length for four builds, because measuring everything MOTC draws counts
+depot lead and tail track that no passenger travels on[^tdx]. Trimmed to the
+termini, the same geometry lands within 130 m of the operator's own
+figure[^tdx] — and that agreement is the check working, which is why both are
+still printed side by side on the [network page](/rail/network/).
 
 The 25.7 km that appears as 路線長度 on zh.wikipedia[^zh-wenhu] is the **sum of
 the two published section lengths**: DORTS records 木柵線 約10.9公里 and 內湖線
