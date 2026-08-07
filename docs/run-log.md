@@ -4183,6 +4183,28 @@ the site; a real `npm ci` in the copy took 23 seconds and behaved normally. Wort
 recording so the next person reproducing a runner problem does not read that
 panic as a finding.
 
+## 75.10 How far to take the fix — the other twenty readers
+
+Having found a class of bug, the obvious move is to normalise every file read in
+the repository. Twenty-three files call `readFileSync`. I did **two**, and the
+distinction is worth stating rather than assuming.
+
+**Fixed:** `citations.mjs` (`readContent`, which every content consumer goes
+through) and `research-check.mjs`. Both parse **hand-written Markdown** with
+multi-line patterns, which is precisely the shape that broke.
+
+**Left alone:** everything else. Most of them read **built HTML from `out/`**,
+which Next emits the same way on both platforms, and the ones that do span lines
+were exercised under both line endings during this fix — 179 unit tests pass
+identically on an LF checkout and a CRLF one. Normalising twenty files against a
+bug none of them has is the kind of speculative hardening run 3 §30 argued this
+project should stop doing.
+
+The line that decides it: **`.gitattributes` removes the cause.** Once the
+working tree is LF everywhere, no reader can see a `` at all. The two
+normalisations are defence in depth at the points that parse prose; the rest
+would be defence in depth against a condition that no longer exists.
+
 ## 75.9 Nothing was weakened
 
 No check was relaxed, skipped or exempted. The classifier got **more** accurate

@@ -65,7 +65,15 @@ let entries = 0
 for (const file of walk(RESEARCH)) {
   files++
   const rel = path.relative(ROOT, file).replace(/\\/g, '/')
-  const source = fs.readFileSync(file, 'utf8')
+  /*
+   * Normalised for the same reason readContent() is: this file matches
+   * multi-line patterns against source Markdown, and the repository is CRLF on
+   * Windows and LF on the runner. The claims counter had exactly this shape of
+   * bug and it made a tracked metric platform-dependent for five runs (run-log
+   * §75). The other readers in scripts/ mostly parse built HTML, which Next
+   * emits identically either way; this one parses hand-written prose.
+   */
+  const source = fs.readFileSync(file, 'utf8').replace(/\r\n?/g, '\n')
 
   const at = source.search(HEADING)
   if (at < 0) continue
