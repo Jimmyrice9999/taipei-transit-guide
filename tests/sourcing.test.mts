@@ -28,7 +28,7 @@ import path from 'node:path'
 // @ts-expect-error — plain .mjs scripts, deliberately not typed
 import { auditCitations } from '../scripts/citations.mjs'
 // @ts-expect-error — plain .mjs scripts, deliberately not typed
-import { auditClaims } from '../scripts/claims.mjs'
+import { auditClaims, classifySentences } from '../scripts/claims.mjs'
 
 const ROOT = process.cwd()
 const OUT = path.join(ROOT, 'out')
@@ -141,4 +141,59 @@ test('the claim classifier recognises all three states', () => {
     totals.sourced + totals.tbc + totals.asserted > 100,
     'fewer than 100 checkable statements found across all content — the extractor has probably broken',
   )
+})
+
+/* ---- Part 10: the count must mean the same thing on every machine ---- */
+
+test('the claim classifier is line-ending invariant', () => {
+  /*
+   * ── Why this exists ────────────────────────────────────────────────────────
+   * This repository is checked out CRLF on Windows (`core.autocrlf=true`) and
+   * LF on the CI runner. The same commit is therefore different bytes on the
+   * two machines, and the classifier pattern-matches across line breaks.
+   *
+   * It did not survive that. `sentences()` split paragraphs on `\n{2,}`, and a
+   * CRLF blank line is `\r\n\r\n` — the newlines are not adjacent, so the split
+   * never fired on Windows. The identical content measured **31 asserted
+   * claims on Windows and 34 on Linux**, which meant every baseline this
+   * project has recorded across five runs was a Windows-only number and CI had
+   * been comparing against a different one. Run #10 is where the margin closed
+   * and the build failed.
+   *
+   * The fix is normalisation in readContent(). This test is what stops it
+   * regressing, and it does not depend on which machine runs it: it feeds the
+   * classifier the same document twice, once with each line ending, and
+   * requires the same answer. A platform-dependent metric is not a metric.
+   * ───────────────────────────────────────────────────────────────────────────
+   */
+  const body = [
+    'A paragraph with a figure in it: the line is 25.17 km long.',
+    'It wraps across two lines, as every paragraph in this repository does.',
+    '',
+    'A second paragraph, opened in 1996, with no citation attached to it.',
+    '',
+    '| Date | Event |',
+    '| --- | --- |',
+    '| 4 July 2009 | Something opens. It then does a second thing[^x] |',
+  ]
+
+  const lf = body.join('\n')
+  const crlf = body.join('\r\n')
+  const cr = body.join('\r')
+
+  assert.notEqual(lf, crlf, 'the fixture must actually differ, or this test proves nothing')
+
+  const split = (text: string) => classifySentences(text)
+
+  assert.deepEqual(
+    split(crlf),
+    split(lf),
+    'the classifier gives different answers for CRLF and LF — the unsourced-claim ' +
+      'count would then depend on which machine measured it, which is how CI run #10 broke',
+  )
+  assert.deepEqual(split(cr), split(lf), 'bare CR is not normalised either')
+
+  // And the fixture must exercise the paragraph split, or it would pass on a
+  // classifier that ignored blank lines entirely.
+  assert.ok(split(lf).length >= 4, `expected the fixture to split into several claims, got ${split(lf).length}`)
 })

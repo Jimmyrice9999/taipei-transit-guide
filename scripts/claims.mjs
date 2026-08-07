@@ -71,12 +71,57 @@ const CLAIM_SIGNALS = [
  */
 const META = /\b(this page|this site|previously said|previously asserted|used to say|has been removed|was false|is not asserted|research|sources?\b.*\b(found|consulted)|run of research)\b/i
 
-/** Split prose into sentences, keeping it dumb but predictable. */
+/**
+ * Split prose into sentences, keeping it dumb but predictable.
+ *
+ * ── A table row is one claim, not several ───────────────────────────────────
+ * The sentence splitter used to run straight through table rows, so a cell
+ * holding two sentences with its citation at the end came out as one cited
+ * fragment and one uncited one — reporting a claim as unsourced when the
+ * source was eleven words to its right, in the same cell.
+ *
+ * A row's citation applies to the row. Rows are therefore emitted whole and
+ * never split. This makes the count more accurate, not more forgiving: an
+ * uncited row is still an uncited row.
+ * ────────────────────────────────────────────────────────────────────────────
+ */
 function sentences(text) {
-  return text
-    .split(/(?<=[.!?])\s+(?=[A-Z“"*|\[])|\n{2,}/)
-    .map((s) => s.trim())
-    .filter(Boolean)
+  const out = []
+
+  /*
+   * Normalised here as well as in readContent(). Belt and braces on purpose:
+   * this function's whole contract is "same document, same claims", and the
+   * paragraph split below is the exact thing that a stray \r silently defeats.
+   * Keeping the guarantee local means a future caller that does its own file
+   * reading cannot reintroduce the platform split.
+   */
+  for (const block of text.replace(/\r\n?/g, '\n').split(/\n{2,}/)) {
+    /*
+     * Within a paragraph, prose is hard-wrapped: one sentence spans several
+     * lines. So consecutive prose lines are rejoined before splitting — an
+     * earlier version of this split on every newline and turned a three-line
+     * sentence into three fragments, which took the count from 34 to 146.
+     * Table rows are the exception and are never joined or split.
+     */
+    let prose = []
+    const flush = () => {
+      if (prose.length === 0) return
+      out.push(...prose.join(' ').split(/(?<=[.!?])\s+(?=[A-Z“"*\[])/))
+      prose = []
+    }
+
+    for (const line of block.split('\n')) {
+      if (/^\s*\|/.test(line)) {
+        flush()
+        out.push(line)
+      } else {
+        prose.push(line)
+      }
+    }
+    flush()
+  }
+
+  return out.map((s) => s.trim()).filter(Boolean)
 }
 
 /**
@@ -92,6 +137,15 @@ function proseOf(body) {
     .replace(/^#{1,6}\s.*$/gm, '')
     .replace(/\]\(([^)]*)\)/g, ']')
     .replace(/^\s*\|\s*-+.*$/gm, '')
+}
+
+/**
+ * The sentence extractor, exposed for the line-ending invariance test in
+ * tests/sourcing.test.mts. Same path production takes: strip the non-prose
+ * Markdown, then split.
+ */
+export function classifySentences(text) {
+  return sentences(proseOf(text))
 }
 
 export function auditClaims() {

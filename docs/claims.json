@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 262,
+    "sourced": 279,
     "tbc": 14,
-    "asserted": 31,
-    "meta": 17
+    "asserted": 32,
+    "meta": 18
   },
   "files": [
     {
@@ -187,7 +187,7 @@
     {
       "file": "content/rail/history/matra-dispute.md",
       "sources": 13,
-      "sourced": 64,
+      "sourced": 72,
       "tbc": 0,
       "asserted": 0,
       "meta": 4
@@ -267,10 +267,10 @@
     {
       "file": "content/rail/lines/wenhu-line.md",
       "sources": 15,
-      "sourced": 56,
+      "sourced": 61,
       "tbc": 1,
       "asserted": 5,
-      "meta": 5
+      "meta": 6
     },
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
@@ -363,15 +363,15 @@
     {
       "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
       "sources": 11,
-      "sourced": 32,
+      "sourced": 35,
       "tbc": 2,
-      "asserted": 7,
+      "asserted": 8,
       "meta": 0
     },
     {
       "file": "content/rail/rolling-stock/val256.md",
       "sources": 11,
-      "sourced": 32,
+      "sourced": 33,
       "tbc": 2,
       "asserted": 7,
       "meta": 0
@@ -572,6 +572,16 @@
       "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
+      "text": "| Jan 2021 | Alstom acquires Bombardier Transportation; CITYFLO becomes an Alstom product |",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "state": "asserted",
+      "where": "prose",
       "text": "Compared with the original [VAL256] fleet the C370 introduced a revised body shell and interior — blue inward-facing seating in place of the",
       "signals": [
         "count"
@@ -627,9 +637,8 @@
       "file": "content/rail/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
-      "text": "The conversion did not precede the Neihu extension — it was triggered by it, and the sequence is the story: | Date | Event | | 4 July 2009 |",
+      "text": "So for nearly eighteen months the whole 24-station line ran on the Bombardier fleet alone, while the trains that had opened the railway sat ",
       "signals": [
-        "date",
         "count"
       ]
     },

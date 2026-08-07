@@ -56,7 +56,33 @@ export function contentFiles(dir = CONTENT, found = []) {
 
 /** Frontmatter, body and a relative path, for one content file. */
 export function readContent(file) {
-  const raw = fs.readFileSync(file, 'utf8')
+  /*
+   * ── Line endings are normalised here, once, for everything downstream ──────
+   *
+   * This repository is checked out with `core.autocrlf=true` on Windows and as
+   * committed (LF) on the CI runner. So the SAME commit is different bytes on
+   * the two machines, and anything that pattern-matches across a line break
+   * gets a different answer.
+   *
+   * That was not theoretical. `scripts/claims.mjs` splits paragraphs on
+   * `\n{2,}`, and a CRLF blank line is `\r\n\r\n` — the two newlines are not
+   * adjacent, so the split never fired on Windows. Paragraphs were never
+   * broken into sentences there, which merged claims together and undercounted
+   * them: the same content measured **31 asserted claims on Windows and 34 on
+   * Linux**.
+   *
+   * The consequence is worse than a broken build. The unsourced-claim count is
+   * the number this project has tracked across five runs, and every baseline
+   * ever recorded (34 → 33 → 32 → 31) was a Windows-only measurement. CI had
+   * been checking a different number against it and passing by luck, until the
+   * margin closed and run #10 failed.
+   *
+   * Normalising at the single shared reader — rather than in each consumer —
+   * is what makes the figure mean the same thing everywhere. `\r\n` and a bare
+   * `\r` both become `\n`.
+   * ──────────────────────────────────────────────────────────────────────────
+   */
+  const raw = fs.readFileSync(file, 'utf8').replace(/\r\n?/g, '\n')
   let data
   let content
   try {

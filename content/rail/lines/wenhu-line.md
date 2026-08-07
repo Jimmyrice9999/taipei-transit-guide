@@ -303,10 +303,11 @@ one of the strangest procurement stories in modern transit.
 
 ### The alignment was redrawn by protest before a metre of it was built
 
-The route that opened in 1996 is not the route that was approved. A 13 km
-scheme from Taipei Zoo to Liuzhangli had already been settled when **residents
-in Muzha objected, and on 4 May the northern section was redirected onto
-Fuxing South and North Roads** — where it runs today[^zh-muzha].
+The route that opened in 1996 is not the route that was
+approved[^zh-muzha]. A 13 km scheme from Taipei Zoo to Liuzhangli had already
+been settled when **residents in Muzha objected, and on 4 May the northern
+section was redirected onto Fuxing South and North Roads** — where it runs
+today[^zh-muzha].
 
 That is the earliest instance of a pattern this site records twice more: the
 Songshan–Xindian Line redesigned from part-elevated to fully underground in
@@ -419,7 +420,7 @@ says what each of the others counts.
 | **25.17 km** | **Operating length** — the railway that carries passengers, BR01 to BR24 | TDX `CumulativeDistance` against the last station of route BR-1[^tdx] |
 | 25.7 km | The two construction projects added together | 10.9 km + 14.8 km, both DORTS's own figures[^dorts-wenhu] |
 | 25.04 km | The same railway, measured by this site along MOTC's surveyed geometry from the first station to the last | the map below |
-| 26.42 km | The whole published alignment, including 635 m of depot lead beyond BR01 and 744 m of tail track beyond BR24 | the same geometry, untrimmed |
+| 26.42 km | The whole published alignment, including 635 m of depot lead beyond BR01 and 744 m of tail track beyond BR24 | the same geometry, untrimmed[^tdx] |
 
 The last row is the one this site got wrong: it printed the untrimmed figure as
 the route length for four builds, because measuring everything MOTC draws counts
@@ -453,8 +454,9 @@ renewal reporting counts **25 Matra trains and 51 Bombardier trains**, 76 in
 total[^zh-taipei-fleet].
 
 Those do not reconcile[^dorts-fleet-faq][^zh-taipei-fleet]. 25 four-car trains
-need 50 pairs, not 51; 51 trains need 102 pairs, not 101. The totals agree — 152 pairs, 304 cars, 76 trains — but
-**neither fleet on its own divides into whole trains.**
+need 50 pairs, not 51; 51 trains need 102 pairs, not 101. The totals agree — 152 pairs, 304 cars, 76
+trains[^dorts-fleet-faq] — but **neither fleet on its own divides into whole
+trains.**
 
 Three readings, and nothing found settles between them:
 

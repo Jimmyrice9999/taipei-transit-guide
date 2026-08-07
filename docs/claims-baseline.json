@@ -1,8 +1,8 @@
 {
-  "note": "The ratchet in tests/sourcing.test.mts. May fall, may not rise. Regenerate with npm run claims and copy totals here.",
+  "note": "The ratchet in tests/sourcing.test.mts. May fall, may not rise. Regenerate with npm run claims and copy totals here. RE-RECORDED 2026-08-07 after run 10: every baseline before this one was a Windows-only measurement. The classifier split paragraphs on \n{2,}, which a CRLF blank line never matches, so the same content counted 31 on Windows and 34 on Linux and CI had been comparing against a number it did not produce. Line endings are normalised in readContent() now and tests/sourcing.test.mts asserts the classifier is line-ending invariant.",
   "recorded": "2026-08-07",
-  "sourced": 262,
+  "sourced": 279,
   "tbc": 14,
-  "asserted": 31,
-  "meta": 17
+  "asserted": 32,
+  "meta": 18
 }

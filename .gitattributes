@@ -1,0 +1,41 @@
+# Line endings — LF everywhere, in the repository AND in the working tree.
+#
+# ── Why this file exists ──────────────────────────────────────────────────────
+# CI run #10 failed on a commit whose tests passed locally, and the difference
+# was line endings. This repository was checked out CRLF on Windows (the default
+# `core.autocrlf=true`) and LF on the Linux runner, so the same commit was
+# different bytes on the two machines.
+#
+# That matters here because several tools pattern-match across line breaks.
+# `scripts/claims.mjs` split paragraphs on `\n{2,}`, and a CRLF blank line is
+# `\r\n\r\n` — the two newlines are not adjacent, so the split never fired on
+# Windows. The identical content measured 31 unsourced claims on Windows and 34
+# on Linux. The claims ratchet is the number this project has tracked across
+# five runs; every baseline ever recorded was a Windows-only measurement, and CI
+# had been comparing against a figure it did not produce.
+#
+# `eol=lf` rather than plain `text=auto`: `text=auto` normalises the repository
+# but still hands Windows a CRLF working tree, which leaves the two machines
+# reading different bytes and the bug intact. Forcing LF in the checkout is what
+# makes "same commit, same answer" true.
+#
+# The scripts also normalise defensively (readContent, and sentences() in
+# claims.mjs), and tests/sourcing.test.mts asserts the classifier is
+# line-ending invariant. This file removes the cause; those remove the class.
+# ──────────────────────────────────────────────────────────────────────────────
+
+* text=auto eol=lf
+
+# Binaries: never touched, never normalised. Several of these are committed
+# build outputs — the font subsets and the WebP images — and a byte-for-byte
+# guarantee is what makes `npm run determinism` meaningful.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.pdf binary

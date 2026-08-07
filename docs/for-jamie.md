@@ -1,13 +1,18 @@
 # For Jamie
 
-Written 7 August 2026, after runs 7.1 and 7.2 — your nine decisions and the
-formation fix are executed. Assume you read this and nothing else.
+Written 7 August 2026, after runs 7.1–7.3. Assume you read this and nothing else.
 
-The one-line version: **two of your three verifiable calls checked out, one
-didn't, and writing the bus page killed most of what the research said about
-buses.** Suite: 178 tests green, 18 fact cross-checks clean, `npm run research`
-clean and new, axe-core zero across 86 pages, **ratchet tightened 32 → 31** with
-a new page and two new sections added, sourced claims 240 → 262.
+**CI run #10 is fixed, and the cause is worse than a broken build: the
+unsourced-claim count was platform-dependent and always had been.** The same
+commit measured **31 on Windows and 34 on Linux**. Every baseline this project
+has recorded — 34 → 33 → 32 → 31 — was a Windows-only number, and CI has been
+comparing a Linux measurement against it the whole time, passing because the
+margin was wide. Run 7.2 tightened the baseline to 31 and closed it. Full
+account in run-log §75.
+
+The honest count is **32**, recorded with the reason in the baseline file. It did
+not go up because the site got worse; it went up because the counter started
+working. Two of the three claims the bug was hiding were citable and are cited.
 
 ## Where I have to correct you
 

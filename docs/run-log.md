@@ -4026,3 +4026,166 @@ page, and it is unsatisfying: two fleets on one line, one described as non-fixed
 the other described not at all. A TRTC maintenance document or an Alstom product
 sheet would settle it, and would also settle the line-level arithmetic that
 depends on it.
+
+---
+
+# Run 7.3 — why CI run #10 failed, and why it had been passing by luck
+
+**The unsourced-claim count was platform-dependent, and had been since it was
+built.** The same commit measured **31 asserted claims on Windows and 34 on
+Linux**. Every baseline this project has recorded across five runs — 34 → 33 →
+32 → 31 — was a Windows-only number. CI has been comparing a Linux measurement
+against a Windows baseline the entire time, and passing because the margin
+happened to be wide enough. Run 7.2 tightened the baseline to 31 and closed it.
+
+## 75.1 Finding it
+
+Run #10 failed in 44 seconds. Runs take about six minutes, so it died early. The
+public Actions API gives the step breakdown without repository admin, the same
+route run 5.1 used:
+
+| Step | Result |
+| --- | --- |
+| npm ci | ✓ 9s |
+| Citations resolve | ✓ 0s |
+| Build (root path) | ✓ 13s |
+| **Unit and regression tests** | **✗ 2s** |
+| everything after | skipped |
+
+So: not the browser harness, not fonts, not the page walker. `npm run test:unit`,
+which passes locally.
+
+The tell was `core.autocrlf=true` and a working tree full of CRLF against a
+repository full of LF. **Reproduced by materialising the tree as the runner sees
+it** — `git -c core.autocrlf=false checkout-index -f -a --prefix=…` into a
+scratch directory — and running the claims counter in both:
+
+```
+LF   (as CI sees it)   ASSERTED 34
+CRLF (as Windows sees) ASSERTED 31
+```
+
+## 75.2 The bug
+
+`sentences()` in `scripts/claims.mjs` split paragraphs on `\n{2,}`.
+
+A CRLF blank line is `\r\n\r\n`. The two newlines are **not adjacent**, so the
+paragraph split never fired on Windows at all. Paragraphs were never broken up,
+adjacent claims merged into one another, and the count came out low. The
+sentence-boundary alternative in the same regex still fired, which is why the
+number was plausible rather than obviously broken.
+
+**This is worse than a broken build.** The claims figure is the number this
+project reports every run and gates on. It has never meant the same thing on two
+machines.
+
+## 75.3 The fix, in three places
+
+1. **`readContent()` in `scripts/citations.mjs` normalises** `\r\n` and bare
+   `\r` to `\n`. One shared reader, so every consumer — the claims counter, the
+   citation checker, the sourcing tests — sees identical bytes on any platform.
+2. **`sentences()` normalises too.** Belt and braces: the function's whole
+   contract is "same document, same claims", and a future caller doing its own
+   file reading would otherwise reintroduce the split.
+3. **`.gitattributes`, new: `* text=auto eol=lf`.** This removes the cause
+   rather than the symptom. Deliberately `eol=lf` and not plain `text=auto` —
+   the latter normalises the repository but still hands Windows a CRLF working
+   tree, which leaves the two machines reading different bytes. **No blob
+   churn:** every committed file was already LF, so the file adds nothing to the
+   diff of existing content.
+
+## 75.4 A second bug, found while fixing the first
+
+With paragraphs splitting correctly, a table row like
+
+```
+| 4 July 2009 | The Neihu extension opens. The line switches to CITYFLO 650 … [^zh-val256] |
+```
+
+was being cut at the full stop, so the first half came out as an **uncited
+claim while its citation sat eleven words to the right, in the same cell.**
+
+A row's citation applies to the row. Rows are emitted whole now and never split.
+That makes the count more accurate, not more forgiving — an uncited row is still
+an uncited row.
+
+**And the first attempt at that was wrong**, which is worth recording because the
+number caught it immediately: splitting each block on every newline turned every
+hard-wrapped sentence into three fragments and took the count from 34 to **146**.
+Consecutive prose lines are rejoined before splitting; only table rows are held
+apart.
+
+## 75.5 The guard
+
+`tests/sourcing.test.mts` gains **the claim classifier is line-ending
+invariant**: it feeds the classifier the same fixture three times — LF, CRLF and
+bare CR — and requires identical output. It asserts the fixture genuinely
+differs, and that it splits into several claims, so it cannot pass against a
+classifier that has stopped splitting at all.
+
+It does not depend on which machine runs it. That is the point: a metric whose
+value depends on the operating system is not a metric.
+
+## 75.6 The honest number
+
+**32.** Re-recorded from 31, and the baseline file now carries the reason in its
+own `note` field so nobody reads it as the ratchet slackening.
+
+The number did not go up because the site got worse. It went up because the
+counter started working. Of the three claims the bug had been hiding, two were
+citable and are now cited — the 1986 alignment change, and the fleet totals — and
+one was the table row in §75.4, fixed in the classifier rather than the content.
+The remaining rise is the measurement, and it is stated as such.
+
+| | Before | After |
+| --- | --- | --- |
+| sourced | 262 | **279** |
+| TBC | 14 | 14 |
+| asserted | 31 *(Windows only)* | **32** *(both platforms)* |
+
+## 75.7 What was NOT wrong
+
+The brief asked whether runs 7–9 reintroduced either previously-fixed
+runner-specific problem. **Neither, and the evidence is direct: run #9 — the
+commit carrying the elevation profile, the numbering ladder and the rebuilt
+station pages — passed CI green in six minutes**, browser verification included.
+
+Checked anyway, since the page walker was the specific worry:
+
+- **The `/train` redirect-stub exclusion is intact** (`browser-verify.mjs`
+  line 152). Nothing added in runs 7–9 generates a meta-refresh page; the two
+  new pages are ordinary content.
+- **`document.fonts.ready` still gates every overflow measurement** (line 187).
+- Both new layouts are *in* the verified page set — `systems-numbering` and
+  `station-br22` appear in the run's own PDF list.
+
+## 75.8 Verified against the real condition, not the local one
+
+The whole CI chain was run in the LF working copy, with its own `npm ci`, in the
+workflow's order:
+
+| Step | Result under LF |
+| --- | --- |
+| `npm run cite` | clean |
+| `npm run build` | 150 pages, Han subsets verified |
+| `npm run test:unit` | **179 pass, 0 fail** |
+| `npm run facts` | 18 cross-checks, no contradictions |
+| `npm run palette` | all derived values clear AA |
+| `npm run geometry:audit` | worst drift 5.4 m |
+| `npm run a11y` | no errors, no warnings |
+| `npm run verify:browser` | **exit 0**, zero axe violations across 86 pages |
+| `npm run adversarial` | **exit 0**, 16/16 |
+
+One process note: an early attempt linked `node_modules` into the LF copy as a
+junction, and Turbopack refused it — *"Symlink [project]/node_modules is invalid,
+it points out of the filesystem root"*. That is a property of the harness, not of
+the site; a real `npm ci` in the copy took 23 seconds and behaved normally. Worth
+recording so the next person reproducing a runner problem does not read that
+panic as a finding.
+
+## 75.9 Nothing was weakened
+
+No check was relaxed, skipped or exempted. The classifier got **more** accurate
+in both directions — it now splits paragraphs on every platform, and it stops
+mis-reporting cited table rows as uncited. The baseline moved because the
+measurement changed, and the reason is written into the file that holds it.
