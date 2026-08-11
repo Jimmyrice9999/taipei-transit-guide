@@ -4,13 +4,14 @@ description: How Taipei's joint-operation bus network is numbered, coloured and 
 order: 2
 ---
 
-Nothing here yet. This section is planned for the second version of the site,
-and it is listed now rather than hidden because leaving it out would
-misrepresent what the site is for: the bus network carries a large share of
-Taipei's daily journeys, and a guide that quietly stopped at rail would be a
-metro guide calling itself a transit guide.
+Taipei's city buses run as 聯營公車 — a joint operation: private companies
+operating under one fare structure, one numbering scheme and one brand, so
+that to a passenger it looks like a single network when it is not. That
+structural fact — how many companies, how many routes, and the four city
+regulations that actually set out how the money moves — is explained in full
+on [the joint-operation network](/bus/network/joint-operation/).
 
-## What it will cover
+## What comes next
 
 **The network itself, before anything else.** Taipei's city buses run as 聯營公車 — a joint
 operation. Private companies operate under one fare structure, one numbering
@@ -39,19 +40,12 @@ rather than a transcription.
 between bus and metro, and where the section boundaries actually fall — which is
 the thing visitors get wrong most often.
 
-## Why it is not written yet
+Operators and routes come after the network explainer rather than alongside
+it, for a reason specific to buses: metro station data comes from MOTC's open
+data platform — authoritative, stable, slow to change. Bus route data is
+published per-operator and per-municipality, changes far more often, and the
+English-language versions of it go out of date quickly. Covering it honestly
+needs a data pipeline rather than a transcription, so operator and route
+pages wait on that rather than on effort.
 
-Because the rail side is not finished. Starting a second section before the
-first is sound would produce two half-guides instead of one good one, and the
-Wenhu Line pages are still stubs carrying figures marked *TBC*.
-
-There is also a sourcing problem specific to buses that rail does not have.
-Metro station data comes from MOTC's open data platform: authoritative, stable,
-and slow to change. Bus route data is published per-operator and per-
-municipality, changes far more often, and the English-language versions of it go
-out of date quickly. Covering it honestly needs a data pipeline rather than a
-transcription, and building one before there is anything to put through it would
-be the wrong order of work.
-
-See [about](/about/) for how this site sources material, and
-[the network](/rail/network/) for what is covered today.
+See [about](/about/) for how this site sources material.

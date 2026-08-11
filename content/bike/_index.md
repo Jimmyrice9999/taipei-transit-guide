@@ -12,12 +12,12 @@ is an infrastructure transition, because the system's two generations are
 mutually incompatible and the changeover had to happen city-wide, in place,
 while millions of rides a month continued.
 
-**Planned pages:** [History](/bike/history/) for the pilot-to-present
-timeline; [Generations](/bike/generations/) for the 1.0/2.0/2.0E hardware
-story — where the intelligence lives, why the newer docks need no mains
-power, and what that freed the network to do; [Stations](/bike/stations/)
-once the open-data pipeline that already feeds the rail pages is extended to
-YouBike's station feed.
+Coming: [History](/bike/history/) for the pilot-to-present timeline;
+[Generations](/bike/generations/) for the 1.0/2.0/2.0E hardware story — where
+the intelligence lives, why the newer docks need no mains power, and what
+that freed the network to do; [Stations](/bike/stations/) once the open-data
+pipeline that already feeds the rail pages is extended to YouBike's station
+feed.
 
 This section is early on the build list because it is self-contained: it
 depends on nothing in the rail work, the data exists in the same government

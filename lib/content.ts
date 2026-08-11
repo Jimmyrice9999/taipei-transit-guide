@@ -111,6 +111,15 @@ export type Folder = {
    * breadth instead of depth.
    */
   status: 'planned' | ''
+  /**
+   * A lead photograph for a section landing page, e.g. `/gondola/`.
+   *
+   * A section with no written pages yet is exactly the page most likely to
+   * read as abandoned — the "we NEEEED photos" complaint applies to it more,
+   * not less, than to a finished page. Same `hero:` shape as a content page,
+   * so it draws from the same pipeline image and renders the same credit.
+   */
+  hero: Hero | null
 }
 
 /** Everything about a page except its rendered body. */
@@ -469,6 +478,7 @@ function readFolder(parents: string[], slug: string): Folder {
     order: typeof data.order === 'number' ? data.order : 999,
     href: '/' + [...parents, slug].join('/') + '/',
     status: toText(data.status) === 'planned' ? 'planned' : '',
+    hero: toHero(data.hero),
   }
 }
 

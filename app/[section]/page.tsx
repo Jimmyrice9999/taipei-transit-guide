@@ -11,9 +11,11 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import Figure from '@/components/Figure'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
+import { getImage } from '@/lib/images'
 import { LINES, NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderBody, getPages, getSection, getSections, getTypes } from '@/lib/content'
 
@@ -54,10 +56,20 @@ export default async function SectionPage({ params }: Props) {
   const meta = getSection(section)
   const types = getTypes(section)
   const body = await getFolderBody([], section)
+  const heroImage = meta.hero?.image ? getImage(meta.hero.image) : null
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <HanContentSubset />
+      {heroImage && (
+        <Figure
+          image={heroImage}
+          alt={meta.hero?.alt || meta.title}
+          caption={meta.hero?.caption}
+          priority
+          className="figure page-hero"
+        />
+      )}
       <Breadcrumbs trail={[{ label: meta.title }]} />
       <BackLink href="/" label="the home page" />
       <h1 className="page-title">{meta.title}</h1>

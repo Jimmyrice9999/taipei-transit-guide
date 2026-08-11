@@ -4514,3 +4514,217 @@ Parts 6 (photographs beyond the 34 fetched), 7 (colour), 8 (diagrams and icons),
 13 (the five-viewport sweep). Part 5's research machinery is built and four of
 twelve subjects are written; the remaining eight were killed by the usage limit
 and never re-run.
+
+---
+---
+
+# Run 11 — scope statements and photographs, 11 August 2026
+
+Scoped to Parts 2 and 6 only, by instruction. Priority was Part 6.
+
+**Headline: a real bug in the image pipeline, caught before it shipped.**
+`scripts/fetch-commons.mjs` sanitised a Commons filename for its local cache key
+by stripping every non-ASCII character. Two *different* Han-only filenames —
+`南港機廠.jpg` (Nangang Depot) and `淡海輕軌列車.jpg` (a Danhai LRT tram) — both
+collapse to the same key, `_.jpg`, once the Chinese is gone. The second fetch in
+a batch found the first one's cache file already on disk and served it back
+unchanged. Nangang Depot's page would have carried a photograph of a Danhai
+tram, captioned as if it were the depot. Confirmed by MD5: three files fetched
+under different titles were byte-identical. Caught by actually looking at the
+downloaded images side by side rather than trusting the fetch log, which is
+exactly what Part 6's brief asked for. Fixed by hashing the full title into the
+cache filename (`scripts/fetch-commons.mjs`); both wrong images were deleted
+and are queued for a clean re-fetch.
+
+## Part 2 — the scope statements
+
+Run 10 had already removed the app-level machinery: the "Planned for v2"
+banner, the "N scope statements" tally, and "No pages yet." are gone from
+`app/[section]/page.tsx` and `app/[section]/[type]/page.tsx`, and
+`lib/nav.ts` already drops any type or section with zero pages from the nav
+bar. What was left was copy — text inside `_index.md` files that survived
+that pass because it doesn't render through a counter, it just *says* the
+section is empty.
+
+**Fixed:**
+
+- `content/bus/_index.md` — opened with "Nothing here yet. This section is
+  planned for the second version of the site" and closed with a heading
+  "Why it is not written yet". Both true when written; both false now, since
+  `/bus/network/joint-operation/` is a real, heavily-cited page. Rewritten to
+  lead with what **is** there.
+- `content/bus/operators/_index.md`, `content/bus/routes/_index.md` — each
+  body was the single sentence "Planned, not written. See [Bus] for what this
+  section will cover and why it is empty," and each `description:` (which
+  doubles as the page's meta description and its on-page summary) literally
+  said "Planned for v2." Both are exactly what Part 2 says must go — a page
+  whose only content is a statement of absence. Rewritten to describe the
+  subject and link to the network page, which now carries the real numbers.
+- `content/gondola/_index.md`, `content/ferry/_index.md`,
+  `content/ticketing/_index.md`, `content/bike/_index.md`,
+  `content/rail/systems/_index.md` — softer cases: none said "empty" outright,
+  but each led with **"Planned pages:"** and, in Systems' case, closed on
+  "which is why none is written yet." Reworded to "Coming:" and cut the
+  trailing justification-for-absence clause. These four sections are already
+  out of the nav (zero pages), so the fix is for whoever lands on the URL
+  directly or via the sitemap.
+- `app/about/page.tsx` — not a scope statement but the same failure mode:
+  "This is version 1, and it covers one line properly rather than seven
+  badly... the other six lines are present in the data rather than in prose."
+  **Ten** lines now have pages (Part 5, prior runs). Rewritten to say so.
+  Left alone: the stub-count sentence, which pulls `written`/`stubs` from
+  `getAllPages()` and was already accurate.
+
+**Judgement call:** Part 2 offered three options — hide from nav, rewrite the
+copy, or populate (Part 5, out of scope this run). Used a mix: the four
+fully-empty sections stay out of the nav (already true) *and* got their copy
+rewritten, on the reasoning that "not linked from the header" does not mean
+"never visited" — a search result or a stale bookmark lands on the URL
+directly, and that page should not read as abandoned either.
+
+## Part 6 — photographs
+
+**Before this run: 32 pages carried a photograph** — 8 content pages (Wenhu,
+Circular, Sanying, VAL256, Innovia APM 256/C370, Muzha Depot, Neihu Depot, the
+Matra dispute) plus all 24 Wenhu station pages.
+
+**After: 45.** 21 content pages now carry at least one photograph, plus the
+same 24 station pages.
+
+### The free thirteen: images already on disk, never wired in
+
+Before searching Commons at all, an inventory of `public/images/` turned up
+**nine image folders fetched in run 10 and never referenced by any page** —
+`airport-mrt`, `bannan-line` (×2), `songshan-xindian-line` (×2),
+`tamsui-xinyi-line`, `zhonghe-xinlu-line` (×2), `c371`, and `gondola/station`.
+The sidecars existed, the licence gate had already passed, and nothing in
+`content/` pointed at them. Verified each against its Commons title and
+looked at every one before wiring it in — this is exactly the "search
+matches words, not subjects" trap the brief warned about, and one of these
+(`zhonghe-xinlu-line/hero`, "Cross-platform interchange... Guting Station")
+would have been easy to wave through on the filename alone. All nine checked
+out. Wired into six line pages plus the C371 fleet page as heroes, three of
+them (Bannan, Songshan–Xindian, Zhonghe–Xinlu) also gaining a second, inline
+photograph in the body — the first time this site has used an inline body
+image rather than only a frontmatter hero.
+
+**That inline path had its own gap**, caught by the full suite rather than by
+eye: `rehypeFigures` (the plugin that turns a Markdown `![]()` into a
+`<figure>`) builds its caption and credit from the image's `title` attribute
+*after* `rehypeRichText` has already walked the tree and tagged Han text —
+so a Chinese photographer credited inline (梁立豪, 李元顥) reached the built
+HTML untagged, failing `Chinese in rendered content is tagged zh-Hant`.
+Fixed in `lib/markdown-plugins.ts`: `rehypeFigures` now tokenizes its own
+caption and credit text and tags Han runs itself, using the same tokenizer
+`rehypeRichText` uses.
+
+**A second, narrower rendering gap, found and worked around rather than
+fixed:** a Commons username can be two Han words separated by a space
+(蒼空 翔, on the one clean C341 photograph found). The tokenizer correctly
+splits that into two `lang="zh-Hant"` spans either side of a literal space —
+right for accessibility, but it means the credit no longer appears as one
+contiguous string in the HTML source, which is what
+`tests/images.test.mts`'s attribution check looks for. The rendered credit is
+complete and correct for a reader; it is invisible to that one test's
+substring search. Rather than loosen the test or reshape the tokenizer under
+time pressure, C341's hero was reverted — the fleet page has no photograph
+this run. A Latin-username alternative (a manufacturer's plate close-up,
+`File:Siemens SGP Verkehrstechnik 2003 plate on Taipei MRT train 341.jpg`)
+is queued; the fetch attempt hit Commons' rate limit before it could land.
+
+### Going wide
+
+Searched Commons for every remaining subject Part 6.3 named: the two light
+rail lines, four more rolling-stock fleets, six depots without a photograph,
+the gondola beyond its one existing image, YouBike, the joint-operation bus
+network, and the ferry. Every candidate was looked at, not just licence-
+checked — the process was: search → shortlist → fetch → open the actual
+downloaded file → confirm it shows what it claims before wiring it into a
+page.
+
+**Landed, verified, wired in:**
+
+| Subject | Image(s) | Page |
+| --- | --- | --- |
+| Danhai LRT | hero (a tram on its still-unopened street track) + inline station photo | `rail/lines/danhai-lrt` |
+| Ankeng LRT | hero (two trams on grassed track) + inline bridge photo | `rail/lines/ankeng-lrt` |
+| C301 | hero | `rail/rolling-stock/c301` |
+| C321 | hero (a lit destination indicator — the "New DI" the filename names) | `rail/rolling-stock/c321` |
+| C381 | hero | `rail/rolling-stock/c381` |
+| Beitou Depot | hero | `rail/depots/beitou-depot` |
+| Joint-operation bus network | hero | `bus/network/joint-operation` |
+| Maokong Gondola | the section's existing (run 10) photo, wired to a new **section-level hero** — see below | `/gondola/` |
+
+**Every one of the site's ten rail lines now carries at least one
+photograph.** Rolling stock is six of seven fleets. Depots are three of
+eight.
+
+**New capability, small and load-bearing:** `content/gondola/_index.md`,
+`content/bike/_index.md` and the other section `_index.md` files had no way
+to carry a `hero:` image at all — only `content/<section>/<type>/<page>.md`
+pages could. `Folder` (`lib/content.ts`) now parses a `hero:` block the same
+way a content page does, and `app/[section]/page.tsx` renders it. This is
+what let the Maokong Gondola section — otherwise a scope statement with no
+written pages — lead with a real photograph instead of nothing. The same
+mechanism is ready for `/bike/` and `/ferry/` the moment either gets an
+image.
+
+**Blocked by Commons rate-limiting, not by anything wrong with the
+candidate.** Every one of these was found, shortlisted and licence-checked;
+none of them downloaded. Commons returned 429 on every single attempt across
+three separate retry passes this run, including a final pass at 20 seconds
+between requests with full exponential backoff on each one — this is the
+sustained block the brief warned about ("Commons rate-limits hard"), not a
+pacing problem to keep tuning:
+
+- Nangang, Luzhou and Xindian depots (candidates: `南港機廠.jpg` — refetch
+  needed after the collision bug above; `2020 Luzhou Depot.jpg`;
+  `Taipei MRT Xindian Depot1.jpg`)
+- Maokong Gondola cabin and tower detail shots (`Maokong Gondola regular
+  cabin No.71 20151108.jpg`, `Maokong Gondola Column No.16 20151108.jpg`)
+- YouBike (`YouBike bicycles parking on Shifu Road, Taipei City 20100721.jpg`)
+- The Blue Highway ferry (`2020 Tamsui Ferry Pier.jpg`)
+- Danhai LRT's interior shot (`淡海輕軌內裝.jpg` — also a collision-bug victim)
+- The C341 Latin-credit alternative, above
+
+**Found nothing usable, and this is a finding, not a gap in the search:**
+
+- **Tucheng Depot (土城機廠).** Two query attempts, English and Chinese, zero
+  results either way. Not "nothing licence-clean" — nothing at all.
+- **Xinzhuang Depot (新莊機廠).** One candidate returned, `Huilong Station
+  Exit1 2016-8.jpg` — a station exit photo with no depot in it. Rejected on
+  sight; the search term found the depot's neighbourhood, not the depot.
+
+### The gate held
+
+Every image still clears the same checks as before: CC0/PD/CC BY/CC BY-SA
+only, complete attribution sidecar, under the 180 KB per-file and 400 KB
+per-page budgets, explicit dimensions, visible credit line. `npm test` and
+`npm run verify` both pass clean — 179/179 unit tests, 8,311 internal links
+with zero broken and zero dangling fragments, `a11y` zero errors and zero
+warnings, 18/18 fact cross-checks, claims steady at the baseline of 32.
+
+**One claims-ratchet near-miss, self-inflicted and self-caught.** The Part 2
+rewrite of `content/bus/_index.md` and `content/bus/routes/_index.md`
+restated "around 280 routes, fourteen companies" as prose — true, and
+already cited on `bus/network/joint-operation.md`, but unsourced *in the file
+it was written in*, which is what the classifier checks. Caught by `npm test`
+before anything was committed; fixed by cutting the repeated figures rather
+than raising `docs/claims-baseline.json`, per Part 14.
+
+### What I would do next
+
+1. Re-run the seven rate-limited fetches above once Commons has cooled down —
+   candidates are already found and recorded in this entry, no new searching
+   needed.
+2. Decide on C341: fetch the Latin-credit alternative, or fix
+   `lib/text-tokens.ts` so a Han run either side of a single space merges
+   into one tagged span (would also make the credit test's substring check
+   meaningful for the general case, not just this one photograph).
+3. Screenshot every image-bearing page at 375/1920/2560 — this run verified
+   rendering at 1440 only (Playwright against the static build), because
+   Parts 1 and 13's full viewport sweep is out of scope for Parts 2/6.
+4. Part 6.4's "line pages need multiple images — exterior, interior, station,
+   guideway" is now true for six of ten lines (the ones with an inline photo
+   beyond the hero); the other four (Airport MRT, Tamsui–Xinyi, C371's line
+   pages, and the four fully depot-and-fleet-less lines) still carry one.

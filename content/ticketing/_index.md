@@ -11,9 +11,9 @@ most English sources — which card it needs, what it covers, what the card fee
 actually costs after registration — and the answers are all in primary
 sources that nobody has assembled.
 
-**Planned pages:** the stored-value cards and how they differ; the commuter
-pass programme, its zones and what it covers; and the fare structures
-themselves — metro distance bands, bus sections, and the transfer discounts
-that join them. Each figure will carry a citation to the issuing body,
-because fare figures are exactly the kind of number that changes under a
-page while it stands still.
+Coming: the stored-value cards and how they differ; the commuter pass
+programme, its zones and what it covers; and the fare structures themselves —
+metro distance bands, bus sections, and the transfer discounts that join
+them. Each figure will carry a citation to the issuing body, because fare
+figures are exactly the kind of number that changes under a page while it
+stands still.

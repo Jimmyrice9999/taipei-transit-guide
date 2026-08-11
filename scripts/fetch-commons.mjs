@@ -27,6 +27,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 
@@ -93,7 +94,21 @@ if (!meta.licenseUrl && !/public domain|pd|cc0/i.test(meta.license)) {
 }
 
 fs.mkdirSync(CACHE, { recursive: true })
-const cached = path.join(CACHE, fileTitle.replace(/^File:/, '').replace(/[^\w.-]+/g, '_'))
+/*
+ * A hash prefix, not just the sanitised title. \w in this regex is ASCII-only,
+ * so a Han-only title like 南港機廠.jpg and an unrelated one like 淡海輕軌列車.jpg
+ * both collapse to "_.jpg" once the non-ASCII run is stripped — two different
+ * Commons files sharing one cache entry, silently. Run 11 hit exactly that: a
+ * depot photo request served back a tram photo fetched two files earlier,
+ * because the cache thought it already had it. The hash makes every title
+ * distinct regardless of script; the readable suffix survives for filenames
+ * that were already ASCII-safe.
+ */
+const titleHash = createHash('sha1').update(fileTitle).digest('hex').slice(0, 10)
+const cached = path.join(
+  CACHE,
+  `${titleHash}_${fileTitle.replace(/^File:/, '').replace(/[^\w.-]+/g, '_')}`,
+)
 if (!fs.existsSync(cached)) {
   console.log(`fetching ${meta.url}`)
   /*

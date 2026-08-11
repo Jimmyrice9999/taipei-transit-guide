@@ -7,6 +7,10 @@ aliases:
   - 淡水信義線
   - Red Line
 updated: 2026-08-10
+hero:
+  image: tamsui-xinyi-line/hero
+  alt: The open-air platform at Tamsui Station, its temple-style tiled roof over the tracks, hills across the river beyond.
+  caption: Tamsui Station's platform, at the line's northern terminus.
 facts:
   - label: Operator
     value: Taipei Rapid Transit Corporation

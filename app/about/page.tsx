@@ -158,19 +158,18 @@ export default function AboutPage() {
 
         <h2 className="section-heading">Where it has got to</h2>
         <p>
-          This is version 1, and it covers one line properly rather than seven badly. The
-          Wenhu Line has a page per station built from official records; its line, depot and
-          rolling stock pages are written but still marked as stubs —{' '}
-          {stubs} of the {written} written pages carry that flag, meaning figures on them
-          still need tracing to a primary source.
+          This is version 1. Every line now has a page written from primary sources, and
+          the Wenhu Line — the first one built, and the one this site went deepest on — also
+          has a page per station, built from official records. {stubs} of the {written}
+          {' '}written pages still carry a stub flag, meaning some figures on them still need
+          tracing to a primary source.
         </p>
         <p>
-          The other six lines are present in the data rather than in prose. All{' '}
-          {STATIONS.length} stations across the network are registered, so any station code
-          on the site validates and any of them can be looked up on{' '}
-          <Link href="/data/stations/">the station records page</Link> — but only Wenhu's
-          have pages written about them. Linking a code to a page that does not exist would
-          be worse than not linking it.
+          Station pages are Wenhu-only so far. All {STATIONS.length} stations across the
+          network are registered, so any station code on the site validates and any of them
+          can be looked up on <Link href="/data/stations/">the station records page</Link> —
+          but only Wenhu's have a page of their own. Linking a code to a page that does not
+          exist would be worse than not linking it.
         </p>
 
         <h2 className="section-heading">Corrections</h2>

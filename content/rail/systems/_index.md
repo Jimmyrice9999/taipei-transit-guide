@@ -13,7 +13,6 @@ that made them. The [Matra dispute](/rail/history/matra-dispute/) is the
 opening chapter of that story; this section is where the technical threads get
 their own pages.
 
-Planned pages: signalling (fixed-block to CBTC, and who supplied what),
-power supply, guideway families, and automation grades. Each will be written
-against primary engineering sources, not summarised from encyclopedias —
-which is why none is written yet.
+Coming: signalling (fixed-block to CBTC, and who supplied what), power
+supply, guideway families, and automation grades. Each will be written
+against primary engineering sources, not summarised from encyclopedias.

@@ -595,6 +595,8 @@ the trains arrived branded Hitachi: Hitachi bought AnsaldoBreda in 2015 and
 renamed it[^ntpc-hitachi]. That article gives no fleet size, formation or
 technical specification, and none is asserted here.
 
+![The empty yellow-and-grey interior of a Circular Line carriage, straps and grab poles overhead](/images/circular-line/interior-800.webp "The interior of a Circular Line train, photographed by the bureau that built the line. — Department of Rapid Transit Systems, New Taipei City Government, public domain, Wikimedia Commons")
+
 The line runs unbranched from Y07 to Y20 in one sequence, and the operator's own
 data records it as not a branch[^tdx]. It meets five other lines[^tdx]:
 

@@ -5,12 +5,18 @@ order: 8
 aliases:
   - 淡海輕軌
 updated: 2026-08-06
+hero:
+  image: danhai-lrt/hero
+  alt: A light-blue Danhai LRT tram running on street-level track through a still-under-construction new town, apartment towers rising behind it.
+  caption: A Danhai LRT tram on the reclaimed new town's street-level track.
 ---
 
 The Danhai light rail is the thing the network map's legend quietly implies
 does not exist: rail on the street. It serves the reclaimed new town north of
 Tamsui, feeding the red line rather than competing with it, and it is run by
 [New Taipei Metro](/rail/operators/ntmc/).
+
+![The canopy-covered platform at Danhai Xinshi Zhen Station, empty in the rain](/images/danhai-lrt/station-800.webp "Danhai Xinshi Zhen Station, on the new town side of the line. — 梁立豪, CC BY-SA 4.0, Wikimedia Commons")
 
 *This is a scope page.* The line's route, fleet — including the locally built
 trams — phasing and the under-construction second phase are all still to be

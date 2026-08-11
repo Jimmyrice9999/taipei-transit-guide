@@ -7,6 +7,10 @@ aliases:
   - 板南線
   - Blue Line
 updated: 2026-08-10
+hero:
+  image: bannan-line/hero
+  alt: Passengers boarding a Bannan Line train at Taipei Main Station, doors open under blue platform lighting.
+  caption: Boarding a Bannan Line train at Taipei Main Station.
 facts:
   - label: Operator
     value: Taipei Rapid Transit Corporation
@@ -295,6 +299,8 @@ At the eastern end the line runs for about **725 m inside Taiwan Railways' land*
 where metro, high speed rail and conventional rail share one structure — the
 三鐵共構 arrangement, given here as a length rather than an
 adjective[^dorts-nangang-east].
+
+![The concourse at Taipei Main Station, ticket gates and destination signage overhead](/images/bannan-line/station-800.webp "The concourse at Taipei Main Station, platform 3, the interchange every east–west Bannan rider passes through. — Bigmorr, CC BY-SA 4.0, Wikimedia Commons")
 
 The two depots are very unequal. Nangang depot occupies about **7.83 hectares**
 east of Xiangyang Road and Dongxin Street, south of Zhongxiao East Road Section

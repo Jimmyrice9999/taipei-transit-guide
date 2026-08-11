@@ -6,6 +6,10 @@ line: R
 aliases:
   - 北投機廠
 updated: 2026-08-06
+hero:
+  image: beitou-depot/hero
+  alt: A C301 train on curved track approaching a covered platform at Beitou Depot, sidings and stabling roads either side.
+  caption: A C301 set at Beitou Depot.
 ---
 
 By the accounts this page exists to verify, the whole Taipei Metro began

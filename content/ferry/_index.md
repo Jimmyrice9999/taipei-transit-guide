@@ -11,7 +11,6 @@ transit — inside the regional fare ecosystem, which most English sources do
 not realise — and a transit guide that skipped them would be drawing the
 network's boundary in the wrong place.
 
-**Planned coverage:** the routes, the piers, how the fares interact with the
-stored-value cards and the regional pass, and where the boats actually go
-when. One section, few pages, written when the rail template is proven on
-Sanying.
+Coming: the routes, the piers, how the fares interact with the stored-value
+cards and the regional pass, and where the boats actually go when. One
+section, few pages, written when the rail template is proven on Sanying.

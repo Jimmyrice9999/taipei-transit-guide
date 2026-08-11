@@ -8,6 +8,10 @@ aliases:
   - Airport MRT
   - 桃園機場捷運
 updated: 2026-08-06
+hero:
+  image: airport-mrt/hero
+  alt: A purple-liveried Airport MRT train crossing an elevated viaduct at Guishan, Taoyuan, apartment blocks behind.
+  caption: An Airport MRT train on the elevated approach through Guishan, Taoyuan.
 ---
 
 The airport line is the network's odd one out three times over: it belongs to

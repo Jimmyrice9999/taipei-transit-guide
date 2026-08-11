@@ -307,6 +307,25 @@ export function rehypeSectionStations({ into }: { into: Record<string, string[]>
  * Dimensions are read from the file so the page reserves the right space before
  * the photograph arrives.
  */
+/**
+ * Splits plain text into hast text/span nodes, tagging Han runs
+ * `lang="zh-Hant"` — the same rule `rehypeRichText` applies to the rest of a
+ * page's prose.
+ *
+ * Needed because a figure's caption and credit are synthesised here, from an
+ * image's `title` attribute, *after* `rehypeRichText` has already walked the
+ * tree. A photographer credited in Chinese — 梁立豪, 李元顥, and every name like
+ * them on this site — would otherwise reach the built HTML untagged, which is
+ * exactly the failure `npm run a11y` exists to catch site-wide.
+ */
+function hanTaggedNodes(value: string): Node[] {
+  return tokenize(value).map((token) =>
+    token.kind === 'han'
+      ? { type: 'element', tagName: 'span', properties: { lang: 'zh-Hant' }, children: [{ type: 'text', value: token.value }] }
+      : { type: 'text', value: token.value },
+  )
+}
+
 export function rehypeFigures({ getSize }: { getSize: (src: string) => { width: number; height: number } | null }) {
   return (tree: Node) => {
     const walk = (node: Node) => {
@@ -352,14 +371,14 @@ export function rehypeFigures({ getSize }: { getSize: (src: string) => { width: 
                   tagName: 'figcaption',
                   properties: {},
                   children: [
-                    ...(caption ? [{ type: 'text', value: caption }] : []),
+                    ...(caption ? hanTaggedNodes(caption) : []),
                     ...(credit
                       ? [
                           {
                             type: 'element',
                             tagName: 'span',
                             properties: { className: ['figure-credit'] },
-                            children: [{ type: 'text', value: credit }],
+                            children: hanTaggedNodes(credit),
                           },
                         ]
                       : []),

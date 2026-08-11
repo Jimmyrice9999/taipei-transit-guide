@@ -1,13 +1,14 @@
 ---
 title: Routes
-description: Individual bus routes — operator, corridor, stop list and frequency. Planned for v2.
+description: Individual bus routes — operator, corridor, stop list and frequency.
 order: 1
 status: planned
 ---
 
-Planned, not written. See [Bus](/bus/) for what this section will cover and why
-it is empty.
-
-The intention is a page per trunk route — operator, corridor, stop list,
-frequency and the metro interchanges it serves — beginning with the bus-lane
-corridors rather than working numerically through the route list.
+See [the network explainer](/bus/network/joint-operation/) for how many
+routes run the joint-operation network today, and for the numbering and
+colour system that ties them together. A page per trunk route — operator,
+corridor, stop list, frequency and the metro interchanges it serves — will
+begin with the bus-lane corridors rather than working numerically through
+the route list, and waits on the same data pipeline described at
+[Bus](/bus/).
