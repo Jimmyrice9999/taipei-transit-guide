@@ -213,23 +213,41 @@ async function measureOverflow(page) {
   })
 }
 
-/** Tab through the page, recording what gets focus and how it looks. */
-async function keyboardTraversal(page) {
-  /*
-   * Stamp every element that ought to be reachable, and match visits by the
-   * stamp. The first version matched by label text, which reported the nav
-   * links "unreached" on every page purely because their key was an href and
-   * their label was text — pure matcher noise presented as a finding.
-   */
-  const expected = await page.evaluate(() =>
-    [...document.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')]
-      .filter((el) => {
+/**
+ * Installed on the context so it exists before any page script runs and
+ * survives hydration. Both the stamping pass and the per-Tab identity lookup
+ * go through it, so "the focusable elements" means one list, not two that
+ * drifted apart.
+ */
+const FOCUSABLE_HELPER = () => {
+  window.__ttgFocusable = () =>
+    [...document.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')].filter(
+      (el) => {
         const style = getComputedStyle(el)
         if (style.display === 'none' || style.visibility === 'hidden') return false
         if (el.tabIndex < 0) return false
         return true
-      })
-      .map((el, i) => {
+      },
+    )
+}
+
+/**
+ * Stamp the focusable elements, and do not return until the stamps have
+ * actually stuck.
+ *
+ * `load` fires before React hydration, and hydration replaces the article
+ * subtree wholesale — every attribute written before it is thrown away with the
+ * nodes that carried it. Measured on the Wenhu line page: 249 stamps applied,
+ * 249 present immediately, **0** a second later. Stamping once at `load` was
+ * therefore writing to a DOM that was about to be discarded.
+ */
+async function stampFocusable(page) {
+  await page.waitForLoadState('networkidle').catch(() => {})
+
+  let expected = []
+  for (let attempt = 0; attempt < 8; attempt++) {
+    expected = await page.evaluate(() =>
+      window.__ttgFocusable().map((el, i) => {
         el.setAttribute('data-kbd', String(i))
         return {
           i,
@@ -241,13 +259,42 @@ async function keyboardTraversal(page) {
             '',
         }
       }),
-  )
+    )
+    // Hydration commits a subtree in one go, so a wipe is never half-done:
+    // if the stamps are all still there after a settle, they are staying.
+    await page.waitForTimeout(250)
+    const survived = await page.evaluate(() => document.querySelectorAll('[data-kbd]').length)
+    if (expected.length === 0 || survived === expected.length) return expected
+  }
+  return expected
+}
+
+/** Tab through the page, recording what gets focus and how it looks. */
+async function keyboardTraversal(page) {
+  /*
+   * Match visits by the stamp. The first version matched by label text, which
+   * reported the nav links "unreached" on every page purely because their key
+   * was an href and their label was text — pure matcher noise presented as a
+   * finding.
+   *
+   * The fallback when a stamp is missing used to be `TAG|href`, and that is not
+   * an identity: the Wenhu page carries 27 separate `[2]` citation markers, all
+   * href="#ref-2". With the stamps eaten by hydration (see stampFocusable),
+   * 244 anchors collapsed into 116 keys, every repeat counted as a revisit, and
+   * ten consecutive revisits is this function's definition of a focus trap. It
+   * reported a trap on a page that has none — then crashed reporting it, which
+   * is how CI run #14 failed with "exit code 1" and no annotation naming a
+   * cause. Position in the live focusable list cannot collide and cannot be
+   * wiped.
+   */
+  const expected = await stampFocusable(page)
 
   await page.evaluate(() => document.body.focus())
 
   const order = []
   const seen = new Set()
   let stagnant = 0
+  let trapped = false
 
   for (let i = 0; i < 400; i++) {
     await page.keyboard.press('Tab')
@@ -285,7 +332,7 @@ async function keyboardTraversal(page) {
           '',
         focusRing: hasOutline || hasShadow || childIndicator,
         offscreen: rect.width === 0 && rect.height === 0,
-        key: el.getAttribute('data-kbd') ?? el.tagName + '|' + (el.getAttribute('href') ?? ''),
+        key: el.getAttribute('data-kbd') ?? String(window.__ttgFocusable().indexOf(el)),
       }
     })
 
@@ -295,8 +342,15 @@ async function keyboardTraversal(page) {
     if (seen.has(info.key)) {
       stagnant++
       // Revisiting is normal at the wrap; ten consecutive revisits without a
-      // single new element is a trap.
-      if (stagnant > 10) return { order, expected, trapped: true }
+      // single new element is a trap. Break rather than return: the early
+      // return here built a DIFFERENT shape — no noRing, no distinct, no
+      // expectedCount — and the caller reads result.noRing.length
+      // unconditionally. A trap therefore crashed the whole run with a
+      // TypeError instead of being reported as the finding it is.
+      if (stagnant > 10) {
+        trapped = true
+        break
+      }
     } else {
       stagnant = 0
       seen.add(info.key)
@@ -313,7 +367,7 @@ async function keyboardTraversal(page) {
     expectedCount: expected.length,
     noRing: order.filter((o) => !o.focusRing).map((o) => `${o.tag}.${o.cls} "${o.label}"`),
     unreached: unreached.slice(0, 10).map((e) => `${e.tag} "${e.label}"`),
-    trapped: false,
+    trapped,
   }
 }
 
@@ -504,6 +558,9 @@ log('\n═══ 2. Keyboard traversal ═══\n')
 
 {
   const context = await browser.newContext({ viewport: { width: 1280, height: 900 } })
+  // Before any page script, so it is still there after hydration has replaced
+  // the document's nodes.
+  await context.addInitScript(FOCUSABLE_HELPER)
   const page = await context.newPage()
 
   for (const { name, url } of PAGE_TYPES) {

@@ -303,7 +303,7 @@ them. Figures for all four circulate; none of them appears on this page, because
 none has been traced to the builder.
 
 A numbering trap worth flagging while it is still live. The station being built
-takes **R01**, at the end of a line whose other codes were assigned long
+takes **`R01`**, at the end of a line whose other codes were assigned long
 before — and this line already carries one scheme laid over another: DORTS's own
 station table prints a separate 工程編號 column of original construction numbers
 beside today's passenger codes, and the two do not run in
@@ -327,7 +327,7 @@ be the same, and saying so is not the same as knowing it.
 **Station count.** DORTS's 22[^dorts-tamsui] and 7[^dorts-xinyi] share R08,
 which nets to 28 — the number in service today, R02 to R28 plus R22A. Chinese
 Wikipedia says 29, counting the
-unopened R01[^zh-tamsui-xinyi]. Those are compatible once you know what each
+unopened `R01`[^zh-tamsui-xinyi]. Those are compatible once you know what each
 counts.
 
 **Rolling stock.** Chinese Wikipedia's line infobox names C301, C381 and
@@ -346,7 +346,7 @@ at all. The obvious reconciliation is obvious enough to be suspicious.
 - **Platform doors, incident history, and the depot in detail.** The
   [C301](/rail/rolling-stock/c301/) fleet and
   [Beitou Depot](/rail/depots/beitou-depot/) have pages of their own.
-- **R01's official English name.** Not established; the Chinese is used above.
+- **`R01`'s official English name.** Not established; the Chinese is used above.
 
 The research behind this page was done without any web search available, so it
 rests on primary material reached by walking the DORTS and TRTC sites and on two

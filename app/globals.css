@@ -1000,6 +1000,25 @@ main {
   color: var(--band-ink);
 }
 
+/*
+ * Run 10 made this line name a link and the anchor took the global --link
+ * (#0f5ca8) — a dark blue on the near-black --band (#16191c), 1.65:1 where AA
+ * wants 4.5:1. axe-core flagged it as `serious` on all 31 pages carrying a
+ * facts panel. Links on the band take band ink and carry the affordance as an
+ * underline instead of a hue, the same as `.nav-group a` in the header.
+ */
+.platform-title a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--band-ink-dim);
+  text-underline-offset: 2px;
+}
+
+.platform-title a:hover,
+.platform-title a:focus-visible {
+  text-decoration-color: var(--band-ink);
+}
+
 .platform-zh {
   font-size: 12px;
   color: var(--band-ink-dim);
@@ -1780,11 +1799,21 @@ a.spine-station:focus-visible .spine-name {
   color: var(--text);
 }
 
+/*
+ * Run 10. `.refs-title a` got the wrap rule above; the note did not, and a note
+ * is the one field that routinely carries a bare URL in running prose — the
+ * Control Yuan entry cites the .docx and the .pdf inline. A 55-character URL is
+ * one unbreakable token: it measured 403px inside a 256px box and pushed the
+ * document to 451px at a 320px viewport, which is a WCAG 1.4.10 reflow failure
+ * on every page citing that source (/data/sources/ and the Circular Line).
+ * Not visible at any other width, and structure checks cannot see it at all.
+ */
 .refs-note {
   font-size: 13px;
   line-height: 1.5;
   color: var(--text-2);
   margin-top: 2px;
+  overflow-wrap: anywhere;
 }
 
 .biblio-count {
@@ -2641,12 +2670,20 @@ a.spine-station:focus-visible .spine-name {
   white-space: nowrap;
 }
 
-.compare thead th a {
+/*
+ * `:not(.badge)` because this selector is specificity 0,1,3 and `.badge` is
+ * 0,1,0 — so when run 10 made the line badge a link, this rule captured it and
+ * repainted --badge-fg (white, on Bannan's #0A59AE) as --text (#14171A). That
+ * is 1.9:1, and axe-core flagged it `serious` on /rail/lines/. A badge carries
+ * its own foreground precisely because it is chosen against its own background;
+ * no container may recolour it.
+ */
+.compare thead th a:not(.badge) {
   color: var(--text);
   text-decoration: none;
 }
 
-.compare thead th a:hover {
+.compare thead th a:not(.badge):hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
