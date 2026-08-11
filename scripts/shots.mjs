@@ -113,7 +113,20 @@ for (const url of urls) {
     await page.setViewportSize({ width, height: clip ?? 900 })
     await page.goto(base + url, { waitUntil: 'load' })
     await page.evaluate(() => document.fonts.ready)
-    if (click) await page.click(click)
+    if (click) {
+      await page.click(click)
+      /*
+       * Wait for CSS transitions to finish before shooting.
+       *
+       * Without this the shot catches whatever frame the compositor was on.
+       * Run 10 lost time to it: the nav caret was photographed at 29.6° of a
+       * 180° rotation, which reads as a left chevron, and it was diagnosed
+       * three times as a transform-origin bug before the computed matrix was
+       * measured and turned out to be mid-animation. A screenshot of a
+       * transitioning element is not evidence about its resting state.
+       */
+      await page.waitForTimeout(400)
+    }
     const out = path.join(SHOTS, `${tag}-${slug}-${width}.png`)
     if (el) {
       const rect = await page.evaluate(

@@ -4201,7 +4201,8 @@ bug none of them has is the kind of speculative hardening run 3 §30 argued this
 project should stop doing.
 
 The line that decides it: **`.gitattributes` removes the cause.** Once the
-working tree is LF everywhere, no reader can see a `` at all. The two
+working tree is LF everywhere, no reader can see a `
+` at all. The two
 normalisations are defence in depth at the points that parse prose; the rest
 would be defence in depth against a condition that no longer exists.
 
@@ -4211,3 +4212,305 @@ No check was relaxed, skipped or exempted. The classifier got **more** accurate
 in both directions — it now splits paragraphs on every platform, and it stops
 mis-reporting cited table rows as uncited. The baseline moved because the
 measurement changed, and the reason is written into the file that holds it.
+
+---
+---
+
+# Run 10 — layout, navigation, linking, and the light rail that was never asked for
+
+Two sessions, split by a usage limit that killed twelve research subagents
+mid-flight. This entry covers what landed. The brief's later parts (colour,
+diagrams, station-page depth, the photographed `/rail` index, performance, the
+five-viewport sweep) were **not started** and are listed at the end.
+
+## 76. Part 1 — the three layout bugs, and why they could not have been seen
+
+All three reproduced at 1920 and 2560, and all three were invisible at every
+width this project had ever screenshotted. `docs/screenshots/` held 375, 768
+and 1440 — and **1440 is precisely the width at which the 1140px container
+still fills the viewport**. 1920 and 2560 are now permanent in
+`scripts/browser-verify.mjs`.
+
+### 76.1 The long brown line across the strip map
+
+`.lead-figure` carries `border-bottom: 2px solid var(--accent)` and was not a
+block formatting context. Its block box therefore started at the container's
+left edge and ran the full measure; only the *line boxes* inside it shortened
+beside the floated spine. The border painted across the whole box — straight
+through the strip map, over BR12's name, in the line colour.
+
+`display: flow-root`, the same fix `.prose blockquote` and `.page-main > .note`
+already had. The lead figure landed after that rule was written and was never
+added to it.
+
+**Guarded**: check 1b in `browser-verify.mjs` now measures rendered boxes and
+fails if any painted direct child of `.page-main` overlaps the spine float. It
+needs a browser — this class of bug is invisible to every check that reads
+markup.
+
+### 76.2 Prose at 40% of the page
+
+Measured at 1920: 729px of text on a 1920px screen — 38%. At 2560, 28%.
+
+**What was not done, and why:** widening the measure to fill the screen. 68ch
+is about 68 characters; a 2560px line is 200 characters and the eye loses the
+line return. The measure is right.
+
+Three things changed instead, all above 1440 so every existing screenshot and
+test renders byte-identically:
+
+1. **Type scales** — 17px to 18px at 1600, 19px at 2200. The reading column
+   grows physically while holding the same number of characters. This is the
+   change that answers the complaint.
+2. **The container grows** — 1140 to 1320 to 1560, so spec tables, the network
+   map and the length bars get the width. That is where the pixels belong.
+3. **The reading column centres**, with the breadcrumbs, h1 and summary moving
+   with it.
+
+Three attempts were needed and the two failures are worth recording:
+
+- `--measure` was `68ch`, and an unregistered custom property substitutes its
+  *text* at each point of use. Declared once and read by the h1, the summary
+  and the spine, it produced three different offsets — the summary is 17.5px so
+  its `ch` is narrow, and the h1 is 44px so its measure exceeded the container
+  and the offset clamped to zero. **The title stayed hard-left while the body
+  indented.** `--measure` is now an explicit px length above 1600.
+- The offset was then computed as `(100% - measure) / 2`. Percentages resolve
+  against each consumer's own containing block: `.page-body` saw the container
+  and padded itself 348px, then its `.wide` children saw the *padded* box and
+  broke back out by 174px — half the distance, leaving the network map short of
+  the edge. `--container-inner` is now a constant per breakpoint.
+
+The offset is **padding on the containers**, not a margin on each child. The
+margin version was specificity (0,1,0) and any later `margin` shorthand beat
+it; `.section-heading` on /about did exactly that and hung outside the centred
+body.
+
+### 76.3 The lead figure's separation
+
+20px below the rule, which read as one object with the facts panel. Now 34px,
+and `.profile` went from `26px 0` to `44px 0 34px`.
+
+## 77. Part 3 — navigation
+
+### 77.1 A back control on every page
+
+`components/BackLink.tsx`, on all fourteen page types including the 404 — the
+page where it matters most, because a 404 is usually a guessed URL and there is
+no history to go back to.
+
+Breadcrumbs already existed, and the report "NO BACK BUTTON anywhere" was still
+correct. A breadcrumb trail is an *orientation* device rendered as small grey
+text with chevrons; nothing about it reads as a control, and the crumb people
+want to press is the second-to-last, the least prominent thing in the row. The
+back control is a link, not `history.back()` — a link always goes to the same
+place and can name it.
+
+### 77.2 The dropdown nav
+
+`lib/nav.ts` builds sections to types to pages at build time;
+`components/SiteNav.tsx` renders it. Each section is **two controls**: a link to
+the section, and a separate toggle for its panel. Collapsing them forces a
+choice between "the section index is unreachable from the bar" and "opening the
+menu navigates away".
+
+**Nothing depends on hover.** Hover opens a panel on a fine pointer as an
+enhancement; every panel opens on click, Enter and Space. `aria-expanded` plus
+`hidden` is the whole contract — deliberately no `role="menu"`, which would
+imply arrow-key semantics wrong for a set of links in a disclosure.
+
+The panel is anchored to the **header band**, not to its section. Anchored to
+the item it ran off the right of the screen: Rail sits at x roughly 1090 on a
+1440 display, so its panel was clipped mid-word and four of its seven groups
+could not be reached at all.
+
+`npm run nav` drives it — Tab reachability, Enter/Space, Tab into the open
+panel, Escape closing and restoring focus, tap-to-open on a Pixel 7, section
+links still navigating, no horizontal overflow, and no CSS `:hover` rule
+controlling visibility. **All nine pass.**
+
+One process note. The first version of that check reported a touch-navigation
+failure that did not exist: it called `waitForLoadState('load')` after tapping a
+`<Link>`, which navigates client-side, so the wait resolved instantly against
+the document already there and the URL was read before the router pushed it.
+The check now settles and tests closed/open against both tap and click.
+
+The same class of mistake happened again with the caret: it was photographed at
+**29.6 degrees of a 180 degree rotation**, which reads as a left chevron, and
+was diagnosed twice as a transform-origin bug before the computed matrix was
+measured. The `transform-box` "fix" was reverted; `scripts/shots.mjs` now
+settles transitions before shooting. A screenshot of a transitioning element is
+not evidence about its resting state.
+
+### 77.3 Indexes
+
+Section prose moved **below** the links — on /rail/ it was a full screen of
+explanation before the first link. The two long section descriptions were cut
+to one sentence. Type descriptions were already one line.
+
+Also removed, per Part 2: the "Planned for v2" banner, the "N scope statements"
+tally, the per-card "scope statement" chip, and "No pages yet." An empty type is
+now not rendered at all, and a section with nothing behind it is dropped from
+the nav (`lib/nav.ts`). The discipline moved to where it is load-bearing — TBC
+on figures, the claims ratchet, /about — rather than counting unwritten pages.
+
+## 78. Part 4 — link everything
+
+### 78.1 Line codes
+
+`components/LineBadge.tsx` — a LINE code badge linking to its line page,
+distinct from `StationBadge`. Wired into the network table (the reported case:
+clicking "BR" now goes to the Wenhu Line), the facts-panel header on every page,
+station pages, `/data/line-colours`, `/data/stations`, `/rail/stations` and the
+comparison table. Badges *inside* an existing link — the spine — stay inert,
+because an `<a>` in an `<a>` is the run-2 hydration bug.
+
+### 78.2 Operators
+
+`lib/operators.ts`. The data calls them by code, the prose by full name, the
+pages by slug. `NTDLRT` and `NTALRT` are TDX operator codes, **not companies** —
+both are New Taipei Metro — and the network table was printing `NTDLRT` raw as
+if it were one.
+
+The three operator pages already existed as scope statements; the gap was that
+nothing linked to them.
+
+### 78.3 Frontmatter values
+
+`RichText` gained opt-in entity linking against the same registry the prose
+auto-linker uses, so facts-panel values link. It is opt-in because `RichText` is
+also used inside card titles, which are links.
+
+**A defect this introduced and then fixed.** The first version linked every
+registry name it found, which turned
+
+    DEPOTS   Muzha, Neihu
+
+into two links pointing at Muzha and Neihu **stations**. The depot pages are
+titled "Muzha Depot", so the bare word matched the station and nothing matched
+the depot — on four pages. A row labelled Depots linking to two stations is
+worse than the plain text it replaced. The frontmatter was not rewritten: those
+values are sourced, and "Muzha" is what the source says. Instead each row passes
+its own label, and a Depots row matches only depot pages, including by title
+with the type word dropped.
+
+### 78.4 The audit — `npm run links`
+
+Walks the built HTML and reports every page that names something with a page and
+does not link to it.
+
+**85 to 4**, after two corrections to the audit itself:
+
+- `sr-only` spans were counted. The marker-rail spine emits one per stop; a
+  link inside one is unreachable by everyone who can see.
+- **Station names are not unique across the network.** "Daan" is BR09 *and*
+  R05; 38 names are shared. Only Wenhu has station pages, so the registry holds
+  one "Daan" and every occurrence resolved to it. Those were being reported as
+  missing links when linking them would have been *wrong*.
+
+**That flaw is in the auto-linker too**, which shares the registry. Its blast
+radius is smaller — first mention only — but it is the same mistake, and the
+audit prints it rather than filtering it silently. Not fixed this run.
+
+The 4 remaining: three station names inside citation titles on `/data/sources/`
+(correctly unlinked — linking inside a source's title would corrupt it) and one
+figure caption on the Innovia page.
+
+## 79. Part 9 — why the Sanying Line was missing, and the light rail with it
+
+Asked why Danhai, Ankeng and Sanying were absent from the network map. The
+answer was in `scripts/fetch-tdx.mjs`, and it was ours, not the platform's.
+
+**TDX does not file New Taipei's four railways under one operator.** `NTMC`
+returns exactly one line record — the Circular Line. Probed live:
+
+| operator | lines |
+| --- | --- |
+| TRTC | 5 — BL BR G O R |
+| NTMC | 1 — Y 環狀線 `#fedb00` |
+| TYMC | 1 — A 桃園機場捷運線 `#8246AF` |
+| **NTDLRT** | **1 — V 淡海輕軌 `#FF2A00`** |
+| **NTALRT** | **1 — K 安坑輕軌 `#9E925E`** |
+
+The fetch asked for three codes. The light rail was never missing data — it was
+never requested, which is a materially different failure from the geometry holes
+this project has recorded before.
+
+**Sanying is genuinely not in TDX.** It opened 30 June 2026; NTMC's metro
+records were last updated at source on 23 May 2023 and no separate operator code
+exists for it. The network page now says so in a note rather than leaving an
+apparent oversight.
+
+Added: `--only CODE[,CODE]` to the fetch (bringing in two operators without
+rewriting TRTC's 157 station records mid-run), and 400-with-"is not accepted"
+treated as "not published" — `LineTransfer` is restricted to the four
+heavy-metro systems and says so with a client error, which aborted the first
+attempt after five successful datasets.
+
+Result: **180 stations across 9 lines.** Both new colours clear AA and the 4.6
+derivation margin (V ink 4.74, K ink 4.68).
+
+### 79.1 The same duplicated-list bug, three more times
+
+The light rail drew as loose station dots with no route between them.
+`lib/geometry.ts`, `lib/network.ts` and `lib/routes.ts` each hard-coded the same
+three operator files. Nothing errored; the map just drew stations and no lines.
+`lib/tdx.ts` now holds the list once. Two further copies were in the tests.
+
+### 79.2 A new CVD finding
+
+**R/V is the closest pair on the network in normal colour vision** — CIEDE2000
+12.5, `#D90023` against `#FF2A00`. MOTC publishes two reds for two lines in the
+same region. BR/V is 3.8 under deuteranopia. The mitigation is the existing one
+and it holds: every line carries its code. The map caption now says this.
+
+### 79.3 Adaptive simplification
+
+Ankeng broke the 12 m drawing tolerance — K06 displaced **83.7 m**.
+
+Douglas-Peucker guarantees no *vertex of the original polyline* moves more than
+epsilon. It guarantees nothing about a point that is not on the line, and a
+station sits a few metres to one side. Where simplification cuts a sharp corner
+the perpendicular distance from a nearby station can change by far more:
+
+| tolerance | worst station | points |
+| --- | --- | --- |
+| 12 m | **83.7 m** (K06) | 34 |
+| 6 m | 3.0 m | 48 |
+| 3 m | 1.7 m | 68 |
+
+A cliff, not a gradient. `getLineGeometry` now asks for 12 m, measures what it
+did to the stations, and steps down until the drawing is faithful. The tolerance
+was **not relaxed**. Ankeng costs 14 extra vertices; nothing else changes.
+
+## 80. Suite: one failing test, deliberately left failing
+
+Green: build, `check` (no broken links, no dangling fragments), `a11y` (no
+errors, no warnings), `cite` (114 citations, 57 primary / 57 secondary),
+`facts` (18 cross-checks), `palette`, `nav` (9/9), `links`.
+
+**Red: `unsourced assertions have not increased` — 62 against a baseline of 32.**
+
+The increase is entirely from content added earlier in this session:
+
+| file | asserted |
+| --- | --- |
+| `content/rail/lines/circular-line.md` | 19 |
+| `content/rail/lines/bannan-line.md` | 10 |
+| `content/rail/lines/tamsui-xinyi-line.md` | 1 |
+
+Sourced statements went **279 to 510** over the same change, so the new pages
+are heavily cited — but 30 statements on them rest on nobody's authority.
+
+**`docs/claims-baseline.json` has not been touched.** Raising it to 62 to make
+the suite green is precisely what Part 14 forbids. Clearing it means citing,
+TBC-ing or removing 30 statements on three pages, which is Part 5 cleanup.
+Until then the branch should not be pushed.
+
+## 81. Not started
+
+Parts 6 (photographs beyond the 34 fetched), 7 (colour), 8 (diagrams and icons),
+10 (station-page depth), 11 (the photographed `/rail` index), 12 (performance),
+13 (the five-viewport sweep). Part 5's research machinery is built and four of
+twelve subjects are written; the remaining eight were killed by the usage limit
+and never re-run.

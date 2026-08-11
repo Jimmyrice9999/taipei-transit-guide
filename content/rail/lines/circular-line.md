@@ -15,6 +15,7 @@ hero:
 facts:
   - label: Line code
     value: Y
+    source: tdx
   - label: Operator
     value: New Taipei Metro Corporation
     source: cy-114
@@ -269,7 +270,7 @@ what happened and why[^cy-114]. It is the source for most of this page.
 ## What the investigation established
 
 Read the report carefully and the first thing to notice is what is *not* a
-finding. Its terms of reference recite the allegation it was asked to look at —
+finding[^cy-114]. Its terms of reference recite the allegation it was asked to look at —
 eleven suspected displacements, a repair initially costed at over NT$400
 million, at least a year to fix[^cy-114]. Those are the reported claims the
 Control Yuan set out to test, not its conclusions, and they are quoted here as
@@ -290,10 +291,10 @@ The numbers behind that sentence are the heart of the case[^cy-114]:
 
 | Dimension | Depth |
 | --- | --- |
-| Milled recess, as shown on the contractor's own shop drawing | 5 mm |
-| Milled recess, as measured on site by the investigation | 41 mm |
-| Void left above the pin | 36 mm |
-| Height of the pin itself | 40 mm |
+| Milled recess, as shown on the contractor's own shop drawing | 5 mm[^cy-114] |
+| Milled recess, as measured on site by the investigation | 41 mm[^cy-114] |
+| Void left above the pin | 36 mm[^cy-114] |
+| Height of the pin itself | 40 mm[^cy-114] |
 
 36 mm of void plus the 5 mm of engagement the drawing required is 41 mm — the
 report's own arithmetic — and 41 mm is more than enough to swallow a pin only 40
@@ -323,9 +324,9 @@ smaller[^cy-114]:
 
 | Station | North–south peak ground acceleration |
 | --- | --- |
-| TAP026, 頂溪國小 | 224.60 gal |
-| TAP032, 積穗國小 | 206.77 gal |
-| TAP115, 安和國小 | 223.17 gal |
+| TAP026, 頂溪國小 | 224.60 gal[^cy-114] |
+| TAP032, 積穗國小 | 206.77 gal[^cy-114] |
+| TAP115, 安和國小 | 223.17 gal[^cy-114] |
 
 At 積穗國小 the peak ground velocity reached 32.16 cm/s, an intensity of
 5-strong, and the peak horizontal acceleration measured there was 0.229 g —
@@ -599,11 +600,11 @@ data records it as not a branch[^tdx]. It meets five other lines[^tdx]:
 
 | Interchange | To | On site | Transfer time |
 | --- | --- | --- | --- |
-| Y07 Dapinglin | Songshan–Xindian Line | yes | 3 min |
-| Y11 Jingan | Zhonghe–Xinlu Line | yes | 6 min |
-| Y16 Banqiao | Bannan Line | no | 11 min |
-| Y17 Xinpu Minsheng | Bannan Line | no | 9 min |
-| Y18 Touqianzhuang | Zhonghe–Xinlu Line | yes | 6 min |
+| Y07 Dapinglin | Songshan–Xindian Line | yes | 3 min[^tdx] |
+| Y11 Jingan | Zhonghe–Xinlu Line | yes | 6 min[^tdx] |
+| Y16 Banqiao | Bannan Line | no | 11 min[^tdx] |
+| Y17 Xinpu Minsheng | Bannan Line | no | 9 min[^tdx] |
+| Y18 Touqianzhuang | Zhonghe–Xinlu Line | yes | 6 min[^tdx] |
 
 End to end takes 34 minutes in either direction[^tdx].
 
@@ -614,10 +615,10 @@ publishes dimensions for all of them[^dorts-faq]:
 
 | Section | Length | Stations |
 | --- | --- | --- |
-| Phase 1 (in service) | 15.4 km | 14, plus one depot |
-| North ring | 14.93 km | 12, plus one underground depot |
-| South ring | 5.73 km | 6, all underground, not counting Dapinglin |
-| East ring | about 13.25 km | 10, all underground, plus one underground depot |
+| Phase 1 (in service) | 15.4 km | 14, plus one depot[^dorts-faq] |
+| North ring | 14.93 km | 12, plus one underground depot[^dorts-faq] |
+| South ring | 5.73 km | 6, all underground, not counting Dapinglin[^dorts-faq] |
+| East ring | about 13.25 km | 10, all underground, plus one underground depot[^dorts-faq] |
 
 The South and North rings together run 20.66 km, of which 8.21 km lie inside New
 Taipei City, with 18 stations of which 7 are in New Taipei, at a cost of
@@ -661,7 +662,7 @@ publishes[^ntmetro-ridership].
   Yuan's fourth finding.
 - **The outcome of the litigation**, and whether any prosecution followed.
 - **The South Ring's station codes**, `Y01` to `Y06`. The registry behind this
-  site comes from TDX, which carries only the operating section. Those names
+  site comes from TDX, which carries only the operating section[^tdx]. Those names
   arrive with the data when the South Ring opens.
 
 ## Sources

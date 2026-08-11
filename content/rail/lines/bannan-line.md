@@ -68,7 +68,8 @@ specs:
     unit: min
     source: trtc-bannan
   - label: Densest published headway
-    value: 2 min 15 s
+    value: "2:15"
+    unit: min:s
     source: trtc-bannan
   - label: Longest gap, BL09 to BL10
     value: "3.08"
@@ -87,7 +88,8 @@ specs:
     unit: km/h
     source: zh-bannan
   - label: Electrification
-    value: 750 V DC third rail
+    value: "750"
+    unit: V DC, third rail
     source: zh-bannan
   - label: Cars per train, C341
     value: "6"
@@ -266,7 +268,8 @@ and every one of those five projects was built underground[^dorts-bannan][^dorts
 | 27 February 2011 | Nangang – Nangang Exhibition Center | Nangang eastern extension[^dorts-nangang-east] |
 | 6 July 2015 | Yongning – Dingpu | Dingpu extension[^dorts-dingpu] |
 
-The line's builder is explicit that the first two sections were hurried. Both
+The line's builder is explicit that the first two sections were
+hurried[^dorts-nangang-line]. Both
 were 趕工提前完工 — rushed to early completion — so that the east–west route
 would form the 雙十 network with the north–south Tamsui, Xindian, Zhonghe and
 Muzha lines as soon as possible[^dorts-nangang-line]. The eastward change came
@@ -274,7 +277,8 @@ earlier still: the approved blue line originally ran only to Songshan, and the
 extension on to Nangang was accepted by the Executive Yuan on **21 January
 1988**[^dorts-bannan].
 
-The two ends took the longest. The Dingpu extension is a single station and
+The two ends took the longest[^dorts-dingpu][^dorts-nangang-east]. The Dingpu
+extension is a single station and
 about 2 km, approved in February 2007, started on 31 December 2009 and opened on
 6 July 2015 at a total cost of NT$7.627 billion[^dorts-dingpu]. The eastern
 extension is 2.5 km and two stations for NT$15.735 billion[^dorts-nangang-east].
@@ -314,9 +318,10 @@ Four figures are in circulation and this page publishes all four.
   the Nangang line, 7.1 for the Banqiao line, 5.6 for the Tucheng line, 2.5 for
   the eastern extension and 2 for the Dingpu extension[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu].
 
-The 1.55 km between the first pair and the second is exactly the shape of the
-Wenhu Line's three lengths, which turned out to be three correct measurements of
-three different things. A construction project normally runs past the end
+Why the two pairs differ by 1.55 km is **not established here**. The shape of
+the disagreement resembles the Wenhu Line's three lengths, which turned out to
+be three correct measurements of three different things, but that is a
+resemblance and not a finding. A construction project normally runs past the end
 station into tail tracks and depot leads, and adjacent contracts can overlap at
 their joints — but **nothing found states how DORTS bounds a section**, so that
 is a hypothesis and it is not asserted here.
@@ -326,23 +331,23 @@ its extent as 西門 to 南港 with 11 stations, but eleven stations from BL11 r
 BL21 Kunyang, and Kunyang onwards is the separately documented eastern
 extension[^dorts-bannan][^dorts-nangang-east].
 
-The station spacing is unusually varied for an urban metro. The longest gap is
-**BL09 to BL10**, Jiangzicui to Longshan Temple, at 3.08 km — the Xindian River
-crossing. The shortest is **BL06 to BL07**, Fuzhong to Banqiao, at 0.65
-km[^tdx]. Nearly five times the difference, on the same line, three stations
+The station spacing is unusually varied for an urban metro[^tdx]. The longest
+gap is **BL09 to BL10**, Jiangzicui to Longshan Temple, at 3.08 km — the Xindian
+River crossing[^tdx]. The shortest is **BL06 to BL07**, Fuzhong to Banqiao, at
+0.65 km[^tdx]. Nearly five times the difference, on the same line, three stations
 apart.
 
 ## How it runs
 
 Two patterns run together: the full length, BL23 to BL01, and a short working
 from BL23 to BL05 Far Eastern Hospital that densifies the central section.
-Service runs 06:00 to 24:00. End to end takes about 48 minutes; the short
+Service runs 06:00 to 24:00[^trtc-bannan]. End to end takes about 48 minutes; the short
 working about 38[^trtc-bannan].
 
 At weekday peaks — 07:00 to 09:00 and 17:00 to 19:30 — the whole-line headway is
 about 6 minutes and about 3 minutes over the overlapping section, and the
 operator publishes a densest figure of about **2 minutes 15 seconds** for
-Longshan Temple towards Kunyang between 08:00 and 09:00. Off-peak it is 8 to 10
+Longshan Temple towards Kunyang between 08:00 and 09:00[^trtc-bannan]. Off-peak it is 8 to 10
 minutes, 4 to 5 over the overlap; after 23:00, 8 to 12 minutes and full-length
 trains only[^trtc-bannan].
 
@@ -360,7 +365,7 @@ The crowding produces a service pattern the operator does not publish at all. In
 August 2025 TVBS reported that of four extra workings starting at Far Eastern
 Hospital, two — at 08:07 and 08:16 — run **empty as far as Jiangzicui** and only
 open their doors there, because trains are full before they reach Taipei City
-and Jiangzicui passengers cannot board. TRTC's answer was that the headway was
+and Jiangzicui passengers cannot board[^tvbs-2025]. TRTC's answer was that the headway was
 already compressed to one train every 2 minutes 15 seconds and could not be cut
 further, so from 20 August it would instead run four trains with fewer seats in
 the busiest half hour[^tvbs-2025]. Nothing on the operator's routes-and-headways
@@ -395,16 +400,17 @@ sentence carries no footnote[^zh-c341]. A contemporaneous news source has now
 been found and it is that source this paragraph cites.
 
 Reporting the trains into service in March 2005, CNA described them as six
-trainsets **bought by 大陸工程, the civil contractor for the Tucheng line**. The
-contractor had originally intended to buy from the Korean manufacturer KOROS;
-the metro engineering bureau did not agree. It bought from Siemens instead, for
-something over NT$2.248 billion, at a **unit price about 50 % higher than the
-bureau had itself paid Siemens** — which is the same claim as the
-encyclopedia's "1.5 times", in different units. The six trains were delivered to
+trainsets **bought by 大陸工程, the civil contractor for the Tucheng
+line**[^cna-2005]. The contractor had originally intended to buy from the Korean
+manufacturer KOROS; the metro engineering bureau did not agree[^cna-2005]. It
+bought from Siemens instead, for something over NT$2.248 billion, at a **unit
+price about 50 % higher than the bureau had itself paid Siemens**[^cna-2005] —
+which is the same claim as the encyclopedia's "1.5 times", in different
+units[^zh-c341]. The six trains were delivered to
 the bureau between mid-September and mid-November 2004[^cna-2005].
 
-What remains unestablished is the contract number, what "did not agree" meant
-procedurally, and what the [C321](/rail/rolling-stock/c321/) unit price was, so
+The contract number is **not established** here, nor what "did not agree" meant
+procedurally, nor what the [C321](/rail/rolling-stock/c321/) unit price was, so
 that the 50 % can be checked rather than taken. No audit or court record has
 been located. The fuller account belongs on the fleet's own page, with those
 answers, not here.

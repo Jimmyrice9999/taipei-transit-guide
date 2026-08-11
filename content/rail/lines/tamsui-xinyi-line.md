@@ -148,6 +148,15 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Read as a lead index. Its infobox gives 路線長度 32.3公里 and 車站數目 29, and names C301, C381 and C381A as the fleet — all of which this page publishes only as conflicts, because the article's footnote list could not be retrieved and so none of it could be traced to what it cites."
+  - id: trtc-oldmap
+    title: "Network map, station information and timetables (old version)"
+    titleOriginal: 路網圖、各站資訊及時刻表(舊版)
+    publisher: 臺北大眾捷運股份有限公司 (Taipei Rapid Transit Corporation)
+    url: https://www.metro.taipei/cp.aspx?n=91974F2B13D997F1
+    accessed: 2026-08-11
+    kind: primary
+    lang: zh-Hant
+    note: "Cited only as the negative it is. This is the single external citation on zh.wikipedia's 新北投支線 article; it was fetched and read on 11 August 2026 and is a navigation index carrying menu items and contact details. 新北投支線 does not appear on it, nor does anything about single-track working, the shuttle, or the branch's painted train. A citation to an official source is not that source — this is what checking one looks like when it fails."
   - id: zh-xinbeitou
     title: Xinbeitou branch line
     titleOriginal: 新北投支線
@@ -241,8 +250,8 @@ Chinese Wikipedia dates the branch's opening to 28 March 1997, alongside the
 Tamsui section, and says the shuttle runs Kawasaki C371 stock in three-car
 sets[^zh-xinbeitou]. Both are plausible and neither is confirmed here. That
 article's only external citation was followed on 10 August 2026: it points at a
-TRTC page which turns out to be the old-version network map and timetable index
-and says nothing about the branch at all. **The branch's single-track status and
+TRTC page which turns out to be the old-version network map and timetable index,
+and which says nothing about the branch at all[^trtc-oldmap]. **The branch's single-track status and
 the appearance of its painted train are not established on this page**, and are
 not asserted, because the sources that would settle them have not been read.
 

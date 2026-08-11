@@ -250,9 +250,11 @@ test('the metre approximation is sane at Taipei latitudes', () => {
   assert.equal(metres([121.5, 25.0], [121.5, 25.0]), 0)
 })
 
-test('all seven lines report geometry totals', () => {
+// Counted from LINES rather than written as 7. The literal outlasted the fact
+// twice — the network was five lines, then seven, and is nine since run 10.
+test('every line reports geometry totals', () => {
   const geometry = getAllLineGeometry()
-  assert.equal(geometry.length, 7)
+  assert.equal(geometry.length, LINES.length)
   for (const g of geometry) {
     assert.ok(g.lengthKm > 0, `${g.lineId} has zero length`)
     assert.ok(g.points <= g.rawPoints, `${g.lineId} gained points during simplification`)

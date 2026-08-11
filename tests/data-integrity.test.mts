@@ -15,9 +15,21 @@ import { LINES, getLine } from '../lib/lines.ts'
 import { getBranchRoutes, getRoutes, getTrunkRoute } from '../lib/routes.ts'
 import { getInterchanges } from '../lib/network.ts'
 
+/*
+ * The same three-operator list that lib/ carried in three places until run 10
+ * — see lib/tdx.ts. This copy was the fourth, and it failed the same way: the
+ * light rail stations were in the registry, absent from this test's idea of
+ * "the TDX source", and reported as records that do not exist.
+ *
+ * Station records are not merged in lib/tdx.ts because nothing in the app
+ * reads raw station rows — the registry is generated from them ahead of time —
+ * so the list is spelled out here, once, next to the assertion that needs it.
+ */
 import trtcStations from '../data/tdx/TRTC/station.json' with { type: 'json' }
 import ntmcStations from '../data/tdx/NTMC/station.json' with { type: 'json' }
 import tymcStations from '../data/tdx/TYMC/station.json' with { type: 'json' }
+import ntdlrtStations from '../data/tdx/NTDLRT/station.json' with { type: 'json' }
+import ntalrtStations from '../data/tdx/NTALRT/station.json' with { type: 'json' }
 
 type TdxStation = {
   StationID: string
@@ -29,6 +41,8 @@ const sourceStations = [
   ...(trtcStations as unknown as TdxStation[]),
   ...(ntmcStations as unknown as TdxStation[]),
   ...(tymcStations as unknown as TdxStation[]),
+  ...(ntdlrtStations as unknown as TdxStation[]),
+  ...(ntalrtStations as unknown as TdxStation[]),
 ]
 
 const sourceById = new Map(sourceStations.map((s) => [s.StationID.toUpperCase(), s]))

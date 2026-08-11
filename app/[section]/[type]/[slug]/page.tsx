@@ -213,6 +213,7 @@ export default async function ContentPage({ params }: Props) {
             line={accent}
             title={page.title}
             references={page.references}
+            href={page.href}
           />
 
           <div className="prose article-body" dangerouslySetInnerHTML={{ __html: body }} />
@@ -402,6 +403,7 @@ export default async function ContentPage({ params }: Props) {
               line={accent}
               title={page.title}
               references={page.references}
+              href={page.href}
             />
 
             {page.hero && !heroImage && (

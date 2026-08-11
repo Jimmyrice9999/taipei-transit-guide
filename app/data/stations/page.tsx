@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { hanFontFace } from '@/app/layout'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import LineBadge from '@/components/LineBadge'
 import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
@@ -173,19 +174,12 @@ export default function StationDataPage() {
                                 const other = getLine(code)
                                 if (!other) return null
                                 return (
-                                  <span
-                                    className="badge badge-mini"
+                                  <LineBadge
+                                    className="badge-mini"
+                                    code={code}
                                     key={code}
                                     title={`Interchange with the ${other.name} Line`}
-                                    style={
-                                      {
-                                        '--badge-bg': other.badgeBg,
-                                        '--badge-fg': other.badgeFg,
-                                      } as React.CSSProperties
-                                    }
-                                  >
-                                    {code}
-                                  </span>
+                                  />
                                 )
                               })}
                             </span>

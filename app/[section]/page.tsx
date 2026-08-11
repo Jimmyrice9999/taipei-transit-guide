@@ -14,7 +14,7 @@ import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
-import { NEUTRAL_LINE } from '@/lib/lines'
+import { LINES, NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderBody, getPages, getSection, getSections, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string }> }
@@ -86,9 +86,17 @@ export default async function SectionPage({ params }: Props) {
             <Link href="/rail/network/">
               <span>
                 <span className="card-title">The network</span>
+                {/*
+                  Counted, not typed. This said "All seven lines across three
+                  operators" and was still saying it after run 10 added the two
+                  light rail lines — the same class of staleness that had /data
+                  claiming "157 stations across five lines" when there were
+                  seven. A number in prose about the site's own data should
+                  come from that data.
+                */}
                 <span className="card-desc">
-                  All seven lines across three operators, with a geographic map drawn
-                  from official route geometry.
+                  All {LINES.length} lines across {new Set(LINES.map((l) => l.operator)).size}{' '}
+                  operators, with a geographic map drawn from official route geometry.
                 </span>
               </span>
               <span className="card-meta">

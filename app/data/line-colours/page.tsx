@@ -10,6 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import LineBadge from '@/components/LineBadge'
 import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
@@ -118,17 +119,7 @@ export default function LineColoursPage() {
                     <tr key={line.code}>
                       <th scope="row">
                         <span className="colour-line">
-                          <span
-                            className="badge"
-                            style={
-                              {
-                                '--badge-bg': line.badgeBg,
-                                '--badge-fg': line.badgeFg,
-                              } as React.CSSProperties
-                            }
-                          >
-                            {line.code}
-                          </span>
+                          <LineBadge code={line.code} />
                           <span className="colour-name">
                             {line.name}
                             {line.nameZh && (

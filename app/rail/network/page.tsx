@@ -14,6 +14,9 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import LineBadge from '@/components/LineBadge'
+import { getLinePageHref as lineHref } from '@/lib/content'
+import { getOperator } from '@/lib/operators'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
 import { getAllLineGeometry } from '@/lib/geometry'
@@ -116,12 +119,12 @@ export default function NetworkPage() {
             The Sanying Line is a different case and is genuinely not there.
           */}
           <p className="note">
-            <strong>The Sanying Line is not drawn.</strong> It opened on 30 June 2026
-            and Taiwan MOTC&rsquo;s metro records for New Taipei Metro were last updated
-            at source on 23 May 2023, so the platform this map is built from does not
-            carry its geometry, its stations or its colour. Rather than draw an
-            alignment from a source that does not publish one, it is absent here and
-            written up from the operator&rsquo;s own announcement on its{' '}
+            <strong>The Sanying Line is not drawn.</strong> It opened on 30 June 2026.
+            The New Taipei Metro line records this map is built from carry a source
+            update stamp of 23 May 2023 — nearly three years earlier — and return one
+            line, the Circular Line. Rather than draw an alignment from a dataset that
+            predates the railway, it is absent here and written up from the
+            operator&rsquo;s own announcement on its{' '}
             <Link href="/rail/lines/sanying-line/">line page</Link>.
           </p>
 
@@ -174,20 +177,20 @@ export default function NetworkPage() {
                           carry the same token or there is no way to get from one
                           to the other without matching colours by eye — which is
                           the thing that does not work under protanopia.
+
+                          Run 10: the badge and the name both link to the line.
+                          They are separate links to the same place rather than
+                          one link wrapping both, because the badge carries a
+                          `title` of its own and nesting it inside a wider
+                          anchor would swallow that.
                         */}
-                        <span
-                          className="badge"
-                          style={
-                            {
-                              '--badge-bg': line.badgeBg,
-                              '--badge-fg': line.badgeFg,
-                            } as React.CSSProperties
-                          }
-                        >
-                          {line.code}
-                        </span>
+                        <LineBadge code={line.code} />
                         <span className="network-name">
-                          {line.name}
+                          {lineHref(line.code) ? (
+                            <Link href={lineHref(line.code)!}>{line.name}</Link>
+                          ) : (
+                            line.name
+                          )}
                           {line.nameZh && (
                             <span className="network-zh" lang="zh-Hant">
                               {line.nameZh}
@@ -269,7 +272,26 @@ export default function NetworkPage() {
                         <span className="absent">—</span>
                       )}
                     </td>
-                    <td className="network-operator">{line.operator}</td>
+                    {/*
+                      The code was printed raw — "NTDLRT" is not a name, and it
+                      is not even a company: TDX files New Taipei's light rail
+                      under its own code, but the operator is New Taipei Metro.
+                      The cell now prints the company and links to it, keeping
+                      the code as the tooltip for anyone matching against TDX.
+                    */}
+                    <td className="network-operator">
+                      {(() => {
+                        const op = getOperator(line.operator)
+                        if (!op) return line.operator
+                        return op.href ? (
+                          <Link href={op.href} title={`TDX operator code ${op.code}`}>
+                            {op.name}
+                          </Link>
+                        ) : (
+                          <span title={`TDX operator code ${op.code}`}>{op.name}</span>
+                        )
+                      })()}
+                    </td>
                   </tr>
                 ))}
               </tbody>

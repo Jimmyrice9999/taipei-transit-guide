@@ -1,8 +1,7 @@
 ---
 title: Bus
-description: Taipei City and New Taipei bus network — routes, operators and garages. Not yet written.
+description: How Taipei's joint-operation bus network is numbered, coloured and paid for.
 order: 2
-status: planned
 ---
 
 Nothing here yet. This section is planned for the second version of the site,

@@ -11,6 +11,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import { getLinePageHref } from '@/lib/content'
 import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema } from '@/lib/structured-data'
@@ -59,7 +60,20 @@ export default function StationsIndexPage() {
           const line = getLine(code)
           return (
             <section key={code}>
-              <h2 className="section-heading">{line ? `${line.name} Line` : code}</h2>
+              {/* The heading names the line; it now links to it. This page
+                  lists a line's stations, so the line itself is the obvious
+                  thing to want next and it was not reachable from here. */}
+              <h2 className="section-heading">
+                {line ? (
+                  getLinePageHref(code) ? (
+                    <Link href={getLinePageHref(code)!}>{`${line.name} Line`}</Link>
+                  ) : (
+                    `${line.name} Line`
+                  )
+                ) : (
+                  code
+                )}
+              </h2>
               <ul className="station-index">
                 {stations.map((station) => (
                   <li key={station.code}>

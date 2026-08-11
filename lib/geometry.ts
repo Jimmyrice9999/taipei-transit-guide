@@ -17,6 +17,10 @@
  */
 
 import { TDX_SHAPES } from './tdx.ts'
+// Stations, so simplification can be checked against what it does to them —
+// see the note on getLineGeometry. lib/stations.ts does not import this file,
+// so there is no cycle.
+import { STATIONS } from './stations.ts'
 
 export type Point = [lon: number, lat: number]
 
@@ -227,8 +231,36 @@ export type LineGeometry = {
   lengthKm: number
 }
 
+/**
+ * ── Why the tolerance is chosen per line, not fixed at 12 m ──────────────────
+ *
+ * Douglas–Peucker guarantees that no *vertex of the original polyline* ends up
+ * more than `epsilon` from the simplified line. It guarantees nothing about a
+ * point that is not on the line — and a station is exactly that: it sits a few
+ * metres to one side of the track it belongs to.
+ *
+ * When simplification cuts a sharp corner, the perpendicular distance from a
+ * nearby station can change by far more than epsilon. Run 10 measured it on
+ * the newly-added Ankeng Light Rail, whose alignment turns hard beside K06:
+ *
+ *     tolerance 12 m  →  K06 displaced 83.7 m   (34 points)
+ *     tolerance  6 m  →  worst station  3.0 m   (48 points)
+ *     tolerance  3 m  →  worst station  1.7 m   (68 points)
+ *
+ * A cliff, not a gradient. The eight older lines are nowhere near it, which is
+ * why a fixed 12 m survived four runs unchallenged.
+ *
+ * So: ask for 12 m, then check what it actually did to the stations, and step
+ * down until the drawing is faithful. The invariant the test asserts is now
+ * produced by the code rather than hoped for, and a future line with a tighter
+ * curve cannot reintroduce the fault — it will simply be drawn with a few more
+ * points. Ankeng costs 14 extra vertices; nothing else changes at all.
+ */
+const DRAW_TOLERANCE_M = 12
+const TOLERANCE_STEPS = [12, 6, 3, 1]
+
 /** Geometry for one line, chained and simplified. Null when not published. */
-export function getLineGeometry(lineId: string, toleranceM = 12): LineGeometry | null {
+export function getLineGeometry(lineId: string, toleranceM?: number): LineGeometry | null {
   const record = shapes.find((s) => s.LineID === lineId)
   if (!record?.Geometry) return null
 
@@ -237,7 +269,29 @@ export function getLineGeometry(lineId: string, toleranceM = 12): LineGeometry |
 
   const rawPoints = segments.reduce((n, s) => n + s.length, 0)
   const chained = chainSegments(segments)
-  const paths = chained.map((path) => simplify(path, toleranceM))
+
+  /*
+   * An explicit tolerance is honoured as given — the geometry audit passes one
+   * deliberately to report what simplification costs at a chosen value.
+   */
+  const stations = STATIONS.filter((s) => s.line === lineId && s.lat !== null && s.lon !== null)
+  const worstShift = (paths: Point[][]) =>
+    stations.reduce((worst, station) => {
+      const point: Point = [station.lon!, station.lat!]
+      const shift = Math.abs(distanceToPaths(point, paths) - distanceToPaths(point, chained))
+      return Math.max(worst, shift)
+    }, 0)
+
+  let paths: Point[][]
+  if (toleranceM !== undefined) {
+    paths = chained.map((path) => simplify(path, toleranceM))
+  } else {
+    paths = chained.map((path) => simplify(path, TOLERANCE_STEPS[0]))
+    for (const step of TOLERANCE_STEPS.slice(1)) {
+      if (stations.length === 0 || worstShift(paths) <= DRAW_TOLERANCE_M) break
+      paths = chained.map((path) => simplify(path, step))
+    }
+  }
 
   let lengthKm = 0
   for (const path of chained) {

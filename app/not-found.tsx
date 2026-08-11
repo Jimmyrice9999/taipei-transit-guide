@@ -15,8 +15,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
+import BackLink from '@/components/BackLink'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { LINES_WITH_STATION_PAGES, STATIONS } from '@/lib/stations'
+import { LINES } from '@/lib/lines'
 
 export const metadata: Metadata = {
   title: 'Page not found',
@@ -28,6 +30,9 @@ export default function NotFound() {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
+      {/* The one page where an up-route matters most: a 404 is usually a
+          guessed URL, so there is no history to go back to. */}
+      <BackLink href="/" label="the home page" />
       <h1 className="page-title">Page not found</h1>
       <p className="page-summary">
         Nothing is published at this address. If you typed or guessed the URL, these are
@@ -44,7 +49,7 @@ export default function NotFound() {
           linking at all.
         </p>
         <p>
-          All {STATIONS.length} stations across the seven lines are listed on{' '}
+          All {STATIONS.length} stations across the {LINES.length} lines are listed on{' '}
           <Link href="/data/stations/">the station records page</Link>, with codes, names,
           coordinates and interchanges.
         </p>
@@ -53,13 +58,14 @@ export default function NotFound() {
         <p>
           <Link href="/rail/lines/wenhu-line/">The Wenhu Line</Link> is the only line
           written up so far. <Link href="/rail/network/">The network page</Link> covers all
-          seven with official colours, termini, lengths and interchanges.
+          {' '}{LINES.length} with official colours, termini, lengths and interchanges.
         </p>
 
         <h2 className="section-heading">If you were after buses</h2>
         <p>
-          <Link href="/bus/">The bus section</Link> exists but is empty. It says what it
-          will cover and why it does not yet.
+          <Link href="/bus/network/joint-operation/">The joint-operation network</Link> is
+          written up — how Taipei&rsquo;s bus routes are numbered, coloured and paid for.
+          The rest of <Link href="/bus/">the bus section</Link> is still being written.
         </p>
 
         <h2 className="section-heading">Everything else</h2>
@@ -68,7 +74,7 @@ export default function NotFound() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/rail/">Train</Link> — lines, rolling stock and depots
+            <Link href="/rail/">Rail</Link> — lines, rolling stock, depots and operators
           </li>
           <li>
             <Link href="/data/">Data</Link> — official line colours, station records,

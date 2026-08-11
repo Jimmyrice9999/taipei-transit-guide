@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import LineBadge from './LineBadge'
 import type { PageMeta } from '@/lib/content'
 import type { Line } from '@/lib/lines'
 import { getAccent } from '@/lib/lines'
@@ -46,19 +47,9 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
                   <th scope="col" key={page.slug}>
                     <Link href={page.href}>{page.title}</Link>
                     <span className="compare-meta">
-                      {line.code && (
-                        <span
-                          className="badge"
-                          style={
-                            {
-                              '--badge-bg': line.badgeBg,
-                              '--badge-fg': line.badgeFg,
-                            } as React.CSSProperties
-                          }
-                        >
-                          {line.code}
-                        </span>
-                      )}
+                      {/* Outside the column's own link, so this one can link
+                          to the line rather than repeat the page above it. */}
+                      {line.code && <LineBadge code={line.code} />}
                       {page.spine && <span className="compare-range">{page.spine}</span>}
                     </span>
                   </th>

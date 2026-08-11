@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 458,
-    "tbc": 26,
-    "asserted": 52,
-    "meta": 27
+    "sourced": 539,
+    "tbc": 30,
+    "asserted": 32,
+    "meta": 28
   },
   "files": [
     {
@@ -218,18 +218,18 @@
     },
     {
       "file": "content/rail/lines/bannan-line.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 17,
+      "sourced": 61,
+      "tbc": 4,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/rail/lines/circular-line.md",
       "sources": 16,
-      "sourced": 102,
+      "sourced": 121,
       "tbc": 4,
-      "asserted": 19,
+      "asserted": 0,
       "meta": 3
     },
     {
@@ -258,10 +258,10 @@
     },
     {
       "file": "content/rail/lines/tamsui-xinyi-line.md",
-      "sources": 7,
-      "sourced": 48,
+      "sources": 8,
+      "sourced": 49,
       "tbc": 6,
-      "asserted": 1,
+      "asserted": 0,
       "meta": 1
     },
     {
@@ -498,193 +498,6 @@
       "where": "prose",
       "text": "The park-and-ride car park on the site is — it is the only part of the depot a member of the public can reach.",
       "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "Y"
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Read the report carefully and the first thing to notice is what is *not* a finding.",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Milled recess, as shown on the contractor's own shop drawing | 5 mm |",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Milled recess, as measured on site by the investigation | 41 mm |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Void left above the pin | 36 mm |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Height of the pin itself | 40 mm |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| TAP026, 頂溪國小 | 224.60 gal |",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| TAP032, 積穗國小 | 206.77 gal |",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| TAP115, 安和國小 | 223.17 gal |",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Y07 Dapinglin | Songshan–Xindian Line | yes | 3 min |",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Y11 Jingan | Zhonghe–Xinlu Line | yes | 6 min |",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Y16 Banqiao | Bannan Line | no | 11 min |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Y17 Xinpu Minsheng | Bannan Line | no | 9 min |",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Y18 Touqianzhuang | Zhonghe–Xinlu Line | yes | 6 min |",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| Phase 1 (in service) | 15.4 km | 14, plus one depot |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| North ring | 14.93 km | 12, plus one underground depot |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| South ring | 5.73 km | 6, all underground, not counting Dapinglin |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "| East ring | about 13.25 km | 10, all underground, plus one underground depot |",
-      "signals": [
-        "figure",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/circular-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The registry behind this site comes from TDX, which carries only the operating section.",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/tamsui-xinyi-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "That article's only external citation was followed on 10 August 2026: it points at a TRTC page which turns out to be the old-version network",
-      "signals": [
-        "date",
-        "count",
         "superlative"
       ]
     },

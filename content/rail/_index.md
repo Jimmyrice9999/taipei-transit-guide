@@ -1,6 +1,6 @@
 ---
 title: Rail
-description: Metro, light rail, conventional rail and high speed rail around Taipei — the lines, the trains that run them, the depots that keep them running, and the history that shaped all three.
+description: Lines, trains, depots and operators across Taipei's metro and light rail.
 order: 1
 ---
 

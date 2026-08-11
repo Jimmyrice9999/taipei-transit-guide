@@ -724,6 +724,33 @@ export function getLinkEntities(): LinkEntity[] {
   return entities
 }
 
+/**
+ * Line code → the URL of that line's page, for every line that has one.
+ *
+ * Built from the `line:` frontmatter field on `content/rail/lines/*.md` — the
+ * same field that sets a page's accent colour — rather than from the slug, so
+ * a page whose file is named differently from its code still resolves.
+ *
+ * Deliberately restricted to the `lines` folder. Station and fleet pages also
+ * carry a `line:` value, and a map built from every page would resolve BR to
+ * whichever of them happened to be read last.
+ *
+ * Run 10. This exists because the network page rendered a "BR" badge that went
+ * nowhere: the site's most data-forward page listed nine lines by code, and
+ * the code was the one thing on the row that was not a link to the line.
+ */
+let linePageHrefs: Map<string, string> | null = null
+export function getLinePageHref(code: string | undefined | null): string | null {
+  if (!code) return null
+  if (!linePageHrefs) {
+    linePageHrefs = new Map()
+    for (const page of getPages('rail', 'lines')) {
+      if (page.line) linePageHrefs.set(page.line.toUpperCase(), page.href)
+    }
+  }
+  return linePageHrefs.get(code.toUpperCase()) ?? null
+}
+
 /** One page, with its Markdown body converted to HTML. */
 export async function getPage(section: string, type: string, slug: string): Promise<Page> {
   const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)

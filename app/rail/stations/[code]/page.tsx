@@ -16,7 +16,10 @@ import PageShell from '@/components/PageShell'
 import RouteMap from '@/components/RouteMap'
 import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
+import LineBadge from '@/components/LineBadge'
 import { getImage } from '@/lib/images'
+import { getLinePageHref, getPages } from '@/lib/content'
+import { getOperator } from '@/lib/operators'
 import { getLineGeometry } from '@/lib/geometry'
 import { getAccent, getLine } from '@/lib/lines'
 import { getLineStations, getStation } from '@/lib/stations'
@@ -100,6 +103,18 @@ export default async function StationPage({ params }: Props) {
   const line = getAccent(station.line)
   const heroImage = getImage(`stations/${station.code.toLowerCase()}`)
   const stations = getLineStations(station.line)
+
+  const linePageHref = getLinePageHref(station.line)
+  const operator = getOperator(station.operator)
+  /*
+   * Depot pages carry `line:` and `spine:` frontmatter — the line they serve
+   * and the station they sit beside — which is what the strip map already
+   * draws its depot marks from. Same source, so the row and the map cannot
+   * disagree.
+   */
+  const depots = getPages('rail', 'depots')
+    .filter((page) => page.line === station.line)
+    .map((page) => ({ title: page.title, href: page.href }))
   const index = stations.findIndex((s) => s.code === station.code)
   const previous = index > 0 ? stations[index - 1] : null
   const next = index < stations.length - 1 ? stations[index + 1] : null
@@ -197,16 +212,20 @@ export default async function StationPage({ params }: Props) {
 
       <div className="page-body">
         <section className="platform wide" aria-label="Station facts">
+          {/*
+            Run 10: the badge and the line name both link to the line. On a
+            station page the line is the single most likely next destination
+            and it was the one thing named here that went nowhere.
+          */}
           <header className="platform-head">
-            <span
-              className="badge"
-              style={
-                { '--badge-bg': line.badgeBg, '--badge-fg': line.badgeFg } as React.CSSProperties
-              }
-            >
-              {line.code}
+            <LineBadge code={line.code} />
+            <span className="platform-title">
+              {linePageHref ? (
+                <Link href={linePageHref}>{line.name} Line</Link>
+              ) : (
+                `${line.name} Line`
+              )}
             </span>
-            <span className="platform-title">{line.name} Line</span>
             {line.nameZh && (
               <span className="platform-zh" lang="zh-Hant">
                 {line.nameZh}
@@ -229,20 +248,19 @@ export default async function StationPage({ params }: Props) {
                     {station.interchange.map((other) => {
                       const otherLine = getLine(other)
                       if (!otherLine) return null
+                      /*
+                        These are LINE codes, not station codes — "the lines
+                        you can change to here" — so they link to line pages.
+                        They were inert pills, which on an interchange station
+                        made the most useful fact on the page a dead end.
+                      */
                       return (
-                        <span
-                          className="badge badge-mini"
+                        <LineBadge
+                          className="badge-mini"
+                          code={other}
                           key={other}
                           title={`Interchange with the ${otherLine.name} Line`}
-                          style={
-                            {
-                              '--badge-bg': otherLine.badgeBg,
-                              '--badge-fg': otherLine.badgeFg,
-                            } as React.CSSProperties
-                          }
-                        >
-                          {other}
-                        </span>
+                        />
                       )
                     })}
                   </span>
@@ -288,8 +306,42 @@ export default async function StationPage({ params }: Props) {
             </div>
             <div className="platform-fact">
               <dt>Operator</dt>
-              <dd>{station.operator}</dd>
+              <dd>
+                {operator ? (
+                  operator.href ? (
+                    <Link href={operator.href}>{operator.name}</Link>
+                  ) : (
+                    operator.name
+                  )
+                ) : (
+                  station.operator
+                )}
+              </dd>
             </div>
+            {/*
+              Depots on this line, not "the depot serving this station".
+              ────────────────────────────────────────────────────────────────
+              The tempting version is to name the nearest depot by sequence
+              distance, and it would usually be right. But which depot stables
+              and maintains a given train is an operational fact this site has
+              no source for, and a row headed "Depot" against one station name
+              reads as that claim rather than as an inference from a map. The
+              honest row is the one that can be sourced: these depots are on
+              this line. Where each sits is on the strip map already.
+            */}
+            {depots.length > 0 && (
+              <div className="platform-fact">
+                <dt>Depots on this line</dt>
+                <dd>
+                  {depots.map((depot, i) => (
+                    <span key={depot.href}>
+                      {i > 0 && ', '}
+                      <Link href={depot.href}>{depot.title}</Link>
+                    </span>
+                  ))}
+                </dd>
+              </div>
+            )}
           </dl>
 
           {/*
