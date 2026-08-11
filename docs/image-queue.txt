@@ -1,0 +1,88 @@
+# Commons fetch queue — `node scripts/fetch-commons-batch.mjs docs/image-queue.txt`
+#
+# Format: File:Exact Commons title | destination under public/images/
+# Lines whose sidecar already exists are skipped, so this file is append-only
+# and safe to re-run.
+#
+# Every entry here was chosen off the reviewed shortlist in
+# docs/commons-candidates.txt. Run 6's finding still stands and is the reason
+# the shortlist exists at all: filenames lie, and two Commons categories
+# contained wrong-subject files. The licence gate in fetch-commons.mjs refuses
+# anything outside CC0 / PD / CC BY / CC BY-SA at the door, and the image test
+# refuses again at build.
+
+# ── The ten Wenhu station pages that had no photograph ──────────────────────
+File:Taipei Zoo Station 20091017a.jpg              | stations/br01
+File:Wanfang Hospital Station 20090926.jpg         | stations/br04
+File:Dazi Station Exit1.JPG                        | stations/br14
+File:Xihu Station 20091107a.jpg                    | stations/br16
+File:Gangqian Station 20090926.JPG                 | stations/br17
+File:Neihu Station 20090926.jpg                    | stations/br19
+File:Dahu Park Station Exit1 20160523.jpg          | stations/br20
+File:Huzhou Station 20091018.jpg                   | stations/br21
+File:Taipei MRT Donghu Station 01.jpg              | stations/br22
+File:Taipei MRT Nangang Software Park Station.jpg  | stations/br23
+
+# ── Going wide, run 10 ───────────────────────────────────────────────────────
+#
+# Picked off docs/commons-candidates-wide.txt. Run 6's finding held again and
+# is worth recording, because it is the reason this list is shorter than the
+# shortlist: Commons search matches words, not subjects.
+#
+#   "Tamsui Xinyi line Taipei Metro train"  returned Meitetsu 2200 and the
+#                                           Tokyo Monorail. Japanese trains.
+#   "New Taipei Metro Corporation"          returned Bangladesh's National
+#                                           Telecommunication Monitoring
+#                                           Centre and its director general.
+#   "Taipei Rapid Transit Corporation HQ"   returned a Wenhu Line viaduct.
+#
+# All three were licence-clean and all three were the wrong subject. Nothing
+# below is here because a filename matched; every entry was read off the
+# shortlist against what the page is actually about, and looked at after
+# fetching.
+#
+# Genuinely nothing licence-clean on Commons, left unfilled rather than filled
+# wrongly: Tucheng, Nangang, Xinzhuang and Xindian depots; the Blue Highway
+# ferry; the gondola's crystal cabins; TRTC and NTMC as organisations.
+
+# Lines — exterior, interior, station, guideway
+File:Platform 2, Tamsui Station 20120430.jpg                      | tamsui-xinyi-line/hero
+File:Zhongshan Station Songshan-Xindian Line Platform 2019.jpg    | songshan-xindian-line/hero
+File:MRT Xindian Station Main Entrance.jpg                        | songshan-xindian-line/station
+File:Cross-platform interchange on the B3 platform in Guting Station.jpg | zhonghe-xinlu-line/hero
+File:Luzhou Station.JPG                                           | zhonghe-xinlu-line/station
+File:Bannan Line train at MRT Taipei Main Station 20091226.jpg    | bannan-line/hero
+File:Platform 3, MRT Taipei Main Station 20260718.jpg             | bannan-line/station
+File:TRTC Circular Line EMU train by ntpcdorts.jpg                | circular-line/hero
+File:The Interior of TRTC Circular Line EMU train by ntpcdorts.jpg | circular-line/interior
+File:Train on MRT Circular Line Meeting near Banqiao Station 01.jpg | circular-line/guideway
+File:淡海輕軌淡海新市鎮站全貌.jpeg                                   | danhai-lrt/hero
+File:Danhai New Town Station Platform 20181226.jpg                | danhai-lrt/station
+File:Ankeng light rail.jpg                                        | ankeng-lrt/hero
+File:Ankeng Light Rail Anxin Bridge 2023-09-14 01.jpg             | ankeng-lrt/guideway
+File:Taoyuan Airport MRT Train at Guishan, Taoyuan 20171220.jpg   | airport-mrt/hero
+File:Platform 3 & 4, Taipei Main Station, Taoyuan Metro 20170321.jpg | airport-mrt/station
+File:Inside Taoyuan Airport MRT Express Train.jpg                 | airport-mrt/interior
+
+# Rolling stock
+File:A Taipei Metro C301 train at Beitou Station.jpg              | c301/hero
+File:Taipei Metro C321 Train New DI.jpg                           | c321/hero
+File:C341 1201 at Ximen Station 20060531.jpg                      | c341/hero
+File:C371 on Tamsui Line 20090221.jpg                             | c371/hero
+File:A Taipei Metro C381 train approaching Fuxinggang Station.jpg | c381/hero
+
+# Depots — only the two that exist on Commons under a clean licence
+File:A Taipei Metro C301 train at Beitou Depot 01.jpg             | beitou-depot/hero
+File:蘆洲機廠DSC 5041.jpg                                          | luzhou-depot/hero
+
+# Operators — only Taoyuan has a photograph of the organisation itself
+File:Taoyuan Metro HQ entry 20131103.jpg                          | tymc/hero
+
+# Other modes
+File:Maokong Gondola regular cabins 20120609.jpg                  | gondola/hero
+File:Maokong Gondola Maokong Station overview 20151108 2.jpg      | gondola/station
+File:YouBike Bicycle Park in Zhongxin Square 20160327a.jpg        | youbike/hero
+File:YouBike 2.0E at NTPU.jpg                                     | youbike/generation-2e
+File:Taipei Bus 479-FA at Banqiao Bus Station 20090811.jpg        | bus/hero
+File:Nanjing and Dunhua Intersection (Taipei Arena) Bus Stop 20150628.jpg | bus/stop
+File:EasyCard and Taiwan Easy Go reader at TRA Songshan Station 20100608.jpg | ticketing/hero

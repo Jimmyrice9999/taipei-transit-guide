@@ -1,0 +1,56 @@
+# Subjects to search Commons for, one `label | search query` per line.
+#
+#   node scripts/commons-candidates.mjs --subjects docs/image-subjects.txt --limit=5
+#
+# Everything on the site that could carry a photograph and does not. The labels
+# double as the intended destination under public/images/, so a shortlist entry
+# can be moved into docs/image-queue.txt by hand once it has been LOOKED AT.
+# Nothing here is a licence decision — the gate is in fetch-commons.mjs.
+
+# ── Lines: exterior, interior, station, guideway ─────────────────────────────
+tamsui-xinyi-line/hero      | Tamsui Xinyi line Taipei Metro train
+tamsui-xinyi-line/station   | Tamsui Station Taipei Metro platform
+songshan-xindian-line/hero  | Songshan Xindian line Taipei Metro train
+songshan-xindian-line/stn   | Xindian Station Taipei Metro
+zhonghe-xinlu-line/hero     | Zhonghe Xinlu line Taipei Metro train
+zhonghe-xinlu-line/station  | Luzhou Station Taipei Metro
+bannan-line/hero            | Bannan line Taipei Metro train
+bannan-line/station         | Taipei Main Station Bannan line platform
+circular-line/hero          | Circular line New Taipei Metro train
+circular-line/guideway      | Circular line New Taipei Metro viaduct
+danhai-lrt/hero             | Danhai light rail Tamsui tram
+danhai-lrt/station          | Danhai light rail station
+ankeng-lrt/hero             | Ankeng light rail New Taipei
+airport-mrt/hero            | Taoyuan Airport MRT train
+airport-mrt/station         | Taipei Main Station Airport MRT
+
+# ── Rolling stock ────────────────────────────────────────────────────────────
+c301/hero                   | Taipei Metro C301 train
+c321/hero                   | Taipei Metro C321 train
+c341/hero                   | Taipei Metro C341 train
+c371/hero                   | Taipei Metro C371 train
+c381/hero                   | Taipei Metro C381 train
+
+# ── Depots ───────────────────────────────────────────────────────────────────
+beitou-depot/hero           | Beitou depot Taipei Metro
+xindian-depot/hero          | Xindian depot Taipei Metro
+tucheng-depot/hero          | Tucheng depot Taipei Metro
+nangang-depot/hero          | Nangang depot Taipei Metro
+luzhou-depot/hero           | Luzhou depot Taipei Metro
+xinzhuang-depot/hero        | Xinzhuang depot Taipei Metro
+
+# ── Operators ────────────────────────────────────────────────────────────────
+trtc/hero                   | Taipei Rapid Transit Corporation headquarters
+ntmc/hero                   | New Taipei Metro Corporation
+tymc/hero                   | Taoyuan Metro Corporation
+
+# ── Other modes ──────────────────────────────────────────────────────────────
+gondola/hero                | Maokong Gondola cabin
+gondola/crystal             | Maokong Gondola crystal cabin glass floor
+gondola/station             | Maokong Gondola station
+youbike/hero                | YouBike Taipei bicycle station
+youbike/dock                | YouBike 2.0 dock Taipei
+bus/hero                    | Taipei city bus 聯營公車
+bus/stop                    | Taipei bus stop shelter
+ferry/hero                  | Tamsui ferry Blue Highway Taipei
+ticketing/easycard          | EasyCard Taipei 悠遊卡

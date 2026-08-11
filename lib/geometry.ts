@@ -16,9 +16,7 @@
  * All of this runs at build time. Nothing here touches the network.
  */
 
-import trtcShapes from '../data/tdx/TRTC/shape.json' with { type: 'json' }
-import ntmcShapes from '../data/tdx/NTMC/shape.json' with { type: 'json' }
-import tymcShapes from '../data/tdx/TYMC/shape.json' with { type: 'json' }
+import { TDX_SHAPES } from './tdx.ts'
 
 export type Point = [lon: number, lat: number]
 
@@ -26,9 +24,7 @@ type ShapeRecord = { LineID: string; Geometry: string }
 
 /** Every operator's geometry, merged. Line codes are unique across operators. */
 const shapes: ShapeRecord[] = [
-  ...(trtcShapes as unknown as ShapeRecord[]),
-  ...(ntmcShapes as unknown as ShapeRecord[]),
-  ...(tymcShapes as unknown as ShapeRecord[]),
+  ...TDX_SHAPES<ShapeRecord>(),
 ]
 
 /* ------------------------------------------------------------------ */

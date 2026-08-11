@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
@@ -58,24 +59,23 @@ export default async function SectionPage({ params }: Props) {
     <PageShell accent={NEUTRAL_LINE}>
       <HanContentSubset />
       <Breadcrumbs trail={[{ label: meta.title }]} />
+      <BackLink href="/" label="the home page" />
       <h1 className="page-title">{meta.title}</h1>
       {meta.description && <p className="page-summary">{meta.description}</p>}
 
       {/*
-        A section that is deliberately empty says so, once, at the top — and
-        then explains itself in its own prose. The alternative was three
-        repetitions of "No pages yet.", which reads as abandonment rather than
-        as scope.
-      */}
-      {meta.status === 'planned' && (
-        <p className="note note-planned">
-          <strong>Planned for v2.</strong> Nothing in this section is written yet. What
-          follows is what it will cover and why it does not exist — stated deliberately,
-          rather than left as an empty listing.
-        </p>
-      )}
+        ── Two changes here in run 10, and the second is the important one ────
+        The "Planned for v2" banner is gone — see the long note in
+        [type]/page.tsx for the argument. An empty section is now simply not
+        in the nav (lib/nav.ts) rather than listed with an apology attached.
 
-      {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
+        And the section's prose has moved BELOW the links. It used to render
+        between the summary and the cards, which on /rail/ meant a full screen
+        of explanation before the first link — reported as having to scroll a
+        page to reach them. An index's job is to get you out of it. Whoever
+        wants the essay will still find it under the links; nobody who wanted
+        the Wenhu Line had to read it first.
+      */}
 
       {/* The network overview and the station index are generated from data
           rather than Markdown, so they have no content folder to be listed
@@ -117,8 +117,15 @@ export default async function SectionPage({ params }: Props) {
         </ul>
       )}
 
+      {/*
+        A type with no pages is not rendered at all — no heading, no "No pages
+        yet.", nothing. The heading was the whole of the problem: it announced
+        a category and then had nothing in it, which is a worse experience than
+        the category simply not being mentioned yet.
+      */}
       {types.map((type) => {
         const pages = getPages(section, type.slug)
+        if (pages.length === 0) return null
         return (
           <section key={type.slug}>
             <h2 className="section-heading">
@@ -128,41 +135,35 @@ export default async function SectionPage({ params }: Props) {
               </Link>
             </h2>
             {type.description && <p className="section-desc">{type.description}</p>}
-            {pages.length === 0 ? (
-              /* Under a planned section the notice at the top has already said
-                 this, and repeating "No pages yet." once per type is what made
-                 the section read as neglected rather than deliberate. */
-              meta.status === 'planned' ? null : (
-                <p className="empty">No pages yet.</p>
-              )
-            ) : (
-              <ul className="card-list">
-                {pages.map((page) => (
-                  <li key={page.slug}>
-                    <Link href={page.href}>
-                      <span>
-                        <span className="card-title">
-                          <RichText>{page.title}</RichText>
-                        </span>
-                        {page.summary && (
-                          <span className="card-desc">
-                            <RichText>{page.summary}</RichText>
-                          </span>
-                        )}
+            <ul className="card-list">
+              {pages.map((page) => (
+                <li key={page.slug}>
+                  <Link href={page.href}>
+                    <span>
+                      <span className="card-title">
+                        <RichText>{page.title}</RichText>
                       </span>
-                      <span className="card-meta">
-                        <span className="card-arrow" aria-hidden="true">
-                          →
+                      {page.summary && (
+                        <span className="card-desc">
+                          <RichText>{page.summary}</RichText>
                         </span>
+                      )}
+                    </span>
+                    <span className="card-meta">
+                      <span className="card-arrow" aria-hidden="true">
+                        →
                       </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
         )
       })}
+
+      {/* The section's own prose, below the links. See the note above. */}
+      {body && <div className="prose section-essay" dangerouslySetInnerHTML={{ __html: body }} />}
     </PageShell>
   )
 }

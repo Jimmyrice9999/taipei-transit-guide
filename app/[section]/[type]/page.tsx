@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import ComparisonTable from '@/components/ComparisonTable'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
@@ -61,88 +62,68 @@ export default async function TypeIndexPage({ params }: Props) {
    */
   const withSpecs = pages.filter((p) => p.specs.length > 0)
 
-  /*
-   * The index's own header, computed from the tree rather than written down.
-   *
-   * Content pages have photographs and these do not, so run 6 left them
-   * noticeably barer — and the honest fix is not to borrow a child page's
-   * photograph, which would decorate a parent with a picture of one of its
-   * children and push the links below the fold on a phone. It is to say
-   * something true in the space: how many of these exist, and how many are
-   * actually written. The second number is uncomfortable and computed, which
-   * is the only reason it is worth printing.
-   */
-  const written = pages.filter((p) => p.specs.length > 0 || p.facts.length >= 6).length
-
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <HanContentSubset />
       <Breadcrumbs trail={[{ label: sectionMeta.title, href: sectionMeta.href }, { label: typeMeta.title }]} />
+      <BackLink href={sectionMeta.href} label={sectionMeta.title} />
       <h1 className="page-title">{typeMeta.title}</h1>
       {typeMeta.description && <p className="page-summary">{typeMeta.description}</p>}
 
-      {typeMeta.status === 'planned' && (
-        <p className="note note-planned">
-          <strong>Planned for v2.</strong> Nothing here is written yet.
-        </p>
-      )}
+      {/*
+        Run 10 removed three things from this page, and they were all the same
+        thing: an announcement of absence.
+        ────────────────────────────────────────────────────────────────────
+        A "Planned for v2" banner, a tally reading "N scope statements", and
+        "No pages yet." Each was written as honesty about scope, and the
+        argument for them is in run 1 §3 and it was a decent argument. On a
+        live site it does not survive contact with a reader: what it actually
+        says is that the section was started and abandoned. Nobody arrives at
+        /bus/models/ wanting to know how many pages are missing.
 
-      {pages.length > 1 && (
-        <div className="index-tally">
-          <span>
-            <b>{pages.length}</b> {pages.length === 1 ? 'page' : 'pages'}
-          </span>
-          <span>
-            <b>{written}</b> written up
-          </span>
-          <span>
-            <b>{pages.length - written}</b> scope {pages.length - written === 1 ? 'statement' : 'statements'}
-          </span>
-        </div>
-      )}
+        The discipline it was expressing has not been dropped — it has moved
+        to where it belongs. TBC still marks an unsourced figure, the claims
+        ratchet still counts unsourced assertions, and /about still states the
+        site's scope in prose. Those are claims about *facts*, which is where
+        this project's honesty is load-bearing. A counter of unwritten pages
+        was only ever a claim about effort.
 
+        Empty types are now dropped from the nav entirely (lib/nav.ts) rather
+        than listed and apologised for.
+      */}
       {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
 
-      {pages.length === 0 ? (
-        typeMeta.status === 'planned' ? null : (
-          <p className="empty">No pages yet.</p>
-        )
-      ) : (
+      {pages.length === 0 ? null : (
         <ul className="card-list">
-          {pages.map((page) => {
-            const isWritten = page.specs.length > 0 || page.facts.length >= 6
-            return (
-              <li key={page.slug}>
-                <Link href={page.href}>
-                  <span>
-                    <span className="card-title">
-                      <RichText>{page.title}</RichText>
-                    </span>
-                    {page.summary && (
-                      <span className="card-desc">
-                        <RichText>{page.summary}</RichText>
-                      </span>
-                    )}
+          {/*
+            The per-card "scope statement" / "full page" chip was removed in
+            run 10 with the tally above it, for the same reason: on a live site
+            a label that says "this one is not really written" is not candour,
+            it is a warning against clicking. Run 7 argued it should be a word
+            rather than a progress bar so as not to read as a score — right
+            about the bar, wrong that the word was needed at all.
+          */}
+          {pages.map((page) => (
+            <li key={page.slug}>
+              <Link href={page.href}>
+                <span>
+                  <span className="card-title">
+                    <RichText>{page.title}</RichText>
                   </span>
-                  <span className="card-meta">
-                    {/*
-                      A word, not a progress bar. A bar would turn a status into
-                      a score and imply a scope statement is a fraction of a
-                      page. It is not a partial page; it is a different and
-                      complete thing, and the site argued that properly when it
-                      wrote them.
-                    */}
-                    <span className="card-status" data-written={isWritten ? '' : undefined}>
-                      {isWritten ? 'full page' : 'scope statement'}
+                  {page.summary && (
+                    <span className="card-desc">
+                      <RichText>{page.summary}</RichText>
                     </span>
-                    <span className="card-arrow" aria-hidden="true">
-                      →
-                    </span>
+                  )}
+                </span>
+                <span className="card-meta">
+                  <span className="card-arrow" aria-hidden="true">
+                    →
                   </span>
-                </Link>
-              </li>
-            )
-          })}
+                </span>
+              </Link>
+            </li>
+          ))}
         </ul>
       )}
 

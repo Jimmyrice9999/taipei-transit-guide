@@ -10,6 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import Figure from '@/components/Figure'
 import PageShell from '@/components/PageShell'
 import RouteMap from '@/components/RouteMap'
@@ -145,6 +146,8 @@ export default async function StationPage({ params }: Props) {
           { label: `${station.code} ${station.name}` },
         ]}
       />
+
+      <BackLink href="/rail/lines/wenhu-line/" label="the Wenhu Line" />
 
       {/*
         The code at platform-sign scale.

@@ -14,6 +14,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 import { LINES } from '@/lib/lines'
@@ -36,6 +37,7 @@ export default function AboutPage() {
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ label: 'About' }]} />
+      <BackLink href="/" label="the home page" />
       <h1 className="page-title">About</h1>
       <p className="page-summary">
         An English-language reference for public transport in Taipei, written because

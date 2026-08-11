@@ -45,6 +45,11 @@ const LINE_SOURCES = [
   { prefix: 'BL', operator: 'TRTC' },
   { prefix: 'Y', operator: 'NTMC' },
   { prefix: 'A', operator: 'TYMC' },
+  // Run 10. TDX files New Taipei's light rail under its own operator codes
+  // rather than under NTMC, which is why these two were missing from the site
+  // entirely — see the note on OPERATORS in scripts/fetch-tdx.mjs.
+  { prefix: 'V', operator: 'NTDLRT' },
+  { prefix: 'K', operator: 'NTALRT' },
 ] as const
 
 /** The line the hand-transcribed seed covers, and so the only one to reconcile. */

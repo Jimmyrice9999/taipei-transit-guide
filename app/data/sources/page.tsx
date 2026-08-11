@@ -13,6 +13,7 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import RichText from '@/components/RichText'
 import { getAllSources } from '@/lib/content'
@@ -65,6 +66,7 @@ export default async function SourcesPage() {
       />
 
       <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Bibliography' }]} />
+      <BackLink href="/data/" label="Data" />
 
       <h1 className="page-title">Bibliography</h1>
       <p className="page-summary">

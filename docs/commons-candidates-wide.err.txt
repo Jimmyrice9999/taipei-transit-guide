@@ -1,0 +1,20 @@
+﻿node : 38 subject(s) to search.
+At line:1 char:302
++ ... tch {} } }; node scripts/commons-candidates.mjs --subjects 
+docs/image ...
++                 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (38 subject(s) to search. 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+(node:32932) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of fi
+le:///C:/Users/jamie/OneDrive/Documents/projects/taipei-transit-guide/
+lib/stations.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This 
+incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\C:\Users\jamie\
+OneDrive\Documents\projects\taipei-transit-guide\package.json.
+(Use `node --trace-warnings ...` to show where the warning was 
+created)

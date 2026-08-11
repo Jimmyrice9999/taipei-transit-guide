@@ -38,9 +38,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-import trtcStationOfRoute from '../data/tdx/TRTC/station-of-route.json' with { type: 'json' }
-import ntmcStationOfRoute from '../data/tdx/NTMC/station-of-route.json' with { type: 'json' }
-import tymcStationOfRoute from '../data/tdx/TYMC/station-of-route.json' with { type: 'json' }
+import { TDX_STATION_OF_ROUTE } from './tdx.ts'
 
 type StationOfRouteRow = {
   LineID: string
@@ -55,9 +53,7 @@ type StationOfRouteRow = {
 }
 
 const rows: StationOfRouteRow[] = [
-  ...(trtcStationOfRoute as unknown as StationOfRouteRow[]),
-  ...(ntmcStationOfRoute as unknown as StationOfRouteRow[]),
-  ...(tymcStationOfRoute as unknown as StationOfRouteRow[]),
+  ...TDX_STATION_OF_ROUTE<StationOfRouteRow>(),
 ]
 
 export type Route = {

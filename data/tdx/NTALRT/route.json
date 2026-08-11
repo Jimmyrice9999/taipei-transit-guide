@@ -1,0 +1,126 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "K09",
+    "EndStationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "LineID": "K",
+    "LineNo": "K",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "K-1",
+    "RouteLength": 7.5,
+    "RouteName": {
+      "En": "Shuangcheng - Shisizhang",
+      "Zh_tw": "雙城－十四張"
+    },
+    "SrcUpdateTime": "2024-01-12T18:00:00+08:00",
+    "StartStationID": "K01",
+    "StartStationName": {
+      "En": "Shuangcheng",
+      "Ja": "双城",
+      "Ko": "솽청",
+      "Zh_tw": "雙城"
+    },
+    "TravelTime": 21,
+    "UpdateTime": "2024-01-16T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "K01",
+    "EndStationName": {
+      "En": "Shuangcheng",
+      "Ja": "双城",
+      "Ko": "솽청",
+      "Zh_tw": "雙城"
+    },
+    "LineID": "K",
+    "LineNo": "K",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "K-1",
+    "RouteLength": 7.5,
+    "RouteName": {
+      "En": "Shisizhang - Shuangcheng",
+      "Zh_tw": "十四張－雙城"
+    },
+    "SrcUpdateTime": "2024-01-12T18:00:00+08:00",
+    "StartStationID": "K09",
+    "StartStationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "TravelTime": 21,
+    "UpdateTime": "2024-01-16T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "K09",
+    "EndStationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "LineID": "K",
+    "LineNo": "K",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "K-2",
+    "RouteLength": 4.3,
+    "RouteName": {
+      "En": "Ankang - Shisizhang",
+      "Zh_tw": "安康－十四張"
+    },
+    "SrcUpdateTime": "2024-01-12T18:00:00+08:00",
+    "StartStationID": "K06",
+    "StartStationName": {
+      "En": "Ankang",
+      "Ja": "安康",
+      "Ko": "안캉",
+      "Zh_tw": "安康"
+    },
+    "TravelTime": 9,
+    "UpdateTime": "2024-01-16T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "K06",
+    "EndStationName": {
+      "En": "Ankang",
+      "Ja": "安康",
+      "Ko": "안캉",
+      "Zh_tw": "安康"
+    },
+    "LineID": "K",
+    "LineNo": "K",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "K-2",
+    "RouteLength": 4.3,
+    "RouteName": {
+      "En": "Shisizhang - Ankang",
+      "Zh_tw": "十四張－安康"
+    },
+    "SrcUpdateTime": "2024-01-12T18:00:00+08:00",
+    "StartStationID": "K09",
+    "StartStationName": {
+      "En": "Shisizhang",
+      "Ja": "十四張",
+      "Ko": "스쓰장",
+      "Zh_tw": "十四張"
+    },
+    "TravelTime": 9,
+    "UpdateTime": "2024-01-16T00:00:00+08:00",
+    "VersionID": 2
+  }
+]

@@ -10,6 +10,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import { NEUTRAL_LINE, LINES } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 
@@ -27,6 +28,7 @@ export default function DataPage() {
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ label: 'Data' }]} />
+      <BackLink href="/" label="the home page" />
       <h1 className="page-title">Data</h1>
 
       <div className="page-body">

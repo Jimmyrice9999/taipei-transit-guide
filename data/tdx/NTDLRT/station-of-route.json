@@ -1,0 +1,568 @@
+[
+  {
+    "Direction": 0,
+    "LineID": "V",
+    "LineNo": "V",
+    "RouteID": "V-1",
+    "RouteName": {
+      "En": "HongShulin - Kanding",
+      "Zh_tw": "紅樹林－崁頂"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "V01",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      },
+      {
+        "CumulativeDistance": 0.84,
+        "Sequence": 2,
+        "StationID": "V02",
+        "StationName": {
+          "En": "Ganzhenlin",
+          "Ja": "竿蓁林",
+          "Ko": "간전린",
+          "Zh_tw": "竿蓁林"
+        }
+      },
+      {
+        "CumulativeDistance": 1.77,
+        "Sequence": 3,
+        "StationID": "V03",
+        "StationName": {
+          "En": "Danjin Denggong",
+          "Ja": "淡金鄧公",
+          "Ko": "단진덩궁",
+          "Zh_tw": "淡金鄧公"
+        }
+      },
+      {
+        "CumulativeDistance": 2.75,
+        "Sequence": 4,
+        "StationID": "V04",
+        "StationName": {
+          "En": "Tamkang University",
+          "Ja": "淡江大学",
+          "Ko": "담강대학",
+          "Zh_tw": "淡江大學"
+        }
+      },
+      {
+        "CumulativeDistance": 3.33,
+        "Sequence": 5,
+        "StationID": "V05",
+        "StationName": {
+          "En": "Danjin Beixin",
+          "Ja": "淡金北新",
+          "Ko": "단진베이신",
+          "Zh_tw": "淡金北新"
+        }
+      },
+      {
+        "CumulativeDistance": 3.84,
+        "Sequence": 6,
+        "StationID": "V06",
+        "StationName": {
+          "En": "Xinshi 1st Rd.",
+          "Ja": "新市一路",
+          "Ko": "신스이루",
+          "Zh_tw": "新市一路"
+        }
+      },
+      {
+        "CumulativeDistance": 4.69,
+        "Sequence": 7,
+        "StationID": "V07",
+        "StationName": {
+          "En": "Tamsui District Office",
+          "Ja": "淡水行政中心",
+          "Ko": "단수이 행정센터",
+          "Zh_tw": "淡水行政中心"
+        }
+      },
+      {
+        "CumulativeDistance": 5.41,
+        "Sequence": 8,
+        "StationID": "V08",
+        "StationName": {
+          "En": "Binhai Yishan",
+          "Ja": "浜海義山",
+          "Ko": "빈하이이산",
+          "Zh_tw": "濱海義山"
+        }
+      },
+      {
+        "CumulativeDistance": 6,
+        "Sequence": 9,
+        "StationID": "V09",
+        "StationName": {
+          "En": "Binhai Shalun",
+          "Ja": "浜海沙崙",
+          "Ko": "빈하이사룬",
+          "Zh_tw": "濱海沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 6.64,
+        "Sequence": 10,
+        "StationID": "V10",
+        "StationName": {
+          "En": "Danhai New Town",
+          "Ja": "淡海新市鎮",
+          "Ko": "단하이 뉴타운",
+          "Zh_tw": "淡海新市鎮"
+        }
+      },
+      {
+        "CumulativeDistance": 7.27,
+        "Sequence": 11,
+        "StationID": "V11",
+        "StationName": {
+          "En": "Kanding",
+          "Ja": "崁頂",
+          "Ko": "칸딩",
+          "Zh_tw": "崁頂"
+        }
+      }
+    ],
+    "UpdateTime": "2021-01-18T07:20:06+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "V",
+    "LineNo": "V",
+    "RouteID": "V-1",
+    "RouteName": {
+      "En": "Kanding - HongShulin",
+      "Zh_tw": "崁頂－紅樹林"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "V11",
+        "StationName": {
+          "En": "Kanding",
+          "Ja": "崁頂",
+          "Ko": "칸딩",
+          "Zh_tw": "崁頂"
+        }
+      },
+      {
+        "CumulativeDistance": 0.63,
+        "Sequence": 2,
+        "StationID": "V10",
+        "StationName": {
+          "En": "Danhai New Town",
+          "Ja": "淡海新市鎮",
+          "Ko": "단하이 뉴타운",
+          "Zh_tw": "淡海新市鎮"
+        }
+      },
+      {
+        "CumulativeDistance": 1.27,
+        "Sequence": 3,
+        "StationID": "V09",
+        "StationName": {
+          "En": "Binhai Shalun",
+          "Ja": "浜海沙崙",
+          "Ko": "빈하이사룬",
+          "Zh_tw": "濱海沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 1.86,
+        "Sequence": 4,
+        "StationID": "V08",
+        "StationName": {
+          "En": "Binhai Yishan",
+          "Ja": "浜海義山",
+          "Ko": "빈하이이산",
+          "Zh_tw": "濱海義山"
+        }
+      },
+      {
+        "CumulativeDistance": 2.58,
+        "Sequence": 5,
+        "StationID": "V07",
+        "StationName": {
+          "En": "Tamsui District Office",
+          "Ja": "淡水行政中心",
+          "Ko": "단수이 행정센터",
+          "Zh_tw": "淡水行政中心"
+        }
+      },
+      {
+        "CumulativeDistance": 3.43,
+        "Sequence": 6,
+        "StationID": "V06",
+        "StationName": {
+          "En": "Xinshi 1st Rd.",
+          "Ja": "新市一路",
+          "Ko": "신스이루",
+          "Zh_tw": "新市一路"
+        }
+      },
+      {
+        "CumulativeDistance": 3.94,
+        "Sequence": 7,
+        "StationID": "V05",
+        "StationName": {
+          "En": "Danjin Beixin",
+          "Ja": "淡金北新",
+          "Ko": "단진베이신",
+          "Zh_tw": "淡金北新"
+        }
+      },
+      {
+        "CumulativeDistance": 4.52,
+        "Sequence": 8,
+        "StationID": "V04",
+        "StationName": {
+          "En": "Tamkang University",
+          "Ja": "淡江大学",
+          "Ko": "담강대학",
+          "Zh_tw": "淡江大學"
+        }
+      },
+      {
+        "CumulativeDistance": 5.5,
+        "Sequence": 9,
+        "StationID": "V03",
+        "StationName": {
+          "En": "Danjin Denggong",
+          "Ja": "淡金鄧公",
+          "Ko": "단진덩궁",
+          "Zh_tw": "淡金鄧公"
+        }
+      },
+      {
+        "CumulativeDistance": 6.43,
+        "Sequence": 10,
+        "StationID": "V02",
+        "StationName": {
+          "En": "Ganzhenlin",
+          "Ja": "竿蓁林",
+          "Ko": "간전린",
+          "Zh_tw": "竿蓁林"
+        }
+      },
+      {
+        "CumulativeDistance": 7.27,
+        "Sequence": 11,
+        "StationID": "V01",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      }
+    ],
+    "UpdateTime": "2021-01-18T07:20:06+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "LineID": "V",
+    "LineNo": "V",
+    "RouteID": "V-2",
+    "RouteName": {
+      "En": "HongShulin - Tamsui Fisherman's Wharf",
+      "Zh_tw": "紅樹林－淡水漁人碼頭"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "V01",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      },
+      {
+        "CumulativeDistance": 0.84,
+        "Sequence": 2,
+        "StationID": "V02",
+        "StationName": {
+          "En": "Ganzhenlin",
+          "Ja": "竿蓁林",
+          "Ko": "간전린",
+          "Zh_tw": "竿蓁林"
+        }
+      },
+      {
+        "CumulativeDistance": 1.77,
+        "Sequence": 3,
+        "StationID": "V03",
+        "StationName": {
+          "En": "Danjin Denggong",
+          "Ja": "淡金鄧公",
+          "Ko": "단진덩궁",
+          "Zh_tw": "淡金鄧公"
+        }
+      },
+      {
+        "CumulativeDistance": 2.75,
+        "Sequence": 4,
+        "StationID": "V04",
+        "StationName": {
+          "En": "Tamkang University",
+          "Ja": "淡江大学",
+          "Ko": "담강대학",
+          "Zh_tw": "淡江大學"
+        }
+      },
+      {
+        "CumulativeDistance": 3.33,
+        "Sequence": 5,
+        "StationID": "V05",
+        "StationName": {
+          "En": "Danjin Beixin",
+          "Ja": "淡金北新",
+          "Ko": "단진베이신",
+          "Zh_tw": "淡金北新"
+        }
+      },
+      {
+        "CumulativeDistance": 3.84,
+        "Sequence": 6,
+        "StationID": "V06",
+        "StationName": {
+          "En": "Xinshi 1st Rd.",
+          "Ja": "新市一路",
+          "Ko": "신스이루",
+          "Zh_tw": "新市一路"
+        }
+      },
+      {
+        "CumulativeDistance": 4.69,
+        "Sequence": 7,
+        "StationID": "V07",
+        "StationName": {
+          "En": "Tamsui District Office",
+          "Ja": "淡水行政中心",
+          "Ko": "단수이 행정센터",
+          "Zh_tw": "淡水行政中心"
+        }
+      },
+      {
+        "CumulativeDistance": 5.41,
+        "Sequence": 8,
+        "StationID": "V08",
+        "StationName": {
+          "En": "Binhai Yishan",
+          "Ja": "浜海義山",
+          "Ko": "빈하이이산",
+          "Zh_tw": "濱海義山"
+        }
+      },
+      {
+        "CumulativeDistance": 6,
+        "Sequence": 9,
+        "StationID": "V09",
+        "StationName": {
+          "En": "Binhai Shalun",
+          "Ja": "浜海沙崙",
+          "Ko": "빈하이사룬",
+          "Zh_tw": "濱海沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 6.49,
+        "Sequence": 10,
+        "StationID": "V28",
+        "StationName": {
+          "En": "Taipei University of Marine Technology",
+          "Ja": "台北海洋大学",
+          "Ko": "타이베이해양대학",
+          "Zh_tw": "台北海洋大學"
+        }
+      },
+      {
+        "CumulativeDistance": 7.61,
+        "Sequence": 11,
+        "StationID": "V27",
+        "StationName": {
+          "En": "Shalun",
+          "Ja": "沙崙",
+          "Ko": "사룬",
+          "Zh_tw": "沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 8.42,
+        "Sequence": 12,
+        "StationID": "V26",
+        "StationName": {
+          "En": "Tamsui Fisherman's Wharf",
+          "Ja": "淡水漁人碼頭",
+          "Ko": "단수이 위런마터우",
+          "Zh_tw": "淡水漁人碼頭"
+        }
+      }
+    ],
+    "UpdateTime": "2021-01-18T07:20:06+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "LineID": "V",
+    "LineNo": "V",
+    "RouteID": "V-2",
+    "RouteName": {
+      "En": "Tamsui Fisherman's Wharf - HongShulin",
+      "Zh_tw": "淡水漁人碼頭－紅樹林"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "Stations": [
+      {
+        "CumulativeDistance": 0,
+        "Sequence": 1,
+        "StationID": "V26",
+        "StationName": {
+          "En": "Tamsui Fisherman's Wharf",
+          "Ja": "淡水漁人碼頭",
+          "Ko": "단수이 위런마터우",
+          "Zh_tw": "淡水漁人碼頭"
+        }
+      },
+      {
+        "CumulativeDistance": 0.81,
+        "Sequence": 2,
+        "StationID": "V27",
+        "StationName": {
+          "En": "Shalun",
+          "Ja": "沙崙",
+          "Ko": "사룬",
+          "Zh_tw": "沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 1.93,
+        "Sequence": 3,
+        "StationID": "V28",
+        "StationName": {
+          "En": "Taipei University of Marine Technology",
+          "Ja": "台北海洋大学",
+          "Ko": "타이베이해양대학",
+          "Zh_tw": "台北海洋大學"
+        }
+      },
+      {
+        "CumulativeDistance": 2.42,
+        "Sequence": 4,
+        "StationID": "V09",
+        "StationName": {
+          "En": "Binhai Shalun",
+          "Ja": "浜海沙崙",
+          "Ko": "빈하이사룬",
+          "Zh_tw": "濱海沙崙"
+        }
+      },
+      {
+        "CumulativeDistance": 3.01,
+        "Sequence": 5,
+        "StationID": "V08",
+        "StationName": {
+          "En": "Binhai Yishan",
+          "Ja": "浜海義山",
+          "Ko": "빈하이이산",
+          "Zh_tw": "濱海義山"
+        }
+      },
+      {
+        "CumulativeDistance": 3.73,
+        "Sequence": 6,
+        "StationID": "V07",
+        "StationName": {
+          "En": "Tamsui District Office",
+          "Ja": "淡水行政中心",
+          "Ko": "단수이 행정센터",
+          "Zh_tw": "淡水行政中心"
+        }
+      },
+      {
+        "CumulativeDistance": 4.58,
+        "Sequence": 7,
+        "StationID": "V06",
+        "StationName": {
+          "En": "Xinshi 1st Rd.",
+          "Ja": "新市一路",
+          "Ko": "신스이루",
+          "Zh_tw": "新市一路"
+        }
+      },
+      {
+        "CumulativeDistance": 5.09,
+        "Sequence": 8,
+        "StationID": "V05",
+        "StationName": {
+          "En": "Danjin Beixin",
+          "Ja": "淡金北新",
+          "Ko": "단진베이신",
+          "Zh_tw": "淡金北新"
+        }
+      },
+      {
+        "CumulativeDistance": 5.67,
+        "Sequence": 9,
+        "StationID": "V04",
+        "StationName": {
+          "En": "Tamkang University",
+          "Ja": "淡江大学",
+          "Ko": "담강대학",
+          "Zh_tw": "淡江大學"
+        }
+      },
+      {
+        "CumulativeDistance": 6.65,
+        "Sequence": 10,
+        "StationID": "V03",
+        "StationName": {
+          "En": "Danjin Denggong",
+          "Ja": "淡金鄧公",
+          "Ko": "단진덩궁",
+          "Zh_tw": "淡金鄧公"
+        }
+      },
+      {
+        "CumulativeDistance": 7.58,
+        "Sequence": 11,
+        "StationID": "V02",
+        "StationName": {
+          "En": "Ganzhenlin",
+          "Ja": "竿蓁林",
+          "Ko": "간전린",
+          "Zh_tw": "竿蓁林"
+        }
+      },
+      {
+        "CumulativeDistance": 8.42,
+        "Sequence": 12,
+        "StationID": "V01",
+        "StationName": {
+          "En": "Hongshulin",
+          "Ja": "紅樹林",
+          "Ko": "훙수린",
+          "Zh_tw": "紅樹林"
+        }
+      }
+    ],
+    "UpdateTime": "2021-01-18T07:20:06+08:00",
+    "VersionID": 2
+  }
+]

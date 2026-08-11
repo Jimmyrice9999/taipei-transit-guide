@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Zilla_Slab, Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteNav from '@/components/SiteNav'
-import { getSections } from '@/lib/content'
+import { getNavTree } from '@/lib/nav'
 import { PROVENANCE } from '@/lib/stations'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
 import JsonLd from '@/components/JsonLd'
@@ -210,7 +210,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   // Read at build time, so the nav always matches the /content folder.
-  const sections = getSections()
+  const navTree = getNavTree()
 
   return (
     /*
@@ -238,13 +238,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
             </Link>
             {/* Data is an explicit nav item, not a content folder: it is
-                generated from the TDX records rather than written in Markdown. */}
-            <SiteNav
-              items={[
-                ...sections.map((s) => ({ href: s.href, title: s.title })),
-                { href: '/data/', title: 'Data' },
-              ]}
-            />
+                generated from the TDX records rather than written in Markdown,
+                so it has no submenu and is passed separately. */}
+            <SiteNav sections={navTree} extra={[{ href: '/data/', title: 'Data' }]} />
           </div>
         </header>
 

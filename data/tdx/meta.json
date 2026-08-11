@@ -10,9 +10,228 @@
     "station": "station codes, Chinese/English/Japanese/Korean names, coordinates, address",
     "station-of-route": "station sequence per route — what orders BR01 to BR24"
   },
-  "fetchedAt": "2026-08-05T09:38:28.743Z",
+  "fetchedAt": "2026-08-10T13:36:24.570Z",
   "licence": "Government open data — see https://data.gov.tw/licenses",
   "operators": {
+    "NTALRT": {
+      "datasets": {
+        "first-last-timetable": {
+          "records": 0,
+          "status": 404
+        },
+        "line": {
+          "fields": [
+            "IsBranch",
+            "LineColor",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "LineSectionName",
+            "SrcUpdateTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": "2023-06-30",
+          "srcUpdatedOldest": "2023-06-30",
+          "status": 200
+        },
+        "line-transfer": {
+          "records": 0,
+          "status": 404
+        },
+        "route": {
+          "fields": [
+            "Direction",
+            "EndStationID",
+            "EndStationName",
+            "LineID",
+            "LineNo",
+            "OperatorCode",
+            "RailRouteType",
+            "RouteID",
+            "RouteLength",
+            "RouteName",
+            "SrcUpdateTime",
+            "StartStationID",
+            "StartStationName",
+            "TravelTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2024-01-12",
+          "srcUpdatedOldest": "2024-01-12",
+          "status": 200
+        },
+        "s2s-travel-time": {
+          "records": 0,
+          "status": 404
+        },
+        "shape": {
+          "fields": [
+            "EncodedPolyline",
+            "Geometry",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "UpdateTime"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": null,
+          "srcUpdatedOldest": null,
+          "status": 200
+        },
+        "station": {
+          "fields": [
+            "BikeAllowOnHoliday",
+            "LocationCity",
+            "LocationCityCode",
+            "LocationTown",
+            "LocationTownCode",
+            "SrcUpdateTime",
+            "StationID",
+            "StationName",
+            "StationPosition",
+            "StationUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 9,
+          "srcUpdatedNewest": "2023-06-30",
+          "srcUpdatedOldest": "2023-06-30",
+          "status": 200
+        },
+        "station-of-route": {
+          "fields": [
+            "Direction",
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "RouteName",
+            "SrcUpdateTime",
+            "Stations",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2024-01-12",
+          "srcUpdatedOldest": "2024-01-12",
+          "status": 200
+        }
+      },
+      "name": "New Taipei Metro — Ankeng Light Rail"
+    },
+    "NTDLRT": {
+      "datasets": {
+        "first-last-timetable": {
+          "records": 0,
+          "status": 404
+        },
+        "line": {
+          "fields": [
+            "IsBranch",
+            "LineColor",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "LineSectionName",
+            "SrcUpdateTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": "2020-12-30",
+          "srcUpdatedOldest": "2020-12-30",
+          "status": 200
+        },
+        "line-transfer": {
+          "records": 0,
+          "status": 404
+        },
+        "route": {
+          "fields": [
+            "Direction",
+            "EndStationID",
+            "EndStationName",
+            "LineID",
+            "LineNo",
+            "OperatorCode",
+            "RailRouteType",
+            "RouteID",
+            "RouteLength",
+            "RouteName",
+            "SrcUpdateTime",
+            "StartStationID",
+            "StartStationName",
+            "TravelTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2020-12-30",
+          "srcUpdatedOldest": "2020-12-30",
+          "status": 200
+        },
+        "s2s-travel-time": {
+          "records": 0,
+          "status": 404
+        },
+        "shape": {
+          "fields": [
+            "EncodedPolyline",
+            "Geometry",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "UpdateTime"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": null,
+          "srcUpdatedOldest": null,
+          "status": 200
+        },
+        "station": {
+          "fields": [
+            "BikeAllowOnHoliday",
+            "LocationCity",
+            "LocationCityCode",
+            "LocationTown",
+            "LocationTownCode",
+            "SrcUpdateTime",
+            "StationAddress",
+            "StationID",
+            "StationName",
+            "StationPosition",
+            "StationUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 14,
+          "srcUpdatedNewest": "2023-10-12",
+          "srcUpdatedOldest": "2023-10-12",
+          "status": 200
+        },
+        "station-of-route": {
+          "fields": [
+            "Direction",
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "RouteName",
+            "SrcUpdateTime",
+            "Stations",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2020-12-30",
+          "srcUpdatedOldest": "2020-12-30",
+          "status": 200
+        }
+      },
+      "name": "New Taipei Metro — Danhai Light Rail"
+    },
     "NTMC": {
       "datasets": {
         "first-last-timetable": {
@@ -476,6 +695,14 @@
       },
       "name": "Taoyuan Metro"
     }
+  },
+  "partialFetch": {
+    "at": "2026-08-10T13:36:24.570Z",
+    "note": "Only these operators were refetched; the others carry their earlier fetch record.",
+    "operators": [
+      "NTDLRT",
+      "NTALRT"
+    ]
   },
   "source": "Taiwan MOTC TDX (Transport Data eXchange)",
   "sourceUrl": "https://tdx.transportdata.tw/"

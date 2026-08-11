@@ -11,6 +11,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import CiteMark from '@/components/CiteMark'
 import ElevationProfile from '@/components/ElevationProfile'
 import HanContentSubset from '@/components/HanContentSubset'
@@ -347,6 +348,8 @@ export default async function ContentPage({ params }: Props) {
           { label: page.title },
         ]}
       />
+
+      <BackLink href={typeMeta.href} label={typeMeta.title} />
 
       <article>
         {/* The eyebrow that sat here said "Line · Wenhu Line" above an <h1>

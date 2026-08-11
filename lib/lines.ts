@@ -28,6 +28,10 @@ import { AA_DERIVE, NEAR_BLACK, WHITE, contrast, darkenUntil, readableOn } from 
 import trtcLines from '../data/tdx/TRTC/line.json' with { type: 'json' }
 import ntmcLines from '../data/tdx/NTMC/line.json' with { type: 'json' }
 import tymcLines from '../data/tdx/TYMC/line.json' with { type: 'json' }
+// TDX files New Taipei's two light rail lines under their own operator codes,
+// not under NTMC — see the note on OPERATORS in scripts/fetch-tdx.mjs.
+import ntdlrtLines from '../data/tdx/NTDLRT/line.json' with { type: 'json' }
+import ntalrtLines from '../data/tdx/NTALRT/line.json' with { type: 'json' }
 
 type TdxLine = {
   LineID: string
@@ -42,6 +46,8 @@ for (const [operator, records] of [
   ['TRTC', trtcLines],
   ['NTMC', ntmcLines],
   ['TYMC', tymcLines],
+  ['NTDLRT', ntdlrtLines],
+  ['NTALRT', ntalrtLines],
 ] as const) {
   for (const record of records as unknown as TdxLine[]) {
     if (record?.LineID && record?.LineColor) {
@@ -57,7 +63,24 @@ for (const [operator, records] of [
  * operator to the fetch does not silently change the palette. A code here with
  * no source record throws at build — better than rendering a colourless badge.
  */
-const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'A'] as const
+const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'A', 'V', 'K'] as const
+
+/**
+ * Which lines are heavy metro and which are light rail.
+ *
+ * The site said "7 lines" everywhere and meant "the seven the fetch happened
+ * to ask for". V and K joined in run 10 — see the operator note in
+ * `scripts/fetch-tdx.mjs` for why they were absent — and they are a different
+ * kind of railway: street-running in places, two-car, much shorter. Lumping
+ * them into a single count would make every total on the site quietly mean
+ * something new, and a length bar chart that ranks a 7 km tramway against a
+ * 51 km airport express without saying they are different things is a chart
+ * that misleads.
+ *
+ * So the distinction is recorded here, once, and the pages that need it read
+ * it from here rather than hard-coding a list of codes.
+ */
+const LIGHT_RAIL = new Set(['V', 'K'])
 
 export type Line = {
   code: string
@@ -79,6 +102,8 @@ export type Line = {
   needsHairline: boolean
   /** Which operator's records this came from. */
   operator: string
+  /** Light rail rather than heavy metro. See LIGHT_RAIL above. */
+  lightRail: boolean
 }
 
 /** TDX names lines "Wenhu Line"; the UI appends "Line" itself. */
@@ -112,7 +137,38 @@ function derive(code: string): Line {
     ink: darkenUntil(map, (c) => contrast(c, WHITE) >= AA_DERIVE),
     needsHairline: contrast(map, WHITE) < 3,
     operator,
+    lightRail: LIGHT_RAIL.has(code),
   }
+}
+
+/**
+ * A branch's tint of its parent line's colour.
+ *
+ * Xinbeitou (R22A) and Xiaobitan (G03A) were drawn in their parent's exact
+ * colour, which made a two-station shuttle look like part of the trunk. They
+ * are separately-operated shuttles and the official material distinguishes
+ * them — Xinbeitou's trains carry their own livery and the branch reads as
+ * pinkish against Tamsui red.
+ *
+ * Derived, not picked: the parent colour mixed toward white by `amount`, so a
+ * change at source propagates and no second colour is ever transcribed by
+ * hand. It stays a tint of the parent rather than becoming a colour of its
+ * own, which is the point — the branch belongs to the line.
+ *
+ * **This is a fill, never text.** A tint is lighter than its parent by
+ * construction, and the parent colours are already at the edge of what carries
+ * text on white; tinting further would take several of them under 3:1. Branch
+ * labels use the parent's `ink`, which is contrast-checked, and the tint is
+ * only ever the stroke. That also keeps the colour-is-never-alone rule intact:
+ * the branch carries its own station-code badge either way.
+ */
+export function branchTint(line: Line, amount = 0.45): string {
+  const hex = line.map.replace('#', '')
+  const mix = (i: number) => {
+    const channel = parseInt(hex.slice(i * 2, i * 2 + 2), 16)
+    return Math.round(channel + (255 - channel) * amount)
+  }
+  return `#${[0, 1, 2].map((i) => mix(i).toString(16).padStart(2, '0')).join('').toUpperCase()}`
 }
 
 export const LINES: Line[] = DISPLAY_ORDER.map(derive)
@@ -130,7 +186,14 @@ export const NEUTRAL_LINE: Line = {
   ink: '#3D454E',
   needsHairline: false,
   operator: 'site',
+  lightRail: false,
 }
+
+/** Heavy metro only — what "the metro network" means on this site. */
+export const METRO_LINES = LINES.filter((l) => !l.lightRail)
+
+/** The two light rail lines, which are counted and drawn separately. */
+export const LIGHT_RAIL_LINES = LINES.filter((l) => l.lightRail)
 
 export function getLine(code: string | undefined | null): Line | undefined {
   if (!code) return undefined

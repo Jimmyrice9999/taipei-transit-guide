@@ -1,0 +1,173 @@
+---
+name: transit-research
+description: This project's sourcing discipline for researching Taipei-region transport subjects — Mandarin sources first, full-page fetches rather than search snippets, primary distinguished from secondary, conflicts published rather than resolved, TBC over a plausible number. Use whenever researching or writing any content page, research file, or factual claim for the Taipei Transit Guide.
+---
+
+# Transit research — the sourcing discipline
+
+This is the method that has caught every error this project has found in itself:
+a route length 1.25 km too long, a false attribution of the Innovia to Matra, a
+line-colour set that was wrong in every English source, a feeder-colour table
+missing a row, a citation URL that went somewhere else. It is not a style guide.
+Each rule exists because breaking it produced a published falsehood.
+
+## 1. Mandarin first, and it is not close
+
+Deep coverage of Taipei transport exists in Mandarin and essentially nowhere
+else. English-language material is a thin derivative layer, and where it
+disagrees with the Mandarin it is wrong far more often than not.
+
+Search and read in this order:
+
+1. **Operator and government primary sources.** 臺北大眾捷運股份有限公司 (TRTC,
+   metro.taipei), 新北大眾捷運股份有限公司 (NTMC, ntmetro.com.tw), 桃園大眾捷運
+   (TYMC, tymetro.com.tw), 臺北市政府捷運工程局 (DORTS, dorts.gov.taipei),
+   交通部 (MOTC) and its 運研所, 臺北市公共運輸處 (Taipei PTO), 新北市政府捷運工程局,
+    臺灣鐵路 (TRA), 公路局. Tender documents, project pages, annual reports,
+   press releases, statistics tables.
+2. **zh.wikipedia** — 維基百科. Excellent as a lead index and a bibliography.
+   Never as an authority. Read its footnotes and go to what they cite.
+3. **Taiwanese news archives** — 自由時報, 聯合報, 中國時報, 中央社 (CNA),
+   公視 (PTS), 蘋果日報 archives, 商業周刊, 天下雜誌.
+4. **Railfan and enthusiast material** — PTT (批踢踢) MRT and Railway boards,
+   Mobile01, 鐵道情報, local railfan wikis. Often the only place a detail exists.
+   Treat as a lead, corroborate before publishing.
+5. **Academic and institutional** — 交通部運輸研究所 reports, university theses
+   (臺灣博碩士論文知識加值系統), 監察院 (Control Yuan) investigation reports,
+   審計部 audits, court judgments via 司法院法學資料檢索系統.
+
+Search in Chinese. A query in English returns the derivative layer.
+
+## 2. Fetch full pages. Never publish from a snippet
+
+**This is the rule that has mattered most.** A single full fetch of one DORTS
+project page produced more usable, citable material than several rounds of
+searching had. Search snippets are truncated, reordered, and frequently splice
+two sentences that are not adjacent in the source.
+
+- Use search to *find* the page. Then fetch the page and read it.
+- If a fetch fails, say the fetch failed. Do not fall back to the snippet.
+- Quote the original-language sentence you are relying on into the research
+  file, so the next reader can check your reading without refetching.
+- When a page is long, that is not a reason to rely on the summary — it is the
+  reason the material is there at all.
+
+## 3. Every claim carries its provenance
+
+For every factual claim, record:
+
+- **Source title** in English, and **`titleOriginal`** in the original language.
+- **Publisher**, with the original-language organisation name.
+- **URL**, and an archive snapshot URL where one can be captured.
+- **`kind: primary` or `kind: secondary`.**
+- **Confidence: High / Medium / Low**, with the reason in a clause.
+- **The original-language sentence** the claim rests on.
+
+### What primary means here
+
+Primary: the operator, the builder, the government body, the manufacturer, a
+court, an audit office — publishing about its own work.
+
+Secondary: news, encyclopedias, wikis, enthusiast sites, and *anything*
+describing what a primary source says.
+
+**A citation to an official source is not that source.** This project has been
+burned by it twice. A news article saying "TRTC's route map gives the colour as
+X" is secondary evidence about TRTC's route map. Go and read the route map.
+
+## 4. Verify every secondary citation against the primary it claims
+
+If a secondary source says "according to DORTS…", fetch the DORTS page and
+check that it says that. Record the result either way.
+
+Real failures this has caught:
+
+- A research file's citation URL did not go where it said; the article it named
+  did not exist at that address.
+- A claimed corroboration between two sources turned out to be two different
+  statements about two different things — 「穿越辛亥隧道北側」 against
+  「穿越福州山隧道後」 — which had been read as agreement.
+- A string asserted to be on a page was not on the page at all.
+
+When you check a string, check the string. Searching a page for 福州山隧道 and
+finding 富陽自然生態公園 is not a match.
+
+## 5. Where sources conflict, publish every value. Never pick
+
+Conflicts are findings, and they are usually the most valuable thing in the
+file. Three different route lengths for the Wenhu Line turned out to be three
+correct measurements of three different things — revenue length, total route
+length, and the whole drawn alignment. Picking one would have destroyed the
+only genuinely original result on the page.
+
+Publish the conflict as a conflict: every value, every source, and what each
+one appears to be measuring. If you cannot say what the difference is, say
+that too.
+
+Do **not**:
+
+- average them
+- take the most common
+- take the most recent
+- take the one from the source you like best
+- quietly footnote the others
+
+## 6. TBC beats a plausible number, always
+
+A figure with no source does not go on the page. `TBC` goes on the page.
+
+The build enforces this: `npm run claims` counts unsourced assertions against a
+baseline that only ever ratchets down. Do not relax it to make a number look
+better. An honest gap is the site's whole value proposition — it is what
+distinguishes it from the English material it exists to replace.
+
+The same applies to absence. "TRTC does not publish this" is itself a claim
+about TRTC and needs evidence. Write "nothing found in this search answers it",
+which is a claim about the search, and is true.
+
+## 7. Synthesise. Never translate wholesale
+
+The value is structure and cross-checking, not translation. Read several
+sources, work out what is actually established, and write it in English as a
+reference entry. Cite the originals with their original-language titles.
+
+Reproducing a zh.wikipedia article in English is both a licensing problem and a
+pointless one — it inherits every error and adds none of the checking.
+
+## 8. Distinguish "not found" from "does not exist"
+
+Three separate states, and they are not interchangeable:
+
+- **Confirmed** — a source says it and you have read the source.
+- **Not found** — you looked and did not find it. Say where you looked.
+- **Contradicted** — a source says otherwise. Publish both.
+
+A `## Checked and failed` section in the research file records claims that were
+chased and did not survive, with a date and a reason, so the same dead lead is
+not chased twice. `npm run research` enforces that those entries carry both,
+and that a failed claim is not still asserted unqualified elsewhere in the file.
+
+## 9. The existing corpus is leads, not sources
+
+`docs/research/` is a lead file. It has been wrong repeatedly — a miscounted
+exit total, a wrong URL, a misread tunnel description, an inverted arithmetic
+hypothesis, a feeder-colour table missing a row. Use it to know what to look
+for. Cite the underlying material, having read it.
+
+## 10. Structured data comes from TDX, prose comes from research
+
+Station lists, sequences, coordinates, interchanges, run times, route lengths
+and bus routes are a data pull from `data/tdx/`, already committed. History,
+engineering, controversy and design decisions are written from sources.
+
+Do not research a station list. Do not invent an engineering history.
+
+## Output contract
+
+Research goes in `docs/research/<section>/<subject>.md`. Content goes in
+`content/<section>/<type>/<slug>.md` with YAML frontmatter carrying `title`,
+`summary`, `facts`, `specs` and a `sources` list whose ids are referenced from
+the body as `[^id]`. Every `source:` id in `facts`/`specs` and every `[^id]` in
+the body must exist in `sources`, or `npm run cite` fails the build.
+
+Mark any figure you could not source as `value: TBC` with no `source:` key.

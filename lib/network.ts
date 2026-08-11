@@ -5,12 +5,7 @@
  * hand-maintained, so a refetch updates the network page automatically.
  */
 
-import trtcRoutes from '../data/tdx/TRTC/route.json' with { type: 'json' }
-import ntmcRoutes from '../data/tdx/NTMC/route.json' with { type: 'json' }
-import tymcRoutes from '../data/tdx/TYMC/route.json' with { type: 'json' }
-import trtcTransfers from '../data/tdx/TRTC/line-transfer.json' with { type: 'json' }
-import ntmcTransfers from '../data/tdx/NTMC/line-transfer.json' with { type: 'json' }
-import tymcTransfers from '../data/tdx/TYMC/line-transfer.json' with { type: 'json' }
+import { TDX_ROUTES, TDX_TRANSFERS } from './tdx.ts'
 import { getLineGeometry, measureLine, type Point } from './geometry.ts'
 import { LINES, type Line } from './lines.ts'
 import { getBranchRoutes, getTrunkRoute } from './routes.ts'
@@ -33,15 +28,11 @@ type TransferRow = {
 
 /** All three operators merged — an interchange can span operators. */
 const routes = [
-  ...(trtcRoutes as unknown as RouteRow[]),
-  ...(ntmcRoutes as unknown as RouteRow[]),
-  ...(tymcRoutes as unknown as RouteRow[]),
+  ...TDX_ROUTES<RouteRow>(),
 ]
 
 const transfers = [
-  ...(trtcTransfers as unknown as TransferRow[]),
-  ...(ntmcTransfers as unknown as TransferRow[]),
-  ...(tymcTransfers as unknown as TransferRow[]),
+  ...TDX_TRANSFERS<TransferRow>(),
 ]
 
 export type LineSummary = {

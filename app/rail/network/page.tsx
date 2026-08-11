@@ -13,6 +13,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
 import { getAllLineGeometry } from '@/lib/geometry'
@@ -93,6 +94,7 @@ export default function NetworkPage() {
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'The network' }]} />
+      <BackLink href="/rail/" label="Rail" />
 
       <h1 className="page-title">The network</h1>
       <p className="page-summary">
@@ -102,6 +104,27 @@ export default function NetworkPage() {
       </p>
 
       <div className="page-body">
+          {/*
+            What is on this map is what TDX publishes, and what is missing is
+            worth stating rather than leaving as an apparent oversight.
+
+            The two light rail lines were absent until run 10 for a reason that
+            was ours, not the platform's: TDX files them under their own
+            operator codes (NTDLRT, NTALRT) and the fetch only ever asked for
+            TRTC, NTMC and TYMC.
+
+            The Sanying Line is a different case and is genuinely not there.
+          */}
+          <p className="note">
+            <strong>The Sanying Line is not drawn.</strong> It opened on 30 June 2026
+            and Taiwan MOTC&rsquo;s metro records for New Taipei Metro were last updated
+            at source on 23 May 2023, so the platform this map is built from does not
+            carry its geometry, its stations or its colour. Rather than draw an
+            alignment from a source that does not publish one, it is absent here and
+            written up from the operator&rsquo;s own announcement on its{' '}
+            <Link href="/rail/lines/sanying-line/">line page</Link>.
+          </p>
+
           <RouteMap
             lines={mapLines}
             stations={mapStations}
@@ -115,7 +138,7 @@ export default function NetworkPage() {
                MRT contributes two stray fragments under a kilometre long. The
                map should not vouch for its source beyond what the source
                supports. */
-            caption="Every line as surveyed, each labelled with its code at both ends — colour alone does not identify a line, and two of these seven are indistinguishable to a reader with protanopia. Interchange stations are ringed in black; termini are the outer dots. Where a line appears broken, the alignment across the gap is missing from the published geometry — those breaks are holes in the source data, not features of the network, and are left unbridged rather than joined with track we cannot evidence."
+            caption="Every line as surveyed, each labelled with its code at both ends — colour alone does not identify a line. Bannan blue and Airport MRT purple are indistinguishable to a reader with protanopia, and Tamsui red against Danhai red is the closest pair on the network even in normal colour vision, which is why every line carries its code. Interchange stations are ringed in black; termini are the outer dots. Where a line appears broken, the alignment across the gap is missing from the published geometry — those breaks are holes in the source data, not features of the network, and are left unbridged rather than joined with track we cannot evidence."
           />
 
           <h2 className="section-heading">Lines</h2>

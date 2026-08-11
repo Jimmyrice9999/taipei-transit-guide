@@ -96,7 +96,25 @@ fs.mkdirSync(CACHE, { recursive: true })
 const cached = path.join(CACHE, fileTitle.replace(/^File:/, '').replace(/[^\w.-]+/g, '_'))
 if (!fs.existsSync(cached)) {
   console.log(`fetching ${meta.url}`)
-  const response = await fetch(meta.url, { headers: { 'User-Agent': UA } })
+  /*
+   * 429 is a WAIT, not a failure, and treating it as one cost two station
+   * photographs in run 10 — the batch reported them as failed and moved on
+   * while Commons was simply asking for a pause. Honour Retry-After when it is
+   * sent, otherwise back off 15s, 30s, 60s. Anything else non-OK is a real
+   * failure and still exits immediately.
+   */
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+  let response
+  for (const wait of [0, 15_000, 30_000, 60_000]) {
+    if (wait) {
+      console.log(`  rate-limited; waiting ${wait / 1000}s`)
+      await sleep(wait)
+    }
+    response = await fetch(meta.url, { headers: { 'User-Agent': UA } })
+    if (response.status !== 429) break
+    const after = Number(response.headers.get('retry-after'))
+    if (after > 0 && after < 120) await sleep(after * 1000)
+  }
   if (!response.ok) {
     console.error(`Download failed: HTTP ${response.status}`)
     process.exit(1)

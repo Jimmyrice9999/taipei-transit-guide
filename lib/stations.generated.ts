@@ -48,11 +48,11 @@ export type Provenance = {
 
 export const PROVENANCE: Provenance = {
   "source": "tdx",
-  "fetchedAt": "2026-08-05T09:38:28.743Z",
+  "fetchedAt": "2026-08-10T13:36:24.570Z",
   "sourceName": "Taiwan MOTC TDX (Transport Data eXchange)",
   "sourceUrl": "https://tdx.transportdata.tw/",
   "operator": "TRTC",
-  "stationCount": 157
+  "stationCount": 180
 }
 
 export const GENERATED_STATIONS: GeneratedStation[] = [
@@ -213,4 +213,27 @@ export const GENERATED_STATIONS: GeneratedStation[] = [
   { code: "A20", line: "A", operator: "TYMC", name: "Xingnan Station", nameZh: "興南站", district: "中壢區", address: "桃園市中壢區興和里6鄰中豐北路一段685號", lat: 24.98025, lon: 121.21627, sequence: 20, interchange: [], chainageKm: 49.27 },
   { code: "A21", line: "A", operator: "TYMC", name: "Huanbei Station", nameZh: "環北站", district: "中壢區", address: "桃園市中壢區中豐北路一段26號", lat: 24.96722, lon: 121.22114, sequence: 21, interchange: [], chainageKm: 50.81 },
   { code: "A22", line: "A", operator: "TYMC", name: "Laojie River Station", nameZh: "老街溪站", district: "中壢區", address: "桃園市中壢區中豐路289號", lat: 24.95823, lon: 121.21936, sequence: 22, interchange: [], chainageKm: 51.76 },
+  { code: "V01", line: "V", operator: "NTDLRT", name: "Hongshulin", nameZh: "紅樹林", district: "淡水區", address: "新北市淡水區中正東路二段68號(輕軌紅樹林站)", lat: 25.155597, lon: 121.458851, sequence: 1, interchange: [], chainageKm: 0 },
+  { code: "V02", line: "V", operator: "NTDLRT", name: "Ganzhenlin", nameZh: "竿蓁林", district: "淡水區", address: "", lat: 25.162415, lon: 121.456232, sequence: 2, interchange: [], chainageKm: 0.84 },
+  { code: "V03", line: "V", operator: "NTDLRT", name: "Danjin Denggong", nameZh: "淡金鄧公", district: "淡水區", address: "", lat: 25.169363, lon: 121.460813, sequence: 3, interchange: [], chainageKm: 1.77 },
+  { code: "V04", line: "V", operator: "NTDLRT", name: "Tamkang University", nameZh: "淡江大學", district: "淡水區", address: "", lat: 25.176959, lon: 121.456082, sequence: 4, interchange: [], chainageKm: 2.75 },
+  { code: "V05", line: "V", operator: "NTDLRT", name: "Danjin Beixin", nameZh: "淡金北新", district: "淡水區", address: "", lat: 25.181131, lon: 121.452366, sequence: 5, interchange: [], chainageKm: 3.33 },
+  { code: "V06", line: "V", operator: "NTDLRT", name: "Xinshi 1st Rd.", nameZh: "新市一路", district: "淡水區", address: "", lat: 25.183817, lon: 121.448258, sequence: 6, interchange: [], chainageKm: 3.84 },
+  { code: "V07", line: "V", operator: "NTDLRT", name: "Tamsui District Office", nameZh: "淡水行政中心", district: "淡水區", address: "", lat: 25.189017, lon: 121.444482, sequence: 7, interchange: [], chainageKm: 4.69 },
+  { code: "V08", line: "V", operator: "NTDLRT", name: "Binhai Yishan", nameZh: "濱海義山", district: "淡水區", address: "", lat: 25.18977, lon: 121.43738, sequence: 8, interchange: [], chainageKm: 5.41 },
+  { code: "V09", line: "V", operator: "NTDLRT", name: "Binhai Shalun", nameZh: "濱海沙崙", district: "淡水區", address: "", lat: 25.190501, lon: 121.431589, sequence: 9, interchange: [], chainageKm: 6 },
+  { code: "V28", line: "V", operator: "NTDLRT", name: "Taipei University of Marine Technology", nameZh: "台北海洋大學", district: "淡水區", address: "", lat: 25.191141, lon: 121.426365, sequence: 10, interchange: [], chainageKm: 6.49 },
+  { code: "V27", line: "V", operator: "NTDLRT", name: "Shalun", nameZh: "沙崙", district: "淡水區", address: "", lat: 25.187536, lon: 121.417331, sequence: 11, interchange: [], chainageKm: 7.61 },
+  { code: "V26", line: "V", operator: "NTDLRT", name: "Tamsui Fisherman's Wharf", nameZh: "淡水漁人碼頭", district: "淡水區", address: "新北市淡水區中正路二段51巷", lat: 25.182005, lon: 121.418605, sequence: 12, interchange: [], chainageKm: 8.42 },
+  { code: "V10", line: "V", operator: "NTDLRT", name: "Danhai New Town", nameZh: "淡海新市鎮", district: "淡水區", address: "", lat: 25.195691, lon: 121.432471, sequence: 13, interchange: [], chainageKm: null },
+  { code: "V11", line: "V", operator: "NTDLRT", name: "Kanding", nameZh: "崁頂", district: "淡水區", address: "", lat: 25.200994, lon: 121.434651, sequence: 14, interchange: [], chainageKm: null },
+  { code: "K01", line: "K", operator: "NTALRT", name: "Shuangcheng", nameZh: "雙城", district: "新店區", address: "", lat: 24.946321, lon: 121.489645, sequence: 1, interchange: [], chainageKm: 0 },
+  { code: "K02", line: "K", operator: "NTALRT", name: "Rose China Town", nameZh: "玫瑰中國城", district: "新店區", address: "", lat: 24.95076, lon: 121.493861, sequence: 2, interchange: [], chainageKm: 0.61 },
+  { code: "K03", line: "K", operator: "NTALRT", name: "Taipei Xiaocheng", nameZh: "台北小城", district: "新店區", address: "", lat: 24.954472, lon: 121.504674, sequence: 3, interchange: [], chainageKm: 1.3 },
+  { code: "K04", line: "K", operator: "NTALRT", name: "Cardinal Tien Hospital An Kang Branch", nameZh: "耕莘安康院區", district: "新店區", address: "", lat: 24.954463, lon: 121.504803, sequence: 4, interchange: [], chainageKm: 1.89 },
+  { code: "K05", line: "K", operator: "NTALRT", name: "Jinwen University of Science and Technology", nameZh: "景文科大", district: "新店區", address: "", lat: 24.955505, lon: 121.510387, sequence: 5, interchange: [], chainageKm: 2.45 },
+  { code: "K06", line: "K", operator: "NTALRT", name: "Ankang", nameZh: "安康", district: "新店區", address: "", lat: 24.965213, lon: 121.51729, sequence: 6, interchange: [], chainageKm: 3.83 },
+  { code: "K07", line: "K", operator: "NTALRT", name: "Sunshine Sports Park", nameZh: "陽光運動公園", district: "新店區", address: "", lat: 24.972351, lon: 121.519509, sequence: 7, interchange: [], chainageKm: 4.65 },
+  { code: "K08", line: "K", operator: "NTALRT", name: "Xinhe Elementary School", nameZh: "新和國小", district: "新店區", address: "", lat: 24.983483, lon: 121.518444, sequence: 8, interchange: [], chainageKm: 6.06 },
+  { code: "K09", line: "K", operator: "NTALRT", name: "Shisizhang", nameZh: "十四張", district: "新店區", address: "新北市新店區民權路282號(輕軌十四張站)", lat: 24.984328, lon: 121.527247, sequence: 9, interchange: [], chainageKm: 7.1 },
 ]

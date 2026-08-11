@@ -56,18 +56,49 @@ const have = new Set(
 const limitArg = process.argv.find((a) => a.startsWith('--limit='))
 const perStation = limitArg ? Number(limitArg.slice('--limit='.length)) : 6
 
-const bare = STATIONS.filter((s) => s.line === 'BR' && !have.has(s.code.toUpperCase()))
-console.error(`${bare.length} Wenhu station page(s) without a photograph.\n`)
+/*
+ * Two modes, because run 10 needed to go wide.
+ *
+ *   (no args)                 the original job — every Wenhu station page that
+ *                             has no photograph
+ *   --subjects <file>         an arbitrary list, one `label | search query`
+ *                             per line, for lines, fleets, depots, the
+ *                             gondola, YouBike, buses and ferries
+ *
+ * The station mode stays the default so the run-6 workflow is unchanged.
+ */
+const subjectsArg = process.argv.find((a) => a === '--subjects')
+let bare
+if (subjectsArg) {
+  const file = process.argv[process.argv.indexOf('--subjects') + 1]
+  bare = fs
+    .readFileSync(path.resolve(ROOT, file), 'utf8')
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith('#'))
+    .map((l) => {
+      const [code, query] = l.split('|').map((s) => s.trim())
+      return { code, name: query, query }
+    })
+  console.error(`${bare.length} subject(s) to search.\n`)
+} else {
+  bare = STATIONS.filter((s) => s.line === 'BR' && !have.has(s.code.toUpperCase())).map((s) => ({
+    code: s.code,
+    name: s.name,
+    query: `${s.name} Station Taipei`,
+  }))
+  console.error(`${bare.length} Wenhu station page(s) without a photograph.\n`)
+}
 
 for (const station of bare) {
   /*
-   * Search rather than guess a category name. Commons files for these stations
+   * Search rather than guess a category name. Commons files for these subjects
    * sit under several conventions — English name, Chinese name, "MRT" or
    * "Metro", with and without "Station" — and a guessed category that does not
    * exist returns nothing rather than an error, which reads as "no photographs
    * exist" and is a different claim entirely.
    */
-  const query = `${station.name} Station Taipei`
+  const query = station.query
   let results = []
   try {
     const search = await api({

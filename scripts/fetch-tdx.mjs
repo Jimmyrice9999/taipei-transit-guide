@@ -44,10 +44,42 @@ const API_BASE = 'https://tdx.transportdata.tw/api/basic'
  * and they do not all publish the same datasets — which is itself worth
  * recording, so meta.json keeps the per-operator result.
  */
+/*
+ * ── Why there are five codes here and not three ──────────────────────────────
+ *
+ * Run 10 was asked why the Danhai and Ankeng light rail lines were missing from
+ * the network map, and why the Sanying Line was missing entirely. The answer
+ * was in this list.
+ *
+ * TDX does not file New Taipei's four railways under one operator. `NTMC`
+ * returns exactly ONE line record — the Circular Line. The light rail lines are
+ * separate operators with their own codes, and asking for `NTMC` will never
+ * return them however many times you run it. Probed live against the API:
+ *
+ *   TRTC     5 lines   BL BR G O R
+ *   NTMC     1 line    Y   環狀線        #fedb00
+ *   TYMC     1 line    A   桃園機場捷運線  #8246AF
+ *   NTDLRT   1 line    V   淡海輕軌       #FF2A00
+ *   NTALRT   1 line    K   安坑輕軌       (see below)
+ *
+ * So the light rail was never "missing data" in the sense the site assumed —
+ * it was never requested. That is a materially different failure from the ones
+ * this project has recorded before, and worth the distinction: the previous
+ * gaps were holes in what MOTC publishes, and this one was a hole in what we
+ * asked for.
+ *
+ * **Sanying (三鶯線, LB) is a different case and is genuinely not in TDX.** It
+ * opened on 30 June 2026; NTMC's metro records were last updated at source on
+ * 2023-05-23 and do not contain it, and no separate operator code was found for
+ * it. Its page is written from the operator's own announcement instead, and the
+ * network page says so rather than drawing a line it has no geometry for.
+ */
 const OPERATORS = [
   { code: 'TRTC', name: 'Taipei Rapid Transit Corporation' },
   { code: 'NTMC', name: 'New Taipei Metro' },
   { code: 'TYMC', name: 'Taoyuan Metro' },
+  { code: 'NTDLRT', name: 'New Taipei Metro — Danhai Light Rail' },
+  { code: 'NTALRT', name: 'New Taipei Metro — Ankeng Light Rail' },
 ]
 
 /**
@@ -235,6 +267,22 @@ async function fetchAll(token, operator, dataset) {
     const res = await request(token, url)
 
     if (res.status === 404) return { status: 404, rows: null }
+    /*
+     * Some endpoints are restricted to the four heavy-metro systems and say so
+     * with a 400 rather than a 404:
+     *
+     *   RailSystem: 'NTDLRT' is not accepted but TRTC, KRTC, TYMC, NTMC
+     *
+     * That is the same fact as a 404 — this operator does not publish this
+     * dataset — dressed as a client error, and treating it as a hard failure
+     * aborted the whole light rail fetch after five successful datasets.
+     * Narrowly matched on the platform's own wording so a genuine malformed
+     * request still fails loudly.
+     */
+    if (res.status === 400) {
+      const body = await res.text()
+      if (/is not accepted but/i.test(body)) return { status: 404, rows: null, why: body.trim() }
+    }
     if (!res.ok) {
       throw new Error(
         `${operator}/${dataset.name} failed: ${res.status} ${res.statusText}\n  ${(await res.text()).slice(0, 200)}`,
@@ -280,6 +328,31 @@ function writeJson(file, value) {
 
 async function main() {
   const probeOnly = process.argv.includes('--probe')
+  /*
+   * `--only CODE[,CODE]` fetches just those operators and leaves every other
+   * operator's committed files untouched.
+   *
+   * Added in run 10 to bring in the two light rail operators without rewriting
+   * TRTC's 157 station records at the same time. A full refetch is a fine thing
+   * to do deliberately; doing it as a side effect of adding a line is how a
+   * station registry changes under a test suite that is pinned to it, in the
+   * middle of a run, for reasons unrelated to the change being made.
+   *
+   * meta.json is MERGED rather than replaced under this flag, so the operators
+   * that were not fetched keep their own provenance instead of vanishing from
+   * the record.
+   */
+  const onlyArg = process.argv.find((a) => a.startsWith('--only'))
+  const only = onlyArg
+    ? new Set(
+        (onlyArg.includes('=')
+          ? onlyArg.split('=')[1]
+          : process.argv[process.argv.indexOf(onlyArg) + 1]
+        )
+          .split(',')
+          .map((s) => s.trim().toUpperCase()),
+      )
+    : null
   const env = loadEnv()
 
   console.log('tdx: requesting access token…')
@@ -300,6 +373,7 @@ async function main() {
 
   try {
     for (const operator of OPERATORS) {
+      if (only && !only.has(operator.code)) continue
       console.log(`${operator.code} — ${operator.name}`)
       meta.operators[operator.code] = { name: operator.name, datasets: {} }
 
@@ -353,7 +427,24 @@ async function main() {
   } finally {
     // Written even on a partial failure: partial data with an honest record of
     // what happened beats partial data with no record at all.
-    if (!probeOnly) writeJson(path.join(OUT_DIR, 'meta.json'), meta)
+    if (!probeOnly) {
+      // Under --only, merge onto the existing record so the operators that
+      // were not fetched keep their provenance rather than disappearing from
+      // it. Their files are still on disk; meta.json must not claim otherwise.
+      if (only) {
+        const existingPath = path.join(OUT_DIR, 'meta.json')
+        if (fs.existsSync(existingPath)) {
+          const existing = JSON.parse(fs.readFileSync(existingPath, 'utf8'))
+          meta.operators = { ...existing.operators, ...meta.operators }
+          meta.partialFetch = {
+            at: meta.fetchedAt,
+            operators: [...only],
+            note: 'Only these operators were refetched; the others carry their earlier fetch record.',
+          }
+        }
+      }
+      writeJson(path.join(OUT_DIR, 'meta.json'), meta)
+    }
   }
 
   if (probeOnly) {

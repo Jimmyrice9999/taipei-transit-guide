@@ -11,6 +11,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema } from '@/lib/structured-data'
 import { NEUTRAL_LINE, getLine } from '@/lib/lines'
@@ -46,6 +47,7 @@ export default function StationsIndexPage() {
       />
 
       <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'Stations' }]} />
+      <BackLink href="/rail/" label="Rail" />
       <h1 className="page-title">Stations</h1>
       <p className="page-summary">
         Every station with a page so far. Lines whose stations are not listed here are not

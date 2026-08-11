@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { hanFontFace } from '@/app/layout'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import StationBadge from '@/components/StationBadge'
@@ -92,6 +93,7 @@ export default function StationDataPage() {
       </Link>
 
       <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Station records' }]} />
+      <BackLink href="/data/" label="Data" />
       <h1 className="page-title">Station records</h1>
       <p className="page-summary">
         {STATIONS.length} stations across {byLine.length} lines, in official running order,

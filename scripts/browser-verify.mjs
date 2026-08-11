@@ -400,6 +400,7 @@ const report = {
   axe: {},
   axeSummary: { critical: 0, serious: 0, moderate: 0, minor: 0 },
   print: [],
+  spineOverlap: [],
 }
 
 const log = (msg) => console.log(msg)
@@ -429,6 +430,73 @@ const pages = allPages()
   await context.close()
 }
 if (report.reflow.length === 0) log('  ✓ no page produces a document-level horizontal scrollbar')
+
+/* ---- 1b. nothing paints across the floated spine ---- */
+
+/*
+ * Run 10. `.lead-figure` carried a `border-bottom` in the line colour and was
+ * not a block formatting context, so its box started at the container's left
+ * edge and the rule painted straight through the strip map, across BR12's
+ * name. Reported as "a long brown line spanning the entire page width".
+ *
+ * The class of bug: a direct child of `.page-main` that paints a border or a
+ * background, and is not a BFC, sits UNDER the float rather than beside it.
+ * Only the line boxes inside it shorten, and the painting does not. Nothing in
+ * the markup looks wrong, and it is invisible to every check that reads HTML —
+ * it needs a rendered box, which is why it lives here and not in tests/.
+ *
+ * Checked at 1440 because that is where the spine is a float and the widths
+ * are largest; the mobile block turns the float off entirely.
+ */
+log('\n═══ 1b. Painted boxes across the spine float ═══\n')
+
+{
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } })
+  const page = await context.newPage()
+
+  for (const { name, url } of PAGE_TYPES) {
+    await page.goto(base + url, { waitUntil: 'load' })
+    const bad = await page.evaluate(() => {
+      const spine = document.querySelector('.page-spine')
+      const main = document.querySelector('.page-main')
+      if (!spine || !main) return []
+      const s = spine.getBoundingClientRect()
+      if (s.width === 0 || s.height === 0) return []
+      const out = []
+      for (const child of main.children) {
+        const cs = getComputedStyle(child)
+        const paints =
+          parseFloat(cs.borderTopWidth) > 0 ||
+          parseFloat(cs.borderBottomWidth) > 0 ||
+          parseFloat(cs.borderLeftWidth) > 0 ||
+          parseFloat(cs.borderRightWidth) > 0 ||
+          (cs.backgroundColor !== 'rgba(0, 0, 0, 0)' && cs.backgroundColor !== 'transparent')
+        if (!paints) continue
+        const r = child.getBoundingClientRect()
+        // Vertically clear of the spine? Then it cannot be painting over it.
+        if (r.bottom <= s.top || r.top >= s.bottom) continue
+        // Horizontally inside the float's column is the failure.
+        if (r.left < s.right - 1) {
+          out.push({
+            cls: child.className.toString().slice(0, 60),
+            tag: child.tagName,
+            left: Math.round(r.left),
+            spineRight: Math.round(s.right),
+          })
+        }
+      }
+      return out
+    })
+    for (const b of bad) {
+      report.spineOverlap.push({ page: name, url, ...b })
+      log(`  ✗ ${name}: <${b.tag} class="${b.cls}"> paints from ${b.left}, spine ends ${b.spineRight}`)
+    }
+  }
+  if (report.spineOverlap.length === 0) {
+    log('  ✓ no painted box in .page-main runs under the spine')
+  }
+  await context.close()
+}
 
 /* ---- 2. keyboard, per page type ---- */
 
@@ -520,10 +588,22 @@ log('\n═══ 5. Screenshots ═══\n')
   const context = await browser.newContext()
   const page = await context.newPage()
 
+  /*
+   * 1920 and 2560 added permanently in run 10.
+   *
+   * The set was 375 / 768 / 1440, and that is exactly why three layout bugs
+   * shipped: the container caps at 1140px, so at 1440 it fills the viewport
+   * and everything looks composed. Above 1140 + margins the page stops
+   * growing and the reading column becomes a narrow strip in a field of
+   * white — a failure that is invisible at every width previously shot.
+   * A widescreen laptop at full screen is the common case, not the edge one.
+   */
   const widths = [
     [375, ''],
     [768, ''],
     [1440, ''],
+    [1920, ''],
+    [2560, ''],
     [640, '-zoom200'],
     [320, '-zoom400'],
   ]
@@ -619,6 +699,12 @@ for (const [name, k] of Object.entries(report.keyboard)) {
 }
 for (const [name, count] of Object.entries(report.axeSummary)) {
   if (count) findings.push(`axe: ${count} violation(s) on ${name} — details in browser-verification.json`)
+}
+for (const o of report.spineOverlap) {
+  findings.push(
+    `layout: <${o.tag} class="${o.cls}"> on ${o.page} paints under the spine ` +
+      `(starts ${o.left}, spine ends ${o.spineRight}) — it needs display: flow-root`,
+  )
 }
 for (const p of report.print) {
   const bad = Object.entries(p)

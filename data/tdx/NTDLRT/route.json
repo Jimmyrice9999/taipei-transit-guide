@@ -1,0 +1,126 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "V11",
+    "EndStationName": {
+      "En": "Kanding",
+      "Ja": "崁頂",
+      "Ko": "칸딩",
+      "Zh_tw": "崁頂"
+    },
+    "LineID": "V",
+    "LineNo": "V",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "V-1",
+    "RouteLength": 7.3,
+    "RouteName": {
+      "En": "HongShulin - Kanding",
+      "Zh_tw": "紅樹林－崁頂"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "StartStationID": "V01",
+    "StartStationName": {
+      "En": "Hongshulin",
+      "Ja": "紅樹林",
+      "Ko": "훙수린",
+      "Zh_tw": "紅樹林"
+    },
+    "TravelTime": 26,
+    "UpdateTime": "2021-01-21T06:05:35+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "V01",
+    "EndStationName": {
+      "En": "Hongshulin",
+      "Ja": "紅樹林",
+      "Ko": "훙수린",
+      "Zh_tw": "紅樹林"
+    },
+    "LineID": "V",
+    "LineNo": "V",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "V-1",
+    "RouteLength": 7.3,
+    "RouteName": {
+      "En": "Kanding - HongShulin",
+      "Zh_tw": "崁頂－紅樹林"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "StartStationID": "V11",
+    "StartStationName": {
+      "En": "Kanding",
+      "Ja": "崁頂",
+      "Ko": "칸딩",
+      "Zh_tw": "崁頂"
+    },
+    "TravelTime": 26,
+    "UpdateTime": "2021-01-21T06:05:35+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "V26",
+    "EndStationName": {
+      "En": "Tamsui Fisherman's Wharf",
+      "Ja": "淡水漁人碼頭",
+      "Ko": "단수이 위런마터우",
+      "Zh_tw": "淡水漁人碼頭"
+    },
+    "LineID": "V",
+    "LineNo": "V",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "V-2",
+    "RouteLength": 8.4,
+    "RouteName": {
+      "En": "HongShulin - Tamsui Fisherman's Wharf",
+      "Zh_tw": "紅樹林－淡水漁人碼頭"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "StartStationID": "V01",
+    "StartStationName": {
+      "En": "Hongshulin",
+      "Ja": "紅樹林",
+      "Ko": "훙수린",
+      "Zh_tw": "紅樹林"
+    },
+    "TravelTime": 30,
+    "UpdateTime": "2021-01-21T06:05:35+08:00",
+    "VersionID": 2
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "V01",
+    "EndStationName": {
+      "En": "Hongshulin",
+      "Ja": "紅樹林",
+      "Ko": "훙수린",
+      "Zh_tw": "紅樹林"
+    },
+    "LineID": "V",
+    "LineNo": "V",
+    "OperatorCode": "NTMC",
+    "RailRouteType": 35,
+    "RouteID": "V-2",
+    "RouteLength": 8.4,
+    "RouteName": {
+      "En": "Tamsui Fisherman's Wharf - HongShulin",
+      "Zh_tw": "淡水漁人碼頭－紅樹林"
+    },
+    "SrcUpdateTime": "2020-12-30T00:00:00+08:00",
+    "StartStationID": "V26",
+    "StartStationName": {
+      "En": "Tamsui Fisherman's Wharf",
+      "Ja": "淡水漁人碼頭",
+      "Ko": "단수이 위런마터우",
+      "Zh_tw": "淡水漁人碼頭"
+    },
+    "TravelTime": 30,
+    "UpdateTime": "2021-01-21T06:05:35+08:00",
+    "VersionID": 2
+  }
+]

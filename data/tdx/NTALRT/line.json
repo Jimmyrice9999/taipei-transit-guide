@@ -1,0 +1,18 @@
+[
+  {
+    "IsBranch": false,
+    "LineColor": "#9E925E",
+    "LineID": "K",
+    "LineName": {
+      "En": "Ankeng LRT",
+      "Ja": "安坑ライトレール",
+      "Ko": "안컹 경전철",
+      "Zh_tw": "安坑輕軌"
+    },
+    "LineNo": "K",
+    "LineSectionName": {},
+    "SrcUpdateTime": "2023-06-30T16:50:00+08:00",
+    "UpdateTime": "2023-08-03T00:00:00+08:00",
+    "VersionID": 1
+  }
+]

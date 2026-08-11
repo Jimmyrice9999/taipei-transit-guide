@@ -57,6 +57,7 @@
   color-scheme: light;
 }
 
+
 *,
 *::before,
 *::after {
@@ -158,14 +159,87 @@ th > .badge:only-child {
 }
 
 /*
+ * ── Above 1440px: the page has to use the screen ────────────────────────────
+ *
+ * Run 10, reported from a laptop at full screen: prose occupies about 40% of
+ * the page width. Measured at 1920 it is 38% — 729px of text on a 1920px
+ * screen — and at 2560 it is 28%. The screenshot set was 375 / 768 / 1440, and
+ * 1440 is precisely the width at which a 1140px container still fills the
+ * viewport and nothing looks wrong. The bug could not have been seen.
+ *
+ * What is NOT the fix, stated because it is the obvious one: widening the
+ * measure until the text fills the screen. `--measure` is 68ch because that is
+ * roughly 68 characters, and past about 80 the eye starts losing its place on
+ * the line return. A 2560px screen of full-width prose is a 200-character
+ * line. The measure is right and it does not move.
+ *
+ * Three things move instead, and only above 1440 — every width this project
+ * has ever screenshotted renders byte-identically.
+ *
+ *   1. The type scales. 68ch at 17px is 729px; at 19px it is 815px. A larger
+ *      screen is usually further from the eye, and the reading column should
+ *      grow physically while holding the same number of characters. This is
+ *      the change that actually answers the complaint.
+ *   2. The container grows, so the things that genuinely want width — spec
+ *      tables, the network map, the strip maps, the length bars — get it.
+ *      That is where the spare pixels belong.
+ *   3. The reading column centres (see .page-grid below). With the container
+ *      grown and the column still hard-left, the whole void lands on the right
+ *      and reads as a layout failure rather than as a margin.
+ */
+/*
+ * `--measure` becomes an explicit px length above 1440, and that is deliberate.
+ *
+ * `68ch` re-resolves against whichever element reads it, because an
+ * unregistered custom property substitutes its text at the point of use rather
+ * than a computed length. That is harmless for a max-width — every block gets
+ * 68 of its own characters — but it is fatal for the centring offset below,
+ * which subtracts the measure from the container. The first attempt produced
+ * three different offsets on one page: the summary is 17.5px so its `ch` is
+ * narrow, and the h1 is 44px so its measure came out wider than the container
+ * and the offset clamped to zero. The title stayed hard-left while the body
+ * indented — exactly the stagger the rule exists to remove.
+ *
+ * The px values are 68ch measured in Inter at each size (1ch = 0.6307em):
+ * 68ch at 18px is 772px, at 19px is 815px. Same column, one number, no
+ * re-resolution. Below 1600 nothing changes and `--measure` is still 68ch.
+ */
+@media (min-width: 1600px) {
+  :root {
+    --measure: 772px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 2200px) {
+  :root {
+    --measure: 815px;
+  }
+  body {
+    font-size: 19px;
+  }
+  .container {
+    max-width: 1560px;
+  }
+}
+
+/*
  * Full-width dark band. The dot-matrix blind needs a dark field to sit in or it
  * reads as a rendering artifact — a black rectangle dropped on white. Committing
  * to the band also gives the page a horizontal anchor that a centred column
  * layout otherwise lacks.
  */
+/* `relative` so the nav panels anchor to the band — see the note on .nav-item. */
 .site-header {
+  position: relative;
   background: var(--band);
   color: var(--band-ink);
+  z-index: 30;
 }
 
 .site-header .container {
@@ -211,9 +285,226 @@ th > .badge:only-child {
   gap: 2px 26px;
 }
 
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * The item is deliberately NOT the positioning context.
+ *
+ * Anchored to the item, the panel opens under its own section — which reads
+ * well until the section is the last one in the bar, and then the panel runs
+ * off the right of the screen. Rail sits at x≈1090 on a 1440 screen, so its
+ * two-column panel was clipped mid-word and the four groups after Rolling
+ * Stock could not be reached at all. Aligning right instead only moves the
+ * problem to the first section.
+ *
+ * Anchored to the header band, the panel is a full-width strip under the bar:
+ * it cannot overflow in either direction, and it has room for every group a
+ * section has rather than the two that happened to fit.
+ */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/*
+ * The caret is a control in its own right, not decoration on the link — see
+ * the note in components/SiteNav.tsx for why the two are separate. It gets a
+ * real hit area: 24×24 is the WCAG 2.2 SC 2.5.8 Level AA minimum and this one
+ * has no "equivalent" escape route, because the section link beside it goes
+ * somewhere else.
+ */
+.nav-toggle {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--band-ink-dim);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.nav-toggle:hover,
+.nav-toggle[aria-expanded='true'] {
+  color: var(--band-ink);
+}
+
+.nav-toggle svg {
+  transition: transform 120ms ease;
+}
+
+.nav-toggle[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+/* The site's standing rule. There are no decorative animations; this one is
+   a state indicator and it still gets turned off on request. */
+@media (prefers-reduced-motion: reduce) {
+  .nav-toggle svg {
+    transition: none;
+  }
+}
+
+.nav-panel {
+  position: absolute;
+  /* Below the accent bar, which is 4px + a 1px hairline under the band. */
+  top: calc(100% + 5px);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: var(--band);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
+}
+
+.nav-panel[hidden] {
+  display: none;
+}
+
+/*
+ * Matches `.container` so the panel's columns line up with the wordmark and
+ * the page beneath, rather than starting wherever the section happens to sit.
+ */
+/*
+ * Grid, not flex-wrap. Wrapped flex columns are as wide as their own longest
+ * item, so "Lines" and "History" came out different widths and the second row
+ * started under the middle of the first — a ragged staircase. Equal tracks put
+ * every group head on the same two baselines.
+ */
+.nav-panel-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(172px, 1fr));
+  align-items: start;
+  gap: 6px 30px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 18px 24px 20px;
+  max-height: min(72vh, 560px);
+  overflow-y: auto;
+}
+
+@media (min-width: 1600px) {
+  .nav-panel-inner {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .nav-panel-inner {
+    max-width: 1560px;
+  }
+}
+
+.nav-group {
+  min-width: 158px;
+}
+
+.nav-group-head {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--amber);
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.nav-group-head:hover {
+  text-decoration: underline;
+}
+
+.nav-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-group li + li {
+  margin-top: 1px;
+}
+
+.nav-group a {
+  display: block;
+  padding: 4px 0;
+  font-size: 13.5px;
+  line-height: 1.35;
+  color: var(--band-ink-dim);
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.nav-group a:hover,
+.nav-group a:focus-visible {
+  color: var(--band-ink);
+  text-decoration: underline;
+}
+
+.nav-all {
+  font-family: var(--font-mono);
+  font-size: 11.5px !important;
+  letter-spacing: 0.04em;
+  padding-top: 7px !important;
+}
+
+/*
+ * Below 780 the panel stops being a dropdown and becomes an expanded block in
+ * the header. A 3-column panel pinned to a 375px viewport is a horizontal
+ * scroll bar; the mobile answer is not "hide it".
+ */
+@media (max-width: 780px) {
+  .nav-panel {
+    position: static;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 0;
+    box-shadow: none;
+    max-width: none;
+    /* Out of the flex row and across the full bar. */
+    order: 99;
+    flex-basis: 100%;
+    margin-top: 8px;
+  }
+  .nav-item {
+    flex-wrap: wrap;
+  }
+  /*
+   * One column. `flex-direction: column` used to do this and silently stopped
+   * meaning anything when the panel became a grid — auto-fit then fitted two
+   * 172px tracks into 327px of phone and clipped "Innovia APM 256 (C370)" off
+   * the right edge. An explicit single track cannot drift like that.
+   */
+  .nav-panel-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 12px 0 4px;
+    max-height: none;
+  }
+  .nav-group a {
+    /* Comfortable thumb targets once the panel is a list rather than a menu. */
+    padding: 7px 0;
+  }
+}
+
 @media (max-width: 480px) {
-  .site-nav {
-    gap: 2px 16px;
+  .site-nav,
+  .nav-list {
+    gap: 2px 14px;
   }
 }
 
@@ -292,6 +583,53 @@ main {
   font-size: 13px;
   color: var(--text-2);
   margin-bottom: 12px;
+}
+
+/*
+ * The up-navigation control. See components/BackLink.tsx for why this exists
+ * alongside the breadcrumbs rather than instead of them.
+ *
+ * Deliberately styled as a control and not as prose: a border, a background,
+ * a hit area over 24px tall, and the site's link colour rather than the grey
+ * the crumbs use. The whole reported problem was that the existing up-route
+ * did not look pressable.
+ */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 18px;
+  padding: 6px 13px 6px 10px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  background: var(--bg-well);
+  color: var(--link);
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  border-color: var(--link);
+  text-decoration: underline;
+}
+
+.back-arrow {
+  font-size: 15px;
+  line-height: 1;
+  /* Optical: the glyph sits high in its box against the label's x-height. */
+  transform: translateY(-0.5px);
+}
+
+/*
+ * The section essay, now below the index cards rather than above them. Set
+ * apart with a rule so it does not read as a caption on the last card.
+ */
+.section-essay {
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--rule);
 }
 
 .breadcrumbs a {
@@ -474,7 +812,129 @@ main {
   display: flow-root;
 }
 
+/*
+ * Centring the reading column above 1440 — point 3 of the note on .container.
+ *
+ * The reading column is not `--measure`; it is the float plus its gutter plus
+ * the measure, because prose wraps beside the spine. `--text-block` is that
+ * composite, and the offset below centres it inside the grown container.
+ *
+ * The offset goes on the spine and on the measure-limited children, NOT as
+ * padding on .page-grid — padding the grid would shrink `.wide` elements back
+ * to the text block and undo the reason the container grew in the first place.
+ * A spec table or the network map still spans the full container; only the
+ * reading column moves.
+ *
+ * `max(0px, …)` so that a page whose text block is wider than its container
+ * (nothing today, but the measure scales with the font) cannot take a negative
+ * offset and hang off the left edge.
+ */
+@media (min-width: 1600px) {
+  /*
+   * The offset is computed on `article`, not on `.page-grid`, because the
+   * breadcrumbs, the h1 and the summary are the grid's SIBLINGS. Leaving them
+   * at the container edge while the grid centred put the title hard-left above
+   * an indented body — a stagger, and worse-looking than the bug it replaced.
+   *
+   * `:has()` lifts the spine width up one level so the sibling furniture can
+   * see it. If a browser does not support it, `--spine-w` falls back to 0, the
+   * text block is just the measure, and the furniture still centres — narrower
+   * than the grid does, but aligned rather than broken.
+   */
+  /*
+   * The reading column is `--measure` — NOT the measure plus the spine.
+   *
+   * Worth stating because the first version added the spine's width and gap,
+   * and measured wrong. `.page-main > *` is capped at `--measure` and starts
+   * at the grid's own left edge, the same edge the floated spine starts at.
+   * The spine therefore floats *into* the top-left of the reading column
+   * rather than sitting beside it — which is exactly what the float comment
+   * higher up this file describes, and why prose beside the spine is narrower
+   * than prose below it. The column's outer width is `--measure` at every
+   * point down the page. Adding the spine to it centred the wrong box and left
+   * the text a third of the way off-centre inside the container.
+   *
+   * `--container-inner` is the container's max-width minus its two paddings,
+   * written out rather than measured as `100%`. With `100%` the offset was
+   * computed against each consumer's own containing block: `.page-body` saw
+   * the container (1512) and padded itself by 348.5, then its `.wide` children
+   * saw the *padded* box (1163.5) and broke back out by only 174.25 — half the
+   * distance — leaving the network map short of the container edge.
+   * Percentages resolve against different boxes at different depths, which
+   * makes them useless for a value that must be identical everywhere.
+   *
+   * Above 1600 the container is always at its max-width — a viewport that
+   * satisfies the media query is by definition wider than the cap — so the
+   * inner width is a constant and the offset can be one too.
+   */
+  main .container {
+    --container-inner: 1272px; /* 1320 max-width − 2 × 24px padding */
+    --text-offset: max(0px, calc((var(--container-inner) - var(--measure)) / 2));
+  }
+
+  /*
+   * The offset is PADDING on the two containers, not a margin on each child.
+   *
+   * The first version set `margin-left` on `.page-main > *` and `.page-body >
+   * *`. Both are specificity (0,1,0), so any later rule in this file that sets
+   * a `margin` shorthand on a child class beat it and that child alone stayed
+   * hard-left. `.section-heading` on /about did exactly that — its heading
+   * column hung outside the centred body. Padding the parent cannot be
+   * overridden by a child at all, which is the property worth having in a
+   * 4,000-line stylesheet that will keep growing.
+   *
+   * The three pieces of page furniture above the grid are still margins, but
+   * they are three named elements whose rules all sit earlier in this file, so
+   * source order settles them.
+   */
+  .breadcrumbs,
+  .page-title,
+  .page-summary {
+    margin-left: var(--text-offset);
+  }
+
+  .page-grid,
+  .page-body {
+    padding-left: var(--text-offset);
+  }
+
+  /*
+   * Wide elements break back out to the full container — that is what the
+   * extra width is for. A block with `width: auto` and a negative margin-left
+   * grows by exactly that margin, so this restores the container edge without
+   * needing to know the offset twice.
+   */
+  .page-main > .wide,
+  .page-body > .wide {
+    margin-left: calc(-1 * var(--text-offset));
+  }
+}
+
+/*
+ * The second container step. This has to sit AFTER the block above, not beside
+ * the `.container { max-width: 1560px }` rule it belongs with — the two
+ * declarations have identical specificity, so source order decides, and when
+ * this lived up with the other breakpoint the 1600 block overwrote it and
+ * every page above 2200 centred against a 1272px container it did not have.
+ */
+@media (min-width: 2200px) {
+  main .container {
+    --container-inner: 1512px; /* 1560 max-width − 2 × 24px padding */
+  }
+}
+
 @media (max-width: 780px) {
+  /*
+   * The two spine variables describe the FLOAT'S FOOTPRINT, and on mobile
+   * there is no float. Zeroing them here means anything that subtracts the
+   * footprint to stay inside the reading column — `.lead-figure` — gets the
+   * whole measure back without needing a mobile override of its own.
+   */
+  .page-grid.has-map,
+  .page-grid.has-rail {
+    --spine-w: 0px;
+    --spine-gap: 0px;
+  }
   .page-spine {
     float: none;
     width: auto;
@@ -3580,8 +4040,14 @@ a.badge-link:focus-visible {
  * is the same rule the badges follow and it is not relaxed here because a
  * diagram looks like a place where colour would be nice.
  */
+/*
+ * 26px above a full-width drawing was not enough separation from the prose it
+ * follows — reported in run 10 as the lead figure and the profile sitting on
+ * top of each other. A named device that interrupts the reading column needs
+ * to read as a break in the page, not as the next paragraph.
+ */
 .profile {
-  margin: 26px 0;
+  margin: 44px 0 34px;
 }
 
 .profile-frame {
@@ -3901,8 +4367,40 @@ a.badge-link:focus-visible {
  * with a data costume on. This figure earns the scale because it is what the
  * page argues about: which of four circulating numbers the site stands behind.
  */
+/*
+ * `display: flow-root` is load-bearing, not tidiness.
+ *
+ * Reported in run 10 as "a long brown line spanning the entire page width" at
+ * the top of line pages. It was this border-bottom. Without a BFC the block
+ * box starts at the container's left edge and runs the full measure, so only
+ * the *line boxes* inside it shorten beside the floated spine — the border
+ * paints across its whole box and cuts straight through the strip map, over
+ * BR12's name. In the line colour, which is why it read as an artifact rather
+ * than as a rule that had escaped.
+ *
+ * Same fix, same reason, as `.prose blockquote` and `.page-main > .note`
+ * higher up this file. The lead figure landed after that rule was written and
+ * was never added to it. Anything that is a direct child of `.page-main` and
+ * paints a border or a background needs to be on that list; check 1b in
+ * `scripts/browser-verify.mjs` now enforces it against rendered boxes rather
+ * than trusting the next author to remember.
+ *
+ * The bottom margin was 20px, which put the rule 20px from the facts panel
+ * below it and made the two read as one object.
+ */
 .lead-figure {
-  margin: 0 0 20px;
+  display: flow-root;
+  /*
+   * A BFC beside the float gets pushed to the float's right edge, so a plain
+   * `max-width: var(--measure)` would end 264px further right than the prose
+   * below it and the rule would line up with nothing. Subtracting the float's
+   * footprint lands its right edge exactly on the prose column's.
+   *
+   * `--spine-w` and `--spine-gap` are zeroed in the mobile block, where the
+   * spine is not a float at all, so this falls back to the full measure there.
+   */
+  max-width: calc(var(--measure) - var(--spine-w, 0px) - var(--spine-gap, 0px));
+  margin: 0 0 34px;
   padding-bottom: 16px;
   border-bottom: 2px solid var(--accent);
 }
