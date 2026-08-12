@@ -293,10 +293,10 @@ export const NEUTRAL_LINE: Line = {
 /** Lines the platform carries. What "from MOTC open data" means on this site. */
 export const TDX_LINES = LINES.filter((l) => l.onTdx)
 
-/** Heavy metro only — what "the metro network" means on this site. */
-export const METRO_LINES = LINES.filter((l) => !l.lightRail)
-
-/** The two light rail lines, which are counted and drawn separately. */
+/**
+ * The two light rail lines, which are counted and drawn separately.
+ * Unused today — retained for when Danhai and Ankeng get pages.
+ */
 export const LIGHT_RAIL_LINES = LINES.filter((l) => l.lightRail)
 
 export function getLine(code: string | undefined | null): Line | undefined {

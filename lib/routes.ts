@@ -123,20 +123,3 @@ export function getBranchRoutes(lineId: string): Route[] {
     (r) => r.routeId !== trunk.routeId && r.stations.some((s) => !onTrunk.has(s)),
   )
 }
-
-/** Every station the line's own routes reach, trunk first then each branch. */
-export function getRouteOrderedStations(lineId: string): string[] {
-  const trunk = getTrunkRoute(lineId)
-  if (!trunk) return []
-  const seen = new Set(trunk.stations)
-  const out = [...trunk.stations]
-  for (const branch of getBranchRoutes(lineId)) {
-    for (const code of branch.stations) {
-      if (!seen.has(code)) {
-        seen.add(code)
-        out.push(code)
-      }
-    }
-  }
-  return out
-}

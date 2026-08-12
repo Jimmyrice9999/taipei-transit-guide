@@ -1,0 +1,199 @@
+{
+  "exports": 216,
+  "cssClasses": 293,
+  "imageSidecars": 61,
+  "unusedExports": [
+    {
+      "name": "UndergroundExtent",
+      "file": "components/ElevationProfile.tsx",
+      "line": 68
+    },
+    {
+      "name": "FigureProps",
+      "file": "components/Figure.tsx",
+      "line": 27
+    },
+    {
+      "name": "MapLine",
+      "file": "components/RouteMap.tsx",
+      "line": 21
+    },
+    {
+      "name": "MapStation",
+      "file": "components/RouteMap.tsx",
+      "line": 58
+    },
+    {
+      "name": "AA_MARGIN",
+      "file": "lib/color.ts",
+      "line": 32
+    },
+    {
+      "name": "Folder",
+      "file": "lib/content.ts",
+      "line": 98
+    },
+    {
+      "name": "Hero",
+      "file": "lib/content.ts",
+      "line": 185
+    },
+    {
+      "name": "Profile",
+      "file": "lib/content.ts",
+      "line": 219
+    },
+    {
+      "name": "rgbToLab",
+      "file": "lib/cvd.ts",
+      "line": 148
+    },
+    {
+      "name": "LineGeometry",
+      "file": "lib/geometry.ts",
+      "line": 217
+    },
+    {
+      "name": "Chainage",
+      "file": "lib/geometry.ts",
+      "line": 329
+    },
+    {
+      "name": "Measurement",
+      "file": "lib/geometry.ts",
+      "line": 484
+    },
+    {
+      "name": "Projection",
+      "file": "lib/geometry.ts",
+      "line": 549
+    },
+    {
+      "name": "ImageSize",
+      "file": "lib/image-size.ts",
+      "line": 16
+    },
+    {
+      "name": "Cab",
+      "file": "lib/line-character.ts",
+      "line": 59
+    },
+    {
+      "name": "LineCharacter",
+      "file": "lib/line-character.ts",
+      "line": 61
+    },
+    {
+      "name": "CHARACTERS",
+      "file": "lib/line-character.ts",
+      "line": 123
+    },
+    {
+      "name": "ColourSource",
+      "file": "lib/lines.ts",
+      "line": 70
+    },
+    {
+      "name": "LIGHT_RAIL_LINES",
+      "file": "lib/lines.ts",
+      "line": 300
+    },
+    {
+      "name": "NavGroup",
+      "file": "lib/nav.ts",
+      "line": 38
+    },
+    {
+      "name": "PublishedFigures",
+      "file": "lib/network.ts",
+      "line": 61
+    },
+    {
+      "name": "LineSummary",
+      "file": "lib/network.ts",
+      "line": 81
+    },
+    {
+      "name": "OgFrame",
+      "file": "lib/og.tsx",
+      "line": 103
+    },
+    {
+      "name": "OperatorRef",
+      "file": "lib/operators.ts",
+      "line": 51
+    },
+    {
+      "name": "SITE_ORIGIN",
+      "file": "lib/site.ts",
+      "line": 22
+    },
+    {
+      "name": "SourceKind",
+      "file": "lib/sources.ts",
+      "line": 30
+    },
+    {
+      "name": "SOURCE_KINDS",
+      "file": "lib/sources.ts",
+      "line": 73
+    },
+    {
+      "name": "CITE_DEFINITION_PATTERN",
+      "file": "lib/sources.ts",
+      "line": 91
+    },
+    {
+      "name": "SourceProblem",
+      "file": "lib/sources.ts",
+      "line": 94
+    },
+    {
+      "name": "StationOverlay",
+      "file": "lib/station-overlay.ts",
+      "line": 20
+    },
+    {
+      "name": "SeedStation",
+      "file": "lib/stations.seed.ts",
+      "line": 17
+    },
+    {
+      "name": "PlannedInterchange",
+      "file": "lib/stations.ts",
+      "line": 23
+    },
+    {
+      "name": "Role",
+      "file": "lib/surfaces.ts",
+      "line": 28
+    },
+    {
+      "name": "Swatch",
+      "file": "lib/surfaces.ts",
+      "line": 41
+    },
+    {
+      "name": "ServicePattern",
+      "file": "lib/timetable.ts",
+      "line": 82
+    },
+    {
+      "name": "SPLIT_ROUTE",
+      "file": "scripts/subset-cjk.mjs",
+      "line": 63
+    },
+    {
+      "name": "builtPages",
+      "file": "scripts/subset-cjk.mjs",
+      "line": 178
+    },
+    {
+      "name": "collectFromBuild",
+      "file": "scripts/subset-cjk.mjs",
+      "line": 210
+    }
+  ],
+  "unusedClasses": [],
+  "unusedImages": []
+}

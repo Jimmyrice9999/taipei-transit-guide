@@ -35,12 +35,13 @@
     "claims": "node scripts/claims.mjs",
     "entities": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/entities.mts",
     "determinism": "node scripts/determinism.mjs",
-    "verify": "npm run check && npm run links && npm run a11y && npm run facts && npm run cite && npm run claims && npm run research && npm run geometry:audit && npm run cvd",
+    "verify": "npm run check && npm run links && npm run unused && npm run a11y && npm run facts && npm run cite && npm run claims && npm run research && npm run geometry:audit && npm run cvd",
     "image": "node scripts/fetch-commons.mjs",
     "archive": "node scripts/archive-sources.mjs",
     "research": "node scripts/research-check.mjs",
     "links": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/links-audit.mjs",
-    "nav": "node scripts/nav-check.mjs"
+    "nav": "node scripts/nav-check.mjs",
+    "unused": "node scripts/unused-audit.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

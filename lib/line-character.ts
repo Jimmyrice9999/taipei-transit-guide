@@ -116,5 +116,8 @@ export function getCharacter(line: Line): LineCharacter {
   }
 }
 
-/** Every displayed line with its character. Used by the tests. */
+/**
+ * Every displayed line with its character. Not consumed by app code yet —
+ * retained as the groundwork for line icons that vary by running character.
+ */
 export const CHARACTERS = new Map(LINES.map((line) => [line.code, getCharacter(line)]))

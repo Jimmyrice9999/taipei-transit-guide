@@ -1570,56 +1570,6 @@ a.spine-station:focus-visible .spine-name {
   border: 1px solid var(--rule);
 }
 
-.panel-head {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 9px 12px;
-  background: var(--band);
-}
-
-.panel-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--band-ink);
-}
-
-.panel-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13.5px;
-  font-variant-numeric: tabular-nums;
-}
-
-.panel-table th {
-  text-align: left;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  width: 42%;
-  vertical-align: top;
-  padding: 7px 12px;
-  border-bottom: 1px solid var(--rule);
-}
-
-.panel-table td {
-  padding: 7px 12px;
-  border-bottom: 1px solid var(--rule);
-  vertical-align: top;
-  line-height: 1.4;
-}
-
-.panel-table tr:last-child th,
-.panel-table tr:last-child td {
-  border-bottom: 0;
-}
-
 /* ------------------------------------------------------------------ */
 /* Specifications — engineering data                                   */
 /* ------------------------------------------------------------------ */
@@ -2150,8 +2100,7 @@ a.spine-station:focus-visible .spine-name {
 }
 
 .colour-table,
-.station-table,
-.prov-table {
+.station-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 13.5px;
@@ -2159,8 +2108,7 @@ a.spine-station:focus-visible .spine-name {
 }
 
 .colour-table thead th,
-.station-table thead th,
-.prov-table thead th {
+.station-table thead th {
   text-align: left;
   font-size: 10.5px;
   font-weight: 600;
@@ -2175,9 +2123,7 @@ a.spine-station:focus-visible .spine-name {
 .colour-table tbody th,
 .colour-table tbody td,
 .station-table tbody th,
-.station-table tbody td,
-.prov-table tbody th,
-.prov-table tbody td {
+.station-table tbody td {
   text-align: left;
   font-weight: 400;
   border-bottom: 1px solid var(--rule);
@@ -2186,8 +2132,7 @@ a.spine-station:focus-visible .spine-name {
 }
 
 .colour-table .num,
-.station-table .num,
-.prov-table .num {
+.station-table .num {
   text-align: right;
   padding-right: 16px;
   white-space: nowrap;
@@ -2199,8 +2144,7 @@ a.spine-station:focus-visible .spine-name {
 }
 
 .colour-table code,
-.station-table code,
-.prov-table code {
+.station-table code {
   font-family: var(--font-mono);
   font-size: 12px;
   background: none;
@@ -3175,17 +3119,6 @@ a.adjacent-link:hover {
   border: 1px solid var(--rule);
   border-radius: 3px;
   overflow: hidden;
-}
-
-.facts-caption {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-2);
-  padding: 8px 13px;
-  background: var(--bg-well);
-  border-bottom: 1px solid var(--rule);
 }
 
 .facts table {
@@ -4919,54 +4852,6 @@ a.badge-link:focus-visible {
 /* ------------------------------------------------------------------ */
 /* Index and scope pages                                               */
 /* ------------------------------------------------------------------ */
-
-/*
- * Content pages have photographs; index pages do not, and run 6 was right to
- * refuse them one — an index is wayfinding, and a hero would push the links
- * below the fold on a phone to decorate a page with a picture of one of its
- * children.
- *
- * What goes in that space instead is a count of what the folder holds and how
- * much of it is actually written. It is computed from the tree, so it cannot
- * flatter the site, and the uncomfortable half of it is the half worth having.
- */
-.index-tally {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 30px;
-  margin: 0 0 22px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid var(--accent);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-2);
-}
-
-.index-tally b {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  color: var(--accent);
-  margin-right: 6px;
-  vertical-align: -3px;
-}
-
-/* A word, not a bar. See the comment where it is rendered. */
-.card-status {
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--text-3);
-  white-space: nowrap;
-}
-
-.card-status[data-written] {
-  color: var(--accent);
-  font-weight: 600;
-}
 
 @media (max-width: 560px) {
   .card-list a {
