@@ -1,5 +1,5 @@
 {
-  "pages": 90,
+  "pages": 91,
   "destinations": 54,
   "ambiguous": [
     "Daan",
@@ -43,21 +43,6 @@
   ],
   "findings": [
     {
-      "page": "/bike/history/youbike/",
-      "name": "都會通",
-      "href": "/ticketing/guides/cards-passes-and-fares/"
-    },
-    {
-      "page": "/bus/",
-      "name": "EasyCard",
-      "href": "/ticketing/guides/cards-passes-and-fares/"
-    },
-    {
-      "page": "/data/sources/",
-      "name": "都會通",
-      "href": "/ticketing/guides/cards-passes-and-fares/"
-    },
-    {
       "page": "/data/sources/",
       "name": "Songshan Airport",
       "href": "/rail/stations/br13/"
@@ -71,11 +56,6 @@
       "page": "/data/sources/",
       "name": "Neihu",
       "href": "/rail/stations/br19/"
-    },
-    {
-      "page": "/gondola/lines/maokong-gondola/",
-      "name": "EasyCard",
-      "href": "/ticketing/guides/cards-passes-and-fares/"
     },
     {
       "page": "/rail/rolling-stock/innovia-apm-256-c370/",

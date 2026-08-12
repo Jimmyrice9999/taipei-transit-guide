@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 804,
-    "tbc": 33,
-    "asserted": 46,
-    "meta": 32
+    "sourced": 908,
+    "tbc": 34,
+    "asserted": 53,
+    "meta": 36
   },
   "files": [
     {
@@ -234,11 +234,11 @@
     },
     {
       "file": "content/rail/lines/ankeng-lrt.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
+      "sources": 23,
+      "sourced": 49,
+      "tbc": 1,
+      "asserted": 6,
+      "meta": 1
     },
     {
       "file": "content/rail/lines/bannan-line.md",
@@ -258,11 +258,11 @@
     },
     {
       "file": "content/rail/lines/danhai-lrt.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 21,
+      "sourced": 55,
       "tbc": 0,
-      "asserted": 0,
-      "meta": 0
+      "asserted": 1,
+      "meta": 3
     },
     {
       "file": "content/rail/lines/sanying-line.md",
@@ -540,6 +540,66 @@
       "signals": [
         "superlative"
       ]
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "facts: Line code",
+      "text": "K"
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "A tunnel genuinely exists on the alignment: 雙安隧道 (Shuang'an Tunnel), described by DORTS as Taiwan's first road-and-light-rail co-built tunne",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "From 26 February 2024 the peak short workings became full-line services: morning-peak headway tightened to 6–8 minutes, evening-peak to 8–10",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "From 1 July to 31 December 2024, Ankeng Depot's own boarding platform opened to passengers on weekday mornings at 06:28 and 07:16, explicitl",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "The line is within the scope of the TPASS 基北北桃1200 monthly pass, in line with that pass's general coverage of rail, light rail and bus servi",
+      "signals": [
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/ankeng-lrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Station names, codes, running order and coordinates come from **Taiwan MOTC's TDX platform**, operator code — government open data, retrieve",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/danhai-lrt.md",
+      "state": "asserted",
+      "where": "facts: Line code",
+      "text": "V"
     },
     {
       "file": "content/rail/lines/songshan-xindian-line.md",
