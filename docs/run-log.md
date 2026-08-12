@@ -5424,3 +5424,91 @@ construction, without a stopwatch number to back it.
 unused exports/classes flagged that weren't already deliberately kept, 0
 a11y errors, `npm run weigh` byte-identical before/after the font change.
 No screenshots taken this run, by instruction.
+
+# Run 14 — calibration run, one subject, 12 August 2026
+
+## 88. Status check before touching anything
+
+Of the twelve subjects named for this run, nine already had both a real
+research file and a real content page: Tamsui-Xinyi, Songshan-Xindian,
+Zhonghe-Xinlu, Bannan, Circular, Danhai LRT, Ankeng LRT, Airport MRT, and the
+joint bus network. Circular Line in particular turned out to already be done
+— 547-line research file, 682-line content page, both dated 2026-08-10 —
+which the run's own instructions anticipated as a possible outcome.
+
+Three remained as unpublished lead files only (each explicitly headed "Not
+published. Verify before promoting to content."), with their content-side
+path occupied by a `status: planned` section stub rather than a real page:
+YouBike, Maokong Gondola, ticketing. Comparing primary-source density in the
+three lead files to pick one: YouBike had two primary sources, ticketing four
+spread thin across several unrelated systems, and Maokong Gondola three
+concentrated primary sources anchored by a 台灣省土木技師公會 (Taiwan
+Association of Civil Engineering Technicians) technical-journal article on
+the 2008 T16 tower failure — flagged in the lead file itself as the best
+single source found. Picked Maokong Gondola.
+
+## 89. line-researcher on Maokong Gondola
+
+One subagent invocation, fresh context, no images fetched. Output:
+`docs/research/gondola/lines/maokong-gondola.md` and
+`content/gondola/lines/maokong-gondola.md` (the type-folder path it chose;
+`content/gondola/_index.md` stayed untouched as the section stub, correctly
+left alone as scope for a later run).
+
+**Sourcing: 14 sources, 11 primary / 3 secondary.** The primary set is
+unusually strong for this corpus: the T16 technicians'-journal article
+(written by the city's own geotechnical slope-remediation engineer, not just
+published in the association's journal), the Control Yuan's full 22-page
+corrective resolution read as a PDF rather than summarised, the Control
+Yuan's separate case-summary page, and six operator/government pages
+(gondola.taipei's system, fares, suspension-conditions, hours and
+crystal-cabin pages, plus a Taipei City Government press release). Secondary:
+two zh.wikipedia articles and one 2023 ETtoday council-session report.
+
+**TBC: one figure.** Standard-cabin weight capacity — the lead file's
+unverified "640 kg" did not survive; nothing fetched states a weight to pair
+with the 8-passenger limit, so it went to `TBC` rather than being carried
+forward unsourced. Also left as prose gaps rather than TBC'd figures, since
+no number was ever proposed for them: the exact TRTC→North Metro Recreation
+Company operator-transfer date, current daily/annual ridership, and part 2 of
+the technicians'-journal article (part 1 is explicitly labelled first-of-two;
+no working link to a second part was found).
+
+**Conflicts, all published rather than resolved:**
+
+- Pier/tower count — "25 pier bases, 47 tower columns" (operator, current) vs
+  "25 towers" (Control Yuan, 2009), with a note on the likely two-legged-frame
+  explanation.
+- Project cost — approximate NT$1.3bn vs precise NT$1,108,870,438, both
+  figures inside the *same* Control Yuan document, scope difference
+  unexplained.
+- One-way journey time — 20–30 min (city government, operator's English site)
+  vs ~17 min (zh.wikipedia), neither chosen.
+- Crystal-cabin fleet — 31 (operator, corroborated by zh.wikipedia) vs the
+  lead file's unverified "20" — the lead file's figure did not survive
+  verification and was dropped, not published as a competing value.
+- Route length — 4.03 km vs 4.033 km, flagged and then correctly assessed as
+  precision, not disagreement.
+
+**Corrected against the existing corpus.** The 6 August 2026 lead file was
+wrong or unconfirmed on six points: T16 was relocated ~30 m, not rebuilt in
+place (the lead file left this open); the crystal-cabin fleet is 31 cabins
+numbered 1–15/66/133–147, not "20" numbered "1–10 and 138–147"; the
+assessment body was four professional *associations* (公會), not "engineering
+institutes"; the "first Monday" maintenance rule doesn't match the operator's
+actual published 2026 calendar, which mixes routine and annual-overhaul
+closures; Typhoon Jangmi's 24 September date in the lead file was the storm's
+formation, not the 27–28 September landslide onset; and the reopening-date
+conflict the lead file flagged as unresolved (23 vs 30 March 2010) turned out
+not to be a conflict at all once the zh.wikipedia source was read directly —
+one date is the free-trial start, the other the formal paid reopening, both
+individually and correctly dated in the same source.
+
+### 89.1 Suite and ratchet
+
+`npm run cite`: 14/14 sources resolve. `npm run claims`: sourced 539 → 591,
+TBC 29 → 30 (the one new TBC above), asserted unchanged. Ratchet moved the
+right direction, not relaxed. `npm run verify` clean end to end, including
+`research` (22 files, 41 checked-and-failed entries, none broken by this
+change) and `cvd`/`geometry:audit` (unaffected by a content-only change, ran
+clean regardless).

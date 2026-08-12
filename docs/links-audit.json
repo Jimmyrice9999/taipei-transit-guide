@@ -1,6 +1,6 @@
 {
   "pages": 86,
-  "destinations": 51,
+  "destinations": 52,
   "ambiguous": [
     "Daan",
     "大安",
@@ -56,6 +56,16 @@
       "page": "/data/sources/",
       "name": "Neihu",
       "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/gondola/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
+    },
+    {
+      "page": "/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/rail/rolling-stock/innovia-apm-256-c370/",

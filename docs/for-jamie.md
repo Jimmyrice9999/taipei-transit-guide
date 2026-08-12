@@ -1,13 +1,10 @@
 # For Jamie
 
-Written 12 August 2026, after run 13. Three small tasks, separately
-committed, `npm run verify` clean after each. No research/images/screenshots.
-
-1. **Districts show English + Chinese** everywhere printed. New
-   `lib/districts.ts`, Taipei/New Taipei only — Taoyuan (Airport MRT) is `TBC`.
-2. **Deleted the audit-confirmed dead code**: `METRO_LINES`,
-   `getRouteOrderedStations`, 7 CSS selectors. Wired `npm run unused` into
-   `verify`. Kept `LIGHT_RAIL_LINES`/`CHARACTERS`, commented why.
-3. **Font flash fixed**: `display: swap → optional`, all three Latin fonts —
-   they were already preloaded/self-hosted, `swap` itself was the flash. No
-   trustworthy timing number; run-log §87.3 says why and what would work.
+Written 12 August 2026, after run 14 — a calibration run, one subject.
+Checked all 12 named subjects: 9 already done (Circular Line included).
+Of the remaining 3, picked Maokong Gondola (richest Mandarin sourcing).
+**New page:** `content/gondola/lines/maokong-gondola.md`. 14 sources, 11
+primary (Control Yuan's T16 resolution, a 土木技師公會 journal piece). 5
+conflicts published, not resolved. 1 new TBC. Corrected 6 errors in the
+old lead file, incl. a flagged "conflict" that wasn't one.
+Claims: 539→591 sourced, TBC 29→30. `npm run verify` clean.

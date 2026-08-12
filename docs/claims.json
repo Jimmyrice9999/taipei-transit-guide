@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 539,
-    "tbc": 29,
+    "sourced": 591,
+    "tbc": 30,
     "asserted": 32,
-    "meta": 28
+    "meta": 30
   },
   "files": [
     {
@@ -98,6 +98,22 @@
     },
     {
       "file": "content/ferry/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/gondola/lines/maokong-gondola.md",
+      "sources": 14,
+      "sourced": 52,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 2
+    },
+    {
+      "file": "content/gondola/lines/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
