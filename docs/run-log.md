@@ -5316,3 +5316,111 @@ Screenshots at 375 / 768 / 1440 / 1920 / 2560, all looked at:
 4. **Line-page station labels clip at the right edge** at some widths
    (`lineb-rail-lines-zhonghe-xinlu-line-1440.png` shows "Minquan W. R"). Not
    introduced here and not Part 9; noted for Part 13.
+
+════════════════════════════════════════════════════════════════════════════
+
+# Run 13 — three small fixes, 12 August 2026
+
+Three independent tasks by instruction, `npm run verify` and a separate
+commit after each. No research, no image fetching, no screenshot sweep —
+those are explicitly out of scope for this run.
+
+### 87.1 District names in English
+
+`app/rail/stations/[code]/page.tsx:207` printed the district in Chinese only.
+New `lib/districts.ts` maps Chinese → English for all 12 Taipei City and 29
+New Taipei City districts, Hanyu Pinyin romanisation to match TRTC's own
+English site. Applied everywhere a district is printed: the station page's
+standfirst and facts row (English text, Chinese kept `lang="zh-Hant"`-tagged
+in its own span so the language-tagging audit still holds), the per-station
+OG image, and the JSON-LD `addressLocality` (English preferred there, no
+parenthetical — it's a machine field, not prose).
+
+The four Taoyuan districts that show up in the station data (中壢, 大園, 蘆竹,
+龜山 — Airport MRT stops) are deliberately not in the map; the instruction
+scoped this to Taipei and New Taipei, so those render as `TBC (龜山區)` rather
+than a guessed romanisation. Only Wenhu station pages are actually built
+today, so nothing on the live site currently hits that path — it's there for
+when other lines get station pages.
+
+### 87.2 Deleted the confirmed-dead code
+
+`docs/unused-audit.json` and `scripts/unused-audit.mjs` (`npm run unused`)
+were sitting uncommitted from a prior session — wired into the `verify` chain
+and committed alongside the deletions they justify, since the two don't mean
+much apart. Deleted exactly what was asked and nothing else:
+
+- `lib/lines.ts` `METRO_LINES`
+- `lib/routes.ts` `getRouteOrderedStations`
+- Seven CSS selectors: `.card-status` and `.card-status[data-written]`,
+  `.facts-caption`, `.panel-head`, `.panel-title`, `.panel-table` (and its
+  `th`/`td`/`tr:last-child` descendants), `.prov-table` (removed from the
+  three-way shared selector list it sat in with `.colour-table` and
+  `.station-table`, which stayed).
+
+`LIGHT_RAIL_LINES` and `CHARACTERS` are flagged unused by the same audit and
+were kept, each now with a one-line comment saying why (Danhai/Ankeng pages;
+line-icon groundwork). `lib/sources.ts` `CITE_DEFINITION_PATTERN` and the 27
+over-exported types were left alone, as instructed.
+
+### 87.3 Font-swap flash
+
+Zilla Slab, Inter and IBM Plex Mono were already self-hosted and preloaded —
+`next/font` does both automatically for anything declared in the root
+layout, confirmed by reading the built `<head>`: five `<link rel="preload"
+as="font">` tags, one per family/weight, on every page. All three families
+render above the fold somewhere on the site (Inter is body text and the nav,
+Zilla Slab is every page's `<h1>`, Plex Mono is the station-code badge and
+the eyebrow labels), so nothing needed moving into or out of the preload set.
+
+The flash was `display: 'swap'` itself, not a loading-order problem: swap
+always paints the fallback first and always swaps the instant the real font
+lands, however short that wait is. Changed all three to `display: 'optional'`
+— paired with preload (already in place) and `adjustFontFallback` (on by
+default, metric-matched fallback faces), this is the combination that removes
+the flash rather than shortening it: the browser uses the font if the request
+it already started lands inside a short initial budget, and commits to the
+fallback for that render otherwise rather than swapping in later.
+
+**Weights, before and after** (`npm run weigh`, station page, `br13`) — byte
+for byte identical, as expected; `display` doesn't touch file size:
+
+| Face | Size |
+| --- | --- |
+| Zilla Slab 600 | 16.7 KB |
+| Zilla Slab 700 | 16.4 KB |
+| Inter (variable) | 47.3 KB |
+| IBM Plex Mono 500 | 9.8 KB |
+| IBM Plex Mono 600 | 9.9 KB |
+
+**Timing.** I could not produce a trustworthy "text first paints without a
+swap at Xms" number. The obvious instrument — comparing
+`document.fonts.ready`'s timestamp against first-contentful-paint under a
+network-delayed font response — turned out not to measure what it looks like
+it measures: `document.fonts.ready` settled in ~30-95ms in every trial, even
+with the actual `.woff2` response held back 600ms by an intercepted route.
+It reflects when the browser finished making its font *decision* for the
+current layout, not when the underlying file physically finished
+downloading, so it can't tell `swap` and `optional` apart after the fact.
+Screenshot-diffing the rendered glyphs under throttling was the fallback
+plan and it fought Playwright itself: `page.screenshot()` waits for layout
+to "stabilise" across consecutive animation frames, which never happens
+while the main thread is busy hydrating a throttled page, so every call
+timed out regardless of clip size. Recording this so the next attempt
+doesn't re-spend the time: a real measurement needs either raw CDP
+`Page.captureScreenshot` polling against a JS-free page, or a proper
+Lighthouse/WebPageTest run against a deployed build, not a synthetic local
+harness.
+
+What's on solid ground instead: the font-display spec's behaviour is
+unconditional, not probabilistic — `swap` guarantees a re-render the instant
+a late font arrives; `optional` guarantees it never does. Preload is
+confirmed already active. That's sufficient to say the flash is gone by
+construction, without a stopwatch number to back it.
+
+### 87.4 Suite
+
+`npm run verify` clean after each of the three commits — 0 broken links, 0
+unused exports/classes flagged that weren't already deliberately kept, 0
+a11y errors, `npm run weigh` byte-identical before/after the font change.
+No screenshots taken this run, by instruction.
