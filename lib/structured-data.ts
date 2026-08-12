@@ -7,6 +7,7 @@
  */
 
 import { SITE_NAME, SITE_DESCRIPTION, absoluteUrl } from './site.ts'
+import { getDistrictEn } from './districts.ts'
 import type { Station } from './stations.ts'
 import type { Line } from './lines.ts'
 
@@ -82,7 +83,11 @@ export function stationSchema(station: Station, line: Line, position: number, to
     node.address = {
       '@type': 'PostalAddress',
       streetAddress: station.address,
-      addressLocality: station.district || undefined,
+      // English preferred for a schema.org locality; falls back to the
+      // Chinese name rather than an unmapped district going missing.
+      addressLocality: station.district
+        ? (getDistrictEn(station.district) ?? station.district)
+        : undefined,
       addressCountry: 'TW',
     }
   }

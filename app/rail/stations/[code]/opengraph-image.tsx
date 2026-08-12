@@ -3,6 +3,7 @@
 import { ImageResponse } from 'next/og'
 import { OG_CONTENT_TYPE, OG_SIZE, OgStationCard, ogFonts } from '@/lib/og'
 import { getAccent } from '@/lib/lines'
+import { formatDistrict } from '@/lib/districts'
 import { getLineStations, getStation } from '@/lib/stations'
 
 // A static export has to be told these routes are build-time only; without it
@@ -28,7 +29,7 @@ export default async function Image({ params }: { params: Promise<{ code: string
 
   const detail = [
     `Stop ${position} of ${stations.length} on the ${line.name} Line`,
-    station.district,
+    station.district ? formatDistrict(station.district) : '',
     station.interchange.length ? `Interchange: ${station.interchange.join(', ')}` : '',
   ]
     .filter(Boolean)

@@ -22,6 +22,7 @@ import { getLinePageHref, getPages } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import { getLineGeometry } from '@/lib/geometry'
 import { branchTint, getAccent, getLine } from '@/lib/lines'
+import { getDistrictEn } from '@/lib/districts'
 import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStation } from '@/lib/stations'
 import { formatRunTime, getFirstLast, getRunTime } from '@/lib/timetable'
@@ -204,7 +205,10 @@ export default async function StationPage({ params }: Props) {
             {station.district && (
               <>
                 {' · '}
-                <span lang="zh-Hant">{station.district}</span>
+                <span>
+                  {getDistrictEn(station.district) ?? 'TBC'} (
+                  <span lang="zh-Hant">{station.district}</span>)
+                </span>
               </>
             )}
             {station.structure !== 'unknown' && <> · {structureLabel.toLowerCase()}</>}
@@ -273,7 +277,16 @@ export default async function StationPage({ params }: Props) {
             </div>
             <div className="platform-fact">
               <dt>District</dt>
-              <dd lang="zh-Hant">{station.district || '—'}</dd>
+              <dd>
+                {station.district ? (
+                  <>
+                    {getDistrictEn(station.district) ?? 'TBC'} (
+                    <span lang="zh-Hant">{station.district}</span>)
+                  </>
+                ) : (
+                  '—'
+                )}
+              </dd>
             </div>
             <div className="platform-fact">
               <dt>Structure</dt>
