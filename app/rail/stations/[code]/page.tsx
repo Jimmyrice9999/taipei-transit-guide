@@ -21,7 +21,8 @@ import { getImage } from '@/lib/images'
 import { getLinePageHref, getPages } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import { getLineGeometry } from '@/lib/geometry'
-import { getAccent, getLine } from '@/lib/lines'
+import { branchTint, getAccent, getLine } from '@/lib/lines'
+import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStation } from '@/lib/stations'
 import { formatRunTime, getFirstLast, getRunTime } from '@/lib/timetable'
 import JsonLd from '@/components/JsonLd'
@@ -124,6 +125,7 @@ export default async function StationPage({ params }: Props) {
 
   const service = getFirstLast(station.code)
   const geometry = getLineGeometry(station.line)
+  const track = getLineTrack(station.line)
 
   const structureLabel =
     station.structure === 'unknown' ? 'Not established' : station.structure === 'elevated' ? 'Elevated' : 'Underground'
@@ -378,7 +380,18 @@ export default async function StationPage({ params }: Props) {
         {geometry && (
           <RouteMap
             lines={[
-              { code: line.code, name: line.name, colour: line.map, paths: geometry.paths },
+              {
+                code: line.code,
+                name: line.name,
+                colour: line.map,
+                // Wenhu has no branch, so this resolves to the whole alignment
+                // as trunk. Routed through the same helper anyway, so station
+                // pages on a branched line get the right picture for free.
+                paths: track.trunk,
+                branchPaths: track.branch,
+                branchColour: branchTint(line),
+                branchEdge: line.ink,
+              },
             ]}
             stations={stations
               .filter((s) => s.lat !== null && s.lon !== null)

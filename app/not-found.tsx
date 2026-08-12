@@ -49,7 +49,12 @@ export default function NotFound() {
           linking at all.
         </p>
         <p>
-          All {STATIONS.length} stations across the {LINES.length} lines are listed on{' '}
+          {/* The count of lines WITH STATIONS, which is not the count of lines:
+              the Sanying Line is in the registry and its stations are not in
+              MOTC's extract. Deriving it here rather than reusing LINES.length
+              keeps the sentence true when the two numbers differ. */}
+          All {STATIONS.length} stations across the{' '}
+          {new Set(STATIONS.map((s) => s.line)).size} lines the data covers are listed on{' '}
           <Link href="/data/stations/">the station records page</Link>, with codes, names,
           coordinates and interchanges.
         </p>

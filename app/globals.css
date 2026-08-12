@@ -3299,6 +3299,19 @@ a.adjacent-link:hover {
   overflow-x: auto;
   margin-bottom: 1.4em;
   border-radius: 3px;
+  /*
+   * A positioning context, so `position: absolute` descendants stay inside it.
+   *
+   * `.sr-only` is absolutely positioned, and an absolutely positioned element
+   * whose nearest positioned ancestor is the page escapes a scroll container
+   * entirely: it takes its static position — up to 740 px into a table that is
+   * only 320 px wide on a phone — and measures against the document instead.
+   * That is how three visually-hidden source notes in one table cell put 247 px
+   * of horizontal scroll on the whole of /rail/network at 320 px, with nothing
+   * visible anywhere to explain it. Caught by `npm run verify:browser`, which
+   * measures reflow at 320 and is the only thing that would have.
+   */
+  position: relative;
 }
 
 .table-scroll:focus-visible {
@@ -4878,12 +4891,18 @@ a.badge-link:focus-visible {
 
 .km-bar {
   display: block;
-  height: 4px;
+  /* 5px, up from 4: the hairline below eats 1px top and bottom, and a 2px core
+     of the official colour is too little of it to read as that colour. */
+  height: 5px;
   width: var(--km-width);
   min-width: 2px;
   margin-top: 4px;
   margin-left: auto;
   background: var(--km-fill);
+  /* An edge for the three lines whose official colour cannot rule on white —
+     see the note at the call site in app/rail/network/page.tsx. Transparent
+     everywhere else, so this costs the other seven nothing. */
+  box-shadow: inset 0 0 0 1px var(--km-edge, transparent);
   border-radius: 1px;
 }
 

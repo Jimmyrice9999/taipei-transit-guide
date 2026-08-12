@@ -6,6 +6,10 @@ line: G
 aliases:
   - 新店機廠
 updated: 2026-08-06
+hero:
+  image: xindian-depot/hero
+  alt: A multi-storey building at Xindian Depot with banded orange trim, an entrance canopy and vehicle barrier at street level.
+  caption: A building on the Xindian Depot site.
 ---
 
 Xindian Depot maintains the [Songshan–Xindian Line](/rail/lines/songshan-xindian-line/),

@@ -15,7 +15,7 @@ import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import { AA, AA_NON_TEXT, NEAR_BLACK, WHITE, contrast } from '@/lib/color'
-import { LINES, NEUTRAL_LINE } from '@/lib/lines'
+import { LINES, NEUTRAL_LINE, TDX_LINES } from '@/lib/lines'
 import { PROVENANCE } from '@/lib/stations'
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
@@ -43,6 +43,17 @@ const SUPERSEDED: Record<string, { value: string; source: string }> = {
   BL: { value: '#0070BD', source: 'en.wikipedia Module:Adjacent stations' },
   Y: { value: '#FFDB00', source: 'no source found' },
   A: { value: '#8E47AD', source: 'Wikidata' },
+  /*
+   * Not a superseded value like the others — nothing was ever transcribed for
+   * this line, because until run 12 it had no colour on this site at all. What
+   * is in circulation is a PANTONE designation rather than a hex, and the row
+   * exists so that the designation is answered rather than ignored. See the
+   * section below it.
+   */
+  LB: {
+    value: '#4EC3E0',
+    source: '"PANTONE 637 C", unconfirmed, through the commonest of four disagreeing converters',
+  },
 }
 
 /** Perceptual-ish distance, just to say how far off each old value was. */
@@ -88,9 +99,11 @@ export default function LineColoursPage() {
       <BackLink href="/data/" label="Data" />
       <h1 className="page-title">Official line colours</h1>
       <p className="page-summary">
-        Taken from the <code>LineColor</code> field published by each operator through
-        Taiwan MOTC's TDX platform
-        {PROVENANCE.fetchedAt && <>, retrieved {PROVENANCE.fetchedAt.slice(0, 10)}</>}.
+        {TDX_LINES.length} of the {LINES.length} are taken from the <code>LineColor</code>{' '}
+        field published by each operator through Taiwan MOTC's TDX platform
+        {PROVENANCE.fetchedAt && <>, retrieved {PROVENANCE.fetchedAt.slice(0, 10)}</>}. The
+        rest are read from the operator's own material, and the Source column says which is
+        which.
       </p>
 
       <div className="page-body">
@@ -109,6 +122,12 @@ export default function LineColoursPage() {
                   <th scope="col">Badge</th>
                   <th scope="col">Accent ink</th>
                   <th scope="col">Operator</th>
+                  {/* Added in run 12. Before it, this page's claim of provenance
+                      lived in one sentence at the top covering all nine rows —
+                      which stopped being true the moment a tenth arrived from
+                      somewhere else. Provenance that varies by row belongs in a
+                      column. */}
+                  <th scope="col">Source</th>
                 </tr>
               </thead>
               <tbody>
@@ -155,6 +174,16 @@ export default function LineColoursPage() {
                         </span>
                       </td>
                       <td className="colour-operator">{line.operator}</td>
+                      <td className="colour-operator">
+                        {line.colourSource.kind === 'tdx' ? (
+                          'TDX LineColor'
+                        ) : (
+                          <a href={line.colourSource.url} rel="noreferrer">
+                            {line.colourSource.label}
+                          </a>
+                        )}
+                        <span className="colour-sub">read {line.colourSource.accessed}</span>
+                      </td>
                     </tr>
                   )
                 })}
@@ -209,6 +238,40 @@ export default function LineColoursPage() {
             </table>
           </div>
 
+          <h2 className="section-heading">The one that is not from TDX</h2>
+
+          <p>
+            The Sanying Line opened on 30 June 2026 and has no record on the platform of
+            any kind — no line record, so no <code>LineColor</code> to read. Every operator
+            code on TDX was probed for it; New Taipei's two light rail lines turned out to
+            be filed under codes of their own, and there is no equivalent for Sanying.
+          </p>
+
+          <p>
+            What settled it was the operator's own line mark: New Taipei Metro publishes
+            the LB roundel on its Sanying Line station page as a 156×156 lossless PNG, and
+            the whole ring — a third of the image, to the pixel — is{' '}
+            <code>#48B6D2</code>. That is the operator rendering its own line identity at a
+            known value on its own site, which is the same kind of thing a{' '}
+            <code>LineColor</code> field is, read out of a different file.
+          </p>
+
+          <p>
+            <strong>The PANTONE figure is a genuine loose end.</strong> &ldquo;PANTONE
+            637C&rdquo; circulates for this line and could not be confirmed anywhere: not
+            on the operator's site, not on the New Taipei rapid transit bureau's route page
+            or its identity page, and not in either Wikipedia article — all of which say
+            only{' '}
+            <span lang="zh-Hant">淺藍色</span>, light blue. Nor is it a value you could
+            simply adopt: the
+            third-party PANTONE-to-sRGB converters disagree among themselves
+            (<code>#4EC3E0</code>, <code>#4DC5E2</code>, <code>#42BFDF</code>,{' '}
+            <code>#48A8D0</code>), so taking the designation on trust would still mean
+            picking one conversion over three others. The table above records the
+            commonest of them against the operator's own value; the difference is what it
+            is, and this page is not going to resolve it by choosing.
+          </p>
+
           <h2 className="section-heading">A warning about citation chains</h2>
 
           <p>
@@ -249,7 +312,9 @@ export default function LineColoursPage() {
             <li>
               <strong>These are screen values.</strong> DORTS states its signage system
               defines Pantone, RGB and CMYK values per line; that specification is not
-              published openly and may not match these hex values exactly.
+              published openly and may not match these hex values exactly. The Sanying
+              Line is the case where that gap is visible rather than theoretical — see
+              above.
             </li>
             <li>
               <strong>The source data is not new.</strong> See{' '}

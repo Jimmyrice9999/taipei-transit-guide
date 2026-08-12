@@ -17,7 +17,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
-import { LINES } from '@/lib/lines'
+import { LINES, TDX_LINES } from '@/lib/lines'
 import { getAllPages } from '@/lib/content'
 
 export const metadata: Metadata = {
@@ -75,10 +75,15 @@ export default function AboutPage() {
           <a href={PROVENANCE.sourceUrl} rel="noreferrer">
             TDX
           </a>
-          , the Ministry of Transportation and Communications' open data platform. So do the
-          line colours — all {LINES.length} of them, from the publishing operator's own line
-          record. None of it is transcribed by hand, and the pipeline that reads it is
-          committed to the repository, so the same figures come out for anyone who runs it.
+          , the Ministry of Transportation and Communications' open data platform. So do{' '}
+          {TDX_LINES.length} of the {LINES.length} line colours, from the publishing
+          operator's own line record. The exception is the Sanying Line, which opened in
+          June 2026 and has no record on the platform at all; its colour was read instead
+          from the operator's own line mark, and{' '}
+          <Link href="/data/line-colours/">the line colours page</Link> says exactly which
+          file and what it was checked against. None of it is transcribed by hand, and the
+          pipeline that reads it is committed to the repository, so the same figures come
+          out for anyone who runs it.
         </p>
         <p>
           That decision has already paid for itself twice. Every English-language line

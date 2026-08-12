@@ -5007,3 +5007,312 @@ Screenshot set for this run is `docs/screenshots/r11-*` at 375 / 768 / 1440 /
 - Parts 1–6 and 9–15 were out of scope by instruction and are untouched, other
   than the two LRT `line:` fields and the Wenhu profile caption, both of which
   Part 7 required.
+
+════════════════════════════════════════════════════════════════════════════
+
+# Run 12 — the queued re-fetches, 12 August 2026
+
+Scoped narrowly by instruction: re-run the seven Commons fetches run 11 left
+blocked by rate-limiting, fetch the alternate Latin-credited C341 photo
+instead of touching `lib/text-tokens.ts`, look at every image before wiring
+it in, and stop rather than hammer Commons if it 429s again. Nothing else.
+
+**Commons had cooled down.** All nine fetches — the seven blocked candidates,
+Nangang's post-collision-bug refetch counted among them, plus C341 — landed
+on the first attempt, zero 429s across the whole run. No new searching: every
+title came straight from run 11's entry above.
+
+| Subject | File | Artist · licence |
+| --- | --- | --- |
+| Nangang Depot | `南港機廠.jpg` | Repeat · CC BY-SA 2.5 |
+| Luzhou Depot | `2020 Luzhou Depot.jpg` | Taiwankengo · CC BY-SA 4.0 |
+| Xindian Depot | `Taipei MRT Xindian Depot1.jpg` | User:Alexsh · CC BY-SA 3.0 |
+| Maokong Gondola cabin | `Maokong Gondola regular cabin No.71 20151108.jpg` | Solomon203 · CC BY-SA 4.0 |
+| Maokong Gondola tower | `Maokong Gondola Column No.16 20151108.jpg` | Solomon203 · CC BY-SA 4.0 |
+| YouBike | `YouBike bicycles parking on Shifu Road, Taipei City 20100721.jpg` | Lord Koxinga · CC BY-SA 3.0 |
+| Blue Highway ferry | `2020 Tamsui Ferry Pier.jpg` | Taiwankengo · CC BY-SA 4.0 |
+| Danhai LRT interior | `淡海輕軌內裝.jpg` | Jason110234 · CC BY-SA 4.0 |
+| C341 (Latin-credited alternate) | `Siemens SGP Verkehrstechnik 2003 plate on Taipei MRT train 341.jpg` | Solomon203 · CC BY-SA 3.0 |
+
+**Every downloaded image was opened and checked against its claimed subject
+before wiring in**, per the brief and per run 11's own near-miss: the Nangang
+sign reads 南港機廠 in frame; the Luzhou and Xindian shots show a depot yard
+and a depot building respectively; the gondola cabin and tower shots show
+exactly what their filenames say; the YouBike and ferry shots are unambiguous;
+the Danhai interior shows an unopened tram's seating still under delivery
+wrap, consistent with the line's construction status; the C341 alternate is
+the manufacturer's plate itself — `SIEMENS / 2003 / Siemens SGP
+Verkehrstechnik` — legible in frame. No collisions, nothing wrong-subject.
+
+**Wired in:** hero images on `nangang-depot.md`, `luzhou-depot.md`,
+`xindian-depot.md` and `c341.md`; new `hero:` blocks on `bike/_index.md`
+(`youbike/hero`) and `ferry/_index.md` (`ferry/hero`), giving both scope
+sections a photograph for the first time; a second inline photo on
+`danhai-lrt.md` (interior, beside the existing station platform shot); two
+inline photos on `gondola/_index.md` (cabin, tower), its first inline body
+images. C341's fleet page has a photograph again, without touching the
+tokenizer — that fix is still open for whoever wants the general case.
+
+**Two real bugs found by running the suite, not by eye:**
+
+- **`_index.md` folder bodies had no figure pipeline.** `getFolderBody()` in
+  `lib/content.ts` rendered Markdown through `remarkRehype` → `rehypeRichText`
+  → `rehypeTableScroll`, and never through `rehypeFigures` — the plugin that
+  turns a Markdown image into a real `<figure>` with dimensions, caption and
+  credit. Every other content type gets it; folder index pages never had an
+  inline image before this run to expose the gap. The gondola cabin and tower
+  images built as bare `<img>` tags with a stray `title` attribute and no
+  `width`/`height`, which `tests/accessibility.test.mts` and
+  `tests/images.test.mts` both refused — correctly, since an undimensioned
+  image is a real layout-shift bug, not a test being fussy. Fixed by adding
+  `rehypeFigures` to `getFolderBody`'s chain, in the same position (after
+  `rehypeRichText`) as the article pipeline uses.
+- **A second claims-ratchet near-miss**, same shape as run 11's: the gondola
+  cabin's alt text said "numbered 71", and `71` alone trips the claim
+  classifier's count signal (`\d{2,}`) as an unsourced assertion in body
+  prose — alt text is prose to that scanner, because Markdown image syntax is
+  stripped down to `![alt text]` before sentence-splitting, not removed
+  outright. Caught by `npm test` before commit. Fixed by cutting the number
+  from the alt text — the cabin number is not something this page asserts
+  anything about — rather than raising `docs/claims-baseline.json`, per Part
+  14's standing rule.
+
+**Suite, after both fixes:** `npm test` 183/183, `npm run verify` clean — 0
+broken links, a11y 0 errors / 0 warnings, 18/18 fact cross-checks, claims
+steady at the baseline of 32. Not re-run this pass: `npm run verify:browser`
+and a screenshot sweep — still queued from run 11's own next-steps list,
+unaffected by anything done here.
+
+### What's still open
+
+1. `lib/text-tokens.ts`: a Han run either side of a single space still
+   doesn't merge into one tagged span, so a Commons username like 蒼空 翔
+   would still defeat the attribution substring check. Sidestepped again
+   this run by using a Latin-credited photo; the general fix is still
+   nobody's done it.
+2. Screenshot sweep at 375/1920/2560 for every image-bearing page — queued
+   since run 11, out of scope for this narrowly-scoped run too.
+3. Depots are now six of eight with a photograph — Beitou and Muzha and
+   Neihu already had one; Nangang, Luzhou and Xindian gained one this run.
+   Tucheng and Xinzhuang remain the two run 11 found nothing licence-clean
+   for at all. Every rail line, every rolling-stock fleet, the gondola
+   section and both remaining planned sections (bike, ferry) now carry at
+   least one photograph.
+
+## 86. Part 9 — branch track, and finding a colour that isn't in the data
+
+Scoped to Part 9 alone, by instruction. Three things were asked for and one of
+them, on inspection, was already done.
+
+### 86.1 Light rail: already there, verified rather than rebuilt
+
+Danhai and Ankeng went onto the map and into the length bars in run 10 (§79).
+This pass confirmed it rather than redoing it: both draw on `/rail/network`,
+both carry a length bar (8.42 km and 7.10 km against the Airport MRT's 51.76),
+and the mode distinction a bar chart cannot make is carried by run 11's line
+icons — pantograph and tram body for V and K, wheels on rail for the metro.
+Screenshot: `docs/screenshots/p9tab-rail-network-1440.png`.
+
+### 86.2 Branch track is now drawn as branch track
+
+`branchTint()` had existed in `lib/lines.ts` since run 11, fully documented,
+and was called from nowhere. Every branch on the network drew in its parent's
+exact colour, so a two-station shuttle looked like trunk and the Luzhou branch
+— which TDX publishes as a run of its own — looked like a second Zhonghe–Xinlu
+main line.
+
+**Finding the branch was the work, not tinting it.** TDX publishes one
+alignment per line with no marking of which part is the branch. What it does
+give is which stations a branch route reaches that the trunk route never calls
+at, and those stations sit on branch track. `partitionBranch()` in
+`lib/geometry.ts` projects every station onto each run and cuts the run where
+branch stations continue past the last trunk station on it. Two shapes occur
+and both are handled: a spur chained onto the end of a trunk run (Xinbeitou,
+Xiaobitan, Kanding), and a branch published as a separate run with no trunk
+station on it at all (Luzhou).
+
+The cut lengths are the check that it works:
+
+| line | branch | cut | real spur |
+| --- | --- | --- | --- |
+| R | R22A Xinbeitou | 1.13 km | ~1.2 km |
+| G | G03A Xiaobitan | 1.97 km | ~1.9 km |
+| O | O50–O54 Luzhou | 6.34 km | branch + overrun |
+| V | V10–V11 Kanding | 1.40 km | ~1.4 km |
+
+The junction station is deliberately counted on *both* runs. Assigning each
+station to its nearest run — the obvious implementation — puts R22 Beitou on
+whichever run it is marginally closer to, leaving the other run thinking its
+trunk stops at R23 and tinting a kilometre of trunk track.
+
+**The tint alone fails contrast, and no tint amount fixes it.** Measured
+against the map's `#FAF9F7` paper, the 45% tints land between 1.40
+(Zhonghe–Xinlu) and 2.74 (Tamsui–Xinyi) — all under the 3:1 WCAG 1.4.11 asks
+of a graphical object. Reducing the mix does not rescue it, because the
+Zhonghe–Xinlu Line's **own** colour is only 1.90 against that ground:
+
+| amount | R | G | O | V |
+| --- | --- | --- | --- | --- |
+| parent | 5.02 | 5.46 | **1.90** | 3.57 |
+| 0.30 | 3.60 | 3.02 | 1.55 | 2.69 |
+| 0.45 | 2.74 | 2.28 | 1.40 | 2.18 |
+
+So the branch is drawn as a **pale core inside a hairline of the line's own
+`ink`**, which is derived against 4.6:1 and therefore has a defined edge by
+construction. The core fills 3.6 of the 5-unit stroke, so it still reads as
+the lighter hue the brief asked for.
+
+The distinction between the trunk stroke and the branch stroke is deliberate
+and worth stating: the trunk keeps the essential-presentation exception in
+1.4.11 because it is the operator's published colour and printing a different
+one would misreport the source. A tint *we derived* has no claim on that
+exception, so it carries its own edge.
+
+**Two line-code badges were sitting on top of the branch they labelled.**
+Xinbeitou diverges within a badge width of the end of a run, and so does
+Kanding; the badge covered most of a 17 px spur. Badges now step away from
+branch track along the vector from the branch's centroid until clear.
+
+Also named in words, never only tinted: the network map caption lists which
+lines have a branch (built from the data, so it cannot go stale), and each
+line page's caption names its branch terminus.
+
+Screenshots: `lineb-rail-lines-tamsui-xinyi-line-1440.png` (Xinbeitou) and
+`lineb-rail-lines-zhonghe-xinlu-line-1440.png` (Luzhou).
+
+### 86.3 The Sanying colour, and why it is not the PANTONE figure
+
+Run 10 established that the Sanying Line is genuinely not on TDX and stopped
+there, deliberately, because hand-adding it would have moved every line count
+and length bar on the site as a side effect. That reasoning was right and the
+instruction this pass was to solve it properly instead.
+
+**Where the colour came from.** New Taipei Metro publishes the LB line mark on
+its own Sanying Line station page — a 156×156 **lossless PNG**, used as the
+header of the station table. It is a light blue ring with `LB` set inside it,
+and 32.6% of its pixels, the entire ring, are one exact value: **`#48B6D2`**.
+That is the operator rendering its own line identity at a known value on its
+own site — the same standing as a `LineColor` field, read out of a different
+file. Recorded in `OFF_PLATFORM` in `lib/lines.ts` with its URL and read date.
+
+Derived values clear AA with the usual margin: badge `#48B6D2` with near-black
+text at 7.62, ink `#257E95` at 4.67 on white.
+
+**The PANTONE figure is published as a conflict, not resolved.** The brief
+named PANTONE 637C. It could not be confirmed anywhere: not on the operator's
+site, not on the New Taipei rapid transit bureau's Sanying route page or its
+CIS page, and not in either the Chinese or English Wikipedia article — all of
+which say only 淺藍色, light blue. Nor is it adoptable even on trust: the
+third-party PANTONE-to-sRGB converters disagree among themselves (`#4EC3E0`,
+`#4DC5E2`, `#42BFDF`, `#48A8D0`), so taking the designation would still mean
+choosing one conversion over three others. `/data/line-colours` now carries a
+section stating this, and the commonest conversion sits in the reconciliation
+table against the operator's own value.
+
+### 86.4 The count and bar consequences, handled on purpose
+
+Adding a tenth line to a registry whose entire premise is "every colour comes
+from TDX" touches more than the network page. Each consequence was taken
+deliberately:
+
+- **`Line` gained `colourSource` and `onTdx`.** Every line says where its
+  colour was read, including the nine that came from the obvious place — a
+  provenance field that only appears on the exception is a field nobody reads
+  on the rule. `TDX_LINES` is the subset the platform carries.
+- **The network page no longer filters on `stations.length > 0`.** That filter
+  *was* the reason Sanying was missing from the table: it has no station
+  records, so it fell out silently. It now has a row.
+- **Its figures are the operator's, and marked as such.** Station count,
+  route length and end-to-end time come from `OPERATOR_PUBLISHED` in
+  `lib/network.ts`, each cell carrying a dagger with the source in `title` and
+  in screen-reader text, plus a note under the table. Termini and Measured are
+  em dashes, because there is nothing honest to put there.
+- **Its length bar is drawn to the same scale as every other**, and counts
+  toward the scale. A published route length is the same quantity whoever
+  published it; what differs is the source, and that is what the dagger says.
+- **The page summary says what its counts are counts of.** "10 lines, 180
+  stations" is still the registry's own numbers — `npm run facts` reads that
+  sentence and compares both against `LINES.length` and `STATIONS.length` —
+  but the sentence now states that 9 of the 10 are drawn from MOTC geometry
+  and that Sanying's 12 stations are outside the 180.
+- **`/about`, `/data`, `/data/line-colours`, `/rail` and the 404** all carried
+  sentences asserting TDX provenance or counting lines. Each was reworded to
+  say what is now true; the colours page gained a **Source column**, because
+  provenance that varies by row belongs in a column and not in one sentence at
+  the top.
+- **`/data/stations` said "seven lines and three operators"** in two hardcoded
+  strings — already wrong since run 10, adjacent to a `{byLine.length}` two
+  lines away that had been counting correctly the whole time. Both derived
+  now, counting *companies* rather than TDX operator codes.
+- **The JSON download** carries `colourSource` per line; its top-level
+  `source` field no longer claims TDX for all of them.
+- **`lib/line-character.ts`**: LB joins the DRIVERLESS set on its page's own
+  sourced automation fact. Its *running gear* takes the steel-wheel default,
+  and that default is now explicitly recorded as reaching two lines outside
+  the Wenhu-page statement that justifies it (the Airport MRT, and now
+  Sanying). It is the weakest claim in that file and it is written down.
+
+**Two new guards, so none of this can drift:**
+
+1. `npm run facts` now checks `OPERATOR_PUBLISHED` against the frontmatter on
+   `content/rail/lines/sanying-line.md` — all three figures, and that each of
+   those rows carries a `source:`. A number in two places gets checked, not
+   hoped about.
+2. A `CLAIMS` rule fails the build if the site says MOTC holds no record of
+   the Sanying Line while `lib/lines.ts` has found a TDX line record for LB.
+   If a refetch ever brings it onto the platform, three pages of prose fail
+   loudly rather than quietly becoming false.
+
+`content/rail/lines/sanying-line.md` gained `line: LB`, so the page finally
+accents in its own colour — the same fix run 11 made for Danhai and Ankeng.
+
+### 86.5 Two bugs found by doing this, both fixed
+
+- **`needsHairline` has been computed since run 5 and drawn by nothing.** It
+  is asserted by a test and printed by `npm run palette`; no component ever
+  read it. So the Circular Line's length bar had been shipping at **1.19:1**
+  against the paper — not a rule so much as a rumour of one — and
+  Zhonghe–Xinlu's at 1.90. Sanying would have made it three at 2.21. The bars
+  now take a 1px inset ring in the line's own ink where `needsHairline` is
+  set, and are 5px tall rather than 4 so a 3px core of the official colour
+  survives. The other seven lines are unchanged.
+- **`.sr-only` escaped `.table-scroll` and put 247 px of horizontal scroll on
+  `/rail/network` at 320 px.** An absolutely positioned element whose nearest
+  positioned ancestor is the page takes its static position — up to 740 px
+  into a table that is 320 px wide on a phone — and measures against the
+  document. Three visually-hidden source notes in one table cell did it, with
+  nothing visible anywhere to explain it. `.table-scroll` is now
+  `position: relative`. Caught by `npm run verify:browser`, which measures
+  reflow at 320 and is the only thing in the suite that would have.
+
+### 86.6 Suite
+
+`npm test` **184/184** (nine tests updated, two added), `npm run facts`
+**19/19 cross-checks, no contradictions**, `npm run verify` clean end to end —
+0 broken links, a11y 0 errors / 0 warnings, 0 genuine WCAG contrast failures,
+claims steady at the baseline of 32. `npm run verify:browser` **clean** after
+the reflow fix above. `npm run palette` — all 10 lines clear AA.
+
+Nine tests assumed every line in the registry has TDX data. Each was rescoped
+to `TDX_LINES` with the reason stated, and the exception pinned by a new test
+asserting that a line the platform does not carry has no geometry, has an
+operator colour source, and has a URL for it — so the hole in the old
+assertion is now itself an assertion.
+
+Screenshots at 375 / 768 / 1440 / 1920 / 2560, all looked at:
+`docs/screenshots/p9-rail-network-*.png`.
+
+### 86.7 What Part 9 did not do
+
+1. **Sanying is still not on the map**, and should not be: there is no
+   geometry for it and drawing one would mean inventing an alignment. It is in
+   the table, in its own colour, with the reason stated above the map.
+2. **Its 12 stations are not in the station registry.** They are published
+   (LB01 Dingpu through LB12 Yingtao Fude, named by the city in 2017) but
+   hand-typing twelve stations with no coordinates into a registry whose whole
+   value is that nothing in it is transcribed by hand is the wrong trade. The
+   count is on the network page, sourced and daggered.
+3. **Sanying's running gear is inferred, not sourced** — see 86.4.
+4. **Line-page station labels clip at the right edge** at some widths
+   (`lineb-rail-lines-zhonghe-xinlu-line-1440.png` shows "Minquan W. R"). Not
+   introduced here and not Part 9; noted for Part 13.

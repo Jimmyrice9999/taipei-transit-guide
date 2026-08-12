@@ -87,15 +87,17 @@ test('needsHairline is set exactly when the colour is too pale to rule on white'
   }
 })
 
-test('the lines needing a hairline are Orange and Yellow only', () => {
+test('the lines needing a hairline are Orange, Yellow and Sanying only', () => {
   /*
    * Pinned because the design reference records this as a finding: the official
    * brown is darker than the community value it replaced and no longer needs
    * the hairline. If a refetch changes which lines need it, that is a real
    * change to the design and should be noticed, not absorbed.
    */
+  // LB joined in run 12: #48B6D2 is 2.21:1 on white, so its length bar and its
+  // accent rule need the ink hairline for the same reason Orange and Yellow do.
   const needing = LINES.filter((l) => l.needsHairline).map((l) => l.code).sort()
-  assert.deepEqual(needing, ['O', 'Y'])
+  assert.deepEqual(needing, ['LB', 'O', 'Y'])
 })
 
 test('official colours are normalised uppercase hex', () => {

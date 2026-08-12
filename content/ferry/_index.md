@@ -3,6 +3,10 @@ title: Ferry
 description: The Blue Highway — small, real, inside the fare system, and absent from almost every English account of Taipei transit.
 order: 5
 status: planned
+hero:
+  image: ferry/hero
+  alt: A small ferry on the Tamsui River with New Taipei City's riverside apartment towers on the far bank behind it.
+  caption: A ferry on the Tamsui River.
 ---
 
 Taipei has scheduled passenger boats. The Blue Highway routes on the Tamsui

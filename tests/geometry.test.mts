@@ -20,7 +20,7 @@ import {
   simplify,
   type Point,
 } from '../lib/geometry.ts'
-import { LINES } from '../lib/lines.ts'
+import { LINES, TDX_LINES } from '../lib/lines.ts'
 import { STATIONS } from '../lib/stations.ts'
 import { getLineSummaries } from '../lib/network.ts'
 import { getTrunkRoute } from '../lib/routes.ts'
@@ -66,8 +66,23 @@ test('Wenhu and Bannan chain into a single continuous run', () => {
 })
 
 test('every line publishes geometry', () => {
-  for (const line of LINES) {
+  for (const line of TDX_LINES) {
     assert.ok(getLineGeometry(line.code), `${line.code} has no geometry`)
+  }
+})
+
+test('a line the platform does not carry has no geometry, and says so', () => {
+  /*
+   * The other half of the test above. "Every line has geometry" was true until
+   * run 12 and is now true only of the lines TDX carries — so the exception is
+   * pinned here rather than left as a hole in the assertion. If a refetch ever
+   * brings the Sanying Line onto the platform, this fails and the colour, the
+   * map and three pages of prose all need revisiting.
+   */
+  for (const line of LINES.filter((l) => !l.onTdx)) {
+    assert.equal(getLineGeometry(line.code), null, `${line.code} unexpectedly has geometry`)
+    assert.equal(line.colourSource.kind, 'operator')
+    assert.ok(line.colourSource.url, `${line.code} has no source URL for its colour`)
   }
 })
 
@@ -204,7 +219,7 @@ test('branch flags come from routes, not from geometry breaks', () => {
 })
 
 test('trunk termini are the first and last station drawn on the map', () => {
-  for (const summary of getLineSummaries()) {
+  for (const summary of getLineSummaries().filter((s) => s.line.onTdx)) {
     const trunk = getTrunkRoute(summary.line.code)!
     assert.equal(summary.from?.code, trunk.from)
     assert.equal(summary.to?.code, trunk.to)
@@ -250,11 +265,12 @@ test('the metre approximation is sane at Taipei latitudes', () => {
   assert.equal(metres([121.5, 25.0], [121.5, 25.0]), 0)
 })
 
-// Counted from LINES rather than written as 7. The literal outlasted the fact
-// twice — the network was five lines, then seven, and is nine since run 10.
+// Counted from the registry rather than written as 7. The literal outlasted the
+// fact twice — the network was five lines, then seven, nine since run 10, and
+// ten since run 12, of which nine have geometry.
 test('every line reports geometry totals', () => {
   const geometry = getAllLineGeometry()
-  assert.equal(geometry.length, LINES.length)
+  assert.equal(geometry.length, TDX_LINES.length)
   for (const g of geometry) {
     assert.ok(g.lengthKm > 0, `${g.lineId} has zero length`)
     assert.ok(g.points <= g.rawPoints, `${g.lineId} gained points during simplification`)

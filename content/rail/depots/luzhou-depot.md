@@ -6,6 +6,10 @@ line: O
 aliases:
   - 蘆洲機廠
 updated: 2026-08-06
+hero:
+  image: luzhou-depot/hero
+  alt: Luzhou Depot's stabling yard seen from above, tracks fanning out toward a covered platform building, New Taipei's skyline behind it.
+  caption: Luzhou Depot's yard, at the end of the Zhonghe–Xinlu Line's Luzhou arm.
 ---
 
 Luzhou Depot sits at the end of the [Zhonghe–Xinlu Line](/rail/lines/zhonghe-xinlu-line/)'s

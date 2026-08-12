@@ -3,6 +3,10 @@ title: Bike
 description: YouBike — the shared bicycle system that is genuinely part of the transit network, with a generational story nobody has told properly in English.
 order: 3
 status: planned
+hero:
+  image: youbike/hero
+  alt: Orange YouBike bicycles parked in docks on a Taipei street, baskets and rental card readers visible, taxis passing behind.
+  caption: YouBikes parked on a Taipei street.
 ---
 
 YouBike belongs on a transit site: it shares the stored-value cards, the

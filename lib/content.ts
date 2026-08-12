@@ -509,6 +509,7 @@ export async function getFolderBody(parents: string[], slug: string): Promise<st
     .use(remarkRehype)
     .use(rehypeSlug)
     .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning })
+    .use(rehypeFigures, { getSize: getImageSize }) // captions, credits, real dimensions
     .use(rehypeTableScroll)
     .use(rehypeSafeLinks, {
       onWarning: (message: string) => console.warn(`  ⚠ ${relative}: ${message}`),

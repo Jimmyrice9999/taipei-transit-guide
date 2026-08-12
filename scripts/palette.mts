@@ -49,9 +49,16 @@ for (const line of [...LINES, NEUTRAL_LINE]) {
 
 console.log(`\nthresholds: text ${AA}:1, non-text ${AA_NON_TEXT}:1`)
 
-console.log('\nprovenance: Taiwan MOTC TDX LineColor, government open data')
+/* Printed per line, not as one blanket sentence. The blanket sentence was true
+   for four runs and stopped being true the moment a line arrived that TDX does
+   not carry — and a footer nobody re-reads is exactly where that kind of stale
+   claim survives. */
+console.log('\nprovenance')
 for (const line of LINES) {
-  console.log(`  ${pad(line.code, 4)} ${pad(line.name, 22)} operator ${line.operator}`)
+  console.log(
+    `  ${pad(line.code, 4)} ${pad(line.name, 22)} operator ${pad(line.operator, 8)}` +
+      `${line.colourSource.kind === 'tdx' ? 'TDX LineColor' : line.colourSource.label}`,
+  )
 }
 
 if (failures > 0) {

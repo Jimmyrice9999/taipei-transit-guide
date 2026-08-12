@@ -17,7 +17,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 
-import { LINES } from '../lib/lines.ts'
+import { LINES, TDX_LINES } from '../lib/lines.ts'
 import { contrast } from '../lib/color.ts'
 import { BOUNDARY_EXEMPT, SWATCHES, THRESHOLD, declaredColours } from '../lib/surfaces.ts'
 
@@ -61,10 +61,30 @@ test('the network map labels every line with its code', () => {
    * which anywhere on the page's main illustration.
    */
   const html = read('rail/network/index.html')
-  for (const line of LINES) {
+  /*
+   * TDX_LINES, not LINES: from run 12 the registry carries a line the platform
+   * has no geometry for, so it is in the table and not on the map. Asserting
+   * over every line would demand a label for something that is not drawn —
+   * and asserting over "whatever happens to be drawn" would let a line fall
+   * off the map without failing anything. The set that must be labelled is
+   * the set that has geometry, which is the set TDX carries.
+   */
+  for (const line of TDX_LINES) {
     assert.ok(
       html.includes(`class="routemap-linelabel-text">${line.code}<`),
       `${line.code} is not labelled on the network map`,
+    )
+  }
+
+  for (const line of LINES.filter((l) => !l.onTdx)) {
+    assert.ok(
+      !html.includes(`class="routemap-linelabel-text">${line.code}<`),
+      `${line.code} is labelled on the map but has no geometry to label`,
+    )
+    // ...and must still be reachable, or "not drawn" becomes "not there".
+    assert.ok(
+      html.includes(`>${line.code}<`),
+      `${line.code} is neither on the map nor anywhere else on the page`,
     )
   }
 })

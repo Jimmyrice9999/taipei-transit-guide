@@ -6,7 +6,13 @@
  */
 
 import { TDX_ROUTES, TDX_TRANSFERS } from './tdx.ts'
-import { getLineGeometry, measureLine, type Point } from './geometry.ts'
+import {
+  getLineGeometry,
+  measureLine,
+  partitionBranch,
+  type Partition,
+  type Point,
+} from './geometry.ts'
 import { LINES, type Line } from './lines.ts'
 import { getBranchRoutes, getTrunkRoute } from './routes.ts'
 import { STATIONS, getStation, type Station } from './stations.ts'
@@ -34,6 +40,43 @@ const routes = [
 const transfers = [
   ...TDX_TRANSFERS<TransferRow>(),
 ]
+
+/**
+ * What the operator publishes for a line the platform does not carry.
+ *
+ * ── Why these three numbers are typed out here ───────────────────────────────
+ *
+ * Every other figure on the network page is read out of data/tdx/. The Sanying
+ * Line has no record there at all (see OFF_PLATFORM in lib/lines.ts), so its
+ * row would otherwise be four em dashes — a line present in the list and absent
+ * from every column, which reads as a fault rather than as a fact about the
+ * source.
+ *
+ * These are the operator's own figures from its opening announcement, the same
+ * ones the line page states and cites. They are duplicated here rather than
+ * read out of that page's frontmatter by matching on label text, and
+ * `npm run facts` checks the two against each other — this project's answer to
+ * a number living in two places has always been to check it, not to hope.
+ */
+export type PublishedFigures = {
+  stations: number
+  routeKm: number
+  endToEndMin: number
+  /** Frontmatter source id on the line page, for the cross-check. */
+  sourceId: string
+  /** One line naming the material, for the footnote. */
+  label: string
+}
+
+const OPERATOR_PUBLISHED: Record<string, PublishedFigures> = {
+  LB: {
+    stations: 12,
+    routeKm: 14.29,
+    endToEndMin: 30,
+    sourceId: 'ntmetro-opening',
+    label: "New Taipei Metro's own opening announcement, 30 June 2026",
+  },
+}
 
 export type LineSummary = {
   line: Line
@@ -82,6 +125,12 @@ export type LineSummary = {
    * Circular Line measures 12.24 km against a published 15.4.
    */
   runs: number
+  /**
+   * Operator figures, for a line TDX has no record of. Null on every line the
+   * platform carries — those get their numbers from the data, and mixing the
+   * two silently would be the whole problem.
+   */
+  published: PublishedFigures | null
 }
 
 export function getLineSummaries(): LineSummary[] {
@@ -142,8 +191,65 @@ export function getLineSummaries(): LineSummary[] {
       overrunKm: measurement ? measurement.overrunKm : null,
       hasBranch: getBranchRoutes(line.code).length > 0,
       runs: geometry ? geometry.paths.length : 0,
+      published: line.onTdx ? null : (OPERATOR_PUBLISHED[line.code] ?? null),
     }
   })
+}
+
+/**
+ * One line's drawn geometry, with its branch track separated from its trunk.
+ *
+ * Every map on the site goes through this rather than through `getLineGeometry`
+ * directly, so a branch is drawn as a branch on the network map, on the line
+ * page and on a station page alike, without each of them having to know which
+ * lines have one.
+ *
+ * `branch` is empty for the five lines that have none, which makes the caller's
+ * job the same either way.
+ */
+export function getLineTrack(
+  lineCode: string,
+): Partition & { runs: number; /** The branch's own terminus, per branch. */ branchStations: Station[] } {
+  const geometry = getLineGeometry(lineCode)
+  if (!geometry) return { trunk: [], branch: [], runs: 0, branchStations: [] }
+
+  const trunkRoute = getTrunkRoute(lineCode)
+  const onTrunk = new Set(trunkRoute?.stations ?? [])
+
+  const points = (codes: Iterable<string>): Point[] =>
+    [...codes]
+      .map((code) => getStation(code))
+      .filter((s): s is Station => !!s && s.lat !== null && s.lon !== null)
+      .map((s) => [s.lon!, s.lat!] as Point)
+
+  // Stations a branch route reaches that the trunk route never calls at. Taken
+  // from the routes rather than from station codes, so an "A" suffix is not
+  // load-bearing — the Luzhou branch has no suffixed codes at all.
+  const branchCodes = new Set<string>()
+  const termini: string[] = []
+  for (const route of getBranchRoutes(lineCode)) {
+    for (const code of route.stations) if (!onTrunk.has(code)) branchCodes.add(code)
+    // Whichever end of the branch route is not on the trunk is the branch's own
+    // terminus — taking `to` would name Nanshijiao on a branch to Luzhou if the
+    // source ever published that route the other way round.
+    const outer = [route.to, route.from].find((code) => !onTrunk.has(code))
+    if (outer) termini.push(outer)
+  }
+
+  const { trunk, branch } = partitionBranch(
+    geometry.paths,
+    points(onTrunk),
+    points(branchCodes),
+  )
+
+  return {
+    trunk,
+    branch,
+    runs: geometry.paths.length,
+    branchStations: termini
+      .map((code) => getStation(code))
+      .filter((s): s is Station => !!s),
+  }
 }
 
 export type Interchange = {

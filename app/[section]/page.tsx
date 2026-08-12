@@ -18,6 +18,7 @@ import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
 import { getImage } from '@/lib/images'
 import { LINES, NEUTRAL_LINE } from '@/lib/lines'
+import { getOperator } from '@/lib/operators'
 import { getFolderBody, getPages, getSection, getSections, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string }> }
@@ -108,7 +109,14 @@ export default async function SectionPage({ params }: Props) {
                   come from that data.
                 */}
                 <span className="card-desc">
-                  All {LINES.length} lines across {new Set(LINES.map((l) => l.operator)).size}{' '}
+                  {/* Companies, not TDX operator codes — the platform files New
+                      Taipei's two light rail lines under codes of their own,
+                      and counting those made three operators read as five. */}
+                  All {LINES.length} lines across{' '}
+                  {
+                    new Set(LINES.map((l) => getOperator(l.operator)?.name ?? l.operator))
+                      .size
+                  }{' '}
                   operators, with a geographic map drawn from official route geometry.
                 </span>
               </span>

@@ -35,6 +35,18 @@
  *
  * That inference is recorded here so it can be replaced by a citation rather
  * than rediscovered. It is not laundered into the icon as if it were sourced.
+ *
+ * WHERE THE DEFAULT REACHES FURTHEST
+ *
+ * The Wenhu sentence is a statement about TRTC's network, so it does not cover
+ * the Airport MRT (Taoyuan Metro) and, from run 12, does not cover the Sanying
+ * Line (New Taipei Metro) either. Both take the steel-wheel default on nothing
+ * but the fact that rubber-tyred metro is rare and Wenhu is the region's only
+ * one. That is the weakest claim in this file, it is two lines wide, and it is
+ * written down here rather than left implicit. The Sanying Line's own page
+ * says its rolling stock is not yet established beyond "Hitachi-built"; when a
+ * builder's or operator's record settles it, RUBBER_TYRED above is where the
+ * answer goes — or does not.
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
@@ -66,12 +78,14 @@ const RUBBER_TYRED = new Set(['BR'])
  *
  * BR — Wenhu Line page, facts: Automation "GoA4, driverless", cited to TRTC.
  * Y  — Circular Line page, facts: Automation "Fully automatic, driverless".
+ * LB — Sanying Line page, facts: Automation "Driverless", cited to the
+ *      operator's own opening announcement.
  *
  * Danhai and Ankeng are widely described as driverless too and neither has a
  * page with a sourced automation fact, so neither is listed. When those pages
  * are written this set is where the answer goes.
  */
-const DRIVERLESS = new Set(['BR', 'Y'])
+const DRIVERLESS = new Set(['BR', 'Y', 'LB'])
 
 export function getCharacter(line: Line): LineCharacter {
   const running: Running = line.lightRail

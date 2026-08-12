@@ -19,6 +19,8 @@ Tamsui, feeding the red line rather than competing with it, and it is run by
 
 ![The canopy-covered platform at Danhai Xinshi Zhen Station, empty in the rain](/images/danhai-lrt/station-800.webp "Danhai Xinshi Zhen Station, on the new town side of the line. — 梁立豪, CC BY-SA 4.0, Wikimedia Commons")
 
+![The empty interior of a Danhai LRT tram, seats still wrapped in protective plastic ahead of entry into service](/images/danhai-lrt/interior-800.webp "A Danhai LRT tram's interior, seating still under delivery wrap. — Jason110234, CC BY-SA 4.0, Wikimedia Commons")
+
 *This is a scope page.* The line's route, fleet — including the locally built
 trams — phasing and the under-construction second phase are all still to be
 written. Its stations are not yet in this site's data extract, so no station

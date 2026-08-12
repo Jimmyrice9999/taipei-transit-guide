@@ -11,7 +11,7 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
-import { NEUTRAL_LINE, LINES } from '@/lib/lines'
+import { NEUTRAL_LINE, LINES, TDX_LINES } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 
 export const metadata: Metadata = {
@@ -45,9 +45,10 @@ export default function DataPage() {
               <span className="data-card-title">Official line colours</span>
               <span className="data-card-desc">
                 All {LINES.length} lines: hex values, swatches, contrast against white and
-                black, and which operator publishes each. Plus a reconciliation against the
+                black, and where each one was read. Plus a reconciliation against the
                 Wikipedia and Wikidata values — including one case where a citation to an
-                official route map was further from correct than the value it replaced.
+                official route map was further from correct than the value it replaced, and
+                one line the platform does not carry at all.
               </span>
               {/*
                 Run 11. This card describes the palette and did not show it —
@@ -72,7 +73,12 @@ export default function DataPage() {
                   </span>
                 ))}
               </span>
-              <span className="data-card-meta">{LINES.length} lines · MOTC TDX</span>
+              {/* Not "{LINES.length} lines · MOTC TDX" any more: that was a
+                  provenance claim covering every badge in the row above, and
+                  from run 12 one of them comes from somewhere else. */}
+              <span className="data-card-meta">
+                {LINES.length} lines · {TDX_LINES.length} from MOTC TDX
+              </span>
             </Link>
 
             <Link href="/data/stations/" className="data-card">

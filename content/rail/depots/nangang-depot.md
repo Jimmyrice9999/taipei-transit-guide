@@ -6,6 +6,10 @@ line: BL
 aliases:
   - 南港機廠
 updated: 2026-08-06
+hero:
+  image: nangang-depot/hero
+  alt: The Nangang Depot entrance sign in Chinese characters on a low stone wall, an elevated rail viaduct and hills behind it.
+  caption: The Nangang Depot gate, on the Bannan Line's eastern end.
 ---
 
 Nangang Depot maintains the eastern end of the

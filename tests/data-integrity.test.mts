@@ -11,7 +11,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
 import { STATIONS, getStation, getLineStations, resolveSpine } from '../lib/stations.ts'
-import { LINES, getLine } from '../lib/lines.ts'
+import { LINES, TDX_LINES, getLine } from '../lib/lines.ts'
 import { getBranchRoutes, getRoutes, getTrunkRoute } from '../lib/routes.ts'
 import { getInterchanges } from '../lib/network.ts'
 
@@ -188,7 +188,10 @@ test('every line code referenced as an interchange is a real line', () => {
 /* ---- routes ------------------------------------------------------- */
 
 test('every line has a trunk route whose endpoints are real stations', () => {
-  for (const line of LINES) {
+  // TDX_LINES throughout this group: a line the platform does not carry has no
+  // route records to have endpoints, and that absence is the documented state
+  // rather than a fault. See OFF_PLATFORM in lib/lines.ts.
+  for (const line of TDX_LINES) {
     const trunk = getTrunkRoute(line.code)
     assert.ok(trunk, `${line.code} has no route record`)
     assert.ok(getStation(trunk!.from), `${line.code} trunk starts at unknown ${trunk!.from}`)
@@ -197,7 +200,7 @@ test('every line has a trunk route whose endpoints are real stations', () => {
 })
 
 test('the trunk route is the longest route on its line', () => {
-  for (const line of LINES) {
+  for (const line of TDX_LINES) {
     const trunk = getTrunkRoute(line.code)!
     for (const route of getRoutes(line.code)) {
       assert.ok(
@@ -213,7 +216,7 @@ test('official route lengths are published and plausible', () => {
   // the value: it catches a unit change (metres for km) or a zeroed field,
   // which is exactly how the RouteLength field misled the site in the first
   // place.
-  for (const line of LINES) {
+  for (const line of TDX_LINES) {
     const trunk = getTrunkRoute(line.code)!
     assert.ok(
       trunk.lengthKm !== null,
@@ -245,7 +248,7 @@ test('branch detection excludes short workings', () => {
 test('trunk termini are not branch stations', () => {
   // The regression that put G03A Xiaobitan on the network page as a terminus of
   // the Songshan–Xindian Line.
-  for (const line of LINES) {
+  for (const line of TDX_LINES) {
     const trunk = getTrunkRoute(line.code)!
     const branchOnly = new Set(
       getBranchRoutes(line.code)

@@ -9,6 +9,7 @@ import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import StationBadge from '@/components/StationBadge'
 import { NEUTRAL_LINE, LINES, getLine } from '@/lib/lines'
+import { getOperator } from '@/lib/operators'
 import { PROVENANCE, STATIONS, getStationHref } from '@/lib/stations'
 
 export const metadata: Metadata = {
@@ -56,6 +57,19 @@ export default function StationDataPage() {
     stations: STATIONS.filter((s) => s.line === line.code).sort((a, b) => a.sequence - b.sequence),
   })).filter((group) => group.stations.length > 0)
 
+  /*
+   * Counted, not typed. Two strings on this page said "seven lines" and one of
+   * them said "three operators" — both written when seven was right, both left
+   * behind by run 10's two light rail lines, and neither anywhere near the
+   * `{byLine.length}` two lines below that had been counting correctly the
+   * whole time. Companies, not TDX operator codes: the platform files New
+   * Taipei's light rail under codes of its own, and counting those would invent
+   * two extra operators. See lib/operators.ts.
+   */
+  const operatorCount = new Set(
+    byLine.map(({ line }) => getOperator(line.operator)?.name ?? line.operator),
+  ).size
+
   return (
     <PageShell accent={NEUTRAL_LINE}>
       {/* React hoists a <style> into <head>, so this lands beside the layout's
@@ -71,9 +85,9 @@ export default function StationDataPage() {
             name: 'Taipei Metro station records',
             description:
               `Every station on the Taipei Metro network — ${STATIONS.length} records across ` +
-              'seven lines and three operators, with station codes, English and Traditional ' +
-              'Chinese names, coordinates, districts and interchanges. Derived from Taiwan ' +
-              "MOTC's TDX open data platform.",
+              `${byLine.length} lines and ${operatorCount} operators, with station codes, English and ` +
+              'Traditional Chinese names, coordinates, districts and interchanges. Derived from ' +
+              "Taiwan MOTC's TDX open data platform.",
             path: '/data/stations/',
             downloadPath: '/data/taipei-metro-stations.json',
             keywords: [
@@ -203,7 +217,9 @@ export default function StationDataPage() {
               <a href={`${BASE_PATH}/data/taipei-metro-stations.json`} download>
                 ↓ taipei-metro-stations.json
               </a>
-              <span className="download-meta">{STATIONS.length} stations · all seven lines</span>
+              <span className="download-meta">
+                {STATIONS.length} stations · all {byLine.length} lines
+              </span>
             </p>
             <p className="download-note">
               Generated from the same records this page renders, so the file and the page

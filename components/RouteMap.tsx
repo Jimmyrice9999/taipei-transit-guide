@@ -22,11 +22,38 @@ export type MapLine = {
   code: string
   name: string
   colour: string
+  /** Trunk track. */
   paths: Point[][]
+  /**
+   * Branch track, drawn in a tint of `colour` over a hairline of `branchEdge`.
+   *
+   * ── Why the branch needs an edge and the trunk does not ─────────────────────
+   *
+   * A tint is lighter than its parent by construction, and on a light ground
+   * that costs contrast. Measured against the map's #FAF9F7 paper, the 45%
+   * tints land at 1.40 (Zhonghe–Xinlu) to 2.74 (Tamsui–Xinyi) — all under the
+   * 3:1 WCAG 1.4.11 asks of a graphical object, and no tint amount fixes it,
+   * because the Zhonghe–Xinlu Line's OWN colour only reaches 1.90.
+   *
+   * The trunk stroke gets the essential-presentation exception for that: it is
+   * the operator's published colour, and printing a different one would
+   * misreport the source. A tint we derived ourselves has no such claim on the
+   * exception, so it carries a hairline of the line's contrast-checked `ink`
+   * instead. The pale core still reads as the lighter hue the branch is meant
+   * to have; the edge is what makes it a shape rather than a smudge.
+   */
+  branchPaths?: Point[][]
+  branchColour?: string
+  branchEdge?: string
   /** Badge colours, needed when the line is labelled on the map itself. */
   badgeBg?: string
   badgeFg?: string
 }
+
+/** Stroke widths. The branch matches the trunk's footprint, so it reads as
+ *  lighter rather than as heavier — the tint fills 72% of that width. */
+const TRACK_WIDTH = 5
+const BRANCH_CORE_WIDTH = 3.6
 
 export type MapStation = {
   code: string
@@ -214,7 +241,7 @@ export default function RouteMap({
           {/* Casing under every line, so crossings read as over/under rather
               than as a merge. Drawn as a pass beneath all coloured strokes. */}
           {lines.map((line) =>
-            line.paths.map((path, index) => (
+            [...line.paths, ...(line.branchPaths ?? [])].map((path, index) => (
               <path
                 key={`casing-${line.code}-${index}`}
                 d={pathData(path, project)}
@@ -230,11 +257,37 @@ export default function RouteMap({
                 d={pathData(path, project)}
                 fill="none"
                 stroke={line.colour}
-                strokeWidth={5}
+                strokeWidth={TRACK_WIDTH}
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
             )),
+          )}
+
+          {/* Branch track: the contrast-bearing edge, then the tint over it.
+              Two passes rather than one stroke with a filter, so it survives
+              printing and needs no runtime anything. */}
+          {lines.flatMap((line) =>
+            (line.branchPaths ?? []).flatMap((path, index) => [
+              <path
+                key={`branch-edge-${line.code}-${index}`}
+                d={pathData(path, project)}
+                fill="none"
+                stroke={line.branchEdge ?? line.colour}
+                strokeWidth={TRACK_WIDTH}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />,
+              <path
+                key={`branch-${line.code}-${index}`}
+                d={pathData(path, project)}
+                fill="none"
+                stroke={line.branchColour ?? line.colour}
+                strokeWidth={BRANCH_CORE_WIDTH}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />,
+            ]),
           )}
 
           {stations.map((station) => {
@@ -331,13 +384,54 @@ export default function RouteMap({
 
               const ends: Point[] = [longest[0], longest[longest.length - 1]]
 
+              /*
+               * Branch track in projected space, so a badge can be kept off it.
+               *
+               * Two of the four branches on the network diverge within a badge's
+               * width of the end of a run — Xinbeitou at Beitou and the Kanding
+               * branch at V09 — and the badge landed squarely on top of the spur
+               * it was meant to be labelling. On a 1.1 km spur drawn 17 px long
+               * that is most of the branch.
+               */
+              const branchPoints = (line.branchPaths ?? []).flatMap((path) =>
+                path.map((p) => project(p)),
+              )
+
               return ends.map((point, index) => {
                 const [x, y] = project(point)
                 const w = line.code.length * 7.2 + 9
                 const h = 15
+
+                let cx = x
+                let cy = y
+
+                if (branchPoints.length > 0) {
+                  const covers = () =>
+                    branchPoints.some(
+                      ([px, py]) =>
+                        Math.abs(px - cx) < w / 2 + 2 && Math.abs(py - cy) < h / 2 + 2,
+                    )
+
+                  if (covers()) {
+                    // Step directly away from the branch until it is clear. Away
+                    // from the branch's own centroid, so the badge ends up on the
+                    // trunk side of the junction rather than anywhere arbitrary.
+                    const n = branchPoints.length
+                    const gx = branchPoints.reduce((s, p) => s + p[0], 0) / n
+                    const gy = branchPoints.reduce((s, p) => s + p[1], 0) / n
+                    const dx = cx - gx
+                    const dy = cy - gy
+                    const len = Math.hypot(dx, dy) || 1
+                    for (let step = 0; step < 12 && covers(); step++) {
+                      cx += (dx / len) * 4
+                      cy += (dy / len) * 4
+                    }
+                  }
+                }
+
                 // Keep the badge inside the frame at either end.
-                const bx = Math.max(2, Math.min(width - w - 2, x - w / 2))
-                const by = Math.max(2, Math.min(height - h - 2, y - h / 2))
+                const bx = Math.max(2, Math.min(width - w - 2, cx - w / 2))
+                const by = Math.max(2, Math.min(height - h - 2, cy - h / 2))
 
                 return (
                   /* Visual identification only; the caption and the table name

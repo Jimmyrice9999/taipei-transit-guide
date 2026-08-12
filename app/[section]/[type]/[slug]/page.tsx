@@ -28,7 +28,8 @@ import Spine, { type DepotMark } from '@/components/Spine'
 import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
-import { getAccent } from '@/lib/lines'
+import { branchTint, getAccent } from '@/lib/lines'
+import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
 import { ARTICLE_TYPES, getAllPages, getPage, getPages, getSection, getType } from '@/lib/content'
 import { getImage } from '@/lib/images'
@@ -303,6 +304,9 @@ export default async function ContentPage({ params }: Props) {
    * marker rail already says which stretch of line is relevant.
    */
   const geometry = type === 'lines' ? getLineGeometry(page.line) : null
+  const track = geometry
+    ? getLineTrack(accent.code)
+    : { trunk: [], branch: [], branchStations: [] }
   const measurement =
     geometry && stations.length > 0
       ? measureLine(
@@ -316,7 +320,21 @@ export default async function ContentPage({ params }: Props) {
   const map =
     geometry && measurement && stations.length > 0 ? (
       <RouteMap
-        lines={[{ code: accent.code, name: accent.name, colour: accent.map, paths: geometry.paths }]}
+        lines={[
+          {
+            code: accent.code,
+            name: accent.name,
+            colour: accent.map,
+            /* Trunk and branch drawn apart — on this page more than anywhere
+               else, because a line page's map is the picture of that line, and
+               Xinbeitou drawn in Tamsui red made a shuttle look like the main
+               line running to two Tamsuis. */
+            paths: track.trunk,
+            branchPaths: track.branch,
+            branchColour: branchTint(accent),
+            branchEdge: accent.ink,
+          },
+        ]}
         stations={stations
           .filter((s) => s.lat !== null && s.lon !== null)
           .map((s, i, all) => ({
@@ -341,7 +359,16 @@ export default async function ContentPage({ params }: Props) {
         caption={
           `The line as surveyed, from MOTC route geometry — ${measurement.revenueKm.toFixed(1)} km ` +
           `measured along the alignment from the first station to the last. ` +
-          `Termini and interchanges are labelled; every station has a name on hover.`
+          `Termini and interchanges are labelled; every station has a name on hover.` +
+          /* Named, not just tinted. A reader who cannot see the tint — or who is
+             looking at this in print — still gets told which stations are on the
+             branch, so the colour is never the only thing carrying it. */
+          (track.branch.length > 0 && track.branchStations.length > 0
+            ? ` The branch to ${track.branchStations
+                .map((s) => s.name)
+                .join(', ')} is drawn as a pale core of the line's colour inside a darker` +
+              ` hairline of it: a branch of this line, not a line of its own.`
+            : '')
         }
       />
     ) : null

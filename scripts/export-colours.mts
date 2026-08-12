@@ -20,7 +20,13 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = path.join(ROOT, 'public', 'data', 'taipei-metro-line-colours.json')
 
 const payload = {
-  source: 'Taiwan MOTC TDX (Transport Data eXchange), LineColor field',
+  /*
+   * `source` used to be one string for the whole file. It is now per line —
+   * nine come from the platform and one does not, and a top-level field saying
+   * "TDX LineColor" would have been a false statement about a tenth of the
+   * records for anyone consuming this file rather than reading the page.
+   */
+  source: "Per line; see each record's colourSource. Most are Taiwan MOTC TDX LineColor.",
   sourceUrl: 'https://tdx.transportdata.tw/',
   licence: 'Open Government Data Licence (Taiwan). See https://data.gov.tw/licenses',
   retrieved: PROVENANCE.fetchedAt,
@@ -35,6 +41,12 @@ const payload = {
     nameZh: line.nameZh,
     operator: line.operator,
     official: line.map,
+    colourSource: {
+      kind: line.colourSource.kind,
+      description: line.colourSource.label,
+      url: line.colourSource.url,
+      accessed: line.colourSource.accessed,
+    },
     contrast: {
       officialOnWhite: Number(contrast(line.map, WHITE).toFixed(2)),
       officialOnBlack: Number(contrast(line.map, NEAR_BLACK).toFixed(2)),
@@ -52,4 +64,8 @@ const payload = {
 fs.mkdirSync(path.dirname(OUT), { recursive: true })
 fs.writeFileSync(OUT, JSON.stringify(payload, null, 2) + '\n')
 
-console.log(`colours: wrote public/data/taipei-metro-line-colours.json — ${LINES.length} lines.`)
+const fromTdx = LINES.filter((l) => l.colourSource.kind === 'tdx').length
+console.log(
+  `colours: wrote public/data/taipei-metro-line-colours.json — ${LINES.length} lines, ` +
+    `${fromTdx} from TDX LineColor, ${LINES.length - fromTdx} from operator material.`,
+)

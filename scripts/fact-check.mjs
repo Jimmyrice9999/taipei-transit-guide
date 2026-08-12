@@ -51,6 +51,7 @@ const data = JSON.parse(
         code: s.line.code, name: s.line.name, stations: s.stations.length,
         from: s.from?.code, to: s.to?.code, travelTimeMin: s.travelTimeMin,
         officialKm: s.officialKm, measuredKm: s.measuredKm, runs: s.runs, hasBranch: s.hasBranch,
+        onTdx: s.line.onTdx, published: s.published,
       }))
       const br = getLineStations('BR').map((s,i) => ({
         code: s.code, name: s.name, nameZh: s.nameZh, position: i+1,
@@ -60,6 +61,11 @@ const data = JSON.parse(
       console.log(JSON.stringify({
         totalStations: STATIONS.length,
         lineCount: LINES.length,
+        // Not the same number as lineCount from run 12 on: the Sanying Line is
+        // in the registry and has no stations in MOTC's extract. Pages that
+        // count "lines" mean one or the other, and the checks below have to
+        // know which.
+        linesWithStations: new Set(STATIONS.map(s => s.line)).size,
         summaries, br,
         interchanges: getInterchanges().map(i => ({ name: i.name, codes: i.codes })),
         brRoutes: getRoutes('BR').map(r => ({ id: r.routeId, lengthKm: r.lengthKm, from: r.from, to: r.to })),
@@ -116,8 +122,12 @@ const ok = (label) => checks.push(label)
     if (Number(claimed[1]) !== data.totalStations) {
       fail('/data/stations', `claims ${claimed[1]} stations; the registry holds ${data.totalStations}`)
     }
-    if (Number(claimed[2]) !== data.lineCount) {
-      fail('/data/stations', `claims ${claimed[2]} lines; the registry holds ${data.lineCount}`)
+    if (Number(claimed[2]) !== data.linesWithStations) {
+      fail(
+        '/data/stations',
+        `claims ${claimed[2]} lines; ${data.linesWithStations} lines have station records ` +
+          `(the registry holds ${data.lineCount} lines in total)`,
+      )
     }
     ok('station and line counts on /data/stations')
   }
@@ -429,6 +439,25 @@ const ok = (label) => checks.push(label)
       holdsIf: () => true, // genuinely absent — no structure field exists in the fetched datasets
       message: 'says TDX does not publish structure',
     },
+    /*
+     * Run 12. The site now states, on three pages, that MOTC holds no record of
+     * the Sanying Line. That is a claim of absence about a dataset this
+     * repository ships — the exact class this section exists for — and unlike
+     * the others it has a cheap, exact test: the line registry knows whether a
+     * TDX line record was found for LB, because that is what decides whether
+     * its colour comes from the platform or from the operator's line mark.
+     *
+     * If a refetch ever brings Sanying onto the platform, this fails and the
+     * three sentences have to be rewritten. That is the point.
+     */
+    {
+      pattern:
+        /(?:MOTC|TDX)(?:'s data)?[^.]{0,60}\b(?:holds no record|has no record)\b[^.]{0,60}Sanying|Sanying Line[^.]{0,80}\bno record on (?:TDX|the platform)/i,
+      holdsIf: () => data.summaries.find((s) => s.code === 'LB')?.onTdx === false,
+      message:
+        'says MOTC holds no record of the Sanying Line, but lib/lines.ts found a TDX line ' +
+        'record for LB — the claim is stale and the colour should come from LineColor now',
+    },
     {
       pattern: /leaves it at zero for every metro route/i,
       // True of the RouteLength FIELD, and the site must be talking about the
@@ -566,6 +595,88 @@ const ok = (label) => checks.push(label)
     checkAbsenceClaims(rel, html)
   }
   ok(`source-capability claims checked against ${populated.size} populated TDX fields`)
+}
+
+/* ------------------------------------------------------------------ */
+/* 6b. Operator-published figures, against the page that cites them    */
+/* ------------------------------------------------------------------ */
+
+/*
+ * A line TDX has no record of gets its station count, route length and
+ * end-to-end time from a table in lib/network.ts, because there is no dataset
+ * to read them out of. The same three figures are also in the line page's
+ * frontmatter, where they carry the citation.
+ *
+ * Two copies of a number is the condition this whole script exists to police,
+ * so they are checked against each other rather than trusted to stay in step —
+ * and the frontmatter copy is treated as the authority, because that is the one
+ * with a source id attached to it.
+ */
+{
+  const offPlatform = data.summaries.filter((s) => s.published)
+
+  for (const summary of offPlatform) {
+    const file = fs
+      .readdirSync(path.join(CONTENT, 'rail', 'lines'))
+      .map((name) => path.join(CONTENT, 'rail', 'lines', name))
+      .find((full) => {
+        const fm = matter(fs.readFileSync(full, 'utf8')).data
+        return (fm.line ?? '').toUpperCase() === summary.code
+      })
+
+    if (!file) {
+      fail(
+        'lib/network.ts',
+        `OPERATOR_PUBLISHED carries figures for ${summary.code}, but no line page declares ` +
+          `line: ${summary.code}, so nothing cites them`,
+      )
+      continue
+    }
+
+    const fm = matter(fs.readFileSync(file, 'utf8')).data
+    const rows = [...(fm.facts ?? []), ...(fm.specs ?? [])]
+    const where = path.relative(ROOT, file).replace(/\\/g, '/')
+
+    const rowFor = (pattern) => rows.find((r) => pattern.test(String(r.label ?? '')))
+    const numberIn = (row) => {
+      const match = String(row?.value ?? '').match(/-?\d+(?:\.\d+)?/)
+      return match ? Number(match[0]) : null
+    }
+
+    const expected = [
+      { label: /^stations$/i, got: summary.published.stations, name: 'station count' },
+      { label: /route length/i, got: summary.published.routeKm, name: 'route length' },
+      { label: /end-to-end|end to end/i, got: summary.published.endToEndMin, name: 'end-to-end time' },
+    ]
+
+    let bad = 0
+    for (const check of expected) {
+      const row = rowFor(check.label)
+      if (!row) {
+        fail(where, `no frontmatter row matching ${check.label} to check the ${check.name} against`)
+        bad++
+        continue
+      }
+      const stated = numberIn(row)
+      if (stated === null || Math.abs(stated - check.got) > 0.005) {
+        fail(
+          where,
+          `states ${check.name} ${row.value}; OPERATOR_PUBLISHED in lib/network.ts says ` +
+            `${check.got}. /rail/network renders the second one.`,
+        )
+        bad++
+      }
+      // The figure is only worth agreeing about if it rests on something.
+      if (row && !row.source) {
+        fail(where, `the ${check.name} row carries no source, so the figure on /rail/network is uncited`)
+        bad++
+      }
+    }
+
+    if (bad === 0) {
+      ok(`${summary.code} operator-published figures agree with ${where} and are all cited`)
+    }
+  }
 }
 
 /* ------------------------------------------------------------------ */

@@ -9,6 +9,7 @@
  * single-line and disciplined; here, colour is the information.
  */
 
+import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PageShell from '@/components/PageShell'
@@ -20,9 +21,8 @@ import { getLinePageHref as lineHref } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
-import { getAllLineGeometry } from '@/lib/geometry'
-import { NEUTRAL_LINE } from '@/lib/lines'
-import { getInterchanges, getLineSummaries } from '@/lib/network'
+import { NEUTRAL_LINE, branchTint } from '@/lib/lines'
+import { getInterchanges, getLineSummaries, getLineTrack } from '@/lib/network'
 import { PROVENANCE } from '@/lib/stations'
 
 export const metadata: Metadata = {
@@ -35,31 +35,86 @@ export const metadata: Metadata = {
     'Every Taipei Metro line — official colours, station counts, termini and end-to-end times, drawn from Taiwan MOTC open data.',
 }
 
+/** "a, b and c" — written out rather than via Intl, which would make the build
+ *  output depend on the ICU data of whichever machine ran it. */
+function listOf(items: string[]): string {
+  if (items.length <= 1) return items[0] ?? ''
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`
+}
+
+/**
+ * Marks a figure that came from the operator rather than from the platform.
+ *
+ * The dagger is a hover hint AND a screen-reader one — `title` alone is neither
+ * on most combinations, so the source is also in visually-hidden text. The note
+ * under the table says the same thing again in full, because a symbol whose
+ * only explanation is a tooltip explains nothing on a phone.
+ */
+function PublishedMark({ note }: { note: string }) {
+  return (
+    <>
+      <span className="network-bound" title={note} aria-hidden="true">
+        {' '}
+        †
+      </span>
+      <span className="sr-only"> (source: {note})</span>
+    </>
+  )
+}
+
 export default function NetworkPage() {
-  const summaries = getLineSummaries().filter((s) => s.stations.length > 0)
+  /*
+   * Every line in the registry, including the one with no station records.
+   *
+   * This used to filter on `stations.length > 0`, and that filter was the whole
+   * reason the Sanying Line was missing from this page: it has no TDX records
+   * of any kind, so it came through with an empty station list and was dropped
+   * silently. A line the site knows about, and knows the colour of, does not
+   * get to disappear because one dataset is short — it gets a row that says
+   * which figures are the operator's rather than the platform's.
+   */
+  const summaries = getLineSummaries()
 
   /* The scale for the length bars: the longest line, not a rounded number, so
      one bar always reaches the full width and the comparison is against the
-     network rather than against an invented maximum. */
-  const longestKm = Math.max(...summaries.map((s) => s.officialKm ?? 0), 1)
+     network rather than against an invented maximum.
+
+     Sanying's 14.29 km counts toward the scale like any other, because it is
+     the same quantity measured the same way — an operator's published route
+     length. What differs is who published it, and that is said in the cell and
+     in the note under the table, not by leaving the bar out. */
+  const lengthOf = (s: (typeof summaries)[number]) => s.officialKm ?? s.published?.routeKm ?? null
+  const longestKm = Math.max(...summaries.map((s) => lengthOf(s) ?? 0), 1)
   const interchanges = getInterchanges()
-  const geometry = getAllLineGeometry()
 
   const mapLines = summaries
     .map((summary) => {
-      const g = geometry.find((entry) => entry.lineId === summary.line.code)
-      return g
-        ? {
-            code: summary.line.code,
-            name: summary.line.name,
-            colour: summary.line.map,
-            badgeBg: summary.line.badgeBg,
-            badgeFg: summary.line.badgeFg,
-            paths: g.paths,
-          }
-        : null
+      /*
+       * Run 12: trunk and branch are drawn separately.
+       *
+       * Xinbeitou and Xiaobitan were drawn in their parent's exact colour, so a
+       * two-station shuttle read as part of the trunk — and the Luzhou branch,
+       * which TDX publishes as a run of its own, read as a second Zhonghe–Xinlu
+       * main line. `getLineTrack` cuts the branch out of the alignment using
+       * the route records; see lib/geometry.ts partitionBranch.
+       */
+      const track = getLineTrack(summary.line.code)
+      if (track.trunk.length === 0 && track.branch.length === 0) return null
+      return {
+        code: summary.line.code,
+        name: summary.line.name,
+        colour: summary.line.map,
+        badgeBg: summary.line.badgeBg,
+        badgeFg: summary.line.badgeFg,
+        paths: track.trunk,
+        branchPaths: track.branch,
+        branchColour: branchTint(summary.line),
+        branchEdge: summary.line.ink,
+      }
     })
     .filter((l): l is NonNullable<typeof l> => l !== null)
+
+  const branchedLines = mapLines.filter((l) => l.branchPaths.length > 0)
 
   const interchangeCodes = new Set(interchanges.flatMap((i) => i.codes))
 
@@ -95,6 +150,12 @@ export default function NetworkPage() {
 
   const totalStations = summaries.reduce((n, s) => n + s.stations.length, 0)
 
+  /* Lines the platform carries, and the ones it does not. Both counts are read
+     off the registry rather than typed, so the sentence below cannot survive a
+     refetch that changes the answer. */
+  const mapped = summaries.filter((s) => s.line.onTdx)
+  const offPlatform = summaries.filter((s) => !s.line.onTdx)
+
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'The network' }]} />
@@ -102,8 +163,24 @@ export default function NetworkPage() {
 
       <h1 className="page-title">The network</h1>
       <p className="page-summary">
-        {summaries.length} lines, {totalStations} stations, drawn from Taiwan MOTC route
-        geometry. Colours are the official ones each operator publishes — not the values
+        {/*
+          The counts are the registry's, and they have to be: `npm run facts`
+          reads this sentence and compares both numbers against LINES.length and
+          STATIONS.length. What the sentence has to do is make sure a reader
+          knows what they are counts OF — 180 does not include Sanying's twelve,
+          and saying "10 lines, 180 stations, drawn from MOTC route geometry"
+          would have been three claims of which the third was false.
+        */}
+        {summaries.length} lines, {totalStations} stations. {mapped.length} of the lines are
+        drawn below from Taiwan MOTC route geometry
+        {offPlatform.map((s) => (
+          <React.Fragment key={s.line.code}>
+            ; the {s.line.name} Line is newer than MOTC&rsquo;s extract, so its{' '}
+            {s.published?.stations ?? 0} stations are outside that station count and it is
+            not on the map
+          </React.Fragment>
+        ))}
+        . Colours are the official ones each operator publishes — not the values
         circulating in English-language sources, which are all slightly wrong.
       </p>
 
@@ -126,7 +203,17 @@ export default function NetworkPage() {
             line, the Circular Line. Rather than draw an alignment from a dataset that
             predates the railway, it is absent here and written up from the
             operator&rsquo;s own announcement on its{' '}
-            <Link href="/rail/lines/sanying-line/">line page</Link>.
+            <Link href="/rail/lines/sanying-line/">line page</Link>.{' '}
+            {/*
+              Run 12. The line was previously missing from the table as well as
+              the map, which was not a decision — the table filtered on "has
+              stations" and Sanying has none. It is in the table now, with its
+              own colour, which is the part that took actual work: there is no
+              LineColor field to read for a line the platform has never heard
+              of. See OFF_PLATFORM in lib/lines.ts.
+            */}
+            It <em>is</em> in the table below, in its own colour, taken from the
+            operator&rsquo;s LB line mark.
           </p>
 
           <RouteMap
@@ -142,7 +229,23 @@ export default function NetworkPage() {
                MRT contributes two stray fragments under a kilometre long. The
                map should not vouch for its source beyond what the source
                supports. */
-            caption="Every line as surveyed, each labelled with its code at both ends — colour alone does not identify a line. Bannan blue and Airport MRT purple are indistinguishable to a reader with protanopia, and Tamsui red against Danhai red is the closest pair on the network even in normal colour vision, which is why every line carries its code. Interchange stations are ringed in black; termini are the outer dots. Where a line appears broken, the alignment across the gap is missing from the published geometry — those breaks are holes in the source data, not features of the network, and are left unbridged rather than joined with track we cannot evidence."
+            caption={
+              'Every line as surveyed, each labelled with its code at both ends — colour alone does not ' +
+              'identify a line. Bannan blue and Airport MRT purple are indistinguishable to a reader with ' +
+              'protanopia, and Tamsui red against Danhai red is the closest pair on the network even in ' +
+              'normal colour vision, which is why every line carries its code. Interchange stations are ' +
+              'ringed in black; termini are the outer dots. ' +
+              /* Built from the data, so a line that gains or loses a branch cannot
+                 leave this sentence describing the old network. */
+              `Branch track is drawn as a pale core of its parent's colour inside a hairline of the same ` +
+              `colour darkened — a branch belongs to its line rather than being a line of its own, and the ` +
+              `hairline is what gives the pale core a defined edge on the paper. ` +
+              `${branchedLines.length} lines have one: ${listOf(
+                branchedLines.map((l) => l.name),
+              )}. Where a line appears broken, the alignment across the gap is missing from the published ` +
+              'geometry — those breaks are holes in the source data, not features of the network, and are ' +
+              'left unbridged rather than joined with track we cannot evidence.'
+            }
           />
 
           <h2 className="section-heading">Lines</h2>
@@ -168,8 +271,8 @@ export default function NetworkPage() {
                 </tr>
               </thead>
               <tbody>
-                {summaries.map(({ line, stations, from, to, travelTimeMin, officialKm, measuredKm, hasBranch, runs }) => (
-                  <tr key={line.code}>
+                {summaries.map(({ line, stations, from, to, travelTimeMin, officialKm, measuredKm, hasBranch, runs, published }) => (
+                  <tr key={line.code} data-off-platform={published ? '' : undefined}>
                     <th scope="row">
                       <span className="network-line">
                         {/*
@@ -210,9 +313,27 @@ export default function NetworkPage() {
                         </span>
                       </span>
                     </th>
+                    {/*
+                      Every figure in this row and the next three is the
+                      platform's, except on a line the platform has no record
+                      of, where it is the operator's and carries a dagger
+                      saying so. The dagger is not decoration either: two
+                      numbers in one column from two different sources, with
+                      nothing distinguishing them, is precisely the kind of
+                      quiet merge this table exists to avoid.
+                    */}
                     <td className="num">
-                      {stations.length}
-                      {hasBranch && <span className="network-note"> incl. branch</span>}
+                      {published ? (
+                        <>
+                          {published.stations}
+                          <PublishedMark note={published.label} />
+                        </>
+                      ) : (
+                        <>
+                          {stations.length}
+                          {hasBranch && <span className="network-note"> incl. branch</span>}
+                        </>
+                      )}
                     </td>
                     <td>
                       {from && to ? (
@@ -226,7 +347,16 @@ export default function NetworkPage() {
                       )}
                     </td>
                     <td className="num">
-                      {travelTimeMin ? `${travelTimeMin} min` : <span className="absent">—</span>}
+                      {published ? (
+                        <>
+                          about {published.endToEndMin} min
+                          <PublishedMark note={published.label} />
+                        </>
+                      ) : travelTimeMin ? (
+                        `${travelTimeMin} min`
+                      ) : (
+                        <span className="absent">—</span>
+                      )}
                     </td>
                     {/*
                       The bar is the number, drawn to scale against the longest
@@ -247,23 +377,49 @@ export default function NetworkPage() {
                       the variable and colouring by it would encode nothing.
                     */}
                     <td className="num">
-                      {officialKm ? (
-                        <span className="km-cell">
-                          <span className="km-value">{officialKm.toFixed(2)} km</span>
-                          <span
-                            className="km-bar"
-                            style={
-                              {
-                                '--km-fill': line.map,
-                                '--km-width': `${(officialKm / longestKm) * 100}%`,
-                              } as React.CSSProperties
-                            }
-                            aria-hidden="true"
-                          />
-                        </span>
-                      ) : (
-                        <span className="absent">—</span>
-                      )}
+                      {(() => {
+                        const km = officialKm ?? published?.routeKm ?? null
+                        if (!km) return <span className="absent">—</span>
+                        return (
+                          <span className="km-cell">
+                            <span className="km-value">
+                              {km.toFixed(2)} km
+                              {published && <PublishedMark note={published.label} />}
+                            </span>
+                            {/*
+                              The hairline, at last actually drawn.
+
+                              `needsHairline` has been computed in lib/lines.ts
+                              since run 5 — "too pale to read as a rule on
+                              white" — asserted by a test, printed by
+                              `npm run palette`, and consumed by nothing. So the
+                              Circular Line's bar has been shipping at 1.19:1
+                              against the paper, which is not a rule so much as
+                              a rumour of one, and the Zhonghe–Xinlu Line's at
+                              1.90:1. Adding a tenth line made it three: LB is
+                              2.21:1.
+
+                              A 1px inset ring in the line's own ink, which is
+                              derived against 4.6:1, gives the bar an edge
+                              without changing the fill away from the colour the
+                              operator publishes. Lines whose colour already
+                              rules on white get no ring and look exactly as
+                              they did.
+                            */}
+                            <span
+                              className="km-bar"
+                              style={
+                                {
+                                  '--km-fill': line.map,
+                                  '--km-edge': line.needsHairline ? line.ink : 'transparent',
+                                  '--km-width': `${(km / longestKm) * 100}%`,
+                                } as React.CSSProperties
+                              }
+                              aria-hidden="true"
+                            />
+                          </span>
+                        )
+                      })()}
                     </td>
                     <td className="num">
                       {measuredKm ? (
@@ -324,6 +480,36 @@ export default function NetworkPage() {
             against the official column measures how much is missing: 0.8 km on the
             Tamsui–Xinyi Line, 2.8 km on the Circular. End-to-end times are MOTC's own.
           </p>
+
+          {offPlatform.length > 0 && (
+            <p className="note">
+              <strong>
+                A <span className="network-bound">†</span> marks a figure that is not the
+                platform's.
+              </strong>{' '}
+              {offPlatform.map((s) => (
+                <React.Fragment key={s.line.code}>
+                  {/* "no route length" is not available as a phrase here: the
+                      site once claimed TDX publishes no route length at all,
+                      that was wrong, and `npm run facts` now fails any page
+                      that says it. The claim being made is about this line, not
+                      about the field, and has to read that way. */}
+                  MOTC's data holds no record of the {s.line.name} Line of any kind — not a
+                  line record, not a station, not a metre of geometry — so its station
+                  count, length and end-to-end time on this table are the operator's own,
+                  from {s.published?.label}, and are cited on its{' '}
+                  <Link href={lineHref(s.line.code) ?? '/rail/'}>line page</Link>. The
+                  length bar is drawn to the same scale as every other, because a published
+                  route length is the same quantity whoever published it; what the dagger
+                  marks is that this row was assembled from a different source than the{' '}
+                  {mapped.length} above it, not that it is worth less. Its colour is the
+                  operator's too — see{' '}
+                  <Link href="/data/line-colours/">the line colours page</Link> for where
+                  that was read and what it was checked against.
+                </React.Fragment>
+              ))}
+            </p>
+          )}
 
           <h2 className="section-heading">Interchanges</h2>
           <p className="section-desc">

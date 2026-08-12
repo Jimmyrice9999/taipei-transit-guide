@@ -17,7 +17,11 @@ reopening under monitoring. That is the kind of material this site exists
 for, and it will be written against the city's own engineering publications
 rather than travel blogs.
 
+![A green-liveried Maokong Gondola cabin waiting at a covered station platform](/images/gondola/cabin-800.webp "One of the gondola's cabins, at a station platform. — Solomon203, CC BY-SA 4.0, Wikimedia Commons")
+
 Coming: the system (French-built, and what that lineage means for parts and
 maintenance), the stations, the cabins — including the glass-floored ones —
 and the closure history. Bounded scope, no churn, high value: this section is
 early on the build list for the same reasons YouBike is.
+
+![A gondola support tower's crossarm and sheave assembly, a cabin passing below it in hazy air](/images/gondola/tower-800.webp "A support tower's crossarm, carrying the cable overhead. — Solomon203, CC BY-SA 4.0, Wikimedia Commons")

@@ -360,6 +360,127 @@ function chainageAlong(point: Point, paths: Point[][]): Chainage | null {
   return best
 }
 
+/* ------------------------------------------------------------------ */
+/* Telling a branch apart from its trunk                               */
+/* ------------------------------------------------------------------ */
+
+/**
+ * How near a station has to sit to a run to count as being on it, in metres.
+ *
+ * Generous on purpose. The question is not "which run is this station
+ * nearest" — that would be wrong here, because the junction station belongs to
+ * BOTH runs and has to be counted on both. R22 Beitou sits on the run that
+ * carries R22–R28 and on the one that carries R02–R22, and assigning it to the
+ * closer of the two would leave the other run thinking its trunk stops at R23,
+ * putting a kilometre of trunk track into the branch.
+ */
+const ON_RUN_M = 150
+
+/** Cut one run at a distance along it. Both halves keep the cut point, so the
+ *  two drawn strokes meet exactly rather than leaving a hairline of paper. */
+function splitRun(path: Point[], alongM: number): [Point[], Point[]] {
+  if (alongM <= 0) return [[], path]
+
+  let travelled = 0
+  for (let i = 1; i < path.length; i++) {
+    const segment = metres(path[i - 1], path[i])
+    if (travelled + segment >= alongM) {
+      const t = segment === 0 ? 0 : (alongM - travelled) / segment
+      const cut: Point = [
+        path[i - 1][0] + (path[i][0] - path[i - 1][0]) * t,
+        path[i - 1][1] + (path[i][1] - path[i - 1][1]) * t,
+      ]
+      return [
+        [...path.slice(0, i), cut],
+        [cut, ...path.slice(i)],
+      ]
+    }
+    travelled += segment
+  }
+
+  return [path, []]
+}
+
+export type Partition = { trunk: Point[][]; branch: Point[][] }
+
+/**
+ * Split a line's drawn geometry into trunk track and branch track.
+ *
+ * TDX publishes one alignment per line with no marking of which part is the
+ * branch, so the branch has to be found rather than read off. What the source
+ * DOES give is which stations belong to the branch route and not to the trunk
+ * one, and those stations sit on the branch track. So: project every station
+ * onto each run, and where a run carries branch stations beyond the last trunk
+ * station on it, cut the run there.
+ *
+ * The two shapes this handles are the two the network actually has:
+ *
+ *   · A spur chained onto the end of a trunk run. Xinbeitou (R22A) and
+ *     Xiaobitan (G03A) both arrive this way, and drawing them in the parent's
+ *     exact colour made a two-station shuttle look like part of the trunk.
+ *   · A branch published as a run of its own, with no trunk station on it at
+ *     all — the Luzhou branch (O50–O54).
+ *
+ * Where branch and trunk stations interleave along a run, no spur can be cut
+ * out of it honestly and the whole run stays trunk. That case does not occur
+ * on today's data; it is here so that a future line cannot produce a silently
+ * wrong picture.
+ */
+export function partitionBranch(
+  paths: Point[][],
+  trunkStations: Point[],
+  branchStations: Point[],
+): Partition {
+  if (branchStations.length === 0) return { trunk: paths, branch: [] }
+
+  const trunk: Point[][] = []
+  const branch: Point[][] = []
+
+  const keep = (into: Point[][], path: Point[]) => {
+    if (path.length > 1) into.push(path)
+  }
+
+  for (const path of paths) {
+    // Chainage against THIS run only — see ON_RUN_M on why not the nearest run.
+    const along = (points: Point[]) =>
+      points
+        .map((p) => chainageAlong(p, [path]))
+        .filter((c): c is Chainage => c !== null && c.offsetM < ON_RUN_M)
+        .map((c) => c.alongM)
+
+    const branchAlong = along(branchStations)
+    if (branchAlong.length === 0) {
+      keep(trunk, path)
+      continue
+    }
+
+    const trunkAlong = along(trunkStations)
+    if (trunkAlong.length === 0) {
+      keep(branch, path)
+      continue
+    }
+
+    const trunkLo = Math.min(...trunkAlong)
+    const trunkHi = Math.max(...trunkAlong)
+    const branchLo = Math.min(...branchAlong)
+    const branchHi = Math.max(...branchAlong)
+
+    if (branchLo > trunkHi) {
+      const [before, after] = splitRun(path, trunkHi)
+      keep(trunk, before)
+      keep(branch, after)
+    } else if (branchHi < trunkLo) {
+      const [before, after] = splitRun(path, trunkLo)
+      keep(branch, before)
+      keep(trunk, after)
+    } else {
+      keep(trunk, path)
+    }
+  }
+
+  return { trunk, branch }
+}
+
 export type Measurement = {
   /** Length of everything published, including track past the termini. */
   publishedKm: number

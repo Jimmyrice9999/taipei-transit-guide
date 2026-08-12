@@ -2,6 +2,10 @@
 title: Sanying Line
 summary: New Taipei's newest railway — a driverless elevated line to Sanxia and Yingge, open five weeks and still free to ride, written up here while every English source is still a machine translation.
 order: 2
+line: LB
+aliases:
+  - 三鶯線
+  - Sanying
 updated: 2026-08-06
 hero:
   image: sanying-line/hero

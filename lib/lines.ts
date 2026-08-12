@@ -61,9 +61,84 @@ for (const [operator, records] of [
  *
  * Listed explicitly rather than taken from the data wholesale, so that adding an
  * operator to the fetch does not silently change the palette. A code here with
- * no source record throws at build — better than rendering a colourless badge.
+ * neither a TDX record nor an entry in OFF_PLATFORM below throws at build —
+ * better than rendering a colourless badge.
  */
-const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'A', 'V', 'K'] as const
+const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'LB', 'A', 'V', 'K'] as const
+
+/** Where a line's official colour was read. Printed, not just recorded. */
+export type ColourSource = {
+  /** 'tdx' for the platform's LineColor field; 'operator' for anything else. */
+  kind: 'tdx' | 'operator'
+  /** One line naming the material, for the data pages. */
+  label: string
+  url: string
+  /** ISO date the material was read. */
+  accessed: string
+}
+
+const TDX_SOURCE: ColourSource = {
+  kind: 'tdx',
+  label: "The operator's own Line record on Taiwan MOTC's TDX platform, LineColor field",
+  url: 'https://tdx.transportdata.tw/',
+  accessed: '2026-08-06',
+}
+
+/**
+ * ─────────────────────────────────────────────────────────────────────────────
+ * LINES TDX DOES NOT PUBLISH
+ *
+ * Exactly one, and it took finding rather than deriving.
+ *
+ * The Sanying Line (三鶯線, LB) opened on 30 June 2026. New Taipei Metro's TDX
+ * line records carry a source update stamp of 23 May 2023 and return one line,
+ * the Circular Line; probing every operator code on the platform turned up no
+ * separate code for Sanying the way NTDLRT and NTALRT exist for the two light
+ * rail lines. So there is no LineColor field to read, and this file's rule —
+ * one colour per line, from source, everything else derived — had nowhere to
+ * start from.
+ *
+ * WHAT WAS DONE INSTEAD, AND WHY IT IS NOT A GUESS
+ *
+ * New Taipei Metro publishes the LB line mark on its own Sanying Line station
+ * page: a 156×156 PNG, lossless, used as the header of the station table. The
+ * mark is a light blue ring with "LB" set inside it, and 32.6% of its pixels —
+ * the whole ring — are a single exact value, #48B6D2. That is not a sample off
+ * a photograph or a colour picked off a JPEG: it is the operator rendering its
+ * own line identity, at a known value, on its own site. The same standing as a
+ * LineColor field, arrived at by reading a different file.
+ *
+ * THE PANTONE FIGURE, WHICH IS NOT USED
+ *
+ * "PANTONE 637C" circulates for this line. It could not be confirmed: it is on
+ * neither the operator's site, nor the New Taipei rapid transit bureau's route
+ * page or CIS page, nor either Wikipedia article, all of which say only
+ * "淺藍色 / light blue". And the third-party PANTONE→sRGB converters disagree
+ * among themselves — #4EC3E0, #4DC5E2, #42BFDF, #48A8D0 — so even taking the
+ * designation on trust would mean choosing one conversion over three others.
+ * The operator's own rendering needs no conversion and no choosing. The
+ * conflict is published on /data/line-colours rather than resolved silently.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+const OFF_PLATFORM: Record<
+  string,
+  { nameEn: string; nameZh: string; colour: string; operator: string; colourSource: ColourSource }
+> = {
+  LB: {
+    nameEn: 'Sanying',
+    nameZh: '三鶯線',
+    colour: '#48B6D2',
+    operator: 'NTMC',
+    colourSource: {
+      kind: 'operator',
+      label:
+        "New Taipei Metro's own LB line mark, the header image on its Sanying Line " +
+        'station page — a lossless PNG whose ring is a single exact value',
+      url: 'https://www.ntmetro.com.tw/archive/file/TEItMS4yMzU0NzIwNzk=.png',
+      accessed: '2026-08-12',
+    },
+  },
+}
 
 /**
  * Which lines are heavy metro and which are light rail.
@@ -104,6 +179,15 @@ export type Line = {
   operator: string
   /** Light rail rather than heavy metro. See LIGHT_RAIL above. */
   lightRail: boolean
+  /** Where `map` was read. Printed on /data/line-colours, not merely recorded. */
+  colourSource: ColourSource
+  /**
+   * False for a line the platform does not carry at all — no colour, no
+   * stations, no geometry, no route length. Read this rather than testing for
+   * an empty station list: a line can be on the platform and still be missing
+   * one dataset, and the two situations want different words on the page.
+   */
+  onTdx: boolean
 }
 
 /** TDX names lines "Wenhu Line"; the UI appends "Line" itself. */
@@ -111,15 +195,20 @@ const trimLine = (name: string) => name.replace(/\s+Line$/i, '').trim()
 
 function derive(code: string): Line {
   const source = SOURCE_LINES.get(code)
-  if (!source) {
+  const offPlatform = OFF_PLATFORM[code]
+
+  if (!source && !offPlatform) {
     throw new Error(
-      `No TDX line record for "${code}". Run \`npm run tdx\`, or remove it from DISPLAY_ORDER.`,
+      `No TDX line record for "${code}" and no OFF_PLATFORM entry. Run \`npm run tdx\`, ` +
+        `add a sourced colour to OFF_PLATFORM, or remove it from DISPLAY_ORDER.`,
     )
   }
 
-  const { record, operator } = source
+  const operator = source ? source.operator : offPlatform.operator
   // TDX publishes lowercase hex; normalise so it matches everywhere else.
-  const map = record.LineColor.trim().toUpperCase()
+  const map = (source ? source.record.LineColor : offPlatform.colour).trim().toUpperCase()
+  const nameEn = source ? (source.record.LineName?.En ?? code) : offPlatform.nameEn
+  const nameZh = source ? (source.record.LineName?.Zh_tw ?? '') : offPlatform.nameZh
 
   // Prefer the official colour untouched. Most lines can carry white or
   // near-black text at AA; only darken the fill when neither works.
@@ -129,8 +218,8 @@ function derive(code: string): Line {
 
   return {
     code,
-    name: trimLine(record.LineName?.En ?? code),
-    nameZh: trimLine(record.LineName?.Zh_tw ?? ''),
+    name: trimLine(nameEn),
+    nameZh: trimLine(nameZh),
     map,
     badgeBg,
     badgeFg: direct ?? WHITE,
@@ -138,6 +227,11 @@ function derive(code: string): Line {
     needsHairline: contrast(map, WHITE) < 3,
     operator,
     lightRail: LIGHT_RAIL.has(code),
+    // Every line says where its colour came from, including the eight that came
+    // from the obvious place. A provenance field that only appears on the
+    // exception is a field nobody reads on the rule.
+    colourSource: source ? TDX_SOURCE : offPlatform.colourSource,
+    onTdx: !!source,
   }
 }
 
@@ -187,7 +281,17 @@ export const NEUTRAL_LINE: Line = {
   needsHairline: false,
   operator: 'site',
   lightRail: false,
+  colourSource: {
+    kind: 'operator',
+    label: "This site's own neutral, for pages with no line",
+    url: '',
+    accessed: '',
+  },
+  onTdx: false,
 }
+
+/** Lines the platform carries. What "from MOTC open data" means on this site. */
+export const TDX_LINES = LINES.filter((l) => l.onTdx)
 
 /** Heavy metro only — what "the metro network" means on this site. */
 export const METRO_LINES = LINES.filter((l) => !l.lightRail)
