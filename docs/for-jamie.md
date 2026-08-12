@@ -1,11 +1,12 @@
 # For Jamie
 
-Written 12 August 2026, after run 15 — YouBike and ticketing, two subjects.
-Checked run 14's "9 of 12 real pages" claim: file-existence was right,
-substance wasn't — 5 of those 9 are ~200-word scope-page stubs despite full
-research files behind them. Real count was 4/12, not 9/12. Logged, not fixed
-(out of scope this run).
-**New pages:** `content/bike/history/youbike.md` (20 sources, 14 primary),
-`content/ticketing/guides/cards-passes-and-fares.md` (19 sources, 16
-primary). Corrected both leads' fare/refund claims. 6 conflicts published,
-not resolved. Claims: 591→695 sourced, TBC 30→31. `npm run verify` clean.
+Written 12 August 2026, after run 16 — the five §90 scope stubs, written up.
+All twelve corpus subjects now have real pages; no stubs remain.
+**New pages (three commits):** songshan-xindian-line, zhonghe-xinlu-line,
+danhai-lrt, ankeng-lrt, airport-mrt — 90 sources total, matching
+wenhu-line.md's depth. Airport MRT's page found and dropped a widely-quoted
+"NT$7.2bn" Marubeni-dispute figure that appears nowhere in sources actually
+read; two smaller confirmed figures published instead. Two danhai/ankeng
+stubs had a false "not in this site's data extract" claim about their own
+stations — fixed. Found and fixed two build-checker gaps (see run-log §92.1).
+Claims: 695→959 sourced, TBC 31→34. `npm run verify` clean at each commit.

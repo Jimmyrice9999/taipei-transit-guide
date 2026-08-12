@@ -5625,3 +5625,154 @@ touched by hand.
 With this run, all three remaining leads (YouBike, Maokong Gondola,
 ticketing) are published. The five scope-page stubs found in §90 are not:
 they are correctly scoped as later work, not a discrepancy to fix here.
+
+## 92. The five §90 scope stubs, written up
+
+The five ~200-word scope stubs §90 found — songshan-xindian-line,
+zhonghe-xinlu-line, danhai-lrt, ankeng-lrt, airport-mrt — are now real pages,
+each matching wenhu-line.md's depth. Five `line-researcher` invocations, one
+subject each, fresh context per subject, run two at a time and verified in
+three commits rather than one. Each treated its own docs/research/ lead file
+as a to-do list, not a source: every published claim was re-fetched from a
+primary page and read in full. Two of the five stubs (danhai-lrt, ankeng-lrt)
+also asserted "stations are not yet in this site's data extract" — false by
+the time of this run, since `lib/stations.generated.ts` has carried V and K
+codes for a while; both pages now say so and rely on the generated station
+list, as the others already did.
+
+**Songshan–Xindian (G) — 143 → ~1,850 words, 14 sources (8 primary, 6
+secondary).** TBC: the date "3" was assigned as the line number; the third
+Xiaobitan C371 set's number; PSD completion dates; whether this line's own
+Beimen tunnel carried Bannan-line-grade difficulty; the NTU Hospital–CKS
+segment length. Contradicted the lead: DORTS's own Songshan-section count is
+8 stations including Ximen, not 7; the lead's "likely 小南門線 heritage" guess
+for the NTU Hospital anomaly isn't corroborated anywhere — DORTS states
+instead that NTU Hospital is the Xindian project's own eleventh station,
+operated by the Tamsui-Xinyi line; the Xiaobitan campaign is sourced to 1999,
+not the lead's 1998. Conflicts published: route length four ways (18.77 TDX
+/ 21.3 zh.wikipedia / 20.6 DORTS-summed / plus the branch alone at 1.94 vs
+DORTS's 1.5).
+
+**Zhonghe–Xinlu (O) — 146 → ~2,013 words, 14 sources (7 primary, 7
+secondary).** TBC: the CK570F original award date; why the 2019 budget
+revision fell below the original; Zhonghe/Xinzhuang depot area
+discrepancies; current in-service fleet total. Contradicted the lead: the
+Y-fork is a stop north of Daqiaotou, at the Xinzhuang/Luzhou track switch
+near Taipei Bridge, not at Daqiaotou itself; the lead's CK570F "two sources
+disagree" turned out to be one source (tahr.org.tw) giving two dates for
+what should be sequential events in the wrong order; "everything TBC" for
+Luzhou Depot was too pessimistic — DORTS's own page gives area, dimensions
+and a facility list. Handled the Losheng Sanatorium history — real people
+displaced twice, first by compulsory Hansen's-disease isolation, then by the
+depot built on the hospital's land — with DORTS's own confirmation that the
+depot layout was altered for the preservation campaign, re-verified rather
+than taken on the lead's word. Conflicts published: Luzhou Depot width,
+Zhonghe/Xinzhuang depot areas and commissioning dates, the 530-plan
+preservation count three ways (39/6/9 official, "40 preserved" per 焦點事件,
+28 actually delivered per campaigners), and line length (31.5 km network sum
+vs 24.11/18.41 km per-branch TDX operating lengths). The rewrite initially
+dropped a body image the stub had (an already-licensed asset at
+zhonghe-xinlu-line/station) — restored before commit.
+
+**Danhai LRT (V) — 183 → ~1,600 words, 21 sources (15 primary, 6
+secondary).** TBC: one total figure for the fully built-out network (a
+"13.99 km, 20 station" figure circulates but doesn't sum from any primary
+figure found here — DORTS's own phase totals add to 12.87 km); what V12–V20
+are reserved for; depot area/capacity, sourced only to a zh.wikipedia page
+that discloses it carries no references. Contradicted the lead: its "23
+December 2018" opening date is zh.wikipedia's, not DORTS's own 24 December;
+its "unaffected by the 403 earthquake" claim wasn't found anywhere; its
+caution against assuming Danhai's fleet specs match Ankeng's turned out to
+be answerable directly — NTMC publishes one shared spec table for both.
+Conflicts published: the opening-date split above; Blue Sea phase 2 length
+(3.32 km DORTS vs 4.44 km zh.wikipedia); total project cost (NT$12.81bn
+DORTS vs NT$11.87bn→15.306bn zh.wikipedia, different planning stages);
+Jimmy Liao public-art project duration and scope (NTMC's "two years plus,"
+11 stations vs the artist's own site's "nearly four years," 11 stations plus
+two bus shelters). The copyrighted artwork's content is described only in
+terms of the collaboration, not depicted.
+
+**Ankeng LRT (K) — 129 → ~1,608 words, 23 sources (19 primary, 4
+secondary).** TBC: the Shuang'an Tunnel's own length; what happened to the
+depot-platform boarding trial after 31 December 2024; where TPASS is
+actually sold for this line (NTMC's own sales-point page omits every Ankeng
+station). Resolved rather than carried forward: the lead's "7.5 km vs 7.67
+km, conflict, publish both" turned out to be zh.wikipedia's own 路線長度
+(total, from the depot) against 營運長度 (operating, matching NTMC/TDX
+exactly) — not really a clash once read past the infobox headline; K04's
+name was confirmed as 耕莘安康院區 against a 2017 primary naming-panel record,
+against "耕莘醫院" in some round-ups. Conflicts published: whether the
+0.4 km underground/portal section sits inside or outside the operating
+route (DORTS's own pages never mention underground running at all); the
+An-Xin Bridge superlative (DORTS's own claim is longest *span*, 225 m; CNA
+quotes a named contractor engineer calling it longest rail bridge outright).
+
+**Airport MRT (A) — 123 → ~1,696 words, 18 sources (8 primary, 10
+secondary).** The lead's most serious claim — a "NT$7.2 billion" Marubeni
+dispute total — does not appear in any of three independent contemporaneous
+2017 accounts, in zh.wikipedia's own article, or anywhere except pre-digested
+search summaries; NT$2.5bn (delay penalty) + NT$1.9bn (withheld bond) is
+NT$4.4bn, not NT$7.2bn, and one 2021 source shows a separate, smaller,
+later NT$726.93m dispute that shares a leading digit and may be the source
+of the confusion. The two confirmed figures and Marubeni's name are
+published; the NT$7.2bn total is not. Closed the lead's flagged rolling-stock
+gap: Kawasaki built the express fleet outright; the commuter fleet was split
+between Kawasaki (the prototype and three sets) and Taiwan Rolling Stock Co.
+(the rest) under an industrial-cooperation programme. TBC: an exact 2023
+surplus figure; an itemised six-delay date table (only the headline survived
+a partial fetch); the current in-town check-in airline list, which rests on
+secondary aggregation after the airport operator's own page returned
+HTTP 403. Conflicts published: route length (51.76 km TDX vs 51.03 km
+DORTS); 2024 profit (NT$500m per a pre-year-end report vs "over NT$400m"
+retrospectively); construction start (two different milestones in the same
+year); "planning start" (a weakly-sourced 1989–90 study vs a better-sourced
+1996 BOT decision vs the 2003–04 government takeover). A pre-fetched,
+licensed hero image for this page (`public/images/airport-mrt/hero-*.webp`,
+committed in Run 10) was found sitting unwired in frontmatter — left that
+way, since wiring it in means writing a caption, and this run carries no
+image work; flagged in `docs/unused-audit.json` for later.
+
+### 92.1 Two build-checker gaps found and closed
+
+`scripts/fact-check.mjs`'s `ABSENCE_REGISTER` only recognised "TDX does not
+publish {route length, structure, headways, rolling stock, depot, opening
+date, dimension}" as checkable absence claims. songshan-xindian-line.md's
+closing sentence claimed TDX doesn't publish "construction history,
+engineering rationale, or service patterns" — true, but an unregistered
+claim, which the checker correctly treats as a failure rather than a pass by
+default. Registered the three new categories rather than reword around the
+gap, since they are legitimate categories other pages will likely need too.
+
+`scripts/research-check.mjs` requires each `## Checked and failed` entry to
+match `- **<claim>** — <detail with a year>`. The ankeng-lrt.md research
+file's six entries led with a bare `**12 August 2026.**` instead of a claim,
+so none matched the pattern and the checker reported the whole section as
+empty — a real formatting bug from the writing agent, not a tooling
+false-positive. Reformatted all six to lead with the claim.
+
+Also found: `npm run check`, `npm run links`, `npm run a11y` and `npm run
+unused` all read from the built `out/` directory, and `npm run verify` does
+not rebuild it. Verifying against a stale build silently validates old
+content — this run's first `npm run verify` after the second commit's edits
+passed a11y clean only because `out/` hadn't been rebuilt since the ankeng
+page's last edit; the real bug (a Chinese term wrapped in backticks,
+`` `路線長度` ``, which the site's Han-wrapping remark plugin skips inside
+`code`/`pre` elements) only surfaced once `npm run build` ran fresh. `npm
+run build` (and, since new CJK prose exceeded the committed font subset,
+`npm run fonts`) now precede every verify pass in this run's own working
+method, not just the final one.
+
+### 92.2 Suite and ratchet
+
+`npm run verify` clean (exit 0) at each of the three commit points, rebuilt
+fresh beforehand each time. `npm run cite`: all five pages' citations
+resolve (14, 14, 21, 23, 18). `npm run claims`: sourced 695 → 959, TBC
+31 → 34 (three new, all stated with what would settle them), asserted
+32 → 59 — the increase is almost entirely bare `facts:` labels (line codes,
+termini) that carry no citation by convention, matching wenhu-line.md's own
+five and other real pages' seven-or-eight, not a new gap. Ratchet moved the
+right direction, not relaxed. `npm run research`: 22 files, 74
+checked-and-failed entries, clean.
+
+With this run, all twelve subjects originally scoped for this corpus have
+real, sourced content pages. No stubs remain among them.
