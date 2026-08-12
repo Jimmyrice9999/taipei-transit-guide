@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 695,
-    "tbc": 31,
-    "asserted": 32,
-    "meta": 30
+    "sourced": 804,
+    "tbc": 33,
+    "asserted": 46,
+    "meta": 32
   },
   "files": [
     {
@@ -274,11 +274,11 @@
     },
     {
       "file": "content/rail/lines/songshan-xindian-line.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
+      "sources": 14,
+      "sourced": 60,
+      "tbc": 1,
+      "asserted": 2,
+      "meta": 1
     },
     {
       "file": "content/rail/lines/tamsui-xinyi-line.md",
@@ -298,11 +298,11 @@
     },
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
+      "sources": 14,
+      "sourced": 49,
+      "tbc": 1,
+      "asserted": 12,
+      "meta": 1
     },
     {
       "file": "content/rail/lines/_index.md",
@@ -542,6 +542,21 @@
       ]
     },
     {
+      "file": "content/rail/lines/songshan-xindian-line.md",
+      "state": "asserted",
+      "where": "facts: Termini",
+      "text": "G01 — G19"
+    },
+    {
+      "file": "content/rail/lines/songshan-xindian-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "TDX does not publish construction history, engineering rationale, or service patterns; those come from DORTS's and TRTC's own publications w",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
       "file": "content/rail/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Line code",
@@ -572,6 +587,105 @@
       "text": "Station names, codes, running order, coordinates and the end-to-end journey time come from **Taiwan MOTC's TDX platform**, operator TRTC — g",
       "signals": [
         "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "facts: Line code",
+      "text": "O"
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "facts: Operator",
+      "text": "Taipei Rapid Transit Corporation"
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "facts: Termini",
+      "text": "O01, O21, O54"
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "facts: Depots",
+      "text": "Zhonghe, Xinzhuang, Luzhou"
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "The orange line is the network's only Y: one trunk south to Zhonghe, and two arms north-west that share it — one to Luzhou, one through Xinz",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Daqiaotou is still the last stop every train shares, which is why the platform signage there matters more than anywhere else on the network ",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Add them and the stations come to 25, one short of the line's published total of 26.",
+      "signals": [
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "**Dongmen is the connector that made this one line rather than two.** Before 30 September 2012, the Zhonghe section (which had run through w",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Every train starts or ends at **O01 Nanshijiao**, in Zhonghe.",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "TRTC publishes about **6 minutes** per branch at weekday peak, which becomes about **3 minutes** where both overlap between Nanshijiao and D",
+      "signals": [
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "[Xinzhuang Depot], beside Huilong station and straddling the New Taipei–Taoyuan boundary, stands on part of the former grounds of **Losheng ",
+      "signals": [
+        "date",
+        "count",
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "These figures — 39, \"40 preserved\" as 焦點事件 separately characterises the same decision, and the campaigners' count of 28 actually delivered —",
+      "signals": [
         "count"
       ]
     },

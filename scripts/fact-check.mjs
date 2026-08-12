@@ -500,6 +500,9 @@ const ok = (label) => checks.push(label)
     { about: /depot|機廠/i, fields: [] },
     { about: /opening date|opened/i, fields: [] },
     { about: /dimension|capacity/i, fields: [] },
+    { about: /construction history/i, fields: [] },
+    { about: /engineering rationale/i, fields: [] },
+    { about: /service pattern/i, fields: [] },
   ]
 
   /** Every field name in data/tdx/ that carries at least one usable value. */
