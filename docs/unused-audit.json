@@ -195,5 +195,7 @@
     }
   ],
   "unusedClasses": [],
-  "unusedImages": []
+  "unusedImages": [
+    "airport-mrt/hero"
+  ]
 }

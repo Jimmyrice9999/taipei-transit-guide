@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 908,
+    "sourced": 959,
     "tbc": 34,
-    "asserted": 53,
-    "meta": 36
+    "asserted": 59,
+    "meta": 39
   },
   "files": [
     {
@@ -226,11 +226,11 @@
     },
     {
       "file": "content/rail/lines/airport-mrt.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 18,
+      "sourced": 51,
       "tbc": 0,
-      "asserted": 0,
-      "meta": 0
+      "asserted": 6,
+      "meta": 3
     },
     {
       "file": "content/rail/lines/ankeng-lrt.md",
@@ -539,6 +539,58 @@
       "text": "The park-and-ride car park on the site is — it is the only part of the depot a member of the public can reach.",
       "signals": [
         "superlative"
+      ]
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "facts: Line code",
+      "text": "A"
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "facts: Termini",
+      "text": "A1 — A22"
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "The airport line is the network's odd one out three times over: it belongs to [Taoyuan Metro] rather than either Taipei operator, its fares ",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "**A23 Zhongli**, originally targeted for July 2028, has slipped to around 2029 after the Railway Bureau agreed to redesign its platforms to ",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "**A14**, a new underground station serving the airport's Terminal 3, is reported targeted for late 2027 alongside the terminal itself, budge",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/rail/lines/airport-mrt.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Station codes, sequence, coordinates and route length come from **Taiwan MOTC's TDX platform**, operator TYMC — government open data, retrie",
+      "signals": [
+        "date",
+        "count"
       ]
     },
     {
