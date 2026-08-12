@@ -47,12 +47,29 @@ const WORDMARK = { width: 246, height: 22 }
 /*
  * next/font downloads these at build time and serves them from our own domain —
  * no request to Google at runtime, and no layout shift while they load.
+ *
+ * All three sit above the fold somewhere on the site (Inter is body text and
+ * the nav, Zilla Slab is every page's <h1>, IBM Plex Mono is the station-code
+ * badge and the eyebrow labels), and all three are declared in the root
+ * layout, so next/font preloads all three on every route already — the
+ * network tab shows `<link rel="preload" as="font">` for each before this
+ * change did anything.
+ *
+ * `display: 'swap'` was still visible as a flash: the fallback face paints
+ * first no matter how fast the real font arrives, then swaps the instant it
+ * does. With the font preloaded, `optional` is the pairing that actually
+ * removes the flash — the browser waits a very short beat for the download it
+ * already kicked off, uses the real font if that beat is enough (true for a
+ * same-origin, preloaded, few-KB subset on anything but a very slow first
+ * load), and otherwise commits to the fallback for that paint rather than
+ * swapping in later. `adjustFontFallback` (on by default) keeps the fallback
+ * metric-matched, so `optional` costs no layout shift either way.
  */
 const zilla = Zilla_Slab({
   subsets: ['latin'],
   weight: ['600', '700'],
   variable: '--font-zilla',
-  display: 'swap',
+  display: 'optional',
 })
 
 // Left variable deliberately. Pinning weight: ['400','500','600'] was measured
@@ -61,14 +78,14 @@ const zilla = Zilla_Slab({
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
+  display: 'optional',
 })
 
 const plexMono = IBM_Plex_Mono({
   subsets: ['latin'],
   weight: ['500', '600'],
   variable: '--font-plex-mono',
-  display: 'swap',
+  display: 'optional',
 })
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
