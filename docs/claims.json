@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 591,
-    "tbc": 30,
+    "sourced": 695,
+    "tbc": 31,
     "asserted": 32,
     "meta": 30
   },
@@ -13,6 +13,14 @@
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bike/history/youbike.md",
+      "sources": 20,
+      "sourced": 47,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -421,6 +429,22 @@
       "sources": 0,
       "sourced": 0,
       "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/ticketing/guides/cards-passes-and-fares.md",
+      "sources": 19,
+      "sourced": 57,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/ticketing/guides/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },

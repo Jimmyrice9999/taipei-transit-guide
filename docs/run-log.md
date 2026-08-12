@@ -5512,3 +5512,116 @@ right direction, not relaxed. `npm run verify` clean end to end, including
 `research` (22 files, 41 checked-and-failed entries, none broken by this
 change) and `cvd`/`geometry:audit` (unaffected by a content-only change, ran
 clean regardless).
+
+# Run 15 — YouBike and ticketing, 12 August 2026
+
+## 90. Checking the "9 of 12" claim before starting
+
+Run 14's §88 status check said nine of the twelve named subjects already had
+both a real research file and a real content page. File existence checked
+out — all nine research files and all nine content files are present. Word
+counts do not: `tamsui-xinyi-line.md` (2603 words), `bannan-line.md` (3099),
+`circular-line.md` (5635) and `joint-operation.md` (4722) are real pages, but
+`songshan-xindian-line.md` (212), `zhonghe-xinlu-line.md` (220),
+`danhai-lrt.md` (252), `ankeng-lrt.md` (191) and `airport-mrt.md` (204) are
+each an explicit `*This is a scope page.*` stub with a station list and
+nothing else, backed by research files ten times their own length
+(1153–2453 words) that nothing has been drawn from yet. So the honest count
+was 4 of 12 substantive, not 9 — matching an earlier status report from
+before run 14 (§ "four of twelve subjects are written") that run 14's own
+status check superseded without reconciling. Neither report was fabricated;
+they were counting different things, and "has a content file" silently
+became the standard for "done" without being flagged as a narrower claim
+than the corpus had been using. Recorded here so a future status check
+states which of the two it means.
+
+## 91. line-researcher on YouBike and ticketing
+
+Two subagent invocations, fresh context each, no images fetched, run
+concurrently. Both subjects were the last unpublished leads of the twelve
+(Maokong Gondola, the third, was run 14). Both wrote a real content page
+rather than a scope stub: `content/bike/history/youbike.md` and
+`content/ticketing/guides/cards-passes-and-fares.md` (the latter also added
+`content/ticketing/guides/_index.md` as a new type-folder index;
+`content/ticketing/_index.md` itself was left alone, as instructed).
+
+**YouBike — 20 sources, 14 primary / 6 secondary.** Primary: thirteen Taipei
+DOT press releases (the 2015 siting standard, the 2020 Gongguan trial and its
+follow-up, the 2020 "why the 2.0 controller moved off mains power" rationale,
+the May 2021 full launch, the Oct/Dec 2022 1.0 retirement, the scrap-value
+clarification, the operator-identification page, the Aug 2025 400-million-ride
+release, the 2.0E fare FAQ) plus the operator's own milestones timeline and
+two launch notices. Secondary: CNA, 環境資訊中心, 風傳媒, 關鍵評論網, 今周刊, two
+zh.wikipedia articles.
+
+TBC: 1.0's original per-unit cost (no source found for the lead's NT$10,000;
+zh.wikipedia's NT$13,000 is uncorroborated); 1.0's exact Taipei-retirement
+fleet size; the DOT–Smile Bike contract structure; Smile Bike's corporate
+relationship to Giant; the 2018 transfer discount's exact launch date.
+
+Contradicted the corpus: the lead described one durable "April 2018 transfer
+discount" as current. Actual sequence is four eras — free first 30 min
+(2009–2015), a flat NT$5 charge (from 1 Apr 2015), a transfer-only discount
+(from 2018), and an unconditional free period restored 28 Feb 2024 that
+**cancelled** the 2018 discount the lead called current. The lead also
+implied 2.0E shares 2.0's fare benefits; a primary DOT FAQ says it does not,
+in Taipei. Its "up to 80 km" 2.0E range understated the operator's own
+80–100 km. Its 2021 station-siting-priority claim's only findable source
+(udn.com) now 404s, so it was dropped rather than carried forward.
+
+Conflicts published: 2020 Gongguan trial fleet, 500 (DOT, 15 Jan) vs. 600
+(DOT, 25 Feb) — same publisher, six weeks apart. 2026 Taipei expansion
+target, 27,500 bikes/2,000 stations (secondary, officials quoted) vs. 2,000
+stations/4,500 2.0E bikes specifically (primary, Aug 2025) — total vs.
+sub-fleet, unstated either way. 1.0 unit cost, three incompatible figures
+(NT$10,000 lead/unsourced, NT$13,000 wikipedia/unattributed, NT$41 primary
+but that's scrap value, not purchase cost). April 2015 fee-change monthly
+subsidy saving: ≈NT$20M→8M (storm.mg) vs. ≈NT$20M→13M (The News Lens).
+
+**Ticketing — 19 sources, 16 primary / 3 secondary.** Primary: EasyCard's own
+founding/regulatory history, iPass's full corporate history (previously
+almost entirely TBC — began as Kaohsiung Metro's own card, spun out
+2013–14), the 基北北桃1200都會通 pass's coverage and refund formula read from
+EasyCard's operating-notice PDF, TRTC's full ten-tier distance-band fare
+table read from the operator's own PDF, concessionary/free-ride rules, the
+600-point 敬老/愛心 allowance, the transfer discount (independently
+corroborated by TRTC and the Public Transport Office), the Jan 2026
+frequent-rider cashback scheme.
+
+TBC: bus section-fare boundaries; Airport MRT/LRT/ferry/gondola fares
+(present in the old lead, not re-verified this run, dropped rather than
+carried); a current EasyCard circulation figure (latest verified is Oct
+2022); whether/when EasyCard's "sole non-bank issuer" status formally ended;
+the current TPASS card-fee refund deadline.
+
+Contradicted the corpus: the lead's "1280 pass refunded pro-rata, no fee" is
+false as a general rule — New Taipei's own document gives a front-loaded
+daily deduction (NT$180 day one, NT$130 after) *plus* a NT$20 fee; the
+fee-free pro-rata formula applies only to a physically failed card. The
+lead's "110 million+ cards issued" figure wasn't found anywhere; the most
+recent primary figure is EasyCard's own 98.32 million as of Oct 2022, used
+instead. "Sole non-bank stored-value issuer" was true only when the 2009 Act
+passed; the lead dropped that qualifier, and iPass/icash are independently
+confirmed as licensed issuers today.
+
+Conflicts published: EasyCard's June/Sept 2002 Taipei Metro launch — two
+zh.wikipedia articles on the same company give different splits of what went
+live in which month. 敬老卡/愛心卡 monthly points: a search-snippet-derived 480
+vs. two independent full fetches of the same TRTC FAQ URL both returning 600
+verbatim — 600 used, discrepancy recorded as the search-snippet failure mode
+the sourcing discipline exists to catch.
+
+### 91.1 Suite and ratchet
+
+`npm run cite`: youbike 20/20, ticketing 19/19 resolve. `npm run claims`:
+sourced 591 → 695, TBC 30 → 31 (one new, the 1.0 unit-cost figure above),
+asserted unchanged at 32. Ratchet moved the right direction, not relaxed.
+`npm run verify` clean end to end (exit 0), including `research` (22 files,
+46 checked-and-failed entries) and `cvd`/`geometry:audit` (content-only
+change, ran clean regardless). `npm run fonts` regenerated automatically for
+the new pages' CJK glyphs — `public/fonts/*` changed as a byproduct, not
+touched by hand.
+
+With this run, all three remaining leads (YouBike, Maokong Gondola,
+ticketing) are published. The five scope-page stubs found in §90 are not:
+they are correctly scoped as later work, not a discrepancy to fix here.
