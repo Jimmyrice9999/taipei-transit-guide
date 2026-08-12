@@ -33,6 +33,34 @@ import type { Station } from '@/lib/stations'
  * client component and a second state on the site's most-used navigation
  * device, to surface a fact that is historical rather than navigational.
  * Nobody standing on a platform needs the engineering number.
+ *
+ * ── Run 11: it was not understood either ────────────────────────────────────
+ * Reported verbatim: "idk what you're even talking abt."
+ *
+ * Everything above is a defence of the drawing's GEOMETRY, and the geometry was
+ * never the problem. The problem is that "the connecting lines cross" only
+ * means something once you already know there are two numbering systems, and
+ * the sentence establishing that was in the prose BELOW the figure. The figure
+ * led the page — by decision, see DEVICES in lib/content — so the first thing
+ * a reader met was two columns of codes with a bow-tie between them and no
+ * statement of what either column was.
+ *
+ * Fixed by saying it, in words, above the drawing, with the worked example
+ * spelled out: BR01 was BR13, BR13 was BR1. A reader who reads only that
+ * sentence has the whole finding; the drawing then shows them it holds for
+ * every station rather than the two named.
+ *
+ * The drawing itself gains two things:
+ *
+ *   - Brackets down the right, naming what each half does — "counted from the
+ *     opposite end" against the crossing half, "same order" against the
+ *     parallel one. The halves were previously distinguished only by whether
+ *     their lines happened to be diagonal.
+ *   - The two example connectors picked out. An exact reversal puts EVERY
+ *     connector through the same centre point — that is arithmetic, not a
+ *     drawing fault — so the X is a starburst and no single line can be
+ *     traced through it. Picking out the two named in the sentence gives the
+ *     eye one thread it can actually follow.
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
@@ -56,10 +84,34 @@ type Layout = {
   NAME_X: number | null
   LEFT_X: number
   RIGHT_X: number
+  /**
+   * Where the half-brackets and their labels go, or null where there is no
+   * room. On the compact layout there is none: 250 units carries two code
+   * columns and nothing else. That is not "hide it on mobile" — the sentence
+   * the brackets abbreviate is in the lead paragraph above, which every width
+   * gets, and the brackets are a restatement of it beside the drawing.
+   */
+  BRACKET_X: number | null
 }
 
-const WIDE: Layout = { key: 'wide', W: 620, CODE_X: 8, NAME_X: 54, LEFT_X: 262, RIGHT_X: 408 }
-const COMPACT: Layout = { key: 'compact', W: 250, CODE_X: 4, NAME_X: null, LEFT_X: 56, RIGHT_X: 196 }
+const WIDE: Layout = {
+  key: 'wide',
+  W: 620,
+  CODE_X: 8,
+  NAME_X: 54,
+  LEFT_X: 262,
+  RIGHT_X: 408,
+  BRACKET_X: 478,
+}
+const COMPACT: Layout = {
+  key: 'compact',
+  W: 250,
+  CODE_X: 4,
+  NAME_X: null,
+  LEFT_X: 56,
+  RIGHT_X: 196,
+  BRACKET_X: null,
+}
 
 const ROW = 26
 const TOP = 40
@@ -104,10 +156,52 @@ export default function NumberingLadder({
     : -1
   const breakY = breakIndex >= 0 ? TOP + (breakIndex + 1) * ROW - ROW / 2 : null
 
+  /*
+   * Which stations sit at a different height on the two rails — that is, which
+   * ones the two numbering systems disagree about. Computed from the drawing's
+   * own geometry rather than from `seriesBreakAfter`, so the brackets can
+   * never describe a different split from the one drawn.
+   */
+  const crossing = rows.filter((s) => leftY.get(s.code) !== rightY.get(s.code))
+  const parallel = rows.filter((s) => leftY.get(s.code) === rightY.get(s.code))
+
+  /* The two ends of the reversed run — the worked example in the sentence
+     above the drawing, and the two connectors picked out inside it. */
+  const exampleA = crossing[0]
+  const exampleB = crossing[crossing.length - 1]
+  const examples = new Set([exampleA?.code, exampleB?.code].filter(Boolean))
+
   const describe =
     `The ${line.name} Line's stations in operating order beside the same stations in ` +
     `construction-number order. On the southern section the two run in opposite ` +
     `directions, so the connecting lines cross; on the northern section they agree.`
+
+  /** A vertical bracket down the right of one half, with a label beside it. */
+  const bracket = (L: Layout, group: Station[], lines: string[], key: string) => {
+    if (L.BRACKET_X === null || group.length < 2) return null
+    const ys = group.map((s) => leftY.get(s.code)!)
+    const top = Math.min(...ys) - ROW / 2 + 3
+    const bottom = Math.max(...ys) + ROW / 2 - 3
+    const x = L.BRACKET_X
+    return (
+      <g key={key} className="ladder-bracket">
+        {/* A square bracket, not a brace: the ends have to read as "from here
+            to here" at 9px, and a brace's curves vanish at that size. */}
+        <path d={`M ${x + 6} ${top} H ${x} V ${bottom} H ${x + 6}`} />
+        {lines.map((text, i) => (
+          <text
+            key={text}
+            x={x + 14}
+            y={(top + bottom) / 2 + (i - (lines.length - 1) / 2) * 13 + 3}
+            className="ladder-bracket-label"
+            textAnchor="start"
+          >
+            {text}
+          </text>
+        ))}
+      </g>
+    )
+  }
 
   const draw = (L: Layout) => (
     <svg
@@ -151,6 +245,11 @@ export default function NumberingLadder({
             key={station.code}
             className="ladder-link"
             data-crossing={y1 !== y2 ? '' : undefined}
+            /* The two the sentence above names. An exact reversal sends every
+               connector through one point, so the crossing is a starburst and
+               nothing in it can be followed; these two are drawn heavier so
+               the eye has one thread to trace. */
+            data-example={examples.has(station.code) ? '' : undefined}
             d={
               `M ${L.LEFT_X + 8} ${y1} C ${L.LEFT_X + bend} ${y1}, ` +
               `${L.RIGHT_X - bend} ${y2}, ${L.RIGHT_X - 8} ${y2}`
@@ -209,11 +308,49 @@ export default function NumberingLadder({
           {station.engineering}
         </text>
       ))}
+
+      {/* Last, over everything, so the labels are never crossed by a rail. */}
+      {bracket(L, crossing, ['counted from the', 'opposite end —', 'every line crosses'], 'x')}
+      {bracket(L, parallel, ['same order —', 'the lines run straight'], 'p')}
     </svg>
   )
 
   return (
     <figure className="figure ladder wide">
+      {/*
+        The sentence, above the drawing.
+
+        This device leads its page, so this paragraph is the first thing on it
+        that says what the page is about — which is why it states the finding
+        in full rather than pointing at the picture. A reader who reads this
+        and nothing else has the whole thing; the drawing then shows it holds
+        for all twenty-four stations rather than the two named here.
+      */}
+      <div className="ladder-intro">
+        <h2 className="ladder-head-text">Two numbers for every station</h2>
+        <p className="ladder-lead">
+          The signs carry one — {rows[0].code} to {rows[rows.length - 1].code}, the
+          operating code, the one passengers use. The construction drawings
+          carried another.{' '}
+          {exampleA && exampleB && (
+            <>
+              On the southern half the drawings counted from the opposite end, so{' '}
+              <strong>
+                {exampleA.code} {exampleA.name} was drawing number {exampleA.engineering}
+              </strong>
+              , and{' '}
+              <strong>
+                {exampleB.code} {exampleB.name} was drawing number {exampleB.engineering}
+              </strong>
+              .{' '}
+            </>
+          )}
+          Below, each station on the left is joined to its own drawing number on
+          the right. Where the two systems disagree the joins cross; where they
+          agree they run straight across.
+        </p>
+      </div>
+
       <div className="ladder-frame">
         {draw(WIDE)}
         {draw(COMPACT)}

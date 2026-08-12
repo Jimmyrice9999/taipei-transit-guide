@@ -2,6 +2,7 @@
 title: Ankeng LRT
 summary: The second New Taipei light rail line — a valley feeder into the Xindian corridor.
 order: 9
+line: K
 aliases:
   - 安坑輕軌
 updated: 2026-08-06

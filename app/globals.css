@@ -33,6 +33,14 @@
   --rule: #e2e5ea;
   --rule-strong: #c6ccd4;
 
+  /*
+   * The filled ground in the section drawing. A surface, not a rule: the
+   * IN TUNNEL label sits on it, so it is registered in lib/surfaces.ts and
+   * checked like every other surface rather than living as a loose hex in a
+   * fill declaration where the colour audit would never see it.
+   */
+  --profile-earth: #dfe3e8;
+
   /* Overridden per page from the line registry. Defaults are the site neutral. */
   --accent: #3d454e; /* text-safe: accent type, rules, eyebrows */
   --accent-map: #3d454e; /* official line colour: large fills only */
@@ -126,6 +134,64 @@ a:hover {
   white-space: nowrap;
   vertical-align: baseline;
   text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Line icon — the front of the line's own train                       */
+/* ------------------------------------------------------------------ */
+
+/*
+ * See components/LineIcon.tsx for what each part means. Colours arrive as
+ * inline custom properties from the line registry: --icon-body and --icon-ink
+ * are the badge pair, already derived against the 4.6 margin, so the glass and
+ * the headlights clear AA against the body without a second derivation.
+ *
+ * The rail and the guide bars take a neutral, because they are track, not
+ * train — colouring them would say the ground belongs to the line.
+ */
+.line-icon {
+  display: inline-block;
+  flex: none;
+  vertical-align: middle;
+}
+
+.line-icon-body {
+  fill: var(--icon-body);
+}
+
+.line-icon-glass {
+  fill: var(--icon-ink);
+}
+
+.line-icon-wheel,
+.line-icon-tyre {
+  fill: none;
+  stroke: var(--icon-body);
+}
+
+.line-icon-wheel {
+  stroke-width: 2.4;
+}
+
+/* A ring rather than a disc: a tyre has a wall and a steel wheel does not, and
+   at 26px that wall is the whole of the difference. */
+.line-icon-tyre {
+  stroke-width: 1.8;
+}
+
+.line-icon-rail,
+.line-icon-guide {
+  stroke: var(--rule-strong);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.line-icon-pantograph {
+  fill: none;
+  stroke: var(--icon-body);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Slightly larger where a badge is the row's subject rather than an aside. */
@@ -440,13 +506,30 @@ th > .badge:only-child {
 }
 
 .nav-group a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 7px;
   padding: 4px 0;
   font-size: 13.5px;
   line-height: 1.35;
   color: var(--band-ink-dim);
   text-decoration: none;
   border-bottom: 0;
+}
+
+/*
+ * The line badge in the Lines dropdown. Fixed width so ten names start on one
+ * left edge — "BR" and "A" are one and two characters and a ragged column of
+ * names is worse to scan than no badge at all.
+ *
+ * The badge pair is derived against the 4.6 margin on WHITE, and the panel is
+ * the dark band. That is the right way round: a badge's contrast requirement
+ * is between its own fill and its own text, and both travel together.
+ */
+.nav-badge {
+  flex: none;
+  width: 22px;
+  justify-content: center;
 }
 
 .nav-group a:hover,
@@ -1833,10 +1916,39 @@ a.spine-station:focus-visible .spine-name {
   padding: 4px 0 2px;
 }
 
+/*
+ * ── Run 11: made to read as a train ──────────────────────────────────────────
+ * It was four thin-outlined white rectangles with monospaced labels, which
+ * reads as a fragment of a table. Reported as "not visible", and on the two
+ * pages that carry one that was fair. It now has a roof in the line's colour,
+ * bogies, and a rail under the whole formation.
+ *
+ * The colour is load-bearing rather than applied: a fleet page's subject is a
+ * train, and the roof band says which railway that train works. The label
+ * stays near-black on white — nothing readable moved onto a coloured field.
+ */
 .formation-train {
-  display: flex;
+  /* inline-flex, not flex: as a block the element filled the content width and
+     the rail below it ran on for 700px past the last car, which read as track
+     the train was not on. */
+  display: inline-flex;
   align-items: stretch;
   min-width: min-content;
+  position: relative;
+  /* Room under the cars for the bogies to sit on the rail. */
+  padding-bottom: 9px;
+}
+
+/* The rail. Runs the width of the formation including the couplings, so a gap
+   between units reads as a gap in a train rather than a gap in the drawing. */
+.formation-train[data-railed]::after {
+  content: '';
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  bottom: 0;
+  height: 2px;
+  background: var(--rule-strong);
 }
 
 .formation-unit {
@@ -1852,15 +1964,54 @@ a.spine-station:focus-visible .spine-name {
 }
 
 .formation-car {
+  position: relative;
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--text);
   border: 1.5px solid var(--text);
-  padding: 10px 13px;
-  min-width: 54px;
+  /* Top padding carries the roof band; bottom carries the bogies. */
+  padding: 16px 13px 14px;
+  min-width: 56px;
   text-align: center;
+  background: var(--bg);
+}
+
+/* The roof, in the line's colour. A fill, not type — nothing is read off it,
+   and the car's own label stays near-black on white below it. */
+.formation-roof {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7px;
+  background: var(--accent-map);
+}
+
+.formation-label {
+  display: block;
+}
+
+/* Bogies. Two per car, inset from its ends the way real ones are. */
+.formation-bogies {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* Exactly the train's bottom padding, so the bogies stand ON the rail
+     rather than floating two pixels above it. */
+  bottom: -9px;
+  display: flex;
+  justify-content: space-evenly;
+  pointer-events: none;
+}
+
+.formation-bogies span {
+  width: 9px;
+  height: 7px;
+  border: 1.5px solid var(--text-3);
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
   background: var(--bg);
 }
 
@@ -1976,6 +2127,18 @@ a.spine-station:focus-visible .spine-name {
   line-height: 1.45;
   color: var(--text-2);
   flex: 1;
+}
+
+/* The palette, on the card that is about the palette. Sits above the meta
+   line and wraps freely — nine badges on one row would force the card wider
+   than the three beside it. */
+.data-card-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  /* The card is a flex column with its own gap; extra margins here would
+     stack on top of it and push the card taller than the three beside it. */
+  margin: 2px 0 0;
 }
 
 .data-card-meta {
@@ -3242,9 +3405,13 @@ a.adjacent-link:hover {
   border-bottom: 1px solid var(--rule);
 }
 
+/*
+ * Flex rather than the two-column grid it was: a row can now carry a line icon
+ * as well as a body and a meta block, and the icon needs to centre against the
+ * row while the title and the meta stay on a shared baseline.
+ */
 .card-list a {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: flex;
   align-items: baseline;
   gap: 16px;
   padding: 13px 12px 13px 2px;
@@ -3252,8 +3419,65 @@ a.adjacent-link:hover {
   color: var(--text);
 }
 
+.card-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.card-icon {
+  flex: none;
+  align-self: center;
+}
+
 .card-list a:hover {
   background: var(--bg-well);
+}
+
+/*
+ * ── The line's colour on the row ─────────────────────────────────────────────
+ * Five pixels of the official colour down the left edge, with a 1px hairline of
+ * the text-safe ink on its inner edge. Same construction as the page accent bar
+ * and for the same reason: brown, orange and Circular yellow all measure under
+ * 3:1 against white, so the colour alone would have no defined edge and the
+ * pale lines would read as a rendering fault rather than a mark.
+ *
+ * Reinforcement, never the message. The badge in the row's meta carries the
+ * code and the words beside it carry the line name — see CardRow.
+ */
+.card-list li[data-line] > a {
+  position: relative;
+  padding-left: 16px;
+}
+
+.card-list li[data-line] > a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--row-map);
+  border-right: 1px solid var(--row-ink);
+}
+
+/* Hover already tints the row; the bar must not disappear into it. */
+.card-list li[data-line] > a:hover::before {
+  border-right-color: var(--row-ink);
+}
+
+/* The line name in words. Hidden below the width where it would wrap the meta
+   block onto its own line and push the arrow away from the row it belongs to —
+   the badge and the row title still carry which line it is. */
+.card-line-name {
+  color: var(--text-3);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .card-line-name {
+    display: none;
+  }
 }
 
 .card-title {
@@ -3908,9 +4132,29 @@ a.badge-link:focus-visible {
   text-decoration: underline;
 }
 
+/*
+ * The other lines serving an interchange station. See the note in
+ * app/rail/stations/page.tsx for why these were missing and why it mattered.
+ * The badges are aria-hidden and a visually-hidden sentence beside them says
+ * the same thing in words — two mini pills read out as "B L one five" are
+ * worse than nothing, and the pills are already redundant with it.
+ */
+.station-index-interchange {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  flex: none;
+}
+
 .station-index-zh {
   color: var(--text-3);
   font-size: 13px;
+}
+
+/* The line icon in the group heading needs to sit on the cap height of a
+   22px display face, not on its baseline. */
+.station-index-head {
+  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -4087,11 +4331,80 @@ a.badge-link:focus-visible {
   margin: 44px 0 34px;
 }
 
+/*
+ * The explainer above the drawing.
+ *
+ * Run 11: "idk what the elevation profile is." The drawing had a caption and
+ * the caption was underneath it, which is too late — a reader who cannot
+ * identify a picture does not scroll past it looking for the legend. Heading
+ * and one sentence, above, in body type rather than caption type, because it
+ * is the thing being read rather than an annotation on something else.
+ */
+.profile-intro {
+  max-width: var(--measure);
+  margin: 0 0 12px;
+}
+
+.profile-head {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.profile-lead {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.profile-lead strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .profile-frame {
   background: var(--bg-well);
   border: 1px solid var(--rule);
   border-radius: 2px;
   padding: 14px 12px 8px;
+}
+
+/*
+ * The ground, filled. Flat, neutral, and deliberately not the line colour:
+ * everything chromatic in this drawing is railway, and the earth is not.
+ * A tint of --rule rather than --rule itself so the ground line still has an
+ * edge against it and the hatched region still reads through.
+ */
+.profile-earth {
+  fill: var(--profile-earth);
+}
+
+/*
+ * Labels written on the drawing rather than only in the key below it.
+ *
+ * paint-order with a stroke of the frame's own background is a halo: these sit
+ * over piers and drop lines, and 9px monospace crossed by a 2px accent rule is
+ * unreadable. The halo is the standard cartographic fix and costs nothing at
+ * any zoom.
+ */
+.profile-run-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  /* Near-black, not the quiet grey the rest of the furniture uses. These are
+     the labels that make the drawing readable at all, and they sit on two
+     different backgrounds — the well above ground and the filled earth below
+     it. --text clears AA comfortably on both; --text-2 does not on the earth. */
+  fill: var(--text);
+  paint-order: stroke;
+  stroke: var(--bg-well);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
 }
 
 .profile-svg {
@@ -4279,6 +4592,37 @@ a.badge-link:focus-visible {
   margin: 22px 0 26px;
 }
 
+/*
+ * The sentence above the ladder. Same argument as .profile-intro: the drawing
+ * led the page and nothing above it said what the two columns were, so the
+ * first thing a reader met was a bow-tie. See the note in NumberingLadder.tsx.
+ */
+.ladder-intro {
+  max-width: var(--measure);
+  margin: 0 0 12px;
+}
+
+.ladder-head-text {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  line-height: 1.25;
+  margin: 0 0 4px;
+}
+
+.ladder-lead {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.ladder-lead strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .ladder-frame {
   background: var(--bg-well);
   border: 1px solid var(--rule);
@@ -4350,6 +4694,38 @@ a.badge-link:focus-visible {
   stroke: var(--accent-map);
   stroke-width: 1.2;
   opacity: 0.75;
+}
+
+/*
+ * The two connectors named in the sentence above the drawing.
+ *
+ * An exact reversal puts every connector through the same centre point. That
+ * is arithmetic — no arrangement of the rails avoids it — so the crossing half
+ * renders as a starburst in which no individual line can be followed. Two of
+ * them drawn at full weight give the eye one thread it can trace end to end,
+ * and they are the two the sentence already worked through.
+ */
+.ladder-link[data-example] {
+  stroke: var(--accent);
+  stroke-width: 2;
+  opacity: 1;
+}
+
+/*
+ * Brackets naming what each half of the drawing does. Wide layout only — the
+ * compact one has no room, and the sentence they abbreviate is above the
+ * drawing at every width.
+ */
+.ladder-bracket path {
+  fill: none;
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.ladder-bracket-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  fill: var(--text-2);
 }
 
 .ladder-break {

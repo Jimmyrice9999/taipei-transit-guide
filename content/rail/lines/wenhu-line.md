@@ -22,7 +22,7 @@ lead:
   source: tdx
   note: Also published as 25.7 km (two construction projects added together), 25.04 km (this site's own measurement) and 26.42 km (the whole alignment, depot leads included). Four figures, four different things — the section below says which is which.
 profile:
-  caption: The Wenhu Line in section. It runs on viaduct for all but 3.9 km of its length, dives under Songshan Airport and the Keelung River, and comes back up beside the south portal of the Ziqiang road tunnel at Dazhi.
+  caption: The line runs on viaduct for all but 3.9 km of its length, dives under Songshan Airport and the Keelung River, and comes back up beside the south portal of the Ziqiang road tunnel at Dazhi.
   label:
     - BR01
     - BR09

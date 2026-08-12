@@ -86,6 +86,96 @@ test('no interchange is shown by colour alone', () => {
   assert.ok(html.includes('BL'), 'BR10 does not name the Bannan Line it interchanges with')
 })
 
+/*
+ * ── Run 11: colour arrived on the index rows and on the line icons ──────────
+ * Both were added because the site had a colour system and three consecutive
+ * rounds of feedback saying it was not being used. Both are therefore exactly
+ * the kind of change that quietly turns into "colour carries the meaning",
+ * which is the rule this file exists to hold. These pin the fallbacks.
+ */
+
+test('a coloured index row never says which line by colour alone', () => {
+  // Every row that carries a line rule also carries that line's letter code
+  // and its name in words. Strip the CSS and the page still reads.
+  const html = read('rail/lines/index.html')
+  for (const line of LINES) {
+    if (!html.includes(`data-line="${line.code}"`)) continue
+    assert.ok(
+      html.includes(`>${line.code}</span>`),
+      `${line.code} has a coloured row rule on /rail/lines/ and no code badge`,
+    )
+  }
+  assert.ok(
+    /class="card-line-name"/.test(html),
+    'no row names its line in words — the rule and the badge would be the whole statement',
+  )
+})
+
+test('every line icon names the character it draws', () => {
+  /*
+   * The icon says rubber-tyred / steel-wheel / light rail, and driverless or
+   * not, by shape alone. A reader who cannot see shapes gets nothing from it
+   * unless it is labelled, so every one carries an accessible name that spells
+   * the character out — checked here rather than trusted.
+   */
+  const html = read('rail/network/index.html')
+  const labels = [...html.matchAll(/<svg[^>]*class="line-icon"[^>]*aria-label="([^"]+)"/g)].map(
+    (m) => m[1],
+  )
+  assert.ok(labels.length >= LINES.length, `only ${labels.length} line icons on the network page`)
+  for (const label of labels) {
+    assert.match(
+      label,
+      /(steel-wheel metro|rubber-tyred metro|light rail)/,
+      `line icon label "${label}" does not say what kind of railway it draws`,
+    )
+  }
+})
+
+test('the two diagrams that were not understood say what they are, above themselves', () => {
+  /*
+   * Run 11, reported verbatim: "idk what the elevation profile is" and "idk
+   * what you're even talking abt". Both drawings were correct and unlabelled,
+   * and both explanations sat in a caption underneath. These assert the
+   * explanation is present and ABOVE the drawing, because that ordering is the
+   * whole fix and a later refactor would not obviously break anything else.
+   */
+  const line = read('rail/lines/wenhu-line/index.html')
+  assert.ok(
+    line.indexOf('profile-intro') < line.indexOf('profile-frame'),
+    'the section drawing explains itself below itself again',
+  )
+  assert.match(line, /Above ground and below/, 'the section drawing has no heading')
+
+  const ladder = read('rail/systems/station-numbering/index.html')
+  assert.ok(
+    ladder.indexOf('ladder-intro') < ladder.indexOf('ladder-frame'),
+    'the numbering ladder explains itself below itself again',
+  )
+  assert.match(
+    ladder,
+    /was drawing number/,
+    'the numbering ladder no longer works its example through in words',
+  )
+})
+
+test('no depot claims a junction it has not declared', () => {
+  /*
+   * `resolveSpine('')` marks every station on the line — right for a fleet,
+   * false for a depot, and six depot pages were printing "Joins the line at
+   * R02, R03, … R28, R22A". The note now degrades to a TBC.
+   */
+  for (const file of allHtml()) {
+    const rel = path.relative(OUT, file).replace(/\\/g, '/')
+    if (!rel.startsWith('rail/depots/') || rel === 'rail/depots/index.html') continue
+    const html = visible(fs.readFileSync(file, 'utf8'))
+    const note = html.match(/Joins the line at ([^<]*(?:<[^>]+>[^<]*)*?)<\/span>/)
+    if (!note) continue
+    const codes = [...note[1].matchAll(/\b[A-Z]{1,2}\d{2}[A-Z]?\b/g)].length
+    assert.ok(codes <= 2, `${rel} claims ${codes} junctions with the line`)
+  }
+})
+
 /* ---- badge legibility ---------------------------------------------- */
 
 test('every badge keeps its text legible against its own fill', () => {

@@ -17,7 +17,23 @@ import { LINES } from '@/lib/lines'
  * having a nav rather than a list of sections.
  */
 
-export type NavLink = { href: string; title: string }
+export type NavLink = {
+  href: string
+  title: string
+  /**
+   * The line's code badge, where the link's subject has a line.
+   *
+   * Run 11, part of putting colour where it means something: the Lines
+   * dropdown listed ten line names in identical grey, which is the one place
+   * on the site where a reader is choosing between lines and the one place the
+   * network's own colour system was not used. Carried as plain values rather
+   * than a Line object because SiteNav is a client component and cannot import
+   * the registry, which reads TDX JSON off disk.
+   *
+   * The code is always rendered with the name, never instead of it.
+   */
+  badge?: { code: string; bg: string; fg: string }
+}
 
 export type NavGroup = {
   href: string
@@ -69,7 +85,23 @@ export function getNavTree(): NavSection[] {
         return {
           href: type.href,
           title: type.title,
-          links: ordered.slice(0, CAP).map((page) => ({ href: page.href, title: page.title })),
+          links: ordered.slice(0, CAP).map((page) => {
+            const line = LINES.find((l) => l.code === page.line)
+            return {
+              href: page.href,
+              title: page.title,
+              /*
+               * Only on the Lines group. A fleet or a depot has a line too,
+               * but a badge beside "Muzha Depot" in a menu says "brown" about
+               * something whose name is already unambiguous, and ten badges
+               * down a fleet column would be colour for its own sake — which
+               * is the thing this site's rules actually forbid.
+               */
+              ...(type.slug === 'lines' && line
+                ? { badge: { code: line.code, bg: line.badgeBg, fg: line.badgeFg } }
+                : {}),
+            }
+          }),
           truncated: pages.length > CAP,
         }
       })

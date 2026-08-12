@@ -2,6 +2,7 @@
 title: Danhai LRT
 summary: New Taipei's first light rail — street-running trams serving the Tamsui new town, with a second phase under construction.
 order: 8
+line: V
 aliases:
   - 淡海輕軌
 updated: 2026-08-06

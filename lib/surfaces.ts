@@ -70,12 +70,18 @@ export const SWATCHES: Swatch[] = [
     on: [],
     why: 'The header band and the print badge fallback. Dark; only band-ink sits on it.',
   },
+  {
+    name: 'profile-earth',
+    role: 'surface',
+    on: [],
+    why: 'The filled ground in the section drawing (run 11). A surface rather than a fill, because the IN TUNNEL label is written on it — the drawing was reported as unreadable, the ground is what made it readable, and a colour with text on it has to be checked like one.',
+  },
 
   {
     name: 'text',
     role: 'text',
-    on: ['bg', 'bg-well'],
-    why: 'Body copy and headings, on the page and inside wells.',
+    on: ['bg', 'bg-well', 'profile-earth'],
+    why: 'Body copy and headings, on the page and inside wells — and the STREET LEVEL / ON VIADUCT / IN TUNNEL labels written on the section drawing, which is why the filled earth is listed here.',
   },
   {
     name: 'text-2',

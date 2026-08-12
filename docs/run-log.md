@@ -4728,3 +4728,282 @@ than raising `docs/claims-baseline.json`, per Part 14.
    guideway" is now true for six of ten lines (the ones with an inline photo
    beyond the hero); the other four (Airport MRT, Tamsui–Xinyi, C371's line
    pages, and the four fully depot-and-fleet-less lines) still carry one.
+
+════════════════════════════════════════════════════════════════════════════
+
+## 82. Part 7 — colour, and the argument that lost
+
+Asked three times, argued down twice on the grounds that colour without
+meaning is decoration. That argument was right about the principle and was
+being used to protect the wrong pages, which the before-shots settle without
+needing the argument at all.
+
+### What the before-shots actually showed
+
+`/rail/lines/` — the index OF THE LINES, the ten things on this site that most
+obviously have a colour, whose colours are the network's own wayfinding
+system, sampled from government open data and published with their contrast
+working shown on their own page — rendered as ten black headings on white. No
+badge, no rule, no mark of any kind. `/rail/rolling-stock/` the same, and
+every fleet declares the line it works. `/rail/depots/` the same, and every
+depot declares the line it serves. `/rail/` the same.
+
+The colour was in the registry, on the line pages, on the network map and on
+`/data/line-colours/` — and absent from every page where a reader chooses what
+to read next. That is not restraint; it is a lookup table the site declines to
+use.
+
+Before: `docs/screenshots/b4-rail-lines-1440.png`.
+After: `docs/screenshots/r11-rail-lines-1440.png`.
+
+### What was coloured, and what carries it when the colour is gone
+
+New component `components/CardRow.tsx`, used by `app/[section]/page.tsx` and
+`app/[section]/[type]/page.tsx`, so every index row on the site changed at
+once:
+
+| Carrier | What it is |
+|---|---|
+| 5px rule down the left edge | the official colour, with a 1px `ink` hairline so Circular yellow and Zhonghe–Xinlu orange have a defined edge on white |
+| code badge | the letters, in the row's meta |
+| line name in words | beside the badge; hidden below 560px, where the badge and the row title still carry it |
+| line icon | on rows whose subject IS a line — see §83 |
+
+Delete every colour and the row still reads. That is the test the previous two
+arguments were about, and this passes it.
+
+Also coloured, each because the colour is the information:
+
+- **The nav dropdown.** The Lines column carried ten grey names — the one
+  place a reader chooses between lines, and the one place the colour system
+  was not used. Badges at a fixed 22px width so the names still start on one
+  left edge. `NavLink` gained a `badge` field carrying plain values, because
+  `SiteNav` is a client component and cannot import the registry.
+- **`/rail/stations/`.** BR09, BR10, BR11 and BR24 were listed with a brown
+  badge and nothing else — the four places on the line where you can change
+  trains, which the strip map has shown since run 4 and the index did not.
+  Every serving line's badge now appears on the row, with a visually-hidden
+  sentence naming them in words (two mini pills read out as "B L one five" are
+  worse than nothing, so the pills are `aria-hidden` and the sentence is not).
+- **The `/data/` index.** Its lede is a claim about colour values; its
+  "Official line colours" card described the palette without showing it. Nine
+  badges now sit on the card.
+- **The network table.** Already coloured; gained the icons.
+
+### Two lines had a colour and were not using it
+
+`content/rail/lines/danhai-lrt.md` and `ankeng-lrt.md` carried no `line:`
+field, so V and K — in the registry since run 10, with official TDX colours —
+accented nothing. Both now declare it, which also gives those two pages an
+accent bar and a badge in the facts panel.
+
+### The one row Part 7 could not colour, and why
+
+**Sanying.** `data/tdx/NTMC/line.json` contains exactly one record, the
+Circular Line. There is no LB record to derive a colour from, which is why the
+line is absent from `DISPLAY_ORDER` and from the map. That is Part 9's subject
+and was out of scope here. The visible cost is that the Sanying row on
+`/rail/lines/` is now the only one without a rule, badge or icon, where before
+every row was equally colourless. Flagged rather than papered over — adding
+`LB` by hand would change every line count, the length bars and the fact
+cross-checks as a side effect of a colour change.
+
+### Limits held
+
+`--profile-earth` is the only new hex, and it is registered in
+`lib/surfaces.ts` with a stated role rather than left as a loose `fill:` where
+the colour audit would never have seen it; `--text` now lists it as a surface
+it sits on, so the labels written on it are contrast-checked like everything
+else. No gradients. AA and the 4.6 derivation margin unchanged: `npm run cvd`
+reports 0 genuine failures, `npm run a11y` 0 errors and 0 warnings.
+
+## 83. Part 8 — the diagrams that did not communicate
+
+### 83.1 The elevation profile — "idk what the elevation profile is"
+
+The drawing was correct and unlabelled. A brown rule near the top, a grey rule
+under it, a short bar low down, and nothing anywhere saying that the grey rule
+was the ground or that up and down meant above and below it. Every explaining
+word was in a caption UNDERNEATH the picture, which is too late: a reader who
+cannot identify a picture does not scroll past it looking for the legend, they
+decide it is decoration.
+
+Three changes, all the same change — say what it is, on it:
+
+1. **A heading and one plain sentence above the drawing.** "A side-on view of
+   the Wenhu Line, as if the ground were cut open along the route. Left to
+   right is distance from BR01, to scale. Up and down is street level."
+   Engineers call it a section drawing; that sentence is what that means.
+2. **The earth is drawn.** Everything below street level is filled, flat, one
+   neutral tone, full viewBox width. This is the change that makes the drawing
+   legible without reading a word — a bore floating in white space is a short
+   bar; the same bar inside a solid ground is a tunnel.
+3. **Labels where the things are.** `STREET LEVEL` on the ground line,
+   `ON VIADUCT` over the longest elevated run, `IN TUNNEL` at the bore, each
+   with a halo of the frame background so it survives crossing a pier.
+
+One bug found by looking: the first version sized labels against a single
+station-to-station band, and Wenhu's longest is under 1.5 km, so `ON VIADUCT`
+silently printed nothing. Adjacent bands of one structure are now merged first
+— what a reader sees is not the band, it is the run.
+
+The frontmatter caption lost its opening "The Wenhu Line in section", which
+was the jargon the heading now replaces.
+
+Before: `docs/screenshots/elev-rail-lines-wenhu-line-1440.png`.
+After: `docs/screenshots/d2-rail-lines-wenhu-line-2560.png`.
+
+### 83.2 The numbering ladder — "idk what you're even talking abt"
+
+The component's own header comment ran thirty lines defending the drawing's
+GEOMETRY, and the geometry was never the problem. "The connecting lines cross"
+only means something once you know there are two numbering systems, and the
+sentence establishing that was in the prose BELOW the figure — and this device
+leads its page by decision, so the first thing a reader met was two columns of
+codes with a bow-tie between them and no statement of what either column was.
+
+- **The sentence, above the drawing, with the example worked through**: BR01
+  Taipei Zoo was drawing number BR13; BR13 Songshan Airport was drawing number
+  BR1. A reader who reads only that has the whole finding.
+- **Brackets naming each half** — "counted from the opposite end — every line
+  crosses" against the crossing half, "same order — the lines run straight"
+  against the parallel one. Computed from the drawing's own geometry rather
+  than from `seriesBreakAfter`, so a bracket can never describe a different
+  split from the one drawn. Wide layout only; the sentence they abbreviate is
+  above the drawing at every width.
+- **Two exemplar connectors picked out.** An exact reversal sends EVERY
+  connector through the same centre point — arithmetic, not a drawing fault —
+  so the crossing renders as a starburst in which no single line can be
+  followed. The two named in the sentence are drawn at full weight so the eye
+  has one thread it can trace.
+
+Both headings are `h2`. They were `h3` for one build and `npm run a11y` caught
+the h1 to h3 jump on the numbering page, where the ladder leads.
+
+Before: `docs/screenshots/ladder-rail-systems-station-numbering-1440.png`.
+After: `docs/screenshots/d2-rail-systems-station-numbering-375.png` and
+`r11-rail-systems-station-numbering-1920.png`.
+
+### 83.3 The formation diagram — two things, only one of them a bug
+
+**It is absent on five of seven fleet pages, and that is correct.** C301,
+C321, C341, C371 and C381 declare no `formation:`. Each is a scope page whose
+own prose says the formation is "still to be verified against primary sources"
+and each ends "Nothing numerical is asserted on this page." A formation is a
+numerical assertion. Drawing one from an enthusiast wiki to fill the slot is
+exactly what this site's rules exist to prevent, so it stays absent until a
+research pass lands. **Nothing was fixed here; the fix is research on those
+five fleets, which belongs to Part 5.**
+
+Deliberately did NOT add a "formation not yet verified" placeholder: that is
+an announcement of absence, which Part 2 and run 10 removed everywhere else.
+
+**It was invisible on the two pages that do carry one, and that was a bug.**
+Four thin-outlined white rectangles with monospaced labels read as a fragment
+of a table. It now has a roof band in the line's colour, bogies, and a rail
+under the whole formation. The rail ran the full content width for one build
+because `.formation-train` was `display: flex` on a block; `inline-flex` now,
+so the track ends where the train does. The line colour is load-bearing rather
+than applied: a fleet page's subject is a train, and the roof says which
+railway it works.
+
+Before: `docs/screenshots/form-rail-rolling-stock-val256-1440.png`.
+After: `docs/screenshots/f2-rail-rolling-stock-val256-1440.png`.
+
+### 83.4 Line icons — new, and derived from each line's own character
+
+`components/LineIcon.tsx` draws the front of the line's own train, in the
+line's own colour. The badge already does identity; what it cannot do is say
+what kind of railway it is, and that difference is real here in a way it is
+not on most networks — Taipei runs a rubber-tyred metro, a steel-wheel metro
+and two street tramways under one fare system, and nothing on the site said so
+at a glance.
+
+| Feature | Says |
+|---|---|
+| two wheels standing on a rail | steel wheel |
+| two ring-drawn tyres, no rail, side guide bars | rubber-tyred — and the guide bars are why Wenhu climbs |
+| wheels on a rail plus a roof pantograph | light rail |
+| one full-width front pane | driverless — Wenhu's own summary is "no cab, a front window you can stand at", and this is that window |
+| two panes divided by a pillar | asserts nothing about who is behind them |
+
+Used on `/rail/lines/`, `/rail/`, the `/rail/stations/` group headings and the
+network table. Colour is the badge pair, already derived against the 4.6
+margin, so the glass clears AA against the body without a second derivation to
+keep in step. The rail and the guide bars are neutral: they are track, not
+train.
+
+**The attributes live in `lib/line-character.ts`, each with the on-site source
+it rests on**, rather than inside the drawing where nobody would check them
+again. Driverless is asserted only for BR and Y, the two lines whose pages
+carry a sourced automation fact. Light rail comes from the registry. Steel
+wheel is the default for heavy metro rather than a per-line citation, and
+**that inference is stated in the file rather than laundered into the icon**:
+the Wenhu page says in print that Wenhu is "a rubber-tyred guideway that
+climbs hills the rest of the network cannot", and the C301 and C371 pages say
+the same from the other end. Bannan and the Airport MRT have no such sentence
+on the site and take the default. When a citation appears, the file is where it
+goes.
+
+Proof shot at 4× device scale: `docs/screenshots/zoom-icons.png`.
+
+### 83.5 Station badge audit — one real finding, and it was a false claim
+
+Audited by scanning every built page for station codes rendered as text rather
+than as a badge, with SVG map labels, `sr-only` text and `meta` excluded.
+
+- **No station renders without a badge in any strip map.** All nine line
+  pages: zero stops with an empty code slot. The first pass of the audit
+  claimed otherwise and was wrong — it was reading the `sr-only` duplicates
+  its own sanitiser had left behind.
+- **The remaining bare codes on `/rail/depots/*` were a false claim.**
+  `resolveSpine('')` returns EVERY station on the line — the right default for
+  a fleet, which does work the whole line, and false for a depot, which joins
+  it in one place. Six depot pages declare no `spine:`, so all six lit every
+  tick on the marker rail and printed, in the page furniture:
+
+  > Joins the line at R02, R03, R04, … R28, R22A
+
+  Twenty-seven junctions for one depot. **This is the third time this exact
+  class of bug has appeared on the depot pages** — a small false claim in the
+  furniture, beside prose about a depot drawn in the wrong place — and the
+  first two were caught by looking at a screenshot. This one was caught by
+  looking for unbadged station codes, which is what twenty-seven of them in a
+  row look like. A depot with no declared junction now marks nothing and the
+  key reads "Junction with the line not recorded".
+- **The junction note renders its codes as badges**, on the one device whose
+  whole premise is that a station code is a badge. `Spine`'s `railNote` became
+  `React.ReactNode` for it.
+
+After: `docs/screenshots/key-rail-depots-beitou-depot-1440.png` and
+`key-rail-depots-muzha-depot-1440.png`.
+
+## 84. Suite after Parts 7 and 8
+
+`npm test` 183/183 (four new), `npm run verify` clean — 0 broken links, a11y 0
+errors / 0 warnings, 18/18 fact cross-checks, 0 genuine contrast failures,
+claims steady at the baseline of 32. `npm run verify:browser` clean across all
+19 page types. `npm run fonts` re-run twice: 桃 and 海 entered the content
+subset when the Chinese line names reached the index pages.
+
+Four tests added to `tests/accessibility.test.mts`, all pinning things a later
+refactor would break silently: a coloured index row always carries its code and
+its line name in words; every line icon's accessible name says what kind of
+railway it draws; both diagrams' explanations sit ABOVE their drawings (the
+ordering IS the fix); and no depot claims more than two junctions.
+
+Screenshot set for this run is `docs/screenshots/r11-*` at 375 / 768 / 1440 /
+1920 / 2560, plus element crops `d1-*`, `d2-*`, `f2-*`, `key-*` and
+`zoom-icons.png`.
+
+## 85. What Parts 7 and 8 did not do
+
+- Sanying stays colourless on the indexes — Part 9.
+- Five fleets still have no formation drawing — Part 5 research.
+- The line icons are used in four places. The line pages themselves do not
+  carry one: the accent bar, the badge and the coloured strip map already
+  identify the line at the top of the page, and a fifth statement of it there
+  would be the decoration the rule is actually about.
+- Parts 1–6 and 9–15 were out of scope by instruction and are untouched, other
+  than the two LRT `line:` fields and the Wenhu profile caption, both of which
+  Part 7 required.

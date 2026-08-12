@@ -1,14 +1,13 @@
 /** A page-type index: /rail/lines/, /rail/rolling-stock/, /rail/depots/ */
 
-import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import CardRow from '@/components/CardRow'
 import ComparisonTable from '@/components/ComparisonTable'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
-import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderBody, getPages, getSection, getSections, getType, getTypes } from '@/lib/content'
 
@@ -104,25 +103,21 @@ export default async function TypeIndexPage({ params }: Props) {
             about the bar, wrong that the word was needed at all.
           */}
           {pages.map((page) => (
-            <li key={page.slug}>
-              <Link href={page.href}>
-                <span>
-                  <span className="card-title">
-                    <RichText>{page.title}</RichText>
-                  </span>
-                  {page.summary && (
-                    <span className="card-desc">
-                      <RichText>{page.summary}</RichText>
-                    </span>
-                  )}
-                </span>
-                <span className="card-meta">
-                  <span className="card-arrow" aria-hidden="true">
-                    →
-                  </span>
-                </span>
-              </Link>
-            </li>
+            <CardRow
+              key={page.slug}
+              href={page.href}
+              title={page.title}
+              summary={page.summary}
+              line={page.line}
+              /*
+               * The icon is the line's own train, so it belongs on rows whose
+               * subject IS a line. A fleet or a depot row gets the badge and
+               * the line name and no icon: the C301's row already says C301,
+               * and a picture of "what the red line runs" beside it would be
+               * read as a picture of the C301.
+               */
+              isLine={type === 'lines'}
+            />
           ))}
         </ul>
       )}

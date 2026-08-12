@@ -14,6 +14,32 @@ import type { Station } from '@/lib/stations'
  * and a river and comes back up beside a road tunnel. Wenhu does all of that in
  * 3.9 km and no English source draws it.
  *
+ * ── Run 11: it was not understood ────────────────────────────────────────────
+ * Reported verbatim: "idk what the elevation profile is." The drawing was
+ * correct and unlabelled — a brown rule near the top, a grey rule under it, a
+ * short bar low down, and nothing anywhere saying that the grey rule was the
+ * ground or that up and down meant above and below it. Every word explaining
+ * the picture was in a caption UNDERNEATH it, after the reader had already
+ * decided it was decoration.
+ *
+ * Three changes, all of them the same change — say what it is, on it:
+ *
+ *   1. A heading and one plain sentence ABOVE the drawing, before anyone has
+ *      to interpret anything. It is called a section drawing by engineers;
+ *      "as if the ground were cut open along the route" is what that means.
+ *   2. The earth is drawn. A tunnel below a line reads as a tunnel only if
+ *      there is something for it to be inside — so everything below street
+ *      level is filled, flat, one neutral tone. Not a gradient, not the line
+ *      colour: the ground is not part of the railway.
+ *   3. The runs are labelled where they are: ON VIADUCT over the longest
+ *      elevated stretch, IN TUNNEL at the bore, STREET LEVEL on the ground
+ *      line. A key that makes you look away and come back is a key that most
+ *      readers do not use.
+ *
+ * The old key stays, because the hatched region still needs explaining and
+ * because labels placed on the longest run cannot name every run.
+ * ─────────────────────────────────────────────────────────────────────────────
+ *
  * WHAT IT DRAWS, AND FROM WHAT
  *
  *   horizontal   TDX CumulativeDistance, per station — the operator's own
@@ -63,6 +89,8 @@ const DECK = 28
 const BORE = 114
 const TICKS = 156
 const H = 232
+/** Where the filled earth stops — clear of the station codes on the scale. */
+const EARTH_BOTTOM = TICKS - 10
 
 export default function ElevationProfile({
   line,
@@ -130,8 +158,68 @@ export default function ElevationProfile({
   }
   marks.push(total)
 
+  /*
+   * Where to write ON VIADUCT and IN TUNNEL: on the longest run of each kind,
+   * and nowhere if there is no room for the words. Adjacent bands of one
+   * structure are merged first.
+   *
+   * Bands run station to station, and on Wenhu the longest single one is under
+   * 1.5 km — so a label sized against a band never fitted and the first version
+   * of this silently printed nothing. What a reader sees is not the band, it is
+   * the RUN: twelve elevated bands end to end read as one viaduct, and that is
+   * what gets named.
+   */
+  const longestBand = (structure: Station['structure']) => {
+    const runs: Band[] = []
+    for (const b of bands) {
+      if (b.uncertain || b.structure !== structure) continue
+      const last = runs[runs.length - 1]
+      if (last && last.to === b.from) last.to = b.to
+      else runs.push({ ...b })
+    }
+    return runs.reduce<Band | null>(
+      (best, b) => (!best || b.to - b.from > best.to - best.from ? b : best),
+      null,
+    )
+  }
+
+  /* Roughly the width of the text at 9px monospace, in viewBox units, plus a
+     little clearance either side. Measured against the rendered drawing, not
+     assumed: at 8 units a character "IN TUNNEL" needs 72 and Wenhu's bore
+     spans 93, so the tunnel is labelled and a shorter one would not be. */
+  const fits = (text: string, span: number) => span >= text.length * 5.8 + 14
+  const runLabel = (structure: Station['structure'], text: string, dy: number) => {
+    const band = longestBand(structure)
+    if (!band) return null
+    const x1 = x(band.from)
+    const x2 = x(band.to)
+    if (!fits(text, x2 - x1)) return null
+    return (
+      <text x={(x1 + x2) / 2} y={yFor(structure) + dy} className="profile-run-label" textAnchor="middle">
+        {text}
+      </text>
+    )
+  }
+
   return (
     <figure className="figure profile wide">
+      {/*
+        The explanation goes ABOVE the drawing, not in the caption below it.
+        A reader who cannot tell what a picture is does not scroll past it to
+        find out — they decide it is decoration and move on. That is exactly
+        what happened to this one. See the note at the top of the file.
+      */}
+      <div className="profile-intro">
+        <h2 className="profile-head">Above ground and below</h2>
+        <p className="profile-lead">
+          A side-on view of the {line.name} Line, as if the ground were cut open
+          along the route. <strong>Left to right is distance</strong> from{' '}
+          {placed[0].code}, to scale. <strong>Up and down is street level</strong> —
+          track drawn above the shaded ground is carried on a viaduct, and track
+          drawn inside it is in tunnel.
+        </p>
+      </div>
+
       {/*
         tabIndex on the scroll container, not decoration: a region that scrolls
         must be reachable and scrollable from the keyboard (WCAG 2.1.1), and on
@@ -166,6 +254,24 @@ export default function ElevationProfile({
               <line x1="0" y1="0" x2="0" y2="7" stroke="var(--accent-map)" strokeWidth="2" />
             </pattern>
           </defs>
+
+          {/*
+            The earth, filled flat.
+            ────────────────────────────────────────────────────────────────
+            Drawn before anything else so everything below street level sits
+            inside it. This is the change that makes the drawing legible
+            without reading a word: a bore floating in white space is a short
+            bar, and the same bar inside a solid ground reads as a tunnel.
+
+            One flat neutral, deliberately not the line colour and not a
+            gradient — the ground is not part of the railway, and a graded
+            fill would imply a depth axis this drawing explicitly does not
+            have.
+          */}
+          {/* Full viewBox width, not padded to the railway: ground does not
+              stop where the line does, and an inset rectangle reads as a panel
+              rather than as the earth. */}
+          <rect x={0} y={GROUND} width={W} height={EARTH_BOTTOM - GROUND} className="profile-earth" />
 
           {/* Ground. The one line in the drawing that is a real thing. */}
           <line
@@ -233,6 +339,17 @@ export default function ElevationProfile({
               </g>
             )
           })}
+
+          {/*
+            Named where they are, rather than only in a key underneath. The
+            key still exists for the hatching, which cannot be labelled in
+            place because its whole point is that its extent is unknown.
+          */}
+          <text x={PAD_L + 3} y={GROUND - 7} className="profile-run-label" textAnchor="start">
+            STREET LEVEL
+          </text>
+          {runLabel('elevated', 'ON VIADUCT', -14)}
+          {runLabel('underground', 'IN TUNNEL', 21)}
 
           {/*
             Stations. Only the named ones get a leader down to the scale: a

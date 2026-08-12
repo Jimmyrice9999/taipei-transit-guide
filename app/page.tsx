@@ -84,7 +84,7 @@ export default function HomePage() {
                 return (
                   <li key={type.slug}>
                     <Link href={type.href}>
-                      <span>
+                      <span className="card-body">
                         <span className="card-title">{type.title}</span>
                         {type.description && (
                           <span className="card-desc">{type.description}</span>

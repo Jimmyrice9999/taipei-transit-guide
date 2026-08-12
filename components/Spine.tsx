@@ -42,8 +42,12 @@ export default function Spine({
    * stations", which is a fleet's relationship to the line — a depot's is
    * "joins it here", and saying "serves" there is a small false claim in the
    * page furniture. The page decides; this component just refuses to guess.
+   *
+   * ReactNode rather than string since run 11: the depot note names station
+   * codes and was printing them as bare text — "Joins the line at BR01" — on
+   * the one device whose whole premise is that a station code is a badge.
    */
-  railNote?: string
+  railNote?: React.ReactNode
 }) {
   if (stations.length === 0) return null
 

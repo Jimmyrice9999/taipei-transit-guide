@@ -27,6 +27,26 @@
  * boxes, monospaced labels, coupler and cab marked, no fills or shadows beyond
  * the line accent. A reader who knows the notation should recognise it; a reader
  * who does not should still see car order and where the cabs are.
+ *
+ * ── Run 11: "the formation diagram isn't visible on fleet pages" ─────────────
+ * Two separate things, and only one of them was a bug.
+ *
+ * IT IS ABSENT on five of the seven fleet pages — C301, C321, C341, C371,
+ * C381 — because those pages declare no `formation:` at all. Each is a scope
+ * page that says in its own prose that the formation is "still to be verified
+ * against primary sources", and each ends "Nothing numerical is asserted on
+ * this page." A formation is a numerical assertion. Drawing one from an
+ * enthusiast wiki to fill the slot is precisely the failure this site's rules
+ * exist to prevent, so the diagram stays absent until the research lands.
+ * Nothing was fixed here; the fix is a research pass on those five fleets.
+ *
+ * IT WAS INVISIBLE on the two pages that do carry one. Four thin-outlined
+ * white rectangles with monospaced labels read as a table fragment, not as a
+ * train — no weight, no colour, nothing under them. So the drawing now has a
+ * roof in the line's colour, wheels, and a rail to stand on. The line colour
+ * is doing work rather than decorating: it says which railway this fleet
+ * works, on a page whose whole subject is a fleet.
+ * ─────────────────────────────────────────────────────────────────────────────
  */
 
 type Car = { label: string; cab: 'left' | 'right' | null }
@@ -74,7 +94,10 @@ export default function FormationDiagram({ formation }: { formation: string }) {
       </h2>
 
       <div className="formation-scroll">
-        <div className="formation-train" role="img" aria-label={`Formation: ${formation}`}>
+        {/* The rail the train stands on. One element, under the whole
+            formation, so the couplings between units read as gaps in a train
+            rather than as gaps in the drawing. */}
+        <div className="formation-train" role="img" aria-label={`Formation: ${formation}`} data-railed>
           {units.map((unit, unitIndex) => (
             <div className="formation-unit" key={unitIndex}>
               {unitIndex > 0 && <span className="formation-coupler" aria-hidden="true" />}
@@ -85,7 +108,16 @@ export default function FormationDiagram({ formation }: { formation: string }) {
                     data-cab={car.cab ?? undefined}
                     key={`${unitIndex}-${carIndex}`}
                   >
-                    {car.label}
+                    <span className="formation-roof" aria-hidden="true" />
+                    <span className="formation-label">{car.label}</span>
+                    {/* Bogies. Two spans rather than a background image: the
+                        site's rules forbid gradients, and a radial-gradient
+                        wheel is a gradient however small. Marked aria-hidden
+                        because the whole train already has one label. */}
+                    <span className="formation-bogies" aria-hidden="true">
+                      <span />
+                      <span />
+                    </span>
                   </div>
                 ))}
               </div>

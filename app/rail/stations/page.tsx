@@ -13,6 +13,7 @@ import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { getLinePageHref } from '@/lib/content'
 import BackLink from '@/components/BackLink'
+import LineIcon from '@/components/LineIcon'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema } from '@/lib/structured-data'
 import { NEUTRAL_LINE, getLine } from '@/lib/lines'
@@ -63,7 +64,13 @@ export default function StationsIndexPage() {
               {/* The heading names the line; it now links to it. This page
                   lists a line's stations, so the line itself is the obvious
                   thing to want next and it was not reachable from here. */}
-              <h2 className="section-heading">
+              {/*
+                The line's own icon beside its name — run 11. This page groups
+                stations by line and said which line only in words; the icon
+                and the badge now say it the way the network says it.
+              */}
+              <h2 className="section-heading station-index-head">
+                {line && <LineIcon code={line.code} size={28} />}
                 {line ? (
                   getLinePageHref(code) ? (
                     <Link href={getLinePageHref(code)!}>{`${line.name} Line`}</Link>
@@ -90,6 +97,51 @@ export default function StationsIndexPage() {
                         {station.code}
                       </span>{' '}
                       {station.name}
+                      {/*
+                        ── Every line that serves the station ────────────────
+                        Run 11. This index listed BR09, BR10, BR11 and BR24 with
+                        a brown badge and nothing else, which says they are
+                        ordinary stops on one line. They are the four places on
+                        this line where you can change trains — the single most
+                        useful thing an index of stations can tell you — and the
+                        strip map on the line page has shown it since run 4
+                        while the index did not.
+
+                        Inert spans: the row is already a link to the station,
+                        and an <a> inside an <a> is invalid. The badge letters
+                        carry it, not the colour.
+                      */}
+                      {station.interchange.length > 0 && (
+                        <span className="station-index-interchange">
+                          <span className="sr-only">
+                            {' '}
+                            interchange with{' '}
+                            {station.interchange
+                              .map((other) => getLine(other)?.name)
+                              .filter(Boolean)
+                              .join(', ')}
+                          </span>
+                          {station.interchange.map((other) => {
+                            const otherLine = getLine(other)
+                            if (!otherLine) return null
+                            return (
+                              <span
+                                key={other}
+                                className="badge badge-mini"
+                                aria-hidden="true"
+                                style={
+                                  {
+                                    '--badge-bg': otherLine.badgeBg,
+                                    '--badge-fg': otherLine.badgeFg,
+                                  } as React.CSSProperties
+                                }
+                              >
+                                {otherLine.code}
+                              </span>
+                            )
+                          })}
+                        </span>
+                      )}
                       <span className="station-index-zh" lang="zh-Hant">
                         {station.nameZh}
                       </span>

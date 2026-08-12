@@ -15,6 +15,7 @@ import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import LineBadge from '@/components/LineBadge'
+import LineIcon from '@/components/LineIcon'
 import { getLinePageHref as lineHref } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import RouteMap from '@/components/RouteMap'
@@ -184,6 +185,16 @@ export default function NetworkPage() {
                           `title` of its own and nesting it inside a wider
                           anchor would swallow that.
                         */}
+                        {/*
+                          Run 11. Nine rows of this table differ by colour,
+                          code, name and numbers, and said nothing about the
+                          one distinction a rider actually notices: two of
+                          these are tramways, one runs on tyres, and the rest
+                          are steel-wheel metro. The icon says which. Its
+                          accessible name spells that out in words — see
+                          components/LineIcon.
+                        */}
+                        <LineIcon code={line.code} size={26} />
                         <LineBadge code={line.code} />
                         <span className="network-name">
                           {lineHref(line.code) ? (

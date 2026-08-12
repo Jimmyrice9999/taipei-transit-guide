@@ -137,7 +137,25 @@ export default function SiteNav({
                         <ul>
                           {group.links.map((link) => (
                             <li key={link.href}>
-                              <Link href={link.href}>{link.title}</Link>
+                              <Link href={link.href}>
+                                {/* The badge is inside the link so the whole
+                                    row is one target. It never replaces the
+                                    name — see NavLink in lib/nav.ts. */}
+                                {link.badge && (
+                                  <span
+                                    className="badge badge-mini nav-badge"
+                                    style={
+                                      {
+                                        '--badge-bg': link.badge.bg,
+                                        '--badge-fg': link.badge.fg,
+                                      } as React.CSSProperties
+                                    }
+                                  >
+                                    {link.badge.code}
+                                  </span>
+                                )}
+                                {link.title}
+                              </Link>
                             </li>
                           ))}
                           {group.truncated && (

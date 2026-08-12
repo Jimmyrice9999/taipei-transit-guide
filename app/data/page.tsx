@@ -49,6 +49,29 @@ export default function DataPage() {
                 Wikipedia and Wikidata values — including one case where a citation to an
                 official route map was further from correct than the value it replaced.
               </span>
+              {/*
+                Run 11. This card describes the palette and did not show it —
+                on a section whose lede is a claim about colour values. Nine
+                badges in the official colours are the card's own subject, and
+                each carries its line's code, so the row still reads with the
+                colour stripped. Inert spans: the card is the link.
+              */}
+              <span className="data-card-swatches" aria-hidden="true">
+                {LINES.map((line) => (
+                  <span
+                    key={line.code}
+                    className="badge badge-mini"
+                    style={
+                      {
+                        '--badge-bg': line.badgeBg,
+                        '--badge-fg': line.badgeFg,
+                      } as React.CSSProperties
+                    }
+                  >
+                    {line.code}
+                  </span>
+                ))}
+              </span>
               <span className="data-card-meta">{LINES.length} lines · MOTC TDX</span>
             </Link>
 

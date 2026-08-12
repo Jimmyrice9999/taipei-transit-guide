@@ -1,79 +1,72 @@
 # For Jamie
 
-Written 11 August 2026, after run 11. Scope was Parts 2 and 6 only, by
+Written 11 August 2026, after run 11.2. Scope was Parts 7 and 8 only, by
 instruction. Assume you read this and nothing else.
 
-## Green. The run-10 "do not push" warning is stale — already resolved before I started
+## Green
 
-Whatever fixed the 30 unsourced sentences on circular-line/bannan-line/
-tamsui-xinyi-line happened before this session (the claims count was already
-back at the baseline of 32 when I checked). `npm test` and `npm run verify`
-both pass clean: 179/179 tests, 8,311 links / 0 broken, a11y 0 errors,
-18/18 fact cross-checks, claims steady at 32.
+`npm test` 183/183 (four new), `npm run verify` clean — 0 broken links, a11y 0
+errors, 18/18 fact cross-checks, 0 contrast failures, claims steady at 32.
+`npm run verify:browser` clean. Screenshot pass done at 375 / 768 / 1440 /
+1920 / 2560; I looked at all of them.
 
-## The bug worth your time
+## Part 7 — you were right and I was wrong about where
 
-**`scripts/fetch-commons.mjs` could silently serve the wrong photo.** Its
-cache key stripped non-ASCII characters, so two *different* Han-only Commons
-filenames collapsed to the same key. Nangang Depot's page was about to carry
-a photo of a Danhai LRT tram, correctly licensed and completely wrong.
-Caught by MD5-comparing the downloaded files — three fetched under different
-titles were byte-identical — not by anything in the pipeline itself. Fixed
-by hashing the full title into the cache filename. Worth remembering next
-time a fetch "succeeds" too easily.
+The principle I argued twice was fine. I was applying it to the wrong pages.
+`/rail/lines/` — the index of the ten things on this site that most obviously
+have a colour, sampled from government data, with their contrast working
+published on their own page — was ten black headings on white. Same for
+rolling stock, depots and `/rail/`. That is not restraint, it is a lookup
+table the site refuses to use.
 
-## Part 2 — done
+Every index row now carries a 5px rule in its line's official colour, a code
+badge, and the line name in words. Strip the colour and the row still reads —
+that is the actual test, and it passes. Also coloured: the nav dropdown's
+Lines column, interchange badges on `/rail/stations/`, and the palette on the
+`/data/` card that describes the palette.
 
-Run 10 already pulled the "Planned for v2" banner and the "N scope
-statements" tally out of the app shell, and empty sections/types are already
-dropped from the nav. What was left was `_index.md` copy that still *said*
-"nothing here yet" even though the counters were gone. Fixed on `/bus/`,
-`/bus/operators/`, `/bus/routes/` (the worst offenders — one page's entire
-body was "Planned, not written... why it is empty"), plus softer wording on
-gondola/ferry/ticketing/bike/systems, and a stale claim on `/about/` ("one
-line properly rather than seven badly" — it's ten lines now).
+**Two lines had a colour and weren't using it.** Danhai and Ankeng had no
+`line:` in their frontmatter, so V and K accented nothing. Fixed.
 
-## Part 6 — 32 pages with a photo → 45
+## Part 8 — both diagrams now say what they are, above themselves
 
-**Every one of the ten rail lines now has at least one photograph.** Six of
-seven rolling-stock fleets, three of eight depots, and — new — a mechanism
-for section pages like `/gondola/` to carry a hero image at all, which is
-what got the gondola a photo without writing any new content.
+The elevation profile and the numbering ladder had the same bug: the picture
+was correct, and every word explaining it was in a caption underneath. Nobody
+scrolls past a picture they can't identify to find the legend. Both now open
+with a heading and one plain sentence. The profile also draws the ground —
+that single change is what makes a tunnel read as a tunnel rather than a
+short bar floating in white space.
 
-Thirteen of those new pages cost nothing to fetch: run 10 had already pulled
-nine image folders off Commons and never wired them into a page. Found by
-inventorying `public/images/`, verified against Commons before use (same
-discipline as always — looked at every one).
+**Line icons exist now.** The front of each line's own train: tyres and guide
+bars for Wenhu, a pantograph for the two tramways, a full-width front window
+where the line is driverless. Attributes live in `lib/line-character.ts` with
+the on-site source for each; the one inference (steel wheel as the heavy-metro
+default) is written down in that file rather than hidden in the drawing.
 
-**Seven more images are found, licence-checked, and queued — Commons just
-would not hand them over.** Every fetch attempt this run hit a 429, including
-a final pass at 20s between requests with full backoff. This isn't a pacing
-problem, it's the rate limit doing what the brief said it would do. Candidates
-are recorded in the run log; re-running the same fetch list once Commons has
-cooled down should just work.
+## Three decisions I'd like you to know about
 
-**Two subjects have nothing on Commons at all** — Tucheng Depot and
-Xinzhuang Depot. Not "nothing licence-clean," nothing.
+1. **The formation diagram is missing from five fleet pages because those
+   fleets have no sourced formation.** C301/C321/C341/C371/C381 all say in
+   their own prose "nothing numerical is asserted on this page". I made the
+   drawing visible where it does exist (roof, bogies, rail) and left the five
+   blank. Filling them is a Part 5 research job, not a design job.
 
-**One photo found and rejected on a rendering technicality.** A clean C341
-photo exists, but its photographer's Commons username is two Chinese words
-with a space between them, and the site's own credit-attribution test does a
-literal substring search that a legitimately-tagged two-span credit fails.
-The credit displays correctly to a reader; it fails one test's shortcut.
-Reverted rather than force it through — C341 has no photo this run. Your
-call whether to fix `lib/text-tokens.ts` (a real but narrow fix) or just
-fetch the alternate Latin-credited photo already found.
+2. **Sanying is now the only colourless row on `/rail/lines/`.** Its TDX file
+   contains one record, the Circular Line — there is no LB colour to derive.
+   That's Part 9. I didn't hand-add it, because that would change every line
+   count and length bar as a side effect of a colour change.
 
-## Not done
+3. **I found a false claim while auditing badges.** Six depot pages were
+   printing "Joins the line at R02, R03, … R28, R22A" — twenty-seven junctions
+   for one depot — because a depot with no declared `spine:` inherited the
+   fleet default of "every station". Third time this class of bug has landed
+   on the depot pages. Now reads "Junction with the line not recorded".
 
-Parts 7, 8, 9, 10, 11, 12, 13 — not in scope this run. The rate-limited
-fetches above and the C341 decision are the only Part 6 loose ends.
+## Screenshots — three
 
-## Screenshots
-
-1. `rail/lines/bannan-line/` at 1440 — hero photo, then an inline body photo
-   with a full linked credit line further down the page.
-2. `rail/lines/danhai-lrt/` at 1440 — the free-thirteen wiring: a hero photo
-   on a page that had none this morning.
-3. `/gondola/` at 1440 — the new section-hero mechanism: a scope-statement
-   page that now opens with a real photograph instead of nothing.
+1. `docs/screenshots/r11-rail-lines-1440.png` — the colour change. Compare
+   with `b4-rail-lines-1440.png`, same page an hour earlier.
+2. `docs/screenshots/d2-rail-lines-wenhu-line-2560.png` — the elevation
+   profile with ground, labels and its explaining sentence.
+3. `docs/screenshots/zoom-icons.png` — the line icons at 4×, so you can see
+   what each one is claiming.

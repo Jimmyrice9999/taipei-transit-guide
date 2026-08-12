@@ -25,6 +25,7 @@ import RichText from '@/components/RichText'
 import RouteMap from '@/components/RouteMap'
 import SpecTable from '@/components/SpecTable'
 import Spine, { type DepotMark } from '@/components/Spine'
+import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { getAccent } from '@/lib/lines'
@@ -229,7 +230,31 @@ export default async function ContentPage({ params }: Props) {
   const stations = getLineStations(page.line)
   const hasSpine = stations.length > 0
   const variant = type === 'lines' ? 'map' : 'rail'
-  const marked = hasSpine ? resolveSpine(page.spine, page.line) : new Set<string>()
+
+  /*
+   * ── Run 11: the same false claim, on six more depot pages ────────────────
+   * `resolveSpine('')` returns EVERY station on the line — the right default
+   * for a fleet, which does work the whole line, and a false statement about a
+   * depot, which joins it at one place. Six depot pages declare no `spine:`,
+   * so all six lit every tick on the rail and printed, in the page furniture:
+   *
+   *     Joins the line at R02, R03, R04, … R28, R22A
+   *
+   * Twenty-seven junctions for one depot. This is the third time this exact
+   * class of bug has been found here — a small false claim in the furniture,
+   * on the depot pages, next to prose about a depot drawn in the wrong place —
+   * and the first two were caught by looking at a screenshot. This one was
+   * caught by auditing station codes rendered without a badge, which is what
+   * twenty-seven of them in a row look like.
+   *
+   * A depot with no declared junction now marks nothing and says nothing. Not
+   * knowing where it joins is the truth; drawing it everywhere is not.
+   */
+  const declaresSpine = page.spine.trim().length > 0
+  const marked =
+    hasSpine && (declaresSpine || type !== 'depots')
+      ? resolveSpine(page.spine, page.line)
+      : new Set<string>()
 
   /*
    * The rail key states the page subject's relationship to the line, and that
@@ -239,8 +264,27 @@ export default async function ContentPage({ params }: Props) {
    * pages whose Corrections sections discuss a misplaced depot junction.
    */
   const railNote =
-    type === 'depots' && marked.size > 0
-      ? `Joins the line at ${[...marked].join(', ')}`
+    type === 'depots'
+      ? marked.size > 0
+        ? (
+            <>
+              Joins the line at{' '}
+              {[...marked].map((code, i) => (
+                <span key={code}>
+                  {i > 0 && ', '}
+                  <StationBadge code={code} />
+                </span>
+              ))}
+            </>
+          )
+        : /*
+           * Six of the eight depots do not say where they meet their line, and
+           * with `marked` now empty the default key would read "Serves 0 of 28
+           * stations" — which is both wrong and worse than the claim it
+           * replaced. A TBC about a fact is this site's standard answer to not
+           * knowing something, so that is what it says.
+           */
+          'Junction with the line not recorded'
       : /*
          * A systems page does not serve stations either — it describes
          * something about them. Same class of small false claim in the page

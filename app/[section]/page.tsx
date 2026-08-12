@@ -11,6 +11,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import CardRow from '@/components/CardRow'
 import Figure from '@/components/Figure'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
@@ -96,7 +97,7 @@ export default async function SectionPage({ params }: Props) {
         <ul className="card-list">
           <li>
             <Link href="/rail/network/">
-              <span>
+              <span className="card-body">
                 <span className="card-title">The network</span>
                 {/*
                   Counted, not typed. This said "All seven lines across three
@@ -120,7 +121,7 @@ export default async function SectionPage({ params }: Props) {
           </li>
           <li>
             <Link href="/rail/stations/">
-              <span>
+              <span className="card-body">
                 <span className="card-title">Stations</span>
                 <span className="card-desc">
                   Every station with a page so far — generated from the same registry
@@ -157,25 +158,14 @@ export default async function SectionPage({ params }: Props) {
             {type.description && <p className="section-desc">{type.description}</p>}
             <ul className="card-list">
               {pages.map((page) => (
-                <li key={page.slug}>
-                  <Link href={page.href}>
-                    <span>
-                      <span className="card-title">
-                        <RichText>{page.title}</RichText>
-                      </span>
-                      {page.summary && (
-                        <span className="card-desc">
-                          <RichText>{page.summary}</RichText>
-                        </span>
-                      )}
-                    </span>
-                    <span className="card-meta">
-                      <span className="card-arrow" aria-hidden="true">
-                        →
-                      </span>
-                    </span>
-                  </Link>
-                </li>
+                <CardRow
+                  key={page.slug}
+                  href={page.href}
+                  title={page.title}
+                  summary={page.summary}
+                  line={page.line}
+                  isLine={type.slug === 'lines'}
+                />
               ))}
             </ul>
           </section>
