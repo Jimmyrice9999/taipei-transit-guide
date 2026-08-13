@@ -9,12 +9,15 @@
 
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import LineBadge from '@/components/LineBadge'
 import PageShell from '@/components/PageShell'
+import PhotoCard from '@/components/PhotoCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { getLinePageHref } from '@/lib/content'
 import BackLink from '@/components/BackLink'
 import LineIcon from '@/components/LineIcon'
 import JsonLd from '@/components/JsonLd'
+import { getImage } from '@/lib/images'
 import { breadcrumbSchema } from '@/lib/structured-data'
 import { NEUTRAL_LINE, getLine } from '@/lib/lines'
 import { STATIONS, getStationHref } from '@/lib/stations'
@@ -22,7 +25,7 @@ import { STATIONS, getStationHref } from '@/lib/stations'
 export const metadata: Metadata = {
   title: 'Stations',
   description:
-    'Every station with a page on this site, by line — names, codes and interchanges, generated from the same registry that draws the maps.',
+    'Every station with a page on this site, by line — photographed where a picture exists, with every interchange linked.',
   alternates: { canonical: '/rail/stations/' },
 }
 
@@ -56,35 +59,49 @@ export default function StationsIndexPage() {
         yet covered — the coverage grows line by line, not station by station.
       </p>
 
-      <div className="page-body">
-        {[...byLine.entries()].map(([code, stations]) => {
-          const line = getLine(code)
-          return (
-            <section key={code}>
-              {/* The heading names the line; it now links to it. This page
-                  lists a line's stations, so the line itself is the obvious
-                  thing to want next and it was not reachable from here. */}
-              {/*
-                The line's own icon beside its name — run 11. This page groups
-                stations by line and said which line only in words; the icon
-                and the badge now say it the way the network says it.
-              */}
-              <h2 className="section-heading station-index-head">
-                {line && <LineIcon code={line.code} size={28} />}
-                {line ? (
-                  getLinePageHref(code) ? (
-                    <Link href={getLinePageHref(code)!}>{`${line.name} Line`}</Link>
-                  ) : (
-                    `${line.name} Line`
-                  )
+      {/*
+        Not `.page-body` — that wrapper caps its direct children to
+        `--measure` (~729px), which is right for a page with a floated
+        spine beside a reading column, and wrong here: this page has no
+        spine, and a photo-card grid capped to the measure fits two columns
+        at any width, the same two columns whether the viewport is 1440 or
+        2560. The grid wants the container's full width, like the rolling
+        stock and depot indexes get by not being wrapped in .page-body at
+        all.
+      */}
+      {[...byLine.entries()].map(([code, stations]) => {
+        const line = getLine(code)
+        return (
+          <section key={code}>
+            {/* The heading names the line; it now links to it. This page
+                lists a line's stations, so the line itself is the obvious
+                thing to want next and it was not reachable from here. */}
+            {/*
+              The line's own icon beside its name — run 11. This page groups
+              stations by line and said which line only in words; the icon
+              and the badge now say it the way the network says it.
+            */}
+            <h2 className="section-heading station-index-head">
+              {line && <LineIcon code={line.code} size={28} />}
+              {line ? (
+                getLinePageHref(code) ? (
+                  <Link href={getLinePageHref(code)!}>{`${line.name} Line`}</Link>
                 ) : (
-                  code
-                )}
-              </h2>
-              <ul className="station-index">
-                {stations.map((station) => (
-                  <li key={station.code}>
-                    <Link className="station-index-link" href={getStationHref(station.code)!}>
+                  `${line.name} Line`
+                )
+              ) : (
+                code
+              )}
+            </h2>
+            <ul className="photo-card-grid">
+              {stations.map((station) => (
+                <PhotoCard
+                  key={station.code}
+                  href={getStationHref(station.code)!}
+                  line={station.line}
+                  image={getImage(`stations/${station.code.toLowerCase()}`)}
+                  title={
+                    <>
                       <span
                         className="badge"
                         style={
@@ -97,62 +114,46 @@ export default function StationsIndexPage() {
                         {station.code}
                       </span>{' '}
                       {station.name}
+                    </>
+                  }
+                  subtitle={
+                    station.nameZh ? <span lang="zh-Hant">{station.nameZh}</span> : undefined
+                  }
+                  meta={
+                    <>
+                      <LineBadge code={station.line} />
                       {/*
                         ── Every line that serves the station ────────────────
-                        Run 11. This index listed BR09, BR10, BR11 and BR24 with
-                        a brown badge and nothing else, which says they are
-                        ordinary stops on one line. They are the four places on
-                        this line where you can change trains — the single most
-                        useful thing an index of stations can tell you — and the
-                        strip map on the line page has shown it since run 4
-                        while the index did not.
-
-                        Inert spans: the row is already a link to the station,
-                        and an <a> inside an <a> is invalid. The badge letters
-                        carry it, not the colour.
+                        Run 11. This index listed interchange stations with a
+                        brown badge and nothing else, which said they were
+                        ordinary stops on one line. They are the places on
+                        this line where you can change trains, and — new in
+                        this pass — the badge is a real link to that line
+                        now, not an inert aria-hidden pill: LineBadge already
+                        links a code to its line page everywhere else on the
+                        site, and a station's interchange list is exactly
+                        "the lines it serves" beyond its own.
                       */}
-                      {station.interchange.length > 0 && (
-                        <span className="station-index-interchange">
-                          <span className="sr-only">
-                            {' '}
-                            interchange with{' '}
-                            {station.interchange
-                              .map((other) => getLine(other)?.name)
-                              .filter(Boolean)
-                              .join(', ')}
-                          </span>
-                          {station.interchange.map((other) => {
-                            const otherLine = getLine(other)
-                            if (!otherLine) return null
-                            return (
-                              <span
-                                key={other}
-                                className="badge badge-mini"
-                                aria-hidden="true"
-                                style={
-                                  {
-                                    '--badge-bg': otherLine.badgeBg,
-                                    '--badge-fg': otherLine.badgeFg,
-                                  } as React.CSSProperties
-                                }
-                              >
-                                {otherLine.code}
-                              </span>
-                            )
-                          })}
-                        </span>
-                      )}
-                      <span className="station-index-zh" lang="zh-Hant">
-                        {station.nameZh}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )
-        })}
-      </div>
+                      {station.interchange.map((other) => {
+                        const otherLine = getLine(other)
+                        if (!otherLine) return null
+                        return (
+                          <LineBadge
+                            key={other}
+                            className="badge-mini"
+                            code={other}
+                            title={`Interchange with the ${otherLine.name} Line`}
+                          />
+                        )
+                      })}
+                    </>
+                  }
+                />
+              ))}
+            </ul>
+          </section>
+        )
+      })}
     </PageShell>
   )
 }
