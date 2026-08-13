@@ -13,3 +13,8 @@ test-results/
 playwright-report/
 .playwright/
 .image-cache/
+
+# Agent tool-state. Local to whichever CLI/agent runtime is in use, not part
+# of the project itself.
+.agents/
+.codex/

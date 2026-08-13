@@ -1,6 +1,6 @@
 # Taipei Transit Guide — the framework
 
-**Version 1.1 — last updated 7 August 2026 (run 7.1).**
+**Version 1.2 — last updated 13 August 2026 (run 18).**
 
 *This document records intent and structure, and it goes stale silently — the
 site changes every run and this file does not. Anything below that disagrees
@@ -308,6 +308,19 @@ page. *Replaces "Sanying Line", which run 5 wrote.*
 - 商業周刊 445 (30 May 1996) is the one genuine purchase on the list
 
 ---
+
+## Commit message convention
+
+Commit messages in this repo's history use two sequences that both look like
+counters: **"Pass N"** (`2a7fe2c`, `39fff4e`) and **"Run N"** (every other
+commit, matching `docs/run-log.md`'s own section headers). They are not the
+same sequence and were never reconciled.
+
+**`docs/run-log.md`'s "Run N" is the real counter.** From run 18 onward,
+commit messages carry the run number only — `Run N: <what changed>` — with no
+"Pass" prefix and no renumbering of history. Do not rewrite past commits to
+fix this; the "Pass" commits stay as they are, a known inconsistency rather
+than a rewritten one.
 
 ## The discipline to hold
 
