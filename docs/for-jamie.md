@@ -1,12 +1,15 @@
 # For Jamie
 
-Written 13 August 2026, after run 20. Three commits. Audited first: /rail's
-index pages already existed for every type — the real problem was /rail
-inlining all 29 fleet/depot/line/etc. cards. Fixed the gap: rolling stock
-and depots now link out instead of listing inline, and all three indexes
-(rolling stock, depots, stations) show photographed cards, each linking to
-the lines it serves. Tucheng/Xinzhuang (no Commons photo) degrade to a
-plain card, no broken frame. Added a smaller 240px thumbnail tier so a
-24-card page doesn't blow the 400 KB budget. `npm run verify` clean,
-claims ratchet still 32. Screenshots: `depots-1440-run20.png`,
-`stations-2560-run20.png`, `rail-1440-run20.png`.
+Written 13 August 2026, after run 21. Five commits, CI confirmed green on
+GitHub — the failure was Adversarial fixtures, not test:unit; fixed, plus
+6 Actions off Node 20. Station pages: 24 → 180, all 9 lines. Interchange
+now shows under the title; adjacent nav redesigned to look clickable.
+Widening surfaced and fixed 5 real bugs, incl. a footer claiming
+"operator TRTC" everywhere and a contrast fail axe missed until light
+rail lacked an address. Fixed the auto-linker's cross-line collision bug
+(could've mislinked "Daan"); link audit now 179 unlinked, mostly
+citation titles, logged not chased. Station pages: 394 KB vs our 200 KB
+target, worse and expected — bigger font subset, not images. Sweep
+fixed one bug: map labels clipping at the edge, even on Wenhu's own
+BR24. Nothing needs your call. Screenshots: `station-br10-1440.png`,
+`rail-stations-2560.png`, `r21-fix-br24-map-1440.png`.
