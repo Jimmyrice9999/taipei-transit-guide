@@ -19,6 +19,7 @@ lead:
 facts:
   - label: Line code
     value: K
+    source: tdx
   - label: Operator
     value: New Taipei Metro Corporation (NTMC)
     source: tdx
@@ -314,6 +315,15 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Reports NTMC's own 2025 figures: Ankeng LRT ridership at 65.38% of budgeted target, revenue at 70.02%, while all three New Taipei light-rail/circular lines together reached 93.5% of target, the company's best combined year yet. Not independently checked against an NTMC primary release, which was not found."
+  - id: motc-tpass-table
+    title: "Table 1: contents and purchase channels of the Taipei–New Taipei–Keelung–Taoyuan living-circle commuter monthly pass"
+    titleOriginal: 表1、基北北桃生活圈通勤月票方案內容及購買通路
+    publisher: 中華民國交通部 (Ministry of Transportation and Communications, Taiwan)
+    url: "https://motc.gov.tw/ch/app/data/doc?aplistdn=&detailNo=1116207557921214464&id=14&module=news&preview=&serno=1efdb7ab-010b-4e10-ba6c-326d8cfea18f&type=s"
+    accessed: 2026-08-13
+    kind: primary
+    lang: zh-Hant
+    note: "Table attached to the Ministry's own 2022 TPASS launch press release. 適用運具 (covered modes): 捷運、輕軌、臺鐵、市區客運、公路客運(含國道客運)、公共自行車 — metro, light rail, rail, city and intercity bus, and public bicycle generally, naming no specific light rail line. Its own sales-point list, by contrast, names **安坑輕軌 K09 十四張站** directly, alongside Taipei Metro, Circular Line and Danhai LRT V01/V26 — conflicting with NTMC's own current sales-point page below, which lists no Ankeng LRT station at all. Not re-verified against a more recent MOTC document; may reflect 2022 launch-day provision rather than the pass's current state."
   - id: zh-wikipedia
     title: Ankeng LRT
     titleOriginal: 安坑輕軌
@@ -396,7 +406,7 @@ route[^zh-wikipedia].
 A tunnel genuinely exists on the alignment: 雙安隧道 (Shuang'an Tunnel),
 described by DORTS as Taiwan's first road-and-light-rail co-built tunnel,
 with road bores either side of a central light rail bore, and an unusual
-at-grade track crossover inside it. DORTS's own account places it **between
+at-grade track crossover inside it[^dorts-tunnel]. DORTS's own account places it **between
 K01 station and Ankeng Depot** — on the depot lead, not between two
 passenger stations[^dorts-tunnel]. That placement sits awkwardly next to
 zh.wikipedia's breakdown, which counts the underground section inside the
@@ -419,7 +429,7 @@ with growth concentrated on the non-short-working stretch between K05
 Jingwen University of Science and Technology and K01
 Shuangcheng[^ntmc-anniversary]. From 26 February 2024 the peak short
 workings became full-line services: morning-peak headway tightened to 6–8
-minutes, evening-peak to 8–10 minutes. Off-peak sections were left
+minutes, evening-peak to 8–10 minutes[^ntmc-anniversary]. Off-peak sections were left
 unchanged, to keep pace with Circular Line transfer patterns rather than the
 line's own demand[^ntmc-anniversary].
 
@@ -427,7 +437,7 @@ line's own demand[^ntmc-anniversary].
 
 From 1 July to 31 December 2024, Ankeng Depot's own boarding platform opened
 to passengers on weekday mornings at 06:28 and 07:16, explicitly as a trial
-to evaluate whether it should become a permanent station. The trial was
+to evaluate whether it should become a permanent station[^zh-wikipedia]. The trial was
 extended twice from a narrower initial window, citing strong uptake each
 time — around 50 riders a day across the two trips in its final eight
 weeks — and fares on those extra services were calculated as if boarding
@@ -481,14 +491,19 @@ every NT$200 accumulated on an e-ticket, stated in NTMC's own Ankeng-specific
 announcement rather than only a general New Taipei light-rail
 scheme[^ntmc-opening].
 
-The line is within the scope of the TPASS 基北北桃1200 monthly pass, in line
-with that pass's general coverage of rail, light rail and bus services
-across the four municipalities. **Where the pass can actually be bought is
-less settled than it looks**: secondary round-ups describe K09 as a sales
-point, but NTMC's own page listing sales locations for the pass names only
-Circular Line stations and two Danhai LRT stations — no Ankeng LRT station
-appears on it[^ntmc-tpass]. That is published here as a conflict rather than
-resolved either way.
+The line is within the scope of the TPASS 基北北桃1200 monthly pass: MOTC's
+own programme table lists light rail generally among the pass's covered
+modes, in line with that pass's general coverage of rail, light rail and bus
+services across the four municipalities[^motc-tpass-table]. **Where the pass
+can actually be bought is a genuine conflict between two primary sources,
+not just a secondary-versus-primary gap.** MOTC's own 2022 sales-point table
+names **K09 Shisizhang** directly[^motc-tpass-table], but NTMC's own current
+page listing sales locations for the pass names only Circular Line stations
+and two Danhai LRT stations — no Ankeng LRT station appears on
+it[^ntmc-tpass]. Both are published here rather than resolved either way; a
+station that stopped selling passes after the 2022 launch and an NTMC page
+that is simply incomplete are equally plausible explanations, and no source
+found here settles which.
 
 ## Incidents and ridership since
 
@@ -514,7 +529,7 @@ account of the choice of line name[^dorts-placename].
 
 Station names, codes, running order and coordinates come from **Taiwan
 MOTC's TDX platform**, operator code `NTALRT` — government open data,
-retrieved 12 August 2026. The strip map and geographic map on this page are
+retrieved 12 August 2026[^tdx]. The strip map and geographic map on this page are
 generated from it directly. Everything else is cited inline and listed
 above. TDX does not publish station structure, headways or rolling-stock
 detail; those come from NTMC's and DORTS's own publications where they

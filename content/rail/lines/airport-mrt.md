@@ -11,11 +11,13 @@ updated: 2026-08-12
 facts:
   - label: Line code
     value: A
+    source: tdx
   - label: Operator
     value: Taoyuan Metro Corporation (TYMC)
     source: tymc-about
   - label: Termini
     value: A1 — A22
+    source: tdx
   - label: Stations
     value: "22"
     source: tdx
@@ -239,12 +241,13 @@ sources:
 ---
 
 The airport line is the network's odd one out three times over: it belongs to
-[Taoyuan Metro](/rail/operators/tymc/) rather than either Taipei operator, its
-fares sit outside the Taipei distance bands, and it runs an express/local
-service pattern found nowhere else on the system — two fleets, one line,
+[Taoyuan Metro](/rail/operators/tymc/) rather than either Taipei
+operator[^tymc-about], its fares sit outside the Taipei distance
+bands[^tymc-ticket], and it runs an express/local service pattern found
+nowhere else on the system[^tymc-timetable] — two fleets, one line,
 distinguished on the platform by the purple and blue liveries of the
 [2000-type](#rolling-stock) and [1000-type](#rolling-stock) trains that run
-it.
+it[^zh-2000-type][^zh-1000-type].
 
 The station list beside this page is generated from Taiwan's TDX open-data
 platform and is current: all 22 stations, A1 through A22, including the
@@ -384,14 +387,20 @@ extended testing), and design changes needed to coordinate with the separate
 Taoyuan rail-undergrounding project[^motc-a22]. Total project cost was
 NT$17.302 billion[^motc-a22].
 
-Two further extensions are in progress. **A23 Zhongli**, originally targeted
-for July 2028, has slipped to around 2029 after the Railway Bureau agreed to
-redesign its platforms to connect directly with the Taoyuan Metro Green
-Line — reported at 84.93% complete and NT$17.202 billion budgeted as of
-mid-2025. **A14**, a new underground station serving the airport's Terminal
-3, is reported targeted for late 2027 alongside the terminal itself, budgeted
-at NT$6.043 billion. Both dates rest on news reporting rather than a Railway
-Bureau project page read in full here, and are stated as provisional.
+Two further extensions are in progress: **A23 Zhongli**, which would connect
+directly with the Taoyuan Metro Green Line, and **A14**, a new underground
+station serving the airport's Terminal 3. **Both extensions' opening dates
+and budgets are TBC.** News reporting circulates a July 2028-to-around-2029
+slip for A23, attributed to a platform redesign for the Green Line
+connection, and a late-2027 target for A14, each with its own NT$ budget
+figure — none of it established from a source read in full here, still TBC.
+This page's own research file records a Railway Bureau project page for A14
+that returned no readable content, and a fresh re-fetch attempt made for
+this correction could not locate and read in full the specific news
+articles behind the widely-repeated numbers either — only further
+search-engine summaries repeating the same figures, TBC by the same
+standard. Settling either date needs a Railway Bureau project page or a
+dated news article read directly, not a summary of one.
 
 ## The financial turnaround
 
@@ -429,7 +438,7 @@ unchanged pricing[^tymc-ticket].
 
 Station codes, sequence, coordinates and route length come from **Taiwan
 MOTC's TDX platform**, operator TYMC — government open data, retrieved 12
-August 2026. TDX has no way to represent this line's skip-stop express
+August 2026[^tdx]. TDX has no way to represent this line's skip-stop express
 pattern, so service-pattern detail throughout this page comes from TYMC's own
 timetable instead. Everything else is cited inline and listed above; where a
 figure rests on a search-engine synthesis rather than a page fetched and read

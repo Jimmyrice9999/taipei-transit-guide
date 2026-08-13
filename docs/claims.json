@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 959,
-    "tbc": 34,
-    "asserted": 59,
-    "meta": 39
+    "sourced": 984,
+    "tbc": 36,
+    "asserted": 32,
+    "meta": 40
   },
   "files": [
     {
@@ -227,18 +227,18 @@
     {
       "file": "content/rail/lines/airport-mrt.md",
       "sources": 18,
-      "sourced": 51,
-      "tbc": 0,
-      "asserted": 6,
+      "sourced": 55,
+      "tbc": 2,
+      "asserted": 0,
       "meta": 3
     },
     {
       "file": "content/rail/lines/ankeng-lrt.md",
-      "sources": 23,
-      "sourced": 49,
+      "sources": 24,
+      "sourced": 55,
       "tbc": 1,
-      "asserted": 6,
-      "meta": 1
+      "asserted": 0,
+      "meta": 2
     },
     {
       "file": "content/rail/lines/bannan-line.md",
@@ -259,9 +259,9 @@
     {
       "file": "content/rail/lines/danhai-lrt.md",
       "sources": 21,
-      "sourced": 55,
+      "sourced": 56,
       "tbc": 0,
-      "asserted": 1,
+      "asserted": 0,
       "meta": 3
     },
     {
@@ -275,9 +275,9 @@
     {
       "file": "content/rail/lines/songshan-xindian-line.md",
       "sources": 14,
-      "sourced": 60,
+      "sourced": 62,
       "tbc": 1,
-      "asserted": 2,
+      "asserted": 0,
       "meta": 1
     },
     {
@@ -299,9 +299,9 @@
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
       "sources": 14,
-      "sourced": 49,
+      "sourced": 61,
       "tbc": 1,
-      "asserted": 12,
+      "asserted": 0,
       "meta": 1
     },
     {
@@ -542,133 +542,6 @@
       ]
     },
     {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "A"
-    },
-    {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "facts: Termini",
-      "text": "A1 — A22"
-    },
-    {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The airport line is the network's odd one out three times over: it belongs to [Taoyuan Metro] rather than either Taipei operator, its fares ",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "**A23 Zhongli**, originally targeted for July 2028, has slipped to around 2029 after the Railway Bureau agreed to redesign its platforms to ",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "**A14**, a new underground station serving the airport's Terminal 3, is reported targeted for late 2027 alongside the terminal itself, budge",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/airport-mrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Station codes, sequence, coordinates and route length come from **Taiwan MOTC's TDX platform**, operator TYMC — government open data, retrie",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "K"
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "A tunnel genuinely exists on the alignment: 雙安隧道 (Shuang'an Tunnel), described by DORTS as Taiwan's first road-and-light-rail co-built tunne",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "From 26 February 2024 the peak short workings became full-line services: morning-peak headway tightened to 6–8 minutes, evening-peak to 8–10",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "From 1 July to 31 December 2024, Ankeng Depot's own boarding platform opened to passengers on weekday mornings at 06:28 and 07:16, explicitl",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The line is within the scope of the TPASS 基北北桃1200 monthly pass, in line with that pass's general coverage of rail, light rail and bus servi",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/ankeng-lrt.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Station names, codes, running order and coordinates come from **Taiwan MOTC's TDX platform**, operator code — government open data, retrieve",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/danhai-lrt.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "V"
-    },
-    {
-      "file": "content/rail/lines/songshan-xindian-line.md",
-      "state": "asserted",
-      "where": "facts: Termini",
-      "text": "G01 — G19"
-    },
-    {
-      "file": "content/rail/lines/songshan-xindian-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "TDX does not publish construction history, engineering rationale, or service patterns; those come from DORTS's and TRTC's own publications w",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
       "file": "content/rail/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Line code",
@@ -699,105 +572,6 @@
       "text": "Station names, codes, running order, coordinates and the end-to-end journey time come from **Taiwan MOTC's TDX platform**, operator TRTC — g",
       "signals": [
         "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "O"
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "facts: Operator",
-      "text": "Taipei Rapid Transit Corporation"
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "facts: Termini",
-      "text": "O01, O21, O54"
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "facts: Depots",
-      "text": "Zhonghe, Xinzhuang, Luzhou"
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The orange line is the network's only Y: one trunk south to Zhonghe, and two arms north-west that share it — one to Luzhou, one through Xinz",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Daqiaotou is still the last stop every train shares, which is why the platform signage there matters more than anywhere else on the network ",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Add them and the stations come to 25, one short of the line's published total of 26.",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "**Dongmen is the connector that made this one line rather than two.** Before 30 September 2012, the Zhonghe section (which had run through w",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Every train starts or ends at **O01 Nanshijiao**, in Zhonghe.",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "TRTC publishes about **6 minutes** per branch at weekday peak, which becomes about **3 minutes** where both overlap between Nanshijiao and D",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "[Xinzhuang Depot], beside Huilong station and straddling the New Taipei–Taoyuan boundary, stands on part of the former grounds of **Losheng ",
-      "signals": [
-        "date",
-        "count",
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "These figures — 39, \"40 preserved\" as 焦點事件 separately characterises the same decision, and the campaigners' count of 28 actually delivered —",
-      "signals": [
         "count"
       ]
     },

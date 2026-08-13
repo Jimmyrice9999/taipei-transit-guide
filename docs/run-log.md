@@ -5776,3 +5776,131 @@ checked-and-failed entries, clean.
 
 With this run, all twelve subjects originally scoped for this corpus have
 real, sourced content pages. No stubs remain among them.
+
+# Run 17 — the ratchet fix, 13 August 2026
+
+## 93. §92 corrected, and why the ratchet didn't catch itself
+
+Two corrections to this log's own §92, found while investigating why "`npm
+run verify` passed" and the claims ratchet moving 32 → 59 coexisted without
+either commit message mentioning a conflict.
+
+**§92.1 named the wrong script, and missed the right one.** "`npm run
+check`, `npm run links`, `npm run a11y` and `npm run unused` all read from
+the built `out/` directory" — `scripts/unused-audit.mjs` puts `'out'` in its
+own `SKIP_DIRS` and never reads it; it walks `app/`, `lib/`, `content/` and
+`public/images/` instead. The script that actually reads `out/` and wasn't
+named is `scripts/fact-check.mjs` (`npm run facts`). The four verify-time
+scripts that do read `out/`: check-links.mjs, links-audit.mjs,
+a11y-report.mjs, fact-check.mjs.
+
+**§92.2 mischaracterised the claims increase.** "The increase is almost
+entirely bare `facts:` labels... not a new gap" doesn't match the numbers.
+Of the 27 asserted claims the five rewritten pages added, 9 were bare
+`facts:` labels and **18 were prose** — a majority, not "almost entirely"
+labels.
+
+**Neither would have shipped if the ratchet had actually run.** It lives in
+`tests/sourcing.test.mts` ("unsourced assertions have not increased"),
+gated on `docs/claims-baseline.json` (`asserted: 32`, unchanged since
+7 August — run 16 never touched it). `npm run verify` — the command every
+run-log entry back to run 3 reports as "clean" — has never included `test`
+or `test:unit`; it runs `check`, `links`, `unused`, `a11y`, `facts`, `cite`,
+`claims`, `research`, `geometry:audit` and `cvd`, and none of those touch
+the ratchet test. The ratchet is enforced only by CI's separate `test:unit`
+step (`.github/workflows/deploy.yml`), and no run-log entry after run 12
+mentions running `npm test` locally. Run 16 landed on `main` with the
+ratchet already broken; nothing that actually ran before commit could have
+caught it.
+
+## 94. The 18 prose claims, resolved one at a time
+
+Went through all 27 asserted claims run 16 added — the 9 bare `facts:`
+labels and the 18 prose sentences — treating each strictly as cite / TBC /
+delete. No citation was added without either re-reading the source it names
+or, where re-reading failed, marking the claim TBC instead.
+
+**The 9 `facts:` labels** (Line code ×4, Termini ×3, Operator, Depots) were
+cited to the same source already used two lines away on the same page for
+the identical dataset (`tdx` for line codes and termini; `trtc-headways` and
+`dorts-zhonghe` for zhonghe-xinlu's Operator and Depots rows) — a missing
+citation on one row next to an identical row that had it, not new research.
+
+**The 18 prose sentences**, by outcome:
+
+- **Thirteen** were citation-placement gaps: the fact was already
+  established and cited elsewhere on the same page, usually the very next
+  sentence off the same source, and the marker had just not been attached
+  to this particular sentence. Fixed by attaching the existing marker, not
+  a new one — airport-mrt's intro and Sources-section sentences;
+  ankeng-lrt's Shuang'an-tunnel sentence, its 26-February-2024 headway
+  sentence, and its Sources sentence; zhonghe-xinlu's Y-shape intro,
+  Daqiaotou sentence, 25-vs-26-stations arithmetic, Dongmen topic sentence,
+  O01 sentence, TRTC-headway sentence, and its Losheng-figures summary
+  sentence. One of the thirteen, songshan-xindian's "TDX does not publish
+  construction history..." sentence, was verified directly rather than
+  assumed: `data/tdx/TRTC/route.json`'s field list (`Direction`,
+  `EndStationID`, `RouteLength`, `TravelTime`, etc.) genuinely carries
+  nothing resembling construction history, so the citation to `tdx` holds.
+- **Two** needed a fresh re-fetch, and confirmed the existing text exactly.
+  ankeng-lrt's depot-trial sentence (1 July–31 December 2024, weekday
+  mornings at 06:28 and 07:16) matches a live re-fetch of `zh-wikipedia`
+  word for word: "2024年7月至12月，安坑機廠於平日上午6時28分與7時16分，試辦供旅客
+  上下車." zhonghe-xinlu's Losheng Sanatorium founding claim (1930, Japanese
+  rule, Taiwan's first and only public leprosarium) matches a fresh read of
+  `moc-losheng` — a source already on the page but never actually attached
+  to this specific sentence.
+- **One** turned up a genuine new conflict while re-verifying. Ankeng-lrt's
+  TPASS-coverage paragraph cited only NTMC's own sales-point page, which
+  lists no Ankeng LRT station — a fact the page already stated. A fresh
+  primary source, MOTC's own 2022 TPASS-launch table (added to the page as
+  `motc-tpass-table`), names **K09 Shisizhang** directly as a sales point.
+  Both are now published as a conflict between two primary sources, per
+  this site's own convention, rather than the page repeating only the one
+  source that agreed with what it was arguing against.
+- **Two** could not be sourced despite a real re-fetch attempt, not a
+  search abandoned early: airport-mrt's A23 Zhongli and A14 Terminal 3
+  extension dates and budgets. The Railway Bureau's own A14 project page
+  returned no readable content again this run; UDN and money.udn.com
+  articles located by fresh search both 404'd; a National Development
+  Council policy-highlights page for A14 returned internally inconsistent
+  ROC-calendar dates that raised more questions than they answered. Both
+  converted to explicit **TBC** rather than left asserted or cited to a
+  page that didn't actually load.
+
+## 95. Two tooling fixes, and two more bugs they caught immediately
+
+`npm run verify` now runs `npm run build` first and `npm run test:unit` as
+part of the chain, rather than relying on a run remembering to invoke
+`npm test` separately: `build && check && links && unused && a11y &&
+facts && cite && claims && test:unit && research && geometry:audit && cvd`.
+
+Running the rebuilt suite for the first time surfaced two bugs that predate
+this run and were never caught, for the same reason as the ratchet: nothing
+that ran locally exercised them.
+
+- `tests/build-output.test.mts`'s page-count formula hardcoded `types = 14`
+  on 6 August, before Maokong Gondola (run 14) and the ticketing pages
+  (run 15) each added a new content type (`/gondola/lines`,
+  `/ticketing/guides`). The actual build has exported 91 pages against an
+  expected 89 since run 15, silently, for three runs. Fixed: `types = 16`,
+  comment updated.
+- `tests/markdown.test.mts`'s unit-split check (a `specs:` value may not
+  start with a bare number followed by a letter, or the table's decimal
+  alignment breaks) failed on three pre-existing rows: two written this run
+  in songshan-xindian-line.md ("3 three-car sets...", "10 six-car
+  sets...", now spelled out as "Three"/"Ten" to match the page's own prose)
+  and one older row in danhai-lrt.md ("750 V DC catenary or lithium
+  battery", predating this run, now split into `value: "750"` /
+  `unit: V DC, catenary or lithium battery`).
+
+## 96. Result
+
+`npm run claims`: asserted 59 → **32**, exactly matching
+`docs/claims-baseline.json` — the baseline itself was not touched. `npm run
+cite`: clean, 259 citations resolved. `npm run verify` — now including
+`build` and `test:unit` — clean, exit 0: 184/184 unit and regression tests
+passing, 0 broken links, 0 a11y errors, `research` clean at 22 files / 74
+checked-and-failed entries. `npm run test:unit` run directly, standalone,
+also green: this is no longer a distinction that matters, since `verify`
+runs it too.

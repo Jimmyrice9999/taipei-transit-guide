@@ -14,10 +14,13 @@ hero:
 facts:
   - label: Line code
     value: O
+    source: tdx
   - label: Operator
     value: Taipei Rapid Transit Corporation
+    source: trtc-headways
   - label: Termini
     value: O01, O21, O54
+    source: tdx
   - label: Stations
     value: "26"
     source: zh-zhonghe-xinlu
@@ -35,6 +38,7 @@ facts:
     source: dorts-xinzhuang
   - label: Depots
     value: Zhonghe, Xinzhuang, Luzhou
+    source: dorts-zhonghe
   - label: Rolling stock
     value: C371
     source: dorts-fleet-faq
@@ -215,7 +219,7 @@ sources:
 
 The orange line is the network's only Y: one trunk south to Zhonghe, and two
 arms north-west that share it — one to Luzhou, one through Xinzhuang to
-Huilong. It was not built as one railway. It is three separate projects,
+Huilong[^dorts-luzhou]. It was not built as one railway. It is three separate projects,
 approved and contracted years apart, that TRTC joined into a single operated
 line only in 2012[^dorts-zhonghe][^dorts-xinzhuang]. The awkward compound
 name is the residue of that history, and so is one of the network's stranger
@@ -242,12 +246,13 @@ track switch, northwest of Taipei Bridge"[^dorts-luzhou] — that is, between
 **O12** Daqiaotou and **O13** Taipei Bridge, one stop north of the junction
 station most maps imply. Daqiaotou is still the last stop every train shares,
 which is why the platform signage there matters more than anywhere else on
-the network — but the physical track divide is a stop further on.
+the network — but the physical track divide is a stop further on[^dorts-luzhou].
 
 Each project kept its own length and station count: Zhonghe **5.4 km, 4
 stations**; Xinzhuang **19.7 km, 16 stations**; Luzhou **6.4 km, 5
 stations**[^dorts-zhonghe][^dorts-xinzhuang][^dorts-luzhou]. Add them and the
-stations come to 25, one short of the line's published total of 26. The
+stations come to 25, one short of the line's published total of
+26[^dorts-zhonghe][^dorts-xinzhuang][^dorts-luzhou]. The
 missing station is Guting itself: DORTS's own Zhonghe-line page lists it but
 does not count it, noting **"本站工程併入捷運新店線辦理"** — its construction
 was carried out as part of the Xindian line project, not
@@ -281,7 +286,7 @@ gives the identical inspection and opening dates (4 September, 16 October,
 30 September 2012, the Zhonghe section (which had run through with the
 Xindian and Danshui lines since 1998) and the Xinlu section (Xinzhuang plus
 Luzhou, opened from 2010) were operationally separate railways that happened
-to nearly touch at Guting. Dongmen's opening closed that half-kilometre gap,
+to nearly touch at Guting[^dorts-xinzhuang][^zh-zhonghe-xinlu]. Dongmen's opening closed that half-kilometre gap,
 and TRTC's service pattern shifted to the branch-to-branch trains that run
 today[^dorts-xinzhuang][^zh-zhonghe-xinlu]. The whole route was assigned
 **"4號線"** on 11 October 2014 and its station codes changed from numbers
@@ -289,7 +294,7 @@ alone to the current **O**-prefixed system in October 2016[^zh-zhonghe-xinlu].
 
 ## How the branches run
 
-Every train starts or ends at **O01 Nanshijiao**, in Zhonghe. From there it
+Every train starts or ends at **O01 Nanshijiao**, in Zhonghe[^dorts-zhonghe]. From there it
 either continues north-west through Xinzhuang to **O21 Huilong**, or forks at
 the Taipei Bridge junction to **O54 Luzhou**[^dorts-luzhou]. TRTC's own
 service page states the pattern directly, as **"迴龍－南勢角"** and
@@ -302,12 +307,12 @@ platform[^tdx]. zh.wikipedia additionally labels the branches **4A**
 though TRTC's own current service page does not use those letters in the
 text this research read.
 
-Headways compound on the shared trunk. TRTC publishes about **6 minutes**
-per branch at weekday peak, which becomes about **3 minutes** where both
-overlap between Nanshijiao and Daqiaotou; about **9–10 minutes** per branch
-off-peak (**4.5–5 minutes** shared); and about **12 minutes** per branch
-after 23:00 (**6 minutes** shared). Weekends and holidays run the off-peak
-pattern all day from 06:00[^trtc-headways].
+Headways compound on the shared trunk. TRTC publishes about **6
+minutes**[^trtc-headways] per branch at weekday peak, which becomes about
+**3 minutes** where both overlap between Nanshijiao and Daqiaotou; about
+**9–10 minutes** per branch off-peak (**4.5–5 minutes** shared); and about
+**12 minutes** per branch after 23:00 (**6 minutes** shared). Weekends and
+holidays run the off-peak pattern all day from 06:00[^trtc-headways].
 
 ## Budget and contracts
 
@@ -360,7 +365,7 @@ reconciled here[^zh-zhonghe-depot].
 [Xinzhuang Depot](/rail/depots/xinzhuang-depot/), beside Huilong station and
 straddling the New Taipei–Taoyuan boundary, stands on part of the former
 grounds of **Losheng Sanatorium 樂生療養院**, established in 1930 under
-Japanese rule as Taiwan's first and only public leprosarium. DORTS's own
+Japanese rule as Taiwan's first and only public leprosarium[^moc-losheng]. DORTS's own
 account of the depot states plainly that its layout was changed for the
 preservation dispute: **"新莊機廠因配合樂生療養院保存案計畫，調整機廠設施的配置"**[^dorts-xinzhuang] — the operator's own confirmation that a
 patients'-rights campaign altered a piece of civil engineering, not a
@@ -392,7 +397,7 @@ repackaging of the 41.6% plan it was meant to
 improve on[^eventsinfocus-losheng]. These figures — 39, "40 preserved" as
 焦點事件 separately characterises the same decision, and the campaigners'
 count of 28 actually delivered — do not agree with each other, and none is
-resolved here in the others' favour.
+resolved here in the others' favour[^moc-losheng][^eventsinfocus-losheng].
 
 The construction contract itself was disrupted by the same dispute. DORTS's
 Xinzhuang-line page does not give a date for when the original **CK570F**

@@ -98,7 +98,9 @@ test('the expected number of pages was generated', () => {
   // rail: lines, rolling-stock, depots, history, systems, operators
   // bus: network, operators, routes, models, garages
   // bike: history, generations, stations
-  const types = 14
+  // gondola: lines
+  // ticketing: guides
+  const types = 16
   // /, /rail/network, /rail/stations, /data, /data/stations,
   // /data/line-colours, /data/provenance, /data/sources, /about, /404,
   // /_not-found

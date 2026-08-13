@@ -13,6 +13,7 @@ hero:
 facts:
   - label: Line code
     value: V
+    source: tdx
   - label: Operator
     value: New Taipei Metro Corporation (NTMC)
     source: ntmc-train
@@ -81,7 +82,8 @@ specs:
     unit: km/h
     source: ntmc-train
   - label: Traction power
-    value: 750 V DC catenary or lithium battery
+    value: "750"
+    unit: V DC, catenary or lithium battery
     source: ntmc-train
   - label: Minimum curve radius
     value: "25"

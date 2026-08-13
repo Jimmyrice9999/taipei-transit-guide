@@ -20,6 +20,7 @@ facts:
     source: trtc-headways-g
   - label: Termini
     value: G01 — G19
+    source: tdx
   - label: Stations
     value: "20"
     source: tdx
@@ -83,10 +84,10 @@ specs:
     unit: km
     source: tdx
   - label: Xiaobitan branch fleet
-    value: 3 three-car sets (9 cars), contract CH321A
+    value: Three three-car sets (9 cars), contract CH321A
     source: dorts-fleet-faq
   - label: Songshan section fleet
-    value: 10 six-car sets (60 cars), contract CG391
+    value: Ten six-car sets (60 cars), contract CG391
     source: dorts-fleet-faq
   - label: Peak headway, main line
     value: 4—6
@@ -434,6 +435,6 @@ data, retrieved 12 August 2026[^tdx]. Everything else is cited inline and
 listed above.
 
 TDX does not publish construction history, engineering rationale, or service
-patterns; those come from DORTS's and TRTC's own publications where they
-exist, and are marked secondary where only zh.wikipedia or news coverage was
-found.
+patterns[^tdx]; those come from DORTS's and TRTC's own publications where
+they exist, and are marked secondary where only zh.wikipedia or news
+coverage was found.
