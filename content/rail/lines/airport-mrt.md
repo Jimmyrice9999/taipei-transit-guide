@@ -395,14 +395,14 @@ extended testing), and design changes needed to coordinate with the separate
 Taoyuan rail-undergrounding project[^motc-a22]. Total project cost was
 NT$17.302 billion[^motc-a22].
 
-Two further extensions are in progress: **A23 Zhongli**, which would connect
-directly with the Taoyuan Metro Green Line, and **A14**, a new underground
+Two further extensions are in progress: **`A23` Zhongli**, which would connect
+directly with the Taoyuan Metro Green Line, and **`A14`**, a new underground
 station serving the airport's Terminal 3. **Both extensions' opening dates
 and budgets are TBC.** News reporting circulates a July 2028-to-around-2029
-slip for A23, attributed to a platform redesign for the Green Line
-connection, and a late-2027 target for A14, each with its own NT$ budget
+slip for `A23`, attributed to a platform redesign for the Green Line
+connection, and a late-2027 target for `A14`, each with its own NT$ budget
 figure — none of it established from a source read in full here, still TBC.
-This page's own research file records a Railway Bureau project page for A14
+This page's own research file records a Railway Bureau project page for `A14`
 that returned no readable content, and a fresh re-fetch attempt made for
 this correction could not locate and read in full the specific news
 articles behind the widely-repeated numbers either — only further

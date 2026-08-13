@@ -262,7 +262,7 @@ reconcile: 4 + 1 + 16 + 5 = 26[^dorts-zhonghe][^dorts-xinzhuang][^dorts-luzhou].
 That same three-project history is why the numbering breaks in the middle.
 Xinzhuang's stations run **O01–O21**; Luzhou's occupy a separate block,
 **O50–O54**, rather than continuing the sequence. Nothing found in this
-research states DORTS's reasoning for choosing the O5x block specifically
+research states DORTS's reasoning for choosing the O50–O54 block specifically
 rather than simply continuing past O21 — it is recorded here as an observed
 fact of the numbering, not an explained one.
 
