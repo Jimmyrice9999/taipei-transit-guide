@@ -319,6 +319,8 @@ trains rather than a shortened six-car formation: three cars form one set,
 and one set forms one train[^zh-xiaobitan]. The third set's number is not
 confirmed by any source found for this page — TBC.
 
+![The doors of a C371 train car, a green destination sign overhead reading G Xindian, next stop Nanjing Sanmin](/images/songshan-xindian-line/interior-800.webp "A C371 car's doors, signed for Xindian on the Songshan–Xindian Line, stopped at Nanjing Sanmin. — Solomon203, CC BY-SA 4.0, Wikimedia Commons")
+
 ### Why the branch exists
 
 The branch was approved by the Executive Yuan on 17 September

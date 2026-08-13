@@ -366,6 +366,8 @@ some secondary round-ups names the same hospital group's main site, not the
 branch campus the station actually stands beside — no primary source found
 here uses it as the station's name.
 
+![The canopied platform at Cardinal Tien Hospital Ankang Branch station, overhead wire and open track running beside it](/images/ankeng-lrt/station-800.webp "K04 Cardinal Tien Hospital Ankang Branch station. — S8321414, CC BY-SA 4.0, Wikimedia Commons")
+
 At K09 Shisizhang, both side platforms can be boarded — worth knowing,
 because it is not the way most interchange stations on this network
 work[^dorts-operating].
@@ -457,6 +459,8 @@ were built to this design in total, 15 for Danhai and 15 for
 Ankeng[^ntmc-fleet]. Each Ankeng train has 5 cars and carries 265 passengers,
 62 seated and 203 standing, running up to 70 km/h under overhead wire and
 50 km/h on wire-free sections[^ntmc-fleet].
+
+![The empty interior of an Ankeng LRT tram, longitudinal seats and a centre grab pole running the length of the car](/images/ankeng-lrt/interior-800.webp "An Ankeng LRT tram's interior. — Wctaiwan, CC BY 4.0, Wikimedia Commons")
 
 The livery, 光耀金 (Radiant Gold), was chosen by public vote — confirmed on
 NTMC's own rolling-stock page, though that page does not itself list the

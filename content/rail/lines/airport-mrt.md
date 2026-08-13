@@ -7,7 +7,11 @@ aliases:
   - 機場捷運
   - Airport MRT
   - 桃園機場捷運
-updated: 2026-08-12
+updated: 2026-08-13
+hero:
+  image: airport-mrt/hero
+  alt: A blue-liveried Airport MRT train crossing an elevated viaduct at Guishan, Taoyuan, apartment towers and a road interchange below.
+  caption: An Airport MRT train on the elevated guideway at Guishan, on the Taoyuan side of the line.
 facts:
   - label: Line code
     value: A
@@ -334,6 +338,8 @@ all-stops services over part of the line, not the express — the express
 pattern above rests on TYMC's own timetable page rather than the generated
 station data[^tdx][^tymc-timetable].
 
+![The underground platform at A1 Taipei Main Station, trains standing on both sides](/images/airport-mrt/station-800.webp "A1 Taipei Main Station, the line's Taipei terminus. — Littlebtc, CC BY-SA 4.0, Wikimedia Commons")
+
 ## Rolling stock
 
 Two fleets, two manufacturers, sharing the same 1,435mm gauge and DC 750V
@@ -347,6 +353,8 @@ charging are fitted; wireless charging pads are noted in one source as
 currently suspended, rather than the always-on feature sometimes
 described[^zh-2000-type]. Capacity is around 855 per set, with 206 seats and
 eight wheelchair spaces[^zh-2000-type].
+
+![Passengers seated in the purple transverse seating of an Airport MRT express train, luggage racks and a route display overhead](/images/airport-mrt/interior-800.webp "Inside an express (2000-type) train. — Cheng-en Cheng from Taichung City, Taiwan, CC BY-SA 2.0, Wikimedia Commons")
 
 The **commuter fleet (1000-type, blue)** was built under an industrial-
 cooperation arrangement: Kawasaki built the prototype set and three later

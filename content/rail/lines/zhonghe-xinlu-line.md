@@ -346,6 +346,8 @@ originally ordered[^dorts-fleet-faq]. All three ran as
 [C371](/rail/rolling-stock/c371/) stock; the fleet's current in-service total
 is not established on this page.
 
+![The interior of a C371 train, passengers seated and standing, a passenger walking down the aisle](/images/zhonghe-xinlu-line/interior-800.webp "A C371 train's interior, in service on the Zhonghe–Xinlu line. — Tbatb, CC BY-SA 4.0, Wikimedia Commons")
+
 ## Zhonghe Depot — built to fit, not to spare
 
 **Zhonghe Depot 中和機廠** — which has no page of its own on this site yet —

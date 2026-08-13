@@ -5904,3 +5904,150 @@ passing, 0 broken links, 0 a11y errors, `research` clean at 22 files / 74
 checked-and-failed entries. `npm run test:unit` run directly, standalone,
 also green: this is no longer a distinction that matters, since `verify`
 runs it too.
+
+# Run 18 — housekeeping, and images for the five run-16 pages, 13 August 2026
+
+## 97. Housekeeping: gitignore and the commit-number convention
+
+`.agents/` and `.codex/` — untracked agent tool-state directories at the
+repo root, not part of the project — added to `.gitignore` without
+committing their contents. Documented the "Pass N" / "Run N" commit-message
+inconsistency in `docs/framework.md`: two sequences exist in history and
+were never the same one (`2a7fe2c "Pass 4"`, `39fff4e "Pass 3"` against
+every other commit's "Run N", matching this log's own section headers).
+`docs/run-log.md` is declared the real counter; commit messages from this
+run on carry `Run N: <what changed>` with no "Pass" prefix. History is not
+renumbered or rewritten — the inconsistency stays visible rather than
+papered over.
+
+## 98. The brief's premise didn't match the working tree
+
+The instruction for this run stated the five run-16 pages
+(songshan-xindian-line, zhonghe-xinlu-line, danhai-lrt, ankeng-lrt,
+airport-mrt) "carry no images." Checking before doing anything: four of the
+five already had a hero and one inline image each, committed in runs 10 and
+11 — long before the pages themselves existed as stub text — and carried
+forward when run 16's `line-researcher` subagents rewrote the stubs into
+real pages (§92 already records zhonghe-xinlu-line's rewrite nearly
+dropping its inline image and restoring it before commit). Only
+**airport-mrt** actually had zero images showing: its hero asset was
+fetched in run 10 and never wired into frontmatter, exactly as §92 already
+flagged. The work below fills real gaps — mostly a second image type per
+page, not a first — rather than starting five pages from zero.
+
+## 99. Images per page, before and after
+
+| Page | Before | After | Added |
+| --- | --- | --- | --- |
+| songshan-xindian-line | hero, station (2) | + interior (3) | 1 |
+| zhonghe-xinlu-line | hero, station (2) | + interior (3) | 1 |
+| danhai-lrt | hero, station, interior (3) | unchanged (3) | 0 |
+| ankeng-lrt | hero, guideway (2) | + station, interior (4) | 2 |
+| airport-mrt | none (0) | hero (wired), station, interior (3) | 3 |
+
+Site-wide, pages carrying at least one image: **52 → 53** (of 92 built
+pages) — the one new page is airport-mrt, the only one of the five that
+had none. The other four already counted toward the 52.
+
+danhai-lrt was left alone deliberately: it already carries all three image
+types this pass was chasing (exterior/hero, station, interior), and going
+looking for a fourth (a dedicated guideway shot) on a page that already
+demonstrates the pattern was not worth the request budget this run had for
+five pages. Same reasoning against a guideway shot for zhonghe-xinlu-line —
+its station image already shows a train at an elevated platform on the
+Luzhou arm, which covers enough of what a dedicated guideway photo would
+add.
+
+## 100. Sourcing and verification, per new image
+
+Every fetch went through `npm run image` (`scripts/fetch-commons.mjs`) one
+at a time, no batching, waited out between calls — six fetches this run,
+none parallel. For each, the Commons API's own `sha1` for the file (via
+`prop=imageinfo&iiprop=sha1`) was recorded before download and compared
+against a hash of the actual cached original after — the run-11 cache
+collision this project already got burned by once. All six matched on the
+first try; nothing was re-fetched.
+
+Subject verification went through the Commons file's own description and
+categories, not its filename — the hard rule, and the reason two of six
+took real work:
+
+- **zhonghe-xinlu-line/interior** — `File:C371 2458 interior
+  20200426.jpg`, Tbatb, CC BY-SA 4.0. Commons' own description reads
+  "臺北捷運371型電聯車2458車廂內，行駛中和新蘆線" (running on the
+  Zhonghe–Xinlu line), and it carries the category "Trains on the Taipei
+  Metro Luzhou Branch Line." Found on the first search.
+- **songshan-xindian-line/interior** — `File:C371 1326 B1 door closed at
+  Nanjing Sanmin Station 20190406.jpg`, Solomon203, CC BY-SA 4.0. This one
+  took four rejections first: `C371-transverse.JPG`,
+  `C371-longitudinal.JPG`, `Taipei MRT 3447 inside.jpg` and `Interior of
+  C371 2459 20200320.jpg` are all genuine C371 interior photographs with no
+  station or line information in their description, categories or EXIF —
+  and the C371 fleet serves *two* lines (Songshan–Xindian and
+  Zhonghe–Xinlu, per `content/rail/rolling-stock/c371.md`), so an
+  unlabelled interior is not evidence for either specifically. A fifth
+  candidate, `Taipei MRT C371 interior March 2026 1.jpg`, names Luzhou
+  station outright — correct for zhonghe-xinlu-line, wrong line for this
+  page, rejected on the same "captioned for one line is not evidence for
+  another" rule the brief states. The Nanjing Sanmin file was kept because
+  the photograph itself, not just its filename, shows the car's own green
+  destination sign reading "G 新店" (line G, bound for Xindian) — the
+  strongest kind of confirmation available, the image proving its own
+  subject rather than resting on a caption.
+- **ankeng-lrt/station** — `File:Cardinal Tien Hospital An Kang Branch
+  Station 20230218.jpg`, S8321414, CC BY-SA 4.0, category "Stations of the
+  Ankeng Line." Viewed at full resolution before writing alt text: no tram
+  is actually in frame, platform and overhead wire only — the draft alt
+  text ("A tram at the elevated…") was written from the filename before
+  the image was looked at and had to be corrected to match what the
+  photograph actually shows.
+- **ankeng-lrt/interior** — `File:Ankeng LRT tram interior.jpg`, Wctaiwan,
+  CC BY 4.0, category "Ankeng LRT tram interiors."
+- **airport-mrt/station** — `File:Platform 3 & 4, Taipei Main Station,
+  Taoyuan Metro 20170321.jpg`, Littlebtc, CC BY-SA 4.0, category
+  "Platforms at Taipei Main Station (Taoyuan Metro)."
+- **airport-mrt/interior** — `File:Inside Taoyuan Airport MRT Express
+  Train.jpg`, Cheng-en Cheng, CC BY-SA 2.0, category "Taoyuan Metro 2000
+  series interiors" — matches the express (purple, 2000-type) fleet this
+  page already describes; the platform photo happens to show a
+  purple-liveried express train too, unremarked in its own caption since
+  that wasn't independently confirmed.
+
+All six licences are within the allowed set (CC BY / CC BY-SA / CC0 — none
+of the six needed the CC0 branch). No candidate was rejected on licence
+grounds this run; every rejection above was on subject-verification
+grounds.
+
+## 101. One test failure, one real bug in the caption text
+
+First `npm run verify` after wiring the images failed
+`tests/images.test.mts`'s credit-line check on airport-mrt: the caption
+credited "Cheng-en Cheng" but the sidecar's `artist` field (used by
+Wikimedia's own Flickr-review credit) is the fuller "Cheng-en Cheng from
+Taichung City, Taiwan," and the test requires the exact sidecar string to
+appear on the page — CC BY-SA's attribution term enforced literally, not
+approximately. Fixed by matching the credit text to the sidecar exactly;
+checked the other five new captions against their own sidecars before
+re-running rather than waiting for the same failure five more times.
+
+## 102. Suite and ratchet
+
+`npm run build` then `npm run verify`: clean, exit 0. `npm run claims`:
+asserted **32**, unchanged from baseline — none of the six new captions
+introduced a figure, date, count or superlative outside a citation (hero
+and inline captions live in frontmatter/title-attribute text that
+`scripts/claims.mjs` does not scan for prose assertions; body alt text is
+scanned, which is why every new alt string stays purely descriptive with no
+numbers or superlatives). Page image weight checked against the 400 KB
+budget for all five pages before commit: songshan-xindian-line 220 KB,
+zhonghe-xinlu-line 266 KB, danhai-lrt 215 KB (unchanged), ankeng-lrt 360 KB,
+airport-mrt 251 KB — all clear with headroom.
+
+## 103. What this run did not do
+
+Part 6 of the standing brief asks to "go wide" across the rest of the site
+after this shortlist — every other line, fleet, depot, station on other
+lines, the gondola, YouBike, buses, ferries. This run deliberately did not:
+the instruction for this specific run was five pages only, on the grounds
+that Commons rate-limits hard and a previous wide batch was killed
+partway. Going wide is still queued, not done.

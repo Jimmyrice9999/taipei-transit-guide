@@ -1,7 +1,7 @@
 {
   "exports": 216,
   "cssClasses": 293,
-  "imageSidecars": 61,
+  "imageSidecars": 67,
   "unusedExports": [
     {
       "name": "UndergroundExtent",
@@ -195,7 +195,5 @@
     }
   ],
   "unusedClasses": [],
-  "unusedImages": [
-    "airport-mrt/hero"
-  ]
+  "unusedImages": []
 }
