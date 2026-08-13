@@ -6051,3 +6051,143 @@ lines, the gondola, YouBike, buses, ferries. This run deliberately did not:
 the instruction for this specific run was five pages only, on the grounds
 that Commons rate-limits hard and a previous wide batch was killed
 partway. Going wide is still queued, not done.
+
+# Run 19 — second Commons pass: gondola, YouBike, ticketing, and the depots that came up empty, 13 August 2026
+
+## 104. Before-state audit, not the brief's assumption
+
+The brief for this run assumed three things: ten-odd Wenhu stations still
+lacked photos, depot and fleet pages needed pictures, and the joint bus
+network was one of the gaps to fill. Built the site and walked every
+rendered page for `/images/` references before touching anything, per the
+brief's own instruction to work from that list rather than assumption —
+run 18 already caught one stale premise this way, and this run caught
+three more.
+
+**53 of 92 built pages carried ≥1 image before this run; 39 carried zero.**
+Grouped by the brief's own groups:
+
+- **Wenhu stations: zero remaining.** All 24 (BR01–BR24) already have a
+  photo, fetched in run 6 (2026-08-06) and confirmed by sidecar `fetched`
+  dates. `docs/commons-candidates.txt`'s shortlist is fully spent — nothing
+  in it corresponds to a station that still needs an image.
+- **Depots: 2** — `tucheng-depot`, `xinzhuang-depot`. The other six depot
+  pages already have a hero.
+- **Rolling stock: 0.** All seven fleet pages (C301, C321, C341, C371,
+  C381, VAL256, Innovia APM-256) already have a hero. None qualifies as
+  "currently has no image," so the brief's "fleet pages want exterior and
+  interior where both exist" had nothing to attach to this run.
+- **The three named Group-3 subjects, checked individually:**
+  `gondola/lines/maokong-gondola.md` (zero — carried a `hero: wanted:`
+  placeholder naming the exact shot needed), `bike/history/youbike.md`
+  (zero, no `hero:` field at all), `ticketing/guides/cards-passes-and-
+  fares.md` (zero, no `hero:` field at all).
+- **`bus/network/joint-operation.md` — already has a hero** (`bus/hero`,
+  fetched run 10). Named in the brief as a Group 3 target; it is not zero.
+  Left alone.
+- **The remaining 24 zero-image pages** are all pure index/listing pages
+  (`bike/generations`, `bus/garages`, `rail/depots`, `rail/operators`,
+  `rail/rolling-stock`, `ticketing/guides`, etc.) or code-driven utility
+  pages (`about`, `data/*`) with no distinct photographable subject of
+  their own — the same reasoning the site already applies to
+  `rail/rolling-stock/_index.md`'s five-line stub. Excluded from this run's
+  photography, including the three operator pages (TRTC/NTMC/TYMC): they
+  are corporate-entity scope pages with no subject that would not simply
+  duplicate imagery already on the line and fleet pages that link to them.
+
+Net scope after the audit: **5 candidate photos, not the brief's three
+groups' worth** — 2 depots, 3 named Group-3 subjects.
+
+## 105. Group 2 — depots: no Commons imagery exists for either
+
+Searched Commons for both depots under every title tried: `intitle:土城機廠`,
+`intitle:新莊機廠`, `intitle:Tucheng Depot`, `intitle:Xinzhuang Depot`, full-text
+search on both Chinese names, and `Category:Taipei Metro depots`' own eight
+subcategories (Beitou, Jincheng, Luzhou, Muzha, Nangang, Neihu, Circular
+Line South, Xindian — neither Tucheng nor Xinzhuang has one). Zero hits on
+every search. Checked both depots' zh.wikipedia and English Wikipedia
+articles directly for an infobox image to chase down a differently-titled
+file: zh.wikipedia's articles for both are text-only, and there is no
+English Wikipedia article for either depot at all.
+
+**No candidate exists to accept or reject on licence or subject grounds —
+Commons simply has no published photograph of either depot.** Both
+depots sit inside working maintenance yards with no public vantage point,
+unlike Beitou (visible from the surrounding road) or Nangang (photographed
+from a footbridge), which is the likely reason. No commit for this group;
+nothing changed. Fleet pages: none qualified per §104, so no search was run
+against them.
+
+## 106. Group 3 — three photos, three pages
+
+- **`maokong-gondola.md` hero** — `File:Maokong Gondola 2014 3.jpg`,
+  Smiley.toerist, CC BY-SA 4.0. Shows a cabin arriving at a gondola station
+  set into forested hillside — matches the page's own `wanted:` brief
+  (terminus platform, hillside, a cabin arriving) except for one point not
+  claimed: the file's description and categories give no station name, and
+  the line has two hillside stations (Zhinan Temple and Maokong) the shot
+  could plausibly be either of. Alt text says "a hillside station," not
+  "the Maokong terminus" — the unlabelled-photo rule from the brief applied
+  to the alt text rather than to rejecting the photo, since the page is
+  about the whole line rather than a single station and "a hillside
+  station on this gondola" is fully supported by what the image shows.
+- **`youbike.md` hero** — `File:Ubike MRT Xindian Sta. Stop.jpg`, Kiyoteru
+  Awaji, CC BY 4.0. Commons' own description reads 「微笑單車捷運新店站站」
+  (YouBike at Xindian MRT Station), confirming both subject and location.
+  Chosen over `bike/_index.md`'s existing hero (2010, YouBike 1.0 bikes on
+  a street) specifically because it shows the one-bike-per-post dock design
+  the article's "Why there is a 2.0 at all" section describes as 2.0's
+  physical signature against 1.0's two-per-post — the same fact the caption
+  states, verifiable directly from what the photo shows rather than from
+  its filename alone.
+- **`cards-passes-and-fares.md` hero** — `File:TPASS基北北桃都會通正面
+  20230701.jpg`, Mafalda4144, CC BY-SA 4.0. A studio photo of the physical
+  TPASS 基北北桃1200都會通 card, dated the pass's own 1 July 2023 launch day.
+  Matches the page's central subject at the file-description level, not
+  just a plausible generic ticketing photo — Commons' own title names the
+  specific regional pass this page is about, not the generic national
+  TPASS brand that covers other cities' passes too.
+
+No candidate was rejected on licence grounds this run — all three are CC BY
+or CC BY-SA, no NC/ND encountered in the search results used.
+
+## 107. Sourcing and verification
+
+Three fetches, one at a time through `npm run image`
+(`scripts/fetch-commons.mjs`), 5s+ between calls. For each, the Commons
+API's own `sha1` (`prop=imageinfo&iiprop=sha1`) was recorded before
+download and checked against `sha1sum` on the actual cached original after:
+
+| Image | Commons sha1 | Local sha1 | Match |
+| --- | --- | --- | --- |
+| gondola/hero | `c1fee4c6b293a47d12111aaa206bd003be3eb67c` | same | ✓ |
+| youbike/dock | `256d116f7163c7b34bd74eb0ff0850ffd1256d9a` | same | ✓ |
+| ticketing/hero | `7ff0ed6d172acf7b9c29c06460cbb04df64287d3` | same | ✓ |
+
+All three matched on the first try; nothing re-fetched. Before selecting
+each, a 500px thumbnail was downloaded and viewed directly — not inferred
+from the Commons description alone — to confirm what the photo actually
+shows, the same check run 18 flagged as necessary after nearly shipping the
+wrong alt text for an Ankeng station photo.
+
+## 108. Suite and ratchet
+
+`npm run build` then `npm run verify`: clean, exit 0. `npm run claims`:
+asserted **32**, unchanged from baseline — the three new captions carry no
+figure, date, count or superlative outside a citation. Per-page image
+weight, all three new heroes only: maokong-gondola 129 KB, youbike/history
+178 KB, cards-passes-and-fares 170 KB — all clear of the 400 KB budget with
+large headroom. Site-wide, pages carrying ≥1 image: **53 → 56** of 92.
+
+## 109. What this run did not do
+
+Did not chase a second image type (interior, station, guideway) onto any of
+the three Group 3 pages — the brief's instruction for this run was closing
+zero-image pages, and none of the three needed a second image to stop being
+zero. Did not photograph the three operator pages or any pure index page,
+for the reasons given in §104. Did not re-attempt the depot search with
+looser terms after the category and title search both came up empty —
+concluded no candidate exists rather than accepting a lower-confidence
+match, per the brief's "confirm the vehicle and the location both match"
+rule for depot photos specifically. Part 6's broader "go wide" — every
+other line's inline photography, buses, ferries — remains queued.
