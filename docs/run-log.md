@@ -6715,3 +6715,79 @@ only thing that costs a reader anything.
 **Out of scope, as instructed**: no "text first paints at Xms" claim —
 that needs Lighthouse or WebPageTest, not this project's own
 instrumentation, and the brief said not to attempt it here.
+
+## 128. Part 4 — the full sweep, and what it was missing before it started
+
+`scripts/browser-verify.mjs`'s own `PAGE_TYPES` list — the set of pages
+it screenshots, print-checks and runs the expensive accessibility probes
+against — had no representative of anything Part 1 built: no non-Wenhu
+station page, and none of Run 20's three photo-card grids
+(`/rail/rolling-stock/`, `/rail/depots/`, `/rail/stations/`) at all. The
+comment already on that list names this exact failure mode ("a new
+layout that is not in this list has no browser coverage, and two of its
+three regressions were exactly that" — run 5.1). Added six entries:
+`station-y07` (a thin page — no overlay, so no structure/exits/
+engineering rows — that also has an interchange and NTMC run-time data),
+`station-k01` (Ankeng LRT, the one family of station pages with no
+first/last-train section, TDX not publishing it for light rail),
+`rail-rolling-stock`, `rail-depots`, `rail-stations`. 25 page types now,
+at 375/768/1440/1920/2560 plus the two zoom-accessibility widths — 175
+screenshots, all looked at, not just taken.
+
+Checked systematically against the hunt list:
+
+- **Prose column width at 1920 and 2560.** Wenhu's line page (the
+  longest prose on the site) and the About page both hold a bounded
+  reading column at both widths — not stretched full-width. Clean.
+- **Strip-map artifacts.** Cropped directly to the "Above ground and
+  below" elevation diagram at 2560, 1920 and 375 on Wenhu's line page.
+  No stray rule, no artifact spanning the frame.
+- **Station badges missing or showing no line.** `/rail/stations/` at
+  2560 — all 180 cards across all 9 lines, every badge correctly
+  coloured, every interchange mini-badge present where the registry
+  has one. `/rail/rolling-stock/` the same for all 7 fleets.
+- **Formation diagram visibility on fleet pages.** Visible on VAL256 at
+  1440 — the 4-car `Mc1 M2 | M2 Mc1` diagram renders under "Formation,"
+  legend included. Not the "not visible" state task3 Part 8 originally
+  reported; whatever fixed that held.
+- **Text in the wrong font.** Nothing spotted across everything looked
+  at — Latin and CJK render in their expected families throughout.
+
+**One real defect found and fixed: station-map labels clipped at the
+map's edge.** First noticed on Y07's page (§123's "not chased" note) —
+confirmed it was not a Y07-specific fluke by checking K01's map too,
+where K09's label clipped identically. `components/RouteMap.tsx` always
+drew a station's code and name starting 14 units to the *right* of its
+dot, with no check for whether that placement fit inside the viewBox.
+Wenhu's particular geometry (a loop that never puts a labelled station —
+terminus, interchange or highlighted — hard against the map's own right
+edge) meant this bug had no way to surface before a line with a
+different shape got a station page. Even BR24 — Wenhu's own eastern
+terminus, previously screenshotted in this very run's Part 1 write-up —
+was already silently truncated ("BR24 Taipei" with "Nangang Exhibition
+Center" cut off); it read as a short label, not a bug, until adjacent
+evidence from Y07 and K01 made the pattern visible.
+
+**Fix:** estimate each label's rendered width (the code is monospace, so
+its 6.4-units-per-character estimate is exact — reusing the constant the
+name's own x position already depended on; the proportional name uses a
+conservative 6.2-units-per-character overestimate) and flip the whole
+label — code and name both, `text-anchor: end`, ending at the dot
+instead of starting from it — when it would not fit before the map's
+right edge. Verified on Y07 ("Dapinglin Y07" now fully inside the
+frame), K01 (K09's "Shisizhang" likewise), and confirmed no regression
+on BR10, BR24 and the network overview map (which uses `lineLabels`, a
+separate code path this change does not touch) — BR24 now reads its
+*full* name, "Taipei Nangang Exhibition Center BR24," where it used to
+truncate.
+
+**Design-judgement items, left for Jamie — none found this part.**
+Everything on the hunt list either checked out clean or had an
+unambiguous, verifiable fix.
+
+Screenshots: `rail-stations-2560.png` (all 9 lines, badges and
+interchange pills), `r21-fix-y07-map-1440.png` /
+`r21-fix-k01-map-1440.png` (the label-clip fix, before/nonexistent-after
+comparable against §123's screenshot set), `station-br10-768.png`
+(tablet width, confirming BR24's map label and the Part 1 redesigns
+together at a width neither had been checked at before).

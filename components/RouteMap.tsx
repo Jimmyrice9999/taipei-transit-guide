@@ -342,6 +342,24 @@ export default function RouteMap({
 
           {placed.map(({ station, x, y, labelY }) => {
             const moved = Math.abs(labelY - y) > 2
+
+            /*
+             * Run 21: labels always drew to the right of the dot, so a
+             * station sitting near the map's right edge — never possible on
+             * Wenhu, whose loop keeps every candidate label away from the
+             * frame — had its name clipped by the viewBox once station pages
+             * covered lines with a different shape (Y07, K01/K09). Estimate
+             * the label's width the same way the name's own x already did
+             * (a per-character constant; the code is monospace so this is
+             * exact, the proportional name only needs to be a safe
+             * overestimate) and flip the whole label to read right-to-left,
+             * ending at the dot, when it would not fit.
+             */
+            const codeWidth = station.code.length * 6.4
+            const nameWidth = station.name.length * 6.2
+            const overflowsRight = x + 14 + codeWidth + 5 + nameWidth > width - padding * 0.4
+            const sign = overflowsRight ? -1 : 1
+
             return (
               <g
                 key={`label-${station.code}`}
@@ -354,14 +372,26 @@ export default function RouteMap({
                 aria-hidden="true"
               >
                 {moved && (
-                  <line x1={x + 7} y1={y} x2={x + 12} y2={labelY - 3} className="routemap-leader" />
+                  <line
+                    x1={x + sign * 7}
+                    y1={y}
+                    x2={x + sign * 12}
+                    y2={labelY - 3}
+                    className="routemap-leader"
+                  />
                 )}
-                <text x={x + 14} y={labelY} className="routemap-code">
+                <text
+                  x={x + sign * 14}
+                  y={labelY}
+                  textAnchor={overflowsRight ? 'end' : undefined}
+                  className="routemap-code"
+                >
                   {station.code}
                 </text>
                 <text
-                  x={x + 14 + station.code.length * 6.4 + 5}
+                  x={overflowsRight ? x - 14 - codeWidth - 5 : x + 14 + codeWidth + 5}
                   y={labelY}
+                  textAnchor={overflowsRight ? 'end' : undefined}
                   className="routemap-name"
                 >
                   {station.name}

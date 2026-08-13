@@ -128,8 +128,29 @@ const PAGE_TYPES = [
   { name: 'station-br22', url: '/rail/stations/br22/' },
   { name: 'station-br13', url: '/rail/stations/br13/' },
   { name: 'station-br10', url: '/rail/stations/br10/' },
+  /*
+   * Run 21: station pages stopped being Wenhu-only, and this list still had
+   * no representative of the other 8 lines — the exact failure mode this
+   * comment already names ("a new layout not in this list has no browser
+   * coverage"). Y07 is a thin page (no overlay, so no structure/exits/
+   * engineering rows) that also has an interchange and, since this run,
+   * NTMC run-time data; K01 is Ankeng LRT, the one family of station pages
+   * with no first/last-train section at all, TDX not publishing it for
+   * light rail.
+   */
+  { name: 'station-y07', url: '/rail/stations/y07/' },
+  { name: 'station-k01', url: '/rail/stations/k01/' },
   { name: 'stock-val256', url: '/rail/rolling-stock/val256/' },
   { name: 'depot-muzha', url: '/rail/depots/muzha-depot/' },
+  /*
+   * Run 20 built these three photo-card grids and never added any of them
+   * here — the same gap, a run later. `/rail/stations/` in particular
+   * changed twice this run (the interchange badges' source, and now every
+   * line instead of one).
+   */
+  { name: 'rail-rolling-stock', url: '/rail/rolling-stock/' },
+  { name: 'rail-depots', url: '/rail/depots/' },
+  { name: 'rail-stations', url: '/rail/stations/' },
   { name: 'network', url: '/rail/network/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
