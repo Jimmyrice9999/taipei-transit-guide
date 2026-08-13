@@ -3484,6 +3484,125 @@ a.adjacent-link:hover {
 }
 
 /* ------------------------------------------------------------------ */
+/* Photo card grid — /rail/rolling-stock/, /rail/depots/, /rail/stations/ */
+/* ------------------------------------------------------------------ */
+
+/*
+ * Unlike .card-list, this is not capped at 780px: a grid of photographs is
+ * exactly the content Part 1's container-width fix (see the note on
+ * .container) exists to give the spare pixels to.
+ *
+ * `align-items: start` is load-bearing — see components/PhotoCard.tsx for
+ * why a card with no photo must not stretch to match a photographed
+ * neighbour's height.
+ */
+.photo-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  align-items: start;
+  gap: 20px;
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+}
+
+.photo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* The line's colour, top edge — same construction as the card-list rule:
+   official colour plus a text-safe hairline, because brown, orange and
+   Circular yellow have no defined edge on white without it. */
+.photo-card[data-line]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--row-map);
+  border-bottom: 1px solid var(--row-ink);
+}
+
+.photo-card[data-line] .photo-card-link {
+  margin-top: 4px;
+}
+
+.photo-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo-card:hover .photo-card-title {
+  text-decoration: underline;
+}
+
+.photo-card-img {
+  display: block;
+  width: 100%;
+  /*
+   * `height: auto` has to be explicit here, not left to the site-wide `img`
+   * reset. The `height` attribute on the element (set from the source
+   * photo's real pixel size, for CLS) is a presentational hint, and on this
+   * card an unrelated hint outranked the reset in testing — the box came out
+   * at the photo's raw attribute height (e.g. 1200px) with only the width
+   * scaled to the card, instead of the 4:3 box below. Repeating the reset at
+   * this specificity is what actually pins it to auto.
+   */
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  flex: none;
+}
+
+.photo-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px 8px;
+}
+
+.photo-card-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.28;
+  letter-spacing: -0.005em;
+  color: var(--text);
+}
+
+.photo-card-subtitle {
+  font-size: 12.5px;
+  color: var(--text-3);
+}
+
+.photo-card-summary {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+
+.photo-card-credit {
+  padding: 0 14px;
+}
+
+.photo-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px 12px;
+}
+
+/* ------------------------------------------------------------------ */
 /* Small screens                                                       */
 /* ------------------------------------------------------------------ */
 

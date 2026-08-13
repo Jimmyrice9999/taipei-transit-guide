@@ -4,14 +4,27 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import CardRow from '@/components/CardRow'
 import ComparisonTable from '@/components/ComparisonTable'
+import LineBadge from '@/components/LineBadge'
 import PageShell from '@/components/PageShell'
+import PhotoCard from '@/components/PhotoCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
+import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderBody, getPages, getSection, getSections, getType, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string; type: string }> }
+
+/*
+ * Rolling stock and depots, and only these two, get the photographed-card
+ * treatment. Part 11's complaint was these two types listed in full on
+ * /rail — lines, operators, systems and history are not the wall of links
+ * it named, and giving every type folder on the site a photo grid would be
+ * a redesign nobody asked for. See docs/run-log.md for the audit that
+ * scoped this.
+ */
+const PHOTO_GRID_TYPES = new Set(['rolling-stock', 'depots'])
 
 export const dynamicParams = false
 
@@ -60,6 +73,7 @@ export default async function TypeIndexPage({ params }: Props) {
    * ────────────────────────────────────────────────────────────────────────
    */
   const withSpecs = pages.filter((p) => p.specs.length > 0)
+  const photoGrid = section === 'rail' && PHOTO_GRID_TYPES.has(type)
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -92,7 +106,28 @@ export default async function TypeIndexPage({ params }: Props) {
       */}
       {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
 
-      {pages.length === 0 ? null : (
+      {pages.length === 0 ? null : photoGrid ? (
+        /*
+         * Photographed cards, one per item. A card's own page is the primary
+         * link (photo, title, summary); the line it serves is a second, real
+         * link in its own row below — LineBadge, not an inert span, because
+         * Part 11 asked for cards that link to the lines they serve, not
+         * cards that merely mention them.
+         */
+        <ul className="photo-card-grid">
+          {pages.map((page) => (
+            <PhotoCard
+              key={page.slug}
+              href={page.href}
+              title={page.title}
+              summary={page.summary}
+              line={page.line}
+              image={page.hero?.image ? getImage(page.hero.image) : null}
+              meta={page.line && <LineBadge code={page.line} />}
+            />
+          ))}
+        </ul>
+      ) : (
         <ul className="card-list">
           {/*
             The per-card "scope statement" / "full page" chip was removed in

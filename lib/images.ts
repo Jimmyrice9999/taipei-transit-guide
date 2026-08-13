@@ -51,6 +51,31 @@ export function src(image: SiteImage): string {
 }
 
 /**
+ * srcset()/src(), but excluding variants above maxWidth.
+ *
+ * For a card thumbnail (rendered at ~280px), the 1600w original is never
+ * the one that paints — but every rendered `<img>` still gets weighed for
+ * tests/images.test.mts's per-page budget by its *largest referenced*
+ * variant, on the working assumption that whatever a page references is
+ * what a desktop visitor could download. A grid of small photographed
+ * cards that each merely mentions the 1600w file in its srcset blows a
+ * 400 KB page budget in three or four cards without a single visitor ever
+ * fetching that file. Capping what the markup references is the honest fix
+ * — narrower than the display context needs, not narrower than the test.
+ */
+export function srcsetCapped(image: SiteImage, maxWidth: number): string {
+  const capped = image.widths.filter((w) => w <= maxWidth)
+  const use = capped.length ? capped : [Math.min(...image.widths)]
+  return use.map((w) => `${BASE_PATH}${image.base}-${w}.webp ${w}w`).join(', ')
+}
+
+export function srcCapped(image: SiteImage, maxWidth: number): string {
+  const capped = image.widths.filter((w) => w <= maxWidth)
+  const use = capped.length ? Math.max(...capped) : Math.min(...image.widths)
+  return `${BASE_PATH}${image.base}-${use}.webp`
+}
+
+/**
  * The image for an id like `wenhu-line/hero` or `stations/br13`, or null.
  *
  * Null is a working state, not an error: a page whose image has not been

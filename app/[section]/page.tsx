@@ -60,6 +60,20 @@ export default async function SectionPage({ params }: Props) {
   const body = await getFolderBody([], section)
   const heroImage = meta.hero?.image ? getImage(meta.hero.image) : null
 
+  /*
+   * Rolling stock and depots get their own hub cards below, matching "The
+   * network" and "Stations" — so they drop out of the plain type-by-type
+   * listing loop rather than appearing twice. Part 11: /rail listed every
+   * fleet and every depot in full, which was the wall of links the user's
+   * own proposal was written to fix. Lines, operators, systems and history
+   * are not named in that complaint and are short enough not to need it —
+   * see docs/run-log.md for the count that backs this split.
+   */
+  const HUB_LINKED_TYPES = section === 'rail' ? new Set(['rolling-stock', 'depots']) : new Set()
+  const listedTypes = types.filter((type) => !HUB_LINKED_TYPES.has(type.slug))
+  const rollingStockCount = section === 'rail' ? getPages('rail', 'rolling-stock').length : 0
+  const depotCount = section === 'rail' ? getPages('rail', 'depots').length : 0
+
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <HanContentSubset />
@@ -143,6 +157,37 @@ export default async function SectionPage({ params }: Props) {
               </span>
             </Link>
           </li>
+          <li>
+            <Link href="/rail/rolling-stock/">
+              <span className="card-body">
+                <span className="card-title">Rolling stock</span>
+                <span className="card-desc">
+                  {rollingStockCount} fleets, photographed where a picture exists, each linking
+                  to the line it works.
+                </span>
+              </span>
+              <span className="card-meta">
+                <span className="card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/rail/depots/">
+              <span className="card-body">
+                <span className="card-title">Depots</span>
+                <span className="card-desc">
+                  {depotCount} stabling and maintenance depots, by the line each one serves.
+                </span>
+              </span>
+              <span className="card-meta">
+                <span className="card-arrow" aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          </li>
         </ul>
       )}
 
@@ -152,7 +197,7 @@ export default async function SectionPage({ params }: Props) {
         a category and then had nothing in it, which is a worse experience than
         the category simply not being mentioned yet.
       */}
-      {types.map((type) => {
+      {listedTypes.map((type) => {
         const pages = getPages(section, type.slug)
         if (pages.length === 0) return null
         return (
