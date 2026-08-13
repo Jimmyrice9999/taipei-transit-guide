@@ -6346,3 +6346,82 @@ different question this run did not need to answer). Did not extend the
 actually shown as cards. Did not chase Part 6's "go wide" photography
 queue, Part 8's diagrams, or Part 9's network-page items — out of scope for
 what this run was asked to fix.
+
+# Run 21 — the CI redness was never test:unit, 13 August 2026
+
+## 116. Part 0 — audit before fixing
+
+The brief said "GitHub Actions' Tests step failed with exit code 1 on an
+earlier run" without the assertion text, and asked to run `npm run
+test:unit` locally and fix only if it fails. It didn't fail —
+**184/184, clean** — so per the brief's own instruction there was nothing
+to fix there. But the brief also said the failure might already be
+resolved, and it wasn't: it was still live, just not where the brief's
+framing pointed.
+
+`npm run verify` (the pre-commit gate this project actually holds itself
+to) doesn't run everything CI's `Tests` job runs — `palette`,
+`verify:browser` and `adversarial` are separate steps in
+`.github/workflows/deploy.yml`, invoked directly, not through `verify`.
+Ran all three locally. `palette` and `verify:browser` were clean.
+**`npm run adversarial` exited 1: 8/16.**
+
+Checked the actual GitHub Actions history via the API (the web UI
+returned stale/cached listings through `WebFetch` more than once — the
+API endpoint was the reliable source): `047cf35` ("Run 17") had genuinely
+failed on push, and nothing since had been pushed to find out whether
+runs 18–20's local fixes cleared it, because runs 18–20 were 8 commits
+sitting unpushed on `main`. That's "an earlier run" — real, and already
+addressed by work already in this branch, exactly as the brief allowed
+for.
+
+## 117. What was actually breaking `adversarial`, and why it isn't a test bug
+
+`scripts/adversarial.mjs` runs 16 hostile-input builds and checks stderr
+for a `⚠` on each one. Its `expect: 'clean'` cases require *no* warning —
+but the check is `/⚠/.test(output)` over the *whole* build output, not
+scoped to the fixture's own file. Three pre-existing content lines were
+warning on **every** build, fixture-related or not:
+
+- `content/rail/lines/airport-mrt.md` — bare `A23` and `A14` in prose
+  describing the two in-progress, not-yet-open extensions (Zhongli and
+  the Terminal 3 station). Both are real planned codes, correctly
+  TBC-flagged in the surrounding text, and neither resolves in
+  `lib/stations.ts` because neither station is built yet — the
+  station-code checker was doing exactly its job.
+- `content/rail/lines/zhonghe-xinlu-line.md` — "the O5x block", a
+  shorthand for the O50–O54 range that isn't itself a real code.
+
+None of these are typos, so per the brief's own rule for this part — do
+not raise the baseline, do not edit the test, reword the claim — the fix
+was wording, not code. `airport-mrt.md` already had the identical
+situation two paragraphs earlier (`A14a`/`A14` backticked, `code`
+elements are the tokenizer's opt-out — see `lib/text-tokens.ts`); the two
+new mentions now follow the same convention. "O5x" became "O50–O54",
+naming the actual range instead of a shorthand that looks like a code but
+isn't. No fact changed, no check relaxed.
+
+`npm run adversarial`: **16/16**, exit 0. `npm run verify`: clean.
+
+## 118. Actions pins, and confirmation
+
+Bumped all six pinned actions off the Node 20 runtime GitHub is
+deprecating: `checkout` v4→v7, `setup-node` v4→v7, `upload-artifact`
+v4→v7, `configure-pages` v5→v6, `upload-pages-artifact` v3→v5,
+`deploy-pages` v4→v5 — checked each release page first; none carry a
+documented breaking change against this workflow's plain usage (no
+custom inputs beyond `node-version`/`cache`/`path`).
+
+Pushed in two commits — the version bump, then the content fix, so the
+CI history shows which change did what. First push (`404b93d`, versions
+only) still failed: confirmed via the Actions jobs API that the failing
+step was **"Adversarial fixtures"**, matching the diagnosis above, not a
+version-bump regression. Second push (`b7c27fd`, the content reword)
+went green end to end — test → build → deploy, run 31674981051.
+
+## 119. What this part did not touch
+
+Did not touch `scripts/adversarial.mjs` itself — the brief's rule against
+editing the test to make it pass, applied. The blunt whole-output `⚠`
+check is arguably worth scoping to each fixture's own file in a later
+run, but that is a change to the test's design, not this part's job.
