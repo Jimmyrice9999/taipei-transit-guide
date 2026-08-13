@@ -79,6 +79,17 @@ export default function PhotoCard({
           <img
             src={srcCapped(image, CARD_IMAGE_MAX_WIDTH)}
             srcSet={srcsetCapped(image, CARD_IMAGE_MAX_WIDTH)}
+            /*
+             * Matches `.photo-card-grid`'s real column counts (Run 20:
+             * 1/2/4/5/6 columns at 375/768/1440/1920/2560), capped at
+             * CARD_IMAGE_MAX_WIDTH — the browser can never be told to want
+             * more than the largest variant this component ever references.
+             * No byte saving today: every image with a card tier currently
+             * offers exactly one candidate at 240w, so there is nothing to
+             * choose between yet. It is still the correct hint for whichever
+             * srcset a future narrower tier adds under this cap.
+             */
+            sizes={`(max-width: 560px) 90vw, (max-width: 768px) 45vw, (max-width: 1440px) 23vw, (max-width: 1920px) 18vw, ${CARD_IMAGE_MAX_WIDTH}px`}
             alt=""
             width={image.width}
             height={image.height}

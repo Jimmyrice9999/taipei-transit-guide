@@ -6643,3 +6643,75 @@ Two different things are mixed together in it:
   `lib/text-tokens.ts` already has for station codes.
 
 Full list: `docs/links-audit.json`.
+
+## 126. Part 3 — performance: what's already true, what wasn't, what moved
+
+**Checked before changing anything, per the audit-first rule.** Dimensions
+(width/height on every `<img>`, for CLS) and lazy-loading below the fold
+are already fully compliant site-wide — every `<img>` on the site is
+rendered by exactly one of two components (`Figure`, `PhotoCard`), both
+already correct, and `tests/images.test.mts` build-checks it. Fonts were
+"fixed earlier" as stated: `next/font` preload plus `font-display:
+optional` for Latin, `font-display: block` for the CJK subsets, confirmed
+still in place. Neither needed touching.
+
+**One real gap: `PhotoCard`'s `<img>` had a `srcSet` and no `sizes`.**
+Without it a browser assumes the slot is `100vw` when choosing a srcset
+candidate — wrong for a ~230-280px grid card at any viewport wider than a
+phone. Added a `sizes` matching `.photo-card-grid`'s actual column counts
+(1/2/4/5/6 at 375/768/1440/1920/2560, per Run 20's own findings), capped
+at `CARD_IMAGE_MAX_WIDTH`. **No measurable byte saving today** — every
+image with a card tier currently offers exactly one srcset candidate
+(240w), so there is nothing to choose between yet — but it is the
+spec-correct hint, and it is what a future narrower tier would need to
+actually get chosen instead of always falling back to the one candidate
+that exists.
+
+## 127. The weight table
+
+`npm run weigh`, after Parts 1-2:
+
+| page type | HTML | fonts | other | **total** | fonts fetched/referenced |
+|---|---|---|---|---|---|
+| Home | 9.2 KB | 100.1 KB | 187.3 KB | **296.6 KB** | 5/23 |
+| Line page | 49.3 KB | 438.0 KB | 188.5 KB | **675.8 KB** | 7/25 |
+| Station page | 16.5 KB | 189.6 KB | 188.0 KB | **394.0 KB** | 7/23 |
+| Rolling stock | 23.4 KB | 438.0 KB | 188.5 KB | **649.9 KB** | 7/25 |
+| Network | 48.4 KB | 308.7 KB | 188.0 KB | **545.0 KB** | 12/23 |
+| Station records | 29.6 KB | 169.9 KB | 187.3 KB | **386.8 KB** | 7/25 |
+| Section index | 14.4 KB | 438.0 KB | 187.3 KB | **639.7 KB** | 7/25 |
+| About | 10.6 KB | 189.6 KB | 187.3 KB | **387.4 KB** | 7/23 |
+
+**Image weight is not what dominates any page type here** — the "other"
+column (~187-189 KB on every page type, images plus JS plus CSS) barely
+moves between page types; fonts do essentially all the moving, from
+100 KB (Home, no Chinese) to 438 KB (any page needing the full content
+CJK subset).
+
+**Against the site's own 200 KB station-page target: 394.0 KB, over by
+194.0 KB** — worse than the 348.5 KB / 148.5 KB over that stood before
+this run. The single largest cause: the CJK "base" subset (used by every
+individual station page, plus site chrome) grew from 285 to more
+characters once it had to cover 180 stations' Chinese names and
+districts instead of 24. That is a direct, expected cost of Part 1's
+own work, not a regression introduced by accident — a shared subset file
+is one file for many pages precisely so a second station page costs
+nothing extra once the first has been fetched, and the trade is a larger
+first download. Not re-architected this run: splitting the CJK subset
+further (e.g., per-line rather than one shared "base" tier) is a design
+change with its own trade-offs — worth a future run's dedicated
+attention, not a "cheap and safe" fix.
+
+**What a reader never downloads, measured against the line page (the
+worst case)**: 318.9 KB of committed font weight — mostly `Inter 100 900`
+weights and CJK weights the page's actual character set never touches —
+sits in the build for a reason unrelated to any one page (other pages,
+other weights, the variable font's full axis range) and is never
+fetched by anyone reading this specific page. Recorded because it is a
+striking number, not because it is new or wrong: `next/font` and the
+subset system already prevent it from being *fetched*, which is the
+only thing that costs a reader anything.
+
+**Out of scope, as instructed**: no "text first paints at Xms" claim —
+that needs Lighthouse or WebPageTest, not this project's own
+instrumentation, and the brief said not to attempt it here.
