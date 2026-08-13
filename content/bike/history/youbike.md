@@ -7,6 +7,10 @@ aliases:
   - YouBike 2.0
   - YouBike 1.0
 updated: 2026-08-12
+hero:
+  image: youbike/dock
+  alt: A row of orange YouBike bicycles docked one-per-post beneath an elevated MRT viaduct at Xindian Station.
+  caption: A YouBike dock at Xindian Station — one bike per post, 2.0's signature change from 1.0's two.
 facts:
   - label: Operator
     value: 微笑單車股份有限公司 (Smile Bike Co., Ltd.), under contract to Taipei City Government

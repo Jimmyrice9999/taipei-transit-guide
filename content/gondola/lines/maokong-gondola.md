@@ -7,7 +7,9 @@ aliases:
   - Maokong Gondola
   - Maokong Cable Car
 hero:
-  wanted: The gondola's Maokong terminus, timber-roofed platform set among tea-plantation hillside, a cabin arriving or departing.
+  image: gondola/hero
+  alt: A Maokong Gondola cabin arriving at a hillside station, forested slopes behind, an outbound cabin and cable visible alongside.
+  caption: A cabin arriving at one of the gondola's hillside stations.
 facts:
   - label: Operator
     value: North Metro Recreation Company (北捷遊憩事業股份有限公司), a TRTC/Taipei City joint subsidiary

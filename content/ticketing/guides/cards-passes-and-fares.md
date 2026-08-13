@@ -11,6 +11,10 @@ aliases:
   - 都會通
   - TPASS
   - 基北北桃1200
+hero:
+  image: ticketing/hero
+  alt: The green-and-pink TPASS 基北北桃1200都會通 monthly commuter pass card, EasyCard-format, on a wooden surface.
+  caption: The TPASS 基北北桃1200都會通 regional commuter pass, on an EasyCard-format card.
 facts:
   - label: EasyCard issuer
     value: 悠遊卡股份有限公司 (EasyCard Corporation)
