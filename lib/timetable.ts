@@ -7,10 +7,24 @@
  * when service starts and ends.
  *
  * Read straight from the committed JSON at build time. No network, no runtime.
+ *
+ * Run 21: this used to read only TRTC's two files, from when only Wenhu (a
+ * TRTC line) had station pages. NTMC and TYMC publish the identical pair of
+ * datasets — already fetched and committed at data/tdx/NTMC/ and
+ * data/tdx/TYMC/ — so extending station pages to the Circular and Airport MRT
+ * lines left this data sitting unread. The two light-rail operators,
+ * NTDLRT and NTALRT, do not publish either file; their station pages render
+ * without this section, which is a real gap in what TDX publishes for light
+ * rail, not a bug here. StationIDs are line-code-prefixed ("Y07", "A14") and
+ * globally unique, so the three operators' records merge into one map safely.
  */
 
 import trtcS2S from '../data/tdx/TRTC/s2s-travel-time.json' with { type: 'json' }
 import trtcFirstLast from '../data/tdx/TRTC/first-last-timetable.json' with { type: 'json' }
+import ntmcS2S from '../data/tdx/NTMC/s2s-travel-time.json' with { type: 'json' }
+import ntmcFirstLast from '../data/tdx/NTMC/first-last-timetable.json' with { type: 'json' }
+import tymcS2S from '../data/tdx/TYMC/s2s-travel-time.json' with { type: 'json' }
+import tymcFirstLast from '../data/tdx/TYMC/first-last-timetable.json' with { type: 'json' }
 
 type S2SRecord = {
   LineID: string
@@ -46,13 +60,15 @@ type FirstLastRecord = {
  */
 const RUN_TIMES = new Map<string, { runTime: number; stopTime: number }>()
 
-for (const record of trtcS2S as unknown as S2SRecord[]) {
-  for (const leg of record.TravelTimes ?? []) {
-    if (!leg.FromStationID || !leg.ToStationID) continue
-    RUN_TIMES.set(`${leg.FromStationID}>${leg.ToStationID}`, {
-      runTime: leg.RunTime ?? 0,
-      stopTime: leg.StopTime ?? 0,
-    })
+for (const records of [trtcS2S, ntmcS2S, tymcS2S] as unknown as S2SRecord[][]) {
+  for (const record of records) {
+    for (const leg of record.TravelTimes ?? []) {
+      if (!leg.FromStationID || !leg.ToStationID) continue
+      RUN_TIMES.set(`${leg.FromStationID}>${leg.ToStationID}`, {
+        runTime: leg.RunTime ?? 0,
+        stopTime: leg.StopTime ?? 0,
+      })
+    }
   }
 }
 
@@ -88,25 +104,27 @@ export type ServicePattern = {
 
 const FIRST_LAST = new Map<string, ServicePattern[]>()
 
-for (const record of trtcFirstLast as unknown as FirstLastRecord[]) {
-  if (!record.StationID) continue
-  const towards =
-    record.DestinationStationName?.En ??
-    record.TripHeadSign ??
-    record.DestinationStaionID ??
-    ''
+for (const records of [trtcFirstLast, ntmcFirstLast, tymcFirstLast] as unknown as FirstLastRecord[][]) {
+  for (const record of records) {
+    if (!record.StationID) continue
+    const towards =
+      record.DestinationStationName?.En ??
+      record.TripHeadSign ??
+      record.DestinationStaionID ??
+      ''
 
-  const list = FIRST_LAST.get(record.StationID) ?? []
-  // The same destination can appear more than once across service days; the
-  // first record wins rather than the page listing near-duplicates.
-  if (!list.some((entry) => entry.towards === towards)) {
-    list.push({
-      towards,
-      first: (record.FirstTrainTime ?? '').slice(0, 5),
-      last: (record.LastTrainTime ?? '').slice(0, 5),
-    })
+    const list = FIRST_LAST.get(record.StationID) ?? []
+    // The same destination can appear more than once across service days; the
+    // first record wins rather than the page listing near-duplicates.
+    if (!list.some((entry) => entry.towards === towards)) {
+      list.push({
+        towards,
+        first: (record.FirstTrainTime ?? '').slice(0, 5),
+        last: (record.LastTrainTime ?? '').slice(0, 5),
+      })
+    }
+    FIRST_LAST.set(record.StationID, list)
   }
-  FIRST_LAST.set(record.StationID, list)
 }
 
 /** Service patterns at a station, one per direction. Empty when not published. */

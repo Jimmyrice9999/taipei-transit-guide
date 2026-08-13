@@ -109,11 +109,14 @@ export const CATALOGUED_LINES = new Set(STATIONS.map((s) => s.line).filter(Boole
 /**
  * Lines whose stations have their own pages.
  *
- * Depth over breadth: every station on every line is *registered*, so codes
- * validate network-wide, but only Wenhu's are written up. Linking a code to a
- * page that does not exist would be worse than not linking it.
+ * Run 21: every catalogued line, not just Wenhu — generating a page from a
+ * real TDX record is a templating decision, not a data one; every field the
+ * template prints is already conditional on the data existing, so a line
+ * with no hand-researched overlay just gets a thinner page, not a missing
+ * one. Wenhu remains the depth standard (see the overlay and 24 photographs)
+ * but "only Wenhu is written up" stopped being true this run.
  */
-export const LINES_WITH_STATION_PAGES = new Set(['BR'])
+export const LINES_WITH_STATION_PAGES = CATALOGUED_LINES
 
 /** The URL for a station's page, or null when it does not have one. */
 export function getStationHref(code: string): string | null {

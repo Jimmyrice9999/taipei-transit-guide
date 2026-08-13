@@ -1,9 +1,16 @@
 /**
- * /rail/stations/[code] — a page per Wenhu station.
+ * /rail/stations/[code] — a page per station on every catalogued line.
  *
- * Wenhu only, deliberately. Depth over breadth: these are built from real TDX
- * records rather than being stubs, and there is no point generating 133 more
- * pages for lines nobody has written about.
+ * Run 21: extended from Wenhu-only to every line in
+ * `LINES_WITH_STATION_PAGES` (lib/stations.ts). Wenhu is still the depth
+ * standard — 24 stations hand-researched for structure, exits, engineering
+ * numbers and photographs, via `lib/station-overlay.ts` — everything else on
+ * this page is a plain TDX read: position, district, coordinates,
+ * interchange, run times where TDX publishes them. A non-Wenhu station page
+ * is thinner because the overlay and the photo have nothing for it yet, not
+ * because anything was left out on purpose. Every field below is already
+ * conditional on the data existing, so a thinner station just renders fewer
+ * rows — it never states that it is thin.
  */
 
 import type { Metadata } from 'next'
@@ -24,20 +31,19 @@ import { getLineGeometry } from '@/lib/geometry'
 import { branchTint, getAccent, getLine } from '@/lib/lines'
 import { getDistrictEn } from '@/lib/districts'
 import { getLineTrack } from '@/lib/network'
-import { getLineStations, getStation } from '@/lib/stations'
+import { getLineStations, getStation, LINES_WITH_STATION_PAGES } from '@/lib/stations'
 import { formatRunTime, getFirstLast, getRunTime } from '@/lib/timetable'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, stationSchema } from '@/lib/structured-data'
-
-/** The one line with written pages. */
-const LINE = 'BR'
 
 type Props = { params: Promise<{ code: string }> }
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return getLineStations(LINE).map((station) => ({ code: station.code.toLowerCase() }))
+  return [...LINES_WITH_STATION_PAGES].flatMap((line) =>
+    getLineStations(line).map((station) => ({ code: station.code.toLowerCase() })),
+  )
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -48,16 +54,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const stations = getLineStations(station.line)
   const position = stations.findIndex((s) => s.code === station.code) + 1
   const line = getAccent(station.line)
+  const operator = getOperator(station.operator)
 
   /*
-   * Built from the station's own record, so all 24 descriptions differ in the
+   * Built from the station's own record, so all descriptions differ in the
    * ways the stations differ. The previous version was one sentence with the
-   * code and name substituted in, which meant 24 pages competing for the same
-   * search result with 24 near-identical descriptions — the specific thing that
-   * gets pages filtered as duplicates.
+   * code and name substituted in, which meant every page on a line competing
+   * for the same search result with near-identical descriptions — the
+   * specific thing that gets pages filtered as duplicates.
+   *
+   * "Taipei Metro's X Line" used to be hardcoded here, which was simply wrong
+   * once this page covers NTMC's Circular Line or TYMC's Airport MRT — named
+   * by operator instead, generically, rather than assuming TRTC.
    */
   const parts = [
-    `${station.code} ${station.name}${station.nameZh ? ` (${station.nameZh})` : ''} is stop ${position} of ${stations.length} on Taipei Metro's ${line.name} Line`,
+    `${station.code} ${station.name}${station.nameZh ? ` (${station.nameZh})` : ''} is stop ${position} of ${stations.length} on ${operator ? `${operator.name}'s ` : ''}${line.name} Line`,
   ]
 
   if (station.district) parts[0] += `, in ${station.district}`
@@ -75,7 +86,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     parts.push(`${station.structure === 'elevated' ? 'Elevated' : 'Underground'} station.`)
   }
 
-  parts.push('Coordinates, adjacent stations and first and last trains.')
+  const closing = ['Coordinates, adjacent stations']
+  if (getFirstLast(station.code).length > 0) closing.push('first and last trains')
+  parts.push(`${closing.join(' and ')}.`)
 
   const description = parts.join(' ')
 
@@ -100,7 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function StationPage({ params }: Props) {
   const { code } = await params
   const station = getStation(code)
-  if (!station || station.line !== LINE) notFound()
+  if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) notFound()
 
   const line = getAccent(station.line)
   const heroImage = getImage(`stations/${station.code.toLowerCase()}`)
@@ -131,6 +144,18 @@ export default async function StationPage({ params }: Props) {
   const structureLabel =
     station.structure === 'unknown' ? 'Not established' : station.structure === 'elevated' ? 'Elevated' : 'Underground'
 
+  /*
+   * Computed once, used twice: the header banner below and the facts-panel
+   * row further down. Run 21 — interchange used to be stated only in the
+   * facts panel, which meant scrolling past the hero and the head to learn
+   * the single most useful fact about an interchange station.
+   */
+  const interchangeLines = station.interchange
+    .map((code) => ({ code, line: getLine(code) }))
+    .filter((entry): entry is { code: string; line: NonNullable<ReturnType<typeof getLine>> } =>
+      Boolean(entry.line),
+    )
+
   return (
     <PageShell accent={line}>
       <JsonLd
@@ -139,7 +164,7 @@ export default async function StationPage({ params }: Props) {
           breadcrumbSchema([
             { name: 'Home', path: '/' },
             { name: 'Rail', path: '/rail/' },
-            { name: 'Wenhu Line', path: '/rail/lines/wenhu-line/' },
+            ...(linePageHref ? [{ name: `${line.name} Line`, path: linePageHref }] : []),
             {
               name: `${station.code} ${station.name}`,
               path: `/rail/stations/${station.code.toLowerCase()}/`,
@@ -160,12 +185,12 @@ export default async function StationPage({ params }: Props) {
       <Breadcrumbs
         trail={[
           { label: 'Rail', href: '/rail/' },
-          { label: 'Wenhu Line', href: '/rail/lines/wenhu-line/' },
+          ...(linePageHref ? [{ label: `${line.name} Line`, href: linePageHref }] : []),
           { label: `${station.code} ${station.name}` },
         ]}
       />
 
-      <BackLink href="/rail/lines/wenhu-line/" label="the Wenhu Line" />
+      {linePageHref && <BackLink href={linePageHref} label={`the ${line.name} Line`} />}
 
       {/*
         The code at platform-sign scale.
@@ -198,6 +223,20 @@ export default async function StationPage({ params }: Props) {
           {station.nameZh && (
             <p className="station-zh" lang="zh-Hant">
               {station.nameZh}
+            </p>
+          )}
+          {interchangeLines.length > 0 && (
+            <p className="station-interchange">
+              <span className="station-interchange-label">Interchange</span>
+              <span className="interchange-codes">
+                {interchangeLines.map(({ code, line: otherLine }) => (
+                  <LineBadge
+                    code={code}
+                    key={code}
+                    title={`Interchange with the ${otherLine.name} Line`}
+                  />
+                ))}
+              </span>
             </p>
           )}
           <p className="station-standfirst">
@@ -249,26 +288,22 @@ export default async function StationPage({ params }: Props) {
             <div className="platform-fact">
               <dt>Interchange</dt>
               <dd>
-                {station.interchange.length ? (
+                {interchangeLines.length ? (
                   <span className="interchange-codes">
-                    {station.interchange.map((other) => {
-                      const otherLine = getLine(other)
-                      if (!otherLine) return null
-                      /*
-                        These are LINE codes, not station codes — "the lines
-                        you can change to here" — so they link to line pages.
-                        They were inert pills, which on an interchange station
-                        made the most useful fact on the page a dead end.
-                      */
-                      return (
-                        <LineBadge
-                          className="badge-mini"
-                          code={other}
-                          key={other}
-                          title={`Interchange with the ${otherLine.name} Line`}
-                        />
-                      )
-                    })}
+                    {/*
+                      These are LINE codes, not station codes — "the lines
+                      you can change to here" — so they link to line pages.
+                      They were inert pills, which on an interchange station
+                      made the most useful fact on the page a dead end.
+                    */}
+                    {interchangeLines.map(({ code, line: otherLine }) => (
+                      <LineBadge
+                        className="badge-mini"
+                        code={code}
+                        key={code}
+                        title={`Interchange with the ${otherLine.name} Line`}
+                      />
+                    ))}
                   </span>
                 ) : (
                   'None'
@@ -420,7 +455,7 @@ export default async function StationPage({ params }: Props) {
                 highlighted: s.code === station.code,
               }))}
             width={640}
-            caption={`${station.code} on the Wenhu Line. Drawn from MOTC route geometry.`}
+            caption={`${station.code} on the ${line.name} Line. Drawn from MOTC route geometry.`}
           />
         )}
 

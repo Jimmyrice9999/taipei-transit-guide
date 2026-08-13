@@ -1,6 +1,6 @@
 {
-  "exports": 219,
-  "cssClasses": 304,
+  "exports": 220,
+  "cssClasses": 306,
   "imageSidecars": 70,
   "unusedExports": [
     {
@@ -121,7 +121,7 @@
     {
       "name": "OperatorRef",
       "file": "lib/operators.ts",
-      "line": 51
+      "line": 76
     },
     {
       "name": "SITE_ORIGIN",
@@ -176,7 +176,7 @@
     {
       "name": "ServicePattern",
       "file": "lib/timetable.ts",
-      "line": 82
+      "line": 98
     },
     {
       "name": "SPLIT_ROUTE",

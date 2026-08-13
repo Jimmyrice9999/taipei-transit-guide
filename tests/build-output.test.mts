@@ -16,7 +16,7 @@ import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 
 import { getAllPages } from '../lib/content.ts'
-import { getLineStations, STATIONS } from '../lib/stations.ts'
+import { getLineStations, LINES_WITH_STATION_PAGES, STATIONS } from '../lib/stations.ts'
 import { LINES } from '../lib/lines.ts'
 
 const OUT = path.join(process.cwd(), 'out')
@@ -64,8 +64,9 @@ test('every content page exported an index.html', () => {
   assert.deepEqual(missing, [])
 })
 
-test('every Wenhu station exported a page', () => {
-  const missing = getLineStations('BR')
+test('every station on every line with station pages exported a page', () => {
+  const missing = [...LINES_WITH_STATION_PAGES]
+    .flatMap((line) => getLineStations(line))
     .map((s) => `rail/stations/${s.code.toLowerCase()}/index.html`)
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
@@ -93,7 +94,10 @@ test('the expected number of pages was generated', () => {
    * catch.
    */
   const content = getAllPages().length
-  const stations = getLineStations('BR').length
+  const stations = [...LINES_WITH_STATION_PAGES].reduce(
+    (sum, line) => sum + getLineStations(line).length,
+    0,
+  )
   const sections = 6 // /rail, /bus, /bike, /gondola, /ferry, /ticketing
   // rail: lines, rolling-stock, depots, history, systems, operators
   // bus: network, operators, routes, models, garages

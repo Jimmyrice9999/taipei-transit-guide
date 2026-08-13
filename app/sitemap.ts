@@ -14,7 +14,7 @@
 
 import type { MetadataRoute } from 'next'
 import { getAllPages, getSections, getTypes } from '@/lib/content'
-import { getLineStations, PROVENANCE } from '@/lib/stations'
+import { getLineStations, LINES_WITH_STATION_PAGES, PROVENANCE } from '@/lib/stations'
 import { absoluteUrl } from '@/lib/site'
 
 export const dynamic = 'force-static'
@@ -139,13 +139,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   }
 
-  for (const station of getLineStations('BR')) {
-    entries.push({
-      url: absoluteUrl(`/rail/stations/${station.code.toLowerCase()}/`),
-      lastModified: now,
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    })
+  for (const line of LINES_WITH_STATION_PAGES) {
+    for (const station of getLineStations(line)) {
+      entries.push({
+        url: absoluteUrl(`/rail/stations/${station.code.toLowerCase()}/`),
+        lastModified: now,
+        changeFrequency: 'yearly',
+        priority: 0.5,
+      })
+    }
   }
 
   return entries

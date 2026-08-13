@@ -366,7 +366,15 @@ const ok = (label) => checks.push(label)
     }
 
     // Interchange claims must match the registry exactly, both ways.
-    const shown = [...html.matchAll(/title="Interchange with the ([^"]+) Line"/g)].map((m) => m[1])
+    // Run 21: the same interchange badge now renders twice on a station page
+    // — once in the head banner, once in the facts panel, so a reader does
+    // not have to scroll past the hero to find the page's most useful fact.
+    // Dedupe to the distinct lines named, which is what this check actually
+    // means to verify; two honest badges for the same line are not a
+    // fabricated interchange.
+    const shown = [
+      ...new Set([...html.matchAll(/title="Interchange with the ([^"]+) Line"/g)].map((m) => m[1])),
+    ]
     if (shown.length !== station.interchange.length) {
       fail(
         station.code,

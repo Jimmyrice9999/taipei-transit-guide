@@ -55,8 +55,8 @@ export default function StationsIndexPage() {
       <BackLink href="/rail/" label="Rail" />
       <h1 className="page-title">Stations</h1>
       <p className="page-summary">
-        Every station with a page so far. Lines whose stations are not listed here are not
-        yet covered — the coverage grows line by line, not station by station.
+        Every station on every line, grouped by line — photographed where a picture exists,
+        with every interchange linked.
       </p>
 
       {/*

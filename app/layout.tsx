@@ -7,7 +7,8 @@ import Link from 'next/link'
 import { Zilla_Slab, Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteNav from '@/components/SiteNav'
 import { getNavTree } from '@/lib/nav'
-import { PROVENANCE } from '@/lib/stations'
+import { PROVENANCE, STATIONS } from '@/lib/stations'
+import { operatorCodesFor } from '@/lib/operators'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
 import JsonLd from '@/components/JsonLd'
 import { websiteSchema } from '@/lib/structured-data'
@@ -31,6 +32,14 @@ const SOURCE_UPDATED = (() => {
     .sort()
   return dates[0] ?? 'unknown'
 })()
+
+/**
+ * Every operator actually behind a station page, not just whichever one
+ * `npm run stations` happened to fetch first. See `operatorCodesFor`.
+ */
+const FOOTER_OPERATORS = new Intl.ListFormat('en', { style: 'long', type: 'conjunction' }).format(
+  operatorCodesFor(STATIONS.map((s) => s.operator)),
+)
 
 /*
  * The wordmark is a static file, not inline SVG. Drawn inline it put 700
@@ -288,8 +297,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <a href={PROVENANCE.sourceUrl} rel="noreferrer">
                     TDX Transport Data eXchange
                   </a>
-                  , Ministry of Transportation and Communications, operator{' '}
-                  {PROVENANCE.operator}. Government open data.
+                  , Ministry of Transportation and Communications, operators{' '}
+                  {FOOTER_OPERATORS}. Government open data.
                   {PROVENANCE.fetchedAt && (
                     <> Retrieved {PROVENANCE.fetchedAt.slice(0, 10)};</>
                   )}{' '}

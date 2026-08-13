@@ -2470,8 +2470,19 @@ a.spine-station:focus-visible .spine-name {
   color: var(--text-3);
 }
 
+/*
+ * Run 21: this was `--rule-strong` — a border colour, ~1.6:1 on white — and
+ * every use of `.absent` before now happened to land on a page/row that
+ * always had a real value, so axe never actually rendered it. Ankeng and
+ * Danhai's light-rail stations are the first ones without a street address,
+ * which finally exercised "Not published" and failed color-contrast at
+ * serious severity on 20 pages. `--text-3` is the same muted grey the rest
+ * of the site already uses for de-emphasised text, and it is the one this
+ * project fixed and started build-checking for exactly this reason (see the
+ * neutral-contrast fix, run 2).
+ */
 .absent {
-  color: var(--rule-strong);
+  color: var(--text-3);
 }
 
 .badge-absent {
@@ -2906,6 +2917,28 @@ a.spine-station:focus-visible .spine-name {
   color: var(--text-2);
 }
 
+/*
+ * Run 21: interchange used to be stated only in the facts panel, well below
+ * the fold on a page with a hero photo. An interchange station's single most
+ * useful fact should not need scrolling past the picture to find. Real
+ * badges, not a colour swatch — colour is never the only carrier here either.
+ */
+.station-interchange {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+
+.station-interchange-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
 /* The one-line orientation under the name: where on the line, which district,
    what it is built on. All three are already facts on the page; here they are
    the sentence that stops the title standing alone. */
@@ -3014,12 +3047,18 @@ a.spine-station:focus-visible .spine-name {
   line-height: 1.45;
 }
 
+/*
+ * Run 21: reported as "not recognisable as navigation" — and it wasn't. The
+ * grid drew a hairline-bordered two-cell box, same visual family as the
+ * facts panel and the first/last-trains table right above it, so it read as
+ * one more data readout rather than a control. `.back-link` already solved
+ * this exact problem ("did not look pressable") with a border, a background
+ * and the site's link colour instead of prose grey — same fix here.
+ */
 .adjacent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--rule);
-  border: 1px solid var(--rule);
+  gap: 10px;
   margin: 34px 0 0;
 }
 
@@ -3028,13 +3067,16 @@ a.spine-station:focus-visible .spine-name {
   flex-direction: column;
   gap: 5px;
   padding: 13px 15px;
-  background: var(--bg);
+  background: var(--bg-well);
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
   text-decoration: none;
   color: var(--text);
 }
 
 a.adjacent-link:hover {
-  background: var(--bg-well);
+  border-color: var(--link);
+  background: var(--bg);
 }
 
 .adjacent-link.next {
@@ -3043,15 +3085,23 @@ a.adjacent-link:hover {
 }
 
 .adjacent-link.is-end {
+  background: transparent;
+  border-style: dashed;
   color: var(--text-3);
 }
 
 .adjacent-dir {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 10.5px;
+  font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: var(--link);
+}
+
+.adjacent-link.is-end .adjacent-dir {
   color: var(--text-3);
+  font-weight: 400;
 }
 
 .adjacent-station {

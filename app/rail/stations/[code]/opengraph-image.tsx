@@ -4,7 +4,7 @@ import { ImageResponse } from 'next/og'
 import { OG_CONTENT_TYPE, OG_SIZE, OgStationCard, ogFonts } from '@/lib/og'
 import { getAccent } from '@/lib/lines'
 import { formatDistrict } from '@/lib/districts'
-import { getLineStations, getStation } from '@/lib/stations'
+import { getLineStations, getStation, LINES_WITH_STATION_PAGES } from '@/lib/stations'
 
 // A static export has to be told these routes are build-time only; without it
 // the export step refuses to emit them at all.
@@ -15,7 +15,9 @@ export const contentType = OG_CONTENT_TYPE
 export const alt = 'Taipei Transit Guide'
 
 export function generateStaticParams() {
-  return getLineStations('BR').map((station) => ({ code: station.code.toLowerCase() }))
+  return [...LINES_WITH_STATION_PAGES].flatMap((line) =>
+    getLineStations(line).map((station) => ({ code: station.code.toLowerCase() })),
+  )
 }
 
 export default async function Image({ params }: { params: Promise<{ code: string }> }) {

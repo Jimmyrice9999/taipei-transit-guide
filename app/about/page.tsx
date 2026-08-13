@@ -170,11 +170,14 @@ export default function AboutPage() {
           tracing to a primary source.
         </p>
         <p>
-          Station pages are Wenhu-only so far. All {STATIONS.length} stations across the
-          network are registered, so any station code on the site validates and any of them
-          can be looked up on <Link href="/data/stations/">the station records page</Link> —
-          but only Wenhu's have a page of their own. Linking a code to a page that does not
-          exist would be worse than not linking it.
+          All {STATIONS.length} stations across the network are registered, so any station
+          code on the site validates and any of them can be looked up on{' '}
+          <Link href="/data/stations/">the station records page</Link>, and every one of them
+          now has a page of its own — position, district, coordinates, interchanges, and run
+          times where TDX publishes them. Wenhu's 24 go further: TDX does not publish
+          structure, street exits or engineering numbers, so those come from a hand-built
+          overlay, plus a photograph for every station. A station on another line is a plain
+          TDX read until someone researches it the way Wenhu was researched.
         </p>
 
         <h2 className="section-heading">Corrections</h2>

@@ -38,6 +38,31 @@ const CODE_TO_NAME: Record<string, string> = {
   TYMC: 'Taoyuan Metro Corporation',
 }
 
+/**
+ * Distinct real companies behind a list of TDX operator codes, collapsing
+ * NTDLRT/NTALRT into NTMC the same way `getOperator` does.
+ *
+ * Run 21: the site-wide footer used to name a single hardcoded operator
+ * (whichever `npm run stations` last fetched — TRTC, back when Wenhu was the
+ * only line with station pages). Once station pages cover all 9 catalogued
+ * lines, "operator TRTC" is false on every page backed by the other four
+ * TDX operator codes. This is what the footer should have been asking for
+ * from the start.
+ */
+export function operatorCodesFor(codes: string[]): string[] {
+  const seen = new Set<string>()
+  const out: string[] = []
+  for (const code of codes) {
+    const key = code.toUpperCase()
+    const canonical = key === 'NTDLRT' || key === 'NTALRT' ? 'NTMC' : key
+    if (!seen.has(canonical)) {
+      seen.add(canonical)
+      out.push(canonical)
+    }
+  }
+  return out
+}
+
 let bySlug: Map<string, { title: string; href: string }> | null = null
 function operatorPages() {
   if (!bySlug) {
