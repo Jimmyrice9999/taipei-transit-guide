@@ -735,14 +735,38 @@ export function rehypeAutoLink({
 
   // Longest first, so the most specific name wins the overlap.
   const sorted = [...entities].sort((a, b) => b.name.length - a.name.length)
-  const ascii = sorted.filter((e) => !/[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
-  const han = sorted.filter((e) => /[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
+
+  /*
+   * A name that resolves to more than one distinct page cannot be
+   * auto-linked at all: which page would a bare mention mean? Station names
+   * are not unique across the network ("Daan" is BR09 on Wenhu and R05 on
+   * Tamsui-Xinyi; scripts/links-audit.mjs's report already excludes 38 such
+   * names for exactly this reason). This used to resolve the collision by
+   * accident instead of on purpose, two different ways: the ASCII path built
+   * `byName` as `new Map(sorted.map(...))`, so whichever entity happened to
+   * land last in iteration order silently overwrote the other, and the Han
+   * path (below) scans its own array in order and matches whichever entity
+   * comes first. Both are fixed the same way: remove every ambiguous name
+   * before either path ever sees it, so the auto-linker makes the same
+   * choice the audit already makes: link what is unambiguous, link nothing
+   * where it is not.
+   */
+  const hrefsByName = new Map<string, Set<string>>()
+  for (const e of sorted) {
+    const hrefs = hrefsByName.get(e.name) ?? new Set<string>()
+    hrefs.add(e.href)
+    hrefsByName.set(e.name, hrefs)
+  }
+  const unambiguous = sorted.filter((e) => hrefsByName.get(e.name)!.size === 1)
+
+  const ascii = unambiguous.filter((e) => !/[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
+  const han = unambiguous.filter((e) => /[\u2e80-\u9fff\uf900-\ufaff]/.test(e.name))
 
   const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
   const asciiPattern = ascii.length
     ? new RegExp(`(?<![\\w–-])(${ascii.map((e) => escape(e.name)).join('|')})(?![\\w–-])`)
     : null
-  const byName = new Map(sorted.map((e) => [e.name, e]))
+  const byName = new Map(ascii.map((e) => [e.name, e]))
 
   const anchor = (entity: LinkEntity, text: string): Node => ({
     type: 'element',

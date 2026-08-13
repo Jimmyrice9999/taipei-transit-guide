@@ -6425,3 +6425,221 @@ Did not touch `scripts/adversarial.mjs` itself — the brief's rule against
 editing the test to make it pass, applied. The blunt whole-output `⚠`
 check is arguably worth scoping to each fixture's own file in a later
 run, but that is a change to the test's design, not this part's job.
+
+## 120. Part 1 — audit before touching station pages
+
+Checked all three claims in the brief against the repo before changing
+anything, per the instruction that the last four runs each found the
+brief's premise wrong.
+
+**Interchange visibility.** True for the station detail page (stated only
+in the facts panel, `app/rail/stations/[code]/page.tsx`'s
+`platform-facts` block) — false for the `/rail/stations` index, which
+Run 20 already fixed (§111): its `PhotoCard` meta row already renders a
+real, linked `LineBadge` per interchanging line. Confirmed by screenshot
+rather than taking the brief's word for either half.
+
+**Adjacent-station nav.** Already semantic HTML — a real `<nav
+aria-label="Adjacent stations">` with `‹ Previous` / `Next ›` labels, a
+station badge, a run time, and a graceful terminus case (a `<span>`
+reading "Terminus / Start of the line", not a dead link). Screenshotting
+it (`station-br10-1440.png`, pre-change) showed why it was reported
+anyway: hairline border, no background, `--text-3` grey labels — the
+exact same visual family as the facts panel and the first/last-trains
+table above it, so it read as another data readout, not a control.
+
+**"Only Wenhu has station pages."** True, but not for a data reason.
+`lib/stations.ts`'s `CATALOGUED_LINES` already held all 9 lines — 180
+stations, full TDX records including coordinates, sequence, interchange
+and (for TRTC/NTMC/TYMC) run times — built by `scripts/generate-stations.mts`,
+which is already line-agnostic. The only gate was
+`LINES_WITH_STATION_PAGES = new Set(['BR'])` in the same file, plus a
+hardcoded `LINE = 'BR'` in the page component. Generating the other 8
+lines was a templating decision, not a data-fetching one.
+
+## 121. What got built
+
+**Interchange, on the page itself.** A real `LineBadge` row now sits
+under the title and Chinese name — `station-interchange` /
+`station-interchange-label` in `app/globals.css` — computed once
+(`interchangeLines` in the page component) and shared with the facts
+panel below it, so the same interchange is stated twice on an
+interchange station's own page and once, already, on the index card.
+
+**Adjacent nav, redesigned.** `.back-link` (`app/globals.css`) had
+already solved this exact complaint once — "did not look pressable" —
+with a border, a background and the site's link colour instead of prose
+grey. Applied the same fix to `.adjacent-link`: a visible border,
+`--bg-well` background, and the direction label (`PREVIOUS` / `NEXT`)
+recoloured from `--text-3` to `--link`. The terminus case goes the other
+way — dashed border, `--text-3`, `font-weight: 400` — so the contrast
+between "click this" and "dead end" is now the point, not an accident of
+both looking equally grey.
+
+**Station pages, all 9 catalogued lines.** `LINES_WITH_STATION_PAGES`
+is now `CATALOGUED_LINES` instead of a one-line set. 180 station pages,
+up from 24. Wenhu stays the depth standard — hand-researched structure,
+street exits, engineering numbers and a photograph per station, from
+`lib/station-overlay.ts` — and every one of those fields was already
+conditionally rendered, so a line without that overlay just renders
+fewer rows. No page states that it is thinner than Wenhu's; the brief's
+hard rule against a scope-statement sentence held by construction, not
+by review.
+
+## 122. What the widening broke, and what that found
+
+Extending one route to cover 8 more lines surfaced five bugs the Wenhu-only
+version could never have hit, because Wenhu was TRTC's only case of
+everything:
+
+1. **Two more hardcoded `LINE = 'BR'` spots** the page component's own
+   fix didn't reach: `app/rail/stations/[code]/opengraph-image.tsx`
+   (share images) and `app/sitemap.ts` (sitemap.xml). Both silently
+   generated only Wenhu's 24 despite the page route now serving 180 —
+   caught by `tests/discoverability.test.mts`'s og:image check and by
+   eye, not by design.
+2. **The CJK font subset didn't hold the other 8 lines' station names.**
+   `npm run build` refused outright — the font-subset gate this project
+   built specifically to catch this (run 2, §19.3) did its job on the
+   first real test since it was written. `npm run fonts` regenerated the
+   subset; no code change needed.
+3. **The site footer claimed "operator TRTC" on every page.** Sourced
+   from `PROVENANCE.operator`, a single field `npm run stations` writes
+   from whichever operator it fetched — accurate by coincidence when
+   Wenhu (TRTC) was the only line with pages, false on all 180 once
+   NTMC's and TYMC's stations got pages too. `lib/operators.ts` gained
+   `operatorCodesFor()`, deriving the real distinct companies (TRTC,
+   NTMC, TYMC — NTDLRT/NTALRT collapse into NTMC, the same collapse
+   `getOperator` already does) from the station registry instead of one
+   stale fetch-metadata field. Footer now reads "operators TRTC, NTMC,
+   and TYMC."
+4. **`.absent` — the "Not published" / "—" placeholder — was
+   `--rule-strong`, a border colour, ~1.6:1 on white.** Every existing
+   use of the class happened to sit on a field that always had a real
+   value, so axe-core never actually rendered it in 20 runs of browser
+   verification. Ankeng and Danhai's light-rail stations are the first
+   ones this site has ever rendered without a street address, and that
+   is what finally exercised it: 20 pages failed `color-contrast` at
+   **serious** severity on the first `verify:browser` run after
+   widening. Fixed to `--text-3`, the muted grey this project already
+   fixed and build-checks against both backgrounds (run 2, §12).
+   Re-ran: zero violations.
+5. **NTMC's and TYMC's run-time and first/last-train data was sitting
+   unread.** `lib/timetable.ts` imported only `data/tdx/TRTC/`'s two
+   files, from when Wenhu was the only line that could use them. The
+   identical pair of files already exists, already committed, at
+   `data/tdx/NTMC/` and `data/tdx/TYMC/` — wired in, so Circular and
+   Airport MRT station pages now show run times between adjacent
+   stations and first/last trains too. `NTDLRT` and `NTALRT` (the two
+   light-rail operators) do not publish either dataset — their station
+   pages render without that section, which is a real limit of what TDX
+   publishes for light rail, not a gap in this build.
+
+Also updated: `/rail/stations`' summary and `/about`'s station-coverage
+paragraph both stated "Wenhu-only... not yet covered," which stopped
+being true this run. Rewritten to describe the actual two-tier model
+(every line gets a plain TDX read; Wenhu additionally gets the overlay
+and photographs) rather than a scope statement about what is missing.
+
+`tests/build-output.test.mts`'s page-count and per-line-page-export
+checks were themselves `getLineStations('BR')`-only, so they had to be
+widened to `LINES_WITH_STATION_PAGES` before they would pass — the same
+class of "only ever tested the one line" gap as the four bugs above.
+
+## 123. Verification
+
+`npm run verify`: clean. `npm run adversarial`: 16/16. `npm run
+verify:browser`: **zero axe violations across 271 pages** (91 content +
+180 station), after the `.absent` fix — the run immediately before it
+had 20.
+
+Screenshots looked at: `station-br10-1440.png` (interchange banner +
+redesigned nav, BL interchange), `r21-y07-with-timetable-1440.png` (a
+thin Circular Line page, now with run times and first/last trains after
+§122.5), `r21-br01-terminus-1440.png` and `r21-br24-terminus-*` (the
+dead-end nav case, both widths).
+
+**Not chased:** a station label clipping at the right edge of the strip
+map, first seen on Y07's page — pre-existing `RouteMap` behaviour
+(labels always draw to the right of the dot, never flip near an edge)
+that Wenhu's particular geometry never happened to expose. Left for
+Part 4's sweep, which screenshots every line's stations at five widths
+and is where a systematic answer belongs.
+
+## 124. Part 2 — the link-audit flaw, and the auto-linker bug it was hiding
+
+`scripts/links-audit.mjs` already documented its own flaw in a comment
+(§78.4, run 10): station names are not unique across the network —
+"Daan" is BR09 on Wenhu and R05 on Tamsui-Xinyi — and when only Wenhu
+had station pages, the registry held exactly one "Daan" that any mention
+anywhere would have resolved to. The audit *report* was already fixed:
+it computes an `ambiguous` set from the full station registry and
+excludes those names from what it flags as missing. **The comment
+was explicit that the fix was incomplete**: "The same flaw is in the
+auto-linker, which shares this registry... it is the same mistake."
+
+That was still true. `lib/markdown-plugins.ts`'s `rehypeAutoLink` built
+its ASCII lookup as `new Map(sorted.map((e) => [e.name, e]))` — when two
+entities share a `name`, a `Map` constructed this way keeps whichever one
+was inserted *last*, silently. Its Han-name path is a second, different
+accident with the same root cause: it scans an array with `.indexOf` and
+takes whichever entity comes *first*. Neither was a deliberate choice
+between BR09 and R05; both were an artefact of array order that nobody
+had reasoned about. This bug was **latent, not live**, while only Wenhu
+had station pages — Wenhu's 24 names never collided with each other, so
+`byName` never actually held two different hrefs under one key. Part 1
+directly activated it: 8 more lines now share names with Wenhu and with
+each other.
+
+**Fix:** build a `name → set of hrefs seen` map first; any name with more
+than one distinct href is removed from both the ASCII and Han candidate
+lists before either matching path runs. This is the same rule the audit
+report already applies, now applied where content actually gets linked
+rather than only where it gets reported on.
+
+**Confirmed with a real, concrete case.** Wenhu's own line page
+(`content/rail/lines/wenhu-line.md`) says "BR09 Daan has six [exits]."
+Before this fix, `getLinkEntities()`'s array order (BR before R, per
+`scripts/generate-stations.mts`'s `LINE_SOURCES`) meant R05's "Daan"
+entity landed *after* BR09's in the sorted array, so the old
+`new Map(...)` construction meant **R05 silently won** — a mention of
+Daan on the Wenhu Line's own page would have linked to the Tamsui-Xinyi
+Line's Daan, not Wenhu's own BR09. Checked the built HTML after the fix:
+`Daan` after the `BR09` badge now renders as plain, unlinked text — not
+mislinked, because there is no correct single answer to link it to.
+Confirmed this is a deliberate exclusion, not a regression: 38 ambiguous
+names, unchanged from before the fix.
+
+## 125. Re-ran the audit: what's still unlinked site-wide
+
+`npm run links`: **247 pages, 175 linkable destinations, 179 unlinked
+mention(s)** (up from 91 pages / 54 destinations / 4 before Part 1 —
+expected, given 180 new station pages are 180 new possible destinations
+for every other page on the site to name and not link).
+
+Looked at the actual composition rather than reporting the raw count.
+Two different things are mixed together in it:
+
+- **Citation titles**, correctly unlinked by design — `/data/sources/`
+  citing a station name in a source's own title must not be rewritten
+  into a link, the same rule that kept 3 of the original 4 unlinked
+  before Part 1.
+- **A large new category this scale exposed**: a station's bare name is
+  frequently a *substring* of an unrelated compound name that the audit's
+  word-boundary matcher cannot tell apart from the station itself.
+  Checked `/rail/network/`'s 30 "unlinked" mentions of Y12's name
+  ("Zhonghe") directly in the built HTML: every one of them is the
+  substring inside **"Zhonghe-Xinlu Line"** — the O line's full name,
+  not a mention of the Circular Line's Zhonghe station at all. The same
+  pattern explains most of the largest counts: Nangang (station) inside
+  "Nangang Depot," Tamsui (station) inside "Tamsui-Xinyi Line," Xindian
+  and Songshan (stations) inside "Songshan-Xindian Line." This is a
+  different, real limitation of `links-audit.mjs` — not the collision
+  bug this part fixed, and not in scope of what the brief named — but
+  worth recording precisely rather than folding it into the same count
+  as if it were one thing. A future fix would need the audit to exclude
+  a candidate match that sits immediately before a hyphen followed by
+  more word characters, the same shape as the numbering-suffix guard
+  `lib/text-tokens.ts` already has for station codes.
+
+Full list: `docs/links-audit.json`.
