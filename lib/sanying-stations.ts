@@ -11,32 +11,9 @@
 
 import type { Source } from './sources.ts'
 import type { Structure } from './station-overlay.ts'
+import type { StationInterchange, StationResearch } from './station-research.ts'
 
-type SanyingInterchange = {
-  label: string
-  lineCode?: string
-}
-
-export type SanyingResearch = {
-  sources: Source[]
-  identitySource: string
-  mapSource: string
-  coordinateSource?: string
-  structureSource: string
-  openingSource: string
-  scheduleSources: string[]
-  interchange?: SanyingInterchange
-  additionalName?: string
-  additionalNameSource?: string
-  formerName?: {
-    name: string
-    nameZh: string
-    announced: string
-    renamed: string
-    source: string
-  }
-  facilities: string
-}
+export type SanyingResearch = StationResearch
 
 type SanyingStation = {
   code: string
@@ -223,7 +200,7 @@ type Row = {
   address: string
   exits: number
   mapUrl: string
-  interchange?: SanyingInterchange
+  interchange?: StationInterchange
   additionalName?: string
   additionalNameSource?: 'route' | 'gazette'
   formerName?: SanyingResearch['formerName']
@@ -286,6 +263,12 @@ export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
       additionalNameSource: row.additionalNameSource === 'route' ? dortsRoute.id : row.additionalNameSource === 'gazette' ? namingGazette.id : undefined,
       formerName: row.formerName,
       facilities: 'Step-free access; accessible toilet; information point; AED; water dispenser',
+      openingDate: '30 June 2026',
+      trialFare: 'Stored-value cards ride free from 30 June to 31 August 2026; riders without one need a single-journey ticket.',
+      trialHours: '08:00–22:00 from 1 August; 06:00–24:00 announced for 16–31 August.',
+      normalFare: 'NT$20–35; the operator has not announced the charging start date.',
+      provenance: 'Station order is the operator’s published LB01–LB12 sequence. Coordinates come from the official New Taipei landmark records, converted from their published TWD97 fields to WGS84 for display.',
+      provenanceSource: ntpcLandmarkCoordinates.id,
     },
   }
 })

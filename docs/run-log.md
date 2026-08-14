@@ -6850,3 +6850,47 @@ was contradicted, and no station or factual prose was changed.
 Before the Part 2 commit: `npm run unused` is green (63 sidecars, no
 unreferenced images); `npm run cite`, `npm run verify`, and `npm test` are green
 (185/185 tests). The seven removals are ready to commit and push.
+
+# Run 22 — Part 3, Tamsui–Xinyi Line station depth, 14 August 2026
+
+## Tamsui–Xinyi / R — audit and implementation
+
+Audited before editing. The line has 28 generated station pages (R02–R28 and
+R22A); all already had TDX address, district and coordinates, but none had a
+station research record, structure, exit details or facilities narrative. TDX
+had six usable interchange codes and one self-code at R22. The self-code was
+not a real transfer and is now filtered; the operator’s New Beitou Branch
+relationship is shown separately.
+
+Touched the station renderer and the 28 R records in the hand-maintained
+station overlay. Added a shared `StationResearch` type so generated lines and
+Sanying use the same fields without retaining Sanying-only hardcoded prose.
+Added `docs/research/rail/stations/tamsui-xinyi-line-stations.md` (0 → 1,687
+words). The 28 rendered pages grew from 10,275 total whitespace-delimited words
+(357–378 per page) to 20,321 (672–799), +10,046. The increase is sourced exit
+destinations, accessibility/facility descriptions, platform/depot rows and
+explicit TBCs; no Markdown content page was changed.
+
+Added 43 unique PRIMARY source records: 28 full TRTC station pages, 8 DORTS
+route/engineering/depot pages and 7 DORTS public-art pages. Established the
+mixed underground/elevated/at-grade structure; opening dates for every mainline
+station where the route chronology supports them; exit counts and numbered
+destinations; operator-published lifts, toilets, nursing/baby-changing rooms,
+bicycle access and enquiry points; Beitou as the line’s main depot; seven
+official public-art records; and station-specific Jiantan, Beitou and Tamsui
+engineering notes. R22A’s opening date, most naming histories, most public art,
+paid-area/street transfer mode, station-specific depot rosters and unpublished
+platform/track details remain TBC.
+
+Conflicts: DORTS’s Taipei Main row lists the Taoyuan Airport Line while the
+current TRTC R10 page and TDX list Bannan as the transfer; TDX’s R22 self-code
+was replaced by the operator-published New Beitou Branch relationship; the
+checked primary material does not give a specific R22A opening date, so the
+mainline 28 March 1997 date was not copied onto it. No exit-count conflict was
+found between the full TRTC pages and DORTS material where both publish one.
+
+`npm run cite`, `npm run verify`, `npm test`, and `npm run research` are green;
+the full suite remains 185/185. The first verification build caught missing
+Han glyphs because font generation preceded the fresh build; regenerated fonts
+from the fresh 491-page output (base subset 380 → 492 characters; 116.1 KB →
+149.9 KB across weights), then reran all gates successfully.

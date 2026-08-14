@@ -259,7 +259,10 @@ export default async function StationPage({ params }: Props) {
                   />
                 )}
                 <span>{station.research.interchange.label}</span>
-                <CiteMark id={station.research.openingSource} references={stationReferences} />
+                <CiteMark
+                  id={station.research.interchange.source ?? station.research.openingSource}
+                  references={stationReferences}
+                />
               </span>
             </p>
           )}
@@ -338,7 +341,10 @@ export default async function StationPage({ params }: Props) {
                       />
                     )}{' '}
                     {station.research.interchange.label}
-                    <CiteMark id={station.research.openingSource} references={stationReferences} />
+                    <CiteMark
+                      id={station.research.interchange.source ?? station.research.openingSource}
+                      references={stationReferences}
+                    />
                   </>
                 ) : interchangeLines.length ? (
                   <span className="interchange-codes">
@@ -411,8 +417,98 @@ export default async function StationPage({ params }: Props) {
               <div className="platform-fact">
                 <dt>Facilities</dt>
                 <dd>
-                  {station.research.facilities}
-                  <CiteMark id={station.research.mapSource} references={stationReferences} />
+                  <RichText>{station.research.facilities}</RichText>
+                  <CiteMark
+                    id={station.research.facilitiesSource ?? station.research.mapSource}
+                    references={stationReferences}
+                  />
+                </dd>
+              </div>
+            )}
+            {station.research?.exitDetails && (
+              <div className="platform-fact">
+                <dt>Exit locations</dt>
+                <dd>
+                  <RichText>{station.research.exitDetails}</RichText>
+                  <CiteMark
+                    id={station.research.exitSource ?? station.research.mapSource}
+                    references={stationReferences}
+                  />
+                </dd>
+              </div>
+            )}
+            {station.research?.platformDetails && (
+              <div className="platform-fact">
+                <dt>Platforms and tracks</dt>
+                <dd>
+                  <RichText>{station.research.platformDetails}</RichText>
+                  {station.research.platformSource && (
+                    <CiteMark id={station.research.platformSource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research?.branch && (
+              <div className="platform-fact">
+                <dt>Branch relationship</dt>
+                <dd>
+                  <RichText>{station.research.branch.label}</RichText>
+                  <CiteMark id={station.research.branch.source} references={stationReferences} />
+                </dd>
+              </div>
+            )}
+            {station.research?.depot && (
+              <div className="platform-fact">
+                <dt>Depot serving this stretch</dt>
+                <dd>
+                  <RichText>{station.research.depot}</RichText>
+                  {station.research.depotSource && (
+                    <CiteMark id={station.research.depotSource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research?.publicArt && (
+              <div className="platform-fact">
+                <dt>Public art</dt>
+                <dd>
+                  <RichText>{station.research.publicArt}</RichText>
+                  {station.research.publicArtSource && (
+                    <CiteMark id={station.research.publicArtSource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research?.naming && (
+              <div className="platform-fact">
+                <dt>Station naming</dt>
+                <dd>
+                  <RichText>{station.research.naming}</RichText>
+                  {station.research.namingSource && (
+                    <CiteMark id={station.research.namingSource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research?.engineeringHistory && (
+              <div className="platform-fact">
+                <dt>Engineering history</dt>
+                <dd>
+                  <RichText>{station.research.engineeringHistory}</RichText>
+                  {station.research.engineeringHistorySource && (
+                    <CiteMark id={station.research.engineeringHistorySource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research?.landmarks && (
+              <div className="platform-fact">
+                <dt>Adjacent landmarks</dt>
+                <dd>
+                  <RichText>{station.research.landmarks}</RichText>
+                  {station.research.landmarksSource && (
+                    <CiteMark id={station.research.landmarksSource} references={stationReferences} />
+                  )}
                 </dd>
               </div>
             )}
@@ -453,7 +549,7 @@ export default async function StationPage({ params }: Props) {
             <div className="platform-fact">
               <dt>Opened</dt>
               <dd>
-                {station.research ? '30 June 2026' : 'TBC'}
+                {station.research?.openingDate ?? 'TBC'}
                 {station.research && (
                   <CiteMark id={station.research.openingSource} references={stationReferences} />
                 )}
@@ -472,37 +568,40 @@ export default async function StationPage({ params }: Props) {
                   station.operator
                 )}
                 {station.research && (
-                  <CiteMark id={station.research.openingSource} references={stationReferences} />
+                  <CiteMark id={station.research.identitySource} references={stationReferences} />
                 )}
               </dd>
             </div>
-            {station.research && (
+            {station.research?.trialFare && (
               <>
                 <div className="platform-fact">
                   <dt>Trial fare</dt>
                   <dd>
-                    Stored-value cards ride free from 30 June to 31 August 2026;
-                    riders without one need a single-journey ticket.
+                    {station.research.trialFare}
                     <CiteMark id={station.research.openingSource} references={stationReferences} />
                   </dd>
                 </div>
+              </>
+            )}
+            {station.research?.trialHours && (
                 <div className="platform-fact">
                   <dt>Trial hours</dt>
                   <dd>
-                    08:00–22:00 from 1 August; 06:00–24:00 announced for 16–31 August.
+                    {station.research.trialHours}
                     {station.research.scheduleSources.map((source) => (
                       <CiteMark key={source} id={source} references={stationReferences} />
                     ))}
                   </dd>
                 </div>
+            )}
+            {station.research?.normalFare && (
                 <div className="platform-fact">
                   <dt>Normal fare</dt>
                   <dd>
-                    NT$20–35; the operator has not announced the charging start date.
+                    {station.research.normalFare}
                     <CiteMark id={station.research.openingSource} references={stationReferences} />
                   </dd>
                 </div>
-              </>
             )}
             {/*
               Depots on this line, not "the depot serving this station".
@@ -515,7 +614,7 @@ export default async function StationPage({ params }: Props) {
               honest row is the one that can be sourced: these depots are on
               this line. Where each sits is on the strip map already.
             */}
-            {depots.length > 0 && (
+            {!station.research?.depot && depots.length > 0 && (
               <div className="platform-fact">
                 <dt>Depots on this line</dt>
                 <dd>
@@ -666,14 +765,11 @@ export default async function StationPage({ params }: Props) {
           </>
         )}
 
-        {station.research && (
+        {station.research?.provenance && (
           <p className="provenance-note wide">
-            Station order is the operator’s published LB01–LB12 sequence.
-            <CiteMark id={station.research.identitySource} references={stationReferences} /> Coordinates{' '}
-            {station.research.coordinateSource ? (
-              <>come from the official New Taipei landmark records, converted from their published TWD97 fields to WGS84 for display.<CiteMark id={station.research.coordinateSource} references={stationReferences} /></>
-            ) : (
-              <>remain TBC because no primary tabular coordinate publication was found in this search.</>
+            {station.research.provenance}
+            {station.research.provenanceSource && (
+              <CiteMark id={station.research.provenanceSource} references={stationReferences} />
             )}
           </p>
         )}

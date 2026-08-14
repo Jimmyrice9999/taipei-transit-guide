@@ -20,7 +20,8 @@
 
 import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
 import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
-import { SANYING_STATIONS, type SanyingResearch } from './sanying-stations.ts'
+import { SANYING_STATIONS } from './sanying-stations.ts'
+import type { StationResearch } from './station-research.ts'
 import type { Source } from './sources.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
@@ -69,7 +70,7 @@ export type Station = {
   /** Whether the record came from TDX or a documented primary-source research pass. */
   recordSource: 'tdx' | 'primary-research'
   /** Page-level evidence for a hand-researched station; null for TDX records. */
-  research: SanyingResearch | null
+  research: StationResearch | null
 }
 
 export const STATIONS: Station[] = [
@@ -77,6 +78,7 @@ export const STATIONS: Station[] = [
     const overlay = STATION_OVERLAY[station.code]
     return {
       ...station,
+      interchange: station.interchange.filter((code) => code !== station.line),
       structure: (overlay?.structure ?? 'unknown') as Structure,
       engineering: overlay?.engineering ?? '',
       exits: overlay?.exits ?? null,
@@ -85,7 +87,7 @@ export const STATIONS: Station[] = [
       sources: overlay?.sources ?? [],
       planned: overlay?.planned ?? [],
       recordSource: 'tdx' as const,
-      research: null,
+      research: overlay?.research ?? null,
     }
   }),
   ...SANYING_STATIONS,

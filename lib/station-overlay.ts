@@ -16,6 +16,8 @@
  */
 
 import type { Source } from './sources.ts'
+import type { StationResearch } from './station-research.ts'
+import { TAMSUI_XINYI_OVERLAY } from './tamsui-xinyi-stations.ts'
 
 export type Structure = 'elevated' | 'at-grade' | 'underground' | 'unknown'
 
@@ -37,6 +39,8 @@ export type StationOverlay = {
   locationSource?: string
   /** Sources used by the generated station page. */
   sources?: Source[]
+  /** Hand-researched station record, where the generated data is too thin. */
+  research?: StationResearch
   /**
    * Lines that will serve this station but do not yet, keyed by the future
    * line's own name rather than a station code — the code does not exist.
@@ -127,6 +131,7 @@ function stationLocation(location: string, source: Source): StationOverlay {
  * ─────────────────────────────────────────────────────────────────────────────
  */
 export const STATION_OVERLAY: Record<string, StationOverlay> = {
+  ...TAMSUI_XINYI_OVERLAY,
   BR01: {
     structure: 'elevated',
     engineering: 'BR13',
