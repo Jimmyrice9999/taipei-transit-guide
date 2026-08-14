@@ -32,14 +32,12 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import matter from 'gray-matter'
+import { CITE_DEFINITION_PATTERN } from '../lib/citation-definition.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const CONTENT = path.join(ROOT, 'content')
 
-/** Kept in step with lib/sources.ts. Duplicated because this is a plain .mjs
- *  script and importing a .ts module here would mean a build step to lint. */
 const MARKER = /\[\^([a-z0-9][a-z0-9-]*)\]/g
-const DEFINITION = /^\s{0,3}\[\^([a-z0-9][a-z0-9-]*)\]:/
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/
 const KINDS = new Set(['primary', 'secondary'])
 
@@ -194,7 +192,7 @@ export function auditCitations() {
     // A GFM footnote definition anywhere in the body hijacks every marker in
     // the file, so it is rejected before the markers are even read.
     body.split('\n').forEach((line, index) => {
-      const definition = DEFINITION.exec(line)
+      const definition = CITE_DEFINITION_PATTERN.exec(line)
       if (definition) {
         errors.push(
           `${relative}:${bodyOffset + index + 1}: "[^${definition[1]}]:" is a GFM footnote ` +

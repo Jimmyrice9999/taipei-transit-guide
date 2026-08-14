@@ -26,6 +26,10 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import { CITE_DEFINITION_PATTERN } from './citation-definition.mjs'
+
+export { CITE_DEFINITION_PATTERN }
+
 /** Whether the source is the body that created the fact, or reports on it. */
 export type SourceKind = 'primary' | 'secondary'
 
@@ -86,9 +90,6 @@ export const SOURCE_KINDS: SourceKind[] = ['primary', 'secondary']
  * disappears — so `npm run cite` rejects definition lines outright.
  */
 export const CITE_MARKER_PATTERN = /\[\^([a-z0-9][a-z0-9-]*)\]/g
-
-/** A GFM footnote definition, which would silently take over our markers. */
-export const CITE_DEFINITION_PATTERN = /^\s{0,3}\[\^([a-z0-9][a-z0-9-]*)\]:/m
 
 /** Problems found while validating a page's `sources:` block. */
 export type SourceProblem = { id: string; field: string; message: string }

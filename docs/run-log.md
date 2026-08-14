@@ -7177,7 +7177,7 @@ The fresh 491-page build required the CJK base subset to grow from 735 to 767
 characters. The 400/700 base fonts grew from 230.1 KB total to 238.2 KB total
 (117.8 KB and 120.4 KB respectively); the build reported no missing glyphs.
 npm run research, cite, verify, claims, links, a11y, unused and npm test are
-green; the full suite remains 185/185. The interim link audit is 370 unlinked
+green; the full suite remains 185/185. The interim link audit is 361 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
 
 # Run 22 — Part 3, Ankeng LRT station depth, 14 August 2026
@@ -7223,5 +7223,21 @@ The fresh 491-page build required the CJK base subset to grow from 767 to 782
 characters. The 400/700 base fonts grew from 238.2 KB total to 242.5 KB total
 (119.9 KB and 122.6 KB respectively); the build reported no missing glyphs.
 npm run research, cite, verify, claims, links, a11y, unused and npm test are
-green; the full suite remains 185/185. The interim link audit is 361 unlinked
+green; the full suite remains 185/185. The interim link audit is 370 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
+
+# Run 22 — Part 4, shared citation-definition pattern, 14 August 2026
+
+Audited `lib/sources.ts` and `scripts/citations.mjs`: both validated the same
+GFM footnote-definition expression, but the Node script hand-rolled a second
+copy without the TypeScript export's `m` flag. TypeScript uses bundler
+resolution with `allowJs`, so a shared `lib/citation-definition.mjs` is
+resolvable from both environments.
+
+Moved the expression into that `.mjs` module, re-exported it from
+`lib/sources.ts`, and imported it from `scripts/citations.mjs`. Direct Node
+import, `npx tsc --noEmit`, citation validation, the fresh 491-page build,
+`npm run verify`, and `npm test` all pass. Behaviour changed in no observed
+way: 265 citations still resolve, and the full unit suite remains 185/185.
+The unused-export audit correspondingly reports one fewer unused export.
+AGENTS.md remains the user-owned unstaged change.

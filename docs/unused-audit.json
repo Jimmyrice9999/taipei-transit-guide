@@ -136,22 +136,17 @@
     {
       "name": "SourceKind",
       "file": "lib/sources.ts",
-      "line": 30
+      "line": 34
     },
     {
       "name": "SOURCE_KINDS",
       "file": "lib/sources.ts",
-      "line": 73
-    },
-    {
-      "name": "CITE_DEFINITION_PATTERN",
-      "file": "lib/sources.ts",
-      "line": 91
+      "line": 77
     },
     {
       "name": "SourceProblem",
       "file": "lib/sources.ts",
-      "line": 94
+      "line": 95
     },
     {
       "name": "FormerStationName",
