@@ -7226,6 +7226,52 @@ npm run research, cite, verify, claims, links, a11y, unused and npm test are
 green; the full suite remains 185/185. The interim link audit is 370 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
 
+# Run 22 — Part 7, font-weight decision report, 14 August 2026
+
+No implementation was made. The current `npm run weigh` measurement is a 547.4
+KB first visit for a station page: 342.7 KB fonts, 188.0 KB other assets and
+16.7 KB HTML. The 200 KB target is therefore missed by 347.4 KB; the brief's
+394 KB figure is stale. The shared Han pair is 242.5 KB: 119.9 KB regular and
+122.6 KB bold. Built station pages total 192; current CJK is one cacheable pair
+for all of them, though it is declared in inline CSS rather than explicitly
+preloaded. Latin next/font assets are the preloaded fonts.
+
+Temporary subsets were generated outside the repository from the rendered Han
+of each station page, then not copied into `public/fonts/`. Per-line results:
+
+| line | station pages | Han chars | 400 KB | 700 KB | pair |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| A | 22 | 212 | 34.4 | 35.0 | 69.3 |
+| BL | 23 | 290 | 46.3 | 47.1 | 93.5 |
+| BR | 24 | 91 | 16.4 | 16.6 | 33.0 |
+| G | 20 | 279 | 46.6 | 47.3 | 93.9 |
+| K | 9 | 147 | 23.8 | 24.2 | 48.0 |
+| LB | 12 | 145 | 23.1 | 23.5 | 46.6 |
+| O | 26 | 262 | 43.2 | 44.2 | 87.5 |
+| R | 28 | 285 | 44.2 | 44.9 | 89.1 |
+| V | 14 | 162 | 26.6 | 27.1 | 53.6 |
+| Y | 14 | 154 | 25.6 | 26.0 | 51.6 |
+
+Per-line pairs total 666.1 KB across ten duplicated caches, with a 33.0–93.9
+KB range. Per-page pairs total 4,404.5 KB across 192 cache entries; range 6.0–
+40.8 KB and mean 22.9 KB. Thus an individual station first visit would be
+304.9 KB plus its CJK pair: 337.9–398.8 KB per-line, or 310.9–345.7 KB
+per-page. The trade-off is lower first-page transfer but many more cache keys,
+duplicate glyphs and harder route-specific preload selection. Shared is the
+opposite: one 242.5 KB first hit, then excellent cross-station reuse and a
+simple preload choice.
+
+Dropping self-hosted CJK would remove 242.5 KB from the first visit, giving a
+measured 304.9 KB page before any system-font download (system fonts add zero
+network bytes). It gives up guaranteed Traditional Chinese glyph shapes and
+stable metrics, and offers no CJK preload; fallback varies by platform. Raising
+the target would need a future decision: the actual whole-page target would
+need to move from 200 to at least 550 KB, while a CJK-only budget would need at
+least 250 KB. `docs/framework.md` currently does not state the 200 KB target;
+the threshold is hard-coded in `scripts/weigh.mjs`, so neither target was
+changed. Content remained 63,192 words before and after; no sources, TBCs,
+images or conflicts changed. AGENTS.md remains the user-owned unstaged change.
+
 # Run 22 — Part 6, integrity and rendering verification, 14 August 2026
 
 Pass 1 audited the fresh post-Part-5 tree before reporting it as complete.
