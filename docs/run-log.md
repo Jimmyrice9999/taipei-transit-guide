@@ -7087,3 +7087,48 @@ characters. The 400/700 base fonts grew from 209.9 KB total to 216.8 KB total
 glyphs. npm run research, cite, verify, claims, links, a11y, unused and npm
 test are green; the full suite remains 185/185. The interim link audit is
 322 unlinked mentions for Part 5.
+
+# Run 22 — Part 3, Airport MRT station depth, 14 August 2026
+
+## Airport MRT / A — audit and implementation
+
+Audited before editing. The line has 22 generated station pages (A1–A13,
+A14a, A15–A22); all already had TDX postal address, English and Chinese
+district, and coordinates. TDX had no current interchange code on any A
+record. That was not the whole station-data picture: all 22 full TYMC pages
+publish station exits and service information, and the Railway Bureau and
+DORTS publish the station structures. No image was fetched.
+
+Touched all 22 A station pages through a new hand-maintained Airport MRT
+overlay and added the A station research file. The rendered `<main>` text grew
+from 8,112 total whitespace-delimited words (356–382 per page) to 15,383
+(573–773), +7,271. The research record is 2,611 whitespace-delimited words.
+
+Added 29 unique PRIMARY source records: 22 full TYMC station pages, TDX, the
+New Taipei DORTS route page, Taipei DORTS’s A1 project page, the full Railway
+Bureau architecture PDF, TYMC’s public-art page, the Railway Bureau depot
+page and the MOTC A22 opening announcement. Established structure, platform
+forms and track counts where the primary material publishes them; operator
+exit positions and accessibility facilities; opening dates; A1/A2/A3/A18
+interchange relationships; depot functions; engineering contract groups;
+operator-named landmarks; and nine public-art allocations.
+
+TBC remains for A1 platform form/tracks, A22 structure/platform/tracks, all
+station renames and dated announcements, paid-area/street-transfer
+classification, station-level depot roster allocation, and most public-art
+years/mediums. A8’s operator page says two platform lifts while listing four
+platform destinations; both values are retained. A12’s two RB access points
+are retained beside TYMC’s one numbered exit plus Airport connector.
+
+Conflicts found: A3 is Y19 in TYMC/RB engineering text but Y20 in current TDX;
+A8 has the internal lift-count conflict above; A14 is the unfinished terminal
+station in the RB report while A14a is the current Airport Hotel stop; and the
+line-level 51.76 km TDX/51.03 km DORTS route-length conflict remains in the
+line research. No value was selected over its conflicting primary value.
+
+The fresh 491-page build required the CJK base subset to grow from 692 to 735
+characters. The 400/700 base fonts grew from 216.8 KB total to 230.1 KB total
+(114.2 KB and 115.9 KB respectively); the build reported no missing glyphs.
+npm run research, cite, verify, claims, links, a11y, unused and npm test are
+green; the full suite remains 185/185. The interim link audit is 347 unlinked
+mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
