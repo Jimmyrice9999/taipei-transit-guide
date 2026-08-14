@@ -3,8 +3,9 @@
  *
  * Romanisation follows the districts' own official English names (TRTC's
  * English site and the existing research corpus use the same forms).
- * Taoyuan's districts, reached by the Airport MRT, are out of scope and
- * deliberately absent rather than guessed; `formatDistrict` marks those TBC.
+ * The Airport MRT reaches four Taoyuan districts in addition to Taipei and
+ * New Taipei. They are included here so the station pages never replace a
+ * published district with a TBC merely because it crosses a city boundary.
  */
 const DISTRICT_NAMES: Record<string, string> = {
   // Taipei City
@@ -50,6 +51,11 @@ const DISTRICT_NAMES: Record<string, string> = {
   '金山區': 'Jinshan District',
   '萬里區': 'Wanli District',
   '烏來區': 'Wulai District',
+  // Taoyuan City, reached by the Airport MRT
+  '龜山區': 'Guishan District',
+  '蘆竹區': 'Luzhu District',
+  '大園區': 'Dayuan District',
+  '中壢區': 'Zhongli District',
 }
 
 /** English name for a district, or `null` if it's outside the map above. */

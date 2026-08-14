@@ -15,6 +15,8 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import type { Source } from './sources.ts'
+
 export type Structure = 'elevated' | 'at-grade' | 'underground' | 'unknown'
 
 export type StationOverlay = {
@@ -29,6 +31,12 @@ export type StationOverlay = {
   engineering?: string
   /** Street exits, as counted by the builder's own station table. */
   exits?: number
+  /** The operator's station-position description, when it is not a postal address. */
+  location?: string
+  /** Source id for the station-position description. */
+  locationSource?: string
+  /** Sources used by the generated station page. */
+  sources?: Source[]
   /**
    * Lines that will serve this station but do not yet, keyed by the future
    * line's own name rather than a station code — the code does not exist.
@@ -51,6 +59,38 @@ export type StationOverlay = {
   }[]
   /** Why a value is what it is, where that is not obvious. Not rendered. */
   note?: string
+}
+
+const NTMC_DANHAI_STATIONS: Source = {
+  id: 'ntmetro-danhai-stations',
+  title: 'Danhai LRT stations',
+  titleOriginal: '淡海輕軌車站',
+  publisher: 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)',
+  url: 'https://www.ntmetro.com.tw/basic/?node=10136',
+  accessed: '2026-08-14',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The operator’s full station table publishes the station-position descriptions for V01–V11 and V26–V28; it does not provide postal street addresses for the rows that are TBC here.',
+}
+
+const NTMC_ANKENG_STATIONS: Source = {
+  id: 'ntmetro-ankeng-stations',
+  title: 'Ankeng LRT stations',
+  titleOriginal: '安坑輕軌車站',
+  publisher: 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)',
+  url: 'https://www.ntmetro.com.tw/basic/?node=10137',
+  accessed: '2026-08-14',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The operator’s full station table publishes the station-position descriptions for K01–K09; it does not provide postal street addresses for K01–K08, which remain TBC here.',
+}
+
+function stationLocation(location: string, source: Source): StationOverlay {
+  return { location, locationSource: source.id, sources: [source] }
 }
 
 /**
@@ -157,4 +197,29 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
   },
   BR23: { structure: 'elevated', engineering: 'B10', exits: 2 },
   BR24: { structure: 'elevated', engineering: 'B11', exits: 8 },
+
+  V01: stationLocation('中正東路二段紅樹林站旁', NTMC_DANHAI_STATIONS),
+  V02: stationLocation('淡金路上與淡金路77巷交叉路口北側', NTMC_DANHAI_STATIONS),
+  V03: stationLocation('淡金路上鄰近國泰橋', NTMC_DANHAI_STATIONS),
+  V04: stationLocation('淡金路上與水源街二段交叉路口北側', NTMC_DANHAI_STATIONS),
+  V05: stationLocation('淡金路上與北新路交叉路口北側', NTMC_DANHAI_STATIONS),
+  V06: stationLocation('淡金路上與新市一路三段交叉路口北側', NTMC_DANHAI_STATIONS),
+  V07: stationLocation('濱海路一段上與中山北路二段交叉路口東側', NTMC_DANHAI_STATIONS),
+  V08: stationLocation('濱海路二段上與義山路交叉路口西側', NTMC_DANHAI_STATIONS),
+  V09: stationLocation('濱海路二段上與沙崙路交叉路口東側', NTMC_DANHAI_STATIONS),
+  V10: stationLocation('沙崙路上與新市三路二段交叉路口南側', NTMC_DANHAI_STATIONS),
+  V11: stationLocation('沙崙路上與新市六路交叉路口南側', NTMC_DANHAI_STATIONS),
+  V26: stationLocation('中正路二段51巷', NTMC_DANHAI_STATIONS),
+  V27: stationLocation('淡海路上於觀海路交叉路口東側', NTMC_DANHAI_STATIONS),
+  V28: stationLocation('濱海路三段與新民街一段交叉路口東側', NTMC_DANHAI_STATIONS),
+
+  K01: stationLocation('安一路上，鄰近甜蜜蜜社區', NTMC_ANKENG_STATIONS),
+  K02: stationLocation('安一路與玫瑰路路口', NTMC_ANKENG_STATIONS),
+  K03: stationLocation('安一路與僑信路路口', NTMC_ANKENG_STATIONS),
+  K04: stationLocation('安一路與車子路路口', NTMC_ANKENG_STATIONS),
+  K05: stationLocation('安一路與安忠路路口', NTMC_ANKENG_STATIONS),
+  K06: stationLocation('安和路一段與安康路一段路口', NTMC_ANKENG_STATIONS),
+  K07: stationLocation('安和路二段與安利街路口', NTMC_ANKENG_STATIONS),
+  K08: stationLocation('安和路三段與新和街路口', NTMC_ANKENG_STATIONS),
+  K09: stationLocation('Y8十四張地區、環狀線Y8站旁可轉乘捷運環狀線Y8站', NTMC_ANKENG_STATIONS),
 }

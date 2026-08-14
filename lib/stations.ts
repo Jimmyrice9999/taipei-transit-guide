@@ -21,6 +21,7 @@
 import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
 import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
 import { SANYING_STATIONS, type SanyingResearch } from './sanying-stations.ts'
+import type { Source } from './sources.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
 export type PlannedInterchange = {
@@ -45,6 +46,10 @@ export type Station = {
   /** District, from the source's LocationTown. */
   district: string
   address: string
+  /** Operator station-position description, distinct from a postal address. */
+  location: string
+  locationSource: string
+  sources: Source[]
   lat: number | null
   lon: number | null
   /** Position along the line, 1-based. */
@@ -68,15 +73,21 @@ export type Station = {
 }
 
 export const STATIONS: Station[] = [
-  ...GENERATED_STATIONS.map((station) => ({
-    ...station,
-    structure: (STATION_OVERLAY[station.code]?.structure ?? 'unknown') as Structure,
-    engineering: STATION_OVERLAY[station.code]?.engineering ?? '',
-    exits: STATION_OVERLAY[station.code]?.exits ?? null,
-    planned: STATION_OVERLAY[station.code]?.planned ?? [],
-    recordSource: 'tdx' as const,
-    research: null,
-  })),
+  ...GENERATED_STATIONS.map((station) => {
+    const overlay = STATION_OVERLAY[station.code]
+    return {
+      ...station,
+      structure: (overlay?.structure ?? 'unknown') as Structure,
+      engineering: overlay?.engineering ?? '',
+      exits: overlay?.exits ?? null,
+      location: overlay?.location ?? '',
+      locationSource: overlay?.locationSource ?? '',
+      sources: overlay?.sources ?? [],
+      planned: overlay?.planned ?? [],
+      recordSource: 'tdx' as const,
+      research: null,
+    }
+  }),
   ...SANYING_STATIONS,
 ]
 

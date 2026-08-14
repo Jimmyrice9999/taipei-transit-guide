@@ -144,12 +144,11 @@ export default async function StationPage({ params }: Props) {
   const service = getFirstLast(station.code)
   const geometry = getLineGeometry(station.line)
   const track = getLineTrack(station.line)
-  const stationReferences = station.research
-    ? numberSources(
-        station.research.sources,
-        new Set(station.research.sources.map((source) => source.id)),
-      )
-    : []
+  const stationSources = station.research?.sources ?? station.sources
+  const stationReferences = numberSources(
+    stationSources,
+    new Set(stationSources.map((source) => source.id)),
+  )
 
   const structureLabel =
     station.structure === 'unknown' ? 'Not established' : station.structure === 'elevated' ? 'Elevated' : 'Underground'
@@ -611,6 +610,15 @@ export default async function StationPage({ params }: Props) {
               )}
             </dd>
           </div>
+          {station.location && (
+            <div>
+              <dt>Station location</dt>
+              <dd>
+                <span lang="zh-Hant">{station.location}</span>
+                <CiteMark id={station.locationSource} references={stationReferences} />
+              </dd>
+            </div>
+          )}
           <div>
             <dt>Coordinates</dt>
             <dd>
@@ -708,7 +716,7 @@ export default async function StationPage({ params }: Props) {
           )}
         </nav>
 
-        {station.research && <References references={stationReferences} />}
+        {(station.research || station.sources.length > 0) && <References references={stationReferences} />}
       </div>
     </PageShell>
   )

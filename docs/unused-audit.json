@@ -151,7 +151,7 @@
     {
       "name": "StationOverlay",
       "file": "lib/station-overlay.ts",
-      "line": 20
+      "line": 22
     },
     {
       "name": "SeedStation",
@@ -161,7 +161,7 @@
     {
       "name": "PlannedInterchange",
       "file": "lib/stations.ts",
-      "line": 26
+      "line": 27
     },
     {
       "name": "Role",

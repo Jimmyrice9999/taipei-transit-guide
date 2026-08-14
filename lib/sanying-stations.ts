@@ -46,6 +46,9 @@ type SanyingStation = {
   nameZh: string
   district: string
   address: string
+  location: string
+  locationSource: string
+  sources: Source[]
   lat: number | null
   lon: number | null
   sequence: number
@@ -257,6 +260,9 @@ export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
     nameZh: row.nameZh,
     district: row.district,
     address: row.address,
+    location: '',
+    locationSource: '',
+    sources: [],
     lat: coordinates?.lat ?? null,
     lon: coordinates?.lon ?? null,
     sequence: index + 1,

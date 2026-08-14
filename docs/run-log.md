@@ -6791,3 +6791,30 @@ interchange pills), `r21-fix-y07-map-1440.png` /
 comparable against §123's screenshot set), `station-br10-768.png`
 (tablet width, confirming BR24's map label and the Part 1 redesigns
 together at a width neither had been checked at before).
+
+# Run 22 — Part 1, TDX station completeness, 14 August 2026
+
+## Part 1 — station data completeness
+
+Audited before editing. The brief’s “other 8 lines show only coordinates” premise
+was not accurate: the eight lines contain 162 station pages; all 162 have TDX
+district and coordinate fields, and six lines have a TDX address on every page.
+The actual gap is 20 postal addresses: V02–V11 and V27–V28 on Danhai LRT (12),
+and K01–K08 on Ankeng LRT (8). TDX’s raw `StationAddress` is genuinely empty
+for exactly those rows. Airport’s 15 Taoyuan-district pages had Chinese names
+but no English mapping; four mappings were added to `lib/districts.ts`.
+
+Touched 23 generated station pages (V01–V11, V26–V28, K01–K09) by adding the
+operator’s separately labelled station-position row; no Markdown content page
+was rewritten. The research record was 0 → 533 whitespace-delimited words;
+the rendered pages gained one sourced row each. Added two primary sources:
+NTMC’s full Danhai table (`淡海輕軌車站`) and full Ankeng table (`安坑輕軌車站`).
+The source tables publish `車站位置`, not postal addresses, so all 20 address
+values remain TBC. No coordinates were used to infer an address.
+
+The only conflict is field semantics, not two values for one fact: TDX leaves
+the postal field empty while NTMC publishes a road/junction position. Both are
+retained. Nothing in the existing research corpus was contradicted. `npm run
+cite`, `npm run verify`, and `npm test` are green (185/185); `npm run fonts` was
+required because the new Han rows expanded the base subset (380 characters,
+116.1 KB across 400/700, previously 285 characters and 110.1 KB).
