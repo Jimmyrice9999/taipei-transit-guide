@@ -6996,3 +6996,47 @@ glyphs. The interim link audit grew from 269 to 302 unlinked mentions as the
 new station names entered the rendered pages; Part 5 will categorise these.
 The full suite remains 185/185. npm run cite, verify, research, claims, links,
 a11y, unused and npm test are green.
+
+# Run 22 — Part 3, Bannan Line station depth, 14 August 2026
+
+## Bannan / BL — audit and implementation
+
+Audited before editing. The line has 23 generated station pages (BL01–BL23);
+all already had TDX postal address, English and Chinese district, and
+coordinates. None had a hand-researched station record. TDX listed the seven
+interchanges BL07/BL08 (Y), BL11 (G), BL12 (R), BL14 (O), BL15 (BR) and BL23
+(BR); no self-code was present.
+
+Touched all 23 BL station pages through the hand-maintained overlay and added
+the BL research file. The rendered pages grew from 8,773 total
+whitespace-delimited body words (366–393 per page) to 15,727
+(629–803 per page), +6,954. The research record is 1,712
+whitespace-delimited words.
+
+Added 42 unique PRIMARY source records: 23 full TRTC station pages, six DORTS
+route pages, two DORTS architecture pages and 11 DORTS public-art records.
+Established underground structure, every published exit destination and
+accessible exit, operator facilities, opening dates, engineering identifiers,
+Tucheng and Nangang Depot coverage, official BL01/BL22/BL23 design themes,
+operator-named landmarks, and 11 complete public-art records. The pages use
+the operator’s current BL12 transfer and separately retain DORTS’s Airport
+MRT context with transfer mode TBC.
+
+TBC remains for all platform forms, platform counts and track counts, every
+station rename and dated announcement, paid-area or street-transfer
+classification, station-level depot rosters, BL16 public-art metadata, and
+the complete metadata for BL23’s second named work. The current full primary
+pages did not publish those values; the pages say TBC rather than infer them.
+
+Conflicts found: DORTS records an earlier Nangang plan with one elevated and
+one at-grade station, while its built-route pages describe the final sections
+as underground; BL14’s DORTS engineering table displays 4BL9; and DORTS names
+Airport MRT in the BL12 transfer context while TDX/TRTC expose the current
+Bannan–Tamsui-Xinyi interchange. All values and the planned-versus-built
+distinction are retained.
+
+The fresh 491-page build required the CJK base subset to grow from 611 to 672
+characters. The 400/700 base fonts grew from 191.8 KB total to 209.9 KB total
+(103.9 KB and 106.0 KB respectively); the second build reported no missing
+glyphs. npm run research, cite, verify and npm test are green; the full suite
+remains 185/185. The interim link audit is 307 unlinked mentions for Part 5.

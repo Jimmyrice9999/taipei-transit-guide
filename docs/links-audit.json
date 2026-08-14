@@ -465,6 +465,31 @@
       "href": "/rail/stations/o18/"
     },
     {
+      "page": "/rail/stations/bl07/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/rail/stations/bl08/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/rail/stations/bl11/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/rail/stations/bl11/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/rail/stations/bl12/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
       "page": "/rail/stations/br01/",
       "name": "Nangang",
       "href": "/rail/stations/bl22/"
