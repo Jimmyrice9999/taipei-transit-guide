@@ -7226,6 +7226,26 @@ npm run research, cite, verify, claims, links, a11y, unused and npm test are
 green; the full suite remains 185/185. The interim link audit is 370 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
 
+# Run 22 — Part 5, link audit, 14 August 2026
+
+Audited the complete post-K set of 370 unlinked mentions; the brief's 179 was
+stale after the nine station-line deepening passes. The composition is 197
+citation/reference-context mentions (36 in `/data/sources/` and 161 in
+rendered reference blocks), which should not be linked because they are source
+titles, publishers or notes. The remaining 173 are non-citation contexts:
+169 compound-name, district/depot/geographic, route-map or structured-table
+matches that should remain plain, plus two genuine station mentions in figure
+captions that should link. The rule is based on the surrounding subject, not
+on the target name alone: `Zhonghe` in `Zhonghe–Xinlu`, `Xindian` in
+`Xindian District`, and `Nangang` in `Taipei Nangang Exhibition Center` are
+not mentions of those station pages.
+
+Touched the YouBike and Innovia captions and added a narrowly scoped
+frontmatter-caption internal-link renderer to `components/Figure.tsx`. No
+image was fetched. The fresh 491-page build and `npm run links` reduce the
+audit from 370 to 368, exactly the two intended links; rendered caption prose
+word counts are unchanged. AGENTS.md remains the user-owned unstaged change.
+
 # Run 22 — Part 4, shared citation-definition pattern, 14 August 2026
 
 Audited `lib/sources.ts` and `scripts/citations.mjs`: both validated the same

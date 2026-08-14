@@ -45,11 +45,6 @@
   ],
   "findings": [
     {
-      "page": "/bike/history/youbike/",
-      "name": "Xindian",
-      "href": "/rail/stations/g01/"
-    },
-    {
       "page": "/bus/network/joint-operation/",
       "name": "Tamsui",
       "href": "/rail/stations/r28/"
@@ -438,11 +433,6 @@
       "page": "/rail/rolling-stock/c381/",
       "name": "Songshan",
       "href": "/rail/stations/g19/"
-    },
-    {
-      "page": "/rail/rolling-stock/innovia-apm-256-c370/",
-      "name": "Liuzhangli",
-      "href": "/rail/stations/br07/"
     },
     {
       "page": "/rail/stations/a10/",

@@ -1,4 +1,5 @@
 import RichText from './RichText'
+import Link from 'next/link'
 import { getImageSize } from '@/lib/image-size'
 import { src as imageSrc, srcset, type SiteImage } from '@/lib/images'
 
@@ -39,6 +40,29 @@ export type FigureProps = {
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
+/** Render the small subset of Markdown links allowed in frontmatter captions. */
+function Caption({ value }: { value: string }) {
+  const parts: React.ReactNode[] = []
+  const pattern = /\[([^\]]+)\]\((\/[^)\s]+)\)/g
+  let cursor = 0
+  let match
+  while ((match = pattern.exec(value)) !== null) {
+    if (match.index > cursor) {
+      parts.push(<RichText key={`text-${cursor}`}>{value.slice(cursor, match.index)}</RichText>)
+    }
+    parts.push(
+      <Link href={match[2]} key={`link-${match.index}`}>
+        <RichText>{match[1]}</RichText>
+      </Link>,
+    )
+    cursor = match.index + match[0].length
+  }
+  if (cursor < value.length) {
+    parts.push(<RichText key={`text-${cursor}`}>{value.slice(cursor)}</RichText>)
+  }
+  return parts.length ? <>{parts}</> : <RichText>{value}</RichText>
+}
+
 export default function Figure({
   image,
   src,
@@ -65,7 +89,7 @@ export default function Figure({
           decoding={priority ? undefined : 'async'}
         />
         <figcaption>
-          {caption && <RichText>{caption}</RichText>}
+          {caption && <Caption value={caption} />}
           <span className="figure-credit">
             {/* Photographer names are often Chinese; RichText tags the Han
                 so the credit renders in the Traditional-variant face. */}
