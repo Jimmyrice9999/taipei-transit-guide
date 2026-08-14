@@ -15,8 +15,9 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-import type { Source } from './sources.ts'
 import type { StationResearch } from './station-research.ts'
+import type { Source } from './sources.ts'
+import { ANKENG_OVERLAY } from './ankeng-stations.ts'
 import { AIRPORT_MRT_OVERLAY } from './airport-mrt-stations.ts'
 import { BANNAN_OVERLAY } from './bannan-stations.ts'
 import { CIRCULAR_OVERLAY } from './circular-stations.ts'
@@ -71,24 +72,6 @@ export type StationOverlay = {
   note?: string
 }
 
-const NTMC_ANKENG_STATIONS: Source = {
-  id: 'ntmetro-ankeng-stations',
-  title: 'Ankeng LRT stations',
-  titleOriginal: '安坑輕軌車站',
-  publisher: 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)',
-  url: 'https://www.ntmetro.com.tw/basic/?node=10137',
-  accessed: '2026-08-14',
-  snapshot: '',
-  snapshotAlt: '',
-  kind: 'primary',
-  lang: 'zh-Hant',
-  note: 'The operator’s full station table publishes the station-position descriptions for K01–K09; it does not provide postal street addresses for K01–K08, which remain TBC here.',
-}
-
-function stationLocation(location: string, source: Source): StationOverlay {
-  return { location, locationSource: source.id, sources: [source] }
-}
-
 /**
  * Keyed by station code.
  *
@@ -130,6 +113,7 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
   ...TAMSUI_XINYI_OVERLAY,
   ...ZHONGHE_XINLU_OVERLAY,
   ...DANHAI_OVERLAY,
+  ...ANKENG_OVERLAY,
   BR01: {
     structure: 'elevated',
     engineering: 'BR13',
@@ -201,13 +185,4 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
   BR23: { structure: 'elevated', engineering: 'B10', exits: 2 },
   BR24: { structure: 'elevated', engineering: 'B11', exits: 8 },
 
-  K01: stationLocation('安一路上，鄰近甜蜜蜜社區', NTMC_ANKENG_STATIONS),
-  K02: stationLocation('安一路與玫瑰路路口', NTMC_ANKENG_STATIONS),
-  K03: stationLocation('安一路與僑信路路口', NTMC_ANKENG_STATIONS),
-  K04: stationLocation('安一路與車子路路口', NTMC_ANKENG_STATIONS),
-  K05: stationLocation('安一路與安忠路路口', NTMC_ANKENG_STATIONS),
-  K06: stationLocation('安和路一段與安康路一段路口', NTMC_ANKENG_STATIONS),
-  K07: stationLocation('安和路二段與安利街路口', NTMC_ANKENG_STATIONS),
-  K08: stationLocation('安和路三段與新和街路口', NTMC_ANKENG_STATIONS),
-  K09: stationLocation('Y8十四張地區、環狀線Y8站旁可轉乘捷運環狀線Y8站', NTMC_ANKENG_STATIONS),
 }

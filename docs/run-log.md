@@ -7177,5 +7177,51 @@ The fresh 491-page build required the CJK base subset to grow from 735 to 767
 characters. The 400/700 base fonts grew from 230.1 KB total to 238.2 KB total
 (117.8 KB and 120.4 KB respectively); the build reported no missing glyphs.
 npm run research, cite, verify, claims, links, a11y, unused and npm test are
+green; the full suite remains 185/185. The interim link audit is 370 unlinked
+mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
+
+# Run 22 — Part 3, Ankeng LRT station depth, 14 August 2026
+
+## Ankeng / K — audit and implementation
+
+Audited before editing. The line has nine generated station pages (K01–K09).
+All had TDX district and coordinates. K09 had a TDX address; K01–K08 had no
+TDX address. The Part 1 NTMC position overlay already covered all nine with
+operator station-position descriptions. TDX had no current interchange code;
+NTMC's full transfer and FAQ pages establish K09's Circular Line transfer. No
+image was fetched.
+
+Touched all nine K station pages through a new hand-maintained Ankeng overlay
+and added the K station research file. The rendered `<main>` text grew from
+1,595 total whitespace-delimited words (169–189 per page) to 6,635
+(695–861), +5,040. The research record is 1,693 whitespace-delimited words.
+
+Added 22 unique PRIMARY source records: TDX, the NTMC station table, nine full
+NTMC station pages, three further NTMC pages, two DORTS route/station pages,
+three DORTS public-art records, the An-Xin Bridge article, the Shuang'an
+Tunnel article and the Ankeng Depot article. Established the 10 February 2023
+opening, K01/K03–K05 at-grade and K02/K06–K09 elevated structure, K09's two
+usable side platforms, K09's Circular transfer, K02/K08/K09 public art,
+accessibility facilities, depot functions, K01 depot-lead tunnel and K09
+bridge history.
+
+TBC remains for eight postal addresses, station-specific platform form and
+track counts except K09's two usable side platforms, all exit counts and
+positions, lift/ramp counts, bike parking, paid-area/street-transfer mode,
+station-level depot rosters, all dated renames, artwork years and most
+station-specific art. Linked station PDFs/images were not fetched under the
+no-image rule.
+
+Conflicts found: current NTMC and DORTS route prose identify the Circular
+interchange beside Y8 while DORTS's station-position table says Y7; the
+passenger route is described as at-grade/elevated while a separate DORTS
+article places the Shuang'an Tunnel on the depot lead between K01 and the
+depot; and DORTS's K02 art record explicitly calls K02 elevated inside the
+Anyi section. All values and the scope distinction are retained.
+
+The fresh 491-page build required the CJK base subset to grow from 767 to 782
+characters. The 400/700 base fonts grew from 238.2 KB total to 242.5 KB total
+(119.9 KB and 122.6 KB respectively); the build reported no missing glyphs.
+npm run research, cite, verify, claims, links, a11y, unused and npm test are
 green; the full suite remains 185/185. The interim link audit is 361 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
