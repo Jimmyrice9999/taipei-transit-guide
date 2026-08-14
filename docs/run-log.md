@@ -6947,3 +6947,52 @@ KB across the 400/700 weights; the second build reported no missing glyphs.
 `npm run links`, `npm run a11y`, `npm run unused` and `npm test` are green;
 the full suite remains 185/185. The interim link audit reports 269 unlinked
 mentions and is left for Part 5.
+
+# Run 22 — Part 3, Zhonghe–Xinlu Line station depth, 14 August 2026
+
+## Zhonghe–Xinlu / O — audit and implementation
+
+Audited before editing. The line has 26 generated station pages (O01–O21 and
+O50–O54); all already had TDX postal address, district and coordinates. None
+had a hand-researched station record for structure, exits or facilities. TDX
+listed interchanges at O02, O05, O06, O07, O08, O11 and O17. O12’s O value was
+the station’s own line code and was filtered as a self-interchange.
+
+Touched all 26 O station pages through the hand-maintained overlay, the shared
+station renderer, the O research file, generated link/unused audit records,
+and the CJK font subset. The rendered pages grew from 9,744 total
+whitespace-delimited body words (366–385 per page) to 19,386 (683–818),
++9,642. The research record is 1,938 whitespace-delimited words.
+
+Added 53 unique PRIMARY source records: 26 full TRTC station pages, three
+DORTS route pages, one depot table, two line/station-architecture pages, 20
+station-design pages and one public-art page. Established operator-published
+exit destinations, accessibility, lifts, toilets, enquiry points, nursing and
+baby-changing facilities, bicycle access, opening phases, route engineering
+numbers, Zhonghe/Xinzhuang/Luzhou depot scope, station-specific design and
+operator-named landmarks. O01’s public-art title, artist, medium and
+completion month are established; O12’s eight-painting set is established
+without its individual metadata.
+
+TBC remains for station rename histories and announcement dates, paid-area or
+street transfer classification, station-specific depot train rosters, most
+platform and track counts, and complete station-by-station public-art metadata.
+The full primary pages did not publish those fields; the generated pages say
+TBC rather than inferring them.
+
+Conflicts found: DORTS’s Zhonghe prose says four stations while its table lists
+five O01–O05 rows; postal codes are TDX O02 23582 versus TRTC/DORTS 235086,
+TDX/DORTS/TRTC O05 100032/100031/100032, and TDX O17 24251 versus
+TRTC/DORTS 242035; depot areas are Zhonghe 1.2 ha in the depot table versus
+1.47 ha on the route page, Xinzhuang 13.9 ha versus 17.5 ha initially and
+13.9 ha after preservation, and Luzhou 15.9 ha versus 16.8 ha; O13’s DORTS
+six-level stacked platform description and TRTC single street exit are
+different categories, both retained.
+
+The fresh 491-page build required the CJK subset to grow from 555 to 611 Han
+characters. The 400/700 fonts grew from 172.6 KB total to 191.8 KB total
+(95.0 KB and 96.9 KB respectively); the second build reported no missing
+glyphs. The interim link audit grew from 269 to 302 unlinked mentions as the
+new station names entered the rendered pages; Part 5 will categorise these.
+The full suite remains 185/185. npm run cite, verify, research, claims, links,
+a11y, unused and npm test are green.

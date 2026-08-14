@@ -19,6 +19,7 @@ import type { Source } from './sources.ts'
 import type { StationResearch } from './station-research.ts'
 import { SONGSHAN_XINDIAN_OVERLAY } from './songshan-xindian-stations.ts'
 import { TAMSUI_XINYI_OVERLAY } from './tamsui-xinyi-stations.ts'
+import { ZHONGHE_XINLU_OVERLAY } from './zhonghe-xinlu-stations.ts'
 
 export type Structure = 'elevated' | 'at-grade' | 'underground' | 'unknown'
 
@@ -134,6 +135,7 @@ function stationLocation(location: string, source: Source): StationOverlay {
 export const STATION_OVERLAY: Record<string, StationOverlay> = {
   ...SONGSHAN_XINDIAN_OVERLAY,
   ...TAMSUI_XINYI_OVERLAY,
+  ...ZHONGHE_XINLU_OVERLAY,
   BR01: {
     structure: 'elevated',
     engineering: 'BR13',
