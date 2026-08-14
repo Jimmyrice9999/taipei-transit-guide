@@ -7132,3 +7132,50 @@ characters. The 400/700 base fonts grew from 216.8 KB total to 230.1 KB total
 npm run research, cite, verify, claims, links, a11y, unused and npm test are
 green; the full suite remains 185/185. The interim link audit is 347 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
+
+# Run 22 — Part 3, Danhai LRT station depth, 14 August 2026
+
+## Danhai / V — audit and implementation
+
+Audited before editing. The line has 14 generated station pages (V01–V11 and
+V26–V28). All had TDX district and coordinates. V01 and V26 had TDX address
+strings; V02–V11 and V27–V28 had no TDX address. The Part 1 NTMC position
+overlay already covered those 12 gaps with operator station-position
+descriptions. TDX listed no current interchange code; NTMC establishes V01's
+transfer with Taipei Metro Hongshulin. No image was fetched.
+
+Touched all 14 V station pages through a new hand-maintained Danhai overlay and
+added the V station research file. The rendered `<main>` text grew from 2,496
+total whitespace-delimited words (171–185 per page) to 10,849
+(707–870), +8,353. The research record is 1,665 whitespace-delimited words.
+
+Added 28 unique PRIMARY source records: TDX, the NTMC station table, 14 full
+NTMC station pages, seven additional NTMC pages, two DORTS route pages, two
+DORTS station tables and the DORTS shelter-design article. Established the
+Green Mountain and Blue Sea opening dates and phases, V03's elevated
+structure and safety monitoring, the open-platform/card-reader system, V01's
+Hongshulin interchange, toilets and nursing rooms at V01/V26, system-wide
+locker absence, the Green Mountain Jimmy Liao public art and operator-named
+station positions and landmarks.
+
+TBC remains for 12 postal addresses, station-specific platform form and track
+counts, all exit counts and positions, structure classifications other than
+V03, most station-specific lift/ramp details, paid-area/street-transfer mode,
+station-level depot rosters, all renames and dated announcements, and Blue
+Sea station-specific public art. Linked station PDFs/images were not fetched
+under the no-image rule.
+
+Conflicts found: DORTS gives Green Mountain's opening as 24 December 2018
+while the existing secondary line research records a 23 December value;
+current NTMC and DORTS give different V28 position descriptions; V05 carries
+a DORTS 「加註北投子」 annotation that is not treated as a rename; and V03 is
+the only station-specific elevated classification established, despite the
+operator's line-level statement that nearly half the route is elevated. All
+values are retained.
+
+The fresh 491-page build required the CJK base subset to grow from 735 to 767
+characters. The 400/700 base fonts grew from 230.1 KB total to 238.2 KB total
+(117.8 KB and 120.4 KB respectively); the build reported no missing glyphs.
+npm run research, cite, verify, claims, links, a11y, unused and npm test are
+green; the full suite remains 185/185. The interim link audit is 361 unlinked
+mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
