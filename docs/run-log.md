@@ -6894,3 +6894,56 @@ the full suite remains 185/185. The first verification build caught missing
 Han glyphs because font generation preceded the fresh build; regenerated fonts
 from the fresh 491-page output (base subset 380 → 492 characters; 116.1 KB →
 149.9 KB across weights), then reran all gates successfully.
+
+# Run 22 — Part 3, Songshan–Xindian Line station depth, 14 August 2026
+
+## Songshan–Xindian / G — audit and implementation
+
+Audited before editing. The line has 20 generated station pages (G01–G19 and
+G03A); all already had TDX postal address, district and coordinates. None had a
+station research record, structure, exit detail or facility overlay. TDX listed
+interchange codes at G03, G04, G09, G10, G12, G14, G15 and G16; G03’s `G` was
+the station’s own code and was filtered as a self-interchange.
+
+Touched all 20 G station pages through the hand-maintained overlay, the shared
+station renderer’s duplicate-interchange handling, and the G research file.
+The rendered pages grew from 7,340 total whitespace-delimited body words
+(357–375 per page) to 14,892 (672–852), +7,552. The 20-page research record
+is 1,744 whitespace-delimited words.
+
+Added 29 unique PRIMARY source records: 20 full TRTC station pages, 7 DORTS
+route/planning/construction/depot/architecture pages and 2 DORTS public-art
+pages. Established operator-published exits, accessibility and facilities;
+opening dates for each G segment; the underground/elevated and shallow-cut
+structure distinctions; engineering numbers; Xindian Depot as the line depot;
+Songshan station forms/design themes; Xiaonanmen’s separate maintenance-track
+history; and three official art records/sets where title, artist and medium were
+documented.
+
+TBC remains for most station renames, all paid-area/street transfer modes,
+station-specific depot rosters, most unpublished track counts, G02/G03/G03A
+accessible-exit status, and public-art records or completion years not stated
+by the checked official pages. G19’s public-art source gives a 2016 results
+album but not a completion year.
+
+Conflicts found: G15’s DORTS architecture article describes an island-platform
+station but separately calls the G platform side-style and the O platform
+island-style; its architecture page says 7 exits, while the current DORTS route
+table and TRTC page say 8. DORTS’s G10 row spells the current CKS Memorial Hall
+name `中正紀年堂站`; TRTC uses `中正紀念堂`. Construction identifiers differ
+from operating codes (for example operating G08 is engineering G09, G09 is
+G10, G10 is G11, and G11 is G12); both are retained and labelled.
+
+The current line-research corpus had already corrected its earlier “7 Songshan
+stations” error to DORTS’s 8 including Ximen, so no new contradiction was
+introduced there. The station pass independently preserves the G15/G10 source
+conflicts above rather than collapsing them.
+
+The fresh build initially caught 20 missing Han glyphs because fonts had been
+generated before the new pages existed. Regenerating from the fresh 491-page
+build raised the base subset from 492 to 555 characters and 149.9 KB to 172.6
+KB across the 400/700 weights; the second build reported no missing glyphs.
+`npm run cite`, `npm run verify`, `npm run research`, `npm run claims`,
+`npm run links`, `npm run a11y`, `npm run unused` and `npm test` are green;
+the full suite remains 185/185. The interim link audit reports 269 unlinked
+mentions and is left for Part 5.

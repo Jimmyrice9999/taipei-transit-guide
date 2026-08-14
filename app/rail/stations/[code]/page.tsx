@@ -248,7 +248,9 @@ export default async function StationPage({ params }: Props) {
               </span>
             </p>
           )}
-          {station.research?.interchange && (
+          {station.research?.interchange &&
+            (!station.research.interchange.lineCode ||
+              !interchangeLines.some(({ code }) => code === station.research?.interchange?.lineCode)) && (
             <p className="station-interchange">
               <span className="station-interchange-label">Interchange</span>
               <span className="interchange-codes">
