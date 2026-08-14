@@ -3,10 +3,6 @@ title: Gondola
 description: The Maokong Gondola — run by the metro's own recreation subsidiary, and the network's only cable transit.
 order: 4
 status: planned
-hero:
-  image: gondola/station
-  alt: Maokong Station, the gondola's hilltop terminus, its long timber-roofed platform set among tea-plantation hillside.
-  caption: Maokong Station, the gondola's upper terminus.
 ---
 
 The gondola is part of the network in the ways that matter here: metro
@@ -23,5 +19,3 @@ Coming: the system (French-built, and what that lineage means for parts and
 maintenance), the stations, the cabins — including the glass-floored ones —
 and the closure history. Bounded scope, no churn, high value: this section is
 early on the build list for the same reasons YouBike is.
-
-![A gondola support tower's crossarm and sheave assembly, a cabin passing below it in hazy air](/images/gondola/tower-800.webp "A support tower's crossarm, carrying the cable overhead. — Solomon203, CC BY-SA 4.0, Wikimedia Commons")

@@ -1,7 +1,7 @@
 {
   "exports": 222,
   "cssClasses": 306,
-  "imageSidecars": 70,
+  "imageSidecars": 63,
   "unusedExports": [
     {
       "name": "UndergroundExtent",

@@ -10,10 +10,6 @@ aliases:
   - MRT feeder bus
   - 幹線公車
   - trunk bus
-hero:
-  image: bus/hero
-  alt: An orange, white and blue joint-operation city bus, doors open at a stop.
-  caption: A joint-operation network bus — one brand painted on fleets owned by fourteen separate companies.
 lead:
   value: "14"
   unit: companies

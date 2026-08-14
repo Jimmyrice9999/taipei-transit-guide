@@ -6818,3 +6818,35 @@ retained. Nothing in the existing research corpus was contradicted. `npm run
 cite`, `npm run verify`, and `npm test` are green (185/185); `npm run fonts` was
 required because the new Han rows expanded the base subset (380 characters,
 116.1 KB across 400/700, previously 285 characters and 110.1 KB).
+
+# Run 22 — Part 2, image quality pass, 14 August 2026
+
+Audited before editing. The inventory contained 70 in-use image records across
+the site; I inspected the largest local derivative for every record, checking
+resolution, sharpness, crop, and whether the visible subject matched its page.
+The 23 station-card records were included: BR06 and BR08 have 800px originals,
+but remain sharp and legible at the card size. No image was fetched this part.
+
+Seven records were removed, with every generated derivative and its sidecar:
+
+| Removed record | Page(s) | Why |
+| --- | --- | --- |
+| `bannan-line/hero` — `File:Bannan Line train at MRT Taipei Main Station 20091226.jpg` | `/rail/lines/bannan-line/` | Strong motion blur and a distracting diagonal crop. |
+| `bus/hero` — `File:MTCBus AH816.jpg` | `/bus/network/joint-operation/` | Only 400×300; too low-resolution for a full-width hero. |
+| `c321/hero` — `File:Taipei Metro C321 Train New DI.jpg` | `/rail/rolling-stock/c321/` | The 1600px source is visibly soft and blurred across the train and sign. |
+| `c341/hero` — `File:Siemens SGP Verkehrstechnik 2003 plate on Taipei MRT train 341.jpg` | `/rail/rolling-stock/c341/` | Only 800×600 and too soft for a full-page hero; the plate detail does not survive the displayed scale cleanly. |
+| `gondola/station` — `File:Maokong Gondola Maokong Station overview 20151108 2.jpg` | `/gondola/` | Washed out, low contrast, and hazy; the station is not a useful lead image at that quality. |
+| `gondola/tower` — `File:Maokong Gondola Column No.16 20151108.jpg` | `/gondola/` | Only 800×600 and hazy/soft as an inline detail figure. |
+| `matra-dispute/hero` — `File:Taipei MRT VAL 256 train near the MRT Taipei Zoo Station 2007-07-11.jpg` | `/`, `/rail/history/matra-dispute/` | Only 800×1067; portrait source is forced into a wide hero treatment and loses useful crop/scale. |
+
+No source was added and no source conflict was found: the seven records were
+already licensed sidecars for previously fetched Commons files, and this pass
+did not re-fetch or replace anything. Content frontmatter/body word count fell
+from 64,897 to 64,671 (−226, including removed image metadata); image sidecars
+fell 70 → 63. The seven pages now render without those figures rather than with
+placeholders or invented replacement captions. Nothing in the research corpus
+was contradicted, and no station or factual prose was changed.
+
+Before the Part 2 commit: `npm run unused` is green (63 sidecars, no
+unreferenced images); `npm run cite`, `npm run verify`, and `npm test` are green
+(185/185 tests). The seven removals are ready to commit and push.

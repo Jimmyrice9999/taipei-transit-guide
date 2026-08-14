@@ -7,10 +7,6 @@ aliases:
   - 板南線
   - Blue Line
 updated: 2026-08-10
-hero:
-  image: bannan-line/hero
-  alt: Passengers boarding a Bannan Line train at Taipei Main Station, doors open under blue platform lighting.
-  caption: Boarding a Bannan Line train at Taipei Main Station.
 facts:
   - label: Operator
     value: Taipei Rapid Transit Corporation
