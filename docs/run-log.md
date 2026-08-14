@@ -7040,3 +7040,50 @@ characters. The 400/700 base fonts grew from 191.8 KB total to 209.9 KB total
 (103.9 KB and 106.0 KB respectively); the second build reported no missing
 glyphs. npm run research, cite, verify and npm test are green; the full suite
 remains 185/185. The interim link audit is 307 unlinked mentions for Part 5.
+
+# Run 22 — Part 3, Circular Line station depth, 14 August 2026
+
+## Circular / Y — audit and implementation
+
+Audited before editing. The line has 14 generated station pages (Y07–Y20);
+all already had TDX postal address, English and Chinese district, and
+coordinates. None had a hand-researched station record. TDX listed current
+interchanges at Y07 (G), Y11 (O), Y16 (BL), Y17 (BL) and Y18 (O); no address
+was inferred from coordinates.
+
+Touched all 14 Y station pages through the hand-maintained overlay and added
+the Y research file. The rendered pages grew from 4,994 total
+whitespace-delimited body words (352–360 per page) to 13,686
+(896–1,018 per page), +8,692. The research record is 2,527
+whitespace-delimited words.
+
+Added 25 unique PRIMARY source records: 14 full NTMC station pages, the NTMC
+Circular Line station list and accessibility page, TDX station records, the
+DORTS route and architecture pages, four full official architecture-book HTML
+pages, and two DORTS public-art records. Established the built
+underground/elevated split, platform forms and dimensions for Y08–Y20,
+published exit counts, entrance positions and lifts, common accessibility
+facilities, the 31 January 2020 opening, South Depot functions, engineering
+and design history, operator-named landmarks, the line-wide 粼光 record, and
+the Banqiao-zone 思映之間 record. Linked NTMC PDFs/images were not fetched
+under the run's no-image rule.
+
+TBC remains for Y07 platform form and exact exit positions, track counts,
+station-specific nursing rooms and bicycle parking, all station renames and
+dated announcements, paid-area or street-transfer classification, and
+station-level depot rosters. These are marked TBC rather than inferred.
+
+Conflicts found: DORTS engineering station identifiers are one number lower
+than current operating codes and its historical interchange labels differ
+from current TDX codes; current TDX lists Y17 on BL while the DORTS route row
+does not; Y19's route-table count is two entrances while the architecture
+book describes one main entrance; DORTS and TDX postal values differ for
+Y09–Y20 as listed in the research file; and the Banqiao art page uses
+engineering Y15 while current Banqiao is Y16. All values are retained.
+
+The fresh 491-page build required the CJK base subset to grow from 672 to 692
+characters. The 400/700 base fonts grew from 209.9 KB total to 216.8 KB total
+(107.3 KB and 109.5 KB respectively); the second build reported no missing
+glyphs. npm run research, cite, verify, claims, links, a11y, unused and npm
+test are green; the full suite remains 185/185. The interim link audit is
+322 unlinked mentions for Part 5.

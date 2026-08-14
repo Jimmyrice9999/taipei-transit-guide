@@ -18,6 +18,7 @@
 import type { Source } from './sources.ts'
 import type { StationResearch } from './station-research.ts'
 import { BANNAN_OVERLAY } from './bannan-stations.ts'
+import { CIRCULAR_OVERLAY } from './circular-stations.ts'
 import { SONGSHAN_XINDIAN_OVERLAY } from './songshan-xindian-stations.ts'
 import { TAMSUI_XINYI_OVERLAY } from './tamsui-xinyi-stations.ts'
 import { ZHONGHE_XINLU_OVERLAY } from './zhonghe-xinlu-stations.ts'
@@ -135,6 +136,7 @@ function stationLocation(location: string, source: Source): StationOverlay {
  */
 export const STATION_OVERLAY: Record<string, StationOverlay> = {
   ...BANNAN_OVERLAY,
+  ...CIRCULAR_OVERLAY,
   ...SONGSHAN_XINDIAN_OVERLAY,
   ...TAMSUI_XINYI_OVERLAY,
   ...ZHONGHE_XINLU_OVERLAY,

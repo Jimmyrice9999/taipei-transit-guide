@@ -16,4 +16,4 @@ Part 3 G: deepened 20 Songshan-Xindian pages; 29 primary records, 7,340 to
 14,892 rendered words; G15/G10 conflicts retained. Fonts: 492 to 555 base Han,
 149.9 to 172.6 KB. All gates green, 185/185.
 Part 3 O: deepened 26 pages; 9,744 to 19,386 rendered words; 53 primary records; fonts 555 to 611 base Han, 172.6 to 191.8 KB; conflicts logged.
-Part 3 BL: deepened 23 pages; 8,773 to 15,727 rendered words; 42 primary records; fonts 611 to 672 base Han, 191.8 to 209.9 KB; all gates green, 185/185. AGENTS.md remains the user-owned unstaged change.
+Part 3 BL: deepened 23 pages; 8,773 to 15,727 rendered words; 42 primary records; fonts 611 to 672 base Han, 191.8 to 209.9 KB. Part 3 Y: deepened 14 pages; 25 primary records, 4,994 to 13,686 rendered words; fonts 672 to 692 base Han, 209.9 to 216.8 KB; conflicts logged; all gates green, 185/185. AGENTS.md remains the user-owned unstaged change.
