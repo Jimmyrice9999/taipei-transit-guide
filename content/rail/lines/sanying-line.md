@@ -1,12 +1,12 @@
 ---
 title: Sanying Line
-summary: New Taipei's newest railway — a driverless elevated line to Sanxia and Yingge, open five weeks and still free to ride, written up here while every English source is still a machine translation.
+summary: New Taipei's newest railway — a driverless elevated line to Sanxia and Yingge, open six weeks and in a dated free trial, documented from the operator and government.
 order: 2
 line: LB
 aliases:
   - 三鶯線
   - Sanying
-updated: 2026-08-06
+updated: 2026-08-14
 hero:
   image: sanying-line/hero
   alt: The Sanying Line's arched viaduct crossing the Dahan River, hills behind.
@@ -29,7 +29,7 @@ facts:
     source: ntmetro-opening
   - label: Structure
     value: Fully elevated
-    source: zh-sanying
+    source: motc-inspection
   - label: Automation
     value: Driverless
     source: ntmetro-opening
@@ -102,9 +102,45 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Source for the fully elevated structure (採用全高架路線結構), the two-car driverless sets, the 三峽機廠 depot, the August extension of trial hours, and the Executive Yuan's 2025 approval of the Bade extension. A young article about a young line — treated accordingly."
+  - id: motc-inspection
+    title: Ministry of Transportation to inspect the Sanying Line on 7 June 2026
+    titleOriginal: 交通部訂於115年6月7日辦理捷運三鶯線履勘
+    publisher: Ministry of Transportation and Communications (交通部)
+    url: https://www.motc.gov.tw/ch/app/data/view?id=14&module=news&serno=a7dd045e-24d7-4cfe-88e2-e390627cb279
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: "The ministry's full inspection notice describes all twelve stations as elevated: 共12座高架車站."
+  - id: ntpc-august-hours
+    title: Sanying Line operating hours extended to 08:00–22:00 from 1 August
+    titleOriginal: 赴市議會施政報告 侯友宜宣布三鶯線8/1起延長營運時間為「8時至22時」
+    publisher: New Taipei City Government (新北市政府)
+    url: https://www.ntpc.gov.tw/ch/home.jsp?dataserno=715da45564e1ee910042fd23ce8bcf0b&id=e8ca970cde5c00e1
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: Publishes the 08:00–22:00 trial-operation schedule effective from 1 August 2026.
+  - id: ntmetro-fare-notice
+    title: Sanying Line fare and trial-operation notice
+    titleOriginal: 三鶯線票價
+    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
+    url: https://www.ntmetro.com.tw/basic/?node=10166
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: Announces 06:00–24:00 service for 16–31 August and repeats that stored-value-card taps are free during the trial.
+  - id: ntmetro-stations
+    title: Sanying Line stations
+    titleOriginal: 三鶯線車站
+    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
+    url: https://www.ntmetro.com.tw/basic/?node=10164
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: The operator's current table of LB01–LB12 station codes, names, addresses and running order.
 ---
 
-Taiwan opened a new railway five weeks ago and, as of this page's writing, you
+Taiwan opened a new railway six weeks ago and, as of this page's writing, you
 can still ride it for nothing: tap in with any stored-value card and the fare
 is zero until the end of August[^ntmetro-opening]. The Sanying Line is New
 Taipei's own metro — built by the city, run by its own metro company — and it
@@ -114,7 +150,7 @@ around them for thirty years, stations of their own.
 ## What opened, exactly
 
 The line runs 14.29 km on a fully elevated alignment through Tucheng, Sanxia
-and Yingge, with 12 stations[^ntmetro-opening][^zh-sanying]. Trains are
+and Yingge, with 12 stations[^ntmetro-opening][^motc-inspection]. Trains are
 driverless, two-car sets[^zh-sanying], running about every 6 minutes at peak
 and 8 off-peak, and the end-to-end run takes roughly half an
 hour[^ntmetro-opening].
@@ -128,10 +164,11 @@ and the city's stated case for the line is the commuting time it removes.
 Service opened on 30 June 2026, with the first train in the early afternoon
 and a **free trial period to 31 August**: any electronic stored-value card
 tapped in and out rides free[^ntmetro-opening]. Trial hours began at
-10:00–20:00 and were extended from the start of August to
-08:00–22:00[^zh-sanying] — worth knowing, because most guidance still quotes
-the original shorter day. When charging begins, fares run NT$20 to NT$35 by
-distance[^ntmetro-opening].
+10:00–20:00, changed to 08:00–22:00 from 1 August, and the operator has
+announced 06:00–24:00 for 16–31 August[^ntpc-august-hours][^ntmetro-fare-notice].
+Normal fares are planned to run from NT$20 to NT$35 by distance, but the
+operator says the charging start date will be announced separately; the end of
+the free trial is not itself a confirmed fare-start date[^ntmetro-opening].
 
 ## The first month
 
@@ -156,12 +193,11 @@ last observation is this page editorialising, not a sourced claim.
   be cited. Marked TBC above rather than borrowed.
 - **The depot.** zh.wikipedia names 三峽機廠 in Sanxia[^zh-sanying]; nothing
   else about it is established here yet.
-- **Station data.** This site's station registry, maps and geometry come from
-  the government TDX platform, and the Sanying Line's stations are not yet in
-  the extract this site builds from. Integrating them — codes, coordinates,
-  interchanges, a strip map for this page — is the next data task, and until
-  then this page deliberately has no station list rather than a hand-typed
-  one.
+- **Station coordinates.** TDX still has no Sanying station dataset. The twelve
+  station pages therefore use the operator's current station table and its
+  station-specific information sheets for names, addresses, exits and
+  facilities[^ntmetro-stations]. Coordinates remain TBC rather than being
+  copied from a map or geocoded from the addresses.
 - **The extension.** An extension toward Bade in Taoyuan has Executive Yuan
   approval[^zh-sanying]; its state of construction is not established here.
 
@@ -169,7 +205,7 @@ last observation is this page editorialising, not a sourced claim.
 
 This site's usual pattern is depth before breadth — one line finished
 properly before the next is started. The Sanying Line jumps the queue for a
-reason: it is five weeks old, English coverage is effectively nonexistent,
+reason: it is six weeks old, English coverage is effectively nonexistent,
 and the facts above are the ones that rot fastest — trial dates, hours,
 fares. They are cited to the operator's own announcement, snapshotted, and
 dated, so that when the trial ends this page can say what changed rather than

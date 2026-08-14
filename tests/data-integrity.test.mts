@@ -14,6 +14,7 @@ import { STATIONS, getStation, getLineStations, resolveSpine } from '../lib/stat
 import { LINES, TDX_LINES, getLine } from '../lib/lines.ts'
 import { getBranchRoutes, getRoutes, getTrunkRoute } from '../lib/routes.ts'
 import { getInterchanges } from '../lib/network.ts'
+import { validateSource } from '../lib/sources.ts'
 
 /*
  * The same three-operator list that lib/ carried in three places until run 10
@@ -50,12 +51,38 @@ const sourceById = new Map(sourceStations.map((s) => [s.StationID.toUpperCase(),
 /* ------------------------------------------------------------------ */
 
 test('every registry station exists in the TDX source', () => {
-  const missing = STATIONS.filter((s) => !sourceById.has(s.code.toUpperCase()))
+  const missing = STATIONS.filter(
+    (s) => s.recordSource === 'tdx' && !sourceById.has(s.code.toUpperCase()),
+  )
   assert.deepEqual(
     missing.map((s) => s.code),
     [],
     'stations in lib/stations.generated.ts with no matching TDX record — regenerate with `npm run stations`',
   )
+})
+
+test('the primary-sourced Sanying registry is complete and explicit about TDX gaps', () => {
+  const sanying = getLineStations('LB')
+  assert.deepEqual(
+    sanying.map((station) => station.code),
+    Array.from({ length: 12 }, (_, index) => `LB${String(index + 1).padStart(2, '0')}`),
+  )
+
+  for (const station of sanying) {
+    assert.equal(station.recordSource, 'primary-research')
+    assert.equal(sourceById.has(station.code), false, `${station.code} unexpectedly exists in TDX`)
+    assert.equal(station.lat, null)
+    assert.equal(station.lon, null)
+    assert.ok(station.address, `${station.code} has no primary-sourced address`)
+    assert.ok(station.exits !== null, `${station.code} has no primary-sourced exit count`)
+    assert.ok(station.research, `${station.code} has no station-page research record`)
+    assert.ok(station.research!.sources.every((source) => source.kind === 'primary'))
+    assert.deepEqual(
+      station.research!.sources.flatMap((source) => validateSource(source)),
+      [],
+      `${station.code} has an invalid page source`,
+    )
+  }
 })
 
 test('names match the TDX source exactly', () => {

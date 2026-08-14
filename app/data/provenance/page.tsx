@@ -204,7 +204,9 @@ export default function ProvenancePage() {
         </p>
 
         <p className="page-updated">
-          {STATIONS.length} stations · {operatorCodes.length} operators · retrieved{' '}
+          {STATIONS.filter((station) => station.recordSource === 'tdx').length} TDX stations
+          {' · '}{STATIONS.filter((station) => station.recordSource === 'primary-research').length}{' '}
+          primary-sourced Sanying stations · {operatorCodes.length} operators · retrieved{' '}
           {PROVENANCE.fetchedAt?.slice(0, 10)} · sources last updated {oldest ?? 'unknown'}
           {newest !== oldest && <> to {newest}</>}
         </p>

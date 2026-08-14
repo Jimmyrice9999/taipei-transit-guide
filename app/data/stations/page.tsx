@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/data/stations/' },
   title: 'Station records',
   description:
-    'Every Taipei Metro station — code, Chinese and English name, coordinates, interchanges and running order. From Taiwan MOTC open data, downloadable as JSON.',
+    'Every Taipei-region metro station — TDX records plus twelve primary-sourced Sanying stations, with gaps marked TBC. The TDX subset is downloadable as JSON.',
 }
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
@@ -56,6 +56,8 @@ export default function StationDataPage() {
     line,
     stations: STATIONS.filter((s) => s.line === line.code).sort((a, b) => a.sequence - b.sequence),
   })).filter((group) => group.stations.length > 0)
+  const tdxStationCount = STATIONS.filter((station) => station.recordSource === 'tdx').length
+  const researchedStationCount = STATIONS.length - tdxStationCount
 
   /*
    * Counted, not typed. Two strings on this page said "seven lines" and one of
@@ -86,8 +88,9 @@ export default function StationDataPage() {
             description:
               `Every station on the Taipei Metro network — ${STATIONS.length} records across ` +
               `${byLine.length} lines and ${operatorCount} operators, with station codes, English and ` +
-              'Traditional Chinese names, coordinates, districts and interchanges. Derived from ' +
-              "Taiwan MOTC's TDX open data platform.",
+              'Traditional Chinese names, coordinates where published, districts and interchanges. ' +
+              `${tdxStationCount} are derived from Taiwan MOTC's TDX open data platform; ` +
+              `${researchedStationCount} Sanying records are transcribed from operator primary sources.`,
             path: '/data/stations/',
             downloadPath: '/data/taipei-metro-stations.json',
             keywords: [
@@ -112,7 +115,8 @@ export default function StationDataPage() {
       <h1 className="page-title">Station records</h1>
       <p className="page-summary">
         {STATIONS.length} stations across {byLine.length} lines, in official running order,
-        from Taiwan MOTC's TDX platform
+        — {tdxStationCount} from Taiwan MOTC's TDX platform and {researchedStationCount}{' '}
+        Sanying records from operator primary sources
         {PROVENANCE.fetchedAt && <> — retrieved {PROVENANCE.fetchedAt.slice(0, 10)}</>}.
       </p>
 
@@ -179,7 +183,18 @@ export default function StationDataPage() {
                         <td className="num">{station.lat?.toFixed(6) ?? '—'}</td>
                         <td className="num">{station.lon?.toFixed(6) ?? '—'}</td>
                         <td>
-                          {station.interchange.length ? (
+                          {station.research?.interchange ? (
+                            <span className="interchange-codes">
+                              {station.research.interchange.lineCode && (
+                                <LineBadge
+                                  className="badge-mini"
+                                  code={station.research.interchange.lineCode}
+                                  title={station.research.interchange.label}
+                                />
+                              )}
+                              <span>{station.research.interchange.label}</span>
+                            </span>
+                          ) : station.interchange.length ? (
                             <span className="interchange-codes">
                               {/* Line codes, in that line's own colour — the
                                   interchanging station's own code on the other
@@ -197,6 +212,8 @@ export default function StationDataPage() {
                                 )
                               })}
                             </span>
+                          ) : station.recordSource === 'primary-research' ? (
+                            <span className="absent">TBC</span>
                           ) : (
                             <span className="absent">—</span>
                           )}
@@ -218,14 +235,15 @@ export default function StationDataPage() {
                 ↓ taipei-metro-stations.json
               </a>
               <span className="download-meta">
-                {STATIONS.length} stations · all {byLine.length} lines
+                {tdxStationCount} TDX stations · JSON
               </span>
             </p>
             <p className="download-note">
-              Generated from the same records this page renders, so the file and the page
-              cannot disagree. Structure — elevated or underground — is deliberately
-              excluded: TDX does not publish it, and our own research on that is not
-              official data and should not travel inside a file labelled as though it were.
+              This download contains only the {tdxStationCount} TDX-backed records. The{' '}
+              {researchedStationCount} primary-sourced Sanying records appear on this page
+              and their station pages but are kept out of a file distributed under the TDX
+              licence. Structure — elevated or underground — is deliberately excluded from
+              the TDX export because the platform does not publish it.
             </p>
             <p className="download-note">
               Taiwan government open data, published by MOTC under the{' '}

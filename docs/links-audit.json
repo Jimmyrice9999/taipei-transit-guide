@@ -1,6 +1,6 @@
 {
-  "pages": 247,
-  "destinations": 175,
+  "pages": 259,
+  "destinations": 185,
   "ambiguous": [
     "Daan",
     "大安",
@@ -36,6 +36,8 @@
     "忠孝新生",
     "Touqianzhuang",
     "頭前庄",
+    "Dingpu",
+    "頂埔",
     "Banqiao",
     "板橋",
     "Shisizhang",
@@ -199,11 +201,6 @@
     },
     {
       "page": "/data/sources/",
-      "name": "Dingpu",
-      "href": "/rail/stations/bl01/"
-    },
-    {
-      "page": "/data/sources/",
       "name": "Tucheng",
       "href": "/rail/stations/bl03/"
     },
@@ -266,6 +263,11 @@
       "page": "/data/sources/",
       "name": "耕莘安康院區",
       "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/data/sources/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
     },
     {
       "page": "/ferry/",
@@ -396,6 +398,11 @@
       "page": "/rail/lines/",
       "name": "Luzhou",
       "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/rail/lines/sanying-line/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/rail/lines/songshan-xindian-line/",
@@ -631,6 +638,136 @@
       "page": "/rail/stations/k09/",
       "name": "Xindian",
       "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/rail/stations/lb01/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/rail/stations/lb01/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb01/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb02/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/rail/stations/lb02/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb02/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb03/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb03/",
+      "name": "Sanxia",
+      "href": "/rail/stations/lb06/"
+    },
+    {
+      "page": "/rail/stations/lb03/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb04/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb04/",
+      "name": "Sanxia",
+      "href": "/rail/stations/lb06/"
+    },
+    {
+      "page": "/rail/stations/lb04/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb05/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb05/",
+      "name": "長壽山",
+      "href": "/rail/stations/lb03/"
+    },
+    {
+      "page": "/rail/stations/lb05/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb06/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb06/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb07/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb08/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb09/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb10/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb10/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb11/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb11/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/rail/stations/lb12/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/lb12/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
     },
     {
       "page": "/rail/stations/o01/",

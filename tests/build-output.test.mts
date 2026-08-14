@@ -266,7 +266,12 @@ test('the downloadable JSON is exported and parses', () => {
 test('the exported JSON agrees with the registry it was generated from', () => {
   const stations = JSON.parse(read('data/taipei-metro-stations.json'))
   const rows: { code: string }[] = Array.isArray(stations) ? stations : stations.stations
-  assert.equal(rows.length, STATIONS.length, 'the published JSON and the registry disagree on count')
+  const tdxBacked = STATIONS.filter((station) => station.recordSource === 'tdx')
+  assert.equal(
+    rows.length,
+    tdxBacked.length,
+    'the published TDX JSON and the TDX-backed registry disagree on count',
+  )
 })
 
 /* ---- links ---------------------------------------------------------- */

@@ -5,12 +5,11 @@
  * `LINES_WITH_STATION_PAGES` (lib/stations.ts). Wenhu is still the depth
  * standard — 24 stations hand-researched for structure, exits, engineering
  * numbers and photographs, via `lib/station-overlay.ts` — everything else on
- * this page is a plain TDX read: position, district, coordinates,
- * interchange, run times where TDX publishes them. A non-Wenhu station page
- * is thinner because the overlay and the photo have nothing for it yet, not
- * because anything was left out on purpose. Every field below is already
- * conditional on the data existing, so a thinner station just renders fewer
- * rows — it never states that it is thin.
+ * this page is normally a plain TDX read: position, district, coordinates,
+ * interchange, and run times where TDX publishes them. Sanying is the explicit
+ * exception: TDX has no LB records, so its twelve entries carry their own
+ * primary-source evidence and visibly mark unpublished fields TBC. A thinner
+ * station renders fewer rows rather than inventing values.
  */
 
 import type { Metadata } from 'next'
@@ -18,8 +17,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import CiteMark from '@/components/CiteMark'
 import Figure from '@/components/Figure'
 import PageShell from '@/components/PageShell'
+import References from '@/components/References'
 import RouteMap from '@/components/RouteMap'
 import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
@@ -33,6 +34,7 @@ import { getDistrictEn } from '@/lib/districts'
 import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStation, LINES_WITH_STATION_PAGES } from '@/lib/stations'
 import { formatRunTime, getFirstLast, getRunTime } from '@/lib/timetable'
+import { numberSources } from '@/lib/sources'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, stationSchema } from '@/lib/structured-data'
 
@@ -86,7 +88,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     parts.push(`${station.structure === 'elevated' ? 'Elevated' : 'Underground'} station.`)
   }
 
-  const closing = ['Coordinates, adjacent stations']
+  const closing = station.lat !== null && station.lon !== null
+    ? ['Coordinates', 'adjacent stations']
+    : ['Adjacent stations']
   if (getFirstLast(station.code).length > 0) closing.push('first and last trains')
   parts.push(`${closing.join(' and ')}.`)
 
@@ -140,6 +144,12 @@ export default async function StationPage({ params }: Props) {
   const service = getFirstLast(station.code)
   const geometry = getLineGeometry(station.line)
   const track = getLineTrack(station.line)
+  const stationReferences = station.research
+    ? numberSources(
+        station.research.sources,
+        new Set(station.research.sources.map((source) => source.id)),
+      )
+    : []
 
   const structureLabel =
     station.structure === 'unknown' ? 'Not established' : station.structure === 'elevated' ? 'Elevated' : 'Underground'
@@ -239,8 +249,26 @@ export default async function StationPage({ params }: Props) {
               </span>
             </p>
           )}
+          {station.research?.interchange && (
+            <p className="station-interchange">
+              <span className="station-interchange-label">Interchange</span>
+              <span className="interchange-codes">
+                {station.research.interchange.lineCode && (
+                  <LineBadge
+                    code={station.research.interchange.lineCode}
+                    title={station.research.interchange.label}
+                  />
+                )}
+                <span>{station.research.interchange.label}</span>
+                <CiteMark id={station.research.openingSource} references={stationReferences} />
+              </span>
+            </p>
+          )}
           <p className="station-standfirst">
             Stop {index + 1} of {stations.length}
+            {station.research && (
+              <CiteMark id={station.research.identitySource} references={stationReferences} />
+            )}
             {station.district && (
               <>
                 {' · '}
@@ -248,9 +276,19 @@ export default async function StationPage({ params }: Props) {
                   {getDistrictEn(station.district) ?? 'TBC'} (
                   <span lang="zh-Hant">{station.district}</span>)
                 </span>
+                {station.research && (
+                  <CiteMark id={station.research.identitySource} references={stationReferences} />
+                )}
               </>
             )}
-            {station.structure !== 'unknown' && <> · {structureLabel.toLowerCase()}</>}
+            {station.structure !== 'unknown' && (
+              <>
+                {' · '}{structureLabel.toLowerCase()}
+                {station.research && (
+                  <CiteMark id={station.research.structureSource} references={stationReferences} />
+                )}
+              </>
+            )}
           </p>
         </div>
       </div>
@@ -283,12 +321,27 @@ export default async function StationPage({ params }: Props) {
               <dt>Position</dt>
               <dd>
                 {index + 1} of {stations.length}
+                {station.research && (
+                  <CiteMark id={station.research.identitySource} references={stationReferences} />
+                )}
               </dd>
             </div>
             <div className="platform-fact">
               <dt>Interchange</dt>
               <dd>
-                {interchangeLines.length ? (
+                {station.research?.interchange ? (
+                  <>
+                    {station.research.interchange.lineCode && (
+                      <LineBadge
+                        className="badge-mini"
+                        code={station.research.interchange.lineCode}
+                        title={station.research.interchange.label}
+                      />
+                    )}{' '}
+                    {station.research.interchange.label}
+                    <CiteMark id={station.research.openingSource} references={stationReferences} />
+                  </>
+                ) : interchangeLines.length ? (
                   <span className="interchange-codes">
                     {/*
                       These are LINE codes, not station codes — "the lines
@@ -305,6 +358,8 @@ export default async function StationPage({ params }: Props) {
                       />
                     ))}
                   </span>
+                ) : station.research ? (
+                  'TBC'
                 ) : (
                   'None'
                 )}
@@ -317,6 +372,9 @@ export default async function StationPage({ params }: Props) {
                   <>
                     {getDistrictEn(station.district) ?? 'TBC'} (
                     <span lang="zh-Hant">{station.district}</span>)
+                    {station.research && (
+                      <CiteMark id={station.research.identitySource} references={stationReferences} />
+                    )}
                   </>
                 ) : (
                   '—'
@@ -325,7 +383,12 @@ export default async function StationPage({ params }: Props) {
             </div>
             <div className="platform-fact">
               <dt>Structure</dt>
-              <dd>{structureLabel}</dd>
+              <dd>
+                {structureLabel}
+                {station.research && (
+                  <CiteMark id={station.research.structureSource} references={stationReferences} />
+                )}
+              </dd>
             </div>
             {/*
               Exits, from the builder's own station table. Eleven of Wenhu's
@@ -337,7 +400,45 @@ export default async function StationPage({ params }: Props) {
             {station.exits !== null && (
               <div className="platform-fact">
                 <dt>Street exits</dt>
-                <dd>{station.exits}</dd>
+                <dd>
+                  {station.exits}
+                  {station.research && (
+                    <CiteMark id={station.research.mapSource} references={stationReferences} />
+                  )}
+                </dd>
+              </div>
+            )}
+            {station.research && (
+              <div className="platform-fact">
+                <dt>Facilities</dt>
+                <dd>
+                  {station.research.facilities}
+                  <CiteMark id={station.research.mapSource} references={stationReferences} />
+                </dd>
+              </div>
+            )}
+            {station.research?.additionalName && (
+              <div className="platform-fact">
+                <dt>Additional name</dt>
+                <dd>
+                  <span lang="zh-Hant">{station.research.additionalName}</span>
+                  <CiteMark
+                    id={station.research.additionalNameSource ?? ''}
+                    references={stationReferences}
+                  />
+                </dd>
+              </div>
+            )}
+            {station.research?.formerName && (
+              <div className="platform-fact">
+                <dt>Former official name</dt>
+                <dd>
+                  {station.research.formerName.name} (
+                  <span lang="zh-Hant">{station.research.formerName.nameZh}</span>), announced{' '}
+                  {station.research.formerName.announced}; renamed{' '}
+                  {station.research.formerName.renamed}
+                  <CiteMark id={station.research.formerName.source} references={stationReferences} />
+                </dd>
               </div>
             )}
             {station.engineering && (
@@ -352,7 +453,12 @@ export default async function StationPage({ params }: Props) {
             )}
             <div className="platform-fact">
               <dt>Opened</dt>
-              <dd>TBC</dd>
+              <dd>
+                {station.research ? '30 June 2026' : 'TBC'}
+                {station.research && (
+                  <CiteMark id={station.research.openingSource} references={stationReferences} />
+                )}
+              </dd>
             </div>
             <div className="platform-fact">
               <dt>Operator</dt>
@@ -366,8 +472,39 @@ export default async function StationPage({ params }: Props) {
                 ) : (
                   station.operator
                 )}
+                {station.research && (
+                  <CiteMark id={station.research.openingSource} references={stationReferences} />
+                )}
               </dd>
             </div>
+            {station.research && (
+              <>
+                <div className="platform-fact">
+                  <dt>Trial fare</dt>
+                  <dd>
+                    Stored-value cards ride free from 30 June to 31 August 2026;
+                    riders without one need a single-journey ticket.
+                    <CiteMark id={station.research.openingSource} references={stationReferences} />
+                  </dd>
+                </div>
+                <div className="platform-fact">
+                  <dt>Trial hours</dt>
+                  <dd>
+                    08:00–22:00 from 1 August; 06:00–24:00 announced for 16–31 August.
+                    {station.research.scheduleSources.map((source) => (
+                      <CiteMark key={source} id={source} references={stationReferences} />
+                    ))}
+                  </dd>
+                </div>
+                <div className="platform-fact">
+                  <dt>Normal fare</dt>
+                  <dd>
+                    NT$20–35; the operator has not announced the charging start date.
+                    <CiteMark id={station.research.openingSource} references={stationReferences} />
+                  </dd>
+                </div>
+              </>
+            )}
             {/*
               Depots on this line, not "the depot serving this station".
               ────────────────────────────────────────────────────────────────
@@ -463,14 +600,25 @@ export default async function StationPage({ params }: Props) {
         <dl className="detail-list">
           <div>
             <dt>Address</dt>
-            <dd lang="zh-Hant">{station.address || <span className="absent">Not published</span>}</dd>
+            <dd>
+              {station.address ? (
+                <span lang="zh-Hant">{station.address}</span>
+              ) : (
+                <span className="absent">TBC</span>
+              )}
+              {station.research && (
+                <CiteMark id={station.research.identitySource} references={stationReferences} />
+              )}
+            </dd>
           </div>
           <div>
             <dt>Coordinates</dt>
             <dd>
-              <code>
-                {station.lat?.toFixed(6)}, {station.lon?.toFixed(6)}
-              </code>
+              {station.lat !== null && station.lon !== null ? (
+                <code>{station.lat.toFixed(6)}, {station.lon.toFixed(6)}</code>
+              ) : (
+                <span className="absent">TBC</span>
+              )}
             </dd>
           </div>
         </dl>
@@ -503,6 +651,14 @@ export default async function StationPage({ params }: Props) {
               </table>
             </div>
           </>
+        )}
+
+        {station.research && (
+          <p className="provenance-note wide">
+            Station order is the operator’s published LB01–LB12 sequence.
+            <CiteMark id={station.research.identitySource} references={stationReferences} /> Coordinates
+            remain TBC because no primary tabular coordinate publication was found in this search.
+          </p>
         )}
 
         {/* Adjacent navigation: how people actually read a line. */}
@@ -542,6 +698,8 @@ export default async function StationPage({ params }: Props) {
             </span>
           )}
         </nav>
+
+        {station.research && <References references={stationReferences} />}
       </div>
     </PageShell>
   )

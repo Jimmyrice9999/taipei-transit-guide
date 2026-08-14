@@ -1,6 +1,15 @@
+# Research corpus warning
+
+This file is a lead index, not a source. Verify claims against the underlying
+publication before using them. The twelve station records and their per-claim
+primary evidence are now documented separately in
+`docs/research/rail/stations/sanying-line-stations.md`.
+
+---
+
 # Sanying Line 三鶯線 — research
 
-New Taipei Metro's newest line, opened five weeks ago. English coverage is
+New Taipei Metro's newest line, opened six weeks ago. English coverage is
 effectively nonexistent, and the free-trial period ends 31 August 2026.
 
 **Not published. Verify before promoting to content.**
@@ -54,8 +63,10 @@ inspection covering trains, stations, signalling and evacuation equipment.
 
 ## Stations
 
-Codes and Chinese names are from the operator. **English names need verifying
-against official signage — do not invent transliterations.**
+Codes, Chinese names, English names and addresses were verified against the
+operator's current station table and all twelve full station information
+sheets on 14 August 2026. See the station research file for the URLs and exact
+rows.
 
 | Code | Chinese | Location | Note |
 |---|---|---|---|
@@ -72,17 +83,15 @@ against official signage — do not invent transliterations.**
 | LB11 | 永吉公園 | Yingge, Yingtao Rd | |
 | LB12 | 鶯桃福德 | Yingge, Yingtao Rd / Fude 1st Rd junction | Named after the junction |
 
-### Naming conflict — resolve before publishing
+### Naming history — resolved from the primary notice
 
 **LB03 appears as both 挖子 (Wazi) and 長壽山 (Changshoushan).**
 
-The 2017 Liberty Times report of the official naming announcement lists 挖子.
-NTMC's current route page lists 長壽山. Several 2025–26 guides still print 挖子.
-
-Almost certainly a rename between announcement and opening, but that isn't
-established. **Verify, and publish the rename with its date** — this is exactly
-the kind of detail an English reference should carry, and the kind that
-propagates wrong when nobody checks.
+The original New Taipei City announcement of 12 July 2017 lists 挖子. The
+city's formal 9 June 2020 gazette notice states `LB03站：挖子，更名為「長壽山」。`
+NTMC's current station table and information sheet use 長壽山 / Changshoushan.
+Both names are published on the station page with their dates; 挖子 is not a
+current alternative.
 
 ### Station naming principles
 
@@ -132,7 +141,7 @@ another attempt — Hitachi Rail's own releases would settle it.
 The gap between initial and design headway is worth stating — a new line runs
 conservatively while stability is proven, exactly as Wenhu did in 2009.
 
-### Fares (from 1 September 2026)
+### Normal fares (charging start date TBC)
 
 Banded by station count:
 
@@ -146,14 +155,20 @@ Banded by station count:
 End to end: **NT$35.** Concessionary fares (senior, accessibility, child) are
 **40% of the published fare**.
 
+The operator publishes the NT$20–35 band but says `實際收費日期將另行公告` — the
+actual charging date will be announced separately. The former “from 1
+September 2026” heading inferred a date from the end of the trial and did not
+survive the primary check.
+
 Accepted payment is unusually broad and worth documenting: EasyCard, iPass, some
 contactless credit cards, Apple Pay, Google Pay, LINE Pay, iPASS MONEY, Taishin
 Pay, and TWQR ride codes.
 
 ### Free trial period
 
-30 June – 31 August 2026. ~~Most guides say 10:00–20:00~~ — **see "Checked and
-failed" below; the hours changed on 1 August 2026 and this file was wrong.**
+30 June – 31 August 2026. Stored-value-card taps are free; riders without one
+need a single-journey ticket. Hours were 10:00–20:00 initially, 08:00–22:00
+from 1 August, and the operator announced 06:00–24:00 for 16–31 August.
 
 ---
 
@@ -224,3 +239,8 @@ Struck through above rather than deleted, so the same lead is not chased twice.
   2026: it appears in no operator material and no cited guide. It was published
   on the site marked as this site editorialising, which is the only honest way
   to carry it, and it should not be repeated as a fact.
+- **Fixed normal-fare start date** — Checked 2026-08-14. Failed because the operator
+  says the charging date will be announced separately. The NT$20–35 fare band
+  survives; the inferred start date does not.
+- **Unresolved LB03 rename** — Checked 2026-08-14. Failed because the city gazette was
+  found and read in full. It explicitly changes 挖子 to 長壽山 on 9 June 2020.

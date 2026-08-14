@@ -1,12 +1,14 @@
 /**
- * The station registry — composed, not hand-written.
+ * The station registry — composed from generated and researched records.
  *
  *   lib/stations.generated.ts   official data, written by `npm run stations`
  *   lib/station-overlay.ts      local research TDX does not publish
- *   this file                   merges the two and serves the site
+ *   lib/sanying-stations.ts     primary-sourced records absent from TDX
+ *   this file                   merges them and serves the site
  *
- * Nothing here is edited to add a station. Fetch with `npm run tdx`, regenerate
- * with `npm run stations`.
+ * TDX-backed stations are never edited here: fetch with `npm run tdx`, then
+ * regenerate with `npm run stations`. A line absent from TDX needs a separate,
+ * cited hand-maintained registry like Sanying's.
  *
  * Three jobs, as before:
  *   1. Gives every station code badge a name.
@@ -18,6 +20,7 @@
 
 import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
 import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
+import { SANYING_STATIONS, type SanyingResearch } from './sanying-stations.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
 export type PlannedInterchange = {
@@ -58,15 +61,24 @@ export type Station = {
   exits: number | null
   /** Lines that will serve this station but do not yet. Overlay. */
   planned: PlannedInterchange[]
+  /** Whether the record came from TDX or a documented primary-source research pass. */
+  recordSource: 'tdx' | 'primary-research'
+  /** Page-level evidence for a hand-researched station; null for TDX records. */
+  research: SanyingResearch | null
 }
 
-export const STATIONS: Station[] = GENERATED_STATIONS.map((station) => ({
-  ...station,
-  structure: STATION_OVERLAY[station.code]?.structure ?? 'unknown',
-  engineering: STATION_OVERLAY[station.code]?.engineering ?? '',
-  exits: STATION_OVERLAY[station.code]?.exits ?? null,
-  planned: STATION_OVERLAY[station.code]?.planned ?? [],
-}))
+export const STATIONS: Station[] = [
+  ...GENERATED_STATIONS.map((station) => ({
+    ...station,
+    structure: (STATION_OVERLAY[station.code]?.structure ?? 'unknown') as Structure,
+    engineering: STATION_OVERLAY[station.code]?.engineering ?? '',
+    exits: STATION_OVERLAY[station.code]?.exits ?? null,
+    planned: STATION_OVERLAY[station.code]?.planned ?? [],
+    recordSource: 'tdx' as const,
+    research: null,
+  })),
+  ...SANYING_STATIONS,
+]
 
 /*
  * Keyed on the UPPERCASED code, because lookups uppercase too.

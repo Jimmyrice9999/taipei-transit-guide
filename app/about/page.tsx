@@ -70,8 +70,9 @@ export default function AboutPage() {
 
         <h3>Official data where it exists</h3>
         <p>
-          Station names, codes, running order, coordinates, interchanges, route lengths and
-          end-to-end times come from{' '}
+          For the {STATIONS.filter((station) => station.recordSource === 'tdx').length}{' '}
+          stations the platform carries, names, codes, running order, coordinates,
+          interchanges, route lengths and end-to-end times come from{' '}
           <a href={PROVENANCE.sourceUrl} rel="noreferrer">
             TDX
           </a>
@@ -81,9 +82,11 @@ export default function AboutPage() {
           June 2026 and has no record on the platform at all; its colour was read instead
           from the operator's own line mark, and{' '}
           <Link href="/data/line-colours/">the line colours page</Link> says exactly which
-          file and what it was checked against. None of it is transcribed by hand, and the
-          pipeline that reads it is committed to the repository, so the same figures come
-          out for anyone who runs it.
+          file and what it was checked against. TDX has no Sanying station dataset either,
+          so LB01–LB12 are maintained in a separate hand-researched registry from the
+          operator's station table and twelve information sheets. Every displayed Sanying
+          fact links to that primary evidence, and coordinates remain TBC. The generated
+          TDX registry itself is not hand-edited.
         </p>
         <p>
           That decision has already paid for itself twice. Every English-language line
@@ -174,10 +177,12 @@ export default function AboutPage() {
           code on the site validates and any of them can be looked up on{' '}
           <Link href="/data/stations/">the station records page</Link>, and every one of them
           now has a page of its own — position, district, coordinates, interchanges, and run
-          times where TDX publishes them. Wenhu's 24 go further: TDX does not publish
+          times where its source publishes them. Wenhu's 24 go further: TDX does not publish
           structure, street exits or engineering numbers, so those come from a hand-built
           overlay, plus a photograph for every station. A station on another line is a plain
-          TDX read until someone researches it the way Wenhu was researched.
+          TDX read until someone researches it the way Wenhu was researched. Sanying's 12
+          are the other exception: primary-sourced station records, with unavailable fields
+          shown as TBC rather than inferred from maps.
         </p>
 
         <h2 className="section-heading">Corrections</h2>

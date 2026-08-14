@@ -1,5 +1,5 @@
 {
-  "exports": 220,
+  "exports": 222,
   "cssClasses": 306,
   "imageSidecars": 70,
   "unusedExports": [
@@ -161,7 +161,7 @@
     {
       "name": "PlannedInterchange",
       "file": "lib/stations.ts",
-      "line": 23
+      "line": 26
     },
     {
       "name": "Role",

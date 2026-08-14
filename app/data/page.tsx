@@ -90,10 +90,13 @@ export default function DataPage() {
                     records now, so it cannot go stale again. */}
                 All {STATIONS.length} stations across{' '}
                 {new Set(STATIONS.map((s) => s.line)).size} lines — codes, Chinese and
-                English names, coordinates, interchanges and running order. Downloadable as
-                JSON.
+                English names, coordinates where published, interchanges and running order.
+                TDX-backed records are downloadable as JSON; Sanying's twelve records cite
+                the operator on their station pages.
               </span>
-              <span className="data-card-meta">{STATIONS.length} stations · JSON</span>
+              <span className="data-card-meta">
+                {STATIONS.length} stations · mixed provenance
+              </span>
             </Link>
 
             <Link href="/data/sources/" className="data-card">

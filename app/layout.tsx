@@ -305,6 +305,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   {/* The retrieval date flatters the data — MOTC's own records
                       are older than that, and a reader deserves the real one. */}
                   source last updated {SOURCE_UPDATED}.{' '}
+                  The 12 Sanying station records absent from TDX are sourced directly to
+                  New Taipei Metro and government publications on their pages.{' '}
                   <Link href="/data/provenance/">Provenance</Link>.
                 </>
               ) : (
