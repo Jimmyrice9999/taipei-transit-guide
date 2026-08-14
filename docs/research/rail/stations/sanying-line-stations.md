@@ -131,6 +131,35 @@ The current name is LB03 長壽山 / Changshoushan. 挖子 / Wazi is retained on
 the station page as the former official construction-era name, not treated as
 an alternative current name.
 
+### Coordinates from the New Taipei open-data register
+
+**Source:** “New Taipei City important landmarks information” / `新北市重要地標資訊` — New Taipei City Government Research, Development and Evaluation Commission (`新北市政府研究發展考核委員會`), PRIMARY, High confidence for the coordinates it publishes because this is the government's machine-readable landmark register.
+
+Landing page: https://data.ntpc.gov.tw/datasets/6dcff24a-838c-40fb-a9df-f1160afafe84
+
+Full data endpoint: https://data.ntpc.gov.tw/api/datasets/6dcff24a-838c-40fb-a9df-f1160afafe84/json?page=0&size=3000
+
+The full landing page describes the dataset as `這個資料集是源自於「新北iMAP」的資料，提供政府機關、學校、車站等地標資訊` and lists the coordinate fields `twd97_x` and `twd97_y`. The full endpoint returned 2,059 records; twelve records have `地標類型` = `捷運站` and identify the twelve Sanying stations. Their original records are:
+
+| Code | Dataset record name | TWD97 easting | TWD97 northing | WGS84 latitude | WGS84 longitude |
+|---|---|---:|---:|---:|---:|
+| LB01 | `頂埔站(三鶯線)(施工中)` | 292226 | 2761296 | 24.959265 | 121.418186 |
+| LB02 | `媽祖田站(三鶯線)(施工中)` | 291611 | 2760679 | 24.953703 | 121.412077 |
+| LB03 | `挖子站(長壽山)(三鶯線)` | 290650 | 2759651 | 24.944434 | 121.402531 |
+| LB04 | `橫溪站(三鶯線)(施工中)` | 289427 | 2758872 | 24.937416 | 121.390398 |
+| LB05 | `龍埔站(三峽廣行宮)(三鶯線)` | 288841 | 2759171 | 24.940122 | 121.384604 |
+| LB06 | `三峽站(國家教育研究院)(三鶯線)` | 288079 | 2759017 | 24.938741 | 121.377055 |
+| LB07 | `臺北大學站(恩主公醫院)(三鶯線)` | 287068 | 2759071 | 24.939240 | 121.367045 |
+| LB08 | `鶯歌車站(三鶯線)(施工中)` | 285978 | 2760629 | 24.953318 | 121.356293 |
+| LB09 | `陶瓷老街站(三鶯線)(施工中)` | 285286 | 2760552 | 24.952631 | 121.349438 |
+| LB10 | `國華站(三鶯線)(施工中)` | 284580 | 2760747 | 24.954399 | 121.342452 |
+| LB11 | `永吉公園站(三鶯線)(施工中)` | 283745 | 2761478 | 24.961007 | 121.334200 |
+| LB12 | `鶯桃福德站(三鶯線)(施工中)` | 283384 | 2762199 | 24.967520 | 121.330643 |
+
+The WGS84 values in the last two columns are deterministic inverse-projection results from the published TWD97/TM2 zone-121 (EPSG:3826) pairs, rounded to six decimals for the station registry. No point was estimated from a map, an address, or an adjacent station. The current NTMC table supplies the current English/Chinese names and codes; the dataset's project-era labels are retained above so the name differences remain checkable.
+
+The operator station table, station information sheets, DORTS project page and MOTC inspection notice were also fetched in full. None publishes a latitude/longitude field; the New Taipei landmark register is the first primary source in this search that supplies point coordinates.
+
 ## Conflicts
 
 1. **LB03 name:** the New Taipei City naming announcement of 12 July 2017
@@ -145,6 +174,13 @@ an alternative current name.
 3. **Normal-fare start:** the previous line research asserted “from 1 September
    2026”; the operator publishes NT$20–35 but says the charging date will be
    announced separately. The fare values remain, but the start date is TBC.
+4. **Project-era station labels:** the open-data register still appends
+   `(三鶯線)(施工中)` to LB01, LB02, LB04 and LB08–LB12, while the current NTMC
+   table publishes the operating names without that status. It also retains
+   `挖子站(長壽山)` for LB03 and parenthetical names `三峽廣行宮`,
+   `國家教育研究院` and `恩主公醫院` for LB05–LB07. NTMC/DORTS current names
+   are the page names; the register's labels are published alongside the
+   coordinates rather than silently normalised.
 
 ## Checked and failed
 
@@ -152,10 +188,12 @@ an alternative current name.
   committed TDX extract. The previous run confirmed the platform gap
   and the current `data/tdx/` files contain no LB01–LB12 station records; the
   generated registry was not used or edited.
-- **Station coordinates** — Checked 2026-08-14. Nothing in the full operator station
-  table, information sheets, DORTS station table or MOTC inspection page
-  publishes coordinates as station records. Reason: map placement or address
-  geocoding would be inference, so latitude and longitude remain TBC.
+- **Direct NTMC/DORTS latitude/longitude fields** — Checked 2026-08-14. Nothing in
+  the full operator station table, information sheets, DORTS station table or
+  MOTC inspection page publishes WGS84 latitude/longitude fields. A separate
+  full fetch of the New Taipei open-data landmark register did find all twelve
+  station point records as TWD97 `twd97_x`/`twd97_y`; those published values are
+  converted deterministically for the pages, not inferred from a map.
 - **MOTC operating-permit announcement** — Checked 2026-08-14. The MOTC inspection page
   was fetched, but no full MOTC page announcing the permit was found. Reason:
   New Taipei City’s Transportation Department states that the permit letter
@@ -171,8 +209,10 @@ an alternative current name.
 
 ## Stated gaps
 
-- Coordinates remain TBC. A machine-readable operator, DORTS or TDX station
-  table with published latitude and longitude would settle them.
+- The direct operator and DORTS pages still do not publish WGS84 latitude and
+  longitude fields. The displayed points come from the New Taipei landmark
+  register's TWD97 fields; a primary source publishing WGS84 coordinates would
+  remove that conversion step.
 - Normal-fare commencement remains TBC. A dated operator fare notice would
   settle it.
 - First and last train times by station remain TBC. A station-specific operator

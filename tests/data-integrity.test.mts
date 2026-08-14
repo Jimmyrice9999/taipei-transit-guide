@@ -71,11 +71,12 @@ test('the primary-sourced Sanying registry is complete and explicit about TDX ga
   for (const station of sanying) {
     assert.equal(station.recordSource, 'primary-research')
     assert.equal(sourceById.has(station.code), false, `${station.code} unexpectedly exists in TDX`)
-    assert.equal(station.lat, null)
-    assert.equal(station.lon, null)
+    assert.notEqual(station.lat, null, `${station.code} has no primary-sourced coordinate`)
+    assert.notEqual(station.lon, null, `${station.code} has no primary-sourced coordinate`)
     assert.ok(station.address, `${station.code} has no primary-sourced address`)
     assert.ok(station.exits !== null, `${station.code} has no primary-sourced exit count`)
     assert.ok(station.research, `${station.code} has no station-page research record`)
+    assert.equal(station.research!.coordinateSource, 'ntpc-sanying-landmark-coordinates')
     assert.ok(station.research!.sources.every((source) => source.kind === 'primary'))
     assert.deepEqual(
       station.research!.sources.flatMap((source) => validateSource(source)),

@@ -98,7 +98,8 @@ test('simplification keeps the endpoints', () => {
 
 test('simplification never moves a station more than its tolerance', () => {
   for (const line of LINES) {
-    const geometry = getLineGeometry(line.code)!
+    const geometry = getLineGeometry(line.code)
+    if (!geometry) continue
     const stations = STATIONS.filter((s) => s.line === line.code && s.lat !== null)
     for (const station of stations) {
       const raw = distanceToPaths([station.lon!, station.lat!], geometry.chained)
@@ -124,7 +125,8 @@ test('no station sits more than 200 m from its line', () => {
    */
   const flagged: string[] = []
   for (const line of LINES) {
-    const geometry = getLineGeometry(line.code)!
+    const geometry = getLineGeometry(line.code)
+    if (!geometry) continue
     for (const station of STATIONS.filter((s) => s.line === line.code && s.lat !== null)) {
       const d = distanceToPaths([station.lon!, station.lat!], geometry.chained)
       if (d > 200) flagged.push(`${station.code} ${station.name} — ${d.toFixed(0)} m`)

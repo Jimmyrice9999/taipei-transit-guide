@@ -615,7 +615,12 @@ export default async function StationPage({ params }: Props) {
             <dt>Coordinates</dt>
             <dd>
               {station.lat !== null && station.lon !== null ? (
-                <code>{station.lat.toFixed(6)}, {station.lon.toFixed(6)}</code>
+                <>
+                  <code>{station.lat.toFixed(6)}, {station.lon.toFixed(6)}</code>
+                  {station.research?.coordinateSource && (
+                    <CiteMark id={station.research.coordinateSource} references={stationReferences} />
+                  )}
+                </>
               ) : (
                 <span className="absent">TBC</span>
               )}
@@ -656,8 +661,12 @@ export default async function StationPage({ params }: Props) {
         {station.research && (
           <p className="provenance-note wide">
             Station order is the operator’s published LB01–LB12 sequence.
-            <CiteMark id={station.research.identitySource} references={stationReferences} /> Coordinates
-            remain TBC because no primary tabular coordinate publication was found in this search.
+            <CiteMark id={station.research.identitySource} references={stationReferences} /> Coordinates{' '}
+            {station.research.coordinateSource ? (
+              <>come from the official New Taipei landmark records, converted from their published TWD97 fields to WGS84 for display.<CiteMark id={station.research.coordinateSource} references={stationReferences} /></>
+            ) : (
+              <>remain TBC because no primary tabular coordinate publication was found in this search.</>
+            )}
           </p>
         )}
 

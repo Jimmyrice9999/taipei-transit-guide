@@ -138,6 +138,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The operator's current table of LB01–LB12 station codes, names, addresses and running order.
+  - id: dorts-sanying-route
+    title: Sanying Line project route and stations
+    titleOriginal: 三鶯線
+    publisher: New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)
+    url: https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: The builder's current project station list and its notes on appended station names.
+  - id: ntpc-sanying-landmark-coordinates
+    title: New Taipei City important landmarks information
+    titleOriginal: 新北市重要地標資訊
+    publisher: New Taipei City Government Research, Development and Evaluation Commission (新北市政府研究發展考核委員會)
+    url: https://data.ntpc.gov.tw/api/datasets/6dcff24a-838c-40fb-a9df-f1160afafe84/json?page=0&size=3000
+    accessed: 2026-08-14
+    kind: primary
+    lang: zh-Hant
+    note: Official 捷運站 records for all twelve Sanying stations, publishing TWD97 point fields used for the displayed WGS84 coordinates.
 ---
 
 Taiwan opened a new railway six weeks ago and, as of this page's writing, you
@@ -193,11 +211,12 @@ last observation is this page editorialising, not a sourced claim.
   be cited. Marked TBC above rather than borrowed.
 - **The depot.** zh.wikipedia names 三峽機廠 in Sanxia[^zh-sanying]; nothing
   else about it is established here yet.
-- **Station coordinates.** TDX still has no Sanying station dataset. The twelve
-  station pages therefore use the operator's current station table and its
-  station-specific information sheets for names, addresses, exits and
-  facilities[^ntmetro-stations]. Coordinates remain TBC rather than being
-  copied from a map or geocoded from the addresses.
+- **Station pages and coordinates.** TDX still has no Sanying station dataset.
+  The twelve station pages already exist in the manually sourced registry,
+  built from NTMC/DORTS primary station material[^ntmetro-stations][^dorts-sanying-route].
+  Their displayed coordinates come from the official New Taipei landmark
+  records' published TWD97 point fields, converted to WGS84 without map
+  geocoding[^ntpc-sanying-landmark-coordinates].
 - **The extension.** An extension toward Bade in Taoyuan has Executive Yuan
   approval[^zh-sanying]; its state of construction is not established here.
 

@@ -5,8 +5,8 @@
  * on 14 August 2026. These records therefore sit beside, rather than inside,
  * stations.generated.ts. Every displayed fact points to the operator,
  * builder, Ministry of Transportation, or New Taipei City source that
- * publishes it; coordinates stay null because no primary tabular source was
- * found for them.
+ * publishes it; coordinates use the official New Taipei landmark register's
+ * TWD97 point records, converted to WGS84 for display.
  */
 
 import type { Source } from './sources.ts'
@@ -21,6 +21,7 @@ export type SanyingResearch = {
   sources: Source[]
   identitySource: string
   mapSource: string
+  coordinateSource?: string
   structureSource: string
   openingSource: string
   scheduleSources: string[]
@@ -45,8 +46,8 @@ type SanyingStation = {
   nameZh: string
   district: string
   address: string
-  lat: null
-  lon: null
+  lat: number | null
+  lon: number | null
   sequence: number
   chainageKm: null
   interchange: string[]
@@ -101,6 +102,42 @@ const dortsRoute: Source = {
   kind: 'primary',
   lang: 'zh-Hant',
   note: 'The builder’s current station list, construction locations and officially appended station names.',
+}
+
+const ntpcLandmarkCoordinates: Source = {
+  id: 'ntpc-sanying-landmark-coordinates',
+  title: 'New Taipei City important landmarks information',
+  titleOriginal: '新北市重要地標資訊',
+  publisher: 'New Taipei City Government Research, Development and Evaluation Commission (新北市政府研究發展考核委員會)',
+  url: 'https://data.ntpc.gov.tw/api/datasets/6dcff24a-838c-40fb-a9df-f1160afafe84/json?page=0&size=3000',
+  accessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The official open-data records whose 地標類型 is 捷運站 and whose 地標名稱 identifies each 三鶯線 station. The records publish TWD97 TM2 fields twd97_x and twd97_y; the registry converts those published EPSG:3826 values to WGS84 latitude/longitude for display without estimating from a map.',
+}
+
+/*
+ * The official landmark API publishes TWD97 / TM2 zone 121 (EPSG:3826)
+ * easting/northing pairs. These are the deterministic inverse-projection
+ * results used by the page, rounded to six decimals to match the registry's
+ * other WGS84 station coordinates. They are not map estimates or interpolated
+ * points. The source rows are listed in the research file beside each pair.
+ */
+const ntpcLandmarkWgs84: Record<string, { lat: number; lon: number }> = {
+  LB01: { lat: 24.959265, lon: 121.418186 },
+  LB02: { lat: 24.953703, lon: 121.412077 },
+  LB03: { lat: 24.944434, lon: 121.402531 },
+  LB04: { lat: 24.937416, lon: 121.390398 },
+  LB05: { lat: 24.940122, lon: 121.384604 },
+  LB06: { lat: 24.938741, lon: 121.377055 },
+  LB07: { lat: 24.939240, lon: 121.367045 },
+  LB08: { lat: 24.953318, lon: 121.356293 },
+  LB09: { lat: 24.952631, lon: 121.349438 },
+  LB10: { lat: 24.954399, lon: 121.342452 },
+  LB11: { lat: 24.961007, lon: 121.334200 },
+  LB12: { lat: 24.967520, lon: 121.330643 },
 }
 
 const motcInspection: Source = {
@@ -207,6 +244,8 @@ const rows: Row[] = [
 export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
   const map = mapSource(row.code, row.name, row.nameZh, row.mapUrl)
   const sources = [stationList, map, opening, motcInspection, augustHours, laterAugustHours]
+  const coordinates = ntpcLandmarkWgs84[row.code]
+  if (coordinates) sources.push(ntpcLandmarkCoordinates)
   if (row.additionalNameSource === 'route') sources.push(dortsRoute)
   if (row.additionalNameSource === 'gazette' || row.formerName) sources.push(namingGazette)
 
@@ -218,8 +257,8 @@ export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
     nameZh: row.nameZh,
     district: row.district,
     address: row.address,
-    lat: null,
-    lon: null,
+    lat: coordinates?.lat ?? null,
+    lon: coordinates?.lon ?? null,
     sequence: index + 1,
     chainageKm: null,
     interchange: [],
@@ -232,6 +271,7 @@ export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
       sources,
       identitySource: stationList.id,
       mapSource: map.id,
+      coordinateSource: coordinates ? ntpcLandmarkCoordinates.id : undefined,
       structureSource: motcInspection.id,
       openingSource: opening.id,
       scheduleSources: [augustHours.id, laterAugustHours.id],
