@@ -7226,6 +7226,35 @@ npm run research, cite, verify, claims, links, a11y, unused and npm test are
 green; the full suite remains 185/185. The interim link audit is 370 unlinked
 mentions for Part 5. AGENTS.md remains the user-owned unstaged change.
 
+# Run 22 — Part 6, integrity and rendering verification, 14 August 2026
+
+Pass 1 audited the fresh post-Part-5 tree before reporting it as complete.
+`npm run verify` and `npm test` both rebuilt 491 pages and passed every listed
+gate; `npm run cite` resolved all 265 markers, `npm run links` reported 368
+intentional unlinked mentions, and the full suite remains 185/185. The build
+reported no missing Han glyphs. Station-page claims are not among the 32
+remaining allowed ASSERTED claims, which are confined to five older non-station
+content files. Four older non-station pages still contain explicit scope
+caveats (“not yet covered” / “cannot say”) in `content/rail/_index.md`,
+`content/bike/history/youbike.md`, `content/bus/network/_index.md`, and
+`content/rail/lines/wenhu-line.md`; Part 6 is verification-only, so these were
+not edited. Content word count stayed 63,192 before and after this part.
+
+Pass 2 captured 25 page types at each requested width (375, 768, 1440, 1920,
+2560): 125 fresh screenshots at `docs/screenshots/<page>-<width>.png`. A
+bounded Playwright pass checked all 125 combinations plus the two caption-link
+pages, 135 checks total. It found no document overflow, wrong station badge,
+missing interchange status, missing adjacent-station navigation, unresolved
+footnote, or Chinese-font fallback. Captions and attributions render; TBC
+values are visible; the network map, tables and strip maps are intact. Looking
+at the fresh screenshots showed coherent mobile stacking, sane centered prose
+columns at 1440–2560, and no unambiguous visual defect. The numbering-ladder
+figure has explanatory text rather than a separate caption; this is not a
+defect. The in-app browser was unavailable and `npm run verify:browser` exceeded
+its 120-second bound, so its stale JSON report was not used as evidence. No
+content or image records changed; only the requested screenshot set and this
+log changed. AGENTS.md remains the user-owned unstaged change.
+
 # Run 22 — Part 5, link audit, 14 August 2026
 
 Audited the complete post-K set of 370 unlinked mentions; the brief's 179 was
