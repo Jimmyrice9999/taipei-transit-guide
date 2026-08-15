@@ -7336,3 +7336,27 @@ import, `npx tsc --noEmit`, citation validation, the fresh 491-page build,
 way: 265 citations still resolve, and the full unit suite remains 185/185.
 The unused-export audit correspondingly reports one fewer unused export.
 AGENTS.md remains the user-owned unstaged change.
+
+# Run 23 — Part 0, browser verification reflow and axe, 15 August 2026
+
+Audited the fresh 491-page build, the checked-in browser report, and the
+public Actions run before editing. The checked-in report was stale and clean;
+the fresh local harness reproduced the 18 listed reflow failures. All were
+caused by long station interchange notes inside `.interchange-codes`, an
+unshrinkable flex item. The Actions run had the same 18 reflows plus one
+serious axe failure; GitHub exposed only ten annotations and its artifact/log
+download requires repository-admin authentication here.
+
+Made the interchange group shrink and wrap its prose child at 320/640 px,
+preserving the complete note and citation. Added explicit accessible names to
+the linked SVG station-map anchors; this fixed the CI axe target at A12, where
+22 map links had no discernible name. No content, source, image, TBC, or
+published-conflict data changed; no image was fetched.
+
+Fresh browser verification is clean: 0 reflow failures at both widths, 0
+spine overlaps, 0 axe violations across 259 pages, all 175 screenshots and 24
+print PDFs completed. One local run stopped during screenshots with
+`ERR_NETWORK_IO_SUSPENDED` at `/about/`; the immediate rerun completed, so the
+cause remains a one-run local Chromium/static-server interruption, not a
+reproducible site failure. `npm run cite`, `npm run verify`, and `npm test`
+pass; the full unit suite is 185/185. TBC and source conflicts are unchanged.

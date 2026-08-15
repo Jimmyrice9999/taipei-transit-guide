@@ -330,6 +330,7 @@ export default function RouteMap({
                 key={station.code}
                 href={station.href}
                 className="routemap-station is-link"
+                aria-label={`${station.code} ${station.name}${station.nameZh ? ` ${station.nameZh}` : ''}`}
                 data-code={station.code}
                 data-name={station.name}
                 data-zh={station.nameZh ?? ''}

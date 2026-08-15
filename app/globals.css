@@ -2528,6 +2528,26 @@ a.spine-station:focus-visible .spine-name {
   flex: none;
 }
 
+/*
+ * Transfer notes can be longer than the station title column. The header is a
+ * flex row, so an unshrinkable code group turns a sentence about an
+ * interchange into document-level horizontal overflow. Let the group take
+ * the remaining title width and let its prose child wrap inside it; the text,
+ * including the citation, stays fully reachable on narrow screens.
+ */
+.station-interchange .interchange-codes {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.station-interchange .interchange-codes > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 /* ------------------------------------------------------------------ */
 /* Geographic route map                                                */
 /* ------------------------------------------------------------------ */
