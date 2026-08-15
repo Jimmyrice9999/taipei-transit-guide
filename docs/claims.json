@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 984,
-    "tbc": 35,
+    "sourced": 1018,
+    "tbc": 115,
     "asserted": 32,
     "meta": 42
   },
@@ -49,6 +49,14 @@
       "meta": 0
     },
     {
+      "file": "content/bus/depots/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/garages/_index.md",
       "sources": 0,
       "sourced": 0,
@@ -82,6 +90,174 @@
     },
     {
       "file": "content/bus/operators/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-1.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-10.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-11-16hwwho.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-11-1pd3qjw.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-12.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-13.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-15.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-18.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-19.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-2.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-20-1vxfll4.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-20-bgsxaf.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-21.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-22.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-3.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-5.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-6.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-7-1kouq4z.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-7-1npwhqs.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/brown-7-ssatjm.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-brown/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,

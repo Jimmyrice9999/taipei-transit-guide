@@ -73,6 +73,25 @@ export function getNavTree(): NavSection[] {
   const lineRank = new Map(LINES.map((line, i) => [line.code, i]))
 
   const sections: NavSection[] = getSections().map((section) => {
+    /*
+     * Bus navigation is an index menu, not a sample of route pages. The bus
+     * architecture names these five stable browse keys; individual routes and
+     * the legacy garages folder stay out of the global bar.
+     */
+    if (section.slug === 'bus') {
+      return {
+        href: section.href,
+        title: section.title,
+        groups: [
+          { href: '/bus/network/', title: 'Network', links: [], truncated: false },
+          { href: '/bus/routes/', title: 'Routes', links: [], truncated: false },
+          { href: '/bus/operators/', title: 'Operators', links: [], truncated: false },
+          { href: '/bus/models/', title: 'Models', links: [], truncated: false },
+          { href: '/bus/depots/', title: 'Depots', links: [], truncated: false },
+        ],
+      }
+    }
+
     const groups: NavGroup[] = getTypes(section.slug)
       .map((type) => {
         const pages = getPages(section.slug, type.slug)

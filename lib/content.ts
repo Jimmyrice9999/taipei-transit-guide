@@ -546,6 +546,11 @@ export function getType(section: string, type: string): Folder {
   return readFolder([section], type)
 }
 
+/** A nested folder used by the bus route registry. */
+export function getFolder(parents: string[], slug: string): Folder {
+  return readFolder(parents, slug)
+}
+
 /* ------------------------------------------------------------------ */
 /* Pages                                                               */
 /* ------------------------------------------------------------------ */
@@ -651,8 +656,14 @@ function validateFrontmatter(relative: string, meta: PageMeta) {
   }
 }
 
-function readPageMeta(section: string, type: string, slug: string): PageMeta {
-  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
+function readPageMetaAt(
+  file: string,
+  relative: string,
+  section: string,
+  type: string,
+  slug: string,
+  href = `/${section}/${type}/${slug}/`,
+): PageMeta {
 
   /*
    * gray-matter throws on malformed YAML with a message that does not say
@@ -673,7 +684,7 @@ function readPageMeta(section: string, type: string, slug: string): PageMeta {
     section,
     type,
     slug,
-    href: `/${section}/${type}/${slug}/`,
+    href,
     title: toText(data.title) || titleFromSlug(slug),
     summary: toText(data.summary),
     order: typeof data.order === 'number' ? data.order : 999,
@@ -692,8 +703,13 @@ function readPageMeta(section: string, type: string, slug: string): PageMeta {
     aliases: Array.isArray(data.aliases) ? data.aliases.map(toText).filter(Boolean) : [],
   }
 
-  validateFrontmatter(`content/${section}/${type}/${slug}.md`, meta)
+  validateFrontmatter(relative, meta)
   return meta
+}
+
+function readPageMeta(section: string, type: string, slug: string): PageMeta {
+  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
+  return readPageMetaAt(file, `content/${section}/${type}/${slug}.md`, section, type, slug)
 }
 
 /** Every page inside one type folder, e.g. all Train > Lines pages. */
@@ -762,15 +778,24 @@ export function getLinePageHref(code: string | undefined | null): string | null 
   return linePageHrefs.get(code.toUpperCase()) ?? null
 }
 
-/** One page, with its Markdown body converted to HTML. */
-export async function getPage(section: string, type: string, slug: string): Promise<Page> {
-  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
+/** One page from an arbitrary overlay file, with its Markdown body converted to HTML. */
+export async function getPageFromFile(
+  file: string,
+  options: {
+    section: string
+    type: string
+    slug: string
+    href?: string
+    relative?: string
+  },
+): Promise<Page> {
+  const { section, type, slug } = options
   const { content } = matter(fs.readFileSync(file, 'utf8'))
 
-  const relative = `content/${section}/${type}/${slug}.md`
+  const relative = options.relative ?? `content/${section}/${type}/${slug}.md`
   const sectionStations: Record<string, string[]> = {}
   const autoLinks: LinkEntity[] = []
-  const meta = readPageMeta(section, type, slug)
+  const meta = readPageMetaAt(file, relative, section, type, slug, options.href)
 
   /*
    * Ids cited anywhere on the page. Seeded from the facts and specs blocks
@@ -841,6 +866,12 @@ export async function getPage(section: string, type: string, slug: string): Prom
     references: numberSources(meta.sources, used),
     autoLinks,
   }
+}
+
+/** One ordinary three-level content page. */
+export async function getPage(section: string, type: string, slug: string): Promise<Page> {
+  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
+  return getPageFromFile(file, { section, type, slug })
 }
 
 /**

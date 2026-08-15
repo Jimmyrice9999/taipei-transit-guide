@@ -251,9 +251,13 @@ function normalize(all) {
   for (const route of routeList) {
     const joins = new Map()
     for (const sequence of sequences.filter((item) => item.routeId === route.id)) for (const stop of sequence.stops) {
+      // A normalized name is only a candidate. For a published interchange,
+      // require the TDX stop itself to identify MRT service and retain the
+      // exact StopUID in the relationship. Ambiguous nearby names stay out.
+      if (!/捷運|MRT/i.test(`${stop.names.zh_tw} ${stop.names.en}`)) continue
       const candidates = rail.get(railName(stop.names.zh_tw)) ?? rail.get(railName(stop.names.en)) ?? []
       const unique = [...new Map(candidates.map((candidate) => [candidate.code, candidate])).values()]
-      if (unique.length === 1) joins.set(`${stop.stopUid}:${unique[0].code}`, { stopUid: stop.stopUid, stationCode: unique[0].code, lineCode: unique[0].lineCode, match: 'normalized-name' })
+      if (unique.length === 1) joins.set(`${stop.stopUid}:${unique[0].code}`, { stopUid: stop.stopUid, stationCode: unique[0].code, lineCode: unique[0].lineCode, match: 'stop-id' })
     }
     route.railJoins = [...joins.values()].sort((a, b) => `${a.stationCode}:${a.stopUid}`.localeCompare(`${b.stationCode}:${b.stopUid}`))
     route.stopSequenceIds = [...new Set(route.stopSequenceIds)].sort()

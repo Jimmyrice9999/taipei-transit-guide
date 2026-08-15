@@ -7499,3 +7499,33 @@ commuter/institutional shuttles (20 Neihu, 4 Nangang Software Park, 14 CB and
 classifier, route-group type, normalized route snapshot and metadata counts.
 The TDX refresh was attempted but timed out with no partial writes; no images,
 research sources, TBC fields or source conflicts were introduced.
+
+# Run 25 — Part 2, brown feeder pilot, 15 August 2026
+
+Built only `colour-brown`: one route-group index and 20 route pages at the
+canonical TDX slugs. The official full Taipei/New Taipei bus catalogue was read
+and lists the same 20 labels under `捷運棕線接駁公車`: 棕1, 棕2, 棕3, 棕5, 棕6,
+棕7, 棕7建業路, 棕7綠野香坡, 棕10, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18,
+棕19, 棕20, 棕21 and 棕22. The structured pages use the merged TDX route,
+operator, sequence, stop and shape records; fields absent from that layer stay
+TBC. No images were fetched.
+
+Negative case: all 20 names were checked for directional or trunk-name uses of
+棕. None was excluded; all are in the official brown-feeder class and only this
+class relationship links them to the Wenhu Line.
+
+Rail join audit: the original 110 candidate joins were reduced to 74 curated
+exact StopUID joins across all 20 routes. Thirty-six nearby/ambiguous candidate
+stop records remain unlinked. Render-time pages use only the 74 `match: stop-id`
+records; no name match is used.
+
+Research found full-page primary route detail for BR10, BR20 and BR7G. Conflicts
+retained: BR20’s `內科 - 故宮博物院` summary versus its `行善行愛路口` TDX/stop
+endpoint; the TDX-only `棕20預` identity versus the official page’s reservation
+detour description; and TDX BR7G versus the official 812→三鶯2 notice. The other
+16 route history/corridor/operator-change fields remain TBC. Operator pages were
+not built in this brown-only pilot.
+
+Verification: `npm run cite`, `npm run verify`, and `npm test` all passed; the
+full test suite reports 185/185. The final data assertion found 20 brown routes,
+20 crosswalk route records, 74 exact StopUID joins, and zero invalid joins.

@@ -1,5 +1,5 @@
 {
-  "pages": 259,
+  "pages": 281,
   "destinations": 185,
   "ambiguous": [
     "Daan",
@@ -63,6 +63,286 @@
       "page": "/bus/network/joint-operation/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Huzhou",
+      "href": "/rail/stations/br21/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Nangang Software Park",
+      "href": "/rail/stations/br23/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-10/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-11-16hwwho/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-11-1pd3qjw/",
+      "name": "Taipower Building",
+      "href": "/rail/stations/g08/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-11-1pd3qjw/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-12/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-12/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-12/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-13/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-15/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-15/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-18/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-18/",
+      "name": "Yongchun",
+      "href": "/rail/stations/bl19/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-19/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-19/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-1/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-1/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-1vxfll4/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-1vxfll4/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-1vxfll4/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-1vxfll4/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-bgsxaf/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-bgsxaf/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-bgsxaf/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-20-bgsxaf/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-21/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-22/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-22/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-22/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-22/",
+      "name": "Kanding",
+      "href": "/rail/stations/v11/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-3/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-5/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-6/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-6/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1kouq4z/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1kouq4z/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1kouq4z/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1kouq4z/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1kouq4z/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1npwhqs/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1npwhqs/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1npwhqs/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1npwhqs/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-1npwhqs/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "台北101/世貿",
+      "href": "/rail/stations/r03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
     },
     {
       "page": "/data/line-colours/",

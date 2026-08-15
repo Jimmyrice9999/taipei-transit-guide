@@ -12,6 +12,7 @@ import busRoutes from '../../data/tdx/bus/routes.json' with { type: 'json' }
 import busSequences from '../../data/tdx/bus/stop-sequences.json' with { type: 'json' }
 import busShapes from '../../data/tdx/bus/shapes.json' with { type: 'json' }
 import busStops from '../../data/tdx/bus/stops.json' with { type: 'json' }
+import confirmedBusRailJoins from '../../data/tdx/bus/rail-stop-joins.json' with { type: 'json' }
 
 export type BusRouteGroup =
   | 'colour-red'
@@ -47,7 +48,7 @@ export type BusRailJoin = {
   stopUid: string
   stationCode: string
   lineCode: string
-  match: 'normalized-name'
+  match: 'stop-id'
 }
 
 export type BusSubRoute = {
@@ -138,7 +139,17 @@ export type BusOperator = {
   sourceCities: string[]
 }
 
-export const BUS_ROUTES = busRoutes as unknown as BusRoute[]
+const confirmedJoinsByRoute = new Map(
+  (confirmedBusRailJoins as Array<{ routeId: string; joins: BusRailJoin[] }>).map((record) => [
+    record.routeId,
+    record.joins,
+  ]),
+)
+
+export const BUS_ROUTES = (busRoutes as unknown as BusRoute[]).map((route) => {
+  const joins = confirmedJoinsByRoute.get(route.id)
+  return joins ? { ...route, railJoins: joins } : route
+})
 export const BUS_STOPS = busStops as unknown as BusStop[]
 export const BUS_STOP_SEQUENCES = busSequences as unknown as BusStopSequence[]
 export const BUS_SHAPES = busShapes as unknown as BusShape[]
@@ -185,7 +196,7 @@ export function getBusRoutesByOperator(operatorId: string): BusRoute[] {
   return routesByOperator.get(operatorId) ?? []
 }
 
-/** Name joins are candidate links, not proof that a bus stop is an interchange. */
+/** Only curated exact-stop joins are indexed as MRT relationships. */
 export function getBusRoutesByRailLine(lineCode: string): BusRoute[] {
   return routesByLine.get(lineCode) ?? []
 }
