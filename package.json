@@ -18,6 +18,7 @@
     "wordmark": "node scripts/make-wordmark.mjs",
     "assets": "npm run fonts && npm run favicon && npm run wordmark",
     "tdx": "node scripts/fetch-tdx.mjs",
+    "tdx:bus": "node scripts/fetch-bus-tdx.mjs",
     "stations": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-stations.mts",
     "geometry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/geometry-report.mts",
     "colours": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/export-colours.mts",

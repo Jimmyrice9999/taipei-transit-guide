@@ -1,0 +1,251 @@
+{
+  "apiBase": "https://tdx.transportdata.tw/api/basic/v2",
+  "cities": {
+    "NewTaipei": {
+      "code": "NWT",
+      "datasets": {
+        "operators": {
+          "fields": [
+            "AuthorityCode",
+            "OperatorCode",
+            "OperatorEmail",
+            "OperatorID",
+            "OperatorName",
+            "OperatorNo",
+            "OperatorPhone",
+            "OperatorUrl",
+            "ProviderID",
+            "UpdateTime"
+          ],
+          "records": 46,
+          "status": 200
+        },
+        "routes": {
+          "fields": [
+            "AuthorityID",
+            "BusRouteType",
+            "City",
+            "CityCode",
+            "DepartureStopNameEn",
+            "DepartureStopNameZh",
+            "DestinationStopNameEn",
+            "DestinationStopNameZh",
+            "FareBufferZoneDescriptionEn",
+            "FareBufferZoneDescriptionZh",
+            "HasSubRoutes",
+            "Operators",
+            "ProviderID",
+            "RouteID",
+            "RouteMapImageUrl",
+            "RouteName",
+            "RouteUID",
+            "SubRoutes",
+            "TicketPriceDescriptionEn",
+            "TicketPriceDescriptionZh",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 636,
+          "status": 200
+        },
+        "shapes": {
+          "fields": [
+            "Direction",
+            "EncodedPolyline",
+            "Geometry",
+            "RouteID",
+            "RouteName",
+            "RouteUID",
+            "SubRouteID",
+            "SubRouteName",
+            "SubRouteUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1332,
+          "status": 200
+        },
+        "stop-sequences": {
+          "fields": [
+            "City",
+            "CityCode",
+            "Direction",
+            "Operators",
+            "RouteID",
+            "RouteName",
+            "RouteUID",
+            "Stops",
+            "SubRouteID",
+            "SubRouteName",
+            "SubRouteUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1353,
+          "status": 200
+        },
+        "stops": {
+          "fields": [
+            "AuthorityID",
+            "Bearing",
+            "City",
+            "CityCode",
+            "LocationCityCode",
+            "StationID",
+            "StopAddress",
+            "StopID",
+            "StopName",
+            "StopPosition",
+            "StopUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 33014,
+          "status": 200
+        }
+      }
+    },
+    "Taipei": {
+      "code": "TPE",
+      "datasets": {
+        "operators": {
+          "fields": [
+            "AuthorityCode",
+            "OperatorCode",
+            "OperatorEmail",
+            "OperatorID",
+            "OperatorName",
+            "OperatorNo",
+            "OperatorPhone",
+            "OperatorUrl",
+            "ProviderID",
+            "ReservationPhone",
+            "UpdateTime"
+          ],
+          "records": 15,
+          "status": 200
+        },
+        "routes": {
+          "fields": [
+            "AuthorityID",
+            "BusRouteType",
+            "City",
+            "CityCode",
+            "DepartureStopNameEn",
+            "DepartureStopNameZh",
+            "DestinationStopNameEn",
+            "DestinationStopNameZh",
+            "FareBufferZoneDescriptionEn",
+            "FareBufferZoneDescriptionZh",
+            "HasSubRoutes",
+            "Operators",
+            "ProviderID",
+            "RouteID",
+            "RouteMapImageUrl",
+            "RouteName",
+            "RouteUID",
+            "SubRoutes",
+            "TicketPriceDescriptionEn",
+            "TicketPriceDescriptionZh",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 415,
+          "status": 200
+        },
+        "shapes": {
+          "fields": [
+            "Direction",
+            "EncodedPolyline",
+            "Geometry",
+            "RouteID",
+            "RouteName",
+            "RouteUID",
+            "SubRouteID",
+            "SubRouteName",
+            "SubRouteUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1014,
+          "status": 200
+        },
+        "stop-sequences": {
+          "fields": [
+            "City",
+            "CityCode",
+            "Direction",
+            "Operators",
+            "RouteID",
+            "RouteName",
+            "RouteUID",
+            "Stops",
+            "SubRouteID",
+            "SubRouteName",
+            "SubRouteUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1239,
+          "status": 200
+        },
+        "stops": {
+          "fields": [
+            "AuthorityID",
+            "Bearing",
+            "City",
+            "CityCode",
+            "LocationCityCode",
+            "StationID",
+            "StopAddress",
+            "StopID",
+            "StopName",
+            "StopPosition",
+            "StopUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 28742,
+          "status": 200
+        }
+      }
+    }
+  },
+  "datasetNotes": {
+    "operators": "operator identity and contact fields",
+    "routes": "route families, route variants and operator relations",
+    "shapes": "route geometry records",
+    "stop-sequences": "ordered stops for each route variant and direction",
+    "stops": "stop names, coordinates, addresses and update times"
+  },
+  "fetchedAt": "2026-08-15T04:38:00.767Z",
+  "normalized": {
+    "groupCounts": {
+      "colour-blue": 39,
+      "colour-brown": 20,
+      "colour-green": 17,
+      "colour-orange": 18,
+      "colour-red": 40,
+      "minibus": 48,
+      "new-taipei": 561,
+      "series-0-99": 33,
+      "series-200s": 92,
+      "series-300s": 16,
+      "series-500s": 21,
+      "series-600s": 49,
+      "series-700s": 4,
+      "series-other": 19,
+      "trunk": 19,
+      "unclassified": 55
+    },
+    "operatorCount": 61,
+    "railJoinCount": 3738,
+    "routeCount": 1051,
+    "shapeCount": 2346,
+    "stopCount": 61756,
+    "stopSequenceCount": 2592
+  },
+  "notPublished": [],
+  "source": "Taiwan MOTC TDX (Transport Data eXchange)",
+  "sourceUrl": "https://tdx.transportdata.tw/"
+}

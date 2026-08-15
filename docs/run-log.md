@@ -7191,6 +7191,24 @@ operator station-position descriptions. TDX had no current interchange code;
 NTMC's full transfer and FAQ pages establish K09's Circular Line transfer. No
 image was fetched.
 
+# Run 24 — Bus amendments and TDX data layer, 15 August 2026
+
+Audited the approved architecture and the existing rail-only TDX fetcher before
+working. The amendments now give official colour prefixes precedence over a
+number facet, keep directional/descriptive colour words in their real class,
+and make `/bus/depots/` the only proposed depot URL; `/bus/garages/` is not an
+alias. Added a bus-specific fetch/normalization script and `lib/bus/routes.ts`;
+`lib/routes.ts` was untouched. TDX returned all five requested static datasets
+for both Taipei and New Taipei: routes, stops, StopOfRoute sequences, shapes
+and operators. The complete pull yielded 1,051 routes, 61,756 stops, 2,592
+stop sequences, 2,346 shapes and 61 operators. Route groups: colour-blue 39,
+colour-brown 20, colour-green 17, colour-orange 18, colour-red 40, minibus 48,
+new-taipei 561, series-0-99 33, series-200s 92, series-300s 16, series-500s
+21, series-600s 49, series-700s 4, series-other 19, trunk 19 and unclassified
+55. No requested dataset was absent; no research, route pages, page routes or
+navigation changes were made. No TBC or source conflict was introduced, and no
+images were fetched.
+
 # Run 24 — Bus architecture amendments, 15 August 2026
 
 Audited the approved architecture before changing it. Added explicit

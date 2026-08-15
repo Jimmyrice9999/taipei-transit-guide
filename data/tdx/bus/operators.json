@@ -1,0 +1,1100 @@
+[
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-0606-20m33c",
+    "names": {
+      "en": "",
+      "zh_tw": "好樂好股份有限公司"
+    },
+    "operatorCode": "",
+    "operatorId": "16271",
+    "operatorNo": "0606",
+    "phone": "(02)2558-5519",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "https://syyeh223.wixsite.com/halohaboat"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-16474-f0ksz1",
+    "names": {
+      "en": "",
+      "zh_tw": "大有巴士"
+    },
+    "operatorCode": "",
+    "operatorId": "16474",
+    "operatorNo": "",
+    "phone": "0800-088-626",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": null
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-16476-eglll3",
+    "names": {
+      "en": "",
+      "zh_tw": "石碇區公所"
+    },
+    "operatorCode": "",
+    "operatorId": "16476",
+    "operatorNo": "",
+    "phone": "(02)2663-1080",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": null
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-16479-bepyye",
+    "names": {
+      "en": "",
+      "zh_tw": "烏來區公所"
+    },
+    "operatorCode": "",
+    "operatorId": "16479",
+    "operatorNo": "",
+    "phone": null,
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": null
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-balidistrictoffice-zlmm0v",
+    "names": {
+      "en": "Bali District Office",
+      "zh_tw": "八里區公所"
+    },
+    "operatorCode": "BaliDistrictOffice",
+    "operatorId": "16230",
+    "operatorNo": "0201",
+    "phone": "(02)2610-2621",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.bali.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-banqiaodistrictoffice-11jjtvo",
+    "names": {
+      "en": "Banqiao District Office",
+      "zh_tw": "板橋區公所"
+    },
+    "operatorCode": "BanqiaoDistrictOffice",
+    "operatorId": "16239",
+    "operatorNo": "0818",
+    "phone": "(02)2968-6911",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.banqiao.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-capitalbus-1icts2l",
+    "names": {
+      "en": "Capital Bus Co., Ltd.",
+      "zh_tw": "首都客運"
+    },
+    "operatorCode": "CapitalBus",
+    "operatorId": "200",
+    "operatorNo": "0913",
+    "phone": "0800-000-866",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.capital-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-capitalbus-1mju8h7",
+    "names": {
+      "en": "",
+      "zh_tw": "首都客運"
+    },
+    "operatorCode": "CapitalBus",
+    "operatorId": "16177",
+    "operatorNo": "0913",
+    "phone": "0800-000-866",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.capital-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-citiairbus-1pjf6b8",
+    "names": {
+      "en": "Citiair Bus Co., Ltd.",
+      "zh_tw": "大有巴士"
+    },
+    "operatorCode": "CitiairBus",
+    "operatorId": "900",
+    "operatorNo": "0302",
+    "phone": "0800-088-626",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.airbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-dananbus-o4rqys",
+    "names": {
+      "en": "",
+      "zh_tw": "大南汽車"
+    },
+    "operatorCode": "DananBus",
+    "operatorId": "16183",
+    "operatorNo": "0307",
+    "phone": "0800-089-456",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.dnbus.com.tw/"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-dananbus-zudmrz",
+    "names": {
+      "en": "Danan Bus Co., Ltd.",
+      "zh_tw": "大南汽車"
+    },
+    "operatorCode": "DananBus",
+    "operatorId": "1100",
+    "operatorNo": "0307",
+    "phone": "0800-089-456",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.dnbus.com.tw/"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-gongliaodistrictoffice-y73gye",
+    "names": {
+      "en": "Gongliao District Office",
+      "zh_tw": "貢寮區公所"
+    },
+    "operatorCode": "GongliaoDistrictOffice",
+    "operatorId": "16251",
+    "operatorNo": "1005",
+    "phone": "(02)2494-1601~5",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.gongliao.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-jinshandistrictoffice-xn49kg",
+    "names": {
+      "en": "Jinshan District Office",
+      "zh_tw": "金山區公所"
+    },
+    "operatorCode": "JinshanDistrictOffice",
+    "operatorId": "16253",
+    "operatorNo": "0814",
+    "phone": "(02)2498-5965#162",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.jinshan.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-keelungbus-napsdw",
+    "names": {
+      "en": "",
+      "zh_tw": "基隆客運"
+    },
+    "operatorCode": "KeelungBus",
+    "operatorId": "16190",
+    "operatorNo": "1102",
+    "phone": "0800-002-279",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.kl-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-kuanghuabus-1yk3cf5",
+    "names": {
+      "en": "Kuang-Hua Bus Co., Ltd.",
+      "zh_tw": "光華巴士"
+    },
+    "operatorCode": "KuangHuaBus.",
+    "operatorId": "5300",
+    "operatorNo": "0601",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-kuanghuabus-n0tc6w",
+    "names": {
+      "en": "",
+      "zh_tw": "光華巴士"
+    },
+    "operatorCode": "KuangHuaBus",
+    "operatorId": "16187",
+    "operatorNo": "0601",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-kuokuangbus-z1k94y",
+    "names": {
+      "en": "",
+      "zh_tw": "國光客運"
+    },
+    "operatorCode": "KuoKuangBus",
+    "operatorId": "16224",
+    "operatorNo": "1101",
+    "phone": "0800-010-138",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.kingbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-linkoudistrictoffice-y7olk0",
+    "names": {
+      "en": "Linkou District Office",
+      "zh_tw": "林口區公所"
+    },
+    "operatorCode": "LinkouDistrictOffice",
+    "operatorId": "16235",
+    "operatorNo": "0812",
+    "phone": "(02)2603-3111",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.linkou.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-luzhoudistrictoffice-yrnsxy",
+    "names": {
+      "en": "Luzhou District Office",
+      "zh_tw": "蘆洲區公所"
+    },
+    "operatorCode": "LuzhouDistrictOffice",
+    "operatorId": "16237",
+    "operatorNo": "2001",
+    "phone": "(02)2281-1484",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.luzhou.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-metropolitanbus-h3iwov",
+    "names": {
+      "en": "Metropolitan Bus Co., Ltd.",
+      "zh_tw": "大都會客運"
+    },
+    "operatorCode": "MetropolitanBus",
+    "operatorId": "800",
+    "operatorNo": "0303",
+    "phone": "0800-053-434",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.mtcbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-metropolitanbus-oercnr",
+    "names": {
+      "en": "",
+      "zh_tw": "大都會客運"
+    },
+    "operatorCode": "MetropolitanBus",
+    "operatorId": "16182",
+    "operatorNo": "0303",
+    "phone": "0800-053-434",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.mtcbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-newtaipeibus-mqtqhx",
+    "names": {
+      "en": "",
+      "zh_tw": "新北客運"
+    },
+    "operatorCode": "NewTaipeiBus",
+    "operatorId": "16188",
+    "operatorNo": "1302",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-newtaipeibus-prtiek",
+    "names": {
+      "en": "New Taipei Bus Co., Ltd.",
+      "zh_tw": "新北客運"
+    },
+    "operatorCode": "NewTaipeiBus",
+    "operatorId": "5400",
+    "operatorNo": "1302",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-pinglindistrictoffice-yqziud",
+    "names": {
+      "en": "Pinglin District Office",
+      "zh_tw": "坪林區公所"
+    },
+    "operatorCode": "PinglinDistrictOffice",
+    "operatorId": "16247",
+    "operatorNo": "0811",
+    "phone": "(02)2665-7251",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.pinglin.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-pingxidistrictoffice-yh32nd",
+    "names": {
+      "en": "Pingxi District Office",
+      "zh_tw": "平溪區公所"
+    },
+    "operatorCode": "PingxiDistrictOffice",
+    "operatorId": "16250",
+    "operatorNo": "0505",
+    "phone": "(02)2495-1520",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.pingxi.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-royalbus-1noamcq",
+    "names": {
+      "en": "Royal Bus Co., Ltd.",
+      "zh_tw": "皇家客運"
+    },
+    "operatorCode": "RoyalBus",
+    "operatorId": "16123",
+    "operatorNo": "0908",
+    "phone": "0800-551-687",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.royalbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-ruifangdistrictoffice-z0z4jc",
+    "names": {
+      "en": "Ruifang District Office",
+      "zh_tw": "瑞芳區公所"
+    },
+    "operatorCode": "RuifangDistrictOffice",
+    "operatorId": "16248",
+    "operatorNo": "1312",
+    "phone": "(02)2497-2250",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.ruifang.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-sanchongdistrictoffice-z1nemx",
+    "names": {
+      "en": "Sanchong District Office",
+      "zh_tw": "三重區公所"
+    },
+    "operatorCode": "SanchongDistrictOffice",
+    "operatorId": "16236",
+    "operatorNo": "0305",
+    "phone": "(02)2986-2345",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.sanchong.ntpc.gov.tw/"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-sanchungbus-1b7yg2j",
+    "names": {
+      "en": "San Chung Bus Co., Ltd.",
+      "zh_tw": "三重客運"
+    },
+    "operatorCode": "SanChungBus",
+    "operatorId": "400",
+    "operatorNo": "0301",
+    "phone": "0800-090-607",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.sanchung-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-sanchungbus-1lzv139",
+    "names": {
+      "en": "",
+      "zh_tw": "三重客運"
+    },
+    "operatorCode": "SanChungBus",
+    "operatorId": "16179",
+    "operatorNo": "0301",
+    "phone": "0800-090-607",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.sanchung-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-sanxiadistrictoffice-xn142h",
+    "names": {
+      "en": "Sanxia District Office",
+      "zh_tw": "三峽區公所"
+    },
+    "operatorCode": "SanxiaDistrictOffice",
+    "operatorId": "16243",
+    "operatorNo": "0308",
+    "phone": "(02)2671-1017",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.sanxia.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-sanzhidistrictoffice-10fi9lt",
+    "names": {
+      "en": "Sanzhi District Office",
+      "zh_tw": "三芝區公所"
+    },
+    "operatorCode": "SanzhiDistrictOffice",
+    "operatorId": "16229",
+    "operatorNo": "0304",
+    "phone": "(02)2636-2111",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.sanzhi.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-shenkengdistrictoffice-ygzx5e",
+    "names": {
+      "en": "Shenkeng District Office",
+      "zh_tw": "深坑區公所"
+    },
+    "operatorCode": "ShenkengDistrictOffice",
+    "operatorId": "16246",
+    "operatorNo": "1109",
+    "phone": "(02)2662-3116",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.shenkeng.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-shimendistrictoffice-zbn0bw",
+    "names": {
+      "en": "Shimen District Office",
+      "zh_tw": "石門區公所"
+    },
+    "operatorCode": "ShimenDistrictOffice",
+    "operatorId": "16231",
+    "operatorNo": "0507",
+    "phone": "(02)2638-1721",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.shimen.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-shin-shin-bus-ooqycq",
+    "names": {
+      "en": "",
+      "zh_tw": "欣欣客運"
+    },
+    "operatorCode": "Shin-Shin Bus",
+    "operatorId": "16181",
+    "operatorNo": "0813",
+    "phone": "0800-032-159",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.shinbus.com.tw/"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-shinshinbus-2fom1y",
+    "names": {
+      "en": "Shin-Shin Bus Co., Ltd.",
+      "zh_tw": "欣欣客運"
+    },
+    "operatorCode": "ShinshinBus",
+    "operatorId": "700",
+    "operatorNo": "0813",
+    "phone": "0800-032-159",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.shinbus.com.tw/"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-shuangxidistrictoffice-zayq8b",
+    "names": {
+      "en": "Shuangxi District Office",
+      "zh_tw": "雙溪區公所"
+    },
+    "operatorCode": "ShuangxiDistrictOffice",
+    "operatorId": "16249",
+    "operatorNo": "1803",
+    "phone": "(02)2493-1111",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.shuangxi.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-shulindistrictoffice-xd1idi",
+    "names": {
+      "en": "Shulin District Office",
+      "zh_tw": "樹林區公所"
+    },
+    "operatorCode": "ShulinDistrictOffice",
+    "operatorId": "16242",
+    "operatorNo": "1603",
+    "phone": "(02)2681-2106",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.shulin.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-sindianbus-1lpvfea",
+    "names": {
+      "en": "",
+      "zh_tw": "新店客運"
+    },
+    "operatorCode": "SindianBus",
+    "operatorId": "16178",
+    "operatorNo": "1304",
+    "phone": "(02)2666-0678",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.sindianbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-sindianbus-j8c9wy",
+    "names": {
+      "en": "Sindian Bus Co., Ltd.",
+      "zh_tw": "新店客運"
+    },
+    "operatorCode": "SindianBus",
+    "operatorId": "300",
+    "operatorNo": "1304",
+    "phone": "02-2666-0678",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.sindianbus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-southeastbus-9ljetg",
+    "names": {
+      "en": "Southeast Bus Co., Ltd.",
+      "zh_tw": "東南客運"
+    },
+    "operatorCode": "SoutheastBus",
+    "operatorId": "1000",
+    "operatorNo": "0804",
+    "phone": "0800-616-688",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.southeastbus.com"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-taipeibus-1m9ums8",
+    "names": {
+      "en": "Taipei Bus Co., Ltd.",
+      "zh_tw": "臺北客運"
+    },
+    "operatorCode": "TaipeiBus",
+    "operatorId": "16176",
+    "operatorNo": "1407",
+    "phone": "0800-003-307",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.tpebus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-taipeibus-smuzdo",
+    "names": {
+      "en": "Taipei Bus Co., Ltd.",
+      "zh_tw": "臺北客運"
+    },
+    "operatorCode": "TaipeiBus",
+    "operatorId": "100",
+    "operatorNo": "1407",
+    "phone": "0800-003-307",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.tpebus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-taishandistrictoffice-zvm7pu",
+    "names": {
+      "en": "Taishan District Office",
+      "zh_tw": "泰山區公所"
+    },
+    "operatorCode": "TaishanDistrictOffice",
+    "operatorId": "16233",
+    "operatorNo": "1004",
+    "phone": "(02)2909-9551",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.taishan.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-tamshuibus-nasxvv",
+    "names": {
+      "en": "",
+      "zh_tw": "淡水客運"
+    },
+    "operatorCode": "TamshuiBus",
+    "operatorId": "16186",
+    "operatorNo": "1104",
+    "phone": "0800-002-279",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-tamshuibus-zflu9i",
+    "names": {
+      "en": "Tamshui Bus Co., Ltd.",
+      "zh_tw": "淡水客運"
+    },
+    "operatorCode": "TamshuiBus",
+    "operatorId": "5200",
+    "operatorNo": "1104",
+    "phone": "0800-002-279",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-tamsuidistrictoffice-105inwu",
+    "names": {
+      "en": "Tamsui District Office",
+      "zh_tw": "淡水區公所"
+    },
+    "operatorCode": "TamsuiDistrictOffice",
+    "operatorId": "16228",
+    "operatorNo": "1108",
+    "phone": "(02)2622-1020",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.tamsui.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-taoyuanbus-2ov8j",
+    "names": {
+      "en": "",
+      "zh_tw": "桃園客運"
+    },
+    "operatorCode": "TaoyuanBus",
+    "operatorId": "16278",
+    "operatorNo": "1002",
+    "phone": "0800-053-808",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.tybus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-tuchengdistrictoffice-x31woj",
+    "names": {
+      "en": "Tucheng District Office",
+      "zh_tw": "土城區公所"
+    },
+    "operatorCode": "TuchengDistrictOffice",
+    "operatorId": "16241",
+    "operatorNo": "0306",
+    "phone": "(02)2273-2000",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.tucheng.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-wanlidistrictoffice-xx3v9f",
+    "names": {
+      "en": "Wanli District Office",
+      "zh_tw": "萬里區公所"
+    },
+    "operatorCode": "WanliDistrictOffice",
+    "operatorId": "16252",
+    "operatorNo": "1313",
+    "phone": "(02)2492-2064",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.wanli.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-wugudistrictoffice-yho78z",
+    "names": {
+      "en": "Wugu District Office",
+      "zh_tw": "五股區公所"
+    },
+    "operatorCode": "WuguDistrictOffice",
+    "operatorId": "16234",
+    "operatorNo": "0411",
+    "phone": "(02)2291-6051 ~ 5",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.wugu.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-xindiandistrictoffice-y70bgf",
+    "names": {
+      "en": "Xindian District Office",
+      "zh_tw": "新店區公所"
+    },
+    "operatorCode": "XindianDistrictOffice",
+    "operatorId": "16245",
+    "operatorNo": "1311",
+    "phone": "(02)2911-2281",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.xindian.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-xinzhuangdistrictoffice-105ltet",
+    "names": {
+      "en": "Xinzhuang District Office",
+      "zh_tw": "新莊區公所"
+    },
+    "operatorCode": "XinzhuangDistrictOffice",
+    "operatorId": "16232",
+    "operatorNo": "1315",
+    "phone": "(02)2992-9891#410",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.xinzhuang.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-xizhidistrictoffice-zl1hf9",
+    "names": {
+      "en": "Xizhi District Office",
+      "zh_tw": "汐止區公所"
+    },
+    "operatorCode": "XizhiDistrictOffice",
+    "operatorId": "16254",
+    "operatorNo": "0607",
+    "phone": "(02)2641-1111",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.xizhi.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-yinggedistrictoffice-xx0prg",
+    "names": {
+      "en": "Yingge District Office",
+      "zh_tw": "鶯歌區公所"
+    },
+    "operatorCode": "YinggeDistrictOffice",
+    "operatorId": "16244",
+    "operatorNo": "2201",
+    "phone": "(02)2678 0202",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.yingge.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-yonghedistrictoffice-wt2azk",
+    "names": {
+      "en": "Yonghe District Office",
+      "zh_tw": "永和區公所"
+    },
+    "operatorCode": "YongheDistrictOffice",
+    "operatorId": "16240",
+    "operatorNo": "0506",
+    "phone": "(02)2928-2828",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.yonghe.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-zhinanbus-18cwz3f",
+    "names": {
+      "en": "Zhinan Bus Co., Ltd.",
+      "zh_tw": "指南客運"
+    },
+    "operatorCode": "ZhinanBus",
+    "operatorId": "5100",
+    "operatorNo": "0907",
+    "phone": "0800-002-279",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-zhinanbus-nksjku",
+    "names": {
+      "en": "",
+      "zh_tw": "指南客運"
+    },
+    "operatorCode": "ZhinanBus",
+    "operatorId": "16185",
+    "operatorNo": "0907",
+    "phone": "0800-002-279",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-zhonghedistrictoffice-11tjfkn",
+    "names": {
+      "en": "Zhonghe District Office",
+      "zh_tw": "中和區公所"
+    },
+    "operatorCode": "ZhongheDistrictOffice",
+    "operatorId": "16238",
+    "operatorNo": "0408",
+    "phone": "(02)2248-2688",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.zhonghe.ntpc.gov.tw"
+  },
+  {
+    "authorityCodes": [
+      "TPE"
+    ],
+    "id": "bus-operator-zhongxingbus-1owb0k7",
+    "names": {
+      "en": "Zhongxing Bus",
+      "zh_tw": "中興巴士"
+    },
+    "operatorCode": "ZhongxingBus",
+    "operatorId": "5500",
+    "operatorNo": "0410",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "Taipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw"
+  },
+  {
+    "authorityCodes": [
+      "NWT"
+    ],
+    "id": "bus-operator-zhongxingbus-mgu4sy",
+    "names": {
+      "en": "Zhongxing Bus",
+      "zh_tw": "中興巴士"
+    },
+    "operatorCode": "ZhongxingBus",
+    "operatorId": "16189",
+    "operatorNo": "0410",
+    "phone": "0800-002-277",
+    "sourceCities": [
+      "NewTaipei"
+    ],
+    "url": "http://www.csgroup-bus.com.tw/"
+  }
+]
