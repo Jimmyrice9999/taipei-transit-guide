@@ -229,14 +229,16 @@
       "minibus": 48,
       "new-taipei": 561,
       "series-0-99": 33,
+      "series-100s": 6,
       "series-200s": 92,
       "series-300s": 16,
       "series-500s": 21,
       "series-600s": 49,
       "series-700s": 4,
-      "series-other": 19,
+      "series-900s": 13,
+      "special-shuttle": 42,
       "trunk": 19,
-      "unclassified": 55
+      "unclassified": 13
     },
     "operatorCount": 61,
     "railJoinCount": 3738,

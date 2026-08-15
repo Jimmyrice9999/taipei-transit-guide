@@ -7458,3 +7458,44 @@ route-page contract, and the brown feeder group as the first pilot against the
 existing Wenhu station pages. No route pages, content restructuring, bus data
 pull or research was started. No TBC or source conflict was introduced, and no
 image was fetched.
+
+# Run 25 — Part 1, unplaced bus routes, 15 August 2026
+
+Confirmed the merged bus TDX layer at `b51fc6c` before auditing its 74 unplaced
+records: 19 `series-other` and 55 `unclassified`. The complete route list is:
+
+**Former `series-other` (19)** — 108 (`108`); 108區 (`108Shuttle`); 109
+(`109`); 111 (`111`); 128 (`128`); 129 (`129`); 902 (`902`); 902區
+(`902Shuttle`); 903 (`903`); 905 (`905`); 905副 (`905Sub`); 907 (`907`);
+907通勤 (`907CB`); 912 (`912`); 915 (`915`); 949 (`949`); 950 (`950`);
+955 (`955`); 957 (`957`).
+
+**Former `unclassified` (55)** — 1717 (`1717`); 內科快線1 (`NH Express 1`);
+內科快線2 (`NH Express 2`); 內科通勤專車10 (`NH10`); 內科通勤專車11
+(`NH11`); 內科通勤專車12 (`NH12`); 內科通勤專車13 (`NH13`); 內科通勤專車15
+(`NH15`); 內科通勤專車16 (`NH16`); 內科通勤專車17 (`NH17`); 內科通勤專車18
+(`NH18`); 內科通勤專車19 (`NH19`); 內科通勤專車2 (`NH2`); 內科通勤專車20
+(`NH20`); 內科通勤專車21 (`NH21`); 內科通勤專車22 (`NH22`); 內科通勤專車3
+(`NH3`); 內科通勤專車5 (`NH5`); 內科通勤專車6 (`NH6`); 內科通勤專車7
+(`NH7`); 內科通勤專車8 (`NH8`); 北士科1 (`BS1`); 兒樂1號線 (`TPE Child's
+Amuse. Park 1`); 兒樂2號線 (`TPE Child's Amuse. Park 2`); 花季專車124 (`124`);
+南軟通勤專車中和線 (`NK(Zhonghe-NK Science-Based Park)`); 南軟通勤專車天母線
+(`NK-TianMu`); 南軟通勤專車北投線 (`NK(BeiTou)`); 南軟通勤專車雙和線
+(`NS-Shuanghe`); 通勤11 (`CB11`); 通勤12 (`CB12`); 通勤13 (`CB13`); 通勤16
+(`CB16`); 通勤21 (`CB21`); 通勤22 (`CB22`); 通勤24 (`CB24`); 通勤26 (`CB26`);
+通勤27 (`CB27`); 通勤28 (`CB28`); 通勤29 (`CB29`); 通勤30 (`CB30`); 通勤7
+(`CB7`); 通勤9 (`CB9`); 景美-榮總(快) (`Jingmei-T.V.G.H Express`); 新莊-臺北車站
+(`Xinzhuang-Taipei Main Sta.`); 臺北觀光巴士紅線 (`Taipei Sightseeing Bus Red route`);
+臺北觀光巴士藍線 (`Taipei Sightseeing Bus Blue route`); 貓空右線 (`Maokong Right`);
+貓空左線(指南宮) (`Maokong Left (Zhinan Temple)`); 貓空左線(動物園)
+(`Maokong Left (Zoo)`); 雙園巴士 (`NEIHU GREEN BUS`); 懷恩專車S31 (`S31`);
+懷恩專車S32 (`S32`); 懷恩專車S33 (`S33`); 懷恩專車S34 (`S34`).
+
+The 19 `series-other` records are a real numbering gap: six 100-series and
+thirteen 900-series routes. The 55 unclassified records split into 42 explicit
+commuter/institutional shuttles (20 Neihu, 4 Nangang Software Park, 14 CB and
+4 Huai-en) and 13 without one shared primary class. Added `series-100s`,
+`series-900s` and `special-shuttle`; left those 13 `unclassified`. Updated the
+classifier, route-group type, normalized route snapshot and metadata counts.
+The TDX refresh was attempted but timed out with no partial writes; no images,
+research sources, TBC fields or source conflicts were introduced.

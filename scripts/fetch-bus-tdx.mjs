@@ -125,15 +125,18 @@ function group(row, cityNames) {
   if (/^\s*(市民小巴|小巴|小\s*\d)/.test(identity)) return 'minibus'
   if (/幹線|trunk/i.test(identity)) return 'trunk'
   if (cityNames.length && cityNames.every((city) => city === 'NewTaipei')) return 'new-taipei'
+  if (/^(內科快線|內科通勤專車|南軟通勤專車|通勤\d+|懷恩專車)/.test(serviceName)) return 'special-shuttle'
   const number = serviceName.match(/^\s*(\d{1,3})(?:\D|$)/)?.[1]
   if (number) {
     const value = Number(number)
     if (value <= 99) return 'series-0-99'
+    if (value >= 100 && value < 200) return 'series-100s'
     if (value >= 200 && value < 300) return 'series-200s'
     if (value >= 300 && value < 400) return 'series-300s'
     if (value >= 500 && value < 600) return 'series-500s'
     if (value >= 600 && value < 700) return 'series-600s'
     if (value >= 700 && value < 800) return 'series-700s'
+    if (value >= 900 && value < 1000) return 'series-900s'
     return 'series-other'
   }
   return 'unclassified'

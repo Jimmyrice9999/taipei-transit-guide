@@ -43,9 +43,10 @@ Use these route groups:
 |---|---|---|
 | `colour-red`, `colour-blue`, `colour-green`, `colour-brown`, `colour-orange`, `colour-yellow` | Colour-prefixed corridor/feeder services, keyed to the MRT corridor they explicitly feed | The prefix is the passenger-facing route class and gives a natural rail index, but it must not be inferred for trunk routes that reuse colour words directionally. |
 | `series-0-99` | The 0–99 numbered series | Keeps the compact historic numbering family together. |
-| `series-200s`, `series-300s`, `series-500s`, `series-600s`, `series-700s` | The numbered series named in the existing bus brief | The number range is the stable browse key even when a route’s contractor changes. |
+| `series-100s`, `series-200s`, `series-300s`, `series-500s`, `series-600s`, `series-700s`, `series-900s` | The named 100s, 200s, 300s, 500s, 600s, 700s and 900s numbered series | The number range is the stable browse key even when a route’s contractor changes. The current TDX `series-other` records are six 100-series routes and thirteen 900-series routes, so these are real missing browse bands rather than miscellaneous routes. |
 | `trunk` | `幹線` trunk routes, including named corridor services | Trunk is a service class, not a district or an operator. |
 | `minibus` | `市民小巴` and other community/minibus services | These have different vehicle and operating context from ordinary numbered routes. |
+| `special-shuttle` | Named commuter and institutional shuttle services: `內科快線`/`內科通勤專車`, `南軟通勤專車`, `通勤`/CB and `懷恩專車` | These 42 records share an explicit shuttle/commuter identity but are not minibuses, trunk routes or colour-prefixed feeders. Keeping them together records a service-class pattern without forcing them into a number band. |
 | `new-taipei` | New Taipei’s own route-numbering system and services | Keeps the municipality’s distinct catalogue legible without duplicating a cross-border route into a Taipei district. |
 
 The group is a canonical home, not a claim that a route has only one useful
@@ -55,10 +56,22 @@ Those facets are links and filters, not second copies of the page. A route that
 crosses Taipei and New Taipei remains one route page; it is not duplicated under
 both municipalities.
 
+The Part 1 audit of the merged TDX layer found no single replacement group for
+all 55 former `unclassified` records. Forty-two have the shared
+`special-shuttle` identity described above; the other thirteen are a mixed
+remainder of a four-digit route, attraction and event services, sightseeing and
+Maokong routes, and named or express corridors. They remain `unclassified`
+until a shared primary classification is established. `series-other` is a
+review bucket for numbered identities outside the named bands; the 19 records
+audited in Part 1 are moved to `series-100s` or `series-900s`.
+
 Classification has an explicit precedence rule. When the official service
 identity has a colour prefix and a number—such as 紅5, 藍26 or 棕20—the official
 colour prefix determines the canonical group; the number is an index facet, not
 a second home. A number-only route such as 212 belongs to its numbered series.
+A named `special-shuttle` identity takes the service-class group before a
+number-band fallback. A route that is solely a New Taipei route remains in
+`new-taipei` under the municipality precedence above.
 A colour word that is directional, descriptive or part of a trunk name rather
 than an official colour-prefixed service class does not qualify for a colour
 group: it stays in its actual class, such as `trunk`. This decision must come

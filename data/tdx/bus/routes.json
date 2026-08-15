@@ -114930,7 +114930,7 @@
       "004"
     ],
     "canonicalSlug": "108-hvewbe",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-10822-1xn8jk0",
     "names": {
       "en": "108",
@@ -115014,7 +115014,7 @@
       "004"
     ],
     "canonicalSlug": "108-yr5f6",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-16168-1pgakdg",
     "names": {
       "en": "108Shuttle",
@@ -115098,7 +115098,7 @@
       "004"
     ],
     "canonicalSlug": "109",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-11813-i8fn91",
     "names": {
       "en": "109",
@@ -115269,7 +115269,7 @@
       "004"
     ],
     "canonicalSlug": "111",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-10472-tk65dx",
     "names": {
       "en": "111",
@@ -115474,7 +115474,7 @@
       "004"
     ],
     "canonicalSlug": "128",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-15724-1vg0r0m",
     "names": {
       "en": "128",
@@ -115586,7 +115586,7 @@
       "004"
     ],
     "canonicalSlug": "129",
-    "group": "series-other",
+    "group": "series-100s",
     "id": "bus-15726-4x3unw",
     "names": {
       "en": "129",
@@ -115703,7 +115703,7 @@
       "004"
     ],
     "canonicalSlug": "902-1kitn6b",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-15171-1fn4v1q",
     "names": {
       "en": "902",
@@ -115894,7 +115894,7 @@
       "004"
     ],
     "canonicalSlug": "902-6x90oz",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-19718-vg3gq2",
     "names": {
       "en": "902Shuttle",
@@ -116037,7 +116037,7 @@
       "004"
     ],
     "canonicalSlug": "903",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-10763-1ht5u4a",
     "names": {
       "en": "903",
@@ -116168,7 +116168,7 @@
       "004"
     ],
     "canonicalSlug": "905-109pl3s",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-15184-1cu09rf",
     "names": {
       "en": "905Sub",
@@ -116311,7 +116311,7 @@
       "004"
     ],
     "canonicalSlug": "905-my7at0",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-15183-1u397s3",
     "names": {
       "en": "905",
@@ -116454,7 +116454,7 @@
       "004"
     ],
     "canonicalSlug": "907-8hqm33",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-10724-894str",
     "names": {
       "en": "907",
@@ -116615,7 +116615,7 @@
       "004"
     ],
     "canonicalSlug": "907-uowynk",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-17928-1mrjyet",
     "names": {
       "en": "907CB",
@@ -116816,7 +116816,7 @@
       "004"
     ],
     "canonicalSlug": "912",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-15173-1vma0sw",
     "names": {
       "en": "912",
@@ -116913,7 +116913,7 @@
       "004"
     ],
     "canonicalSlug": "915",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-10754-sh7qyw",
     "names": {
       "en": "915",
@@ -117034,7 +117034,7 @@
       "004"
     ],
     "canonicalSlug": "949",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-17363-xpo3s9",
     "names": {
       "en": "949",
@@ -117151,7 +117151,7 @@
       "004"
     ],
     "canonicalSlug": "950",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-17390-1l4zby3",
     "names": {
       "en": "950",
@@ -117308,7 +117308,7 @@
       "004"
     ],
     "canonicalSlug": "955",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-17709-11gddz9",
     "names": {
       "en": "955",
@@ -117430,7 +117430,7 @@
       "004"
     ],
     "canonicalSlug": "957",
-    "group": "series-other",
+    "group": "series-900s",
     "id": "bus-17740-mfu51u",
     "names": {
       "en": "957",
@@ -120923,7 +120923,7 @@
       "004"
     ],
     "canonicalSlug": "1-1o1sfzk",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15702-i8hidr",
     "names": {
       "en": "NH Express 1",
@@ -121327,7 +121327,7 @@
       "004"
     ],
     "canonicalSlug": "10",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15676-emt5ky",
     "names": {
       "en": "NH10",
@@ -121435,7 +121435,7 @@
       "004"
     ],
     "canonicalSlug": "11-17ozkl1",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15677-5psxhz",
     "names": {
       "en": "NH11",
@@ -121543,7 +121543,7 @@
       "004"
     ],
     "canonicalSlug": "11-9ffs8b",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18198-zg9vkx",
     "names": {
       "en": "CB11",
@@ -121654,7 +121654,7 @@
       "004"
     ],
     "canonicalSlug": "12-10palml",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18199-zkajaw",
     "names": {
       "en": "CB12",
@@ -121760,7 +121760,7 @@
       "004"
     ],
     "canonicalSlug": "12-md9g4p",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15678-2lgbmc",
     "names": {
       "en": "NH12",
@@ -121952,7 +121952,7 @@
       "004"
     ],
     "canonicalSlug": "13-1yksc8z",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18228-21mxp7",
     "names": {
       "en": "CB13",
@@ -122127,7 +122127,7 @@
       "004"
     ],
     "canonicalSlug": "13-e8p1t1",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15679-s18xjl",
     "names": {
       "en": "NH13",
@@ -122248,7 +122248,7 @@
       "004"
     ],
     "canonicalSlug": "15",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15680-17ik1wh",
     "names": {
       "en": "NH15",
@@ -122401,7 +122401,7 @@
       "004"
     ],
     "canonicalSlug": "16-13rleqi",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18428-1yjzsx3",
     "names": {
       "en": "CB16",
@@ -122552,7 +122552,7 @@
       "004"
     ],
     "canonicalSlug": "16-g1oiln",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15681-1bvx2p4",
     "names": {
       "en": "NH16",
@@ -122703,7 +122703,7 @@
       "004"
     ],
     "canonicalSlug": "17",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15682-594aff",
     "names": {
       "en": "NH17",
@@ -123072,7 +123072,7 @@
       "004"
     ],
     "canonicalSlug": "18-1jkfnn2",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15683-2hl1m2",
     "names": {
       "en": "NH18",
@@ -123193,7 +123193,7 @@
       "004"
     ],
     "canonicalSlug": "19",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15684-1xf1wdp",
     "names": {
       "en": "NH19",
@@ -123380,7 +123380,7 @@
       "004"
     ],
     "canonicalSlug": "2-1bo2ml3",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15693-10xt5yi",
     "names": {
       "en": "NH Express 2",
@@ -123677,7 +123677,7 @@
       "004"
     ],
     "canonicalSlug": "2-5ogs1q",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15685-1luhn46",
     "names": {
       "en": "NH2",
@@ -123798,7 +123798,7 @@
       "004"
     ],
     "canonicalSlug": "20-o7pig6",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15686-orhlo7",
     "names": {
       "en": "NH20",
@@ -123919,7 +123919,7 @@
       "004"
     ],
     "canonicalSlug": "21-1fm1bvh",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18015-1k8wmo2",
     "names": {
       "en": "NH21",
@@ -124036,7 +124036,7 @@
       "004"
     ],
     "canonicalSlug": "21-rl8urw",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18658-1eyfjoq",
     "names": {
       "en": "CB21",
@@ -124133,7 +124133,7 @@
       "004"
     ],
     "canonicalSlug": "22-143qe5v",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18648-11sk2ut",
     "names": {
       "en": "CB22",
@@ -124233,7 +124233,7 @@
       "004"
     ],
     "canonicalSlug": "22-1oxen3v",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-10253-1q3yyn8",
     "names": {
       "en": "NH22",
@@ -124344,7 +124344,7 @@
       "004"
     ],
     "canonicalSlug": "24",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18708-1o9sz7e",
     "names": {
       "en": "CB24",
@@ -124444,7 +124444,7 @@
       "004"
     ],
     "canonicalSlug": "26-utmbkb",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19028-hriyiw",
     "names": {
       "en": "CB26",
@@ -124552,7 +124552,7 @@
       "004"
     ],
     "canonicalSlug": "27",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19408-15fib1g",
     "names": {
       "en": "CB27",
@@ -124711,7 +124711,7 @@
       "004"
     ],
     "canonicalSlug": "28-749hz7",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19488-17w1ai",
     "names": {
       "en": "CB28",
@@ -124804,7 +124804,7 @@
       "004"
     ],
     "canonicalSlug": "29",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19539-1pffy4r",
     "names": {
       "en": "CB29",
@@ -124912,7 +124912,7 @@
       "004"
     ],
     "canonicalSlug": "3-1uhn1kq",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15687-1608yh0",
     "names": {
       "en": "NH3",
@@ -125026,7 +125026,7 @@
       "004"
     ],
     "canonicalSlug": "30",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19759-1fzvorz",
     "names": {
       "en": "CB30",
@@ -125129,7 +125129,7 @@
       "004"
     ],
     "canonicalSlug": "5-18x45la",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15688-bbp8v9",
     "names": {
       "en": "NH5",
@@ -125250,7 +125250,7 @@
       "004"
     ],
     "canonicalSlug": "6-vothz7",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15689-i7ww8y",
     "names": {
       "en": "NH6",
@@ -125371,7 +125371,7 @@
       "004"
     ],
     "canonicalSlug": "7-1o8kc01",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15690-1artvs4",
     "names": {
       "en": "NH7",
@@ -125489,7 +125489,7 @@
       "004"
     ],
     "canonicalSlug": "7-1yt6dk1",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17967-gbxkam",
     "names": {
       "en": "CB7",
@@ -125618,7 +125618,7 @@
       "004"
     ],
     "canonicalSlug": "8-1sh1hlh",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15691-9af33r",
     "names": {
       "en": "NH8",
@@ -125719,7 +125719,7 @@
       "004"
     ],
     "canonicalSlug": "9-1w3v69i",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-18039-1eqax8d",
     "names": {
       "en": "CB9",
@@ -125812,7 +125812,7 @@
       "004"
     ],
     "canonicalSlug": "route-174oym7",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15696-10nt9gg",
     "names": {
       "en": "NK(BeiTou)",
@@ -126411,7 +126411,7 @@
       "004"
     ],
     "canonicalSlug": "route-1sgvobx",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15695-89j82f",
     "names": {
       "en": "NK-TianMu",
@@ -126556,7 +126556,7 @@
       "004"
     ],
     "canonicalSlug": "route-8dkx0",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15694-zfc1ki",
     "names": {
       "en": "NK(Zhonghe-NK Science-Based Park)",
@@ -126781,7 +126781,7 @@
       "004"
     ],
     "canonicalSlug": "route-h23w94",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-15698-1n869yu",
     "names": {
       "en": "NS-Shuanghe",
@@ -127381,7 +127381,7 @@
       "004"
     ],
     "canonicalSlug": "s31",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-16172-c6vsrq",
     "names": {
       "en": "S31",
@@ -127478,7 +127478,7 @@
       "004"
     ],
     "canonicalSlug": "s32",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17018-v6pa0o",
     "names": {
       "en": "S32",
@@ -127562,7 +127562,7 @@
       "004"
     ],
     "canonicalSlug": "s33",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-16508-1jq9llr",
     "names": {
       "en": "S33",
@@ -127659,7 +127659,7 @@
       "004"
     ],
     "canonicalSlug": "s34",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19648-gxtjch",
     "names": {
       "en": "S34",
