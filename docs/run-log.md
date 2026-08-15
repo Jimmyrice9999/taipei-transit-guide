@@ -7191,6 +7191,17 @@ operator station-position descriptions. TDX had no current interchange code;
 NTMC's full transfer and FAQ pages establish K09's Circular Line transfer. No
 image was fetched.
 
+# Run 24 — Bus architecture amendments, 15 August 2026
+
+Audited the approved architecture before changing it. Added explicit
+classification precedence: an official colour prefix is the canonical group
+even when the route is also numbered; the number is an index facet. Directional,
+descriptive or trunk-name colour words remain in the route's actual class. Made
+`/bus/depots/` the only proposed depot URL and removed the planned
+`/bus/garages/` compatibility-alias proposal. Existing content and navigation
+were left untouched for the data-layer-only scope. No TBC or source conflict was
+introduced; no images were fetched.
+
 Touched all nine K station pages through a new hand-maintained Ankeng overlay
 and added the K station research file. The rendered `<main>` text grew from
 1,595 total whitespace-delimited words (169–189 per page) to 6,635

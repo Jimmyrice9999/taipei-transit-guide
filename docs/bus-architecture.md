@@ -55,6 +55,16 @@ Those facets are links and filters, not second copies of the page. A route that
 crosses Taipei and New Taipei remains one route page; it is not duplicated under
 both municipalities.
 
+Classification has an explicit precedence rule. When the official service
+identity has a colour prefix and a number—such as 紅5, 藍26 or 棕20—the official
+colour prefix determines the canonical group; the number is an index facet, not
+a second home. A number-only route such as 212 belongs to its numbered series.
+A colour word that is directional, descriptive or part of a trunk name rather
+than an official colour-prefixed service class does not qualify for a colour
+group: it stays in its actual class, such as `trunk`. This decision must come
+from the official service identity, not from matching a Chinese character in a
+route name.
+
 The route slug should be a normalized service identity—number plus a stable
 variant or name where needed—not the current operator. Preserve source route IDs
 and previous names as aliases in the data record so a contract change or a
@@ -70,10 +80,11 @@ Use the LTG-style split as separate browseable indexes:
 /bus/depots/                garages, depots and allocation
 ```
 
-`/bus/garages/` is the existing planned folder name. Make `/bus/depots/` the
-canonical public name because it matches the intended Services / Models / Depots
-split; if the old planned URL is ever published, keep it as a redirect or
-compatibility alias rather than making two indexes.
+`/bus/depots/` is the only proposed public URL for garages, depots and
+allocation. The existing planned `content/bus/garages/_index.md` is not a
+published URL and is not retained as an alias; it should be removed when the
+bus content structure is built. This data-layer run leaves the existing planned
+content and navigation files untouched.
 
 An operator page lists current routes, former routes, models and depots from
 the shared indexes. A route page lists its current operator or operators and an
