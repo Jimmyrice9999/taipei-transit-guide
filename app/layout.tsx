@@ -145,10 +145,10 @@ const HAN_RANGE =
 /**
  * Builds the two @font-face rules for one Han subset.
  *
- * Exported so /data/stations can declare its own family from the same
- * definition. That page renders 200-odd station names in Chinese and every
- * other page renders a few dozen proper nouns, so one shared subset meant 45
- * pages carrying ~40 KB of glyphs only the 46th needs. See scripts/subset-cjk.mjs.
+ * Exported so /data/stations and line station pages can declare their own
+ * families from the same definition. The former renders 200-odd station names;
+ * the latter use one reusable pair per line, so a station page does not carry
+ * glyphs belonging to unrelated lines. See scripts/subset-cjk.mjs.
  *
  * The size-adjust values are per weight and are measured, not guessed — they
  * belong to the typeface, not to the subset, so both families use the same ones.

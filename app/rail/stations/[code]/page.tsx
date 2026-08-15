@@ -19,6 +19,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import CiteMark from '@/components/CiteMark'
 import Figure from '@/components/Figure'
+import HanLineSubset from '@/components/HanLineSubset'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
 import RouteMap from '@/components/RouteMap'
@@ -167,6 +168,7 @@ export default async function StationPage({ params }: Props) {
 
   return (
     <PageShell accent={line}>
+      <HanLineSubset line={line.code} />
       <JsonLd
         data={[
           stationSchema(station, line, index + 1, stations.length),

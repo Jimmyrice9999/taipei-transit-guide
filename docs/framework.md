@@ -1,6 +1,6 @@
 # Taipei Transit Guide — the framework
 
-**Version 1.2 — last updated 13 August 2026 (run 18).**
+**Version 1.3 — last updated 15 August 2026 (run 23).**
 
 *This document records intent and structure, and it goes stale silently — the
 site changes every run and this file does not. Anything below that disagrees
@@ -57,6 +57,39 @@ scope statement reads as discipline.
 
 **8. Only CC or public-domain images, attribution build-enforced.** Citing is not
 licensing.
+
+---
+
+## CJK font loading
+
+Station pages use one two-weight Traditional Chinese subset per line. The build
+reads the rendered Han characters from each line's station pages, writes the
+`400` and `700` WOFF2 pair, and the page preloads both files before declaring its
+line-specific family. `font-display: block` remains deliberate for Han, while
+the Latin `next/font` faces retain `display: optional`.
+
+The measured line pairs are:
+
+| Line | 400 | 700 | Pair |
+|---|---:|---:|---:|
+| BR | 16.4 KB | 16.6 KB | 33.0 KB |
+| R | 44.2 KB | 44.9 KB | 89.1 KB |
+| G | 46.6 KB | 47.3 KB | 93.9 KB |
+| O | 43.2 KB | 44.2 KB | 87.5 KB |
+| BL | 46.3 KB | 47.1 KB | 93.5 KB |
+| Y | 25.6 KB | 26.0 KB | 51.6 KB |
+| LB | 23.1 KB | 23.5 KB | 46.6 KB |
+| A | 34.4 KB | 35.0 KB | 69.3 KB |
+| V | 26.6 KB | 27.1 KB | 53.6 KB |
+| K | 23.8 KB | 24.2 KB | 48.0 KB |
+
+The representative BR13 station first visit fell from 547.4 KB with the shared
+242.5 KB Han pair to 338.5 KB with its 33.0 KB line pair. The other station
+assets are unchanged. Per-page subsets were measured and rejected: they made
+192 station pages produce separate cache keys, duplicated glyphs between
+adjacent stations, and discarded the useful cache hit when a reader moves
+through a line. Per-line subsets retain reuse across that journey while removing
+the unrelated lines' glyphs.
 
 ---
 

@@ -7360,3 +7360,28 @@ print PDFs completed. One local run stopped during screenshots with
 cause remains a one-run local Chromium/static-server interruption, not a
 reproducible site failure. `npm run cite`, `npm run verify`, and `npm test`
 pass; the full unit suite is 185/185. TBC and source conflicts are unchanged.
+
+# Run 23 — Part 1, per-line CJK font subsets, 15 August 2026
+
+Audited the existing three-way subset pipeline, the station route, `npm run
+weigh`, and the previous measured decision in this log. The shared station pair
+was 242.5 KB (119.9 KB regular plus 122.6 KB bold); the representative BR13
+first visit was 547.4 KB. The existing `font-display: optional` setting for
+Latin faces was left unchanged, and Han remains `block`.
+
+Added a server-rendered line-family component that preloads both weights for
+the current station line. Extended the build-output collector, manifest and
+postbuild glyph check to ten line sinks. Generated and committed all ten pairs;
+actual pair weights are BR 33.0 KB, R 89.1 KB, G 93.9 KB, O 87.5 KB, BL 93.5
+KB, Y 51.6 KB, LB 46.6 KB, A 69.3 KB, V 53.6 KB and K 48.0 KB. BR13 is now
+338.5 KB on first visit: 133.2 KB fonts, 188.0 KB other assets and 17.4 KB
+HTML. `docs/framework.md` records the approach and rejects per-page subsets
+because they create 192 cache keys, duplicate glyphs between adjacent stations,
+and lose cross-page cache reuse.
+
+Fresh build/postbuild checks 491 pages with no missing glyphs. The browser
+harness is clean at both narrow widths, with no reflow, spine overlap or axe
+violations; all 175 screenshots and 24 print PDFs completed. `npm run cite`,
+`npm run verify`, and `npm test` pass; the full unit suite is 185/185. No images
+were fetched. No TBCs or source conflicts changed, and nothing remained blocked.
+AGENTS.md remains the user-owned unstaged change.

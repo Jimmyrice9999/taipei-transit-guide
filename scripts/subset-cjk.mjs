@@ -17,19 +17,22 @@
  * Then commit the generated files in public/fonts/.
  *
  * ─────────────────────────────────────────────────────────────────────────────
- * TWO SUBSETS, NOT ONE — and why the build now has to run first.
+ * PER-LINE STATION SUBSETS — and why the build now has to run first.
  *
  * Measured in run 1: /data/stations renders 204 Han characters and every other
  * page put together renders 112. One page was making the other 45 carry ~40 KB
  * of font for characters none of them contain. A rolling stock page was
  * downloading roughly 80 KB of Chinese to render three characters.
  *
- * So there are two sets now:
+ * The output now contains the shared fallback plus the page-specific sets:
  *
- *   base      Everything except /data/stations. Declared in the root layout,
- *             loaded by 45 of 46 pages.
+ *   base      Everything except content pages, /data/stations and station
+ *             pages. Declared in the root layout as the safe fallback.
  *   stations  /data/stations alone. Declared by that page, which overrides
  *             --font-han so the base face is never requested there.
+ *   line-*    One pair per line, declared by that line's station pages. A
+ *             station page therefore carries only the glyphs used anywhere on
+ *             its line, while navigation between stations reuses the pair.
  *
  * Splitting that way needs to know what each *page* renders, which the old
  * source scan could not answer — it read content/, lib/, app/ and components/
@@ -61,6 +64,8 @@ const BUILD_DIR = path.join(ROOT, 'out')
  * the subset it declares.
  */
 export const SPLIT_ROUTE = 'data/stations'
+const LINE_CODES = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'LB', 'A', 'V', 'K']
+const LINE_KEYS = LINE_CODES.map((code) => `line-${code.toLowerCase()}`)
 
 /** Directories scanned for Han characters. */
 const SCAN = [
@@ -93,7 +98,7 @@ const WEIGHTS = [
 ]
 
 /**
- * The three subsets, and the file each weight is written to.
+ * The subsets, and the file each weight is written to.
  *
  * Three-way since run 6: content pages quote sources in Chinese and grew the
  * shared subset threefold; splitting them off gives the sixty-odd station,
@@ -106,10 +111,16 @@ const SUBSETS = [
   { key: 'base', name: (w) => `noto-sans-tc-subset-${w}.woff2` },
   { key: 'content', name: (w) => `noto-sans-tc-content-${w}.woff2` },
   { key: 'stations', name: (w) => `noto-sans-tc-stations-${w}.woff2` },
+  ...LINE_CODES.map((code) => ({
+    key: `line-${code.toLowerCase()}`,
+    name: (w) => `noto-sans-tc-line-${code.toLowerCase()}-${w}.woff2`,
+  })),
 ]
 
 /** Which subset a built page loads, from what it actually declares. */
 export function sinkOf(html) {
+  const line = html.match(/noto-sans-tc-line-([a-z]+)-/)?.[1]
+  if (line) return `line-${line}`
   if (/noto-sans-tc-stations-/.test(html)) return 'stations'
   if (/noto-sans-tc-content-/.test(html)) return 'content'
   return 'base'
@@ -211,7 +222,9 @@ export function collectFromBuild() {
   const pages = builtPages()
   if (pages.length === 0) return null
 
-  const sinks = { base: new Set(), content: new Set(), stations: new Set() }
+  const sinks = Object.fromEntries(
+    ['base', 'content', 'stations', ...LINE_KEYS].map((key) => [key, new Set()]),
+  )
   const perPage = new Map()
 
   for (const { route, file } of pages) {
@@ -220,6 +233,7 @@ export function collectFromBuild() {
     if (chars.size === 0) continue
     perPage.set(route || '/', chars.size)
     const sink = sinks[sinkOf(html)]
+    if (!sink) continue
     for (const ch of chars) sink.add(ch)
   }
 
@@ -237,17 +251,25 @@ async function main() {
 
   if (fromBuild) {
     mode = 'build'
-    sets = { base: fromBuild.base, content: fromBuild.content, stations: fromBuild.stations }
+    sets = Object.fromEntries(
+      ['base', 'content', 'stations', ...LINE_KEYS].map((key) => [key, fromBuild[key]]),
+    )
     console.log(`subset-cjk: read ${fromBuild.pages} built pages from out/`)
     console.log(`  base subset      ${String(sets.base.size).padStart(3)} characters (chrome, stations, data)`)
     console.log(`  content subset   ${String(sets.content.size).padStart(3)} characters (md-backed pages, indexes, bibliography)`)
     console.log(`  stations subset  ${String(sets.stations.size).padStart(3)} characters (/${SPLIT_ROUTE}/ only)`)
+    for (const code of LINE_CODES) {
+      const key = `line-${code.toLowerCase()}`
+      console.log(`  ${key.padEnd(16)} ${String(sets[key].size).padStart(3)} characters (/${code.toLowerCase()} station pages)`)
+    }
   } else {
     mode = 'source'
     const { chars, perFile } = collectFromSource()
-    sets = { base: chars, content: chars, stations: chars }
+    sets = Object.fromEntries(
+      ['base', 'content', 'stations', ...LINE_KEYS].map((key) => [key, chars]),
+    )
     console.warn(
-      'subset-cjk: ⚠ out/ is empty or missing, so the three-way split could NOT be applied.\n' +
+      'subset-cjk: ⚠ out/ is empty or missing, so the page split could NOT be applied.\n' +
         '  Falling back to scanning source, and writing the same union into every subset.\n' +
         '  Nothing will render as tofu, but every page carries the full set.\n' +
         '  Run `npm run build` first, then this again.',
@@ -255,7 +277,7 @@ async function main() {
     console.log(`subset-cjk: ${chars.size} distinct Han characters across ${perFile.size} source files`)
   }
 
-  if (sets.base.size === 0 && sets.content.size === 0 && sets.stations.size === 0) {
+  if (Object.values(sets).every((set) => set.size === 0)) {
     console.log('subset-cjk: no Han characters found — nothing to build.')
     return
   }
@@ -266,6 +288,7 @@ async function main() {
     generated: 'npm run fonts',
     mode,
     splitRoute: SPLIT_ROUTE,
+    lineCodes: LINE_CODES,
     subsets: {},
     files: {},
   }
@@ -303,10 +326,11 @@ async function main() {
     JSON.stringify(manifest, null, 2) + '\n',
   )
 
-  console.log(
-    `\nsubset-cjk: base ${(bytes('base') / 1024).toFixed(1)} KB on 45 pages, ` +
-      `stations ${(bytes('stations') / 1024).toFixed(1)} KB on one.`,
-  )
+  console.log(`\nsubset-cjk: base ${(bytes('base') / 1024).toFixed(1)} KB; stations ${(bytes('stations') / 1024).toFixed(1)} KB.`)
+  for (const code of LINE_CODES) {
+    const key = `line-${code.toLowerCase()}`
+    console.log(`  ${code.padEnd(3)} ${(bytes(key) / 1024).toFixed(1)} KB pair`)
+  }
   console.log('subset-cjk: done. Commit public/fonts/.')
 }
 

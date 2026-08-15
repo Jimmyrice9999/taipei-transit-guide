@@ -1,5 +1,5 @@
 {
-  "exports": 233,
+  "exports": 234,
   "cssClasses": 306,
   "imageSidecars": 63,
   "unusedExports": [
@@ -181,17 +181,17 @@
     {
       "name": "SPLIT_ROUTE",
       "file": "scripts/subset-cjk.mjs",
-      "line": 63
+      "line": 66
     },
     {
       "name": "builtPages",
       "file": "scripts/subset-cjk.mjs",
-      "line": 178
+      "line": 189
     },
     {
       "name": "collectFromBuild",
       "file": "scripts/subset-cjk.mjs",
-      "line": 210
+      "line": 221
     }
   ],
   "unusedClasses": [
