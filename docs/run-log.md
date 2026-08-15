@@ -7409,3 +7409,23 @@ and 0 axe violations across 259 pages; all 175 screenshots and 24 print PDFs
 completed. No images were fetched. No new conflicts were found; the YouBike and
 Wenhu conflicts remain published. AGENTS.md remains the user-owned unstaged
 change.
+
+# Run 23 — Part 3, bus architecture proposal, 15 August 2026
+
+Audited the current bus tree and generic routing before designing anything.
+There is one live bus article (`network/joint-operation.md`), five bus folder
+indexes, no route or operator pages, no bus datasets under `data/tdx/`, and no
+bus-specific model in `lib/`; `lib/routes.ts` is rail-only. The existing reader
+and page route support only immediate three-level content paths, while the
+current nav samples ten links and a type index renders every page. Several
+hundred direct route pages would therefore create a flat dropdown sample and a
+wall-length route index; nested class folders would currently be ignored.
+
+Added `docs/bus-architecture.md` only. It proposes service-class/number-series
+filing, operator/model/depot cross-indexes, explicit feeder-to-rail joins, a
+normalized TDX data layer with researched Markdown overlays, specialized nested
+route routes and indexes, class-filtered navigation, a TDX-versus-research
+route-page contract, and the brown feeder group as the first pilot against the
+existing Wenhu station pages. No route pages, content restructuring, bus data
+pull or research was started. No TBC or source conflict was introduced, and no
+image was fetched.
