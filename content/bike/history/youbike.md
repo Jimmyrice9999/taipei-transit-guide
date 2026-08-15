@@ -382,12 +382,12 @@ Taiwanese city YouBike operates in, cumulative rides passed one billion on 4
 June 2025[^ntbike-milestones]. The same August 2025 release names a 2026
 target of 2,000 stations and 4,500 2.0E bikes specifically[^dot-400m] —
 narrower than the 27,500-bike, 2,000-station citywide target officials gave
-in February 2024 reporting[^cna-2024][^einfo-2024], and this page cannot say
-whether the two targets are consistent (a 4,500-bike e-assist subset of a
-still-current 27,500 total) or whether the plan has simply changed, because
-nothing found restates the larger figure alongside the newer one.
+in February 2024 reporting[^cna-2024][^einfo-2024]. Their relationship remains
+TBC: the 4,500-bike target could be an e-assist subset of a still-current
+27,500 total, or the plan could have changed, but nothing found restates the
+larger figure alongside the newer one.
 
-## What this page does not establish
+## Open evidence
 
 - **1.0's exact fleet size at Taipei's retirement.** Chinese Wikipedia gives
   13,072 bikes; no primary figure for the fleet at the 3 December 2022

@@ -7385,3 +7385,27 @@ violations; all 175 screenshots and 24 print PDFs completed. `npm run cite`,
 `npm run verify`, and `npm test` pass; the full unit suite is 185/185. No images
 were fetched. No TBCs or source conflicts changed, and nothing remained blocked.
 AGENTS.md remains the user-owned unstaged change.
+
+# Run 23 — Part 2, live-page scope wording, 15 August 2026
+
+Audited the four caveats recorded in the previous run: `content/rail/_index.md`,
+`content/bus/network/_index.md`, `content/bike/history/youbike.md`, and
+`content/rail/lines/wenhu-line.md`. The first two were section-level apologies;
+the latter two mixed scope wording into real evidence gaps and conflicts.
+
+Removed the rail and bus index scope paragraphs. Rephrased the YouBike target
+disagreement as explicit TBC and renamed its evidence section. Reframed the
+Wenhu gradient, proposed-station and platform-depth gaps as source-status/TBC
+statements, and changed the fleet heading to state the three published readings
+without claiming the site cannot explain them. No source-backed value was
+deleted.
+
+The first post-edit claims run rose to 33 assertions because “unresolved” was
+not classified as TBC; changing that sentence to explicit TBC returned the
+ratchet to the unchanged baseline of 32 assertions and 35 TBCs. `npm run cite`,
+`npm run verify`, and `npm test` pass; the full unit suite is 185/185. Fresh
+browser verification is clean at both widths, with 0 reflows, 0 spine overlaps
+and 0 axe violations across 259 pages; all 175 screenshots and 24 print PDFs
+completed. No images were fetched. No new conflicts were found; the YouBike and
+Wenhu conflicts remain published. AGENTS.md remains the user-owned unstaged
+change.

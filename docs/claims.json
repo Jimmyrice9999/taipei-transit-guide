@@ -3,9 +3,9 @@
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
     "sourced": 984,
-    "tbc": 36,
+    "tbc": 35,
     "asserted": 32,
-    "meta": 40
+    "meta": 42
   },
   "files": [
     {
@@ -20,7 +20,7 @@
       "file": "content/bike/history/youbike.md",
       "sources": 20,
       "sourced": 47,
-      "tbc": 1,
+      "tbc": 2,
       "asserted": 0,
       "meta": 0
     },
@@ -292,9 +292,9 @@
       "file": "content/rail/lines/wenhu-line.md",
       "sources": 15,
       "sourced": 61,
-      "tbc": 1,
+      "tbc": 0,
       "asserted": 5,
-      "meta": 6
+      "meta": 7
     },
     {
       "file": "content/rail/lines/zhonghe-xinlu-line.md",
@@ -428,9 +428,9 @@
       "file": "content/rail/_index.md",
       "sources": 0,
       "sourced": 0,
-      "tbc": 1,
+      "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/ticketing/guides/cards-passes-and-fares.md",

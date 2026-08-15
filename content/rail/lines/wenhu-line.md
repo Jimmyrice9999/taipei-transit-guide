@@ -287,8 +287,8 @@ and it exists because nobody needs to sit where you are standing.
 The Wenhu Line was **Taiwan's first metro line**[^peoplenews-1996], and it
 remains the only line in the Taipei network running on rubber tyres rather than
 steel wheels. That choice is what lets it climb through Wenshan's hills; the
-precise gradients it clears are a figure this site has not yet sourced, and the
-design criteria that would settle them are still to be found.
+precise gradients remain TBC, and the design criteria that would establish them
+were not found in the sources used here.
 
 ## History
 
@@ -313,8 +313,8 @@ That is the earliest instance of a pattern this site records twice more: the
 Songshan–Xindian Line redesigned from part-elevated to fully underground in
 1987 on street-width and visual-impact grounds, and the Neihu extension held up
 for years over the same argument. **The objection came first, before the line
-existed, and it worked.** What exactly was moved, and which proposed stations
-went with it, is not established here and is worth a proper look.
+existed, and it worked.** The sources read for this page do not identify exactly
+what moved or which proposed stations went with it.
 
 The original section was bought in 1988 as a turnkey system from France's
 Matra[^zh-muzha]. What followed — **two fires during testing in 1993**, on 5
@@ -357,7 +357,7 @@ never mention each other, and the identification falls out of the arithmetic
 between them. zh.wikipedia names the same pair outright[^zh-wenhu]; it is no
 longer what the claim rests on.
 
-The platform depths are still not established here and are not asserted.
+No source read for this page establishes the platform depths; they remain TBC.
 
 Every platform on the line has full-height platform screen doors: Faiveley
 equipment from BR01 to BR12, ST Electronics from BR13 to BR24[^trtc-psd].
@@ -446,7 +446,7 @@ pairs:
 - [Innovia APM 256 (C370)](/rail/rolling-stock/innovia-apm-256-c370/) — 101
   pairs, delivered for the Neihu extension[^zh-innovia]
 
-### The fleet totals do not divide, and this site cannot say why
+### The fleet totals do not divide: three readings
 
 A four-car train on this line is two coupled pairs. DORTS's procurement record
 gives **51 pairs of VAL256 and 101 pairs of Innovia**[^dorts-fleet-faq]. The

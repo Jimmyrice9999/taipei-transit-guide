@@ -15,5 +15,5 @@ sitting in research notes did not survive their first check against the
 regulator: the numeric bands turned out to have a competing and better-sourced
 explanation, the feeder-colour table was missing a line, and the revenue-pooling
 model that was supposed to be the whole point of the page is not described by
-the office that runs the system. What is published is what survived, and the
-page says plainly what it still cannot say.
+the office that runs the system. What is published is what survived those
+checks.
