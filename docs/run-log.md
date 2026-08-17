@@ -7579,3 +7579,23 @@ Verification: fresh `npm run build`, `npm run cite`, `npm run verify`, and
 `npm test` passed; the full test suite reports 185/185. The existing verify
 warning remains: 231 generated `/train/` redirect stubs are reachable only by
 typing their URLs.
+
+# Run 27 — Organization audit, Part 3, 17 August 2026
+
+Audited the BackLink component and all station-page incoming links. Station
+pages used a fixed line-page destination even when the visitor had just come
+from the station index; a static server render cannot inspect that source.
+Added a client-side, session-scoped in-tab route trail recorded by the global
+navigation. After hydration, BackLink uses the previous route when it is
+known, including `/rail/stations/`, and labels direct loads and unknown routes
+with the explicit parent fallback.
+
+Limitation: this is not a replacement for the browser's complete history
+stack. A fresh tab, disabled JavaScript, blocked sessionStorage, an external
+referrer, or unusual back/forward traversal uses the static parent. The
+fallback remains the line page for a station reached without a known prior
+route. No content or research changed.
+
+Verification: fresh `npm run build`, `npm run cite`, `npm run verify`, and
+`npm test` passed; the full test suite reports 185/185. The existing 231
+URL-only `/train/` redirect-stub warning remains.

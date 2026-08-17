@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
 import type { NavGroup, NavSection } from '@/lib/nav'
+import { rememberPath } from '@/lib/navigation-history'
 
 /** "/rail/" and "/rail" should both count as being in the Rail section. */
 function isInSection(pathname: string, href: string) {
@@ -81,6 +82,11 @@ export default function SiteNav({
   // Any navigation closes the panel. Without this, following a link inside a
   // panel leaves it open over the page just requested.
   useEffect(() => setOpen(null), [pathname])
+
+  // Keep a short in-tab trail so contextual BackLinks can use the route the
+  // reader actually came from. Explicit server-rendered fallbacks remain the
+  // behaviour for direct loads and browsers with storage disabled.
+  useEffect(() => rememberPath(pathname), [pathname])
 
   useEffect(() => {
     if (!open) return

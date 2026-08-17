@@ -1,33 +1,44 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import { normalizePath, previousPath } from '@/lib/navigation-history'
 
 /**
- * "← Back to Lines" — the up-navigation control, on every page.
+ * A contextual up-navigation control with an explicit static fallback.
  *
- * The site already had breadcrumbs and they were reported in run 10 as "NO
- * BACK BUTTON anywhere", a top complaint. Both things are true. A breadcrumb
- * trail is an *orientation* device — it tells you where you are — and it is
- * rendered as small grey text with chevrons between the crumbs. Nothing about
- * it reads as a control you press, and the one people actually want to press
- * is the second-to-last crumb, which is the least prominent thing in the row.
- *
- * So this is a separate, deliberate control: an arrow, a border, a hit area,
- * and one destination. It does not replace the breadcrumbs — they answer a
- * different question and both belong.
- *
- * **It is a link, not `history.back()`.** A back *button* would be
- * unpredictable: it depends on how you arrived, it does nothing on a page
- * opened in a new tab or from a search result, and its label cannot say where
- * it goes. A link to the parent always goes to the same place and can name it.
- * That is also why it takes an explicit `label` — "Back" alone is the failure
- * being fixed.
+ * The fallback is rendered in the static export. After hydration, the short
+ * in-tab trail recorded by SiteNav can replace it with the route the reader
+ * actually came from. Direct loads, disabled script, and blocked storage keep
+ * the useful parent link instead.
  */
 export default function BackLink({ href, label }: { href: string; label: string }) {
+  const pathname = usePathname()
+  const [destination, setDestination] = useState({ href, label })
+
+  useEffect(() => {
+    const previous = previousPath(pathname)
+    if (!previous || normalizePath(previous) === normalizePath(href)) return
+    setDestination({
+      href: previous,
+      label:
+        previous === '/'
+          ? 'the home page'
+          : previous === '/rail/'
+            ? 'Rail'
+            : previous === '/rail/stations/'
+              ? 'the Stations index'
+              : 'the previous page',
+    })
+  }, [href, pathname])
+
   return (
-    <Link className="back-link" href={href}>
+    <Link className="back-link" href={destination.href}>
       <span className="back-arrow" aria-hidden="true">
         ←
       </span>
-      Back to {label}
+      Back to {destination.label}
     </Link>
   )
 }
