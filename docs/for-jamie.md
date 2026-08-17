@@ -1,21 +1,11 @@
 # For Jamie
 
-GitHub: the earlier failure was Adversarial fixtures, not test:unit; fixed,
-plus six Actions off Node 20. Station pages: 24 to 180 across all 9 lines.
-The auto-linker cross-line collision bug was fixed; remaining link audit was
-179, mostly citation titles, logged for Part 5. Station pages are 394 KB versus
-the 200 KB target; shared CJK subset, not images, drives that.
-
-Run 22 Part 1: 20 missing TDX postal addresses, not 8 whole lines; added cited
-NTMC positions for 23 V/K pages, kept addresses TBC, mapped Taoyuan districts.
-Part 2: inspected 70 in-use images; removed seven weak assets, no fetches.
-Part 3 R: deepened 28 Tamsui-Xinyi pages; 43 primary records, 10,275 to 20,321
-rendered words, with TBCs for unpublished fields. Fonts: 380 to 492 base Han,
-116.1 to 149.9 KB.
-Part 3 G: deepened 20 Songshan-Xindian pages; 29 primary records, 7,340 to
-14,892 rendered words; G15/G10 conflicts retained. Fonts: 492 to 555 base Han,
-149.9 to 172.6 KB. All gates green, 185/185.
-Part 3 O: deepened 26 pages; 9,744 to 19,386 rendered words; 53 primary records; fonts 555 to 611 base Han, 172.6 to 191.8 KB; conflicts logged.
-Part 3 BL: deepened 23 pages; 8,773 to 15,727 rendered words; 42 primary records; fonts 611 to 672 base Han, 191.8 to 209.9 KB. Part 3 Y: deepened 14 pages; 25 primary records, 4,994 to 13,686 rendered words; fonts 672 to 692 base Han, 209.9 to 216.8 KB; conflicts logged. Part 3 A: deepened 22 pages; 29 primary records, 8,112 to 15,383 rendered words; fonts 692 to 735 base Han, 216.8 to 230.1 KB; conflicts logged. Part 3 V: deepened 14 pages; 28 primary records, 2,496 to 10,849 rendered words; fonts 735 to 767 base Han, 230.1 to 238.2 KB; conflicts logged. Part 3 K: deepened 9 pages; 22 primary records, 1,595 to 6,635 rendered words; fonts 767 to 782 base Han, 238.2 to 242.5 KB; conflicts logged; all gates green, 185/185. AGENTS.md remains the user-owned unstaged change.
-Part 4–7: shared citation definitions, link audit, browser/asset checks and font decision are complete; no unresolved visual defect, browser connector unavailable, no option selected. Run 25 Part 1: audited all 74 unplaced TDX routes; added 100s/900s and special-shuttle groups, left 13 genuinely mixed routes unclassified. TDX refresh timed out without partial writes; snapshots were updated mechanically. No images, TBCs or source conflicts. AGENTS.md remains the user-owned unstaged change.
-Run 25 Part 2: built only the 20-route brown feeder pilot; 74 exact StopUID rail joins, 36 ambiguous stops left unlinked, no images. Full primary checks and conflicts are in run-log/research; operator pages remain TBC. AGENTS.md remains unstaged.
+Run 27 organization audit is complete through Part 6; every part was committed and pushed to `main`.
+Part 0 found median station body prose of 0 words across 192 pages; no content was added.
+Parts 1–2 nested overloaded navigation and added a direct homepage Rail → Stations path.
+Part 3 added a session-scoped contextual back trail with a static parent fallback.
+Part 4 added native accessible disclosures to grouped indexes and long content pages.
+Part 5 found no unambiguous orphaned user-facing page; 231 legacy `/train/` stubs remain intentionally URL-only.
+Part 6 fresh build, browser harness, navigation checks, screenshots and visual review passed.
+Gates are green: cite, verify, nav, browser verification, and full tests 185/185.
+No research, content pages, or images were added or fetched; user-owned dirty files remain unstaged.

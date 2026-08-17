@@ -7649,3 +7649,39 @@ links by design; linking to them would send users through obsolete URLs. No
 unambiguous reachability fix remained. `npm run verify` still reports those
 231 intentional URL-only stubs and no broken links. No research or content
 files were changed.
+
+# Run 27 — Organization audit, Part 6, 17 August 2026
+
+Built fresh before inspection: Next generated 512 routes; postbuild produced
+513 HTML pages, including 231 legacy `/train/` redirect stubs. The browser
+harness was initially blocked by the machine's missing Chromium executable;
+Chromium was installed, then the exact harness was rerun with the required
+permissions. It completed in 227.5 seconds, not by timeout.
+
+The harness passed reflow on all 281 user-facing pages at 640px and 320px,
+with no horizontal overflow or painted content beneath the fixed spine. Its
+keyboard traversal, accessibility-tree probes, axe checks (zero violations),
+and 24 print checks passed. The separate navigation checks passed all 12
+keyboard and touch cases, including nested-menu open/close and no hover-only
+visibility.
+
+For the requested visual audit, captured and looked at 90 fresh screenshots:
+18 page types (home, all six section indexes, station index, fleet index and
+page, depot index and page, line, station, network, bus route index, bus route
+group and bus route page) at 375, 768, 1440, 1920 and 2560px. Navigation and
+disclosures were legible at every width; images, maps, tables and cards scaled
+without clipping. Station groups show the first line open and the rest closed;
+fleet/depot indexes open their short lists; long line/article sections and bus
+route groups start collapsed. The no-photo station cards leave some sparse
+card space, but no new organization or overflow defect was found.
+
+The interaction probe passed nested menus at every requested width, disclosure
+toggle/restore checks, station-index back to `/rail/stations/`, line fallback
+back to `/rail/lines/wenhu-line/`, and overflow checks at both 320px and 375px.
+The known lazy-image issue in stitched long screenshots was not chased. Static
+export still cannot know a true browser referrer before hydration; Part 3's
+session-scoped trail and explicit parent fallback remain the documented limit.
+No research, content pages, or images were added or fetched.
+
+Verification: `npm run cite`, `npm run verify`, `npm test`, `npm run nav`, and
+`npm run verify:browser` passed; the full test suite reports 185/185.
