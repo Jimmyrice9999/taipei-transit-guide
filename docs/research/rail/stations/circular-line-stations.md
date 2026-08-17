@@ -293,6 +293,17 @@ fields or is line-wide rather than station-specific.
 - **Y17** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=806, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page193.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
 - **Y18** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=807, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
 
+## Station-prose audit — Y19–Y20 batch, 17 August 2026
+
+The final two Y pages were audited with the full NTMC detail pages, the full
+DORTS Phase 1 route and architecture pages, architecture-book page 194 and the
+full line-wide public-art record. Both were correctly left empty: their full
+pages add no station-specific prose beyond the structured land-use, entrance,
+terminus and public-art fields already recorded.
+
+- **Y19** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=808, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
+- **Y20** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=809, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
+
 ## Conflicts
 
 1. The route table uses engineering station identifiers one number lower than
