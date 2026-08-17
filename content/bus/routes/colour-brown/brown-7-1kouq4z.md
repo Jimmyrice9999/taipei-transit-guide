@@ -1,7 +1,7 @@
 ---
 title: BR7 Jianye Rd. / 棕7建業路
 summary: Brown-line feeder pilot route BR7 Jianye Rd. (棕7建業路).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕7建業路 under 捷運棕線接駁公車.
+  - id: ebus-br7-jianye
+    title: BR7 Jianye Road route information
+    titleOriginal: 棕7建業路路線資訊
+    publisher: New Taipei City Public Transportation Office (新北市政府交通局)
+    url: https://ebus.gov.taipei/EBus/VsSimpleMap?rid=17940&sec=1
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official route-information page listing the current 新店–臺北市政府 corridor, limited weekday/holiday departures, 建業路 stops and 臺北客運新店站 contact.
 ---
 
 ## Classification
@@ -44,4 +53,9 @@ The official 大臺北公車 catalogue lists 棕7建業路 under 捷運棕線接
 
 ## Research status
 
-The TDX snapshot supplies the structural fields shown above; route history, corridor decision, unusual branch or short working, operator changes, route length and timetable fields remain TBC.[^tdx-bus]
+The TDX snapshot supplies the structural fields shown above; route length remains TBC where that layer has no field.[^tdx-bus]
+
+- Route history: TBC — the full current page does not establish an opening date, former alignment or renumbering.[^ebus-br7-jianye]
+- Corridor decision: TBC — the current 新店–臺北市政府 corridor and 建業路 section are published, but the original rationale was not.[^ebus-br7-jianye]
+- Unusual branch or short working: Partial — the page publishes limited weekday and holiday departures for this 建業路 variant, but not when it began or why.[^ebus-br7-jianye]
+- Operator changes: TBC — the current page names 臺北客運新店站, but no dated transfer record was found.[^ebus-br7-jianye]

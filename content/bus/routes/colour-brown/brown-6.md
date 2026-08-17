@@ -1,7 +1,7 @@
 ---
 title: BR6 / 棕6
 summary: Brown-line feeder pilot route BR6 (棕6).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕6 under 捷運棕線接駁公車.
+  - id: ebus-br6
+    title: BR6 route information
+    titleOriginal: 棕6路線資訊
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://ebus.gov.taipei/EBus/VsSimpleMap?gb=1&routeid=0114000600
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official route-information page listing the current 捷運動物園站–捷運市政府站 corridor, timetable, dog-friendly trips, 貓空 event headway note and 欣欣客運木柵二站 contact.
 ---
 
 ## Classification
@@ -49,4 +58,7 @@ The committed TDX bus snapshot supplies the changing structural fields shown abo
 - Route history: TBC.
 - Corridor decision: TBC.
 - Unusual branch or short working: TBC.
-- Operator changes: TBC.
+- Route history: TBC — the full current page does not establish an opening date, former alignment or renumbering.[^ebus-br6]
+- Corridor decision: TBC — the current 捷運動物園站–捷運市政府站 corridor is published, but its original rationale was not.[^ebus-br6]
+- Unusual branch or short working: Partial — the page records dog-friendly trips and a current 貓空 special-event headway adjustment, not a dated branch history.[^ebus-br6]
+- Operator changes: TBC — the current page names 欣欣客運木柵二站, but no dated transfer record was found.[^ebus-br6]

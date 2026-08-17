@@ -205,6 +205,112 @@ effective 1 March 2012, and `政大附中` was added to the return trip, effecti
 - **棕5:** opening date, earlier alignment, original corridor rationale and dated
   operator changes are TBC; only the two 2012 stop adjustments are established.
 
+## Batch 2 — 棕6, 棕7, 棕7建業路 and 棕11, checked 17 August 2026
+
+The four current route pages were fetched in full. They establish current
+identity, service patterns and operator contacts; only the dated 棕11 stop
+change below supplies route-specific historical evidence. Current dog-friendly,
+event, 綠野香坡 and 建業路 timetable notes are not treated as origin history.
+
+### 棕6 / BR6
+
+The full official route-information page gives `捷運動物園站 - 捷運市政府站`,
+weekday and holiday service `0540~0000`, weekday peak/off-peak intervals of
+12–15 and 20–25 minutes, one-section fare, `欣欣客運木柵二站`, two weekday and
+four holiday dog-friendly departures, and a current 貓空 event note that may
+change the event-period interval from 20 to 20–30 minutes.
+
+- **Source:** “BR6 route information” / `titleOriginal`: `棕6路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?gb=1&routeid=0114000600
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `起訖站名：捷運動物園站 - 捷運市政府站`;
+  `平日：0540~0000` and `假日：0540~0000`;
+  `業者服務電話 : 欣欣客運木柵二站`; `平日0600、1015班次為狗狗友善公車`;
+  `假日0830、1120、1500、1640班次為狗狗友善公車`; and the `貓空山區特殊活動`
+  headway note.
+
+### 棕7 / BR7
+
+The full official schedule page gives `新店 - 臺北市政府`, weekday service
+0525–2245, holiday service 0525–2215, two-section fare, `臺北客運新店站`, and
+the separate 綠野香坡 trip pattern. It does not establish the opening date,
+former alignment, original corridor rationale or a dated operator transfer.
+
+- **Source:** “BR7 route schedule” / `titleOriginal`: `棕7班表`
+- **Publisher:** Taipei City and New Taipei City Public Transportation Offices /
+  `臺北市政府公共運輸處、新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0414000700
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 新店 - 臺北市政府`;
+  `頭末班車 : [平日] 0525 - 2245 / [假日] 0525 - 2215`;
+  `業者服務電話 : 臺北客運新店站`; and the dated-time 綠野香坡 note.
+
+### 棕7建業路 / BR7 Jianye Road
+
+The full official route-information page identifies the New Taipei route as
+`新店 - 臺北市政府`, with weekday departures 0730, 0800, 1350, 1500 and 1800,
+holiday departures 0600, 0900, 1200, 1500 and 1800, two-section fare, the
+景美女中–博嘉國小 buffer and `臺北客運新店站`. The page does not establish
+when this Jianye Road variant began, why it was created or whether its operator
+ever changed.
+
+- **Source:** “BR7 Jianye Road route information” /
+  `titleOriginal`: `棕7建業路路線資訊`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?rid=17940&sec=1
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `管轄單位：新北市`;
+  `起訖站名：新店 - 臺北市政府`;
+  `平日：0730 0800 1350 1500 1800`;
+  `假日：0600 0900 1200 1500 1800`;
+  `分段緩衝區：景美女中-博嘉國小`; and `業者服務電話 : 臺北客運新店站`.
+
+### 棕11 / BR11
+
+The full official route-and-stop page gives `富德 - 捷運公館站`, weekday
+departures from 0550 to 2230, holiday departures from 0630 to 1340,
+one-section fare and `欣欣客運富德站`. It does not establish the opening date,
+former alignment or original corridor rationale.
+
+- **Source:** “BR11 route and stop information” / `titleOriginal`: `棕11路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001100
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 富德 - 捷運公館站`;
+  `頭末班車 : [平日] 0550 - 2230 / [假日] 0630 - 1340`;
+  `收費方式 : 一段票`; and `業者服務電話 : 欣欣客運富德站`.
+
+The PTO’s full supplementary December 2013 operating-plan PDF records that
+棕11, including its sub-line, cancelled the `萬壽橋頭(木柵)` stop effective
+31 December 2013. This is a stop-level adjustment, not evidence of the route’s
+opening or original corridor decision.
+
+- **Source:** “November 2013 supplementary approved bus operating-plan adjustments” /
+  `titleOriginal`: `102年11月份營運計畫調整(補充)`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf
+- **Kind/confidence:** PRIMARY; High — full official three-page PDF read.
+- **Original-language text read:** `102/12/31 棕11(含副) 取消「萬壽橋頭(木柵)」站`.
+
+### What remains TBC
+
+- **棕6:** opening date, former alignment, original corridor rationale and dated
+  operator changes are TBC. The dog-friendly and 貓空-event notes are current
+  operating details only.
+- **棕7:** opening date, former alignment, original corridor rationale and dated
+  operator changes are TBC. The 綠野香坡 pattern is current schedule evidence,
+  not a dated branch history.
+- **棕7建業路:** opening date, creation rationale, former alignment and dated
+  operator changes are TBC. The current page confirms its limited schedule and
+  建業路 stops only.
+- **棕11:** opening date, former alignment, original corridor rationale and dated
+  operator changes are TBC; the 2013 stop cancellation is established.
+
 ## Negative case — brown wording was tested explicitly
 
 All 20 records were checked by Chinese and English route name, then against the
@@ -261,7 +367,7 @@ NWT197324, NWT199762 and NWT199764 新店站.
 ## Checked and failed
 
 - **A complete 2024 棕2 route-change record** — The search result identified a PTO PDF lead, but the full PDF fetch failed with a cache miss; no claim was published from the snippet. Checked 17 August 2026.
-- **Dated route-history, corridor-rationale and operator-change records for the 16 pilot routes** — The batch-1 check found a partial pre-2009 shortening record for 棕1 and two 2012 stop adjustments for 棕5. It did not establish the remaining opening histories, original corridor decisions or dated operator changes for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; those fields remain TBC rather than being inferred from current stops or operators. Checked 17 August 2026.
+- **Dated route-history, corridor-rationale and operator-change records for the 16 pilot routes** — The batch-1 and batch-2 checks found a partial pre-2009 shortening record for 棕1, two 2012 stop adjustments for 棕5, and a 2013 stop cancellation for 棕11 (including its sub-line). They did not establish the remaining opening histories, original corridor decisions or dated operator changes for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; those fields remain TBC rather than being inferred from current stops or operators. Checked 17 August 2026.
 
 ## Stated gaps
 

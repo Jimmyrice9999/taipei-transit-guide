@@ -1,7 +1,7 @@
 ---
 title: BR11 / 棕11
 summary: Brown-line feeder pilot route BR11 (棕11).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕11 under 捷運棕線接駁公車.
+  - id: ebus-br11
+    title: BR11 route and stop information
+    titleOriginal: 棕11路線資訊
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001100
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official route-and-stop page listing the current 富德–捷運公館站 corridor, timetable, stop sequence and 欣欣客運富德站 contact.
+  - id: pto-102-br11-stops
+    title: November 2013 supplementary approved bus operating-plan adjustments
+    titleOriginal: 102年11月份營運計畫調整(補充)
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official PDF recording that 棕11(含副) cancelled the 萬壽橋頭(木柵) stop effective 31 December 2013.
 ---
 
 ## Classification
@@ -44,4 +62,9 @@ The official 大臺北公車 catalogue lists 棕11 under 捷運棕線接駁公�
 
 ## Research status
 
-The TDX snapshot supplies the structural fields shown above; route history, corridor decision, unusual branch or short working, operator changes, route length and timetable fields remain TBC.[^tdx-bus]
+The TDX snapshot supplies the structural fields shown above; route length remains TBC where that layer has no field.[^tdx-bus]
+
+- Route history: Partial — the PTO records cancellation of the 萬壽橋頭(木柵) stop for 棕11 and its sub-line effective 31 December 2013; the opening and earlier alignment remain TBC.[^pto-102-br11-stops]
+- Corridor decision: TBC — the current 富德–捷運公館站 corridor is published, but its original rationale was not.[^ebus-br11]
+- Unusual branch or short working: TBC.
+- Operator changes: TBC — the current page names 欣欣客運富德站, but no dated transfer record was found.[^ebus-br11]
