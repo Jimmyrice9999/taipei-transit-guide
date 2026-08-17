@@ -192,6 +192,9 @@ const stationProse: Record<string, StationProseSentence[]> = {
   Y07: [
     { text: 'DORTS’s DF111 brief links this section to the Liugong Canal, Shisizhang farmland and the Xindian River crossing; its “nature” concept responds with square elements and extensive use of the Circular Line colour.', source: dortsArchitecture.id },
   ],
+  Y16: [
+    { text: 'DORTS describes Daniel Buren’s work as an optical architecture of 8.7-centimetre colour bands, geometric forms, mirrored space and LED rainbows, with the platform columns carrying the station beneath the bus terminal.', source: artBanqiao.id },
+  ],
 }
 
 function makeResearch(code: string, data: YData): StationResearch {
