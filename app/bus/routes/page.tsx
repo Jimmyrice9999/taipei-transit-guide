@@ -37,18 +37,26 @@ export default function BusRoutesIndexPage() {
         </li>
       </ul>
       <p className="section-desc">Other route groups remain outside this shape-test pilot.</p>
-      <h2 className="section-heading">Pilot routes</h2>
-      <ul className="card-list">
-        {brownRoutes.map((route) => (
-          <CardRow
-            key={route.id}
-            href={`/bus/routes/colour-brown/${route.canonicalSlug}/`}
-            title={`${route.names.en} / ${route.names.zh_tw}`}
-            summary="Brown-line feeder pilot route"
-            line="BR"
-          />
-        ))}
-      </ul>
+      <details className="index-disclosure" open={false}>
+        <summary>
+          <span className="section-heading" role="heading" aria-level={2}>Pilot routes</span>
+          <span className="disclosure-count">{brownRoutes.length} routes</span>
+          <span className="disclosure-caret" aria-hidden="true" />
+        </summary>
+        <div className="index-disclosure-body">
+          <ul className="card-list">
+            {brownRoutes.map((route) => (
+              <CardRow
+                key={route.id}
+                href={`/bus/routes/colour-brown/${route.canonicalSlug}/`}
+                title={`${route.names.en} / ${route.names.zh_tw}`}
+                summary="Brown-line feeder pilot route"
+                line="BR"
+              />
+            ))}
+          </ul>
+        </div>
+      </details>
     </PageShell>
   )
 }

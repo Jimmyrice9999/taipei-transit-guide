@@ -38,6 +38,7 @@ export default function StationsIndexPage() {
     group.push(station)
     byLine.set(station.line, group)
   }
+  const firstLineCode = [...byLine.keys()][0]
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -72,7 +73,16 @@ export default function StationsIndexPage() {
       {[...byLine.entries()].map(([code, stations]) => {
         const line = getLine(code)
         return (
-          <section key={code}>
+          <details key={code} className="index-disclosure" open={code === firstLineCode}>
+            <summary>
+              <span className="section-heading station-index-head" role="heading" aria-level={2}>
+                {line && <LineIcon code={line.code} size={28} />}
+                <span>{line ? `${line.name} Line` : code}</span>
+              </span>
+              <span className="disclosure-count">{stations.length} stations</span>
+              <span className="disclosure-caret" aria-hidden="true" />
+            </summary>
+            <div className="index-disclosure-body">
             {/* The heading names the line; it now links to it. This page
                 lists a line's stations, so the line itself is the obvious
                 thing to want next and it was not reachable from here. */}
@@ -81,18 +91,11 @@ export default function StationsIndexPage() {
               stations by line and said which line only in words; the icon
               and the badge now say it the way the network says it.
             */}
-            <h2 className="section-heading station-index-head">
-              {line && <LineIcon code={line.code} size={28} />}
-              {line ? (
-                getLinePageHref(code) ? (
-                  <Link href={getLinePageHref(code)!}>{`${line.name} Line`}</Link>
-                ) : (
-                  `${line.name} Line`
-                )
-              ) : (
-                code
-              )}
-            </h2>
+            {line && getLinePageHref(code) && (
+              <p className="disclosure-index-link">
+                <Link href={getLinePageHref(code)!}>Open the {line.name} Line page →</Link>
+              </p>
+            )}
             <ul className="photo-card-grid">
               {stations.map((station) => (
                 <PhotoCard
@@ -151,7 +154,8 @@ export default function StationsIndexPage() {
                 />
               ))}
             </ul>
-          </section>
+            </div>
+          </details>
         )
       })}
     </PageShell>

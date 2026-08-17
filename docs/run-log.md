@@ -7599,3 +7599,24 @@ route. No content or research changed.
 Verification: fresh `npm run build`, `npm run cite`, `npm run verify`, and
 `npm test` passed; the full test suite reports 185/185. The existing 231
 URL-only `/train/` redirect-stub warning remains.
+
+# Run 27 — Organization audit, Part 4, 17 August 2026
+
+Audited all grouped indexes and content headings. There were no existing
+disclosures. The implemented native `<details>/<summary>` controls cover the
+10 station-line groups, rolling-stock and depot indexes, both brown-feeder
+route lists, and the 19 long content pages with at least three major sections;
+short two-section route pages remain unchanged.
+
+Defaults: the first station line and the short rolling-stock/depot lists open
+to provide immediate orientation; the 20-route lists, the longer line index,
+and all later article sections start closed to avoid a wall of links or prose.
+The first major article section opens for context. All closed contents remain
+in static HTML, summaries retain heading levels and anchors, and no expansion
+animation was added, so `prefers-reduced-motion` needs no special exception.
+
+The first gate caught and fixed an h1-to-h3 jump caused by replacing article
+h2s with non-heading summary spans; summaries now contain real h2 elements.
+Verification: fresh build, `npm run a11y`, `npm run cite`, `npm run verify`, and
+`npm test` passed; the full test suite reports 185/185. No research or content
+files were changed.

@@ -33,6 +33,7 @@ import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
 import { ARTICLE_TYPES, getAllPages, getPage, getPages, getSection, getType } from '@/lib/content'
 import { getImage } from '@/lib/images'
+import { collapseMajorSections } from '@/lib/collapsible-html'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 
@@ -218,7 +219,10 @@ export default async function ContentPage({ params }: Props) {
             href={page.href}
           />
 
-          <div className="prose article-body" dangerouslySetInnerHTML={{ __html: body }} />
+          <div
+            className="prose article-body"
+            dangerouslySetInnerHTML={{ __html: collapseMajorSections(body) }}
+          />
 
           <References references={page.references} />
 
@@ -513,7 +517,10 @@ export default async function ContentPage({ params }: Props) {
               explicit opt-in to insert raw HTML — only ever safe because the
               content is our own files in /content.
             */}
-            <div className="prose" dangerouslySetInnerHTML={{ __html: page.html }} />
+            <div
+              className="prose"
+              dangerouslySetInnerHTML={{ __html: collapseMajorSections(page.html) }}
+            />
 
             {/*
               The section drawing goes above the geographic map, because they

@@ -3346,6 +3346,67 @@ a.adjacent-link:hover {
   margin-bottom: 0.4em;
 }
 
+/* Long article sections use native disclosure controls. The body remains in
+   the HTML when closed, so find-in-page and crawlers still see the prose. */
+.prose .content-disclosure {
+  margin: 1.8em 0 0;
+  border-top: 1px solid var(--rule);
+}
+
+.prose .content-disclosure > summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 0 8px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.prose .content-disclosure > summary::-webkit-details-marker,
+.index-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.prose .content-disclosure > summary:focus-visible,
+.index-disclosure > summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.content-disclosure-title {
+  flex: 1 1 auto;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--accent);
+  text-wrap: balance;
+}
+
+.content-disclosure-body {
+  padding-bottom: 8px;
+}
+
+.content-disclosure-body > :first-child {
+  margin-top: 0.8em;
+}
+
+.disclosure-caret {
+  width: 9px;
+  height: 9px;
+  flex: none;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg) translateY(-2px);
+}
+
+[open] > summary .disclosure-caret {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
 .prose ul,
 .prose ol {
   padding-left: 1.4em;
@@ -3491,6 +3552,45 @@ a.adjacent-link:hover {
   font-size: 15px;
   margin: 0 0 14px;
   max-width: var(--measure);
+}
+
+/* Grouped indexes collapse their repeated card grids without removing them
+   from the static document. The first station line and short fleet/depot
+   indexes are open; larger route and line lists start closed. */
+.index-disclosure {
+  margin: 34px 0 32px;
+  border-top: 1px solid var(--rule);
+}
+
+.index-disclosure > summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 48px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.index-disclosure > summary .section-heading {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.index-disclosure-body {
+  padding-top: 8px;
+}
+
+.disclosure-count {
+  flex: none;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+.disclosure-index-link {
+  margin: 0 0 14px;
+  font-size: 14px;
 }
 
 /*

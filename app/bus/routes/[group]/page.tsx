@@ -47,7 +47,14 @@ export default async function BusRouteGroupPage({ params }: Props) {
       <h1 className="page-title"><RichText>{folder.title}</RichText></h1>
       {folder.description && <p className="page-summary"><RichText>{folder.description}</RichText></p>}
       {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
-      <ul className="card-list">
+      <details className="index-disclosure">
+        <summary>
+          <span className="section-heading" role="heading" aria-level={2}>Routes in this group</span>
+          <span className="disclosure-count">{routes.length} routes</span>
+          <span className="disclosure-caret" aria-hidden="true" />
+        </summary>
+        <div className="index-disclosure-body">
+          <ul className="card-list">
         {routes.map((route) => (
           <CardRow
             key={route.id}
@@ -57,7 +64,9 @@ export default async function BusRouteGroupPage({ params }: Props) {
             line="BR"
           />
         ))}
-      </ul>
+          </ul>
+        </div>
+      </details>
     </PageShell>
   )
 }

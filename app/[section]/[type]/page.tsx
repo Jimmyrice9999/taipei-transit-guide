@@ -106,7 +106,17 @@ export default async function TypeIndexPage({ params }: Props) {
       */}
       {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
 
-      {pages.length === 0 ? null : photoGrid ? (
+      {pages.length === 0 ? null : (
+        <details className="index-disclosure" open={pages.length < 10}>
+          <summary>
+            <span className="section-heading" role="heading" aria-level={2}>
+              {typeMeta.title}
+            </span>
+            <span className="disclosure-count">{pages.length} entries</span>
+            <span className="disclosure-caret" aria-hidden="true" />
+          </summary>
+          <div className="index-disclosure-body">
+            {photoGrid ? (
         /*
          * Photographed cards, one per item. A card's own page is the primary
          * link (photo, title, summary); the line it serves is a second, real
@@ -114,7 +124,7 @@ export default async function TypeIndexPage({ params }: Props) {
          * Part 11 asked for cards that link to the lines they serve, not
          * cards that merely mention them.
          */
-        <ul className="photo-card-grid">
+              <ul className="photo-card-grid">
           {pages.map((page) => (
             <PhotoCard
               key={page.slug}
@@ -126,9 +136,9 @@ export default async function TypeIndexPage({ params }: Props) {
               meta={page.line && <LineBadge code={page.line} />}
             />
           ))}
-        </ul>
-      ) : (
-        <ul className="card-list">
+              </ul>
+            ) : (
+              <ul className="card-list">
           {/*
             The per-card "scope statement" / "full page" chip was removed in
             run 10 with the tally above it, for the same reason: on a live site
@@ -154,7 +164,10 @@ export default async function TypeIndexPage({ params }: Props) {
               isLine={type === 'lines'}
             />
           ))}
-        </ul>
+              </ul>
+            )}
+          </div>
+        </details>
       )}
 
       {/*
