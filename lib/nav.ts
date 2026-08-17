@@ -42,6 +42,8 @@ export type NavGroup = {
   links: NavLink[]
   /** True when `links` is a sample rather than the whole set. */
   truncated: boolean
+  /** A large category points to its index rather than enumerating items here. */
+  large?: boolean
 }
 
 export type NavSection = {
@@ -155,10 +157,9 @@ export function getNavTree(): NavSection[] {
       rail.groups.push({
         href: '/rail/stations/',
         title: 'Stations',
-        links: withPages
-          .slice(0, STATION_CAP)
-          .map((s) => ({ href: `/rail/stations/${s.code.toLowerCase()}/`, title: s.name })),
+        links: [],
         truncated: withPages.length > STATION_CAP,
+        large: true,
       })
     }
     rail.groups.push({ href: '/rail/network/', title: 'The network', links: [], truncated: false })

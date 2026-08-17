@@ -74,15 +74,32 @@ console.log('\n1. Keyboard\n')
   ok('Enter opens the panel', expandedBefore === 'false' && afterEnter.expanded === 'true' && afterEnter.panelVisible === true,
      `aria-expanded ${expandedBefore} → ${afterEnter.expanded}, panel visible ${afterEnter.panelVisible}`)
 
-  // Links inside the open panel must be reachable by Tab.
+  // Category disclosures inside the open panel must be reachable by Tab.
+  const firstSummaryText = await page.evaluate(() => {
+    const panel = document.querySelector('.nav-panel:not([hidden])')
+    return panel?.querySelector('summary')?.textContent ?? null
+  })
+  await page.keyboard.press('Tab')
+  const focusedSummary = await page.evaluate(() => document.activeElement?.textContent?.trim() ?? '')
+  ok('Tab moves to the first nested category', focusedSummary === firstSummaryText?.trim(),
+     `focus is "${focusedSummary}", panel's first category is "${firstSummaryText?.trim()}"`)
+
+  await page.keyboard.press('Enter')
+  const nestedAfterEnter = await page.evaluate(() => {
+    const summary = document.activeElement
+    const details = summary?.closest('details')
+    return { open: details?.hasAttribute('open') ?? false }
+  })
+  ok('Enter opens the nested category', nestedAfterEnter.open)
+
   const firstPanelLink = await page.evaluate(() => {
     const panel = document.querySelector('.nav-panel:not([hidden])')
-    return panel?.querySelector('a')?.textContent ?? null
+    return panel?.querySelector('details[open] a')?.textContent ?? null
   })
   await page.keyboard.press('Tab')
   const focusedText = await page.evaluate(() => document.activeElement?.textContent?.trim() ?? '')
-  ok('Tab moves into the open panel', focusedText === firstPanelLink?.trim(),
-     `focus is "${focusedText}", panel's first link is "${firstPanelLink?.trim()}"`)
+  ok('Tab moves into the open nested category', focusedText === firstPanelLink?.trim(),
+     `focus is "${focusedText}", category's first link is "${firstPanelLink?.trim()}"`)
 
   await page.keyboard.press('Escape')
   const afterEscape = await page.evaluate(() => {
@@ -114,6 +131,12 @@ console.log('\n2. Touch (no hover, no mouse)\n')
     return { open: Boolean(panel), links: panel?.querySelectorAll('a').length ?? 0 }
   })
   ok('tapping the caret opens the panel', !before && after.open, `${after.links} links inside`)
+
+  await page.locator('.nav-panel:not([hidden]) summary').first().tap()
+  const nestedOpen = await page.evaluate(() =>
+    document.querySelector('.nav-panel:not([hidden]) details')?.hasAttribute('open') ?? false,
+  )
+  ok('tapping a category opens its nested submenu', nestedOpen)
 
   // Isolate: does it navigate with the panel CLOSED, and with it OPEN, and
   // does a mouse click behave differently from a tap?

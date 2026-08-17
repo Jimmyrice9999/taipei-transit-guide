@@ -550,6 +550,68 @@ th > .badge:only-child {
  * the header. A 3-column panel pinned to a 375px viewport is a horizontal
  * scroll bar; the mobile answer is not "hide it".
  */
+.nav-group-direct,
+.nav-submenu > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 32px;
+  padding: 4px 0;
+  color: var(--amber);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  list-style: none;
+}
+
+.nav-submenu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-submenu-caret {
+  width: 7px;
+  height: 7px;
+  flex: none;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 120ms ease;
+}
+
+.nav-submenu[open] > summary .nav-submenu-caret {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.nav-submenu-body {
+  padding-top: 6px;
+}
+
+.nav-submenu-body .nav-group-index {
+  padding: 4px 0 6px;
+  color: var(--band-ink);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+}
+
+.nav-group-direct:hover,
+.nav-submenu > summary:hover,
+.nav-submenu-body .nav-group-index:hover {
+  color: var(--band-ink);
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-submenu-caret {
+    transition: none;
+  }
+}
+
 @media (max-width: 780px) {
   .nav-panel {
     position: static;
@@ -582,6 +644,15 @@ th > .badge:only-child {
     /* Comfortable thumb targets once the panel is a list rather than a menu. */
     padding: 7px 0;
   }
+  .nav-group-direct,
+  .nav-submenu > summary {
+    min-height: 44px;
+    padding: 7px 0;
+  }
+  .nav-submenu-body {
+    padding: 4px 0 0 12px;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+  }
 }
 
 @media (max-width: 480px) {
@@ -609,6 +680,23 @@ th > .badge:only-child {
 .site-nav a[aria-current='true'] {
   color: var(--band-ink);
   border-bottom-color: var(--amber);
+}
+
+.site-nav .nav-group-direct {
+  color: var(--amber);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 780px) {
+  .site-nav .nav-group-direct {
+    min-height: 44px;
+    padding: 7px 0;
+  }
 }
 
 .site-header :focus-visible {

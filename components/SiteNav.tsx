@@ -1,38 +1,15 @@
 'use client'
 
 /**
- * The section bar, with a dropdown per section mirroring the site hierarchy.
- *
- * This is a "client component": it runs a little JavaScript in the browser so
- * it can read the current URL and open and close the panels. Everything else
- * on this site is rendered once at build time and ships as plain HTML.
- *
- * ── Why it is built this way ─────────────────────────────────────────────────
- *
- * Each section is TWO controls, not one: a link to the section, and a separate
- * toggle button for its panel. Collapsing them into a single element forces a
- * choice between "the section index is unreachable from the bar" and "opening
- * the menu navigates away", and both are worse than an extra 20px of button.
- * The link is what a section name should do; the caret is what a menu should
- * do; they are different jobs and they get different controls.
- *
- * **Nothing depends on hover.** Hover opens a panel on a fine pointer as an
- * enhancement, and that is all it is — every panel opens on click, on Enter,
- * and on Space, so it works on touch, with a keyboard, and with a screen
- * reader. The brief for run 10 called this out specifically, and it is also
- * WCAG 2.1 SC 2.1.1: a hover-only menu is unreachable without a mouse.
- *
- * `aria-expanded` on the button and `hidden` on the panel are the whole
- * accessibility contract. No `role="menu"` — that role implies application
- * keyboard semantics (arrow keys move, Tab leaves the whole menu) which is
- * wrong for what this is: a set of links in a disclosure. Plain links in a
- * plain list, which Tab already traverses correctly.
+ * The section bar, with a disclosure per section and a native disclosure for
+ * each category inside it. The section link and its toggle remain separate so
+ * the section index is always reachable without opening a panel.
  */
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useId, useRef, useState } from 'react'
-import type { NavSection } from '@/lib/nav'
+import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
+import type { NavGroup, NavSection } from '@/lib/nav'
 
 /** "/rail/" and "/rail" should both count as being in the Rail section. */
 function isInSection(pathname: string, href: string) {
@@ -40,12 +17,60 @@ function isInSection(pathname: string, href: string) {
   return pathname === base || pathname.startsWith(base + '/')
 }
 
+function NavGroupView({ group }: { group: NavGroup }) {
+  if (group.large || group.links.length === 0) {
+    return (
+      <Link className="nav-group-direct" href={group.href}>
+        {group.title}
+        <span aria-hidden="true"> →</span>
+      </Link>
+    )
+  }
+
+  return (
+    <details className="nav-submenu">
+      <summary>
+        <span>{group.title}</span>
+        <span className="nav-submenu-caret" aria-hidden="true" />
+      </summary>
+      <div className="nav-submenu-body">
+        <Link className="nav-group-index" href={group.href}>
+          {group.truncated ? `All ${group.title.toLowerCase()}` : `Open ${group.title.toLowerCase()} index`}
+          <span aria-hidden="true"> →</span>
+        </Link>
+        <ul>
+          {group.links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href}>
+                {link.badge && (
+                  <span
+                    className="badge badge-mini nav-badge"
+                    style={
+                      {
+                        '--badge-bg': link.badge.bg,
+                        '--badge-fg': link.badge.fg,
+                      } as CSSProperties
+                    }
+                  >
+                    {link.badge.code}
+                  </span>
+                )}
+                {link.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </details>
+  )
+}
+
 export default function SiteNav({
   sections,
   extra,
 }: {
   sections: NavSection[]
-  /** Links with no submenu — Data, which is generated rather than written. */
+  /** Links with no submenu: Data, which is generated rather than written. */
   extra: { href: string; title: string }[]
 }) {
   const pathname = usePathname()
@@ -54,15 +79,13 @@ export default function SiteNav({
   const idBase = useId()
 
   // Any navigation closes the panel. Without this, following a link inside a
-  // panel leaves it open over the page you just asked for.
+  // panel leaves it open over the page just requested.
   useEffect(() => setOpen(null), [pathname])
 
   useEffect(() => {
     if (!open) return
     const onKey = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return
-      // Focus goes back to the button that opened the panel, or the user is
-      // dropped at the top of the document with no idea where they were.
       const button = navRef.current?.querySelector<HTMLButtonElement>(
         `[data-toggle="${open}"]`,
       )
@@ -85,9 +108,6 @@ export default function SiteNav({
       className="site-nav"
       aria-label="Sections"
       ref={navRef}
-      // Hover is an enhancement only, and only where a pointer can hover.
-      // Leaving the bar closes whatever it opened; a panel left hanging over
-      // the page after the pointer has gone is the classic hover-menu bug.
       onMouseLeave={() => setOpen(null)}
     >
       <ul className="nav-list">
@@ -100,9 +120,6 @@ export default function SiteNav({
               key={section.href}
               className="nav-item"
               onMouseEnter={(event) => {
-                // matchMedia rather than a touch test: what matters is whether
-                // the pointer can hover at all, not whether the device has a
-                // touchscreen. Hybrid laptops have both.
                 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
                   setOpen(section.href)
                 }
@@ -130,43 +147,7 @@ export default function SiteNav({
                 <div className="nav-panel-inner">
                   {section.groups.map((group) => (
                     <div className="nav-group" key={group.href}>
-                      <Link className="nav-group-head" href={group.href}>
-                        {group.title}
-                      </Link>
-                      {group.links.length > 0 && (
-                        <ul>
-                          {group.links.map((link) => (
-                            <li key={link.href}>
-                              <Link href={link.href}>
-                                {/* The badge is inside the link so the whole
-                                    row is one target. It never replaces the
-                                    name — see NavLink in lib/nav.ts. */}
-                                {link.badge && (
-                                  <span
-                                    className="badge badge-mini nav-badge"
-                                    style={
-                                      {
-                                        '--badge-bg': link.badge.bg,
-                                        '--badge-fg': link.badge.fg,
-                                      } as React.CSSProperties
-                                    }
-                                  >
-                                    {link.badge.code}
-                                  </span>
-                                )}
-                                {link.title}
-                              </Link>
-                            </li>
-                          ))}
-                          {group.truncated && (
-                            <li>
-                              <Link className="nav-all" href={group.href}>
-                                All {group.title.toLowerCase()} →
-                              </Link>
-                            </li>
-                          )}
-                        </ul>
-                      )}
+                      <NavGroupView group={group} />
                     </div>
                   ))}
                 </div>
