@@ -151,13 +151,15 @@ title, artist, date, medium and placement were stated:
 | BL18 | 成長; Steve Woodward; five-part work using marble, granite, bronze and aluminium in varying parts; November 1999; fire-station entrance plaza and platform. | dorts-bl18-public-art |
 | BL21 | 旋; 晶矽族群; painted stainless steel, glass, infrared sensor, motor and sounder; December 2000; concourse glass wall. | dorts-bl21-public-art |
 | BL22 | 捷運．碼頭; 陶亞倫; iron, white paint, laminated glass, lights, dimmer, timer and colour output; December 2008; platform. | dorts-bl22-public-art |
-| BL23 | 我們的私房公共藝術; 黃心健（故事巢股份有限公司）; stainless steel, clear glass, acid-free paper, LED, computers, projection fabric, one-way mirror and LCD; September 2010; concourse. | dorts-bl23-public-art |
+| BL23 | 我們的私房公共藝術; 黃心健（故事巢股份有限公司）; stainless steel, clear glass, acid-free paper, LED, computers, projection fabric, one-way mirror and LCD; September 2010; concourse; invited competition; NT$6,000,000. Second work: 快或慢; 三浦光一郎; anodized aluminium plate, aluminium strip, acrylic sheet and LED lights; September 2010; walls on both sides of the B1 paid-area passage to the Wenhu Line; public selection; NT$5,000,000. | dorts-bl23-public-art |
 
 These are PRIMARY, High confidence: the records are the builder’s own
 station-art pages at https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D,
 with each source URL recorded in the hand-maintained station overlay. BL16’s
 public-art detail URL was also fetched, but its text extraction contained no
-usable title, artist, date or medium; it is not asserted above.
+usable title, artist, date or medium; it is not asserted above. The fresh full
+BL23 fetch on 17 August 2026 exposed complete metadata for both named works;
+the earlier incomplete extraction is recorded below as a superseded check.
 
 Station naming is TBC for all 23 pages. The full current TRTC pages and the
 checked DORTS route, architecture and public-art pages did not provide a
@@ -199,6 +201,14 @@ pages did not establish one.
 - **BL16** — Correctly left empty. The full TRTC station page, the full DORTS Nangang route page, the full DORTS station-architecture page and the full DORTS public-art index were searched; the separate BL16 art URL was also fetched in full but contained no usable art metadata, as recorded under Checked and failed. No station-specific siting, construction, naming or incident context beyond the structured fields was found. Pages checked: https://web.metro.taipei/pages2026/WebStation/091/1, https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=69F49A510E1B983F. Checked 17 August 2026.
 - **BL17** — Correctly left empty. The full TRTC station page, the full DORTS Nangang route page, the full DORTS station-architecture page and the full DORTS public-art index were searched; no station-specific siting, construction, naming, incident or public-art context beyond the structured fields was found. Pages checked: https://web.metro.taipei/pages2026/WebStation/092/1, https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D. Checked 17 August 2026.
 - **BL18** — DORTS’s full *成長* record describes five forms as stages of growth, from the plough that represents sowing, through emergence and youthful movement, to a mature fulfilment: 「以一系列5件作品代表成長的過程」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL18 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=8EB8329E28899847, source id `dorts-bl18-public-art`.
+
+### BL19–BL23 batch
+
+- **BL19** — Correctly left empty. The full TRTC station page, the full DORTS Nangang route page, the full DORTS station-architecture page and the full DORTS public-art index were searched; no station-specific siting, construction, naming, incident or public-art context beyond the structured fields was found. Pages checked: https://web.metro.taipei/pages2026/WebStation/094/1, https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D. Checked 17 August 2026.
+- **BL20** — Correctly left empty. The full TRTC station page, the full DORTS Nangang route page, the full DORTS station-architecture page and the full DORTS public-art index were searched; no station-specific siting, construction, naming, incident or public-art context beyond the structured fields was found. Pages checked: https://web.metro.taipei/pages2026/WebStation/095/1, https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D. Checked 17 August 2026.
+- **BL21** — The full *旋* record describes an interactive installation in which approaching passengers trigger wooden-horse silhouettes and music; it turns daily train movements into carousel rotation and offers a temporary escape from the city’s busy rhythm: 「當經過旅客靠近時，木馬剪影將隨著音樂的出現舞動起來」 and 「將旋轉木馬中迴旋的意象」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL21 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=21E7260FD75E88D4, source id `dorts-bl21-public-art`.
+- **BL22** — The full *捷運‧碼頭* record treats the platform as a contemporary transfer wharf and uses boat, tea, osmanthus and coal to recall Nangang’s former agricultural-and-mineral export port: 「將南港站『捷運月台』視為『當代的轉運碼頭』」 and 「以 舟、茶、桂、煤 為核心印象」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL22 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=303C6A9B61A14F7F, source id `dorts-bl22-public-art`.
+- **BL23** — The full *我們的私房公共藝術* record describes three walls whose crowd flow and lighting form a three-part story linking speed, urban change and human history. Its companion *快或慢* uses sensors and three chase, escape and sliding modes to contrast rapid social change with slower cooperation and enduring history, culture and agriculture. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL23 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=2809EC1898BBBD56, source id `dorts-bl23-public-art`.
 
 ## Conflicts
 
@@ -244,9 +254,11 @@ match.
 - **BL16 public art** — https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=69F49A510E1B983F
   was fetched in full, but the usable text contained no art metadata.
   Checked 14 August 2026.
-- **BL23 second public-art record** — the page names a second work, 快或慢, by 三浦光一, but the fetched page
-  text did not expose its complete date, medium and placement. Only the
-  complete 我們的私房公共藝術 record is asserted. Checked 14 August 2026.
+- **BL23 second public-art record — superseded extraction** — the 14 August
+  extraction did not expose the second work’s complete date, medium and
+  placement. A fresh full fetch on 17 August 2026 did expose those fields, so
+  the earlier extraction failure is retained as provenance but is no longer a
+  current gap; the complete record is asserted above.
 - **Incoming report(3) bundle: 23 station/art/flood lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its exit counts, station-name interpretation, public-art examples and Typhoon Nari figures were not independently fetched or carried forward. Checked 17 August 2026.
 - **Incoming report(3) BL04 naming inference** — `海山/(新北高工)` was treated by the lead as proof of a completed rename, but no dated official announcement or URL was supplied. The slash notation alone does not establish the chronology. Checked 17 August 2026.
 - **Incoming report(3) assertion that all information was consistent** — the file contains zero URL strings, so the claimed cross-source consistency cannot be audited. Checked 17 August 2026.
@@ -256,9 +268,9 @@ match.
 The station pages still cannot give a sourced platform or track count,
 construction-era name and dated rename announcement, paid-area/street
 transfer classification, or station-level depot roster for any BL station.
-BL16’s public-art metadata and the complete metadata for BL23’s second named
-work would require a fuller official record. Those gaps are marked TBC rather
-than filled from maps, coordinates, secondary summaries or inference.
+BL16’s public-art metadata would require a fuller official record. That gap is
+marked TBC rather than filled from maps, coordinates, secondary summaries or
+inference.
 
 ---
 
