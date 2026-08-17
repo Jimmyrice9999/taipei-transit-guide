@@ -7840,3 +7840,104 @@ final batch per line; then public art, naming and incidents as three Part 2
 batches; then the 16 brown histories followed by only the red group in
 six-route batches. No images were fetched, and the claims baseline and checker
 were not changed.
+
+# Run 30 — Part 1, station prose, 17 August 2026
+
+Part 1 audited all 168 non-Wenhu station pages, in line order, using full
+operator pages and the DORTS, Railway Bureau, MOTC and TYMC/NTMC primary pages
+listed in each line research file. The final registry count is 192 pages, 91
+with sourced prose, 101 correctly empty, and 4,002 body-prose words. Existing
+Wenhu prose remains 10/24 pages and 538 words; the new-line total is 81/168
+pages and 3,464 words. No image was fetched.
+
+| Line | Batch results: prose; correctly empty; words | Empty station codes |
+|---|---|---|
+| R | R02–07: R02–06; R07; 158. R08–13: R09,R12; R08,R10,R11,R13; 52. R14–19: none; all six; 0. R20–24 + R22A: none; all six; 0. R25–28: none; all four; 0. | R07,R08,R10,R11,R13–R28,R22A |
+| G | G01–06: G02,G03; G01,G04,G05,G03A; 60. G06–11: G11; G06–G10; 30. G12–17: G13,G17; G12,G14–G16; 67. G18–19: both; none; 74. | G01,G04–G10,G12,G14–G16,G03A |
+| O | O01–06: O01; O02–O06; 48. O07–12: O08,O09,O12; O07,O10,O11; 106. O13–18: all six; none; 188. O19–52: O19–O21,O50,O51; O52; 176. O53–54: both; none; 68. | O02–O07,O10,O11,O52 |
+| BL | BL01–06: all six; none; 154. BL07–12: BL07; BL08–BL12; 26. BL13–18: BL18; BL13–BL17; 19. BL19–23: BL21–BL23; BL19,BL20; 117. | BL08–BL17,BL19,BL20 |
+| Y | Y07–12: Y07; Y08–Y12; 32. Y13–18: Y16; Y13–Y15,Y17,Y18; 31. Y19–20: none; both; 0. | Y08–Y15,Y17–Y20 |
+| A | A1–6: all six; none; 579. A7–12: all six; none; 423. A13–18: all six; none; 334. A19–22: all four; none; 269. | none |
+| V | V01–06: none; all six; 0. V07–11,V26: none; all six; 0. V27–28: none; both; 0. | V01–V11,V26–V28 |
+| K | K01–06: K02; K01,K03–K06; 29. K07–09: K08,K09; K07; 78. | K01,K03–K07 |
+| LB | LB01–06: all six; none; 166. LB07–12: all six; none; 180. | none |
+
+The empty-page result is deliberate. Each empty station was checked against
+its complete operator station page plus the line-specific primary material in
+the research file for siting, former site, construction, exits, naming,
+incidents and public art; the pages yielded no additional station-specific
+claim beyond the structured facts. The exact station-page URLs are recorded in
+`docs/research/rail/stations/` and were fetched in full. The primary source
+sets cited by the batches were:
+
+- R: TRTC station pages such as https://web.metro.taipei/pages2026/WebStation/042/1,
+  https://web.metro.taipei/pages2026/WebStation/050/1,
+  https://web.metro.taipei/pages2026/WebStation/054/1,
+  https://web.metro.taipei/pages2026/WebStation/068/1 and
+  https://web.metro.taipei/pages2026/WebStation/071/1; DORTS
+  route/architecture pages and full art records for R02–R06, R09 and R12, including
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C32B3BEE19B6BC1F
+  and https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=DE643CF3F6E0171F.
+- G: TRTC station pages; DORTS route and station-architecture records at
+  https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94,
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html
+  and DORTS public-art records at
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page152.html
+  and https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html.
+- O: TRTC station pages; DORTS Zhonghe–Xinlu route, architecture and art
+  records at https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404 and
+  https://www.dorts.gov.taipei/cp.aspx?n=ABF67AE806949931, with the full
+  station-specific URLs recorded beside each O batch.
+- BL: TRTC station pages; DORTS Bannan route and station-art records at
+  https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065 and
+  https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D, including the
+  full BL23 two-work record.
+- Y: NTMC station pages, DORTS Circular route/architecture/art pages and
+  architecture-book pages, including https://www.ntmetro.com.tw/basic/?mode=detail&node=797
+  and https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576.
+- A: TYMC station pages and public-art page, Railway Bureau art PDF
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf, DORTS A1
+  material https://www.dorts.gov.taipei/cp.aspx?n=efeac549b2c68706, and the
+  MOTC A22 announcement recorded in the A research file.
+- V and K: full NTMC station pages. V’s DORTS Green Mountain and Blue Sea
+  route pages produced no publishable station prose; K’s DORTS records supplied
+  K02, K08 and K09 art prose. Their full URLs are in the respective research
+  files, including https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY
+  and https://www.ntmetro.com.tw/basic/?mode=detail&node=603.
+- LB: NTMC station material plus DORTS’s Sanying route and art records,
+  including https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ,
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/MVamXGXBZ8rj,
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/l19ZoxxemveD
+  and https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/0g4d6Nn5d5Db.
+
+## TBC and checked failures
+
+The 101 empty pages remain TBC rather than padded. R’s direct route-page
+re-fetch was a cache miss; it supplied no new claim. DORTS individual LB03 and
+LB07 art URLs were also cache misses, and BL16’s art lead had no usable
+station-specific metadata. V has no station-specific prose from the full
+operator and DORTS searches. These failures are recorded in the line research
+files and were not used as evidence.
+
+## Contradicted the corpus
+
+The incoming Nanshijiao lead said 1987; the full DORTS Zhonghe–Xinlu page says
+the line entered service on 24 December 1998. The incoming BL04 slash-name
+lead was not a rename source and was not published as one. Those failed leads
+remain explicitly marked in research. The new LB audit also retains, rather
+than resolves, DORTS’s differing LB08/LB10 art assignments.
+
+## Conflicts found
+
+The line research retains all values rather than choosing: the DORTS Y route
+description’s two entrances versus the architecture book’s one main east
+entrance; the LB08/LB10 public-art assignment conflict between DORTS’s 2025
+line announcement, 2026 announcement and full LB08 record; the two BL23 art
+works; and R’s existing TDX/architecture metadata and R22/R22A numbering/date
+conflicts. No unresolved conflict was silently converted into station prose.
+
+Every six-station batch (with the necessary shorter final batches) was checked
+with `npm run cite`, `npm run verify` and `npm test`, committed and pushed to
+`main`; the final R25–R28 audit is `e441211`. Part 1 is complete. The next run
+should begin with a fresh Part 2 audit for the central public-art page, then
+station naming/renames, then incidents and service disruptions.
