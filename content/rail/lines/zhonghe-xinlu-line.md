@@ -452,3 +452,5 @@ times come from **Taiwan MOTC's TDX platform**, operator TRTC — government
 open data, retrieved 12 August 2026[^tdx]. Everything else is cited inline
 and listed above. Snapshot capture via web.archive.org was not available in
 this research pass; sources are cited to their live URLs only.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

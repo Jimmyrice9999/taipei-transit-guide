@@ -538,3 +538,5 @@ generated from it directly. Everything else is cited inline and listed
 above. TDX does not publish station structure, headways or rolling-stock
 detail; those come from NTMC's and DORTS's own publications where they
 exist, and are marked secondary where they do not.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

@@ -356,3 +356,5 @@ The research behind this page was done without any web search available, so it
 rests on primary material reached by walking the DORTS and TRTC sites and on two
 encyclopedia articles. No Taiwanese news archive was consulted. That is a
 limitation of the run, and the gaps above are mostly its shape.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

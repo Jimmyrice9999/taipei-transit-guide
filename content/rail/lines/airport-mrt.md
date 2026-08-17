@@ -451,3 +451,5 @@ pattern, so service-pattern detail throughout this page comes from TYMC's own
 timetable instead. Everything else is cited inline and listed above; where a
 figure rests on a search-engine synthesis rather than a page fetched and read
 in full, the source note says so.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

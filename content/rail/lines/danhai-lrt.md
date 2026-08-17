@@ -497,3 +497,5 @@ map is generated from it directly. Everything else is cited inline and listed
 above; where DORTS's own figures disagree with Chinese Wikipedia's, or with
 each other across pages, both are published rather than one being silently
 preferred.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

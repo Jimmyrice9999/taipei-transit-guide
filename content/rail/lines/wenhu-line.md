@@ -525,3 +525,5 @@ This page's errors are corrected in place and recorded here, most recent first.
   of this page could not say where the widely-circulated 25.7 km came from. It
   is simply the sum of DORTS's two project lengths, as the length section above
   now shows.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

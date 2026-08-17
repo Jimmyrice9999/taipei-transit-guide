@@ -428,6 +428,9 @@ answers, not here.
 - **The naming.** The date the line was formally named 板南線 and numbered 5, and
   the 2016 change to the BL prefix, are told on this site's station numbering
   page against its own sources.
+
 - **Fleet allocation between the two depots**, the C321 formation, platform-door
   fitment dates, and the proposed Zhangshuwan extension. All were in this site's
   research corpus; none survived to a source in this pass.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

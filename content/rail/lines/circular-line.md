@@ -680,3 +680,5 @@ this page distinguishes what the report *found* from what it *recites*, that
 distinction is the report's own structure, and it matters: the NT$400 million and
 the "at least a year" that circulate as the Control Yuan's numbers appear in the
 document as the allegation under investigation.
+
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).

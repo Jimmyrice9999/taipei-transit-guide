@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 1018,
+    "sourced": 1066,
     "tbc": 115,
     "asserted": 32,
     "meta": 42
@@ -391,6 +391,14 @@
       "tbc": 0,
       "asserted": 0,
       "meta": 4
+    },
+    {
+      "file": "content/rail/history/public-art.md",
+      "sources": 40,
+      "sourced": 48,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
     },
     {
       "file": "content/rail/history/_index.md",
