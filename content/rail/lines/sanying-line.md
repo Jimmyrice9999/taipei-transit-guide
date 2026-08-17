@@ -230,4 +230,4 @@ fares. They are cited to the operator's own announcement, snapshotted, and
 dated, so that when the trial ends this page can say what changed rather than
 quietly rewriting itself.
 
-See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Station naming and renames](/rail/history/station-naming/).
