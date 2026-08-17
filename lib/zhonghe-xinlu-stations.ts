@@ -265,6 +265,16 @@ const stationProse: Record<string, StationProseSentence[]> = {
   O51: [
     { text: 'The DORTS design page says the station had no commissioned public-art work, while sandbar floors, waterbird forms and thematic seats carry its artistic identity; this is a design-stage statement, not a current inventory.', source: architecture.o51.id },
   ],
+  O53: [
+    { text: 'The builder says Sanmin Senior High School’s lightweight, simple surface forms respond to the current streetscape and traffic, while Luzhou’s former water-town setting shaped the egret imagery, water-ripple materials and bird-nest ventilation shaft.', source: architecture.o53.id },
+  ],
+  O54: [
+    { text: 'DORTS identifies Luzhou as the branch station with the strongest potential for an outdoor landscape and future joint-development plaza; its skylight brings wind and sunlight underground, and invited competition selected Ray King’s Dance of Feathers.', source: architecture.o54.id },
+  ],
+}
+
+const publicArtOverrides: Record<string, { text: string; source: Source }> = {
+  O54: { text: '舞之羽 — Ray King; coated glass; year: TBC; invited competition; cost: TBC.', source: architecture.o54 },
 }
 
 function makeResearch(code: string, data: OData): StationResearch {
@@ -272,7 +282,9 @@ function makeResearch(code: string, data: OData): StationResearch {
   const structureSource = data.structureSource ?? data.route
   const platformSource = data.platformSource ?? data.route
   const designSource = data.designSource ?? data.route
-  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(data.publicArtSource ? [data.publicArtSource] : [])]
+  const publicArtOverride = publicArtOverrides[code]
+  const publicArtSource = data.publicArtSource ?? publicArtOverride?.source
+  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(publicArtSource ? [publicArtSource] : [])]
     .filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
   return {
     sources,
@@ -291,8 +303,8 @@ function makeResearch(code: string, data: OData): StationResearch {
     facilitiesSource: stationSource.id,
     depot: 'DORTS identifies Zhonghe Depot for the Zhonghe section, Xinzhuang Depot for the Xinzhuang section and Luzhou Depot for the Luzhou branch; station-level operating roster allocation: TBC.',
     depotSource: dortsDepot.id,
-    publicArt: data.publicArt ?? tbc,
-    publicArtSource: data.publicArtSource?.id,
+    publicArt: data.publicArt ?? publicArtOverride?.text ?? tbc,
+    publicArtSource: publicArtSource?.id,
     naming: tbc,
     engineeringHistory: data.design ?? tbc,
     engineeringHistorySource: designSource.id,

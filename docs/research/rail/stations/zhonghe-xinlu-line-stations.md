@@ -352,6 +352,21 @@ The O51 wording is retained as a design-stage statement. It does not establish
 that no work exists now, so the station’s current public-art field remains TBC
 until a current inventory is fetched.
 
+### O53–O54 Sanmin Senior High School and Luzhou
+
+The final two full DORTS station-design pages were fetched and read. O53 adds
+the relationship between its surface forms, current streetscape and Luzhou’s
+former water-town setting. O54 adds the outdoor-landscape and future-plaza
+context, the skylight, and the invited-competition work by Ray King. The page
+supports the work title, artist, selection method and coated-glass material;
+its year and cost were not published and remain TBC.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=D4B52BEBD27350DD — PRIMARY, High confidence; O53 original evidence: `配合市容與交通現況，設計應朝向造型輕巧、簡潔` and `配合往日蘆洲地區水鄉澤國之意象`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=95421D9B2C9744B9 — PRIMARY, High confidence; O54 original evidence: `最有潛力發展戶外景觀設計及未來與聯合開發計畫創造市民活動廣場` and `邀請比件徵選美國藝術家Ray King的舞之羽`.
+
+No source conflict was found in this batch. O54’s missing year and cost are
+stated gaps, not inferred values.
+
 ---
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
