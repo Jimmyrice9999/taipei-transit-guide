@@ -231,6 +231,24 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'DORTS records Daqiaotou’s unpaid concourse as an evocation of Dihua Street’s market arcades, using layered frames for depth; frosted stair glass carries part of Daqiao Elementary School’s song.', source: architecture.o12.id },
     { text: 'Its eight platform-wall paintings separate travel directions: water toward Xinzhuang and Luzhou, and Taipei city views toward the east.', source: architecture.o12.id },
   ],
+  O13: [
+    { text: 'DORTS puts Taipei Bridge’s main entrance, ventilation shaft, two emergency exits and concourse inside the joint-development building south of the station, while the stacked platform levels remain below the road.', source: architecture.o13.id },
+  ],
+  O14: [
+    { text: 'DORTS says Cailiao’s exit 1 occupies the east side of the simple-court plaza, exit 2 shares a south-side joint-development site, and ventilation and emergency facilities were distributed to reduce bulk.', source: architecture.o14.id },
+  ],
+  O15: [
+    { text: 'At Sanchong, DORTS places the Airport MRT and O-line exit 2 in a shared ground-floor lobby; exit 4 uses north-side 捷六 land to distribute facilities along the long site.', source: architecture.o15.id },
+  ],
+  O16: [
+    { text: 'The station sits at the center of Sanchong’s industrial district; DORTS places exit 1 and its accessible lift in joint development, shares ventilation with exit 2, and puts exit 3 and shaft Y on the southeast.', source: architecture.o16.id },
+  ],
+  O17: [
+    { text: 'DORTS records the site as a former inland-waterway hub known as 竹仔市; the station’s copper wall uses dot motifs to evoke bamboo slips and that older name.', source: architecture.o17.id },
+  ],
+  O18: [
+    { text: 'DORTS connects Xinzhuang’s exit placement to its urban setting: exit 1 and shaft X are in joint development, exit 2 and its lift serve the south side, and shaft Y and the emergency exit sit southeast.', source: architecture.o18.id },
+  ],
 }
 
 function makeResearch(code: string, data: OData): StationResearch {

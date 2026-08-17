@@ -315,6 +315,21 @@ design facts already recorded.
 - https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=581BAEA5E045EE90 — PRIMARY, High confidence; O11 original evidence: `延續舊臺北後站風華氣息與都會發展`.
 - https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635 — PRIMARY, High confidence; O12 original evidence: `將迪化街市集街屋的騎樓框井意象融入空間規劃`, `以大橋國小校歌為素材` and `向新莊/蘆洲方向之主題為「水」`.
 
+### O13–O18 Taipei Bridge through Xinzhuang
+
+The six full DORTS station-design pages were fetched and read. Each adds
+station-specific siting or local-history detail beyond the generated facts:
+joint-development and road relationships at O13–O16, O17's former inland
+waterway and 竹仔市 context, and O18's former textile setting and distributed
+entrances and shafts. These details are carried into the station prose.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=1A03C950E2F3B99D — PRIMARY, High confidence; O13 original evidence: `主出入口，通風井，兩個緊急出口及穿堂層均設於車站南側之聯合開發大樓基地內`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=68B457A5F26795D9 — PRIMARY, High confidence; O14 original evidence: `出入口1位於重新路北側簡易法庭廣場東側用地` and `因減體減量做分散配置`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=294F03F343781B2A — PRIMARY, High confidence; O15 original evidence: `出入口2與中正機場線之出入口共用一樓大廳` and `配合長型基地特性作線形分散配置`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=C04B10E6E04BB667 — PRIMARY, High confidence; O16 original evidence: `本站為三重工業區的中心點` and `出入口1及無障礙電梯將納入聯合開發範圍`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=A4027E05917003A3 — PRIMARY, High confidence; O17 original evidence: `本站舊時為內河航運要道` and `以呼應本站舊稱「竹仔市」`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=23FAA46925341D3A — PRIMARY, High confidence; O18 original evidence: `本站主題呼應本站舊時之紡織工業區` and `出入口1及通風井X規劃於車站北側，屬聯合開發設計範圍`.
+
 ---
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
