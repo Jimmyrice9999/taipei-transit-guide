@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -185,10 +185,14 @@ type OData = {
   designSource?: Source
   publicArt?: string
   publicArtSource?: Source
+  prose?: StationProseSentence[]
 }
 
 const oData: Record<string, OData> = {
-  O01: { engineering: 'O19', exits: 4, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 捷運路52號、近南山路399巷; 2: 捷運路22號; 3: 捷運路16號; 4: 捷運路6號、近興南路1段. Accessible exit: 3.', facilities: 'Exit lift between exits 3 and 4; paid-concourse platform lift near the enquiry point; enquiry point near exits 3 and 4; water dispenser at exit 4; paid-zone toilets and parent/accessible toilet near exits 3 and 4; baby-changing facilities in the parent/accessible and male/female toilets; bicycle access open.', landmarks: tbc, design: 'The builder describes the Zhonghe Line as entirely underground and designed around economical ground facilities and station interiors in the narrow older urban area.', designSource: dortsZhongheArchitecture, publicArt: '青春美樂地 — 賴純純; acrylic, neon tubes and epoxy resin; November 1998; concourse and platform levels.', publicArtSource: dortsPublicArt },
+  O01: { engineering: 'O19', exits: 4, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 捷運路52號、近南山路399巷; 2: 捷運路22號; 3: 捷運路16號; 4: 捷運路6號、近興南路1段. Accessible exit: 3.', facilities: 'Exit lift between exits 3 and 4; paid-concourse platform lift near the enquiry point; enquiry point near exits 3 and 4; water dispenser at exit 4; paid-zone toilets and parent/accessible toilet near exits 3 and 4; baby-changing facilities in the parent/accessible and male/female toilets; bicycle access open.', landmarks: tbc, design: 'The builder describes the Zhonghe Line as entirely underground and designed around economical ground facilities and station interiors in the narrow older urban area.', designSource: dortsZhongheArchitecture, publicArt: '青春美樂地 — 賴純純; acrylic, neon tubes and epoxy resin; November 1998; concourse and platform levels.', publicArtSource: dortsPublicArt, prose: [
+    { text: 'DORTS places Nanshijiao within the former Taiwan Railway Administration Zhonghe station site, where the constrained depot ground also accommodates the station.', source: dortsZhonghe.id },
+    { text: 'The official art brief turns local growth and modernization into a visual language of colour and movement, linking Zhonghe–Nanshijiao to a Taiwanese song about striving and freedom.', source: dortsPublicArt.id },
+  ] },
   O02: { engineering: 'O18', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 景平路486號、近景平路、景安路口. Accessible: single exit.', facilities: 'Platform lift at the paid concourse beside the male toilet; exit accessibility lift is published for the station; enquiry points near the exit and at the platform level; water dispenser by the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access is open for the O line.', landmarks: tbc, interchange: { label: 'Circular Line; transfer mode: TBC', lineCode: 'Y' } },
   O03: { engineering: 'O17', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 中和路388號. Accessible: single exit.', facilities: 'Exit lift at exit 1; platform lift near the enquiry point, serving the centre of platform 2; enquiry point near the exit; water dispenser at the right of the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access open.', landmarks: tbc },
   O04: { engineering: 'O16', exits: 2, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 永和路2段168號; 2: 永和路2段233號. Accessible exit: 1.', facilities: 'Exit 1 lift; paid-concourse platform lift behind the enquiry point; enquiry point and water dispenser near exit 1; unpaid toilets and parent/accessible toilet near exit 1; nursing room near exit 2; baby-changing facilities; bicycle access open.', landmarks: tbc },
@@ -253,6 +257,6 @@ function makeResearch(code: string, data: OData): StationResearch {
 export const ZHONGHE_XINLU_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(oData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources }]
+    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, prose: data.prose ?? [] }]
   }),
 ) as Record<string, StationOverlay>

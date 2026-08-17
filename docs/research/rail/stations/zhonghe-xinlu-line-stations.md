@@ -251,6 +251,52 @@ track counts where the primary pages do not publish them. City gazettes,
 operator rename announcements, a station equipment inventory and a depot
 roster would settle those gaps.
 
+## Station-prose audit — 17 August 2026
+
+The first six station pages were audited against the full DORTS route pages,
+the full Zhonghe station-architecture page, the full Zhonghe–Xinlu public-art
+page, and the full TRTC pages below. O01 received prose because the primary
+pages add station-specific former-site and artwork context beyond the facts
+box. O02–O06 remain correctly empty: the fetched pages publish current exits,
+facilities, locations, route-level construction and opening information, but no
+additional station-specific siting decision, former-site history, construction
+difficulty, rename, incident or public-art narrative.
+
+### O01 Nanshijiao
+
+The full DORTS Zhonghe route page says the depot is on the former Taiwan
+Railway Administration Zhonghe station site south of Heping Street and that
+the site includes Nanshijiao station. It records the constrained site's
+stabling, maintenance, cleaning and substation functions. The same page lists
+O01's four exits and location. The full DORTS public-art page describes
+青春美樂地 as a work about local growth and modernization, drawing on a
+Taiwanese song about striving and freedom. Both pages were fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404 — PRIMARY, High confidence; original evidence: `中和機廠位於中和市和平街南方之原臺灣鐵路管理局中和車站基地內` and `佔地約1.47公頃(包括捷運南勢角車站)`.
+- https://www.dorts.gov.taipei/cp.aspx?n=ABF67AE806949931 — PRIMARY, High confidence; original evidence: `象徵著中和南勢角是一個成長、興旺中邁向現代化的大臺北衛星城` and `青春嶺是一首臺灣老歌，描述著臺灣人努力打拼樂天的性格及追求自由的精神`.
+
+### O02–O06 Jingan, Yongan Market, Dingxi, Guting and Dongmen
+
+The full DORTS Zhonghe and Xinzhuang route pages, the full route-wide
+Zhonghe architecture page, the full public-art page, and the following full
+TRTC pages were checked. No station-specific prose claim survived the audit;
+the public-art page provides a detailed O01 record only, and its navigation is
+not evidence that the other stations have no art:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=099C7E1AFD7FD705
+- https://www.dorts.gov.taipei/cp.aspx?n=ABF67AE806949931
+- https://web.metro.taipei/pages2026/WebStation/047/1
+- https://web.metro.taipei/pages2026/WebStation/046/1
+- https://web.metro.taipei/pages2026/WebStation/045/1
+- https://web.metro.taipei/pages2026/WebStation/041/1
+- https://web.metro.taipei/pages2026/WebStation/134/1
+
+The operator pages were read for current station context and the builder pages
+for construction, architecture, art and route history. The results are
+recorded as correctly empty rather than padded with route-level facts.
+
 ---
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
