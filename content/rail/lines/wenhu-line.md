@@ -526,4 +526,4 @@ This page's errors are corrected in place and recorded here, most recent first.
   is simply the sum of DORTS's two project lengths, as the length section above
   now shows.
 
-See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Station naming and renames](/rail/history/station-naming/).
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

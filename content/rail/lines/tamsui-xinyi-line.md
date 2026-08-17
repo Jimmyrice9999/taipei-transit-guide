@@ -357,4 +357,4 @@ rests on primary material reached by walking the DORTS and TRTC sites and on two
 encyclopedia articles. No Taiwanese news archive was consulted. That is a
 limitation of the run, and the gaps above are mostly its shape.
 
-See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Station naming and renames](/rail/history/station-naming/).
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

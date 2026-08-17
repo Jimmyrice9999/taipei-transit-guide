@@ -433,4 +433,4 @@ answers, not here.
   fitment dates, and the proposed Zhangshuwan extension. All were in this site's
   research corpus; none survived to a source in this pass.
 
-See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Station naming and renames](/rail/history/station-naming/).
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

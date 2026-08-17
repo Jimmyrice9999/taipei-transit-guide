@@ -7941,3 +7941,35 @@ with `npm run cite`, `npm run verify` and `npm test`, committed and pushed to
 `main`; the final R25–R28 audit is `e441211`. Part 1 is complete. The next run
 should begin with a fresh Part 2 audit for the central public-art page, then
 station naming/renames, then incidents and service disruptions.
+
+# Run 30 — Part 2, cross-cutting history, 17 August 2026
+
+Part 2 is complete. The public-art page now contains the commissioned works
+that the fetched DORTS, NTMC and TYMC primary pages actually document, including
+station, title, artist, year, medium, selection route and cost where published.
+The research report records the Xiaobitan cost conflict (NT$1m in the general
+table; approximately NT$35.9m plus a NT$1m prize in the dedicated record; a
+NT$15m budget limit in the technical book) and the Sanying station-allocation
+conflict without choosing between them. Primary URLs include:
+https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=BCB5B88DD2E6E46B,
+https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F and
+https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page249.html.
+
+The naming page establishes the 2007 procedure, former-name records for BL07,
+O12 and R18, the 2020 formal LB03 rename and LB05 appended name, and the
+Y16/Y17 planning-label conflict. It does not infer a rename from slash notation;
+formal dates remain TBC where no gazette or official action was found.
+
+The incidents page promotes full primary records for Nari flooding, the 2016
+Xiaonanmen engineering-vehicle derailment, 2025 Wenhu signalling, track and
+substation fires, current TRTC operational-log examples, and 2024 Circular and
+Ankeng earthquake disruptions. Conflicts published: Nari is dated 6 September
+in DORTS no. 29 p. 87 and 17 September in DORTS journal no. 46 p. 214; the
+earthquake records count eleven displacement locations versus nine repositioned
+spans. The unverified appendices remain in Checked and failed.
+
+No images were fetched; the claims baseline and checkers were untouched. `npm
+run cite`, `npm run verify` and `npm test` are green, with 185/185 tests. The
+next run should start Part 3a: the 16 colour-brown routes still TBC on history,
+then Part 3b's single colour-red group of 40 routes. Existing user-owned dirty
+files remain unstaged.

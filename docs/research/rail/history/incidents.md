@@ -1,56 +1,56 @@
 # Research corpus warning
 
-This file is a lead index, not a source. Verify claims against the underlying
-publication before using them. Two incoming reports were combined here because
-service disruptions, construction obstructions, heritage interventions and
-flooding are cross-cutting incident history rather than properties of one line.
+This file is a research report, not a source. The incoming research appendices
+were leads only. The incident records below were promoted only after a full
+fetch of the named primary page or document; search-result snippets and the
+appendices are not evidence.
 
-# Taipei Metro incidents and engineering interventions — research
+# Taipei Metro incidents and service disruptions — research
 
 ## What is established
 
-No incident or engineering-intervention claim from either incoming report is
-established by this intake. `deep-research-report(2).md` contains ten incident
-records and `deep-research-report(6).md` contains four main records, but neither
-file contains a literal HTTP(S) URL or a complete, fetchable source record.
+### Typhoon Nari flooding, 2001
+
+- **Sixteen underground stations, one depot and one high-capacity control centre flooded; full service took three months to restore.** Source: *Remote control of full-section flood isolation compartments*, original title 「捷運防水隔艙遠端控制之探討」, Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局), https://ebook.dorts.gov.taipei/JRTST/ebook/no46/files/basic-html/page214.html, PRIMARY, confidence High because the full DORTS technical-journal page was fetched. Evidence: 「以二百年洪水發生頻率設計之臺北捷運系統有16個車站、一座機廠及一座高運量行控中心皆淹水，歷經三個月的搶修至12月15日才恢復全線通車。」
+- **The control centre flooded to approximately 4.7 metres and its fourth-floor machinery and train-control computers were submerged.** Source: *Practical civil engineering*, original title 「捷運工程叢書精進版－4 土木工程實務」, DORTS, https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page182.html, PRIMARY, confidence High because the full page was fetched. Evidence: 「捷運行控中心（CCR）淹水深約4.7公尺，地下四樓機房層淹沒，造成行車控制電腦毀損最為嚴重。」
+- **DORTS identifies flood entry at the Taipei Main Station/Taiwan Railways shared underground interface, the Zhongxiao Dunhua station and department-store interface, and the Kunyang station entrances; it records later gates, watertight doors and removable barriers as countermeasures.** Source: *Practical water, environmental-control and fire-safety engineering*, original title 「捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務」, DORTS, pp. 87–88, https://ebook.dorts.gov.taipei/ebook/no29/files/basic-html/page87.html and https://ebook.dorts.gov.taipei/ebook/no29/files/basic-html/page88.html, PRIMARY, confidence High because both full pages were fetched. Evidence: 「大水從捷運開口處流入地下車站內」 and the examples 「捷運臺北車站與臺鐵共構區、南港線忠孝敦化站與百貨公司相鄰區」 and 「低窪區車站之出入口（如南港線昆陽站）」; the next page records 「納莉颱風淹水位紀錄加20cm」 and added flood-control works.
+- **The Control Yuan found deficiencies in flood preparation and drills, the Y-shaped ventilation-shaft partition at Zhongxiao Fuxing station, and the Taipei Main Station underground-street interfaces involving DORTS, TRTC and Taiwan Railways.** Source: *Control Yuan correction case 091內正0009*, original title 「監察院糾正案文 091內正0009」, Control Yuan (監察院), https://www.cy.gov.tw/CyBsBoxContent.aspx?n=134&s=5250, PRIMARY, confidence High because the full official correction page was fetched. Evidence: the correction says construction, inspection and acceptance of the Zhongxiao Fuxing Y-shaped ventilation-shaft partition were deficient and that the shared Taipei Main Station interfaces were inadequately prepared.
+
+### Songshan–Xindian engineering-vehicle derailment, 2016
+
+- **At 04:00 on 13 September 2016, an engineering vehicle at Xiaonanmen station on the track toward Songshan had a wheel leave the rail and could not move.** Source: *Technical journal no. 52*, original title 「捷運技術 第52期」, DORTS, p. 15, https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page15.html, PRIMARY, confidence High because the full page was fetched. Evidence: 「105年9月13日凌晨4時松山新店線工程車於小南門站往松山方向月台，工程車車輪偏離軌道無法移動」.
+- **The response ran Xiaonanmen–Zhongshan as single-track bidirectional service for 11 hours 39 minutes, with shuttle buses on the affected sections.** Source: the same full DORTS page, PRIMARY, confidence High. Evidence: 「小南門站至中山站單線雙向運轉」 and 「單線雙向運轉時間共11小時39分鐘」, followed by the shuttle-bus arrangement.
+
+### Signal and track incidents with operator records
+
+- **On 8 February 2025, TRTC found a signalling anomaly between Zhongshan Junior High School and Wende on the Wenhu Line; the line continued running, with longer waits, and the operator attributed the immediate recovery to restarting a delayed signalling-network transmission system.** Source: TRTC press release 「8日晚間文湖線號誌異常已排除 本(9)日恢復正常營運 維修人員檢修為號誌傳輸網路異常 詳細原因將洽原廠協助釐清」, https://www.metro.taipei/News_Content.aspx?n=30CCEFD2A45592BF&s=9CF946E985FD0EA1&sms=72544237BBE4C5F6, PRIMARY, confidence High because the full operator release was fetched. Evidence: 「8日晚間20時5分，行控中心發現文湖線中山國中站至文德站間號誌異常」 and the description of network-transmission delay and restart.
+- **On 11 March 2022, sparks and smoke appeared in the track between Chiang Kai-shek Memorial Hall and NTU Hospital; trains passed slowly, a driver went down to extinguish the fire, and TRTC replaced the failed insulation-baseplate assembly and embedded sleeve after service.** Source: TRTC press release 「臺大醫院站站間軌道火花冒煙事件...」, https://www.metro.taipei/News_Content.aspx?n=30CCEFD2A45592BF&s=E5AF23FD3A33772D, PRIMARY, confidence High because the full operator release was fetched. Evidence: 「3月11日中正紀念堂站至臺大醫院站間軌道有火花冒煙」 and the release's account of the four-minute response and replacement work.
+- **On 28 December 2025, a fire alarm at the substation outside Zhongxiao Fuxing station was traced to an abnormal main transformer; power transfer restored train operation, no one was injured, and nearby lifts and escalators were temporarily affected.** Source: Taipei City Government release issued by TRTC 「忠孝復興站外新復捷主變電站設備異常 未影響系統營運」, https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=F85C992AFFE655D3&sms=72544237BBE4C5F6, PRIMARY, confidence High because the full official release was fetched. Evidence: 「12月28日上午9時40分...忠孝復興站外新復捷主變電站火警警訊」 and the release's statements that there were no injuries and no effect on train operation.
+- **TRTC's live operational log, fetched 17 August 2026, records later station-level examples: a BR10 signalling fault on 2 August, an O07 signalling fault on 30 July, passenger power-bank smoke/fire at O11 on 18 July, third-rail cable smoke at BL07 on 22 June, and platform-door automatic-opening failure at BL15 on 21 June.** Source: *Taipei Metro operational information*, original title 「臺北捷運營運資訊」, TRTC, https://ssl.metro.taipei/metrooperation/, PRIMARY, confidence High for the page state at the access time because the full live table was fetched. The log records the local response and service effect for each event; it is not a retrospective incident register.
+
+### Earthquake service disruption, 2024
+
+- **The 3 April 2024 earthquake displaced eleven Circular Line girders and closed the damaged section; the Control Yuan report and New Taipei DORTS records are the primary sources for the damage and cause.** Source: *Control Yuan investigation report, case 114交調0005*, original title 「監察院調查報告 114交調0005」, https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082, PRIMARY, confidence High because the official report was read in full from the Control Yuan publication. Evidence includes 「11處鋼箱梁位移」 and the finding that the construction did not follow the drawings. Source: New Taipei DORTS announcement 「環狀線震損初步說明」, https://www.dorts.ntpc.gov.tw/news/indexInfo/1AldprRBmLK7, PRIMARY, confidence High because the full official page was fetched; it records seven severe displacements of 20–92 cm and four of 3.5–6 cm.
+- **New Taipei Metro records that the Circular Line was suspended on the day, then ran single-track bidirectionally between Banqiao and New Taipei Industrial Park from 17:00; full service resumed at noon on 12 December 2024 after nine spans were repositioned and other track, cable and equipment work.** Source: NTMC release 「新北捷運兩線輕軌恢復正常營運 環狀線採部份區段單線雙向營運」, original title identical, https://www.ntmetro.com.tw/basic/?mode=detail&node=719, PRIMARY, confidence High because the full operator release was fetched. Source: NTMC release 「新北環狀線準備好了!確認安全無虞12:00 全線復駛」, https://www.ntmetro.com.tw/basic/?mode=detail&node=754, PRIMARY, confidence High because the full reopening release was fetched.
+- **The 3 April earthquake also changed Ankeng LRT service: NTMC recorded K09–K06 single-track bidirectional working and K06–K01 partial operation immediately after the earthquake, followed by normal service at 16:30 with a 15-minute headway.** Source: NTMC releases 「新北捷運公司 - 0403 地震說明」 and 「新北捷運兩線輕軌恢復正常營運」, https://www.ntmetro.com.tw/basic/?mode=detail&node=716 and https://www.ntmetro.com.tw/basic/?mode=detail&node=719, PRIMARY, confidence High because both full operator pages were fetched.
 
 ## Conflicts
 
-No source conflict could be tested. Both reports declare that no conflicts were
-found, but that conclusion is not auditable without the cited pages. The
-reports' quantitative figures and cause attributions remain unverified.
+- **Typhoon date:** DORTS technical book no. 29 p. 87 labels the event 「民國90年9月6日納莉颱風」, while DORTS technical journal no. 46 p. 214 says the typhoon entered on 17 September 2001, 「民國90年9月17日侵臺」. Both are published here; no fetched primary reconciles the difference.
+- **Circular earthquake count:** the Control Yuan and New Taipei DORTS describe eleven displacement locations, while NTMC's reopening release says nine steel-box-girder spans were repositioned. The sources appear to count different things, but none of the fetched primaries explicitly maps eleven locations to nine spans, so the relationship remains unresolved.
 
 ## Checked and failed
 
-- **The ten incident records in `deep-research-report(2).md`** — The report names TRTC, Taipei City Government, TVBS, PTS, UDN, NOWnews and the Water Resources Agency, but supplies no URL, article identifier or release number. Dates, passenger counts, causes, injuries and restoration times were not carried forward. Checked 17 August 2026.
-- **Typhoon Nari flood consequences in `deep-research-report(2).md`** — The report gives system-wide flooding, station totals and recovery measures without a URL or exact publication identifier. The figures and post-flood changes remain unverified. Checked 17 August 2026.
-- **Xiaonanmen branch route in `deep-research-report(6).md`** — A DORTS title and quotation are supplied without a URL or publication identifier. The 1.6 km length, one-station count, underground construction and approval date remain unverified from this lead. Checked 17 August 2026.
-- **Huan Ya ground-anchor obstruction in `deep-research-report(6).md`** — The CTS attribution has no URL or date, so the obstruction, its cause and its effect on construction cannot be checked. Checked 17 August 2026.
-- **Beimen historic-building relocation in `deep-research-report(6).md`** — The technical-journal attribution has no URL or issue record, so the 4.8 m overlap and approximately 30 m move are not carried forward. Checked 17 August 2026.
+- **The ten incident records in `deep-research-report(2).md`** — The report names TRTC, Taipei City Government, TVBS, PTS, UDN, NOWnews and the Water Resources Agency, but supplies no URL, article identifier or release number; only the incidents separately verified above are promoted. Checked 17 August 2026.
+- **The unlinked Typhoon Nari station total and recovery figures in `deep-research-report(2).md`** — The figures had no URL or publication identifier; the verified DORTS pages above replace them where they overlap, but the report's exact station list is not promoted. Checked 17 August 2026.
+- **The 2 July 2024 Wenhu lightning/signalling record in the incoming appendix** — A search lead was found, but the full government/TRTC page could not be fetched reliably; no snippet is promoted. Checked 17 August 2026.
+- **The December 2025 Zhongxiao Fuxing account in the incoming appendix** — The full TRTC-issued Taipei City Government release was fetched and the sourced version above is used; the appendix's unsupported passenger and restoration figures are not carried forward. Checked 17 August 2026.
+- **Xiaonanmen branch route in `deep-research-report(6).md`** — The lead supplies no URL or publication identifier; the separate 2016 derailment record above does not establish a branch route, length or opening history. Checked 17 August 2026.
+- **Huan Ya ground-anchor obstruction in `deep-research-report(6).md`** — The CTS attribution has no URL or date, so the obstruction, cause and construction effect remain unverified. Checked 17 August 2026.
+- **Beimen historic-building relocation in `deep-research-report(6).md`** — The technical-journal attribution has no URL or issue record, so the overlap and move distance remain unverified. Checked 17 August 2026.
 - **Xiaobitan branch scope in `deep-research-report(6).md`** — The quoted fragment supports only a two-station, approximately 1.9 km lead as written; it does not support the added opening date, high-capacity classification or three-car statement, and no URL was supplied. Checked 17 August 2026.
-- **Report(2)’s and report(6)’s inaccessible-link claims** — The files mention Yahoo, Hakka TV, Instagram and other inaccessible material but contain zero URL strings. The alleged 404, load failure and login failure cannot be independently confirmed from the leads. Checked 17 August 2026.
+- **The incoming reports' inaccessible-link claims** — Yahoo, Hakka TV, Instagram and other references have no usable URL strings in the lead files, so their alleged 404, load or login failures cannot be independently confirmed. Checked 17 August 2026.
 
 ## Stated gaps
 
-This file cannot state a sourced incident chronology or construction-obstacle
-record from the incoming reports. Official TRTC and DORTS releases, Control
-Yuan or audit records, technical-journal issue pages, and full news articles
-would settle the individual leads. Absence of a URL is not evidence that an
-incident did not occur.
-
-## Unverified incoming lead appendices
-
-### `deep-research-report(2).md`
-
-> Explicitly unverified lead inventory; not evidence.
-
-The report leads concern 2024 and 2025–2026 power-bank, fire, signal, power,
-door and safety-stop events; the December 2025 Zhongxiao Fuxing substation
-fire and service suspension; and Typhoon Nari flooding in September 2001.
-
-### `deep-research-report(6).md`
-
-> Explicitly unverified lead inventory; not evidence.
-
-The report leads concern the Xiaonanmen branch, a Songshan-line ground-anchor
-obstruction, the Beimen historic-building relocation, and the Xiaobitan branch.
+The 16 flooded stations are not identified as a complete station-by-station list in the fetched DORTS pages; only Taipei Main Station, Zhongxiao Dunhua and Kunyang are named as entry examples. The exact station, time and vehicle details of the 1993 Wenhu testing-phase tyre incident remain TBC. The live TRTC page is useful for current records but is not an archive, so later changes to its rows will require a new dated fetch. The formal investigation, cause and restoration times for the incoming appendix's unverified events remain TBC unless their full primary releases are located.

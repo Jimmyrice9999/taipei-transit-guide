@@ -441,4 +441,4 @@ patterns[^tdx]; those come from DORTS's and TRTC's own publications where
 they exist, and are marked secondary where only zh.wikipedia or news
 coverage was found.
 
-See also: [Public art in the Taipei-region rail network](/rail/history/public-art/).
+See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Metro incidents and service disruptions](/rail/history/incidents/).
