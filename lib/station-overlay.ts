@@ -109,6 +109,20 @@ const DORTS_WENHU_ARCHITECTURE: Source = {
   note: 'The full architecture record explains the Muzha-section constraints illustrated by Zhongshan Junior High, identifies Dazhi as the Neihu section’s underground station, and documents the special station design treatment. The original-language wording was checked on the linked page: the paragraph beginning 文湖線初期路線(木柵段) and the sentence beginning 除大直站為地下車站外.',
 }
 
+const DORTS_WENHU_PUBLIC_ART: Source = {
+  id: 'dorts-wenhu-public-art-table',
+  title: 'Wenhu Line public-art table',
+  titleOriginal: '公共藝術總表',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=E45C77C5F722B310',
+  accessed: '2026-08-17',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full official table supports the Wenhu entries for Songshan Airport, Jiannan Road, Xihu, Gangqian, Wende, Dahu Park, Donghu and Nangang Exhibition Center, including completion dates, locations, titles, authors, descriptions and selection methods. The original-language rows were checked on the linked page.',
+}
+
 /**
  * Keyed by station code.
  *
@@ -194,18 +208,55 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'underground',
     engineering: 'BR1',
     exits: 3,
+    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'The airport station was added after a Ministry of Transportation study found that placing a station on the Neihu line was more engineering-feasible and compatible with the schedule for direct airport trips.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'DORTS’s alignment then carries the line beneath the airport and the Keelung River, with the station under the surface car park in front of the terminal.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The official art table records three public works here—Great Age of Travel, Flight Plan, and Dream Flight—placed at Exit 3, the concourse wall, and the platform void, all selected through public competition.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
     note: '松山機場站. Underground on two primary sources: DORTS 地下段3.9公里，2座地下站 on the Neihu section, and DORTS 車站建築設計 counting ten elevated plus Dazhi out of twelve, which leaves this one. Engineering BR1 despite being a Neihu-section station — the station was added to the project in 2001, after the B series had been allocated.',
   },
   BR14: {
     structure: 'underground',
     engineering: 'B1',
     exits: 3,
+    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_ARCHITECTURE],
+    prose: [
+      {
+        text: 'BR14 is where the underground section returns to daylight: DORTS places the emergence beside the roundabout at the south end of Ziqiang Tunnel, on the east side of Beian Road.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The department’s architecture summary identifies Dazhi as the Neihu section’s sole underground station, while describing the rest of that section as elevated.',
+        source: DORTS_WENHU_ARCHITECTURE.id,
+      },
+    ],
     note: '大直站. Named outright as the section’s one underground station by DORTS 車站建築設計: 除大直站為地下車站外，其餘共有十座高架車站.',
   },
   BR15: {
     structure: 'elevated',
     engineering: 'B2',
     exits: 3,
+    sources: [DORTS_WENHU_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'DORTS names Jiannan Road among the Neihu section’s specially shaped stations, where the standard steel-and-glass vocabulary was adapted into a station-specific form.',
+        source: DORTS_WENHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'Its public artwork, Frog’s Sky, uses the fourteen columns beside Exit 2 for reversed views of mountain, stream, and pond, reflecting on the distance between people and nature after urban development.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
     planned: [
       {
         line: 'Circular North Ring',
@@ -215,9 +266,46 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
       },
     ],
   },
-  BR16: { structure: 'elevated', engineering: 'B3', exits: 2 },
-  BR17: { structure: 'elevated', engineering: 'B4', exits: 2 },
-  BR18: { structure: 'elevated', engineering: 'B5', exits: 2 },
+  BR16: {
+    structure: 'elevated',
+    engineering: 'B3',
+    exits: 2,
+    sources: [DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'Xihu’s Crossings · Transformation occupies the Xihu Composite Building’s east and north walls and the ground, combining digitally printed imagery, visual illusion, and ceramic tiles that mark changing relationships with the land.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
+  },
+  BR17: {
+    structure: 'elevated',
+    engineering: 'B4',
+    exits: 2,
+    sources: [DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'Neihu Peach Blossom Land at Gangqian is a collective embroidery mural by 84 residents, made with professional artist guidance and local business support.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'DORTS records it at the wall at the end of Exit 1’s stairs and as a donation, so the work’s location and authorship remain tied to the surrounding community.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
+  },
+  BR18: {
+    structure: 'elevated',
+    engineering: 'B5',
+    exits: 2,
+    sources: [DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'Bird Flight beside Exit 2 was designed around Bihu Park and white egrets, using digital image composition and mosaic to make the station space align with nature.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
+  },
   BR19: { structure: 'elevated', engineering: 'B6', exits: 2 },
   BR20: { structure: 'elevated', engineering: 'B7', exits: 2 },
   BR21: { structure: 'elevated', engineering: 'B8', exits: 2 },
