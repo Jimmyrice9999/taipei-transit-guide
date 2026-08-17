@@ -330,6 +330,28 @@ entrances and shafts. These details are carried into the station prose.
 - https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=A4027E05917003A3 — PRIMARY, High confidence; O17 original evidence: `本站舊時為內河航運要道` and `以呼應本站舊稱「竹仔市」`.
 - https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=23FAA46925341D3A — PRIMARY, High confidence; O18 original evidence: `本站主題呼應本站舊時之紡織工業區` and `出入口1及通風井X規劃於車站北側，屬聯合開發設計範圍`.
 
+### O19–O21 and O50–O52
+
+The full DORTS station-design pages were fetched and read for all six
+stations. O19 received the Fu Jen campus, New Xinzhuang history and Xinxiyuan
+puppet-theatre details; O20 received the former 特力屋 parking-lot site and
+the reduced above-ground form; O21 received its overburden constraint, depot
+interface and reserved street space; and O50 received its park/school land
+split. O51 received a carefully qualified design-page statement about the
+absence of a commissioned work. O52 remains correctly empty because its full
+page adds only the already-recorded 蘆荻泛月 theme.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=E0B092D336CE2101 — PRIMARY, High confidence; O19 original evidence: `四處基地均獨立於人行道外為單純出入口，無聯合開發情形` and `新莊大事紀自十七世紀開始`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=8E7DF8D577939484 — PRIMARY, High confidence; O20 original evidence: `出入口1及通風井X之基地現況為特力屋停車場` and `留設出更多之空地，供作綠化之用`.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=9C549620EBC8B24B — PRIMARY, High confidence; O21 original evidence: `道路下方結構物須預留之覆土深度需達4.5公尺以上` and `基地街面層部份保留作為景觀、舖面、植栽及公共藝術展示空間`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=EAEE26A50A59F9ED — PRIMARY, High confidence; O50 original evidence: `車站出入口位於仁愛公園現址` and `通風井Y設於三重國小校地內`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=C5ABC1F9EB79143D — PRIMARY, High confidence; O51 original evidence: `車站即使沒有徵選之公共藝術，亦已具藝術美感`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=23CA4BCC6D53E872 — PRIMARY, High confidence; O52 original evidence: `本站之公共藝術設計主題為『蘆荻泛月』`.
+
+The O51 wording is retained as a design-stage statement. It does not establish
+that no work exists now, so the station’s current public-art field remains TBC
+until a current inventory is fetched.
+
 ---
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`

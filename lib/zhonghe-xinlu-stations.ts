@@ -249,6 +249,22 @@ const stationProse: Record<string, StationProseSentence[]> = {
   O18: [
     { text: 'DORTS connects Xinzhuang’s exit placement to its urban setting: exit 1 and shaft X are in joint development, exit 2 and its lift serve the south side, and shaft Y and the emergency exit sit southeast.', source: architecture.o18.id },
   ],
+  O19: [
+    { text: 'DORTS treats Fu Jen as an independent four-entrance station outside the sidewalk, without joint development, using Fu Jen campus imagery in the above-ground forms.', source: architecture.o19.id },
+    { text: 'Its interior chronicles New Xinzhuang from the seventeenth century with stele-style enamel panels and old maps; transport history appears in mirrored steel, and Xinxiyuan puppet theatre in platform lightboxes.', source: architecture.o19.id },
+  ],
+  O20: [
+    { text: 'DORTS records Danfeng’s entrance and ventilation site as a 特力屋 parking lot; to make room for planting, the design reduces the above-ground forms’ height and volume.', source: architecture.o20.id },
+  ],
+  O21: [
+    { text: 'O21’s road-cover constraint required at least 4.5 metres of overburden, so DORTS staggered parts of the concourse and platform plans; depot and station entrances are coordinated along Zhongzheng Road, with street land reserved for landscape, art and transfer parking.', source: architecture.o21.id },
+  ],
+  O50: [
+    { text: 'DORTS splits O50’s two surface elements between Ren’ai Park and Sanchong Elementary School land, using a transparent entrance design to work across those public sites.', source: architecture.o50.id },
+  ],
+  O51: [
+    { text: 'The DORTS design page says the station had no commissioned public-art work, while sandbar floors, waterbird forms and thematic seats carry its artistic identity; this is a design-stage statement, not a current inventory.', source: architecture.o51.id },
+  ],
 }
 
 function makeResearch(code: string, data: OData): StationResearch {
