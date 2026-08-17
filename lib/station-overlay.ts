@@ -81,6 +81,34 @@ export type StationOverlay = {
   note?: string
 }
 
+const DORTS_WENHU_PROJECT: Source = {
+  id: 'dorts-wenhu-project-stations',
+  title: 'Wenhu Line project and station table',
+  titleOriginal: '文山內湖線',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94',
+  accessed: '2026-08-17',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full project record supports the Neihu extension’s departure from Zhongshan Junior High tail tracks, its route toward Songshan Airport, and the airport-station siting decision. The original-language wording was checked on the linked page: the paragraph beginning 內湖線為銜接木柵線 and the sentence beginning 經評估以捷運內湖線於松山機場增設車站.',
+}
+
+const DORTS_WENHU_ARCHITECTURE: Source = {
+  id: 'dorts-wenhu-station-architecture',
+  title: 'Wenhu Line station architecture',
+  titleOriginal: '車站建築設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F',
+  accessed: '2026-08-17',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture record explains the Muzha-section constraints illustrated by Zhongshan Junior High, identifies Dazhi as the Neihu section’s underground station, and documents the special station design treatment. The original-language wording was checked on the linked page: the paragraph beginning 文湖線初期路線(木柵段) and the sentence beginning 除大直站為地下車站外.',
+}
+
 /**
  * Keyed by station code.
  *
@@ -146,7 +174,22 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
   BR09: { structure: 'elevated', engineering: 'BR5', exits: 6 },
   BR10: { structure: 'elevated', engineering: 'BR4', exits: 5 },
   BR11: { structure: 'elevated', engineering: 'BR3', exits: 8 },
-  BR12: { structure: 'elevated', engineering: 'BR2', exits: 1 },
+  BR12: {
+    structure: 'elevated',
+    engineering: 'BR2',
+    exits: 1,
+    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_ARCHITECTURE],
+    prose: [
+      {
+        text: 'At BR12, the Neihu extension leaves the Muzha section from the station’s tail tracks and follows Fuxing North Road toward Minzu East Road before entering Songshan Airport.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'DORTS’s representative Zhongshan Junior High station drawing places this urban elevated work in a design constrained by road-side sites and single-column loads: its mass was kept away from adjacent buildings and expressed in steel and glass.',
+        source: DORTS_WENHU_ARCHITECTURE.id,
+      },
+    ],
+  },
   BR13: {
     structure: 'underground',
     engineering: 'BR1',
