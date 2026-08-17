@@ -7805,3 +7805,38 @@ destination research files rather than resolved by selection.
 
 `docs/research/incoming/` was emptied and removed after all eight files were
 processed. `npm run research` passed: 36 files, 167 recorded failures, clean.
+
+# Run 30 — Part 0, long-run audit and plan, 17 August 2026
+
+The station-page audit counted free-running body prose from the generated
+registry, including Sanying provenance paragraphs and Wenhu’s cited `prose`
+sentences. Current totals are: BR 24 pages / 10 non-empty / 538 words; R 28 / 0
+/ 0; G 20 / 0 / 0; O 26 / 0 / 0; BL 23 / 0 / 0; Y 14 / 0 / 0; A 22 / 0 / 0;
+V 14 / 0 / 0; K 9 / 0 / 0; LB 12 / 12 / 324. Overall: 192 pages, 22
+non-empty, 862 words; Part 1 has 168 empty pages remaining.
+
+The fetched DORTS station-architecture/public-art corpus covers BR, R, G, O,
+BL and Y directly; K has three DORTS public-art records; V and LB have no such
+record in the corpus; A’s architecture and art records are Railway Bureau and
+TYMC respectively. The four BR records are the Wenhu project/station table,
+Wenhu architecture, Wenhu public-art table and Nangang Exhibition Center
+architecture. The complete URL inventory remains in the per-line research
+files; every page is a lead until re-fetched for the station that uses it.
+
+Seventeen research files carry explicitly unverified appendices. Worthwhile
+primary-source targets are the 68 incoming public-art records and their
+Xiaobitan/Songshan cost conflicts, 13 naming leads, ten incident leads and
+Typhoon Nari figures, station-level BL04/Tamsui/Zhonghe history leads, and the
+engineering, depot, fleet, bus, ferry and gondola leads that have exact primary
+targets. No appendix claim is promoted by this audit.
+
+The bus snapshot has 1,051 routes and 20 colour-brown pages (1.9%). The 16
+history-TBC routes are 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副,
+棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; each needs dated history,
+corridor rationale and operator-change evidence from full primary pages.
+
+The order is R, G, O, BL, Y, A, V, K, LB, six stations per commit with a short
+final batch per line; then public art, naming and incidents as three Part 2
+batches; then the 16 brown histories followed by only the red group in
+six-route batches. No images were fetched, and the claims baseline and checker
+were not changed.
