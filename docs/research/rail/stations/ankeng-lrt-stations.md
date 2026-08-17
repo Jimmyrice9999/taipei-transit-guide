@@ -30,6 +30,32 @@ station-information documents; those linked documents and images were not
 fetched under this run's no-image contract. The readable HTML therefore does
 not establish station-specific numbered exits or track tables for this pass.
 
+## Station-prose audit: K01–K06
+
+The following full primary pages were fetched and read on 17 August 2026:
+the six NTMC station pages (`https://www.ntmetro.com.tw/basic/?mode=detail&node=600`,
+`https://www.ntmetro.com.tw/basic/?mode=detail&node=601`,
+`https://www.ntmetro.com.tw/basic/?mode=detail&node=608`,
+`https://www.ntmetro.com.tw/basic/?mode=detail&node=607`,
+`https://www.ntmetro.com.tw/basic/?mode=detail&node=606`,
+`https://www.ntmetro.com.tw/basic/?mode=detail&node=605`), the NTMC station
+table, the DORTS Ankeng route and station-position pages, the DORTS Shuang'an
+Tunnel article, and the DORTS K02 public-art record. No image or linked station
+document was fetched.
+
+| Station | Result | What the full pages established or failed to add |
+|---|---|---|
+| K01 | Correctly empty | The Shuang'an Tunnel page adds depot-lead engineering context already recorded in the facts box; no additional K01 siting decision, prior site, exit decision, naming history, incident, or public-art record was found. |
+| K02 | 1 sentence, 31 words | The DORTS public-art page adds a design concept not in the facts box: flexible biological curves and rounded, multicolour forms suggesting an alien organism, Mambo movement and insect flight. |
+| K03 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
+| K04 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
+| K05 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
+| K06 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
+
+K01–K06 therefore add 31 body-prose words in this batch. The K02 sentence is
+the only new prose claim; its source is `dorts-ankeng-k02-art`, whose full URL
+is recorded in the implementation source and in the source table below.
+
 ## What is established
 
 ### Identity and position

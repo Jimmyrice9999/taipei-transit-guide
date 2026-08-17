@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -333,9 +333,15 @@ function makeResearch(code: string, data: KData): StationResearch {
   }
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  K02: [
+    { text: 'DORTS describes the K02 artwork as a cluster whose flexible, biological curves suggest an alien organism; its rounded forms and multicolour surfaces also evoke Mambo-like movement and insect flight.', source: k02Art.id },
+  ],
+}
+
 export const ANKENG_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(kData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, research, sources: research.sources, location: data.location, locationSource: stationList.id }]
+    return [code, { structure: data.structure, research, sources: research.sources, location: data.location, locationSource: stationList.id, prose: stationProse[code] ?? [] }]
   }),
 ) as Record<string, StationOverlay>
