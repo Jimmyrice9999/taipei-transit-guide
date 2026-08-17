@@ -1,6 +1,6 @@
 import type { Source } from './sources.ts'
 import type { StationInterchange, StationResearch } from './station-research.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 
 const accessed = '2026-08-14'
 const tymcPublisher = 'Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)'
@@ -434,9 +434,41 @@ function makeResearch(code: string, data: AData): StationResearch {
   }
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  A1: [
+    { text: 'Taipei City argued that an elevated Airport MRT would damage the urban landscape and land use, then offered to cover the added cost of putting the A2–A1 section underground as it entered the city.', source: dortsA1.id },
+    { text: 'The Taipei approach runs from the A2 tail tracks beside the flood embankment, dives underground after Zhongxing Bridge, passes beneath Zhongxiao Bridge and the Tamsui River, and reaches the C1/D1 site after crossing the civic-centre fabric and meeting Beimen Station.', source: dortsA1.id },
+    { text: 'Because four of the six required cross-passages lay beneath the Tamsui River, DORTS selected a double-O tunnel shield in place of the riskier single-bore arrangement; it records this as the first domestic use of the DOT method.', source: dortsA1.id },
+    { text: 'TYMC’s art map places 天地之窗 and 遊子之鏡 in the unpaid concourse, ‘紛紛從田裡飛起’ in the B1 pick-up area, 宇宙 beside the bamboo-and-water stair, and 遠山無盡碧層層 by the escalator toward Taipei Metro Beimen Station.', source: publicArt.id },
+  ],
+  A2: [
+    { text: 'A2 occupies the road over the 12th floodway embankment at the MRT Road–Shuhong East Road junction, making it the first elevated Airport MRT station encountered when travelling from Taipei toward the airport.', source: rbStations.id },
+    { text: 'The Railway Bureau calls the station “Taipei’s gate”: its light tubular form and changing solid-to-void façade were intended to suggest flight and point travellers toward the airport, while its ground-level entrances are shared with Taipei Metro O5.', source: rbStations.id },
+    { text: 'TYMC places 夢想與回憶的輸送帶 on the south-side machinery building at the platform level; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A3: [
+    { text: 'A3 was positioned at the northwest corner of Zhongshan Road and Wugong Road to meet the Circular Line, and the Railway Bureau assigns the interchange station the additional role of city check-in and baggage drop-off for airport passengers.', source: rbStations.id },
+    { text: 'Its architecture continues A2’s flight vocabulary but changes the image to the twin wings of an aircraft, a response to a site that had to handle both transfers and airport-bound passenger processing.', source: rbStations.id },
+    { text: 'TYMC places 伽利略與他朋友們留給我的月亮… in the paid concourse and 城市鄰居 on the curved glass wall at the entrance; the checked art page does not state their years, media, selection methods or costs.', source: publicArt.id },
+  ],
+  A4: [
+    { text: 'A4 was set about 250 metres east of the Zhongshan Road Section 1–Xinwu Road junction, across from the Xinzhuang subcenter rather than directly at the intersection.', source: rbStations.id },
+    { text: 'Its entrance bridge crosses beneath the Zhongshan Road viaduct to reach the subcenter, and the Railway Bureau describes the bridge’s ribbon-like language as a “Starlight Avenue” linking the district’s emerging film and media industry.', source: rbStations.id },
+    { text: 'TYMC places 幸福之旅 across the north–south platforms on the second-floor connector and fifth-floor platform levels; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A5: [
+    { text: 'A5 follows the shared Taiwan Route 1 corridor at the east side of the Zhongshan Road–Tailin Road junction, where the platform structure was integrated with the road viaduct rather than treated as a separate station frame.', source: rbStations.id },
+    { text: 'The Railway Bureau groups A5 with A6 as standard DE01 stations: nearby high-rise housing gives the corridor an urban-edge character, while the architecture responds with forms that echo surrounding hills, bring light into the pedestrian flow and leave an open ground plaza for public use.', source: rbStations.id },
+  ],
+  A6: [
+    { text: 'A6 continues the Taiwan Route 1/road-viaduct arrangement to the east side of the Zhongshan Road–Guiyang Street junction, so its station structure shares the highway corridor that also carries A5.', source: rbStations.id },
+    { text: 'The Railway Bureau describes A5 and A6 as stations on the metropolitan fringe, beside substantial high-rise housing but still reading as an edge suburb; their hill-like forms, daylight and open ground plazas were intended to soften that infrastructure for local residents.', source: rbStations.id },
+  ],
+}
+
 export const AIRPORT_MRT_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(aData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, exits: data.exits, research, sources: research.sources }]
+    return [code, { structure: data.structure, exits: data.exits, research, sources: research.sources, prose: stationProse[code] ?? [] }]
   }),
 ) as Record<string, StationOverlay>

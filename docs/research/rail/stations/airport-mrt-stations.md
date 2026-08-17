@@ -27,6 +27,40 @@ the full Taipei DORTS A1 project page, the full Railway Bureau architecture
 PDF, the full TYMC public-art page, the full Railway Bureau depot page and the
 full MOTC A22 announcement were fetched and read. No image asset was fetched.
 
+## Station-prose audit: A1–A6
+
+The six full TYMC station pages, the full Taipei DORTS A1 project page, the
+full Railway Bureau architecture report and the full TYMC public-art table were
+checked again before writing this batch. All six pages received prose because
+the primary material contains station-specific siting, design or access
+decisions beyond the generated facts box.
+
+| Code | Result | Evidence used | Search result |
+|---|---|---|---|
+| A1 | Prose added | DORTS Taipei section; TYMC art table | Underground-entry decision, river-crossing construction method and art locations established. |
+| A2 | Prose added | Railway Bureau architecture report; TYMC art table | Floodway/dike siting, Taipei-gate design rationale, shared O5 entrance and art location established. |
+| A3 | Prose added | Railway Bureau architecture report; TYMC art table | Circular Line/check-in siting purpose, aircraft-wing design and art locations established. |
+| A4 | Prose added | Railway Bureau architecture report; TYMC art table | Offset siting, subcenter pedestrian bridge, “Starlight Avenue” design rationale and art location established. |
+| A5 | Prose added | Railway Bureau architecture report | Road-viaduct co-structure and edge-suburb design context established; no additional art metadata found. |
+| A6 | Prose added | Railway Bureau architecture report | Road-viaduct co-structure and edge-suburb design context established; no additional art metadata found. |
+
+The full pages searched for this batch were:
+
+- DORTS: https://www.dorts.gov.taipei/cp.aspx?n=efeac549b2c68706
+- Railway Bureau: https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- TYMC public art: https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- TYMC station pages: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A1/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A2/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A3/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A4/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A5/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A6/A4.
+
+No new conflict was found in this batch. The report’s existing A3 Y19/Y20,
+A8 lift-count, A12 access-count, A14/A14a and route-length conflicts remain
+unchanged. Public-art years, media, selection methods and costs remain TBC
+where TYMC’s full table does not publish them.
+
 ## What is established
 
 ### Operator station pages
