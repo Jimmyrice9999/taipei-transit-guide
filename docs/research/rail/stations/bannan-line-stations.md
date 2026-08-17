@@ -163,6 +163,25 @@ Station naming is TBC for all 23 pages. The full current TRTC pages and the
 checked DORTS route, architecture and public-art pages did not provide a
 construction-era name, rename date or rename announcement.
 
+## Station-prose audit — 17 August 2026
+
+The first six remaining station pages were audited before editing. The full
+DORTS public-art records below were fetched and read; each supplied station-
+specific local or participatory context beyond the title, medium and placement
+already represented in the facts box. All six therefore received prose. No
+construction, siting, naming or incident claim was added where the checked
+pages did not establish one.
+
+- **BL01** — DORTS’s full record for *飛旋．夢的起點* says the vertical form
+  turns the water, earth-energy and mining ideas into a six-sided structure,
+  and connects the traditional coal industry to the grid form of new nano
+  carbon-tube technology: 「主結構體中六角形多向的拼接與擠壓結構，更轉換傳統煤礦產業意象與新科技奈米碳管的網格造型」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL01 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=3D0A3BBDE3F705F9, source id `dorts-bl01-public-art`.
+- **BL02** — The full *時間．碎片* record grounds the work in archaeological reports from 土地公山 and 斬龍山 and describes the repeated fragmentation and re-formation of replica pottery as time’s fragments: 「參照土地公山與斬龍山遺址挖掘考古報告中出土而仿製成的陶罐」 and 「象徵了時間的碎片」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL02 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=B39B922B400AE0BE, source id `dorts-bl02-public-art`.
+- **BL03** — The full *金城傳奇* record describes Tucheng’s history from prehistory through modern technology and says local residents participated in creating the personal symbols: 「表達土城地區由史前時代至現代科技時代」 and 「土城民眾參與創造的個人符號」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL03 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=774907BC6D8E2127, source id `dorts-bl03-public-art`.
+- **BL04** — The full *牧場* record says the road was formerly a waterway and that its image design was selected from the top three entries in a Le-li Elementary School in-school drawing competition: 「新道路舊時為水道」 and 「由樂利國小舉辦校內徵圖取前三名」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL04 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=0061E025C610E544, source id `dorts-bl04-public-art`.
+- **BL05** — The full *河戀* record describes the river as witnessing Banqiao’s historical development and carrying residents’ historical memories: 「河流見證了板橋的歷史發展，也承載了居民的歷史記憶」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL05 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=C11B42572557E91B, source id `dorts-bl05-public-art`.
+- **BL06** — The full *空間之詩* record describes a participatory display where citizens, passengers and poets send poems by mobile-phone text message to the message board: 「邀請市民、乘客及詩人透過手機簡訊，即時將詩作直接傳送至字幕機上發表」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL06 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=0C7DA2A84E03E271, source id `dorts-bl06-public-art`.
+
 ## Conflicts
 
 1. The DORTS route material describes the built Bannan sections as underground,

@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -185,6 +185,27 @@ const blData: Record<string, BLData> = {
   BL23: { engineering: 'BL18', exits: 7, openingDate: '27 February 2011', route: dortsNangangEast, depot: 'Nangang Depot is the published depot for the Nangang stretch; station-level roster allocation: TBC.', exitDetails: '1: 經貿路、南港展覽館; 2: 南港路1段32號、經貿路; 2A: 同處; 3: 南港路、經貿1路; 4: 經貿1路、南港展覽館; 5: 南港路、研究院路; 6: 南港路、經貿路; 7: 福康街近成德國中. Accessible exits: 1–5 and 2A.', facilities: 'Multiple exit and transfer lifts; enquiry points near exits 2 and 5; water dispensers near exits 2 and 5; toilets, parent/accessible toilet and nursing facilities in the halls; bicycle access open.', landmarks: '南港展覽館; 研究院路; 成德國中', design: 'The station theme is 數位空間、e化車站. DORTS describes a 黎明藍 palette, metal and low-E glass, shell-like entrances, and barcode, circuit-board and binary motifs.', designSource: dortsStationArchitecture, publicArt: '我們的私房公共藝術 — 黃心健（故事巢股份有限公司）; stainless steel, clear glass, acid-free paper, LED, computers, projection fabric, one-way mirror and LCD; September 2010; concourse. The same page names a second work, 快或慢, but its complete metadata is TBC.', publicArtSource: art.bl23 },
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  BL01: [
+    { text: 'DORTS says the work’s vertical motion evokes water piercing a mine and rising earth energy; its hexagonal structure recasts coal-mining imagery and nano-carbon-tube grids as a new transport-and-cultural-creation beginning.', source: art.bl01.id },
+  ],
+  BL02: [
+    { text: 'The work draws on archaeological reports from Tudigong Mountain and Zhanlong Mountain, turning replica pottery fragments into a mechanical image of local cultural origins and time repeatedly dissolving and recomposing.', source: art.bl02.id },
+  ],
+  BL03: [
+    { text: 'DORTS describes Tucheng’s art as “techno-antiquities”: resident-created symbols, prehistoric-to-modern histories and transit technology are collaged into a new “Jincheng civilisation”.', source: art.bl03.id },
+  ],
+  BL04: [
+    { text: 'The artwork’s water imagery records an older waterway, while the mosaic design came from the top three entries in Le-li Elementary School’s in-school drawing competition.', source: art.bl04.id },
+  ],
+  BL05: [
+    { text: 'DORTS treats the Banqiao river as a witness to local history and residents’ memories; glass rods and LEDs turn that “river of space” into changing time-colours.', source: art.bl05.id },
+  ],
+  BL06: [
+    { text: 'The work turns the station into a participatory public space: its LED poetry can receive real-time submissions from citizens, passengers and poets by SMS.', source: art.bl06.id },
+  ],
+}
+
 function makeResearch(code: string, data: BLData): StationResearch {
   const stationSource = trtcStation(code)
   const designSource = data.designSource
@@ -221,6 +242,6 @@ function makeResearch(code: string, data: BLData): StationResearch {
 export const BANNAN_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(blData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources }]
+    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, prose: stationProse[code] ?? [] }]
   }),
 ) as Record<string, StationOverlay>
