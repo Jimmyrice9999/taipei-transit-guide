@@ -61,6 +61,38 @@ A8 lift-count, A12 access-count, A14/A14a and route-length conflicts remain
 unchanged. Public-art years, media, selection methods and costs remain TBC
 where TYMC’s full table does not publish them.
 
+## Station-prose audit: A7–A12
+
+The full Railway Bureau architecture report, full TYMC public-art table and
+full TYMC operator pages for A7–A12 were fetched and read before this batch.
+All six pages received prose because the primary material adds station-specific
+landscape, development, depot or airport-access decisions beyond the generated
+facts box.
+
+| Code | Result | Evidence used | Search result |
+|---|---|---|---|
+| A7 | Prose added | Railway Bureau architecture report | Sports-park and industrial-park context established. |
+| A8 | Prose added | Railway Bureau architecture report; TYMC art table | Linkou transport/commercial-centre planning, joint development and art location established. |
+| A9 | Prose added | Railway Bureau architecture report; TYMC art table | Highway-side joint development, reserved branch space and art location established. |
+| A10 | Prose added | Railway Bureau architecture report | Rural landscape and “green corridor” context established; no additional art metadata found. |
+| A11 | Prose added | Railway Bureau architecture report | Rural siting, Luzhu depot access and reserved freight-park branch established; no additional art metadata found. |
+| A12 | Prose added | Railway Bureau architecture report; TYMC art table | Terminal-side siting, split airport access rationale and art location established. |
+
+The full pages searched for this batch were:
+
+- Railway Bureau: https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- TYMC public art: https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- TYMC station pages: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A7/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A8/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A9/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A10/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A11/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A12/A4.
+
+No new value conflict was found in this batch. The existing A8 lift-count and
+A12 access-count conflicts remain published; the art page still does not give
+the years, media, selection methods or costs for the works used here.
+
 ## What is established
 
 ### Operator station pages

@@ -464,6 +464,31 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'A6 continues the Taiwan Route 1/road-viaduct arrangement to the east side of the Zhongshan Road–Guiyang Street junction, so its station structure shares the highway corridor that also carries A5.', source: rbStations.id },
     { text: 'The Railway Bureau describes A5 and A6 as stations on the metropolitan fringe, beside substantial high-rise housing but still reading as an edge suburb; their hill-like forms, daylight and open ground plazas were intended to soften that infrastructure for local residents.', source: rbStations.id },
   ],
+  A7: [
+    { text: 'The Railway Bureau places A7 on Wenhua 1st Road with the Linkou multi-purpose sports park to the south and Hwaya Industrial Park reachable to the west, recording the two destinations as the station’s surrounding context.', source: rbStations.id },
+  ],
+  A8: [
+    { text: 'A8 stands at the Wenhua 1st Road–Fuxing 1st Road junction in the Linkou area that the Railway Bureau identifies as a dense transport and commercial centre, with joint development intended to connect the station to the surrounding business district.', source: rbStations.id },
+    { text: 'The Railway Bureau says the entrance land and its adjoining parcel were planned as a shared development, with the entrance at the co-developed building’s ground floor and the connecting facilities on its second floor.', source: rbStations.id },
+    { text: 'TYMC places 銀河鐵道印記 by Paramodel on the second-floor concourse; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A9: [
+    { text: 'A9 was sited at the Wenhua 3rd Road–Bade Road junction beside the highway, with the entrance parcel and adjoining land planned for joint development as part of the same Linkou commercial-centre strategy as A8.', source: rbStations.id },
+    { text: 'The Railway Bureau also records reserved space for a future Linkou branch, leaving the station’s structure prepared for a connection that was not part of the operating route described by the report.', source: rbStations.id },
+    { text: 'TYMC places 一個自在的游晃 by 豪華朗機工 on the ceiling of the ground-floor entrance hall; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A10: [
+    { text: 'The Railway Bureau groups A10 with A11 along the 赤塗崎溪 woodland landscape and Luzhu’s agricultural fields, calling this rural, open and green stretch a key section of the line’s “green corridor”.', source: rbStations.id },
+  ],
+  A11: [
+    { text: 'A11 was placed on the west side of Kengguo Road within the same Luzhu rural corridor, but the Railway Bureau also identifies it as the access station for the Airport MRT’s Luzhu maintenance depot.', source: rbStations.id },
+    { text: 'The depot connection was kept in the station planning: the report says the existing depot access track leaves space for a possible freight-park branch, with the station able to develop into a freight-business and commuter-transfer point.', source: rbStations.id },
+  ],
+  A12: [
+    { text: 'A12 lies beneath Terminal South Road on the southeast side of Terminal 1, where the Railway Bureau’s national-gateway improvement project placed one entrance directly inside the terminal and the other at the south end of its surface car park.', source: rbStations.id },
+    { text: 'The report therefore records two deliberately separate airport approaches: an indoor terminal connection and a second access point at the south end of the surface car park.', source: rbStations.id },
+    { text: 'TYMC places 過境—心航線 by 林俊廷 on the wall of the passage from the fare gates to the terminal; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
 }
 
 export const AIRPORT_MRT_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
