@@ -66,6 +66,42 @@ No new value conflict was found in this batch. Existing conflicts about the
 Green Mountain opening date, V28’s two primary position values and the
 line-wide V03 structure inference remain published below.
 
+## Station-prose audit: V07–V11, V26
+
+The six full NTMC station pages, the full DORTS Green Mountain and Blue Sea
+Phase 1 route/station pages, the full NTMC route-stamp page and the full NTMC
+public-art page were fetched and read before this batch. No station received
+prose: the station-specific material found is already represented in the facts
+box, while the remaining material is line-wide rather than station-specific.
+
+| Code | Result | Full-page evidence searched | Search result |
+|---|---|---|---|
+| V07 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC route-stamp and public-art pages | The road/intersection position and shared shelter/public-art material are already in facts; no V07-specific construction, naming or incident record found. |
+| V08 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC route-stamp and public-art pages | The road/intersection position and shared shelter/public-art material are already in facts; no V08-specific construction, naming or incident record found. |
+| V09 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC route-stamp and public-art pages | The road/intersection position and shared shelter/public-art material are already in facts; no V09-specific construction, naming or incident record found. |
+| V10 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC route-stamp and public-art pages | The road/intersection position, New Town name and shared shelter/public-art material are already in facts; no V10-specific construction, naming or incident record found. |
+| V11 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC route-stamp and public-art pages | The road/intersection position, Green Mountain terminus role and shared shelter/public-art material are already in facts; no V11-specific construction, naming or incident record found. |
+| V26 | Correctly empty | NTMC station page, route-stamp and public-art pages; DORTS Blue Sea Phase 1 route/station pages | The Blue Sea Phase 1 position, completion, route-stamp and public-toilet context are already in facts; no V26-specific construction, naming or art record found. |
+
+The full pages searched for this batch were:
+
+- NTMC station pages: https://www.ntmetro.com.tw/basic/?mode=detail&node=454,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=453,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=452,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=451,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=450,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=447
+- DORTS Green Mountain route/station pages: https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY,
+  https://www.dorts.ntpc.gov.tw/about/routeInfo/kq4VmGpM2BoY
+- DORTS Blue Sea Phase 1 route/station pages: https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v,
+  https://www.dorts.ntpc.gov.tw/about/routeInfo/LXlR27XkdV8v
+- NTMC route stamps: https://www.ntmetro.com.tw/basic/?node=10133
+- NTMC public art: https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+No new value conflict was found in this batch. The existing V28 position
+conflict remains published below; V26’s Blue Sea Phase 1 position agrees across
+the current NTMC and DORTS pages.
+
 ## What is established
 
 ### Identity and position
