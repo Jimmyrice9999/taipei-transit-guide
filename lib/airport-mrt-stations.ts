@@ -92,7 +92,7 @@ const motcA22 = source(
   '機場捷運A22老街溪站通車',
   motcPublisher,
   'https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04',
-  'The Ministry’s full announcement records the opening of the A22 Laojie River extension on 31 July 2023.',
+  'The Ministry’s full announcement records the A22 Laojie River extension, its design changes required by the Taoyuan railway undergrounding project, construction and signalling-integration difficulties, the 31 July 2023 opening, and the planned onward A23/Zhongli connections.',
 )
 
 const operatorUrls: Record<string, string> = {
@@ -511,6 +511,23 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'A18 was placed north of the Taoyuan HSR station beside HSR North Road so the Airport MRT could turn the HSR–airport connection into a major gateway for Taoyuan, with a below-ground link between the two stations.', source: rbStations.id },
     { text: 'The Railway Bureau’s DE03 design concept treats the line’s two travel directions as an upward and downward movement, using staggered platforms and open roof geometry to express the pull of trains moving toward and away from the airport.', source: rbStations.id },
     { text: 'TYMC places 氣門9號律動 by Florian Claar on the plaza between A18 and the HSR station; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A19: [
+    { text: 'A19 lies in the Taoyuan HSR station special district on HSR South Road, within the future-new-town development area identified by the Railway Bureau.', source: rbStations.id },
+    { text: 'The station-front plaza on the planned-road side was designed as the transition and connection between the bus stop and Airport MRT, while also separating pedestrian and vehicle movements and providing a gathering and disaster-prevention space.', source: rbStations.id },
+  ],
+  A20: [
+    { text: 'A20 stands on Zhongfeng North Road at the edge of Zhongli, which the Railway Bureau describes as the hinterland of future urban expansion and an outward-transport hub.', source: rbStations.id },
+    { text: 'Its entrances are coordinated with an open-space system and planted buffer strips; the high-ceiling station uses a windmill paving image with the columns to give the space a local design motif.', source: rbStations.id },
+  ],
+  A21: [
+    { text: 'A21 was built as the Airport MRT’s phased terminus, with the Railway Bureau recording a planned extension to Zhongli that would connect with Taiwan Railways and future Taoyuan Metro transfers.', source: rbStations.id },
+    { text: 'Its underground station design uses the memory of a suitcase as its organising theme, distributing ideas of drifting, movement, time, rest and nature through the architecture and public art.', source: rbStations.id },
+  ],
+  A22: [
+    { text: 'A22 is the first built stage of the Airport MRT extension from A21 toward Zhongli; the Ministry says the extension required changes to the track alignment and station configuration to coordinate with the Taoyuan railway-undergrounding project.', source: motcA22.id },
+    { text: 'The Ministry records construction difficulties specific to this extension: COVID-19 affected overseas electrical and mechanical suppliers, while integrating the new section’s signalling with the existing system created technical difficulty and lengthened testing.', source: motcA22.id },
+    { text: 'The same announcement describes A22 as a step toward a future A23 connection with the underground Zhongli railway station and a planned Green Line extension transfer.', source: motcA22.id },
   ],
 }
 

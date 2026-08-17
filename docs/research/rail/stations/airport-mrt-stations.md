@@ -126,6 +126,38 @@ unfinished-third-terminal versus operating-airport-hotel distinction remains
 published; art years, media, selection methods and costs remain TBC where the
 TYMC table does not publish them.
 
+## Station-prose audit: A19–A22
+
+The full Railway Bureau architecture report, full TYMC public-art table, full
+TYMC operator pages for A19–A22 and the full MOTC A22 opening announcement were
+fetched and read before this batch. All four pages received prose because the
+primary material adds station-specific planning, landscape, design or
+construction context beyond the generated facts box.
+
+| Code | Result | Evidence used | Search result |
+|---|---|---|---|
+| A19 | Prose added | Railway Bureau architecture report; TYMC station page | HSR special-district siting and station-front bus/MRT open-space transition established; no public-art work listed. |
+| A20 | Prose added | Railway Bureau architecture report; TYMC station page | City-edge/future-expansion context, open-space buffers and windmill design established; no public-art work listed. |
+| A21 | Prose added | Railway Bureau architecture report; TYMC station page | Phased-terminus planning, future Zhongli/TRA connection and suitcase-memory design established; no public-art work listed. |
+| A22 | Prose added | MOTC opening announcement; TYMC station page | Extension rationale, railway-undergrounding design changes, construction difficulties and future connections established; station structure remains TBC and no public-art work is listed. |
+
+The full pages searched for this batch were:
+
+- Railway Bureau: https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- TYMC public art: https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- TYMC station pages: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A19/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A20/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A21/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A22/A4
+- MOTC A22 announcement: https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04
+
+No new value conflict was found in this batch. The existing A14/A14a
+unfinished-third-terminal versus operating-airport-hotel distinction remains
+published. A22’s opening date is 31 July 2023 in the MOTC announcement; the
+architecture report covers the initial A1–A21/A14a set and therefore does not
+establish A22’s structure or track arrangement. Public-art year, medium,
+selection method and cost remain TBC for A19–A22.
+
 ## What is established
 
 ### Operator station pages
