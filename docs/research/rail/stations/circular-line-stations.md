@@ -255,6 +255,27 @@ source id dorts-circular-art-banqiao. The public-art main page at
 https://www.dorts.gov.taipei/cp.aspx?n=6213240B5A7C3330 was also fetched in
 full and describes the two-zone division and artists.
 
+## Station-prose audit — 17 August 2026
+
+The first six Y pages were audited after fetching the full NTMC station list,
+all six full NTMC station-detail pages, the full NTMC accessibility page, the
+DORTS Phase 1 route page, the full DORTS architecture page, architecture-book
+pages 191–192, and the full line-wide public-art record. Y07 received one
+sentence because the DF111 brief adds local alignment context not present in
+its facts box. Y08–Y12 were correctly left empty: their remaining full-page
+material either repeats the structured entrance, platform, depot or design
+fields or is line-wide rather than station-specific.
+
+- **Y07** — The DORTS design page places Y07 in DF111, a section covering the
+  Liugong Canal, Shisizhang agricultural land and the Xindian River crossing,
+  and says its nature concept uses square elements and the Circular Line
+  colour: 「因涵括了瑠公圳、十四張農用地，並跨越新店溪，自然資源豐沛」 and 「以『自然』作為建築設計構想，設計元素為方形」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, Circular Line station architecture, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, source id `dorts-circular-architecture`.
+- **Y08** — Correctly left empty. The full NTMC detail page, full DORTS Phase 1 route page, full DORTS architecture page, full architecture-book page 191 and full line-wide public-art record were searched; no additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=797, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. Checked 17 August 2026.
+- **Y09** — Correctly left empty. The full NTMC detail page, full DORTS Phase 1 route page, full DORTS architecture page, full architecture-book page 192 and full line-wide public-art record were searched; no additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=798, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. Checked 17 August 2026.
+- **Y10** — Correctly left empty. The full NTMC detail page, full DORTS Phase 1 route page, full DORTS architecture page, full architecture-book page 192 and full line-wide public-art record were searched; no additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=799, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. Checked 17 August 2026.
+- **Y11** — Correctly left empty. The full NTMC detail page, full DORTS Phase 1 route page, full DORTS architecture page, full architecture-book page 192 and full line-wide public-art record were searched; no additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=800, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. Checked 17 August 2026.
+- **Y12** — Correctly left empty. The full NTMC detail page, full DORTS Phase 1 route page, full DORTS architecture page, full architecture-book page 192 and full line-wide public-art record were searched; no additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=801, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. Checked 17 August 2026.
+
 ## Conflicts
 
 1. The route table uses engineering station identifiers one number lower than

@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -188,6 +188,12 @@ const yData: Record<string, YData> = {
   Y20: { engineering: 'Y19', structure: 'elevated', exits: 1, openingDate: '31 January 2020', route: dortsPhase1, structureSource: book194, platformDetails: 'Elevated side-platform station; two side platforms; track count: TBC. Platform level main structure 90 m long, 23 m wide; platform length 80 m.', platformSource: book194, exitDetails: 'One entrance on the west side of the station body; one accessible lift, two escalators and a 1.925 m stair.', exitSource: book194, facilities: commonFacilities + ' DORTS publishes one entrance-side accessible lift.', landmarks: '五工路、中山路1段路口; New Taipei Industrial Park', landmarksSource: book194, interchange: { label: 'Airport MRT; transfer mode: TBC' }, interchangeSource: dortsPhase1, engineeringHistory: 'Y20 is the northern endpoint of the first-phase route and in the DF113 心樂活 section. DORTS records a dedicated station-use urban-plan site and land development at the industrial-park terminus.', engineeringHistorySource: dortsArchitecture, publicArt: lineArt, publicArtSource: artLine },
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  Y07: [
+    { text: 'DORTS’s DF111 brief links this section to the Liugong Canal, Shisizhang farmland and the Xindian River crossing; its “nature” concept responds with square elements and extensive use of the Circular Line colour.', source: dortsArchitecture.id },
+  ],
+}
+
 function makeResearch(code: string, data: YData): StationResearch {
   const operatorSource = ntmcStation(code)
   const sources = [operatorSource, ntmcStationList, ntmcAccessibility, tdxStations, data.route, data.structureSource, data.platformSource, data.exitSource, data.landmarksSource, data.engineeringHistorySource, data.publicArtSource]
@@ -222,6 +228,6 @@ function makeResearch(code: string, data: YData): StationResearch {
 export const CIRCULAR_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(yData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, planned: data.planned }]
+    return [code, { structure: data.structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, planned: data.planned, prose: stationProse[code] ?? [] }]
   }),
 ) as Record<string, StationOverlay>
