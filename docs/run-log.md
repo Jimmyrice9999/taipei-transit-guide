@@ -7685,3 +7685,71 @@ No research, content pages, or images were added or fetched.
 
 Verification: `npm run cite`, `npm run verify`, `npm test`, `npm run nav`, and
 `npm run verify:browser` passed; the full test suite reports 185/185.
+
+# Run 28 — Wenhu station body prose, 17 August 2026
+
+## Sourced
+
+The station renderer now has a separate prose field: structured station facts
+remain in the registry, while each prose sentence carries its own source id.
+The full DORTS Wenhu project record, Wenhu station-architecture record, official
+Wenhu public-art table, and Nangang Exhibition Center architecture record were
+read in full on 17 August 2026. Ten stations received prose, fourteen were
+correctly left empty, and 538 body words were added. Word counts below use
+whitespace-separated English words; “sources cited” lists the source ids rendered
+in that station’s references.
+
+| Station | Words | Sources cited |
+| --- | ---: | --- |
+| BR01 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR02 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR03 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR04 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR05 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR06 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR07 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR08 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR09 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR10 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR11 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR12 | 63 | dorts-wenhu-project-stations; dorts-wenhu-station-architecture |
+| BR13 | 90 | dorts-wenhu-project-stations; dorts-wenhu-public-art-table |
+| BR14 | 52 | dorts-wenhu-project-stations; dorts-wenhu-station-architecture |
+| BR15 | 53 | dorts-wenhu-station-architecture; dorts-wenhu-public-art-table |
+| BR16 | 32 | dorts-wenhu-public-art-table |
+| BR17 | 52 | dorts-wenhu-public-art-table |
+| BR18 | 27 | dorts-wenhu-public-art-table |
+| BR19 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR20 | 47 | dorts-wenhu-station-architecture; dorts-wenhu-public-art-table |
+| BR21 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR22 | 29 | dorts-wenhu-public-art-table |
+| BR23 | 0 | —; full DORTS project, architecture, and public-art pages searched; no station-specific prose beyond structured fields found |
+| BR24 | 93 | dorts-nangang-exhibition-architecture; dorts-wenhu-public-art-table |
+
+## TBC
+
+No additional station-specific site history, prior land use, construction
+incident, naming dispute, closure, or engineering-work claim was promoted for
+the fourteen empty pages. The cited primary pages add no answer beyond their
+station-table fields for those pages; the body remains empty rather than
+guessing.
+
+## Contradicted the corpus
+
+- The Wenhu research file’s architecture source URL without an `s=` sub-section
+  id lands on a general overview that does not contain the quoted Wenhu text.
+  The full page that does contain it is `cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F`.
+- The corpus’s old “eleven stations have a single exit” lead conflicts with its
+  own transcribed DORTS table, which gives eight; no prose relies on that lead.
+
+## Conflicts found
+
+No value conflict was found among the primary sources used for the ten published
+station entries. The unresolved corpus conflict remains the route wording for
+the Muzha section: DORTS says the line passes the north side of Xinhai Tunnel,
+while a zh-Wikipedia lead says it passes through Fuzhou Mountain Tunnel. This
+run did not use either tunnel wording in station prose.
+
+The four commits were made in six-station batches (BR01–06, BR07–12, BR13–18,
+BR19–24) and pushed to `main` after each batch. `npm run cite`, `npm run verify`,
+and `npm test` all passed; the full test suite reports 185/185.

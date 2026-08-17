@@ -1,11 +1,10 @@
 # For Jamie
 
-Run 27 organization audit is complete through Part 6; every part was committed and pushed to `main`.
-Part 0 found median station body prose of 0 words across 192 pages; no content was added.
-Parts 1–2 nested overloaded navigation and added a direct homepage Rail → Stations path.
-Part 3 added a session-scoped contextual back trail with a static parent fallback.
-Part 4 added native accessible disclosures to grouped indexes and long content pages.
-Part 5 found no unambiguous orphaned user-facing page; 231 legacy `/train/` stubs remain intentionally URL-only.
-Part 6 fresh build, browser harness, navigation checks, screenshots and visual review passed.
-Gates are green: cite, verify, nav, browser verification, and full tests 185/185.
-No research, content pages, or images were added or fetched; user-owned dirty files remain unstaged.
+Run 28 added Wenhu station body prose only; no other line was touched.
+10 of 24 BR pages gained sourced prose; 14 correctly remain empty.
+538 body words were added; every sentence carries a primary-source citation.
+The official DORTS project, architecture, and public-art pages were fetched in full.
+The BR font subset was regenerated for newly rendered citation metadata.
+Four six-station commits were pushed to `main`.
+Gates are green: cite, verify, and full tests 185/185.
+Existing user-owned dirty files remain unstaged.

@@ -123,6 +123,20 @@ const DORTS_WENHU_PUBLIC_ART: Source = {
   note: 'The full official table supports the Wenhu entries for Songshan Airport, Jiannan Road, Xihu, Gangqian, Wende, Dahu Park, Donghu and Nangang Exhibition Center, including completion dates, locations, titles, authors, descriptions and selection methods. The original-language rows were checked on the linked page.',
 }
 
+const DORTS_NANGANG_ARCHITECTURE: Source = {
+  id: 'dorts-nangang-exhibition-architecture',
+  title: 'Nangang Exhibition Center Station architecture',
+  titleOriginal: '南港展覽館站',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2',
+  accessed: '2026-08-17',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full station architecture record supports the station’s technology-park context, its digital-space theme, its dawn-blue palette, its light and transparent materials, and its barcode imagery. The original-language paragraphs were checked on the linked page.',
+}
+
 /**
  * Keyed by station code.
  *
@@ -307,12 +321,34 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     ],
   },
   BR19: { structure: 'elevated', engineering: 'B6', exits: 2 },
-  BR20: { structure: 'elevated', engineering: 'B7', exits: 2 },
+  BR20: {
+    structure: 'elevated',
+    engineering: 'B7',
+    exits: 2,
+    sources: [DORTS_WENHU_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'DORTS names Dahu Park among the Neihu section’s specially shaped stations, alongside Jiannan Road and Nangang Exhibition Center.',
+        source: DORTS_WENHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'Its public artwork, Kite—Soaring in the Sky, follows the escalator’s movement and uses the glazed façade to connect the flying forms with Dahu Park’s mountains, water, and aquatic life.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
+  },
   BR21: { structure: 'elevated', engineering: 'B8', exits: 2 },
   BR22: {
     structure: 'elevated',
     engineering: 'B9',
     exits: 3,
+    sources: [DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'Lake Ripples at Exit 3 turns the wall into DORTS’s “lake city story”: wind and rain create overlapping ripples that stand for shared memory in a city with lakes.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
     planned: [
       {
         line: 'Xidong Line',
@@ -323,6 +359,25 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     ],
   },
   BR23: { structure: 'elevated', engineering: 'B10', exits: 2 },
-  BR24: { structure: 'elevated', engineering: 'B11', exits: 8 },
+  BR24: {
+    structure: 'elevated',
+    engineering: 'B11',
+    exits: 8,
+    sources: [DORTS_NANGANG_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    prose: [
+      {
+        text: 'DORTS’s local design brief ties the station to Nangang Software Park, Nangang Economic and Trade Park, and Academia Sinica, setting the theme “digital space, e-station” to express the surrounding technology landscape.',
+        source: DORTS_NANGANG_ARCHITECTURE.id,
+      },
+      {
+        text: 'The same brief uses dawn blue and light, thin, transparent materials, with barcode imagery, to make the station read as an urban technology landmark.',
+        source: DORTS_NANGANG_ARCHITECTURE.id,
+      },
+      {
+        text: 'The official art table treats Light Gaps, Glimpses, and River in the Sky as a three-work ensemble: entrance columns form a visual landmark, the wall interacts with moving passengers, and the platform skylight carries water, light, and motion.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+    ],
+  },
 
 }
