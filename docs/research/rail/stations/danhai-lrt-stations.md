@@ -30,6 +30,42 @@ station information documents; those linked documents and images were not
 fetched under this run's no-image contract. The readable HTML therefore does
 not establish station-specific platform, track or exit tables for this pass.
 
+## Station-prose audit: V01–V06
+
+The six full NTMC station pages, the full DORTS Green Mountain route and
+station pages, the full NTMC V03 safety article, the full DORTS shelter-design
+article and the full NTMC public-art page were fetched and read before this
+batch. No station in V01–V06 received prose: the station-specific material
+found is already represented in the facts box, while the remaining material is
+line-wide rather than station-specific.
+
+| Code | Result | Full-page evidence searched | Search result |
+|---|---|---|---|
+| V01 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; NTMC transfer and public-art pages | The transfer/co-construction note, Hongshulin position and line-wide Jimmy Liao work are already in facts; no additional station history or siting decision found. |
+| V02 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; DORTS shelter-design article; NTMC public-art page | The road/intersection position and shared wind-protection/public-art material are already in facts; no V02-specific construction, naming or incident record found. |
+| V03 | Correctly empty | NTMC station page and full V03 safety article; DORTS Green Mountain route/station pages; DORTS shelter-design article; NTMC public-art page | The elevated form, Huwei Cherry Blossom Avenue context and slope/earthquake monitoring are already in facts; no additional V03 siting or construction history found. |
+| V04 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; DORTS shelter-design article; NTMC public-art page | The road/intersection position, university name and shared shelter/public-art material are already in facts; no V04-specific history or incident found. |
+| V05 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; DORTS shelter-design article; NTMC public-art page | The road/intersection position, `北投子` annotation and shared shelter/public-art material are already in facts; no dated rename or V05-specific history found. |
+| V06 | Correctly empty | NTMC station page; DORTS Green Mountain route/station pages; DORTS shelter-design article; NTMC public-art page | The road/intersection position and shared shelter/public-art material are already in facts; no V06-specific construction, naming or incident record found. |
+
+The full pages searched for this batch were:
+
+- NTMC station pages: https://www.ntmetro.com.tw/basic/?mode=detail&node=460,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=459,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=458,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=457,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=456,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=455
+- DORTS Green Mountain route: https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY
+- DORTS Green Mountain station table: https://www.dorts.ntpc.gov.tw/about/routeInfo/kq4VmGpM2BoY
+- NTMC V03 safety article: https://www.ntmetro.com.tw/basic/?mode=detail&node=297
+- DORTS shelter-design article: https://www.dorts.ntpc.gov.tw/documentary/articleInfo/JnldARRDZY9v
+- NTMC public art: https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+No new value conflict was found in this batch. Existing conflicts about the
+Green Mountain opening date, V28’s two primary position values and the
+line-wide V03 structure inference remain published below.
+
 ## What is established
 
 ### Identity and position
