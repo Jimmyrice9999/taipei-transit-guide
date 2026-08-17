@@ -52,9 +52,28 @@ document was fetched.
 | K05 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
 | K06 | Correctly empty | The full NTMC detail/table pages and DORTS route/station-position pages add only the current position, route structure and operator context already represented in the facts box; no additional station history, exits, naming, incident, or art record was found. |
 
-K01–K06 therefore add 31 body-prose words in this batch. The K02 sentence is
+K01–K06 therefore add 29 body-prose words in this batch. The K02 sentence is
 the only new prose claim; its source is `dorts-ankeng-k02-art`, whose full URL
 is recorded in the implementation source and in the source table below.
+
+## Station-prose audit: K07–K09
+
+The following full primary pages were fetched and read on 17 August 2026:
+the NTMC K07, K08 and K09 detail pages, the DORTS Ankeng route and
+station-position pages, the DORTS K08 public-art record, the K09 public-art
+article, and the An-Xin Bridge construction record. No image or linked station
+document was fetched.
+
+| Station | Result | What the full pages established or failed to add |
+|---|---|---|
+| K07 | Correctly empty | The full NTMC detail page and DORTS route/station-position pages add the current position, route structure and former Taiwan Malt Factory context already represented in the facts box; no additional siting decision, prior-site history, exits, naming, incident, or art record was found. |
+| K08 | 1 sentence | The DORTS art page adds the paired works’ design relationship: insect imagery evokes the train’s movement, while the ground-level mosaic adds Japanese craft texture, flower-like colours and a calm spatial layer. |
+| K09 | 2 sentences | The An-Xin Bridge record adds the reason for the asymmetric design—avoiding the active waterway and strengthening flood-defence safety. The public-art article adds how wind through the perforated plate powers lights that imitate fireflies in flight. |
+
+K07–K09 therefore add three sourced sentences. K08 uses
+`dorts-ankeng-k08-art`; K09 uses `dorts-ankeng-anxin-bridge` and
+`dorts-ankeng-k09-art`. Their full URLs are recorded in the implementation
+source and in the source table below.
 
 ## What is established
 

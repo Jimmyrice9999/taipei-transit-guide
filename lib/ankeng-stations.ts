@@ -337,6 +337,13 @@ const stationProse: Record<string, StationProseSentence[]> = {
   K02: [
     { text: 'DORTS describes the K02 artwork as a cluster whose flexible, biological curves suggest an alien organism; its rounded forms and multicolour surfaces also evoke Mambo-like movement and insect flight.', source: k02Art.id },
   ],
+  K08: [
+    { text: 'The K08 public-art pair uses insect imagery to cast the train as a lively, flying creature, while its ground-level mosaic counterpart adds flower-like colours, Japanese craft texture and a calm spatial layer.', source: k08Art.id },
+  ],
+  K09: [
+    { text: 'The builder says the asymmetric An-Xin Bridge was designed to avoid the active waterway and strengthen flood-defence safety while crossing the river between Xindian and Ankeng.', source: k09Bridge.id },
+    { text: 'At K09, DORTS says wind passing through the perforated plate powers tiny lights that imitate fireflies in flight between stations.', source: k09Art.id },
+  ],
 }
 
 export const ANKENG_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
