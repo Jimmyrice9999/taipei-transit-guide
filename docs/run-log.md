@@ -7620,3 +7620,32 @@ h2s with non-heading summary spans; summaries now contain real h2 elements.
 Verification: fresh build, `npm run a11y`, `npm run cite`, `npm run verify`, and
 `npm test` passed; the full test suite reports 185/185. No research or content
 files were changed.
+
+# Run 27 — Organization audit, Part 5, 17 August 2026
+
+Built a read-only link graph from all 513 fresh HTML pages and breadth-first
+walked it from `/`. All 281 user-facing pages are reachable within three
+clicks; no real content page is orphaned or requires URL typing.
+
+Incoming-link audit by page type:
+
+* Home: site wordmark, breadcrumbs, and fallback/error links.
+* Section indexes: homepage section cards, global section links, breadcrumbs,
+  and parent links.
+* Type indexes: homepage and section cards, global category index links, and
+  breadcrumb/parent links.
+* Rail network and station indexes: Rail cards, global direct/index links;
+  station pages additionally receive links from the station index, line maps,
+  `/data/stations`, adjacent-station navigation, and cross-references.
+* Content pages: type-index rows, section cards, line maps or cross-links,
+  with bus route pages also linked from both the route index and route group.
+* Bus route index/group: Bus cards and global navigation, then index-to-group
+  and group/index-to-route links. Data pages: the Data index, global Data
+  link, and relevant cross-links. About: footer and global site paths.
+
+Exceptions: `/404/` and `/_not-found/` are error documents, not navigation
+targets. The 231 `/train/` files are legacy redirect stubs with zero inbound
+links by design; linking to them would send users through obsolete URLs. No
+unambiguous reachability fix remained. `npm run verify` still reports those
+231 intentional URL-only stubs and no broken links. No research or content
+files were changed.
