@@ -241,6 +241,18 @@ construction method.
   conflict, so no separate body prose was added. URLs:
   https://www.dorts.gov.taipei/cp.aspx?n=71acc5b0cdffc313&s=C974A7C467B035B8
   https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html
+- **G18 Nanjing Sanmin:** The full architecture page 68 records the station’s
+  office-and-arcade surroundings and says commuting and school trips dominate,
+  with shopping and tourism secondary. Original evidence: `街面建築大多為12-19層之辦公大樓`
+  and `所以使用旅次以通勤、通學為主`. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page68.html
+- **G19 Songshan:** The full public-art page places the station under Bade Road
+  beside the north square of TRA Songshan station, near Raohe Street Night
+  Market, Ciyou Temple, Wufenpu and a riverside park. It records open-call
+  selection and connects the work to Songshan’s former name “Malisikou”, meaning
+  a bend in the river. Original evidence: `以公開徵件方式選出` and `麻里錫口（意指為「河流彎曲處」）`.
+  URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html
 
 ### Depot
 

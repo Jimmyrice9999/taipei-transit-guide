@@ -92,6 +92,15 @@ const dortsSongshanArchitecture = source(
   'The full engineering-journal pages publish station-specific levels, platform forms, exit counts, design themes and surrounding landmarks for the Songshan Line stations.',
 )
 
+const dortsSongshanG18Architecture = source(
+  'dorts-songshan-g18-architecture',
+  'Nanjing Sanmin station architectural design',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page68.html',
+  'The full architecture page records Nanjing Sanmin’s surrounding office-and-arcade context, travel pattern and “Community vestibule and city gateway” design rationale.',
+)
+
 const dortsArenaArt = source(
   'dorts-songshan-arena-public-art',
   'Songshan Line public art: Taipei Arena station',
@@ -107,7 +116,7 @@ const dortsSongshanArt = source(
   '捷運松山線公共藝術介紹',
   dortsPublisher,
   'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html',
-  'The full public-art article identifies 河流彎曲之處，域見繁花光穹, its artist and LED/crystal-glass medium; the article’s references identify a 2016 results album, not a work completion year.',
+  'The full public-art article identifies 河流彎曲之處，域見繁花光穹, its artist and LED/crystal-glass medium, open-call selection and Songshan site context; the article’s references identify a 2016 results album, not a work completion year.',
 )
 
 const trtcUrls: Record<string, string> = {
@@ -403,6 +412,9 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station’s design theme is “Community vestibule and city gateway” (社區玄關＆城市門戶), using a neighbourhood-entrance concept for the station’s urban setting.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    prose: [
+      { text: 'DORTS describes Nanjing Sanmin’s surroundings as orderly 12-to-19-storey office buildings with continuous arcades, where commuting and school trips predominate and shopping and tourism are secondary.', source: dortsSongshanG18Architecture.id },
+    ],
   },
   G19: {
     structure: 'underground', engineering: 'G22', exits: 5, openingDate: '15 November 2014',
@@ -414,6 +426,9 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station is a three-level underground interchange with the Taiwan Railways Songshan station, connected at the B1 mezzanine. Its design theme is “Festival of light” (光之慶典), responding to the district’s religious, commercial and transport activity.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    prose: [
+      { text: 'DORTS places Songshan station under Bade Road beside the north square of Taiwan Railways Songshan station, among Raohe Street Night Market, Ciyou Temple, Wufenpu and the riverside park; its public-art work was chosen by open call and draws on the old name “Malisikou”, meaning a bend in the river.', source: dortsSongshanArt.id },
+    ],
     interchange: { label: 'Taiwan Railways Administration Songshan station; transfer mode: TBC' },
   },
 }
@@ -434,6 +449,7 @@ function makeResearch(code: string, data: GData): StationResearch {
     dortsDepot,
     ...(data.publicArtSource ? [data.publicArtSource] : []),
     ...(data.namingSource ? [data.namingSource] : []),
+    ...(data.prose?.some((sentence) => sentence.source === dortsSongshanG18Architecture.id) ? [dortsSongshanG18Architecture] : []),
     ...(data.prose?.some((sentence) => sentence.source === dortsUndergroundConstruction.id) ? [dortsUndergroundConstruction] : []),
     engineeringSource,
   ].filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
