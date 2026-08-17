@@ -5,7 +5,7 @@
 
 # Brown-line feeder routes — research
 
-**Run date: 15 August 2026.** This report covers the 20 records in the merged
+**Run date: 17 August 2026.** This report covers the 20 records in the merged
 TDX snapshot classified `colour-brown`. No images were fetched.
 
 ## What is established
@@ -96,6 +96,115 @@ record named `棕7綠野香坡` with route code BR7G. Both values are retained.
   official page read.
 - **Original-language text read:** `原〖812〗路線自115年6月30日起，縮駛至「捷運橫溪站」並調整路線番號為〖三鶯2線〗`.
 
+## Batch 1 — 棕1, 棕2, 棕3 and 棕5, checked 17 August 2026
+
+This batch checked the four route pages against full official pages. Current
+route identity and service details are published where the pages provide them;
+opening history, original corridor decisions and dated operator changes remain
+TBC unless a primary source states them.
+
+### 棕1 / BR1
+
+The full Taipei bus schedule page gives the current corridor as
+`松山車站 - 松山機場`, weekday service `0540 - 2100`, holiday suspension,
+one-section fare and `首都客運內湖站` as the operator contact.
+
+- **Source:** “BR1 route schedule” / `titleOriginal`: `棕1班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000100
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 松山車站 - 松山機場`;
+  `頭末班車 : [平日] 0540 - 2100 / [假日] 停駛`;
+  `業者服務電話 : 首都客運內湖站`.
+
+The Taipei Department of Transportation’s full 2009 announcement says Minibus
+10 was introduced on 3 August 2009 because 棕1 had been shortened, to serve
+short trips for residents near 麥帥新城 and 新明路 to 三軍總醫院、內湖行政中心、
+三民國中 and 潭美國小. It establishes the shortening before that announcement,
+but not the earlier 棕1 termini or the decision date.
+
+- **Source:** “Minibus 10 scheduled to start service in Neihu” /
+  `titleOriginal`: `市民小巴10路公車訂於98年8月3日通車營運，提供內湖地區市民便捷之大眾運輸服務`
+- **Publisher:** Taipei City Department of Transportation /
+  `臺北市政府交通局`
+- **URL:** https://dot.gov.taipei/News_Content.aspx?n=230A79C0F27D6B8F&s=4232D242EAA4B05A
+- **Kind/confidence:** PRIMARY; High — full official announcement read.
+- **Original-language text read:** `本路線係為配合棕1路公車路線縮短後，提供麥帥新城、
+  新明路一帶居民前往三軍總醫院、內湖行政中心、三民國中及潭美國小等地區短程接駁之用`.
+
+### 棕2 / BR2
+
+The full official route-schedule page gives `萬芳社區 - 景美女中`, weekday and
+holiday service `0540 - 0000`, one-section fare and `欣欣客運木柵二站` as the
+operator contact. It does not establish the opening date, a former alignment,
+the original corridor rationale or a dated operator transfer.
+
+- **Source:** “BR2 route schedule” / `titleOriginal`: `棕2班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000200
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 萬芳社區 - 景美女中`;
+  `頭末班車 : [平日] 0540 - 0000 / [假日] 0540 - 0000`;
+  `業者服務電話 : 欣欣客運木柵二站`.
+
+### 棕3 / BR3
+
+The full official route-information page gives `富德 - 萬美社區`, weekday and
+holiday service `0545 - 2300`, one-section fare and `欣欣客運富德站` as the
+operator contact. Its note describes a current special-event headway adjustment
+for the 貓空 area; it does not establish the opening date, former alignment,
+original corridor rationale or a dated operator transfer.
+
+- **Source:** “BR3 route information” / `titleOriginal`: `棕3路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000300
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `起迄站名 : 富德 - 萬美社區`;
+  `頭末班車 : [平日] 0545 - 2300 / [假日] 0545 - 2300`;
+  `業者服務電話 : 欣欣客運富德站` and the current 貓空 special-event headway note.
+
+### 棕5 / BR5
+
+The full official route-information page gives `萬芳社區 - 指南宮`, with three
+weekday trips detouring via `指南實小`, no holiday service for that detour, and
+`東南客運萬芳站` as the operator contact. A full Taipei PTO PDF
+records two 2012 operating-plan changes: `萬寧街一` was renamed `萬寧山莊`,
+effective 1 March 2012, and `政大附中` was added to the return trip, effective
+14 March 2012.
+
+- **Source:** “BR5 route information” / `titleOriginal`: `棕5路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000500
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `起迄站名 : 萬芳社區 - 指南宮`;
+  the three weekday `指南實小` trips; and `業者服務電話 : 東南客運萬芳站`.
+
+- **Source:** “March 2012 approved bus operating-plan adjustments” /
+  `titleOriginal`: `101年3月份核定營運計畫調整`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf
+- **Kind/confidence:** PRIMARY; High — full official PDF read.
+- **Original-language text read:** `棕5路 萬寧街一站更名為萬寧山莊，自101年3月1日起實施`;
+  `棕5路返程增停政大附中，自101年3月14日起實施`.
+
+### What remains TBC
+
+- **棕1:** the fact and approximate timing of a shortening before 2009 are
+  established; the former termini, shortening decision and operator history are
+  TBC.
+- **棕2:** opening date, former alignment, original corridor rationale and dated
+  operator changes are TBC.
+- **棕3:** opening date, former alignment, original corridor rationale and dated
+  operator changes are TBC; the special-event note is current operational
+  information, not a dated branch history.
+- **棕5:** opening date, earlier alignment, original corridor rationale and dated
+  operator changes are TBC; only the two 2012 stop adjustments are established.
+
 ## Negative case — brown wording was tested explicitly
 
 All 20 records were checked by Chinese and English route name, then against the
@@ -151,7 +260,8 @@ NWT197324, NWT199762 and NWT199764 新店站.
 
 ## Checked and failed
 
-- **Dated route-history, corridor-rationale and operator-change records for 16 pilot routes** — The full official catalogue and available full route pages did not establish these records for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; the route pages keep those fields TBC instead of inferring them from current stops or operators. Checked 2026-08-15.
+- **A complete 2024 棕2 route-change record** — The search result identified a PTO PDF lead, but the full PDF fetch failed with a cache miss; no claim was published from the snippet. Checked 17 August 2026.
+- **Dated route-history, corridor-rationale and operator-change records for the 16 pilot routes** — The batch-1 check found a partial pre-2009 shortening record for 棕1 and two 2012 stop adjustments for 棕5. It did not establish the remaining opening histories, original corridor decisions or dated operator changes for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; those fields remain TBC rather than being inferred from current stops or operators. Checked 17 August 2026.
 
 ## Stated gaps
 

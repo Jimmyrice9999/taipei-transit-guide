@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 1080,
+    "sourced": 1082,
     "tbc": 117,
     "asserted": 32,
     "meta": 42
@@ -98,8 +98,8 @@
     },
     {
       "file": "content/bus/routes/colour-brown/brown-1.md",
-      "sources": 2,
-      "sourced": 1,
+      "sources": 4,
+      "sourced": 2,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -170,7 +170,7 @@
     },
     {
       "file": "content/bus/routes/colour-brown/brown-2.md",
-      "sources": 2,
+      "sources": 3,
       "sourced": 1,
       "tbc": 4,
       "asserted": 0,
@@ -210,7 +210,7 @@
     },
     {
       "file": "content/bus/routes/colour-brown/brown-3.md",
-      "sources": 2,
+      "sources": 3,
       "sourced": 1,
       "tbc": 4,
       "asserted": 0,
@@ -218,8 +218,8 @@
     },
     {
       "file": "content/bus/routes/colour-brown/brown-5.md",
-      "sources": 2,
-      "sourced": 1,
+      "sources": 4,
+      "sourced": 2,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
