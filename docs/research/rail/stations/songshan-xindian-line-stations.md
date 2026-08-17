@@ -168,6 +168,40 @@ No title, artist, medium and year combination was established from the checked
 official public-art pages for the other G stations, so their public-art rows
 remain TBC. That is not a claim that they have no public art.
 
+### Station-prose audit — 17 August 2026
+
+The full DORTS station-planning page and underground-construction page were
+fetched again before editing. They are PRIMARY, High confidence: the builder’s
+own engineering books identify the named shallow-cut examples and the
+construction method.
+
+- **G02 Xindian District Office:** DORTS’s planning manual names the station
+  as a shallow-cut example. Its construction manual places the New Store Line’s
+  underground stations in open-cut-and-cover work using long box structures and
+  slab-wall systems. Original evidence: `例如松山新店線的七張站、新店區公所站...` and
+  `新店線...皆採地下段之方式布設，以明挖覆蓋工法施作，地下車站皆屬地下長條狀箱型明挖覆蓋結構`. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+  and https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html
+- **G03 Qizhang:** The same full primary pages name Qizhang as a shallow-cut
+  example and give the same New Store Line construction context. Original
+  evidence: the planning page’s `七張站` example and the construction page’s
+  `新店線...以明挖覆蓋工法施作` sentence. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+  and https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html
+- **G01 Xindian, G03A Xiaobitan, G04 Dapinglin and G05 Jingmei:** The full
+  DORTS New Store route page and the full TRTC pages for all four stations were
+  checked. They supplied route chronology, branch/guideway or current station
+  fields already represented in the facts and specs, but no additional
+  station-specific siting, prior-site, exit-decision, naming, incident or local
+  context suitable for body prose. These four pages correctly remain empty;
+  this is a search result, not a claim that no such history exists. Route URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94
+  TRTC URLs:
+  https://web.metro.taipei/pages2026/WebStation/033/1,
+  https://web.metro.taipei/pages2026/WebStation/032/1,
+  https://web.metro.taipei/pages2026/WebStation/036/1,
+  https://web.metro.taipei/pages2026/WebStation/037/1
+
 ### Depot
 
 **Source:** “Taipei MRT depot planning summary” / `臺北捷運機廠規劃營運及建設中機廠彙整表` — DORTS, PRIMARY, High confidence.

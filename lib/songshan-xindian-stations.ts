@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -187,6 +187,7 @@ type GData = {
   engineeringHistory: string
   engineeringHistorySource?: Source
   interchange?: { label: string; lineCode?: string }
+  prose?: StationProseSentence[]
 }
 
 const tbc = 'TBC'
@@ -212,6 +213,10 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'DORTS identifies Xindian District Office as a shallow-cut station. The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
     engineeringHistorySource: dortsStationPlanning,
+    prose: [
+      { text: 'DORTS’s planning manual names Xindian District Office as a shallow-cut example.', source: dortsStationPlanning.id },
+      { text: 'Its construction manual places the New Store Line’s underground stations in open-cut-and-cover work using long box structures and slab-wall systems.', source: dortsUndergroundConstruction.id },
+    ],
   },
   G03: {
     structure: 'underground', engineering: 'G03', exits: 2, openingDate: '11 November 1999',
@@ -223,6 +228,10 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'DORTS identifies Qizhang as a shallow-cut station. The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
     engineeringHistorySource: dortsStationPlanning,
+    prose: [
+      { text: 'DORTS’s planning manual names Qizhang as a shallow-cut example.', source: dortsStationPlanning.id },
+      { text: 'Its construction manual places the New Store Line’s underground stations in open-cut-and-cover work using long box structures and slab-wall systems.', source: dortsUndergroundConstruction.id },
+    ],
   },
   G03A: {
     structure: 'elevated', engineering: 'G01A', exits: 2, openingDate: '29 September 2004',
@@ -416,6 +425,7 @@ function makeResearch(code: string, data: GData): StationResearch {
     dortsDepot,
     ...(data.publicArtSource ? [data.publicArtSource] : []),
     ...(data.namingSource ? [data.namingSource] : []),
+    ...(data.prose?.some((sentence) => sentence.source === dortsUndergroundConstruction.id) ? [dortsUndergroundConstruction] : []),
     engineeringSource,
   ].filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
 
@@ -450,6 +460,6 @@ function makeResearch(code: string, data: GData): StationResearch {
 export const SONGSHAN_XINDIAN_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(gData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources }]
+    return [code, { structure: data.structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, prose: data.prose ?? [] }]
   }),
 ) as Record<string, StationOverlay>
