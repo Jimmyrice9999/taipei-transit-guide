@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -13,6 +13,7 @@ function source(
   publisher: string,
   url: string,
   note: string,
+  sourceAccessed = accessed,
 ): Source {
   return {
     id,
@@ -20,7 +21,7 @@ function source(
     titleOriginal,
     publisher,
     url,
-    accessed,
+    accessed: sourceAccessed,
     snapshot: '',
     snapshotAlt: '',
     kind: 'primary',
@@ -139,8 +140,9 @@ const art = {
     'Xinyi Anhe station public art',
     '水城臺北',
     dortsPublisher,
-    'https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=D058D336AA77862',
-    'The official public-art page identifies 水城臺北 by 吳耿禎, its laminated tempered-glass medium and concourse location; it does not publish a completion year.',
+    'https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=D058D336AA77862B',
+    'The current official public-art page identifies 水城臺北 by 吳耿禎, its laminated tempered-glass medium and concourse location; it does not publish a completion year. The earlier URL without the final B returned 404 when checked on 17 August 2026.',
+    '2026-08-17',
   ),
   taipei101: source(
     'dorts-art-taipei-101',
@@ -148,7 +150,7 @@ const art = {
     '相遇時刻',
     dortsPublisher,
     'https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=BB2C701F4B7EA04A',
-    'The official public-art page identifies 相遇時刻 by 黃心健, its interactive materials, location and 28 June 2013 completion date.',
+    'The official public-art page identifies 相遇時刻 by 黃心健, its interactive materials, location and 28 June 2013 completion date; it also records the invited-competition selection and NT$12,000,000 cost.',
   ),
   xiangshan: source(
     'dorts-art-xiangshan',
@@ -251,6 +253,7 @@ type RData = {
   engineeringHistorySource?: Source
   interchange?: { label: string; lineCode?: string }
   branch?: { label: string; source: Source }
+  prose?: StationProseSentence[]
 }
 
 const underground = (platformDetails = 'Underground station; platform form and track count: TBC.') => platformDetails
@@ -266,6 +269,9 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 1 and 2, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift; parent/accessible toilet and baby changing at the same location; bicycle access open; enquiry point near exits 1 and 2.',
     landmarks: '象山公園; 信義快速道路', publicArt: '心蛙朵朵開 — 江洋輝、麻粒國際文化試驗股份有限公司; stainless steel and epoxy resin; 2013.', publicArtSource: art.xiangshan,
     engineeringHistory: tbc, interchange: undefined,
+    prose: [
+      { text: 'DORTS describes Xiangshan’s work as a tree-frog and childhood-memory composition that represents the richness of the local natural environment and invites visitors to experience its distinctive ecology.', source: art.xiangshan.id },
+    ],
   },
   R03: {
     structure: 'underground', exits: 5, openingDate: '24 November 2013', openingSource: dortsXinyi, structureSource: dortsXinyi,
@@ -274,6 +280,10 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 3 and 5, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift and unpaid toilets near exit 4/Taipei 101 passage; nursing room near exits 4 and 5; baby changing; bicycle access open; enquiry point near exits 3–5.',
     landmarks: '台北101; 世貿一館', publicArt: '相遇時刻 — 黃心健; interactive mechanical, computer, sensor, network, glass and stainless-steel work; 2013.', publicArtSource: art.taipei101,
     engineeringHistory: tbc,
+    prose: [
+      { text: 'The Taipei 101 station record describes a 100-metre entrance passage where twelve book-like, kinetic flip-card installations use interaction to connect two imagined futures.', source: art.taipei101.id },
+      { text: 'DORTS records the work as the result of an invited competition with a cost of NT$12 million.', source: art.taipei101.id },
+    ],
   },
   R04: {
     structure: 'underground', exits: 6, openingDate: '24 November 2013', openingSource: dortsXinyi, structureSource: dortsXinyi,
@@ -282,6 +292,9 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 2A and 5, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift; parent/accessible toilet and baby changing at that location; bicycle access open; enquiry point near exits 3–5.',
     landmarks: '安和路派出所', publicArt: '水城臺北 — 吳耿禎; laminated tempered glass; year TBC.', publicArtSource: art.xinyiAnhe,
     engineeringHistory: tbc,
+    prose: [
+      { text: 'For Xinyi Anhe, the artwork treats the paid/unpaid concourse barrier as a meeting point between old Taipei waterways and a future city of plants, streets and imagined planets.', source: art.xinyiAnhe.id },
+    ],
   },
   R05: {
     structure: 'underground', exits: 6, openingDate: '24 November 2013', openingSource: dortsXinyi, structureSource: dortsXinyi,
@@ -290,6 +303,9 @@ const rData: Record<string, RData> = {
     facilities: 'R accessible lift: exit 3 and a paid-concourse platform lift; toilets in the paid zone by exit 3 and transfer connection; parent/accessible toilet at the same location; nursing room in the paid B1 area; baby changing; bicycle access not open; enquiry point near R exits 1–3.',
     landmarks: '台北農會信義大樓; 師大附中', publicArt: '飛天傳奇 — 賴純純; ceramic panels, stainless steel and acrylic glass; year TBC.', publicArtSource: art.daan,
     engineeringHistory: tbc, interchange: { label: 'Bannan Line; transfer mode: TBC', lineCode: 'BR' },
+    prose: [
+      { text: 'The Daan station artwork is presented as a poetic journey through mountains, water and the city, moving from morning to night through light, sound, love and imagined space.', source: art.daan.id },
+    ],
   },
   R06: {
     structure: 'underground', exits: 6, openingDate: '24 November 2013', openingSource: dortsXinyi, structureSource: dortsXinyi,
@@ -298,6 +314,9 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 4–6 and a paid-concourse platform lift; unpaid toilets near exits 3 and 5; parent/accessible toilet at the same locations; nursing room near exit 3; baby changing; bicycle access open; enquiry point near exits 4–6.',
     landmarks: '大安森林公園; 產業發展署', publicArt: '大安之花 — Pete Beeman; stainless steel, powder-coated iron and aluminium; year TBC. 秋葉旅人 — Yvan Mauger; stainless steel, forged copper and aluminium; year TBC. 春光乍現 — 林舜龍; cast aluminium, copper, stainless steel, glass mosaic and stone mosaic; year TBC. 四季 — 柴清文; cypress and stone paint; year TBC.', publicArtSource: art.daanPark,
     engineeringHistory: tbc,
+    prose: [
+      { text: 'At Daan Park, the interactive Daan Flower uses Taipei’s azalea as its subject and asks the observer to awaken the flower, making the station’s park setting part of the work’s conversation between people and nature.', source: art.daanPark.id },
+    ],
   },
   R07: {
     structure: 'underground', exits: 8, openingDate: '24 November 2013', openingSource: dortsXinyi, structureSource: dortsXinyi,
@@ -519,6 +538,6 @@ function makeResearch(code: string, data: RData): StationResearch {
 export const TAMSUI_XINYI_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(rData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, exits: data.exits, research, sources: research.sources }]
+    return [code, { structure: data.structure, exits: data.exits, research, sources: research.sources, prose: data.prose ?? [] }]
   }),
 ) as Record<string, StationOverlay>

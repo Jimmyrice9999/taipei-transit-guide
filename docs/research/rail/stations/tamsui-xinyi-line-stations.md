@@ -144,7 +144,7 @@ confidence because the builder publishes the title, artist and medium itself:
 |---|---|---|---|
 | R02 Xiangshan | *心蛙朵朵開* — 江洋輝、麻粒國際文化試驗股份有限公司; stainless steel and epoxy resin; 2013 | `作品名稱`, `作者`, `材質`, `完成日期` and `作品位置` fields | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=E09DC8AE77E47420 |
 | R03 Taipei 101 | *相遇時刻* — 黃心健; interactive mechanical/computer/sensor/network, glass and stainless steel; 2013 | same official fields | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=BB2C701F4B7EA04A |
-| R04 Xinyi Anhe | *水城臺北* — 吳耿禎; laminated tempered glass; year TBC | same official fields; no year published | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=D058D336AA77862 |
+| R04 Xinyi Anhe | *水城臺北* — 吳耿禎; laminated tempered glass; year TBC | same official fields; no year published | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=D058D336AA77862B |
 | R05 Daan | *飛天傳奇* — 賴純純; ceramic panels, stainless steel and acrylic glass; year TBC | same official fields; no year published | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C09624CB5C9D59D4 |
 | R06 Daan Park | *大安之花*, *秋葉旅人*, *春光乍現*, *四季*; artists and materials as published; years TBC | same official fields; no years published | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=36B82FCFF7957990 |
 | R09 NTU Hospital | *手之組曲* — 李光裕; copper and granite; November 1998 | same official fields | https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C32B3BEE19B6BC1F |
@@ -153,6 +153,52 @@ confidence because the builder publishes the title, artist and medium itself:
 No official station-specific public-art entry was found in the checked DORTS
 material for R07, R08, R10, R11, R13–R28. Those pages therefore show TBC. A
 missing entry is not treated as proof that a station has no art.
+
+### Station-prose audit — 17 August 2026
+
+The following prose was added only where a full primary page supplied context
+that is not already in the generated facts and specs. Each source is a DORTS
+public-art record, PRIMARY, High confidence: the builder publishes the work’s
+description and metadata on the station-specific page.
+
+- **R02 Xiangshan:** The full record starts from tree frogs and childhood
+  memories, represents the richness of the local natural environment, and
+  invites visitors to experience its distinctive ecology. Original evidence:
+  `藝術家由樹蛙、童夢記憶出發，以綻放愉悅的造型姿態，表現出本地自然環境的豐碩與美好。` and
+  `在自然輕快的童趣色彩氛圍裡，體驗本地生態的獨特性。` URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=E09DC8AE77E47420
+- **R03 Taipei 101/World Trade Center:** The record describes a 100-metre
+  entrance passage with twelve interactive, book-like flip-card installations
+  that connect two imagined futures; it also records an invited competition and
+  NT$12,000,000 cost. Original evidence: `作品位置：穿堂層入口通道牆面及天花板` and
+  `徵選方式：邀請比件`; the description begins `一百公尺長的通道`. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=BB2C701F4B7EA04A
+- **R04 Xinyi Anhe:** The record describes the work as a dialogue between old
+  and new time, using Taipei’s former waterways and a future collage of plants,
+  city corners and planets. Original evidence: `「新舊時光的對話」` and
+  `臺北盆地原來多河流溝渠`. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=D058D336AA77862B
+- **R05 Daan:** The record presents the work as a poetic passage through
+  mountains, water and the city, from morning to night, with light, sound, love
+  and imagined space. Original evidence: `飛天穿越山林 水涯來到都會` and
+  `從清晨到黃昏 到夜裡 神祕的夢境`. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C09624CB5C9D59D4
+- **R06 Daan Park:** The record says the interactive Daan Flower uses Taipei’s
+  city flower, the azalea, and asks visitors to awaken it, establishing a direct
+  connection between people and nature. Original evidence: `藝術家運用臺北市花－杜鵑花創作`
+  and `這是一朵需要由觀者喚醒的花朵`. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=36B82FCFF7957990
+- **R07 Dongmen:** Full DORTS route and Xinyi-extension pages, the DORTS
+  public-art index, and the full TRTC R07 station page were checked. They
+  supplied current structured station information but no station-specific
+  architecture, public-art description or incident/history suitable for body
+  prose, so the page correctly remains empty. This is a search result, not a
+  claim that R07 has no artwork. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768
+  and https://www.dorts.gov.taipei/cp.aspx?n=0ac527d5fc9e596a&s=CB7BC86DBDA1E44D
+
+All five non-empty station entries use the source id for their DORTS art page;
+R07 has no prose source id because no prose claim was published.
 
 ### Engineering and landmarks
 
@@ -215,6 +261,12 @@ field-coverage differences, not competing values.
   DORTS public-art material for R07, R08, R10, R11, R13–R28. This records a
   failed search, not an assertion that those stations have no artwork. Checked
   14 August 2026.
+- **R04 Xinyi Anhe public-art URL** — The earlier corpus URL ending in
+  `D058D336AA77862` returned HTTP 404 on a full fetch. The current DORTS public-
+  art index links `D058D336AA77862B`, whose full page returned HTTP 200 and
+  contains the work record. The source URL in the station overlay and table was
+  corrected to the current link; the failed URL remains recorded here. Checked
+  17 August 2026.
 - **Incoming report(5) bundle: five Tamsui–Xinyi lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its corridor, Zhongyi history, exit-count example, Shuanglian artwork and construction-memorial claims were not independently fetched or carried forward. Checked 17 August 2026.
 - **Incoming report(5) reference `[14]`** — the lead names a TRTC station-information page but supplies only a numeric placeholder, so the alleged dynamic-page failure cannot be reproduced or verified. Checked 17 August 2026.
 - **Incoming report(5) reference `[25]`** — the lead names a Tamsui historical-data site but supplies only a numeric placeholder, so the alleged access denial cannot be reproduced or verified. Checked 17 August 2026.
