@@ -8,6 +8,29 @@ generated station registry. Unpublished fields remain TBC.
 
 ---
 
+## Station-prose audit: LB01–LB06
+
+The following full primary pages were fetched and read on 17 August 2026: the
+NTMC Sanying station table and opening announcement, the DORTS Sanying station
+table, the DORTS line-wide public-art announcement, the DORTS LB01 public-art
+article, and the DORTS LB06 station-design article. The MOTC inspection notice
+already checked for this station corpus was also used for the elevated-system
+fact. No image or linked station sheet was fetched during this audit.
+
+| Station | Result | What the full pages established or failed to add |
+|---|---|---|
+| LB01 | 1 sentence | The DORTS LB01 art article adds the interchange passage’s lighting and mosaic-panel concept, linked to train information and described as a flowing river of light; the facts box contains no public-art prose. |
+| LB02 | 1 sentence | The DORTS public-art announcement identifies LB02 as part of the “Time Journey” work spanning LB02–LB05 and the network’s mobile-museum concept; no additional station siting, prior-site history, exit decision, naming, incident, or construction detail was found. |
+| LB03 | 1 sentence | The DORTS public-art announcement identifies LB03 as part of the “Time Journey” work spanning LB02–LB05 and the network’s mobile-museum concept; no additional station siting, prior-site history, exit decision, naming, incident, or construction detail was found beyond the existing rename record. |
+| LB04 | 1 sentence | The DORTS public-art announcement identifies LB04 as part of the “Time Journey” work spanning LB02–LB05 and the network’s mobile-museum concept; no additional station siting, prior-site history, exit decision, naming, incident, or construction detail was found. |
+| LB05 | 1 sentence | The DORTS public-art announcement identifies LB05 as part of the “Time Journey” work spanning LB02–LB05 and the network’s mobile-museum concept; no additional station siting, prior-site history, exit decision, naming, incident, or construction detail was found beyond the existing appended-name record. |
+| LB06 | 2 sentences | The DORTS announcement identifies “Footprints · Building Footprints” as the station work. A separate full DORTS design article explains the expanded-metal platform skin, ventilation strategy and reduced structural weight; no additional siting, prior-site history, exit decision, naming, or incident detail was found. |
+
+LB01–LB06 therefore add seven sourced sentences. The operator’s current table,
+opening announcement and builder station table were read for each station’s
+existing facts and yielded no additional body prose beyond the items recorded
+above.
+
 # Sanying Line stations (LB01–LB12)
 
 ## What is established

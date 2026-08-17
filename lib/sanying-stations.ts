@@ -10,7 +10,7 @@
  */
 
 import type { Source } from './sources.ts'
-import type { Structure } from './station-overlay.ts'
+import type { StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationInterchange, StationResearch } from './station-research.ts'
 
 export type SanyingResearch = StationResearch
@@ -36,10 +36,12 @@ type SanyingStation = {
   exits: number
   planned: []
   recordSource: 'primary-research'
+  prose?: StationProseSentence[]
   research: SanyingResearch
 }
 
 const accessed = '2026-08-14'
+const proseAccessed = '2026-08-17'
 const ntmetroPublisher = 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)'
 
 const stationList: Source = {
@@ -176,6 +178,79 @@ const namingGazette: Source = {
   note: 'The 9 June 2020 notice changes LB03 from 挖子 to 長壽山 and appends 三峽廣行宮 to LB05.',
 }
 
+const lb01Art: Source = {
+  id: 'dorts-sanying-lb01-art',
+  title: 'Sanying Line public art: A Beautiful Journey',
+  titleOriginal: '一路有藝思：三鶯線公共藝術規劃構想',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpD9odLK7',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The builder’s full public-art article describes LB01’s lighting performance and mosaic ceramic-panel works in the Bannan–Sanying interchange passage, including their linkage to train information and the flowing-light-river concept.',
+}
+
+const linePublicArt: Source = {
+  id: 'dorts-sanying-public-art-announcement',
+  title: 'Sanying Line public art announcement',
+  titleOriginal: '捷運三鶯線打造行動美術館「有趣」首亮相',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The builder’s full announcement lists the station-specific public-art titles for LB02–LB05 and LB06, and describes the line-wide mobile-museum concept.',
+}
+
+const lb06Architecture: Source = {
+  id: 'dorts-sanying-lb06-architecture',
+  title: 'Breathable expanded-metal station skin at Sanxia station',
+  titleOriginal: '穿洞洞裝的車站？',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZDn3X2JEw?page=202',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The builder’s full station-design article explains LB06’s expanded-metal platform skin, ventilation openings, reduced material weight and the use of heat buoyancy and train movement to exhaust air.',
+}
+
+const stationProse: Record<string, StationProseSentence[]> = {
+  LB01: [
+    { text: 'At LB01, DORTS presents A Beautiful Journey as an interchange walk: wall lighting and mosaic ceramic panels linked to train information turn the passage into a flowing river of light.', source: lb01Art.id },
+  ],
+  LB02: [
+    { text: 'DORTS groups LB02’s art within the line’s “Time Journey” work, one chapter in the network’s mobile museum linking stations through a shared visual story.', source: linePublicArt.id },
+  ],
+  LB03: [
+    { text: 'DORTS groups LB03’s art within the line’s “Time Journey” work, one chapter in the network’s mobile museum linking stations through a shared visual story.', source: linePublicArt.id },
+  ],
+  LB04: [
+    { text: 'DORTS groups LB04’s art within the line’s “Time Journey” work, one chapter in the network’s mobile museum linking stations through a shared visual story.', source: linePublicArt.id },
+  ],
+  LB05: [
+    { text: 'DORTS groups LB05’s art within the line’s “Time Journey” work, one chapter in the network’s mobile museum linking stations through a shared visual story.', source: linePublicArt.id },
+  ],
+  LB06: [
+    { text: 'DORTS lists “Footprints · Building Footprints” as LB06’s public-art work.', source: linePublicArt.id },
+    { text: 'DORTS also describes the platform’s expanded-metal skin as breathable: perforations ventilate the station and reduce structural weight, while clerestory openings use heat buoyancy and train movement to exhaust hot air.', source: lb06Architecture.id },
+  ],
+}
+
+const stationProseSources: Record<string, Source[]> = {
+  LB01: [lb01Art],
+  LB02: [linePublicArt],
+  LB03: [linePublicArt],
+  LB04: [linePublicArt],
+  LB05: [linePublicArt],
+  LB06: [linePublicArt, lb06Architecture],
+}
+
 function mapSource(code: string, name: string, nameZh: string, url: string): Source {
   return {
     id: `ntmetro-${code.toLowerCase()}-map`,
@@ -223,7 +298,7 @@ const rows: Row[] = [
 
 export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
   const map = mapSource(row.code, row.name, row.nameZh, row.mapUrl)
-  const sources = [stationList, map, opening, motcInspection, augustHours, laterAugustHours]
+  const sources = [stationList, map, opening, motcInspection, augustHours, laterAugustHours, ...(stationProseSources[row.code] ?? [])]
   const coordinates = ntpcLandmarkWgs84[row.code]
   if (coordinates) sources.push(ntpcLandmarkCoordinates)
   if (row.additionalNameSource === 'route') sources.push(dortsRoute)
@@ -250,6 +325,7 @@ export const SANYING_STATIONS: SanyingStation[] = rows.map((row, index) => {
     exits: row.exits,
     planned: [],
     recordSource: 'primary-research',
+    prose: stationProse[row.code] ?? [],
     research: {
       sources,
       identitySource: stationList.id,
