@@ -207,6 +207,9 @@ const stationProse: Record<string, StationProseSentence[]> = {
   BL07: [
     { text: 'DORTS presents the work’s linked coloured rings as both Greater Taipei’s completed transport connections and a way to give ordinary platform columns new meaning through interaction.', source: art.bl07.id },
   ],
+  BL18: [
+    { text: 'DORTS presents the five-part work as a growth sequence: ploughing and sowing, emergence, sprouting, youthful movement and mature fulfilment.', source: art.bl18.id },
+  ],
 }
 
 function makeResearch(code: string, data: BLData): StationResearch {
