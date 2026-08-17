@@ -215,6 +215,10 @@ field-coverage differences, not competing values.
   DORTS public-art material for R07, R08, R10, R11, R13–R28. This records a
   failed search, not an assertion that those stations have no artwork. Checked
   14 August 2026.
+- **Incoming report(5) bundle: five Tamsui–Xinyi lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its corridor, Zhongyi history, exit-count example, Shuanglian artwork and construction-memorial claims were not independently fetched or carried forward. Checked 17 August 2026.
+- **Incoming report(5) reference `[14]`** — the lead names a TRTC station-information page but supplies only a numeric placeholder, so the alleged dynamic-page failure cannot be reproduced or verified. Checked 17 August 2026.
+- **Incoming report(5) reference `[25]`** — the lead names a Tamsui historical-data site but supplies only a numeric placeholder, so the alleged access denial cannot be reproduced or verified. Checked 17 August 2026.
+- **Incoming report(5) assertion that all cited URLs were opened** — inspection found zero URL strings, so the assertion is unsupported and is not a verification result. Checked 17 August 2026.
 
 ## Stated gaps
 
@@ -224,3 +228,16 @@ primary pages do not publish them. A city gazette or operator announcement
 would settle the naming gap; a station-level signalling/platform plan would
 settle the remaining track-layout gaps; an operator operations or maintenance
 record would settle the roster assignment.
+
+---
+
+## Unverified incoming lead appendix — `deep-research-report(5).md`
+
+> This appendix preserves an external lead only. It is explicitly unverified,
+> and none of its claims is evidence or a replacement for the existing
+> primary-source records above.
+
+The report leads concern the old TRA Tamsui corridor, Zhongyi’s TRA and MRT
+history, one Zhongshan exit count, Shuanglian public art, and a memorial for
+construction deaths. It names DORTS, TRTC and a Taipei City Government source,
+but supplies no URL; `[14]` and `[25]` are unresolved placeholders.

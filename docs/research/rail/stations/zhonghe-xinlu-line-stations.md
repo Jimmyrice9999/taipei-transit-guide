@@ -238,6 +238,10 @@ history is therefore TBC rather than inferred from engineering numbers.
   O01 and a partially described O12 set, but not a complete title, artist, year
   and medium record for the other stations. Their rows remain TBC; this is not
   an assertion that no work exists. Checked 14 August 2026.
+- **Incoming report(4) Nanshijiao opening year of 1987** — Direct DORTS primary material at `https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404` says `中和線於87年11月6日初勘、87年12月8日履勘、於87年12月24日通車營運`, i.e. 24 December 1998, and lists O01 南勢角 in the station table. The incoming 1987 value is contradicted; its source URL is absent, so its intended measurement cannot be determined. Checked 17 August 2026.
+- **Incoming report(4) bundle: 26 station lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its exit counts, former-TRA-site claim, romanisation claim and transfer descriptions were not independently fetched or carried forward. Checked 17 August 2026.
+- **Incoming report(4) public-art lead** — the file points to an unidentifiable `[50]` placeholder rather than a URL; its Nanshijiao artwork details cannot be checked from the lead. Checked 17 August 2026.
+- **Incoming report(4) assertion that all cited URLs were opened** — inspection found zero URL strings, so the assertion is unsupported and is not a verification result. Checked 17 August 2026.
 
 ## Stated gaps
 
@@ -246,3 +250,16 @@ classification, individual train-roster depot assignment, or platform and
 track counts where the primary pages do not publish them. City gazettes,
 operator rename announcements, a station equipment inventory and a depot
 roster would settle those gaps.
+
+---
+
+## Unverified incoming lead appendix — `deep-research-report(4).md`
+
+> This appendix preserves an external lead only. It is explicitly unverified,
+> and none of its claims is evidence or a replacement for the existing
+> primary-source records above.
+
+The report leads concern O01–O21 and O50–O54 exit counts, Nanshijiao’s former
+TRA-site and public-art history, the 2003 romanisation change, and the absence
+of station-specific construction or naming records. It names DORTS and
+Wikipedia and refers to `[50]`, but supplies no URL or source bibliography.

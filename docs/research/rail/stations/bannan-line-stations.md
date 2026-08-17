@@ -209,8 +209,10 @@ match.
   Checked 14 August 2026.
 - **BL23 second public-art record** — the page names a second work, 快或慢, by 三浦光一, but the fetched page
   text did not expose its complete date, medium and placement. Only the
-  complete 我們的私房公共藝術 record is asserted.
-  Checked 14 August 2026.
+  complete 我們的私房公共藝術 record is asserted. Checked 14 August 2026.
+- **Incoming report(3) bundle: 23 station/art/flood lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its exit counts, station-name interpretation, public-art examples and Typhoon Nari figures were not independently fetched or carried forward. Checked 17 August 2026.
+- **Incoming report(3) BL04 naming inference** — `海山/(新北高工)` was treated by the lead as proof of a completed rename, but no dated official announcement or URL was supplied. The slash notation alone does not establish the chronology. Checked 17 August 2026.
+- **Incoming report(3) assertion that all information was consistent** — the file contains zero URL strings, so the claimed cross-source consistency cannot be audited. Checked 17 August 2026.
 
 ## Stated gaps
 
@@ -220,3 +222,15 @@ transfer classification, or station-level depot roster for any BL station.
 BL16’s public-art metadata and the complete metadata for BL23’s second named
 work would require a fuller official record. Those gaps are marked TBC rather
 than filled from maps, coordinates, secondary summaries or inference.
+
+---
+
+## Unverified incoming lead appendix — `deep-research-report(3).md`
+
+> This appendix preserves an external lead only. It is explicitly unverified,
+> and none of its claims is evidence or a replacement for the existing
+> primary-source records above.
+
+The report leads concern exit counts for BL01–BL21, a possible BL04
+construction-era name, examples of Bannan-line public art, and a Typhoon Nari
+flood account. It names DORTS and TVBS but supplies no URL for any of them.

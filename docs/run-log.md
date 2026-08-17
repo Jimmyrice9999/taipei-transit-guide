@@ -7753,3 +7753,55 @@ run did not use either tunnel wording in station prose.
 The four commits were made in six-station batches (BR01–06, BR07–12, BR13–18,
 BR19–24) and pushed to `main` after each batch. `npm run cite`, `npm run verify`,
 and `npm test` all passed; the full test suite reports 185/185.
+
+# Run 29 — incoming deep-research lead audit, 17 August 2026
+
+## Sourced
+
+The eight files in `docs/research/incoming/` were read in full. None contained
+a literal HTTP(S) citation URL, so the incoming URL audit was **0 verified / 0
+failed for every file**. Numeric references `[14]`, `[25]` and `[50]` were
+placeholders without a bibliography and were recorded as failed, not treated
+as URLs. The only external fetch made during the audit was the repository's
+existing DORTS Zhonghe–Xinlu primary page, used to test a contradiction; it is
+not an incoming citation.
+
+## TBC
+
+No incoming factual claim was promoted to an established section solely from
+these leads. Every lead group remains explicitly unverified until its exact
+primary or secondary page is supplied and fetched in full.
+
+## Per-file disposition
+
+| Original file | Subject and destination | URLs verified / failed | Moved to Checked and failed | Conflict silently resolved by the lead |
+|---|---|---:|---|---|
+| `deep-research-report(1).md` | Cross-cutting public art → `docs/research/rail/history/public-art.md`; art spans stations and several lines, so it belongs in a rail-history/design file. | 0 / 0 | 68 public-art records; missing source records; false “all URLs opened” assertion; Xiaobitan and Songshan cost inconsistencies; two station-label problems. | Yes. It chose NT$10m over the quoted Xiaobitan NT$1m, NT$15m over the quoted Songshan `15,000萬`, and presented mismatched English/Chinese station labels as settled. None was published. |
+| `deep-research-report(2).md` | Cross-cutting service incidents → `docs/research/rail/history/incidents.md`; incidents are not line properties. | 0 / 0 | 10 incident records, Typhoon Nari figures, and inaccessible-link assertions. | No explicit value conflict was stated; its “all figures and causes are consistent” conclusion was unsupported by the absent URLs. |
+| `deep-research-report(3).md` | Bannan station-level data → existing `docs/research/rail/stations/bannan-line-stations.md`. | 0 / 0 | 23 station/art/flood records and the BL04 rename inference. | Yes. It inferred a completed rename from `海山/(新北高工)` without publishing a dated source or leaving the ambiguity. |
+| `deep-research-report(4).md` | Zhonghe–Xinlu station-level data → existing `docs/research/rail/stations/zhonghe-xinlu-line-stations.md`. | 0 / 0 | 26 station records, public-art placeholder `[50]`, and unsupported URL-verification assertion. | Yes, and contradicted. It gave Nanshijiao an opening year of 1987; the fetched DORTS page says 24 December 1998. Both values are recorded, with the lead value failed. |
+| `deep-research-report(5).md` | Tamsui–Xinyi station/history data → existing `docs/research/rail/stations/tamsui-xinyi-line-stations.md`. | 0 / 0 | 5 lead records and placeholders `[14]` and `[25]`. | No explicit value conflict was stated; “all cited URLs were opened” was false because the file had none. |
+| `deep-research-report(6).md` | Cross-cutting construction/engineering incidents → `docs/research/rail/history/incidents.md`; it covers branch scope, anchors and heritage relocation rather than one line page. | 0 / 0 | Xiaonanmen, Huan Ya anchors, Beimen relocation, Xiaobitan scope, and inaccessible-link claims. | Yes. It expanded a quoted Xiaobitan fragment supporting only two stations/1.9 km into an opening date, high-capacity classification and three-car claim without a source. |
+| `deep-research-report(7).md` | Wenhu line/station bundle → existing `docs/research/rail/lines/wenhu-line.md`; it covers the whole line and no separate Wenhu station research destination exists. | 0 / 0 | 27 station/architecture records, two incident records, and unsupported no-conflict assertion. | No explicit value conflict was stated; the entire bundle lacked URLs. |
+| `deep-research-report.md` | Cross-cutting station naming → `docs/research/rail/history/station-naming.md`; naming disputes and pre-opening names span lines. | 0 / 0 | 13 historical-name records, Fuzhong sub-name, Shandao/Huashan petition, and unsupported agreement assertion. | No explicit value conflict was stated; it called secondary/forum leads “documented in planning or technical sources” without identifying those sources. |
+
+## Contradicted the corpus
+
+The Zhonghe–Xinlu lead's “Nanshijiao opened in 1987” is contradicted by the
+full DORTS page at `https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404`,
+which states `中和線於87年11月6日初勘、87年12月8日履勘、於87年12月24日通車營運`.
+The incoming report also mislabeled 台大醫院 as “Taipei City Hospital” and
+introduced a likely `府大`/station-name transcription problem; both remain
+failed leads, not corrected claims.
+
+## Conflicts found
+
+The incoming reports repeatedly declared “no conflicts” while providing no
+retrievable citations. The concrete conflicts found during audit are the
+Xiaobitan and Songshan public-art cost mismatches, the station-label mismatches,
+the BL04 slash-name inference, the Xiaobitan scope overreach, and the 1987 vs
+1998 Nanshijiao opening year. All are published as failed or unverified in the
+destination research files rather than resolved by selection.
+
+`docs/research/incoming/` was emptied and removed after all eight files were
+processed. `npm run research` passed: 36 files, 167 recorded failures, clean.

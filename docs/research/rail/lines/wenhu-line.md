@@ -506,3 +506,26 @@ rather than deleted, so the same lead is not chased twice.
   file's own length section, which correctly says to publish 25.17 km as the
   operating length. Checked 7 August 2026, run 7. 25.7 is the sum of two project
   lengths, not a measurement of the railway.
+- **Incoming report(7) bundle: 27 station and architecture lead records** — the file supplies no literal HTTP(S) URL or bibliography, so its station addresses, exit counts, architecture summary and public-art examples were not independently fetched or carried forward. Checked 17 August 2026.
+- **Incoming report(7) two-incident chronology** — the file names Taipei City Government and UDN but supplies no release or article URL, so the dates, passenger counts, causes and recovery descriptions remain unverified. Checked 17 August 2026.
+- **Incoming report(7) assertion that no source conflicts were found** — with zero URL strings in the file, the claimed cross-source agreement cannot be audited. Checked 17 August 2026.
+
+## Stated gaps
+
+The incoming report adds no sourceable station, architecture, public-art or
+incident claim to this line file. Exact DORTS route, architecture and public-art
+URLs, plus the two full incident reports, would be required to assess the
+overlap with the established Wenhu research above.
+
+---
+
+## Unverified incoming lead appendix — `deep-research-report(7).md`
+
+> This appendix preserves an external lead only. It is explicitly unverified,
+> and none of its claims is evidence or a replacement for the existing
+> primary-source records above.
+
+The report leads concern BR01–BR24 addresses and exit counts, a broad Wenhu
+architecture description, seven public-art examples, and two 2026 door-fault
+incidents. It names DORTS, Taipei City Government and UDN but supplies no URL
+or bibliography.

@@ -246,6 +246,53 @@ different fares, vessels and route types.
 
 ---
 
+## Incoming lead transfer — `deep-research-report(4).md` (2026-08-15)
+
+> The incoming report named sources but supplied no URLs. The two records below
+> were found independently and opened in full; they do not retroactively make
+> the remaining incoming claims verified. The original report is preserved as a
+> demoted appendix after the existing corpus sections.
+
+### Independent sample checks
+
+**Claim — Taipei first launched the Blue Highway micro-tour programme in ROC 102 (2013), and the published cumulative ridership exceeded 900,000 trips by the end of that year.** Independently checked: the official page resolved and contains both sentences.
+
+- **Source title:** *Blue Highway — Taipei City Government Public Works Department*
+- **titleOriginal:** `三、藍色公路`
+- **Publisher:** `臺北市政府工務局`
+- **URL:** <https://pwd.gov.taipei/cp.aspx?n=9CA08E769CE4D0F7>
+- **Archive snapshot:** not captured
+- **kind:** primary
+- **Confidence:** High — official page, exact text read on 2026-08-15
+- **Original-language sentence:** `臺北市公共運輸處於民國102年首次推出「藍色公路微旅行」計畫` and `藍色公路載客量統計至102年底止，已超過90萬人次`.
+
+**Claim — The Taipei-side operator list includes Haloha, Taipei Cruise, Shun Feng, Chang Hong, Boatyacht International, Ganbei Dock and Goddess Yacht.** Independently checked: the full PTO FAQ lists all seven companies.
+
+- **Source title:** *Blue Waterway vessel operators’ operating times*
+- **titleOriginal:** `藍色水路船舶業者的營運時間？`
+- **Publisher:** `臺北市公共運輸處`
+- **URL:** <https://pto.gov.taipei/News_Content.aspx?n=6B4D38874E971F4B&s=353A9A7764AD3301&sms=87415A8B9CE81B16>
+- **Archive snapshot:** not captured
+- **kind:** primary
+- **Confidence:** High — official FAQ, exact operator names read on 2026-08-15
+- **Original-language sentence:** `（一）好樂好股份有限公司` through `（七）燊鴻國際有限公司`.
+
+### Remaining unverified lead material
+
+The appendix preserves the Blue Highway definition, New Taipei management, boarding points, 2026 Danjiang Bridge tours and gaps as leads only. No incoming URL was available for those remaining claims, so they were not promoted here.
+
+## Conflicts
+
+No conflict was independently established in this migration sample. The incoming report’s statement that no conflicts existed is not treated as a corpus-wide finding.
+
+## Checked and failed
+
+- **Missing citation URLs in the incoming Blue Highway report** — The report named several pages but supplied no resolvable URL for them; checked 2026-08-15. Two claims were independently located and checked above, while the remaining claims were not carried into established evidence.
+
+## Stated gaps
+
+- **Unverified incoming Blue Highway claims** — The New Taipei boarding-point list, Danjiang Bridge schedule, post-2013 ridership and licensing claims need their named primary pages or official datasets before promotion.
+
 ## Sources
 
 **Primary:** Taipei City Government Department of Transportation press release, 14
@@ -259,3 +306,46 @@ chshipping.com.tw (company history, route detail); 好樂好 via kktix (schedule
 minimum sailing party).
 
 **Secondary:** river-fun.taipei 藍色水路微旅行 (concessions, bicycle fare).
+
+
+---
+
+## Imported external lead appendix — deep-research-report(4).md
+
+> Preserved from an external lead report on 2026-08-15. This appendix is not a source. Every claim, URL, source classification, confidence label and status in it remains unverified unless independently promoted in the transfer record above.
+pm run research intentionally does not parse this demoted appendix as a corpus Checked and failed section.
+
+**Research file — leads, not sources.** Every claim here must be verified against the primary source before publication.
+
+#### What is established
+
+- **Definition of “Blue Highway” (藍色公路)** (English “Sailing Towards the Blue Highway”, original title 《航向藍色公路》, Public Television Service, Taiwan; Secondary; Medium): “藍色公路是指利用船舶載客航行於水上，功能包括是代替陸地上的交通運輸，也包含海上觀光遊覽的特性。”.
+- **Taipei Blue Highway launched 2013** (臺北市政府工務局–藍色公路, Taipei Public Works Dept; Primary; High): “臺北市公共運輸處於民國102年首次推出「藍色公路微旅行」計畫...” (102年＝2013).
+- **Over 900,000 riders by 2013 in Taipei** (same source, Primary; High): “藍色公路載客量統計至102年底止，已超過90萬人次搭船體驗遊河親水樂趣。”.
+- **Taipei routes and schedule** (航班資訊–藍色水路微旅行, Taipei Public Transport Office; Primary; High): Scheduled services include daily *Dadaocheng Sunset* and *Dadaocheng Night* river cruises from Dadaocheng, and weekend routes linking Dadaocheng, Guandu, and Tamsui (e.g. 大稻埕–關渡–淡水 on weekends, and round trips 大稻埕⇄淡水 on Saturdays). (See original: “大稻埕夕陽遊河… 大稻埕夜航遊河… 大稻埕–關渡–淡水…”.)
+- **Taipei operators (part 1)** (業者資訊–藍色水路微旅行, Taipei Public Transport Office; Primary; High): The Taipei City “Blue Waterway” tours are run by private boat companies. Among the main operators are 好樂好 (Haloha), 台北航運 (Taipei Cruise), 順風航業 (Shun Feng), and 長弘航業 (Chang Hong) (original names shown as above).
+- **Taipei operators (part 2)** (same source): Additional operators include 舶克國際 (Boatyacht International), 乾杯碼頭 (Ganbei Dock), and 燊鴻國際 (Goddess Yacht).
+- **New Taipei management** (臺北市政府交通局新聞稿, New Taipei City Gov; Primary; High): “新北市藍色公路載客營業由新北市交通局管理” – i.e. the Tamsui River ferry service (“Blue Highway”) is overseen by New Taipei City’s Transportation Bureau.
+- **New Taipei boarding points** (淡水八里–新北市觀光旅遊網, New Taipei Tourism; Secondary; Medium): The New Taipei tourism guide lists the “Blue Highway” boarding points as Tamsui Ferry Pier, Bali Ferry Pier, Fisherman’s Wharf, and Guandu Pier (“乘船地点：淡水渡船头、八里渡船头、渔人码头、关渡码头。”).
+- **2026 Danjiang Bridge tours** (新北市政府施政成果網, New Taipei Gov; Primary; High): New Taipei City launched special river tours for the new Danjiang Bridge (“淡江大橋導覽遊河航班”), starting 16 May 2026, operated by Haloha Co., with 5 round trips each Sat/Sun (“115年特色航班…由好樂好股份有限公司經營，每週六、日各5個航班...” where year 115＝2026).
+
+#### Conflicts
+
+No conflicting figures or claims were found in the sources reviewed. All data (ridership, routes, operators) are consistently reported by government and tourism sources. In absence of multiple values, none were averaged or omitted.
+
+#### Checked and failed
+
+- 2026-08-15: Attempted to retrieve the New Taipei Traffic Bureau’s “Blue Highway” basic information PDF (link at [22] under NTPC Traffic Bureau – timed out / not accessible).
+- 2026-08-15: Attempted to access the Shun Feng shipping website (www.shuf168.com.tw) and related pages ([27],[30],[35]); site was blocked/unreachable via the browser tool. (Used search results for partial content instead.)
+- 2026-08-15: The Taipei travel “funpass” site for Shun Feng (北北基好玩卡) returned “Forbidden”.
+- 2026-08-15: Facebook pages and social media posts (travel and ferry group postings) could not be accessed/parsed due to login and robot restrictions.
+- 2026-08-15: Chinese Wikipedia and enthusiast blogs/YouTube (e.g. “PTT” threads, travelogues) were not used as primary sources; leads on ferry routes or history from them remain unverified here.
+
+#### Stated gaps
+
+- **Ridership data post-2013**: No official passenger counts beyond 2013 were found; city transport annual reports or open data would be needed to update usage figures.
+- **Exact start of Bali–Tamsui ferry**: Sources did not provide a definitive launch date for the 八里渡船 (Bali–Tamsui ferry); city gazettes or historical transport plans would clarify the origin of that route.
+- **Ferry fleet and capacity**: No public data found on number of vessels or capacity (except an anecdote of 99-50 seats on Shun Feng boats). An official fleet registry or company filings would resolve this.
+- **Route licensing and governance**: While NT says it manages the service, details of the licensing (e.g. MOTC permissions for the inter-city ferry) are not in hand. Official regulatory documents from MOTC or NT’s traffic archives would clarify the legal status of these routes.
+- **Post-Bridge service status**: The effect of the Danjiang Bridge opening on the Bali–Tamsui ferry service is unclear. Official announcements or shuttle schedules from NT post-May 2026 would confirm whether the ferry continues and under what service level.
+- **Definition scope**: The term “Blue Highway” has been used loosely. Official transport policy documents delineating which waterways and services qualify (river vs. coastal ferries, sightseeing vs. commuter) are not found; such guidance would settle any ambiguity on scope.

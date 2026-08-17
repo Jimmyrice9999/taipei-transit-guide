@@ -430,7 +430,34 @@ here has been picked, averaged, or silently dropped.
 
 ---
 
+## Incoming lead transfer — `deep-research-report(9).md` (2026-08-15)
+
+> The external report is retained below as an unverified lead appendix. Its
+> “Confirmed” labels are not accepted as verification. One cited Control Yuan
+> document was also checked and found to be the wrong document; affected T16
+> claims remain unpromoted.
+
+### Independent sample checks
+
+**Claim — Taipei’s Department of Transportation planned the gondola, the New Construction Office was the construction authority, POMA supplied the system and TRTC operates it.** Independently checked: the current official FAQ contains the complete chain.
+
+- **Source title:** *Maokong Gondola Frequently Asked Questions*
+- **titleOriginal:** `貓空纜車常見問答`
+- **Publisher:** `貓空纜車／北捷遊憩事業股份有限公司`
+- **URL:** <https://www.gondola.taipei/News_Content.aspx?n=71C9D5481AA0C06E&s=DD0CD899ACDC0A32&sms=87415A8B9CE81B16>
+- **Archive snapshot:** not captured
+- **kind:** primary
+- **Confidence:** High — official operator FAQ, exact text read on 2026-08-15
+- **Original-language sentence:** `系統工程規劃主辦機關為「臺北市政府交通局」……工程主辦機關為「臺北市政府工務局新建工程處」……纜車系統製造商為法商POMA，並由「臺北大眾捷運股份有限公司」負責營運管理。`
+
+### Remaining unverified lead material
+
+The appendix preserves the construction chronology, T16 slope-failure findings, relocation, suspension history, monitoring and legal-status material as leads only. Claims depending on the cited Control Yuan PDF are not promoted because that URL did not resolve to the alleged investigation.
+
 ## Checked and failed
+
+- **Incoming Control Yuan URL `download/54531` for the T16 investigation** — The URL resolved on 2026-08-15, but the PDF title is `監察院監察調查處「調查報告格式範本」說明資料` dated 2001 and contains no `貓空纜車` text. T16 claims relying on that citation were not carried forward as verified.
+
 
 - **"Reopening was 23 March 2010" vs. "reopening was March 2010" as a genuine
   source conflict** — Checked 2026-08-12. Reading zh.wikipedia's raw article
@@ -537,3 +564,857 @@ content page.
   臺北市資料大平臺's daily ridership dataset
   (`data.taipei/dataset/detail?id=bed9c297-da71-4251-ba46-74d52ac9a991`) was
   identified via search but not fetched in this pass.
+
+
+---
+
+## Imported external lead appendix — deep-research-report(9).md
+
+> Preserved from an external lead report on 2026-08-15. This appendix is not a source. Every claim, URL, source classification, confidence label and status in it remains unverified unless independently promoted in the transfer record above.
+pm run research intentionally does not parse this demoted appendix as a corpus Checked and failed section.
+
+> **Research file — leads, not sources.** Every claim here must be
+> verified against the primary source before publication.
+
+### Maokong Gondola (貓空纜車) — construction, the T16 tower controversy, Control Yuan findings, suspension history
+
+Research date: 2026-08-15 (Asia/Taipei).
+Research was conducted primarily in Traditional Chinese and prioritized Taipei City, operator, Control Yuan, and other institutional material.
+
+Note on quotations: original-language evidence is kept to short, identifying excerpts rather than reproducing long passages from source documents. The URL and document title are supplied so the full sentence and surrounding context can be checked before publication.
+
+#### What is established
+
+##### The project was a Taipei City transport/tourism project, not a Taipei Metro construction project — Confirmed
+
+**Claim:** Taipei City Government's Department of Transportation was the planning authority. The Public Works Department's New Construction Office was the construction authority. Taiwan CECI Engineering Consultants and Wu Lin Architects handled project management/supervision; Chun Yuan Construction was the design-build contractor; the ropeway technology was supplied by the French company POMA. Taipei Rapid Transit Corporation was assigned operation after completion.
+
+**Source title in English:** *Maokong Gondola Frequently Asked Questions*
+**Original-language title:** 「貓空纜車常見問答」
+**Publisher:** 北捷遊憩事業股份有限公司 / Maokong Gondola official site
+**URL:** https://www.gondola.taipei/News_Content.aspx?n=71C9D5481AA0C06E&s=DD0CD899ACDC0A32&sms=87415A8B9CE81B16
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「工程規劃主辦機關為『臺北市政府交通局』，工程主辦機關為『臺北市政府工務局新建工程處』。」
+
+The same official FAQ identifies Taiwan CECI, Chun Yuan, POMA and Taipei Rapid Transit Corporation in the project chain.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜，足徵工程設計、施工及發證等程序均涉有違失等情乙案」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY — Control Yuan investigation
+**Confidence:** High
+**Original-language evidence:** 「由統包商春原營造負責設計及施工，纜車系統採法國POMA公司產品。」
+
+**Interpretive caution:** DORTS (臺北市政府捷運工程局) should not be substituted for the New Construction Office in an English account of who built the gondola. The primary sources reviewed assign the construction function to 新建工程處.
+
+##### Planning was publicly under way by 2004; construction began in November 2005 and passenger service began on July 4, 2007 — Confirmed
+
+**Claim:** By March 2004 the Department of Transportation was publicly presenting an initial Maokong Gondola plan. It held two local briefings on March 24, 2004. The design-build contract was awarded May 2, 2005; detailed design began May 3; physical construction began November 10, 2005; the pre-opening inspection was completed June 28, 2007; and service began July 4, 2007.
+
+**Source title in English:** *The Maokong Gondola System Plan Is Ready — Local Residents Invited to the Public Briefing*
+**Original-language title:** 「『貓空纜車系統』規劃出爐囉！歡迎鄉親作伙來參加地方說明會」
+**Publisher:** 臺北市政府交通局 / Taipei City Government Department of Transportation
+**URL:** https://www.roadsafety.taipei/News_Content.aspx?n=0B635774A27B603D&s=36FB67D7BEB97491&sms=72544237BBE4C5F6
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「交通局已初步完成『貓空纜車系統』規劃案。」
+
+This page gives its publication date as ROC 93-03-22 (2004-03-22) and lists both public meetings for March 24.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜，足徵工程設計、施工及發證等程序均涉有違失等情乙案」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「於94年11月10日開工，96年6月28日完成履勘作業，96年7月4日通車啟用。」
+
+The same investigation gives the award date as 2005-05-02 and start of detailed design as 2005-05-03.
+
+##### The original public schedule was substantially more optimistic than the eventual opening date — Confirmed
+
+**Claim:** A Taipei City mayoral policy report said in 2006 that the project, then described as costing about NT$1.18 billion, had begun November 10, 2005 and was expected to finish construction by the end of July 2006 and open to the public in November 2006. Actual passenger service did not begin until July 4, 2007.
+
+**Source title in English:** *Policy Report to the Seventh Session of the Ninth Taipei City Council — Mayor Ma Ying-jeou*
+**Original-language title:** 「市議會第9屆第7次大會施政報告[馬市長英九]」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=D07E52F0FF169E83&s=08021C99C0A64FAA&sms=4F76BD4E1FD15647
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「業於94年11月10日開工，預計95年7月底纜車工程完工，11月可正式對外營運。」
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「96年7月4日通車啟用。」
+
+This is a forecast-versus-outcome difference, not a contradiction between sources.
+
+##### Land for the project was acquired through Taipei City expropriation procedures in 2005 — Confirmed
+
+**Claim:** The Taipei City Land Department records that in 2005 it assisted the Department of Transportation with acquisition of 38 parcels totaling 0.7627 hectares for the Maokong Gondola project, with separate statutory transfer procedures used for government-owned land within the project area.
+
+**Source title in English:** *2005 Expropriation Project — Wenshan District Maokong Gondola New Construction Project*
+**Original-language title:** 「94年徵收工程-文山區貓空纜車新建工程」
+**Publisher:** 臺北市政府地政局 / Taipei City Government Department of Land
+**URL:** https://land.gov.taipei/News_Content.aspx?n=C19FB9C0E4EFEEED&s=19D40B32E9C4573B&sms=5663AD633778B9DA
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「徵收文山區頭廷段二小段248-2地號等38筆土地，徵收面積0.7627公頃。」
+
+##### The original route escaped mandatory EIA under the rules then in force; the Control Yuan rejected the allegation that work was deliberately rushed to beat a new four-kilometre threshold — Confirmed as a Control Yuan finding
+
+**Claim:** The Control Yuan calculated the project development area at about 6.3 hectares and total cut/fill at about 30,373 cubic metres. Under the EIA scope rules then applicable to this type of hillside development, those figures were below the cited 10-hectare / 100,000-cubic-metre thresholds. A February 20, 2006 amendment subsequently added an explicit EIA trigger for construction or expansion of cableways at least four kilometres long. The Control Yuan said the allegation that the New Construction Office had deliberately started three months earlier to escape that later rule was speculation.
+
+This is important because two distinct issues are often collapsed in later retellings: **Maokong's legal status under the rules in force when reviewed** and **the later amendment specifically addressing cableways**.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY — Control Yuan finding
+**Confidence:** High
+**Original-language evidence:** 「在修法前纜車興建毋須環評。」
+
+The report separately records the approximately 6.3-hectare area, approximately 30,373 m³ earthwork figure and the February 20, 2006 amendment.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「應屬猜測。」
+
+That phrase is the Control Yuan's conclusion on the specific allegation that construction was deliberately accelerated to evade the later EIA amendment. It should not be broadened into a finding that the project's planning was sound; the Control Yuan reached the opposite conclusion on planning quality.
+
+##### The Control Yuan rejected several headline allegations about T16, while sustaining serious planning, drilling, inspection and supervision failures — Confirmed
+
+**Claim:** The Control Yuan did **not** conclude that T16 had been built with obvious “偷工減料” (construction shortcuts/material cheating). It also rejected the assertion that the tower itself had clearly tilted or shifted. At the same time, it found serious deficiencies in pre-construction investigation, geotechnical work, acceptance inspection, project management and emergency response.
+
+This distinction is central to the T16 controversy: **the formal finding was not “the tower was badly built and fell over.”** The adverse findings were primarily about inadequate site investigation and engineering management, inaccurate drilling documentation, superficial acceptance work, placement in a sensitive geomorphic setting, and the response once the slope began to fail.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「尚無發現T16塔柱之施工過程有偷工減料之情事。」
+
+**Source title in English:** *Case: Slope Collapse Below Maokong Gondola T16 Tower*
+**Original-language title:** 「『臺北市貓空纜車T16塔柱下方邊坡崩塌』案」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://www.cy.gov.tw/News_Content.aspx?n=124&s=4853
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「導致T16塔柱基座表土坍陷、基樁裸露數公尺。」
+
+The latter wording is preferable to unsourced English formulations such as “the tower collapsed.”
+
+##### The investigation found no clear tilt or displacement of T16 after the slope failure — Confirmed
+
+**Claim:** Despite soil loss and exposure beneath the base, the Control Yuan investigation reports that there was no obvious tilt or displacement of the T16 tower. It characterized public claims that the tower was demonstrably tilting as conjectural.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「塔柱仍紋風不動，沒有明顯傾斜位移。」
+
+**Publication wording to avoid:** “T16 collapsed,” “T16 fell,” or “the tower was knocked over.” None is supported by the primary investigation reviewed here.
+
+##### The slope failure was assessed as a progressive failure beginning downslope, rather than a failure initiated by the T16 tower itself — Confirmed as the Control Yuan's adopted engineering account
+
+**Claim:** The Control Yuan, drawing on the four professional engineering associations' appraisal, described the failure as a retreating/progressive slope collapse moving from below upward. It expressly said the slope failure did not originate at T16. The appraisal described an affected zone about 25 metres wide and about 160 metres long, with an estimated failure depth of about 4–7 metres.
+
+The investigation attributed the event principally to natural geological/slope conditions combined with exceptional September 2008 rainfall, while also discussing surface-water infiltration as a contributing issue.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY for the Control Yuan finding; the engineering appraisal quoted inside it is indirect
+**Confidence:** High for what the Control Yuan concluded; Medium for reproducing the four-association appraisal without the standalone appraisal in hand
+**Original-language evidence:** 「顯示邊坡破壞並非肇始於T16塔柱。」
+
+The underlying four-association report is named by the Control Yuan as 「臺北市文山區萬壽路75巷政大御花園薔蜜風災土石崩塌鑑定報告」. A standalone copy has not yet been verified; see **Stated gaps**.
+
+##### T16 stood in an environmentally/geologically sensitive setting, and the Control Yuan endorsed relocation — Confirmed
+
+**Claim:** The Control Yuan described the existing T16 position as being in a headward-erosion environmentally sensitive area and regarded Taipei City's decision to relocate the support as correct. Boreholes at two relocation candidates, NH-1 and NH-2, were assessed as having better geology than the original location; POMA's preliminary assessment favored NH-1.
+
+The Control Yuan considered it particularly significant that the better replacement location was only about 30 metres from the old T16 site but had not been identified through the project's earlier rounds of geological investigation.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「臺北市政府遷移T16塔柱，應是正確決策。」
+
+The report states that the better new position and the old tower were separated by only about 30 metres.
+
+##### The first planning-stage geological investigation was exceptionally limited — Confirmed
+
+**Claim:** The Control Yuan found that the early planning contract did not require a geotechnical engineer or applied geologist to conduct a systematic field investigation of the route. It further records that budget limitations led the planning consultant to prioritize drilling at only three station sites rather than perform boreholes along the support-tower alignment.
+
+The Control Yuan treated this as a major planning failure, particularly because an early study had already identified landslide and headward-erosion phenomena in the Maokong area.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「至於其沿線路廊（支柱）部分並未辦理鑽探。」
+
+This particular sentence is reproduced by the Control Yuan from Taipei City's political-ethics investigation.
+
+##### The project-management boreholes were often far from the tower centers they were supposed to inform; the T16-associated borehole was 69.9 metres away — Confirmed
+
+**Claim:** Under the project-management/supervision contract, the geotechnical requirement was stated as at least one borehole for each tower and two for each station. Of 46 planned boreholes, 43 were drilled. The Control Yuan found that many actual holes were a substantial distance from tower centers: its key T16 example is borehole BH-26, located 69.9 metres from T16; it also records BH-4 as 82.94 metres from T2.
+
+The Control Yuan concluded that such locations deprived the resulting cores and soil samples of representative design value and sharply criticized Taiwan CECI's performance.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「BH-26鑽孔位置與T16塔柱相距達69.9公尺。」
+
+The investigation also says the New Construction Office's acceptance procedure sampled nine of the 43 holes for depth but did not verify the actual borehole positions or substantively review the drilling/test report.
+
+##### The New Construction Office's acceptance of the geological drilling was found to have been superficial — Confirmed
+
+**Claim:** The Control Yuan found that the New Construction Office did not verify the positions of the geological boreholes during acceptance and did not carry out a substantive review of the resulting reports. Its conclusion was that acceptance of the geological investigation had become a formality and that the office itself was at fault.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「可知地質鑽探驗收作業流於形式，新建工程處亦有疏失。」
+
+##### Chun Yuan's design-build-stage supplementary drilling report contained an inaccurate location entry — Confirmed
+
+**Claim:** Chun Yuan later carried out supplementary drilling for detailed design. For the hole identified as P5 in connection with T16, the report coordinates indicated a position approximately 1.3321 metres from the designed tower center, but the Control Yuan found that the actual drilling location differed by 22.7 metres. It concluded that the drilling report was not accurately recorded and that responsibility should be pursued; it also faulted the New Construction Office for inadequate acceptance.
+
+This is distinct from the **69.9-metre BH-26 issue**. They were two separate rounds of geotechnical work by different parties and should not be conflated.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「惟實際鑽探距離卻差距22.7公尺。」
+
+##### The Control Yuan's formal correction was directed at Taipei City Government and was much broader than the T16 foundation itself — Confirmed
+
+**Claim:** On November 4, 2009 the Control Yuan adopted a formal correction against Taipei City Government. Its case statement found inadequate advance assessment, poor planning, perfunctory acceptance, failure by planning/project-management/design-build contractors to exercise appropriate engineering professionalism, insufficient city supervision, and inadequate emergency response after the T16 slope disaster.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://www.cy.gov.tw/CyBsBoxContent.aspx?n=134&s=3076
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「事先未進行詳盡評估，辦理過程規劃不周，驗收草率。」
+
+The case is numbered **098內正0045** and gives the review/decision date as ROC 98-11-04 (2009-11-04).
+
+**Source title in English:** *Investigation Report*
+**Original-language title:** 「調查報告」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://www.cy.gov.tw/CyBsBoxContent.aspx?n=134&s=448
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「案件編號：098內調0102。」
+
+The investigation report itself was reviewed on the same date.
+
+##### The Control Yuan nevertheless found the city's EIA, building-permit-exemption and soil-and-water-conservation legal procedures supportable under the law then applicable — Confirmed
+
+**Claim:** The correction was therefore **not** a finding that every legal/procedural accusation made in the controversy was true. In particular, after examining the EIA issue, the exclusion from the Building Act/building-permit process, and soil-and-water-conservation review, the Control Yuan said those processes had a legal basis. It separately criticized city departments for not knowing or clearly explaining their own project information.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「各項審查作業均於法有據。」
+
+This should not be paraphrased as “the Control Yuan cleared the project.” It simultaneously issued a formal correction for serious planning, supervision, acceptance and emergency-management failures.
+
+##### The Control Yuan found that Taipei City missed the early opportunity to stabilize the failing slope — Confirmed
+
+**Claim:** In the Control Yuan account, the initial September collapse had not yet reached the T16 foundation. Taipei City agencies first debated jurisdiction, entered the affected area on September 30, and carried out measures such as mud clearing, sandbags/tarpaulins and drainage but did not initially stabilize the toe of the slope. The investigation concluded that the response underestimated continuing heavy rainfall and missed the best opportunity to stop expansion of the failure.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「搶救強度不足，貽誤搶救先機。」
+
+##### Taipei City formally suspended Maokong Gondola service at 15:00 on October 1, 2008 — Confirmed
+
+**Claim:** The best primary source found for the exact formal suspension time is the Department of Transportation. It states that service was suspended beginning at 3:00 p.m. on October 1, 2008 because Typhoon Jangmi had caused slope erosion along part of the alignment and the city wanted an independent professional safety assessment before reopening.
+
+This matters because the physical slope event is dated September 27 or September 28 in different official accounts, while the **formal systemwide suspension is explicitly October 1 at 15:00**.
+
+**Source title in English:** *During the Maokong Gondola Suspension, Maokong-Area Traffic Controls Remain Unchanged; Please Use Buses*
+**Original-language title:** 「貓空纜車停駛期間，貓空地區交通管制措施不變，請民眾多利用公車往返。」
+**Publisher:** 臺北市政府交通局 / Taipei City Government Department of Transportation
+**URL:** https://dot.gov.taipei/News_Content.aspx?n=C41A7FC0570A20B3&s=F67671C54ABA9D94&sms=72544237BBE4C5F6
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「自97年10月1日下午3時起貓空纜車暫停營運。」
+
+##### Taipei City decided to relocate T16 rather than simply put the old site back into service — Confirmed
+
+**Claim:** The city decided to move T16 after considering public confidence and engineering/economic factors. The replacement tower, T16-1, was approximately 30 metres from T16 and about five metres lower. The T16-1 relocation project began June 26, 2009.
+
+**Source title in English:** *Cable Removed from Maokong Gondola T16 Tower on November 11, Launching the First Step Toward Resumption*
+**Original-language title:** 「貓空纜車T16塔柱於11月11日卸纜索，展開復駛第一步！」
+**Publisher:** 臺北市政府發言人室 / Taipei City Government
+**URL:** https://tct.gov.taipei/News_Content.aspx?n=B4C9AF5D5D4BF947&s=56585C0B860EE4FA&sms=72544237BBE4C5F6
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「考量市民觀感及工程經濟性，市府決定遷移T16塔柱。」
+
+The same release states that T16-1 was about 30 metres from the old T16 and that the relocation project commenced on ROC 98-06-26.
+
+##### Taipei City's own later account said its political-ethics investigation found careless planning plus administrative failings in construction and acceptance — Confirmed
+
+**Claim:** A 2009 mayoral policy report says the city's Department of Government Ethics investigated the controversy and concluded that project planning had been perfunctory/careless and that construction and acceptance involved administrative failings. The mayor apologized for the anxiety and suspension associated with the T16 slope event.
+
+**Source title in English:** *Policy Report to the Fifth Session of the Tenth Taipei City Council — Mayor Hau Lung-bin*
+**Original-language title:** 「市議會第10屆第5次大會施政報告[郝市長龍斌]」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=D07E52F0FF169E83&s=C9D31D03CAAB075C&sms=4F76BD4E1FD15647
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「規劃流於草率，施工及驗收則有行政疏失。」
+
+The report also states that Taipei City publicly announced the decision to relocate the tower on January 23, 2009 and at that stage estimated approximately NT$21 million and about 11 months for the civil-foundation work. This was an estimate, not a verified final relocation cost.
+
+##### Slope remediation was a separate substantial works project — Confirmed
+
+**Claim:** The Control Yuan records that the slope-rehabilitation works began December 16, 2008 with a budget of NT$93.10 million. The work included 617 ground anchors and 104 piles, among other stabilization and drainage measures. The Control Yuan's site inspection regarded the subsequent restoration design and execution as comprehensive/appropriate.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「邊坡復建工程於97年12月16日開工。」
+
+The quantities and budget should be checked directly against the works contract before publication if they are to be presented as final as-built quantities rather than Control Yuan-reported project figures.
+
+##### Before reopening, Taipei City commissioned a systemwide independent engineering review — Confirmed
+
+**Claim:** Taipei City commissioned the National Federation of Professional Civil Engineers Associations to undertake an overall inspection. According to the city's announcement, specialists from nine disciplines inspected all tower locations and reviewed design and construction documentation over approximately six months. The review judged restoration of operation safe, while recommending continued monitoring and possible future strengthening.
+
+**Source title in English:** *Maokong Gondola Overall Inspection Results Released: Safe to Resume Operation*
+**Original-language title:** 「貓纜總體檢結果出爐 恢復營運安全無虞」
+**Publisher:** 臺北市政府 / Taipei City Government; maintained by 臺北市政府發言人室
+**URL:** https://www.gov.taipei/News_Content.aspx?n=446258303976F571&s=6BC44461E491CD37&sms=BA3D063F7F121B08
+**Type:** PRIMARY for Taipei City's commissioning/reporting of the review; the engineers' underlying report has not been independently obtained
+**Confidence:** High for the city's statement; Medium for the underlying technical conclusion pending direct review of the full engineering report
+**Original-language evidence:** 「歷經半年完成全部計畫，判定貓纜恢復營運應屬安全無虞。」
+
+The same city page says the review examined the original design drawings, geological drilling, specifications and construction records, including 25 tower-foundation sites.
+
+##### A new multi-level monitoring regime was introduced as part of the post-T16 safety arrangements — Confirmed
+
+**Claim:** The post-repair monitoring system included subsurface inclinometers, tower inclination devices and high-level three-dimensional survey prisms. The city described warning thresholds under which operation would be suspended when monitoring reached the warning level, with reopening only after safety was confirmed.
+
+**Source title in English:** *Maokong Gondola Overall Inspection Results Released: Safe to Resume Operation*
+**Original-language title:** 「貓纜總體檢結果出爐 恢復營運安全無虞」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=446258303976F571&s=6BC44461E491CD37&sms=BA3D063F7F121B08
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「一旦監測數據達到警戒值，則會立即暫停營運。」
+
+##### The statutory/administrative reinspection was completed March 4, 2010 and regular service resumed March 30 — Confirmed
+
+**Claim:** Taipei City's later council report says the recovery inspection (履勘) was completed March 4, 2010 after the T16 relocation, slope works and overall engineering review. Regular passenger service resumed March 30, 2010.
+
+**Source title in English:** *Mayor Hau Reports to City Council: Maokong Gondola Safe; Continues Support for Beitou Cableway*
+**Original-language title:** 「郝龍斌赴議會專案報告 對貓纜保證安全無虞，並對北纜表示支持續建立場」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=446258303976F571&s=F94740C14DF94129&sms=BA3D063F7F121B08
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「於99年3月4日完成履勘，並於3月30日正式復駛。」
+
+**Source title in English:** *Mayor Hau Announces Maokong Gondola Will Resume March 30*
+**Original-language title:** 「郝龍斌宣布貓纜3月30日復駛，23至28日每天開放一萬人次免費搭乘」
+**Publisher:** 臺北市政府發言人室 / Taipei City Government
+**URL:** https://doit.gov.taipei/News_Content.aspx?n=E3D88B653EACBF6E&s=81E45FBF4357F63F&sms=78D644F2755ACCAA
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「宣布貓空纜車將於3月30日(二)正式復駛。」
+
+The release records a free public trial/preview period on March 23–28 before the formal March 30 restoration of regular service.
+
+##### The prolonged 2008–2010 shutdown is explicitly preserved in Taipei's official transport statistics — Confirmed
+
+**Claim:** The Taipei City Public Transportation Office's statistical table records the start of the T16-related suspension as 15:00 on October 1, 2008 and identifies the T16-area soil collapse and professional appraisal as the reason. The table's normal annual series begins again with 2010 data covering March–December after reopening.
+
+**Source title in English:** *Table 14 — Operation of the Maokong Gondola*
+**Original-language title:** 「表14 貓空纜車營運概況」
+**Publisher:** 臺北市公共運輸處 / Taipei City Public Transportation Office
+**URL:** https://www-ws.gov.taipei/Download.ashx?n=WTE0LnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzkwL3JlbGZpbGUvMTk3MjAvMzMyNzAyMi83YzdkNGUzYy1jNzkwLTQyMDItYWEwMC05YzcxZjNmN2M4ZjIucGRm
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「自97年10月1日15時起，因16號塔柱下方土石鬆坍……暫停營運。」
+
+##### Later long shutdowns were predominantly planned maintenance, with separate COVID-19 and rope-replacement closures in 2021 — Confirmed, but not an exhaustive list of every brief interruption
+
+**Claim:** The Public Transportation Office statistical footnote identifies the following later extended/systemwide closures:
+
+- May 2–31, 2012: maintenance;
+- December 3–17, 2012: annual inspection/maintenance;
+- May 2–31, 2013: annual inspection;
+- May 5–19, 2014: annual inspection;
+- May 4–22, 2015, plus the May 25 routine maintenance day;
+- May 5–31, 2016: annual inspection;
+- June 5 and June 13–July 1, 2017: annual inspection work;
+- May 14–28, 2018: annual inspection;
+- May 20–June 4, 2019: annual inspection;
+- May 15–July 31, 2021: suspension because of increased COVID-19 epidemic conditions;
+- September 13–December 12, 2021: rope-replacement work.
+
+These entries are useful for **extended closure history**, but they should not be presented as every short weather, lightning, wind, mechanical or routine-maintenance interruption in the gondola's life.
+
+**Source title in English:** *Table 14 — Operation of the Maokong Gondola*
+**Original-language title:** 「表14 貓空纜車營運概況」
+**Publisher:** 臺北市公共運輸處 / Taipei City Public Transportation Office
+**URL:** https://www-ws.gov.taipei/Download.ashx?n=WTE0LnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzkwL3JlbGZpbGUvMTk3MjAvMzMyNzAyMi83YzdkNGUzYy1jNzkwLTQyMDItYWEwMC05YzcxZjNmN2M4ZjIucGRm
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「110年9月13日至12月12日進行換纜作業，暫停營運。」
+
+The preceding dates are all printed in the same official footnote and should be checked against the PDF itself when building a publication-ready chronology.
+
+**Source title in English:** *Maokong Gondola Resumes June 2 after 31-Day Annual Overhaul*
+**Original-language title:** 「貓空纜車6月2日恢復營運 時尚動物紋彩繪車廂嶄新迎客捷運商品同步優惠促銷」
+**Publisher:** 臺北市公共運輸處 / Taipei City Public Transportation Office
+**URL:** https://www.gov.taipei/News_Content.aspx?n=DB8DBA97CF926C87&s=E796B5948F0B9761&sms=9D72E82EC16F3E64
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「完成為期31天年度大修，將於101年6月2日……恢復營運。」
+
+This independently corroborates the first major post-reopening maintenance shutdown.
+
+##### The Control Yuan explicitly wanted contractor/legal responsibility pursued — Confirmed
+
+**Claim:** The Control Yuan did not treat its administrative correction as the end of accountability. It called on Taipei City to pursue legal responsibility associated with inadequate professional work and, in the design-build context, to pursue contractual/warranty responsibility and damages where appropriate.
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「應予追究其法律責任。」
+
+##### Taipei City subsequently told the Control Yuan that Taiwan CECI and Chun Yuan matters had been referred for criminal investigation and that civil/contractual remedies were being pursued — Confirmed as a status report, not a final legal outcome
+
+**Claim:** In its follow-up response to the Control Yuan, Taipei City said Taiwan CECI's management of the geological drilling had been referred to the Taipei District Prosecutors Office on suspicion of breach of trust. It said Chun Yuan's inaccurately recorded supplementary drilling report had likewise been referred over possible false-record/forgery issues. The city also reported that it intended to seek damages from Chun Yuan for the T16 slope-stabilization and T16-1 relocation works and to pursue warranty obligations.
+
+This source establishes **referral and claimed city action**, not guilt, conviction, liability, or the final disposition of those proceedings.
+
+**Source title in English:** *Control Yuan Gazette, Issue 2796 — Taipei City Follow-up on the Maokong Gondola Correction*
+**Original-language title:** 「監察院公報 第2796期」
+**Publisher:** 監察院 / Control Yuan, reproducing Taipei City Government and Executive Yuan follow-up correspondence
+**URL:** https://www-ws.cy.gov.tw/Download.ashx?icon=..pdf&n=MTAxMDAwMDA5Mjc5NijlhagpLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvQ3lPbGRGaWxlL09wX1VwbG9hZC9lRG9jL%2BWFrOWgsS8xMDEvMTAxMDAwMDA5Mjc5NijlhagpLnBkZg%3D%3D
+**Type:** PRIMARY
+**Confidence:** High for the reported procedural status in 2010
+**Original-language evidence:** 「本府業函送臺北地檢署偵辦中。」
+
+A final prosecutorial/court disposition for these specific T16 referrals has **not** been established in this research file.
+
+#### Conflicts
+
+##### Date of the T16-area slope failure — Contradicted
+
+There are two official date formulations and they should both be retained until the underlying incident logs and four-engineer appraisal are checked.
+
+**Value A: September 27, 2008.**
+The detailed Control Yuan investigation says the T16-downslope ground began sliding on September 27 after sustained September rainfall.
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「9月27日貓纜系統T16塔柱下方邊坡……滑動。」
+
+**Value B: September 28, 2008.**
+Taipei City's later council report dates the T16-area soil slide to the September 28 impact of Typhoon Jangmi.
+
+**Source title in English:** *Mayor Hau Reports to City Council: Maokong Gondola Safe; Continues Support for Beitou Cableway*
+**Original-language title:** 「郝龍斌赴議會專案報告 對貓纜保證安全無虞，並對北纜表示支持續建立場」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=446258303976F571&s=F94740C14DF94129&sms=BA3D063F7F121B08
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「97年9月28日薔蜜颱風侵襲，造成……T16塔柱下方發生土石滑落現象。」
+
+**What each may be measuring:** The Control Yuan report describes a progressive multi-stage slope failure and may be dating the beginning of movement, while city public communications often date the event to Jangmi's principal September 28 impact. This is an inference, not a resolution. Publish both until contemporaneous engineering/site logs settle the sequence.
+
+**Not in conflict:** the formal **service suspension** is independently documented as beginning at 15:00 on October 1, 2008.
+
+##### September 2008 monthly rainfall — apparent rounding difference
+
+**Value A: 1,271.5 mm.**
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「木柵地區當月累積降雨量高達1,271.5公厘。」
+
+**Value B: 1,271 mm.**
+
+**Source title in English:** *Case: Slope Collapse Below Maokong Gondola T16 Tower*
+**Original-language title:** 「『臺北市貓空纜車T16塔柱下方邊坡崩塌』案」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://www.cy.gov.tw/News_Content.aspx?n=124&s=4853
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「當月累積降雨量高達1,271公釐。」
+
+**Assessment:** These are almost certainly the same measurement expressed at different precision, with the Control Yuan press summary dropping the half millimetre. Do not silently change one to the other in a reference work; use 1,271.5 mm if citing the detailed investigation and 1,271 mm if citing the press summary.
+
+##### Project cost — three official values, apparently covering different stages or scopes
+
+No verified final close-out account has yet been found. Do **not** write “the Maokong Gondola cost NT$X” without explaining which official figure is being used.
+
+**Value A: approximately NT$1.3 billion — described as “total cost” by the Control Yuan.**
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High that the report gives this figure; Medium on precise accounting scope
+**Original-language evidence:** 「總費用約13億元。」
+
+**Value B: approximately NT$1.18 billion — described prospectively as “project construction expenditure” in a 2006 mayoral policy report.**
+
+**Source title in English:** *Policy Report to the Seventh Session of the Ninth Taipei City Council — Mayor Ma Ying-jeou*
+**Original-language title:** 「市議會第9屆第7次大會施政報告[馬市長英九]」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=D07E52F0FF169E83&s=08021C99C0A64FAA&sms=4F76BD4E1FD15647
+**Type:** PRIMARY
+**Confidence:** High for the contemporary estimate; Medium as a final-cost figure
+**Original-language evidence:** 「本案工程經費約為11億8,000萬元。」
+
+**Value C: NT$1,108,870,438 — used by the Control Yuan when criticizing the failure of geological planning for the constructed system.**
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High that this exact figure appears; Medium on accounting scope until the underlying contract is read
+**Original-language evidence:** 「耗資新台幣11億887萬438元興建之貓纜系統。」
+
+**Likely measurement distinction:** NT$1.108870438 billion appears likely to be a contract/construction amount; NT$1.18 billion is a contemporary overall project-budget estimate; approximately NT$1.3 billion may encompass a broader “total cost” scope. This is an inference only. The tender award, contract changes and final settlement documents are required before harmonizing them.
+
+##### Route length — official values differ by rounding/precision
+
+**Value A: 4.033 km.**
+
+**Source title in English:** *Maokong Gondola Frequently Asked Questions*
+**Original-language title:** 「貓空纜車常見問答」
+**Publisher:** 北捷遊憩事業股份有限公司 / Maokong Gondola official site
+**URL:** https://www.gondola.taipei/News_Content.aspx?n=71C9D5481AA0C06E&s=DD0CD899ACDC0A32&sms=87415A8B9CE81B16
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「貓空纜車系統全長4.033公里。」
+
+**Value B: 4.03 km.**
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「貓空纜車全線4.03公里。」
+
+**Value C: 4.1 km.**
+
+**Source title in English:** *Wenshan District Chronology*
+**Original-language title:** 「大事記」
+**Publisher:** 臺北市文山區公所 / Wenshan District Office
+**URL:** https://wsdo.gov.taipei/cp.aspx?n=3D33E9D6085135B8
+**Type:** PRIMARY
+**Confidence:** High that the district page gives this rounded value; Low as the preferred engineering length
+**Original-language evidence:** 「總長4.1公里。」
+
+**Assessment:** These appear to be precision/rounding variants, not different alignments. For an engineering/reference statement, 4.033 km is the most precise operator value found, but the other official values should remain in the research record.
+
+##### Characterization of the T16 event — “undermined/washed out” versus no tower displacement
+
+Taipei City later used the shorthand 「T-16塔柱淘空」 in a policy report, while the more detailed Control Yuan investigation describes loss of surface soil and exposed piles but says the tower had no obvious tilt or displacement.
+
+These descriptions are not necessarily physically contradictory, but English translation can easily turn them into one.
+
+**Source title in English:** *Policy Report to the Fifth Session of the Tenth Taipei City Council — Mayor Hau Lung-bin*
+**Original-language title:** 「市議會第10屆第5次大會施政報告[郝市長龍斌]」
+**Publisher:** 臺北市政府 / Taipei City Government
+**URL:** https://www.gov.taipei/News_Content.aspx?n=D07E52F0FF169E83&s=C9D31D03CAAB075C&sms=4F76BD4E1FD15647
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「造成T-16塔柱淘空、附近邊坡崩塌。」
+
+**Source title in English:** *Investigation Report: Allegation that the Maokong Gondola T16 Tower Was Tilting*
+**Original-language title:** 「據訴：臺北市貓空纜車T16塔柱傾斜……」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54531
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「沒有明顯傾斜位移。」
+
+**Publication treatment:** “The slope below T16 failed, exposing several metres of the foundation/piles; investigators found no obvious tower tilt or displacement” is closer to the primary record than “T16 collapsed.”
+
+##### Adequacy of the 69.9-metre-offset T16 borehole — unresolved company-versus-Control Yuan dispute
+
+The Control Yuan concluded that the large offsets between boreholes and tower centers made the geological samples non-representative for design purposes, with BH-26/T16 specifically 69.9 metres apart.
+
+A 2009 web mirror purports to reproduce a Taiwan CECI statement defending the borehole placement on grounds including site access/land constraints and asserting that the geology was consistent with later investigation. An original Taiwan CECI-hosted copy has **not** been found, so the company position has not been promoted to an established source in this file.
+
+**Verified side:**
+
+**Source title in English:** *Correction Case Document*
+**Original-language title:** 「糾正案文」
+**Publisher:** 監察院 / Control Yuan
+**URL:** https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/63975
+**Type:** PRIMARY
+**Confidence:** High
+**Original-language evidence:** 「根本不具代表性及設計參考價值。」
+
+**Unverified opposing lead:**
+
+**Source title in English:** *Taiwan CECI Engineering Consultants Statement, 2009-01-23*
+**Original-language title:** 「台灣世曦工程顧問公司聲明98/1/23」
+**Publisher:** Hanreporter blog mirror; purportedly reproducing 台灣世曦工程顧問股份有限公司
+**URL:** https://hanreporter.blogspot.com/2009/01/98123.html
+**Type:** SECONDARY mirror
+**Confidence:** Low pending original-company copy
+**Original-language evidence:** Not accepted as publication evidence pending retrieval of the original statement.
+
+**State:** Contradicted as a lead; not publishable as a balanced company-vs-auditor dispute until the original CECI statement is recovered.
+
+#### Checked and failed
+
+##### 2026-08-15 — Taipei Metro annual-report PDF could not be opened through the research interface
+
+A search located a Taipei Rapid Transit Corporation annual report whose indexed text referred to the October 1, 2008 Maokong Gondola suspension.
+
+**Source title in English:** *Taipei Rapid Transit Corporation Annual Report*
+**Original-language title:** Exact edition title TBC from full PDF
+**Publisher:** 臺北大眾捷運股份有限公司
+**URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/092115594480.pdf
+**Type:** PRIMARY
+**Confidence:** Not applicable — failed check
+**Result:** The full file fetch failed because the PDF exceeded the web tool's permitted content size (approximately 18.4 MB). The search-result snippet was **not used as evidence**. The suspension date is instead supported above by a fully opened Department of Transportation page and Public Transportation Office statistics.
+
+##### 2026-08-15 — Geological Survey article metadata opened, but the linked full article failed
+
+The government geological-reference catalogue has an entry for a 2009 article specifically on T16.
+
+**Source title in English:** *Slope Failure at the Foundation of T16 Tower, Maokong Gondola*
+**Original-language title:** 「貓空纜車T16塔基邊坡崩塌」
+**Publisher:** 經濟部地質調查及礦業管理中心 catalogue; article by 黃鑑水、楊賢德, originally associated with 中央地質調查所
+**URL:** https://twgeoref.gsmma.gov.tw/GipOpenWeb/wSite/ct?ctNode=289&mp=6&xItem=95357
+**Type:** PRIMARY metadata / institutional bibliography; article not read
+**Confidence:** Not applicable — failed full-text check
+**Result:** The catalogue page was readable, but following its 「本文」 full-text link returned an internal error. No geological claim in this file relies on the article.
+
+##### 2026-08-15 — Standalone four-professional-association T16 appraisal not recovered
+
+The Control Yuan states that Taipei City commissioned the Taipei professional associations for civil, geotechnical, soil-and-water-conservation and structural engineering and that they completed a final appraisal on December 11, 2008.
+
+**Document sought:** 「臺北市文山區萬壽路75巷政大御花園薔蜜風災土石崩塌鑑定報告」
+**Publisher/authoring bodies:** Four professional engineering associations, exact cover-page formulation TBC
+**URL:** TBC
+**Type:** Would be PRIMARY technical evidence
+**Confidence:** Not found
+**Result:** The Control Yuan investigation reproduces important findings from this report, but a directly opened standalone copy was not obtained. Accordingly, engineering conclusions above are attributed to the **Control Yuan's investigation/adoption of the appraisal**, not presented as directly checked quotations from the four-association original.
+
+##### 2026-08-15 — Standalone Taipei City Government Ethics Department investigation not recovered
+
+The Control Yuan identifies a city internal report completed January 7, 2009:
+
+**Document sought:** 「臺北市貓空纜車系統T16塔柱選址及地質鑽探專案調查報告」
+**Publisher:** 臺北市政府政風處
+**URL:** TBC
+**Type:** Would be PRIMARY
+**Confidence:** Not found as a directly accessible standalone report
+**Result:** Its existence and conclusions are quoted/described in the Control Yuan report and in a Taipei mayoral policy report, but the underlying report itself has not been independently read.
+
+##### 2026-08-15 — Taipei City January 23, 2009 press-release copy failed to open
+
+A Taipei City search result was found for:
+
+**Source title in English:** *City Confirms Relocation of Maokong Gondola T16 and Releases Government-Ethics Investigation Results; Mayor Hau Apologizes*
+**Original-language title:** 「市府確定貓纜T-16塔柱遷移並公布政風調查結果，導致社會大眾不安，郝市長鞠躬致歉」
+**Publisher:** 臺北市政府
+**URL:** https://english.udd.gov.taipei/News_Content.aspx?n=DD9CEC17A97FBC64&s=490B8ADF9EE6ECE4&sms=72544237BBE4C5F6
+**Type:** PRIMARY
+**Confidence:** Not applicable — failed check
+**Result:** Opening the page returned an internal error. Search-result text was not used. The January 23 relocation date and city-ethics conclusion are instead supported by the fully opened mayoral policy report.
+
+##### 2026-08-15 — Original Taiwan CECI January 23, 2009 statement not found on an official company source
+
+Searches were run for the alleged CECI response to the T16 criticism on CECI/company domains. No surviving official copy was retrieved. A blog mirror titled 「台灣世曦工程顧問公司聲明98/1/23」 was found and read as a lead but is not accepted as a primary source.
+
+**Mirror URL:** https://hanreporter.blogspot.com/2009/01/98123.html
+**Type:** SECONDARY mirror
+**Confidence:** Low
+**Reason failed:** Provenance of the reproduced statement has not been independently verified against a CECI-hosted publication or archived company document.
+
+This leaves the professional dispute over whether BH-26's 69.9-metre offset was nevertheless geologically useful incompletely sourced from the company's side.
+
+##### 2026-08-15 — Audit Office search did not yield a directly relevant T16 audit report
+
+Traditional-Chinese searches targeting 審計部 / audit.gov.tw for 「貓空纜車 T16」 did not surface a directly relevant Audit Office audit report comparable with the Control Yuan investigation.
+
+**Document:** TBC
+**Publisher:** 審計部 / National Audit Office
+**URL:** TBC
+**Type:** Would be PRIMARY
+**Confidence:** Not found
+**Reason:** No directly relevant result was recovered from the Audit Office domain in the searches performed. This is a negative search result, not proof that no such audit material exists.
+
+##### 2026-08-15 — Search for final court/prosecutorial outcome of the T16 contractor referrals did not settle the question
+
+The Control Yuan Gazette establishes that by 2010 Taipei City had referred matters concerning Taiwan CECI and Chun Yuan to the Taipei District Prosecutors Office and was pursuing contractual remedies. Searches of the judiciary/prosecutorial issue did not recover a final judgment or prosecutorial disposition that could confidently be matched to those **specific T16 geotechnical-report referrals**.
+
+**Primary status source:** 「監察院公報 第2796期」
+**Publisher:** 監察院
+**URL:** https://www-ws.cy.gov.tw/Download.ashx?icon=..pdf&n=MTAxMDAwMDA5Mjc5NijlhagpLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvQ3lPbGRGaWxlL09wX1VwbG9hZC9lRG9jL%2BWFrOWgsS8xMDEvMTAxMDAwMDA5Mjc5NijlhagpLnBkZg%3D%3D
+**Type:** PRIMARY
+**Confidence:** High for referral status, none for final outcome
+**Original-language evidence:** 「本府業函送臺北地檢署偵辦中。」
+
+##### 2026-08-15 — A 2017 non-prosecution story is about a different Maokong Gondola complaint and does not settle the T16 referrals
+
+A Central News Agency report initially looked potentially relevant to criminal accountability but concerns allegations against former mayor Ma Ying-jeou involving breach of trust/profiteering and matters surrounding the original opening, PCM management, acceptance and maintenance arrangements. It is not, on the face of the article, a final disposition of the later T16-specific referrals of Taiwan CECI and Chun Yuan described in the Control Yuan follow-up.
+
+**Source title in English:** *Maokong Gondola Corruption Case: Ma Ying-jeou Receives Non-Prosecution Disposition*
+**Original-language title:** 「貓纜貪瀆案 馬英九獲不起訴處分」
+**Publisher:** 中央通訊社 / Central News Agency
+**URL:** https://www.cna.com.tw/news/firstnews/201704275009.aspx
+**Type:** SECONDARY
+**Confidence:** High that it concerns a distinct complaint; Low relevance to the specific T16-referral outcome
+**Original-language evidence:** 「認為馬英九犯罪嫌疑不足，今天予以不起訴處分。」
+
+**Reason rejected for the T16 legal-outcome question:** different accused party/allegations and no demonstrated identity with the 2009–2010 contractor referrals.
+
+##### 2026-08-15 — No official source was recovered for an exhaustive list of every 2007–2008 short operational stoppage
+
+Taiwanese news and secondary chronology material contain numerous references to opening-period stoppages, lightning interruptions, equipment trouble and an October 2007 cable-related closure. Those leads were not elevated into this file because a complete operator/government primary chronology was not recovered and opened for each event.
+
+**Status:** Not found as an authoritative, exhaustive primary chronology.
+**Publication consequence:** Do not say that the October 2008–March 2010 closure was “the first time Maokong Gondola ever stopped operating.” It was the major prolonged T16-related suspension; short earlier interruptions require separate primary-source verification.
+
+#### Stated gaps
+
+##### Final, scope-defined construction cost remains TBC
+
+Three official figures have been found: approximately NT$1.3 billion, approximately NT$1.18 billion and NT$1,108,870,438. They appear to represent different accounting scopes or stages, but that has not been proved.
+
+**Document that would settle it:** the original design-build tender/award record, all contract-change records, project-management and supervision contracts, land/ancillary costs where applicable, and the final project close-out/settlement account from the New Construction Office.
+
+**Current state:** Contradicted values retained; no single “final cost” is established.
+
+##### Exact chronology of the September 27–28, 2008 failure remains TBC
+
+The detailed Control Yuan report begins the T16-downslope failure on September 27; Taipei City public accounts commonly identify September 28 and Typhoon Jangmi.
+
+**Documents that would settle it:** the December 11, 2008 four-association appraisal in full, contemporaneous New Construction Office/Geotechnical or disaster-response field logs, timestamped monitoring data, and Emergency Operations Center records.
+
+**Current state:** Contradicted; both dates must remain in the research file.
+
+##### The original four-association engineering appraisal is still needed
+
+Without the standalone 「臺北市文山區萬壽路75巷政大御花園薔蜜風災土石崩塌鑑定報告」, several important technical statements are confirmed only as things the Control Yuan read, quoted and adopted.
+
+**Document needed:** full December 11, 2008 appraisal, including figures, borehole sections, failure-surface analysis and appendices.
+
+**Current state:** Not found.
+
+##### The original Taipei City political-ethics investigation is still needed
+
+The Control Yuan and Taipei mayoral material establish its existence and summarize its adverse findings, but the January 7, 2009 report has not been directly inspected.
+
+**Document needed:** 「臺北市貓空纜車系統T16塔柱選址及地質鑽探專案調查報告」, 臺北市政府政風處, complete with appendices.
+
+**Current state:** Not found.
+
+##### Taiwan CECI's original response is still needed before publishing the borehole-adequacy dispute as a two-sided controversy
+
+The Control Yuan's position is directly documented. A secondary mirror says CECI argued that access/land constraints explained the offset and that the geology remained representative, but no official CECI copy was recovered.
+
+**Document needed:** 台灣世曦工程顧問股份有限公司 original January 23, 2009 statement or an authenticated archived copy.
+
+**Current state:** Control Yuan side Confirmed; CECI side only a secondary lead.
+
+##### Final legal disposition of the Taiwan CECI and Chun Yuan T16 referrals remains TBC
+
+The city reported criminal referrals and intended civil/contractual action. This research did not establish whether the specific referrals resulted in non-prosecution, indictment, conviction/acquittal, settlement, damages, offsets, contractual penalties or another disposition.
+
+**Documents that would settle it:** Taipei District Prosecutors Office final dispositions identifiable to the referrals; Taipei District Court/civil appellate judgments in the Taiwan CECI service-fee action and any Chun Yuan damages action; New Construction Office settlement or recovery records.
+
+**Current state:** Confirmed that referrals/action were reported as under way in 2010; final outcome Not found.
+
+##### Final actual cost of the T16-1 relocation remains TBC
+
+A Taipei City policy report gave a **pre-work estimate** of approximately NT$21 million for foundation civil works. That is not a final as-built project cost and should not be presented as one.
+
+**Document needed:** T16-1 relocation procurement award, contract-change and final-settlement record from the New Construction Office.
+
+**Current state:** Only the estimate is Confirmed; final cost TBC.
+
+##### A complete operational suspension chronology remains TBC
+
+The Public Transportation Office statistical series provides a strong official list of extended closures from the T16 suspension through the 2010 reopening and then major maintenance/COVID/rope-replacement closures through 2021. It is not demonstrably a complete log of every same-day weather, wind, lightning, mechanical or operational stoppage.
+
+**Document needed:** Taipei Rapid Transit Corporation's historical Maokong Gondola incident/availability database or annual operational-event tables covering July 2007 onward, preferably with start/end times and cause codes.
+
+**Current state:** Major prolonged closures Confirmed; exhaustive all-interruption history Not found.
+
+##### Independent tender-document verification of the construction chronology is still desirable
+
+The May 2, 2005 award, May 3 detailed-design start and November 10 construction start are firmly reported by the Control Yuan, and the November 10 date is independently reflected in Taipei City policy material. The underlying procurement record itself was not recovered during this pass.
+
+**Document needed:** 「臺北市貓空纜車系統新建統包工程」 Government e-Procurement award notice and signed contract.
+
+**Current state:** Chronology Confirmed through high-quality primary institutional sources; original tender record still to be attached to a publication fact file.
