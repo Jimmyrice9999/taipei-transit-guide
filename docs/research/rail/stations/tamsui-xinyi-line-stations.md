@@ -236,6 +236,33 @@ returned a cache-miss failure. No new route-level claim was promoted from
 that failed fetch; the route material already established earlier in this
 file remains separately sourced and dated.
 
+### Station-prose audit — R14–R19 batch, 17 August 2026
+
+The full TRTC station pages for R14–R19 were fetched and read on 17 August
+2026. The full DORTS engineering-book page for this elevated station group and
+the line’s public-art material were checked against the existing research
+record. R14 Yuanshan, R15 Jiantan, R16 Shilin, R17 Zhishan, R18 Mingde and R19
+Shipai remain correctly empty: the full pages add current exit and facility
+context, while the engineering material supplies line-group platform/structure
+details already represented in specs, not a station-specific siting decision,
+prior-site history, exit decision, rename, incident or local-history narrative
+for body prose. No image or linked station sheet was fetched.
+
+| Station | Result | Full station page |
+|---|---|---|
+| R14 Yuanshan | Correctly empty | https://web.metro.taipei/pages2026/WebStation/056/1 |
+| R15 Jiantan | Correctly empty | https://web.metro.taipei/pages2026/WebStation/057/1 |
+| R16 Shilin | Correctly empty | https://web.metro.taipei/pages2026/WebStation/058/1 |
+| R17 Zhishan | Correctly empty | https://web.metro.taipei/pages2026/WebStation/059/1 |
+| R18 Mingde | Correctly empty | https://web.metro.taipei/pages2026/WebStation/060/1 |
+| R19 Shipai | Correctly empty | https://web.metro.taipei/pages2026/WebStation/061/1 |
+
+The shared full engineering source is DORTS, `捷運工程叢書 精進版－34
+捷運高架車站建築造型設計`, PRIMARY, High confidence,
+https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page43.html.
+It was used only for the elevated-group facts already recorded; no additional
+sentence survived the station-specific prose test.
+
 ### Engineering and landmarks
 
 The official engineering-book page documents Jiantan’s suspended column-free
