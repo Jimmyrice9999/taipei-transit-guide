@@ -297,6 +297,24 @@ The operator pages were read for current station context and the builder pages
 for construction, architecture, art and route history. The results are
 recorded as correctly empty rather than padded with route-level facts.
 
+### O07–O12 Zhongxiao Xinsheng through Daqiaotou
+
+The full DORTS station-design pages were fetched and read for all six
+stations. O08 received prose about its banking-and-finance setting and
+commuting passengers; O09 received prose about the consumption-oriented
+commercial stretch and Songjiang Road street-making plan; O12 received prose
+about Dihua Street arcades, Daqiao Elementary School’s song and the directional
+themes of its eight platform-wall paintings. O07, O10 and O11 remain correctly
+empty because their full pages add no station-specific context beyond the
+design facts already recorded.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=0F40A754FDE16633 — PRIMARY, High confidence; O07 original evidence: `本站內部裝修，因車站基地緊臨臺北科技大學及光華商場資訊商圈`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=3E757BE805D81177 — PRIMARY, High confidence; O08 original evidence: `本站位於臺北市中山區主要商業辦公地帶，尤以銀行及金融業者居多，進出之旅客以通勤之上班族為主`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=8A210F80A944AAE0 — PRIMARY, High confidence; O09 original evidence: `本站屬位於消費性商業路段` and `以配合松江路造街計畫所訴求：快樂、希望的生活空間為設計原則`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=C6803452E573ECF0 — PRIMARY, High confidence; O10 original evidence: `本站以「童話世界」的設計主題`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=581BAEA5E045EE90 — PRIMARY, High confidence; O11 original evidence: `延續舊臺北後站風華氣息與都會發展`.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635 — PRIMARY, High confidence; O12 original evidence: `將迪化街市集街屋的騎樓框井意象融入空間規劃`, `以大橋國小校歌為素材` and `向新莊/蘆洲方向之主題為「水」`.
+
 ---
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`

@@ -220,6 +220,19 @@ const oData: Record<string, OData> = {
   O54: { engineering: 'O43', exits: 3, openingDate: '3 November 2010', route: dortsLuzhou, platformDetails: underground, platformSource: dortsLuzhou, exitDetails: '1: 三民路386號，近中正路口; 2: 捷運廣場; 3: 三民路、中正路口，近中正路側. Accessible exit: 2.', facilities: 'Exit 2 lift; paid-concourse platform lift; enquiry points near exits 1 and 3; unpaid toilet near exit 1 and paid toilet by the platform lift; parent/accessible toilet by the platform lift; nursing room in the paid hall; baby-changing facilities; bicycle access open.', landmarks: tbc, design: 'The station theme is 迎風起舞 (“dancing in the wind”), the Luzhou branch’s wind sub-theme, expressed through a double-curve vocabulary.', designSource: architecture.o54 },
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  O08: [
+    { text: 'DORTS describes Songjiang Nanjing as a banking-and-finance district whose predominant passengers are commuting office workers, so its design translates the rhythms of busy urban life into the station.', source: architecture.o08.id },
+  ],
+  O09: [
+    { text: 'DORTS distinguishes Xingtian Temple as a consumption-oriented commercial stretch where office workers and shoppers circulate, and ties the station’s design to the Songjiang Road street-making plan’s hoped-for happy, hopeful public space.', source: architecture.o09.id },
+  ],
+  O12: [
+    { text: 'DORTS records Daqiaotou’s unpaid concourse as an evocation of Dihua Street’s market arcades, using layered frames for depth; frosted stair glass carries part of Daqiao Elementary School’s song.', source: architecture.o12.id },
+    { text: 'Its eight platform-wall paintings separate travel directions: water toward Xinzhuang and Luzhou, and Taipei city views toward the east.', source: architecture.o12.id },
+  ],
+}
+
 function makeResearch(code: string, data: OData): StationResearch {
   const stationSource = trtcStation(code)
   const structureSource = data.structureSource ?? data.route
@@ -257,6 +270,6 @@ function makeResearch(code: string, data: OData): StationResearch {
 export const ZHONGHE_XINLU_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(oData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, prose: data.prose ?? [] }]
+    return [code, { structure: 'underground' as Structure, engineering: data.engineering, exits: data.exits, research, sources: research.sources, prose: [...(data.prose ?? []), ...(stationProse[code] ?? [])] }]
   }),
 ) as Record<string, StationOverlay>
