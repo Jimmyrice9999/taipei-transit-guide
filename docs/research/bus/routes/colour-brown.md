@@ -311,6 +311,152 @@ opening or original corridor decision.
 - **棕11:** opening date, former alignment, original corridor rationale and dated
   operator changes are TBC; the 2013 stop cancellation is established.
 
+## Batch 3 — 棕11副, 棕12, 棕13 and 棕15, checked 17 August 2026
+
+The four route pages and the dated PTO records below were fetched in full.
+They establish current service and several later adjustments. They do not, by
+themselves, establish the routes’ opening decisions or original corridor
+rationales.
+
+### 棕11副 / BR11Sub
+
+The full official route-and-stop page gives `富德 - 福興路`, weekday and holiday
+service `0600 - 0000`, one-section fare and `欣欣客運富德站`.
+
+- **Source:** “BR11Sub route and stop information” /
+  `titleOriginal`: `棕11副路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001110
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 富德 - 福興路`;
+  `頭末班車 : [平日] 0600 - 0000 / [假日] 0600 - 0000`;
+  `收費方式 : 一段票`; and `業者服務電話 : 欣欣客運富德站`.
+
+The PTO’s full 2012 chronology records `棕 11 副線延駛文山區福興路` on 4 August
+2012. The full 2013 supplementary operating-plan PDF separately records the
+parent and sub-line cancellation of `萬壽橋頭(木柵)` effective 31 December
+2013. These are route adjustments, not the opening record or original rationale.
+
+- **Source:** “Taipei Public Transportation Office 2012 chronology” /
+  `titleOriginal`: `臺北市公共運輸處大事紀要(101 年)`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm
+- **Kind/confidence:** PRIMARY; High — full official four-page chronology read.
+- **Original-language text read:** `8月 4日 棕 11 副線延駛文山區福興路`.
+
+- **Source:** “November 2013 supplementary approved bus operating-plan adjustments” /
+  `titleOriginal`: `102年11月份營運計畫調整(補充)`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf
+- **Kind/confidence:** PRIMARY; High — full official three-page PDF read.
+- **Original-language text read:** `102/12/31 棕11(含副) 取消「萬壽橋頭(木柵)」站`.
+
+### 棕12 / BR12
+
+The full official route-and-stop page gives `景美 - 客家文化主題公園`, weekday
+and holiday service `0600 - 0000`, a one-section fare and `欣欣客運景德站`.
+
+- **Source:** “BR12 route and stop information” / `titleOriginal`: `棕12路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001200
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 景美 - 客家文化主題公園`;
+  `頭末班車 : [平日] 0600 - 0000 / [假日] 0600 - 0000`;
+  `收費方式 : 一段票`; and `業者服務電話 : 欣欣客運景德站`.
+
+The full April 2012 PTO plan records that the operating endpoint named
+`交通博物館` was renamed `客家文化主題公園`, effective 23 March 2012.
+
+- **Source:** “April 2012 approved bus operating-plan adjustments” /
+  `titleOriginal`: `101年4月份核定營運計畫調整`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/252117392922.pdf
+- **Kind/confidence:** PRIMARY; High — full official three-page PDF read.
+- **Original-language text read:** `棕12 本市聯營公車棕12營運起訖點[交通博物館]更名為[客家文化主題公園]。`
+  and `2012/3/23`.
+
+### 棕13 / BR13
+
+The full official route-information page gives `雙溪 - 捷運大直站`, weekday and
+holiday service `0600~2315`, `首都客運士林站`, and a weekday sub-route that does
+not serve `外雙溪(至善)` on Wednesday and Friday at 1700 and 1720.
+
+- **Source:** “BR13 route information” / `titleOriginal`: `棕13路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114001300
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `起訖站名：雙溪 - 捷運大直站`;
+  `平日：0600~2315` and `假日：0600~2315`;
+  `棕13不經外雙溪(至善)週三及週五班表:1700 1720`;
+  and `業者服務電話 : 首都客運士林站`.
+
+The full March 2012 PTO plan records a service reduction for 棕13, approved
+effective 1 February 2012. It does not state the reason for the reduction.
+
+- **Source:** “March 2012 approved bus operating-plan adjustments” /
+  `titleOriginal`: `101年3月份核定營運計畫調整`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf
+- **Kind/confidence:** PRIMARY; High — full official three-page PDF read.
+- **Original-language text read:** `棕13 棕13路公車調降班次一案，核定自101年2月1日起正式實施。`
+
+### 棕15 / BR15
+
+The full official schedule page gives `富德 - 貓空纜車站`, weekday service
+0600–2300, holiday service 0600–0000, one-section fare, `欣欣客運富德站`, and
+the safety-dependent instruction that the 水鋼琴社區–貓空 mountain section is
+served on a hail-and-ride basis when conditions are safe.
+
+- **Source:** “BR15 route schedule” / `titleOriginal`: `棕15班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001500
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 富德 - 貓空纜車站`;
+  `頭末班車 : [平日] 0600 - 2300 / [假日] 0600 - 0000`;
+  `業者服務電話 : 欣欣客運富德站`; and `水鋼琴社區至貓空地區山區路段，於安全無虞狀況下隨招隨停`.
+
+The full April 2018 PTO plan records an addition of `政大(聯合醫院)` and the
+cancellation of `政大一` in the southbound direction, effective 26 April 2018.
+The full March 2022 plan records a northbound `水鋼琴社區` stop addition for
+棕15 and related routes, effective 17 March 2022.
+
+- **Source:** “April 2018 approved bus operating-plan adjustments” /
+  `titleOriginal`: `107年4月份營運計畫調整`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/57acc21d-fdf2-4386-a9ab-cce8040fbae3.pdf
+- **Kind/confidence:** PRIMARY; High — full official two-page PDF read.
+- **Original-language text read:** `107/04/26 棕15 新增「政大(聯合醫院)」站及取消「政大一」站(往南)`.
+
+- **Source:** “March 2022 approved bus operating-plan adjustments” /
+  `titleOriginal`: `111年3月份營運計畫調整`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/42ca36d2-ba63-4cf6-aed5-8aa65218430c.pdf
+- **Kind/confidence:** PRIMARY; High — full official two-page PDF read.
+- **Original-language text read:** `111/03/17 棕15、通勤21、貓空左線(動物園)、棕5、小10(含區) 增設「水鋼琴社區」站(往北)。`
+
+### What remains TBC
+
+- **棕11副:** opening date, earlier alignment, original corridor rationale and
+  dated operator transfers are TBC; the 2012 extension and 2013 stop change are
+  established.
+- **棕12:** opening date, earlier alignment, original corridor rationale and
+  dated operator transfers are TBC; the 2012 endpoint rename is established.
+- **棕13:** opening date, earlier alignment, original corridor rationale, the
+  reason for the 2012 service reduction and dated operator transfers are TBC.
+- **棕15:** opening date, earlier alignment, original corridor rationale and
+  dated operator transfers are TBC; the 2018 and 2022 stop adjustments are
+  established.
+
 ## Negative case — brown wording was tested explicitly
 
 All 20 records were checked by Chinese and English route name, then against the
@@ -367,7 +513,7 @@ NWT197324, NWT199762 and NWT199764 新店站.
 ## Checked and failed
 
 - **A complete 2024 棕2 route-change record** — The search result identified a PTO PDF lead, but the full PDF fetch failed with a cache miss; no claim was published from the snippet. Checked 17 August 2026.
-- **Dated route-history, corridor-rationale and operator-change records for the 16 pilot routes** — The batch-1 and batch-2 checks found a partial pre-2009 shortening record for 棕1, two 2012 stop adjustments for 棕5, and a 2013 stop cancellation for 棕11 (including its sub-line). They did not establish the remaining opening histories, original corridor decisions or dated operator changes for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; those fields remain TBC rather than being inferred from current stops or operators. Checked 17 August 2026.
+- **Dated route-history, corridor-rationale and operator-change records for the 16 pilot routes** — The batch-1 through batch-3 checks found a partial pre-2009 shortening record for 棕1, two 2012 stop adjustments for 棕5, a 2013 stop cancellation for 棕11 (including its sub-line), the 2012 棕11副 extension and stop change, the 2012 棕12 endpoint rename, the 2012 棕13 service reduction, and the 2018/2022 棕15 stop adjustments. They did not establish the remaining opening histories, original corridor decisions or dated operator changes for 棕1, 棕2, 棕3, 棕5, 棕6, 棕7, 棕7建業路, 棕11, 棕11副, 棕12, 棕13, 棕15, 棕18, 棕19, 棕21 and 棕22; those fields remain TBC rather than being inferred from current stops or operators. Checked 17 August 2026.
 
 ## Stated gaps
 

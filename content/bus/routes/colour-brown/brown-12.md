@@ -1,7 +1,7 @@
 ---
 title: BR12 / 棕12
 summary: Brown-line feeder pilot route BR12 (棕12).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕12 under 捷運棕線接駁公車.
+  - id: ebus-br12
+    title: BR12 route and stop information
+    titleOriginal: 棕12路線資訊
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001200
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official route-and-stop page listing the current 景美–客家文化主題公園 corridor, service pattern, stops and 欣欣客運景德站 contact.
+  - id: pto-101-br12
+    title: April 2012 approved bus operating-plan adjustments
+    titleOriginal: 101年4月份核定營運計畫調整
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://www-ws.gov.taipei/001/Upload/public/Attachment/252117392922.pdf
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official PDF recording that the 棕12 endpoint 交通博物館 was renamed 客家文化主題公園 effective 23 March 2012.
 ---
 
 ## Classification
@@ -46,7 +64,7 @@ The official 大臺北公車 catalogue lists 棕12 under 捷運棕線接駁公�
 
 The committed TDX bus snapshot supplies the changing structural fields shown above; route length and timetable fields are TBC where that layer does not publish them.[^tdx-bus]
 
-- Route history: TBC.
-- Corridor decision: TBC.
+- Route history: Partial — the PTO records the endpoint rename from 交通博物館 to 客家文化主題公園 effective 23 March 2012; opening and earlier alignment remain TBC.[^pto-101-br12]
+- Corridor decision: TBC — the current 景美–客家文化主題公園 corridor is published, but its original rationale was not.[^ebus-br12]
 - Unusual branch or short working: TBC.
-- Operator changes: TBC.
+- Operator changes: TBC — the current page names 欣欣客運景德站, but no dated transfer record was found.[^ebus-br12]
