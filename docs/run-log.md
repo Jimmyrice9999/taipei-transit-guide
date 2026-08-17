@@ -7529,3 +7529,38 @@ not built in this brown-only pilot.
 Verification: `npm run cite`, `npm run verify`, and `npm test` all passed; the
 full test suite reports 185/185. The final data assertion found 20 brown routes,
 20 crosswalk route records, 74 exact StopUID joins, and zero invalid joins.
+
+# Run 26 — External research-lead migration, 15 August 2026
+
+Processed the ten untracked `docs/research/deep-research-report*.md` lead files
+after confirming that `docs/research/incoming/` was absent. Identified subjects:
+Tamsui–Xinyi, Songshan–Xindian, Zhonghe–Xinlu, Bannan, Blue Highway, MRT depots,
+MRT rolling stock, the joint bus network, Circular Line, and Maokong Gondola.
+Merged each into the existing destination research file, preserving existing
+checked-failure entries and retaining the complete external report as a clearly
+marked unverified appendix. No `content/` pages were written.
+
+Sample checks read full pages from DORTS, PTO, TRTC, the Control Yuan, and the
+Taipei bus association. Failures not promoted as verified: the Blue Highway
+report had no citation URLs; the incoming PTO bus-history URL returned an
+internal error and was replaced for the sample check by a secondary association
+page; and the incoming Maokong Control Yuan download URL resolved to an unrelated
+2001 report template. The transfer records retain source conflicts rather than
+resolving them.
+
+The ten root lead files were removed after migration; `docs/research/incoming/`
+did not exist and therefore had no leftover contents to delete. `npm run research`
+passed (33 files, 136 checked failures), `npm run cite` passed, and `npm run claims`
+reported 1,018 sourced, 115 TBC, and 32 asserted claims; the claims baseline was
+not changed.
+
+# Run 27 — Organization audit, Part 0, 17 August 2026
+
+Measured body prose in all 192 station pages from the station-page template,
+excluding the facts panel, route map and caption, train table, labels, navigation,
+references and other structured display text. The result is n=192, average 1.7,
+min 0, p25 0, median 0, p75 0 and max 27 words. The histogram is 0–99: 192;
+no page reaches 100 words. The twelve LB pages each contain the only non-zero
+free-running paragraph, at 27 words; every page on A, BL, BR, G, K, O, R, V and Y
+is 0 by this definition. The run-log claim of roughly 750 words therefore counts
+rendered structured content rather than body prose. No station content was changed.
