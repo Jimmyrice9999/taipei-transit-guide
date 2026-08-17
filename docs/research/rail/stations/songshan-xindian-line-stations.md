@@ -201,6 +201,27 @@ construction method.
   https://web.metro.taipei/pages2026/WebStation/032/1,
   https://web.metro.taipei/pages2026/WebStation/036/1,
   https://web.metro.taipei/pages2026/WebStation/037/1
+- **G06 Wanlong, G07 Gongguan, G08 Taipower Building and G09 Guting:** The
+  full DORTS New Store route page and full TRTC station pages were checked.
+  They supplied route chronology and current exit/facility information already
+  represented in the facts and specs, but no additional station-specific
+  siting, prior-site, exit-decision, naming, incident or local context suitable
+  for body prose. These four pages correctly remain empty. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94
+  and https://web.metro.taipei/pages2026/WebStation/038/1 through
+  https://web.metro.taipei/pages2026/WebStation/041/1
+- **G10 Chiang Kai-Shek Memorial Hall:** The full DORTS New Store route page
+  and full TRTC G10 page were checked. The route page’s current DORTS spelling
+  conflict is already recorded in the facts and conflicts sections, but it did
+  not provide additional station prose, so the page remains empty. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94
+  and https://web.metro.taipei/pages2026/WebStation/042/1
+- **G11 Xiaonanmen:** The full DORTS Xiaonanmen page explains that the route
+  was shortened to avoid construction difficulty and wasted future investment,
+  while serving passengers and allowing Bannan Line trains to reach Beitou
+  Depot for maintenance. Original evidence: `唯為避免施工困難與未來投資之浪費` and
+  `以利藍線車輛過軌到北投機廠進行車輛維修，同時兼供營運之用`. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=71acc5b0cdffc313&s=9A7448733F1518F5
 
 ### Depot
 

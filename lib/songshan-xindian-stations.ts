@@ -318,6 +318,9 @@ const gData: Record<string, GData> = {
     naming: 'The route page describes Xiaonanmen as the original maintenance track (原維護軌); public station-name history: TBC.', namingSource: dortsXiaonanmen,
     engineeringHistory: 'Xiaonanmen was designed and built with the Nangang Line under DL171, CN251 and CN254A so Bannan Line trains could reach Beitou Depot for maintenance. It opened as a separate line in 2000 and joined the Songshan–Xindian service in 2014.',
     engineeringHistorySource: dortsXiaonanmen,
+    prose: [
+      { text: 'DORTS says the route was shortened to avoid construction difficulty and wasted future investment, while still letting Bannan Line trains reach Beitou Depot for maintenance and carrying passengers in service.', source: dortsXiaonanmen.id },
+    ],
   },
   G12: {
     structure: 'underground', engineering: 'G13', exits: 6, openingDate: '15 November 2014',
