@@ -19,7 +19,7 @@
  */
 
 import { GENERATED_STATIONS, PROVENANCE } from './stations.generated.ts'
-import { STATION_OVERLAY, type Structure } from './station-overlay.ts'
+import { STATION_OVERLAY, type StationProseSentence, type Structure } from './station-overlay.ts'
 import { SANYING_STATIONS } from './sanying-stations.ts'
 import type { StationResearch } from './station-research.ts'
 import type { Source } from './sources.ts'
@@ -51,6 +51,8 @@ export type Station = {
   location: string
   locationSource: string
   sources: Source[]
+  /** Station-specific prose; unlike facts/specs, this explains the station's context. */
+  prose?: StationProseSentence[]
   lat: number | null
   lon: number | null
   /** Position along the line, 1-based. */
@@ -85,6 +87,7 @@ export const STATIONS: Station[] = [
       location: overlay?.location ?? '',
       locationSource: overlay?.locationSource ?? '',
       sources: overlay?.sources ?? [],
+      prose: overlay?.prose ?? [],
       planned: overlay?.planned ?? [],
       recordSource: 'tdx' as const,
       research: overlay?.research ?? null,

@@ -28,6 +28,13 @@ import { ZHONGHE_XINLU_OVERLAY } from './zhonghe-xinlu-stations.ts'
 
 export type Structure = 'elevated' | 'at-grade' | 'underground' | 'unknown'
 
+export type StationProseSentence = {
+  /** One complete body sentence; the renderer places its citation immediately after it. */
+  text: string
+  /** Source id for this sentence. */
+  source: string
+}
+
 export type StationOverlay = {
   structure?: Structure
   /**
@@ -46,6 +53,8 @@ export type StationOverlay = {
   locationSource?: string
   /** Sources used by the generated station page. */
   sources?: Source[]
+  /** Station-specific body prose; each sentence must carry its own source id. */
+  prose?: StationProseSentence[]
   /** Hand-researched station record, where the generated data is too thin. */
   research?: StationResearch
   /**

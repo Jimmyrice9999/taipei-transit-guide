@@ -778,6 +778,20 @@ export default async function StationPage({ params }: Props) {
           </p>
         )}
 
+        {station.prose && station.prose.length > 0 && (
+          <div className="prose station-prose">
+            <p>
+              {station.prose.map((sentence, index) => (
+                <span key={`${station.code}-${index}`}>
+                  {index > 0 ? ' ' : ''}
+                  <RichText>{sentence.text}</RichText>
+                  <CiteMark id={sentence.source} references={stationReferences} />
+                </span>
+              ))}
+            </p>
+          </div>
+        )}
+
         {/* Adjacent navigation: how people actually read a line. */}
         <nav className="adjacent wide" aria-label="Adjacent stations">
           {previous ? (
