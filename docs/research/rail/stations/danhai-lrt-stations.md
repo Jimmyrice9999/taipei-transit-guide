@@ -102,6 +102,34 @@ No new value conflict was found in this batch. The existing V28 position
 conflict remains published below; V26’s Blue Sea Phase 1 position agrees across
 the current NTMC and DORTS pages.
 
+## Station-prose audit: V27–V28
+
+The two full NTMC station pages, the full DORTS Blue Sea Phase 1 route and
+station pages, the full NTMC route-stamp page and the full NTMC public-art page
+were fetched and read before this final V batch. Neither station received
+prose: the station-specific position and completion material is already in the
+facts box, and no additional station history, construction, naming, incident
+or art record was found.
+
+| Code | Result | Full-page evidence searched | Search result |
+|---|---|---|---|
+| V27 | Correctly empty | NTMC station page, route-stamp and public-art pages; DORTS Blue Sea Phase 1 route/station pages | Blue Sea Phase 1 position and completed status are already in facts; no V27-specific prose source found. |
+| V28 | Correctly empty | NTMC station page, route-stamp and public-art pages; DORTS Blue Sea Phase 1 route/station pages | Blue Sea Phase 1 position and completed status are already in facts; no V28-specific prose source found. The existing NTMC/DORTS position conflict remains published. |
+
+The full pages searched for this batch were:
+
+- NTMC station pages: https://www.ntmetro.com.tw/basic/?mode=detail&node=448,
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=449
+- DORTS Blue Sea Phase 1 route: https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v
+- DORTS Blue Sea Phase 1 station table: https://www.dorts.ntpc.gov.tw/about/routeInfo/LXlR27XkdV8v
+- NTMC route stamps: https://www.ntmetro.com.tw/basic/?node=10133
+- NTMC public art: https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+No new value conflict was found in this batch. The existing V28 position
+conflict is retained below: the current NTMC table gives the east side of the
+濱海路三段–新民街一段 intersection, while the DORTS Blue Sea station table
+gives the east side of the 濱海路三段–中正路二段 intersection.
+
 ## What is established
 
 ### Identity and position
