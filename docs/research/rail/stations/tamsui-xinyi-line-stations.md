@@ -263,6 +263,58 @@ https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page43.html.
 It was used only for the elevated-group facts already recorded; no additional
 sentence survived the station-specific prose test.
 
+### Station-prose audit — R20–R24 plus R22A batch, 17 August 2026
+
+The full TRTC station pages for R20–R24 and R22A were fetched and read on 17 August
+2026. The full DORTS route and station-architecture records already cited in
+this file were checked for station-specific narrative. R20 Qilian, R21 Qiyan,
+R22 Beitou, R22A Xinbeitou, R23 Fuxinggang and R24 Zhongyi remain
+correctly empty: the operator pages add current exits, facilities and branch
+context, while the builder material adds line-group structure or chronology,
+not a station-specific siting decision, prior-site history, construction
+difficulty, rename, incident or local-context narrative suitable for body
+prose. No image or linked station sheet was fetched.
+
+| Station | Result | Full station page |
+|---|---|---|
+| R20 Qilian | Correctly empty | https://web.metro.taipei/pages2026/WebStation/062/1 |
+| R21 Qiyan | Correctly empty | https://web.metro.taipei/pages2026/WebStation/063/1 |
+| R22 Beitou | Correctly empty | https://web.metro.taipei/pages2026/WebStation/064/1 |
+| R22A Xinbeitou | Correctly empty | https://web.metro.taipei/pages2026/WebStation/065/1 |
+| R23 Fuxinggang | Correctly empty | https://web.metro.taipei/pages2026/WebStation/066/1 |
+| R24 Zhongyi | Correctly empty | https://web.metro.taipei/pages2026/WebStation/067/1 |
+
+The checked builder sources were the full route page
+https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768
+and engineering-book pages 43–45 listed above. They add no additional body
+sentence for these six pages; `R22A` remains TBC for a station-specific opening
+date rather than inheriting the main-line chronology.
+
+### Station-prose audit — R25–R28 batch, 17 August 2026
+
+The full TRTC station pages for R25–R28 were fetched and read on 17 August
+2026. The full DORTS route and engineering-book records were checked for
+station-specific narrative. R25 Guandu, R26 Zhuwei, R27 Hongshulin and R28
+Tamsui remain correctly empty: the operator pages add current exits and local
+landmarks, while the builder material adds the northern line-group structure
+and Tamsui terminal design context already represented in the facts and specs,
+not a new station-specific siting, prior-site, construction, rename, incident
+or local narrative suitable for body prose. No image or linked station sheet
+was fetched.
+
+| Station | Result | Full station page |
+|---|---|---|
+| R25 Guandu | Correctly empty | https://web.metro.taipei/pages2026/WebStation/068/1 |
+| R26 Zhuwei | Correctly empty | https://web.metro.taipei/pages2026/WebStation/069/1 |
+| R27 Hongshulin | Correctly empty | https://web.metro.taipei/pages2026/WebStation/070/1 |
+| R28 Tamsui | Correctly empty | https://web.metro.taipei/pages2026/WebStation/071/1 |
+
+The shared engineering source is DORTS, `捷運工程叢書 精進版－34
+捷運高架車站建築造型設計`, PRIMARY, High confidence,
+https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html.
+Its Tamsui-terminal description was already used for the facts/specs and did
+not yield a second prose claim after this station-specific check.
+
 ### Engineering and landmarks
 
 The official engineering-book page documents Jiantan’s suspended column-free
