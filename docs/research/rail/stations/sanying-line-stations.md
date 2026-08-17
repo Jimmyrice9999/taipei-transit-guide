@@ -31,6 +31,71 @@ opening announcement and builder station table were read for each station’s
 existing facts and yielded no additional body prose beyond the items recorded
 above.
 
+## Station-prose audit: LB07–LB12
+
+The following full primary pages were fetched and read on 17 August 2026: the
+DORTS 2026 public-art announcement, the DORTS 2025 public-art announcement,
+the LB08, LB09, LB11 and LB12 individual public-art records, and the DORTS
+2022 LB08 weather-corridor article. The current NTMC station table, opening
+announcement, station information sheets and DORTS route table were also read
+for each station’s existing facts. No image or linked station sheet was fetched
+for this audit.
+
+| Station | Result | What the full pages established or failed to add |
+|---|---|---|
+| LB07 | 1 sentence | The full 2026 DORTS announcement lists `匯聚‧流轉` as LB07’s work; the individual art-record URL returned a cache miss, so no unverified design detail was promoted from its search lead. |
+| LB08 | 2 sentences | The full individual record describes `陶鄉`, its ceramic and kiln-firing references, and its two corridor locations. The full 2022 builder article records the planned weather corridor to TRA Yingge and the bridge toward the New Taipei Art Museum; the title and station assignment conflict with DORTS’s other full announcement below. |
+| LB09 | 1 sentence | The full `玩陶` record adds the ceramic-panel, glaze and firing concept on the station columns; no additional siting, prior-site history, exit decision, naming, incident or construction detail was found. |
+| LB10 | 1 sentence | The full 2026 DORTS announcement lists `時光行旅` and `陶鄉` for LB10; no individual LB10 art record or additional station-history detail was found in the full pages searched. |
+| LB11 | 1 sentence | The full `便捷通行 鶯鳥永吉` record adds the bird-and-wind-chime story; no additional station-history detail was found. |
+| LB12 | 1 sentence | The full index-model record adds the New Taipei–Taoyuan border setting, water imagery, mobile-museum overview and capsule miniatures of the line’s works; no additional station-history detail was found. |
+
+These six stations therefore add seven sourced sentences. The full pages and
+the exact original-language text relied on are recorded here:
+
+**DORTS, “Sanying Line public art opens as a mobile exhibition” / `捷運即展場！三鶯線12件公共藝術驚艷登場` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+
+Original: `像是LB07臺北大學站「匯聚‧流轉」...LB10國華站「時光行旅」及「陶鄉」、LB11永吉公園站「便捷通行 鶯鳥永吉」、LB12鶯桃福德站「三鶯流動美學總覽」`.
+
+This full 19 February 2026 announcement supports the LB07 and LB10 title
+sentences and the line-wide mobile-museum framing. It does not list LB08 in
+that station-by-station sentence.
+
+**DORTS, “Yingge station picture-book” / `鶯歌車站(繪本)` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ
+
+Original: `作品名稱 陶鄉`; `設置點一(陶鄉)：通往鶯歌火車站通廊；設置點二(花街燈)：通往新北市美術館通廊`; and `擷取鶯歌陶瓷、窯燒的特色元素，轉化為立體地標及具實用價值的照明設施`.
+
+**DORTS, “Weather corridor between Sanying Yingge station and TRA Yingge” / `美到不行好好拍！三鶯線鶯歌車站至鶯歌火車站之風雨廊道` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/documentary/articleInfo/q4VmGpDp2BoY?page=13
+
+Original: `就在鶯歌火車站至三鶯線鶯歌車站的風雨走廊，未來搭乘火車三鶯線的民眾也能利用風雨走廊聯通` and `向北以「農會通廊」連通臺鐵鶯歌火車站，向南則有「連通空橋」銜接新北市立美術館，屆時鶯歌火車站步行至美術館僅需7分鐘`.
+
+**DORTS, “Playing with Clay at Ceramics Old Street station” / `玩陶-陶瓷老街站(說明牌)` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/MVamXGXBZ8rj
+
+Original: `透過彩釉繪畫、釉色變化、陶瓷質感與燒製效果，將風格各異的藝術陶板固定於柱體，直觀展現臺灣陶藝之豐富多元`.
+
+**DORTS, “Yongji Park station picture-book” / `永吉公園站(繪本)` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/l19ZoxxemveD
+
+Original: `到了傍晚鶯鳥們各自回到他們溫暖的家，伴隨微風徐徐吹來風鈴聲噹噹輕響，彷彿開心迎接每一位到站的主人，撫慰了一天疲憊的身體`.
+
+**DORTS, “Sanying Line overall index model at Yingtao Fude station” / `三鶯線總案索引模型-鶯桃福德站(說明牌)` — PRIMARY, High confidence.**
+
+URL: https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/0g4d6Nn5d5Db
+
+Original: `本站位處新北與桃園交界，象徵城市的交會與連結。作品以三鶯水文意象為視覺起點，透過流動的速度感呼應捷運運輸精神` and `每個水滴造型的膠囊艙中，完整收納了各站作品縮影`.
+
+The source records above are all first-party DORTS pages. No secondary source
+was used for these station sentences.
+
 # Sanying Line stations (LB01–LB12)
 
 ## What is established
@@ -204,6 +269,21 @@ The operator station table, station information sheets, DORTS project page and M
    `國家教育研究院` and `恩主公醫院` for LB05–LB07. NTMC/DORTS current names
    are the page names; the register's labels are published alongside the
    coordinates rather than silently normalised.
+5. **Sanying public-art station assignments:** DORTS’s full 15 May 2025
+   announcement assigns `蘆花街燈` to LB08 and `時光行旅` to LB10; its full
+   19 February 2026 announcement lists `時光行旅` and `陶鄉` for LB10 but
+   omits LB08 from the station-by-station sentence. The full LB08 individual
+   record instead names the work `陶鄉` and places a second point, `花街燈`,
+   on the corridor to the New Taipei Art Museum. These are conflicting
+   official title/assignment records, not one value to select. The 2026 release
+   also calls the programme 12 works while its station list names 13
+   station-work labels when the two LB03 and two LB10 entries are counted;
+   the count is therefore left unresolved.
+
+   The 2025 primary is DORTS, “Sanying Line builds a mobile museum: ‘Fun’
+   debuts” / `捷運三鶯線打造行動美術館 「有趣」首亮相`, URL:
+   https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp. Its original
+   sentence reads `像是LB01頂埔站「美好的路程」、LB02媽祖田站-LB05龍埔站及LB10國華站「時光行旅」、LB06三峽站「足跡‧築蹟」、LB07臺北大學站「匯聚‧流轉」、LB08鶯歌車站「蘆花街燈」`.
 
 ## Checked and failed
 
@@ -229,6 +309,16 @@ The operator station table, station information sheets, DORTS project page and M
 - **No interchange at the non-transfer stations** — Checked 2026-08-14. No primary source
   read states a categorical absence. Reason: absence cannot be inferred from a
   map; these station-page rows say TBC rather than “None”.
+- **Direct LB03 public-art record** — Checked 2026-08-17. The DORTS URL
+  `https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/r6421Qjo29nR`
+  returned a cache-miss failure when fetched directly. A search lead was not
+  used for station prose; the full 2022 builder article’s related-reading text
+  was not treated as a substitute for the failed individual record.
+- **Direct LB07 public-art record** — Checked 2026-08-17. The DORTS URL
+  `https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/yEwdwQRwmM04`
+  returned a cache-miss failure when fetched directly. The page’s search lead
+  was not used for station prose; only the independently fetched 2026 DORTS
+  announcement’s title listing was published.
 
 ## Stated gaps
 

@@ -206,6 +206,20 @@ const linePublicArt: Source = {
   note: 'The builder’s full announcement lists the station-specific public-art titles for LB02–LB05 and LB06, and describes the line-wide mobile-museum concept.',
 }
 
+const linePublicArt2026: Source = {
+  id: 'dorts-sanying-public-art-2026-announcement',
+  title: 'Sanying Line public art opens as a mobile exhibition',
+  titleOriginal: '捷運即展場！三鶯線12件公共藝術驚艷登場',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The builder’s full 19 February 2026 announcement lists the public-art titles assigned to LB07, LB10, LB11 and LB12 and describes the line as a mobile museum.',
+}
+
 const lb06Architecture: Source = {
   id: 'dorts-sanying-lb06-architecture',
   title: 'Breathable expanded-metal station skin at Sanxia station',
@@ -218,6 +232,76 @@ const lb06Architecture: Source = {
   kind: 'primary',
   lang: 'zh-Hant',
   note: 'The builder’s full station-design article explains LB06’s expanded-metal platform skin, ventilation openings, reduced material weight and the use of heat buoyancy and train movement to exhaust air.',
+}
+
+const lb08Art: Source = {
+  id: 'dorts-sanying-lb08-art',
+  title: 'Yingge station picture-book public art record',
+  titleOriginal: '鶯歌車站(繪本)',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full art record names 陶鄉, identifies 吳建福, places the work at the corridors to TRA Yingge and the New Taipei Art Museum, and describes its ceramic and kiln-firing references and practical lighting function.',
+}
+
+const lb08Corridor: Source = {
+  id: 'dorts-sanying-lb08-corridor',
+  title: 'Weather corridor between Sanying Yingge station and TRA Yingge',
+  titleOriginal: '美到不行好好拍！三鶯線鶯歌車站至鶯歌火車站之風雨廊道',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/q4VmGpDp2BoY?page=13',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The builder’s full September 2022 article describes the planned coloured reinforced-glass weather corridor from LB08 to TRA Yingge, its bridge to the New Taipei Art Museum, and the planned seven-minute walk to the museum.',
+}
+
+const lb09Art: Source = {
+  id: 'dorts-sanying-lb09-art',
+  title: 'Playing with Clay at Ceramics Old Street station',
+  titleOriginal: '玩陶-陶瓷老街站(說明牌)',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/MVamXGXBZ8rj',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full art record names 玩陶, identifies 劉鎮洲, places it on four ground-level station columns, and describes the ceramic-panel, glaze and firing techniques used to represent Yingge ceramics.',
+}
+
+const lb11Art: Source = {
+  id: 'dorts-sanying-lb11-art',
+  title: 'Yongji Park station picture-book public art record',
+  titleOriginal: '永吉公園站(繪本)',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/l19ZoxxemveD',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full art record names 便捷通行 鶯鳥永吉, identifies 陳宏誠, places it on ground-level columns and walls, and gives the bird-and-wind-chime story behind the work.',
+}
+
+const lb12Art: Source = {
+  id: 'dorts-sanying-lb12-art',
+  title: 'Sanying Line overall index model at Yingtao Fude station',
+  titleOriginal: '三鶯線總案索引模型-鶯桃福德站(說明牌)',
+  publisher: 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)',
+  url: 'https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/0g4d6Nn5d5Db',
+  accessed: proseAccessed,
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full art record names 三鶯線總案索引模型, identifies 林昭慶 and 古采藝創環境有限公司, places it on the third-floor concourse wall, and describes its border, water, mobile-museum and capsule-model concepts.',
 }
 
 const stationProse: Record<string, StationProseSentence[]> = {
@@ -240,6 +324,25 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'DORTS lists “Footprints · Building Footprints” as LB06’s public-art work.', source: linePublicArt.id },
     { text: 'DORTS also describes the platform’s expanded-metal skin as breathable: perforations ventilate the station and reduce structural weight, while clerestory openings use heat buoyancy and train movement to exhaust hot air.', source: lb06Architecture.id },
   ],
+  LB07: [
+    { text: 'DORTS’s 2026 public-art announcement lists LB07’s work as “Gather · Flow” (匯聚‧流轉) within the Sanying Line’s mobile-museum programme.', source: linePublicArt2026.id },
+  ],
+  LB08: [
+    { text: 'DORTS’s full LB08 art record presents “陶鄉” as a ceramic- and kiln-firing-inspired landmark and practical lighting installation for the corridors linking Yingge’s local institutions.', source: lb08Art.id },
+    { text: 'A DORTS builder article from September 2022 describes the planned weather corridor linking LB08 to TRA Yingge and, by a bridge, the New Taipei Art Museum; it says the walk to the museum was planned at seven minutes.', source: lb08Corridor.id },
+  ],
+  LB09: [
+    { text: 'At LB09, DORTS describes “玩陶” as ceramic panels on station columns using glaze painting, glaze variation, ceramic texture and firing effects to show Yingge’s ceramic diversity.', source: lb09Art.id },
+  ],
+  LB10: [
+    { text: 'DORTS’s 2026 public-art announcement lists two LB10 works, “Time Journey” and “陶鄉,” as part of the Sanying Line’s mobile-museum programme.', source: linePublicArt2026.id },
+  ],
+  LB11: [
+    { text: 'DORTS’s LB11 artwork, “Convenient Passage: Ying Bird Yongji,” turns birds leaving and returning to nests into a daily journey, with wind-chime imagery welcoming passengers home.', source: lb11Art.id },
+  ],
+  LB12: [
+    { text: 'DORTS describes LB12’s index model as a mobile-museum overview: water imagery marks the New Taipei–Taoyuan junction, while capsule forms hold miniatures of works from the line’s twelve art teams.', source: lb12Art.id },
+  ],
 }
 
 const stationProseSources: Record<string, Source[]> = {
@@ -249,6 +352,12 @@ const stationProseSources: Record<string, Source[]> = {
   LB04: [linePublicArt],
   LB05: [linePublicArt],
   LB06: [linePublicArt, lb06Architecture],
+  LB07: [linePublicArt2026],
+  LB08: [lb08Art, lb08Corridor],
+  LB09: [lb09Art],
+  LB10: [linePublicArt2026],
+  LB11: [lb11Art],
+  LB12: [lb12Art],
 }
 
 function mapSource(code: string, name: string, nameZh: string, url: string): Source {
