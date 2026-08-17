@@ -7564,3 +7564,18 @@ no page reaches 100 words. The twelve LB pages each contain the only non-zero
 free-running paragraph, at 27 words; every page on A, BL, BR, G, K, O, R, V and Y
 is 0 by this definition. The run-log claim of roughly 750 words therefore counts
 rendered structured content rather than body prose. No station content was changed.
+
+# Run 27 — Organization audit, Part 2, 17 August 2026
+
+Audited every source and freshly built HTML reference to `/rail/stations/`. The
+actual navigational entry points were the global Rail dropdown and the Rail
+section index; the homepage itself had no station-index card. The other exact
+matches were repeated global navigation, the index's own navigation, redirect
+stubs, sitemap data, or test fixtures. Added a direct Stations card to the
+homepage Rail section, making the index reachable from the homepage in one
+click from that section. No research or content pages were changed.
+
+Verification: fresh `npm run build`, `npm run cite`, `npm run verify`, and
+`npm test` passed; the full test suite reports 185/185. The existing verify
+warning remains: 231 generated `/train/` redirect stubs are reachable only by
+typing their URLs.

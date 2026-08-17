@@ -79,6 +79,23 @@ export default function HomePage() {
             </h2>
             {section.description && <p className="section-desc">{section.description}</p>}
             <ul className="card-list">
+              {section.slug === 'rail' && (
+                <li>
+                  <Link href="/rail/stations/">
+                    <span className="card-body">
+                      <span className="card-title">Stations</span>
+                      <span className="card-desc">
+                        Browse every station page, grouped by line.
+                      </span>
+                    </span>
+                    <span className="card-meta">
+                      <span className="card-arrow" aria-hidden="true">
+                        →
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              )}
               {types.map((type) => {
                 const count = getPages(section.slug, type.slug).length
                 return (
