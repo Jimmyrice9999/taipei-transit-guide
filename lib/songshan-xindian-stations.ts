@@ -342,6 +342,9 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station’s design theme is activation and reuse of the Beimen archaeological and cultural heritage. Its underground link level connects Beimen, Taipei Underground Mall and the Airport MRT; granite wall panels and archaeological displays incorporate the former city gate and railway history.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    prose: [
+      { text: 'DORTS records the Beimen site among the old city gate and former Railway Department buildings, with a former Taiwan Railway Administration dormitory on the west side and other historic buildings around the station.', source: dortsSongshanArchitecture.id },
+    ],
     interchange: { label: 'Airport MRT at Taipei Main Station via underground passage; transfer mode: TBC' },
   },
   G14: {
@@ -387,6 +390,9 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station’s design theme is “The trajectory of sport” (運動的軌跡), integrating the underground station with the Taipei Arena and the city sports precinct. Exit forms use an oval-egg concept responding to the arena.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    prose: [
+      { text: 'DORTS records the two Taipei Arena works as invited-competition selections installed along the vertical wall between the concourse and platform; Progress uses lenticular perspective so a baseball-playing model appears to move as passengers descend.', source: dortsArenaArt.id },
+    ],
   },
   G18: {
     structure: 'underground', engineering: 'G21', exits: 4, openingDate: '15 November 2014',

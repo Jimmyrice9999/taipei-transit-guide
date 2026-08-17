@@ -222,6 +222,25 @@ construction method.
   Depot for maintenance. Original evidence: `唯為避免施工困難與未來投資之浪費` and
   `以利藍線車輛過軌到北投機廠進行車輛維修，同時兼供營運之用`. URL:
   https://www.dorts.gov.taipei/cp.aspx?n=71acc5b0cdffc313&s=9A7448733F1518F5
+- **G13 Beimen:** The full Songshan architecture article records the station
+  site beside Beimen Old City Gate and the former Railway Department buildings,
+  including a former Taiwan Railway Administration dormitory on the west side.
+  Original evidence: `南側鄰近北門古城門` and `西側係舊有臺鐵局宿舍`. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html
+- **G17 Taipei Arena:** The full public-art article records an invited
+  competition, installation on the vertical wall between concourse and
+  platform, and the lenticular movement effect of *Progress*, whose baseball
+  figure appears to move as passengers descend. Original evidence:
+  `以邀請比件方式選出洪東祿的〈推進〉及袁廣鳴的〈啟動密碼〉` and
+  `位於西側樓梯/電扶梯前方牆面`. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page152.html
+- **G12 Ximen, G14 Zhongshan, G15 Songjiang Nanjing and G16 Nanjing
+  Fuxing:** The full DORTS Songshan route page, full Songshan architecture
+  article and full TRTC station pages were checked. Their additional material
+  is already represented in the facts, including the G15 platform/exit
+  conflict, so no separate body prose was added. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=71acc5b0cdffc313&s=C974A7C467B035B8
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html
 
 ### Depot
 
