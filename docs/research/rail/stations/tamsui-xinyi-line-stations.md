@@ -197,8 +197,44 @@ description and metadata on the station-specific page.
   https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768
   and https://www.dorts.gov.taipei/cp.aspx?n=0ac527d5fc9e596a&s=CB7BC86DBDA1E44D
 
-All five non-empty station entries use the source id for their DORTS art page;
+The five R02–R06 entries above use the source id for their DORTS art page;
 R07 has no prose source id because no prose claim was published.
+
+### Station-prose audit — R08–R13 batch, 17 August 2026
+
+The full TRTC station pages for R08–R13 were fetched and read on 17 August
+2026. The R09 and R12 DORTS public-art pages were also fetched in full. R08,
+R10, R11 and R13 remain correctly empty: their full operator pages add current
+exit, facility and interchange context already represented in the facts and
+specs, but no station-specific siting decision, former-site history,
+construction difficulty, rename, incident or public-art narrative suitable for
+body prose. No image or linked station sheet was fetched.
+
+| Station | Result | Full station page |
+|---|---|---|
+| R08 CKS Memorial Hall | Correctly empty | https://web.metro.taipei/pages2026/WebStation/042/1 |
+| R09 NTU Hospital | 1 sentence | https://web.metro.taipei/pages2026/WebStation/050/1 |
+| R10 Taipei Main | Correctly empty | https://web.metro.taipei/pages2026/WebStation/051/1 |
+| R11 Zhongshan | Correctly empty | https://web.metro.taipei/pages2026/WebStation/053/1 |
+| R12 Shuanglian | 1 sentence | https://web.metro.taipei/pages2026/WebStation/054/1 |
+| R13 Minquan W. Rd. | Correctly empty | https://web.metro.taipei/pages2026/WebStation/055/1 |
+
+**R09 source:** DORTS, `淡水信義線`, PRIMARY, High confidence,
+https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C32B3BEE19B6BC1F.
+The full page records `以生命探索的角度來思維，將人生旅途比喻為捷運旅程` and
+`書寫了台大醫院站地緣的歷史與人文`.
+
+**R12 source:** DORTS, `淡水信義線`, PRIMARY, High confidence,
+https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=DE643CF3F6E0171F.
+The full page records `雙連站之公共藝術品為室內裝修之一部份` and says the work
+was selected `自53件參選作品中脫穎而出`; it describes the linked chronology as
+reflecting `雙連地區歷史的變遷`.
+
+The current full re-fetch of the DORTS route URL
+`https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768`
+returned a cache-miss failure. No new route-level claim was promoted from
+that failed fetch; the route material already established earlier in this
+file remains separately sourced and dated.
 
 ### Engineering and landmarks
 
@@ -242,6 +278,11 @@ field-coverage differences, not competing values.
 
 ## Checked and failed
 
+- **Current DORTS route re-fetch for the R08–R13 audit** — Checked 2026-08-17.
+  `https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768`
+  returned a cache-miss failure. No claim was published from that failed
+  fetch; the earlier full-page route evidence remains cited in the established
+  section with its original access date.
 - **Station naming** — Full current TRTC station pages and the DORTS
   route/project pages were checked for construction-era names, rename dates and
   rename announcements. The checked primary material publishes current names

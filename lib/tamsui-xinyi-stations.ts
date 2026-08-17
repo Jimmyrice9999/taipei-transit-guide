@@ -109,7 +109,8 @@ const art = {
     '雙連‧行遠',
     dortsPublisher,
     'https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=DE643CF3F6E0171F',
-    'The official public-art page identifies 雙連‧行遠, its artists, enamel-panel medium and 16 September 1996 completion date.',
+    'The official public-art page identifies 雙連‧行遠, its artists, enamel-panel medium and 16 September 1996 completion date; its full description records the open selection and the work’s historical account of Shuanglian.',
+    '2026-08-17',
   ),
   ntuHospital: source(
     'dorts-art-ntu-hospital',
@@ -117,7 +118,8 @@ const art = {
     '手之組曲',
     dortsPublisher,
     'https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C32B3BEE19B6BC1F',
-    'The official public-art page identifies 手之組曲, 李光裕, its copper and granite materials, platform location and November 1998 completion.',
+    'The official public-art page identifies 手之組曲, 李光裕, its copper and granite materials, platform location and November 1998 completion; its full description connects the work to the station’s local history and humanities.',
+    '2026-08-17',
   ),
   daanPark: source(
     'dorts-art-daan-park',
@@ -341,6 +343,9 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 1–3 and a north paid-concourse platform lift; unpaid toilets near exit 1; parent/accessible toilets at the same location; baby changing; bicycle access open; enquiry point near exits 3 and 4.',
     landmarks: '總統府; 臺大醫院舊館; 臺大醫院復健部; 國立台灣博物館', publicArt: '手之組曲 — 李光裕; copper and granite; November 1998.', publicArtSource: art.ntuHospital,
     engineeringHistory: tbc,
+    prose: [
+      { text: 'DORTS frames “Hand Suite” as a humane reading of the metro journey and says it writes NTU Hospital station’s local history and humanities into the work’s landscape.', source: art.ntuHospital.id },
+    ],
   },
   R10: {
     structure: 'underground', exits: 8, openingDate: '25 December 1997', openingSource: dortsRoute, structureSource: dortsRoute,
@@ -365,6 +370,9 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lift: exit 2 and a paid-concourse platform lift; unpaid toilet near exit 1 toward the Zhongshan underground mall; parent/accessible toilet at the same location; baby changing; bicycle access open; enquiry point near exits 1 and 2.',
     landmarks: '中山地下街', publicArt: '雙連‧行遠 — 井婉婷、楊弼方; enamel panels; 1996.', publicArtSource: art.shuanglian,
     engineeringHistory: tbc,
+    prose: [
+      { text: 'DORTS says “Shuanglian · Travelling Far” was selected through an open call from 53 entries, using linked chronological signs to express the area’s historical change.', source: art.shuanglian.id },
+    ],
   },
   R13: {
     structure: 'underground', exits: 10, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
