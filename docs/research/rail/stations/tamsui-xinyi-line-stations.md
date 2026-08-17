@@ -314,6 +314,9 @@ The shared engineering source is DORTS, `捷運工程叢書 精進版－34
 https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html.
 Its Tamsui-terminal description was already used for the facts/specs and did
 not yield a second prose claim after this station-specific check.
+This final four-station audit closes the R-line station-prose pass: all R
+pages now have a recorded sourced result, with no unreviewed empty page left
+in the line’s station sequence.
 
 ### Engineering and landmarks
 
