@@ -489,6 +489,29 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'The report therefore records two deliberately separate airport approaches: an indoor terminal connection and a second access point at the south end of the surface car park.', source: rbStations.id },
     { text: 'TYMC places 過境—心航線 by 林俊廷 on the wall of the passage from the fare gates to the terminal; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
+  A13: [
+    { text: 'A13 was structurally reserved when Terminal 2 was built, and the Railway Bureau records that it served as the Airport MRT’s temporary express terminus and baggage-processing station until the third terminal and A14 were ready.', source: rbStations.id },
+    { text: 'The station’s baggage role is built into the design record: the concourse level includes the baggage-processing area, while the lower platform level includes a dedicated baggage-train platform.', source: rbStations.id },
+    { text: 'TYMC places 數位鏡面 by Daniel Rosen in the main public area of Terminal 2’s B2 concourse; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
+  A14a: [
+    { text: 'A14a was added beside the China Airlines Park airport transit hotel as part of the Taoyuan International Airport China Airlines Park plan, giving the hotel complex its own Airport MRT access rather than treating it as a terminal extension.', source: rbStations.id },
+    { text: 'The Railway Bureau’s airport-station brief groups A14a with the terminal stations as direct links into the airport precinct, while the operating record distinguishes it by stopping only ordinary trains.', source: rbStations.id },
+  ],
+  A15: [
+    { text: 'The Railway Bureau locates A15 near National Freeway 2’s Dayuan interchange and Hengnan Road, in rural fields close to Taoyuan International Airport.', source: rbStations.id },
+  ],
+  A16: [
+    { text: 'A16 sits in the fields near Dayuan’s Hengshan community and Ziqiang Bridge; the Railway Bureau describes it as the outward-transport interchange for the Dayuan area.', source: rbStations.id },
+  ],
+  A17: [
+    { text: 'A17 is part of the Taoyuan HSR station special district, which the Railway Bureau describes as a development centre for a future new town.', source: rbStations.id },
+  ],
+  A18: [
+    { text: 'A18 was placed north of the Taoyuan HSR station beside HSR North Road so the Airport MRT could turn the HSR–airport connection into a major gateway for Taoyuan, with a below-ground link between the two stations.', source: rbStations.id },
+    { text: 'The Railway Bureau’s DE03 design concept treats the line’s two travel directions as an upward and downward movement, using staggered platforms and open roof geometry to express the pull of trains moving toward and away from the airport.', source: rbStations.id },
+    { text: 'TYMC places 氣門9號律動 by Florian Claar on the plaza between A18 and the HSR station; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
+  ],
 }
 
 export const AIRPORT_MRT_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(

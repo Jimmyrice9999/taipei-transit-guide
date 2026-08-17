@@ -93,6 +93,39 @@ No new value conflict was found in this batch. The existing A8 lift-count and
 A12 access-count conflicts remain published; the art page still does not give
 the years, media, selection methods or costs for the works used here.
 
+## Station-prose audit: A13–A18
+
+The full Railway Bureau architecture report, full TYMC public-art table and
+full TYMC operator pages for A13–A18 were fetched and read before this batch.
+All six pages received prose because the primary material adds station-specific
+airport sequencing, development planning or gateway context beyond the
+generated facts box.
+
+| Code | Result | Evidence used | Search result |
+|---|---|---|---|
+| A13 | Prose added | Railway Bureau architecture report; TYMC art table | Reserved structure, temporary express terminus, baggage-processing role and art location established. |
+| A14a | Prose added | Railway Bureau architecture report | China Airlines Park airport-transit-hotel planning context established; no additional art metadata found. |
+| A15 | Prose added | Railway Bureau architecture report | Dayuan interchange, airport-approach and rural-field context established; no additional art metadata found. |
+| A16 | Prose added | Railway Bureau architecture report | Hengshan community/Ziqiang Bridge context and Dayuan interchange role established; no additional art metadata found. |
+| A17 | Prose added | Railway Bureau architecture report | HSR special-district and future-new-town planning context established; no additional art metadata found. |
+| A18 | Prose added | Railway Bureau architecture report; TYMC art table | HSR gateway siting, DE03 design concept and art location established. |
+
+The full pages searched for this batch were:
+
+- Railway Bureau: https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- TYMC public art: https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- TYMC station pages: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A13/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A14a/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A15/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A16/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A17/A4,
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A18/A4.
+
+No new value conflict was found in this batch. The existing A14/A14a
+unfinished-third-terminal versus operating-airport-hotel distinction remains
+published; art years, media, selection methods and costs remain TBC where the
+TYMC table does not publish them.
+
 ## What is established
 
 ### Operator station pages
