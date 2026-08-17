@@ -204,6 +204,9 @@ const stationProse: Record<string, StationProseSentence[]> = {
   BL06: [
     { text: 'The work turns the station into a participatory public space: its LED poetry can receive real-time submissions from citizens, passengers and poets by SMS.', source: art.bl06.id },
   ],
+  BL07: [
+    { text: 'DORTS presents the work’s linked coloured rings as both Greater Taipei’s completed transport connections and a way to give ordinary platform columns new meaning through interaction.', source: art.bl07.id },
+  ],
 }
 
 function makeResearch(code: string, data: BLData): StationResearch {
