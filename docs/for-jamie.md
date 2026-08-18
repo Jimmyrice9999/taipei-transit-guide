@@ -6,7 +6,9 @@ Part 2 is complete: public art, naming/renames, and incidents are sourced pages.
 Public-art cost and Sanying allocation conflicts remain published.
 Former-name action dates without gazettes remain TBC; no slash-notation rename was inferred.
 Incidents preserves the Nari date conflict and 11-location/9-span earthquake conflict.
-Part 3a/3b remain complete for brown/red; remaining 991 bus routes were not started.
+Part 3a/3b complete for brown/red; colour-red was fixed from unreachable (routing was hardcoded to brown-only) to live, and a false-confirmed-MRT-join bug affecting every non-brown route was fixed.
+No colour-yellow feeder class exists at ebus.gov.taipei; docs/bus-architecture.md corrected. Circular Line ("Yellow Line") is NTMC-operated, outside TRTC's colour scheme.
+Part 3c started: colour-green (17/17 routes) built. colour-orange, colour-blue and trunk (74 routes) remain.
 Part 4: 61 TDX operator records and 1,051 route associations now have generated pages.
 Bus model and depot indexes are present but TBC because the TDX pull has no such fields.
 Seven rail model pages and eight rail depot pages already exist; no rail depot gap was found.

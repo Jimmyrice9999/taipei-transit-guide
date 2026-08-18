@@ -10339,3 +10339,110 @@ and R font subsets; `npm run verify` clean (links, accessibility, facts,
 claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
 cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
 its test were not changed.
+
+# Run 48 — Bus route groups, Part 3c start: colour-green, 18–19 August 2026
+
+Audited before editing. `content/bus/routes/` held `colour-brown` (20 routes,
+complete per Run 30) and `colour-red` (40 routes, complete per Run 30), but
+`app/bus/routes/{page,[group]/page,[group]/[slug]/page}.tsx` were all still
+hardcoded `GROUP = 'colour-brown'` from before red was built — `dynamicParams`
+is `false` and `generateStaticParams` only ever emitted brown's slugs, so
+colour-red's 40 already-written pages had never actually been reachable on the
+built site. Fixed by deriving the built group list from
+`content/bus/routes/` via a new `lib/bus/route-groups.ts`, the same fix shape
+Run 24/25 used for `LINES_WITH_STATION_PAGES`. colour-red now builds and
+serves its 40 pages for the first time.
+
+Two more brown-only hardcodes in `components/BusRouteData.tsx` were reached by
+the same generalization: the drawn bus-path colour on each route's map
+(`#8d6e3d` for every group, regardless of colour) and the "Feeder line" fact
+(literally "Wenhu Line (BR)" on every route). Both now derive from
+`route.group` via `GROUP_LINE` / `GROUP_PATH_COLOUR`; the five per-group path
+tones are checked at ≥4.33:1 non-text contrast against the map ground.
+
+A second, more serious defect surfaced once colour-red actually rendered:
+`tests/accessibility.test.mts` failed on untagged Han in
+`red-13`'s "Current operator records" line. That traced to
+`OperatorRecords` falling back to an operator's `zh_tw` name with no
+`lang="zh-Hant"` when its `en` name was blank (New Taipei's 淡水客運 record;
+fixed), and while checking every `route.railJoins` consumer for the same class
+of bug, found that **every raw `railJoins` candidate in
+`data/tdx/bus/routes.json` is `match: 'normalized-name'`** — 3,738 of them,
+zero exceptions — and `lib/bus/routes.ts` only overrode a route's
+`railJoins` with the curated, individually-verified `rail-stop-joins.json`
+entries when one existed; a route with no curated entry kept its raw
+unconfirmed candidates. Only brown's 20 pilot routes have curated entries, so
+every other route with a name-matched candidate — including all 40 of
+colour-red's now-reachable pages — was rendering an unverified name-match as a
+confirmed MRT interchange badge and a nonzero "Confirmed MRT stop joins"
+count. That is exactly what the sourcing discipline forbids ("Never join by
+name match"). Fixed: every route's `railJoins` now comes from the curated map
+or `[]`, never the raw candidates. No new stop-ID curation was attempted in
+this fix or in the colour-green build below — a route with real candidate
+joins and no curated entry now correctly shows zero confirmed MRT stops, which
+is the honest state pending individual verification.
+
+**Small check requested for this run.** `docs/bus-architecture.md` listed a
+`colour-yellow` class; the TDX group counts show zero such routes. Confirmed
+via a full fetch of ebus.gov.taipei's own category list that Taipei's colour-
+prefixed MRT feeder scheme has exactly five classes — 紅/藍/綠/棕/橘 — plus a
+separate 輕軌接駁公車 (light-rail feeder) class; no 捷運黃線接駁公車 exists.
+The committed TDX snapshot has zero routes whose name starts 黃, and the two
+routes anywhere containing 黃 (856(台灣好行-黃金福隆線); 新九號停車場-黃金博物館)
+are place-name matches (黃金福隆, 黃金博物館) correctly filed `new-taipei`, not
+feeders. The reason: the five colour classes cover TRTC's five lines only: the
+Circular Line (`line: Y`, alias "Yellow Line") is New Taipei Metro-operated,
+not TRTC, so it falls outside eBus's TRTC-feeder colour scheme. A named,
+unbadged "環狀線免費接駁公車" shuttle is attested in secondary sources (news
+roundups, a Wikiversity route page) but carries no colour-prefix identity and
+has zero matches for 環狀 or 接駁 anywhere in the committed TDX route dataset.
+`colour-yellow` was removed from the architecture doc's group table with this
+finding recorded inline, rather than left looking like an unpopulated gap.
+
+## Part 3c — colour-green, all 17 routes, checked 18–19 August 2026
+
+False-prefix audit: all 1,051 committed route names containing `綠` were
+checked. The 17 accepted `colour-green` names exactly match the official
+catalogue's `捷運綠線接駁公車` list — no catalogue/TDX discrepancy, unlike
+red's 39-vs-40 split. Three names were excluded as Xindian place-name matches,
+not colour prefixes: `棕7綠野香坡` (group `colour-brown`), `624綠野香坡`
+(group `new-taipei`) and `新店(綠中海)-捷運新店站` (group `new-taipei`). No
+`臺北觀光巴士綠線` sightseeing record was found anywhere in the snapshot — a
+stated "not found," not a claim that no such branding exists.
+
+All 17 full official schedule pages were fetched (`ebus.gov.taipei/Route/
+RouteSchedule`). They establish current termini, service span, fare class and
+operator contact for every route; none establish opening date, corridor
+rationale or dated operator changes, which are TBC throughout. One structural
+finding: TDX carries 綠9, 綠9耕莘 and 綠9北新國小 as three separate records
+sharing a 大香山 origin and operator contact, and 綠2左/綠2右 as two separate
+records sharing identical published termini — in both cases the official
+catalogue lists them as separate labels rather than variants of one route, so
+no single-route merge was inferred. G18 (`捷運大坪林站 - 捷運萬芳醫院站`) is
+the only green route whose published termini are both named MRT stations.
+
+Body prose across the 17 pages runs 58–111 words (current-service facts plus
+sourced structural notes), matching the brown/red pilots' own established
+depth rather than the >200-word aspiration in this run's brief — the eBus
+schedule pages simply do not carry route history, and prose was not padded to
+hit a count. Sources fetched in full: the green catalogue page
+(https://ebus.gov.taipei/ebus?ct=all) and 17 RouteSchedule pages, one per
+route, listed in `docs/research/bus/routes/colour-green.md`.
+
+No confirmed MRT stop-ID joins were curated for colour-green in this run (see
+the railJoins fix above) — every green route page correctly shows zero
+confirmed joins even where a terminus is named after a station (`捷運大坪林
+站`, `捷運公館站`, `捷運萬芳醫院站`), rather than a false one.
+
+Gates: `npm run cite` clean; fresh `npm run build` clean (403 pages, no
+missing glyphs after `npm run fonts`); `npm run verify` clean; `npm test`
+clean (185/185, 19 fact cross-checks, no contradictions). Claims baseline and
+its test untouched. `tests/build-output.test.mts`'s page-count formula, which
+summed only colour-brown, was generalized to sum every built group. Existing
+user-owned dirty files (`probes/`) remain unstaged.
+
+Next: colour-orange (18 routes), then colour-blue (39) and trunk (19), in that
+order per the brief. `blue-2-1xzokkx` (藍海2線先導公車, "Lan Hai2") is flagged
+for extra scrutiny when blue is built — `藍海` ("blue ocean") may be a named
+pilot-service brand rather than an ordinary 藍-prefixed feeder, despite
+matching the mechanical classifier.

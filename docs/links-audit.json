@@ -1,5 +1,5 @@
 {
-  "pages": 385,
+  "pages": 403,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -558,6 +558,406 @@
       "page": "/bus/routes/colour-brown/brown-7-ssatjm/",
       "name": "Ankang",
       "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-10/",
+      "name": "Xindian District Office",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-10/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-10/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-10/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-11/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-11/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-11/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-12/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-13/",
+      "name": "Xindian District Office",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-13/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-13/",
+      "name": "Wanlong",
+      "href": "/rail/stations/g06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-13/",
+      "name": "Taipower Building",
+      "href": "/rail/stations/g08/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-13/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "Xiaobitan",
+      "href": "/rail/stations/g03a/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "Taipei Xiaocheng",
+      "href": "/rail/stations/k03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-15/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-17/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-17/",
+      "name": "Longshan Temple",
+      "href": "/rail/stations/bl10/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-17/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-18/",
+      "name": "Muzha",
+      "href": "/rail/stations/br02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-18/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-18/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-18/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-18/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Muzha",
+      "href": "/rail/stations/br02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Wanfang Hospital",
+      "href": "/rail/stations/br04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Yongan Market",
+      "href": "/rail/stations/o03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Dingxi",
+      "href": "/rail/stations/o04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Xiulang Bridge",
+      "href": "/rail/stations/y09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Muzha",
+      "href": "/rail/stations/br02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Wanfang Hospital",
+      "href": "/rail/stations/br04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Yongan Market",
+      "href": "/rail/stations/o03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Dingxi",
+      "href": "/rail/stations/o04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Xiulang Bridge",
+      "href": "/rail/stations/y09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-2-a3vlet/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-3/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-3/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-3/",
+      "name": "Xiulang Bridge",
+      "href": "/rail/stations/y09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-5/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-5/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-6/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-6/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-6/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-6/",
+      "name": "Xiulang Bridge",
+      "href": "/rail/stations/y09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-6/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-7/",
+      "name": "新店區公所",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-7/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-7/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-7/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-7/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "Xindian District Office",
+      "href": "/rail/stations/g02/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "Xiulang Bridge",
+      "href": "/rail/stations/y09/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-8/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-17j6i4/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-17j6i4/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-1furgka/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-1furgka/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-eilq32/",
+      "name": "Qizhang",
+      "href": "/rail/stations/g03/"
+    },
+    {
+      "page": "/bus/routes/colour-green/green-9-eilq32/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-green/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/bus/routes/colour-red/",
