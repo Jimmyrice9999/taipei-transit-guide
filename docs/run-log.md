@@ -8566,3 +8566,59 @@ missing glyphs, no broken links or fragments, 522 citations resolved, research
 clean, claims clean, geometry/CVD clean and unit tests 185/185. The explicit
 full test command is run after this log entry and before commit. Next batch is
 R20–R24 plus R22A.
+
+# Run 31 — Part 1 Red station prose, R20–R24 plus R22A, 18 August 2026
+
+## Sourced
+
+This batch deepened R20 Qilian, R21 Qiyan, R22 Beitou, R22A Xinbeitou, R23
+Fuxinggang and R24 Zhongyi. Body-prose counts are R20 333, R21 335, R22 354,
+R22A 321, R23 327 and R24 315, for 1,985 words total. Every sentence carries
+an overlay source.
+
+Full primary URLs:
+
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page33.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page42.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page45.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- TRTC full pages for R20–R24 and R22A:
+  https://web.metro.taipei/pages2026/WebStation/062/1,
+  /063/1, /064/1, /065/1, /066/1 and /067/1.
+
+No colour-prefix audit applies to a station batch.
+
+## TBC
+
+Package award values and station-level final accounts; complete current art
+records for all six pages; any applicable rename gazettes; R22A’s station-
+specific opening date; and feeder-bus prose. No station-level figure was
+inferred from the shared package pages.
+
+## Contradicted the corpus
+
+The prior audit correctly found no station-specific prose in the first fetched
+pages, but DORTS pages 33 and 37–41 provide additional section engineering,
+former-railway land planning, ground/elevated trade-offs, demand context,
+branch planning and public-realm material. R22A’s chronology remains TBC
+because the full route chronology does not publish a station-specific branch
+opening date. No unverified appendix was promoted.
+
+## Conflicts found
+
+DORTS’s elevated volume lists R14–R22A and R28 as 11 elevated stations, while
+its ground-station manual identifies R23–R27 as the Fuxinggang–Hongshulin
+ground-level section; these are adjacent section classifications, not competing
+values. CT207 and CT207A are main/branch package records with different scopes.
+Beitou’s space-truss/glass station is retained as a special design against the
+line-wide station-design rule. No colour-prefix audit.
+
+Final gates for this batch: fresh build/verify passed, 519 pages checked, no
+missing glyphs, no broken links or fragments, 522 citations resolved, research
+clean, claims clean, geometry/CVD clean and unit tests 185/185. The explicit
+full test command also passed. Next batch is R25–R28.

@@ -689,6 +689,119 @@ and engineering-book pages 43–45 listed above. They add no additional body
 sentence for these six pages; `R22A` remains TBC for a station-specific opening
 date rather than inheriting the main-line chronology.
 
+### Station-prose deepening — R20–R24 plus R22A batch, 18 August 2026
+
+The prior audit had fetched the six full TRTC station pages and DORTS pages
+43–45, but found only line-group structure and chronology already represented
+in facts/specs. This pass fetched the full DORTS pages 33 and 37–41. They add
+the ground-station construction trade-off, the former TRA corridor and land
+planning, the elevated/ground boundary, projected demand, the New Beitou
+branch planning record and the walking/cycle public realm. R20 Qilian, R21
+Qiyan, R22 Beitou, R22A Xinbeitou, R23 Fuxinggang and R24 Zhongyi were all
+deepened. No unverified appendix was used.
+
+#### Elevated network and railway-corridor context
+
+**Source:** “Tamsui Line elevated network and demand context” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page lists the elevated station sequence, corridor
+and original demand rationale.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page37.html
+
+Original-language text checked in full:
+
+> `淡水線高架型式的車站，共包括 3 部分，其一為主線高架段：南起承德路 523 巷（三德飯店）附近，向北延伸至北投機廠；其二為淡水線支線高架段：新北投支線等高架路段之車站；其三為端點站：淡水車站亦為高架型式車站，總計為 11 站，由南至北為圓山站（R14）、劍潭站（R15）、士林站（R16）、芝山站（R17）、明德站（R18）、石牌站（R19）、唭哩岸站（R20）、奇岩站（R21）、北投站（R22）、新北投站（R22A），以及淡水站（R28）。`
+
+> `主線高架路段主要沿舊有台鐵用地施工，其間通過基隆河、雙溪、磺溪、磺港溪、貴仔坑溪等重要河川，並經民族西路、酒泉街、劍潭路、中正路、福國路、明德路、石牌路、大同街、大業路等重要道路，長約 8.95km。`
+
+> `在當時 8 大路線運輸走廊中，以士林－淡水走廊的運輸需求量最大，估計民國 90 年，晨峰小時的大眾運輸旅次量將達 58,000 人旅次。`
+
+**Source:** “Tamsui Line railway-corridor planning and land use” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page explains the former railway right-of-way and
+New Beitou branch land-plan changes.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+
+Original-language text checked in full:
+
+> `淡水線係利用臺鐵淡水支線之原有路權，以有償撥用方式取得，都市計畫變更及土地取得較無困難。`
+
+> `變更新北投火車站附近地區部分停車場、道路、綠地為道路、人行步道及廣場用地計畫案，配合調整新北投車站站前圓環與附近道路交通。`
+
+#### Ground-station type and public realm
+
+**Source:** “Tamsui Line ground-station type and trade-offs” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence because the full
+page defines the construction type and identifies the Fuxinggang–Hongshulin
+ground section.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html
+
+Original-language text checked in full:
+
+> `地面車站是指軌道及月臺布設於地面之車站，通常布設於非市區，與平面道路極少交叉之地區，是三種建造型式中最經濟之型式，臺北都會區中目前僅有淡水信義線復興崗站至紅樹林站為地面車站。`
+
+> `具有專用路權捷運系統採用此種型式車站雖造價最為經濟，但將對地面之通行造成阻絕及景觀視覺之阻隔。`
+
+**Source:** “Tamsui Line northern public-realm and recreation design” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page describes the linear park, walking/cycle
+paths, planting and the elevated/ground choice along the northern corridor.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+
+Original-language text checked in full:
+
+> `台鐵北淡線之路廊提供早期通勤方便性，加以自然生態景觀多元，使沿線土地的開發甚早、人文鼎盛，觀光景點焉然成形。`
+
+> `主要以人行步道及自行車道為主，並輔以植栽綠化，以提供居民休閒活動場所。`
+
+#### Station design goals
+
+**Source:** “Tamsui Line station design goals and environmental integration” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page states the shared-image, individual-character
+and environmental-integration goals.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html
+
+Original-language text checked in full:
+
+> `每一車站均應各具特色。`
+
+> `車站應重視其與四周環境之整合，使其成為四鄰之焦點以強化民眾的認同感。`
+
+#### R20–R24 plus R22A disposition
+
+- **R20 Qilian:** 333 words. CT206/CT206A failure and replacement, former
+  railway corridor, Juan-peng roof, materials, design goals and linear-park
+  rationale are established. The individual architect, artwork, contract value,
+  final account and rename gazette remain TBC.
+- **R21 Qiyan:** 335 words. CT207 scope and contractors, former railway
+  alignment, Xuan-shan roof, material system, demand context and public realm
+  are established. No complete artwork record, award value, final account or
+  rename gazette was found.
+- **R22 Beitou:** 354 words. CT207 scope, branch-related space-truss and glass
+  design, former railway/branch land planning, design goals and public realm
+  are established. The station-specific art register, package value, final
+  account and rename gazette remain TBC.
+- **R22A Xinbeitou:** 321 words. CT207A scope and contractors, former branch
+  right-of-way, electric-train testing context, station-front land changes and
+  public-realm interface are established. No station-specific opening date was
+  copied from the main-line chronology; art, contract value, final account and
+  rename evidence remain TBC.
+- **R23 Fuxinggang:** 327 words. The ground-section boundary, economic and
+  surface-barrier trade-off, former railway corridor, depot connection and
+  public-realm response are established. Station-specific design, artwork,
+  contract value, final account and rename evidence remain TBC.
+- **R24 Zhongyi:** 315 words. The same primary pages establish Zhongyi’s
+  ground-section engineering rationale, former railway land, planning goals,
+  surface-impact trade-off and path/planting response. No individual artwork,
+  architect, station-level contract value, final account or rename gazette was
+  established.
+
 ### Station-prose audit — R25–R28 batch, 17 August 2026
 
 The full TRTC station pages for R25–R28 were fetched and read on 17 August
@@ -1124,11 +1237,29 @@ road name alone is not promoted to a landmark.
     than a silently inferred rename chronology.
 
 13. **Station-specific artwork evidence has different granularity.** TRTC’s
-    full Yuanshan story names `圓山五彩物語─記憶中的圓山景色` and describes its
-    mosaic collage, while the DORTS public-art overview gives only broader
-    station design/public-realm statements for Shilin, Mingde and Shipai. The
-    named R14 work is not treated as proof of a complete current artwork
-    register for R16, R18 or R19.
+   full Yuanshan story names `圓山五彩物語─記憶中的圓山景色` and describes its
+   mosaic collage, while the DORTS public-art overview gives only broader
+   station design/public-realm statements for Shilin, Mingde and Shipai. The
+   named R14 work is not treated as proof of a complete current artwork
+   register for R16, R18 or R19.
+
+14. **Elevated versus ground-level station boundary.** DORTS’s elevated-station
+   volume lists R14–R22A and R28 as the 11 elevated stations, while its station-
+   type manual identifies the Fuxinggang–Hongshulin section as ground-level.
+   The values measure two adjacent guideway sections, not competing structure
+   classifications. R23–R27 remain ground-level; R28 remains elevated.
+
+15. **Main-line chronology versus R22A station-specific opening date.** The
+   route chronology covers the main Tamsui–Zhongshan opening, while the checked
+   branch-planning and station material does not publish a specific Xinbeitou
+   opening date. R22A therefore remains TBC rather than inheriting the main-
+   line date.
+
+16. **Standard elevated design versus Beitou’s special structure.** The design
+   pages describe a shared elevated station vocabulary and separately identify
+   Beitou’s space-truss and glass-curtain form as a branch-related exception.
+   The shared design is the line-wide rule; the Beitou structure is the
+   station-specific variation. Neither value was replaced by the other.
 
 No conflicting exit count was found when the full TRTC station pages were
 compared with the DORTS station material for the stations where both publish a
@@ -1229,6 +1360,25 @@ field-coverage differences, not competing values.
   batch. No feeder-route assertion was published from a name or join alone.
   Checked 18 August 2026.
 
+- **R20–R24 plus R22A station-level contract values and final accounts** —
+  Checked 18 August 2026 in the full DORTS elevated-package, railway-corridor,
+  ground-station and station-design pages. The sources return package scopes,
+  named contractors and planning history but no award values or station-level
+  final accounts. No value was inferred.
+- **R20–R24 plus R22A complete station-art records** — Checked 18 August
+  2026 in the full DORTS public-art overview and the newly fetched engineering
+  pages. Those sources provide general public-realm context but no complete
+  title-artist-date-medium-cost record for these six stations. This is a failed
+  lookup, not evidence that no artwork exists.
+- **R22A branch chronology detail** — Checked 18 August 2026 in the full
+  DORTS route chronology, branch land-planning page and full TRTC station page.
+  The main-line chronology does not establish a specific Xinbeitou opening
+  date, so the field remains TBC.
+- **R20–R24 plus R22A feeder-bus prose** — TDX station joins were retained,
+  but no full PTO or ebus route page was fetched for this station batch. No
+  feeder-route assertion was published from a name or join alone. Checked 18
+  August 2026.
+
 ## Stated gaps
 
 The pages still cannot state most rename histories, paid/street transfer mode,
@@ -1262,6 +1412,13 @@ procurement/completion records, a complete station-art register, the relevant
 city gazette and full PTO/ebus pages would settle them.
 
 ---
+
+For R20–R24 plus R22A, the remaining gaps are package award values and
+station-level final accounts, complete current artwork registers, a legal
+rename record where applicable, the R22A station-specific opening date and
+sourced feeder-bus descriptions. Period DORTS procurement/completion records,
+a complete station-art register, the relevant gazette and full PTO/ebus pages
+would settle them.
 
 ## Unverified incoming lead appendix — `deep-research-report(5).md`
 
