@@ -3,6 +3,16 @@ import type { StationOverlay, StationProseSentence, Structure } from './station-
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
+const freshAnkengSources = new Set([
+  'dorts-ankeng-k02-design',
+  'dorts-ankeng-k01-k02-track',
+  'dorts-ankeng-k06-turnback',
+  'dorts-ankeng-k01-k05-power',
+  'dorts-ankeng-power',
+  'dorts-ankeng-first-train',
+  'dorts-ankeng-k05-inspection',
+  'dorts-ankeng-quality-award',
+])
 const ntmcPublisher = 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)'
 const dortsPublisher = 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)'
 const motcPublisher = 'Ministry of Transportation and Communications, Taiwan (交通部)'
@@ -14,6 +24,7 @@ function source(
   publisher: string,
   url: string,
   note: string,
+  accessedDate = accessed,
 ): Source {
   return {
     id,
@@ -21,7 +32,7 @@ function source(
     titleOriginal,
     publisher,
     url,
-    accessed,
+    accessed: freshAnkengSources.has(id) ? '2026-08-18' : accessedDate,
     snapshot: '',
     snapshotAlt: '',
     kind: 'primary',
@@ -164,6 +175,78 @@ const k01Tunnel = source(
   'The builder’s full engineering article places the three-bore Shuang’an Tunnel between K01 and Ankeng Depot and describes its light-rail track crossover.',
 )
 
+const dortsK02Design = source(
+  'dorts-ankeng-k02-design',
+  'Rose China Town station architecture',
+  '安坑輕軌玫瑰中國城站設計搶先看',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxgR923Ex?page=188',
+  'The builder’s full June 2021 station-design article describes K02 as an island-platform station on the Anyi Road elevated bridge, with a forest-in-the-trees design concept and an orange dotted-glass roof.',
+)
+
+const dortsK01K02Track = source(
+  'dorts-ankeng-k01-k02-track',
+  'Ankeng K01–K02 track-laying progress',
+  '侯市長視察安坑輕軌工程！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJV4wdAv6?page=230',
+  'The builder’s full February 2021 progress article records track laying at K01 and K02 on the at-grade section and describes the 2.6-hectare depot layout and construction sequence.',
+)
+
+const dortsK06Turnback = source(
+  'dorts-ankeng-k06-turnback',
+  'Ankeng K06 turnback and station-platform design',
+  '安坑輕軌高架車站及機廠進度！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmar102qya',
+  'The builder’s full August 2021 progress article records K06 construction, a side-and-island-platform arrangement and six turnouts around the station allowing vehicles to turn back toward K09.',
+)
+
+const dortsK01K05Power = source(
+  'dorts-ankeng-k01-k05-power',
+  'Ankeng K01–K05 systems energisation',
+  '一月安坑沿線空拍！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/lRb2b9e4mAyP',
+  'The builder’s full January 2022 progress article records the depot and K01–K05 systems energised by the end of the preceding year as preparation for train-on-line testing.',
+)
+
+const dortsAnkengPower = source(
+  'dorts-ankeng-power',
+  'Ankeng LRT high-voltage traction power',
+  '安坑輕軌機電系統高壓供電知多少！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3QGZ8V7J2rb4?page=220',
+  'The builder’s full September 2021 technical article describes 161 kV supply entering the K05 and K09 utility rooms, transformation to 22.8 kV, distribution to the depot/K02/K06/K07/K08 substations and rectification to 750 V DC for trains.',
+)
+
+const dortsAnkengFirstTrain = source(
+  'dorts-ankeng-first-train',
+  'Ankeng LRT first-train and civil-work milestone',
+  '安坑輕軌首列車登廠！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/P9z2zp6WZrDp',
+  'The builder’s full October 2021 milestone article records the first train entering the depot, the completed at-grade civil and track works, ongoing elevated track and electromechanical work, and the planned static, dynamic and endurance testing sequence.',
+)
+
+const dortsK05Inspection = source(
+  'dorts-ankeng-k05-inspection',
+  'Ankeng K05 preliminary-inspection collision exercise',
+  '模擬演練在演什麼？',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMDJg2KRw?keyword=%E6%A8%A1%E6%93%AC%E6%BC%94%E7%B7%B4%E5%9C%A8%E6%BC%94%E4%BB%80%E9%BA%BC%EF%BC%9F&page=1',
+  'The builder’s full December 2022 preliminary-inspection article records a simulated motorcycle collision with a train near K05 at the Anyi Road–Anzhong Road intersection and says emergency responders stood by without injury.',
+)
+
+const dortsAnkengQualityAward = source(
+  'dorts-ankeng-quality-award',
+  'Ankeng LRT electromechanical contract and quality award',
+  '新北捷運安坑輕軌 榮獲公共工程金質獎優等殊榮',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/news/indexInfo/Pxe2kjWxmEgL?page=7',
+  'The builder’s full December 2023 award article identifies China Steel as the electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant, and records the project’s Public Construction Golden Quality Award.',
+)
+
 const depot = source(
   'dorts-ankeng-depot',
   'Ankeng Depot engineering record',
@@ -278,6 +361,14 @@ const allSources = [
   k09Art,
   k09Bridge,
   k01Tunnel,
+  dortsK02Design,
+  dortsK01K02Track,
+  dortsK06Turnback,
+  dortsK01K05Power,
+  dortsAnkengPower,
+  dortsAnkengFirstTrain,
+  dortsK05Inspection,
+  dortsAnkengQualityAward,
   depot,
   ...Object.values(operatorStations),
 ]
@@ -303,6 +394,14 @@ function makeResearch(code: string, data: KData): StationResearch {
     accessibility.id,
     faq.id,
     depot.id,
+    dortsK02Design.id,
+    dortsK01K02Track.id,
+    dortsK06Turnback.id,
+    dortsK01K05Power.id,
+    dortsAnkengPower.id,
+    dortsAnkengFirstTrain.id,
+    dortsK05Inspection.id,
+    dortsAnkengQualityAward.id,
     data.publicArtSource?.id,
   ].filter((id): id is string => Boolean(id))
   return {
@@ -334,8 +433,99 @@ function makeResearch(code: string, data: KData): StationResearch {
 }
 
 const stationProse: Record<string, StationProseSentence[]> = {
+  K01: [
+    { text: 'DORTS records the Ankeng civil turnkey award on 3 March 2016, the main works start on 6 April 2016, and a line-wide budget of NT$16.632 billion.', source: dortsRoute.id },
+    { text: 'The route project record describes the depot at the Antai and Anyi roads, then the first five passenger stations following Anyi Road before the alignment turns onto elevated Anhe Road at K06.', source: dortsRoute.id },
+    { text: 'A separate builder engineering record places the three-bore Shuang’an Tunnel and its light-rail track crossover in the section between K01 and Ankeng Depot.', source: k01Tunnel.id },
+    { text: 'That tunnel record distinguishes the depot lead from a tunnel between passenger stations, making the underground work part of the operating approach rather than a buried K01–K02 segment.', source: k01Tunnel.id },
+    { text: 'In February 2021, DORTS reported track laying at K01 and K02 on what its progress article calls the at-grade section, with depot track work scheduled next.', source: dortsK01K02Track.id },
+    { text: 'The same progress record describes the 2.6-hectare depot as a deliberately small facility divided into stabling, maintenance and administration areas.', source: dortsK01K02Track.id },
+    { text: 'By the end of 2021, the depot and K01–K05 systems had been energised so trains could begin on-line testing, according to the builder’s January 2022 progress report.', source: dortsK01K05Power.id },
+    { text: 'An earlier October 2021 milestone recorded the first train entering the depot, completed at-grade civil and track work, and continuing elevated track and electromechanical work.', source: dortsAnkengFirstTrain.id },
+    { text: 'That milestone set out static, dynamic and endurance tests as the next sequence, connecting the physical completion of the K01 approach with the later systems-validation programme.', source: dortsAnkengFirstTrain.id },
+    { text: 'The power-system design takes 161 kV from Taipower supply points into the K05 and K09 utility rooms, steps it down to 22.8 kV, and distributes it to the line’s traction substations.', source: dortsAnkengPower.id },
+    { text: 'Those substations rectify the traction supply to 750 V direct current for the trains, although the technical article does not assign a separate traction substation to K01 itself.', source: dortsAnkengPower.id },
+    { text: 'The builder later identified China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager, and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'The electromechanical project received New Taipei’s Public Construction Golden Quality Award in December 2023, with the award article also noting a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS presents the route as a connection for the Anyi and Anhe communities and estimates that the project can shorten relevant trips by roughly 15 to 20 minutes.', source: dortsRoute.id },
+  ],
   K02: [
+    { text: 'The station-specific design record describes K02 as an island-platform station on an elevated Anyi Road bridge, with a forest-in-the-trees concept and an orange dotted-glass roof.', source: dortsK02Design.id },
+    { text: 'That architectural description treats the roof as a light, transparent and bright surface, using the glass pattern as part of the station’s visual identity.', source: dortsK02Design.id },
+    { text: 'The route-level project record gives a different description: it places K01–K05 along the Anyi Road section and says the elevated Anhe Road section begins at K06.', source: dortsRoute.id },
+    { text: 'The route statement is an alignment-level account, while the design page is a station-specific account, so the two primary descriptions are retained rather than silently reconciled.', source: dortsRoute.id },
+    { text: 'A February 2021 construction update adds a third dated description by calling the K01/K02 track-laying area the at-grade section during that stage of work.', source: dortsK01K02Track.id },
+    { text: 'That progress wording records what was under construction in 2021 and does not erase the later station-design description or convert the three records into one measurement.', source: dortsK01K02Track.id },
+    { text: 'The civil turnkey package was awarded on 3 March 2016, while the main Ankeng works began on 6 April 2016 under a line-wide NT$16.632 billion project record.', source: dortsRoute.id },
+    { text: 'By the end of 2021, DORTS says the depot and K01–K05 systems were energised for train-on-line testing, placing K02 inside the first powered testing block.', source: dortsK01K05Power.id },
+    { text: 'The builder’s traction-power article places a K02 traction substation in the 22.8 kV distribution network and says its output is rectified to 750 V direct current.', source: dortsAnkengPower.id },
+    { text: 'The wider testing programme began after the first train entered the depot in October 2021, when at-grade civil and track works were reported complete and elevated work remained active.', source: dortsAnkengFirstTrain.id },
+    { text: 'DORTS says the planned sequence then moved through static, dynamic and endurance tests, rather than treating track completion as the end of commissioning.', source: dortsAnkengFirstTrain.id },
+    { text: 'The project’s later quality-award record names China Steel as the electromechanical turnkey contractor, with China Engineering Consultants managing and Sinotech Engineering Consultants supervising.', source: dortsAnkengQualityAward.id },
+    { text: 'The same record says the electromechanical project won the Public Construction Golden Quality Award and reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS frames the line as improved access for the Anyi and Anhe communities, with a projected reduction of about 15 to 20 minutes for relevant journeys.', source: dortsRoute.id },
     { text: 'DORTS describes the K02 artwork as a cluster whose flexible, biological curves suggest an alien organism; its rounded forms and multicolour surfaces also evoke Mambo-like movement and insect flight.', source: k02Art.id },
+  ],
+  K03: [
+    { text: 'DORTS places K03 within the Anyi Road portion of the Ankeng alignment, before the route changes to elevated Anhe Road at K06.', source: dortsRoute.id },
+    { text: 'The same project record says the civil turnkey package was awarded on 3 March 2016 and that the main works began on 6 April 2016.', source: dortsRoute.id },
+    { text: 'The NT$16.632 billion figure in that record is a line-wide project budget, not a cost assigned to K03 or to any single station.', source: dortsRoute.id },
+    { text: 'DORTS reports that the depot and K01–K05 systems were energised by the end of 2021 so trains could enter the on-line testing phase.', source: dortsK01K05Power.id },
+    { text: 'Because K03 is in that numbered range, the report establishes inclusion in the powered section without publishing a K03-only energisation date or equipment inventory.', source: dortsK01K05Power.id },
+    { text: 'The traction-power design routes 161 kV through the K05 and K09 utility rooms, transforms it to 22.8 kV, and distributes it to several traction substations.', source: dortsAnkengPower.id },
+    { text: 'The system then rectifies that supply to 750 V direct current for the light-rail trains, while the article does not identify a dedicated K03 substation.', source: dortsAnkengPower.id },
+    { text: 'A first-train milestone recorded the train entering the depot in October 2021 and described the at-grade civil and track works as complete at that point.', source: dortsAnkengFirstTrain.id },
+    { text: 'The same milestone says elevated track and electromechanical work continued, followed by planned static, dynamic and endurance testing.', source: dortsAnkengFirstTrain.id },
+    { text: 'This separates completion of the civil section from the later validation of vehicles, signalling, power and operating performance.', source: dortsAnkengFirstTrain.id },
+    { text: 'The builder’s December 2023 quality-award article identifies China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervisor.', source: dortsAnkengQualityAward.id },
+    { text: 'It also records the electromechanical project’s Public Construction Golden Quality Award and a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS says the route was intended to improve access through the Anyi and Anhe communities and estimates roughly 15 to 20 minutes of journey-time reduction.', source: dortsRoute.id },
+  ],
+  K04: [
+    { text: 'The route project record places K04 in the Anyi Road section, before the Ankeng alignment turns onto elevated Anhe Road at K06.', source: dortsRoute.id },
+    { text: 'DORTS records the civil turnkey award on 3 March 2016 and the start of the main works on 6 April 2016.', source: dortsRoute.id },
+    { text: 'Its NT$16.632 billion figure measures the full Ankeng project, so it cannot be read as a K04 construction price.', source: dortsRoute.id },
+    { text: 'The builder’s January 2022 progress account says the depot and K01–K05 systems had already been energised by the end of the previous year for train-on-line testing.', source: dortsK01K05Power.id },
+    { text: 'That range places K04 in the energised part of the line, but the source does not publish a station-only switching date or a K04 equipment list.', source: dortsK01K05Power.id },
+    { text: 'The technical power account starts with 161 kV entering utility rooms at K05 and K09, then describes transformation to 22.8 kV and distribution to traction substations.', source: dortsAnkengPower.id },
+    { text: 'The substations convert the supplied power to 750 V direct current for train operation; the article does not say that K04 contains one of those substations.', source: dortsAnkengPower.id },
+    { text: 'In October 2021, the first-train report said the vehicle had entered the depot and the at-grade civil and track works were complete.', source: dortsAnkengFirstTrain.id },
+    { text: 'It simultaneously reported ongoing elevated track and electromechanical work, followed by static, dynamic and endurance tests.', source: dortsAnkengFirstTrain.id },
+    { text: 'The sequence matters because a completed track section and a commissioned passenger station are different project milestones in the builder’s account.', source: dortsAnkengFirstTrain.id },
+    { text: 'The later quality record names China Steel as the electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS says that electromechanical project received the Public Construction Golden Quality Award and reports a vehicle-domestication ratio of 42 percent.', source: dortsAnkengQualityAward.id },
+    { text: 'The route’s stated purpose was better access for the Anyi and Anhe communities, with DORTS estimating about 15 to 20 minutes saved on relevant trips.', source: dortsRoute.id },
+  ],
+  K05: [
+    { text: 'DORTS places K05 on Anyi Road immediately before the alignment turns to the elevated Anhe Road section at K06.', source: dortsRoute.id },
+    { text: 'The project record gives a civil turnkey award date of 3 March 2016, a main works start of 6 April 2016 and a line-wide budget of NT$16.632 billion.', source: dortsRoute.id },
+    { text: 'The builder’s technical power article gives K05 a specific electrical role by placing the incoming 161 kV supply in its utility room alongside the corresponding K09 room.', source: dortsAnkengPower.id },
+    { text: 'Those utility rooms transform the high-voltage supply to 22.8 kV before cables distribute power to the depot and the line’s traction substations.', source: dortsAnkengPower.id },
+    { text: 'The traction substations rectify the supply to 750 V direct current for the trains, making K05 part of the documented power-entry architecture rather than only a passenger-stop reference.', source: dortsAnkengPower.id },
+    { text: 'A January 2022 progress report says the depot and K01–K05 systems had been energised by the end of 2021 to support train-on-line testing.', source: dortsK01K05Power.id },
+    { text: 'The first-train milestone had already recorded the vehicle entering the depot and the at-grade civil and track works as complete in October 2021.', source: dortsAnkengFirstTrain.id },
+    { text: 'That milestone still listed elevated track and electromechanical work as ongoing, with static, dynamic and endurance tests to follow.', source: dortsAnkengFirstTrain.id },
+    { text: 'During preliminary inspection in December 2022, DORTS staged a train-and-motorcycle collision exercise at the Anyi Road and Anzhong Road intersection near K05.', source: dortsK05Inspection.id },
+    { text: 'The exercise report says the scenario produced no injury and that emergency responders stood by, making it a preparedness test rather than a reported crash.', source: dortsK05Inspection.id },
+    { text: 'The inspection exercise demonstrates that the project’s verification work included street-interface response procedures, not only hidden systems testing.', source: dortsK05Inspection.id },
+    { text: 'The later quality-award article identifies China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervisor.', source: dortsAnkengQualityAward.id },
+    { text: 'It records the electromechanical project’s Public Construction Golden Quality Award and a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS presents the corridor as a way to improve access for the Anyi and Anhe communities and estimates about 15 to 20 minutes of journey-time reduction.', source: dortsRoute.id },
+  ],
+  K06: [
+    { text: 'DORTS identifies K06 as the point where the Ankeng route leaves the Anyi Road section and begins its elevated run along Anhe Road.', source: dortsRoute.id },
+    { text: 'The civil turnkey package was awarded on 3 March 2016, main works began on 6 April 2016, and the published NT$16.632 billion figure covers the line-wide project.', source: dortsRoute.id },
+    { text: 'A construction update from August 2021 records K06 with both side and island platforms, rather than a single platform form.', source: dortsK06Turnback.id },
+    { text: 'The same update says three turnouts sit before the station and three after it, creating six turnouts around K06.', source: dortsK06Turnback.id },
+    { text: 'DORTS explains that arrangement as allowing light-rail vehicles to turn back toward K09, giving the elevated section an operational short-working capability.', source: dortsK06Turnback.id },
+    { text: 'The builder’s October 2021 first-train report says the first vehicle had entered the depot while elevated track and electromechanical work remained in progress.', source: dortsAnkengFirstTrain.id },
+    { text: 'It describes the at-grade civil and track works as complete and places static, dynamic and endurance testing later in the commissioning sequence.', source: dortsAnkengFirstTrain.id },
+    { text: 'The traction-power design includes K06 in the 22.8 kV distribution network fed from the K05 and K09 utility rooms.', source: dortsAnkengPower.id },
+    { text: 'That distributed system rectifies the traction supply to 750 V direct current for trains, while the technical article does not assign K06 a separate incoming 161 kV connection.', source: dortsAnkengPower.id },
+    { text: 'By the end of 2021, the builder reported the depot and K01–K05 systems energised for train-on-line testing, documenting the earlier powered section before K06’s own elevated work was complete.', source: dortsK01K05Power.id },
+    { text: 'The later quality-award record identifies China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS says the electromechanical project won the Public Construction Golden Quality Award and reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'The route project frames this transition as part of improved access for the Anyi and Anhe communities and estimates about 15 to 20 minutes saved on relevant journeys.', source: dortsRoute.id },
   ],
   K08: [
     { text: 'The K08 public-art pair uses insect imagery to cast the train as a lively, flying creature, while its ground-level mosaic counterpart adds flower-like colours, Japanese craft texture and a calm spatial layer.', source: k08Art.id },

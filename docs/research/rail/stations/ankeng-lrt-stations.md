@@ -56,6 +56,99 @@ K01–K06 therefore add 29 body-prose words in this batch. The K02 sentence is
 the only new prose claim; its source is `dorts-ankeng-k02-art`, whose full URL
 is recorded in the implementation source and in the source table below.
 
+## Widened source audit and station-prose deepening: K01–K06 — 18 August 2026
+
+The previous audit was too narrow. It searched the full NTMC station pages and
+tables, the DORTS route and station-position pages, the Shuang'an Tunnel page
+and the K02 public-art record, but it did not search the builder's progress,
+architecture, power, inspection or award records. This batch widened the
+search to those DORTS source families and fetched each full page, not a search
+result snippet.
+
+The route record is PRIMARY, High confidence: it is the builder's full project
+page and publishes the civil turnkey award on 3 March 2016, main works from 6
+April 2016, the line-wide NT$16.632 billion project value, the Anyi Road and
+Anhe Road sections, and the route's construction milestones. Its route text
+includes:
+
+> 「沿著安一路北行……於喜洋洋與甜蜜蜜社區附近設K1站……安忠路口東側設K5站，續沿安一路安和支線轉至安和路，並以高架方式沿安和路北行，於安和路與安康路口設K6站」
+
+URL: `https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ`.
+
+The full February 2021 DORTS progress page is PRIMARY, High confidence. It
+records track laying at K01 and K02 in the at-grade section and describes the
+2.6-hectare depot's stabling, maintenance and administration functions:
+
+> 「平面段正進行雙城站(K1)、玫瑰中國城站(K2)軌道鋪設作業」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJV4wdAv6?page=230`.
+
+The full K02 architecture page is PRIMARY, High confidence. It describes an
+island platform on an elevated Anyi Road bridge and a forest-in-the-trees
+concept with orange dotted glass:
+
+> 「玫瑰中國城站位於……安一路高架橋上」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxgR923Ex?page=188`.
+
+The full K06 progress page is PRIMARY, High confidence. It records side and
+island platforms and six turnouts around K06, allowing a vehicle to turn back
+toward K09:
+
+> 「車站前後共有6組轉轍器，可讓車輛回頭至K9」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmar102qya`.
+
+The full systems-progress page is PRIMARY, High confidence. It says the depot
+and K01–K05 systems had been energised by the end of 2021 for on-line train
+testing:
+
+> 「機廠及K1~K5沿線變電站已於去年底陸續送電，進行列車上線測試」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/lRb2b9e4mAyP`.
+
+The full traction-power technical page is PRIMARY, High confidence. It
+describes 161 kV entering the K05 and K09 utility rooms, transformation to
+22.8 kV, distribution to the depot and named traction substations, and
+rectification to 750 V DC:
+
+> 「161kV電力……送至K5及K9兩座主變電站……轉換成22.8kV……再送至機廠、K2、K6、K7及K8變電站……轉換為750V直流電」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3QGZ8V7J2rb4?page=220`.
+
+The full first-train milestone is PRIMARY, High confidence. It records the
+first train entering the depot, completed at-grade civil and track works,
+ongoing elevated and electromechanical works, and the planned static, dynamic
+and endurance tests:
+
+> 「首列車……進入機廠」；「平面段土建及軌道工程已完成」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/P9z2zp6WZrDp`.
+
+The full preliminary-inspection article is PRIMARY, High confidence. It
+describes a simulated train-and-motorcycle collision near K05 at Anyi and
+Anzhong roads, says nobody was injured, and identifies the exercise as part
+of preliminary inspection:
+
+> 「模擬列車與機車發生碰撞……安一路與安忠路口……無人受傷」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMDJg2KRw?keyword=%E6%A8%A1%E6%93%AC%E6%BC%94%E7%B7%B4%E5%9C%A8%E6%BC%94%E4%BB%80%E9%BA%BC%EF%BC%9F&page=1`.
+
+The full December 2023 DORTS award page is PRIMARY, High confidence. It names
+China Steel as electromechanical turnkey contractor, China Engineering
+Consultants as project manager and Sinotech Engineering Consultants as
+supervision consultant, and records the Public Construction Golden Quality
+Award and a 42 percent vehicle-domestication ratio.
+
+URL: `https://www.dorts.ntpc.gov.tw/news/indexInfo/Pxe2kjWxmEgL?page=7`.
+
+These expanded sources supply 14 sentences for K01, 16 for K02 including the
+earlier art sentence, and 14 each for K03, K04, K05 and K06. The new prose is
+based on contract scope and dates, route-section engineering, station design,
+traction power, commissioning milestones, the K05 inspection exercise and the
+line-wide quality award. It does not assign the line-wide budget to an
+individual station.
+
 ## Station-prose audit: K07–K09
 
 The following full primary pages were fetched and read on 17 August 2026:
@@ -183,8 +276,9 @@ classified as underground.
 The DORTS An-Xin Bridge article is PRIMARY, High confidence for K09's
 engineering history. It publishes a 502 m three-span continuous asymmetric
 cable-stayed bridge, a 130 m pylon and a 400 m-wide river crossing connecting
-Xindian and Ankeng. No station-specific construction history beyond the
-route-level civil works was found for K02–K08.
+Xindian and Ankeng. The expanded search found station-specific construction
+records for K02 and K06; no comparable station-specific construction history
+beyond the route-level civil works was found for K03–K05 or K07–K08.
 
 ### Public art
 
@@ -240,6 +334,15 @@ operator or builder names near the station, not inferred geography.
    K06 elevated transition. Both statements are retained: K02 is the
    separately documented elevated station, and K01/K03–K05 remain at-grade.
 
+4. The widened record set adds two more K02 descriptions. The June 2021
+   station-design page measures the station itself and calls it an Anyi Road
+   elevated-bridge island-platform station; the February 2021 progress page
+   measures the construction area at that date and calls K01/K02 track laying
+   part of the at-grade section. The route page is a route-level description
+   that places the Anyi Road section before the K06 elevated transition. All
+   three primary values are retained with their different scope and date; the
+   page does not average or silently choose between them.
+
 ## Checked and failed
 
 - **Postal addresses for K01–K08** — the TDX records have no address and the
@@ -260,6 +363,11 @@ operator or builder names near the station, not inferred geography.
 - **Station-level depot roster** — the builder identifies Ankeng Depot and its
   functions but does not publish station allocation by train or shift. Checked
   14 August 2026.
+- **Station-specific contract values and architects for K01, K03, K04, K05 and
+  K06** — the widened DORTS route, progress, architecture and award pages
+  provide line-wide contract or programme records and a K02 design record, but
+  no station-level package value, contractor or architect for these five
+  stations. Checked 18 August 2026.
 - **Public art at K01, K03, K04, K05, K06 and K07** — no station-specific
   primary record was found in the checked full DORTS and NTMC material. Checked
   14 August 2026.
@@ -277,9 +385,11 @@ page keeps the affected values as TBC.
 ## Sources
 
 The implementation source records in `lib/ankeng-stations.ts` contain the
-complete metadata for 22 unique primary sources used by the generated pages:
+complete metadata for 30 unique primary sources used by the generated pages:
 TDX, the NTMC station table and nine NTMC station detail pages, three further
 NTMC pages, two DORTS route/station pages, three DORTS public-art records, the
-An-Xin Bridge article, the Shuang'an Tunnel article and the Ankeng Depot
-article. Each record includes the original-language title, publisher, URL,
-access date, language, primary kind and a note describing what it supports.
+An-Xin Bridge article, the Shuang'an Tunnel article, eight new DORTS
+architecture, progress, power, inspection and award records, and the Ankeng
+Depot article. Each record includes the original-language title, publisher,
+URL, access date, language, primary kind and a note describing what it
+supports.

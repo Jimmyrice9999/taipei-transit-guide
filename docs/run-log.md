@@ -9527,3 +9527,59 @@ explicit `npm test` and `git diff --check` still required before commit.
 
 Next: commit and push the completed Danhai line tail, then audit Ankeng K01–K06
 as the first six-station batch of the remaining New Taipei line work.
+
+# Run 34 — Part 2 Ankeng LRT K01–K06, 18 August 2026
+
+Audited before editing. K01, K03, K04, K05 and K06 had zero body-prose words;
+K02 had one 31-word public-art sentence. The prior search had fetched the six
+NTMC station pages, NTMC station table/FAQ/accessibility/transfer material,
+DORTS route and station-position pages, the Shuang'an Tunnel record, and the
+K02 public-art record, but had not searched DORTS architecture, progress,
+traction-power, inspection or quality-award families. The widened audit fetched
+each new page in full; the K01/K02 progress page was fetched directly after a
+web-reader cache miss. No search snippet was used.
+
+Final body-prose counts: K01 415, K02 432, K03 338, K04 338, K05 365 and K06
+346; batch total 2,234 words. K02 retains the earlier sourced art sentence.
+
+Primary URLs fetched in full and cited:
+
+- https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJV4wdAv6?page=230
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxgR923Ex?page=188
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmar102qya
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/lRb2b9e4mAyP
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3QGZ8V7J2rb4?page=220
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/P9z2zp6WZrDp
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMDJg2KRw?keyword=%E6%A8%A1%E6%93%AC%E6%BC%94%E7%B7%B4%E5%9C%A8%E6%BC%94%E4%BB%80%E9%BA%BC%EF%BC%9F&page=1
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/Pxe2kjWxmEgL?page=7
+
+Conflicts published: the route-level account places K01–K05 along Anyi Road
+and begins the elevated Anhe section at K06; the June 2021 station-design page
+describes K02 itself as an elevated Anyi Road bridge island-platform station;
+and the February 2021 construction snapshot calls K01/K02 track laying part of
+the at-grade section. These measure route alignment, station architecture and
+a dated construction stage respectively. The existing DORTS Y7 versus current
+NTMC/DORTS Y8 K09 transfer conflict remains published with both values.
+
+TBC: station-only contract values, contractors and architects for K01, K03,
+K04, K05 and K06; numbered exits, platform/track tables, dated renames,
+station-level depot rosters, and public art at K01, K03–K07. The expanded
+source families returned line-wide contract/award and testing records, a K02
+architecture record, K06 turnback design, K05 inspection exercise and
+line-wide power records, but no station-only contract allocations.
+
+Contradicted the corpus: the previous conclusion that K01 and K03–K06 had no
+usable deepening material was too narrow. The widened primary search returned
+contract and route-section context, K02 architecture, K06 turnback engineering,
+K01–K05 energisation, traction-power design, first-train commissioning, K05
+preliminary-inspection and quality-award records.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after line-K font regeneration (519 pages, no missing
+glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185 tests);
+explicit `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. `docs/for-jamie.md` remains 19 lines.
+
+Next: commit and push this six-station Ankeng batch, then audit Ankeng K07–K09
+before proceeding to the remaining parts of the run.
