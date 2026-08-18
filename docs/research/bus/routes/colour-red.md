@@ -165,16 +165,121 @@ during school holidays and non-school days.
   `收費方式 : 一段票`; `業者服務電話 : 光華巴士天東站:02-2872-1527`; and
   `平常日0700班次返程停靠「天母國中」站位(寒暑假期間及天母國中校方非上課日除外)`.
 
+## Batch 2 — 紅2, 紅22, 紅23, 紅25區, 紅25 and 紅26, checked 18 August 2026
+
+The six current official pages were fetched in full. They establish current
+route identity, termini, service windows, fare class, operator contacts and
+current timetable variants. They do not establish route opening history, the
+original corridor decision or dated operator changes; those fields remain TBC.
+
+### 紅2 / R2
+
+The full official schedule page gives `汐止社后 - 捷運圓山站`, weekday and
+holiday service 0600–2300, one-section fare and `光華巴士北峰站` as the service
+contact.
+
+- **Source:** “R2 route schedule” / `titleOriginal`: `紅2班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000200
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 汐止社后 - 捷運圓山站`;
+  `頭末班車 : [平日] 0600 - 2300 / [假日] 0600 - 2300`;
+  `收費方式 : 一段票`; and `業者服務電話 : 光華巴士北峰站:02-8693-2251`.
+
+### 紅22 / R22
+
+The full official schedule page gives `八里 - 捷運關渡站`, weekday service
+0530–2330, holiday service 0545–2330, one-section fare and
+`淡水客運八里站` as the service contact. It records 07:03 return and 17:19
+outbound detours and 30-minute service after 22:00.
+
+- **Source:** “R22 route schedule” / `titleOriginal`: `紅22班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002200
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 八里 - 捷運關渡站`;
+  `頭末班車 : [平日] 0530 - 2330 / [假日] 0545 - 2330`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運八里站:02-2610-4393`; and
+  `07:03 返程繞駛、17:19 往程繞駛；22:00後30分乙班次`.
+
+### 紅23 / R23
+
+The full official schedule page gives `淡水 - 關渡`, weekday and holiday
+service 0550–0000, one-section fare and `三重客運淡水站` as the service
+contact.
+
+- **Source:** “R23 route schedule” / `titleOriginal`: `紅23班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002300
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡水 - 關渡`;
+  `頭末班車 : [平日] 0550 - 0000 / [假日] 0550 - 0000`;
+  `收費方式 : 一段票`; and `業者服務電話 : 三重客運淡水站:02-2805-4701`.
+
+### 紅25區 / R25Shuttle
+
+The full official schedule page gives `南港 - 捷運南京復興站`, weekday service
+0940–2110, holiday service 0830–2030, one-section fare and
+`首都客運經貿站` as the service contact.
+
+- **Source:** “R25Shuttle route schedule” / `titleOriginal`: `紅25區班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111002520
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 南港 - 捷運南京復興站`;
+  `頭末班車 : [平日] 0940 - 2110 / [假日] 0830 - 2030`;
+  `收費方式 : 一段票`; and `業者服務電話 : 首都客運經貿站:02-2654-6782`.
+
+### 紅25 / R25
+
+The full official route-information page gives `南港 - 捷運北門站`, weekday
+service 0550–2200, holiday service 0700–2130, one-section fare and
+`首都客運經貿站` as the service contact.
+
+- **Source:** “R25 route information” / `titleOriginal`: `紅25路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0111002500
+- **Kind/confidence:** PRIMARY; High — full official route-information page read.
+- **Original-language text read:** `起訖站名：南港 - 捷運北門站`;
+  `平日：0550~2200`; `假日：0700~2130`; `收費方式：一段票`; and
+  `業者服務電話 : 首都客運經貿站:02-2654-6782`.
+
+### 紅26 / R26
+
+The full official schedule page gives `漁人碼頭 - 捷運淡水站`, weekday and
+holiday service 0600–0000, one-section fare and `指南客運淡海站` as the service
+contact. It records a current working from 淡海 that does not enter 漁人碼頭
+before 08:00 or after 22:00.
+
+- **Source:** “R26 route schedule” / `titleOriginal`: `紅26班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002600
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 漁人碼頭 - 捷運淡水站`;
+  `頭末班車 : [平日] 0600 - 0000 / [假日] 0600 - 0000`;
+  `收費方式 : 一段票`; `業者服務電話 : 指南客運淡海站:02-2805-2262`; and
+  `08:00前與22:00後自淡海發車(不進漁人碼頭)`.
+
 ## What remains TBC
 
-- **All six batch-1 routes:** opening date, earlier alignment, original corridor
-  rationale and dated operator transfers are TBC.
-- **紅19:** the current school-day return stop variant is established; its
+- **All twelve batch-1/2 routes:** opening date, earlier alignment, original
+  corridor rationale and dated operator transfers are TBC.
+- **紅19:** its current school-day return stop variant is established; its
+  creation date and rationale are TBC.
+- **紅22:** the current timed detours and late-evening service are established;
+  their creation dates and rationale are TBC.
+- **紅26:** the current no-fisherman-wharf short working is established; its
   creation date and rationale are TBC.
 
 ## Checked and failed
 
-- **Dated opening, corridor-rationale and operator-change records for batch 1** —
+- **Dated opening, corridor-rationale and operator-change records for batches 1–2** —
   full current route pages were checked, but no dated primary history record was
   promoted from those pages. Current service data was not treated as an origin
   story. Checked 18 August 2026.
