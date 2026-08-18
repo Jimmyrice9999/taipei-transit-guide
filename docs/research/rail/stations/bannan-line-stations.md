@@ -492,6 +492,162 @@ BL08–BL12. The CP541 and CP261/CN252/CN253B values are package or engineering
 measurements, not station civil prices. Platform form, platform count and track
 count remain TBC where the station-specific primary record did not publish them.
 
+## BL13–BL18 deepening — 18 August 2026
+
+### What is established
+
+- **Nangang corridor and line-wide track scope — BL13–BL18.** DORTS’s full
+  Nangang route page describes an approximately 10.3-kilometre, entirely
+  underground section with eleven stations through a dense, high-traffic
+  commercial corridor: 「南港線全長約10.3公里，全線採地下化，設置11座車站」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06,
+  source id `dorts-bannan-nangang` (PRIMARY, High: DORTS project page). The
+  full track article uses a wider CN531 scope from the Nangang Depot side west
+  through Zhongxiao East, Zhongxiao West and Zhonghua roads, reports 30.6
+  kilometres and twelve mainline stations, and records mixed ballasted and
+  ballastless track: 「全長約30.6公里，共12座主線車站」. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html,
+  source id `dorts-cn531-track-p21` (PRIMARY, High: DORTS technical journal).
+  The former is the route-page Nangang section; the latter is a wider track
+  contract scope and is not treated as a station length.
+
+- **Track procurement — BL13–BL18.** The same technical journal records eleven
+  failed or aborted tenders before the ROC85 October award to DeSheng and
+  Korean Wido, with NT$1,309,170,114 for CN531 and NT$488,829,886 for CP541:
+  「歷經11次流標、廢標」 and 「於民國85年10月決標」. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html,
+  source id `dorts-cn531-track-p21` (PRIMARY, High). These are line-wide track
+  package values, not station civil prices.
+
+- **Procurement strategy — BL13–BL18.** DORTS’s procurement record separates
+  the international joint-bid CN253B/CN257 packages from CN253A/CN254/CN256,
+  which used domestic contractors with foreign technical cooperation, and
+  records negotiated procurement with the Veterans Engineering Office for
+  CN251/CN252 in the sensitive Boai district: 「CN253B、CN257採國際聯合承攬」,
+  「CN253A、CN254、CN256採國內承攬商與國外技術合作」 and 「CN251、CN252標採與榮工處議價」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html,
+  source id `dorts-bannan-procurement-strategy-p37` (PRIMARY, High).
+
+- **BL13 Shandao Temple and BL14 Zhongxiao Xinsheng.** The fetched route,
+  architecture, procurement, technical track, public-art planning and flood
+  records yielded corridor-level engineering and design context but did not
+  yield a station-specific civil contractor, final account, rename gazette,
+  complete public-art record or station-level depot roster. DORTS’s architecture
+  page describes the Nankang design intention as reducing surface mass,
+  linking underground activity and creating landmarks through public art:
+  「以簡約的設計手法減少空間量體對都市景觀的衝擊，並以公共藝術的徵選活動創造都市新地標」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A,
+  source id `dorts-bannan-architecture` (PRIMARY, High). The full public-art
+  planning page names Taipei Main, City Hall, Kunyang and Zhongxiao Dunhua as
+  selected locations, but does not create a BL13 or BL14 artwork record:
+  「南港線…市政府站、昆陽站、忠孝敦化站」. URL:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html,
+  source id `dorts-nangang-public-art-planning-p216` (PRIMARY, High).
+
+- **BL15 Zhongxiao Fuxing joint development.** DORTS’s full land-development
+  case records a 7,691-square-metre交4/交10 site, the ROC86 September 9 plan
+  change, commercial zoning, co-construction with the Wenhu Line on floors 1–3,
+  co-construction with Bannan entrances and ventilation facilities on B1–B3,
+  the ROC86 November plan announcement, ROC88 March investor solicitation,
+  ROC89 January investment contract and ROC95 November completion. The source
+  distinguishes this development record from a station civil tender: 「基地面積
+  7,691平方公尺」 and 「地上1至3層與文湖線共構、地下1至3層與板南線共構」. URL:
+  https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page110.html,
+  source id `dorts-zhongxiao-fuxing-development-p110` (PRIMARY, High).
+
+- **BL16 Zhongxiao Dunhua public art.** DORTS’s planning page identifies the
+  station and pedestrian plaza as an important urban node with two ventilation
+  structures. The budget page records a NT$500,000 first-prize award and says
+  the remaining work was carried out by the original contractor through design
+  change. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html and
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html,
+  source ids `dorts-nangang-public-art-planning-p216` and
+  `dorts-nangang-public-art-budget-p218` (PRIMARY, High). The full process page
+  records the 8–16 November ROC86 public exhibition, 671 valid questionnaires,
+  three finalists and the selection of 樹河: 「共計收到有效問卷671份」. URL:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page221.html,
+  source id `dorts-zhongxiao-dunhua-public-art-process-p221` (PRIMARY, High).
+  The current DORTS artwork page records 蔡淑瑩, January 2000 completion, painted
+  stainless steel, granite, flowing water and LED lights, the traffic-island
+  placement, public selection and approximately NT$43 million plus the
+  NT$500,000 award: 「作品經費(新臺幣)：約43,000,000元(另首獎獎金500,000元)」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=69F49A510E1B983F,
+  source id `dorts-bl16-public-art` (PRIMARY, High: current DORTS record).
+
+- **BL17 Sun Yat-Sen Memorial Hall and BL18 City Hall construction method.**
+  DORTS’s full tunnel-engineering page identifies both stations as sequential
+  cut-and-cover examples using struts: 「國父紀念館站及市政府站採用順打工法」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page28.html,
+  source id `dorts-nangang-cut-cover-p28` (PRIMARY, High).
+
+- **BL18 City Hall tunnel case.** The geotechnical case places CN256/CN257
+  between Keelung Road and Zhongxiao East Road, says the shield was stopped near
+  a Keelung Road vehicle underpass because of schedule, uplift and alignment
+  risk, records approximately 50 metres remaining with about 20 centimetres of
+  clearance, and says three alternatives were publicly tendered. URL:
+  https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page272.html,
+  source id `dorts-cn256-cn257-city-hall-tunnel-p272` (PRIMARY, High). The
+  fetched passage does not identify the selected alternative; no outcome is
+  inferred.
+
+- **BL18 City Hall public art.** DORTS’s planning record selected City Hall for
+  its geographic importance and special platform form and identified an
+  underground void as a focal space. Its planning ceiling was NT$3 million.
+  URLs: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+  and https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html,
+  source ids `dorts-nangang-public-art-planning-p216` and
+  `dorts-nangang-public-art-budget-p218` (PRIMARY, High). The current artwork
+  record identifies 成長, Steve Woodward, the five-part form, November 1999
+  completion, its plaza/platform placements, open selection and NT$2,960,000
+  stated cost. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=8EB8329E28899847,
+  source id `dorts-bl18-public-art` (PRIMARY, High).
+
+- **Flood-design framework — BL13–BL18.** DORTS records that the post-Nari
+  freeboard standard was revised from 0.5 metre to 1.1 metres and publishes
+  historical flood-design tables. URL:
+  https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page154.html,
+  source id `dorts-nangang-flood-response-p154` (PRIMARY, High). The table’s
+  engineering-era station labels do not map one-for-one to current TRTC
+  operating codes; the values are therefore not reassigned to current BL13–
+  BL18 identities in the station pages.
+
+### Conflicts found in this batch
+
+1. DORTS publishes approximately 10.3 kilometres and eleven stations for the
+   Nangang route section, but 30.6 kilometres and twelve mainline stations for
+   the wider CN531 track scope. Both measurements are published and labelled;
+   neither is treated as a station length.
+2. DORTS’s flood tables use engineering-era station labels and explicitly warn
+   that those codes differ from TRTC’s current operating codes. Historical row
+   values are retained as source-era engineering data, with no inferred BL13–
+   BL18 mapping.
+3. The Zhongxiao Dunhua public-art planning record reports a programme-stage
+   first-prize amount of NT$500,000 and responsibility for the remaining work,
+   while the current artwork page reports approximately NT$43,000,000 plus that
+   award. These measure the award/programme arrangement versus the installed
+   work’s published expenditure.
+4. City Hall’s planning record gives a NT$3 million ceiling, while its current
+   artwork record gives NT$2,960,000. The first is a ceiling; the second is the
+   later stated artwork cost.
+5. The City Hall tunnel case records three publicly tendered alternatives but
+   does not identify the selected one. The station page reports the alternatives
+   and leaves the final choice TBC.
+
+### Checked and failed for this batch
+
+- DORTS Nangang route and architecture pages, the DORTS technical books and
+  journals cited above, public-art planning/current-art pages, and the checked
+  procurement records did not yield station-specific civil contractor names and
+  final accounts for BL13–BL18. Checked 18 August 2026.
+- The same full-page family did not yield construction-era names or dated rename
+  gazettes, complete paid-area versus street-transfer classifications, or
+  station-level depot rosters for BL13–BL18. Checked 18 August 2026.
+- No complete BL13, BL14, BL15 or BL17 station-specific public-art metadata was
+  found in the fetched primary records used for this batch; no absence claim was
+  made. Checked 18 August 2026.
+
 ## Conflicts
 
 1. The DORTS route material describes the built Bannan sections as underground,
@@ -577,8 +733,10 @@ match.
   Depot by stretch, not the operating roster for each station. The latter
   remains TBC. Checked 14 August 2026.
 - **BL16 public art** — https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=69F49A510E1B983F
-  was fetched in full, but the usable text contained no art metadata.
-  Checked 14 August 2026.
+  was fetched in full on 18 August 2026 after the earlier extraction failed;
+  the fresh page supplies the title, artist, dimensions, materials, completion
+  date, placement, selection method and cost. The earlier failed extraction is
+  retained as provenance, not as a current gap.
 - **BL23 second public-art record — superseded extraction** — the 14 August
   extraction did not expose the second work’s complete date, medium and
   placement. A fresh full fetch on 17 August 2026 did expose those fields, so

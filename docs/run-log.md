@@ -8882,6 +8882,71 @@ sourced. No station colour-prefix audit applies. Next: audit BL07–BL12.
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
 
+# Run 31 — Part 1 Bannan BL13–BL18, 18 August 2026
+
+Deepened six Bannan station pages using the same source families as BL01–BL12:
+full DORTS route/project pages, contract and procurement records, station
+architecture, technical books and journals, and public-art planning/current
+records. Body-prose counts are BL13 385, BL14 322, BL15 336, BL16 323, BL17
+323 and BL18 377, for 2,066 words total. Every station-prose sentence carries
+an overlay source.
+
+Sourced: the Nangang corridor’s route-versus-track-package scopes; the CN531
+and CP541 failed-tender history, contractors and line-wide contract amounts;
+the procurement-strategy split between joint bidding, foreign technical
+cooperation and negotiated Boai-district packages; Nankang’s restrained
+underground architecture principle; Zhongxiao Fuxing’s 7,691-square-metre
+joint-development chronology and layer arrangement; Zhongxiao Dunhua’s
+public-art selection, 671-questionnaire exhibition and current 樹河 record;
+Sun Yat-Sen Memorial Hall and City Hall’s sequential cut-and-cover method;
+City Hall’s CN256/CN257 underpass case and three tendered alternatives; City
+Hall’s public-art planning ceiling and current 成長 expenditure; and the
+post-Nari flood-freeboard revision.
+
+Primary URLs cited:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page221.html
+- https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page154.html
+- https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page272.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page28.html
+- https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page110.html
+- https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=69F49A510E1B983F
+- https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=8EB8329E28899847
+
+TBC and source exhaustion: the fetched DORTS route and architecture pages,
+technical books Nos. 2, 4, 6, 8, 15 and 18, Technical Journal No. 39,
+public-art planning/current pages and procurement records did not yield
+station-specific civil contractors and final accounts, rename gazettes,
+complete paid-area/street-transfer classifications or station-level depot
+rosters for BL13–BL18. Complete BL13, BL14, BL15 and BL17 public-art metadata
+was not found in the fetched primary records; no absence claim was made.
+
+Conflicts published: 10.3 kilometres/eleven stations for the DORTS Nangang
+route section versus 30.6 kilometres/twelve mainline stations for the wider
+CN531 track scope; historical DORTS flood-table labels versus current TRTC
+operating codes; Zhongxiao Dunhua’s NT$500,000 first-prize/programme amount
+versus approximately NT$43 million plus that award for the installed work;
+City Hall’s NT$3 million planning ceiling versus NT$2,960,000 artwork cost;
+and City Hall’s three tendered tunnel alternatives with no selected option in
+the fetched passage. No station colour-prefix audit applies.
+
+Contradicted the corpus: the prior five zero-word BL13–BL17 pages and BL18’s
+single-art-sentence result were superseded by full DORTS technical,
+procurement, development and public-art records. The previous BL16 failed
+extraction is retained as provenance; the fresh full page now supplies its
+artwork metadata.
+
+Final gates for this batch: fresh build/verify, explicit `npm test` and
+`git diff --check` must pass before commit and push. Next: audit the remaining
+five Bannan stations, BL19–BL23, as the final Bannan batch; then start the next
+line in a new six-station batch.
+
 # Run 31 — Part 1 Bannan BL07–BL12, 18 August 2026
 
 Deepened six Bannan station pages from full DORTS and contractor primary pages.
