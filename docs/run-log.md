@@ -9951,3 +9951,70 @@ contradictions); `git diff --check` clean. Claims baseline and its test were
 not changed.
 
 Next: commit and push this O11–O16 batch, then continue with O17–O21/O50.
+
+# Run 41 — Part 1 Zhonghe-Xinlu O17–O21/O50, 18 August 2026
+
+Audited before editing. The six pages were widened with full DORTS station
+architecture records, the Xinzhuang route record, the DORTS geotechnical-book
+page, the DORTS Losheng FAQ, the full Control Yuan correction and investigation
+records, and the full New Taipei historical-building gazette record. No
+appendix was used and no frontmatter fact/spec was restated as prose.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| O17 | 399 | station architecture, architecture principles and Xinzhuang route |
+| O18 | 400 | station architecture, architecture principles and Xinzhuang route |
+| O19 | 424 | station architecture, architecture principles and Xinzhuang route |
+| O20 | 402 | station architecture, geotechnical engineering, architecture principles and Xinzhuang route |
+| O21 | 629 | station architecture, geotechnical engineering, DORTS depot FAQ, Control Yuan correction and investigation, New Taipei gazette and Xinzhuang route |
+| O50 | 373 | station architecture, architecture principles and Luzhou route |
+
+Sources fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=A4027E05917003A3
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=23FAA46925341D3A
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=E0B092D336CE2101
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=8E7DF8D577939484
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=9C549620EBC8B24B
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=EAEE26A50A59F9ED
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
+- https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page58.html
+- https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=602D327B2B353759
+- https://www.cy.gov.tw/CyBsBoxContent.aspx?n=134&s=3612
+- https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54397
+- https://web.law.ntpc.gov.tw/Scripts/FLAWDOC03.aspx?ecase=%E5%8C%97%E5%BA%9C%E6%96%87%E8%B3%87&ecode=H00000&eno=09800123211&rtype=E
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD
+
+Sourced: O17’s underground civil-defence structure, former inland-waterway
+context and copper water/bamboo-slip treatment; O18’s cut-and-cover crossover,
+joint-development layout, power rooms and textile materials; O19’s independent
+entrance sites, Fu Jen campus treatment, New Xinzhuang history, transport
+history and Xinxiyuan puppet-theatre record; O20’s former retail parking-lot
+site, reduced transparent volumes, planting space and passenger-route design;
+O21’s road-cover constraint, depot interface and the Losheng preservation
+dispute; and O50’s park/school split, transparent entrance and platform-door
+record.
+
+Conflicts published: project-era geotechnical labels O60/O59 for Danfeng and
+Huilong remain alongside current operating codes O20/O21. The Control Yuan’s
+37.5-month and approximately NT$7.3 billion figures are investigation estimates
+of delay and added/claim-related costs, while DORTS’s 4 January 2021 date is the
+later depot operating milestone; they measure different events and were not
+averaged or reconciled. The New Taipei gazette establishes Losheng’s historical-
+building registration, not a station rename.
+
+TBC after exhausting the fetched families: station-specific civil contract
+values and final accounts, architects where the pages do not name one, station
+rename gazettes, complete current public-art inventories, and paid-area versus
+street-transfer classifications where the primary pages do not publish them.
+No false-prefix audit applies to rail stations.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after the O-line font-subset regeneration (519 pages, no
+missing glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185
+tests); `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. Claims baseline and its test were
+not changed.
+
+Next: commit and push this O17–O21/O50 batch, then complete O51–O54/R25–R27.

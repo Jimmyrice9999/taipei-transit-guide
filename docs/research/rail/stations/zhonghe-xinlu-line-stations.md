@@ -642,6 +642,109 @@ pages do not establish station-specific civil final accounts, architects,
 rename gazettes, complete current art inventories for O11–O16 or paid-area
 versus street-transfer classifications; these remain TBC.
 
+# Station-prose audit — Run 41 — 18 August 2026
+
+This batch widened the audit for O17–O21 and O50 with full DORTS station
+architecture pages, the Xinzhuang route record, the DORTS geotechnical-book
+page, the DORTS Losheng FAQ, the full Control Yuan correction and investigation
+records, and the full New Taipei historical-building gazette record. Traditional
+Chinese searches included `頭前庄站 車站建築設計`, `新莊站 車站建築設計`, `輔大站
+車站建築設計`, `丹鳳站 特力屋 停車場 捷運`, `迴龍站 樂生 機廠 監察院`, and
+`新莊樂生療養院 公報`. No unverified appendix was used.
+
+### O17–O18 Touqianzhuang and Xinzhuang
+
+The full DORTS pages establish O17’s three-level underground civil-defence
+station, its 170.85 m × 17.85 m structure, 24.53–25.13 m excavation depth,
+distributed surface elements, former inland-waterway context and copper
+water/bamboo-slip treatment. O18’s page establishes the 223.8 m × 16.15 m
+station body, the cut-and-cover scissor crossover, joint-development and
+ventilation arrangement, traction-power rooms, and the steel, glass, enamel,
+stone and copper textile treatments. These dimensions are architecture-page
+measurements, not replacements for the frontmatter’s network facts.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=A4027E05917003A3 — PRIMARY, High confidence; O17 original evidence: `地下三層島式月台民防車站`, `主體結構淨長約170.85公尺`, `淨寬17.85公尺`, `開挖深約24.53~25.13公尺`, the former inland-waterway statement, and the copper wall/竹簡 description.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=23FAA46925341D3A — PRIMARY, High confidence; O18 original evidence: `地下二層島式月台車站`, `主結構體尺寸長約223.8公尺`, `寬約16.15公尺`, the `剪式橫渡線` cut-and-cover description, joint-development layout, power rooms and textile treatments.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; general DORTS architecture principles for safe, durable, legible and reduced-mass surface structures.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C — PRIMARY, High confidence; current DORTS route record for the Xinzhuang section, opening phases and current O-line naming.
+
+### O19–O20 Fu Jen University and Danfeng
+
+The full O19 record says its four entrance sites are independent of the
+footway and have no joint development; it supplies the two-level station
+dimensions and the campus, New Xinzhuang, transport-history and Xinxiyuan
+puppet-theatre treatments. The full O20 record supplies the former retail-store
+parking-lot site, reduced transparent surface volumes, planting space, the
+150 m × 16.55 m underground body, and the passenger-route lighting/material
+strategy. The DORTS geotechnical page uses O60 for Danfeng, while the current
+station registry uses O20; that is a project-era engineering label versus a
+current operating code, not an unresolved location conflict.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=E0B092D336CE2101 — PRIMARY, High confidence; O19 original evidence: four independent entrance sites, the 199.5 m × 16.55 m structure, Fu Jen campus forms, seventeenth-century New Xinzhuang chronology, old maps, mirrored transport history and Xinxiyuan puppet-theatre lightboxes.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=8E7DF8D577939484 — PRIMARY, High confidence; O20 original evidence: `特力屋停車場`, lightweight transparent reduced-height geometry, planting land, the 150 m × 16.55 m structure and public/non-public finish strategy.
+- https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page58.html — PRIMARY, High confidence; original evidence: CK570E, the Shanjiao Fault assessment between source-era `O59` and `O60`, and the waterproof bulkhead gates at Danfeng.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C — PRIMARY, High confidence; current route record for the current O line and staged Xinzhuang section.
+
+### O21 Huilong and the Losheng Sanatorium dispute
+
+The full O21 architecture page establishes the 4.5 m road-cover constraint,
+staggered concourse/platform geometry, the 260 m × 19.55 m concourse, the
+251.5 m island platform, depot-frontage coordination, cooling-tower placement,
+reserved landscape/art/transfer space, and the station’s public and service
+zones. The DORTS route page records the depot’s Losheng-site location and its
+later operation on 4 January 2021 after preservation-related configuration
+changes.
+
+The Control Yuan investigation records the earlier depot-site decision after
+the Fu Jen-area alternative could not provide enough land, the 2002 start,
+resident relocation and cracking near the works, and partial stoppage from
+July 2004. It reports an estimated 37.5-month delay and approximately NT$7.3
+billion in added and claim-related costs; these are investigation estimates,
+not a final O21 account. The separate Control Yuan correction identifies
+administrative failings involving siting, land handover, slope risk and damage
+to some sanatorium buildings. The New Taipei gazette records Losheng as a
+historical building on 7 September 2009 at Zhongzheng Road 794. DORTS’s later
+FAQ says the depot was operating while the entrance-landscape project was
+suspended and that any later work had to be coordinated around operations.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=9C549620EBC8B24B — PRIMARY, High confidence; O21 original evidence: the 4.5 m cover requirement, staggered underground plan, 260 m concourse, 251.5 m platform, depot integration, cooling tower and reserved surface space.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C — PRIMARY, High confidence; original evidence: `新莊機廠位於新莊線末端`, the Losheng site and the depot’s 109/110 inspection and operating dates.
+- https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54397 — PRIMARY, High confidence; full Control Yuan investigation report, original evidence: the Fu Jen alternative, 83-year site decision, 91-year construction start, relocation and cracking, 93-year partial stoppage, and the reported `37.5個月` and `約73億元` estimates.
+- https://www.cy.gov.tw/CyBsBoxContent.aspx?n=134&s=3612 — PRIMARY, High confidence; full Control Yuan correction, original evidence: `新莊機廠選址不當`, delayed land handover/relocation, the 40 m slope risk, building and ground cracking, and the construction consequences.
+- https://web.law.ntpc.gov.tw/Scripts/FLAWDOC03.aspx?ecase=%E5%8C%97%E5%BA%9C%E6%96%87%E8%B3%87&ecode=H00000&eno=09800123211&rtype=E — PRIMARY, High confidence; full New Taipei gazette-law record, original evidence: 7 September 2009 historical-building registration, Zhongzheng Road 794, and its stated historical-building scope and reasons.
+- https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=602D327B2B353759 — PRIMARY, High confidence; full DORTS FAQ, original evidence: `不影響捷運新莊機廠營運`, the 2020 suspension after the court order, and coordination requirements for any later entrance work.
+
+### O50 Sanchong Elementary School
+
+The full O50 page establishes the triangular park/school site, transparent
+surface treatment, the 153 m × 23–50 m × approximately 21 m underground
+structure, public/non-public concourse division and platform doors. It also
+records why the entrance and ventilation shaft are discussed as two public
+institutional edges rather than one station forecourt. The current DORTS route
+record identifies O50 as part of the Luzhou branch.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=EAEE26A50A59F9ED — PRIMARY, High confidence; O50 original evidence: Ren’ai Park entrance, Sanchong Elementary School ventilation shaft, triangular site, transparent treatment, dimensions, platform doors and surface theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; general architecture principles for the visible treatment of underground stations.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD — PRIMARY, High confidence; current Luzhou branch route record and station engineering sequence.
+
+### Conflicts and gaps
+
+Published code conflict: the geotechnical source labels Danfeng and Huilong
+O60/O59, while current operator-facing station codes are O20/O21. Both values
+remain with their measurement: project-era engineering labels versus current
+operating codes. Published schedule/cost findings are also kept distinct: the
+Control Yuan’s 37.5-month and approximately NT$7.3 billion values are an
+investigation estimate of delay and added/claim-related costs, while DORTS’s 4
+January 2021 date is the depot’s later operating milestone. No value was
+averaged or silently reconciled.
+
+TBC after exhausting the fetched families: station-specific civil contract
+values and final accounts, architects where the pages do not name one, rename
+gazettes for the station codes, complete current public-art inventories, and
+paid-area versus street-transfer classifications where the primary pages do
+not publish them. The New Taipei gazette fetched in this pass establishes the
+Losheng historical-building registration, not a station renaming.
+
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
 
 > This appendix preserves an external lead only. It is explicitly unverified,
