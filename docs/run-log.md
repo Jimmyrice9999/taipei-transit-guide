@@ -9819,3 +9819,75 @@ contradictions); `git diff --check` clean. Claims baseline and its test were
 not changed.
 
 Next: commit and push this G18/G19/O01–O04 batch, then continue with O05–O10.
+
+# Run 39 — Part 1 Zhonghe-Xinlu O05–O10, 18 August 2026
+
+Audited before editing. The six pages were widened with full DORTS technical
+ebooks and journals, the Zhonghe and Xinzhuang route records, the general
+station-architecture page, the Zhonghe public-art introduction and table, the
+Songjiang Nanjing joint-development case and current TRTC pages. No appendix
+was used and no frontmatter fact/spec was restated as prose.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| O05 | 381 | Zhonghe route, track contract, architecture principles and public-art introduction |
+| O06 | 449 | CK570H engineering and fit-out journals, public-art table, current TRTC page |
+| O07 | 367 | station architecture, architecture principles and Xinzhuang design chapter |
+| O08 | 357 | station architecture, Songjiang technical journal, joint-development case |
+| O09 | 334 | station architecture, Xinzhuang design chapter and public-art table |
+| O10 | 360 | station architecture, Xinzhuang design chapter and architecture principles |
+
+Sources fetched in full:
+
+- https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page20.html
+- https://ebook.dorts.gov.taipei/ebook/no12/files/basic-html/page25.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=0F40A754FDE16633
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=3E757BE805D81177
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=8A210F80A944AAE0
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=C6803452E573ECF0
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page109.html
+- https://web.metro.taipei/pages2026/WebStation/041/1
+- https://web.metro.taipei/pages2026/WebStation/134/1
+- https://web.metro.taipei/pages2026/WebStation/089/1
+- https://web.metro.taipei/pages2026/WebStation/132/1
+- https://web.metro.taipei/pages2026/WebStation/131/1
+- https://web.metro.taipei/pages2026/WebStation/130/1
+
+Sourced: O05’s split between the Guting/Xindian construction boundary and the
+CT561 Zhonghe track contract, its unusual work-shaft rail-welding method and
+the invited-competition art record; O06’s O14/R10 source-era code, overlapping
+tunnel engineering, station structural dimensions, fit-out and Dongmen public
+art; O07’s Taipei Tech/Guanghua technology setting; O08’s source-era G17/O12
+code, mixed office/education context and joint-development building; O09’s
+commercial/Xingtian Temple context and 國泰民安 art; and O10’s school-district
+fairy-tale architecture.
+
+Conflicts published: O06’s source-era O14/R10 versus current O06/R10; O08’s
+source-era G17/O12 versus current G15/O08; Dongmen’s 154 m × 22.3 m × 31.2 m
+station record versus the separate 216 m × 25 m × about-32 m technical-journal
+structure record; and source-era six entrances versus current TRTC eight exits.
+Each value remains with what it measures; nothing was averaged or silently
+normalised.
+
+TBC after exhausting the fetched families: station-specific civil final
+accounts, architects, rename gazettes, complete current art inventories and
+paid-area versus street-transfer classifications where not published. No
+false-prefix audit applies to rail stations.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after the O-line font-subset regeneration (519 pages, no
+missing glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185
+tests); `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. Claims baseline and its test were
+not changed.
+
+Next: commit and push this O05–O10 batch, then continue with O11–O16.

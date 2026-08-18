@@ -128,6 +128,96 @@ const dortsNanshijiaoLandDevelopmentBenefits = source(
   'The full DORTS case-study page records the Nanshijiao development open space, public-use childcare area, site area, building programme, parking, permit and use-certificate dates.',
 )
 
+const dortsZhongheTrackContract = source(
+  'dorts-zhonghe-xinlu-track-contract',
+  'Zhonghe Line track contract and construction method',
+  '捷運技術：中和線軌道工程',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page20.html',
+  'The full DORTS technical-journal page records the CT561/CC561 Zhonghe track scope, underground trackwork, joint contractors, contract value, completion date and the work-shaft rail-welding method.',
+)
+
+const dortsDongmenEngineering = source(
+  'dorts-dongmen-station-overlapping-tunnels',
+  'Dongmen station and overlapping tunnel construction',
+  '捷運工程叢書：新莊線 CK570H 區段標工程內容',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no12/files/basic-html/page25.html',
+  'The full DORTS technical-book page records Dongmen’s construction package, the four closely overlapping shield tunnels, ground improvement, source-era station code, station dimensions, exits and tunnel lengths.',
+)
+
+const dortsDongmenTechnical = source(
+  'dorts-dongmen-station-technical-journal',
+  'Dongmen station structural construction and fit-out',
+  '捷運技術第51期：臺北捷運信義線 CK570H 區段標施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html',
+  'The full DORTS journal record describes the CK570H subcontracts, Dongmen cut-and-cover construction and the tunnel route from Dongmen to Guting and Zhongzheng Memorial Hall.',
+)
+
+const dortsDongmenFitout = source(
+  'dorts-dongmen-station-fitout',
+  'Dongmen station structural and architectural fit-out',
+  '捷運技術第51期：東門站車站結構及建築裝修施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html',
+  'The full DORTS journal page records the double-wall SRC station structure, permanent columns, platform and concourse finishes, working shafts and service integration.',
+)
+
+const dortsStationArchitectureGeneral = source(
+  'dorts-mrt-station-architecture-general',
+  'MRT station architectural design principles',
+  '車站建築設計',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A',
+  'The full DORTS architecture page explains function-first circulation, modular planning, local station themes, public-art integration and the requirement to reduce the visual mass of surface structures.',
+)
+
+const dortsZhonghePublicArtIntro = source(
+  'dorts-zhonghe-xinlu-public-art-introduction',
+  'Zhonghe–Xinlu public-art introduction',
+  '捷運不只是運輸工具：中和新蘆線公共藝術',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804',
+  'The full DORTS public-art introduction records the invitation-competition programme for the early network, including Guting’s suspended work 邂逅 and the Zhonghe Line art programme.',
+)
+
+const dortsZhongheXinluPublicArtTable = source(
+  'dorts-zhonghe-xinlu-public-art-table',
+  'MRT public-art table: Dongmen station',
+  '公共藝術總表：東門站',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D',
+  'The full DORTS public-art table records Dongmen’s completion month, placement, artist, title, materials, cost and invitation method.',
+)
+
+const dortsSongjiangLandDevelopment = source(
+  'dorts-songjiang-nanjing-land-development',
+  'Songjiang Nanjing station joint-development case',
+  '臺北捷運土地開發案例解析：松江南京站捷十土地開發案',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page109.html',
+  'The full DORTS land-development case page records the Songjiang Nanjing joint-development site, its land area, mixed-use building, integrated MRT facilities and design rationale.',
+)
+
+const dortsXinluStationDesignTechnical = source(
+  'dorts-xinlu-station-design-technical',
+  'Xinzhuang Line station design themes and treatments',
+  '捷運工程叢書：捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html',
+  'The full DORTS station-design chapter records the Xinzhuang Line station themes and the relationship between local context, mosaics, enamel panels, entrances and ventilation structures.',
+)
+
+const dortsSongjiangStationTechnical = source(
+  'dorts-songjiang-nanjing-station-technical',
+  'Songjiang Nanjing station structure and design',
+  '捷運技術第52期：松江南京站車站設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html',
+  'The full DORTS technical-journal page records Songjiang Nanjing’s source-era station codes, mixed office and education setting, underground arrangement, interchange relationship and design theme.',
+)
+
 const detail = (
   id: string,
   title: string,
@@ -319,11 +409,101 @@ const oData: Record<string, OData> = {
 }
 
 const stationProse: Record<string, StationProseSentence[]> = {
+  O05: [
+    { text: 'Guting is the northern end of the original Zhonghe track package: DORTS separates the station itself from the CT561 track scope, which ran from Guting toward Nanshijiao.', source: dortsZhongheTrackContract.id },
+    { text: 'That package covered 12.8 kilometres of underground track, four stations and the simple parking-and-maintenance depot at Nanshijiao.', source: dortsZhongheTrackContract.id },
+    { text: 'DORTS records CC561 as awarded in ROC year 81 to Dongyi Construction and Bilfinger + Berger, with a contract value of NT$490 million and completion on 24 December 1998.', source: dortsZhongheTrackContract.id },
+    { text: 'The track contract was unusual because the underground line had no ground depot that could serve as a materials yard or rail-welding shop.', source: dortsZhongheTrackContract.id },
+    { text: 'Construction therefore used work shafts to lower material and placed the rail-welding operation below ground, a method DORTS identifies as a departure from the usual track-construction pattern.', source: dortsZhongheTrackContract.id },
+    { text: 'The route page separately notes that O05/G09 Guting was built under the Xindian Line project rather than under the Zhonghe Line contract, preserving the boundary between the station’s interchange history and the later southbound track package.', source: dortsZhonghe.id },
+    { text: 'Guting is consequently a joint point between the earlier Xindian Line and the Zhonghe section that opened southward in 1998, rather than an ordinary intermediate station in one construction package.', source: dortsZhonghe.id },
+    { text: 'DORTS’s general architecture account treats circulation as the first design requirement: large passenger flows need simple routes, modular planning and systematised space.', source: dortsStationArchitectureGeneral.id },
+    { text: 'Because the Zhonghe stations are underground, the architecture page says interior finishes and spatial treatment carry more of the identity than a visible elevated structure.', source: dortsZhongheArchitecture.id },
+    { text: 'The same page describes the later network’s practice of developing station themes and public-art concepts from local environmental and cultural settings.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The early-network public-art introduction records Guting’s suspended-form work 邂逅 as an invited-competition selection, placing the station within that programme rather than leaving it as an art-free interchange.', source: dortsZhonghePublicArtIntro.id },
+    { text: 'The art record is a programme description, not a complete current inventory of every object or finish at Guting.', source: dortsZhonghePublicArtIntro.id },
+    { text: 'The fetched pages do not establish a Guting-only civil contract price, station architect, rename gazette, incident record or paid-area versus street-transfer classification.', source: dortsZhongheTrackContract.id },
+    { text: 'Those fields remain TBC instead of being inferred from the interchange or from a line-wide contract.', source: dortsZhongheArchitecture.id },
+  ],
+  O06: [
+    { text: 'The DORTS engineering record labels Dongmen as O14/R10, while the current operator identifies the station as O06/R10; both are retained as source-era and current operating codes.', source: dortsDongmenEngineering.id },
+    { text: 'The CK570H package combined Dongmen station with four metro shield tunnels and two common-utility tunnels, making the station a construction junction rather than a simple single-line box.', source: dortsDongmenEngineering.id },
+    { text: 'The four railway tunnels crossed and overlapped beneath Hangzhou South Road beside Zhongzheng Junior High School, with adjacent tunnels as close as about three metres and about one metre at the launch shaft.', source: dortsDongmenEngineering.id },
+    { text: 'Their S-shaped alignment had a minimum radius of 200 metres, so ground improvement by grouting preceded excavation and completed tunnels had to be protected while the remaining bores were driven.', source: dortsDongmenEngineering.id },
+    { text: 'DORTS calls this the first domestic construction case of several tunnels crossing and overlapping within such a confined area.', source: dortsDongmenEngineering.id },
+    { text: 'The same engineering page describes a four-level underground interchange island station with the concourse at B1, platforms at B2 and B4, and an intermediate level at B3.', source: dortsDongmenEngineering.id },
+    { text: 'That page gives a 154-metre station length, 22.3-metre clear width and 31.2-metre excavation depth, and lists six source-era surface entrances and two ventilation shafts.', source: dortsDongmenEngineering.id },
+    { text: 'A separate DORTS technical-journal account gives 216 metres by 25 metres and about 32 metres deep for the cut-and-cover station structure; these are published as different project measurements, not averaged.', source: dortsDongmenTechnical.id },
+    { text: 'The tunnel schedule distinguishes the Xinzhuang Line bores from Dongmen to Guting and the Xinyi Line bores from Dongmen to Chiang Kai-shek Memorial Hall, with four single-direction shield tunnels in the package.', source: dortsDongmenEngineering.id },
+    { text: 'The station structure used a double-wall SRC system with permanent H-section steel columns, and the fit-out record describes directional granite floor patterns, enamel panels, perforated aluminium ceilings and special daylight panels.', source: dortsDongmenFitout.id },
+    { text: 'The systems for the two lines came from different suppliers, so the station’s D-type enquiry counter had to be enlarged and reorganised to contain the combined monitoring equipment.', source: dortsDongmenFitout.id },
+    { text: 'DORTS’s public-art table records 璀璨東門‧龍躍永康 on the vertical-circulation end wall, by Chang Naiwen of 麻粒國際文化試驗.', source: dortsZhongheXinluPublicArtTable.id },
+    { text: 'The table gives an ROC-year 101 April completion, stainless steel and LED materials, a NT$5 million cost and invitation competition as the selection method.', source: dortsZhongheXinluPublicArtTable.id },
+    { text: 'The source-era engineering page lists six surface entrances, while the current TRTC record publishes eight exits; the values measure different records and both remain visible in the page data.', source: dortsDongmenEngineering.id },
+    { text: 'The fetched primary pages do not establish a separate Dongmen civil-construction final account, rename gazette or paid-area versus street-transfer classification.', source: dortsDongmenEngineering.id },
+  ],
+  O07: [
+    { text: 'Zhongxiao Xinsheng sits beside Taipei Tech and the Guanghua information-and-technology commercial district, so DORTS treats the surrounding setting as a reason to make the station interior modern and technologically inflected.', source: architecture.o07.id },
+    { text: 'The station page names 現代化、科技感 (“modernity and technology”) as its design theme rather than presenting the station as a generic underground stop.', source: architecture.o07.id },
+    { text: 'Its location brings a university campus, an information-commercial district and ordinary Zhongxiao Road traffic into the same station design problem.', source: architecture.o07.id },
+    { text: 'That combination explains why the station’s identity is expressed through interior treatment and circulation rather than through a large isolated surface building.', source: dortsStationArchitectureGeneral.id },
+    { text: 'DORTS’s general architecture guidance starts with the need to move large numbers of passengers quickly and clearly, then uses modular and systematised space to support that movement.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The guidance also says that later-network stations develop a local creative theme and public-art concept together with their building form.', source: dortsStationArchitectureGeneral.id },
+    { text: 'At Zhongxiao Xinsheng, the local reference is the technology-and-information setting around Taipei Tech and Guanghua, not a historic-waterfront or religious district.', source: architecture.o07.id },
+    { text: 'The builder’s station record therefore connects the theme to place and use: students, technology businesses and visitors approach the same underground public room from different directions.', source: architecture.o07.id },
+    { text: 'The current TRTC station record identifies O07, while the DORTS route and station-design material belongs to the construction-era Xinzhuang Line sequence; the page keeps current operating identity separate from historical project documentation.', source: dortsXinzhuang.id },
+    { text: 'DORTS’s station-design chapter describes the shared Xinzhuang treatment as a relationship among local context, entrances, ventilation structures, mosaics and enamel panels.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'That chapter’s design logic makes the entrance, concourse and platform a continuous sequence rather than unrelated decorative surfaces.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'The general architecture page asks surface structures to be light, transparent and visually restrained, an approach suited to an already crowded Zhongxiao corridor.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The fetched primary pages do not establish O07’s individual civil contractor, final account, architect, rename gazette, complete art inventory or paid-area versus street-transfer classification.', source: architecture.o07.id },
+    { text: 'Those fields remain TBC rather than being inferred from Taipei Tech, Guanghua or the station’s technology theme.', source: dortsStationArchitectureGeneral.id },
+  ],
   O08: [
-    { text: 'DORTS describes Songjiang Nanjing as a banking-and-finance district whose predominant passengers are commuting office workers, so its design translates the rhythms of busy urban life into the station.', source: architecture.o08.id },
+    { text: 'The DORTS technical record labels Songjiang Nanjing as G17/O12, while the current TRTC station records use G15/O08; these are source-era project codes and current operating codes, not a value to reconcile.', source: dortsSongjiangStationTechnical.id },
+    { text: 'The station sits at the Nanjing East Road and Songjiang Road intersection in a high-rise mixed office, residential and financial district.', source: dortsSongjiangStationTechnical.id },
+    { text: 'DORTS also notes nearby schools, including Datong High School and Changan Junior High School, and says the station drew substantial school and commuter flows after opening.', source: dortsSongjiangStationTechnical.id },
+    { text: 'The source-era plan describes a three-level underground interchange with the Songshan Line and the O line occupying different platform levels beneath the same concourse.', source: dortsSongjiangStationTechnical.id },
+    { text: 'The architecture page names the theme 都會生活之幽默主義 (“urban-life humourism”), using the office district as the setting for a more playful treatment of everyday city movement.', source: architecture.o08.id },
+    { text: 'That theme is attached to a real transfer and commuter node, not to a stand-alone art installation separated from the network’s operating work.', source: architecture.o08.id },
+    { text: 'DORTS’s joint-development case gives the site an area of 1,471 square metres, with 1,166 square metres assigned to the MRT portion.', source: dortsSongjiangLandDevelopment.id },
+    { text: 'The planned building has eighteen floors above six basements and incorporates escalators, an MRT entrance, an accessible lift, ventilation and a cooling tower into the shared structure.', source: dortsSongjiangLandDevelopment.id },
+    { text: 'The case describes a mixed-use building and treats the joint structure as a way to connect a transport network with urban redevelopment rather than as a separate station shell.', source: dortsSongjiangLandDevelopment.id },
+    { text: 'Its design rationale calls for respect for the site’s land and urban history, including the rebirth of a church formerly on the site.', source: dortsSongjiangLandDevelopment.id },
+    { text: 'The building mass was divided into three parts to adjust its proportions and reduce visual impact on the surroundings.', source: dortsSongjiangLandDevelopment.id },
+    { text: 'DORTS’s general principles require simple passenger circulation, modular planning, safe materials and maintainable public-art integration across the station.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The fetched primary pages do not establish a separate O08 civil contract, final account, architect, rename gazette, complete art inventory or paid-area versus street-transfer classification.', source: dortsSongjiangLandDevelopment.id },
   ],
   O09: [
-    { text: 'DORTS distinguishes Xingtian Temple as a consumption-oriented commercial stretch where office workers and shoppers circulate, and ties the station’s design to the Songjiang Road street-making plan’s hoped-for happy, hopeful public space.', source: architecture.o09.id },
+    { text: 'DORTS distinguishes Xingtian Temple as a consumption-oriented commercial stretch where office workers and shoppers circulate, rather than the predominantly banking-and-office setting described at Songjiang Nanjing.', source: architecture.o09.id },
+    { text: 'The station’s design theme is 音樂及舞蹈—快樂上班族 (“music and dance—happy office worker”), a deliberate response to the busy commercial street and its everyday users.', source: architecture.o09.id },
+    { text: 'The builder ties the design to the Songjiang Road street-making plan’s aim of a happy and hopeful public space.', source: architecture.o09.id },
+    { text: 'It also combines mixed old-and-new architectural language with the cultural colour of Xingtian Temple and other popular religious practice.', source: architecture.o09.id },
+    { text: 'The station therefore sits at a junction of commercial consumption, office travel and religious-cultural activity, rather than serving a single land-use category.', source: architecture.o09.id },
+    { text: 'DORTS’s station-design chapter describes the surrounding northern-city corridor as a mixture of new towers and older buildings, with busy traffic and commercial space interwoven.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'That context is carried into the station through mosaic and enamel-panel treatments, which let the public art and building finishes share a local visual vocabulary.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'The official public-art table records 國泰民安 at Xingtian Temple station, by 鞏文宜 of 謙石國際藝術有限公司.', source: dortsZhongheXinluPublicArtTable.id },
+    { text: 'The table gives a ROC-year 98 June completion, concourse-wall placement, ceramic material, NT$6.1 million cost and public open selection.', source: dortsZhongheXinluPublicArtTable.id },
+    { text: 'The art record describes the work as drawing on temple ritual objects and Bajiajiang facial imagery to express peace and public welfare; the page does not require reproducing the artwork itself.', source: dortsZhongheXinluPublicArtTable.id },
+    { text: 'DORTS’s general architecture account says each station theme should be developed with its public-art concept from the beginning rather than added after the building is fixed.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The current operator record identifies O09, while the project pages describe the earlier Xinzhuang Line construction sequence and its local design vocabulary.', source: dortsXinzhuang.id },
+    { text: 'The fetched primary pages do not establish O09’s individual civil contractor, final account, architect, rename gazette or paid-area versus street-transfer classification.', source: architecture.o09.id },
+  ],
+  O10: [
+    { text: 'Zhongshan Elementary School lies beside a school-and-education corridor: DORTS places the station north of Zhongshan Elementary School and south of Xinxing Junior High School.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'Its station identity is deliberately based on children’s worlds, with the design theme 童話世界 (“fairy-tale world”).', source: architecture.o10.id },
+    { text: 'The builder says the theme is expressed through art and through the school-district character of the surrounding blocks.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'The entrance form uses simple geometric lines and planes, with strengthened glass openings to reduce the apparent mass of the above-ground structure.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'Glass-mosaic panels at the entrance portray the liveliness of children at play, and the image continues inward to the platform-side enamel panels.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'Ventilation structures reuse the entrance geometry where function allows, giving the otherwise technical elements a recognisable station vocabulary.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'The detailed station-design chapter describes the treatment as a transition from outside to inside rather than a decoration confined to the concourse.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'DORTS’s general station principles begin with simple passenger movement and modular planning, so the school-themed treatment sits inside a functional transport building.', source: dortsStationArchitectureGeneral.id },
+    { text: 'The same principles require public art and architecture to be integrated across entrances, ventilation, concourse, platforms, walls, ceilings and lighting.', source: dortsStationArchitectureGeneral.id },
+    { text: 'That integration explains why the school reference appears in the station’s surface geometry, wall mosaics, platform enamel panels and ventilation forms together.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'O10 belongs to the Xinzhuang Line’s northern Taipei construction sequence, while the current operator page supplies the operating identity and passenger facilities.', source: dortsXinzhuang.id },
+    { text: 'The project design record does not claim that the station is a school facility; it describes the schools as the surrounding urban context for the theme.', source: dortsXinluStationDesignTechnical.id },
+    { text: 'This distinguishes O10 from the commercial and temple references described for O09 immediately south on the same line.', source: architecture.o10.id },
+    { text: 'The fetched primary pages do not establish O10’s individual civil contractor, final account, architect, rename gazette, complete art inventory or paid-area versus street-transfer classification.', source: architecture.o10.id },
+    { text: 'Those fields remain TBC rather than being inferred from the school names or from the fairy-tale design theme.', source: dortsStationArchitectureGeneral.id },
   ],
   O12: [
     { text: 'DORTS records Daqiaotou’s unpaid concourse as an evocation of Dihua Street’s market arcades, using layered frames for depth; frosted stair glass carries part of Daqiao Elementary School’s song.', source: architecture.o12.id },
@@ -375,6 +555,15 @@ const publicArtOverrides: Record<string, { text: string; source: Source }> = {
   O54: { text: '舞之羽 — Ray King; coated glass; year: TBC; invited competition; cost: TBC.', source: architecture.o54 },
 }
 
+const proseSourceEntries: Record<string, Source[]> = {
+  O05: [dortsZhongheTrackContract, dortsStationArchitectureGeneral, dortsZhonghePublicArtIntro],
+  O06: [dortsDongmenEngineering, dortsDongmenTechnical, dortsDongmenFitout, dortsZhongheXinluPublicArtTable],
+  O07: [architecture.o07, dortsStationArchitectureGeneral, dortsXinluStationDesignTechnical],
+  O08: [architecture.o08, dortsSongjiangStationTechnical, dortsSongjiangLandDevelopment, dortsStationArchitectureGeneral],
+  O09: [architecture.o09, dortsXinluStationDesignTechnical, dortsZhongheXinluPublicArtTable, dortsStationArchitectureGeneral],
+  O10: [architecture.o10, dortsXinluStationDesignTechnical, dortsStationArchitectureGeneral],
+}
+
 function makeResearch(code: string, data: OData): StationResearch {
   const stationSource = trtcStation(code)
   const structureSource = data.structureSource ?? data.route
@@ -382,7 +571,7 @@ function makeResearch(code: string, data: OData): StationResearch {
   const designSource = data.designSource ?? data.route
   const publicArtOverride = publicArtOverrides[code]
   const publicArtSource = data.publicArtSource ?? publicArtOverride?.source
-  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(publicArtSource ? [publicArtSource] : []), ...(data.proseSources ?? [])]
+  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(publicArtSource ? [publicArtSource] : []), ...(data.proseSources ?? []), ...(proseSourceEntries[code] ?? [])]
     .filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
   return {
     sources,

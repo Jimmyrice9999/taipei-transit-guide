@@ -474,6 +474,106 @@ art inventory or paid-area versus street-transfer classification for O01–O04;
 those remain TBC. No additional source was found that turns the G18/G19 code
 labels into a rename date.
 
+## Station-prose audit — Run 39 — 18 August 2026
+
+This batch widened the audit for O05–O10 with full DORTS technical-ebook and
+technical-journal pages, the DORTS Zhonghe and Xinzhuang route records, the
+general station-architecture page, the Zhonghe public-art introduction and
+public-art table, the Songjiang Nanjing joint-development case and current TRTC
+station pages. Traditional-Chinese search terms included `古亭站 軌道工程 標案`,
+`東門站 潛盾 隧道 重疊`, `東門站 公共藝術 璀璨東門`, `松江南京站 聯合開發`,
+`行天宮站 國泰民安`, and `中山國小站 童話世界`. No unverified appendix was
+used.
+
+### O05 Guting
+
+The full DORTS track record identifies the CT561/CC561 scope as Guting
+excluding the station to Nanshijiao, covering 12.8 kilometres of underground
+track, four stations and the Nanshijiao simple parking-and-maintenance depot.
+It names Dongyi Construction and Bilfinger + Berger as joint contractors,
+gives a NT$490 million contract value, ROC-year-81 award and 24 December 1998
+completion. Because the underground line had no ground depot for material
+storage or rail welding, the contractor used work shafts and an underground
+rail-welding shop. The DORTS route page separately says O05/G09 Guting was built
+under the Xindian Line project. The public-art introduction records Guting’s
+invited-competition suspended work 邂逅; it is retained as programme metadata,
+not treated as a complete current inventory.
+
+- https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page20.html — PRIMARY, High confidence; original evidence: `中和線軌道工程標號為CT561標`、`全線軌道長12.8公里`、the joint contractors, `契約金額為新臺幣490,000,000元整` and `於87年12月24日完工通車`.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404 — PRIMARY, High confidence; original evidence: the O05/G09 Guting construction note and the full Zhonghe route record.
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804 — PRIMARY, High confidence; original evidence: Guting’s invited-competition work `邂逅` in the Zhonghe/Xinlu public-art programme.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; original evidence: function-first circulation, modular planning, local themes and integration of architecture with public art.
+- https://web.metro.taipei/pages2026/WebStation/041/1 — PRIMARY, High confidence; current operator station record for O05, fetched in full.
+
+### O06 Dongmen
+
+The full CK570H technical record labels Dongmen O14/R10, while the current
+operator identifies O06/R10. It describes four railway shield tunnels and two
+common-utility tunnels crossing and overlapping in a confined area beneath
+Hangzhou South Road. Adjacent tunnels approach three metres, and the launch
+shaft reduces that gap to about one metre; the S-shaped alignment has a
+minimum radius of 200 metres, requiring grouting and protection of completed
+tunnels. DORTS calls this the first domestic case of multiple overlapping
+tunnels in such a confined site. The same page gives a four-level underground
+interchange island station, 154 m long, 22.3 m clear width and 31.2 m deep,
+with six source-era surface entrances. A separate journal account gives 216 m
+by 25 m and about 32 m deep for the cut-and-cover structure. Both are published
+as different project measurements. The public-art table records
+璀璨東門‧龍躍永康: ROC-year-101 April, stainless steel and LED, NT$5 million,
+by 張乃文/麻粒國際文化試驗, selected by invitation competition.
+
+- https://ebook.dorts.gov.taipei/ebook/no12/files/basic-html/page25.html — PRIMARY, High confidence; original evidence: CK570H scope, `相鄰隧道最接近處約3m`, `最小半徑為200m`, `O14/R10`, `地下四層` and the 154 m/22.3 m/31.2 m record.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html — PRIMARY, High confidence; original evidence: the CK570H subcontracts and the separate 216 m/25 m/about-32 m cut-and-cover description.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html — PRIMARY, High confidence; original evidence: double-wall SRC construction, permanent columns, station finishes and D-type enquiry-counter integration.
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D — PRIMARY, High confidence; original evidence: the Dongmen public-art row and its title, artist, date, materials, cost and selection method.
+- https://web.metro.taipei/pages2026/WebStation/134/1 — PRIMARY, High confidence; current operator station record for O06, fetched in full.
+
+### O07–O10 Zhongxiao Xinsheng, Songjiang Nanjing, Xingtian Temple and Zhongshan Elementary School
+
+The full station-design pages and DORTS station-design chapter provide
+station-specific setting and design material for all four stations. O07 is
+connected to Taipei Tech and the Guanghua information-commerce district and
+uses 現代化、科技感 (“modernity and technology”). O08’s technical record uses
+source-era G17/O12, while current TRTC uses G15/O08; it describes the
+Nanjing/Songjiang mixed office, residential, financial and education setting
+and the three-level underground interchange arrangement. Its joint-development
+case records a 1,471-square-metre site, 1,166-square-metre MRT portion,
+eighteen floors above six basements, and integrated entrances, lifts,
+ventilation and cooling equipment; the building mass was divided to reduce
+visual impact. O09 is the consumption-oriented commercial and Xingtian Temple
+setting, themed 音樂及舞蹈—快樂上班族; the public-art table records 國泰民安,
+ROC-year-98 June, ceramic, NT$6.1 million and public selection. O10 sits
+between Zhongshan Elementary School and Xinxing Junior High School and uses
+童話世界, with geometric/glass entrances, glass mosaics, enamel platform panels
+and matching ventilation forms.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=0F40A754FDE16633 — PRIMARY, High confidence; O07 full architecture page, including Taipei Tech/Guanghua context and the modernity/technology theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=3E757BE805D81177 — PRIMARY, High confidence; O08 full architecture page, including its office/finance setting and local design theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=8A210F80A944AAE0 — PRIMARY, High confidence; O09 full architecture page, including the commercial corridor and Songjiang Road street-making context.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=C6803452E573ECF0 — PRIMARY, High confidence; O10 full architecture page, including the school setting and fairy-tale treatment.
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html — PRIMARY, High confidence; original evidence: O10’s school setting, fairy-tale theme, geometric entrances, mosaics, enamel panels and ventilation treatment.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html — PRIMARY, High confidence; original evidence: source-era G17/O12, mixed office/education setting, interchange arrangement and Songjiang Nanjing design theme.
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page109.html — PRIMARY, High confidence; original evidence: Songjiang Nanjing joint-development area, mixed-use building, integrated MRT facilities and massing rationale.
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D — PRIMARY, High confidence; original evidence: Xingtian Temple’s 國泰民安 public-art row.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; original evidence: general function-first architecture and public-art integration principles.
+- https://web.metro.taipei/pages2026/WebStation/089/1 — PRIMARY, High confidence; current operator station record for O07, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/132/1 — PRIMARY, High confidence; current operator station record for O08, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/131/1 — PRIMARY, High confidence; current operator station record for O09, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/130/1 — PRIMARY, High confidence; current operator station record for O10, fetched in full.
+
+### Conflicts and gaps
+
+Published code conflicts are O06’s DORTS O14/R10 versus current O06/R10 and
+O08’s DORTS G17/O12 versus current G15/O08. Published engineering conflicts
+are Dongmen’s 154 m × 22.3 m × 31.2 m source-era station record versus the
+216 m × 25 m × about-32 m technical-journal structure record; the page states
+what each measures and does not average them. Dongmen’s six source-era surface
+entrances also differ from the current TRTC eight-exit record; both remain.
+No source in this pass establishes individual civil-construction final
+accounts, architects, rename gazettes, complete current art inventories or
+paid-area versus street-transfer classifications for the six stations; those
+fields remain TBC.
+
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
 
 > This appendix preserves an external lead only. It is explicitly unverified,
