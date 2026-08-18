@@ -1477,6 +1477,56 @@ sourced feeder-bus descriptions. Period DORTS procurement/completion records,
 a complete station-art register, the relevant gazette and full PTO/ebus pages
 would settle them.
 
+### Station-prose audit — R25–R26 batch, 18 August 2026
+
+The earlier zero-prose result was superseded after the shared northern source
+families were read as corridor evidence rather than treated as station-specific
+facts. R25 and R26 now use the full DORTS route, ground-station, railway-corridor,
+station-design and northern-public-realm pages, with the official Guandu wetland
+page added for R25. No unverified appendix was used.
+
+R25 is established as part of the Fuxinggang–Hongshulin ground-level section.
+DORTS defines that form as tracks and platforms at grade, economical but capable
+of interrupting surface movement and views. The full corridor-planning page says
+the former TRA Tamsui branch right-of-way was acquired by paid transfer, that
+station sites generally had complete land and few construction interfaces, and
+that the northern railway corridor already had high transport demand. The full
+Guandu district page records the tidal confluence of the Tamsui and Keelung rivers
+and its wetland habitats of grassland, sandbars and mangrove.
+
+R26 is established in the same ground-level section and former railway corridor.
+The sourced prose keeps the corridor-level public-realm material separate from
+station-specific evidence: DORTS describes walking and cycling paths, planting
+and small resting spaces as ways of making inherited railway land a recreational
+resource, but the fetched pages do not assign a particular landscape feature to
+R26.
+
+Sources fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768 —
+  PRIMARY, High confidence; DORTS, `淡水信義線`; route sequence, station section
+  and opening chronology.
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html —
+  PRIMARY, High confidence; DORTS, `捷運車站規劃與設計實務`, p.33; ground-station
+  definition, economy and surface-barrier trade-off.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html —
+  PRIMARY, High confidence; DORTS, `捷運高架車站建築造型設計`, p.38; former TRA
+  right-of-way, land planning, complete station sites and northern demand.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html —
+  PRIMARY, High confidence; DORTS, p.40; station identity, environmental
+  integration and durable modern design goals.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html —
+  PRIMARY, High confidence; DORTS, p.41; inherited corridor recreation, walking,
+  cycling, planting and small public spaces.
+- https://btdo.gov.taipei/News_Content.aspx?n=B154724D802DC488&s=9E4A5535EE009A1F —
+  PRIMARY, High confidence; Taipei Beitou District Office, `關渡自然生態特色`;
+  Guandu Plain, tidal river confluence and wetland habitats.
+
+Station-specific architect, civil-contract award value, final account, completed
+artwork register and rename gazette remain TBC for both pages. No source conflict
+was found in this batch. The general ground-station description, corridor demand
+record and public-realm programme were not presented as station-level works.
+
 ## Unverified incoming lead appendix — `deep-research-report(5).md`
 
 > This appendix preserves an external lead only. It is explicitly unverified,

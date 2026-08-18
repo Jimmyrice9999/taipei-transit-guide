@@ -745,6 +745,60 @@ paid-area versus street-transfer classifications where the primary pages do
 not publish them. The New Taipei gazette fetched in this pass establishes the
 Losheng historical-building registration, not a station renaming.
 
+### Station-prose audit — O51–O54 batch, 18 August 2026
+
+The exact DORTS station pages were fetched in full. O51’s page establishes the
+isolated-sandbar treatment, square floor grammar, waterbird entrances, platform
+wall panels, themed seating and the design-stage statement that no separately
+selected public-art work was commissioned. Its original evidence includes:
+`本站為地下二層島式月臺車站` and `車站即使沒有徵選之公共藝術，亦已具藝術美感`.
+
+O52’s full page establishes the Reeds under the Moon theme, the reed-and-egret
+design vocabulary, green theme colour, mosaic entrance treatment, reed-like
+floor lines, recurring bird motifs and platform-wall imagery. The page states:
+`本站之公共藝術設計主題為『蘆荻泛月』，故建議以『蘆葦』與『白鷺鷥』為設計之主要元素`.
+
+O53’s full page establishes the By the Water theme, blue-and-green palette,
+water-ripple treatment across floors, handrails, waiting areas and track-side
+walls, and the bird-nest ventilation form. The page states:
+`本車站之公共藝術設計主題為『在水一方』` and describes `利用車站裝修材料、照明照度的設計展現水的流動感`.
+
+O54’s full page establishes the wind theme, outdoor-landscape and joint-
+development potential, skylight, egret ventilation reference, double-curve
+floor treatment and Ray King’s coated-glass commission. The original record
+states: `本車站之公共藝術設計主題為『迎風起舞』` and describes `天窗直通到地下車站` and
+`邀請比件徵選美國藝術家Ray King的舞之羽`.
+
+Sources fetched in full and used for O51–O54:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=C5ABC1F9EB79143D —
+  PRIMARY, High confidence; DORTS, `三和國中站--獨立沙洲`; station architecture,
+  materials, waterbird forms, floor treatment and design-stage art statement.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=23CA4BCC6D53E872 —
+  PRIMARY, High confidence; DORTS, `徐匯中學站--蘆荻泛月`; reeds, egrets,
+  green palette, mosaic, floor and platform-wall treatments.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=D4B52BEBD27350DD —
+  PRIMARY, High confidence; DORTS, `三民高中站--在水一方`; water-town context,
+  lightweight surface forms, water-ripple applications and ventilation design.
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=95421D9B2C9744B9 —
+  PRIMARY, High confidence; DORTS, `蘆洲站--迎風起舞`; skylight, wind/light
+  treatment, egret forms, public-space programme and Ray King commission.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High
+  confidence; DORTS, `車站建築設計`; shared station-image, local integration and
+  modern-material design principles.
+
+No station-specific civil contract value, final account, individual architect,
+rename gazette or complete current artwork register was found in the fetched
+station architecture, Luzhou route, general architecture or public-art records.
+Those gaps remain TBC; the design-stage no-art statement for O51 was not
+expanded into a claim about the station’s current inventory.
+
+### Conflicts and gaps
+
+No conflicting value was found in this batch. O51’s design-stage statement about
+not having a separately selected public-art work is kept distinct from the
+station’s integrated artistic finishes and from any future or current inventory.
+
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
 
 > This appendix preserves an external lead only. It is explicitly unverified,

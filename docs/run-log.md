@@ -10018,3 +10018,60 @@ contradictions); `git diff --check` clean. Claims baseline and its test were
 not changed.
 
 Next: commit and push this O17–O21/O50 batch, then complete O51–O54/R25–R27.
+\n+# Run 42 — Part 1 Zhonghe-Xinlu O51–O54 and Tamsui-Xinyi R25–R26, 18 August 2026
+
+Audited before editing. This exact six-page batch widened O51–O54 with the
+full DORTS Luzhou station architecture pages and general station-architecture
+principles. R25–R26 were widened with the full DORTS route, ground-station,
+former-railway-corridor, station-design and northern-public-realm records, with
+the official Guandu wetland page added for R25. No research appendix was used.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| O51 | 354 | DORTS station architecture and general architecture principles |
+| O52 | 341 | DORTS station architecture and general architecture principles |
+| O53 | 360 | DORTS station architecture and general architecture principles |
+| O54 | 360 | DORTS station architecture and general architecture principles |
+| R25 | 384 | DORTS route, ground-station, corridor-planning, design-goals, public-realm and Guandu wetland records |
+| R26 | 336 | DORTS route, ground-station, corridor-planning, design-goals and public-realm records |
+
+Sources fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=C5ABC1F9EB79143D
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=23CA4BCC6D53E872
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=D4B52BEBD27350DD
+- https://www.dorts.gov.taipei/cp.aspx?n=7E5951D50A733E70&s=95421D9B2C9744B9
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+- https://btdo.gov.taipei/News_Content.aspx?n=B154724D802DC488&s=9E4A5535EE009A1F
+
+Sourced: O51’s sandbar, square-grain floor, waterbird, platform-wall and
+design-stage art distinction; O52’s reeds, moon, egret, green, mosaic, floor
+and platform-wall treatment; O53’s water-town, By the Water, blue/green,
+water-ripple and bird-nest treatment; O54’s wind, skylight, public-space and
+Ray King commission; and R25–R26’s shared ground-section, former-TRA-corridor,
+land-efficiency, demand, public-realm and ecological context.
+
+Conflicts: none in this batch. O51’s design-stage statement that no separately
+selected public-art work was commissioned remains distinct from integrated
+architectural finishes and from a current artwork inventory. The general
+ground-station and public-realm records remain corridor evidence, not claims of
+station-specific installations.
+
+TBC after the fetched source families: station-specific civil contract values,
+final accounts, individual architects, rename gazettes and complete current
+artwork registers for all six pages. R25/R26 station-specific excavation or
+incident histories and feeder-bus prose were not established.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run build` clean (519 pages, no missing glyphs) after regenerating the
+R-line font subset; `npm run verify` clean (links, accessibility, facts,
+claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
+cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
+its test were not changed.
+
+Next: complete R27 and LB01–LB05 as the next six-page batch.

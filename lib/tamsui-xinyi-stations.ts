@@ -206,6 +206,36 @@ const dortsNorthernPublicRealm = source(
   '2026-08-18',
 )
 
+const guanduWetland = source(
+  'taipei-guandu-wetland-context',
+  'Guandu wetland ecological context',
+  '關渡自然生態特色',
+  'Taipei Beitou District Office (臺北市北投區公所)',
+  'https://btdo.gov.taipei/News_Content.aspx?n=B154724D802DC488&s=9E4A5535EE009A1F',
+  'The full district-government page describes Guandu Plain, the tidal confluence of the Tamsui and Keelung rivers, wetland habitats and the area’s ecological diversity.',
+  '2026-08-18',
+)
+
+const hongshulinReserve = source(
+  'ntpc-hongshulin-natural-reserve',
+  'Hongshulin Natural Reserve',
+  '紅樹林自然保留區',
+  'New Taipei City High Riverbank Engineering Management Office (新北市政府高灘地工程管理處)',
+  'https://www.hrcm.ntpc.gov.tw/Zone/Assets/%E9%87%91%E8%89%B2%E6%B0%B4%E5%B2%B8/%E7%B4%85%E6%A8%B9%E6%9E%97%E8%87%AA%E7%84%B6%E4%BF%9D%E7%95%99%E5%8D%80',
+  'The full New Taipei government page gives the reserve’s access from Hongshulin station exit 2 and its public-transport directions.',
+  '2026-08-18',
+)
+
+const ntpcDanhaiLrtOpening = source(
+  'ntpc-danhai-lrt-opening',
+  'Danhai LRT Green Mountain Line opening and interchange',
+  '輕軌帶動淡海新市鎮發展，與未來接軌!',
+  'Tamsui Land Office, New Taipei City (新北市淡水地政事務所)',
+  'https://www.ntpc.gov.tw/ch/home.jsp?dataserno=3cc952025c4b057703de77232dc8a188&id=e8ca970cde5c00e1',
+  'The full New Taipei government report records Hongshulin as the Green Mountain Line origin, the 11-station route and its opening on 24 December 2018.',
+  '2026-08-18',
+)
+
 const dortsShilinToXinbeitou = source(
   'dorts-tamsui-xinyi-northern-stations',
   'Tamsui–Xinyi Line northern station architecture',
@@ -1309,6 +1339,23 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 大度路3段296巷51號; 2: 中央北路4段583巷11弄內、近關渡國小. Platform lifts serve platforms 1 and 2. Accessible exit: TBC.',
     facilities: 'Paid toilet by exit 1; parent/accessible toilet at the same location; baby changing in the paid men’s and women’s toilets; bicycle access open; enquiry point near exit 1; platform lifts behind the platform stairs.',
     landmarks: '關渡國小', publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsRoute, dortsGroundStationTypes, dortsRailwayCorridorPlanning, dortsStationDesignGoals, dortsNorthernPublicRealm, guanduWetland],
+    prose: [
+      { text: 'DORTS places Guandu inside the northern ground-level section of the Tamsui–Xinyi route, where the railway leaves the elevated and underground station families used farther south.', source: dortsGroundStationTypes.id },
+      { text: 'The department defines a ground station as a facility with track and platforms at grade, normally used outside dense urban areas and where the railway crosses relatively few roads.', source: dortsGroundStationTypes.id },
+      { text: 'It calls this the most economical of the three station types, but records the corresponding costs as barriers to surface movement and views.', source: dortsGroundStationTypes.id },
+      { text: 'That trade-off is part of R25’s documented section context even though the fetched engineering pages do not describe a station-specific excavation incident or geological difficulty.', source: dortsGroundStationTypes.id },
+      { text: 'DORTS says the metro used the former TRA Tamsui branch right-of-way through a paid transfer, which reduced the difficulty of urban-plan changes and land acquisition.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'The same planning record says stations generally had complete sites, fewer construction interfaces and better construction efficiency along that corridor.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'It also describes pre-existing demand in the north-Tamsui railway corridor as high and says that conversion to a metro system was expected to improve economic benefit.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'The route therefore served a corridor with an established transport function while also supporting the suburban development that DORTS associates with the line’s reach across Taipei and New Taipei.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'Guandu’s official district account describes the plain as a river-and-tidal landscape where the Tamsui and Keelung rivers meet, depositing sediment and organic material.', source: guanduWetland.id },
+      { text: 'That account records a wetland mosaic of grassland, sandbars and mangrove habitat, with the estuarine setting supporting a wide range of plants, animals and birds.', source: guanduWetland.id },
+      { text: 'R25’s corridor setting is consequently not only a transport engineering choice but also an interface with a recognised ecological landscape.', source: guanduWetland.id },
+      { text: 'DORTS’s design brief asks each station to have a distinct identity, integrate with its surroundings and use modern materials and methods to express regional character.', source: dortsStationDesignGoals.id },
+      { text: 'The fetched primary pages do not identify R25’s individual architect, civil-contract award value, final account, completed artwork register or legal rename.', source: dortsRoute.id },
+      { text: 'Those fields remain TBC pending the period procurement, completion, artwork and gazette records rather than being inferred from the shared northern corridor description.', source: dortsStationDesignGoals.id },
+    ],
   },
   R26: {
     structure: 'at-grade', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -1316,6 +1363,22 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 民權路與民族路交叉口、近馬偕醫院; 2: 民權一街16號. Platform lifts serve platforms 1 and 2. Accessible exit: TBC.',
     facilities: 'Paid toilet by exit 1; parent/accessible toilet at the same location; baby changing in the paid men’s and women’s toilets; bicycle access open; enquiry point near exit 1; platform lifts behind the platform stairs.',
     landmarks: '馬偕醫院', publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsRoute, dortsGroundStationTypes, dortsRailwayCorridorPlanning, dortsStationDesignGoals, dortsNorthernPublicRealm],
+    prose: [
+      { text: 'DORTS places Zhuwei within the Tamsui–Xinyi Line’s ground-level northern section, a guideway choice that differs from the elevated stations nearer central Taipei.', source: dortsGroundStationTypes.id },
+      { text: 'Its engineering guide defines this station type by putting the railway and platforms at ground level, normally in less-dense territory with few crossings of surface roads.', source: dortsGroundStationTypes.id },
+      { text: 'The guide calls the arrangement economical while warning that a surface railway can interrupt movement and create a visual barrier.', source: dortsGroundStationTypes.id },
+      { text: 'No fetched primary page assigns a station-specific geological cause or construction incident to R26, so the general ground-station description is kept separate from an unverified local explanation.', source: dortsGroundStationTypes.id },
+      { text: 'The corridor was built on the former TRA Tamsui branch right-of-way, transferred for payment, which DORTS says made urban-plan changes and land acquisition less difficult.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'The same record says the station sites generally had complete land parcels, fewer construction interfaces and favourable construction efficiency.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'DORTS also describes the former north-Tamsui railway as a corridor with high pre-existing transport demand, not a route created solely for later development.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'At the same time, the department says the metro line could stimulate suburban urban development across its Taipei and New Taipei reach.', source: dortsRailwayCorridorPlanning.id },
+      { text: 'The northern public-realm account treats the inherited corridor as a potential recreational resource, with walking, cycling, planting and small resting spaces used to soften the infrastructure’s presence.', source: dortsNorthernPublicRealm.id },
+      { text: 'Those public-realm measures are corridor-level evidence rather than proof of a particular R26 landscape installation, so no station-specific feature is claimed here.', source: dortsNorthernPublicRealm.id },
+      { text: 'DORTS’s design goals require a shared and memorable metro image while giving every station its own character and integrating it with neighbouring buildings.', source: dortsStationDesignGoals.id },
+      { text: 'The fetched primary pages do not name R26’s individual architect, civil-contract award value, final account, completed artwork register or legal rename.', source: dortsRoute.id },
+      { text: 'Those records remain TBC until a period procurement file, completion account, artwork register or gazette supplies station-specific evidence.', source: dortsStationDesignGoals.id },
+    ],
   },
   R27: {
     structure: 'at-grade', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
