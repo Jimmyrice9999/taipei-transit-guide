@@ -294,6 +294,81 @@ This establishes Xindian Depot as the published depot for the line. The source
 does not assign a station stretch or train roster, so each station page keeps
 “station-specific roster assignment: TBC”.
 
+### Station-prose deepening — G08, G09, G10, G12, G14 and G15 batch, 18 August 2026
+
+Traditional-Chinese searches were repeated for `台電大樓站 古亭站 中正紀念堂站 西門站
+中山站 松江南京站 建築設計 公共藝術`, `松山線 標案 契約 西門站 中山站 松江南京站`
+and the relevant DORTS technical-book pages. Search was used only to locate pages;
+the returned pages were fetched and read in full. The full TRTC pages for G08,
+G09, G10, G12, G14 and G15, the DORTS New Store route page, the New Store
+station-architecture page, the initial public-art overview, the public-art
+installation-planning page and Songshan architecture pages 66–67 were checked.
+
+| Station | Result | Full primary pages |
+|---|---|---|
+| G08 Taipower Building | 0 words after source-family search; the checked pages returned current facilities, exits and route chronology already represented in facts/specs | https://web.metro.taipei/pages2026/WebStation/040/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
+| G09 Guting | 293 sourced words; full page supports entrance architecture, initial public-art title and dedicated wiring | https://web.metro.taipei/pages2026/WebStation/041/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
+| G10 Chiang Kai-Shek Memorial Hall | 275 sourced words; full page supports architectural references, three initial public-art titles and different wiring arrangements | https://web.metro.taipei/pages2026/WebStation/042/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
+| G12 Ximen | 0 words after source-family search; the checked pages returned current facilities, exits, interchange and shared Songshan route facts already represented in facts/specs | https://web.metro.taipei/pages2026/WebStation/086/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=C974A7C467B035B8; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
+| G14 Zhongshan | 272 sourced words; full page supports source-era label, former railway corridor, cultural/commercial context, Happy Transfer theme and public-space treatment | https://web.metro.taipei/pages2026/WebStation/053/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html |
+| G15 Songjiang Nanjing | 300 sourced words; full pages support source-era label, district context, platform/exit conflict, Urban Multitude theme and entrance-language continuation | https://web.metro.taipei/pages2026/WebStation/132/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html |
+
+**G09 evidence — DORTS, PRIMARY, High confidence.** The full station-planning
+page says: `為避免各站型式單調，配合外在環境，各站的出入口造型均有不同的特色`;
+for Guting it says: `古亭站以金屬斜拱及玻璃構成輕盈通透的出入口造型，配合附近現代化建築的鋼骨及玻璃`.
+The full DORTS public-art overview lists `古亭站：邂逅`, and records the early
+network selection as `民國87年以邀請比件方式選出`. The full installation-planning
+page records that Guting’s `邂逅` required separate wiring. These establish the
+entrance design, early public-art title and electrical coordination; they do not
+establish a complete artist, medium, final-cost or station-contract record for
+the work, so those fields remain TBC.
+
+**G10 evidence — DORTS, PRIMARY, High confidence.** The full station-planning
+page says that CKS Memorial Hall station takes its wall finishes, trim,
+sign-frame, entrance lattice windows and glazed-tile roof details from the
+surrounding memorial complex: `中正紀念堂站之牆面、線腳、標牌框、出入口格子窗、琉璃瓦屋頂等，均取材於中正紀念堂週遭的特色`.
+The full public-art overview lists `舞台、月台`, `非想、想飛` and `輕鬆的雲、走路的樂`
+at the station. The installation-planning page says `非想、想飛` could use
+existing line wiring, while `輕鬆的雲、走路的樂` required separate wiring.
+These establish the architectural and infrastructure records, but the checked
+pages do not provide complete artist, medium, final-cost or individual-contract
+records for all three works; those fields remain TBC.
+
+**G14 evidence — DORTS, PRIMARY, High confidence.** The full architecture page
+labels the station `中山站(G16/R14)` and places it in the former Tamsui railway
+corridor, near the reused old Taipei City Hall and former US Consulate arts
+facilities, the Zhongshan North Road/Linsen North Road international tourism
+district and Shin Kong Mitsukoshi. It gives the theme `快樂轉運`, describes a
+breathing-space idea during transfers, and records repeated wall patterns, bright
+colours, simple compositions and street-life imagery. It also says the entrances
+and ventilation shafts are integrated with joint-development land. The source-era
+label is retained because it differs from the current operating codes; no complete
+station-specific contract or final account was found.
+
+**G15 evidence — DORTS, PRIMARY, High confidence.** The full architecture pages
+label the station `松江南京站(G17/O12)` and describe its high-rise mixed-use
+financial-district setting, nearby Datong High School and Changan Junior High
+School, and commuting and school travel. The page gives an underground
+three-level station, but describes the overall form as island-platform while
+also describing the G side as side-platform and the O side as island-platform;
+it gives seven exits, while current operator and DORTS route records give eight.
+The theme is `都會眾生相`; the continuation describes contemporary treatment,
+inclusive cultural exchange and continuation of the O-line entrance language to
+avoid passenger confusion. All values are retained as source-level conflicts.
+
+The full TRTC, DORTS route and Songshan architecture pages for G08 and G12
+returned useful operational and shared-line material but no additional
+station-specific narrative beyond the existing facts/specs. This is a failed
+lookup, not evidence that either station has no history or artwork.
+
+During this audit, the full DORTS initial public-art overview was also checked
+again and was found to list G01 Xindian’s `天、地、人` and G07 Gongguan’s `偷窺`.
+The full planning page 139 additionally gives Gongguan’s garden-architecture
+entrance treatment, and page 239 records wiring decisions for the Xindian,
+Gongguan and Guting works. Those findings contradict the earlier zero-word
+audit for G01 and G07; they are deliberately not folded into this six-page
+commit and are scheduled as the next Green correction batch.
+
 ## Conflicts
 
 1. **G15 Songjiang Nanjing platform form and exit count.** The DORTS station

@@ -95,6 +95,66 @@ const dortsXiaobitanArtRecord = source(
   '2026-08-18',
 )
 
+const dortsNewStoreArchitecture = source(
+  'dorts-songshan-xindian-new-store-architecture',
+  'New Store Line station entrance architecture',
+  '捷運工程叢書 精進版－2 捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html',
+  'The full planning-book page explains how New Store Line station entrances respond to their surroundings, including the Chiang Kai-Shek Memorial Hall, Guting, Jingmei and Gongguan examples.',
+  '2026-08-18',
+)
+
+const dortsInitialPublicArtOverview = source(
+  'dorts-songshan-xindian-initial-public-art-overview',
+  'Initial Taipei MRT public-art overview',
+  '簡介',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804',
+  'The full DORTS overview identifies the initial-network public-art works at CKS Memorial Hall, Guting, Gongguan and Xindian, and records their selection period and method.',
+  '2026-08-18',
+)
+
+const dortsPublicArtInstallationPlanning = source(
+  'dorts-songshan-xindian-public-art-installation-planning',
+  'MRT public-art installation planning',
+  '捷運工程叢書 精進版－2 捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html',
+  'The full planning-book page records installation and wiring decisions for the CKS Memorial Hall, Guting, Gongguan and Xindian public-art works, including a case where existing line power could be used.',
+  '2026-08-18',
+)
+
+const dortsZhongshanArchitecture = source(
+  'dorts-songshan-zhongshan-architecture',
+  'Zhongshan station architectural design',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html',
+  'The full architecture-journal page describes the source-era Zhongshan station label, the former Tamsui railway corridor, surrounding cultural and commercial context, four-level interchange form, Happy Transfer theme and public-space treatment.',
+  '2026-08-18',
+)
+
+const dortsSongjiangArchitecture = source(
+  'dorts-songshan-songjiang-nanjing-architecture',
+  'Songjiang Nanjing station architectural design',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html',
+  'The full architecture-journal page describes the source-era Songjiang Nanjing station label, surrounding financial and school district, co-constructed platform arrangement, Urban Multitude theme and exit-count account.',
+  '2026-08-18',
+)
+
+const dortsSongjiangArchitectureContinuation = source(
+  'dorts-songshan-songjiang-nanjing-architecture-continuation',
+  'Songjiang Nanjing station architectural design, continuation',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html',
+  'The full continuation page explains the Songjiang Nanjing theme’s contemporary cultural framing and the decision to continue the Zhonghe–Xinlu Line entrance language for visual coherence.',
+  '2026-08-18',
+)
+
 const dortsDepot = source(
   'dorts-songshan-xindian-depot',
   'Taipei MRT depot planning summary',
@@ -344,6 +404,23 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The New Store Line north section between NTU Hospital and Guting opened with the Zhonghe Line on 24 December 1998.',
     interchange: { label: 'Zhonghe–Xinlu Line; transfer mode: TBC', lineCode: 'O' },
+    proseSources: [dortsNewStoreArchitecture, dortsInitialPublicArtOverview, dortsPublicArtInstallationPlanning],
+    prose: [
+      { text: 'DORTS’s New Store Line planning account says the line is underground throughout, but does not treat its stations as a uniform architectural type.', source: dortsNewStoreArchitecture.id },
+      { text: 'Instead, the entrance forms were to respond to the character of each station’s surroundings.', source: dortsNewStoreArchitecture.id },
+      { text: 'At Guting, the design uses metal slanted arches and glass to create a light and transparent entrance form.', source: dortsNewStoreArchitecture.id },
+      { text: 'DORTS explains that this response suited the nearby modern buildings whose steel and glass construction gave the area its visual context.', source: dortsNewStoreArchitecture.id },
+      { text: 'That description makes the street entrance a deliberate piece of urban mediation: the station is expressed through a contemporary frame rather than a historical imitation.', source: dortsNewStoreArchitecture.id },
+      { text: 'The same planning material places Guting in a wider New Store Line approach in which the station’s external setting helps determine the architectural language.', source: dortsNewStoreArchitecture.id },
+      { text: 'DORTS’s initial-network public-art overview lists the Guting work 邂逅 among the early public-art installations on the Taipei MRT.', source: dortsInitialPublicArtOverview.id },
+      { text: 'The overview records the initial-network group as an ROC 87 public-art programme selected through invited comparison.', source: dortsInitialPublicArtOverview.id },
+      { text: 'Guting therefore appears in the same early art framework as the works at Chiang Kai-Shek Memorial Hall, Gongguan and Xindian, rather than as an isolated later commission.', source: dortsInitialPublicArtOverview.id },
+      { text: 'The planning account also treats the art as an engineering coordination issue, not only as a curatorial decision.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'It records that 邂逅 required its own wiring, whereas another early work at Chiang Kai-Shek Memorial Hall could use existing line power.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'That distinction preserves a practical difference between works that could share station infrastructure and works that required a dedicated electrical provision.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'The available DORTS records identify the title, selection framework and wiring requirement, but do not establish a complete artist, medium, final-cost or contract record for 邂逅.', source: dortsInitialPublicArtOverview.id },
+      { text: 'Those fields remain TBC rather than being filled from an unverified catalogue or a secondary description.', source: dortsInitialPublicArtOverview.id },
+    ],
   },
   G10: {
     structure: 'underground', engineering: 'G11', exits: 7, openingDate: '24 December 1998',
@@ -354,6 +431,23 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The New Store Line north section between NTU Hospital and Guting opened with the Zhonghe Line on 24 December 1998. DORTS’s current route table labels this station “中正紀年堂站”; the operator’s station page uses “中正紀念堂”.',
     interchange: { label: 'Tamsui–Xinyi Line; transfer mode: TBC', lineCode: 'R' },
+    proseSources: [dortsNewStoreArchitecture, dortsInitialPublicArtOverview, dortsPublicArtInstallationPlanning],
+    prose: [
+      { text: 'DORTS’s station-planning account says the New Store Line’s underground stations were designed with different responses to their surroundings rather than with one repeated architectural formula.', source: dortsNewStoreArchitecture.id },
+      { text: 'For Chiang Kai-Shek Memorial Hall, the surrounding memorial complex supplied the reference vocabulary.', source: dortsNewStoreArchitecture.id },
+      { text: 'The station treatment draws on the memorial’s wall finishes, trim and sign-frame details, and on the lattice windows and glazed tile roofs associated with the site.', source: dortsNewStoreArchitecture.id },
+      { text: 'This is a specific architectural translation of the above-ground landmark: the source describes several material and detail families, not merely a general claim that the station is near the memorial.', source: dortsNewStoreArchitecture.id },
+      { text: 'DORTS’s initial public-art overview lists three works at this station: 舞台、月台, 非想、想飛 and 輕鬆的雲、走路的樂.', source: dortsInitialPublicArtOverview.id },
+      { text: 'The overview places those works within the initial-network public-art programme selected in ROC 87 through invited comparison.', source: dortsInitialPublicArtOverview.id },
+      { text: 'The public-art planning record shows that the three works were not identical from an infrastructure perspective.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'It says the projector lamps for 非想、想飛 could connect to existing line wiring.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'By contrast, 輕鬆的雲、走路的樂 needed its own wiring, a difference the record preserves as an installation decision.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'The same planning page places Guting’s 邂逅 in the comparison, and says that work also required separate wiring.', source: dortsPublicArtInstallationPlanning.id },
+      { text: 'Together, the records show that the public-art programme was coordinated with station electrical systems while the architectural treatment was coordinated with the memorial complex.', source: dortsNewStoreArchitecture.id },
+      { text: 'They also distinguish the station’s architectural reference materials from the artwork titles, so the two layers should not be collapsed into one decorative description.', source: dortsNewStoreArchitecture.id },
+      { text: 'The consulted DORTS pages do not provide a complete artist, medium, final-cost or individual contract record for all three titles.', source: dortsInitialPublicArtOverview.id },
+      { text: 'Those missing fields remain TBC in this entry.', source: dortsInitialPublicArtOverview.id },
+    ],
   },
   G11: {
     structure: 'underground', engineering: 'G12', exits: 4, openingDate: '31 August 2000', openingSource: dortsXiaonanmen,
@@ -403,6 +497,22 @@ const gData: Record<string, GData> = {
     engineeringHistory: 'The station is a Tamsui–Xinyi and Songshan Line co-constructed interchange. DORTS’s architectural theme is “Happy transfer” (快樂轉運), with the Songshan station structure integrated into joint-development sites.',
     engineeringHistorySource: dortsSongshanArchitecture,
     interchange: { label: 'Tamsui–Xinyi Line; transfer mode: TBC', lineCode: 'R' },
+    proseSources: [dortsZhongshanArchitecture],
+    prose: [
+      { text: 'The DORTS architecture article calls the station “中山站(G16/R14)”, retaining a source-era engineering label that differs from the current overlay code G14 and current Red-line code R11.', source: dortsZhongshanArchitecture.id },
+      { text: 'Its account places the station within the former Tamsui railway corridor, whose urban form changed when the railway was removed and the MRT was built.', source: dortsZhongshanArchitecture.id },
+      { text: 'The same context includes the old Taipei City Hall and former United States Consulate, both described as having been reused as arts and cultural facilities.', source: dortsZhongshanArchitecture.id },
+      { text: 'The article also identifies the Zhongshan North Road and Linsen North Road international tourism district and Shin Kong Mitsukoshi as part of the station’s surrounding activity.', source: dortsZhongshanArchitecture.id },
+      { text: 'It presents the interchange as an underground four-level island-platform station in that source-era description.', source: dortsZhongshanArchitecture.id },
+      { text: 'The architectural theme is 快樂轉運, or “Happy transfer”.', source: dortsZhongshanArchitecture.id },
+      { text: 'DORTS explains the theme as giving passengers a moment to breathe during a transfer while connecting the station to contemporary consumption and leisure culture.', source: dortsZhongshanArchitecture.id },
+      { text: 'The wall treatment uses repeated patterns that the article says can be recognised by younger passengers, together with bright colours and simple compositions.', source: dortsZhongshanArchitecture.id },
+      { text: 'Those compositions are used to depict ordinary street-life scenes rather than a single historical tableau.', source: dortsZhongshanArchitecture.id },
+      { text: 'The article says the two entrances and ventilation shafts are integrated with joint-development land, tying the public station elements to the surrounding redevelopment.', source: dortsZhongshanArchitecture.id },
+      { text: 'This makes the transfer theme a description of the station’s urban role as well as of its interior graphics.', source: dortsZhongshanArchitecture.id },
+      { text: 'The source describes the station through the old railway corridor, arts reuse, tourism district, retail setting, transfer theme and redevelopment interface, but it does not give a complete station-specific contract or final-account record.', source: dortsZhongshanArchitecture.id },
+      { text: 'Those procurement and final-cost fields remain TBC.', source: dortsZhongshanArchitecture.id },
+    ],
   },
   G15: {
     structure: 'underground', engineering: 'G17', exits: 8, openingDate: '15 November 2014',
@@ -414,6 +524,22 @@ const gData: Record<string, GData> = {
     engineeringHistory: 'The station’s design theme is “Urban multitude” (都會眾生相). DORTS describes it as a joint station with the Zhonghe–Xinlu Line, with the Songshan platform above the O-line island platform in the station section described there.',
     engineeringHistorySource: dortsSongshanArchitecture,
     interchange: { label: 'Zhonghe–Xinlu Line; transfer mode: TBC', lineCode: 'O' },
+    proseSources: [dortsSongjiangArchitecture, dortsSongjiangArchitectureContinuation],
+    prose: [
+      { text: 'The DORTS architecture article calls the station “松江南京站(G17/O12)”, a source-era label that differs from the current overlay code G15 and current Orange-line code O08.', source: dortsSongjiangArchitecture.id },
+      { text: 'It locates the station at the Nanjing East Road and Songjiang Road intersection, in a district of high-rise buildings and mixed residential, commercial, office and financial uses.', source: dortsSongjiangArchitecture.id },
+      { text: 'Datong High School and Changan Junior High School are named in the same account, which also identifies commuting and school travel as part of the area’s daily movement.', source: dortsSongjiangArchitecture.id },
+      { text: 'The station was co-constructed with the Zhonghe–Xinlu Line, so the article describes it as a shared interchange rather than as an independent Songshan Line stop.', source: dortsSongjiangArchitecture.id },
+      { text: 'The source gives an underground three-level station, but its platform descriptions are internally differentiated: the Songshan platform is described as side-style while the Orange-line platform is described as island-style.', source: dortsSongjiangArchitecture.id },
+      { text: 'The same article’s summary calls the station an island-platform station overall, so both descriptions are retained as a published conflict.', source: dortsSongjiangArchitecture.id },
+      { text: 'Its component account gives seven exits, while the current operator and DORTS route records give eight, so the exit totals are also retained as different source values rather than reconciled.', source: dortsSongjiangArchitecture.id },
+      { text: 'DORTS names the architectural theme 都會眾生相, or “Urban multitude”, and says it developed from the earlier Orange-line public-art concept for O12.', source: dortsSongjiangArchitecture.id },
+      { text: 'The continuation of the article frames the theme through contemporary treatment and the capital’s inclusive cultural exchange.', source: dortsSongjiangArchitectureContinuation.id },
+      { text: 'It also says the Songshan entrances continue the Orange-line design language so that the two systems read as one place and passengers are less likely to become confused.', source: dortsSongjiangArchitectureContinuation.id },
+      { text: 'The resulting design is therefore tied to both the district’s mixed everyday population and the practical problem of making a co-constructed interchange legible.', source: dortsSongjiangArchitectureContinuation.id },
+      { text: 'The consulted architecture pages do not establish a complete station-specific contract, final account or individual public-art cost.', source: dortsSongjiangArchitecture.id },
+      { text: 'Those fields remain TBC.', source: dortsSongjiangArchitecture.id },
+    ],
   },
   G16: {
     structure: 'underground', engineering: 'G18', exits: 8, openingDate: '15 November 2014',

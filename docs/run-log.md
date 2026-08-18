@@ -8724,6 +8724,45 @@ record gives approximately NT$35.9 million plus a NT$1 million prize. These
 are retained as initial procurement/setup versus completed-programme records,
 not reconciled. No colour-prefix audit.
 
+# Run 31 — Part 1 Green station prose, G08, G09, G10, G12, G14, G15, 18 August 2026
+
+Six Green station pages were audited and four received new sourced body prose.
+G09 Guting: 293 words; G10 Chiang Kai-Shek Memorial Hall: 275; G14 Zhongshan:
+272; G15 Songjiang Nanjing: 300. Batch total: 1,140 words. G08 Taipower
+Building and G12 Ximen remain at zero after the full TRTC pages, DORTS New
+Store/Songshan route material and DORTS architecture/public-art families were
+fetched and read. The pages returned current operational or shared-line facts
+already represented in facts/specs, not additional station-specific narrative.
+
+Primary URLs cited:
+
+- https://web.metro.taipei/pages2026/WebStation/040/1
+- https://web.metro.taipei/pages2026/WebStation/041/1
+- https://web.metro.taipei/pages2026/WebStation/042/1
+- https://web.metro.taipei/pages2026/WebStation/086/1
+- https://web.metro.taipei/pages2026/WebStation/053/1
+- https://web.metro.taipei/pages2026/WebStation/132/1
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html
+
+Conflicts published: G15’s architecture page gives an overall island-platform
+description but separately gives G-side side-platform and O-side island-platform;
+it gives seven exits while current operator/DORTS records give eight. Source-era
+G16/R14 and G17/O12 labels are retained beside current operating codes. No
+station colour-prefix audit applies. No new station contract, final account,
+complete artwork artist/medium/cost record, rename gazette or transfer fare
+boundary was sourced; these remain TBC. A follow-up audit also found DORTS
+public-art entries for G01 and G07, contradicting the earlier zero-word audit;
+that correction is the next Green batch, together with G16’s newly located
+architecture record.
+
+Pre-commit checks: cite, research, claims and diff check clean. Full fresh
+verify/build and tests remain to run before the batch commit. Next: finish the
+Green correction batch, then proceed to the next line in Part 1.
+
 Final gates for this batch: fresh build/verify and the full test suite must pass
 before commit; citation, research and claims checks are already clean. Next
 batch is G08–G10, G12, G14 and G15.
