@@ -105,6 +105,56 @@ const dortsNewStoreArchitecture = source(
   '2026-08-18',
 )
 
+const dortsDapinglinLandDevelopment = source(
+  'dorts-new-store-dapinglin-land-development',
+  'Dapinglin station joint-development building',
+  '捷運土地開發實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page130.html',
+  'The full land-development case page records the Dapinglin station joint-development building, its commissioning body, address, completion date and building form.',
+  '2026-08-18',
+)
+
+const dortsJingmeiLandDevelopment = source(
+  'dorts-new-store-jingmei-land-development',
+  'Jingmei station joint-development building',
+  '捷運土地開發實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page129.html',
+  'The full land-development case page records two Jingmei station joint-development sites, their investors, locations, completion dates and building forms.',
+  '2026-08-18',
+)
+
+const dortsTaipowerLandDevelopment = source(
+  'dorts-new-store-taipower-building-land-development',
+  'Taipower Building station joint-development building',
+  '捷運土地開發實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html',
+  'The full land-development case page records the Taipower Building station joint-development site, investor, address, completion date, mixed-use form and the city government’s retained premises.',
+  '2026-08-18',
+)
+
+const dortsSongshanArchitectureIntro = source(
+  'dorts-songshan-architecture-introduction',
+  'Songshan Line architectural design introduction',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html',
+  'The full architecture-journal introduction describes the Songshan Line corridor from Ximen to Songshan, the changing commercial districts it links, and the principle that station architecture responds to different station functions and contexts.',
+  '2026-08-18',
+)
+
+const dortsSongshanArchitecturePrinciples = source(
+  'dorts-songshan-architecture-principles',
+  'Songshan Line architectural design principles',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html',
+  'The full architecture-journal page records the Songshan Line’s public-art and architectural design principles, including identity, context, passenger interaction, circulation, materials, safety and maintenance.',
+  '2026-08-18',
+)
+
 const dortsInitialPublicArtOverview = source(
   'dorts-songshan-xindian-initial-public-art-overview',
   'Initial Taipei MRT public-art overview',
@@ -384,6 +434,22 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
     interchange: { label: 'Circular Line; transfer mode: TBC', lineCode: 'Y' },
+    proseSources: [dortsNewStoreArchitecture, dortsDapinglinLandDevelopment],
+    prose: [
+      { text: 'DORTS’s New Store Line architecture account says the line uses underground stations and adapts each station’s external treatment to its individual surroundings rather than imposing one repeated form.', source: dortsNewStoreArchitecture.id },
+      { text: 'The same account presents the station entrance and the surrounding urban development as part of the line’s architectural problem, not as unrelated pieces of infrastructure.', source: dortsNewStoreArchitecture.id },
+      { text: 'Dapinglin’s station-specific development record identifies a joint-development building at the station as a separate project interface.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'DORTS says that this building was commissioned by the Ministry of the Interior rather than by a named private investor in the case summary.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'The published address is 198 and 200, Section 3, Beixin Road, in Xindian District.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'The building was completed in June of ROC year 94, corresponding to 2005.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'DORTS records a three-level basement and a seventeen-level above-ground office building.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'That record makes the station’s land-development context more specific than a generic statement that offices exist around the entrance.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'It also places the station in the bureau’s wider practice of using development sites to secure or coordinate urban land around underground rail facilities.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'The architecture source says the New Store Line did not seek one new architectural style for every station; it used station-by-station responses to surrounding conditions.', source: dortsNewStoreArchitecture.id },
+      { text: 'Dapinglin’s published above-ground development record is therefore part of the context against which the station’s street-level facilities were delivered.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'The consulted pages do not establish the civil construction package, contractor, final account, station-specific public-art record or a rename gazette for G04.', source: dortsDapinglinLandDevelopment.id },
+      { text: 'Those fields remain TBC.', source: dortsDapinglinLandDevelopment.id },
+    ],
   },
   G05: {
     structure: 'underground', engineering: 'G05', exits: 3, openingDate: '11 November 1999',
@@ -393,6 +459,22 @@ const gData: Record<string, GData> = {
     landmarks: '景美郵局; 文山二分局; 臺灣銀行',
     naming: tbc,
     engineeringHistory: 'The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
+    proseSources: [dortsNewStoreArchitecture, dortsJingmeiLandDevelopment],
+    prose: [
+      { text: 'DORTS’s New Store Line architecture account says its underground stations were not designed as a uniform series; each entrance was adapted to the external environment of the station.', source: dortsNewStoreArchitecture.id },
+      { text: 'For Jingmei, the design simplifies the 亭仔腳 form into an entrance element.', source: dortsNewStoreArchitecture.id },
+      { text: 'The source places this approach alongside Gongguan’s garden-architecture roof and octagonal-window forms, showing that the line used different local references from station to station.', source: dortsNewStoreArchitecture.id },
+      { text: 'Jingmei also appears in DORTS’s land-development case record through two separate station sites.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'The first, Jingmei site 交三, was developed by Wenkai Construction and identifies Wenkai Metro Enterprise Building at 218, Section 6, Roosevelt Road.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'DORTS records that building as completed in April of ROC year 90, or 2001, with four basement levels and ten floors above ground.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'The city government retained seven floors of general office space and two basement parking spaces in that project.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'The second, Jingmei site 交四, was invested in by Jiang-Jie Company and is identified as Jiang-Jie Golden Diamond Metro Building at 1 Jingzhong Street.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'That building was completed in May of ROC year 92, or 2003, with two basement levels and ten above-ground floors serving office use.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'The two cases show that the station’s street setting included more than one development interface, while the architecture page records the separate 亭仔腳 entrance vocabulary.', source: dortsNewStoreArchitecture.id },
+      { text: 'Together, the sources connect the entrance design to a documented pattern of station-area development without treating either building as the station itself.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'The consulted pages do not establish a civil contract, final account, complete public-art record or legal rename chronology for G05.', source: dortsJingmeiLandDevelopment.id },
+      { text: 'Those fields remain TBC.', source: dortsJingmeiLandDevelopment.id },
+    ],
   },
   G06: {
     structure: 'underground', engineering: 'G06', exits: 4, openingDate: '11 November 1999',
@@ -436,6 +518,22 @@ const gData: Record<string, GData> = {
     landmarks: '古亭國小',
     naming: tbc,
     engineeringHistory: 'The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
+    proseSources: [dortsNewStoreArchitecture, dortsTaipowerLandDevelopment],
+    prose: [
+      { text: 'DORTS’s New Store Line architecture account describes an underground line whose station entrances respond to the individual conditions of the surrounding city.', source: dortsNewStoreArchitecture.id },
+      { text: 'The station-specific land-development record identifies a joint-development site at Taipower Building station as 卡第兒大樓.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'DORTS says the building was developed by 保強建設開發股份有限公司.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'Its published address is 177, Section 3, Roosevelt Road, in Taipei’s Daan District.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'The building was completed in November of ROC year 94, or 2005.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'The case record gives it three basement levels and sixteen floors above ground, with a mixed residential-and-commercial use.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'The city government retained four office units of about 532.72 ping and no underground parking spaces in the project.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'This is a concrete development record for the station’s urban interface, not an inferred description based only on the street address.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'The New Store architecture source says that the line’s design was not intended to create one new building style everywhere; it used each site’s external conditions to shape the station treatment.', source: dortsNewStoreArchitecture.id },
+      { text: 'The development record therefore helps explain why a station page can include land-use and building-form history even when the station’s own entrance design is not separately published.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'It also distinguishes the station’s underground rail facility from the later or associated above-ground mixed-use building recorded by DORTS.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'The consulted pages do not establish the civil construction package, contractor, final account, station-specific public-art record or rename gazette for G08.', source: dortsTaipowerLandDevelopment.id },
+      { text: 'Those fields remain TBC.', source: dortsTaipowerLandDevelopment.id },
+    ],
   },
   G09: {
     structure: 'underground', engineering: 'G10', exits: 9, openingDate: '24 December 1998',
@@ -514,6 +612,24 @@ const gData: Record<string, GData> = {
     engineeringHistory: 'The Songshan Line connected Ximen to Songshan as an 8.5-kilometre underground project. DORTS divided its construction into DG166–168 design sections and CG590A–C civil-works sections.',
     engineeringHistorySource: dortsSongshan,
     interchange: { label: 'Bannan Line; transfer mode: TBC', lineCode: 'BL' },
+    proseSources: [dortsSongshanArchitectureIntro, dortsSongshanArchitecturePrinciples],
+    prose: [
+      { text: 'DORTS’s Songshan architecture introduction identifies Ximen as the western starting point of the line that continues to Songshan station district.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'It describes the Ximen commercial area as a city centre whose development was historically tied to long-distance rail transport.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'The same corridor account follows the changing commercial geography from traditional cloth shops to the ready-to-wear streets of Wufenpu.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'It also connects Zhonghua Road and Ximending and the city’s ring-market activity to the later night-market and retail activity around Songshan.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'DORTS frames the line as a route through changing generations of consumption and economic activity, with the stations linking memories of older urban places to future urban imagination.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'That framing gives Ximen a corridor role beyond being a transfer point: it is the western urban edge of a line designed to connect distinct commercial centres.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'The article says the seven Songshan Line stations carry different transport functions and sit in different historical, cultural and environmental settings.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'It therefore treats station architecture as a response to local identity rather than as a repeated decorative system.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'The design principles begin with function: passenger circulation should be simple and clear, while space planning should use modular and systematised methods.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'DORTS says those functional requirements take priority even though the station’s architectural form still needs to express the transport system.', source: dortsSongshanArchitectureIntro.id },
+      { text: 'The following design-principles page says the architectural and public-art concepts should be developed together from the planning stage.', source: dortsSongshanArchitecturePrinciples.id },
+      { text: 'It includes entrances, ventilation structures, landscapes, art seating, interior design, floors, walls, ceilings and lighting within one connected design vocabulary.', source: dortsSongshanArchitecturePrinciples.id },
+      { text: 'The principles also require attention to passenger movement, visual experience, public safety, material durability and maintenance.', source: dortsSongshanArchitecturePrinciples.id },
+      { text: 'The full pages provide this corridor and design context but do not establish a G12-specific contract, final account, artwork record or rename chronology.', source: dortsSongshanArchitecturePrinciples.id },
+      { text: 'Those fields remain TBC.', source: dortsSongshanArchitecturePrinciples.id },
+    ],
   },
   G13: {
     structure: 'underground', engineering: 'G14', exits: 3, openingDate: '15 November 2014',

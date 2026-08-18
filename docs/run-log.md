@@ -8802,3 +8802,41 @@ complete and Part 1 proceeds to the next line.
 
 Final gates for this correction: cite, research, claims, fresh verify/build,
 explicit npm test and diff check must pass before commit and push.
+
+# Run 31 — Part 1 Green completion, G04, G05, G08, G12, 18 August 2026
+
+The residual Green audit found full DORTS primary material for all four pages.
+G04 Dapinglin gained 252 sourced words on the station joint-development
+building commissioned by the Ministry of the Interior, its address, completion
+and building form. G05 Jingmei gained 262 words on the simplified 亭仔腳
+entrance and two station-area development cases. G08 Taipower Building gained
+237 words on 卡第兒大樓, its investor, address, completion, mixed-use form and
+city-retained premises. G12 Ximen gained 299 words on its western Songshan Line
+corridor role and the line’s architectural/public-art principles. Batch total:
+1,050 words. This completes sourced prose for all 20 Green stations, including
+the two prior zero-word corrections recorded in the preceding batch.
+
+Primary URLs cited:
+
+- https://web.metro.taipei/pages2026/WebStation/036/1
+- https://web.metro.taipei/pages2026/WebStation/037/1
+- https://web.metro.taipei/pages2026/WebStation/040/1
+- https://web.metro.taipei/pages2026/WebStation/086/1
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page129.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page130.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html
+
+Contradicted the corpus: the prior zero-word results for G05, G08 and G12 were
+superseded by full DORTS land-development and Songshan architecture pages. No
+conflicting value required publication in this batch; Jingmei’s two development
+records are separate sites, not competing measurements. No station
+colour-prefix audit applies. Civil packages, final accounts, complete artwork
+records, rename gazettes and paid/street transfer classifications remain TBC
+where the fetched primary pages do not publish them.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit
+npm test and diff check must pass before commit and push. Next: audit the next
+line in Part 1, starting with Bannan.

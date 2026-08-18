@@ -272,7 +272,7 @@ returned the following public-art evidence, which was added to the overlay.
 | G01 Xindian | 0 words in the prior batch; superseded by the correction below | https://web.metro.taipei/pages2026/WebStation/033/1 |
 | G03A Xiaobitan | 313 sourced words | https://web.metro.taipei/pages2026/WebStation/032/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page248.html; https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F |
 | G04 Dapinglin | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/036/1 |
-| G05 Jingmei | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/037/1 |
+| G05 Jingmei | 0 words in the prior batch; superseded by the completion batch below | https://web.metro.taipei/pages2026/WebStation/037/1 |
 | G06 Wanlong | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/038/1 |
 | G07 Gongguan | 0 words in the prior batch; superseded by the correction below | https://web.metro.taipei/pages2026/WebStation/039/1 |
 
@@ -306,10 +306,10 @@ installation-planning page and Songshan architecture pages 66–67 were checked.
 
 | Station | Result | Full primary pages |
 |---|---|---|
-| G08 Taipower Building | 0 words after source-family search; the checked pages returned current facilities, exits and route chronology already represented in facts/specs | https://web.metro.taipei/pages2026/WebStation/040/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
+| G08 Taipower Building | 0 words in the prior batch; superseded by the completion batch below | https://web.metro.taipei/pages2026/WebStation/040/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
 | G09 Guting | 293 sourced words; full page supports entrance architecture, initial public-art title and dedicated wiring | https://web.metro.taipei/pages2026/WebStation/041/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
 | G10 Chiang Kai-Shek Memorial Hall | 275 sourced words; full page supports architectural references, three initial public-art titles and different wiring arrangements | https://web.metro.taipei/pages2026/WebStation/042/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
-| G12 Ximen | 0 words after source-family search; the checked pages returned current facilities, exits, interchange and shared Songshan route facts already represented in facts/specs | https://web.metro.taipei/pages2026/WebStation/086/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=C974A7C467B035B8; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
+| G12 Ximen | 0 words in the prior batch; superseded by the completion batch below | https://web.metro.taipei/pages2026/WebStation/086/1; https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=C974A7C467B035B8; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html |
 | G14 Zhongshan | 272 sourced words; full page supports source-era label, former railway corridor, cultural/commercial context, Happy Transfer theme and public-space treatment | https://web.metro.taipei/pages2026/WebStation/053/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html |
 | G15 Songjiang Nanjing | 300 sourced words; full pages support source-era label, district context, platform/exit conflict, Urban Multitude theme and entrance-language continuation | https://web.metro.taipei/pages2026/WebStation/132/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html |
 
@@ -421,6 +421,69 @@ The correction explicitly supersedes the earlier G01/G07 zero-word result. The
 earlier search had stopped at current TRTC facilities, route chronology and the
 wrongly scoped public-art check; the re-fetched full DORTS overview and technical
 pages contain the station-specific records above.
+
+### Station-prose completion — G04, G05, G08 and G12, 18 August 2026
+
+The residual Green audit repeated Traditional-Chinese searches for `大坪林站 景美站
+台電大樓站 西門站 車站建築 公共藝術`, `新店線 土地開發 大坪林 景美 台電大樓`
+and `松山線 西門站 建築設計`. Search was used only to locate pages; the full
+DORTS pages were fetched and read. The full TRTC pages for G04, G05, G08 and
+G12 were also checked. The earlier zero-word result for G05, G08 and G12 is
+superseded by the land-development and Songshan architecture pages found in
+this audit. G04 was also covered by the same land-development family.
+
+| Station | Result | Full primary pages |
+|---|---|---|
+| G04 Dapinglin | 252 sourced words; station joint-development building, commissioning body, address, completion and building form | https://web.metro.taipei/pages2026/WebStation/036/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page130.html |
+| G05 Jingmei | 262 sourced words; 亭仔腳 entrance treatment and two station-area development cases | https://web.metro.taipei/pages2026/WebStation/037/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page129.html |
+| G08 Taipower Building | 237 sourced words; station-area mixed-use development, investor, address, completion, building form and city-retained premises | https://web.metro.taipei/pages2026/WebStation/040/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html |
+| G12 Ximen | 299 sourced words; western Songshan Line corridor role and full-line architectural/public-art principles | https://web.metro.taipei/pages2026/WebStation/086/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html |
+
+**G04 evidence — DORTS, PRIMARY, High confidence.** The full `捷運土地開發
+實務` page says: `臺北捷運新店線大坪林站（捷四、五）基地之土地開發大樓是由內政部委辦興建`;
+it gives 198 and 200, Section 3, Beixin Road, completion in ROC 94 June,
+three basement levels and seventeen floors above ground for office use. The
+full New Store architecture page says the line is underground and that station
+forms respond to individual surroundings. These establish the development
+interface and the design context; the civil contract, final account and
+station-specific art record remain TBC.
+
+**G05 evidence — DORTS, PRIMARY, High confidence.** The full New Store
+architecture page says `景美站的地面車站以簡化的亭仔腳造形元素為出入口設計元素`.
+The full land-development page records Jingmei 交三 as Wenkai Metro Enterprise
+Building at 218, Section 6, Roosevelt Road, completed in ROC 90 April as a
+four-basement, ten-floor office building, and Jingmei 交四 as Jiang-Jie Golden
+Diamond Metro Building at 1 Jingzhong Street, completed in ROC 92 May as a
+two-basement, ten-floor office building. It also records the city’s retained
+space in the first case. These are two separate development sites, not one
+conflicting building measurement.
+
+**G08 evidence — DORTS, PRIMARY, High confidence.** The full land-development
+page says: `臺北捷運新店線台電大樓站（交十三）基地之「卡第兒大樓」由保強建設開發股份有限公司投資興建`;
+it gives 177, Section 3, Roosevelt Road, completion in ROC 94 November, three
+basement levels, sixteen floors above ground, mixed residential/commercial use,
+and four city-retained office units of about 532.72 ping with no basement
+parking. The full New Store architecture page supplies the station-by-station
+environmental design principle. No civil package, final account or complete
+art record was found.
+
+**G12 evidence — DORTS, PRIMARY, High confidence.** The full Songshan
+architecture introduction says `捷運松山線由西門站到松山站` and describes Ximen’s
+rail-linked commercial centre, its changes from traditional cloth shops toward
+Wufenpu’s ready-to-wear district, and the line’s connection of changing urban
+consumption economies. The same page says station functions and contexts differ
+and that circulation should be simple, clear, modular and systematised. Page 64
+records the integrated architectural/public-art vocabulary for entrances,
+ventilation structures, landscapes, seating, interior design, floors, walls,
+ceilings and lighting, with safety and maintenance considered. These establish
+the corridor role and design framework, but not a G12-specific contract, final
+account, artwork record or rename chronology.
+
+The full pages therefore corrected three prior zero-word results and added one
+previously unrecorded development source for G04. No colour-prefix audit applies
+to station pages. Remaining station-specific contracts, final accounts, complete
+artwork records, rename gazettes and paid/street transfer classifications remain
+TBC where the fetched primary pages do not publish them.
 
 ## Conflicts
 
