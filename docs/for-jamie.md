@@ -8,7 +8,7 @@ Former-name action dates without gazettes remain TBC; no slash-notation rename w
 Incidents preserves the Nari date conflict and 11-location/9-span earthquake conflict.
 Part 3a/3b complete for brown/red; colour-red was fixed from unreachable (routing was hardcoded to brown-only) to live, and a false-confirmed-MRT-join bug affecting every non-brown route was fixed.
 No colour-yellow feeder class exists at ebus.gov.taipei; docs/bus-architecture.md corrected. Circular Line ("Yellow Line") is NTMC-operated, outside TRTC's colour scheme.
-Part 3c: colour-green (17/17) and colour-orange (18/18) built. colour-blue (39) and trunk (19) remain.
+Part 3c: colour-green, colour-orange and colour-blue built (17+18+38). One TDX blue record was reclassified: 藍海2線先導公車 starts with 藍 but is an official 捷運先導公車 pilot service, not a Bannan feeder; excluded, group corrected 39->38. Only trunk (19) remains.
 Part 4: 61 TDX operator records and 1,051 route associations now have generated pages.
 Bus model and depot indexes are present but TBC because the TDX pull has no such fields.
 Seven rail model pages and eight rail depot pages already exist; no rail depot gap was found.

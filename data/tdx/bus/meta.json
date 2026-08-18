@@ -221,7 +221,7 @@
   "fetchedAt": "2026-08-15T04:38:00.767Z",
   "normalized": {
     "groupCounts": {
-      "colour-blue": 39,
+      "colour-blue": 38,
       "colour-brown": 20,
       "colour-green": 17,
       "colour-orange": 18,
@@ -238,7 +238,7 @@
       "series-900s": 13,
       "special-shuttle": 42,
       "trunk": 19,
-      "unclassified": 13
+      "unclassified": 14
     },
     "operatorCount": 61,
     "railJoinCount": 3738,

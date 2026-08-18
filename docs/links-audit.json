@@ -1,5 +1,5 @@
 {
-  "pages": 422,
+  "pages": 461,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -258,6 +258,706 @@
       "page": "/bus/operators/zhongxingbus-1owb0k7/",
       "name": "Zhonghe",
       "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-10/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-10/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-10/",
+      "name": "Taipei City Hall",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-15/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-15/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "Jiangzicui",
+      "href": "/rail/stations/bl09/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-17/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-18/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-18/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-18/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-18/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-18/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-1/",
+      "name": "Sanhe Junior High School",
+      "href": "/rail/stations/o51/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-1/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-1/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-1/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-1/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "Xianse Temple",
+      "href": "/rail/stations/o16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "Fu Jen University",
+      "href": "/rail/stations/o19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "Danfeng",
+      "href": "/rail/stations/o20/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "Wende",
+      "href": "/rail/stations/br18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-20/",
+      "name": "Kunyang",
+      "href": "/rail/stations/bl21/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-21-11dc6r7/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-21-11dc6r7/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-21-3cqoqf/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-21-3cqoqf/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Nangang Software Park",
+      "href": "/rail/stations/br23/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Sanchong",
+      "href": "/rail/stations/o15/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Houshanpi",
+      "href": "/rail/stations/bl20/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Kunyang",
+      "href": "/rail/stations/bl21/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-22/",
+      "name": "Guohua",
+      "href": "/rail/stations/lb10/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-23/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-23/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-25/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-25/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-26/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-27/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-27/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-27/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Taipower Building",
+      "href": "/rail/stations/g08/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Longshan Temple",
+      "href": "/rail/stations/bl10/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-29/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-29/",
+      "name": "Longshan Temple",
+      "href": "/rail/stations/bl10/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-29/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-31/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-31/",
+      "name": "Jiangzicui",
+      "href": "/rail/stations/bl09/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-31/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-32/",
+      "name": "Wende",
+      "href": "/rail/stations/br18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-32/",
+      "name": "Far Eastern Hospital",
+      "href": "/rail/stations/bl05/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-32/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-33/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-33/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-33/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-35/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-35/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-36/",
+      "name": "Huzhou",
+      "href": "/rail/stations/br21/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-36/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-36/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-36/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "Danfeng",
+      "href": "/rail/stations/o20/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "Huilong",
+      "href": "/rail/stations/o21/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "Far Eastern Hospital",
+      "href": "/rail/stations/bl05/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-37/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-38/",
+      "name": "Far Eastern Hospital",
+      "href": "/rail/stations/bl05/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-38/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-38/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-38/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-39/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-40/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-40/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-1vvygl7/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-1vvygl7/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-1vvygl7/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-1vvygl7/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-3uzeni/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-3uzeni/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-3uzeni/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-41-3uzeni/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-43-1c3c509/",
+      "name": "Yongning",
+      "href": "/rail/stations/bl02/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-43-1c3c509/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-43-1c3c509/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-43-cpmwhl/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-43-cpmwhl/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-44-1b76ti2/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-44-1b76ti2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-44-1tw6b27/",
+      "name": "Yongning",
+      "href": "/rail/stations/bl02/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-44-1tw6b27/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-44-1tw6b27/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "Yongning",
+      "href": "/rail/stations/bl02/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "Tucheng",
+      "href": "/rail/stations/bl03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "Mazutian",
+      "href": "/rail/stations/lb02/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "Changshoushan",
+      "href": "/rail/stations/lb03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-45/",
+      "name": "Hengxi",
+      "href": "/rail/stations/lb04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-46/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-46/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-46/",
+      "name": "Mazutian",
+      "href": "/rail/stations/lb02/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-46/",
+      "name": "Changshoushan",
+      "href": "/rail/stations/lb03/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-46/",
+      "name": "Hengxi",
+      "href": "/rail/stations/lb04/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-50/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-50/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-50/",
+      "name": "Guohua",
+      "href": "/rail/stations/lb10/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-51/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-51/",
+      "name": "Nangang Software Park",
+      "href": "/rail/stations/br23/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-51/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-51/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/bus/routes/colour-brown/brown-10/",

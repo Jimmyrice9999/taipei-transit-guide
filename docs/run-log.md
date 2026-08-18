@@ -10488,3 +10488,68 @@ untouched. Existing user-owned dirty files (`probes/`) remain unstaged.
 Next: colour-blue (39 routes), then trunk (19). `blue-2-1xzokkx` (藍海2線
 先導公車) remains flagged for extra scrutiny — see the note at the end of the
 colour-green section above.
+
+## Part 3c continued — colour-blue, all 38 routes plus one data correction, checked 19 August 2026
+
+The false-prefix audit for this group found a real classifier miss, not just a
+content-authoring judgement call. All 39 route names in the committed TDX
+`colour-blue` group start with `藍`, so none were caught by the audits used
+for red/green/orange (which only had to check names that *didn't* match the
+leading-colour regex). Checking each of the 39 against the fetched
+`捷運藍線接駁公車` catalogue found only 38 labels — `藍海2線先導公車` (route
+17958, English name `Lan Hai2`) is absent. Fetching the catalogue again with
+a direct question about that name found it filed under a separate heading,
+`捷運先導公車` ("MRT Pioneer Bus"). Two more signals corroborate the
+exclusion: its TDX `subRoutes[].names.en` is `BS2`, not the `BL<number>`
+pattern every genuine blue route uses; and its own unconfirmed
+`normalized-name` rail candidate points at `R28` Tamsui — a Red Line station,
+nowhere on the Bannan Line.
+
+**Data correction made, not just a content omission.** `data/tdx/bus/
+routes.json` and `data/tdx/bus/meta.json` were hand-patched: route
+`bus-17958-zsgxuw`'s `group` changed `colour-blue` → `unclassified` (group
+counts 39→38 / 13→14). `scripts/fetch-bus-tdx.mjs` gained a
+`COLOUR_PREFIX_OVERRIDES` table keyed by exact route name, checked before the
+mechanical colour-prefix regex, so a future `npm run tdx:bus` re-fetch
+reproduces this classification instead of silently reverting it — the same
+durability concern that motivated Run 24/25's `CATALOGUED_LINES` fix. This
+route is excluded from `colour-blue`'s 38 content pages and is not linked to
+the Bannan Line anywhere on the site. Full detail in
+docs/research/bus/routes/colour-blue.md.
+
+Given the group's dynamic index page lists every route the *data* assigns to
+a group regardless of which content files exist, a partial `colour-blue`
+build would have produced real dead links from the group index the moment the
+routing fix from earlier in this run made the group page live — unlike red's
+original seven-batch build, which was safe only because the whole section was
+unreachable at the time. So all 38 routes were written before the gate ran
+once, rather than in the usual four-to-six-route batches; this is one commit
+for the whole group rather than several.
+
+All 38 official current-service schedule pages were fetched in full. Six
+sibling-suffix pairs share termini/origin and operator on separate TDX
+records and are published as findings, not merged: 藍7/藍7副, 藍18 (two
+listed contacts on one record), 藍21/藍21副, 藍41/藍41延和, 藍43/藍43延南天母,
+藍44/藍44延.
+
+Two more authoring instances of the same backtick-around-Chinese bug from the
+colour-orange batch were caught and fixed before the gate (福隆路-style, this
+time 藍海2線先導公車 in `blue-2-11ztfes.md` and 延南天母 in
+`blue-43-1c3c509.md`), by grep-sweeping every route file in the batch for a
+backtick span containing a CJK character before running `npm test`.
+
+No confirmed MRT stop-ID joins were curated for colour-blue (see the
+railJoins fix earlier in this run); every page shows zero confirmed joins
+even at termini named after stations (捷運市政府站, 捷運永寧站, 捷運頂埔站,
+捷運昆陽站, 捷運永安市場站, 捷運劍南路站, 捷運台大醫院站, 捷運新埔站, 捷運板
+橋站).
+
+Gates: `npm run cite` clean; fresh `npm run build` clean (459 pages, no
+missing glyphs after `npm run fonts`); `npm run verify` clean; `npm test`
+clean (185/185, 19 fact cross-checks). Claims baseline and its test
+untouched. Existing user-owned dirty files (`probes/`) remain unstaged.
+
+Next: trunk (19 named 幹線 routes) — the last group in this run's scope. No
+colour word appeared in any trunk name during the earlier full audit, so no
+false-prefix exclusion is expected there, but the check will be repeated
+properly when that group is built.

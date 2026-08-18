@@ -26,6 +26,26 @@ const DATASETS = [
 
 const COLOURS = { 紅: 'colour-red', 藍: 'colour-blue', 綠: 'colour-green', 棕: 'colour-brown', 橘: 'colour-orange', 黃: 'colour-yellow' }
 
+/**
+ * Route names that start with a colour character but are verified NOT to
+ * belong to that colour's MRT-feeder class — the mechanical prefix match
+ * below cannot tell a feeder from a same-colour-initial named service, so a
+ * false positive here has to be listed by hand once someone checks it
+ * against the official catalogue.
+ *
+ * `藍海2線先導公車` (route 17958 / NWT17958) starts with 藍 and would
+ * otherwise land in `colour-blue`, but ebus.gov.taipei's own category page
+ * files it under `捷運先導公車` (MRT Pioneer Bus), a distinct catalogue
+ * heading from `捷運藍線接駁公車`. Its English code is `BS2`, not the `BL`
+ * pattern every genuine blue route uses, and its own (unconfirmed,
+ * normalized-name) rail candidate points at R28 Tamsui — a Red Line
+ * station — not anywhere on the Bannan Line. Checked 19 August 2026; see
+ * docs/research/bus/routes/colour-blue.md.
+ */
+const COLOUR_PREFIX_OVERRIDES = {
+  藍海2線先導公車: 'unclassified',
+}
+
 function env() {
   const result = { ...process.env }
   const file = path.join(ROOT, '.env.local')
@@ -120,6 +140,7 @@ function group(row, cityNames) {
   const en = text(row.RouteName?.En ?? row.RouteName?.en)
   const serviceName = zh || en || routeId
   const identity = `${serviceName} ${en}`.trim()
+  if (zh && COLOUR_PREFIX_OVERRIDES[zh]) return COLOUR_PREFIX_OVERRIDES[zh]
   const colour = identity.match(/^\s*(紅|藍|綠|棕|橘|黃)/)?.[1]
   if (colour) return COLOURS[colour]
   if (/^\s*(市民小巴|小巴|小\s*\d)/.test(identity)) return 'minibus'
