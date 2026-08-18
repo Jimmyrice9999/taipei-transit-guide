@@ -9539,8 +9539,9 @@ traction-power, inspection or quality-award families. The widened audit fetched
 each new page in full; the K01/K02 progress page was fetched directly after a
 web-reader cache miss. No search snippet was used.
 
-Final body-prose counts: K01 415, K02 432, K03 338, K04 338, K05 365 and K06
-346; batch total 2,234 words. K02 retains the earlier sourced art sentence.
+Final body-prose counts, excluding rendered citation markers: K01 373, K02
+387, K03 299, K04 299, K05 323 and K06 307; batch total 1,888 words. K02
+retains the earlier sourced art sentence.
 
 Primary URLs fetched in full and cited:
 
