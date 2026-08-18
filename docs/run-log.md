@@ -7974,32 +7974,92 @@ next run should start Part 3a: the 16 colour-brown routes still TBC on history,
 then Part 3b's single colour-red group of 40 routes. Existing user-owned dirty
 files remain unstaged.
 
-# Run 30 — Part 3, bus colour-brown pilot, 17 August 2026
+# Run 30 — Part 3, bus route groups, 17–18 August 2026
 
-Part 3a is complete. The 16 history-TBC routes were checked in four four-route
-batches, with current service pages and the primary adjustments that survived
-full-page fetching. The four batches added 485, 497, 464 and 441 whitespace-
-delimited body tokens respectively (1,887 across the 16 route pages); TBC was
-retained for missing opening, corridor-rationale and operator-change records.
+Part 3a completed the 20-page colour-brown pilot. Its 16 history-TBC routes
+were checked in four four-route batches, adding 485, 497, 464 and 441
+whitespace-delimited body tokens respectively (1,887 across those pages).
+Current service and the following primary history adjustments survived full
+page fetching; missing opening, corridor-rationale and operator-change records
+remain TBC.
 
-| Batch | Routes | Sourced result | Primary URL set |
+| Batch | Routes; body tokens | Sourced result | Full primary pages fetched |
 |---|---|---|---|
-| 1 | 棕1, 棕2, 棕3, 棕5 | BR1 shortening before 2009; BR5’s 2012 stop rename/addition; BR2/BR3 current pages | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000100; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000300; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000500; https://dot.gov.taipei/News_Content.aspx?n=230A79C0F27D6B8F&s=4232D242EAA4B05A; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf |
-| 2 | 棕6, 棕7, 棕7建業路, 棕11 | Current route pages; BR11/副 2013 stop cancellation | https://ebus.gov.taipei/EBus/VsSimpleMap?gb=1&routeid=0114000600; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0414000700; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=17940&sec=1; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001100; https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf |
-| 3 | 棕11副, 棕12, 棕13, 棕15 | BR11副 2012 extension; BR12 2012 endpoint rename; BR13 2012 service reduction; BR15 2018/2022 stop changes | https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001110; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114001300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001500; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm; https://www-ws.gov.taipei/001/Upload/public/Attachment/252117392922.pdf; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf; https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/57acc21d-fdf2-4386-a9ab-cce8040fbae3.pdf; https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/42ca36d2-ba63-4cf6-aed5-8aa65218430c.pdf |
-| 4 | 棕18, 棕19, 棕21, 棕22 | BR21 newly opened 16 July 2012; current BR18/BR21 variants; no additional conflicts | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001800; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16153&sec=0; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114002100; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16747&sec=0; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm |
+| Brown 1; `e95766c` | 棕1, 棕2, 棕3, 棕5; 485 | BR1 shortening before 2009; BR5’s 2012 stop rename/addition; current BR2/BR3 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000100; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000300; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000500; https://dot.gov.taipei/News_Content.aspx?n=230A79C0F27D6B8F&s=4232D242EAA4B05A; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf |
+| Brown 2; `3e2885b` | 棕6, 棕7, 棕7建業路, 棕11; 497 | Current pages; BR11/副 2013 stop cancellation | https://ebus.gov.taipei/EBus/VsSimpleMap?gb=1&routeid=0114000600; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0414000700; https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf |
+| Brown 3; `af76c69` | 棕11副, 棕12, 棕13, 棕15; 464 | BR11副 2012 extension; BR12 endpoint rename; BR13 service reduction; BR15 2018/2022 stop changes | https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001110; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114001300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001500; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm; https://www-ws.gov.taipei/001/Upload/public/Attachment/252117392922.pdf; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf |
+| Brown 4; `126dcfe` | 棕18, 棕19, 棕21, 棕22; 441 | BR21 newly opened 16 July 2012; current BR18/BR21 variants | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001800; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16153&sec=0; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114002100; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16747&sec=0; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm |
 
-Conflicts remain published rather than resolved: the 棕20 schedule endpoint
-versus its full stop sequence; TDX’s separate 棕20預 record versus the official
-catalogue’s 棕20 presentation; and the TDX 棕7綠野香坡 identity versus the full
-official notice that former 812 was shortened and renumbered 三鶯2線. No batch-4
-primary disagreement was found. No images were fetched, no individual bus
-routes were added to global navigation, and neither the claims baseline nor a
-checker was changed.
+Brown conflicts remain published: the 棕20 schedule endpoint versus its full
+stop sequence; TDX’s separate 棕20預 record versus the official catalogue’s 棕20
+presentation; and the TDX 棕7綠野香坡 identity versus the full official notice
+that former 812 was shortened and renumbered 三鶯2線. No batch-4 primary
+disagreement was found.
 
-Part 3a’s four commits were pushed to `main`: `e95766c`, `3e2885b`, `af76c69`
-and this batch’s commit. `npm run cite`, `npm run research`, `npm run verify`
-and the full test suite are green; the suite is 185/185. Part 3b is next: audit
-the 40 colour-red routes, document exact false colour-prefix exclusions, then
-build red in six-route batches with a four-route final batch. Remaining bus
-groups are not to be built in this run.
+Part 3b completed the exact 40-record `colour-red` TDX group in seven batches.
+The pages added 366, 381, 421, 417, 472, 441 and 326 body tokens respectively,
+2,824 across 40 route pages. Every route has current structural data from TDX,
+the official catalogue class, and a full current official route page or a
+published full-page fallback. The red catalogue itself was fetched at
+https://ebus.gov.taipei/ebus?ct=all; its heading is `捷運紅線接駁公車`.
+
+| Batch | Routes; body tokens | Current primary evidence and URL set | Result / gap |
+|---|---|---|---|
+| Red 1; `7c599a3` | 紅10區, 紅10, 紅12, 紅13, 紅15, 紅19; 366 | https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111001020; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111001000; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111001200; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411001300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111001500; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111001900 | Current termini, spans, fare and contacts; 紅19 school-day return variant; history/rationale/operator changes TBC. |
+| Red 2; `c2e0ee5` | 紅2, 紅22, 紅23, 紅25區, 紅25, 紅26; 381 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000200; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002200; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111002520; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0111002500; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002600 | Current timed detours/late service on 紅22 and no-fisherman-wharf short working on 紅26 are sourced; histories TBC. |
+| Red 3; `3630d37` | 紅27, 紅28, 紅28直, 紅29, 紅3, 紅30; 421 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002700; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002800; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002830; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111002900; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003000 | Current holiday/headway, university-calendar, hospital short-working and Saturday-only notes are sourced; histories TBC. |
+| Red 4; `902aa40` | 紅31, 紅33, 紅35, 紅35區, 紅36, 紅37行經海洋都心社區; 417 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003100; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111003300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003500; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003520; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411003600; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411003790 | Current service, fares and contacts are sourced. The 紅37 ocean-community map URL timed out; its full StopsOfRoute page was fetched and used. Histories TBC. |
+| Red 5; `ede2641` | 紅37, 紅38, 紅39, 紅5, 紅50, 紅51; 472 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003700; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003800; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003900; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111000500; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111005000; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411005100 | Current 淡水商工, 文化大學 and 復興北路 variants and service spans are sourced; histories TBC. |
+| Red 6; `fe6d09b` | 紅53, 紅55, 紅55區, 紅57, 紅68預, 紅68; 441 | https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411005300; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111005500; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111005520; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111005700; https://ebus.gov.taipei/ebus?ct=all; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111006800 | Current holiday and academic-calendar variants are sourced. TDX has 紅68預, but the official catalogue has 39 labels and omits it; the full official page is labelled 紅68 and contains appointment trials, not a separate 紅68預 page. Relationship and histories TBC. |
+| Red 7; `60ce64c` | 紅3區, 紅7區, 紅7, 紅9; 326 | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000320; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000720; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000700; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000900 | Exact TDX audit found these four remaining records; current calendar, headway and stop notes are sourced. Histories/rationales/operator changes TBC. |
+
+The red false-prefix audit checked all 1,051 normalized route names containing
+`紅`: 42 hits. All 40 `colour-red` records were accepted. The two excluded
+records are `石門-捷運紅樹林站` / route 17975, where `紅樹林` is a place name,
+and `臺北觀光巴士紅線` / route 17800, where `紅線` is a descriptive sightseeing
+service. These exclusions and the catalogue’s 39-versus-TDX’s 40 records are
+published in the research file; no colour-prefix match was silently admitted.
+
+No red route history, original corridor rationale or dated operator transfer
+was promoted without a primary record. The route pages leave route length,
+normalized service-span and normalized headway specs TBC where TDX does not
+publish them; current timetable prose remains cited to the official eBus page.
+No individual route was added to global navigation, and no image was fetched.
+
+## Part 3c — remaining groups, not built
+
+There are 991 routes in the 16 remaining TDX groups. The estimate below is for
+the same minimum research shape used here: one full official current-service
+page and one route research record per route, plus roughly one or two targeted
+primary history pages/searches per route. It is a workload estimate, not a
+claim that every route has a discoverable history.
+
+| Remaining group | Routes | Estimated current-page fetches | Estimated history-page fetches |
+|---|---:|---:|---:|
+| colour-blue | 39 | 39 | 39–78 |
+| colour-green | 17 | 17 | 17–34 |
+| colour-orange | 18 | 18 | 18–36 |
+| minibus | 48 | 48 | 48–96 |
+| new-taipei | 561 | 561 | 561–1,122 |
+| series-0-99 | 33 | 33 | 33–66 |
+| series-100s | 6 | 6 | 6–12 |
+| series-200s | 92 | 92 | 92–184 |
+| series-300s | 16 | 16 | 16–32 |
+| series-500s | 21 | 21 | 21–42 |
+| series-600s | 49 | 49 | 49–98 |
+| series-700s | 4 | 4 | 4–8 |
+| series-900s | 13 | 13 | 13–26 |
+| special-shuttle | 42 | 42 | 42–84 |
+| trunk | 19 | 19 | 19–38 |
+| unclassified | 13 | 13 | 13–26 |
+| **Total** | **991** | **991** | **991–1,982** |
+
+The 60 built bus pages are 5.7% of the 1,051-route snapshot. Part 3 is
+complete at the requested stop: brown and red are built; the remaining groups
+were estimated only and not built.
+
+All eleven Part 3 commits were pushed to `main`: brown `e95766c`, `3e2885b`,
+`af76c69`, `126dcfe`; red `7c599a3`, `c2e0ee5`, `3630d37`, `902aa40`,
+`ede2641`, `fe6d09b`, `60ce64c`. The final gates are green: citations clean,
+research clean, static verification clean, no missing glyphs, and 185/185
+tests. The claims baseline, tests and checkers were not changed.
