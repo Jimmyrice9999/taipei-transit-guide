@@ -10018,7 +10018,7 @@ contradictions); `git diff --check` clean. Claims baseline and its test were
 not changed.
 
 Next: commit and push this O17–O21/O50 batch, then complete O51–O54/R25–R27.
-\n+# Run 42 — Part 1 Zhonghe-Xinlu O51–O54 and Tamsui-Xinyi R25–R26, 18 August 2026
+# Run 42 — Part 1 Zhonghe-Xinlu O51–O54 and Tamsui-Xinyi R25–R26, 18 August 2026
 
 Audited before editing. This exact six-page batch widened O51–O54 with the
 full DORTS Luzhou station architecture pages and general station-architecture
@@ -10074,4 +10074,71 @@ claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
 cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
 its test were not changed.
 
-Next: complete R27 and LB01–LB05 as the next six-page batch.
+Next: complete LB06–LB11 as the next six-page batch.
+
+# Run 43 — Part 1 R27 and Sanying LB01–LB05, 18 August 2026
+
+Audited before editing. This exact six-page batch widened R27 with full DORTS
+ground-station, former-railway-corridor, station-design and public-realm pages,
+the New Taipei Hongshulin Nature Reserve page, and the official Danhai light-
+rail announcement. LB01–LB05 used full New Taipei DORTS route, public-art,
+engineering, interchange, construction-notice, architecture and Mazutian
+station-area development records. No research appendix was used.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| R27 | 379 | DORTS route, ground-station, corridor-planning, design-goals, public-realm, Hongshulin reserve and New Taipei Danhai records |
+| LB01 | 416 | DORTS route, public-art index and documentary, engineering, Dingpu interchange, construction notice and architecture records |
+| LB02 | 403 | DORTS route, public-art index and documentary, engineering and Mazutian station-area development records |
+| LB03 | 352 | DORTS route, public-art index and 2025/2026 announcements, LB03 documentary and engineering record |
+| LB04 | 328 | DORTS route, public-art index and 2025/2026 announcements and engineering record |
+| LB05 | 309 | DORTS route, public-art index and 2025/2026 announcements and engineering record |
+
+Sources fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A&s=A60BB323F07BC768
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+- https://www.hrcm.ntpc.gov.tw/Zone/Assets/%E9%87%91%E8%89%B2%E6%B0%B4%E5%B2%B8/%E7%B4%85%E6%A8%B9%E6%9E%97%E8%87%AA%E7%84%B6%E4%BF%9D%E7%95%99%E5%8D%80
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=3cc952025c4b057703de77232dc8a188&id=e8ca970cde5c00e1
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_art
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpD9odLK7
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/0g4d6NKQd5Db
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/eoPZBOnJmgVl?page=1
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/O6JmaQ3gmqya?page=1
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/nalZ4Evzmzeo?page=5
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/7PVdqJR7ZGLb?page=2
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/XlR276bDmV8v
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+
+Sourced: R27 now has full ground-section, former-railway-corridor, public-
+realm, ecological-access and Danhai-LRT context. LB01 has the vertical Dingpu
+transfer, direct escalators/lifts, urban-greenhouse design, interchange art and
+line-level construction controls. LB02 has the AR-linked passage-wall record
+and the Mazutian station-area development scale and public-benefit programme.
+LB03 has its artist, passage-wall work and ecological setting. LB04 and LB05
+have independently confirmed Time Journey assignments and the documented
+Sanying corridor engineering context.
+
+Conflicts: none in this batch. The 2025 and 2026 DORTS announcements agree on
+the LB01–LB05 public-art assignments. The Mazutian figures measure a signed
+station-area development contract, not a civil station contract or final
+account; that distinction is published rather than reconciled.
+
+TBC after the fetched source families: R27’s paid-area versus street transfer,
+station-specific architect, civil contract, final account, art register and
+rename; LB01–LB05 station-specific civil contracts, final accounts, individual
+architects, complete art costs and confirmed feeder-bus stop-ID joins. LB04 and
+LB05 have no artist or medium in the fetched index/announcement material.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run build` clean (519 pages, no missing glyphs) after regenerating the LB
+and R font subsets; `npm run verify` clean (links, accessibility, facts,
+claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
+cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
+its test were not changed.

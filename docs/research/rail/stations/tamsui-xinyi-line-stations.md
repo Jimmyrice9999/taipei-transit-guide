@@ -1297,6 +1297,53 @@ compared with the DORTS station material for the stations where both publish a
 count. Differences between TDX’s fields and the operator’s facility text are
 field-coverage differences, not competing values.
 
+## Run 43 — R27 Hongshulin primary-source expansion, 2026-08-18
+
+This pass fetched the complete DORTS route page, the DORTS engineering-book
+pages on ground stations, former railway corridors, station design and public
+realm, the Hongshulin Nature Reserve page, and New Taipei’s official Danhai
+light-rail announcement. No research appendix was used.
+
+### What is established
+
+- **Ground-station context.** DORTS’s full engineering-book page defines the
+  ground-station section as Fuxinggang–Hongshulin, explains the economy of
+  ground construction and records its surface-level relationship with views,
+  movement and barriers. Primary, high confidence:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page33.html
+- **Former railway corridor and demand.** DORTS’s full corridor page describes
+  the former TRA right-of-way, station land planning and the northern section’s
+  demand and development context. Primary, high confidence:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+- **Station design and public realm.** DORTS’s full design pages describe a
+  shared line image, station-specific identity, integration with the
+  environment and durable modern materials; the public-realm page describes
+  the inherited corridor as a linear park for walking and cycling with planting
+  and small plazas. Primary, high confidence:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html and
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+- **Reserve access.** The full New Taipei Hongshulin Nature Reserve page places
+  the reserve in the Golden Waterfront area and directs public transport users
+  to Hongshulin station exit 2. Primary, high confidence:
+  https://www.hrcm.ntpc.gov.tw/Zone/Assets/%E9%87%91%E8%89%B2%E6%B0%B4%E5%B2%B8/%E7%B4%85%E6%A8%B9%E6%9E%97%E8%87%AA%E7%84%B6%E4%BF%9D%E7%95%99%E5%8D%80
+- **Danhai connection.** New Taipei’s full official announcement says the Green
+  Mountain Line opened on 24 December 2018 from Hongshulin R/V01 to Kanding with
+  11 stations, and describes its elevated and ground-level sections. Primary,
+  high confidence:
+  https://www.ntpc.gov.tw/ch/home.jsp?dataserno=3cc952025c4b057703de77232dc8a188&id=e8ca970cde5c00e1
+- **Station-specific gaps.** The full pages establish R27’s corridor,
+  ecological access and Danhai-LRT connection context, but do not establish a
+  separate station architect, civil-contract award value, final account,
+  completed public-art register or legal rename. The transfer’s paid-area or
+  street-side status remains TBC.
+
+### Conflicts found
+
+No conflict was found among the full primary pages used for R27. The ground
+station, former-railway-corridor, public-realm and Danhai pages measure different
+things—construction section, land/corridor planning, public-space programme and
+the later light-rail project—and are not competing values for one measurement.
+
 ## Checked and failed
 
 - **Current DORTS route re-fetch for the R08–R13 audit** — Checked 2026-08-17.

@@ -285,6 +285,75 @@ The operator station table, station information sheets, DORTS project page and M
    https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp. Its original
    sentence reads `像是LB01頂埔站「美好的路程」、LB02媽祖田站-LB05龍埔站及LB10國華站「時光行旅」、LB06三峽站「足跡‧築蹟」、LB07臺北大學站「匯聚‧流轉」、LB08鶯歌車站「蘆花街燈」`.
 
+## Run 43 — LB01–LB05 primary-source expansion, 2026-08-18
+
+This pass used full New Taipei DORTS pages, not search-result text. The source
+families were the DORTS route record, the DORTS public-art index and individual
+documentaries, the DORTS engineering documentary, station-interchange and
+construction notices, and the Mazutian station-area procurement announcement.
+
+### What is established
+
+- **Route and station context.** DORTS’s full route record identifies LB01 at
+  Tucheng Central Road Section 4 and records the Bannan Line connection; it
+  identifies LB02 at Mazutian, LB03 on Sanxia Jieshou Road Section 3, LB04 in
+  Hengxi near Huanhe Road, and LB05 on Longpu Road with the appended name
+  Sanxia Guangxing Temple. The original route text includes `LB01 頂埔站...註：捷運土城線頂埔站銜接轉乘`, `LB02 媽祖田`, `LB03 長壽山`,
+  `LB04 橫溪`, and `LB05 龍埔（加註名稱：三峽廣行宮）`. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+- **Line scale and art inventory.** The full DORTS public-art index says
+  `三鶯線計畫路線全長14.29公里，起於土城線頂埔站，共設置12站高架車站` and lists
+  `美好的路程` at LB01 and `時光行旅` at LB02–LB05. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_art
+- **LB01 interchange construction.** The full DORTS announcement states
+  `板南線位於地下三層，三鶯線位在地上三層`, and records eight direct escalators
+  and two direct elevators between the stations. The 2024 notice records the
+  transfer-facility works and temporary Bannan exit 3 closure. Primary, high
+  confidence: https://www.dorts.ntpc.gov.tw/news/indexInfo/O6JmaQ3gmqya?page=1
+  and https://www.dorts.ntpc.gov.tw/news/indexInfo/nalZ4Evzmzeo?page=5
+- **LB01 architecture and art.** DORTS’s full station-design page describes
+  an elevated side platform, shared entrances and an urban-greenhouse concept
+  using planting, long-span structure, expanded metal, daylight and natural
+  ventilation. Its full art documentary says `作品涵蓋板南線與三鶯線連通道牆面的燈光展演裝置，以及電扶梯口牆面的馬賽克陶板拼貼`, and records the link to the train information system. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/7PVdqJR7ZGLb?page=2 and
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpD9odLK7
+- **LB02 art and development.** The full LB02 documentary says
+  `作品位於3樓穿越層牆面` and records an interactive work with `延伸 AR 裝置`.
+  The full Mazutian development announcement calls it the second-largest
+  station-area development project and records the two 27-floor towers, the
+  seven-floor building, about 21,000 ping and about 900 ping of public-benefit
+  facilities. These are station-area development figures, not a station civil
+  contract award or final account. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/0g4d6NKQd5Db and
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/XlR276bDmV8v
+- **LB03 art.** The full LB03 documentary identifies `蘆花街燈`, names 吳建福,
+  places it on the third-floor passage wall and relates it to the ecological
+  setting at Changshoushan. It also names the production groups for LB03’s
+  `時光行旅`. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/eoPZBOnJmgVl?page=1
+- **Line engineering context.** The full DORTS documentary says
+  `全線高架形式...跨越國道、台鐵、大漢溪、三峽河、鶯歌溪`. It records the
+  fish-fin bridge, protective base plate, railway supervision and night TRA
+  power-off operation used for the railway crossing. This is corridor-level
+  engineering evidence, not an LB01–LB05 station-specific incident report.
+  Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+
+### Conflicts found
+
+The 2025 and 2026 DORTS public-art announcements agree on the LB01 title and
+the LB02–LB05 `時光行旅` assignment. No conflicting LB01–LB05 title or artist
+value was found in the full pages used in this batch. The Mazutian announcement
+measures a signed station-area joint-development plan, not civil station works;
+it is therefore not comparable with a station construction contract value.
+
+### Stated gaps
+
+The fetched primary families do not establish separate LB01–LB05 civil contract
+values, final accounts, individual architects, complete art costs or confirmed
+feeder-bus stop-ID joins. LB04 and LB05 do not have a station-specific artist or
+medium in the fetched index/announcement material. Those values remain TBC.
+
 ## Checked and failed
 
 - **TDX station rows** — Checked 2026-08-14. No LB station dataset exists in the
