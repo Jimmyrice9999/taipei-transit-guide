@@ -266,6 +266,112 @@ before 08:00 or after 22:00.
   `收費方式 : 一段票`; `業者服務電話 : 指南客運淡海站:02-2805-2262`; and
   `08:00前與22:00後自淡海發車(不進漁人碼頭)`.
 
+## Batch 4 — 紅31, 紅33, 紅35, 紅35區, 紅36 and 紅37行經海洋都心社區, checked 18 August 2026
+
+The six current official pages were fetched in full. They establish current
+route identity, termini, service windows, fare class, operator contacts and
+current timetable variants. They do not establish route opening history, the
+original corridor decision or dated operator changes; those fields remain TBC.
+
+### 紅31 / R31
+
+The full official schedule page gives `捷運大湖公園站 - 捷運民權西路站`,
+weekday and holiday service 0600–2300, one-section fare and `三重客運南港站`
+as the service contact. It records a weekday peak headway of 15–20 minutes.
+
+- **Source:** “R31 route schedule” / `titleOriginal`: `紅31班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003100
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 捷運大湖公園站 - 捷運民權西路站`;
+  `頭末班車 : [平日] 0600 - 2300 / [假日] 0600 - 2300`;
+  `收費方式 : 一段票`; `業者服務電話 : 三重客運南港站:02-2651-8473`; and
+  `[平日] 尖峰:15分至20分`.
+
+### 紅33 / R33
+
+The full official route-and-stop page gives `葫蘆里 - 聯合醫院中興院區(西寧)`,
+weekday and holiday service 0900–1900, one-section fare and `首都客運士林站`
+as the service contact. It lists weekday departures at 0900, 1100, 1300,
+1500, 1700 and 1900, and holiday departures at 0900, 1300, 1500, 1700 and
+1900.
+
+- **Source:** “R33 route and stop information” / `titleOriginal`: `紅33路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111003300
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 葫蘆里 - 聯合醫院中興院區(西寧)`;
+  `頭末班車 : [平日] 0900 - 1900 / [假日] 0900 - 1900`;
+  `班表:0900 1100 1300 1500 1700 1900`; `班表:0900 1300 1500 1700 1900`;
+  `收費方式 : 一段票`; and `業者服務電話 : 首都客運士林站:02-2834-5022`.
+
+### 紅35 / R35
+
+The full official schedule page gives `關渡碼頭 - 臺北藝術大學`, weekday and
+holiday service 0900–2150, one-section fare and `大南汽車關渡站` as the
+service contact.
+
+- **Source:** “R35 route schedule” / `titleOriginal`: `紅35班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003500
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 關渡碼頭 - 臺北藝術大學`;
+  `頭末班車 : [平日] 0900 - 2150 / [假日] 0900 - 2150`;
+  `收費方式 : 一段票`; and `業者服務電話 : 大南汽車關渡站:02-2858-3023`.
+
+### 紅35區 / R35Shuttle
+
+The full official schedule page gives `捷運關渡站 - 北藝大游泳館`, weekday
+service 0750–1730, no holiday service, one-section fare and `大南汽車關渡站`
+as the service contact. It repeats that holidays are suspended.
+
+- **Source:** “R35Shuttle route schedule” / `titleOriginal`: `紅35區班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003520
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 捷運關渡站 - 北藝大游泳館`;
+  `頭末班車 : [平日] 0750 - 1730 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 大南汽車關渡站:02-2858-3023`; and
+  `例假日停駛`.
+
+### 紅36 / R36
+
+The full official route-and-stop page gives `新春街 - 捷運淡水站`, weekday and
+holiday service 0600–0000, one-section fare and `淡水客運淡水站` as the service
+contact. It records weekday peak headways of 5–8 minutes, weekday off-peak
+headways of 10–15 minutes, 15–20 minutes after 22:00, and holiday peak/off-peak
+headways of 15/20 minutes.
+
+- **Source:** “R36 route and stop information” / `titleOriginal`: `紅36路線資訊`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411003600
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 新春街 - 捷運淡水站`;
+  `頭末班車 : [平日] 0600 - 0000 / [假日] 0600 - 0000`;
+  `尖峰:5分至8分`; `離峰:10分至15分`; `22時後15-20分`;
+  `收費方式 : 一段票`; and `業者服務電話 : 淡水客運淡水站:02-2621-3340`.
+
+### 紅37行經海洋都心社區 / R37 Via The Ocean Communty
+
+The full official route-and-stop page gives `淡海新市鎮 - 捷運淡水站`, weekday
+service 0605–2300, holiday service 0820–2200, one-section fare and
+`淡水客運新市站` as the service contact.
+
+- **Source:** “R37 Via The Ocean Community route and stop information” /
+  `titleOriginal`: `紅37行經海洋都心社區路線資訊`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411003790
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 淡海新市鎮 - 捷運淡水站`;
+  `頭末班車 : [平日] 0605 - 2300 / [假日] 0820 - 2200`;
+  `收費方式 : 一段票`; and `業者服務電話 : 淡水客運新市站:02-2805-4870`.
+
 ## Batch 3 — 紅27, 紅28, 紅28直, 紅29, 紅3 and 紅30, checked 18 August 2026
 
 The six current official pages were fetched in full. They establish current
@@ -378,7 +484,7 @@ as the service contact.
 
 ## What remains TBC
 
-- **All eighteen batch-1/2/3 routes:** opening date, earlier alignment, original
+- **All twenty-four batch-1/2/3/4 routes:** opening date, earlier alignment, original
   corridor rationale and dated operator transfers are TBC.
 - **紅19:** its current school-day return stop variant is established; its
   creation date and rationale are TBC.
@@ -392,13 +498,20 @@ as the service contact.
   creation date and rationale are TBC.
 - **紅29:** the current hospital short working is established; its creation
   date and rationale are TBC.
+- **紅31:** the current weekday peak interval is established; its creation date
+  and rationale are TBC.
+- **紅35區:** current holiday suspension is established; its creation date and
+  rationale are TBC.
 
 ## Checked and failed
 
-- **Dated opening, corridor-rationale and operator-change records for batches 1–3** —
+- **Dated opening, corridor-rationale and operator-change records for batches 1–4** —
   full current route pages were checked, but no dated primary history record was
   promoted from those pages. Current service data was not treated as an origin
   story. Checked 18 August 2026.
+- **紅37行經海洋都心社區 route-information page** — the official
+  `VsSimpleMap` URL timed out during full-page fetching. The full official
+  `StopsOfRoute` page was fetched and used instead. Checked 18 August 2026.
 
 ## Stated gaps
 
