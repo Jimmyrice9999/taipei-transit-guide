@@ -8622,3 +8622,57 @@ Final gates for this batch: fresh build/verify passed, 519 pages checked, no
 missing glyphs, no broken links or fragments, 522 citations resolved, research
 clean, claims clean, geometry/CVD clean and unit tests 185/185. The explicit
 full test command also passed. Next batch is R25–R28.
+
+# Run 31 — Part 1 Red station prose, R25–R28, 18 August 2026
+
+## Sourced
+
+This final Red batch audited R25 Guandu, R26 Zhuwei, R27 Hongshulin and R28
+Tamsui. R25–R27 remain at zero body-prose words after the full source-family
+search. R28 gained 360 words of sourced prose on its terminal programme,
+former-TRA site, transport-hub role, colonial/Red Castle architectural
+references and waterfront setting. Every R28 sentence carries an overlay
+source; the empty-page results are recorded in the research file.
+
+Full primary URLs:
+
+- https://web.metro.taipei/pages2026/WebStation/068/1
+- https://web.metro.taipei/pages2026/WebStation/069/1
+- https://web.metro.taipei/pages2026/WebStation/070/1
+- https://web.metro.taipei/pages2026/WebStation/071/1
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page50.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page71.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page73.html
+- https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983
+
+No colour-prefix audit applies to a station batch.
+
+## TBC
+
+R25–R27 remain without station-specific prose after exhausting the full TRTC
+station pages, DORTS route and engineering-book pages, and DORTS public-art
+index. Station-level contracts, final accounts, complete artwork records,
+rename gazettes and feeder-bus prose remain TBC for R25–R28. No figure was
+inferred from a line-wide source.
+
+## Contradicted the corpus
+
+The 17 August audit said all four pages were correctly empty. The full DORTS
+pages 46, 50, 71 and 73 provide additional station-specific Tamsui terminal,
+architectural and waterfront material, so R28 is now 360 words. The audit’s
+zero-word result remains correct for R25–R27. No unverified appendix was
+promoted.
+
+## Conflicts found
+
+DORTS’s Tamsui terminal programme lists 581 car, 338 motorcycle and 170
+bicycle spaces, while the current TRTC table lists 553 car, 1,005 motorcycle
+and 47 bicycle spaces; both values are published as programme versus current
+operator records. DORTS gives the main elevated section as about 8.95 km and
+the linear park as nearly 10 km; those measure guideway and public-realm extent
+respectively. No colour-prefix audit.
+
+Final gates for this batch: fresh build/verify and the full test suite must pass
+before commit; citations and research are already clean after the R28 overlay.
+Next part is Part 2: Danhai and Ankeng source audit.

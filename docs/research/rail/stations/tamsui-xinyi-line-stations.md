@@ -802,16 +802,21 @@ Original-language text checked in full:
   architect, station-level contract value, final account or rename gazette was
   established.
 
-### Station-prose audit — R25–R28 batch, 17 August 2026
+### Station-prose audit — R25–R28 batch, 18 August 2026
 
-The full TRTC station pages for R25–R28 were fetched and read on 17 August
-2026. The full DORTS route and engineering-book records were checked for
-station-specific narrative. R25 Guandu, R26 Zhuwei, R27 Hongshulin and R28
-Tamsui remain correctly empty: the operator pages add current exits and local
-landmarks, while the builder material adds the northern line-group structure
-and Tamsui terminal design context already represented in the facts and specs,
-not a new station-specific siting, prior-site, construction, rename, incident
-or local narrative suitable for body prose. No image or linked station sheet
+Traditional-Chinese searches were repeated against DORTS and TRTC for `淡水線
+關渡站 竹圍站 紅樹林站 建築造型`, `淡水線 淡水站 高架車站 建築造型` and the
+four current station names. Search was used only to locate pages; the returned
+pages were fetched and read in full. The full TRTC station pages for R25–R28
+were checked again, together with DORTS’s route page, the engineering-book
+pages 37–46, 50, 55, 69, 71 and 73, and the DORTS public-art index. The TRTC
+pages add current exits, facilities, parking and local interchange information.
+For R25 Guandu, R26 Zhuwei and R27 Hongshulin, the full DORTS material adds
+only shared northern-corridor structure, general station design, public-realm
+or unlisted-art context; no station-specific siting, prior-site, construction,
+rename, incident or local narrative survived without restating facts/specs.
+R28 Tamsui did yield station-specific architectural and terminal-program
+prose from the full pages 46, 50, 71 and 73. No image or linked station sheet
 was fetched.
 
 | Station | Result | Full station page |
@@ -819,16 +824,28 @@ was fetched.
 | R25 Guandu | Correctly empty | https://web.metro.taipei/pages2026/WebStation/068/1 |
 | R26 Zhuwei | Correctly empty | https://web.metro.taipei/pages2026/WebStation/069/1 |
 | R27 Hongshulin | Correctly empty | https://web.metro.taipei/pages2026/WebStation/070/1 |
-| R28 Tamsui | Correctly empty | https://web.metro.taipei/pages2026/WebStation/071/1 |
+| R28 Tamsui | Deepened, 360 words | https://web.metro.taipei/pages2026/WebStation/071/1 |
 
 The shared engineering source is DORTS, `捷運工程叢書 精進版－34
-捷運高架車站建築造型設計`, PRIMARY, High confidence,
-https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html.
-Its Tamsui-terminal description was already used for the facts/specs and did
-not yield a second prose claim after this station-specific check.
-This final four-station audit closes the R-line station-prose pass: all R
-pages now have a recorded sourced result, with no unreviewed empty page left
-in the line’s station sequence.
+捷運高架車站建築造型設計`, PRIMARY, High confidence. The full pages were:
+
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html —
+  Tamsui’s terminal location, former TRA setting, transport-hub parking and
+  transfer facilities.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page50.html —
+  Tamsui as a special station and its Red Castle/colonial design rationale.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page71.html —
+  the arcade facade, domestic-building imagery, colours and architectural
+  elements.
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page73.html —
+  former railway right-of-way, the elevated two-level form, linear park and
+  waterfront recreation setting.
+
+R25–R27 remain at zero body-prose words after the source-family search above;
+that is the result, not a claim that the stations lack history or artwork.
+This final four-station audit closes the R-line station-prose pass: every R
+page now has a recorded sourced result, and R28 has a new 360-word sourced
+overlay.
 
 ### Station-prose audit — R02–R07 deepening batch, 18 August 2026
 
@@ -1261,6 +1278,20 @@ road name alone is not promoted to a landmark.
    The shared design is the line-wide rule; the Beitou structure is the
    station-specific variation. Neither value was replaced by the other.
 
+17. **Tamsui parking figures.** DORTS’s full terminal page gives 581 car
+    spaces, 338 motorcycle spaces and 170 bicycle spaces, alongside 12
+    long-distance coach bays and other bus/taxi facilities. The current TRTC
+    station page lists 553 car spaces, 1,005 motorcycle spaces and 47 bicycle
+    spaces in its transfer-parking table. The first record is the engineering
+    book’s terminal programme; the second is the operator’s current table. Both
+    are published without choosing one as the universal value.
+
+18. **Elevated-section length versus linear-park length.** DORTS’s network
+    context gives the main elevated section as approximately 8.95 km, while
+    its summary describes nearly 10 km of linear multi-purpose park beneath the
+    elevated corridor. These values measure guideway section and public-realm
+    extent respectively, so neither is substituted for the other.
+
 No conflicting exit count was found when the full TRTC station pages were
 compared with the DORTS station material for the stations where both publish a
 count. Differences between TDX’s fields and the operator’s facility text are
@@ -1378,6 +1409,23 @@ field-coverage differences, not competing values.
   but no full PTO or ebus route page was fetched for this station batch. No
   feeder-route assertion was published from a name or join alone. Checked 18
   August 2026.
+- **R25–R27 station-specific prose** — Checked 18 August 2026 in the full
+  TRTC station pages 068–070, the DORTS route page, DORTS engineering-book
+  pages 37–46, 50, 55, 69, 71 and 73, and the DORTS public-art index. The
+  sources returned current facility/exit information and shared northern
+  corridor, ground/elevated and unlisted-art context, but no R25-, R26- or
+  R27-specific narrative that could be added without restating facts/specs.
+  Those three pages remain at zero body-prose words; this is a failed lookup,
+  not a claim that the stations lack history or artwork.
+- **R25–R28 station-level contracts, final accounts and rename gazettes** —
+  Checked 18 August 2026 across the same full DORTS route and engineering
+  pages, the current TRTC station pages and the DORTS public-art index. The
+  pages provide Tamsui’s terminal architecture and transport-hub programme,
+  but no station-level award value, final account or legal rename record for
+  these four stations. No value or rename was inferred.
+- **R25–R28 feeder-bus prose** — TDX stop-ID joins were retained, but no full
+  PTO or ebus route page was fetched for this station batch. No feeder-route
+  assertion was published from a name or join alone. Checked 18 August 2026.
 
 ## Stated gaps
 
@@ -1410,6 +1458,15 @@ R15/R16/R17/R18/R19, the legal gazette and effective date behind the historical
 Tianmu wording for R18, and sourced feeder-bus descriptions. The period DORTS
 procurement/completion records, a complete station-art register, the relevant
 city gazette and full PTO/ebus pages would settle them.
+
+For R25–R28, R25–R27 still have no station-specific body prose after the full
+TRTC, DORTS route, DORTS engineering-book and DORTS public-art source families
+listed in the audit above were exhausted. R28 has sourced terminal, historic
+architecture and waterfront context, but its station-level contract value,
+final account, architect, complete artwork register, rename gazette and
+feeder-bus description remain TBC. Period DORTS procurement/completion files,
+a complete DORTS artwork register, the relevant gazette and full PTO/ebus route
+pages would settle those gaps.
 
 ---
 

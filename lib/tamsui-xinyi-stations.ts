@@ -224,6 +224,26 @@ const dortsTamsui = source(
   'The full engineering-book page documents Tamsui terminal’s elevated island platform and later-added exits.',
 )
 
+const dortsTamsuiArchitectureDetails = source(
+  'dorts-tamsui-station-architecture-details',
+  'Tamsui station architectural character and materials',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page71.html',
+  'The full engineering-book page explains Tamsui’s Taiwanese-dwelling and colonial architectural references, Red Castle colour palette, arcade facade, and related design elements. The original-language passages beginning 淡水站是全線終點站 and 長向立面設計連栱式的長廊 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsTamsuiCorridorSummary = source(
+  'dorts-tamsui-station-corridor-summary',
+  'Tamsui station corridor and waterfront setting',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page73.html',
+  'The full engineering-book summary explains how the former TRA right-of-way enabled the elevated station form, the northern linear park, and the Tamsui waterfront recreation park. The original-language passages beginning 由於利用台鐵北淡支線之原有路權 and 高架段下方擁有近10km長之線形多功能公園 were checked on the linked page.',
+  '2026-08-18',
+)
+
 const dortsSpecialArchitecture = source(
   'dorts-tamsui-xinyi-special-architecture',
   'Special architectural structures on the Tamsui–Xinyi Line',
@@ -1310,6 +1330,22 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 中正東路、近英專路; 2: 中正東路、近學府路; 3: 近金色水岸. Platform lift behind the escalator. Accessible exit: TBC.',
     facilities: 'Unpaid toilets by the rear park, bus station and exit 1; parent/accessible toilets at the same locations; nursing room in the paid hall near exit 1; baby changing; bicycle access not open; enquiry point near exit 1; platform lift behind the escalator.',
     landmarks: '金色水岸', publicArt: tbc, engineeringHistory: 'The terminal was built on the old TRA site; the engineering-book account notes the Red Castle brick arch, colonial architecture and local style in its design context.', engineeringHistorySource: dortsSpecialArchitecture,
+    proseSources: [dortsTamsui, dortsSpecialArchitecture, dortsTamsuiArchitectureDetails, dortsTamsuiCorridorSummary],
+    prose: [
+      { text: 'DORTS treats Tamsui as a special elevated station rather than another repetition of the standard northern building: it is the line terminus and occupies the former TRA Tamsui station site.', source: dortsSpecialArchitecture.id },
+      { text: 'The terminal was planned as a transport hub for the Tamsui–Sanzhi area, so the station precinct includes 581 car spaces, 338 motorcycle spaces, 12 long-distance coach bays, bus stopping and tour-bus parking, taxi and private-car drop-off areas, and 170 bicycle spaces.', source: dortsTamsui.id },
+      { text: 'The current TRTC station page instead lists 553 car spaces, 1,005 motorcycle spaces and 47 bicycle spaces in its transfer-parking table, so the DORTS programme figures and the operator’s current table are retained as different records.', source: trtcStation('R28').id },
+      { text: 'DORTS places the parking below the station and the long-distance, bus, taxi and bicycle facilities in the station-front area, making the forecourt part of the terminal’s transport program.', source: dortsTamsui.id },
+      { text: 'The architecture account links the terminal’s appearance to Tamsui’s history of Spanish colonial influence and to the imagery of Taiwanese domestic buildings.', source: dortsTamsuiArchitectureDetails.id },
+      { text: 'Its long facade uses a continuous arcade, a form the account describes as common in Tamsui’s colonial architecture and as a cultural transfer produced when Taiwanese dwellings absorbed Western influence.', source: dortsTamsuiArchitectureDetails.id },
+      { text: 'The design also selected related elements such as corner towers, eaves and a plaque, while adjusting tile colours and their proportions to echo Red Castle and other historic brick buildings.', source: dortsTamsuiArchitectureDetails.id },
+      { text: 'That historic reference distinguishes Tamsui from the standard elevated-station vocabulary: DORTS identifies it, together with Jiantan and Beitou, as a special station developed in response to its setting or other particular constraints.', source: dortsSpecialArchitecture.id },
+      { text: 'The line’s summary explains that the former TRA right-of-way allowed an elevated station to stand as an independent two-level building, with the concourse at ground level and the island platform above.', source: dortsTamsuiCorridorSummary.id },
+      { text: 'The same summary records nearly 10 km of linear multi-purpose park beneath the elevated corridor and a separate waterfront recreation park beside Tamsui station.', source: dortsTamsuiCorridorSummary.id },
+      { text: 'DORTS’s illustration caption connects that waterfront park with the New Taipei government’s Golden Waterfront project and identifies the east-side exit area as a bus-transfer zone.', source: dortsTamsuiArchitectureDetails.id },
+      { text: 'The resulting station context is therefore both a regional interchange and a public waterfront edge, with the building’s colonial references directed toward Tamsui’s local setting rather than a generic terminal image.', source: dortsTamsui.id },
+      { text: 'The fetched primary pages do not identify an individual architect, construction package value, final account, completed artwork register or rename gazette for Tamsui; those details remain TBC.', source: dortsTamsuiArchitectureDetails.id },
+    ],
   },
 }
 
