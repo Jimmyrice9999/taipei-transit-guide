@@ -8882,6 +8882,46 @@ sourced. No station colour-prefix audit applies. Next: audit BL07–BL12.
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
 
+# Run 31 — Part 1 Circular Y07–Y12, 18 August 2026
+
+Deepened six Circular Line station pages after the pre-action audit found Y07
+with 32 existing body words and Y08–Y12 empty. Final body-prose counts:
+Y07 287, Y08 323, Y09 273, Y10 232, Y11 219 and Y12 234; batch total 1,568
+words. No facts/specs were restated as prose.
+
+Sourced: the DORTS first-phase delivery structure of 21 civil/water/
+environmental/electromechanical contracts and separate systems packages; the
+IQUX02 planting and CF641 dates; Y08’s CF640/CF643B assignment and 皇昌營造;
+CF650/CF651A/CF651B and 中華工程; Y08–Y12 interstation distances; DF112’s
+「光合」 design integration and locations; and the line-wide commissioned-
+creation public-art fee and coverage. Primary URLs fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html
+- https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576
+
+Conflicts published: DORTS’s source-era engineering identifiers (Y06–Y11 and
+K9/LG06/O02) remain alongside current operating identifiers (Y07–Y12); the
+route page’s 21 contract count and the book’s four elevated civil sections are
+kept as different levels of scope; the NT$16,000,000 public-art figure is
+published as line-wide, not station-only. TBC: Y07–Y12 station-specific civil
+final accounts, rename gazettes, complete fare-boundary classifications,
+station-only art allocations, and Y07 exact exit/platform/track detail.
+
+Contradicted the corpus: the earlier audit’s zero-word result for Y08–Y12 and
+one-sentence result for Y07 were superseded by the full technical-book,
+contract, architecture and public-art pages. No colour-prefix audit applies.
+The fresh build had one font-subset gap for newly rendered contractor names;
+`npm run fonts` regenerated the Y subset and the subsequent gates were clean.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary);
+fresh `npm run verify` clean (519 pages, no missing glyphs, links or a11y
+errors, 185/185 unit tests, research/claims/geometry/CVD clean); explicit
+`npm test` clean; `git diff --check` clean. Next: audit and deepen Circular
+Y13–Y18, six stations, then commit and push.
+
 # Run 31 — Part 1 Bannan BL13–BL18, 18 August 2026
 
 Deepened six Bannan station pages using the same source families as BL01–BL12:

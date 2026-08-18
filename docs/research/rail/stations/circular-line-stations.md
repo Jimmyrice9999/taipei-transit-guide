@@ -304,6 +304,94 @@ terminus and public-art fields already recorded.
 - **Y19** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=808, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
 - **Y20** — Correctly left empty. Pages checked: https://www.ntmetro.com.tw/basic/?mode=detail&node=809, https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789, https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8, https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html, https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576. No additional station-specific siting, construction, naming, incident or art context beyond the structured fields was found. Checked 17 August 2026.
 
+## Y07–Y12 deepening — 18 August 2026
+
+The earlier station-prose audit was superseded for this batch. A fresh full
+fetch of the DORTS route record, architecture record, architecture-book pages
+191–192 and the line-wide public-art record found package, contractor,
+interstation and procurement material that is not repeated in the generated
+facts/specifications.
+
+### Established
+
+- **Programme packaging and dates.** The full DORTS route record says the
+  first phase was divided into 21 civil, water, environmental and
+  electromechanical section contracts, with separate systems packages. Its
+  original wording includes 「土建、水環、環境及機電工程共分為21標」 and
+  「最早開工之主體工程為CF641大坪林站連續壁及結構體工程」, signed on
+  5 January 2010. It also dates the IQUX02 Y8–Y14 planting contract to 5 June
+  2009. Source: DORTS, *Circular Line Phase 1* (`dorts-circular-phase1`,
+  PRIMARY, High; the builder’s full route page publishes the contract-level
+  history):
+  https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789.
+
+- **Y08 contract family.** The full book page states 「高架段土建工程計分為4個
+  區段標」, assigns Y8 to CF640, identifies CF643B as its construction
+  sub-contract and names 皇昌營造. It separately assigns CF650 to 中華工程,
+  with CF651A covering the Y9–Y11 sequence and CF651B the Y12–Y15 sequence.
+  Source: DORTS, *Circular Line elevated station architecture, pages 171–172*
+  (`dorts-circular-architecture-book-191`, PRIMARY, High; full official HTML
+  book page): https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html.
+
+- **Y08–Y12 spacing and section relationships.** The next full book page
+  records approximately 885 m from Y8 to Y9, 900 m from Y9 to Y10, 1,085 m
+  from Y10 to Y11, 1,530 m from Y11 to Y12 and 630 m from Y12 to Y13. These
+  are interstation alignment intervals, not platform or station-building
+  dimensions. Source: DORTS, *Circular Line elevated station architecture,
+  page 172* (`dorts-circular-architecture-book-192`, PRIMARY, High; full
+  official HTML book page):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page192.html.
+
+- **DF112 design integration.** The full station-architecture page describes
+  DF112 as engineering Y8–Y14, with the 「光合」 theme and triangular design
+  elements. It says the treatment is integrated into 「垂直動線區之側牆」,
+  「驗票閘門區之天花」 and 「穿堂層天花之條狀燈具」. The page also explains
+  that the design themes respond to local exchange and the corridor’s natural
+  settings. Source: DORTS, *Circular Line station architecture*
+  (`dorts-circular-architecture`, PRIMARY, High; full station-architecture
+  page): https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8.
+
+- **Line-wide art procurement.** The full art record identifies 「委託創作」 as
+  the selection method and reports a design fee of NT$16,000,000. It describes
+  coverage across approximately 212 elevated columns, 8 km of beams, 10 km of
+  sound barriers, platform doors at 14 stations, selected façades and walls,
+  and train exteriors/interiors. Source: DORTS, *Circular Line Phase 1 public
+  art — Lin Guang* (`dorts-circular-art-line`, PRIMARY, High; full public-art
+  record): https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576.
+
+### Conflicts and scope distinctions
+
+1. DORTS’s route table uses engineering station identifiers one lower than
+   the current operating sequence: Shisizhang is Y07/K9 in the route table but
+   Y08 in the current operator/TDX data, and the source-era Y09, Y10 and Y11
+   rows correspond to current Y10, Y11 and Y12. Both labels remain published.
+2. The route page’s 21 section-contract count and the architecture book’s four
+   elevated civil sections describe different levels of the delivery structure;
+   neither is substituted for the other.
+3. The NT$16,000,000 figure is a line-wide public-art design fee, while the
+   checked art page does not allocate a station-only amount to Y07–Y12. The
+   former is published; the latter is TBC, not zero.
+
+### Checked and failed — Y07–Y12
+
+- **Station-specific civil final accounts:** the full DORTS route page,
+  architecture page and book pages 191–192 returned package assignments and
+  contractors but no Y07–Y12 station-only final account. TBC. Checked 18
+  August 2026.
+- **Construction-era renames and gazettes:** the same full DORTS pages and the
+  full NTMC station pages/list returned no dated rename instrument for Y07–Y12.
+  TBC. Checked 18 August 2026.
+- **Fare-boundary mode for Y07–Y12:** the full NTMC pages,
+  DORTS pages and TDX records did not establish a complete fare-boundary
+  classification for these six stations. TBC. Checked 18 August 2026.
+- **Station-specific art selection or allocation:** the full line-wide DORTS
+  art record returned the corridor commission and fee but no Y07–Y12-only
+  artist allocation or cost. TBC. Checked 18 August 2026.
+- **Y07 exact exit positions and station-only platform/track account:** the
+  checked full DORTS material returned the exit count but not the street-
+  emergence positions or a complete station-only track account. TBC. Checked
+  18 August 2026.
+
 ## Conflicts
 
 1. The route table uses engineering station identifiers one number lower than
