@@ -1,5 +1,5 @@
 {
-  "pages": 403,
+  "pages": 422,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -958,6 +958,411 @@
       "page": "/bus/routes/colour-green/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-10/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-10/",
+      "name": "三民高中",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-10/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-10/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-10/",
+      "name": "Taishan Station",
+      "href": "/rail/stations/a5/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-12/",
+      "name": "Sanchong",
+      "href": "/rail/stations/o15/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-12/",
+      "name": "Sanchong Elementary School",
+      "href": "/rail/stations/o50/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-12/",
+      "name": "Sanhe Junior High School",
+      "href": "/rail/stations/o51/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-12/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-13/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-13/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-13/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-13/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "Xinzhuang",
+      "href": "/rail/stations/o18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "New Taipei Industrial Park",
+      "href": "/rail/stations/y20/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "新北產業園區站",
+      "href": "/rail/stations/a3/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-17/",
+      "name": "新莊副都心站",
+      "href": "/rail/stations/a4/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1p8cb7v/",
+      "name": "Sanhe Junior High School",
+      "href": "/rail/stations/o51/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1p8cb7v/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1p8cb7v/",
+      "name": "Sanmin Senior High School",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1p8cb7v/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1p8cb7v/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1wqt5b1/",
+      "name": "Sanhe Junior High School",
+      "href": "/rail/stations/o51/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1wqt5b1/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1wqt5b1/",
+      "name": "Sanmin Senior High School",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1wqt5b1/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-18-1wqt5b1/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-153docx/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-153docx/",
+      "name": "Sanmin Senior High School",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-153docx/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-153docx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-vxo2ga/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-vxo2ga/",
+      "name": "Sanmin Senior High School",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-vxo2ga/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-19-vxo2ga/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-1/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-1/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-1/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-1/",
+      "name": "Sunshine Sports Park",
+      "href": "/rail/stations/k07/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-1/",
+      "name": "Xinhe Elementary School",
+      "href": "/rail/stations/k08/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-20/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-20/",
+      "name": "三民高中",
+      "href": "/rail/stations/o53/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-20/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Xinzhuang",
+      "href": "/rail/stations/o18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Fu Jen University",
+      "href": "/rail/stations/o19/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Danfeng",
+      "href": "/rail/stations/o20/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Huilong",
+      "href": "/rail/stations/o21/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-21/",
+      "name": "新北產業園區站",
+      "href": "/rail/stations/a3/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-22/",
+      "name": "Xinzhuang",
+      "href": "/rail/stations/o18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-22/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-22/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-25/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-25/",
+      "name": "Taipei Bridge",
+      "href": "/rail/stations/o13/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-25/",
+      "name": "Sanchong",
+      "href": "/rail/stations/o15/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-25/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-26/",
+      "name": "Huilong",
+      "href": "/rail/stations/o21/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-26/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-2/",
+      "name": "Yongan Market",
+      "href": "/rail/stations/o03/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-3/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "江子翠",
+      "href": "/rail/stations/bl09/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-5/",
+      "name": "Xinpu Minsheng",
+      "href": "/rail/stations/y17/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Nanshijiao",
+      "href": "/rail/stations/o01/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Sunshine Sports Park",
+      "href": "/rail/stations/k07/"
+    },
+    {
+      "page": "/bus/routes/colour-orange/orange-9/",
+      "name": "Xinhe Elementary School",
+      "href": "/rail/stations/k08/"
     },
     {
       "page": "/bus/routes/colour-red/",

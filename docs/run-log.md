@@ -10446,3 +10446,45 @@ order per the brief. `blue-2-1xzokkx` (藍海2線先導公車, "Lan Hai2") is fl
 for extra scrutiny when blue is built — `藍海` ("blue ocean") may be a named
 pilot-service brand rather than an ordinary 藍-prefixed feeder, despite
 matching the mechanical classifier.
+
+## Part 3c continued — colour-orange, all 18 routes, checked 19 August 2026
+
+False-prefix audit: all 1,051 committed route names containing `橘` were
+checked. All 18 belong to `colour-orange` and match the official catalogue's
+`捷運橘線接駁公車` list exactly; no other route anywhere in the snapshot
+contains `橘` as a place name or descriptive term — orange had no exclusion
+case at all, unlike red, green or (expected) blue.
+
+All 18 full official schedule pages were fetched. They establish current
+termini, service span, fare class and operator contact for every route; none
+establish opening date, corridor rationale or dated operator changes, which
+are TBC throughout. Two structural findings, both left unresolved rather than
+merged: 橘18 and 橘18福隆路 are separate TDX records sharing identical
+published termini (蘆洲 - 五華街) and operator with different spans; 橘19 and
+橘19副 are separate records sharing identical published termini (五股 - 三重)
+and operator with different spans. The official catalogue lists all four as
+distinct labels.
+
+One authoring bug found and fixed before the gate: `orange-18-1p8cb7v.md`
+wrapped the Chinese word 福隆路 in Markdown backticks (code-span syntax,
+appropriate for the ASCII canonical-slug references elsewhere on the same
+pages but not for prose), which put it outside the reach of the Markdown
+pipeline's zh-Hant auto-tagging and failed `tests/accessibility.test.mts`'s
+"Chinese is always tagged zh-Hant" check. Fixed by removing the backticks;
+all other bus route pages were swept for the same pattern and none had it.
+
+Body prose runs similarly to colour-green — current-service facts plus
+sourced structural notes, no padding. No confirmed MRT stop-ID joins were
+curated (see the railJoins fix above); orange pages correctly show zero
+confirmed joins even at termini named after stations (捷運景安站, 捷運三重
+國小站, 捷運新莊站, 捷運迴龍站). Full detail and sources are in
+docs/research/bus/routes/colour-orange.md.
+
+Gates: `npm run cite` clean; fresh `npm run build` clean (421 pages, no
+missing glyphs after `npm run fonts`); `npm run verify` clean; `npm test`
+clean (185/185, 19 fact cross-checks). Claims baseline and its test
+untouched. Existing user-owned dirty files (`probes/`) remain unstaged.
+
+Next: colour-blue (39 routes), then trunk (19). `blue-2-1xzokkx` (藍海2線
+先導公車) remains flagged for extra scrutiny — see the note at the end of the
+colour-green section above.
