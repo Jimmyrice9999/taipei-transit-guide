@@ -648,6 +648,111 @@ count remain TBC where the station-specific primary record did not publish them.
   found in the fetched primary records used for this batch; no absence claim was
   made. Checked 18 August 2026.
 
+## BL19–BL23 deepening — 18 August 2026
+
+### What is established
+
+- **BL19 Yongchun and BL20 Houshanpi.** The full DORTS tunnel-method page names
+  both stations as reverse-construction examples: 「後山埤站及永春站採用逆打工法」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page28.html,
+  source id `dorts-nangang-cut-cover-p28` (PRIMARY, High: DORTS technical
+  book). The route page and architecture/procurement families establish the
+  broader Nangang corridor, its dense urban setting and line-wide construction
+  strategy, but the fetched pages do not provide either station’s civil
+  contractor or final account. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06,
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A and
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html,
+  source ids `dorts-bannan-nangang`, `dorts-bannan-architecture` and
+  `dorts-bannan-procurement-strategy-p37` (PRIMARY, High).
+
+- **East Extension track work — BL21 Kunyang, BL22 Nangang and BL23 Taipei
+  Nangang Exhibition Center.** DORTS’s full track-management article records a
+  narrow, complicated work route, unfinished civil/open-cut interfaces,
+  phased handover, a seven-month schedule pressure and a specialist track
+  subcontractor; it also dates the start to ROC96 August. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page239.html,
+  source id `dorts-cn531-track-management-p239` (PRIMARY, High). The companion
+  CE731 worksite article names Alstom/CTCI and reports approximately 2,913 metres
+  of plinth, special-track, running-rail, third-rail, buffer and turnout work:
+  「CE731標承包商為阿爾斯通/CTCI」 and 「全長約2,913公尺」. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page241.html,
+  source id `dorts-cn531-track-worksite-p241` (PRIMARY, High). That article uses
+  source-era BL16/BL17/BL18 labels for the Kunyang–Nangang–Exhibition Hall
+  sequence; the current operating registry uses BL21/BL22/BL23, so the labels
+  are published as separate identifiers.
+
+- **BL21 Kunyang public-art process.** DORTS’s planning page identifies Kunyang
+  as a terminal at the time and gives a NT$5 million programme ceiling. URL:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html and
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html,
+  source ids `dorts-nangang-public-art-planning-p216` and
+  `dorts-nangang-public-art-budget-p218` (PRIMARY, High). The full process page
+  records the 29 August preliminary review, 4 September final review and ROC89
+  December 15 completion of the interactive installation. URL:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page228.html,
+  source id `dorts-kunyang-public-art-process-p228` (PRIMARY, High). The current
+  DORTS artwork record publishes NT$4,999,000. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=21E7260FD75E88D4,
+  source id `dorts-bl21-public-art` (PRIMARY, High).
+
+- **BL22 Nangang architecture.** DORTS’s full station-architecture page records
+  Taiwan Railways co-development, a light-green theme and local references
+  including 新庄仔陂、後山陂、舜若多橋、南港茶園 and 胡適紀念館. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2,
+  source id `dorts-bannan-station-architecture` (PRIMARY, High).
+
+- **BL23 Exhibition Center architecture and art procurement.** The same full
+  architecture page records the digital-space/e-station concept, dawn-blue
+  palette, metal and low-E glass, shell-like entrances and barcode/circuit/binary
+  motifs. The current public-art page records two separately selected works,
+  one via invited competition and one via public selection, with one in the
+  concourse and the other on the paid-area passage toward the Wenhu Line. URLs:
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2 and
+  https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2&s=2809EC1898BBBD56,
+  source ids `dorts-bannan-station-architecture` and `dorts-bl23-public-art`
+  (PRIMARY, High).
+
+- **Line-wide measurements and design standard.** The CN531 journal publishes
+  30.6 kilometres, twelve mainline stations, mixed track forms, eleven failed or
+  aborted tenders, the ROC85 October award and the CN531/CP541 amounts of
+  NT$1,309,170,114 and NT$488,829,886. URL:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html,
+  source id `dorts-cn531-track-p21` (PRIMARY, High). These are line-wide or
+  track-package measures, not station civil prices. DORTS’s flood record also
+  retains the post-Nari freeboard change from 0.5 metre to 1.1 metres and the
+  source-era/current-code distinction. URL:
+  https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page154.html,
+  source id `dorts-nangang-flood-response-p154` (PRIMARY, High).
+
+### Conflicts found in this batch
+
+1. The wider CN531 article measures 30.6 kilometres and twelve mainline
+   stations, while the East Extension worksite article measures approximately
+   2,913 metres. These are a line-wide track scope and an East Extension
+   worksite scope, not competing measurements of one station.
+2. The CE731 article labels the Kunyang–Nangang–Exhibition Hall sequence
+   BL16/BL17/BL18, while the current operating registry labels those stations
+   BL21/BL22/BL23. Both identifier sets are published; no silent renumbering is
+   made.
+3. Kunyang’s programme-stage public-art ceiling is NT$5 million, while the
+   current artwork record states NT$4,999,000. The first is a ceiling and the
+   second is the later stated expenditure.
+4. The full DORTS flood tables use historical engineering labels that differ
+   from current TRTC operating codes. No historical flood row is reassigned to
+   BL19–BL23.
+
+### Checked and failed for this batch
+
+- The fetched DORTS route, architecture, procurement, tunnel-method and East
+  Extension technical pages did not yield station-specific civil contractor
+  names and final accounts, construction-era names or rename gazettes, complete
+  paid-area/street-transfer classifications or station-level depot rosters for
+  BL19–BL23. Checked 18 August 2026.
+- The fetched public-art planning/current records did not yield a complete
+  BL19 or BL20 station-specific artwork record. No absence claim was made.
+  Checked 18 August 2026.
+
 ## Conflicts
 
 1. The DORTS route material describes the built Bannan sections as underground,
@@ -751,9 +856,9 @@ match.
 The station pages still cannot give a sourced platform or track count,
 construction-era name and dated rename announcement, paid-area/street
 transfer classification, or station-level depot roster for any BL station.
-BL16’s public-art metadata would require a fuller official record. That gap is
-marked TBC rather than filled from maps, coordinates, secondary summaries or
-inference.
+The fresh full DORTS record now supplies BL16’s public-art metadata; the
+remaining station-specific gaps are marked TBC rather than filled from maps,
+coordinates, secondary summaries or inference.
 
 ---
 

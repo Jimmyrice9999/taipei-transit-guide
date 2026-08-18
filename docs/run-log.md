@@ -8947,6 +8947,64 @@ Final gates for this batch: fresh build/verify, explicit `npm test` and
 five Bannan stations, BL19–BL23, as the final Bannan batch; then start the next
 line in a new six-station batch.
 
+# Run 31 — Part 1 Bannan BL19–BL23, 18 August 2026
+
+Completed the final five Bannan station pages. The audit began with BL19 and
+BL20 at zero words and BL21–BL23 at 34, 25 and 58 words from their public-art
+records. The widened full-page pass produced BL19 304, BL20 304, BL21 332,
+BL22 326 and BL23 348 words, for 1,614 words total. Every station-prose
+sentence carries an overlay source.
+
+Sourced: Yongchun and Houshanpi’s reverse-construction classification; the
+Nangang route and wider CN531 track scopes; the CN531/CP541 failed-tender
+history, award team and line-wide amounts; the procurement-model distinctions;
+East Extension track-management constraints, phased handover, specialist
+subcontracting, CE731, Alstom/CTCI and the approximately 2,913-metre worksite
+scope; Kunyang’s public-art selection dates, terminal-era rationale, ceiling
+and later expenditure; Nangang’s Taiwan Railways co-development and local
+references; and Exhibition Center’s digital-space architecture and distinct
+public-art procurement methods.
+
+Primary URLs cited:
+
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page28.html
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=8F1493D5192F9C06
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page239.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page241.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page228.html
+- https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page154.html
+- https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=21E7260FD75E88D4
+- https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=2809EC1898BBBD56
+
+TBC and source exhaustion: the fetched DORTS route, architecture,
+procurement, tunnel-method, East Extension technical and public-art records
+did not yield station-specific civil contractors and final accounts,
+construction-era names or rename gazettes, complete paid-area/street-transfer
+classifications or station-level depot rosters for BL19–BL23. No complete
+BL19/BL20 public-art record was found; no absence claim was made.
+
+Conflicts published: the 30.6-kilometre/twelve-station CN531 scope versus the
+approximately 2,913-metre East Extension worksite scope; source-era BL16/17/18
+labels versus current BL21/22/23 operating codes; Kunyang’s NT$5 million
+programme ceiling versus its NT$4,999,000 current artwork expenditure; and
+historical DORTS flood-table labels versus current TRTC codes. No station
+colour-prefix audit applies.
+
+Contradicted the corpus: the prior zero-word BL19/BL20 results and thin
+BL21–BL23 art-only entries were superseded by full DORTS tunnel, technical,
+architecture, procurement and public-art records. No other corpus fact was
+contradicted in this batch.
+
+Final gates for this batch: fresh build/verify, explicit `npm test` and
+`git diff --check` must pass before commit and push. Bannan is complete after
+this commit; next is the audit and first six-station batch of the next line.
+
 # Run 31 — Part 1 Bannan BL07–BL12, 18 August 2026
 
 Deepened six Bannan station pages from full DORTS and contractor primary pages.
