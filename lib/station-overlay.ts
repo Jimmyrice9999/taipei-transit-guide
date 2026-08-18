@@ -347,6 +347,118 @@ const TAIPEI_LAW_WENHU_COST: Source = {
   note: 'The full official legal-system page reproduces DORTS’s cost-allocation example for CC409 and its table of joint-development deductions for BR2, BR5 and BR6. The original-language table beginning 聯合開發應予扣除之費用 was checked on the linked page.',
 }
 
+const DORTS_WENHU_LAND_DEVELOPMENT_GENERAL: Source = {
+  id: 'dorts-wenhu-land-development-general',
+  title: 'Completed Wenhu Line land-development bases',
+  titleOriginal: '捷運土地開發實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page122.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page records the completed Wenhu land-development list and the Technology Building and Daan development bases, including investors, locations, completion dates, building levels and Taipei City property shares. The original-language entries beginning 科技大樓站（交七） and 大安站（交六） were checked on the linked page.',
+}
+
+const DORTS_WENHU_ZHONGXIAO_DEVELOPMENT: Source = {
+  id: 'dorts-wenhu-zhongxiao-development',
+  title: 'Zhongxiao Fuxing joint-development project',
+  titleOriginal: '捷運開發大樓基本設計概要',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page110.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page records the Zhongxiao Fuxing development site, its land-use planning, contract and completion milestones, and the co-construction relationship between the Wenhu and Bannan facilities. The original-language section beginning 初期路網忠孝復興站交4、交10 was checked on the linked page.',
+}
+
+const DORTS_WENHU_DEVELOPMENT_MANAGEMENT: Source = {
+  id: 'dorts-wenhu-development-management',
+  title: 'Joint-development management at Zhongxiao Fuxing',
+  titleOriginal: '捷運土地開發實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page115.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page records the unified-management model for the Zhongxiao Fuxing development, its investor proposal and investment-contract dates, the building-floor correction, and the city’s continuing property and management concerns. The original-language paragraphs beginning 目前捷運開發基地 and 忠孝復興站（BR4）開發大樓 were checked on the linked page.',
+}
+
+const DORTS_WENHU_TRANSFER_PLANNING: Source = {
+  id: 'dorts-wenhu-transfer-planning',
+  title: 'Rapid-transit station planning and transfer forms',
+  titleOriginal: '捷運車站規劃與設計實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page classifies Nanjing Fuxing, Zhongxiao Fuxing and Daan as central interchange stations and explains that non-parallel interchanges require vertical circulation between platforms at different levels. The original-language paragraphs beginning 南京復興站（文湖線及松山新店線交會） were checked on the linked page.',
+}
+
+const TRTC_WENHU_OPERATIONS: Source = {
+  id: 'trtc-wenhu-operational-log',
+  title: 'Taipei Metro operational information',
+  titleOriginal: '臺北捷運營運資訊',
+  publisher: 'Taipei Rapid Transit Corporation',
+  url: 'https://ssl.metro.taipei/metrooperation/',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full live operational table checked on 18 August 2026 records the BR10 signalling event of 2 August, the BR10 passenger medical emergency of 5 August, and the BR12 dropped-object and train-equipment events. The original-language rows were checked on the linked page; this is a time-stamped operational log, not a complete retrospective incident register.',
+}
+
+const TRTC_WENHU_BR09_STATION: Source = {
+  id: 'trtc-wenhu-br09-station',
+  title: 'Daan station information',
+  titleOriginal: '大安站車站資訊',
+  publisher: 'Taipei Rapid Transit Corporation',
+  url: 'https://web.metro.taipei/pages2026/WebStation/011/1',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full current station page supports Daan’s Wenhu/Tamsui-Xinyi interchange, the separate line addresses and the exit descriptions. The labelled station and interchange sections were checked on the linked page.',
+}
+
+const TRTC_WENHU_BR10_STATION: Source = {
+  id: 'trtc-wenhu-br10-station',
+  title: 'Zhongxiao Fuxing station information',
+  titleOriginal: '忠孝復興站車站資訊',
+  publisher: 'Taipei Rapid Transit Corporation',
+  url: 'https://web.metro.taipei/pages2026/WebStation/010/1',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full current station page supports the Wenhu/Bannan interchange, the transfer-corridor location near Exit 2 and the station’s SOGO exit context. The labelled station, facility and exit sections were checked on the linked page.',
+}
+
+const TRTC_WENHU_BR11_STATION: Source = {
+  id: 'trtc-wenhu-br11-station',
+  title: 'Nanjing Fuxing station information',
+  titleOriginal: '南京復興站車站資訊',
+  publisher: 'Taipei Rapid Transit Corporation',
+  url: 'https://web.metro.taipei/pages2026/WebStation/009/1',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full current station page supports the Wenhu/Songshan-Xindian interchange and the paid-area transfer lift next to the gates. The labelled station, facility and exit sections were checked on the linked page.',
+}
+
 /**
  * Keyed by station code.
  *
@@ -859,16 +971,445 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
       },
     ],
   },
-  BR07: { structure: 'elevated', engineering: 'BR7', exits: 1 },
-  BR08: { structure: 'elevated', engineering: 'BR6', exits: 1 },
-  BR09: { structure: 'elevated', engineering: 'BR5', exits: 6 },
-  BR10: { structure: 'elevated', engineering: 'BR4', exits: 5 },
-  BR11: { structure: 'elevated', engineering: 'BR3', exits: 8 },
+  BR07: {
+    structure: 'elevated',
+    engineering: 'BR7',
+    exits: 1,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_ROUTE,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_COLOUR,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+    ],
+    prose: [
+      {
+        text: 'Liuzhangli is in the middle of the original Muzha section, whose project record routes from the zoo through Wanfang Road and Xinglong Road toward the Xinhai approach and the central city.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'Its architecture belonged to CC407 with Daan, Technology Building and Linguang, and the package record gives the Liuzhangli station a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'The station was therefore delivered as part of a four-station architectural package rather than as an isolated design commission.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'DORTS says the twelve Muzha stations had to pass through design, tender and construction within one year, leading to a systematised, modular and standardised design strategy.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'That strategy was a response to the road-centre sites and to the need to keep station mass from pressing against existing roadside buildings.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The architecture brief identifies two structural families for those sites: a single-column cantilever and a conventional beam-and-column frame.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The alignment history records that an earlier Dunhua South and North Road proposal was changed to Fuxing South and North Roads after concerns about the existing tree-lined avenue and the scale of stations in narrow streets.',
+        source: DORTS_WENHU_HIGH_RISE_ROUTE.id,
+      },
+      {
+        text: 'DORTS also describes the selected urban corridor as dense commercial and residential frontage where passenger and economic benefits were part of the route decision.',
+        source: DORTS_WENHU_HIGH_RISE_ROUTE.id,
+      },
+      {
+        text: 'The built vocabulary used aluminium panels, laminated glass, curved roofs and frames to create a common modern image along the elevated section.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'DORTS later judged that heavy outer frames and detail choices weakened the intended lightweight transparency and reduced public acceptance of the result.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'The Muzha station type used elevated side platforms, platform doors, curved metal-composite roofs, metal-and-glass envelopes and transparent lifts without platform air-conditioning.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'The section’s common light-blue base colour was later described by DORTS as visually monotonous when repeated from station to station.',
+        source: DORTS_WENHU_HIGH_RISE_COLOUR.id,
+      },
+      {
+        text: 'Its construction contract structure separated turnkey system work from domestic civil, architectural, tunnel and depot work, with operation treated as a separate contract role.',
+        source: DORTS_WENHU_TECHNICAL_CONTRACTS.id,
+      },
+      {
+        text: 'The rubber-tyre concrete running surface later required night repairs for spalling, cracking, roughness and noise, using epoxy mortar and emery.',
+        source: DORTS_WENHU_TECHNICAL_RUNNING_SURFACE.id,
+      },
+      {
+        text: 'The Muzha section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The official pages checked here do not identify CC407’s individual contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+    ],
+  },
+  BR08: {
+    structure: 'elevated',
+    engineering: 'BR6',
+    exits: 1,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_COLOUR,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+      DORTS_WENHU_LAND_DEVELOPMENT_GENERAL,
+      TAIPEI_LAW_WENHU_COST,
+    ],
+    prose: [
+      {
+        text: 'Technology Building is on the section that the project record carries from the zoo through Wanfang and Xinglong roads before turning north through the central city.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'Its architecture belonged to CC407 with Daan, Liuzhangli and Linguang, and the package record gives the station a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'The station’s development base produced the Technology Building, invested in by Hanyang Construction at Fuxing South Road Section 2 near the Heping East Road Section 2 intersection.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'DORTS records it as the first completed Muzha-line development building, finished in February 1997 with three basement levels and fourteen floors above ground for offices.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'The city retained the basement-level shopping area, general offices on floors one through four and forty-five basement parking spaces.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'The official cost-allocation table lists the BR6 joint-development deduction as NT$164.20 million in construction cost, NT$3.116 million in detailed design and NT$167.316 million in total.',
+        source: TAIPEI_LAW_WENHU_COST.id,
+      },
+      {
+        text: 'Those figures describe the joint-development deduction, not the complete CC407 station construction account.',
+        source: TAIPEI_LAW_WENHU_COST.id,
+      },
+      {
+        text: 'DORTS designed the Muzha stations as a standardised family because all twelve had to move through design, tender and construction within one year.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The road-centre sites used either single-column cantilevers or ordinary beam-and-column frames, depending on the available urban footprint.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The common envelope combined aluminium panels, laminated glass, curved roofs and frames, with a light-blue base colour across the Muzha section.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'DORTS later acknowledged that the outer-frame thickness and detail treatment prevented the built stations from appearing as transparent and lightweight as intended.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'The elevated side-platform type used platform doors, transparent lifts and metal-and-glass walls, but its platforms were not air-conditioned.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'The construction model separated turnkey system work from domestic civil, architecture, tunnel and depot work, with operation occupying a separate contract role.',
+        source: DORTS_WENHU_TECHNICAL_CONTRACTS.id,
+      },
+      {
+        text: 'The rubber-tyre guideway’s concrete running surface later needed night repairs for spalling, cracking, roughness and noise.',
+        source: DORTS_WENHU_TECHNICAL_RUNNING_SURFACE.id,
+      },
+      {
+        text: 'The section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The official pages checked here do not identify CC407’s individual contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+    ],
+  },
+  BR09: {
+    structure: 'elevated',
+    engineering: 'BR5',
+    exits: 6,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_ROUTE,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+      DORTS_WENHU_LAND_DEVELOPMENT_GENERAL,
+      TAIPEI_LAW_WENHU_COST,
+      DORTS_WENHU_TRANSFER_PLANNING,
+      TRTC_WENHU_BR09_STATION,
+    ],
+    prose: [
+      {
+        text: 'Daan is one of the central-city stations on the original Muzha corridor, where the project record turns from the Wanfang and Xinhai approach toward the Fuxing and Heping road network.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'Its architecture belonged to CC407 with Technology Building, Liuzhangli and Linguang, and the package record gives Daan a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'DORTS’s land-development volume records the Daan Plaza base at the junction of Xinyi Road Section 4 and Fuxing South Road.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'Huafei Construction invested in the building, which was completed at the end of 1999 with four basement levels and eighteen floors above ground for offices.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'The city’s property share was recorded as offices on floors seven through ten and fifteen basement parking spaces.',
+        source: DORTS_WENHU_LAND_DEVELOPMENT_GENERAL.id,
+      },
+      {
+        text: 'The cost-allocation table lists the BR5 joint-development deduction as NT$212.52 million in construction cost, NT$3.577 million in detailed design and NT$216.097 million in total.',
+        source: TAIPEI_LAW_WENHU_COST.id,
+      },
+      {
+        text: 'Those amounts are the joint-development deduction recorded by the city, not a final CC407 station-package account.',
+        source: TAIPEI_LAW_WENHU_COST.id,
+      },
+      {
+        text: 'TRTC’s current station page identifies Daan as a Wenhu and Tamsui-Xinyi interchange, with the two line facilities listed at different addresses and the transfer facilities inside the paid area.',
+        source: TRTC_WENHU_BR09_STATION.id,
+      },
+      {
+        text: 'DORTS’s planning manual classifies Daan as a non-parallel interchange, where vertical circulation connects platforms at different levels rather than a same-level crossing.',
+        source: DORTS_WENHU_TRANSFER_PLANNING.id,
+      },
+      {
+        text: 'The architecture programme used standardised and modular station components because all twelve Muzha stations had to be designed, tendered and built within a year.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'Those components combined curved metal-composite roofs, metal and glass envelopes, transparent lifts and platform doors without air-conditioning on the platforms.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'The common light-blue base colour and repeated frame vocabulary were intended to unify the elevated section, although DORTS later judged the heavy frames less transparent than intended.',
+        source: DORTS_WENHU_HIGH_RISE_COLOUR.id,
+      },
+      {
+        text: 'The project separated turnkey system work from domestic civil, architecture, tunnel and depot work, leaving operation as a separate contract role.',
+        source: DORTS_WENHU_TECHNICAL_CONTRACTS.id,
+      },
+      {
+        text: 'The Muzha section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The official pages checked here do not identify CC407’s individual contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+    ],
+  },
+  BR10: {
+    structure: 'elevated',
+    engineering: 'BR4',
+    exits: 5,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_ROUTE,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+      DORTS_WENHU_ZHONGXIAO_DEVELOPMENT,
+      DORTS_WENHU_DEVELOPMENT_MANAGEMENT,
+      DORTS_WENHU_TRANSFER_PLANNING,
+      TRTC_WENHU_BR10_STATION,
+      TRTC_WENHU_OPERATIONS,
+    ],
+    prose: [
+      {
+        text: 'Zhongxiao Fuxing is the central interchange between the Wenhu and Bannan lines.',
+        source: DORTS_WENHU_TRANSFER_PLANNING.id,
+      },
+      {
+        text: 'The project record brings the original Muzha corridor through Fuxing South and North Roads before it reaches Zhongshan Junior High.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The high-elevated-station volume places it in CC403 with Songshan Airport, Zhongshan Junior High and Nanjing East Road, and gives the station a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'DORTS’s station-planning manual identifies Zhongxiao Fuxing as a non-parallel interchange where vertical circulation joins platforms at different levels.',
+        source: DORTS_WENHU_TRANSFER_PLANNING.id,
+      },
+      {
+        text: 'TRTC’s current page places the Wenhu and Bannan transfer corridor near Exit 2 and records separate paid-area facilities for the two lines.',
+        source: TRTC_WENHU_BR10_STATION.id,
+      },
+      {
+        text: 'The joint-development site covers the southwest side of the Zhongxiao East Road Section 3 and Fuxing South Road intersection, with a total development area of 7,691 square metres.',
+        source: DORTS_WENHU_ZHONGXIAO_DEVELOPMENT.id,
+      },
+      {
+        text: 'DORTS’s concept design joined the building’s first through third floors to the Wenhu facilities and its basement levels one through three to the Bannan entrances.',
+        source: DORTS_WENHU_ZHONGXIAO_DEVELOPMENT.id,
+      },
+      {
+        text: 'The city published the development plan in November 1997, sought investors in March 1999, signed the investment contract in January 2000 and recorded completion and an occupancy permit in November 2006.',
+        source: DORTS_WENHU_ZHONGXIAO_DEVELOPMENT.id,
+      },
+      {
+        text: 'The project was planned for retail and department-store use, with public paid parking and reserved connections to the rapid-transit facilities.',
+        source: DORTS_WENHU_ZHONGXIAO_DEVELOPMENT.id,
+      },
+      {
+        text: 'DORTS later described the Zhongxiao Fuxing building as one of the larger city-managed development assets and recorded a unified-management model with investor Hongtong.',
+        source: DORTS_WENHU_DEVELOPMENT_MANAGEMENT.id,
+      },
+      {
+        text: 'The same management record says the original proposal had six basement levels and thirteen floors above ground, but the transit mezzanine was counted as an additional floor, producing a six-basement, fourteen-floor design.',
+        source: DORTS_WENHU_DEVELOPMENT_MANAGEMENT.id,
+      },
+      {
+        text: 'The common Muzha station design used curved roofs, aluminium panels, laminated glass, platform doors and transparent lifts, with no platform air-conditioning.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'DORTS later judged that the heavy outer frames reduced the intended lightweight transparency of the standardised station image.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'The live TRTC log records a 2 August 2026 signalling anomaly in the Zhongxiao Fuxing section that briefly stopped trains for about two minutes while the rest of the line remained unaffected.',
+        source: TRTC_WENHU_OPERATIONS.id,
+      },
+      {
+        text: 'The same log records a 5 August passenger medical emergency at the station; the system continued normal operation while station staff used an AED assessment and CPR before handing over to paramedics.',
+        source: TRTC_WENHU_OPERATIONS.id,
+      },
+      {
+        text: 'The Muzha section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The individual CC403 contractor, award date and final station-package value are not identified in the full primary pages checked here, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+    ],
+  },
+  BR11: {
+    structure: 'elevated',
+    engineering: 'BR3',
+    exits: 8,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_ROUTE,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_COLOUR,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+      DORTS_WENHU_TRANSFER_PLANNING,
+      TRTC_WENHU_BR11_STATION,
+    ],
+    prose: [
+      {
+        text: 'Nanjing Fuxing is on the urban alignment that the project record carries from Heping East Road into Fuxing South and North Roads before reaching Zhongshan Junior High.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The station architecture belonged to CC403 with Songshan Airport, Zhongshan Junior High and Zhongxiao Fuxing, and the package record gives it a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'DORTS’s planning manual classifies Nanjing Fuxing as a non-parallel interchange between Wenhu and Songshan-Xindian, requiring vertical circulation between platforms at different levels.',
+        source: DORTS_WENHU_TRANSFER_PLANNING.id,
+      },
+      {
+        text: 'TRTC’s current station page records the transfer lift inside the paid area beside the gates and shows the two lines’ platform lifts separately.',
+        source: TRTC_WENHU_BR11_STATION.id,
+      },
+      {
+        text: 'The route history records that the earlier Dunhua South and North Road proposal was changed to Fuxing South and North Roads because of the existing tree-lined avenue and the pressure of stations in narrow streets.',
+        source: DORTS_WENHU_HIGH_RISE_ROUTE.id,
+      },
+      {
+        text: 'DORTS describes the chosen corridor as dense commercial and residential frontage where the passenger and economic benefits of the alignment mattered.',
+        source: DORTS_WENHU_HIGH_RISE_ROUTE.id,
+      },
+      {
+        text: 'The station was designed within a twelve-station programme that had to complete design, tender and construction in one year, so its structure followed the section’s modular and standardised family.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The road-centre station forms used either single-column cantilevers or conventional beam-and-column frames according to the site.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The common materials were aluminium panels, laminated glass, curved roofs and frames, later judged by DORTS to be heavier and less transparent than the design intent.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'The elevated side-platform type used platform doors, transparent lifts and metal-and-glass envelopes without platform air-conditioning.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'Its light-blue base colour was part of the section-wide visual system rather than a station-specific colour choice.',
+        source: DORTS_WENHU_HIGH_RISE_COLOUR.id,
+      },
+      {
+        text: 'The project divided turnkey system work from domestic civil, architecture, tunnel and depot work, with operation treated as another contract component.',
+        source: DORTS_WENHU_TECHNICAL_CONTRACTS.id,
+      },
+      {
+        text: 'The rubber-tyre concrete running surface later required night work for spalling, cracking, roughness and noise, with epoxy mortar and emery used in repairs.',
+        source: DORTS_WENHU_TECHNICAL_RUNNING_SURFACE.id,
+      },
+      {
+        text: 'The section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The full primary pages checked here do not identify CC403’s individual contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+    ],
+  },
   BR12: {
     structure: 'elevated',
     engineering: 'BR2',
     exits: 1,
-    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_ARCHITECTURE],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_HIGH_RISE_PACKAGES,
+      DORTS_WENHU_HIGH_RISE_DESIGN,
+      DORTS_WENHU_HIGH_RISE_ROUTE,
+      DORTS_WENHU_HIGH_RISE_MATERIALS,
+      DORTS_WENHU_HIGH_RISE_COLOUR,
+      DORTS_WENHU_HIGH_RISE_FORM,
+      DORTS_WENHU_TECHNICAL_CONTRACTS,
+      DORTS_WENHU_TECHNICAL_RUNNING_SURFACE,
+      DORTS_WENHU_OPENING_HISTORY,
+      TRTC_WENHU_OPERATIONS,
+    ],
     prose: [
       {
         text: 'At BR12, the Neihu extension leaves the Muzha section from the station’s tail tracks and follows Fuxing North Road toward Minzu East Road before entering Songshan Airport.',
@@ -877,6 +1418,62 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
       {
         text: 'DORTS’s representative Zhongshan Junior High station drawing places this urban elevated work in a design constrained by road-side sites and single-column loads: its mass was kept away from adjacent buildings and expressed in steel and glass.',
         source: DORTS_WENHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'The high-elevated-station volume places Zhongshan Junior High in CC403 with Songshan Airport, Nanjing East Road and Zhongxiao Fuxing, and gives the station a 70-metre platform.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
+      },
+      {
+        text: 'The project’s current route description continues from the station toward Fuxing North Road and Minzu East Road, while the architecture source uses the station as its example of the constrained road-side design problem.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'DORTS says all twelve Muzha stations had to be designed, tendered and built in one year, which drove the use of systematised, modular and standardised station components.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The two structural responses were a single-column cantilever and a conventional beam-and-column frame, selected according to the existing site.',
+        source: DORTS_WENHU_HIGH_RISE_DESIGN.id,
+      },
+      {
+        text: 'The wider alignment history records the change from a proposed Dunhua corridor to Fuxing South and North Roads because of trees, narrow streets and the pressure of trains beside buildings.',
+        source: DORTS_WENHU_HIGH_RISE_ROUTE.id,
+      },
+      {
+        text: 'The standard station envelope combined aluminium panels, laminated glass, curved roofs and frames, although DORTS later judged that thick outer frames reduced the intended lightweight transparency.',
+        source: DORTS_WENHU_HIGH_RISE_MATERIALS.id,
+      },
+      {
+        text: 'The Muzha elevated side-platform type used platform doors, transparent lifts and metal-and-glass envelopes, with no platform air-conditioning.',
+        source: DORTS_WENHU_HIGH_RISE_FORM.id,
+      },
+      {
+        text: 'Its light-blue base colour belonged to the repeated Muzha-section system, which DORTS later described as visually monotonous when used without station-specific variation.',
+        source: DORTS_WENHU_HIGH_RISE_COLOUR.id,
+      },
+      {
+        text: 'The construction arrangement divided turnkey system work from domestic civil, architecture, tunnel and depot work, while operation occupied a separate contract role.',
+        source: DORTS_WENHU_TECHNICAL_CONTRACTS.id,
+      },
+      {
+        text: 'The station’s rubber-tyre concrete running surface shared the later section-wide maintenance problems of spalling, cracking, roughness and noise.',
+        source: DORTS_WENHU_TECHNICAL_RUNNING_SURFACE.id,
+      },
+      {
+        text: 'TRTC’s live log records a 4 August 2026 dropped-object inspection near the station, where staff removed a blue tarpaulin from the track area in about three minutes while normal operation continued.',
+        source: TRTC_WENHU_OPERATIONS.id,
+      },
+      {
+        text: 'The same log records a 9 June 2026 train-door equipment alert between Songshan Airport and Zhongshan Junior High; about 190 passengers changed trains at the station and the next train arrived about one minute later.',
+        source: TRTC_WENHU_OPERATIONS.id,
+      },
+      {
+        text: 'The Muzha section opened on 28 March 1996 as Taiwan’s first driverless medium-capacity metro.',
+        source: DORTS_WENHU_OPENING_HISTORY.id,
+      },
+      {
+        text: 'The full primary pages checked here do not identify CC403’s individual contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_HIGH_RISE_PACKAGES.id,
       },
     ],
   },

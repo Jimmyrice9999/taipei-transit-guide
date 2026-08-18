@@ -276,6 +276,139 @@ only.
   station-specific contractor, award date, final CC407 value and individual
   public-art row are TBC.
 
+## Additional established claims — BR07–BR12
+
+### Technology Building and Daan land-development records
+
+**Source:** “Completed Wenhu Line land-development bases” / `捷運土地開發實務`
+— Taipei City Department of Rapid Transit Systems (`臺北市政府捷運工程局`),
+PRIMARY, High confidence because the full volume identifies the completed
+development bases, investors, locations and city property shares.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page122.html
+
+Original-language text checked in full:
+
+> `文湖線土地開發計有科技大樓站（交七）、大安站（交六）、中山國中站（交三）、麟光站（交九）、忠孝復興站（交四、十）、萬芳社區站（交十二）、木柵站（交十三）、港墘站（交九）、內湖站（交十一）、辛亥站（交十）等10基地，目前皆已完工辦理出租售。`
+
+> `科技大樓站（交七）基地之「科技大樓」由投資人漢洋建設股份有限公司投資興建，位於臺北市復興南路2段近和平東路2段口，於86年2月完工，為木柵線第1個完工之地下3層、地上14層商辦大樓，北市府取得地下1樓商場、地上1至4樓一般事務所及地下45部停車位。`
+
+> `大安站（交六）基地之「捷運大安廣場」由投資人華非建設公司投資興建，位於臺北市信義路4段與復興南路2段交會處，為88年底完工之地下4層、地上18層商辦大樓。`
+
+The same page records Taipei City’s Daan offices on floors 7–10 and fifteen
+basement parking spaces. These are land-development records, not complete
+CC407 station contract accounts.
+
+### Zhongxiao Fuxing development
+
+**Source:** “Zhongxiao Fuxing joint-development project” / `捷運開發大樓基本
+設計概要` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page110.html
+
+Original-language text checked in full:
+
+> `初期路網之忠孝復興站交4、交10開發案位於臺北市忠孝東路3段與復興南路交口西南側，開發範圍包含交通用地及毗鄰土地面積共計7,691m2。`
+
+> `本開發大樓地上1至3層與捷運文湖線共構，地下1至3層則與捷運南港線出入口共構。`
+
+> `本局86年11月公告實施木柵線忠孝復興站聯合開發計畫……88年3月公告徵求投資人、89年1月與投資人簽訂投資契約、95年11月大樓完工並取得使用執照。`
+
+The page says the concept design included the station hall, entrances and
+ventilation facilities, and that the development was planned for department-
+store and retail use with public paid parking.
+
+**Source:** “Joint-development management at Zhongxiao Fuxing” /
+`捷運土地開發實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page115.html
+
+Original-language text checked in full:
+
+> `目前捷運開發基地，採統一經營方式管理有文湖線忠孝復興站（BR4）、蘆洲線徐匯中學站、文湖線內湖站等3基地。`
+
+> `北市府於89年1月15日與宏通公司完成簽定投資契約書。`
+
+The same page records the proposal’s original six-basement, thirteen-floor
+form, the later mezzanine counting correction to six basements and fourteen
+floors, and the city’s property-management concerns.
+
+### Interchange planning and current operator pages
+
+**Source:** “Rapid-transit station planning and transfer forms” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html
+
+Original-language text checked in full:
+
+> `南京復興站（文湖線及松山新店線交會）、忠孝復興站（文湖線及板南線交會）、大安站（文湖線及淡水信義線交會）等均為交會轉乘車站。`
+
+> `文湖線與松山新店線之南京復興站、文湖線與板南線之忠孝復興站、文湖線與淡水信義線之大安站等為東西向路線與南北向路線之交會站，此類車站其站內轉乘旅客的動線必須透過垂直動線於不同高程的月臺進行交會轉乘。`
+
+The current TRTC pages were fetched in full for the three interchange stations:
+
+- Daan / BR09: https://web.metro.taipei/pages2026/WebStation/011/1
+  — the page labels the Wenhu and Tamsui-Xinyi facilities separately and
+  records the interchange in the station header and paid-area facility rows.
+- Zhongxiao Fuxing / BR10: https://web.metro.taipei/pages2026/WebStation/010/1
+  — the page labels the Wenhu and Bannan lines and places the transfer-corridor
+  facilities beside Exit 2.
+- Nanjing Fuxing / BR11: https://web.metro.taipei/pages2026/WebStation/009/1
+  — the page labels the Wenhu and Songshan-Xindian lines and records the
+  transfer lift inside the paid area next to the gates.
+
+These operator pages establish the current transfer arrangement; the planning
+manual supplies the different-level/vertical-circulation explanation. No
+walking-distance figure was invented.
+
+### Current operational incidents
+
+**Source:** “Taipei Metro operational information” / `臺北捷運營運資訊` — Taipei
+Rapid Transit Corporation (`臺北大眾捷運股份有限公司`), PRIMARY, High confidence
+for the page state checked on 18 August 2026.
+
+URL: https://ssl.metro.taipei/metrooperation/
+
+Original-language rows checked in full:
+
+> `2026/08/02 11:51 | 文湖線 | BR10 忠孝復興 | 號誌故障 | 系統營運正常 | … | 2日約12時，文湖線忠孝復興站區間出現號誌訊號異常。列車運行僅該區段短暫受影響臨時停車約2分鐘，其他路段不受影響。經本公司維修人員處理後恢復正常。`
+
+> `2026/08/04 10:53 | 文湖線 | BR12 中山國中 | 撿拾掉落物 | 系統營運正常 | … | 後續安排人員下軌道撿拾。處理時間約3分鐘。`
+
+> `2026/06/09 16:59 | 文湖線 | BR12 中山國中 | 列車設備異常 | 系統營運正常 | … | 行控中心依SOP請車上約190位旅客於中山國中站換乘，下一班列車約1分鐘後進站載客。`
+
+The log is explicitly time-stamped and is not treated as a complete historical
+incident register.
+
+### Station-by-station disposition for the second batch
+
+- **BR07 Liuzhangli:** CC407 and the common Muzha architecture, route-history,
+  guideway and opening records establish the station’s package context and
+  engineering environment. No individual contractor, award date, final
+  package value, public-art row or station-specific incident survived this
+  search; those fields are TBC.
+- **BR08 Technology Building:** CC407, the first completed Muzha land-
+  development building, its investor/location/completion record, city property
+  share and BR6 joint-development deduction are established. The deduction is
+  not the complete CC407 station account.
+- **BR09 Daan:** CC407, the Daan Plaza development and BR5 joint-development
+  deduction are established. Daan’s current operator interchange arrangement
+  and DORTS’s vertical-circulation description are both published; no
+  contractor or final CC407 station-package value is established.
+- **BR10 Zhongxiao Fuxing:** CC403, the co-constructed Wenhu/Bannan development,
+  planning and completion milestones, unified-management history, current
+  paid-area transfer details, and the two August 2026 TRTC log entries are
+  established. The individual contractor and final CC403 value are TBC.
+- **BR11 Nanjing Fuxing:** CC403, the non-parallel interchange classification,
+  current paid-area transfer lift and common route/design history are
+  established. The individual contractor, award date and final CC403 value
+  remain TBC.
+- **BR12 Zhongshan Junior High:** The Neihu/Muzha division at the tail tracks,
+  CC403 package, road-side architecture example, and the two time-stamped
+  TRTC operational rows are established. The individual contractor, award date
+  and final CC403 value remain TBC.
+
 ## Conflicts
 
 1. **Tunnel wording and extent:** The current DORTS project record describes
@@ -319,6 +452,23 @@ only.
   and its starting page, but the direct Basic HTML article URL returned a cache
   miss. Its search lead was not used as evidence; the independently fetched
   no.45 risk page was used for the Wanfang noise claim instead.
+- **Individual CC403 and CC407 contractor, award date and final value** —
+  Checked 2026-08-18. The full package page, project record and development
+  volumes identify package scope, development investors and selected
+  development costs, but do not name the individual station contractor or
+  final civil/architecture account. No tender-aggregator lead was promoted.
+- **BR07, BR11 and BR12 station-specific public-art rows** — Checked 2026-08-18.
+  The full official Wenhu public-art table and the DORTS architecture pages
+  were read; no row that can be assigned to these stations was promoted. This
+  is not treated as proof that no artwork exists.
+- **Walking distances for BR09–BR11 transfers** — Checked 2026-08-18. The full
+  DORTS planning page and current TRTC station pages establish vertical
+  circulation, paid-area transfer facilities and exits, but publish no single
+  walking-distance figure. No distance was invented.
+- **Retrospective BR10/BR12 incident history** — Checked 2026-08-18. TRTC’s
+  full live operational table supplies dated entries current at the fetch time,
+  but it explicitly functions as an operational log rather than a complete
+  historical register. Older incidents were not inferred from its absence.
 
 ## Stated gaps
 
@@ -336,3 +486,11 @@ only.
 - Station-specific public-art assignments and feeder-bus descriptions remain
   TBC for these pages. The operator’s complete art register and full PTO/ebus
   route pages would settle them.
+- The BR07–BR12 contractor, award-date and final-package gaps remain open. A
+  period DORTS award notice, completion certificate or final account would
+  settle them.
+- BR09–BR11 transfer geometry is described qualitatively as vertical and
+  paid-area circulation, but no official walking distance was found. A dated
+  TRTC transfer diagram with a measurement would settle it.
+- BR07, BR11 and BR12 station-specific public art and all six stations’ feeder
+  bus prose remain TBC pending full operator or PTO records.

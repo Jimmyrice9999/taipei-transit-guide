@@ -8136,3 +8136,87 @@ verify`, `npm test`, and `npm run research` passed; the full unit suite reports
 the new source notes added Han characters; `npm run fonts` regenerated only the
 needed BR subset and manifest entries. Claims tests, the claims baseline and
 checkers were not changed.
+
+# Run 31 — Part 1 Wenhu station prose, BR07–BR12, 18 August 2026
+
+## Sourced
+
+This batch deepened six Wenhu Line station pages. The resulting body-prose
+counts are BR07 364 words, BR08 329, BR09 332, BR10 383, BR11 335, and BR12
+405, for 2,148 words total. Every sentence is cited. The new evidence is from
+full primary pages and records: DORTS land-development pages and technical
+bulletins, TRTC station pages, and the TRTC operational log.
+
+The principal fetched sources were:
+
+- DORTS Wenhu land-development article, pp. 122 and 115:
+  https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page122.html and
+  https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page115.html
+- DORTS Zhongxiao Fuxing development article, p. 110:
+  https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page110.html
+- DORTS transfer-planning technical article, p. 37:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html
+- TRTC current station pages for Daan, Zhongxiao Fuxing and Nanjing Fuxing:
+  https://web.metro.taipei/pages2026/WebStation/011/1,
+  https://web.metro.taipei/pages2026/WebStation/010/1, and
+  https://web.metro.taipei/pages2026/WebStation/009/1
+- TRTC operational log, fetched in full:
+  https://ssl.metro.taipei/metrooperation/
+- Reused full Wenhu project, architecture, technical-bulletin and government
+  cost-record sources cited by the preceding BR01–BR06 batch, including:
+  https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94,
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page75.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page76.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page78.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page80.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page82.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page83.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page84.html,
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page35.html,
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page9.html,
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page252.html,
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no45/files/basic-html/page143.html,
+  https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page124.html,
+  https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page126.html,
+  https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page59.html, and
+  https://www.laws.taipei.gov.tw/Law/LawSearch/LawArticleContent/FL013179?date=20060227
+
+The added material covers the Wenhu land-development interfaces at Technology
+Building, Daan, and Zhongxiao Fuxing; the proposal, investment, contract and
+completion chronology published for the Zhongxiao Fuxing development; the
+non-parallel, different-level interchange planning at Nanjing Fuxing and
+Zhongxiao Fuxing; current paid-area interchange arrangements at Daan, Zhongxiao
+Fuxing and Nanjing Fuxing; and dated examples from the live TRTC log for
+Zhongxiao Fuxing and Zhongshan Junior High. The source file records the
+original-language evidence and the page-by-page disposition.
+
+## TBC
+
+The batch does not claim individual CC403/CC407 contract awardees, contract
+dates or final values: the checked pages did not establish those fields. No
+new BR07, BR11 or BR12 public-art record, walking distance, or feeder-bus
+description was found in the searched primary families. The live operational
+log is a current time-scoped record, not a retrospective incident history.
+
+## Contradicted the corpus
+
+The earlier zero-word or narrow station entries were superseded by evidence
+from the DORTS land-development and technical series, current TRTC station
+pages and the live operational log. No previously published factual sentence
+was retained without a resolving source.
+
+## Conflicts found
+
+The engineering source uses construction-era station-package labels while the
+current operator pages use BR station codes; these are reported as separate
+identifiers, not silently equated. The DORTS planning sources describe
+interchange geometry qualitatively, while current TRTC pages describe the
+operational paid-area facilities; no walking-distance value was invented. No
+new numerical source conflict was resolved or hidden.
+
+No colour-prefix audit applies to a station batch. The required gates were run:
+the citation and research checks passed, the full test suite passed (185/185),
+and the verification build passed after regenerating the needed BR font subset
+and manifest entries. The claims test, claims baseline and checkers were not
+changed. The next batch is BR13–BR18.
