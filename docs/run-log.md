@@ -10553,3 +10553,48 @@ Next: trunk (19 named 幹線 routes) — the last group in this run's scope. No
 colour word appeared in any trunk name during the earlier full audit, so no
 false-prefix exclusion is expected there, but the check will be repeated
 properly when that group is built.
+
+## Part 3c continued — trunk, all 19 routes, checked 19 August 2026, Part 3c complete
+
+False-prefix audit: none of the 19 committed `trunk` route names contain any
+of 紅/藍/綠/棕/橘/黃 anywhere — the audit result for this group is that there
+was no colour-character candidate to check at all, unlike every colour group.
+The official catalogue's `幹線專車` heading lists the same 19 labels as the
+TDX group exactly.
+
+All 19 full official schedule pages were fetched. They establish current
+termini, service span, fare class and operator contact; none establish
+opening date, corridor rationale or dated operator changes, which are TBC
+throughout — including the widely-repeated secondary claim that Taipei's
+幹線公車 programme began rolling out in 2013, which was not verified here
+against a primary DORTS/PTO record and is not published on any route page.
+Trunk routes are not MRT feeders by architecture (docs/bus-architecture.md's
+classification precedence): no "Feeder line" fact is shown on any trunk page,
+and the drawn route-map path uses the neutral #5c5650 tone rather than any
+MRT colour, confirmed by inspecting the rendered output. All 19 pages publish
+a two-tier fare (一段票 or 兩段票) rather than the flat one-section fare seen
+on most colour-prefixed feeders, consistent with trunk running longer
+cross-city corridors — a genuinely different service class, not a relabelled
+feeder group.
+
+No confirmed MRT stop-ID joins were curated (see the railJoins fix earlier in
+this run); trunk pages correctly show zero confirmed joins even at termini
+named after stations (捷運市政府站, 捷運劍南路站, 捷運昆陽站, 捷運動物園
+站). Full detail and sources are in docs/research/bus/routes/trunk.md.
+
+Gates: `npm run cite` clean; fresh `npm run build` clean (478 pages, no
+missing glyphs after `npm run fonts`); `npm run verify` clean; `npm test`
+clean (185/185, 19 fact cross-checks). Claims baseline and its test
+untouched. Existing user-owned dirty files (`probes/`) remain unstaged.
+
+**Part 3c is complete at this run's requested stop.** colour-green (17),
+colour-orange (18), colour-blue (38, after the one-record group correction)
+and trunk (19) are built — 92 routes across four groups, on top of the
+existing colour-brown (20) and now-reachable colour-red (40). This run's six
+commits (routing fix, railJoins fix, and one per group) were pushed to
+`main`: `ab10058`, `a0df05f`, `81d0096`, `478a239`, `2731e32`, and this
+commit. The remaining bus groups (series-0-99
+through series-900s, minibus, special-shuttle, new-taipei, unclassified —
+991 routes total per the Run 30 estimate, now 992 with the reclassified
+`藍海2線先導公車` added to `unclassified`) remain out of this run's scope, as
+instructed.
