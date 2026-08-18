@@ -597,9 +597,144 @@ as the service contact.
   `頭末班車 : [平日] 0720 - 1830 / [假日] 0730 - 1900`;
   `收費方式 : 一段票`; and `業者服務電話 : 中興巴士故宮站:02-2882-2126`.
 
+## Batch 6 — 紅53, 紅55, 紅55區, 紅57, 紅68預 and 紅68, checked 18 August 2026
+
+The full official pages were fetched. They establish current route identity,
+termini, service windows, fare class, operator contacts and the published
+calendar or detour notes. They do not establish route opening history, the
+original corridor decision or dated operator changes; those fields remain TBC.
+
+### 紅53 / R53
+
+The full official route-and-stop page gives `淡海新市鎮 - 捷運淡水站`, weekday
+service 0630–2000, no holiday service, one-section fare and `淡水客運新市站`
+as the service contact. It lists weekday departures at 0630, 0750, 0900,
+1010, 1120, 1500, 1620, 1740, 1850 and 2000, and notes that the route is
+suspended on holidays.
+
+- **Source:** “R53 route and stop information” / `titleOriginal`: `紅53路線資訊`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0411005300
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 淡海新市鎮 - 捷運淡水站`;
+  `頭末班車 : [平日] 0630 - 2000 / [假日] 停駛`;
+  `班表:0630 0750 0900 1010 1120 1500 1620 1740 1850 2000`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運新市站:02-2805-4870`; and
+  `例假日停駛`.
+
+### 紅55 / R55
+
+The full official route-and-stop page gives `捷運關渡站 - 臺北藝術大學`,
+weekday service 0700–1900, holiday service 0800–1900, one-section fare and
+`大南汽車關渡站` as the service contact. It says that the holiday timetable
+is used during university winter and summer vacations.
+
+- **Source:** “R55 route and stop information” / `titleOriginal`: `紅55路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111005500
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 捷運關渡站 - 臺北藝術大學`;
+  `頭末班車 : [平日] 0700 - 1900 / [假日] 0800 - 1900`;
+  `收費方式 : 一段票`; `業者服務電話 : 大南汽車關渡站:02-2858-3023`;
+  `寒暑假以假日班次行駛`.
+
+### 紅55區 / R55Shuttle
+
+The full official route-and-stop page gives `捷運關渡站 - 臺北城市科技大學`,
+weekday service 0720–1830, no holiday service, one-section fare and
+`大南汽車關渡站` as the service contact. It says the route is suspended on
+holidays and during university winter and summer vacations.
+
+- **Source:** “R55Shuttle route and stop information” /
+  `titleOriginal`: `紅55區路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111005520
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 捷運關渡站 - 臺北城市科技大學`;
+  `頭末班車 : [平日] 0720 - 1830 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 大南汽車關渡站:02-2858-3023`;
+  `寒暑假停駛`.
+
+### 紅57 / R57
+
+The full official schedule page gives `捷運行天宮站 - 捷運科技大樓站`,
+weekday service 0630–2100 and no holiday service. It records a one-section
+fare and service contacts at 首都客運社子站, 首都客運士林站 and 臺北客運士林站,
+and notes that the route is suspended on holidays.
+
+- **Source:** “R57 route schedule” / `titleOriginal`: `紅57班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111005700
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 捷運行天宮站 - 捷運科技大樓站`;
+  `頭末班車 : [平日] 0630 - 2100 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運社子站:02-2810-8566`;
+  `首都客運士林站:02-2834-5022`; `臺北客運士林站:02-2834-5022`; and
+  `例假日停駛`.
+
+### 紅68預 / R68B
+
+The committed TDX snapshot contains a colour-red record named `紅68預`, with
+canonical slug `red-68-hdunl`. The full official catalogue lists 39 labels
+under `捷運紅線接駁公車` and omits `紅68預`. The full official page for `紅68`
+contains appointment-only trial workings, but is labelled `紅68` and does not
+name a separate `紅68預` route. No separate official route page was found, so
+the relationship between the TDX record and the official `紅68` service is
+not resolved.
+
+- **Source:** “TDX bus route snapshot” / `titleOriginal`: `臺北市公車資料`
+- **Publisher:** Ministry of Transportation and Communications TDX /
+  `交通部運輸資料流通服務平台`
+- **URL:** https://tdx.transportdata.tw/api-service/swagger
+- **Kind/confidence:** PRIMARY; High — the committed TDX route record was read.
+- **Original-language text read:** the committed route record has `name: 紅68預`,
+  `canonicalSlug: red-68-hdunl`, `routeId: 19719`, and `group: colour-red`.
+
+- **Source:** “Bus route catalogue” / `titleOriginal`: `臺北市公車路線查詢`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/ebus?ct=all
+- **Kind/confidence:** PRIMARY; High — full official catalogue page read.
+- **Original-language text read:** the heading is `捷運紅線接駁公車`; its 39
+  labels include `紅68` but do not include `紅68預`.
+
+- **Source:** “R68 route schedule” / `titleOriginal`: `紅68班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111006800
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 北投士林科技園區 - 捷運芝山站`;
+  `頭末班車 : [平日] 0640 - 1830 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運士林站:02-2834-5022`;
+  `自115年3月1日起試辦平日0550、1210、1300、1930班次為預約公車班次`;
+  and `自114年6月30日起試辦例假日1030、1640班次為預約公車班次`.
+
+### 紅68 / R68
+
+The full official schedule page gives `北投士林科技園區 - 捷運芝山站`,
+weekday service 0640–1830 and no regular holiday service, with one-section
+fare and `首都客運士林站` as the service contact. It records weekday workings
+that detour via 中鼎第二總部大樓 and appointment-only trial workings; the page
+does not present those workings as a separate `紅68預` route.
+
+- **Source:** “R68 route schedule” / `titleOriginal`: `紅68班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111006800
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 北投士林科技園區 - 捷運芝山站`;
+  `頭末班車 : [平日] 0640 - 1830 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運士林站:02-2834-5022`;
+  `平日07:30、13:00返程班次及12:10、18:30、19:30往程班次繞駛中鼎第二總部大樓`;
+  and `自114年6月30日起試辦例假日1030、1640班次為預約公車班次`.
+
 ## What remains TBC
 
-- **All thirty batch-1/2/3/4/5 routes:** opening date, earlier alignment, original
+- **All thirty-six batch-1/2/3/4/5/6 routes:** opening date, earlier alignment, original
   corridor rationale and dated operator transfers are TBC.
 - **紅19:** its current school-day return stop variant is established; its
   creation date and rationale are TBC.
@@ -623,6 +758,17 @@ as the service contact.
   rationale are TBC.
 - **紅50:** the current 復興北路 subsidiary timetable is established; its
   creation date and rationale are TBC.
+- **紅53:** current holiday suspension is established; its creation date and
+  corridor rationale are TBC.
+- **紅55:** current university-calendar timetable variant is established; its
+  creation date and rationale are TBC.
+- **紅55區:** current holiday and university-calendar suspension is established;
+  its creation date and rationale are TBC.
+- **紅57:** current holiday suspension is established; its creation date and
+  corridor rationale are TBC.
+- **紅68 and 紅68預:** the current official `紅68` schedule and TDX-only
+  `紅68預` record are established, but their relationship, any separate service
+  span and any dated creation or operator change remain TBC.
 
 ## Checked and failed
 
@@ -633,6 +779,10 @@ as the service contact.
 - **紅37行經海洋都心社區 route-information page** — the official
   `VsSimpleMap` URL timed out during full-page fetching. The full official
   `StopsOfRoute` page was fetched and used instead. Checked 18 August 2026.
+- **紅68預 separate official route page** — full official catalogue,
+  `RouteSchedule`, `StopsOfRoute` and `VsSimpleMap` searches found no page
+  labelled `紅68預`; the full `紅68` page was fetched and did not name a
+  separate route. Checked 18 August 2026.
 
 ## Stated gaps
 
