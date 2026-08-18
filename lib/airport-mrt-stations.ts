@@ -74,7 +74,25 @@ const rbAnnual102 = source(
   '高鐵局102年年報',
   rbPublisher,
   'https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf',
-  'The Railway Bureau full 102 annual-report PDF publishes the A2-A4 CE01B and A5-A6 CE01C scopes, fit-out, testing, landscape, drainage and fire-safety milestones, the 102 progress snapshots, and the three-lot civil-work arrangement for the A2-A1 section.',
+  'The Railway Bureau full 102 annual-report PDF publishes the A2-A4 CE01B, A5-A6 CE01C and A8-A11 CE02 scopes, fit-out, testing, landscape, drainage and fire-safety milestones, the 102 progress snapshots, and the three-lot civil-work arrangement for the A2-A1 section.',
+)
+
+const rbAnnual101 = source(
+  'rb-airport-annual-report-101',
+  'Airport MRT civil works in the Railway Bureau 101 annual report',
+  '高鐵局101年年報',
+  rbPublisher,
+  'https://www.rb.gov.tw/public/files/artsinfo/1503059115-0.pdf',
+  'The Railway Bureau full 101 annual-report PDF publishes CU01 for A7, CU02 and CU02A for A12-A14a, the A7 cut-and-cover and excavation-section lengths, station construction/test milestones, and the 101 progress snapshots.',
+)
+
+const rbAirportRisk = source(
+  'rb-airport-risk-monitoring',
+  'Airport MRT shield-tunnel risk monitoring at the airport',
+  '桃園機場捷運潛盾隧道施工風險管理監測成果探討',
+  rbPublisher,
+  'https://www.rb.gov.tw/public/upimgs/D04/1520_Tunnel_for_TIAA_MRT.pdf',
+  'This full Railway Bureau technical-conference paper describes the airport underground section, the runway and control-tower interfaces, the A12-A14a geology, and the monitoring and risk-control approach used for shield tunnelling beneath airport-sensitive areas.',
 )
 
 const publicArt = source(
@@ -393,7 +411,7 @@ const aData: Record<string, AData> = {
   },
 }
 
-const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, rbAnnual102, publicArt, rbDepots, motcA22, ...Object.values(operatorStations)]
+const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, rbAnnual102, rbAnnual101, rbAirportRisk, publicArt, rbDepots, motcA22, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -413,6 +431,8 @@ function makeResearch(code: string, data: AData): StationResearch {
     data.engineeringHistorySource.id,
     data.landmarksSource.id,
     rbAnnual102.id,
+    rbAnnual101.id,
+    rbAirportRisk.id,
     rbDepots.id,
     publicArt.id,
   ].filter((id): id is string => Boolean(id))
@@ -495,7 +515,7 @@ const stationProse: Record<string, StationProseSentence[]> = {
   ],
   A6: [
     { text: 'The Railway Bureau groups A6 in CE01C, whose civil scope includes the shared viaduct, the elevated A5-A6 stations and their water, electrical and environmental-control systems.', source: rbAnnual102.id },
-    { text: 'The 102 annual report records completed station fit-out for CE01C and partial final acceptance of the A5/A6 landscape and planting works, extending the stationâ€™s public realm beyond the elevated platform structure.', source: rbAnnual102.id },
+    { text: 'The 102 annual report records completed station fit-out for CE01C and partial final acceptance of the A5/A6 landscape and planting works, extending the station\'s public realm beyond the elevated platform structure.', source: rbAnnual102.id },
     { text: 'It also records cleaning and handover of an existing road-crossing drainage culvert on the Zhongshan Road section between Minsheng Road and Taili Street within Taishan District, a utility task associated with the corridor rather than a new passenger feature.', source: rbAnnual102.id },
     { text: 'CE01C services completed single-machine testing by 31 January and building-management-system integration by 25 February, while A5/A6 fire-safety acceptance was recorded on 24 October and year-end progress stood at 99.98 percent.', source: rbAnnual102.id },
     { text: 'No CE01C contractor, station-only award value or final civil account for A6 is published in the checked report, so those details are TBC.', source: rbAnnual102.id },
@@ -503,26 +523,62 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'The Railway Bureau describes A5 and A6 as stations on the metropolitan fringe, beside substantial high-rise housing but still reading as an edge suburb; their hill-like forms, daylight and open ground plazas were intended to soften that infrastructure for local residents.', source: rbStations.id },
   ],
   A7: [
+    { text: 'The 101 record treats the remaining station landscaping as a later task and does not provide an A7-specific planting completion date.', source: rbAnnual101.id },
+    { text: 'The Railway Bureau assigns A7 to CU01, whose scope included the underground station, a 940-metre cut-and-cover tunnel section and a 170-metre excavation section, together with civil, water and environmental-control work.', source: rbAnnual101.id },
+    { text: 'The 101 annual report says the cut-and-cover and excavation works and the station main structure were complete, while station fit-out and water and environmental-control equipment installation were still being finished.', source: rbAnnual101.id },
+    { text: 'That work also included completion checks for water-soil-conservation measures, restoration of site roads and removal of surplus excavated material to Taipei Port for fill.', source: rbAnnual101.id },
+    { text: 'CU01 had completed single-machine testing by the end of the 101 reporting year and was continuing building-management-system integration and preparation for low-voltage power supply, with 99.58 percent progress at year-end.', source: rbAnnual101.id },
+    { text: 'The 102 annual report later lists A7 among the stations whose fire-safety completion inspection had been accepted by the competent authority.', source: rbAnnual102.id },
+    { text: 'The checked annual reports name the CU01 scope and progress but do not publish its station-level contractor, award value or final account, so those details remain TBC.', source: rbAnnual101.id },
     { text: 'The Railway Bureau places A7 on Wenhua 1st Road with the Linkou multi-purpose sports park to the south and Hwaya Industrial Park reachable to the west, recording the two destinations as the station’s surrounding context.', source: rbStations.id },
   ],
   A8: [
+    { text: 'The Railway Bureau assigns A8 to CE02, a package covering four elevated stations from A8 through A11, the A9a emergency stopping platform, 14 kilometres of elevated route and two trackside traction substations.', source: rbAnnual102.id },
+    { text: 'The 102 report records package-level road restoration, water-soil-conservation work, station architectural fit-out, and installation and testing of the water and environmental-control systems across this elevated corridor.', source: rbAnnual102.id },
+    { text: 'It also records additional wind-and-rain protection and maintenance-climbing-ladder work as changes within the CE02 scope, rather than as a new station interchange or passenger service.', source: rbAnnual102.id },
+    { text: 'A8 appears in the report\'s list of stations with an accepted fire-safety completion inspection, while CE02 stood at 99.98 percent progress at the end of the 102 reporting year.', source: rbAnnual102.id },
+    { text: 'The annual report does not identify the CE02 contractor, a station-only award value or a final civil account for A8, so those details are TBC.', source: rbAnnual102.id },
     { text: 'A8 stands at the Wenhua 1st Road–Fuxing 1st Road junction in the Linkou area that the Railway Bureau identifies as a dense transport and commercial centre, with joint development intended to connect the station to the surrounding business district.', source: rbStations.id },
     { text: 'The Railway Bureau says the entrance land and its adjoining parcel were planned as a shared development, with the entrance at the co-developed building’s ground floor and the connecting facilities on its second floor.', source: rbStations.id },
     { text: 'TYMC places 銀河鐵道印記 by Paramodel on the second-floor concourse; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
   A9: [
+    { text: 'A9 is one of the four elevated stations and one emergency stopping platform included in CE02, whose package also covered 14 kilometres of elevated route and two trackside traction substations.', source: rbAnnual102.id },
+    { text: 'The Railway Bureau\'s 102 land-development record gives the A9 joint-development base about 0.4914 hectares and says the entrance was co-constructed with the adjoining development parcel.', source: rbAnnual102.id },
+    { text: 'It records a building permit on 5 September 2012, a land-development trust contract on 30 October 2012 and handover of the co-constructed MRT facilities to the developer on 17 January 2013 for follow-on work.', source: rbAnnual102.id },
+    { text: 'CE02 later appears in the 102 report with corridor-level road restoration, water-soil-conservation, fit-out, equipment installation and testing work, and A9 is listed among the stations with accepted fire-safety completion inspection.', source: rbAnnual102.id },
+    { text: 'The checked annual report does not publish the CE02 contractor, a station-only award value or a final civil account for A9, so those details remain TBC.', source: rbAnnual102.id },
     { text: 'A9 was sited at the Wenhua 3rd Road–Bade Road junction beside the highway, with the entrance parcel and adjoining land planned for joint development as part of the same Linkou commercial-centre strategy as A8.', source: rbStations.id },
     { text: 'The Railway Bureau also records reserved space for a future Linkou branch, leaving the station’s structure prepared for a connection that was not part of the operating route described by the report.', source: rbStations.id },
     { text: 'TYMC places 一個自在的游晃 by 豪華朗機工 on the ceiling of the ground-floor entrance hall; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
   A10: [
+    { text: 'The annual record describes CE02 package completion and does not provide a separate A10 handover date.', source: rbAnnual102.id },
+    { text: 'The Railway Bureau places A10 in CE02, the package for the A8-A11 elevated stations, A9a emergency stopping platform, 14 kilometres of elevated route and two trackside traction substations.', source: rbAnnual102.id },
+    { text: 'The package-level 102 work programme included road restoration, water-soil-conservation measures, station architectural fit-out, and installation and testing of water and environmental-control equipment along the elevated corridor.', source: rbAnnual102.id },
+    { text: 'The same report records additional drainage construction within Luzhu Township and safety fencing at roads crossing the elevated line, but it does not assign either item to A10 alone.', source: rbAnnual102.id },
+    { text: 'CE02 stood at 99.98 percent progress at the end of the 102 reporting year, and A10 appears in the earlier station list for accepted fire-safety completion inspection.', source: rbAnnual102.id },
+    { text: 'The annual reports do not publish the CE02 contractor, a station-only award value or a final civil account for A10, so those details are TBC.', source: rbAnnual102.id },
+    { text: 'The source material therefore establishes shared CE02 corridor work around A10 but does not establish a station-specific incident, renaming date or separate civil completion value.', source: rbAnnual102.id },
     { text: 'The Railway Bureau groups A10 with A11 along the 赤塗崎溪 woodland landscape and Luzhu’s agricultural fields, calling this rural, open and green stretch a key section of the line’s “green corridor”.', source: rbStations.id },
   ],
   A11: [
+    { text: 'A11 is included in CE02 with A8-A10 and the A9a emergency stopping platform, a package covering 14 kilometres of elevated route and two trackside traction substations as well as the stations.', source: rbAnnual102.id },
+    { text: 'The Railway Bureau reports that CE02 work included road restoration, water-soil-conservation measures, station fit-out, equipment installation and system testing across the shared elevated section.', source: rbAnnual102.id },
+    { text: 'For the Luzhu part of the package it records added drainage works, safety fencing at crossing roads, a drainage ditch on a land-rights section and changes to station wind-and-rain protection and maintenance ladders.', source: rbAnnual102.id },
+    { text: 'A11 is named in the report\'s station imagery and CE02 reached 99.98 percent progress at the end of the 102 reporting year, but that figure is package progress rather than an A11-only measure.', source: rbAnnual102.id },
+    { text: 'The checked annual reports do not publish the CE02 contractor, a station-only award value or a final civil account for A11, so those details remain TBC.', source: rbAnnual102.id },
+    { text: 'The shared-package records do not establish a station-specific construction incident, renaming date or separate completion value for A11.', source: rbAnnual102.id },
     { text: 'A11 was placed on the west side of Kengguo Road within the same Luzhu rural corridor, but the Railway Bureau also identifies it as the access station for the Airport MRT’s Luzhu maintenance depot.', source: rbStations.id },
     { text: 'The depot connection was kept in the station planning: the report says the existing depot access track leaves space for a possible freight-park branch, with the station able to develop into a freight-business and commuter-transfer point.', source: rbStations.id },
   ],
   A12: [
+    { text: 'The Railway Bureau assigns A12 to CU02 for station structure, architectural fit-out and water works, a package covering the four underground stations from A12 through A14a; in the 101 report, its structures were complete, architectural work was nearly 90 percent complete, and installed water and environmental-control equipment had completed single-machine testing.', source: rbAnnual101.id },
+    { text: 'CU02A separately covered the airport underground section from A12 to A14a, the adjacent cut-and-cover works and deep excavation, retaining and support, shield tunnelling, internal tunnel structure, and expansion of an existing tunnel co-constructed with the east parking area of Terminal 2.', source: rbAnnual101.id },
+    { text: 'The 5,520-metre CU02A work was accepted by the Railway Bureau on 25 September 2012, so the source records acceptance of the package rather than a claim that every later station fit-out item was complete on that date.', source: rbAnnual101.id },
+    { text: 'The Railway Bureau\'s airport-risk paper describes the underground airport section as using shield tunnels and cut-and-cover structures beneath sensitive runways and the control-tower zone, with the east runway lying 48 metres along the A12-to-emergency-exit section.', source: rbAirportRisk.id },
+    { text: 'For A12-A14a, that paper records a 0.3-to-1.0-metre red-soil surface layer over 10-to-40 metres of gravel-bearing strata and a groundwater level approximately 3 to 10 metres below ground, conditions that shaped the monitoring requirement.', source: rbAirportRisk.id },
+    { text: 'A12 is also listed in the 102 annual report among stations with accepted fire-safety completion inspection, while the checked reports do not publish a CU02 or CU02A contractor, station-only award value or final A12 civil account, so those details remain TBC.', source: rbAnnual102.id },
     { text: 'A12 lies beneath Terminal South Road on the southeast side of Terminal 1, where the Railway Bureau’s national-gateway improvement project placed one entrance directly inside the terminal and the other at the south end of its surface car park.', source: rbStations.id },
     { text: 'The report therefore records two deliberately separate airport approaches: an indoor terminal connection and a second access point at the south end of the surface car park.', source: rbStations.id },
     { text: 'TYMC places 過境—心航線 by 林俊廷 on the wall of the passage from the fare gates to the terminal; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },

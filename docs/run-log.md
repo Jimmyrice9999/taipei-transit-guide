@@ -9191,6 +9191,42 @@ TBC: station-level final accounts, complete award values, construction-era
 renames, A1–A6 fare-boundary modes and A5/A6 art allocation. No colour-prefix
 audit applies. Next: audit Airport A7–A12.
 
+# Run 31 — Part 1 Airport MRT A7–A12, 18 August 2026
+
+Deepened six Airport MRT station pages after the pre-action audit found all
+six below 100 words. Final body-prose counts: A7 218, A8 233, A9 238, A10 207,
+A11 235 and A12 336; batch total 1,467 words. No facts/specs were restated as
+prose. A7 now records CU01, its 940 m cut-and-cover and 170 m excavation
+sections, testing and 99.58% 101 progress; A8–A11 record CE02, its 14 km
+elevated package, shared corridor work, A9 development, and 99.98% package
+progress; A12 records CU02/CU02A, 5,520 m underground package work, acceptance,
+airport geology and runway/control-tower monitoring constraints.
+
+Primary URLs fetched in full:
+
+- https://www.rb.gov.tw/public/files/artsinfo/1503059115-0.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf
+- https://www.rb.gov.tw/public/upimgs/D04/1520_Tunnel_for_TIAA_MRT.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A7/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A8/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A9/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A10/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A11/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A12/A4
+
+Conflicts published: the A7 940 m plus 170 m section measurements are kept
+distinct from the 160.2 m station-body length; CE02 99.98% is package progress,
+not station-only completion; CU02A approximately 5,520 m and the risk paper's
+approximately 5.5 km describe related bounds; and CU02's 91.90% in the 101
+report is kept beside CE02's 99.98% in the 102 report because they are different
+packages and annual snapshots. TBC: package contractors, station-level award
+values/final accounts, renames, A7/A10/A11 art allocation and fare-boundary
+modes. No colour-prefix audit applies. Next: audit Airport A13–A18.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit npm test and diff check must pass before commit and push.
+
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit npm test and diff check must pass before commit and push.
 
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit

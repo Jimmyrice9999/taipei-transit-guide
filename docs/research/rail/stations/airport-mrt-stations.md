@@ -459,6 +459,102 @@ the pages.
   passages and facilities but do not establish paid-area versus street-transfer
   treatment for these stations. Checked 18 August 2026.
 
+## A7-A12 deepening - 18 August 2026
+
+The earlier A7-A12 audit established architecture, siting and the TYMC art
+rows, but did not exhaust the Railway Bureau construction records. For this
+batch the full Railway Bureau 101 annual report, full 102 annual report and
+full airport-risk technical paper were fetched and read. These records add
+CU01, CU02, CU02A and CE02 package scopes, section methods, acceptance and
+package-progress measures without assigning package-level values to individual
+stations.
+
+### Established
+
+- **A7 CU01 — PRIMARY, High confidence.** The full 101 annual report says CU01
+  includes the A7 underground station, a 940 m cut-and-cover section and a
+  170 m excavation section, with civil, water and environmental-control work.
+  It records completed main structures, remaining fit-out/landscape and system
+  testing, and 99.58% progress at the end of 101. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503059115-0.pdf. The original
+  text states: 「本施工標包含體育大學站(A7)地下車站、長度940公尺明挖覆蓋
+  隧道段、170公尺出土段之土建及水電、環控工程」.
+- **A8-A11 CE02 — PRIMARY, High confidence.** The full 102 annual report
+  identifies CE02 as the package for A8, A9, A10, A11, the A9a emergency
+  stopping platform, 14 km of elevated route and two external traction
+  substations. It records restoration, water-soil-conservation work, fit-out,
+  systems installation/testing, Luzhu drainage and crossing-road safety works,
+  and 99.98% package progress at year-end. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標包含長庚醫院站（A8）、林口站（A9）、山鼻站（A10）
+  與坑口站（A11）及緊急停靠月台（A9a）等5座高架車站、14公里長之高架路段
+  及2座站外牽引動力變電站」.
+- **A9 joint development — PRIMARY, High confidence.** The same full 102
+  annual report records an approximately 0.4914 ha A9 development base,
+  entrance co-construction, a 5 September 2012 building permit, a 30 October
+  2012 land-development trust contract and 17 January 2013 handover of the
+  co-constructed MRT facilities to the developer. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf.
+- **A12 CU02/CU02A — PRIMARY, High confidence.** The full 101 annual report
+  identifies CU02 as the station-structure, architectural and water package
+  for A12-A14a, with structures complete, near-90% architectural work and
+  installed water/environmental-control equipment tested. It identifies CU02A
+  as the approximately 5,520 m airport underground package from A12 to A14a,
+  including cut-and-cover and deep excavation, shield tunnelling and the
+  Terminal 2 east-parking tunnel expansion; it records Railway Bureau
+  acceptance on 25 September 2012. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503059115-0.pdf. The original
+  text states: 「本施工標為機場段之潛盾隧道及車站體深開挖工程，總長度約5,520
+  公尺」.
+- **Airport geology and sensitive interfaces — PRIMARY, High confidence.**
+  The full Railway Bureau airport-risk paper describes the underground airport
+  section as shield tunnel and cut-and-cover work beneath runways and the
+  control-tower zone. It places the east runway 48 m along the A12-to-emergency-
+  exit section and records the A12-A14a surface red-soil layer, gravel-bearing
+  strata and groundwater range used in monitoring design. URL:
+  https://www.rb.gov.tw/public/upimgs/D04/1520_Tunnel_for_TIAA_MRT.pdf. The
+  original text includes: 「東滑行道位於機場第一航廈站(A12)與華航緊急出口之間，
+  長度為48m」 and 「A12至A14a站及前後隧道路段，地表為0.3~1.0公尺厚之紅土層」.
+- **Architecture and art — PRIMARY, High confidence for existing claims.**
+  The full Railway Bureau station-architecture report remains the source for
+  A7-A12 form and design-contract groupings, while TYMC's full public-art page
+  remains the source for the A8, A9 and A12 title/artist/location records. URLs:
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf and
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html.
+
+### Conflicts in this pass
+
+1. The 940 m CU01 cut-and-cover section plus 170 m excavation section around
+   A7 are section-work measurements, not the 160.2 m station-body length in the
+   architecture report; both are retained with their different measures.
+2. CE02's 99.98% figure is a 102 package-progress snapshot for A8-A11, A9a,
+   route and substations, not an A8, A9, A10 or A11 station-only completion
+   percentage. No individual station value is invented.
+3. CU02A's approximately 5,520 m package length and the risk paper's
+   approximately 5.5 km airport underground section describe related but
+   differently bounded measurements; both remain published.
+4. The 101 annual report gives CU02 91.90% progress while the 102 report gives
+   CE02 99.98% progress. They measure different packages at different annual
+   snapshots and are not combined.
+
+### Checked and failed for A7-A12
+
+- **CU01/CE02/CU02/CU02A contractors and award values** — the full annual
+  reports identify package scopes and progress but do not provide a complete
+  station-level contractor/value table for A7-A12. Checked 18 August 2026.
+- **A7-A12 station final civil accounts** — no station-level final account was
+  found in the full 101/102 annual reports or airport-risk paper. Checked 18
+  August 2026.
+- **A7-A12 construction-era renames** — no dated rename gazette or equivalent
+  naming record was found in these primary construction sources. Checked 18
+  August 2026.
+- **A7/A10/A11 public-art allocation** — no row for those stations was found on
+  TYMC's full checked art page; this remains not found, not proof of no artwork.
+  Checked 18 August 2026.
+- **A7-A12 fare-boundary modes** — the checked operator and builder pages do
+  not state paid-area versus street-transfer treatment for these stations.
+  Checked 18 August 2026.
+
 ## Conflicts
 
 1. **A3 station code.** TYMC and the RB report use engineering/current-project
