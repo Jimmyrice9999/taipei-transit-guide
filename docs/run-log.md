@@ -8062,4 +8062,77 @@ All eleven Part 3 commits were pushed to `main`: brown `e95766c`, `3e2885b`,
 `af76c69`, `126dcfe`; red `7c599a3`, `c2e0ee5`, `3630d37`, `902aa40`,
 `ede2641`, `fe6d09b`, `60ce64c`. The final gates are green: citations clean,
 research clean, static verification clean, no missing glyphs, and 185/185
+
 tests. The claims baseline, tests and checkers were not changed.
+
+# Run 31 — Part 1 Wenhu station prose, BR01–BR06, 18 August 2026
+
+## Sourced
+
+The first Part 1 batch widened the Wenhu station search beyond the prior
+project, architecture and public-art pages. BR01–BR06 now have independently
+cited station prose, with the research record in
+`docs/research/rail/stations/wenhu-line-stations.md` and source definitions in
+`lib/station-overlay.ts`.
+
+| Station | Words | Sources used |
+| --- | ---: | --- |
+| BR01 Taipei Zoo | 347 | DORTS project; station-package, design, materials, form and opening pages; DORTS technical contract and rubber-tyre pages |
+| BR02 Muzha | 331 | DORTS project; station-package, design, materials, colour and form pages; risk, development-interface, land-development, legal cost and running-surface pages |
+| BR03 Wanfang Community | 308 | DORTS project; station-package, design, materials and form pages; risk, development-interface, land-development, rubber-tyre, running-surface and opening pages |
+| BR04 Wanfang Hospital | 319 | DORTS project; station-package, design, route, materials, colour and form pages; technical contract, rubber-tyre, running-surface and opening pages |
+| BR05 Xinhai | 341 | DORTS project; station-package, route, design, materials and form pages; technical contract/rubber-tyre/running-surface, Xinhai land-development and opening pages |
+| BR06 Linguang | 333 | DORTS project; station-package, design, materials, colour and form pages; technical contract, rubber-tyre, running-surface, land-development and opening pages |
+| **Batch** | **1,979** | **All primary** |
+
+The full URLs fetched and cited are:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page75.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page76.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page78.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page80.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page82.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page83.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page84.html
+- https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page59.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page124.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page126.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page9.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page252.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no45/files/basic-html/page143.html
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page35.html
+- https://www.laws.taipei.gov.tw/Law/LawSearch/LawArticleContent/FL013179?date=20060227
+
+## TBC
+
+No official page fetched in this batch establishes an individual contractor,
+award date or final package value for CC407, CC411 or CC414. Station-specific
+architect names, feeder-bus prose and public-art rows for BR01–BR06 also stay
+TBC. The full DORTS no.36 Wanfang article was identified but its direct Basic
+HTML article URL returned a cache miss, so it was not used.
+
+## Contradicted the corpus
+
+The previous run’s conclusion that these six pages had no station-specific
+material was superseded by full DORTS technical and land-development records:
+BR02’s joint-development cost and safety-net incident, BR03’s separate
+structure and noise case, BR05’s Xinhai development, and BR06’s Linguang
+development are now sourced. No claim was promoted from the old appendices.
+
+## Conflicts found
+
+DORTS’s current project page says the Muzha alignment passes the north side of
+Xinhai Tunnel and describes the section as entirely elevated. DORTS’s technical
+journal instead describes a tunnel in the Fuzhou Mountain area. BR05 publishes
+both descriptions and the research file records that their measurement or
+section boundary is unresolved. The engineering-era BR13–BR8 labels in the
+architecture volume are also retained separately from current BR01–BR06 codes;
+they are different numbering systems, not silently resolved names.
+
+No colour-prefix audit applies to this rail batch. `npm run cite`, `npm run
+verify`, `npm test`, and `npm run research` passed; the full unit suite reports
+185/185. The first build gate correctly requested regenerated CJK subsets after
+the new source notes added Han characters; `npm run fonts` regenerated only the
+needed BR subset and manifest entries. Claims tests, the claims baseline and
+checkers were not changed.
