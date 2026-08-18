@@ -9257,6 +9257,51 @@ TYMC's work-level row. TBC: CE03A/CE03B and CU02 contractor/value/final-account
 details, construction-era renames, A15-A17 art metadata and fare-boundary
 modes. No colour-prefix audit applies. Next: audit Airport A19–A22.
 
+# Run 31 — Part 1 Airport MRT A19–A22, 18 August 2026
+
+Deepened the final four Airport MRT station pages after the pre-action audit
+found body prose of A19 58, A20 58, A21 59 and A22 94 words. Final body-prose
+counts are A19 285, A20 270, A21 280 and A22 433; batch total 1,268 words.
+This short final Airport batch completes Part 1 Airport MRT station prose.
+
+Sourced: CE03B package scope and progress for A19-A20; CU03 underground,
+cut-and-cover, acceptance, fire-safety and SCADA milestones for A21; the A21
+landscape response; the A21-A23 extension route, cut-and-cover/half-width
+traffic method and A22 design concept; CM01 contractor, start date and
+NT$7,155,054,208 corridor contract; ME06A procurement history and systems
+budget snapshots; A22 stability testing, operator handover and opening; the
+Taoyuan builder’s A22 location/opening record; and all competing plan/project
+budget values with their scopes.
+
+Primary URLs fetched in full:
+
+- https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- https://www.rb.gov.tw/zh-TW/%5Bsite%5D/main_28/20250505_152320/20251104_133945/20250505_152539/
+- https://www.rb.gov.tw/zh-TW/main/main_188/news/main_347/artsinfo_2440/
+- https://www.rb.gov.tw/zh-TW/main/main_188/news/main_347/artsinfo_3905/
+- https://www.rb.gov.tw/zh-TW/NREO/NREO_4/NREO_5/20250430_155947/
+- https://www.rb.gov.tw/news.php?infoid=1812&lmenuid=11&smenuid=49&tmenuid=0
+- https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23131
+- https://reiso.tycg.gov.tw/governance-outcome/1
+- https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+
+Conflicts published: CE03B 99.95% and CU03 99.96% remain package-level
+snapshots; A22 plan totals of NT$138.01b, NT$138b and NT$173.02b remain their
+successive full-plan measures; the separate city-list NT$13.8b estimate,
+ME06A systems budgets of NT$1.575b and NT$3.159b, and CM01’s
+NT$7,155,054,208 civil-and-track corridor contract remain distinct; and the
+planned July 2022 opening remains separate from the actual 31 July 2023
+opening. TBC: A19-A22 station-only contractor/value/final-account details,
+A22 structure/platform/track arrangement, renames, public-art metadata and
+fare-boundary modes. No colour-prefix audit applies. Part 1 Airport MRT is
+complete. Next: audit Part 2 Danhai and Ankeng using New Taipei primary sources.
+
+Final gates for this batch: cite, research, claims, fresh verify/build after
+font regeneration, explicit npm test, 185/185 tests, and diff check passed
+before commit and push.
+
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test, 185/185 tests, and diff check passed before commit and push.
 

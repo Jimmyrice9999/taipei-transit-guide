@@ -8,6 +8,8 @@ const dortsPublisher = 'New Taipei City Department of Rapid Transit Systems (新
 const taipeiDortsPublisher = 'Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局)'
 const rbPublisher = 'Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)'
 const motcPublisher = 'Ministry of Transportation and Communications, Taiwan (交通部)'
+const taoyuanDortsPublisher = 'Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)'
+const taoyuanGovPublisher = 'Taoyuan City Government (桃園市政府)'
 
 function source(
   id: string,
@@ -74,7 +76,7 @@ const rbAnnual102 = source(
   '高鐵局102年年報',
   rbPublisher,
   'https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf',
-  'The Railway Bureau full 102 annual-report PDF publishes the A2-A4 CE01B, A5-A6 CE01C, A8-A11 CE02, A15-A16 CE03A and A17-A20 CE03B scopes, fit-out, testing, landscape, drainage and fire-safety milestones, the 102 progress snapshots, and the three-lot civil-work arrangement for the A2-A1 section.',
+  'The Railway Bureau full 102 annual-report PDF publishes the A2-A4 CE01B, A5-A6 CE01C, A8-A11 CE02, A15-A16 CE03A, A17-A20 CE03B and A21 CU03 scopes, fit-out, testing, landscape, drainage and fire-safety milestones, the 102 progress snapshots, and the three-lot civil-work arrangement for the A2-A1 section.',
 )
 
 const rbAnnual101 = source(
@@ -120,6 +122,69 @@ const motcA22 = source(
   motcPublisher,
   'https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04',
   'The Ministry’s full announcement records the A22 Laojie River extension, its design changes required by the Taoyuan railway undergrounding project, construction and signalling-integration difficulties, the 31 July 2023 opening, and the planned onward A23/Zhongli connections.',
+)
+
+const rbA22Project = source(
+  'rb-airport-a22-project',
+  'Airport MRT extension to Zhongli project',
+  '機場捷運延伸中壢火車站計畫',
+  rbPublisher,
+  'https://www.rb.gov.tw/zh-TW/%5Bsite%5D/main_28/20250505_152320/20251104_133945/20250505_152539/',
+  'The Railway Bureau full project page publishes the A21-A23 underground 2.06 km scope, original and revised plan budgets, A22 construction method and design concept, and the extension’s connection to the airport, HSR and Zhongli rail nodes.',
+)
+
+const rbA22Progress = source(
+  'rb-airport-a22-progress',
+  'Airport MRT extension progress',
+  '機場捷運延伸線辦理情形',
+  rbPublisher,
+  'https://www.rb.gov.tw/zh-TW/main/main_188/news/main_347/artsinfo_2440/',
+  'The Railway Bureau full progress page publishes the extension’s route engineering, 2.06 km/138 billion plan snapshot, A22 civil and systems milestones, and the CBTC design context before opening.',
+)
+
+const rbA22Opening = source(
+  'rb-airport-a22-opening',
+  'Airport MRT A22 Laojie River opening',
+  '機場捷運延伸線A22老街溪站正式通車',
+  rbPublisher,
+  'https://www.rb.gov.tw/zh-TW/main/main_188/news/main_347/artsinfo_3905/',
+  'The Railway Bureau full opening announcement publishes A22’s 2023 licence and opening, the revised 173.02 billion extension-plan total, March stability testing, operator handover and the planned A23/railway/Green Line connections.',
+)
+
+const rbCm01 = source(
+  'rb-airport-cm01',
+  'CM01 civil works package for the Airport MRT Zhongli extension',
+  'CM01區段標機場捷運延伸線計畫',
+  rbPublisher,
+  'https://www.rb.gov.tw/zh-TW/NREO/NREO_4/NREO_5/20250430_155947/',
+  'The Railway Bureau North Region Engineering Branch full package page identifies CM01’s scope, contractor, contract amount and current schedule; the contract covers the Zhongli corridor rather than A22 alone.',
+)
+
+const rbMe06a = source(
+  'rb-airport-me06a-notice',
+  'ME06A systems procurement notice for A14 and the Zhongli extension',
+  '機場捷運增設A14站暨延伸線機電系統工程ME06A標招標公告',
+  rbPublisher,
+  'https://www.rb.gov.tw/news.php?infoid=1812&lmenuid=11&smenuid=49&tmenuid=0',
+  'The Railway Bureau full procurement notice publishes ME06A’s A14/A22 scope, A23 as a later expansion, the twelve failed tenders and the budget change from 1.575 to 3.159 billion before the 2019 notice.',
+)
+
+const taoyuanDortsAirport = source(
+  'taoyuan-dorts-airport-line',
+  'Taoyuan Airport MRT line and extension',
+  '捷運機場線',
+  taoyuanDortsPublisher,
+  'https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23131',
+  'The Taoyuan builder’s full page publishes A19-A22 locations, the A21-A23 extension overview, A22’s Yongxing Park location and the current opening status.',
+)
+
+const taoyuanA22Budget = source(
+  'taoyuan-a22-project-budget',
+  'Taoyuan government project budget list',
+  '桃園市政府施政成果資訊網',
+  taoyuanGovPublisher,
+  'https://reiso.tycg.gov.tw/governance-outcome/1',
+  'The Taoyuan government’s full project list records a NT$13.8 billion estimated budget for the separately labelled A22 opening project; it does not define that estimate as the full A21-A23 extension plan.',
 )
 
 const operatorUrls: Record<string, string> = {
@@ -411,7 +476,7 @@ const aData: Record<string, AData> = {
   },
 }
 
-const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, rbAnnual102, rbAnnual101, rbAirportRisk, publicArt, rbDepots, motcA22, ...Object.values(operatorStations)]
+const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, rbAnnual102, rbAnnual101, rbAirportRisk, publicArt, rbDepots, motcA22, rbA22Project, rbA22Progress, rbA22Opening, rbCm01, rbMe06a, taoyuanDortsAirport, taoyuanA22Budget, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -435,6 +500,13 @@ function makeResearch(code: string, data: AData): StationResearch {
     rbAirportRisk.id,
     rbDepots.id,
     publicArt.id,
+    rbA22Project.id,
+    rbA22Progress.id,
+    rbA22Opening.id,
+    rbCm01.id,
+    rbMe06a.id,
+    taoyuanDortsAirport.id,
+    taoyuanA22Budget.id,
   ].filter((id): id is string => Boolean(id))
   return {
     sources: uniqueSources(sourceIds),
@@ -647,18 +719,47 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'TYMC places 氣門9號律動 by Florian Claar on the plaza between A18 and the HSR station; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
   A19: [
+    { text: 'A19 was built under CE03B, the Qingpu-to-Zhongli elevated-bridge package that also covered A17, A18, A20 and the Qingpu depot administration building.', source: rbAnnual102.id },
+    { text: 'The 102 annual report records the CE03B bridge foundations, piers, parapets, noise barriers and cable trenches as complete, with the four stations\' structures and rain-protection facilities complete and ceiling fit-out in its closing phase.', source: rbAnnual102.id },
+    { text: 'A17-A20 BMS integration finished in June 2013, fire-safety checks began in August, and the package stood at 99.95% progress at the end of 2013; those are package milestones, not an A19-only completion percentage.', source: rbAnnual102.id },
+    { text: 'The DE03 landscape brief gives A19 a plaza beside the planned road so a bus stop and Airport MRT entrance can work as one transition space while pedestrian and vehicle movements remain separated.', source: rbStations.id },
+    { text: 'That plaza was also intended to gather nearby passengers and provide disaster-prevention space; because future joint development was anticipated, the parking area used groundcover rather than large trees that would later be difficult to move.', source: rbStations.id },
+    { text: 'The architecture report places A19 in the HSR special district and within the DE03 group whose materials combine fair-faced concrete, stone, glass and metal to balance durability, weight and visual transparency.', source: rbStations.id },
+    { text: 'The checked TYMC public-art table has no A19 allocation row, which is a result of that page check and not evidence that no artwork exists; the annual report also does not publish an A19-only contractor, award value or final account.', source: publicArt.id },
     { text: 'A19 lies in the Taoyuan HSR station special district on HSR South Road, within the future-new-town development area identified by the Railway Bureau.', source: rbStations.id },
     { text: 'The station-front plaza on the planned-road side was designed as the transition and connection between the bus stop and Airport MRT, while also separating pedestrian and vehicle movements and providing a gathering and disaster-prevention space.', source: rbStations.id },
   ],
   A20: [
+    { text: 'A20 was included in CE03B, whose civil scope ran from Qingpu toward Zhongli and included the four elevated stations A17 through A20 plus the Qingpu depot administration building.', source: rbAnnual102.id },
+    { text: 'The package record says the elevated bridge substructure and superstructure were complete, all four stations had completed structural work and rain protection, and the remaining station work was ceiling and architectural closeout.', source: rbAnnual102.id },
+    { text: 'The same report records June 2013 BMS integration, August fire-safety checks and 99.95% package progress at 102-year end; this does not establish a separate A20 completion percentage.', source: rbAnnual102.id },
+    { text: 'The Railway Bureau describes A20 as an urban-edge station in the future expansion hinterland, and the DE03 landscape plan responds with open-space buffers and planted approaches rather than a fully built-up urban plaza.', source: rbStations.id },
+    { text: 'Its high-ceiling station uses a windmill image in the paving and columns, while the surrounding planting combines shade trees with seasonal purple-flowering species to carry the line\'s landscape language into the Zhongli edge.', source: rbStations.id },
+    { text: 'The checked TYMC public-art table has no A20 allocation row, so the page supports only a not-found result; the checked annual report does not publish an A20-only contractor, award value or final civil account.', source: publicArt.id },
+    { text: 'The CE03B package percentage and the design report\'s station-level architecture describe different measures, so neither is substituted for a station-only construction cost or completion figure.', source: rbAnnual102.id },
     { text: 'A20 stands on Zhongfeng North Road at the edge of Zhongli, which the Railway Bureau describes as the hinterland of future urban expansion and an outward-transport hub.', source: rbStations.id },
     { text: 'Its entrances are coordinated with an open-space system and planted buffer strips; the high-ceiling station uses a windmill paving image with the columns to give the space a local design motif.', source: rbStations.id },
   ],
   A21: [
+    { text: 'A21 was delivered under CU03, the Railway Bureau\'s underground package for an emergence section, cut-and-cover section and station-area works at the Airport MRT\'s phased terminus.', source: rbAnnual102.id },
+    { text: 'The 102 annual report records all CU03 civil work complete, including road restoration and landscape planting; the station\'s partial acceptance occurred on 15 August 2013, its fire-safety inspection was approved on 19 November, and civil completion was submitted for approval.', source: rbAnnual102.id },
+    { text: 'CU03\'s three-stage SCADA testing finished on 17–18 December 2013, while water, electrical and environmental-control work continued preparing for dynamic system integration; the package stood at 99.96% at year-end.', source: rbAnnual102.id },
+    { text: 'The architecture report groups A21 in DU01 with the other underground stations and describes the station\'s future-oriented relationship to the planned Zhongli extension and Taoyuan bus-station development area.', source: rbStations.id },
+    { text: 'Its landscape treatment was intentionally provisional around the entrances because a future joint-development area was planned: planting beds, frangipani, native or adapted shrubs and focused lighting were used to soften the building and make the entrances legible at night.', source: rbStations.id },
+    { text: 'The checked TYMC public-art table has no A21 allocation row, which remains a not-found result rather than proof of no artwork; the checked annual report does not publish a CU03 contractor, A21-only award value or final account.', source: publicArt.id },
+    { text: 'The CU03 99.96% figure is the package snapshot for the underground works, not a station-only completion measure and not a fare or operating-readiness claim.', source: rbAnnual102.id },
     { text: 'A21 was built as the Airport MRT’s phased terminus, with the Railway Bureau recording a planned extension to Zhongli that would connect with Taiwan Railways and future Taoyuan Metro transfers.', source: rbStations.id },
     { text: 'Its underground station design uses the memory of a suitcase as its organising theme, distributing ideas of drifting, movement, time, rest and nature through the architecture and public art.', source: rbStations.id },
   ],
   A22: [
+    { text: 'The Railway Bureau treats A22 as part of the A21-to-A23 extension, an approximately 2.06-kilometre underground project intended to connect the airport, Taoyuan HSR and Zhongli railway nodes; the plan was originally approved at NT$138.01 billion, revised to NT$138 billion and later to NT$173.02 billion after railway-interface work and construction-price increases were incorporated.', source: rbA22Project.id },
+    { text: 'The extension\'s CM01 civil-and-track package covers Zhongli\'s Zhongfeng Road, Zhongzheng Road and the railway-station area, began on 28 December 2013, and is listed with Continental Engineering Corporation as contractor and a NT$7,155,054,208 contract amount; that is a corridor-package value, not an A22-only price.', source: rbCm01.id },
+    { text: 'For the station itself, the Railway Bureau describes cut-and-cover construction using temporary deck beams and half-width traffic staging, while the entrance design draws on the former ponds and water plants beside Laojie River through the four-character concept 萍、塘、清、流 and a Taiwan yellow water-lily canopy form.', source: rbA22Project.id },
+    { text: 'The ME06A systems notice covered A14 and A22, with A23 as a later expansion; it records twelve failed tenders between September 2014 and January 2019 and a budget change from NT$1.575 billion to NT$3.159 billion before the 2019 notice, without naming a successful contractor there.', source: rbMe06a.id },
+    { text: 'The Railway Bureau later records that A22 stability testing finished in March 2023 and that Taoyuan Metro took over operational preparation on 1 March before the transport ministry issued the operating licence and the station opened in July.', source: rbA22Opening.id },
+    { text: 'A separate Taoyuan government project list gives an estimated NT$13.8 billion to a project labelled the A22 Laojie River opening plan; that is retained beside the Railway Bureau\'s NT$138 billion and NT$173.02 billion extension-plan totals because the city list does not define the same scope.', source: taoyuanA22Budget.id },
+    { text: 'The Taoyuan builder\'s line page places A22 near Yongxing Park at the Central West Road–Zhongfeng Road junction and records A22 as open while A23 remains the onward extension, but it does not publish a station-only civil contract breakdown.', source: taoyuanDortsAirport.id },
+    { text: 'The checked TYMC public-art table has no A22 allocation row, and the earlier Railway Bureau architecture report covers the initial A1-A21/A14a set rather than this later extension; A22 art metadata therefore remains TBC.', source: publicArt.id },
     { text: 'A22 is the first built stage of the Airport MRT extension from A21 toward Zhongli; the Ministry says the extension required changes to the track alignment and station configuration to coordinate with the Taoyuan railway-undergrounding project.', source: motcA22.id },
     { text: 'The Ministry records construction difficulties specific to this extension: COVID-19 affected overseas electrical and mechanical suppliers, while integrating the new section’s signalling with the existing system created technical difficulty and lengthened testing.', source: motcA22.id },
     { text: 'The same announcement describes A22 as a step toward a future A23 connection with the underground Zhongli railway station and a planned Green Line extension transfer.', source: motcA22.id },

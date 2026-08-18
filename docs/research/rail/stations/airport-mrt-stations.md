@@ -672,6 +672,124 @@ contractor claims.
   hotel or HSR facilities where described but do not state paid-area versus
   street-transfer treatment. Checked 18 August 2026.
 
+## A19-A22 deepening - 18 August 2026
+
+The final Airport MRT audit found A19 58 words, A20 58, A21 59 and A22 94.
+The earlier search had used the architecture, operator and public-art pages but
+had not exhausted the CU03 annual-report record, the Railway Bureau's later
+Zhongli-extension pages, CM01 and ME06A procurement records, the Taoyuan DORTS
+project page or the Taoyuan government project list. Those full primary pages
+were fetched and read for this batch.
+
+### Established
+
+- **A19-A20 CE03B and landscape — PRIMARY, High confidence.** The full 102
+  annual report identifies CE03B as the Qingpu-to-Zhongli elevated-bridge
+  package containing A17-A20 and the Qingpu depot administration building. It
+  records the bridge structure complete, station structure and rain-protection
+  work complete, ceiling closeout, BMS integration in June 2013, fire checks
+  from August and 99.95% package progress at 102-year end. The full architecture
+  report separately describes A19's bus/MRT transition plaza and future joint-
+  development planting constraint, and A20's urban-edge setting and windmill
+  paving motif. URLs:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf and
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf. The annual
+  report states: 「本施工標為青埔至中壢段之高架橋工程及領航站(A17)、高鐵桃園站
+  (A18)、桃園體育園區站(A19)及興南站(A20)等4座高架車站及青埔機廠行政大樓」.
+- **A21 CU03 — PRIMARY, High confidence.** The full 102 annual report
+  identifies CU03 as the underground package containing the A21 station,
+  emergence and cut-and-cover sections. It records civil completion, road and
+  landscape restoration, partial acceptance on 15 August 2013, A21 fire-safety
+  approval on 19 November, completed three-stage SCADA testing on 17–18
+  December and 99.96% year-end progress. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標屬地下工程，包括出土段、明挖覆蓋段及車站區，設有地下
+  車站環北站(A21)」 and 「截至102年年底本標施工進度為99.96%」.
+- **A22 extension scope and method — PRIMARY, High confidence.** The full
+  Railway Bureau project page describes the A21-to-A23 underground extension
+  as approximately 2.06 km, with A22 at the Central West Road area, A23 under
+  Zhongli railway station, cut-and-cover stations using half-width traffic
+  staging and deck beams, and shield tunnelling for the route sections. It
+  gives the original approved plan total as NT$138.01 billion, the revised plan
+  as NT$138 billion and the second revision as NT$173.02 billion. URL:
+  https://www.rb.gov.tw/zh-TW/%5Bsite%5D/main_28/20250505_152320/20251104_133945/20250505_152539/. The original text states: 「本計畫由機場捷運A21環北站(不含)
+  起，全長約2.06公里，全線採地下化方式前進」 and 「經費由138億元修正為173.02億元」.
+- **A22 CM01 civil package — PRIMARY, High confidence.** The full Railway
+  Bureau North Region Engineering Branch page identifies CM01's Zhongli
+  corridor scope, Continental Engineering Corporation as contractor, a
+  NT$7,155,054,208 contract amount and a 28 December 2013 start. This is a
+  corridor package, not a station-only A22 value. URL:
+  https://www.rb.gov.tw/zh-TW/NREO/NREO_4/NREO_5/20250430_155947/. The original
+  text states: 「廠商名稱 | 大陸工程股份有限公司」 and 「契約金額 | 新台幣
+  7,155,054,208元整」.
+- **A22 ME06A systems procurement — PRIMARY, High confidence.** The full
+  Railway Bureau notice says ME06A covered A14 and A22, with A23 as a later
+  expansion. It records twelve failed tenders from September 2014 to January
+  2019 and the systems budget moving from NT$1.575 billion to NT$3.159 billion;
+  the notice does not name a successful contractor. URL:
+  https://www.rb.gov.tw/news.php?infoid=1812&lmenuid=11&smenuid=49&tmenuid=0. The
+  original text states: 「歷經12次招標（自103.9至108.1耗時4年5個月、預算由15.75
+  億元調整至31.59億元）」.
+- **A22 opening and integration — PRIMARY, High confidence.** The full
+  Railway Bureau opening announcement records March 2023 stability testing,
+  1 March operator handover, the July 2023 operating licence and 31 July
+  opening, together with the planned A23/railway/Green Line connections. URL:
+  https://www.rb.gov.tw/zh-TW/main/main_188/news/main_347/artsinfo_3905/. The
+  original text states: 「終於112年3月完成穩定性測試，桃園大眾捷運公司亦於3月1日
+  進駐接管進行營運前準備」.
+- **A22 location and budget-list record — PRIMARY, High confidence.** The full
+  Taoyuan DORTS page places A22 near Yongxing Park at the Central West Road and
+  Zhongfeng Road junction and records A22 open while A23 remains the onward
+  extension. A separate full Taoyuan government project list labels an A22
+  opening project with an estimated NT$13.8 billion. URLs:
+  https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23131 and
+  https://reiso.tycg.gov.tw/governance-outcome/1. The budget-list row states:
+  「中壢區機場捷運A22老街溪站通車計畫* | | 13,800,000,000」.
+
+### Conflicts in this pass
+
+1. CE03B's 99.95% is a package snapshot for A17-A20, not an A19 or A20
+   station-only completion value. CU03's 99.96% is likewise a package snapshot
+   for A21 and its associated underground/cut-and-cover works, not a standalone
+   station percentage.
+2. A22's extension-plan totals are retained as three values with their
+   measures: NT$138.01 billion was the original approved plan total, NT$138
+   billion was the first revised plan, and NT$173.02 billion was the second
+   revised total after railway-interface work and price changes. The Taoyuan
+   government list's NT$13.8 billion is an estimate for a separately labelled
+   A22 opening project and is not silently treated as the full A21-A23 plan.
+3. The ME06A notice's NT$1.575 billion and NT$3.159 billion are systems-
+   procurement budget snapshots for a notice covering A14/A22 with A23 as a
+   later expansion; CM01's NT$7,155,054,208 is a civil-and-track corridor
+   contract. Neither is an A22 station-only price.
+4. The 109 Railway Bureau progress page gives July 2022 as the planned A22
+   opening target, while the later opening announcement records the actual
+   31 July 2023 opening. Both dates are published with planned versus actual
+   status.
+
+### Checked and failed for A19-A22
+
+- **A19-A20 station-only contractor, award value and final account** — the full
+  102 annual report identifies CE03B and its scope but gives no station-only
+  contractor/value/account table. Checked 18 August 2026.
+- **A21 station-only contractor, award value and final account** — the full 102
+  annual report identifies CU03 and its milestones but gives no station-only
+  contractor/value/account table. Checked 18 August 2026.
+- **A22 station-only civil breakdown** — CM01 identifies a corridor contractor
+  and contract amount, while the extension pages identify ME06A systems scope;
+  no source found in this pass allocates either value to A22 alone. Checked 18
+  August 2026.
+- **A19-A22 construction-era renames** — no dated rename gazette or equivalent
+  naming record was found in the checked Railway Bureau, Taoyuan DORTS, TYMC and
+  MOTC pages. Checked 18 August 2026.
+- **A19-A22 public-art metadata** — no A19, A20, A21 or A22 allocation row was
+  found on TYMC's full checked public-art page; the initial architecture report
+  does not cover the later A22 extension. This remains not found, not proof of
+  no artwork. Checked 18 August 2026.
+- **A19-A22 fare-boundary modes** — the checked pages do not state paid-area
+  versus street-transfer treatment for the bus, HSR, bus-station or planned
+  railway connections. Checked 18 August 2026.
+
 ## Conflicts
 
 1. **A3 station code.** TYMC and the RB report use engineering/current-project
