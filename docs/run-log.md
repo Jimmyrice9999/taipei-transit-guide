@@ -9751,3 +9751,71 @@ changed.
 
 Next: commit and push this G02-G17 batch, then continue with G18, G19 and the
 remaining O/LB station batches.
+
+# Run 38 — Part 1 Songshan-Xindian and Zhonghe-Xinlu G18, G19, O01–O04, 18 August 2026
+
+Audited before editing. This batch widened the source-family search to the
+full Songshan architecture introduction and principles, the G18 architecture
+page, the G19 public-art page, the full Zhonghe architecture page, Zhonghe
+structural-engineering and land-development technical ebooks, the Nanshijiao
+joint-development case study, and current TRTC station pages. No unverified
+appendix was used. No frontmatter fact or spec was restated as prose.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| G18 | 437 | Songshan architecture, architecture principles, G18 architecture, current TRTC page |
+| G19 | 453 | Songshan architecture, architecture principles, G19 public-art page, current TRTC page |
+| O01 | 463 | Zhonghe architecture, structural engineering, Nanshijiao plan and benefits, current TRTC page |
+| O02 | 376 | Zhonghe architecture, structural engineering, completed land-development cases, current TRTC page |
+| O03 | 343 | Zhonghe architecture, structural engineering, completed land-development cases, current TRTC page |
+| O04 | 409 | Zhonghe architecture, structural engineering, completed land-development cases, current TRTC page |
+
+Sources fetched in full:
+
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page68.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=099C7E1AFD7FD705
+- https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page175.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page135.html
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page119.html
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page121.html
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
+- https://web.metro.taipei/pages2026/WebStation/110/1
+- https://web.metro.taipei/pages2026/WebStation/111/1
+- https://web.metro.taipei/pages2026/WebStation/048/1
+- https://web.metro.taipei/pages2026/WebStation/047/1
+- https://web.metro.taipei/pages2026/WebStation/046/1
+- https://web.metro.taipei/pages2026/WebStation/045/1
+
+Sourced: G18’s Nanjing East Road/Sanmin Road office-and-arcade corridor,
+commuter and school demand, community-gateway design intent, and the source-era
+G21/current G18 code pair; G19’s Songshan railway-square, Raohe/Wufenpu/Ciyou
+Temple setting, day-and-night district role, and the open-call Jimmy-adjacent
+public-art record with its title, artist, scope and former 麻里錫口 context; the
+Zhonghe corridor’s shield-tunnel and sequential-excavation engineering; and
+O01–O04’s station-specific joint-development sites and property programmes.
+
+Conflicts published: DORTS’s G21 and G22 are source-era construction/project
+labels, while current TRTC publishes G18 and G19; both values are retained with
+what each measures. The Zhonghe engineering record reports separate preload
+ranges for Dingxi/Yongan Market and Jingan/Nanshijiao; the land-development
+register records separate buildings, dates, floor programmes and retained
+property, so those values were not averaged or combined. No rename date was
+found.
+
+TBC after exhausting the fetched families: individual civil contractors and
+final station accounts for G18, G19 and O01–O04; architect, rename gazette,
+complete current art inventory and paid-area versus street-transfer status
+where the primary pages do not publish them. No false-prefix audit applies to
+rail stations.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after the O-line font-subset regeneration (519 pages, no
+missing glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185
+tests); `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. Claims baseline and its test were
+not changed.
+
+Next: commit and push this G18/G19/O01–O04 batch, then continue with O05–O10.

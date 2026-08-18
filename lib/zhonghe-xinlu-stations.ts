@@ -2,7 +2,7 @@ import type { Source } from './sources.ts'
 import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
-const accessed = '2026-08-14'
+const accessed = '2026-08-18'
 const trtcPublisher = 'Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)'
 const dortsPublisher = 'Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局)'
 
@@ -90,6 +90,42 @@ const dortsPublicArt = source(
   dortsPublisher,
   'https://www.dorts.gov.taipei/cp.aspx?n=ABF67AE806949931',
   'The full official public-art page identifies 南勢角站’s 青春美樂地, its artist, medium, completion month, location and selection method.',
+)
+
+const dortsZhongheEngineering = source(
+  'dorts-zhonghe-xinlu-structural-engineering',
+  'Zhonghe Line station excavation and support engineering',
+  '捷運結構工程實務：中和線車站基地開挖',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page175.html',
+  'The full DORTS structural-engineering page records the Zhonghe Line route, four underground stations, sequential excavation, H-section steel internal bracing, preload ranges and cover slabs where roads overlap the works.',
+)
+
+const dortsZhongheLandDevelopmentCases = source(
+  'dorts-zhonghe-xinlu-land-development-cases',
+  'Completed Zhonghe Line land-development sites',
+  '捷運土地開發實務：中和線土地開發',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page135.html',
+  'The full DORTS land-development casebook page records Dingxi, Yongan Market and Jingan station-area buildings, their investors, completion dates, building forms and Taipei City retained premises.',
+)
+
+const dortsNanshijiaoLandDevelopmentPlan = source(
+  'dorts-nanshijiao-land-development-plan',
+  'Nanshijiao station joint-development plan',
+  '臺北捷運土地開發案例解析：中和線南勢角站捷六土地開發案',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page119.html',
+  'The full DORTS case study explains the Nanshijiao joint-development planning origin, its relation to the Zhonghe Line corridor and the statutory land-use process.',
+)
+
+const dortsNanshijiaoLandDevelopmentBenefits = source(
+  'dorts-nanshijiao-land-development-benefits',
+  'Nanshijiao station joint-development benefits and site summary',
+  '臺北捷運土地開發案例解析：中和線南勢角站土地開發基地概要',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page121.html',
+  'The full DORTS case-study page records the Nanshijiao development open space, public-use childcare area, site area, building programme, parking, permit and use-certificate dates.',
 )
 
 const detail = (
@@ -185,17 +221,79 @@ type OData = {
   designSource?: Source
   publicArt?: string
   publicArtSource?: Source
+  proseSources?: Source[]
   prose?: StationProseSentence[]
 }
 
 const oData: Record<string, OData> = {
-  O01: { engineering: 'O19', exits: 4, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 捷運路52號、近南山路399巷; 2: 捷運路22號; 3: 捷運路16號; 4: 捷運路6號、近興南路1段. Accessible exit: 3.', facilities: 'Exit lift between exits 3 and 4; paid-concourse platform lift near the enquiry point; enquiry point near exits 3 and 4; water dispenser at exit 4; paid-zone toilets and parent/accessible toilet near exits 3 and 4; baby-changing facilities in the parent/accessible and male/female toilets; bicycle access open.', landmarks: tbc, design: 'The builder describes the Zhonghe Line as entirely underground and designed around economical ground facilities and station interiors in the narrow older urban area.', designSource: dortsZhongheArchitecture, publicArt: '青春美樂地 — 賴純純; acrylic, neon tubes and epoxy resin; November 1998; concourse and platform levels.', publicArtSource: dortsPublicArt, prose: [
+  O01: { engineering: 'O19', exits: 4, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 捷運路52號、近南山路399巷; 2: 捷運路22號; 3: 捷運路16號; 4: 捷運路6號、近興南路1段. Accessible exit: 3.', facilities: 'Exit lift between exits 3 and 4; paid-concourse platform lift near the enquiry point; enquiry point near exits 3 and 4; water dispenser at exit 4; paid-zone toilets and parent/accessible toilet near exits 3 and 4; baby-changing facilities in the parent/accessible and male/female toilets; bicycle access open.', landmarks: tbc, design: 'The builder describes the Zhonghe Line as entirely underground and designed around economical ground facilities and station interiors in the narrow older urban area.', designSource: dortsZhongheArchitecture, publicArt: '青春美樂地 — 賴純純; acrylic, neon tubes and epoxy resin; November 1998; concourse and platform levels.', publicArtSource: dortsPublicArt, proseSources: [dortsZhongheArchitecture, dortsZhongheEngineering, dortsNanshijiaoLandDevelopmentPlan, dortsNanshijiaoLandDevelopmentBenefits], prose: [
     { text: 'DORTS places Nanshijiao within the former Taiwan Railway Administration Zhonghe station site, where the constrained depot ground also accommodates the station.', source: dortsZhonghe.id },
     { text: 'The official art brief turns local growth and modernization into a visual language of colour and movement, linking Zhonghe–Nanshijiao to a Taiwanese song about striving and freedom.', source: dortsPublicArt.id },
+    { text: 'The structural-engineering record places the four Zhonghe Line stations in a 5.4-kilometre underground corridor connected by shield tunnels.', source: dortsZhongheEngineering.id },
+    { text: 'It says the station and switch-tunnel excavation was carried out by sequential excavation with H-section steel internal bracing.', source: dortsZhongheEngineering.id },
+    { text: 'Where the station works overlapped roads, cover slabs were used so surface traffic could continue rather than being treated as a permanent construction closure.', source: dortsZhongheEngineering.id },
+    { text: 'The same source records different preload ranges for the northern Dingxi and Yongan Market stations and the southern Jingan and Nanshijiao stations, preserving a section-level engineering distinction.', source: dortsZhongheEngineering.id },
+    { text: 'Nanshijiao was also the subject of a dedicated joint-development plan because the station site sits at a major urban intersection and transport node.', source: dortsNanshijiaoLandDevelopmentPlan.id },
+    { text: 'DORTS describes the plan as part of the statutory land-use process for station, transfer, parking and related railway facilities, rather than as an ordinary private redevelopment.', source: dortsNanshijiaoLandDevelopmentPlan.id },
+    { text: 'The completed development provides a large open space at ground level and a public-use area on the second floor that New Taipei City planned as a regional childcare centre.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'The site summary gives a 25,124.94-square-metre base, commercial and residential zoning, a nineteen-storey building above three basement levels and 592 parking spaces.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'DORTS records the building permit on 2 July 2007 and the use certificate on 15 April 2011, so the station’s joint-development story extends well beyond the railway opening date.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'The building combines housing, shops and general offices with the metro facilities, and the case study treats the resulting skyline as a deliberate station landmark.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'Its design uses setbacks, a corner plaza, public and welfare facilities and internalised transport services to improve the surrounding urban environment.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'The common Zhonghe architecture record says the line did not seek a new architectural style, instead using economical underground construction and restrained surface facilities to avoid a strong visual impact on the old narrow-road districts.', source: dortsZhongheArchitecture.id },
+    { text: 'At Nanshijiao, that restraint is paired with a large co-constructed development whose public space and childcare use give the station a civic edge.', source: dortsNanshijiaoLandDevelopmentBenefits.id },
+    { text: 'The fetched primary pages do not establish the individual civil contractor, final station account, rename gazette, complete current artwork inventory or paid-area versus street-transfer classification for O01.', source: dortsZhongheEngineering.id },
+    { text: 'Those fields remain TBC rather than being inferred from the joint-development building or the public-art title.', source: dortsZhongheArchitecture.id },
   ] },
-  O02: { engineering: 'O18', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 景平路486號、近景平路、景安路口. Accessible: single exit.', facilities: 'Platform lift at the paid concourse beside the male toilet; exit accessibility lift is published for the station; enquiry points near the exit and at the platform level; water dispenser by the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access is open for the O line.', landmarks: tbc, interchange: { label: 'Circular Line; transfer mode: TBC', lineCode: 'Y' } },
-  O03: { engineering: 'O17', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 中和路388號. Accessible: single exit.', facilities: 'Exit lift at exit 1; platform lift near the enquiry point, serving the centre of platform 2; enquiry point near the exit; water dispenser at the right of the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access open.', landmarks: tbc },
-  O04: { engineering: 'O16', exits: 2, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 永和路2段168號; 2: 永和路2段233號. Accessible exit: 1.', facilities: 'Exit 1 lift; paid-concourse platform lift behind the enquiry point; enquiry point and water dispenser near exit 1; unpaid toilets and parent/accessible toilet near exit 1; nursing room near exit 2; baby-changing facilities; bicycle access open.', landmarks: tbc },
+  O02: { engineering: 'O18', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 景平路486號、近景平路、景安路口. Accessible: single exit.', facilities: 'Platform lift at the paid concourse beside the male toilet; exit accessibility lift is published for the station; enquiry points near the exit and at the platform level; water dispenser by the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access is open for the O line.', landmarks: tbc, interchange: { label: 'Circular Line; transfer mode: TBC', lineCode: 'Y' }, proseSources: [dortsZhongheArchitecture, dortsZhongheEngineering, dortsZhongheLandDevelopmentCases], prose: [
+    { text: 'Jingan belongs to the first underground Zhonghe corridor, where DORTS used sequential excavation, internal H-section steel bracing and road-cover slabs to keep the narrow urban route functioning during construction.', source: dortsZhongheEngineering.id },
+    { text: 'The engineering record distinguishes the Jingan and Nanshijiao excavation support from the northern Dingxi and Yongan Market preload figures, so the four-station corridor is not treated as one undifferentiated construction case.', source: dortsZhongheEngineering.id },
+    { text: 'DORTS’s completed land-development register identifies a Jingan station joint-development site at the intersection of Jingan Road and Jingping Road.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The project was invested in by Kindom Construction and is named the Beautiful Jingan Building in the official case record.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'DORTS records a May 2008 completion date, a five-level basement and nineteen floors above ground, with a mixed office-and-residential use.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The city retained four general-office units on floors three through five, totalling about 1,592.06 ping, together with twenty underground parking spaces.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'Those retained premises show that the station development was also a public-property project, not simply a private building placed near a metro entrance.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The architecture record explains why this kind of interface mattered: the Zhonghe Line passes through older districts with narrow roads, so land development supplied a way to obtain station surface facilities and guide surrounding renewal.', source: dortsZhongheArchitecture.id },
+    { text: 'The builder says the line did not aim to impose a new surface architectural style, and instead sought economical station design with as little urban-landscape impact as possible.', source: dortsZhongheArchitecture.id },
+    { text: 'Interior design consequently became more important than a large exterior object because all four original Zhonghe stations are underground.', source: dortsZhongheArchitecture.id },
+    { text: 'Jingan’s development record therefore adds a property and urban-renewal history to the engineering record without turning the Beautiful Jingan Building into the station itself.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'It also explains why the station’s public edge should be read as a negotiated combination of transport infrastructure, retained public premises and a mixed-use building.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The fetched primary pages do not identify Jingan’s individual civil contractor, final station account, architect, rename gazette, complete artwork record or paid-area versus street-transfer classification.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'Those fields remain TBC rather than being filled from the development building’s investor or address.', source: dortsZhongheArchitecture.id },
+  ] },
+  O03: { engineering: 'O17', exits: 1, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: 'Single exit: 中和路388號. Accessible: single exit.', facilities: 'Exit lift at exit 1; platform lift near the enquiry point, serving the centre of platform 2; enquiry point near the exit; water dispenser at the right of the exit; paid-zone toilets and parent/accessible toilet near the exit; baby-changing facilities; bicycle access open.', landmarks: tbc, proseSources: [dortsZhongheArchitecture, dortsZhongheEngineering, dortsZhongheLandDevelopmentCases], prose: [
+    { text: 'Yongan Market is one of the four underground stations in the first Zhonghe corridor, which DORTS records as a 5.4-kilometre route connected by shield tunnels.', source: dortsZhongheEngineering.id },
+    { text: 'The station-base and switch-tunnel excavations used sequential excavation with H-section-steel internal bracing, while cover slabs maintained traffic where the works overlapped roads.', source: dortsZhongheEngineering.id },
+    { text: 'The engineering record distinguishes the preload reported for Yongan Market and Dingxi from the figures for Jingan and Nanshijiao, so these are section measurements rather than one line-wide value.', source: dortsZhongheEngineering.id },
+    { text: 'The land-development register places the Yongan Market joint-development site on Zhonghe Road and Lane 400.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'DORTS names the development Beautiful Yongan and identifies Guande Construction as its investor.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The official case record gives a March 2007 completion date, four basement levels and twenty-two floors above ground, with residential use.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'It records ninety-eight city-retained residential units totalling about 3,129.6 ping and thirteen underground parking spaces.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'That retained-property entry documents the public-property interface around the station-area building, not a claim that the developer built the railway itself.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'DORTS’s Zhonghe architecture account says the line is underground through a narrow older urban fabric, making station interiors more important to identity than a visible elevated structure.', source: dortsZhongheArchitecture.id },
+    { text: 'The same account describes joint development or expropriation as the way surface facilities were obtained and says surrounding facilities were designed to limit urban-landscape impact.', source: dortsZhongheArchitecture.id },
+    { text: 'This makes Yongan Market a station-and-development interface in the corridor’s renewal strategy, rather than an isolated platform box.', source: dortsZhongheArchitecture.id },
+    { text: 'The Yongan development record therefore differs from the Jingan record, which DORTS describes as a mixed office-and-residential building with city-retained offices rather than the same residential programme.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The fetched primary pages do not establish Yongan Market’s individual civil contractor, final station account, architect, rename gazette, complete current artwork inventory or paid-area versus street-transfer classification.', source: dortsZhongheEngineering.id },
+    { text: 'Those fields remain TBC rather than being inferred from the nearby development or the station name.', source: dortsZhongheArchitecture.id },
+  ] },
+  O04: { engineering: 'O16', exits: 2, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 永和路2段168號; 2: 永和路2段233號. Accessible exit: 1.', facilities: 'Exit 1 lift; paid-concourse platform lift behind the enquiry point; enquiry point and water dispenser near exit 1; unpaid toilets and parent/accessible toilet near exit 1; nursing room near exit 2; baby-changing facilities; bicycle access open.', landmarks: tbc, proseSources: [dortsZhongheArchitecture, dortsZhongheEngineering, dortsZhongheLandDevelopmentCases], prose: [
+    { text: 'Dingxi is one of the four underground stations in the original Zhonghe corridor, whose station works DORTS describes as sequential excavations supported by H-section steel and cover slabs over traffic-bearing roads.', source: dortsZhongheEngineering.id },
+    { text: 'The structural source reports a northern-station preload range for Dingxi and Yongan Market and a separate range for Jingan and Nanshijiao; the values measure construction support conditions, not passenger demand.', source: dortsZhongheEngineering.id },
+    { text: 'DORTS’s completed development register records three Dingxi station-area sites rather than one generic building.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The Dingxi J2 site, called the Cardia Building, stands at Yonghe Road Section 2 No. 233 and was invested in by Baochiang Construction.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'DORTS gives the Cardia Building a July 2006 completion date, two basement levels and seventeen floors above ground, with mixed office-and-residential use.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The city-retained portion is recorded as eleven offices and five residences totalling about 872.54 ping, with no underground parking retained in that entry.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The Dingxi J3 site, Huafu Qianjin at Yonghe Road Section 2 Nos. 166 and 168, was invested in by Huafu Construction and completed in April 2011.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'Its case record gives three basement levels and nineteen floors above ground, mixed use, two shops, five residences and ninety general offices totalling about 2,314.4 ping, with a fourth basement and forty-five parking spaces.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The J4 site, Jieyun Celebrity at Yonghe Road Section 2 No. 121, was also invested in by Huafu Construction and completed in June 2005.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'DORTS records J4 as a two-basement, nineteen-floor mixed-use building and says the city retained no property rights in that case.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'These three entries show that the station-area record concerns separate development contracts and property outcomes, not three conflicting counts for one building.', source: dortsZhongheLandDevelopmentCases.id },
+    { text: 'The Zhonghe architecture source describes the common line context as underground construction in a narrow older urban area, with economical surface facilities and station interiors carrying much of the identity.', source: dortsZhongheArchitecture.id },
+    { text: 'It also describes joint development or expropriation as the surface-land mechanism and says facilities were arranged to reduce effects on the cityscape.', source: dortsZhongheArchitecture.id },
+    { text: 'The fetched primary pages do not establish Dingxi’s individual civil contractor, architect, rename gazette, complete current artwork inventory or paid-area versus street-transfer classification.', source: dortsZhongheEngineering.id },
+    { text: 'Those fields remain TBC; the separate development dates and floor programmes are not silently combined into a single station statistic.', source: dortsZhongheLandDevelopmentCases.id },
+  ] },
   O05: { engineering: 'O15', exits: 9, openingDate: '24 December 1998', route: dortsZhonghe, platformDetails: underground, exitDetails: '1: 羅斯福路2段136號; 2: 羅斯福路2段168號; 3: 羅斯福路2段79號; 4: 羅斯福路2段69號; 5: 和平東路1段17號; 6: 羅斯福路2段43號; 7: 羅斯福路2段50號、近郵政醫院、婦幼醫院; 8: 和平西路1段13號; 9: 羅斯福路2段100號. Accessible exit: 1.', facilities: 'Exit 1 lift; paid-concourse platform lift behind the enquiry point; enquiry points near exits 1–4 and 5–9; water dispenser at exit 6; unpaid toilets and parent/accessible toilet near exits 1–4; nursing room near exits 7–9; baby-changing facilities; bicycle access open.', landmarks: '郵政醫院; 婦幼醫院', design: 'DORTS notes that O05/G09 Guting was built under the Xindian Line project rather than the Zhonghe Line contract.', designSource: dortsZhonghe, interchange: { label: 'Songshan–Xindian Line; transfer mode: G', lineCode: 'G' } },
   O06: { engineering: 'O14', exits: 8, openingDate: '30 September 2012', route: dortsXinzhuang, platformDetails: underground, exitDetails: '1: 信義路2段、近臨沂街口; 2: 信義路2段與金山南路1段路口; 3: 信義路2段114巷口; 4: 信義路2段148巷口、近麗水街口; 5: 信義路2段166號、近永康街口; 6: 信義路2段、近連雲街口; 7: 近信義路2段191號; 8: 信義路2段163號、東門郵局旁. Accessible exit: 8.', facilities: 'Exit 8 lift; paid-concourse platform lift; enquiry points near exits 4–8; water dispenser between exits 1 and 3; unpaid toilets near exit 6 and paid toilets by the platform lift; parent/accessible toilet by the platform lift; nursing room near exits 6–8; baby-changing facilities; bicycle access open.', landmarks: '東門郵局', design: 'The O06 extension from Zhongxiao Xinsheng to Guting passed its final inspection on 14 September 2012 and opened on 30 September 2012.', designSource: dortsXinzhuang, interchange: { label: 'Tamsui–Xinyi Line; transfer mode: R', lineCode: 'R' } },
   O07: { engineering: 'O13', exits: 7, openingDate: '3 November 2010', route: dortsXinzhuang, structureSource: architecture.o07, platformDetails: underground, platformSource: architecture.o07, exitDetails: '1: 忠孝東路2段101號、近忠孝國小; 2: 忠孝東路2段134巷、近忠孝公園; 3: 忠孝東路3段10巷; 4: 忠孝東路3段與新生南路1段交叉口、近台北科技大學; 5: 新生南路1段56巷口，近濟南路; 6: 新生南路1段、濟南路口; 7: 新生南路1段、忠孝東路3段口. Accessible exits: 2 and 3.', facilities: 'Exit lifts at exits 2 and 3; paid-concourse platform lifts for the Bannan and O lines; enquiry points near exits 1–2 and 5–7; water dispensers at exits 1 and 5; unpaid toilets and parent/accessible toilet near exits 1–2; O-line nursing room in the paid B1 hall; baby-changing facilities; bicycle access not open.', landmarks: '忠孝國小; 忠孝公園; 台北科技大學', design: 'The builder’s station page gives the design theme as 現代化、科技感 (“modernity and technology”), responding to Taipei Tech and the Guanghua information-commerce district.', designSource: architecture.o07, interchange: { label: 'Bannan Line; transfer mode: BL', lineCode: 'BL' } },
@@ -284,7 +382,7 @@ function makeResearch(code: string, data: OData): StationResearch {
   const designSource = data.designSource ?? data.route
   const publicArtOverride = publicArtOverrides[code]
   const publicArtSource = data.publicArtSource ?? publicArtOverride?.source
-  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(publicArtSource ? [publicArtSource] : [])]
+  const sources = [stationSource, data.route, structureSource, platformSource, designSource, dortsDepot, ...(publicArtSource ? [publicArtSource] : []), ...(data.proseSources ?? [])]
     .filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
   return {
     sources,

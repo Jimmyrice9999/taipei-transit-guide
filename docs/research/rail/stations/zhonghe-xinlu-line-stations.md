@@ -294,8 +294,9 @@ not evidence that the other stations have no art:
 - https://web.metro.taipei/pages2026/WebStation/134/1
 
 The operator pages were read for current station context and the builder pages
-for construction, architecture, art and route history. The results are
-recorded as correctly empty rather than padded with route-level facts.
+for construction, architecture, art and route history. The earlier empty-page
+result for O02–O06 is superseded for O02–O04 by the later source-family pass
+recorded below; O05 and O06 remain correctly empty at this point.
 
 ### O07–O12 Zhongxiao Xinsheng through Daqiaotou
 
@@ -368,6 +369,110 @@ No source conflict was found in this batch. O54’s missing year and cost are
 stated gaps, not inferred values.
 
 ---
+
+## Station-prose audit — Run 38 — 18 August 2026
+
+This batch widened the audit for G18, G19 and O01–O04 using full DORTS
+technical-ebook pages, route and architecture pages, land-development case
+pages, the DORTS public-art page, and current TRTC station pages. Search terms
+included `南京三民 站體 建築設計`, `松山站 公共藝術 光之慶典`, `中和線 車站
+基地 開挖`, `中和線 聯合開發 南勢角`, `頂溪 捷運 土地開發`, and `永安市場
+捷運 土地開發`. No unverified appendix was used as evidence.
+
+### G18 Nanjing Sanmin
+
+The full Songshan Line architecture ebook places the source-era G21 station at
+Nanjing East Road and Sanmin Road, in a corridor of twelve- to nineteen-storey
+office buildings with continuous arcades. It says the principal users are
+commuters and students, with shopping and tourism secondary, and records a
+two-level underground island station with four exits. The same page gives the
+design theme “社區玄關＆城市門戶” (“community vestibule and city gateway”). The
+DORTS station table on the same project record uses G21, while the current TRTC
+station page uses G18; both are published because they are construction-era and
+current operating codes, not one reconciled code.
+
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page68.html — PRIMARY, High confidence; original evidence: `南京三民站（G21）位於南京東路與三民路口`、`以通勤及學生為主要旅客` and `社區玄關＆城市門戶`.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html — PRIMARY, High confidence; original evidence: `松山線自西門站至松山站` and the corridor description connecting Ximen’s commercial/rail history with Songshan’s Wufenpu and Raohe areas.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html — PRIMARY, High confidence; original evidence: `公共藝術與建築設計整合` and the requirements for identity, safety, durability and maintenance.
+- https://web.metro.taipei/pages2026/WebStation/110/1 — PRIMARY, High confidence; current operator station record for G18, fetched in full.
+
+### G19 Songshan
+
+The full public-art page places the station under Bade Road beside the Songshan
+railway-station square and near Raohe Street Night Market, Ciyou Temple,
+Wufenpu and the riverside/Blue Highway area. It describes the station as a
+transport and road interchange and as a Songshan district centre for religious,
+commercial and administrative activity, with heavy day-and-night use. An open
+call selected 麻粒國際文化試驗, with Jiang Yanghui, for the work `河流彎曲之處，
+域見繁花光穹`; the page links the work’s concept to the former name 麻里錫口 and
+the area’s water-trade history. The source-era station table uses G22, while
+the current TRTC page uses G19. The art description here records the
+collaboration, title and medium-level scope; it does not reproduce the
+copyrighted artwork.
+
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html — PRIMARY, High confidence; original evidence: `本站位於八德路地下，松山車站廣場北側`、`公開徵選` and `河流彎曲之處，域見繁花光穹`.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page63.html — PRIMARY, High confidence; original evidence: the full Songshan corridor account and its relationship between Ximen, Wufenpu and Raohe.
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page64.html — PRIMARY, High confidence; original evidence: the project-wide integration of entrances, concourses, platforms, landscape and lighting with public art.
+- https://web.metro.taipei/pages2026/WebStation/111/1 — PRIMARY, High confidence; current operator station record for G19, fetched in full.
+
+### O01–O04 Nanshijiao, Jingan, Yongan Market and Dingxi
+
+The full Zhonghe engineering record describes a 5.4-kilometre underground
+corridor with four stations linked by shield tunnels. Station bases and
+switch-tunnel bases used sequential excavation with H-section-steel internal
+bracing; cover slabs were used where road overlap required traffic to continue.
+The record reports different preload ranges for Dingxi/Yongan Market and for
+Jingan/Nanshijiao. These are construction-support measurements and are
+published as distinct values rather than averaged.
+
+The full Nanshijiao case study connects O01 with a station-area joint
+development at the former TRA Zhonghe site. Its benefits page records an open
+ground level, a second-floor public-use area planned by New Taipei as a
+regional childcare centre, a 25,124.94-square-metre site, nineteen floors above
+three basements, and 592 parking spaces; it also records the building permit on
+2 July 2007 and use certificate on 15 April 2011. The land-development register
+records Beautiful Jingan at Jingan/Jingping Roads, invested by Kindom
+Construction and completed in May 2008, with five basement levels, nineteen
+floors, mixed office/residential use, four city-retained office units totalling
+about 1,592.06 ping and twenty parking spaces. It records Beautiful Yongan at
+Zhonghe Road and Lane 400, invested by Guande Construction and completed in
+March 2007, with four basements, twenty-two floors, ninety-eight retained
+residential units totalling about 3,129.6 ping and thirteen parking spaces.
+
+The same register records three separate Dingxi sites: Cardia Building,
+invested by Baochiang Construction and completed in July 2006, with two
+basements, seventeen floors, mixed office/residential use, eleven offices and
+five residences totalling about 872.54 ping; Huafu Qianjin, invested by Huafu
+Construction and completed in April 2011, with three basements, nineteen
+floors, mixed use, two shops, five residences, ninety offices totalling about
+2,314.4 ping, a fourth basement and forty-five parking spaces; and Jieyun
+Celebrity, invested by Huafu Construction and completed in June 2005, with two
+basements, nineteen floors, mixed use and no city-retained property rights.
+These are separate development records, not competing measurements of a
+single building.
+
+- https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page175.html — PRIMARY, High confidence; original evidence: `中和線全長5.4公里`、`盾牌機`、`順打工法`、`H型鋼` and the road-cover-slab construction description.
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page135.html — PRIMARY, High confidence; original evidence: the full completed Zhonghe land-development table for Dingxi, Yongan Market and Jingan.
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page119.html — PRIMARY, High confidence; original evidence: the Nanshijiao joint-development origin and statutory land-use process.
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page121.html — PRIMARY, High confidence; original evidence: `25,124.94平方公尺`, `地上19層、地下3層`, `592` parking spaces, the public/welfare floor and permit/use-certificate dates.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=099C7E1AFD7FD705 — PRIMARY, High confidence; original evidence: Zhonghe’s underground/narrow-urban design constraints and the role of station interiors.
+- https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404 — PRIMARY, High confidence; current DORTS Zhonghe route record, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/048/1 — PRIMARY, High confidence; current operator station record for O01, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/047/1 — PRIMARY, High confidence; current operator station record for O02, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/046/1 — PRIMARY, High confidence; current operator station record for O03, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/045/1 — PRIMARY, High confidence; current operator station record for O04, fetched in full.
+
+### Conflicts and gaps
+
+The only code conflicts in this batch are the DORTS source-era G21/G22 labels
+and the current TRTC G18/G19 labels; both values and what they measure are
+published. The land-development pages contain different sites, dates, floor
+counts and retained-property programmes; they are separate projects and are
+not combined. No source in this pass establishes the individual civil
+contractor, final station account, architect, rename gazette, complete current
+art inventory or paid-area versus street-transfer classification for O01–O04;
+those remain TBC. No additional source was found that turns the G18/G19 code
+labels into a rename date.
 
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
 
