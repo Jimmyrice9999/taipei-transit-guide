@@ -9646,3 +9646,46 @@ contradictions); `git diff --check` clean. `docs/for-jamie.md` remains 19 lines.
 
 Next: commit and push this K07–K09 batch, then continue with R25–R27 and the
 remaining incomplete G, O and LB station groups.
+
+# Run 36 — Part 1 Tamsui–Xinyi R25–R27 completion audit, 18 August 2026
+
+Audited before editing. R25 Guandu, R26 Zhuwei and R27 Hongshulin remain at
+zero body-prose words. No station page was padded with shared corridor facts or
+frontmatter repeats, and no content file required a change.
+
+The exhausted full-source record was rechecked from the existing primary audit:
+TRTC station pages 068–070; the DORTS Tamsui–Xinyi route page; DORTS technical
+ebook pages 37–46, 50, 55, 69, 71 and 73; and the DORTS public-art index. These
+pages return current exits, facilities, general northern-corridor structure,
+ground/elevated design context and unassigned-art context, but no R25-, R26-
+or R27-specific narrative that can be published without restating facts/specs.
+
+Full primary URLs:
+
+- https://web.metro.taipei/pages2026/WebStation/068/1
+- https://web.metro.taipei/pages2026/WebStation/069/1
+- https://web.metro.taipei/pages2026/WebStation/070/1
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page38.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page39.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page40.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page41.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page42.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page43.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page44.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page45.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page46.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page50.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page55.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page69.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page71.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page73.html
+- https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983
+
+TBC: station-specific contracts, final accounts, complete artwork metadata,
+rename gazettes and feeder-bus narrative. No colour-prefix audit applies to a
+rail station batch; no conflicts were found for R25–R27. This is an exhausted
+lookup, not a claim that the stations have no further history or artwork.
+
+Gates for this no-content batch: pending the same full gate sequence before
+commit. Next batch: G02, G03, G06, G11, G13 and G17.
