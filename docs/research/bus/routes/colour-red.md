@@ -266,6 +266,121 @@ before 08:00 or after 22:00.
   `收費方式 : 一段票`; `業者服務電話 : 指南客運淡海站:02-2805-2262`; and
   `08:00前與22:00後自淡海發車(不進漁人碼頭)`.
 
+## Batch 5 — 紅37, 紅38, 紅39, 紅5, 紅50 and 紅51, checked 18 August 2026
+
+The six current official pages were fetched in full. They establish current
+route identity, termini, service windows, fare class, operator contacts and
+current timetable variants. They do not establish route opening history, the
+original corridor decision or dated operator changes; those fields remain TBC.
+
+### 紅37 / R37
+
+The full official schedule page gives `淡海新市鎮 - 捷運淡水站`, weekday and
+holiday service 0540–2330, one-section fare and `淡水客運新市站` as the service
+contact. It records weekday peak/off-peak headways of 6–10/12–15 minutes,
+holiday peak/off-peak headways of 10–30 minutes, and says trips detouring via
+`淡水商工` do not make that detour on holidays or during university winter and
+summer vacations.
+
+- **Source:** “R37 route schedule” / `titleOriginal`: `紅37班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003700
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡海新市鎮 - 捷運淡水站`;
+  `頭末班車 : [平日] 0540 - 2330 / [假日] 0540 - 2330`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運新市站:02-2805-4870`;
+  `繞淡水商工班次例假日及寒暑假不繞駛`; and the listed weekday/holiday
+  headway notes.
+
+### 紅38 / R38
+
+The full official schedule page gives `淡海新市鎮 - 捷運淡水站`, weekday and
+holiday service 0550–0000, one-section fare and `淡水客運新市站` as the service
+contact. It records weekday peak/off-peak headways of 8–12/12–20 minutes,
+holiday peak/off-peak headways of 15/20 minutes, and 20–30 minute service after
+22:00.
+
+- **Source:** “R38 route schedule” / `titleOriginal`: `紅38班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003800
+- **Kind/confidence:** PRIMARY; High — full official schedule page read after
+  the official language redirect.
+- **Original-language text read:** `起迄站名 : 淡海新市鎮 - 捷運淡水站`;
+  `頭末班車 : [平日] 0550 - 0000 / [假日] 0550 - 0000`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運新市站:02-2805-4870`;
+  `尖峰:8分至12分`; `離峰:12分至20分`; and `22:00後每20-30分一車次`.
+
+### 紅39 / R39
+
+The full official schedule page gives `新春街 - 捷運淡水站`, weekday and
+holiday service 0610–2210, one-section fare and `淡水客運淡水站` as the
+service contact.
+
+- **Source:** “R39 route schedule” / `titleOriginal`: `紅39班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411003900
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 新春街 - 捷運淡水站`;
+  `頭末班車 : [平日] 0610 - 2210 / [假日] 0610 - 2210`;
+  `收費方式 : 一段票`; and `業者服務電話 : 淡水客運淡水站:02-2621-3340`.
+
+### 紅5 / R5
+
+The full official route-and-stop page gives `陽明山 - 捷運劍潭站`, weekday and
+holiday service 0530–2330, one-section fare and `大都會客運陽明山站` as the
+service contact. It records weekday peak/off-peak headways of 4–8/12–15
+minutes and holiday peak/off-peak headways of 12–15/12–15 minutes. It also
+records specified weekday trips detouring via `文化大學`, with those detours
+excluded on holidays and during winter and summer vacations.
+
+- **Source:** “R5 route and stop information” / `titleOriginal`: `紅5路線資訊`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0111000500
+- **Kind/confidence:** PRIMARY; High — full official route-and-stop page read.
+- **Original-language text read:** `起迄站名 : 陽明山 - 捷運劍潭站`;
+  `頭末班車 : [平日] 0530 - 2330 / [假日] 0530 - 2330`;
+  `尖峰:4分至8分`; `離峰:12分至15分`; `收費方式 : 一段票`;
+  `業者服務電話 : 大都會客運陽明山站:02-2861-6206`; and the notes beginning
+  `捷運劍潭站0730-0930班次、陽明山站1430-1830班次，繞駛文化大學`.
+
+### 紅50 / R50
+
+The full official schedule page gives `內湖 - 捷運圓山站`, weekday and holiday
+service 0600–2200, one-section fare and `首都客運內湖站` as the service contact.
+It also publishes a weekday subsidiary timetable labelled `經復興北路`, with
+departures at 0930, 1100, 1300, 1430 and 1600.
+
+- **Source:** “R50 route schedule” / `titleOriginal`: `紅50班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111005000
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 內湖 - 捷運圓山站`;
+  `頭末班車 : [平日] 0600 - 2200 / [假日] 0600 - 2200`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運內湖站:02-8792-5056`; and
+  the `紅50經復興北路班表` row `0930 1100 1300 1430 1600`.
+
+### 紅51 / R51
+
+The full official schedule page gives `淡海新市鎮 - 捷運淡水站`, weekday and
+holiday service 0530–2230, one-section fare and `淡水客運淡水站` as the service
+contact. It records weekday peak/off-peak headways of 15–30/30–60 minutes and
+holiday peak/off-peak headways of 30/60 minutes.
+
+- **Source:** “R51 route schedule” / `titleOriginal`: `紅51班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411005100
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡海新市鎮 - 捷運淡水站`;
+  `頭末班車 : [平日] 0530 - 2230 / [假日] 0530 - 2230`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運淡水站:02-2621-3340`;
+  `尖峰:15分至30分`; `離峰:30分至60分`; and the listed holiday headway notes.
+
 ## Batch 4 — 紅31, 紅33, 紅35, 紅35區, 紅36 and 紅37行經海洋都心社區, checked 18 August 2026
 
 The six current official pages were fetched in full. They establish current
@@ -484,7 +599,7 @@ as the service contact.
 
 ## What remains TBC
 
-- **All twenty-four batch-1/2/3/4 routes:** opening date, earlier alignment, original
+- **All thirty batch-1/2/3/4/5 routes:** opening date, earlier alignment, original
   corridor rationale and dated operator transfers are TBC.
 - **紅19:** its current school-day return stop variant is established; its
   creation date and rationale are TBC.
@@ -502,6 +617,12 @@ as the service contact.
   and rationale are TBC.
 - **紅35區:** current holiday suspension is established; its creation date and
   rationale are TBC.
+- **紅37:** current 淡水商工 detour treatment is established; its creation date
+  and rationale are TBC.
+- **紅5:** current 文化大學 detours are established; their creation dates and
+  rationale are TBC.
+- **紅50:** the current 復興北路 subsidiary timetable is established; its
+  creation date and rationale are TBC.
 
 ## Checked and failed
 

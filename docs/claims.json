@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 1146,
-    "tbc": 213,
+    "sourced": 1162,
+    "tbc": 237,
     "asserted": 32,
     "meta": 42
   },
@@ -452,6 +452,54 @@
       "file": "content/bus/routes/colour-red/red-37-17x5uzd.md",
       "sources": 3,
       "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-37-4arbx5.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-38.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-39.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-5.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-50.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/colour-red/red-51.md",
+      "sources": 3,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
