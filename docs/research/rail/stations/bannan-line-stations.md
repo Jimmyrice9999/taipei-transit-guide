@@ -308,6 +308,190 @@ architecture pages, DORTS public-art records and planning pages, technical
 books Nos. 2, 8 and 31, Technical Journal No. 39, and current TRTC station
 pages.
 
+## Station-prose deepening — 18 August 2026 — BL07–BL12
+
+The initial audit found only one public-art sentence for BL07 and no body
+prose for BL08–BL12. A second full-page pass through DORTS route records,
+technical books, technical journals, station architecture, public-art tables,
+and the CP263 contractor record added the following sourced prose: BL07 384
+words, BL08 417, BL09 365, BL10 436, BL11 405 and BL12 445. Every sentence in
+the station overlay points to one of the primary records listed below.
+
+- **BL07 Banqiao — 384 words.** DORTS’s full Banqiao route page establishes the
+  underground corridor, the revision from elevated to underground, the original
+  70.3-kilometre network context, the staged openings and the CP263 earliest-main-
+  work distinction: 「板橋線全線均以地下型式興建」 and 「藍線板橋段循原路線由高架改為地下並延伸至土城」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14,
+  source id `dorts-bannan-banqiao`. The procurement record says CP261–CP263
+  were joint-bid works and CP264–CP265B used domestic contractors with foreign
+  technical cooperation: 「本路線採共同投標」 and 「由國內廠商為主廠商與國際廠商以技術合作方式承攬」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html,
+  source id `dorts-bannan-procurement-strategy-p37`. The CP541 technical record
+  publishes the 12.46-kilometre underground ballastless-track scope and joint
+  contract history: 「CP541標東起西門站沿中華路，經和平西路穿越新店溪至板橋市漢生東路口，全線軌道長12.46公里」.
+  URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html,
+  source id `dorts-cp541-track-p21`. The temporary-terminal page says Longshan
+  Temple and Xinpu were intermediate stations that temporarily became terminals:
+  「龍山寺站及新埔站於路網中為中間站，但於分段通車時均分別成為臨時終端站」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html,
+  source id `dorts-bannan-temporary-terminals-p36`. The Y15/Y16 design paper
+  records the new Banqiao transport-hub and Xinpu Exit 5 context, including the
+  Y16 mixed-use site: 「在文化路與民生路交叉轉彎處亦有捷運新埔站5號出入口」.
+  URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no45/files/basic-html/page235.html,
+  source id `dorts-circular-banqiao-xinpu-architecture-p235`. DORTS’s full
+  Banqiao public-art table records an open selection for the ring work and its
+  connection metaphor: 「公開徵選」 and 「隱喻大臺北地區與周邊大型衛星城市交通脈絡的連接完成」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=D86ABA13A3A25631,
+  source id `dorts-bannan-banqiao-public-art-table`.
+
+- **BL08 Xinpu — 417 words.** The full Banqiao route page identifies the
+  underground five-station corridor, its Culture Road and Xindian River
+  alignment, staged openings and CP263 as the earliest main work. The relevant
+  original-language records are 「最早開始施工的主體工程為81年2月29日簽約的CP263標江子翠站及江子翠站至新埔站間隧道工程」 and
+  「龍山寺站至新埔站於89年8月24日履勘、於89年8月31日通車營運」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14,
+  source id `dorts-bannan-banqiao`. The contractor’s own full project record
+  confirms the station-and-tunnel scope, underground three-level form, older
+  housing, shield method, two-year duration and 1998 completion: 「江子翠站深入地底，為地下三層結構，全長約890公尺，且兩旁多為老舊住家」.
+  URL: https://www.kseco.com.tw/tc/project_in.aspx?cchk=7a7dc159-b64e-44e8-bde4-d53e4c3a4dec&chk=4a22537c-fbcd-43af-8db5-d9e9091642d3&cid=54&id=27&param=pn%3D1,
+  source id `kseco-cp263-jiangzicui` (PRIMARY contractor record). The full
+  noise study distinguishes the Xinpu–Jiangzicui measurement from the
+  Jiangzicui–Longshan river tunnel: 「新埔站至江子翠站為典型車內噪音頻譜圖」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page253.html,
+  source id `dorts-bannan-noise-river-tunnel-p253`. The Y16 design page records
+  the separate later project beside the existing Xinpu Exit 5 and its mixed
+  residential-commercial setting: 「周邊土地使用以住商混合為主」.
+  URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no45/files/basic-html/page235.html,
+  source id `dorts-circular-banqiao-xinpu-architecture-p235`. The fetched DORTS
+  Banqiao public-art table returned a Banqiao row but no Xinpu row; no artwork
+  metadata was inferred from that absence. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=D86ABA13A3A25631,
+  source id `dorts-bannan-banqiao-public-art-table`.
+
+- **BL09 Jiangzicui — 365 words.** The DORTS route page and KSECO project page
+  together establish the CP263 station-and-tunnel scope, the 29 February 1992
+  signature date, the shield-built underground three-level station, approximate
+  890-metre work, older housing and 1998 completion. The KSECO original is
+  「板橋線全線均採用潛盾施工，江子翠站深入地底，為地下三層結構」.
+  URL: https://www.kseco.com.tw/tc/project_in.aspx?cchk=7a7dc159-b64e-44e8-bde4-d53e4c3a4dec&chk=4a22537c-fbcd-43af-8db5-d9e9091642d3&cid=54&id=27&param=pn%3D1,
+  source id `kseco-cp263-jiangzicui`. DORTS’s procurement record says CP261–CP263
+  were joint-bid because shield tunnelling passed beneath the Xindian River and
+  was technically large: 「潛盾隧道必須穿越新店溪河床下，工程技術性高且工程規模與費用龐大」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html,
+  source id `dorts-bannan-procurement-strategy-p37`. The noise study gives the
+  different river-tunnel measurement: 「江子翠站至龍山寺站間係穿越新店溪，兩站間隧道長達3公里，峰值約在頻率630Hz至800Hz」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page253.html,
+  source id `dorts-bannan-noise-river-tunnel-p253`. The temporary-terminal record
+  and Banqiao route page establish the staged operational history, while DORTS’s
+  architecture page supplies the standardised-but-flexible early-network design
+  context: 「地下車站內部裝修均朝向樸實單純以機能為優先的設計」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2,
+  source id `dorts-bannan-architecture`. The fetched public-art table
+  has no Jiangzicui row, so artwork, artist, cost and selection method remain
+  TBC rather than being inferred from another station.
+
+- **BL10 Longshan Temple — 436 words.** DORTS’s full CP261 engineering page
+  establishes a 2,063-metre scope from the south end of Ximen to a Huajiang
+  Bridge ventilation shaft, including the station, shaft and twin running
+  tunnels: 「工程項目包括龍山寺站站體、通風井各一座，隧道上、下行線各一條」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page234.html,
+  source id `dorts-cp261-engineering-p234`. The same page identifies the
+  earth-pressure-balance shield method and the silty-sand/silty-clay interface
+  as the leak-prone geology. The full incident page records the 28 April 1995
+  inflow, six-metre surface void, nearby ten-storey-building tilt and emergency
+  treatment: 「上午7時15分於鏡面5點鐘方向突然大量湧水」 and 「地表產生沉陷（直徑約6m空洞）」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page236.html,
+  source id `dorts-cp261-incident-p236`. The correction page records comparison
+  of five methods and selection of low-pressure grouting: 「最後，認定採用低壓灌漿工法（LW）進行建物扶正作業」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page237.html,
+  source id `dorts-cp261-correction-p237`. The procurement source places CP261–
+  CP263 in the technically difficult joint-bid category, and the temporary-
+  terminal source records Longshan’s interim endpoint role. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html and
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html,
+  source ids `dorts-bannan-procurement-strategy-p37` and
+  `dorts-bannan-temporary-terminals-p36`. The architecture page names Longshan
+  as an early underground station where individual design flexibility remained
+  inside a standard functional framework. The fetched Banqiao public-art table
+  has no Longshan row; station artwork, civil final account, rename gazette,
+  paid-area classification and depot roster remain TBC.
+
+- **BL11 Ximen — 405 words.** The full CN252 tunnel-engineering page establishes
+  Ximen as a three-level Blue/Green interchange in an open-cut work zone along
+  Zhonghua Road, connecting north to CN253B and south to CN251 and CP261:
+  「該標工程為捷運藍線與綠線交會之三層立體車站」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page243.html,
+  source id `dorts-cn252-ximen-engineering-p243`. It also records the November
+  1994 pressure-gauge drilling incident, groundwater and sand-water inflow and
+  the worsening excavation conditions. DORTS’s procurement strategy says that
+  CN251/CN252 through the Boai special district used negotiated procurement with
+  the Veterans Engineering Office because of sensitive surroundings:
+  「基於地區的重要性、安全保險之問題，CN251、CN252標採與榮工處議價方式發包」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html,
+  source id `dorts-bannan-procurement-strategy-p37`. The later Songshan technical
+  table identifies Ximen as an existing three-level island station and records
+  the Green/Blue interchange: 「西門站(G13) 三層島式 既有車站 綠線與藍線」.
+  URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html,
+  source id `dorts-songshan-ximen-engineering-p147`. DORTS’s interchange guidance
+  explains why a station carrying two lines needs special attention to passenger
+  movement, route direction and transfer-path length, and its architecture page
+  gives the wider Nankang Line goal of fitting underground transport into active
+  commercial and human environments. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html and
+  https://ebook.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2,
+  source ids `dorts-bannan-temporary-terminals-p36` and
+  `dorts-bannan-architecture`. The reviewed public-art table has no
+  Ximen row; artwork, station-civil final account, rename gazette, paid-area
+  classification and depot roster remain TBC.
+
+- **BL12 Taipei Main — 445 words.** The full CN253B tunnel record establishes
+  the Pacific Construction–Shimizu Construction joint venture, the 822-metre
+  shield tunnel, 200-metre minimum curve radius, North Gate clearance and
+  Songshan Formation layers: 「由國內太平洋建設與日商清水建設聯合承欖」 and 「總長約822m」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page305.html,
+  source id `dorts-cn253b-tunnel-p305`. DORTS lists settlement, inclination,
+  convergence, extensometer, in-ground inclinometer, water-pressure and strain
+  monitoring instruments around the monument: 「北門古蹟及其近地表裝設監測儀器」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page306.html,
+  source id `dorts-cn253b-monitoring-p306`. Its retrospective conclusion says
+  「並未對北門古蹟造成影響」; this is retained as DORTS’s conclusion rather
+  than upgraded into an independent monitoring result. URL:
+  https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page308.html,
+  source id `dorts-cn253b-conclusion-p308`. DORTS’s public-art planning records
+  Taipei Main as an interchange priority and its four-level void as the visual
+  focus: 「南港線之台北車站為交會站」 and 「月臺層軌道上方有難得的4層挑空」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html,
+  source id `dorts-taipei-main-art-selection-p216`. The design, budget and
+  outcome pages establish spatial-art options, a NT$5 million ceiling, a
+  complicated engineering-office responsibility path and an unawarded first
+  prize, so no work was installed under that programme. URLs:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page217.html,
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html and
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page219.html,
+  source ids `dorts-taipei-main-art-design-p217`,
+  `dorts-taipei-main-art-budget-p218` and `dorts-taipei-main-art-outcome-p219`.
+  The later joint-development case records the B1–B3 transport layers, Taiwan
+  Railways connection and six-rail station context: 「台北車站之『六鐵共構』站區」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page132.html,
+  source id `dorts-taipei-main-development-p132`. The No. 4 technical book
+  separately identifies the Taipei Main–Ximen curve and corrugation-related
+  reduced-speed measurement: 「曲率半徑小於300m之曲線段：例如…板南線臺北車站至西門站」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page253.html,
+  source id `dorts-bannan-noise-river-tunnel-p253`.
+
+### Batch TBC and source exhaustion
+
+For BL07–BL12, the fetched DORTS route and architecture pages, DORTS technical
+books Nos. 2, 4, 8, 15 and 20, Technical Journals Nos. 39, 45 and 50, the full
+DORTS public-art tables and the KSECO CP263 project record did not yield a
+station-specific civil final account for BL07–BL12, a dated construction-era
+rename gazette, a complete paid-area/street transfer classification or a
+station-level depot roster. DORTS’s Banqiao public-art table returned only a
+Banqiao row in this six-station range; no artwork metadata was invented for
+BL08–BL12. The CP541 and CP261/CN252/CN253B values are package or engineering
+measurements, not station civil prices. Platform form, platform count and track
+count remain TBC where the station-specific primary record did not publish them.
+
 ## Conflicts
 
 1. The DORTS route material describes the built Bannan sections as underground,
@@ -348,6 +532,30 @@ pages.
    Yongning scope, nested inside CD550. DORTS’s route page describes CD550 and
    CD551 as larger section packages but publishes no station civil amount. The
    figures are therefore not competing station prices and are kept separate.
+
+7. The DORTS public-art table for the Banqiao Line contains a Banqiao row but
+   no rows for Xinpu, Jiangzicui, Longshan Temple, Ximen or Taipei Main. Taipei
+   Main is not treated as “no artwork exists” in the abstract: DORTS’s technical
+   planning record says its competition’s first prize was unawarded and no work
+   was installed under that programme. The two statements have different scopes
+   and are both retained.
+
+8. The KSECO contractor page describes the CP263 work as approximately 890
+   metres and completed in 1998, while DORTS’s route record gives the contract’s
+   29 February 1992 signature date and calls it the earliest main work. These
+   values measure project duration/history versus procurement date; neither is
+   silently substituted for the other.
+
+9. DORTS describes Ximen differently in two source eras: the CN252 engineering
+   account calls it a three-level stacked Blue/Green interchange, while the later
+   Songshan Line table calls it an existing three-level island station. These are
+   retained as construction form/interface descriptions from different project
+   stages, not averaged or normalised.
+
+10. DORTS’s Taipei Main public-art pages preserve both an intended four-level
+    void/spatial-art opportunity and the later outcome that the first prize was
+    unawarded and no work was installed under that programme. The planned site
+    and the implemented outcome are both published.
 
 No conflict was found in the exit counts where the full TRTC and DORTS tables
 both publish one. The DORTS values for BL01-BL23 and the current TRTC counts

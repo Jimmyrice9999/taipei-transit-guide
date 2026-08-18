@@ -8881,3 +8881,78 @@ sourced. No station colour-prefix audit applies. Next: audit BL07–BL12.
 
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
+
+# Run 31 — Part 1 Bannan BL07–BL12, 18 August 2026
+
+Deepened six Bannan station pages from full DORTS and contractor primary pages.
+Body-prose counts: BL07 384, BL08 417, BL09 365, BL10 436, BL11 405 and BL12
+445; batch total 2,452 words. The batch used the same source families as
+BL01–BL06: DORTS route and project records, contract/procurement records,
+station architecture and design pages, technical books and journals, and
+public-art tables. It also used the CP263 contractor project record for the
+Jiangzicui–Xinpu work.
+
+Sourced: Banqiao’s underground corridor, staged openings and CP263 history;
+joint-bid and foreign-technical-cooperation procurement; CP541 track scope;
+temporary-terminal planning; Y15/Y16 district and station-design context;
+the Banqiao public-art row; the CP263 shield-built station-and-tunnel record;
+the CP261 groundwater-inflow incident and correction; CN252 Ximen
+engineering; CN253B North Gate protection and monitoring; Taipei Main’s
+public-art selection, budget and unawarded outcome; and Taipei Main’s later
+joint-development transport layers. No station-specific civil final account
+was presented as a station price.
+
+Primary URLs cited:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no45/files/basic-html/page235.html
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=D86ABA13A3A25631
+- https://www.kseco.com.tw/tc/project_in.aspx?cchk=7a7dc159-b64e-44e8-bde4-d53e4c3a4dec&chk=4a22537c-fbcd-43af-8db5-d9e9091642d3&cid=54&id=27&param=pn%3D1
+- https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page253.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page234.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page236.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page237.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page243.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page305.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page306.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page308.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page217.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page219.html
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page132.html
+
+TBC and source exhaustion: the fetched DORTS route and architecture pages,
+technical books Nos. 2, 4, 8, 15 and 20, Technical Journals Nos. 39, 45 and
+50, DORTS public-art tables and the KSECO CP263 page did not provide a
+station-specific civil final account for BL07–BL12, a dated construction-era
+rename gazette, complete paid-area/street transfer classification or a
+station-level depot roster. The Banqiao public-art table returned only BL07
+in this range, so artwork metadata for BL08–BL12 remains TBC. Platform form,
+platform count and track count remain TBC where the station-specific primary
+record did not publish them.
+
+Conflicts published: KSECO’s approximately 890-metre CP263 project length and
+1998 completion are kept distinct from DORTS’s 29 February 1992 CP263 signing
+date; these measure project extent/completion versus contract signature. CN252
+describes Ximen as a three-level Blue/Green interchange in its open-cut
+engineering scope, while the later station-type table describes the existing
+station as a three-level island station; both descriptions remain attributed
+to their respective records. Taipei Main’s planned four-level public-art void
+and NT$5 million ceiling are retained alongside the later unawarded-first-
+prize/no-work outcome; planned provision and programme result are different
+claims. The public-art table’s absence of rows for BL08–BL12 is reported as a
+search result, not proof that no later artwork exists.
+
+Contradicted the corpus: the initial audit’s one-sentence BL07 result and
+zero-word BL08–BL12 results were superseded by full-page DORTS, technical,
+public-art and contractor records. No other corpus fact was contradicted in
+this batch. No station colour-prefix audit applies. Next: audit BL13–BL18.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit
+npm test and diff check must pass before commit and push.
