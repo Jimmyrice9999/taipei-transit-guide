@@ -242,6 +242,136 @@ const dortsSongshanG18Architecture = source(
   'The full architecture page records Nanjing Sanmin’s surrounding office-and-arcade context, travel pattern and “Community vestibule and city gateway” design rationale.',
 )
 
+const dortsXindianJointDevelopmentOffice = source(
+  'dorts-xindian-district-office-joint-development-office',
+  'Xindian District Office station joint-development administration',
+  '聯開處',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=811989757BA2C23B',
+  'The full DORTS land-development office page assigns Xindian District Office station (捷23) investment-contract management, building-cost appraisal and rights-allocation work to the bureau’s joint-development teams; it does not name a station civil contractor or final account.',
+  '2026-08-18',
+)
+
+const dortsXindianDistrictOfficeRent = source(
+  'dorts-xindian-district-office-joint-development-rent',
+  'Xindian District Office station joint-development property notice',
+  '公開招租捷運新店線新店區公所站（捷22）開發大樓公有不動產',
+  dortsPublisher,
+  'https://nsr.dorts.gov.taipei/Dorts/uploads/Tender/20240426140655_%E9%99%84%E8%A1%A8.pdf',
+  'The full official property notice identifies a 71.93-ping office unit at 293, Section 1, Beixin Road, with monthly base rent NT$79,113, deposit NT$158,226, alternative lease terms and two parking spaces; it records an advertised unit, not the whole development inventory.',
+  '2026-08-18',
+)
+
+const dortsQizhangDevelopment = source(
+  'dorts-qizhang-joint-development',
+  'Qizhang station joint-development building',
+  '捷運土地開發實務：七張站（捷十、十一）',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html',
+  'The full DORTS land-development case records the You-you City (Xihua and Jinghua buildings) at Qizhang, its investor, addresses, completion month, building levels, mixed-use form, city-owned premises and parking allocation.',
+  '2026-08-18',
+)
+
+const dortsQizhangExcavation = source(
+  'dorts-qizhang-excavation',
+  'Qizhang station soldier-pile excavation method',
+  '捷運結構工程實務：新店線新北市轄段工程',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page154.html',
+  'The full DORTS structural-engineering case places the New Store Line New Taipei works in the Jingmei Formation, describes permeable gravel and soil conditions, and records CH225 Qizhang station’s soldier-pile, shotcrete, top-down construction and full-casing method for hard gravel layers.',
+  '2026-08-18',
+)
+
+const dortsWanlongDevelopment = source(
+  'dorts-wanlong-joint-development',
+  'Wanlong station joint-development buildings',
+  '捷運土地開發實務：萬隆站（交六、七、交十）',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page134.html',
+  'The full DORTS land-development case records the Huanyou City Wanlong building at exit 2 and Wanlong No.4 at exit 4, their investors, completion dates, building levels, mixed-use forms and city-owned premises and parking.',
+  '2026-08-18',
+)
+
+const dortsWanlongExcavation = source(
+  'dorts-wanlong-excavation',
+  'Wanlong station open-cut-and-cover excavation',
+  '捷運結構工程實務：新店線 CH223 標萬隆站開挖支撐施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page176.html',
+  'The full DORTS structural-engineering case records CH223 Wanlong’s top-down open-cut-and-cover method, continuous wall and intermediate columns, temporary cover beams and slabs, limited surface work zones and staged underground excavation to preserve traffic flow.',
+  '2026-08-18',
+)
+
+const dortsXiaonanmenProtection = source(
+  'dorts-xiaonanmen-building-protection',
+  'Xiaonanmen station building-protection plan',
+  '捷運大地工程實務：CN251 標麗正門（小南門）之建物保護案例',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page139.html',
+  'The full DORTS geotechnical-engineering case identifies CN251 Xiaonanmen building protection with 45 cm pre-piled rows and 20 m piles plus 10 cm, 8 m micropiles, including the grout and spacing details published for the protection scheme.',
+  '2026-08-18',
+)
+
+const dortsEarlyStationArchitecture = source(
+  'dorts-early-station-architecture',
+  'Early Taipei MRT station architectural design practice',
+  '捷運車站規劃與設計實務：初期路網車站造型',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html',
+  'The full DORTS planning book explains that early underground stations used standardised functional structures while still allowing site-specific theme, material and colour choices, and names Xiaonanmen among the examples.',
+  '2026-08-18',
+)
+
+const dortsSongshanRouteEngineering = source(
+  'dorts-songshan-route-engineering',
+  'Songshan Line route engineering overview',
+  '捷運技術第52期：松山線路線及車站規劃概要',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page9.html',
+  'The full DORTS technical-journal page records the Songshan Line’s central-city underground rationale, the G13–G14 corridor’s shield-tunnel and cut-and-cover sequence, crossings beneath the North Gate viaduct and railway tunnel, narrow Tianshui Road, and later station and utility constraints.',
+  '2026-08-18',
+)
+
+const dortsBeimenArchitecture = source(
+  'dorts-beimen-architecture',
+  'Beimen station architectural design',
+  '松山線各車站建築設計簡介：北門站',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html',
+  'The full DORTS architecture article identifies the source-era Beimen label G14, the surrounding Old City Gate, Railway Department and former Taiwan Railway dormitory context, the archaeology-and-railway exhibition corridor, granite history panels and landscape-integrated entrance treatment.',
+  '2026-08-18',
+)
+
+const dortsSongshanStationTable = source(
+  'dorts-songshan-station-table',
+  'Songshan Line station form and dimensions table',
+  '捷運技術第50期：松山線車站型式一覽表',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html',
+  'The full DORTS technical-journal table records source-era engineering labels, underground levels, platform forms, dimensions and interchange notes for the Songshan Line stations, including Beimen and Taipei Arena.',
+  '2026-08-18',
+)
+
+const dortsArenaPlanning = source(
+  'dorts-taipei-arena-public-art-planning',
+  'Taipei Arena station public-art procurement and placement',
+  '捷運車站規劃與設計實務：松山線之公共藝術',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page276.html',
+  'The full DORTS planning-book page describes the Taipei Arena station’s sports-park context, “trajectory of sport” theme, vertical-wall placement of two groups of four works and invited-comparison procurement at NT$3 million per group.',
+  '2026-08-18',
+)
+
+const dortsArenaArchitecture = source(
+  'dorts-taipei-arena-architecture',
+  'Taipei Arena station architectural design',
+  '捷運車站規劃與設計實務：小巨蛋站',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page166.html',
+  'The full DORTS planning-book page connects Taipei Arena station to the sports and concert precinct, explains the “trajectory of sport” theme and records the oval-egg entrance concept as a site response.',
+  '2026-08-18',
+)
+
 const dortsArenaArt = source(
   'dorts-songshan-arena-public-art',
   'Songshan Line public art: Taipei Arena station',
@@ -380,9 +510,22 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'DORTS identifies Xindian District Office as a shallow-cut station. The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
     engineeringHistorySource: dortsStationPlanning,
+    proseSources: [dortsXindianJointDevelopmentOffice, dortsXindianDistrictOfficeRent, dortsEarlyStationArchitecture],
     prose: [
-      { text: 'DORTS’s planning manual names Xindian District Office as a shallow-cut example.', source: dortsStationPlanning.id },
-      { text: 'Its construction manual places the New Store Line’s underground stations in open-cut-and-cover work using long box structures and slab-wall systems.', source: dortsUndergroundConstruction.id },
+      { text: 'DORTS’s station-planning manual uses Xindian District Office as a shallow-cut example, a form chosen where track elevation, ground conditions or construction cost make a deep station less suitable.', source: dortsStationPlanning.id },
+      { text: 'In that arrangement the track and platform remain below grade while the concourse can sit at ground level or beside the platform, changing how the station meets the street.', source: dortsStationPlanning.id },
+      { text: 'The same manual says early Taipei MRT stations kept a standard functional structure while allowing site-specific treatment of themes, materials and colours.', source: dortsEarlyStationArchitecture.id },
+      { text: 'That distinction matters at G02 because the sourceable record is stronger for the station’s joint-development interface than for a named architectural author or civil package.', source: dortsXindianJointDevelopmentOffice.id },
+      { text: 'DORTS’s land-development office assigns Xindian District Office station (捷23) investment-contract management, building-cost appraisal and rights-allocation work to its joint-development teams.', source: dortsXindianJointDevelopmentOffice.id },
+      { text: 'The same official page does not identify a G02 civil contractor or station final account, so those fields remain TBC rather than being taken from a development-office responsibility list.', source: dortsXindianJointDevelopmentOffice.id },
+      { text: 'A separate DORTS property notice advertises an office unit in the station development at 293, Section 1, Beixin Road, on the fifth floor.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'That notice gives the unit as 71.93 ping, classifies its licensed use as a general office and sets a monthly base rent of NT$79,113.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'It also records a NT$158,226 deposit, alternative lease terms of 9.5, 5 or 3 years and two associated parking spaces.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'The notice therefore documents a real operating property interface at the station rather than merely listing a future development concept.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'The later DORTS joint-development rent table reports 25 office rooms at Xindian District Office station, with floor areas from 19.73 to 81.95 ping and 22 of those rooms marked occupied.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'Its monthly rent range is NT$752 to NT$1,166 per ping, so the single advertised 71.93-ping unit and the later 25-room inventory are different measurements and are retained as such.', source: dortsXindianDistrictOfficeRent.id },
+      { text: 'The available records establish station-area joint development, property use and an administrative contract role, but not the station’s individual construction tender, final cost, architect, rename gazette or public-art commission.', source: dortsXindianJointDevelopmentOffice.id },
+      { text: 'Those missing fields remain TBC, and no feeder-bus narrative is added without a separate full PTO or operator record.', source: dortsXindianJointDevelopmentOffice.id },
     ],
   },
   G03: {
@@ -395,9 +538,23 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'DORTS identifies Qizhang as a shallow-cut station. The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
     engineeringHistorySource: dortsStationPlanning,
+    proseSources: [dortsQizhangDevelopment, dortsQizhangExcavation, dortsEarlyStationArchitecture],
     prose: [
-      { text: 'DORTS’s planning manual names Qizhang as a shallow-cut example.', source: dortsStationPlanning.id },
-      { text: 'Its construction manual places the New Store Line’s underground stations in open-cut-and-cover work using long box structures and slab-wall systems.', source: dortsUndergroundConstruction.id },
+      { text: 'DORTS’s planning manual names Qizhang as one of the New Store Line’s shallow-cut stations, where the below-grade track arrangement is paired with a less deeply excavated concourse solution.', source: dortsStationPlanning.id },
+      { text: 'The structural-engineering case gives a more specific reason for the construction method in the New Taipei section: the works lay beneath existing Beixin Road in the Jingmei Formation.', source: dortsQizhangExcavation.id },
+      { text: 'That geological description includes surface and fill layers, sandy clay and gravel-cobble strata, with groundwater generally below the excavation level.', source: dortsQizhangExcavation.id },
+      { text: 'Because the gravel layer was highly permeable, DORTS says the usual diaphragm-wall approach was not suitable for the principal excavation support in this part of the New Store Line.', source: dortsQizhangExcavation.id },
+      { text: 'The builder instead records CH225 Qizhang station as a soldier-pile and shotcrete case, with the tunnel toward Dapinglin using the same retaining approach.', source: dortsQizhangExcavation.id },
+      { text: 'The piles were spaced 2.5 metres apart in two published diameters, 0.8 and 1.0 metres, while intermediate columns supported the temporary cover system.', source: dortsQizhangExcavation.id },
+      { text: 'The road was covered and the station was built by a top-down sequence, allowing the surface transport corridor to be restored while excavation and structural work continued below.', source: dortsQizhangExcavation.id },
+      { text: 'DORTS says the hard gravel, with N-values above 100 in much of the Jingmei Formation, required a full-casing method to drive the piles and intermediate columns.', source: dortsQizhangExcavation.id },
+      { text: 'Qizhang also appears in DORTS’s land-development record through the You-you City complex, identified as the Xihua and Jinghua buildings.', source: dortsQizhangDevelopment.id },
+      { text: 'The builder names Huafu Construction Development as investor and places the two mixed-use towers at 126, Section 2, Beixin Road, and 27 Baoqiao Road.', source: dortsQizhangDevelopment.id },
+      { text: 'The east tower was completed in January of ROC year 97, or 2008, with four basement levels and 29 floors above ground; the west tower has 18 floors above ground.', source: dortsQizhangDevelopment.id },
+      { text: 'The same record says the city received four shops, 69 residential units, about 7,438.23 ping and 65 underground parking spaces.', source: dortsQizhangDevelopment.id },
+      { text: 'This gives Qizhang a documented pair of interfaces: a difficult shallow excavation under the existing road and a station-area mixed-use development above or beside the rail property.', source: dortsQizhangExcavation.id },
+      { text: 'The consulted primary pages do not establish a station-only civil award value, final account, architect, complete public-art record, rename gazette or feeder-bus narrative.', source: dortsQizhangDevelopment.id },
+      { text: 'Those fields remain TBC rather than being inferred from the development case.', source: dortsQizhangDevelopment.id },
     ],
   },
   G03A: {
@@ -484,6 +641,25 @@ const gData: Record<string, GData> = {
     landmarks: tbc,
     naming: tbc,
     engineeringHistory: 'The New Store Line south section opened between Guting and Xindian on 11 November 1999.',
+    proseSources: [dortsWanlongDevelopment, dortsWanlongExcavation],
+    prose: [
+      { text: 'DORTS’s structural-engineering case identifies CH223 Wanlong station as a top-down open-cut-and-cover construction example.', source: dortsWanlongExcavation.id },
+      { text: 'The sequence began with continuous walls and intermediate columns, followed by shallow excavation and temporary horizontal cover beams and slabs.', source: dortsWanlongExcavation.id },
+      { text: 'The road surface was then returned to traffic while the main excavation, spoil removal and material delivery continued in the restricted space below.', source: dortsWanlongExcavation.id },
+      { text: 'DORTS presents this arrangement as a traffic-maintenance measure: only a limited work zone remained visible at street level while the larger construction operation moved underground.', source: dortsWanlongExcavation.id },
+      { text: 'That construction account gives Wanlong a section-specific engineering history rather than only the line-wide statement that the New Store Line is underground.', source: dortsWanlongExcavation.id },
+      { text: 'The station also has two documented land-development interfaces in DORTS’s property casebook.', source: dortsWanlongDevelopment.id },
+      { text: 'The Huanyou City Wanlong building sits with exit 2 and was invested in by Hanyang Construction Development.', source: dortsWanlongDevelopment.id },
+      { text: 'DORTS records that building as completed in July of ROC year 96, or 2007, with two basement levels and 17 floors above ground in a mixed residential-commercial form.', source: dortsWanlongDevelopment.id },
+      { text: 'The city received the ground-floor entrance shop, 49 residential units on floors 2–4 totalling about 928 ping and ten underground parking spaces.', source: dortsWanlongDevelopment.id },
+      { text: 'The Wanlong No.4 building is tied to exit 4 and was invested in by Longmao Construction Development.', source: dortsWanlongDevelopment.id },
+      { text: 'That project was completed in November of ROC year 100, or 2011, as two mixed-use buildings with two basement levels and nine floors above ground.', source: dortsWanlongDevelopment.id },
+      { text: 'DORTS records 41 city-owned residential units totalling about 1,297.41 ping and 15 underground parking spaces in the exit-4 development.', source: dortsWanlongDevelopment.id },
+      { text: 'The two property records show that the station’s street interfaces were delivered through separate development projects, not one undifferentiated station building.', source: dortsWanlongDevelopment.id },
+      { text: 'Together with the top-down excavation record, they explain both the construction constraint and the later built form visible around the station entrances.', source: dortsWanlongExcavation.id },
+      { text: 'The consulted primary pages do not identify Wanlong’s civil contract price, final account, architect, station-specific public-art commission, rename gazette or feeder-bus history.', source: dortsWanlongDevelopment.id },
+      { text: 'Those fields remain TBC rather than being filled from a secondary station catalogue.', source: dortsWanlongDevelopment.id },
+    ],
   },
   G07: {
     structure: 'underground', engineering: 'G07', exits: 4, openingDate: '11 November 1999',
@@ -598,8 +774,23 @@ const gData: Record<string, GData> = {
     naming: 'The route page describes Xiaonanmen as the original maintenance track (原維護軌); public station-name history: TBC.', namingSource: dortsXiaonanmen,
     engineeringHistory: 'Xiaonanmen was designed and built with the Nangang Line under DL171, CN251 and CN254A so Bannan Line trains could reach Beitou Depot for maintenance. It opened as a separate line in 2000 and joined the Songshan–Xindian service in 2014.',
     engineeringHistorySource: dortsXiaonanmen,
+    proseSources: [dortsXiaonanmenProtection, dortsEarlyStationArchitecture],
     prose: [
-      { text: 'DORTS says the route was shortened to avoid construction difficulty and wasted future investment, while still letting Bannan Line trains reach Beitou Depot for maintenance and carrying passengers in service.', source: dortsXiaonanmen.id },
+      { text: 'DORTS describes Xiaonanmen as a deliberate short section rather than the full long-term Green Line alignment, because the shorter route avoided construction difficulty and wasted future investment.', source: dortsXiaonanmen.id },
+      { text: 'The compromise preserved two functions at once: passenger service and a way for Bannan Line trains to cross over to Beitou Depot for maintenance.', source: dortsXiaonanmen.id },
+      { text: 'The route page places the work under design package DL171 and the CN251 and CN254A civil-works packages, with the electrical and station systems carried inside the wider Nangang Line project.', source: dortsXiaonanmen.id },
+      { text: 'That contract arrangement is a project-level record, not a station-only award value or contractor attribution, so those station-level fields remain TBC.', source: dortsXiaonanmen.id },
+      { text: 'The DORTS geotechnical manual gives a separate CN251 case study for building protection at the Xiaonanmen site, named there as 麗正門.', source: dortsXiaonanmenProtection.id },
+      { text: 'The protection design used a cut-off-wall concept built from a pre-piled row and micropiles to control ground movement beside existing buildings.', source: dortsXiaonanmenProtection.id },
+      { text: 'The pre-piled component used 45-centimetre-diameter drilling, with piles 20 metres long beginning 0.6 metres below ground level.', source: dortsXiaonanmenProtection.id },
+      { text: 'The builder describes cement sand being injected through the hollow drill rod before steel rails were inserted into the still-fluid pile material.', source: dortsXiaonanmenProtection.id },
+      { text: 'The micropile component used 10-centimetre-diameter piles 8 metres long, drilled with casing at a two-to-one vertical-to-horizontal angle.', source: dortsXiaonanmenProtection.id },
+      { text: 'DORTS records a number-8 reinforcing bar inserted to the hole bottom and a grout pipe used to fill the hole with a one-to-one water-to-cement grout.', source: dortsXiaonanmenProtection.id },
+      { text: 'The two protection elements were tied together at their heads with 50-by-50-centimetre pile caps, turning separate piles into a building-protection system.', source: dortsXiaonanmenProtection.id },
+      { text: 'This is a station-section engineering record about protecting neighbours during excavation, not a claim that the whole Xiaonanmen route used one identical retaining method.', source: dortsXiaonanmenProtection.id },
+      { text: 'DORTS’s architectural manual places Xiaonanmen among the early-network underground stations whose functional structure was standardised while themes, materials and colours could still vary by station.', source: dortsEarlyStationArchitecture.id },
+      { text: 'The available primary records therefore connect the station to a maintenance-led route decision, a named civil package and a documented protection technique, but not to a station architect, final account, public-art commission, rename gazette or feeder-bus narrative.', source: dortsXiaonanmen.id },
+      { text: 'Those missing fields remain TBC.', source: dortsXiaonanmen.id },
     ],
   },
   G12: {
@@ -640,8 +831,23 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station’s design theme is activation and reuse of the Beimen archaeological and cultural heritage. Its underground link level connects Beimen, Taipei Underground Mall and the Airport MRT; granite wall panels and archaeological displays incorporate the former city gate and railway history.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    proseSources: [dortsBeimenArchitecture, dortsSongshanStationTable],
     prose: [
-      { text: 'DORTS records the Beimen site among the old city gate and former Railway Department buildings, with a former Taiwan Railway Administration dormitory on the west side and other historic buildings around the station.', source: dortsSongshanArchitecture.id },
+      { text: 'The DORTS architecture article labels the Beimen station G14, while the current operator record uses G13; these are retained as a source-era engineering label and a current operating code rather than silently normalised.', source: dortsBeimenArchitecture.id },
+      { text: 'The source-era station table likewise places Beimen in the Songshan Line’s published engineering sequence under G14, so the code difference is a record-history issue, not a second station.', source: dortsSongshanStationTable.id },
+      { text: 'DORTS situates the station on Tacheng Street between Zhengzhou Road and Zhongxiao West Road, beside the North Gate Old City Gate and the Taipei Station underground mall.', source: dortsBeimenArchitecture.id },
+      { text: 'The east side is bounded by the former Railway Department complex, including the railway offices, octagonal pavilion, wartime command centre and Taipei Workshop, while a former Taiwan Railway dormitory is recorded on the west.', source: dortsBeimenArchitecture.id },
+      { text: 'The surrounding record therefore combines city-wall history, railway administration and the later commercial transport district around Taipei Main Station.', source: dortsBeimenArchitecture.id },
+      { text: 'DORTS names the design theme as activation and reuse of Beimen’s archaeological cultural assets, turning the underground station into part of a wider historical route.', source: dortsBeimenArchitecture.id },
+      { text: 'The first underground link level is treated as an open exhibition space rather than only as a circulation layer.', source: dortsBeimenArchitecture.id },
+      { text: 'Its displays include the excavation history and recreated test pits, an archaeological chronology, excavated cross-sections and artefacts, the history of Taipei’s North Gate and Liu Ming-chuan’s infrastructure programme.', source: dortsBeimenArchitecture.id },
+      { text: 'DORTS describes that sequence as a connection between the railway museum area and the historic-sites park on opposite sides of the street.', source: dortsBeimenArchitecture.id },
+      { text: 'The granite wall panels carry carved images of the old gate and early trains, making the station’s finish part of the historical interpretation rather than a neutral surface.', source: dortsBeimenArchitecture.id },
+      { text: 'At street level, the entrances were deliberately kept neutral so they would not compete with the surrounding monuments.', source: dortsBeimenArchitecture.id },
+      { text: 'The entrance form rises from the paving like a lifted continuation of the ground, with natural stone carried from the plaza across the walls and roof and glass adding controlled transparency.', source: dortsBeimenArchitecture.id },
+      { text: 'This treatment lets the station remain legible as a transport entrance while visually receding into the historic landscape.', source: dortsBeimenArchitecture.id },
+      { text: 'The full primary records establish the heritage setting, exhibition scope, materials and source-era code, but do not establish a station-only civil contract, final account, architect attribution, complete public-art procurement record or rename gazette.', source: dortsBeimenArchitecture.id },
+      { text: 'Those fields remain TBC rather than being inferred from the surrounding heritage institutions.', source: dortsBeimenArchitecture.id },
     ],
     interchange: { label: 'Airport MRT at Taipei Main Station via underground passage; transfer mode: TBC' },
   },
@@ -739,8 +945,24 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The station’s design theme is “The trajectory of sport” (運動的軌跡), integrating the underground station with the Taipei Arena and the city sports precinct. Exit forms use an oval-egg concept responding to the arena.',
     engineeringHistorySource: dortsSongshanArchitecture,
+    proseSources: [dortsArenaArchitecture, dortsArenaPlanning, dortsArenaArt, dortsSongshanStationTable],
     prose: [
-      { text: 'DORTS records the two Taipei Arena works as invited-competition selections installed along the vertical wall between the concourse and platform; Progress uses lenticular perspective so a baseball-playing model appears to move as passengers descend.', source: dortsArenaArt.id },
+      { text: 'DORTS’s architectural account places Taipei Arena station in the city’s sports and concert precinct, where the surrounding arena and stadium make the station more than a generic central-city stop.', source: dortsArenaArchitecture.id },
+      { text: 'It names the design theme 運動的軌跡, “The trajectory of sport”, and uses the movement associated with sport as the organising idea for the station’s architectural treatment.', source: dortsArenaArchitecture.id },
+      { text: 'The same account says the entrance form was developed from an oval-egg concept in response to the arena site, giving the street elements a shape connected to the neighbouring venue.', source: dortsArenaArchitecture.id },
+      { text: 'The DORTS station table labels this station G19 in its source-era engineering sequence.', source: dortsSongshanStationTable.id },
+      { text: 'The current operator page identifies the operating station as G17 Taipei Arena.', source: trtcStation('G17').id },
+      { text: 'Those labels are not silently merged: G19 is retained as the construction-era label in the builder’s table, while G17 is retained as the current operating code.', source: dortsSongshanStationTable.id },
+      { text: 'The public-art planning record treats architecture and public art as part of the same station response to the sports park and arena context.', source: dortsArenaPlanning.id },
+      { text: 'It places the art on the wall before the middle-level stair and escalator, where passengers encounter it while moving between the station’s circulation levels.', source: dortsArenaPlanning.id },
+      { text: 'The procurement plan divides the installation into two groups containing four works and says the groups were selected through invited comparison.', source: dortsArenaPlanning.id },
+      { text: 'The planned value is NT$3 million for each group, which is a procurement figure for the two grouped commissions rather than a claim about the whole station construction cost.', source: dortsArenaPlanning.id },
+      { text: 'The completed public-art record names the two works as 推進 and 啟動密碼 and identifies the artists as 洪東祿 and 袁廣鳴.', source: dortsArenaArt.id },
+      { text: 'It describes 推進 as using perspective reversal and a lenticular print so a baseball-playing figure appears to move as passengers descend past the wall.', source: dortsArenaArt.id },
+      { text: 'The same record describes 啟動密碼 through a mechanical Moiré-animation silhouette, making movement and changing viewpoint part of the encounter with the work.', source: dortsArenaArt.id },
+      { text: 'The fetched DORTS pages establish the station’s sports-precinct design intent, source-era engineering label and public-art procurement scope.', source: dortsArenaPlanning.id },
+      { text: 'They do not establish a station-specific civil construction package, final account, rename gazette, feeder-bus record or paid-area versus street-transfer classification.', source: dortsArenaArchitecture.id },
+      { text: 'Those missing fields remain TBC rather than being inferred from the station’s current facilities or its neighbouring venues.', source: dortsArenaArchitecture.id },
     ],
   },
   G18: {

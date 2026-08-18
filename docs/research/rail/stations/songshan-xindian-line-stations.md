@@ -485,6 +485,115 @@ to station pages. Remaining station-specific contracts, final accounts, complete
 artwork records, rename gazettes and paid/street transfer classifications remain
 TBC where the fetched primary pages do not publish them.
 
+### Station-prose deepening - G02, G03, G06, G11, G13 and G17, 18 August 2026
+
+The remaining Green-line pages were audited again in Traditional Chinese before
+editing. Search located the pages; every URL below was fetched and read in full.
+The audit widened beyond current TRTC facilities and the earlier route/planning
+pages to DORTS joint-development records, land-development casebooks, structural
+engineering articles, Songshan technical-journal pages, architecture pages and
+public-art procurement records. No appendix in `docs/research/` was used as a
+publication source, and no secondary source was used for this batch.
+
+| Station | Result | Full primary pages |
+|---|---|---|
+| G02 Xindian District Office | 300+ sourced words; shallow-cut context, joint-development administration and two property-inventory measurements | https://web.metro.taipei/pages2026/WebStation/034/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page254.html; https://www.dorts.gov.taipei/cp.aspx?n=811989757BA2C23B; https://nsr.dorts.gov.taipei/Dorts/uploads/Tender/20240426140655_%E9%99%84%E8%A1%A8.pdf; https://nsr.dorts.gov.taipei/Dorts/uploads/LatestNews/20251201163220_1_11412%E6%8D%B7%E9%81%8B%E8%81%AF%E5%90%88%E9%96%8B%E7%99%BC%E5%A4%A7%E6%A8%93%28%E5%95%86%E3%80%81%E8%BE%A6%E5%85%AC%E5%AE%A4%29%E6%AF%8F%E5%9D%AA%E6%9C%88%E7%A7%9F%E9%87%91%E4%B8%80%E8%A6%BD%E8%A1%A8.pdf |
+| G03 Qizhang | 300+ sourced words; excavation geology, support method, top-down construction and a joint-development case | https://web.metro.taipei/pages2026/WebStation/035/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page254.html; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html; https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page154.html |
+| G06 Wanlong | 300+ sourced words; top-down open-cut-and-cover works and two separate station-area development records | https://web.metro.taipei/pages2026/WebStation/038/1; https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page134.html; https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page176.html |
+| G11 Xiaonanmen | 300+ sourced words; CN251 building-protection method, pre-piling dimensions and early-station design context | https://web.metro.taipei/pages2026/WebStation/043/1; https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page139.html; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html |
+| G13 Beimen | 300+ sourced words; source-era code conflict, historic context, archaeology/exhibition scope and entrance materials | https://web.metro.taipei/pages2026/WebStation/105/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html |
+| G17 Taipei Arena | 300+ sourced words; sports-precinct architectural intent, source-era code conflict and public-art procurement/placement | https://web.metro.taipei/pages2026/WebStation/109/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page166.html; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page276.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page152.html; https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html |
+
+**G02 evidence - DORTS, PRIMARY, High confidence.** The station-planning page
+includes Xindian District Office among shallow-cut examples and gives the
+shallow-cut rationale as a response to grade, geology and cost. The full
+joint-development administration page assigns Xindian District Office station
+(捷23) investment-contract management, building-cost appraisal and rights
+allocation to DORTS's joint-development office; it does not name a civil
+contractor or final account. The April 2024 property notice records a 71.93-ping
+office unit at 293, Section 1, Beixin Road, with monthly base rent NT$79,113,
+deposit NT$158,226 and two parking spaces. The later DORTS rent table reports 25
+office rooms, 22 occupied, areas from 19.73 to 81.95 ping and NT$752-1,166 per
+ping. These are different measurements and are both retained. Original evidence
+includes `新店區公所站` in the joint-development assignment and the property
+notice's `71.93坪` and `每月租金79,113元`; the later inventory is not used to
+rewrite the advertised unit.
+
+**G03 evidence - DORTS, PRIMARY, High confidence.** The full structural article
+places the works under existing Beixin Road in the Jingmei Formation and records
+fill, sandy clay, gravel-cobble strata and groundwater generally below the
+excavation. It says the highly permeable gravel made a diaphragm-wall solution
+unsuitable, so CH225 Qizhang used soldier piles and shotcrete with top-down cover
+slabs. The article records 2.5 m pile spacing, 0.8/1.0 m pile diameters and
+intermediate columns, and says the hard gravel required full casing. The full
+land-development page records the You-you City development at 126, Section 2,
+Beixin Road and 27 Baoqiao Road: east building B4/G29, west building G18, four
+city shops, 69 residences, about 7,438.23 ping and 65 parking spaces. Original
+evidence includes `礫石層透水性大，不適合採用連續壁` and `採用排樁加預壘式
+施工`; the source does not provide a named station civil contract or final
+account.
+
+**G06 evidence - DORTS, PRIMARY, High confidence.** The structural article
+identifies CH223 Wanlong as a top-down open-cut-and-cover case. It records
+continuous walls, intermediate columns, cover beams and slabs, and the return of
+surface traffic while excavation and material handling continued below. The land-
+development page records two separate interfaces: Huanyou City at exit 2,
+developed by Hanyang Construction Development and completed in July 2007 as a
+mixed-use B2/G17 building, with 49 city residential units totalling about 928
+ping and ten parking spaces; and Wanlong No.4 at exit 4, developed by Longmao
+Construction Development and completed in November 2011 as two B2/G9 buildings,
+with 41 city residential units totalling about 1,297.41 ping and 15 parking
+spaces. The two records are not averaged or treated as one building. Original
+evidence includes `萬隆站 ... 以覆蓋開挖法施工` and the casebook's separate
+`萬隆環遊市` and `萬隆四號` entries. The fetched pages do not establish the
+civil contract value, architect, final account, rename gazette or station-
+specific art record.
+
+**G11 evidence - DORTS, PRIMARY, High confidence.** The full building-protection
+article identifies the CN251 麗正門 Xiaonanmen case. It records pre-piled rows
+with 45 cm diameter and 20 m length starting 0.6 m below grade, plus 10 cm by
+8 m micropiles installed at a 2:1 angle; steel rails were inserted into
+uncured cement-sand, with No. 8 reinforcing bar, grout and 50 by 50 cm pile
+caps. The article presents the method as protection for the existing building
+during adjacent construction, not as a station architectural specification. The
+early-station architecture page says initial underground stations generally used
+a standard functional structure while varying themes, materials and colours by
+site. The fetched pages do not establish a Xiaonanmen civil contract, final
+account, rename gazette, complete public-art record or feeder-bus history.
+
+**G13 evidence - DORTS, PRIMARY, High confidence.** The Songshan architecture
+page uses the source-era label G14 for Beimen, while the current TRTC page uses
+G13. The page places the station beside the Old North Gate, the Taipei underground
+mall and the former Railway Department complex, including railway offices, an
+octagonal pavilion, a wartime command centre and Taipei Workshop; it also records
+the former Taiwan Railway dormitory to the west. Its design theme is `北門站遺構
+文化資產活化再利用`. The station includes an open exhibition space, twelve
+archaeological pits and displays concerning archaeology, railway history and Liu
+Ming-chuan. Granite panels refer to the old gate and trains, while the entrances
+use a neutral lifted paving treatment with natural stone and glass. The DORTS
+station table preserves the source-era engineering label. These are retained as
+source-era versus current operating identifiers, not silently normalised. No
+station-specific civil contract, final account, rename gazette or fare-boundary
+classification was established.
+
+**G17 evidence - DORTS, PRIMARY, High confidence.** DORTS's architecture page
+connects Taipei Arena station to the sports and concert precinct, names the theme
+`運動的軌跡` and records an oval-egg entrance concept responding to the arena.
+The station table uses source-era engineering label G19; the current TRTC page
+uses operating code G17, so both labels are retained with what each measures. The
+public-art planning page places two groups of four works on the wall before the
+middle-level stair and escalator, selected through invited comparison at NT$3
+million per group. The completed DORTS art record names `推進` by 洪東祿 and
+`啟動密碼` by 袁廣鳴 and describes their optical/mechanical movement effects.
+The procurement amount is retained as a grouped public-art value, not as the
+station construction cost. The fetched pages do not establish a station-specific
+civil contract, final account, rename gazette, feeder-bus history or paid-area
+versus street-transfer classification.
+
+This batch supersedes the earlier zero-word or short-prose audit for G02, G03,
+G06, G11, G13 and G17. Remaining Green pages G18 and G19 are still scheduled for
+the next Green batch; the R25-R27 audit remains a documented exhausted search.
+
 ## Conflicts
 
 1. **G15 Songjiang Nanjing platform form and exit count.** The DORTS station
@@ -531,14 +640,20 @@ TBC where the fetched primary pages do not publish them.
 - **Station-specific depot assignment** — The full depot table establishes Xindian Depot for the line, not a station-by-station roster. The pages retain the line-level fact and mark each station assignment TBC. Checked 14 August 2026.
 - **Remaining platform and track counts** — The checked primary pages establish the published forms for G02, G03 and G13–G19; they do not publish enough detail to settle the remaining stations’ platform and track counts. Those values remain TBC. Checked 14 August 2026.
 - **Unlisted public-art entries** — The checked official Songshan public-art article establishes works at G17 and G19 but does not provide a complete title/artist/medium/year record for the other G stations. Their rows remain TBC; this is not an assertion that no work exists. Checked 14 August 2026.
-- **G04, G05 and G06 station-specific prose** — Checked 18 August 2026 in the
-  full TRTC pages, DORTS New Store route page, station-planning and
-  underground-construction books, and the DORTS public-art material. The
-  sources returned current facility/exit data and shared route context but no
-  station-specific narrative beyond the facts/specs. These three pages remain
-  at zero body-prose words; this is a failed lookup, not evidence that no
+- **G04 and G05 station-specific contracts and final accounts** — Checked 18
+  August 2026 in the full TRTC pages, DORTS New Store route, station-planning,
+  land-development and public-art pages. The pages support the published
+  station-area development and architecture prose but do not identify a
+  complete station civil package, final account or full artwork record. Those
+  fields remain TBC; this is a gap in the fetched records, not evidence that no
   history or artwork exists. The earlier zero-word result for G01 and G07 is
   superseded by the full-page correction above.
+- **G06 station-specific contracts and final accounts** — The earlier 18 August
+  failure was superseded by the full Wanlong structural-engineering and
+  land-development pages fetched later the same day. Those pages now support
+  the G06 prose batch, but they still do not publish the civil contract value,
+  final account, architect, rename gazette or complete art record; those fields
+  remain TBC. Checked 18 August 2026.
 - **G03A construction package and rename record** — Checked 18 August 2026 in
   the full DORTS route, planning and public-art pages and current TRTC page.
   The pages establish the public-art procurement and completed work but do not

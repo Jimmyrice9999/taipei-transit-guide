@@ -9689,3 +9689,65 @@ lookup, not a claim that the stations have no further history or artwork.
 
 Gates for this no-content batch: pending the same full gate sequence before
 commit. Next batch: G02, G03, G06, G11, G13 and G17.
+
+# Run 37 - Part 1 Songshan-Xindian G02, G03, G06, G11, G13 and G17, 18 August 2026
+
+Audited before editing. This batch widened the prior source-family search to
+full DORTS land-development, joint-development administration, structural-
+engineering, architecture, technical-journal and public-art procurement pages.
+All six pages now exceed the 200-word target: G02 347, G03 360, G06 321, G11
+337, G13 376 and G17 354 body-prose words. No frontmatter facts/specs were
+restated as prose. No false-prefix audit applies to rail stations.
+
+Sources fetched in full:
+
+- https://web.metro.taipei/pages2026/WebStation/034/1
+- https://web.metro.taipei/pages2026/WebStation/035/1
+- https://web.metro.taipei/pages2026/WebStation/038/1
+- https://web.metro.taipei/pages2026/WebStation/043/1
+- https://web.metro.taipei/pages2026/WebStation/105/1
+- https://web.metro.taipei/pages2026/WebStation/109/1
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page166.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page276.html
+- https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page154.html
+- https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page176.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page133.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page134.html
+- https://ebook.dorts.gov.taipei/ebook/no19/files/basic-html/page254.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page65.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page152.html
+- https://www.dorts.gov.taipei/cp.aspx?n=811989757BA2C23B
+- https://nsr.dorts.gov.taipei/Dorts/uploads/Tender/20240426140655_%E9%99%84%E8%A1%A8.pdf
+- https://nsr.dorts.gov.taipei/Dorts/uploads/LatestNews/20251201163220_1_11412%E6%8D%B7%E9%81%8B%E8%81%AF%E5%90%88%E9%96%8B%E7%99%BC%E5%A4%A7%E6%A8%93%28%E5%95%86%E3%80%81%E8%BE%A6%E5%85%AC%E5%AE%A4%29%E6%AF%8F%E5%9D%AA%E6%9C%88%E7%A7%9F%E9%87%91%E4%B8%80%E8%A6%BD%E8%A1%A8.pdf
+
+Sourced: G02 shallow-cut planning, DORTS's joint-development role and the
+71.93-ping advertised office unit versus the later 25-room inventory; G03
+Qizhang geology, permeable-gravel excavation support and You-you City
+development; G06 Wanlong top-down construction and two separate development
+projects; G11 Xiaonanmen building protection; G13 Beimen archaeology, railway
+heritage and entrance treatment; and G17 Taipei Arena design intent plus the
+public-art procurement and completed works.
+
+Conflicts published: G02 retains both the 2024 advertised unit (71.93 ping,
+NT$79,113 monthly base rent) and the later inventory (25 rooms, 19.73-81.95
+ping, NT$752-1,166 per ping) as different measurements. G13 retains DORTS's
+source-era G14 and the current TRTC G13. G17 retains DORTS's source-era G19 and
+the current TRTC G17. No values were averaged or silently normalised.
+
+TBC after exhausting the fetched families: station-specific civil contracts,
+final accounts, rename gazettes, complete artwork metadata where the pages do
+not provide it, feeder-bus narratives and paid/street transfer classifications.
+The earlier G06 failed-lookup record was explicitly superseded by this batch.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after the second font-subset regeneration (519 pages, no
+missing glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185
+tests); `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. Claims baseline and test were not
+changed.
+
+Next: commit and push this G02-G17 batch, then continue with G18, G19 and the
+remaining O/LB station batches.
