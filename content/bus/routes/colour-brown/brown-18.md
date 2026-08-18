@@ -1,7 +1,7 @@
 ---
 title: BR18 / 棕18
 summary: Brown-line feeder pilot route BR18 (棕18).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕18 under 捷運棕線接駁公車.
+  - id: ebus-br18
+    title: BR18 route schedule and stop information
+    titleOriginal: 棕18班表
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001800
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official schedule page listing the current 政治大學–松山車站 corridor, service span, one-section fare, 欣欣客運富德站 contact and the standard/經松山車站 service variant.
 ---
 
 ## Classification
@@ -47,6 +56,6 @@ The official 大臺北公車 catalogue lists 棕18 under 捷運棕線接駁公�
 The committed TDX bus snapshot supplies the changing structural fields shown above; route length and timetable fields are TBC where that layer does not publish them.[^tdx-bus]
 
 - Route history: TBC.
-- Corridor decision: TBC.
-- Unusual branch or short working: TBC.
-- Operator changes: TBC.
+- Corridor decision: TBC — the current 政治大學–松山車站 corridor is published, but its original rationale was not.[^ebus-br18]
+- Unusual branch or short working: Partial — the page distinguishes standard trips from 棕18經松山車站 trips, but gives no creation date or rationale for the variant.[^ebus-br18]
+- Operator changes: TBC — the current page names 欣欣客運富德站, but no dated transfer record was found.[^ebus-br18]

@@ -7973,3 +7973,33 @@ run cite`, `npm run verify` and `npm test` are green, with 185/185 tests. The
 next run should start Part 3a: the 16 colour-brown routes still TBC on history,
 then Part 3b's single colour-red group of 40 routes. Existing user-owned dirty
 files remain unstaged.
+
+# Run 30 — Part 3, bus colour-brown pilot, 17 August 2026
+
+Part 3a is complete. The 16 history-TBC routes were checked in four four-route
+batches, with current service pages and the primary adjustments that survived
+full-page fetching. The four batches added 485, 497, 464 and 441 whitespace-
+delimited body tokens respectively (1,887 across the 16 route pages); TBC was
+retained for missing opening, corridor-rationale and operator-change records.
+
+| Batch | Routes | Sourced result | Primary URL set |
+|---|---|---|---|
+| 1 | 棕1, 棕2, 棕3, 棕5 | BR1 shortening before 2009; BR5’s 2012 stop rename/addition; BR2/BR3 current pages | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000100; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114000200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000300; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114000500; https://dot.gov.taipei/News_Content.aspx?n=230A79C0F27D6B8F&s=4232D242EAA4B05A; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf |
+| 2 | 棕6, 棕7, 棕7建業路, 棕11 | Current route pages; BR11/副 2013 stop cancellation | https://ebus.gov.taipei/EBus/VsSimpleMap?gb=1&routeid=0114000600; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0414000700; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=17940&sec=1; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001100; https://www-ws.gov.taipei/001/Upload/public/Attachment/412316222945.pdf |
+| 3 | 棕11副, 棕12, 棕13, 棕15 | BR11副 2012 extension; BR12 2012 endpoint rename; BR13 2012 service reduction; BR15 2018/2022 stop changes | https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001110; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114001200; https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0114001300; https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001500; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm; https://www-ws.gov.taipei/001/Upload/public/Attachment/252117392922.pdf; https://www-ws.gov.taipei/001/Upload/public/Attachment/241216302476.pdf; https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/57acc21d-fdf2-4386-a9ab-cce8040fbae3.pdf; https://www-ws.gov.taipei/001/Upload/458/relfile/22562/3499374/42ca36d2-ba63-4cf6-aed5-8aa65218430c.pdf |
+| 4 | 棕18, 棕19, 棕21, 棕22 | BR21 newly opened 16 July 2012; current BR18/BR21 variants; no additional conflicts | https://ebus.gov.taipei/Route/RouteSchedule?routeid=0114001800; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16153&sec=0; https://ebus.gov.taipei/Route/StopsOfRoute?routeid=0114002100; https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16747&sec=0; https://www-ws.gov.taipei/Download.ashx?n=MzQxNTE1MzUxMzcxLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDU4L3JlbGZpbGUvMjI1OTAvMzUwMjkxMi8zNDE1MTUzNTEzNzEucGRm |
+
+Conflicts remain published rather than resolved: the 棕20 schedule endpoint
+versus its full stop sequence; TDX’s separate 棕20預 record versus the official
+catalogue’s 棕20 presentation; and the TDX 棕7綠野香坡 identity versus the full
+official notice that former 812 was shortened and renumbered 三鶯2線. No batch-4
+primary disagreement was found. No images were fetched, no individual bus
+routes were added to global navigation, and neither the claims baseline nor a
+checker was changed.
+
+Part 3a’s four commits were pushed to `main`: `e95766c`, `3e2885b`, `af76c69`
+and this batch’s commit. `npm run cite`, `npm run research`, `npm run verify`
+and the full test suite are green; the suite is 185/185. Part 3b is next: audit
+the 40 colour-red routes, document exact false colour-prefix exclusions, then
+build red in six-route batches with a four-route final batch. Remaining bus
+groups are not to be built in this run.

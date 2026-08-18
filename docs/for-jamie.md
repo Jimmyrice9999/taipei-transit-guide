@@ -9,6 +9,9 @@ Former-name action dates without gazettes remain TBC; no slash-notation rename w
 Incidents preserves the Nari date conflict and 11-location/9-span earthquake conflict.
 No images fetched; the claims baseline and checkers were untouched.
 All Part 2 work was committed and pushed to `main`.
-Gates are green: cite, verify, and full tests 185/185.
-Next: Part 3a, the 16 brown routes still TBC on history; then the 40 red routes.
+Part 3a is complete: all 16 brown history-TBC routes were checked in four batches.
+Partial records cover BR1, BR5, BR11/副, BR12, BR13, BR15 and BR21; remaining gaps stay TBC.
+Brown conflicts remain published for 棕20, 棕20預 and 棕7綠野香坡/812 identity.
+Gates are green: cite, research, verify, and full tests 185/185; no missing glyphs.
+Next: Part 3b audit and build only the 40-route colour-red group, then estimate the remaining groups.
 Existing user-owned dirty files remain unstaged.

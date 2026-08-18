@@ -1,7 +1,7 @@
 ---
 title: BR19 / 棕19
 summary: Brown-line feeder pilot route BR19 (棕19).
-updated: 2026-08-15
+updated: 2026-08-17
 line: BR
 facts:
   - label: Service class
@@ -36,6 +36,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Lists 棕19 under 捷運棕線接駁公車.
+  - id: ebus-br19
+    title: BR19 route information
+    titleOriginal: 棕19路線資訊
+    publisher: Taipei City Public Transportation Office (臺北市政府公共運輸處)
+    url: https://ebus.gov.taipei/EBus/VsSimpleMap?rid=16153&sec=0
+    accessed: 2026-08-17
+    kind: primary
+    lang: zh-Hant
+    note: Full official route-information page listing the current 捷運昆陽站–捷運大湖公園站 corridor, one-section fare, weekday/holiday service windows,東南客運內湖站 contact and the southern Neihu/Nangang stop sequence.
 ---
 
 ## Classification
@@ -47,6 +56,6 @@ The official 大臺北公車 catalogue lists 棕19 under 捷運棕線接駁公�
 The committed TDX bus snapshot supplies the changing structural fields shown above; route length and timetable fields are TBC where that layer does not publish them.[^tdx-bus]
 
 - Route history: TBC.
-- Corridor decision: TBC.
-- Unusual branch or short working: TBC.
-- Operator changes: TBC.
+- Corridor decision: TBC — the current 捷運昆陽站–捷運大湖公園站 corridor is published, but its original rationale was not.[^ebus-br19]
+- Unusual branch or short working: TBC — no dated branch or short-working history was found.[^ebus-br19]
+- Operator changes: TBC — the current page names 東南客運內湖站, but no dated transfer record was found.[^ebus-br19]
