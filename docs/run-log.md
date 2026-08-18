@@ -10074,6 +10074,66 @@ claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
 cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
 its test were not changed.
 
+# Run 44 — Part 1 Sanying LB06–LB11, 18 August 2026
+
+Audited before editing. This exact six-page batch widened LB06–LB11 using the
+full New Taipei DORTS route and public-art index, line engineering documentary,
+2025/2026 public-art announcements, and the individual LB06, LB08, LB09 and
+LB11 art/design records. The individual LB07 page was fetched and returned a
+cache miss; no search snippet was used.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| LB06 | 318 | DORTS route, public-art index and announcements, engineering and LB06 architecture |
+| LB07 | 304 | DORTS route, public-art index and announcements and engineering |
+| LB08 | 392 | DORTS route, public-art index and announcements, engineering, LB08 art and corridor |
+| LB09 | 320 | DORTS route, public-art index and announcements, engineering and LB09 art |
+| LB10 | 328 | DORTS route, public-art index and announcements, engineering and LB08 art conflict record |
+| LB11 | 302 | DORTS route, public-art index and 2026 announcement, engineering and LB11 art |
+
+Sources fetched in full:
+
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_art
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZDn3X2JEw?page=202
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/q4VmGpDp2BoY?page=13
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/MVamXGXBZ8rj
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/l19ZoxxemveD
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+
+Sourced: LB06 has its Sanxia route context, breathable expanded-metal design,
+public-art title and line-level construction controls. LB07 has the route and
+station assignment for Gather - Flow, with the direct individual-art fetch
+failure recorded rather than filled. LB08 has the planned TRA/museum weather
+corridor and the conflicting official art assignments. LB09 has the artist,
+columns and ceramic techniques for Playing with Clay. LB10 has both published
+station assignments and the unresolved Tao Xiang relationship to LB08. LB11
+has the artist and ground-level placement for Convenient Passage: Ying Bird
+Yongji.
+
+Conflicts: LB08’s 2025 announcement assigns Reed Flower Street Lamp, its
+individual record names Tao Xiang and separately places Flower Street Lamp on
+the museum corridor, and the 2026 station list omits LB08. LB10’s 2026 list
+assigns Tao Xiang while the LB08 individual record also names Tao Xiang. Every
+value and the unresolved measurement/placement distinction is published.
+
+TBC after the fetched source families: LB06–LB11 civil contract values, final
+accounts, individual architects and confirmed feeder-bus stop-ID joins; LB07’s
+individual art medium, artist and cost; and whether the Tao Xiang records are
+one multi-site work or separate uses of one title.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run build` clean (519 pages, no missing glyphs); `npm run verify` clean
+(links, accessibility, facts, claims, research, geometry and CVD); `npm test`
+clean (185/185, 19 fact cross-checks, no contradictions); `git diff --check`
+clean. Claims baseline and its test were not changed.
+
+Next: complete LB12, then audit all 192 station pages for any body prose under
+200 words before starting Part 4 operator/model/depot indexes.
+
 Next: complete LB06–LB11 as the next six-page batch.
 
 # Run 43 — Part 1 R27 and Sanying LB01–LB05, 18 August 2026

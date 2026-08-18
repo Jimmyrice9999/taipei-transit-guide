@@ -354,6 +354,78 @@ values, final accounts, individual architects, complete art costs or confirmed
 feeder-bus stop-ID joins. LB04 and LB05 do not have a station-specific artist or
 medium in the fetched index/announcement material. Those values remain TBC.
 
+## Run 44 — LB06–LB11 primary-source expansion, 2026-08-18
+
+This pass fetched the complete DORTS route and public-art index pages, the
+line engineering documentary, the full 2025 and 2026 public-art announcements,
+and the individual LB06, LB08, LB09 and LB11 art/design records. The direct
+LB07 individual art URL was fetched and returned a cache miss; it was not
+replaced with a search snippet.
+
+### What is established
+
+- **LB06 route and architecture.** The full route page places LB06 at Sanxia
+  Guoqing Road and appends National Education Research Academy. The full LB06
+  architecture documentary records the expanded-metal platform skin, lower
+  material weight, ventilation openings, heat buoyancy and train movement as
+  part of the station’s environmental strategy. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6 and
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZDn3X2JEw?page=202
+- **LB07 route and art.** The full route page places LB07 at National Taipei
+  University and appends Enzhugong Hospital. The 2025 and 2026 announcements
+  both assign `匯聚‧流轉` / Gather · Flow to LB07. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6,
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp and
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+- **LB08 corridor and art.** The full corridor documentary describes the
+  planned reinforced-glass weather corridor from LB08 to TRA Yingge, a bridge
+  toward the New Taipei Art Museum and a planned seven-minute walk. The full
+  individual LB08 record names `陶鄉` and separately places `花街燈` on the
+  museum corridor. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/q4VmGpDp2BoY?page=13 and
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ
+- **LB09 art.** The full individual record identifies `玩陶`, Liu Zhenzhou,
+  four ground-level columns and the glaze, ceramic-texture and firing methods.
+  Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/MVamXGXBZ8rj
+- **LB10 assignment.** The full 2025 announcement assigns Time Journey to LB10;
+  the full 2026 announcement assigns both Time Journey and `陶鄉` to LB10.
+  The separately fetched LB08 individual record also names `陶鄉` at LB08.
+  The official records do not explain whether this is one work with multiple
+  placements or two uses of one title. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/vKR2LvO1ZJGp,
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36 and
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/W0OdPjjBmnbJ
+- **LB11 art.** The full individual record identifies `便捷通行 鶯鳥永吉`, Chen
+  Hongcheng, and ground-level columns and walls. The full 2026 announcement
+  assigns the same work to LB11. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/l19ZoxxemveD and
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+- **Shared engineering context.** The full documentary says
+  `全線高架形式...跨越國道、台鐵、大漢溪、三峽河、鶯歌溪` and records the
+  fish-fin bridge, protective base plate, railway supervision and night TRA
+  power-off control. This is line-level evidence, not a station-specific
+  incident report. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+
+### Conflicts found
+
+The 2025 announcement assigns `蘆花街燈` to LB08, while the full individual
+LB08 record names `陶鄉` and separately places `花街燈` on the museum corridor.
+The 2026 station-by-station announcement omits LB08. For LB10, the 2026
+announcement assigns `陶鄉`, while the individual LB08 record also names
+`陶鄉`; the official pages do not state whether the same title represents one
+work in more than one place or separate works. These assignments are all
+published, with the difference retained rather than reconciled.
+
+### Stated gaps
+
+The fetched primary families do not establish separate LB06–LB11 civil
+construction contract values, final accounts, individual architects or
+confirmed feeder-bus stop-ID joins. The individual LB07 artwork page remained
+unfetched after a full cache-miss response, so its medium, artist and cost stay
+TBC. LB10’s `陶鄉` relationship to the LB08 record also remains unresolved.
+
 ## Checked and failed
 
 - **TDX station rows** — Checked 2026-08-14. No LB station dataset exists in the
