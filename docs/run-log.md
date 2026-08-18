@@ -9400,3 +9400,70 @@ claims/research/geometry/CVD clean, 185/185 tests); explicit `npm test` and
 
 Next: audit Danhai V07–V11 and V26 with the same expanded New Taipei primary
 source families.
+
+# Run 32 — Part 2 Danhai LRT V07–V11 and V26, 18 August 2026
+
+Audited before editing. V07, V08, V09, V10, V11 and V26 were all zero-word
+station pages. The prior search record covered six NTMC station pages, the
+DORTS Green Mountain and Blue Sea route/station tables, the NTMC route-stamp
+page and the NTMC public-art page; it had not covered DORTS construction
+progress, inspection or technical-Q&A articles. This batch fetched those full
+pages and used no search-result snippets.
+
+Final body-prose counts: V07 362, V08 380, V09 337, V10 363, V11 362 and V26
+352; batch total 2,156 words. V07 uses the seventh-station route-entry,
+late-construction and evacuation records. V08 uses the documented start of the
+at-grade section and the right-of-way/open-platform rationale. V09 uses its
+final fit-out snapshot; V10 uses the test-train holding record; V11 uses the
+published island-platform dimensions, pedestrian crossing, accessible ramp,
+finishing list and depot relationship. V26 uses its station-ancillary works,
+Company Field Creek bridge and corridor works, preliminary-inspection exercise
+and Fisherman’s Wharf planning context.
+
+Primary URLs fetched in full and cited:
+
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZD113mJEw?page=356
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQr4KmNgE?page=393
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/zKjmRqDrZ41B?page=403
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YqOmzeo?page=49&route%5B0%5D=226
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/5v7m9YYBmB8a?page=400
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YaEmzeo?page=274
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxyj4Z3Ex?page=374
+- https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY
+- https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/LXlR27XkdV8v
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201411110022&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=23fcb6ad2ee57514e4de617d90d596a4&id=e8ca970cde5c00e1
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmaq0gmqya?page=416
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/r6421qJ829nR?page=379
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/W0OdPPx6dnbJ
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+Conflicts and dated distinctions published: the V07/V08 page identifies V08
+as the at-grade start while the right-of-way page describes the elevated form
+through V07 and the later B-type surface form; these are the same transition.
+The V09–V11 progress snapshot, V07 inspection milestone and later operating
+opening measure different dates and stages. Blue Sea “over 80 percent” is
+first-phase project progress, not V26 completion; the V26 exercise is a
+preliminary-inspection result, not final acceptance. Corridor award value and
+target-year demand remain explicitly corridor-wide, never station values.
+
+TBC: station-only contract allocations, final accounts, architecture authors,
+complete materials schedules, station-specific Jimmy Liao titles/years/costs,
+dated renames, and complete platform/track/exit schedules. The checked NTMC
+public-art page still returns the line-wide collaboration scope; copyrighted
+artwork content was not described. No New Taipei gazette or operator rename
+notice was found in this pass.
+
+Contradicted the corpus: the earlier conclusion that New Taipei sources had no
+usable deepening material was wrong for all six pages. The widened primary
+search returned station-specific construction or inspection records for V07,
+V08, V09, V10, V11 and V26. No false-prefix audit applies.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after line-V font regeneration (519 pages, no missing
+glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185 tests);
+explicit `npm test` and `git diff --check` still required before commit.
+
+Next: commit and push this six-station batch, then continue Part 2 with Danhai
+V27–V28 before returning to Ankeng K01–K09.

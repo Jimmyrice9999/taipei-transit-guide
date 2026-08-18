@@ -364,6 +364,125 @@ contractor split or final account was inferred for any of the six pages.
 The six pages now have sourced prose rather than an assertion that the
 expanded source family was empty. The remaining station-level gaps stay TBC.
 
+## Station-prose deepening: V07–V11 and V26 — 18 August 2026
+
+### Audit and source expansion
+
+The pre-edit audit found zero body words for V07, V08, V09, V10, V11 and V26.
+The prior search record covered the six NTMC station pages, the DORTS Green
+Mountain and Blue Sea route/station pages, the NTMC route-stamp page and the
+NTMC public-art page. It did not cover the DORTS construction-progress,
+inspection or technical-Q&A articles. This pass fetched those full pages and
+used them as primary sources; no search-result snippet was used.
+
+### What is established
+
+- DORTS's September 2018 progress article identifies V07 as the seventh Green
+  Mountain station, says the route turns from Danjin Road into Binhai Road and
+  enters Danhai New Town, and records V07 structure largely complete with
+  entrance-side sidewalk paving underway. It says V08 begins the at-grade
+  section and that its structure was largely complete.
+  Source: [DORTS V07–V08 construction progress](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZD113mJEw?page=356),
+  PRIMARY, High confidence. The page says: 「淡海輕軌綠山線第七站」, 「由淡金路轉進濱海路，進入淡海新市鎮」,
+  「V07車站主體結構大致完成」, and 「V08站為平面段起點」.
+- DORTS's October 2018 final-stations article places V09 at Binhai Road and
+  Shalun Road, says its structure and architectural fit-out were largely
+  complete with mechanical work continuing, records test trains held at V10,
+  and describes V11 as the last Green Mountain station leading toward the
+  depot. It also notes a future Danhai Miramar destination about 500 metres
+  away on foot.
+  Source: [DORTS final three Green Mountain stations](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQr4KmNgE?page=393),
+  PRIMARY, High confidence. The page says: 「綠山線的最後三站」, 「V09車站主體及建築裝修工程大致完成」,
+  「V10站為列車試車暫停位置」, and 「V11站為綠山線的終點站」.
+- DORTS's V11 structure article records an island-platform waiting station 55
+  metres long, 15.15 metres wide and approximately 6 metres high. It records
+  the pedestrian crossing, accessible ramp, and planned structural paint,
+  metal roof, windscreen, paving and public-art fit-out.
+  Source: [DORTS V11 construction structure](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/zKjmRqDrZ41B?page=403),
+  PRIMARY, High confidence. The page says: 「崁頂站為島式月台候車站」, 「長55公尺、寬15.15公尺、高約6公尺」,
+  and records 「行人穿越道」 and 「無障礙坡道」.
+- DORTS's December 2018 inspection article records Ministry of Transportation
+  inspection of civil, electrical-mechanical and operating matters. It says a
+  high-elevated-station fire evacuation exercise was held at V07, alongside a
+  substation power-loss and power-transfer exercise.
+  Source: [DORTS Green Mountain inspection](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YqOmzeo?page=49&route%5B0%5D=226),
+  PRIMARY, High confidence. The page says: 「V07高架車站進行火災情境旅客疏散演練」 and records the
+  「仙渡變電站停電及轉供電演練」.
+- DORTS's July 2018 Blue Sea progress article records V26 cable conduits and
+  station ancillary facilities, a Company Field Creek steel-arch bridge lift,
+  two pier-cap works, approach fill, conduits toward V27, Guanhai Road widening
+  and sidewalk drainage. It reports first-phase construction progress above
+  80 percent in mid-July 2018.
+  Source: [DORTS Blue Sea construction progress](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/5v7m9YYBmB8a?page=400),
+  PRIMARY, High confidence. The page says: 「B06/V26電纜管線及車站附屬設施施工」,
+  「跨越公司田溪鋼拱橋」 and 「第一期工程進度已超過80%」.
+- DORTS's September 2020 preliminary-inspection article records V26 as the
+  exercise site for a human-set fire scenario involving platform and train
+  evacuation, a train turnback to V27 and bus bridging. It records this as
+  preliminary inspection before the later Ministry inspection.
+  Source: [DORTS Blue Sea preliminary inspection](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YaEmzeo?page=274),
+  PRIMARY, High confidence. The page says: 「淡水漁人碼頭站」 and records 「月台及列車旅客疏散」,
+  「列車折返至V27站」 and 「公車接駁」.
+- DORTS's planning Q&A explains that Green Mountain's elevated section uses
+  dedicated right of way and that surface intersections receive priority. It
+  also identifies the Fisherman's Wharf area represented by V26 as a potential
+  land-development location considered with the Danjiang Bridge and Bali
+  extension, and explains the open-platform design as a response to limited
+  land and construction or maintenance cost.
+  Source: [DORTS light-rail planning Q&A](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxyj4Z3Ex?page=374),
+  PRIMARY, High confidence. The page says: 「高架段採專用路權」, 「平面段路口則採平交優先」,
+  and identifies 「淡水漁人碼頭」 as a potential development location.
+
+### Station-specific application
+
+V07 uses the route-entry, late-construction and evacuation records. V08 uses
+the documented start of the at-grade section and the open-platform and
+right-of-way rationale. V09 uses its final fit-out snapshot; V10 uses the
+published test-train holding role; V11 uses the full structure dimensions,
+street access arrangement, final-station/depot relationship and planned
+finishing list. V26 uses its linked bridge and station-ancillary works, the
+preliminary-inspection exercise and the planning context around Fisherman's
+Wharf. Corridor-wide award values remain labelled as corridor-wide in the
+content; they are not redistributed to individual stations.
+
+### Conflicts and dated distinctions
+
+1. The September 2018 V07/V08 page calls V08 the beginning of the at-grade
+   section, while DORTS's route-right-of-way article describes the elevated
+   section through V07 and the later surface section as B-type. These are
+   consistent descriptions of the same transition, not competing station
+   classifications.
+2. The October 2018 V09–V11 page is a construction-progress snapshot, the
+   December 2018 V07 page is an inspection milestone, and the route page gives
+   the later operating opening. They measure different dates and stages; none
+   replaces the others.
+3. The July 2018 Blue Sea article's “over 80 percent” is first-phase project
+   progress, not V26 station completion. The September 2020 V26 exercise is a
+   preliminary-inspection result, not final acceptance. Both values are
+   retained with their scope and date.
+
+### Checked and failed for V07–V11 and V26
+
+- **Station-only contract package, contractor split, final account and value**
+  — the full New Taipei award/signing notices and DORTS progress, inspection
+  and quality pages expose the combined first-phase scope but not a station
+  allocation. Checked 18 August 2026.
+- **Station-specific architecture author, final materials schedule and
+  public-art title/year/selection/cost** — the widened DORTS pages returned
+  V11 structure and finishing details but no architect attribution or complete
+  station-specific art procurement record; NTMC's Jimmy Liao page remains a
+  line-wide collaboration record. Checked 18 August 2026.
+- **Dated construction-era names or renames** — no gazette or operator notice
+  establishing a V07–V11 or V26 rename was found in the checked New Taipei
+  primary pages. Checked 18 August 2026.
+- **Station-specific platform, track, exit and lift/ramp schedules** — V11's
+  structure page records a pedestrian crossing and ramp, but the checked
+  operator and DORTS HTML does not publish a complete station-by-station
+  platform, track or exit schedule. Checked 18 August 2026.
+
+The six pages now have sourced prose. Their remaining station-level gaps stay
+TBC rather than being filled from the corridor records.
+
 ## Conflicts
 
 1. The DORTS Green Mountain route page gives the operating opening as 24
@@ -420,9 +539,10 @@ keeps the affected values as TBC.
 ## Sources
 
 The implementation source records in `lib/danhai-stations.ts` contain the
-complete metadata for the 28 unique primary sources used by the generated
+complete metadata for the 44 unique primary sources used by the generated
 pages: TDX, the NTMC station table and 14 NTMC station detail pages, seven
 additional NTMC pages, two DORTS route pages, two DORTS station tables, and the
-DORTS shelter-design article. Each record includes the original-language title,
+DORTS construction, inspection, planning-Q&A, shelter-design and quality
+articles. Each record includes the original-language title,
 publisher, URL, access date, language, primary kind and a note describing what
 it supports.

@@ -268,6 +268,69 @@ const dortsQuality = source(
   'The builder’s full project article describes plan review, incoming-material sampling, contractor self-inspection, supervision hold points and owner/project-management spot checks, illustrated with precast beam work from the Phase 1 turnkey team.',
 )
 
+const dortsV07V08Progress = source(
+  'dorts-danhai-v07-v08-progress',
+  'Danhai LRT V07 and V08 construction progress',
+  '白色站體越看越好看！淡海輕軌施工報告！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/bxkZD113mJEw?page=356',
+  'The builder’s full September 2018 progress article identifies V07 as the seventh Green Mountain station entering Danhai New Town and says V07 paving was in progress; it identifies V08 as the beginning of the at-grade section and says its structure was largely complete.',
+)
+
+const dortsV09V11Progress = source(
+  'dorts-danhai-v09-v11-progress',
+  'Danhai LRT V09–V11 construction progress',
+  '綠山線的最後三站！淡海輕軌工程報告！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQr4KmNgE?page=393',
+  'The builder’s full October 2018 progress article describes V09 as structurally and architecturally largely complete with remaining mechanical work, V10 as a test-train holding location with mechanical work continuing, and V11 as the current terminus leading toward the depot.',
+)
+
+const dortsV11Structure = source(
+  'dorts-danhai-v11-structure',
+  'Danhai LRT V11 construction structure record',
+  '底下是有變形金剛嗎？崁頂站施工現況！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/zKjmRqDrZ41B?page=403',
+  'The builder’s full October 2017 progress article records V11’s island-platform waiting station, 55 m by 15.15 m dimensions, approximately 6 m height, pedestrian crossing and accessible ramp, and the planned roof, windscreen, paving and art fit-out.',
+)
+
+const dortsV07Inspection = source(
+  'dorts-danhai-v07-inspection',
+  'Danhai LRT Green Mountain inspection and emergency exercise',
+  '淡海輕軌履勘完成！年底通車營運就在眼前！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YqOmzeo?page=49&route%5B0%5D=226',
+  'The builder’s full December 2018 inspection article records Ministry of Transportation inspection of civil, electrical/mechanical and operating matters, including a high-elevated-station fire evacuation exercise at V07 and a substation power-loss exercise.',
+)
+
+const dortsBlueV26Progress = source(
+  'dorts-danhai-v26-progress',
+  'Danhai LRT Blue Sea Phase 1 construction progress',
+  '跨越公司田溪！淡海輕軌要來吊裝鋼拱橋啦！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/5v7m9YYBmB8a?page=400',
+  'The builder’s full July 2018 progress article says V26 work included cable conduits and station ancillary facilities, while nearby works included the Company Field Creek steel-arch bridge, pier caps, approach fill and conduit work toward V27.',
+)
+
+const dortsBlueV26Inspection = source(
+  'dorts-danhai-v26-inspection',
+  'Danhai LRT Blue Sea Phase 1 preliminary inspection',
+  '淡海輕軌第一期藍海線完成初勘囉！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/nalZ4YaEmzeo?page=274',
+  'The builder’s full September 2020 inspection article identifies V26 as the site of a fire scenario exercise covering platform and train evacuation, a train turnback to V27 and bus bridging, and records the line’s preliminary-inspection stage before opening.',
+)
+
+const dortsLightRailQA = source(
+  'dorts-danhai-light-rail-qa',
+  'Danhai LRT planning and open-platform explanation',
+  '淡海輕軌大哉問！Q&A大解答！（下）',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pW0dxyj4Z3Ex?page=374',
+  'The builder’s full technical Q&A explains the Green Mountain dedicated right of way and surface priority, identifies V26 as a potential land-development location to be considered with the Danjiang Bridge and Bali extension, and explains the open-platform approach as a response to limited station land and maintenance cost.',
+)
+
 const commonFacilities = 'NTMC publishes a passenger enquiry point and accessible ticket machine at light-rail stations; the operator says no lockers are provided on the light-rail system. Station-specific lift/ramp details: TBC.'
 const tbc = 'TBC'
 
@@ -422,7 +485,7 @@ const vData: Record<string, VData> = {
   },
 }
 
-const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ntpcTender, ntpcContract, dortsRouteRights, dortsHongshulinGrade, dortsHongshulinSlope, dortsHongshulinTransfer, dortsV05V06Progress, dortsFinalGreenStations, dortsQuality, ...Object.values(operatorStations)]
+const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ntpcTender, ntpcContract, dortsRouteRights, dortsHongshulinGrade, dortsHongshulinSlope, dortsHongshulinTransfer, dortsV05V06Progress, dortsFinalGreenStations, dortsQuality, dortsV07V08Progress, dortsV09V11Progress, dortsV11Structure, dortsV07Inspection, dortsBlueV26Progress, dortsBlueV26Inspection, dortsLightRailQA, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -454,6 +517,13 @@ function makeResearch(code: string, data: VData): StationResearch {
     dortsHongshulinTransfer.id,
     dortsV05V06Progress.id,
     dortsQuality.id,
+    dortsV07V08Progress.id,
+    dortsV09V11Progress.id,
+    dortsV11Structure.id,
+    dortsV07Inspection.id,
+    dortsBlueV26Progress.id,
+    dortsBlueV26Inspection.id,
+    dortsLightRailQA.id,
   ].filter((id): id is string => Boolean(id))
   return {
     sources: uniqueSources(sourceIds),
@@ -543,6 +613,72 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'Its alignment explanation places the Green Mountain route on elevated A-type right of way through the V07 area before it turns to B-type at-grade running, giving V06 a documented role near the end of the elevated section.', source: dortsRouteRights.id },
     { text: 'The grade article explains that the elevated section exists to lift the route from roughly 10 metres at Hongshulin toward the 35–40-metre Danhai New Town, with a maximum 6.16% grade along the climb.', source: dortsHongshulinGrade.id },
     { text: 'The project quality article records plan review, material sampling, contractor self-inspection, supervision hold points and owner or project-management spot checks; no station-only V06 contract value or final account was found in the checked primary pages.', source: dortsQuality.id },
+  ],
+  V07: [
+    { text: 'DORTS identifies V07 as the seventh Green Mountain station and places it where the route turns from Danjin Road into Binhai Road and enters the Danhai New Town corridor.', source: dortsV07V08Progress.id },
+    { text: 'That September 2018 construction report says V07\'s main structure was largely complete while crews were still paving the sidewalks around the entrances, so the record captures a late-build stage rather than an operating condition.', source: dortsV07V08Progress.id },
+    { text: 'The right-of-way account places the elevated A-type exclusive section through V07 and says the first phase contains seven elevated and seven at-grade stations after balancing cost, engineering difficulty, land acquisition and landscape impact.', source: dortsRouteRights.id },
+    { text: 'DORTS\'s grade record explains the reason for that form: the alignment rises from roughly 10 metres near Hongshulin toward the 35–40-metre Danhai New Town area, with a maximum recorded grade of 6.16% on the elevated section.', source: dortsHongshulinGrade.id },
+    { text: 'The project Q&A describes the elevated section as dedicated right of way and says surface intersections receive priority, a corridor operating arrangement intended to improve punctuality and comfort while reducing the bus traffic burden.', source: dortsLightRailQA.id },
+    { text: 'During the December 2018 Ministry of Transportation inspection, V07 was used for a high-elevated-station fire scenario in which the project tested passenger evacuation alongside civil, electrical-mechanical and operating checks.', source: dortsV07Inspection.id },
+    { text: 'V07 was delivered inside the Phase 1 turnkey award whose published scope covered Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot; the award value therefore belongs to the combined corridor, not to V07 alone.', source: ntpcTender.id },
+    { text: 'The contract notice names China Steel and Union Steel Construction as the joint team, while the quality record describes plan review, incoming-material sampling, contractor self-checks, supervision hold points and owner or project-management spot checks.', source: ntpcContract.id },
+    { text: 'The checked primary material does not publish a V07-only contract allocation, final account or station-specific public-art procurement cost, so those items remain TBC rather than being derived from the corridor award.', source: dortsQuality.id },
+  ],
+  V08: [
+    { text: 'DORTS\'s September 2018 progress report marks V08 as the point where the Green Mountain route begins its at-grade section and says the station structure was largely complete during that construction snapshot.', source: dortsV07V08Progress.id },
+    { text: 'That transition follows the elevated A-type section through V07: DORTS describes the later surface alignment as B-type separated right of way, so V08 is the first station in the documented change of construction and operating form.', source: dortsRouteRights.id },
+    { text: 'The same right-of-way account records seven elevated and seven at-grade stations in the first phase, a mixed strategy selected after considering construction cost, engineering difficulty, land acquisition and landscape impact rather than applying one structure everywhere.', source: dortsRouteRights.id },
+    { text: 'The route context is developmental as well as technical: the V07/V08 progress report describes the line entering Danhai New Town, while the contract notice defines the first-phase work as a transport project serving that growing corridor.', source: dortsV07V08Progress.id },
+    { text: 'DORTS explains that the line uses dedicated right of way on its elevated section and gives surface intersections priority; the stated aims are better punctuality and comfort, lower bus emissions and improved service quality.', source: dortsLightRailQA.id },
+    { text: 'The open-platform approach was also a planning response: DORTS says limited land led the project to simplify most non-transfer stations, saving space and construction or maintenance cost while preserving visual permeability.', source: dortsLightRailQA.id },
+    { text: 'V08 belonged to the Phase 1 turnkey award to China Steel and Union Steel Construction, whose published scope combined Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot rather than assigning a separate public price to each station.', source: ntpcTender.id },
+    { text: 'The project quality article records five control layers—plan review, material sampling, contractor self-inspection, supervision hold points and owner or project-management spot checks—while the checked pages provide no V08-only final account or art procurement cost.', source: dortsQuality.id },
+    { text: 'The progress article is a September 2018 build-stage record; DORTS\'s route record separately documents Green Mountain stability testing and the later opening date, so the two sources describe different moments rather than conflicting station conditions.', source: greenRoute.id },
+  ],
+  V09: [
+    { text: 'DORTS places V09 at the Binhai Road and Shalun Road junction and reports that its structure and architectural fit-out were largely complete in October 2018, with mechanical work still continuing.', source: dortsV09V11Progress.id },
+    { text: 'V09 therefore appears in the builder\'s final-three-stations progress record as a late construction-stage stop, not as a station for which the published corridor award can be converted into a station-only price.', source: dortsV09V11Progress.id },
+    { text: 'Because DORTS identifies V08 as the beginning of the at-grade section after the elevated run through V07, V09 belongs to the surface portion of the Green Mountain alignment described by the project\'s B-type right-of-way classification.', source: dortsV07V08Progress.id },
+    { text: 'The first-phase right-of-way record says the route contains seven elevated and seven at-grade stations, reflecting a deliberate balance among cost, engineering difficulty, land acquisition and landscape impact.', source: dortsRouteRights.id },
+    { text: 'DORTS\'s planning Q&A says most non-transfer stations use open platforms because land is limited and a simpler form reduces construction and maintenance demands while keeping the corridor visually permeable.', source: dortsLightRailQA.id },
+    { text: 'The Phase 1 turnkey award covered Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot, and its NT$11,512,800,000 value is a combined-program figure rather than a V09 allocation.', source: ntpcTender.id },
+    { text: 'A later DORTS inspection report records the project testing civil, electrical-mechanical and operating matters, including a V07 evacuation exercise, which documents the system-level safety stage reached before Green Mountain service.', source: dortsV07Inspection.id },
+    { text: 'The route record separately reports Green Mountain stability testing and the December 2018 opening, so the October progress description and the later operating milestone must be read as dated stages of the same build.', source: greenRoute.id },
+    { text: 'No checked primary page publishes a V09-only contractor split, final account, renaming gazette or station-specific public-art procurement cost; those details remain TBC.', source: dortsQuality.id },
+  ],
+  V10: [
+    { text: 'DORTS\'s October 2018 report places V10 at the Shalun Road and Xinshi 3rd Road junction and records that test trains were being held there while mechanical work continued.', source: dortsV09V11Progress.id },
+    { text: 'The same article groups V10 with V09 and V11 as the last three Green Mountain stations, so its test-train role belongs to the final integration stage of the route rather than to a separate branch or short working.', source: dortsV09V11Progress.id },
+    { text: 'DORTS identifies V08 as the start of the at-grade section after the elevated segment through V07; V10 is consequently within the later surface-running portion described as B-type separated right of way.', source: dortsV07V08Progress.id },
+    { text: 'The first-phase engineering account says the seven-elevated/seven-at-grade arrangement was chosen after weighing cost, construction difficulty, land acquisition and landscape effects, providing the documented rationale for the change in form before V10.', source: dortsRouteRights.id },
+    { text: 'The planning Q&A explains that open platforms were used at most stations because land was limited and the simpler arrangement reduced construction and maintenance cost while maintaining visual openness.', source: dortsLightRailQA.id },
+    { text: 'V10 was included in the corridor-wide turnkey award to China Steel and Union Steel Construction, whose scope covered Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot; the published value is not a V10-only amount.', source: ntpcTender.id },
+    { text: 'The builder\'s quality account describes plan review, incoming-material tests, contractor self-inspection, supervision hold points and owner or project-management spot checks, but it does not disclose a station-level V10 final account.', source: dortsQuality.id },
+    { text: 'The December 2018 inspection record shows that the project had moved from construction into integrated civil, electrical-mechanical and operating checks, with a high-elevated-station evacuation exercise at V07 used as part of the safety examination.', source: dortsV07Inspection.id },
+    { text: 'DORTS\'s route record documents Green Mountain stability testing and the later opening separately from the October construction snapshot, so the held test trains and the later service date are milestones at different points in the project timeline.', source: greenRoute.id },
+  ],
+  V11: [
+    { text: 'DORTS describes V11 as an island-platform waiting station at the south side of Shalun Road Section 2 and Xinshi 6th Road Section 1, at the end of the Green Mountain route.', source: dortsV11Structure.id },
+    { text: 'The builder\'s structure record gives the station a length of 55 metres, a width of 15.15 metres and an approximate height of 6 metres; these are the published waiting-station dimensions, not a route-length measurement.', source: dortsV11Structure.id },
+    { text: 'A pedestrian crossing links the station to the sidewalks, and DORTS records an accessible ramp in the same arrangement, making the street approach part of the station structure account rather than an inferred exit description.', source: dortsV11Structure.id },
+    { text: 'The 2017 construction snapshot lists structural painting, the metal roof, windscreen, paving and public-art fit-out as remaining work, so it records planned finishing stages rather than claiming that every item was already installed.', source: dortsV11Structure.id },
+    { text: 'The later final-stations report describes V11 as the last Green Mountain station, after which the alignment continues toward the depot, and notes a future Danhai Miramar destination about 500 metres away on foot.', source: dortsV09V11Progress.id },
+    { text: 'DORTS\'s right-of-way account places the elevated A-type section through V07 and the later B-type surface section after it; V11 is therefore within the documented at-grade end of the Green Mountain route.', source: dortsRouteRights.id },
+    { text: 'The Phase 1 turnkey award covered Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot, while its published value belongs to the combined program and cannot be assigned to V11 alone.', source: ntpcTender.id },
+    { text: 'The project quality record describes five inspection layers from design review through owner spot checks, but the checked primary pages do not identify a V11-only contract allocation, final account or public-art procurement cost.', source: dortsQuality.id },
+    { text: 'The December 2018 inspection article records the route undergoing civil, electrical-mechanical and operating checks before opening, including a high-elevated-station evacuation exercise at V07; it is a corridor safety milestone, not a V11-specific incident.', source: dortsV07Inspection.id },
+  ],
+  V26: [
+    { text: 'DORTS\'s July 2018 Blue Sea Phase 1 progress report says work at V26 included cable conduits and station ancillary facilities, placing those tasks alongside the civil works still being completed around the station.', source: dortsBlueV26Progress.id },
+    { text: 'The same report records a steel-arch bridge lift across Company Field Creek, two pier-cap works, an approach fill and conduit installation extending toward B07/V27, showing that V26 was built within a linked station-and-corridor works package.', source: dortsBlueV26Progress.id },
+    { text: 'It also records road widening on Guanhai Road and sidewalk drainage work, while the first-phase construction progress had passed 80 percent in mid-July 2018; that figure is a dated program-progress measure, not a V26 completion percentage.', source: dortsBlueV26Progress.id },
+    { text: 'The Blue Sea Phase 1 route record describes a three-station extension, and DORTS\'s station table identifies V26 as the completed Tamsui Fisherman\'s Wharf station within that phase.', source: blueRoute.id },
+    { text: 'During the August 2020 preliminary inspection, V26 hosted a human-set fire scenario that tested evacuation from both the platform and train, then tested a train turnback to V27 and bus bridging.', source: dortsBlueV26Inspection.id },
+    { text: 'That inspection article records the preliminary-inspection stage and the improvements required before the Ministry of Transportation inspection, so it should not be read as the final acceptance report.', source: dortsBlueV26Inspection.id },
+    { text: 'DORTS\'s planning Q&A identifies the Fisherman\'s Wharf area represented by V26 as a potential land-development location considered together with the Danjiang Bridge and a possible Bali extension.', source: dortsLightRailQA.id },
+    { text: 'The same Q&A explains that limited land led most non-transfer stations to use simplified open platforms, a design approach intended to save space and construction or maintenance cost while preserving visual permeability.', source: dortsLightRailQA.id },
+    { text: 'V26 was part of the first-phase turnkey award covering the Green Mountain section, the B06–B08 Blue Sea section, fourteen stations and one depot; the published contract value is therefore a combined-corridor value, not a V26 station price.', source: ntpcTender.id },
   ],
 }
 
