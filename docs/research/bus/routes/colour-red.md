@@ -732,9 +732,88 @@ does not present those workings as a separate `紅68預` route.
   `平日07:30、13:00返程班次及12:10、18:30、19:30往程班次繞駛中鼎第二總部大樓`;
   and `自114年6月30日起試辦例假日1030、1640班次為預約公車班次`.
 
+## Batch 7 — 紅3區, 紅7區, 紅7 and 紅9, checked 18 August 2026
+
+The exact four remaining records in the committed `colour-red` TDX group were
+checked. Their full official schedule pages establish current route identity,
+termini, service windows, fare class, operator contacts and current timetable
+notes. They do not establish route opening history, the original corridor
+decision or dated operator changes; those fields remain TBC.
+
+### 紅3區 / R3Shuttle
+
+The full official schedule page gives `社子站 - 內湖科技園區`, weekday service
+0545–2200, holiday service 0800–2000, a `陽明高中-劍潭` fare buffer, two-section
+fare and `光華巴士洲美站` as the service contact. It says national holidays
+use the Sunday timetable, Lunar New Year's Eve uses the Saturday timetable and
+typhoon closure days use the Sunday timetable.
+
+- **Source:** “R3Shuttle route schedule” / `titleOriginal`: `紅3區班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000320
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 社子站 - 內湖科技園區`;
+  `頭末班車 : [平日] 0545 - 2200 / [假日] 0800 - 2000`;
+  `分段緩衝 : 陽明高中-劍潭`; `收費方式 : 兩段票`;
+  `業者服務電話 : 光華巴士洲美站:02-2823-0188`; and
+  `遇國定假日以星期日班次發車，農曆除夕日以星期六班次發車，颱風日倘停班停課，依星期日班次發車`.
+
+### 紅7區 / R7Shuttle
+
+The full official schedule page gives `社子 - 捷運劍潭站`, weekday and holiday
+service 0540–2350, one-section fare and `首都客運社子站` as the service contact.
+It records weekday peak/off-peak intervals of 10/20 minutes and holiday
+intervals of 15–20 minutes, with fixed departures after 22:00; the
+`陽明戲院` stop toward 捷運劍潭站 is served only before 11:00.
+
+- **Source:** “R7Shuttle route schedule” / `titleOriginal`: `紅7區班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000720
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 社子 - 捷運劍潭站`;
+  `頭末班車 : [平日] 0540 - 2350 / [假日] 0540 - 2350`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運社子站:02-2810-8566`;
+  `[平日] 尖峰:10分; 離峰:20分`; `[假日] 尖峰:15分至20分; 離峰:15分至20分`;
+  and `平日22:00以後發車時間為固定班次`.
+
+### 紅7 / R7
+
+The full official schedule page gives `捷運劍潭站 - 社子`, weekday service
+0600–1900, holiday service 0800–1700, one-section fare and `首都客運士林站`
+as the service contact. It says the `陽明戲院` stop toward 捷運劍潭站 is
+served only by departures before 11:00 on both weekdays and holidays.
+
+- **Source:** “R7 route schedule” / `titleOriginal`: `紅7班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000700
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 捷運劍潭站 - 社子`;
+  `頭末班車 : [平日] 0600 - 1900 / [假日] 0800 - 1700`;
+  `收費方式 : 一段票`; `業者服務電話 : 首都客運士林站:02-2834-5022`; and
+  `平日「陽明戲院」(往捷運劍潭站方向)站位，僅上午11:00前班次停靠`.
+
+### 紅9 / R9
+
+The full official schedule page gives `蘆洲 - 捷運劍潭站`, weekday service
+0540–2330, holiday service 0600–2300, one-section fare and `三重客運蘆一站`
+as the service contact. It records a weekday peak interval of 12–15 minutes.
+
+- **Source:** “R9 route schedule” / `titleOriginal`: `紅9班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000900
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 蘆洲 - 捷運劍潭站`;
+  `頭末班車 : [平日] 0540 - 2330 / [假日] 0600 - 2300`;
+  `收費方式 : 一段票`; `業者服務電話 : 三重客運蘆一站:02-2282-1429`; and
+  `[平日] 尖峰:12分至15分`.
+
 ## What remains TBC
 
-- **All thirty-six batch-1/2/3/4/5/6 routes:** opening date, earlier alignment, original
+- **All forty batch-1/2/3/4/5/6/7 routes:** opening date, earlier alignment, original
   corridor rationale and dated operator transfers are TBC.
 - **紅19:** its current school-day return stop variant is established; its
   creation date and rationale are TBC.
@@ -769,6 +848,8 @@ does not present those workings as a separate `紅68預` route.
 - **紅68 and 紅68預:** the current official `紅68` schedule and TDX-only
   `紅68預` record are established, but their relationship, any separate service
   span and any dated creation or operator change remain TBC.
+- **紅3區, 紅7區, 紅7 and 紅9:** current service variants are established;
+  their creation dates and corridor rationales are TBC.
 
 ## Checked and failed
 
