@@ -9467,3 +9467,63 @@ explicit `npm test` and `git diff --check` still required before commit.
 
 Next: commit and push this six-station batch, then continue Part 2 with Danhai
 V27–V28 before returning to Ankeng K01–K09.
+
+# Run 33 — Part 2 Danhai LRT V27–V28, 18 August 2026
+
+Audited before editing. V27 and V28 were both zero-word station pages. The
+prior search record covered their NTMC station pages, DORTS Blue Sea route and
+station tables, the NTMC route-stamp page and the NTMC public-art page. It had
+not covered the DORTS Blue Sea track-closure, bridge, cultural-landscape,
+public-art-programme or walking-and-bus-integration articles. All new pages
+were fetched in full; one web-reader cache miss was checked by direct full HTML
+fetch, and no search snippet was used.
+
+Final body-prose counts: V27 376 and V28 352; batch total 728 words. V27 uses
+the completed-structure and track-closure milestones, Blue Sea Bridge and
+archaeological context, Wanggailou landmark, and the dated 880/Red 23 feeder
+planning record. V28 uses the same track milestone, its Blue Sea Bridge
+approach and Binhai Road construction context, plus the Blue Sea public-art
+programme scope. The Blue Sea public-art record is described as programme
+scope only; copyrighted artwork content is not reproduced.
+
+Primary URLs fetched in full and cited:
+
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pRG2lkGQmb5z?page=307
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/0g4d68qAm5Db?page=310
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQ4YEdNgE
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJrpKdAv6
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/R9Ndyygyd0zL
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/5v7m9YYBmB8a?page=339
+- https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/LXlR27XkdV8v
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201411110022&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=23fcb6ad2ee57514e4de617d90d596a4&id=e8ca970cde5c00e1
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/W0OdPPx6dnbJ
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+Conflicts and dated distinctions published: the December 2019 structure and
+track-closure record, February 2020 bridge progress, and September 2020
+preliminary inspection are different project stages, not competing completion
+values. The Blue Sea three-station curator/local-artist public-art scope is
+kept distinct from Green Mountain’s 11-station Jimmy Liao commission. The
+existing V28 station-position conflict remains published with both NTMC and
+DORTS values. The 880/Red 23 statement is a dated planning record, not a
+current service-frequency claim.
+
+TBC: station-only contract allocations, final accounts, architect and final
+materials records, station-specific Blue Sea art titles/artist allocations/
+years/costs, dated renames, and current bus variants/headways at V27/V28. No
+New Taipei gazette or operator rename notice was found in this pass.
+
+Contradicted the corpus: the earlier conclusion that V27 and V28 had no usable
+deepening material was wrong. The widened primary search returned station
+structure and track milestones, bridge/heritage context, public-art programme
+scope and dated feeder integration. No false-prefix audit applies.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after line-V font regeneration (519 pages, no missing
+glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185 tests);
+explicit `npm test` and `git diff --check` still required before commit.
+
+Next: commit and push the completed Danhai line tail, then audit Ankeng K01–K06
+as the first six-station batch of the remaining New Taipei line work.

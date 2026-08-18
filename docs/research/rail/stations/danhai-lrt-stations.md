@@ -483,6 +483,105 @@ content; they are not redistributed to individual stations.
 The six pages now have sourced prose. Their remaining station-level gaps stay
 TBC rather than being filled from the corridor records.
 
+## Station-prose deepening: V27–V28 — 18 August 2026
+
+### Audit and source expansion
+
+The pre-edit audit found zero body words for V27 and V28. The prior search
+record covered their NTMC station pages, the DORTS Blue Sea route and station
+tables, the NTMC route-stamp page and the NTMC public-art page. This pass
+fetched additional full DORTS progress, bridge, cultural-landscape,
+public-art-programme and transfer-integration pages. A cache miss in the web
+reader was checked by fetching the complete HTML directly; no search-result
+snippet was used for publication.
+
+### What is established
+
+- DORTS's December 2019 progress article identifies V26, V27 and V28 and says
+  all three Blue Sea Phase 1 station structures were complete. It dates track
+  closure to 11 November 2019 and says overhead-line installation, power
+  delivery and testing followed.
+  Source: [DORTS Blue Sea track-closure progress](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pRG2lkGQmb5z?page=307),
+  PRIMARY, High confidence. The page says: 「淡水漁人碼頭站(V26)、沙崙站(V27)至台北海洋大學站(V28)」,
+  「各車站主體結構皆已完成」 and 「108年11月11日完成合龍作業」.
+- DORTS's February 2020 Blue Sea progress article describes the three-station
+  Phase 1, places the Blue Sea Bridge between V28 and V27 across the Company
+  Field Creek estuary, describes its long-span landscape-bridge form and says
+  it protects Qing–French War archaeological remains.
+  Source: [DORTS Blue Sea Bridge progress](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/0g4d68qAm5Db?page=310),
+  PRIMARY, High confidence. The page says: 「全線共3站」, 「位於台北海洋大學站與沙崙站間」,
+  「橫跨淡水公司田溪出海口」 and 「保護清法遺跡」.
+- DORTS's June 2021 cultural-landscape article records the Wanggailou
+  Lighthouse ruins as about a 13-minute walk from V27 and describes the
+  surrounding Blue Sea archaeological context.
+  Source: [DORTS Wanggailou Lighthouse context](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQ4YEdNgE),
+  PRIMARY, High confidence. The page says: 「到V27沙崙站步行13分鐘」 and identifies
+  「望高樓燈塔遺址」.
+- DORTS's June 2017 public-art overview distinguishes the two Phase 1 art
+  programmes: Green Mountain's single commissioned Jimmy Liao project across
+  11 stations, and Blue Sea Phase 1's three-station open curator selection
+  combined with local Tamsui artists. This pass records only that programme
+  scope and does not describe the copyrighted works.
+  Source: [DORTS Danhai public-art programme](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJrpKdAv6),
+  PRIMARY, High confidence. The page says: 「綠山線全線11座候車站進行整體規劃，採委託創作方式」 and
+  「藍海線一期三座車站則規劃公開徵選策展人結合淡水地區在地藝術家」.
+- DORTS's January 2019 integration article records planned routes 880 and Red
+  23 running around Binhai Road and Shalun Road and connecting with Binhai
+  Shalun Station, alongside planned pedestrian, bicycle and transfer-parking
+  links. This is a dated planning record, not a present-day headway claim.
+  Source: [DORTS Danhai walking and bus integration](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/R9Ndyygyd0zL),
+  PRIMARY, High confidence. The page says: 「880及紅23繞駛濱海路、沙崙路，與輕軌濱海沙崙站相接」.
+
+### Station-specific application
+
+V27 uses the completed-structure and track-closure milestones, bridge and
+archaeological context, Wanggailou landmark and dated feeder-planning record.
+V28 uses the same dated track milestone, its explicit relationship to the
+Blue Sea Bridge approach, the Binhai Road construction context from the V26
+progress page, and the Blue Sea art-programme scope. Both pages retain the
+combined Phase 1 contract boundary rather than inventing a station allocation.
+
+### Conflicts and dated distinctions
+
+1. The December 2019 article reports completed station structures and track
+   closure, while the February 2020 article reports the bridge and the
+   September 2020 article records preliminary inspection. These are dated
+   construction and acceptance stages, not competing completion values.
+2. The Blue Sea public-art overview distinguishes its three-station
+   curator/local-artist programme from Green Mountain's 11-station Jimmy Liao
+   commission. Both scopes are published; neither is substituted for the
+   other, and no artwork content is reproduced.
+3. The existing V28 position conflict remains: the current NTMC table and the
+   DORTS Blue Sea station table publish different intersection descriptions.
+   Both values remain in the global conflicts section; this prose uses the
+   dated construction pages for corridor context rather than silently choosing
+   a new location value.
+
+### Checked and failed for V27–V28
+
+- **Station-only contract package, contractor split, final account and value**
+  — the full New Taipei award, signing, progress and quality pages expose the
+  combined Phase 1 scope but not a V27 or V28 station allocation. Checked 18
+  August 2026.
+- **Station-specific architect, final materials schedule and structure
+  dimensions** — the full progress pages establish structure-complete and
+  track milestones, but no architect attribution or station-specific final
+  materials schedule was found. Checked 18 August 2026.
+- **Station-specific Blue Sea public-art title, artist allocation, year and
+  cost** — the full DORTS programme page establishes the three-station
+  curator/local-artist scope, but not a complete V27/V28 inventory. The
+  copyrighted artwork content was not described. Checked 18 August 2026.
+- **Dated construction-era names or renames** — no New Taipei gazette or
+  operator rename notice was found in the full pages checked for this batch.
+  Checked 18 August 2026.
+- **Current bus service, route variant and headway at V27/V28** — the full
+  integration article records planned 880 and Red 23 connections to V27, but
+  does not establish current TDX operating values for either station. Checked
+  18 August 2026.
+
+The two pages now have sourced prose. The remaining station-level gaps stay
+TBC rather than being filled from the dated corridor records.
+
 ## Conflicts
 
 1. The DORTS Green Mountain route page gives the operating opening as 24
@@ -539,10 +638,11 @@ keeps the affected values as TBC.
 ## Sources
 
 The implementation source records in `lib/danhai-stations.ts` contain the
-complete metadata for the 44 unique primary sources used by the generated
+complete metadata for the 49 unique primary sources used by the generated
 pages: TDX, the NTMC station table and 14 NTMC station detail pages, seven
 additional NTMC pages, two DORTS route pages, two DORTS station tables, and the
 DORTS construction, inspection, planning-Q&A, shelter-design and quality
-articles. Each record includes the original-language title,
+articles, plus five Blue Sea progress, bridge, history, public-art and
+integration records. Each record includes the original-language title,
 publisher, URL, access date, language, primary kind and a note describing what
 it supports.

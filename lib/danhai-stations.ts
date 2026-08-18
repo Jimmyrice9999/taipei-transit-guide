@@ -331,6 +331,51 @@ const dortsLightRailQA = source(
   'The builder’s full technical Q&A explains the Green Mountain dedicated right of way and surface priority, identifies V26 as a potential land-development location to be considered with the Danjiang Bridge and Bali extension, and explains the open-platform approach as a response to limited station land and maintenance cost.',
 )
 
+const dortsBlueTrackClosure = source(
+  'dorts-danhai-blue-track-closure',
+  'Blue Sea Phase 1 track closure and station construction',
+  '前進藍海線！第一期軌道合龍作業完成囉！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/pRG2lkGQmb5z?page=307',
+  'The builder’s full December 2019 progress article identifies V26, V27 and V28, says the three Blue Sea Phase 1 station structures were complete, records track closure on 11 November 2019 and describes the next overhead-line and power steps before testing.',
+)
+
+const dortsBlueBridge = source(
+  'dorts-danhai-blue-bridge',
+  'Blue Sea Bridge and archaeological protection',
+  '第一期藍海線拚今年通車！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/0g4d68qAm5Db?page=310',
+  'The builder’s full February 2020 progress article describes the three-station Blue Sea Phase 1, the Blue Sea Bridge between V28 and V27 across the Company Field Creek estuary, its landscape-bridge form, and its role in protecting Qing–French War archaeological remains.',
+)
+
+const dortsBluePublicArtPlan = source(
+  'dorts-danhai-blue-public-art-plan',
+  'Blue Sea Phase 1 public-art planning',
+  '淡海輕軌的公共藝術',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/MJjdJrpKdAv6',
+  'The builder’s full June 2017 public-art overview distinguishes Green Mountain’s single 11-station commissioned Jimmy Liao project from Blue Sea Phase 1’s three-station open curator selection combined with local Tamsui artists; it is used for programme scope, not artwork content.',
+)
+
+const dortsBlueHistory = source(
+  'dorts-danhai-blue-history',
+  'Blue Sea Phase 1 archaeological and lighthouse context',
+  '望高樓燈塔遺址秘境！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQ4YEdNgE',
+  'The builder’s full June 2021 cultural-landscape article records the Wanggailou Lighthouse ruins as about a 13-minute walk from V27 and describes the Blue Sea archaeological context; it is used for corridor landmark context, not as a station architecture record.',
+)
+
+const dortsDanHaiFeederPlanning = source(
+  'dorts-danhai-feeder-planning',
+  'Danhai LRT walking and bus integration planning',
+  '轉乘更便利、步行也安全！攜手迎接淡水新交通！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/R9Ndyygyd0zL',
+  'The builder’s full January 2019 integration article records the planned 880 and Red 23 bus connection to Binhai Shalun Station, pedestrian and bicycle links, and planned station-area transfer infrastructure.',
+)
+
 const commonFacilities = 'NTMC publishes a passenger enquiry point and accessible ticket machine at light-rail stations; the operator says no lockers are provided on the light-rail system. Station-specific lift/ramp details: TBC.'
 const tbc = 'TBC'
 
@@ -485,7 +530,7 @@ const vData: Record<string, VData> = {
   },
 }
 
-const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ntpcTender, ntpcContract, dortsRouteRights, dortsHongshulinGrade, dortsHongshulinSlope, dortsHongshulinTransfer, dortsV05V06Progress, dortsFinalGreenStations, dortsQuality, dortsV07V08Progress, dortsV09V11Progress, dortsV11Structure, dortsV07Inspection, dortsBlueV26Progress, dortsBlueV26Inspection, dortsLightRailQA, ...Object.values(operatorStations)]
+const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ntpcTender, ntpcContract, dortsRouteRights, dortsHongshulinGrade, dortsHongshulinSlope, dortsHongshulinTransfer, dortsV05V06Progress, dortsFinalGreenStations, dortsQuality, dortsV07V08Progress, dortsV09V11Progress, dortsV11Structure, dortsV07Inspection, dortsBlueV26Progress, dortsBlueV26Inspection, dortsLightRailQA, dortsBlueTrackClosure, dortsBlueBridge, dortsBluePublicArtPlan, dortsBlueHistory, dortsDanHaiFeederPlanning, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -524,6 +569,11 @@ function makeResearch(code: string, data: VData): StationResearch {
     dortsBlueV26Progress.id,
     dortsBlueV26Inspection.id,
     dortsLightRailQA.id,
+    dortsBlueTrackClosure.id,
+    dortsBlueBridge.id,
+    dortsBluePublicArtPlan.id,
+    dortsBlueHistory.id,
+    dortsDanHaiFeederPlanning.id,
   ].filter((id): id is string => Boolean(id))
   return {
     sources: uniqueSources(sourceIds),
@@ -679,6 +729,28 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'DORTS\'s planning Q&A identifies the Fisherman\'s Wharf area represented by V26 as a potential land-development location considered together with the Danjiang Bridge and a possible Bali extension.', source: dortsLightRailQA.id },
     { text: 'The same Q&A explains that limited land led most non-transfer stations to use simplified open platforms, a design approach intended to save space and construction or maintenance cost while preserving visual permeability.', source: dortsLightRailQA.id },
     { text: 'V26 was part of the first-phase turnkey award covering the Green Mountain section, the B06–B08 Blue Sea section, fourteen stations and one depot; the published contract value is therefore a combined-corridor value, not a V26 station price.', source: ntpcTender.id },
+  ],
+  V27: [
+    { text: 'DORTS’s December 2019 Blue Sea progress article identifies V27 as one of the three Phase 1 stations and says the station structures were complete while the line’s track work reached its 11 November 2019 closure milestone.', source: dortsBlueTrackClosure.id },
+    { text: 'The same dated record places the project next at the overhead-line and power stage before testing, so “structure complete” and “ready for service” are separate milestones rather than interchangeable descriptions.', source: dortsBlueTrackClosure.id },
+    { text: 'A DORTS project article places the Blue Sea Bridge between V28 and V27 across the Company Field Creek estuary and describes it as a long-span landscape bridge built into the Blue Sea Phase 1 alignment.', source: dortsBlueBridge.id },
+    { text: 'The bridge also has an archaeological function: DORTS says the Blue Sea alignment crossed the area of the Qing–French War battlefield remains and that the bridge form was used to protect those remains.', source: dortsBlueBridge.id },
+    { text: 'A later DORTS cultural-landscape article identifies the Wanggailou Lighthouse ruins as a destination about a 13-minute walk from V27, giving the station a documented relationship with a historic estuary landmark.', source: dortsBlueHistory.id },
+    { text: 'New Taipei’s integration planning records routes 880 and Red 23 as planned bus links that loop along Binhai Road and Shalun Road and connect with Binhai Shalun Station; this is a dated feeder-planning record, not a present-day frequency claim.', source: dortsDanHaiFeederPlanning.id },
+    { text: 'The public-art overview distinguishes the three Blue Sea Phase 1 stations from Green Mountain’s single 11-station Jimmy Liao commission: it records an open curator selection combined with local Tamsui artists, without requiring a description of the copyrighted works themselves.', source: dortsBluePublicArtPlan.id },
+    { text: 'V27 was delivered inside the Phase 1 turnkey award covering Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot; the published NT$11,512,800,000 value is a combined-program value, not a V27 price.', source: ntpcTender.id },
+    { text: 'The quality-control article records plan review, incoming-material sampling, contractor self-inspection, supervision hold points and owner or project-management spot checks, while the checked primary pages do not publish a V27-only final account or contract allocation.', source: dortsQuality.id },
+  ],
+  V28: [
+    { text: 'DORTS’s December 2019 progress article identifies V28 as the Taipei University of Marine Technology station and says the three Blue Sea Phase 1 station structures were complete when the track was closed into one continuous alignment.', source: dortsBlueTrackClosure.id },
+    { text: 'That report dates the track closure to 11 November 2019 and describes overhead-line installation and power delivery as the next steps before train testing, preserving the construction sequence instead of treating structural completion as opening.', source: dortsBlueTrackClosure.id },
+    { text: 'The builder’s Blue Sea progress record places V28 on Binhai Road and describes rail-track layout and permanent water-pipeline relocation there, alongside V26 ancillary-facility work and the bridge works between V28 and V27.', source: dortsBlueV26Progress.id },
+    { text: 'DORTS describes the Blue Sea Bridge between V28 and V27 as a long-span landscape bridge across the Company Field Creek estuary, so V28’s approach is part of a distinctive bridge-and-station engineering sequence.', source: dortsBlueBridge.id },
+    { text: 'The same full page says the bridge was selected to protect archaeological remains associated with the Qing–French War battlefield, making heritage protection a stated alignment constraint rather than an inferred station theme.', source: dortsBlueBridge.id },
+    { text: 'DORTS’s public-art overview says Blue Sea Phase 1’s three stations were planned through an open curator selection combined with local Tamsui artists, while Green Mountain used a separate line-wide commissioned Jimmy Liao programme.', source: dortsBluePublicArtPlan.id },
+    { text: 'That overview establishes the procurement scope of the art programme but not a V28-specific title, artist allocation, year or cost, so those station-level fields remain TBC.', source: dortsBluePublicArtPlan.id },
+    { text: 'V28 was included in the Phase 1 turnkey award to China Steel and Union Steel Construction, whose published scope combined Green Mountain G01–G08 with Blue Sea B06–B08, fourteen stations and one depot.', source: ntpcContract.id },
+    { text: 'The project quality record describes five control layers from design review through owner spot checks; the checked primary pages do not publish a V28-only contractor split, final account or dated rename notice.', source: dortsQuality.id },
   ],
 }
 
