@@ -319,6 +319,26 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'The route table calls this row Y17/O17, while current operating records call it Y18/O; the difference is preserved as source-era engineering versus current operating identification.', source: dortsPhase1.id },
     { text: 'The line-wide art record documents commissioned creation and a NT$16,000,000 design fee, but the checked primary pages do not publish a Y18-only art allocation, final civil account, contract date or contract value, so those fields remain TBC.', source: artLine.id },
   ],
+  Y19: [
+    { text: 'The architecture book assigns the source-era Y18–Y20 corridor to CF660B’s CF661B package and names 遠揚營造 as contractor, giving Y19 a section-level construction record rather than a station-only price.', source: book191.id },
+    { text: 'The construction-management volume instead describes CF660B as the source-era Y17–Y19 package, including elevated works, utilities, environmental control, lifts and escalators, the Sihyuan overpass extension and beautification, operational additions and extra sound barriers.', source: book15.id },
+    { text: 'The two official records therefore give different source-era endpoints for CF660B—Y18–Y20 in the architecture-package table and Y17–Y19 in the construction-management scope—and both values remain published.', source: book191.id },
+    { text: 'The architecture book records approximately 1,155 metres from Y18 to Y19 and approximately 1,240 metres from Y19 to Y20, which are interstation alignment intervals rather than dimensions of Y19’s station building.', source: book194.id },
+    { text: 'DORTS places the source-era Y15–Y19 design package through Banqiao New Station, Xinpu, Touqianzhuang, the Xinzhuang sub-centre and New Taipei Industrial Park, describing that corridor as a rapidly developing urban and transport setting.', source: dortsArchitecture.id },
+    { text: 'The “心樂活” design brief uses circular elements in interior columns, ceiling recesses and seating and assigns station-colour blocks by Emmanuelle Moureaux to vertical-circulation walls.', source: dortsArchitecture.id },
+    { text: 'The route table calls this station Y18, while current operating records call it Y19; the engineering label is retained as historical contract context rather than interpreted as a rename.', source: dortsPhase1.id },
+    { text: 'The line-wide public-art record documents commissioned creation and a NT$16,000,000 design fee, but the checked primary pages do not publish a Y19-only art allocation, civil final account, contract date or contract value, so those fields remain TBC.', source: artLine.id },
+  ],
+  Y20: [
+    { text: 'The architecture book assigns the source-era Y18–Y20 corridor to CF660B’s CF661B package and names 遠揚營造 as contractor, covering the construction section that reaches the first-phase terminus.', source: book191.id },
+    { text: 'The construction-management volume describes CF660B instead as the source-era Y17–Y19 package, including elevated works, utilities, environmental control, lifts and escalators, the Sihyuan overpass extension and beautification, operational additions and added sound barriers.', source: book15.id },
+    { text: 'Those official descriptions conflict on CF660B’s source-era endpoints—Y18–Y20 in the architecture book versus Y17–Y19 in the construction-management book—and the page does not explain the difference.', source: book191.id },
+    { text: 'The architecture book records approximately 1,240 metres from Y19 to Y20, an interstation alignment interval rather than a measurement of the terminal station structure.', source: book194.id },
+    { text: 'DORTS’s architecture record places the source-era Y15–Y19 package through the New Taipei Industrial Park and other rapidly developing urban districts, and assigns the corridor the “心樂活” design concept.', source: dortsArchitecture.id },
+    { text: 'That concept uses circular elements in interior columns, ceiling recesses and seating, while the vertical-circulation walls receive station-colour blocks by Emmanuelle Moureaux.', source: dortsArchitecture.id },
+    { text: 'The route table calls this row Y19/A3, while current operating records call it Y20/A3; the station-number difference is retained as an engineering-versus-operating identifier conflict.', source: dortsPhase1.id },
+    { text: 'The line-wide public-art record documents commissioned creation and a NT$16,000,000 design fee, but the checked primary pages do not publish a Y20-only art allocation, civil final account, contract date or contract value, so those fields remain TBC.', source: artLine.id },
+  ],
 }
 
 function makeResearch(code: string, data: YData): StationResearch {

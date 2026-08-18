@@ -9162,3 +9162,40 @@ this batch. No station colour-prefix audit applies. Next: audit BL13–BL18.
 
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
+
+# Run 31 — Part 1 Circular Y19–Y20, 18 August 2026
+
+Deepened the final two Circular Line station pages after the pre-action audit
+found both empty. Final body-prose counts: Y19 238 and Y20 218; batch total
+456 words. No facts/specs were restated as prose, and this short final batch
+closes the Circular Line station deepening.
+
+Sourced: CF660B/CF661B and 遠揚營造; the p43 CF660B source-era scope and its
+overpass/utility/noise-barrier work; Y18–Y20 interstation distances; DF113
+urban-corridor design context; the line-wide commissioned-creation record and
+NT$16,000,000 design fee; and the current-versus-engineering identifier rows.
+Primary URLs fetched in full:
+
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page43.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8
+- https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789
+- https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576
+
+Conflicts published: p191’s CF660B/CF661B source-era Y18–Y20 scope conflicts
+with p43’s source-era Y17–Y19 scope; the route table’s Y18/Y19 engineering
+identifiers remain beside current Y19/Y20; and the line-wide art fee is not
+treated as a station-only amount. TBC: Y19–Y20 station-only civil accounts,
+award dates/values, rename gazettes, art allocations and complete fare-boundary
+modes.
+
+Contradicted the corpus: the earlier zero-word audit for Y19 and Y20 was
+superseded by full DORTS contract, technical-book, architecture and art pages.
+No colour-prefix audit applies.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary);
+fresh `npm run verify` clean (519 pages, no missing glyphs, links or a11y
+errors, 185/185 unit tests, research/claims/geometry/CVD clean); explicit
+`npm test` clean; `git diff --check` clean. Next: report Circular complete and
+continue Part 1 with the next line in the plan, Yellow Y01–Y06.
