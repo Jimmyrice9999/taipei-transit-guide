@@ -484,7 +484,7 @@ const DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS: Source = {
   snapshotAlt: '',
   kind: 'primary',
   lang: 'zh-Hant',
-  note: 'The full page lists the Neihu station design-topic summary, records the executed-artwork selection methods, explains the later donated Gangqian work, and states how DORTS handled selection, material subsidy and implementation. The original-language paragraphs beginning 各站公共藝術之設置地點及徵選方式 and 港墘站之作品為捐贈 were checked on the linked page.',
+  note: 'The full page lists the Neihu station design-topic summary, records the executed-artwork selection methods, explains that the original wall-art installations at Gangqian and Huzhou were cancelled after design changes because the walls were incomplete, explains the later donated Gangqian work, and states how DORTS handled selection, material subsidy and implementation. The original-language paragraphs beginning 各站公共藝術之設置地點及徵選方式, 原擬於文德站、港墘站及葫洲站 and 港墘站之作品為捐贈 were checked on the linked page.',
 }
 
 const DORTS_WENHU_CB420_AIRPORT_TUNNEL: Source = {
@@ -543,6 +543,48 @@ const DORTS_WENHU_CB423_STATIONS: Source = {
   note: 'The full technical volume gives B2 as the first Neihu elevated station, gives the B2–B5 station orientations, platform forms and dimensions, the Xihu market and parking-site interface, and the CB423 bridge methods and spans. The original-language entries beginning 一、B2 劍南路站 and 二、B3 西湖站 were checked on the linked page.',
 }
 
+const DORTS_WENHU_CB424_STATIONS: Source = {
+  id: 'dorts-wenhu-cb424-stations',
+  title: 'CB424 station structures and sites',
+  titleOriginal: '捷運高架橋梁結構設計與施工',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical volume assigns B6–B9 and their elevated bridge to CB424 and gives B6 station’s Chenggong Road/Jinlong Road site, side-platform orientation, body dimensions and platform length. The original-language table beginning CB424施工標工程計有B6、B7、B8、B9站 were checked on the linked page.',
+}
+
+const DORTS_WENHU_CB424_STATIONS_LATE: Source = {
+  id: 'dorts-wenhu-cb424-stations-late',
+  title: 'CB424 and CB425 station structures and sites',
+  titleOriginal: '捷運高架橋梁結構設計與施工',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page24.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical volume gives B7, B8 and B9 station sites, orientations, platform forms and dimensions, describes the approximately 4 km CB424 bridge, and begins the CB425 records for B10 and B11. The original-language entries beginning B7大湖公園站 and B10南港軟體園區站 were checked on the linked page.',
+}
+
+const DORTS_WENHU_CB425_STATIONS: Source = {
+  id: 'dorts-wenhu-cb425-stations',
+  title: 'CB425 Nangang station structures and viaduct',
+  titleOriginal: '捷運高架橋梁結構設計與施工',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page25.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical volume completes the B11 record with its emergency exit, underground mechanical and passage levels, BL18 and exhibition-centre walkway connections, body dimensions and platform length, and describes the approximately 1.9 km CB425 bridge and its crossings. The original-language paragraphs beginning B11南港展覽館站 and CB425標高架橋工程 were checked on the linked page.',
+}
+
 const DORTS_WENHU_NEIHU_CONTEXT: Source = {
   id: 'dorts-wenhu-neihu-context',
   title: 'Neihu Line environmental and human context',
@@ -568,7 +610,7 @@ const DORTS_WENHU_NEIHU_DISTRICT: Source = {
   snapshotAlt: '',
   kind: 'primary',
   lang: 'zh-Hant',
-  note: 'The full architecture volume places B2–B5 in the residential–rural landscape zone, describes the Xihu-area reclaimed land beside the river, and distinguishes the later commercial-recreation and industrial-technology zones. The original-language heading beginning 住宅城鄉風貌 was checked on the linked page.',
+  note: 'The full architecture volume places B2–B5 in the residential–rural landscape zone, describes the Xihu-area reclaimed land beside the river, and distinguishes B6–B9 as a commercial-recreation zone and B10–B11 as an industrial-technology zone. The original-language headings beginning 住宅城鄉風貌, 商業休閒環境 and 工業科技景觀 were checked on the linked page.',
 }
 
 const DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES: Source = {
@@ -596,7 +638,7 @@ const DORTS_WENHU_NEIHU_THEMES: Source = {
   snapshotAlt: '',
   kind: 'primary',
   lang: 'zh-Hant',
-  note: 'The full architecture volume’s station-theme table records Jiannan Road’s mountain-ridge theme, Xihu’s butterfly theme, Gangqian’s flower-language theme, Wende’s bird-flight theme and their associated colours. The original-language table beginning 各車站設計主題及色彩 was checked on the linked page.',
+  note: 'The full architecture volume’s station-theme table records the B2–B11 themes and associated colours, including B6’s Market/wine red, B7’s Recreation/sapphire blue, B8’s Dance/purple, B9’s Music/blue-grey, B10’s Digital/silver-grey and B11’s Light-and-shadow/silver-white. The original-language table beginning 各車站設計主題及色彩 was checked on the linked page.',
 }
 
 const DORTS_WENHU_NEIHU_ART_INTEGRATION: Source = {
@@ -638,7 +680,7 @@ const DORTS_WENHU_NEIHU_SPECIAL_FORMS: Source = {
   snapshotAlt: '',
   kind: 'primary',
   lang: 'zh-Hant',
-  note: 'The full planning volume describes the Neihu elevated stations’ standard curved-column, metal-roof, glass-and-metal form and identifies Jiannan Road’s raised round arches, mountain-city gateway image and lantern-like night lighting. The original-language paragraphs beginning 內湖線 and 劍南路站 were checked on the linked page.',
+  note: 'The full planning volume describes the Neihu elevated stations’ standard curved-column, metal-roof, glass-and-metal form, identifies Dahu Park’s mast-and-sail form beside the park, and identifies Jiannan Road’s raised round arches, mountain-city gateway image and lantern-like night lighting. The original-language paragraphs beginning 內湖線, 大湖公園站 and 劍南路站 were checked on the linked page.',
 }
 
 const DORTS_WENHU_JIANNAN_LANDSCAPE: Source = {
@@ -2130,33 +2172,258 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
       },
     ],
   },
-  BR19: { structure: 'elevated', engineering: 'B6', exits: 2 },
+  BR19: {
+    structure: 'elevated',
+    engineering: 'B6',
+    exits: 2,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
+    prose: [
+      {
+        text: 'The current DORTS project table maps Neihu to engineering station B6, while the CB424 technical record assigns B6–B9 and their elevated bridge to one construction package.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The B6 site is southwest of the 30-metre Chenggong Road and 20-metre Jinlong Road intersection, beside the parking area of De’an Department Store.',
+        source: DORTS_WENHU_CB424_STATIONS.id,
+      },
+      {
+        text: 'The technical drawing describes a southwest–northeast elevated side platform, a 93-metre station body 20.3 metres wide, and an 83-metre platform.',
+        source: DORTS_WENHU_CB424_STATIONS.id,
+      },
+      {
+        text: 'DORTS places B6 through B9 in the corridor’s commercial-and-recreation zone along Chenggong Roads 4 and 5 and Kangning Roads 2 and 3.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'The same account describes the zone through the department store and other shops, Dahu Park’s recreational use, and the nearby incinerator and former third landfill rather than treating the elevated stations as interchangeable objects.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'B6’s station theme is Market, coloured wine red, with DORTS associating it with a lively and prosperous urban landscape.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The elevated-station design uses a shared vocabulary of glass, enamelled steel, semi-open edges and natural ventilation, allowing the structures to remain light while standing over existing roads.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'The line colour is reserved for platform-door and wayfinding applications, while the station colour is carried through selected columns, paving, wall panels, floors and doors.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'Because B6 is a side-platform station, it belongs to the group for which DORTS reviewed rainwater spilling from the platform edge onto metal cladding and specified flashing and maintenance instructions.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'The public-art chapter lists B6’s planning topic as Market, but the later executed-art list does not include a B6 work.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The full DORTS public-art table checked for this batch has no Neihu/BR19 row, so this page does not turn the planning topic into a claim that an artwork is installed.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The fetched CB424 record identifies the package and station dimensions but does not publish an individual station contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB424_STATIONS.id,
+      },
+    ],
+  },
   BR20: {
     structure: 'elevated',
     engineering: 'B7',
     exits: 2,
-    sources: [DORTS_WENHU_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS_LATE,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_SPECIAL_FORMS,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
     prose: [
       {
-        text: 'DORTS names Dahu Park among the Neihu section’s specially shaped stations, alongside Jiannan Road and Nangang Exhibition Center.',
-        source: DORTS_WENHU_ARCHITECTURE.id,
+        text: 'The current DORTS project table maps Dahu Park to engineering station B7, and the CB424 record places it in the B6–B9 station-and-viaduct package.',
+        source: DORTS_WENHU_PROJECT.id,
       },
       {
-        text: 'Its public artwork, Kite—Soaring in the Sky, follows the escalator’s movement and uses the glazed façade to connect the flying forms with Dahu Park’s mountains, water, and aquatic life.',
+        text: 'The station stands on the south side of Chenggong Road 4, east of Dahu Villa, with part of the site on Dahu Park land.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'Its east–west elevated side platform is recorded with a 93-metre station body 20.6 metres wide and an 83-metre platform.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'DORTS groups B7 with B6–B9 in the commercial-and-recreation section of the corridor and identifies Dahu Park as the area’s recreational landscape.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'The station-theme table calls B7 Recreation, specifically sport, gives it a sapphire-blue colour, and associates it with Dahu Park’s lake scenery.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The planning volume treats Dahu Park as a special station: its mast-and-sail form responds to the park and the wide green space beside it, with differences in roof curvature and height reinforcing the image.',
+        source: DORTS_WENHU_NEIHU_SPECIAL_FORMS.id,
+      },
+      {
+        text: 'It still belongs to the common elevated design family of curved columns, metal roofing and glass-and-metal side walls, with semi-open circulation used for light and ventilation.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'As a side-platform station, B7 was included in DORTS’s review of rainwater running down the metal cladding; the response added flashing and maintenance guidance rather than removing the whole overpass glazing system.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'Kite—Soaring in the Sky follows the escalator’s movement and uses the glazed façade to connect the flying forms with Dahu Park’s mountains, water and aquatic life.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The official art table records the work at the Exit 2 void and exterior wall, completed in December 2008 by Chuang Wen-yi through open selection, using acrylic and stainless steel at a listed cost of NT$2,500,000.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The public-art chapter likewise places Dahu Park in the executed open-selection group, distinguishing that record from the separate design-topic list.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The fetched CB424 pages identify the package and station form but do not name an individual contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
       },
     ],
   },
-  BR21: { structure: 'elevated', engineering: 'B8', exits: 2 },
+  BR21: {
+    structure: 'elevated',
+    engineering: 'B8',
+    exits: 2,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS_LATE,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
+    prose: [
+      {
+        text: 'The current DORTS project table maps Huzhou to engineering station B8, and the CB424 record places B8 in the same four-station package as B6, B7 and B9.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The technical record locates B8 east of Chenggong Road 5 on 25-metre Kangning Road, on transport land to the south.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'It describes a southeast–northwest elevated side platform, a 93-metre station body 20.3 metres wide and an 83-metre platform.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'DORTS places Huzhou in the commercial-and-recreation zone that follows Chenggong Roads 4 and 5 and Kangning Roads 2 and 3, a corridor described through shops, park use and surrounding infrastructure.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'B8’s station theme is Dance, coloured purple, and the architecture table associates it with a quieter urban landscape than the livelier market setting assigned to B6.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The station uses the Neihu elevated vocabulary of glass, enamelled steel, semi-open edges and natural ventilation, so its individual theme sits inside a shared structural language.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'As one of the side-platform stations, B8 was included in DORTS’s review of water staining at the platform edge and the resulting flashing and maintenance instructions.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'The public-art chapter lists Dance as B8’s design topic, but its implementation discussion says the original Huzhou wall artwork was cancelled because the wall was incomplete.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The full official art table checked for this batch has no Huzhou/BR21 row, so this page does not claim that a replacement artwork was installed.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The fetched CB424 material supplies the package, site and dimensions but does not publish an individual contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+    ],
+  },
   BR22: {
     structure: 'elevated',
     engineering: 'B9',
     exits: 3,
-    sources: [DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS_LATE,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
     prose: [
+      {
+        text: 'The current DORTS project table maps Donghu to engineering station B9, and the CB424 record includes B9 in the four-station elevated package covering B6–B9.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'B9 is on 25-metre Kangning Road 3, near Lane 245, on transport land to the northeast.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'The technical record describes a northeast–southwest elevated side platform, a 93-metre station body 20.6 metres wide and an 83-metre platform.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'DORTS treats B9 as part of the commercial-and-recreation corridor along Chenggong and Kangning Roads, where the broader account also records Dahu Park’s recreational role and nearby infrastructure.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'B9’s theme is Music, with a blue-grey station colour and a design reference to the Keelung River and sky.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The shared elevated-station design keeps circulation semi-open and uses glass, enamelled steel and natural ventilation to reduce the visual and structural heaviness of a station above the road.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'B9 is among the side-platform stations for which DORTS documented rainwater falling from the platform edge onto metal cladding and prescribed flashing and maintenance procedures.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
       {
         text: 'Lake Ripples at Exit 3 turns the wall into DORTS’s “lake city story”: wind and rain create overlapping ripples that stand for shared memory in a city with lakes.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The official art table records the work in March 2009 on the exterior wall at Exit 3, by Wu Shui-yi and Yang De-yi, using ceramic with celadon glaze through open selection at a listed cost of NT$2,300,000.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The public-art chapter’s executed list also records Donghu as an open-selection station, separate from the topic summary used to frame the line’s design themes.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The station-colour plan separates the brown line colour used in platform-door and sign systems from each station’s own colour treatment across selected finishes.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'The fetched CB424 record identifies the station package and dimensions but does not publish an individual contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
       },
     ],
     planned: [
@@ -2168,13 +2435,105 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
       },
     ],
   },
-  BR23: { structure: 'elevated', engineering: 'B10', exits: 2 },
+  BR23: {
+    structure: 'elevated',
+    engineering: 'B10',
+    exits: 2,
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS_LATE,
+      DORTS_WENHU_CB425_STATIONS,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
+    prose: [
+      {
+        text: 'The current DORTS project table maps Nangang Software Park to engineering station B10, and the CB425 record begins the station-and-viaduct package for B10 and B11.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The station was planned north of a 50-metre road and green boulevard in the Nangang Economic and Trade Park, on the site of the Taiwan Fertilizer Nangang factory.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'The technical record describes a north–south elevated side platform, two north and south entrances, a 93-metre station body 21.5 metres wide and an 83-metre platform.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'DORTS distinguishes B10 and B11 from B6–B9 as the industrial-and-technology landscape zone of the Nangang Economic and Trade Park, which it describes as important to Nangang’s development and urban economic potential.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'B10’s station theme is Digital, with a silver-grey colour tied to technological power and the surrounding landscape.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The common station vocabulary continues here through glass, enamelled steel, semi-open edges and natural ventilation, while the local design brief gives the technology-park setting a more specific identity.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'Because B10 uses side platforms, it is included in DORTS’s platform-edge review of rainwater, flashing and maintenance access; the island-platform exception applies to Xihu and Nangang Exhibition Center instead.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'The public-art chapter lists Digital as B10’s design topic, but its later executed-art list does not include B10.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The full DORTS art table checked for this batch has no Nangang Software Park/BR23 row, so no installed artwork is asserted here from the topic label alone.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The CB425 viaduct record describes the associated bridge work as approximately 1.9 kilometres, but the fetched pages do not publish an individual B10 contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB425_STATIONS.id,
+      },
+    ],
+  },
   BR24: {
     structure: 'elevated',
     engineering: 'B11',
     exits: 8,
-    sources: [DORTS_NANGANG_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_CB424_STATIONS_LATE,
+      DORTS_WENHU_CB425_STATIONS,
+      DORTS_NANGANG_ARCHITECTURE,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_PUBLIC_ART,
+    ],
     prose: [
+      {
+        text: 'The current DORTS project table maps Taipei Nangang Exhibition Center to engineering station B11, and the CB425 record identifies it as the southern station of the Nangang package.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The station sits on the north side of Nangang Road at the southern end of the Nangang Economic and Trade Park, across a 30-metre road from the park and beside commercial land.',
+        source: DORTS_WENHU_CB424_STATIONS_LATE.id,
+      },
+      {
+        text: 'It is recorded as an east–west elevated island-platform interchange station with east and west entrances; the station body is 128 metres long and 18.6 metres wide, with an 83-metre platform.',
+        source: DORTS_WENHU_CB425_STATIONS.id,
+      },
+      {
+        text: 'The technical record also describes a parallel stacked structural exchange with future BL18, one emergency exit, and an underground passage level connecting toward BL18 and the exhibition-centre underground walkway.',
+        source: DORTS_WENHU_CB425_STATIONS.id,
+      },
+      {
+        text: 'The associated CB425 viaduct is recorded at approximately 1.9 kilometres and crosses the Keelung River, the Zhongshan Expressway and Jingmao 1 Road.',
+        source: DORTS_WENHU_CB425_STATIONS.id,
+      },
+      {
+        text: 'DORTS places B11 in the industrial-and-technology landscape zone and describes the surrounding economic-and-trade park as important to Nangang’s development and urban economic potential.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
       {
         text: 'DORTS’s local design brief ties the station to Nangang Software Park, Nangang Economic and Trade Park, and Academia Sinica, setting the theme “digital space, e-station” to express the surrounding technology landscape.',
         source: DORTS_NANGANG_ARCHITECTURE.id,
@@ -2184,8 +2543,24 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
         source: DORTS_NANGANG_ARCHITECTURE.id,
       },
       {
+        text: 'The broader station-theme table names B11 Light and Shadow, uses silver-white, and links the treatment to technological feeling and the transparency of light.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'Unlike the eight side-platform stations, B11 is one of the two island-platform stations excluded from DORTS’s platform-edge water-stain problem.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
         text: 'The official art table treats Light Gaps, Glimpses, and River in the Sky as a three-work ensemble: entrance columns form a visual landmark, the wall interacts with moving passengers, and the platform skylight carries water, light, and motion.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'DORTS records the ensemble in October 2008 at the west-plaza columns, south outdoor pool and platform skylight, with ceramic panels, mosaic, stainless steel and painted acrylic glass, a listed cost of NT$5,999,868, and open selection.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The fetched CB425 pages identify the interchange and viaduct context but do not publish an individual station contractor, award date or final station-package value; those fields remain TBC.',
+        source: DORTS_WENHU_CB425_STATIONS.id,
       },
     ],
   },

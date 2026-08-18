@@ -659,6 +659,189 @@ that DORTS handled selection/valuation and implementation responsibilities.
   context, Bird Flight artwork, materials, fee and open-selection record are
   established. Contractor, award date and final package value are TBC.
 
+## Additional established claims — BR19–BR24
+
+### CB424 station package and B6–B9 sites
+
+**Source:** “CB424 station structures and sites” / `捷運高架橋梁結構設計與施工`
+— Taipei City Department of Rapid Transit Systems (`臺北市政府捷運工程局`),
+PRIMARY, High confidence because the full technical volume gives the station
+package, site descriptions and dimensions.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html
+
+Original-language text checked in full:
+
+> `CB424施工標工程計有B6、B7、B8、B9站等四站，以及高架橋工程。`
+
+> `B6站位於成功路30公尺與金龍路20公尺交叉口之西南側，鄰近德安百貨停車場。 ... 西南－東北向高架側式月臺 ... 車站主體長93公尺、寬20.3公尺，月臺長83公尺。`
+
+This establishes the CB424 grouping and the B6 site, orientation, platform form,
+body dimensions and platform length. The current DORTS project table maps the
+operating station Neihu to engineering label B6:
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+
+Original-language text checked in full:
+
+> `BR19 內湖 | B6`
+
+**Source:** “CB424 and CB425 station structures and sites” /
+`捷運高架橋梁結構設計與施工` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page24.html
+
+Original-language text checked in full:
+
+> `B7站位於成功路四段南側、大湖別墅東側，大湖公園範圍內。 ... 東西向高架側式月臺 ... 車站主體長93公尺、寬20.6公尺，月臺長83公尺。`
+
+> `B8站位於成功路五段東側、康寧路25公尺道路南側之交通用地。 ... 東南－西北向高架側式月臺 ... 車站主體長93公尺、寬20.3公尺，月臺長83公尺。`
+
+> `B9站位於康寧路三段25公尺道路、245巷東北側之交通用地。 ... 東北－西南向高架側式月臺 ... 車站主體長93公尺、寬20.6公尺，月臺長83公尺。`
+
+> `CB425標工程範圍包括B10、B11車站及高架橋工程。`
+
+This establishes the three remaining CB424 site records and dimensions and
+identifies the transition to the CB425 B10–B11 package.
+
+**Source:** “CB425 Nangang station structures and viaduct” /
+`捷運高架橋梁結構設計與施工` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page25.html
+
+Original-language text checked in full:
+
+> `B11南港展覽館站位於南港經貿園區南端、南港路北側，與園區隔30公尺道路相對，車站西北側為商業用地。 ... 東西向高架島式月臺，為轉乘車站。`
+
+> `車站主體長128公尺、寬18.6公尺，月臺長83公尺。 ... 地下通道層可通往BL18站及展覽館地下通道。`
+
+> `CB425標高架橋工程長約1,900公尺， ... 跨越基隆河、中山高速公路及經貿一路。`
+
+This establishes B11’s site, interchange/platform form, underground passage
+connections, dimensions and the associated bridge crossings. The pages do not
+name an individual station contractor, award date or final package account.
+
+### Corridor zones, themes and platform maintenance
+
+**Source:** “Neihu Line corridor design zones” / `捷運高架車站建築造型設計` —
+DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page91.html
+
+Original-language text checked in full:
+
+> `B6至B9站 ... 為商業休閒環境；B10、B11站 ... 為工業科技景觀。`
+
+> `成功路四、五段及康寧路二、三段 ... 沿線有德安百貨及商店，大湖公園休閒遊憩使用 ...`
+
+> `南港經貿園區 ... 對南港地區之發展扮演重要角色，未來都市經濟發展潛力甚大。`
+
+**Source:** “Neihu Line station themes and colours” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page95.html
+
+Original-language text checked in full:
+
+> `B6 內湖 市集 酒紅色 熱鬧繁華的都市景觀；B7 大湖公園 休閒（運動） 寶藍色 大湖公園湖泊景色；B8 葫洲 舞蹈 紫色 較為寧靜的都市景觀；B9 東湖 音樂 藍灰色 基隆河、天空；B10 南港軟體園區 數位 銀灰色 科技力量、景觀；B11 南港展覽館 光影 銀白色 科技感、光的穿透性。`
+
+**Source:** “Neihu Line platform-edge design review” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page131.html
+
+Original-language text checked in full:
+
+> `除了西湖站及南港展覽館站2座島式月臺車站無此問題外，其他8座側式月臺車站 ... 均須配合修正。`
+
+> `雨水由月臺上方欄杆滴落至金屬外牆板 ... 加設滴水片 ...`
+
+These sources establish the B6–B11 corridor distinction, station themes and
+colours, and the side-platform maintenance issue. B6–B10 are in the eight-
+station side-platform group; B11 is one of the two island-platform exceptions.
+
+### Dahu Park form and public art
+
+**Source:** “Neihu Line station forms and Jiannan Road landmark” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+
+Original-language text checked in full:
+
+> `大湖公園站因鄰近公園及大面積綠地，故以船桅及船帆為造型意象，屋頂曲線及高度亦有所變化。`
+
+This establishes Dahu Park’s special mast-and-sail form and its reason.
+
+**Source:** DORTS public-art table, `捷運公共藝術` — DORTS, PRIMARY, High
+confidence because the full official table was read rather than inferred from
+the architecture topic list.
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=E45C77C5F722B310
+
+Original-language rows checked in full:
+
+> `大湖公園 ... 風箏-悠游天際 ... 莊文毅 ... 壓克力、不鏽鋼 ... 2,500,000 ... 公開徵選`
+
+> `東湖 ... 湖波盪漾 ... 吳水沂、楊德義 ... 陶瓷、青瓷釉 ... 2,300,000 ... 公開徵選`
+
+> `南港展覽館 ... 光隙、掠影、空中之河 ... 莊普、陳慧嶠、賴純純（義春實業有限公司） ... 陶瓷版、馬賽克、不鏽鋼、彩繪壓克力玻璃 ... 5,999,868 ... 公開徵選`
+
+The rows establish Dahu Park’s Exit 2 location, December 2008 date, artist,
+materials, selection and listed cost; Donghu’s Exit 3 location, March 2009
+date, artists, materials, selection and listed cost; and Nangang Exhibition
+Center’s three-work ensemble, October 2008 date, locations, authors, materials,
+selection and listed cost.
+
+**Source:** “Neihu Line public-art selection and implementation” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page257.html
+
+Original-language text checked in full:
+
+> `1. 松山機場站：飛翔的故事 2. 大直站：山水 3. 劍南路站：湖光山色 4. 西湖站：蝶舞 5. 港墘站：花語 6. 文德站：鳥飛 7. 內湖站：市集 8. 大湖公園站：休閒 9. 葫洲站：舞蹈 10. 東湖站：音樂 11. 南港軟體園區站：數位 12. 南港展覽館站：光影。`
+
+> `實際執行之公共藝術如下：1. 松山機場站－公開徵件 2. 劍南路站－公開徵件 3. 西湖站－邀請比件 4. 港墘站－捐贈 5. 文德站－公開徵件 6. 大湖公園站－公開徵件 7. 東湖站－公開徵件 8. 南港展覽館站－公開徵件。`
+
+> `原擬於文德站、港墘站及葫洲站皆留設牆面設置公共藝術，後因變更設計，港墘站及葫洲站原設置公共藝術之牆面皆已不完整，故取消公共藝術之設置。`
+
+The page distinguishes a planning-topic summary from the later executed-art
+list. For Huzhou it specifically records cancellation of the original wall
+work; for Neihu and Nangang Software Park the topic labels are not treated as
+proof of an installed work because the executed list and official table do not
+provide one.
+
+### Station-by-station disposition for the fourth batch
+
+- **BR19 Neihu:** Current/engineering code mapping, CB424 scope, De’an
+  Department Store site, B6 dimensions, commercial-recreation context, Market
+  theme, side-platform maintenance and the public-art topic/list distinction
+  are established. No installed artwork, individual contractor, award date or
+  final package value is established.
+- **BR20 Dahu Park:** CB424 scope, park-land site, B7 dimensions, Recreation
+  theme, mast-and-sail form, side-platform maintenance and the Kite—Soaring in
+  the Sky art record are established, including the official date, materials,
+  selection method and listed cost. Contractor, award date and final package
+  value remain TBC.
+- **BR21 Huzhou:** CB424 scope, B8 site and dimensions, Dance theme, side-
+  platform maintenance, and the cancellation of the original wall artwork are
+  established. No replacement installed artwork, individual contractor, award
+  date or final package value is established.
+- **BR22 Donghu:** CB424 scope, B9 site and dimensions, Music theme, side-
+  platform maintenance and the official Lake Ripples art record are established,
+  including its date, artists, materials, selection method and listed cost.
+  Contractor, award date and final package value remain TBC.
+- **BR23 Nangang Software Park:** CB425 scope, site, B10 dimensions,
+  industrial-technology context, Digital theme, side-platform maintenance and
+  the topic/list distinction are established. No installed artwork, individual
+  contractor, award date or final package value is established.
+- **BR24 Taipei Nangang Exhibition Center:** CB425 scope, site, interchange,
+  BL18/exhibition-centre passage, dimensions, bridge crossings, industrial-
+  technology context, Digital Space/e-station brief, Light-and-Shadow theme,
+  island-platform distinction and three-work public-art record are established.
+  Contractor, award date and final package value remain TBC.
+
 ## Conflicts
 
 1. **Tunnel wording and extent:** The current DORTS project record describes
@@ -688,6 +871,18 @@ that DORTS handled selection/valuation and implementation responsibilities.
    Xihu, Gangqian and Wende. The page does not say whether the Dazhi topic was
    cancelled, redesigned or only a planning label. The station page publishes
    the conflict and does not assert an installed Dazhi work.
+
+5. **Neihu-section public-art topic versus execution records:** The same DORTS
+   chapter’s topic summary lists B6 Market, B7 Recreation, B8 Dance, B9 Music,
+   B10 Digital and B11 Light and Shadow. Its later executed-art list includes
+   Dahu Park, Donghu and Nangang Exhibition Center, but omits B6 Neihu, B8
+   Huzhou and B10 Nangang Software Park; the page separately says the original
+   wall installations at Gangqian and Huzhou were cancelled after design
+   changes because those walls were incomplete. The full official art table
+   confirms rows for Dahu Park, Donghu and Nangang Exhibition Center, but no row
+   for Neihu, Huzhou or Nangang Software Park was found in the checked table. No
+   explanation is published for the B6 or B10 omissions, so the station pages
+   publish the conflict and do not assert installed art there.
 
 ## Checked and failed
 
@@ -738,6 +933,21 @@ that DORTS handled selection/valuation and implementation responsibilities.
   stop-ID joins are available in `data/tdx/bus/rail-stop-joins.json`, but no
   full PTO or ebus route page was fetched and attached to this batch. No feeder
   route assertion was published.
+- **Individual CB424/CB425 station contractors, award dates and final values** —
+  Checked 2026-08-18. The full CB424/CB425 technical pages and current DORTS
+  project table establish package scope, sites, station forms and dimensions,
+  but do not name an individual station contractor, award date or final civil/
+  architecture package value. Those fields remain TBC.
+- **Installed public art at BR19, BR21 and BR23** — Checked 2026-08-18. The
+  full DORTS public-art chapter and official table were read. The chapter gives
+  topic labels for Neihu, Huzhou and Nangang Software Park, but its executed
+  list omits them; it specifically records cancellation of Huzhou’s original
+  wall work, while the checked official table has no row for the three stations.
+  No installed artwork was asserted.
+- **BR19–BR24 station-specific feeder-bus prose** — Checked 2026-08-18. TDX
+  stop-ID joins are available in `data/tdx/bus/rail-stop-joins.json`, but no
+  full PTO or ebus route page was fetched and attached to this batch. No
+  feeder route assertion was published.
 
 ## Stated gaps
 
@@ -770,4 +980,13 @@ that DORTS handled selection/valuation and implementation responsibilities.
   same official chapter’s executed list omits it. A DORTS artwork completion
   record or station art register with Dazhi’s final status would settle it.
 - BR13–BR18 feeder-bus prose remains TBC pending full PTO or ebus route pages
+  joined by stop ID.
+- Individual BR19–BR24 station contractors, award dates and final package
+  values remain TBC pending a period DORTS award notice, completion certificate
+  or final account.
+- The public-art status of BR19, BR21 and BR23 remains unresolved. A DORTS
+  artwork completion record or complete station art register would settle
+  whether the topic labels became installed works; Huzhou additionally needs a
+  record of any replacement after the cancelled wall work.
+- BR19–BR24 feeder-bus prose remains TBC pending full PTO or ebus route pages
   joined by stop ID.

@@ -8296,3 +8296,86 @@ No colour-prefix audit applies to a station batch. After adding the batch log,
 the citation, research, build, font-subset and full verification gates will be
 rerun before commit. The claims test, claims baseline and checkers are not
 changed. The next batch is BR19–BR24, completing the Wenhu line.
+
+# Run 31 — Part 1 Wenhu station prose, BR19–BR24, 18 August 2026
+
+## Sourced
+
+This batch completed the Wenhu Line’s final six station pages. The resulting
+body-prose counts are BR19 304 words, BR20 309, BR21 251, BR22 299, BR23 262,
+and BR24 362, for 1,787 words total. Every station-prose sentence carries a
+primary source in the overlay.
+
+The full primary pages fetched and used were:
+
+- DORTS Wenhu project and current station table:
+  https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+- CB424 B6 station record and B6–B9 package scope:
+  https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html
+- CB424 B7–B9 and CB425 B10–B11 station records:
+  https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page24.html
+- CB425 B11 station, passage and viaduct record:
+  https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page25.html
+- Corridor zones and station themes/colours:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page91.html and
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page95.html
+- Platform-edge design review:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page131.html
+- Neihu elevated station forms:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+- Neihu public-art selection and implementation:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page257.html
+- DORTS public-art table:
+  https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=E45C77C5F722B310
+- Nangang Exhibition Center local design brief:
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2
+
+BR19 documents the CB424 B6 site beside De’an Department Store, the
+commercial-recreation corridor, Market theme, side-platform maintenance review
+and unresolved art-topic status. BR20 documents B7’s park-land site, dimensions,
+mast-and-sail form and the Kite—Soaring in the Sky record. BR21 documents B8’s
+site, Dance theme and the primary record that its original wall-art installation
+was cancelled after the wall became incomplete. BR22 documents B9’s site, Music
+theme, platform review and the Lake Ripples record. BR23 documents B10’s
+Nangang Economic and Trade Park setting, Digital theme and art-topic/list gap.
+BR24 documents B11’s interchange, BL18/exhibition-centre passage, viaduct
+crossings, island platform, technology-park brief and three-work art ensemble.
+
+## TBC
+
+The full CB424/CB425 technical pages do not identify individual station
+contractors, award dates or final station-package values. BR19, BR21 and BR23
+have no confirmed installed artwork in the checked official art table; the
+public-art chapter distinguishes their planning topics from its executed list.
+No feeder-bus prose was added: TDX stop-ID joins exist, but a full PTO or ebus
+route page was not fetched for this batch. No sourceable incident, rename or
+interchange walking-distance claim was added.
+
+## Contradicted the corpus
+
+The prior zero or thin BR19–BR24 overlays were superseded by the full CB424 and
+CB425 technical pages, DORTS architecture volume and official art records. The
+research lead’s station-theme labels were checked against the original page:
+the B8 theme is `葫洲站：舞蹈` (Huzhou), not `港墘站` (Gangqian). The public-art
+chapter’s exact cancellation sentence was also corrected to its full wording:
+the original Gangqian and Huzhou wall installations were cancelled after design
+changes because those walls were incomplete. No unverified appendix was
+promoted.
+
+## Conflicts found
+
+The DORTS public-art chapter gives a planning-topic list for B6–B11, but its
+executed-art list includes Dahu Park, Donghu and Nangang Exhibition Center and
+omits Neihu, Huzhou and Nangang Software Park; it separately records the
+cancellation of the original Gangqian and Huzhou wall installations. The full
+official art table contains rows for Dahu Park, Donghu and Nangang Exhibition
+Center but no row for the other three stations checked in this batch. The pages
+do not explain the B6 or B10 omissions, so no installed artwork was inferred.
+Construction-era B6–B11 labels remain separate from current BR19–BR24 codes.
+No numerical package, route-length or station-dimension conflict was hidden.
+
+No colour-prefix audit applies to a station batch. `npm run cite`,
+`npm run research`, the fresh build, font subset generation, the full test suite
+and `npm run verify` all passed after the final gate run. The claims test, claims
+baseline and checkers are unchanged. Wenhu is complete; the next line is the Red
+Line, beginning with the six-station R01–R06 batch.
