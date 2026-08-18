@@ -93,6 +93,136 @@ const dortsSpecialArchitecture = source(
   'The full engineering-book page documents Jiantan’s suspended roof, Beitou’s space truss and Tamsui’s reuse of the old TRA setting.',
 )
 
+const dortsInitialStationTypes = source(
+  'dorts-initial-network-station-types',
+  'Initial-network station types and shallow-cut stations',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html',
+  'The full engineering-book page defines underground station types and identifies Minquan W. Rd. as a shallow-cut station, explaining the relationship between platform depth, geology, alignment and construction cost. The original-language passage beginning 淺挖式車站係 was checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsInterchangePlanning = source(
+  'dorts-interchange-station-planning',
+  'Interchange-station planning in the Taipei Metro',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html',
+  'The full engineering-book page explains why interchange stations require special platform and concourse planning and lists Taipei Main, Zhongshan, Chiang Kai-Shek Memorial Hall and Minquan W. Rd. among the central interchanges. The original-language passages beginning 交會站是指 and 交會站的布設相當複雜 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsNonParallelInterchanges = source(
+  'dorts-nonparallel-interchange-planning',
+  'Non-parallel interchange planning',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html',
+  'The full engineering-book page classifies Taipei Main, Zhongshan and Minquan W. Rd. as non-parallel interchanges and says their passenger transfers use vertical circulation between different platform elevations. The original-language passages beginning 若二條路線軌道平面方向不同 and 此類車站其站內轉乘旅客的動線 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsInitialArchitecture = source(
+  'dorts-initial-network-architecture',
+  'Initial-network station architecture and individual variation',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html',
+  'The full engineering-book page describes the standardised functional base of early underground stations alongside the discretion left to design teams in themes, materials and colour, and names Chiang Kai-Shek Memorial Hall and Minquan W. Rd. as notable examples. The original-language passages beginning 初期路網各路線車站 and 中正紀念堂站、民權西路站 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsCksArchitecture = source(
+  'dorts-cks-station-architecture',
+  'Chiang Kai-Shek Memorial Hall station architectural theme',
+  '捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page26.html',
+  'The full engineering-book page identifies Chiang Kai-Shek Memorial Hall station’s blue-roof and white-wall treatment as a notable example of a station design derived from local context. The original-language passage beginning 中正紀念堂站之藍頂白牆 was checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsPublicArtSelection = source(
+  'dorts-initial-network-public-art-selection',
+  'Initial-network public-art station selection',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html',
+  'The full engineering-book page records the selection logic for early-network public art, including the geographic importance of NTU Hospital, the interchange status of Chiang Kai-Shek Memorial Hall and Taipei Main, and the visual-focus logic for placing works. The original-language passages beginning 基於時間、金錢及人力 and 新店線辦理之車站中 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsPublicArtMethods = source(
+  'dorts-initial-network-public-art-methods',
+  'Initial-network public-art funding and selection methods',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html',
+  'The full engineering-book page distinguishes open selection from invited comparison, records the Taipei Main public-art budget problem in the Nangang-line programme, and identifies Shuanglian and NTU Hospital as examples of the two selection methods. The original-language passages beginning 公共藝術設置之初 and 徵選方式 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsNariFlood = source(
+  'dorts-nari-typhoon-flood-path',
+  'Nari typhoon flood path through Taipei Metro',
+  '捷運土木工程實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page181.html',
+  'The full engineering-book page documents the September 2001 Nari typhoon flood path: water entered through the Taipei railway-station area, descended through connected stairs and escalators into the Tamsui Line levels, reached Chiang Kai-Shek Memorial Hall southward and stopped at Shuanglian northward. The original-language passages beginning 納莉颱風淹水檢討 and 洪水由臺鐵松山車站附近 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsZhongshanDesign = source(
+  'dorts-zhongshan-station-design',
+  'Zhongshan station design and the “Happy Transfer” theme',
+  '松山線各車站建築設計簡介',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html',
+  'The full technical-journal page describes Zhongshan’s railway-corridor urban context, the “Happy Transfer” design theme, bright everyday-street imagery and its integration with a joint-development building. The original-language passages beginning 中山站(G16/R14) and 本站之設計主題為「快樂轉運」 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsZhongshanJointDevelopment = source(
+  'dorts-zhongshan-joint-development',
+  'Zhongshan station joint-development public realm',
+  '臺北捷運土地開發案例解析（一）',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page104.html',
+  'The full land-development case records the Zhongshan joint-development site at the junction of four central districts, its transit-plaza and public-art greenbelt programme, and its light, greenery and wind design concept. The original-language passages beginning 中山站（捷二）用地範圍 and 於基地一樓設置捷運廣場 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsZhongshanArtDesign = source(
+  'dorts-zhongshan-art-integrated-design',
+  'Zhongshan station art-integrated design example',
+  '捷運技術 第50期',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html',
+  'The full technical-journal page names “Crystal Clear” (晶透) as a Zhongshan station example in a discussion of bringing public art and local humanities into station design. The original-language passage beginning 如中山站的晶透 was checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsZhongshanLinearPark = source(
+  'dorts-zhongshan-shuanglian-linear-park',
+  'Zhongshan–Shuanglian linear-park improvement',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page199.html',
+  'The full engineering-book page records the Heart Zhongshan linear-park improvement carried out from 2017 between Zhongshan and Shuanglian under Taipei’s City Museum programme. The original-language passage beginning 於106年起在淡水線捷運中山站及雙連站之間 was checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsMinquanDesign = source(
+  'dorts-minquan-west-road-station-design',
+  'Minquan W. Rd. station architectural design',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html',
+  'The full engineering-book page describes Minquan W. Rd.’s old-Taipei rear-station commercial context, its “Postmodern” theme, light steel-and-glass entrances, arch-shaped ventilation treatment, glass mosaics and enamel platform-wall graphics. The original-language passages beginning 民權西路站區域環境 and 車站的建築設計以該區域性特色 were checked on the linked page.',
+  '2026-08-18',
+)
+
 const dortsXinyiDesignOverview = source(
   'dorts-xinyi-dr148-design-overview',
   'Xinyi Line DR148 station design overview',
@@ -588,6 +718,21 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 1 and 5, plus south and north paid-concourse platform lifts; unpaid toilets near exits 2–4 and 5–7; parent/accessible toilets at the same locations; nursing room by the paid B2 north platform; baby changing; bicycle access open; enquiry points near exits 2–4 and 5–7.',
     landmarks: '中正紀念堂; 國家圖書館; 中央銀行; 市立大學附設小學', publicArt: tbc,
     engineeringHistory: tbc, interchange: { label: 'Songshan–Xindian Line; transfer mode: TBC', lineCode: 'G' },
+    proseSources: [dortsCksArchitecture, dortsInitialArchitecture, dortsInterchangePlanning, dortsPublicArtSelection, dortsNariFlood],
+    prose: [
+      { text: 'DORTS identifies Chiang Kai-Shek Memorial Hall station’s blue roof and white walls as a notable example of deriving a station design from its local setting.', source: dortsCksArchitecture.id },
+      { text: 'That description belongs to the early network’s broader architectural method: underground stations used a standard functional base, but design teams could vary themes, materials and colour to express individual places.', source: dortsInitialArchitecture.id },
+      { text: 'The same review says the early underground network concentrated on the relationship between entrances, ventilation structures and their surrounding streets rather than treating the buried station as an isolated object.', source: dortsInitialArchitecture.id },
+      { text: 'Chiang Kai-Shek Memorial Hall was also one of the central interchanges used by DORTS to explain why station planning must account for passengers moving between two routes.', source: dortsInterchangePlanning.id },
+      { text: 'DORTS describes interchange stations as places where platform and concourse arrangements must respond to route direction, platform form and the need to shorten transfer movements.', source: dortsInterchangePlanning.id },
+      { text: 'In its public-art planning history, the department lists Chiang Kai-Shek Memorial Hall as an interchange selected for its importance among the early-network stations considered for art.', source: dortsPublicArtSelection.id },
+      { text: 'The selection record says early works were normally placed at visual focal points that would not obstruct passenger movement or construction progress, including the vertical openings between concourse and platform levels.', source: dortsPublicArtSelection.id },
+      { text: 'That source establishes a planning decision for the station, but it does not supply an executed artwork title, artist, completion date or cost for the current station page; those fields remain TBC here.', source: dortsPublicArtSelection.id },
+      { text: 'The station’s engineering history is also tied to the network’s most serious flood event: DORTS records that Nari typhoon water entered through the Taipei railway-station area and descended into the Tamsui Line after the railway platform level was overtopped.', source: dortsNariFlood.id },
+      { text: 'The water moved down through stairs and escalators connected to the metro and then travelled southward to Chiang Kai-Shek Memorial Hall.', source: dortsNariFlood.id },
+      { text: 'The flood account therefore describes this station as the southern end of a documented inundation path from the Taipei rail complex, not merely as a station listed in a generic incident summary.', source: dortsNariFlood.id },
+      { text: 'The checked engineering pages do not identify a station-level civil contract, final account or construction incident beyond that network flood path, so those details remain TBC.', source: dortsInitialArchitecture.id },
+    ],
   },
   R09: {
     structure: 'underground', exits: 4, openingDate: '24 December 1998', openingSource: dortsRoute, structureSource: dortsRoute,
@@ -596,8 +741,21 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 1–3 and a north paid-concourse platform lift; unpaid toilets near exit 1; parent/accessible toilets at the same location; baby changing; bicycle access open; enquiry point near exits 3 and 4.',
     landmarks: '總統府; 臺大醫院舊館; 臺大醫院復健部; 國立台灣博物館', publicArt: '手之組曲 — 李光裕; copper and granite; November 1998.', publicArtSource: art.ntuHospital,
     engineeringHistory: tbc,
+    proseSources: [art.ntuHospital, dortsPublicArtSelection, dortsPublicArtMethods, dortsInitialArchitecture],
     prose: [
-      { text: 'DORTS frames “Hand Suite” as a humane reading of the metro journey and says it writes NTU Hospital station’s local history and humanities into the work’s landscape.', source: art.ntuHospital.id },
+      { text: 'DORTS treated NTU Hospital as a geographically important early-network station when it selected locations for public art, placing it in a different category from a station chosen only because it was a terminal or interchange.', source: dortsPublicArtSelection.id },
+      { text: 'The station’s work is “Hand Suite”, by Li Kuang-Yu, completed in November 1998 and installed at platform level through an invited comparison process.', source: art.ntuHospital.id },
+      { text: 'The department records a budget of NT$4,999,000 and describes the work as a meditation on the metro journey as a human life journey whose destination should be warm, calm and connected rather than lonely or anxious.', source: art.ntuHospital.id },
+      { text: 'Its central image is the hand as a carrier of human feeling, used to write the hospital station’s local history and humanities into the station landscape.', source: art.ntuHospital.id },
+      { text: 'The work is organised as three related pieces rather than one undifferentiated object: “A Hand Holding a Lotus”, “Hands Holding a Lotus” and “Little Park”.', source: art.ntuHospital.id },
+      { text: 'The first piece uses copper and granite and measures 150 by 194 by 396 centimetres; DORTS reads the hand holding a flower as a symbol of positive thought and the pursuit of light.', source: art.ntuHospital.id },
+      { text: 'The second uses copper and granite at 160 by 160 by 335 centimetres, with interlocking hands compared with the inseparable links between metro cars and with human beings living in mutual relation to the universe.', source: art.ntuHospital.id },
+      { text: 'The third is a copper seating work measuring 260 by 125 by 108 centimetres, turning the resting hand gesture into a small park in which passengers can sit and form their own interpretations.', source: art.ntuHospital.id },
+      { text: 'DORTS’s public-art manual identifies “Hand Suite” as an example of invited comparison, a method in which selected artists are asked to compete and the department chooses the strongest proposal.', source: dortsPublicArtMethods.id },
+      { text: 'The same manual says invited comparison can keep the field of candidates manageable and quality more predictable, but makes the nomination of suitable invitees difficult and can still produce an unsatisfactory field.', source: dortsPublicArtMethods.id },
+      { text: 'That procurement history matters because it distinguishes the hospital station’s artwork from Shuanglian’s open selection and from later projects where design and construction were bundled together.', source: dortsPublicArtMethods.id },
+      { text: 'The architecture review places this work within the early-network pattern of a standard functional underground framework that still allowed individual teams latitude in materials, colour and thematic expression.', source: dortsInitialArchitecture.id },
+      { text: 'The checked primary pages do not identify an individual station civil contractor, a final station account or a station-specific incident, so those parts of the record remain TBC.', source: dortsInitialArchitecture.id },
     ],
   },
   R10: {
@@ -607,6 +765,21 @@ const rData: Record<string, RData> = {
     facilities: 'R accessible lifts: B2 BL hall to B4 R platform south, B3 R hall to B4 R platform central, and ground M1/M2 to B3 R hall north; non-paid toilets by M1/M2 and paid BL/R toilets; parent/accessible toilets at those locations; nursing room published for BL; baby changing; bicycle access not open; enquiry points near M3, M7 and M8.',
     landmarks: '台鐵台北車站; 國父史蹟紀念館', publicArt: tbc,
     engineeringHistory: tbc, interchange: { label: 'Bannan Line; transfer mode: TBC', lineCode: 'BL' },
+    proseSources: [dortsInterchangePlanning, dortsNonParallelInterchanges, dortsPublicArtSelection, dortsPublicArtMethods, dortsNariFlood],
+    prose: [
+      { text: 'DORTS classifies Taipei Main as a central interchange and describes the transfer stations in this group as places where platform and concourse planning must absorb heavy passenger movement.', source: dortsInterchangePlanning.id },
+      { text: 'The station is also used in the department’s non-parallel-interchange explanation: the two route directions meet at different alignments, so passenger circulation must move vertically between different platform elevations.', source: dortsNonParallelInterchanges.id },
+      { text: 'This is a design problem of circulation and level changes, not evidence that the two services share a single platform or a single paid-area arrangement; the checked pages do not settle the latter.', source: dortsNonParallelInterchanges.id },
+      { text: 'In the public-art history, DORTS identifies Taipei Main as an interchange selected for the separate Nangang-line programme because it was a major transfer point.', source: dortsPublicArtSelection.id },
+      { text: 'The same account describes a rare four-level void above the Nangang-line platform tracks, where a work could become a visual focus for passengers transferring from the Tamsui Line.', source: dortsPublicArtSelection.id },
+      { text: 'The funding record sets a NT$5 million ceiling for Taipei Main in that programme, but says the first prize was not awarded and that the source of funds and responsibility were unusually complicated.', source: dortsPublicArtMethods.id },
+      { text: 'Those figures and the unawarded-prize statement belong to the Nangang-line public-art programme; they do not prove that the current Tamsui-line station has no artwork, so the station-level art field remains TBC.', source: dortsPublicArtMethods.id },
+      { text: 'Taipei Main is also the entry point of the clearest documented flood path affecting the Red-line city-centre stations.', source: dortsNariFlood.id },
+      { text: 'During Typhoon Nari in September 2001, water entered through the railway-station area, rose above the railway platform and then descended through connected stairs and escalators into the Tamsui Line’s underground levels.', source: dortsNariFlood.id },
+      { text: 'DORTS records the water path moving south to Chiang Kai-Shek Memorial Hall and north through the control centre and Zhongshan before stopping at Shuanglian.', source: dortsNariFlood.id },
+      { text: 'The flood record therefore describes Taipei Main as both a rail–metro interface and the upstream hydraulic origin of a system incident, while the checked pages do not provide a station-level civil-contract history.', source: dortsNariFlood.id },
+      { text: 'No station-specific award value, final account, rename gazette or paid-area walking distance was found in the fetched primary pages, so those details remain TBC.', source: dortsInterchangePlanning.id },
+    ],
   },
   R11: {
     structure: 'underground', exits: 6, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsRoute,
@@ -615,6 +788,23 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 4–6 and a paid-concourse platform lift; unpaid toilets near exit 6 and the Zhongshan Arts Corridor; parent/accessible toilets at the same locations; nursing room published for the G platform; baby changing; bicycle access open; enquiry points near exits 1 and 4–6.',
     landmarks: '中山藝術廊道', publicArt: tbc,
     engineeringHistory: tbc, interchange: { label: 'Songshan–Xindian Line; transfer mode: TBC', lineCode: 'G' },
+    proseSources: [dortsZhongshanDesign, dortsZhongshanJointDevelopment, dortsZhongshanArtDesign, dortsZhongshanLinearPark, dortsNonParallelInterchanges, dortsNariFlood],
+    prose: [
+      { text: 'A DORTS technical article describes Zhongshan as a station shaped by the old Tamsui railway corridor: removing the railway and rebuilding it as metro encouraged older neighbourhoods to renew while retaining layers of earlier urban culture.', source: dortsZhongshanDesign.id },
+      { text: 'The article places former government and consular buildings, the Zhongshan North Road and Linsen North Road commercial area, and the nearby department store within a district where commerce and culture developed together.', source: dortsZhongshanDesign.id },
+      { text: 'Its design theme is “Happy Transfer”, intended to give passengers a moment of breathing space while moving through an interchange and to frame public transport as a respectful relationship with the environment.', source: dortsZhongshanDesign.id },
+      { text: 'The design language uses bright colour and concise compositions based on everyday street scenes on escalator and stair walls, making the transfer experience part of the station’s local narrative.', source: dortsZhongshanDesign.id },
+      { text: 'The same source uses the historical notation G16/R14, while the current Red-line registry calls this station R11; the older notation is retained as a source-specific code rather than silently rewritten.', source: dortsZhongshanDesign.id },
+      { text: 'A joint-development case places one station development at the junction of four central districts, in a commercial area where Nanjing West Road connects the north–south roads and distributes movement across the city.', source: dortsZhongshanJointDevelopment.id },
+      { text: 'The case records a 1,681-square-metre site whose first-floor plan includes a metro plaza, exhibition corridor, MRT light-and-shadow passage and a public-art pedestrian greenbelt for community gatherings and recreation.', source: dortsZhongshanJointDevelopment.id },
+      { text: 'Its design brief uses sunlight, greenery and wind to connect the building frontage to the street, with planted setbacks, roof terraces and visual permeability intended to make the joint-development parcel feel like an urban garden.', source: dortsZhongshanJointDevelopment.id },
+      { text: 'A later DORTS technical article names “Crystal Clear” (晶透) as a Zhongshan station example of bringing public art and local humanities into station design, although the checked current station-level art register does not provide a complete record for it.', source: dortsZhongshanArtDesign.id },
+      { text: 'The station is therefore published here with the art-register gap and the technical-article mention kept as separate evidence, not merged into an unsupported artist, date or medium.', source: dortsZhongshanArtDesign.id },
+      { text: 'DORTS also records a Heart Zhongshan linear-park improvement beginning in 2017 between Zhongshan and Shuanglian under Taipei’s City Museum programme, extending the station-area design conversation into the street landscape.', source: dortsZhongshanLinearPark.id },
+      { text: 'As a non-parallel interchange, Zhongshan belongs to the class whose transfer movement crosses different platform elevations through vertical circulation.', source: dortsNonParallelInterchanges.id },
+      { text: 'During Typhoon Nari, the flood entering from the Taipei railway-station area travelled through the Red-line tunnel path to Zhongshan and stopped at Shuanglian, according to DORTS’s civil-engineering review.', source: dortsNariFlood.id },
+      { text: 'No station-level civil contractor, final account, rename gazette or paid-area walking distance was established in the fetched primary pages, so those details remain TBC.', source: dortsZhongshanJointDevelopment.id },
+    ],
   },
   R12: {
     structure: 'underground', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsRoute,
@@ -623,8 +813,22 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lift: exit 2 and a paid-concourse platform lift; unpaid toilet near exit 1 toward the Zhongshan underground mall; parent/accessible toilet at the same location; baby changing; bicycle access open; enquiry point near exits 1 and 2.',
     landmarks: '中山地下街', publicArt: '雙連‧行遠 — 井婉婷、楊弼方; enamel panels; 1996.', publicArtSource: art.shuanglian,
     engineeringHistory: tbc,
+    proseSources: [art.shuanglian, dortsPublicArtSelection, dortsPublicArtMethods, dortsZhongshanLinearPark, dortsNariFlood],
     prose: [
-      { text: 'DORTS says “Shuanglian · Travelling Far” was selected through an open call from 53 entries, using linked chronological signs to express the area’s historical change.', source: art.shuanglian.id },
+      { text: 'DORTS describes Shuanglian as the first pilot station for the early-network public-art programme because the work formed part of the interior finishing package and because the station had a strong historical and geographic identity.', source: art.shuanglian.id },
+      { text: '“Shuanglian · Travelling Far” was designed by Ching Wan-Ting and Yang Pi-Fang, uses enamel panels, measures 2.4 by 42.24 metres and was completed on 16 September 1996 in the concourse.', source: art.shuanglian.id },
+      { text: 'The department records an approximate cost of NT$10 million, including a NT$500,000 first-prize award, and identifies open selection as the procurement method.', source: art.shuanglian.id },
+      { text: 'The work’s historical structure follows the movement of time and records Shuanglian’s changing relationship with the Tamsui river port, where once-prosperous trade gradually receded into history.', source: art.shuanglian.id },
+      { text: 'DORTS says the chronology lets passengers look back at the district’s past, see its transformation and imagine its future, while using the metro as a sign of new urban life.', source: art.shuanglian.id },
+      { text: 'The selection process was deliberately constrained because the artwork was part of the wall finish: the department required enamel panels matching the original wall material so that the competition focused on a planar design rather than a contest of materials.', source: art.shuanglian.id },
+      { text: 'The winning proposal emerged from 53 entries and was selected by the metro public-art review committee in October of the ROC82 year.', source: art.shuanglian.id },
+      { text: 'The broader public-art manual explains that early works were placed at visual focal points that would not obstruct passenger circulation or construction progress, with vertical openings between concourse and platform levels often providing the strongest public view.', source: dortsPublicArtSelection.id },
+      { text: 'It classifies Shuanglian’s work under open selection, a process in which design and construction could be separated rather than automatically bundled into one creator contract.', source: dortsPublicArtMethods.id },
+      { text: 'That distinction matters because DORTS records “Hand Suite” at NTU Hospital as an invited-comparison example, so the two neighbouring Red-line stations preserve different procurement histories.', source: dortsPublicArtMethods.id },
+      { text: 'The city later extended the station-area public realm through the Heart Zhongshan linear-park improvement between Zhongshan and Shuanglian, begun in 2017 under the City Museum programme.', source: dortsZhongshanLinearPark.id },
+      { text: 'The Nari flood review uses an older station notation and records the flood path stopping at Shuanglian after travelling north from Taipei Main through the control-centre and Zhongshan area.', source: dortsNariFlood.id },
+      { text: 'That historical code is kept as the source’s incident notation; it is not silently substituted for the current R12 registry code.', source: dortsNariFlood.id },
+      { text: 'No station-level civil contractor, final account, rename gazette or paid-area walking distance was established in the fetched primary pages, so those details remain TBC.', source: dortsPublicArtSelection.id },
     ],
   },
   R13: {
@@ -635,6 +839,22 @@ const rData: Record<string, RData> = {
     landmarks: '成淵高中; 台灣銀行', publicArt: tbc,
     engineeringHistory: 'The builder describes Minquan W. Rd. as a shallow-cut underground example; station-specific construction history beyond that classification: TBC.', engineeringHistorySource: dortsStationArchitecture,
     interchange: { label: 'Zhonghe–Xinlu Line; transfer mode: TBC', lineCode: 'O' },
+    proseSources: [dortsInitialStationTypes, dortsNonParallelInterchanges, dortsInitialArchitecture, dortsMinquanDesign],
+    prose: [
+      { text: 'DORTS defines a shallow-cut station as one whose tracks and platforms remain underground while the concourse sits at ground level or beside the platform level, a form used when alignment height, geology or construction cost makes deep excavation unattractive.', source: dortsInitialStationTypes.id },
+      { text: 'The department explicitly lists Minquan W. Rd. among Taipei’s shallow-cut stations, but the checked page does not publish a station-specific geological profile or a contract-level explanation of which factor controlled the choice here.', source: dortsInitialStationTypes.id },
+      { text: 'As an interchange with the Zhonghe–Xinlu Line, Minquan W. Rd. also belongs to DORTS’s non-parallel class, where passenger transfers between differently aligned routes use vertical circulation between platform elevations.', source: dortsNonParallelInterchanges.id },
+      { text: 'The architectural account places the station in the commercial atmosphere of Taipei’s old rear-station district and in the historical layers of Dalongdong, Shuanglian and Yuanshan.', source: dortsMinquanDesign.id },
+      { text: 'It describes the area as a story of remembering the past while developing the future, and makes “Postmodern” art the station’s design theme.', source: dortsMinquanDesign.id },
+      { text: 'The entrances continue the section’s shared architectural vocabulary through steel frames and inset glass, keeping the structures visually light and reducing the pressure of a large object on the street.', source: dortsMinquanDesign.id },
+      { text: 'Ventilation shaft X is joined to the entrance forms by an arched false wall, while ventilation shaft Y uses a vocabulary and modular divisions that echo neighbouring buildings.', source: dortsMinquanDesign.id },
+      { text: 'Inside, glass-mosaic walls deliberately interweave old and new buildings, while painted enamel panels along the platform-side walls use varied graphics and restrained colours associated with traditional architecture.', source: dortsMinquanDesign.id },
+      { text: 'This makes the station’s surface structures, passage walls and platform edges a single sequence rather than separate technical objects.', source: dortsMinquanDesign.id },
+      { text: 'The early-network architecture review explains why that individual expression could coexist with standard construction: the base configuration and module dimensions were standardised, but teams retained flexibility in themes, materials and colour plans.', source: dortsInitialArchitecture.id },
+      { text: 'The same review names Minquan W. Rd. as one of the early underground stations where this individual variation was especially visible.', source: dortsInitialArchitecture.id },
+      { text: 'The checked primary pages do not establish an individual civil contractor, award date, final station account, rename gazette or documented incident for this station.', source: dortsInitialArchitecture.id },
+      { text: 'Those gaps remain TBC rather than being filled with the generic route opening date or with the station’s current interchange facts.', source: dortsInitialStationTypes.id },
+    ],
   },
   R14: {
     structure: 'elevated', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,

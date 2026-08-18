@@ -236,6 +236,232 @@ returned a cache-miss failure. No new route-level claim was promoted from
 that failed fetch; the route material already established earlier in this
 file remains separately sourced and dated.
 
+### Station-prose deepening — R08–R13 batch, 18 August 2026
+
+The widened search fetched and read the following primary pages in full.
+Search snippets were used only to locate them and are not evidence.
+
+#### Initial-network station type and architecture
+
+**Source:** “Initial-network station types and shallow-cut stations” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+
+Original-language text checked in full:
+
+> `淺挖式車站係軌道及月臺布設於地下，穿堂層則布設於地面或月臺層側方，通常係為配合軌道定線高程、地質緣故不適宜深挖或為節省建造成本；例如松山新店線的七張站、新店區公所站、板南線昆陽站及淡水信義線的民權西路站均為此類車站。`
+
+This establishes the definition and the builder’s classification of R13 as
+shallow-cut. It does not establish which of the listed reasons controlled the
+Minquan W. Rd. design.
+
+**Source:** “Interchange-station planning in the Taipei Metro” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html
+
+Original-language text checked in full:
+
+> `交會站是指車站有兩條或兩條以上之路線經過，旅客可經由其中一條路線轉至其他路線。`
+
+> `交會站的布設相當複雜，且轉乘旅客將大量地於站內流動，因此需就路線方向及不同月臺型式間的選擇特別考量，以增加其轉乘之便利性及縮短轉乘動線長度。`
+
+> `目前市中心區民權西路站（淡水信義線及中和新蘆線交會）、中山站（淡水信義線及松山新店線交會）、台北車站（淡水信義線及板南線交會）、...中正紀念堂站（淡水信義線及松山新店線交會）...`
+
+This establishes the central interchange group and the planning rationale used
+for R08, R10, R11 and R13.
+
+**Source:** “Non-parallel interchange planning” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html
+
+Original-language text checked in full:
+
+> `若二條路線軌道平面方向不同，則該交會站為非平行交會站，例如淡水信義線與中和新蘆線之民權西路站、淡水信義線與松山新店線之中山站、板南線與淡水信義線之台北車站...`
+
+> `此類車站其站內轉乘旅客之動線必須透過垂直動線於不同高程之月臺進行交會轉乘。`
+
+This supports the non-parallel interchange prose without inferring a paid-area
+or street-transfer arrangement.
+
+**Source:** “Initial-network station architecture and individual variation” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html
+
+Original-language text checked in full:
+
+> `初期路網各路線車站內部硬體設施已建立在統一化之基本架構上從事規劃設計，惟為尊重各細部設計團隊之設計意念並展現出車站個別風格，在主題表現手法、材料搭配運用及色彩計劃等方面仍賦予相當大的彈性發揮空間。`
+
+> `例如龍山寺站、國父紀念館站、市政府站、小南門站、中正紀念堂站、民權西路站等都是明顯的案例。`
+
+This establishes the standardised base/individual variation distinction used for
+R08 and R13; it is not treated as a station-specific contract or material list.
+
+**Source:** “Chiang Kai-Shek Memorial Hall station architectural theme” /
+`捷運高架車站建築造型設計` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page26.html
+
+Original-language text checked in full:
+
+> `較顯著案例為蘆洲線以蘆葦、白鷺鷥為主題之造型、中正紀念堂站之藍頂白牆、亞東醫院站林家花園之庭院曲牆設計等。`
+
+This is the primary support for R08’s blue-roof/white-wall design sentence.
+
+#### Public-art selection and incident evidence
+
+**Source:** “Initial-network public-art station selection” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+
+Original-language text checked in full:
+
+> `基於時間、金錢及人力的考量，在初期路網每條捷運線僅能挑選幾個重點車站設置公共藝術。`
+
+> `新店線辦理之車站中，臺大醫院站地緣重要，中正紀念堂站及古亭站皆為交會站，而公館站為木柵、新店地區的公車轉乘區，新店站則為端點站，皆具備前述特質。`
+
+> `南港線辦理之車站中，台北車站為交會站...`
+
+> `獲選之車站多屬地下站，在穿堂層及月臺層之垂直動線間都有挑空區，作品放在此旅客必經之地最可被大多數人看到，達到視覺焦點的效果。`
+
+This distinguishes station selection criteria from proof that a particular
+current station has an installed work.
+
+**Source:** “Initial-network public-art funding and selection methods” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html
+
+Original-language text checked in full:
+
+> `台北車站經費來源及權責複雜，雖終於釐清由東工處第二特別預算南港線（西段）土木建築工程費項下支應...可惜因該站首獎從缺。`
+
+> `公開徵選...前者有淡水線之「雙連·行遠」...`
+
+> `邀請比件...案例有淡水線之「手之組曲」...`
+
+This supports the R09/R12 procurement distinction and records Taipei Main’s
+separate Nangang-line programme without treating its budget as an R10 station
+artwork value.
+
+**Source:** “Nari typhoon flood path through Taipei Metro” /
+`捷運土木工程實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page181.html
+
+Original-language text checked in full:
+
+> `洪水由臺鐵松山車站附近之隧道出土段灌入，一路漫延至臺鐵臺北車站，當水位超過其月臺面後，經由與捷運相連通之樓梯、電扶梯向下灌入位於地下三、四層之捷運淡水線，並向南漫流至新店線中正紀念堂站（G11），向北漫流至捷運行控中心（CCR）、中山站（R14）而止於雙連站（R15）。`
+
+This establishes the R08/R10/R11/R12 incident prose and preserves the source’s
+legacy station notation as a separate measurement.
+
+#### Zhongshan and Minquan W. Rd. station-specific design
+
+**Source:** “Zhongshan station design and the ‘Happy Transfer’ theme” /
+`松山線各車站建築設計簡介` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html
+
+Original-language text checked in full:
+
+> `本站為捷運淡水線與松山線共構交會之轉乘站，基地週邊的都市風貌，主要是隨著淡水線鐵路所塑造出的；在鐵路拆除改建成捷運淡水線，促使老舊社區逐步更新。`
+
+> `故本站之設計主題為「快樂轉運」...`
+
+> `牆面採用以年輕族群所認同的流行消費文化與象徵生命力旺盛的重複圖案設計為主軸。`
+
+The page prints `G16/R14`; the current registry is R11. This is recorded as a
+notation conflict below, not silently rewritten in the source evidence.
+
+**Source:** “Zhongshan station joint-development public realm” /
+`臺北捷運土地開發案例解析（一）` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page104.html
+
+Original-language text checked in full:
+
+> `基地所在的南京西路為臺北市東西向主要幹道，銜接中山北路及承德路，構成區域路網向東、西、南、北延伸；捷運中山站屬捷運轉乘站，為捷運淡水線、松山線的轉乘點。`
+
+> `於基地一樓設置捷運廣場、展演廊道、MRT光影穿廊及公共藝術人行綠帶等提供當地社區鄰近居民作集會、休閒及交誼服務性之用。`
+
+> `城市．光影與生命—漫遊都會的綠風光廊，以「陽光」、「綠」、「風」帶入基地。`
+
+This supports the joint-development and public-realm sentences for R11.
+
+**Source:** “Zhongshan station art-integrated design example” /
+`捷運技術 第50期` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html
+
+Original-language text checked in full:
+
+> `如中山站的晶透...將工程與藝術結合，塑造地區節點新風貌。`
+
+This is a confirmed mention in a technical article, but it does not supply the
+complete artist/date/material record required for the station art field.
+
+**Source:** “Zhongshan–Shuanglian linear-park improvement” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page199.html
+
+Original-language text checked in full:
+
+> `如於106年起在淡水線捷運中山站及雙連站之間，結合臺北市政府城市博物館計畫，進行心中山線形公園改造工程。`
+
+This supports the later public-realm context for R11 and R12.
+
+**Source:** “Minquan W. Rd. station architectural design” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html
+
+Original-language text checked in full:
+
+> `民權西路站區域環境仍延續舊臺北後站的商業氣息及大龍峒、雙連、圓山等地區之風華種種，而後續的都市發展，又植入不少新都市意象的表率，具「緬懷過去」及「發展未來」的故事性，故車站的建築設計以該區域性特色為設計原意，並以「後現代」藝術為設計主題。`
+
+> `出入口造型延續該區段標共同的建築語彙，以鋼構架鑲嵌玻璃，表現輕巧及減少量體壓迫感；通風井X透過拱門式假牆將所有量體串聯成一整體性建築物。`
+
+> `車站內通道牆面同樣採用玻璃馬賽克拼貼，將舊建築與新建築交織融合；月臺層軌道側牆以烤漆琺瑯版方式，呈現多樣化且配合傳統建築簡樸色彩的圖樣。`
+
+This supports R13’s station-specific architecture and does not supply a
+station-level contractor or final account.
+
+#### R08–R13 disposition
+
+- **R08 Chiang Kai-Shek Memorial Hall:** The blue-roof/white-wall architectural
+  treatment, interchange planning role, public-art selection rationale and
+  Nari flood-path role are established. The current station-level executed-art
+  record, civil contractor and final account remain TBC.
+- **R09 NTU Hospital:** The public-art title, artist, date, location, invited
+  comparison, cost, component names, component materials/dimensions and
+  geographic-selection rationale are established. A station-level civil
+  contractor and final account remain TBC.
+- **R10 Taipei Main:** Non-parallel interchange planning, Nangang-programme
+  public-art selection/funding scope and the Nari flood entry path are
+  established. The Nangang art budget is not treated as an R-line station art
+  value; a current R-line station artwork record and station-level civil account
+  remain TBC.
+- **R11 Zhongshan:** The railway-corridor history, “Happy Transfer” design,
+  joint-development public realm, `晶透` technical-article mention, linear-park
+  improvement, legacy-code notation and Nari flood path are established. The
+  complete current art record, station-level civil contractor and final account
+  remain TBC.
+- **R12 Shuanglian:** The artwork’s title, artists, dimensions, enamel medium,
+  completion date, open selection, cost, 53-entry field, historical chronology,
+  linear-park context and Nari incident notation are established. A
+  station-level civil contractor and final account remain TBC.
+- **R13 Minquan W. Rd.:** The shallow-cut classification, non-parallel
+  interchange planning, old-Taipei context, Postmodern theme, entrance and
+  ventilation forms, mosaic/enamel treatment and standardised-base/individual-
+  variation distinction are established. The factor controlling the shallow-cut
+  choice, station-level contractor, final account and art record remain TBC.
+
 ### Station-prose audit — R14–R19 batch, 17 August 2026
 
 The full TRTC station pages for R14–R19 were fetched and read on 17 August
@@ -674,6 +900,34 @@ road name alone is not promoted to a landmark.
    station-level contractor or final station account was substituted for
    either one.
 
+6. **Zhongshan source-era codes versus the current registry.** The full
+   Zhongshan design article prints `G16/R14`, while the current generated
+   registry and current TRTC page identify this Red-line station as R11. The
+   article’s notation is retained as the source’s historical/line-design
+   notation; R11 is retained as the current operating identifier. Neither is
+   treated as an alternative station.
+
+7. **Public-art planning mentions versus complete station records.** DORTS’s
+   public-art selection chapter names Chiang Kai-Shek Memorial Hall as a
+   selected interchange and the current technical article names Zhongshan’s
+   `晶透`, but the checked current station-level art material does not provide
+   a complete executed record for R08 or R11. The planning/technical mentions
+   and the incomplete current register are published as different evidence;
+   no artist, date, medium or cost was inferred.
+
+8. **Nari flood notation versus current station codes.** The civil-engineering
+   flood review records the path as G11, R14 and R15 for Chiang Kai-Shek
+   Memorial Hall, Zhongshan and Shuanglian, while the current registry uses
+   R08, R11 and R12. The first value measures the review’s source-era line
+   notation; the second is the current station registry. The flood path itself
+   is retained without rewriting the source’s labels.
+
+9. **Taipei Main public-art budget scope.** The NT$5 million figure and missing
+   first prize in the public-art manual belong to the Nangang-line programme’s
+   Taipei Main discussion. They are not a current Tamsui-line station-art
+   value; the R10 station art field remains TBC. This is a scope conflict, not
+   a hidden competing cost.
+
 No conflicting exit count was found when the full TRTC station pages were
 compared with the DORTS station material for the stations where both publish a
 count. Differences between TDX’s fields and the operator’s facility text are
@@ -734,6 +988,24 @@ field-coverage differences, not competing values.
 - **R02–R07 feeder-bus prose** — TDX stop-ID joins were checked 18 August
   2026, but no full PTO or ebus route page was fetched for these stations. No
   feeder route assertion was published from the joins alone.
+- **R08–R13 station-level contracts and final accounts** — Checked 18 August
+  2026 across the DORTS route/project material, early-network planning and
+  architecture volumes, the civil-engineering flood review, the Zhongshan
+  joint-development case and the technical-journal station papers. These
+  sources returned package, design and public-realm evidence but no complete
+  R08–R13 station-level contractor/award/final-account record.
+- **R08/R10/R11/R13 complete public-art records** — Checked 18 August 2026 in
+  the full DORTS public-art material, selection chapter and technical article.
+  R08 has a selection mention, R11 has the `晶透` technical mention, and the
+  current station-level material does not supply the complete fields needed to
+  publish either as a fact-box artwork. No absence was inferred.
+- **R13 shallow-cut cause** — Checked 18 August 2026 in the full DORTS station-
+  type page and Minquan W. Rd. architecture page. The pages classify the form
+  and list possible reasons but do not identify which geological, alignment or
+  cost factor controlled this station’s choice.
+- **R08–R13 feeder-bus prose** — TDX stop-ID joins were checked 18 August
+  2026, but no full PTO or ebus route page was fetched for this station batch.
+  No feeder route assertion was published from the joins alone.
 
 ## Stated gaps
 
@@ -751,6 +1023,14 @@ completion register or station-specific record. R02–R07 feeder-bus prose remai
 TBC pending full PTO/ebus route pages. There is no R01 page in the checked
 registry or primary route materials; a later official registry entry would be
 needed before that identifier could be published.
+
+For R08–R13, the current station-art record remains incomplete for R08, R10,
+R11 and R13 even though planning or technical pages mention some of them; a
+complete DORTS artwork register or station completion record would settle those
+entries. The R13 shallow-cut decision remains TBC until a station design or
+construction record identifies the controlling factor. Station-level contracts,
+final accounts and feeder-bus prose remain TBC pending the corresponding
+period procurement/completion and PTO/ebus pages.
 
 ---
 

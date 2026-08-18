@@ -8452,3 +8452,58 @@ and operating notation respectively; both values are retained.
 
 No claims baseline, test or checker was changed. The next batch is R08–R13,
 again six registered stations because the line has no R01.
+
+# Run 31 — Part 1 Red station prose, R08–R13, 18 August 2026
+
+## Sourced
+
+This batch deepened R08 Chiang Kai-Shek Memorial Hall, R09 NTU Hospital,
+R10 Taipei Main, R11 Zhongshan, R12 Shuanglian and R13 Minquan W. Rd. Body
+prose counts are R08 345, R09 389, R10 334, R11 420, R12 391 and R13 351,
+for 2,230 words total. Every sentence carries an overlay source.
+
+Full primary URLs:
+
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page36.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page37.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page136.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page26.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page216.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page218.html
+- https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page181.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html
+- https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page104.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page147.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page199.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html
+- https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=C32B3BEE19B6BC1F
+- https://www.dorts.gov.taipei/cp.aspx?n=2E32DBDC65CAA983&s=DE643CF3F6E0171F
+- TRTC full pages for R08–R13: https://web.metro.taipei/pages2026/WebStation/042/1,
+  /050/1, /051/1, /053/1, /054/1 and /055/1.
+
+No colour-prefix audit applies to a station batch.
+
+## TBC
+
+R08/R10/R11/R13 complete current art records remain unresolved despite
+planning/technical mentions; R13 shallow-cut controlling factor; station-level
+contractors/final accounts; feeder-bus prose; rename/paid-area/walking-distance
+details.
+
+## Contradicted the corpus
+
+Prior R08/R10/R11/R13 zero and R09/R12 one-sentence overlays were not the end
+of sourceable material. DORTS full pages provide architecture, art-procurement,
+incident, joint-development and public-realm context. No unverified appendix
+was promoted. The Zhongshan source uses G16/R14 while current registry R11;
+the Nari source uses G11/R14/R15 while current registry R08/R11/R12.
+
+## Conflicts found
+
+R08 CKS art selection mention vs no complete current art record; R11 `晶透`
+technical mention vs incomplete current art record; R10 NT$5m/no prize is
+separate Nangang-programme scope, not current R-line artwork cost.
+Zhongshan/flood source-era codes vs current code registry. No colour-prefix audit.
+
+No baseline/test/checker changed. Next batch is R14–R19.
