@@ -9225,6 +9225,41 @@ packages and annual snapshots. TBC: package contractors, station-level award
 values/final accounts, renames, A7/A10/A11 art allocation and fare-boundary
 modes. No colour-prefix audit applies. Next: audit Airport A13–A18.
 
+# Run 31 — Part 1 Airport MRT A13–A18, 18 August 2026
+
+Deepened six Airport MRT station pages after the pre-action audit found body
+prose of A13 92, A14a 68, A15 22, A16 25, A17 24 and A18 103 words. Final
+body-prose counts are A13 296, A14a 290, A15 260, A16 256, A17 239 and A18
+291; batch total 1,632 words. No facts/specs were restated as prose.
+
+Sourced: CU02 station work for A13-A14a; CU02A's approximately 5,520 m airport
+underground package, acceptance and shield/cut-and-cover/deep-excavation scope;
+airport runway/control-tower and geology constraints; CE03A's A15-A16
+Dayuan-Qingpu elevated package and CE03B's A17-A20 Qingpu-Zhongli package;
+package testing milestones and 99.96%/99.95% 102-year-end progress snapshots;
+DE03 siting, design and landscape intent; A18's HSR plaza completion report;
+and the A18 public-art procurement programme and TYMC work record.
+
+Primary URLs fetched in full:
+
+- https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1503059115-0.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- https://www.rb.gov.tw/public/upimgs/D04/1520_Tunnel_for_TIAA_MRT.pdf
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+
+Conflicts published: CE03A 99.96% and CE03B 99.95% remain package-level
+progress snapshots; A18 plaza reporting on 15 October 2013 remains distinct
+from wider CE03B closeout and systems work; CU02A approximately 5,520 m and
+the risk paper's approximately 5.5 km remain differently bounded measures;
+and the A18 programme-level public-art selection record remains distinct from
+TYMC's work-level row. TBC: CE03A/CE03B and CU02 contractor/value/final-account
+details, construction-era renames, A15-A17 art metadata and fare-boundary
+modes. No colour-prefix audit applies. Next: audit Airport A19–A22.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit
+npm test, 185/185 tests, and diff check passed before commit and push.
+
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit npm test and diff check must pass before commit and push.
 
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit npm test and diff check must pass before commit and push.

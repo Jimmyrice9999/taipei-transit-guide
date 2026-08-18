@@ -555,6 +555,123 @@ stations.
   not state paid-area versus street-transfer treatment for these stations.
   Checked 18 August 2026.
 
+## A13-A18 deepening - 18 August 2026
+
+The earlier A13-A18 audit established station siting, architecture and the
+available TYMC art rows but left the civil-package records underused. For this
+batch the full Railway Bureau 102 annual report was fetched and read again,
+alongside the full station-architecture report, full 101 annual report, full
+airport-risk paper and full TYMC public-art page. The new material is package-
+level evidence; it is not converted into station-only completion, price or
+contractor claims.
+
+### Established
+
+- **A13-A14a CU02 — PRIMARY, High confidence.** The full Railway Bureau 102
+  annual report identifies CU02 as the station-structure, architectural-fit-out
+  and water/environmental-control package for the four underground stations
+  A12, A13, A14 and A14a. It records complete structures and fit-out, equipment
+  installation and testing, BMS/SCADA interface work, and 99.83% progress at
+  102-year end. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標為機場段之車站結構、建築裝修及水環工程，包括機場
+  第一航廈站(A12)、機場第二航廈站(A13)、機場第三航廈站(A14)及機場旅館站
+  (A14a)等4座地下車站」.
+- **A13-A14a CU02A section engineering — PRIMARY, High confidence.** The
+  same full annual report identifies CU02A as the airport shield-tunnel and
+  station deep-excavation package, approximately 5,520 m long, extending from
+  A12 to A14a and including the adjacent cut-and-cover retaining/support,
+  excavation, grounding, intermediate-pile, deck, shield-boring and internal
+  tunnel work, plus the Terminal 2 east-parking tunnel expansion. It records
+  Railway Bureau acceptance on 25 September 2012. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標為機場段之潛盾隧道及車站體深開挖工程，總長度約5,520
+  公尺」 and 「包括桃園國際機場區域內之機場第一航廈站(A12)至機場旅館站
+  (A14a)」.
+- **Airport interfaces and geology — PRIMARY, High confidence.** The full
+  Railway Bureau risk paper describes the airport underground section as
+  shield-tunnel and cut-and-cover work beneath sensitive runway and control-
+  tower interfaces. It records the A12-A14a red-soil layer, gravel-bearing
+  strata and groundwater range used for monitoring. URL:
+  https://www.rb.gov.tw/public/upimgs/D04/1520_Tunnel_for_TIAA_MRT.pdf. The
+  original text includes: 「A12至A14a站及前後隧道路段，地表為0.3~1.0公尺厚之
+  紅土層」.
+- **A15-A16 CE03A — PRIMARY, High confidence.** The full 102 annual report
+  identifies CE03A as the Dayuan-to-Qingpu elevated-bridge package containing
+  the A15 and A16 stations. It says the emergence section used cut-and-cover,
+  the bridge substructure and superstructure were complete, both stations had
+  completed structure, fit-out and rain protection, BMS integration finished in
+  May 2013, SCADA testing finished in November 2013, and package progress was
+  99.96% at 102-year end. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標為大園至青埔之高架橋工程，包含出土段、高架橋及大園
+  站(A15)、橫山站(A16)等2座高架車站」 and 「出土段部份，採明挖覆蓋方式施工」.
+- **A17-A18 CE03B — PRIMARY, High confidence.** The same full annual report
+  identifies CE03B as the Qingpu-to-Zhongli elevated-bridge package containing
+  A17, A18, A19 and A20 and the Qingpu depot administration building. It records
+  complete bridge structures, complete station structures and rain-protection
+  facilities, ceiling-fit-out closeout, June 2013 BMS integration, August fire
+  checks, A18 plaza reporting on 15 October 2013, and 99.95% package progress at
+  102-year end. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  text states: 「本施工標為青埔至中壢段之高架橋工程及領航站(A17)、高鐵桃園站
+  (A18)、桃園體育園區站(A19)及興南站(A20)等4座高架車站及青埔機廠行政大樓」.
+- **DE03 architecture and landscape — PRIMARY, High confidence.** The full
+  Railway Bureau station-architecture report groups A15-A20 under DE03 and
+  describes A15 as a rural-field station near the airport, A16 as a field-side
+  transfer station, A17 and A18 as stations in the HSR special district, and
+  A18 as an HSR-airport gateway. It records the DE03 design theme, open-space
+  and landscape responses at A15-A18, and the different treatment of A15's
+  airport lighting restriction. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf. The original
+  text states: 「大園站(A15)位於鄉村田野區，靠近臺灣桃園國際機場，橫山站(A16)
+  位於田野中，為大園地區對外交通之轉乘站」 and 「領航站（A17）、高鐵桃園站
+  (A18)、桃園體育園區站(A19)位於高鐵桃園車站特定區內」.
+- **A18 public-art programme — PRIMARY, High confidence.** The full
+  architecture report selects A18 among eight station areas for public art and
+  records commissioned creation for the overall line-wide design and open
+  selection for the planning, design-supervision and installation service. The
+  full TYMC page identifies A18's work as 氣門9號律動 by Florian Claar but does
+  not publish its year, medium, selection method or cost. URLs:
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf and
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html. The
+  original architecture text states: 「擇定...高鐵桃園站(A18)等八站區做為公共藝術
+  設置站位」 and 「全線整體性公共藝術設計規劃採委託創作方式執行」.
+
+### Conflicts in this pass
+
+1. CE03A's 99.96% and CE03B's 99.95% are separate 102-year-end package
+   progress snapshots. Neither is a station-only completion percentage, and
+   they are not averaged or used to rank A15-A18.
+2. A18's plaza was reported complete on 15 October 2013 while CE03B still had
+   ceiling closeout and whole-line integration work. These describe a plaza
+   subcomponent and a wider civil/system package, respectively, and both are
+   retained.
+3. CU02A's approximately 5,520 m and the risk paper's approximately 5.5 km
+   airport underground section are related but differently bounded measures;
+   both remain published rather than reconciled.
+4. The architecture report's public-art programme lists A18 as one of eight
+   selected station areas and describes procurement modes, while TYMC's page
+   names one installed A18 work. These are programme-level and work-level
+   records, not conflicting counts.
+
+### Checked and failed for A13-A18
+
+- **CE03A/CE03B contractors, award values and station-only final accounts** —
+  the full 102 annual report gives package scopes, milestones and progress but
+  not a complete contractor/value/final-account table for A13-A18. Checked 18
+  August 2026.
+- **A13-A18 construction-era renames** — no dated rename gazette or equivalent
+  naming record was found in the full Railway Bureau annual reports,
+  architecture report, TYMC public-art page or checked operator pages. Checked
+  18 August 2026.
+- **A15-A17 public-art metadata** — no A15, A16 or A17 allocation row was found
+  on TYMC's full checked public-art page. This remains not found, not proof of no
+  artwork. Checked 18 August 2026.
+- **A13-A18 fare-boundary modes** — the checked pages establish linked airport,
+  hotel or HSR facilities where described but do not state paid-area versus
+  street-transfer treatment. Checked 18 August 2026.
+
 ## Conflicts
 
 1. **A3 station code.** TYMC and the RB report use engineering/current-project
