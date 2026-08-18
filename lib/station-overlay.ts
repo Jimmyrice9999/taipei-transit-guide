@@ -459,6 +459,202 @@ const TRTC_WENHU_BR11_STATION: Source = {
   note: 'The full current station page supports the Wenhu/Songshan-Xindian interchange and the paid-area transfer lift next to the gates. The labelled station, facility and exit sections were checked on the linked page.',
 }
 
+const DORTS_WENHU_NEIHU_ARCHITECTURE: Source = {
+  id: 'dorts-wenhu-neihu-architecture-overview',
+  title: 'Neihu Line station architecture overview',
+  titleOriginal: '捷運車站規劃與設計實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page141.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page distinguishes Songshan Airport and Dazhi as the two underground Neihu Line stations, describes the airport station’s flight-themed entrance form, and explains the elevated section’s environmental and humanistic design vocabulary. The original-language paragraphs beginning 內湖線為木柵線之延伸 and 松山機場站位於機場航站前方 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS: Source = {
+  id: 'dorts-wenhu-neihu-public-art-process',
+  title: 'Neihu Line public-art selection and implementation',
+  titleOriginal: '捷運車站規劃與設計實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page257.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full page lists the Neihu station design-topic summary, records the executed-artwork selection methods, explains the later donated Gangqian work, and states how DORTS handled selection, material subsidy and implementation. The original-language paragraphs beginning 各站公共藝術之設置地點及徵選方式 and 港墘站之作品為捐贈 were checked on the linked page.',
+}
+
+const DORTS_WENHU_CB420_AIRPORT_TUNNEL: Source = {
+  id: 'dorts-wenhu-cb420-airport-tunnel',
+  title: 'CB420 shield tunnels beneath Songshan Airport',
+  titleOriginal: '內湖線 CB420 標潛盾隧道穿越松山機場自動及人工監測系統應用',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/JRTST/ebook/no32/files/basic-html/page100.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical-journal article supports the CB420 scope from Songshan Airport to Dazhi, the shield-tunnel lengths and dates, cover depths, K1 lake-deposit geology, and the automatic and night-time manual monitoring required by airport operations. The original-language paragraphs beginning 捷運內湖線 CB420 區段標之工程範圍 and 在地質狀況方面 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_CONSTRUCTION_METHOD: Source = {
+  id: 'dorts-wenhu-neihu-construction-method',
+  title: 'Neihu Line construction method and traffic-maintenance context',
+  titleOriginal: '捷運技術 第40期',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/JRTST/ebook/no40/files/basic-html/page47.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical-journal article says the two underground station bodies used cut-and-cover while the interstation sections used shield tunnels, and places the line’s route and CB410–CB430 section context. The original-language paragraph beginning 地下車站僅車站站體區 was checked on the linked page.',
+}
+
+const DORTS_WENHU_CB423_SCOPE: Source = {
+  id: 'dorts-wenhu-cb423-scope',
+  title: 'CB423 station and viaduct contract scope',
+  titleOriginal: '捷運高架橋梁結構設計與施工',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page22.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical volume’s work-scope table assigns B2–B5 stations and the connecting elevated bridge to CB423 under design package DB145. The original-language table beginning 文湖線內湖段各施工標工作範圍 was checked on the linked page.',
+}
+
+const DORTS_WENHU_CB423_STATIONS: Source = {
+  id: 'dorts-wenhu-cb423-stations',
+  title: 'CB423 station structures and sites',
+  titleOriginal: '捷運高架橋梁結構設計與施工',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full technical volume gives B2 as the first Neihu elevated station, gives the B2–B5 station orientations, platform forms and dimensions, the Xihu market and parking-site interface, and the CB423 bridge methods and spans. The original-language entries beginning 一、B2 劍南路站 and 二、B3 西湖站 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_CONTEXT: Source = {
+  id: 'dorts-wenhu-neihu-context',
+  title: 'Neihu Line environmental and human context',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page88.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume records Neihu’s mountains, Keelung River, former agricultural economy, later urbanisation, parks, community activities and the shared Lake-City Story theme used across architecture, landscape, interiors and public art. The original-language paragraphs beginning 內湖區位於臺北市地理位置 and 湖城故事 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_DISTRICT: Source = {
+  id: 'dorts-wenhu-neihu-district-zones',
+  title: 'Neihu Line corridor design zones',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page91.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume places B2–B5 in the residential–rural landscape zone, describes the Xihu-area reclaimed land beside the river, and distinguishes the later commercial-recreation and industrial-technology zones. The original-language heading beginning 住宅城鄉風貌 was checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES: Source = {
+  id: 'dorts-wenhu-neihu-design-principles',
+  title: 'Neihu Line elevated-station design principles',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page93.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume describes the shared materials, platform-space form, overpass, semi-open edges, natural ventilation and “same within difference” approach of the elevated Neihu stations. The original-language paragraphs beginning 特殊站在建築語彙上 and 車站穿透與輕巧之構想 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_THEMES: Source = {
+  id: 'dorts-wenhu-neihu-themes-colours',
+  title: 'Neihu Line station themes and colours',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page95.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume’s station-theme table records Jiannan Road’s mountain-ridge theme, Xihu’s butterfly theme, Gangqian’s flower-language theme, Wende’s bird-flight theme and their associated colours. The original-language table beginning 各車站設計主題及色彩 was checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_ART_INTEGRATION: Source = {
+  id: 'dorts-wenhu-neihu-art-integration',
+  title: 'Neihu Line station form and environmental detailing',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page97.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume explains how route colour and station colour are applied to columns, paving, wall panels, floors and doors, and illustrates the B2–B5 station forms. The original-language paragraphs beginning 各車站之色彩計畫 and 內湖段之車站為高架車站 were checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE: Source = {
+  id: 'dorts-wenhu-neihu-platform-maintenance',
+  title: 'Neihu Line platform-edge design review',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page131.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume distinguishes the Xihu and Nangang Exhibition Center island-platform stations from the eight side-platform stations and records the platform-edge rain-stain and glass-cover design review. The original-language paragraph beginning 除了西湖站及南港展覽館站 was checked on the linked page.',
+}
+
+const DORTS_WENHU_NEIHU_SPECIAL_FORMS: Source = {
+  id: 'dorts-wenhu-neihu-special-station-forms',
+  title: 'Neihu Line station forms and Jiannan Road landmark',
+  titleOriginal: '捷運車站規劃與設計實務',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full planning volume describes the Neihu elevated stations’ standard curved-column, metal-roof, glass-and-metal form and identifies Jiannan Road’s raised round arches, mountain-city gateway image and lantern-like night lighting. The original-language paragraphs beginning 內湖線 and 劍南路站 were checked on the linked page.',
+}
+
+const DORTS_WENHU_JIANNAN_LANDSCAPE: Source = {
+  id: 'dorts-wenhu-jiannan-landscape',
+  title: 'Jiannan Road station plaza landscape',
+  titleOriginal: '捷運高架車站建築造型設計',
+  publisher: 'Taipei City Department of Rapid Transit Systems',
+  url: 'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page156.html',
+  accessed: '2026-08-18',
+  snapshot: '',
+  snapshotAlt: '',
+  kind: 'primary',
+  lang: 'zh-Hant',
+  note: 'The full architecture volume describes Jiannan Road’s station-front plaza, public open-space role, public-art competition, planting and paving that evokes mountain contours and agricultural grids. The original-language paragraphs beginning 劍南路站廣場景觀 and 為了表現本站山陵 were checked on the linked page.',
+}
+
 /**
  * Keyed by station code.
  *
@@ -1481,19 +1677,77 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'underground',
     engineering: 'BR1',
     exits: 3,
-    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_NEIHU_ARCHITECTURE,
+      DORTS_WENHU_PUBLIC_ART,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB420_AIRPORT_TUNNEL,
+    ],
     prose: [
       {
-        text: 'The airport station was added after a Ministry of Transportation study found that placing a station on the Neihu line was more engineering-feasible and compatible with the schedule for direct airport trips.',
+        text: 'Songshan Airport was not part of the first Neihu alignment: the project record says the Ministry of Transportation ordered a feasibility study in ROC 89 (2000) for a station that would directly serve airport trips.',
         source: DORTS_WENHU_PROJECT.id,
       },
       {
-        text: 'DORTS’s alignment then carries the line beneath the airport and the Keelung River, with the station under the surface car park in front of the terminal.',
+        text: 'DORTS reports that the evaluation found an airport station on the Neihu Line more feasible in engineering terms and compatible with the construction schedule, after which the route was adjusted and the station added.',
         source: DORTS_WENHU_PROJECT.id,
       },
       {
-        text: 'The official art table records three public works here—Great Age of Travel, Flight Plan, and Dream Flight—placed at Exit 3, the concourse wall, and the platform void, all selected through public competition.',
+        text: 'The same project record says the Executive Yuan agreed in principle in ROC 90 (2001), the Public Construction Commission agreed to the funding arrangement in ROC 91 (2002), and the revised project cost was NT$60.997 billion.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The route leaves its elevated approach at Minzu East Road, enters the airport, and places the station beneath the surface car park in front of the terminal building.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The project table identifies the airport station as BR1 in the Neihu engineering sequence, while the operating station is BR13; the two identifiers belong to different numbering systems.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The CB420 section starts east of the station, uses shield tunnels below Songshan Airport, crosses the expressway and Keelung River, reaches Dazhi, and continues to the point where the line emerges for its elevated section.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'That section is about 3,460 metres long, with separate airport tunnel drives of 1,241 metres and 1,286 metres for the down and up lines.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The two drives passed below the runway, apron and taxiway, and the published cover decreases from 27.8 metres near the Huajiang Street ventilation shaft to 18.8 metres at the airport-station end.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'DORTS records the airport crossing as Taipei Basin K1 lake-deposit ground, with a 50-to-60-metre layer of very soft silty clay whose low self-support and sensitivity made settlement a central construction concern.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'Because airport rules constrained when workers could enter and observe the site, the monitoring system combined automatic reading and transmission with manual observation during the night-time airport closure.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The down-line shield drive launched on 8 October 2003 and reached the station diaphragm wall on 30 June 2004; the up-line drive launched on 8 September 2004 and arrived on 7 September 2005.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'DORTS’s architecture account calls the station’s design concept “A Story of Flight”, using spiral-wing steel roofs to link the entrances and accessible lift and to suggest a pair of wings waiting to depart.',
+        source: DORTS_WENHU_NEIHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'That account also describes a ground plaza, water feature and curved ventilation-shaft wall as a combined place for activity, rest and artistic work rather than treating the entrance as only a circulation object.',
+        source: DORTS_WENHU_NEIHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'The official art table records Great Age of Travel at Exit 3, Flight Plan on the concourse wall and Dream Flight in the platform void, completed in October 2008 through open selection.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'DORTS’s broader public-art record says Neihu works other than the donated Gangqian piece were funded through the Neihu Line construction budget, with DORTS handling selection and valuation and its eastern works office handling contracts, material subsidies and implementation.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The checked CB420 and project pages identify the section and programme but do not publish an individual station contractor, award date or final station-package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
       },
     ],
     note: '松山機場站. Underground on two primary sources: DORTS 地下段3.9公里，2座地下站 on the Neihu section, and DORTS 車站建築設計 counting ten elevated plus Dazhi out of twelve, which leaves this one. Engineering BR1 despite being a Neihu-section station — the station was added to the project in 2001, after the B series had been allocated.',
@@ -1502,15 +1756,74 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'underground',
     engineering: 'B1',
     exits: 3,
-    sources: [DORTS_WENHU_PROJECT, DORTS_WENHU_ARCHITECTURE],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_NEIHU_ARCHITECTURE,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB420_AIRPORT_TUNNEL,
+      DORTS_WENHU_NEIHU_CONSTRUCTION_METHOD,
+    ],
     prose: [
       {
-        text: 'BR14 is where the underground section returns to daylight: DORTS places the emergence beside the roundabout at the south end of Ziqiang Tunnel, on the east side of Beian Road.',
+        text: 'Dazhi is one of the Neihu section’s two underground stations.',
+        source: DORTS_WENHU_NEIHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'The project table gives it the engineering identifier B1 while the operating registry calls it BR14; the two identifiers belong to different numbering systems.',
         source: DORTS_WENHU_PROJECT.id,
       },
       {
-        text: 'The department’s architecture summary identifies Dazhi as the Neihu section’s sole underground station, while describing the rest of that section as elevated.',
-        source: DORTS_WENHU_ARCHITECTURE.id,
+        text: 'DORTS places the station at Beian Road 458 Lane 41 Alley, underground near the south end of the Ziqiang Tunnel roundabout.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'East of Dazhi, the line emerges beside the roundabout and continues east as the Neihu Line’s elevated section; west of it, the route has crossed the airport and Keelung River underground.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'The CB420 section therefore joins two different construction environments: the airport and river crossing in shield tunnel, then the approach to the elevated structure beyond Dazhi.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'Its published scope is about 3,460 metres from the airport-station area through the airport, past the Huajiang Street ventilation shaft, across the expressway and river, and onward to the emergence point.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The airport portion used two shield drives, 1,241 metres for the down line and 1,286 metres for the up line, with the machine dismantled and redeployed between drives.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The technical record describes the route through K1 lake-deposit geology, including very soft silty clay with high sensitivity and low self-support, conditions that made disturbance and long-term consolidation settlement important risks.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The airport’s restricted work windows also required automatic monitoring and manual night observation, a constraint that shaped the section’s construction control even though the station itself lies beyond the runway crossing.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
+      },
+      {
+        text: 'The technical description of the Neihu Line says the underground station bodies were built by cut-and-cover while the interstation portions used shield tunnelling, separating the road-impact problem at the station from the quieter tunnel drives between stations.',
+        source: DORTS_WENHU_NEIHU_CONSTRUCTION_METHOD.id,
+      },
+      {
+        text: 'DORTS’s architecture overview confirms that Songshan Airport and Dazhi are the Neihu section’s two underground stations, with the remaining ten stations elevated.',
+        source: DORTS_WENHU_NEIHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'The same architecture account assigns the elevated section a separate vocabulary built from local environmental and human characteristics, so Dazhi marks the buried threshold before the line becomes the visible “river in the sky”.',
+        source: DORTS_WENHU_NEIHU_ARCHITECTURE.id,
+      },
+      {
+        text: 'The public-art chapter’s summary list labels Dazhi with the design topic “Landscape”, but its later list of executed Neihu artworks does not include a Dazhi work among the stations actually carried out.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'Those are two different statements on the same official page: one is a topic list and the other is an executed-artwork list, so this page does not convert the former into a confirmed installed artwork.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The checked primary records identify CB420 and the underground construction method but do not publish an individual Dazhi station contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB420_AIRPORT_TUNNEL.id,
       },
     ],
     note: '大直站. Named outright as the section’s one underground station by DORTS 車站建築設計: 除大直站為地下車站外，其餘共有十座高架車站.',
@@ -1519,15 +1832,76 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'elevated',
     engineering: 'B2',
     exits: 3,
-    sources: [DORTS_WENHU_ARCHITECTURE, DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_PUBLIC_ART,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB423_SCOPE,
+      DORTS_WENHU_CB423_STATIONS,
+      DORTS_WENHU_NEIHU_CONTEXT,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_NEIHU_SPECIAL_FORMS,
+      DORTS_WENHU_JIANNAN_LANDSCAPE,
+    ],
     prose: [
       {
-        text: 'DORTS names Jiannan Road among the Neihu section’s specially shaped stations, where the standard steel-and-glass vocabulary was adapted into a station-specific form.',
-        source: DORTS_WENHU_ARCHITECTURE.id,
+        text: 'Jiannan Road is the first elevated station in the Neihu section, positioned east of the Ziqiang Tunnel roundabout where the buried alignment has returned to the surface.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
       },
       {
-        text: 'Its public artwork, Frog’s Sky, uses the fourteen columns beside Exit 2 for reversed views of mountain, stream, and pond, reflecting on the distance between people and nature after urban development.',
+        text: 'The CB423 work-scope table assigns the B2–B5 station group and its connecting elevated bridge to one construction package under design package DB145.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
+      },
+      {
+        text: 'The technical station record describes B2 as an east–west elevated side-platform station at the east side of the Beian Road and Ziqiang Tunnel intersection, with an approximately 99-metre station body and an 83-metre platform.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'The engineering volume also treats the B2 station’s western and eastern turnout areas as special bridge units, alongside the regular prestressed U-girder spans used between road crossings.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'DORTS places B2 through B5 in the Neihu corridor’s residential–rural landscape zone, a classification that includes some commercial activity but treats the surrounding character as the quieter part of the district.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'The architecture volume connects that zone to Neihu’s former agricultural landscape, its mountains and the Keelung River, and uses the shared “Lake-City Story” theme to link architecture, landscape and public art.',
+        source: DORTS_WENHU_NEIHU_CONTEXT.id,
+      },
+      {
+        text: 'For Jiannan Road specifically, the station theme is “Mountain Ridge” and the associated colour is rice-scent green, a deliberate reference to the local mountain and rural setting.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The station-front plaza was planned as an open urban space for transfers, waiting, gathering and crossing, while also providing room for local activities rather than being only a forecourt.',
+        source: DORTS_WENHU_JIANNAN_LANDSCAPE.id,
+      },
+      {
+        text: 'Its paving uses free curves to evoke mountain contours together with a gridded pattern recalling agricultural fields, and the design called for a public-art competition whose work would express Neihu’s natural and human history.',
+        source: DORTS_WENHU_JIANNAN_LANDSCAPE.id,
+      },
+      {
+        text: 'The official art table records Frog’s Sky at the columns and ceiling beside Exit 2, completed in April 2009 by Chen Chien through open selection, with a listed cost of NT$6 million.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The work’s recorded materials include stainless-steel cable, mirror-finished steel, transparent panels, mirror film, LED tube lights and stone, a material palette that extends the station’s designed relationship between structure and landscape.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'Across the elevated section, DORTS’s design system applies the route colour to platform-door and wayfinding elements while using station colours on columns, paving, wall panels, floors and doors.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'The station’s rounded raised arches were described as a mountain-city and gateway-to-Neihu image, while the internal lighting was intended to read like a lantern at night.',
+        source: DORTS_WENHU_NEIHU_SPECIAL_FORMS.id,
+      },
+      {
+        text: 'The checked CB423 records establish the station group and structure but do not publish an individual station contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
       },
     ],
     planned: [
@@ -1543,11 +1917,76 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'elevated',
     engineering: 'B3',
     exits: 2,
-    sources: [DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_PUBLIC_ART,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB423_SCOPE,
+      DORTS_WENHU_CB423_STATIONS,
+      DORTS_WENHU_NEIHU_CONTEXT,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+    ],
     prose: [
       {
-        text: 'Xihu’s Crossings · Transformation occupies the Xihu Composite Building’s east and north walls and the ground, combining digitally printed imagery, visual illusion, and ceramic tiles that mark changing relationships with the land.',
+        text: 'Xihu is the B3 station in the CB423 group, the same package that covers Jiannan Road, Gangqian and Wende and their connecting elevated bridge.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
+      },
+      {
+        text: 'The technical record places B3 on Neihu Road Section 1 as an east–west elevated island-platform station, with a station body about 93.5 metres long and 18.3 metres wide and an 83-metre platform.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'Its entrance was placed at the northwest side of the Neihu Road and Lane 285 intersection on the existing Xihu Market site, with the north-side parking land included in an integrated development arrangement.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'The engineering record therefore describes a station whose site planning had to share and reorganise an active urban market and parking property.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'DORTS places Xihu in the B2–B5 residential–rural design zone, next to new land created when the Keelung River was straightened, and says the surrounding landscape treatment was intended to respond to that condition.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'The broader Neihu design account treats the river, former agriculture, mountain setting and later urban growth as one historical background for the stations’ architecture and art.',
+        source: DORTS_WENHU_NEIHU_CONTEXT.id,
+      },
+      {
+        text: 'Xihu’s station theme is “Butterfly Dance”, paired with a goose-yellow station colour that DORTS says responds both to butterfly colour and to the grey-green modern architecture of the light-industrial district.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'Unlike the side-platform stations around it, Xihu is one of the two Neihu stations identified in the design review as having an island platform, and it was therefore exempted from the platform-edge rain-stain correction applied to the side-platform group.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'The general design system used glass, metal and curved forms to keep elevated stations visually light, with the overpass and vertical circulation treated as elements that could vary from station to station.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'The official art table records Crossings · Transformation on the Xihu Composite Building’s east and north walls and ground, completed in January 2009 through invited selection at a listed cost of NT$7 million.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'DORTS records the work as combining digitally printed wall imagery, visual illusion, aluminium composite panels and ceramic tiles, with the ground tiles representing changing relationships between people and land.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The station-colour system was designed to appear on structural columns, paving, art wall panels, floor areas and doors, so the theme was intended to be read through ordinary station finishes as well as the named artwork.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'The public-art record places Xihu’s work within the wider Neihu programme, whose selection methods ranged from open selection to invitation and donation depending on the station and later changes.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The checked CB423 pages establish the station’s work package and site interface but do not publish an individual contractor, award date or final station-package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
       },
     ],
   },
@@ -1555,15 +1994,67 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'elevated',
     engineering: 'B4',
     exits: 2,
-    sources: [DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_PUBLIC_ART,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB423_SCOPE,
+      DORTS_WENHU_CB423_STATIONS,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+      DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE,
+    ],
     prose: [
       {
-        text: 'Neihu Peach Blossom Land at Gangqian is a collective embroidery mural by 84 residents, made with professional artist guidance and local business support.',
+        text: 'Gangqian is B4 in the CB423 station group, whose contract scope covers the four elevated stations from Jiannan Road through Wende and the bridge between them.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
+      },
+      {
+        text: 'The technical station record places B4 on the north side of Neihu Road Section 1 as a southeast–northwest elevated side-platform station, with an approximately 92-metre body, 18.3-metre width and 83-metre platform.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'The station is part of the corridor DORTS classifies as residential–rural in overall character, even though the same B2–B5 zone includes commercial activity and the district’s changing urban edge.',
+        source: DORTS_WENHU_NEIHU_DISTRICT.id,
+      },
+      {
+        text: 'Its design theme is “Flower Language”, with an orange-yellow station colour chosen to echo the vivid colours of the flower market identified in DORTS’s design table.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The shared Neihu architecture uses a common family of curved roofs, glass and metal side treatments, then differentiates stations through colour, theme and the treatment of their entrances and overpasses.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'As a side-platform station, Gangqian belongs to the eight-station group for which DORTS reviewed platform-edge weathering and required a design correction.',
+        source: DORTS_WENHU_NEIHU_PLATFORM_MAINTENANCE.id,
+      },
+      {
+        text: 'The official art table records Neihu Peach Blossom Land on the wall at the end of the Exit 1 stairs, completed in December 2006 as a donated work rather than a work funded through the original construction-art budget.',
         source: DORTS_WENHU_PUBLIC_ART.id,
       },
       {
-        text: 'DORTS records it at the wall at the end of Exit 1’s stairs and as a donation, so the work’s location and authorship remain tied to the surrounding community.',
+        text: 'The table names Tsai Wen-hsun and 84 other contributors and describes the work as a community embroidery project supported by local business, resident participation and professional artist guidance.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The technical-art chapter adds an important qualification: the Gangqian piece was donated later, was not part of the original public-art plan, and was placed on the stair-end wall where it cannot be viewed closely.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'That donation explains why Gangqian’s artwork is recorded differently from the open-selection works at Jiannan Road, Songshan Airport and Wende and the invited-selection work at Xihu.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'The station-colour plan places route brown on platform-door and sign systems while using the flower-language colour more broadly on structural and interior elements.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'The checked CB423 and public-art records establish the station group, form and donated artwork but do not publish an individual station contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
       },
     ],
   },
@@ -1571,11 +2062,71 @@ export const STATION_OVERLAY: Record<string, StationOverlay> = {
     structure: 'elevated',
     engineering: 'B5',
     exits: 2,
-    sources: [DORTS_WENHU_PUBLIC_ART],
+    sources: [
+      DORTS_WENHU_PROJECT,
+      DORTS_WENHU_ARCHITECTURE,
+      DORTS_WENHU_PUBLIC_ART,
+      DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS,
+      DORTS_WENHU_CB423_SCOPE,
+      DORTS_WENHU_CB423_STATIONS,
+      DORTS_WENHU_NEIHU_CONTEXT,
+      DORTS_WENHU_NEIHU_DISTRICT,
+      DORTS_WENHU_NEIHU_THEMES,
+      DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES,
+      DORTS_WENHU_NEIHU_ART_INTEGRATION,
+    ],
     prose: [
       {
-        text: 'Bird Flight beside Exit 2 was designed around Bihu Park and white egrets, using digital image composition and mosaic to make the station space align with nature.',
+        text: 'Wende is B5 in the CB423 package, the four-station elevated group that includes Jiannan Road, Xihu and Gangqian.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
+      },
+      {
+        text: 'DORTS describes B5 as an east–west elevated side-platform station with an approximately 92-metre station body, 22.3-metre width and 83-metre platform.',
+        source: DORTS_WENHU_CB423_STATIONS.id,
+      },
+      {
+        text: 'The project table places the operating station at Wende Road in Neihu.',
+        source: DORTS_WENHU_PROJECT.id,
+      },
+      {
+        text: 'Its design theme is “Bird Flight”, and DORTS pairs it with a lake-green colour chosen to reflect Bihu Park’s natural setting and water birds.',
+        source: DORTS_WENHU_NEIHU_THEMES.id,
+      },
+      {
+        text: 'The Neihu architecture volume treats the district’s parks, mountains and Keelung River as part of the station design background, while using “Lake-City Story” to connect older landscape and newer urban transport.',
+        source: DORTS_WENHU_NEIHU_CONTEXT.id,
+      },
+      {
+        text: 'The shared station language uses a light, geometric structure with glass and metal, semi-open platform edges, natural ventilation and station-specific colour rather than six unrelated building designs.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'The official art table records Bird Flight beside the accessible lift at Exit 2, completed in October 2008 by Peng Chih-huang through open selection.',
         source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The table describes the work as combining digital-image composition and mosaic around Bihu Park and the movement of white egrets.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'DORTS lists ceramic-tile and ceramic-mosaic materials and a design fee of NT$200,000, with the physical work carried out by the department’s contractor.',
+        source: DORTS_WENHU_PUBLIC_ART.id,
+      },
+      {
+        text: 'The station-colour plan places the line colour at platform doors and signs and the station colour across selected columns, paving, wall panels, floors and doors, making the bird-flight theme part of the everyday finish schedule.',
+        source: DORTS_WENHU_NEIHU_ART_INTEGRATION.id,
+      },
+      {
+        text: 'The public-art chapter says Wende was one of the stations for which DORTS used open selection, and records the Neihu implementation process as separate from the later donated Gangqian work.',
+        source: DORTS_WENHU_NEIHU_PUBLIC_ART_PROCESS.id,
+      },
+      {
+        text: 'Wende therefore combines a station-specific environmental theme with a standardised elevated structure whose form was adjusted for the local corridor and maintained through a common material system.',
+        source: DORTS_WENHU_NEIHU_DESIGN_PRINCIPLES.id,
+      },
+      {
+        text: 'The checked CB423 and public-art records establish the station group, dimensions, theme and artwork but do not publish an individual station contractor, award date or final package value, so those fields remain TBC.',
+        source: DORTS_WENHU_CB423_SCOPE.id,
       },
     ],
   },

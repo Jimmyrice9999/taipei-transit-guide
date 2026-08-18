@@ -409,6 +409,256 @@ incident register.
   TRTC operational rows are established. The individual contractor, award date
   and final CC403 value remain TBC.
 
+## Additional established claims — BR13–BR18
+
+### Neihu project, station identifiers and airport decision
+
+**Source:** “Wenhu Line project and station table” / `文山內湖線` — Taipei City
+Department of Rapid Transit Systems (`臺北市政府捷運工程局`), PRIMARY, High
+confidence because this is the department’s project record and station table.
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+
+Original-language text checked in full:
+
+> `89年2月交通部指示研究路線至松山機場設站直接服務機場進出旅次之可行性，經評估以捷運內湖線於松山機場增設車站較具工程可行性及在時程上亦可配合，因此將捷運內湖線路線加以微調並於松山機場增設車站。行政院於90年8月1日原則同意，經費部分則獲行政院公共工程委員會以91年1月4日同意。總經費609.97億元。`
+
+> `內湖線為銜接木柵線，自中山國中站尾軌，沿復興北路以高架型式至民族東路口轉進松山機場內佈設漸變段駛入地下，至航站大廈前平面停車場下方設松山機場站，後續往北穿越松山機場、基隆河，經北安路458巷41弄於大直自強隧道南端圓環旁之北安路東側出土，以高架路線往東沿北安路、內湖路、文德路、成功路、康寧路，進入南港經貿園區。`
+
+> `BR13 松山機場 | BR1 ... 3` and `BR14 大直 | B1 ... 3`, followed by the
+> project table’s BR15/B2, BR16/B3, BR17/B4 and BR18/B5 entries.
+
+This establishes the airport-station decision, the route’s buried and elevated
+interfaces, the operating/engineering identifier distinction, and the current
+station table. It does not establish an individual station contractor or a
+final station-package account.
+
+### CB420 airport tunnel and underground construction
+
+**Source:** “Application of automatic and manual monitoring for the CB420 shield
+tunnel crossing Songshan Airport” / `內湖線 CB420 標潛盾隧道穿越松山機場自動及人工監測系統應用`
+— DORTS, PRIMARY, High confidence because the technical article reports the
+construction section, ground conditions, monitoring method and drive dates.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no32/files/basic-html/page100.html
+
+Original-language text checked in full:
+
+> `捷運內湖線 CB420 區段標之工程範圍起自松山機場站（BR1站）東側，以潛盾隧道穿越松山機場，到達濱江街通風豎井，再穿越高速公路及基隆河至大直站（B1站），再沿北安路以潛盾隧道前進，於自強隧道圓環前北安路南側出土，以引道連接內湖線高架段結構。全長約3,460公尺。`
+
+> `下行潛盾隧道 ... 下行隧道全長1241公尺； ... 上行隧道全長1286公尺。`
+
+> `本區段位於台北盆地基隆河流域基一區(K1區)土層分區，係屬一湖積地質 ... 厚度約50至60公尺之軟弱粉土質粘土層 ... 土壤之自然含水量接近液性限度。`
+
+> `下行線(先行隧道)潛盾機於92年10月8日發進，並於93年6月30日到達松山機場站東側連續壁；另上行線(後行隧道)潛盾機亦於93年9月8日發進，並於94年9月7日到達。`
+
+> `監測作業特採以自動化監測系統，並輔以夜間機場關閉後至翌日機場開啟前之人工觀測。`
+
+**Source:** “Neihu Line construction method and traffic-maintenance context” /
+`捷運技術 第40期` — DORTS, PRIMARY, High confidence because the full article
+states the construction methods for the underground station bodies and
+interstation sections.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no40/files/basic-html/page47.html
+
+Original-language text checked in full:
+
+> `地下車站僅車站站體區因使用明挖覆蓋工法施作 ... 站體間使用潛盾隧道。`
+
+These sources establish the CB420 scope, shield-tunnel lengths and dates, K1
+ground conditions, airport monitoring constraints and the cut-and-cover versus
+shield division. They do not establish a contractor or final station-package
+value.
+
+### Architecture and corridor context
+
+**Source:** “Neihu Line station architecture overview” / `捷運車站規劃與設計實務`
+— DORTS, PRIMARY, High confidence because the full architecture chapter
+describes the underground pair and the airport entrance design.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page141.html
+
+Original-language text checked in full:
+
+> `除松山機場站及大直站為地下車站外，其餘共有10座高架車站。`
+
+> `松山機場站位於機場航站前方之停車場用地下方 ... 以「飛翔的故事」為設計理念，其地面出入口及無障礙電梯之造型以螺旋翼意象之鋼構金屬屋頂加以串聯 ... 並結合地面廣場、水景及通風井弧形牆面。`
+
+**Source:** “Neihu Line station forms and Jiannan Road landmark” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+
+Original-language text checked in full:
+
+> `內湖線：高架車站除西湖站及南港展覽館站為島式月臺，其他為側式月臺。`
+
+> `劍南路站－為內湖高架站之第一站 ... 兩端高起之圓拱象徵山城及進入內湖門戶之意象，夜間內部燈光照明猶如燈籠。`
+
+**Source:** “Neihu Line environmental and human context” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page88.html
+
+Original-language text checked in full:
+
+> `早期內湖為農業區，居民以耕種為生，對外交通則以帆船為主。`
+
+> `內湖段之車站，不論於建築設計、景觀設計、室內空間規劃 ... 皆能反應昔日內湖地區與基隆河之密切關係，以及今日內湖及南港地區所擁有的自然生態及人文科技特質。`
+
+**Source:** “Neihu Line corridor design zones” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page91.html
+
+Original-language text checked in full:
+
+> `住宅城鄉風貌：劍南路站至文德站（北安路經內湖路至文德路）`
+
+> `基隆河截彎取直後之新生地與西湖站相鄰。`
+
+**Source:** “Neihu Line elevated-station design principles” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page93.html
+
+Original-language text checked in full:
+
+> `全線的外牆玻璃材料、室內牆面琺瑯鋼板、月臺上扶手欄杆等分割模矩與材料使用。`
+
+> `由於車站主體建築均位於道路上方 ... 採用半開放的方式 ... 也可達到自然通風與輕量的目的。`
+
+**Source:** “Neihu Line station themes and colours” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page95.html
+
+Original-language text checked in full:
+
+> `劍南路站（B2） 山陵 稻香綠；西湖站（B3） 蝶舞 鵝黃色；港墘站（B4） 花語 橙黃色；文德站（B5） 鳥飛 湖綠色。`
+
+**Source:** “Neihu Line station form and environmental detailing” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page97.html
+
+Original-language text checked in full:
+
+> `路線色（棕色）統一表現於各車站月臺門上方及指標系統中。車站色則依循上述所訂定之主題色彩表現。`
+
+**Source:** “Neihu Line platform-edge design review” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page131.html
+
+Original-language text checked in full:
+
+> `除了西湖站及南港展覽館站2座島式月臺車站無此問題外，其他8座側式月臺車站 ... 均須配合修正。`
+
+These architecture sources establish the underground pair, Jiannan’s gateway
+form, the B2–B5 corridor context and themes, the shared material language, the
+route/station colour split, and the island-versus-side-platform maintenance
+distinction.
+
+### CB423 station package and individual sites
+
+**Source:** “CB423 station and viaduct contract scope” / `捷運高架橋梁結構設計與施工`
+— DORTS, PRIMARY, High confidence because the full work-scope table identifies
+the station package.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page22.html
+
+Original-language text checked in full:
+
+> `CB423 B2車站～B5車站及主變電站 ... B2車站東側至B5車站西側之高架橋。`
+
+**Source:** “CB423 station structures and sites” / `捷運高架橋梁結構設計與施工`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html
+
+Original-language text checked in full:
+
+> `B2站位於北安路與自強隧道交叉口東側 ... 東西走向高架側式月臺 ... 月臺長83公尺。`
+
+> `B3車站位於內湖路一段 ... 東西走向高架島式月臺 ... 位於現有西湖市場用地上，將合併市場用地北側之停車場用地進行整體開發。`
+
+> `B4車站位於內湖路一段北側 ... 東南－西北走向高架側式月臺 ... 月臺長83公尺。`
+
+> `B5車站 ... 東西走向高架側式月臺 ... 月臺長83公尺。`
+
+These records establish CB423 and the B2–B5 station-specific structural/site
+claims. The full pages do not identify the individual station contractor,
+award date or final package value.
+
+### Jiannan Road landscape and public art
+
+**Source:** “Jiannan Road station plaza landscape” / `捷運高架車站建築造型設計`
+— DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page156.html
+
+Original-language text checked in full:
+
+> `此站前廣場 ... 可提供內湖地區居民舉辦各種活動之都會開放空間。`
+
+> `為了表現本站「山陵」之副主題及此地區早期農村景觀之特色，廣場之舖面以自由曲線表現山陵的輪廓，搭配農田意象之格子狀舖面。`
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=E45C77C5F722B310
+
+The full official public-art table was checked. Its original-language rows
+record: `劍南路 98年4月 ... 14根柱面及天花 ... 青蛙的天空 ... 6,000,000 公開徵選`; `西湖 98年1月 ... 跨越‧蛻變 ... 7,000,000 邀請比件`; `港墘 95年12月 ... 內湖桃花源 ... 84人 ... 捐贈`; and `文德 97年10月 ... 鳥飛 ... 設計費200,000 ... 公開徵選`.
+
+The same full table records the three Songshan Airport works at Exit 3, the
+concourse wall and platform void, all completed in October 2008 by open
+selection. It supports the artwork names, locations, dates, selection methods,
+materials and listed costs published on BR13, BR15, BR16, BR17 and BR18.
+
+**Source:** “Neihu Line public-art selection and implementation” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page257.html
+
+Original-language text checked in full:
+
+> `1. 松山機場站：飛翔的故事 2. 大直站：山水 3. 劍南路站：湖光山色 4. 西湖站：蝶舞 5. 港墘站：花語 6. 文德站：鳥飛`
+
+> `實際執行之公共藝術如下：1. 松山機場站－公開徵件 2. 劍南路站－公開徵件 3. 西湖站－邀請比件 4. 港墘站－捐贈 5. 文德站－公開徵件 ...`
+
+> `港墘站之作品為後續民間團體捐贈， ... 未在原公共藝術設置計畫內。`
+
+The first list is treated as a design-topic summary; the second is treated as
+the executed-artwork list. The page does not establish an installed Dazhi work.
+It also says the non-donated Neihu works were funded from the line budget and
+that DORTS handled selection/valuation and implementation responsibilities.
+
+### Station-by-station disposition for the third batch
+
+- **BR13 Songshan Airport:** The airport-station decision, route adjustment,
+  engineering BR1/current BR13 distinction, CB420 shield-tunnel scope, airport
+  geology and monitoring, flight-themed architecture, and three public-art
+  rows are established. No individual station contractor, award date or final
+  package value is established.
+- **BR14 Dazhi:** The underground station, B1/current BR14 distinction, CB420
+  tunnel context, cut-and-cover station method, and the topic-list versus
+  executed-artwork-list conflict are established. The primary pages do not
+  confirm an installed Dazhi artwork or an individual contractor/value.
+- **BR15 Jiannan Road:** CB423 scope, B2 station form, residential–rural
+  corridor context, Mountain Ridge theme, plaza landscape and Frog’s Sky art
+  record are established. Contractor, award date and final package value are
+  TBC.
+- **BR16 Xihu:** CB423 scope, island-platform structure, market/parking
+  development interface, reclaimed-land context, Butterfly Dance theme,
+  platform-edge distinction and Crossings · Transformation art record are
+  established. Contractor, award date and final package value are TBC.
+- **BR17 Gangqian:** CB423 scope and B4 form, Flower Language theme, side-
+  platform maintenance context and the donated 84-person Neihu Peach Blossom
+  Land work are established. The original-plan/donation distinction is
+  published; contractor, award date and final package value are TBC.
+- **BR18 Wende:** CB423 scope and B5 form, Bird Flight theme, Bihu Park
+  context, Bird Flight artwork, materials, fee and open-selection record are
+  established. Contractor, award date and final package value are TBC.
+
 ## Conflicts
 
 1. **Tunnel wording and extent:** The current DORTS project record describes
@@ -431,6 +681,13 @@ incident register.
    project table gives current station codes and addresses. The package claims
    above are mapped only where the two official tables identify the same
    station name; no contractor or value was inferred from the package number.
+
+4. **Dazhi public-art status:** The DORTS public-art chapter’s topic summary
+   lists `大直站：山水`, while its later executed-artwork list omits Dazhi and
+   lists the works actually carried out at Songshan Airport, Jiannan Road,
+   Xihu, Gangqian and Wende. The page does not say whether the Dazhi topic was
+   cancelled, redesigned or only a planning label. The station page publishes
+   the conflict and does not assert an installed Dazhi work.
 
 ## Checked and failed
 
@@ -469,6 +726,18 @@ incident register.
   full live operational table supplies dated entries current at the fetch time,
   but it explicitly functions as an operational log rather than a complete
   historical register. Older incidents were not inferred from its absence.
+- **BR13–BR18 individual station contractors, award dates and final package
+  values** — Checked 2026-08-18. The full DORTS project, CB420/CB423 technical
+  records, architecture volumes and public-art table identify packages, sites,
+  dates and artwork costs but do not provide a station-level final civil or
+  architecture account. These fields remain TBC.
+- **Installed Dazhi public art** — Checked 2026-08-18. The full DORTS public-art
+  chapter contains both the `大直站：山水` topic list and the later executed-art
+  list that omits Dazhi. The topic was not promoted into a confirmed artwork.
+- **BR13–BR18 station-specific feeder-bus prose** — Checked 2026-08-18. TDX
+  stop-ID joins are available in `data/tdx/bus/rail-stop-joins.json`, but no
+  full PTO or ebus route page was fetched and attached to this batch. No feeder
+  route assertion was published.
 
 ## Stated gaps
 
@@ -494,3 +763,11 @@ incident register.
   TRTC transfer diagram with a measurement would settle it.
 - BR07, BR11 and BR12 station-specific public art and all six stations’ feeder
   bus prose remain TBC pending full operator or PTO records.
+- Individual BR13–BR18 station contractors, award dates and final package
+  values remain TBC pending a period DORTS award notice, completion certificate
+  or final account.
+- Dazhi’s `山水` topic remains unresolved as an installed artwork because the
+  same official chapter’s executed list omits it. A DORTS artwork completion
+  record or station art register with Dazhi’s final status would settle it.
+- BR13–BR18 feeder-bus prose remains TBC pending full PTO or ebus route pages
+  joined by stop ID.

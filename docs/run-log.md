@@ -8220,3 +8220,79 @@ the citation and research checks passed, the full test suite passed (185/185),
 and the verification build passed after regenerating the needed BR font subset
 and manifest entries. The claims test, claims baseline and checkers were not
 changed. The next batch is BR13–BR18.
+
+# Run 31 — Part 1 Wenhu station prose, BR13–BR18, 18 August 2026
+
+## Sourced
+
+This batch deepened six Neihu-section station pages. The resulting body-prose
+counts are BR13 509 words, BR14 424, BR15 408, BR16 428, BR17 345, and BR18
+323, for 2,437 words total. Every sentence is cited to a primary source.
+
+The full primary pages fetched and used were:
+
+- DORTS Wenhu project and current station table:
+  https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+- CB420 airport tunnel, geology and monitoring:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no32/files/basic-html/page100.html
+- Neihu construction method and traffic-maintenance article:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no40/files/basic-html/page47.html
+- Neihu architecture overview and station forms:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page141.html and
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+- Neihu context, corridor zones, design principles, themes, colour integration
+  and platform-edge review:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page88.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page91.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page93.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page95.html,
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page97.html, and
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page131.html
+- CB423 package scope and B2–B5 station records:
+  https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page22.html and
+  https://ebook.dorts.gov.taipei/ebook/no32/files/basic-html/page23.html
+- Jiannan Road plaza landscape:
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page156.html
+- DORTS public-art table:
+  https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=E45C77C5F722B310
+- Neihu public-art selection and implementation chapter:
+  https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page257.html
+
+BR13 now documents the airport-station feasibility decision, CB420’s shield
+tunnel beneath the runway/apron/taxiway, K1 soft-clay conditions, monitoring
+constraints and the flight-themed entrance and art. BR14 documents the
+underground/cut-and-cover threshold at Dazhi and the CB420 continuation to the
+emergence point. BR15–BR18 document CB423, station-specific site/form records,
+the residential–rural corridor context, themes and colours, platform-type
+design, Jiannan’s plaza and the official art records for all four stations.
+
+## TBC
+
+The full primary set does not identify individual BR13–BR18 station contractors,
+award dates or final civil/architecture package values. No feeder-bus prose was
+added: TDX stop-ID joins exist, but a full PTO or ebus route page was not
+fetched for this batch. Dazhi’s installed artwork status remains TBC because
+the source’s topic list and executed-artwork list disagree about whether its
+“Landscape” topic became an installed work.
+
+## Contradicted the corpus
+
+The prior thin BR13–BR18 overlays were superseded by the full DORTS project,
+CB420/CB423 technical, architecture and public-art records. No unverified
+research appendix was promoted. The Dazhi artwork topic was explicitly left
+unconfirmed rather than converted into a fact.
+
+## Conflicts found
+
+The DORTS public-art chapter lists `大直站：山水` in a station-topic summary,
+but its later executed-artwork list omits Dazhi and lists the works carried out
+at Songshan Airport, Jiannan Road, Xihu, Gangqian and Wende. The page does not
+explain whether the Dazhi topic was cancelled, redesigned or only planned; the
+station page publishes both values and their meanings. Engineering B1/BR1–B5
+labels are construction-era identifiers, kept separate from current BR13–BR18
+codes. No numerical route-length or package-value conflict was hidden.
+
+No colour-prefix audit applies to a station batch. After adding the batch log,
+the citation, research, build, font-subset and full verification gates will be
+rerun before commit. The claims test, claims baseline and checkers are not
+changed. The next batch is BR19–BR24, completing the Wenhu line.
