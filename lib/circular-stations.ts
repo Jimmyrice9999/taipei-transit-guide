@@ -102,6 +102,14 @@ const book194 = source(
   'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html',
   'The full official HTML book page publishes Y18–Y20 platform forms, platform dimensions, entrance positions and accessible-lift descriptions.',
 )
+const book15 = source(
+  'dorts-circular-construction-management-book-43',
+  'Circular Line construction-management strategy, page 43',
+  '捷運工程叢書精進版－15 捷運工程施工管理實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page43.html',
+  'The full official HTML book page publishes the source-era scope of CF650, CF660A and CF660B, including utilities, environmental control, lifts/escalators, civil works, bridge works and noise barriers.',
+)
 const artLine = source(
   'dorts-circular-art-line',
   'Circular Line Phase 1 public art — Lin Guang',
@@ -251,14 +259,71 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'That source does not publish a Y12-only artwork selection or allocation, so the line-wide fee is not presented as a station art budget.', source: artLine.id },
     { text: 'The searched DORTS route, architecture and book pages do not publish a Y12 civil final account or a construction-era rename gazette; each remains TBC until a station-specific primary record is found.', source: book192.id },
   ],
+  Y13: [
+    { text: 'The elevated-station architecture book assigns the Y12-to-Y15 source-era section to CF651B within CF650, with 中華工程 as the CF650 contractor; that package description is broader than a station-only bill.', source: book191.id },
+    { text: 'A separate DORTS construction-management volume describes CF650 as the Y8-to-Y14 source-era corridor package, including utilities, environmental control, lifts and escalators, civil works and added operational requirements, so its scope is recorded at programme level.', source: book15.id },
+    { text: 'The architecture book records approximately 740 metres from Y13 to Y14 and approximately 1,045 metres from Y14 to Y15, measurements of the alignment between stations rather than dimensions of Y13 itself.', source: book193.id },
+    { text: 'The same page places the station entrance in the parking area and two-storey building of New Channel Cable TV and records a one-storey temporary building at the neighbouring Y14 site, showing that the station sequence passed through already occupied and temporary urban plots.', source: book193.id },
+    { text: 'DORTS’s architecture record describes the DF112 source-era design section as using triangular elements and integrating public-art treatment into vertical-circulation walls, ticket-gate ceilings and concourse strip lighting.', source: dortsArchitecture.id },
+    { text: 'The route table labels this station Y12, while current operating records use Y13; the builder’s engineering identifier is kept as a source-era label and is not treated as a later rename.', source: dortsPhase1.id },
+    { text: 'The line-wide public-art record documents commissioned creation with a NT$16,000,000 design fee and places the work across viaduct structures, sound barriers, platform doors, selected station surfaces and trains.', source: artLine.id },
+    { text: 'The checked primary records do not publish a Y13 civil final account, contract date or value, construction-era rename gazette, or station-only public-art allocation, so those fields remain TBC.', source: book15.id },
+  ],
+  Y14: [
+    { text: 'The elevated-station architecture book places the source-era Y12-to-Y15 work in CF651B under the CF650 section contract and names 中華工程 as the CF650 contractor.', source: book191.id },
+    { text: 'The construction-management volume describes CF650 as the source-era Y8-to-Y14 package and includes utilities, environmental control, lifts and escalators, civil works and added operational requirements, a scope description that is not a station-only price.', source: book15.id },
+    { text: 'The official architecture table gives approximately 740 metres from Y13 to Y14 and approximately 1,045 metres from Y14 to Y15, retaining both values as the book’s interstation measurements.', source: book193.id },
+    { text: 'For Y14, the book records one entrance on the east side of Ban-nan Road near Ban-nan Bridge 2 and says the site had previously contained a one-storey temporary building, an urban-condition detail not represented by the station’s structured dimensions.', source: book193.id },
+    { text: 'The DF112 design record identifies triangular elements and art-integrated treatment at vertical-circulation walls, ticket-gate ceilings and the concourse ceiling’s strip lighting.', source: dortsArchitecture.id },
+    { text: 'DORTS’s source-era station table calls this row Y13, whereas current operating records call it Y14; the difference is published as an engineering-code conflict, not silently recast as a rename.', source: dortsPhase1.id },
+    { text: 'The line-wide art record reports commissioned creation and a NT$16,000,000 design fee for an intervention extending through elevated structures, sound barriers, platform doors, selected station surfaces and trains.', source: artLine.id },
+    { text: 'The full pages checked do not provide a Y14-only civil final account, contract date or value, dated rename gazette or station-specific art allocation; each remains TBC.', source: book15.id },
+  ],
+  Y15: [
+    { text: 'The architecture book assigns the source-era Y12-to-Y15 section to CF651B within CF650, with 中華工程 as contractor, and separately lists Y15 in CF660A’s CF661A station package under 春原營造.', source: book191.id },
+    { text: 'The construction-management volume instead describes CF650 as the source-era Y8-to-Y14 package and CF660A as the source-era Y15-to-Y16 package, including utilities, environmental control, lifts and escalators, civil works and added operational requirements.', source: book15.id },
+    { text: 'These two official books therefore give overlapping boundary labels around Y15—CF651B reaches the source-era Y15 in the architecture book, while CF660A begins with source-era Y15 in the construction-management scope—and the records do not explain the boundary difference.', source: book191.id },
+    { text: 'The architecture table records approximately 1,045 metres from Y14 to Y15 and approximately 895 metres from Y15 to Y16, which are interstation alignment intervals rather than station-building dimensions.', source: book193.id },
+    { text: 'DORTS’s architecture page places the source-era Y15–Y19 stations in the “心樂活” design package, using circular elements in interior columns, ceiling recesses and seating and colour-block treatment on vertical-circulation walls.', source: dortsArchitecture.id },
+    { text: 'The route table calls this row Y14, while current operating records call it Y15; that source-era engineering identifier is retained beside the current code rather than interpreted as a rename.', source: dortsPhase1.id },
+    { text: 'The line-wide art record documents commissioned creation and a NT$16,000,000 design fee, but it does not allocate that fee to Y15 or identify a separate station-only artwork budget.', source: artLine.id },
+    { text: 'The checked primary pages do not publish Y15’s final civil account, contract dates or values, a dated rename gazette or a station-specific public-art allocation, so those fields remain TBC.', source: book15.id },
+  ],
   Y16: [
+    { text: 'The architecture book assigns CF660A to 春原營造 and identifies CF662 as the civil package for the station and the Banqiao intercity bus terminal’s joint-development building, adding the contractor to the station’s existing contract reference.', source: book191.id },
+    { text: 'The construction-management volume describes CF660A as the source-era Y15-to-Y16 elevated-section package, including utilities, environmental control, lifts and escalators, civil works and added operational requirements.', source: book15.id },
+    { text: 'The architecture table records approximately 895 metres from Y15 to Y16 and approximately 1,425 metres from Y16 to Y17, which are the book’s interstation spacing values rather than a measurement of the joint-development building.', source: book193.id },
+    { text: 'DORTS’s route table uses engineering Y15 for the current Y16 station, while the operating record uses Y16/BL07; both identifiers remain visible because they describe different numbering systems.', source: dortsPhase1.id },
+    { text: 'The station-specific public-art record identifies commissioned creation and a NT$12,000,000 design fee for the Banqiao work, distinct from the NT$16,000,000 line-wide commission recorded elsewhere.', source: artBanqiao.id },
+    { text: 'The architecture page describes the source-era Y15–Y19 package as “心樂活”, using circular elements in interior columns, ceiling recesses and seats and colour-block treatment on vertical-circulation walls; this is the corridor design brief, not a description of the artwork’s content.', source: dortsArchitecture.id },
+    { text: 'The checked records do not publish the CF662 contract date, contract value, final civil account, a dated rename gazette or a paid-area/street-transfer classification, so those fields remain TBC.', source: book191.id },
     { text: 'DORTS describes Daniel Buren’s work as an optical architecture of 8.7-centimetre colour bands, geometric forms, mirrored space and LED rainbows, with the platform columns carrying the station beneath the bus terminal.', source: artBanqiao.id },
+  ],
+  Y17: [
+    { text: 'The architecture book places source-era Y17 in CF660A’s CF661A station package, alongside Y15, and names 春原營造 as the CF660A contractor.', source: book191.id },
+    { text: 'The construction-management volume instead assigns source-era Y17–Y19 to CF660B, including elevated works, utilities, environmental control, lifts and escalators, an extended bridge reconstruction and beautification, operational additions and extra sound barriers.', source: book15.id },
+    { text: 'The two official records therefore disagree on the section package boundary around this station—CF661A in the architecture book versus CF660B in the construction-management scope—and both values are retained without choosing one.', source: book191.id },
+    { text: 'The architecture table records approximately 1,425 metres from Y16 to Y17 and approximately 1,635 metres from Y17 to Y18, the book’s interstation intervals rather than a station-structure measurement.', source: book193.id },
+    { text: 'DORTS’s architecture page describes the source-era Y15–Y19 corridor as a fast-developing urban area around Banqiao New Station, Xinpu, Touqianzhuang, the Xinzhuang sub-centre and New Taipei Industrial Park.', source: dortsArchitecture.id },
+    { text: 'Its “心樂活” brief uses circular elements in interior columns, ceiling recesses and seating, while vertical-circulation walls receive station-colour blocks by artist Emmanuelle Moureaux.', source: dortsArchitecture.id },
+    { text: 'The route table calls this station Y16, while current operating records call it Y17; the engineering label is retained as historical source context rather than treated as a rename.', source: dortsPhase1.id },
+    { text: 'The line-wide art record documents commissioned creation and a NT$16,000,000 design fee, but no Y17-only artwork allocation, final civil account, contract date or contract value is published in the checked pages, so those fields remain TBC.', source: artLine.id },
+  ],
+  Y18: [
+    { text: 'The architecture book assigns source-era Y18–Y20 to CF660B’s CF661B package and names 遠揚營造 as the contractor, providing the section-level builder record for this station’s corridor.', source: book191.id },
+    { text: 'The construction-management volume describes CF660B as the source-era Y17–Y19 package, including elevated works, utilities, environmental control, lifts and escalators, the Sihyuan overpass extension and beautification, operational additions and extra sound barriers.', source: book15.id },
+    { text: 'Those official books therefore disagree about the source-era endpoints of CF660B—Y18–Y20 in the architecture-package table versus Y17–Y19 in the construction-management scope—and both descriptions are kept.', source: book191.id },
+    { text: 'The architecture book records approximately 1,635 metres from Y17 to Y18 and approximately 1,155 metres from Y18 to Y19, while the following page records approximately 1,155 metres from Y18 to Y19 and 1,240 metres from Y19 to Y20.', source: book193.id },
+    { text: 'DORTS describes the source-era Y15–Y19 corridor as serving rapidly developing urban districts and important transport hubs, including Touqianzhuang and the Xinzhuang sub-centre.', source: dortsArchitecture.id },
+    { text: 'The “心樂活” design brief uses circular elements in interior columns, ceiling recesses and seating and assigns station-colour blocks by Emmanuelle Moureaux to vertical-circulation walls.', source: dortsArchitecture.id },
+    { text: 'The route table calls this row Y17/O17, while current operating records call it Y18/O; the difference is preserved as source-era engineering versus current operating identification.', source: dortsPhase1.id },
+    { text: 'The line-wide art record documents commissioned creation and a NT$16,000,000 design fee, but the checked primary pages do not publish a Y18-only art allocation, final civil account, contract date or contract value, so those fields remain TBC.', source: artLine.id },
   ],
 }
 
 function makeResearch(code: string, data: YData): StationResearch {
   const operatorSource = ntmcStation(code)
-  const sources = [operatorSource, ntmcStationList, ntmcAccessibility, tdxStations, data.route, data.structureSource, data.platformSource, data.exitSource, data.landmarksSource, data.engineeringHistorySource, data.publicArtSource]
+    const sources = [operatorSource, ntmcStationList, ntmcAccessibility, tdxStations, book15, data.route, data.structureSource, data.platformSource, data.exitSource, data.landmarksSource, data.engineeringHistorySource, data.publicArtSource]
     .filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
   return {
     sources,

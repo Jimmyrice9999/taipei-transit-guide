@@ -392,6 +392,114 @@ facts/specifications.
   emergence positions or a complete station-only track account. TBC. Checked
   18 August 2026.
 
+## Y13–Y18 deepening — 18 August 2026
+
+The earlier Y13–Y18 audit was superseded for this batch. Fresh full fetches of
+the DORTS architecture book pages 191, 193 and 194, the construction-management
+book page 43, the route record, the station-architecture record, the line-wide
+art record and the Banqiao station-art record returned contract-package scope,
+contractors, interstation distances and art-procurement values that are not
+repeated in the generated station facts/specifications.
+
+### Established
+
+- **CF650 and CF651B.** The architecture book says 「CF650區段標：由中華工程承包」
+  and assigns 「中和站（Y12）站至板新站（Y15），施工標為CF651B標」. The
+  construction-management book separately describes CF650 as the source-era
+  Y8–Y14 package and lists utilities, environmental control, lifts/escalators,
+  civil works and operational additions. Sources: DORTS, *Circular Line
+  elevated station architecture, pages 171–173* (`dorts-circular-architecture-
+  book-191`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html;
+  and DORTS, *Circular Line construction-management strategy, page 43*
+  (`dorts-circular-construction-management-book-43`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page43.html.
+
+- **CF660A and CF662.** The architecture book says 「CF660A區段標：由春原營造
+  承包」, assigns 「板新站（Y15）及新埔民生站（Y17），施工標為CF661A標」,
+  and assigns the Banqiao station/bus-terminal joint-development civil works
+  to CF662. Source: DORTS, *Circular Line elevated station architecture,
+  page 171* (`dorts-circular-architecture-book-191`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html.
+
+- **CF660B and CF661B.** The same page says 「CF660B區段標：頭前庄站（Y18）至
+  新北產業園區站（Y20）」, with CF661B 「由遠揚營造承包」. The construction-
+  management page instead describes CF660B as the source-era Y17–Y19 package,
+  including elevated works, utilities, environmental control, lifts/escalators,
+  Sihyuan overpass extension/beautification, operational additions and added
+  sound barriers. Sources: DORTS, *Circular Line elevated station architecture,
+  page 171* (`dorts-circular-architecture-book-191`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html;
+  and DORTS, *Circular Line construction-management strategy, page 43*
+  (`dorts-circular-construction-management-book-43`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page43.html.
+
+- **Interstation context.** The full architecture pages record Y13–Y14 at about
+  740 m, Y14–Y15 at about 1,045 m, Y15–Y16 at about 895 m, Y16–Y17 at about
+  1,425 m, Y17–Y18 at about 1,635 m, Y18–Y19 at about 1,155 m and Y19–Y20 at
+  about 1,240 m. These are alignment intervals, not station dimensions. Sources:
+  DORTS, *Circular Line elevated station architecture, page 173*
+  (`dorts-circular-architecture-book-193`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page193.html;
+  and page 174 (`dorts-circular-architecture-book-194`, PRIMARY, High):
+  https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html.
+
+- **DF113 design context.** The full architecture record describes the source-era
+  Y15–Y19 section as 「心樂活」 because it passes the Banqiao New Station district,
+  Xinpu, Touqianzhuang, the Xinzhuang sub-centre and New Taipei Industrial Park,
+  and says circular elements appear in interior columns, ceiling recesses and
+  seats while vertical-circulation walls use station-colour blocks by Emmanuelle
+  Moureaux. Source: DORTS, *Circular Line station architecture*
+  (`dorts-circular-architecture`, PRIMARY, High):
+  https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8.
+
+- **Public-art procurement.** The full line-wide art record reports commissioned
+  creation and a NT$16,000,000 design fee across corridor structures, sound
+  barriers, platform doors, selected station surfaces and trains. The Banqiao
+  record separately reports 「徵選方式：委託創作」 and 「設計費(新臺幣)：12,000,000元」.
+  Sources: DORTS, *Circular Line Phase 1 public art — Lin Guang*
+  (`dorts-circular-art-line`, PRIMARY, High):
+  https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576;
+  and *Banqiao station public art — Between Reflections*
+  (`dorts-circular-art-banqiao`, PRIMARY, High):
+  https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=658A187A584F11E4.
+
+### Conflicts and scope distinctions
+
+1. The architecture-package book assigns Y15/Y17 to CF661A within CF660A and
+   Y18–Y20 to CF661B within CF660B, while the construction-management book
+   describes CF660A as source-era Y15–Y16 and CF660B as source-era Y17–Y19.
+   These are both official scope descriptions; they are not averaged or
+   silently reconciled.
+2. The architecture book’s Y12–Y15 CF651B boundary overlaps its separate Y15
+   CF661A listing, while p43 describes CF650 only through source-era Y14. The
+   records do not explain whether the different endpoints represent contract
+   boundaries, source-era numbering or later scope changes.
+3. The NT$16,000,000 figure is a line-wide design fee; the NT$12,000,000 figure
+   is the station-specific Banqiao public-art fee. They measure different
+   commissions and both remain published.
+4. DORTS’s engineering labels remain one lower than current operating labels in
+   this range: the route table uses Y12–Y17 for current Y13–Y18. The engineering
+   and operating identifiers are both retained.
+
+### Checked and failed — Y13–Y18
+
+- **Y13–Y18 station civil final accounts:** full DORTS route, architecture,
+  construction-management and art pages returned package scope, contractors and
+  fees but no station-only final account. TBC. Checked 18 August 2026.
+- **Y13–Y18 contract dates and values:** the full p191 and p43 HTML book pages
+  identify packages and contractors but publish no dated award or contract value
+  for these station packages. TBC. Checked 18 August 2026.
+- **Y13–Y18 construction-era rename instruments:** the full NTMC station pages,
+  station list and DORTS pages returned no dated rename gazette. TBC. Checked 18
+  August 2026.
+- **Y13–Y18 station-only art allocations:** the line-wide and Banqiao art pages
+  return a corridor fee and a Banqiao fee but no separate Y13–Y15 or Y17–Y18
+  allocation. TBC. Checked 18 August 2026.
+- **Y13–Y18 fare-boundary modes:** the full NTMC, DORTS and TDX records do not
+  establish a complete paid-area/street-transfer classification. TBC. Checked 18
+  August 2026.
+
 ## Conflicts
 
 1. The route table uses engineering station identifiers one number lower than

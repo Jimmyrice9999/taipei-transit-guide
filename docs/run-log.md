@@ -8882,6 +8882,49 @@ sourced. No station colour-prefix audit applies. Next: audit BL07–BL12.
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
 
+# Run 31 — Part 1 Circular Y13–Y18, 18 August 2026
+
+Deepened six Circular Line station pages after the pre-action audit found Y13,
+Y14, Y15, Y17 and Y18 empty and Y16 at 31 body words. Final body-prose counts:
+Y13 249, Y14 227, Y15 239, Y16 241, Y17 224 and Y18 227; batch total 1,407
+words. No facts/specs were restated as prose.
+
+Sourced: CF650/CF651B and 中華工程; CF660A/CF661A and 春原營造; CF662 for
+the Banqiao joint-development civil works; CF660B/CF661B and 遠揚營造; the
+broader CF650/CF660A/CF660B scopes in the construction-management book; Y13–
+Y18 interstation distances; DF113 urban-corridor design intent; and the
+line-wide and Banqiao public-art procurement fees. Primary URLs fetched in
+full:
+
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page191.html
+- https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page43.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page193.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page194.html
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=3293A4AF14D279A8
+- https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789
+- https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=C8FCD9B3118D2576
+- https://www.dorts.gov.taipei/cp.aspx?n=6213240b5a7c3330&s=658A187A584F11E4
+
+Conflicts published: p191’s CF661A Y15/Y17 and CF661B Y18–Y20 assignments
+conflict with p43’s source-era CF660A Y15–Y16 and CF660B Y17–Y19 scopes; the
+CF651B Y12–Y15 boundary also overlaps p191’s Y15 CF661A listing; engineering
+station codes remain one lower than current operating codes; and the
+NT$16,000,000 line-wide fee is kept distinct from the NT$12,000,000 Banqiao
+station fee. TBC: Y13–Y18 station-only civil accounts, contract dates/values,
+rename gazettes, station-only art allocations and complete fare-boundary modes.
+
+Contradicted the corpus: the earlier audit’s zero-word results for Y13–Y15 and
+Y17–Y18, and the 31-word Y16 result, were superseded by full DORTS contract,
+technical-book, architecture and art pages. No colour-prefix audit applies.
+The fresh build required the Y font subset to include the new p43 source title;
+the regenerated subset passed the glyph audit.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary);
+fresh `npm run verify` clean (519 pages, no missing glyphs, links or a11y
+errors, 185/185 unit tests, research/claims/geometry/CVD clean); explicit
+`npm test` clean; `git diff --check` clean. Next: audit and deepen Circular
+Y19–Y20, the final two stations on this line.
+
 # Run 31 — Part 1 Circular Y07–Y12, 18 August 2026
 
 Deepened six Circular Line station pages after the pre-action audit found Y07
