@@ -9584,3 +9584,65 @@ contradictions); `git diff --check` clean. `docs/for-jamie.md` remains 19 lines.
 
 Next: commit and push this six-station Ankeng batch, then audit Ankeng K07–K09
 before proceeding to the remaining parts of the run.
+
+# Run 35 — Part 2 Ankeng LRT K07–K09 and Danhai completion audit, 18 August 2026
+
+Audited before editing. K07 had zero prose, K08 had 32 words and K09 had 47.
+The previous K07–K09 search had fetched the full NTMC station pages/table,
+DORTS route and station-position pages, K08 and K09 public-art records and the
+An-Xin Bridge record, but had not searched the DORTS K08 floating-trackbed or
+K09/An-Xin Bridge track-progress pages. Both new video pages were fetched
+directly as full HTML after web-reader cache misses; no search snippet was used.
+
+Final body-prose counts, excluding rendered citation markers: K07 331, K08 345
+and K09 380; batch total 1,056 words. K08 and K09 retain their earlier sourced
+public-art sentences.
+
+Primary URLs fetched or reused and cited:
+
+- https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/jW0OdPGn2nbJ
+- https://www.dorts.ntpc.gov.tw/documentary/video/BjeZYp3wdAwv?Page=6&type=149&vid=WQR2WeNvZGPV
+- https://www.dorts.ntpc.gov.tw/documentary/video/MJjdJqXb2Av6?type=149&vid=xVR2eNL0dJ36
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/oa1ZKpQXmB9V
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmar102qya
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3QGZ8V7J2rb4?page=220
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/P9z2zp6WZrDp
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/Pxe2kjWxmEgL?page=7
+- https://www.ntmetro.com.tw/basic/?node=10137
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/O6JmaQKpmqya
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/yEwdwjao2M04
+
+Conflict published: DORTS’s route page labels the K09 Circular Line transfer
+Y8, while its separate station-position table labels it Y7. Both identifiers
+remain visible as different primary records. No false-prefix audit applies.
+
+Danhai audit: all 14 stations were already complete before this batch, so no
+duplicate edits were made. Counts are V01 265, V02 269, V03 260, V04 279, V05
+258, V06 251, V07 304, V08 322, V09 277, V10 305, V11 304, V26 295, V27 314
+and V28 296; total 3,999 words. The NTMC public-art page records Jimmy Liao’s
+commissioned Green Mountain collaboration across all 11 Green Mountain
+stations; the site describes programme scope only and leaves station-specific
+titles and year TBC. Source: https://www.ntmetro.com.tw/basic/?node=17. No
+artwork content was reproduced.
+
+Complete lines after this batch: Wenhu (BR), Bannan (BL), Circular (Y), Airport
+(A), Danhai (V) and Ankeng (K). Still below 200 words: Tamsui–Xinyi R25–R27;
+Songshan–Xindian G02, G03, G06, G11, G13, G17, G18, G19; all Zhonghe–Xinlu O;
+and all Sanying LB. These are the next remaining station batches.
+
+TBC for K07–K09: station-only contracts, architects, numbered exits,
+station-specific platform/track tables, dated renames, station-level depot
+rosters and K07 public art. The widened New Taipei source families returned
+route context, K08 vibration mitigation, K09 track/turnout engineering and
+line-wide power, testing and quality records, but no station-only contract
+allocations.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after line-K font regeneration (519 pages, no missing
+glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185 tests);
+explicit `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. `docs/for-jamie.md` remains 19 lines.
+
+Next: commit and push this K07–K09 batch, then continue with R25–R27 and the
+remaining incomplete G, O and LB station groups.

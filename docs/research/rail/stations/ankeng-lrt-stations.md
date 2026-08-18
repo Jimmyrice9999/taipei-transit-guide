@@ -168,6 +168,57 @@ K07–K09 therefore add three sourced sentences. K08 uses
 `dorts-ankeng-k09-art`. Their full URLs are recorded in the implementation
 source and in the source table below.
 
+## Widened source audit and station-prose deepening: K07–K09 — 18 August 2026
+
+The prior K07–K09 audit fetched the full NTMC detail pages, the NTMC station
+table, DORTS route and station-position pages, the K08 public-art record, the
+K09 public-art article and the An-Xin Bridge record. It did not search DORTS’s
+video-page progress records for the K08 vibration treatment or K09 track and
+turnout work. Before editing, the prose-only counts were K07 0, K08 32 and K09
+47 words.
+
+The full DORTS route page is PRIMARY, High confidence. It places K07 near the
+former Taiwan Malt Factory, says the alignment crosses National Freeway 3 and
+the Zhong’an Bridge approach before K08, places K08 near the Water Resources
+Agency Xindian Office, and describes the route continuing across the New Taipei
+Ring Expressway and Xindian River to K09:
+
+> 「台灣麥芽廠舊址附近設K7站，跨越國道3號及中安大橋引道後，於安和路三段水利署新店辦公區轉向東行設K8站，沿新闢計畫道路北行後跨越新北環快道路、新店溪至新店十四張地區，設置K9站」
+
+URL: `https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ`.
+
+The full DORTS K08 floating-trackbed video page is PRIMARY, High confidence.
+It identifies three floating-trackbed locations between Anhe Road Section 3
+and Xinhe Elementary School K08 because the elevated section runs near homes,
+and it distinguishes grooved rail on the surface section from I-shaped rail on
+the elevated section:
+
+> 「沿安和路三段至新和國小站(K8)間……設置了浮動式道床，共設置3處」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/video/BjeZYp3wdAwv?Page=6&type=149&vid=WQR2WeNvZGPV`.
+
+The full DORTS K09 and An-Xin Bridge track-progress video page is PRIMARY, High
+confidence. It records track laying at K09 and on An-Xin Bridge and explains
+that the bridge’s diamond turnout was done first because construction was
+difficult:
+
+> 「目前K9站以及安心橋正在進行軌道鋪設作業」；「所採用的菱形道岔……施工困難性較高，所以目前先施作道岔」
+
+URL: `https://www.dorts.ntpc.gov.tw/documentary/video/MJjdJqXb2Av6?type=149&vid=xVR2eNL0dJ36`.
+
+Both video pages were fetched directly as full HTML after the web-reader
+returned cache misses; no search snippet was used. The expanded source search
+returned route-level K07 and K08 corridor context, a K08-specific vibration
+mitigation decision, K09 track and turnout engineering, and the previously
+recorded K09 bridge, art, power, testing and quality sources. It did not return
+station-only contract values, architects, exit tables or rename gazettes.
+
+The new prose adds 13 sentences to K07, 14 to K08 and 14 to K09, while retaining
+the earlier K08 and K09 public-art sentences. K09 also publishes the existing
+primary identifier conflict: the route page calls the Circular Line transfer
+Y8, while the separate DORTS station-position table calls it Y7. Those values
+measure different DORTS records and remain unresolved.
+
 ## What is established
 
 ### Identity and position
@@ -363,11 +414,11 @@ operator or builder names near the station, not inferred geography.
 - **Station-level depot roster** — the builder identifies Ankeng Depot and its
   functions but does not publish station allocation by train or shift. Checked
   14 August 2026.
-- **Station-specific contract values and architects for K01, K03, K04, K05 and
-  K06** — the widened DORTS route, progress, architecture and award pages
-  provide line-wide contract or programme records and a K02 design record, but
-  no station-level package value, contractor or architect for these five
-  stations. Checked 18 August 2026.
+- **Station-specific contract values and architects for K01, K03, K04, K05,
+  K06, K07, K08 and K09** — the widened DORTS route, progress, architecture
+  and award pages provide line-wide contract or programme records, a K02 design
+  record and K08/K09 engineering progress, but no station-level package value,
+  contractor or architect for these eight stations. Checked 18 August 2026.
 - **Public art at K01, K03, K04, K05, K06 and K07** — no station-specific
   primary record was found in the checked full DORTS and NTMC material. Checked
   14 August 2026.
@@ -385,11 +436,10 @@ page keeps the affected values as TBC.
 ## Sources
 
 The implementation source records in `lib/ankeng-stations.ts` contain the
-complete metadata for 30 unique primary sources used by the generated pages:
+complete metadata for 32 unique primary sources used by the generated pages:
 TDX, the NTMC station table and nine NTMC station detail pages, three further
 NTMC pages, two DORTS route/station pages, three DORTS public-art records, the
-An-Xin Bridge article, the Shuang'an Tunnel article, eight new DORTS
-architecture, progress, power, inspection and award records, and the Ankeng
-Depot article. Each record includes the original-language title, publisher,
-URL, access date, language, primary kind and a note describing what it
-supports.
+An-Xin Bridge article, the Shuang'an Tunnel article, ten DORTS architecture,
+progress, power, inspection, track and award records, and the Ankeng Depot
+article. Each record includes the original-language title, publisher, URL,
+access date, language, primary kind and a note describing what it supports.

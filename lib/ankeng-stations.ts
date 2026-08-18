@@ -12,6 +12,8 @@ const freshAnkengSources = new Set([
   'dorts-ankeng-first-train',
   'dorts-ankeng-k05-inspection',
   'dorts-ankeng-quality-award',
+  'dorts-ankeng-k08-floating-track',
+  'dorts-ankeng-k09-track',
 ])
 const ntmcPublisher = 'New Taipei Metro Corporation (新北大眾捷運股份有限公司)'
 const dortsPublisher = 'New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)'
@@ -247,6 +249,24 @@ const dortsAnkengQualityAward = source(
   'The builder’s full December 2023 award article identifies China Steel as the electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant, and records the project’s Public Construction Golden Quality Award.',
 )
 
+const dortsK08FloatingTrack = source(
+  'dorts-ankeng-k08-floating-track',
+  'Ankeng K08 floating trackbed record',
+  '減振神器！安坑輕軌浮動式道床',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/video/BjeZYp3wdAwv?Page=6&type=149&vid=WQR2WeNvZGPV',
+  'The builder’s full video-page article says the elevated section between Anhe Road Section 3 and Xinhe Elementary School K08 has three floating-trackbed locations because it runs near homes, describes the measure as vibration reduction, and distinguishes grooved surface rail from I-shaped elevated rail.',
+)
+
+const dortsK09Track = source(
+  'dorts-ankeng-k09-track',
+  'Ankeng K09 and An-Xin Bridge track-laying progress',
+  '安坑輕軌高架段軌道及機廠進度',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/video/MJjdJqXb2Av6?type=149&vid=xVR2eNL0dJ36',
+  'The builder’s full video-page article records track laying at K09 and on An-Xin Bridge and explains that the bridge’s diamond turnout was tackled first because its construction difficulty was high.',
+)
+
 const depot = source(
   'dorts-ankeng-depot',
   'Ankeng Depot engineering record',
@@ -369,6 +389,8 @@ const allSources = [
   dortsAnkengFirstTrain,
   dortsK05Inspection,
   dortsAnkengQualityAward,
+  dortsK08FloatingTrack,
+  dortsK09Track,
   depot,
   ...Object.values(operatorStations),
 ]
@@ -402,6 +424,8 @@ function makeResearch(code: string, data: KData): StationResearch {
     dortsAnkengFirstTrain.id,
     dortsK05Inspection.id,
     dortsAnkengQualityAward.id,
+    dortsK08FloatingTrack.id,
+    dortsK09Track.id,
     data.publicArtSource?.id,
   ].filter((id): id is string => Boolean(id))
   return {
@@ -527,10 +551,51 @@ const stationProse: Record<string, StationProseSentence[]> = {
     { text: 'DORTS says the electromechanical project won the Public Construction Golden Quality Award and reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
     { text: 'The route project frames this transition as part of improved access for the Anyi and Anhe communities and estimates about 15 to 20 minutes saved on relevant journeys.', source: dortsRoute.id },
   ],
+  K07: [
+    { text: 'DORTS places K07 near the former Taiwan Malt Factory site after the route has turned from Anyi Road onto the elevated Anhe Road corridor.', source: dortsRoute.id },
+    { text: 'The route description says the alignment crosses National Freeway 3 and the Zhong’an Bridge approach after K07 before reaching the Water Resources Agency’s Xindian Office area near K08.', source: dortsRoute.id },
+    { text: 'This makes the K07 section a sequence of elevated roadway, freeway and bridge-approach interfaces rather than an isolated station approach.', source: dortsRoute.id },
+    { text: 'The same project page records early works from 7 November 2014 to 11 May 2016, main works from 6 April 2016 and stability testing on 7 November 2022.', source: dortsRoute.id },
+    { text: 'DORTS records the civil turnkey award on 3 March 2016 and publishes NT$16.632 billion as the value of the complete Ankeng project, not a K07-only package.', source: dortsRoute.id },
+    { text: 'The route’s construction sequence reached a first-train milestone in October 2021, when the vehicle entered the depot and at-grade civil and track works were reported complete.', source: dortsAnkengFirstTrain.id },
+    { text: 'That same milestone says elevated track and electromechanical work continued, so the K07-area elevated works were part of a later commissioning stage than the completed surface section.', source: dortsAnkengFirstTrain.id },
+    { text: 'The traction-power design names K07 among the substations supplied through the 22.8 kV distribution network after 161 kV enters the K05 and K09 utility rooms.', source: dortsAnkengPower.id },
+    { text: 'The named traction substations rectify their supply to 750 V direct current for train operation, documenting the electrical chain that serves the elevated northern section.', source: dortsAnkengPower.id },
+    { text: 'The route’s later quality-award record identifies China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'The electromechanical project received the Public Construction Golden Quality Award, and the same article reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS presents the line as a way to improve access through the Anyi and Anhe communities and estimates roughly 15 to 20 minutes of journey-time reduction for relevant trips.', source: dortsRoute.id },
+    { text: 'The route page also describes the project as an environmentally sustainable and accessible light-rail connection, linking the K07 corridor to New Taipei’s stated transport-development objectives.', source: dortsRoute.id },
+  ],
   K08: [
+    { text: 'DORTS places K08 in the Anhe Road Section 3 Water Resources Agency Xindian Office area, where the route turns east before continuing toward K09.', source: dortsRoute.id },
+    { text: 'The same description says the alignment crosses the New Taipei Ring Expressway and Xindian River after that turn before reaching the Shisizhang area.', source: dortsRoute.id },
+    { text: 'A full DORTS trackbed article identifies the elevated section from Anhe Road Section 3 to Xinhe Elementary School K08 as having three floating-trackbed locations.', source: dortsK08FloatingTrack.id },
+    { text: 'The builder gives the reason for those three locations as the elevated alignment’s proximity to homes and presents the floating trackbed as a vibration-reduction measure.', source: dortsK08FloatingTrack.id },
+    { text: 'The K08 trackbed record therefore adds a corridor-specific mitigation decision to the route map: it names both the section endpoint and the number of treatment locations.', source: dortsK08FloatingTrack.id },
+    { text: 'The civil turnkey package was awarded on 3 March 2016, while the project page publishes NT$16.632 billion as the line-wide Ankeng value rather than a K08 construction price.', source: dortsRoute.id },
+    { text: 'The traction-power article lists K08 among the substations receiving 22.8 kV from the K05 and K09 utility-room distribution chain.', source: dortsAnkengPower.id },
+    { text: 'That system converts the distributed supply to 750 V direct current for trains, connecting K08’s elevated track environment to the documented line power architecture.', source: dortsAnkengPower.id },
+    { text: 'The first-train milestone records the vehicle entering the depot while elevated track and electromechanical work continued, after at-grade civil and track works had been completed.', source: dortsAnkengFirstTrain.id },
+    { text: 'DORTS says static, dynamic and endurance tests followed that construction sequence, so structural completion and operational commissioning are recorded as separate stages.', source: dortsAnkengFirstTrain.id },
+    { text: 'The project’s later quality record names China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'It records the Public Construction Golden Quality Award for the electromechanical project and reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'DORTS frames the Ankeng route as improved access for the Anyi and Anhe communities, with a projected reduction of about 15 to 20 minutes for relevant journeys.', source: dortsRoute.id },
     { text: 'The K08 public-art pair uses insect imagery to cast the train as a lively, flying creature, while its ground-level mosaic counterpart adds flower-like colours, Japanese craft texture and a calm spatial layer.', source: k08Art.id },
   ],
   K09: [
+    { text: 'DORTS’s route introduction places K09 in the Shisizhang area beside the Circular Line and describes the connection as the northern end of the Ankeng alignment.', source: dortsRoute.id },
+    { text: 'That route page labels the adjacent Circular Line station Y8, while DORTS’s separate station-position table labels the same transfer Y7.', source: dortsRouteInfo.id },
+    { text: 'These are conflicting primary identifiers from different DORTS records, so both values remain visible rather than being silently reconciled.', source: dortsRouteInfo.id },
+    { text: 'A full builder progress page records track laying at K09 and on An-Xin Bridge, including a diamond turnout that was tackled first because its construction difficulty was high.', source: dortsK09Track.id },
+    { text: 'A separate full DORTS rail article distinguishes the grooved rail used on the surface section from the I-shaped rail used on the elevated section, making K09’s approach part of a mixed track-engineering sequence.', source: dortsK08FloatingTrack.id },
+    { text: 'The earlier An-Xin Bridge record says its asymmetric form avoided the active waterway and strengthened flood-defence safety, which explains why the final station approach required a special crossing structure.', source: k09Bridge.id },
+    { text: 'DORTS’s K06 operating-layout article records six turnouts around K06 that allow vehicles to turn back toward K09, tying K09 into the line’s documented short-working arrangement.', source: dortsK06Turnback.id },
+    { text: 'The traction-power article places the incoming 161 kV supply in the K09 utility room before transformation to 22.8 kV and distribution to the line’s traction substations.', source: dortsAnkengPower.id },
+    { text: 'The substations rectify that supply to 750 V direct current for train operation, while the article records K09’s utility-room role rather than a separate station-only operating account.', source: dortsAnkengPower.id },
+    { text: 'The first-train milestone records the vehicle entering the depot while elevated track and electromechanical work continued, followed by static, dynamic and endurance testing.', source: dortsAnkengFirstTrain.id },
+    { text: 'The later quality-award record names China Steel as electromechanical turnkey contractor, China Engineering Consultants as project manager and Sinotech Engineering Consultants as supervision consultant.', source: dortsAnkengQualityAward.id },
+    { text: 'The electromechanical project won the Public Construction Golden Quality Award, and DORTS reports a 42 percent vehicle-domestication ratio.', source: dortsAnkengQualityAward.id },
+    { text: 'The route project presents K09 as the connection into the wider Taipei metropolitan rail network and as part of the access improvement planned for the Anyi and Anhe communities.', source: dortsRoute.id },
     { text: 'The builder says the asymmetric An-Xin Bridge was designed to avoid the active waterway and strengthen flood-defence safety while crossing the river between Xindian and Ankeng.', source: k09Bridge.id },
     { text: 'At K09, DORTS says wind passing through the perforated plate powers tiny lights that imitate fireflies in flight between stations.', source: k09Art.id },
   ],
