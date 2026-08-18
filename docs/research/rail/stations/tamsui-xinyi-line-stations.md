@@ -489,6 +489,179 @@ https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page43.html.
 It was used only for the elevated-group facts already recorded; no additional
 sentence survived the station-specific prose test.
 
+### Station-prose deepening — R14–R19 batch, 18 August 2026
+
+The prior audit fetched and read the six full TRTC station pages and DORTS
+page 43, but found only group-level engineering material. This deepening pass
+fetched the full DORTS pages 42 and 47–52, the full station-design page 177,
+the full DORTS public-art overview, and the full TRTC Yuanshan station-story
+page. They supplied construction-package history, roof and material design,
+the Jiantan wind-engineering intervention, public-realm context and one
+station-specific artwork record. R14 Yuanshan, R15 Jiantan, R16 Shilin, R17
+Zhishan, R18 Mingde and R19 Shipai were all deepened; no unverified appendix
+was used.
+
+#### Elevated construction packages
+
+**Source:** “Tamsui Line elevated construction packages” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page lists the civil-package scopes and named
+contractors and records the CT206 termination and replacement.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page42.html
+
+Original-language text checked in full:
+
+> `高架段土建工程計七標如下`
+
+> `CT204 標：淡水線圓山站及隧道出口至劍潭站間高架工程，中華工程股份有限公司承建。`
+
+> `CT204A 標：淡水線劍潭站及劍潭站至士林站間高架工程，互助營造股份有限公司與株式會社大林組聯合承建。`
+
+> `CT205 標：淡水線士林站、福國站及士林站至明德站間高架工程，互助營造股份有限公司與株式會社大林組聯合承建。`
+
+> `CT206 標：淡水線明德站、石牌站、唭哩岸站及明德站至奇岩站間高架工程（因承商工地停擺，工程進度落後，忠和營造工程股份有限公司和本局於民國 80 年 6 月 2 日解約，另以 CT206A 標辦理招標）。`
+
+> `CT206A 標：淡水線明德站、石牌站、唭哩岸站及明德站至奇岩站間高架工程，工信工程股份有限公司。`
+
+This establishes the package and contractor evidence. The page does not give
+award values or a station-level final account; neither was invented.
+
+#### Elevated design concept, roofs and materials
+
+**Source:** “Tamsui Line elevated-station design concept” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full design chapter states the architectural rationale.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page47.html
+
+Original-language text checked in full:
+
+> `高架車站之造型以現代建築材料及手法展現仿傳統建築為主要風格，並擷取基座、柱廊及屋頂等傳統建築三部分元素整體表現車站建築物之量體及立面。`
+
+**Source:** “Tamsui Line elevated-station base and flood-elevation design” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page links the raised base to flood elevation and
+identifies the Yuanshan example.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page48.html
+
+Original-language text checked in full:
+
+> `車站則配合防洪高程需求亦有抬高地面層之基座部分，並設鋪貼玫瑰紅花崗石的大斜面花臺。`
+
+> `圖 2-3-1 圓山站大斜面花臺及防洪高程抬高之基座`
+
+**Source:** “Tamsui Line elevated-station roof design” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page names the roof form at each station group.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page49.html
+
+Original-language text checked in full:
+
+> `屋頂本身之造型為融合懸山式（例如：圓山站、士林站、芝山站及奇岩站等）或卷棚式（例如：劍潭站、明德站、石牌站、唭哩岸站、新北投站及淡水站等）的屋頂。`
+
+**Source:** “Tamsui Line elevated-station exterior materials” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page gives the selection criteria and materials.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page51.html
+
+Original-language text checked in full:
+
+> `綜合上述考量，天然花崗石雖然價格較為昂貴，但其厚實的天然色彩和富有多樣性變化之表面花紋、單元尺寸可彈性調整裁切等特性，選為基座與外牆之裝修材料應是甚為恰當。`
+
+**Source:** “Tamsui Line elevated-station interior materials” /
+`捷運工程叢書 精進版－34 捷運高架車站建築造型設計` — DORTS, PRIMARY, High
+confidence because the full page gives the concourse and platform material
+decisions.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page52.html
+
+Original-language text checked in full:
+
+> `高架車站地面層公共區之牆面裝修建材選擇與外牆相同之天然花崗石，應屬正確的抉擇。`
+
+> `能符合上述條件之裝修材料以琺瑯烤漆鋼板為最佳之選擇。`
+
+These pages support the shared engineering and architectural context used in
+all six overlays without repeating their facts/specs fields as prose.
+
+#### Jiantan structural intervention
+
+**Source:** “Jiantan station roof wind engineering” /
+`捷運車站規劃與設計實務` — DORTS, PRIMARY, High confidence because the full
+page records the special roof, wind test and stabilisation measure.
+
+URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+
+Original-language text checked in full:
+
+> `劍潭站－係採龍舟意象之造形設計，利用類似橋樑之纜索結構以鋼纜懸吊屋頂。`
+
+> `因位於圓山西側其地形帶來之風流，常造成屋頂之搖晃不穩定，經風動試驗後避免風昇力將屋頂掀起，乃於月臺之燈柱上加裝拉力桿以穩固屋頂。`
+
+#### Public-realm and Yuanshan evidence
+
+**Source:** “Metro public art and station architecture overview” /
+`捷運不只是運輸工具` — DORTS, PRIMARY, High confidence because the full
+current DORTS page directly describes the station-specific public-realm and
+design statements.
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+
+Original-language text checked in full:
+
+> `劍潭站旁的開放空間、士林站的表演廣場、北投站旁的景觀水池、高架站下方的線形公園及自行車道等，皆為都市提供舒適怡人的休閒空間。`
+
+> `石牌站以十字圖形象徵「醫學天地」、原名天母站之明德站以繽紛的色彩展現「異國風味」等。`
+
+**Source:** “Yuanshan station story” / `車站特色－圓山站` — TRTC, PRIMARY,
+High confidence because the full operator page directly describes the station
+and its artwork.
+
+URL: https://web.metro.taipei/c/stationstory/056/056.html
+
+Original-language text checked in full:
+
+> `圓山站採中國傳統宮廷建築風格。`
+
+> `過去臺灣鐵路管理局淡水線（現已廢止；捷運淡水線前身）亦曾於此處設有圓山車站。本站往民權西路站方向即為高架段至地下段之過渡帶。`
+
+> `作品名稱：圓山五彩物語─記憶中的圓山景色`
+
+> `創作者藉由馬賽克拼貼畫，描寫以前圓山的種種景色，及人們日常生活的回憶。`
+
+#### R14–R19 disposition
+
+- **R14 Yuanshan:** 346 words. CT204 scope and contractor, the elevated
+  design system, flood-elevation base, Xuan-shan roof, material choices,
+  former-TRA transition, palace-style architecture and the TRTC mosaic work
+  are established. The package page gives no award value, final account or
+  station-level art cost.
+- **R15 Jiantan:** 329 words. CT204A scope and contractors, the former-railway
+  site, dragon-boat cable roof, wind-tunnel intervention, roof classification,
+  material system, public space and landmark award are established. A complete
+  station-specific art record and package value remain TBC.
+- **R16 Shilin:** 336 words. CT205 scope and contractors, former-railway
+  corridor, Xuan-shan roof, standard material system and performance-plaza
+  public realm are established. An individual artwork record, station-level
+  award and final account remain TBC.
+- **R17 Zhishan:** 314 words. CT205 corridor scope, former-railway setting,
+  Xuan-shan roof family, material and public-art planning context are
+  established. No individual artwork, award value, final account or rename
+  gazette was found in the fetched pages.
+- **R18 Mingde:** 306 words. CT206 failure and CT206A replacement, the named
+  replacement contractor, Juan-peng roof, materials, former-Tianmu wording and
+  colourful “international flavour” design statement are established. The
+  legal rename record, station-level cost and complete art entry remain TBC.
+- **R19 Shipai:** 300 words. CT206/CT206A scope and failure history, former
+  railway context, Juan-peng roof, material system, the “medical world” cross
+  motif and elevated public-realm context are established. A complete art
+  register entry, station-level award, final account and rename gazette remain
+  TBC.
+
 ### Station-prose audit — R20–R24 plus R22A batch, 17 August 2026
 
 The full TRTC station pages for R20–R24 and R22A were fetched and read on 17 August
@@ -928,6 +1101,35 @@ road name alone is not promoted to a landmark.
    value; the R10 station art field remains TBC. This is a scope conflict, not
    a hidden competing cost.
 
+10. **CT206 versus CT206A package history.** The full construction page gives
+    CT206 as the original Mingde–Shipai–Qilian package, then records the
+    contractor stoppage and 2 June ROC80 termination before CT206A was
+    re-tendered for the same scope. CT206 is the terminated original package;
+    CT206A is the replacement procurement. The two contractor records are
+    sequential package values, not competing claims about one completed award.
+
+11. **Elevated roof families versus the Jiantan exception.** DORTS classifies
+    Yuanshan, Shilin and Zhishan as Xuan-shan and Jiantan, Mingde and Shipai as
+    Juan-peng. Its separate architecture page calls Jiantan a suspended,
+    column-free dragon-boat roof that needed wind testing and tie rods. The
+    roof-family values describe visible roof form; the wind-engineering page
+    describes Jiantan’s structural exception. Neither was collapsed into a
+    generic “standard roof” claim.
+
+12. **Current station label versus historical naming description.** The
+    current registry uses R18 Mingde, while the DORTS public-art overview says
+    “originally Tianmu.” The first is the current operating name; the second is
+    an official design-history description. No rename date or gazette was
+    found, so the two statements are published as different evidence rather
+    than a silently inferred rename chronology.
+
+13. **Station-specific artwork evidence has different granularity.** TRTC’s
+    full Yuanshan story names `圓山五彩物語─記憶中的圓山景色` and describes its
+    mosaic collage, while the DORTS public-art overview gives only broader
+    station design/public-realm statements for Shilin, Mingde and Shipai. The
+    named R14 work is not treated as proof of a complete current artwork
+    register for R16, R18 or R19.
+
 No conflicting exit count was found when the full TRTC station pages were
 compared with the DORTS station material for the stations where both publish a
 count. Differences between TDX’s fields and the operator’s facility text are
@@ -1007,6 +1209,26 @@ field-coverage differences, not competing values.
   2026, but no full PTO or ebus route page was fetched for this station batch.
   No feeder route assertion was published from the joins alone.
 
+- **R14–R19 station-level contract values and final accounts** — Checked 18
+  August 2026 in the full DORTS elevated-package page and the full elevated
+  design pages. The sources identify CT204, CT204A, CT205, CT206 and CT206A
+  scopes and contractors, but do not provide award values or station-level
+  final accounts. No value was inferred.
+- **R15/R16/R17/R18/R19 complete station-art records** — Checked 18 August
+  2026 in the full DORTS public-art overview and elevated design material. The
+  pages provide Jiantan/Shilin/Mingde/Shipai public-realm or design statements
+  but no complete title-artist-date-medium-cost records. This is a failed
+  lookup, not evidence that those stations have no artwork.
+- **R18 rename gazette** — Checked 18 August 2026 in the full DORTS public-art
+  overview and the current TRTC station material. DORTS says “originally
+  Tianmu,” but those pages do not provide the gazette or effective date that
+  would establish the legal rename. The current name and historical wording
+  remain separate evidence.
+- **R14–R19 feeder-bus prose** — TDX station joins were retained from the
+  project data, but no full PTO or ebus route page was fetched for this station
+  batch. No feeder-route assertion was published from a name or join alone.
+  Checked 18 August 2026.
+
 ## Stated gaps
 
 The pages still cannot state most rename histories, paid/street transfer mode,
@@ -1031,6 +1253,13 @@ entries. The R13 shallow-cut decision remains TBC until a station design or
 construction record identifies the controlling factor. Station-level contracts,
 final accounts and feeder-bus prose remain TBC pending the corresponding
 period procurement/completion and PTO/ebus pages.
+
+For R14–R19, the remaining gaps are the award values and station-level final
+accounts for the package records, a complete current artwork register for
+R15/R16/R17/R18/R19, the legal gazette and effective date behind the historical
+Tianmu wording for R18, and sourced feeder-bus descriptions. The period DORTS
+procurement/completion records, a complete station-art register, the relevant
+city gazette and full PTO/ebus pages would settle them.
 
 ---
 

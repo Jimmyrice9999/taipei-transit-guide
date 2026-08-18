@@ -66,6 +66,96 @@ const dortsYuanshanToBeitou = source(
   'The full engineering-book pages document the elevated layouts, exit additions and special structural designs at the northern Taipei stations.',
 )
 
+const dortsElevatedConstructionPackages = source(
+  'dorts-tamsui-xinyi-elevated-construction-packages',
+  'Tamsui Line elevated construction packages',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page42.html',
+  'The full engineering-book page lists the seven elevated civil packages, their station and viaduct scopes, named contractors, and the CT206 termination and CT206A re-tender. The original-language passages beginning 高架段土建工程計七標如下 and 淡水線明德站、石牌站、唭哩岸站 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsElevatedDesignConcept = source(
+  'dorts-tamsui-xinyi-elevated-design-concept',
+  'Tamsui Line elevated-station design concept',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page47.html',
+  'The full engineering-book page explains how modern materials reinterpret the base, colonnade and roof of traditional architecture along the elevated section. The original-language passages beginning 高架車站之造型以現代建築材料及手法 and 擷取基座、柱廊及屋頂 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsElevatedBase = source(
+  'dorts-tamsui-xinyi-elevated-base-design',
+  'Tamsui Line elevated-station base and flood-elevation design',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page48.html',
+  'The full engineering-book page connects elevated station bases to flood-elevation requirements and specifically illustrates Yuanshan’s raised base and sloped flowerbed. The original-language passages beginning 配合防洪高程需求 and 圓山站大斜面花臺及防洪高程抬高之基座 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsElevatedRoof = source(
+  'dorts-tamsui-xinyi-elevated-roof-design',
+  'Tamsui Line elevated-station roof design',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page49.html',
+  'The full engineering-book page assigns Xuan-shan roofs to Yuanshan, Shilin and Zhishan and Juan-peng roofs to Jiantan, Mingde and Shipai, while describing the roof skylight and layered eaves. The original-language passages beginning 懸山式 and 卷棚式 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsElevatedExteriorMaterials = source(
+  'dorts-tamsui-xinyi-elevated-exterior-materials',
+  'Tamsui Line elevated-station exterior materials',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page51.html',
+  'The full engineering-book page gives the durability, maintenance and weathering reasons for granite bases and façades, stainless openwork screens and painted structural surfaces. The original-language passages beginning 車站本身為仿傳統建築 and 綜合上述考量 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsElevatedInteriorMaterials = source(
+  'dorts-tamsui-xinyi-elevated-interior-materials',
+  'Tamsui Line elevated-station interior materials',
+  '捷運工程叢書 精進版－34 捷運高架車站建築造型設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page52.html',
+  'The full engineering-book page describes granite concourse walls, openwork screens, enamel-painted steel columns, and the maintenance and safety requirements behind those choices. The original-language passages beginning 川堂層內部牆面 and 琺瑯烤漆鋼板為最佳之選擇 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsJiantanEngineering = source(
+  'dorts-jiantan-roof-wind-engineering',
+  'Jiantan station roof wind engineering',
+  '捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html',
+  'The full engineering-book page records Jiantan’s cable-suspended dragon-boat roof, wind-induced movement near Yuanshan, wind-tunnel testing, added tie rods and night lighting. The original-language passages beginning 劍潭站－係採龍舟意象之造形設計 and 經風動試驗後 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsPublicArtOverview = source(
+  'dorts-metro-public-art-overview',
+  'Metro public art and station architecture overview',
+  '捷運不只是運輸工具',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804',
+  'The full DORTS page describes the early-network public-art programme and says Jiantan’s open space, Shilin’s performance plaza, Shipai’s cross motif and Mingde’s former Tianmu name are part of the station-specific urban and design context. The original-language passages beginning 劍潭站旁的開放空間 and 石牌站以十字圖形 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const trtcYuanshanStory = source(
+  'trtc-yuanshan-station-story',
+  'Yuanshan station story',
+  '車站特色－圓山站',
+  trtcPublisher,
+  'https://web.metro.taipei/c/stationstory/056/056.html',
+  'The full TRTC station-story page describes Yuanshan’s traditional palace-style architecture, its former TRA Tamsui Line setting and elevated-to-underground transition, and the mosaic public-art work 圓山五彩物語─記憶中的圓山景色. The original-language passages beginning 圓山站採中國傳統宮廷建築風格 and 作品名稱 were checked in the fetched page.',
+  '2026-08-18',
+)
+
 const dortsShilinToXinbeitou = source(
   'dorts-tamsui-xinyi-northern-stations',
   'Tamsui–Xinyi Line northern station architecture',
@@ -863,6 +953,23 @@ const rData: Record<string, RData> = {
     facilities: 'Paid toilets by exit 1; parent/accessible toilet at that location; baby changing; bicycle access open; enquiry point near exit 1; platform lift at the station centre.',
     landmarks: tbc, publicArt: tbc,
     engineeringHistory: 'The station’s second exit was added later; the original and addition dates are TBC.', engineeringHistorySource: dortsYuanshanToBeitou,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedBase, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsElevatedInteriorMaterials, trtcYuanshanStory, dortsPublicArtOverview],
+    prose: [
+      { text: 'The elevated section was divided into seven civil packages, and CT204 covered Yuanshan together with the elevated work from the tunnel exit toward Jiantan.', source: dortsElevatedConstructionPackages.id },
+      { text: 'DORTS names China Engineering Construction as the CT204 contractor, but the checked package page does not give an award date or package value.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The line’s design brief sought stations that would show local culture while giving traditional Chinese architecture a new life through contemporary technology.', source: dortsElevatedDesignConcept.id },
+      { text: 'Its standard elevated vocabulary reinterprets three traditional elements—base, colonnade and roof—with modern construction materials rather than reproducing a historical building literally.', source: dortsElevatedDesignConcept.id },
+      { text: 'DORTS groups Yuanshan with the stations using a Xuan-shan roof form, while the roof ridge becomes a skylight that brightens the platform level and creates changing shadows.', source: dortsElevatedRoof.id },
+      { text: 'The base has a more specific engineering story: elevated station plinths were raised for flood-elevation requirements, and the Yuanshan example is illustrated with a large sloped flowerbed.', source: dortsElevatedBase.id },
+      { text: 'That source identifies the flowerbed as rose-red granite and treats the raised base as both a flood response and a visual expression of the station’s foundation.', source: dortsElevatedBase.id },
+      { text: 'The wider exterior specification selected granite for the base and walls because it was durable, weather-resistant and maintainable, while stainless openwork screens supplied a lighter middle layer.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'At concourse level, the same material logic used granite walls and openwork screens; at platform level, enamel-painted steel columns were chosen for smooth cleaning, impact resistance and rounded safety edges.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'TRTC’s station story describes Yuanshan as a Chinese traditional palace-style station at the boundary of Zhongshan and Datong districts.', source: trtcYuanshanStory.id },
+      { text: 'The operator also records that a former TRA Tamsui Line station occupied the site and that the present alignment changes from elevated to underground toward Minquan W. Rd.', source: trtcYuanshanStory.id },
+      { text: 'Its public-art section names 圓山五彩物語─記憶中的圓山景色, a mosaic collage about earlier Yuanshan scenery and everyday memories.', source: trtcYuanshanStory.id },
+      { text: 'The checked DORTS public-art overview places that work within a wider approach in which station architecture, open space and local identity were treated together rather than as separate transport and decoration problems.', source: dortsPublicArtOverview.id },
+      { text: 'The fetched primary pages do not establish a station-level civil award, final account, renaming gazette or separate artwork cost for Yuanshan; those details remain TBC.', source: dortsElevatedConstructionPackages.id },
+    ],
   },
   R15: {
     structure: 'elevated', exits: 3, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -871,6 +978,23 @@ const rData: Record<string, RData> = {
     facilities: 'Paid toilets by exits 1 and 2; parent/accessible toilet by exit 1; nursing room in the paid hall near exit 1; baby changing; bicycle access open; enquiry points near exits 1 and 2; north and south platform lifts.',
     landmarks: tbc, publicArt: tbc,
     engineeringHistory: 'The station has a suspended, column-free roof structure whose form was developed around a dragon-boat image.', engineeringHistorySource: dortsSpecialArchitecture,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsJiantanEngineering, dortsSpecialArchitecture, dortsPublicArtOverview, dortsYuanshanToBeitou],
+    prose: [
+      { text: 'CT204A covered Jiantan and the elevated section between Jiantan and Shilin, and DORTS attributes the work to a joint venture of Hu Chu Construction and Obayashi Corporation.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The package page gives the scope and contractors but no award date or package value, so those contract fields remain TBC.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The site description places the station over the former TRA Beitou Line at Jiantan Road and records two independent concourse levels below the platform structure.', source: dortsYuanshanToBeitou.id },
+      { text: 'Jiantan is the elevated section’s deliberate exception to the standard visual family: its design uses a dragon-boat image to answer the character of the Yuanshan area.', source: dortsSpecialArchitecture.id },
+      { text: 'The roof is suspended from a bridge-like cable system, leaving it column-free and allowing a single formed metal plate to reduce the unsupported roof’s weight.', source: dortsJiantanEngineering.id },
+      { text: 'That structural choice created an engineering problem because terrain-driven wind flow on the west side of Yuanshan could make the roof move unstably.', source: dortsJiantanEngineering.id },
+      { text: 'DORTS records wind-tunnel testing and the addition of tie rods at platform light poles to resist uplift and keep the roof from being peeled upward.', source: dortsJiantanEngineering.id },
+      { text: 'The same account says night lighting was used to emphasise the station’s special form, making it one of the early network’s important landmarks.', source: dortsJiantanEngineering.id },
+      { text: 'DORTS’s roof catalogue classifies Jiantan’s roof as Juan-peng rather than the Xuan-shan form used at Yuanshan, Shilin and Zhishan.', source: dortsElevatedRoof.id },
+      { text: 'The broader elevated design still shares the line’s base, colonnade and roof grammar, with modern materials translating traditional architectural ideas into a long two-level station building.', source: dortsElevatedDesignConcept.id },
+      { text: 'Granite, stainless openwork screens and enamel-painted steel were selected for durability, cleanability, weathering and safe rounded surfaces in heavily used passenger areas.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'DORTS’s public-realm overview identifies open space beside Jiantan as one of the ways a station could relieve Taipei’s crowded urban fabric.', source: dortsPublicArtOverview.id },
+      { text: 'The same official overview says the station became a Taipei landmark through a public vote and received the 1997 Architects magazine award.', source: dortsPublicArtOverview.id },
+      { text: 'No complete station-specific public-art record, station-level final account or dated renaming gazette was established in the fetched primary pages, so those details remain TBC.', source: dortsPublicArtOverview.id },
+    ],
   },
   R16: {
     structure: 'elevated', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -878,6 +1002,23 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 中正路247巷旁; 2: 福德路1號. Central platform lift. Accessible exit: TBC.',
     facilities: 'Paid toilets by exits 1 and 2; parent/accessible toilet by exit 1; nursing room in the paid hall near exit 1; baby changing; bicycle access open; enquiry points near exits 1 and 2.',
     landmarks: tbc, publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsElevatedInteriorMaterials, dortsPublicArtOverview, dortsYuanshanToBeitou],
+    prose: [
+      { text: 'CT205 covered Shilin, the former Fukoku station and the elevated section between Shilin and Mingde, with Hu Chu Construction and Obayashi Corporation named as the joint contractors.', source: dortsElevatedConstructionPackages.id },
+      { text: 'DORTS publishes that package scope and contractor pairing but not an award date or package value, leaving both figures TBC.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The station description places Shilin on the former TRA Beitou Line near the old rail crossing at Zhongzheng Road, so the elevated alignment reused a railway corridor rather than creating an entirely new urban reservation.', source: dortsYuanshanToBeitou.id },
+      { text: 'The elevated design brief treated that corridor as a place where traditional architectural ideas could be expressed through modern materials and construction methods.', source: dortsElevatedDesignConcept.id },
+      { text: 'Shilin belongs to the Xuan-shan roof group, whose ridge skylight was intended to increase platform brightness and create a more layered interior view.', source: dortsElevatedRoof.id },
+      { text: 'The standard design separated the station into base, middle colonnade and roof, then adjusted their proportions around operational needs instead of making every station identical.', source: dortsElevatedDesignConcept.id },
+      { text: 'Granite was selected for the exterior base and walls because it offered weight, weather resistance and flexible cutting, while stainless screens supplied a permeable façade element.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'DORTS links those open screens to visual penetration, natural ventilation and daylight at the ground-level public zone.', source: dortsElevatedDesignConcept.id },
+      { text: 'Inside the concourse, granite walls continued the exterior material language, while enamel-painted steel columns were chosen to withstand impact, cleaning and chemical exposure.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'The platform-level structure kept side walls to a minimum so the roof could remain visually light, with short-end gables providing enclosure where the function required it.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'A red-painted beam running parallel to the tracks served as the line’s visual identification element within this otherwise restrained material system.', source: dortsElevatedBase.id },
+      { text: 'DORTS’s public-realm account specifically names Shilin’s performance plaza as an example of the open space that stations could return to the city.', source: dortsPublicArtOverview.id },
+      { text: 'That same account presents the station’s plaza as urban amenity rather than a transport-only leftover, alongside linear parks and cycle routes below elevated sections.', source: dortsPublicArtOverview.id },
+      { text: 'The checked primary pages do not identify an independent Shilin artwork title, artist, station-level contractor, final account or renaming gazette; those items remain TBC.', source: dortsPublicArtOverview.id },
+    ],
   },
   R17: {
     structure: 'elevated', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -885,6 +1026,23 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 福國路70號; 2: 福華路162巷口對面. Central and north platform lifts. Accessible exit: TBC.',
     facilities: 'Paid toilets by exits 1 and 2; parent/accessible toilet by exit 1; baby changing; bicycle access open; enquiry points near exits 1 and 2; central and north platform lifts.',
     landmarks: tbc, publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsElevatedInteriorMaterials, dortsPublicArtOverview, dortsYuanshanToBeitou],
+    prose: [
+      { text: 'CT205 included the Shilin–Mingde elevated section that carried the line through Zhishan, and DORTS names Hu Chu Construction and Obayashi Corporation as its joint contractors.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The source lists the package scope and contractor but does not give a contract award date or value, so those figures remain TBC.', source: dortsElevatedConstructionPackages.id },
+      { text: 'DORTS places Zhishan on the former TRA Beitou Line north of Fukoku Road, between the Shilin and Mingde stations of the old corridor.', source: dortsYuanshanToBeitou.id },
+      { text: 'The line-wide design objective was to use new materials and methods to reinterpret the base, colonnade and roof of traditional Chinese architecture.', source: dortsElevatedDesignConcept.id },
+      { text: 'Zhishan is explicitly grouped with Yuanshan and Shilin under the Xuan-shan roof type, while Jiantan, Mingde and Shipai use the different Juan-peng profile.', source: dortsElevatedRoof.id },
+      { text: 'The roof ridge was opened as a skylight to improve platform brightness and use the structure itself to create changing light and shadow.', source: dortsElevatedRoof.id },
+      { text: 'At ground level, openwork stainless screens stand between functional walls and columns, giving the long elevated volume visual permeability and natural ventilation.', source: dortsElevatedDesignConcept.id },
+      { text: 'The material specification chose natural granite for the base and exterior wall because it could tolerate weather, impact and frequent maintenance.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'Concourse walls continued that granite treatment, while enamel-painted steel columns were selected for smooth surfaces, cleanability, abrasion resistance and rounded edges.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'The platform level limited side walls to the short ends so the roof structure and the track-facing openings would remain visually open.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'This places Zhishan in the standard family rather than the separately engineered Jiantan exception, whose suspended roof required wind-tunnel testing and added tie rods.', source: dortsElevatedRoof.id },
+      { text: 'DORTS’s public-art overview explains that station architecture and public art were intended to express local character, but its checked station-specific material does not name a completed Zhishan work.', source: dortsPublicArtOverview.id },
+      { text: 'The same primary material does not identify an individual architect, station-level civil award, final account or renaming gazette for Zhishan.', source: dortsPublicArtOverview.id },
+      { text: 'Those unresolved contract, naming and artwork details remain TBC rather than being inferred from the neighbouring stations.', source: dortsElevatedConstructionPackages.id },
+    ],
   },
   R18: {
     structure: 'elevated', exits: 3, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -892,6 +1050,22 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 明德路95號、明德國中斜對面; 2: 東華街一段378號對面; 3: 西安街一段175號對面. Central platform lift. Accessible exit: TBC.',
     facilities: 'Paid toilet by exit 1; parent/accessible toilet at the same location; baby changing; bicycle access open; enquiry point near exit 1; central platform lift.',
     landmarks: '明德國中', publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsElevatedInteriorMaterials, dortsPublicArtOverview],
+    prose: [
+      { text: 'CT206 covered Mingde, Shipai, Qilian and the elevated section from Mingde to Qiyan, but its original contractor stopped work and fell behind schedule.', source: dortsElevatedConstructionPackages.id },
+      { text: 'DORTS records that the department terminated the CT206 contract on 2 June in ROC year 80 and re-tendered the same scope as CT206A.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The replacement package is attributed on the page to 工信工程股份有限公司; the fetched source gives no package award value or completion-value account.', source: dortsElevatedConstructionPackages.id },
+      { text: 'Mingde belongs to the Juan-peng roof group, distinct from the Xuan-shan profiles listed for Yuanshan, Shilin and Zhishan.', source: dortsElevatedRoof.id },
+      { text: 'Even with that roof variation, the elevated stations share a design grammar of base, middle colonnade and roof translated through modern materials.', source: dortsElevatedDesignConcept.id },
+      { text: 'Granite supplied the durable base and external wall finish, while stainless openwork screens helped keep the ground-level station visually permeable and naturally ventilated.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'The concourse specification continued with granite walls and used enamel-painted steel for columns because passenger-facing surfaces had to resist impact, dirt and chemical cleaning.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'The DORTS public-art overview calls the station “originally Tianmu” and says its colourful treatment expressed an international flavour, preserving a naming and design layer that is not present in the current short station label.', source: dortsPublicArtOverview.id },
+      { text: 'That wording is an official design-history statement, not a gazette citation; no renaming gazette was found in the fetched pages, so the legal rename date remains TBC.', source: dortsPublicArtOverview.id },
+      { text: 'The same overview describes elevated-station spaces such as linear parks and cycle routes as urban relief, placing Mingde’s viaduct corridor within a broader public-realm strategy.', source: dortsPublicArtOverview.id },
+      { text: 'The package failure is the station’s clearest documented construction incident, but the checked source does not break out a Mingde-only contractor account or station-level final cost.', source: dortsElevatedConstructionPackages.id },
+      { text: 'No complete current artwork record naming an artist, title, medium, date or cost for Mingde was established in the fetched primary pages.', source: dortsPublicArtOverview.id },
+      { text: 'Those art, award, final-account and gazette details remain TBC rather than being borrowed from the general elevated-station description.', source: dortsElevatedConstructionPackages.id },
+    ],
   },
   R19: {
     structure: 'elevated', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,
@@ -899,6 +1073,22 @@ const rData: Record<string, RData> = {
     exitDetails: '1: 石牌路1段、2段與東華街、西安街交叉口、近市立石牌國中; 2: 西安街1段329號對面. Central and south platform lifts. Accessible exit: TBC.',
     facilities: 'Paid toilets by exits 1 and 2; parent/accessible toilet by exit 1; baby changing; bicycle access open; enquiry points near exits 1 and 2; central and south platform lifts.',
     landmarks: '市立石牌國中', publicArt: tbc, engineeringHistory: tbc,
+    proseSources: [dortsElevatedConstructionPackages, dortsElevatedDesignConcept, dortsElevatedRoof, dortsElevatedExteriorMaterials, dortsElevatedInteriorMaterials, dortsPublicArtOverview, dortsYuanshanToBeitou],
+    prose: [
+      { text: 'CT206 included Shipai within the Mingde–Shipai–Qilian package and the Mingde–Qiyan viaduct scope; after the original failure, DORTS re-tendered it as CT206A.', source: dortsElevatedConstructionPackages.id },
+      { text: 'The page identifies the original stoppage and 2 June ROC80 termination, then names 工信工程股份有限公司 for CT206A, but gives no package value or dated final account.', source: dortsElevatedConstructionPackages.id },
+      { text: 'DORTS places Shipai on the former TRA Beitou Line south of the old Shipai Road crossing, preserving the railway corridor as the alignment’s historical engineering context.', source: dortsYuanshanToBeitou.id },
+      { text: 'Shipai uses the Juan-peng roof form, whose central skylight and layered eaves were part of the elevated line’s reinterpretation of traditional construction.', source: dortsElevatedRoof.id },
+      { text: 'The general design system separated base, colonnade and roof, then used modern materials to achieve an architectural family with station-by-station variation.', source: dortsElevatedDesignConcept.id },
+      { text: 'Granite was preferred for the base and exterior walls for its durability, low water absorption and maintainability, while stainless screens provided the open middle layer.', source: dortsElevatedExteriorMaterials.id },
+      { text: 'Inside, granite concourse walls and enamel-painted steel columns continued the same palette, with the column finish chosen for smooth cleaning and resistance to collisions and chemical attack.', source: dortsElevatedInteriorMaterials.id },
+      { text: 'DORTS’s public-art overview gives Shipai a specific floor-design symbol: a cross used to represent a “medical world.”', source: dortsPublicArtOverview.id },
+      { text: 'That statement establishes a station design theme but does not identify a standalone work, artist, completion date, selection process or cost for the current station page.', source: dortsPublicArtOverview.id },
+      { text: 'The overview also frames elevated station areas below the viaduct as places for linear parks and cycle routes, linking transport infrastructure to public space.', source: dortsPublicArtOverview.id },
+      { text: 'Shipai therefore has a documented package history, roof type, material logic and design-symbol record even though the checked pages do not supply a station-level construction narrative.', source: dortsElevatedConstructionPackages.id },
+      { text: 'No individual civil award, final account, renaming gazette or complete public-art register entry for Shipai was found in the fetched primary material.', source: dortsPublicArtOverview.id },
+      { text: 'Those unresolved values and records remain TBC rather than being inferred from the adjacent Mingde or Qilian stations.', source: dortsElevatedConstructionPackages.id },
+    ],
   },
   R20: {
     structure: 'elevated', exits: 2, openingDate: '28 March 1997', openingSource: dortsRoute, structureSource: dortsStationArchitecture,

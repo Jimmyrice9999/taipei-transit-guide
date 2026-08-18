@@ -8507,3 +8507,62 @@ separate Nangang-programme scope, not current R-line artwork cost.
 Zhongshan/flood source-era codes vs current code registry. No colour-prefix audit.
 
 No baseline/test/checker changed. Next batch is R14–R19.
+
+# Run 31 — Part 1 Red station prose, R14–R19, 18 August 2026
+
+## Sourced
+
+This batch deepened R14 Yuanshan, R15 Jiantan, R16 Shilin, R17 Zhishan, R18
+Mingde and R19 Shipai. Body-prose counts are R14 346, R15 329, R16 336, R17
+314, R18 306 and R19 300, for 1,931 words total. Every sentence carries an
+overlay source.
+
+Full primary URLs:
+
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page42.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page43.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page44.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page47.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page48.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page49.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page51.html
+- https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page52.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page177.html
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://web.metro.taipei/c/stationstory/056/056.html
+- TRTC full pages for R14–R19:
+  https://web.metro.taipei/pages2026/WebStation/056/1,
+  /057/1, /058/1, /059/1, /060/1 and /061/1.
+
+No colour-prefix audit applies to a station batch.
+
+## TBC
+
+Package award values and station-level final accounts; complete current art
+records for R15–R19; the legal rename gazette and effective date behind the
+official “originally Tianmu” wording for R18; and feeder-bus prose. The fetched
+pages also do not provide a station-level art cost for R14.
+
+## Contradicted the corpus
+
+The prior audit correctly found no station-specific prose in the first fetched
+pages, but DORTS pages 42 and 47–52 supplied additional package, roof, material
+and public-realm evidence. The DORTS overview’s “originally Tianmu” wording for
+R18 is historical design evidence, not a rename gazette. R14’s TRTC station
+story provides a named mosaic artwork; that does not establish equivalent
+complete art records for R15–R19. No unverified appendix was promoted.
+
+## Conflicts found
+
+CT206 is the terminated original package and CT206A the replacement procurement;
+their contractors are sequential records, not competing completed-award values.
+The roof source distinguishes Xuan-shan (R14/R16/R17) from Juan-peng (R15/R18/R19),
+while the Jiantan source separately records the suspended roof and wind-test
+intervention. The current R18 label Mingde and DORTS’s “originally Tianmu” wording
+are retained as current versus historical evidence. No colour-prefix audit.
+
+Final gates for this batch: fresh build/verify passed, 519 pages checked, no
+missing glyphs, no broken links or fragments, 522 citations resolved, research
+clean, claims clean, geometry/CVD clean and unit tests 185/185. The explicit
+full test command is run after this log entry and before commit. Next batch is
+R20–R24 plus R22A.
