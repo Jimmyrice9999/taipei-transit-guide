@@ -167,12 +167,12 @@ construction-era name, rename date or rename announcement.
 
 ## Station-prose audit — 17 August 2026
 
-The first six remaining station pages were audited before editing. The full
+The first six remaining station pages were initially audited before editing. The full
 DORTS public-art records below were fetched and read; each supplied station-
 specific local or participatory context beyond the title, medium and placement
-already represented in the facts box. All six therefore received prose. No
-construction, siting, naming or incident claim was added where the checked
-pages did not establish one.
+already represented in the facts box. The initial result was superseded by the
+18 August deepening batch below, which fetched additional DORTS technical and
+architecture pages.
 
 - **BL01** — DORTS’s full record for *飛旋．夢的起點* says the vertical form
   turns the water, earth-energy and mining ideas into a six-sided structure,
@@ -210,6 +210,104 @@ pages did not establish one.
 - **BL22** — The full *捷運‧碼頭* record treats the platform as a contemporary transfer wharf and uses boat, tea, osmanthus and coal to recall Nangang’s former agricultural-and-mineral export port: 「將南港站『捷運月台』視為『當代的轉運碼頭』」 and 「以 舟、茶、桂、煤 為核心印象」. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL22 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=303C6A9B61A14F7F, source id `dorts-bl22-public-art`.
 - **BL23** — The full *我們的私房公共藝術* record describes three walls whose crowd flow and lighting form a three-part story linking speed, urban change and human history. Its companion *快或慢* uses sensors and three chase, escape and sliding modes to contrast rapid social change with slower cooperation and enduring history, culture and agriculture. This is PRIMARY, High confidence: Taipei City Department of Rapid Transit Systems, BL23 public art, https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=2809EC1898BBBD56, source id `dorts-bl23-public-art`.
 
+## Station-prose deepening — 18 August 2026 — BL01–BL06
+
+The initial 17 August audit was superseded by a second full-page source pass
+through DORTS route records, station architecture, public-art plans and
+technical books. The resulting body-prose counts are BL01 365, BL02 397,
+BL03 345, BL04 351, BL05 330 and BL06 369 words. All claims below are
+PRIMARY, High confidence: each URL was fetched in full and the original-language
+evidence was read.
+
+- **BL01 Dingpu — 365 words.** The full Dingpu route record establishes the
+  underground extension, one station, planning approval, CD552 and its listed
+  civil, water, vertical-transport, track and systems works: 「本路線接續捷運土城線永寧站起沿中央路三、四段道路下方佈設至頂埔地區高科技產業園區用地前止，路線長度約2公里，設1座車站，採地下方式建造」 and 「細部設計1個設計標(DD170)。1個區段標CD552標」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=02B240F1DBB7806E,
+  source id `dorts-bannan-dingpu`. The station report establishes the
+  station-and-cross-passage dimensions, gravel and sandstone profile, 185
+  diaphragm-wall panels, 弘堃工程’s CD271A award and the LK80-150 grab:
+  「頂埔車站及橫渡線為地下一層至二層的明挖覆蓋隧道，總長度約421公尺，寬約25.8公尺，開挖深度約21.5公尺」 and 「最後由弘堃工程股份有限公司得標」.
+  URL: https://www-ws.gov.taipei/001/Upload/public/Attachment/66291575315.pdf,
+  source id `dorts-bannan-dingpu-architecture-2015`.
+- **BL02 Yongning — 397 words.** The full Tucheng route record establishes
+  the underground four-station corridor, depot setting and planning and
+  contract history: 「全長約5.6公里，設4座車站，全採地下方式建造」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=12C5B1574D868732,
+  source id `dorts-bannan-tucheng`. The full public-art plan establishes the
+  two prehistoric sites, settlement and livelihood context, four artwork
+  locations, seven submissions, one review and three finalists: 「附近有距今 3,500 百年前之史前遺址斬龍山及土地公山 2 處」 and 「以公開徵件方式辦理，共收到 7 件作品」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html,
+  source id `dorts-bannan-public-art-plan-p251`. The full participation page
+  establishes close viewing, education, dynamic presentation, a website and
+  guided tours: 「作品以動態方式呈現，可吸引民眾停留觀賞」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page256.html,
+  source id `dorts-yongning-public-art-participation-p256`. The full CD511
+  journal establishes a separate track package awarded to 大陸工程公司 for
+  NT$996,762,700: 「得標廠商大陸工程公司。契約金額為新臺幣996,762,700元整」.
+  URL: https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page22.html,
+  source id `dorts-cd511-track-contract-p22`.
+- **BL03 Tucheng — 345 words.** The full route record establishes the
+  corridor, depot context, planning approval and CD550/CD551 packaging at
+  the URL above. The public-art plan establishes the proposed folk-and-craft
+  elements and procurement counts: 「以公開徵件方式辦理，共收到 12 件作品，刪除不合規定之 1 件後，尚有 11 件作品，經3次評選」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html,
+  source id `dorts-bannan-public-art-plan-p251`. The participation page
+  establishes artist–teacher collaboration and the junior-high curriculum:
+  「結合學校藝術教育課程，邀請藝術家與學校教師合作」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page255.html,
+  source id `dorts-tucheng-public-art-course-p255`. The CD511 scope and value
+  are the track-contract measurements above, not a station civil cost.
+- **BL04 Haishan — 351 words.** The full Tucheng route table explicitly labels
+  the row 「BL04 海山/(新北高工)」; no rename chronology is inferred. The full
+  tunnel-engineering page establishes the station-specific CD268 dewatering
+  case, settlement monitoring, building-tilt risk and complaints:
+  「以臺北捷運土城線 CD268 標海山站為例」 and 「引發民眾抗爭陳情」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page107.html,
+  source id `dorts-haishan-engineering-p107`. The public-art plan establishes
+  sidewalk siting, school participation, eight submissions, two reviews and
+  three finalists. The production page establishes the top-three school
+  drawings, torn-paper simulation, wire-mesh/concrete base and on-site
+  installation: 「水池馬賽克舖面之圖案係於樂利國小舉辦校內徵圖，取前3名製作」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page254.html,
+  source id `dorts-far-eastern-public-art-course-p254`.
+- **BL05 Far Eastern Hospital — 330 words.** The full public-art plan
+  establishes the former 湳子溝 water context, concourse-wall location,
+  fourteen submissions, four reviews and three finalists: 「公共藝術係規劃於車站穿堂層牆面，配合舊有之湳子溝，表達水的意象」 and 「共收到14件作品，經4次評選」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html,
+  source id `dorts-bannan-public-art-plan-p251`. The participation page
+  establishes the artist-and-school Arts and Humanities curriculum and its
+  intended student exploration and creation: 「透過藝術訊息的交流，鼓勵學生自我探索、參與創作」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page254.html,
+  source id `dorts-far-eastern-public-art-course-p254`.
+- **BL06 Fuzhong — 369 words.** The full Banqiao route record establishes the
+  western corridor from Ximen through Longshan Junior High, Peace West Road,
+  the Xindian River, Wenhua Road, the former Banqiao Brewery, Minquan Road and
+  the old railway station, and records the change from elevated to underground
+  and extension to Tucheng: 「藍線板橋段循原路線由高架改為地下並延伸至土城」.
+  URL: https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14,
+  source id `dorts-bannan-banqiao`. The public-art plan establishes the
+  four-storey void, eight submissions, one review and three finalists:
+  「利用穿堂層至月臺層約四層樓高挑空區之垂直動線空間」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html,
+  source id `dorts-bannan-public-art-plan-p251`. The participation record
+  establishes the student software test and later community discussion of
+  management, meaning and public-space transformation: 「學生族群對於以手機為互動的機制反映相當熱烈」.
+  URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page253.html,
+  source id `dorts-fuzhong-public-art-participation-p253`.
+
+### Batch TBC and source exhaustion
+
+No station-specific civil contractor, final account, construction-era name or
+dated rename gazette, paid-area transfer classification, or station-level depot
+roster was found for BL01–BL06 in the fetched DORTS route, architecture,
+technical-book and public-art families or the current TRTC station pages. The
+CD511 value remains explicitly a track-contract amount, not a station civil
+cost. Platform form, platform count and track count remain TBC. The source
+families exhausted for this batch were DORTS route records, DORTS station-
+architecture pages, DORTS public-art records and planning pages, technical
+books Nos. 2, 8 and 31, Technical Journal No. 39, and current TRTC station
+pages.
+
 ## Conflicts
 
 1. The DORTS route material describes the built Bannan sections as underground,
@@ -231,6 +329,25 @@ pages did not establish one.
    TBC. The DORTS material also discusses a future Sanying connection at the
    western end; that planning statement is not rendered as a current
    interchange at BL01.
+
+4. The official DORTS public-art overview classifies the Tucheng station work
+   as obtained through 邀請比件 (invited comparison), while the DORTS technical
+   station plan says 「以公開徵件方式辦理」 and gives twelve submissions, one
+   disqualification and three review rounds. These are retained as conflicting
+   descriptions of the selection method; the entry count and review history are
+   not silently used to rewrite the overview’s classification.
+
+5. The same official-source conflict appears at Haishan: the DORTS overview
+   summarises the work as student collage, while the technical station plan
+   reports eight submissions, two review rounds and three finalists. The full
+   production record separately confirms that the top three Le-li Elementary
+   School drawings supplied the mosaic imagery. The page publishes all three
+   statements with their different scopes rather than choosing one label.
+
+6. CD511’s NT$996,762,700 value is a track-contract value for the Xinpu-to-
+   Yongning scope, nested inside CD550. DORTS’s route page describes CD550 and
+   CD551 as larger section packages but publishes no station civil amount. The
+   figures are therefore not competing station prices and are kept separate.
 
 No conflict was found in the exit counts where the full TRTC and DORTS tables
 both publish one. The DORTS values for BL01-BL23 and the current TRTC counts

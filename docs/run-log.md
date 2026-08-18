@@ -8840,3 +8840,44 @@ where the fetched primary pages do not publish them.
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push. Next: audit the next
 line in Part 1, starting with Bannan.
+
+# Run 31 — Part 1 Bannan BL01–BL06, 18 August 2026
+
+Deepened six Bannan station pages from full DORTS primary pages. Body-prose
+counts: BL01 365, BL02 397, BL03 345, BL04 351, BL05 330 and BL06 369;
+batch total 2,057 words. BL01 added Dingpu’s CD552 package, CD271A diaphragm-
+wall contract, 421-metre station-and-cross-passage dimensions, gravel geology,
+entrance co-structures and daylight architecture. BL02–BL06 added Tucheng and
+Banqiao corridor history, underground construction method, public-art planning
+and participation records, and the CD511 track contract where it describes the
+track scope rather than a station civil cost.
+
+Primary URLs cited:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=02B240F1DBB7806E
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=12C5B1574D868732
+- https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://www-ws.gov.taipei/001/Upload/public/Attachment/66291575315.pdf
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page253.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page254.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page255.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page256.html
+- https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page107.html
+- https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html
+- https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page22.html
+
+Conflicts published: DORTS’s public-art overview classifies Tucheng’s selection
+as 邀請比件 while its technical station plan says 公開徵件; the overview calls
+Haishan’s work student collage while the technical plan reports an eight-entry,
+two-review, three-finalist process and the production record confirms the top
+three school drawings. CD511’s NT$996,762,700 is retained as a track-contract
+value, not a station civil price. BL04’s 海山/(新北高工) source-era label is
+recorded without inferring a rename. No station-specific civil contractor,
+final account, rename gazette, fare-boundary classification or depot roster was
+sourced. No station colour-prefix audit applies. Next: audit BL07–BL12.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit
+npm test and diff check must pass before commit and push.

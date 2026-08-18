@@ -13,6 +13,7 @@ function source(
   publisher: string,
   url: string,
   note: string,
+  sourceAccessed = accessed,
 ): Source {
   return {
     id,
@@ -20,7 +21,7 @@ function source(
     titleOriginal,
     publisher,
     url,
-    accessed,
+    accessed: sourceAccessed,
     snapshot: '',
     snapshotAlt: '',
     kind: 'primary',
@@ -93,6 +94,96 @@ const dortsStationArchitecture = source(
   'https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2',
   'The builder’s full station-architecture page publishes the BL01, BL22 and BL23 design themes, construction context and named local references.',
 )
+const dortsDingpuStationArchitecture = source(
+  'dorts-bannan-dingpu-architecture-2015',
+  'Dingpu station architecture and public art',
+  '土城線延伸頂埔段車站建築與公共藝術',
+  dortsPublisher,
+  'https://www-ws.gov.taipei/001/Upload/public/Attachment/66291575315.pdf',
+  'The builder’s full station report publishes Dingpu’s station and cross-passage dimensions, geology, diaphragm-wall contract, entrance co-structures, interior daylight design and the relationship between the station theme and public art.',
+  '2026-08-18',
+)
+const dortsPublicArtOverview = source(
+  'dorts-bannan-public-art-overview',
+  'DORTS public-art programme overview',
+  '捷運公共藝術簡介',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804',
+  'The builder’s full public-art overview publishes the programme’s planning history and its summary of the Tucheng section’s selection methods.',
+  '2026-08-18',
+)
+const dortsPublicArtPlan = source(
+  'dorts-bannan-public-art-plan-p251',
+  'Bannan public-art station plans',
+  '捷運公共藝術：板南線各站公共藝術規劃',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page251.html',
+  'The builder’s full technical-book page publishes the planned locations, themes, entry counts, review rounds and selected works for BL02–BL06.',
+  '2026-08-18',
+)
+const dortsFuzhongParticipation = source(
+  'dorts-fuzhong-public-art-participation-p253',
+  'Fuzhong public-art participation record',
+  '府中站公共藝術民眾參與活動',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page253.html',
+  'The builder’s full technical-book page publishes the Fuzhong work’s software testing and community discussion sessions.',
+  '2026-08-18',
+)
+const dortsHospitalParticipation = source(
+  'dorts-far-eastern-public-art-course-p254',
+  'Far Eastern Hospital and Haishan public-art participation record',
+  '亞東醫院站、海山站公共藝術民眾參與活動',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page254.html',
+  'The builder’s full technical-book page publishes the Far Eastern Hospital station’s school-art curriculum and the Haishan mosaic production process.',
+  '2026-08-18',
+)
+const dortsTuchengParticipation = source(
+  'dorts-tucheng-public-art-course-p255',
+  'Tucheng public-art participation record',
+  '土城站公共藝術民眾參與活動',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page255.html',
+  'The builder’s full technical-book page publishes the Tucheng school-art curriculum and its intended student participation.',
+  '2026-08-18',
+)
+const dortsYongningParticipation = source(
+  'dorts-yongning-public-art-participation-p256',
+  'Yongning public-art participation record',
+  '永寧站公共藝術民眾參與活動',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page256.html',
+  'The builder’s full technical-book page publishes the Yongning work’s close-view, website and guided-tour participation plan.',
+  '2026-08-18',
+)
+const dortsUndergroundStationStructure = source(
+  'dorts-underground-station-structure-p23',
+  'Underground metro-station concrete practice',
+  '捷運地下車站結構混凝土施工實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html',
+  'The builder’s full technical-book page describes the cut-and-cover box structure, diaphragm walls and waterproofing used for underground stations including the Tucheng and Bannan sections.',
+  '2026-08-18',
+)
+const dortsHaishanEngineering = source(
+  'dorts-haishan-engineering-p107',
+  'Haishan station dewatering case',
+  '捷運隧道工程實務：海山站降水案例',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page107.html',
+  'The builder’s full tunnel-engineering page records the CD268 Haishan dewatering example, settlement monitoring and the resulting public complaints.',
+  '2026-08-18',
+)
+const dortsCd511Track = source(
+  'dorts-cd511-track-contract-p22',
+  'CD511 Bannan and Tucheng track contract',
+  '臺北捷運軌道工程之回顧與展望：板橋線第二階段及土城線',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/jrtst/ebook/no39/files/basic-html/page22.html',
+  'The builder’s full technical-journal page publishes CD511’s scope, contractor, contract amount, track form, turnouts and relationship to CD550.',
+  '2026-08-18',
+)
 
 const art = {
   bl01: source('dorts-bl01-public-art', 'BL01 public art', '飛旋．夢的起點', dortsPublisher, 'https://www.dorts.gov.taipei/cp.aspx?n=1E9E49BD7665CF2D&s=3D0A3BBDE3F705F9', 'The builder’s full public-art record publishes the title, artists, materials, completion month, and placement.'),
@@ -157,15 +248,16 @@ type BLData = {
   designSource?: Source
   publicArt?: string
   publicArtSource?: Source
+  proseSources?: Source[]
 }
 
 const blData: Record<string, BLData> = {
-  BL01: { engineering: 'BL36', exits: 4, openingDate: '6 July 2015', route: dortsDingpu, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 中央路4段約100號旁; 2: 中央路4段近鴻海精密工業; 3: 中央路4段51-6號近頂埔之星科技廣場; 4: 中央路4段62號旁. Accessible exits: 1, 3 and 4.', facilities: 'Exit lifts at exits 1, 3 and 4; paid-platform lift at the paid enquiry centre; enquiry points near exits 3 and 4; water dispenser near the enquiry point; unpaid toilets near exit 3 and paid-zone toilets and parent/accessible toilet in the hall; nursing room in the paid B3 hall; bicycle access open.', landmarks: '頂埔之星科技廣場', design: 'The station theme is 節點密碼–C的方程式. DORTS describes a light passage and light platform, a flowing ceiling, and light-wave, halo and ray motifs.', designSource: dortsStationArchitecture, publicArt: '飛旋．夢的起點 — 陳宏誠、林育正（大瑪爾藝術設計有限公司）; stainless steel, stone, fluorocarbon paint and aluminium; June 2015; platform and accessible-lift areas.', publicArtSource: art.bl01 },
-  BL02: { engineering: 'BL37', exits: 4, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 中央路3段98巷口; 2: 中央路3段承天路口; 3: 中央路3段近89巷; 4: 中央路3段60號. Accessible exits: 1 and 2.', facilities: 'Exit lifts at exits 1 and 2; paid-platform lift in the west side near the enquiry point; enquiry point near exit 2; water dispenser near the enquiry point; unpaid toilets near exits 2 and 3; parent/accessible toilet near exit 2; no nursing room is listed; bicycle access open.', landmarks: tbc, publicArt: '時間．碎片 — 許宗傑; mechanical and motor elements, glass-fibre resin, enamel and glass, with 86,400 LEDs; March 2006; concourse corners by exits 1 and 4.', publicArtSource: art.bl02 },
-  BL03: { engineering: 'BL38', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 金城路1段近金城公園; 2: 金城路1段和平路口近土城區戶政事務所; 3: 金城路1段. Accessible exit: 1.', facilities: 'Exit-1 lift; paid-platform lift on the east side; enquiry point and water dispenser near exit 1; unpaid toilets and parent/accessible toilet near exit 3; no nursing room is listed; bicycle access open.', landmarks: '金城公園; 土城區戶政事務所', publicArt: '金城傳奇 — 涂維政（帝門藝術教育基金會）; 夸石; February 2006; unpaid concourse and entrance walls.', publicArtSource: art.bl03 },
-  BL04: { engineering: 'BL39', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 海山路近樂利國小; 2: 海山路新北高工運動場旁; 3: 裕民路92巷22弄3號. Accessible exit: 2.', facilities: 'Exit-2 lift; paid-platform lift on the west side or centre; enquiry point and water dispenser near exit 2; paid toilets and parent/accessible toilet by the hall lift; no nursing room is listed; bicycle access open.', landmarks: '樂利國小; 新北高工運動場', publicArt: '牧場 — 黃清輝; white marble, black granite, mosaic and ground lights; May 2006; entrance forecourt.', publicArtSource: art.bl04 },
-  BL05: { engineering: 'BL40', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 南雅南路2段120號; 2: 南雅南路2段122號; 3: 南雅南路2段近高爾富路口. Accessible exit: 3.', facilities: 'Exit-3 lift; paid-platform lift on the west side; enquiry points near exits 1 and 2; water dispenser at exit 3; paid toilets and parent/accessible toilet by the hall lift; no nursing room is listed; bicycle access open.', landmarks: tbc, publicArt: '河戀 — 楊春森工作室; glass and LED; October 2005; concourse wall.', publicArtSource: art.bl05 },
-  BL06: { engineering: 'BL1', exits: 3, openingDate: '31 August 2000', route: dortsBanqiao, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 縣民大道1段193號近板橋農會; 2: 縣民大道府中路口; 3: 府中路30號近板橋區公所. Accessible exit: 1.', facilities: 'Exit-1 lift; paid-platform lift on the west side near the enquiry point; enquiry point and water dispenser near exit 1; paid toilets and parent/accessible toilet near the enquiry point; no nursing room is listed; bicycle access open.', landmarks: '板橋農會; 板橋區公所', publicArt: '空間之詩 — 陳逸堅; LED message board, software, iron and cables; October 2005; the vertical-circulation void.', publicArtSource: art.bl06 },
+  BL01: { engineering: 'BL36', exits: 4, openingDate: '6 July 2015', route: dortsDingpu, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 中央路4段約100號旁; 2: 中央路4段近鴻海精密工業; 3: 中央路4段51-6號近頂埔之星科技廣場; 4: 中央路4段62號旁. Accessible exits: 1, 3 and 4.', facilities: 'Exit lifts at exits 1, 3 and 4; paid-platform lift at the paid enquiry centre; enquiry points near exits 3 and 4; water dispenser near the enquiry point; unpaid toilets near exit 3 and paid-zone toilets and parent/accessible toilet in the hall; nursing room in the paid B3 hall; bicycle access open.', landmarks: '頂埔之星科技廣場', design: 'The station theme is 節點密碼–C的方程式. DORTS describes a light passage and light platform, a flowing ceiling, and light-wave, halo and ray motifs.', designSource: dortsStationArchitecture, publicArt: '飛旋．夢的起點 — 陳宏誠、林育正（大瑪爾藝術設計有限公司）; stainless steel, stone, fluorocarbon paint and aluminium; June 2015; platform and accessible-lift areas.', publicArtSource: art.bl01, proseSources: [dortsDingpuStationArchitecture] },
+  BL02: { engineering: 'BL37', exits: 4, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 中央路3段98巷口; 2: 中央路3段承天路口; 3: 中央路3段近89巷; 4: 中央路3段60號. Accessible exits: 1 and 2.', facilities: 'Exit lifts at exits 1 and 2; paid-platform lift in the west side near the enquiry point; enquiry point near exit 2; water dispenser near the enquiry point; unpaid toilets near exits 2 and 3; parent/accessible toilet near exit 2; no nursing room is listed; bicycle access open.', landmarks: tbc, publicArt: '時間．碎片 — 許宗傑; mechanical and motor elements, glass-fibre resin, enamel and glass, with 86,400 LEDs; March 2006; concourse corners by exits 1 and 4.', publicArtSource: art.bl02, proseSources: [dortsPublicArtPlan, dortsYongningParticipation, dortsUndergroundStationStructure, dortsCd511Track] },
+  BL03: { engineering: 'BL38', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 金城路1段近金城公園; 2: 金城路1段和平路口近土城區戶政事務所; 3: 金城路1段. Accessible exit: 1.', facilities: 'Exit-1 lift; paid-platform lift on the east side; enquiry point and water dispenser near exit 1; unpaid toilets and parent/accessible toilet near exit 3; no nursing room is listed; bicycle access open.', landmarks: '金城公園; 土城區戶政事務所', publicArt: '金城傳奇 — 涂維政（帝門藝術教育基金會）; 夸石; February 2006; unpaid concourse and entrance walls.', publicArtSource: art.bl03, proseSources: [dortsPublicArtOverview, dortsPublicArtPlan, dortsTuchengParticipation, dortsUndergroundStationStructure, dortsCd511Track] },
+  BL04: { engineering: 'BL39', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 海山路近樂利國小; 2: 海山路新北高工運動場旁; 3: 裕民路92巷22弄3號. Accessible exit: 2.', facilities: 'Exit-2 lift; paid-platform lift on the west side or centre; enquiry point and water dispenser near exit 2; paid toilets and parent/accessible toilet by the hall lift; no nursing room is listed; bicycle access open.', landmarks: '樂利國小; 新北高工運動場', publicArt: '牧場 — 黃清輝; white marble, black granite, mosaic and ground lights; May 2006; entrance forecourt.', publicArtSource: art.bl04, proseSources: [dortsPublicArtOverview, dortsPublicArtPlan, dortsHospitalParticipation, dortsHaishanEngineering, dortsUndergroundStationStructure] },
+  BL05: { engineering: 'BL40', exits: 3, openingDate: '31 May 2006', route: dortsTucheng, depot: 'Tucheng Depot; station-level roster allocation: TBC.', exitDetails: '1: 南雅南路2段120號; 2: 南雅南路2段122號; 3: 南雅南路2段近高爾富路口. Accessible exit: 3.', facilities: 'Exit-3 lift; paid-platform lift on the west side; enquiry points near exits 1 and 2; water dispenser at exit 3; paid toilets and parent/accessible toilet by the hall lift; no nursing room is listed; bicycle access open.', landmarks: tbc, publicArt: '河戀 — 楊春森工作室; glass and LED; October 2005; concourse wall.', publicArtSource: art.bl05, proseSources: [dortsPublicArtPlan, dortsHospitalParticipation, dortsUndergroundStationStructure, dortsCd511Track] },
+  BL06: { engineering: 'BL1', exits: 3, openingDate: '31 August 2000', route: dortsBanqiao, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 縣民大道1段193號近板橋農會; 2: 縣民大道府中路口; 3: 府中路30號近板橋區公所. Accessible exit: 1.', facilities: 'Exit-1 lift; paid-platform lift on the west side near the enquiry point; enquiry point and water dispenser near exit 1; paid toilets and parent/accessible toilet near the enquiry point; no nursing room is listed; bicycle access open.', landmarks: '板橋農會; 板橋區公所', publicArt: '空間之詩 — 陳逸堅; LED message board, software, iron and cables; October 2005; the vertical-circulation void.', publicArtSource: art.bl06, proseSources: [dortsPublicArtPlan, dortsFuzhongParticipation, dortsUndergroundStationStructure, dortsCd511Track] },
   BL07: { engineering: 'BL2', exits: 3, openingDate: '31 May 2006', route: dortsBanqiao, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 站前路、新府路口、新板萬坪都會公園; 2: 縣民大道、新府路口、板橋公車站; 3: 站前路5號、板橋火車站對面. Accessible exit: 3.', facilities: 'Exit-3 lift; paid-platform lift on the north side; enquiry point and water dispenser near exit 3; unpaid toilets and parent/accessible toilet near exit 3; nursing room in the unpaid hall; bicycle access open.', landmarks: '新板萬坪都會公園; 板橋公車站; 板橋火車站', interchange: { label: 'Tamsui–Xinyi Line; transfer mode: TBC', lineCode: 'R' }, publicArt: '進化的軌跡 — 陶亞倫; stainless-steel painted rings and motor; October 2005; four main platform columns.', publicArtSource: art.bl07 },
   BL08: { engineering: 'BL3', exits: 5, openingDate: '31 August 2000', route: dortsBanqiao, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 民生路3段15號、新埔市場; 2: 民生路2段251號; 3: 民生路2段234巷; 4: 文化路1段360號; 5: 民生路3段6號. Accessible exits: 4 and 5.', facilities: 'Exit lifts at exits 4 and 5; paid-platform lift on the east side near the enquiry point; enquiry point and water dispenser near exit 4; unpaid toilets and parent/accessible toilet near exits 4 and 5; nursing room in the unpaid hall; bicycle access open.', landmarks: '新埔市場', interchange: { label: 'Tamsui–Xinyi Line; transfer mode: TBC', lineCode: 'R' } },
   BL09: { engineering: 'BL4', exits: 6, openingDate: '31 August 2000', route: dortsBanqiao, depot: 'Tucheng Depot is the published depot for the Bannan, Banqiao and Tucheng stretch; station-level roster allocation: TBC.', exitDetails: '1: 雙十路3段10巷近板橋農村公園; 2: 文化路2段313號; 3: 文化路2段296號; 4: 雙十路2段178號近松柏街; 5: 文化路2段384號近仁化街; 6: 文化路2段383巷近江翠國小. Accessible exit: 3.', facilities: 'Exit-3 lift; paid-platform lift on the west side near the enquiry point; enquiry points near exits 1 and 2; water dispenser near the enquiry point; unpaid toilets and parent/accessible toilet near exits 1–3; no nursing room is listed; bicycle access open.', landmarks: '板橋農村公園; 江翠國小' },
@@ -187,22 +279,86 @@ const blData: Record<string, BLData> = {
 
 const stationProse: Record<string, StationProseSentence[]> = {
   BL01: [
-    { text: 'DORTS says the work’s vertical motion evokes water piercing a mine and rising earth energy; its hexagonal structure recasts coal-mining imagery and nano-carbon-tube grids as a new transport-and-cultural-creation beginning.', source: art.bl01.id },
+    { text: 'DORTS describes the Dingpu extension as running from Yongning beneath Central Road Sections 3 and 4 to the high-tech industrial-park area, an underground route of about two kilometres with one station.', source: dortsDingpu.id },
+    { text: 'The project record gives the approved planning date as 16 February 2007 and a planned total cost of NT$7.627 billion, while identifying one design package, section contract CD552 and its civil, water, vertical-transport and track subcontracts.', source: dortsDingpu.id },
+    { text: 'A separate station report measures Dingpu station and its cross-passage together at about 421 metres long, 25.8 metres wide and 21.5 metres deep, built as a cut-and-cover underground structure.', source: dortsDingpuStationArchitecture.id },
+    { text: 'Its recorded ground profile contains shallow fill, a dense gravel layer extending roughly 1.5 to 24.55 metres below ground with stones up to 120 centimetres, and weakly cemented sandstone below about 20.3 metres.', source: dortsDingpuStationArchitecture.id },
+    { text: 'Because the gravel was unusually large and hard and the schedule was tight, DORTS separated the main diaphragm-wall work into CD271A, awarded it to 弘堃工程, and records 185 wall panels.', source: dortsDingpuStationArchitecture.id },
+    { text: 'The contractor used a heavy hydraulic grab, the LK80-150, after the site investigation showed that ordinary assumptions about the gravel would not describe the construction conditions accurately.', source: dortsDingpuStationArchitecture.id },
+    { text: 'The architecture report treats Dingpu as both the Tucheng Line terminal and the Sanying Line’s future starting point, then reads the place through a longer transition from coal mining and traditional industry toward high-technology research.', source: dortsDingpuStationArchitecture.id },
+    { text: 'That temporal reading is carried into the building: the report describes carbon atoms developing into carbon-nanotube forms, with entrances and underground spaces unfolding in layers like excavation.', source: dortsDingpuStationArchitecture.id },
+    { text: 'Entrance 1 is co-constructed with the Tucheng precinct police substation, while Entrance 3 is designed as a shared entrance with the future Sanying station and occupies joint-development land.', source: dortsDingpuStationArchitecture.id },
+    { text: 'Inside, a ceiling opening brings daylight into the underground station, and the report describes wave, halo and radiance as three transformations of light across ceiling, floor and wall elements.', source: dortsDingpuStationArchitecture.id },
+    { text: 'The same report says temperature-sensitive controls vary the coloured wall lighting, making the wall respond to outdoor temperature and giving passengers an intended interaction with the outside environment.', source: dortsDingpuStationArchitecture.id },
+    { text: 'DORTS connects this architectural sequence to the public-art work’s upward and downward movement, presenting transport and cultural creation as a shared new beginning rather than treating the installation as an isolated object.', source: art.bl01.id },
   ],
   BL02: [
-    { text: 'The work draws on archaeological reports from Tudigong Mountain and Zhanlong Mountain, turning replica pottery fragments into a mechanical image of local cultural origins and time repeatedly dissolving and recomposing.', source: art.bl02.id },
+    { text: 'The Tucheng section was planned from the early 1990s and runs underground for about 5.6 kilometres from Fuzhong toward Central Road and Chengtian Road, with four stations and a depot in the former Dahan River flood-control area.', source: dortsTucheng.id },
+    { text: 'DORTS places the depot beside Xinxing Bridge, the new Tucheng embankment, the Water Resources Agency river office and the Tucheng industrial district, describing it as a major parking, cleaning and maintenance base for the blue line.', source: dortsTucheng.id },
+    { text: 'The builder’s architecture guidance says underground stations in this section must reconcile entrances and ventilation shafts with the surface environment, while their internal spaces remain plain, simple and function-led.', source: dortsArchitecture.id },
+    { text: 'Technical guidance for underground stations in the Tucheng and Bannan sections describes long box-shaped cut-and-cover structures, diaphragm walls with high water resistance and low construction noise, and waterproofing that wraps the station structure.', source: dortsUndergroundStationStructure.id },
+    { text: 'Yongning’s public-art plan starts from two nearby prehistoric sites, 斬龍山 and 土地公山, dated by the report to roughly 3,500 years ago, where settlements were described as dispersed communities about 200 metres square.', source: dortsPublicArtPlan.id },
+    { text: 'That account identifies agriculture as the main livelihood and hunting and fishing as secondary activities, with many excavated stone tools, especially small and medium chipped and polished axes.', source: dortsPublicArtPlan.id },
+    { text: 'Rather than placing the work in a single gallery-like room, the plan distributed it across four wall and corner locations at entrances A, B and D so that the station itself could carry the archaeological narrative.', source: dortsPublicArtPlan.id },
+    { text: 'The plan records seven submissions, one review round and three finalists before selecting the installed work, preserving a concrete record of the public-art procurement rather than only its later interpretation.', source: dortsPublicArtPlan.id },
+    { text: 'DORTS’s later participation record says the work was intended for close viewing, with educational value for learning about local excavated objects and history, and a dynamic presentation intended to make passengers pause.', source: dortsYongningParticipation.id },
+    { text: 'The participation plan also proposed a dedicated website because a station sign can be seen only briefly in a busy passenger flow, plus guided tours linked to the station-opening programme.', source: dortsYongningParticipation.id },
+    { text: 'The route’s CD511 track contract was a separate systems package: it covered the line from 600 metres west of Xinpu to Yongning, 14.9 kilometres of mainly ballastless track, 19 turnouts and about 27 kilometres of third rail.', source: dortsCd511Track.id },
+    { text: 'DORTS records that CD511 was awarded to Continental Engineering Corporation in 1999 for NT$996,762,700, and that it sat inside the larger CD550 section contract, so the amount is a track-contract value rather than a station civil cost.', source: dortsCd511Track.id },
   ],
   BL03: [
-    { text: 'DORTS describes Tucheng’s art as “techno-antiquities”: resident-created symbols, prehistoric-to-modern histories and transit technology are collaged into a new “Jincheng civilisation”.', source: art.bl03.id },
+    { text: 'The Tucheng Line corridor was ultimately built underground from Fuzhong along the west side of the railway, then beside Nanya South Road, the former Gongguan ditch corridor, Jincheng Road and Central Road toward Chengtian Road.', source: dortsTucheng.id },
+    { text: 'DORTS records that the line had been planned since 1990, received central approval in 1993 and was delivered together with the Banqiao Line works through three detailed-design packages and the CD550 and CD551 section contracts.', source: dortsTucheng.id },
+    { text: 'The same route record says the Tucheng Depot occupies a former Dahan River flood-control site and supports parking, washing and repair functions shared across the blue-line fleet, although it does not assign an individual station roster.', source: dortsTucheng.id },
+    { text: 'DORTS’s underground-station construction guidance describes the relevant station form as a long cut-and-cover box, using stiff diaphragm walls to limit water ingress, noise, vibration and movement near neighbouring buildings.', source: dortsUndergroundStationStructure.id },
+    { text: 'The public-art plan proposed wall works at the entrances and in the unpaid concourse, using modern treatments of folk and craft elements such as door guardians, stone markers, kites, umbrellas, lanterns and paper cutting.', source: dortsPublicArtPlan.id },
+    { text: 'Its procurement record reports twelve submissions, one disqualification, three review rounds and three finalists before selecting the work now associated with the station’s Jincheng story.', source: dortsPublicArtPlan.id },
+    { text: 'A separate DORTS overview classifies the Tucheng work as obtained through invited comparison, while the technical-book station plan says it was handled by public submission; these are retained as a selection-method conflict rather than silently reconciled.', source: dortsPublicArtOverview.id },
+    { text: 'The participation plan linked the station’s public art to junior-high arts-and-humanities teaching, with artists and teachers collaborating and the curriculum designed around students’ cognitive and psychological characteristics.', source: dortsTuchengParticipation.id },
+    { text: 'DORTS says the educational purpose was to stimulate students’ inner perception and modes of expression, then encourage self-exploration and participation through exchanges of artistic messages.', source: dortsTuchengParticipation.id },
+    { text: 'The CD511 track package covered a six-station, 14.9-kilometre main line and a separate depot with ten kilometres of ballasted track, forty turnouts and nineteen underground turnouts on the revenue route.', source: dortsCd511Track.id },
+    { text: 'The builder records Continental Engineering Corporation as CD511’s contractor and NT$996,762,700 as its contract amount, explicitly describing the package as a child contract within CD550 rather than the civil cost of this station.', source: dortsCd511Track.id },
   ],
   BL04: [
-    { text: 'The artwork’s water imagery records an older waterway, while the mosaic design came from the top three entries in Le-li Elementary School’s in-school drawing competition.', source: art.bl04.id },
+    { text: 'DORTS’s route table labels BL04 as 海山/(新北高工); this source-era slash notation is recorded here without inferring a rename chronology.', source: dortsTucheng.id },
+    { text: 'The station lies within the underground Tucheng section, whose alignment follows the railway-side corridor, the former Gongguan ditch, Jincheng Road and Central Road before reaching the Yongning end.', source: dortsTucheng.id },
+    { text: 'The builder’s general architecture page says the section’s underground design limits the visual and environmental impact of entrances and ventilation shafts, leaving internal spaces deliberately plain and functional.', source: dortsArchitecture.id },
+    { text: 'The technical construction record identifies BL04 as the CD268 Haishan station case in a dewatering discussion, not merely as a generic example of underground construction.', source: dortsHaishanEngineering.id },
+    { text: 'It records that wellpoint dewatering outside the diaphragm wall lowered groundwater and reduced lateral water pressure on the wall, but also caused soil-consolidation settlement near the work zone.', source: dortsHaishanEngineering.id },
+    { text: 'Settlement points approached or exceeded warning values, and the record says uneven building settlement could cause tilting and led to public complaints, making groundwater control a documented community risk at this station.', source: dortsHaishanEngineering.id },
+    { text: 'The public-art plan placed the work along both sides of the new road’s sidewalks between Mingde Road and Yumin Road, proposing paving or street furniture and participation by Haishan Vocational High School and Le-li Elementary School teachers and students.', source: dortsPublicArtPlan.id },
+    { text: 'The plan reports eight submissions, two review rounds and three finalists, but the DORTS public-art overview describes the selection as student collage, so the two official records do not describe the same procurement route.', source: dortsPublicArtOverview.id },
+    { text: 'The detailed production record explains that the water-pool mosaic pattern came from an in-school drawing competition, using the top three designs rather than a single artist’s image.', source: dortsHospitalParticipation.id },
+    { text: 'Those three drawings were first simulated with torn coloured paper, then transferred to a wire-mesh and concrete base after it had fully cured, with the artist and craft workers completing the on-site collage.', source: dortsHospitalParticipation.id },
+    { text: 'The broader underground-station method used in the Tucheng section relied on cut-and-cover box structures, diaphragm walls and a waterproofing membrane around the structural envelope.', source: dortsUndergroundStationStructure.id },
+    { text: 'This combination of a technically sensitive excavation and a publicly produced surface artwork gives BL04 a documented relationship between construction risk, street repair and local school participation.', source: dortsHaishanEngineering.id },
   ],
   BL05: [
-    { text: 'DORTS treats the Banqiao river as a witness to local history and residents’ memories; glass rods and LEDs turn that “river of space” into changing time-colours.', source: art.bl05.id },
+    { text: 'Far Eastern Hospital station is part of DORTS’s underground Tucheng corridor from Fuzhong toward Central Road and Chengtian Road, a route planned as four stations with the Tucheng Depot at the eastern end.', source: dortsTucheng.id },
+    { text: 'The route record places the section alongside the railway, Nanya South Road, the former Gongguan ditch and Jincheng Road, describing an alignment assembled through existing urban corridors rather than a free-standing greenfield right-of-way.', source: dortsTucheng.id },
+    { text: 'DORTS’s station-architecture guidance says these underground stations were designed to make entrances and ventilation structures coexist with their surroundings, while the internal passenger spaces favour plain, simple and functional treatment.', source: dortsArchitecture.id },
+    { text: 'The public-art plan specifically reserved a concourse wall for Far Eastern Hospital station and asked the work to express the water imagery of the former 湳子溝 watercourse.', source: dortsPublicArtPlan.id },
+    { text: 'Its procurement record reports fourteen submissions, four review rounds and three finalists before the selected work was chosen, which is more specific than a generic statement that the station has a water-themed installation.', source: dortsPublicArtPlan.id },
+    { text: 'DORTS paired the station artwork with school arts education: artists and school teachers were to collaborate through the school’s Arts and Humanities curriculum rather than treating the work as an isolated commission.', source: dortsHospitalParticipation.id },
+    { text: 'The stated teaching purpose was to use the station’s artistic medium to develop students’ perception and expression, then encourage self-exploration and participation through exchanges about the artwork.', source: dortsHospitalParticipation.id },
+    { text: 'The general underground-station technical record describes the Tucheng and Bannan stations as long box-shaped cut-and-cover structures, with diaphragm walls chosen for stiffness, water resistance and lower noise and vibration.', source: dortsUndergroundStationStructure.id },
+    { text: 'It also records that station structures are wrapped with waterproofing and that the design must account for large spans and the risk of neighbouring building movement during excavation.', source: dortsUndergroundStationStructure.id },
+    { text: 'The separate CD511 track contract ran from 600 metres west of Xinpu to Yongning and covered 14.9 kilometres of mainly ballastless track, nineteen turnouts and about twenty-seven kilometres of third rail.', source: dortsCd511Track.id },
+    { text: 'That package was awarded to Continental Engineering Corporation for NT$996,762,700, but DORTS identifies it as a track child contract inside CD550, not as a station construction price.', source: dortsCd511Track.id },
   ],
   BL06: [
-    { text: 'The work turns the station into a participatory public space: its LED poetry can receive real-time submissions from citizens, passengers and poets by SMS.', source: art.bl06.id },
+    { text: 'DORTS describes the Banqiao Line as a 7.1-kilometre underground section with five stations, running from Ximen beneath Longshan Junior High and Peace West Road before crossing the Xindian River toward Fuzhong.', source: dortsBanqiao.id },
+    { text: 'The alignment then follows Wenhua Road, cuts through the former Banqiao Brewery site and passes under residential blocks along Minquan Road before reaching the New Banqiao special district and the old railway station.', source: dortsBanqiao.id },
+    { text: 'The builder records that the blue-line section was part of the original 70.3-kilometre Taipei network plan, but that the western section was changed from elevated to underground and extended to Tucheng during later planning.', source: dortsBanqiao.id },
+    { text: 'DORTS’s route table identifies Fuzhong as the BL1 engineering station in the Banqiao section, while the narrative places it at the historic western end where the metro connects the old railway and later Tucheng corridor.', source: dortsBanqiao.id },
+    { text: 'The station’s public-art plan used the roughly four-storey vertical void between concourse and platform as the main design opportunity, proposing hanging forms, reliefs or lighting on the walls.', source: dortsPublicArtPlan.id },
+    { text: 'The plan reports eight submissions, one review round and three finalists before selecting the installed work, providing a documented procurement history for the unusually tall internal space.', source: dortsPublicArtPlan.id },
+    { text: 'After installation, the artist ran two participation sessions in Hualien, one with the teachers’ college poetry society and another with local cultural and arts participants.', source: dortsFuzhongParticipation.id },
+    { text: 'The first session tested the mobile-phone interaction software with students, who responded strongly to the idea of contributing through a handset while the artist demonstrated the system using a laptop and projector.', source: dortsFuzhongParticipation.id },
+    { text: 'The second discussion addressed later management, the work’s meaning, its possible effect on the community and the transformation of public space, showing that the participation programme extended beyond a launch-day ceremony.', source: dortsFuzhongParticipation.id },
+    { text: 'For underground stations in the Banqiao and Tucheng sections, DORTS describes long cut-and-cover box structures supported by diaphragm walls and protected by a waterproofing membrane around the structural body.', source: dortsUndergroundStationStructure.id },
+    { text: 'The CD511 track package later connected the western Banqiao works into the Tucheng section, covering the route from 600 metres west of Xinpu to Yongning with 14.9 kilometres of ballastless track and nineteen turnouts.', source: dortsCd511Track.id },
+    { text: 'DORTS records Continental Engineering Corporation as CD511’s contractor at NT$996,762,700, while clarifying that this was a track package nested inside CD550 rather than the civil contract value for Fuzhong station.', source: dortsCd511Track.id },
   ],
   BL07: [
     { text: 'DORTS presents the work’s linked coloured rings as both Greater Taipei’s completed transport connections and a way to give ordinary platform columns new meaning through interaction.', source: art.bl07.id },
@@ -226,7 +382,7 @@ function makeResearch(code: string, data: BLData): StationResearch {
   const stationSource = trtcStation(code)
   const designSource = data.designSource
   const publicArtSource = data.publicArtSource
-  const sources = [stationSource, data.route, dortsArchitecture, ...(designSource ? [designSource] : []), ...(publicArtSource ? [publicArtSource] : [])]
+  const sources = [stationSource, data.route, dortsArchitecture, ...(designSource ? [designSource] : []), ...(publicArtSource ? [publicArtSource] : []), ...(data.proseSources ?? [])]
     .filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
   return {
     sources,
