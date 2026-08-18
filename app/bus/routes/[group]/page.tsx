@@ -5,8 +5,9 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import CardRow from '@/components/CardRow'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
+import References from '@/components/References'
 import RichText from '@/components/RichText'
-import { getFolder, getFolderBody } from '@/lib/content'
+import { getFolder, getFolderContent } from '@/lib/content'
 import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
 import { getAccent } from '@/lib/lines'
 
@@ -37,7 +38,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
 
   const folder = getFolder(['bus', 'routes'], group)
   const routes = getBusRoutesByGroup(GROUP)
-  const body = await getFolderBody(['bus', 'routes'], group)
+  const folderContent = await getFolderContent(['bus', 'routes'], group)
 
   return (
     <PageShell accent={getAccent('BR')}>
@@ -46,7 +47,8 @@ export default async function BusRouteGroupPage({ params }: Props) {
       <BackLink href="/bus/routes/" label="Routes" />
       <h1 className="page-title"><RichText>{folder.title}</RichText></h1>
       {folder.description && <p className="page-summary"><RichText>{folder.description}</RichText></p>}
-      {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
+      {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
+      <References references={folderContent.references} />
       <details className="index-disclosure">
         <summary>
           <span className="section-heading" role="heading" aria-level={2}>Routes in this group</span>

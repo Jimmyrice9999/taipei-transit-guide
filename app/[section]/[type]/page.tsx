@@ -10,9 +10,10 @@ import PhotoCard from '@/components/PhotoCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
+import References from '@/components/References'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
-import { getFolderBody, getPages, getSection, getSections, getType, getTypes } from '@/lib/content'
+import { getFolderContent, getPages, getSection, getSections, getType, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string; type: string }> }
 
@@ -58,7 +59,7 @@ export default async function TypeIndexPage({ params }: Props) {
   const sectionMeta = getSection(section)
   const typeMeta = getType(section, type)
   const pages = getPages(section, type)
-  const body = await getFolderBody([section], type)
+  const folderContent = await getFolderContent([section], type)
 
   /*
    * ── The bug this replaced ───────────────────────────────────────────────
@@ -104,7 +105,8 @@ export default async function TypeIndexPage({ params }: Props) {
         Empty types are now dropped from the nav entirely (lib/nav.ts) rather
         than listed and apologised for.
       */}
-      {body && <div className="prose" dangerouslySetInnerHTML={{ __html: body }} />}
+      {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
+      <References references={folderContent.references} />
 
       {pages.length === 0 ? null : (
         <details className="index-disclosure" open={pages.length < 10}>

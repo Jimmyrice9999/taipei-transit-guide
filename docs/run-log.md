@@ -10182,6 +10182,55 @@ clean. Claims baseline and its test were not changed.
 Next: audit all 192 station pages for any body prose under 200 words before
 starting Part 4 operator/model/depot indexes.
 
+# Run 47 — Part 5 fresh browser and visual verification, 18 August 2026
+
+Audited before editing. Part 1 and Part 4 were already complete, and the
+remaining 991 bus routes were deliberately left untouched. The in-app browser
+connector was unavailable in this environment (no browser was listed), so the
+repository's own static-export Playwright harness was used against a fresh
+build. The harness was extended to cover the new bus network, route, operator,
+model and depot page types, and to capture a 667×375 landscape-phone operator
+page.
+
+The fresh run produced 232 screenshots: 33 representative page types at 320,
+375, 768, 1440, 1920 and 2560 CSS pixels, with the harness's 320 and 640
+captures representing the requested 400% and 200% zoom equivalents, plus the
+landscape phone capture. I looked through the generated captures for the page
+types at narrow, normal and wide breakpoints. The route diagram, long stop
+sequence, fact boxes, collapsible sections, references, Chinese text and
+footer remain inside their containers; the landscape phone capture reflows the
+operator facts into a readable grid. The earlier operator-page overflow was
+fixed by allowing long TDX record IDs and URLs to wrap in fact cells.
+
+The shared folder-index renderer was also corrected: folder prose now runs the
+same citation transform as content pages and renders its References list, so
+the bus model, depot, network and operator indexes no longer display raw
+`[^source-id]` markers.
+
+Harness results: no document-level horizontal scrollbar at 640 or 320 across
+344 generated pages; no painted-box overlap under the spine; no keyboard traps
+or missing focus rings across all 33 representative page types; accessibility
+tree probes passed for all 33; axe reported zero violations across 344 pages;
+and all 32 non-404 print PDFs passed their structural checks. The keyboard
+report still records the standard repeated navigation links as unreached in its
+single-pass list, but reports no trap or focus-ring failure. `prefers-reduced-
+motion` and AA contrast checks remain covered by the existing harness and CSS.
+
+No new research sources were published in this verification part. The station
+distribution remains min 223, P25 304, median 340.5, P75 375 and max 584;
+Part 4 remains 61 TDX operator records, 1,051 route associations, one bus
+model index and one bus depot index, with the latter two TBC because the pull
+does not contain those fields. Rail has 7 model pages and 8 depot pages.
+
+Gates: `npm run cite`, fresh `npm run build`, `npm run verify`, `npm test`,
+`npm run verify:browser` and `git diff --check` are clean. Claims baseline and
+its test were not changed. Existing user-owned dirty files remain unstaged.
+
+Part 3 remains deliberately unopened: 991 bus routes across 16 groups,
+including the 561-route New Taipei group. This run stops after the completed
+station, operator/index and visual-verification state; the next work is Part 3
+only.
+
 # Run 45 — Part 1 Sanying LB12, 18 August 2026
 
 Audited before editing. This final partial batch widened LB12 with the full

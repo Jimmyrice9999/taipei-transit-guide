@@ -1223,6 +1223,7 @@ main {
   font-size: 14px;
   line-height: 1.35;
   font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
 }
 
 .note {
@@ -3313,6 +3314,9 @@ a.adjacent-link:hover {
 
 .prose {
   max-width: var(--measure);
+  /* TDX record IDs and operator URLs are data, but they must still reflow at
+     the 200% and 400% zoom equivalents used by the browser harness. */
+  overflow-wrap: anywhere;
 }
 
 .prose > * {

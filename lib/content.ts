@@ -494,14 +494,19 @@ function readFolder(parents: string[], slug: string): Folder {
  * the layout on every page to build the nav; this is only wanted on the two
  * index routes.
  */
-export async function getFolderBody(parents: string[], slug: string): Promise<string> {
+export async function getFolderContent(
+  parents: string[],
+  slug: string,
+): Promise<{ html: string; references: NumberedSource[] }> {
   const indexPath = path.join(CONTENT_DIR, ...parents, slug, '_index.md')
-  if (!fs.existsSync(indexPath)) return ''
+  if (!fs.existsSync(indexPath)) return { html: '', references: [] }
 
-  const { content } = matter(fs.readFileSync(indexPath, 'utf8'))
-  if (!content.trim()) return ''
+  const parsed = matter(fs.readFileSync(indexPath, 'utf8'))
+  if (!parsed.content.trim()) return { html: '', references: [] }
 
   const relative = `content/${[...parents, slug].join('/')}/_index.md`
+  const sources = toSources(parsed.data.sources)
+  const used = new Set<string>()
 
   const html = await unified()
     .use(remarkParse)
@@ -509,6 +514,11 @@ export async function getFolderBody(parents: string[], slug: string): Promise<st
     .use(remarkRehype)
     .use(rehypeSlug)
     .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning })
+    .use(rehypeCitations, {
+      sources,
+      used,
+      onWarning: (message: string) => console.warn(`  ⚠ ${relative}: ${message}`),
+    })
     .use(rehypeFigures, { getSize: getImageSize }) // captions, credits, real dimensions
     .use(rehypeTableScroll)
     .use(rehypeSafeLinks, {
@@ -516,9 +526,13 @@ export async function getFolderBody(parents: string[], slug: string): Promise<st
     })
     .use(rehypeBasePath, BASE_PATH)
     .use(rehypeStringify)
-    .process(content)
+    .process(parsed.content)
 
-  return String(html)
+  return { html: String(html), references: numberSources(sources, used) }
+}
+
+export async function getFolderBody(parents: string[], slug: string): Promise<string> {
+  return (await getFolderContent(parents, slug)).html
 }
 
 function listFolders(parents: string[]): Folder[] {

@@ -15,11 +15,12 @@ import CardRow from '@/components/CardRow'
 import Figure from '@/components/Figure'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
+import References from '@/components/References'
 import RichText from '@/components/RichText'
 import { getImage } from '@/lib/images'
 import { LINES, NEUTRAL_LINE } from '@/lib/lines'
 import { getOperator } from '@/lib/operators'
-import { getFolderBody, getPages, getSection, getSections, getTypes } from '@/lib/content'
+import { getFolderContent, getPages, getSection, getSections, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ section: string }> }
 
@@ -57,7 +58,7 @@ export default async function SectionPage({ params }: Props) {
 
   const meta = getSection(section)
   const types = getTypes(section)
-  const body = await getFolderBody([], section)
+  const folderContent = await getFolderContent([], section)
   const heroImage = meta.hero?.image ? getImage(meta.hero.image) : null
 
   /*
@@ -226,7 +227,8 @@ export default async function SectionPage({ params }: Props) {
       })}
 
       {/* The section's own prose, below the links. See the note above. */}
-      {body && <div className="prose section-essay" dangerouslySetInnerHTML={{ __html: body }} />}
+      {folderContent.html && <div className="prose section-essay" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
+      <References references={folderContent.references} />
     </PageShell>
   )
 }

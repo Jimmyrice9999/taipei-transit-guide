@@ -10,6 +10,7 @@ Part 3a/3b remain complete for brown/red; remaining 991 bus routes were not star
 Part 4: 61 TDX operator records and 1,051 route associations now have generated pages.
 Bus model and depot indexes are present but TBC because the TDX pull has no such fields.
 Seven rail model pages and eight rail depot pages already exist; no rail depot gap was found.
-Part 5 fresh visual/browser verification is next; stop before remaining Part 3 groups.
-All gates are green: cite, verify, npm test 185/185, and 19 fact cross-checks.
+Part 5 is complete: fresh 232 screenshots, 32 print PDFs, 344-page reflow and axe sweep.
+Keyboard and accessibility probes are clean; the in-app browser connector was unavailable.
+All gates are green: cite, verify, npm test 185/185, and browser harness.
 Claims baseline and its test were untouched; existing user-owned dirty files remain unstaged.

@@ -116,6 +116,14 @@ const PAGE_TYPES = [
   { name: 'section-rail', url: '/rail/' },
   { name: 'section-bus', url: '/bus/' },
   { name: 'type-lines', url: '/rail/lines/' },
+  { name: 'bus-network', url: '/bus/network/' },
+  { name: 'bus-routes', url: '/bus/routes/' },
+  { name: 'bus-route-brown', url: '/bus/routes/colour-brown/' },
+  { name: 'bus-route-detail', url: '/bus/routes/colour-brown/brown-1/' },
+  { name: 'bus-operators', url: '/bus/operators/' },
+  { name: 'bus-operator-detail', url: '/bus/operators/taipeibus-1m9ums8/' },
+  { name: 'bus-models', url: '/bus/models/' },
+  { name: 'bus-depots', url: '/bus/depots/' },
   { name: 'line-wenhu', url: '/rail/lines/wenhu-line/' },
   { name: 'line-sanying', url: '/rail/lines/sanying-line/' },
   { name: 'article-matra', url: '/rail/history/matra-dispute/' },
@@ -696,7 +704,15 @@ log('\n═══ 5. Screenshots ═══\n')
       })
     }
   }
-  log(`  ${PAGE_TYPES.length * widths.length} screenshots → docs/screenshots/`)
+  // A landscape phone is a distinct height/width relationship, not a wide
+  // desktop screenshot. Keep one representative operator page for it.
+  await page.setViewportSize({ width: 667, height: 375 })
+  await page.goto(base + '/bus/operators/taipeibus-1m9ums8/', { waitUntil: 'load' })
+  await page.screenshot({
+    path: path.join(SHOTS, 'bus-operator-detail-landscape-phone.png'),
+    fullPage: true,
+  })
+  log(`  ${PAGE_TYPES.length * widths.length + 1} screenshots → docs/screenshots/`)
   await context.close()
 }
 
