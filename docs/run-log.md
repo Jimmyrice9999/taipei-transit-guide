@@ -8676,3 +8676,54 @@ respectively. No colour-prefix audit.
 Final gates for this batch: fresh build/verify and the full test suite must pass
 before commit; citations and research are already clean after the R28 overlay.
 Next part is Part 2: Danhai and Ankeng source audit.
+
+# Run 31 — Part 1 Green station prose, G01, G03A, G04–G07, 18 August 2026
+
+## Sourced
+
+This batch audited G01 Xindian, G03A Xiaobitan, G04 Dapinglin, G05 Jingmei,
+G06 Wanlong and G07 Gongguan. G03A gained 313 sourced words on the public-art
+procurement, completed programme, distributed station/plaza scope, interactive
+installation and 2007 awards. G01 and G04–G07 remain at zero words after the
+full source-family search. No colour-prefix audit applies to a station batch.
+
+Full primary URLs:
+
+- https://web.metro.taipei/pages2026/WebStation/033/1
+- https://web.metro.taipei/pages2026/WebStation/032/1
+- https://web.metro.taipei/pages2026/WebStation/036/1
+- https://web.metro.taipei/pages2026/WebStation/037/1
+- https://web.metro.taipei/pages2026/WebStation/038/1
+- https://web.metro.taipei/pages2026/WebStation/039/1
+- https://www.dorts.gov.taipei/cp.aspx?n=71ACC5B0CDFFC313&s=CBD13A8895C4EF94
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page31.html
+- https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page248.html
+- https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F
+
+## TBC
+
+G01 and G04–G07 remain without station-specific prose after the TRTC, DORTS
+route, planning, construction and public-art source families were exhausted.
+Station-level contracts, final accounts, complete artwork records, rename
+gazettes and feeder-bus prose remain TBC for all six pages. No shared route
+fact was promoted as station-specific history.
+
+## Contradicted the corpus
+
+The prior audit correctly found no new prose for G01, G04, G05, G06 and G07.
+It incorrectly left G03A empty: full DORTS pages 248 and the Xiaobitan public-
+art record provide 313 words of additional sourced material. No unverified
+appendix was promoted.
+
+## Conflicts found
+
+DORTS’s planning page gives Xiaobitan’s initial public-art setup as NT$15
+million with a NT$1 million prize and five proposals; the later public-art
+record gives approximately NT$35.9 million plus a NT$1 million prize. These
+are retained as initial procurement/setup versus completed-programme records,
+not reconciled. No colour-prefix audit.
+
+Final gates for this batch: fresh build/verify and the full test suite must pass
+before commit; citation, research and claims checks are already clean. Next
+batch is G08–G10, G12, G14 and G15.

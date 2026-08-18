@@ -254,6 +254,35 @@ construction method.
   URL:
   https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page156.html
 
+### Station-prose deepening — G01, G03A, G04–G07 batch, 18 August 2026
+
+Traditional-Chinese searches were repeated for `新店線 新店站 小碧潭站 大坪林站
+景美站 萬隆站 公館站 工程`, `新店線 標案 契約 大坪林 景美 萬隆 公館` and
+`新店線 車站建築設計 公共藝術`. Search was used only to locate pages; the
+returned pages were fetched and read in full. The full TRTC pages for G01,
+G03A and G04–G07, the DORTS New Store route page, the DORTS station-planning
+and underground-construction pages, DORTS’s Xiaobitan planning page 248 and
+the DORTS Xiaobitan public-art page were checked. G01, G04, G05, G06 and G07
+returned current facilities, exits, interchange or route chronology already
+represented in the facts/specs and no additional station-specific prose. G03A
+returned the following public-art evidence, which was added to the overlay.
+
+| Station | Result | Full primary pages |
+|---|---|---|
+| G01 Xindian | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/033/1 |
+| G03A Xiaobitan | 313 sourced words | https://web.metro.taipei/pages2026/WebStation/032/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page248.html; https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F |
+| G04 Dapinglin | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/036/1 |
+| G05 Jingmei | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/037/1 |
+| G06 Wanlong | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/038/1 |
+| G07 Gongguan | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/039/1 |
+
+The planning page records the original NT$15 million setup figure and NT$1
+million prize, five proposals and the compressed procurement context. The later
+public-art record gives 幸福知道, 麻粒試驗所, 30 October 2005, the invited
+comparison, the NT$35.9 million programme figure plus NT$1 million prize, the
+distributed station/plaza scope and the 2007 awards. These values are not
+treated as a single reconciled cost.
+
 ### Depot
 
 **Source:** “Taipei MRT depot planning summary” / `臺北捷運機廠規劃營運及建設中機廠彙整表` — DORTS, PRIMARY, High confidence.
@@ -291,6 +320,13 @@ does not assign a station stretch or train roster, so each station page keeps
    while TDX does not carry an Airport MRT interchange code for G13. The page
    retains the builder’s named connection and leaves the paid/street mode TBC.
 
+5. **Xiaobitan public-art cost scope.** DORTS’s planning manual gives an
+   initial setup figure of NT$15 million and a NT$1 million first prize, while
+   the later public-art record gives approximately NT$35.9 million plus a
+   NT$1 million prize. The first value belongs to the compressed initial
+   procurement/setup account; the second belongs to the later completed
+   programme record. Both are published without reconciliation.
+
 ## Checked and failed
 
 - **Station naming** — Full TRTC station pages and the DORTS route and station-architecture pages were checked for construction-era public names, rename dates and rename announcements. Current names are published, but no rename chronology was established for G01–G19 or G03A. Checked 14 August 2026.
@@ -298,6 +334,18 @@ does not assign a station stretch or train roster, so each station page keeps
 - **Station-specific depot assignment** — The full depot table establishes Xindian Depot for the line, not a station-by-station roster. The pages retain the line-level fact and mark each station assignment TBC. Checked 14 August 2026.
 - **Remaining platform and track counts** — The checked primary pages establish the published forms for G02, G03 and G13–G19; they do not publish enough detail to settle the remaining stations’ platform and track counts. Those values remain TBC. Checked 14 August 2026.
 - **Unlisted public-art entries** — The checked official Songshan public-art article establishes works at G17 and G19 but does not provide a complete title/artist/medium/year record for the other G stations. Their rows remain TBC; this is not an assertion that no work exists. Checked 14 August 2026.
+- **G01, G04, G05, G06 and G07 station-specific prose** — Checked 18 August
+  2026 in the full TRTC pages, DORTS New Store route page, station-planning
+  and underground-construction books, and the DORTS public-art material. The
+  sources returned current facility/exit data and shared route context but no
+  station-specific narrative beyond the facts/specs. These five pages remain
+  at zero body-prose words; this is a failed lookup, not evidence that no
+  history or artwork exists.
+- **G03A construction package and rename record** — Checked 18 August 2026 in
+  the full DORTS route, planning and public-art pages and current TRTC page.
+  The pages establish the public-art procurement and completed work but do not
+  identify an individual civil award/final account or legal rename gazette.
+  Those fields remain TBC.
 
 ## Stated gaps
 

@@ -13,6 +13,7 @@ function source(
   publisher: string,
   url: string,
   note: string,
+  sourceAccessed = accessed,
 ): Source {
   return {
     id,
@@ -20,7 +21,7 @@ function source(
     titleOriginal,
     publisher,
     url,
-    accessed,
+    accessed: sourceAccessed,
     snapshot: '',
     snapshotAlt: '',
     kind: 'primary',
@@ -72,6 +73,26 @@ const dortsUndergroundConstruction = source(
   dortsPublisher,
   'https://ebook.dorts.gov.taipei/ebook/no31/files/basic-html/page23.html',
   'The full construction-book page identifies the New Store and Songshan lines as underground, open-cut-and-cover construction using long box structures and slab-wall systems.',
+)
+
+const dortsXiaobitanArtPlanning = source(
+  'dorts-xiaobitan-public-art-planning',
+  'Xiaobitan public-art procurement planning',
+  '捷運工程叢書 精進版－2 捷運車站規劃與設計實務',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page248.html',
+  'The full planning-book page explains that Xiaobitan public art was intended to attract ridership, records the compressed schedule and broad design scope, and gives the initial setup budget, prize and five-proposal response. The original-language passages beginning 新店線小碧潭站因有以公共藝術吸引旅次之企圖 and 收件時僅收到5件作品 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXiaobitanArtRecord = source(
+  'dorts-xiaobitan-public-art-record',
+  'Xiaobitan public-art record: Happiness Knows',
+  '松山新店線',
+  dortsPublisher,
+  'https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F',
+  'The full DORTS public-art page records 幸福知道, its artist, materials, completion date, locations, invited-comparison selection, later budget and award recognition, along with the work’s distributed station-and-plaza scope.',
+  '2026-08-18',
 )
 
 const dortsDepot = source(
@@ -196,6 +217,7 @@ type GData = {
   engineeringHistory: string
   engineeringHistorySource?: Source
   interchange?: { label: string; lineCode?: string }
+  proseSources?: Source[]
   prose?: StationProseSentence[]
 }
 
@@ -251,6 +273,21 @@ const gData: Record<string, GData> = {
     naming: tbc,
     engineeringHistory: 'The branch leaves the main line underground, rises to ground level and climbs within Xindian Depot to the elevated Xiaobitan station. The branch opened for shuttle service on 29 September 2004.',
     engineeringHistorySource: dortsNewStore,
+    proseSources: [dortsXiaobitanArtPlanning, dortsXiaobitanArtRecord],
+    prose: [
+      { text: 'DORTS’s planning manual says Xiaobitan’s public-art programme was intended to attract additional ridership, while the station’s compressed schedule created pressure to complete the work quickly.', source: dortsXiaobitanArtPlanning.id },
+      { text: 'The initial method was to select a concept and have the existing detailed-design consultant and civil contractor complete it, rather than treating the artwork as a wholly separate construction package.', source: dortsXiaobitanArtPlanning.id },
+      { text: 'The open brief covered station lighting, colour, landscape, street furniture, protective treatment for the surrounding wall, the west plaza surface and even possible children’s play or landscape-art proposals.', source: dortsXiaobitanArtPlanning.id },
+      { text: 'DORTS records a two-and-a-half-month tender period, an initial setup budget of NT$15 million and a NT$1 million first prize, but says only five proposals were received.', source: dortsXiaobitanArtPlanning.id },
+      { text: 'The same page preserves contemporaneous criticism that the response period was too long and that the design and construction fees were disproportionate, a procurement problem distinct from the station’s later completed art record.', source: dortsXiaobitanArtPlanning.id },
+      { text: 'The later DORTS public-art page names the completed programme 幸福知道, by 麻粒試驗所, with a completion date of 30 October 2005 and an invited-comparison selection.', source: dortsXiaobitanArtRecord.id },
+      { text: 'Its listed materials span fibreglass, stainless steel, copper, wood, glass, LED lighting, LED screens, computers and image-capture hardware.', source: dortsXiaobitanArtRecord.id },
+      { text: 'The record distributes the work through the station’s beams, columns and walls, the platform level, the west and east plazas, the south plaza, seating, glass railings and the surrounding colour plan.', source: dortsXiaobitanArtRecord.id },
+      { text: 'That distributed scope makes the artwork part of the terminal’s building and public-space treatment rather than a single object in one concourse room.', source: dortsXiaobitanArtRecord.id },
+      { text: 'One south-plaza interactive installation combines a camera-like capture system, computer, full-colour LED display and glass so visitors can become part of the displayed family image.', source: dortsXiaobitanArtRecord.id },
+      { text: 'DORTS says the station programme later received the 2007 First Public Art Award’s best sponsoring-organisation and best planning awards.', source: dortsXiaobitanArtRecord.id },
+      { text: 'The planning page’s NT$15 million setup figure and the later public-art page’s approximately NT$35.9 million programme cost plus NT$1 million prize are retained as different records, not averaged or silently reconciled.', source: dortsXiaobitanArtRecord.id },
+    ],
   },
   G04: {
     structure: 'underground', engineering: 'G04', exits: 5, openingDate: '11 November 1999',
@@ -449,6 +486,7 @@ function makeResearch(code: string, data: GData): StationResearch {
     dortsDepot,
     ...(data.publicArtSource ? [data.publicArtSource] : []),
     ...(data.namingSource ? [data.namingSource] : []),
+    ...(data.proseSources ?? []),
     ...(data.prose?.some((sentence) => sentence.source === dortsSongshanG18Architecture.id) ? [dortsSongshanG18Architecture] : []),
     ...(data.prose?.some((sentence) => sentence.source === dortsUndergroundConstruction.id) ? [dortsUndergroundConstruction] : []),
     engineeringSource,
