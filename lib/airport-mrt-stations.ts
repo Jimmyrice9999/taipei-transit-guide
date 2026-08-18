@@ -68,6 +68,15 @@ const rbStations = source(
   'The Railway Bureau’s full station-architecture report publishes station-by-station elevated/underground form, platform arrangement, track counts, levels, access arrangements and the design-contract groupings. Its report excludes A1 because that section was handled by Taipei City and describes the initial A1–A21/A14a set rather than the later A22 extension.',
 )
 
+const rbAnnual102 = source(
+  'rb-airport-annual-report-102',
+  'Airport MRT civil works in the Railway Bureau 102 annual report',
+  '高鐵局102年年報',
+  rbPublisher,
+  'https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf',
+  'The Railway Bureau full 102 annual-report PDF publishes the A2-A4 CE01B and A5-A6 CE01C scopes, fit-out, testing, landscape, drainage and fire-safety milestones, the 102 progress snapshots, and the three-lot civil-work arrangement for the A2-A1 section.',
+)
+
 const publicArt = source(
   'tymc-airport-public-art',
   'Airport MRT public art',
@@ -384,7 +393,7 @@ const aData: Record<string, AData> = {
   },
 }
 
-const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, publicArt, rbDepots, motcA22, ...Object.values(operatorStations)]
+const allSources = [tdxStations, dortsRoute, dortsA1, rbStations, rbAnnual102, publicArt, rbDepots, motcA22, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -403,6 +412,7 @@ function makeResearch(code: string, data: AData): StationResearch {
     data.interchangeSource?.id,
     data.engineeringHistorySource.id,
     data.landmarksSource.id,
+    rbAnnual102.id,
     rbDepots.id,
     publicArt.id,
   ].filter((id): id is string => Boolean(id))
@@ -436,31 +446,59 @@ function makeResearch(code: string, data: AData): StationResearch {
 
 const stationProse: Record<string, StationProseSentence[]> = {
   A1: [
+    { text: 'DORTS records one design package, DA115, for the Taipei section and names CA441A, CA450A, CA450B, CA384, CA386 and CA441H as the construction packages for the diaphragm wall, route, station body, building services, lifts and escalators, and architectural fit-out.', source: dortsA1.id },
+    { text: 'The Railway Bureau separately describes the A2-A1 civil works as a three-lot package entrusted to Taipei City, so that three-lot description and DORTS six named packages are retained as records made at different scopes.', source: rbAnnual102.id },
+    { text: 'The Taipei section is approximately 4.4 kilometres and includes one underground station, a storage area and a joint-development structural body, according to DORTS project description.', source: dortsA1.id },
+    { text: 'The 102 annual report also lists a dedicated ME01 A1 station systems supervision check.', source: rbAnnual102.id },
+    { text: 'The checked DORTS project page and annual report do not publish a station-level final civil account or a complete award-value table for these packages, so those details remain TBC.', source: dortsA1.id },
     { text: 'Taipei City argued that an elevated Airport MRT would damage the urban landscape and land use, then offered to cover the added cost of putting the A2–A1 section underground as it entered the city.', source: dortsA1.id },
     { text: 'The Taipei approach runs from the A2 tail tracks beside the flood embankment, dives underground after Zhongxing Bridge, passes beneath Zhongxiao Bridge and the Tamsui River, and reaches the C1/D1 site after crossing the civic-centre fabric and meeting Beimen Station.', source: dortsA1.id },
     { text: 'Because four of the six required cross-passages lay beneath the Tamsui River, DORTS selected a double-O tunnel shield in place of the riskier single-bore arrangement; it records this as the first domestic use of the DOT method.', source: dortsA1.id },
     { text: 'TYMC’s art map places 天地之窗 and 遊子之鏡 in the unpaid concourse, ‘紛紛從田裡飛起’ in the B1 pick-up area, 宇宙 beside the bamboo-and-water stair, and 遠山無盡碧層層 by the escalator toward Taipei Metro Beimen Station.', source: publicArt.id },
   ],
   A2: [
+    { text: 'The Railway Bureau CE01B civil package covers the viaduct, the elevated A2-A4 stations and their water, electrical and environmental-control works.', source: rbAnnual102.id },
+    { text: 'By the end of the 102 reporting year, CE01B station fit-out was complete, and the under-viaduct land around the A2-O5 connecting bridge had been returned for use after the bridge works.', source: rbAnnual102.id },
+    { text: 'The report records water, electrical and environmental-control equipment installation and single-machine testing as complete, with building-management-system integration carried out on 1 April and CE01B progress at 99.97 percent at year-end.', source: rbAnnual102.id },
+    { text: 'The same report does not identify a CE01B contractor, a station-only contract value or a final account for A2, so those fields remain TBC.', source: rbAnnual102.id },
     { text: 'A2 occupies the road over the 12th floodway embankment at the MRT Road–Shuhong East Road junction, making it the first elevated Airport MRT station encountered when travelling from Taipei toward the airport.', source: rbStations.id },
     { text: 'The Railway Bureau calls the station “Taipei’s gate”: its light tubular form and changing solid-to-void façade were intended to suggest flight and point travellers toward the airport, while its ground-level entrances are shared with Taipei Metro O5.', source: rbStations.id },
     { text: 'TYMC places 夢想與回憶的輸送帶 on the south-side machinery building at the platform level; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
   A3: [
+    { text: 'A3 is part of the Railway Bureau CE01B civil package, whose scope combines the viaduct, elevated A2-A4 stations and station water, electrical and environmental-control systems.', source: rbAnnual102.id },
+    { text: 'The 102 annual report says the completed under-viaduct P301-P324 area was handed over for the New Taipei Northern Knowledge Industrial Park, documenting a corridor-level land use around the elevated section rather than a passenger facility inside A3.', source: rbAnnual102.id },
+    { text: 'CE01B had completed station fit-out and reached 99.97 percent progress at the end of that reporting year, while its installed equipment was being checked and integrated with the building-management system.', source: rbAnnual102.id },
+    { text: 'The report does not publish the CE01B contractor, its award value or a final civil account attributable to A3, so those details are TBC.', source: rbAnnual102.id },
     { text: 'A3 was positioned at the northwest corner of Zhongshan Road and Wugong Road to meet the Circular Line, and the Railway Bureau assigns the interchange station the additional role of city check-in and baggage drop-off for airport passengers.', source: rbStations.id },
     { text: 'Its architecture continues A2’s flight vocabulary but changes the image to the twin wings of an aircraft, a response to a site that had to handle both transfers and airport-bound passenger processing.', source: rbStations.id },
     { text: 'TYMC places 伽利略與他朋友們留給我的月亮… in the paid concourse and 城市鄰居 on the curved glass wall at the entrance; the checked art page does not state their years, media, selection methods or costs.', source: publicArt.id },
   ],
   A4: [
+    { text: 'The annual record supplies these package-level milestones rather than an A4-specific opening, contractor or cost date, so those station-level details remain TBC.', source: rbAnnual102.id },
+    { text: 'The Railway Bureau places A4 inside CE01B, a civil package covering the viaduct, elevated A2-A4 stations and their water, electrical and environmental-control works.', source: rbAnnual102.id },
+    { text: 'The annual report records completed CE01B station fit-out and the handover of the P301-P324 under-viaduct area for the New Taipei Northern Knowledge Industrial Park, a land-use outcome along the shared elevated corridor.', source: rbAnnual102.id },
+    { text: 'It also records completed single-machine checks for the installed services, building-management-system integration on 1 April and 99.97 percent CE01B progress at the end of the 102 reporting year.', source: rbAnnual102.id },
+    { text: 'No CE01B contractor, station-only award value or A4 final civil account is published in the checked annual report, leaving those details TBC.', source: rbAnnual102.id },
     { text: 'A4 was set about 250 metres east of the Zhongshan Road Section 1–Xinwu Road junction, across from the Xinzhuang subcenter rather than directly at the intersection.', source: rbStations.id },
     { text: 'Its entrance bridge crosses beneath the Zhongshan Road viaduct to reach the subcenter, and the Railway Bureau describes the bridge’s ribbon-like language as a “Starlight Avenue” linking the district’s emerging film and media industry.', source: rbStations.id },
     { text: 'TYMC places 幸福之旅 across the north–south platforms on the second-floor connector and fifth-floor platform levels; the checked art page does not state its year, medium, selection method or cost.', source: publicArt.id },
   ],
   A5: [
+    { text: 'The Railway Bureau CE01C civil package covers the viaduct, elevated A5-A6 stations and their water, electrical and environmental-control works.', source: rbAnnual102.id },
+    { text: 'During the 102 reporting year, CE01C station fit-out was complete, and the report records partial final acceptance for A5/A6 landscape and planting works.', source: rbAnnual102.id },
+    { text: 'The same package included cleaning and handover of an existing road-crossing drainage culvert on Zhongshan Road between Minsheng Road and Taili Street within the Taishan District Office area.', source: rbAnnual102.id },
+    { text: 'Its installed services had completed single-machine testing by 31 January and building-management-system integration by 25 February; A5/A6 fire-safety acceptance was recorded on 24 October, with CE01C progress at 99.98 percent at year-end.', source: rbAnnual102.id },
+    { text: 'The report does not publish a CE01C contractor, a station-only award value or a final civil account for A5, so those details remain TBC.', source: rbAnnual102.id },
     { text: 'A5 follows the shared Taiwan Route 1 corridor at the east side of the Zhongshan Road–Tailin Road junction, where the platform structure was integrated with the road viaduct rather than treated as a separate station frame.', source: rbStations.id },
     { text: 'The Railway Bureau groups A5 with A6 as standard DE01 stations: nearby high-rise housing gives the corridor an urban-edge character, while the architecture responds with forms that echo surrounding hills, bring light into the pedestrian flow and leave an open ground plaza for public use.', source: rbStations.id },
   ],
   A6: [
+    { text: 'The Railway Bureau groups A6 in CE01C, whose civil scope includes the shared viaduct, the elevated A5-A6 stations and their water, electrical and environmental-control systems.', source: rbAnnual102.id },
+    { text: 'The 102 annual report records completed station fit-out for CE01C and partial final acceptance of the A5/A6 landscape and planting works, extending the stationâ€™s public realm beyond the elevated platform structure.', source: rbAnnual102.id },
+    { text: 'It also records cleaning and handover of an existing road-crossing drainage culvert on the Zhongshan Road section between Minsheng Road and Taili Street within Taishan District, a utility task associated with the corridor rather than a new passenger feature.', source: rbAnnual102.id },
+    { text: 'CE01C services completed single-machine testing by 31 January and building-management-system integration by 25 February, while A5/A6 fire-safety acceptance was recorded on 24 October and year-end progress stood at 99.98 percent.', source: rbAnnual102.id },
+    { text: 'No CE01C contractor, station-only award value or final civil account for A6 is published in the checked report, so those details are TBC.', source: rbAnnual102.id },
     { text: 'A6 continues the Taiwan Route 1/road-viaduct arrangement to the east side of the Zhongshan Road–Guiyang Street junction, so its station structure shares the highway corridor that also carries A5.', source: rbStations.id },
     { text: 'The Railway Bureau describes A5 and A6 as stations on the metropolitan fringe, beside substantial high-rise housing but still reading as an edge suburb; their hill-like forms, daylight and open ground plazas were intended to soften that infrastructure for local residents.', source: rbStations.id },
   ],

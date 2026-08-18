@@ -370,6 +370,95 @@ The checked page gives no work-year or medium for these records except the
 2013 year included in the A1 title. It lists no A5, A6, A7, A10, A11, A14a,
 A15, A16, A17, A19, A20, A21 or A22 allocation; those page fields remain TBC.
 
+## A1-A6 deepening - 18 August 2026
+
+The earlier A1-A6 audit is superseded for this batch. A full Taipei DORTS A1
+project page and the full Railway Bureau 102 annual report were read for
+contract/package scope, section work and completion milestones. The existing
+Railway Bureau station-architecture PDF and TYMC public-art page remain the
+primary records for the station design and art statements already carried by
+the pages.
+
+### Established
+
+- **A1 Taipei-section packages — PRIMARY, High confidence.** The full Taipei
+  DORTS project page says the section has one design package, DA115, and names
+  CA441A, CA450A, CA450B, CA441H, CA384 and CA386 as construction lots. It
+  describes the diaphragm-wall, route, station-body, architectural, building-
+  services, and lift/escalator scopes, and says CA441A was the earliest lot,
+  signed on 15 September 2006. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=efeac549b2c68706. The relevant
+  original-language text includes: 「本路段僅1個設計標(DA115)」,
+  「施工分標包括CA441A、CA450A、CA450B、CA441H、CA384、CA386」 and
+  「最早施工標為CA441A，自95年9月15日簽約」.
+- **A1 section extent — PRIMARY, High confidence.** The same DORTS page
+  describes the Taipei section as approximately 4.4 km with one underground
+  station, a storage area and a joint-development structural body. URL:
+  https://www.dorts.gov.taipei/cp.aspx?n=efeac549b2c68706.
+- **A2-A4 civil package — PRIMARY, High confidence.** The full Railway Bureau
+  102 annual report identifies CE01B as including the viaduct, elevated A2-A4
+  stations, and water, electrical and environmental-control works. It records
+  completed station fit-out, returned land around the A2-O5 connecting bridge,
+  installed-equipment testing, building-management-system integration on 1
+  April, and 99.97% progress at the end of the reporting year. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  language identifies the scope as 「CE01B施工標...包括高架橋工程、高架車站
+  (A2-A4)及水電、環控工程」.
+- **A3-A4 corridor handover — PRIMARY, High confidence.** The same annual
+  report records the P301-P324 under-viaduct area as handed over for the New
+  Taipei Northern Knowledge Industrial Park. This is corridor land-use context,
+  not a claim that the park is inside either station. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf.
+- **A5-A6 civil package — PRIMARY, High confidence.** The annual report
+  identifies CE01C as including the viaduct, elevated A5-A6 stations, and
+  water, electrical and environmental-control works. It records completed
+  fit-out, partial final acceptance for A5/A6 landscape and planting, cleaning
+  and handover of an existing road-crossing drainage culvert between Minsheng
+  Road and Taili Street in the Taishan District Office area, service testing by
+  31 January, BMS integration by 25 February, A5/A6 fire-safety acceptance on
+  24 October, and 99.98% year-end progress. URL:
+  https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf. The original
+  language identifies the scope as 「CE01C施工標...包括高架橋工程、高架車站
+  (A5-A6)及水電、環控工程」.
+- **Architecture and art — PRIMARY, High confidence for the existing claims.**
+  The full Railway Bureau station-architecture PDF remains the station-specific
+  source for A2-A6 siting and design intent, while TYMC's full public-art page
+  remains the source for A1-A4 titles, artists and locations. URLs:
+  https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf and
+  https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html.
+
+### Conflicts in this pass
+
+1. Taipei DORTS names six A1-section construction lots under the single DA115
+   design package, while the Railway Bureau annual report describes the A2-A1
+   civil works as three construction lots entrusted to Taipei City. These are
+   retained as different scope/granularity descriptions; they are not averaged
+   or collapsed.
+2. The Railway Bureau's 99.97% CE01B and 99.98% CE01C values are 102 annual-
+   report progress snapshots. They are not contract prices, final accounts or
+   station-only completion percentages, so the pages do not convert them into
+   any of those measures.
+3. TYMC's checked art page has no A5 or A6 allocation row. That is reported as
+   not found in the checked page, not as proof that no artwork exists.
+
+### Checked and failed in this pass
+
+- **A1-A6 station civil final accounts** — no station-level final account was
+  found in the full Taipei DORTS A1 page or Railway Bureau 102 annual report.
+  Checked 18 August 2026.
+- **A1-A6 contract award values** — the checked DORTS project record names the
+  packages and scopes but does not publish a complete award-value table for
+  these six stations. Checked 18 August 2026.
+- **A1-A6 construction-era renames** — no dated rename gazette or construction-
+  era naming record was found in the checked DORTS and Railway Bureau material.
+  Checked 18 August 2026.
+- **A5-A6 station-art allocation** — no A5 or A6 row was found on TYMC's full
+  public-art page. This remains a search result, not an absence claim. Checked
+  18 August 2026.
+- **A1-A6 fare-boundary modes** — the checked pages establish connecting
+  passages and facilities but do not establish paid-area versus street-transfer
+  treatment for these stations. Checked 18 August 2026.
+
 ## Conflicts
 
 1. **A3 station code.** TYMC and the RB report use engineering/current-project

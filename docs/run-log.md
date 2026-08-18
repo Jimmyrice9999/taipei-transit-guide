@@ -9160,6 +9160,39 @@ zero-word BL08–BL12 results were superseded by full-page DORTS, technical,
 public-art and contractor records. No other corpus fact was contradicted in
 this batch. No station colour-prefix audit applies. Next: audit BL13–BL18.
 
+# Run 31 — Part 1 Airport MRT A1–A6, 18 August 2026
+
+Deepened six Airport MRT station pages after the pre-action audit found all
+six below 200 words. Final body-prose counts: A1 283, A2 200, A3 217, A4 216,
+A5 207 and A6 218; batch total 1,341 words. No facts/specs were restated as
+prose. A1 now records the Taipei-section DA115 design package and six named
+construction lots; A2–A4 carry the CE01B viaduct, fit-out, land-handover,
+testing and 99.97% annual-progress record; A5–A6 carry the CE01C scope,
+drainage, landscape, testing, fire-safety and 99.98% annual-progress record.
+
+Primary URLs fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=efeac549b2c68706
+- https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf
+- https://www.rb.gov.tw/public/files/artsinfo/1500644721-0.pdf
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A1/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A2/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A3/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A4/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A5/A4
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/A6/A4
+
+Conflicts published: DORTS names six A1-section lots under DA115 while the
+Railway Bureau describes the A2–A1 civil work as three lots; CE01B/CE01C
+99.97%/99.98% are annual progress snapshots, not prices or final accounts;
+TYMC art rows for A5/A6 were not found and are not treated as proof of no art.
+TBC: station-level final accounts, complete award values, construction-era
+renames, A1–A6 fare-boundary modes and A5/A6 art allocation. No colour-prefix
+audit applies. Next: audit Airport A7–A12.
+
+Final gates for this batch: cite, research, claims, fresh verify/build, explicit npm test and diff check must pass before commit and push.
+
 Final gates for this batch: cite, research, claims, fresh verify/build, explicit
 npm test and diff check must pass before commit and push.
 
