@@ -1,5 +1,5 @@
 import type { Source } from './sources.ts'
-import type { StationOverlay, Structure } from './station-overlay.ts'
+import type { StationOverlay, StationProseSentence, Structure } from './station-overlay.ts'
 import type { StationResearch } from './station-research.ts'
 
 const accessed = '2026-08-14'
@@ -187,6 +187,87 @@ const depot = source(
   'The operator’s depot page identifies the Danhai Depot service area. A station-by-station operating roster is not published in the checked HTML.',
 )
 
+const ntpcTender = source(
+  'ntpc-danhai-phase1-award',
+  'Danhai LRT Phase 1 turnkey contract award',
+  '「淡海輕軌運輸系統計畫第一期統包工程」決標',
+  'New Taipei City Government (新北市政府交通局)',
+  'https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201411110022&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27',
+  'The government’s full award notice names China Steel Corporation and Union Steel Construction Corporation as the winning joint-bid team, gives the NT$11,512,800,000 award amount, and defines the project as Green Mountain G01–G08 plus Blue Sea B06–B08, 9.9 km, 14 stations and one depot.',
+)
+
+const ntpcContract = source(
+  'ntpc-danhai-phase1-contract',
+  'Danhai LRT Phase 1 turnkey contract signing',
+  '國車國造 輕軌技術根留台灣 淡海輕軌統包工程正式簽約',
+  'New Taipei City Government (新北市政府交通局)',
+  'https://www.ntpc.gov.tw/ch/home.jsp?dataserno=23fcb6ad2ee57514e4de617d90d596a4&id=e8ca970cde5c00e1',
+  'The government’s full signing notice records the 5 December 2014 contract signing, repeats the corridor scope and records the project’s domestic vehicle-build and maintenance rationale. It does not allocate a contract value to an individual station.',
+)
+
+const dortsRouteRights = source(
+  'dorts-danhai-rights-of-way',
+  'Danhai LRT right-of-way and alignment explanation',
+  '因地制宜使用各種路權，輕軌服務更多地區',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmaq0gmqya?page=416',
+  'The builder’s full technical article explains the A/B/C right-of-way types and says the first-phase line balanced cost, engineering difficulty, land acquisition and landscape impact by using seven elevated and seven at-grade stations; it places the Green Mountain route on an elevated A-type section through V07 before changing to a B-type at-grade section.',
+)
+
+const dortsHongshulinGrade = source(
+  'dorts-danhai-hongshulin-grade',
+  'Danhai LRT elevation and grade explanation',
+  '眼力大考驗！飛機上也看得見淡海輕軌！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/r6421qqK29nR?page=379',
+  'The builder’s full technical article explains that Hongshulin starts around 10 m elevation while the Danhai New Town is around 35–40 m, so the Hongshulin station is elevated; the Hongshulin-to-V07 elevated section reaches a maximum 6.16% grade before the route becomes at-grade.',
+)
+
+const dortsHongshulinSlope = source(
+  'dorts-danhai-hongshulin-slope-test',
+  'Danhai LRT grade and VR testing',
+  '克服爬坡向上行！淡海輕軌的爬坡能力與VR科技！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/xVR2eEEv2J36?page=401',
+  'The builder’s full technical article identifies the Hongshulin–Ganzhenlin section as the steepest part of the Green Mountain route and describes repeated grade tests, parameter comparison and VR review of station circulation and equipment before opening.',
+)
+
+const dortsHongshulinTransfer = source(
+  'dorts-danhai-hongshulin-transfer',
+  'Hongshulin MRT–light-rail transfer link',
+  '捷運轉乘淡海輕軌只需1分鐘！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMjN9ZKRw?page=369',
+  'The builder’s full milestone article records the former street transfer, the new link between Taipei Metro and light rail, the April opening of the Taipei Metro platform escalators, and the stated reduction in transfer time from five minutes to one minute.',
+)
+
+const dortsV05V06Progress = source(
+  'dorts-danhai-v05-v06-progress',
+  'Danhai LRT V05 and V06 construction progress',
+  '輕軌進度來報告！今天要介紹的是？',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/DJPZEaa0ZKx3?page=382',
+  'The builder’s full September 2018 progress article describes V05 with the structure largely complete and finishing/mechanical work continuing, and identifies V06 as the sixth Green Mountain station with structure largely complete and ceiling, wall, floor and mechanical work continuing.',
+)
+
+const dortsFinalGreenStations = source(
+  'dorts-danhai-final-stations',
+  'Danhai LRT final Green Mountain stations progress',
+  '綠山線的最後三站！淡海輕軌工程報告！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/3LXZQr4KmNgE?page=393',
+  'The builder’s full October 2018 progress article records the last three Green Mountain stations’ structural and fit-out progress and describes the route’s station sequence and testing context; it is used here for corridor completion context, not as a V01–V06 station contract record.',
+)
+
+const dortsQuality = source(
+  'dorts-danhai-quality-control',
+  'Danhai LRT construction quality-control process',
+  '查驗再查驗！確保工程品質的最佳防線！',
+  dortsPublisher,
+  'https://www.dorts.ntpc.gov.tw/documentary/articleInfo/W0OdPPx6dnbJ',
+  'The builder’s full project article describes plan review, incoming-material sampling, contractor self-inspection, supervision hold points and owner/project-management spot checks, illustrated with precast beam work from the Phase 1 turnkey team.',
+)
+
 const commonFacilities = 'NTMC publishes a passenger enquiry point and accessible ticket machine at light-rail stations; the operator says no lockers are provided on the light-rail system. Station-specific lift/ramp details: TBC.'
 const tbc = 'TBC'
 
@@ -341,7 +422,7 @@ const vData: Record<string, VData> = {
   },
 }
 
-const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ...Object.values(operatorStations)]
+const allSources = [stationList, tdxStations, faq, accessibility, transfer, publicArt, stamps, greenRoute, greenStations, blueRoute, blueStations, v03Engineering, stationDesign, depot, ntpcTender, ntpcContract, dortsRouteRights, dortsHongshulinGrade, dortsHongshulinSlope, dortsHongshulinTransfer, dortsV05V06Progress, dortsFinalGreenStations, dortsQuality, ...Object.values(operatorStations)]
 const sourcesById = Object.fromEntries(allSources.map(item => [item.id, item]))
 
 function uniqueSources(ids: string[]): Source[] {
@@ -365,6 +446,14 @@ function makeResearch(code: string, data: VData): StationResearch {
     faq.id,
     depot.id,
     publicArt.id,
+    ntpcTender.id,
+    ntpcContract.id,
+    dortsRouteRights.id,
+    dortsHongshulinGrade.id,
+    dortsHongshulinSlope.id,
+    dortsHongshulinTransfer.id,
+    dortsV05V06Progress.id,
+    dortsQuality.id,
   ].filter((id): id is string => Boolean(id))
   return {
     sources: uniqueSources(sourceIds),
@@ -394,9 +483,72 @@ function makeResearch(code: string, data: VData): StationResearch {
   }
 }
 
+const stationProse: Record<string, StationProseSentence[]> = {
+  V01: [
+    { text: 'The Phase 1 turnkey award was a corridor contract rather than a V01-only package: the published scope covered the entire Green Mountain section, the B06–B08 Blue Sea section, fourteen stations and one depot.', source: ntpcTender.id },
+    { text: 'The signed contract records the winning China Steel and Union Steel Construction joint team and frames the project as a domestic light-rail build intended to support the Danhai New Town’s transport and urban development.', source: ntpcContract.id },
+    { text: 'DORTS explains V01’s elevated starting arrangement as a response to the line’s climb from roughly 10 metres at Hongshulin toward the 35–40-metre Danhai New Town, with the route rising before it reaches the later at-grade section.', source: dortsHongshulinGrade.id },
+    { text: 'The same technical record gives the Hongshulin-to-V07 elevated section a maximum 6.16% grade, so the opening station is part of the alignment’s initial height-gaining operation rather than a level departure.', source: dortsHongshulinGrade.id },
+    { text: 'A separate DORTS testing account identifies the V01–V02 segment as the Green Mountain route’s steepest climb and describes repeated grade tests in which design parameters were compared with measured performance.', source: dortsHongshulinSlope.id },
+    { text: 'The testing account also says that VR review was used to inspect the finished station circulation, including escalators, before the system opened, linking the route’s difficult grade work to passenger movement through the station environment.', source: dortsHongshulinSlope.id },
+    { text: 'V01’s transfer history has a distinct construction milestone: DORTS records the former street transfer, then the platform escalators and connecting passage that reduced the stated Taipei Metro–light-rail transfer time from five minutes to one.', source: dortsHongshulinTransfer.id },
+    { text: 'The project’s quality article describes five control layers—plan review, incoming-material sampling, contractor self-checks, supervision hold points and owner or project-management spot checks—rather than a single final inspection.', source: dortsQuality.id },
+  ],
+  V02: [
+    { text: 'V02 sits inside the first-phase turnkey corridor awarded to China Steel and Union Steel Construction, a package whose published scope combined the Green Mountain route with the B06–B08 Blue Sea section, fourteen stations and one depot.', source: ntpcTender.id },
+    { text: 'The award notice set a target-year daily service figure of 68,500 passenger trips for the first-phase project, a planning measure for the corridor rather than a V02 station count or current ridership figure.', source: ntpcTender.id },
+    { text: 'DORTS places the route’s main climb between the low Hongshulin start and Danhai New Town, explaining why the opening elevated section was selected before the line changes to at-grade running farther north.', source: dortsHongshulinGrade.id },
+    { text: 'Its grade article specifically identifies the Hongshulin–Ganzhenlin section as the steepest part of Green Mountain, making V02 the station at the far end of the route segment singled out for the most demanding ascent.', source: dortsHongshulinSlope.id },
+    { text: 'The same account describes a test cycle in which maximum-grade and minimum-curve runs were repeated, then checked against the design parameters so the vehicle could be adjusted before service.', source: dortsHongshulinSlope.id },
+    { text: 'The right-of-way explanation says the first-phase design balanced construction cost, engineering difficulty, land acquisition and landscape impact, using a mixture of elevated and at-grade sections instead of applying one form everywhere.', source: dortsRouteRights.id },
+    { text: 'For the project as a whole, the builder describes the elevated Green Mountain section as A-type exclusive right of way and the later surface section as B-type separated right of way, which places V02 within the protected elevated design logic.', source: dortsRouteRights.id },
+    { text: 'The project quality record describes contractor self-inspection, supervision hold points and project-management sampling for work such as precast beams, providing the documented construction-control context for a station whose individual package account is not published.', source: dortsQuality.id },
+  ],
+  V03: [
+    { text: 'The Phase 1 award defines a single turnkey program spanning Green Mountain G01–G08 and Blue Sea B06–B08, so the published NT$11,512,800,000 award value belongs to that combined corridor and cannot be reassigned to V03 alone.', source: ntpcTender.id },
+    { text: 'The contract-signing notice identifies China Steel and Union Steel Construction as the joint team and presents the domestic vehicle and systems build as part of the project’s intended maintenance and operating strategy.', source: ntpcContract.id },
+    { text: 'The builder’s V03 engineering article identifies the station as an elevated stop beside Huwei Cherry Blossom Avenue and records slope-movement and earthquake monitoring systems at that location.', source: v03Engineering.id },
+    { text: 'That station-specific safety record is important in context because DORTS says the route must climb from the roughly 10-metre Hongshulin area toward Danhai New Town at about 35–40 metres before the alignment reaches its surface section.', source: dortsHongshulinGrade.id },
+    { text: 'DORTS gives the Hongshulin-to-V07 elevated section a maximum 6.16% grade, making the elevated station sequence a deliberate response to the corridor’s changing ground levels rather than a purely architectural choice.', source: dortsHongshulinGrade.id },
+    { text: 'The builder’s testing account says the Hongshulin–Ganzhenlin climb is the route’s steepest and describes repeated braking and grade tests, parameter comparisons and vehicle adjustment before opening.', source: dortsHongshulinSlope.id },
+    { text: 'DORTS also reports that VR was used to review station circulation from escalators through the station body, ticket machine and card-reader interface, connecting the construction model to the passenger path through V03 and its neighbouring stations.', source: dortsHongshulinSlope.id },
+    { text: 'The project’s published quality method adds plan review, material sampling, contractor self-checks, supervision hold points and owner spot checks, but the checked primary pages do not identify a V03-only contractor or station-level final account.', source: dortsQuality.id },
+  ],
+  V04: [
+    { text: 'V04 was built within the first-phase turnkey contract whose award notice covers Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot; that corridor scope is the published contract boundary, not a V04-specific value.', source: ntpcTender.id },
+    { text: 'The contract-signing notice records China Steel and Union Steel Construction as the winning joint team and describes the project as a domestic light-rail build intended to improve access to the Danhai New Town and support its development.', source: ntpcContract.id },
+    { text: 'DORTS explains that the line’s elevated beginning is driven by the difference between the low Hongshulin area and the higher Danhai New Town, with the route changing from elevated to at-grade after the elevated station section.', source: dortsHongshulinGrade.id },
+    { text: 'Its right-of-way article says the first-phase design used seven elevated and seven at-grade stations after weighing cost, engineering difficulty, land acquisition and landscape impact, so V04 belongs to a documented mixed-form corridor strategy.', source: dortsRouteRights.id },
+    { text: 'The same article describes the elevated portion through V07 as A-type exclusive right of way, while the later surface portion is B-type separated right of way; V04 therefore sits in the project’s grade-separated operating section.', source: dortsRouteRights.id },
+    { text: 'DORTS gives the elevated section a maximum 6.16% grade between the Hongshulin start and the V07 area, which is the engineering condition the Green Mountain station sequence was designed to negotiate.', source: dortsHongshulinGrade.id },
+    { text: 'The builder’s testing record says the route team tested maximum grades and minimum curves, compared actual results with the design and adjusted vehicles before passenger service, rather than treating opening as the end of technical validation.', source: dortsHongshulinSlope.id },
+    { text: 'The published quality process requires plan review, incoming-material tests, contractor self-checks, supervision hold points and owner or project-management spot checks; no checked primary source assigns a separate V04 contract or final cost.', source: dortsQuality.id },
+  ],
+  V05: [
+    { text: 'DORTS’s September 2018 progress report says V05’s station structure was largely complete and that crews were continuing platform-entry paving, tiles, handrails, granite and mechanical work during the final construction phase.', source: dortsV05V06Progress.id },
+    { text: 'The same report places V05 at the Danjin Road–Beixin Road intersection, while the project’s technical records describe this part of Green Mountain as the elevated section that precedes the later surface alignment.', source: stationList.id },
+    { text: 'V05 belonged to the corridor-wide Phase 1 turnkey award to China Steel and Union Steel Construction, which combined Green Mountain G01–G08 with Blue Sea B06–B08 rather than publishing a station-by-station contract allocation.', source: ntpcTender.id },
+    { text: 'The award notice gives a target-year daily service figure of 68,500 passenger trips for the whole first-phase project; it is not a V05 boarding forecast and should not be read as current station demand.', source: ntpcTender.id },
+    { text: 'DORTS explains that the line used elevated and surface rights of way after balancing cost, construction difficulty, land acquisition and landscape impact, and records seven stations in each form across the first phase.', source: dortsRouteRights.id },
+    { text: 'The builder’s grade article says the elevated section rises from the low Hongshulin area toward Danhai New Town and reaches its maximum 6.16% grade before the route changes to surface running.', source: dortsHongshulinGrade.id },
+    { text: 'The project quality account describes five inspection layers, including incoming-material sampling and supervision hold points, and illustrates the method with the precast-beam work used by the Phase 1 turnkey construction team.', source: dortsQuality.id },
+    { text: 'The checked primary material does not publish a V05-only contract price, contractor split or station-specific public-art procurement record, so those fields remain TBC rather than being inferred from the corridor award.', source: ntpcContract.id },
+  ],
+  V06: [
+    { text: 'DORTS’s September 2018 progress report identifies V06 as Green Mountain’s sixth station and says its structure was largely complete while ceiling, wall, floor and mechanical works continued.', source: dortsV05V06Progress.id },
+    { text: 'The report’s station-progress description is a construction snapshot from before opening, not a current condition report; the route project record separately records Green Mountain’s later stability testing and December 2018 opening.', source: greenRoute.id },
+    { text: 'V06 was part of the Phase 1 turnkey award to China Steel and Union Steel Construction, whose published scope covered Green Mountain G01–G08, Blue Sea B06–B08, fourteen stations and one depot.', source: ntpcTender.id },
+    { text: 'The contract notice reports a target-year daily service measure of 68,500 passenger trips for the entire first-phase system, so it cannot be used as a V06-specific demand figure.', source: ntpcTender.id },
+    { text: 'DORTS’s right-of-way article says the first phase deliberately mixes seven elevated and seven at-grade stations after weighing cost, engineering difficulty, land acquisition and landscape impact.', source: dortsRouteRights.id },
+    { text: 'Its alignment explanation places the Green Mountain route on elevated A-type right of way through the V07 area before it turns to B-type at-grade running, giving V06 a documented role near the end of the elevated section.', source: dortsRouteRights.id },
+    { text: 'The grade article explains that the elevated section exists to lift the route from roughly 10 metres at Hongshulin toward the 35–40-metre Danhai New Town, with a maximum 6.16% grade along the climb.', source: dortsHongshulinGrade.id },
+    { text: 'The project quality article records plan review, material sampling, contractor self-inspection, supervision hold points and owner or project-management spot checks; no station-only V06 contract value or final account was found in the checked primary pages.', source: dortsQuality.id },
+  ],
+}
+
 export const DANHAI_OVERLAY: Record<string, StationOverlay> = Object.fromEntries(
   Object.entries(vData).map(([code, data]) => {
     const research = makeResearch(code, data)
-    return [code, { structure: data.structure, research, sources: research.sources, location: data.location, locationSource: stationList.id }]
+    return [code, { structure: data.structure, research, sources: research.sources, location: data.location, locationSource: stationList.id, prose: stationProse[code] ?? [] }]
   }),
 ) as Record<string, StationOverlay>

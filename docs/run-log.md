@@ -9348,3 +9348,55 @@ fresh `npm run verify` clean (519 pages, no missing glyphs, links or a11y
 errors, 185/185 unit tests, research/claims/geometry/CVD clean); explicit
 `npm test` clean; `git diff --check` clean. Next: report Circular complete and
 continue Part 1 with the next line in the plan, Yellow Y01–Y06.
+
+# Run 31 — Part 2 Danhai LRT V01–V06, 18 August 2026
+
+Audited before editing. V01–V06 were all zero-word station pages. The prior
+search record covered the six NTMC station pages, the Green Mountain route and
+station tables, the NTMC V03 safety article, the DORTS shelter-design article
+and the NTMC Jimmy Liao public-art page. It had not searched the New Taipei
+award and signing notices, DORTS right-of-way and grade-testing articles,
+construction-progress page, or project quality-control article.
+
+Final body-prose counts: V01 318, V02 322, V03 313, V04 333, V05 313 and V06
+306; batch total 1,905 words. No station-only contract value was inferred from
+the corridor award. The prose uses the New Taipei Phase 1 turnkey award and
+signing record, DORTS’s mixed-right-of-way and elevation explanations, the
+Hongshulin–Ganzhenlin grade-testing and VR record, the Hongshulin transfer-link
+milestone, the dated V05–V06 construction-progress page, and the documented
+five-layer quality-control process. The V03-specific safety article remains
+the source for V03’s station-level monitoring record.
+
+Primary URLs fetched in full and cited:
+
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201411110022&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=23fcb6ad2ee57514e4de617d90d596a4&id=e8ca970cde5c00e1
+- https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmaq0gmqya?page=416
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/r6421QJ829nR?page=379
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/xVR2eEEv2J36?page=401
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMjN9ZKRw?page=369
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/DJPZEaa0ZKx3?page=382
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/W0OdPPx6dnbJ
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=17
+
+Conflicts: NT$11,512,800,000 is the combined first-phase turnkey award for
+G01–G08/B06–B08, not a station value; the 68,500 daily figure is a target-year
+corridor service measure, not station demand; and the 6.16% grade is the
+published Hongshulin-to-V07 section maximum, not a V01–V06 station grade.
+TBC: station-only contracts/final accounts, individual architecture records,
+station-specific Jimmy Liao titles/years/costs, and dated renames. The checked
+primary material returned no New Taipei gazette rename record for V01–V06.
+
+Contradicted the corpus: the previous conclusion that New Taipei sources
+returned no usable deepening material was wrong. The widened primary search
+returned a corridor contract, engineering rationale, V01 transfer milestone,
+V05–V06 progress and project quality process. No false-prefix audit applies.
+
+Gates for this batch: `npm run cite` clean; fresh `npm run verify` clean after
+line-V font regeneration (519 pages, no missing glyphs, links/a11y/facts/
+claims/research/geometry/CVD clean, 185/185 tests); explicit `npm test` and
+`git diff --check` still required before commit and push.
+
+Next: audit Danhai V07–V11 and V26 with the same expanded New Taipei primary
+source families.

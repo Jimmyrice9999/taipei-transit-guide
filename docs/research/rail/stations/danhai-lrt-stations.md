@@ -264,6 +264,106 @@ intersection, bridge, district-office, university, Fisherman's Wharf and
 Hongshulin landmarks used in each station record. These are descriptions of
 what the operator or builder names near the station, not inferred geography.
 
+## Station-prose deepening: V01–V06 — 18 August 2026
+
+The second audit began from six zero-word station pages. It kept the earlier
+NTMC station pages, DORTS route/station pages, V03 safety article, shelter
+article and Jimmy Liao page in scope, then widened the search to New Taipei
+government award and contract notices, DORTS technical articles, construction
+progress and project quality-control records. Every page below was fetched in
+full; the two PDF leads found in search timed out and were not used.
+
+### What is established
+
+- New Taipei’s full award notice names China Steel Corporation and Union Steel
+  Construction Corporation as the winning joint-bid team, gives the
+  NT$11,512,800,000 award value, and defines the first-phase scope as Green
+  Mountain G01–G08 plus Blue Sea B06–B08: 9.9 km, 14 stations and one depot.
+  This is a corridor contract, not a V01–V06 station allocation.
+  Source: [New Taipei award notice](https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201411110022&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27),
+  PRIMARY, High confidence. The notice says: 「優勝廠商為中國鋼鐵股份有限公司/聯鋼營造工程股份有限公司共同投標團隊，決標金額為新臺幣115億1,280萬元」 and defines the G01–G08/B06–B08 scope.
+- The full signing notice records the 5 December 2014 contract signing with
+  that joint team and presents domestic vehicle construction, maintenance and
+  operating capability as project aims. It does not publish an individual
+  station contract or final account.
+  Source: [New Taipei contract-signing notice](https://www.ntpc.gov.tw/ch/home.jsp?dataserno=23fcb6ad2ee57514e4de617d90d596a4&id=e8ca970cde5c00e1),
+  PRIMARY, High confidence. The notice says: 「淡海輕軌第一期統包工程今(5)日舉行主體工程統包標簽約典禮」 and names the two companies.
+- DORTS’s right-of-way article says the first phase balanced cost,
+  engineering difficulty, land acquisition and landscape impact by using
+  seven elevated and seven at-grade stations. It places the Green Mountain
+  route on elevated A-type right of way through the V07 area before the
+  change to B-type at-grade right of way.
+  Source: [DORTS right-of-way explanation](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/O6Jmaq0gmqya?page=416),
+  PRIMARY, High confidence. The article says: 「淡海輕軌第一期全長9.55公里……決定採部分高架，部份平面型式興建」 and gives the A/B arrangement.
+- DORTS explains the elevation decision at the Hongshulin end: about 10 m at
+  Hongshulin versus about 35–40 m in Danhai New Town, with the Hongshulin–V07
+  elevated section reaching a maximum 6.16% grade before the surface section.
+  This supplies corridor engineering context for V01–V06 but does not turn
+  every station into a separately verified structure classification.
+  Source: [DORTS elevation explanation](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/r6421qqK29nR?page=379),
+  PRIMARY, High confidence. The article says: 「紅樹林站位於淡水河岸，海拔約10公尺」 and gives the 35–40 m New Town elevation and 6.16% grade.
+- DORTS’s grade-testing article identifies the Hongshulin–Ganzhenlin section
+  as the steepest Green Mountain climb and records repeated grade and braking
+  tests, comparison of design and measured parameters, vehicle adjustment and
+  VR review of station circulation.
+  Source: [DORTS grade and VR testing](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/xVR2eEEv2J36?page=401),
+  PRIMARY, High confidence. The article says: 「紅樹林站到『竿蓁林』站間，坡度更是最陡峭的一段」 and describes the test and VR sequence.
+- DORTS’s transfer milestone records that the former Hongshulin MRT/light-rail
+  connection required a street transfer, then says the new passage and
+  platform escalators reduced the stated transfer time from five minutes to
+  one minute.
+  Source: [DORTS Hongshulin transfer milestone](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMjN9ZKRw?page=369),
+  PRIMARY, High confidence. The article says: 「轉乘時間馬上從5分鐘縮短到1分鐘」.
+- DORTS’s September 2018 progress page says V05’s structure was largely
+  complete while platform-entry finishes and mechanical work continued. It
+  calls V06 the sixth Green Mountain station and says ceiling, wall, floor and
+  mechanical work were continuing after the structure was largely complete.
+  Source: [DORTS V05–V06 progress](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/DJPZEaa0ZKx3?page=382),
+  PRIMARY, High confidence. The page says V05’s structure was 「大致完成」 and
+  identifies V06 as 「淡海輕軌綠山線第六站」.
+- DORTS’s project quality article records five control layers: plan review,
+  incoming-material sampling, contractor self-inspection, supervision hold
+  points and project-management/owner spot checks. It illustrates the process
+  with precast-beam work from the Phase 1 turnkey team.
+  Source: [DORTS quality-control article](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/W0OdPPx6dnbJ),
+  PRIMARY, High confidence. The article enumerates 「施工計畫書(圖)的審核」、「材料進場抽驗」、「廠商施工自主檢查」、「監造單位檢驗停留點」 and 「專管單位(業主)的抽查檢驗」.
+
+### Station-specific application
+
+V01’s prose uses the Hongshulin elevation, the V01–V02 steepest-grade test
+and the transfer-link milestone. V02 uses the Ganzhenlin grade-test boundary
+and the elevated A-type right-of-way context. V03 retains the earlier NTMC
+station-specific safety record for its elevated position beside Huwei Cherry
+Blossom Avenue and its slope and earthquake monitoring, then adds the new
+corridor contract, grade and quality context. V04 uses the documented mixed
+right-of-way and grade-change context. V05 and V06 use the full DORTS progress
+page for their dated construction snapshot. No station-only contract value,
+contractor split or final account was inferred for any of the six pages.
+
+### Checked and failed for V01–V06
+
+- **Station-only contract package, contractor and value** — the full New Taipei
+  award and signing notices define one combined first-phase scope and do not
+  allocate a station package. The checked DORTS procurement index did not
+  expose a V01–V06 station-only award. Checked 18 August 2026.
+- **Station-specific final account or contract change history** — not found in
+  the full award, signing, route, progress and quality pages checked. Checked
+  18 August 2026.
+- **Station-specific architecture/architect record** — the widened New Taipei
+  DORTS pages returned route-level right-of-way and station-progress material,
+  but no V01–V06 architect or material specification beyond the existing
+  shelter-design record. Checked 18 August 2026.
+- **Station-specific public-art title, year, selection process and cost** —
+  NTMC’s Jimmy Liao page still documents a line-wide collaboration, not
+  station-by-station titles or costs in its readable HTML. The copyrighted
+  artwork content was not described. Checked 18 August 2026.
+- **Dated renames and gazette notices** — no New Taipei government gazette or
+  operator announcement establishing a construction-era name or rename for
+  V01–V06 was found in this pass. Checked 18 August 2026.
+
+The six pages now have sourced prose rather than an assertion that the
+expanded source family was empty. The remaining station-level gaps stay TBC.
+
 ## Conflicts
 
 1. The DORTS Green Mountain route page gives the operating opening as 24
