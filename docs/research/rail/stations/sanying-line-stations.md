@@ -426,6 +426,48 @@ confirmed feeder-bus stop-ID joins. The individual LB07 artwork page remained
 unfetched after a full cache-miss response, so its medium, artist and cost stay
 TBC. LB10’s `陶鄉` relationship to the LB08 record also remains unresolved.
 
+## Run 45 — LB12 primary-source expansion, 2026-08-18
+
+This final partial station batch fetched the complete DORTS route and public-art
+index pages, the 2026 public-art announcement, the line engineering
+documentary and the individual LB12 public-art record. No research appendix was
+used.
+
+### What is established
+
+- **Route and line position.** The full DORTS route page places LB12 at Yingtao
+  Fude on Fude First Road in Yingge. The full public-art index describes the
+  Sanying project as 14.29 kilometres with 12 elevated stations. Primary, high
+  confidence: https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6 and
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_art
+- **LB12 overview model.** The full individual record places the index model on
+  the station’s third-floor concourse wall, credits Lin Shaoqing and Gu Cai Art
+  Creation Environment, and describes water, boundary, capsule and miniature-
+  reference elements. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/0g4d6Nn5d5Db
+- **Line-wide assignment.** The full 2026 public-art announcement lists
+  `三鶯流動美學總覽` at LB12 and describes the mobile-museum programme as 12
+  works by 13 artist groups. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+- **Engineering context.** The full engineering documentary says
+  `全線高架形式...跨越國道、台鐵、大漢溪、三峽河、鶯歌溪` and records the
+  fish-fin bridge, protective base plate, railway supervision and night TRA
+  power-off control. This is line-level evidence, not an LB12-specific incident
+  report. Primary, high confidence:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+
+### Conflicts found
+
+No conflict was found in the full LB12 primary records used here. The individual
+art record and 2026 announcement agree on the overview role; the individual
+record adds the wall location and credited makers.
+
+### Stated gaps
+
+The fetched primary families do not establish an LB12 civil construction
+contract value, final account, separate architect, complete art cost, rename
+gazette or confirmed feeder-bus stop-ID join. Those values remain TBC.
+
 ## Checked and failed
 
 - **TDX station rows** — Checked 2026-08-14. No LB station dataset exists in the

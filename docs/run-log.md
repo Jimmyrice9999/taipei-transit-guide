@@ -10131,8 +10131,48 @@ Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
 clean (185/185, 19 fact cross-checks, no contradictions); `git diff --check`
 clean. Claims baseline and its test were not changed.
 
-Next: complete LB12, then audit all 192 station pages for any body prose under
-200 words before starting Part 4 operator/model/depot indexes.
+Next: audit all 192 station pages for any body prose under 200 words before
+starting Part 4 operator/model/depot indexes.
+
+# Run 45 — Part 1 Sanying LB12, 18 August 2026
+
+Audited before editing. This final partial batch widened LB12 with the full
+DORTS route, public-art index, 2026 public-art announcement, engineering
+documentary and individual LB12 public-art record. No research appendix was
+used.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| LB12 | 353 | DORTS route, public-art index, 2026 public-art announcement, engineering and LB12 art record |
+
+Sources fetched in full:
+
+- https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_art
+- https://www.dorts.ntpc.gov.tw/art_aesthetics/public_artinfo/0g4d6Nn5d5Db
+- https://www.dorts.ntpc.gov.tw/news/indexInfo/xVR2eBELdJ36
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/7PVdqkY4mGLb?page=239
+
+Sourced: LB12 now has its route position, line scale, third-floor index-model
+location, credited makers, mobile-museum role and line-level engineering
+context. The overview assignment agrees between the individual record and the
+2026 announcement.
+
+Conflicts: none in this batch. The individual art page and 2026 announcement
+describe the same overview role; the individual page adds the wall location and
+makers.
+
+TBC after the fetched source families: LB12 civil construction contract value,
+final account, separate architect, complete art cost, rename gazette and
+confirmed feeder-bus stop-ID join.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run build` clean (519 pages, no missing glyphs); `npm run verify` clean
+(links, accessibility, facts, claims, research, geometry and CVD); `npm test`
+clean (185/185, 19 fact cross-checks, no contradictions); `git diff --check`
+clean. Claims baseline and its test were not changed.
+
+Next: audit all 192 station pages for body prose under 200 words.
 
 Next: complete LB06–LB11 as the next six-page batch.
 

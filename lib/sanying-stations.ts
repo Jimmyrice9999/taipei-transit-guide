@@ -598,6 +598,20 @@ const stationProse: Record<string, StationProseSentence[]> = {
   ],
   LB12: [
     { text: 'DORTS describes LB12’s index model as a mobile-museum overview: water imagery marks the New Taipei–Taoyuan junction, while capsule forms hold miniatures of works from the line’s twelve art teams.', source: lb12Art.id },
+    { text: 'The route record places LB12 at Yingtao Fude in Yingge on Fude First Road, at the Sanying Line’s southern end.', source: dortsRoute.id },
+    { text: 'The public-art index describes the line as 14.29 kilometres with 12 elevated stations, making LB12 the final station in the same elevated corridor rather than a separate branch.', source: publicArtIndex.id },
+    { text: 'The full LB12 art record places the index model on the station’s third-floor concourse wall.', source: lb12Art.id },
+    { text: 'It identifies Lin Shaoqing and Gu Cai Art Creation Environment as the credited artist and production group for the work.', source: lb12Art.id },
+    { text: 'The record frames the model as a line-wide index rather than a single-station scene, with water imagery marking the New Taipei-Taiwan Taoyuan boundary area.', source: lb12Art.id },
+    { text: 'It also describes capsule forms that hold miniature references to works from the line’s twelve art teams, giving LB12 a cataloguing role within the public-art programme.', source: lb12Art.id },
+    { text: 'The 2026 public-art announcement lists Sanying Mobile Art Aesthetic Overview at LB12 and calls the line’s public art a mobile museum.', source: linePublicArt2026.id },
+    { text: 'That announcement describes a programme of 12 works by 13 artist groups, including physical and augmented-reality formats.', source: linePublicArt2026.id },
+    { text: 'The LB12 individual record and the 2026 announcement therefore agree on the station’s overview function, while the individual record supplies the wall location and credited makers.', source: lb12Art.id },
+    { text: 'The builder’s engineering documentary says the elevated alignment crosses national and railway infrastructure and the Dahan, Sanxia and Yingge waterways.', source: engineeringRisks.id },
+    { text: 'Its railway-crossing account records a fish-fin bridge, protective base plate, railway supervision and a night TRA power-off operation.', source: engineeringRisks.id },
+    { text: 'Those controls are line-level construction evidence and do not establish an LB12-specific incident.', source: engineeringRisks.id },
+    { text: 'The fetched primary pages do not establish a separate LB12 civil construction contract value, final account, individual architect, complete art cost, rename gazette or confirmed feeder-bus stop-ID join.', source: dortsRoute.id },
+    { text: 'Those missing station-specific fields remain TBC rather than being inferred from the line-wide engineering record or the overview model.', source: engineeringRisks.id },
   ],
 }
 
@@ -613,7 +627,7 @@ const stationProseSources: Record<string, Source[]> = {
   LB09: [dortsRoute, publicArtIndex, linePublicArt, linePublicArt2026, engineeringRisks, lb09Art],
   LB10: [dortsRoute, publicArtIndex, linePublicArt, linePublicArt2026, engineeringRisks, lb08Art],
   LB11: [dortsRoute, publicArtIndex, linePublicArt2026, engineeringRisks, lb11Art],
-  LB12: [lb12Art],
+  LB12: [dortsRoute, publicArtIndex, linePublicArt2026, engineeringRisks, lb12Art],
 }
 
 function mapSource(code: string, name: string, nameZh: string, url: string): Source {
