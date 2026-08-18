@@ -17,6 +17,7 @@ import { execFileSync } from 'node:child_process'
 
 import { getAllPages } from '../lib/content.ts'
 import { getBusRoutesByGroup } from '../lib/bus/routes.ts'
+import { getBuiltBusRouteGroups } from '../lib/bus/route-groups.ts'
 import { getLineStations, LINES_WITH_STATION_PAGES, STATIONS } from '../lib/stations.ts'
 import { LINES } from '../lib/lines.ts'
 
@@ -111,9 +112,14 @@ test('the expected number of pages was generated', () => {
   // /_not-found
   const generated = 11
   /* Bus route overlays live in a nested registry, so they are not part of
-     getAllPages(). Count the pilot's group index and its route pages here. */
-  const busPilotPages = getBusRoutesByGroup('colour-brown').length + 1
-  const expected = content + stations + sections + types + generated + busPilotPages
+     getAllPages(). Count every built group's index page and its route pages
+     here — one line per group would drift the moment a group is added, so
+     this sums whatever `content/bus/routes/` actually contains. */
+  const busGroupPages = getBuiltBusRouteGroups().reduce(
+    (sum, group) => sum + getBusRoutesByGroup(group).length + 1,
+    0,
+  )
+  const expected = content + stations + sections + types + generated + busGroupPages
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
   assert.equal(

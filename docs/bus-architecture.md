@@ -41,13 +41,36 @@ Use these route groups:
 
 | Group | Contents | Why it is a primary group |
 |---|---|---|
-| `colour-red`, `colour-blue`, `colour-green`, `colour-brown`, `colour-orange`, `colour-yellow` | Colour-prefixed corridor/feeder services, keyed to the MRT corridor they explicitly feed | The prefix is the passenger-facing route class and gives a natural rail index, but it must not be inferred for trunk routes that reuse colour words directionally. |
+| `colour-red`, `colour-blue`, `colour-green`, `colour-brown`, `colour-orange` | Colour-prefixed corridor/feeder services, keyed to the MRT corridor they explicitly feed | The prefix is the passenger-facing route class and gives a natural rail index, but it must not be inferred for trunk routes that reuse colour words directionally. |
 | `series-0-99` | The 0–99 numbered series | Keeps the compact historic numbering family together. |
 | `series-100s`, `series-200s`, `series-300s`, `series-500s`, `series-600s`, `series-700s`, `series-900s` | The named 100s, 200s, 300s, 500s, 600s, 700s and 900s numbered series | The number range is the stable browse key even when a route’s contractor changes. The current TDX `series-other` records are six 100-series routes and thirteen 900-series routes, so these are real missing browse bands rather than miscellaneous routes. |
 | `trunk` | `幹線` trunk routes, including named corridor services | Trunk is a service class, not a district or an operator. |
 | `minibus` | `市民小巴` and other community/minibus services | These have different vehicle and operating context from ordinary numbered routes. |
 | `special-shuttle` | Named commuter and institutional shuttle services: `內科快線`/`內科通勤專車`, `南軟通勤專車`, `通勤`/CB and `懷恩專車` | These 42 records share an explicit shuttle/commuter identity but are not minibuses, trunk routes or colour-prefixed feeders. Keeping them together records a service-class pattern without forcing them into a number band. |
 | `new-taipei` | New Taipei’s own route-numbering system and services | Keeps the municipality’s distinct catalogue legible without duplicating a cross-border route into a Taipei district. |
+
+**`colour-yellow` was checked and removed, 18 August 2026.** An earlier draft of
+this table listed a `colour-yellow` class alongside the other five. The
+committed TDX bus layer carries zero routes in any group with a name starting
+黃, and only two routes anywhere contain 黃 at all — 856(台灣好行-黃金福隆線)
+and 新九號停車場-黃金博物館, both place-name matches (黃金福隆, 黃金博物館 =
+Gold Fulong/Gold Museum) filed correctly under `new-taipei`, not feeders.
+ebus.gov.taipei's own category list, fetched in full, names exactly five
+colour-prefixed MRT feeder classes — 捷運紅線接駁公車, 捷運藍線接駁公車, 捷運
+綠線接駁公車, 捷運棕線接駁公車, 捷運橘線接駁公車 — plus a separate 輕軌接駁公車
+(light-rail feeder) class for the Danhai and Ankeng LRT; no 捷運黃線接駁公車
+category exists. The reason: the five colour classes cover TRTC's five lines
+only. The Circular Line (`line: Y`, alias "Yellow Line" — see
+`content/rail/lines/circular-line.md`) is operated by New Taipei Metro
+(NTMC), not TRTC, so it falls outside eBus's TRTC-feeder colour scheme
+entirely. A named, unbadged "環狀線免費接駁公車" shuttle is attested in
+secondary sources (news roundups, a Wikiversity route page) as a joint-
+operator free service linking 板橋 and 大坪林/中和, but it carries no colour-
+prefix identity and does not appear anywhere in the committed TDX route
+dataset (zero matches for 環狀 or 接駁 in any route name) — it may not be
+registered in TDX's GeneralBus feed, or may no longer run. `colour-yellow` is
+therefore not a missing class to populate; it is removed from the group list
+above.
 
 The group is a canonical home, not a claim that a route has only one useful
 classification. A route record can also carry `series`, `municipalities`,

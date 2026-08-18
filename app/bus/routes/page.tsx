@@ -2,10 +2,11 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import BackLink from '@/components/BackLink'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import CardRow from '@/components/CardRow'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
-import { getBusRoutesByGroup } from '@/lib/bus/routes'
+import { getFolder } from '@/lib/content'
+import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
+import { getBuiltBusRouteGroups } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
 export const metadata: Metadata = {
@@ -15,48 +16,34 @@ export const metadata: Metadata = {
 }
 
 export default function BusRoutesIndexPage() {
-  const brownRoutes = getBusRoutesByGroup('colour-brown')
-  const accent = getAccent('BR')
+  const groups = getBuiltBusRouteGroups().map((group) => ({
+    group,
+    folder: getFolder(['bus', 'routes'], group),
+    routes: getBusRoutesByGroup(group as BusRouteGroup),
+  }))
+  const totalRoutes = groups.reduce((sum, g) => sum + g.routes.length, 0)
 
   return (
-    <PageShell accent={accent}>
+    <PageShell accent={getAccent(undefined)}>
       <HanContentSubset />
       <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes' }]} />
       <BackLink href="/bus/" label="Bus" />
       <h1 className="page-title">Bus routes</h1>
-      <p className="page-summary">Route groups are the browse key. The brown-line feeder group is the current pilot.</p>
+      <p className="page-summary">Route groups are the browse key. {totalRoutes} routes are built across {groups.length} group{groups.length === 1 ? '' : 's'} so far, out of 1,051 normalized TDX records.</p>
       <ul className="card-list">
-        <li>
-          <Link href="/bus/routes/colour-brown/">
-            <span className="card-body">
-              <span className="card-title">Brown-line feeder routes</span>
-              <span className="card-desc">{brownRoutes.length} routes listed under the official MRT brown-line feeder class.</span>
-            </span>
-            <span className="card-meta"><span className="card-arrow" aria-hidden="true">→</span></span>
-          </Link>
-        </li>
+        {groups.map(({ group, folder, routes }) => (
+          <li key={group}>
+            <Link href={folder.href}>
+              <span className="card-body">
+                <span className="card-title">{folder.title}</span>
+                <span className="card-desc">{routes.length} route{routes.length === 1 ? '' : 's'} listed.</span>
+              </span>
+              <span className="card-meta"><span className="card-arrow" aria-hidden="true">→</span></span>
+            </Link>
+          </li>
+        ))}
       </ul>
-      <p className="section-desc">Other route groups remain outside this shape-test pilot.</p>
-      <details className="index-disclosure" open={false}>
-        <summary>
-          <span className="section-heading" role="heading" aria-level={2}>Pilot routes</span>
-          <span className="disclosure-count">{brownRoutes.length} routes</span>
-          <span className="disclosure-caret" aria-hidden="true" />
-        </summary>
-        <div className="index-disclosure-body">
-          <ul className="card-list">
-            {brownRoutes.map((route) => (
-              <CardRow
-                key={route.id}
-                href={`/bus/routes/colour-brown/${route.canonicalSlug}/`}
-                title={`${route.names.en} / ${route.names.zh_tw}`}
-                summary="Brown-line feeder pilot route"
-                line="BR"
-              />
-            ))}
-          </ul>
-        </div>
-      </details>
+      <p className="section-desc">Other route groups (numbered series, minibus, special-shuttle, new-taipei) remain outside this build.</p>
     </PageShell>
   )
 }

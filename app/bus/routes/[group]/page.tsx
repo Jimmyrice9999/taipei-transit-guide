@@ -9,21 +9,20 @@ import References from '@/components/References'
 import RichText from '@/components/RichText'
 import { getFolder, getFolderContent } from '@/lib/content'
 import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
+import { getBuiltBusRouteGroups, getGroupLineCode } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
 type Props = { params: Promise<{ group: string }> }
 
-const GROUP: BusRouteGroup = 'colour-brown'
-
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return [{ group: GROUP }]
+  return getBuiltBusRouteGroups().map((group) => ({ group }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { group } = await params
-  if (group !== GROUP) notFound()
+  if (!getBuiltBusRouteGroups().includes(group as BusRouteGroup)) notFound()
   const folder = getFolder(['bus', 'routes'], group)
   return {
     title: folder.title,
@@ -34,14 +33,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BusRouteGroupPage({ params }: Props) {
   const { group } = await params
-  if (group !== GROUP) notFound()
+  if (!getBuiltBusRouteGroups().includes(group as BusRouteGroup)) notFound()
 
   const folder = getFolder(['bus', 'routes'], group)
-  const routes = getBusRoutesByGroup(GROUP)
+  const routes = getBusRoutesByGroup(group as BusRouteGroup)
   const folderContent = await getFolderContent(['bus', 'routes'], group)
+  const lineCode = getGroupLineCode(group as BusRouteGroup)
 
   return (
-    <PageShell accent={getAccent('BR')}>
+    <PageShell accent={getAccent(lineCode)}>
       <HanContentSubset />
       <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: folder.title }]} />
       <BackLink href="/bus/routes/" label="Routes" />
@@ -60,10 +60,10 @@ export default async function BusRouteGroupPage({ params }: Props) {
         {routes.map((route) => (
           <CardRow
             key={route.id}
-            href={`/bus/routes/${GROUP}/${route.canonicalSlug}/`}
+            href={`/bus/routes/${group}/${route.canonicalSlug}/`}
             title={`${route.names.en} / ${route.names.zh_tw}`}
             summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
-            line="BR"
+            line={lineCode}
           />
         ))}
           </ul>

@@ -5,6 +5,7 @@ import RouteMap, { type MapStation } from './RouteMap'
 import RichText from './RichText'
 import { getStation, getStationHref } from '@/lib/stations'
 import { getBusOperator, getBusShapes, getBusStopSequences, type BusRoute } from '@/lib/bus/routes'
+import { GROUP_LINE, GROUP_PATH_COLOUR } from '@/lib/bus/route-groups'
 import type { Line } from '@/lib/lines'
 import type { NumberedSource } from '@/lib/sources'
 import type { Point } from '@/lib/geometry'
@@ -73,6 +74,8 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
     })
     .filter(Boolean)
 
+  const feederLine = GROUP_LINE[route.group]
+
   const facts = [
     { label: 'Route', value: `${route.names.en} / ${route.names.zh_tw}`, source: 'tdx-bus' },
     { label: 'Municipality', value: route.sourceCities.join(', '), source: 'tdx-bus' },
@@ -80,7 +83,9 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
     { label: 'Termini by direction', value: termini.join(' · ') || 'TBC', source: 'tdx-bus' },
     { label: 'Stops', value: String(new Set(sequences.flatMap((sequence) => sequence.stops.map((stop) => stop.stopUid))).size), source: 'tdx-bus' },
     { label: 'Confirmed MRT stop joins', value: String(route.railJoins.length), source: 'tdx-bus' },
-    { label: 'Feeder line', value: 'Wenhu Line (BR)', source: 'ebus-brown' },
+    ...(feederLine
+      ? [{ label: 'Feeder line', value: `${feederLine.name} (${feederLine.code})`, source: feederLine.sourceId }]
+      : []),
   ]
 
   return <FactsPanel facts={facts} line={line} title={route.names.en} references={references} href={href} />
@@ -95,7 +100,9 @@ function OperatorRecords({ route, references }: { route: BusRoute; references: N
       {operators.map((operator, index) => (
         <span key={operator!.id}>
           {index > 0 && ', '}
-          <Link href="/bus/operators/">{operator!.names.en || operator!.names.zh_tw}</Link>
+          <Link href="/bus/operators/">
+            {operator!.names.en || <span lang="zh-Hant">{operator!.names.zh_tw}</span>}
+          </Link>
         </span>
       ))}
       <CiteMark id="tdx-bus" references={references} />
@@ -104,6 +111,7 @@ function OperatorRecords({ route, references }: { route: BusRoute; references: N
 }
 
 function BusRouteMap({ route, references }: { route: BusRoute; references: NumberedSource[] }) {
+  const pathColour = GROUP_PATH_COLOUR[route.group] ?? '#5c5650'
   const shapes = getBusShapes(route)
   const paths = shapes.map((shape) => parseLineString(shape.geometry)).filter((path) => path.length > 1)
   const joinsByStop = stopJoinMap(route)
@@ -117,7 +125,7 @@ function BusRouteMap({ route, references }: { route: BusRoute; references: Numbe
       nameZh: stop.names.zh_tw,
       lat: stop.position.lat,
       lon: stop.position.lon,
-      colour: '#8d6e3d',
+      colour: pathColour,
       isTerminus: index === 0 || index === stops.length - 1,
       isInterchange: Boolean(join),
       href: join ? getStationHref(join.stationCode) ?? undefined : undefined,
@@ -129,7 +137,7 @@ function BusRouteMap({ route, references }: { route: BusRoute; references: Numbe
   return (
     <>
       <RouteMap
-        lines={[{ code: route.names.en, name: route.names.zh_tw, colour: '#8d6e3d', paths }]}
+        lines={[{ code: route.names.en, name: route.names.zh_tw, colour: pathColour, paths }]}
         stations={stations}
         labels="key"
         caption="TDX route geometry. Stops are drawn from the normalized stop records; MRT links are shown only for the confirmed stop-ID joins."

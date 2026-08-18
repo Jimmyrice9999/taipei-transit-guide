@@ -12,22 +12,23 @@ import RichText from '@/components/RichText'
 import SpecTable from '@/components/SpecTable'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
-import { getPageFromFile } from '@/lib/content'
-import { getBusRoute, getBusRoutesByGroup } from '@/lib/bus/routes'
+import { getFolder, getPageFromFile } from '@/lib/content'
+import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
+import { getBuiltBusRouteGroups, getGroupLineCode } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
 type Props = { params: Promise<{ group: string; slug: string }> }
-
-const GROUP = 'colour-brown'
 
 function overlayPath(group: string, slug: string) {
   return path.join(process.cwd(), 'content', 'bus', 'routes', group, `${slug}.md`)
 }
 
 async function readRoutePage(group: string, slug: string) {
-  const route = getBusRoutesByGroup('colour-brown').find((candidate) => candidate.canonicalSlug === slug)
+  const builtGroups: string[] = getBuiltBusRouteGroups()
+  if (!builtGroups.includes(group)) return null
+  const route = getBusRoutesByGroup(group as BusRouteGroup).find((candidate) => candidate.canonicalSlug === slug)
   const file = overlayPath(group, slug)
-  if (group !== GROUP || !route || !fs.existsSync(file)) return null
+  if (!route || !fs.existsSync(file)) return null
   const page = await getPageFromFile(file, {
     section: 'bus',
     type: 'routes',
@@ -41,14 +42,17 @@ async function readRoutePage(group: string, slug: string) {
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return getBusRoutesByGroup('colour-brown').map((route) => ({ group: GROUP, slug: route.canonicalSlug }))
+  return getBuiltBusRouteGroups().flatMap((group) =>
+    getBusRoutesByGroup(group).map((route) => ({ group, slug: route.canonicalSlug })),
+  )
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { group, slug } = await params
   const result = await readRoutePage(group, slug)
   if (!result) notFound()
-  const description = `${result.route.names.en} is a brown-line feeder route in the Taipei bus pilot.`
+  const folder = getFolder(['bus', 'routes'], group)
+  const description = `${result.route.names.en} is a route in the ${folder.title} group of the Taipei transit guide.`
   return {
     title: result.route.names.en,
     description,
@@ -62,7 +66,8 @@ export default async function BusRoutePage({ params }: Props) {
   const result = await readRoutePage(group, slug)
   if (!result) notFound()
   const { route, page } = result
-  const accent = getAccent('BR')
+  const folder = getFolder(['bus', 'routes'], group)
+  const accent = getAccent(getGroupLineCode(group as BusRouteGroup))
 
   return (
     <PageShell accent={accent}>
@@ -71,11 +76,11 @@ export default async function BusRoutePage({ params }: Props) {
         { name: 'Home', path: '/' },
         { name: 'Bus', path: '/bus/' },
         { name: 'Routes', path: '/bus/routes/' },
-        { name: 'Brown-line feeders', path: `/bus/routes/${GROUP}/` },
+        { name: folder.title, path: `/bus/routes/${group}/` },
         { name: route.names.en, path: page.href },
       ])]} />
-      <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: 'Brown-line feeders', href: `/bus/routes/${GROUP}/` }, { label: route.names.en }]} />
-      <BackLink href={`/bus/routes/${GROUP}/`} label="Brown-line feeders" />
+      <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: folder.title, href: `/bus/routes/${group}/` }, { label: route.names.en }]} />
+      <BackLink href={`/bus/routes/${group}/`} label={folder.title} />
       <article>
         <h1 className="page-title"><RichText>{page.title}</RichText></h1>
         {page.summary && <p className="page-summary"><RichText>{page.summary}</RichText></p>}

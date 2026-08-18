@@ -565,6 +565,11 @@ export function getFolder(parents: string[], slug: string): Folder {
   return readFolder(parents, slug)
 }
 
+/** Every child folder under `parents` that has an `_index.md` — e.g. the bus route groups. */
+export function listSubfolders(parents: string[]): Folder[] {
+  return listFolders(parents)
+}
+
 /* ------------------------------------------------------------------ */
 /* Pages                                                               */
 /* ------------------------------------------------------------------ */
