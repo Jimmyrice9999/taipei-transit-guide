@@ -61,57 +61,57 @@
     {
       "name": "BUS_ROUTES",
       "file": "lib/bus/routes.ts",
-      "line": 149
+      "line": 164
     },
     {
       "name": "BUS_STOPS",
       "file": "lib/bus/routes.ts",
-      "line": 153
+      "line": 168
     },
     {
       "name": "BUS_STOP_SEQUENCES",
       "file": "lib/bus/routes.ts",
-      "line": 154
+      "line": 169
     },
     {
       "name": "BUS_SHAPES",
       "file": "lib/bus/routes.ts",
-      "line": 155
+      "line": 170
     },
     {
       "name": "BUS_OPERATORS",
       "file": "lib/bus/routes.ts",
-      "line": 156
+      "line": 171
     },
     {
       "name": "getBusRoutes",
       "file": "lib/bus/routes.ts",
-      "line": 179
+      "line": 194
     },
     {
       "name": "getBusRoute",
       "file": "lib/bus/routes.ts",
-      "line": 184
+      "line": 199
     },
     {
       "name": "getBusRoutesByOperator",
       "file": "lib/bus/routes.ts",
-      "line": 195
+      "line": 210
     },
     {
       "name": "getBusRoutesByRailLine",
       "file": "lib/bus/routes.ts",
-      "line": 200
+      "line": 215
     },
     {
       "name": "getBusRoutesByRailStation",
       "file": "lib/bus/routes.ts",
-      "line": 204
+      "line": 219
     },
     {
       "name": "getBusStop",
       "file": "lib/bus/routes.ts",
-      "line": 222
+      "line": 237
     },
     {
       "name": "AA_MARGIN",

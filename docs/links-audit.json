@@ -631,8 +631,23 @@
     },
     {
       "page": "/bus/routes/colour-red/red-23/",
+      "name": "Zhuwei",
+      "href": "/rail/stations/r26/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-23/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-23/",
+      "name": "Ganzhenlin",
+      "href": "/rail/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-23/",
+      "name": "Tamkang University",
+      "href": "/rail/stations/v04/"
     },
     {
       "page": "/bus/routes/colour-red/red-23/",
@@ -706,8 +721,28 @@
     },
     {
       "page": "/bus/routes/colour-red/red-29/",
+      "name": "Zhongshan Elementary School",
+      "href": "/rail/stations/o10/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-29/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-2/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-2/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-2/",
+      "name": "Xihu",
+      "href": "/rail/stations/br16/"
     },
     {
       "page": "/bus/routes/colour-red/red-2/",
@@ -718,6 +753,16 @@
       "page": "/bus/routes/colour-red/red-2/",
       "name": "Wende",
       "href": "/rail/stations/br18/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-2/",
+      "name": "Neihu",
+      "href": "/rail/stations/br19/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-2/",
+      "name": "Dahu Park",
+      "href": "/rail/stations/br20/"
     },
     {
       "page": "/bus/routes/colour-red/red-2/",
@@ -736,6 +781,16 @@
     },
     {
       "page": "/bus/routes/colour-red/red-3-1or7p48/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-3-1or7p48/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-3-1or7p48/",
       "name": "Xihu",
       "href": "/rail/stations/br16/"
     },
@@ -763,6 +818,16 @@
       "page": "/bus/routes/colour-red/red-3-1or7p48/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-3-z9iwef/",
+      "name": "Dazhi",
+      "href": "/rail/stations/br14/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-3-z9iwef/",
+      "name": "劍南路",
+      "href": "/rail/stations/br15/"
     },
     {
       "page": "/bus/routes/colour-red/red-3-z9iwef/",
@@ -816,8 +881,28 @@
     },
     {
       "page": "/bus/routes/colour-red/red-31/",
+      "name": "Zhongshan Elementary School",
+      "href": "/rail/stations/o10/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-31/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-33/",
+      "name": "Shuanglian",
+      "href": "/rail/stations/r12/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-33/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-33/",
+      "name": "Zhongshan Elementary School",
+      "href": "/rail/stations/o10/"
     },
     {
       "page": "/bus/routes/colour-red/red-33/",
@@ -855,6 +940,11 @@
       "href": "/rail/stations/bl18/"
     },
     {
+      "page": "/bus/routes/colour-red/red-37-17x5uzd/",
+      "name": "Tamsui District Office",
+      "href": "/rail/stations/v07/"
+    },
+    {
       "page": "/bus/routes/colour-red/red-37-4arbx5/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
@@ -863,6 +953,16 @@
       "page": "/bus/routes/colour-red/red-37-4arbx5/",
       "name": "淡金北新",
       "href": "/rail/stations/v05/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-37-4arbx5/",
+      "name": "新市一路",
+      "href": "/rail/stations/v06/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-37-4arbx5/",
+      "name": "Tamsui District Office",
+      "href": "/rail/stations/v07/"
     },
     {
       "page": "/bus/routes/colour-red/red-37-4arbx5/",
@@ -1028,6 +1128,11 @@
       "page": "/bus/routes/colour-red/red-9/",
       "name": "徐匯中學",
       "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-9/",
+      "name": "Sanmin Senior High School",
+      "href": "/rail/stations/o53/"
     },
     {
       "page": "/bus/routes/colour-red/red-9/",

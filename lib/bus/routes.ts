@@ -146,10 +146,25 @@ const confirmedJoinsByRoute = new Map(
   ]),
 )
 
-export const BUS_ROUTES = (busRoutes as unknown as BusRoute[]).map((route) => {
-  const joins = confirmedJoinsByRoute.get(route.id)
-  return joins ? { ...route, railJoins: joins } : route
-})
+/**
+ * Every route's raw `railJoins` from the TDX pull is matched by normalized
+ * stop name against the station registry — `match: 'normalized-name'` on
+ * every one of the 3,738 raw candidates, with no exceptions. That is exactly
+ * the join the sourcing discipline forbids presenting as confirmed: a bus
+ * stop can be named after a station, or sit near one, without actually
+ * serving it. Only `rail-stop-joins.json`'s curated, individually verified
+ * entries earn `match: 'stop-id'` and a badge/link on a route page.
+ *
+ * So every route is rebuilt with `railJoins` from the curated map, or `[]`
+ * when the route has no curated entry — never the unverified raw candidates.
+ * A route with real candidate joins and no curated entry correctly renders
+ * zero confirmed MRT stops until someone verifies one, rather than silently
+ * upgrading a name match into an interchange claim.
+ */
+export const BUS_ROUTES = (busRoutes as unknown as BusRoute[]).map((route) => ({
+  ...route,
+  railJoins: confirmedJoinsByRoute.get(route.id) ?? [],
+}))
 export const BUS_STOPS = busStops as unknown as BusStop[]
 export const BUS_STOP_SEQUENCES = busSequences as unknown as BusStopSequence[]
 export const BUS_SHAPES = busShapes as unknown as BusShape[]
