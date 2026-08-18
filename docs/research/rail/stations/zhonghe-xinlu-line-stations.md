@@ -574,6 +574,74 @@ accounts, architects, rename gazettes, complete current art inventories or
 paid-area versus street-transfer classifications for the six stations; those
 fields remain TBC.
 
+## Station-prose audit — Run 40 — 18 August 2026
+
+This batch widened the audit for O11–O16 with full DORTS station-architecture
+pages, the Xinzhuang station-design chapter, the DORTS public-art table and
+current TRTC station pages. Traditional-Chinese searches included `民權西路站
+後現代主義 捷運`, `大橋頭站 物件故事 公共藝術`, `台北橋站 鐵橋夕照 聯合開發`,
+`菜寮站 都會剪影`, `三重站 親水綠地 公共藝術`, and `先嗇宮站 金屬之城`. No
+unverified appendix was used.
+
+### O11–O12 Minquan West Road and Daqiaotou
+
+The full DORTS pages describe O11 as a transition between old Taipei’s
+rear-station atmosphere and later metropolitan development. Its postmodern
+theme uses glass mosaics, painted stainless steel and different granite floor
+patterns to express the connection between the Xinzhuang and Tamsui lines.
+O12 carries Dihua Street market-arcade imagery into its unpaid concourse,
+Daqiao Elementary School’s song into frosted stair glass, and eight platform
+wall paintings into directional water and city references. The public-art table
+records four Daqiaotou works, including 物件故事, 大河再舞 and 搖籃, with ROC-year
+99 January completion; one involved a 2009 sixth-grade class at Daqiao
+Elementary School. The entries record the artists, materials and costs
+separately from the eight platform paintings, so the records are not combined.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=581BAEA5E045EE90 — PRIMARY, High confidence; O11 original evidence: `後現代主義`, glass mosaic, stainless steel and the granite-floor connection between the Xinzhuang and Tamsui lines.
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635 — PRIMARY, High confidence; O12 original evidence: Dihua Street arcades, Daqiao Elementary School’s song and directional platform-wall paintings.
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D — PRIMARY, High confidence; original evidence: the Daqiaotou public-art rows, completion date, participants, materials, costs and selection method.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; original evidence: function-first circulation and public-art/architecture integration.
+- https://web.metro.taipei/pages2026/WebStation/055/1 — PRIMARY, High confidence; current operator station record for O11, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/128/1 — PRIMARY, High confidence; current operator station record for O12, fetched in full.
+
+### O13–O16 Taipei Bridge, Cailiao, Sanchong and Xianse Temple
+
+The full station-design pages establish distinct surface-planning decisions.
+O13 puts the main entrance, ventilation shaft, emergency exits and concourse
+inside a south-side joint-development building and uses 鐵橋夕照, while the
+public-art table records 大橋千尺枕江流-浮光‧掠影 by 黃文慶 with ROC-year-101
+January, glass/marble/fibre-optic materials, NT$5.5 million cost and public
+selection. O14 distributes entrances, ventilation and emergency elements
+around the simple-court plaza and a joint-development site and uses 都會剪影;
+no station-specific art metadata survived the checked primary pages. O15
+shares a ground-floor lobby between the Airport MRT and O line, distributes
+the long-site facilities and uses 親水綠地; its public-art row is 三重站’s
+時代的回聲 by Cero Architectural Design Company, ROC-year-98 June, mosaic,
+NT$9.5 million and public selection. O16 lies in the industrial district,
+integrates exit 1 and its lift into joint development, shares ventilation with
+exit 2 and uses 沙洲上的鋼鐵業; its public-art row is 金屬之城-36種凝視 by 王梅珍,
+ROC-year-98 July, NT$2.5 million and invitation competition, with the table’s
+listed metal and enamel materials.
+
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=1A03C950E2F3B99D — PRIMARY, High confidence; O13 full station-design page, including joint development and the bridge-at-sunset theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=68B457A5F26795D9 — PRIMARY, High confidence; O14 full station-design page, including the simple-court plaza and distributed surface elements.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=294F03F343781B2A — PRIMARY, High confidence; O15 full station-design page, including shared Airport MRT/O-line lobby, long-site treatment and waterside theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=C04B10E6E04BB667 — PRIMARY, High confidence; O16 full station-design page, including Sanchong industrial context, joint development and steel-industry theme.
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D — PRIMARY, High confidence; original evidence: Taipei Bridge, Sanchong and Xianse Temple public-art rows.
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A — PRIMARY, High confidence; original evidence: reduced-mass, transparent surface-design principles.
+- https://web.metro.taipei/pages2026/WebStation/127/1 — PRIMARY, High confidence; current operator station record for O13, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/126/1 — PRIMARY, High confidence; current operator station record for O14, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/125/1 — PRIMARY, High confidence; current operator station record for O15, fetched in full.
+- https://web.metro.taipei/pages2026/WebStation/124/1 — PRIMARY, High confidence; current operator station record for O16, fetched in full.
+
+### Conflicts and gaps
+
+No new numeric conflict was found in this batch. The public-art table’s
+separate rows are separate works and were not added together. The checked
+pages do not establish station-specific civil final accounts, architects,
+rename gazettes, complete current art inventories for O11–O16 or paid-area
+versus street-transfer classifications; these remain TBC.
+
 ## Unverified incoming lead appendix — `deep-research-report(4).md`
 
 > This appendix preserves an external lead only. It is explicitly unverified,

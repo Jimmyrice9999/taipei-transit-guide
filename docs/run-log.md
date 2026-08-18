@@ -9891,3 +9891,63 @@ contradictions); `git diff --check` clean. Claims baseline and its test were
 not changed.
 
 Next: commit and push this O05–O10 batch, then continue with O11–O16.
+
+# Run 40 — Part 1 Zhonghe-Xinlu O11–O16, 18 August 2026
+
+Audited before editing. The six pages were widened with full DORTS station
+architecture records, the general architecture principles, the Zhonghe-Xinlu
+public-art table and introduction, the Xinzhuang station-design technical
+chapter, and current TRTC station pages. No appendix was used and no
+frontmatter fact/spec was restated as prose.
+
+| Station | Body-prose words | Sources cited |
+| --- | ---: | --- |
+| O11 | 350 | station architecture, architecture principles and Xinzhuang design chapter |
+| O12 | 316 | station architecture, architecture principles and public-art table |
+| O13 | 330 | station architecture, architecture principles and public-art table |
+| O14 | 298 | station architecture and architecture principles |
+| O15 | 312 | station architecture, architecture principles and public-art table |
+| O16 | 320 | station architecture, architecture principles and public-art table |
+
+Sources fetched in full:
+
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=581BAEA5E045EE90
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=1A03C950E2F3B99D
+- https://www.dorts.gov.taipei/cp.aspx?n=A7D84926581F5817&s=68B457A5F26795D9
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=294F03F343781B2A
+- https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=C04B10E6E04BB667
+- https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://www.dorts.gov.taipei/cp.aspx?n=EF3512A90C6BCFD2&s=55502A1464815D8D
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page147.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page66.html
+
+Sourced: O11’s postmodern station treatment and glass, stainless-steel and
+granite material record; O12’s Dadaocheng context, school collaboration and
+four public-art records; O13’s joint-development setting and the documented
+bridge-themed public artwork; O14’s joint-development and civic-plaza design;
+O15’s shared Airport MRT/O15 interchange setting and public artwork; and
+O16’s industrial-district setting, joint development and documented metalwork
+commission. The prose also records the current station codes and keeps the
+source-era project context separate where the pages describe it.
+
+Conflicts published: no new direct numerical conflict was found in this
+batch. Public-art table entries are treated as individual works rather than
+combined station totals; the pages do not supply a complete current inventory
+or a uniform station-specific contract/accounting record.
+
+TBC after exhausting the fetched families: station-specific civil contract
+values and final accounts, architects where the station record does not name
+one, rename gazettes, complete current art inventories, and paid-area versus
+street-transfer classifications where the fetched sources do not publish
+them. No false-prefix audit applies to rail stations.
+
+Gates: `npm run cite` clean (522 citations; 420 primary, 102 secondary); fresh
+`npm run verify` clean after the O-line font-subset regeneration (519 pages, no
+missing glyphs, links/a11y/facts/claims/research/geometry/CVD clean, 185/185
+tests); `npm test` clean (185/185 tests, 19 fact cross-checks with no
+contradictions); `git diff --check` clean. Claims baseline and its test were
+not changed.
+
+Next: commit and push this O11–O16 batch, then continue with O17–O21/O50.
