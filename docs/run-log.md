@@ -8845,7 +8845,7 @@ line in Part 1, starting with Bannan.
 
 Deepened six Bannan station pages from full DORTS primary pages. Body-prose
 counts: BL01 365, BL02 397, BL03 345, BL04 351, BL05 330 and BL06 369;
-batch total 2,057 words. BL01 added Dingpu’s CD552 package, CD271A diaphragm-
+batch total 2,157 words. BL01 added Dingpu’s CD552 package, CD271A diaphragm-
 wall contract, 421-metre station-and-cross-passage dimensions, gravel geology,
 entrance co-structures and daylight architecture. BL02–BL06 added Tucheng and
 Banqiao corridor history, underground construction method, public-art planning
