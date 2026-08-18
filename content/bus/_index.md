@@ -2,6 +2,16 @@
 title: Bus
 description: How Taipei's joint-operation bus network is numbered, coloured and paid for.
 order: 2
+sources:
+  - id: tdx-bus-operator-pull
+    title: TDX bus operator and route pull
+    titleOriginal: 交通部運輸資料流通服務平臺
+    publisher: Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/
+    accessed: 2026-08-15
+    kind: primary
+    lang: zh-Hant
+    note: Supports the operator-record count and route associations described in the operator index.
 ---
 
 Taipei's city buses run as 聯營公車 — a joint operation: private companies
@@ -21,8 +31,9 @@ can explain, almost no English source states it, and it is why
 [Network](/bus/network/) sits above the operator and route pages rather than
 below them.
 
-**Operators.** More than a dozen companies work the network under contract, each
-with its own fleet, liveries and garages. The relationships between them —
+**Operators.** The [TDX operator index](/bus/operators/) lists the 61 operator
+records in the committed pull, with route associations generated from the same
+data pull [^tdx-bus-operator-pull]. The relationships between them —
 including who owns whom — are poorly documented in English, which makes this
 the part most likely to be worth reading rather than merely present.
 
@@ -33,8 +44,8 @@ few hundred stub pages would be worth less than twenty written ones. The route
 
 **Vehicles and garages.** Fleet lists exist through enthusiast sources and
 operator publications; they churn constantly, which is why
-[Models](/bus/models/) and [Garages](/bus/garages/) wait for a data pipeline
-rather than a transcription.
+[Models](/bus/models/) and [Depots](/bus/depots/) now report the corresponding
+TDX gaps rather than filling them from an unverified transcription.
 
 **Fares and payment.** Section-based fares, the EasyCard transfer discount
 between bus and metro, and where the section boundaries actually fall — which is

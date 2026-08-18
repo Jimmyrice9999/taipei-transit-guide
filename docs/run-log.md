@@ -10074,6 +10074,54 @@ claims, research, geometry and CVD); `npm test` clean (185/185, 19 fact
 cross-checks, no contradictions); `git diff --check` clean. Claims baseline and
 its test were not changed.
 
+# Run 46 — Part 4 bus operators, models and depots, 18 August 2026
+
+Audited before editing. Part 1 is complete: all 192 station pages now have
+200+ words of sourced body prose, so the requested under-target sweep found no
+second-pass pages. The full distribution is min 223, P25 304, median 340.5,
+P75 375 and max 584 words. Per-line distributions (n, min / P25 / median /
+P75 / max) are: A (22, 223 / 241 / 269.5 / 304 / 486), BL (23, 335 / 366 /
+388 / 414 / 471), BR (24, 267 / 334 / 358 / 390 / 533), G (20, 263 / 292 /
+339 / 380 / 436), K (9, 309 / 320 / 347 / 390 / 411), LB (12, 302 / 309 /
+328 / 353 / 416), O (26, 278 / 323 / 339 / 367 / 584), R (28, 316 / 334 /
+357 / 379 / 468), V (14, 272 / 288 / 304 / 319 / 337), and Y (14, 246 / 259 /
+275.5 / 282 / 355). No page remained under target, so no additional source
+family failure record was needed.
+
+The TDX operator pull at https://tdx.transportdata.tw/ was used as the primary
+source for the generated cross-cutting index. It contains 61 operator records
+associated with all 1,051 committed route records; the pages preserve distinct
+TDX record IDs and municipalities when names duplicate. The generated operator
+index has one index page plus 61 operator pages. Each page exposes TDX name,
+Chinese name where present, record ID, code, number, municipality, contact URL,
+phone and generated route associations. Routes are linked only when the page
+already exists in the brown pilot; all other associations remain plain labels,
+so Part 3 was not expanded.
+
+The model index has one page and remains TBC: this TDX pull has no vehicle-model
+roster, fleet count or model-to-operator field. The bus depot index has one page
+and remains TBC: the pull has no depot, garage, yard or maintenance-facility
+field. Company history, ownership, fleet, depot and contract history are not
+inferred from the TDX record; operator and responsible-authority pages would be
+needed. Rail model indexes (7 pages) and rail depot indexes (8 pages) already
+have real pages; no additional rail depot page was sourceable in this audit.
+
+No conflicts were found inside the TDX operator/route pull. The only relevant
+distinction is record identity versus legal-company identity: duplicate names
+are retained as separate records, not reconciled or averaged.
+
+Gates: `npm run cite` clean (587 citations; 485 primary, 102 secondary); fresh
+`npm run verify` clean (579 pages, links, accessibility, facts, claims at the
+committed 32 asserted count, research, geometry and CVD); `npm test` clean
+(185/185, 19 fact cross-checks, no contradictions). The claims baseline and
+claims test were not changed. The page-count test was corrected from an old
+off-by-one brown-route formula; it now counts the brown group index and its 20
+route pages. The existing user-owned dirty files remain unstaged.
+
+Part 3 remaining bus work was deliberately not started: 991 routes across the
+16 remaining groups, including the 561-route New Taipei group. Part 5 fresh
+visual verification is next; after that the run stops here.
+
 # Run 44 — Part 1 Sanying LB06–LB11, 18 August 2026
 
 Audited before editing. This exact six-page batch widened LB06–LB11 using the

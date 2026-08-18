@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 1184,
-    "tbc": 277,
+    "sourced": 1864,
+    "tbc": 488,
     "asserted": 32,
     "meta": 42
   },
@@ -50,24 +50,16 @@
     },
     {
       "file": "content/bus/depots/_index.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/bus/garages/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/models/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -89,9 +81,497 @@
       "meta": 1
     },
     {
+      "file": "content/bus/operators/0606-20m33c.md",
+      "sources": 1,
+      "sourced": 10,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/16474-f0ksz1.md",
+      "sources": 1,
+      "sourced": 8,
+      "tbc": 7,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/16476-eglll3.md",
+      "sources": 1,
+      "sourced": 8,
+      "tbc": 7,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/16479-bepyye.md",
+      "sources": 1,
+      "sourced": 7,
+      "tbc": 8,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/balidistrictoffice-zlmm0v.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/banqiaodistrictoffice-11jjtvo.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/capitalbus-1icts2l.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/capitalbus-1mju8h7.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/citiairbus-1pjf6b8.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/dananbus-o4rqys.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/dananbus-zudmrz.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/gongliaodistrictoffice-y73gye.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/jinshandistrictoffice-xn49kg.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/keelungbus-napsdw.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/kuanghuabus-1yk3cf5.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/kuanghuabus-n0tc6w.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/kuokuangbus-z1k94y.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/linkoudistrictoffice-y7olk0.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/luzhoudistrictoffice-yrnsxy.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/metropolitanbus-h3iwov.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/metropolitanbus-oercnr.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/newtaipeibus-mqtqhx.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/newtaipeibus-prtiek.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/pinglindistrictoffice-yqziud.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/pingxidistrictoffice-yh32nd.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/royalbus-1noamcq.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/ruifangdistrictoffice-z0z4jc.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sanchongdistrictoffice-z1nemx.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sanchungbus-1b7yg2j.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sanchungbus-1lzv139.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sanxiadistrictoffice-xn142h.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sanzhidistrictoffice-10fi9lt.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shenkengdistrictoffice-ygzx5e.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shimendistrictoffice-zbn0bw.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shin-shin-bus-ooqycq.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shinshinbus-2fom1y.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shuangxidistrictoffice-zayq8b.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/shulindistrictoffice-xd1idi.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sindianbus-1lpvfea.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/sindianbus-j8c9wy.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/southeastbus-9ljetg.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/taipeibus-1m9ums8.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/taipeibus-smuzdo.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/taishandistrictoffice-zvm7pu.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/tamshuibus-nasxvv.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/tamshuibus-zflu9i.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/tamsuidistrictoffice-105inwu.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/taoyuanbus-2ov8j.md",
+      "sources": 1,
+      "sourced": 10,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/tuchengdistrictoffice-x31woj.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/wanlidistrictoffice-xx3v9f.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/wugudistrictoffice-yho78z.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/xindiandistrictoffice-y70bgf.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/xinzhuangdistrictoffice-105ltet.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/xizhidistrictoffice-zl1hf9.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/yinggedistrictoffice-xx0prg.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/yonghedistrictoffice-wt2azk.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/zhinanbus-18cwz3f.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/zhinanbus-nksjku.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/zhonghedistrictoffice-11tjfkn.md",
+      "sources": 1,
+      "sourced": 11,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/zhongxingbus-1owb0k7.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/operators/zhongxingbus-mgu4sy.md",
+      "sources": 1,
+      "sourced": 12,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/operators/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 3,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -602,8 +1082,8 @@
     },
     {
       "file": "content/bus/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

@@ -111,9 +111,8 @@ test('the expected number of pages was generated', () => {
   // /_not-found
   const generated = 11
   /* Bus route overlays live in a nested registry, so they are not part of
-     getAllPages(). Count the pilot's group index, its 20 route pages and the
-     new stable Depots index explicitly. */
-  const busPilotPages = getBusRoutesByGroup('colour-brown').length + 2
+     getAllPages(). Count the pilot's group index and its route pages here. */
+  const busPilotPages = getBusRoutesByGroup('colour-brown').length + 1
   const expected = content + stations + sections + types + generated + busPilotPages
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
