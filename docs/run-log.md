@@ -8378,4 +8378,77 @@ No colour-prefix audit applies to a station batch. `npm run cite`,
 `npm run research`, the fresh build, font subset generation, the full test suite
 and `npm run verify` all passed after the final gate run. The claims test, claims
 baseline and checkers are unchanged. Wenhu is complete; the next line is the Red
-Line, beginning with the six-station R01–R06 batch.
+Line. The station registry has no R01, so the first real six-station batch is
+R02–R07.
+
+# Run 31 — Part 1 Red station prose, R02–R07, 18 August 2026
+
+## Sourced
+
+This batch deepened the first six registered Red-line station pages: R02
+Xiangshan, R03 Taipei 101/World Trade Center, R04 Xinyi–Anhe, R05 Daan, R06
+Daan Park and R07 Dongmen. Body-prose counts are R02 360 words, R03 318, R04
+302, R05 316, R06 383 and R07 430, for 2,109 words total. Every station
+prose sentence carries a source in the overlay.
+
+The full primary pages fetched and used were:
+
+- DORTS current Xinyi route and station table:
+  https://www.dorts.gov.taipei/cp.aspx?n=0ac527d5fc9e596a&s=CB7BC86DBDA1E44D
+- DORTS Xinyi design overview and station architecture:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page65.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page67.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page68.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page70.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page73.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page74.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page75.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page77.html
+- DORTS CR580B Xinyi construction package:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page100.html
+- DORTS Daan joint-development and landscape records:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page17.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page19.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page203.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page205.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page222.html
+- DORTS CK570H Dongmen construction and tunnel records:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page84.html
+- Existing full DORTS station-art records for R02–R06 were retained and
+  cross-checked against the current public-art index.
+
+The pages establish corridor context, construction-era versus current codes,
+package scope, station dimensions and engineering methods, architecture,
+landscape constraints, joint-development interfaces and the coordinated Daan–
+Daan Park–Xinyi Anhe public-art project. No colour-prefix audit applies to a
+station batch.
+
+## TBC
+
+Individual station contractors, station-level award dates and final accounts
+remain TBC. R07 public art was not confirmed in the full material checked. No
+feeder-bus prose, rename history, paid/street transfer classification or
+walking-distance claim was added without a full primary page.
+
+## Contradicted the corpus
+
+The requested R01 identifier does not occur in the generated station registry,
+the current DORTS route table or the checked TRTC route materials; the batch
+therefore uses R02–R07 rather than inventing an R01 page. The engineering volume
+uses construction-era R05–R10/O14 labels for these stations, while the current
+DORTS table uses operating R02–R07/O06/BR09 labels. Both were published as
+different code systems. No unverified research appendix was promoted.
+
+## Conflicts found
+
+The CR580B source reports one NT$8.272 billion package award and dates, but also
+states that Taipei 101 structural work had been awarded earlier and that this
+package covered its fit-out and systems. These are package-scope values, not a
+station-level contractor/final-account conflict. The engineering and current
+route tables publish different station codes because they measure construction
+and operating notation respectively; both values are retained.
+
+No claims baseline, test or checker was changed. The next batch is R08–R13,
+again six registered stations because the line has no R01.

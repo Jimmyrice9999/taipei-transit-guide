@@ -93,6 +93,176 @@ const dortsSpecialArchitecture = source(
   'The full engineering-book page documents Jiantan’s suspended roof, Beitou’s space truss and Tamsui’s reuse of the old TRA setting.',
 )
 
+const dortsXinyiDesignOverview = source(
+  'dorts-xinyi-dr148-design-overview',
+  'Xinyi Line DR148 station design overview',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page65.html',
+  'The full technical-journal page gives the Xinyi Line’s six-station corridor context, construction-era R05–R10 labels, underground island-platform forms, station sites and the “Metro Suite” design concept. The original-language passages beginning 臺北捷運信義線自羅斯福路 and 信義線整體建築設計構想 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiAnheDesign = source(
+  'dorts-xinyi-anhe-design',
+  'Xinyi Anhe station design',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page67.html',
+  'The full technical-journal page describes Xinyi Anhe’s “Life Melody” theme, boutique and furniture-street context, natural materials, dual-arch entrances, transparent glazing, entrance arrangement and the station’s construction-era R07 label. The original-language passages beginning 整體車站設計主題與構思 and 在出入口設計部分 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiAnheInterior = source(
+  'dorts-xinyi-anhe-interior',
+  'Xinyi Anhe station interior and ventilation design',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page68.html',
+  'The full technical-journal page describes Xinyi Anhe’s reduced ventilation-shaft form, warm colour palette, continuous wall-and-ceiling materials, lighting and beige granite floor. The original-language passages beginning 而車站營運所需之通風井 and 站體室內空間設計理念 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiTaipei101Design = source(
+  'dorts-xinyi-taipei101-design',
+  'Taipei 101/World Trade Center station design',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page70.html',
+  'The full technical-journal page describes the station’s trade, finance, commercial and leisure context, nearby Taipei World Trade Center and Taipei 101, surrounding offices and housing, the “Modern Movement” theme, entrance-to-plaza connection, transparent curved walls and day/night lighting. The original-language passages beginning 本站所處區位 and 本站設計主題與構思 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiXiangshanDesign = source(
+  'dorts-xinyi-xiangshan-design',
+  'Xiangshan station site and design concept',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page73.html',
+  'The full technical-journal page describes the Xiangshan site beside Zhongqiang Park, the park’s mature trees and facilities, Taipei tree-frog ecology, and the “Song of the Tree Frog” design concept. The original-language passages beginning 象山站(R05)位於信義路五段 and 因位處四獸山系象山山腳 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiXiangshanLandscape = source(
+  'dorts-xinyi-xiangshan-landscape',
+  'Xiangshan station landscape protection and entrances',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page74.html',
+  'The full technical-journal page records the retreat of above-ground facilities into a planted north landscape strip to protect tree-frog habitat, and describes the transparent entrance forms. The original-language passages beginning 台北樹蛙是中強公園地區的特色 and 出入口在設計手法上 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiXiangshanEntrances = source(
+  'dorts-xinyi-xiangshan-entrances',
+  'Xiangshan station entrance and public-space design',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page75.html',
+  'The full technical-journal page describes the reduced visual mass at entrances A and D, the open-space plaza at entrance B in Zhongqiang Park, the underground passage below the Xinyi branch, and the elevator placement. The original-language entries beginning 出入口A、D面臨 and 出入口B位於中強公園內 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiXiangshanInterior = source(
+  'dorts-xinyi-xiangshan-interior',
+  'Xiangshan station interior and tree-frog interpretation',
+  '都會組曲－信義線DR148標建築設計理念',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page77.html',
+  'The full technical-journal page describes the rainbow colour plan, tree-frog ceramic wall treatment, environmental-education display, urban and natural entrance imagery, and hand-crafted ceramic panels. The original-language passages beginning 象山站(R05)地下站體室內空間 and 出入口A朝臺北市區方向 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiCR580B = source(
+  'dorts-xinyi-cr580b-contract',
+  'CR580B Xinyi Line section contract and station works',
+  '捷運信義線土建施工－CR580B區段標之特殊施工及障礙處理',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page100.html',
+  'The full technical-journal page records CR580B’s 16 subcontracts, the joint-venture award, value, dates, R07/R06/R05 station construction scales, and the distinction between Taipei 101 structural work and later fit-out. The original-language passages beginning 捷運信義線CR580B區段標 and 二、車站工程規模 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiDaanDevelopment = source(
+  'dorts-xinyi-daan-development',
+  'Daan and Daan Park joint-development sites',
+  '臺北捷運聯合開發案例解析',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page17.html',
+  'The full technical-journal page records the Daan Park and Daan joint-development sites, their surroundings, private land, building sizes, transit-facility integration and completion/occupancy records. The original-language entries beginning 大安森林公園站（捷）二基地 and 大安站（捷）三基地 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsXinyiLandDevelopmentContext = source(
+  'dorts-xinyi-land-development-context',
+  'Xinyi Line joint-development delivery model',
+  '臺北捷運聯合開發案例解析',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page19.html',
+  'The full technical-journal page explains the land-acquisition constraint in the commercially intense corridor and the investor-built transit-facility model used at Daan Park and Daan to reduce completion uncertainty before the line opening. The original-language passages beginning 信義線沿線因商業規模 and 信義線大安森林公園站 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsDaanParkLandscape = source(
+  'dorts-xinyi-daan-park-landscape',
+  'Daan Park station landscape design',
+  '大安森林公園站地景設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page203.html',
+  'The full technical-journal paper describes the “forest transfer” concept, the integration of sunlight, greenery and water, native planting, habitat support, curved forms and water features linking the underground station to Daan Park. The original-language paragraphs beginning 捷運車站與都會公園結合 and 就景觀植栽而言 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsDaanParkStationDesign = source(
+  'dorts-xinyi-daan-park-station-design',
+  'Daan Park station architecture and landscape interface',
+  '大安森林公園站地景設計',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page205.html',
+  'The full technical-journal paper records Daan Park station’s site under Xinyi Road, its 25.8-hectare park edge, sunlight hall, sunken garden, light towers, multifunction plaza, opened concourse wall and the green-water-garden design axis. The original-language paragraphs beginning 捷運信義線大安森林公園站 and 大安森林公園站係將車站穿堂層側牆打開 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsDaanParkArtProject = source(
+  'dorts-xinyi-daan-park-art-project',
+  'Daan Park, Daan and Xinyi Anhe public-art project',
+  '大安森林的公共藝術饗宴－兼論信義線沿線美質環境與藝術場域',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page222.html',
+  'The full technical-journal paper records the coordinated three-station public-art plan, its NT$22.5 million budget, October 2011 open selection, completion by the end of 2013 and the ecological design brief. The original-language paragraphs beginning 捷運局期待信義線的大安森林公園站 and 全案所有作品 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsCK570H = source(
+  'dorts-xinyi-ck570h-contract',
+  'CK570H Dongmen station and tunnel section',
+  '臺北捷運信義線CK570H區段標施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html',
+  'The full technical-journal page records CK570H’s cut-and-cover Dongmen station, shield-tunnel lengths, common tunnel, site dimensions, excavation depth and construction method. The original-language passages beginning CK570H區段標包含 and 車站位於金山南路 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsCK570HConstruction = source(
+  'dorts-xinyi-ck570h-construction',
+  'CK570H Dongmen station structural and architectural works',
+  '臺北捷運信義線CK570H區段標施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html',
+  'The full technical-journal page records Dongmen’s deep diaphragm wall, building-protection measures, double-wall SRC structure, ventilation constraints, finish materials, wayfinding floor and integrated system information counter. The original-language passages beginning 車站建物保護施工 and 車站及出入口建築裝修 were checked on the linked page.',
+  '2026-08-18',
+)
+
+const dortsCK570HTunnel = source(
+  'dorts-xinyi-ck570h-tunnel-intersection',
+  'CK570H four-tunnel intersection and settlement control',
+  '臺北捷運信義線CK570H區段標施工',
+  dortsPublisher,
+  'https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page84.html',
+  'The full technical-journal page records the 113-metre four-tunnel intersection, cover depths, tunnel clearances, construction order, ground improvement, supports for the earlier tunnel and measured settlement. The original-language passages beginning 交會區呈一狹長之形狀 and 四條隧道交會區各隧道環片 were checked on the linked page.',
+  '2026-08-18',
+)
+
 const dortsDepot = source(
   'dorts-tamsui-xinyi-depot',
   'Tamsui–Xinyi Line depot planning',
@@ -255,6 +425,7 @@ type RData = {
   engineeringHistorySource?: Source
   interchange?: { label: string; lineCode?: string }
   branch?: { label: string; source: Source }
+  proseSources?: Source[]
   prose?: StationProseSentence[]
 }
 
@@ -271,7 +442,26 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 1 and 2, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift; parent/accessible toilet and baby changing at the same location; bicycle access open; enquiry point near exits 1 and 2.',
     landmarks: '象山公園; 信義快速道路', publicArt: '心蛙朵朵開 — 江洋輝、麻粒國際文化試驗股份有限公司; stainless steel and epoxy resin; 2013.', publicArtSource: art.xiangshan,
     engineeringHistory: tbc, interchange: undefined,
+    proseSources: [
+      dortsXinyiDesignOverview,
+      dortsXinyiCR580B,
+      dortsXinyiXiangshanDesign,
+      dortsXinyiXiangshanLandscape,
+      dortsXinyiXiangshanEntrances,
+      dortsXinyiXiangshanInterior,
+    ],
     prose: [
+      { text: 'The current DORTS station table identifies Xiangshan as R02 with engineering code R5, while the DR148 design article uses the construction-era label R05 for the same station.', source: dortsXinyi.id },
+      { text: 'That article places the station east of Songren Road and west of the Xinyi branch exit of the National Freeway, at the foot of Xiangshan beside Zhongqiang Park.', source: dortsXinyiXiangshanDesign.id },
+      { text: 'It records an underground two-level island-platform station with three entrances, and describes Zhongqiang Park as a mature recreational landscape with trees, sports facilities and morning runners.', source: dortsXinyiDesignOverview.id },
+      { text: 'The park setting also brought a specific ecological constraint: the Taipei tree frog breeds in the area, so the design treated existing trees and the park’s dense woodland as a protective screen.', source: dortsXinyiXiangshanDesign.id },
+      { text: 'CR580B’s station record gives the R05 construction label a body about 220 metres long and 21.8 metres wide, with a 22.4-metre excavation, three entrances and two ventilation shafts.', source: dortsXinyiCR580B.id },
+      { text: 'The contract article records CR580B as a 16-subcontract section awarded on 23 May 2005 to the Taiwan Obayashi–Mutual Construction joint venture for NT$8.272 billion, opened on 1 July 2005 and completed with the line on 23 November 2013.', source: dortsXinyiCR580B.id },
+      { text: 'To reduce the impact on the frog habitat, the ventilation shafts, cooling tower and small underground-substation lifting opening were concentrated in a planted landscape strip on the north side of Xinyi Road instead of being scattered through the park.', source: dortsXinyiXiangshanLandscape.id },
+      { text: 'Entrances A and D were designed with reduced visual mass and continuous planting, while entrance B sits inside Zhongqiang Park with a shaded waiting plaza, seats and an underground passage beneath the Xinyi branch.', source: dortsXinyiXiangshanEntrances.id },
+      { text: 'The entrance language uses curved, lightweight transparent glass so daylight reaches the passage by day and the entrance becomes an urban light form at night.', source: dortsXinyiXiangshanLandscape.id },
+      { text: 'Inside, the station’s main colour plan is a rainbow, with tree-frog ceramic wall panels and an environmental-education display linking the underground space to the protected habitat outside.', source: dortsXinyiXiangshanInterior.id },
+      { text: 'The interior programme separates the urban imagery toward the city from frog, butterfly and child imagery toward the park, and carries the same distinction to the platform-level art walls.', source: dortsXinyiXiangshanInterior.id },
       { text: 'DORTS describes Xiangshan’s work as a tree-frog and childhood-memory composition that represents the richness of the local natural environment and invites visitors to experience its distinctive ecology.', source: art.xiangshan.id },
     ],
   },
@@ -282,7 +472,18 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 3 and 5, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift and unpaid toilets near exit 4/Taipei 101 passage; nursing room near exits 4 and 5; baby changing; bicycle access open; enquiry point near exits 3–5.',
     landmarks: '台北101; 世貿一館', publicArt: '相遇時刻 — 黃心健; interactive mechanical, computer, sensor, network, glass and stainless-steel work; 2013.', publicArtSource: art.taipei101,
     engineeringHistory: tbc,
+    proseSources: [dortsXinyiDesignOverview, dortsXinyiTaipei101Design, dortsXinyiCR580B],
     prose: [
+      { text: 'The current DORTS station table identifies Taipei 101/World Trade Center as R03 with engineering code R6, while the DR148 article labels the station R06.', source: dortsXinyi.id },
+      { text: 'The design article places it below Xinyi Road between City Hall Road and Zhuangjing Road, in a district where trade, finance, commerce, leisure and entertainment operate together.', source: dortsXinyiTaipei101Design.id },
+      { text: 'Taipei World Trade Center and Taipei 101 stand immediately to the north, while department-store, cinema, office, headquarters and large-residential developments fill the surrounding five-minute walking catchment described by DORTS.', source: dortsXinyiTaipei101Design.id },
+      { text: 'DORTS says that concentration of activity gave the station an important role in the Xinyi planning district and was expected to produce high use of the metro facilities.', source: dortsXinyiTaipei101Design.id },
+      { text: 'The design theme is Modern Movement, framed as a space for dialogue with the world through the presence of the trade centre and Taipei 101.', source: dortsXinyiTaipei101Design.id },
+      { text: 'Four entrances are placed on both sides of Xinyi Road, with a separate E passage connecting toward the Taipei 101 plaza.', source: dortsXinyiTaipei101Design.id },
+      { text: 'Their curved transparent walls continue the station family’s light, abstract sculptural language and use the movement of escalator passengers to create visual interaction with the trade centre and financial centre.', source: dortsXinyiTaipei101Design.id },
+      { text: 'DORTS describes the daytime effect as sunlight passing through glass and the lightweight internal structure, and the night effect as four urban light forms joining the surrounding commercial district.', source: dortsXinyiTaipei101Design.id },
+      { text: 'The CR580B record says the R06 station’s structural work had already been awarded in ROC 91, so that section contract carried only the building fit-out, water and electrical, environmental-control and mechanical-system work for Taipei 101 station.', source: dortsXinyiCR580B.id },
+      { text: 'The same contract record identifies the R06 construction-era station as an underground two-level island-platform station with five entrances, keeping the structural package distinction separate from the current R03 code.', source: dortsXinyiCR580B.id },
       { text: 'The Taipei 101 station record describes a 100-metre entrance passage where twelve book-like, kinetic flip-card installations use interaction to connect two imagined futures.', source: art.taipei101.id },
       { text: 'DORTS records the work as the result of an invited competition with a cost of NT$12 million.', source: art.taipei101.id },
     ],
@@ -294,7 +495,18 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 2A and 5, plus a paid-concourse platform lift; paid-concourse toilets by the platform lift; parent/accessible toilet and baby changing at that location; bicycle access open; enquiry point near exits 3–5.',
     landmarks: '安和路派出所', publicArt: '水城臺北 — 吳耿禎; laminated tempered glass; year TBC.', publicArtSource: art.xinyiAnhe,
     engineeringHistory: tbc,
+    proseSources: [dortsXinyiDesignOverview, dortsXinyiAnheDesign, dortsXinyiAnheInterior, dortsXinyiCR580B],
     prose: [
+      { text: 'The current DORTS station table identifies Xinyi Anhe as R04 with engineering code R7, while the DR148 design article labels the station R07.', source: dortsXinyi.id },
+      { text: 'The full station record places it beneath the Xinyi Road–Anhe Road intersection as an underground two-level island-platform station with five entrances.', source: dortsXinyiDesignOverview.id },
+      { text: 'CR580B gives the construction-era R07 station a body about 209.8 metres long and 29.5 metres wide, a 21.5-metre excavation and two ventilation shafts.', source: dortsXinyiCR580B.id },
+      { text: 'Its design theme is Life Melody, drawn from Xinyi Anhe Road’s refined street windows and the evening meeting and resting culture of the surrounding neighbourhood.', source: dortsXinyiAnheDesign.id },
+      { text: 'DORTS connects that theme to the nearby boutique shops and furniture street, using natural materials, light and hand-crafted art to make the underground station echo the street’s more leisurely character.', source: dortsXinyiAnheDesign.id },
+      { text: 'The four main entrances on Xinyi and Anhe Roads, plus the northern development entrance D, use paired curved arches intended to suggest a streamlined form rising from underground.', source: dortsXinyiAnheDesign.id },
+      { text: 'Transparent full-height curved glass allows daylight into the underground passage and changes the station into a colourful, polished urban way-station after dark.', source: dortsXinyiAnheDesign.id },
+      { text: 'The ventilation shafts were reduced and integrated with the road form, using an up-blast arrangement and a 1.8-metre parapet to keep the equipment out of ordinary pedestrian sightlines.', source: dortsXinyiAnheInterior.id },
+      { text: 'A warm colour palette and planting were selected to blend the above-ground objects into the street, while the interior uses continuous wall-and-ceiling materials, lighting changes and beige granite flooring to carry the same atmosphere below grade.', source: dortsXinyiAnheInterior.id },
+      { text: 'CR580B contained 16 subcontracts and was awarded to the Taiwan Obayashi–Mutual Construction joint venture for NT$8.272 billion after the 23 May 2005 bid opening, with work beginning on 1 July 2005 and the line completed on 23 November 2013.', source: dortsXinyiCR580B.id },
       { text: 'For Xinyi Anhe, the artwork treats the paid/unpaid concourse barrier as a meeting point between old Taipei waterways and a future city of plants, streets and imagined planets.', source: art.xinyiAnhe.id },
     ],
   },
@@ -305,7 +517,18 @@ const rData: Record<string, RData> = {
     facilities: 'R accessible lift: exit 3 and a paid-concourse platform lift; toilets in the paid zone by exit 3 and transfer connection; parent/accessible toilet at the same location; nursing room in the paid B1 area; baby changing; bicycle access not open; enquiry point near R exits 1–3.',
     landmarks: '台北農會信義大樓; 師大附中', publicArt: '飛天傳奇 — 賴純純; ceramic panels, stainless steel and acrylic glass; year TBC.', publicArtSource: art.daan,
     engineeringHistory: tbc, interchange: { label: 'Bannan Line; transfer mode: TBC', lineCode: 'BR' },
+    proseSources: [dortsXinyiDesignOverview, dortsXinyiDaanDevelopment, dortsXinyiLandDevelopmentContext, dortsDaanParkArtProject],
     prose: [
+      { text: 'The current DORTS station table identifies Daan as R05/BR09 with engineering code R8, while the Xinyi design article uses the construction-era label R08/BR5.', source: dortsXinyi.id },
+      { text: 'The same design overview places Daan inside the six-station Xinyi corridor that moves between financial and commercial centres, mixed residential frontage and urban green space before reaching Xiangshan.', source: dortsXinyiDesignOverview.id },
+      { text: 'The Daan joint-development site occupies the block between Xinyi Road Section 3, Jianguo South Road and Fuxing South Road, with Shida Affiliated High School on the west and the Wenhu Line Daan interchange at the site.', source: dortsXinyiDaanDevelopment.id },
+      { text: 'DORTS records the parcel as privately owned and only 890 square metres, with a 15-storey, four-basement commercial building that received its occupancy permit in 2012.', source: dortsXinyiDaanDevelopment.id },
+      { text: 'The R-line entrance was built into the west side of that building, while the building also had to accommodate the station facilities and a roof cooling tower within a very small development footprint.', source: dortsXinyiDaanDevelopment.id },
+      { text: 'The technical account presents the site as an example of the difficulty of acquiring land and making large developments in a commercially intense corridor.', source: dortsXinyiLandDevelopmentContext.id },
+      { text: 'Daan and Daan Park used an investor-built transit-facility model in which entrances, ventilation shafts and related structures were handed to the development investor to build before the Xinyi Line opened.', source: dortsXinyiLandDevelopmentContext.id },
+      { text: 'DORTS says that arrangement reduced uncertainty between the completion of the metro facilities and the joint-development buildings, a practical constraint that sits behind the station’s compact urban footprint.', source: dortsXinyiLandDevelopmentContext.id },
+      { text: 'A separate DORTS public-art paper treats Daan, Daan Park and Xinyi Anhe as one coordinated project, budgeted at NT$22.5 million, selected through an open call in October 2011 and installed by the end of 2013.', source: dortsDaanParkArtProject.id },
+      { text: 'That project’s stated brief was to make the three stations speak with nature and local human experience rather than treating their artworks as unrelated interior decoration.', source: dortsDaanParkArtProject.id },
       { text: 'The Daan station artwork is presented as a poetic journey through mountains, water and the city, moving from morning to night through light, sound, love and imagined space.', source: art.daan.id },
     ],
   },
@@ -316,7 +539,20 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lifts: exits 4–6 and a paid-concourse platform lift; unpaid toilets near exits 3 and 5; parent/accessible toilet at the same locations; nursing room near exit 3; baby changing; bicycle access open; enquiry point near exits 4–6.',
     landmarks: '大安森林公園; 產業發展署', publicArt: '大安之花 — Pete Beeman; stainless steel, powder-coated iron and aluminium; year TBC. 秋葉旅人 — Yvan Mauger; stainless steel, forged copper and aluminium; year TBC. 春光乍現 — 林舜龍; cast aluminium, copper, stainless steel, glass mosaic and stone mosaic; year TBC. 四季 — 柴清文; cypress and stone paint; year TBC.', publicArtSource: art.daanPark,
     engineeringHistory: tbc,
+    proseSources: [dortsXinyiDesignOverview, dortsXinyiDaanDevelopment, dortsDaanParkLandscape, dortsDaanParkStationDesign, dortsDaanParkArtProject],
     prose: [
+      { text: 'The current DORTS station table identifies Daan Park as R06 with engineering code R9, while the DR147/148 design overview uses the construction-era label R09.', source: dortsXinyi.id },
+      { text: 'The station lies below Xinyi Road Section 3 between Xinsheng South Road and Jianguo South Road, immediately beside the 25.8-hectare Daan Forest Park.', source: dortsDaanParkStationDesign.id },
+      { text: 'The original surface plan would have placed entrances and ventilation objects along the park’s northern pavement, but the detailed design changed direction because the site contained a rare large urban forest landscape.', source: dortsDaanParkStationDesign.id },
+      { text: 'The resulting concept brings sunlight and greenery into the underground station through a sunlight hall, sunken garden, light corridor and light towers, with different levels used to create a gradual transition between park and platform.', source: dortsDaanParkStationDesign.id },
+      { text: 'Opening the side wall of the concourse connects the sunlight hall and multifunction plaza to the sunken garden above it, reducing the physical distance between the station and the park.', source: dortsDaanParkStationDesign.id },
+      { text: 'The landscape paper calls this “Forest Transfer—Dialogue between City and Park” and treats sunlight, air and water as the three life-supporting elements that connect the station to the park.', source: dortsDaanParkLandscape.id },
+      { text: 'Its planting plan respects the park’s existing forest and Taiwanese native trees, adds seasonal native plants, and uses nectar and bird-attracting species to increase habitat layers.', source: dortsDaanParkLandscape.id },
+      { text: 'The hardscape follows the same ecological language through curved forms, waterfalls, water curtains, jumping fountains, mist and a gently planted slope leading back into the park.', source: dortsDaanParkLandscape.id },
+      { text: 'The joint-development record gives Daan Park a private 2,994-square-metre site with a 29-storey, five-basement building, and places the station’s Exit 6 on the west side of the development.', source: dortsXinyiDaanDevelopment.id },
+      { text: 'That development set the building back 12 metres from Xinyi Road and used matching tones and materials for the transit facilities so that the entrance and building read as one urban edge.', source: dortsXinyiDaanDevelopment.id },
+      { text: 'The coordinated Daan Park, Daan and Xinyi Anhe public-art project was selected through an open call in October 2011 with a NT$22.5 million budget and was completed by the end of 2013.', source: dortsDaanParkArtProject.id },
+      { text: 'DORTS frames the project as a way to make the park’s ecology and public memory legible through a station that is also a civic landscape, not simply a buried transport box.', source: dortsDaanParkArtProject.id },
       { text: 'At Daan Park, the interactive Daan Flower uses Taipei’s azalea as its subject and asks the observer to awaken the flower, making the station’s park setting part of the work’s conversation between people and nature.', source: art.daanPark.id },
     ],
   },
@@ -327,6 +563,23 @@ const rData: Record<string, RData> = {
     facilities: 'Accessible lift: exit 8 and a paid-concourse platform lift; unpaid toilets near exit 6 and paid toilets by the platform lift; parent/accessible toilet by the platform lift; nursing room near exits 6–8; baby changing; bicycle access open; enquiry point near exits 4–8.',
     landmarks: '東門郵局', publicArt: tbc,
     engineeringHistory: tbc, interchange: { label: 'Zhonghe–Xinlu Line; transfer mode: TBC', lineCode: 'O' },
+    proseSources: [dortsXinyiDesignOverview, dortsCK570H, dortsCK570HConstruction, dortsCK570HTunnel],
+    prose: [
+      { text: 'The current DORTS station table identifies Dongmen as R07/O06 with engineering code R10, while the Xinyi design overview labels the station R10/014.', source: dortsXinyi.id },
+      { text: 'The technical overview places Dongmen at the western end of the six-station Xinyi section, where the route continues from the Zhongzheng Memorial Hall area along Xinyi Road toward Xiangshan.', source: dortsXinyiDesignOverview.id },
+      { text: 'CK570H included the cut-and-cover Dongmen station, four shield-driven metro tunnels and one common utility tunnel, combining the station with the difficult interface between the Xinyi and Zhonghe–Xinlu systems.', source: dortsCK570H.id },
+      { text: 'The station lies below Xinyi Road Section 2 between Jinshan South Road and Yongkang Street, measures about 216 metres by 25 metres, reaches roughly 32 metres deep and uses a cut-and-cover box structure.', source: dortsCK570H.id },
+      { text: 'The Xinyi tunnels from Zhongzheng Memorial Hall to Dongmen total about 2,445.1 metres across the two directions, while the shared tunnel through the memorial-park area totals 810.82 metres.', source: dortsCK570H.id },
+      { text: 'Because the excavation reached the water-bearing Songshan gravel formation, the project used a 72-metre-deep diaphragm wall through 28 metres of gravel to an impermeable layer rather than relying only on pumping and a shallow cutoff.', source: dortsCK570H.id },
+      { text: 'The construction paper says that wall system was intended to control uplift from groundwater and avoid overloading the normal drainage system during the flood season.', source: dortsCK570H.id },
+      { text: 'Building protection was designed around predicted settlement: the station used an internal 100-centimetre-thick buttress diaphragm wall to reduce lateral movement while excavation proceeded, even though the measure added work and time.', source: dortsCK570HConstruction.id },
+      { text: 'The main station structure is described as a double-wall SRC system built top-down, with the constrained site forcing ventilation facilities into Lianyun Street and Lane 114 rather than leaving a broad surface footprint.', source: dortsCK570HConstruction.id },
+      { text: 'Its interior uses directional granite floor patterns, enamel panels, perforated aluminium ceilings and special translucent panels, while the platform wall carries cut-metal art panels with flowers, grasses and birds that DORTS links to the existing Dongmen commercial area.', source: dortsCK570HConstruction.id },
+      { text: 'The station’s information counters also had to be resized because the Zhonghe–Xinlu and Xinyi system suppliers were different companies and the combined waterproof-gate and water-level-monitoring equipment would not fit the original counter enclosure.', source: dortsCK570HConstruction.id },
+      { text: 'The most complex section was a 113-metre four-tunnel intersection, where the tunnel clearances ranged from 2.93 to 5.42 metres and the two Xinyi tunnels had to pass before the overlying Zhonghe–Xinlu tunnels.', source: dortsCK570HTunnel.id },
+      { text: 'Ground improvement, steel supports for the completed lower tunnels and continuous monitoring were used to control settlement; the reported completed settlement was about 1.8–2.1 centimetres against a pre-construction maximum prediction of 1.6 centimetres.', source: dortsCK570HTunnel.id },
+      { text: 'The full CK570H pages establish the station package, method, dimensions and tunnel-interface risks but do not identify an individual contractor, award date or final station-package value; those fields remain TBC.', source: dortsCK570H.id },
+    ],
   },
   R08: {
     structure: 'underground', exits: 7, openingDate: '24 December 1998', openingSource: dortsRoute, structureSource: dortsXinyi,
@@ -512,6 +765,7 @@ function makeResearch(code: string, data: RData): StationResearch {
     ...(data.platformSource ? [data.platformSource] : []),
     ...(data.publicArtSource ? [data.publicArtSource] : []),
     ...(data.engineeringHistorySource ? [data.engineeringHistorySource] : []),
+    ...(data.proseSources ?? []),
     ...(data.interchange ? [] : []),
   ].filter((entry, index, all) => all.findIndex((other) => other.id === entry.id) === index)
 

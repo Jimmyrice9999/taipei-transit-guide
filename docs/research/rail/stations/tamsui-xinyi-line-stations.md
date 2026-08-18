@@ -318,6 +318,308 @@ This final four-station audit closes the R-line station-prose pass: all R
 pages now have a recorded sourced result, with no unreviewed empty page left
 in the line’s station sequence.
 
+### Station-prose audit — R02–R07 deepening batch, 18 August 2026
+
+The registry contains six pages in the requested first batch only when the
+actual line sequence is used: R02–R07. There is no R01 in the generated TDX
+station registry, the current DORTS station table or the full TRTC station-page
+map. The six pages were therefore deepened as Xiangshan, Taipei 101/World Trade
+Center, Xinyi Anhe, Daan, Daan Park and Dongmen. The prior pass had only one or
+two public-art sentences on R02–R06 and no body prose on R07.
+
+#### DR148 design overview and construction-era labels
+
+**Source:** “Xinyi Line DR148 station design overview” / `都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence because the full technical-journal article gives the station sequence, sites, station forms and design rationale.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page65.html
+
+Original-language text checked in full:
+
+> `臺北捷運信義線自羅斯福路上的新店線－中正紀念堂站往東 ... 沿線共設東門站（R10/014）、大安森林公園站（R09）、大安站（R08/BR5）、信義安和站（R07）、台北101/世貿站（R06）、象山站（R05）等六個車站。`
+
+> `信義線整體建築設計構想採都會組曲理念 ... 呈現信義線國際化與在地化、商區與住宅、街道與公園等之特性。`
+
+This source establishes the construction-era R05–R10 labels, the six-station
+design scope and the “Metro Suite” approach. The current DORTS project page
+uses the operating labels R02–R07 and engineering labels R5–R10, so the two
+numbering systems are kept separate.
+
+URL: https://www.dorts.gov.taipei/cp.aspx?n=0ac527d5fc9e596a&s=CB7BC86DBDA1E44D
+
+Original-language text checked in full:
+
+> `R02象山 | R5 ... R03台北101/世貿 | R6 ... R04信義安和 | R7 ... R05/BR09大安 | R8 ... R06大安森林公園 | R9 ... R07/O06東門 | R10`
+
+> `本路線中正紀念堂站至象山站於102年10月13日初勘、102年11月8日履勘、於102年11月24日通車。`
+
+#### CR580B package and Xiangshan, Taipei 101 and Xinyi Anhe
+
+**Source:** “CR580B Xinyi Line section contract and station works” /
+`捷運信義線土建施工－CR580B區段標之特殊施工及障礙處理` — DORTS,
+PRIMARY, High confidence because the full article records the tender, joint
+venture, value, dates and station construction records.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page100.html
+
+Original-language text checked in full:
+
+> `本區段標經本局南區工程處於94年5月23日開標後，由日商華大林組營造股份有限公司台灣分公司／互助營造股份有限公司聯合承攬以新臺幣82億7,200萬元整得標，並於94年7月1日開工、102年11月23日信義線全線完工通車。`
+
+> `R07信義安和站：地下二層島式月台車站 ... 車站長約209.8公尺，寬29.5公尺，開挖深度21.5公尺。`
+
+> `R06台北101/世貿站：結構工程已於91年發包，本區段標僅施作本站建築裝修、水電環控及機電系統。`
+
+> `R05象山站：地下二層島式月台車站 ... 車站長約220公尺，寬21.8公尺，開挖深度22.4公尺。`
+
+This establishes a package-level contractor, award value and dates, but not an
+individual station contractor or station-level final account. It also records
+that Taipei 101’s structure had already been awarded before CR580B’s fit-out
+scope.
+
+#### Xinyi Anhe design
+
+**Source:** “Xinyi Anhe station design” / `都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page67.html
+
+Original-language text checked in full:
+
+> `整體車站設計主題與構思採用生活旋律（創造與社區對話的櫥窗意象）為主軸 ... 信義安和站抽取周邊環境元素與街道意象充分結合。`
+
+> `本站於安和路與信義路側設置A、B、C1、C2四個出入口（另於北側聯開設有出入口D） ... 以優美雙拱形曲面結合。`
+
+**Source:** “Xinyi Anhe station interior and ventilation design” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page68.html
+
+Original-language text checked in full:
+
+> `車站營運所需之通風井，其量體也考量隱含於道路路型整體規劃，採用上吹式並減體減量設計，以1.8米高度女兒牆遮掩行人視線。`
+
+> `牆面與天花以同樣材質一體成形 ... 車站地坪以米黃色崗石地磚為主要基調。`
+
+These sources establish the station-specific “Life Melody” theme, street and
+material context, curved entrance forms, ventilation treatment and interior
+finish strategy.
+
+#### Taipei 101/World Trade Center design
+
+**Source:** “Taipei 101/World Trade Center station design” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page70.html
+
+Original-language text checked in full:
+
+> `本站所處區位為貿易、金融、商業、休閒、娛樂、商務等活動鼎盛之區域，車站北側緊鄰台北世界貿易中心及台北101大樓。`
+
+> `本站設計主題與構思採用現代樂章（創造與世界對話的空間氛圍）為主軸。`
+
+> `本站於信義路兩側設置A、B、C、D四個出入口（另設置有E通道與台北101大樓廣場連通）。`
+
+> `延續信義安和站理念以單曲面及垂直牆面的構造與輕量透明的玻璃外牆 ... 白天 ... 自然的光之組曲；入夜後四個都市光體 ... 塑造 ... 都市夜景。`
+
+This establishes the station’s commercial and financial catchment, the “Modern
+Movement” design theme, the Taipei 101 plaza passage, and the transparent
+day/night entrance treatment.
+
+#### Xiangshan design, habitat protection and interior
+
+**Source:** “Xiangshan station site and design concept” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page73.html
+
+Original-language text checked in full:
+
+> `象山站(R05)位於信義路五段，松仁路以東及北二高信義支線出口以西之間，站體兩側設置A、B、D三個出入口 ... 出入口B則位於中強公園內西側。`
+
+> `因位處四獸山系象山山腳 ... 鄰近台北特有保育動物台北樹蛙棲息繁殖之生態區域，為此開發建設需考量與環境結合，以減少環境衝擊。`
+
+**Source:** “Xiangshan station landscape protection and entrances” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page74.html
+
+Original-language text checked in full:
+
+> `通風井、冷卻水塔及地下變電站小型吊裝口等設施集中設置於北側臨信義路車行地下道邊的景觀帶區域之內，以景觀植栽綠化圍覆 ... 保存園內濃密樹林作為保護樹蛙之屏障。`
+
+**Source:** “Xiangshan station entrance and public-space design” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page75.html
+
+Original-language text checked in full:
+
+> `出入口B位於中強公園內 ... 營造出一個旅客進出等候的廣場空間，提供樹蔭及座椅 ... 並設穿越信義支線下方之地下連通道。`
+
+**Source:** “Xiangshan station interior and tree-frog interpretation” /
+`都會組曲－信義線DR148標建築設計理念` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page77.html
+
+Original-language text checked in full:
+
+> `象山站(R05)地下站體室內空間以彩虹為主要色彩計畫，並以樹蛙意象之燒陶壁飾為主，同時設置展示樹蛙之環保教育櫥窗。`
+
+These sources establish the park interface, habitat-protection layout, entrance
+plaza and passage, rainbow and tree-frog interior interpretation.
+
+#### Daan and Daan Park joint development
+
+**Source:** “Daan and Daan Park joint-development sites” /
+`臺北捷運聯合開發案例解析` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page17.html
+
+Original-language text checked in full:
+
+> `大安森林公園站（捷）二及大安站（捷）三基地採用此種捷運設施委由該用地投資人興建的模式。`
+
+> `大安站（捷）三基地 ... 基地面積為890m2 ... 建築規模為地上15層地下4層 ... 於101年領得使用執照。`
+
+> `另捷運站1號出入口設置於基地西側並與大樓採共構方式興建。`
+
+> `大安森林公園站（捷）二基地 ... 基地面積2,994m2 ... 建築規模為地上29層地下5層 ... 於99年領得使用執照。`
+
+**Source:** “Xinyi Line joint-development delivery model” /
+`臺北捷運聯合開發案例解析` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page19.html
+
+Original-language text checked in full:
+
+> `信義線沿線因商業規模較為繁盛，土地取得及進行大規模的開發已臻不易。`
+
+> `信義線大安森林公園站（捷）二及大安站（捷）三基地 ... 將捷運出入口、通風口或其他相關附屬設施 ... 由其興建，並要求於信義線通車時程前完成，此種委建模式可減低捷運設施與大樓地下結構體完工時程的不確定性。`
+
+These sources establish the two small urban development interfaces, their
+dimensions and occupancy timing, and the investor-built transit-facility model.
+
+#### Daan Park landscape and coordinated public art
+
+**Source:** “Daan Park station landscape design” / `大安森林公園站地景設計` —
+DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page203.html
+
+Original-language text checked in full:
+
+> `捷運車站與都會公園結合是本案特色。以「森林轉運-都會與公園對話」為主題構想。`
+
+> `捷運車站在陽光、空氣、水三大要素下產生生命力並與整座綠意盎然的大安森林公園結合。`
+
+**Source:** “Daan Park station architecture and landscape interface” /
+`大安森林公園站地景設計` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page205.html
+
+Original-language text checked in full:
+
+> `捷運信義線大安森林公園站，位於新生南路與建國南路間之信義路三段道路下方 ... 南側緊鄰大安森林公園。`
+
+> `設計構想包含陽光大廳、下凹庭園、光廊、光塔等 ...`
+
+> `大安森林公園站係將車站穿堂層側牆打開引進陽光與大安森林公園綠意。`
+
+**Source:** “Daan Park, Daan and Xinyi Anhe public-art project” /
+`大安森林的公共藝術饗宴－兼論信義線沿線美質環境與藝術場域` — DORTS,
+PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page222.html
+
+Original-language text checked in full:
+
+> `捷運局期待信義線的大安森林公園站、大安站與安和站為一整體規劃之公共藝術設置及節慶，因而編列兩千兩百五十萬經費，於100年十月期間以公開徵選最佳策劃及創作提案。`
+
+> `全案所有作品並在102年底安裝完成順利開幕。`
+
+These sources establish Daan Park’s station/park interface, landscape devices,
+native planting and the coordinated three-station public-art project. The art
+paper is used as primary institutional evidence for the project scope and
+budget; the station-specific artwork pages remain the evidence for individual
+work descriptions.
+
+#### CK570H Dongmen construction
+
+**Source:** “CK570H Dongmen station and tunnel section” /
+`臺北捷運信義線CK570H區段標施工` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html
+
+Original-language text checked in full:
+
+> `工程規模包含1座明挖覆蓋東門車站（O14/R10）及4條捷運潛盾鑽掘隧道、1條共管潛盾鑽掘隧道。`
+
+> `車站位於金山南路至永康街間之信義路二段道路下方，車站長約216m、寬度25m，開挖深度約32m，採用明挖覆蓋工法施工之箱型結構。`
+
+> `信義線隧道 ... 合計長約2,445.1m，共管隧道 ... 長度合計810.82m。`
+
+> `東門站站體開挖深度達32m ... 改採72m深連續壁貫穿28m厚礫石層至不透水層。`
+
+**Source:** “CK570H Dongmen station structural and architectural works” /
+`臺北捷運信義線CK570H區段標施工` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page83.html
+
+Original-language text checked in full:
+
+> `基於增加連續壁厚度、勁度，減少地盤變形 ... 站內開挖區施作100公分厚扶壁連續壁。`
+
+> `主體工程為雙牆SRC結構，採順打工法施工，結構尺寸約寬25m×長216m×深32m。`
+
+> `車站穿堂層兩端設有方向性花崗石地坪圖案 ... 軌道側牆板 ... 剪紙「金屬鏤空藝術牆板」 ... 出入口使用具現代感之造型鋼構及具視覺穿透之玻璃材質。`
+
+**Source:** “CK570H four-tunnel intersection and settlement control” /
+`臺北捷運信義線CK570H區段標施工` — DORTS, PRIMARY, High confidence.
+
+URL: https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page84.html
+
+Original-language text checked in full:
+
+> `交會區呈一狹長之形狀，長度約為113m。`
+
+> `四條隧道交會區各隧道環片到環片最接近處淨距分別為： ... 2.93m ... 3.96m ... 5.42m ... 5.16m。`
+
+> `為保護建物避免沉陷量過大，於四條隧道交會區實施大範圍之地盤改良。`
+
+These sources establish Dongmen’s cut-and-cover station, deep diaphragm-wall
+method, building-protection measures, finishes, tunnel lengths and the
+four-tunnel intersection’s sequence and settlement controls.
+
+### Station-by-station disposition for the R02–R07 batch
+
+- **R02 Xiangshan:** The current/engineering code distinction, Zhongqiang Park
+  site, tree-frog habitat constraint, CR580B station dimensions and package
+  dates, protected landscape strip, entrance plaza, interior theme and existing
+  art narrative are established. An individual station contractor, station-
+  level final account, rename history and feeder-bus prose remain TBC.
+- **R03 Taipei 101/World Trade Center:** The current/engineering code
+  distinction, commercial and financial catchment, Modern Movement theme,
+  Taipei 101 passage, transparent entrance design, CR580B fit-out distinction
+  and existing art record are established. The station’s earlier structural
+  contractor and final value are not published in the checked pages.
+- **R04 Xinyi Anhe:** The current/engineering code distinction, site, station
+  dimensions, Life Melody design, ventilation and interior treatment, CR580B
+  package history and existing public-art narrative are established. No
+  individual station contractor, award date or final station account is
+  established.
+- **R05 Daan:** The current/engineering code distinction, compact joint-
+  development site, Wenhu interchange interface, investor-built facility model
+  and coordinated three-station art project are established. The individual
+  civil/architecture contractor and final station account are TBC.
+- **R06 Daan Park:** The current/engineering code distinction, park-edge site,
+  sunlight/greenery/water design, native planting, joint-development interface
+  and coordinated art project are established. No station-specific civil
+  contractor, final station account or rename history is established.
+- **R07 Dongmen:** The current/engineering code distinction, CK570H package,
+  cut-and-cover method, deep diaphragm wall, four-tunnel intersection, finishes
+  and settlement controls are established. The checked art material did not
+  yield a confirmed station-specific artwork, and no individual contractor,
+  award date or final station account is established.
+
 ### Engineering and landmarks
 
 The official engineering-book page documents Jiantan’s suspended column-free
@@ -352,6 +654,25 @@ road name alone is not promoted to a landmark.
    engineering pages do not publish a specific Xinbeitou opening date. The
    station page therefore shows TBC; no main-line date was copied onto the
    branch by inference.
+
+4. **Construction-era versus operating station codes.** The DR148 design
+   overview labels the eastern stations as R05 Xiangshan, R06 Taipei 101, R07
+   Xinyi–Anhe, R08/BR5 Daan, R09 Daan Park and R10/O14 Dongmen. The current DORTS
+   route table labels the same operating sequence R02 Xiangshan, R03 Taipei
+   101/World Trade Center, R04 Xinyi–Anhe, R05/BR09 Daan, R06 Daan Park and
+   R07/O06 Dongmen. Both are published values: the first is the engineering
+   volume’s construction-era numbering, while the second is the current route
+   table’s operating/transfer notation. They are not averaged or silently
+   reconciled.
+
+5. **CR580B package scope versus station-level award history.** The CR580B
+   record gives one package-level award to the Taiwan Obayashi Taiwan branch /
+   Mutual Construction joint venture, with a value of NT$8.272 billion and
+   package dates beginning 1 July 2005. The same record says that Taipei 101’s
+   structural work had already been awarded in ROC91 and that CR580B covered
+   its fit-out and systems work. These values describe different scopes; no
+   station-level contractor or final station account was substituted for
+   either one.
 
 No conflicting exit count was found when the full TRTC station pages were
 compared with the DORTS station material for the stations where both publish a
@@ -394,6 +715,25 @@ field-coverage differences, not competing values.
 - **Incoming report(5) reference `[14]`** — the lead names a TRTC station-information page but supplies only a numeric placeholder, so the alleged dynamic-page failure cannot be reproduced or verified. Checked 17 August 2026.
 - **Incoming report(5) reference `[25]`** — the lead names a Tamsui historical-data site but supplies only a numeric placeholder, so the alleged access denial cannot be reproduced or verified. Checked 17 August 2026.
 - **Incoming report(5) assertion that all cited URLs were opened** — inspection found zero URL strings, so the assertion is unsupported and is not a verification result. Checked 17 August 2026.
+- **R01 station page and registry entry** — Checked 18 August 2026 against the
+  generated station registry, the current DORTS route table and the TRTC route
+  map. No R01 station or official page was found. No page was invented; the
+  first six-station batch therefore uses the real registry sequence R02–R07.
+- **Individual R02–R07 contractors, awards and final accounts** — Checked 18
+  August 2026 in the fetched CR580B, CK570H and Daan joint-development pages.
+  They provide package-level scope and, for Daan/Daan Park, the investor-built
+  development context, but no complete station-level award/final-account
+  record. Those fields remain TBC.
+- **R07 Dongmen public-art record** — Checked 18 August 2026 in the full
+  DORTS public-art material and the CK570H architectural pages. No confirmed
+  station-specific artwork record was found in those pages. This is a failed
+  lookup, not evidence that no artwork exists.
+- **DR148 design pages 66, 69, 71, 72 and 76** — Full-page fetches were
+  attempted 18 August 2026 and returned cache-miss failures. Search snippets
+  were not used; the batch relies only on the successfully fetched pages.
+- **R02–R07 feeder-bus prose** — TDX stop-ID joins were checked 18 August
+  2026, but no full PTO or ebus route page was fetched for these stations. No
+  feeder route assertion was published from the joins alone.
 
 ## Stated gaps
 
@@ -403,6 +743,14 @@ primary pages do not publish them. A city gazette or operator announcement
 would settle the naming gap; a station-level signalling/platform plan would
 settle the remaining track-layout gaps; an operator operations or maintenance
 record would settle the roster assignment.
+
+For R02–R07 specifically, station-level contractors, award dates and final
+accounts remain TBC pending the period DORTS award, completion or final-account
+records. R07’s public-art status remains unresolved pending a complete DORTS
+completion register or station-specific record. R02–R07 feeder-bus prose remains
+TBC pending full PTO/ebus route pages. There is no R01 page in the checked
+registry or primary route materials; a later official registry entry would be
+needed before that identifier could be published.
 
 ---
 
