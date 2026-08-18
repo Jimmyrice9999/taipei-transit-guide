@@ -269,12 +269,12 @@ returned the following public-art evidence, which was added to the overlay.
 
 | Station | Result | Full primary pages |
 |---|---|---|
-| G01 Xindian | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/033/1 |
+| G01 Xindian | 0 words in the prior batch; superseded by the correction below | https://web.metro.taipei/pages2026/WebStation/033/1 |
 | G03A Xiaobitan | 313 sourced words | https://web.metro.taipei/pages2026/WebStation/032/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page248.html; https://www.dorts.gov.taipei/cp.aspx?n=CED2FA967D173F88&s=682C3BAE644B538F |
 | G04 Dapinglin | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/036/1 |
 | G05 Jingmei | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/037/1 |
 | G06 Wanlong | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/038/1 |
-| G07 Gongguan | 0 words after source-family search | https://web.metro.taipei/pages2026/WebStation/039/1 |
+| G07 Gongguan | 0 words in the prior batch; superseded by the correction below | https://web.metro.taipei/pages2026/WebStation/039/1 |
 
 The planning page records the original NT$15 million setup figure and NT$1
 million prize, five proposals and the compressed procurement context. The later
@@ -369,6 +369,59 @@ Gongguan and Guting works. Those findings contradict the earlier zero-word
 audit for G01 and G07; they are deliberately not folded into this six-page
 commit and are scheduled as the next Green correction batch.
 
+### Station-prose correction — G01 Xindian, G07 Gongguan and G16 Nanjing Fuxing, 18 August 2026
+
+This correction follows the G08–G15 batch audit. The full DORTS public-art
+overview was re-fetched and read rather than relying on the earlier search
+result: it explicitly lists G01’s `天、地、人` and G07’s `偷窺`. The full
+DORTS planning pages 139 and 239 were also fetched and read. Page 139 gives
+G07’s garden-architecture entrance treatment; page 239 records G01’s rushed
+public-art process and relocation around future joint development, and G07’s
+separate wiring. The full architecture page 67 was fetched and read for G16.
+
+| Station | Result | Full primary pages |
+|---|---|---|
+| G01 Xindian | 313 sourced words; sculpture title, open-selection context, rushed process and relocation around a future underground joint-development car park | https://web.metro.taipei/pages2026/WebStation/033/1; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
+| G07 Gongguan | 273 sourced words; garden-architecture entrance, interactive-art title and separate wiring | https://web.metro.taipei/pages2026/WebStation/039/1; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html; https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804; https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html |
+| G16 Nanjing Fuxing | 343 sourced words; source-era label, commercial/institutional context, vertical interchange, curved-skin treatment and transfer escalator | https://web.metro.taipei/pages2026/WebStation/053/1; https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html |
+
+**G01 evidence — DORTS, PRIMARY, High confidence.** The full page `簡介`
+lists `新店站設置雕塑-「天、地、人」` and says the New Store Line south
+section’s public art was obtained through public selection. The full planning
+page says: `新店站因公開徵件作業流程急迫，以致未注意到出入口廣場之地下未來將成為聯合開發之地下停車場`;
+it records that the first-prize work was at the affected position and that the
+Japanese author agreed during revision to move it and remove the existing flower
+bed. These establish the station-specific public-art procurement and relocation
+history. The overview does not give a complete artist, medium, final cost or
+individual station-contract record, so those fields remain TBC.
+
+**G07 evidence — DORTS, PRIMARY, High confidence.** The full page 139 says:
+`公館站以園林建築屋頂及八角窗造形` for the entrance design. The full public-
+art overview lists `新店線公館站設置互動藝術-「偷窺」` and places the work in
+the early public-selection record. The full planning page says that, unlike the
+low-power projection lamps at CKS Memorial Hall, Gongguan’s `偷窺` was `自行拉線`;
+the cable route required ceilings to be opened and restored. These establish the
+entrance vocabulary, work type/title and electrical installation requirement.
+The checked pages do not establish a complete artist, medium, final cost,
+contract package or rename chronology, so those fields remain TBC.
+
+**G16 evidence — DORTS, PRIMARY, High confidence.** The full architecture page
+labels the station `南京復興站(G18/BR3)`, places it under Nanjing East Road at
+Fuxing North Road and describes the commercial-office, hotel, shopping, leisure
+and school surroundings. It records the underground three-level island-platform
+form and the vertical interchange with the elevated Wenhu station. Its original
+evidence for the theme is `設計主題為「轉換的軌跡」`; it describes a continuous
+trajectory element wrapping the existing elevated entrances, a new metal curved
+skin distinguishing old and new, and a transfer escalator longer than ten metres.
+It also describes the transfer level, concourse and platform levels. The source
+does not establish a complete station-specific construction contract, final
+account, public-art record or fare-boundary classification.
+
+The correction explicitly supersedes the earlier G01/G07 zero-word result. The
+earlier search had stopped at current TRTC facilities, route chronology and the
+wrongly scoped public-art check; the re-fetched full DORTS overview and technical
+pages contain the station-specific records above.
+
 ## Conflicts
 
 1. **G15 Songjiang Nanjing platform form and exit count.** The DORTS station
@@ -402,6 +455,12 @@ commit and are scheduled as the next Green correction batch.
    procurement/setup account; the second belongs to the later completed
    programme record. Both are published without reconciliation.
 
+6. **G16 source-era label versus current operating code.** DORTS’s architecture
+   page calls Nanjing Fuxing `G18/BR3`, while the current station registry uses
+   G16 and the current Wenhu operating code is BR12. These are retained as a
+   source-era construction/line label versus current operating identifiers, not
+   silently normalised.
+
 ## Checked and failed
 
 - **Station naming** — Full TRTC station pages and the DORTS route and station-architecture pages were checked for construction-era public names, rename dates and rename announcements. Current names are published, but no rename chronology was established for G01–G19 or G03A. Checked 14 August 2026.
@@ -409,13 +468,14 @@ commit and are scheduled as the next Green correction batch.
 - **Station-specific depot assignment** — The full depot table establishes Xindian Depot for the line, not a station-by-station roster. The pages retain the line-level fact and mark each station assignment TBC. Checked 14 August 2026.
 - **Remaining platform and track counts** — The checked primary pages establish the published forms for G02, G03 and G13–G19; they do not publish enough detail to settle the remaining stations’ platform and track counts. Those values remain TBC. Checked 14 August 2026.
 - **Unlisted public-art entries** — The checked official Songshan public-art article establishes works at G17 and G19 but does not provide a complete title/artist/medium/year record for the other G stations. Their rows remain TBC; this is not an assertion that no work exists. Checked 14 August 2026.
-- **G01, G04, G05, G06 and G07 station-specific prose** — Checked 18 August
-  2026 in the full TRTC pages, DORTS New Store route page, station-planning
-  and underground-construction books, and the DORTS public-art material. The
+- **G04, G05 and G06 station-specific prose** — Checked 18 August 2026 in the
+  full TRTC pages, DORTS New Store route page, station-planning and
+  underground-construction books, and the DORTS public-art material. The
   sources returned current facility/exit data and shared route context but no
-  station-specific narrative beyond the facts/specs. These five pages remain
+  station-specific narrative beyond the facts/specs. These three pages remain
   at zero body-prose words; this is a failed lookup, not evidence that no
-  history or artwork exists.
+  history or artwork exists. The earlier zero-word result for G01 and G07 is
+  superseded by the full-page correction above.
 - **G03A construction package and rename record** — Checked 18 August 2026 in
   the full DORTS route, planning and public-art pages and current TRTC page.
   The pages establish the public-art procurement and completed work but do not

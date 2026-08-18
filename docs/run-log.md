@@ -8766,3 +8766,39 @@ Green correction batch, then proceed to the next line in Part 1.
 Final gates for this batch: fresh build/verify and the full test suite must pass
 before commit; citation, research and claims checks are already clean. Next
 batch is G08–G10, G12, G14 and G15.
+
+# Run 31 — Part 1 Green correction, G01, G07, G16, 18 August 2026
+
+The full DORTS public-art overview and technical pages corrected the prior
+zero-word result for G01 Xindian and G07 Gongguan. G01 gained 313 sourced
+words on the open-selection sculpture 天、地、人, the rushed process, missed
+future joint-development car park and relocation of the first-prize work. G07
+gained 273 sourced words on the garden-architecture entrance, interactive work
+偷窺 and its separately wired installation. G16 Nanjing Fuxing gained 343
+sourced words from the full Songshan architecture article on the G18/BR3
+source-era label, commercial and institutional setting, vertical interchange,
+Trajectory of Transfer theme, curved metal skin and more-than-ten-metre
+transfer escalator. Batch total: 929 words.
+
+Primary URLs cited:
+
+- https://web.metro.taipei/pages2026/WebStation/033/1
+- https://web.metro.taipei/pages2026/WebStation/039/1
+- https://web.metro.taipei/pages2026/WebStation/053/1
+- https://www.dorts.gov.taipei/cp.aspx?n=DA11BCC514603804
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page139.html
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page239.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page67.html
+
+Contradicted the corpus: the prior G01/G07 failed lookup was superseded by
+full-page DORTS records that explicitly list both artworks. Conflict published:
+DORTS labels G16 as G18/BR3, while the current registry uses G16 and current
+Wenhu operation uses BR12; these are retained as source-era versus current
+identifiers. No complete station contract, final account, full artwork
+artist/medium/cost record, rename gazette or fare-boundary classification was
+sourced. No station colour-prefix audit applies. The next batch is the
+remaining Green zero-word pages G04–G06, G08 and G12; after that, Green is
+complete and Part 1 proceeds to the next line.
+
+Final gates for this correction: cite, research, claims, fresh verify/build,
+explicit npm test and diff check must pass before commit and push.
