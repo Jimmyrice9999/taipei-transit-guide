@@ -266,9 +266,119 @@ before 08:00 or after 22:00.
   `收費方式 : 一段票`; `業者服務電話 : 指南客運淡海站:02-2805-2262`; and
   `08:00前與22:00後自淡海發車(不進漁人碼頭)`.
 
+## Batch 3 — 紅27, 紅28, 紅28直, 紅29, 紅3 and 紅30, checked 18 August 2026
+
+The six current official pages were fetched in full. They establish current
+route identity, termini, service windows, fare class, operator contacts and
+current timetable variants. They do not establish route opening history, the
+original corridor decision or dated operator changes; those fields remain TBC.
+
+### 紅27 / R27
+
+The full official schedule page gives `淡江大學 - 捷運淡水站`, weekday service
+0640–0000, holiday service 0700–0000, one-section fare and `指南客運淡大站`
+as the service contact. It records 20–30 minute holiday headways and a
+30-minute service after 23:30.
+
+- **Source:** “R27 route schedule” / `titleOriginal`: `紅27班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002700
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡江大學 - 捷運淡水站`;
+  `頭末班車 : [平日] 0640 - 0000 / [假日] 0700 - 0000`;
+  `收費方式 : 一段票`; `業者服務電話 : 指南客運淡大站:02-2623-8495`;
+  `例假日、寒暑假頭末班時間07:00~00:00 發車間距20-30分`; and
+  `23:30以後30分乙車次`.
+
+### 紅28 / R28
+
+The full official schedule page gives `淡江大學 - 捷運淡水站`, weekday service
+0600–2220, holiday service 0640–2220, one-section fare and `淡水客運淡水站`
+as the service contact.
+
+- **Source:** “R28 route schedule” / `titleOriginal`: `紅28班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002800
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡江大學 - 捷運淡水站`;
+  `頭末班車 : [平日] 0600 - 2220 / [假日] 0640 - 2220`;
+  `收費方式 : 一段票`; and `業者服務電話 : 淡水客運淡水站:02-2621-3340`.
+
+### 紅28直 / R28Sub
+
+The full official schedule page gives `淡江大學 - 捷運淡水站`, weekday service
+0624–1930, no holiday service, one-section fare and `淡水客運淡水站` as the
+service contact. It notes suspension on holidays and during university winter
+and summer vacations.
+
+- **Source:** “R28Sub route schedule” / `titleOriginal`: `紅28直班表`
+- **Publisher:** New Taipei City Public Transportation Office /
+  `新北市政府交通局`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0411002830
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 淡江大學 - 捷運淡水站`;
+  `頭末班車 : [平日] 0624 - 1930 / [假日] 停駛`;
+  `收費方式 : 一段票`; `業者服務電話 : 淡水客運淡水站:02-2621-3340`; and
+  `例假日、寒暑假期間停駛(配合淡江大學)`.
+
+### 紅29 / R29
+
+The full official schedule page gives `內湖(新湖二路) - 捷運民權西路站`,
+weekday and holiday service 0600–2340, one-section fare and `東南客運內湖站`
+as the service contact. It records 0800–2130 trips serving
+`三軍總醫院內湖院區`, followed by 2130, 2230 and 2340 departures on both day
+types.
+
+- **Source:** “R29 route schedule” / `titleOriginal`: `紅29班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111002900
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 內湖(新湖二路) - 捷運民權西路站`;
+  `頭末班車 : [平日] 0600 - 2340 / [假日] 0600 - 2340`;
+  `收費方式 : 一段票`; `業者服務電話 : 東南客運內湖站:02-8791-7712`;
+  `平日0800~2130行駛三軍總醫院內湖院區；2130後車時刻為2130、2230、2340`; and
+  the matching holiday sentence.
+
+### 紅3 / R3
+
+The full official schedule page gives `社子 - 台北花市`, weekdays suspended,
+a single 10:30 Saturday service, two-section fare, the `陽明高中-劍潭`
+buffer and `光華巴士洲美站` as the service contact. It says Sundays, national
+holidays, make-up days and typhoon closure days are suspended.
+
+- **Source:** “R3 route schedule” / `titleOriginal`: `紅3班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111000300
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 社子 - 台北花市`;
+  `頭末班車 : [平日] 停駛 / [假日] 1030 - 1030`;
+  `分段緩衝 : 陽明高中-劍潭`; `收費方式 : 兩段票`;
+  `業者服務電話 : 光華巴士洲美站:02-2823-0188`;
+  `平常日停駛`; `紅3週六班表:1030`; and
+  `星期日、國定假日、補休、停班停課時停駛`.
+
+### 紅30 / R30
+
+The full official schedule page gives `故宮博物院 - 捷運劍潭站`, weekday service
+0720–1830, holiday service 0730–1900, one-section fare and `中興巴士故宮站`
+as the service contact.
+
+- **Source:** “R30 route schedule” / `titleOriginal`: `紅30班表`
+- **Publisher:** Taipei City Public Transportation Office /
+  `臺北市政府公共運輸處`
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0111003000
+- **Kind/confidence:** PRIMARY; High — full official schedule page read.
+- **Original-language text read:** `起迄站名 : 故宮博物院 - 捷運劍潭站`;
+  `頭末班車 : [平日] 0720 - 1830 / [假日] 0730 - 1900`;
+  `收費方式 : 一段票`; and `業者服務電話 : 中興巴士故宮站:02-2882-2126`.
+
 ## What remains TBC
 
-- **All twelve batch-1/2 routes:** opening date, earlier alignment, original
+- **All eighteen batch-1/2/3 routes:** opening date, earlier alignment, original
   corridor rationale and dated operator transfers are TBC.
 - **紅19:** its current school-day return stop variant is established; its
   creation date and rationale are TBC.
@@ -276,10 +386,16 @@ before 08:00 or after 22:00.
   their creation dates and rationale are TBC.
 - **紅26:** the current no-fisherman-wharf short working is established; its
   creation date and rationale are TBC.
+- **紅27:** current holiday headways and the late-evening interval are
+  established; their creation dates and rationale are TBC.
+- **紅28直:** current university-calendar suspension is established; its
+  creation date and rationale are TBC.
+- **紅29:** the current hospital short working is established; its creation
+  date and rationale are TBC.
 
 ## Checked and failed
 
-- **Dated opening, corridor-rationale and operator-change records for batches 1–2** —
+- **Dated opening, corridor-rationale and operator-change records for batches 1–3** —
   full current route pages were checked, but no dated primary history record was
   promoted from those pages. Current service data was not treated as an origin
   story. Checked 18 August 2026.
