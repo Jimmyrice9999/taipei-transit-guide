@@ -3374,52 +3374,21 @@ a.adjacent-link:hover {
   margin-bottom: 0.4em;
 }
 
-/* Long article sections use native disclosure controls. The body remains in
-   the HTML when closed, so find-in-page and crawlers still see the prose. */
-.prose .content-disclosure {
-  margin: 1.8em 0 0;
-  border-top: 1px solid var(--rule);
-}
+/*
+ * Run 51 withdrew the article-body disclosures — a researched body is the
+ * reason someone is on the page and does not get a control that hides it. See
+ * lib/collapsible-html.ts for the three concrete costs (find-in-page, fragment
+ * links, print) that decided it. The content-disclosure rules that lived here
+ * are gone with the markup that used them.
+ */
 
-.prose .content-disclosure > summary {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 12px 0 8px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.prose .content-disclosure > summary::-webkit-details-marker,
 .index-disclosure > summary::-webkit-details-marker {
   display: none;
 }
 
-.prose .content-disclosure > summary:focus-visible,
 .index-disclosure > summary:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-}
-
-.content-disclosure-title {
-  flex: 1 1 auto;
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-  padding-bottom: 7px;
-  border-bottom: 2px solid var(--accent);
-  text-wrap: balance;
-}
-
-.content-disclosure-body {
-  padding-bottom: 8px;
-}
-
-.content-disclosure-body > :first-child {
-  margin-top: 0.8em;
 }
 
 .disclosure-caret {
@@ -3582,9 +3551,43 @@ a.adjacent-link:hover {
   max-width: var(--measure);
 }
 
-/* Grouped indexes collapse their repeated card grids without removing them
-   from the static document. The first station line and short fleet/depot
-   indexes are open; larger route and line lists start closed. */
+/*
+ * ── What a disclosure is for here, after run 51 ─────────────────────────────
+ *
+ * A grouped index collapses its repeated card grids without removing them from
+ * the static document. The rule for whether a group gets one at all: a
+ * disclosure is legitimate when it is one of SEVERAL PEERS and the reader is
+ * choosing between them — the station index's ten lines, New Taipei's seven
+ * route subgroups, a bus route's two directions. The first peer opens; the
+ * rest wait.
+ *
+ * A single disclosure wrapping the whole of a page's content is not that. Its
+ * only useful state is open, so it does not get a control. `.index-section` is
+ * that case: the same heading and count, no summary, nothing hidden.
+ */
+
+/* An index that IS the page. Open, no control — see the note above. */
+.index-section {
+  margin: 34px 0 32px;
+  border-top: 1px solid var(--rule);
+}
+
+.index-section > .section-heading {
+  min-height: 48px;
+  align-items: center;
+  margin: 0 0 8px;
+}
+
+/* The entry count on an index that is the page. Not a heading — the page title
+   already names the thing being counted. */
+.index-count {
+  margin: 12px 0 10px;
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
 .index-disclosure {
   margin: 34px 0 32px;
   border-top: 1px solid var(--rule);

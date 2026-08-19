@@ -20,6 +20,7 @@ import RichText from '@/components/RichText'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSections, getSystems, getTypes } from '@/lib/content'
+import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 
 type Props = { params: Promise<{ section: string }> }
 
@@ -190,6 +191,37 @@ export default async function SectionPage({ params }: Props) {
       */}
       {types.map((type) => {
         const pages = getPages(section, type.slug)
+        /*
+         * Bus routes live in a nested registry `getPages` does not read, so
+         * this dropped the Routes type from /bus/ entirely — a section holding
+         * 1,051 route pages did not list them. The card links to the route
+         * browser, which is what owns route discovery (docs/bus-architecture
+         * §5); enumerating routes here is exactly what that section forbids.
+         */
+        if (section === 'bus' && type.slug === 'routes') {
+          const count = getBuiltBusRoutePageCount()
+          if (count === 0) return null
+          return (
+            <ul className="card-list" key={type.slug}>
+              <li>
+                <Link href={type.href}>
+                  <span className="card-body">
+                    <span className="card-title">{type.title}</span>
+                    {type.description && (
+                      <span className="card-desc">{type.description}</span>
+                    )}
+                  </span>
+                  <span className="card-meta">
+                    {count} pages
+                    <span className="card-arrow" aria-hidden="true">
+                      →
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          )
+        }
         if (pages.length === 0) return null
         return (
           <section key={type.slug}>

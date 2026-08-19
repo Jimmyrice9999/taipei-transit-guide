@@ -17,7 +17,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import LineBadge from '@/components/LineBadge'
 import LineIcon from '@/components/LineIcon'
-import { getLinePageHref as lineHref } from '@/lib/content'
+import { getLinePageHref as lineHref, getSection } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import RouteMap from '@/components/RouteMap'
 import StationBadge from '@/components/StationBadge'
@@ -163,8 +163,12 @@ export default function NetworkPage() {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
-      <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'The network' }]} />
-      <BackLink href="/rail/" label="Rail" />
+      {/* The section's own title, read from its _index.md rather than typed —
+          it became "Rail & cable" in run 51 and a typed crumb would not know. */}
+      <Breadcrumbs
+        trail={[{ label: getSection('rail').title, href: '/rail/' }, { label: 'The network' }]}
+      />
+      <BackLink href="/rail/" label={getSection('rail').title} />
 
       <h1 className="page-title">The network</h1>
       <p className="page-summary">

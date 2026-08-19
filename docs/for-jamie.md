@@ -14,5 +14,9 @@ A system declares itself with `kind: system` in its _index.md, so adding TRA or 
 The Maokong Gondola left its own top-level section and is now the `cable` system; the heading is "Rail & cable" because filing a ropeway under "Rail" would be a false claim in the furniture.
 464 redirect stubs cover every moved URL, with run 5's /train rule composed with run 51's so nothing chains; scripts/moves.mjs is the one table and the test walks it.
 Unsourced assertions stayed at 32, the committed baseline; claims-baseline.json was not touched.
+Parts 3 and 4 are one commit — the same three components carried both problems. The canonical element order and the collapsible classification table are now in docs/page-layout.md.
+Sources used to render above the index they cited on the type index and every bus group page; the station map sat above the page's own prose; /bus/routes/'s description sat under its list. All moved.
+The lines list and a colour group's route list are open with no control; the article-body h2 disclosures are withdrawn (find-in-page, fragment links and print all failed inside a closed details).
+Two false statements found by the same walk: "Routes · 0 pages" beside 1,051 bus route pages, and a bus route BR10 badged as metro station BR10.
 Do not poll Actions.
 Do not stage the pre-existing untracked `probes/` directory.

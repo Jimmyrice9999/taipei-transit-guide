@@ -48,12 +48,19 @@ export default function CardRow({
   line: lineCode,
   /** True on an index OF lines, where the row's subject is the line itself. */
   isLine = false,
+  /**
+   * False where the row's title and summary belong to another numbering
+   * scheme — a bus route called BR10 is not station BR10. See the note on
+   * `badges` in RichText.
+   */
+  badges = true,
 }: {
   href: string
   title: React.ReactNode
   summary?: string
   line?: string
   isLine?: boolean
+  badges?: boolean
 }) {
   const line = getLine(lineCode)
 
@@ -76,11 +83,11 @@ export default function CardRow({
         {isLine && line && <LineIcon code={line.code} size={30} className="card-icon" />}
         <span className="card-body">
           <span className="card-title">
-            {typeof title === 'string' ? <RichText>{title}</RichText> : title}
+            {typeof title === 'string' ? <RichText badges={badges}>{title}</RichText> : title}
           </span>
           {summary && (
             <span className="card-desc">
-              <RichText>{summary}</RichText>
+              <RichText badges={badges}>{summary}</RichText>
             </span>
           )}
         </span>

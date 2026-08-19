@@ -13,7 +13,7 @@ import LineBadge from '@/components/LineBadge'
 import PageShell from '@/components/PageShell'
 import PhotoCard from '@/components/PhotoCard'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { getLinePageHref } from '@/lib/content'
+import { getLinePageHref, getSection, getSystem } from '@/lib/content'
 import BackLink from '@/components/BackLink'
 import LineIcon from '@/components/LineIcon'
 import JsonLd from '@/components/JsonLd'
@@ -46,14 +46,22 @@ export default function StationsIndexPage() {
         data={[
           breadcrumbSchema([
             { name: 'Home', path: '/' },
-            { name: 'Rail', path: '/rail/' },
+            { name: getSection('rail').title, path: '/rail/' },
+            { name: getSystem('rail', 'metro').title, path: '/rail/metro/' },
             { name: 'Stations', path: '/rail/metro/stations/' },
           ]),
         ]}
       />
 
-      <Breadcrumbs trail={[{ label: 'Rail', href: '/rail/' }, { label: 'Stations' }]} />
-      <BackLink href="/rail/" label="Rail" />
+      <Breadcrumbs
+        trail={[
+          { label: getSection('rail').title, href: '/rail/' },
+          { label: getSystem('rail', 'metro').title, href: '/rail/metro/' },
+          { label: 'Stations' },
+        ]}
+      />
+      {/* Up one level is the system these stations belong to, not the section. */}
+      <BackLink href="/rail/metro/" label={getSystem('rail', 'metro').title} />
       <h1 className="page-title">Stations</h1>
       <p className="page-summary">
         Every station on every line, grouped by line — photographed where a picture exists,

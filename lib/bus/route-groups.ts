@@ -78,3 +78,31 @@ export const GROUP_PATH_COLOUR: Record<BusRouteGroup, string> = {
 export function getGroupLineCode(group: BusRouteGroup): string | undefined {
   return GROUP_LINE[group]?.code
 }
+
+/**
+ * How many bus route pages are actually published.
+ *
+ * ── The false zero this exists to stop ──────────────────────────────────────
+ *
+ * Bus route overlays live at `content/bus/routes/<group>/<slug>.md`, a nested
+ * registry `getPages('bus', 'routes')` deliberately does not read (see the
+ * fourth implementation note in docs/bus-architecture.md). Every caller that
+ * asked the content loader how many route pages there were therefore got 0 —
+ * and the home page printed "Routes · 0 pages" beside a section holding 1,051
+ * of them, while `/bus/` dropped the type entirely on the same evidence. A
+ * count in the furniture that contradicts the site is the same class of error
+ * as a figure in the prose that contradicts its source.
+ *
+ * Counted from the overlays on disk, so it is the number of pages the build
+ * will actually export rather than the number of TDX identities that exist.
+ */
+export function getBuiltBusRoutePageCount(): number {
+  return getBuiltBusRouteGroups().reduce((total, group) => {
+    const dir = path.join(process.cwd(), 'content', 'bus', 'routes', group)
+    if (!fs.existsSync(dir)) return total
+    return (
+      total +
+      fs.readdirSync(dir).filter((name) => name.endsWith('.md') && !name.startsWith('_')).length
+    )
+  }, 0)
+}

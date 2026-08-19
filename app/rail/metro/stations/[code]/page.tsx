@@ -27,7 +27,7 @@ import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
 import LineBadge from '@/components/LineBadge'
 import { getImage } from '@/lib/images'
-import { getLinePageHref, getPages } from '@/lib/content'
+import { getLinePageHref, getPages, getSection, getSystem } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import { getLineGeometry } from '@/lib/geometry'
 import { branchTint, getAccent, getLine } from '@/lib/lines'
@@ -174,7 +174,8 @@ export default async function StationPage({ params }: Props) {
           stationSchema(station, line, index + 1, stations.length),
           breadcrumbSchema([
             { name: 'Home', path: '/' },
-            { name: 'Rail', path: '/rail/' },
+            { name: getSection('rail').title, path: '/rail/' },
+            { name: getSystem('rail', 'metro').title, path: '/rail/metro/' },
             ...(linePageHref ? [{ name: `${line.name} Line`, path: linePageHref }] : []),
             {
               name: `${station.code} ${station.name}`,
@@ -195,7 +196,10 @@ export default async function StationPage({ params }: Props) {
 
       <Breadcrumbs
         trail={[
-          { label: 'Rail', href: '/rail/' },
+          /* Titles from the registry, not typed: the section is "Rail & cable"
+             since run 51 and the crumb said "Rail" for three commits. */
+          { label: getSection('rail').title, href: '/rail/' },
+          { label: getSystem('rail', 'metro').title, href: '/rail/metro/' },
           ...(linePageHref ? [{ label: `${line.name} Line`, href: linePageHref }] : []),
           { label: `${station.code} ${station.name}` },
         ]}
@@ -664,40 +668,6 @@ export default async function StationPage({ params }: Props) {
           )}
         </section>
 
-        {geometry && (
-          <RouteMap
-            lines={[
-              {
-                code: line.code,
-                name: line.name,
-                colour: line.map,
-                // Wenhu has no branch, so this resolves to the whole alignment
-                // as trunk. Routed through the same helper anyway, so station
-                // pages on a branched line get the right picture for free.
-                paths: track.trunk,
-                branchPaths: track.branch,
-                branchColour: branchTint(line),
-                branchEdge: line.ink,
-              },
-            ]}
-            stations={stations
-              .filter((s) => s.lat !== null && s.lon !== null)
-              .map((s, i, all) => ({
-                code: s.code,
-                name: s.name,
-                lat: s.lat!,
-                lon: s.lon!,
-                colour: line.map,
-                isTerminus: i === 0 || i === all.length - 1,
-                isInterchange: s.interchange.length > 0,
-                href: `/rail/metro/stations/${s.code.toLowerCase()}/`,
-                highlighted: s.code === station.code,
-              }))}
-            width={640}
-            caption={`${station.code} on the ${line.name} Line. Drawn from MOTC route geometry.`}
-          />
-        )}
-
         <h2 className="section-heading">Location</h2>
         <dl className="detail-list">
           <div>
@@ -790,6 +760,49 @@ export default async function StationPage({ params }: Props) {
               ))}
             </p>
           </div>
+        )}
+
+        {/*
+          ── Run 51, part 3: the diagram follows the content ────────────────────
+          The map used to sit directly under the platform facts, above Location,
+          the first/last-train table and the researched prose — so the page's
+          own words about the station were below a picture of the whole line.
+          The canonical order (docs/page-layout.md) puts identity and facts
+          first, then what the page says, then the diagrams that illustrate it,
+          then navigation, then sources.
+        */}
+        {geometry && (
+          <RouteMap
+            lines={[
+              {
+                code: line.code,
+                name: line.name,
+                colour: line.map,
+                // Wenhu has no branch, so this resolves to the whole alignment
+                // as trunk. Routed through the same helper anyway, so station
+                // pages on a branched line get the right picture for free.
+                paths: track.trunk,
+                branchPaths: track.branch,
+                branchColour: branchTint(line),
+                branchEdge: line.ink,
+              },
+            ]}
+            stations={stations
+              .filter((s) => s.lat !== null && s.lon !== null)
+              .map((s, i, all) => ({
+                code: s.code,
+                name: s.name,
+                lat: s.lat!,
+                lon: s.lon!,
+                colour: line.map,
+                isTerminus: i === 0 || i === all.length - 1,
+                isInterchange: s.interchange.length > 0,
+                href: `/rail/metro/stations/${s.code.toLowerCase()}/`,
+                highlighted: s.code === station.code,
+              }))}
+            width={640}
+            caption={`${station.code} on the ${line.name} Line. Drawn from MOTC route geometry.`}
+          />
         )}
 
         {/* Adjacent navigation: how people actually read a line. */}

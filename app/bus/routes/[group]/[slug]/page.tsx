@@ -86,8 +86,10 @@ export default async function BusRoutePage({ params }: Props) {
       <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: folder.title, href: `/bus/routes/${group}/` }, { label: route.names.en }]} />
       <BackLink href={`/bus/routes/${group}/`} label={folder.title} />
       <article>
-        <h1 className="page-title"><RichText>{page.title}</RichText></h1>
-        {page.summary && <p className="page-summary"><RichText>{page.summary}</RichText></p>}
+        {/* badges={false}: a bus route number that looks like a station code is
+            not one — see the note on `badges` in components/RichText. */}
+        <h1 className="page-title"><RichText badges={false}>{page.title}</RichText></h1>
+        {page.summary && <p className="page-summary"><RichText badges={false}>{page.summary}</RichText></p>}
         <div className="page-grid no-spine">
           <div className="page-main">
             <BusRouteData route={route} line={accent} references={page.references} href={page.href} />

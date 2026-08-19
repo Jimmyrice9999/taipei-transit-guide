@@ -12037,3 +12037,147 @@ clean. One nav check was corrected rather than relaxed: it asserted the first
 Tab into an open panel lands on the first disclosure, and a system's own link
 now precedes them, so it Tabs until it reaches a disclosure and fails if it
 never does.
+
+# Run 51 — Parts 3 and 4, page layout and collapsibles, 19 August 2026
+
+Committed together because the same three components carry both: the type
+index, the bus group page and the article body each had an ordering problem and
+a collapsible problem in the same block of JSX, and splitting them would have
+meant two commits editing the same lines.
+
+The canonical order is now written down in **`docs/page-layout.md`**, with the
+collapsible classification table. This entry records the audit that produced it.
+
+## Part 3 — the audit of element order
+
+Fifteen page types walked, top to bottom.
+
+| Page type | Order found | Verdict |
+| --- | --- | --- |
+| `/` home | featured card → sections, each with its types | correct |
+| `/<section>/` | hero → identity → cards → essay → sources | correct |
+| `/rail/<system>/` | identity → types → essay → sources | correct (new this run) |
+| `/<…>/<type>/` index | prose → **sources** → list → comparison | **sources above the content they cite** |
+| `/bus/routes/` | cards → **description of the cards** | **description below the list** |
+| `/bus/routes/<group>/` | prose → **sources** → routes | **sources above the content they cite** |
+| `/bus/routes/<group>/<slug>/` | data → prose → specs → sources | correct |
+| Entity page (article) | hero → identity → lede → facts → body → sources | correct |
+| Entity page (entity) | hero → identity → facts → body → diagrams → specs → sources | correct |
+| Station page | identity → facts → **map** → location → service → prose → nav → sources | **diagram above the page's own words** |
+| `/rail/metro/stations/` | identity → per-line groups | correct |
+| `/rail/network/` | identity → map → table → notes → interchanges → provenance | correct — the map IS the content here |
+| `/data/*`, `/about/` | identity → sections → updated | correct |
+| 404 | identity → links | correct |
+
+### What changed
+
+1. **`components/TypeIndex.tsx`** — `<References>` moved from directly under the
+   folder prose to the bottom of the page, below the list and the comparison
+   table. On `/rail/metro/lines/` a reader met the citation list before the list
+   of lines.
+2. **`app/bus/routes/[group]/page.tsx`** — same move, same reason. On every
+   colour group and on New Taipei, the sources came before the routes.
+3. **`app/rail/metro/stations/[code]/page.tsx`** — the route map moved from
+   directly under the platform facts to below the researched prose. It was
+   sitting above Location, the first/last-train table and the page's own
+   sourced sentences about the station: a picture of the whole line before
+   anything the page had to say.
+4. **`app/bus/routes/page.tsx`** — the paragraph explaining what the group cards
+   mean moved above them, from below, where it explained what the reader had
+   already finished reading.
+
+### Two false statements in the furniture, found by the same walk
+
+- **"Routes · 0 pages"** on the home page, beside a bus section holding 1,051
+  route pages — and `/bus/` dropped the Routes type entirely on the same
+  evidence. Bus route overlays live in a nested registry `getPages` deliberately
+  does not read, so every caller that asked it for a count got zero.
+  `getBuiltBusRoutePageCount()` counts the overlays on disk; both pages use it.
+- **A bus route badged as a metro station.** `/bus/routes/colour-brown/` listed
+  `BR10 / 棕10` with BR10 rendered as a brown station badge — which says that
+  brown-line feeder route is Jiannan Road station. It is not: BR10 there is the
+  route's own identifier and the collision is a coincidence of two numbering
+  schemes. A badge asserts "this is a real station", which is the guarantee the
+  badge system is sold on. `RichText` and `CardRow` take `badges={false}`, set
+  wherever the surrounding subject is not the metro. Not a heuristic inside the
+  tokenizer — it cannot know what the page is about, and only the caller can.
+
+Also fixed while in the file: the New Taipei subgroup card summaries carried a
+mojibake `Â·` where the other branch of the same component had a correct `·`,
+and the group's own `_index.md` described the page as keeping "those subgroups
+collapsed by default", which is no longer what it does.
+
+## Part 4 — the collapsible audit
+
+Seven collapsibles on the site. The rule applied, and now written in
+`docs/page-layout.md`: **a disclosure is legitimate when it is one of several
+peers and the reader is choosing between them.** The first peer opens; the rest
+wait. A single disclosure wrapping the whole of a page's content is not that —
+its only useful state is open, so it does not get a control.
+
+| Disclosure | Classification | Action |
+| --- | --- | --- |
+| The type index list | **primary** | control removed; always open |
+| "Routes in this group" | **primary** | control removed; always open |
+| Article body `h2` sections | **primary** | withdrawn entirely |
+| New Taipei's seven subgroups | peers, long lists | kept; first now opens |
+| Station index per-line groups | peers, long lists | kept; already first-open |
+| A route's stop sequences, per direction | peers | kept; already first-open |
+| Section dropdowns and submenus | menu | kept |
+
+### The two reported cases
+
+`/rail/metro/lines/` used `open={pages.length < 10}` and there are exactly ten
+line pages, so the index of the site's ten metro lines shipped **closed** on the
+page whose only job is to list them — decided by a count nobody could see.
+`/bus/routes/colour-brown/` opened with a single grey summary row and no routes
+visible at all. Both now render open with no control, using `.index-section`:
+the same count, no summary, nothing hidden.
+
+The type index's `<h2>` went with the disclosure rather than surviving it. Its
+only reason to exist was to be a summary's label, and it repeated the `<h1>`
+verbatim — "Lines" directly under "Lines". The count remains, as a count.
+
+### The one that is not a list
+
+`lib/collapsible-html.ts` wrapped every `<h2>` of any body with three or more of
+them in a `<details>`, first open. On the Wenhu Line, the Matra dispute and
+every other researched page that put the page's entire argument behind a row of
+closed grey summaries. It is withdrawn. Three costs beyond the click decided it:
+
+- **find-in-page** does not search inside a closed `<details>`. On a reference
+  site that is the primary way a long page is used, and it silently found
+  nothing;
+- **fragment links** — the build gives every heading an id and the citation
+  markers link to footnotes; a link to `#the-second-dispute` scrolled to a
+  closed row and stopped;
+- **print** — a closed `<details>` prints closed, so every print PDF of a long
+  page was one section and a list of headings.
+
+The function is now identity rather than deleted, so the reasoning sits where
+the next person proposing to bring it back will read it first. Its CSS is gone
+with the markup.
+
+### New Taipei's subgroups, reordered
+
+They ran roughly smallest-first, which put Event shuttles — four routes — at the
+top of a 562-route page and made it the subgroup that now opens by default.
+Largest first instead: General buses (217), New Bus (207), jump-frog (70), rapid
+(57), light-rail feeder (5), event (4), MRT pioneer (2), Classification TBC
+last because it is a gap rather than a category. Opening all seven was
+considered and rejected — seven peer lists is exactly the case a disclosure is
+for, and the in-group search in part 5 is what makes the closed six reachable
+without scrolling.
+
+## Also corrected
+
+Three breadcrumb trails and two back links said "Rail" as a typed string; the
+section has been titled "Rail & cable" since part 2 of this run, and the station
+and network pages were still saying the old name. They read the title from the
+registry now, and the station trail gained its Metro crumb.
+
+## Gates
+
+`npm run cite` clean, `npm run verify` green, `npm run test:unit` 195/195,
+`npm run nav` 19/19. `npm run unused` reports no unreferenced CSS class left by
+the disclosure removal.

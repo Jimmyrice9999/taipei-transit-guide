@@ -129,18 +129,34 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
         than listed and apologised for.
       */}
       {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
-      <References references={folderContent.references} />
 
+      {/*
+        ── Run 51, part 4: this list is why the page exists ────────────────────
+        It was wrapped in a disclosure with `open={pages.length < 10}`, so
+        /rail/metro/lines/ — with exactly ten line pages — shipped CLOSED. The
+        index of the site's ten metro lines was one click away on the page whose
+        only job is to list them, and the threshold that decided it was a count
+        nobody could see. Reported, and correct to report.
+
+        The rule applied across the site: a disclosure is legitimate when it is
+        one of several peers and the reader is choosing between them — the
+        station index's ten lines, the New Taipei subgroups, a route's two
+        directions. A single disclosure wrapping the whole of a page's content
+        is not that. Its only useful state is open, so it does not need a
+        control, and having one is a way for the page to be wrong.
+      */}
       {pages.length === 0 ? null : (
-        <details className="index-disclosure" open={pages.length < 10}>
-          <summary>
-            <span className="section-heading" role="heading" aria-level={2}>
-              {typeMeta.title}
-            </span>
-            <span className="disclosure-count">{pages.length} entries</span>
-            <span className="disclosure-caret" aria-hidden="true" />
-          </summary>
-          <div className="index-disclosure-body">
+        <section className="index-section">
+          {/*
+            No heading. The disclosure this replaced needed one for its summary,
+            but the `<h1>` two lines up already says "Lines" — repeating it as an
+            `<h2>` immediately below is the same word twice with nothing between
+            them. The count is worth keeping and is not a heading.
+          */}
+          <p className="index-count">
+            {pages.length} {pages.length === 1 ? 'entry' : 'entries'}
+          </p>
+          <div>
             {photoGrid ? (
         /*
          * Photographed cards, one per item. A card's own page is the primary
@@ -192,7 +208,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               </ul>
             )}
           </div>
-        </details>
+        </section>
       )}
 
       {/*
@@ -206,6 +222,14 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
           <ComparisonTable pages={pages} />
         </>
       )}
+
+      {/*
+        Sources last. This used to sit directly under the folder's prose and
+        ABOVE the index — so on /rail/metro/lines/ a reader met the citation
+        list before the list of lines. A reference list is what you check a
+        statement against; it belongs below everything it answers for.
+      */}
+      <References references={folderContent.references} />
     </PageShell>
   )
 }

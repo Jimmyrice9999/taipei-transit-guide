@@ -4,6 +4,7 @@ import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getPages, getSections, getSystems, getTypes } from '@/lib/content'
+import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 import { getImage, src as imageSrc } from '@/lib/images'
 
 // Stated rather than inherited, so the home page's canonical is deliberate and
@@ -117,7 +118,16 @@ export default function HomePage() {
                 </li>
               ))}
               {types.map((type) => {
-                const count = getPages(section.slug, type.slug).length
+                /*
+                 * Bus routes live in a nested registry the content loader does
+                 * not read, so `getPages('bus', 'routes')` is 0 — and this card
+                 * said "Routes · 0 pages" beside 1,051 of them. See
+                 * getBuiltBusRoutePageCount.
+                 */
+                const count =
+                  section.slug === 'bus' && type.slug === 'routes'
+                    ? getBuiltBusRoutePageCount()
+                    : getPages(section.slug, type.slug).length
                 return (
                   <li key={type.slug}>
                     <Link href={type.href}>

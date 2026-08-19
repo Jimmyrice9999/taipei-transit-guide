@@ -97,6 +97,6 @@ sources:
 
 The committed TDX layer contains 562 New Taipei route identities in this municipality group.[^tdx-bus] New Taipei Department of Transportation route-type datasets provide seven stable browse subgroups: General buses (217), Rapid buses (57), MRT pioneer buses (2), New Bus community services (207), Event shuttles (4), Jump-frog commuter buses (70), Light-rail feeder routes (5).[^ntpc-transport][^ntpc-category-general][^ntpc-category-rapid][^ntpc-category-pioneer][^ntpc-category-newbus][^ntpc-category-event][^ntpc-category-jumpfrog][^ntpc-category-lrt]
 
-The group page keeps those subgroups collapsed by default and retains every route at the municipality-scoped URL /bus/routes/new-taipei/<slug>/.[^tdx-bus] That path includes the municipality group, so a numeric collision with a Taipei route cannot overwrite or masquerade as the other record.[^tdx-bus]
+The group page lists those subgroups in size order, opening the first and leaving the rest closed, and retains every route at the municipality-scoped URL `/bus/routes/new-taipei/<slug>/`.[^tdx-bus] That path includes the municipality group, so a numeric collision with a Taipei route cannot overwrite or masquerade as the other record.[^tdx-bus]
 
 The full current New Taipei route-service dataset was fetched and joined by exact route name.[^ntpc-bus-route-data] Missing current rows stay TBC on their route pages; no related route is used as a proxy.[^ntpc-bus-route-data]

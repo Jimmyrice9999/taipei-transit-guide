@@ -157,6 +157,7 @@ export default function RichText({
   children,
   link = false,
   label,
+  badges = true,
 }: {
   children: string
   /**
@@ -181,6 +182,24 @@ export default function RichText({
    * Narrows which pages a name may resolve to — see the note on SCOPES.
    */
   label?: string
+  /**
+   * Whether a station-code-shaped token may become a station badge.
+   *
+   * ── The false badge this turns off ─────────────────────────────────────────
+   *
+   * A badge asserts "this is a real station", and the tokenizer decides from
+   * the shape of the string plus a lookup. That is right in prose and in a
+   * facts panel, and wrong wherever the surrounding subject is not the metro:
+   * the brown-line feeder bus route titled `BR10 / 棕10` was rendering BR10 as
+   * a brown station badge, which says the bus route is Jiannan Road station. It
+   * is not; BR10 there is the route's own identifier and the collision with a
+   * Wenhu station code is a coincidence of two numbering schemes.
+   *
+   * Off wherever the caller knows the string belongs to another numbering
+   * scheme. Not a heuristic inside the tokenizer, because the tokenizer cannot
+   * know what the page is about — only the caller can.
+   */
+  badges?: boolean
 }) {
   const tokens = tokenize(children)
   if (isPlain(tokens))
@@ -209,7 +228,7 @@ export default function RichText({
 
         const line = getLine(token.line)
         const station = getStation(token.value)
-        if (!line || !station) return <Fragment key={i}>{token.value}</Fragment>
+        if (!badges || !line || !station) return <Fragment key={i}>{token.value}</Fragment>
 
         return (
           <span

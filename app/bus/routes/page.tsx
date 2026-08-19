@@ -40,6 +40,9 @@ export default function BusRoutesIndexPage() {
       <BackLink href="/bus/" label="Bus" />
       <h1 className="page-title">Bus routes</h1>
       <p className="page-summary">Route groups are the browse key. {publishedRoutes} route pages are published across {groups.length} group{groups.length === 1 ? '' : 's'} so far, covering {totalRoutes} normalized TDX identities.</p>
+      {/* A description of a list goes above the list. This sat under it, where
+          it explained what the reader had already finished reading. */}
+      <p className="section-desc">Every group is municipality- or service-class scoped; a partially published group shows its current page count against the normalized TDX identities.</p>
       <ul className="card-list">
         {groups.map(({ group, folder, routes }) => (
           <li key={group}>
@@ -58,7 +61,6 @@ export default function BusRoutesIndexPage() {
           </li>
         ))}
       </ul>
-      <p className="section-desc">Every group is municipality- or service-class scoped; a partially published group shows its current page count against the normalized TDX identities.</p>
     </PageShell>
   )
 }

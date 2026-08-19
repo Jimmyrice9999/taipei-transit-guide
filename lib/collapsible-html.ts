@@ -1,34 +1,32 @@
 /**
- * Wrap long Markdown bodies' major sections in native disclosures.
+ * ── Withdrawn in run 51, kept as the record of why ──────────────────────────
  *
- * The Markdown has already been converted to trusted HTML by the content
- * loader. This keeps that HTML in the static output while moving each h2's
- * text into a keyboard-operable summary. Short two-section pages are left
- * alone; they do not benefit from another control.
+ * This used to wrap every `<h2>` of a long Markdown body in a native
+ * `<details>`, first section open, on any page with three or more of them. On
+ * the Wenhu Line, the Matra dispute and every other researched page, that put
+ * the page's ENTIRE ARGUMENT behind a row of closed grey summaries.
+ *
+ * Run 51's brief: where a section is the main reason someone is on the page, it
+ * renders open with no collapse control at all. A researched body is the
+ * clearest case there is. Three concrete costs, beyond the click:
+ *
+ *   find-in-page   Ctrl+F does not search inside a closed `<details>`. On a
+ *                  reference site that is the primary way a long page is used,
+ *                  and it silently returned nothing.
+ *   fragment links The build gives every heading an id and the citation
+ *                  markers link to footnotes. A link to `#the-second-dispute`
+ *                  scrolled to a closed row and stopped.
+ *   print          A closed `<details>` prints closed. Every print PDF of a
+ *                  long page was one section and a list of headings.
+ *
+ * The function is now identity. It is left in place, rather than deleted with
+ * its call sites, so that the reasoning survives where the next person will
+ * look for it — and so that "make the long pages collapsible" comes back here
+ * to read this first. If a long body ever needs navigation, the answer is a
+ * table of contents beside the prose, which adds a way in without taking the
+ * prose away.
  */
 
-const H2 = /<h2\b([^>]*)>([\s\S]*?)<\/h2>/gi
-
 export function collapseMajorSections(html: string) {
-  const sections = [...html.matchAll(H2)]
-  if (sections.length < 3) return html
-
-  const firstStart = sections[0].index ?? 0
-  let output = html.slice(0, firstStart)
-
-  sections.forEach((section, index) => {
-    const start = section.index ?? 0
-    const contentStart = start + section[0].length
-    const contentEnd = sections[index + 1]?.index ?? html.length
-    const id = section[1].match(/\sid=["']([^"']+)["']/i)
-    const idAttribute = id ? ` id="${id[1]}"` : ''
-    const open = index === 0 ? ' open' : ''
-
-    output += `<details class="content-disclosure"${open}>`
-    output += `<summary><h2 class="content-disclosure-title"${idAttribute}>${section[2]}</h2><span class="disclosure-caret" aria-hidden="true"></span></summary>`
-    output += `<div class="content-disclosure-body">${html.slice(contentStart, contentEnd)}</div>`
-    output += '</details>'
-  })
-
-  return output
+  return html
 }

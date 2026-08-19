@@ -57,8 +57,11 @@ export default async function BusRouteGroupPage({ params }: Props) {
       key={route.id}
       href={`/bus/routes/${group}/${route.canonicalSlug}/`}
       title={`${route.names.en} / ${route.names.zh_tw}`}
-      summary={`${route.sourceCities.join(', ')} Â· ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
+      summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
       line={lineCode}
+      /* A bus route's number is its own; a collision with a metro station code
+         is a coincidence of two numbering schemes. See RichText's `badges`. */
+      badges={false}
     />
   ))
 
@@ -70,11 +73,20 @@ export default async function BusRouteGroupPage({ params }: Props) {
       <h1 className="page-title"><RichText>{folder.title}</RichText></h1>
       {folder.description && <p className="page-summary"><RichText>{folder.description}</RichText></p>}
       {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
-      <References references={folderContent.references} />
       {group === 'new-taipei' ? (
         <div className="bus-subgroups">
-          {subgroups.map((subgroup) => (
-            <details key={subgroup.key} className="index-disclosure subgroup-disclosure">
+          {subgroups.map((subgroup, index) => (
+            /*
+             * Seven peers, and the reader is choosing between them — the case a
+             * disclosure is for. The first opens so the page is never a column
+             * of closed rows; the other six wait. With 562 routes in this group
+             * that is the difference between a browsable page and a scroll.
+             */
+            <details
+              key={subgroup.key}
+              className="index-disclosure subgroup-disclosure"
+              open={index === 0}
+            >
               <summary>
                 <span className="section-heading" role="heading" aria-level={2}>{subgroup.title}</span>
                 <span className="disclosure-count">{subgroup.routes.length} routes</span>
@@ -88,13 +100,19 @@ export default async function BusRouteGroupPage({ params }: Props) {
           ))}
         </div>
       ) : (
-      <details className="index-disclosure">
-        <summary>
-          <span className="section-heading" role="heading" aria-level={2}>Routes in this group</span>
+      /*
+       * Run 51, part 4. This was a disclosure, closed, wrapping the entire
+       * reason the page exists: /bus/routes/colour-brown/ opened with a single
+       * grey summary row and no routes visible. Reported, and correct to
+       * report. One list that is the page gets no control — see the note on
+       * `.index-section` in globals.css.
+       */
+      <section className="index-section">
+        <h2 className="section-heading">
+          Routes in this group
           <span className="disclosure-count">{routes.length} routes</span>
-          <span className="disclosure-caret" aria-hidden="true" />
-        </summary>
-        <div className="index-disclosure-body">
+        </h2>
+        <div>
           <ul className="card-list">
         {routes.map((route) => (
           <CardRow
@@ -103,12 +121,17 @@ export default async function BusRouteGroupPage({ params }: Props) {
             title={`${route.names.en} / ${route.names.zh_tw}`}
             summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
             line={lineCode}
+            badges={false}
           />
         ))}
           </ul>
         </div>
-      </details>
+      </section>
       )}
+      {/* Sources last: a reference list is what you check a statement against,
+          so it belongs below everything it answers for — not above the route
+          list, which is where it used to sit. */}
+      <References references={folderContent.references} />
     </PageShell>
   )
 }
