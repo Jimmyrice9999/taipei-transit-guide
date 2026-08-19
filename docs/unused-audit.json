@@ -1,6 +1,6 @@
 {
-  "exports": 295,
-  "cssClasses": 320,
+  "exports": 303,
+  "cssClasses": 332,
   "imageSidecars": 70,
   "unusedExports": [
     {
@@ -232,6 +232,11 @@
       "name": "SanyingResearch",
       "file": "lib/sanying-stations.ts",
       "line": 16
+    },
+    {
+      "name": "SearchHit",
+      "file": "lib/search.ts",
+      "line": 88
     },
     {
       "name": "SITE_ORIGIN",

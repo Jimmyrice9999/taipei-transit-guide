@@ -184,9 +184,18 @@ export default function NetworkPage() {
         drawn below from Taiwan MOTC route geometry
         {offPlatform.map((s) => (
           <React.Fragment key={s.line.code}>
+            {/*
+              Run 51. This said the line "is not on the map", which stopped
+              being true in part 1 of the same run — the note under this
+              paragraph and the map itself both said otherwise, three sentences
+              apart. The line is drawn; what is worth saying here is what it is
+              drawn from, because that is the part a reader would otherwise
+              assume.
+            */}
             ; the {s.line.name} Line is newer than MOTC&rsquo;s extract, so its{' '}
             {s.published?.stations ?? 0} stations are outside that station count and it is
-            not on the map
+            drawn dashed, as a chain of the operator&rsquo;s published station points rather
+            than as surveyed track
           </React.Fragment>
         ))}
         . Colours are the official ones each operator publishes — not the values

@@ -239,8 +239,15 @@ console.log('\n4. The bar, and the trail\n')
     const before = await page.evaluate(
       () => document.querySelector('.site-header').getBoundingClientRect().height,
     )
-    await page.locator('.nav-item').first().locator('button').click()
-    await page.waitForTimeout(200)
+    /*
+     * Hover, not click. This is the gesture the bug was reported with, and it
+     * is also the only one that works here: on a hover-capable pointer the
+     * panel opens on mouseenter, so a subsequent click on the caret — which is
+     * a toggle and reads aria-expanded — closes the panel it just opened.
+     * Section 2 covers the tap path, where there is no hover to race.
+     */
+    await page.locator('.nav-item').first().locator('a').first().hover()
+    await page.waitForTimeout(300)
     const after = await page.evaluate(() => ({
       height: document.querySelector('.site-header').getBoundingClientRect().height,
       open: !!document.querySelector('.nav-panel:not([hidden])'),
@@ -261,7 +268,8 @@ console.log('\n4. The bar, and the trail\n')
   // Home → Rail dropdown → Network → an operator link.
   await page.goto(base + '/', { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
-  await page.locator('.nav-item').first().locator('button').click()
+  await page.locator('.nav-item').first().locator('a').first().hover()
+  await page.waitForTimeout(300)
   await page.locator('.nav-panel:not([hidden]) a[href$="/rail/network/"]').first().click()
   await settle()
   const operator = await page.locator('main a[href^="/rail/operators/"]').first().getAttribute('href')

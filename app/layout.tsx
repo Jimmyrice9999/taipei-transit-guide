@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Zilla_Slab, Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteNav from '@/components/SiteNav'
+import SiteSearch from '@/components/SiteSearch'
 import { getNavTree } from '@/lib/nav'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 import { operatorCodesFor } from '@/lib/operators'
@@ -267,6 +268,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 generated from the TDX records rather than written in Markdown,
                 so it has no submenu and is passed separately. */}
             <SiteNav sections={navTree} extra={[{ href: '/data/', title: 'Data' }]} />
+            {/* Last in the bar and last in the tab order: the sections are the
+                primary navigation and search is the shortcut past them. */}
+            <SiteSearch />
           </div>
         </header>
 

@@ -48,6 +48,7 @@ import path from 'node:path'
 import http from 'node:http'
 import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright'
+import { isRedirectStub } from './redirect-stub.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = path.join(ROOT, 'out')
@@ -160,6 +161,14 @@ const PAGE_TYPES = [
   { name: 'rail-depots', url: '/rail/metro/depots/' },
   { name: 'rail-stations', url: '/rail/metro/stations/' },
   { name: 'network', url: '/rail/network/' },
+  /*
+   * Run 51's new layouts. The comment on this list has now been proved right
+   * three runs running: a layout not in it has no browser coverage.
+   */
+  { name: 'rail-system-metro', url: '/rail/metro/' },
+  { name: 'rail-system-cable', url: '/rail/cable/' },
+  { name: 'rail-technology', url: '/rail/technology/' },
+  { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },
@@ -174,13 +183,17 @@ function allPages() {
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name)
-      // out/train holds the /train → /rail redirect stubs. They meta-refresh
-      // instantly, so navigating to one destroys the execution context mid-
-      // measurement — the harness crashes on its own redirects. Not pages;
-      // they have their own test in build-output.test.mts.
-      if (entry.isDirectory() && dir === OUT && entry.name === 'train') continue
       if (entry.isDirectory()) walk(full)
-      else if (entry.name === 'index.html') {
+      /*
+       * Redirect stubs are not pages. They meta-refresh instantly, so
+       * navigating to one destroys the execution context mid-measurement and
+       * the harness crashes on the site's own redirects. Identified by the
+       * marker in the file (scripts/redirect-stub.mjs) rather than by path —
+       * run 51 moved the Rail section under a system level, which put stubs
+       * inside the live trees where no path rule can find them. They have
+       * their own test in build-output.test.mts.
+       */
+      else if (entry.name === 'index.html' && !isRedirectStub(fs.readFileSync(full, 'utf8'))) {
         // path.relative(OUT, OUT) is '' — naive joining produced '//', which
         // the client router treats as an invalid route and swaps the page for
         // Next's error shell. Every "finding" on that URL was this harness

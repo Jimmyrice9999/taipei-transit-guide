@@ -185,3 +185,66 @@ test('every line colour is distinct', () => {
     seen.set(line.map, line.code)
   }
 })
+
+/*
+ * ── The two search fields, measured rather than eyeballed ───────────────────
+ *
+ * Run 51 added a search input to the header and a filter input to the long bus
+ * route group pages. A text field's boundary is what identifies it as a
+ * control, so WCAG 1.4.11 applies to it at 3:1 — and in the header the field's
+ * own fill is barely a shade off the band, which leaves the border doing all of
+ * that work by itself.
+ *
+ * `--rule-strong` was the obvious border colour and is the wrong one:
+ * lib/surfaces.ts exempts it from 3:1 explicitly, on the argument that it is a
+ * row separator rather than a control boundary. That argument does not cover a
+ * text field, so the exemption does not either.
+ *
+ * These are literal values in globals.css rather than custom properties, so
+ * lib/surfaces.ts's "every --name must have a role" sweep cannot see them.
+ * Read out of the stylesheet here so a later edit to the numbers has to face
+ * the threshold.
+ */
+test('both search fields have a boundary that identifies them', async () => {
+  const fs = await import('node:fs')
+  const path = await import('node:path')
+  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+
+  /** rgba(255,255,255,a) composited over an opaque background. */
+  const over = (alpha: number, base: string) => {
+    const channel = (i: number) => {
+      const back = parseInt(base.slice(1 + i * 2, 3 + i * 2), 16)
+      return Math.round(back + (255 - back) * alpha)
+    }
+    return '#' + [0, 1, 2].map((i) => channel(i).toString(16).padStart(2, '0')).join('')
+  }
+
+  const rule = (selector: string) => {
+    const block = css.slice(css.indexOf(selector))
+    return block.slice(0, block.indexOf('}'))
+  }
+
+  // The header field, on the dark band.
+  const bar = rule('.site-search-input {')
+  const alpha = Number(bar.match(/border:\s*1px solid rgba\(255,\s*255,\s*255,\s*([\d.]+)\)/)?.[1])
+  assert.ok(Number.isFinite(alpha), 'could not read the header search input border')
+  const measured = contrast(over(alpha, '#16191c'), '#16191c')
+  assert.ok(
+    measured >= AA_NON_TEXT,
+    `the header search field's border is ${ratio(measured)}:1 on the band, below ${AA_NON_TEXT}`,
+  )
+
+  // The in-page field, on white. --text-3 is the token; check the token, not
+  // the name, so renaming it cannot quietly change what ships.
+  const filter = rule('.route-filter-input {')
+  assert.match(
+    filter,
+    /border:\s*1px solid var\(--text-3\)/,
+    'the route filter input no longer uses a boundary colour that clears 3:1',
+  )
+  const onWhite = contrast('#666e79', WHITE)
+  assert.ok(
+    onWhite >= AA_NON_TEXT,
+    `--text-3 is ${ratio(onWhite)}:1 on white, below ${AA_NON_TEXT}`,
+  )
+})

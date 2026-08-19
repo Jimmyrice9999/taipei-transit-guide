@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import BackLink from '@/components/BackLink'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CardRow from '@/components/CardRow'
+import RouteFilter from '@/components/RouteFilter'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
@@ -18,6 +19,16 @@ import { getAccent } from '@/lib/lines'
 type Props = { params: Promise<{ group: string }> }
 
 export const dynamicParams = false
+
+/*
+ * Above this many routes a group gets its own filter box.
+ *
+ * Twenty is the size of the brown-line feeder group, which fits on one screen
+ * at desktop width and does not need one; New Taipei's 562 plainly does. The
+ * number is a judgement about when a list stops being scannable, not a
+ * measurement, and it is here rather than inline so it is one decision.
+ */
+const FILTER_THRESHOLD = 24
 
 function hasOverlay(group: string, slug: string) {
   return fs.existsSync(path.join(process.cwd(), 'content', 'bus', 'routes', group, `${slug}.md`))
@@ -57,6 +68,9 @@ export default async function BusRouteGroupPage({ params }: Props) {
       key={route.id}
       href={`/bus/routes/${group}/${route.canonicalSlug}/`}
       title={`${route.names.en} / ${route.names.zh_tw}`}
+      /* The keys the in-group filter matches on — the same three the global
+         search index carries for this route. */
+      search={`${route.names.en} ${route.names.zh_tw} ${route.canonicalSlug}`}
       summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
       line={lineCode}
       /* A bus route's number is its own; a collision with a metro station code
@@ -73,6 +87,13 @@ export default async function BusRouteGroupPage({ params }: Props) {
       <h1 className="page-title"><RichText>{folder.title}</RichText></h1>
       {folder.description && <p className="page-summary"><RichText>{folder.description}</RichText></p>}
       {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
+      {/*
+        The filter scope. Every route below is a real link in the static HTML;
+        the filter only sets `hidden` on rows that do not match — see the note
+        in components/RouteFilter for why it works that way round.
+      */}
+      <div data-route-filter="">
+      {routes.length >= FILTER_THRESHOLD && <RouteFilter total={routes.length} />}
       {group === 'new-taipei' ? (
         <div className="bus-subgroups">
           {subgroups.map((subgroup, index) => (
@@ -85,6 +106,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
             <details
               key={subgroup.key}
               className="index-disclosure subgroup-disclosure"
+              data-subgroup=""
               open={index === 0}
             >
               <summary>
@@ -119,6 +141,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
             key={route.id}
             href={`/bus/routes/${group}/${route.canonicalSlug}/`}
             title={`${route.names.en} / ${route.names.zh_tw}`}
+            search={`${route.names.en} ${route.names.zh_tw} ${route.canonicalSlug}`}
             summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
             line={lineCode}
             badges={false}
@@ -128,6 +151,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
         </div>
       </section>
       )}
+      </div>
       {/* Sources last: a reference list is what you check a statement against,
           so it belongs below everything it answers for — not above the route
           list, which is where it used to sit. */}

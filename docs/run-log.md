@@ -12181,3 +12181,155 @@ registry now, and the station trail gained its Metro crumb.
 `npm run cite` clean, `npm run verify` green, `npm run test:unit` 195/195,
 `npm run nav` 19/19. `npm run unused` reports no unreferenced CSS class left by
 the disclosure removal.
+
+# Run 51 — Part 5, search, 19 August 2026
+
+## The index
+
+Built from the same registries the pages are built from — `getAllPages()`,
+`STATIONS`, the bus route records and the folder tree — and written to
+`public/data/search-index.json` by `npm run search`. **1,387 entries, 164 KB,
+1,275 of them carrying a Chinese name.**
+
+Four kinds of key, because a reader arrives with whichever one they have:
+
+| key | example | where it comes from |
+| --- | --- | --- |
+| English name | Songshan Airport, Muzha Depot | the page title, the station record |
+| Chinese name | 松山機場, 文湖線, 棕10 | `nameZh`, and the Han entries in a page's `aliases` |
+| station code | BR13, R22A | the station record |
+| route number / slug | 212, brown-10, blue-26 | the route's canonical slug |
+
+Indexed: every content page, every station with a page, every built bus route,
+every section, system, type index and bus route group. A reader who types
+"stations" wants the index, and an index is a page — without those entries the
+search could find every station and not the page that lists them.
+
+The file is committed, and `tests/search.test.mts` rebuilds it and compares. A
+content change that is not followed by `npm run search` fails the build rather
+than shipping a search box that cannot find the new page — the same contract
+the font subsets have. Entries are sorted by href, so two runs over the same
+content produce byte-identical files.
+
+## The matcher
+
+Deliberately dumb and explainable: exact key, then prefix, then substring, with
+codes weighted above names. A score anyone can read is a score anyone can debug,
+and a reference site's search has one job — get the thing whose name you typed.
+
+Normalisation folds case, NFKD diacritics, whitespace and the separator
+characters that differ between how a reader types a name and how the source
+writes it: `Zhonghe–Xinlu` carries an en dash, `Tamsui-Xinyi` a hyphen, `BR 13`
+a space. Han is left alone; it has no case and no spacing to fold. The dash
+range is written as `\u` escapes, for the reason components/RichText already
+records: spelled out, the file's encoding becomes load-bearing for a regex.
+
+**One bug found and fixed while writing the tests.** The matcher split every
+field on spaces before normalising, so the title "New Taipei bus routes" became
+four tokens — "new", "taipei", "bus", "routes" — and the query "new taipei",
+which normalises to one word, matched none of them. The group page a reader had
+typed the name of came back below four operator records. Only the key field is a
+list and only the key field is split; the names are matched whole, then word by
+word at a lower weight. Pinned in `tests/search.test.mts`.
+
+Checked answers, all pinned: `br13` → Songshan Airport. `BR 13` → the same.
+`r22a` → Xinbeitou. `文湖線` → Wenhu Line. `松山機場` → Songshan Airport.
+`棕10` → `/bus/routes/colour-brown/brown-10/`. `212` → the 200-series route.
+`藍26` → `/bus/routes/colour-blue/blue-26/`. `new taipei` → the group page.
+`muzha depot` → the depot, not the station. `matra` → the article.
+
+## The box in the bar
+
+A combobox, per WAI-ARIA: the input owns `aria-expanded` and `aria-controls`,
+the results are a `listbox`, and the active option is named by
+`aria-activedescendant` rather than taking focus — so the caret stays in the
+input and typing keeps working while arrowing through results. A polite live
+region announces the count, because a sighted reader watches the list appear and
+a screen-reader user otherwise gets nothing until they arrow into it. Escape
+clears. Every result is a real `<a>` to a real static page, so Enter, a click
+and open-in-new-tab all work; a button with an onClick would have broken the
+third.
+
+**Without script the input renders disabled**, labelled "Search needs
+JavaScript", with a `<noscript>` link to the indexes. Not hidden, because a
+control that appears out of nowhere on hydration shifts the bar; not
+enabled-but-inert, because an input you can type into that does nothing is the
+worst of the three. Verified with `javaScriptEnabled: false`.
+
+**The index is fetched on first focus, not on page load.** 164 KB of JSON is not
+something to put on the critical path of a station page, and the fetch starts
+before the first keystroke is finished.
+
+Mobile first: below 780px the box takes its own full-width row under the
+sections at 44px tall with 16px text, which is what stops iOS zooming the page
+on focus. Above that it is a 220px slot at the end of the bar.
+
+## In-group filtering
+
+`/bus/routes/new-taipei/` carries 562 routes. Any group over 24 — the size of
+the brown-line feeder group, which fits on one screen — gets a filter box.
+
+**It filters the DOM rather than re-rendering the list.** Every route is a real
+`<a>` in the static HTML and that is the property that had to survive; a filter
+that rebuilt the list from data would make the links exist only while script
+runs, which is the opposite of what this site is. Turn the script off and every
+route is still there, in order, linked.
+
+Matching reads `data-search` off each row — the route's English name, its
+Chinese name and its slug, written by the server — rather than the row's
+rendered text, so it uses exactly the keys the global index uses and cannot
+match the operator count in the summary line. A subgroup with a match opens; one
+without is hidden; and each subgroup's own count is swapped for "2 of 70" while
+a filter is running, because a subgroup printing its full total above two rows
+reads as a fault.
+
+Measured: `跳蛙` → 2 of 562, with only Jump-frog open. `967` → 4 of 562.
+
+## Contrast, measured rather than eyeballed
+
+A text field's boundary is what identifies it as a control, so WCAG 1.4.11
+applies at 3:1 — and in the header the field's fill is barely a shade off the
+band, which leaves the border doing all of that work alone.
+
+`--rule-strong` was the obvious border colour and is the wrong one:
+`lib/surfaces.ts` exempts it from 3:1 explicitly, on the argument that it is a
+row separator rather than a control boundary, and that argument does not cover a
+text field. Measured and fixed:
+
+| | value | ratio |
+| --- | --- | --- |
+| header field border | `rgba(255,255,255,0.22)` → `0.4` | 2.04:1 → **3.82:1** |
+| in-page field border | `--rule-strong` → `--text-3` | 1.62:1 → **5.16:1** |
+| results panel border | `--rule-strong` → `--text-3` | 1.62:1 → **5.16:1** |
+| field text on the field | `--band-ink` | 11.33:1 |
+| placeholder on the field | `--band-ink-dim` | 5.27:1 |
+
+These are literal values rather than custom properties, so `lib/surfaces.ts`'s
+"every `--name` must have a role" sweep cannot see them. A test in
+`tests/contrast.test.mts` reads them back out of the stylesheet, so a later edit
+to the numbers has to face the threshold.
+
+Nothing animates in either control, so `prefers-reduced-motion` has nothing to
+turn off. Both are removed for print, where a filter's count would state a page
+state the paper does not have.
+
+## Gates
+
+`npm run cite` clean, `npm run verify` green, `npm run test:unit` 208/208 (12
+new in `tests/search.test.mts`, one in `tests/contrast.test.mts`), `npm run nav`
+19/19, `npm run verify:browser` clean — 0 reflow failures, 0 axe violations at
+any impact, 0 keyboard findings, 0 spine overlaps, 36 print PDFs.
+
+`npm run verify:browser` needed two fixes of its own before it would run at all.
+It identified redirect stubs by path and now navigates into the ones part 2 put
+inside the live trees, which destroys the execution context mid-measurement —
+it uses the shared marker now. And its page list gained the four layouts this
+run introduced: `/rail/metro/`, `/rail/cable/`, `/rail/technology/` and
+`/bus/routes/new-taipei/`. The comment on that list has now been proved right
+three runs running: a layout not in it has no browser coverage.
+
+`npm run nav`'s new bar-height check was corrected rather than relaxed: it
+clicked the caret, and on a hover-capable pointer the panel opens on mouseenter,
+so the click that followed closed the panel it had just opened. It hovers now,
+which is the gesture the bug was reported with; section 2 still covers the tap
+path, where there is no hover to race.

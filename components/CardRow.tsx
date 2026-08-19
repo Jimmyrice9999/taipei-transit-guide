@@ -54,6 +54,14 @@ export default function CardRow({
    * `badges` in RichText.
    */
   badges = true,
+  /**
+   * The keys an in-page filter matches this row on, written to `data-search`.
+   *
+   * Explicit rather than read from the row's rendered text: the summary line
+   * carries an operator count and a municipality, and a filter that matched
+   * those would return rows for "1" and "Taipei". See components/RouteFilter.
+   */
+  search,
 }: {
   href: string
   title: React.ReactNode
@@ -61,12 +69,14 @@ export default function CardRow({
   line?: string
   isLine?: boolean
   badges?: boolean
+  search?: string
 }) {
   const line = getLine(lineCode)
 
   return (
     <li
       data-line={line ? line.code : undefined}
+      data-search={search}
       style={
         line
           ? ({ '--row-map': line.map, '--row-ink': line.ink } as React.CSSProperties)
