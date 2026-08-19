@@ -10824,4 +10824,48 @@ retained; all three were removed rather than fabricated a citation or
 widened the baseline. Ratchet holds at 32.
 
 Gates: `npm run cite`, `npm run verify` and the full test suite green.
-Commit pending.
+Commit `5ed1d12`, pushed.
+
+### series-other = series-100s (6) + series-900s (13), all 19 routes, checked 19 August 2026
+
+Both TDX groups (a numbering-gap leftover identified in an earlier Part of
+this run, not a colour or 幹線 class) built together. All 19 confirmed
+under the catalogue's 一般公車 heading. 907's plain/通勤 split and 902/905's
+區/副 variants each have their own distinct routeid, matching TDX's
+separate-route treatment, consistent with every other batch this run.
+
+**Three genuine conflicts published, not resolved:**
+- **108**: the primary schedule page names the same stop as both ends of
+  the route (reads as a loop); a secondary wiki source gives a distinct
+  陽明山–擎天崗 terminus pair. Both kept.
+- **129**: the primary buffer-zone field reads 陽明山家公園管理處 (missing
+  國) on two independent fetches, against the expected/wiki-given
+  陽明山國家公園管理處; also a wiki 2017-hours figure disagreeing with the
+  route's current hours. Both discrepancies published, not corrected on
+  the site's own initiative.
+- **950**: a 2014 New Taipei City Government launch press release states
+  28 daily trips ending 2200; the live schedule page shows 17 trips ending
+  2000. TDX records three subroutes under 950, so the figures may count
+  different subsets rather than genuinely disagreeing — stated as an open
+  possibility, not settled.
+
+**Corroborations found, not just conflicts:** 902's operator history (opened
+1998 under 台北市公車處, joint-operated 1999, sole 指南客運 from 2001) is
+independently consistent with 902區's own separately-stated 2024 shuttle
+launch date; 949's 29 March 2014 cross-city-express launch is corroborated
+by both a primary NTPC press release and a secondary wiki date
+independently agreeing; 957's dual-operator arrangement (淡水客運, 指南客運
+sharing one contact) is explained by both belonging to the 中興巴士集團
+group, per a secondary source not otherwise used to assert the fact itself.
+903's 經三總/不經三總 subroutes and 907通勤's five separately-timed
+commuter departures are both explained directly by their own primary
+schedule pages, not inferred.
+
+No content-authoring or code fixes were needed this batch — both lessons
+recorded in the series-300s section above (the fact-check.mjs absence-
+regex trap, and keeping process narration out of published prose) were
+applied from the start and neither problem recurred.
+
+Gates: `npm run cite`, `node scripts/claims.mjs --list` (clean for these
+19 files) and `npm run build` all clean on the first pass; `npm run
+verify` and the full test suite green. Commit pending.

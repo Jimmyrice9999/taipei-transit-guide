@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2191,
-    "tbc": 889,
+    "sourced": 2329,
+    "tbc": 918,
     "asserted": 32,
     "meta": 42
   },
@@ -1681,6 +1681,62 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/series-100s/108-hvewbe.md",
+      "sources": 4,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/108-yr5f6.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/109.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/111.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/128.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/129.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-100s/_index.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/series-300s/300.md",
       "sources": 4,
       "sourced": 7,
@@ -1850,6 +1906,118 @@
     },
     {
       "file": "content/bus/routes/series-700s/_index.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/902-1kitn6b.md",
+      "sources": 6,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/902-6x90oz.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/903.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/905-109pl3s.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/905-my7at0.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/907-8hqm33.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/907-uowynk.md",
+      "sources": 3,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/912.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/915.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/949.md",
+      "sources": 5,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/950.md",
+      "sources": 5,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/955.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/957.md",
+      "sources": 5,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-900s/_index.md",
       "sources": 2,
       "sourced": 1,
       "tbc": 0,
