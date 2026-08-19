@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “蘆洲 - 捷運善導寺站”, the current head/last-departure field “[平日] 0530 - 2230 [假日] 0530 - 2230”, fare “兩段票”.[^ebus-route-232-1qerxjp]
 
+The confirmed stop sequence runs from 蘆洲總站, past 民族路口/捷運蘆洲站/
+永平市場, through 蘆洲監理站/溪墘/捷運徐匯中學站, along 幸福市場/義天宮/力行
+路/忠孝路/果菜市場, through 捷運三重站/重新大橋/祖師廟(貴陽), ending at 捷運
+西門站/寶慶路/臺北車站(忠孝)/捷運善導寺站.[^tdx-bus] Seven confirmed
+interchanges are recorded in the curated stop-ID join set: Sanchong
+Station, Ximen, Taipei Main Station, Shandao Temple, Sanchong, St.
+Ignatius High School and Luzhou.[^tdx-bus] The route runs a single
+subroute under one operator, 三重客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 蘆洲 with 捷運善導寺站 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming fewer interchanges than its own express sibling 232快 despite covering a longer corridor.

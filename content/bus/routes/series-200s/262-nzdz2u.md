@@ -53,6 +53,16 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “中和 - 民生社區”, the current head/last-departure field “[平日] 0500 - 2220 [假日] 0515 - 2200”, fare “兩段票”.[^ebus-route-262-nzdz2u]
 
+The confirmed stop sequence runs from 中和保養廠, past 捷運中和站/捷運
+景安站/中和教會, through 中興新村/永和國小/捷運頂溪站, along 重慶南路三
+段(中正橋)/臺北郵局/臺北車站(忠孝), through 捷運善導寺站/捷運忠孝敦化站/
+臺北小巨蛋, ending at 民生社區's own 民生社區活動中心/塔悠疏散門.[^tdx-bus] Ten confirmed interchanges are recorded in the curated
+stop-ID join set: Ximen, Taipei Main Station, Shandao Temple,
+Zhongxiao Xinsheng, Zhongxiao Fuxing, Songshan Airport, Xiaonanmen,
+Jingan, Dingxi and Zhonghe.[^tdx-bus] TDX records four named
+direction/variant records, including a pet-friendly working (狗狗
+公車) alongside the plain corridor and its two directional short-turns.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own shorter weekday span against a slightly narrower holiday one was found in this search, nor a stated reason for pairing 中和 with 民生社區 specifically as the route's own termini.

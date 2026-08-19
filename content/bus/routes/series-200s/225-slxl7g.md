@@ -53,6 +53,18 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “蘆洲 - 民生社區”, the current head/last-departure field “[平日] 0500 - 2230 [假日] 0500 - 2230”, fare “兩段票”.[^ebus-route-225-slxl7g]
 
+The confirmed stop sequence runs from 蘆洲總站, past 忠義國小/柳堤公園/
+中原公園, through 捷運蘆洲站/蘆洲監理站/溪墘, along 捷運徐匯中學站/捷運三和
+國中站/三重國小, through 捷運民權西路站/民權吉林路口/民權敦化路口, ending
+at 松山機場's own 新益里 in Minsheng Community.[^tdx-bus] Eight confirmed
+interchanges are recorded in the curated stop-ID join set, matching
+the same list confirmed for its own shuttle sibling 225區: Zhongshan
+Junior High School, Songshan Airport, Zhongshan Elementary School,
+Minquan W. Rd., Sanchong Elementary School, Sanhe Junior High School,
+St. Ignatius High School and Luzhou.[^tdx-bus] TDX records four named
+direction/variant records, including a pet-friendly working (狗狗公車)
+alongside the plain corridor and its two directional short-turns.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 蘆洲 with 民生社區 specifically as the route's own termini was found in this search.

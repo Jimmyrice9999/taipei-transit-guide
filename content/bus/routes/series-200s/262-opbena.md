@@ -53,6 +53,19 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “宏國德霖科技大學 - 民生社區”, the current head/last-departure field “[平日] 0530 - 2130 [假日] 0600 - 2310”, fare “兩段票”.[^ebus-route-262-opbena]
 
+At up to 77 stops, the confirmed stop sequence is among the longest
+in this batch, running from 宏國德霖科技大學 in Tucheng, past 清水/土城
+看守所/中正國中, through 中和高中/中和保養廠/捷運中和站, along 中興新村/
+捷運頂溪站/重慶南路三段(中正橋), through 臺北車站(忠孝)/捷運忠孝敦化站/
+臺北小巨蛋, ending at 民生社區.[^tdx-bus] Eleven confirmed interchanges
+are recorded in the curated stop-ID join set, one more than its own
+shuttle sibling 262區: Ximen, Taipei Main Station, Shandao Temple,
+Zhongxiao Xinsheng, Zhongxiao Fuxing, Songshan Airport, Xiaonanmen,
+Jingan, Dingxi, Zhonghe and Qiaohe.[^tdx-bus] TDX records only two
+named direction/variant records, both half-trip workings (去程半/
+返程半), with a longer published holiday span than its own weekday
+one.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own longer holiday span against a shorter weekday one, the reverse of the usual pattern in this batch, was found in this search.

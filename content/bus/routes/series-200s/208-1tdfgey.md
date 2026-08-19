@@ -53,6 +53,17 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “新店 - 大直”, the current head/last-departure field “[平日] 0500 - 2230 [假日] 0600 - 2200”, fare “兩段票”.[^ebus-route-208-1tdfgey]
 
+The confirmed stop sequence runs from 及人中學 in New Taipei's Ankeng
+area, past 中興新村/福和橋(永元路)/捷運公館站, through 台電大樓/捷運中正
+紀念堂站/臺大醫院/開南中學, along 捷運善導寺站/中山國小/景福宮/捷運圓山站,
+through 中央電台/空軍司令部/捷運大直站/自強隧道, ending at 美麗華/敬業四路
+in Dazhi.[^tdx-bus] Eleven confirmed interchanges are recorded in the
+curated stop-ID join set: Shandao Temple, Dazhi, Jiannan Rd., Gongguan, Taipower Building,
+Guting, Chiang Kai-Shek Memorial Hall, Sunshine Sports Park, Xinhe
+Elementary School, Zhongshan Elementary School and Yuanshan.[^tdx-bus]
+TDX records two named subroutes distinguishing the full run from a
+shorter outbound-only working.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 新店 with 大直 specifically as the route's own termini, nor for its own shorter published holiday span against a fuller weekday one, was found in this search.

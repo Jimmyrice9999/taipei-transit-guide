@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “深坑 - 臺北車站”, the current head/last-departure field “[平日] 0520 - 2300 [假日] 0520 - 2300”, fare “兩段票”.[^ebus-route-251-3pttdn]
 
+The confirmed stop sequence runs from 福安居 in Shenkeng, past 阿柔洋/
+台新工廠/東南科技大學, through 富德/象頭埔/萬福橋, along 捷運木柵站/木柵
+高工/木柵市場, through 忠順廟/興隆路口(忠順)/世新大學, past 財政園區/萬隆/
+捷運萬隆站, ending at 一女中(公園)/捷運台大醫院站/臺北車站(開封).[^tdx-bus] Eight confirmed interchanges are recorded in the curated
+stop-ID join set: Muzha, Jingmei, Wanlong, Gongguan, Taipower
+Building, Guting, Chiang Kai-Shek Memorial Hall and NTU Hospital.[^tdx-bus] The route runs a single subroute under one operator, 欣欣
+客運, continuing past the terminus published for its own shorter
+sibling 251區 to central Taipei.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 深坑 with 臺北車站 specifically as the route's own termini was found in this search, nor for the route continuing past 251區's own terminus rather than stopping there.

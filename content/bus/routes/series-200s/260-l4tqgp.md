@@ -44,6 +44,16 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full catalogue has no separately listed schedule entry for this normalized variant. Its current service span, headway and fare remain TBC rather than being copied from a related route.[^ebus-general][^tdx-bus]
 
+The confirmed stop sequence matches 260區's own corridor stop for
+stop: from 陽明山總站, via 第一停車場(花鐘), past 中山樓/教師中心/陽明山國
+小, through 嶺頭/岩山里/士林官邸(中山), along 捷運士林站/捷運劍潭站/臺北
+市立美術館, ending at 國賓飯店/中山市場/行政院/臺北車站(忠孝).[^tdx-bus]
+Three confirmed interchanges are recorded in the curated stop-ID join
+set, identical to 260區's own list: Taipei Main Station, Jiantan and
+Shilin.[^tdx-bus] The route runs a single subroute under one operator,
+大都會客運, filed as a reservation-based (預約) working of the 花鐘
+detour specifically.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for publishing this reservation-based working as a separately numbered route rather than a subroute of 260區 itself was found in this search, nor a stated reason for the reservation basis applying only to the 花鐘 detour and not the plain corridor.

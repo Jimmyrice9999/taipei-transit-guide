@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “二重 - 捷運麟光站”, the current head/last-departure field “[平日] 0520 - 2230 [假日] 0550 - 2230”, fare “兩段票”.[^ebus-route-292-jp9ehs]
 
+The confirmed stop sequence runs from 二重站, past 仙公廟/三重商工/三重
+稅捐分處, through 捷運菜寮站/捷運台北橋站/成淵高中, along 捷運中山站(志
+仁高中)/南京林森路口/捷運松江南京站, through 南京龍江路口/捷運南京復興
+站/仁愛敦化路口, ending at 吳興街口/三興國小(臨江街觀光夜市)/喬治商職/
+富陽街口/捷運麟光站.[^tdx-bus] Ten confirmed interchanges are recorded
+in the curated stop-ID join set, the same list confirmed for its own
+narrower-hours sibling 292副: Zhongxiao Dunhua, Linguang, Liuzhangli,
+Nanjing Fuxing, Zhongshan, Songjiang Nanjing, Minquan W. Rd., Taipei
+Bridge, Cailiao and Xinyi Anhe.[^tdx-bus] The route runs a single
+subroute under one operator, 首都客運, with a slightly earlier weekday
+start than its own holiday span.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 二重 with 捷運麟光站 specifically as the route's own termini was found in this search, nor for the fare remaining a flat two-section rate over the whole confirmed corridor.

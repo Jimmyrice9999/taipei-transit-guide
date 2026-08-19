@@ -8541,18 +8541,13 @@
     },
     {
       "page": "/bus/routes/series-200s/202-21niqx/",
-      "name": "Xindian",
-      "href": "/rail/metro/stations/g01/"
-    },
-    {
-      "page": "/bus/routes/series-200s/202-21niqx/",
       "name": "Xiaonanmen",
       "href": "/rail/metro/stations/g11/"
     },
     {
       "page": "/bus/routes/series-200s/202-21niqx/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-200s/202-21niqx/",
@@ -8576,11 +8571,6 @@
     },
     {
       "page": "/bus/routes/series-200s/202-6nar4h/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
-    },
-    {
-      "page": "/bus/routes/series-200s/202-6nar4h/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -8600,11 +8590,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-200s/203/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/series-200s/204/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
@@ -8618,21 +8603,6 @@
       "page": "/bus/routes/series-200s/205/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/205/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/series-200s/206/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-200s/206/",
-      "name": "Zhishan",
-      "href": "/rail/metro/stations/r17/"
     },
     {
       "page": "/bus/routes/series-200s/206/",
@@ -8691,11 +8661,6 @@
     },
     {
       "page": "/bus/routes/series-200s/208-1xr3hgl/",
-      "name": "Taipower Building",
-      "href": "/rail/metro/stations/g08/"
-    },
-    {
-      "page": "/bus/routes/series-200s/208-1xr3hgl/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -8703,16 +8668,6 @@
       "page": "/bus/routes/series-200s/211/",
       "name": "Dazhi",
       "href": "/rail/metro/stations/br14/"
-    },
-    {
-      "page": "/bus/routes/series-200s/211/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
-    },
-    {
-      "page": "/bus/routes/series-200s/211/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
     },
     {
       "page": "/bus/routes/series-200s/211/",
@@ -8771,11 +8726,6 @@
     },
     {
       "page": "/bus/routes/series-200s/212-pq8mwb/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/series-200s/212-pq8mwb/",
       "name": "Guohua",
       "href": "/rail/metro/stations/lb10/"
     },
@@ -8788,11 +8738,6 @@
       "page": "/bus/routes/series-200s/214-1dcz820/",
       "name": "Jingping",
       "href": "/rail/metro/stations/y10/"
-    },
-    {
-      "page": "/bus/routes/series-200s/214-s1s8xk/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-200s/214-s1s8xk/",
@@ -8866,11 +8811,6 @@
     },
     {
       "page": "/bus/routes/series-200s/218-1vxxlrc/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-200s/218-1vxxlrc/",
       "name": "Shipai",
       "href": "/rail/metro/stations/r19/"
     },
@@ -8896,11 +8836,6 @@
     },
     {
       "page": "/bus/routes/series-200s/221/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/series-200s/221/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -8913,11 +8848,6 @@
       "page": "/bus/routes/series-200s/222/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/223/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-200s/223/",
@@ -8946,18 +8876,13 @@
     },
     {
       "page": "/bus/routes/series-200s/224/",
+      "name": "Beitou",
+      "href": "/rail/metro/stations/r22/"
+    },
+    {
+      "page": "/bus/routes/series-200s/224/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/225-1ckh6wd/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-200s/225-1ckh6wd/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
     },
     {
       "page": "/bus/routes/series-200s/225-1ckh6wd/",
@@ -9086,11 +9011,6 @@
     },
     {
       "page": "/bus/routes/series-200s/235/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
-    },
-    {
-      "page": "/bus/routes/series-200s/235/",
       "name": "Haishan",
       "href": "/rail/metro/stations/bl04/"
     },
@@ -9111,16 +9031,6 @@
     },
     {
       "page": "/bus/routes/series-200s/236/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/series-200s/236/",
-      "name": "Taipower Building",
-      "href": "/rail/metro/stations/g08/"
-    },
-    {
-      "page": "/bus/routes/series-200s/236/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -9128,11 +9038,6 @@
       "page": "/bus/routes/series-200s/237/",
       "name": "Muzha",
       "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/series-200s/237/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
     },
     {
       "page": "/bus/routes/series-200s/237/",
@@ -9153,11 +9058,6 @@
       "page": "/bus/routes/series-200s/240/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/240/",
-      "name": "Ankang",
-      "href": "/rail/metro/stations/k06/"
     },
     {
       "page": "/bus/routes/series-200s/246-1hfpmg8/",
@@ -9203,16 +9103,6 @@
       "page": "/bus/routes/series-200s/247-s94tgq/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/247-s94tgq/",
-      "name": "Ankang",
-      "href": "/rail/metro/stations/k06/"
-    },
-    {
-      "page": "/bus/routes/series-200s/250/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-200s/250/",
@@ -9301,11 +9191,6 @@
     },
     {
       "page": "/bus/routes/series-200s/255-10xhcwp/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-200s/255-10xhcwp/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
     },
@@ -9318,11 +9203,6 @@
       "page": "/bus/routes/series-200s/255-10xhcwp/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/255-mx9m53/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-200s/255-mx9m53/",
@@ -9486,11 +9366,6 @@
     },
     {
       "page": "/bus/routes/series-200s/262-opbena/",
-      "name": "Tucheng",
-      "href": "/rail/metro/stations/bl03/"
-    },
-    {
-      "page": "/bus/routes/series-200s/262-opbena/",
       "name": "Zhongxiao Dunhua",
       "href": "/rail/metro/stations/bl16/"
     },
@@ -9596,18 +9471,8 @@
     },
     {
       "page": "/bus/routes/series-200s/270-137y54g/",
-      "name": "小南門",
-      "href": "/rail/metro/stations/g11/"
-    },
-    {
-      "page": "/bus/routes/series-200s/270-137y54g/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-200s/270-137y54g/",
-      "name": "國父紀念館",
-      "href": "/rail/metro/stations/bl17/"
     },
     {
       "page": "/bus/routes/series-200s/270-137y54g/",
@@ -9650,19 +9515,9 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-200s/276/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/series-200s/277/",
       "name": "Taipei Arena",
       "href": "/rail/metro/stations/g17/"
-    },
-    {
-      "page": "/bus/routes/series-200s/277/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-200s/277/",
@@ -9741,11 +9596,6 @@
     },
     {
       "page": "/bus/routes/series-200s/279/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/series-200s/279/",
       "name": "Guohua",
       "href": "/rail/metro/stations/lb10/"
     },
@@ -9791,11 +9641,6 @@
     },
     {
       "page": "/bus/routes/series-200s/281/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/series-200s/281/",
       "name": "Guohua",
       "href": "/rail/metro/stations/lb10/"
     },
@@ -9823,11 +9668,6 @@
       "page": "/bus/routes/series-200s/284/",
       "name": "Donghu",
       "href": "/rail/metro/stations/br22/"
-    },
-    {
-      "page": "/bus/routes/series-200s/284/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
     },
     {
       "page": "/bus/routes/series-200s/284/",
@@ -9861,18 +9701,8 @@
     },
     {
       "page": "/bus/routes/series-200s/286-8f4wlp/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-200s/286-8f4wlp/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/286-8f4wlp/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-200s/286-8f4wlp/",
@@ -9906,18 +9736,8 @@
     },
     {
       "page": "/bus/routes/series-200s/292-1h7862q/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/series-200s/292-1h7862q/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/292-jp9ehs/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
     },
     {
       "page": "/bus/routes/series-200s/292-jp9ehs/",
@@ -9938,11 +9758,6 @@
       "page": "/bus/routes/series-200s/294/",
       "name": "Xingfu",
       "href": "/rail/metro/stations/y19/"
-    },
-    {
-      "page": "/bus/routes/series-200s/295-1fbwwzi/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
     },
     {
       "page": "/bus/routes/series-200s/295-1fbwwzi/",
@@ -10006,18 +9821,8 @@
     },
     {
       "page": "/bus/routes/series-200s/298/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/series-200s/298/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-200s/298/",
-      "name": "臺北大學",
-      "href": "/rail/metro/stations/lb07/"
     },
     {
       "page": "/bus/routes/series-200s/299/",

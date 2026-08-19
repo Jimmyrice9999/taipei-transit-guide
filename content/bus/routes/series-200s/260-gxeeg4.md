@@ -53,6 +53,17 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “陽明山 - 臺北車站”, the current head/last-departure field “[平日] 0545 - 2200 [假日] 0545 - 2200”, fare “兩段票”.[^ebus-route-260-gxeeg4]
 
+The confirmed stop sequence runs from 陽明山總站, on some workings via
+第一停車場(花鐘), past 中山樓/教師中心/陽明山國小, through 嶺頭/岩山里/士林
+官邸(中山), along 捷運士林站/捷運劍潭站/臺北市立美術館, ending at 國賓
+飯店/中山市場/行政院/臺北車站(忠孝), a shorter run than the separate 260,
+which continues past this stretch to 東園.[^tdx-bus] Three confirmed
+interchanges are recorded in the curated stop-ID join set: Taipei
+Main Station, Jiantan and Shilin.[^tdx-bus] TDX records four named
+direction/variant records distinguishing whether a working detours
+via 花鐘 (Flower Clock) and whether it runs as a reservation-based
+(預約) service.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 陽明山 with 臺北車站 specifically as the route's own termini was found in this search.

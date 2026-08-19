@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “土城 - 行政院”, the current head/last-departure field “[平日] 0530 - 2200 [假日] 0530 - 2200”, fare “兩段票”.[^ebus-route-265-ifjaza]
 
+The confirmed stop sequence runs from 土城站, past 學士路口/捷運海山站/
+明德路, through 中央路/南雅站/亞東科技大學, along 壽德新村/重慶國中/新北市
+政府(新府路), through 捷運板新站/自來水公司/埔墘(三民路)/光復橋, past 捷運
+龍山寺站/捷運西門站, ending at 臺北車站(忠孝)/立法院.[^tdx-bus] Seven
+confirmed interchanges are recorded in the curated stop-ID join set,
+the same list confirmed for its own sibling 265經中央路: Fuzhong,
+Banqiao, Longshan Temple, Ximen, Taipei Main Station, Shandao Temple
+and Banxin.[^tdx-bus] The route runs a single subroute under one
+operator, 大南汽車, detouring via 明德路 and 捷運海山站 at the Tucheng end,
+distinct from 265經中央路's own direct routing via 中央路.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for splitting these two near-identical corridors into separately labelled route numbers rather than named subroutes of one 265 was found in this search.

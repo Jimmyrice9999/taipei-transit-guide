@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “三重 - 永和”, the current head/last-departure field “[平日] 0530 - 2200 [假日] 0530 - 2200”, fare “兩段票”.[^ebus-route-227-1gvgclx]
 
+The confirmed stop sequence runs from 仙公廟 in Sanchong, past 博愛新村/
+三重商工/捷運菜寮站, through 捷運台北橋站/捷運民權西路站, along 台泥大樓
+(馬偕醫院)/國賓飯店/行政院/臺大醫院, through 捷運中正紀念堂站/南門/重慶南路
+三段(中正橋), ending at 潭墘 in Yonghe.[^tdx-bus] Six confirmed
+interchanges are recorded in the curated stop-ID join set: Chiang
+Kai-Shek Memorial Hall, Dingxi, Zhongshan Elementary School, Minquan
+W. Rd., Taipei Bridge and Cailiao.[^tdx-bus] The route runs a single
+subroute under one operator, 中興巴士.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 三重 with 永和 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming fewer interchanges than the neighbouring 227區 despite covering a longer corridor.

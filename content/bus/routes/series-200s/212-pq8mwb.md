@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “舊莊 - 青年公園”, the current head/last-departure field “[平日] 0600 - 2100 [假日] 0600 - 2100”, fare “兩段票”.[^ebus-route-212-pq8mwb]
 
+The confirmed stop sequence runs from 舊莊二站 in Nangang, past 中研院/
+南港展覽館/南港, through 捷運昆陽站/捷運後山埤站(永吉), along 捷運國父紀念
+館站/捷運忠孝敦化站/捷運善導寺站, through 臺北車站(忠孝)/捷運西門站, ending
+at 青年公園.[^tdx-bus] Ten confirmed interchanges are recorded in the
+curated stop-ID join set: Ximen, Taipei Main Station, Shandao Temple,
+Zhongxiao Xinsheng, Zhongxiao Fuxing, Zhongxiao Dunhua, Sun Yat-Sen
+Memorial Hall, Houshanpi, Kunyang and Taipei Nangang Exhibition
+Center.[^tdx-bus] The route runs a single subroute under one operator,
+首都客運, routed via 南港展覽館/南港 rather than 南港機廠, unlike its own
+express sibling 212直, which confirms Nangang instead of Taipei Nangang
+Exhibition Center along an otherwise near-identical corridor.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the two near-identical 212 workings routing through two different Nangang-area stations was found in this search.

@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 5152,
+    "sourced": 5262,
     "tbc": 4242,
     "asserted": 32,
     "meta": 41
@@ -6907,7 +6907,7 @@
     {
       "file": "content/bus/routes/series-200s/202-21niqx.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6915,7 +6915,7 @@
     {
       "file": "content/bus/routes/series-200s/202-6nar4h.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6923,7 +6923,7 @@
     {
       "file": "content/bus/routes/series-200s/203.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6931,7 +6931,7 @@
     {
       "file": "content/bus/routes/series-200s/204.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6939,7 +6939,7 @@
     {
       "file": "content/bus/routes/series-200s/205.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6947,7 +6947,7 @@
     {
       "file": "content/bus/routes/series-200s/206.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6955,7 +6955,7 @@
     {
       "file": "content/bus/routes/series-200s/207.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6963,7 +6963,7 @@
     {
       "file": "content/bus/routes/series-200s/208-1ax4rab.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6971,7 +6971,7 @@
     {
       "file": "content/bus/routes/series-200s/208-1tdfgey.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6979,7 +6979,7 @@
     {
       "file": "content/bus/routes/series-200s/208-1xr3hgl.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6987,7 +6987,7 @@
     {
       "file": "content/bus/routes/series-200s/211.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -6995,7 +6995,7 @@
     {
       "file": "content/bus/routes/series-200s/212-1lcol26.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7003,7 +7003,7 @@
     {
       "file": "content/bus/routes/series-200s/212-3o3z60.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7011,7 +7011,7 @@
     {
       "file": "content/bus/routes/series-200s/212-pq8mwb.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7019,7 +7019,7 @@
     {
       "file": "content/bus/routes/series-200s/214-1dcz820.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7027,7 +7027,7 @@
     {
       "file": "content/bus/routes/series-200s/214-s1s8xk.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7051,7 +7051,7 @@
     {
       "file": "content/bus/routes/series-200s/218-1i7djnl.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7059,7 +7059,7 @@
     {
       "file": "content/bus/routes/series-200s/218-1l6zki7.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7067,7 +7067,7 @@
     {
       "file": "content/bus/routes/series-200s/218-1vxxlrc.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7075,7 +7075,7 @@
     {
       "file": "content/bus/routes/series-200s/221.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7091,7 +7091,7 @@
     {
       "file": "content/bus/routes/series-200s/223.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7099,7 +7099,7 @@
     {
       "file": "content/bus/routes/series-200s/224.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7107,7 +7107,7 @@
     {
       "file": "content/bus/routes/series-200s/225-1ckh6wd.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7115,7 +7115,7 @@
     {
       "file": "content/bus/routes/series-200s/225-slxl7g.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7131,7 +7131,7 @@
     {
       "file": "content/bus/routes/series-200s/227-1gvgclx.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7139,7 +7139,7 @@
     {
       "file": "content/bus/routes/series-200s/227-tfw6qi.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7147,7 +7147,7 @@
     {
       "file": "content/bus/routes/series-200s/230.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7155,7 +7155,7 @@
     {
       "file": "content/bus/routes/series-200s/232-1qerxjp.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7163,7 +7163,7 @@
     {
       "file": "content/bus/routes/series-200s/232-qer6og.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7171,7 +7171,7 @@
     {
       "file": "content/bus/routes/series-200s/234.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7187,7 +7187,7 @@
     {
       "file": "content/bus/routes/series-200s/236.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7203,7 +7203,7 @@
     {
       "file": "content/bus/routes/series-200s/240.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7211,7 +7211,7 @@
     {
       "file": "content/bus/routes/series-200s/246-1hfpmg8.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7219,7 +7219,7 @@
     {
       "file": "content/bus/routes/series-200s/246-1okdj2j.md",
       "sources": 2,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7227,7 +7227,7 @@
     {
       "file": "content/bus/routes/series-200s/247-1u793pt.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7235,7 +7235,7 @@
     {
       "file": "content/bus/routes/series-200s/247-s94tgq.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7243,7 +7243,7 @@
     {
       "file": "content/bus/routes/series-200s/250.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7251,7 +7251,7 @@
     {
       "file": "content/bus/routes/series-200s/251-1q23smx.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7259,7 +7259,7 @@
     {
       "file": "content/bus/routes/series-200s/251-3pttdn.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7267,7 +7267,7 @@
     {
       "file": "content/bus/routes/series-200s/252.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7283,7 +7283,7 @@
     {
       "file": "content/bus/routes/series-200s/254-1pjoq32.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7291,7 +7291,7 @@
     {
       "file": "content/bus/routes/series-200s/254-563wwg.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7299,7 +7299,7 @@
     {
       "file": "content/bus/routes/series-200s/255-10xhcwp.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7307,7 +7307,7 @@
     {
       "file": "content/bus/routes/series-200s/255-mx9m53.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7315,7 +7315,7 @@
     {
       "file": "content/bus/routes/series-200s/256.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7323,7 +7323,7 @@
     {
       "file": "content/bus/routes/series-200s/257.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7331,7 +7331,7 @@
     {
       "file": "content/bus/routes/series-200s/260-1gko832.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7339,7 +7339,7 @@
     {
       "file": "content/bus/routes/series-200s/260-gxeeg4.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7347,7 +7347,7 @@
     {
       "file": "content/bus/routes/series-200s/260-l4tqgp.md",
       "sources": 2,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7355,7 +7355,7 @@
     {
       "file": "content/bus/routes/series-200s/261-1k0dgf5.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7363,7 +7363,7 @@
     {
       "file": "content/bus/routes/series-200s/261-45x0bg.md",
       "sources": 2,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7379,7 +7379,7 @@
     {
       "file": "content/bus/routes/series-200s/262-opbena.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7395,7 +7395,7 @@
     {
       "file": "content/bus/routes/series-200s/265-1ikbr0l.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7403,7 +7403,7 @@
     {
       "file": "content/bus/routes/series-200s/265-1jojch8.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7411,7 +7411,7 @@
     {
       "file": "content/bus/routes/series-200s/265-ifjaza.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7419,7 +7419,7 @@
     {
       "file": "content/bus/routes/series-200s/267.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7427,7 +7427,7 @@
     {
       "file": "content/bus/routes/series-200s/268.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7435,7 +7435,7 @@
     {
       "file": "content/bus/routes/series-200s/270-137y54g.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7443,7 +7443,7 @@
     {
       "file": "content/bus/routes/series-200s/270-1il3nb6.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7451,7 +7451,7 @@
     {
       "file": "content/bus/routes/series-200s/274.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7459,7 +7459,7 @@
     {
       "file": "content/bus/routes/series-200s/276.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7475,7 +7475,7 @@
     {
       "file": "content/bus/routes/series-200s/278-1ovobqn.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7483,7 +7483,7 @@
     {
       "file": "content/bus/routes/series-200s/278-8478ut.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7499,7 +7499,7 @@
     {
       "file": "content/bus/routes/series-200s/280-hbc79h.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7507,7 +7507,7 @@
     {
       "file": "content/bus/routes/series-200s/280-w312s0.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7515,7 +7515,7 @@
     {
       "file": "content/bus/routes/series-200s/281.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7531,7 +7531,7 @@
     {
       "file": "content/bus/routes/series-200s/284.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7539,7 +7539,7 @@
     {
       "file": "content/bus/routes/series-200s/286-8f4wlp.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7547,7 +7547,7 @@
     {
       "file": "content/bus/routes/series-200s/286-jcjndl.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7571,7 +7571,7 @@
     {
       "file": "content/bus/routes/series-200s/292-1h7862q.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7579,7 +7579,7 @@
     {
       "file": "content/bus/routes/series-200s/292-jp9ehs.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7587,7 +7587,7 @@
     {
       "file": "content/bus/routes/series-200s/294.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7595,7 +7595,7 @@
     {
       "file": "content/bus/routes/series-200s/295-1fbwwzi.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7603,7 +7603,7 @@
     {
       "file": "content/bus/routes/series-200s/295-1sg3tuv.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7611,7 +7611,7 @@
     {
       "file": "content/bus/routes/series-200s/297-1ffd54y.md",
       "sources": 2,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7619,7 +7619,7 @@
     {
       "file": "content/bus/routes/series-200s/297-1t2xdx7.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0

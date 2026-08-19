@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “富德 - 臺北車站”, the current head/last-departure field “[平日] 0520 - 2300 [假日] 0530 - 2300”, fare “兩段票”.[^ebus-route-295-1fbwwzi]
 
+The confirmed stop sequence runs from 富德, past 象頭埔/萬福橋/捷運動物
+園站, through 景美女中/實踐國中/中港抽水站, along 懷恩隧道/中國科技大學
+(辛亥)/捷運辛亥站, through 大安森林公園/師大/捷運古亭站(和平), ending at
+南門/一女中(公園)/捷運台大醫院站/臺北車站(青島).[^tdx-bus] Seven confirmed
+interchanges are recorded in the curated stop-ID join set, the same
+list confirmed for its own sibling 295副: Taipei Main Station,
+Shandao Temple, Taipei Zoo, Xinhai, Technology Building, Guting and
+NTU Hospital.[^tdx-bus] The route runs a single subroute under one
+operator, 欣欣客運, with a slightly earlier weekday start than its own
+holiday span.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 富德 with 臺北車站 specifically as the route's own termini, over a corridor that overlaps several other Wenshan-area routes in this batch, was found in this search.

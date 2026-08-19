@@ -12810,3 +12810,60 @@ live in this batch before publishing.
 Part 1 running total: 379 of 1,051 routes across sixteen groups.
 Next-smallest remaining: series-200s (92), new-taipei (562). Parts 2-7
 not started.
+
+## Run 52 — Part 1 batch 14, series-200s to 200+ words
+
+92 routes: the whole `series-200s` group. Starting template was 96-105
+words. Written hands-on rather than delegated, following the same
+corridor/interchange/subroute/Research-status pattern as prior batches,
+scaled to each route's confirmed stop sequence.
+
+Genuine findings: `222` confirms thirteen distinct interchange
+stations — Ximen, Taipei Main Station, Shandao Temple, Zhongxiao
+Xinsheng, Dazhi, Jiannan Road, Xihu, Gangqian, Wende, Neihu, Songjiang
+Nanjing, Xingtian Temple and NTU Hospital — verified against a full-
+batch ranking script as the actual widest spread in the group, not
+just the widest drafted so far. `223` runs up to 92 confirmed stops,
+one of the longest corridors in the batch, spanning nearly the full
+city north-south. Several 直 (express) and 區/預 (shuttle/reservation)
+variant pairs share the exact same confirmed-interchange list as their
+parent route, some publishing an identical head/last-departure field
+formatted like "0700 - 0700" — a recurring oddity, unresolved, flagged
+in multiple files (218-1l6zki7, 225-1ckh6wd, 232-qer6og, 255-10xhcwp).
+`246預` has no separately listed schedule entry in the catalogue, the
+same "reservation working with no dedicated schedule" pattern seen in
+one minibus route and one special-shuttle route in earlier batches.
+Two corridors (265-14jigpc, 299) are filed under two different operator
+names — 大南汽車/三重客運 and 大都會客運/三重客運 respectively — for what the
+stop-sequence data shows as one physical corridor. A "狗狗公車" (pet-
+friendly) subroute naming pattern, first seen in the series-600s batch,
+recurs across several 200-series routes (207, 225-slxl7g, 257,
+262-nzdz2u). Two comparative claims were drafted, caught against the
+full ranking script, and corrected before publishing rather than after:
+`212-1lcol26` initially claimed a tied-widest spread that 222 actually
+beats (13 against 212直's 12), and `278-8478ut` made the same mistake
+at 12 confirmed interchanges; both were rewritten as plain counts with
+no superlative.
+
+A second instance of the special-shuttle batch's marker-bug finding:
+the corrected multiline check (`grep -Pzq '\.\n\[\^id\]'`, not the
+line-scoped `grep -rlP` used through batch 11) found the citation-
+marker line-break bug in 25 files in this batch's own freshly written
+prose — proof the bug was still being introduced even after it was
+first diagnosed last batch, because the earlier ad-hoc checks run
+during drafting were still the broken line-scoped form. All 25 fixed
+by rejoining the marker onto the same line as its period. The rejoin
+itself dropped three files (215, 251-3pttdn, 274) from ≥200 to 199
+words, by removing a whitespace boundary the word counter had been
+relying on; each was restored to ≥200 words with a small genuine
+addition to its Research status paragraph rather than padding. A final
+full-tree sweep with the corrected check after all fixes found nothing
+further anywhere in `content/`.
+
+Gates: cite clean, claims baseline held at 32 (0 new trips), test:unit
+209/209, verify clean (one pre-existing BL/A protanopia note, unrelated
+to content), nav 19/19.
+
+Part 1 running total: 471 of 1,051 routes across seventeen groups.
+Next-smallest remaining: new-taipei (562), the last and largest Part 1
+group. Parts 2-7 not started.

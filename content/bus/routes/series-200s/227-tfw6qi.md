@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “三重 - 捷運民權西路站”, the current head/last-departure field “[平日] 0700 - 1800 [假日] 停駛”, fare “一段票”.[^ebus-route-227-tfw6qi] It currently lists weekday service and suspended holiday service.[^ebus-route-227-tfw6qi]
 
+The confirmed stop sequence runs from 仙公廟, past 博愛新村/三重商工/捷運
+三重站, through 集美街口/三重中學/新興路, along 中正南路/大同路口/天台廣場,
+ending at 捷運台北橋站/捷運民權西路站/捷運中山國小站, a shorter run than
+the separate all-day 227, which continues past this stretch to 永和.[^tdx-bus] Five confirmed interchanges are recorded in the curated
+stop-ID join set: Sanchong Station, Zhongshan Elementary School,
+Minquan W. Rd., Taipei Bridge and Sanchong.[^tdx-bus] The route runs a
+single subroute under one operator, 中興巴士, weekdays only with
+holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the route's own holiday suspension, unlike its own all-week sibling 227, was found in this search.

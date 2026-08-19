@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “新北投 - 萬華”, the current head/last-departure field “[平日] 0500 - 2300 [假日] 0500 - 2300”, fare “兩段票”.[^ebus-route-218-1vxxlrc]
 
+The confirmed stop sequence runs from 貴子坑水土保持園區, past 新北投/
+北投公園/慈后宮/捷運奇岩站, through 士林's own 文林國小/中正高中/捷運芝山站/
+劍潭, along 國賓飯店/行政院/臺北車站(忠孝), ending at 老松國小 in Wanhua —
+a different intermediate routing through 士林 than its own express
+sibling 218直, which instead runs directly via 承德路.[^tdx-bus] Eight
+confirmed interchanges are recorded in the curated stop-ID join set:
+Ximen, Taipei Main Station, Beimen, Jiantan, Zhishan, Qiyan, Beitou
+and Xinbeitou.[^tdx-bus] The route runs a single subroute under one
+operator, 大南汽車, on the full daily span shared by neither of its own
+narrower siblings, 218直 and 218區.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the two 218 workings taking different routes through 士林 was found in this search.
