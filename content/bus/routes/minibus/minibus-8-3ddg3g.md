@@ -56,8 +56,7 @@ The full official schedule gives termini “北士科 - 後港里”, the curren
 The confirmed stop sequence runs from 福美站, past 三王宮/福美承平路口/遠雄
 商舟大樓/中鼎第二總部大樓/兒童新樂園/士林高商/士林區行政中心/士林國中/士林
 國小/小北街, through 陽明戲院/捷運劍潭站(北藝中心), along 圓山皇宮大廈/劍潭
-國小/明勝里/華齡街/百齡里/前港公園/百齡國小/士林監理站, ending at 福港街.
-[^tdx-bus] Two confirmed interchanges are recorded in the curated
+國小/明勝里/華齡街/百齡里/前港公園/百齡國小/士林監理站, ending at 福港街.[^tdx-bus] Two confirmed interchanges are recorded in the curated
 stop-ID join set: Jiantan (R15) and Shilin (R16), both confirmed
 roughly midway along the route's own corridor.[^tdx-bus] TDX records
 two named subroutes distinguishing whether a working detours via 士林

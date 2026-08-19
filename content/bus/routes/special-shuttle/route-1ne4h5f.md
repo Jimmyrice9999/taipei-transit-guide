@@ -51,8 +51,19 @@ sources:
 The full official catalogue files 臺北觀光巴士藍線 under 觀光巴士 (通勤公車、內科專車、南軟專車與其他).[^ebus-special]
 The normalized TDX record retains 2 direction/variant records for this service; route history, corridor rationale and dated operator changes are not inferred from stop names or the current map.[^tdx-bus]
 
-The full official schedule gives termini “臺北車站 - 故宮博物院”, the current head/last-departure field “[平日] 0940 - 1630 [假日] 0940 - 1630”, fare “詳票價表”.[^ebus-route-route-1ne4h5f]
+The full official schedule gives termini “臺北車站 - 故宮博物院”, the current head/last-departure field “[平日] 0940 - 1630 [假日] 0940 - 1630”, fare “詳票價表” (see the operator's own separate fare table, not a plain per-stage figure).[^ebus-route-route-1ne4h5f]
+
+The confirmed stop sequence runs from 臺北車站(忠孝), past 捷運北門站/延
+平一站(南京)/圓環(鈕釦街)/圓環(南京)/捷運中山站(志仁高中)/晶華酒店/大同
+公司(晴光市場)/臺北市立美術館/圓山飯店/銘傳大學/士林官邸(中山), ending
+at 故宮博物院(正館), with one working omitting the museum's own main
+building stop.[^tdx-bus] Five confirmed interchanges are recorded in
+the curated stop-ID join set: Taipei Main Station (BL12/R10), Beimen
+(G13), Zhongshan (G14/R11), Jiantan (R15) and Shilin (R16).[^tdx-bus]
+The route runs two named subroutes under one operator, 三重客運, one of
+two Taipei Sightseeing Bus lines classified together as 觀光巴士 in this
+batch.[^tdx-bus]
 
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] The route's own actual fare figures stay TBC, since the catalogue points to a separate table rather than publishing a plain per-stage value, and no stated reason for one working omitting the museum's own main building was found in this search.

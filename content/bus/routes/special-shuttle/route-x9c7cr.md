@@ -53,6 +53,16 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “貓空纜車站 - 貓纜指南宮站”, the current head/last-departure field “[平日] 0900 - 1720 [假日] 1320 - 1550”, fare “一段票”.[^ebus-route-route-x9c7cr]
 
+The confirmed stop sequence runs from 貓空壺穴站, past 貓空站(小天空步
+道)/涼亭站/圓山/草湳, ending at 岐山/貓纜指南宮站, with a longer working
+starting further back at 貓空纜車站 via 天恩宮/茶推廣中心.[^tdx-bus] The
+curated stop-ID join set records zero confirmed interchanges for this
+route, consistent with its own corridor running entirely within the
+Maokong hillside.[^tdx-bus] TDX records four direction/variant records
+for this service, distinguishing the short and long workings in each
+direction, under one operator, 欣欣客運, with a markedly shorter
+published holiday window than its own weekday hours.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own narrower holiday window, the opposite pattern from the separate 貓空左線(動物園), which runs later on holidays, was found in this search.

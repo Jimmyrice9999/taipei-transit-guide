@@ -55,8 +55,7 @@ The full official schedule gives termini “天母 - 捷運芝山站”, the cur
 
 The confirmed stop sequence runs from 天母圓環, past 中銀山莊/水管路/天母里/
 天和里, through 天母圖書館/東和公園/天和公園/市立臺北特教學校, along 天母
-棒球場/蘭雅國中/蘭雅新城/雨農國小/忠誠公園, ending at 捷運芝山站(福國).
-[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID
+棒球場/蘭雅國中/蘭雅新城/雨農國小/忠誠公園, ending at 捷運芝山站(福國).[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID
 join set: Zhishan (R17), matching the route's own terminus, the same
 station confirmed for the separate 市民小巴11, which runs the same
 天母-芝山 pairing under a different operator and a different local

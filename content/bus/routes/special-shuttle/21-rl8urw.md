@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “富德站 - 草湳大榕樹”, the current head/last-departure field “[平日] 0710 - 1830 [假日] 0800 - 1830”, fare “一段票”.[^ebus-route-21-rl8urw]
 
+The confirmed stop sequence runs from 富德, past 象頭埔/萬福橋, through
+捷運動物園站/貓纜動物園站, along 萬壽橋頭(新光)/萬壽橋頭(秀明)/萬興國小/
+政大(聯合醫院)/小坑口(北政國中)/北政國中(政大實小)/三角公園/政大威秀/水
+鋼琴社區, ending at 草湳大榕樹, sharing its own opening stretch with the
+Maokong Gondola feeder routes classified elsewhere in this batch.[^tdx-bus] One confirmed interchange is recorded in the curated
+stop-ID join set: Taipei Zoo (BR01), matching a stop early in the
+route's own corridor.[^tdx-bus] The route runs a single subroute
+under one operator, 欣欣客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for classifying this route as a commuter shuttle (通勤公車) rather than alongside the Maokong feeder routes it shares its own opening stretch with was found in this search.

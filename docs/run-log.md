@@ -12736,3 +12736,64 @@ to content), nav 19/19.
 Part 1 running total: 328 of 1,051 routes across fifteen groups.
 Next-smallest remaining: special-shuttle (51), series-200s (92),
 new-taipei (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 13, special-shuttle to 200+ words
+
+51 routes: the whole `special-shuttle` group (通勤公車、內科專車、南軟專車與其他).
+Starting template was 96-105 words. This group has more classification
+variety than any prior batch — four sub-families rather than one: 內科
+專車 (Neihu Science Park commuter shuttles, ~20 routes, most converging
+on the same 基湖站/瑞光路/公館山 corridor from different origins), 南軟專車
+(four Nangang Software Park commuter shuttles, one per origin district),
+通勤公車 (general commuter routes, several publishing only one trip a
+day), and 其他 (a residual bucket holding the two Taipei Sightseeing Bus
+loops, three Maokong Gondola feeders, two Children's Amusement Park
+loops, one flower-season shuttle, and four 懷恩專車 routes feeding one
+named facility, 臺北市懷愛館, from four separate MRT stations). Corridor
+prose and comparisons followed the established pattern, scaled to each
+route's actual length.
+
+Genuine findings: `route-q03sgr` (臺北觀光巴士紅線) confirms eleven distinct
+interchange stations on a 21-stop loop, the widest spread in the batch.
+`16-g1oiln` (內科通勤專車16) and `route-174oym7` (南軟通勤專車北投線) tie for
+second at seven. Several route pairs share almost the same corridor
+under different operators with no stated reason found for the
+duplication — 內科2/內科3 to Zhonghe, 內科13/內科15 to Tianmu, and the two
+南軟專車 Zhonghe lines. `內科快線2` splits across six separate operators
+for one physical corridor, the widest operator fragmentation found this
+run. Two Children's Amusement Park routes run on opposite calendars —
+one holiday-only, one every day — with no stated reason found. Two
+routes (`通勤24`, `通勤26`) tie for the batch's highest confirmed fare
+tier (three-stage); two more (`臺北觀光巴士藍線`, `臺北觀光巴士紅線`) point to a
+separate fare table rather than publishing a plain per-stage figure,
+recorded as its own TBC rather than compared numerically against the
+others. One drafted claim ("the highest fare tier ... checked in this
+batch") was caught and softened before the second three-stage route was
+confirmed, then restored as an accurate tied claim once both were
+written — the same discipline applied throughout: every comparative
+phrase checked against a full-batch interchange-count ranking script
+before publishing, never against only the routes already drafted.
+
+A genuine formatting-verification failure, caught and fixed before this
+entry: the grep check used to confirm no citation-marker line-break bug
+survived in this batch's prose (`grep -rlP '\.\n\[\^id\]'`) does not
+actually match across lines — `grep -P` does not span `\n` in default
+mode — so it silently reported clean on every prior batch this run,
+including this one, while the bug was still present. A proper multiline
+check (`perl -0777 -ne`) found the bug in 15 files in this batch and, on
+a retroactive sweep, in 13 already-committed files from last batch's
+minibus group (pushed as `f73dacb`) that the same flawed check had
+wrongly cleared. All 28 fixed here, re-verified with the working check,
+and both batches' gates rerun clean. A separate, unrelated typo — a
+missing space where Chinese prose met an English clause, "站in the"
+rather than "站 in the" — was also found and fixed in 4 files while
+diagnosing the marker bug.
+
+Gates: cite clean, claims baseline held at 32 (0 new trips across both
+this batch and the minibus retrofix), test:unit 209/209, verify clean
+(one pre-existing BL/A protanopia note, unrelated to content), nav
+19/19.
+
+Part 1 running total: 379 of 1,051 routes across sixteen groups.
+Next-smallest remaining: series-200s (92), new-taipei (562). Parts 2-7
+not started.

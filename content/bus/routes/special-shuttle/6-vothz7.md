@@ -53,6 +53,15 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “蘆洲站 - 內湖科技園區”, the current head/last-departure field “[平日] 0700 - 1810 [假日] 停駛”, fare “兩段票”.[^ebus-route-6-vothz7] It currently lists weekday service and suspended holiday service.[^ebus-route-6-vothz7]
 
+The confirmed stop sequence runs from 蘆洲總站, past 溪墘/捷運三和國中
+站/德林寺(三和路)/長元西街口/大同路口/重安街口(中正南路)/新湖一路口/新
+湖舊宗路口/精技大樓/麗寶大樓/公館山/瑞光路/瑞光港墘路口/仁寶大樓/基湖路
+口, ending at 基湖站 in the Neihu Science Park.[^tdx-bus] One confirmed
+interchange is recorded in the curated stop-ID join set: Sanhe Junior
+High School (O51), matching a stop early in the route's own corridor.[^tdx-bus] The route runs two named subroutes under one operator, 三重
+客運, on a two-stage fare, weekdays only with holiday service
+suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 蘆洲站 with the Neihu Science Park specifically as the route's own termini.

@@ -62,8 +62,7 @@ corridor.[^tdx-bus] Two confirmed interchanges are recorded in the
 curated stop-ID join set: Kunyang (BL21) and Taipei Nangang Exhibition
 Center (BL23/BR24), the same pair confirmed for 小5區.[^tdx-bus] The
 route runs a single subroute under one operator, 東南客運, with a
-shorter weekend span, 0530–1600 against a fuller weekday 0530–1830.
-[^tdx-bus]
+shorter weekend span, 0530–1600 against a fuller weekday 0530–1830.[^tdx-bus]
 
 ## Research status
 

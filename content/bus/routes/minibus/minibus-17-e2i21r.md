@@ -55,8 +55,7 @@ The full official schedule gives termini “吳興街 - 松山車站”, the cur
 
 The confirmed stop sequence runs from 吳興街站, past 松仁路/吳興國小/信義
 國中/松平路口, through 捷運象山站, along 松山商職/信義行政中心/捷運廣慈奉天
-宮站, past 中行里/玉成公園/協和祐德高中/五分埔商圈, ending at 松山車站.
-[^tdx-bus] Two confirmed interchanges are recorded in the curated
+宮站, past 中行里/玉成公園/協和祐德高中/五分埔商圈, ending at 松山車站.[^tdx-bus] Two confirmed interchanges are recorded in the curated
 stop-ID join set, on two different rail lines: Songshan (G19) and
 Xiangshan (R02), matching the route's own eastern terminus and a stop
 partway along its own corridor.[^tdx-bus] The route runs a single

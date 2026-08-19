@@ -59,8 +59,7 @@ The confirmed stop sequence runs from 國立臺灣戲曲學院, past 內湖派�
 through 西湖圖書館/湖光國宅/文德二號公園/瑞陽三號公園/港墘路/內湖休閒運動
 公園, ending at 捷運市政府站.[^tdx-bus] Two confirmed interchanges are
 recorded in the curated stop-ID join set: Neihu (BR19) and Taipei City
-Hall (BL18), on two different rail lines at the route's own two ends.
-[^tdx-bus] The route runs a single subroute under one operator, 東南
+Hall (BL18), on two different rail lines at the route's own two ends.[^tdx-bus] The route runs a single subroute under one operator, 東南
 客運, weekdays only with holiday service suspended entirely.[^tdx-bus]
 
 ## Research status

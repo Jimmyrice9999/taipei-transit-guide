@@ -60,8 +60,7 @@ The confirmed stop sequence runs from 致遠新村, past 集應廟/大華柏園/
 張公聖君廟, ending at 嶺頭.[^tdx-bus] Two confirmed interchanges are
 recorded in the curated stop-ID join set: Beitou (R22) and Xinbeitou
 (R22A), both confirmed along the route's own starting stretch, the
-same pair confirmed for the neighbouring 小6, 小9 and 小26 family.
-[^tdx-bus] TDX records four named direction/variant records
+same pair confirmed for the neighbouring 小6, 小9 and 小26 family.[^tdx-bus] TDX records four named direction/variant records
 distinguishing detours via 嶺腳珠海路, 新民路 or 惇敘工商.[^tdx-bus]
 
 ## Research status

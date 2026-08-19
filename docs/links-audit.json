@@ -12231,18 +12231,8 @@
     },
     {
       "page": "/bus/routes/special-shuttle/1-1o1sfzk/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/1-1o1sfzk/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/1-1r3jpwn/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/special-shuttle/1-1r3jpwn/",
@@ -12268,11 +12258,6 @@
       "page": "/bus/routes/special-shuttle/10/",
       "name": "Gangqian",
       "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/10/",
-      "name": "Xindian",
-      "href": "/rail/metro/stations/g01/"
     },
     {
       "page": "/bus/routes/special-shuttle/10/",
@@ -12308,11 +12293,6 @@
       "page": "/bus/routes/special-shuttle/11-9ffs8b/",
       "name": "Jingping",
       "href": "/rail/metro/stations/y10/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/12-10palml/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
     },
     {
       "page": "/bus/routes/special-shuttle/12-md9g4p/",
@@ -12345,16 +12325,6 @@
       "href": "/rail/metro/stations/r09/"
     },
     {
-      "page": "/bus/routes/special-shuttle/13-1yksc8z/",
-      "name": "Gongguan",
-      "href": "/rail/metro/stations/g07/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/13-1yksc8z/",
-      "name": "Taipei City Hall",
-      "href": "/rail/metro/stations/bl18/"
-    },
-    {
       "page": "/bus/routes/special-shuttle/13-e8p1t1/",
       "name": "Dazhi",
       "href": "/rail/metro/stations/br14/"
@@ -12366,11 +12336,6 @@
     },
     {
       "page": "/bus/routes/special-shuttle/13-e8p1t1/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/13-e8p1t1/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -12378,16 +12343,6 @@
       "page": "/bus/routes/special-shuttle/15/",
       "name": "Gangqian",
       "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/15/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/15/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/special-shuttle/15/",
@@ -12403,16 +12358,6 @@
       "page": "/bus/routes/special-shuttle/16-g1oiln/",
       "name": "Gangqian",
       "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/16-g1oiln/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/16-g1oiln/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/special-shuttle/16-g1oiln/",
@@ -12446,18 +12391,8 @@
     },
     {
       "page": "/bus/routes/special-shuttle/18-1jkfnn2/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/18-1jkfnn2/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/19/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
     },
     {
       "page": "/bus/routes/special-shuttle/19/",
@@ -12468,16 +12403,6 @@
       "page": "/bus/routes/special-shuttle/2-1bo2ml3/",
       "name": "Gangqian",
       "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/2-1bo2ml3/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/2-1q3agst/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/special-shuttle/2-1q3agst/",
@@ -12506,18 +12431,8 @@
     },
     {
       "page": "/bus/routes/special-shuttle/20-o7pig6/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/20-o7pig6/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/21-1fm1bvh/",
-      "name": "Zhongshan Junior High School",
-      "href": "/rail/metro/stations/br12/"
     },
     {
       "page": "/bus/routes/special-shuttle/21-1fm1bvh/",
@@ -12533,11 +12448,6 @@
       "page": "/bus/routes/special-shuttle/21-1fm1bvh/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/21-rl8urw/",
-      "name": "Maokong Gondola",
-      "href": "/rail/cable/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/special-shuttle/21-rl8urw/",
@@ -12576,11 +12486,6 @@
     },
     {
       "page": "/bus/routes/special-shuttle/27/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/27/",
       "name": "Shipai",
       "href": "/rail/metro/stations/r19/"
     },
@@ -12588,11 +12493,6 @@
       "page": "/bus/routes/special-shuttle/27/",
       "name": "Gongguan",
       "href": "/rail/metro/stations/g07/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/27/",
-      "name": "國父紀念館",
-      "href": "/rail/metro/stations/bl17/"
     },
     {
       "page": "/bus/routes/special-shuttle/27/",
@@ -12665,11 +12565,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/special-shuttle/7-1o8kc01/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/special-shuttle/7-1yt6dk1/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
@@ -12686,11 +12581,6 @@
     },
     {
       "page": "/bus/routes/special-shuttle/9-1w3v69i/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/9-1w3v69i/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
     },
@@ -12703,11 +12593,6 @@
       "page": "/bus/routes/special-shuttle/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-174oym7/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/special-shuttle/route-174oym7/",
@@ -12761,11 +12646,6 @@
     },
     {
       "page": "/bus/routes/special-shuttle/route-8dkx0/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-8dkx0/",
       "name": "Jingping",
       "href": "/rail/metro/stations/y10/"
     },
@@ -12773,16 +12653,6 @@
       "page": "/bus/routes/special-shuttle/route-h23w94/",
       "name": "NTU Hospital",
       "href": "/rail/metro/stations/r09/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-h23w94/",
-      "name": "Gongguan",
-      "href": "/rail/metro/stations/g07/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-h23w94/",
-      "name": "Taipei City Hall",
-      "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/special-shuttle/route-h23w94/",
@@ -12796,23 +12666,8 @@
     },
     {
       "page": "/bus/routes/special-shuttle/route-opqz7/",
-      "name": "Yuanshan",
-      "href": "/rail/metro/stations/r14/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-opqz7/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-q03sgr/",
-      "name": "Xiaonanmen",
-      "href": "/rail/metro/stations/g11/"
-    },
-    {
-      "page": "/bus/routes/special-shuttle/route-x9c7cr/",
-      "name": "Yuanshan",
-      "href": "/rail/metro/stations/r14/"
     },
     {
       "page": "/bus/routes/special-shuttle/route-x9c7cr/",

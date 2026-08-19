@@ -53,6 +53,20 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “新店(民族路) - 臺北市政府”, the current head/last-departure field “[平日] 0650 - 1700 [假日] 停駛”, fare “兩段票”.[^ebus-route-13-1yksc8z] It currently lists weekday service and suspended holiday service.[^ebus-route-13-1yksc8z]
 
+The confirmed stop sequence runs from 大豐國小, past 耕莘醫院(民族路)/耕
+莘醫院(三民路)/公園新村/三民路/中正國小(三民路)/調查局/瑠公公園, through
+捷運新店區公所站(中華)/七張(北新路)/捷運七張站/新店郵局/大坪林/捷運大坪
+林站/滬江中學/捷運景美站/財政園區/萬隆/捷運萬隆站/武功國小(羅斯福)/師大
+分部/公館, along 臺灣科技大學/臺大癌醫(基隆路)/基隆長興街口/和平高中,
+through 捷運六張犁站(基隆路), ending at 三興國小/吳興街口/世貿中心(基隆
+路)/市政府(市府).[^tdx-bus] Six confirmed interchanges are recorded in
+the curated stop-ID join set: Liuzhangli (BR07), Xindian District
+Office (G02), Qizhang (G03), Dapinglin (G04/Y07), Jingmei (G05) and
+Wanlong (G06), all along the Songshan-Xindian Line stretch the route
+parallels for most of its own run.[^tdx-bus] The route runs two
+half-trip subroutes under one operator, 欣欣客運, on a two-stage fare,
+weekdays only with holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 新店(民族路) with 臺北市政府 specifically as the route's own termini.

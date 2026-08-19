@@ -53,6 +53,19 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “中和 - 南港軟體園區”, the current head/last-departure field “[平日] 0650 - 1800 [假日] 停駛”, fare “兩段票”.[^ebus-route-route-8dkx0] It currently lists weekday service and suspended holiday service.[^ebus-route-route-8dkx0]
 
+The confirmed stop sequence runs from 駕訓中心, past 中和高中/連城路/連
+城中正路口/連城錦和路口/台貿一村/中和國稅局/連城景平路/連城中和路口/中
+和廟口/中和派出所/南山高中/雙和里/華泰新城(宜安路)/宜安路/中興二村/中興
+新村/得和路口/永和國小/金銀大廈/永利路/福和國中/福和橋(永元路), through
+捷運六張犁站(基隆路), ending at 喬治商職/三興國小/吳興街口/園區街/南港
+軟體園區(一期大門), a shorter run than the separate 南軟通勤專車雙和線,
+which continues past a similar Zhonghe stretch through 公館 and further
+Nangang stops.[^tdx-bus] One confirmed interchange is recorded in the
+curated stop-ID join set: Liuzhangli (BR07), the same single station
+confirmed for 南軟通勤專車雙和線.[^tdx-bus] The route runs two named
+subroutes under one operator, 中興巴士, on a two-stage fare, weekdays
+only with holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for running two separately numbered Zhonghe–Nangang Software Park shuttles, this route and 南軟通勤專車雙和線, over a largely overlapping opening stretch under different operators, was found in this search.

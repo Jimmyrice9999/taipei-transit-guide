@@ -53,6 +53,14 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “貓空纜車站 - 杏花林”, the current head/last-departure field “[平日] 0900 - 2000 [假日] 0830 - 2000”, fare “一段票”.[^ebus-route-route-17feggx]
 
+The confirmed stop sequence is a single loop, running from 貓空纜車站,
+past 石坡坑/田寮橋/樟樹步道北口/樟山寺/望遠亭(老泉里)/杏花林(老泉里)/樟
+樹步道南口/瓦厝/樟湖步道, and back to 貓空纜車站.[^tdx-bus] The curated
+stop-ID join set records zero confirmed interchanges for this route,
+consistent with its own corridor running entirely within the Maokong
+hillside, well away from any rail line.[^tdx-bus] The route runs a
+single subroute under one operator, 欣欣客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing this route's own loop with the separate 貓空左線(動物園) and 貓空左線(指南宮), rather than a single combined Maokong shuttle serving all three destinations from one shared terminus, was found in this search, nor a stated reason for the route's own slightly later weekday start against its own holiday hours.

@@ -53,6 +53,21 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “土城駕訓中心 - 內湖科技園區”, the current head/last-departure field “[平日] 0640 - 1820 [假日] 停駛”, fare “兩段票”.[^ebus-route-3-1uhn1kq] It currently lists weekday service and suspended holiday service.[^ebus-route-3-1uhn1kq]
 
+The confirmed stop sequence runs from 駕訓中心, past 中和高中/連城路/連城
+中正路口/連城錦和路口/台貿一村/中和國稅局/連城景平路/連城中和路口/廟美
+里/南山高中(中山路)/佳和公園/保生路口/永平高中/中山路口, through 捷運頂
+溪站/中正橋頭/重慶南路三段(中正橋)/和平西路一段/南福板溪(南昌公園)/捷運
+古亭站(和平)/公企中心/捷運東門站(金山), along 仁愛路二段/金山泰安街口/
+圓山大飯店/中央電台/忠烈祠/經國七海文化園區, ending at 基湖站/基湖路口/
+瑞光路/公館山/麗寶大樓/時報廣場/民權大橋 in the Neihu Science Park, the
+same corridor confirmed for the shorter 內科通勤專車2, extended here past
+that route's own terminus.[^tdx-bus] Three confirmed interchanges are
+recorded in the curated stop-ID join set: Guting (G09/O05), Dingxi
+(O04) and Dongmen (O06/R07), the same three stations confirmed for
+內科通勤專車2.[^tdx-bus] The route runs two named subroutes under two
+operators, 大都會客運 and 臺北客運, on a two-stage fare, weekdays only
+with holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for running two separately numbered Zhonghe–Neihu Science Park shuttles, 內科2 and 內科3, over a largely overlapping corridor under different operators, was found in this search.

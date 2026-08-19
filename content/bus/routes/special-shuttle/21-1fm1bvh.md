@@ -53,6 +53,19 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “板橋 - 內科”, the current head/last-departure field “[平日] 0650 - 1830 [假日] 停駛”.[^ebus-route-21-1fm1bvh] It currently lists weekday service and suspended holiday service.[^ebus-route-21-1fm1bvh]
 
+The confirmed stop sequence runs from 歡仔園, past 僑中一街/大觀路一段28
+巷/接雲寺/林家花園/北門街(黃石市場)/捷運府中站(府中路)/萬坪公園/新北板橋
+公車站/中山國中(縣民大道)/華翠大橋, through 雙園街口/時報大樓/萬華車站/
+艋舺大道/聯合醫院和平院區/捷運西門站/中華路北站/捷運北門站, along 潭美國
+小(舊宗)/潭美國小(行善)/行善行愛路口/行善石潭路口, ending at 麗寶大樓/公
+館山/瑞光路/瑞光港墘路口/仁寶大樓/基湖路口/基湖站/內湖基湖路口 in the
+Neihu Science Park.[^tdx-bus] Four confirmed interchanges are recorded
+in the curated stop-ID join set: Fuzhong (BL06), Banqiao (BL07), Ximen
+(BL11/G12) and Beimen (G13), all confirmed along the route's own
+Banqiao-Ximen stretch.[^tdx-bus] The route runs two named subroutes
+under one operator, 臺北客運, weekdays only with holiday service
+suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure and a fare figure both stay TBC, and no stated reason for pairing 板橋 with the Neihu Science Park specifically over this long a corridor was found in this search.

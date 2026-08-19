@@ -53,6 +53,20 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “北投 - 內湖科技園區”, the current head/last-departure field “[平日] 0705 - 1810 [假日] 停駛”, fare “兩段票”.[^ebus-route-16-g1oiln] It currently lists weekday service and suspended holiday service.[^ebus-route-16-g1oiln]
 
+At 45 stops each way, the confirmed stop sequence runs from 貴子坑水
+土保持園區, past 秀山里/慈航寺/國泰新村/中和里/復興中學/中和街/新北投/北
+投公園/第一銀行, through 捷運唭哩岸站/捷運石牌站/捷運明德站/捷運芝山站/
+士林/捷運士林站(中正)/福林國小/士林官邸(中正)/泰北中學/東吳大學(錢穆
+故居)/外雙溪(故宮), ending at 內湖基湖路口/基湖路口/仁寶大樓/瑞光港墘路
+口/瑞光路/公館山/麗寶大樓/時報廣場/民權大橋 in the Neihu Science Park.[^tdx-bus]
+Seven confirmed interchanges are recorded in the curated
+stop-ID join set: Jiannan Rd. (BR15), Zhishan (R17), Mingde (R18),
+Shipai (R19), Qilian (R20), Qiyan (R21) and Xinbeitou (R22A), tied for
+the second-widest confirmed spread of any route in this batch, behind
+only the tourist-oriented 臺北觀光巴士紅線.[^tdx-bus] The route runs two
+named subroutes under one operator, 大南汽車, on a two-stage fare,
+weekdays only with holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 北投 with the Neihu Science Park specifically over such a long corridor, rather than a shorter feeder to a nearer station.

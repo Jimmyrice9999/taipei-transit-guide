@@ -60,8 +60,7 @@ along 新北投/新民國中/國軍北投醫院/林泉里/新民路底/泉源別
 場, ending at 陽明山, a shorter run than the separate 小9, which
 continues past the same stretch to 竹子湖.[^tdx-bus] Two confirmed
 interchanges are recorded in the curated stop-ID join set: Beitou
-(R22) and Xinbeitou (R22A), the same pair confirmed for 小9 itself.
-[^tdx-bus] The route runs a single subroute under one operator, 大南
+(R22) and Xinbeitou (R22A), the same pair confirmed for 小9 itself.[^tdx-bus] The route runs a single subroute under one operator, 大南
 汽車, the same operator running 小9 over the longer corridor.[^tdx-bus]
 
 ## Research status

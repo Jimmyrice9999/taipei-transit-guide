@@ -55,10 +55,8 @@ The full official schedule gives termini “中華科技大學 - 內溝”, the 
 
 The confirmed stop sequence runs from 中華科技大學 in outer Nangang, past
 軍人公墓/凌雲站/胡適公園, through 中研院/中研新村/南港水廠, into 南港展覽館/南港
-軟體園區, past a stop literally named 捷運東湖站(南湖高中), ending near 內溝.
-[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID
-join set: Taipei Nangang Exhibition Center (BL23/BR24) and Donghu (BR22).
-[^tdx-bus] The route runs a single subroute under one operator, 東南客運,
+軟體園區, past a stop literally named 捷運東湖站(南湖高中), ending near 內溝.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID
+join set: Taipei Nangang Exhibition Center (BL23/BR24) and Donghu (BR22).[^tdx-bus] The route runs a single subroute under one operator, 東南客運,
 the same company that runs sibling 小1區 over an overlapping Nangang-
 Neihu corridor.[^tdx-bus]
 

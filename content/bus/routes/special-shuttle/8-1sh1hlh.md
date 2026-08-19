@@ -53,6 +53,13 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “松山車站 - 內湖科技園區”, the current head/last-departure field “[平日] 0750 - 1820 [假日] 停駛”, fare “一段票”.[^ebus-route-8-1sh1hlh] It currently lists weekday service and suspended holiday service.[^ebus-route-8-1sh1hlh]
 
+The confirmed stop sequence runs from 松山車站, past 週美里一/潭美國小
+(舊宗)/新湖舊宗路口/精技大樓/新湖行善路口/麗寶大樓/公館山/瑞光路/瑞光港
+墘路口/仁寶大樓/基湖路口, ending at 基湖站 in the Neihu Science Park.[^tdx-bus] One confirmed interchange is recorded in the curated
+stop-ID join set: Songshan (G19), matching the route's own terminus.[^tdx-bus] The route runs two named subroutes under two operators, 光
+華巴士 and 中興巴士, weekdays only with holiday service suspended
+entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 松山車站 with the Neihu Science Park specifically as the route's own termini, distinct from the several other Songshan-Neihu shuttles in this batch, was found in this search.

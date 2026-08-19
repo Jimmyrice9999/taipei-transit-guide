@@ -57,8 +57,7 @@ The confirmed stop sequence follows sibling 小10's own opening 萬芳社區/
 木柵/指南路/政大 stretch, then continues past 樟山寺/樟樹步道/瓦厝/樟湖步道
 to end at the Maokong Gondola's own 貓空站(小天空步道), one stop short of
 小10's own gondola-station terminus.[^tdx-bus] One confirmed interchange
-is recorded in the curated stop-ID join set: Wanfang Community (BR03).
-[^tdx-bus] TDX records two named subroutes distinguishing whether the
+is recorded in the curated stop-ID join set: Wanfang Community (BR03).[^tdx-bus] TDX records two named subroutes distinguishing whether the
 working detours via 小天空步道.[^tdx-bus]
 
 ## Research status

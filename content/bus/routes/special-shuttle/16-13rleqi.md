@@ -53,6 +53,17 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運南港展覽館站 - 國家生技園區”, the current head/last-departure field “[平日] 0710 - 1905 [假日] 停駛”, fare “一段票”.[^ebus-route-16-13rleqi] It currently lists weekday service and suspended holiday service.[^ebus-route-16-13rleqi]
 
+At three to four stops each way, the confirmed stop sequence is among
+the shortest in this batch, running from 捷運南港展覽館站(經貿二), past
+捷運南港站, ending at 國家生技園區A/C棟/國家生技園區F棟, with one working
+starting directly from 捷運南港站 rather than the exhibition-centre
+stop.[^tdx-bus] Two confirmed interchanges are recorded in the curated
+stop-ID join set: Nangang (BL22) and Taipei Nangang Exhibition Center
+(BL23/BR24), matching the route's own terminus and the stop it
+sometimes omits.[^tdx-bus] TDX records four named direction/variant
+records for this service under one operator, 欣欣客運, distinguishing
+the full working from the shorter one that skips 南港展覽館.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for two workings differing only in whether they touch 南港展覽館 on such a short corridor.

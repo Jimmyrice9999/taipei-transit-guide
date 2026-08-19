@@ -53,6 +53,17 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “富德 - 貓空纜車站”, the current head/last-departure field “[平日] 0650 - 2000 [假日] 0700 - 2330”, fare “一段票”.[^ebus-route-route-opqz7]
 
+The confirmed stop sequence runs from 富德, past 象頭埔/萬福橋, through
+捷運動物園站/貓纜動物園站, along 萬壽橋頭(新光)/萬壽橋頭(秀明)/萬興國小/
+政大(聯合醫院)/小坑口(北政國中)/北政國中(政大實小)/三角公園/政大威秀/
+水鋼琴社區/指南實小/石獅腳/樟樹步道北口/田寮橋/石坡坑, ending at 貓空纜
+車站, with the return leg looping further via 天恩宮/茶推廣中心/貓空壺
+穴站/貓空站(小天空步道)/涼亭站/圓山/草湳/岐山.[^tdx-bus] One confirmed
+interchange is recorded in the curated stop-ID join set: Taipei Zoo
+(BR01), matching a stop early in the route's own corridor.[^tdx-bus]
+The route runs two named subroutes under one operator, 欣欣客運, with
+its own holiday service running later than its own weekday hours.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the outbound and return legs following such different paths, or for the route's own later holiday closing time, was found in this search.

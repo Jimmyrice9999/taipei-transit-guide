@@ -58,10 +58,9 @@ The confirmed stop sequence runs from 莊敬里, past 新益里/民生國中/新
 (南京)/饒河街觀光夜市, ending at 松山車站(八德)/松山車站.[^tdx-bus] Two
 confirmed interchanges are recorded in the curated stop-ID join set:
 Nanjing Sanmin (G18) and Songshan (G19), both on the same Songshan-
-Xindian Line stretch the route parallels for most of its own run.
-[^tdx-bus] The route runs a single subroute under one operator, 大都會
+Xindian Line stretch the route parallels for most of its own run.[^tdx-bus] The route runs a single subroute under one operator, 大都會
 客運, weekdays only with holiday service suspended entirely.[^tdx-bus]
 
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension, shared with the separate 市民小巴17 run by the same operator, was found in this search.
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension, shared with the separate 市民小巴17 run by the same operator, was found in this search, nor a stated reason for pairing 撫遠街 with 松山車站 specifically as the route's own termini.

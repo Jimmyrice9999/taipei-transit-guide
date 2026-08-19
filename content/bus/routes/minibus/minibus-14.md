@@ -56,9 +56,7 @@ The full official schedule gives termini “北投 - 照明寺”, the current h
 The confirmed stop sequence runs from 致遠新村, past 稻香圖書館/復興崗/文化
 國小, through 北投's 大業中央北路口/北投國小/北投市場, along 福安宮/石門/清江
 國小, ending at 照明寺 near 奇岩新村/公館華廈.[^tdx-bus] The curated
-stop-ID join set records zero confirmed interchanges for this route.
-[^tdx-bus] The route runs a single subroute under one operator, 大南汽車.
-[^tdx-bus]
+stop-ID join set records zero confirmed interchanges for this route.[^tdx-bus] The route runs a single subroute under one operator, 大南汽車.[^tdx-bus]
 
 ## Research status
 

@@ -62,8 +62,7 @@ interchanges are recorded in the curated stop-ID join set: Qiyan
 (R21), Beitou (R22) and Xinbeitou (R22A), all confirmed along the
 route's own starting stretch.[^tdx-bus] TDX records five named
 direction/variant records for this service, distinguishing workings
-that detour via 紗帽馬場 or that reroute onto 東昇路 on either leg.
-[^tdx-bus]
+that detour via 紗帽馬場 or that reroute onto 東昇路 on either leg.[^tdx-bus]
 
 ## Research status
 

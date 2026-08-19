@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “中和 - 臺北市政府”, the current head/last-departure field “[平日] 0655 - 0655 [假日] 停駛”, fare “兩段票”.[^ebus-route-12-10palml] It currently lists weekday service and suspended holiday service.[^ebus-route-12-10palml]
 
+The confirmed stop sequence runs from 中和保養廠, past 家美工業區/捷運中
+和站(中山路)/連城路口/中和區公所/南華路口/捷運景安站/中和教會/南勢角(景
+平路)/捷運景平站, through 景平路景德街口/秀景里/范厝/秀朗路三段70巷/劉厝/
+六合社區/成功得和路口/福和橋(成功路)/和平高中, ending at 捷運六張犁站(基
+隆路)/三興國小/吳興街口/世貿中心(基隆路)/市政府(市府).[^tdx-bus] Five
+confirmed interchanges are recorded in the curated stop-ID join set:
+Liuzhangli (BR07), Jingan (O02/Y11), Xiulang Bridge (Y09), Jingping
+(Y10) and Zhonghe (Y12), the widest confirmed spread of any route
+sharing the 中和-臺北市政府 pairing with the neighbouring 通勤11.[^tdx-bus] The route runs a single subroute under one operator, 大都會
+客運, on a two-stage fare and a same-time head/last-departure field
+publishing only one trip.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own single published trip, unlike the range of departures shown for the neighbouring 通勤11, was found in this search.

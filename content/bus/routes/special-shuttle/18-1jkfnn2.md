@@ -53,6 +53,18 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運民權西路站 - 內湖科技園區”, the current head/last-departure field “[平日] 0700 - 1800 [假日] 停駛”, fare “一段票”.[^ebus-route-18-1jkfnn2] It currently lists weekday service and suspended holiday service.[^ebus-route-18-1jkfnn2]
 
+The confirmed stop sequence runs from 捷運民權西路站, past 民權中山路口/
+捷運中山國小站/民權吉林路口/民權松江路口/民權建國路口/民權龍江路口/民權復
+興路口/民權敦化路口/民權東路口/中華航空/民權公園/民權國小/三民國小/民權
+大橋/時報廣場/麗寶大樓/公館山/瑞光路/瑞光港墘路口/仁寶大樓/基湖路口, ending
+at 內湖基湖路口/西湖國中.[^tdx-bus] Five confirmed interchanges are
+recorded in the curated stop-ID join set: Zhongshan Junior High
+School (BR12), Songshan Airport (BR13), Xihu (BR16), Zhongshan
+Elementary School (O10) and Minquan W. Rd. (O11/R13), all confirmed
+along the route's own Minquan corridor.[^tdx-bus] The route runs two
+named subroutes under one operator, 三重客運, weekdays only with
+holiday service suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 捷運民權西路站 with the Neihu Science Park specifically as the route's own termini.

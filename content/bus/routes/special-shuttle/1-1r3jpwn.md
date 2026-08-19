@@ -53,6 +53,14 @@ The normalized TDX record retains 3 direction/variant records for this service; 
 
 The full official schedule gives termini “士東路 - 北士科”, the current head/last-departure field “[平日] 0600 - 2000 [假日] 0600 - 2000”, fare “一段票”.[^ebus-route-1-1r3jpwn]
 
+The confirmed stop sequence runs from 職能發展學院一, past 士東路/天母棒球
+場(士東)/蘭雅國中/德行忠誠路口/忠義新城/石油新村/士林電機, through 捷運芝
+山站(福國), along 中鼎第二總部大樓/福美承平路口/三王宮, ending at 福美站
+in the 北士科 (Beishike) technology district.[^tdx-bus] One confirmed
+interchange is recorded in the curated stop-ID join set: Zhishan
+(R17), confirmed roughly midway along the route's own corridor.[^tdx-bus] TDX records three direction/variant records for this
+service under two operators, 光華巴士 and 中興巴士.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 士東路 with 北士科 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming only one interchange despite passing close to both Zhishan and Shilin on its own corridor.

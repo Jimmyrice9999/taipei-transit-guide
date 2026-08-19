@@ -61,8 +61,7 @@ run than the separate 小8, which continues past the same stretch to 竹
 子湖.[^tdx-bus] One confirmed interchange is recorded in the curated
 stop-ID join set: Shipai (R19), the same station confirmed for 小8
 itself.[^tdx-bus] The route runs a single subroute under one operator,
-大南汽車, the same operator running 小8 over the longer corridor.
-[^tdx-bus]
+大南汽車, the same operator running 小8 over the longer corridor.[^tdx-bus]
 
 ## Research status
 
