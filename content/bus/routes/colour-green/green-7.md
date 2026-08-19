@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 綠7 under 捷運綠線接駁公車.[^ebus-green] Its full schedule page gives 黎明清境 - 捷運大坪林站, weekday and holiday service 0600–2230, one-section fare, peak headways of 15–20 minutes, off-peak headways of 20–30 minutes, and two service contacts, 新店客運碧潭站 and 新店客運錦繡站.[^ebus-g7]
 
+The confirmed stop sequence starts at 黎明清境, an Ankeng housing estate, and
+runs the same 安坑/安康-to-新店 corridor as 綠10 — the two routes share almost
+their entire alignment — ending at 捷運大坪林站.[^tdx-bus] The same four
+confirmed interchanges as 綠10 apply: 捷運新店區公所站 (Xindian District
+Office, G02), 捷運七張站 (Qizhang, G03), 捷運大坪林站 itself (Dapinglin, G04,
+also Circular Line Y07), and 輕軌安康站 (Ankang, K06).[^tdx-bus] Its two
+listed service contacts, 新店客運碧潭站 and 新店客運錦繡站, both belong to the
+same operator, 新店客運, at two separate dispatch stations rather than a
+joint operation between two companies.[^ebus-g7] 新店客運 also runs 綠10,
+which shares this route's corridor almost exactly, out of the same 碧潭
+dispatch station named on both routes' schedule pages.[^tdx-bus] Its 15–20/
+20–30 minute headway split matches 綠6 and 綠8 exactly, one more data point
+for a shared scheduling pattern across this operator's colour-green
+routes.[^ebus-g7]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

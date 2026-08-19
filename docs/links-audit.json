@@ -1111,11 +1111,6 @@
     },
     {
       "page": "/bus/routes/colour-green/green-2-1e49mjx/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
       "name": "Xinhai",
       "href": "/rail/metro/stations/br05/"
     },
@@ -1141,28 +1136,13 @@
     },
     {
       "page": "/bus/routes/colour-green/green-2-1e49mjx/",
-      "name": "Zhonghe",
-      "href": "/rail/metro/stations/y12/"
-    },
-    {
-      "page": "/bus/routes/colour-green/green-2-1e49mjx/",
       "name": "Xingfu",
       "href": "/rail/metro/stations/y19/"
     },
     {
       "page": "/bus/routes/colour-green/green-2-a3vlet/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/colour-green/green-2-a3vlet/",
       "name": "Xinhai",
       "href": "/rail/metro/stations/br05/"
-    },
-    {
-      "page": "/bus/routes/colour-green/green-2-a3vlet/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
     },
     {
       "page": "/bus/routes/colour-green/green-2-a3vlet/",
@@ -1173,11 +1153,6 @@
       "page": "/bus/routes/colour-green/green-2-a3vlet/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-green/green-2-a3vlet/",
-      "name": "Zhonghe",
-      "href": "/rail/metro/stations/y12/"
     },
     {
       "page": "/bus/routes/colour-green/green-2-a3vlet/",

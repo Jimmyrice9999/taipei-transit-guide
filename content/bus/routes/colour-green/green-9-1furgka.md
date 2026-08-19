@@ -51,6 +51,16 @@ sources:
 
 The official catalogue lists 綠9 under 捷運綠線接駁公車.[^ebus-green] Its full schedule page gives 大香山 - 慈濟醫院, weekday service 0900–2300 with no holiday service, one-section fare and 大南汽車土城站 as the service contact. It also publishes an accessible reserved-departure scheme at 10:00, 12:00, 14:00 and 16:00 on weekdays, requiring booking two days in advance.[^ebus-g9] TDX carries two further records sharing the 綠9 number under different termini — 綠9耕莘 (`green-9-17j6i4`) and 綠9北新國小 (`green-9-eilq32`); their relationship to this route, if any, is TBC.
 
+The confirmed stop sequence starts at 大香山, a remote hillside hamlet, and
+loops through a run of gated communities — 名人鄉村, 大千豪景, 江坡華城 — with
+an out-and-back detour to 大千豪景 itself in the middle of the loop, before
+descending through 七張/大坪林 to end at 慈濟醫院.[^tdx-bus] This route shares
+its entire 大香山-to-江坡華城 loop with its 綠9耕莘 and 綠9北新國小 siblings, and
+is the only one of the three to continue as far as 捷運大坪林站 (Dapinglin,
+G04, also Circular Line Y07) — the other two turn off earlier, at 耕莘醫院
+and 北新國小 respectively.[^tdx-bus] 捷運七張站 (Qizhang, G03) is confirmed on
+all three.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 綠9耕莘 under 捷運綠線接駁公車.[^ebus-green] Its full schedule page gives 大香山 - 耕莘醫院, weekday service 0740–1650, holiday service 1530–2100, one-section fare and 大南汽車土城站 as the service contact.[^ebus-g9gengxin] It shares its 大香山 origin and operator contact with plain 綠9 (`green-9-1furgka`) and 綠9北新國小 (`green-9-eilq32`), but TDX carries all three as separate records rather than variants of one route.
 
+The confirmed stop sequence shares the same 大香山-to-江坡華城 gated-community
+loop as its 綠9 and 綠9北新國小 siblings — including the same out-and-back
+detour to 大千豪景 — but turns off after 七張(北新路) to end at 耕莘醫院 via
+新店郵局 and 大豐國小, a different final leg from either sibling.[^tdx-bus] The
+one confirmed interchange, 捷運七張站 (Qizhang, G03), is shared with both
+siblings.[^tdx-bus] Its weekday and holiday spans barely overlap — 0740–1650
+on weekdays against 1530–2100 on holidays, sharing only the 1530–1650
+window — unlike the flat all-week hours most other routes in this project's
+colour-green coverage publish.[^ebus-g9gengxin] A weekday evening rider
+after 1650, or a holiday-morning rider before 1530, has no service on this
+specific route at all — the two spans cover different parts of the day
+depending on the day type, rather than one span shrinking on
+holidays.[^ebus-g9gengxin]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to the other 綠9 records remain TBC.[^tdx-bus]

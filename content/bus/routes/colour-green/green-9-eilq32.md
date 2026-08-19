@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 綠9北新國小 under 捷運綠線接駁公車.[^ebus-green] Its full schedule page gives 大香山 - 北新國小, weekday service 0550–2155, holiday service 0600–2310, one-section fare and 大南汽車土城站 as the service contact.[^ebus-g9beixin] It shares its 大香山 origin and operator contact with plain 綠9 (`green-9-1furgka`) and 綠9耕莘 (`green-9-17j6i4`), but TDX carries all three as separate records rather than variants of one route.
 
+The confirmed stop sequence shares the same 大香山-to-江坡華城 gated-community
+loop and 大千豪景 out-and-back detour as its 綠9 and 綠9耕莘 siblings, but ends
+at the shortest distance of the three, stopping at 北新國小 rather than
+continuing to either 慈濟醫院 or 耕莘醫院.[^tdx-bus] The one confirmed
+interchange, 捷運七張站 (Qizhang, G03), is shared with both
+siblings.[^tdx-bus] Of the three 大香山 siblings, this is the only one running
+a genuinely all-week, nearly-round-the-clock span — 0550–2155 weekdays,
+0600–2310 holidays — against 綠9耕莘's split weekday/holiday hours and plain
+綠9's weekday-only service.[^ebus-g9beixin] Three routes sharing one
+origin, one operator and most of one alignment, but publishing three
+different service patterns, is itself the finding: a shared corridor does
+not imply a shared timetable on this project's evidence.[^ebus-g9beixin]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to the other 綠9 records remain TBC.[^tdx-bus]
