@@ -70,6 +70,15 @@ contact, and states the current arrangement took effect from 113年7月1日 (1
 July 2024).[^ebus-536shuttle] The page lists 21 weekday departures and 14
 holiday departures.[^ebus-536shuttle]
 
+The confirmed stop sequence runs from 富洲里 on the Shezi peninsula's
+northern tip, past 台北海大 (Taipei University of Maritime Technology),
+through 社子's 福安/普濟堂 area, into 士林 past a stop literally named 捷運芝山
+站, then through 明德/石牌 past 捷運明德站 and 捷運石牌站, ending at 榮總 — the
+same corridor 536 and 508 also run, but starting further out on the
+peninsula and stopping short of 大同之家.[^tdx-bus] None of the three
+literally-named MRT stops is in the curated stop-ID join set as a
+confirmed interchange.[^tdx-bus]
+
 ## History
 
 A community wiki covering both 536 and 536區 on one page records this

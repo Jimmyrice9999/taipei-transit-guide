@@ -77,6 +77,14 @@ holiday service suspended (例假日停駛), a two-section fare (兩段票), and
 首都客運社子站 as the service contact.[^ebus-536] The page lists 13 weekday
 departures.[^ebus-536]
 
+The confirmed stop sequence covers the same 社子–士林–石牌 corridor as
+536Shuttle, extended past 榮總 into the 行義路 hot-spring area to end at 大同
+之家 — effectively 508's own northern half, run independently since the
+2024 restructuring recorded below split the line from its own
+shuttle.[^tdx-bus] The same three literally-named MRT stops as
+536Shuttle — 捷運芝山站, 捷運明德站 and 捷運石牌站 — lie along the way with no
+confirmed interchange in the curated set.[^tdx-bus]
+
 ## History
 
 A community wiki records 首都客運 took over operation on 15 June 2002, the

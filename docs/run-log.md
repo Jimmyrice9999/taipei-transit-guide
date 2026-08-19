@@ -12485,3 +12485,40 @@ series-300s 16, colour-green 17, colour-orange 18, trunk 19). Next-smallest
 remaining: series-500s (21), colour-blue (38), colour-red (40), series-0-99
 (33), minibus (48), series-600s (49), special-shuttle (51), series-200s
 (92), new-taipei (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 7, series-500s to 200+ words
+
+20 routes: the whole `series-500s` group — 505, 508, 508Shuttle, 513, 521,
+529, 530, 531, 536, 536Shuttle, 539 (x2 subroute records), 542 (x2 subroute
+records), 550, 551, 552, 556, 557, 559, 568. Same method: corridor prose
+from each route's own confirmed stop sequence, plus — the dominant pattern
+in this group — an honest statement of interchange candor, since every
+single route in series-500s has zero entries in the curated stop-ID rail
+join set, `railJoins: []`, regardless of how many stops are literally named
+for MRT stations along the way.
+
+Genuine findings: 513 and 508 both literally pass six MRT-named stops each
+(輔大/新莊/頭前庄/先嗇宮/西門/台大醫院 for 513; 蘆洲/徐匯中學/三和國中/芝山/明德/石牌
+for 508) with zero confirmed interchanges for any of them — the widest gaps
+between literal naming and curated confirmation found in this batch. 508 at
+81 stops outbound is the longest stop sequence in the group; 513, cut to a
+single weekday departure with holiday service suspended since a 2020
+change the community wiki records, is among the sparsest schedules. 508,
+508Shuttle, 536 and 536Shuttle share almost the same 社子–士林–石牌 corridor
+at different lengths — 536Shuttle is 536's own shorter Shezi-to-榮總 half,
+536 continues to 大同之家, and 508/508Shuttle run the same stretch as part
+of a longer 泰山–大同之家 or 蘆洲–大同之家 line — each described against what
+it actually shares or diverges on rather than restated boilerplate. 530's
+predecessor (指南1, split into 530 and 801 in 2001) and 536's 2024
+two-stage restructuring (a full-length weekday cut from 34 to 10 alongside
+a new shuttle, then a partial weekday restoration two months later) are
+both corroborated between the community wiki and each route's own primary
+schedule page.
+
+Gates: cite clean, test:unit 209/209, claims baseline held at 32, verify
+running in the background at time of writing.
+
+Part 1 running total: 120 of 1,051 routes across ten groups. Next-smallest
+remaining: series-0-99 (33), colour-blue (38), colour-red (40), minibus
+(48), series-600s (49), special-shuttle (51), series-200s (92), new-taipei
+(562). Parts 2-7 not started.

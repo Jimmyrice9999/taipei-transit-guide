@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4858,
+    "sourced": 4870,
     "tbc": 4236,
     "asserted": 32,
     "meta": 41
@@ -7795,7 +7795,7 @@
     {
       "file": "content/bus/routes/series-500s/508-1oe2eum.md",
       "sources": 4,
-      "sourced": 5,
+      "sourced": 6,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7811,7 +7811,7 @@
     {
       "file": "content/bus/routes/series-500s/513.md",
       "sources": 4,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7827,7 +7827,7 @@
     {
       "file": "content/bus/routes/series-500s/529.md",
       "sources": 4,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7843,7 +7843,7 @@
     {
       "file": "content/bus/routes/series-500s/531.md",
       "sources": 4,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7851,7 +7851,7 @@
     {
       "file": "content/bus/routes/series-500s/536-vpz3ur.md",
       "sources": 5,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7859,7 +7859,7 @@
     {
       "file": "content/bus/routes/series-500s/536-zctmkx.md",
       "sources": 4,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7899,7 +7899,7 @@
     {
       "file": "content/bus/routes/series-500s/550.md",
       "sources": 3,
-      "sourced": 5,
+      "sourced": 6,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7915,7 +7915,7 @@
     {
       "file": "content/bus/routes/series-500s/552.md",
       "sources": 3,
-      "sourced": 5,
+      "sourced": 6,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7923,7 +7923,7 @@
     {
       "file": "content/bus/routes/series-500s/556.md",
       "sources": 3,
-      "sourced": 5,
+      "sourced": 6,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -7931,7 +7931,7 @@
     {
       "file": "content/bus/routes/series-500s/557.md",
       "sources": 3,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
@@ -7939,7 +7939,7 @@
     {
       "file": "content/bus/routes/series-500s/559.md",
       "sources": 3,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
@@ -7947,7 +7947,7 @@
     {
       "file": "content/bus/routes/series-500s/568.md",
       "sources": 3,
-      "sourced": 5,
+      "sourced": 6,
       "tbc": 2,
       "asserted": 0,
       "meta": 0

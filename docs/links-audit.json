@@ -10856,33 +10856,8 @@
     },
     {
       "page": "/bus/routes/series-500s/508-1oe2eum/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-1oe2eum/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-1oe2eum/",
-      "name": "Mingde",
-      "href": "/rail/metro/stations/r18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-1oe2eum/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-1oe2eum/",
-      "name": "Sanhe Junior High School",
-      "href": "/rail/metro/stations/o51/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-1oe2eum/",
-      "name": "Luzhou",
-      "href": "/rail/metro/stations/o54/"
     },
     {
       "page": "/bus/routes/series-500s/508-1oe2eum/",
@@ -10906,23 +10881,8 @@
     },
     {
       "page": "/bus/routes/series-500s/508-e65ybn/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-e65ybn/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-e65ybn/",
-      "name": "Mingde",
-      "href": "/rail/metro/stations/r18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/508-e65ybn/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
     },
     {
       "page": "/bus/routes/series-500s/508-e65ybn/",
@@ -10953,16 +10913,6 @@
       "page": "/bus/routes/series-500s/513/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
-    },
-    {
-      "page": "/bus/routes/series-500s/513/",
-      "name": "Xianse Temple",
-      "href": "/rail/metro/stations/o16/"
-    },
-    {
-      "page": "/bus/routes/series-500s/513/",
-      "name": "Xinzhuang",
-      "href": "/rail/metro/stations/o18/"
     },
     {
       "page": "/bus/routes/series-500s/513/",
@@ -11011,11 +10961,6 @@
     },
     {
       "page": "/bus/routes/series-500s/530/",
-      "name": "Maokong Gondola",
-      "href": "/rail/cable/lines/maokong-gondola/"
-    },
-    {
-      "page": "/bus/routes/series-500s/530/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
     },
@@ -11051,21 +10996,6 @@
     },
     {
       "page": "/bus/routes/series-500s/531/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/531/",
-      "name": "Huzhou",
-      "href": "/rail/metro/stations/br21/"
-    },
-    {
-      "page": "/bus/routes/series-500s/531/",
-      "name": "Donghu",
-      "href": "/rail/metro/stations/br22/"
-    },
-    {
-      "page": "/bus/routes/series-500s/531/",
       "name": "Luzhou",
       "href": "/rail/metro/stations/o54/"
     },
@@ -11075,19 +11005,9 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-500s/531/",
-      "name": "Ankang",
-      "href": "/rail/metro/stations/k06/"
-    },
-    {
       "page": "/bus/routes/series-500s/536-vpz3ur/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
-    },
-    {
-      "page": "/bus/routes/series-500s/536-vpz3ur/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-500s/536-vpz3ur/",
@@ -11098,11 +11018,6 @@
       "page": "/bus/routes/series-500s/536-vpz3ur/",
       "name": "Mingde",
       "href": "/rail/metro/stations/r18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/536-vpz3ur/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
     },
     {
       "page": "/bus/routes/series-500s/536-vpz3ur/",
@@ -11116,23 +11031,8 @@
     },
     {
       "page": "/bus/routes/series-500s/536-zctmkx/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-500s/536-zctmkx/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
-    },
-    {
-      "page": "/bus/routes/series-500s/536-zctmkx/",
-      "name": "Mingde",
-      "href": "/rail/metro/stations/r18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/536-zctmkx/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
     },
     {
       "page": "/bus/routes/series-500s/536-zctmkx/",
@@ -11176,11 +11076,6 @@
     },
     {
       "page": "/bus/routes/series-500s/550/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/550/",
       "name": "Qilian",
       "href": "/rail/metro/stations/r20/"
     },
@@ -11188,21 +11083,6 @@
       "page": "/bus/routes/series-500s/550/",
       "name": "Qiyan",
       "href": "/rail/metro/stations/r21/"
-    },
-    {
-      "page": "/bus/routes/series-500s/550/",
-      "name": "Beitou",
-      "href": "/rail/metro/stations/r22/"
-    },
-    {
-      "page": "/bus/routes/series-500s/550/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
-    },
-    {
-      "page": "/bus/routes/series-500s/550/",
-      "name": "Zhongyi",
-      "href": "/rail/metro/stations/r24/"
     },
     {
       "page": "/bus/routes/series-500s/550/",
@@ -11216,18 +11096,8 @@
     },
     {
       "page": "/bus/routes/series-500s/551/",
-      "name": "Gangqian",
-      "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/series-500s/551/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/551/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-500s/552/",
@@ -11246,18 +11116,8 @@
     },
     {
       "page": "/bus/routes/series-500s/552/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/552/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/556/",
-      "name": "Wanfang Community",
-      "href": "/rail/metro/stations/br03/"
     },
     {
       "page": "/bus/routes/series-500s/556/",
@@ -11266,18 +11126,8 @@
     },
     {
       "page": "/bus/routes/series-500s/556/",
-      "name": "Liuzhangli",
-      "href": "/rail/metro/stations/br07/"
-    },
-    {
-      "page": "/bus/routes/series-500s/556/",
       "name": "Dazhi",
       "href": "/rail/metro/stations/br14/"
-    },
-    {
-      "page": "/bus/routes/series-500s/556/",
-      "name": "劍南路",
-      "href": "/rail/metro/stations/br15/"
     },
     {
       "page": "/bus/routes/series-500s/556/",
@@ -11286,28 +11136,13 @@
     },
     {
       "page": "/bus/routes/series-500s/556/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/series-500s/556/",
       "name": "Taipei Arena",
       "href": "/rail/metro/stations/g17/"
     },
     {
       "page": "/bus/routes/series-500s/556/",
-      "name": "Zhongxiao Dunhua",
-      "href": "/rail/metro/stations/bl16/"
-    },
-    {
-      "page": "/bus/routes/series-500s/556/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-500s/557/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-500s/557/",
@@ -11323,16 +11158,6 @@
       "page": "/bus/routes/series-500s/568/",
       "name": "Liuzhangli",
       "href": "/rail/metro/stations/br07/"
-    },
-    {
-      "page": "/bus/routes/series-500s/568/",
-      "name": "Daan Park",
-      "href": "/rail/metro/stations/r06/"
-    },
-    {
-      "page": "/bus/routes/series-500s/568/",
-      "name": "Longshan Temple",
-      "href": "/rail/metro/stations/bl10/"
     },
     {
       "page": "/bus/routes/series-500s/568/",
