@@ -11058,3 +11058,31 @@ series-500s.** series-100s and series-900s are both fully built already
 (as this run's "series-other"), so nothing remains open there. Not
 started: series-200s, series-600s, minibus, special-shuttle, new-taipei,
 and the remaining unclassified records.
+
+## Run 49 — requested bus groups, 19 August 2026
+
+The repository was audited before authoring. `AGENTS.md`, `docs/bus-architecture.md`, one colour-green route page and one series-500s route page were read first. The TDX bus layer still contains 1,051 routes, and the pre-run content count of 245 was confirmed. The existing geometry-only join script was extended to the four requested groups and rerun after authoring; it uses stop IDs and coordinates, never name similarity.
+
+Sources used for all four groups were the TDX bus data portal (`https://tdx.transportdata.tw/`), the full Taipei eBus catalogue (`https://ebus.gov.taipei/ebus?ct=tpc`), and exact route schedule pages (`https://ebus.gov.taipei/Route/RouteSchedule?routeid=<route-id>`). Every fetched route schedule URL is recorded in the route source block and the corresponding research file. The full catalogue page was fetched and read; research files are provenance reports, not source substitutes.
+
+### special-shuttle — 42 routes, 4,346 body words
+
+Built in batches of 18, 18 and 6; commits `0fb7049`, `124f211`, `f7a1d52`. Exact eBus schedule sources: 42/42. Joins: 228 confirmed; 707 candidates rejected as too far; 0 ambiguous. Numeric-identity conflicts for 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 26, 27, 28, 29, 30, 31, 32 and 33 are published with every colliding TDX value and full name in `docs/research/bus/routes/special-shuttle.md`. No unmatched catalogue variant remained. Route length, service span, headway, fare, opening/history, corridor rationale, predecessor/renumbering, dated operator changes and restricted-eligibility/booking claims remain TBC where the fetched primary pages do not establish them.
+
+### minibus — 48 routes, 4,753 body words
+
+Built in batches of 16, 16 and 16; commits `ea6a6d3`, `cb58d95`, `88d53f2`. Exact eBus schedule sources: 47/48. Joins: 214 confirmed; 515 candidates rejected as too far; 0 ambiguous. Numeric-identity conflicts for 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 28, 30, 36 and 39 are published with every colliding TDX value and full name in `docs/research/bus/routes/minibus.md`. The exact `小15區預` schedule entry was checked and failed against the full catalogue; it remains a TDX identity without a promoted timetable or fare. Vehicle-access, hill/lane rationale, route length, span, headway, fare, history, dated operator changes and restricted-eligibility/booking claims remain TBC unless a fetched primary page supports them.
+
+### series-600s — 49 routes, 4,928 body words
+
+Built in batches of 17, 16 and 16; commits `c77e2ba`, `effeec0`, `ebba29e`. Exact eBus schedule sources: 48/49. Joins: 815 confirmed; 1,907 candidates rejected as too far; 0 ambiguous. Numeric-identity conflicts for 605, 617, 645, 660, 672 and 683 are published with every colliding TDX value and full name in `docs/research/bus/routes/series-600s.md`. The exact `683預` schedule entry was checked and failed against the full catalogue; it remains a TDX identity without a promoted timetable or fare. Route length, span, headway, fare, opening/history, corridor rationale, predecessor/renumbering, dated operator changes and restricted-eligibility/booking claims remain TBC where the fetched primary pages do not establish them.
+
+### series-200s — 92 routes, 9,175 body words
+
+Built in batches of 19, 19, 18, 18 and 18; commits `0bce087`, `9fd95e3`, `671c6c3`, `a539144`, `2dc9f14`. Exact eBus schedule sources: 88/92. Joins: 1,567 confirmed; 3,747 candidates rejected as too far; 0 ambiguous. Numeric-identity conflicts for 202, 208, 212, 214, 218, 225, 227, 232, 246, 247, 251, 254, 255, 260, 261, 262, 265, 270, 278, 280, 286, 292, 295 and 297 are published with every colliding TDX value and full name in `docs/research/bus/routes/series-200s.md`. Exact schedule entries checked and failed: `246預`, `260區預`, `261預` and `297預`; each remains a TDX identity without a promoted timetable or fare. Route length, span, headway, fare, opening/history, corridor rationale, predecessor/renumbering, dated operator changes and restricted-eligibility/booking claims remain TBC where the fetched primary pages do not establish them.
+
+### Closeout
+
+The four groups add 231 route pages, taking the site from 245 to 476 of 1,051 TDX routes. The final join audit across colour-red, colour-green, colour-orange, colour-blue, trunk and the four new groups is 4,062 confirmed and 9,498 rejected candidates; the new groups have no ambiguous joins. The shared bus data component now tags Chinese sequence summaries as `zh-Hant`; generated content-font updates were committed when newly reachable route names exposed missing glyphs. No unverified research appendix was promoted. `npm run cite`, `npm run verify`, the full 185-test suite, research checks, accessibility checks, geometry audit and CVD audit are green. New Taipei (561 routes) and the 14 unclassified records were not started.
+
+Stopped after completing series-200s. Remaining scope is exactly new-taipei (561) and unclassified (14); the four requested groups are complete.
