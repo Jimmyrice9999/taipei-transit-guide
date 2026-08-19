@@ -10306,11 +10306,6 @@
     },
     {
       "page": "/bus/routes/series-300s/300/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-300s/300/",
       "name": "Beimen",
       "href": "/rail/metro/stations/g13/"
     },
@@ -10326,11 +10321,6 @@
     },
     {
       "page": "/bus/routes/series-300s/302-1nt2z9s/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-300s/302-1nt2z9s/",
       "name": "Zhishan",
       "href": "/rail/metro/stations/r17/"
     },
@@ -10343,11 +10333,6 @@
       "page": "/bus/routes/series-300s/302-1nt2z9s/",
       "name": "Qiyan",
       "href": "/rail/metro/stations/r21/"
-    },
-    {
-      "page": "/bus/routes/series-300s/302-1nt2z9s/",
-      "name": "Beitou",
-      "href": "/rail/metro/stations/r22/"
     },
     {
       "page": "/bus/routes/series-300s/302-1nt2z9s/",
@@ -10403,11 +10388,6 @@
       "page": "/bus/routes/series-300s/302-asnxtl/",
       "name": "Qiyan",
       "href": "/rail/metro/stations/r21/"
-    },
-    {
-      "page": "/bus/routes/series-300s/302-asnxtl/",
-      "name": "Beitou",
-      "href": "/rail/metro/stations/r22/"
     },
     {
       "page": "/bus/routes/series-300s/302-asnxtl/",
@@ -10496,6 +10476,11 @@
     },
     {
       "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
       "name": "Yuanshan",
       "href": "/rail/metro/stations/r14/"
     },
@@ -10531,6 +10516,11 @@
     },
     {
       "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "大橋頭",
+      "href": "/rail/metro/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -10543,11 +10533,6 @@
       "page": "/bus/routes/series-300s/306-4vunir/",
       "name": "Nanjing Sanmin",
       "href": "/rail/metro/stations/g18/"
-    },
-    {
-      "page": "/bus/routes/series-300s/306-4vunir/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-300s/306-4vunir/",
@@ -10566,11 +10551,6 @@
     },
     {
       "page": "/bus/routes/series-300s/306-4vunir/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/series-300s/306-4vunir/",
       "name": "Sanhe Junior High School",
       "href": "/rail/metro/stations/o51/"
     },
@@ -10583,11 +10563,6 @@
       "page": "/bus/routes/series-300s/306-4vunir/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-300s/306-4vunir/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-300s/306-4vunir/",
@@ -10670,11 +10645,6 @@
       "href": "/rail/metro/stations/y10/"
     },
     {
-      "page": "/bus/routes/series-300s/307-1frkitg/",
-      "name": "Zhonghe",
-      "href": "/rail/metro/stations/y12/"
-    },
-    {
       "page": "/bus/routes/series-300s/307-1rlhqdi/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
@@ -10720,19 +10690,9 @@
       "href": "/rail/metro/stations/y10/"
     },
     {
-      "page": "/bus/routes/series-300s/307-1rlhqdi/",
-      "name": "Zhonghe",
-      "href": "/rail/metro/stations/y12/"
-    },
-    {
       "page": "/bus/routes/series-300s/308/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
-    },
-    {
-      "page": "/bus/routes/series-300s/308/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/series-300s/308/",
@@ -10748,11 +10708,6 @@
       "page": "/bus/routes/series-300s/308/",
       "name": "Qiyan",
       "href": "/rail/metro/stations/r21/"
-    },
-    {
-      "page": "/bus/routes/series-300s/308/",
-      "name": "Beitou",
-      "href": "/rail/metro/stations/r22/"
     },
     {
       "page": "/bus/routes/series-300s/308/",
@@ -10901,11 +10856,6 @@
     },
     {
       "page": "/bus/routes/series-300s/311-10xg17y/",
-      "name": "國父紀念館",
-      "href": "/rail/metro/stations/bl17/"
-    },
-    {
-      "page": "/bus/routes/series-300s/311-10xg17y/",
       "name": "Taipei City Hall",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -10918,11 +10868,6 @@
       "page": "/bus/routes/series-300s/311-bealqx/",
       "name": "聯營公車",
       "href": "/bus/network/joint-operation/"
-    },
-    {
-      "page": "/bus/routes/series-300s/311-bealqx/",
-      "name": "Gongguan",
-      "href": "/rail/metro/stations/g07/"
     },
     {
       "page": "/bus/routes/series-300s/311-bealqx/",

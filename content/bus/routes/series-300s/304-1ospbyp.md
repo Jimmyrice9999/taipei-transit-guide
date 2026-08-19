@@ -73,6 +73,13 @@ frequency is 15–20 minutes; holiday service runs a fixed 20 daily
 departures.[^ebus-304-chongqing] Buffer zones apply between 福林國小 and
 士林簡易庭, and between 捷運北門站 and 小南門.[^ebus-304-chongqing]
 
+The confirmed stop sequence runs from 故宮博物院 through Shilin, then follows
+重慶北路 through Datong past 捷運大橋頭站, through central Taipei past 捷運
+北門站 and 捷運西門站, and crosses the Xindian River on 中正橋 into Yonghe,
+New Taipei, ending near 樂華夜市.[^tdx-bus] Four separate MRT stations are
+named along the way, and the curated stop-ID join set confirms none of
+them.[^tdx-bus]
+
 ## History
 
 A community wiki states the operator (大業客運, now 中興巴士) was founded in

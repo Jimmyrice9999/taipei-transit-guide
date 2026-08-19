@@ -75,6 +75,13 @@ schedule page itself does not state a corridor difference from plain 307 in
 words; the stop-level distinction is carried in the TDX stop-sequence data,
 not duplicated here.[^tdx-bus]
 
+The confirmed stop sequence runs the same 板橋–中和–華中橋–central Taipei
+corridor as plain 307, but diverges after the Nanjing corridor onto 三民路
+(from 21 February 2021, per the history below) rather than continuing on
+307's own alignment, before rejoining near 莊敬里 at the Songshan
+end.[^tdx-bus] Like plain 307, the route passes 捷運中和站 and 捷運西門站
+without a confirmed join in the curated set.[^tdx-bus]
+
 ## History
 
 A community wiki states this branch was trialled from 12 June 2012 and made

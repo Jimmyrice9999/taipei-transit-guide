@@ -59,6 +59,16 @@ contact.[^ebus-306-shuttle] Weekday frequency is peak 4–8 minutes,
 off-peak 10–15 minutes, and 15–20 minutes after 2000; holiday frequency runs
 a consistent 10–20 minutes.[^ebus-306-shuttle]
 
+The confirmed stop sequence covers only the Nangang-to-Nanjing-corridor
+portion of parent route 306's alignment — from 舊莊 past 中研院 (Academia
+Sinica) and along the same Nanjing corridor through 捷運中山站, 捷運松江南京站
+and 捷運南京復興站 — stopping at 臺北橋 rather than continuing into 三重 and
+蘆洲.[^tdx-bus] As on 306, none of the named MRT stations carries a confirmed
+join in the curated set.[^tdx-bus] 306區's own 舊莊 terminus is the same one
+306's 大都會客運 working reaches, rather than 306's 三重客運 working's separate
+凌雲站 terminus — the shuttle shadows one of 306's two divergent operator
+workings, not an average of both.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

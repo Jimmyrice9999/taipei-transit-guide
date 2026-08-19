@@ -72,6 +72,15 @@ minutes and off-peak 5–10 minutes (holding at 5–10 minutes after 2100);
 holiday frequency runs 7–10 minutes throughout, widening to 10–15 minutes
 after 2100.[^ebus-307]
 
+The confirmed stop sequence crosses two municipalities: it starts at 板橋
+(Banqiao, New Taipei), runs through 中和 past 捷運中和站 and 積穗, crosses the
+Xindian River on 華中橋 into Wanhua, continues through central Taipei past
+捷運西門站 and 臺北車站, then follows the Nanjing corridor east past 捷運松江
+南京站 and 捷運南京復興站 into 民生社區, ending at 撫遠街.[^tdx-bus] The return
+working additionally serves 捷運府中站 in Banqiao.[^tdx-bus] Five separate MRT
+stations are named across the route, and the curated stop-ID join set
+confirms none of them.[^tdx-bus]
+
 ## History
 
 A community wiki states the route was opened in 1969 by 大有巴士 as 大有12路

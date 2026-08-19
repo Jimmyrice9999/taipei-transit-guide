@@ -59,6 +59,18 @@ from its 306區 shuttle variant.[^ebus-general] Its full schedule page gives
 涼州重慶路口 and MRT中山國小站(志仁高中) outbound, and the same MRT stop and
 民權大龍街口 on the return working.[^ebus-306]
 
+The confirmed stop sequence runs from 蘆洲 in New Taipei through 三重 — past
+捷運徐匯中學站 and 捷運三和國中站 — into Taipei along the same Nanjing corridor
+several other routes on this site follow, past 捷運中山站, 捷運松江南京站 and
+捷運南京復興站, through Songshan and Nangang past 中研院 (Academia
+Sinica).[^tdx-bus] The two operating companies' workings diverge only at the
+very end: the 三重客運 working continues to 凌雲站 in the hills above Nangang,
+while the 大都會客運 working instead turns off toward 舊莊 — a genuine
+corridor difference between the two operators' services, not just a shared
+number under two contracts.[^tdx-bus] Five separate MRT stations are named
+along the shared portion, and none carries a confirmed join in the curated
+set.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records and

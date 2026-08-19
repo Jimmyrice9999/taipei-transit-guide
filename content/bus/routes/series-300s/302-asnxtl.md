@@ -63,6 +63,16 @@ commenced 15 June 2024: 「本路線自113年6月15日起實施」.[^ebus-302-sh
 holiday departures (0700, 0900, 1200, 1700) are marked as dog-friendly
 workings.[^ebus-302-shuttle]
 
+The confirmed stop sequence follows parent route 302's own Beitou corridor —
+past 捷運忠義站, 捷運復興崗站 and 捷運奇岩站 — but turns off before reaching
+Wanhua, ending instead at 兒童新樂園 (Taipei Children's Amusement Park) in
+Shilin, by way of 士林監理站.[^tdx-bus] As on 302, none of the three named MRT
+stations carries a confirmed join in the curated set.[^tdx-bus] The shuttle
+also charges a flat single-section fare where parent 302 charges a
+two-section fare with its own buffer zone — consistent with 302區 covering a
+shorter, single-fare-band trip rather than simply being a truncated copy of
+the parent's fare structure.[^ebus-302-shuttle]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

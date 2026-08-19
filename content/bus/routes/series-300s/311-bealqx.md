@@ -69,6 +69,15 @@ page gives 中和 - 捷運公館站, weekday service only 0600–2000 (holiday s
 停駛), a single-section fare (一段票), and 中興巴士中和站 as the service
 contact.[^ebus-311-shuttle] The page lists 10 weekday departures.[^ebus-311-shuttle]
 
+The confirmed stop sequence covers only the New Taipei half of parent route
+311's alignment — 中和 through 永和 and across 福和橋 — ending at 捷運公館站
+rather than continuing along 仁愛路 into Da'an and Songshan.[^tdx-bus] As on
+311, that one MRT-named stop carries no confirmed join in the curated
+set.[^tdx-bus] Ending at 捷運公館站 rather than continuing to 311's own 松山
+terminus makes 311區 a genuine cross-town shortcut in its own right, linking
+中和/永和 directly to the NTU/Gongguan area without requiring a transfer at
+the shared 福和橋 crossing.[^tdx-bus]
+
 ## History
 
 A community wiki states this shuttle service launched in 2014 and that its
