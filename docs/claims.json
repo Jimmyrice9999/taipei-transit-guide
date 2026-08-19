@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2859,
-    "tbc": 1304,
+    "sourced": 2896,
+    "tbc": 1369,
     "asserted": 32,
     "meta": 42
   },
@@ -1933,6 +1933,142 @@
       "sources": 3,
       "sourced": 2,
       "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-30.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-36.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-39.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-5-3j9oar.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-5-mubk47.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-5-r758xg.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-6-uhxmxv.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-6-waev30.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-7-1dd1bui.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-7-opbhno.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-8-1keuami.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-8-3ddg3g.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-8-9ucxa4.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-9-1191ksj.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-9-a5p7i9.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/minibus-9-yjn69t.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/minibus/_index.md",
+      "sources": 2,
+      "sourced": 2,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
