@@ -95,6 +95,12 @@ export type MapStation = {
  */
 const HIT_RADIUS = 16
 
+const HAN = /[\u3400-\u9fff]/
+
+function svgLabel(value: string) {
+  return HAN.test(value) ? <tspan lang="zh-Hant">{value}</tspan> : value
+}
+
 export default function RouteMap({
   lines,
   stations,
@@ -311,8 +317,8 @@ export default function RouteMap({
                   strokeWidth={station.isInterchange ? 2.4 : 2.2}
                 />
                 <title>
-                  {station.code} {station.name}
-                  {station.nameZh ? ` ${station.nameZh}` : ''}
+                  {station.code} {svgLabel(station.name)}
+                  {station.nameZh ? <> {svgLabel(station.nameZh)}</> : null}
                 </title>
               </>
             )
@@ -395,7 +401,7 @@ export default function RouteMap({
                   textAnchor={overflowsRight ? 'end' : undefined}
                   className="routemap-name"
                 >
-                  {station.name}
+                  {svgLabel(station.name)}
                 </text>
               </g>
             )

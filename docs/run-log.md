@@ -11120,6 +11120,22 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — New Bus community services, batch 3
+
+Built 20 routes: F151-1605, F151-1635, F151-1730, F151-1810, F152-0600,
+F152-0620、0745, F152-0635, F152-0700, F152-0810, F152-0845, F152-0925,
+F152-0950, F152-1545, F152-1630, F152-1655, F152-1720, F152-1740, F152-1800,
+F153-0620 and F153-0730. Body prose is 2,180 whitespace-delimited words.
+Exact New Taipei route-service rows cover 20/20. These records generated the
+first no-English stop label in the New Taipei geometry, which exposed and
+fixed shared SVG Han tagging in `components/RouteMap.tsx`; the route data and
+language checker were unchanged. The batch has 0 confirmed / 0 rejected / 0
+ambiguous geometry-only MRT candidates. Time-suffixed identities remain
+separate TDX records. Sources are the full TDX bus snapshot, the full New
+Taipei 新巴士 dataset, the full New Taipei route-service API and the New Taipei
+transport-management page. History, predecessor/renumbering, dated operator
+changes, route rationale and eligibility remain TBC.
+
 ### New Taipei — New Bus community services, batch 2
 
 Built 20 routes: F132, F132經青山, F133末班, F133假日, F133平日, F135, F136,
