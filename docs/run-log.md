@@ -11106,19 +11106,19 @@ The retained unclassified pages state the catalogue labels and keep unsupported 
 
 ### New Taipei — event-shuttle subgroup
 
-Built 4 routes: 漁人碼頭煙火專車 and the three 新九號停車場 services to 黃金博物館, 水湳洞停車場 and 九份老街. Body prose is 473 whitespace-delimited words. Exact New Taipei route-service rows cover 4/4; event dates, route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC unless a dated primary notice is found. The subgroup has 2 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the route identities and numeric-identity audit. Sources are the full TDX bus snapshot, the full New Taipei 活動專車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+Built 4 routes: 漁人碼頭煙火專車 and the three 新九號停車場 services to 黃金博物館, 水湳洞停車場 and 九份老街. Body prose is 473 whitespace-delimited words. Exact New Taipei route-service rows cover 4/4; event dates, route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC unless a dated primary notice is found. The subgroup has 2 confirmed geometry-only MRT stop-ID joins, 4 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the route identities and numeric-identity audit. Sources are the full TDX bus snapshot, the full New Taipei 活動專車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
 ### New Taipei — light-rail feeder subgroup
 
-Built 5 routes: 安坑1線, 安坑2線, 安坑3線, 安坑5線 and 安坑6線. Body prose is 630 whitespace-delimited words. Exact New Taipei route-service rows cover 5/5; current route-service values are published where the API carries them, while feeder rationale, route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC. The subgroup has 6 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the route identities and numeric-identity audit. Sources are the full TDX bus snapshot, the full New Taipei 輕軌接駁路線 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+Built 5 routes: 安坑1線, 安坑2線, 安坑3線, 安坑5線 and 安坑6線. Body prose is 630 whitespace-delimited words. Exact New Taipei route-service rows cover 5/5; current route-service values are published where the API carries them, while feeder rationale, route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC. The subgroup has 6 confirmed geometry-only MRT stop-ID joins, 41 candidates rejected as too far, and 11 ambiguous candidates retained as unconfirmed. The category research file records the route identities and numeric-identity audit. Sources are the full TDX bus snapshot, the full New Taipei 輕軌接駁路線 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
 ### New Taipei — rapid buses, batch 1
 
-Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920副, 920A, 921, 922, 923, 925, 927經台北港, 927 and 928. Body prose is 2,486 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. Variant spellings are preserved exactly as the category and TDX identities present them; no variant meaning was inferred. The batch has 162 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920副, 920A, 921, 922, 923, 925, 927經台北港, 927 and 928. Body prose is 2,486 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. Variant spellings are preserved exactly as the category and TDX identities present them; no variant meaning was inferred. The batch has 162 confirmed geometry-only MRT stop-ID joins, 408 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
 ### New Taipei — rapid buses, batch 2
 
-Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 323 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
 ### New Taipei — general buses, closeout batch 11
 
@@ -11138,6 +11138,59 @@ and the New Taipei transport-management page
 history, predecessor/renumbering, dated operator changes, corridor rationale
 and eligibility remain TBC where these fetched primary sources do not
 establish them. No source conflict was found in this batch.
+
+### Run 50 — final closeout
+
+All 575 remaining identities are complete: the 14 former `unclassified`
+records were audited and assigned only where an authoritative catalogue gave
+them a durable home, and all 562 municipality-scoped New Taipei identities
+have pages. The final site count is 1,051/1,051 normalized TDX identities.
+
+| Group | Routes | Body words | Exact schedules/service | Joins confirmed / rejected / ambiguous |
+|---|---:|---:|---:|---:|
+| special-shuttle (total) | 51 | 5,228 | 51/51 | 261 / 741 / 0 |
+| minibus | 48 | 4,753 | 47/48 | 214 / 515 / 0 |
+| series-600s | 49 | 4,928 | 48/49 | 815 / 1,907 / 0 |
+| series-200s | 92 | 9,175 | 88/92 | 1,567 / 3,747 / 0 |
+| series-other | 1 | 98 | 1/1 | 5 / 33 / 0 |
+| unclassified retained | 3 | 408 | 3/3 | 9 / 17 / 0 |
+| New Taipei — MRT pioneer | 2 | 245 | 2/2 | 21 / 48 / 0 |
+| New Taipei — event | 4 | 473 | 4/4 | 2 / 4 / 0 |
+| New Taipei — light-rail feeder | 5 | 630 | 5/5 | 6 / 41 / 11 |
+| New Taipei — rapid | 57 | 6,989 | 57/57 | 420 / 1,058 / 0 |
+| New Taipei — jump-frog | 70 | 8,132 | 68/70 | 249 / 272 / 2 |
+| New Taipei — New Bus | 207 | 23,412 | 174/207 | 162 / 511 / 0 |
+| New Taipei — general | 217 | 25,282 | 212/217 | 1,948 / 4,065 / 4 |
+
+New Taipei totals are 562 routes, 65,163 body words, 522/562 exact current
+service rows, and 2,808/5,999/17 geometry-only joins. The 17 ambiguous
+position candidates (11 light-rail, 4 general, 2 jump-frog) remain
+unconfirmed; no name similarity was used. Forty New Taipei identities have no
+exact current route-service row and retain TBC service fields. Variant and
+number-collision identities remain separate municipality-scoped records;
+where the fetched primary sources did not explain a suffix, its meaning is
+TBC. No source value was averaged or silently selected over another.
+
+Authoritative source families searched were TDX, the New Taipei Department of
+Transportation's seven full category datasets and route-service API, its
+transport-management page, official notices/PDFs and operator pages. Detailed
+history, predecessor/renumbering, dated operator changes, corridor rationale
+and eligibility remain TBC where those full-page primary searches did not
+establish them.
+
+Final gates: `npm run verify` green (including research, accessibility,
+geometry, CVD and 185 tests), `npm test` green (185/185), `npm run nav` green
+(12/12), `npm run cite` clean (4,258 citations), `npm run bus:joins` green,
+and `git diff --check` clean. Final `npm run verify:browser` checked 1,393
+exported pages at 640/320 with no document overflow, no painted spine overlap,
+zero axe violations, 33 keyboard/ARIA representatives, 232 screenshots and
+32 print PDFs; representative route renders were inspected at 320, 375, 768,
+1440, 1920, 2560 and landscape 812x375.
+
+The only remaining worktree item is the pre-existing untracked `probes/`
+directory, intentionally not staged. Nothing remains in the 1,051-route
+coverage target; future work is maintenance or deeper primary-source research
+for the documented TBC fields.
 
 ### New Taipei — general buses, batch 10
 
@@ -11654,4 +11707,4 @@ Validation for Part 1: `npm run cite`, `npm run verify` (185/185), research vali
 
 ### New Taipei — MRT pioneer subgroup
 
-Built 2 routes: 藍海2線先導公車 and 985萬大樹林先導公車. Body prose is 245 whitespace-delimited words. Exact New Taipei route-service rows cover 2/2; route length, endpoint, service-span and fare values come from the current New Taipei route-service API where published, while route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC. The subgroup has 21 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the numeric-identity audit and no unsupported variant interpretation was promoted. Sources are the full TDX bus snapshot, the full New Taipei MRT-pioneer dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+Built 2 routes: 藍海2線先導公車 and 985萬大樹林先導公車. Body prose is 245 whitespace-delimited words. Exact New Taipei route-service rows cover 2/2; route length, endpoint, service-span and fare values come from the current New Taipei route-service API where published, while route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC. The subgroup has 21 confirmed geometry-only MRT stop-ID joins, 48 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the numeric-identity audit and no unsupported variant interpretation was promoted. Sources are the full TDX bus snapshot, the full New Taipei MRT-pioneer dataset, the full New Taipei route-service API and the New Taipei transport-management page.
