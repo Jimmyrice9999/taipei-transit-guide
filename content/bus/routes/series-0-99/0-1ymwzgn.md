@@ -28,7 +28,7 @@ sources:
     accessed: 2026-08-19
     kind: primary
     lang: zh-Hant
-    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length field. Records a single subroute, 0南, and confirmed rail-stop joins to MRT stations BR03, BR04 and G07 by stop-ID geometry.
+    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length field. Records a single subroute, 0南. Its raw stop-name matching flags candidate proximity to MRT stations BR03, BR04 and G07, but none of these is in the site's separately curated stop-ID rail-join set, so no interchange is presented as confirmed.
   - id: ebus-general
     title: Taipei/New Taipei bus route catalogue
     titleOriginal: 大臺北公車
@@ -60,9 +60,10 @@ The TDX snapshot records a single subroute for this route.[^tdx-bus]
 
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records, including
-confirmed rail-stop joins to stations BR03, BR04 and G07; route length
-remains TBC.[^tdx-bus] A community wiki (zh.wikiversity) lead describes
+The TDX snapshot supplies the changing stop and geometry records; route length
+remains TBC.[^tdx-bus] Stop names put the route near MRT stations BR03, BR04 and G07,
+but this project only presents an MRT interchange as confirmed where the curated stop-ID
+join set says so, and none of these three is in it.[^tdx-bus] A community wiki (zh.wikiversity) lead describes
 0南's predecessor as a Taipei Municipal Bus Administration circular route
 between 興隆路 and 臺北車站, split into left and right branches, with the left
 branch renumbered to joint-operation route 653 in September 2000 and ceased

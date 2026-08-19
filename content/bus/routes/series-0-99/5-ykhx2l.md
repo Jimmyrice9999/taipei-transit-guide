@@ -28,7 +28,7 @@ sources:
     accessed: 2026-08-19
     kind: primary
     lang: zh-Hant
-    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length field. Records a single subroute, 5, and confirmed rail-stop joins to MRT stations BR12, O03, O04 and R09 by stop-ID geometry.
+    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length field. Records a single subroute, 5. Its raw stop-name matching flags candidate proximity to MRT stations BR12, O03, O04 and R09, but none of these is in the site's separately curated stop-ID rail-join set, so no interchange is presented as confirmed.
   - id: ebus-general
     title: Taipei/New Taipei bus route catalogue
     titleOriginal: 大臺北公車
@@ -61,9 +61,10 @@ this route.[^tdx-bus]
 
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records, including
-confirmed rail-stop joins to stations BR12, O03, O04 and R09; route length
-remains TBC.[^tdx-bus] A community wiki (zh.wikiversity) lead describes a
+The TDX snapshot supplies the changing stop and geometry records; route length
+remains TBC.[^tdx-bus] Stop names put the route near MRT stations BR12, O03, O04 and R09,
+but this project only presents an MRT interchange as confirmed where the curated stop-ID
+join set says so, and none of these four is in it.[^tdx-bus] A community wiki (zh.wikiversity) lead describes a
 February 2008 shortening that cut the route back from Songshan Airport and
 the area east of the 民權復興路口 (Minquan-Fuxing) intersection to
 approximately its current extent; this could not be corroborated against a
