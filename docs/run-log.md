@@ -10868,4 +10868,59 @@ applied from the start and neither problem recurred.
 
 Gates: `npm run cite`, `node scripts/claims.mjs --list` (clean for these
 19 files) and `npm run build` all clean on the first pass; `npm run
-verify` and the full test suite green. Commit pending.
+verify` and the full test suite green. Commit `1e557f6`, pushed.
+
+### series-0-99, all 33 routes, checked 19 August 2026
+
+Built as two parallel batches of 17 and 16 (disjoint files, neither wrote
+the group `_index.md`) to keep within the run's 15–20-route commit
+cadence; `_index.md` written once both batches landed. A fresh clean
+build (`.next`/`out` removed first, to rule out anything from the two
+concurrent `npm run build` calls the batches ran independently) confirmed
+793 pages, no missing glyphs, before the gate ran.
+
+All 33 confirmed under the catalogue's 一般公車 heading. **Route numbers
+this low are not nationally unique**: Taichung independently runs its own
+41, a since-discontinued 53, 63, 66 and 72; Hsinchu and Taichung both run
+their own 52; Kaohsiung runs its own 88 (88建國幹線) — none connected to
+the Taipei/New Taipei route of the same number. This finding is recorded
+here rather than on the live `_index.md` page, since no specific citation
+for each city's route was fetched and `npm run claims` correctly rejected
+the unsourced assertion when first drafted onto the page itself.
+
+**Conflicts published, not resolved:** 12's wiki-claimed 2022 departure
+count (3) disagrees with the current schedule's 4; 26 has a primary-to-
+primary disagreement between Taipei PTO's own city-bus history (2004
+privatization/rename to 大都會客運) and a wiki-claimed 2002 Capital Bus
+transfer date; 46 has a cited buffer-zone image against a current blank
+buffer field; 66 has two sources disagreeing on its electric-fleet launch
+date (29 Jan vs. 29 Oct 2018), and an uncorroborated 31.5 km figure was
+kept out of `specs:` rather than published as a fact.
+
+**Corroborations found:** 2's "台北海大" terminus was cross-checked against
+TDX's own stop record; 33's ebus "繞駛信義行政中心" subroute is
+independently corroborated by a matching TDX record (TPE162167); 42/42區
+got the strongest primary find of this batch — three dated announcements
+(Jan/May 2021, Jul 2025) on 中興巴士集團/指南客運's own news site,
+cross-verified against the current schedule; 63 has a sourced renumbering
+chain (54→59 in 1975, →63 in 1977); 68's 2018 secondary account matches
+the current primary schedule exactly.
+
+**Corrections made before publishing, not left in:** 2's schedule page was
+initially misread (造孽橋 for 洲美橋); caught and fixed with a targeted
+re-fetch. Two dead-source fetches (an SSL error, a redirect loop) on the
+88 batch were recorded as checked-and-failed rather than silently
+substituted with a snippet.
+
+One structural note: 38 (plain) and 38區 (canonicalSlug `38-13lys48`) are
+confirmed separate TDX route records, not a route/subroute pair — flagged
+explicitly so the two pages, built in different batches, don't merge or
+duplicate each other's history.
+
+No `docs/research/` entries existed for any of these 33 routes.
+
+Gates: `npm run cite`, `node scripts/claims.mjs --list` and a fresh
+`npm run build` all clean; `npm run verify` green; full test suite green
+(one transient `npm test` failure was a `vips` out-of-memory error in
+opengraph-image generation, unrelated to content — passed clean on
+retry). Commit pending.

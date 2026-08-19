@@ -1,0 +1,92 @@
+---
+title: 88區 / 88Shuttle
+summary: General-bus route 88區 (南港花園社區 - 臺北車站).
+updated: 2026-08-19
+facts:
+  - label: Service class
+    value: General bus service (一般公車)
+    source: ebus-general
+  - label: Operator history
+    value: Run by 大有巴士 (Citiair Bus), the same operator as base route 88
+    source: ebus-88qu
+specs:
+  - label: Route length
+    value: TBC
+    unit: km
+  - label: Service span
+    value: "Weekday and holiday 0510–2200"
+    source: ebus-88qu
+  - label: Headway by day type
+    value: "Peak 15–20 min, off-peak 15–20 min; fixed schedule after 1900 on weekdays"
+    source: ebus-88qu
+  - label: Fare / transfer
+    value: Single-section fare (一段票), no buffer zone
+    source: ebus-88qu
+sources:
+  - id: tdx-bus
+    title: TDX bus data
+    titleOriginal: 交通部運輸資料流通服務平臺
+    publisher: Ministry of Transportation and Communications TDX, 交通部運輸資料流通服務平臺
+    url: https://tdx.transportdata.tw/
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length or timetable field. Records a single subroute for this route, named "88Shuttle"/88區 (operator key 900 / 大有巴士), and railJoins matching this route's stops to Songshan Line R02/R06/R09. The operator id used in this project's data (bus-operator-citiairbus) resolves in data/tdx/bus/operators.json to English name "Citiair Bus Co., Ltd." and Chinese name 大有巴士, operator code CitiairBus — the same operator as base route 88.
+  - id: ebus-general
+    title: Taipei/New Taipei bus route catalogue
+    titleOriginal: 大臺北公車
+    publisher: Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+    url: https://ebus.gov.taipei/ebus?ct=all
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: Lists 88區 under 一般公車, as a routeid entry separate from base route 88.
+  - id: ebus-88qu
+    title: 88區 route schedule
+    titleOriginal: 88區班表
+    publisher: Taipei City Public Transportation Office, 臺北市政府公共運輸處
+    url: https://ebus.gov.taipei/Route/RouteSchedule?routeid=0100008820
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: "Full official schedule page listing the current 南港花園社區–臺北車站 corridor, service span, fare, headway bands and 大有巴士興中站 (02-2653-4153) as the service contact. States: 收費方式：一段票、分段緩衝：無、〔平日〕尖峰:15分至20分；離峰:15分至20分, and notes a fixed schedule after 19:00 on weekdays (平日19:00後固定班次). Does not itself state a commencement date or cross-reference base route 88."
+  - id: zhwikiversity-88
+    title: Taipei joint-operation bus route 88
+    titleOriginal: 台北聯營公車88路線
+    publisher: Wikiversity contributors, 維基學院
+    url: https://zh.wikiversity.org/zh-tw/%E5%8F%B0%E5%8C%97%E8%81%AF%E7%87%9F%E5%85%AC%E8%BB%8A88%E8%B7%AF%E7%B7%9A
+    accessed: 2026-08-19
+    kind: secondary
+    lang: zh-Hant
+    note: "Community-compiled operational history for base route 88, not independently verified against a primary PTO/operator announcement. States that a new shuttle service between 南港花園社區 and 臺北車站 was established on 14 February 2018 (2018年2月14日新闢南港花園社區至臺北車站區間車) — the same corridor as this route."
+---
+
+## Classification and corridor
+
+The official catalogue lists 88區 under 一般公車, as a routeid entry separate
+from base route 88.[^ebus-general] Its full schedule page gives 南港花園社區 -
+臺北車站, weekday and holiday service both 0510–2200, a single-section fare
+(一段票) with no buffer zone (分段緩衝：無), a stated peak and off-peak headway
+both of 15–20 minutes, a fixed schedule after 19:00 on weekdays, and
+大有巴士興中站 as the service contact — the same operator and dispatch station
+as base route 88.[^ebus-88qu] The schedule page does not itself state a
+commencement date or cross-reference base route 88.[^ebus-88qu]
+
+## History
+
+A Wikiversity community entry on base route 88 states that a new shuttle
+service between 南港花園社區 and 臺北車站 — this route's own corridor — was
+established on 14 February 2018; this has not been independently verified
+against a primary PTO or operator announcement in this search, and the
+Wikiversity source does not itself name 88區, so the identification of the
+two is an inference from a matching corridor rather than a claim either
+source states outright.[^zhwikiversity-88]
+
+## Research status
+
+The TDX snapshot supplies the changing stop and geometry records and records
+a single subroute for this route, named "88Shuttle"/88區; route length
+remains TBC.[^tdx-bus] This route's own city-collision search is covered
+under base route 88, since 88區 is a shuttle variant sharing the same route
+number; a search for a directly comparable 88區-style shuttle route run by
+another Taiwanese city bus operator was not found in this search.
