@@ -1,5 +1,5 @@
 {
-  "pages": 481,
+  "pages": 486,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -1828,6 +1828,176 @@
       "page": "/bus/routes/colour-red/red-9/",
       "name": "Zhongyuan",
       "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Nangang Software Park",
+      "href": "/rail/stations/br23/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/711/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Guandu",
+      "href": "/rail/stations/r25/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Zhuwei",
+      "href": "/rail/stations/r26/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/756/",
+      "name": "Ganzhenlin",
+      "href": "/rail/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Guandu",
+      "href": "/rail/stations/r25/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Zhuwei",
+      "href": "/rail/stations/r26/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Daqiaotou",
+      "href": "/rail/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/757/",
+      "name": "Ganzhenlin",
+      "href": "/rail/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Liuzhangli",
+      "href": "/rail/stations/br07/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "信義安和",
+      "href": "/rail/stations/r04/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Daan Park",
+      "href": "/rail/stations/r06/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Xianse Temple",
+      "href": "/rail/stations/o16/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Xinzhuang",
+      "href": "/rail/stations/o18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Fu Jen University",
+      "href": "/rail/stations/o19/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Danfeng",
+      "href": "/rail/stations/o20/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Haishan",
+      "href": "/rail/stations/bl04/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "Taishan Guihe Station",
+      "href": "/rail/stations/a6/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "National Taipei University",
+      "href": "/rail/stations/lb07/"
+    },
+    {
+      "page": "/bus/routes/series-700s/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/bus/routes/trunk/",

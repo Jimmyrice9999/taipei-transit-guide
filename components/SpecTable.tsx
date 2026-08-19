@@ -36,7 +36,7 @@ export default function SpecTable({
               <th scope="row">
                 <RichText>{spec.label}</RichText>
               </th>
-              <td className="specs-value">{spec.value || '—'}</td>
+              <td className="specs-value">{spec.value ? <RichText>{spec.value}</RichText> : '—'}</td>
               <td className="specs-unit">
                 {spec.unit}
                 <CiteMark id={spec.source} references={references} />
