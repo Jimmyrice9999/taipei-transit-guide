@@ -19,7 +19,12 @@ function isInSection(pathname: string, href: string) {
 }
 
 function NavGroupView({ group }: { group: NavGroup }) {
-  if (group.large || group.links.length === 0) {
+  // A disclosure that opens to reveal exactly one link costs a click and
+  // reveals nothing a direct link wouldn't — the same shape as Stations and
+  // Network already get. `<= 1` rather than `=== 0` so a group with a single
+  // page (rail/systems, bike/history, gondola/lines, ticketing/guides all had
+  // this) also skips the pointless disclosure.
+  if (group.large || group.links.length <= 1) {
     return (
       <Link className="nav-group-direct" href={group.href}>
         {group.title}
@@ -78,6 +83,25 @@ export default function SiteNav({
   const [open, setOpen] = useState<string | null>(null)
   const navRef = useRef<HTMLElement>(null)
   const idBase = useId()
+  // Hover-intent for the close: the panel is positioned against `.site-header`,
+  // not the trigger `<li>`, so there is a real few-pixel strip between the
+  // toggle and the panel that belongs to neither — moving the pointer straight
+  // down through it briefly leaves the nav's own DOM subtree and would fire
+  // `mouseleave` before the pointer reaches the panel. A short close delay
+  // (rather than a bridge element sized to match a gap set in CSS, or a
+  // safe-triangle calculation) survives that crossing without any layout
+  // assumptions, and costs nothing on the sections that have no gap at all.
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const cancelClose = () => {
+    if (closeTimer.current === null) return
+    clearTimeout(closeTimer.current)
+    closeTimer.current = null
+  }
+  const scheduleClose = () => {
+    cancelClose()
+    closeTimer.current = setTimeout(() => setOpen(null), 250)
+  }
+  useEffect(() => cancelClose, [])
 
   // Any navigation closes the panel. Without this, following a link inside a
   // panel leaves it open over the page just requested.
@@ -114,7 +138,8 @@ export default function SiteNav({
       className="site-nav"
       aria-label="Sections"
       ref={navRef}
-      onMouseLeave={() => setOpen(null)}
+      onMouseEnter={cancelClose}
+      onMouseLeave={scheduleClose}
     >
       <ul className="nav-list">
         {sections.map((section) => {
@@ -126,6 +151,7 @@ export default function SiteNav({
               key={section.href}
               className="nav-item"
               onMouseEnter={(event) => {
+                cancelClose()
                 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
                   setOpen(section.href)
                 }
@@ -142,14 +168,23 @@ export default function SiteNav({
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 aria-label={`${section.title} pages`}
-                onClick={() => setOpen(isOpen ? null : section.href)}
+                onClick={() => {
+                  cancelClose()
+                  setOpen(isOpen ? null : section.href)
+                }}
               >
                 <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" focusable="false">
                   <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" strokeWidth="1.5" />
                 </svg>
               </button>
 
-              <div className="nav-panel" id={panelId} hidden={!isOpen}>
+              <div
+                className="nav-panel"
+                id={panelId}
+                hidden={!isOpen}
+                onMouseEnter={cancelClose}
+                onMouseLeave={scheduleClose}
+              >
                 <div className="nav-panel-inner">
                   {section.groups.map((group) => (
                     <div className="nav-group" key={group.href}>

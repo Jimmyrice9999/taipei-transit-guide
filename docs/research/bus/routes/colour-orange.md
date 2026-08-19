@@ -337,8 +337,8 @@ confirmed MRT stop joins, even at termini named after stations (`捷運景安
 
 ## Checked and failed
 
-- **Dated opening, corridor-rationale and operator-change records for all 18
-  routes** — full current schedule pages were checked, but no dated primary
+- **Dated opening, corridor-rationale and operator-change records for all 18 routes** —
+  full current schedule pages were checked, but no dated primary
   history record was promoted from those pages. Checked 19 August 2026.
 
 ## Stated gaps

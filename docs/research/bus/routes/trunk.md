@@ -353,8 +353,8 @@ line" fact is shown on any trunk page regardless of join status.
 
 ## Checked and failed
 
-- **Dated opening, corridor-rationale and operator-change records for all 19
-  routes** — full current schedule pages were checked, but no dated primary
+- **Dated opening, corridor-rationale and operator-change records for all 19 routes** —
+  full current schedule pages were checked, but no dated primary
   history record was promoted from those pages. A general claim that the
   幹線公車 programme began in 2013 is a widely repeated secondary claim not
   verified here against a primary DORTS/PTO record, and is not published on

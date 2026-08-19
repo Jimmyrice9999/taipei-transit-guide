@@ -1,6 +1,7 @@
-import { getPages, getSections, getTypes } from '@/lib/content'
+import { getFolder, getPages, getSections, getTypes } from '@/lib/content'
 import { STATIONS } from '@/lib/stations'
 import { LINES } from '@/lib/lines'
+import { getBuiltBusRouteGroups } from '@/lib/bus/route-groups'
 
 /**
  * The navigation tree: sections → types → pages.
@@ -81,12 +82,31 @@ export function getNavTree(): NavSection[] {
      * the legacy garages folder stay out of the global bar.
      */
     if (section.slug === 'bus') {
+      /*
+       * Route GROUPS (colour-red, series-300s, trunk…) are a bounded, stable
+       * taxonomy — under two dozen even once every group is built — so unlike
+       * individual routes or the 61 operators, listing them is not the
+       * "ten-link sample" bus-architecture.md rules out. Routes therefore gets
+       * a real closed-by-default subgroup, the same shape every other
+       * dropdown's types get; Operators/Models/Depots stay direct links to
+       * their index because sampling raw entities is exactly what a route
+       * browser must not do.
+       */
+      const routeGroups = getBuiltBusRouteGroups().map((group) => {
+        const folder = getFolder(['bus', 'routes'], group)
+        return { href: folder.href, title: folder.title }
+      })
       return {
         href: section.href,
         title: section.title,
         groups: [
           { href: '/bus/network/', title: 'Network', links: [], truncated: false },
-          { href: '/bus/routes/', title: 'Routes', links: [], truncated: false },
+          {
+            href: '/bus/routes/',
+            title: 'Routes',
+            links: routeGroups.slice(0, CAP),
+            truncated: routeGroups.length > CAP,
+          },
           { href: '/bus/operators/', title: 'Operators', links: [], truncated: false },
           { href: '/bus/models/', title: 'Models', links: [], truncated: false },
           { href: '/bus/depots/', title: 'Depots', links: [], truncated: false },

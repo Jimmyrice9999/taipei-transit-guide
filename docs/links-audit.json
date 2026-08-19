@@ -45,6 +45,11 @@
   ],
   "findings": [
     {
+      "page": "/bus/",
+      "name": "EasyCard",
+      "href": "/ticketing/guides/cards-passes-and-fares/"
+    },
+    {
       "page": "/bus/network/joint-operation/",
       "name": "Tamsui",
       "href": "/rail/stations/r28/"
@@ -996,6 +1001,11 @@
     },
     {
       "page": "/bus/routes/colour-brown/brown-11-16hwwho/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-11-16hwwho/",
       "name": "Muzha",
       "href": "/rail/stations/br02/"
     },
@@ -1003,6 +1013,11 @@
       "page": "/bus/routes/colour-brown/brown-11-16hwwho/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-11-1pd3qjw/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/colour-brown/brown-11-1pd3qjw/",
@@ -1038,6 +1053,11 @@
       "page": "/bus/routes/colour-brown/brown-15/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-18/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/colour-brown/brown-18/",
@@ -1116,6 +1136,11 @@
     },
     {
       "page": "/bus/routes/colour-brown/brown-21/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-21/",
       "name": "台北101/世貿",
       "href": "/rail/stations/r03/"
     },
@@ -1141,6 +1166,11 @@
     },
     {
       "page": "/bus/routes/colour-brown/brown-3/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-3/",
       "name": "Wanfang Community",
       "href": "/rail/stations/br03/"
     },
@@ -1148,6 +1178,11 @@
       "page": "/bus/routes/colour-brown/brown-3/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-5/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/colour-brown/brown-5/",
@@ -1163,6 +1198,11 @@
       "page": "/bus/routes/colour-brown/brown-5/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/colour-brown/brown-6/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/colour-brown/brown-6/",
@@ -3061,6 +3101,11 @@
     },
     {
       "page": "/bus/routes/trunk/route-2pe75d/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-2pe75d/",
       "name": "Taipei Zoo",
       "href": "/rail/stations/br01/"
     },
@@ -3088,6 +3133,11 @@
       "page": "/bus/routes/trunk/route-2pe75d/",
       "name": "Ankang",
       "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-6pkyok/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/bus/routes/trunk/route-6pkyok/",
@@ -3680,6 +3730,11 @@
       "href": "/rail/stations/r28/"
     },
     {
+      "page": "/gondola/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
       "page": "/gondola/lines/maokong-gondola/",
       "name": "動物園",
       "href": "/rail/stations/br01/"
@@ -3688,6 +3743,16 @@
       "page": "/gondola/lines/maokong-gondola/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/",
+      "name": "Maokong Gondola",
+      "href": "/gondola/lines/maokong-gondola/"
     },
     {
       "page": "/rail/depots/beitou-depot/",
@@ -3886,8 +3951,18 @@
     },
     {
       "page": "/rail/stations/a10/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a10/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a11/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a11/",
@@ -3911,8 +3986,18 @@
     },
     {
       "page": "/rail/stations/a15/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a15/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a16/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a16/",
@@ -3921,13 +4006,28 @@
     },
     {
       "page": "/rail/stations/a17/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a17/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
     },
     {
       "page": "/rail/stations/a18/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a18/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a19/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a19/",
@@ -3961,8 +4061,18 @@
     },
     {
       "page": "/rail/stations/a20/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a20/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a21/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a21/",
@@ -3971,8 +4081,18 @@
     },
     {
       "page": "/rail/stations/a22/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a22/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a2/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a2/",
@@ -3991,6 +4111,11 @@
     },
     {
       "page": "/rail/stations/a3/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a3/",
       "name": "Xinzhuang",
       "href": "/rail/stations/o18/"
     },
@@ -4006,6 +4131,11 @@
     },
     {
       "page": "/rail/stations/a4/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a4/",
       "name": "Xinzhuang",
       "href": "/rail/stations/o18/"
     },
@@ -4016,8 +4146,18 @@
     },
     {
       "page": "/rail/stations/a5/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a5/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a6/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a6/",
@@ -4026,13 +4166,28 @@
     },
     {
       "page": "/rail/stations/a7/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a7/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
     },
     {
       "page": "/rail/stations/a8/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
+    },
+    {
+      "page": "/rail/stations/a8/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/rail/stations/a9/",
+      "name": "YouBike",
+      "href": "/bike/history/youbike/"
     },
     {
       "page": "/rail/stations/a9/",
