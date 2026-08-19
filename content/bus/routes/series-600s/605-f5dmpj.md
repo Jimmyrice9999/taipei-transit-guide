@@ -1,0 +1,58 @@
+---
+title: "605Sub / 605副"
+summary: "600-series route: 605Sub (605副)."
+updated: 2026-08-19
+facts:
+  - label: Service class
+    value: "600-series numbered service (一般公車)"
+    source: ebus-general
+specs:
+  - label: Route length
+    value: TBC
+    unit: km
+  - label: Service span
+    value: TBC
+  - label: Headway by day type
+    value: TBC
+  - label: Fare / transfer
+    value: TBC
+sources:
+  - id: tdx-bus
+    title: "TDX bus data"
+    titleOriginal: "交通部運輸資料流通服務平臺"
+    publisher: "Ministry of Transportation and Communications TDX, 交通部運輸資料流通服務平臺"
+    url: https://tdx.transportdata.tw/
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: "Supports the normalized route identity, municipality, operators, direction and variant records, stop sequences, shapes, source-update fields and the separately curated geometry-only MRT stop joins. The committed route layer does not carry route length, timetable or fare fields."
+  - id: ebus-general
+    title: "Taipei/New Taipei bus route catalogue"
+    titleOriginal: "大臺北公車"
+    publisher: "Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府"
+    url: https://ebus.gov.taipei/ebus?ct=tpc
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: "The full official catalogue was fetched and read; it lists this route under 一般公車 and its route-id link where a separate entry exists."
+  - id: ebus-route-605-f5dmpj
+    title: "605Sub route schedule"
+    titleOriginal: "605副班表"
+    publisher: "Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府"
+    url: https://ebus.gov.taipei/Route/RouteSchedule?routeid=0100060510
+    accessed: 2026-08-19
+    kind: primary
+    lang: zh-Hant
+    note: "Full official route schedule page fetched and read. It supports the current published route identity, termini, service span, holiday operation and fare fields where shown; it is not used to invent route history."
+---
+
+## Classification and current service
+
+The full official catalogue files 605副 under 一般公車 (一般公車).[^ebus-general]
+The normalized TDX record retains 1 direction/variant record for this service; route history, corridor rationale and dated operator changes are not inferred from stop names or the current map.[^tdx-bus]
+
+The full official schedule gives termini “汐止 - 松山車站”, the current head/last-departure field “[平日] 0700 - 1700 [假日] 停駛”, fare “一段票”.[^ebus-route-605-f5dmpj] It currently lists weekday service and suspended holiday service.[^ebus-route-605-f5dmpj]
+
+## Research status
+
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
