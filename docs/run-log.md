@@ -10598,3 +10598,230 @@ through series-900s, minibus, special-shuttle, new-taipei, unclassified —
 991 routes total per the Run 30 estimate, now 992 with the reclassified
 `藍海2線先導公車` added to `unclassified`) remain out of this run's scope, as
 instructed.
+
+## Part 1 — nav dropdown fixes, 19 August 2026
+
+Audited the live nav before changing anything. `components/SiteNav.tsx`
+already opened top-bar dropdowns on hover (guarded to `hover: hover` and
+`pointer: fine` media, so touch is unaffected) and already nested each
+type's pages inside a closed-by-default `<details>` — the two-level
+"dropdown → named subgroup → items" shape the brief asked for already
+existed for Rail, Bike, Gondola and Ticketing. Two real problems remained.
+
+**1. The hover-close gap.** `.nav-panel` is `position: absolute; top:
+calc(100% + 5px)` against `.site-header` (`position: relative`), not
+against the triggering `<li>`, so there is a real few-pixel strip between
+the top-bar item and the panel that belongs to neither. `<nav
+onMouseLeave={() => setOpen(null)}>` closed the panel the instant the
+pointer crossed that strip, before it could ever reach the panel below.
+Fixed with a short close delay (250 ms, cancelled on re-entry) rather than
+a bridge element sized to a gap set in CSS, or a safe-triangle
+calculation — a delay survives an arbitrary gap without any layout
+assumption, and costs nothing on the sections that have no gap at all.
+Verified with a scripted slow mouse crawl through the exact gap pixels
+(`probes/nav-part1.mjs`) rather than trusting the reasoning: the panel
+survives the crawl, stays open while hovered, and still closes ~250 ms
+after a genuine departure.
+
+**2. Bus's "Routes" entry was a bare link with nothing to expand.**
+`docs/bus-architecture.md` already (correctly) forbids sampling individual
+routes or the 61 operators in the global nav. But route GROUPS
+(colour-red, series-300s, trunk…) are a small, bounded, stable taxonomy —
+under two dozen even fully built — so listing them is not the "ten-link
+sample" the architecture doc rules out. `lib/nav.ts`'s Bus section now
+builds a real closed-by-default Routes subgroup from
+`getBuiltBusRouteGroups()`, the same click-to-open treatment every other
+dropdown's categories get. Network/Operators/Models/Depots stay direct
+links, since none of them has a bounded sub-taxonomy worth expanding.
+
+**3. The redundant dropdown, found and removed.** Rail's "Systems" category
+wrapped its one page (`station-numbering.md`) in a click-to-expand
+`<details>` that cost a click and revealed nothing a direct link
+wouldn't — the same one-page-behind-a-toggle shape the site already avoids
+for Stations and Network. Fixed generically in `NavGroupView`
+(`links.length <= 1`, not `=== 0`) rather than as a Rail-only special
+case, which incidentally cleaned up the identical shape in three other
+sections that also happened to have exactly one page in a category:
+`bike/history`, `gondola/lines`, `ticketing/guides`. **This is the
+dropdown removed — please confirm it was the intended one.**
+
+Keyboard/touch: unaffected by any of the above — `npm run nav`'s existing
+12-check Playwright harness (Tab reachability, Enter/Space open, Escape
+closes and refocuses, tap-to-open with no hover, no CSS `:hover` rule
+controlling the panel) stays 12/12 with no changes to that script.
+Screenshots taken open/closed/nested-open at 375/768/1440/1920
+(`probes/nav-part1.mjs`, `probes/part1-screenshots/`) and reviewed: no
+overflow, no clipped labels, the nested Bus→Routes subgroup renders
+cleanly at all four widths.
+
+**Also fixed, found while running the full gate before committing:** three
+Run 48 Part 3c research files (`colour-blue.md`, `colour-orange.md`,
+`trunk.md`) had a "Checked and failed" entry whose bolded claim wrapped
+across a hard line break, which `research-check.mjs`'s regex (`.` does not
+match newline) could not match — reported as an empty section despite
+having real content. Rejoined onto one line in each file; `npm run
+research` is clean again. Not a content change, a Markdown line-wrap fix.
+
+Gates: `npm run verify` and the full test suite (185 unit tests, 19 fact
+cross-checks) green. Commit `0986ddd`, pushed.
+
+## Part 2 — curate confirmed rail joins by stop ID, 19 August 2026
+
+The 132 routes across colour-red, colour-green, colour-orange, colour-blue
+and trunk had zero curated MRT joins (the correct, honest state left by
+Part 3c's `railJoins` fix — see above). This part curates real ones.
+
+**Method.** New `scripts/curate-bus-rail-joins.mts` never reads a stop's
+name. For every stop a route calls at (from its committed TDX stop
+sequences), it measures the great-circle distance from that stop's own
+committed position to every MRT station's own committed position
+(`lib/geometry.ts`'s `metres`, the same helper the site's existing 200 m
+station-to-alignment tolerance uses) and confirms a join only when a stop
+sits within 200 m of exactly one station on a given line — no name is
+consulted anywhere in the computation. A stop within 200 m of two
+same-line stations is ambiguous and rejected rather than guessed.
+
+The 200 m threshold is calibrated, not chosen by feel: the 20 colour-brown
+pilot's existing 74 curated joins measure 19–197 m by this same function
+(`probes/join-calibrate.mts`), so 200 m matches the range this project
+already treats as confirmed, and coincides with the project's separately-
+established 200 m geometry offset tolerance (`tests/geometry.test.mts`).
+
+**Results** — confirmed / rejected(too far, ≤500 m) / rejected(ambiguous
+same-line), by group:
+
+| Group | Routes | Confirmed | Rejected (far) | Rejected (ambiguous) |
+| --- | --- | --- | --- | --- |
+| colour-red | 40 | 256 | 532 | 0 |
+| colour-green | 17 | 181 | 385 | 5 |
+| colour-orange | 18 | 114 | 299 | 0 |
+| colour-blue | 38 | 305 | 551 | 0 |
+| trunk | 19 | 382 | 850 | 0 |
+| **Total** | **132** | **1,238** | **2,622** | |
+
+Only one route of 132 (紅15) ends up with zero confirmed joins. The 5
+ambiguous rejections (colour-green, near 輕軌耕莘安康院區站) are two Ankeng
+LRT stations (K03/K04, ~55–100 m apart) both within 200 m of the same
+stop — spot-checked and correctly left unlinked. The high per-route counts
+on long trunk routes were spot-checked for plausibility rather than
+assumed to be a bug: 南京幹線's 22 joins reflect that it runs the length of
+Nanjing Rd. past four real, consecutive interchange stations (Zhongshan,
+Songjiang Nanjing, Nanjing Fuxing, Nanjing Sanmin), each confirmed at
+19–21 m — a single bus stop legitimately sits 0 m from two different
+lines' station codes at each interchange, since both lines' entrances
+share the same physical spot.
+
+No content Markdown changed: route pages read `route.railJoins` from the
+data layer directly, so the existing 132 route pages picked up real MRT
+links with no template edit. Spot-checked the rendered Nanjing Metro Bus
+page.
+
+Gates: `npm run verify` and the full test suite green. Commit `c2b3b21`,
+pushed.
+
+## Part 3 — next bus groups, in progress, 19 August 2026
+
+Building, in order: series-700s (4) → series-300s (16) → series-other =
+series-100s (6) + series-900s (13) (19) → series-0-99 (33) → series-500s
+(21) — 93 routes, stopping there as instructed.
+
+Numbered-series audit before building: all 93 target routes' TDX
+`sourceCities` are `Taipei` only — no cross-municipality numeric
+collision found against `new-taipei`'s separate numbering system. Every
+區/預/副/通勤/夜-suffixed variant (302區, 303區, 306區, 310區, 311區, 38區,
+42區, 88區, 108區, 508區, 536區, 539預, 542預, 902區, 905副, 907通勤, 39夜)
+is already its own distinct TDX route record correctly filed inside the
+same series group as its base route, not split out or merged — confirmed
+by direct inspection of `data/tdx/bus/routes.json`, not assumed.
+
+### series-700s, all 4 routes, checked 19 August 2026
+
+All four (711, 756, 757, 758) are listed under the official catalogue's
+一般公車 heading — not a colour-feeder or 幹線 class — and are also
+cross-listed under 低地板 (low-floor fleet), confirmed as a vehicle-type
+filter rather than a competing service class. Full official schedule
+pages fetched for all four; a first-pass fetch mis-rendered 757's operator
+name, caught and corrected with a verbatim-quote re-fetch. 711 and 757
+both publish specific 狗狗友善公車 (dog-friendly) departure times,
+corroborated by matching TDX subroute records (`711狗狗公車`).
+
+History leads from zh.wikiversity (711 renumbered from a predecessor 311
+in Dec 2006; 757 from 1504 and 758 from 1503, both around 2015/2021 — 758's
+TDX alias literally retains "1503", which is at least consistent) could not
+be corroborated against a primary source — 臺北市公共運輸處's public
+公車營運調整 archive only reaches back to 2024 — and are recorded as
+unconfirmed leads in each route's Research status section, not asserted.
+Body prose: 171–246 words.
+
+**Real bug found and fixed, not content.** `SpecTable.tsx` rendered
+`spec.value` as a bare string while `FactsPanel.tsx` already wrapped
+`fact.value` in `RichText` — so 711/756/757/758's "Three-section fare
+(三段票)" `specs:` value, the first Han text any `specs:` block on the
+site has ever carried, reached the built HTML untagged and failed `tests/
+accessibility.test.mts`'s "Chinese is always tagged zh-Hant" check.
+`SpecTable` now wraps `value` in `RichText`, matching `FactsPanel`; no
+existing page's output changes, since no prior `specs:` value contained
+Han.
+
+Gates: `npm run verify` and the full test suite green. Commit `9efc601`,
+pushed.
+
+### series-300s, all 16 routes, checked 19 August 2026
+
+All 16 (300, 302/302區, 303/303區, 304重慶/304承德, 306/306區, 307/307西藏三民,
+308, 310/310區, 311/311區) confirmed under the catalogue's 一般公車 heading,
+each its own routeid entry — 303's routeid did not resolve from the earlier
+catalogue extraction and was found by a fresh full-page fetch and direct
+search of the page (`0100030300`). Every 區/重慶/承德/西藏三民 variant has its
+own distinct routeid in the live catalogue, matching TDX's separate-route
+treatment. Two primary-sourced launch dates were found and quoted verbatim
+from operator pages: 302區 (15 June 2024) and 310區 (9 March 2024).
+
+**Municipal numeric collision confirmed for route 300**, by full fetch, not
+a snippet or a guess: Taichung independently runs its own unrelated city
+route numbered 300 (臺中車站–靜宜大學). Taichung 302/303/306 Wikipedia
+entries also surfaced in search but were not individually fetched, so
+`series-300s/_index.md` records that as an unverified lead rather than an
+asserted second collision.
+
+History leads (zh.wikiversity/zh.wikipedia) were denser here than for
+series-700s: 300 (ex-重慶幹線, renamed 2017), 304 (operator founded 1963,
+renumbered 1977), 307 (founded 1969 as 大有12路, renumbered 1977, plus a
+"Taiwan's highest-earning route 2003–2012" claim traced to a named but
+unfetched 2014 broadcast), 310 (a wiki-cited 1947 municipal-route lineage,
+8 references none individually chased), 308, 311. All marked `kind:
+secondary`, quoted verbatim, and explicitly flagged as uncorroborated
+against a primary PTO/operator record. Body prose: 104–265 words.
+
+**Two authoring problems found and fixed before the gate, neither a code
+change:**
+
+1. Ten pages' "Research status" sentences ended "...remain TBC where that
+   layer does not publish them.[^tdx-bus]" — an identical construction to
+   series-700s/711.md's passing sentence, except a few words shorter. That
+   shortening pulled the gap between "TDX" and "does not publish" under
+   `fact-check.mjs`'s 120-character lazy-match window for its
+   `NEGATIVE_CLAIM` absence-claim regex, so the regex fired and captured
+   "them" — a pronoun — as the absence's object instead of the actual noun
+   phrase, which matches nothing in `ABSENCE_REGISTER` and fails as an
+   unregistered claim. Not a case for widening the register: the sentence
+   was reworded (dropped the "where...does not publish" tail, keeping
+   "…remain TBC.") to state the same fact without tripping a length-
+   sensitive regex on incidental wording. `fact-check.mjs` was not touched.
+2. Two pages referenced "the working brief" by name inside published
+   citation notes and prose (303-n39itk.md, describing how its routeid was
+   found) — process narration that does not belong in reader-facing
+   content. Reworded to state the fact (which routeid, and that it is
+   distinct from 303區's) without the meta-commentary.
+
+**Claims ratchet:** three sentences flagged as unsourced assertions
+(baseline 32 → 35) — two were bare "see the other route's page for this
+shared history" cross-references citing nothing, one (306's mid-route
+operator-handoff/2014-realignment claim) named "a community wiki lead" in
+prose without an actual `sources:` entry or `[^id]` marker. None was
+promoted to a proper citation, since the specific source URL was not
+retained; all three were removed rather than fabricated a citation or
+widened the baseline. Ratchet holds at 32.
+
+Gates: `npm run cite`, `npm run verify` and the full test suite green.
+Commit pending.

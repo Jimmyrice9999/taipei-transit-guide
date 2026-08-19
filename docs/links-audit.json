@@ -1,5 +1,5 @@
 {
-  "pages": 486,
+  "pages": 503,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -1828,6 +1828,646 @@
       "page": "/bus/routes/colour-red/red-9/",
       "name": "Zhongyuan",
       "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/series-300s/300/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/300/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/300/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/300/",
+      "name": "Daqiaotou",
+      "href": "/rail/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/300/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Zhishan",
+      "href": "/rail/stations/r17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Shipai",
+      "href": "/rail/stations/r19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Qiyan",
+      "href": "/rail/stations/r21/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Beitou",
+      "href": "/rail/stations/r22/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Fuxinggang",
+      "href": "/rail/stations/r23/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "行天宮",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "Daqiaotou",
+      "href": "/rail/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-1nt2z9s/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Zhishan",
+      "href": "/rail/stations/r17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Shipai",
+      "href": "/rail/stations/r19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Qiyan",
+      "href": "/rail/stations/r21/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Beitou",
+      "href": "/rail/stations/r22/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Fuxinggang",
+      "href": "/rail/stations/r23/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "行天宮",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/series-300s/302-asnxtl/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-15phxu1/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-15phxu1/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-15phxu1/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-n39itk/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-n39itk/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/303-n39itk/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "Yongan Market",
+      "href": "/rail/stations/o03/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "Dingxi",
+      "href": "/rail/stations/o04/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "Daqiaotou",
+      "href": "/rail/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-1ospbyp/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Jiantan",
+      "href": "/rail/stations/r15/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Yongan Market",
+      "href": "/rail/stations/o03/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "Dingxi",
+      "href": "/rail/stations/o04/"
+    },
+    {
+      "page": "/bus/routes/series-300s/304-tyh4b2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "中山國小",
+      "href": "/rail/stations/o10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Daqiaotou",
+      "href": "/rail/stations/o12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Taipei Bridge",
+      "href": "/rail/stations/o13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Sanchong",
+      "href": "/rail/stations/o15/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Sanhe Junior High School",
+      "href": "/rail/stations/o51/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "徐匯中學",
+      "href": "/rail/stations/o52/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-4vunir/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-cehfqw/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-cehfqw/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-cehfqw/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-cehfqw/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/306-cehfqw/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "南京三民",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Taipei City Hall",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1frkitg/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Yuanshan",
+      "href": "/rail/stations/r14/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Nanjing Sanmin",
+      "href": "/rail/stations/g18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Taipei City Hall",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/307-1rlhqdi/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Shilin",
+      "href": "/rail/stations/r16/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Zhishan",
+      "href": "/rail/stations/r17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Shipai",
+      "href": "/rail/stations/r19/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Qiyan",
+      "href": "/rail/stations/r21/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Beitou",
+      "href": "/rail/stations/r22/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Fuxinggang",
+      "href": "/rail/stations/r23/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Zhuwei",
+      "href": "/rail/stations/r26/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "行天宮",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/308/",
+      "name": "Ganzhenlin",
+      "href": "/rail/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Jiantan",
+      "href": "/rail/stations/r15/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Jiangzicui",
+      "href": "/rail/stations/bl09/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "Longshan Temple",
+      "href": "/rail/stations/bl10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-12pnubu/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Fuzhong",
+      "href": "/rail/stations/bl06/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Jiangzicui",
+      "href": "/rail/stations/bl09/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "Longshan Temple",
+      "href": "/rail/stations/bl10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/310-d7o4ou/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "Taipower Building",
+      "href": "/rail/stations/g08/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "國父紀念館",
+      "href": "/rail/stations/bl17/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "Taipei City Hall",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-10xg17y/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-bealqx/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-bealqx/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-bealqx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-300s/311-bealqx/",
+      "name": "Jingping",
+      "href": "/rail/stations/y10/"
+    },
+    {
+      "page": "/bus/routes/series-300s/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/bus/routes/series-700s/711/",

@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2088,
-    "tbc": 865,
+    "sourced": 2191,
+    "tbc": 889,
     "asserted": 32,
     "meta": 42
   },
@@ -1676,6 +1676,142 @@
       "file": "content/bus/routes/colour-red/_index.md",
       "sources": 2,
       "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/300.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/302-1nt2z9s.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/302-asnxtl.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/303-15phxu1.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/303-n39itk.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/304-1ospbyp.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/304-tyh4b2.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/306-4vunir.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/306-cehfqw.md",
+      "sources": 3,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/307-1frkitg.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/307-1rlhqdi.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/308.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/310-12pnubu.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/310-d7o4ou.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/311-10xg17y.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/311-bealqx.md",
+      "sources": 4,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-300s/_index.md",
+      "sources": 3,
+      "sourced": 2,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
