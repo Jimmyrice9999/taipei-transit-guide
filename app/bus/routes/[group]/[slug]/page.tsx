@@ -54,12 +54,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const result = await readRoutePage(group, slug)
   if (!result) notFound()
   const folder = getFolder(['bus', 'routes'], group)
-  const description = `${result.route.names.en} is a route in the ${folder.title} group of the Taipei transit guide.`
+  const routeTitle = `${result.route.names.en} — ${result.route.canonicalSlug}`
+  const description = `${routeTitle} is a route in the ${folder.title} group of the Taipei transit guide.`
   return {
-    title: result.route.names.en,
+    title: routeTitle,
     description,
     alternates: { canonical: result.page.href },
-    openGraph: { title: result.route.names.en, description, url: result.page.href },
+    openGraph: { title: routeTitle, description, url: result.page.href },
   }
 }
 
@@ -70,16 +71,17 @@ export default async function BusRoutePage({ params }: Props) {
   const { route, page } = result
   const folder = getFolder(['bus', 'routes'], group)
   const accent = getAccent(getGroupLineCode(group as BusRouteGroup))
+  const routeTitle = `${route.names.en} / ${route.names.zh_tw}`
 
   return (
     <PageShell accent={accent}>
       <HanContentSubset />
-      <JsonLd data={[articleSchema({ title: route.names.en, description: page.summary, path: page.href, updated: page.updated || undefined }), breadcrumbSchema([
+      <JsonLd data={[articleSchema({ title: routeTitle, description: page.summary, path: page.href, updated: page.updated || undefined }), breadcrumbSchema([
         { name: 'Home', path: '/' },
         { name: 'Bus', path: '/bus/' },
         { name: 'Routes', path: '/bus/routes/' },
         { name: folder.title, path: `/bus/routes/${group}/` },
-        { name: route.names.en, path: page.href },
+        { name: routeTitle, path: page.href },
       ])]} />
       <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: folder.title, href: `/bus/routes/${group}/` }, { label: route.names.en }]} />
       <BackLink href={`/bus/routes/${group}/`} label={folder.title} />

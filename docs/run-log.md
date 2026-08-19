@@ -11120,6 +11120,26 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — jump-frog buses, batch 3
+
+Built 20 routes: 新店高中-三峽, 瑞芳(經東碇路)-松山車站, 三芝-馬偕醫學大學,
+林口-捷運府中站, 林口-臺北車站(承德), 北大社區-捷運頂埔站,
+捷運頂溪站-捷運頂埔站, 瑞芳-內科(基客), 蘆洲-內湖, 三峽-中和高中,
+泰山-內湖, 捷運蘆洲站-內湖科技園區, 瑞芳-南港, 林口-捷運忠孝敦化站,
+三峽-捷運台大醫院站, 捷運鶯桃福德站-銘傳大學(桃園校區), 政大附中-捷運景美站,
+中和自立路-新店, 鶯歌火車站-中正紀念堂 and 中和左岸社區-捷運頂溪站.
+Body prose is 2,320 whitespace-delimited words. Exact New Taipei route-service
+rows cover 19/20; one identity remains TBC for service fields. The batch has
+83 confirmed geometry-only MRT stop-ID joins, 76 candidates rejected as too
+far, and 0 ambiguous candidates. It includes two distinct TDX identities with
+the same 瑞芳-內科(基客) name; municipality-scoped canonical slugs and the
+ASCII metadata disambiguator keep both discoverable without duplicate titles.
+Sources are the full TDX bus snapshot, the full New Taipei 跳蛙公車 dataset,
+the full New Taipei route-service API and the New Taipei transport-management
+page. Route history, predecessor/renumbering, dated operator changes, corridor
+rationale and eligibility remain TBC where the fetched primary sources do not
+establish them.
+
 ### New Taipei — jump-frog buses, batch 2
 
 Built 20 routes: 湯泉-大坪林-湯泉, 捷運新店站-坪林, 三峽-臺北市信義區,
