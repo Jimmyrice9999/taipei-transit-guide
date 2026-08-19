@@ -1,5 +1,5 @@
 {
-  "pages": 842,
+  "pages": 862,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -2383,6 +2383,316 @@
       "page": "/bus/routes/new-taipei/6-1cynav/",
       "name": "Ankang",
       "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/906/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/908-1wi6f5d/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/908-1wi6f5d/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/908-abjqao/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/908-abjqao/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/909/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/910/",
+      "name": "中山國中",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/910/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "NTU Hospital",
+      "href": "/rail/stations/r09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "Gongguan",
+      "href": "/rail/stations/g07/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/913/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/916/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/916/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/916/",
+      "name": "Longpu",
+      "href": "/rail/stations/lb05/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/917/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/918-o75u8d/",
+      "name": "Xinzhuang",
+      "href": "/rail/stations/o18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/918-o75u8d/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/918-o75u8d/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/918-o75u8d/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/919/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/919/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/919/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-1r46cb8/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-1r46cb8/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-1r46cb8/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-1r46cb8/",
+      "name": "林口站",
+      "href": "/rail/stations/a9/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-2aqri2/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920-2aqri2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920a/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920a/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920a/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/920a/",
+      "name": "林口站",
+      "href": "/rail/stations/a9/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/921/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/921/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/922/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/923/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/925/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/925/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/925/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/925/",
+      "name": "林口站",
+      "href": "/rail/stations/a9/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-do65a0/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-do65a0/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-do65a0/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-q5q4bo/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-q5q4bo/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/927-q5q4bo/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/928/",
+      "name": "Luzhou",
+      "href": "/rail/stations/o54/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/928/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/928/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
     },
     {
       "page": "/bus/routes/new-taipei/985/",
