@@ -110,11 +110,16 @@ export default function NetworkPage() {
         branchPaths: track.branch,
         branchColour: branchTint(summary.line),
         branchEdge: summary.line.ink,
+        /* See the note on `dashed` in components/RouteMap: a chain of published
+           station points is not a surveyed alignment and must not look like
+           one. */
+        dashed: track.kind === 'station-chain',
       }
     })
     .filter((l): l is NonNullable<typeof l> => l !== null)
 
   const branchedLines = mapLines.filter((l) => l.branchPaths.length > 0)
+  const chainedLines = mapLines.filter((l) => l.dashed)
 
   const interchangeCodes = new Set(interchanges.flatMap((i) => i.codes))
 
@@ -197,13 +202,23 @@ export default function NetworkPage() {
             The Sanying Line is a different case and is genuinely not there.
           */}
           <p className="note">
-            <strong>The Sanying Line is not drawn.</strong> It opened on 30 June 2026.
-            The New Taipei Metro line records this map is built from carry a source
-            update stamp of 23 May 2023 — nearly three years earlier — and return one
-            line, the Circular Line. Rather than draw an alignment from a dataset that
-            predates the railway, it is absent here and written up from the
-            operator&rsquo;s own announcement on its{' '}
-            <Link href="/rail/lines/sanying-line/">line page</Link>.{' '}
+            {/*
+              Run 51. This paragraph used to open "The Sanying Line is not
+              drawn", above twelve Sanying dots — the station layer never
+              filtered on whether the line had geometry, so the page contradicted
+              itself in the space of one screen. The line is drawn now, as what
+              can actually be evidenced, and this says which that is.
+            */}
+            <strong>The Sanying Line is drawn as a chain of station points, not as
+            an alignment.</strong> It opened on 30 June 2026. The New Taipei Metro line
+            records this map is built from carry a source update stamp of 23 May 2023 —
+            nearly three years earlier — and return one line, the Circular Line. There
+            is no LB route geometry to draw. What its dashed line joins is its twelve
+            stations, in the operator&rsquo;s published order, at the New Taipei City
+            landmark register&rsquo;s own coordinates: it states where the stations are
+            and what sequence they run in, and states nothing about the route between
+            them. The line is written up from the operator&rsquo;s own announcement on
+            its <Link href="/rail/lines/sanying-line/">line page</Link>.{' '}
             {/*
               Run 12. The line was previously missing from the table as well as
               the map, which was not a decision — the table filtered on "has
@@ -230,7 +245,7 @@ export default function NetworkPage() {
                map should not vouch for its source beyond what the source
                supports. */
             caption={
-              'Every line as surveyed, each labelled with its code at both ends — colour alone does not ' +
+              'Every line the site carries, each labelled with its code at both ends — colour alone does not ' +
               'identify a line. Bannan blue and Airport MRT purple are indistinguishable to a reader with ' +
               'protanopia, and Tamsui red against Danhai red is the closest pair on the network even in ' +
               'normal colour vision, which is why every line carries its code. Interchange stations are ' +
@@ -244,7 +259,17 @@ export default function NetworkPage() {
                 branchedLines.map((l) => l.name),
               )}. Where a line appears broken, the alignment across the gap is missing from the published ` +
               'geometry — those breaks are holes in the source data, not features of the network, and are ' +
-              'left unbridged rather than joined with track we cannot evidence.'
+              'left unbridged rather than joined with track we cannot evidence. ' +
+              /* Built from the data for the same reason the branch sentence is:
+                 if MOTC ever publishes LB geometry, this sentence has to stop
+                 claiming a dashed line is on the map. */
+              (chainedLines.length === 0
+                ? ''
+                : `A dashed line is not surveyed track: it joins that line's published station points in ` +
+                  `order and says nothing about the route between them. ${listOf(
+                    chainedLines.map((l) => l.name),
+                  )} ${chainedLines.length === 1 ? 'is' : 'are'} drawn that way, having no published ` +
+                  'route geometry at all.')
             }
           />
 

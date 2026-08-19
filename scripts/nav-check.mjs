@@ -191,6 +191,83 @@ console.log('\n3. Hover independence\n')
   await page.close()
 }
 
+/* ---------- 4. the bar never grows, and back never goes forward ---------- */
+
+/*
+ * Both of these are run-51 regressions, and neither is visible to markup review.
+ *
+ * The panel: below 780px it was `position: static` inside the header's flex
+ * row, so opening a dropdown on a narrow window took the band from 125px to
+ * 603px — the bar itself grew and shoved the page down a screen and a half.
+ * A menu overlays; it does not resize its own bar. Measured, at the widths
+ * where the behaviour used to change.
+ *
+ * The trail: reported repro, verbatim — Home, Rail ▸ Network, an operator
+ * link, back, back. The second back used to walk FORWARD to the operator page,
+ * because the trail appended the page it had just come back to instead of
+ * popping it. tests/navigation.test.mts pins the decision; this walks the
+ * actual sequence in an actual browser, which is how it was reported.
+ */
+console.log('\n4. The bar, and the trail\n')
+{
+  for (const width of [1440, 780, 375]) {
+    const context = await browser.newContext({ viewport: { width, height: 900 } })
+    const page = await context.newPage()
+    await page.goto(base + '/', { waitUntil: 'load' })
+    await page.evaluate(() => document.fonts.ready)
+    const before = await page.evaluate(
+      () => document.querySelector('.site-header').getBoundingClientRect().height,
+    )
+    await page.locator('.nav-item').first().locator('button').click()
+    await page.waitForTimeout(200)
+    const after = await page.evaluate(() => ({
+      height: document.querySelector('.site-header').getBoundingClientRect().height,
+      open: !!document.querySelector('.nav-panel:not([hidden])'),
+      position: getComputedStyle(document.querySelector('.nav-panel')).position,
+    }))
+    ok(
+      `the open panel does not change the bar's height at ${width}px`,
+      after.open && Math.abs(after.height - before) < 1 && after.position === 'absolute',
+      `${before.toFixed(0)}px → ${after.height.toFixed(0)}px, ${after.position}`,
+    )
+    await context.close()
+  }
+
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } })
+  const page = await context.newPage()
+  const settle = async () => { await page.waitForTimeout(600) }
+
+  // Home → Rail dropdown → Network → an operator link.
+  await page.goto(base + '/', { waitUntil: 'load' })
+  await page.evaluate(() => document.fonts.ready)
+  await page.locator('.nav-item').first().locator('button').click()
+  await page.locator('.nav-panel:not([hidden]) a[href$="/rail/network/"]').first().click()
+  await settle()
+  const operator = await page.locator('main a[href^="/rail/operators/"]').first().getAttribute('href')
+  await page.locator(`main a[href="${operator}"]`).first().click()
+  await settle()
+  ok('the trail reaches the operator page', page.url().endsWith(operator), page.url())
+
+  // Back once: the browser's own button, which was never the broken half.
+  await page.goBack(); await settle()
+  const first = new URL(page.url()).pathname
+  ok('back once returns to the network page', first === '/rail/network/', first)
+
+  // The site's own control, which is what the reader sees on the page. It must
+  // point at Home — not forward, at the operator page just left.
+  const backHref = await page.locator('.back-link').first().getAttribute('href')
+  ok(
+    'the back control on that page points home, not forward',
+    backHref === '/',
+    `${backHref} (operator was ${operator})`,
+  )
+
+  await page.goBack(); await settle()
+  const second = new URL(page.url()).pathname
+  ok('back twice returns to the home page, not forward', second === '/', second)
+  await context.close()
+}
+
 console.log('')
 const failed = results.filter((r) => !r.pass)
 console.log(failed.length ? `${failed.length} FAILURE(S)` : `all ${results.length} checks pass`)

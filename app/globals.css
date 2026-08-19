@@ -573,10 +573,24 @@ th > .badge:only-child {
   display: none;
 }
 
+/*
+ * ── Why this has a margin ────────────────────────────────────────────────────
+ *
+ * It is an 8px box rotated 45deg, so its painted bounding box is 8·√2 ≈ 11.3px
+ * — about 1.7px wider than its layout box on each side. It is also the last
+ * child of a `justify-content: space-between` summary, which puts its layout
+ * box flush against the panel's content edge, and `.nav-panel-inner` scrolls
+ * vertically — and a box with `overflow-y: auto` computes `overflow-x` to
+ * `auto` too, so it clips horizontally whether or not it was asked to. Net
+ * effect: the outer corner of every submenu caret was shaved off at 320–414px,
+ * which is where the panel is a full-width list and the carets sit at the very
+ * edge. The margin is the rotation's overhang, stated.
+ */
 .nav-submenu-caret {
   width: 7px;
   height: 7px;
   flex: none;
+  margin-right: 2px;
   border-right: 1px solid currentColor;
   border-bottom: 1px solid currentColor;
   transform: rotate(45deg) translateY(-2px);
@@ -612,18 +626,25 @@ th > .badge:only-child {
   }
 }
 
+/*
+ * ── Run 51: the panel is an overlay at EVERY width ──────────────────────────
+ *
+ * Below 780 this used to set `position: static; order: 99; flex-basis: 100%`,
+ * which put the panel *inside* the header's flex row. Opening Rail on a
+ * 375px-wide desktop window took the band from 125px to 603px: the bar itself
+ * grew, every fixed thing under it jumped, and the page behind was shoved down
+ * a screen and a half. Reported as "hovering a dropdown stretches the top bar".
+ *
+ * A menu is a menu at any width. It drops down over the page, the bar's height
+ * never changes, and the panel scrolls inside itself when it is taller than the
+ * viewport — the same contract the desktop panel has always had. What stays
+ * mobile-specific is the *shape*: one column, thumb-sized rows.
+ */
 @media (max-width: 780px) {
   .nav-panel {
-    position: static;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    /* Absolute against .site-header, as on desktop — see the note there. */
     border-radius: 0;
-    box-shadow: none;
     max-width: none;
-    /* Out of the flex row and across the full bar. */
-    order: 99;
-    flex-basis: 100%;
-    margin-top: 8px;
   }
   .nav-item {
     flex-wrap: wrap;
@@ -637,8 +658,11 @@ th > .badge:only-child {
   .nav-panel-inner {
     grid-template-columns: 1fr;
     gap: 14px;
-    padding: 12px 0 4px;
-    max-height: none;
+    /* Matches .container's 24px, so the panel's rows line up with the wordmark
+       above them now that the panel spans the band rather than sitting inside
+       the container. */
+    padding: 12px var(--container-pad, 24px) 14px;
+    max-height: min(70svh, 520px);
   }
   .nav-group a {
     /* Comfortable thumb targets once the panel is a list rather than a menu. */
@@ -5262,4 +5286,149 @@ a.badge-link:focus-visible {
 
 .spine-key-item[data-structure='at-grade']::before {
   background: linear-gradient(to bottom, var(--bg) 50%, var(--accent-map) 50%);
+}
+
+/* ==================================================================== */
+/* SCROLL AFFORDANCE                                                    */
+/* ==================================================================== */
+
+/*
+ * ── Reported: "scrollable diagrams give no affordance" ──────────────────────
+ *
+ * Every wide table, diagram and strip on this site scrolls inside its own box
+ * rather than putting a scrollbar on the document — that is the sanctioned
+ * pattern, it is what keeps `npm run verify:browser`'s 320px reflow check
+ * green, and it is checked for. What was never checked is whether a reader can
+ * TELL. Measured on /rail/network at 375px: the network table is 743px wide in
+ * a 343px box, and `element.offsetHeight - element.clientHeight` is 0 — the
+ * platform gives it an overlay scrollbar that is painted only while scrolling.
+ * So 400px of the table simply did not exist unless you happened to drag it.
+ *
+ * Two signals, because they answer different questions and fail in different
+ * places:
+ *
+ *   the scrollbar   says "this box scrolls" before you touch it, and says how
+ *                   far along you are. Forced to a laid-out thin scrollbar
+ *                   rather than an overlay one, and given a thumb in --text-3
+ *                   (4.9:1 on white) rather than the platform's near-invisible
+ *                   default, because SC 1.4.11 asks 3:1 of a UI component.
+ *
+ *   the edge fade   says "there is more THAT way", and — the reason it is
+ *                   worth having as well — it disappears at each end, so it
+ *                   also says when you have reached the end. Done with the
+ *                   background-attachment local/scroll pair: the covers scroll
+ *                   with the content and slide over the shadows, so this needs
+ *                   no script, no measurement, and no resize listener, which
+ *                   matters on a static export.
+ *
+ * Nothing here animates, so there is nothing for prefers-reduced-motion to
+ * turn off; both signals are removed for print, where neither means anything.
+ */
+
+.table-scroll,
+.compare-scroll,
+.formation-scroll,
+.ladder-frame,
+.profile-frame,
+.spine-rail .spine-track {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-3) var(--bg-well);
+
+  background-image:
+    linear-gradient(to right, var(--bg) 40%, rgba(255, 255, 255, 0)),
+    linear-gradient(to left, var(--bg) 40%, rgba(255, 255, 255, 0)),
+    linear-gradient(to right, rgba(20, 23, 26, 0.28), rgba(20, 23, 26, 0)),
+    linear-gradient(to left, rgba(20, 23, 26, 0.28), rgba(20, 23, 26, 0));
+  background-position:
+    left center,
+    right center,
+    left center,
+    right center;
+  background-repeat: no-repeat;
+  background-size:
+    32px 100%,
+    32px 100%,
+    12px 100%,
+    12px 100%;
+  background-attachment: local, local, scroll, scroll;
+}
+
+/* The well-backed frames cover with their own ground, not the page's. */
+.ladder-frame,
+.profile-frame {
+  background-image:
+    linear-gradient(to right, var(--bg-well) 40%, rgba(244, 245, 247, 0)),
+    linear-gradient(to left, var(--bg-well) 40%, rgba(244, 245, 247, 0)),
+    linear-gradient(to right, rgba(20, 23, 26, 0.28), rgba(20, 23, 26, 0)),
+    linear-gradient(to left, rgba(20, 23, 26, 0.28), rgba(20, 23, 26, 0));
+}
+
+/* WebKit/Blink still needs the pseudo-elements to honour a thumb colour that
+   is not the platform default; `scrollbar-color` alone is Firefox-only there. */
+.table-scroll::-webkit-scrollbar,
+.compare-scroll::-webkit-scrollbar,
+.formation-scroll::-webkit-scrollbar,
+.ladder-frame::-webkit-scrollbar,
+.profile-frame::-webkit-scrollbar,
+.spine-rail .spine-track::-webkit-scrollbar,
+.spine-map::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.table-scroll::-webkit-scrollbar-track,
+.compare-scroll::-webkit-scrollbar-track,
+.formation-scroll::-webkit-scrollbar-track,
+.ladder-frame::-webkit-scrollbar-track,
+.profile-frame::-webkit-scrollbar-track,
+.spine-rail .spine-track::-webkit-scrollbar-track,
+.spine-map::-webkit-scrollbar-track {
+  background: var(--bg-well);
+  border-radius: 5px;
+}
+
+.table-scroll::-webkit-scrollbar-thumb,
+.compare-scroll::-webkit-scrollbar-thumb,
+.formation-scroll::-webkit-scrollbar-thumb,
+.ladder-frame::-webkit-scrollbar-thumb,
+.profile-frame::-webkit-scrollbar-thumb,
+.spine-rail .spine-track::-webkit-scrollbar-thumb,
+.spine-map::-webkit-scrollbar-thumb {
+  background: var(--text-3);
+  border-radius: 5px;
+}
+
+/* The strip map scrolls down, not across, so it gets the thumb and no fade. */
+.spine-map {
+  scrollbar-color: var(--text-3) var(--bg-well);
+}
+
+/* The nav panel scrolls inside the dark band; the page's ink would vanish. */
+.nav-panel-inner {
+  scrollbar-width: thin;
+  scrollbar-color: var(--band-ink-dim) rgba(255, 255, 255, 0.1);
+}
+
+.nav-panel-inner::-webkit-scrollbar {
+  width: 10px;
+}
+
+.nav-panel-inner::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-panel-inner::-webkit-scrollbar-thumb {
+  background: var(--band-ink-dim);
+  border-radius: 5px;
+}
+
+@media print {
+  .table-scroll,
+  .compare-scroll,
+  .formation-scroll,
+  .ladder-frame,
+  .profile-frame,
+  .spine-rail .spine-track {
+    background-image: none;
+  }
 }

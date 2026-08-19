@@ -35,12 +35,23 @@ export default function HomePage() {
       {featured && (
         <Link className="feature-card" href={featured.href}>
           {featuredImage && (
+            /*
+             * Dimensions from the record, not typed.
+             *
+             * These were `width={400} height={533}` — the portrait shape of the
+             * photograph that happened to be here when the card was written.
+             * The card crops with object-fit, so a wrong ratio does not show;
+             * it just reserves the wrong box before the CSS lands, and it goes
+             * silently wrong the moment the featured image changes, which is
+             * the one thing this card is designed to make easy. Derived from
+             * the sidecar it cannot disagree with what actually loads.
+             */
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={imageSrc(featuredImage).replace(/-\d+\.webp$/, '-400.webp')}
               alt=""
               width={400}
-              height={533}
+              height={Math.round((400 * featuredImage.height) / featuredImage.width)}
               loading="lazy"
               decoding="async"
             />

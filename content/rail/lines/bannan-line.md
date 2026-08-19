@@ -7,6 +7,10 @@ aliases:
   - 板南線
   - Blue Line
 updated: 2026-08-10
+hero:
+  image: bannan-line/hero
+  alt: Passengers stepping off a Bannan Line train at Houshanpi, its doors open along the platform.
+  caption: Alighting from a Bannan Line train at Houshanpi.
 facts:
   - label: Operator
     value: Taipei Rapid Transit Corporation

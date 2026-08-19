@@ -45,6 +45,26 @@ export type MapLine = {
   branchPaths?: Point[][]
   branchColour?: string
   branchEdge?: string
+  /**
+   * Draw the trunk as a dashed chain rather than a solid alignment.
+   *
+   * ── The one thing this map must never do ────────────────────────────────────
+   *
+   * Everything else drawn here is MOTC's surveyed geometry: the curve through
+   * the hills above Muzha is the curve the track takes. The Sanying Line has no
+   * such record — MOTC's New Taipei extract predates the railway — so what can
+   * be drawn for it is its twelve published station points joined in order.
+   * That is a real, sourced statement about where the stations are and what
+   * sequence they run in; it is not a statement about where the track goes, and
+   * between LB05 and LB06 it is certainly wrong about it.
+   *
+   * A solid stroke would make the two claims look identical. The dash is what
+   * keeps them distinguishable at a glance, and the caption says the same thing
+   * in words for anyone who cannot see the difference. Neither the dash nor the
+   * caption is optional: this is the same class of error as printing a
+   * plausible number instead of TBC.
+   */
+  dashed?: boolean
   /** Badge colours, needed when the line is labelled on the map itself. */
   badgeBg?: string
   badgeFg?: string
@@ -264,8 +284,12 @@ export default function RouteMap({
                 fill="none"
                 stroke={line.colour}
                 strokeWidth={TRACK_WIDTH}
-                strokeLinecap="round"
+                strokeLinecap={line.dashed ? 'butt' : 'round'}
                 strokeLinejoin="round"
+                /* A long dash with a wide gap: legible as "not continuous" at
+                   the network map's scale without reading as a texture. Butt
+                   caps above so each dash keeps its stated length. */
+                strokeDasharray={line.dashed ? '10 7' : undefined}
               />
             )),
           )}

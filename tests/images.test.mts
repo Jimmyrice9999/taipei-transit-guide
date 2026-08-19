@@ -36,6 +36,30 @@ function walk(dir: string): string[] {
   })
 }
 
+/**
+ * The page as a reader sees it: markup gone, script and style payloads gone.
+ *
+ * ── Why the credit check needs this ──────────────────────────────────────────
+ *
+ * It used to search the raw HTML for the photographer's name, which worked
+ * until a photographer's name was 蒼空 翔. The build tags Han runs for the
+ * Traditional-variant face, and the space is not Han, so the credit ships as
+ * `<span lang="zh-Hant">蒼空</span> <span lang="zh-Hant">翔</span>` — correctly
+ * credited, correctly tagged, and not findable as one string anywhere in the
+ * file. The name that fell out of this check would have been a licence-term
+ * failure if it were real, so the check has to look at what the page says
+ * rather than at how it is spelled in the markup.
+ *
+ * Stripping is also stricter than the substring match it replaces: a name
+ * appearing only in a `title` attribute or inside the RSC payload used to
+ * satisfy this test, and no longer can.
+ */
+function visibleText(html: string): string {
+  return html
+    .replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<[^>]+>/g, '')
+}
+
 const sidecars = walk(IMAGES).filter((f) => f.endsWith('.json'))
 const webps = walk(IMAGES).filter((f) => f.endsWith('.webp'))
 
@@ -109,7 +133,7 @@ test('every page showing a pipeline image renders its credit, within budget', ()
       assert.ok(fs.existsSync(sidecar), `${rel} references image "${id}" with no sidecar`)
       const meta = JSON.parse(fs.readFileSync(sidecar, 'utf8'))
       assert.ok(
-        page.includes(meta.artist),
+        visibleText(page).includes(meta.artist),
         `${rel}: the photographer "${meta.artist}" is not credited on the page`,
       )
     }
@@ -118,4 +142,67 @@ test('every page showing a pipeline image renders its credit, within budget', ()
       `${rel}: ${(bytes / 1024).toFixed(0)} KB of imagery exceeds the ${MAX_PAGE / 1024} KB page budget`,
     )
   }
+})
+
+/*
+ * ── The hole this closes ─────────────────────────────────────────────────────
+ *
+ * `getImage()` returns null for an id with no sidecar, and that is deliberate:
+ * a page whose photograph has not been sourced renders its "photograph wanted"
+ * placeholder instead of breaking. But a *hard-coded* id is a different claim.
+ * `app/page.tsx` asks for `matra-dispute/hero` by name; when run 22 removed
+ * that sidecar as a quality cull, the front page's featured card silently lost
+ * its picture and its credit, and nothing in the build noticed — the six pages
+ * whose reference lived in frontmatter had theirs removed in the same commit,
+ * and the one written in TSX did not.
+ *
+ * Nothing above catches it. The output has no dangling URL to find, because
+ * the markup for the image is simply never emitted. So the check has to run
+ * against the source: every literal id passed to getImage() must resolve.
+ *
+ * Template-literal calls (`stations/${code}`) are deliberately not checked —
+ * those are per-item and null is the working state there, which is exactly
+ * what the placeholder exists for.
+ */
+test('every hard-coded getImage() id has a sidecar', () => {
+  const sources = [
+    ...walk(path.join(ROOT, 'app')),
+    ...walk(path.join(ROOT, 'components')),
+    ...walk(path.join(ROOT, 'lib')),
+  ].filter((f) => /\.tsx?$/.test(f))
+
+  const dangling: string[] = []
+  for (const file of sources) {
+    const code = fs.readFileSync(file, 'utf8')
+    for (const [, id] of code.matchAll(/\bgetImage\(\s*['"]([^'"$]+)['"]\s*\)/g)) {
+      const sidecar = path.join(IMAGES, ...id.split('/')) + '.json'
+      if (!fs.existsSync(sidecar)) dangling.push(`${path.relative(ROOT, file)} → ${id}`)
+    }
+  }
+
+  assert.deepEqual(
+    dangling,
+    [],
+    `getImage() asks for an image that does not exist:\n  ${dangling.join('\n  ')}`,
+  )
+})
+
+/*
+ * The mirror of the above, for content frontmatter: `hero: image:` names an
+ * image by id, and a typo or a removed sidecar turns a hero into nothing at
+ * all. `npm run unused` catches the other direction (a sidecar nothing uses).
+ */
+test('every hero image named in content frontmatter has a sidecar', () => {
+  const content = walk(path.join(ROOT, 'content')).filter((f) => f.endsWith('.md'))
+  const dangling: string[] = []
+  for (const file of content) {
+    const text = fs.readFileSync(file, 'utf8')
+    const front = text.split(/^---$/m)[1]
+    if (!front) continue
+    for (const [, id] of front.matchAll(/^\s+image:\s*([\w/-]+)\s*$/gm)) {
+      const sidecar = path.join(IMAGES, ...id.split('/')) + '.json'
+      if (!fs.existsSync(sidecar)) dangling.push(`${path.relative(ROOT, file)} → ${id}`)
+    }
+  }
+  assert.deepEqual(dangling, [], `frontmatter names a missing image:\n  ${dangling.join('\n  ')}`)
 })

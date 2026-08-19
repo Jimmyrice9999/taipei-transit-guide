@@ -6,6 +6,10 @@ line: BR
 aliases:
   - Matra dispute
 updated: 2026-08-06
+hero:
+  image: matra-dispute/hero
+  alt: A VAL 256 train arriving at Zhongxiao Fuxing station on the Wenhu Line, its rubber-tyred guideway running away behind it.
+  caption: The system Matra built and left — a VAL 256 on the Wenhu Line at Zhongxiao Fuxing.
 facts:
   - label: Client
     value: DORTS, Taipei City Government

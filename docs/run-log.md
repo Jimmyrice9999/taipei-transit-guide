@@ -11708,3 +11708,168 @@ Validation for Part 1: `npm run cite`, `npm run verify` (185/185), research vali
 ### New Taipei — MRT pioneer subgroup
 
 Built 2 routes: 藍海2線先導公車 and 985萬大樹林先導公車. Body prose is 245 whitespace-delimited words. Exact New Taipei route-service rows cover 2/2; route length, endpoint, service-span and fare values come from the current New Taipei route-service API where published, while route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC. The subgroup has 21 confirmed geometry-only MRT stop-ID joins, 48 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the numeric-identity audit and no unsupported variant interpretation was promoted. Sources are the full TDX bus snapshot, the full New Taipei MRT-pioneer dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+
+# Run 51 — Part 1, six reported bugs, 19 August 2026
+
+Audited before editing. No route content was added.
+
+## 1. Missing images
+
+The audit found **zero broken URLs**: a script over all 1,628 exported pages
+collected 195 distinct local asset references (`src`, `srcset`, `<source>`,
+CSS `url()`, `/images/` in `href`/`content`) and every one resolved on disk.
+The defect is not a dangling link — it is a **dangling `getImage()` id**, which
+emits no markup at all and so leaves nothing for a link checker to find.
+
+`a371fc1` ("Remove low-quality in-use images", 14 August 2026, run 22 part 2)
+removed seven image records after a quality review. Six of them were named from
+content frontmatter, and that commit removed the frontmatter too. The seventh —
+`matra-dispute/hero` — is named from `app/page.tsx`, hard-coded, and was
+missed. `getImage()` returns null for a missing sidecar, so the front page's
+featured card has rendered with no photograph and no credit line since that
+commit, and nothing in the build noticed. That is the confirmed case, and it
+broke on 14 August 2026.
+
+All seven records are restored from Wikimedia Commons, chosen against the
+quality objections run 22 recorded and inspected at 760px before fetching:
+
+| Record | Replacement | Why it answers the objection |
+| --- | --- | --- |
+| `matra-dispute/hero` | A Taipei Metro VAL 256 train on Wenhu Line at Zhongxiao Fuxing Station — Lokseng01, CC BY-SA 4.0, 5939×3964 | Was 800×1067 portrait forced into a wide hero; now landscape at seven times the pixels, and the VAL 256 is the system the article is about. |
+| `bannan-line/hero` | Platform of Taipei MRT Houshanpi Station — Howard61313, CC BY-SA 3.0, 3456×2592 | Was motion-blurred with a distracting crop; this is sharp, and shows the doors-open boarding scene the old alt text described. |
+| `c321/hero` | C321 at Zhongxiao Xinsheng — Sinsyuan, CC BY-SA 4.0, 4000×2252 | Was visibly soft at 1600px; this is sharp, with the destination blind and the station name both legible. |
+| `c341/hero` | C341 1201 at Ximen Station — 蒼空 翔, CC BY-SA 3.0, 1600×1200 | Was an 800×600 builder's plate that did not survive the display scale; this is a three-quarter view of the train itself, at the pipeline's full 1600px. |
+| `gondola/station` | Taipei Taiwan Maokong-Gondola-01 — CEphoto, Uwe Aranas, CC BY-SA 3.0, 5585×3142 | Was washed out and hazy; this is the same subject, sharp, with the towers and a cabin in frame. |
+| `gondola/tower` | Maokong Gondola between Taipei Zoo South and Zhinan Temple — 玄史生, CC BY-SA 3.0, 4000×2248 | Was 800×600 and soft; this shows the span and a tower against the ridge. |
+| `bus/hero` | Capital Bus 683-U5 head at Exit Y17, Taipei City Mall — 捷利, CC BY-SA 4.0, 4077×2995 | Was 400×300, far too small for a full-width hero. The caption is rewritten: this bus wears its own company's livery on a joint-network route number, which is what the article is actually about. |
+
+Two guards were added so this class cannot recur silently, and both were
+verified to fail when the sidecar is removed:
+
+- every literal id passed to `getImage()` anywhere in `app/`, `components/` or
+  `lib/` must have a sidecar. Template-literal ids are deliberately exempt —
+  null is the working state there, and the placeholder exists for it;
+- every `hero: image:` named in content frontmatter must have a sidecar.
+
+`tests/images.test.mts`'s credit check was corrected rather than relaxed: it
+searched raw HTML for the photographer's name, which cannot match 蒼空 翔
+because the build tags Han runs and the space between them splits the string
+across two `<span lang="zh-Hant">` elements. It now strips markup and script
+payloads and searches the visible text, which is strictly narrower — a name
+appearing only in an attribute or in the RSC payload no longer satisfies it.
+
+The front page's featured card also declared `width={400} height={533}` — the
+shape of whichever photograph happened to be there when the card was written.
+It is now derived from the sidecar.
+
+## 2. The dropdown stretched the bar
+
+Reproduced by measuring `.site-header`'s height before and after opening the
+panel, at eleven widths. Above 780px it was already correct. At 780px and below
+the panel was `position: static; order: 99; flex-basis: 100%` — inside the
+header's flex row — and opening Rail took the band from 125px to 603px at
+375px wide, and from 90px to 568px at 700px. Any desktop window narrower than
+780px hit it on hover.
+
+The panel is now `position: absolute` at every width, anchored to the band as
+it always was above 780, and scrolls inside itself (`min(70svh, 520px)`) rather
+than growing. What stays width-specific is the shape: one column, thumb-sized
+rows, and the panel's horizontal padding now matches `.container` so its rows
+line up with the wordmark above them. Measured after: 58 → 58, 90 → 90,
+125 → 125.
+
+## 3. Dropdown icons clipped
+
+`.nav-submenu-caret` is a 7px box with two 1px borders, rotated 45°, so its
+painted bounding box is 8·√2 ≈ 11.3px — about 1.7px wider than its layout box
+on each side. It is the last child of a `justify-content: space-between`
+summary, which puts that layout box flush against the panel's content edge, and
+`.nav-panel-inner` has `overflow-y: auto`, which computes `overflow-x` to
+`auto` as well. The outer corner of every submenu caret was being shaved at
+320–414px. Fixed with a 2px right margin — the rotation's overhang, stated.
+Re-measured at 320, 375 and 414: zero horizontal clipping.
+
+## 4. Scrollable containers gave no affordance
+
+Measured on `/rail/network/` at 375px: the network table is 743px of content in
+a 343px box, and `offsetHeight - clientHeight` is 0 — the platform gives it an
+overlay scrollbar painted only while it is being dragged. Four hundred pixels
+of table with no signal it existed. The same is true of every `.table-scroll`,
+`.compare-scroll`, `.formation-scroll`, `.ladder-frame`, `.profile-frame` and
+the mobile `.spine-track`.
+
+Two signals, because they answer different questions:
+
+- a laid-out thin scrollbar with a thumb in `--text-3` (4.9:1 on white, against
+  SC 1.4.11's 3:1 for a UI component) rather than the platform default;
+- an edge fade using the `background-attachment: local, scroll` pair, so the
+  cover slides over the shadow as the content scrolls. It needs no script, no
+  measurement and no resize listener — which matters on a static export — and
+  it disappears at each end, so it says "you have reached the end" as well as
+  "there is more that way".
+
+Verified by screenshot at scrollLeft 0, mid and end: right edge only, both
+edges, left edge only. Nothing animates, so `prefers-reduced-motion` has
+nothing to turn off; both signals are removed for print. A ratchet in
+`tests/accessibility.test.mts` now fails the build if a rule turns on
+`overflow-x: auto` on a selector the affordance block does not also style.
+
+## 5. Back walked forward
+
+The browser's own Back button was never broken. The site's `BackLink` was. The
+trail appended every route arrived at, including ones reached by going back, so
+the reported sequence produced:
+
+```
+Home                 ["/"]
+→ Rail ▸ Network     ["/", "/rail/network/"]
+→ an operator link   ["/", "/rail/network/", "/rail/operators/trtc/"]
+→ Back               ["/", "/rail/network/", "/rail/operators/trtc/", "/rail/network/"]
+```
+
+`previousPath('/rail/network/')` then saw its own path at the end, stepped back
+one more, and returned the operator page. The Back control on Network pointed
+forward, and pressing it again bounced between the two.
+
+The trail is now a stack: arriving at a route already on it means the reader has
+come back to it, so everything after it is dropped. That also handles a
+multi-step Back correctly, which a pop-one rule would not.
+`lib/navigation-history.ts` exports the pure decision as `advanceTrail`,
+`tests/navigation.test.mts` drives the reported sequence against it, and
+`npm run nav` now walks the sequence in a real browser — Home, Rail ▸ Network,
+an operator link, Back, Back — asserting the visible control's href at each
+step. Confirmed: Network, then Home.
+
+## 6. The Sanying Line had no line
+
+MOTC publishes no LB shape record: the New Taipei extract this map is built
+from is stamped 23 May 2023 and the railway opened on 30 June 2026. So
+`getLineGeometry('LB')` correctly returns null and LB was filtered out of
+`mapLines`. What was not correct is that its stations were plotted anyway —
+`mapStations` takes every station with coordinates, and all twelve LB stations
+have them. The page therefore printed "**The Sanying Line is not drawn**" above
+twelve Sanying dots.
+
+Inventing an alignment is not the answer. Joining points the operator published,
+in the order the operator published them, is: `lib/sanying-stations.ts` carries
+the New Taipei City landmark register's TWD97 points converted to WGS84, a
+primary source. `getLineTrack` now returns a `kind` of `surveyed` or
+`station-chain`, and a station chain is drawn **dashed** — because a chain of
+station points is not a surveyed alignment and the map must not let the two look
+alike. The note above the map and the caption below it both say so in words, the
+caption's list of chained lines is built from the data so it cannot outlive the
+condition, and the accessibility test now requires the dash and the sentence
+explaining it whenever a line has no published geometry.
+
+The test that previously asserted LB must *not* be labelled was inverted rather
+than deleted: every line the registry carries is now labelled on the map, which
+is the stronger form of the WCAG 1.4.1 rule that test exists for. The old
+exemption had been hiding a line identified by colour alone.
+
+## Gates
+
+`npm run cite` clean, `npm run verify` green, `npm run test:unit` 195/195
+(three new tests — the two image guards and the scroll ratchet — plus seven in
+the new `tests/navigation.test.mts`), `npm run nav` 19/19 with seven new checks.
+Font subsets regenerated: 蒼 became newly reachable through the C341 credit.
+`probes/` remains untracked and unstaged.

@@ -10,6 +10,10 @@ aliases:
   - MRT feeder bus
   - 幹線公車
   - trunk bus
+hero:
+  image: bus/hero
+  alt: The front of an orange and white Capital Bus vehicle working route 2, its destination display reading NTU Hospital to TUMT in Chinese and English.
+  caption: A Capital Bus vehicle on route 2. The route number belongs to the joint network; the livery and the fleet belong to the company.
 lead:
   value: "14"
   unit: companies

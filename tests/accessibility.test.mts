@@ -62,30 +62,51 @@ test('the network map labels every line with its code', () => {
    */
   const html = read('rail/network/index.html')
   /*
-   * TDX_LINES, not LINES: from run 12 the registry carries a line the platform
-   * has no geometry for, so it is in the table and not on the map. Asserting
-   * over every line would demand a label for something that is not drawn —
-   * and asserting over "whatever happens to be drawn" would let a line fall
-   * off the map without failing anything. The set that must be labelled is
-   * the set that has geometry, which is the set TDX carries.
+   * ── What changed in run 51, and why this now covers every line ─────────────
+   *
+   * This asserted over TDX_LINES and then asserted the *opposite* for the
+   * off-platform ones: the Sanying Line had no published geometry, so it was
+   * in the table and deliberately not on the map. That reading was half right.
+   * Its stations were plotted the whole time — twelve loose dots under a note
+   * saying the line was not drawn — so the page had a line identified by
+   * colour alone, which is the exact 1.4.1 failure this test exists to stop,
+   * sitting inside the exemption the test granted it.
+   *
+   * The line is now drawn, dashed, as a chain of its published station points
+   * (see getLineTrack in lib/network.ts). Being drawn, it must be labelled like
+   * any other. So the rule is simply: every line the registry carries is
+   * labelled on the map. TDX_LINES is kept in the check so a line that TDX
+   * carries can never quietly lose its geometry and its label together.
    */
-  for (const line of TDX_LINES) {
+  for (const line of [...LINES, ...TDX_LINES]) {
     assert.ok(
       html.includes(`class="routemap-linelabel-text">${line.code}<`),
       `${line.code} is not labelled on the network map`,
     )
   }
 
-  for (const line of LINES.filter((l) => !l.onTdx)) {
+  /*
+   * A track drawn from station points is not the same claim as a surveyed
+   * alignment, and the map must not let them look alike. The dash is the
+   * distinction; the caption is the distinction stated in words for anyone who
+   * cannot see it. Neither is optional.
+   */
+  const chained = LINES.filter((l) => !l.onTdx)
+  if (chained.length > 0) {
     assert.ok(
-      !html.includes(`class="routemap-linelabel-text">${line.code}<`),
-      `${line.code} is labelled on the map but has no geometry to label`,
+      /stroke-dasharray=/.test(html),
+      'a line has no published geometry, but nothing on the map is drawn dashed',
     )
-    // ...and must still be reachable, or "not drawn" becomes "not there".
     assert.ok(
-      html.includes(`>${line.code}<`),
-      `${line.code} is neither on the map nor anywhere else on the page`,
+      /dashed line is not surveyed track/.test(html),
+      'the map draws a dashed line without saying in words what a dash means',
     )
+    for (const line of chained) {
+      assert.ok(
+        html.includes(`>${line.code}<`),
+        `${line.code} is neither on the map nor anywhere else on the page`,
+      )
+    }
   }
 })
 
@@ -458,5 +479,52 @@ test('every transition is disabled under prefers-reduced-motion', () => {
     animations - animationsOff,
     0,
     'a keyframe animation was added without a reduced-motion guard being considered',
+  )
+})
+
+/*
+ * ── Every scroll container says that it scrolls ──────────────────────────────
+ *
+ * The site's answer to a wide table or a wide drawing is to scroll it inside
+ * its own box, which is the sanctioned pattern and is what keeps the 320px
+ * reflow check green. The cost is that the overflow becomes invisible: measured
+ * on /rail/network at 375px, the network table is 743px of content in a 343px
+ * box and the platform paints an overlay scrollbar only while it is being
+ * dragged. Four hundred pixels of table with no signal that it is there.
+ *
+ * So: a rule that turns on horizontal overflow has to be a selector the
+ * affordance block also styles. This is a ratchet, not a style check — it
+ * cannot tell whether the fade looks right, only that a new scroll container
+ * cannot be added without one, which is exactly how this one arrived.
+ */
+test('every horizontal scroll container has the scroll affordance', () => {
+  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+
+  /** Selectors named in the affordance block, normalised to bare class names. */
+  const affordance = new Set(
+    [...css.matchAll(/^([^{}]*?)\{[^{}]*?background-attachment:\s*local/gms)]
+      .flatMap((match) => match[1].split(','))
+      .map((selector) => selector.trim().split(/\s+/).pop() ?? '')
+      .filter(Boolean),
+  )
+
+  assert.ok(affordance.size > 0, 'no affordance block found in globals.css')
+
+  // Every rule that switches on horizontal overflow, with the selector it is on.
+  const missing: string[] = []
+  for (const [, selectors, body] of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)) {
+    if (!/overflow-x:\s*(auto|scroll)/.test(body)) continue
+    for (const selector of selectors.split(',')) {
+      const key = selector.trim().split(/\s+/).pop() ?? ''
+      // Comment-only or at-rule fragments.
+      if (!key || key.startsWith('@') || key.startsWith('*')) continue
+      if (!affordance.has(key)) missing.push(selector.trim())
+    }
+  }
+
+  assert.deepEqual(
+    missing,
+    [],
+    'these scroll horizontally with no affordance:\n  ' + missing.join('\n  '),
   )
 })

@@ -207,11 +207,66 @@ export function getLineSummaries(): LineSummary[] {
  * `branch` is empty for the five lines that have none, which makes the caller's
  * job the same either way.
  */
-export function getLineTrack(
-  lineCode: string,
-): Partition & { runs: number; /** The branch's own terminus, per branch. */ branchStations: Station[] } {
+/**
+ * Where a drawn track came from.
+ *
+ * `surveyed` — MOTC's published route geometry, the real alignment.
+ * `station-chain` — straight segments between the operator's own published
+ *   station points, for a line MOTC has no geometry for at all. It says the
+ *   stations are in that order and roughly there. It does NOT say the track
+ *   goes that way, and a map must not let the two look alike.
+ */
+export type TrackKind = 'surveyed' | 'station-chain'
+
+export type LineTrack = Partition & {
+  runs: number
+  /** The branch's own terminus, per branch. */
+  branchStations: Station[]
+  kind: TrackKind
+}
+
+export function getLineTrack(lineCode: string): LineTrack {
   const geometry = getLineGeometry(lineCode)
-  if (!geometry) return { trunk: [], branch: [], runs: 0, branchStations: [] }
+
+  /*
+   * ── Run 51: the Sanying Line drew as twelve loose dots ──────────────────────
+   *
+   * Reported as "LB has no line on the network map", and it was the only line
+   * on the page with none. MOTC publishes no LB shape record — the New Taipei
+   * extract this map is built from is stamped 23 May 2023 and the railway
+   * opened on 30 June 2026 — so `getLineGeometry` correctly returns null and
+   * the line was filtered out of `mapLines` entirely.
+   *
+   * What was NOT correct is that its stations were still plotted. `mapStations`
+   * takes every station with coordinates, and all twelve LB stations have them:
+   * lib/sanying-stations.ts carries the New Taipei landmark register's TWD97
+   * points converted to WGS84, a primary source. So the page ended up asserting
+   * the exact opposite of the note printed above it — "the Sanying Line is not
+   * drawn", above twelve Sanying dots.
+   *
+   * Inventing an alignment is not the answer; that is the thing this project
+   * refuses to do. But joining points the operator published, in the order the
+   * operator published them, and saying in the drawing and in words that it is
+   * a chain of station points rather than surveyed track, asserts only what the
+   * source supports. It is drawn dashed for exactly that reason — see the
+   * `dashed` note in components/RouteMap.
+   */
+  if (!geometry) {
+    const chain = STATIONS.filter(
+      (s) => s.line === lineCode && s.lat !== null && s.lon !== null,
+    )
+      .slice()
+      .sort((a, b) => a.sequence - b.sequence)
+      .map((s) => [s.lon!, s.lat!] as Point)
+
+    return {
+      trunk: chain.length > 1 ? [chain] : [],
+      branch: [],
+      runs: 0,
+      branchStations: [],
+      kind: 'station-chain',
+    }
+  }
 
   const trunkRoute = getTrunkRoute(lineCode)
   const onTrunk = new Set(trunkRoute?.stations ?? [])
@@ -249,6 +304,7 @@ export function getLineTrack(
     branchStations: termini
       .map((code) => getStation(code))
       .filter((s): s is Station => !!s),
+    kind: 'surveyed',
   }
 }
 
