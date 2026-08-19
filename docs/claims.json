@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2713,
-    "tbc": 1080,
+    "sourced": 2758,
+    "tbc": 1152,
     "asserted": 32,
     "meta": 42
   },
@@ -2612,6 +2612,150 @@
       "file": "content/bus/routes/special-shuttle/21-1fm1bvh.md",
       "sources": 3,
       "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/21-rl8urw.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/22-143qe5v.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/22-1oxen3v.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/24.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/26-utmbkb.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/27.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/28-749hz7.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/29.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/3-1uhn1kq.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/30.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/5-18x45la.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/6-vothz7.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/7-1o8kc01.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/7-1yt6dk1.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/8-1sh1hlh.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/9-1w3v69i.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-174oym7.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-1sgvobx.md",
+      "sources": 3,
+      "sourced": 2,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
