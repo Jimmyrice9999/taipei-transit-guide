@@ -48,11 +48,11 @@ import { getLinkEntities } from '@/lib/content'
  * because a real row on the site needed it.
  */
 const SCOPES: { test: RegExp; prefix: string; suffix: RegExp }[] = [
-  { test: /depot/i, prefix: '/rail/depots/', suffix: /\s+Depot$/i },
+  { test: /depot/i, prefix: '/rail/metro/depots/', suffix: /\s+Depot$/i },
   { test: /operator/i, prefix: '/rail/operators/', suffix: /$^/ },
   {
     test: /^(lines?|interchanges?|serves|connects)/i,
-    prefix: '/rail/lines/',
+    prefix: '/rail/metro/lines/',
     suffix: /\s+Line$/i,
   },
 ]

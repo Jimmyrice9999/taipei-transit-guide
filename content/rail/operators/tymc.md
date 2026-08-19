@@ -10,7 +10,7 @@ updated: 2026-08-06
 ---
 
 The third operator on the regional map, owned principally by Taoyuan's city
-government, running the [Airport MRT](/rail/lines/airport-mrt/) — which is
+government, running the [Airport MRT](/rail/metro/lines/airport-mrt/) — which is
 why the airport line's fares, cards and service patterns differ from
 everything labelled MRT inside Taipei.
 

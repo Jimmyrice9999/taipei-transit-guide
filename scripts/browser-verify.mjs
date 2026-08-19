@@ -115,7 +115,7 @@ const PAGE_TYPES = [
   { name: 'home', url: '/' },
   { name: 'section-rail', url: '/rail/' },
   { name: 'section-bus', url: '/bus/' },
-  { name: 'type-lines', url: '/rail/lines/' },
+  { name: 'type-lines', url: '/rail/metro/lines/' },
   { name: 'bus-network', url: '/bus/network/' },
   { name: 'bus-routes', url: '/bus/routes/' },
   { name: 'bus-route-brown', url: '/bus/routes/colour-brown/' },
@@ -124,18 +124,18 @@ const PAGE_TYPES = [
   { name: 'bus-operator-detail', url: '/bus/operators/taipeibus-1m9ums8/' },
   { name: 'bus-models', url: '/bus/models/' },
   { name: 'bus-depots', url: '/bus/depots/' },
-  { name: 'line-wenhu', url: '/rail/lines/wenhu-line/' },
-  { name: 'line-sanying', url: '/rail/lines/sanying-line/' },
+  { name: 'line-wenhu', url: '/rail/metro/lines/wenhu-line/' },
+  { name: 'line-sanying', url: '/rail/metro/lines/sanying-line/' },
   { name: 'article-matra', url: '/rail/history/matra-dispute/' },
   /* Added in run 7 with the layouts they exercise: station-numbering is the
      only page carrying the numbering ladder, and BR22 is the only station page
      with a planned-interchange strip. Run 5.1's lesson — a new layout that is
      not in this list has no browser coverage, and two of its three regressions
      were exactly that. */
-  { name: 'systems-numbering', url: '/rail/systems/station-numbering/' },
-  { name: 'station-br22', url: '/rail/stations/br22/' },
-  { name: 'station-br13', url: '/rail/stations/br13/' },
-  { name: 'station-br10', url: '/rail/stations/br10/' },
+  { name: 'systems-numbering', url: '/rail/technology/station-numbering/' },
+  { name: 'station-br22', url: '/rail/metro/stations/br22/' },
+  { name: 'station-br13', url: '/rail/metro/stations/br13/' },
+  { name: 'station-br10', url: '/rail/metro/stations/br10/' },
   /*
    * Run 21: station pages stopped being Wenhu-only, and this list still had
    * no representative of the other 8 lines — the exact failure mode this
@@ -146,19 +146,19 @@ const PAGE_TYPES = [
    * with no first/last-train section at all, TDX not publishing it for
    * light rail.
    */
-  { name: 'station-y07', url: '/rail/stations/y07/' },
-  { name: 'station-k01', url: '/rail/stations/k01/' },
-  { name: 'stock-val256', url: '/rail/rolling-stock/val256/' },
-  { name: 'depot-muzha', url: '/rail/depots/muzha-depot/' },
+  { name: 'station-y07', url: '/rail/metro/stations/y07/' },
+  { name: 'station-k01', url: '/rail/metro/stations/k01/' },
+  { name: 'stock-val256', url: '/rail/metro/rolling-stock/val256/' },
+  { name: 'depot-muzha', url: '/rail/metro/depots/muzha-depot/' },
   /*
    * Run 20 built these three photo-card grids and never added any of them
-   * here — the same gap, a run later. `/rail/stations/` in particular
+   * here — the same gap, a run later. `/rail/metro/stations/` in particular
    * changed twice this run (the interchange badges' source, and now every
    * line instead of one).
    */
-  { name: 'rail-rolling-stock', url: '/rail/rolling-stock/' },
-  { name: 'rail-depots', url: '/rail/depots/' },
-  { name: 'rail-stations', url: '/rail/stations/' },
+  { name: 'rail-rolling-stock', url: '/rail/metro/rolling-stock/' },
+  { name: 'rail-depots', url: '/rail/metro/depots/' },
+  { name: 'rail-stations', url: '/rail/metro/stations/' },
   { name: 'network', url: '/rail/network/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },

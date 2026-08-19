@@ -13,7 +13,7 @@
  */
 
 import type { MetadataRoute } from 'next'
-import { getAllPages, getSections, getTypes } from '@/lib/content'
+import { getAllPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getLineStations, LINES_WITH_STATION_PAGES, PROVENANCE } from '@/lib/stations'
 import { absoluteUrl } from '@/lib/site'
 
@@ -71,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: absoluteUrl('/rail/stations/'),
+      url: absoluteUrl('/rail/metro/stations/'),
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.6,
@@ -126,6 +126,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: type.status === 'planned' ? 0.2 : 0.7,
       })
     }
+    /*
+     * A system is a level between a section and its types — see
+     * `Folder.kind` in lib/content. It has a real page of its own and its
+     * types have theirs, and neither was in the sitemap when the level was
+     * added: the sitemap walked section → type only, so /rail/metro/ and
+     * /rail/metro/lines/ were both invisible to a crawler that trusted it.
+     */
+    for (const system of getSystems(section.slug)) {
+      entries.push({
+        url: absoluteUrl(system.href),
+        lastModified: now,
+        changeFrequency: 'monthly',
+        priority: system.status === 'planned' ? 0.2 : 0.8,
+      })
+      for (const type of getTypes(section.slug, system.slug)) {
+        entries.push({
+          url: absoluteUrl(type.href),
+          lastModified: now,
+          changeFrequency: 'monthly',
+          priority: type.status === 'planned' ? 0.2 : 0.7,
+        })
+      }
+    }
   }
 
   for (const page of getAllPages()) {
@@ -142,7 +165,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const line of LINES_WITH_STATION_PAGES) {
     for (const station of getLineStations(line)) {
       entries.push({
-        url: absoluteUrl(`/rail/stations/${station.code.toLowerCase()}/`),
+        url: absoluteUrl(`/rail/metro/stations/${station.code.toLowerCase()}/`),
         lastModified: now,
         changeFrequency: 'yearly',
         priority: 0.5,

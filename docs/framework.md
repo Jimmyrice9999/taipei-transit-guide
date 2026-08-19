@@ -262,7 +262,7 @@ Neihu Depot. Plus 24 Wenhu station pages, the network page, and the `/data` sect
 
 **Everything else is a scope statement.** That's the honest position.
 
-*As of run 7: also the station-numbering page at `/rail/systems/`, 14 of 24
+*As of run 7: also the station-numbering page at `/rail/technology/`, 14 of 24
 station pages carry photographs, and every section index states how many of its
 pages are written up versus scoped.*
 
@@ -310,7 +310,7 @@ wrong almost universally in English.
 decision is a genuine engineering story.
 
 **9. The 2014 line naming transition** — short and self-contained. Partly told
-already at `/rail/systems/station-numbering/`, which is where the 2014 and 2016
+already at `/rail/technology/station-numbering/`, which is where the 2014 and 2016
 dates now live.
 
 **10. Sanying station pages** — twelve of them, from the operator's own route

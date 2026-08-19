@@ -200,7 +200,7 @@ progress; Taoyuan's DORTS estimates roughly **nine years**, so around 2035.
 
 Following the Wenhu template:
 
-1. `/rail/lines/sanying-line` — the line
+1. `/rail/metro/lines/sanying-line` — the line
 2. 12 station pages at `/rail/stations/lb01` through `lb12`
 3. A rolling stock page for the Hitachi units — designation TBC
 4. A depot page — location and name need establishing

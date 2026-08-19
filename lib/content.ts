@@ -2,13 +2,20 @@
  * Reads the /content folder and turns it into pages.
  *
  * The folder layout IS the site structure. A file at
- *   content/rail/lines/wenhu-line.md
+ *   content/rail/metro/lines/wenhu-line.md
  * becomes the page
- *   /rail/lines/wenhu-line/
+ *   /rail/metro/lines/wenhu-line/
  *
- * Three levels, always:
- *   content/<section>/<type>/<page>.md
- *   e.g.    train  /  lines /  wenhu-line.md
+ * Two shapes, and only two:
+ *   content/<section>/<type>/<page>.md              bike, ferry, ticketing…
+ *   content/<section>/<system>/<type>/<page>.md     rail
+ *
+ * A SYSTEM is a network with its own stations, numbering and fleet — the metro
+ * network, the Maokong ropeway, and in time Taiwan Railway and high speed rail.
+ * It declares itself with `kind: system` in its own `_index.md`; see the note
+ * on `Folder.kind` for why the level exists. A section with no systems keeps
+ * the three-level shape unchanged, and the bus route registry keeps its own
+ * four-level `content/bus/routes/<group>/<slug>.md` (see getPageFromFile).
  *
  * A file named `_index.md` inside a folder is not a page. It describes the
  * folder itself — its display name, blurb, and sort order in the nav.
@@ -120,11 +127,36 @@ export type Folder = {
    * so it draws from the same pipeline image and renders the same credit.
    */
   hero: Hero | null
+  /**
+   * `system` marks a folder that is a transit system rather than a page type.
+   *
+   * ── Run 51: why sections gained a level ─────────────────────────────────────
+   *
+   * `/rail/` meant the metro network and nothing else, and its types — Lines,
+   * Rolling Stock, Depots, Stations — were the metro's. Taiwan Railway and high
+   * speed rail are also rail, and putting a TRA line in the same `/rail/metro/lines/`
+   * index as the Wenhu Line would be the flat-list problem
+   * docs/bus-architecture.md was written to avoid, one section over. Station
+   * codes would collide outright.
+   *
+   * So a section may now contain SYSTEMS, and a system contains the types. A
+   * system is a network with its own stations, numbering and fleet:
+   * `/rail/metro/lines/wenhu-line/`, and later `/rail/tra/lines/…`. Types that
+   * genuinely cut across systems — operators, history, technology — stay at the
+   * section level rather than being copied into each system, because one
+   * company runs metro and light rail and one dispute shaped several lines.
+   *
+   * Declared in the folder's own `_index.md` (`kind: system`) rather than from a
+   * list in here, so adding a system is adding a folder.
+   */
+  kind: 'system' | ''
 }
 
 /** Everything about a page except its rendered body. */
 export type PageMeta = {
   section: string
+  /** The system slug (`metro`), or '' for a section-level type. */
+  system: string
   type: string
   slug: string
   href: string
@@ -479,6 +511,7 @@ function readFolder(parents: string[], slug: string): Folder {
     href: '/' + [...parents, slug].join('/') + '/',
     status: toText(data.status) === 'planned' ? 'planned' : '',
     hero: toHero(data.hero),
+    kind: toText(data.kind) === 'system' ? 'system' : '',
   }
 }
 
@@ -551,13 +584,33 @@ export function getSection(section: string): Folder {
   return readFolder([], section)
 }
 
-/** Page types inside a section: Lines, Rolling Stock, Depots. */
-export function getTypes(section: string): Folder[] {
-  return listFolders([section])
+/**
+ * Page types inside a section: Lines, Rolling Stock, Depots.
+ *
+ * Systems are excluded — they are a level, not a type. `getTypes('rail')`
+ * returns the cross-system types (Operators, History, Technology); the metro's
+ * own types come from `getTypes('rail', 'metro')`.
+ */
+export function getTypes(section: string, system = ''): Folder[] {
+  if (system) return listFolders([section, system])
+  return listFolders([section]).filter((folder) => folder.kind !== 'system')
 }
 
-export function getType(section: string, type: string): Folder {
-  return readFolder([section], type)
+export function getType(section: string, type: string, system = ''): Folder {
+  return readFolder(system ? [section, system] : [section], type)
+}
+
+/**
+ * The systems inside a section, in declared order. Empty for every section
+ * that has none, which is every section but Rail today.
+ */
+export function getSystems(section: string): Folder[] {
+  return listFolders([section]).filter((folder) => folder.kind === 'system')
+}
+
+/** Every (section, system) pair with pages, including ('bus', '') and so on. */
+export function getSystem(section: string, system: string): Folder {
+  return readFolder([section], system)
 }
 
 /** A nested folder used by the bus route registry. */
@@ -682,6 +735,7 @@ function readPageMetaAt(
   type: string,
   slug: string,
   href = `/${section}/${type}/${slug}/`,
+  system = '',
 ): PageMeta {
 
   /*
@@ -693,7 +747,7 @@ function readPageMetaAt(
     data = matter(fs.readFileSync(file, 'utf8')).data as Record<string, unknown>
   } catch (error) {
     throw new Error(
-      `Could not parse frontmatter in content/${section}/${type}/${slug}.md — ` +
+      `Could not parse frontmatter in ${relative} — ` +
         `${error instanceof Error ? error.message : String(error)}`,
       { cause: error },
     )
@@ -701,6 +755,7 @@ function readPageMetaAt(
 
   const meta: PageMeta = {
     section,
+    system,
     type,
     slug,
     href,
@@ -726,24 +781,34 @@ function readPageMetaAt(
   return meta
 }
 
-function readPageMeta(section: string, type: string, slug: string): PageMeta {
-  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
-  return readPageMetaAt(file, `content/${section}/${type}/${slug}.md`, section, type, slug)
+function readPageMeta(section: string, type: string, slug: string, system: string): PageMeta {
+  const parts = system ? [section, system, type, slug] : [section, type, slug]
+  const file = path.join(CONTENT_DIR, ...parts.slice(0, -1), `${slug}.md`)
+  const relative = `content/${parts.join('/')}.md`
+  return readPageMetaAt(file, relative, section, type, slug, `/${parts.join('/')}/`, system)
 }
 
-/** Every page inside one type folder, e.g. all Train > Lines pages. */
-export function getPages(section: string, type: string): PageMeta[] {
-  return readDirSafe(path.join(CONTENT_DIR, section, type))
+/** Every page inside one type folder, e.g. all Rail > Metro > Lines pages. */
+export function getPages(section: string, type: string, system = ''): PageMeta[] {
+  const dir = system
+    ? path.join(CONTENT_DIR, section, system, type)
+    : path.join(CONTENT_DIR, section, type)
+  return readDirSafe(dir)
     .filter((e) => e.isFile() && e.name.endsWith('.md') && !e.name.startsWith('_'))
-    .map((e) => readPageMeta(section, type, e.name.replace(/\.md$/, '')))
+    .map((e) => readPageMeta(section, type, e.name.replace(/\.md$/, ''), system))
     .sort(byOrderThenTitle)
 }
 
 /** Every page on the site. Used to tell Next which pages to generate. */
 export function getAllPages(): PageMeta[] {
-  return getSections().flatMap((section) =>
-    getTypes(section.slug).flatMap((type) => getPages(section.slug, type.slug)),
-  )
+  return getSections().flatMap((section) => [
+    ...getTypes(section.slug).flatMap((type) => getPages(section.slug, type.slug)),
+    ...getSystems(section.slug).flatMap((system) =>
+      getTypes(section.slug, system.slug).flatMap((type) =>
+        getPages(section.slug, type.slug, system.slug),
+      ),
+    ),
+  ])
 }
 
 /**
@@ -773,7 +838,7 @@ export function getLinkEntities(): LinkEntity[] {
 /**
  * Line code → the URL of that line's page, for every line that has one.
  *
- * Built from the `line:` frontmatter field on `content/rail/lines/*.md` — the
+ * Built from the `line:` frontmatter field on `content/rail/metro/lines/*.md` — the
  * same field that sets a page's accent colour — rather than from the slug, so
  * a page whose file is named differently from its code still resolves.
  *
@@ -790,7 +855,7 @@ export function getLinePageHref(code: string | undefined | null): string | null 
   if (!code) return null
   if (!linePageHrefs) {
     linePageHrefs = new Map()
-    for (const page of getPages('rail', 'lines')) {
+    for (const page of getPages('rail', 'lines', 'metro')) {
       if (page.line) linePageHrefs.set(page.line.toUpperCase(), page.href)
     }
   }
@@ -804,6 +869,8 @@ export async function getPageFromFile(
     section: string
     type: string
     slug: string
+    /** The system slug, for a section that has systems. '' otherwise. */
+    system?: string
     href?: string
     relative?: string
   },
@@ -814,7 +881,7 @@ export async function getPageFromFile(
   const relative = options.relative ?? `content/${section}/${type}/${slug}.md`
   const sectionStations: Record<string, string[]> = {}
   const autoLinks: LinkEntity[] = []
-  const meta = readPageMetaAt(file, relative, section, type, slug, options.href)
+  const meta = readPageMetaAt(file, relative, section, type, slug, options.href, options.system ?? '')
 
   /*
    * Ids cited anywhere on the page. Seeded from the facts and specs blocks
@@ -888,9 +955,22 @@ export async function getPageFromFile(
 }
 
 /** One ordinary three-level content page. */
-export async function getPage(section: string, type: string, slug: string): Promise<Page> {
-  const file = path.join(CONTENT_DIR, section, type, `${slug}.md`)
-  return getPageFromFile(file, { section, type, slug })
+export async function getPage(
+  section: string,
+  type: string,
+  slug: string,
+  system = '',
+): Promise<Page> {
+  const parts = system ? [section, system, type, slug] : [section, type, slug]
+  const file = path.join(CONTENT_DIR, ...parts.slice(0, -1), `${slug}.md`)
+  return getPageFromFile(file, {
+    section,
+    type,
+    slug,
+    system,
+    href: `/${parts.join('/')}/`,
+    relative: `content/${parts.join('/')}.md`,
+  })
 }
 
 /**
@@ -906,7 +986,7 @@ export async function getAllSources(): Promise<
   const byUrl = new Map<string, { source: Source; pages: { title: string; href: string }[] }>()
 
   for (const meta of getAllPages()) {
-    const page = await getPage(meta.section, meta.type, meta.slug)
+    const page = await getPage(meta.section, meta.type, meta.slug, meta.system)
     for (const reference of page.references) {
       if (!reference.cited) continue
       const key = reference.url || reference.id

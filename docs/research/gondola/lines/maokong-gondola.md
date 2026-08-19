@@ -7,7 +7,7 @@ Supersedes `docs/research/gondola/maokong-gondola.md` (v1.0, 6 August 2026) as
 the sourced record for this subject. That file is a lead index and several of
 its figures did not survive contact with primary sources — see "Contradicts
 the existing lead file" at the end of this document. This file mirrors the
-content page at `content/gondola/lines/maokong-gondola.md`.
+content page at `content/rail/cable/lines/maokong-gondola.md`.
 
 ---
 

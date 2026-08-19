@@ -20,6 +20,7 @@ import { execFileSync } from 'node:child_process'
 import { LINES, TDX_LINES } from '../lib/lines.ts'
 import { contrast } from '../lib/color.ts'
 import { BOUNDARY_EXEMPT, SWATCHES, THRESHOLD, declaredColours } from '../lib/surfaces.ts'
+import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 const read = (rel: string) => fs.readFileSync(path.join(OUT, rel), 'utf8')
@@ -31,8 +32,13 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  // out/train holds the /train → /rail redirect stubs, not pages — skipped.
-  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
+  /*
+   * Redirect stubs are not pages — see scripts/redirect-stub.mjs. They are
+   * identified by a marker in the file rather than by their path, because
+   * since run 51 they live inside the live trees (/rail/lines/, /gondola/) as
+   * well as under /train.
+   */
+  return walk(OUT).filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
 }
 
 const visible = (html: string) => html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
@@ -123,7 +129,7 @@ test('the network table identifies lines by code, not only by colour', () => {
 test('no interchange is shown by colour alone', () => {
   // Interchange badges carry the interchanging line's letter code, not just its
   // colour. If the code were dropped the badge would be a coloured chip.
-  const html = visible(read('rail/stations/br10/index.html'))
+  const html = visible(read('rail/metro/stations/br10/index.html'))
   assert.ok(html.includes('BL'), 'BR10 does not name the Bannan Line it interchanges with')
 })
 
@@ -138,12 +144,12 @@ test('no interchange is shown by colour alone', () => {
 test('a coloured index row never says which line by colour alone', () => {
   // Every row that carries a line rule also carries that line's letter code
   // and its name in words. Strip the CSS and the page still reads.
-  const html = read('rail/lines/index.html')
+  const html = read('rail/metro/lines/index.html')
   for (const line of LINES) {
     if (!html.includes(`data-line="${line.code}"`)) continue
     assert.ok(
       html.includes(`>${line.code}</span>`),
-      `${line.code} has a coloured row rule on /rail/lines/ and no code badge`,
+      `${line.code} has a coloured row rule on /rail/metro/lines/ and no code badge`,
     )
   }
   assert.ok(
@@ -181,14 +187,14 @@ test('the two diagrams that were not understood say what they are, above themsel
    * explanation is present and ABOVE the drawing, because that ordering is the
    * whole fix and a later refactor would not obviously break anything else.
    */
-  const line = read('rail/lines/wenhu-line/index.html')
+  const line = read('rail/metro/lines/wenhu-line/index.html')
   assert.ok(
     line.indexOf('profile-intro') < line.indexOf('profile-frame'),
     'the section drawing explains itself below itself again',
   )
   assert.match(line, /Above ground and below/, 'the section drawing has no heading')
 
-  const ladder = read('rail/systems/station-numbering/index.html')
+  const ladder = read('rail/technology/station-numbering/index.html')
   assert.ok(
     ladder.indexOf('ladder-intro') < ladder.indexOf('ladder-frame'),
     'the numbering ladder explains itself below itself again',
@@ -208,7 +214,7 @@ test('no depot claims a junction it has not declared', () => {
    */
   for (const file of allHtml()) {
     const rel = path.relative(OUT, file).replace(/\\/g, '/')
-    if (!rel.startsWith('rail/depots/') || rel === 'rail/depots/index.html') continue
+    if (!rel.startsWith('rail/metro/depots/') || rel === 'rail/metro/depots/index.html') continue
     const html = visible(fs.readFileSync(file, 'utf8'))
     const note = html.match(/Joins the line at ([^<]*(?:<[^>]+>[^<]*)*?)<\/span>/)
     if (!note) continue

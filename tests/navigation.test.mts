@@ -42,17 +42,17 @@ test('going forward again after a back does not resurrect the old branch', () =>
     '/rail/network/',
     '/rail/operators/trtc/',
     '/rail/network/', // back
-    '/rail/lines/', // a different way on
+    '/rail/metro/lines/', // a different way on
   ])
-  assert.deepEqual(trail, ['/', '/rail/network/', '/rail/lines/'])
+  assert.deepEqual(trail, ['/', '/rail/network/', '/rail/metro/lines/'])
 })
 
 test('a multi-step back truncates to the page landed on', () => {
   const trail = walk([
     '/',
     '/rail/',
-    '/rail/lines/',
-    '/rail/lines/wenhu-line/',
+    '/rail/metro/lines/',
+    '/rail/metro/lines/wenhu-line/',
     '/', // long-press Back, three steps at once
   ])
   assert.deepEqual(trail, ['/'])

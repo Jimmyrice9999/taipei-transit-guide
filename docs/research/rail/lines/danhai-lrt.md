@@ -5,7 +5,7 @@ against a primary or a fully-read secondary source at the URL given. Where a
 figure could not be traced to either, it is marked TBC and stays TBC on the
 content page. Do not cite this file; cite what it cites.
 
-This supersedes the previous version of `docs/research/rail/lines/danhai-lrt.md`,
+This supersedes the previous version of `docs/research/rail/metro/lines/danhai-lrt.md`,
 which had almost no URLs, no primary/secondary marking, and no confidence
 levels. Where that version turned out to be wrong or unverifiable, it is noted
 inline below rather than silently dropped.

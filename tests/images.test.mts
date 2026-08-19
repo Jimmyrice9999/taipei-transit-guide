@@ -19,6 +19,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import path from 'node:path'
+import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const ROOT = process.cwd()
 const IMAGES = path.join(ROOT, 'public', 'images')
@@ -93,7 +94,8 @@ test('every image variant belongs to a sidecar, and none is oversized', () => {
 const html = () =>
   walk(OUT)
     .filter((f) => f.endsWith('.html'))
-    .filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
+    // Redirect stubs are not pages — see scripts/redirect-stub.mjs.
+    .filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
 
 test('every rendered img has explicit dimensions', () => {
   if (!fs.existsSync(OUT)) return

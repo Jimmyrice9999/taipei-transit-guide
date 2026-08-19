@@ -3,7 +3,7 @@
 **Version 2.0 — 12 August 2026**
 **Status: research. Verify before further editing.**
 
-Supersedes `docs/research/rail/lines/zhonghe-xinlu-line.md` v1.0 (6 August
+Supersedes `docs/research/rail/metro/lines/zhonghe-xinlu-line.md` v1.0 (6 August
 2026) as the sourced record for this subject. That file is a lead index —
 long, useful, and largely right — but it had no URLs for most claims, no
 primary/secondary marking, and it explicitly flagged three unresolved
@@ -11,7 +11,7 @@ problems (a CK570F contract-date conflict, an unconfirmed Luzhou opening
 date, and O03/O04 spellings to check). This file resolves what could be
 resolved against primary sources and reports on the rest — see "Contradicts
 the existing lead file" below. It mirrors the content page at
-`content/rail/lines/zhonghe-xinlu-line.md`.
+`content/rail/metro/lines/zhonghe-xinlu-line.md`.
 
 All station codes, names, sequences, coordinates and interchange flags are
 taken from `data/tdx/TRTC/station.json`, `route.json` and
@@ -214,7 +214,7 @@ stables "33列共198輛" (33 trains, 198 cars) — more than the 4-train CL601
 figure on its own, consistent with later stock transfers/additional
 purchases across the C371 family, but not reconciled against DORTS's
 original contract counts in this pass. See the C371 rolling-stock page
-(`content/rail/rolling-stock/c371.md`) for the fleet as a whole; not
+(`content/rail/metro/rolling-stock/c371.md`) for the fleet as a whole; not
 re-derived here.
 
 ### Zhonghe Depot 中和機廠
@@ -565,7 +565,7 @@ The appendix preserves the report’s component dimensions, openings, Losheng ma
 
 ## Contradicts the existing lead file
 
-`docs/research/rail/lines/zhonghe-xinlu-line.md` v1.0 (6 August 2026) is this
+`docs/research/rail/metro/lines/zhonghe-xinlu-line.md` v1.0 (6 August 2026) is this
 project's own lead file for this subject. Checked against primary sources
 here, it was:
 

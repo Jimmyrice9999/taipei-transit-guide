@@ -24,6 +24,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { hanOf, sinkOf } from './subset-cjk.mjs'
+import { REDIRECT_STUB_MARKER } from './redirect-stub.mjs'
+import { MOVES, plannedRedirects } from './moves.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 
@@ -111,46 +113,67 @@ if (dangling.length) {
   process.exit(1)
 }
 
-/* ---- 4. /train → /rail redirect stubs ------------------------------ */
+/* ---- 4. redirect stubs for every URL that has ever moved ------------ */
 
 /*
- * The section was renamed in run 5 (the network includes LRT, conventional
- * rail and HSR — "train" read oddly across them). A static host cannot issue
- * real redirects, so every old /train/... URL gets a stub: meta refresh for
- * humans, canonical for crawlers, noindex so the stub itself never ranks.
- * Generated from what the build actually exported under /rail, so a new page
- * gets its redirect for free and a removed one stops redirecting.
+ * A static host cannot issue a real redirect, so every old URL gets a stub:
+ * meta refresh for humans, canonical for crawlers, noindex so the stub itself
+ * never ranks.
+ *
+ * ── The table, and why it is generated rather than written out ──────────────
+ *
+ * Two renames so far. Run 5 turned /train into /rail, because the network
+ * includes light rail, conventional rail and HSR and "train" read oddly across
+ * them. Run 51 gave /rail a system level — /rail/metro/lines/wenhu-line/ —
+ * because a TRA line and the Wenhu Line cannot share one /rail/lines/ index and
+ * their station codes would collide outright, and moved the Maokong Gondola out
+ * of a top-level section it held alone.
+ *
+ * The table itself is scripts/moves.mjs — shared with the test that walks it.
  */
+
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || 'https://jimmyrice9999.github.io'
-const RAIL = path.join(OUT, 'rail')
 
-function redirectStub(target) {
+function redirectStub(target, why) {
   return [
-    '<!doctype html><html lang="en"><head><meta charset="utf-8">',
+    `<!doctype html><html lang="en" ${REDIRECT_STUB_MARKER}><head><meta charset="utf-8">`,
     `<title>Moved — Taipei Transit Guide</title>`,
     `<link rel="canonical" href="${ORIGIN}${target}">`,
     `<meta http-equiv="refresh" content="0; url=${target}">`,
     '<meta name="robots" content="noindex">',
     '</head><body>',
-    `<p>This page moved to <a href="${target}">${target}</a> when the Train section became Rail.</p>`,
+    `<p>This page moved to <a href="${target}">${target}</a> when ${why}.</p>`,
     '</body></html>\n',
   ].join('')
 }
 
+/** Every exported page URL, as a site-absolute path with a trailing slash. */
+const exported = walk(OUT)
+  .filter((f) => path.basename(f) === 'index.html')
+  .map((f) => {
+    const rel = path.relative(OUT, path.dirname(f)).split(path.sep).join('/')
+    return rel === '' ? '/' : `/${rel}/`
+  })
+
 let stubs = 0
-if (fs.existsSync(RAIL)) {
-  for (const file of walk(RAIL).filter((f) => f.endsWith('.html'))) {
-    const rel = path.relative(RAIL, file).split(path.sep).join('/')
-    const target = `${BASE}/rail/${rel.replace(/index\.html$/, '')}`
-    const stub = path.join(OUT, 'train', ...rel.split('/'))
-    fs.mkdirSync(path.dirname(stub), { recursive: true })
-    fs.writeFileSync(stub, redirectStub(target))
-    stubs++
+let occupied = 0
+for (const { old, target, why } of plannedRedirects(exported)) {
+  const file = path.join(OUT, ...old.split('/').filter(Boolean), 'index.html')
+  // Never shadow a real page.
+  if (fs.existsSync(file)) {
+    occupied++
+    continue
   }
+  fs.mkdirSync(path.dirname(file), { recursive: true })
+  fs.writeFileSync(file, redirectStub(`${BASE}${target}`, why))
+  stubs++
 }
-console.log(`postbuild: wrote ${stubs} /train → /rail redirect stub(s)`)
+console.log(
+  `postbuild: wrote ${stubs} redirect stub(s) from ${MOVES.length} move rule(s)` +
+    (occupied ? `, ${occupied} path(s) already a real page` : ''),
+)
 
 /* ---- 5. every rendered Han character is in the subset that page loads ---- */
 

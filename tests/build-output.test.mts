@@ -15,11 +15,13 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 
-import { getAllPages } from '../lib/content.ts'
+import { getAllPages, getSections, getSystems, getTypes } from '../lib/content.ts'
 import { getBusRoutesByGroup } from '../lib/bus/routes.ts'
 import { getBuiltBusRouteGroups } from '../lib/bus/route-groups.ts'
 import { getLineStations, LINES_WITH_STATION_PAGES, STATIONS } from '../lib/stations.ts'
 import { LINES } from '../lib/lines.ts'
+import { plannedRedirects } from '../scripts/moves.mjs'
+import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 
@@ -52,9 +54,13 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  // out/train holds the generated /train → /rail redirect stubs — tiny
-  // meta-refresh pages, not site pages. They have their own test below.
-  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
+  /*
+   * Redirect stubs are not pages — see scripts/redirect-stub.mjs. They are
+   * identified by a marker in the file rather than by their path, because
+   * since run 51 they live inside the live trees (/rail/lines/, /gondola/) as
+   * well as under /train.
+   */
+  return walk(OUT).filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
 }
 
 /* ---- page inventory ------------------------------------------------ */
@@ -69,7 +75,7 @@ test('every content page exported an index.html', () => {
 test('every station on every line with station pages exported a page', () => {
   const missing = [...LINES_WITH_STATION_PAGES]
     .flatMap((line) => getLineStations(line))
-    .map((s) => `rail/stations/${s.code.toLowerCase()}/index.html`)
+    .map((s) => `rail/metro/stations/${s.code.toLowerCase()}/index.html`)
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
 })
@@ -100,14 +106,25 @@ test('the expected number of pages was generated', () => {
     (sum, line) => sum + getLineStations(line).length,
     0,
   )
-  const sections = 6 // /rail, /bus, /bike, /gondola, /ferry, /ticketing
-  // rail: lines, rolling-stock, depots, history, systems, operators
-  // bus: network, operators, routes, models, garages
-  // bike: history, generations, stations
-  // gondola: lines
-  // ticketing: guides
-  const types = 16
-  // /, /rail/network, /rail/stations, /data, /data/stations,
+  /*
+   * Sections, systems and type indexes are counted from the tree rather than
+   * typed. Run 51 moved the metro's types under /rail/metro/ and the gondola
+   * under /rail/cable/, which changed all three numbers at once — three
+   * hand-maintained constants that all had to be edited together, which is a
+   * count that will be wrong the next time as well. `getSections`,
+   * `getSystems` and `getTypes` are the same functions the routes generate
+   * from, so this cannot disagree with what shipped.
+   */
+  const sections = getSections().length
+  const systems = getSections().reduce((sum, s) => sum + getSystems(s.slug).length, 0)
+  const types = getSections().reduce(
+    (sum, s) =>
+      sum +
+      getTypes(s.slug).length +
+      getSystems(s.slug).reduce((n, system) => n + getTypes(s.slug, system.slug).length, 0),
+    0,
+  )
+  // /, /rail/network, /rail/metro/stations, /data, /data/stations,
   // /data/line-colours, /data/provenance, /data/sources, /about, /404,
   // /_not-found
   const generated = 11
@@ -121,7 +138,7 @@ test('the expected number of pages was generated', () => {
     )
     return sum + overlays.length + 1
   }, 0)
-  const expected = content + stations + sections + types + generated + busGroupPages
+  const expected = content + stations + sections + systems + types + generated + busGroupPages
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
   assert.equal(
@@ -131,20 +148,48 @@ test('the expected number of pages was generated', () => {
   )
 })
 
-test('every /rail page has a /train redirect stub pointing back at it', () => {
-  const railPages = allHtml().filter((f) =>
-    path.relative(OUT, f).startsWith('rail' + path.sep),
+/*
+ * ── Every URL the site has ever published still resolves ────────────────────
+ *
+ * Two renames so far: /train → /rail in run 5, and in run 51 the Rail section
+ * gaining a system level plus the gondola leaving its own top-level section.
+ * A static host cannot redirect, so each old URL gets a stub; the table is in
+ * scripts/postbuild.mjs.
+ *
+ * The old test hard-coded the one rule that existed. This walks the table, so
+ * a third rename gets the same coverage by being added to the table — and, the
+ * part that actually matters, it asserts a stub never points at another stub.
+ * A chained redirect is one readers give up on and crawlers count as a soft
+ * 404, and it is the natural failure mode of a table that has grown a rule.
+ */
+test('every moved URL redirects, in one hop, to a real page', () => {
+  const pages = new Set(
+    allHtml()
+      .filter((f) => f.endsWith('index.html'))
+      .map((f) => {
+        const rel = path.relative(OUT, path.dirname(f)).split(path.sep).join('/')
+        return rel === '' ? '/' : `/${rel}/`
+      }),
   )
-  for (const file of railPages) {
-    const rel = path.relative(path.join(OUT, 'rail'), file)
-    const stub = path.join(OUT, 'train', rel)
-    assert.ok(fs.existsSync(stub), `no redirect stub for rail/${rel}`)
-    const html = fs.readFileSync(stub, 'utf8')
-    const target = '/rail/' + rel.split(path.sep).join('/').replace(/index\.html$/, '')
-    assert.ok(html.includes(`url=${target}`), `stub for ${rel} does not refresh to ${target}`)
-    assert.ok(html.includes('rel="canonical"'), `stub for ${rel} carries no canonical`)
-    assert.ok(html.includes('noindex'), `stub for ${rel} is indexable`)
+
+  let checked = 0
+  for (const { old } of plannedRedirects([...pages])) {
+    if (pages.has(old)) continue // a real page occupies the old path
+    const file = path.join(OUT, ...old.split('/').filter(Boolean), 'index.html')
+    assert.ok(fs.existsSync(file), `no redirect stub at ${old}`)
+
+    const html = fs.readFileSync(file, 'utf8')
+    const target = html.match(/url=([^"'>]+)/)?.[1]
+    assert.ok(target, `stub at ${old} has no refresh target`)
+    assert.ok(
+      pages.has(target!),
+      `stub at ${old} points at ${target}, which is not a real page — a redirect must not chain`,
+    )
+    assert.ok(html.includes('rel="canonical"'), `stub at ${old} carries no canonical`)
+    assert.ok(html.includes('noindex'), `stub at ${old} is indexable`)
+    checked++
   }
+  assert.ok(checked > 200, `only ${checked} redirect stubs checked — is the table still wired up?`)
 })
 
 test('a 404 page exists for unknown paths', () => {
@@ -210,7 +255,7 @@ test('no page leaks a literal undefined, NaN or [object Object]', () => {
 })
 
 test('the Wenhu Line page states the official route length', () => {
-  const html = read('rail/lines/wenhu-line/index.html')
+  const html = read('rail/metro/lines/wenhu-line/index.html')
   assert.ok(html.includes('25.17'), 'official route length missing')
 
   /*
@@ -304,7 +349,7 @@ test('no internal link 404s', () => {
 })
 
 test('no page links to a bare .html file', () => {
-  // The export uses trailing-slash folders. A link to /rail/lines/wenhu-line.html
+  // The export uses trailing-slash folders. A link to /rail/metro/lines/wenhu-line.html
   // would resolve locally and 404 on the host.
   const offenders: string[] = []
   for (const file of allHtml()) {

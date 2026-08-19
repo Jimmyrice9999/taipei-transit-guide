@@ -27,7 +27,7 @@ export default function BackLink({ href, label }: { href: string; label: string 
           ? 'the home page'
           : previous === '/rail/'
             ? 'Rail'
-            : previous === '/rail/stations/'
+            : previous === '/rail/metro/stations/'
               ? 'the Stations index'
               : 'the previous page',
     })

@@ -5,7 +5,7 @@ against a primary or a fully-read secondary source at the URL given. Where a
 figure could not be traced to either, it is marked TBC and stays TBC on the
 content page. Do not cite this file; cite what it cites.
 
-This supersedes the previous version of `docs/research/rail/lines/airport-mrt.md`
+This supersedes the previous version of `docs/research/rail/metro/lines/airport-mrt.md`
 (dated 6 August 2026, "Version 1.0"), which had no per-claim URLs, no
 primary/secondary marking and no confidence levels — it was a to-do list, not
 evidence. Where that version turned out to be wrong, unconfirmable, or

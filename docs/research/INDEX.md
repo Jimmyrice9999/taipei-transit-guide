@@ -493,32 +493,32 @@ source has that.
 
 | Research file | Site page it could feed | The specific claims |
 | --- | --- | --- |
-| `wenhu-line.md` | `/rail/lines/wenhu-line` | Engineering numbers, exit counts, underground pair, 1993 wording, the fourth length figure — **all published in run 7** |
-| `wenhu-line.md` | new `/rail/systems/station-numbering` | The three numbering systems — **published in run 7** |
+| `wenhu-line.md` | `/rail/metro/lines/wenhu-line` | Engineering numbers, exit counts, underground pair, 1993 wording, the fourth length figure — **all published in run 7** |
+| `wenhu-line.md` | new `/rail/technology/station-numbering` | The three numbering systems — **published in run 7** |
 | `wenhu-line.md` | 24 station pages | Exit counts, engineering numbers — **published in run 7** |
-| `wenhu-line.md` | `/rail/lines/wenhu-line` | Station architecture: the single-column load constraint, 空中之河, 湖城故事 — not yet published, sourced and ready |
+| `wenhu-line.md` | `/rail/metro/lines/wenhu-line` | Station architecture: the single-column load constraint, 空中之河, 湖城故事 — not yet published, sourced and ready |
 | `wenhu-research-2026-08.md` | `/rail/systems` | The steel running surface on the Neihu section. Read the 李政安 paper first |
-| `wenhu-research-2026-08.md` | `/rail/rolling-stock/*` | The 2026 renewal programme, provisional |
+| `wenhu-research-2026-08.md` | `/rail/metro/rolling-stock/*` | The 2026 renewal programme, provisional |
 | `wenhu-research-part2.md` | `/rail/history/matra-dispute` | Already published |
 | `systems.md` | `/rail/systems` (scope statement today) | Platform-door completion dates; the structure-type table; the 拼裝捷運 critique; the three elevated-vs-underground decisions |
-| `depots.md` | **missing** `/rail/depots/zhonghe-depot` | The whole page. 1.47 ha, former TRA site, stabling and cleaning only, DORTS's own 因用地面積之限制 |
-| `depots.md` | `/rail/depots/beitou-depot` | CT107, 19 January 1988 — the first physical work on the network. Needs primary confirmation |
-| `depots.md` | `/rail/depots/nangang-depot` | 7.83 ha; the air-rights mechanism |
-| `depots.md` | `/rail/depots/xindian-depot` | The Xiaobitan branch climbing to an elevated station inside the depot |
+| `depots.md` | **missing** `/rail/metro/depots/zhonghe-depot` | The whole page. 1.47 ha, former TRA site, stabling and cleaning only, DORTS's own 因用地面積之限制 |
+| `depots.md` | `/rail/metro/depots/beitou-depot` | CT107, 19 January 1988 — the first physical work on the network. Needs primary confirmation |
+| `depots.md` | `/rail/metro/depots/nangang-depot` | 7.83 ha; the air-rights mechanism |
+| `depots.md` | `/rail/metro/depots/xindian-depot` | The Xiaobitan branch climbing to an elevated station inside the depot |
 | `depots.md` | new history article | Losheng |
 | `rolling-stock.md` | all fleet pages | The car-numbering convention; DORTS's sixteen-row procurement table |
-| `rolling-stock.md` | `/rail/rolling-stock/c341` | The Continental Engineering procurement — needs a second source |
-| `rolling-stock.md` | `/rail/rolling-stock/c371` | First Taiwanese-built metro train; the local-content split |
-| `tamsui-xinyi-line.md` | `/rail/lines/tamsui-xinyi-line` | The Xinyi East Extension. **Time-critical.** Needs a primary pass |
-| `zhonghe-xinlu-line.md` | `/rail/lines/zhonghe-xinlu-line` | The O21→O50 gap; the three component projects; the fifteen-year completion |
-| `circular-line.md` | `/rail/lines/circular-line` + article | The 403 earthquake, the bearing mechanism, the NT$1.927 bn claim, the Wenhu comparison |
-| `bannan-line.md` | `/rail/lines/bannan-line` | Three service patterns; the empty peak workings; beneath Beimen |
-| `songshan-xindian-line.md` | `/rail/lines/songshan-xindian-line` + article | The 1987 underground decision; Xiaobitan; the end of cross-colour running |
-| `airport-mrt.md` | `/rail/lines/airport-mrt` | Service patterns, journey times, in-town check-in |
+| `rolling-stock.md` | `/rail/metro/rolling-stock/c341` | The Continental Engineering procurement — needs a second source |
+| `rolling-stock.md` | `/rail/metro/rolling-stock/c371` | First Taiwanese-built metro train; the local-content split |
+| `tamsui-xinyi-line.md` | `/rail/metro/lines/tamsui-xinyi-line` | The Xinyi East Extension. **Time-critical.** Needs a primary pass |
+| `zhonghe-xinlu-line.md` | `/rail/metro/lines/zhonghe-xinlu-line` | The O21→O50 gap; the three component projects; the fifteen-year completion |
+| `circular-line.md` | `/rail/metro/lines/circular-line` + article | The 403 earthquake, the bearing mechanism, the NT$1.927 bn claim, the Wenhu comparison |
+| `bannan-line.md` | `/rail/metro/lines/bannan-line` | Three service patterns; the empty peak workings; beneath Beimen |
+| `songshan-xindian-line.md` | `/rail/metro/lines/songshan-xindian-line` + article | The 1987 underground decision; Xiaobitan; the end of cross-colour running |
+| `airport-mrt.md` | `/rail/metro/lines/airport-mrt` | Service patterns, journey times, in-town check-in |
 | `sanying-line.md` | 12 new station pages | Codes, names, locations, sub-names |
-| `danhai-lrt.md` | `/rail/lines/danhai-lrt` | The Jimmy Liao artwork; bicycle carriage |
-| `ankeng-lrt.md` | `/rail/lines/ankeng-lrt` | The An-Xin Bridge; the anniversary timetable change; the door button |
-| `planned-lines.md` | new `/rail/lines/planned` index | Everything, as an index with sourced projections |
+| `danhai-lrt.md` | `/rail/metro/lines/danhai-lrt` | The Jimmy Liao artwork; bicycle carriage |
+| `ankeng-lrt.md` | `/rail/metro/lines/ankeng-lrt` | The An-Xin Bridge; the anniversary timetable change; the door button |
+| `planned-lines.md` | new `/rail/metro/lines/planned` index | Everything, as an index with sourced projections |
 | `bus-network.md` | `/bus/network` (scope statement today) | **The feeder-colour table.** The four-tier hierarchy. The number bands |
 | `youbike.md` | `/bike/*` (scope statements today) | The 2.0 dock decision; the timeline |
 | `maokong-gondola.md` | `/gondola` (scope statement today) | The crystal cabins; the T16 failure; the suspension thresholds |

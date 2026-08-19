@@ -15,7 +15,7 @@ import { getLine } from '@/lib/lines'
  * wrong pages.
  *
  * Screenshot the site before this change and the argument collapses on its
- * own: `/rail/lines/` listed ten lines — the ten things on this site that MOST
+ * own: `/rail/metro/lines/` listed ten lines — the ten things on this site that MOST
  * obviously have a colour, whose colours are the network's own wayfinding
  * system, sampled from government open data and published on their own page —
  * in black text on white, with no badge, no rule, no mark of any kind. The

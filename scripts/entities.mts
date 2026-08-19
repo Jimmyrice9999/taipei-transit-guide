@@ -78,7 +78,7 @@ function main() {
     let total = 0
     const audit: { page: string; links: number; to: string[] }[] = []
     for (const meta of getAllPages()) {
-      const page = await getPage(meta.section, meta.type, meta.slug)
+      const page = await getPage(meta.section, meta.type, meta.slug, meta.system)
       total += page.autoLinks.length
       audit.push({
         page: meta.href,

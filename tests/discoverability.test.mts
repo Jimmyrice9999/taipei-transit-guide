@@ -17,6 +17,7 @@ import path from 'node:path'
 import { getAllPages } from '../lib/content.ts'
 import { getLineStations } from '../lib/stations.ts'
 import { SITE_URL } from '../lib/site.ts'
+import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 const read = (rel: string) => fs.readFileSync(path.join(OUT, rel), 'utf8')
@@ -28,8 +29,13 @@ function allHtml(): string[] {
       if (entry.isDirectory()) return walk(full)
       return entry.name.endsWith('.html') ? [full] : []
     })
-  // out/train holds the /train → /rail redirect stubs, not pages — skipped.
-  return walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
+  /*
+   * Redirect stubs are not pages — see scripts/redirect-stub.mjs. They are
+   * identified by a marker in the file rather than by their path, because
+   * since run 51 they live inside the live trees (/rail/lines/, /gondola/) as
+   * well as under /train.
+   */
+  return walk(OUT).filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
 }
 
 const attr = (html: string, re: RegExp) => html.match(re)?.[1]
@@ -129,8 +135,8 @@ test('canonical URLs are unique', () => {
 })
 
 test('a station canonical points at its own URL', () => {
-  const html = read('rail/stations/br13/index.html')
-  assert.equal(canonicalOf(html), `${SITE_URL}/rail/stations/br13/`)
+  const html = read('rail/metro/stations/br13/index.html')
+  assert.equal(canonicalOf(html), `${SITE_URL}/rail/metro/stations/br13/`)
 })
 
 /* ---- share images ---------------------------------------------------- */
@@ -194,13 +200,13 @@ test('content and station pages get their own share image', () => {
     assert.ok(fs.existsSync(path.join(OUT, rel)), `${page.href} has no share image`)
   }
   for (const station of getLineStations('BR')) {
-    const rel = `rail/stations/${station.code.toLowerCase()}/opengraph-image.png`
+    const rel = `rail/metro/stations/${station.code.toLowerCase()}/opengraph-image.png`
     assert.ok(fs.existsSync(path.join(OUT, rel)), `${station.code} has no share image`)
   }
 })
 
 test('pages declare a large summary card', () => {
-  const html = read('rail/lines/wenhu-line/index.html')
+  const html = read('rail/metro/lines/wenhu-line/index.html')
   assert.match(html, /twitter:card" content="summary_large_image"/)
 })
 
@@ -216,7 +222,7 @@ test('the sitemap lists every page and nothing else', () => {
     assert.ok(locs.includes(`${SITE_URL}${page.href}`), `${page.href} is missing from the sitemap`)
   }
   for (const station of getLineStations('BR')) {
-    const url = `${SITE_URL}/rail/stations/${station.code.toLowerCase()}/`
+    const url = `${SITE_URL}/rail/metro/stations/${station.code.toLowerCase()}/`
     assert.ok(locs.includes(url), `${station.code} is missing from the sitemap`)
   }
   assert.ok(locs.includes(`${SITE_URL}/about/`), '/about/ is missing from the sitemap')
@@ -273,7 +279,7 @@ test('every JSON-LD node declares a context and a type', () => {
 })
 
 test('a station is marked up as a SubwayStation with real coordinates', () => {
-  const nodes = jsonLdIn(read('rail/stations/br10/index.html'))
+  const nodes = jsonLdIn(read('rail/metro/stations/br10/index.html'))
   const station = nodes.find((n) => n['@type'] === 'SubwayStation')
   assert.ok(station, 'no SubwayStation node')
 

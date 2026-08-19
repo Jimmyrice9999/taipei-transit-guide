@@ -15,6 +15,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { isRedirectStub } from './redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 
@@ -38,8 +39,8 @@ if (!fs.existsSync(OUT)) {
   process.exit(2)
 }
 
-// out/train holds the /train → /rail redirect stubs, not pages — skipped.
-const pages = walk(OUT).filter((f) => !path.relative(OUT, f).startsWith('train' + path.sep))
+// Redirect stubs are not pages — see scripts/redirect-stub.mjs.
+const pages = walk(OUT).filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
 
 for (const file of pages) {
   const rel = '/' + path.relative(OUT, file).split(path.sep).join('/').replace(/index\.html$/, '')

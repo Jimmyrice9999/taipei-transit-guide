@@ -49,7 +49,7 @@ console.log('\n1. Keyboard\n')
 {
   const page = await browser.newPage()
   await page.setViewportSize({ width: 1440, height: 900 })
-  await page.goto(base + '/rail/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
 
   // Tab until the first nav toggle has focus. If it is never reachable, that
@@ -74,15 +74,36 @@ console.log('\n1. Keyboard\n')
   ok('Enter opens the panel', expandedBefore === 'false' && afterEnter.expanded === 'true' && afterEnter.panelVisible === true,
      `aria-expanded ${expandedBefore} → ${afterEnter.expanded}, panel visible ${afterEnter.panelVisible}`)
 
-  // Category disclosures inside the open panel must be reachable by Tab.
+  /*
+   * Category disclosures inside the open panel must be reachable by Tab.
+   *
+   * Not "exactly one Tab": run 51 put a system's own direct link ahead of its
+   * type disclosures in the Rail panel, so Rail's first focusable child is the
+   * "Metro →" link and the first summary is two stops in. What the check is
+   * actually for is that a keyboard reaches the disclosures at all and lands on
+   * the first one, so it Tabs until it gets there and fails if it never does.
+   */
   const firstSummaryText = await page.evaluate(() => {
     const panel = document.querySelector('.nav-panel:not([hidden])')
     return panel?.querySelector('summary')?.textContent ?? null
   })
-  await page.keyboard.press('Tab')
-  const focusedSummary = await page.evaluate(() => document.activeElement?.textContent?.trim() ?? '')
-  ok('Tab moves to the first nested category', focusedSummary === firstSummaryText?.trim(),
-     `focus is "${focusedSummary}", panel's first category is "${firstSummaryText?.trim()}"`)
+  let focusedSummary = ''
+  let stops = 0
+  for (let i = 0; i < 8; i++) {
+    await page.keyboard.press('Tab')
+    stops++
+    const here = await page.evaluate(() => ({
+      tag: document.activeElement?.tagName ?? '',
+      text: document.activeElement?.textContent?.trim() ?? '',
+      inPanel: Boolean(document.activeElement?.closest('.nav-panel:not([hidden])')),
+    }))
+    if (here.tag === 'SUMMARY' && here.inPanel) {
+      focusedSummary = here.text
+      break
+    }
+  }
+  ok('Tab reaches the first nested category', focusedSummary === firstSummaryText?.trim(),
+     `focus is "${focusedSummary}" after ${stops} stop(s), panel's first category is "${firstSummaryText?.trim()}"`)
 
   await page.keyboard.press('Enter')
   const nestedAfterEnter = await page.evaluate(() => {
@@ -121,7 +142,7 @@ console.log('\n2. Touch (no hover, no mouse)\n')
 {
   const context = await browser.newContext({ ...devices['Pixel 7'], hasTouch: true })
   const page = await context.newPage()
-  await page.goto(base + '/rail/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
 
   const before = await page.evaluate(() => Boolean(document.querySelector('.nav-panel:not([hidden])')))
@@ -142,7 +163,7 @@ console.log('\n2. Touch (no hover, no mouse)\n')
   // does a mouse click behave differently from a tap?
   const trial = async (label, {open, how}) => {
     const pg = await context.newPage()
-    await pg.goto(base + '/rail/lines/wenhu-line/', { waitUntil: 'load' })
+    await pg.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
     await pg.evaluate(() => document.fonts.ready)
     if (open) await pg.locator('.nav-item').first().locator('button').tap()
     const link = pg.locator('.nav-item').first().locator('a').first()
@@ -174,7 +195,7 @@ console.log('\n3. Hover independence\n')
 {
   const page = await browser.newPage()
   await page.setViewportSize({ width: 1440, height: 900 })
-  await page.goto(base + '/rail/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
   const cssOnly = await page.evaluate(() => {
     // A panel that only opens on :hover would have a CSS rule doing it. If the
     // only mechanism is JS state, there is no such rule.

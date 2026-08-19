@@ -5,7 +5,7 @@
     "sourced": 4766,
     "tbc": 4236,
     "asserted": 32,
-    "meta": 42
+    "meta": 41
   },
   "files": [
     {
@@ -9161,7 +9161,7 @@
       "meta": 0
     },
     {
-      "file": "content/gondola/lines/maokong-gondola.md",
+      "file": "content/rail/cable/lines/maokong-gondola.md",
       "sources": 14,
       "sourced": 52,
       "tbc": 1,
@@ -9169,7 +9169,7 @@
       "meta": 2
     },
     {
-      "file": "content/gondola/lines/_index.md",
+      "file": "content/rail/cable/lines/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -9177,79 +9177,7 @@
       "meta": 0
     },
     {
-      "file": "content/gondola/_index.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/beitou-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 1
-    },
-    {
-      "file": "content/rail/depots/luzhou-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/muzha-depot.md",
-      "sources": 3,
-      "sourced": 14,
-      "tbc": 1,
-      "asserted": 7,
-      "meta": 2
-    },
-    {
-      "file": "content/rail/depots/nangang-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/neihu-depot.md",
-      "sources": 3,
-      "sourced": 15,
-      "tbc": 3,
-      "asserted": 5,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/tucheng-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/xindian-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/xinzhuang-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/depots/_index.md",
+      "file": "content/rail/cable/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -9297,7 +9225,79 @@
       "meta": 0
     },
     {
-      "file": "content/rail/lines/airport-mrt.md",
+      "file": "content/rail/metro/depots/beitou-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/metro/depots/luzhou-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/muzha-depot.md",
+      "sources": 3,
+      "sourced": 14,
+      "tbc": 1,
+      "asserted": 7,
+      "meta": 2
+    },
+    {
+      "file": "content/rail/metro/depots/nangang-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/neihu-depot.md",
+      "sources": 3,
+      "sourced": 15,
+      "tbc": 3,
+      "asserted": 5,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/tucheng-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/xindian-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/xinzhuang-depot.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/depots/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/lines/airport-mrt.md",
       "sources": 18,
       "sourced": 55,
       "tbc": 2,
@@ -9305,7 +9305,7 @@
       "meta": 3
     },
     {
-      "file": "content/rail/lines/ankeng-lrt.md",
+      "file": "content/rail/metro/lines/ankeng-lrt.md",
       "sources": 24,
       "sourced": 55,
       "tbc": 1,
@@ -9313,7 +9313,7 @@
       "meta": 2
     },
     {
-      "file": "content/rail/lines/bannan-line.md",
+      "file": "content/rail/metro/lines/bannan-line.md",
       "sources": 17,
       "sourced": 61,
       "tbc": 4,
@@ -9321,7 +9321,7 @@
       "meta": 1
     },
     {
-      "file": "content/rail/lines/circular-line.md",
+      "file": "content/rail/metro/lines/circular-line.md",
       "sources": 16,
       "sourced": 121,
       "tbc": 4,
@@ -9329,7 +9329,7 @@
       "meta": 3
     },
     {
-      "file": "content/rail/lines/danhai-lrt.md",
+      "file": "content/rail/metro/lines/danhai-lrt.md",
       "sources": 21,
       "sourced": 56,
       "tbc": 0,
@@ -9337,7 +9337,7 @@
       "meta": 3
     },
     {
-      "file": "content/rail/lines/sanying-line.md",
+      "file": "content/rail/metro/lines/sanying-line.md",
       "sources": 9,
       "sourced": 23,
       "tbc": 2,
@@ -9345,7 +9345,7 @@
       "meta": 0
     },
     {
-      "file": "content/rail/lines/songshan-xindian-line.md",
+      "file": "content/rail/metro/lines/songshan-xindian-line.md",
       "sources": 14,
       "sourced": 62,
       "tbc": 1,
@@ -9353,7 +9353,7 @@
       "meta": 1
     },
     {
-      "file": "content/rail/lines/tamsui-xinyi-line.md",
+      "file": "content/rail/metro/lines/tamsui-xinyi-line.md",
       "sources": 8,
       "sourced": 49,
       "tbc": 6,
@@ -9361,7 +9361,7 @@
       "meta": 1
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "sources": 15,
       "sourced": 61,
       "tbc": 0,
@@ -9369,7 +9369,7 @@
       "meta": 7
     },
     {
-      "file": "content/rail/lines/zhonghe-xinlu-line.md",
+      "file": "content/rail/metro/lines/zhonghe-xinlu-line.md",
       "sources": 14,
       "sourced": 61,
       "tbc": 1,
@@ -9377,7 +9377,79 @@
       "meta": 1
     },
     {
-      "file": "content/rail/lines/_index.md",
+      "file": "content/rail/metro/lines/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/c301.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/c321.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/c341.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/c371.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/c381.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
+      "sources": 11,
+      "sourced": 35,
+      "tbc": 2,
+      "asserted": 8,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/val256.md",
+      "sources": 11,
+      "sourced": 33,
+      "tbc": 2,
+      "asserted": 7,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/rolling-stock/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/metro/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -9417,71 +9489,7 @@
       "meta": 0
     },
     {
-      "file": "content/rail/rolling-stock/c301.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 1
-    },
-    {
-      "file": "content/rail/rolling-stock/c321.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/rolling-stock/c341.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 1
-    },
-    {
-      "file": "content/rail/rolling-stock/c371.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 1,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/rolling-stock/c381.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
-      "sources": 11,
-      "sourced": 35,
-      "tbc": 2,
-      "asserted": 8,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/rolling-stock/val256.md",
-      "sources": 11,
-      "sourced": 33,
-      "tbc": 2,
-      "asserted": 7,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/rolling-stock/_index.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
-      "asserted": 0,
-      "meta": 0
-    },
-    {
-      "file": "content/rail/systems/station-numbering.md",
+      "file": "content/rail/technology/station-numbering.md",
       "sources": 2,
       "sourced": 14,
       "tbc": 0,
@@ -9489,7 +9497,7 @@
       "meta": 1
     },
     {
-      "file": "content/rail/systems/_index.md",
+      "file": "content/rail/technology/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -9502,7 +9510,7 @@
       "sourced": 0,
       "tbc": 0,
       "asserted": 0,
-      "meta": 1
+      "meta": 0
     },
     {
       "file": "content/ticketing/guides/cards-passes-and-fares.md",
@@ -9531,37 +9539,37 @@
   ],
   "asserted": [
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "facts: Chinese name",
       "text": "木柵機廠"
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "facts: Operator",
       "text": "Taipei Rapid Transit Corporation"
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "facts: Line",
       "text": "Wenhu"
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "facts: Connects at",
       "text": "BR01"
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "facts: District",
       "text": "Wenshan"
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "prose",
       "text": "When the Muzha Line opened in 1996 there was nowhere else — no other depot, no other line, no other fleet. 木柵機廠 was the whole of the system'",
@@ -9572,7 +9580,7 @@
       ]
     },
     {
-      "file": "content/rail/depots/muzha-depot.md",
+      "file": "content/rail/metro/depots/muzha-depot.md",
       "state": "asserted",
       "where": "prose",
       "text": "Eighty-four pairs is a striking number against a line whose entire fleet is 152 pairs, and it rests on one source.",
@@ -9581,31 +9589,31 @@
       ]
     },
     {
-      "file": "content/rail/depots/neihu-depot.md",
+      "file": "content/rail/metro/depots/neihu-depot.md",
       "state": "asserted",
       "where": "facts: Chinese name",
       "text": "內湖機廠"
     },
     {
-      "file": "content/rail/depots/neihu-depot.md",
+      "file": "content/rail/metro/depots/neihu-depot.md",
       "state": "asserted",
       "where": "facts: Operator",
       "text": "Taipei Rapid Transit Corporation"
     },
     {
-      "file": "content/rail/depots/neihu-depot.md",
+      "file": "content/rail/metro/depots/neihu-depot.md",
       "state": "asserted",
       "where": "facts: Line",
       "text": "Wenhu"
     },
     {
-      "file": "content/rail/depots/neihu-depot.md",
+      "file": "content/rail/metro/depots/neihu-depot.md",
       "state": "asserted",
       "where": "facts: Fleet based",
       "text": "Innovia APM 256"
     },
     {
-      "file": "content/rail/depots/neihu-depot.md",
+      "file": "content/rail/metro/depots/neihu-depot.md",
       "state": "asserted",
       "where": "prose",
       "text": "The park-and-ride car park on the site is — it is the only part of the depot a member of the public can reach.",
@@ -9614,31 +9622,31 @@
       ]
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Line code",
       "text": "BR"
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Operator",
       "text": "Taipei Rapid Transit Corporation"
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Termini",
       "text": "BR01 — BR24"
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "state": "asserted",
       "where": "facts: Depots",
       "text": "Muzha, Neihu"
     },
     {
-      "file": "content/rail/lines/wenhu-line.md",
+      "file": "content/rail/metro/lines/wenhu-line.md",
       "state": "asserted",
       "where": "prose",
       "text": "Station names, codes, running order, coordinates and the end-to-end journey time come from **Taiwan MOTC's TDX platform**, operator TRTC — g",
@@ -9648,19 +9656,19 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "facts: Operator",
       "text": "Taipei Rapid Transit Corporation"
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "facts: Line",
       "text": "Wenhu"
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "The is the same 2.56 m the VAL256 carries, but on this vehicle it names the guideway rather than the car.",
@@ -9670,7 +9678,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "What the two fleets genuinely share is the interface: the same running-surface spacing, the same side guide beams, the same 750 V taken off ",
@@ -9681,7 +9689,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "| Jan 2021 | Alstom acquires Bombardier Transportation; CITYFLO becomes an Alstom product |",
@@ -9691,7 +9699,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "Compared with the original [VAL256] fleet the C370 introduced a revised body shell and interior — blue inward-facing seating in place of the",
@@ -9700,7 +9708,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "Both work off the same 750 V supply on the same guideway.",
@@ -9710,7 +9718,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/innovia-apm-256-c370.md",
+      "file": "content/rail/metro/rolling-stock/innovia-apm-256-c370.md",
       "state": "asserted",
       "where": "prose",
       "text": "The numbering starts at 101 for a reason.",
@@ -9719,25 +9727,25 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "facts: Family",
       "text": "VAL"
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "facts: Operator",
       "text": "Taipei Rapid Transit Corporation"
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "facts: Line",
       "text": "Wenhu"
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
       "text": "A train delivered in the early 1990s is still running the line, and almost nothing tells it what to do any more.",
@@ -9746,7 +9754,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
       "text": "So for nearly eighteen months the whole 24-station line ran on the Bombardier fleet alone, while the trains that had opened the railway sat ",
@@ -9755,7 +9763,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
       "text": "Ordered for the Muzha Line and in service from its opening on 28 March 1996, originally working BR01 through BR12 only.",
@@ -9766,7 +9774,7 @@
       ]
     },
     {
-      "file": "content/rail/rolling-stock/val256.md",
+      "file": "content/rail/metro/rolling-stock/val256.md",
       "state": "asserted",
       "where": "prose",
       "text": "Since December 2010 the fleet has run the full route alongside the [Innovia APM 256 (C370)].",

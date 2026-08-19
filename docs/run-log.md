@@ -11873,3 +11873,167 @@ exemption had been hiding a line identified by colour alone.
 the new `tests/navigation.test.mts`), `npm run nav` 19/19 with seven new checks.
 Font subsets regenerated: 蒼 became newly reachable through the C341 credit.
 `probes/` remains untracked and unstaged.
+
+# Run 51 — Part 2, section naming for future scope, 19 August 2026
+
+## The problem, stated precisely
+
+`/rail/` meant the metro network and nothing else. Its types — Lines, Rolling
+Stock, Depots, Stations — were the metro's. TRA and high speed rail are also
+rail, and adding them to that shape breaks in three separate places:
+
+1. **A flat index stops being a browse.** `/rail/lines/` listing the Wenhu Line
+   beside 縱貫線 and the HSR is the same failure `docs/bus-architecture.md` was
+   written to avoid one section over, at 1,051 routes.
+2. **Station identifiers collide outright.** Metro stations are addressed by
+   code — `/rail/stations/br13/`. TRA and THSR publish their own numeric station
+   codes, which are not disjoint from each other. There is no way to put them in
+   one namespace without inventing a disambiguator.
+3. **The section blurb was already false.** It said "everything on rails", above
+   a section that also held nothing but the metro.
+
+## The scheme
+
+**Three levels for a section with one network; four for a section with several.**
+
+```
+/<section>/<type>/<slug>/                 bike, ferry, ticketing, bus articles
+/<section>/<system>/<type>/<slug>/        rail
+```
+
+A **system** is a network with its own stations, its own numbering and its own
+fleet. It declares itself with `kind: system` in its own `_index.md`, so adding
+one is adding a folder — there is no list in the code to keep in step.
+
+```
+/rail/                      the family index, and the network map
+/rail/metro/                the 捷運 network
+/rail/metro/lines/…         /rail/metro/stations/…
+/rail/metro/rolling-stock/… /rail/metro/depots/…
+/rail/cable/                the Maokong Gondola
+/rail/cable/lines/maokong-gondola/
+/rail/operators/…  /rail/history/…  /rail/technology/…
+```
+
+**Types that cut across systems stay at the section level.** One company runs
+metro and light rail; one dispute shaped several lines; the numbering essay is
+about the network, not about one railway. Operators, History and Technology are
+therefore not copied into each system. That is the rule, and it is what stops
+the fourth level from being applied where it would only add a segment.
+
+`systems` as a page type was renamed **Technology**, because "system" now names
+the level above it and one word cannot mean both.
+
+### Why these systems and no others
+
+The boundary is the one the fare system draws and the one a rider experiences:
+the 捷運 network is one railway to a passenger — one stored-value card, one
+interchange network, one station-numbering scheme, one map — regardless of
+which of three companies runs a given line. TRA and high speed rail are outside
+it because they are separate networks with separate ticketing and separate
+stations, not because they are a different kind of train.
+
+Deliberately **not** split by technology. A metro/light-rail split would have
+forced a classification call on every line, and the Sanying Line is exactly the
+case where the site does not have a source for one — `lib/line-character.ts`
+already records that its running gear is the weakest claim in the file. A
+hierarchy that manufactures a claim to decide where a page lives is a hierarchy
+this project should not have. Every line moved wholesale into `metro`; not one
+was reclassified.
+
+### Where the gondola went, and why the heading changed
+
+`/gondola/` was a top-level section holding one line. It is now the `cable`
+system under Rail.
+
+The heading is **"Rail & cable"**, not "Rail". The Maokong Gondola is an aerial
+ropeway — a POMA installation run by 北捷遊憩事業股份有限公司, per the page's own
+sourced Operator fact — and filing a ropeway under a heading that says "Rail"
+would be a small false claim in the furniture, which is the exact class of error
+this run-log keeps recording. What it shares with the rest of the section is the
+property the section is now organised by: a fixed guideway, published stations,
+a published order, and the region's stored-value ticketing. The URL slug stays
+`/rail/` because URLs are worth more stable than tidy.
+
+The alternatives were considered and rejected: `/bus/`, `/bike/` and `/ferry/`
+are worse fits on every axis; a `/cable/` section of its own repeats the
+one-line-section problem being fixed; and leaving it top-level is the complaint.
+
+## What moved
+
+| Old | New |
+| --- | --- |
+| `/rail/lines/…` | `/rail/metro/lines/…` |
+| `/rail/rolling-stock/…` | `/rail/metro/rolling-stock/…` |
+| `/rail/depots/…` | `/rail/metro/depots/…` |
+| `/rail/stations/…` (194 pages) | `/rail/metro/stations/…` |
+| `/rail/systems/…` | `/rail/technology/…` |
+| `/gondola/` | `/rail/cable/` |
+| `/gondola/lines/…` | `/rail/cable/lines/…` |
+
+New pages: `/rail/metro/` and `/rail/cable/`.
+
+## Redirects
+
+`scripts/moves.mjs` is now the single table of every prefix the site has ever
+moved, shared by the generator in `postbuild` and by the test that checks it.
+464 stubs are written from what the build actually exported at the new prefix,
+so a page added later gets its redirect for free and a page removed stops
+redirecting.
+
+Two properties are load-bearing:
+
+- **Run 5's `/train` → `/rail` rule is composed with run 51's, not chained.**
+  `/train/lines/wenhu-line/` points straight at `/rail/metro/lines/wenhu-line/`.
+  A redirect that redirects is one readers give up on and a crawler counts as a
+  soft 404. `tests/build-output.test.mts` asserts every stub's target is a real
+  page, which is what makes the property checkable rather than intended.
+- **One stub per (old tree, destination).** Rules are grouped by the tree the
+  old URL lived in and the longest matching new prefix wins, so the general
+  `/train/` rule does not also invent `/train/metro/lines/wenhu-line/` — a URL
+  that never existed.
+
+Verified by hand as well as by test: `/rail/lines/wenhu-line/`,
+`/rail/stations/br13/`, `/rail/systems/station-numbering/`, `/gondola/`,
+`/gondola/lines/maokong-gondola/`, `/train/lines/wenhu-line/`,
+`/train/stations/br13/` and `/train/history/matra-dispute/` all resolve in one
+hop to their current homes.
+
+## What the restructure broke, and what that revealed
+
+Six separate audits identified redirect stubs by path — `startsWith('train')` —
+and all six failed at once when stubs started appearing inside the live trees.
+That is the useful version of the bug. Stubs now carry a marker in the file and
+`scripts/redirect-stub.mjs` is the one definition of "not a page", used by the
+accessibility audit, the link checker, the link audit, the image weigher and
+three test files.
+
+Two more counts that were typed are now derived: `tests/build-output.test.mts`
+counted sections and type indexes with hand-maintained constants, all of which
+had to change together — they are read from the same functions the routes
+generate from. And `app/sitemap.ts` walked section → type only, so both system
+pages and all six system-scoped type indexes were absent from the sitemap; it
+now walks the systems too (316 → 322 URLs).
+
+`components/EntityPage.tsx` and `components/TypeIndex.tsx` were extracted from
+the route files so that the two route shapes render the same layout rather than
+two copies of it, and `lib/og-content.tsx` does the same for the share images.
+
+## What did not change
+
+No factual claim about the railway was added, removed or altered. The unsourced
+assertion count is **32, exactly the committed baseline** — the section index
+prose was rewritten twice to keep it there, because the claim classifier flags
+"every", "only" and "first" and the first draft of `content/rail/_index.md` took
+the count to 37. `docs/claims-baseline.json` was not touched. Historical run-log
+entries were left with the URLs they were written with; the research corpus's
+links were updated so they resolve.
+
+## Gates
+
+`npm run cite` clean, `npm run verify` green (no broken links, no orphans, axe
+clean), `npm run test:unit` 195/195, `npm run nav` 19/19, `git diff --check`
+clean. One nav check was corrected rather than relaxed: it asserted the first
+Tab into an open panel lands on the first disclosure, and a system's own link
+now precedes them, so it Tabs until it reaches a disclosure and fails if it
+never does.

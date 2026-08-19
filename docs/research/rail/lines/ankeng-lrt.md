@@ -12,7 +12,7 @@ no per-claim citation, no primary/secondary marking, no confidence — and is
 preserved in git history. This file replaces it as the working research
 record. Differences from it are logged under "Where the lead file was wrong"
 below.** This file mirrors the content page at
-`content/rail/lines/ankeng-lrt.md`.
+`content/rail/metro/lines/ankeng-lrt.md`.
 
 ---
 
@@ -98,7 +98,7 @@ below.** This file mirrors the content page at
   全長7.67公里」** — starting at Ankeng Depot itself, not at K01. That is the
   same distinction this site's Wenhu Line page already draws between an
   operating length (station to station) and a total project/alignment length
-  (depot lead included) — see `content/rail/lines/wenhu-line.md`, "How long
+  (depot lead included) — see `content/rail/metro/lines/wenhu-line.md`, "How long
   the line is". No single source states the arithmetic explicitly, but the
   three figures are consistent with that reading: 7.5 km NTMC/TDX operating
   length (K01–K09, or possibly depot to K09 — see Conflicts), 7.1 km TDX

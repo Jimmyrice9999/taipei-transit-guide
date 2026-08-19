@@ -218,7 +218,7 @@ export default function NetworkPage() {
             landmark register&rsquo;s own coordinates: it states where the stations are
             and what sequence they run in, and states nothing about the route between
             them. The line is written up from the operator&rsquo;s own announcement on
-            its <Link href="/rail/lines/sanying-line/">line page</Link>.{' '}
+            its <Link href="/rail/metro/lines/sanying-line/">line page</Link>.{' '}
             {/*
               Run 12. The line was previously missing from the table as well as
               the map, which was not a decision — the table filtered on "has

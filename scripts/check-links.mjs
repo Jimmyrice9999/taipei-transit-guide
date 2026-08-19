@@ -17,6 +17,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import { isRedirectStub } from './redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
 const BASE_PATH = (process.env.NEXT_PUBLIC_BASE_PATH || '').replace(/\/+$/, '')
@@ -174,7 +175,14 @@ for (const file of htmlFiles) {
 
 /* Orphans: a built page nothing links to. --------------------------- */
 
+/*
+ * Redirect stubs are not pages and must not be counted as orphans. They exist
+ * precisely so that a URL nothing links to any more still resolves — see
+ * scripts/redirect-stub.mjs. Before run 51 they all lived under /train, which
+ * the walk skipped by path; now they sit inside the live trees as well.
+ */
 const pageUrls = htmlFiles
+  .filter((f) => !isRedirectStub(fs.readFileSync(f, 'utf8')))
   .map((f) => '/' + path.relative(OUT, f).split(path.sep).join('/'))
   .filter((r) => r.endsWith('/index.html'))
   .map((r) => r.slice(0, -'index.html'.length))

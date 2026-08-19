@@ -61,7 +61,7 @@ colour-prefixed MRT feeder classes — 捷運紅線接駁公車, 捷運藍線接
 (light-rail feeder) class for the Danhai and Ankeng LRT; no 捷運黃線接駁公車
 category exists. The reason: the five colour classes cover TRTC's five lines
 only. The Circular Line (`line: Y`, alias "Yellow Line" — see
-`content/rail/lines/circular-line.md`) is operated by New Taipei Metro
+`content/rail/metro/lines/circular-line.md`) is operated by New Taipei Metro
 (NTMC), not TRTC, so it falls outside eBus's TRTC-feeder colour scheme
 entirely. A named, unbadged "環狀線免費接駁公車" shuttle is attested in
 secondary sources (news roundups, a Wikiversity route page) as a joint-

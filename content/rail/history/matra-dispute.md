@@ -388,7 +388,7 @@ For the cost of the other road, 黃令名 points at Jacksonville, Florida — a
 city that faced a comparable dead end with its own Matra system and resolved
 it by demolition, rebuilding with a Bombardier monorail[^huang-2021]. Taipei's
 choice to keep the French railway alive without the French is the road that
-led, eventually, to this site's [Wenhu Line](/rail/lines/wenhu-line/) page
+led, eventually, to this site's [Wenhu Line](/rail/metro/lines/wenhu-line/) page
 describing one seamless operation.
 
 ## The political ledger
@@ -445,11 +445,11 @@ actually bought.
 
 What was bought was Bombardier. And here the engineering gets genuinely
 elegant, because Bombardier could not supply a VAL — VAL belonged to a
-competitor. So it built the [Innovia APM 256](/rail/rolling-stock/innovia-apm-256-c370/):
+competitor. So it built the [Innovia APM 256](/rail/metro/rolling-stock/innovia-apm-256-c370/):
 a people mover dimensioned to a French railway it had no rights to, matching
 the running-surface spacing, the side guide bars and the 750 V supply taken
 off them, with a car body 20 mm narrower than the
-[VAL256](/rail/rolling-stock/val256/) it would run beside[^zh-innovia]. The
+[VAL256](/rail/metro/rolling-stock/val256/) it would run beside[^zh-innovia]. The
 incumbent's guideway became the tender's interface specification.
 
 The last act was the cutover. Rather than run two signalling systems, the

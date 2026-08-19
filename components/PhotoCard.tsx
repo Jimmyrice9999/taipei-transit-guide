@@ -15,8 +15,8 @@ import { srcCapped, srcsetCapped, type SiteImage } from '@/lib/images'
 const CARD_IMAGE_MAX_WIDTH = 240
 
 /**
- * One card in a photographed index grid — /rail/rolling-stock/, /rail/depots/,
- * /rail/stations/.
+ * One card in a photographed index grid — /rail/metro/rolling-stock/, /rail/metro/depots/,
+ * /rail/metro/stations/.
  *
  * ─────────────────────────────────────────────────────────────────────────────
  * THE NO-PHOTO CASE

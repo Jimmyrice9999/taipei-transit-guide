@@ -64,7 +64,7 @@ export function stationSchema(station: Station, line: Line, position: number, to
     '@type': 'SubwayStation',
     name: station.name,
     identifier: station.code,
-    url: absoluteUrl(`/rail/stations/${station.code.toLowerCase()}/`),
+    url: absoluteUrl(`/rail/metro/stations/${station.code.toLowerCase()}/`),
     description: `Stop ${position} of ${total} on Taipei Metro's ${line.name} Line.`,
     publicAccess: true,
   }

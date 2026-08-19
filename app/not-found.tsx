@@ -5,7 +5,7 @@
  * not be found" with no header, no navigation, no <main> landmark and no route
  * back into the site. On a reference site that is the worst page to strand
  * someone on, because a 404 here usually means a guessed URL — someone typing
- * /rail/stations/br25/ or /rail/lines/bannan-line/ — and those people know
+ * /rail/metro/stations/br25/ or /rail/metro/lines/bannan-line/ — and those people know
  * exactly what they were looking for.
  *
  * So this offers the specific things they were most likely reaching for rather
@@ -43,7 +43,7 @@ export default function NotFound() {
         <h2 className="section-heading">If you were after a station</h2>
         <p>
           Only the Wenhu Line has a page per station — {stationCount} of them, at{' '}
-          <code>/rail/stations/br01/</code> through <code>/rail/stations/br24/</code>.
+          <code>/rail/metro/stations/br01/</code> through <code>/rail/metro/stations/br24/</code>.
           Every other station on the network is in the data but has no page written about
           it yet, because linking to a page that does not exist would be worse than not
           linking at all.
@@ -61,7 +61,7 @@ export default function NotFound() {
 
         <h2 className="section-heading">If you were after a line</h2>
         <p>
-          <Link href="/rail/lines/wenhu-line/">The Wenhu Line</Link> is the only line
+          <Link href="/rail/metro/lines/wenhu-line/">The Wenhu Line</Link> is the only line
           written up so far. <Link href="/rail/network/">The network page</Link> covers all
           {' '}{LINES.length} with official colours, termini, lengths and interchanges.
         </p>

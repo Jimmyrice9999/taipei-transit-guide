@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
-import { getPages, getSections, getTypes } from '@/lib/content'
+import { getPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getImage, src as imageSrc } from '@/lib/images'
 
 // Stated rather than inherited, so the home page's canonical is deliberate and
@@ -90,14 +90,23 @@ export default function HomePage() {
             </h2>
             {section.description && <p className="section-desc">{section.description}</p>}
             <ul className="card-list">
-              {section.slug === 'rail' && (
-                <li>
-                  <Link href="/rail/stations/">
+              {/*
+                A section's systems come before its types, and are the branch a
+                reader actually wants: "the metro", not "lines". This replaced a
+                hard-coded Rail card pointing at the station index — which was
+                the same instinct, written before there was a level to put it
+                on, and which went stale the moment the station index moved.
+              */}
+              {getSystems(section.slug).map((system) => (
+                <li key={system.slug}>
+                  <Link href={system.href}>
                     <span className="card-body">
-                      <span className="card-title">Stations</span>
-                      <span className="card-desc">
-                        Browse every station page, grouped by line.
-                      </span>
+                      <span className="card-title">{system.title}</span>
+                      {system.description && (
+                        <span className="card-desc">
+                          <RichText>{system.description}</RichText>
+                        </span>
+                      )}
                     </span>
                     <span className="card-meta">
                       <span className="card-arrow" aria-hidden="true">
@@ -106,7 +115,7 @@ export default function HomePage() {
                     </span>
                   </Link>
                 </li>
-              )}
+              ))}
               {types.map((type) => {
                 const count = getPages(section.slug, type.slug).length
                 return (

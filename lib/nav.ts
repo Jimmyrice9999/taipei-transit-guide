@@ -1,4 +1,4 @@
-import { getFolder, getPages, getSections, getTypes } from '@/lib/content'
+import { getFolder, getPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { STATIONS } from '@/lib/stations'
 import { LINES } from '@/lib/lines'
 import { getBuiltBusRouteGroups } from '@/lib/bus/route-groups'
@@ -114,45 +114,75 @@ export function getNavTree(): NavSection[] {
       }
     }
 
-    const groups: NavGroup[] = getTypes(section.slug)
-      .map((type) => {
-        const pages = getPages(section.slug, type.slug)
-        const ordered =
-          type.slug === 'lines'
-            ? [...pages].sort(
-                (a, b) => (lineRank.get(a.line) ?? 99) - (lineRank.get(b.line) ?? 99),
-              )
-            : pages
-        return {
-          href: type.href,
-          title: type.title,
-          links: ordered.slice(0, CAP).map((page) => {
-            const line = LINES.find((l) => l.code === page.line)
-            return {
-              href: page.href,
-              title: page.title,
-              /*
-               * Only on the Lines group. A fleet or a depot has a line too,
-               * but a badge beside "Muzha Depot" in a menu says "brown" about
-               * something whose name is already unambiguous, and ten badges
-               * down a fleet column would be colour for its own sake — which
-               * is the thing this site's rules actually forbid.
-               */
-              ...(type.slug === 'lines' && line
-                ? { badge: { code: line.code, bg: line.badgeBg, fg: line.badgeFg } }
-                : {}),
-            }
-          }),
-          truncated: pages.length > CAP,
-        }
-      })
+    const systems = getSystems(section.slug)
+
+    /*
+     * A type inside a system carries the system's name in the menu when the
+     * section has more than one — "Metro lines" and, when Taiwan Railway
+     * arrives, "TRA lines". With one system the prefix would be noise, so it
+     * is not applied. Computed rather than typed, so the menu cannot end up
+     * with two groups both called "Lines".
+     */
+    const label = (systemTitle: string, typeTitle: string) =>
+      systems.length > 1 ? `${systemTitle} ${typeTitle.toLowerCase()}` : typeTitle
+
+    const typeGroup = (
+      type: { slug: string; href: string; title: string },
+      system: string,
+      systemTitle: string,
+    ): NavGroup => {
+      const pages = getPages(section.slug, type.slug, system)
+      const ordered =
+        type.slug === 'lines'
+          ? [...pages].sort((a, b) => (lineRank.get(a.line) ?? 99) - (lineRank.get(b.line) ?? 99))
+          : pages
+      return {
+        href: type.href,
+        title: system ? label(systemTitle, type.title) : type.title,
+        links: ordered.slice(0, CAP).map((page) => {
+          const line = LINES.find((l) => l.code === page.line)
+          return {
+            href: page.href,
+            title: page.title,
+            /*
+             * Only on the Lines group. A fleet or a depot has a line too,
+             * but a badge beside "Muzha Depot" in a menu says "brown" about
+             * something whose name is already unambiguous, and ten badges
+             * down a fleet column would be colour for its own sake — which
+             * is the thing this site's rules actually forbid.
+             */
+            ...(type.slug === 'lines' && line
+              ? { badge: { code: line.code, bg: line.badgeBg, fg: line.badgeFg } }
+              : {}),
+          }
+        }),
+        truncated: pages.length > CAP,
+      }
+    }
+
+    const groups: NavGroup[] = [
+      /*
+       * Each system gets a direct link of its own before its types. A system
+       * page is a real destination — the top of one railway — and without this
+       * the only way into it from the bar would be to open a type index and
+       * come back up.
+       */
+      ...systems.flatMap((system) => [
+        { href: system.href, title: system.title, links: [], truncated: false, large: true },
+        ...getTypes(section.slug, system.slug).map((type) =>
+          typeGroup(type, system.slug, system.title),
+        ),
+      ]),
+      ...getTypes(section.slug).map((type) => typeGroup(type, '', '')),
+    ]
       /*
        * A type folder with no pages does not go in the menu. Run 10's brief:
        * a nav item leading to "0 pages" advertises absence. The folder still
        * exists and its index still renders for anyone holding the URL — it is
-       * removed from the menu, not from the site.
+       * removed from the menu, not from the site. A system's own direct link
+       * is `large` and keeps its place regardless.
        */
-      .filter((group) => group.links.length > 0)
+      .filter((group) => group.large || group.links.length > 0)
 
     return { href: section.href, title: section.title, groups }
   })
@@ -174,9 +204,18 @@ export function getNavTree(): NavSection[] {
        * index does the rest.
        */
       const STATION_CAP = 6
-      rail.groups.push({
-        href: '/rail/stations/',
-        title: 'Stations',
+      /*
+       * Placed with the rest of the metro's types rather than appended after
+       * everything, so the panel reads down the hierarchy: the system, then
+       * what belongs to it, then the section-level groups. Found by position
+       * rather than by index so it stays right if the metro gains a type.
+       */
+      const afterMetro = rail.groups.findLastIndex((group) =>
+        group.href.startsWith('/rail/metro/'),
+      )
+      rail.groups.splice(afterMetro + 1, 0, {
+        href: '/rail/metro/stations/',
+        title: 'Metro stations',
         links: [],
         truncated: withPages.length > STATION_CAP,
         large: true,

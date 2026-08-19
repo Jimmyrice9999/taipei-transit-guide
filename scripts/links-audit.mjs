@@ -21,6 +21,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { isRedirectStub } from './redirect-stub.mjs'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = path.join(ROOT, 'out')
@@ -38,10 +39,12 @@ function pages() {
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name)
-      // The /train → /rail redirect stubs are meta-refresh shims, not pages.
-      if (entry.isDirectory() && dir === OUT && entry.name === 'train') continue
       if (entry.isDirectory()) walk(full)
-      else if (entry.name === 'index.html') found.push(full)
+      // Redirect stubs are meta-refresh shims, not pages — they carry no links
+      // of their own and must not be crawled as if they did. See
+      // scripts/redirect-stub.mjs for why the marker is in the file.
+      else if (entry.name === 'index.html' && !isRedirectStub(fs.readFileSync(full, 'utf8')))
+        found.push(full)
     }
   }
   walk(OUT)

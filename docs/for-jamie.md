@@ -9,5 +9,10 @@ The nav panel now overlays at every width (the bar went 125px → 603px below 78
 The session trail is a stack, so the site's Back control no longer walks forward; `npm run nav` walks the reported sequence in a real browser.
 The Sanying Line is drawn dashed as a chain of its published station points — the page used to say "not drawn" above twelve Sanying dots.
 Gates: cite clean, verify green, test:unit 195/195, nav 19/19, research clean.
+Part 2 gave the Rail section a system level: /rail/metro/lines/wenhu-line/, /rail/metro/stations/br13/, /rail/technology/station-numbering/.
+A system declares itself with `kind: system` in its _index.md, so adding TRA or HSR is adding a folder; operators, history and technology stay at the section level because they cut across systems.
+The Maokong Gondola left its own top-level section and is now the `cable` system; the heading is "Rail & cable" because filing a ropeway under "Rail" would be a false claim in the furniture.
+464 redirect stubs cover every moved URL, with run 5's /train rule composed with run 51's so nothing chains; scripts/moves.mjs is the one table and the test walks it.
+Unsourced assertions stayed at 32, the committed baseline; claims-baseline.json was not touched.
 Do not poll Actions.
 Do not stage the pre-existing untracked `probes/` directory.

@@ -17,7 +17,7 @@ await new Promise((r) => server.listen(0, '127.0.0.1', r))
 const base = `http://127.0.0.1:${server.address().port}`
 const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 794, height: 1123 } })
-for (const [name, url] of [['line-wenhu', '/rail/lines/wenhu-line/'], ['station-br13', '/rail/stations/br13/']]) {
+for (const [name, url] of [['line-wenhu', '/rail/metro/lines/wenhu-line/'], ['station-br13', '/rail/metro/stations/br13/']]) {
   await page.goto(base + url, { waitUntil: 'load' })
   await page.emulateMedia({ media: 'print' })
   await page.screenshot({ path: `docs/print/_${name}-printmedia.png`, fullPage: true })

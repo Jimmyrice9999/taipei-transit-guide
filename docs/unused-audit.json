@@ -1,5 +1,5 @@
 {
-  "exports": 281,
+  "exports": 294,
   "cssClasses": 321,
   "imageSidecars": 70,
   "unusedExports": [
@@ -22,6 +22,11 @@
       "name": "MapLine",
       "file": "components/RouteMap.tsx",
       "line": 21
+    },
+    {
+      "name": "TypeRef",
+      "file": "components/TypeIndex.tsx",
+      "line": 26
     },
     {
       "name": "NewTaipeiRouteSubgroup",
@@ -121,17 +126,17 @@
     {
       "name": "Hero",
       "file": "lib/content.ts",
-      "line": 185
+      "line": 217
     },
     {
       "name": "Profile",
       "file": "lib/content.ts",
-      "line": 219
+      "line": 251
     },
     {
       "name": "getFolderBody",
       "file": "lib/content.ts",
-      "line": 534
+      "line": 567
     },
     {
       "name": "rgbToLab",

@@ -158,7 +158,7 @@ const ok = (label) => checks.push(label)
 /* ------------------------------------------------------------------ */
 
 {
-  const source = fs.readFileSync(path.join(CONTENT, 'rail/lines/wenhu-line.md'), 'utf8')
+  const source = fs.readFileSync(path.join(CONTENT, 'rail/metro/lines/wenhu-line.md'), 'utf8')
 
   /*
    * ── Harness bug, found by this run's own edits ─────────────────────────────
@@ -345,7 +345,7 @@ const ok = (label) => checks.push(label)
 {
   let mismatches = 0
   for (const station of data.br) {
-    const html = visible(read(`rail/stations/${station.code.toLowerCase()}/index.html`) ?? '')
+    const html = visible(read(`rail/metro/stations/${station.code.toLowerCase()}/index.html`) ?? '')
     if (!html) {
       fail(station.code, 'station page missing')
       mismatches++
@@ -391,7 +391,7 @@ const ok = (label) => checks.push(label)
 /* ------------------------------------------------------------------ */
 
 {
-  const html = visible(read('rail/lines/wenhu-line/index.html') ?? '')
+  const html = visible(read('rail/metro/lines/wenhu-line/index.html') ?? '')
   const spineOrder = [...html.matchAll(/data-station="([^"]+)"/g)].map((m) => m[1])
   const expected = data.br.map((s) => s.code)
 
@@ -411,7 +411,7 @@ const ok = (label) => checks.push(label)
   let checked = 0
   for (const leg of data.runTimes) {
     if (leg.sec == null) continue
-    const html = visible(read(`rail/stations/${leg.from.toLowerCase()}/index.html`) ?? '')
+    const html = visible(read(`rail/metro/stations/${leg.from.toLowerCase()}/index.html`) ?? '')
     if (!html) continue
     const expected = `${Math.round(leg.sec / 60)} min`
     const alt = `${leg.sec} sec`
@@ -628,8 +628,8 @@ const ok = (label) => checks.push(label)
 
   for (const summary of offPlatform) {
     const file = fs
-      .readdirSync(path.join(CONTENT, 'rail', 'lines'))
-      .map((name) => path.join(CONTENT, 'rail', 'lines', name))
+      .readdirSync(path.join(CONTENT, 'rail', 'metro', 'lines'))
+      .map((name) => path.join(CONTENT, 'rail', 'metro', 'lines', name))
       .find((full) => {
         const fm = matter(fs.readFileSync(full, 'utf8')).data
         return (fm.line ?? '').toUpperCase() === summary.code

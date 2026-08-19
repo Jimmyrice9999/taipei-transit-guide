@@ -727,7 +727,7 @@ const DORTS_WENHU_JIANNAN_LANDSCAPE: Source = {
  * engineering BR1. The Neihu stations use a separate B1–B11 series.
  *
  * Transcribed verbatim from that table, all 24 rows, and it is the reason
- * /rail/systems/station-numbering/ exists. Exits come from the same table.
+ * /rail/technology/station-numbering/ exists. Exits come from the same table.
  * ─────────────────────────────────────────────────────────────────────────────
  */
 export const STATION_OVERLAY: Record<string, StationOverlay> = {

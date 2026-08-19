@@ -1,7 +1,7 @@
 /**
  * Adds a small "card" WebP variant (240px) to existing images, for the
- * photographed-card grids at /rail/rolling-stock/, /rail/depots/ and
- * /rail/stations/.
+ * photographed-card grids at /rail/metro/rolling-stock/, /rail/metro/depots/ and
+ * /rail/metro/stations/.
  *
  * Run:  node scripts/make-card-thumbs.mjs <id> [<id> ...]
  *   e.g. node scripts/make-card-thumbs.mjs c301/hero stations/br01

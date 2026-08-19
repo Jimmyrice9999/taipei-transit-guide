@@ -249,4 +249,4 @@ the fetched DORTS pages name only examples. The exact station, date and vehicle 
 1993 Wenhu testing incident remain TBC, as do the formal investigations behind
 the incoming lead-only events whose full primary pages could not be fetched.
 
-See also: [Wenhu Line](/rail/lines/wenhu-line/), [Songshan–Xindian Line](/rail/lines/songshan-xindian-line/), [Tamsui–Xinyi Line](/rail/lines/tamsui-xinyi-line/), [Bannan Line](/rail/lines/bannan-line/), [Zhonghe–Xinlu Line](/rail/lines/zhonghe-xinlu-line/), [Circular Line](/rail/lines/circular-line/), and [Ankeng LRT](/rail/lines/ankeng-lrt/).
+See also: [Wenhu Line](/rail/metro/lines/wenhu-line/), [Songshan–Xindian Line](/rail/metro/lines/songshan-xindian-line/), [Tamsui–Xinyi Line](/rail/metro/lines/tamsui-xinyi-line/), [Bannan Line](/rail/metro/lines/bannan-line/), [Zhonghe–Xinlu Line](/rail/metro/lines/zhonghe-xinlu-line/), [Circular Line](/rail/metro/lines/circular-line/), and [Ankeng LRT](/rail/metro/lines/ankeng-lrt/).

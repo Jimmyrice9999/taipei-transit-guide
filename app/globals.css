@@ -2925,7 +2925,7 @@ a.spine-station:focus-visible .spine-name {
  * `:not(.badge)` because this selector is specificity 0,1,3 and `.badge` is
  * 0,1,0 — so when run 10 made the line badge a link, this rule captured it and
  * repainted --badge-fg (white, on Bannan's #0A59AE) as --text (#14171A). That
- * is 1.9:1, and axe-core flagged it `serious` on /rail/lines/. A badge carries
+ * is 1.9:1, and axe-core flagged it `serious` on /rail/metro/lines/. A badge carries
  * its own foreground precisely because it is chosen against its own background;
  * no container may recolour it.
  */
@@ -3770,7 +3770,7 @@ a.adjacent-link:hover {
 }
 
 /* ------------------------------------------------------------------ */
-/* Photo card grid — /rail/rolling-stock/, /rail/depots/, /rail/stations/ */
+/* Photo card grid — /rail/metro/rolling-stock/, /rail/metro/depots/, /rail/metro/stations/ */
 /* ------------------------------------------------------------------ */
 
 /*
@@ -4138,7 +4138,7 @@ a.adjacent-link:hover {
 
   /*
    * Not on anything whose href is already its own label. A strip map entry
-   * reading "BR01 [/rail/stations/br01/]" would treble in length and say
+   * reading "BR01 [/rail/metro/stations/br01/]" would treble in length and say
    * nothing it did not already say.
    */
   .badge::after,
@@ -4485,7 +4485,7 @@ a.badge-link:focus-visible {
 
 /*
  * The other lines serving an interchange station. See the note in
- * app/rail/stations/page.tsx for why these were missing and why it mattered.
+ * app/rail/metro/stations/page.tsx for why these were missing and why it mattered.
  * The badges are aria-hidden and a visually-hidden sentence beside them says
  * the same thing in words — two mini pills read out as "B L one five" are
  * worse than nothing, and the pills are already redundant with it.
