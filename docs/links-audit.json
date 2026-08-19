@@ -1,5 +1,5 @@
 {
-  "pages": 899,
+  "pages": 919,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -2335,6 +2335,16 @@
       "href": "/rail/stations/k04/"
     },
     {
+      "page": "/bus/routes/new-taipei/1-w2mstn/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/101/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
       "page": "/bus/routes/new-taipei/2-wfpa6f/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
@@ -2383,6 +2393,11 @@
       "page": "/bus/routes/new-taipei/6-1cynav/",
       "name": "Ankang",
       "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/853/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
     },
     {
       "page": "/bus/routes/new-taipei/906/",
@@ -2815,6 +2830,16 @@
       "href": "/rail/stations/bl17/"
     },
     {
+      "page": "/bus/routes/new-taipei/939-1vrqpq9/",
+      "name": "國父紀念館",
+      "href": "/rail/stations/bl17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/939-1vrqpq9/",
+      "name": "臺北大學",
+      "href": "/rail/stations/lb07/"
+    },
+    {
       "page": "/bus/routes/new-taipei/940/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
@@ -3140,9 +3165,139 @@
       "href": "/rail/stations/bl18/"
     },
     {
+      "page": "/bus/routes/new-taipei/route-11yhs61/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-11yhs61/",
+      "name": "臺北大學",
+      "href": "/rail/stations/lb07/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-12dxgac/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-13ig8ls/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-13ig8ls/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-13xjowx/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-13xjowx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-148dkye/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1546wfp/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1546wfp/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-15q6tgp/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-15q6tgp/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-16c13yi/",
+      "name": "Xindian",
+      "href": "/rail/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-16c13yi/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-16c13yi/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-17vapyj/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-17vapyj/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-18ibef/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
       "page": "/bus/routes/new-taipei/route-18mczj3/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-19edhzt/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-19jx4je/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-19nllhj/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1b3gtp1/",
+      "name": "Taipei City Hall",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1di16fg/",
+      "name": "Gangqian",
+      "href": "/rail/stations/br17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1di16fg/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1dj4ynh/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/route-1dj4ynh/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
     },
     {
       "page": "/bus/routes/new-taipei/route-1wihl3x/",

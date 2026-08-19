@@ -81,7 +81,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
                 <span className="disclosure-caret" aria-hidden="true" />
               </summary>
               <div className="index-disclosure-body">
-                <p className="section-desc">{subgroup.description}</p>
+                <p className="section-desc"><RichText>{subgroup.description}</RichText></p>
                 <ul className="card-list">{routeCards(subgroup.routes)}</ul>
               </div>
             </details>

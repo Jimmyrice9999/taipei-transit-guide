@@ -11120,6 +11120,24 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — jump-frog buses, batch 1
+
+Built 20 routes: 淡水-國道1號-南港車站, 汐止-台北101, 853跳蛙, 939跳蛙,
+林口-臺北長庚醫院, 樹林後火車站-海洋公園, 新店(綠中海)-捷運新店站,
+湯泉-崇光中學, 瑞芳-松山車站(基客), 土城-南天母廣場, 瑞芳-內科(北客),
+台北小城-大坪林, 鶯歌火車站-松山機場, 沙崙國小(篤行路)-捷運亞東醫院站,
+淡水新市鎮-板橋, 三峽-捷運府中站, 蘆洲-中正高中, 中和-新北板橋公車站,
+林口-內湖科技園區 and 新店-汐止. Body prose is 2,324 whitespace-delimited
+words. Exact New Taipei route-service rows cover 19/20; the unmatched route
+keeps its service fields TBC. The batch has 64 confirmed geometry-only MRT
+stop-ID joins, 69 candidates rejected as too far, and 2 ambiguous candidates.
+Jump-frog is reported as the official New Taipei category; no limited-stop or
+commuter rationale beyond that category filing was inferred. Sources are the
+full TDX bus snapshot, the full New Taipei 跳蛙公車 dataset, the full New Taipei
+route-service API and the New Taipei transport-management page. The shared
+subgroup renderer now sends Chinese descriptions through the existing
+`zh-Hant` tagging path after the accessibility gate caught the raw JSX string.
+
 ### New Taipei — rapid buses, batch 3
 
 Built 17 routes: 947, 948, 951, 952, 953 and its two separately filed
