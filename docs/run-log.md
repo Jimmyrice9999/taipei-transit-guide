@@ -12794,6 +12794,19 @@ this batch and the minibus retrofix), test:unit 209/209, verify clean
 (one pre-existing BL/A protanopia note, unrelated to content), nav
 19/19.
 
+**Addendum**, same session: a full sweep of every committed bus route
+file with the corrected multiline check (not scoped to this run's
+batches) found the same citation-marker line-break bug in 4 more files
+from batches predating this run's summarized history — `colour-green/
+green-17.md`, `colour-green/green-5.md`, `colour-orange/orange-1.md`,
+`colour-orange/orange-13.md`. Fixed the same way, word counts confirmed
+still ≥200, full gate suite (cite, claims, test:unit, verify, nav)
+rerun clean. This closes out the known blast radius of the flawed grep
+check across the whole `content/bus/routes/` tree as of this commit —
+32 files total fixed across three retroactive sweeps this run (5 in
+batch 10, 13 in the minibus retrofix, 4 here), plus the 15 caught
+live in this batch before publishing.
+
 Part 1 running total: 379 of 1,051 routes across sixteen groups.
 Next-smallest remaining: series-200s (92), new-taipei (562). Parts 2-7
 not started.

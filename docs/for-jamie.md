@@ -7,11 +7,12 @@ match `\n` across lines by default, so it reported clean even when the
 bug was present. It silently passed on every earlier "checked, none
 found" claim in this log. A proper check is `perl -0777 -ne 'exit(/\.\n\[\^[\w-]+\]/ ? 0 : 1)'` per file, or any genuinely multiline regex
 tool. Re-checking with the working version found the bug in 15
-special-shuttle files and, retroactively, in 13 already-committed
-minibus files from last batch (pushed as `f73dacb`). All 28 are now
-fixed and pushed. If you see a future "checked directly for the bug,
-none found" claim in this log, it should be from the perl check, not
-a bare `grep -P`.
+special-shuttle files, retroactively in 13 already-committed minibus
+files from last batch, and — in a full-tree sweep afterward — 4 more
+files from older, pre-this-run batches (colour-green, colour-orange).
+32 files fixed and pushed in total. If you see a future "checked
+directly for the bug, none found" claim in this log, it should be
+from the perl check, not a bare `grep -P`.
 
 Run 52 continues. Part 1 batches 1-13 done (series-other/unclassified/
 700s, series-100s/900s, series-300s, colour-green, colour-orange,
