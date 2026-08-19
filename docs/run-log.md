@@ -11086,3 +11086,28 @@ Built in batches of 19, 19, 18, 18 and 18; commits `0bce087`, `9fd95e3`, `671c6c
 The four groups add 231 route pages, taking the site from 245 to 476 of 1,051 TDX routes. The final join audit across colour-red, colour-green, colour-orange, colour-blue, trunk and the four new groups is 4,062 confirmed and 9,498 rejected candidates; the new groups have no ambiguous joins. The shared bus data component now tags Chinese sequence summaries as `zh-Hant`; generated content-font updates were committed when newly reachable route names exposed missing glyphs. No unverified research appendix was promoted. `npm run cite`, `npm run verify`, the full 185-test suite, research checks, accessibility checks, geometry audit and CVD audit are green. New Taipei (561 routes) and the 14 unclassified records were not started.
 
 Stopped after completing series-200s. Remaining scope is exactly new-taipei (561) and unclassified (14); the four requested groups are complete.
+
+## Run 50 — unclassified audit and New Taipei architecture, 19 August 2026
+
+The current repository was audited from `66b19d6` before changes. The TDX snapshot still contains 1,051 route identities. The 14 records labelled `unclassified` were checked against TDX metadata and the full Taipei eBus catalogue (`https://ebus.gov.taipei/ebus?ct=tpc`); the catalogue was fetched in full, not inferred from search results. The classification decisions and route-specific catalogue IDs are recorded in `docs/research/bus/routes/unclassified-audit.md`.
+
+### Part 1 — former unclassified records
+
+| Resulting group | Routes | Body words | Exact schedule/service source | Joins confirmed / rejected / ambiguous |
+|---|---:|---:|---:|---:|
+| special-shuttle additions | 9 | 882 | 9/9 exact Taipei eBus route pages | 33 / 0 / 0 |
+| series-other | 1 | 98 | 1/1 exact Taipei eBus route page | 5 / 0 / 0 |
+| unclassified retained | 3 | 408 | 3/3 exact Taipei eBus route pages | 9 / 0 / 0 |
+| new-taipei addition | 1 | 113 | 1/1 exact New Taipei route-service row; not a Taipei eBus authority | 10 / 0 / 0 |
+
+The nine special-shuttle moves are 北士科1, 兒樂1號線, 花季專車124, 兒樂2號線, 貓空右線, 臺北觀光巴士藍線, 貓空左線(動物園), 臺北觀光巴士紅線 and 貓空左線(指南宮). 1717 is filed under 一般公車 but is outside the existing numeric bands, so it is retained in `series-other`. 藍海2線先導公車 is filed by New Taipei's full MRT-pioneer dataset and moved to `new-taipei`. 雙園巴士, 景美-榮總(快) and 新莊-臺北車站 remain unclassified because the authoritative catalogue labels them as distinct 低地板, 快速 and 跳蛙 identities without a durable existing group home; no one-off group was invented.
+
+The retained unclassified pages state the catalogue labels and keep unsupported route length, service span, headway, fare, route history and corridor rationale TBC. The exact route pages support current identity and published schedule fields only. The geometry-only join run uses stop IDs and coordinates; no name similarity was used. No added route produced an ambiguous candidate.
+
+### New Taipei audit and architecture
+
+The New Taipei source hierarchy is documented in `docs/bus-architecture.md`: TDX supplies normalized identity, municipality, operators, direction/variant data, stop sequences and shapes; New Taipei City Department of Transportation supplies route-type catalogues and the full route-service API; official notices/PDFs and operator pages are searched for descriptive/history claims; Taipei eBus is not authoritative for New Taipei-specific facts. The full datasets were fetched from `https://data.ntpc.gov.tw/openapi/`, `https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000` and the seven category dataset pages listed in each research file.
+
+The 562 New Taipei identities resolve into seven data-backed navigation subgroups: general 217, rapid 57, MRT pioneer 2, New Bus 207, event 4, jump-frog 70 and light-rail feeder 5. Category assignment is by exact route-name identity in the official category datasets. Municipality-scoped URLs preserve Taipei/New Taipei numeric collisions and cross-city identities. The route-service join has 522 exact current rows; 40 names have no exact current row and remain TBC rather than borrowing a similar route.
+
+Validation for Part 1: `npm run cite`, `npm run verify` (185/185), research validation, geometry audit and CVD audit all green. The font subsets were regenerated after two newly reachable Han glyphs were detected. The page-count test now counts only route overlays actually present, preserving clean interruption batches while still checking every exported content page. Pre-existing untracked `probes/` was preserved and not staged. Part 1 commit follows this log entry; bulk New Taipei work starts with pioneer, then event, lrt, rapid, jump-frog, New Bus and general.

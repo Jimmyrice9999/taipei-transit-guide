@@ -820,7 +820,7 @@
       "005"
     ],
     "canonicalSlug": "blue-2-1xzokkx",
-    "group": "unclassified",
+    "group": "new-taipei",
     "id": "bus-17958-zsgxuw",
     "names": {
       "en": "Lan Hai2",
@@ -121115,7 +121115,7 @@
       "004"
     ],
     "canonicalSlug": "1-1r3jpwn",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-19779-1mtwgjq",
     "names": {
       "en": "BS1",
@@ -121231,7 +121231,7 @@
       "004"
     ],
     "canonicalSlug": "1-4fkw3k",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17560-10f8crn",
     "names": {
       "en": "TPE Child's Amuse. Park 1",
@@ -121858,7 +121858,7 @@
       "004"
     ],
     "canonicalSlug": "124",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17580-jehr1u",
     "names": {
       "en": "124",
@@ -122867,7 +122867,7 @@
       "004"
     ],
     "canonicalSlug": "1717",
-    "group": "unclassified",
+    "group": "series-other",
     "id": "bus-16746-1bvp5a1",
     "names": {
       "en": "1717",
@@ -123582,7 +123582,7 @@
       "004"
     ],
     "canonicalSlug": "2-1q3agst",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17561-1505fzg",
     "names": {
       "en": "TPE Child's Amuse. Park 2",
@@ -125971,7 +125971,7 @@
       "004"
     ],
     "canonicalSlug": "route-17feggx",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-11741-1dqov4p",
     "names": {
       "en": "Maokong Right",
@@ -126296,7 +126296,7 @@
       "004"
     ],
     "canonicalSlug": "route-1ne4h5f",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17801-k6rbm1",
     "names": {
       "en": "Taipei Sightseeing Bus Blue route",
@@ -126937,7 +126937,7 @@
       "004"
     ],
     "canonicalSlug": "route-opqz7",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-16163-1m53kh6",
     "names": {
       "en": "Maokong Left (Zoo)",
@@ -127054,7 +127054,7 @@
       "004"
     ],
     "canonicalSlug": "route-q03sgr",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-17800-1j1godx",
     "names": {
       "en": "Taipei Sightseeing Bus Red route",
@@ -127268,7 +127268,7 @@
       "004"
     ],
     "canonicalSlug": "route-x9c7cr",
-    "group": "unclassified",
+    "group": "special-shuttle",
     "id": "bus-16140-2z68cy",
     "names": {
       "en": "Maokong Left (Zhinan Temple)",

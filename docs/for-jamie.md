@@ -1,13 +1,11 @@
 # For Jamie
 
-Run 49 complete: special-shuttle, minibus, series-600s and series-200s.
-231 new route pages were added; total coverage is now 476 of 1,051 routes.
-Final geometry-only join audit: 4,062 confirmed; 9,498 rejected; no new-group ambiguities.
-Sources: TDX plus full Taipei eBus catalogue and exact route schedule pages.
-Route length/span/headway/fare and unpublished histories remain TBC where primaries do not say them.
-All numeric collisions and unmatched 區/預 variants are recorded in the four research files.
-`npm run cite`, `npm run verify`, 185/185 tests, research, a11y, geometry and CVD gates are green.
-The shared bus renderer now tags Chinese sequence summaries as `zh-Hant`.
-New Taipei (561 routes) and unclassified (14) were intentionally not started.
-Stopped after completing series-200s; those 575 routes are the remaining scope.
-Pre-existing untracked `probes/` was preserved and not staged.
+Run 50 Part 1 complete: all 14 former unclassified identities audited and paged.
+9 moved to special-shuttle, 1 to series-other, 1 to new-taipei; 3 remain unclassified.
+Coverage is now 491 of 1,051 routes; New Taipei has 1 of 562 pages built.
+New Taipei source strategy and seven data-backed subgroups are documented in docs/bus-architecture.md.
+New Taipei service snapshot: 522 exact current route rows; 40 route identities remain TBC for service fields.
+Part 1 joins: 57 confirmed, 0 rejected/ambiguous among the 14 added routes.
+`npm run verify` passed: build, links, a11y, facts, cite, claims, 185 tests, research, geometry and CVD.
+Next groups: pioneer, event, lrt, rapid, jumpfrog, newbus, general; build smallest first.
+Do not stage the pre-existing untracked `probes/` directory.

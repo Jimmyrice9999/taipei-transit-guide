@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 3318,
-    "tbc": 1933,
+    "sourced": 3349,
+    "tbc": 1992,
     "asserted": 32,
     "meta": 42
   },
@@ -2073,6 +2073,22 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/new-taipei/blue-2-1xzokkx.md",
+      "sources": 4,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/_index.md",
+      "sources": 10,
+      "sourced": 2,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/series-0-99/0-16oa5of.md",
       "sources": 4,
       "sourced": 5,
@@ -4009,7 +4025,39 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/series-other/1717.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-other/_index.md",
+      "sources": 2,
+      "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/special-shuttle/1-1o1sfzk.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/1-1r3jpwn.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/1-4fkw3k.md",
       "sources": 3,
       "sourced": 2,
       "tbc": 4,
@@ -4050,6 +4098,14 @@
     },
     {
       "file": "content/bus/routes/special-shuttle/12-md9g4p.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/124.md",
       "sources": 3,
       "sourced": 3,
       "tbc": 4,
@@ -4122,6 +4178,14 @@
     },
     {
       "file": "content/bus/routes/special-shuttle/2-1bo2ml3.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/2-1q3agst.md",
       "sources": 3,
       "sourced": 2,
       "tbc": 4,
@@ -4289,6 +4353,22 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/special-shuttle/route-17feggx.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-1ne4h5f.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/special-shuttle/route-1sgvobx.md",
       "sources": 3,
       "sourced": 2,
@@ -4306,6 +4386,30 @@
     },
     {
       "file": "content/bus/routes/special-shuttle/route-h23w94.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-opqz7.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-q03sgr.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/route-x9c7cr.md",
       "sources": 3,
       "sourced": 2,
       "tbc": 4,
@@ -4513,9 +4617,41 @@
       "meta": 0
     },
     {
-      "file": "content/bus/routes/_index.md",
-      "sources": 0,
+      "file": "content/bus/routes/unclassified/route-1mcjtcr.md",
+      "sources": 3,
+      "sourced": 1,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/unclassified/route-d3oyhe.md",
+      "sources": 3,
+      "sourced": 1,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/unclassified/route-v9sv0g.md",
+      "sources": 3,
+      "sourced": 1,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/unclassified/_index.md",
+      "sources": 2,
       "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/_index.md",
+      "sources": 2,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

@@ -115,10 +115,12 @@ test('the expected number of pages was generated', () => {
      getAllPages(). Count every built group's index page and its route pages
      here — one line per group would drift the moment a group is added, so
      this sums whatever `content/bus/routes/` actually contains. */
-  const busGroupPages = getBuiltBusRouteGroups().reduce(
-    (sum, group) => sum + getBusRoutesByGroup(group).length + 1,
-    0,
-  )
+  const busGroupPages = getBuiltBusRouteGroups().reduce((sum, group) => {
+    const overlays = getBusRoutesByGroup(group).filter((route) =>
+      fs.existsSync(path.join(process.cwd(), 'content', 'bus', 'routes', group, `${route.canonicalSlug}.md`)),
+    )
+    return sum + overlays.length + 1
+  }, 0)
   const expected = content + stations + sections + types + generated + busGroupPages
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length

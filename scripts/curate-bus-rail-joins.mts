@@ -1,6 +1,6 @@
 /**
  * Curates confirmed bus-stop-to-MRT-station joins for the built and pending
- * Taipei route groups, and (re)writes data/tdx/bus/rail-stop-joins.json.
+ * Taipei and New Taipei route groups, and (re)writes data/tdx/bus/rail-stop-joins.json.
  *
  * Run: node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/curate-bus-rail-joins.mts
  *
@@ -60,6 +60,9 @@ const TARGET_GROUPS: BusRouteGroup[] = [
   'minibus',
   'series-600s',
   'series-200s',
+  'series-other',
+  'unclassified',
+  'new-taipei',
 ]
 
 const stopById = new Map(BUS_STOPS.map((s) => [s.id, s]))

@@ -11,6 +11,7 @@ import References from '@/components/References'
 import RichText from '@/components/RichText'
 import { getFolder, getFolderContent } from '@/lib/content'
 import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
+import { getNewTaipeiRouteSubgroup, NEW_TAIPEI_SUBGROUPS } from '@/lib/bus/new-taipei'
 import { getBuiltBusRouteGroups, getGroupLineCode } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
@@ -45,6 +46,21 @@ export default async function BusRouteGroupPage({ params }: Props) {
   const routes = getBusRoutesByGroup(group as BusRouteGroup).filter((route) => hasOverlay(group, route.canonicalSlug))
   const folderContent = await getFolderContent(['bus', 'routes'], group)
   const lineCode = getGroupLineCode(group as BusRouteGroup)
+  const subgroups = group === 'new-taipei'
+    ? NEW_TAIPEI_SUBGROUPS.map((subgroup) => ({
+        ...subgroup,
+        routes: routes.filter((route) => getNewTaipeiRouteSubgroup(route) === subgroup.key),
+      })).filter((subgroup) => subgroup.routes.length > 0)
+    : []
+  const routeCards = (items: typeof routes) => items.map((route) => (
+    <CardRow
+      key={route.id}
+      href={`/bus/routes/${group}/${route.canonicalSlug}/`}
+      title={`${route.names.en} / ${route.names.zh_tw}`}
+      summary={`${route.sourceCities.join(', ')} Â· ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
+      line={lineCode}
+    />
+  ))
 
   return (
     <PageShell accent={getAccent(lineCode)}>
@@ -55,6 +71,23 @@ export default async function BusRouteGroupPage({ params }: Props) {
       {folder.description && <p className="page-summary"><RichText>{folder.description}</RichText></p>}
       {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
       <References references={folderContent.references} />
+      {group === 'new-taipei' ? (
+        <div className="bus-subgroups">
+          {subgroups.map((subgroup) => (
+            <details key={subgroup.key} className="index-disclosure subgroup-disclosure">
+              <summary>
+                <span className="section-heading" role="heading" aria-level={2}>{subgroup.title}</span>
+                <span className="disclosure-count">{subgroup.routes.length} routes</span>
+                <span className="disclosure-caret" aria-hidden="true" />
+              </summary>
+              <div className="index-disclosure-body">
+                <p className="section-desc">{subgroup.description}</p>
+                <ul className="card-list">{routeCards(subgroup.routes)}</ul>
+              </div>
+            </details>
+          ))}
+        </div>
+      ) : (
       <details className="index-disclosure">
         <summary>
           <span className="section-heading" role="heading" aria-level={2}>Routes in this group</span>
@@ -75,6 +108,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
           </ul>
         </div>
       </details>
+      )}
     </PageShell>
   )
 }

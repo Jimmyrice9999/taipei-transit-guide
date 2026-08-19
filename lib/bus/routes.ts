@@ -13,6 +13,7 @@ import busSequences from '../../data/tdx/bus/stop-sequences.json' with { type: '
 import busShapes from '../../data/tdx/bus/shapes.json' with { type: 'json' }
 import busStops from '../../data/tdx/bus/stops.json' with { type: 'json' }
 import confirmedBusRailJoins from '../../data/tdx/bus/rail-stop-joins.json' with { type: 'json' }
+import ntpcBusRouteService from '../../data/ntpc/bus-route-service.json' with { type: 'json' }
 
 export type BusRouteGroup =
   | 'colour-red'
@@ -77,6 +78,36 @@ export type BusRoute = {
   railJoins: BusRailJoin[]
   aliases: BusAlias[]
   sourceUpdated: string[]
+  service?: BusRouteService
+}
+
+export type BusRouteService = {
+  routeId: string
+  routeNameZh: string
+  categoryKey: string
+  categoryLabel: string
+  categoryEnglish: string
+  categoryDataset: string
+  serviceRecordId: string | null
+  providerId: string | null
+  providerName: string | null
+  startAndEnd: string | null
+  distanceKm: string | null
+  weekdayOperationHours: string | null
+  holidayOperationHours: string | null
+  weekdayFirstBus: string | null
+  weekdayLastBus: string | null
+  weekdayPeakHeadway: string | null
+  weekdayOffpeakHeadway: string | null
+  weekdayHeadwayDescription: string | null
+  holidayFirstBus: string | null
+  holidayLastBus: string | null
+  holidayPeakHeadway: string | null
+  holidayOffpeakHeadway: string | null
+  holidayHeadwayDescription: string | null
+  fareZh: string | null
+  fareEn: string | null
+  sourceUpdated: string
 }
 
 export type BusStop = {
@@ -146,6 +177,10 @@ const confirmedJoinsByRoute = new Map(
   ]),
 )
 
+const ntpcServiceByRoute = new Map(
+  (ntpcBusRouteService as unknown as BusRouteService[]).map((record) => [record.routeId, record]),
+)
+
 /**
  * Every route's raw `railJoins` from the TDX pull is matched by normalized
  * stop name against the station registry — `match: 'normalized-name'` on
@@ -164,6 +199,7 @@ const confirmedJoinsByRoute = new Map(
 export const BUS_ROUTES = (busRoutes as unknown as BusRoute[]).map((route) => ({
   ...route,
   railJoins: confirmedJoinsByRoute.get(route.id) ?? [],
+  service: ntpcServiceByRoute.get(route.id),
 }))
 export const BUS_STOPS = busStops as unknown as BusStop[]
 export const BUS_STOP_SEQUENCES = busSequences as unknown as BusStopSequence[]

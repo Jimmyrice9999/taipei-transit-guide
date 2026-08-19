@@ -4,7 +4,7 @@ import FactsPanel from './FactsPanel'
 import RouteMap, { type MapStation } from './RouteMap'
 import RichText from './RichText'
 import { getStation, getStationHref } from '@/lib/stations'
-import { getBusOperator, getBusShapes, getBusStopSequences, type BusRoute, type BusRouteGroup } from '@/lib/bus/routes'
+import { getBusOperator, getBusShapes, getBusStopSequences, type BusRoute } from '@/lib/bus/routes'
 import { GROUP_LINE, GROUP_PATH_COLOUR } from '@/lib/bus/route-groups'
 import type { Line } from '@/lib/lines'
 import type { NumberedSource } from '@/lib/sources'
@@ -62,14 +62,52 @@ function routeStopData(route: BusRoute) {
   return { stops, termini }
 }
 
-function serviceClassLabel(group: BusRouteGroup) {
-  if (group === 'special-shuttle') return 'Special shuttle / commuter service'
-  if (group === 'minibus') return 'Minibus / community service'
-  if (group === 'series-200s') return '200-series numbered service'
-  if (group === 'series-600s') return '600-series numbered service'
-  if (group === 'trunk') return 'Trunk service'
-  if (group.startsWith('colour-')) return 'MRT feeder service'
+function serviceClassLabel(route: BusRoute) {
+  if (route.group === 'new-taipei' && route.service) {
+    return `${route.service.categoryEnglish} (${route.service.categoryLabel})`
+  }
+  if (route.group === 'special-shuttle') return 'Special shuttle / commuter service'
+  if (route.group === 'minibus') return 'Minibus / community service'
+  if (route.group === 'series-200s') return '200-series numbered service'
+  if (route.group === 'series-600s') return '600-series numbered service'
+  if (route.group === 'trunk') return 'Trunk service'
+  if (route.group.startsWith('colour-')) return 'MRT feeder service'
   return 'Numbered bus service'
+}
+
+function published(value: string | null | undefined) {
+  const text = value?.trim() ?? ''
+  return text && text !== '-' && text !== '－' ? text : ''
+}
+
+function serviceSpan(route: BusRoute) {
+  if (route.group !== 'new-taipei' || !route.service) return 'TBC'
+  const weekday = published(route.service.weekdayOperationHours)
+  const holiday = published(route.service.holidayOperationHours)
+  return [weekday && `Weekdays: ${weekday}`, holiday && `Holidays: ${holiday}`].filter(Boolean).join('; ') || 'TBC'
+}
+
+function headway(route: BusRoute) {
+  if (route.group !== 'new-taipei' || !route.service) return 'TBC'
+  const service = route.service
+  const weekday = [
+    published(service.weekdayPeakHeadway) && `weekday peak ${service.weekdayPeakHeadway}`,
+    published(service.weekdayOffpeakHeadway) && `weekday off-peak ${service.weekdayOffpeakHeadway}`,
+    published(service.weekdayHeadwayDescription),
+  ].filter(Boolean).join('; ')
+  const holiday = [
+    published(service.holidayPeakHeadway) && `holiday peak ${service.holidayPeakHeadway}`,
+    published(service.holidayOffpeakHeadway) && `holiday off-peak ${service.holidayOffpeakHeadway}`,
+    published(service.holidayHeadwayDescription),
+  ].filter(Boolean).join('; ')
+  return [weekday && `Weekdays: ${weekday}`, holiday && `Holidays: ${holiday}`].filter(Boolean).join('; ') || 'TBC'
+}
+
+function fare(route: BusRoute) {
+  if (route.group !== 'new-taipei' || !route.service) return 'TBC'
+  const zh = published(route.service.fareZh)
+  const en = published(route.service.fareEn)
+  return [zh, en && en !== zh ? en : ''].filter(Boolean).join(' / ') || 'TBC'
 }
 
 function stationJoinLabel(join: BusRoute['railJoins'][number]) {
@@ -89,6 +127,7 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
     .filter(Boolean)
 
   const feederLine = GROUP_LINE[route.group]
+  const serviceSource = route.group === 'new-taipei' && route.service ? 'ntpc-bus-route-data' : 'tdx-bus'
   const variants = route.subRoutes
     .map((subRoute) => subRoute.names.zh_tw || subRoute.names.en)
     .filter(Boolean)
@@ -96,16 +135,16 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
 
   const facts = [
     { label: 'Route', value: `${route.names.en} / ${route.names.zh_tw}`, source: 'tdx-bus' },
-    { label: 'Service class', value: serviceClassLabel(route.group), source: 'tdx-bus' },
+    { label: 'Service class', value: serviceClassLabel(route), source: serviceSource },
     { label: 'Municipality', value: route.sourceCities.join(', '), source: 'tdx-bus' },
     { label: 'Current operator', value: operators.map((operator) => operator!.names.en || operator!.names.zh_tw).join(', ') || 'TBC', source: 'tdx-bus' },
     { label: 'Termini by direction', value: termini.join(' · ') || 'TBC', source: 'tdx-bus' },
     { label: 'Direction / variant', value: variants || 'TBC', source: 'tdx-bus' },
     { label: 'Stops', value: String(new Set(sequences.flatMap((sequence) => sequence.stops.map((stop) => stop.stopUid))).size), source: 'tdx-bus' },
-    { label: 'Route length', value: 'TBC', source: 'tdx-bus' },
-    { label: 'Service span', value: 'TBC', source: 'tdx-bus' },
-    { label: 'Headway by day type', value: 'TBC', source: 'tdx-bus' },
-    { label: 'Fare / transfer', value: 'TBC', source: 'tdx-bus' },
+    { label: 'Route length', value: route.group === 'new-taipei' && published(route.service?.distanceKm) ? `${route.service?.distanceKm} km` : 'TBC', source: serviceSource },
+    { label: 'Service span', value: serviceSpan(route), source: serviceSource },
+    { label: 'Headway by day type', value: headway(route), source: serviceSource },
+    { label: 'Fare / transfer', value: fare(route), source: serviceSource },
     { label: 'Confirmed MRT stop joins', value: String(route.railJoins.length), source: 'tdx-bus' },
     ...(feederLine
       ? [{ label: 'Feeder line', value: `${feederLine.name} (${feederLine.code})`, source: feederLine.sourceId }]

@@ -25,7 +25,7 @@ const RESEARCH_DIR = path.join(ROOT, 'docs', 'research', 'bus', 'routes')
 const GROUPS = {
   'special-shuttle': {
     title: 'Special shuttle routes',
-    description: 'Named commuter and destination-specific services, including Neihu and Nangang technology-park routes, commuter services and Huai-en shuttles.',
+    description: 'Named commuter, destination, event and sightseeing services kept separate from numbered, trunk and minibus classes.',
     order: 13,
     categorySource: 'ebus-special',
     categoryTitle: 'Commuter and destination-service catalogue',
@@ -36,6 +36,9 @@ const GROUPS = {
       if (route.names.zh_tw.startsWith('南軟')) return '南軟專車'
       if (route.names.zh_tw.startsWith('通勤')) return '通勤公車'
       if (route.names.zh_tw.startsWith('懷恩')) return '其他'
+      if (['BS1', "TPE Child's Amuse. Park 1", "TPE Child's Amuse. Park 2", 'Maokong Right', 'Maokong Left (Zoo)', 'Maokong Left (Zhinan Temple)'].includes(route.names.en)) return '其他'
+      if (route.names.en === '124') return '活動專車'
+      if (route.names.en.startsWith('Taipei Sightseeing Bus')) return '觀光巴士'
       return '通勤公車或其他'
     },
   },
@@ -68,6 +71,31 @@ const GROUPS = {
     categoryOriginal: '一般公車',
     classValue: '200-series numbered service (一般公車)',
     categoryFor: () => '一般公車',
+  },
+  'series-other': {
+    title: 'Other numbered routes',
+    description: 'Numbered route identities outside the named Taipei series bands, retained as a reviewable numbered group.',
+    order: 17,
+    categorySource: 'ebus-general',
+    categoryTitle: 'Taipei/New Taipei bus route catalogue',
+    categoryOriginal: '一般公車',
+    classValue: 'Numbered service outside named series (一般公車)',
+    categoryFor: () => '一般公車',
+  },
+  unclassified: {
+    title: 'Unclassified route identities',
+    description: 'Route identities whose authoritative catalogue label does not yet map to an existing canonical service group.',
+    order: 18,
+    categorySource: 'ebus-unclassified',
+    categoryTitle: 'Taipei/New Taipei bus route catalogue',
+    categoryOriginal: 'official catalogue service labels',
+    classValue: 'Unclassified route identity (classification TBC)',
+    categoryFor: (route) => {
+      if (route.names.en === 'NEIHU GREEN BUS') return '低地板'
+      if (route.names.en === 'Jingmei-T.V.G.H Express') return '快速'
+      if (route.names.en === 'Xinzhuang-Taipei Main Sta.') return '跳蛙'
+      return '未分類'
+    },
   },
 }
 
@@ -211,6 +239,9 @@ function yamlSources(sources) {
 }
 
 function categorySentence(route, config) {
+  if (config === GROUPS.unclassified) {
+    return `The full official catalogue files ${route.names.zh_tw} under the service label ${config.categoryFor(route)}. That label is recorded as evidence, but it does not map this identity to an existing canonical group, so the route remains unclassified rather than being forced into one.[^${config.categorySource}]`
+  }
   return `The full official catalogue files ${route.names.zh_tw} under ${config.categoryFor(route)} (${config.categoryOriginal}).[^${config.categorySource}]`
 }
 
@@ -280,6 +311,8 @@ function groupIndex(group, config, routes) {
     ? `The full official catalogue separates these services into 通勤公車, 內科專車, 南軟專車 and 其他 headings; the TDX snapshot contains ${routes.length} normalized identities in this group.[^ebus-special][^tdx-bus]\n\nThese are employer- or destination-specific services in the catalogue’s own naming, but eligibility, hours and booking conditions are route-specific. Each route page cites its current schedule where the catalogue has a separate entry; a missing entry stays TBC.[^ebus-special]`
     : group === 'minibus'
       ? `The full official catalogue lists these records under 小 and 市民小巴; the TDX snapshot contains ${routes.length} normalized identities in this group.[^ebus-minibus][^tdx-bus]\n\nThe catalogue does not by itself establish a vehicle-access or hill/lane rationale for every route. Those details are stated only when a route-specific primary source supports them.[^ebus-minibus]`
+    : group === 'unclassified'
+      ? `The full official catalogue labels these ${routes.length} identities as ${labels}. Those labels are retained as evidence, but they are different service classes rather than one shared route group; the identities remain unclassified until the site has a durable canonical home for each class.[^ebus-unclassified][^tdx-bus]`
       : `The full official catalogue lists the ${routes.length} normalized records in this group under 一般公車. TDX identities remain separate when the catalogue also uses 區, 副, 直, 快, 夜 or 預 variants.[^ebus-general][^tdx-bus]\n\nThe current catalogue labels are: ${labels}.[^ebus-general]`
 
   const configSources = [tdxSource(), categorySource(config)]
@@ -420,7 +453,12 @@ async function main() {
   const allRoutes = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'routes.json'), 'utf8'))
   const start = Number(arg('--start', '0'))
   const limit = Number(arg('--limit', String(routes.length)))
-  const selected = routes.slice(start, start + limit)
+  const routeArg = arg('--route')
+  const selected = routeArg
+    ? routes.filter((route) => route.canonicalSlug === routeArg || route.id === routeArg)
+    : flag('--missing')
+      ? routes.filter((route) => !fs.existsSync(path.join(CONTENT_DIR, group, `${route.canonicalSlug}.md`)))
+      : routes.slice(start, start + limit)
   if (selected.length === 0) throw new Error(`No routes selected for ${group} at start=${start} limit=${limit}`)
 
   console.log(`Fetching full catalogue: ${CATALOGUE_URL}`)
@@ -448,7 +486,8 @@ async function main() {
 
   const targetDir = path.join(CONTENT_DIR, group)
   fs.mkdirSync(targetDir, { recursive: true })
-  if (start + selected.length >= routes.length) {
+  const complete = routes.every((route) => selected.some((candidate) => candidate.id === route.id) || fs.existsSync(path.join(CONTENT_DIR, group, `${route.canonicalSlug}.md`)))
+  if (complete) {
     fs.writeFileSync(path.join(targetDir, '_index.md'), groupIndex(group, config, routes))
   }
 

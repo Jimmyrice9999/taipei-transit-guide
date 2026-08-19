@@ -5,17 +5,17 @@
 
 # Special shuttle routes — research
 
-**Run date: 2026-08-19.** This report covers the 42 records in the merged TDX snapshot classified `special-shuttle`.
+**Run date: 2026-08-19.** This report covers the 51 records in the merged TDX snapshot classified `special-shuttle`.
 
 ## What is established
 
-The committed TDX snapshot contains 42 normalized records in this group. The official catalogue’s full page was fetched and read; its headings and route labels establish the group classification, while the TDX layer supplies the stable route identity, operators, stops, sequences, shapes and source-update fields.
+The committed TDX snapshot contains 51 normalized records in this group. The official catalogue’s full page was fetched and read; its headings and route labels establish the group classification, while the TDX layer supplies the stable route identity, operators, stops, sequences, shapes and source-update fields.
 
 - **Source:** "TDX bus data" / `titleOriginal`: `交通部運輸資料流通服務平臺`
 - **Publisher:** Ministry of Transportation and Communications TDX / `交通部運輸資料流通服務平臺`
 - **URL:** https://tdx.transportdata.tw/
 - **Kind/confidence:** PRIMARY; High for the normalized route count, group, identity and structure — read from the committed snapshot.
-- **Original-language text read:** The committed metadata records `42 routes` in group `special-shuttle`, with source update `2026-08-15`.
+- **Original-language text read:** The committed metadata records `51 routes` in group `special-shuttle`, with source update `2026-08-15`.
 
 - **Source:** "Commuter and destination-service catalogue" / `titleOriginal`: `大臺北公車`
 - **Publisher:** Taipei City Government and New Taipei City Government / `臺北市政府與新北市政府`
@@ -35,6 +35,24 @@ The full official schedule page was fetched and read. It publishes 起迄站名 
 - **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0152000A00
 - **Kind/confidence:** PRIMARY; High — full official page fetched and read.
 - **Original-language text read:** `起迄站名 : 捷運圓山站 - 內湖科技園區`; `頭末班車 : [平日] 0700 - 2000 [假日] 停駛`; `收費方式 : 一段票`.
+
+### 北士科1 / BS1
+The full official schedule page was fetched and read. It publishes 起迄站名 : 士東路 - 北士科; 頭末班車 : [平日] 0600 - 2000 [假日] 0600 - 2000; 收費方式 : 一段票.
+
+- **Source:** "BS1 route schedule" / `titleOriginal`: `北士科1班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162001500
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 士東路 - 北士科`; `頭末班車 : [平日] 0600 - 2000 [假日] 0600 - 2000`; `收費方式 : 一段票`.
+
+### 兒樂1號線 / TPE Child's Amuse. Park 1
+The full official schedule page was fetched and read. It publishes 起迄站名 : 兒童新樂園 - 捷運芝山站、士林站; 頭末班車 : [平日] 停駛 [假日] 0845 - 1815; 收費方式 : 一段票.
+
+- **Source:** "TPE Child's Amuse. Park 1 route schedule" / `titleOriginal`: `兒樂1號線班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162003000
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 兒童新樂園 - 捷運芝山站、士林站`; `頭末班車 : [平日] 停駛 [假日] 0845 - 1815`; `收費方式 : 一段票`.
 
 ### 內科通勤專車10 / NH10
 The full official schedule page was fetched and read. It publishes 起迄站名 : 錦繡 - 內湖科技園區; 頭末班車 : [平日] 0630 - 1830 [假日] 停駛; 收費方式 : 兩段票.
@@ -80,6 +98,15 @@ The full official schedule page was fetched and read. It publishes 起迄站名 
 - **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0152001200
 - **Kind/confidence:** PRIMARY; High — full official page fetched and read.
 - **Original-language text read:** `起迄站名 : 新莊 - 內湖科技園區`; `頭末班車 : [平日] 0650 - 1830 [假日] 停駛`; `收費方式 : 兩段票`.
+
+### 花季專車124 / 124
+The full official schedule page was fetched and read. It publishes 起迄站名 : 陽明山 - 小油坑; 頭末班車 : [平日] 0800 - 1600 [假日] 0800 - 1600; 收費方式 : 一段票.
+
+- **Source:** "124 route schedule" / `titleOriginal`: `花季專車124班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0171002000
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 陽明山 - 小油坑`; `頭末班車 : [平日] 0800 - 1600 [假日] 0800 - 1600`; `收費方式 : 一段票`.
 
 ### 通勤13 / CB13
 The full official schedule page was fetched and read. It publishes 起迄站名 : 新店(民族路) - 臺北市政府; 頭末班車 : [平日] 0650 - 1700 [假日] 停駛; 收費方式 : 兩段票.
@@ -161,6 +188,15 @@ The full official schedule page was fetched and read. It publishes 起迄站名 
 - **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0152000B00
 - **Kind/confidence:** PRIMARY; High — full official page fetched and read.
 - **Original-language text read:** `起迄站名 : 捷運市政府站 - 內湖科技園區`; `頭末班車 : [平日] 0730 - 2000 [假日] 停駛`; `收費方式 : 一段票`.
+
+### 兒樂2號線 / TPE Child's Amuse. Park 2
+The full official schedule page was fetched and read. It publishes 起迄站名 : 兒童新樂園 - 捷運劍潭站; 頭末班車 : [平日] 0830 - 1730 [假日] 0830 - 1830; 收費方式 : 一段票.
+
+- **Source:** "TPE Child's Amuse. Park 2 route schedule" / `titleOriginal`: `兒樂2號線班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162003100
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 兒童新樂園 - 捷運劍潭站`; `頭末班車 : [平日] 0830 - 1730 [假日] 0830 - 1830`; `收費方式 : 一段票`.
 
 ### 內科通勤專車2 / NH2
 The full official schedule page was fetched and read. It publishes 起迄站名 : 中和 - 內湖科技園區; 頭末班車 : [平日] 0712 - 1830 [假日] 停駛; 收費方式 : 兩段票.
@@ -342,6 +378,24 @@ The full official schedule page was fetched and read. It publishes 起迄站名 
 - **Kind/confidence:** PRIMARY; High — full official page fetched and read.
 - **Original-language text read:** `起迄站名 : 新北投 - 南港軟體園區`; `頭末班車 : [平日] 0648 - 1820 [假日] 停駛`; `收費方式 : 兩段票`.
 
+### 貓空右線 / Maokong Right
+The full official schedule page was fetched and read. It publishes 起迄站名 : 貓空纜車站 - 杏花林; 頭末班車 : [平日] 0900 - 2000 [假日] 0830 - 2000; 收費方式 : 一段票.
+
+- **Source:** "Maokong Right route schedule" / `titleOriginal`: `貓空右線班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162002000
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 貓空纜車站 - 杏花林`; `頭末班車 : [平日] 0900 - 2000 [假日] 0830 - 2000`; `收費方式 : 一段票`.
+
+### 臺北觀光巴士藍線 / Taipei Sightseeing Bus Blue route
+The full official schedule page was fetched and read. It publishes 起迄站名 : 臺北車站 - 故宮博物院; 頭末班車 : [平日] 0940 - 1630 [假日] 0940 - 1630; 收費方式 : 詳票價表.
+
+- **Source:** "Taipei Sightseeing Bus Blue route route schedule" / `titleOriginal`: `臺北觀光巴士藍線班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162003500
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 臺北車站 - 故宮博物院`; `頭末班車 : [平日] 0940 - 1630 [假日] 0940 - 1630`; `收費方式 : 詳票價表`.
+
 ### 南軟通勤專車天母線 / NK-TianMu
 The full official schedule page was fetched and read. It publishes 起迄站名 : 天母 - 南港軟體園區; 頭末班車 : [平日] 0730 - 1810 [假日] 停駛; 收費方式 : 兩段票.
 
@@ -368,6 +422,33 @@ The full official schedule page was fetched and read. It publishes 起迄站名 
 - **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0152003400
 - **Kind/confidence:** PRIMARY; High — full official page fetched and read.
 - **Original-language text read:** `起迄站名 : 土城駕訓中心 - 南港軟體園區`; `頭末班車 : [平日] 0640 - 1820 [假日] 停駛`; `收費方式 : 兩段票`.
+
+### 貓空左線(動物園) / Maokong Left (Zoo)
+The full official schedule page was fetched and read. It publishes 起迄站名 : 富德 - 貓空纜車站; 頭末班車 : [平日] 0650 - 2000 [假日] 0700 - 2330; 收費方式 : 一段票.
+
+- **Source:** "Maokong Left (Zoo) route schedule" / `titleOriginal`: `貓空左線(動物園)班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162002200
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 富德 - 貓空纜車站`; `頭末班車 : [平日] 0650 - 2000 [假日] 0700 - 2330`; `收費方式 : 一段票`.
+
+### 臺北觀光巴士紅線 / Taipei Sightseeing Bus Red route
+The full official schedule page was fetched and read. It publishes 起迄站名 : 臺北車站 - 台北101; 頭末班車 : [平日] 0910 - 1850 [假日] 0910 - 1850; 收費方式 : 詳票價表.
+
+- **Source:** "Taipei Sightseeing Bus Red route route schedule" / `titleOriginal`: `臺北觀光巴士紅線班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162003400
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 臺北車站 - 台北101`; `頭末班車 : [平日] 0910 - 1850 [假日] 0910 - 1850`; `收費方式 : 詳票價表`.
+
+### 貓空左線(指南宮) / Maokong Left (Zhinan Temple)
+The full official schedule page was fetched and read. It publishes 起迄站名 : 貓空纜車站 - 貓纜指南宮站; 頭末班車 : [平日] 0900 - 1720 [假日] 1320 - 1550; 收費方式 : 一段票.
+
+- **Source:** "Maokong Left (Zhinan Temple) route schedule" / `titleOriginal`: `貓空左線(指南宮)班表`
+- **Publisher:** Taipei City Government and New Taipei City Government, 臺北市政府與新北市政府
+- **URL:** https://ebus.gov.taipei/Route/RouteSchedule?routeid=0162002100
+- **Kind/confidence:** PRIMARY; High — full official page fetched and read.
+- **Original-language text read:** `起迄站名 : 貓空纜車站 - 貓纜指南宮站`; `頭末班車 : [平日] 0900 - 1720 [假日] 1320 - 1550`; `收費方式 : 一段票`.
 
 ### 懷恩專車S31 / S31
 The full official schedule page was fetched and read. It publishes 起迄站名 : 捷運公館站 - 臺北市懷愛館; 頭末班車 : [平日] 0645 - 1810 [假日] 0645 - 1810; 收費方式 : 免費.
