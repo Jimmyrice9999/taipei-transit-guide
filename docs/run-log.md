@@ -11120,6 +11120,27 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — general buses, batch 1
+
+Built the first 20 identities from the official general-bus category slice:
+三鶯1線, 115平日, 115, 177瑞芳觀光公車, 179, 三鶯2線(原812), 201, 231,
+241, 242, 243, 245, 249, 264, 275, 290副萬和, 290副, 51, 520 and 57.
+Body prose is 2,408 whitespace-delimited words. Exact New Taipei
+route-service rows cover 20/20. The batch has 224 confirmed geometry-only
+MRT stop-ID joins, 524 candidates rejected as too far, and 0 ambiguous
+candidates. The 115, 290副 and other separately filed identities remain
+distinct records; no variant meaning was inferred. Sources are the full TDX
+snapshot (https://tdx.transportdata.tw/), the full New Taipei general-bus
+catalogue
+(https://data.ntpc.gov.tw/datasets/45572534-e503-4ece-afea-54440bf2624a),
+the exact current route-service API
+(https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000),
+and the New Taipei transport-management page
+(https://www.traffic.ntpc.gov.tw/home.jsp?id=f06672ba2aadbd3c). Route
+history, predecessor/renumbering, dated operator changes, corridor rationale
+and eligibility remain TBC where these fetched primary sources do not
+establish them.
+
 ### New Taipei — New Bus community services, closeout batch 11
 
 Built the final 7 New Bus identities: 貢寮區學生專車, 直潭里線, 福連線,

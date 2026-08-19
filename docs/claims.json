@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4123,
-    "tbc": 3368,
+    "sourced": 4182,
+    "tbc": 3448,
     "asserted": 32,
     "meta": 42
   },
@@ -2073,6 +2073,14 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/new-taipei/1-10sz07o.md",
+      "sources": 4,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/new-taipei/1-11z5rqx.md",
       "sources": 4,
       "sourced": 2,
@@ -2097,9 +2105,137 @@
       "meta": 0
     },
     {
+      "file": "content/bus/routes/new-taipei/115-5hnz6k.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/115-no7mm3.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/177.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/179.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/2-812.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/routes/new-taipei/2-wfpa6f.md",
       "sources": 4,
       "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/201.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/231.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/241.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/242.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/243.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/245.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/249.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/264.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/275.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/290-1oigoll.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/290-ywtoo.md",
+      "sources": 4,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -2116,6 +2252,30 @@
       "file": "content/bus/routes/new-taipei/5-1t9stz2.md",
       "sources": 4,
       "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/51.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/520.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/57.md",
+      "sources": 4,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
