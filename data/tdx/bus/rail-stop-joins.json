@@ -1,22 +1,8629 @@
 [
-  {"routeId":"bus-10291-m409tl","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR12","stopUid":"TPE13347"},{"lineCode":"BR","match":"stop-id","stationCode":"BR12","stopUid":"TPE13359"}]},
-  {"routeId":"bus-11031-1uy6q9k","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR20","stopUid":"TPE12291"},{"lineCode":"BR","match":"stop-id","stationCode":"BR20","stopUid":"TPE12369"}]},
-  {"routeId":"bus-10749-1le456k","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE17901"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE18055"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE17971"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE17991"}]},
-  {"routeId":"bus-10743-122xdb5","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE14951"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE15095"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE15007"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE15045"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE15027"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE152143"}]},
-  {"routeId":"bus-10751-9slmo6","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE16465"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE16527"},{"lineCode":"BR","match":"stop-id","stationCode":"BR05","stopUid":"TPE16471"},{"lineCode":"BR","match":"stop-id","stationCode":"BR05","stopUid":"TPE16523"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE16487"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE16505"},{"lineCode":"G","match":"stop-id","stationCode":"G08","stopUid":"TPE16501"}]},
-  {"routeId":"bus-11251-1k77spy","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR14","stopUid":"TPE42860"},{"lineCode":"BR","match":"stop-id","stationCode":"BR14","stopUid":"TPE42881"}]},
-  {"routeId":"bus-10744-54mlia","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE15749"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE15801"}]},
-  {"routeId":"bus-15730-ch952q","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"TPE56849"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE56844"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE56854"}]},
-  {"routeId":"bus-16153-rogy9m","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL21","stopUid":"TPE210283"},{"lineCode":"BL","match":"stop-id","stationCode":"BL21","stopUid":"TPE210286"},{"lineCode":"BL","match":"stop-id","stationCode":"BL22","stopUid":"TPE58049"},{"lineCode":"BL","match":"stop-id","stationCode":"BL22","stopUid":"TPE58081"},{"lineCode":"BR","match":"stop-id","stationCode":"BR20","stopUid":"TPE58064"},{"lineCode":"BR","match":"stop-id","stationCode":"BR20","stopUid":"TPE58066"},{"lineCode":"BR","match":"stop-id","stationCode":"BR23","stopUid":"TPE58053"},{"lineCode":"BR","match":"stop-id","stationCode":"BR23","stopUid":"TPE58077"}]},
-  {"routeId":"bus-10733-16s95ek","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR03","stopUid":"TPE14569"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE14559"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE14589"}]},
-  {"routeId":"bus-16174-cur4tb","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR15","stopUid":"TPE149130"}]},
-  {"routeId":"bus-18508-bc5p5i","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR15","stopUid":"TPE207228"}]},
-  {"routeId":"bus-16568-1vw5n6","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"TPE136166"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE136160"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE136172"}]},
-  {"routeId":"bus-16747-1385dz","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE155426"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE155476"},{"lineCode":"BR","match":"stop-id","stationCode":"BR05","stopUid":"TPE155429"},{"lineCode":"BR","match":"stop-id","stationCode":"BR05","stopUid":"TPE155473"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE155437"},{"lineCode":"G","match":"stop-id","stationCode":"G07","stopUid":"TPE155465"},{"lineCode":"G","match":"stop-id","stationCode":"G08","stopUid":"TPE155463"}]},
-  {"routeId":"bus-10741-1mw7flj","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE14671"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE14755"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"TPE14701"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"TPE14729"}]},
-  {"routeId":"bus-11021-4xsqsd","joins":[{"lineCode":"BR","match":"stop-id","stationCode":"BR03","stopUid":"TPE15461"},{"lineCode":"BR","match":"stop-id","stationCode":"BR03","stopUid":"TPE15541"}]},
-  {"routeId":"bus-10742-1nmeyi4","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"TPE17609"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE17501"},{"lineCode":"BR","match":"stop-id","stationCode":"BR01","stopUid":"TPE17713"},{"lineCode":"BR","match":"stop-id","stationCode":"BR03","stopUid":"TPE17575"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE17565"},{"lineCode":"BR","match":"stop-id","stationCode":"BR04","stopUid":"TPE17649"},{"lineCode":"G","match":"stop-id","stationCode":"G06","stopUid":"TPE17549"},{"lineCode":"G","match":"stop-id","stationCode":"G06","stopUid":"TPE17669"}]},
-  {"routeId":"bus-17940-1myxxbb","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"NWT197261"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT197254"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT197268"}]},
-  {"routeId":"bus-10143-1760j6r","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"NWT13881"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT13871"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT13891"}]},
-  {"routeId":"bus-17466-1gv8sw5","joins":[{"lineCode":"BL","match":"stop-id","stationCode":"BL18","stopUid":"NWT175021"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT175016"},{"lineCode":"BR","match":"stop-id","stationCode":"BR02","stopUid":"NWT175026"}]}
+  {
+    "routeId": "bus-10142-c9modx",
+    "joins": [
+      {
+        "stopUid": "TPE16913",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16923",
+        "stationCode": "BR01",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE56988",
+        "stationCode": "BR01",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16853",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16975",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16859",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16969",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16863",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16965",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16841",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16987",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16909",
+        "stationCode": "R03",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10143-1760j6r",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "NWT13881"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT13871"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT13891"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10231-vt3kco",
+    "joins": [
+      {
+        "stopUid": "TPE10051",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10085",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10089",
+        "stationCode": "BR13",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10023",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10117",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10017",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10123",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10015",
+        "stationCode": "BR23",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10061",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10075",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10065",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10071",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10065",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10071",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10232-q9qkgu",
+    "joins": [
+      {
+        "stopUid": "TPE35238",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35252",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181079",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35244",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35246",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35241",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35249",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35238",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35252",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35234",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35256",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35241",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35249",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35244",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE35246",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10241-1y5zm4y",
+    "joins": [
+      {
+        "stopUid": "TPE10267",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10269",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10245",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10291",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10251-1ykjj9w",
+    "joins": [
+      {
+        "stopUid": "TPE10427",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10455",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10401",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10481",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10483",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10387",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10495",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10381",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10501",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199486",
+        "stationCode": "BR23",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10439",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10443",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10433",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10449",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10427",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10455",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10419",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10463",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10433",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10449",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10439",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10443",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10261-rxrfra",
+    "joins": [
+      {
+        "stopUid": "TPE15867",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15907",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15909",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15875",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15877",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15899",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15901",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15859",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10281-sqedyo",
+    "joins": [
+      {
+        "stopUid": "NWT12693",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12695",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12697",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12699",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12693",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12695",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12697",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12699",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12759",
+        "stationCode": "O16",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12761",
+        "stationCode": "O16",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12621",
+        "stationCode": "O17",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12623",
+        "stationCode": "O17",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12663",
+        "stationCode": "O19",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12723",
+        "stationCode": "O19",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12657",
+        "stationCode": "O20",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12729",
+        "stationCode": "O20",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205758",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12621",
+        "stationCode": "Y18",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT12623",
+        "stationCode": "Y18",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10291-m409tl",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR12",
+        "stopUid": "TPE13347"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR12",
+        "stopUid": "TPE13359"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10292-jhhm26",
+    "joins": [
+      {
+        "stopUid": "TPE10923",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10975",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10913",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10915",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10917",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10981",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10983",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10967",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE163200",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE163201",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10293-1gv6icx",
+    "joins": [
+      {
+        "stopUid": "TPE19026",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19074",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19042",
+        "stationCode": "O09",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19058",
+        "stationCode": "O09",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19045",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19046",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19053",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE19054",
+        "stationCode": "R12",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10332-4ophfo",
+    "joins": [
+      {
+        "stopUid": "TPE14271",
+        "stationCode": "BL14",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14240",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14342",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57915",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57916",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14246",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14336",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14250",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14332",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14254",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14256",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14326",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14257",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14258",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14322",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14261",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14262",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14314",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14316",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14264",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14310",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14274",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14289",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14271",
+        "stationCode": "O07",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14294",
+        "stationCode": "O07",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14274",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14289",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14276",
+        "stationCode": "O09",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14287",
+        "stationCode": "O09",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14254",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14256",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14326",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10334-e532bg",
+    "joins": [
+      {
+        "stopUid": "TPE14762",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14752",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14773",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14710",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14797",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57919",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57920",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14716",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14792",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14720",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14789",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14724",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14726",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14786",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14728",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14730",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14784",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14736",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14738",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14780",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14781",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14724",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14726",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE14786",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10417-11g9c6c",
+    "joins": [
+      {
+        "stopUid": "TPE36093",
+        "stationCode": "A1",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36055",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36056",
+        "stationCode": "BL13",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36092",
+        "stationCode": "BL13",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36058",
+        "stationCode": "BL14",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36059",
+        "stationCode": "BL14",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36089",
+        "stationCode": "BL14",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36090",
+        "stationCode": "BL14",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36087",
+        "stationCode": "BL15",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36064",
+        "stationCode": "BL16",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36085",
+        "stationCode": "BL16",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36067",
+        "stationCode": "BL17",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36082",
+        "stationCode": "BL17",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36083",
+        "stationCode": "BL17",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36069",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36071",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36087",
+        "stationCode": "BR10",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36058",
+        "stationCode": "O07",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36059",
+        "stationCode": "O07",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36089",
+        "stationCode": "O07",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE218023",
+        "stationCode": "O14",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36046",
+        "stationCode": "O14",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36099",
+        "stationCode": "O14",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE56960",
+        "stationCode": "O14",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36039",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36040",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36105",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE129828",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE129829",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36110",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36029",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36030",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36113",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36114",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE36055",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10421-1axif7u",
+    "joins": [
+      {
+        "stopUid": "TPE10619",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10621",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10567",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10627",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10629",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE196691",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174176",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174179",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10599",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10431-8e0g7t",
+    "joins": [
+      {
+        "stopUid": "TPE11791",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11825",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11829",
+        "stationCode": "BR13",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11855",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE152125",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181267",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE152122",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE152134",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11801",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11815",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11805",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11811",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11805",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11811",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10432-911da0",
+    "joins": [
+      {
+        "stopUid": "TPE10767",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57561",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57564",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10729",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10731",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10807",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10735",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10799",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10801",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE58896",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10757",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10759",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10761",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10773",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE10775",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10711-6ghlb2",
+    "joins": [
+      {
+        "stopUid": "TPE17202",
+        "stationCode": "BR01",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17304",
+        "stationCode": "BR01",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17219",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17286",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17288",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17229",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17268",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17264",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17302",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17231",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE210485",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17237",
+        "stationCode": "G10",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17256",
+        "stationCode": "G10",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17231",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE210485",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17237",
+        "stationCode": "R08",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17256",
+        "stationCode": "R08",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17239",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17248",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10721-1jhxts3",
+    "joins": [
+      {
+        "stopUid": "TPE11485",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11487",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11521",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11457",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11545",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11461",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11541",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11467",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11467",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10722-uvw57e",
+    "joins": [
+      {
+        "stopUid": "TPE12437",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12465",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12467",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12457",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12457",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE125646",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE125647",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10731-aykedb",
+    "joins": [
+      {
+        "stopUid": "NWT14075",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14077",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14241",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14105",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14107",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14209",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14139",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14151",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14125",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14189",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14131",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14139",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10732-1ek4sje",
+    "joins": [
+      {
+        "stopUid": "NWT14305",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14307",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14467",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14335",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14337",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14435",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14403",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14391",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14355",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14415",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14411",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT14403",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10733-16s95ek",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR03",
+        "stopUid": "TPE14569"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE14559"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE14589"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10741-1mw7flj",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE14671"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE14755"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "TPE14701"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "TPE14729"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10742-1nmeyi4",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "TPE17609"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE17501"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE17713"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR03",
+        "stopUid": "TPE17575"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE17565"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE17649"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G06",
+        "stopUid": "TPE17549"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G06",
+        "stopUid": "TPE17669"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10743-122xdb5",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE14951"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE15095"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE15007"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE15045"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE15027"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE152143"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10744-54mlia",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE15749"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE15801"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10749-1le456k",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE17901"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE18055"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE17971"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE17991"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10751-9slmo6",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE16465"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE16527"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR05",
+        "stopUid": "TPE16471"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR05",
+        "stopUid": "TPE16523"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE16487"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE16505"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G08",
+        "stopUid": "TPE16501"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10821-1rxrcpa",
+    "joins": [
+      {
+        "stopUid": "TPE11121",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11123",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11051",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11115",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10831-158nebr",
+    "joins": [
+      {
+        "stopUid": "TPE16671",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10851-bsr9s",
+    "joins": [
+      {
+        "stopUid": "TPE188524",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23260",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23243",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23273",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23274",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23240",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23278",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23236",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23282",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23283",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23232",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23233",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23285",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23229",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23288",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23225",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23292",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23223",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23294",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23219",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23298",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23299",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE188524",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE23260",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10932-xxr9ct",
+    "joins": [
+      {
+        "stopUid": "TPE40435",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40450",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40432",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40453",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40454",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40413",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40474",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40409",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40410",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40476",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40477",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40432",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40453",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40454",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40428",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE40457",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-10941-shxu39",
+    "joins": [
+      {
+        "stopUid": "TPE13593",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13597",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13589",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13603",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11011-114izuy",
+    "joins": [
+      {
+        "stopUid": "TPE11355",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11389",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11393",
+        "stationCode": "BR13",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11323",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11425",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11427",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11365",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11379",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11369",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11375",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11369",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11375",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11021-4xsqsd",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR03",
+        "stopUid": "TPE15461"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR03",
+        "stopUid": "TPE15541"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11022-vgsckk",
+    "joins": [
+      {
+        "stopUid": "TPE15647",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15659",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11031-1uy6q9k",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR20",
+        "stopUid": "TPE12291"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR20",
+        "stopUid": "TPE12369"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11111-6lb3gp",
+    "joins": [
+      {
+        "stopUid": "TPE16055",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16087",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE15997",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16111",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE200215",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE221862",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11121-1vg8q3y",
+    "joins": [
+      {
+        "stopUid": "TPE17249",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17251",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17277",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17279",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE222808",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11152-19z4j3z",
+    "joins": [
+      {
+        "stopUid": "TPE41547",
+        "stationCode": "BL17",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41585",
+        "stationCode": "BL17",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41566",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41542",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41590",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41536",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41596",
+        "stationCode": "G14",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41539",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41593",
+        "stationCode": "G15",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41542",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41590",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41539",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41593",
+        "stationCode": "O08",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41534",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41600",
+        "stationCode": "O11",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41562",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41536",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41596",
+        "stationCode": "R11",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41534",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41600",
+        "stationCode": "R13",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41531",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41603",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41527",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41528",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41606",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41607",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41611",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE151101",
+        "stationCode": "R22A",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41506",
+        "stationCode": "R22A",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41507",
+        "stationCode": "R22A",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE41627",
+        "stationCode": "R22A",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11201-1tfxspz",
+    "joins": [
+      {
+        "stopUid": "TPE17113",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57642",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17035",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17109",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11202-yhhowx",
+    "joins": [
+      {
+        "stopUid": "TPE17173",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17175",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17169",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE17181",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11251-1k77spy",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR14",
+        "stopUid": "TPE42860"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR14",
+        "stopUid": "TPE42881"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11812-1dm4cr0",
+    "joins": [
+      {
+        "stopUid": "TPE43183",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43189",
+        "stationCode": "BL13",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43164",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43207",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43208",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43166",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43167",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43205",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43169",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43170",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43201",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43177",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43195",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE171043",
+        "stationCode": "G10",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43180",
+        "stationCode": "G10",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43177",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43195",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE171043",
+        "stationCode": "R08",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43180",
+        "stationCode": "R08",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE43183",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11833-w0iw83",
+    "joins": [
+      {
+        "stopUid": "TPE11952",
+        "stationCode": "BL15",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11954",
+        "stationCode": "BL15",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12048",
+        "stationCode": "BL15",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11964",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11966",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12034",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12036",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11960",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12040",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12042",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11952",
+        "stationCode": "BR10",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11954",
+        "stationCode": "BR10",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11946",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12054",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11942",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12060",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12004",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12010",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12012",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11990",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12016",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11986",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12020",
+        "stationCode": "G08",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11980",
+        "stationCode": "G09",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11946",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12054",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11980",
+        "stationCode": "O05",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11960",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12040",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12042",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-11881-1jy4dan",
+    "joins": [
+      {
+        "stopUid": "TPE12382",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12397",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12398",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12379",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12402",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12379",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12402",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE190483",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12370",
+        "stationCode": "O12",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12416",
+        "stationCode": "O12",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12438",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12336",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12450",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59751",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59752",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59753",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15312-1f875qa",
+    "joins": [
+      {
+        "stopUid": "TPE11999",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12029",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE58422",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11993",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12037",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11985",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12045",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12047",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11979",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12051",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57058",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11973",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12057",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11965",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12065",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11961",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12069",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11953",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12077",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12079",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12013",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15321-1oyve9o",
+    "joins": [
+      {
+        "stopUid": "TPE11659",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE58415",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11653",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11663",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15331-28lux8",
+    "joins": [
+      {
+        "stopUid": "TPE12171",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12235",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE58900",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12175",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12227",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12207",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12157",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12249",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12151",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155825",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15334-ifma0u",
+    "joins": [
+      {
+        "stopUid": "TPE30161",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30185",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30134",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30212",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30138",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30139",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30208",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30141",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30204",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30205",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30144",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30201",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30148",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30197",
+        "stationCode": "BR19",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30150",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30195",
+        "stationCode": "BR20",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30154",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30155",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30191",
+        "stationCode": "BR21",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30158",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30188",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30187",
+        "stationCode": "BR23",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30161",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE30185",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15341-jvd4ce",
+    "joins": [
+      {
+        "stopUid": "TPE13175",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13177",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13179",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE13181",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15361-1n9b1as",
+    "joins": [
+      {
+        "stopUid": "TPE12873",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202192",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202193",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12825",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12827",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12913",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12831",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12907",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57565",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59013",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12859",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE12879",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15373-16b0120",
+    "joins": [
+      {
+        "stopUid": "TPE199201",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199226",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16691",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE190507",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199201",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199226",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16691",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE190507",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16682",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16679",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15531-1xp16v3",
+    "joins": [
+      {
+        "stopUid": "TPE11235",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11237",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11239",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE11241",
+        "stationCode": "R19",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15551-16pf005",
+    "joins": [
+      {
+        "stopUid": "TPE16751",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE16753",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15708-1jseczn",
+    "joins": [
+      {
+        "stopUid": "TPE170429",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29469",
+        "stationCode": "BL20",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29416",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29473",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE150554",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29432",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29454",
+        "stationCode": "BR09",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE148810",
+        "stationCode": "O06",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29435",
+        "stationCode": "O06",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29436",
+        "stationCode": "O06",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29450",
+        "stationCode": "O06",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE163202",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE172176",
+        "stationCode": "R02",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29427",
+        "stationCode": "R03",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29460",
+        "stationCode": "R03",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE150584",
+        "stationCode": "R04",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29429",
+        "stationCode": "R04",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29457",
+        "stationCode": "R04",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29458",
+        "stationCode": "R04",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE150554",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29432",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29454",
+        "stationCode": "R05",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE152189",
+        "stationCode": "R06",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE152190",
+        "stationCode": "R06",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE148810",
+        "stationCode": "R07",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29435",
+        "stationCode": "R07",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29436",
+        "stationCode": "R07",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29450",
+        "stationCode": "R07",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE29439",
+        "stationCode": "R09",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE170429",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-15730-ch952q",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "TPE56849"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE56844"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE56854"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16125-p3mbma",
+    "joins": [
+      {
+        "stopUid": "TPE202637",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202638",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57426",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57435",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202641",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202644",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57447",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57450",
+        "stationCode": "BR18",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16153-rogy9m",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL21",
+        "stopUid": "TPE210283"
+      },
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL21",
+        "stopUid": "TPE210286"
+      },
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL22",
+        "stopUid": "TPE58049"
+      },
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL22",
+        "stopUid": "TPE58081"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR20",
+        "stopUid": "TPE58064"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR20",
+        "stopUid": "TPE58066"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR23",
+        "stopUid": "TPE58053"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR23",
+        "stopUid": "TPE58077"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16166-xd3t9w",
+    "joins": [
+      {
+        "stopUid": "TPE109818",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59158",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE109820",
+        "stationCode": "BR13",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59162",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE59163",
+        "stationCode": "R14",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16174-cur4tb",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR15",
+        "stopUid": "TPE149130"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16191-1srfff6",
+    "joins": [
+      {
+        "stopUid": "NWT110047",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT110048",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT110086",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT110087",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16207-c8ab6o",
+    "joins": [
+      {
+        "stopUid": "NWT110905",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT110906",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16243-1oe6dbs",
+    "joins": [
+      {
+        "stopUid": "NWT112403",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112414",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112394",
+        "stationCode": "G03A",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112423",
+        "stationCode": "G03A",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT202830",
+        "stationCode": "G03A",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT202994",
+        "stationCode": "G03A",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112405",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112406",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112411",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112386",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112430",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112405",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112406",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT112411",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16265-1eo7ygs",
+    "joins": [
+      {
+        "stopUid": "NWT113403",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113432",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113406",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113429",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194179",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113411",
+        "stationCode": "K08",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113424",
+        "stationCode": "K08",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113419",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113419",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16274-rtmd7i",
+    "joins": [
+      {
+        "stopUid": "NWT113920",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113953",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113923",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113950",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194181",
+        "stationCode": "K07",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113928",
+        "stationCode": "K08",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113945",
+        "stationCode": "K08",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113934",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113940",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113934",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT113940",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16282-15cxujj",
+    "joins": [
+      {
+        "stopUid": "NWT150933",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150934",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150917",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150949",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150950",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150918",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150919",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150947",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT150948",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16288-s7u8ft",
+    "joins": [
+      {
+        "stopUid": "NWT114546",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16294-116si34",
+    "joins": [
+      {
+        "stopUid": "NWT114874",
+        "stationCode": "BL20",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114889",
+        "stationCode": "BL20",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114870",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114893",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114858",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114859",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114904",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114858",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114859",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114904",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16296-mwlzvi",
+    "joins": [
+      {
+        "stopUid": "NWT115005",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT115006",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114995",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114996",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT115015",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114995",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT114996",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT115015",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16397-1wlngau",
+    "joins": [
+      {
+        "stopUid": "NWT122243",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122244",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122259",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT153895",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT198558",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT198559",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16405-1nooeog",
+    "joins": [
+      {
+        "stopUid": "NWT122385",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122402",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122402",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122388",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122417",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122421",
+        "stationCode": "Y17",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122422",
+        "stationCode": "Y17",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16407-kbzjkc",
+    "joins": [
+      {
+        "stopUid": "NWT122492",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122517",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122496",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122513",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122492",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT122517",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16418-k3373y",
+    "joins": [
+      {
+        "stopUid": "NWT123241",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123256",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123243",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123254",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123245",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123246",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123251",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123233",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123264",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123245",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123246",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123251",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16420-1glcirl",
+    "joins": [
+      {
+        "stopUid": "NWT123349",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123364",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123351",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123362",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123353",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123354",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123359",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123341",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123372",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123353",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123354",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT123359",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16430-1egyceo",
+    "joins": [
+      {
+        "stopUid": "NWT124140",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124141",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16431-xe96l7",
+    "joins": [
+      {
+        "stopUid": "NWT124175",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124176",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124167",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124168",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT152362",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154144",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124164",
+        "stationCode": "V06",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT152364",
+        "stationCode": "V06",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124160",
+        "stationCode": "V07",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT152368",
+        "stationCode": "V07",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT172189",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT198041",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT198042",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124157",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT152371",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124156",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT152372",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16432-f2wwq",
+    "joins": [
+      {
+        "stopUid": "NWT124191",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT124192",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16440-1x744c7",
+    "joins": [
+      {
+        "stopUid": "TPE125506",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16463-1q16xek",
+    "joins": [
+      {
+        "stopUid": "NWT127448",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16464-1qc47nj",
+    "joins": [
+      {
+        "stopUid": "NWT127495",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127496",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127493",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127498",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127499",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127467",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127526",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199681",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127465",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127528",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127529",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT187474",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127470",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127520",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127521",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127522",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199681",
+        "stationCode": "Y17",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16466-k7symr",
+    "joins": [
+      {
+        "stopUid": "NWT127575",
+        "stationCode": "O04",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127588",
+        "stationCode": "O04",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127589",
+        "stationCode": "O04",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127566",
+        "stationCode": "Y13",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127602",
+        "stationCode": "Y13",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16471-1usi7cd",
+    "joins": [
+      {
+        "stopUid": "NWT127874",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127875",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127870",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127878",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127868",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127880",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127881",
+        "stationCode": "BL09",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT127873",
+        "stationCode": "Y16",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16481-1jwxemc",
+    "joins": [
+      {
+        "stopUid": "NWT128412",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128414",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128464",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128465",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128461",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT148647",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128426",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128427",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128448",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128449",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128428",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128429",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128446",
+        "stationCode": "G05",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128432",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128433",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128442",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128443",
+        "stationCode": "G06",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128435",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128440",
+        "stationCode": "G07",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128426",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128427",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128448",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128449",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16486-1mfgpkb",
+    "joins": [
+      {
+        "stopUid": "NWT128846",
+        "stationCode": "BL05",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128857",
+        "stationCode": "BL05",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128849",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128850",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128853",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128852",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT128822",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT151070",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16487-17yyq0s",
+    "joins": [
+      {
+        "stopUid": "NWT220378",
+        "stationCode": "BL05",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220389",
+        "stationCode": "BL05",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220381",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220382",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220385",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220384",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16489-awy32w",
+    "joins": [
+      {
+        "stopUid": "NWT129020",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129021",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129005",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129006",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129024",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129025",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129002",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129028",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16490-ubly7y",
+    "joins": [
+      {
+        "stopUid": "NWT188730",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT188731",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192790",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129074",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129075",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129065",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129083",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT188730",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT188731",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192790",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16491-snwksl",
+    "joins": [
+      {
+        "stopUid": "NWT129120",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129131",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129132",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129122",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129123",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129127",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129122",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129123",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129127",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16492-g7d5vn",
+    "joins": [
+      {
+        "stopUid": "NWT129168",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129175",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16493-1vmmryr",
+    "joins": [
+      {
+        "stopUid": "NWT129211",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16498-lpu568",
+    "joins": [
+      {
+        "stopUid": "NWT129529",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129525",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129526",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129533",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129525",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129526",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT129533",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16506-p30phu",
+    "joins": [
+      {
+        "stopUid": "TPE130067",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130093",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130069",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130091",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130072",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130088",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130074",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130086",
+        "stationCode": "BR22",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130073",
+        "stationCode": "BR23",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130087",
+        "stationCode": "BR23",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130072",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE130088",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16519-ekz8xa",
+    "joins": [
+      {
+        "stopUid": "NWT223263",
+        "stationCode": "O18",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16544-1xojiqc",
+    "joins": [
+      {
+        "stopUid": "NWT134061",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134057",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134058",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134065",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134057",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134058",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT134065",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16568-1vw5n6",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "TPE136166"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE136160"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR01",
+        "stopUid": "TPE136172"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16582-18u15ua",
+    "joins": [
+      {
+        "stopUid": "NWT183884",
+        "stationCode": "O13",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183885",
+        "stationCode": "O13",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138397",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183880",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183888",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183889",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183879",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT183890",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199470",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199471",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16586-10ogmj6",
+    "joins": [
+      {
+        "stopUid": "NWT184269",
+        "stationCode": "BL01",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT184270",
+        "stationCode": "BL01",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138653",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT184269",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT184270",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT222417",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138636",
+        "stationCode": "LB02",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138655",
+        "stationCode": "LB02",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138631",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138632",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138658",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138659",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138660",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16590-1jmrh9t",
+    "joins": [
+      {
+        "stopUid": "NWT138955",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138956",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138957",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT138958",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16592-1jir87z",
+    "joins": [
+      {
+        "stopUid": "NWT139192",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139193",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171201",
+        "stationCode": "A3",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT223262",
+        "stationCode": "O18",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139178",
+        "stationCode": "O19",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139165",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT149423",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139192",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139193",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171201",
+        "stationCode": "Y20",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16593-1jk317w",
+    "joins": [
+      {
+        "stopUid": "NWT139247",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139275",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139276",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139244",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139279",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139234",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139235",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139288",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16599-1079q4k",
+    "joins": [
+      {
+        "stopUid": "NWT204894",
+        "stationCode": "BL05",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139835",
+        "stationCode": "BL06",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139824",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139833",
+        "stationCode": "BL07",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139832",
+        "stationCode": "Y16",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16601-1etamm2",
+    "joins": [
+      {
+        "stopUid": "NWT139934",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139937",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139938",
+        "stationCode": "BL03",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16602-12hhet7",
+    "joins": [
+      {
+        "stopUid": "NWT139993",
+        "stationCode": "BL01",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT184268",
+        "stationCode": "BL01",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139983",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139987",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139993",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139994",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT184268",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT222416",
+        "stationCode": "LB01",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139975",
+        "stationCode": "LB02",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139996",
+        "stationCode": "LB02",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139970",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139971",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT139999",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140000",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140001",
+        "stationCode": "LB03",
+        "lineCode": "LB",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16610-18cb7a4",
+    "joins": [
+      {
+        "stopUid": "NWT140558",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140559",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140585",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140586",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140562",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140582",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT204889",
+        "stationCode": "K09",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT206086",
+        "stationCode": "K09",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT204889",
+        "stationCode": "Y08",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT206086",
+        "stationCode": "Y08",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16611-1fqxc6p",
+    "joins": [
+      {
+        "stopUid": "NWT140605",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140651",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140608",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140648",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140623",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140633",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140618",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140638",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140620",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140636",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140623",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140633",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16612-286kjm",
+    "joins": [
+      {
+        "stopUid": "NWT140668",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140669",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140719",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140720",
+        "stationCode": "G01",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140679",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140709",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192684",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192685",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140689",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140699",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140679",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140709",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192684",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT192685",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140684",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140704",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140686",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140702",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140689",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140699",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16613-9tiz07",
+    "joins": [
+      {
+        "stopUid": "NWT140750",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140790",
+        "stationCode": "G02",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140752",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140788",
+        "stationCode": "G03",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140754",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140755",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140785",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140742",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140798",
+        "stationCode": "K06",
+        "lineCode": "K",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140765",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140775",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140754",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140755",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140785",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140760",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140780",
+        "stationCode": "Y09",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140762",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140778",
+        "stationCode": "Y10",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140765",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT140775",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16619-1xdhapj",
+    "joins": [
+      {
+        "stopUid": "NWT141169",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT141170",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205226",
+        "stationCode": "V26",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205227",
+        "stationCode": "V26",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT219741",
+        "stationCode": "V27",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16620-1suj2pf",
+    "joins": [
+      {
+        "stopUid": "NWT174320",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT174321",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT141203",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT141205",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16632-12dll5u",
+    "joins": [
+      {
+        "stopUid": "NWT142112",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142113",
+        "stationCode": "BL21",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142102",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142103",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142122",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142102",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142103",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT142122",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16663-dai34w",
+    "joins": [
+      {
+        "stopUid": "NWT147404",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT147406",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16667-17k7lte",
+    "joins": [
+      {
+        "stopUid": "NWT147592",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16668-dml2z3",
+    "joins": [
+      {
+        "stopUid": "NWT151109",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT151110",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16669-ysedk0",
+    "joins": [
+      {
+        "stopUid": "NWT147666",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT147663",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT147674",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT218964",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16671-wimon1",
+    "joins": [
+      {
+        "stopUid": "NWT147773",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT147774",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16673-8psndz",
+    "joins": [
+      {
+        "stopUid": "NWT147853",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT222807",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16674-7kxi82",
+    "joins": [
+      {
+        "stopUid": "NWT147929",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT222812",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16686-109bvvz",
+    "joins": [
+      {
+        "stopUid": "NWT149467",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT149474",
+        "stationCode": "O21",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16715-r1841u",
+    "joins": [
+      {
+        "stopUid": "NWT152347",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16729-1vfpb64",
+    "joins": [
+      {
+        "stopUid": "NWT153962",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT153963",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT153976",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT153977",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16732-1fz73gj",
+    "joins": [
+      {
+        "stopUid": "NWT154190",
+        "stationCode": "R26",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154193",
+        "stationCode": "R26",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154185",
+        "stationCode": "R27",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154198",
+        "stationCode": "R27",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154184",
+        "stationCode": "V01",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154185",
+        "stationCode": "V01",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154198",
+        "stationCode": "V01",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154199",
+        "stationCode": "V01",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154182",
+        "stationCode": "V02",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154202",
+        "stationCode": "V02",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT196442",
+        "stationCode": "V02",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154179",
+        "stationCode": "V04",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154205",
+        "stationCode": "V04",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT196404",
+        "stationCode": "V04",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154177",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154178",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154206",
+        "stationCode": "V05",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220195",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT220196",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT210689",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154163",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154164",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154218",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT154219",
+        "stationCode": "V28",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16735-1hl5oc",
+    "joins": [
+      {
+        "stopUid": "NWT194034",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194043",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194038",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194039",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194034",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194043",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16747-1385dz",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE155426"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR04",
+        "stopUid": "TPE155476"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR05",
+        "stopUid": "TPE155429"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR05",
+        "stopUid": "TPE155473"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE155437"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G07",
+        "stopUid": "TPE155465"
+      },
+      {
+        "lineCode": "G",
+        "match": "stop-id",
+        "stationCode": "G08",
+        "stopUid": "TPE155463"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16748-mcgnip",
+    "joins": [
+      {
+        "stopUid": "NWT155513",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155547",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155548",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155510",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155551",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155500",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155501",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT155560",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16749-183fgop",
+    "joins": [
+      {
+        "stopUid": "TPE155576",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155577",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155590",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155591",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE222813",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-16750-1q1qvay",
+    "joins": [
+      {
+        "stopUid": "TPE155567",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155568",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155574",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE155575",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE222818",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17022-ajg6s6",
+    "joins": [
+      {
+        "stopUid": "TPE163398",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE218078",
+        "stationCode": "BR08",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE163386",
+        "stationCode": "O09",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE163394",
+        "stationCode": "R06",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17311-qo9guo",
+    "joins": [
+      {
+        "stopUid": "NWT194051",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194060",
+        "stationCode": "O02",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194055",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194056",
+        "stationCode": "O03",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194051",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT194060",
+        "stationCode": "Y11",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17332-dkzas9",
+    "joins": [
+      {
+        "stopUid": "NWT171434",
+        "stationCode": "BL22",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171430",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171431",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171438",
+        "stationCode": "BL23",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171430",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171431",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171438",
+        "stationCode": "BR24",
+        "lineCode": "BR",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17360-1kzy1ar",
+    "joins": [
+      {
+        "stopUid": "NWT171626",
+        "stationCode": "A1",
+        "lineCode": "A",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171624",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171625",
+        "stationCode": "BL12",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171615",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171616",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171633",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171634",
+        "stationCode": "O50",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171610",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171638",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171639",
+        "stationCode": "O51",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171606",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171607",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171642",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171643",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171593",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171594",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171656",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT219195",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171624",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT171625",
+        "stationCode": "R10",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17436-9fuy9p",
+    "joins": [
+      {
+        "stopUid": "TPE174510",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174511",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174556",
+        "stationCode": "BR14",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174515",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174553",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174543",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174502",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174563",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174499",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE174565",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17466-1gv8sw5",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "NWT175021"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT175016"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT175026"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17516-gtmc1c",
+    "joins": [
+      {
+        "stopUid": "NWT178547",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178582",
+        "stationCode": "BL08",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178581",
+        "stationCode": "O17",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199767",
+        "stationCode": "O17",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178538",
+        "stationCode": "Y13",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178590",
+        "stationCode": "Y13",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178587",
+        "stationCode": "Y14",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199673",
+        "stationCode": "Y14",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178545",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178584",
+        "stationCode": "Y15",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178547",
+        "stationCode": "Y17",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178582",
+        "stationCode": "Y17",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT178581",
+        "stationCode": "Y18",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT199767",
+        "stationCode": "Y18",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17555-1bl689t",
+    "joins": [
+      {
+        "stopUid": "TPE181014",
+        "stationCode": "BL19",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE180970",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181008",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17556-24kfx2",
+    "joins": [
+      {
+        "stopUid": "TPE188501",
+        "stationCode": "BL10",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181052",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181062",
+        "stationCode": "BL11",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181052",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181062",
+        "stationCode": "G12",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181049",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181050",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE181064",
+        "stationCode": "G13",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17700-hiir50",
+    "joins": [
+      {
+        "stopUid": "NWT187050",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT187051",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT187064",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT187065",
+        "stationCode": "BL02",
+        "lineCode": "BL",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17929-1iinuxk",
+    "joins": [
+      {
+        "stopUid": "TPE196867",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE196871",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17940-1myxxbb",
+    "joins": [
+      {
+        "lineCode": "BL",
+        "match": "stop-id",
+        "stationCode": "BL18",
+        "stopUid": "NWT197261"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT197254"
+      },
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR02",
+        "stopUid": "NWT197268"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-17993-17rfzq6",
+    "joins": [
+      {
+        "stopUid": "TPE199695",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199696",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199692",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE199698",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-18044-bxfl5o",
+    "joins": [
+      {
+        "stopUid": "TPE202155",
+        "stationCode": "BL18",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202127",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202182",
+        "stationCode": "BR15",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202131",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202132",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202178",
+        "stationCode": "BR16",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202134",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202135",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202174",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202175",
+        "stationCode": "BR17",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202148",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE202160",
+        "stationCode": "G19",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-18268-1y1prcm",
+    "joins": [
+      {
+        "stopUid": "NWT205654",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205655",
+        "stationCode": "O52",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205638",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205639",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205658",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205659",
+        "stationCode": "O53",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205635",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT205662",
+        "stationCode": "O54",
+        "lineCode": "O",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-18508-bc5p5i",
+    "joins": [
+      {
+        "lineCode": "BR",
+        "match": "stop-id",
+        "stationCode": "BR15",
+        "stopUid": "TPE207228"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-18868-eynulm",
+    "joins": [
+      {
+        "stopUid": "TPE211203",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE211212",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE222810",
+        "stationCode": "R25",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-19068-mwp752",
+    "joins": [
+      {
+        "stopUid": "NWT212706",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212707",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212690",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212691",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212721",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212722",
+        "stationCode": "V09",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212723",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-19088-1ub7de0",
+    "joins": [
+      {
+        "stopUid": "NWT212886",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212887",
+        "stationCode": "R28",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212877",
+        "stationCode": "V07",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212895",
+        "stationCode": "V07",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212875",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212897",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212898",
+        "stationCode": "V08",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212870",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212903",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "NWT212904",
+        "stationCode": "V10",
+        "lineCode": "V",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-19298-1nov2kk",
+    "joins": [
+      {
+        "stopUid": "TPE215510",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE215511",
+        "stationCode": "BR11",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE215510",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE215511",
+        "stationCode": "G16",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE215506",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE215515",
+        "stationCode": "G18",
+        "lineCode": "G",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-19719-1q775e5",
+    "joins": [
+      {
+        "stopUid": "TPE220941",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE220945",
+        "stationCode": "R17",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-19776-1jv6wto",
+    "joins": [
+      {
+        "stopUid": "TPE223747",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223748",
+        "stationCode": "BR04",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223737",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223738",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223761",
+        "stationCode": "G04",
+        "lineCode": "G",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223737",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223738",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE223761",
+        "stationCode": "Y07",
+        "lineCode": "Y",
+        "match": "stop-id"
+      }
+    ]
+  },
+  {
+    "routeId": "bus-810-fe2aqn",
+    "joins": [
+      {
+        "stopUid": "TPE18241",
+        "stationCode": "BL16",
+        "lineCode": "BL",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18103",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18259",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE57540",
+        "stationCode": "BR06",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18107",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18255",
+        "stationCode": "BR07",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18135",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18225",
+        "stationCode": "BR12",
+        "lineCode": "BR",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18145",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18215",
+        "stationCode": "O10",
+        "lineCode": "O",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18207",
+        "stationCode": "R15",
+        "lineCode": "R",
+        "match": "stop-id"
+      },
+      {
+        "stopUid": "TPE18201",
+        "stationCode": "R16",
+        "lineCode": "R",
+        "match": "stop-id"
+      }
+    ]
+  }
 ]

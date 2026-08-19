@@ -59,16 +59,6 @@
       "line": 130
     },
     {
-      "name": "BUS_ROUTES",
-      "file": "lib/bus/routes.ts",
-      "line": 164
-    },
-    {
-      "name": "BUS_STOPS",
-      "file": "lib/bus/routes.ts",
-      "line": 168
-    },
-    {
       "name": "BUS_STOP_SEQUENCES",
       "file": "lib/bus/routes.ts",
       "line": 169
