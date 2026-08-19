@@ -77,6 +77,16 @@ not as a loop.[^zhwikiversity-108] This is a direct conflict between a primary
 field and a secondary description; both values are published here and neither
 is picked.
 
+The confirmed stop sequence never leaves Yangmingshan National Park: from
+the Yangmingshan bus terminal it calls at the park's own visitor
+infrastructure — the park headquarters, Yangmingshuwu (the former
+presidential retreat), the Xiaoyoukeng service station, Menghuan Lake and
+Lengshuikeng — before returning via the Qingshan recreation
+area.[^tdx-bus] No stop on either direction is named for an MRT station,
+and the curated stop-ID join set carries no confirmed MRT connection for
+this route at all — a rider transfers to it at the mountain-top terminal
+itself, not partway along an urban corridor.[^tdx-bus]
+
 ## History
 
 The same wiki records a 20 September 2012 headway change, from weekday 20–30

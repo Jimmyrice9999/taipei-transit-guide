@@ -59,6 +59,13 @@ zone, and 欣欣客運華江站 as the service contact.[^ebus-907cb] The page st
 that the 0710 working starts from 臺大綜合體育館 (NTU Sports Complex) rather
 than the 萬華 terminus: 「0710班次發車起點為臺大綜合體育館」.[^ebus-907cb]
 
+The confirmed stop sequences run the same 萬華–Gongguan–freeway–Xizhi
+corridor as plain 907, with the five named timed workings covering
+different partial spans of it — the 0805 and 2100 departures, for example,
+start only from the freeway section at 自來水處(辛亥) rather than from
+萬華.[^tdx-bus] As on plain 907, MRT-named stops on the Wanhua/Gongguan end
+carry no confirmed join in the curated set.[^tdx-bus]
+
 ## Timed commuter workings
 
 TDX records five subroutes for this route, each named for a specific
