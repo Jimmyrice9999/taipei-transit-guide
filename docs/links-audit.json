@@ -1,5 +1,5 @@
 {
-  "pages": 837,
+  "pages": 842,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -2323,6 +2323,66 @@
       "page": "/bus/routes/minibus/minibus-9-yjn69t/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/1-11z5rqx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/1-11z5rqx/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/2-wfpa6f/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/2-wfpa6f/",
+      "name": "Taipei Xiaocheng",
+      "href": "/rail/stations/k03/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/2-wfpa6f/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/3-fup9rl/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/3-fup9rl/",
+      "name": "Taipei Xiaocheng",
+      "href": "/rail/stations/k03/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/3-fup9rl/",
+      "name": "Cardinal Tien Hospital An Kang Branch",
+      "href": "/rail/stations/k04/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/5-1t9stz2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/5-1t9stz2/",
+      "name": "Taipei Xiaocheng",
+      "href": "/rail/stations/k03/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/6-1cynav/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/6-1cynav/",
+      "name": "Ankang",
+      "href": "/rail/stations/k06/"
     },
     {
       "page": "/bus/routes/new-taipei/985/",
