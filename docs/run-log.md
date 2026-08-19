@@ -11120,6 +11120,24 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — jump-frog buses, batch 2
+
+Built 20 routes: 湯泉-大坪林-湯泉, 捷運新店站-坪林, 三峽-臺北市信義區,
+捷運景安站-三峽臺北大學, 蘆洲-南港, 新店北新路-政大一街, 五股-內湖科技園區,
+林口(文化三路)-捷運圓山站, 蘆洲中正路-士林中正路, 林口-捷運圓山站,
+三峽-捷運永寧站, 泰山-內湖(直達), 中原中平路口-建國中學, 林口-板橋,
+湯泉-十四張-大坪林, 捷運中和站-政大附中, 三重-內科, 三峽-內科,
+土城金城路-樹林大安路 and 淡水-內湖科技園區. Body prose is 2,327
+whitespace-delimited words. Exact New Taipei route-service rows cover 20/20.
+The batch has 70 confirmed geometry-only MRT stop-ID joins, 102 candidates
+rejected as too far, and 0 ambiguous candidates. The full category and TDX
+identities are retained without inferring the meaning of route names or
+commuter patterns. Sources are the full TDX bus snapshot, the full New Taipei
+跳蛙公車 dataset, the full New Taipei route-service API and the New Taipei
+transport-management page. Route history, predecessor/renumbering, dated
+operator changes, corridor rationale and eligibility remain TBC where those
+fetched primary sources do not establish them.
+
 ### New Taipei — jump-frog buses, batch 1
 
 Built 20 routes: 淡水-國道1號-南港車站, 汐止-台北101, 853跳蛙, 939跳蛙,
