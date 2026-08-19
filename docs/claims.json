@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 3429,
-    "tbc": 2112,
+    "sourced": 3487,
+    "tbc": 2192,
     "asserted": 32,
     "meta": 42
   },
@@ -2266,6 +2266,166 @@
     },
     {
       "file": "content/bus/routes/new-taipei/928.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/930-1xsn9o1.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/930-jf5gk4.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/932-1ktf5d5.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/932-qgi8j7.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/933.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/935.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/936.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/936a.md",
+      "sources": 4,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/937-1ilpoxj.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/937-1xezn80.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/937a.md",
+      "sources": 4,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/938.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/939-12icvyr.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/939-13o56dv.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/940.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/941.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/943.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/945.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/946-i8ujro.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/946-orqygq.md",
       "sources": 4,
       "sourced": 3,
       "tbc": 4,
