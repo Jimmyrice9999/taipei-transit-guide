@@ -11120,6 +11120,27 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — general buses, batch 3
+
+Built 20 identities from the official general-bus category slice: 591–597,
+62, 624 and its separately filed 綠野香坡 identity, 629 and its separately
+filed 區 identity, 631, 635–640 including the separately filed 638副
+identity. Body prose is 2,340 whitespace-delimited words. Exact New Taipei
+route-service rows cover 19/20; the unmatched identity keeps its service
+fields TBC. The batch has 210 confirmed geometry-only MRT stop-ID joins, 480
+candidates rejected as too far, and 0 ambiguous candidates. Separately filed
+variants remain distinct records; no suffix meaning was inferred. Sources are
+the full TDX snapshot (https://tdx.transportdata.tw/), the full New Taipei
+general-bus catalogue
+(https://data.ntpc.gov.tw/datasets/45572534-e503-4ece-afea-54440bf2624a),
+the exact current route-service API
+(https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000),
+and the New Taipei transport-management page
+(https://www.traffic.ntpc.gov.tw/home.jsp?id=f06672ba2aadbd3c). Route
+history, predecessor/renumbering, dated operator changes, corridor rationale
+and eligibility remain TBC where these fetched primary sources do not
+establish them.
+
 ### New Taipei — general buses, batch 2
 
 Built 20 identities from the official general-bus category slice: 570–590,
