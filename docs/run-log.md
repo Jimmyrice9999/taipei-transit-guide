@@ -11104,6 +11104,10 @@ The nine special-shuttle moves are 北士科1, 兒樂1號線, 花季專車124, �
 
 The retained unclassified pages state the catalogue labels and keep unsupported route length, service span, headway, fare, route history and corridor rationale TBC. The exact route pages support current identity and published schedule fields only. The geometry-only join run uses stop IDs and coordinates; no name similarity was used. No added route produced an ambiguous candidate.
 
+### New Taipei — event-shuttle subgroup
+
+Built 4 routes: 漁人碼頭煙火專車 and the three 新九號停車場 services to 黃金博物館, 水湳洞停車場 and 九份老街. Body prose is 473 whitespace-delimited words. Exact New Taipei route-service rows cover 4/4; event dates, route history, predecessor/renumbering, dated operator changes and route-specific eligibility remain TBC unless a dated primary notice is found. The subgroup has 2 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. The category research file records the route identities and numeric-identity audit. Sources are the full TDX bus snapshot, the full New Taipei 活動專車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
+
 ### New Taipei audit and architecture
 
 The New Taipei source hierarchy is documented in `docs/bus-architecture.md`: TDX supplies normalized identity, municipality, operators, direction/variant data, stop sequences and shapes; New Taipei City Department of Transportation supplies route-type catalogues and the full route-service API; official notices/PDFs and operator pages are searched for descriptive/history claims; Taipei eBus is not authoritative for New Taipei-specific facts. The full datasets were fetched from `https://data.ntpc.gov.tw/openapi/`, `https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000` and the seven category dataset pages listed in each research file.
