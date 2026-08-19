@@ -56,6 +56,12 @@ holiday departures.[^ebus-38] The TDX snapshot carries a separately numbered
 38區 (38Shuttle) route as its own normalized record rather than as a subroute
 of 38.[^tdx-bus]
 
+The confirmed stop sequence runs from 環南市場 in Wanhua, past a stop
+literally named 捷運龍山寺站, then through Zhongzheng past 捷運小南門站 and
+捷運東門站, ending at 大安國宅 near a stop literally named 捷運大安森林公園
+站.[^tdx-bus] None of these four literally-named MRT stops is in the
+curated stop-ID join set as a confirmed interchange for this route.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

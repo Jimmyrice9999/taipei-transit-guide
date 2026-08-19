@@ -69,6 +69,13 @@ route 39, and 首都客運三重二站 as the service contact.[^ebus-39night] Th
 snapshot records a single subroute for this route, TPE155808, named
 39(Night) / 39夜.[^tdx-bus]
 
+The confirmed stop sequence runs the same 三重–臺北車站 corridor as its
+daytime parent, past 徐匯中學/幸福市場/建和新村 and a stop literally named
+捷運三和國中站, then through 三重's 忠孝路/龍門路 area before crossing into
+Taipei to end at 臺北車站(忠孝).[^tdx-bus] The curated stop-ID join set
+records zero confirmed interchanges for this route, matching its daytime
+parent.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

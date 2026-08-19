@@ -59,6 +59,12 @@ off-peak 15–20 minutes, and departures after 2100 run to a fixed timetable
 rather than a frequency band; the page lists 36 numbered weekday trips.[^ebus-9]
 The operator contact given is 大都會客運士林站, 02-2833-5706.[^ebus-9]
 
+The confirmed stop sequence runs from 社子國小 on the Shezi peninsula,
+south along 重慶北路 past stops literally named 捷運大橋頭站 and 捷運北門站,
+then through 捷運西門站 and 小南門 to end at 龍山寺(康定) in Wanhua.[^tdx-bus]
+None of these three literally-named MRT stops is in the curated stop-ID
+join set as a confirmed interchange for this route.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the stop and geometry records; route length and

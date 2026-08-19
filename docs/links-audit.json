@@ -8111,11 +8111,6 @@
     },
     {
       "page": "/bus/routes/series-0-99/37/",
-      "name": "國父紀念館",
-      "href": "/rail/metro/stations/bl17/"
-    },
-    {
-      "page": "/bus/routes/series-0-99/37/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -8183,11 +8178,6 @@
       "page": "/bus/routes/series-0-99/39-bxzs0o/",
       "name": "Sanhe Junior High School",
       "href": "/rail/metro/stations/o51/"
-    },
-    {
-      "page": "/bus/routes/series-0-99/39-bxzs0o/",
-      "name": "徐匯中學",
-      "href": "/rail/metro/stations/o52/"
     },
     {
       "page": "/bus/routes/series-0-99/39-bxzs0o/",
@@ -8603,11 +8593,6 @@
       "page": "/bus/routes/series-0-99/88-g3juzf/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-0-99/9-wn5epb/",
-      "name": "Xiaonanmen",
-      "href": "/rail/metro/stations/g11/"
     },
     {
       "page": "/bus/routes/series-0-99/9-wn5epb/",

@@ -12522,3 +12522,32 @@ Part 1 running total: 120 of 1,051 routes across ten groups. Next-smallest
 remaining: series-0-99 (33), colour-blue (38), colour-red (40), minibus
 (48), series-600s (49), special-shuttle (51), series-200s (92), new-taipei
 (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 8, series-0-99 to 200+ words
+
+33 routes: the whole `series-0-99` group — 0, 1, 2, 5, 9, 12, 14, 18, 20,
+22, 26, 28, 32, 33, 37, 38, 38區, 39, 39夜, 41, 42 (x2), 46, 49, 52, 53, 63,
+66, 68, 72, 88 (x2). Only 6 of the 33 were under 200 words after the
+audit-driven false-join fixes earlier this run; the other 27 were already
+past the threshold from prior lead work. Same method: corridor prose from
+each route's own confirmed stop sequence, plus interchange candor —
+`railJoins: []` for every route touched this batch, the same pattern as
+series-500s, confirmed here for both 39夜 and its daytime parent 39
+independently rather than assumed.
+
+Genuine findings: 22 literally passes six MRT-named stops (信義安和/大安/
+大安森林公園/東門/象山/善導寺) across its two directions with zero confirmed
+interchanges for any; 38 passes four (龍山寺/小南門/東門/大安森林公園). 37's
+Wikiversity lead claims a 30 December 2025 extension to serve 松德站 that
+the current schedule's own terminus is consistent with, but the date
+itself was not corroborated against a primary announcement and is recorded
+as uncorroborated rather than stated as fact — the same treatment already
+applied to 32's identical-dated operator-handover claim in earlier work.
+
+Gates: cite clean, test:unit 209/209, claims baseline held at 32, verify
+running in the background at time of writing.
+
+Part 1 running total: 153 of 1,051 routes across eleven groups.
+Next-smallest remaining: colour-blue (38), colour-red (40), minibus (48),
+series-600s (49), special-shuttle (51), series-200s (92), new-taipei
+(562). Parts 2-7 not started.
