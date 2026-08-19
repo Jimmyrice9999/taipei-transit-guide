@@ -12333,3 +12333,91 @@ clicked the caret, and on a hover-capable pointer the panel opens on mouseenter,
 so the click that followed closed the panel it had just opened. It hovers now,
 which is the gesture the bug was reported with; section 2 still covers the tap
 path, where there is no hover to race.
+
+## Run 52 — Part 0 audit, 20 August 2026
+
+Continues from `7137848`. The brief's picture of what already existed was
+wrong in three places, matching the pattern every run so far has found.
+
+**Bus route prose.** All 1,051 route pages carry prose already — zero at
+0 words, contrary to the brief's framing. Median 109 words, P25 96, P75 113,
+mean 111.3, min 48 (colour feeders), max 399 (series-0-99). Histogram in
+50-word buckets: 0–49: 2, 50–99: 298, 100–149: 682, 150–199: 25, 200–249: 26,
+250–299: 10, 300–349: 4, 350–399: 4. So 1,013 of 1,051 (96%) are under 200
+words, concentrated in the six-figure series/colour/minibus/special-shuttle/
+new-taipei groups that share the same short template; the already-long tail
+(series-0-99, series-100s, series-500s, series-700s, series-900s) got there
+because a zh.wikiversity predecessor-route lead was chased and recorded as
+checked-and-failed at length, not because the page was deliberately widened.
+
+**Bikes, ticketing and the gondola are not thin pages.** `content/bike/history/
+youbike.md` (409 body lines, three fare-policy eras, two dock generations,
+sourced conflicts on the 2002 launch and 2015 subsidy-saving figures),
+`content/ticketing/guides/cards-passes-and-fares.md` (487 lines, EasyCard,
+iPass, TPASS, the fare-tier table, transfer discounts, the frequent-rider
+scheme) and `content/rail/cable/lines/maokong-gondola.md` (409 lines, POMA,
+the 2008 T16 failure, the 2010 reopening, crystal cabins, current fares and
+closure calendar) are already deep, cross-checked, conflict-publishing pages.
+`content/bike/generations/_index.md` and `content/bike/stations/_index.md`
+are genuinely thin, but both are marked `status: planned` on purpose. What is
+actually missing from Part 2/3/4's brief: bike station-level pages (no TDX
+YouBike dataset found under `data/tdx/`), New Taipei/Taipei YouBike contract
+comparison, bus fare 段 stages, single-journey tokens, icash, gondola feeder
+routes now that bus data exists, and gondola station pages.
+
+**Visual work is half landed.** `LineIcon.tsx` (rail lines, run 11) and the
+nav dropdown/submenu-caret transitions (run 51 part 3/4) exist and respect
+`prefers-reduced-motion`. Not done: `.disclosure-caret` (the in-page
+collapsible used on group and classification pages) has no transition at
+all; almost every hover state (`.data-card`, table rows, plain links, nav
+items) snaps instantly — only `.card-arrow`, the nav toggle/caret and
+`.routemap-station` circles animate; and there is no icon system for bus
+route groups, operators, depots, models or ticketing.
+
+**`npm run determinism`'s variance is real and predates this run.** Two
+clean builds before any edit landed 10 file differences: 8 bus route pages
+(`new-taipei/249`, `264`, `851`, `854`, `933`, `936`, `f526`, `f611`) show a
+React-emitted empty comment node flickering position next to a `<sup
+class="cite">` marker — the same class of framework-internal ordering noise
+`next-size-adjust` was classified as in run 2, just not yet added to
+`FRAMEWORK_NOISE` — and two `opengraph-image.png` files
+(`rail/metro/stations/lb01`, `lb06`) differ in PNG bytes on every build, most
+likely non-deterministic parallel PNG encoding in `sharp`. Neither is
+this run's content varying; both are reported rather than fixed, since
+fixing either is image-pipeline or determinism-script work outside Part 1-7.
+
+**An uninstructed fix, found by the audit and made before Part 1 prose
+work:** 16 route pages asserted "confirmed rail-stop joins ... by stop-ID
+geometry" to named MRT stations. None of the 16 has an entry in the curated
+`data/tdx/bus/rail-stop-joins.json` this project's own `lib/bus/routes.ts`
+requires for a confirmed interchange claim — every one was a raw
+`match: 'normalized-name'` candidate, exactly what the code's own comments
+say must never be presented as confirmed. All 16 fixed: 13 in a standalone
+commit, the other 3 (756, 757, 758) folded into the Part 1 batch that
+rewrote those same pages.
+
+Part 1 batch 1 took the three smallest route groups — series-other (1),
+unclassified (3), series-700s (4), 8 routes total — from 96-333 words to
+265-404, from data already committed rather than new invention: corridor
+prose from each route's own confirmed stop sequence, MRT interchanges stated
+only where the curated stop-ID join set actually has them, and the
+joint-operation page's already-sourced service-class/numbering material
+(six PTO categories, the 7xx conflict between "air-conditioned three-segment
+fare" and "absorbed intercity highway route") applied to the specific routes
+it explains. Genuine per-route findings: 雙園巴士 is jointly run by ten of
+Taipei's fourteen joint-operation companies at once; 新莊-臺北車站 carries the
+same 跳蛙 label New Taipei uses for its own jump-frog category despite sitting
+outside that dataset; 756 and 757 run almost the whole Red Line Danshui
+branch with zero confirmed interchanges despite station-named stops the
+whole way; three of the four 700s routes carry a leftover pre-renumbering
+alias outside the 7xx band.
+
+Gates: cite clean, verify green, test:unit 208/208, nav 19/19, research
+clean. Unsourced assertions held at 32; claims-baseline.json untouched.
+
+Next: continue Part 1 group by group, smallest first — series-100s (6) is
+the next batch — before colour-orange (18), colour-green (17), series-900s
+(13), series-300s (16), trunk (19), colour-brown (20), series-500s (21),
+colour-blue (38), colour-red (40), series-0-99 (33), minibus (48),
+series-600s (49), special-shuttle (51), series-200s (92), and finally
+new-taipei (562). Parts 2-7 not started.
