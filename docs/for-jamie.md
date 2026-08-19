@@ -1,19 +1,13 @@
 # For Jamie
 
-Part 1 is complete for all ten station lines; all 192 pages now have 200+ sourced words.
-Station prose distribution: min 223, P25 304, median 340.5, P75 375, max 584.
-Part 2 is complete: public art, naming/renames, and incidents are sourced pages.
-Public-art cost and Sanying allocation conflicts remain published.
-Former-name action dates without gazettes remain TBC; no slash-notation rename was inferred.
-Incidents preserves the Nari date conflict and 11-location/9-span earthquake conflict.
-Part 3a/3b complete for brown/red; colour-red was fixed from unreachable (routing was hardcoded to brown-only) to live, and a false-confirmed-MRT-join bug affecting every non-brown route was fixed.
-No colour-yellow feeder class exists at ebus.gov.taipei; docs/bus-architecture.md corrected. Circular Line ("Yellow Line") is NTMC-operated, outside TRTC's colour scheme.
-Part 3c complete: colour-green, colour-orange, colour-blue and trunk built (17+18+38+19 = 92 routes). One TDX blue record was reclassified: 藍海2線先導公車 starts with 藍 but is an official 捷運先導公車 pilot service, not a Bannan feeder; excluded, group corrected 39->38.
-This run's requested bus scope (green/orange/blue/trunk) is done; the colour-yellow check and its architecture-doc correction are also done.
-Part 4: 61 TDX operator records and 1,051 route associations now have generated pages.
-Bus model and depot indexes are present but TBC because the TDX pull has no such fields.
-Seven rail model pages and eight rail depot pages already exist; no rail depot gap was found.
-Part 5 is complete: fresh 232 screenshots, 32 print PDFs, 344-page reflow and axe sweep.
-Keyboard and accessibility probes are clean; the in-app browser connector was unavailable.
-All gates are green: cite, verify, npm test 185/185, and browser harness.
-Claims baseline and its test were untouched; existing user-owned dirty files remain unstaged.
+Part 1: nav hover-gap fixed (250ms delay), Bus→Routes now a real subgroup, and the redundant "Systems" one-page dropdown removed — please confirm that was the right one.
+Part 2: 1,238 confirmed MRT joins curated for red/green/orange/blue/trunk (132 routes), by stop-ID geometry (200m, calibrated against brown's own 74), never by name.
+Part 3 complete: series-700s/300s/100s/900s/0-99/500s built, all 93 routes. Site now covers 245 of 1,051 routes.
+539預/542預 resolved: reservation-only workings of 539/542, not a separate class — confirmed via primary sources + Taipei's real-time bus system.
+Several genuine conflicts published, not resolved: 108's two termini, 129's buffer-zone name mismatch, 950's trip-count disagreement (2014 launch vs. live schedule), 66's fleet-launch date, and more — see run-log for the full list.
+Route numbers 41/52/53/63/66/72/88/300/505 collide with unrelated same-numbered routes in other Taiwanese cities; not asserted on live pages without a fetched per-city citation.
+A real site bug found and fixed: SpecTable didn't Han-tag spec values (FactsPanel already did); first exposed by a Chinese fare label.
+A real fact-check.mjs false positive found (not fixed by relaxing the checker): a shortened TBC sentence tripped its absence-claim regex; reworded instead.
+Part 4: browser harness clean — reflow, keyboard, axe all pass across 580 pages; 236 screenshots incl. landscape phone; no orphans beyond legacy /train redirects; nav dropdown correctly truncates+links "All routes" now that 12 groups exceed the 10-item cap.
+All gates green throughout: cite, verify, npm test 185/185, browser harness. Claims baseline untouched at 32.
+Stopped after series-500s as instructed — 200s/600s/900s(remaining)/minibus/special-shuttle/new-taipei/unclassified are next.

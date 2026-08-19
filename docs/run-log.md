@@ -10986,4 +10986,75 @@ and the full test suite green.
 (4), series-300s (16), series-100s+series-900s (19), series-0-99 (33),
 series-500s (21). Combined with Part 3c's 92 and the pre-existing 60
 (brown+red), the site now has bus route pages for 245 of 1,051 normalized
-TDX records. Commit pending.
+TDX records. Commit `0cdc773`, pushed.
+
+## Part 4 — organization held?, 19 August 2026
+
+Verified against every item the brief asked for, not assumed.
+
+**Reachability within three clicks.** The Bus dropdown's Routes subgroup
+caps at 10 entries (`CAP` in `lib/nav.ts`, shared with every other
+dropdown category) — the first time this run that the cap has actually
+mattered, since Part 3 pushed the built-group count from 6 to 12. Checked
+directly: the truncated dropdown shows the first 10 groups plus an
+"All routes →" link; the two newest groups (series-0-99, series-500s)
+reach their group index via that link. Worst case is Home → Bus dropdown
+→ "All routes" (1) → a group card (2) → a route card (3) — exactly three
+clicks, not more. Every other built group is two clicks via the dropdown
+sample directly. `/bus/routes/` itself lists all 12 groups with counts
+(245 routes across 12 groups, out of 1,051), confirmed by screenshot.
+
+**No dropdown is flat.** `npm run nav`'s 12-check Playwright harness
+(keyboard reachability, Enter/Space open, Escape closes and refocuses,
+tap-open with no hover, no CSS `:hover` rule) passes 12/12 unchanged.
+Bus → Routes is a real closed-by-default subgroup listing groups, not
+individual routes (confirmed by screenshot, Part 1).
+
+**Group index pages scale.** `/bus/routes/series-0-99/` (33 routes, the
+largest group built this run) renders its route list inside a
+`<details className="index-disclosure">`, closed by default, count shown
+in the summary — the same collapsible-index shape every type index on the
+site already uses (`app/bus/routes/[group]/page.tsx`, built in an earlier
+run). No new code was needed for this to hold at 33 routes; verified by
+screenshot rather than assumed from reading the template.
+
+**No orphaned pages.** `npm run check`: zero broken links, 234 "orphan"
+pages — every one of them a legacy `/train/*` redirect stub (postbuild
+writes exactly 234 of these, matching precisely), not a real orphan. No
+new bus route page appears in the orphan list.
+
+**A behaviour checked, not a bug:** a bus stop whose own TDX-published
+name literally reads "MRT Yuanshan Sta." (捷運圓山站etc.) renders as plain
+text in the stop-sequence table (verified against the raw built HTML —
+no `<a>`, empty "MRT join" cell) but CAN appear as a link inside a route's
+"Termini by direction" fact, via the site's general entity-name
+auto-linker (`RichText`'s unscoped matcher, predating this run). This is
+mention-linking ("this text names a place; here is that place's page"),
+not the confirmed-join mechanism — the dedicated "Confirmed MRT stop
+joins" fact and the stop table's own "MRT join" column are both
+unaffected and stay honestly zero for any route without a curated Part 2
+entry. Checked specifically because it looks superficially like exactly
+the false-confirmation failure mode this run's Part 2 fixed; it is not
+the same mechanism and was not touched.
+
+**Browser harness — clean.** `npm run verify:browser` against a fresh
+build: reflow at 320/640 px — zero pages with a document-level horizontal
+scrollbar, across all 580 generated pages. Keyboard traversal — all 33
+tracked page types pass (focus order, visible-focus check, no traps).
+Accessibility tree probes — all 33 pass. axe-core — zero violations across
+580 pages. 232 screenshots + 32 print PDFs generated. Three additional
+screenshots taken by hand at 812×375 (landscape phone, not part of the
+harness's own matrix) for `/bus/routes/`, a `series-500s` route detail
+page, and the Wenhu line page — zero horizontal overflow on any of the
+three. All reviewed by eye, not just by exit code: the `/bus/routes/`
+index, a `series-500s` route detail page (map, stop table, facts, sources)
+and the `series-0-99` group index were inspected at multiple widths and
+show no clipping, no overflow, no broken layout.
+
+Gates: fresh `npm run build`, `npm run check`, `npm run verify:browser`,
+`npm run verify` and the full test suite all green. Commit pending —
+this closes the run at the point stated in the brief: **stopped after
+series-500s.** series-100s and series-900s are both fully built already
+(as this run's "series-other"), so nothing remains open there. Not
+started: series-200s, series-600s, minibus, special-shuttle, new-taipei,
+and the remaining unclassified records.
