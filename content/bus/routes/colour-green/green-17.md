@@ -53,8 +53,7 @@ The official catalogue lists 綠17 under 捷運綠線接駁公車.[^ebus-green] 
 
 The confirmed stop sequence runs from 華中河濱公園, a riverside park in
 Wanhua, past 龍山寺 (Longshan Temple) and through central Taipei, ending at
-大稻埕碼頭 (Dadaocheng Wharf), the historic pier on the Tamsui River waterfront.
-[^tdx-bus] It calls at four confirmed interchanges along the way: 捷運龍山寺站
+大稻埕碼頭 (Dadaocheng Wharf), the historic pier on the Tamsui River waterfront.[^tdx-bus] It calls at four confirmed interchanges along the way: 捷運龍山寺站
 (Longshan Temple, BL10) on the Bannan Line, 捷運西門站 — served by both the
 Bannan Line (BL11) and the Songshan–Xindian Line (G12) — and 捷運北門站
 (Beimen, G13).[^tdx-bus] Despite its own colour-line classification as a

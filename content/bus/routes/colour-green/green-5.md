@@ -53,8 +53,7 @@ The official catalogue lists 綠5 under 捷運綠線接駁公車.[^ebus-green] I
 
 The confirmed stop sequence starts at 大崎腳, a hillside spot above 青潭, runs
 through 新店 and past a cluster of newer 十四張 developments — 央北社會住宅
-(the social-housing project), 十四張歷史公園 — before ending at 中正環河路口.
-[^tdx-bus] Four confirmed interchanges lie along the way: 捷運新店站 (Xindian,
+(the social-housing project), 十四張歷史公園 — before ending at 中正環河路口.[^tdx-bus] Four confirmed interchanges lie along the way: 捷運新店站 (Xindian,
 G01), 捷運新店區公所站 (Xindian District Office, G02), and 捷運十四張站
 (Shisizhang) — a genuine interchange between the Ankeng Light Rail (K09) and
 the Circular Line (Y08) that this route serves twice, once on each

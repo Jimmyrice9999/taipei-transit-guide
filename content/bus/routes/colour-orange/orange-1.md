@@ -53,8 +53,7 @@ The official catalogue lists 橘1 under 捷運橘線接駁公車.[^ebus-orange] 
 
 The confirmed stop sequence starts at 錦秀路口 in New Taipei's Ankeng area,
 runs through 安康/十四份 past a run of light-rail-adjacent stops, then follows
-the same 陽光運動公園/新和國小 corridor as 橘9 before ending at 捷運景安站.
-[^tdx-bus] It calls at five confirmed interchanges along the way: 輕軌安康站
+the same 陽光運動公園/新和國小 corridor as 橘9 before ending at 捷運景安站.[^tdx-bus] It calls at five confirmed interchanges along the way: 輕軌安康站
 (Ankang, K06), 輕軌陽光運動公園站 (Sunshine Sports Park, K07), 輕軌新和國小站
 (Xinhe Elementary School, K08) on the Ankeng Light Rail, and 捷運景安站
 itself — Jing'an, served by both the Zhonghe–Xinlu Line (O02) and the

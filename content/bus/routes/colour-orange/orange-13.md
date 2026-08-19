@@ -52,8 +52,7 @@ sources:
 The official catalogue lists 橘13 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 三重 - 五股, weekday service 0530–2200, holiday service 0600–2200, one-section fare and 首都客運三重一站 as the service contact.[^ebus-o13]
 
 The confirmed stop sequence runs from 吉祥街口 in Sanchong, past 捷運徐匯中學站
-and through 蘆洲's 溪墘/蘆洲監理站 area, then into 五股 to end at 五福路.
-[^tdx-bus] The one confirmed interchange is 捷運徐匯中學站 (St. Ignatius High
+and through 蘆洲's 溪墘/蘆洲監理站 area, then into 五股 to end at 五福路.[^tdx-bus] The one confirmed interchange is 捷運徐匯中學站 (St. Ignatius High
 School, O52), reached partway along rather than at either
 terminus.[^tdx-bus] Both directions run the same all-day span, weekday and
 holiday alike, unlike several shorter commuter-hours routes elsewhere in
