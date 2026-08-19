@@ -4,7 +4,7 @@ import FactsPanel from './FactsPanel'
 import RouteMap, { type MapStation } from './RouteMap'
 import RichText from './RichText'
 import { getStation, getStationHref } from '@/lib/stations'
-import { getBusOperator, getBusShapes, getBusStopSequences, type BusRoute } from '@/lib/bus/routes'
+import { getBusOperator, getBusShapes, getBusStopSequences, type BusRoute, type BusRouteGroup } from '@/lib/bus/routes'
 import { GROUP_LINE, GROUP_PATH_COLOUR } from '@/lib/bus/route-groups'
 import type { Line } from '@/lib/lines'
 import type { NumberedSource } from '@/lib/sources'
@@ -47,15 +47,29 @@ function routeSequences(route: BusRoute) {
   })
 }
 
-function routeStops(route: BusRoute) {
+function routeStopData(route: BusRoute) {
   const seen = new Set<string>()
-  return routeSequences(route).flatMap((sequence) =>
-    sequence.stops.flatMap((stop) => {
+  const termini = new Set<string>()
+  const stops = routeSequences(route).flatMap((sequence) => {
+    if (sequence.stops[0]) termini.add(sequence.stops[0].stopUid)
+    if (sequence.stops.at(-1)) termini.add(sequence.stops.at(-1)!.stopUid)
+    return sequence.stops.flatMap((stop) => {
       if (seen.has(stop.stopUid) || !stop.position) return []
       seen.add(stop.stopUid)
       return [stop]
-    }),
-  )
+    })
+  })
+  return { stops, termini }
+}
+
+function serviceClassLabel(group: BusRouteGroup) {
+  if (group === 'special-shuttle') return 'Special shuttle / commuter service'
+  if (group === 'minibus') return 'Minibus / community service'
+  if (group === 'series-200s') return '200-series numbered service'
+  if (group === 'series-600s') return '600-series numbered service'
+  if (group === 'trunk') return 'Trunk service'
+  if (group.startsWith('colour-')) return 'MRT feeder service'
+  return 'Numbered bus service'
 }
 
 function stationJoinLabel(join: BusRoute['railJoins'][number]) {
@@ -75,13 +89,23 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
     .filter(Boolean)
 
   const feederLine = GROUP_LINE[route.group]
+  const variants = route.subRoutes
+    .map((subRoute) => subRoute.names.zh_tw || subRoute.names.en)
+    .filter(Boolean)
+    .join(' · ')
 
   const facts = [
     { label: 'Route', value: `${route.names.en} / ${route.names.zh_tw}`, source: 'tdx-bus' },
+    { label: 'Service class', value: serviceClassLabel(route.group), source: 'tdx-bus' },
     { label: 'Municipality', value: route.sourceCities.join(', '), source: 'tdx-bus' },
     { label: 'Current operator', value: operators.map((operator) => operator!.names.en || operator!.names.zh_tw).join(', ') || 'TBC', source: 'tdx-bus' },
     { label: 'Termini by direction', value: termini.join(' · ') || 'TBC', source: 'tdx-bus' },
+    { label: 'Direction / variant', value: variants || 'TBC', source: 'tdx-bus' },
     { label: 'Stops', value: String(new Set(sequences.flatMap((sequence) => sequence.stops.map((stop) => stop.stopUid))).size), source: 'tdx-bus' },
+    { label: 'Route length', value: 'TBC', source: 'tdx-bus' },
+    { label: 'Service span', value: 'TBC', source: 'tdx-bus' },
+    { label: 'Headway by day type', value: 'TBC', source: 'tdx-bus' },
+    { label: 'Fare / transfer', value: 'TBC', source: 'tdx-bus' },
     { label: 'Confirmed MRT stop joins', value: String(route.railJoins.length), source: 'tdx-bus' },
     ...(feederLine
       ? [{ label: 'Feeder line', value: `${feederLine.name} (${feederLine.code})`, source: feederLine.sourceId }]
@@ -115,8 +139,8 @@ function BusRouteMap({ route, references }: { route: BusRoute; references: Numbe
   const shapes = getBusShapes(route)
   const paths = shapes.map((shape) => parseLineString(shape.geometry)).filter((path) => path.length > 1)
   const joinsByStop = stopJoinMap(route)
-  const stops = routeStops(route)
-  const stations: MapStation[] = stops.flatMap((stop, index) => {
+  const { stops, termini } = routeStopData(route)
+  const stations: MapStation[] = stops.flatMap((stop) => {
     if (!stop.position) return []
     const join = joinsByStop.get(stop.stopUid)?.[0]
     return [{
@@ -126,7 +150,7 @@ function BusRouteMap({ route, references }: { route: BusRoute; references: Numbe
       lat: stop.position.lat,
       lon: stop.position.lon,
       colour: pathColour,
-      isTerminus: index === 0 || index === stops.length - 1,
+      isTerminus: termini.has(stop.stopUid),
       isInterchange: Boolean(join),
       href: join ? getStationHref(join.stationCode) ?? undefined : undefined,
     }]

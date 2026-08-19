@@ -13,12 +13,16 @@
  * rail stations, means a new group folder is served as soon as its
  * `_index.md` exists rather than needing a second matching code change.
  */
+import fs from 'node:fs'
+import path from 'node:path'
 import { listSubfolders } from '../content.ts'
 import type { BusRouteGroup } from './routes.ts'
 
 /** Every group folder with an `_index.md`, in that folder's declared order. */
 export function getBuiltBusRouteGroups(): BusRouteGroup[] {
-  return listSubfolders(['bus', 'routes']).map((folder) => folder.slug as BusRouteGroup)
+  return listSubfolders(['bus', 'routes'])
+    .filter((folder) => fs.existsSync(path.join(process.cwd(), 'content', 'bus', 'routes', folder.slug, '_index.md')))
+    .map((folder) => folder.slug as BusRouteGroup)
 }
 
 /**

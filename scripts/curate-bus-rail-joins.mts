@@ -1,7 +1,6 @@
 /**
- * Curates confirmed bus-stop-to-MRT-station joins for the 132 routes in
- * colour-red, colour-green, colour-orange, colour-blue and trunk, and
- * (re)writes data/tdx/bus/rail-stop-joins.json.
+ * Curates confirmed bus-stop-to-MRT-station joins for the built and pending
+ * Taipei route groups, and (re)writes data/tdx/bus/rail-stop-joins.json.
  *
  * Run: node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/curate-bus-rail-joins.mts
  *
@@ -51,7 +50,17 @@ const OUT_FILE = path.join(ROOT, 'data', 'tdx', 'bus', 'rail-stop-joins.json')
 const CONFIRM_M = 200
 const CANDIDATE_M = 500
 
-const TARGET_GROUPS: BusRouteGroup[] = ['colour-red', 'colour-green', 'colour-orange', 'colour-blue', 'trunk']
+const TARGET_GROUPS: BusRouteGroup[] = [
+  'colour-red',
+  'colour-green',
+  'colour-orange',
+  'colour-blue',
+  'trunk',
+  'special-shuttle',
+  'minibus',
+  'series-600s',
+  'series-200s',
+]
 
 const stopById = new Map(BUS_STOPS.map((s) => [s.id, s]))
 const stationsWithPosition = STATIONS.filter((s) => s.lat != null && s.lon != null)
@@ -59,7 +68,7 @@ const stationsWithPosition = STATIONS.filter((s) => s.lat != null && s.lon != nu
 type Join = { stopUid: string; stationCode: string; lineCode: string; match: 'stop-id' }
 
 /** Preserve every route (including brown's 20, and every other built/unbuilt
- * route) already in the file untouched; only (re)compute the five target
+ * route) already in the file untouched; only (re)compute the target
  * groups. Re-running this script is therefore idempotent for everyone else. */
 const existing = JSON.parse(fs.readFileSync(OUT_FILE, 'utf8')) as Array<{ routeId: string; joins: Join[] }>
 const untouchedRouteIds = new Set(

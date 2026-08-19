@@ -43,7 +43,9 @@ export const dynamicParams = false
 
 export function generateStaticParams() {
   return getBuiltBusRouteGroups().flatMap((group) =>
-    getBusRoutesByGroup(group).map((route) => ({ group, slug: route.canonicalSlug })),
+    getBusRoutesByGroup(group)
+      .filter((route) => fs.existsSync(overlayPath(group, route.canonicalSlug)))
+      .map((route) => ({ group, slug: route.canonicalSlug })),
   )
 }
 

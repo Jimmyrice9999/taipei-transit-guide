@@ -1,3 +1,5 @@
+import fs from 'node:fs'
+import path from 'node:path'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import BackLink from '@/components/BackLink'
@@ -15,6 +17,10 @@ import { getAccent } from '@/lib/lines'
 type Props = { params: Promise<{ group: string }> }
 
 export const dynamicParams = false
+
+function hasOverlay(group: string, slug: string) {
+  return fs.existsSync(path.join(process.cwd(), 'content', 'bus', 'routes', group, `${slug}.md`))
+}
 
 export function generateStaticParams() {
   return getBuiltBusRouteGroups().map((group) => ({ group }))
@@ -36,7 +42,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
   if (!getBuiltBusRouteGroups().includes(group as BusRouteGroup)) notFound()
 
   const folder = getFolder(['bus', 'routes'], group)
-  const routes = getBusRoutesByGroup(group as BusRouteGroup)
+  const routes = getBusRoutesByGroup(group as BusRouteGroup).filter((route) => hasOverlay(group, route.canonicalSlug))
   const folderContent = await getFolderContent(['bus', 'routes'], group)
   const lineCode = getGroupLineCode(group as BusRouteGroup)
 

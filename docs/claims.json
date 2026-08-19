@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2662,
-    "tbc": 1008,
+    "sourced": 2713,
+    "tbc": 1080,
     "asserted": 32,
     "meta": 42
   },
@@ -2469,6 +2469,150 @@
       "sources": 2,
       "sourced": 1,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/1-1o1sfzk.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/10.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/11-17ozkl1.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/11-9ffs8b.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/12-10palml.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/12-md9g4p.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/13-1yksc8z.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/13-e8p1t1.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/15.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/16-13rleqi.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/16-g1oiln.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/17.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/18-1jkfnn2.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/19.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/2-1bo2ml3.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/2-5ogs1q.md",
+      "sources": 3,
+      "sourced": 2,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/20-o7pig6.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/special-shuttle/21-1fm1bvh.md",
+      "sources": 3,
+      "sourced": 3,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
