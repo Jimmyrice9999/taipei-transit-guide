@@ -11120,6 +11120,27 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — New Bus community services, batch 8
+
+Built 20 route identities from the New Bus category slice 141–160: F811,
+F812, F813, F815 and its separately filed Ling tou identity, F816, F821,
+F822, F823 and its separately filed district identity, F825, F835, F836,
+F837, F838, F839, F901, F902, F903 and F905. Body prose is 2,300
+whitespace-delimited words. Exact New Taipei route-service rows cover 14/20;
+the six unmatched identities keep their service fields TBC. The batch has 0
+confirmed geometry-only MRT stop-ID joins, 2 candidates rejected as too far,
+and 0 ambiguous candidates. Separately filed variants remain distinct TDX
+records; no suffix meaning was inferred. Sources are the full TDX snapshot
+(https://tdx.transportdata.tw/), the full New Bus catalogue
+(https://data.ntpc.gov.tw/datasets/e4c58656-22d1-4bcf-af33-16ca94532a36),
+the exact current route-service API
+(https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000),
+and the New Taipei transport-management page
+(https://www.traffic.ntpc.gov.tw/home.jsp?id=f06672ba2aadbd3c). Route
+history, predecessor/renumbering, dated operator changes, corridor rationale
+and eligibility remain TBC where these fetched primary sources do not
+establish them.
+
 ### New Taipei — New Bus community services, batch 7
 
 Built 20 route identities from the New Bus category slice 121–140: F657,
