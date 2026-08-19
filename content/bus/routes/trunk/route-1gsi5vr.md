@@ -50,6 +50,22 @@ sources:
 
 The official catalogue lists 復興幹線 under 幹線專車.[^ebus-trunk] Its full schedule page gives 建國北路 - 景美, weekday and holiday service 0550–2300, one-section fare and 大都會客運建北站 as the service contact.[^ebus-fuxing]
 
+The confirmed stop sequence runs the full length of 復興北/南路 from 建北站
+near Songshan Airport, through Zhongshan and Da'an, along 羅斯福路 past NTU
+into Wenshan, ending at 景華公園 near 景美.[^tdx-bus] It is the
+most-connected route in this project's trunk-route coverage: the curated
+join set confirms 14 separate station codes, of which eight are named
+directly in the stop sequence — 捷運中山國中站 (Zhongshan Junior High School,
+BR12), 捷運南京復興站 (served by both the Wenhu Line as BR11 and the
+Songshan–Xindian Line as G16), 捷運忠孝復興站 (served by both the Bannan Line
+as BL15 and the Wenhu Line as BR10), 捷運大安站 (served by both the Wenhu
+Line as BR09 and the Tamsui–Xinyi Line as R05), 捷運科技大樓站 (Technology
+Building, BR08), 捷運古亭站 (served by both the Songshan–Xindian Line as G09
+and the Zhonghe–Xinlu Line as O05), 捷運台電大樓站 (Taipower Building, G08)
+and 捷運萬隆站 (Wanlong, G06).[^tdx-bus] A fourteenth code resolves to
+Jingmei (G05), not directly named in the stop sequence's own
+text.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

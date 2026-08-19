@@ -12421,3 +12421,67 @@ the next batch — before colour-orange (18), colour-green (17), series-900s
 colour-blue (38), colour-red (40), series-0-99 (33), minibus (48),
 series-600s (49), special-shuttle (51), series-200s (92), and finally
 new-taipei (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 6, trunk to 200+ words
+
+19 routes: the whole `trunk` group (幹線公車) — 忠孝幹線, 信義幹線, 基隆路幹線,
+羅斯福路幹線, 南環幹線, 民生幹線, 東環幹線, 仁愛幹線, 敦化幹線, 松江新生幹線,
+內湖幹線, 承德幹線, 南京幹線, 中山幹線, 重慶幹線, 復興幹線, 民權幹線, 和平幹線,
+北環幹線. Same method as prior batches: corridor prose from each route's own
+confirmed stop sequence, MRT interchanges named only where the curated
+stop-ID join set actually has them (with non-literal near-matches called
+out explicitly, not overclaimed as the station's own name), and — where a
+community-wiki source names a predecessor route for the eight documented
+feeder/numbered-to-trunk conversions — the predecessor cited alongside a
+note that it was not independently corroborated against a primary PTO or
+operator announcement.
+
+Genuine findings this batch:
+
+- **A naming conflict, published rather than resolved.** 重慶幹線
+  (route-1qov05l, 天母–東園) is a currently-active trunk route. This
+  project's own page for route 300 states 300 was itself originally named
+  重慶幹線 before a 1 June 2017 rename.[^zhwikiversity-300 on both pages] Both
+  identities were fetched from the same live catalogue in the same run.
+  Whether this is a name reused for a second, unrelated corridor after
+  300's rename, or a sign one of the two sourcing chains is wrong, is not
+  established — published as an open conflict on both pages, not settled.
+- 仁愛幹線 (route-1sjvy8q) carries 7 named TDX subroutes — two originating
+  termini (板橋發車/南港發車) each with weekday, holiday and half-working
+  variants — the most of any route in this batch. 敦化幹線 (route-1mwg4g2)
+  by contrast is a single subroute with no variant at all.
+- 忠孝幹線 (route-oeaqc5) and 內湖幹線 (route-z052w3) each thread nearly an
+  entire MRT line by road: 忠孝幹線 names 12 confirmed interchange points
+  along the Bannan Line's central-Taipei stretch; 內湖幹線 names 9, covering
+  eight consecutive Wenhu Line stations end to end plus Taipei Main
+  Station.
+- 承德幹線 (route-zemmd0) is the longest stop sequence in the batch (~70
+  stops each way) and has several curated joins that resolve to stops not
+  named for their station at all: Yuanshan (R14) resolves to 庫倫街口,
+  Minquan W. Rd. (O11/R13) to 成淵高中/防癆協會, Xiangshan (R02) to 信義松仁路口.
+- 基隆路幹線 (route-b0o3bt, ex-650) and 東環幹線 (route-1honm7b, ex-綠16) and
+  南環幹線 (route-2pe75d, ex-綠1) each have a secondary-sourced predecessor
+  claim, not independently corroborated against a primary announcement.
+  信義幹線 and 敦化幹線 are secondary-sourced as the network's original two
+  named corridors, assembled before the wider 2017-18 renaming, rather than
+  conversions of a single prior route.
+
+Two files tripped the sentence-level claims ratchet during this batch's
+polish pass — a bare date claim (route-1qov05l) and a bare stop-count claim
+(route-zemmd0), each in a sentence whose citation marker sat only at the end
+of a multi-sentence paragraph rather than on the sentence itself. Both fixed
+by citing the sentence directly (route-1qov05l also gained a proper
+`zhwikiversity-300` source entry, reusing route 300's own citation for the
+same underlying claim); `docs/claims-baseline.json` was not touched.
+
+Gates: cite clean, test:unit 209/209 (up from 208 — `tests/bus-rail-joins.test.mts`,
+the permanent false-join gate added earlier this run, now counts in the
+total), verify running in the background at time of writing. Unsourced
+assertions held at 32.
+
+Part 1 running total: 100 of 1,051 routes done across nine groups (series-
+other 1, unclassified 3, series-700s 4, series-100s 6, series-900s 13,
+series-300s 16, colour-green 17, colour-orange 18, trunk 19). Next-smallest
+remaining: series-500s (21), colour-blue (38), colour-red (40), series-0-99
+(33), minibus (48), series-600s (49), special-shuttle (51), series-200s
+(92), new-taipei (562). Parts 2-7 not started.

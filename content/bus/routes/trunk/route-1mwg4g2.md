@@ -44,11 +44,39 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full official schedule page listing the current 麟光新村–榮總 corridor, service span, fare and operator contact.
+  - id: zh-taipei-bus
+    title: Taipei city buses
+    titleOriginal: 臺北市市區公車
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/臺北市市區公車
+    accessed: 2026-08-10
+    kind: secondary
+    lang: zh-Hant
+    note: "Secondary source naming 信義幹線 and 敦化幹線 as the trunk network's original two named corridors, assembled from existing joint-operation routes before the wider 2017-18 renaming programme this project's joint-operation network page records. No Public Transport Office publication found in this project's research states the 敦化幹線 name's own origin directly."
 ---
 
 ## Classification and corridor
 
 The official catalogue lists 敦化幹線 under 幹線專車.[^ebus-trunk] Its full schedule page gives 麟光新村 - 榮總, weekday and holiday service 0510–2230, a two-section fare and 大都會客運麟光站 as the service contact.[^ebus-dunhua]
+
+A secondary source names 敦化幹線, alongside 信義幹線, as one of the trunk
+network's original two named corridors — assembled from existing routes
+before the wider 2017-18 renaming this project's joint-operation network
+page documents, rather than a later conversion of a single numbered or
+colour-prefixed route.[^zh-taipei-bus]
+
+The confirmed stop sequence runs from 麟光站 in Wenshan, along 敦化南/北路
+through Da'an and Songshan, then up 新生北路/中山北路 through Zhongshan into
+Shilin and Beitou, ending near 榮總 (Taipei Veterans General
+Hospital).[^tdx-bus] Five confirmed interchanges are named directly in the
+stop sequence: 麟光站 (Linguang, BR06), 捷運六張犁站 (Liuzhangli, BR07), 捷運
+忠孝敦化站 (Zhongxiao Dunhua, BL16), 中山國小(新生) (Zhongshan Elementary
+School, O10) and, on the return working, 捷運劍潭站 (Jiantan, R15) and 捷運
+士林站 (Shilin, R16).[^tdx-bus] A further curated code resolves to Zhongshan
+Junior High School (BR12), not directly named in the stop sequence's own
+text.[^tdx-bus] TDX records 敦化幹線 as a single subroute with no separate holiday,
+half-working or detour variant, unlike several other trunk routes in this
+project's coverage that carry two or more.[^tdx-bus]
 
 ## Research status
 

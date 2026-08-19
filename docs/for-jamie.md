@@ -1,12 +1,24 @@
 # For Jamie
 
-Run 52 continues from `7137848`. Part 0 audit, still in progress on Part 1.
+Run 52 continues. Part 1 batches 1-6 done (series-other/unclassified/700s,
+series-100s/900s, series-300s, colour-green, colour-orange, trunk — 100
+routes total). Full detail is in each batch's commit message; see
+`git log --oneline` for "Run 52 — Part 1 batch N".
 
-The brief was wrong about three things, same pattern as every prior run: no bus route page has zero prose (median 109 words, 96% under 200); the bikes/ticketing/gondola pages are already deep, sourced, conflict-publishing pages, not thin stubs — only bike station/generation pages are genuinely thin, and both are correctly marked `planned`; and the in-page collapsible caret plus almost every hover state have no transition at all, while the nav dropdown and line icons already do.
-`npm run determinism`'s variance is real and predates this run: 8 bus route pages show a React empty-comment-node ordering artifact next to a citation marker, 2 gondola-station `opengraph-image.png` files differ in PNG bytes on every build. Reported, not fixed — out of scope for Parts 1-7.
-Audit also caught a live false claim: 16 route pages said "confirmed rail-stop joins ... by stop-ID geometry" to MRT stations that are not in the curated join file at all — raw name-match candidates presented as confirmed. All 16 fixed.
-Part 1 batch 1: the three smallest route groups (series-other, unclassified, series-700s — 8 routes) widened from 96-333 words to 265-404, from data already committed — stop-sequence corridor prose, confirmed-only interchanges, and the joint-operation page's sourced service-class/numbering material applied per route.
-Gates: cite clean, verify green, test:unit 208/208, nav 19/19, research clean. Unsourced assertions held at 32.
-Next batch: series-100s (6 routes), then the rest of Part 1 smallest-first, then Parts 2-7 (bikes, ticketing, gondola, visual polish, Taiwan-wide groundwork proposal, browser verification) — none of those started yet.
-Do not poll Actions.
-Do not stage the pre-existing untracked `probes/` directory.
+Trunk batch (19 routes) found a genuine open conflict: a currently-active
+route (重慶幹線, 天母–東園) carries the same name route 300's own page already
+says 300 itself held before a 2017 rename. Published as an unresolved
+conflict on both pages, not settled. Also: 仁愛幹線 has 7 TDX subroutes (two
+originating termini × weekday/holiday/half), the most of any trunk route;
+敦化幹線 has just 1, no variant at all.
+
+Two sentence-level claims-ratchet trips from this batch (a bare date, a bare
+stop count with no citation in the same sentence) — fixed by citing the
+sentence itself, not by touching the baseline. Baseline holds at 32.
+
+Gates: cite clean, test:unit 209/209, verify running.
+
+Next: series-500s (21 routes) is the next-smallest remaining group, then
+colour-blue, colour-red, series-0-99, minibus, series-600s, special-shuttle,
+series-200s, new-taipei (562). Parts 2-7 not started.
+Do not poll Actions. Do not stage the pre-existing untracked `probes/` dir.

@@ -50,6 +50,22 @@ sources:
 
 The official catalogue lists 仁愛幹線 under 幹線專車.[^ebus-trunk] Its full schedule page gives 五福新村 - 南港花園社區, weekday service 0455–2200, holiday service 0500–2200, a two-section fare and 臺北客運五福站 as the service contact. It publishes a two-way transfer discount and records that holiday/weekend service does not stop at 市政府站.[^ebus-renai]
 
+Unlike most other trunk routes in this project's coverage, 仁愛幹線 begins
+outside Taipei entirely: its confirmed stop sequence starts at 五福新村 in
+Banqiao, New Taipei, crosses 華江橋 into Wanhua, then runs the length of
+仁愛路 through central Taipei and Xinyi into Nangang, ending at 南港花園社區.
+[^tdx-bus] Six confirmed interchanges are named directly in the stop
+sequence: 捷運龍山寺站 (Longshan Temple, BL10), 捷運西門站 (served by both the
+Bannan Line as BL11 and the Songshan–Xindian Line as G12), 捷運台大醫院站
+(NTU Hospital, R09), 捷運市政府站 (Taipei City Hall, BL18) — the stop the
+schedule page's own holiday non-stop rule skips — and 捷運永春站 (Yongchun,
+BL19).[^tdx-bus] TDX records a holiday-specific subroute matching the
+schedule page's own 市政府站 exclusion.[^tdx-bus] It also records the route
+under two named originating-terminus subroutes, 板橋發車 (departing Banqiao)
+and 南港發車 (departing Nangang), each with its own weekday, holiday and
+half-working records — seven subroutes in total, more than any other route
+in this project's trunk-route coverage.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the holiday non-stop's creation date and rationale remain TBC.[^tdx-bus]

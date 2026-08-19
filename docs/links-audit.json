@@ -13286,8 +13286,13 @@
     },
     {
       "page": "/bus/routes/trunk/route-1dgbuox/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1dgbuox/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/trunk/route-1dgbuox/",
@@ -13298,6 +13303,16 @@
       "page": "/bus/routes/trunk/route-1gsi5vr/",
       "name": "Daan Park",
       "href": "/rail/metro/stations/r06/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1gsi5vr/",
+      "name": "Xindian",
+      "href": "/rail/metro/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1gsi5vr/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/trunk/route-1gsi5vr/",
@@ -13326,6 +13341,16 @@
     },
     {
       "page": "/bus/routes/trunk/route-1gyd24b/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1gyd24b/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1gyd24b/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -13333,6 +13358,11 @@
       "page": "/bus/routes/trunk/route-1gyd24b/",
       "name": "National Taipei University",
       "href": "/rail/metro/stations/lb07/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1honm7b/",
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/trunk/route-1honm7b/",
@@ -13346,18 +13376,28 @@
     },
     {
       "page": "/bus/routes/trunk/route-1honm7b/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-1honm7b/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/trunk/route-1kpgamk/",
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1kpgamk/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1kpgamk/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1kpgamk/",
+      "name": "Zhonghe",
+      "href": "/rail/metro/stations/y12/"
     },
     {
       "page": "/bus/routes/trunk/route-1mwg4g2/",
@@ -13371,13 +13411,8 @@
     },
     {
       "page": "/bus/routes/trunk/route-1qov05l/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-1qov05l/",
-      "name": "Xiaonanmen",
-      "href": "/rail/metro/stations/g11/"
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/trunk/route-1qov05l/",
@@ -13386,18 +13421,13 @@
     },
     {
       "page": "/bus/routes/trunk/route-1seu29d/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/trunk/route-1seu29d/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-1seu29d/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/trunk/route-1sjvy8q/",
@@ -13426,6 +13456,11 @@
     },
     {
       "page": "/bus/routes/trunk/route-1xxw2ck/",
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-1xxw2ck/",
       "name": "Xiaonanmen",
       "href": "/rail/metro/stations/g11/"
     },
@@ -13441,8 +13476,8 @@
     },
     {
       "page": "/bus/routes/trunk/route-2pe75d/",
-      "name": "Jingmei",
-      "href": "/rail/metro/stations/g05/"
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/trunk/route-6pkyok/",
@@ -13451,13 +13486,28 @@
     },
     {
       "page": "/bus/routes/trunk/route-6pkyok/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-6pkyok/",
+      "name": "Xindian",
+      "href": "/rail/metro/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-6pkyok/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/trunk/route-6pkyok/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-b0o3bt/",
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/trunk/route-b0o3bt/",
@@ -13471,6 +13521,11 @@
     },
     {
       "page": "/bus/routes/trunk/route-nn3gns/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-nn3gns/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
     },
@@ -13481,18 +13536,8 @@
     },
     {
       "page": "/bus/routes/trunk/route-nn3gns/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-nn3gns/",
       "name": "Guohua",
       "href": "/rail/metro/stations/lb10/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-oeaqc5/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
     },
     {
       "page": "/bus/routes/trunk/route-oeaqc5/",
@@ -13503,6 +13548,16 @@
       "page": "/bus/routes/trunk/route-oeaqc5/",
       "name": "Xingfu",
       "href": "/rail/metro/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-rhl925/",
+      "name": "幹線公車",
+      "href": "/bus/network/joint-operation/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-rhl925/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/trunk/route-rhl925/",
@@ -13521,8 +13576,13 @@
     },
     {
       "page": "/bus/routes/trunk/route-rhl925/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
+      "name": "Zhonghe",
+      "href": "/rail/metro/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/trunk/route-z052w3/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/trunk/route-z052w3/",
@@ -13531,13 +13591,8 @@
     },
     {
       "page": "/bus/routes/trunk/route-zemmd0/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/trunk/route-zemmd0/",
-      "name": "Shipai",
-      "href": "/rail/metro/stations/r19/"
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/trunk/route-zemmd0/",

@@ -44,12 +44,38 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full official schedule page listing the current 青潭–復興北村 corridor, service span, fare and operator contact.
+  - id: zh-trunk-bus
+    title: Taipei trunk buses
+    titleOriginal: 臺北市幹線公車
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/臺北市幹線公車
+    accessed: 2026-08-10
+    kind: secondary
+    lang: zh-Hant
+    note: "Source for the list of numbered and colour-prefixed routes converted into named trunk routes, including 松江新生幹線's own predecessor. Corroborated by the Public Transport Office's own 2017 trunk-identity release for the general renaming programme, though that release does not itself name individual predecessor routes."
 ---
 
 ## Classification and corridor
 
 The official catalogue lists 松江新生幹線 under 幹線專車.[^ebus-trunk] Its full schedule page gives 青潭 - 復興北村, weekday and holiday service 0530–2230, a two-section fare and 新店客運新店站 as the service contact.[^ebus-songjiang]
 
+A community wiki lists 松江新生幹線 as the renamed form of a former numbered
+route, 642, one of eight conversions this project's joint-operation network
+page records — the only one of the eight in that table that was not
+already a colour-prefixed feeder.[^zh-trunk-bus]
+
+The confirmed stop sequence runs the length of 新生南/北路 and 松江路, from
+青潭 in Xindian, through 大坪林/景美/萬隆/公館, up 新生南路 past NTU, then along
+松江路 into Zhongshan, ending at 復興北村.[^tdx-bus] Ten confirmed
+interchanges are named directly in the stop sequence — among them 捷運大坪林站
+(Dapinglin, served by both the Songshan–Xindian Line as G04 and the Circular
+Line as Y07), 捷運公館站 (Gongguan, G07), 捷運忠孝新生站 (Zhongxiao Xinsheng,
+served by both the Bannan Line as BL14 and the Zhonghe–Xinlu Line as O07),
+捷運松江南京站 (Songjiang Nanjing, served by both the Songshan–Xindian Line as
+G15 and the Zhonghe–Xinlu Line as O08), and 捷運行天宮站 (Xingtian Temple,
+O09) — more confirmed interchanges than any other route in this project's
+trunk-route coverage.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The 642 predecessor claim rests on a secondary source and was not independently corroborated against a primary PTO or 新店客運 announcement in this search.

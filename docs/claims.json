@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4834,
+    "sourced": 4858,
     "tbc": 4236,
     "asserted": 32,
     "meta": 41
@@ -8954,8 +8954,8 @@
     },
     {
       "file": "content/bus/routes/trunk/route-1dgbuox.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8963,7 +8963,7 @@
     {
       "file": "content/bus/routes/trunk/route-1gsi5vr.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8978,40 +8978,40 @@
     },
     {
       "file": "content/bus/routes/trunk/route-1honm7b.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-1kpgamk.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-1mwg4g2.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-1qov05l.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-1seu29d.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -9026,16 +9026,16 @@
     },
     {
       "file": "content/bus/routes/trunk/route-1xxw2ck.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-2pe75d.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -9043,23 +9043,23 @@
     {
       "file": "content/bus/routes/trunk/route-6pkyok.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-b0o3bt.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-nn3gns.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -9067,14 +9067,14 @@
     {
       "file": "content/bus/routes/trunk/route-oeaqc5.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/trunk/route-rhl925.md",
-      "sources": 3,
+      "sources": 4,
       "sourced": 2,
       "tbc": 4,
       "asserted": 0,
@@ -9091,7 +9091,7 @@
     {
       "file": "content/bus/routes/trunk/route-zemmd0.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
