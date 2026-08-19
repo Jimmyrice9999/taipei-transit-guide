@@ -1,5 +1,5 @@
 {
-  "pages": 1256,
+  "pages": 1276,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -3418,6 +3418,191 @@
       "page": "/bus/routes/new-taipei/712-1cx1q42/",
       "name": "Shalun",
       "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/712-gr809j/",
+      "name": "Danfeng",
+      "href": "/rail/stations/o20/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/712-gr809j/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/712-gr809j/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/716/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/731/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/760/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/778/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/778/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/779/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/779/",
+      "name": "Hengxi",
+      "href": "/rail/stations/lb04/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/780/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/781/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/782/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/783/",
+      "name": "Mingde",
+      "href": "/rail/stations/r18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/783/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/783/",
+      "name": "National Taipei University",
+      "href": "/rail/stations/lb07/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/785/",
+      "name": "Zhongyi",
+      "href": "/rail/stations/r24/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/785/",
+      "name": "Sanchong",
+      "href": "/rail/stations/o15/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/785/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/785/",
+      "name": "Zhongyuan",
+      "href": "/rail/stations/y14/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/785/",
+      "name": "Xingfu",
+      "href": "/rail/stations/y19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/786-1l8qwa5/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/786-1l8qwa5/",
+      "name": "Beimen",
+      "href": "/rail/stations/g13/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/786-1l8qwa5/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/786-1nbd7rw/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/786-1nbd7rw/",
+      "name": "Zhonghe",
+      "href": "/rail/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/787-1xne5ou/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/787-zn5ga/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/788-1t8aw8n/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/788-1vmu8oi/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/788-bzd07e/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1nzyc8h/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1nzyc8h/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1nzyc8h/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1q6khv2/",
+      "name": "Jingmei",
+      "href": "/rail/stations/g05/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1q6khv2/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/789-1q6khv2/",
+      "name": "Yingge",
+      "href": "/rail/stations/lb08/"
     },
     {
       "page": "/bus/routes/new-taipei/853/",
