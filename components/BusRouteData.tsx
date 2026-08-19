@@ -151,7 +151,11 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
       : []),
   ]
 
-  return <FactsPanel facts={facts} line={line} title={route.names.en} references={references} href={href} />
+  {/* badges={false}: the Route row's value is this route's own colour+number
+      label (e.g. "R10 / 紅10"), and that same string is frequently a real,
+      unrelated station's code — R10 is Taipei Main Station. See the note on
+      FactsPanel's own badges prop. */}
+  return <FactsPanel facts={facts} line={line} title={route.names.en} references={references} href={href} badges={false} />
 }
 
 function OperatorRecords({ route, references }: { route: BusRoute; references: NumberedSource[] }) {

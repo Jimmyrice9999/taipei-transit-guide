@@ -26,6 +26,7 @@ export default function FactsPanel({
   title,
   references = [],
   href,
+  badges = true,
 }: {
   facts: Fact[]
   line: Line
@@ -33,6 +34,14 @@ export default function FactsPanel({
   references?: NumberedSource[]
   /** The page this panel is on, so it never links to itself. */
   href?: string
+  /**
+   * Off on bus route pages: the panel's own "Route" row carries a value like
+   * "R10 / 紅10", and R10 is also the real, unrelated code for Taipei Main
+   * Station — the same false-identity risk `RichText`'s `badges` prop exists
+   * to prevent on the page title, just reached through a fact value here
+   * instead. See the note on `badges` in components/RichText.
+   */
+  badges?: boolean
 }) {
   if (facts.length === 0) return null
 
@@ -82,7 +91,7 @@ export default function FactsPanel({
             */}
             <dd>
               {fact.value ? (
-                <RichText link label={fact.label}>
+                <RichText link label={fact.label} badges={badges}>
                   {fact.value}
                 </RichText>
               ) : (

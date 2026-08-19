@@ -155,7 +155,10 @@ export default async function BusRouteGroupPage({ params }: Props) {
       {/* Sources last: a reference list is what you check a statement against,
           so it belongs below everything it answers for — not above the route
           list, which is where it used to sit. */}
-      <References references={folderContent.references} />
+      {/* badges={false}: a group index cites individual route schedule
+          sources whose titles carry a route's own colour+number label —
+          see the note on References' own badges prop. */}
+      <References references={folderContent.references} badges={false} />
     </PageShell>
   )
 }

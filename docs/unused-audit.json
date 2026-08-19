@@ -1,12 +1,12 @@
 {
-  "exports": 303,
+  "exports": 305,
   "cssClasses": 332,
   "imageSidecars": 70,
   "unusedExports": [
     {
       "name": "BusStopSequences",
       "file": "components/BusRouteData.tsx",
-      "line": 232
+      "line": 236
     },
     {
       "name": "UndergroundExtent",
@@ -287,6 +287,11 @@
       "name": "ServicePattern",
       "file": "lib/timetable.ts",
       "line": 98
+    },
+    {
+      "name": "HEDGE",
+      "file": "scripts/bus-rail-join-audit.mjs",
+      "line": 42
     },
     {
       "name": "SPLIT_ROUTE",

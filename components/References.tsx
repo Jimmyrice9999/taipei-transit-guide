@@ -15,7 +15,22 @@ import type { NumberedSource } from '@/lib/sources'
  * argument the rest of the site makes for TBC: a visible gap beats a tidy page
  * that hides one.
  */
-export default function References({ references }: { references: NumberedSource[] }) {
+export default function References({
+  references,
+  badges = true,
+}: {
+  references: NumberedSource[]
+  /**
+   * Off on bus route pages: a route's own colour+number label (`R10`, `BR20`)
+   * is frequently also a real, unrelated station's code (R10 is Taipei Main
+   * Station; BR20 is Dahu Park), and a source title like "R10 route
+   * schedule" would otherwise badge as that unrelated station — the same
+   * false-identity risk `RichText`'s own `badges` prop was added to prevent
+   * on the page title, just left unguarded here. See the note on `badges` in
+   * components/RichText.
+   */
+  badges?: boolean
+}) {
   if (references.length === 0) return null
 
   const cited = references.filter((r) => r.cited)
@@ -45,7 +60,7 @@ export default function References({ references }: { references: NumberedSource[
             <div className="refs-body">
               <span className="refs-title">
                 <a href={reference.url} rel="nofollow noopener">
-                  <RichText>{reference.title}</RichText>
+                  <RichText badges={badges}>{reference.title}</RichText>
                 </a>
               </span>
 
@@ -67,7 +82,7 @@ export default function References({ references }: { references: NumberedSource[
                 >
                   {reference.kind}
                 </span>
-                <RichText>{reference.publisher}</RichText>
+                <RichText badges={badges}>{reference.publisher}</RichText>
                 {reference.accessed && <span className="refs-accessed">accessed {reference.accessed}</span>}
                 {/*
                   The live URL leads; the snapshot is the insurance. Labelled
@@ -95,7 +110,7 @@ export default function References({ references }: { references: NumberedSource[
 
               {reference.note && (
                 <span className="refs-note">
-                  <RichText>{reference.note}</RichText>
+                  <RichText badges={badges}>{reference.note}</RichText>
                 </span>
               )}
             </div>

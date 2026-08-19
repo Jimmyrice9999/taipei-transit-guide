@@ -95,7 +95,10 @@ export default async function BusRoutePage({ params }: Props) {
             <BusRouteData route={route} line={accent} references={page.references} href={page.href} />
             <div className="prose" dangerouslySetInnerHTML={{ __html: page.html }} />
             <SpecTable specs={page.specs} references={page.references} />
-            <References references={page.references} />
+            {/* badges={false}: see the note on References' own badges prop —
+                a route's colour+number label is frequently a different,
+                unrelated real station's code. */}
+            <References references={page.references} badges={false} />
             {page.updated && <p className="page-updated">Last updated: {page.updated}</p>}
           </div>
         </div>

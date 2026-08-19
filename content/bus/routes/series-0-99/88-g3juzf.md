@@ -31,7 +31,7 @@ sources:
     accessed: 2026-08-19
     kind: primary
     lang: zh-Hant
-    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length or timetable field. Records a single subroute for this route, named "88Shuttle"/88區 (operator key 900 / 大有巴士), and railJoins matching this route's stops to Songshan Line R02/R06/R09. The operator id used in this project's data (bus-operator-citiairbus) resolves in data/tdx/bus/operators.json to English name "Citiair Bus Co., Ltd." and Chinese name 大有巴士, operator code CitiairBus — the same operator as base route 88.
+    note: Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length or timetable field. Records a single subroute for this route, named "88Shuttle"/88區 (operator key 900 / 大有巴士). Its raw stop-name matching flags candidate proximity to Songshan Line R02/R06/R09, but none of these is in the site's separately curated stop-ID rail-join set, so no interchange is presented as confirmed. The operator id used in this project's data (bus-operator-citiairbus) resolves in data/tdx/bus/operators.json to English name "Citiair Bus Co., Ltd." and Chinese name 大有巴士, operator code CitiairBus — the same operator as base route 88.
   - id: ebus-general
     title: Taipei/New Taipei bus route catalogue
     titleOriginal: 大臺北公車
