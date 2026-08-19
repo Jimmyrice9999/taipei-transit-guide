@@ -12306,13 +12306,13 @@
     },
     {
       "page": "/bus/routes/series-700s/711/",
-      "name": "Donghu",
-      "href": "/rail/metro/stations/br22/"
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/series-700s/711/",
-      "name": "Nangang Software Park",
-      "href": "/rail/metro/stations/br23/"
+      "name": "Donghu",
+      "href": "/rail/metro/stations/br22/"
     },
     {
       "page": "/bus/routes/series-700s/711/",
@@ -12326,11 +12326,6 @@
     },
     {
       "page": "/bus/routes/series-700s/711/",
-      "name": "Songshan",
-      "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-700s/711/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -12341,13 +12336,8 @@
     },
     {
       "page": "/bus/routes/series-700s/756/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-700s/756/",
-      "name": "Guandu",
-      "href": "/rail/metro/stations/r25/"
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/series-700s/756/",
@@ -12376,8 +12366,8 @@
     },
     {
       "page": "/bus/routes/series-700s/757/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/series-700s/757/",
@@ -12413,6 +12403,11 @@
       "page": "/bus/routes/series-700s/757/",
       "name": "Ganzhenlin",
       "href": "/rail/metro/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/series-700s/758/",
+      "name": "聯營公車",
+      "href": "/bus/network/joint-operation/"
     },
     {
       "page": "/bus/routes/series-700s/758/",
@@ -13803,11 +13798,6 @@
       "page": "/bus/routes/unclassified/route-d3oyhe/",
       "name": "Muzha",
       "href": "/rail/metro/stations/br02/"
-    },
-    {
-      "page": "/bus/routes/unclassified/route-d3oyhe/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/unclassified/route-d3oyhe/",

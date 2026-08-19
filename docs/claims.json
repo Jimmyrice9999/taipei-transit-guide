@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4766,
+    "sourced": 4774,
     "tbc": 4236,
     "asserted": 32,
     "meta": 41
@@ -8362,31 +8362,31 @@
     },
     {
       "file": "content/bus/routes/series-700s/711.md",
-      "sources": 3,
-      "sourced": 3,
+      "sources": 5,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/series-700s/756.md",
-      "sources": 3,
-      "sourced": 6,
+      "sources": 5,
+      "sourced": 8,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/series-700s/757.md",
-      "sources": 3,
-      "sourced": 5,
+      "sources": 5,
+      "sourced": 7,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/series-700s/758.md",
-      "sources": 3,
+      "sources": 4,
       "sourced": 6,
       "tbc": 2,
       "asserted": 0,
@@ -8514,8 +8514,8 @@
     },
     {
       "file": "content/bus/routes/series-other/1717.md",
-      "sources": 3,
-      "sourced": 3,
+      "sources": 4,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -9115,15 +9115,15 @@
     {
       "file": "content/bus/routes/unclassified/route-d3oyhe.md",
       "sources": 3,
-      "sourced": 1,
+      "sourced": 2,
       "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/unclassified/route-v9sv0g.md",
-      "sources": 3,
-      "sourced": 1,
+      "sources": 4,
+      "sourced": 2,
       "tbc": 5,
       "asserted": 0,
       "meta": 0
