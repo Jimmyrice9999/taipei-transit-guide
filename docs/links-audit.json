@@ -1,5 +1,5 @@
 {
-  "pages": 882,
+  "pages": 899,
   "destinations": 249,
   "ambiguous": [
     "Daan",
@@ -2890,6 +2890,181 @@
       "href": "/rail/stations/bl18/"
     },
     {
+      "page": "/bus/routes/new-taipei/947/",
+      "name": "Guandu",
+      "href": "/rail/stations/r25/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/947/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/947/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/947/",
+      "name": "Ganzhenlin",
+      "href": "/rail/stations/v02/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/947/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/948/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/951/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/951/",
+      "name": "Nangang",
+      "href": "/rail/stations/bl22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/952/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/953-cjlitg/",
+      "name": "Xinhai",
+      "href": "/rail/stations/br05/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/953-cjlitg/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/953-rbxy6m/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/963/",
+      "name": "Guandu",
+      "href": "/rail/stations/r25/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/963/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/963/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/965/",
+      "name": "Xiaonanmen",
+      "href": "/rail/stations/g11/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/965/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/966-1ap4dha/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/966-ufgpxx/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/966-ufgpxx/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/966a/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/966a/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1887tfi/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1887tfi/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1887tfi/",
+      "name": "Xingtian Temple",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1887tfi/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1oopi1x/",
+      "name": "Donghu",
+      "href": "/rail/stations/br22/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1oopi1x/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1oopi1x/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1oopi1x/",
+      "name": "Xingtian Temple",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-1oopi1x/",
+      "name": "Sun Yat-Sen Memorial Hall",
+      "href": "/rail/stations/bl17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-t5onwf/",
+      "name": "Taipei Arena",
+      "href": "/rail/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-t5onwf/",
+      "name": "Songshan",
+      "href": "/rail/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-t5onwf/",
+      "name": "Xingtian Temple",
+      "href": "/rail/stations/o09/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/967-t5onwf/",
+      "name": "Sun Yat-Sen Memorial Hall",
+      "href": "/rail/stations/bl17/"
+    },
+    {
       "page": "/bus/routes/new-taipei/985/",
       "name": "Fu Jen University",
       "href": "/rail/stations/o19/"
@@ -2901,6 +3076,51 @@
     },
     {
       "page": "/bus/routes/new-taipei/985/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/988/",
+      "name": "Zhongshan Junior High School",
+      "href": "/rail/stations/br12/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/988/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/988/",
+      "name": "Xinpu",
+      "href": "/rail/stations/bl08/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/988/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/988/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/989/",
+      "name": "Tamsui",
+      "href": "/rail/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/989/",
+      "name": "市政府",
+      "href": "/rail/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/989/",
+      "name": "Shalun",
+      "href": "/rail/stations/v27/"
+    },
+    {
+      "page": "/bus/routes/new-taipei/990/",
       "name": "市政府",
       "href": "/rail/stations/bl18/"
     },

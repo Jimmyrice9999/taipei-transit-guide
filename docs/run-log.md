@@ -11120,6 +11120,21 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — rapid buses, batch 3
+
+Built 17 routes: 947, 948, 951, 952, 953 and its two separately filed
+identities, 953區, 963, 965 (台灣好行-九份金瓜石線), 966副, 966, 966A,
+967副, 967, 967直, 988, 989 and 990. Body prose is 2,081
+whitespace-delimited words. Exact New Taipei route-service rows cover 17/17;
+the route-specific schedule fields are published where the fetched API row
+carries them, while route history, predecessor/renumbering, dated operator
+changes, corridor rationale and eligibility remain TBC. The batch has 134
+confirmed geometry-only MRT stop-ID joins, 327 candidates rejected as too far,
+and 0 ambiguous candidates. The 953, 966 and 967 suffix/name variants remain
+separate TDX identities; no suffix meaning was inferred. Sources are the full
+TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei
+route-service API and the New Taipei transport-management page.
+
 ### New Taipei audit and architecture
 
 The New Taipei source hierarchy is documented in `docs/bus-architecture.md`: TDX supplies normalized identity, municipality, operators, direction/variant data, stop sequences and shapes; New Taipei City Department of Transportation supplies route-type catalogues and the full route-service API; official notices/PDFs and operator pages are searched for descriptive/history claims; Taipei eBus is not authoritative for New Taipei-specific facts. The full datasets were fetched from `https://data.ntpc.gov.tw/openapi/`, `https://data.ntpc.gov.tw/api/datasets/0ee4e6bf-cee6-4ec8-8fe1-71f544015127/json?size=1000` and the seven category dataset pages listed in each research file.
