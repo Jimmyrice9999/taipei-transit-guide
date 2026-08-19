@@ -11120,6 +11120,21 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — New Bus community services, batch 2
+
+Built 20 routes: F132, F132經青山, F133末班, F133假日, F133平日, F135, F136,
+F137, F138內橫山, F138新古庄, F139行經101線, F139行經台2線, F151-0605,
+F151-0620, F151-0655、1040, F151-0730, F151-0810, F151-0840、1705,
+F151-0930 and F151-1010. Body prose is 2,226 whitespace-delimited words.
+Exact New Taipei route-service rows cover 20/20. The batch has 4 confirmed
+geometry-only MRT stop-ID joins, 4 candidates rejected as too far, and 0
+ambiguous candidates. Time, weekday/holiday and named variants remain
+separate TDX identities; no meaning was inferred from the markers. Sources
+are the full TDX bus snapshot, the full New Taipei 新巴士 dataset, the full
+New Taipei route-service API and the New Taipei transport-management page.
+History, predecessor/renumbering, dated operator changes, route rationale and
+eligibility remain TBC where those sources do not establish them.
+
 ### New Taipei — New Bus community services, batch 1
 
 Built 20 routes: F101坪頂, F101樹興, F102, F103, F105反, F105, F106, F109,
