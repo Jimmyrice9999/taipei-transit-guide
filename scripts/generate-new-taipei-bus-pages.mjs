@@ -267,11 +267,11 @@ function researchFile(categoryKey, routes, allRoutes, joins) {
 function groupIndex(routes) {
   const counts = Object.fromEntries(Object.keys(CATEGORY_INFO).map((key) => [key, routes.filter((route) => route.service?.categoryKey === key).length]))
   const sources = [tdxSource(), serviceSource(), transportSource(), ...Object.keys(CATEGORY_INFO).map(categorySource)]
-  const body = `The committed TDX layer contains ${routes.length} New Taipei route identities in this municipality group. New Taipei Department of Transportation route-type datasets provide seven stable browse subgroups: ${Object.entries(counts).map(([key, count]) => `${CATEGORY_INFO[key].title} (${count})`).join(', ')}.[^tdx-bus][^ntpc-transport][^ntpc-category-general][^ntpc-category-rapid][^ntpc-category-pioneer][^ntpc-category-newbus][^ntpc-category-event][^ntpc-category-jumpfrog][^ntpc-category-lrt]
+  const body = `The committed TDX layer contains ${routes.length} New Taipei route identities in this municipality group.[^tdx-bus] New Taipei Department of Transportation route-type datasets provide seven stable browse subgroups: ${Object.entries(counts).map(([key, count]) => `${CATEGORY_INFO[key].title} (${count})`).join(', ')}.[^ntpc-transport][^ntpc-category-general][^ntpc-category-rapid][^ntpc-category-pioneer][^ntpc-category-newbus][^ntpc-category-event][^ntpc-category-jumpfrog][^ntpc-category-lrt]
 
-The group page keeps those subgroups collapsed by default and retains every route at the municipality-scoped URL /bus/routes/new-taipei/<slug>/. That path includes the municipality group, so a numeric collision with a Taipei route cannot overwrite or masquerade as the other record.[^tdx-bus]
+The group page keeps those subgroups collapsed by default and retains every route at the municipality-scoped URL /bus/routes/new-taipei/<slug>/.[^tdx-bus] That path includes the municipality group, so a numeric collision with a Taipei route cannot overwrite or masquerade as the other record.[^tdx-bus]
 
-The full current New Taipei route-service dataset was fetched and joined by exact route name. Missing current rows stay TBC on their route pages; no related route is used as a proxy.[^ntpc-bus-route-data]`
+The full current New Taipei route-service dataset was fetched and joined by exact route name.[^ntpc-bus-route-data] Missing current rows stay TBC on their route pages; no related route is used as a proxy.[^ntpc-bus-route-data]`
   return [
     '---',
     'title: New Taipei bus routes',

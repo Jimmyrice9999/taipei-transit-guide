@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 3349,
-    "tbc": 1992,
+    "sourced": 3352,
+    "tbc": 1996,
     "asserted": 32,
     "meta": 42
   },
@@ -2069,6 +2069,14 @@
       "sources": 2,
       "sourced": 2,
       "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/new-taipei/985.md",
+      "sources": 4,
+      "sourced": 3,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
