@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 藍41 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 員福里 - 捷運永安市場站, weekday service 0545–2300, holiday service 0600–2300, one-section fare and 基隆客運土城站 as the service contact.[^ebus-bl41] TDX carries a separate 藍41延和 record (canonical slug `blue-41-3uzeni`) with the same published termini and operator; their relationship is TBC.
 
+The confirmed stop sequence runs from 員福里 near 捷運海山站, through 裕民路/
+清水/明德路, past 平和里/中和高中/連城路, into 中和's 圓通路/景新街 area, ending at
+捷運永安市場站.[^tdx-bus] Two confirmed interchanges are recorded in the
+curated stop-ID join set: Jingan, a Zhonghe–Xinlu/Circular interchange
+(O02/Y11), and Yongan Market (O03).[^tdx-bus] The route runs a single
+subroute under one operator, 基隆客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍41延和 remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍41延和 remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 藍41 was found in this search, nor a stated reason for
+pairing 員福里 with 捷運永安市場站 specifically as the route's own termini.[^ebus-bl41]
+No predecessor-route or renumbering history for 藍41 was located either,
+and its relationship to 藍41延和 is stated on neither primary schedule page
+beyond the shared termini and operator, 基隆客運. A headway-by-day-type
+figure is also absent from the primary schedule page.[^ebus-bl41]

@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4870,
-    "tbc": 4236,
+    "sourced": 4924,
+    "tbc": 4242,
     "asserted": 32,
     "meta": 41
   },
@@ -587,7 +587,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-10.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -595,7 +595,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-15.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -604,14 +604,14 @@
       "file": "content/bus/routes/colour-blue/blue-17.md",
       "sources": 3,
       "sourced": 2,
-      "tbc": 4,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-18.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -619,7 +619,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-2-11ztfes.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -627,7 +627,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-20.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -635,15 +635,15 @@
     {
       "file": "content/bus/routes/colour-blue/blue-21-11dc6r7.md",
       "sources": 3,
-      "sourced": 3,
-      "tbc": 4,
+      "sourced": 4,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-21-3cqoqf.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -651,7 +651,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-22.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -659,7 +659,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-23.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -667,7 +667,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-25.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -675,7 +675,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-26.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -683,7 +683,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-27.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -691,7 +691,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-28.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -699,31 +699,31 @@
     {
       "file": "content/bus/routes/colour-blue/blue-29.md",
       "sources": 3,
-      "sourced": 2,
-      "tbc": 4,
+      "sourced": 4,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-31.md",
       "sources": 3,
-      "sourced": 2,
-      "tbc": 4,
+      "sourced": 3,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-32.md",
       "sources": 3,
-      "sourced": 2,
-      "tbc": 4,
+      "sourced": 3,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-33.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -731,7 +731,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-35.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -739,7 +739,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-36.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -747,7 +747,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-37.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -755,7 +755,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-38.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -763,7 +763,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-39.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -771,7 +771,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-40.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -787,7 +787,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-41-3uzeni.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -795,7 +795,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-43-1c3c509.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -803,7 +803,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-43-cpmwhl.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -811,7 +811,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-44-1b76ti2.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -819,15 +819,15 @@
     {
       "file": "content/bus/routes/colour-blue/blue-44-1tw6b27.md",
       "sources": 3,
-      "sourced": 3,
-      "tbc": 4,
+      "sourced": 4,
+      "tbc": 5,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/routes/colour-blue/blue-45.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -835,7 +835,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-46.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -843,7 +843,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-5.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -851,7 +851,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-50.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -859,7 +859,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-51.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -867,7 +867,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-7-1kzqp7s.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -875,7 +875,7 @@
     {
       "file": "content/bus/routes/colour-blue/blue-7-1qb0d1m.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0

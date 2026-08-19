@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 藍26 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 舊宗路 - 捷運市政府站, weekday and holiday service 0600–2320, one-section fare and 三重客運南港站 as the service contact.[^ebus-bl26]
 
+The confirmed stop sequence runs from 精技大樓 near 新湖舊宗路口 in Neihu's
+office-park corridor, past 大直's 明水路/自強隧道, through 劍南路/西湖/港墘, then
+along 民權大橋 into 三民/南京三民, ending at 捷運市政府站.[^tdx-bus] Five
+confirmed interchanges are recorded in the curated stop-ID join set: Taipei
+City Hall (BL18), Jiannan Rd. (BR15), Xihu (BR16), Gangqian (BR17) and
+Nanjing Sanmin (G18).[^tdx-bus] TDX records four named subroutes — 藍26,
+藍26往捷運市政府, 藍26往舊宗路 and 藍26繞駛台北花市 — among the richer variant
+structures in this batch.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] What distinguishes the four named subroutes operationally — whether they
+represent different scheduled departures, a detour condition, or a
+historical succession — was not found in this search beyond what their own
+names describe. The route length and a headway-by-day-type figure also
+remain TBC, and no dated history for the route, its four subroutes, or the
+operator's own naming convention behind 繞駛/往 was found in this search,
+nor a stated reason for the operator, 三重客運, running a route so far from
+its own namesake district.

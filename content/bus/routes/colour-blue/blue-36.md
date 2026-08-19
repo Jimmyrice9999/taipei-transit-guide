@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 藍36 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 汐止社后 - 捷運昆陽站, weekday service 0520–2330, holiday service 0530–2330, one-section fare and 首都客運汐止一站 as the service contact.[^ebus-bl36]
 
+The confirmed stop sequence runs from 環河市民活動中心 in Xizhi, past 理明
+社區/台北奇蹟/大汐止百貨, through 北峰里/金龍國小/木南煤礦/經貿園區, into 東湖/明湖
+past 捷運葫洲站(康寧大學), then along 民權隧道/國防醫學大學/福華商場, ending at 捷運
+昆陽站.[^tdx-bus] Two confirmed interchanges are recorded in the curated
+stop-ID join set: Kunyang (BL21) and Huzhou (BR21).[^tdx-bus] TDX records
+three named subroutes — 藍36, 藍36去程半 and 藍36返程半 — the outbound and
+return half-workings sharing the same stop counts as the full route in
+this snapshot.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍36 or its
+half-working subroutes was found in this search. Whether the half-workings
+actually turn back partway, or are simply duplicate records for the full
+route, could not be determined from the stop-sequence data alone, since
+both list the same stop counts as the full working — the same open
+question this project's trunk-route coverage found for 民生幹線's own half-
+working subroutes.

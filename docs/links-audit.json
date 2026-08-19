@@ -266,6 +266,16 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-10/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-10/",
+      "name": "Xindian",
+      "href": "/rail/metro/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-10/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
     },
@@ -273,11 +283,6 @@
       "page": "/bus/routes/colour-blue/blue-15/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-15/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-17/",
@@ -331,6 +336,11 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-2-11ztfes/",
       "name": "Haishan",
       "href": "/rail/metro/stations/bl04/"
     },
@@ -346,21 +356,6 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-20/",
-      "name": "Xihu",
-      "href": "/rail/metro/stations/br16/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-20/",
-      "name": "Gangqian",
-      "href": "/rail/metro/stations/br17/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-20/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-20/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -383,11 +378,6 @@
       "page": "/bus/routes/colour-blue/blue-21-3cqoqf/",
       "name": "Xingfu",
       "href": "/rail/metro/stations/y19/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-22/",
-      "name": "Nangang Software Park",
-      "href": "/rail/metro/stations/br23/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-22/",
@@ -401,11 +391,6 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-22/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-22/",
       "name": "Guohua",
       "href": "/rail/metro/stations/lb10/"
     },
@@ -415,24 +400,9 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/colour-blue/blue-23/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/colour-blue/blue-25/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-26/",
-      "name": "Dazhi",
-      "href": "/rail/metro/stations/br14/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-26/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-27/",
@@ -441,13 +411,28 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Xindian",
+      "href": "/rail/metro/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/colour-blue/blue-28/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
     {
+      "page": "/bus/routes/colour-blue/blue-28/",
+      "name": "Zhonghe",
+      "href": "/rail/metro/stations/y12/"
+    },
+    {
       "page": "/bus/routes/colour-blue/blue-29/",
-      "name": "Xiaonanmen",
-      "href": "/rail/metro/stations/g11/"
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-29/",
@@ -476,11 +461,6 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-33/",
-      "name": "Zhongshan Junior High School",
-      "href": "/rail/metro/stations/br12/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-33/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -493,11 +473,6 @@
       "page": "/bus/routes/colour-blue/blue-35/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-36/",
-      "name": "Donghu",
-      "href": "/rail/metro/stations/br22/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-36/",
@@ -530,11 +505,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/colour-blue/blue-38/",
-      "name": "Shalun",
-      "href": "/rail/metro/stations/v27/"
-    },
-    {
       "page": "/bus/routes/colour-blue/blue-39/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
@@ -565,11 +535,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/colour-blue/blue-41-1vvygl7/",
-      "name": "Zhonghe",
-      "href": "/rail/metro/stations/y12/"
-    },
-    {
       "page": "/bus/routes/colour-blue/blue-41-3uzeni/",
       "name": "Mingde",
       "href": "/rail/metro/stations/r18/"
@@ -631,33 +596,13 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-45/",
-      "name": "Tucheng",
-      "href": "/rail/metro/stations/bl03/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-45/",
-      "name": "市政府",
-      "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-45/",
-      "name": "Hengxi",
-      "href": "/rail/metro/stations/lb04/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-46/",
-      "name": "Mingde",
-      "href": "/rail/metro/stations/r18/"
-    },
-    {
-      "page": "/bus/routes/colour-blue/blue-46/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-46/",
-      "name": "Hengxi",
-      "href": "/rail/metro/stations/lb04/"
+      "name": "市政府",
+      "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-50/",
@@ -681,8 +626,8 @@
     },
     {
       "page": "/bus/routes/colour-blue/blue-7-1kzqp7s/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
+      "name": "Nangang",
+      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/colour-blue/blue-7-1qb0d1m/",

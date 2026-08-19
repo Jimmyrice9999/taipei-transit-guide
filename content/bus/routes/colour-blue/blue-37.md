@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 藍37 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 龍壽里 - 捷運板橋站, weekday service 0535–2345, holiday service 0600–2345, one-section fare and 三重客運迴龍站 as the service contact.[^ebus-bl37]
 
+At 38 stops each way, the confirmed stop sequence is one of the longer
+routes in this batch: from 龍壽里 near 迴龍, past 捷運迴龍站/丹鳳國小, through
+福營國中/福祿新城/大唐江山, into 樹林's 圳福里/濟安宮/沙崙里, then past 捷運亞東醫院站/
+南雅站, ending at 捷運府中站/新北板橋公車站.[^tdx-bus] Four confirmed
+interchanges are recorded in the curated stop-ID join set: Far Eastern
+Hospital (BL05), Fuzhong (BL06), Banqiao (BL07) and Huilong (O21).[^tdx-bus]
+TDX records three named subroutes, matching the schedule page's own
+龍壽里(車機) and 新北板橋公車站(車機) short-working labels.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 藍37 or a stated reason for its own near-18-hour,
+0535–2345 span was found in this search.[^ebus-bl37] A headway-by-day-type
+figure is likewise absent from the primary schedule page. No
+predecessor-route or renumbering history for 藍37 specifically was located
+either, nor a
+stated reason for the route's own three-way subroute split into a plain
+working and two vehicle-triggered short workings.[^tdx-bus]

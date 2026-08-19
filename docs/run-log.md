@@ -12551,3 +12551,41 @@ Part 1 running total: 153 of 1,051 routes across eleven groups.
 Next-smallest remaining: colour-blue (38), colour-red (40), minibus (48),
 series-600s (49), special-shuttle (51), series-200s (92), new-taipei
 (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 9, colour-blue to 200+ words
+
+38 routes: the whole `colour-blue` group (藍線接駁公車). Same starting
+template as colour-green/colour-orange (57-91 words, no corridor prose at
+all), widened the same way: corridor prose from each route's own confirmed
+stop sequence, confirmed interchanges named only where the curated join
+set actually has them, and — unlike the corridor-name-collision pattern
+found in series-500s/0-99 — this group genuinely does have curated MRT
+interchanges on almost every route, several with dense counts.
+
+Genuine findings: 藍17 and 藍18 each confirm six interchanges; 藍45 confirms
+four (Dingpu, Yongning, Mazutian, Changshoushan) and 藍46 confirms three of
+the same four, overlapping along the 頂埔 stretch while starting from
+different districts. 光華巴士 runs four separate routes (藍21, 藍21副, 藍23,
+藍39) through the same 汐止社后 origin area on four distinct street paths,
+each described against what the others actually take rather than restated
+boilerplate. 藍43延南天母 and 藍44延 both continue past their own curated
+MRT interchange (Yongning) into hillside territory the curated join set
+does not separately confirm — the interchange matches the plain route's
+terminus, not the extended route's actual end. 藍7 and 藍7副 share the same
+five interchanges via a small 行善路 detour on the sub-route rather than a
+different corridor. One caught-and-fixed error during drafting: an initial
+claim that 藍45 confirmed "the most interchanges of any route checked so
+far in this project's colour-feeder coverage" was false — colour-green's
+G13 confirms six, more than 藍45's four — corrected to a plain count before
+publishing.
+
+Gates: cite clean, verify running in the background at time of writing,
+test:unit 209/209, claims baseline held at 32 (a mid-batch check found 14
+sentence-level trips from time-figure clauses lacking their own citation
+marker; all fixed by citing the sentence directly, none by touching the
+baseline).
+
+Part 1 running total: 191 of 1,051 routes across twelve groups.
+Next-smallest remaining: colour-red (40), minibus (48), series-600s (49),
+special-shuttle (51), series-200s (92), new-taipei (562). Parts 2-7 not
+started.

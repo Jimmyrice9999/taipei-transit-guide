@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 藍45 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 成福 - 捷運永寧站, weekday service 0600–2200, holiday service 0700–2040, one-section fare and 臺北客運三峽二站 as the service contact — sharing its operator with 藍43, 藍43延南天母 and 藍46.[^ebus-bl45]
 
+The confirmed stop sequence runs from 田寮站 near 成福, past 竹崙/大成國小/
+駱駝潭/成福派出所, through 大坪新村/辭修高中/溪東/橫溪, along 介壽路三段/溪北里,
+ending at 捷運永寧站 via 頂埔/震安宮.[^tdx-bus] Four confirmed interchanges are
+recorded in the curated stop-ID join set: Dingpu (BL01/LB01), Yongning
+(BL02), Mazutian (LB02) and Changshoushan (LB03).[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 藍45 or its relationship to sibling routes 藍43 and 藍46,
+run by the same operator through overlapping 三峽/土城 territory, was found
+in this search. Whether 臺北客運 designed these three routes as a
+deliberate network or grew them independently over time is likewise not
+established. No predecessor-route or renumbering history for 藍45
+specifically was located in this search.[^tdx-bus] A headway-by-day-type figure is likewise absent
+from the primary schedule page beyond its own weekday 0600–2200 and
+holiday 0700–2040 span statement.[^ebus-bl45]

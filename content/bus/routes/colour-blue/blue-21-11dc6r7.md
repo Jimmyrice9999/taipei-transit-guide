@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 藍21副 under 捷運藍線接駁公車.[^ebus-blue] Its full schedule page gives 汐止社后 - 南港車站, weekday-only service 0615–1900 with no holiday service, one-section fare and 光華巴士北峰站 as the service contact — the same termini and operator as plain 藍21 (`blue-21-3cqoqf`).[^ebus-bl21sub]
 
+The confirmed stop sequence runs from 社后消防隊 in Xizhi, through 理明社區/
+台北奇蹟/生活大國社區, then via 南陽街口/福德二路/環河市民活動中心 — a different
+street path through 社后 than plain 藍21 takes — before joining the same
+橫科/南港展覽館 corridor into 南港車站.[^tdx-bus] Two confirmed interchanges
+are recorded in the curated stop-ID join set: Nangang (BL22) and Taipei
+Nangang Exhibition Center, a Bannan–Wenhu interchange (BL23/BR24).[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍21 remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍21 remain TBC.[^tdx-bus] Whether 藍21副 is a later addition to relieve 藍21, a permanent alternative
+alignment, or a peak-only supplement was not found in this search; neither
+primary schedule page states what distinguishes the two beyond their
+differing street path through 社后. The route length and a
+headway-by-day-type figure also remain TBC, and no dated history for the
+route or its relationship to plain 藍21 was found in this search beyond
+what the schedule pages themselves state.
