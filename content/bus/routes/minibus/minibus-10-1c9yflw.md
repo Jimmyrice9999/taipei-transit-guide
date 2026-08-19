@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “麥帥新城 - 三民國中”, the current head/last-departure field “[平日] 0650 - 1740 [假日] 停駛”, fare “一段票”.[^ebus-route-minibus-10-1c9yflw] It currently lists weekday service and suspended holiday service.[^ebus-route-minibus-10-1c9yflw]
 
+The confirmed stop sequence runs from 新湖舊宗路口 in Neihu, past 新湖民善
+街口/行善路/潭美國小, through 週美里/新明路/台北企業總部園區, along 成功路二段
+past 上灣仔/湖興/國防醫學中心/三總內湖站, ending at 三民國中.[^tdx-bus] The
+curated stop-ID join set records zero confirmed interchanges for this
+route.[^tdx-bus] The route runs a single subroute under one operator,
+首都客運, with weekday-only service and holiday service suspended
+entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the
+route's own holiday suspension despite its Neihu corridor's dense
+residential and school ridership was found in this search, nor a stated
+reason for pairing 麥帥新城 with 三民國中 specifically as the route's own
+termini.

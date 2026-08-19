@@ -53,6 +53,18 @@ The normalized TDX record retains 3 direction/variant records for this service; 
 
 The full official schedule gives termini “萬芳社區 - 大春山莊”, the current head/last-departure field “[平日] 0600 - 2310 [假日] 0600 - 2250”, fare “一段票”.[^ebus-route-minibus-11-qal1hk]
 
+The confirmed stop sequence runs from 萬芳社區, past 萬芳活動中心/捷運萬芳
+社區站/木柵高工, through 木柵市場/景文中學/司法新村, along 忠順廟/國泰新村/景美
+女中, ending at 寶高產業園區/大春山莊, with one working extending further
+past 捷運七張站/北新國小.[^tdx-bus] Two confirmed interchanges are recorded
+in the curated stop-ID join set: Wanfang Community (BR03) and Qizhang
+(G03).[^tdx-bus] TDX records three named subroutes distinguishing whether
+a working detours via 救千宮 or 捷運七張站.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for
+pairing 萬芳社區 with 大春山莊 specifically as the route's own termini was
+found in this search, nor a stated reason for its own near-24-hour weekday
+0600–2310 span over such a residential corridor, one of the longer
+published spans in this batch.

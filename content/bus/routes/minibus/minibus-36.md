@@ -53,6 +53,17 @@ The normalized TDX record retains 5 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運石牌站 - 六窟”, the current head/last-departure field “[平日] 0600 - 2350 [假日] 0600 - 2350”, fare “一段票”.[^ebus-route-minibus-36]
 
+The confirmed stop sequence runs from 捷運石牌站(東華), past 綜合市場/永明
+派出所/榮總/榮光新村/永欣里/五福宮(石牌路)/五福宮(行義路)/磺溪/明山宮/永和
+里/行義路154巷至402巷, through 惇敘工商(行義)/惇敘工商(泉源)/龍鳳谷/頂北
+投/紗帽橋一/梅湖/吳厝一/吳厝/湖底路20號/66號/六窟一, ending at 六窟, with
+one working detouring via 天母/農訓協會/天母新村/天母廣場/齊賢華廈 on its
+return leg.[^tdx-bus] One confirmed interchange is recorded in the
+curated stop-ID join set: Shipai (R19), matching the route's own
+terminus.[^tdx-bus] TDX records five named direction/variant records
+distinguishing whether a working detours via 中山 or reroutes onto 東昇
+路 on either leg.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing this many named detours onto a single route number, rather than splitting them into separately numbered services, was found in this search, nor a stated reason for pairing 捷運石牌站 with 六窟 specifically as the route's own termini.

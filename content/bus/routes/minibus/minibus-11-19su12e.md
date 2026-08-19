@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “天母 - 捷運芝山站”, the current head/last-departure field “[平日] 0630 - 2000 [假日] 0630 - 2000”, fare “一段票”.[^ebus-route-minibus-11-19su12e]
 
+The confirmed stop sequence runs from 天母圓環, past 中銀山莊/水管路/天母里/
+天和里, through 天母公園/合庫訓練中心/天玉里/天母國小, along 天壽里/賴厝/士東
+國小/蘭雅國小, ending at 捷運芝山站(福華).[^tdx-bus] One confirmed
+interchange is recorded in the curated stop-ID join set: Zhishan (R17),
+matching the route's own terminus.[^tdx-bus] The route runs a single
+subroute under one operator, 光華巴士.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for
+pairing 天母 with 捷運芝山站 specifically as the route's own termini was
+found in this search, nor a stated reason for this route running a single
+subroute with no recorded holiday variant, unlike several other minibus
+routes in this batch that run multiple named subroutes over the same
+corridor.

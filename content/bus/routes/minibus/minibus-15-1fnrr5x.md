@@ -53,6 +53,14 @@ The normalized TDX record retains 3 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運劍潭站 - 菁山遊憩園區”, the current head/last-departure field “[平日] 0620 - 2230 [假日] 1930 - 2230”, fare “一段票”.[^ebus-route-minibus-15-1fnrr5x]
 
+Two confirmed interchanges are recorded in the curated stop-ID join set:
+Jiantan (R15) and Shilin (R16), matching the route's own Jiantan
+terminus and a stop further along its climb through Shilin toward
+陽明山.[^tdx-bus] TDX records three named subroutes distinguishing
+whether a working detours via 菁山路99巷 or runs as a reservation-only
+(預約) service, over the same corridor family shared with 小15區預 and
+小15.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for this route's own shorter 菁山遊憩園區 terminus, well short of 小15's own 擎天崗 terminus over what is largely the same climb, was found in this search, nor a stated reason for its own weekend-only 1930–2230 evening window sitting alongside a fuller weekday span in the same published schedule.

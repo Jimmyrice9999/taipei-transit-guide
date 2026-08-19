@@ -53,6 +53,17 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “興得閱覽室 - 捷運景美站”, the current head/last-departure field “[平日] 0600 - 1900 [假日] 0600 - 1900”, fare “一段票”.[^ebus-route-minibus-5-mubk47]
 
+The confirmed stop sequence runs from 興得閱覽室, past 仙跡岩海巡署登山口/
+海巡署/文山運動中心/臺灣警察專科學校, through 捷運萬芳醫院站, along 中國科
+技大學/興隆國小/福興路口/敦南美景/興旺公園/敦南大地/敦南如意/敦南203巷/興
+隆市場後站/景華街/景華街一/景華公園/景美國小(景興)/景美國小(景文), ending
+at 文山二分局.[^tdx-bus] Two confirmed interchanges are recorded in the
+curated stop-ID join set, on two different rail lines: Wanfang
+Hospital (BR04) and Jingmei (G05), matching a stop roughly midway
+along the corridor and the route's own eastern terminus.[^tdx-bus]
+TDX records two named subroutes distinguishing whether a working
+detours via 仙岩公園/興安宮/麥田紫藤/興業里/興隆公園.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 興得閱覽室 with 捷運景美站 specifically as the route's own termini was found in this search, nor a stated reason for the identical weekday and holiday schedule window unlike several other routes in this batch.

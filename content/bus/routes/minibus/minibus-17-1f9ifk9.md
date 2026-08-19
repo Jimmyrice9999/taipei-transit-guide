@@ -53,6 +53,14 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運劍潭站 - 新安里”, the current head/last-departure field “[平日] 0600 - 2240 [假日] 0600 - 2240”, fare “一段票”.[^ebus-route-minibus-17-1f9ifk9]
 
+Two confirmed interchanges are recorded in the curated stop-ID join
+set: Jiantan (R15) and Shilin (R16), matching the route's own terminus
+and a stop further along its climb through 士林.[^tdx-bus] The
+confirmed corridor continues past 陽明山國小 into 新安路一 through 七,
+ending at 新安里, distinct from the 菁山/擎天崗-bound corridor shared by
+小15, 小15區 and 小15區預. TDX records two named subroutes distinguishing
+whether a working detours via 莊頂.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運劍潭站 with 新安里 specifically as the route's own termini was found in this search, nor a stated reason for confirming the same two stations as several unrelated Shilin-area minibus routes despite each running a distinct hillside corridor.

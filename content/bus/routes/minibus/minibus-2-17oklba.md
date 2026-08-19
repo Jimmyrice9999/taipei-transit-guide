@@ -53,6 +53,16 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “國立臺灣戲曲學院 - 石崁(經白石湖)”, the current head/last-departure field “[平日] 0510 - 2250 [假日] 0430 - 2250”, fare “一段票”.[^ebus-route-minibus-2-17oklba]
 
+The confirmed stop sequence runs from 國立臺灣戲曲學院, past 內湖派出所/
+碧湖國小/捷運內湖站, through 貿商三村/碧山路口/碧霞宮/圓覺寺/碧山巖(白石湖
+吊橋), ending at 石崁 by way of 城門仔/恆光禪寺, a shorter run than the
+separate 小2, which continues past 石崁 to loop up to 觀光草莓園 and on to
+捷運市政府站.[^tdx-bus] One confirmed interchange is recorded in the
+curated stop-ID join set: Neihu (BR19), matching the shared starting
+stretch of both routes.[^tdx-bus] The route runs a single subroute
+under one operator, 東南客運, the same operator running 小2 over the
+longer corridor.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for publishing this shorter run as a separately numbered shuttle route rather than a subroute of 小2 itself was found in this search.

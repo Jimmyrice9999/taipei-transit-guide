@@ -53,6 +53,16 @@ The normalized TDX record retains 7 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運劍潭站 - 擎天崗”, the current head/last-departure field “[平日] 0540 - 1620 [假日] 0540 - 1730”, fare “一段票”.[^ebus-route-minibus-15-44eull]
 
+Two confirmed interchanges are recorded in the curated stop-ID join set:
+Jiantan (R15) and Shilin (R16), matching the route's own terminus and a
+stop further along its climb.[^tdx-bus] TDX records seven named
+direction/variant records for this service, the richest subroute count
+of any minibus route in this batch, distinguishing workings that stop
+short at 冷水坑, that detour via 松園/田尾湖, or that run the full climb
+to 擎天崗 itself past 天寶聖道宮, well beyond the terminus published for
+its own sibling routes 小15區 and 小15區預 over the same corridor
+family.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for concentrating seven separate named workings on one corridor, rather than publishing them as a single route with branching stops, was found in this search.

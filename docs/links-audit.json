@@ -1691,18 +1691,8 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-1-1nj7r2x/",
-      "name": "Nangang Software Park",
-      "href": "/rail/metro/stations/br23/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-1-1nj7r2x/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-1-1nj7r2x/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/minibus/minibus-1-p1l27q/",
@@ -1715,24 +1705,9 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/minibus/minibus-1-p1l27q/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-10-1c9yflw/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
       "page": "/bus/routes/minibus/minibus-10-1c9yflw/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-10-1nujigl/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
     },
     {
       "page": "/bus/routes/minibus/minibus-10-1nujigl/",
@@ -1743,11 +1718,6 @@
       "page": "/bus/routes/minibus/minibus-10-1nujigl/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-10-tzvzps/",
-      "name": "Muzha",
-      "href": "/rail/metro/stations/br02/"
     },
     {
       "page": "/bus/routes/minibus/minibus-10-tzvzps/",
@@ -1771,11 +1741,6 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-11-qal1hk/",
-      "name": "Jingmei",
-      "href": "/rail/metro/stations/g05/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-11-qal1hk/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1786,11 +1751,6 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-12-eyacik/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-12-eyacik/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1798,11 +1758,6 @@
       "page": "/bus/routes/minibus/minibus-14/",
       "name": "Qiyan",
       "href": "/rail/metro/stations/r21/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-14/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
     },
     {
       "page": "/bus/routes/minibus/minibus-14/",
@@ -1853,11 +1808,6 @@
       "page": "/bus/routes/minibus/minibus-15-oo38hu/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-15-oo38hu/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/minibus/minibus-16-pqh2zb/",
@@ -1951,11 +1901,6 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-21/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-21/",
       "name": "Gongguan",
       "href": "/rail/metro/stations/g07/"
     },
@@ -1966,6 +1911,11 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-22/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
+    },
+    {
+      "page": "/bus/routes/minibus/minibus-22/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1973,6 +1923,11 @@
       "page": "/bus/routes/minibus/minibus-23/",
       "name": "Zhuwei",
       "href": "/rail/metro/stations/r26/"
+    },
+    {
+      "page": "/bus/routes/minibus/minibus-23/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/minibus/minibus-23/",
@@ -1991,13 +1946,13 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-26/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-26/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/minibus/minibus-28/",
+      "name": "Tamsui",
+      "href": "/rail/metro/stations/r28/"
     },
     {
       "page": "/bus/routes/minibus/minibus-28/",
@@ -2006,18 +1961,8 @@
     },
     {
       "page": "/bus/routes/minibus/minibus-30/",
-      "name": "Wanfang Community",
-      "href": "/rail/metro/stations/br03/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-30/",
       "name": "NTU Hospital",
       "href": "/rail/metro/stations/r09/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-30/",
-      "name": "Gongguan",
-      "href": "/rail/metro/stations/g07/"
     },
     {
       "page": "/bus/routes/minibus/minibus-30/",
@@ -2055,11 +2000,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/minibus/minibus-5-3j9oar/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/minibus/minibus-5-mubk47/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
@@ -2068,16 +2008,6 @@
       "page": "/bus/routes/minibus/minibus-5-r758xg/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-5-r758xg/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-6-uhxmxv/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
     },
     {
       "page": "/bus/routes/minibus/minibus-6-uhxmxv/",
@@ -2098,11 +2028,6 @@
       "page": "/bus/routes/minibus/minibus-6-waev30/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-7-1dd1bui/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
     },
     {
       "page": "/bus/routes/minibus/minibus-7-1dd1bui/",
@@ -2143,11 +2068,6 @@
       "page": "/bus/routes/minibus/minibus-9-1191ksj/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/minibus/minibus-9-a5p7i9/",
-      "name": "Fuxinggang",
-      "href": "/rail/metro/stations/r23/"
     },
     {
       "page": "/bus/routes/minibus/minibus-9-a5p7i9/",

@@ -12633,3 +12633,57 @@ test:unit 209/209.
 Part 1 running total: 231 of 1,051 routes across thirteen groups.
 Next-smallest remaining: minibus (48), series-600s (49), special-shuttle
 (51), series-200s (92), new-taipei (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 11, minibus to 200+ words
+
+48 routes: the whole `minibus` group (小／市民小巴). Starting template was
+the thinnest yet, 98-105 words on a near-identical "Classification and
+current service" pattern with no corridor prose at all. Widened the same
+way as prior batches: corridor prose from each route's own confirmed
+stop sequence, confirmed interchanges named only where the curated
+stop-ID join set has them, and a comparison sentence against the route's
+own siblings where the group runs several near-duplicate numbers over
+overlapping corridors — common in this group, more than in any prior
+batch (小1/小1區/小19 family, 小5/小5區, 小8/小8區/小9/小9區, 小15/小15區/
+小15區預, 小10/小10區, the Beitou-area 小6/小7/小9/小21/小22/小25/小26/小28
+cluster all sharing operator 大南汽車).
+
+Genuine findings: this group's confirmed interchange counts are much
+thinner than trunk or colour-feeder coverage — most routes confirm one
+or two stations, several (`minibus-9-1191ksj`, `minibus-10-1c9yflw`,
+`minibus-14`) confirm zero despite naming MRT stations or Taipei Main
+Station in their own stops. The richest exceptions: `minibus-12-1k8ig7g`
+(小12) confirms four stations on its own run to the Maokong Gondola;
+`minibus-23` confirms three stations all on one Tamsui-Xinyi Line
+stretch; `minibus-15-44eull` (小15) records seven named direction/
+variant records, the richest subroute count in the group, climbing
+Yangmingshan as far as 擎天崗 while its own shorter siblings 小15區 and
+小15區預 stop at 菁山遊憩區; `minibus-16-xuc4a7` (小16) records ten named
+variants keyed to specific departure times rather than named branches,
+unique in this batch. `minibus-15-11i52ev` (小15區預) is the one file in
+this batch with no dedicated `ebus-route-*` schedule source at all — the
+official catalogue lists no separate entry for it — so its service span,
+headway and fare stay TBC rather than being copied from a sibling route.
+`minibus-6-waev30` (市民小巴6) is filed under two different operator
+names, 大南汽車 and 大都會客運, for what the TDX stop sequences show as the
+same physical corridor — a genuine open question, not resolved here.
+
+One superlative claim was drafted and caught before publishing:
+`minibus-22` initially claimed "the widest confirmed spread of any
+minibus route in this batch checked so far" for its three confirmed
+interchanges, which was true only relative to routes already written at
+that point in the batch, not the full group — corrected to a plain
+factual description before the file was left in its final state.
+
+No trace of the citation-marker line-break bug from batch 10 was found
+in this batch's new prose — checked directly with a grep for a period
+immediately followed by a line break and a marker before running the
+gates, and none matched.
+
+Gates: cite clean, claims baseline held at 32 (0 new trips), test:unit
+209/209, verify clean (one pre-existing BL/A protanopia note, unrelated
+to content), nav 19/19.
+
+Part 1 running total: 279 of 1,051 routes across fourteen groups.
+Next-smallest remaining: series-600s (49), special-shuttle (51),
+series-200s (92), new-taipei (562). Parts 2-7 not started.

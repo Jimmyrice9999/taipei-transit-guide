@@ -53,6 +53,15 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “北投 - 八仙里”, the current head/last-departure field “[平日] 0600 - 1900 [假日] 0640 - 1720”, fare “一段票”.[^ebus-route-minibus-21]
 
+The confirmed stop sequence runs from 致遠新村, past 集應廟/大華柏園/稻香
+圖書館/復興崗/文化國小/大業中央北路口/北投國小/北投市場/福安宮/石門/清江國
+小/奇岩新村/公館華廈/奇岩一站/崇仁路口, through 捷運唭哩岸站, ending at 八仙
+里's own 下八仙土地公廟.[^tdx-bus] One confirmed interchange is recorded
+in the curated stop-ID join set: Qilian (R20), matching a stop roughly
+two-thirds of the way along the route's own corridor.[^tdx-bus] TDX
+records two named subroutes distinguishing whether a working detours
+via 立農國小一.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the route's own shorter weekend span, 0640–1720 against a fuller weekday 0600–1900, was found in this search, nor a stated reason for pairing 北投 with 八仙里 specifically as the route's own termini, rather than a nearer named stop.

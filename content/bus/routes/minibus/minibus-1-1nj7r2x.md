@@ -53,6 +53,18 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “內溝 - 捷運昆陽站”, the current head/last-departure field “[平日] 0600 - 2100 [假日] 0600 - 2100”, fare “一段票”.[^ebus-route-minibus-1-1nj7r2x]
 
+The confirmed stop sequence runs from 內溝 in outer Neihu, past 奇頭/南寮/
+康湖隧道口, through 東湖's 東湖國中/東湖社區/五分社區, past a stop literally
+named 捷運東湖站(南湖高中), into 南港軟體園區/南港/南港高工, ending at 捷運昆
+陽站.[^tdx-bus] Two confirmed interchanges are recorded in the curated
+stop-ID join set: Kunyang (BL21) and Donghu (BR22).[^tdx-bus] TDX records
+two named subroutes, 小1區 and 小1區經康寧, the second detouring via 康寧
+天闊站/康寧大學.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for
+the 康寧 detour existing as a separate subroute was found in this search,
+nor a stated reason for pairing 內溝 with 捷運昆陽站 specifically as the
+route's own termini, sharing its own 內溝 end with sibling 小1's own
+opposite terminus.

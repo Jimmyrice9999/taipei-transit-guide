@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “新北投車站 - 硫磺谷”, the current head/last-departure field “[平日] 0900 - 1900 [假日] 0900 - 1900”, fare “一段票”.[^ebus-route-minibus-39]
 
+The confirmed stop sequence runs from 新北投車站, past 溫泉博物館(梅庭)/銀
+光巷口(普濟寺)/幽雅路7號/春天酒店/幽雅路35號/北投文物館/不動明王/泉源別墅,
+ending at 彌陀寺(硫磺谷)/大同之家.[^tdx-bus] One confirmed interchange is
+recorded in the curated stop-ID join set: Xinbeitou (R22A), matching
+the route's own terminus.[^tdx-bus] The route runs a single subroute
+under one operator, 大南汽車, with a markedly shorter published span,
+0900–1900, than most other minibus routes in this batch, several of
+which start service before 0600.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for this route's own late 0900 start, well after the neighbouring Beitou-area minibus routes sharing much of the same catchment, was found in this search, nor a stated reason for the short published corridor compared to those neighbours.

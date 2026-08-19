@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運劍潭站 - 聖人瀑布”, the current head/last-departure field “[平日] 0545 - 2240 [假日] 0550 - 2240”, fare “一段票”.[^ebus-route-minibus-18-1s5ifb0]
 
+Two confirmed interchanges are recorded in the curated stop-ID join
+set: Jiantan (R15) and Shilin (R16), matching the route's own terminus
+and a stop further along its own climb.[^tdx-bus] Past 故宮博物院 the
+confirmed corridor diverges from the neighbouring 小1/小1區/小19 family,
+running instead via 礁坑/溪山國小/溪山派出所/妙法寺/聖人橋, ending at 聖人
+瀑布, distinct from both the 風櫃嘴 and 平菁街 corridors served by those
+routes. The route runs a single subroute under one operator, 首都
+客車.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運劍潭站 with 聖人瀑布 specifically as the route's own termini, rather than a nearer named stop, was found in this search.

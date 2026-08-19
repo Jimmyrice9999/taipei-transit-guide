@@ -53,6 +53,16 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “北士科 - 後港里”, the current head/last-departure field “[平日] 0600 - 1830 [假日] 0600 - 1830”, fare “一段票”.[^ebus-route-minibus-8-3ddg3g]
 
+The confirmed stop sequence runs from 福美站, past 三王宮/福美承平路口/遠雄
+商舟大樓/中鼎第二總部大樓/兒童新樂園/士林高商/士林區行政中心/士林國中/士林
+國小/小北街, through 陽明戲院/捷運劍潭站(北藝中心), along 圓山皇宮大廈/劍潭
+國小/明勝里/華齡街/百齡里/前港公園/百齡國小/士林監理站, ending at 福港街.
+[^tdx-bus] Two confirmed interchanges are recorded in the curated
+stop-ID join set: Jiantan (R15) and Shilin (R16), both confirmed
+roughly midway along the route's own corridor.[^tdx-bus] TDX records
+two named subroutes distinguishing whether a working detours via 士林
+監理站.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 北士科 with 後港里 specifically as the route's own termini was found in this search, nor a stated reason for the specific 士林監理站 detour existing as a separately named subroute rather than a fixed stop.

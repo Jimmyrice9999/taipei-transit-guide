@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運北投站 - 溫泉路”, the current head/last-departure field “[平日] 0610 - 2105 [假日] 0610 - 2105”, fare “一段票”.[^ebus-route-minibus-2-yb2u6a]
 
+The confirmed outbound sequence runs from 捷運北投站(北投), past 北投分
+局/北投市場/北投國中/漾館時尚旅館/溫泉奇岩路口/熱海大飯店/普濟寺/銀光巷口/
+幽雅路口/法藏寺/中心街口/公民會館(北投社大), ending at 溫泉博物館, with the
+return working much shorter, rejoining via 北投公園/第一銀行/北投分局 back
+to 捷運北投站(育仁).[^tdx-bus] Two confirmed interchanges are recorded in
+the curated stop-ID join set: Beitou (R22) and Xinbeitou (R22A), both
+matching the route's own starting stretch.[^tdx-bus] The route runs a
+single subroute under one operator, 大南汽車.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the outbound and return workings differing so sharply in stop count was found in this search, nor a stated reason for pairing 捷運北投站 with 溫泉路 specifically as the route's own termini, rather than a nearer named stop.

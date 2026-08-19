@@ -53,6 +53,16 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運昆陽站 - 翠柏新村”, the current head/last-departure field “[平日] 0545 - 2310 [假日] 0615 - 2300”, fare “一段票”.[^ebus-route-minibus-3]
 
+The confirmed stop sequence runs from 捷運昆陽站, past 南港高中/南港分局/
+石潭公園/成功路二段/上灣仔/湖興/國防醫學中心/將軍嶺/方濟中學, through 內湖派
+出所/國立臺灣戲曲學院, along 湖光市場/捷運內湖站/秀湖/大湖/大湖山莊/大湖區
+民活動中心/大湖山莊街169巷/大湖國小/大邱田/興善宮/老爺山莊, ending at 翠柏
+新村.[^tdx-bus] Three confirmed interchanges are recorded in the curated
+stop-ID join set, on two different rail lines: Kunyang (BL21), Neihu
+(BR19) and Dahu Park (BR20), matching the route's own terminus and two
+stops further along its Neihu corridor.[^tdx-bus] The route runs a
+single subroute under one operator, 東南客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運昆陽站 with 翠柏新村 specifically as the route's own termini was found in this search, nor a stated reason for the out-and-back loop past 觀光草莓園 shared with the unrelated 小2.

@@ -53,6 +53,16 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “關渡碼頭 - 北投國小”, the current head/last-departure field “[平日] 0600 - 2120 [假日] 0730 - 2030”, fare “一段票”.[^ebus-route-minibus-23]
 
+The confirmed stop sequence runs from 關渡碼頭, past 關渡宮/敬老院/關渡自然
+公園/關渡國中/關渡里, through 捷運關渡站, along 竹圍國小自強分校/淡水農會自
+強分會/擎天大樓/新天母社區 and back, through 捷運忠義站/中央北路/桃源國中,
+past 捷運復興崗站/製片廠/豐年郵局/復興崗/文化國小/大業中央北路口, ending at
+北投國小.[^tdx-bus] Three confirmed interchanges are recorded in the
+curated stop-ID join set, all on the same Tamsui-Xinyi Line stretch:
+Fuxinggang (R23), Zhongyi (R24) and Guandu (R25).[^tdx-bus] TDX records
+two named subroutes distinguishing a weekday working from a holiday
+short-turn service running only between 關渡碼頭 and 捷運關渡站.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the holiday service shrinking to a two-stop shuttle rather than running the full weekday corridor was found in this search, nor a stated reason for the out-and-back detour past 新天母社區.

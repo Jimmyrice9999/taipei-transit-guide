@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運北投站 - 泉源路”, the current head/last-departure field “[平日] 0600 - 2300 [假日] 0600 - 2300”, fare “一段票”.[^ebus-route-minibus-22]
 
+The confirmed outbound sequence runs from 大興街口, past 捷運北投站(北
+投)/幼華高中/大業中央北路口/北投國小/第一銀行/北投公園, through 新北投, ending
+at 新民國中/國軍北投醫院/林泉里/新民路底, with the return working looping
+via 上北投/八勝園/郵政訓練所/源之鄉/雅敘園/華僑會館 and 捷運奇岩站.[^tdx-bus]
+Three confirmed interchanges are recorded in the curated stop-ID join
+set, on three separate named stations: Qiyan (R21), Beitou (R22) and
+Xinbeitou (R22A), all three on the same Tamsui-Xinyi Line stretch the
+route's own corridor threads.[^tdx-bus] The route runs a single subroute
+under one operator, 大南汽車, the same operator running the 小25/小26/
+小6/小7/小9 family over overlapping Beitou-area corridors.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 捷運北投站 with 泉源路 specifically as the route's own termini, distinct from the neighbouring routes sharing the same operator and district, was found in this search.

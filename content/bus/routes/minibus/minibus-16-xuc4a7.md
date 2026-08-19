@@ -53,6 +53,15 @@ The normalized TDX record retains 10 direction/variant records for this service;
 
 The full official schedule gives termini “捷運劍潭站 - 公館里”, the current head/last-departure field “[平日] 0550 - 2300 [假日] 0600 - 2300”, fare “一段票”.[^ebus-route-minibus-16-xuc4a7]
 
+Two confirmed interchanges are recorded in the curated stop-ID join
+set: Jiantan (R15) and Shilin (R16), matching the route's own terminus
+and a stop further along its climb through 士林 toward 陽明山.[^tdx-bus]
+TDX records ten named direction/variant records for this service, the
+richest subroute count of any minibus route in this batch, each keyed
+to a specific departure time and a specific combination of detours via
+永公路296、350 or 500巷 rather than to a named geographic branch as on
+most other minibus routes.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for keying this route's own subroutes to specific departure times, rather than to named branches as elsewhere in this batch, was found in this search.

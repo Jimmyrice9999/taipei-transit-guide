@@ -53,6 +53,17 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “舊莊 - 捷運南港站”, the current head/last-departure field “[平日] 0720 - 2000 [假日] 0720 - 2000”, fare “一段票”.[^ebus-route-minibus-6-waev30]
 
+The confirmed stop sequence runs from 舊莊站, past 舊莊公園/金德橋頭/胡適國
+小/福山抽水站/六福公園/誠正國中/國家文官學院/台北生技園區, through 捷運南港
+站, ending at 南港車站, with one working detouring via 坑口運動公園/山豬窟
+游泳池.[^tdx-bus] One confirmed interchange is recorded in the curated
+stop-ID join set: Nangang (BL22), matching a stop partway along the
+route's own corridor.[^tdx-bus] TDX records four named direction/variant
+records for this service, distinguishing the 山豬窟 detour from the
+direct working and, unusually for this batch, published under two
+separate operator names, 大南汽車 and 大都會客運, for what the stop
+sequences show as the same physical corridor.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the same route being filed under two operator names rather than one shared operation was found in this search.

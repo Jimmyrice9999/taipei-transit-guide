@@ -53,6 +53,13 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “北投 - 照明寺”, the current head/last-departure field “[平日] 0620 - 1540 [假日] 0620 - 1540”, fare “一段票”.[^ebus-route-minibus-14]
 
+The confirmed stop sequence runs from 致遠新村, past 稻香圖書館/復興崗/文化
+國小, through 北投's 大業中央北路口/北投國小/北投市場, along 福安宮/石門/清江
+國小, ending at 照明寺 near 奇岩新村/公館華廈.[^tdx-bus] The curated
+stop-ID join set records zero confirmed interchanges for this route.
+[^tdx-bus] The route runs a single subroute under one operator, 大南汽車.
+[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 致遠新村 with 照明寺 specifically as the route's own termini was found in this search, nor a reason for the route confirming zero curated MRT interchanges despite running entirely within a district, 北投, that several other minibus routes in this batch confirm multiple stations against. Whether that absence reflects the corridor's own distance from the nearest station or simply a gap in the curated join set is not settled by the data pulled for this page.

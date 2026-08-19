@@ -53,6 +53,15 @@ The normalized TDX record retains 2 direction/variant records for this service; 
 
 The full official schedule gives termini “捷運劍潭站 - 平等里”, the current head/last-departure field “[平日] 0600 - 2210 [假日] 0600 - 2220”, fare “一段票”.[^ebus-route-minibus-19]
 
+Two confirmed interchanges are recorded in the curated stop-ID join
+set: Jiantan (R15) and Shilin (R16), matching the route's own terminus
+and a stop further along its own run.[^tdx-bus] Past 故宮博物院 the
+confirmed corridor diverges toward 川瀨/前半嶺/半嶺/福德宮/大坪尾, ending
+at 平等里's own 平菁街93巷二, distinct from the 菁山/擎天崗 and 風櫃嘴/聖人
+瀑布 corridors served by the neighbouring minibus routes sharing the
+same Jiantan/Shilin terminus pair.[^tdx-bus] TDX records two named
+subroutes distinguishing whether a working detours via 合誠宮.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運劍潭站 with 平等里 specifically as the route's own termini was found in this search, nor a stated reason for the specific 合誠宮 detour existing as a separately named subroute.

@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運昆陽站 - 光明寺”, the current head/last-departure field “[平日] 0530 - 1830 [假日] 0530 - 1600”, fare “一段票”.[^ebus-route-minibus-5-r758xg]
 
+The confirmed stop sequence runs from 捷運昆陽站, past 南港高中/土地公廟/東
+明里/南港路二段178巷口/台肥新村/南港行政中心/南港高工, through 南港/南港展
+覽館/誠正國中/南港水廠/圓拱橋/中研新村/中研院, along 舊莊一站/舊莊國小/舊莊/
+舊莊二站/茶葉製造示範場/光明里, ending at 光明寺, continuing past the
+terminus published for the separate shorter 小5區 over the same
+corridor.[^tdx-bus] Two confirmed interchanges are recorded in the
+curated stop-ID join set: Kunyang (BL21) and Taipei Nangang Exhibition
+Center (BL23/BR24), the same pair confirmed for 小5區.[^tdx-bus] The
+route runs a single subroute under one operator, 東南客運, with a
+shorter weekend span, 0530–1600 against a fuller weekday 0530–1830.
+[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own shorter weekend span was found in this search, nor a stated reason for pairing 捷運昆陽站 with 光明寺 specifically as the route's own termini.

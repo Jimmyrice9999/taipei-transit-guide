@@ -53,6 +53,17 @@ The normalized TDX record retains 4 direction/variant records for this service; 
 
 The full official schedule gives termini “北投 - 嶺頭”, the current head/last-departure field “[平日] 0540 - 2300 [假日] 0540 - 2300”, fare “一段票”.[^ebus-route-minibus-7-1dd1bui]
 
+The confirmed stop sequence runs from 致遠新村, past 集應廟/大華柏園/稻香圖
+書館/復興崗/文化國小/幼華高中, through 捷運北投站(北投)/北投國小/第一銀行/
+北投公園, along 新北投/華僑會館/雅敘園/源之鄉/郵政訓練所/八勝園/上北投/泉源
+別墅/彌陀寺(硫磺谷)/大同之家/十八份福德宮/泉源3號橋/中正山登山口/十八份埔/
+張公聖君廟, ending at 嶺頭.[^tdx-bus] Two confirmed interchanges are
+recorded in the curated stop-ID join set: Beitou (R22) and Xinbeitou
+(R22A), both confirmed along the route's own starting stretch, the
+same pair confirmed for the neighbouring 小6, 小9 and 小26 family.
+[^tdx-bus] TDX records four named direction/variant records
+distinguishing detours via 嶺腳珠海路, 新民路 or 惇敘工商.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 北投 with 嶺頭 specifically as the route's own termini was found in this search, nor a stated reason for concentrating four separate named detours onto one route number.

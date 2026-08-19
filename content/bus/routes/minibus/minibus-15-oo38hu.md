@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運昆陽站 - 捷運南港展覽館站”, the current head/last-departure field “[平日] 0600 - 2100 [假日] 0600 - 2100”, fare “一段票”.[^ebus-route-minibus-15-oo38hu]
 
+Three confirmed interchanges are recorded in the curated stop-ID join
+set: Kunyang (BL21), Taipei Nangang Exhibition Center (BL23/BR24) and
+Nangang Software Park (BR23), matching the route's own terminus and
+two stops along its own Nangang corridor.[^tdx-bus] The route runs a
+single subroute under one operator, over a corridor sharing its own
+Kunyang and Nangang Exhibition Center interchanges with the separate
+小12, which additionally confirms Nangang (BL22) and Taipei Zoo (BR01)
+on its own longer run to the Maokong Gondola.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運昆陽站 with 捷運南港展覽館站 specifically as the route's own termini, rather than a more direct pairing, was found in this search.

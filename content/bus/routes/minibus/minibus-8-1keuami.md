@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運石牌站 - 竹子湖”, the current head/last-departure field “[平日] 0540 - 1900 [假日] 0540 - 2000”, fare “兩段票”.[^ebus-route-minibus-8-1keuami]
 
+At 54 stops outbound and 49 back, the confirmed stop sequence is the
+longest of any minibus route in this batch, running from 捷運石牌站
+(東華), past 榮總/五福宮/磺溪/明山宮/永和里/行義路154巷至402巷/惇敘工商(行
+義), through 大同之家/十八份福德宮/泉源國小/頂湖, up into Yangmingshan
+itself past 陽明公園服務中心/陽明山立體停車場/陽明山/陽明山國家公園管理處/
+氣象台/陽明書屋, ending at 竹子湖.[^tdx-bus] One confirmed interchange is
+recorded in the curated stop-ID join set: Shipai (R19), matching the
+route's own terminus.[^tdx-bus] The route runs a single subroute under
+one operator, 大南汽車, on a two-stage fare unlike most other single-
+stage minibus routes in this batch.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for this route's own two-stage fare, distinct from the one-stage fare published for most other minibus routes in this batch, was found in this search.

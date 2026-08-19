@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運昆陽站 - 茶葉製造示範廠”, the current head/last-departure field “[平日] 0600 - 2100 [假日] 0600 - 2100”, fare “一段票”.[^ebus-route-minibus-5-3j9oar]
 
+The confirmed stop sequence runs from 捷運昆陽站, past 南港高中/土地公廟/東
+明里/南港路二段178巷口/台肥新村/南港行政中心/南港高工, through 南港/南港展
+覽館/誠正國中/南港水廠/圓拱橋/中研新村/中研院, along 舊莊一站/舊莊國小/舊莊/
+舊莊二站, ending at 茶葉製造示範場, a shorter run than the separate 小5,
+which continues past the same terminus to 光明寺.[^tdx-bus] Two
+confirmed interchanges are recorded in the curated stop-ID join set:
+Kunyang (BL21) and Taipei Nangang Exhibition Center (BL23/BR24),
+matching the route's own starting stretch, the same pair confirmed for
+小5 itself.[^tdx-bus] The route runs a single subroute under one
+operator, 東南客運, the same operator running 小5 over the longer
+corridor.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for publishing this shorter run as a separately numbered shuttle route rather than a subroute of 小5 itself was found in this search.

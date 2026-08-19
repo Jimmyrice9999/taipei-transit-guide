@@ -53,6 +53,17 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “北投 - 陽明山”, the current head/last-departure field “[平日] 0840 - 1810 [假日] 0840 - 1810”, fare “一段票”.[^ebus-route-minibus-9-a5p7i9]
 
+The confirmed stop sequence runs from 致遠新村, past 稻香圖書館/復興崗/文化
+國小/幼華高中(大業), through 捷運北投站(北投)/北投國小/第一銀行/北投公園,
+along 新北投/新民國中/國軍北投醫院/林泉里/新民路底/泉源別墅/彌陀寺(硫磺谷)/
+大同之家/十八份福德宮/十八份/泉源國小/頂湖/陽明公園服務中心/陽明山立體停車
+場, ending at 陽明山, a shorter run than the separate 小9, which
+continues past the same stretch to 竹子湖.[^tdx-bus] Two confirmed
+interchanges are recorded in the curated stop-ID join set: Beitou
+(R22) and Xinbeitou (R22A), the same pair confirmed for 小9 itself.
+[^tdx-bus] The route runs a single subroute under one operator, 大南
+汽車, the same operator running 小9 over the longer corridor.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for publishing this shorter run as a separately numbered shuttle route rather than a subroute of 小9 itself was found in this search.

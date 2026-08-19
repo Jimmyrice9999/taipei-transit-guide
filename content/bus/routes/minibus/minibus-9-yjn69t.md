@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “北投 - 竹子湖”, the current head/last-departure field “[平日] 0520 - 2250 [假日] 0520 - 2250”, fare “兩段票”.[^ebus-route-minibus-9-yjn69t]
 
+At 55 stops outbound and 48 back, the confirmed stop sequence is the
+second-longest of any minibus route in this batch, after only the
+separate 小8, running from 致遠新村, past 捷運北投站(北投)/新北投/新民國
+中/國軍北投醫院/彌陀寺(硫磺谷)/大同之家/十八份福德宮/十八份/泉源國小/頂
+湖, up into Yangmingshan itself past 陽明公園服務中心/陽明山立體停車場/陽
+明山/陽明山國家公園管理處/氣象台/陽明書屋, ending at 竹子湖.[^tdx-bus] Two
+confirmed interchanges are recorded in the curated stop-ID join set:
+Beitou (R22) and Xinbeitou (R22A), the same pair confirmed for the
+shorter shuttle sibling 小9區.[^tdx-bus] The route runs a single
+subroute under one operator, 大南汽車, branded as a 台灣好行 (Taiwan
+Tourist Shuttle) service on a two-stage fare.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for this route's own two-stage fare and Taiwan Tourist Shuttle branding, distinct from the plain minibus classification and one-stage fare of most routes in this batch, was found in this search.

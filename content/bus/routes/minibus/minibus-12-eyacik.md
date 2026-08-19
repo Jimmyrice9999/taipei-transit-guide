@@ -53,6 +53,18 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運芝山站 - 社子”, the current head/last-departure field “[平日] 0600 - 1800 [假日] 停駛”, fare “一段票”.[^ebus-route-minibus-12-eyacik] It currently lists weekday service and suspended holiday service.[^ebus-route-minibus-12-eyacik]
 
+The confirmed stop sequence runs from 捷運芝山站(福華), past 新光醫院/士林
+區行政中心/陽明高中, through 社子's 社子市場/社正路/國泰人壽大樓/社子公園, along
+永平街口/永倫里, ending at 社子市場二, with the return working detouring
+past 葫蘆寺/海光新村/葫蘆堵市場.[^tdx-bus] One confirmed interchange is
+recorded in the curated stop-ID join set: Zhishan (R17), matching the
+route's own terminus.[^tdx-bus] The route runs a single subroute under one
+operator, 三重客運, weekdays only with holiday service suspended
+entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the
+route's own holiday suspension was found in this search, nor a stated
+reason for pairing 捷運芝山站 with 社子 specifically as the route's own
+termini.

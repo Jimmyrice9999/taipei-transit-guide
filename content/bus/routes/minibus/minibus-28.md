@@ -53,6 +53,15 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “捷運北投站 - 珠海路”, the current head/last-departure field “[平日] 0645 - 1915 [假日] 0645 - 1915”, fare “一段票”.[^ebus-route-minibus-28]
 
+The confirmed stop sequence runs from 捷運北投站(北投), past 中央南路/北投
+國小/大業中央北路口/文化區民活動中心/大同街口/復興一路口/進賢路口/長壽路口/
+泉源公園/義方國小/48號公園, ending at 慈惠堂.[^tdx-bus] One confirmed
+interchange is recorded in the curated stop-ID join set: Beitou (R22),
+matching the route's own terminus.[^tdx-bus] The route runs a single
+subroute under one operator, 大南汽車, with an identical weekday and
+holiday schedule window, unlike several other minibus routes in this
+batch that suspend or shorten holiday service.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運北投站 with 珠海路 specifically as the route's own termini was found in this search, nor a stated reason for confirming only one interchange despite running most of its own corridor within a short walk of the Tamsui-Xinyi Line.
