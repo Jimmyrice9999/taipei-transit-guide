@@ -11120,6 +11120,21 @@ Built 20 routes: 906, 908延, 908, 909, 910, 913, 916, 917, 918, 919, 920, 920�
 
 Built 20 routes: 930, 930延, 932, 932繞國家教育研究院, 933, 935, 936, 936A, 937, 937副, 937A, 938, 939, 939副, 940, 941, 943, 945, 946 and 946副. Body prose is 2,422 whitespace-delimited words. Exact New Taipei route-service rows cover 20/20. The category and TDX variant spellings remain separate identities; no suffix meaning was inferred without a source. The batch has 124 confirmed geometry-only MRT stop-ID joins, 0 candidates rejected as too far, and 0 ambiguous candidates. Route history, predecessor/renumbering, dated operator changes, corridor rationale and route-specific eligibility remain TBC unless a dated primary source supports them. Sources are the full TDX bus snapshot, the full New Taipei 快速公車 dataset, the full New Taipei route-service API and the New Taipei transport-management page.
 
+### New Taipei — New Bus community services, batch 1
+
+Built 20 routes: F101坪頂, F101樹興, F102, F103, F105反, F105, F106, F109,
+F121, F122, F123-0640, F123-1205, F123-1525, F123八療,
+F123十三行文化公園經八療, F123下罟經八療, F126經里中, F126江厝, F126 and
+F131. Body prose is 2,193 whitespace-delimited words. Exact New Taipei
+route-service rows cover 20/20. The batch has 44 confirmed geometry-only MRT
+stop-ID joins, 92 candidates rejected as too far, and 0 ambiguous candidates.
+F-series, time-suffixed and named variants remain separate TDX identities; no
+variant meaning was inferred from the name. Sources are the full TDX bus
+snapshot, the full New Taipei 新巴士 dataset, the full New Taipei route-service
+API and the New Taipei transport-management page. Route purpose beyond the
+official category filing, history, predecessor/renumbering, dated operator
+changes and eligibility remain TBC where those sources do not establish them.
+
 ### New Taipei — jump-frog buses, batch 4 and subgroup closeout
 
 Built the final 10 jump-frog routes: 捷運七張站-全球工業區, 捷運忠孝復興站-三峽,
