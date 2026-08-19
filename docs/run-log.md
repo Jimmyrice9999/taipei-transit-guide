@@ -11095,10 +11095,10 @@ The current repository was audited from `66b19d6` before changes. The TDX snapsh
 
 | Resulting group | Routes | Body words | Exact schedule/service source | Joins confirmed / rejected / ambiguous |
 |---|---:|---:|---:|---:|
-| special-shuttle additions | 9 | 882 | 9/9 exact Taipei eBus route pages | 33 / 0 / 0 |
-| series-other | 1 | 98 | 1/1 exact Taipei eBus route page | 5 / 0 / 0 |
-| unclassified retained | 3 | 408 | 3/3 exact Taipei eBus route pages | 9 / 0 / 0 |
-| new-taipei addition | 1 | 113 | 1/1 exact New Taipei route-service row; not a Taipei eBus authority | 10 / 0 / 0 |
+| special-shuttle additions | 9 | 882 | 9/9 exact Taipei eBus route pages | 33 / 34 / 0 |
+| series-other | 1 | 98 | 1/1 exact Taipei eBus route page | 5 / 33 / 0 |
+| unclassified retained | 3 | 408 | 3/3 exact Taipei eBus route pages | 9 / 17 / 0 |
+| new-taipei addition | 1 | 113 | 1/1 exact New Taipei route-service row; not a Taipei eBus authority | 10 / 20 / 0 |
 
 The nine special-shuttle moves are 北士科1, 兒樂1號線, 花季專車124, 兒樂2號線, 貓空右線, 臺北觀光巴士藍線, 貓空左線(動物園), 臺北觀光巴士紅線 and 貓空左線(指南宮). 1717 is filed under 一般公車 but is outside the existing numeric bands, so it is retained in `series-other`. 藍海2線先導公車 is filed by New Taipei's full MRT-pioneer dataset and moved to `new-taipei`. 雙園巴士, 景美-榮總(快) and 新莊-臺北車站 remain unclassified because the authoritative catalogue labels them as distinct 低地板, 快速 and 跳蛙 identities without a durable existing group home; no one-off group was invented.
 
