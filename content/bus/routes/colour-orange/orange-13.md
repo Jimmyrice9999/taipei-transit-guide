@@ -51,6 +51,24 @@ sources:
 
 The official catalogue lists 橘13 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 三重 - 五股, weekday service 0530–2200, holiday service 0600–2200, one-section fare and 首都客運三重一站 as the service contact.[^ebus-o13]
 
+The confirmed stop sequence runs from 吉祥街口 in Sanchong, past 捷運徐匯中學站
+and through 蘆洲's 溪墘/蘆洲監理站 area, then into 五股 to end at 五福路.
+[^tdx-bus] The one confirmed interchange is 捷運徐匯中學站 (St. Ignatius High
+School, O52), reached partway along rather than at either
+terminus.[^tdx-bus] Both directions run the same all-day span, weekday and
+holiday alike, unlike several shorter commuter-hours routes elsewhere in
+this project's colour-orange coverage.[^ebus-o13] Its return working also
+adds a short loop through 五股服務社 and 五股區公所 near the 五福路 terminus
+that the outbound working does not serve.[^tdx-bus] Its 首都客運三重一站
+contact distinguishes it from 橘12's 首都客運二重站 — the same operator
+running two separate Sanchong-area feeders from two named dispatch
+points.[^ebus-o13] Its 21-stop outbound and 22-stop return workings differ
+by only one stop count, but the actual detour above means the two are not
+simple mirror images of the same road.[^tdx-bus] Its single subroute
+contrasts with 橘20's two named variants and 橘19/橘19副's separate route
+records, a simpler structure than several sibling feeders in this
+batch.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

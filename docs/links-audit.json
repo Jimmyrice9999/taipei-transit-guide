@@ -1245,29 +1245,9 @@
       "href": "/rail/metro/stations/y14/"
     },
     {
-      "page": "/bus/routes/colour-orange/orange-10/",
-      "name": "Taishan Station",
-      "href": "/rail/metro/stations/a5/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-12/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-12/",
-      "name": "Sanhe Junior High School",
-      "href": "/rail/metro/stations/o51/"
-    },
-    {
       "page": "/bus/routes/colour-orange/orange-12/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-13/",
-      "name": "Luzhou",
-      "href": "/rail/metro/stations/o54/"
     },
     {
       "page": "/bus/routes/colour-orange/orange-13/",
@@ -1278,11 +1258,6 @@
       "page": "/bus/routes/colour-orange/orange-13/",
       "name": "Zhongyuan",
       "href": "/rail/metro/stations/y14/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-17/",
-      "name": "Xinzhuang",
-      "href": "/rail/metro/stations/o18/"
     },
     {
       "page": "/bus/routes/colour-orange/orange-17/",
@@ -1386,11 +1361,6 @@
     },
     {
       "page": "/bus/routes/colour-orange/orange-25/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-25/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1438,11 +1408,6 @@
       "page": "/bus/routes/colour-orange/orange-9/",
       "name": "Xindian",
       "href": "/rail/metro/stations/g01/"
-    },
-    {
-      "page": "/bus/routes/colour-orange/orange-9/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
     },
     {
       "page": "/bus/routes/colour-orange/orange-9/",

@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 橘17 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 新莊中原路 - 捷運三民高中站, weekday service 0540–2000, holiday service 0800–1900, one-section fare and 大都會客運新莊站 as the service contact.[^ebus-o17]
 
+The confirmed stop sequence starts at 中央昌平街口 in Xinzhuang, runs through
+新北產業園區 (the New Taipei Industrial Park) past its own MRT/light-rail
+station, then continues into 蘆洲 to end at 捷運三民高中站.[^tdx-bus] Three
+confirmed interchanges lie along the way: 捷運新北產業園區站 — genuinely served
+by both the Airport MRT (A3) and the Circular Line (Y20) — and 捷運蘆洲站
+(Luzhou, O54) and 捷運三民高中站 (Sanmin Senior High School, O53) toward the
+end.[^tdx-bus] That A3/Y20 pairing is a real interchange between the Airport
+MRT and the Circular Line — the same pairing this project's coverage also
+confirms on 橘21, which passes through the same industrial park from the
+迴龍 direction.[^tdx-bus] Weekday and holiday hours differ noticeably here,
+0540–2000 against a shorter 0800–1900, unlike several routes in this group
+that publish the same span both day types.[^ebus-o17] Its 大都會客運新莊站
+contact is a different 大都會客運 dispatch point from the 大都會客運蘆洲站
+contact 橘18 and 橘18福隆路 share, the same operator running separate feeders
+from separate stations rather than one shared depot.[^ebus-o17]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

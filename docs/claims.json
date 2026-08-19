@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4816,
+    "sourced": 4834,
     "tbc": 4236,
     "asserted": 32,
     "meta": 41
@@ -1203,7 +1203,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-1.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1211,7 +1211,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-10.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1219,7 +1219,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-12.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1227,7 +1227,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-13.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1235,7 +1235,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-17.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1243,7 +1243,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-18-1p8cb7v.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1251,7 +1251,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-18-1wqt5b1.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1259,7 +1259,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-19-153docx.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1267,7 +1267,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-19-vxo2ga.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1275,7 +1275,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-2.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1283,7 +1283,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-20.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1291,7 +1291,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-21.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1299,7 +1299,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-22.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1307,7 +1307,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-25.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1315,7 +1315,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-26.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1323,7 +1323,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-3.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1331,7 +1331,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-5.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1339,7 +1339,7 @@
     {
       "file": "content/bus/routes/colour-orange/orange-9.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0

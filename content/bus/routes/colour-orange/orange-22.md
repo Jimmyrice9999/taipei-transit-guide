@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 橘22 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 瓊林 - 捷運新莊站, weekday-only service 0630–1830 with no holiday service, one-section fare and 三重客運新莊站 as the service contact.[^ebus-o22]
 
+The confirmed stop sequence runs from 新樹民安路口 through 西盛, threading a
+run of five consecutively numbered 瓊林南路 stops, then into 新莊 past 豐年
+國小 to end at 保元宮.[^tdx-bus] The one confirmed interchange, 捷運新莊站
+(Xinzhuang, O18), sits partway along both directions rather than at either
+published terminus.[^tdx-bus] Weekday-only hours with no holiday service at
+all put it among the more limited routes in this project's colour-orange
+coverage.[^ebus-o22] Its 瓊林 origin sits close enough to 新莊 that the whole
+route runs within a single district rather than crossing into a
+neighbouring one, unlike most other routes in this batch.[^tdx-bus] The five
+consecutively numbered 瓊林南路 stops (一 through 五) suggest a single long
+residential street served at regular intervals rather than five distinct
+neighbourhoods, though the schedule page does not describe the street
+itself.[^tdx-bus] Its 三重客運新莊站 operator contact is a New Taipei dispatch
+point distinct from the several other 三重客運 stations named across this
+project's colour-orange coverage.[^ebus-o22]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

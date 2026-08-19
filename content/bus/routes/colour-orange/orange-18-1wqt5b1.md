@@ -51,6 +51,23 @@ sources:
 
 The official catalogue lists 橘18 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 蘆洲 - 五華街, weekday service 0600–2200, holiday service 0600–2100, one-section fare and 大都會客運蘆洲站 as the service contact.[^ebus-o18] TDX carries a separate 橘18福隆路 record (canonical slug `orange-18-1p8cb7v`) with the same published termini and operator; their relationship is TBC.
 
+The confirmed stop sequence runs from 蘆洲站 through 三民高中/湧蓮寺, past
+捷運三和國中站, and into 三重's 五華街 area.[^tdx-bus] Three confirmed
+interchanges lie along the way: 捷運三和國中站 (Sanhe Junior High School,
+O51), 捷運徐匯中學站 (St. Ignatius High School, O52) and 捷運三民高中站 (Sanmin
+Senior High School, O53).[^tdx-bus] Compared against its 橘18福隆路 sibling's
+own stop sequence, this working skips the short 仁政街/福隆路/仁愛街 detour the
+other includes between 溪尾街口 and 自強路五段, a real corridor difference
+rather than a naming variant.[^tdx-bus] Its published span, weekday
+0600–2200 and holiday 0600–2100, is also longer than its 福隆路 sibling's
+0600–2000/0600–1900, a second difference beyond the corridor
+itself.[^ebus-o18] Its 31-stop outbound and 38-stop return workings are both
+shorter than its 福隆路 sibling's 34/41-stop pair, consistent with the
+shorter detour-free routing.[^tdx-bus] Both this route and its 福隆路
+sibling are operated by 大都會客運 out of the same 大都會客運蘆洲站 dispatch
+point, distinguishing them from every other operator named in this
+project's colour-orange coverage.[^ebus-o18]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 橘18福隆路 remain TBC.[^tdx-bus]

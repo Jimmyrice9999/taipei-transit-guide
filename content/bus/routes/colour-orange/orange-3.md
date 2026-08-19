@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 橘3 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 中和 - 捷運頂溪站, weekday service 0600–2300, holiday service 0640–2200, one-section fare and 臺北客運中和站 as the service contact. It records that weekday 07:00–09:00 departures do not stop at 捷運頂溪站.[^ebus-o3]
 
+The confirmed stop sequence runs from 中和站 along 環河西路/仁愛路, a riverside
+corridor through 中和 and 永和, past 中正橋頭 and a run of named community
+stops before ending at 捷運頂溪站.[^tdx-bus] TDX carries a separate subroute
+recording the same weekday-morning skip the schedule page describes, naming
+it directly: 「橘3平日07:00-09:00之時段取消停靠捷運頂溪站」.[^tdx-bus] Two confirmed
+interchanges apply to the through workings: 捷運頂溪站 itself (Dingxi, O04)
+and a curated join resolving to 橋和站 (Qiaohe, Y13) partway along — the stop
+sequence's own name for that point does not repeat the station's full
+"捷運" form.[^tdx-bus] Its 臺北客運中和站 operator contact matches the one
+橘2 also names, two 臺北客運 routes covering different parts of 中和/永和 out
+of the same dispatch point.[^ebus-o3] Its 35-stop outbound working is
+substantially longer than its 18-stop return leg, one of the largest
+directional asymmetries recorded in this project's colour-orange
+coverage.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the stop-skip's creation date and rationale remain TBC.[^tdx-bus]

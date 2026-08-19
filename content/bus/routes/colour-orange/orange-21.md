@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 橘21 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 龍壽里 - 新北產業園區, weekday and holiday service 0530–2330, one-section fare and 三重客運迴龍站 as the service contact, with 32 weekday departures and 20 holiday departures at reduced mid-day frequency.[^ebus-o21]
 
+The confirmed stop sequence starts at 龍壽里, runs through 迴龍 past 捷運迴龍站
+and 龍華科技大學, continues through 新莊 past 捷運輔大站 and 捷運新莊站, then
+into the 新北產業園區 (New Taipei Industrial Park) itself.[^tdx-bus] Four
+confirmed interchanges lie along the way, including 捷運新北產業園區站 — served
+by both the Airport MRT (A3) and the Circular Line (Y20), the same
+cross-line pairing found on 橘17's corridor — plus 捷運新莊站 (Xinzhuang, O18)
+and 捷運輔大站 (Fu Jen University, O19) partway along.[^tdx-bus] Its 32
+weekday and 20 holiday departures make it one of the more frequently
+scheduled routes in this project's colour-orange coverage.[^ebus-o21] Its
+own reduced mid-day holiday frequency — 20 departures against 32 on
+weekdays, spread across the same span rather than a shorter one — reads as
+a thinner off-peak service rather than a shorter operating day.[^ebus-o21]
+Both directions run 41 stops, an unusually long and symmetric pair for this
+project's colour-orange coverage.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

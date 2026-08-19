@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 橘26 under 捷運橘線接駁公車.[^ebus-orange] Its full schedule page gives 東昇公園 - 捷運迴龍站, weekday service 0530–2200, holiday service 0600–2100, one-section fare and 三重客運樹林站 as the service contact.[^ebus-o26]
 
+The confirmed stop sequence starts at 東昇公園 in 樹林 (Shulin), passes 樹林
+後火車站 (Shulin's rear train-station entrance) and a run of 武林國小/工業區
+stops, then crosses into 迴龍 to end at 捷運迴龍站.[^tdx-bus] The one confirmed
+interchange, 捷運迴龍站 (Huilong, O21), sits at the terminus.[^tdx-bus] Naming
+Shulin's own TRA station by its back entrance rather than the station itself
+is consistent with the route serving that side of the station specifically,
+though the schedule page does not state that reasoning.[^tdx-bus] Its
+三重客運樹林站 operator contact is the only 樹林-named dispatch point in this
+project's colour-orange coverage, distinct from the several 三重客運 stations
+elsewhere in the batch.[^ebus-o26] The route also directly overlaps 橘21's
+own 迴龍/丹鳳 corridor for several stops — 丹鳳國小(新北大道), 鳳山街口, 青山路口,
+雙鳳福德宮, 丹鳳派出所 — before the two diverge toward different
+termini.[^tdx-bus] Its 25-stop outbound and 21-stop return workings are
+close but not identical in length, consistent with minor routing
+differences rather than a symmetric there-and-back service.[^tdx-bus]
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
