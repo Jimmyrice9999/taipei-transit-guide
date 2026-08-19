@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 5051,
+    "sourced": 5106,
     "tbc": 4242,
     "asserted": 32,
     "meta": 41
@@ -7963,7 +7963,7 @@
     {
       "file": "content/bus/routes/series-600s/600.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7987,7 +7987,7 @@
     {
       "file": "content/bus/routes/series-600s/605-1glsi2c.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -7995,7 +7995,7 @@
     {
       "file": "content/bus/routes/series-600s/605-f5dmpj.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8003,7 +8003,7 @@
     {
       "file": "content/bus/routes/series-600s/605-fz0v3a.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8011,7 +8011,7 @@
     {
       "file": "content/bus/routes/series-600s/605-nsoxuq.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8043,7 +8043,7 @@
     {
       "file": "content/bus/routes/series-600s/615.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8059,7 +8059,7 @@
     {
       "file": "content/bus/routes/series-600s/617-1i89pi8.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8067,7 +8067,7 @@
     {
       "file": "content/bus/routes/series-600s/617-1kc8zny.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8075,7 +8075,7 @@
     {
       "file": "content/bus/routes/series-600s/618.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8083,7 +8083,7 @@
     {
       "file": "content/bus/routes/series-600s/621.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8091,7 +8091,7 @@
     {
       "file": "content/bus/routes/series-600s/622.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8123,7 +8123,7 @@
     {
       "file": "content/bus/routes/series-600s/644.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8131,7 +8131,7 @@
     {
       "file": "content/bus/routes/series-600s/645-1oyv0of.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8139,7 +8139,7 @@
     {
       "file": "content/bus/routes/series-600s/645-7bxkr5.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8147,7 +8147,7 @@
     {
       "file": "content/bus/routes/series-600s/646.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8155,7 +8155,7 @@
     {
       "file": "content/bus/routes/series-600s/647.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8163,7 +8163,7 @@
     {
       "file": "content/bus/routes/series-600s/648.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8179,7 +8179,7 @@
     {
       "file": "content/bus/routes/series-600s/652.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8187,7 +8187,7 @@
     {
       "file": "content/bus/routes/series-600s/660-55p1da.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8195,7 +8195,7 @@
     {
       "file": "content/bus/routes/series-600s/660-9rs1.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8203,7 +8203,7 @@
     {
       "file": "content/bus/routes/series-600s/662.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8211,7 +8211,7 @@
     {
       "file": "content/bus/routes/series-600s/663.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8219,7 +8219,7 @@
     {
       "file": "content/bus/routes/series-600s/668.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8227,7 +8227,7 @@
     {
       "file": "content/bus/routes/series-600s/669.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8251,7 +8251,7 @@
     {
       "file": "content/bus/routes/series-600s/672-1hl8z83.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8259,7 +8259,7 @@
     {
       "file": "content/bus/routes/series-600s/672-6cgqbt.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8267,7 +8267,7 @@
     {
       "file": "content/bus/routes/series-600s/673.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8275,7 +8275,7 @@
     {
       "file": "content/bus/routes/series-600s/675.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8283,7 +8283,7 @@
     {
       "file": "content/bus/routes/series-600s/676.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8291,7 +8291,7 @@
     {
       "file": "content/bus/routes/series-600s/679.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8299,7 +8299,7 @@
     {
       "file": "content/bus/routes/series-600s/680.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8315,7 +8315,7 @@
     {
       "file": "content/bus/routes/series-600s/682.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8323,7 +8323,7 @@
     {
       "file": "content/bus/routes/series-600s/683-14554x7.md",
       "sources": 2,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8331,7 +8331,7 @@
     {
       "file": "content/bus/routes/series-600s/683-17yuams.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -8347,7 +8347,7 @@
     {
       "file": "content/bus/routes/series-600s/688.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0

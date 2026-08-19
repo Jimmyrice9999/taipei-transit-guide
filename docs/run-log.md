@@ -12687,3 +12687,52 @@ to content), nav 19/19.
 Part 1 running total: 279 of 1,051 routes across fourteen groups.
 Next-smallest remaining: series-600s (49), special-shuttle (51),
 series-200s (92), new-taipei (562). Parts 2-7 not started.
+
+## Run 52 — Part 1 batch 12, series-600s to 200+ words
+
+49 routes: the whole `series-600s` group (600-series 一般公車). Starting
+template was 98-105 words. This group is denser than minibus and closer
+to trunk/colour-feeder coverage — many routes run 40-84 stop corridors
+threading central Taipei with 5-17 confirmed interchanges each, not the
+0-3 typical of minibus. To keep the prose readable, corridor paragraphs
+named 5-10 real waypoints rather than transcribing every stop, followed
+by the confirmed-interchange sentence, a subroute/operator sentence,
+and an extended "Research status" paragraph, matching the established
+pattern. A ranking script computed every route's distinct confirmed-
+interchange count up front, so every comparative claim in this batch
+(most, fewest, matching, differing) was checked against the full batch
+before publishing, not just routes already written.
+
+Genuine findings: `600` confirms ten consecutive Bannan Line stations
+from Taipei Main Station to Kunyang — literally every Bannan Line stop
+on that stretch — running an above-ground shadow of the subway for
+most of its own length. `648` confirms thirteen distinct interchanges,
+the most of any route in this batch, threading nearly the entire
+Songshan-Xindian Line including its Ankang and Rose China Town branch
+stops. `682` runs 84 stops outbound, the longest corridor in the batch,
+crossing the Tamsui River twice between 八里 and 社子 while confirming
+six consecutive Tamsui-Xinyi Line stations. `669` confirms only one
+interchange despite crossing central Taipei from Xinyi to Sanchong —
+the sparsest coverage found. The 605 family (五股-臺北車站/副/快/新台五)
+splits into four separately filed variants: three share a Zhongxiao/
+Nangang corridor and the same six confirmed interchanges, but 605快
+runs a distinct Nanjing Rd. corridor sharing no confirmed interchange
+with its own siblings despite carrying the same route number. 617 and
+617副 both run 泰山-內湖 under the same operator with almost the same
+confirmed interchange set, but 617 continues past 617副's own terminus
+to Dahu Park and runs a fuller daily schedule. 683預 is a reservation-
+only variant with no separately published schedule in the catalogue,
+the same pattern seen in one minibus route last batch. Several routes
+carry a "狗狗公車" (pet-friendly) subroute alongside a plain working
+(645, 669, 679, 681) — a labelling pattern not seen in earlier batches.
+
+Checked directly for the citation-marker line-break bug before running
+gates; none found in this batch's new prose.
+
+Gates: cite clean, claims baseline held at 32 (0 new trips), test:unit
+209/209, verify clean (one pre-existing BL/A protanopia note, unrelated
+to content), nav 19/19.
+
+Part 1 running total: 328 of 1,051 routes across fifteen groups.
+Next-smallest remaining: special-shuttle (51), series-200s (92),
+new-taipei (562). Parts 2-7 not started.

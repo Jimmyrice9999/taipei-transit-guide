@@ -53,6 +53,8 @@ The normalized TDX record retains 1 direction/variant record for this service; r
 
 The full official schedule gives termini “大鵬新城 - 民生社區”, the current head/last-departure field “[平日] 0520 - 2310 [假日] 0520 - 2310”, fare “兩段票”.[^ebus-route-672-6cgqbt]
 
+The confirmed stop sequence runs from 中正環河路口, past 捷運秀朗橋站/尖山腳, through 景平路景德街口/捷運景平站, along 羅斯福金門街口/捷運古亭站/師大, past 溫州街口/長庚醫院, ending at 公教住宅/介壽國中/民生社區.[^tdx-bus] Twelve confirmed interchanges are recorded in the curated stop-ID join set: Zhongxiao Xinsheng (BL14/O07), Sun Yat-Sen Memorial Hall (BL17), Liuzhangli (BR07), Nanjing Fuxing (BR11/G16), Gongguan (G07), Taipower Building (G08), Guting (G09/O05), Xiulang Bridge (Y09) and Jingping (Y10), matching the same starting stretch confirmed for its own shorter 672區 sibling.[^tdx-bus] The route runs a single subroute under one operator, 首都客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 大鵬新城 with 民生社區 specifically as the route's own termini, over a corridor confirming twelve separate rail interchanges, was found in this search.

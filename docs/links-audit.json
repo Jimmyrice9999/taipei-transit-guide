@@ -11050,19 +11050,9 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-600s/605-1glsi2c/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/series-600s/605-f5dmpj/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/605-f5dmpj/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-600s/605-fz0v3a/",
@@ -11073,11 +11063,6 @@
       "page": "/bus/routes/series-600s/605-fz0v3a/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/605-fz0v3a/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-600s/605-nsoxuq/",
@@ -11115,29 +11100,9 @@
       "href": "/rail/metro/stations/g05/"
     },
     {
-      "page": "/bus/routes/series-600s/611/",
-      "name": "Taipei City Hall",
-      "href": "/rail/metro/stations/bl18/"
-    },
-    {
       "page": "/bus/routes/series-600s/612/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
-    },
-    {
-      "page": "/bus/routes/series-600s/612/",
-      "name": "Taipei City Hall",
-      "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/612/",
-      "name": "臺北大學",
-      "href": "/rail/metro/stations/lb07/"
-    },
-    {
-      "page": "/bus/routes/series-600s/615/",
-      "name": "Xinzhuang",
-      "href": "/rail/metro/stations/o18/"
     },
     {
       "page": "/bus/routes/series-600s/615/",
@@ -11156,18 +11121,8 @@
     },
     {
       "page": "/bus/routes/series-600s/616/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/series-600s/616/",
       "name": "Zhongyi",
       "href": "/rail/metro/stations/r24/"
-    },
-    {
-      "page": "/bus/routes/series-600s/616/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
     },
     {
       "page": "/bus/routes/series-600s/616/",
@@ -11306,11 +11261,6 @@
     },
     {
       "page": "/bus/routes/series-600s/622/",
-      "name": "Xinzhuang",
-      "href": "/rail/metro/stations/o18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/622/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -11341,18 +11291,13 @@
     },
     {
       "page": "/bus/routes/series-600s/641/",
-      "name": "Sanchong",
-      "href": "/rail/metro/stations/o15/"
-    },
-    {
-      "page": "/bus/routes/series-600s/641/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/series-600s/643/",
-      "name": "Xindian",
-      "href": "/rail/metro/stations/g01/"
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-600s/643/",
@@ -11363,6 +11308,11 @@
       "page": "/bus/routes/series-600s/643/",
       "name": "臺北大學",
       "href": "/rail/metro/stations/lb07/"
+    },
+    {
+      "page": "/bus/routes/series-600s/644/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-600s/644/",
@@ -11391,13 +11341,13 @@
     },
     {
       "page": "/bus/routes/series-600s/645-1oyv0of/",
-      "name": "市政府",
-      "href": "/rail/metro/stations/bl18/"
+      "name": "Beitou",
+      "href": "/rail/metro/stations/r22/"
     },
     {
       "page": "/bus/routes/series-600s/645-1oyv0of/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
+      "name": "市政府",
+      "href": "/rail/metro/stations/bl18/"
     },
     {
       "page": "/bus/routes/series-600s/645-7bxkr5/",
@@ -11425,11 +11375,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-600s/645-7bxkr5/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/series-600s/646/",
       "name": "Wende",
       "href": "/rail/metro/stations/br18/"
@@ -11451,6 +11396,11 @@
     },
     {
       "page": "/bus/routes/series-600s/648/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/routes/series-600s/648/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -11458,11 +11408,6 @@
       "page": "/bus/routes/series-600s/651/",
       "name": "Xiaonanmen",
       "href": "/rail/metro/stations/g11/"
-    },
-    {
-      "page": "/bus/routes/series-600s/651/",
-      "name": "國父紀念館",
-      "href": "/rail/metro/stations/bl17/"
     },
     {
       "page": "/bus/routes/series-600s/652/",
@@ -11498,6 +11443,16 @@
       "page": "/bus/routes/series-600s/652/",
       "name": "新莊副都心站",
       "href": "/rail/metro/stations/a4/"
+    },
+    {
+      "page": "/bus/routes/series-600s/660-55p1da/",
+      "name": "Xindian",
+      "href": "/rail/metro/stations/g01/"
+    },
+    {
+      "page": "/bus/routes/series-600s/660-55p1da/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/series-600s/660-55p1da/",
@@ -11555,11 +11510,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/series-600s/668/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
-    },
-    {
       "page": "/bus/routes/series-600s/669/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
@@ -11573,6 +11523,11 @@
       "page": "/bus/routes/series-600s/670/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
+    },
+    {
+      "page": "/bus/routes/series-600s/670/",
+      "name": "Zhonghe",
+      "href": "/rail/metro/stations/y12/"
     },
     {
       "page": "/bus/routes/series-600s/670/",
@@ -11593,11 +11548,6 @@
       "page": "/bus/routes/series-600s/671/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/672-1hl8z83/",
-      "name": "Nanshijiao",
-      "href": "/rail/metro/stations/o01/"
     },
     {
       "page": "/bus/routes/series-600s/672-1hl8z83/",
@@ -11636,6 +11586,11 @@
     },
     {
       "page": "/bus/routes/series-600s/673/",
+      "name": "Zhonghe",
+      "href": "/rail/metro/stations/y12/"
+    },
+    {
+      "page": "/bus/routes/series-600s/673/",
       "name": "Kanding",
       "href": "/rail/metro/stations/v11/"
     },
@@ -11648,11 +11603,6 @@
       "page": "/bus/routes/series-600s/675/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/series-600s/675/",
-      "name": "Nangang",
-      "href": "/rail/metro/stations/bl22/"
     },
     {
       "page": "/bus/routes/series-600s/676/",
