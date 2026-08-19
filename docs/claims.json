@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 4924,
+    "sourced": 5006,
     "tbc": 4242,
     "asserted": 32,
     "meta": 41
@@ -1355,7 +1355,7 @@
     {
       "file": "content/bus/routes/colour-red/red-10-19a4vub.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1363,7 +1363,7 @@
     {
       "file": "content/bus/routes/colour-red/red-10-5rmu8p.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1371,7 +1371,7 @@
     {
       "file": "content/bus/routes/colour-red/red-12.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1379,7 +1379,7 @@
     {
       "file": "content/bus/routes/colour-red/red-13.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1387,7 +1387,7 @@
     {
       "file": "content/bus/routes/colour-red/red-15.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1395,7 +1395,7 @@
     {
       "file": "content/bus/routes/colour-red/red-19.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1403,7 +1403,7 @@
     {
       "file": "content/bus/routes/colour-red/red-2.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1411,7 +1411,7 @@
     {
       "file": "content/bus/routes/colour-red/red-22.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1419,7 +1419,7 @@
     {
       "file": "content/bus/routes/colour-red/red-23.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1427,7 +1427,7 @@
     {
       "file": "content/bus/routes/colour-red/red-25-1dsccey.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1435,7 +1435,7 @@
     {
       "file": "content/bus/routes/colour-red/red-25-1ye3npx.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1443,7 +1443,7 @@
     {
       "file": "content/bus/routes/colour-red/red-26.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1451,7 +1451,7 @@
     {
       "file": "content/bus/routes/colour-red/red-27.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1459,7 +1459,7 @@
     {
       "file": "content/bus/routes/colour-red/red-28-1jxvy7v.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1467,7 +1467,7 @@
     {
       "file": "content/bus/routes/colour-red/red-28-ih2ljq.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1475,7 +1475,7 @@
     {
       "file": "content/bus/routes/colour-red/red-29.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1483,7 +1483,7 @@
     {
       "file": "content/bus/routes/colour-red/red-3-1or7p48.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1491,7 +1491,7 @@
     {
       "file": "content/bus/routes/colour-red/red-3-z9iwef.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1499,7 +1499,7 @@
     {
       "file": "content/bus/routes/colour-red/red-30.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1507,7 +1507,7 @@
     {
       "file": "content/bus/routes/colour-red/red-31.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1515,7 +1515,7 @@
     {
       "file": "content/bus/routes/colour-red/red-33.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1523,7 +1523,7 @@
     {
       "file": "content/bus/routes/colour-red/red-35-1krqvqy.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1531,7 +1531,7 @@
     {
       "file": "content/bus/routes/colour-red/red-35-1wnqm1g.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1539,7 +1539,7 @@
     {
       "file": "content/bus/routes/colour-red/red-36.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1547,7 +1547,7 @@
     {
       "file": "content/bus/routes/colour-red/red-37-17x5uzd.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1555,7 +1555,7 @@
     {
       "file": "content/bus/routes/colour-red/red-37-4arbx5.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1563,7 +1563,7 @@
     {
       "file": "content/bus/routes/colour-red/red-38.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1571,7 +1571,7 @@
     {
       "file": "content/bus/routes/colour-red/red-39.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1579,7 +1579,7 @@
     {
       "file": "content/bus/routes/colour-red/red-5.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1587,7 +1587,7 @@
     {
       "file": "content/bus/routes/colour-red/red-50.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1595,7 +1595,7 @@
     {
       "file": "content/bus/routes/colour-red/red-51.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 6,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1603,7 +1603,7 @@
     {
       "file": "content/bus/routes/colour-red/red-53.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1611,7 +1611,7 @@
     {
       "file": "content/bus/routes/colour-red/red-55-17ufgag.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1619,7 +1619,7 @@
     {
       "file": "content/bus/routes/colour-red/red-55-qt8lyo.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1627,7 +1627,7 @@
     {
       "file": "content/bus/routes/colour-red/red-57.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1635,7 +1635,7 @@
     {
       "file": "content/bus/routes/colour-red/red-68-hdunl.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1643,7 +1643,7 @@
     {
       "file": "content/bus/routes/colour-red/red-68-wfb31u.md",
       "sources": 3,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1651,7 +1651,7 @@
     {
       "file": "content/bus/routes/colour-red/red-7-oykphm.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 3,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -1659,7 +1659,7 @@
     {
       "file": "content/bus/routes/colour-red/red-7-p136ls.md",
       "sources": 3,
-      "sourced": 2,
+      "sourced": 4,
       "tbc": 4,
       "asserted": 0,
       "meta": 0

@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅15 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 天母 - 社子, weekday and holiday service 0600–2200, one-section fare and 中興巴士天母站 as the service contact.[^ebus-r15]
 
+The confirmed stop sequence runs from 職能發展學院 near 芝山, past 忠孝新村/
+芝山國小/忠義街/聯合醫院陽明院區, through a stop literally named 捷運士林站
+(中正), then into 社子 past 陽明高中/社子市場/社子公園, ending at 社子國小二.[^tdx-bus] The curated stop-ID join set records zero confirmed
+interchanges for this route, despite the literally-named 捷運士林站 stop
+along the way.[^tdx-bus] The route runs a single subroute under one
+operator, 中興巴士.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅15 was found
+in this search. A headway-by-day-type figure is likewise absent from the primary schedule
+page beyond its own weekday and holiday span statement. No predecessor-
+route or renumbering history for 紅15 was located either, nor a stated
+reason for pairing 天母 with 社子 across such a wide stretch of Shilin, nor
+why the raw name-matching process attached to this route's own data
+differs so sharply in outcome from sibling routes 紅10 and 紅7 along a
+broadly similar corridor.[^tdx-bus]

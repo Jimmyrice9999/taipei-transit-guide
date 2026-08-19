@@ -1381,11 +1381,6 @@
     },
     {
       "page": "/bus/routes/colour-red/red-12/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-12/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1393,16 +1388,6 @@
       "page": "/bus/routes/colour-red/red-13/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-15/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-15/",
-      "name": "Zhishan",
-      "href": "/rail/metro/stations/r17/"
     },
     {
       "page": "/bus/routes/colour-red/red-15/",
@@ -1438,6 +1423,11 @@
       "page": "/bus/routes/colour-red/red-25-1dsccey/",
       "name": "Taipei Arena",
       "href": "/rail/metro/stations/g17/"
+    },
+    {
+      "page": "/bus/routes/colour-red/red-25-1dsccey/",
+      "name": "Songshan",
+      "href": "/rail/metro/stations/g19/"
     },
     {
       "page": "/bus/routes/colour-red/red-25-1dsccey/",
@@ -1486,11 +1476,6 @@
     },
     {
       "page": "/bus/routes/colour-red/red-2/",
-      "name": "Donghu",
-      "href": "/rail/metro/stations/br22/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-2/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
     },
@@ -1506,18 +1491,8 @@
     },
     {
       "page": "/bus/routes/colour-red/red-3-1or7p48/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-3-1or7p48/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-3-z9iwef/",
-      "name": "Xihu",
-      "href": "/rail/metro/stations/br16/"
     },
     {
       "page": "/bus/routes/colour-red/red-3-z9iwef/",
@@ -1526,18 +1501,8 @@
     },
     {
       "page": "/bus/routes/colour-red/red-3-z9iwef/",
-      "name": "Neihu",
-      "href": "/rail/metro/stations/br19/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-3-z9iwef/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-30/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/colour-red/red-30/",
@@ -1630,11 +1595,6 @@
       "href": "/rail/metro/stations/bl18/"
     },
     {
-      "page": "/bus/routes/colour-red/red-53/",
-      "name": "Shalun",
-      "href": "/rail/metro/stations/v27/"
-    },
-    {
       "page": "/bus/routes/colour-red/red-55-17ufgag/",
       "name": "Beitou",
       "href": "/rail/metro/stations/r22/"
@@ -1698,11 +1658,6 @@
       "page": "/bus/routes/colour-red/red-7-p136ls/",
       "name": "市政府",
       "href": "/rail/metro/stations/bl18/"
-    },
-    {
-      "page": "/bus/routes/colour-red/red-9/",
-      "name": "Shilin",
-      "href": "/rail/metro/stations/r16/"
     },
     {
       "page": "/bus/routes/colour-red/red-9/",

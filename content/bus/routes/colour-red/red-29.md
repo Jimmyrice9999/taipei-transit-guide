@@ -51,6 +51,18 @@ sources:
 
 The official catalogue lists 紅29 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 內湖(新湖二路) - 捷運民權西路站, weekday and holiday service 0600–2340, one-section fare and 東南客運內湖站 as the service contact. It records that 0800–2130 trips serve 三軍總醫院內湖院區, with 2130, 2230 and 2340 departures after 2130 on both day types.[^ebus-r29]
 
+At 41-45 stops each way, the confirmed stop sequence is one of the longer
+routes in this batch: from 東南客運停車場 in Neihu, past 三總內湖站/將軍嶺, along
+成功路三段 past a stop literally named 捷運內湖站, through 瑞光/民權大橋, then
+the length of 民權東路 past 民權龍江路口/民權建國路口, ending at 捷運民權西路站.[^tdx-bus] Five confirmed interchanges are recorded in the curated stop-ID
+join set: Zhongshan Junior High School (BR12), Songshan Airport (BR13),
+Neihu (BR19), Zhongshan Elementary School (O10) and Minquan W. Rd.
+(O11/R13).[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅29 was found
+in this search, nor a stated reason for the 三軍總醫院內湖院區 detour's own
+0800–2130 window rather than running it all day.[^tdx-bus] A headway-by-day-type
+figure is likewise absent from the primary schedule page beyond its own
+departures listed after 2130.[^ebus-r29]

@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅3 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 社子 - 台北花市, weekdays suspended, a single 10:30 Saturday service, two-section fare, the 陽明高中–劍潭 buffer and 光華巴士洲美站 as the service contact. The page also says Sundays, national holidays, make-up days and typhoon closure days are suspended.[^ebus-r3]
 
+The confirmed stop sequence runs from 社子, through 士林 past a stop
+literally named 捷運士林站(中山), along 中山北路 past 圓山大飯店/忠烈祠, into 大直
+past 捷運大直站/捷運劍南路站, then through Neihu's 瑞光/公館山, ending at 台北
+花市 near 新湖三路口.[^tdx-bus] Five confirmed interchanges are recorded in
+the curated stop-ID join set: Dazhi (BR14), Jiannan Rd. (BR15), Gangqian
+(BR17), Jiantan (R15) and Shilin (R16).[^tdx-bus] The route's single
+Saturday-only 10:30 departure — with weekdays, Sundays, national holidays
+and typhoon days all suspended — is the narrowest schedule in this
+batch.[^ebus-r3]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅3 or a
+stated reason for its own single-weekly-departure pattern was found in
+this search. Nor was any explanation found for why this exists as a
+separate route from 紅3區, which runs a similar opening corridor on a much
+fuller schedule.

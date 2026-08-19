@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅35區 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 捷運關渡站 - 北藝大游泳館, weekday service 0750–1730, no holiday service, one-section fare and 大南汽車關渡站 as the service contact. The page repeats that the route is suspended on holidays.[^ebus-r35-shuttle]
 
+At just six stops each way, the confirmed stop sequence is short and
+entirely campus-focused: 捷運關渡站、北投區公所(關渡)、立功街、北藝大校門口、北藝大
+音樂廳、北藝大行政大樓, a shorter version of sibling 紅35's own longer 關渡碼頭
+corridor.[^tdx-bus] One confirmed interchange is recorded in the curated
+stop-ID join set: Guandu (R25), matching the route's own terminus.[^tdx-bus]
+The route runs a single subroute under one operator, 大南汽車, weekdays
+only with holidays suspended entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 紅35區 was found in this search, nor a stated reason for
+running as a separate route rather than a subroute of plain 紅35. No
+predecessor-route or renumbering history for 紅35區 was located either,
+nor a stated reason for its own narrow 0750–1730 weekday-only span
+compared with plain 紅35's own 0900–2150 daily service across both
+weekday and holiday schedules.[^tdx-bus]

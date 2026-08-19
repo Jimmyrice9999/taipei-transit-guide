@@ -51,6 +51,17 @@ sources:
 
 The official catalogue lists 紅3區 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 社子站 - 內湖科技園區, weekday service 0545–2200, holiday service 0800–2000, a 陽明高中–劍潭 fare buffer, two-section fare and 光華巴士洲美站 as the service contact.[^ebus-r3-shuttle] The page says national holidays use the Sunday timetable, Lunar New Year's Eve uses the Saturday timetable, and typhoon closure days use the Sunday timetable.[^ebus-r3-shuttle]
 
+The confirmed stop sequence follows plain 紅3's own 社子/士林/中山北路/大直
+corridor as far as 捷運劍南路站, then continues into Neihu's 濱江/瑞光/西湖
+area rather than turning toward 台北花市, ending at 港墘派出所.[^tdx-bus] Five
+confirmed interchanges are recorded in the curated stop-ID join set: Dazhi
+(BR14), Jiannan Rd. (BR15), Gangqian (BR17), Jiantan (R15) and Shilin
+(R16) — the same five stations plain 紅3 confirms.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅3區 or its
+relationship to plain 紅3, run by the same operator over a shared opening
+corridor, was found in this search.[^tdx-bus] A headway-by-day-type figure is
+likewise absent from the primary schedule page beyond its own weekday
+0545–2200 and holiday 0800–2000 span statement.[^ebus-r3-shuttle]

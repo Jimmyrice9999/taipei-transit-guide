@@ -12589,3 +12589,47 @@ Part 1 running total: 191 of 1,051 routes across twelve groups.
 Next-smallest remaining: colour-red (40), minibus (48), series-600s (49),
 special-shuttle (51), series-200s (92), new-taipei (562). Parts 2-7 not
 started.
+
+## Run 52 — Part 1 batch 10, colour-red to 200+ words
+
+40 routes: the whole `colour-red` group (紅線接駁公車). Same starting
+template as colour-blue (57-95 words), widened the same way: corridor
+prose from each route's own confirmed stop sequence, confirmed
+interchanges named only where the curated join set has them. This group
+covers Tamsui/Danhai and Neihu/Songshan, and includes the densest
+interchange counts found in this project's colour-feeder coverage so far.
+
+Genuine findings: 紅2 confirms nine interchanges — eight consecutive Wenhu
+Line stations plus Yuanshan — effectively threading the whole Neihu
+stretch by road. 紅23 confirms eight Danhai Light Rail interchanges across
+a 48-stop corridor. 紅68預 is a genuine classification conflict already
+flagged before this batch (a TDX-only record the official catalogue
+omits); this batch added its own confirmed corridor and interchange
+without resolving the conflict, publishing it alongside plain 紅68's own
+matching data. Several route families cluster around one operator running
+near-duplicate corridors from a shared origin — 光華巴士's 紅21/紅21副/紅23
+pattern already known from colour-blue repeats here with 淡水客運's 紅37/
+紅51/紅53 and 大南汽車's 紅35/紅35區/紅55/紅55區, each described against what
+the others actually take rather than restated boilerplate.
+
+A mid-batch claims check found 42 sentence-level trips, the largest of
+any batch this run — traced to two distinct causes: a formatting bug
+where a citation marker placed at the start of a wrapped line (rather
+than immediately after the preceding period) let the sentence splitter
+treat the marker as its own fragment and leave the real sentence
+uncited, and a genuine pattern of trailing "Research status" sentences
+written without their own marker at all. Both fixed — the formatting bug
+by rejoining the marker onto the same line as its sentence, the missing
+markers by citing each sentence directly — none by touching the baseline,
+which holds at 32. The formatting bug was also found and fixed in five
+already-committed files from the trunk and colour-blue batches earlier
+this run (route-1sjvy8q, blue-1, blue-15, blue-38, blue-39), where it had
+not yet tripped the ratchet only because those specific sentences didn't
+carry a claims-signal word.
+
+Gates: cite clean, verify running in the background at time of writing,
+test:unit 209/209.
+
+Part 1 running total: 231 of 1,051 routes across thirteen groups.
+Next-smallest remaining: minibus (48), series-600s (49), special-shuttle
+(51), series-200s (92), new-taipei (562). Parts 2-7 not started.

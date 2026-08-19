@@ -53,8 +53,7 @@ The official catalogue lists 仁愛幹線 under 幹線專車.[^ebus-trunk] Its f
 Unlike most other trunk routes in this project's coverage, 仁愛幹線 begins
 outside Taipei entirely: its confirmed stop sequence starts at 五福新村 in
 Banqiao, New Taipei, crosses 華江橋 into Wanhua, then runs the length of
-仁愛路 through central Taipei and Xinyi into Nangang, ending at 南港花園社區.
-[^tdx-bus] Six confirmed interchanges are named directly in the stop
+仁愛路 through central Taipei and Xinyi into Nangang, ending at 南港花園社區.[^tdx-bus] Six confirmed interchanges are named directly in the stop
 sequence: 捷運龍山寺站 (Longshan Temple, BL10), 捷運西門站 (served by both the
 Bannan Line as BL11 and the Songshan–Xindian Line as G12), 捷運台大醫院站
 (NTU Hospital, R09), 捷運市政府站 (Taipei City Hall, BL18) — the stop the

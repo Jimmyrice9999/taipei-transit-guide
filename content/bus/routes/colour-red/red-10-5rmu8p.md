@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 紅10 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 台北海大 - 捷運劍潭站, weekday and holiday service 0530–2340, one-section fare and 光華巴士海專站 as the service contact.[^ebus-r10]
 
+The confirmed stop sequence runs from 台北海大 on the Shezi peninsula, past
+富洲里/威靈廟/福安國小, through 社子's 普濟堂/社子市場/陽明高中/士林區行政中心,
+into 士林 past a stop literally named 捷運士林站(中正), then on to 台電台北
+北區營業處/銘傳大學, ending near 捷運劍潭站.[^tdx-bus] Two confirmed
+interchanges are recorded in the curated stop-ID join set: Jiantan (R15)
+and Shilin (R16).[^tdx-bus] TDX carries a separate 紅10區 record (canonical
+slug `red-10-19a4vub`) sharing this route's corridor and operator but
+running weekdays only.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅10 was found
+in this search.[^tdx-bus] A headway-by-day-type figure is likewise absent from the
+primary schedule page beyond its own near-24-hour, 0530–2340 weekday and
+holiday span statement.[^ebus-r10] No predecessor-route or renumbering history for
+紅10 was located either, nor a stated reason for pairing 台北海大 with
+捷運劍潭站 across such a wide stretch of the city, run by the same
+operator, 光華巴士, as 紅10區 from its 海專站 dispatch point.[^tdx-bus]

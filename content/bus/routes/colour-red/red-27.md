@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 紅27 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 淡江大學 - 捷運淡水站, weekday service 0640–0000, holiday service 0700–0000, one-section fare and 指南客運淡大站 as the service contact. The same page records 20–30 minute holiday headways and a 30-minute service after 23:30.[^ebus-r27]
 
+At just six stops outbound, the confirmed stop sequence is among the
+shortest in this batch: 淡江大學、黃昏市場、北淡水、永樂巷口(中山市場)、華南銀行,
+ending at 捷運淡水站.[^tdx-bus] One confirmed interchange is recorded in
+the curated stop-ID join set: Tamsui (R28), matching the route's own
+terminus.[^tdx-bus] The route runs a single subroute under one operator,
+指南客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅27 was found in
+this search, nor a stated reason for its own near-24-hour, 0640–0000
+weekday span over such a short corridor. No predecessor-route or
+renumbering history for 紅27 was located either, nor a stated reason for
+confirming only Tamsui despite the route's own short, single-corridor
+length, matching a pattern also seen on several other short shuttle routes
+in this batch, including sibling 紅28 elsewhere in the same 淡水地區.[^tdx-bus]

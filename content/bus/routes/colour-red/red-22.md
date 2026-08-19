@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 紅22 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 八里 - 捷運關渡站, weekday service 0530–2330, holiday service 0545–2330, one-section fare and 淡水客運八里站 as the service contact. The page also publishes the current 07:03 return, 17:19 outbound and post-22:00 timetable variants.[^ebus-r22]
 
+The confirmed stop sequence runs from 淡水客運八里站, past 幸福花園社區/龍井
+天朗社區/春城台北港, through 八里's 舊城里/八里區農會/十三行博物館, then along
+關渡自然保護區's 大崁/西門/水雲山莊, crosses 關渡大橋, ending at 捷運關渡站.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID
+join set: Guandu (R25), matching the route's own terminus.[^tdx-bus] TDX
+records five named subroutes distinguishing the 台北港 detour and
+車機-triggered short workings.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅22 or its
+relationship to sibling route 紅13, run by the same operator, 淡水客運, over
+a similar 八里–關渡 corridor, was found in this search. A headway-by-day-type figure is likewise absent
+from the primary schedule page beyond its own timetable-variant listing.
+No predecessor-route or renumbering history for 紅22 was located either,
+nor a stated reason for confirming only one interchange along a 44-stop
+corridor covering nearly all of 八里.[^tdx-bus]

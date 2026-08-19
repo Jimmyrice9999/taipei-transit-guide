@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 紅12 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 天文科學館 - 捷運石牌站, weekday and holiday service 0600–2215, one-section fare and 中興巴士北士科站 as the service contact.[^ebus-r12]
 
+The confirmed stop sequence runs from 天文科學館 near 雙溪, past 士林高商/士林
+區行政中心/士林國中, through 忠誠公園/雨農國小/蘭雅新城/天母棒球場, ending at
+榮總/捷運石牌站.[^tdx-bus] One confirmed interchange is recorded in the
+curated stop-ID join set: Shipai (R19), matching the route's own
+terminus.[^tdx-bus] The route runs a single subroute under one operator,
+中興巴士, with no recorded holiday variant or short working.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅12 was found
+in this search, nor a stated reason for pairing 天文科學館 with 捷運石牌站
+specifically as the route's own termini. A headway-by-day-type figure is
+likewise absent from the primary schedule page beyond its own weekday and
+holiday span statement. No predecessor-route or renumbering history for
+紅12 was located either, nor a stated reason for confirming only a single interchange along a
+corridor that also passes 天母棒球場 and several schools along the way,
+including 士林高商 and 蘭雅國中, or for pairing 天文科學館 with 捷運石牌站 specifically as the route's own
+termini.[^tdx-bus]

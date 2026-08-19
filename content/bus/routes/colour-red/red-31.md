@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅31 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 捷運大湖公園站 - 捷運民權西路站, weekday and holiday service 0600–2300, one-section fare and 三重客運南港站 as the service contact. It records a weekday peak headway of 15–20 minutes.[^ebus-r31]
 
+The confirmed stop sequence runs from 捷運大湖公園站, past 金龍里/金龍路口/貿商
+三村, through 碧湖山莊/西湖園/環山路, into Neihu's 基湖路口/瑞光路, along 民權大橋,
+then the length of 民權東路 past 民權龍江路口/民權建國路口, ending at 捷運民權西路
+站.[^tdx-bus] Seven confirmed interchanges are recorded in the curated
+stop-ID join set: Zhongshan Junior High School (BR12), Songshan Airport
+(BR13), Xihu (BR16), Neihu (BR19), Dahu Park (BR20), Zhongshan Elementary
+School (O10) and Minquan W. Rd. (O11/R13).[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅31 was found
+in this search, nor a stated reason for confirming seven interchanges
+along a corridor that shares much of its Neihu stretch with sibling 紅29.
+No predecessor-route or renumbering history for 紅31 was located either,
+nor a stated reason for the operator, 三重客運, running this route so far
+from its own namesake district in Sanchong, over a corridor entirely
+within Neihu, Songshan and Zhongshan.[^tdx-bus]

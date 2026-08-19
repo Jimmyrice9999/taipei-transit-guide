@@ -51,6 +51,22 @@ sources:
 
 The official catalogue lists 紅37行經海洋都心社區 under 捷運紅線接駁公車.[^ebus-red] Its full route-and-stop page gives 淡海新市鎮 - 捷運淡水站, weekday service 0605–2300, holiday service 0820–2200, one-section fare and 淡水客運新市站 as the service contact.[^ebus-r37-ocean]
 
+The confirmed stop sequence runs from 新市站, past 皇城家天下社區/理想家社區/淡
+海國小, through 輕軌淡海新市鎮站/海洋都心社區/海都廣場— the 海洋都心 detour the
+route's own name describes — along 甜水郡社區/輕軌淡水行政中心站, then past
+米粉寮/水碓子/頂好/北淡水, ending at 捷運淡水站.[^tdx-bus] Four confirmed
+interchanges are recorded in the curated stop-ID join set: Tamsui (R28),
+Tamsui District Office (V07), Binhai Yishan (V08) and Danhai New Town
+(V10).[^tdx-bus] The route runs a single subroute under one operator,
+淡水客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for this route or
+its relationship to plain 紅37, run by the same operator over an
+overlapping corridor, was found in this search. A headway-by-day-type
+figure is likewise absent from the primary schedule page beyond its own
+weekday and holiday span statement. No predecessor-route or renumbering
+history for this route was located either, nor a stated reason for its
+own long, "行經海洋都心社區" (via Ocean Community) name against the
+schedule page's plain 淡海新市鎮–捷運淡水站 termini text.

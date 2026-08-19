@@ -58,8 +58,7 @@ The confirmed stop sequence runs from 蘆洲總站, through 長榮路/永平市�
 recorded in the curated stop-ID join set: 臺北車站 itself — a three-line
 interchange served by the Airport MRT (A1), Bannan Line (BL12) and
 Tamsui–Xinyi Line (R10) — plus Sanchong Elementary School (O50), Sanhe
-Junior High School (O51), St. Ignatius High School (O52) and Luzhou (O54).
-[^tdx-bus] The route runs a single subroute under one operator, 三重客運,
+Junior High School (O51), St. Ignatius High School (O52) and Luzhou (O54).[^tdx-bus] The route runs a single subroute under one operator, 三重客運,
 with no recorded holiday variant or short working.[^tdx-bus]
 
 ## Research status

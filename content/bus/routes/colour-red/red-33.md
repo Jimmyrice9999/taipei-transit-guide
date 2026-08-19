@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅33 under 捷運紅線接駁公車.[^ebus-red] Its full route-and-stop page gives 葫蘆里 - 聯合醫院中興院區(西寧), weekday and holiday service 0900–1900, one-section fare and 首都客運士林站 as the service contact. The page lists weekday departures at 0900, 1100, 1300, 1500, 1700 and 1900, and holiday departures at 0900, 1300, 1500, 1700 and 1900.[^ebus-r33]
 
+The confirmed stop sequence runs from 葫蘆寺(葫蘆里) on the Shezi peninsula,
+past 葫蘆堵市場/海光新村/社子消防分隊, through 大龍峒保安宮/庫倫街, into 捷運圓山站/
+花博公園/大同大學, then along 中山北路 past 景福宮/中山國小/新興國中, ending at
+聯合醫院中興院區(西寧) near 迪化街.[^tdx-bus] Three confirmed interchanges are
+recorded in the curated stop-ID join set: Zhongshan Elementary School
+(O10), Shuanglian (R12) and Yuanshan (R14).[^tdx-bus] The route runs a
+single subroute under one operator, 首都客運, with fixed two-hourly
+departures rather than a continuous headway.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅33 was found
+in this search, nor a stated reason for the fixed two-hourly schedule
+rather than a continuous headway band as most other routes in this batch
+publish. No predecessor-route or renumbering history for 紅33 was located
+either, nor a stated reason for pairing 葫蘆里 with 聯合醫院中興院區
+specifically as the route's own termini.[^tdx-bus]

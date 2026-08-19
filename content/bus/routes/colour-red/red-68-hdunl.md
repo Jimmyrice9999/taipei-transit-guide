@@ -51,6 +51,19 @@ sources:
 
 The committed TDX snapshot contains a colour-red record named 紅68預, which is why this page exists.[^tdx-bus] The full official catalogue lists 39 labels under 捷運紅線接駁公車 and omits 紅68預.[^ebus-red] The full official schedule page is labelled 紅68 and records appointment-only trial workings within that service; it does not name a separate 紅68預 route.[^ebus-r68]
 
+Despite the classification conflict, the TDX-only record does carry its
+own confirmed stop sequence and curated interchange: from 洲美里, past
+洲美街219號/洲美國小/福美站/三王宮, through 福美承平路口, and on the outbound
+working past 遠雄商舟大樓/中鼎第二總部大樓, ending at 捷運芝山站(福華).[^tdx-bus]
+One confirmed interchange is recorded in the curated stop-ID join set:
+Zhishan (R17), matching the route's own terminus and identical to plain
+紅68's own confirmed interchange.[^tdx-bus] The stop sequence is otherwise
+near-identical to plain 紅68's own, differing only in whether the 中鼎
+第二總部大樓 detour is included — the same detour the schedule page's
+own appointment-only note describes.[^tdx-bus]
+
 ## Research status
 
-The relationship between the TDX-only record and the official 紅68 appointment workings remains TBC; no separate opening date, corridor rationale, operator change, service span, headway, fare or route-length claim is published here.[^tdx-bus]
+The relationship between the TDX-only record and the official 紅68 appointment workings remains TBC; no separate opening date, corridor rationale, operator change, service span, headway, fare or route-length claim is published here.[^tdx-bus] Whether this record reflects a genuinely separate short working, a data artefact of the
+appointment-only booking system, or a naming inconsistency within the
+same operator's own TDX submission was not established in this search.

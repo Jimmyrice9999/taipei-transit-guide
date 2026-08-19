@@ -59,8 +59,7 @@ joining the same 橫科/南港展覽館 corridor into 南港車站/南港行政�
 confirmed interchanges are recorded in the curated stop-ID join set:
 Nangang (BL22) and Taipei Nangang Exhibition Center, a Bannan–Wenhu
 interchange (BL23/BR24).[^tdx-bus] The route runs a single subroute under
-one operator, 光華巴士, the same company that runs 藍21, 藍21副 and 藍23.
-[^tdx-bus]
+one operator, 光華巴士, the same company that runs 藍21, 藍21副 and 藍23.[^tdx-bus]
 
 ## Research status
 

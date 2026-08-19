@@ -51,6 +51,19 @@ sources:
 
 The official catalogue lists 紅7 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 捷運劍潭站 - 社子, weekday service 0600–1900, holiday service 0800–1700, one-section fare and 首都客運士林站 as the service contact.[^ebus-r7] The page says that the 陽明戲院 stop toward 捷運劍潭站 is served only by departures before 11:00 on both weekdays and holidays.[^ebus-r7]
 
+The confirmed stop sequence runs from 捷運劍潭站, past 陽明戲院/小北街/士林區
+農會/士林國中, through 社子's 社子公園/國泰人壽大樓/社正路/社子市場, along 永倫里
+(社中)/永倫里(延平)/洲美橋, ending near 福安里/普濟堂 on the outbound working.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID
+join set: Jiantan (R15) and Shilin (R16).[^tdx-bus] The route runs a
+single subroute under one operator, 首都客運, with a narrower weekday
+0600–1900 and holiday 0800–1700 span than sibling 紅7區's own near-24-hour
+service.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 紅7 was found in this search, nor a stated reason for
+the 陽明戲院 stop's own time-of-day restriction toward 捷運劍潭站. No
+predecessor-route or renumbering history for 紅7 was located either, nor
+a stated reason for its own narrower weekday and holiday spans compared
+with sibling 紅7區's near-24-hour service.[^tdx-bus]

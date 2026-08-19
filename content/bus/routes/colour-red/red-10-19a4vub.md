@@ -51,6 +51,21 @@ sources:
 
 The official catalogue lists 紅10區 under 捷運紅線接駁公車.[^ebus-red] Its full route-and-stop page gives 社子 - 捷運劍潭站, weekday service 0700–1800, holiday suspension, one-section fare and 光華巴士海專站 as the service contact.[^ebus-r10-shuttle]
 
+The confirmed stop sequence runs from 社子國小二, past 社子市場/陽明高中/士林
+區行政中心, through 士林 past a stop literally named 捷運士林站(中正), then on
+the outbound working continues to 台電台北北區營業處/銘傳大學, ending near
+捷運劍潭站.[^tdx-bus] Two confirmed interchanges are recorded in the
+curated stop-ID join set: Jiantan (R15) and Shilin (R16), matching plain
+紅10's own confirmed pair.[^tdx-bus] The route runs weekdays only, with
+holiday service suspended entirely.[^ebus-r10-shuttle]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅10區 or its
+relationship to plain 紅10 beyond a shared 社子–劍潭 corridor and operator
+was found in this search.[^tdx-bus] A headway-by-day-type figure is likewise absent
+from the primary schedule page beyond its own weekday-only 0700–1800
+span.[^ebus-r10-shuttle] No predecessor-route or renumbering history for 紅10區 was located
+either, nor a stated reason for its own holiday suspension against plain
+紅10's own near-24-hour, seven-day span, both run by the same operator,
+光華巴士, from its 海專站 dispatch point.[^tdx-bus]

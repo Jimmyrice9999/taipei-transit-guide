@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅26 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 漁人碼頭 - 捷運淡水站, weekday and holiday service 0600–0000, one-section fare and 指南客運淡海站 as the service contact. It also records the current working from 淡海 without entering 漁人碼頭 before 08:00 and after 22:00.[^ebus-r26]
 
+The confirmed stop sequence runs from 情人橋 at 漁人碼頭, past 輕軌淡水漁人
+碼頭站/淡海市民活動中心, along 油車口/滬尾藝文園區 past 紅毛城/淡水圖書館, ending
+at 捷運淡水站.[^tdx-bus] Three confirmed interchanges are recorded in the
+curated stop-ID join set: Tamsui (R28), Tamsui Fisherman's Wharf (V26) and
+Shalun (V27).[^tdx-bus] TDX records six named subroutes, matching the
+schedule page's own before-08:00/after-22:00 short-working note that skips
+漁人碼頭 entirely.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no
+dated history for 紅26 was found in this search, nor a stated reason for
+running six named subroutes rather than one route with a time-conditional
+detour rule stated in prose. No predecessor-route or renumbering history
+for 紅26 was located either, nor a stated reason for confirming Tamsui
+Fisherman's Wharf as its own MRT-adjacent light-rail interchange rather
+than a plain named destination.[^tdx-bus]

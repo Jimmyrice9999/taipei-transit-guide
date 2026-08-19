@@ -51,6 +51,20 @@ sources:
 
 The official catalogue lists 紅9 under 捷運紅線接駁公車.[^ebus-red] Its full schedule page gives 蘆洲 - 捷運劍潭站, weekday service 0540–2330, holiday service 0600–2300, one-section fare and 三重客運蘆一站 as the service contact.[^ebus-r9] It records a weekday peak interval of 12–15 minutes.[^ebus-r9]
 
+The confirmed stop sequence runs from 忠義國小, past 柳堤公園/中原公園, through
+捷運蘆洲站/仁愛國小/民族民義街口, along 復興路/捷運三民高中站, into 三重's 溪墘/
+捷運徐匯中學站/尼加拉瓜公園, then past 分子尾/五華國小/重陽橋, ending near 士林
+區行政中心/捷運劍潭站.[^tdx-bus] Four confirmed interchanges are recorded
+in the curated stop-ID join set: St. Ignatius High School (O52), Sanmin
+Senior High School (O53), Luzhou (O54) and Jiantan (R15).[^tdx-bus] The
+route runs a single subroute under one operator, 三重客運.[^tdx-bus]
+
 ## Research status
 
-The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]
+The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅9 was found in
+this search, nor a stated reason for confirming four interchanges spread
+across three different districts — Luzhou, Sanchong and Shilin — along a
+single continuous corridor. No predecessor-route or renumbering history
+for 紅9 was located either, nor a stated reason for the operator, 三重客運,
+running this far into Shilin from its own Sanchong/Luzhou base, or for
+pairing 蘆洲 with 捷運劍潭站 specifically as the route's own termini.
