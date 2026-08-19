@@ -10923,4 +10923,67 @@ Gates: `npm run cite`, `node scripts/claims.mjs --list` and a fresh
 `npm run build` all clean; `npm run verify` green; full test suite green
 (one transient `npm test` failure was a `vips` out-of-memory error in
 opengraph-image generation, unrelated to content — passed clean on
-retry). Commit pending.
+retry). Commit `d1e4d0f`, pushed.
+
+### series-500s, all 21 routes, checked 19 August 2026, Part 3 complete
+
+Built as two parallel batches of 11 and 10. Neither wrote the group
+`_index.md`; written once both landed.
+
+**539預 and 542預 resolved — the open question flagged when this run's
+route lists were first assembled.** Neither appears anywhere in the
+ebus.gov.taipei catalogue under any heading, unlike every other route this
+run. Each plain route's own official schedule page explains why: 539's
+page states verbatim that nine weekday and nine holiday departures have
+run as 預約公車班次 (reservation trips, dispatched only if booked) since
+22 June 2023; 542's page states two weekday departures have run the same
+way since 9 January 2021. Taipei's real-time bus information system
+(`pda5284.gov.taipei`) tracks each reservation-working under its own
+route id, matching the departure times the schedule pages name. A general
+FAQ on the city's 臺北市預約公車 system and its booking-platform homepage
+(`taipeidrts.org.tw`) corroborate what reservation trips are generally,
+but neither names 539 or 542 specifically — both cited as general-system
+sources only, not route-specific evidence. **預 here means a
+reservation-only working of an existing route, not a predecessor-route
+marker and not a 區-style shuttle variant** — a real answer, not the
+same shape as any other suffix in this run's numbered-series groups.
+
+One real authoring bug caught between the two batches, not by the gate:
+536-vpz3ur.md's `note:` field held an unquoted YAML scalar containing bare
+`: ` sequences after "1 July" and "1 September" inside the value, which
+breaks flow-scalar parsing. The batch-2 agent hit the resulting build
+failure, correctly identified it belonged to the other batch's file
+(different working set), did not touch it, and reported it instead —
+found already fixed (properly double-quoted) by the time both batches'
+output was reviewed.
+
+Dense predecessor-route history found across this group, more than most
+earlier batches: 513 (single-trip service cut, 19 Dec 2020, wiki date
+matching the current timetable exactly), 521 (predecessor 604 shuttle,
+renumbered 1 Apr 2000), 529 (predecessor 紅28, renumbered 10 Mar 2001), 530
+(split from highway route 指南1 into 530/801, 10 May 2001), 536 (operator
+change to 首都客運, 15 Jun 2002; 2024 two-stage restructuring, the 1 July
+date independently corroborated by both a primary schedule page and the
+wiki), 539 (renumbered from 39副線, 2 Jan 2001). All wiki-only dates are
+marked uncorroborated against a primary announcement. Two municipal
+collisions found: Taoyuan independently runs its own 505 (a weekend
+sightseeing route, unrelated).
+
+One data-quality note published rather than silently trusted: 556's raw
+`railJoins`-adjacent rail-relevant station codes span lines (A8, BL16,
+BR06, BR14, BR15, G17, R15) implausibly broad for its Muzha–Jiantan
+corridor — flagged on the page as a likely stop-name artifact rather than
+asserted as fact. (Note: the site's actual rendered "Confirmed MRT stop
+joins" figure comes only from the geometry-confirmed `rail-stop-joins.json`
+from Part 2, not from this raw field — the flag is about a different,
+unused raw data field the route record carries.)
+
+Gates: `npm run cite`, `node scripts/claims.mjs --list` and a fresh clean
+`npm run build` (`.next`/`out` removed first) all clean; `npm run verify`
+and the full test suite green.
+
+**Part 3 is complete.** All 93 routes across five groups built: series-700s
+(4), series-300s (16), series-100s+series-900s (19), series-0-99 (33),
+series-500s (21). Combined with Part 3c's 92 and the pre-existing 60
+(brown+red), the site now has bus route pages for 245 of 1,051 normalized
+TDX records. Commit pending.

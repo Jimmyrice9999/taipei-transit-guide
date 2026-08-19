@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 2538,
-    "tbc": 971,
+    "sourced": 2662,
+    "tbc": 1008,
     "asserted": 32,
     "meta": 42
   },
@@ -2139,6 +2139,182 @@
     {
       "file": "content/bus/routes/series-300s/_index.md",
       "sources": 3,
+      "sourced": 2,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/505.md",
+      "sources": 5,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/508-1oe2eum.md",
+      "sources": 4,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/508-e65ybn.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/513.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/521.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/529.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/530.md",
+      "sources": 4,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/531.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/536-vpz3ur.md",
+      "sources": 5,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/536-zctmkx.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/539-1xoo9s.md",
+      "sources": 6,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/539-sz522b.md",
+      "sources": 4,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/542-1ca3gvb.md",
+      "sources": 6,
+      "sourced": 6,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/542-4ccub6.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/550.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/551.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/552.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/556.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/557.md",
+      "sources": 3,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/559.md",
+      "sources": 3,
+      "sourced": 6,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/568.md",
+      "sources": 3,
+      "sourced": 5,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/routes/series-500s/_index.md",
+      "sources": 2,
       "sourced": 2,
       "tbc": 0,
       "asserted": 0,
