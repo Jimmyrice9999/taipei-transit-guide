@@ -39,22 +39,67 @@ type TdxLine = {
   LineName: { En: string; Zh_tw: string }
 }
 
-/** Every line record we hold, keyed by line code, with its operator. */
-const SOURCE_LINES = new Map<string, { record: TdxLine; operator: string }>()
+export type { TdxLine }
 
-for (const [operator, records] of [
-  ['TRTC', trtcLines],
-  ['NTMC', ntmcLines],
-  ['TYMC', tymcLines],
-  ['NTDLRT', ntdlrtLines],
-  ['NTALRT', ntalrtLines],
-] as const) {
-  for (const record of records as unknown as TdxLine[]) {
-    if (record?.LineID && record?.LineColor) {
-      SOURCE_LINES.set(record.LineID.toUpperCase(), { record, operator })
+/** A line identity is namespaced by the operator/system that publishes it. */
+export function lineKey(operator: string, code: string): string {
+  return `${operator.trim().toUpperCase()}:${code.trim().toUpperCase()}`
+}
+
+export type LineSourceGroup = {
+  operator: string
+  records: readonly TdxLine[]
+}
+
+/**
+ * Build the source registry without letting a later system overwrite an
+ * earlier record with the same bare code.
+ */
+export function buildLineRegistry(
+  groups: readonly LineSourceGroup[],
+): Map<string, { record: TdxLine; operator: string }> {
+  const registry = new Map<string, { record: TdxLine; operator: string }>()
+  for (const { operator, records } of groups) {
+    for (const record of records) {
+      if (!record?.LineID || !record?.LineColor) continue
+      const key = lineKey(operator, record.LineID)
+      if (registry.has(key)) {
+        throw new Error(`Duplicate namespaced line identity: ${key}`)
+      }
+      registry.set(key, { record, operator: operator.trim().toUpperCase() })
     }
   }
+  return registry
 }
+
+export type BareLineIndexEntry = { code: string }
+
+/** Keep every candidate for a bare code so a future collision is visible. */
+export function buildBareLineIndex<T extends BareLineIndexEntry>(lines: readonly T[]): Map<string, T[]> {
+  const index = new Map<string, T[]>()
+  for (const line of lines) {
+    const code = line.code.trim().toUpperCase()
+    const candidates = index.get(code) ?? []
+    candidates.push(line)
+    index.set(code, candidates)
+  }
+  return index
+}
+
+/** A bare code is usable only while it identifies exactly one line. */
+export function resolveBareLine<T>(index: ReadonlyMap<string, readonly T[]>, code: string): T | undefined {
+  const candidates = index.get(code.trim().toUpperCase())
+  return candidates?.length === 1 ? candidates[0] : undefined
+}
+
+/** Every line record we hold, keyed by operator plus line code. */
+const SOURCE_LINES = buildLineRegistry([
+  { operator: 'TRTC', records: trtcLines as unknown as TdxLine[] },
+  { operator: 'NTMC', records: ntmcLines as unknown as TdxLine[] },
+  { operator: 'TYMC', records: tymcLines as unknown as TdxLine[] },
+  { operator: 'NTDLRT', records: ntdlrtLines as unknown as TdxLine[] },
+  { operator: 'NTALRT', records: ntalrtLines as unknown as TdxLine[] },
+])
 
 /**
  * Which lines the site displays, in network order.
@@ -64,7 +109,18 @@ for (const [operator, records] of [
  * neither a TDX record nor an entry in OFF_PLATFORM below throws at build —
  * better than rendering a colourless badge.
  */
-const DISPLAY_ORDER = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'LB', 'A', 'V', 'K'] as const
+const DISPLAY_ORDER = [
+  ['TRTC', 'BR'],
+  ['TRTC', 'R'],
+  ['TRTC', 'G'],
+  ['TRTC', 'O'],
+  ['TRTC', 'BL'],
+  ['NTMC', 'Y'],
+  ['NTMC', 'LB'],
+  ['TYMC', 'A'],
+  ['NTDLRT', 'V'],
+  ['NTALRT', 'K'],
+] as const
 
 /** Where a line's official colour was read. Printed, not just recorded. */
 export type ColourSource = {
@@ -124,7 +180,7 @@ const OFF_PLATFORM: Record<
   string,
   { nameEn: string; nameZh: string; colour: string; operator: string; colourSource: ColourSource }
 > = {
-  LB: {
+  [lineKey('NTMC', 'LB')]: {
     nameEn: 'Sanying',
     nameZh: '三鶯線',
     colour: '#48B6D2',
@@ -158,6 +214,8 @@ const OFF_PLATFORM: Record<
 const LIGHT_RAIL = new Set(['V', 'K'])
 
 export type Line = {
+  /** Stable operator/system namespace plus the bare line code. */
+  key: string
   code: string
   name: string
   /** Traditional Chinese line name, from source. */
@@ -193,9 +251,10 @@ export type Line = {
 /** TDX names lines "Wenhu Line"; the UI appends "Line" itself. */
 const trimLine = (name: string) => name.replace(/\s+Line$/i, '').trim()
 
-function derive(code: string): Line {
-  const source = SOURCE_LINES.get(code)
-  const offPlatform = OFF_PLATFORM[code]
+function derive(sourceOperator: string, code: string): Line {
+  const key = lineKey(sourceOperator, code)
+  const source = SOURCE_LINES.get(key)
+  const offPlatform = OFF_PLATFORM[key]
 
   if (!source && !offPlatform) {
     throw new Error(
@@ -217,6 +276,7 @@ function derive(code: string): Line {
   const badgeBg = direct ? map : darkenUntil(map, (c) => contrast(WHITE, c) >= AA_DERIVE)
 
   return {
+    key,
     code,
     name: trimLine(nameEn),
     nameZh: trimLine(nameZh),
@@ -265,12 +325,14 @@ export function branchTint(line: Line, amount = 0.45): string {
   return `#${[0, 1, 2].map((i) => mix(i).toString(16).padStart(2, '0')).join('').toUpperCase()}`
 }
 
-export const LINES: Line[] = DISPLAY_ORDER.map(derive)
+export const LINES: Line[] = DISPLAY_ORDER.map(([operator, code]) => derive(operator, code))
 
-const BY_CODE = new Map(LINES.map((l) => [l.code, l]))
+const BY_KEY = new Map(LINES.map((l) => [l.key, l]))
+const BY_CODE = buildBareLineIndex(LINES)
 
 /** Neutral accent for pages with no line set (bus operators, site pages). */
 export const NEUTRAL_LINE: Line = {
+  key: 'SITE:',
   code: '',
   name: 'No line',
   nameZh: '',
@@ -299,14 +361,18 @@ export const TDX_LINES = LINES.filter((l) => l.onTdx)
  */
 export const LIGHT_RAIL_LINES = LINES.filter((l) => l.lightRail)
 
-export function getLine(code: string | undefined | null): Line | undefined {
+export function getLine(code: string | undefined | null, operator?: string | null): Line | undefined {
   if (!code) return undefined
-  return BY_CODE.get(code.toUpperCase())
+  // Preserve the lookup contract: a caller must pass the code token itself,
+  // not a string that only becomes valid after whitespace is silently removed.
+  if (code !== code.trim()) return undefined
+  if (operator) return BY_KEY.get(lineKey(operator, code))
+  return resolveBareLine(BY_CODE, code)
 }
 
 /** The accent a page uses. Falls back to the site neutral. */
-export function getAccent(code: string | undefined | null): Line {
-  return getLine(code) ?? NEUTRAL_LINE
+export function getAccent(code: string | undefined | null, operator?: string | null): Line {
+  return getLine(code, operator) ?? NEUTRAL_LINE
 }
 
 /** Line codes longest-first, so "BL" matches before "B" when scanning text. */

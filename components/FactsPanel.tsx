@@ -45,7 +45,7 @@ export default function FactsPanel({
 }) {
   if (facts.length === 0) return null
 
-  const lineHref = getLinePageHref(line.code)
+  const lineHref = getLinePageHref(line.code, line.operator)
   const isOwnLine = Boolean(lineHref && href && lineHref === href)
 
   return (
@@ -58,7 +58,7 @@ export default function FactsPanel({
         page already has.
       */}
       <header className="platform-head">
-        {line.code && <LineBadge code={line.code} linked={!isOwnLine} />}
+        {line.code && <LineBadge code={line.code} operator={line.operator} linked={!isOwnLine} />}
         <span className="platform-title">
           {line.code ? (
             lineHref && !isOwnLine ? (

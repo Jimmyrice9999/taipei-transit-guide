@@ -54,9 +54,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const station = getStation(code)
   if (!station) return {}
 
-  const stations = getLineStations(station.line)
+  const stations = getLineStations(station.line, station.operator)
   const position = stations.findIndex((s) => s.code === station.code) + 1
-  const line = getAccent(station.line)
+  const line = getAccent(station.line, station.operator)
   const operator = getOperator(station.operator)
 
   /*
@@ -120,11 +120,11 @@ export default async function StationPage({ params }: Props) {
   const station = getStation(code)
   if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) notFound()
 
-  const line = getAccent(station.line)
+  const line = getAccent(station.line, station.operator)
   const heroImage = getImage(`stations/${station.code.toLowerCase()}`)
-  const stations = getLineStations(station.line)
+  const stations = getLineStations(station.line, station.operator)
 
-  const linePageHref = getLinePageHref(station.line)
+  const linePageHref = getLinePageHref(station.line, station.operator)
   const operator = getOperator(station.operator)
   /*
    * Depot pages carry `line:` and `spine:` frontmatter — the line they serve
@@ -143,8 +143,8 @@ export default async function StationPage({ params }: Props) {
   const toNext = next ? getRunTime(station.code, next.code) : null
 
   const service = getFirstLast(station.code)
-  const geometry = getLineGeometry(station.line)
-  const track = getLineTrack(station.line)
+  const geometry = getLineGeometry(station.line, station.operator)
+  const track = getLineTrack(station.line, station.operator)
   const stationSources = station.research?.sources ?? station.sources
   const stationReferences = numberSources(
     stationSources,
@@ -311,7 +311,7 @@ export default async function StationPage({ params }: Props) {
             and it was the one thing named here that went nowhere.
           */}
           <header className="platform-head">
-            <LineBadge code={line.code} />
+            <LineBadge code={line.code} operator={line.operator} />
             <span className="platform-title">
               {linePageHref ? (
                 <Link href={linePageHref}>{line.name} Line</Link>

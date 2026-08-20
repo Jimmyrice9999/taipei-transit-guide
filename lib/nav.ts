@@ -1,6 +1,6 @@
 import { getFolder, getPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { STATIONS } from '@/lib/stations'
-import { LINES } from '@/lib/lines'
+import { lineKey, LINES } from '@/lib/lines'
 import { getBuiltBusRouteGroups } from '@/lib/bus/route-groups'
 
 /**
@@ -73,7 +73,7 @@ export function getNavTree(): NavSection[] {
    * The key is the page's own `line:` frontmatter, which is the same field
    * that sets its accent colour — not a guess from the slug.
    */
-  const lineRank = new Map(LINES.map((line, i) => [line.code, i]))
+  const lineRank = new Map(LINES.map((line, i) => [line.key, i]))
 
   const sections: NavSection[] = getSections().map((section) => {
     /*
@@ -134,13 +134,21 @@ export function getNavTree(): NavSection[] {
       const pages = getPages(section.slug, type.slug, system)
       const ordered =
         type.slug === 'lines'
-          ? [...pages].sort((a, b) => (lineRank.get(a.line) ?? 99) - (lineRank.get(b.line) ?? 99))
+          ? [...pages].sort((a, b) => {
+              const keyFor = (page: (typeof pages)[number]) =>
+                page.operator
+                  ? lineKey(page.operator, page.line)
+                  : LINES.find((line) => line.code === page.line)?.key ?? ''
+              return (lineRank.get(keyFor(a)) ?? 99) - (lineRank.get(keyFor(b)) ?? 99)
+            })
           : pages
       return {
         href: type.href,
         title: system ? label(systemTitle, type.title) : type.title,
         links: ordered.slice(0, CAP).map((page) => {
-          const line = LINES.find((l) => l.code === page.line)
+          const line =
+            LINES.find((l) => l.key === lineKey(page.operator || '', page.line)) ??
+            LINES.find((l) => l.code === page.line && !page.operator)
           return {
             href: page.href,
             title: page.title,

@@ -54,7 +54,9 @@ const STATIONS_HAN = `${hanFontFace('TTG Han Stations', (w) => `noto-sans-tc-sta
 export default function StationDataPage() {
   const byLine = LINES.map((line) => ({
     line,
-    stations: STATIONS.filter((s) => s.line === line.code).sort((a, b) => a.sequence - b.sequence),
+    stations: STATIONS.filter(
+      (s) => s.line === line.code && s.operator === line.operator,
+    ).sort((a, b) => a.sequence - b.sequence),
   })).filter((group) => group.stations.length > 0)
   const tdxStationCount = STATIONS.filter((station) => station.recordSource === 'tdx').length
   const researchedStationCount = STATIONS.length - tdxStationCount
@@ -125,7 +127,7 @@ export default function StationDataPage() {
               the editorial container participate in the grid, so the class on a
               nested element would silently do nothing. */}
           {byLine.map(({ line, stations }) => (
-            <section key={line.code} className="wide">
+            <section key={line.key} className="wide">
               <h2 className="section-heading">
                 <span
                   className="network-swatch"

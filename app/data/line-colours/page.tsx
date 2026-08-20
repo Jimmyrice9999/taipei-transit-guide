@@ -135,7 +135,7 @@ export default function LineColoursPage() {
                   const onWhite = contrast(line.map, WHITE)
                   const onBlack = contrast(line.map, NEAR_BLACK)
                   return (
-                    <tr key={line.code}>
+                    <tr key={line.key}>
                       <th scope="row">
                         <span className="colour-line">
                           <LineBadge code={line.code} />
@@ -219,7 +219,7 @@ export default function LineColoursPage() {
                   const old = SUPERSEDED[line.code]
                   if (!old) return null
                   return (
-                    <tr key={line.code}>
+                    <tr key={line.key}>
                       <th scope="row">{line.code}</th>
                       <td>
                         <span className="colour-chip" style={{ background: line.map }} />

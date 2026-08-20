@@ -46,7 +46,7 @@ import {
 } from './markdown-plugins.ts'
 import { numberSources, validateSource, type NumberedSource, type Source } from './sources.ts'
 import { getImageSize } from './image-size.ts'
-import { LINES, getLine } from './lines.ts'
+import { lineKey, LINES, getLine } from './lines.ts'
 import { STATIONS, getStation, getStationHref } from './stations.ts'
 import { rehypeAutoLink, type LinkEntity } from './markdown-plugins.ts'
 
@@ -171,6 +171,8 @@ export type PageMeta = {
    * Empty means the page falls back to the site neutral.
    */
   line: string
+  /** Optional operator namespace for systems that reuse a bare line code. */
+  operator: string
   /**
    * Which stretch of the line this page is about, for the spine.
    * A range (`BR01-BR12`), points (`BR01, BR19`), or empty for the whole line.
@@ -660,7 +662,7 @@ function warnOnce(key: string, message: string) {
  * ─────────────────────────────────────────────────────────────────────────────
  */
 function validateFrontmatter(relative: string, meta: PageMeta) {
-  if (meta.line && !getLine(meta.line)) {
+  if (meta.line && !getLine(meta.line, meta.operator || undefined)) {
     warnOnce(
       `${relative}::line`,
       `  ⚠ unknown line code "${meta.line}" in ${relative}\n` +
@@ -766,6 +768,7 @@ function readPageMetaAt(
     updated: toText(data.updated),
     facts: toFacts(data.facts),
     line: toText(data.line).toUpperCase(),
+    operator: toText(data.operator).toUpperCase(),
     spine: toText(data.spine),
     specs: toSpecs(data.specs),
     formation: toText(data.formation),
@@ -851,15 +854,30 @@ export function getLinkEntities(): LinkEntity[] {
  * the code was the one thing on the row that was not a link to the line.
  */
 let linePageHrefs: Map<string, string> | null = null
-export function getLinePageHref(code: string | undefined | null): string | null {
+let bareLinePageHrefs: Map<string, string[]> | null = null
+export function getLinePageHref(
+  code: string | undefined | null,
+  operator?: string | undefined,
+): string | null {
   if (!code) return null
-  if (!linePageHrefs) {
+  if (!linePageHrefs || !bareLinePageHrefs) {
     linePageHrefs = new Map()
+    bareLinePageHrefs = new Map()
     for (const page of getPages('rail', 'lines', 'metro')) {
-      if (page.line) linePageHrefs.set(page.line.toUpperCase(), page.href)
+      if (!page.line) continue
+      const resolved = getLine(page.line, page.operator || undefined)
+      const namespace = page.operator || resolved?.operator
+      if (namespace) linePageHrefs.set(lineKey(namespace, page.line), page.href)
+      const candidates = bareLinePageHrefs.get(page.line.toUpperCase()) ?? []
+      candidates.push(page.href)
+      bareLinePageHrefs.set(page.line.toUpperCase(), candidates)
     }
   }
-  return linePageHrefs.get(code.toUpperCase()) ?? null
+  const hrefs = linePageHrefs!
+  const bareHrefs = bareLinePageHrefs!
+  if (operator) return hrefs.get(lineKey(operator, code)) ?? null
+  const candidates = bareHrefs.get(code.toUpperCase()) ?? []
+  return candidates.length === 1 ? candidates[0] : null
 }
 
 /** One page from an arbitrary overlay file, with its Markdown body converted to HTML. */

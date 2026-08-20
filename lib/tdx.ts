@@ -20,8 +20,9 @@
  * import lines and one row to `OPERATOR_DATA` — and every consumer picks it up,
  * because there is no second list to forget.
  *
- * Line codes are unique across operators, so a flat merge is safe; nothing
- * downstream needs to know which company a record came from.
+ * Line codes are only unique within an operator. Every merged record therefore
+ * retains the operator namespace, so a future system can reuse a bare code
+ * without overwriting a current record.
  */
 
 import trtcShapes from '../data/tdx/TRTC/shape.json' with { type: 'json' }
@@ -55,20 +56,41 @@ import ntalrtStationOfRoute from '../data/tdx/NTALRT/station-of-route.json' with
  * It is restricted to the four heavy-metro systems. Recorded here so nobody
  * adds the import and finds the file missing.
  */
+type OperatorRecords = { operator: string; records: readonly unknown[] }
+
 const OPERATOR_DATA = {
-  shapes: [trtcShapes, ntmcShapes, tymcShapes, ntdlrtShapes, ntalrtShapes],
-  routes: [trtcRoutes, ntmcRoutes, tymcRoutes, ntdlrtRoutes, ntalrtRoutes],
-  transfers: [trtcTransfers, ntmcTransfers, tymcTransfers],
+  shapes: [
+    { operator: 'TRTC', records: trtcShapes },
+    { operator: 'NTMC', records: ntmcShapes },
+    { operator: 'TYMC', records: tymcShapes },
+    { operator: 'NTDLRT', records: ntdlrtShapes },
+    { operator: 'NTALRT', records: ntalrtShapes },
+  ],
+  routes: [
+    { operator: 'TRTC', records: trtcRoutes },
+    { operator: 'NTMC', records: ntmcRoutes },
+    { operator: 'TYMC', records: tymcRoutes },
+    { operator: 'NTDLRT', records: ntdlrtRoutes },
+    { operator: 'NTALRT', records: ntalrtRoutes },
+  ],
+  transfers: [
+    { operator: 'TRTC', records: trtcTransfers },
+    { operator: 'NTMC', records: ntmcTransfers },
+    { operator: 'TYMC', records: tymcTransfers },
+  ],
   stationOfRoute: [
-    trtcStationOfRoute,
-    ntmcStationOfRoute,
-    tymcStationOfRoute,
-    ntdlrtStationOfRoute,
-    ntalrtStationOfRoute,
+    { operator: 'TRTC', records: trtcStationOfRoute },
+    { operator: 'NTMC', records: ntmcStationOfRoute },
+    { operator: 'TYMC', records: tymcStationOfRoute },
+    { operator: 'NTDLRT', records: ntdlrtStationOfRoute },
+    { operator: 'NTALRT', records: ntalrtStationOfRoute },
   ],
 } as const
 
-const merge = <T>(sets: readonly unknown[]): T[] => sets.flatMap((s) => s as T[])
+const merge = <T>(sets: readonly OperatorRecords[]): T[] =>
+  sets.flatMap(({ operator, records }) =>
+    records.map((record) => ({ ...(record as object), operator }) as T),
+  )
 
 export const TDX_SHAPES = <T>() => merge<T>(OPERATOR_DATA.shapes)
 export const TDX_ROUTES = <T>() => merge<T>(OPERATOR_DATA.routes)

@@ -39,7 +39,7 @@ for (const geometry of getAllLineGeometry()) {
 console.log('\n=== how far each station sits from its line ===\n')
 
 for (const line of LINES) {
-  const geometry = getLineGeometry(line.code)
+  const geometry = getLineGeometry(line.code, line.operator)
   if (!geometry) continue
 
   const stations = STATIONS.filter((s) => s.line === line.code && s.lat !== null)

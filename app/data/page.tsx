@@ -60,7 +60,7 @@ export default function DataPage() {
               <span className="data-card-swatches" aria-hidden="true">
                 {LINES.map((line) => (
                   <span
-                    key={line.code}
+                    key={line.key}
                     className="badge badge-mini"
                     style={
                       {

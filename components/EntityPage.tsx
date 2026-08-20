@@ -62,7 +62,7 @@ export async function entityMetadata({
   slug,
 }: EntityRef): Promise<Metadata> {
   const page = await getPage(section, type, slug, system)
-  const accent = getAccent(page.line)
+  const accent = getAccent(page.line, page.operator)
 
   /*
    * Descriptions are built from what the page actually contains, not from a
@@ -134,7 +134,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   if (!page) notFound()
   const typeMeta = getType(section, type, system)
   const systemMeta = system ? getSystem(section, system) : null
-  const accent = getAccent(page.line)
+  const accent = getAccent(page.line, page.operator)
 
   /*
    * The hero photograph leads the page — before the title, the way a reader
@@ -239,7 +239,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
     )
   }
 
-  const stations = getLineStations(page.line)
+  const stations = getLineStations(page.line, page.operator)
   const hasSpine = stations.length > 0
   const variant = type === 'lines' ? 'map' : 'rail'
 
@@ -265,7 +265,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const declaresSpine = page.spine.trim().length > 0
   const marked =
     hasSpine && (declaresSpine || type !== 'depots')
-      ? resolveSpine(page.spine, page.line)
+      ? resolveSpine(page.spine, page.line, page.operator)
       : new Set<string>()
 
   /*
@@ -314,9 +314,9 @@ export default async function EntityPage({ section, system = '', type, slug }: E
    * would be the same picture with nothing about that page marked on it — the
    * marker rail already says which stretch of line is relevant.
    */
-  const geometry = type === 'lines' ? getLineGeometry(page.line) : null
+  const geometry = type === 'lines' ? getLineGeometry(page.line, page.operator) : null
   const track = geometry
-    ? getLineTrack(accent.code)
+    ? getLineTrack(accent.code, accent.operator)
     : { trunk: [], branch: [], branchStations: [] }
   const measurement =
     geometry && stations.length > 0

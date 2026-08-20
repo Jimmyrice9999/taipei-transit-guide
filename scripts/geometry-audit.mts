@@ -26,16 +26,15 @@ import {
 } from '../lib/geometry.ts'
 import { STATIONS } from '../lib/stations.ts'
 import { LINES } from '../lib/lines.ts'
-import trtcShapes from '../data/tdx/TRTC/shape.json' with { type: 'json' }
-import ntmcShapes from '../data/tdx/NTMC/shape.json' with { type: 'json' }
-import tymcShapes from '../data/tdx/TYMC/shape.json' with { type: 'json' }
+import { TDX_SHAPES } from '../lib/tdx.ts'
 
-type ShapeRecord = { LineID: string; Geometry: string }
-const shapes: ShapeRecord[] = [
-  ...(trtcShapes as unknown as ShapeRecord[]),
-  ...(ntmcShapes as unknown as ShapeRecord[]),
-  ...(tymcShapes as unknown as ShapeRecord[]),
-]
+type ShapeRecord = { operator: string; LineID: string; Geometry: string }
+// Keep this diagnostic's original scope: the heavy-metro alignment audit has
+// a 300 m gap heuristic, while the separate light-rail reports document their
+// known discontinuities rather than treating them as failures here.
+const shapes = TDX_SHAPES<ShapeRecord>().filter((shape) =>
+  ['TRTC', 'NTMC', 'TYMC'].includes(shape.operator),
+)
 
 /** Same WKT reader lib/geometry.ts uses; duplicated because it is not exported. */
 function parseWkt(wkt: string): Point[][] {
@@ -58,10 +57,10 @@ function parseWkt(wkt: string): Point[][] {
 const pad = (s: string | number, n: number) => String(s).padEnd(n)
 
 /** The station whose coordinates sit nearest a given point. */
-function nearestStation(point: Point, lineCode: string) {
+function nearestStation(point: Point, lineCode: string, operator: string) {
   let best: { code: string; name: string; d: number } | null = null
   for (const s of STATIONS) {
-    if (s.line !== lineCode || s.lat === null || s.lon === null) continue
+    if (s.line !== lineCode || s.operator !== operator || s.lat === null || s.lon === null) continue
     const d = metres(point, [s.lon, s.lat])
     if (!best || d < best.d) best = { code: s.code, name: s.name, d }
   }
@@ -73,7 +72,7 @@ let problems = 0
 console.log('\n════ 1. Segment chaining, per line ════\n')
 
 for (const line of LINES) {
-  const record = shapes.find((s) => s.LineID === line.code)
+  const record = shapes.find((s) => s.LineID === line.code && s.operator === line.operator)
   if (!record?.Geometry) {
     console.log(`${line.code}: no published geometry`)
     continue
@@ -89,8 +88,8 @@ for (const line of LINES) {
   for (const [i, run] of runs.entries()) {
     let km = 0
     for (let j = 1; j < run.length; j++) km += metres(run[j - 1], run[j])
-    const head = nearestStation(run[0], line.code)
-    const tail = nearestStation(run[run.length - 1], line.code)
+    const head = nearestStation(run[0], line.code, line.operator)
+    const tail = nearestStation(run[run.length - 1], line.code, line.operator)
     console.log(
       `        run ${i}: ${String(run.length).padStart(4)} pts, ${(km / 1000).toFixed(2).padStart(6)} km   ` +
         `${head?.code ?? '??'}…${tail?.code ?? '??'}  ` +
@@ -132,11 +131,17 @@ const OFFSET_LIMIT_M = 200
 const flagged: string[] = []
 
 for (const line of LINES) {
-  const record = shapes.find((s) => s.LineID === line.code)
+  const record = shapes.find((s) => s.LineID === line.code && s.operator === line.operator)
   if (!record?.Geometry) continue
   const raw = chainSegments(parseWkt(record.Geometry))
 
-  const stations = STATIONS.filter((s) => s.line === line.code && s.lat !== null && s.lon !== null)
+  const stations = STATIONS.filter(
+    (s) =>
+      s.line === line.code &&
+      s.operator === line.operator &&
+      s.lat !== null &&
+      s.lon !== null,
+  )
   if (stations.length === 0) continue
 
   const rows = stations
@@ -176,12 +181,18 @@ console.log('\n════ 3. What simplification costs ════\n')
 console.log('Largest extra station offset introduced by simplifying at 12 m.\n')
 
 for (const line of LINES) {
-  const record = shapes.find((s) => s.LineID === line.code)
+  const record = shapes.find((s) => s.LineID === line.code && s.operator === line.operator)
   if (!record?.Geometry) continue
   const raw = chainSegments(parseWkt(record.Geometry))
   const simplified = raw.map((p) => simplify(p, 12))
 
-  const stations = STATIONS.filter((s) => s.line === line.code && s.lat !== null && s.lon !== null)
+  const stations = STATIONS.filter(
+    (s) =>
+      s.line === line.code &&
+      s.operator === line.operator &&
+      s.lat !== null &&
+      s.lon !== null,
+  )
   let worst = 0
   for (const s of stations) {
     const a = distanceToPaths([s.lon!, s.lat!], raw)

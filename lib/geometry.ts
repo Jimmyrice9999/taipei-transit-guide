@@ -24,9 +24,9 @@ import { STATIONS } from './stations.ts'
 
 export type Point = [lon: number, lat: number]
 
-type ShapeRecord = { LineID: string; Geometry: string }
+type ShapeRecord = { operator: string; LineID: string; Geometry: string }
 
-/** Every operator's geometry, merged. Line codes are unique across operators. */
+/** Every operator's geometry, merged with its namespace retained. */
 const shapes: ShapeRecord[] = [
   ...TDX_SHAPES<ShapeRecord>(),
 ]
@@ -215,6 +215,7 @@ export function distanceToPaths(point: Point, paths: Point[][]): number {
 /* ------------------------------------------------------------------ */
 
 export type LineGeometry = {
+  operator: string
   lineId: string
   /** One entry per continuous run. More than one means a genuine gap. */
   paths: Point[][]
@@ -259,9 +260,25 @@ export type LineGeometry = {
 const DRAW_TOLERANCE_M = 12
 const TOLERANCE_STEPS = [12, 6, 3, 1]
 
-/** Geometry for one line, chained and simplified. Null when not published. */
-export function getLineGeometry(lineId: string, toleranceM?: number): LineGeometry | null {
-  const record = shapes.find((s) => s.LineID === lineId)
+/**
+ * Geometry for one line, chained and simplified. A bare code is accepted only
+ * while it identifies one operator; callers with a system context should pass
+ * it explicitly so a future same-coded line cannot select the wrong shape.
+ */
+export function getLineGeometry(
+  lineId: string,
+  operatorOrTolerance?: string | number,
+  maybeToleranceM?: number,
+): LineGeometry | null {
+  const operator = typeof operatorOrTolerance === 'string' ? operatorOrTolerance.trim().toUpperCase() : undefined
+  const toleranceM = typeof operatorOrTolerance === 'number' ? operatorOrTolerance : maybeToleranceM
+  const candidates = shapes.filter((s) => s.LineID.toUpperCase() === lineId.toUpperCase())
+  const matching = operator
+    ? candidates.filter((s) => s.operator.toUpperCase() === operator)
+    : [...new Set(candidates.map((s) => s.operator.toUpperCase()))].length === 1
+      ? candidates
+      : []
+  const record = matching[0]
   if (!record?.Geometry) return null
 
   const segments = parseWkt(record.Geometry)
@@ -274,7 +291,13 @@ export function getLineGeometry(lineId: string, toleranceM?: number): LineGeomet
    * An explicit tolerance is honoured as given — the geometry audit passes one
    * deliberately to report what simplification costs at a chosen value.
    */
-  const stations = STATIONS.filter((s) => s.line === lineId && s.lat !== null && s.lon !== null)
+  const stations = STATIONS.filter(
+    (s) =>
+      s.line === lineId &&
+      (!operator || s.operator.toUpperCase() === operator) &&
+      s.lat !== null &&
+      s.lon !== null,
+  )
   const worstShift = (paths: Point[][]) =>
     stations.reduce((worst, station) => {
       const point: Point = [station.lon!, station.lat!]
@@ -299,6 +322,7 @@ export function getLineGeometry(lineId: string, toleranceM?: number): LineGeomet
   }
 
   return {
+    operator: record.operator,
     lineId,
     paths,
     chained,
@@ -311,7 +335,7 @@ export function getLineGeometry(lineId: string, toleranceM?: number): LineGeomet
 /** Every line with published geometry. */
 export function getAllLineGeometry(toleranceM = 12): LineGeometry[] {
   return shapes
-    .map((s) => getLineGeometry(s.LineID, toleranceM))
+    .map((s) => getLineGeometry(s.LineID, s.operator, toleranceM))
     .filter((g): g is LineGeometry => g !== null)
 }
 

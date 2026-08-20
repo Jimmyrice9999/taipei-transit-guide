@@ -22,11 +22,14 @@ import { getLinePageHref } from '@/lib/content'
  */
 export default function LineBadge({
   code,
+  operator,
   linked = true,
   title,
   className = '',
 }: {
   code: string
+  /** Optional operator namespace when a bare code is shared by systems. */
+  operator?: string
   /** Pass false when the badge sits inside another link — `<a>` in `<a>` is invalid. */
   linked?: boolean
   /** Overrides the tooltip. Defaults to the line's own name. */
@@ -34,7 +37,7 @@ export default function LineBadge({
   /** Extra classes, e.g. `badge-mini` for the interchange pills. */
   className?: string
 }) {
-  const line = getLine(code)
+  const line = getLine(code, operator)
   if (!line) return <span className={`badge-absent ${className}`.trim()}>{code}</span>
 
   const style = {
@@ -43,7 +46,7 @@ export default function LineBadge({
   } as React.CSSProperties
 
   const label = title ?? `${line.name} Line`
-  const href = linked ? getLinePageHref(code) : null
+  const href = linked ? getLinePageHref(code, line.operator) : null
 
   if (!href) {
     return (

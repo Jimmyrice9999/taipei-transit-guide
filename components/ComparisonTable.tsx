@@ -43,7 +43,7 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
                 <span className="sr-only">Specification</span>
               </th>
               {withSpecs.map((page) => {
-                const line: Line = getAccent(page.line)
+                const line: Line = getAccent(page.line, page.operator)
                 return (
                   <th scope="col" key={page.slug}>
                     <Link href={page.href}>{page.title}</Link>

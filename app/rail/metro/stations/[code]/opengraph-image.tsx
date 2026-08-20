@@ -25,8 +25,8 @@ export default async function Image({ params }: { params: Promise<{ code: string
   const station = getStation(code)
   if (!station) return new ImageResponse(<div />, size)
 
-  const line = getAccent(station.line)
-  const stations = getLineStations(station.line)
+  const line = getAccent(station.line, station.operator)
+  const stations = getLineStations(station.line, station.operator)
   const position = stations.findIndex((s) => s.code === station.code) + 1
 
   const detail = [

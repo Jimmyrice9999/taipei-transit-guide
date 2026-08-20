@@ -19,7 +19,7 @@ import LineIcon from '@/components/LineIcon'
 import JsonLd from '@/components/JsonLd'
 import { getImage } from '@/lib/images'
 import { breadcrumbSchema } from '@/lib/structured-data'
-import { NEUTRAL_LINE, getLine } from '@/lib/lines'
+import { lineKey, NEUTRAL_LINE, getLine } from '@/lib/lines'
 import { STATIONS, getStationHref } from '@/lib/stations'
 
 export const metadata: Metadata = {
@@ -34,9 +34,10 @@ export default function StationsIndexPage() {
   const byLine = new Map<string, typeof STATIONS>()
   for (const station of STATIONS) {
     if (!getStationHref(station.code)) continue
-    const group = byLine.get(station.line) ?? []
+    const key = lineKey(station.operator, station.line)
+    const group = byLine.get(key) ?? []
     group.push(station)
-    byLine.set(station.line, group)
+    byLine.set(key, group)
   }
   const firstLineCode = [...byLine.keys()][0]
 
@@ -78,10 +79,11 @@ export default function StationsIndexPage() {
         stock and depot indexes get by not being wrapped in .page-body at
         all.
       */}
-      {[...byLine.entries()].map(([code, stations]) => {
-        const line = getLine(code)
+      {[...byLine.entries()].map(([key, stations]) => {
+        const line = getLine(stations[0]?.line, stations[0]?.operator)
+        const code = stations[0]?.line ?? key
         return (
-          <details key={code} className="index-disclosure" open={code === firstLineCode}>
+          <details key={key} className="index-disclosure" open={key === firstLineCode}>
             <summary>
               <span className="section-heading station-index-head" role="heading" aria-level={2}>
                 {line && <LineIcon code={line.code} size={28} />}
@@ -99,9 +101,9 @@ export default function StationsIndexPage() {
               stations by line and said which line only in words; the icon
               and the badge now say it the way the network says it.
             */}
-            {line && getLinePageHref(code) && (
+            {line && getLinePageHref(code, line.operator) && (
               <p className="disclosure-index-link">
-                <Link href={getLinePageHref(code)!}>Open the {line.name} Line page →</Link>
+                <Link href={getLinePageHref(code, line.operator)!}>Open the {line.name} Line page →</Link>
               </p>
             )}
             <ul className="photo-card-grid">
@@ -132,7 +134,7 @@ export default function StationsIndexPage() {
                   }
                   meta={
                     <>
-                      <LineBadge code={station.line} />
+                      <LineBadge code={station.line} operator={station.operator} />
                       {/*
                         ── Every line that serves the station ────────────────
                         Run 11. This index listed interchange stations with a

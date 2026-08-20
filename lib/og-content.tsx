@@ -14,7 +14,7 @@ import type { EntityRef } from '@/components/EntityPage'
 
 export async function entityShareImage({ section, system = '', type, slug }: EntityRef) {
   const page = await getPage(section, type, slug, system)
-  const accent = getAccent(page.line)
+  const accent = getAccent(page.line, page.operator)
   const typeMeta = getType(section, type, system)
 
   /*

@@ -39,8 +39,10 @@
  */
 
 import { TDX_STATION_OF_ROUTE } from './tdx.ts'
+import { lineKey } from './lines.ts'
 
 type StationOfRouteRow = {
+  operator: string
   LineID: string
   RouteID: string
   Direction: number
@@ -57,6 +59,9 @@ const rows: StationOfRouteRow[] = [
 ]
 
 export type Route = {
+  /** Stable operator namespace plus the bare line code. */
+  key: string
+  operator: string
   lineId: string
   routeId: string
   nameEn: string
@@ -81,6 +86,8 @@ const ROUTES: Route[] = rows
     const last = stations[stations.length - 1]
     const length = Number(last?.CumulativeDistance)
     return {
+      key: lineKey(row.operator, row.LineID),
+      operator: row.operator,
       lineId: row.LineID,
       routeId: row.RouteID,
       nameEn: row.RouteName?.En ?? '',
@@ -92,8 +99,18 @@ const ROUTES: Route[] = rows
     }
   })
 
-export function getRoutes(lineId: string): Route[] {
-  return ROUTES.filter((r) => r.lineId === lineId)
+export function getRoutes(lineId: string, operator?: string): Route[] {
+  const matches = ROUTES.filter((r) => r.lineId.toUpperCase() === lineId.toUpperCase())
+  if (operator) {
+    const namespace = operator.trim().toUpperCase()
+    return matches.filter((r) => r.operator.toUpperCase() === namespace)
+  }
+
+  // A bare code is only safe while it names one operator's line. Returning an
+  // arbitrary operator's routes here would recreate the overwrite bug this
+  // namespace exists to prevent.
+  const keys = new Set(matches.map((r) => r.key))
+  return keys.size === 1 ? matches : []
 }
 
 /**
@@ -102,8 +119,8 @@ export function getRoutes(lineId: string): Route[] {
  * Not "the first by RouteID" — that happens to be right today but only because
  * the trunk is numbered -1 on every line. Longest is what is actually meant.
  */
-export function getTrunkRoute(lineId: string): Route | null {
-  const routes = getRoutes(lineId)
+export function getTrunkRoute(lineId: string, operator?: string): Route | null {
+  const routes = getRoutes(lineId, operator)
   if (routes.length === 0) return null
   return routes.reduce((best, r) => (r.stations.length > best.stations.length ? r : best))
 }
@@ -115,11 +132,11 @@ export function getTrunkRoute(lineId: string): Route | null {
  * Songshan) is a peak short working over trunk track and is not a branch, while
  * G-3 (Qizhang to Xiaobitan) is. Counting routes alone would call both branches.
  */
-export function getBranchRoutes(lineId: string): Route[] {
-  const trunk = getTrunkRoute(lineId)
+export function getBranchRoutes(lineId: string, operator?: string): Route[] {
+  const trunk = getTrunkRoute(lineId, operator)
   if (!trunk) return []
   const onTrunk = new Set(trunk.stations)
-  return getRoutes(lineId).filter(
+  return getRoutes(lineId, operator).filter(
     (r) => r.routeId !== trunk.routeId && r.stations.some((s) => !onTrunk.has(s)),
   )
 }

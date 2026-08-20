@@ -98,7 +98,7 @@ export default function NetworkPage() {
        * main line. `getLineTrack` cuts the branch out of the alignment using
        * the route records; see lib/geometry.ts partitionBranch.
        */
-      const track = getLineTrack(summary.line.code)
+      const track = getLineTrack(summary.line.code, summary.line.operator)
       if (track.trunk.length === 0 && track.branch.length === 0) return null
       return {
         code: summary.line.code,
@@ -310,7 +310,7 @@ export default function NetworkPage() {
               </thead>
               <tbody>
                 {summaries.map(({ line, stations, from, to, travelTimeMin, officialKm, measuredKm, hasBranch, runs, published }) => (
-                  <tr key={line.code} data-off-platform={published ? '' : undefined}>
+                  <tr key={line.key} data-off-platform={published ? '' : undefined}>
                     <th scope="row">
                       <span className="network-line">
                         {/*
@@ -336,10 +336,10 @@ export default function NetworkPage() {
                           components/LineIcon.
                         */}
                         <LineIcon code={line.code} size={26} />
-                        <LineBadge code={line.code} />
+                        <LineBadge code={line.code} operator={line.operator} />
                         <span className="network-name">
                           {lineHref(line.code) ? (
-                            <Link href={lineHref(line.code)!}>{line.name}</Link>
+                          <Link href={lineHref(line.code, line.operator)!}>{line.name}</Link>
                           ) : (
                             line.name
                           )}
@@ -536,7 +536,7 @@ export default function NetworkPage() {
                   line record, not a station, not a metre of geometry — so its station
                   count, length and end-to-end time on this table are the operator's own,
                   from {s.published?.label}, and are cited on its{' '}
-                  <Link href={lineHref(s.line.code) ?? '/rail/'}>line page</Link>. The
+                  <Link href={lineHref(s.line.code, s.line.operator) ?? '/rail/'}>line page</Link>. The
                   length bar is drawn to the same scale as every other, because a published
                   route length is the same quantity whoever published it; what the dagger
                   marks is that this row was assembled from a different source than the{' '}

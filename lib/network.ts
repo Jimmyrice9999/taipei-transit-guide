@@ -13,11 +13,12 @@ import {
   type Partition,
   type Point,
 } from './geometry.ts'
-import { LINES, type Line } from './lines.ts'
+import { lineKey, LINES, type Line } from './lines.ts'
 import { getBranchRoutes, getTrunkRoute } from './routes.ts'
 import { STATIONS, getStation, type Station } from './stations.ts'
 
 type RouteRow = {
+  operator: string
   LineID: string
   RouteID: string
   Direction: number
@@ -69,7 +70,7 @@ export type PublishedFigures = {
 }
 
 const OPERATOR_PUBLISHED: Record<string, PublishedFigures> = {
-  LB: {
+  [lineKey('NTMC', 'LB')]: {
     stations: 12,
     routeKm: 14.29,
     endToEndMin: 30,
@@ -137,20 +138,26 @@ export function getLineSummaries(): LineSummary[] {
   const rows = routes
 
   return LINES.map((line) => {
-    const stations = STATIONS.filter((s) => s.line === line.code).sort(
+    const stations = STATIONS.filter(
+      (s) => s.line === line.code && s.operator === line.operator,
+    ).sort(
       (a, b) => a.sequence - b.sequence,
     )
 
-    const trunk = getTrunkRoute(line.code)
+    const trunk = getTrunkRoute(line.code, line.operator)
 
     // End-to-end time for the trunk route specifically. Matching on RouteID
     // rather than "first outbound record" keeps the time and the termini
     // describing the same service.
     const primary = rows.find(
-      (r) => r.LineID === line.code && Number(r.Direction) === 0 && r.RouteID === trunk?.routeId,
+      (r) =>
+        r.operator === line.operator &&
+        r.LineID === line.code &&
+        Number(r.Direction) === 0 &&
+        r.RouteID === trunk?.routeId,
     )
 
-    const geometry = getLineGeometry(line.code)
+    const geometry = getLineGeometry(line.code, line.operator)
 
     /*
      * Measure against the TRUNK route's stations only, so this column and the
@@ -189,9 +196,9 @@ export function getLineSummaries(): LineSummary[] {
       measuredKm: measurement ? measurement.revenueKm : null,
       publishedGeometryKm: measurement ? measurement.publishedKm : null,
       overrunKm: measurement ? measurement.overrunKm : null,
-      hasBranch: getBranchRoutes(line.code).length > 0,
+      hasBranch: getBranchRoutes(line.code, line.operator).length > 0,
       runs: geometry ? geometry.paths.length : 0,
-      published: line.onTdx ? null : (OPERATOR_PUBLISHED[line.code] ?? null),
+      published: line.onTdx ? null : (OPERATOR_PUBLISHED[line.key] ?? null),
     }
   })
 }
@@ -225,8 +232,8 @@ export type LineTrack = Partition & {
   kind: TrackKind
 }
 
-export function getLineTrack(lineCode: string): LineTrack {
-  const geometry = getLineGeometry(lineCode)
+export function getLineTrack(lineCode: string, operator?: string): LineTrack {
+  const geometry = getLineGeometry(lineCode, operator)
 
   /*
    * ── Run 51: the Sanying Line drew as twelve loose dots ──────────────────────
@@ -253,7 +260,11 @@ export function getLineTrack(lineCode: string): LineTrack {
    */
   if (!geometry) {
     const chain = STATIONS.filter(
-      (s) => s.line === lineCode && s.lat !== null && s.lon !== null,
+      (s) =>
+        s.line === lineCode &&
+        (!operator || s.operator === operator) &&
+        s.lat !== null &&
+        s.lon !== null,
     )
       .slice()
       .sort((a, b) => a.sequence - b.sequence)
@@ -268,7 +279,7 @@ export function getLineTrack(lineCode: string): LineTrack {
     }
   }
 
-  const trunkRoute = getTrunkRoute(lineCode)
+  const trunkRoute = getTrunkRoute(lineCode, operator)
   const onTrunk = new Set(trunkRoute?.stations ?? [])
 
   const points = (codes: Iterable<string>): Point[] =>
@@ -282,7 +293,7 @@ export function getLineTrack(lineCode: string): LineTrack {
   // load-bearing — the Luzhou branch has no suffixed codes at all.
   const branchCodes = new Set<string>()
   const termini: string[] = []
-  for (const route of getBranchRoutes(lineCode)) {
+  for (const route of getBranchRoutes(lineCode, operator)) {
     for (const code of route.stations) if (!onTrunk.has(code)) branchCodes.add(code)
     // Whichever end of the branch route is not on the trunk is the branch's own
     // terminus — taking `to` would name Nanshijiao on a branch to Luzhou if the
@@ -352,15 +363,17 @@ export function getInterchanges(): Interchange[] {
     groups.get(root)!.add(code)
   }
 
-  const order = new Map(LINES.map((l, i) => [l.code, i]))
+  const order = new Map(LINES.map((l, i) => [l.key, i]))
 
   return [...groups.values()]
     .map((set) => {
       const codes = [...set]
         .filter((code) => getStation(code))
         .sort((a, b) => {
-          const lineA = order.get(getStation(a)!.line) ?? 99
-          const lineB = order.get(getStation(b)!.line) ?? 99
+          const stationA = getStation(a)!
+          const stationB = getStation(b)!
+          const lineA = order.get(lineKey(stationA.operator, stationA.line)) ?? 99
+          const lineB = order.get(lineKey(stationB.operator, stationB.line)) ?? 99
           return lineA - lineB || a.localeCompare(b)
         })
       const first = codes[0] ? getStation(codes[0]) : undefined

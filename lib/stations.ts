@@ -117,10 +117,13 @@ export function getStation(code: string): Station | undefined {
  * Returns nothing for an empty code — a page with no `line:` set has no spine,
  * and an empty prefix would otherwise match every station on every line.
  */
-export function getLineStations(lineCode: string): Station[] {
+export function getLineStations(lineCode: string, operator?: string): Station[] {
   const prefix = lineCode.trim().toUpperCase()
   if (!prefix) return []
-  return STATIONS.filter((s) => s.line === prefix).sort((a, b) => a.sequence - b.sequence)
+  const namespace = operator?.trim().toUpperCase()
+  return STATIONS.filter(
+    (s) => s.line === prefix && (!namespace || s.operator.toUpperCase() === namespace),
+  ).sort((a, b) => a.sequence - b.sequence)
 }
 
 /**
@@ -161,8 +164,8 @@ export function getStationHref(code: string): string | null {
  *   spine: BR01, BR19  several points
  *   (omitted)          the whole line
  */
-export function resolveSpine(value: string, lineCode: string): Set<string> {
-  const all = getLineStations(lineCode)
+export function resolveSpine(value: string, lineCode: string, operator?: string): Set<string> {
+  const all = getLineStations(lineCode, operator)
   if (!value.trim()) return new Set(all.map((s) => s.code))
 
   const marked = new Set<string>()

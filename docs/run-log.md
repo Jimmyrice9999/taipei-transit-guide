@@ -13133,3 +13133,19 @@ reflow/keyboard/axe/print results to follow once the harness completes
 buffers all output until the process exits, making a genuinely-running
 20+ minute check look silently stuck; re-run without the pipe once
 diagnosed.
+
+**Continuation — Part 0 housekeeping and Part 1 line namespace (2026-08-20).**
+Dropped both superseded stash entries and left the user-owned untracked
+`probes/` directory untouched. Added the permanent whole-file multiline
+citation-marker gate (`npm run markers`), verified its deliberate failure on a
+temporary fixture, removed the fixture, and audited all 1,051 route pages and
+192 station pages: no `.\n[^id]` defects found. The required cite, nav, build,
+unit-test, and verify gates are green.
+
+Replaced the flat bare-code line registry with operator/system namespaced keys,
+retained namespaces on merged TDX routes, geometry, transfers, and station-of-
+route records, and made bare-code lookups reject collisions instead of
+selecting an arbitrary system. Updated line-page metadata, navigation, maps,
+station indexes, network summaries, geometry diagnostics, and badges to pass
+operator context where available. Added collision and duplicate-identity tests;
+the full suite passes 212/212. No new system has been added yet.
