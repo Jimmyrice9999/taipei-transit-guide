@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 878區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 46 stops from 淡水客運八里站, past 龜馬山, then 八里, then 田心, then 西門, then 聖心別墅, then 許厝, ending at 捷運竹圍站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Zhuwei.[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 92 distinct stops in total: 46 stops (outbound); 46 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 32.2 km; weekday service runs from 07:20 to 21:00; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “八里-馬偕醫院”; published distance 32.2 km; service span Weekdays: 去程：0720-2100；返程：0720-2100; Holidays: 去程：0720-2100；返程：0720-2100; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 871經中山北路 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 31 stops from 捷運淡水站, past 捷運淡水站, then 福德宮, then 國民運動中心, then 義山里, then 鄉根園, then 行忠堂, ending at 椿子林.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Tamsui, Danjin Beixin, Xinshi 1st Rd. and Tamsui District Office.[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 60 distinct stops in total: 31 stops (outbound); 29 stops (return).[^tdx-bus] The published fare is charged over 1 segments; the published route length is 21.6 km; weekday service runs from 05:35 to 05:35.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運淡水站-行忠堂”; published distance 21.6 km; service span Weekdays: 去程：0535-0535；返程：0535-0535; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
