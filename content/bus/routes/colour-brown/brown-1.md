@@ -56,9 +56,11 @@ sources:
     note: Full official 2009 announcement saying Minibus 10 was created after 棕1 was shortened, to serve short trips for Mackay New Town and Xinming Road-area residents; it does not publish the prior 棕1 termini or a transfer record.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕1 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed stop sequence runs from 潭美國小(行善), past 潭美國小(舊宗)/新東街口/民權敦化路口, ending at 松山機場.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set: Zhongshan Junior High School (BR12).[^tdx-bus] The route runs 2 subroutes under a single operator, 首都客運內湖站.[^tdx-bus] Neither subroute carries a variant suffix in the current TDX record; the 2009 shortening recorded above is the only documented change to this identity.[^dot-br1-shortening] The outbound working covers 21 stops from 潭美國小(行善) to 松山機場; the return working, starting from 民權敦化路口, covers 20.[^tdx-bus] Both endpoints sit near Songshan Airport rather than at a station confirmed in the curated join set.
 
 ## Research status
 

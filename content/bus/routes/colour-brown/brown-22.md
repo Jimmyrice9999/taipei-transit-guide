@@ -47,9 +47,11 @@ sources:
     note: Full official route-information page listing the current 景美–青年路 corridor, one-section fare, weekday/holiday service window and 欣欣客運景德站 contact.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕22 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 景福街, past 溪口國小/自來水處(辛亥)/青年社區, ending at 青年公園(青年).[^tdx-bus] Four confirmed interchanges are recorded in the curated stop-ID join set: Wanfang Hospital (BR04), Xinhai (BR05), Gongguan (G07) and Taipower Building (G08) — the same four stations confirmed for 棕12, which shares this route's 景福街 origin and Xinhai/Gongguan corridor before diverging.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運景德站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 45 stops; the return, starting from 青年公園(國興), covers 41.[^tdx-bus] Both termini, 景福街 and 青年公園, sit away from a curated MRT join; every confirmed interchange on this route falls mid-corridor near Wanfang and Xinhai.
 
 ## Research status
 

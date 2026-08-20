@@ -47,9 +47,11 @@ sources:
     note: Full official route-information page listing the current 富德–萬美社區 corridor, 欣欣客運富德站 contact and special-event headway response in the Maokong-area section.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕3 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 富德, past 象頭埔/萬壽橋頭(木柵)/萬芳國宅, ending at 萬美社區.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei Zoo (BR01) and Muzha (BR02).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運富德站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 24 stops; the return, starting from 公務人員訓練處, covers 23.[^tdx-bus] Both confirmed interchanges fall near the shared 富德 origin this route holds with several other 棕-prefixed routes in this group.
 
 ## Research status
 

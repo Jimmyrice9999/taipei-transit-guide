@@ -47,9 +47,11 @@ sources:
     note: Full official schedule page listing the current 萬芳社區–景美女中 corridor, service pattern and 欣欣客運木柵二站 contact.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕2 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 萬芳社區, past 萬芳活動中心/景華公園/木新區民活動中心, ending at 景美女中.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Wanfang Community (BR03) and Wanfang Hospital (BR04).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運木柵二站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 30 stops; the return, run in reverse between the same two named termini, covers 27.[^tdx-bus] Both confirmed interchanges sit on the outbound leg near 萬芳社區, before the route continues north to its 景美女中 terminus, which is not itself a curated MRT join.
 
 ## Research status
 

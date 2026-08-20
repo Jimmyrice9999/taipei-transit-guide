@@ -47,9 +47,11 @@ sources:
     note: Full official route-information page listing the current 新店–臺北市政府 corridor, limited weekday/holiday departures, 建業路 stops and 臺北客運新店站 contact.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕7建業路 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 新店站, past 彩蝶別墅/大坪頂, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Muzha (BR02) — the same pair confirmed for plain 棕7 and for 棕7綠野香坡, since all three share the 新店–市政府 corridor's Muzha and City Hall ends.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運新店站. The 建業路 (Jianye Road) suffix marks the stop pattern that routes via Jianye Road rather than the parent identity's own alignment through that section of Xindian.[^ebus-br7-jianye]
 
 ## Research status
 

@@ -56,9 +56,11 @@ sources:
     note: Full official PDF recording the 棕5 stop-name change from 萬寧街一 to 萬寧山莊 effective 1 March 2012 and the addition of 政大附中 on the return trip effective 14 March 2012.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕5 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 萬芳社區, past 萬芳社區(和平)/萬壽橋頭(木柵)/猴山坑, ending at 指南宮.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set: Wanfang Community (BR03).[^tdx-bus] The route runs 4 subroutes under a single operator, 東南客運萬芳站: a standard working and a 經指南 (via Zhinan) working, each with its own inbound and outbound trip, alongside the three weekday-only 指南實小 detour departures recorded on the source page.[^ebus-br5][^tdx-bus]
 
 ## Research status
 

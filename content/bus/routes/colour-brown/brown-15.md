@@ -65,9 +65,11 @@ sources:
     note: Full official PDF recording the addition of 水鋼琴社區 (往北) for 棕15 and related routes effective 17 March 2022.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕15 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 富德, past 象頭埔/北政國中(政大實小)/樟湖步道, ending at 貓空纜車站.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set: Taipei Zoo (BR01).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運富德站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 21 stops; the return, starting from 天恩宮, covers 23. The mountain-section 隨招隨停 (hail-and-stop) note recorded on the schedule page applies past the last confirmed MRT-adjacent stop.[^ebus-br15][^tdx-bus]
 
 ## Research status
 

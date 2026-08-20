@@ -47,9 +47,11 @@ sources:
     note: Full official schedule page listing the current 新店–臺北市政府 corridor, service span, headways, 綠野香坡 trip pattern and 臺北客運新店站 contact.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕7 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 新店站, past 安祥路口/北新國小, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Muzha (BR02).[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運新店站. Plain 棕7 is the parent identity; 棕7建業路 and 棕7綠野香坡 are separately filed stop-pattern variants sharing its 新店–市政府 termini.[^ebus-br7] The outbound working covers 47 stops; the return, starting from 消防局(松仁), also covers 47.[^tdx-bus] Both confirmed interchanges sit near the 市政府 end of the corridor, not the 新店 origin.
 
 ## Research status
 

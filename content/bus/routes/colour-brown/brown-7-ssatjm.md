@@ -49,7 +49,9 @@ sources:
 
 ## Classification and conflict
 
-The official 大臺北公車 catalogue lists 棕7綠野香坡 under 捷運棕線接駁公車.[^ebus-brown] The TDX snapshot still identifies this record as 棕7綠野香坡.[^tdx-bus] The full PDA page states: 「原〖812〗路線自115年6月30日起，縮駛至『捷運橫溪站』並調整路線番號為〖三鶯2線〗」.[^pda-br7g] Both values are retained; the identity is unresolved.
+The official 大臺北公車 catalogue lists 棕7綠野香坡 under 捷運棕線接駁公車.[^ebus-brown] The TDX snapshot still identifies this record as 棕7綠野香坡.[^tdx-bus] The full PDA page states: 「原〖812〗路線自115年6月30日起，縮駛至『捷運橫溪站』並調整路線番號為〖三鶯2線〗」.[^pda-br7g] Both values are retained; the identity is unresolved — the PDA statement describes route 812 being shortened and renumbered to 三鶯2線, a different identity from 棕7綠野香坡, and this search found no primary source connecting that 812 renumbering to this specific 棕7 stop-pattern record.
+
+The confirmed outbound stop sequence in the current TDX record runs from 伴山別墅(一), past 伴山別墅(二)/碧潭橋頭, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Muzha (BR02), the same pair confirmed for plain 棕7.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運, matching plain 棕7's own operator despite the unresolved identity conflict above.[^tdx-bus] The outbound working covers 55 stops, longer than either plain 棕7 (47) or 棕7建業路; the return, starting from 消防局(松仁), covers 54.[^tdx-bus] Whether that longer stop count reflects the 綠野香坡 (Green Fields) residential detour named in the identity, or the possible 812/三鶯2 renumbering above, was not established by any source checked for this entry.
 
 - Corridor decision: TBC.
 - Unusual branch or short working: TBC.

@@ -56,9 +56,11 @@ sources:
     note: Full official PDF recording that the 棕12 endpoint 交通博物館 was renamed 客家文化主題公園 effective 23 March 2012.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕12 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 景福街, past 溪口國小/興隆路口(辛亥)/嘉禾社區, ending at 客家文化主題公園(師大路).[^tdx-bus] Four confirmed interchanges are recorded in the curated stop-ID join set: Wanfang Hospital (BR04), Xinhai (BR05), Gongguan (G07) and Taipower Building (G08).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運景德站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 36 stops; the return, starting from 捷運台電大樓站, covers 32.[^tdx-bus] The route's four confirmed interchanges match the set confirmed for 棕22, both routes running the same Wanfang–Xinhai–Gongguan corridor before their own endpoints diverge.[^tdx-bus]
 
 ## Research status
 

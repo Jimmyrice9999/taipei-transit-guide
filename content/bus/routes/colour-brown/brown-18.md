@@ -47,9 +47,11 @@ sources:
     note: Full official schedule page listing the current 政治大學–松山車站 corridor, service span, one-section fare, 欣欣客運富德站 contact and the standard/經松山車站 service variant.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕18 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 政大, past 政大(聯合醫院)/大誠高中, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Taipei Zoo (BR01).[^tdx-bus] The route runs 4 subroutes under a single operator, 欣欣客運富德站: standard trips and a 經松山車站 (via Songshan Station) variant, each with its own inbound and outbound working, extending the standard 政大–市政府 corridor east to 松山車站.[^ebus-br18][^tdx-bus] The standard outbound working covers 22 stops; the 經松山車站 outbound working covers 29, the difference being the eastward extension past City Hall.[^tdx-bus] Both variants share the same 政大 origin and the same two confirmed interchanges.
 
 ## Research status
 

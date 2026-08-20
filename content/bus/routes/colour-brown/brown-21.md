@@ -56,9 +56,11 @@ sources:
     note: Full official chronology recording the new 棕21 service between 政大里 and 捷運市政府站 on 16 July 2012.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕21 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence for the 經政大御花園 working runs from 兆如安養中心, past 普羅旺世/指南山莊, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Taipei Zoo (BR01).[^tdx-bus] The route runs 4 subroutes under a single operator, 欣欣客運富德站: 經政大御花園 (via Zhengda Garden) and 不經政大御花園 (not via Zhengda Garden) each with their own inbound and outbound working, plus the 兆如安養中心 short working recorded on the source page.[^ebus-br21][^tdx-bus]
 
 ## Research status
 

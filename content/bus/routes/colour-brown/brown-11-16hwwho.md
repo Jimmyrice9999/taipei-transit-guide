@@ -65,9 +65,11 @@ sources:
     note: Full official PDF recording that 棕11(含副) cancelled the 萬壽橋頭(木柵) stop effective 31 December 2013.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕11副 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 富德, past 象頭埔/普羅旺世/敦南美景, ending at 興旺公園.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei Zoo (BR01) and Wanfang Hospital (BR04).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運富德站.[^tdx-bus] The 副 (sub-line) suffix marks this as a branch of plain 棕11, sharing its 富德 origin but ending at 興旺公園 rather than continuing to 捷運公館站.[^ebus-br11sub] The outbound working covers 45 stops; the return, starting from 敦南大地(文山森林公園), covers 43.[^tdx-bus]
 
 ## Research status
 

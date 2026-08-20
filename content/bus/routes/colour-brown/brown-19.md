@@ -47,9 +47,11 @@ sources:
     note: Full official route-information page listing the current 捷運昆陽站–捷運大湖公園站 corridor, one-section fare, weekday/holiday service windows,東南客運內湖站 contact and the southern Neihu/Nangang stop sequence.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕19 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 捷運昆陽站, past 衛生福利部/五分社區, ending at 捷運大湖公園站.[^tdx-bus] Four confirmed interchanges are recorded in the curated stop-ID join set: Kunyang (BL21), Nangang (BL22), Dahu Park (BR20) and Nangang Software Park (BR23), reflecting a corridor that runs past both Blue-line and Brown-line stations rather than feeding a single brown-line stop.[^tdx-bus] The route runs 2 subroutes under a single operator, 東南客運內湖站, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 19 stops; the return, running the corridor in reverse from 捷運大湖公園站, covers 18.[^tdx-bus] Both termini are themselves named MRT stations, 昆陽 and 大湖公園, unlike most other routes in this group whose named endpoints sit away from a station.
 
 ## Research status
 

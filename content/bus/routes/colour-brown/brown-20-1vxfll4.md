@@ -53,6 +53,8 @@ The official catalogue lists 棕20 under 捷運棕線接駁公車.[^ebus-brown] 
 
 The official stop page and TDX sequence retain the more specific first and last stop names; both endpoint abstractions are published and remain visible.[^tdx-bus]
 
+The confirmed outbound stop sequence runs from 行善行愛路口, past 行善石潭路口/基湖站/外雙溪(至善), ending at 故宮博物院(正館).[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set: Jiannan Rd. (BR15).[^tdx-bus] The route runs 4 subroutes under a single operator, 大南汽車: a standard working and a separately filed 棕20預約公車 (reservation) working, each with its own inbound and outbound trip, alongside the reservation-only 美堤碼頭 detour recorded on the schedule page.[^ebus-br20][^tdx-bus] The standard outbound working covers 17 stops and the standard return 18; the 預約公車 (reservation bus) outbound and return workings run one stop longer each, at 18 and 19, reflecting the reservation-only detour.[^tdx-bus] No dated history establishes when the reservation working was added or why it is filed as a separate TDX subroute rather than a footnote on the standard one.[^ebus-br20]
+
 ## Research status
 
 - Route history: TBC.

@@ -47,17 +47,16 @@ sources:
     note: Full official route-information page listing the current 捷運動物園站–捷運市政府站 corridor, timetable, dog-friendly trips, 貓空 event headway note and 欣欣客運木柵二站 contact.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕6 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 捷運動物園站, past 貓纜動物園站/靜心高中, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Five confirmed interchanges are recorded in the curated stop-ID join set, the widest interchange count in this group: Taipei City Hall (BL18), Taipei Zoo (BR01), Wanfang Community (BR03), Wanfang Hospital (BR04) and Wanlong (G06).[^tdx-bus] The route runs 4 subroutes under a single operator, 欣欣客運木柵二站: a standard working and a 狗狗公車 (dog-friendly) working carrying the same 54-stop 動物園–市政府 corridor, each with its own inbound and outbound trip.[^ebus-br6][^tdx-bus]
 
 ## Research status
 
 The committed TDX bus snapshot supplies the changing structural fields shown above; route length and timetable fields are TBC where that layer does not publish them.[^tdx-bus]
 
-- Route history: TBC.
-- Corridor decision: TBC.
-- Unusual branch or short working: TBC.
 - Route history: TBC — the full current page does not establish an opening date, former alignment or renumbering.[^ebus-br6]
 - Corridor decision: TBC — the current 捷運動物園站–捷運市政府站 corridor is published, but its original rationale was not.[^ebus-br6]
 - Unusual branch or short working: Partial — the page records dog-friendly trips and a current 貓空 special-event headway adjustment, not a dated branch history.[^ebus-br6]

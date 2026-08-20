@@ -56,9 +56,11 @@ sources:
     note: Full official PDF recording that 棕13 service reduction was approved effective 1 February 2012.
 ---
 
-## Classification
+## Classification and corridor
 
 The official 大臺北公車 catalogue lists 棕13 under 捷運棕線接駁公車, the brown-line feeder class.[^ebus-brown]
+
+The confirmed outbound stop sequence runs from 大崙尾山, past 大崙尾山步道口/外雙溪橋/通北街口, ending at 圓山新城一.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set: Dazhi (BR14).[^tdx-bus] The route runs 2 subroutes under a single operator, 首都客運士林站.[^tdx-bus] The published weekday variant bypassing 外雙溪(至善) is a stop-skip pattern within this same identity rather than a separately filed sub-route.[^ebus-br13] The outbound working covers 30 stops; the return, starting from 力行新村, covers 33.[^tdx-bus] Both endpoints, 大崙尾山 and 圓山新城一, sit in Shilin's hill district rather than at a station in the curated join set.
 
 ## Research status
 
