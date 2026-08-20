@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F823區 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 35 stops from 南山社區, past 十分寮橋, then 上林, then 雙溪火車站, then 戲坪地, then 雙龍橋路口, then 挖仔(福隆國小), ending at 東興宮.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 平溪區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F823區南山社區、F823區東興宮.[^tdx-bus] The committed record carries 2 direction/variant sequences, 69 distinct stops in total: 35 stops (outbound, F823區南山社區); 34 stops (return, F823區東興宮).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 06:30 to 15:10; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “南山社區-東興宮”; published distance 99 km; service span Weekdays: 去程：0630-1510；返程：0730-1600; Holidays: 去程：0630-1510；返程：0730-1600; headway fields Weekdays: 1600班次返回分水崙站; Holidays: 1600班次返回分水崙站.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “南山社區-東興宮”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0630-1510；返程：0730-1600; Holidays: 去程：0630-1510；返程：0730-1600; headway fields Weekdays: 1600班次返回分水崙站; Holidays: 1600班次返回分水崙站.[^ntpc-bus-route-data]
 
 ## Research status
 

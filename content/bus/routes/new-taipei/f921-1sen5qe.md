@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F921 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 13 stops from 萬里區公所, past 萬里北基路口, then 圳頭, then 集會所, then 加投里, then 獅頭山公園(老街溫泉區), then 田心子, ending at 金山醫院.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 10 subroutes under a single operator, 萬里區公所.[^tdx-bus] The TDX record files 10 distinct stop-pattern names under this identity: F921去-大坪國小學生專車、F921去-繞圳頭、F921去、F921去-大鵬國小學生專車、F921返-繞大鵬國小、F921返-金山發車繞圳頭、F921返、F921返-獅頭山發車繞圳頭、F921去-繞雙星里活動中心、F921返-繞雙星里活動中心.[^tdx-bus] The committed record carries 10 direction/variant sequences, 28 distinct stops in total: 7 stops (outbound, F921去-大坪國小學生專車); 12 stops (outbound, F921去-繞圳頭); 9 stops (outbound, F921去); 7 stops (outbound, F921去-大鵬國小學生專車); 10 stops (return, F921返-繞大鵬國小); 12 stops (return, F921返-金山發車繞圳頭); 9 stops (return, F921返); 9 stops (return, F921返-獅頭山發車繞圳頭); 13 stops (outbound, F921去-繞雙星里活動中心); 13 stops (return, F921返-繞雙星里活動中心).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 06:40 to 17:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “萬里區公所-金山醫院”; published distance 99 km; service span Weekdays: 去程：0640-1705；返程：0930-1745; Holidays: 去程： - ；返程： -; headway fields Weekdays: 學生專車06:40 15:40；時刻路線走法請參照簡圖; Holidays: 請參見F921假日路線.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “萬里區公所-金山醫院”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0640-1705；返程：0930-1745; Holidays: 去程： - ；返程： -; headway fields Weekdays: 學生專車06:40 15:40；時刻路線走法請參照簡圖; Holidays: 請參見F921假日路線.[^ntpc-bus-route-data]
 
 ## Research status
 
