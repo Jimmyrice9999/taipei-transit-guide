@@ -12867,3 +12867,269 @@ to content), nav 19/19.
 Part 1 running total: 471 of 1,051 routes across seventeen groups.
 Next-smallest remaining: new-taipei (562), the last and largest Part 1
 group. Parts 2-7 not started.
+
+## Run 52 continuation, 20 August 2026 — Parts 1-7
+
+Picked up after the incident recorded in for-jamie.md. Worked solo and
+sequentially throughout this continuation — no sub-agents, no forks,
+one change at a time, gates run and a commit+push after each unit of
+work, per the incident note.
+
+**Part 1 (false-join defect).** Already fully closed before this
+continuation started — commit c6459f6, done earlier the same run day:
+all 1,051 routes audited, 3 more false joins fixed, a station-code
+badge collision fixed on 43 colour-route pages,
+`tests/bus-rail-joins.test.mts` added as a permanent gate. Re-verified
+here rather than redone: the gate test still passes. The 200 m
+curated-join threshold was separately calibrated and spot-checked
+against the colour-brown pilot in an earlier Run 52 part; also
+re-confirmed, not repeated.
+
+**Part 2 (the incident stash).** Sampled 5 files from `stash@{1}`
+(983, 989, f109, f151-1605, route-18ibef, all new-taipei) and
+cross-checked every claimed interchange against
+`data/tdx/bus/rail-stop-joins.json` by station code, resolving each
+code to a name via the TRTC/NTDLRT/NTMC/TYMC/NTALRT station registries.
+All five checked out, including one file's "9 confirmed interchanges"
+correctly deduplicating two same-named stations (R27 and V01, both
+Hongshulin) from 10 curated codes — a subtlety that would have looked
+like an error on a shallower check. The stash also showed honest TBC
+handling: it flagged a shared "99 km" value across unrelated routes as
+a likely unpopulated placeholder rather than trusting it. Verdict:
+sound, worth reviewing. **Not merged, not dropped** — left on the
+stack, per instructions.
+
+**Part 3 (bus route prose to 200+ words) — closed.** All 1,051 bus
+route pages across all 19 groups are now 200+ words, including
+new-taipei's 562. colour-brown (20 routes, the original pilot group,
+predating the "confirmed stop sequence" prose pattern) was brought up
+by hand first. new-taipei was built via two new scripts,
+`probes/gen-corridor-lib.mjs` and `probes/apply-corridor.mjs`: a
+corridor paragraph generated from each route's own TDX stop sequence
+(first/last stop plus up to 6 evenly-spaced intermediates), confirmed-
+only interchanges read from the curated join file and deduplicated by
+station name, operator and subroute/variant-name detail, and a
+plain-English translation of the New Taipei route-service dataset's
+fare/distance/headway fields. Applied in ~25-route batches — about 20
+batches for new-taipei alone — each with `npm run cite` and the
+bus-rail-joins gate test run before a commit+push. A handful of
+stragglers (F932/F933 timed-departure instances, a one-way working
+with no return leg, a route with no separate number at all) needed a
+small hand-written addition after the generator's automatic fallback
+still fell short; each was a genuine, sourced fact, not padding.
+
+Independently of the stash, this batch work found and fixed the same
+"99 km" placeholder-distance issue the stash had flagged: 175 of 562
+New Taipei route-service rows carry `"distanceKm": "99"` identically —
+confirmed as a dataset placeholder, not 175 real coincidentally-equal
+measurements, by checking the full distribution
+(`{'99': 175, null: 40, '34.3': 4, ...}`). The already-committed
+"Current service data" prose for all 175 stated "published distance 99
+km" as fact with no caveat; both that paragraph and the new corridor
+paragraph now flag it honestly on all 175, not just the 5 the stash
+sample happened to cover.
+
+Final corpus-wide scan: 0/1,051 route pages under 200 words. Full
+gates green: cite, test:unit 209/209, research, facts (17
+cross-checks), nav 19/19, full build (fonts regenerated once — 段 was
+briefly missing from the base Han subset after adding the fare-stages
+page in Part 4).
+
+**Part 4 — the three gaps.**
+
+1. *Bus fare stages (段次).* New research file and content page,
+   `content/ticketing/guides/bus-fare-stages.md` +
+   `docs/research/ticketing/bus-fare-stages.md`. Legal basis (臺北市
+   公共汽車客運業營運管理自治條例 Articles 9 and 11, fetched in full
+   from Taipei's own law database — confirmed as a 14-article
+   full-chapter view, not a snippet), the NT$15/12/8 per-segment fare
+   tiers (independently confirmed on both the government fare portal
+   and the operators' trade association's own page), the two
+   officially-named segment-point examples (Huazhong Bridge, Taipei
+   Main Station — the regulator's own FAQ does not publish a complete
+   list; a fuller 9-location list exists only on zh.wikipedia, itself
+   uncited, published here as secondary and flagged as such), and a
+   real 1-8 segment-count range computed directly from this project's
+   own already-committed New Taipei data — correcting an unverified
+   "1-4 segment" claim a search-engine summary produced mid-session
+   and that was never carried onto the page (recorded in the research
+   file's Checked and failed section instead). Building this page
+   surfaced a real accessibility defect, not introduced by it:
+   `ComparisonTable.tsx` rendered spec labels as raw untagged text,
+   which had passed unnoticed while `/ticketing/guides/` had only one
+   page (no comparison table rendered at all). Adding the second guide
+   page rendered the table and exposed an existing untagged-Han label
+   on `cards-passes-and-fares.md` ("Taipei-registered 敬老/愛心 monthly
+   points"). Fixed by routing the label through `RichText`, the same
+   pattern `FactsPanel` already used for the same class of bug.
+
+2. *YouBike station data.* A prior audit's "no TDX dataset" finding
+   was checked directly against the live TDX API (this project's
+   existing `TDX_CLIENT_ID`/`SECRET`) and found wrong: TDX publishes
+   `Bike/Station/City/{City}`, the same shape as the bus Stop API, plus
+   a separate live `Bike/Availability/City/{City}` feed. Verified
+   counts: 1,790 Taipei + 1,593 New Taipei + 698 Taoyuan = 4,081+
+   stations — roughly four times the bus network's route count, with
+   much thinner per-station facts available than a bus route has. An
+   earlier WebFetch summary of Taipei's own separate live JSON feed
+   had under-reported 268 stations against the true 1,790, recovered
+   only by a direct `curl` fetch and count — the same "fetch full
+   pages, don't trust a summary" rule mattering for a machine API
+   response, not only HTML. Wrote `docs/youbike-architecture.md` as a
+   proposal, the same sequencing `bus-architecture.md` used before any
+   bus content was built, rather than attempting thousands of pages
+   unreviewed. No data layer or pages built.
+
+3. *Gondola stations.* Built all 4 — Zoo Station, Zoo South Station,
+   Zhinan Temple Station, Maokong Station
+   (`content/rail/cable/stations/`). The generic content registry
+   already accommodated this with zero new app code: a nested
+   `content/<system>/<type>/<slug>.md` folder is picked up by
+   `getTypes()`/`getAllPages()` and served through the existing
+   `app/rail/[system]/[type]/[slug]/page.tsx` → `EntityPage`, the same
+   route the gondola line page already used. Checked before assuming,
+   per this run's own recurring lesson. Each station researched from
+   the operator's own per-station pages (gondola.taipei's station-info
+   page has a dedicated `s=` sub-page per station) and zh.wikipedia's
+   own per-station articles. New findings beyond the existing line
+   page: Zoo Station and the Wenhu Line's own Taipei Zoo MRT station
+   (BR01) are separate buildings roughly 350 m apart, linked only by an
+   out-of-station transfer, confirmed two independent ways; Zoo South
+   Station's 26 October 2015 rename from 動物園內站, already noted on
+   the line page, re-confirmed with the same exact date from a fresh
+   full fetch; Zhinan Temple (264.3 m) and Maokong (299.3 m) station
+   elevations, confirmed by full fetches of their own zh.wikipedia
+   articles; a dated 2014 dragon-sculpture installation at Zhinan
+   Temple Station, flagged as secondary and not independently
+   corroborated; and a link from Maokong Station to BR15/棕15, one of
+   this project's own researched bus routes, whose confirmed corridor
+   ends at this same gondola station. Zoo and Zoo South elevations are
+   TBC — two candidate figures for Zoo Station (24.1 m, 55 m) surfaced
+   only as unverified search summaries this run and were not used; see
+   the new research file's Checked and failed section.
+
+   Building these pages introduced a claims-baseline regression (32 to
+   35 unsourced assertions), fixed by adding citations to the specific
+   flagged sentences rather than raising the baseline — a small but
+   real reminder that even a "generic template, no new code" page adds
+   prose that has to clear the same sourcing bar as everything else.
+   Also caught a spec/facts field-placement bug of its own making: a
+   date-range value (`"1 October 2008 – 30 March 2010"`) placed under
+   `specs:` tripped the "unit not split from value" test; moved to
+   `facts:`, where free-text values are allowed.
+
+**Part 5 (visual polish).** Audited first, per instructions: nav
+dropdown transitions and `LineIcon` already existed, confirmed from an
+earlier Part 0 audit this run day, so only what those did not cover.
+
+- *Caret transitions.* `.disclosure-caret` (the station index and the
+  New Taipei subgroup index — 562 routes across 7 collapsed groups)
+  rotated instantly on toggle with no `transition` property at all,
+  unlike `.nav-submenu-caret`, which already had one. Added the same
+  120 ms ease transition and a matching `prefers-reduced-motion`
+  guard. Also gave the bus route stop-sequence disclosure
+  (`BusRouteData.tsx`, the only other in-page `<details>` on the site)
+  a matching custom caret — it had been left on the bare, unstyled
+  browser marker, with nothing to animate.
+- *Hover-state transitions.* `.card-list a`, `.data-card` and
+  `.site-search-results a` all snapped their hover background
+  instantly; `.card-arrow` already had a transition. Added a matching
+  `background-color` transition to each, each with its own dedicated
+  reduced-motion-disabling rule rather than one shared rule covering
+  several selectors — the accessibility test counts `transition:` vs.
+  `transition: none` occurrences by raw string count, and a shared
+  rule under-counts the disabling side even though it correctly
+  disables every selector it lists.
+- *Icon system.* `components/BusGroupIcon.tsx`, wired into
+  `/bus/routes/`'s 19-group index. Deliberately scoped to bus route
+  groups only, not the full five-category list in the brief: checked
+  `bus/models` and `bus/depots` first and found both still
+  `_index.md`-only with no entity pages built, so an icon for either
+  would decorate a page that does not exist yet. Bus operators and
+  ticketing were considered and skipped this run — operator icons have
+  no real differentiating character to derive without logo data, and
+  ticketing's guide list renders through the shared, sitewide
+  `app/[section]/[type]/page.tsx` component rather than a bus-specific
+  route, making a safe icon slot there a larger, deliberate change
+  rather than one folded into this pass. What shipped: six real
+  service-class glyphs (feeder, trunk, numbered, minibus, shuttle,
+  municipal) — one per group *kind*, not one per group — coloured from
+  `GROUP_PATH_COLOUR`, the token the site's route-map paths already
+  use, not a new palette. `unclassified`/`series-other` correctly get
+  no icon. Screenshotted at 900px and confirmed all six render legibly
+  and distinctly.
+
+**Part 6 (Taiwan expansion groundwork) — research and proposal only,
+nothing built.** `docs/taiwan-expansion.md`. TDX coverage for TRA,
+THSR, Kaohsiung Metro and Taichung Metro verified by direct
+authenticated API calls, not documentation or search summaries: TRA
+(12 lines, 245 stations, line-shape geometry present but dated 2016),
+THSR (12 stations — note the `v2` path, not `v1`, which 404s), KRTC
+(39 stations), TMRT (18 stations, its one Green Line). TDX rate-limited
+aggressively under rapid sequential calls during this check (`429`
+twice on back-to-back requests) — a real fetch script for a new system
+needs retry discipline, not an assumption the manual-verification call
+rate is safe to script at.
+
+Primary source families identified per system, including TRA's 1
+January 2024 corporatization from 臺灣鐵路管理局 into 臺灣鐵路股份有限公司
+(a legal-entity change worth dating in any source that predates it,
+not silently updated), and 交通部鐵道局's 2018-formed, genuinely
+cross-system remit spanning national rail and urban metro/light-rail
+engineering and regulation together — confirmed from its own site.
+
+Architecture audited directly in `lib/` and `app/`, not assumed:
+`lib/content.ts`'s folder/type/system registry is already generic and
+filesystem-driven (this run's own gondola-station work is the proof —
+zero new app code needed). `lib/lines.ts` is not: five operators
+hardcoded by literal import and a literal array entry, and — the
+concrete, unrolled risk found while reading it — a flat line-code map
+keyed only by `LineID`, no operator namespace, meaning a same-coded
+line from a fourth rail system would silently overwrite an existing
+map entry rather than error. Given this run's own false-join incident
+earlier the same day, that class of silent-overwrite bug is exactly
+the kind worth flagging before anyone adds a fourth operator, not
+after. The bespoke Taipei metro station template (strip maps,
+elevation profiles) is also not generic — a KRTC or TMRT station page
+would inherit gondola stations' plainer generic `EntityPage` treatment
+unless someone builds a second bespoke template. Proposes Taichung
+Metro (TMRT, 18 stations, one line) as the smallest pilot if one is
+wanted, Kaohsiung Metro (KRTC) second, and TRA/THSR scoped as their
+own separate, later, multi-run projects given their national scale.
+
+**Part 7 (verify by looking) — in progress at the point of this
+entry.** Full fresh build (1,875 pages, no missing Han glyphs). A
+13-page-type × 7-viewport screenshot matrix (320/375/768/1440/1920/
+2560 plus one landscape phone, 812×375) captured via a throwaway
+Playwright script (`probes/shot-matrix.mjs`) against a local
+`next start` server, covering both new pages from this continuation
+(gondola stations, the fare-stages guide, the New Taipei subgroup
+carets, the bus-group icons) and a sample of pre-existing complex
+layouts (the Wenhu Line strip map, a metro station page) to check for
+regressions. Reviewed by eye, not just captured: no reflow or overflow
+found at any width on any page checked, the new bus-group icons render
+legibly and distinctly at 320px through 2560px, the caret transition
+and comparison-table fix both render correctly in the browser (not
+just passing their automated tests), and cross-reference links between
+this run's own new content (a gondola station linking to its own
+researched bus route) resolve correctly. One map-label pattern
+investigated and found to be correct, not a bug: two adjacent bus
+stops on the same route occasionally both carry a confirmed join to
+the same MRT station and render as two adjacent identical-looking
+labels — accurate, if visually repetitive, representation of two
+distinct stops, not an overlap bug in the label-placement algorithm.
+
+Running `npm run verify:browser` found the harness's own curated
+`PAGE_TYPES` list (used for keyboard traversal, print PDFs and its own
+screenshot set — reflow and axe already check every real page via a
+separate full-tree walk) had no entry for gondola stations or either
+ticketing guide, repeating a gap this same list's own comments already
+name as a recurring failure mode ("a new layout not in this list has
+no browser coverage"). Added four entries
+(`rail-cable-stations`, `gondola-station-maokong`, `ticketing-guides`,
+`ticketing-fare-stages`) before re-running for full coverage. Full
+reflow/keyboard/axe/print results to follow once the harness completes
+— a first attempt was accidentally piped through `tail -100`, which
+buffers all output until the process exits, making a genuinely-running
+20+ minute check look silently stuck; re-run without the pipe once
+diagnosed.

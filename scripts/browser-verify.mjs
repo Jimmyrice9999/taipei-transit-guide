@@ -169,6 +169,19 @@ const PAGE_TYPES = [
   { name: 'rail-system-cable', url: '/rail/cable/' },
   { name: 'rail-technology', url: '/rail/technology/' },
   { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },
+  /*
+   * Run 52: gondola stations and the fare-stages guide are new page types
+   * this run added, and this list's own established lesson (see the run 21
+   * and run 20 comments above) is that a new layout not listed here has no
+   * keyboard/screenshot/print coverage even though reflow and axe already
+   * check every real page via allPages(). Neither ticketing guide was
+   * listed before this either — a pre-existing gap, not one this run made
+   * worse, closed here since it was found while checking the new page.
+   */
+  { name: 'rail-cable-stations', url: '/rail/cable/stations/' },
+  { name: 'gondola-station-maokong', url: '/rail/cable/stations/maokong-station/' },
+  { name: 'ticketing-guides', url: '/ticketing/guides/' },
+  { name: 'ticketing-fare-stages', url: '/ticketing/guides/bus-fare-stages/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },
