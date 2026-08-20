@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 新店高中-三峽 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 13 stops from 新店高中, past 中央新村(捷運小碧潭站), then 恩主公醫院, then 學成路, then 大學學成路口, then 臺北大學正門, then 學勤路, then 大學風呂(學勤路), then 森林公園, then 桃子腳國中小, then 上善若水社區, then 南園, ending at 學成大成路口.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Xiaobitan.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 13 distinct stops in total: 13 stops (outbound).[^tdx-bus] The published fare is charged over ３ segments; the published route length is 24.9 km; weekday service runs from 16:10 to 16:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新店高中-三峽”; published distance 24.9 km; service span Weekdays: 去程：1610-1610；返程：1610-1610; Holidays: 去程： - ；返程： -; fare 三段票 / ３ segments.[^ntpc-bus-route-data]

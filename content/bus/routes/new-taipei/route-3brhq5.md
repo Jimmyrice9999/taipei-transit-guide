@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-臺北車站(承德) as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 松柏蘆, past 林口高中, then 麗園一街, then 麗園一街(東勢市場), then 忠孝路口B, then 林口三井, then 高公局, then 啟聰學校, then 庫倫街口, then 成淵高中, then 民生西路口, ending at 臺北車站(承德).[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Yuanshan.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 23.3 km; weekday service runs from 06:20 to 06:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “松柏蘆-臺北車站(承德)”; published distance 23.3 km; service span Weekdays: 去程：0620-0650；返程：0620-0650; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

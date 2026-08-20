@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 中原中平路口-建國中學 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 泰林仁德路口, past 捷運泰山站, then 中原里, then 中原路一, then 新北大道中華路口, then 臺北車站(重慶), then 一女中(貴陽), ending at 建國中學(歷史博物館).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Taishan Station and NTU Hospital.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 11 distinct stops in total: 11 stops (outbound).[^tdx-bus] The published fare is charged over 3 Segments; the published route length is 11.9 km; weekday service runs from 06:30 to 06:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “泰林仁德路口-建國中學(歷史博物館)”; published distance 11.9 km; service span Weekdays: 去程：0630-0630；返程：0630-0630; Holidays: 去程： - ；返程： -; fare 三段票 / 3 Segments.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 五股-內湖科技園區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 五股站, past 陸光國宅, then 社區活動中心, then 永豐商業銀行, then 陽光抽水站, then 瑞光港墘路口, then 內湖基湖路口, ending at 捷運港墘站(內湖高工).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Xihu and Gangqian.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 五股-內湖科技園區去、五股-內湖科技園區返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 22 distinct stops in total: 11 stops (outbound, 五股-內湖科技園區去); 11 stops (return, 五股-內湖科技園區返).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 41.9 km; weekday service runs from 07:10 to 07:45.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “五股-捷運港墘站(內湖高工)”; published distance 41.9 km; service span Weekdays: 去程：0710-0745；返程：1750-1810; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segment.[^ntpc-bus-route-data]

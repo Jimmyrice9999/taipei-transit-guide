@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三重-內科 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 17 stops from 仙公廟, past 三重商工(中正北路), then 幸福市場, then 五華街, then 重陽橋, then 基湖路口, then 瑞光路, ending at 麗寶大樓.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Jiannan Rd. and St.lgnatius High School.[^tdx-bus] The route runs 2 subroutes under a single operator, 中興巴士.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 三重-內科去、三重-內科返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 35 distinct stops in total: 17 stops (outbound, 三重-內科去); 18 stops (return, 三重-內科返).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 34.9 km; weekday service runs from 06:45 to 06:45.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三重-內科”; published distance 34.9 km; service span Weekdays: 去程：0645-0645；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]

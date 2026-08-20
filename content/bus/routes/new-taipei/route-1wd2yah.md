@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 淡水-內湖科技園區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 新市站, past 沙崙路一段, then 淡江豪景, then 捷運淡水站, then 捷運劍南路站, then 恕德家商, then 港墘派出所, ending at 仁寶大樓.[^tdx-bus] 7 confirmed interchanges are recorded in the curated stop-ID join set: Jiannan Rd., Xihu, Gangqian, Zhuwei, Hongshulin, Tamsui and Binhai Shalun.[^tdx-bus] The route runs 1 subroute under a single operator, 淡水客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 14 distinct stops in total: 14 stops (outbound).[^tdx-bus] The published fare is charged over 3 Segments; the published route length is 29.8 km; weekday service runs from 06:40 to 06:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡水-內湖科技園區”; published distance 29.8 km; service span Weekdays: 去程：0640-0640；返程：0640-0640; Holidays: 去程： - ；返程： -; fare 三段票 / 3 Segments.[^ntpc-bus-route-data]

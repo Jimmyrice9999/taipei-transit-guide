@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 蘆洲中正路-士林中正路 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 13 stops from 蘆洲總站, past 空中大學(中正路), then 蘆洲國小, then 溪墘, then 集賢路, then 五華國小, then 士林國中, ending at 捷運士林站(中正).[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 13 distinct stops in total: 13 stops (outbound).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 7.6 km; weekday service runs from 06:50 to 06:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “蘆洲總站-捷運士林站”; published distance 7.6 km; service span Weekdays: 去程：0650-0650；返程：0650-0650; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

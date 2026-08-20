@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files 直潭里線 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 下石厝路, past 直潭國小, then 三界公廟, then 金龍路口, then 海會寺, then 直潭里辦公處, then 永業路口, ending at 新店捷運站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Xindian.[^tdx-bus] The route runs 2 subroutes under a single operator, 新店區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 水源區直潭里去、水源區直潭里返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 16 distinct stops in total: 8 stops (outbound, 水源區直潭里去); 8 stops (return, 水源區直潭里返).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 06:20 to 19:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “下石厝路-新店捷運站”; published distance 99 km; service span Weekdays: 去程：0620-1905；返程：0700-1830; Holidays: 去程： - ；返程： -; headway fields Weekdays: 第8班僅行駛到新店捷運站.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “下石厝路-新店捷運站”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0620-1905；返程：0700-1830; Holidays: 去程： - ；返程： -; headway fields Weekdays: 第8班僅行駛到新店捷運站.[^ntpc-bus-route-data]
 
 ## Research status
 

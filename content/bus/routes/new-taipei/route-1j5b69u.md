@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 蘆洲-南港 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 捷運蘆洲站, past 長安街一, then 溪墘, then 徐匯中學, then 捷運三和國中站, then 格致中學(三和路), then 捷運南港軟體園區站, ending at 捷運南港展覽館站(經貿二).[^tdx-bus] 5 confirmed interchanges are recorded in the curated stop-ID join set: Taipei Nangang Exhibition Center, Nangang Software Park, Sanhe Junior High School, St.lgnatius High School and Luzhou.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 8 distinct stops in total: 8 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 19.5 km; weekday service runs from 07:20 to 07:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運蘆洲站-捷運南港展覽館站”; published distance 19.5 km; service span Weekdays: 去程：0720-0720；返程：0720-0720; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

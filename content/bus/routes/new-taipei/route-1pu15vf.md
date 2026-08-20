@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-捷運圓山站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 15 stops from 師大(林口校區), past 醒吾科技大學, then 文化三路中山路口, then 夢想之都, then 捷運林口站, then 民族重慶路口, then 民族承德路口, ending at 捷運圓山站(圓山轉運站).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station and Yuanshan.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 林口-捷運圓山站去、林口-捷運圓山站返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 29 distinct stops in total: 15 stops (outbound, 林口-捷運圓山站去); 14 stops (return, 林口-捷運圓山站返).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 57.4 km; weekday service runs from 06:20 to 17:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口-捷運圓山站”; published distance 57.4 km; service span Weekdays: 去程：0620-1730；返程：1730-1830; Holidays: 去程： - ；返程： -; headway fields Weekdays: 返程林口端提供載客; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-捷運永寧站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 大學風呂(大義路), past 海洋公園, then 臺北大學正門, then 學成路, then 龍恩公園, then 捷運臺北大學站(復興大勇路口), then 中央路三段, ending at 捷運永寧站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Yongning and National Taipei University.[^tdx-bus] The route runs 1 subroute under two operators, 首都客運 and 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 2 segments; the published route length is 13 km; weekday service runs from 06:50 to 07:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-捷運永寧站”; published distance 13 km; service span Weekdays: 去程：0650-0710；返程：0650-0710; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segments.[^ntpc-bus-route-data]

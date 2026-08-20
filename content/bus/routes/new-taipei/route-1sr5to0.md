@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-板橋 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 20 stops from 林口站, past 未來之丘, then 馥都社區, then 林口三井, then 頭前國中, then 捷運新埔站, then 萬坪公園, ending at 捷運府中站(府中路).[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Fuzhong, Xinpu, Touqianzhuang and Xingfu.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 20 distinct stops in total: 20 stops (outbound).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 23 km; weekday service runs from 06:45 to 06:45.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口站-捷運府中站”; published distance 23 km; service span Weekdays: 去程：0645-0645；返程：0645-0645; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]

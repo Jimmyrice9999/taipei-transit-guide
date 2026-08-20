@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運景安站-三峽臺北大學 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 4 stops from 捷運景安站(景平路), past 雙和醫院, then 大學學勤路口, ending at 三峽二站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Jingan.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 捷運景安站-三峽臺北大學去、捷運景安站-三峽臺北大學返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 8 distinct stops in total: 4 stops (outbound, 捷運景安站-三峽臺北大學去); 4 stops (return, 捷運景安站-三峽臺北大學返).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 34.4 km; weekday service runs from 07:15 to 07:15.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運景安站-三峽臺北大學”; published distance 34.4 km; service span Weekdays: 去程：0715-0715；返程：1700-1700; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]

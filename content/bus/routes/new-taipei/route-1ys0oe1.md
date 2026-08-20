@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三芝-馬偕醫學大學 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 2 stops directly from 三芝 to 馬偕醫學大學, with no intermediate stop recorded.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 淡水客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 2 distinct stops in total: 2 stops (outbound).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 1.8 km; no weekday service is published; holiday service runs from 22:45 to 22:45.[^ntpc-bus-route-data] New Taipei's own dataset labels this route's fare category as 一段票 in the original Chinese, filed under the 跳蛙公車 (Jump-frog commuter bus) service category.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三芝-馬偕醫學大學”; published distance 1.8 km; service span Weekdays: 去程： - ；返程： -; Holidays: 去程：2245-2245；返程：2245-2245; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

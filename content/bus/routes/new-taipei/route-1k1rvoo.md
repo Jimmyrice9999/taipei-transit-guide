@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 新店北新路-政大一街 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 4 stops from 捷運七張站, past 景美女中, then 政大, ending at 政大附中.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Qizhang.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 新店北新路-政大一街去、新店北新路-政大一街返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 8 distinct stops in total: 4 stops (outbound, 新店北新路-政大一街去); 4 stops (return, 新店北新路-政大一街返).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 11.4 km; weekday service runs from 07:20 to 07:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新店北新路-政大一街”; published distance 11.4 km; service span Weekdays: 去程：0720-0720；返程：1620-1620; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

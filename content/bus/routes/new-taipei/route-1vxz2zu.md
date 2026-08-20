@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-內科 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 麗寶國際館, past 學成大成路口, then 森林公園, then 臺北大學正門, then 陽光抽水站, then 瑞光路, then 仁寶大樓, ending at 基湖路口.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 14 distinct stops in total: 14 stops (outbound).[^tdx-bus] The published fare is charged over 5 segment; the published route length is 53 km; weekday service runs from 06:40 to 06:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-內科”; published distance 53 km; service span Weekdays: 去程：0640-0650；返程：0640-0650; Holidays: 去程： - ；返程： -; fare 五段票 / 5 segment.[^ntpc-bus-route-data]

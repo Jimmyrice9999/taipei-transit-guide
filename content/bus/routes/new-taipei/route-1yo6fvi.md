@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 瑞芳(經東碇路)-松山車站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 瑞芳火車站, past 魚桀魚坑, then 寶祥吉祥, then 台北大鎮, then 暖暖郵局, then 南港展覽館, then 玉成國小, ending at 松山車站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Nangang, Taipei Nangang Exhibition Center and Songshan.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 瑞芳(經東碇路)-松山車站去、瑞芳(經東碇路)-松山車站返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 22 distinct stops in total: 11 stops (outbound, 瑞芳(經東碇路)-松山車站去); 11 stops (return, 瑞芳(經東碇路)-松山車站返).[^tdx-bus] The published fare is charged over 5 segments; the published route length is 70.1 km; weekday service runs from 06:15 to 08:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “瑞芳-松山車站”; published distance 70.1 km; service span Weekdays: 去程：0615-0800；返程：1730-1925; Holidays: 去程： - ；返程： -; fare 五段票 / 5 segments.[^ntpc-bus-route-data]

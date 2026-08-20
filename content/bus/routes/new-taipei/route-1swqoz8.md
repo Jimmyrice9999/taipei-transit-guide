@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 湯泉-十四張-大坪林 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 12 stops from 湯泉櫻花(中山路口), past 湯泉美地, then 十四張路口, then 莊敬中學(復興路), then 慈濟醫院, then 捷運大坪林站, then 捷運十四張站(民權路), returning to 湯泉櫻花(中山路口).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Dapinglin and Shisizhang.[^tdx-bus] The route runs 1 subroute under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 7.3 km; weekday service runs from 07:10 to 18:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “湯泉-捷運十四張站”; published distance 7.3 km; service span Weekdays: 去程：0710-1850；返程：0710-1850; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
