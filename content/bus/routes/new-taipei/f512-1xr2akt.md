@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F512副 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 29 stops from 烘爐地, past 竟南宮, then 烘爐地, then 華新站, then 捷運南勢角站, then 中和區公所(景平路), then 左岸聯防中心, ending at 新北市選舉委員會.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Nanshijiao and Jingan.[^tdx-bus] The route runs 4 subroutes under a single operator, 中和區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F512副、F512副假日延.[^tdx-bus] The committed record carries 4 direction/variant sequences, 59 distinct stops in total: 23 stops (outbound, F512副); 25 stops (return, F512副); 29 stops (outbound, F512副假日延); 30 stops (return, F512副假日延).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 06:30 to 20:00; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “烘爐地-光復國小”; published distance 99 km; service span Weekdays: 去程：0630-2000；返程：0630-2000; Holidays: 去程：0630-2000；返程：0630-2000; headway fields Weekdays: 平日由橫路里站發車; Holidays: 逢農曆初二、十六及週六 日烘爐地站發車.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “烘爐地-光復國小”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0630-2000；返程：0630-2000; Holidays: 去程：0630-2000；返程：0630-2000; headway fields Weekdays: 平日由橫路里站發車; Holidays: 逢農曆初二、十六及週六 日烘爐地站發車.[^ntpc-bus-route-data]
 
 ## Research status
 
