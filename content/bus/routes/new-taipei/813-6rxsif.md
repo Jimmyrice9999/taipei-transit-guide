@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 813 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 44 stops from 明日世界, past 德音國小, then 捷運泰山站(泰林路), then 頭前國中(中原路), then 新民里, then 重慶國中(國慶路), then 平和里, ending at 變電所.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: Taishan Station, Xinpu, Touqianzhuang, Banqiao, Xinpu Minsheng and Xingfu.[^tdx-bus] The route runs 2 subroutes under two operators, 光華巴士 and 指南客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 813明日世界、813變電所.[^tdx-bus] The committed record carries 2 direction/variant sequences, 90 distinct stops in total: 44 stops (outbound, 813明日世界); 46 stops (return, 813變電所).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 37.6 km; weekday service runs from 05:30 to 22:30, with a published peak headway of 1015 minutes and 1520 minutes off-peak; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “五股-中和”; published distance 37.6 km; service span Weekdays: 去程：0530-2230；返程：0530-2230; Holidays: 去程：0530-2230；返程：0530-2230; headway fields Weekdays: weekday peak 1015; weekday off-peak 1520; 20:30後班距30分; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 837區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 45 stops from 捷運淡水站, past 運動公園, then 高厝坑, then 竹圍活動中心, then 竹林民富街口, then 淡金路16巷, returning to 捷運淡水站.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Zhuwei, Hongshulin, Tamsui and Ganzhenlin.[^tdx-bus] The route runs 3 subroutes under a single operator, 淡水客運.[^tdx-bus] The TDX record files 3 distinct stop-pattern names under this identity: 837區、837區經竿蓁二街福德宮、837區經紅樹林路.[^tdx-bus] The committed record carries 3 direction/variant sequences, 57 distinct stops in total: 38 stops (outbound, 837區); 41 stops (outbound, 837區經竿蓁二街福德宮); 45 stops (outbound, 837區經紅樹林路).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 27.4 km; weekday service runs from 06:20 to 19:10; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡水-竹圍”; published distance 27.4 km; service span Weekdays: 去程：0620-1910；返程：0620-1910; Holidays: 去程：0620-1910；返程：0620-1910; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
