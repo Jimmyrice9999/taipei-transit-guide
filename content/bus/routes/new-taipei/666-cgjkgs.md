@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 666華梵大學 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 69 stops from 景福街, past 溪口國小, then 萬芳路口, then 東南科技大學, then 八分寮, then 下橫坪, then 坑頭, ending at 華梵大學.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Muzha and Jingmei.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 139 distinct stops in total: 69 stops (outbound); 70 stops (return).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 50 km; weekday service runs from 06:48 to 18:48; holiday service instead runs from 06:48 to 18:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “景福街-華梵大學”; published distance 50 km; service span Weekdays: 去程：0648-1848；返程：0648-1848; Holidays: 去程：0648-1800；返程：0648-1800; headway fields Weekdays: 華梵大學發車時間0800 0830 0900 0930 1000 1100 1200 1300 1410 1510 1610 1710 1800 1900 2000；華梵大學寒暑假期間，平日行經華梵大學車次調整為例假日車次06:48~18:00發車; Holidays: 華梵大學發車時間0800 0900 1000 1200 1400 1500 1700 1900; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

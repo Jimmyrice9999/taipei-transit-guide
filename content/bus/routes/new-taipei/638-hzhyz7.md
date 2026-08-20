@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 638 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 65 stops from 五股站, past 陸光國宅一, then 大窠橋, then 宏泰新村, then 新莊國小, then 捷運台北橋站, then 興安華城, ending at 捷運南京復興站.[^tdx-bus] 11 confirmed interchanges are recorded in the curated stop-ID join set: Taishan Guihe Station, Nanjing Fuxing, Xingtian Temple, Zhongshan Elementary School, Minquan W. Rd., Taipei Bridge, Cailiao, Xianse Temple, Touqianzhuang, Fu Jen University and Danfeng.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 128 distinct stops in total: 65 stops (outbound); 63 stops (return).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 44.7 km; weekday service runs from 05:15 to 22:05, with a published peak headway of 1215 minutes and 1520 minutes off-peak; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “五股-捷運南京復興站”; published distance 44.7 km; service span Weekdays: 去程：0515-2205；返程：0515-2205; Holidays: 去程：0515-2205；返程：0515-2205; headway fields Weekdays: weekday peak 1215; weekday off-peak 1520; Holidays: holiday peak 15; holiday off-peak 20; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]

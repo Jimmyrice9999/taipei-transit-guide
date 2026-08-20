@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 657延 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 55 stops from 四海站, past 少年觀護所, then 平和里, then 壽德新村, then 電信訓練所, then 大漢橋, then 江翠國小(文化路), ending at 捷運江子翠站.[^tdx-bus] 5 confirmed interchanges are recorded in the curated stop-ID join set: Fuzhong, Xinpu, Jiangzicui, Banqiao and Xinpu Minsheng.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 97 distinct stops in total: 55 stops (outbound); 42 stops (return).[^tdx-bus] The published fare is charged over 1 segments; the published route length is 29.3 km; weekday service runs from 06:00 to 18:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “宏國德霖科技大學-捷運江子翠站”; published distance 29.3 km; service span Weekdays: 去程：0600-1800；返程：0600-1800; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
