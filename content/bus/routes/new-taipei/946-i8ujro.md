@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 946 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 37 stops from 林口站, past 湖北里2.3鄰路口, then 頭湖路口, then 林口區公所, then 瑞士花園9, then 公西, then 瑞光路, ending at 瑞光港墘路口.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station, Xihu and Gangqian.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 82 distinct stops in total: 37 stops (outbound); 45 stops (return).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 68.5 km; weekday service runs from 05:40 to 22:00; holiday service instead runs from 06:00 to 19:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口-內湖科技園區”; published distance 68.5 km; service span Weekdays: 去程：0540-2200；返程：0540-2200; Holidays: 去程：0600-1900；返程：0600-1900; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]

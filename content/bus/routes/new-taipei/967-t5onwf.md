@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 967直 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 36 stops from 體育大學行政教學大樓, past 長庚大學, then 長庚醫院, then 忠孝路口B, then 民權敦化路口, then 市民敦化路口, then 國父紀念館, ending at 市政府(市府).[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: National Taiwan Sport University Station, Chang Gung Memorial Hospital Station, Zhongxiao Dunhua, Taipei City Hall, Zhongshan Junior High School and Songshan Airport.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 72 distinct stops in total: 36 stops (outbound); 36 stops (return).[^tdx-bus] The published fare is charged over 3 Segment; the published route length is 69.5 km; weekday service runs from 06:15 to 18:00; holiday service instead runs from 07:30 to 19:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “體育大學行政教學大樓-捷運市政府站”; published distance 69.5 km; service span Weekdays: 去程：0615-1800；返程：0615-1800; Holidays: 去程：0730-1930；返程：0730-1930; fare 三段票 / 3 Segment.[^ntpc-bus-route-data]

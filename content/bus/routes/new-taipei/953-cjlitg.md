@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 953 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 49 stops from 金山(南勢), past 金山醫院, then 野柳, then 萬里海水浴場, then 大武崙, then 婦幼福利服務中心, then 復興南路口, ending at 大安健康服務中心.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Zhongxiao Xinsheng, Technology Building and Daan Park.[^tdx-bus] The route runs 2 subroutes under two operators, 基隆客運 and 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 98 distinct stops in total: 49 stops (outbound); 49 stops (return).[^tdx-bus] The published fare is charged over 5 segments; the published route length is 104.7 km; weekday service runs from 06:00 to 19:00; holiday service instead runs from 06:00 to 18:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “金山(南勢)-臺大計資中心”; published distance 104.7 km; service span Weekdays: 去程：0600-1900；返程：0600-1900; Holidays: 去程：0600-1800；返程：0600-1800; headway fields Weekdays: 班表:0600 0625 0645 0730 0900 1005 1050 1150 1300 1410 1530 1545 1610 1720 1900; Holidays: 班表:0600 0740 0920 1100 1230 1430 1600 1800; fare 五段票 / 5 segments.[^ntpc-bus-route-data]

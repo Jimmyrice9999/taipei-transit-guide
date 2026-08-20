@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 966 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 36 stops from 林口站, past 竹林山觀音寺, then 新生街口, then 運動公園, then 安敦新世界, then 啟聰學校, then 成淵高中, ending at 民生西路口.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Taipei Main Station, Daqiaotou and Yuanshan.[^tdx-bus] The route runs 2 subroutes under a single operator, 三重客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 73 distinct stops in total: 36 stops (outbound); 37 stops (return).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 59.3 km; weekday service runs from 05:30 to 22:30, with a published peak headway of 0510 minutes and 1015 minutes off-peak; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口站-臺北車站(鄭州)”; published distance 59.3 km; service span Weekdays: 去程：0530-2230；返程：0530-2230; Holidays: 去程：0530-2230；返程：0530-2230; headway fields Weekdays: weekday peak 0510; weekday off-peak 1015; Holidays: holiday peak 0510; holiday off-peak 1015; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

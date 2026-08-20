@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 953區 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 44 stops from 金山(南勢), past 金山醫院, then 台電北展館, then 翡翠灣, then 石山, then 興寮里, then 新生南路口, ending at 臺北科技大學(忠孝).[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Zhongxiao Xinsheng.[^tdx-bus] The route runs 2 subroutes under two operators, 基隆客運 and 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 85 distinct stops in total: 44 stops (outbound); 41 stops (return).[^tdx-bus] The published fare is charged over 5 segments; the published route length is 97.2 km; weekday service runs from 05:40 to 21:00; holiday service instead runs from 06:50 to 21:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “金山-北科大”; published distance 97.2 km; service span Weekdays: 去程：0540-2100；返程：0540-2100; Holidays: 去程：0650-2100；返程：0650-2100; headway fields Weekdays: 班表:0540 0610 0620 0630 0640 0655 0720 0800 0840 0930 1030 1140 1250 1400 1510 1600 1630 1700 1740 1800 1930 2100; Holidays: 班表:0650 0830 1010 1150 1310 1350 1510 1700 1940 2100; fare 五段票 / 5 segments.[^ntpc-bus-route-data]

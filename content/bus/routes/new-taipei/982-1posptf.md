@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 982區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 19 stops from 榮華中平路口, past 行政院新莊聯合辦公大樓(中央路), then 勞工活動中心, then 政錩汽車, then 思源新北大道路口, then 仁義里, then 捷運頭前庄站(思源路), ending at 捷運新埔站.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: New Taipei Industrial Park Station, Xinpu, Touqianzhuang, Xinpu Minsheng, Xingfu and New Taipei Industrial Park.[^tdx-bus] The route runs 2 subroutes under two operators, 首都客運 and 大都會客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 39 distinct stops in total: 19 stops (outbound); 20 stops (return).[^tdx-bus] The published fare is charged over 1 segments; the published route length is 17 km; weekday service runs from 06:35 to 17:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新莊-捷運新埔站”; published distance 17 km; service span Weekdays: 去程：0635-1730；返程：0635-1730; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
