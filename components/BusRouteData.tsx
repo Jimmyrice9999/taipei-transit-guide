@@ -244,7 +244,10 @@ export function BusStopSequences({ route, references }: { route: BusRoute; refer
       {sequences.length === 0 ? <p className="note">Stop sequence: TBC.</p> : (
         sequences.map((sequence, sequenceIndex) => (
           <details key={sequence.id} open={sequenceIndex === 0} className="bus-sequence">
-            <summary><RichText>{sequence.names.en || sequence.names.zh_tw || `Direction ${sequence.direction ?? 'TBC'}`}</RichText></summary>
+            <summary>
+              <span className="bus-sequence-label"><RichText>{sequence.names.en || sequence.names.zh_tw || `Direction ${sequence.direction ?? 'TBC'}`}</RichText></span>
+              <span className="disclosure-caret" aria-hidden="true" />
+            </summary>
             <div className="compare-scroll">
               <table>
                 <thead><tr><th scope="col">#</th><th scope="col">Stop</th><th scope="col">StopUID</th><th scope="col">Boarding</th><th scope="col">MRT join</th></tr></thead>

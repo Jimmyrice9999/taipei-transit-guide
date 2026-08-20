@@ -4,6 +4,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import BackLink from '@/components/BackLink'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import BusGroupIcon from '@/components/BusGroupIcon'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import { getFolder } from '@/lib/content'
@@ -47,6 +48,7 @@ export default function BusRoutesIndexPage() {
         {groups.map(({ group, folder, routes }) => (
           <li key={group}>
             <Link href={folder.href}>
+              <BusGroupIcon group={group as BusRouteGroup} size={30} className="card-icon" />
               <span className="card-body">
                 <span className="card-title">{folder.title}</span>
               <span className="card-desc">{(() => {
