@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F815嶺頭觀目 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 19 stops from 嶺頭觀日, past 三港8鄰, then 慈安宮, then 雙溪火車站, then 綜合市場, then 辭職嶺, then 芊蓁坑路口, then 後寮子路口, then 虎豹潭, then 太平8鄰(雜貨店), then 料角坑, then 聖寶宮, then 坪溪頭, ending at 灣潭.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 雙溪區公所.[^tdx-bus] The committed record carries 1 direction/variant sequence, 19 distinct stops in total: 19 stops (outbound).[^tdx-bus] No weekday service is published.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]

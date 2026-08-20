@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F723 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 坪林國中, past 茶葉博物館, then 大林橋, then 協德宮, then 第5產銷班, then 鐵馬新樂園, then 蕨類步道, ending at 九芎根親水公園.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 坪林區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F723去、F723返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 15 distinct stops in total: 8 stops (outbound, F723去); 7 stops (return, F723返).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 09:00 to 15:00; holiday service instead runs from 08:30 to 15:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “坪林國中-九芎根親水公園”; published distance 99 km; service span Weekdays: 去程：0900-1500；返程：1000-1600; Holidays: 去程：0830-1530；返程：0930-1630; headway fields Weekdays: 請參照簡圖時刻表; Holidays: 請參照簡圖時刻表.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “坪林國中-九芎根親水公園”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0900-1500；返程：1000-1600; Holidays: 去程：0830-1530；返程：0930-1630; headway fields Weekdays: 請參照簡圖時刻表; Holidays: 請參照簡圖時刻表.[^ntpc-bus-route-data]
 
 ## Research status
 
