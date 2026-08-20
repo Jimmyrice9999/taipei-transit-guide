@@ -112,8 +112,84 @@ unresolved on both pages.
 Gates: cite clean, test:unit 209/209, claims baseline held at 32,
 verify clean, nav 19/19.
 
-Next: new-taipei (562 routes) is the last and largest Part 1 group —
-see the incident note above before delegating it again; one controlled
-batch at a time, never concurrent forks sharing the git working tree.
-Parts 2-7 not started.
-Do not poll Actions. Do not stage the pre-existing untracked `probes/` dir.
+---
+
+## Continuation, same Run 52, 20 August 2026
+
+Worked solo and sequentially throughout — no sub-agents, no forks, one
+change at a time, gates run and a commit+push after each unit of work,
+per the incident note above.
+
+**Part 1 (false-join defect):** already fully closed before this
+continuation started (commit c6459f6, done earlier in Run 52) — all
+1,051 routes audited, 3 more false joins fixed, a station-code badge
+collision fixed on 43 colour-route pages, and `tests/bus-rail-joins.test.mts`
+added as a permanent gate. Re-verified here: gate test still passes.
+The 200m curated-join threshold was separately calibrated and
+spot-checked against the colour-brown pilot in Run 51 Part 2 — also
+re-confirmed, not re-done.
+
+**Part 2 (the stash):** sampled 5 files from `stash@{1}` and cross-
+checked every claimed interchange against the curated join file by
+station code — all five checked out, including one file's "9 confirmed
+interchanges" correctly deduplicating two same-named stations (R27 and
+V01, both Hongshulin) from 10 curated codes, and honest TBC handling
+(flagging a "99 km" value as a shared placeholder). The stash looks
+sound. **Not merged, not dropped** — left on the stack for you to
+review, per instructions.
+
+**Part 3 (bus route prose): DONE.** All 1,051 bus route pages across
+all 19 groups are now 200+ words, including new-taipei's 562 — built
+via `probes/gen-corridor-lib.mjs` + `probes/apply-corridor.mjs`
+(corridor prose from each route's own TDX stop sequence, confirmed-
+only interchanges from the curated join file, operator/subroute/
+variant detail, a plain-English fare/service translation of the New
+Taipei dataset), applied in ~25-route batches with a gate check and
+commit+push after each — about 20 batches for new-taipei alone. Also
+found and fixed, independently of the stash, that 175 of 562 New
+Taipei routes carry a "99 km" placeholder distance stated as fact with
+no caveat in the already-committed "Current service data" prose — same
+finding the stash had already flagged. Fixed across all 175, not just
+a sample.
+
+**Part 4 — the three gaps:**
+1. **Bus fare stages (段次):** researched and written —
+   `content/ticketing/guides/bus-fare-stages.md` +
+   `docs/research/ticketing/bus-fare-stages.md`. Legal basis (the city
+   ordinance's Articles 9 and 11, fetched from Taipei's own law
+   database), the NT$15/12/8 tiers, the two officially-named segment
+   points (only two — Huazhong Bridge and Taipei Main Station; a fuller
+   9-location list exists only on Wikipedia, uncited there, published
+   as secondary), and a real 1–8 segment-count range computed directly
+   from this project's own committed New Taipei data, correcting an
+   unverified "1-4 segment" claim a search summary produced mid-run.
+2. **YouBike station data:** the prior "no TDX dataset" finding was
+   checked directly against the live TDX API and found **wrong** — TDX
+   publishes `Bike/Station/City/{City}`, same shape as the bus Stop
+   API. Verified live: 1,790 Taipei + 1,593 New Taipei + 698 Taoyuan =
+   4,081+ stations. Given that scale (4x the bus network) and how thin
+   individual station facts are compared to a bus route, wrote
+   `docs/youbike-architecture.md` as a proposal — same sequencing
+   `bus-architecture.md` used — rather than building thousands of
+   pages unreviewed. **No data layer or pages built.** Worth an
+   explicit decision from you before anyone builds this out.
+3. **Gondola stations:** built all 4 — the generic content registry
+   already accommodated `content/rail/cable/stations/<slug>.md` with
+   no new app code needed. Each researched from the operator's own
+   per-station pages and zh.wikipedia; new findings include that Zoo
+   Station and the Wenhu Line's own Taipei Zoo MRT station are
+   separate buildings ~350m apart (out-of-station transfer only, not
+   an interchange), and confirmed elevations for the two upper
+   stations. Zoo/Zoo South elevations are TBC — candidate figures
+   existed only as unverified search summaries and were not used.
+
+**Parts 5-7 not started.** Next up: visual polish (collapsible-caret
+and hover-state transitions, an icon system for bus groups/operators/
+models/depots/ticketing), then the Taiwan-groundwork research memo
+(propose only, do not build), then the screenshot/browser-harness
+verification pass.
+
+Do not poll Actions. Do not stage the pre-existing untracked `probes/`
+dir — it now also holds this run's YouBike verification `curl` output
+and the corridor-prose generation scripts, none of it meant to be
+committed as-is.
