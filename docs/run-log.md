@@ -13169,3 +13169,24 @@ research, geometry, CVD, and 212/212 tests. Verification reported no broken
 links, orphan pages, axe errors, or warnings. Known generated link/unused audit
 reports were restored individually; the claims report was retained for the new
 page's counts. No image was added in this unit.
+
+**Continuation — Part 2 San Chung Bus operator unit (2026-08-20).** Audited
+the two existing SanChungBus records before editing: 39 Taipei route
+associations and 72 New Taipei associations, both pointing to one operator
+code. Enriched both pages from the operator's full company profile, the
+government employer record, the Highway Bureau directory and evaluation report,
+New Taipei's 857 electric-bus release, the police group's public membership
+statement, and TDX. The pages now cover the 1968 history, service footprint,
+near-1,000-bus snapshot, 16 dispatch sites, two maintenance yards, 13 Model T
+electric buses, and dated evaluation results. The operator's 7 May 1968 date and
+the government record's 2 April 1968 date remain a published conflict. Fleet
+models, legal parent/merger history, depot capacities/opening dates and route
+contracts remain TBC. The MOEA company-detail URL returned HTTP 403 on a direct
+full fetch and was not used as evidence.
+
+All gates pass: cite, markers, nav, fresh build (1,875 pages), verify, research,
+geometry, CVD, and 212/212 tests. Verification reported no broken links,
+orphan pages, axe errors or warnings. The `託` glyph discovered during build
+was added through the normal font-subset regeneration. Known generated
+link/unused audit reports were restored individually; `docs/claims.json` and
+the search index were retained. No image was added in this unit.
