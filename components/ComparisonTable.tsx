@@ -46,7 +46,9 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
                 const line: Line = getAccent(page.line, page.operator)
                 return (
                   <th scope="col" key={page.slug}>
-                    <Link href={page.href}>{page.title}</Link>
+                    <Link href={page.href}>
+                      <RichText badges={false}>{page.title}</RichText>
+                    </Link>
                     <span className="compare-meta">
                       {/* Outside the column's own link, so this one can link
                           to the line rather than repeat the page above it. */}
@@ -70,7 +72,9 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
                     <td key={page.slug}>
                       {spec?.value ? (
                         <>
-                          <span className="compare-value">{spec.value}</span>
+                          <span className="compare-value">
+                            <RichText badges={false}>{spec.value}</RichText>
+                          </span>
                           {spec.unit && <span className="compare-unit">{spec.unit}</span>}
                         </>
                       ) : (

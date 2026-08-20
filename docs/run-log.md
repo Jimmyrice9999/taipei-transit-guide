@@ -13149,3 +13149,23 @@ selecting an arbitrary system. Updated line-page metadata, navigation, maps,
 station indexes, network summaries, geometry diagnostics, and badges to pass
 operator context where available. Added collision and duplicate-identity tests;
 the full suite passes 212/212. No new system has been added yet.
+
+**Continuation — Part 2 Taipei Bus operator unit (2026-08-20).** Audited the
+61 existing operator records before editing; TDX supplies route associations
+but no fleet-model, depot-capacity, opening-date, or contract-history fields.
+Enriched the Taipei Bus record from the operator, registry, New Taipei, audit,
+and TDX sources: its published 1954 history, legal identity, 877-vehicle
+snapshot, facilities, 656 electric-bus replacement, 667 safety incident, and
+labour-law penalties are now sourced. The page keeps fleet models, legal parent
+relationship, depot capacities/opening dates, and contract history as TBC where
+the checked sources do not establish them. The research file records the
+profile's 20+63+4 route-category count against 126 TDX New Taipei associations
+as a measurement conflict, not a reconciliation. The shared comparison table
+now renders Chinese titles and spec values through the normal rich-text path;
+content font subsets and the search index were regenerated.
+
+All gates pass: cite, marker audit, nav, fresh build (1,875 pages), verify,
+research, geometry, CVD, and 212/212 tests. Verification reported no broken
+links, orphan pages, axe errors, or warnings. Known generated link/unused audit
+reports were restored individually; the claims report was retained for the new
+page's counts. No image was added in this unit.
