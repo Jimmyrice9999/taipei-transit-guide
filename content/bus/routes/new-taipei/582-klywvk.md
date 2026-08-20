@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 582經工業區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 9 stops from 立體停車場(五股公有市場), past 工商展覽中心, then 世翔, then 政錩汽車, then 管理中心, then 捷運新北產業園區站, then 聯合醫院中興院區, ending at 臺北車站(鄭州).[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Taipei Main Station, New Taipei Industrial Park Station, Beimen and New Taipei Industrial Park.[^tdx-bus] The route runs 2 subroutes under a single operator, 國光客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 18 distinct stops in total: 9 stops (outbound); 9 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 26.8 km; weekday service runs from 07:10 to 18:40; holiday service instead runs from 08:00 to 20:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “五股-臺北車站”; published distance 26.8 km; service span Weekdays: 去程：0710-1840；返程：0710-1840; Holidays: 去程：0800-2000；返程：0800-2000; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
