@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 839耕莘 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 31 stops from 二叭子植物園, past 達觀A6站, then 達觀A1站, then 台北菸廠, then 下城社區, then 碧潭橋頭, then 大豐國小, ending at 耕莘醫院(民族路).[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Xindian District Office, Qizhang and Ankang.[^tdx-bus] The route runs 2 subroutes under a single operator, 大南汽車.[^tdx-bus] The committed record carries 2 direction/variant sequences, 61 distinct stops in total: 31 stops (outbound); 30 stops (return).[^tdx-bus] The published fare is charged over 1 segments; the published route length is 20.2 km; weekday service runs from 08:15 to 10:20; holiday service instead runs from 08:30 to 10:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新店達觀-耕莘醫院”; published distance 20.2 km; service span Weekdays: 去程：0815-1020；返程：0815-1020; Holidays: 去程：0830-1030；返程：0830-1030; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
