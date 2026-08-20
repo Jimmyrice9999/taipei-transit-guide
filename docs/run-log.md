@@ -13190,3 +13190,48 @@ orphan pages, axe errors or warnings. The `託` glyph discovered during build
 was added through the normal font-subset regeneration. Known generated
 link/unused audit reports were restored individually; `docs/claims.json` and
 the search index were retained. No image was added in this unit.
+
+**Stop handoff — 20 August 2026.** The requested stop sequence was executed
+after the San Chung Bus unit. Part 0 is fully done: both superseded stashes
+were dropped, the permanent whole-file multiline marker gate is wired into
+the standard gates, its deliberate fixture failure was verified and removed,
+and all 1,051 route pages plus 192 station pages were audited with no marker
+defect remaining. Part 1 is fully done: line records are namespaced by
+operator/system, consumers were updated, and the same-bare-code collision
+test passes. Within Part 2, the Taipei Bus and San Chung Bus operator units
+are fully done and committed; the rest of Part 2 is not.
+
+The stop point was the Metropolitan Bus group in Part 2. The existing Taipei
+Metropolitan record was audited at 70 TDX route associations and the existing
+New Taipei record at 17. Official operator pages/API records, TaiwanJobs,
+the Highway Bureau directory, Taipei government material, the New Taipei
+evaluation PDF, Taipei PTO's fire-response notice, and the TTSB incident
+report were fetched and read. No Metropolitan research file or content page
+was created, no existing Metropolitan file was edited, and no file was
+mid-write. The next controlled unit should be the Metropolitan records, with
+the exact operator-API station-record count rechecked before publication.
+
+Metropolitan evidence leaves explicit conflicts and gaps. TaiwanJobs gives
+establishment 2003-12-16, while the operator and Taipei government describe
+privatization/operation from 2004-01-01; these are different dated events and
+must both be published. TaiwanJobs gives 民權東路六段11巷6號, the Highway
+Bureau directory gives 港墘路3號1樓, and the operator API exposes both the
+head-office and station-address variants. The direct MOEA company-detail
+page returned HTTP 403, so legal parent/merger history remains TBC. The
+checked sources also did not establish a complete fleet/model roster, depot
+capacity or opening dates, or a dated route-contract chronology. The 2025
+route-262 fire is publishable as a sourced incident record (Huade
+RAC-700-ELCB-2800; 20 same-batch Metropolitan buses were checked), but no
+final causal finding should be invented.
+
+Still remaining: the other 59 operator records plus model/depot research and
+pages; the YouBike data layer, district indexes, geometric joins, guide, and
+architecture update; the expanded ticketing guide and ferry section; the
+Taichung Metro Green Line pilot; the entity icon/photo work with MD5 and
+rejection reporting; and the final page-type/screenshot/verify:browser,
+search, orphan, content-collapse, motion, and visual checks. The prior
+YouBike architecture proposal and fare-stage guide are not completion of
+those brief items. The stop gates were green: `npm run cite`, `npm run verify`,
+`npm run nav`, and `npm test` all completed successfully; the latter reported
+212 passing tests and no fact contradictions. Generated link/unused audit
+reports were restored individually, and `probes/` remains untracked.
