@@ -29,9 +29,9 @@ blogs.
 
 ![A green-liveried Maokong Gondola cabin waiting at a covered station platform](/images/gondola/cabin-800.webp "One of the gondola's cabins, at a station platform. — Solomon203, CC BY-SA 4.0, Wikimedia Commons")
 
-Coming: the system (French-built, and what that lineage means for parts and
-maintenance), the stations, the cabins — including the glass-floored ones —
-and the closure history. Bounded scope, no churn, high value: this is early on
-the build list for the same reasons YouBike is.
+The line, its cabins — including the glass-floored ones — and the closure
+history are written up on the [Maokong Gondola](/rail/cable/lines/maokong-gondola/)
+page. Each of the four passenger stations now has its own page too, under
+[Stations](/rail/cable/stations/).
 
 ![Gondola cabins strung along the cable above a wooded ridge, a support tower standing on the slope at the left](/images/gondola/tower-800.webp "Cabins on the span between Taipei Zoo South and Zhinan Temple, a support tower on the ridge at left. — 玄史生, CC BY-SA 3.0, Wikimedia Commons")
