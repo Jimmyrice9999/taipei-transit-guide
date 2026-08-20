@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 918區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 29 stops from 泰山站一(泰山路), past 黎明技術學院, then 泰山分駐所, then 新莊高中一, then 中原路一, then 臺北醫院, then 板橋車站(文化路), ending at 萬坪公園.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: Taishan Station, Banqiao, Xinpu, Touqianzhuang, Xinpu Minsheng and Xingfu.[^tdx-bus] The route runs 2 subroutes under a single operator, 中興巴士.[^tdx-bus] The committed record carries 2 direction/variant sequences, 56 distinct stops in total: 29 stops (outbound); 27 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 24.2 km; weekday service runs from 06:00 to 21:00; holiday service instead runs from 08:00 to 21:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “泰山-板橋”; published distance 24.2 km; service span Weekdays: 去程：0600-2100；返程：0600-2100; Holidays: 去程：0800-2100；返程：0800-2100; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

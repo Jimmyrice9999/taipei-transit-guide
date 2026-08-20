@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 908 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 三峽一站, past 三峽國小(三峽國民運動中心), then 三峽國中一, then 恩主公醫院, then 中正路, then 中和國稅局, then 南華路口, ending at 捷運景安站(景平路).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: National Taipei University and Jingan.[^tdx-bus] The route runs 4 subroutes under a single operator, 臺北客運.[^tdx-bus] The TDX record files 3 distinct stop-pattern names under this identity: 908、908三峽國小(三鶯國民運動中心)(車機)、908南華路口(車機).[^tdx-bus] The committed record carries 4 direction/variant sequences, 24 distinct stops in total: 12 stops (outbound, 908); 12 stops (return, 908); 12 stops (outbound, 908三峽國小(三鶯國民運動中心)(車機)); 12 stops (return, 908南華路口(車機)).[^tdx-bus] The published fare is charged over 2 segments; the published route length is 39.9 km; weekday service runs from 05:30 to 22:00, with a published peak headway of 0812 minutes and 1520 minutes off-peak; holiday service instead runs from 06:00 to 22:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-捷運景安站”; published distance 39.9 km; service span Weekdays: 去程：0530-2200；返程：0530-2200; Holidays: 去程：0600-2200；返程：0600-2200; headway fields Weekdays: weekday peak 0812; weekday off-peak 1520; 上午尖峰:10-15分/下午尖峰:8-12分; Holidays: holiday peak 2030; holiday off-peak 2030; fare 兩段票 / 2 segments.[^ntpc-bus-route-data]
