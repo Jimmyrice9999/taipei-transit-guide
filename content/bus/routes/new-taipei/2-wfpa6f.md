@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 輕軌接駁路線 dataset files 安坑2線 as a Light-rail feeder route (輕軌接駁路線) identity.[^ntpc-category-lrt]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 16 stops from 觀天下, past 服務中心, then 黎明清境, then 輕軌台北小城站(達觀國中小), then 仁康醫院, then 輕軌玫瑰中國城站, ending at 滿堂彩.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Rose China Town.[^tdx-bus] The route runs 2 subroutes under two operators, 大都會客運 and 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 27 distinct stops in total: 16 stops (outbound); 11 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 7.5 km; weekday service runs from 05:50 to 00:00, with a published peak headway of 2030 minutes and 3040 minutes off-peak; holiday service instead runs from 06:00 to 00:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “黎明清境-玫瑰中國城”; published distance 7.5 km; service span Weekdays: 去程：0550-0000；返程：0550-0000; Holidays: 去程：0600-0000；返程：0600-0000; headway fields Weekdays: weekday peak 2030; weekday off-peak 3040; Holidays: holiday peak 30; holiday off-peak 40; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

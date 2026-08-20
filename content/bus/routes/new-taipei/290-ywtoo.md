@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 290副 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 17 stops from 景明街口, past 武功國小(興隆), then 財政園區, then 捷運大坪林站, then 花開富貴, then 新店高中, ending at 中央新村(捷運小碧潭站).[^tdx-bus] 5 confirmed interchanges are recorded in the curated stop-ID join set: Xiaobitan, Dapinglin, Jingmei, Wanlong and Shisizhang.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 40 distinct stops in total: 17 stops (outbound); 23 stops (return).[^tdx-bus] The published fare is charged over 1 segments; the published route length is 13.3 km; weekday service runs from 06:00 to 21:00; holiday service instead runs from 06:00 to 19:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “景明街口-溪園路”; published distance 13.3 km; service span Weekdays: 去程：0600-2100；返程：0600-2100; Holidays: 去程：0600-1930；返程：0600-1930; fare 一段票 / 1 segments.[^ntpc-bus-route-data]

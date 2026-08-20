@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 淡水-國道1號-南港車站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 13 stops from 新市站, past 甜水郡社區, then 頂好, then 捷運淡水站, then 大度立德路口, then 捷運南港展覽館站(經貿二), ending at 南港車站.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: Nangang, Taipei Nangang Exhibition Center, Nangang Software Park, Zhuwei, Hongshulin and Tamsui.[^tdx-bus] The route runs 1 subroute under a single operator, 淡水客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 13 distinct stops in total: 13 stops (outbound).[^tdx-bus] The published route length is 34.3 km; weekday service runs from 06:50 to 07:00, a single early-morning departure window rather than an all-day span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡水-南港車站”; published distance 34.3 km; service span Weekdays: 去程：0650-0700；返程：0650-0700; Holidays: 去程： - ；返程： -; fare 三段票.[^ntpc-bus-route-data]

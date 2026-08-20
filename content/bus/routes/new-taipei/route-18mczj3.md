@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 活動專車 dataset files 漁人碼頭煙火專車 as a Event shuttle (活動專車) identity.[^ntpc-category-event]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 2 stops directly from 淡水轉運站 to 捷運淡水站, with no intermediate stop recorded.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Tamsui.[^tdx-bus] The route runs 4 subroutes under 3 operators, 基隆客運、淡水客運 and 指南客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 漁人碼頭煙火專車20:00前、漁人碼頭煙火專車20:00後.[^tdx-bus] The committed record carries 4 direction/variant sequences: 2 stops (outbound, 漁人碼頭煙火專車20:00前); 2 stops (return, 漁人碼頭煙火專車20:00前); 2 stops (outbound, 漁人碼頭煙火專車20:00後); 2 stops (return, 漁人碼頭煙火專車20:00後).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 6.4 km; no weekday service is published; holiday service runs from 12:00 to 22:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡水轉運站-捷運淡水站”; published distance 6.4 km; service span Weekdays: 去程： - ；返程： -; Holidays: 去程：1200-2200；返程：1200-2200; headway fields Holidays: 視接駁疏運需要派車; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

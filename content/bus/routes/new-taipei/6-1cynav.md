@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 輕軌接駁路線 dataset files 安坑6線 as a Light-rail feeder route (輕軌接駁路線) identity.[^ntpc-category-lrt]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 14 stops from 輕軌雙城站, past 安坑輕軌機廠, then 璦丁堡社區, then 二城, then 雙城安康路口, then 和成路12巷, returning to 輕軌雙城站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Shuangcheng.[^tdx-bus] The route runs 1 subroute under a single operator, 指南客運.[^tdx-bus] The committed record carries 1 direction/variant sequence: 14 stops (outbound).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 3.45 km; weekday service runs from 06:30 to 20:00; holiday service instead runs from 07:00 to 17:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “安泰路-輕軌雙城站”; published distance 3.45 km; service span Weekdays: 去程：0630-2000；返程：0630-2000; Holidays: 去程：0700-1700；返程：0700-1700; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

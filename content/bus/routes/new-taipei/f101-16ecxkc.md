@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F101坪頂 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 49 stops from 捷運淡水站, past 運動公園, then 坪頂國小, then 土地公廟, then 樟老坪, then 淡水圖書館, returning to 捷運淡水站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Tamsui, Ganzhenlin and Danjin Denggong.[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F101坪頂、F101坪頂經文化大樓.[^tdx-bus] The committed record carries 2 direction/variant sequences: 45 stops (outbound, F101坪頂); 49 stops (outbound, F101坪頂經文化大樓).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 05:20 to 22:00; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “捷運淡水站-捷運淡水站”; published distance 99 km; service span Weekdays: 去程：0520-2200；返程： -; Holidays: 去程：0520-2200；返程： -.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “捷運淡水站-捷運淡水站”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0520-2200；返程： -; Holidays: 去程：0520-2200；返程： -.[^ntpc-bus-route-data]
 
 ## Research status
 

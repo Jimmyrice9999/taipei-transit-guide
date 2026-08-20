@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 輕軌接駁路線 dataset files 安坑3線 as a Light-rail feeder route (輕軌接駁路線) identity.[^ntpc-category-lrt]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 16 stops from 伴山別墅(一), past 伴山別墅(二), then 造鎮, then 綠中海一期, then 輕軌台北小城站(達觀國中小), then 台貿八村, ending at 安居公教住宅.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Jinwen University of Science and Technology.[^tdx-bus] The route runs 2 subroutes under two operators, 大都會客運 and 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 32 distinct stops in total: 16 stops (outbound); 16 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 13.3 km; weekday service runs from 06:05 to 00:00, with a published peak headway of 1520 minutes and 3040 minutes off-peak; holiday service instead runs from 06:15 to 00:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “綠野香坡-安忠路”; published distance 13.3 km; service span Weekdays: 去程：0605-0000；返程：0605-0000; Holidays: 去程：0615-0000；返程：0615-0000; headway fields Weekdays: weekday peak 1520; weekday off-peak 3040; Holidays: holiday peak 30; holiday off-peak 40; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

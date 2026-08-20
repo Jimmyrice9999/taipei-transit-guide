@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 活動專車 dataset files 新九號停車場-九份老街 as a Event shuttle (活動專車) identity.[^ntpc-category-event]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 2 stops directly from 新九號停車場 to 九份老街, with no intermediate stop recorded.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 新九號停車場-九份老街去、新九號停車場-九份老街返.[^tdx-bus] The committed record carries 2 direction/variant sequences: 2 stops (outbound, 新九號停車場-九份老街去); 2 stops (return, 新九號停車場-九份老街返).[^tdx-bus] The published fare is charged over 1 Segments; the published route length is 29.6 km; no weekday service is published.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新九號停車場-九份老街”; published distance 29.6 km; service span Weekdays: 去程： - ；返程： -; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segments.[^ntpc-bus-route-data]

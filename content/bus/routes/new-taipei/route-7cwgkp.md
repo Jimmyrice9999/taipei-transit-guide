@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files 塗潭平日線 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 捷運新店站(新店路), past 檳榔路, then 永業路口, then 新潭路1段212號, then 新潭路2段62巷口, then 新潭路3段53號, ending at 新潭路3段112巷口.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Xindian and Xindian District Office.[^tdx-bus] The route runs 13 subroutes under a single operator, 新店區公所.[^tdx-bus] The TDX record files 7 distinct stop-pattern names under this identity: 塗潭平日線第1班、塗潭平日線第2班、塗潭平日線第3班、塗潭平日線第4班、塗潭平日線第5班、塗潭平日線第6班、塗潭平日線第7班.[^tdx-bus] The committed record carries 13 direction/variant sequences: 7 stops (outbound, 塗潭平日線第1班); 7 stops (return, 塗潭平日線第1班); 8 stops (outbound, 塗潭平日線第2班); 8 stops (return, 塗潭平日線第2班); 10 stops (return, 塗潭平日線第3班); 11 stops (outbound, 塗潭平日線第4班); 7 stops (return, 塗潭平日線第4班); 9 stops (outbound, 塗潭平日線第5班); 8 stops (return, 塗潭平日線第5班); 7 stops (outbound, 塗潭平日線第6班); 8 stops (return, 塗潭平日線第6班); 8 stops (outbound, 塗潭平日線第7班); 7 stops (return, 塗潭平日線第7班).[^tdx-bus] The published fare is charged over Free; the published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 05:40 to 17:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “捷運新店站-直潭國小”; published distance 99 km; service span Weekdays: 去程：0540-1740；返程：0540-1740; Holidays: 去程： - ；返程： -; headway fields Weekdays: 直潭國小暑假，返程第6班停駛，返程第5班路線改為新潭路3段112巷口>直潭國小11:40>永業路口11:55; fare 免費 / Free.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “捷運新店站-直潭國小”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0540-1740；返程：0540-1740; Holidays: 去程： - ；返程： -; headway fields Weekdays: 直潭國小暑假，返程第6班停駛，返程第5班路線改為新潭路3段112巷口>直潭國小11:40>永業路口11:55; fare 免費 / Free.[^ntpc-bus-route-data]
 
 ## Research status
 

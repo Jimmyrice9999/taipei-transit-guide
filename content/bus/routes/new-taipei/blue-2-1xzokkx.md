@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 捷運先導公車 dataset files 藍海2線先導公車 as a MRT pioneer bus (捷運先導公車) identity.[^ntpc-category-pioneer]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 29 stops from 新市站, past 勤家捷奏社區, then 輕軌濱海義山站, then 果嶺大道, then 獸醫研究所, then 華南銀行, ending at 捷運淡水站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Tamsui, Binhai Yishan and Binhai Shalun.[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences: 29 stops (outbound); 27 stops (return).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 15.8 km; weekday service runs from 07:52 to 17:50; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡海新市鎮-捷運淡水站”; published distance 15.8 km; service span Weekdays: 去程：0752-1750；返程：0752-1750; Holidays: 去程：0752-1750；返程：0752-1750; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
