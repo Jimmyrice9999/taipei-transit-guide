@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運鶯桃福德站-銘傳大學(桃園校區) as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 5 stops from 捷運鶯桃福德站, past 鳳鳴火車站, then 銘傳資管大樓, then 銘傳設計大樓, ending at 銘傳郵政代辦所.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Yingtao Fude.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 捷運鶯桃福德站-銘傳大學(桃園校區)去、捷運鶯桃福德站-銘傳大學(桃園校區)返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 10 distinct stops in total: 5 stops (outbound, 捷運鶯桃福德站-銘傳大學(桃園校區)去); 5 stops (return, 捷運鶯桃福德站-銘傳大學(桃園校區)返).[^tdx-bus] The published fare is charged over 2 Segments; the published route length is 9.85 km; weekday service runs from 07:30 to 08:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運鶯桃福德站-銘傳大學(桃園校區)”; published distance 9.85 km; service span Weekdays: 去程：0730-0830；返程：1600-1700; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segments.[^ntpc-bus-route-data]

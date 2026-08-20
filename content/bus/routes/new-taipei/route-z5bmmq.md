@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 萬里-內湖科技園區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 16 stops from 萬里橋頭, past 武聖街口, then 興寮里, then 婦幼福利服務中心, then 湖興, then 捷運文德站(碧湖公園), then 仁寶大樓, ending at 基湖路口.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Wende.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 萬里-內湖科技園區去、萬里-內湖科技園區返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 32 distinct stops in total: 16 stops (outbound, 萬里-內湖科技園區去); 16 stops (return, 萬里-內湖科技園區返).[^tdx-bus] The published fare is charged over 4 segment; the published route length is 61.8 km; weekday service runs from 06:00 to 08:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “萬里橋頭-基湖路口”; published distance 61.8 km; service span Weekdays: 去程：0600-0840；返程：1700-1930; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segment.[^ntpc-bus-route-data]

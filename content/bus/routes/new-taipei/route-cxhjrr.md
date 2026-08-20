@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運蘆洲站-內湖科技園區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 捷運蘆洲站, past 捷運三民高中站, then 捷運徐匯中學站, then 格致中學(三和路), then 麗寶大樓, then 瑞光路, then 仁寶大樓, ending at 基湖路口.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Sanhe Junior High School, St.lgnatius High School, Sanmin Senior High School and Luzhou.[^tdx-bus] The route runs 1 subroute under a single operator, 大都會客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 17.2 km; weekday service runs from 07:15 to 08:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運蘆洲站-內湖科技園區”; published distance 17.2 km; service span Weekdays: 去程：0715-0800；返程：0715-0800; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segment.[^ntpc-bus-route-data]

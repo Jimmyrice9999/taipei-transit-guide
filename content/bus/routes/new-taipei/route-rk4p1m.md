@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運七張站-全球工業區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 4 stops from 捷運七張站, past 遠東世紀, then 全球工業總部, returning to 捷運七張站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Qizhang.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 捷運七張站-全球工業區去、捷運七張站-全球工業區返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 8 distinct stops in total: 4 stops (outbound, 捷運七張站-全球工業區去); 4 stops (return, 捷運七張站-全球工業區返).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 10 km; weekday service runs from 08:00 to 09:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運七張站-全球工業區”; published distance 10 km; service span Weekdays: 去程：0800-0900；返程：1740-1830; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

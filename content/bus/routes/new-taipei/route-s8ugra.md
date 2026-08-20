@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 石碇高中-捷運忠孝復興站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 17 stops from 石碇高中, past 八分寮, then 賴仲坑, then 變電所, then 深坑區公所, then 萬順寮, then 捷運大安站(復興), ending at 捷運忠孝復興站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Zhongxiao Fuxing, Technology Building and Daan.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 17 distinct stops in total: 17 stops (outbound).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 15.6 km; weekday service runs from 07:00 to 07:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “石碇高中-捷運忠孝復興站”; published distance 15.6 km; service span Weekdays: 去程：0700-0700；返程：0700-0700; Holidays: 去程： - ；返程： -; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

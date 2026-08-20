@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 石門-捷運紅樹林站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 石門區公所, past 石門, then 薪水居易, then 北勢溪口, then 下圭柔山, then 北新路口, then 捷運紅樹林站, ending at 竹圍高中.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Hongshulin, Ganzhenlin and Danjin Beixin.[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 石門-捷運紅樹林站延、石門-捷運紅樹林站(寒暑假行駛).[^tdx-bus] The committed record carries 2 direction/variant sequences, 14 distinct stops in total: 14 stops (outbound, 石門-捷運紅樹林站延); 13 stops (outbound, 石門-捷運紅樹林站(寒暑假行駛)).[^tdx-bus] The published fare is charged over 4 segments; the published route length is 25.5 km; weekday service runs from 06:00 to 06:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “石門-捷運紅樹林站”; published distance 25.5 km; service span Weekdays: 去程：0600-0600；返程：0600-0600; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segments.[^ntpc-bus-route-data]

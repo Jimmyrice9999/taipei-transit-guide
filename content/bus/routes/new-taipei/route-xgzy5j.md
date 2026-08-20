@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 中和環河西路-永和仁愛路 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 環河西路, past 保順路口, then 泰隆柏園, then 仁愛公園, then 仁愛永平路口, then 中溪里, then 仁愛路(一), ending at 仁愛路.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Dingxi.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 8 distinct stops in total: 8 stops (outbound).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 1.8 km; weekday service runs from 07:45 to 08:15.[^ntpc-bus-route-data] New Taipei's own dataset labels this route's fare category as 一段票 in the original Chinese, filed under the 跳蛙公車 (Jump-frog commuter bus) service category.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “環河西路-仁愛路”; published distance 1.8 km; service span Weekdays: 去程：0745-0815；返程：0745-0815; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

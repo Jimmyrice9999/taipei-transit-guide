@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 中和左岸社區-捷運頂溪站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 聯防中心, past 綠之公園, then 左岸聯防中心, then 中和抽水站, then 環河西路, then 保順路口, then 泰隆柏園, ending at 捷運頂溪站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Dingxi.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 8 distinct stops in total: 8 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 5 km; weekday service runs from 06:30 to 08:20.[^ntpc-bus-route-data] New Taipei's own dataset labels this route's fare category as 二段票 in the original Chinese, filed under the 跳蛙公車 (Jump-frog commuter bus) service category.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “中和左岸社區-捷運頂溪站”; published distance 5 km; service span Weekdays: 去程：0630-0820；返程：0630-0820; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

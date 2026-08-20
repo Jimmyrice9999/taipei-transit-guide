@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 合宜住宅-捷運亞東醫院站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 5 stops from 氣象站, past 合宜一路, then 合宜路(一), then 合宜路, ending at 捷運亞東醫院站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Far Eastern Hospital.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 5 distinct stops in total: 5 stops (outbound).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 1.9 km; weekday service runs from 07:35 to 07:35.[^ntpc-bus-route-data] New Taipei's own dataset labels this route's fare category as 一段票 in the original Chinese, filed under the 跳蛙公車 (Jump-frog commuter bus) service category.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “合宜住宅-捷運亞東醫院站”; published distance 1.9 km; service span Weekdays: 去程：0735-0735；返程：0735-0735; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 北大社區-捷運頂埔站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 姑娘廟, past 大成路, then 森林公園, then 學勤路, then 臺北大學正門, then 龍埔國小, then 捷運橫溪站, ending at 捷運頂埔站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Dingpu, Hengxi and Sanxia.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over 2 segments; the published route length is 8.2 km; weekday service runs from 07:00 to 07:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “北大社區-捷運頂埔站”; published distance 8.2 km; service span Weekdays: 去程：0700-0710；返程：0700-0710; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segments.[^ntpc-bus-route-data]

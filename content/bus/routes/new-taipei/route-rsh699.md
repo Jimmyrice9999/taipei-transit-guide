@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運忠孝復興站-三峽 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 捷運忠孝復興站, past 信義敦化路口, then 成功國宅, then 敦化和平路口, then 北美館社區, then 學勤路, then 大學學成路口, ending at 三峽一站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Zhongxiao Fuxing and National Taipei University.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 4 Segments; the published route length is 29.6 km; weekday service runs from 17:30 to 18:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運忠孝復興站-三峽”; published distance 29.6 km; service span Weekdays: 去程：1730-1830；返程：1730-1830; Holidays: 去程： - ；返程： -; fare 四段票 / 4 Segments.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-捷運忠孝敦化站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 台北新都, past 林口高中, then 竹林仁愛路口, then 中華電信, then 農會分處, then 行天宮, then 松山機場, ending at 忠孝敦化路口.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Zhongxiao Dunhua, Zhongshan Junior High School and Songshan Airport.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 14 distinct stops in total: 14 stops (outbound).[^tdx-bus] The published fare is charged over 3 Segment; the published route length is 28.2 km; weekday service runs from 07:05 to 08:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “台北新都-忠孝敦化路口”; published distance 28.2 km; service span Weekdays: 去程：0705-0805；返程：0705-0805; Holidays: 去程： - ；返程： -; fare 三段票 / 3 Segment.[^ntpc-bus-route-data]

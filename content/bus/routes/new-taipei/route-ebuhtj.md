@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 瑞芳-南港 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 16 stops from 海濱, past 瑞濱, then 榮興, then 調和街觀海街口, then 三坑口, then 深澳國小, then 南港展覽館, ending at 南港轉運站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Nangang and Taipei Nangang Exhibition Center.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 瑞芳-南港去、瑞芳-南港返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 31 distinct stops in total: 16 stops (outbound, 瑞芳-南港去); 15 stops (return, 瑞芳-南港返).[^tdx-bus] The published fare is charged over 6 Segments; the published route length is 66.6 km; weekday service runs from 06:40 to 17:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “瑞芳-南港”; published distance 66.6 km; service span Weekdays: 去程：0640-1700；返程：0750-1810; Holidays: 去程： - ；返程： -; fare 六段票 / 6 Segments.[^ntpc-bus-route-data]

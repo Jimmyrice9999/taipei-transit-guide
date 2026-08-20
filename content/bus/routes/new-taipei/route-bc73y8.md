@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 泰山-內湖 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 泰山國小, past 泰山公有市場一, then 捷運泰山站, then 中原中平路口(中平國中), then 瑞光路, then 瑞光港墘路口, then 基湖路口, ending at 捷運劍南路站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Taishan Station and Jiannan Rd..[^tdx-bus] The route runs 2 subroutes under a single operator, 中興巴士.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 泰山-內湖去、泰山-內湖返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 22 distinct stops in total: 11 stops (outbound, 泰山-內湖去); 11 stops (return, 泰山-內湖返).[^tdx-bus] The published route length is 50.8 km; weekday service runs from 06:50 to 07:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “泰山-內湖”; published distance 50.8 km; service span Weekdays: 去程：0650-0705；返程：1810-1830; Holidays: 去程： - ；返程： -; fare 兩段票.[^ntpc-bus-route-data]

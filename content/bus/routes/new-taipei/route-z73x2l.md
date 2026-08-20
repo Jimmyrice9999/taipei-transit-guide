@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口(文化北路)-捷運圓山站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 新北特殊教育學校, past 忠福路南勢一街口, then 大拇指便利店, then 未來家社區, then 未來城社區, then 捷運林口站, then 啟聰學校, ending at 捷運圓山站(圓山轉運站).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station and Yuanshan.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 14 distinct stops in total: 14 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 22.1 km; weekday service runs from 06:30 to 06:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新北特殊教育學校-捷運圓山站”; published distance 22.1 km; service span Weekdays: 去程：0630-0650；返程： -; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

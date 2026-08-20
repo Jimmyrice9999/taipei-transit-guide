@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-中和高中 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 20 stops from 三峽二站, past 姑娘廟, then 礁溪里, then 捷運媽祖田站(太陽城社區), then 土城國中, then 中正國中, then 變電所, ending at 中和高中.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Dingpu, Yongning, Tucheng and Mazutian.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 33 distinct stops in total: 20 stops (outbound); 13 stops (return).[^tdx-bus] The published fare is charged over 2 segments; the published route length is 31.6 km; weekday service runs from 06:25 to 06:25.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-中和高中”; published distance 31.6 km; service span Weekdays: 去程：0625-0625；返程：0625-0625; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segments.[^ntpc-bus-route-data]

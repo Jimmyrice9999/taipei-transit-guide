@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 中和自立路-新店 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 9 stops from 秀山國小, past 民生路, then 得和路(民生路), then 六合社區, then 秀朗路三段70巷, then 秀景里, then 花開富貴, then 耕莘醫院(三民路), ending at 調查局.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Xiulang Bridge.[^tdx-bus] The route runs 1 subroute under a single operator, 首都客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 9 distinct stops in total: 9 stops (outbound).[^tdx-bus] No weekday service is published.[^ntpc-bus-route-data] The route is a one-way working with no return leg recorded in either the committed TDX layer or the New Taipei route-service row checked for this entry, ending at 調查局 rather than retracing its own outbound stops.[^tdx-bus][^ntpc-bus-route-data]
+
 ## Current service data
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]

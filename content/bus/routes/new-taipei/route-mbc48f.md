@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 政大附中-捷運景美站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 7 stops from 政大附中, past 政大, then 忠順廟, then 景美女中, then 捷運七張站, then 捷運大坪林站, ending at 捷運景美站.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Qizhang, Dapinglin and Jingmei.[^tdx-bus] The route runs 1 subroute under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 7 distinct stops in total: 7 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segments; the published route length is 8 km; weekday service runs from 17:10 to 17:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “政大附中-捷運景美站”; published distance 8 km; service span Weekdays: 去程：1710-1710；返程：1710-1710; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segments.[^ntpc-bus-route-data]

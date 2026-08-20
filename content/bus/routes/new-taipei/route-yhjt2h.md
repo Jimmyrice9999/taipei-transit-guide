@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files 吉林線 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 20 stops from 貢寮火車站, past 貢寮行政大樓, then 大嶺路口, then 桃源山莊, then 桃源谷牛埔, then 嵩陽街18號, returning to 貢寮火車站.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 貢寮區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 幸福巴士吉林線、幸福小黃吉林線.[^tdx-bus] The committed record carries 2 direction/variant sequences, 20 distinct stops in total: 13 stops (outbound, 幸福巴士吉林線); 20 stops (outbound, 幸福小黃吉林線).[^tdx-bus] The published fare is charged over Free; the published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 07:50 to 14:10; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “貢寮火車站-貢寮火車站”; published distance 99 km; service span Weekdays: 去程：0750-1410；返程：0750-1410; Holidays: 去程：0750-1410；返程：0750-1410; fare 免費 / Free.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “貢寮火車站-貢寮火車站”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0750-1410；返程：0750-1410; Holidays: 去程：0750-1410；返程：0750-1410; fare 免費 / Free.[^ntpc-bus-route-data]
 
 ## Research status
 

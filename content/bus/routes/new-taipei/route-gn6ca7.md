@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-捷運台大醫院站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 14 stops from 三峽二站, past 學成大成路口, then 森林公園, then 臺北大學正門, then 捷運府中站, then 捷運西門站, then 博物館(襄陽), ending at 捷運台大醫院站.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Fuzhong, Banqiao, Ximen and NTU Hospital.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 27 distinct stops in total: 14 stops (outbound); 13 stops (return).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 57.6 km; weekday service runs from 06:30 to 17:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-捷運台大醫院站”; published distance 57.6 km; service span Weekdays: 去程：0630-1740；返程：0630-1740; Holidays: 去程： - ；返程： -; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

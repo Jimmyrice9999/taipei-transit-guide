@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 五股-板橋 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 7 stops from 五股服務社, past 五股區公所(五股公有市場), then 中興路三段, then 板橋花市, then 華翠大橋, then 中山國中(縣民大道), ending at 新北板橋公車站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Banqiao and Xinpu Minsheng.[^tdx-bus] The route runs 2 subroutes under two operators, 淡水客運 and 指南客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 五股-板橋去、五股-板橋返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 16 distinct stops in total: 7 stops (outbound, 五股-板橋去); 9 stops (return, 五股-板橋返).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 24.3 km; weekday service runs from 06:40 to 07:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “五股-板橋”; published distance 24.3 km; service span Weekdays: 去程：0640-0740；返程：1745-1745; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

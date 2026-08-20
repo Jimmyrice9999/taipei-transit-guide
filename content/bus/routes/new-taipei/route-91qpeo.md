@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運頂溪站-捷運頂埔站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 24 stops from 捷運頂溪站, past 中興街口, then 連城中和路口, then 中和高中, then 中正國中, then 土城醫院, then 土城工業區, ending at 捷運頂埔站.[^tdx-bus] 5 confirmed interchanges are recorded in the curated stop-ID join set: Dingpu, Yongning, Tucheng, Mazutian and Dingxi.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 49 distinct stops in total: 24 stops (outbound); 25 stops (return).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 27 km; weekday service runs from 16:10 to 17:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運頂溪站-捷運頂埔站”; published distance 27 km; service span Weekdays: 去程：1610-1700；返程：1610-1700; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
