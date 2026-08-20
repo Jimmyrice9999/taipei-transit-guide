@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F212 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 13 stops from 泰山公有市場, past 福泰里, then 泰山國小, then 泰山國中, then 堅實橋, then 泰山郵局, returning to 泰山公有市場.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 泰山區公所.[^tdx-bus] The committed record carries 1 direction/variant sequence, 13 distinct stops in total: 13 stops (outbound).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 05:50 to 17:20; holiday service instead runs from 06:25 to 17:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “泰山公有市場-泰山國中”; published distance 99 km; service span Weekdays: 去程：0550-1720；返程：0550-1720; Holidays: 去程：0625-1720；返程：0625-1720.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “泰山公有市場-泰山國中”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0550-1720；返程：0550-1720; Holidays: 去程：0625-1720；返程：0625-1720.[^ntpc-bus-route-data]
 
 ## Research status
 
