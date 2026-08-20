@@ -183,13 +183,47 @@ a sample.
    stations. Zoo/Zoo South elevations are TBC — candidate figures
    existed only as unverified search summaries and were not used.
 
-**Parts 5-7 not started.** Next up: visual polish (collapsible-caret
-and hover-state transitions, an icon system for bus groups/operators/
-models/depots/ticketing), then the Taiwan-groundwork research memo
-(propose only, do not build), then the screenshot/browser-harness
-verification pass.
+**Parts 5-7: also done.**
+
+- **Part 5 (visual polish).** Caret transitions on `.disclosure-caret`
+  (station index, New Taipei's 7 subgroups) and the bus stop-sequence
+  disclosure, which had no caret at all before. Hover-background
+  transitions on `.card-list a`, `.data-card`, `.site-search-results
+  a`. A 6-glyph bus-group icon system (`BusGroupIcon.tsx`), wired into
+  `/bus/routes/` only — models/depots have no entity pages yet so no
+  icon was added for them, and operators/ticketing were scoped out
+  deliberately rather than rushed (see the commit for why).
+- **Part 6 (Taiwan groundwork).** `docs/taiwan-expansion.md`. TDX
+  coverage for TRA/THSR/KRTC/TMRT verified live, not assumed. Found a
+  real architectural risk worth knowing before anyone adds a fourth
+  rail system: `lib/lines.ts`'s line-code map has no operator
+  namespace, so a same-coded line from a new system would silently
+  overwrite an existing entry. Proposes Taichung Metro (TMRT, one
+  line, 18 stations) as the smallest pilot if one is wanted. Nothing
+  built.
+- **Part 7 (verify by looking).** Full fresh build, a 13-page-type x
+  7-viewport screenshot matrix reviewed by eye, then `npm run
+  verify:browser` run to completion: reflow clean across 1,400 pages
+  at both zoom-equivalent widths, axe-core zero violations, keyboard
+  traversal clean on all 39 page types, all print PDFs generated.
+  Found and fixed a real gap along the way: the harness's own curated
+  `PAGE_TYPES` list had no entry for any page type this continuation
+  added (gondola stations, the fare-stages guide) — the exact
+  recurring failure mode its own comments already warn about from two
+  earlier runs. Fixed before the final run, not noted and left.
+
+Full detail on all of this — findings, what was checked, what
+conflicted, what stayed TBC — is in `docs/run-log.md`'s "Run 52
+continuation, 20 August 2026" entry, and in each part's own commit
+message.
+
+**What's left, if you want more:** the YouBike and Taiwan-expansion
+proposals both stop at "verified and scoped" — building either is a
+real decision for you to make, not something either document assumes.
+The incident stash (`git stash list`, still 2 entries) is still there,
+sampled and found sound, still yours to review or drop.
 
 Do not poll Actions. Do not stage the pre-existing untracked `probes/`
-dir — it now also holds this run's YouBike verification `curl` output
-and the corridor-prose generation scripts, none of it meant to be
-committed as-is.
+dir — it now also holds this run's YouBike verification `curl` output,
+the corridor-prose generation scripts, and the screenshot-matrix
+script, none of it meant to be committed as-is.
