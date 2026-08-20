@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-內湖科技園區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 幸福市, past 文三信義路口, then 未來之光, then 未來城社區, then 行政園區, then 陽光抽水站, then 瑞光港墘路口, ending at 捷運西湖站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station and Xihu.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 29.3 km; weekday service runs from 07:05 to 07:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口-內湖園區”; published distance 29.3 km; service span Weekdays: 去程：0705-0705；返程：0705-0705; Holidays: 去程： - ；返程： -; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]

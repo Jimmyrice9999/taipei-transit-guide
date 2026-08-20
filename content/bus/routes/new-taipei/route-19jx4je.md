@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-捷運府中站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 三峽一站, past 新興街口, then 安溪國小(李梅樹紀念館), then 大同路, then 介壽里, then 三峽老街(復興路), then 恩主公醫院, ending at 捷運府中站(府中路).[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Fuzhong and National Taipei University.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 20 km; weekday service runs from 06:15 to 06:35.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-捷運府中站”; published distance 20 km; service span Weekdays: 去程：0615-0635；返程： -; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]

@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 淡水新市鎮-板橋 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 15 stops from 新市站, past 理想家社區(新市二路), then 中山濱海路口, then 米粉寮, then 台電宿舍, then 捷運竹圍站, then 捷運新埔站, ending at 新北板橋公車站.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: Banqiao, Xinpu, Zhuwei, Hongshulin, Ganzhenlin and Tamsui District Office.[^tdx-bus] The route runs 1 subroute under a single operator, 淡水客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 15 distinct stops in total: 15 stops (outbound).[^tdx-bus] The published fare is charged over Charge for 3 sections; the published route length is 30 km; weekday service runs from 07:10 to 07:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “淡水新市鎮-板橋”; published distance 30 km; service span Weekdays: 去程：0710-0710；返程：0710-0710; Holidays: 去程： - ；返程： -; fare 三段票 / Charge for 3 sections.[^ntpc-bus-route-data]

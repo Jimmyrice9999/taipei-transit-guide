@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 台北小城-大坪林 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 僑愛七路, past 僑愛公園, then 台北小城(二), then 台北小城(三), then 輕軌耕莘安康院區站, then 檳榔路, then 捷運七張站, ending at 大坪林.[^tdx-bus] 3 confirmed interchanges are recorded in the curated stop-ID join set: Xindian District Office, Qizhang and Dapinglin.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 24 distinct stops in total: 11 stops (outbound); 13 stops (return).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 18.5 km; weekday service runs from 06:30 to 19:35; holiday service instead runs from 08:00 to 16:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “台北小城-大坪林”; published distance 18.5 km; service span Weekdays: 去程：0630-1935；返程：0630-1935; Holidays: 去程：0800-1600；返程：0800-1600; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

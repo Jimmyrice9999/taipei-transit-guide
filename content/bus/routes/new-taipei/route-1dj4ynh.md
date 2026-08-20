@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 新店-汐止 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 17 stops from 捷運新店站(新店路), past 捷運新店區公所站(北新), then 耕莘醫院(中正路), then 捷運大坪林站(民權路), then 寶中路口, then 捷運南港展覽館站(經貿二), then 連興街口, ending at 秀峰高中(忠孝東路).[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Taipei Nangang Exhibition Center, Xindian, Xindian District Office and Dapinglin.[^tdx-bus] The route runs 2 subroutes under a single operator, 中興巴士.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 新店-汐止去、新店-汐止返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 34 distinct stops in total: 17 stops (outbound, 新店-汐止去); 17 stops (return, 新店-汐止返).[^tdx-bus] The published route length is 52 km; weekday service runs from 07:40 to 07:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新店-汐止”; published distance 52 km; service span Weekdays: 去程：0740-0740；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 三段票.[^ntpc-bus-route-data]

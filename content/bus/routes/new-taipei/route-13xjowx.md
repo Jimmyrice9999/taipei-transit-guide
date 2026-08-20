@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 湯泉-崇光中學 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 7 stops from 湯泉美地, past 湯泉櫻花(中山路口), then 中央新村(捷運小碧潭站), then 新店高中, then 中正國小(三民路), then 調查局, ending at 崇光中學.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Xiaobitan.[^tdx-bus] The route runs 1 subroute under a single operator, 欣欣客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 7 distinct stops in total: 7 stops (outbound).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 3.7 km; weekday service runs from 07:00 to 07:00.[^ntpc-bus-route-data] New Taipei's own dataset labels this route's fare category as 一段票 in the original Chinese, filed under the 跳蛙公車 (Jump-frog commuter bus) service category.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “湯泉美地-崇光中學”; published distance 3.7 km; service span Weekdays: 去程：0700-0700；返程：0700-0700; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

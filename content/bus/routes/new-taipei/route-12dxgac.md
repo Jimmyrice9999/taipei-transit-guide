@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 樹林後火車站-海洋公園 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 4 stops from 樹林後火車站, past 樹林仁愛醫院, then 東昇福德宮, ending at 海洋公園.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 首都客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 4 distinct stops in total: 4 stops (outbound).[^tdx-bus] No weekday service is published.[^ntpc-bus-route-data] Both the route's own title and its published endpoints name Shulin Train Station and 海洋公園 (Ocean Park) directly, with no separate route number in the current TDX or New Taipei records checked for this entry.[^tdx-bus][^ntpc-bus-route-data]
+
 ## Current service data
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]

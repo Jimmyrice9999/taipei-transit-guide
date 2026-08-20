@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 中和-新北板橋公車站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 華安街口, past 自強國小, then 國光派出所, then 莒光路, then 德光路口, then 德光路, then 民德路, then 福德里, then 後埔國小, then 實踐成都街口, then 新北市政府(新府路), ending at 新北板橋公車站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Banqiao.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 3 km; weekday service runs from 06:40 to 08:30.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “中和-新北板橋公車站”; published distance 3 km; service span Weekdays: 去程：0640-0830；返程：0640-0830; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

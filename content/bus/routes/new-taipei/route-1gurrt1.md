@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 三峽-臺北市信義區 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 三峽一站, past 新興街口, then 大學學成路口, then 學勤路, then 森林公園, then 上善若水社區, then 市政府(松高), ending at 興雅國中.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: National Taipei University.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 11 distinct stops in total: 11 stops (outbound).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 40.5 km; weekday service runs from 07:10 to 07:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “三峽-臺北市信義區”; published distance 40.5 km; service span Weekdays: 去程：0710-0740；返程：0710-0740; Holidays: 去程： - ；返程： -; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

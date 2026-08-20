@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 蘆洲-中正高中 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 穀保家商, past 長榮光華路口, then 長榮光明路口, then 捷運三民高中站, then 捷運徐匯中學站, then 慈化公園, then 五華國小, ending at 中正高中.[^tdx-bus] 4 confirmed interchanges are recorded in the curated stop-ID join set: Sanhe Junior High School, St.lgnatius High School, Sanmin Senior High School and Luzhou.[^tdx-bus] The route runs 1 subroute under a single operator, 中興巴士.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over 2 Segment; the published route length is 14.4 km; weekday service runs from 06:50 to 06:50.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “蘆洲-中正高中”; published distance 14.4 km; service span Weekdays: 去程：0650-0650；返程： -; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]

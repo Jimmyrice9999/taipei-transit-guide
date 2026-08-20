@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 湯泉-大坪林-湯泉 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 27 stops from 湯泉櫻花(中山路口), past 湯泉美地, then 斯馨路口, then 民權路口, then 耕莘醫院(民族路), then 湯泉首席, then 和平社區, ending at 斯馨祠.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Xiaobitan and Dapinglin.[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 湯泉櫻花-大坪林-湯泉櫻花、湯泉櫻花-大坪林-湯泉櫻花繞.[^tdx-bus] The committed record carries 2 direction/variant sequences, 27 distinct stops in total: 25 stops (outbound, 湯泉櫻花-大坪林-湯泉櫻花); 27 stops (outbound, 湯泉櫻花-大坪林-湯泉櫻花繞).[^tdx-bus] The published fare is charged over 1 segment; the published route length is 8.2 km; weekday service runs from 06:00 to 23:00; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “湯泉櫻花-湯泉櫻花”; published distance 8.2 km; service span Weekdays: 去程：0600-2300；返程：0600-2300; Holidays: 去程：0600-2300；返程：0600-2300; fare 一段票 / 1 segment.[^ntpc-bus-route-data]

@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files 貢寮區學生專車 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 18 stops from 貢寮國中, past 貢寮國小, then 媽祖廟, then 警備班, then 金沙灣, then 龍洞南口海洋公園, then 龍洞, ending at 龍洞灣海洋公園.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 貢寮區公所.[^tdx-bus] The committed record carries 1 direction/variant sequence, 18 distinct stops in total: 18 stops (outbound).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 18:00 to 18:00.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “貢寮國中-龍洞灣公園”; published distance 99 km; service span Weekdays: 去程：1800-1800；返程：1800-1800; Holidays: 去程： - ；返程： -; headway fields Weekdays: 配合該國中日程，依其申請日另指定發車日期.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “貢寮國中-龍洞灣公園”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：1800-1800；返程：1800-1800; Holidays: 去程： - ；返程： -; headway fields Weekdays: 配合該國中日程，依其申請日另指定發車日期.[^ntpc-bus-route-data]
 
 ## Research status
 

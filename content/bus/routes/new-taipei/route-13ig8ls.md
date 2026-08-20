@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 新店(綠中海)-捷運新店站 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 新店站, past 大茅埔, then 安康車子路口, then 台北菸廠, then 浪漫貴族, then 公崙新村(豐榮醫院), then 安康派出所, then 下城社區, then 溪頭, ending at 捷運新店站(新店路).[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Xindian.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over 1 Segment; the published route length is 7.2 km; weekday service runs from 05:35 to 06:35.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “新店站-捷運新店站(新店路)”; published distance 7.2 km; service span Weekdays: 去程：0535-0635；返程：0535-0635; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]

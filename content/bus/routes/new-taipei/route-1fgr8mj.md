@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 捷運新店站-坪林 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 8 stops from 捷運新店站(新店路), past 碧潭橋頭, then 檳榔路, then 捷運新店區公所站(北新), then 中正路, then 坪林國中, then 水柳腳商圈, ending at 坪林遊客中心.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Xindian and Xindian District Office.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 15 distinct stops in total: 8 stops (outbound); 7 stops (return).[^tdx-bus] The published fare is charged over 4 segments; the published route length is 62.2 km; weekday service runs from 07:05 to 07:05.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “捷運新店站-坪林”; published distance 62.2 km; service span Weekdays: 去程：0705-0705；返程：0705-0705; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segments.[^ntpc-bus-route-data]

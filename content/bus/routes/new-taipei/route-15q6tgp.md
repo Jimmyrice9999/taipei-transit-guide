@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 瑞芳-內科(北客) as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 瑞芳火車站, past 潭美國小(舊宗), then 新湖一路口, then 時報廣場, then 公館山, then 瑞光港墘路口, then 仁寶大樓, ending at 基湖路口.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 臺北客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 瑞芳-內科(北客)去、瑞芳-內科(北客)返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 20 distinct stops in total: 10 stops (outbound, 瑞芳-內科(北客)去); 10 stops (return, 瑞芳-內科(北客)返).[^tdx-bus] The published fare is charged over 4 segment; the published route length is 59.8 km; weekday service runs from 07:10 to 07:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “瑞芳-內科”; published distance 59.8 km; service span Weekdays: 去程：0710-0710；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segment.[^ntpc-bus-route-data]

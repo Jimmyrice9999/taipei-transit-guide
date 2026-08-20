@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 瑞芳-松山車站(基客) as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 11 stops from 瑞芳火車站, past 魚桀魚坑, then 大寮, then 四腳亭, then 碇內(博愛仁家), then 十六坑, then 石潭公園(成功), ending at 松山車站.[^tdx-bus] 1 confirmed interchange is recorded in the curated stop-ID join set: Songshan.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 瑞芳-松山車站(基客)去、瑞芳-松山車站(基客)返.[^tdx-bus] The committed record carries 2 direction/variant sequences, 22 distinct stops in total: 11 stops (outbound, 瑞芳-松山車站(基客)去); 11 stops (return, 瑞芳-松山車站(基客)返).[^tdx-bus] The published fare is charged over 4 segment; the published route length is 60 km; weekday service runs from 06:00 to 18:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “瑞芳-松山車站”; published distance 60 km; service span Weekdays: 去程：0600-1820；返程：0720-2020; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segment.[^ntpc-bus-route-data]

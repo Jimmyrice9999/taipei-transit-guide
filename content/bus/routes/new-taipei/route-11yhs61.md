@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 跳蛙公車 dataset files 林口-臺北長庚醫院 as a Jump-frog commuter bus (跳蛙公車) identity.[^ntpc-category-jumpfrog]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 10 stops from 醒吾科技大學, past 富貴森林公園, then 未來市社區, then 未來城社區, then 捷運林口站, then 捷運行天宮站(松江路), then 臺北大學(臺北校區), ending at 長庚醫院.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station and Xingtian Temple.[^tdx-bus] The route runs 1 subroute under a single operator, 三重客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 10 distinct stops in total: 10 stops (outbound).[^tdx-bus] The published fare is charged over 2 segment; the published route length is 27.8 km; weekday service runs from 06:50 to 07:10.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “醒吾科技大學-臺北長庚醫院”; published distance 27.8 km; service span Weekdays: 去程：0650-0710；返程：0650-0710; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segment.[^ntpc-bus-route-data]
