@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F132經青山 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 9 stops from 二號倉庫, past 埔頭坑, then 名人文物館, then 八賢活動中心, then 德賢一路口, then 木馬埕, then 內柑宅(土匪市集), ending at 青山路(櫻花步道).[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 三芝區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F132二號倉庫、F132示範公墓.[^tdx-bus] The committed record carries 2 direction/variant sequences, 20 distinct stops in total: 9 stops (outbound, F132二號倉庫); 11 stops (return, F132示範公墓).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 08:50 to 13:00; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “二號倉庫-二坪頂”; published distance 99 km; service span Weekdays: 去程：0850-1300；返程：0850-1300; Holidays: 去程：0850-1300；返程：0850-1300.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “二號倉庫-二坪頂”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0850-1300；返程：0850-1300; Holidays: 去程：0850-1300；返程：0850-1300.[^ntpc-bus-route-data]
 
 ## Research status
 

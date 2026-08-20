@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F133平日 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 12 stops from 二號倉庫, past 福德七鄰, then 後店, then 三板橋, then 福惠宮, ending at 三芝國中.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 三芝區公所.[^tdx-bus] The committed record carries 1 direction/variant sequence, 12 distinct stops in total: 12 stops (outbound).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 06:20 to 16:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “二號倉庫-三芝國中”; published distance 99 km; service span Weekdays: 去程：0620-1620；返程：0620-1620; Holidays: 去程： - ；返程： -.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “二號倉庫-三芝國中”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0620-1620；返程：0620-1620; Holidays: 去程： - ；返程： -.[^ntpc-bus-route-data]
 
 ## Research status
 
