@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F123十三行文化公園經八療 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 22 stops from 八里分駐所, past 八里國中, then 政霸實業, then 乙天宮, returning to 八里分駐所.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 1 subroute under a single operator, 八里區公所.[^tdx-bus] The committed record carries 1 direction/variant sequence, 22 distinct stops in total: 22 stops (outbound).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 07:50 to 16:30; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “八里分駐所-八里分駐所”; published distance 99 km; service span Weekdays: 去程：0750-1630；返程：0750-1630; Holidays: 去程：0750-1630；返程：0750-1630.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “八里分駐所-八里分駐所”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0750-1630；返程：0750-1630; Holidays: 去程：0750-1630；返程：0750-1630.[^ntpc-bus-route-data]
 
 ## Research status
 

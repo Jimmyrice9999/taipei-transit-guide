@@ -60,9 +60,11 @@ sources:
 New Taipei City Department of Transportation's full 新巴士 dataset files F105反 as a New Bus community service (新巴士) identity.[^ntpc-category-newbus]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence is a there-and-back working of 82 stops from 捷運淡水站, past 永樂巷口(中山市場), then 水汴頭, then 水碓, then 崎腳, then 英光工廠, then 華南銀行, returning to 捷運淡水站.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Tamsui and Xinshi 1st Rd..[^tdx-bus] The route runs 2 subroutes under a single operator, 淡水區公所.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: F105反、F105反經賢孝國中、崙頂8號.[^tdx-bus] The committed record carries 2 direction/variant sequences, 82 distinct stops in total: 80 stops (outbound, F105反); 82 stops (outbound, F105反經賢孝國中、崙頂8號).[^tdx-bus] The published route length is recorded as 99 km, a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset and treated here as an unpopulated placeholder rather than a measured distance for this specific route; weekday service runs from 10:00 to 21:30; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
-The full New Taipei route-service row publishes endpoints “捷運淡水站-華南銀行”; published distance 99 km; service span Weekdays: 去程：1000-2130；返程：1000-2130; Holidays: 去程：1000-2130；返程：1000-2130.[^ntpc-bus-route-data]
+The full New Taipei route-service row publishes endpoints “捷運淡水站-華南銀行”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：1000-2130；返程：1000-2130; Holidays: 去程：1000-2130；返程：1000-2130.[^ntpc-bus-route-data]
 
 ## Research status
 
