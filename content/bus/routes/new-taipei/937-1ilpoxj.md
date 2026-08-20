@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 快速公車 dataset files 937 as a Rapid bus (快速公車) identity.[^ntpc-category-rapid]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 33 stops from 人見仁愛社區(民權路), past 頭湖國小, then 幸福市, then 榮耀之星, then 文化三路忠孝路口, then 復興一路, then 蘭州國中, ending at 民族承德路口.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Linkou Station and Yuanshan.[^tdx-bus] The route runs 2 subroutes under a single operator, 大都會客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 67 distinct stops in total: 33 stops (outbound); 34 stops (return).[^tdx-bus] The published fare is charged over Charge for 2 sections; the published route length is 53.2 km; weekday service runs from 05:40 to 22:40, with a published peak headway of 0712 minutes and 1520 minutes off-peak; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “林口-圓山”; published distance 53.2 km; service span Weekdays: 去程：0540-2240；返程：0540-2240; Holidays: 去程：0540-2240；返程：0540-2240; headway fields Weekdays: weekday peak 0712; weekday off-peak 1520; Holidays: holiday peak 1520; holiday off-peak 1520; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]
