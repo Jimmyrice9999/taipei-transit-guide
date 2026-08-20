@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import LineBadge from './LineBadge'
+import RichText from './RichText'
 import type { PageMeta } from '@/lib/content'
 import type { Line } from '@/lib/lines'
 import { getAccent } from '@/lib/lines'
@@ -60,7 +61,9 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
           <tbody>
             {labels.map((label) => (
               <tr key={label}>
-                <th scope="row">{label}</th>
+                <th scope="row">
+                  <RichText badges={false}>{label}</RichText>
+                </th>
                 {withSpecs.map((page) => {
                   const spec = lookup(page, label)
                   return (
