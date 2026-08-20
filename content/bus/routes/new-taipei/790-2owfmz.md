@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 790 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 54 stops from 金山(南勢), past 金山消防分隊, then 大鵬國小, then 玉田路, then 內寮, then 忠聯倉儲, then 三十一號橋, ending at 基隆轉運站.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under two operators, 基隆客運 and 淡水客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 111 distinct stops in total: 54 stops (outbound); 57 stops (return).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 54 km; weekday service runs from 05:00 to 22:00, with a published peak headway of 1520 minutes and 3040 minutes off-peak; holiday service follows the same published span.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “金山-基隆”; published distance 54 km; service span Weekdays: 去程：0500-2200；返程：0550-2250; Holidays: 去程：0500-2200；返程：0550-2250; headway fields Weekdays: weekday peak 1520; weekday off-peak 3040; Holidays: holiday peak 1520; holiday off-peak 3040; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

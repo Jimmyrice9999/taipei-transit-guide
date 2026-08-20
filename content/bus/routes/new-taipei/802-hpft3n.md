@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 802區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 29 stops from 勞工活動中心, past 西盛, then 西盛館, then 大唐江山, then 光華街口, then 光明里, then 福祿新城二, then 民安路, then 捷運丹鳳站, then 營盤口, then 盲人重建院, then 捷運新莊站(新莊郵局), then 保元宮, ending at 捷運新埔站.[^tdx-bus] 5 confirmed interchanges are recorded in the curated stop-ID join set: Xinpu, Xinzhuang, Fu Jen University, Danfeng and Xinpu Minsheng.[^tdx-bus] The route runs 2 subroutes under a single operator, 首都客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 60 distinct stops in total: 29 stops (outbound); 31 stops (return).[^tdx-bus] No weekday service is published.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]

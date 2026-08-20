@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 791區 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 53 stops from 國家新城, past 天驕社區, then 基隆轉運站, then 公教住宅, then 藍投溝, then 建基煤礦, then 區民廣場, ending at 瑞芳火車站.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 791區國家新城、791區區民廣場.[^tdx-bus] The committed record carries 2 direction/variant sequences, 104 distinct stops in total: 53 stops (outbound, 791區國家新城); 51 stops (return, 791區區民廣場).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 45.8 km; weekday service runs from 05:20 to 19:40; holiday service instead runs from 06:00 to 19:40.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “基隆-瑞芳”; published distance 45.8 km; service span Weekdays: 去程：0520-1940；返程：0620-2050; Holidays: 去程：0600-1940；返程：0700-2050; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

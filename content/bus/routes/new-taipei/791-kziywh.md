@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 791 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 80 stops from 國家新城, past 天驕社區, then 信五路口, then 漁貨直銷中心(碧砂漁港), then 海濱路三巷, then 金沙灣, then 龍門營區, ending at 福隆.[^tdx-bus] The curated stop-ID join set records no confirmed MRT interchange on this route.[^tdx-bus] The route runs 2 subroutes under a single operator, 基隆客運.[^tdx-bus] The TDX record files 2 distinct stop-pattern names under this identity: 791國家新城、791福隆.[^tdx-bus] The committed record carries 2 direction/variant sequences, 157 distinct stops in total: 80 stops (outbound, 791國家新城); 77 stops (return, 791福隆).[^tdx-bus] The published fare is charged over 5 segments; the published route length is 86.4 km; weekday service runs from 04:30 to 21:20; holiday service instead runs from 05:00 to 21:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “基隆-福隆”; published distance 86.4 km; service span Weekdays: 去程：0430-2120；返程：0550-2250; Holidays: 去程：0500-2120；返程：0630-2250; fare 五段票 / 5 segments.[^ntpc-bus-route-data]

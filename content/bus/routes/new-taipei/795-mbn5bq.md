@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 795往平溪(台灣好行-木柵平溪線) as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 75 stops from 捷運動物園站, past 貓纜動物園站, then 象頭埔, then 翠谷山莊, then 排寮橋, then 五坑, then 平溪國中, ending at 平溪.[^tdx-bus] 2 confirmed interchanges are recorded in the curated stop-ID join set: Taipei Zoo and Muzha.[^tdx-bus] The route runs 1 subroute under a single operator, 臺北客運.[^tdx-bus] The committed record carries 1 direction/variant sequence, 75 distinct stops in total: 75 stops (outbound).[^tdx-bus] The published fare is charged over 3 segments; the published route length is 29.1 km; weekday service runs from 04:50 to 22:20; holiday service instead runs from 06:20 to 22:20.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The full New Taipei route-service row publishes endpoints “木柵-平溪”; published distance 29.1 km; service span Weekdays: 去程：0450-2220；返程：0450-2220; Holidays: 去程：0620-2220；返程：0620-2220; fare 三段票 / 3 segments.[^ntpc-bus-route-data]

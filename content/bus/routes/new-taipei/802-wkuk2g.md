@@ -60,6 +60,8 @@ sources:
 New Taipei City Department of Transportation's full 一般公車 dataset files 802 as a General bus (一般公車) identity.[^ntpc-category-general]
 The normalized TDX record keeps this route under the New Taipei municipality group and supplies its route identity, current operator records, direction/variant records, stops and geometry.[^tdx-bus]
 
+The confirmed stop sequence runs 59 stops from 三峽國小(三峽國民運動中心), past 新興街口, then 姑娘廟, then 上善若水社區, then 北園, then 山佳國小, then 中山備前街口, then 樹林藝文綜合行政大樓, then 民安西路403巷口, then 福祿新城一, then 富國路口, then 盲人重建院, then 保元宮, ending at 捷運新埔站.[^tdx-bus] 6 confirmed interchanges are recorded in the curated stop-ID join set: Xinpu, Sanxia, Xinzhuang, Fu Jen University, Danfeng and Xinpu Minsheng.[^tdx-bus] The route runs 2 subroutes under a single operator, 首都客運.[^tdx-bus] The committed record carries 2 direction/variant sequences, 121 distinct stops in total: 59 stops (outbound); 62 stops (return).[^tdx-bus] No weekday service is published.[^ntpc-bus-route-data]
+
 ## Current service data
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]
