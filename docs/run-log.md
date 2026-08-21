@@ -13523,3 +13523,48 @@ in its 1990s account; these are different scope/date records. MOEA registers
 松林路9號, while the contact page lists Sindian and Jinxiu dispatch stations at
 two other addresses. The published 優等 result is for Taipei’s 108 second
 period and is dated 2020; no later grade is asserted.
+
+## Run 66 — Part 2, researched municipality-scoped operator records, 21 August 2026
+
+### Sourced
+
+Enriched six existing TDX records with the already-fetched primary evidence
+from their detailed counterparts: Taipei Bus (Taipei), Capital Bus (New
+Taipei), Shin-Shin Bus (New Taipei), Danan Bus (New Taipei), Zhongxing Daye
+(New Taipei) and Tamshui Bus (Taipei). The pages now carry sourced legal
+identity and registration fields, operator history, published operating-site
+or station entries, dated evaluation or regulatory records where available,
+and municipality-scoped route counts that remain generated from TDX. The
+Zhongxing page records the Highway Bureau’s highway-business incidents and
+violations with that scope preserved. Tamshui records its 2026 launch notice
+alongside the separate Taipei TDX snapshot.
+
+### TBC
+
+The six pages still do not claim a complete current manufacturer/model,
+chassis/body, capacity or propulsion roster; depot or station opening dates,
+capacities and route allocations; or a complete contract, merger and route-
+succession history where the fetched sources do not publish them. Published
+station directories and route-endpoint names are not promoted to full depot
+records without location, capacity and opening evidence.
+
+### Contradicted the corpus
+
+These six records were TDX-only municipality scaffolds, not substantive
+operator profiles. They now carry the same researched evidence as their
+corresponding detailed records while preserving each municipality’s separate
+TDX route association set. The old generic research-gap paragraphs were
+replaced with evidence-based gaps rather than padded prose.
+
+### Conflicts found
+
+The municipality-scoped TDX counts differ from group-directory or wider
+operator snapshots: Taipei Bus 20, Capital 22 New Taipei, Shin-Shin 19 New
+Taipei, Danan 7 New Taipei, Zhongxing 15 New Taipei and Tamshui 2 Taipei.
+These are published as snapshot/scope differences, not reconciled totals.
+Tamshui’s 11 June 2026 bulletin announces routes 115, 988, 989 and 990 plus
+weekday 115, while the Taipei TDX record contains only 682 and 957; the
+records are not silently merged. Zhongxing’s Highway Bureau incidents and
+driving-time violations apply to its highway-passenger record, while the PTO
+results apply to Taipei city-bus evaluation; neither is generalized across
+all services.

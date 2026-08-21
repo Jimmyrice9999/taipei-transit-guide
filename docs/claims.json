@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6192,
-    "tbc": 4255,
+    "sourced": 6281,
+    "tbc": 4256,
     "asserted": 32,
     "meta": 45
   },
@@ -138,8 +138,8 @@
     },
     {
       "file": "content/bus/operators/capitalbus-1mju8h7.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 5,
+      "sourced": 23,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -154,8 +154,8 @@
     },
     {
       "file": "content/bus/operators/dananbus-o4rqys.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 9,
+      "sourced": 26,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -354,8 +354,8 @@
     },
     {
       "file": "content/bus/operators/shin-shin-bus-ooqycq.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 5,
+      "sourced": 27,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -418,9 +418,9 @@
     },
     {
       "file": "content/bus/operators/taipeibus-smuzdo.md",
-      "sources": 1,
-      "sourced": 12,
-      "tbc": 3,
+      "sources": 10,
+      "sourced": 34,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
@@ -442,8 +442,8 @@
     },
     {
       "file": "content/bus/operators/tamshuibus-zflu9i.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 6,
+      "sourced": 22,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -562,8 +562,8 @@
     },
     {
       "file": "content/bus/operators/zhongxingbus-mgu4sy.md",
-      "sources": 1,
-      "sourced": 12,
+      "sources": 7,
+      "sourced": 25,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
