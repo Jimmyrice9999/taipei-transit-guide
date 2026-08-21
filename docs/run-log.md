@@ -13604,3 +13604,42 @@ different layers of the company record. The 14/2 TDX snapshot differs from the
 historical routes in the group chronology. The 81.65 甲等 city evaluation and
 Blue 22 violation, Highway sightseeing-business 乙 (112) record, and Taipei
 small-fleet ungraded notice are different scopes and are not merged.
+
+## Run 68 — Part 2, researched Kuo-Kuang Bus, 21 August 2026
+
+### Sourced
+
+Researched Kuo-Kuang Motor Transportation for its New Taipei TDX record: 10
+route associations. Fetched MOEA legal registration, the company’s
+self-authored profile, Highway Bureau operator and sightseeing-bus records,
+New Taipei’s 2020/2021 route-transfer and electric-bus notice, three dated
+New Taipei evaluation PDFs, and the MOTC notice on eight southern-route
+transfers to Ubus. The page now distinguishes the 15 June 2001 statutory
+date from the profile’s 1 July operating date, records the NT$465m paid-in
+capital and the 30-bus 2021 electric programme, and retains generated routes.
+
+### TBC
+
+Parent group; current manufacturer/model, chassis/body, capacity and complete
+propulsion roster; New Taipei depot opening dates, capacities and allocations;
+and complete route-award, renewal and merger chronology remain TBC. The
+operator’s main site and an official history page failed full fetches. The
+MOEA cross-domain result exposes only a Puli warehouse entry, not a New Taipei
+depot register.
+
+### Contradicted the corpus
+
+The Kuo-Kuang page was a TDX-only scaffold. It now carries sourced legal,
+historical, fleet-character, electric-programme, evaluation and route-
+succession evidence while keeping the ten New Taipei associations as a data
+snapshot rather than expanding them to the company’s national network.
+
+### Conflicts found
+
+The 15 June statutory date and 1 July operating date are distinct. The
+self-authored historical fleet/network figures are dated and broader than the
+ten-route New Taipei TDX snapshot. New Taipei city-bus results are 甲等 in
+112 first period and 乙等 in both 113 periods, while the separate Highway
+Bureau sightseeing-bus record is 甲 in 112 and 優 in 111; no single grade is
+selected. The 2020/2021 New Taipei transfers and the 2025 southern-route
+transfer are separate succession events, not one chronology.
