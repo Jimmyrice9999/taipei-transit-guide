@@ -13793,3 +13793,45 @@ whether Sunday operation is stated: the narrative gives five trips in a
 19:55–23:30 window, while the timetable explicitly says Monday–Saturday and
 Sunday suspended. The two new-bus announcements are dated fleet additions,
 not a complete fleet total.
+
+## Run 73 — Part 2, researched Xizhi District Office, 22 August 2026
+
+### Sourced
+
+Researched Xizhi District Office (汐止區公所), the New Taipei government-unit
+record with 12 committed TDX route associations. The current office New Bus
+index lists F901, F902, F903, F905, F907, F909, F910, F911, F913, F915, F919
+and F920, updated 6 May 2026. The office introduction supplies its address and
+switchboard, while the unit directory assigns New Bus work to the Economic
+Development section, extension 254. A full riding-guidance PDF distinguishes
+tour-bus and bus dispatch groups and states the 19-seat tour-bus boarding rule.
+The full 2020 New Taipei operating table records dated outsourced-operator
+contacts for Xizhi's historical route groups. Full district-office notices
+establish the 2023 F901, F907 and F910 route adjustments and the F910 fog rule.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. The fetched primary
+pages do not publish vehicle models, manufacturers, chassis/body, propulsion,
+depot/garage locations, opening dates, current route-by-route allocation,
+current contractor identity, tender numbers or contract terms. The current
+timetable controls resolve to image files; no image-only schedule detail was
+used. A 2013 settlement URL timed out on full fetch and its search text was not
+used.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now distinguishes the 12 generated TDX route rows from the current
+official route index and records the office's administrative scope, dated
+outsourcing evidence and route-change notices.
+
+### Conflicts found
+
+TDX and the current official index both contain 12 entries, but their naming
+granularity differs: TDX records F909伯爵 and F919八連 while the office index
+labels them 伯爵線 and 八連線. The 2020 operating table groups older routes as
+F901–F908 and F909–F920 and labels them outsourced, while the 2026 index has a
+different current route set. The 19-seat riding rule and dispatch grouping are
+operating guidance, not a complete current fleet register.
