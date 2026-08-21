@@ -13256,3 +13256,27 @@ depot capacity/opening dates, and contract chronology remain TBC.
 
 The TaiwanJobs page was not used: its direct fetch timed out. The identical
 registration date is supported by the readable MOEA record. No image was added.
+
+## Run 59 — Part 2, Capital, Shin-Shin and Kuang-Hua operator records, 21 August 2026
+
+Completed the Taipei TDX records for Capital Bus (61 route associations),
+Shin-Shin Bus (57) and Kuang-Hua Bus (46), adding one research file and
+source-backed prose to each page. Sources were the MOEA company records,
+operator or operator-group pages, Taipei PTO history, the Highway Bureau
+directory, and the full New Taipei 111(2) service-quality report.
+
+Capital’s MOEA registration date (14 August 1975) and operator-stated founding
+date (1 July 1976) are published as separate values. Its official profile
+names 21 operating sites and maintenance teams, but not fleet models, site
+capacity/opening dates or contracts. Shin-Shin’s official page states a January
+1969 founding, a July 2015 Yulon share transfer to the Zhongxing and Capital
+groups, 415 buses, nine stations and a repair shop; MOEA records 18 May 1969
+and historical repair-factory entries. Kuang-Hua’s group pages establish its
+October 1969 founding, 1977 joint-operation entry, 1997 highway operation,
+ten station locations and station-level route allocations.
+
+Conflicts are retained: Capital’s registration/founding dates; Shin-Shin’s
+57-route TDX snapshot versus the company’s 70+ Taipei/New Taipei statement;
+and Kuang-Hua’s 46-route TDX snapshot versus the station-allocation page.
+Fleet models, propulsion, depot capacity/opening dates and contract history
+remain TBC. No image was added.
