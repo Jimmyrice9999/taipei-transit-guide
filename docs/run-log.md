@@ -13877,3 +13877,40 @@ lists weekday F123 times 07:00, 12:05 and 15:50, and holiday 06:40, 12:05 and
 while the 2026 material used here does not. The current district page uses image
 timetable controls; the health-center page publishes text rows; TDX splits timed
 and branch variants into 11 records.
+
+## Run 75 — Part 2, researched Gongliao District Office, 22 August 2026
+
+### Sourced
+
+Researched Gongliao District Office (貢寮區公所), the New Taipei government-unit
+record with nine committed TDX route associations. The office publishes its
+address, switchboard and Agriculture and Economic Affairs extension 404 for
+community-bus operations. New Taipei's general New Bus page establishes the
+free-service and F-code context. The district's full 2025 New Bus PDF gives the
+effective date, non-weekend/public-holiday operation, resident-priority and
+hail-and-ride rules, with F835–F839 and the student service. The separate 2026
+Happiness Bus PDF gives its daily schedule, vehicle-size notes and route families.
+A 10 July 2026 district notice records a typhoon-related full suspension.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, propulsion, depots,
+opening dates, current contractor, tender numbers, contract terms or route-level
+fleet allocation. The Happiness Bus vehicle-size notes are not a fleet register.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now separates the New Bus and Happiness Bus publications and avoids
+treating nine TDX associations as nine vehicles or one timetable.
+
+### Conflicts found
+
+The 2025 New Bus PDF presents F835–F839 and the student service, while the 2026
+Happiness Bus PDF separately presents 福連、龍崗、吉林 and other route families;
+TDX combines the five F rows, student service and three route-name rows. The 2022
+New Bus PDF includes F831 in both directions, but the 2025 PDF and current TDX
+snapshot do not. The district index labels the 2025 PDF as updated 28 July 2025,
+while the PDF states an effective date of 16 July 2025.

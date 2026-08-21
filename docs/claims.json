@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6427,
+    "sourced": 6443,
     "tbc": 4261,
     "asserted": 32,
     "meta": 45
@@ -170,8 +170,8 @@
     },
     {
       "file": "content/bus/operators/gongliaodistrictoffice-y73gye.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 9,
+      "sourced": 27,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
