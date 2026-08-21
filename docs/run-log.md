@@ -13678,3 +13678,39 @@ TDX has 10 associations while the operator route page displays 8 labels. Taipei
 city-bus results grade Citiair 乙 in both 114 periods; THB’s separate highway
 series records 乙 in 112/109/107 and 甲 in 104. The official fleet page’s dated
 brand categories and TTSB’s one detailed vehicle are different scopes.
+
+## Run 70 — Part 2, researched Jinshan District Office, 21 August 2026
+
+### Sourced
+
+Researched Jinshan District Office (金山區公所), the New Taipei government-unit
+record with 25 committed TDX route associations. The New Taipei contact page
+establishes the office address, switchboard and Agricultural/Economic section
+responsibility for community buses. The office’s full New Bus index and current
+F931, F932 and F933 pages establish the 2026 route notices, weekday service,
+8/7/10 departure counts, stop positions, student-service holiday rules and
+force-majeure diversion note. The official 2021 timetable provides a dated
+comparison for all three routes.
+
+### TBC
+
+This is not a private bus corporation, so no founding, parent-group, shareholder
+or company-registration claim is assigned. The fetched primary pages do not
+publish vehicle models, manufacturers, capacities, propulsion, depot/garage
+locations, opening dates, route allocations, contractors or contract history.
+The 2020 detail notice and 2026 timetable download timed out on full fetch and
+were not used for substantive claims.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now documents the government-unit scope and keeps TDX departure rows
+separate from the office’s three route notices.
+
+### Conflicts found
+
+TDX contains 25 route records while the current office index presents three route
+notices. The 2021 timetable publishes service phone 2498-5966; current 2026
+notices and the New Taipei contact page publish 2498-5965. The 2021 and 2026
+route tables have the same 8/7/10 trip counts but different stop detail, so the
+dated paths are retained separately.
