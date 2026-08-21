@@ -13714,3 +13714,40 @@ notices. The 2021 timetable publishes service phone 2498-5966; current 2026
 notices and the New Taipei contact page publish 2498-5965. The 2021 and 2026
 route tables have the same 8/7/10 trip counts but different stop detail, so the
 dated paths are retained separately.
+
+## Run 71 — Part 2, researched Shimen District Office, 21 August 2026
+
+### Sourced
+
+Researched Shimen District Office (石門區公所), the New Taipei government-unit
+record with 36 committed TDX route associations. The office's full community-bus
+page establishes current F151, F152, F153 and F154 schedules, route descriptions,
+non-service days and its 16 July 2026 update. A separate medical-bus page
+establishes F161-style service to Mackay Memorial and Guandu Hospital, the F153
+student departure, resident-priority rules and national-holiday suspension. The
+office's 2025 notice records F151/F153 changes, F154's addition and F161 rules;
+2026 notices record F153 and F151 adjustments. The office duties page assigns
+New Bus contract-execution management to the Economic Development section.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder
+and company-registration claims are not assigned. The fetched primary pages do
+not publish vehicle models, manufacturers, capacities, propulsion, depot/garage
+locations, opening dates, route allocations, contractor identity or contract
+terms. The current route-schedule PDF returned no readable page text, so it was
+recorded as a failed fetch and not used for substantive claims.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now distinguishes the government's current service families from the
+36 generated TDX rows and identifies the district office's administrative scope.
+
+### Conflicts found
+
+TDX contains 36 route records while the current community-bus page presents four
+route families, with medical-bus material adding a separate F161 service scope.
+The successive 2025 and 2026 notices describe different effective adjustments,
+not one static timetable. The office duties page confirms contract-execution
+responsibility, but no fetched primary publishes the contractor or contract terms.

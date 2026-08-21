@@ -14,10 +14,10 @@ Sindian now records its 1980 history, statutory registration, two dispatch
 stations, electric-bus direction and dated evaluation result.
 The handoff’s New Taipei Kuang-Hua “46” was a scope/count error; 46 is the
 separate Taipei record. Run 67 also completed both New Taipei Bus records,
-including 14 New Taipei and 2 Taipei TDX associations. Runs 68–70 completed
-Kuo-Kuang Bus, Citiair Bus and Jinshan District Office records (10, 10 and 25
-TDX associations); Jinshan is a government-unit New Bus authority, not a private
-company. Remaining Part 2: 32 of 61 operator records, then model and depot pages.
+including 14 New Taipei and 2 Taipei TDX associations. Runs 68–71 completed
+Kuo-Kuang Bus, Citiair Bus, Jinshan and Shimen District Office records (10, 10,
+25 and 36 TDX associations); both district offices are government-unit New Bus
+authorities, not private companies. Remaining Part 2: 31 of 61 records, then models/depot pages.
 Remaining Parts 3–7: YouBike data/indexes, ticketing/ferries, Taichung Green
 Line, entity icons/photos, and page-type/screenshot/browser verification.
 Latest unit gates: cite, research, claims, build, verify and nav pass; probes/
