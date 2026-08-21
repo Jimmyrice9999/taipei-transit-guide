@@ -5,11 +5,12 @@
 Part 0 and Part 1 are complete: housekeeping was committed separately, and
 operator-namespaced line codes plus the cross-system collision test pass.
 Part 2 enriched Taipei Bus, San Chung Bus, Metropolitan Bus, Capital Bus,
-Shin-Shin Bus, both Kuang-Hua records, Danan, Zhongxing and Tamshui from fetched primaries.
-The latest unit enriched Keelung Bus (36 New Taipei routes), including its
-history, five published sites and dated evaluation record.
+Shin-Shin Bus, both Kuang-Hua records, Danan, Zhongxing, Tamshui and Keelung
+Bus from fetched primaries. The latest unit enriched both Zhinan Bus records
+(29 Taipei and 34 New Taipei route associations), including statutory history,
+14 published sites, evaluation and oversight records.
 The handoff’s New Taipei Kuang-Hua “46” was a scope/count error; 46 is the
-separate Taipei record. Remaining Part 2: 48 of 61 operator records, then model
+separate Taipei record. Remaining Part 2: 46 of 61 operator records, then model
 and depot pages.
 Remaining Parts 3–7: YouBike data/indexes, ticketing/ferries, Taichung Green
 Line, entity icons/photos, and page-type/screenshot/browser verification.

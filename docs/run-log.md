@@ -13398,3 +13398,45 @@ New Taipei records Keelung Bus as 乙等 in the 109 first period and 甲等 in t
 published facility list, not a depot total or route-allocation table. The MOEA
 record concerns a factory registration marked 公告廢止, not a current operating
 depot or a bus-service sanction.
+
+## Run 63 — Part 2, Zhinan Bus operator records, 21 August 2026
+
+### Sourced
+
+Enriched the Taipei and New Taipei Zhinan Bus records (29 and 34
+municipality-scoped TDX route associations) and added one research file. Full
+fetched primaries were the Zhongxing Group chronology and 14-entry Zhinan site
+directory, MOEA’s company-registration record, the operator’s June 2021
+COVID-era service-adjustment PDF, New Taipei’s 110 second-period evaluation
+announcement and vehicle-art announcement, and the National Audit Office’s
+full transport-oversight PDF. The pages now record the 1953 predecessor and
+1966/1974/1996 chronology, current statutory company fields and board
+representation, dated joint-operation evidence, 14 published sites, the 110
+evaluation result, the 111–113 labour-law penalty table, and the eight-bus
+electric safety stop. Route lists remain generated from TDX.
+
+### TBC
+
+Current parent-company ownership percentage and complete merger chronology;
+model-level chassis, body, capacity and current propulsion split; depot opening
+dates, capacities and route allocations; and complete contract-award history
+remain TBC. The fetched sources do not establish the current disposition of
+the eight electric buses stopped pending battery inspection.
+
+### Contradicted the corpus
+
+The two existing Zhinan pages were TDX-only scaffolds, so no prior operator
+prose claim was overturned. The group’s 1953 predecessor history is now kept
+separate from MOEA’s 1954 statutory registration date, and the 14 published
+sites are not presented as a 14-depot total.
+
+### Conflicts found
+
+The group history gives a 1953 predecessor and 1966 reorganisation, while the
+current MOEA record gives a 1954 company-registration date; both values are
+retained with their record types. The group directory lists 14 sites but no
+capacities or allocations. The vehicle-art notice identifies one Zhinan 880
+vehicle without a model, while the audit records eight electric buses stopped
+after a same-model battery-fire safety event; neither is treated as a current
+fleet roster. The audit also records eight labour-law penalties totaling
+NT$5,020,000 between 111 and 113.
