@@ -14212,3 +14212,65 @@ operator-detail representative at every harness size found readable narrow
 reflow, no clipping, a centered wide reading column and a readable landscape
 phone. No new page type was needed; the existing operator-detail harness entry
 covered this page.
+
+## Run 82 — Part 2, researched Haloha's mode-mismatch record, 22 August 2026
+
+### Sourced
+
+Researched 好樂好股份有限公司 / Haloha Shipping, TDX operator number 0606.
+The committed bus pull places the record in NewTaipei but associates zero bus
+routes with it. The fetched company sites identify 好樂好 as a Dadaocheng Blue
+Highway and yacht operator, give the English name, self-described Tamsui and
+Keelung river coverage, charter/night-cruise services and the published Taipei
+office. Taipei's 100年度 emergency-support plan lists the company, its contact
+person and 11 small vessels with the table's 19.93-tonne, 12-knot and 1.2-metre
+figures; the dated record is not treated as a current fleet count.
+
+The full Taipei government trial announcement records the 2004
+Dadaocheng–Guandu–Fisherman's Wharf trial and names 飛魚一號、飛魚五號 and
+飛魚六號 as 好樂好的 vessels. The official 2020 timetable records
+Dadaocheng–Tamsui and Dadaocheng river-cruise fares, operating days and
+EasyCard acceptance. The current Public Transportation Office FAQ records
+non-fixed charters, dining and package services and a separate phone; the
+operator's current KKTIX page advertises an approximately 90-minute
+Dadaocheng–Tamsui service with a ten-person reservation threshold.
+
+### TBC
+
+No fetched primary source establishes bus fleet models, chassis/body/capacity,
+electric or hybrid road vehicles, bus depots, bus contracts, founding date,
+mergers, ownership, parent group or a current official MOEA registry extract.
+The 11-vessel table is not a bus fleet count. The 2019 New Taipei timetable
+PDF timed out on full fetch and its search result was not used.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only bus scaffold. The fetched evidence contradicts
+the implicit bus-operator framing: this record has zero associated bus routes,
+while the operator and government sources describe water transport. The page
+now preserves the TDX record and the independently established water-operator
+scope without inventing a bus route.
+
+### Conflicts found
+
+TDX and the older company site publish 02-2558-5519, while the current PTO FAQ
+publishes 02-2550-2339; the sources do not resolve whether these are different
+lines or a change over time. The dated emergency plan gives 11 vessels, while
+current operator pages do not publish a current total. The 2004, 2020 and 2026
+service records are retained as dated snapshots, not merged into one timetable.
+
+### Verification
+
+The refreshed build exports 1,875 pages with no missing glyphs; links, a11y,
+facts, cite, claims, 212 unit tests, research, geometry and CVD all pass. Cite
+resolves 4,579 citations; claims are 6,533 sourced, 4,262 TBC and 32 asserted;
+research is clean at 88 files and 372 checked failures. `npm run nav` passes all
+19 checks. Browser verification passes 640px and 320px reflow with no document
+overflow or spine overlap, all curated keyboard and accessibility-tree probes,
+and zero axe violations across 1,400 pages. It wrote 288 screenshots at every
+required width plus landscape phone and all 42 print checks passed. Visual review
+of every operator-detail representative found readable narrow reflow, no
+clipping, centered wide content and a readable landscape phone. Search index now
+contains 1,393 entries including the renamed Haloha page. No new page type was
+needed; operator-detail already covers it. Generated audits were restored; probes/
+remains intentionally untracked.

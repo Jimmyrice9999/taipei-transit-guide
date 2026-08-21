@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6522,
-    "tbc": 4264,
+    "sourced": 6533,
+    "tbc": 4262,
     "asserted": 32,
     "meta": 45
   },
@@ -82,9 +82,9 @@
     },
     {
       "file": "content/bus/operators/0606-20m33c.md",
-      "sources": 1,
-      "sourced": 10,
-      "tbc": 5,
+      "sources": 8,
+      "sourced": 21,
+      "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
