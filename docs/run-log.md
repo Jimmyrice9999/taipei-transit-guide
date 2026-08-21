@@ -13362,3 +13362,39 @@ The group history places predecessor reorganisation in 1974 and 1977, while
 MOEA records the company’s statutory registration on 11 December 1978; these
 are published as distinct chronology values. The four official site entries
 are facilities, not a complete route count or depot-capacity statement.
+
+## Run 62 — Part 2, Keelung Bus operator record, 21 August 2026
+
+### Sourced
+
+Completed the Keelung Bus New Taipei record (36 TDX route associations), adding
+one research file and sourced prose. Full fetched primary sources were the
+Zhongxing Group history and five-entry station directory, the MOEA factory
+record, New Taipei’s 114 first-period evaluation PDF, the 109 evaluation
+announcement, the 2024 Lunar New Year timetable and the group’s electric-bus
+emergency-manual notice. The page records the group’s 1952/1954/1957 history,
+the stated Keelung–Taipei–New Taipei service geography, five published sites,
+the factory record’s 公告廢止 status, and the dated evaluation results. Route
+lists remain generated from TDX.
+
+### TBC
+
+Current legal-company registration and ownership percentage; fleet models,
+chassis/body, capacity and propulsion; depot opening dates, capacities and
+route allocations; and complete route-contract history remain TBC. No separate
+named service incident or bus-service sanction survived the checked primaries.
+
+### Contradicted the corpus
+
+The existing page was a TDX-only scaffold, so no prior prose claim was
+overturned. The group’s historical chronology is now distinguished from the
+MOEA factory-registration record rather than being presented as one founding
+date.
+
+### Conflicts found
+
+New Taipei records Keelung Bus as 乙等 in the 109 first period and 甲等 in the
+114 first period; both dated results remain. The five station entries are a
+published facility list, not a depot total or route-allocation table. The MOEA
+record concerns a factory registration marked 公告廢止, not a current operating
+depot or a bus-service sanction.
