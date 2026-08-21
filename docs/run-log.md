@@ -14041,3 +14041,53 @@ F215/F216 only as converted city-bus history. Historical deposit entries prove
 dated procurement activity, but no fetched primary names the awarded operators or
 current contract terms. Direct fetches of the linked F217 notice and timetable
 artwork timed out and remain checked failures.
+
+## Run 79 — Part 2, researched Ruifang District Office, 22 August 2026
+
+### Sourced
+
+Researched Ruifang District Office (瑞芳區公所), the New Taipei government-unit
+record with eight committed TDX route associations. The official traffic index
+publishes the office address and switchboard. The full New Bus page, updated
+6 November 2025, lists F801, F802, its auxiliary local circulation, F803, F805,
+F806, F807, F808 and F813, with dated departure information. The official
+railway page documents the routes' transfer role around Ruifang, Sijiaoting,
+Houtong, Sandiaoling, the Jingu area and the coast. The office's 2025 notice
+records a six-route holiday pilot from 30 May through 31 December 2025 and says
+the F802 auxiliary route used small vehicles.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, capacity, propulsion,
+vehicle counts, depots, opening dates, current contractor, procurement awards,
+contract terms, fare or payment acceptance. No newer full 2026 timetable was
+found in the official pages checked; the dated 2025 route page is cited as such.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old historical or fleet assertion
+was contradicted. The new record adds fetched official route, transfer and pilot
+material and keeps the government-unit scope separate from private operators.
+
+### Conflicts found
+
+TDX has eight associations, including two F807 records, while the official HTML
+page displays nine route labels by combining F807 and adding F813. The dated
+holiday pilot covers six routes rather than the broader route-page list. Regular
+route 808 is attributed to Keelung Bus on the road-bus page, while F808 is listed
+separately as New Bus. The source pages have different update dates, from 2021
+for the railway transfer page to November 2025 for the New Bus page.
+
+### Verification
+
+The refreshed build exports 1,875 pages. Browser verification checked reflow at
+640px and 320px with no document overflow, painted boxes with no spine overlap,
+all curated keyboard and accessibility probes, and zero axe violations across
+1,400 pages. It wrote 288 screenshots at 320, 375, 640, 768, 1,440, 1,920 and
+2,560px plus landscape phone, and all 42 print checks passed. Visual review found
+the operator detail readable at narrow and wide widths, the bus index reflowing
+without clipping, and the data and ticketing tables using their intended scroll
+containers. No new page type was needed; the existing operator-detail harness
+entry covered this page.

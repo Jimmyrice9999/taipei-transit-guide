@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6485,
-    "tbc": 4262,
+    "sourced": 6493,
+    "tbc": 4263,
     "asserted": 32,
     "meta": 45
   },
@@ -290,9 +290,9 @@
     },
     {
       "file": "content/bus/operators/ruifangdistrictoffice-z0z4jc.md",
-      "sources": 1,
-      "sourced": 11,
-      "tbc": 3,
+      "sources": 6,
+      "sourced": 19,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
