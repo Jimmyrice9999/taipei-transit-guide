@@ -13963,3 +13963,42 @@ plus a landscape-phone capture, and all 42 print checks passed. Visual review of
 the operator, section, model, depot, ticketing, data, station and cable layouts
 found the expected narrow-column reflow and no clipping; the cable index retains
 its existing empty framed cable-span figure placeholder beneath its image.
+
+## Run 77 — Part 2, researched Yingge District Office, 22 August 2026
+
+### Sourced
+
+Researched Yingge District Office (鶯歌區公所), the New Taipei government-unit
+record with eight committed TDX route associations. The office publishes its
+address, switchboard and Economic Development section extensions 517 and 523
+for New Bus work. Its full introduction describes the free New Bus service,
+the F-prefix convention, six route families and the schools, attractions and
+hospitals they connect. The fetched F651, F652, F653, F655/F657 and F656 notices
+record capacity expansion, the Fengming Station extension, separate F653A/B
+departures, Chang Gung hospital access and the Ceramics Old Street holiday
+traffic-control rule. The full 2026 timetable records the effective date,
+F652 reservation condition and typhoon suspension rule.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, propulsion, depots,
+opening dates, current contractor, tender numbers, contract terms or route-level
+fleet allocation.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old historical or fleet assertion
+was contradicted. The new record documents the district-office administrative
+scope, preserves the eight TDX associations separately from six official route
+families, and keeps the route-notice dates separate from the 2026 timetable date.
+
+### Conflicts found
+
+TDX has eight records, while the official introduction and timetable group them
+into six route families: F652 Extended Route is grouped with F652, and F653A/B
+are grouped with F653. The F651, F652, F653, F655/F657 and F656 notices have
+different publication dates, while the timetable states a 1 January 2026 or
+agency-notified effective date. The passenger-transport contract notice gives
+payment and concession rules but no current contractor or award terms.

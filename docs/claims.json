@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6456,
+    "sourced": 6470,
     "tbc": 4261,
     "asserted": 32,
     "meta": 45
@@ -514,8 +514,8 @@
     },
     {
       "file": "content/bus/operators/yinggedistrictoffice-xx0prg.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 10,
+      "sourced": 25,
       "tbc": 3,
       "asserted": 0,
       "meta": 0

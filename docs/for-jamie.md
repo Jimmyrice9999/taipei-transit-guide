@@ -1,24 +1,20 @@
 # For Jamie
 
-## Stop handoff — 21 August 2026
+## Stop handoff — 22 August 2026
 
 Part 0 and Part 1 are complete: housekeeping was committed separately, and
 operator-namespaced line codes plus the cross-system collision test pass.
-Part 2 enriched Taipei Bus, San Chung Bus, Metropolitan Bus, Capital Bus,
-Shin-Shin Bus, both Kuang-Hua records, Danan, Zhongxing, Tamshui and Keelung
-Bus from fetched primaries. Run 66 also completed the Taipei/duplicate records
-for Taipei Bus, Capital, Shin-Shin, Danan, Zhongxing and Tamshui. Zhinan (29 Taipei and 34 New Taipei route
-associations), Southeast Bus (25 Taipei associations) and both Sindian Bus
-records (6 Taipei and 18 New Taipei associations) are the latest units.
-Sindian now records its 1980 history, statutory registration, two dispatch
-stations, electric-bus direction and dated evaluation result.
-The handoff’s New Taipei Kuang-Hua “46” was a scope/count error; 46 is the
-separate Taipei record. Run 67 also completed both New Taipei Bus records,
-including 14 New Taipei and 2 Taipei TDX associations. Runs 68–76 completed
-Kuo-Kuang Bus, Citiair Bus, Jinshan, Shimen, Sanzhi, Xizhi, Bali, Gongliao and
-Sanxia District Office records (10, 10, 25, 36, 13, 12, 11, 9 and 8 TDX
-associations); these district-office records are government-unit New Bus authorities, not private companies. Remaining Part 2: 26 of 61 records, then models/depot pages.
+Part 2 now has researched prose for Taipei Bus, San Chung, Metropolitan,
+Capital, Shin-Shin, both Kuang-Hua records, Danan, Zhongxing, Tamshui, Keelung,
+Zhinan, Southeast, both Sindian records, both New Taipei Bus records, Kuo-Kuang,
+Citiair, Jinshan, Shimen, Sanzhi, Xizhi, Bali, Gongliao, Sanxia and Yingge.
+Runs 68–77 completed Kuo-Kuang, Citiair, Jinshan, Shimen, Sanzhi, Xizhi, Bali,
+Gongliao, Sanxia and Yingge records (10, 10, 25, 36, 13, 12, 11, 9, 8 and 8
+TDX associations); the district-office records are government-unit New Bus
+authorities, not private companies. Remaining Part 2: 25 of 61 records, then
+models/depot pages.
 Remaining Parts 3–7: YouBike data/indexes, ticketing/ferries, Taichung Green
-Line, entity icons/photos, and page-type/screenshot/browser verification.
-Latest unit gates: cite, research, claims, build, verify, nav and browser pass; probes/
-remains untracked and generated audit JSONs are restored after builds.
+Line, entity icons/photos, and final page-type/browser verification.
+Latest unit gates: cite, research, claims, build, verify, nav, browser and the
+full test suite pass; generated audit JSONs are restored and probes/ remains
+untracked.
