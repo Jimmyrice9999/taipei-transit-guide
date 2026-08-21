@@ -13440,3 +13440,44 @@ vehicle without a model, while the audit records eight electric buses stopped
 after a same-model battery-fire safety event; neither is treated as a current
 fleet roster. The audit also records eight labour-law penalties totaling
 NT$5,020,000 between 111 and 113.
+
+## Run 64 — Part 2, Southeast Bus operator record, 21 August 2026
+
+### Sourced
+
+Enriched Southeast Bus from full fetched pages: the TaiwanJobs/WDA employer
+profile establishes the registered name and number, 18 June 2002 company date,
+representative, address, capital and the October 2002 transfer of 11 Taipei
+routes in 13 days. The Veterans Affairs Council feature records the company’s
+relationship to 建明客運 and its early low-floor, large-window, tropical-fish
+vehicle character. The committed TDX pull supplies 25 Taipei route
+associations; the live Taipei Route 207 page names 東南客運停車場 as a route
+endpoint. Taipei DOT’s 2006 action records a 丙等 result and a three-month
+withholding of 10 vehicles from highest kilometre-revenue allocation, while
+the 113 second-period evaluation records Southeast as 優等.
+
+### TBC
+
+Direct statutory ownership and parent-company percentages; a complete fleet
+model, chassis, body, capacity and propulsion roster; depot address, opening
+date, capacity and route allocation; and a complete contract, merger and route
+succession chronology remain TBC. Direct MOEA and operator-site fetches failed;
+no claim was published from those failed leads.
+
+### Contradicted the corpus
+
+Southeast was a TDX-only scaffold, not a researched operator profile. The named
+route parking stop is not treated as a complete depot record. The page now
+keeps the 2006 sanction and 2025 evaluation as separate dated records rather
+than implying an undated current status.
+
+### Conflicts found
+
+The TaiwanJobs profile gives 18 June 2002 as the company date, while its
+narrative places the first transferred service in October 2002. The 2010
+government feature describes a wider Taipei/Kaohsiung/remote-area scope, while
+the current committed TDX record contains 25 Taipei associations. The 2006
+DOT result was 丙等 with a specific allocation sanction; the 113 second-period
+result was 優等. The current route page names 東南客運停車場 but publishes no
+address, capacity or opening date, so these are not collapsed into one depot
+claim.

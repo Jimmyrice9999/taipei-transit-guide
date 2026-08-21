@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6146,
-    "tbc": 4254,
+    "sourced": 6164,
+    "tbc": 4255,
     "asserted": 32,
     "meta": 45
   },
@@ -402,9 +402,9 @@
     },
     {
       "file": "content/bus/operators/southeastbus-9ljetg.md",
-      "sources": 1,
-      "sourced": 12,
-      "tbc": 3,
+      "sources": 6,
+      "sourced": 30,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
