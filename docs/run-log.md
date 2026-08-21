@@ -13329,3 +13329,36 @@ predecessor/reorganization milestones and MOEA statutory date describe related
 but distinct events. The Highway Bureau Zhongxing record is for highway
 passenger operation, while the TDX page is a Taipei city-bus record. Danan’s
 Guandu procurement deadline does not establish completion.
+
+## Run 61 — Part 2, Tamshui Bus operator record, 21 August 2026
+
+### Sourced
+
+Completed the Tamshui Bus New Taipei record (69 TDX route associations),
+adding its research file and source-backed prose. Full fetched sources were
+the MOEA company record, Zhongxing Group history and station directory, the
+operator’s 11 June 2026 route-launch bulletin, and the full New Taipei 111(2)
+service-quality report. The page records the MOEA legal identity, 1978
+registration, NT$300 million paid-in capital, four published operating sites,
+the group’s 1974/1977 predecessor milestones, the 2026 route bulletin and the
+90.41 / 優等 / sixth service-quality result. Route lists remain generated from TDX.
+
+### TBC
+
+Fleet models, chassis/body, capacity and propulsion; depot opening dates and
+capacities; complete route-contract history; and a named incident or
+regulatory action beyond the published service-quality assessment remain TBC.
+
+### Contradicted the corpus
+
+The existing Tamshui page was a TDX-only scaffold, so no prior prose claim was
+overturned. The official 2026 bulletin announces route `989`, but the committed
+TDX snapshot contains `115`, `115weekdays`, `988` and `990` without `989`; both
+values are retained as a dated data-source conflict.
+
+### Conflicts found
+
+The group history places predecessor reorganisation in 1974 and 1977, while
+MOEA records the company’s statutory registration on 11 December 1978; these
+are published as distinct chronology values. The four official site entries
+are facilities, not a complete route count or depot-capacity statement.

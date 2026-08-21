@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6081,
+    "sourced": 6093,
     "tbc": 4249,
     "asserted": 32,
     "meta": 45
@@ -434,8 +434,8 @@
     },
     {
       "file": "content/bus/operators/tamshuibus-nasxvv.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 6,
+      "sourced": 23,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
