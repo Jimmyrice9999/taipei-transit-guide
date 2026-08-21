@@ -13835,3 +13835,45 @@ labels them 伯爵線 and 八連線. The 2020 operating table groups older route
 F901–F908 and F909–F920 and labels them outsourced, while the 2026 index has a
 different current route set. The 19-seat riding rule and dispatch grouping are
 operating guidance, not a complete current fleet register.
+
+## Run 74 — Part 2, researched Bali District Office, 22 August 2026
+
+### Sourced
+
+Researched Bali District Office (八里區公所), the New Taipei government-unit
+record with 11 committed TDX route associations. The current district-office
+New Bus page states its 2026-01-01 timetable effective date, passenger-full sign
+and typhoon/heavy-rain suspension rule, and was updated 11 June 2026. The office
+address, phone and Economic Development section extension 261 are published. A
+full government health-center page lists F121/F122/F123/F126 route text and
+F126's Jiangcuo variant. A dated 2026 district-office news release records three
+new F123 hospital-serving branches and main-line times 06:40 and 15:25. The
+NTPC governance report says district offices plan, tender and manage routes; a
+2024 notice records a typhoon closure response.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages
+do not publish vehicle models, manufacturers, chassis/body, propulsion,
+depots/garages, opening dates, current contractor, tender numbers, contract
+terms or route-by-route allocations. The 24 electric buses reported in Bali are
+districtwide city buses, not assigned to this New Bus record. The current
+district timetable controls are images; image-only details were not used.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now distinguishes the 11-row TDX snapshot from official schedule
+representations and does not conflate the districtwide electric-bus figure with
+the district-office service.
+
+### Conflicts found
+
+The dated district-office F123 announcement says the main-line changes are
+06:40 and 15:25 and adds three branches. The fetched health-center text page
+lists weekday F123 times 07:00, 12:05 and 15:50, and holiday 06:40, 12:05 and
+15:50. The older governance report lists F125 among Bali's historical routes,
+while the 2026 material used here does not. The current district page uses image
+timetable controls; the health-center page publishes text rows; TDX splits timed
+and branch variants into 11 records.
