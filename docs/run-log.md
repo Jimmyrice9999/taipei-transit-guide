@@ -14091,3 +14091,59 @@ the operator detail readable at narrow and wide widths, the bus index reflowing
 without clipping, and the data and ticketing tables using their intended scroll
 containers. No new page type was needed; the existing operator-detail harness
 entry covered this page.
+
+## Run 80 — Part 2, researched Taoyuan Bus, 22 August 2026
+
+### Sourced
+
+Researched 桃園汽車客運股份有限公司 / Taoyuan Bus, the private-company record
+represented in the committed NewTaipei TDX pull by one route association. Full
+primary pages establish the legal name, registration status, registered address,
+capital, current representative, business items and a registered active repair
+factory. A Taoyuan City cultural-resource record credited to the company gives
+the 1903–1947 organizational chronology. The Highway Bureau directory supplies
+the public company contacts. The full Taipei route page establishes route 952's
+Banqiao–Nankan endpoints, dated service windows, three-segment fare, headways,
+buffer locations and two operator contacts. The city tourism page publishes the
+Taoyuan, Zhongli and Daxi passenger-terminal locations. Official electric-bus
+sources establish both the 2012/2014 county-wide demonstration record and the
+Highway Bureau's 2025 row of 15 華德 vehicles for 桃園客運.
+
+### TBC
+
+The fetched primary pages do not establish a parent group or control structure,
+current fleet models, chassis, bodies, capacity, hybrid roster, depot/garage
+locations, route-level allocation, current procurement contracts, contract terms,
+or a company-specific incident/regulatory-action history. The public terminals
+and registered repair-factory record are not treated as a complete depot map.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old factual claim was contradicted.
+The completed record adds company history, registration, route, terminal, workshop
+and electric-bus evidence without turning the TDX association into a complete
+company route roster.
+
+### Conflicts found
+
+The cultural-resource chronology starts in 1903 and gives 1947 for the present
+name, while the MOEA registry gives 7 January 1950 as the approval date. The 2014
+report gives 45 electric buses county-wide, while the 2025 national dataset gives
+15 華德 vehicles for 桃園客運; the scopes and dates differ and the values are not
+combined. Three passenger terminals are published, but no source supplies a
+complete garage allocation. TDX has one NewTaipei association, while route 952's
+full page lists 首都客運 and 桃園客運 contact points.
+
+### Verification
+
+The refreshed build exports 1,875 pages. `npm run verify` passed glyph, marker,
+link, orphan, a11y, fact, citation, claims, 212 unit tests, research, geometry
+and CVD checks; `npm run nav` passed all 19 checks. Browser verification passed
+640px and 320px reflow with no document overflow, no spine overlap, all curated
+keyboard and accessibility probes, and zero axe violations across 1,400 pages.
+It wrote 288 screenshots at 320, 375, 640, 768, 1,440, 1,920 and 2,560px plus
+landscape phone, and all 42 print checks passed. Visual review of operator-detail
+screens at every harness size found readable text, clean reflow and no clipping;
+the 1,440–2,560px views keep the content column centered with intentional white
+space. No new page type was needed; the existing operator-detail entry covered
+this page.
