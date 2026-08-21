@@ -13643,3 +13643,38 @@ ten-route New Taipei TDX snapshot. New Taipei city-bus results are 甲等 in
 Bureau sightseeing-bus record is 甲 in 112 and 優 in 111; no single grade is
 selected. The 2020/2021 New Taipei transfers and the 2025 southern-route
 transfer are separate succession events, not one chronology.
+
+## Run 69 — Part 2, researched Citiair Bus, 21 August 2026
+
+### Sourced
+
+Researched Citiair Bus (大有巴士) for its Taipei TDX record: 10 generated route
+associations. The operator’s full history, fleet and route pages establish the
+1969 founding date, Wenshan operating headquarters, Xinzhuang and Nangang
+management stations, dated fleet-brand categories and eight displayed route
+labels. Taipei PTO records 307 route-right recovery and temporary succession;
+the 114 first/second city-bus result sheets both grade Citiair 乙. THB records
+the separate highway-bus evaluation/incident tables, and TTSB records the 17
+November 2024 212/49 collision and the FAB-978 Yutong 6128HG vehicle.
+
+### TBC
+
+Parent group or controlling shareholder; complete legal-registration record;
+depot opening dates, capacities and route allocations; complete fleet
+manufacturer/chassis/body/capacity/propulsion roster; and complete route-
+succession chronology remain TBC. The checked primary pages do not establish
+those fields; the MOEA company-detail fetch returned an internal error.
+
+### Contradicted the corpus
+
+The Citiair page was a TDX-only scaffold. It now carries fetched operator,
+government, regulator and safety-board evidence while keeping the ten TDX
+associations as a snapshot and not hand-expanding the operator’s national
+network.
+
+### Conflicts found
+
+TDX has 10 associations while the operator route page displays 8 labels. Taipei
+city-bus results grade Citiair 乙 in both 114 periods; THB’s separate highway
+series records 乙 in 112/109/107 and 甲 in 104. The official fleet page’s dated
+brand categories and TTSB’s one detailed vehicle are different scopes.
