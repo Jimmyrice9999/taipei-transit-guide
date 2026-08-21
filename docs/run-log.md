@@ -13224,7 +13224,7 @@ route-262 fire is publishable as a sourced incident record (Huade
 RAC-700-ELCB-2800; 20 same-batch Metropolitan buses were checked), but no
 final causal finding should be invented.
 
-Still remaining: the other 59 operator records plus model/depot research and
+Still remaining: 58 of the 61 operator pages plus model/depot research and
 pages; the YouBike data layer, district indexes, geometric joins, guide, and
 architecture update; the expanded ticketing guide and ferry section; the
 Taichung Metro Green Line pilot; the entity icon/photo work with MD5 and
