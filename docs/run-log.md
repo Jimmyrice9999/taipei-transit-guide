@@ -13751,3 +13751,45 @@ route families, with medical-bus material adding a separate F161 service scope.
 The successive 2025 and 2026 notices describe different effective adjustments,
 not one static timetable. The office duties page confirms contract-execution
 responsibility, but no fetched primary publishes the contractor or contract terms.
+
+## Run 72 — Part 2, researched Sanzhi District Office, 22 August 2026
+
+### Sourced
+
+Researched Sanzhi District Office (三芝區公所), the New Taipei government-unit
+record with 13 committed TDX route associations. The office's current New Bus
+index lists F131, F132, F133, F135, F136, F137, two F138 services and F139,
+with Sanzhi Junior High School, Warehouse No. 2 and Tamsui MRT station as the
+published starting points. Its Agricultural Economics section is responsible
+for New Bus administration. The full official 2025 account records replacement
+of a community bus over 20 years old, the 7-outsourced/2-self-operated split,
+equipment and F133/F139 service details; the 2026 notice records another new
+bus for the same routes. Full F131, F136, F138 Neihengshan and F139 PDFs establish
+route-specific schedules; the January 2026 notice records dated holiday
+suspensions.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder
+and company-registration claims are not assigned. The fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, propulsion, depot/garage
+locations, opening dates, contract tender numbers, contractor identities or
+route-by-route allocation. Several linked timetable PDFs timed out or returned
+no readable lines on full fetch and were not used for substantive claims.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old prose assertion was contradicted.
+The record now distinguishes the 13 generated TDX route rows from the current
+nine official service entries and records the district office’s administrative
+scope and dated fleet/service evidence.
+
+### Conflicts found
+
+TDX contains 13 route records; the current official index lists nine service
+entries, while the 2025 account also says nine community-bus routes with seven
+outsourced and two self-operated. The 2025 narrative and F139 PDF differ in
+whether Sunday operation is stated: the narrative gives five trips in a
+19:55–23:30 window, while the timetable explicitly says Monday–Saturday and
+Sunday suspended. The two new-bus announcements are dated fleet additions,
+not a complete fleet total.
