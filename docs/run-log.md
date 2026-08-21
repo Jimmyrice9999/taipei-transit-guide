@@ -13235,3 +13235,24 @@ those brief items. The stop gates were green: `npm run cite`, `npm run verify`,
 `npm run nav`, and `npm test` all completed successfully; the latter reported
 212 passing tests and no fact contradictions. Generated link/unused audit
 reports were restored individually, and `probes/` remains untracked.
+
+## Run 58 — Part 2, Metropolitan Bus operator records, 21 August 2026
+
+Completed both existing MetropolitanBus records: the Taipei record (70 TDX
+route associations) and the New Taipei record (17). Added one research file and
+researched prose to both pages. Primary sources were Taipei PTO’s bus-history
+page; Taipei DOT’s privatization and early vehicle-procurement notices; the MOEA
+company record; the Highway Bureau directory; Taipei’s municipal-property
+budget; New Taipei evaluation notices; and the Taiwan Transportation Safety
+Board incident and vehicle reports. Route lists remain generated from TDX.
+
+The pages publish the 16 December 2003 registration date alongside Taipei’s
+1 January 2004 privatization/renaming date, rather than treating them as one
+founding date. They record the 38% city / 62% employee transition arrangement,
+named municipal sites, one documented RAC-700-ELCB-2800 electric model with
+25 seated and 30 standing capacity, and the 2025 Route 262 fire and 20-bus
+inspection response. Parent/merger history, complete model or hybrid roster,
+depot capacity/opening dates, and contract chronology remain TBC.
+
+The TaiwanJobs page was not used: its direct fetch timed out. The identical
+registration date is supported by the readable MOEA record. No image was added.
