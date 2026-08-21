@@ -13481,3 +13481,45 @@ DOT result was 丙等 with a specific allocation sanction; the 113 second-period
 result was 優等. The current route page names 東南客運停車場 but publishes no
 address, capacity or opening date, so these are not collapsed into one depot
 claim.
+
+## Run 65 — Part 2, Sindian Bus operator records, 21 August 2026
+
+### Sourced
+
+Enriched both Sindian Bus records: the Taipei record carries six and the New
+Taipei record 18 municipality-scoped TDX associations. Full fetched primaries
+were Sindian Bus’s own history and contact pages and the MOEA company record;
+they establish the operator’s August 1980 founding account, the statutory
+15 September 1980 registration, representative and capital, the 1990s Taipei
+joint-bus account, and two named dispatch stations with addresses and hours.
+The operator’s stated low-carbon electric-bus direction is recorded without
+turning it into a current fleet claim. A full MOTC Road Safety Portal notice
+records Sindian among the five 優等 operators in Taipei’s 108 second-period
+evaluation, announced 27 March 2020.
+
+### TBC
+
+Parent-company ownership and merger chronology; current fleet models,
+chassis/body, capacity and propulsion split; depot opening dates, capacities
+and route allocations; and complete contract and route-succession history
+remain TBC. The New Taipei detailed evaluation page and the operator’s
+transport-contract page timed out, so no current grade or contract terms were
+published from those failed fetches. Fire Bureau incident pages were not
+attributed to Sindian because the fetched reports did not identify the operator.
+
+### Contradicted the corpus
+
+Both Sindian pages were TDX-only scaffolds; they now share a sourced company
+profile while retaining their separate generated route records. The two
+registered/dispatch address types and the August/statutory September 1980
+dates remain distinct rather than being flattened into one field.
+
+### Conflicts found
+
+The operator states August 1980 as its founding month; MOEA gives 15 September
+1980 as the approved establishment date. The TDX snapshot has six Taipei and
+18 New Taipei associations, while the operator’s history discusses 642 and 643
+in its 1990s account; these are different scope/date records. MOEA registers
+松林路9號, while the contact page lists Sindian and Jinxiu dispatch stations at
+two other addresses. The published 優等 result is for Taipei’s 108 second
+period and is dated 2020; no later grade is asserted.
