@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6044,
+    "sourced": 6081,
     "tbc": 4249,
     "asserted": 32,
     "meta": 45
@@ -162,8 +162,8 @@
     },
     {
       "file": "content/bus/operators/dananbus-zudmrz.md",
-      "sources": 1,
-      "sourced": 12,
+      "sources": 9,
+      "sourced": 27,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -202,8 +202,8 @@
     },
     {
       "file": "content/bus/operators/kuanghuabus-n0tc6w.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 5,
+      "sourced": 20,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -554,8 +554,8 @@
     },
     {
       "file": "content/bus/operators/zhongxingbus-1owb0k7.md",
-      "sources": 1,
-      "sourced": 12,
+      "sources": 7,
+      "sourced": 25,
       "tbc": 3,
       "asserted": 0,
       "meta": 0

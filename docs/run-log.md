@@ -13280,3 +13280,52 @@ Conflicts are retained: Capital’s registration/founding dates; Shin-Shin’s
 and Kuang-Hua’s 46-route TDX snapshot versus the station-allocation page.
 Fleet models, propulsion, depot capacity/opening dates and contract history
 remain TBC. No image was added.
+
+## Run 60 — Part 2, Danan, Kuang-Hua New Taipei and Zhongxing operators, 21 August 2026
+
+### Sourced
+
+Completed the Danan Taipei record (48 TDX route associations), the Kuang-Hua
+New Taipei record (8) and the Zhongxing Taipei record (39). Added one research
+file per subject and sourced prose to each page. Sources were the operators’
+full company-history, station and contact pages; MOEA company records; the
+Highway Bureau directory and detailed regulatory record; Taipei PTO evaluation
+and incident notices; Danan’s dated fleet table and Guandu charging-procurement
+specification; and the full New Taipei 111(2) evaluation PDF. Route sections
+remain generated from TDX associations.
+
+Danan now records the operator-stated August 1969 founding and February 1977
+Veterans Affairs Council takeover alongside MOEA’s 24 April 1969 registration,
+five published operating-site entries, the 2025 table’s combined 260 vehicles
+and 69 electric low-floor vehicles, and the Guandu procurement scope. The page
+also records the PTO alcohol-testing management incident as the authority
+described it. Kuang-Hua records the October 1969 founding, 1977 joint-operation
+entry, 10 published station entries, Beifeng’s four New Taipei route entries and
+the 111(2) score of 84.01 / 甲等 / ninth. Zhongxing records its 1965–1966
+predecessor/reorganization history, MOEA legal data, nine published station
+entries, Highway Bureau incident/evaluation data and Taipei PTO results.
+
+### TBC
+
+Current model-level fleet rosters, propulsion splits, chassis/body/capacity
+data, depot opening dates and capacities, and complete route-contract histories
+remain TBC. Danan’s Guandu document gives a 15 July 2026 deadline but no
+completion notice. Kuang-Hua’s direct MOEA query returned HTTP 403, so capital,
+representative, shareholder and statutory registration fields remain TBC.
+
+### Contradicted the corpus
+
+The existing content was a TDX-only scaffold for all three pages, so no prior
+published prose was contradicted. The handoff count was corrected: Kuang-Hua’s
+New Taipei record is 8 routes, not 46; the 46-route figure belongs to the
+separate Taipei record.
+
+### Conflicts found
+
+Danan’s operator-stated August 1969 founding differs from MOEA’s April 1969
+registration; its 48-route Taipei TDX scope is narrower than the operator’s
+wider Taipei/New Taipei service description. Zhongxing’s group-history
+predecessor/reorganization milestones and MOEA statutory date describe related
+but distinct events. The Highway Bureau Zhongxing record is for highway
+passenger operation, while the TDX page is a Taipei city-bus record. Danan’s
+Guandu procurement deadline does not establish completion.
