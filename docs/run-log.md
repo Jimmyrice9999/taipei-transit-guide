@@ -13914,3 +13914,52 @@ TDX combines the five F rows, student service and three route-name rows. The 202
 New Bus PDF includes F831 in both directions, but the 2025 PDF and current TDX
 snapshot do not. The district index labels the 2025 PDF as updated 28 July 2025,
 while the PDF states an effective date of 16 July 2025.
+
+## Run 76 — Part 2, researched Sanxia District Office, 22 August 2026
+
+### Sourced
+
+Researched Sanxia District Office (三峽區公所), the New Taipei government-unit
+record with eight committed TDX route associations. The office introduction
+publishes its address and switchboard; the Economic Development section assigns
+New Bus and bus-related work to extension 710. New Taipei's general New Bus page
+establishes the free-service and F-code context. The district's full New Bus
+index lists F623, F625, F626, F627, F628, F629 and F630, and route-detail pages
+give departure/stop tables and service notes. The 2026 Spring Festival table
+records all seven named routes and an outsourced-operator field in the holiday
+operating plan.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, propulsion, depots,
+opening dates, current contractor, tender numbers, contract terms or route-level
+fleet allocation. The holiday outsourced-operator field is not a contract or
+fleet register.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old historical or fleet assertion
+was contradicted. The record now documents the district-office administrative
+scope, separates the TDX route snapshot from the official route pages, and keeps
+the F626-0815 association distinct from the official F626 partial-trip note.
+
+### Conflicts found
+
+The New Bus index is dated 1 February 2023, while six fetched route-detail pages
+show 8 January 2026 updates. TDX contains a separate F626-0815 record, but the
+official F626 page presents one route with two partial trips and no separate
+public F626-0815 timetable. The 2026 holiday table records outsourcing, but no
+fetched primary publishes the contractor identity or contract terms.
+
+### Browser verification
+
+`npm run verify:browser` completed against 1,400 real pages and the curated
+page-type inventory. Both 640px and 320px reflow sweeps had no document overflow;
+painted-box, keyboard, ARIA and axe checks were clean, with zero axe violations.
+The harness wrote 288 screenshots at 320, 375, 640, 768, 1440, 1920 and 2560px
+plus a landscape-phone capture, and all 42 print checks passed. Visual review of
+the operator, section, model, depot, ticketing, data, station and cable layouts
+found the expected narrow-column reflow and no clipping; the cable index retains
+its existing empty framed cable-span figure placeholder beneath its image.

@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6443,
+    "sourced": 6456,
     "tbc": 4261,
     "asserted": 32,
     "meta": 45
@@ -322,8 +322,8 @@
     },
     {
       "file": "content/bus/operators/sanxiadistrictoffice-xn142h.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 13,
+      "sourced": 24,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
