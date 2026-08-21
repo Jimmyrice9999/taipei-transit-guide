@@ -14147,3 +14147,68 @@ screens at every harness size found readable text, clean reflow and no clipping;
 the 1,440–2,560px views keep the content column centered with intentional white
 space. No new page type was needed; the existing operator-detail entry covered
 this page.
+
+## Run 81 — Part 2, researched Royal Bus, 22 August 2026
+
+### Sourced
+
+Researched 皇家客運股份有限公司 / Royal Bus, the remaining private operator
+record with a real route association. The committed TDX pull contains one parent
+route record, 1717. An official Ministry of Economic Affairs change-registration
+list records the legal name, unified number 16302918, Jinshan registered address,
+representative and NT$90 million capital in May 2023. Taipei's full route page
+establishes the Taipei University Hospital–Jinshan Post Office endpoints, six
+timed service variants, 06:00–18:40 weekday and holiday summaries, mileage fare,
+service phones and the published stop sequence. The official fare PDF supplies
+the mileage matrix, while the current Taipei ride-code FAQ gives the dated
+EasyPay-only rule and NT$25/NT$13 boarding bases.
+
+The Yangmingshan National Park page identifies 1717 among its low-floor routes.
+The Taipei evaluation dataset says 1717 has been included in the city evaluation
+programme since 2020. A 2023 Public Transportation Office meeting record
+approves an operating-loss subsidy application, preserves Royal Bus's attributed
+description of route users, records its statement that electric buses could not
+climb the route and sets a deadline for the NT$1,200 pass. Taipei's 2024 accounts
+record a third-party-liability-insurance lapse from 1 February 2024 and a held
+NT$1 million subsidy; a 2015 typhoon notice records a full-day safety suspension.
+
+### TBC
+
+No fetched primary source establishes a founding chronology, mergers, ownership
+or parent group, fleet manufacturer/model/chassis/body/capacity, propulsion mix,
+fleet size, depot or garage location/opening date, route-level allocation,
+procurement award or contract terms. The registered Jinshan address and service
+phones are not treated as depot evidence. The current registry URL and Royal Bus
+website returned fetch failures and are recorded in the research file.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old factual claim was contradicted.
+The completed record adds registration, route, fare, accessibility, subsidy and
+regulatory evidence without turning six timetable variants into six independent
+company routes.
+
+### Conflicts found
+
+TDX has one parent route association while the official timetable exposes six
+subroute patterns; these are different aggregation levels. The registered address
+and service-phone locations are published, but no source identifies either as a
+depot. The meeting record says electric buses could not climb 1717, while the
+park page says low-floor buses serve it; propulsion and accessibility are distinct
+attributes, so no electric/low-floor inference is made.
+
+### Verification
+
+The refreshed build exports 1,875 pages. `npm run cite` resolved 4,572
+citations; `npm run claims` returned to the committed baseline of 32 unsourced
+assertions after the new page's final sentence was cited; `npm run research` is
+clean at 87 files and 369 checked failures; all 212 unit tests pass; and `npm run
+nav` passes all 19 checks. `npm run verify:browser` passed 640px and 320px
+reflow with no document overflow, no painted box under the spine, every curated
+keyboard and accessibility-tree probe, and zero axe violations across 1,400
+pages. It wrote 288 screenshots at 320, 375, 640, 768, 1,440, 1,920 and 2,560px
+plus landscape phone, and all 42 print checks passed. Visual review of the
+operator-detail representative at every harness size found readable narrow
+reflow, no clipping, a centered wide reading column and a readable landscape
+phone. No new page type was needed; the existing operator-detail harness entry
+covered this page.
