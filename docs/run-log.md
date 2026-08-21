@@ -14002,3 +14002,42 @@ are grouped with F653. The F651, F652, F653, F655/F657 and F656 notices have
 different publication dates, while the timetable states a 1 January 2026 or
 agency-notified effective date. The passenger-transport contract notice gives
 payment and concession rules but no current contractor or award terms.
+
+## Run 78 — Part 2, researched Taishan District Office, 22 August 2026
+
+### Sourced
+
+Researched Taishan District Office (泰山區公所), the New Taipei government-unit
+record with eight committed TDX route associations. The official timetable page
+publishes the district-office address and switchboard, identifies Economic
+Development extension 1701 for free shuttle-bus work, and groups the current
+free services as F211, F212, F212 Subline, F213, F217 and F218. It records F217's
+medical purpose and boarding-only outward rule, and the conversion of F215/F216
+to city buses from 1 July 2020. The 2016 settlement ledger records bid and
+performance-deposit entries for the 2016 and 2017 Taishan–Taipei free-shuttle
+service cases.
+
+### TBC
+
+This is not a private bus corporation, so founding, parent group, shareholder,
+merger and company-registration claims are not assigned. Fetched primary pages do
+not publish vehicle models, manufacturers, chassis/body, propulsion, depots,
+opening dates, current contractor, tender terms or route-level fleet allocation.
+The current timetable artwork could not be fetched, so no stop-level or
+departure-time claim is made.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold, so no old historical or fleet assertion
+was contradicted. The new record documents the district-office administrative
+scope, separates the eight TDX associations from six official route families,
+and preserves F215/F216 as service history rather than current records.
+
+### Conflicts found
+
+TDX keeps F212Sub/F212 Fengjiang and F213 Liming/F213 as separate records, while
+the official page groups them under F212 and F213. The current page also lists
+F215/F216 only as converted city-bus history. Historical deposit entries prove
+dated procurement activity, but no fetched primary names the awarded operators or
+current contract terms. Direct fetches of the linked F217 notice and timetable
+artwork timed out and remain checked failures.
