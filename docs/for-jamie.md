@@ -13,8 +13,9 @@ records (6 Taipei and 18 New Taipei associations) are the latest units.
 Sindian now records its 1980 history, statutory registration, two dispatch
 stations, electric-bus direction and dated evaluation result.
 The handoff’s New Taipei Kuang-Hua “46” was a scope/count error; 46 is the
-separate Taipei record. Remaining Part 2: 37 of 61 operator records, then
-model and depot pages.
+separate Taipei record. Run 67 also completed both New Taipei Bus records,
+including 14 New Taipei and 2 Taipei TDX associations. Remaining Part 2: 35
+of 61 operator records, then model and depot pages.
 Remaining Parts 3–7: YouBike data/indexes, ticketing/ferries, Taichung Green
 Line, entity icons/photos, and page-type/screenshot/browser verification.
 Latest unit gates: cite, research, claims, build, verify and nav pass; probes/

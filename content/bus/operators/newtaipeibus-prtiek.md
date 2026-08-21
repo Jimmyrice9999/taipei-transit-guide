@@ -1,7 +1,7 @@
 ---
-title: "New Taipei Bus Co., Ltd. — Taipei TDX operator record"
-summary: "TDX operator record for New Taipei Bus Co., Ltd. in Taipei."
-updated: 2026-08-18
+title: "New Taipei Bus Co., Ltd. — Taipei operator profile"
+summary: "A sourced profile of New Taipei Bus’s legal record, operating history, Wudu site and Taipei network."
+updated: 2026-08-21
 facts:
   - label: English name
     value: "New Taipei Bus Co., Ltd."
@@ -30,10 +30,24 @@ facts:
   - label: TDX-published URL
     value: "http://www.csgroup-bus.com.tw"
     source: tdx-bus-operator-pull
+  - label: MOEA registration date
+    value: "1979-11-15"
+    source: moea-newtaipeibus
+  - label: Registered address
+    value: "Taipei City, Shilin District, Zhongzheng Road 499"
+    source: moea-newtaipeibus
+  - label: Paid-in capital
+    value: "227000000"
+    unit: "NTD"
+    source: moea-newtaipeibus
 specs:
-  - label: Fleet models
+  - label: Published operating-site entries
+    value: "1"
+    unit: "station on the operator-group directory"
+    source: newtaipei-stations
+  - label: Fleet model roster
     value: TBC
-  - label: Depots or garages
+  - label: Site opening dates and capacities
     value: TBC
   - label: Contract history
     value: TBC
@@ -47,7 +61,81 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the committed operator records, contact fields, source municipalities, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields.
+  - id: moea-newtaipeibus
+    title: New Taipei Bus company record
+    titleOriginal: "新北汽車客運股份有限公司 - 經濟部商工登記公示資料查詢"
+    publisher: Ministry of Economic Affairs, Administration of Commerce (經濟部商業發展署)
+    url: https://findbiz.nat.gov.tw/fts/company/33884805
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports the statutory company number, capital, representative, registered address, registration date, name-change record, represented corporate directors and approved business categories.
+  - id: newtaipei-history
+    title: Zhongxing Group company history
+    titleOriginal: "公司沿革"
+    publisher: Zhongxing Group (中興大業巴士集團)
+    url: https://www.csgroup-bus.com.tw/?section=41
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports New Taipei Bus’s 1967 operating origin and selected route, service and business milestones through 1990.
+  - id: newtaipei-stations
+    title: New Taipei Bus station directory
+    titleOriginal: "新北客運"
+    publisher: Zhongxing Group (中興大業巴士集團)
+    url: https://www.csgroup-bus.com.tw/?section=53
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports the single published Wudu Station entry, address and contact number; it does not publish opening date, capacity or route allocation.
+  - id: ntpc-newtaipeibus-eval
+    title: 111 New Taipei bus service-quality evaluation
+    titleOriginal: "111年度新北市公車營運服務品質評鑑第二期評鑑成果報告"
+    publisher: New Taipei City Department of Transportation (新北市政府交通局)
+    url: https://www.traffic.ntpc.gov.tw/uploaddowndoc?dis=download&file=download%2F202306271121000.pdf&filedisplay=111%E5%B9%B4%E5%BA%A6%E6%96%B0%E5%8C%97%E5%B8%82%E5%85%AC%E8%BB%8A%E7%87%9F%E9%81%8B%E6%9C%8D%E5%8B%99%E5%93%81%E8%B3%AA%E8%A9%95%E9%91%91%E7%AC%AC2%E6%9C%9F%E8%A9%95%E9%91%91%E6%88%90%E6%9E%9C%E5%A0%B1%E5%91%8A.pdf&flag=doc
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports New Taipei Bus’s 111(2) score, grade, indicator comparison and the operator-specific Blue 22 headway violation row.
+  - id: thb-newtaipeibus
+    title: Highway Bureau New Taipei Bus regulatory record
+    titleOriginal: "投保、事故、評鑑及違規資料"
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.thb.gov.tw/BusinessCoach_Content.aspx?n=118&s=985&type=0
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports the displayed sightseeing-bus insurance, ROC 112 grade and the absence of displayed accident and violation rows; it is not treated as a city-bus result.
+  - id: pto-newtaipeibus
+    title: 2024 Taipei city-bus service-quality evaluation notice
+    titleOriginal: "臺北市市區公車營運服務評鑑出爐"
+    publisher: Taipei City Public Transportation Office (臺北市公共運輸處)
+    url: https://pto.gov.taipei/News_Content.aspx?n=D065CCB1467288C8&s=86B7001D1FAC5ABA&sms=72544237BBE4C5F6
+    accessed: 2026-08-21
+    kind: primary
+    lang: zh-Hant
+    note: Supports the notice that New Taipei Bus participated in Taipei’s 113(1) evaluation but was not graded because its vehicle count was small.
 ---
+
+## Company history and legal identity
+
+The MOEA record identifies New Taipei Bus as unified business number 33884805, with representative Lu Qilong, a registered address in Taipei’s Shilin District, total and paid-in capital of NT$227 million and statutory registration date 15 November 1979 [^moea-newtaipeibus]. Its approved activities include highway passenger transport, sightseeing-bus passenger transport and city-bus passenger transport [^moea-newtaipeibus]. The statutory record also displays a 23 June 2011 name change from Xinhe Bus to New Taipei Bus [^moea-newtaipeibus].
+
+The Zhongxing Group history gives a longer operating chronology: New Taipei Bus was founded in ROC year 56 (1967), initially operating only the Xizhi–Hongnei passenger service [^newtaipei-history]. It records the later Xizhi–Dongshan and Xizhi–Beifeng services, joint operation of Hongnei–Keelung with Taiwan Motor Transport, sightseeing-bus approval, the 629 Taipei joint-operation service, replacement of Taipei City route 51 and approval of Blue 22 feeder service [^newtaipei-history]. These are operating-history milestones; they are kept separate from the statutory registration and 2011 name-change entry [^newtaipei-history][^moea-newtaipeibus].
+
+The current MOEA director table records corporate representation by Longfu International, Zhongxing Asset Management and Kuang-Hua Asset Management [^moea-newtaipeibus]. That is a registered representation snapshot, not a complete parent-company or merger chronology [^moea-newtaipeibus].
+
+## Network and operating site
+
+The committed Taipei TDX snapshot associates two routes with NewTaipeiBus: NH7 and 955 [^tdx-bus-operator-pull]. This municipality-scoped record is therefore a current data snapshot, not a hand-maintained claim about the company’s full operating history [^tdx-bus-operator-pull].
+
+The operator-group station directory publishes one New Taipei Bus site entry: Wudu Station in Qidu District, Keelung, at Mingde 3rd Road 113, with telephone 02-2451-2089 [^newtaipei-stations]. The directory does not state the site’s opening date, vehicle capacity or route allocation [^newtaipei-stations]. It is evidence for one published operating site, not a complete depot register for this Taipei-scoped record.
+
+## Evaluation and documented action
+
+New Taipei’s 111(2) bus service-quality report gives New Taipei Bus a score of 81.65 and grade 甲等 [^ntpc-newtaipeibus-eval]. That grade applies to the New Taipei city-bus evaluation, not to this two-route Taipei TDX record [^ntpc-newtaipeibus-eval]. The same report records a major violation on route `藍22`: vehicle KKA-0629, dated 9 May ROC 111, failed to depart according to the approved headway and incurred a NT$60,000 fine [^ntpc-newtaipeibus-eval].
+
+The Highway Bureau page concerns New Taipei Bus’s sightseeing-bus passenger business, displays grade 乙 for ROC 112 and shows no accident or violation rows on that page [^thb-newtaipeibus]. That regulator record is not generalized to the Taipei city-bus associations [^thb-newtaipeibus]. Taipei PTO’s 113(1) notice says New Taipei Bus participated in Taipei’s city-bus evaluation but was not graded because its vehicle count was small [^pto-newtaipeibus].
 
 ## TDX record
 
@@ -66,6 +154,4 @@ The list below is generated from the committed route pull’s operatorIds associ
 
 ## Research gaps
 
-The committed TDX operator record contains no founding history, ownership structure, fleet-model roster, depot or garage field, or contract-history field; each remains TBC here [^tdx-bus-operator-pull].
-
-The record’s URL is reproduced as TDX metadata, but a company-history, ownership, fleet, depot or dated contract claim requires a full page from the operator or responsible government authority [^tdx-bus-operator-pull].
+The TDX record itself contains no history, ownership, fleet-model, site-capacity or contract fields [^tdx-bus-operator-pull]. The group, MOEA, government evaluation and regulator pages above establish selected legal, historical, site and oversight facts, but the checked sources do not establish a current model-level fleet roster, propulsion split, site opening date or capacity, or complete contract and corporate-succession chronology; those fields remain TBC [^moea-newtaipeibus][^newtaipei-stations][^ntpc-newtaipeibus-eval].

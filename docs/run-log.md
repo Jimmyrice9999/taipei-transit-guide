@@ -13568,3 +13568,39 @@ records are not silently merged. Zhongxing’s Highway Bureau incidents and
 driving-time violations apply to its highway-passenger record, while the PTO
 results apply to Taipei city-bus evaluation; neither is generalized across
 all services.
+
+## Run 67 — Part 2, researched New Taipei Bus, 21 August 2026
+
+### Sourced
+
+Researched New Taipei Bus Co., Ltd. for both existing TDX records: 14 New
+Taipei route associations and 2 Taipei route associations. Full fetched
+primaries establish the company’s 1967 group-history origin, its 1979
+statutory registration, the 2011 name change, capital and registered address,
+the operator-group history of its route succession, and the Wudu operating
+site. The New Taipei evaluation report gives 81.65 and grade 甲等, and records
+a 60,000 NTD Blue 22 headway violation. The Highway Bureau sightseeing-bus
+record is kept separately as grade 乙 (112) with no listed incident rows; the
+Taipei PTO notice says the small Taipei vehicle count was not graded.
+
+### TBC
+
+Current vehicle models, manufacturers, chassis/body, capacity and propulsion
+split; Wudu opening date, capacity and route allocation; and complete contract,
+merger and route-succession records remain TBC. Newer New Taipei evaluation
+detail and the operator’s contract page timed out during full-page fetches.
+
+### Contradicted the corpus
+
+Both New Taipei Bus pages were TDX-only scaffolds; they now carry fetched
+legal, historical, operating-site and evaluation evidence while retaining
+their separate generated municipality route sets. The group-history origin,
+statutory date and later name change are recorded as distinct events.
+
+### Conflicts found
+
+The 1967 operating origin, 1979 registration and 2011 name change describe
+different layers of the company record. The 14/2 TDX snapshot differs from the
+historical routes in the group chronology. The 81.65 甲等 city evaluation and
+Blue 22 violation, Highway sightseeing-business 乙 (112) record, and Taipei
+small-fleet ungraded notice are different scopes and are not merged.

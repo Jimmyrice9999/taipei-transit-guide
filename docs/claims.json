@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6281,
+    "sourced": 6313,
     "tbc": 4256,
     "asserted": 32,
     "meta": 45
@@ -250,16 +250,16 @@
     },
     {
       "file": "content/bus/operators/newtaipeibus-mqtqhx.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 7,
+      "sourced": 28,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/newtaipeibus-prtiek.md",
-      "sources": 1,
-      "sourced": 11,
+      "sources": 7,
+      "sourced": 26,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
