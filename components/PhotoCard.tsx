@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import RichText from './RichText'
+import EntityIcon, { type EntityIconKind } from './EntityIcon'
 import { getLine } from '@/lib/lines'
 import { srcCapped, srcsetCapped, type SiteImage } from '@/lib/images'
 
@@ -51,6 +52,7 @@ export default function PhotoCard({
   meta,
   line: lineCode,
   operator,
+  entityKind,
 }: {
   href: string
   image?: SiteImage | null
@@ -62,6 +64,7 @@ export default function PhotoCard({
   meta?: React.ReactNode
   line?: string
   operator?: string
+  entityKind?: EntityIconKind | null
 }) {
   const line = getLine(lineCode, operator)
 
@@ -113,6 +116,7 @@ export default function PhotoCard({
           />
         )}
         <span className="photo-card-body">
+          {entityKind && <EntityIcon kind={entityKind} size={28} className="photo-card-icon" />}
           <span className="photo-card-title">
             {typeof title === 'string' ? <RichText>{title}</RichText> : title}
           </span>

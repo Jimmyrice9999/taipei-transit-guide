@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import LineIcon from './LineIcon'
+import EntityIcon, { type EntityIconKind } from './EntityIcon'
 import RichText from './RichText'
 import { getLine } from '@/lib/lines'
 
@@ -47,6 +48,7 @@ export default function CardRow({
   summary,
   line: lineCode,
   operator,
+  entityKind,
   /** True on an index OF lines, where the row's subject is the line itself. */
   isLine = false,
   /**
@@ -69,6 +71,7 @@ export default function CardRow({
   summary?: string
   line?: string
   operator?: string
+  entityKind?: EntityIconKind | null
   isLine?: boolean
   badges?: boolean
   search?: string
@@ -93,6 +96,7 @@ export default function CardRow({
           cards.
         */}
         {isLine && line && <LineIcon code={line.code} operator={line.operator} size={30} className="card-icon" />}
+        {!isLine && entityKind && <EntityIcon kind={entityKind} size={30} className="card-icon" />}
         <span className="card-body">
           <span className="card-title">
             {typeof title === 'string' ? <RichText badges={badges}>{title}</RichText> : title}

@@ -3,6 +3,10 @@ title: Taichung Metro
 kind: system
 description: Taichung's Green Line — a single steel-wheel, driverless metro linking Beitun, the city centre and the HSR station.
 order: 2
+hero:
+  image: tmrt/hero
+  alt: A white-and-green Taichung Metro Green Line train approaching Beitun Main Station over steel track and switches.
+  caption: A Taichung Metro Green Line train at Beitun Main Station.
 sources:
   - id: tdx-tmrt
     title: Taiwan MOTC TDX rail records for TMRT

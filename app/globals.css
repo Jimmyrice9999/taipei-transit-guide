@@ -194,6 +194,25 @@ a:hover {
   stroke-linejoin: round;
 }
 
+/* Entity marks use the quiet text token, not a second meaning-bearing palette.
+   Their labels and adjacent titles carry the subject; the SVG is a scan aid. */
+.entity-icon {
+  display: inline-block;
+  flex: none;
+  vertical-align: middle;
+  color: var(--text-3);
+}
+
+.page-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-title-icon {
+  color: var(--accent);
+}
+
 /* Slightly larger where a badge is the row's subject rather than an aside. */
 td > .badge:only-child,
 th > .badge:only-child {
@@ -4127,6 +4146,11 @@ a.adjacent-link:hover {
   flex-direction: column;
   gap: 4px;
   padding: 12px 14px 8px;
+}
+
+.photo-card-icon {
+  color: var(--accent);
+  margin-bottom: 2px;
 }
 
 .photo-card-title {

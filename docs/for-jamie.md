@@ -13,4 +13,7 @@ by source/measurement. Full verify, package test and nav are green: 1,954
 pages, 217,934 links, 1,457 a11y pages, 4,858 citations, 11,199 sourced
 claims, 4,305 TBC, 32 asserted, 109 research files, 456 checked failures and
 212/212 tests. Next: icons/photos, then browser screenshots and verify:browser.
-Keep the known 10-file determinism artifact unchanged; do not stage probes/.
+Run 89 added entity icons plus one subject-verified TMRT Commons image; one
+Attribution-only candidate was rejected by the licence gate. Next: complete
+the full gate, then browser screenshots and verify:browser. Keep the known
+10-file determinism artifact unchanged; do not stage probes/.

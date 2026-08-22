@@ -2,6 +2,10 @@
 title: "Capital Bus Co., Ltd. — Taipei operator profile"
 summary: "A sourced profile of Capital Bus’s legal record, operating sites and Taipei-region network."
 updated: 2026-08-21
+hero:
+  image: bus/hero
+  alt: A Capital Bus vehicle at Taipei City Mall, identified by its destination display and livery.
+  caption: A Capital Bus vehicle in Taipei City Mall.
 facts:
   - label: English name
     value: "Capital Bus Co., Ltd."

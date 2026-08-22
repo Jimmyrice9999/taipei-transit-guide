@@ -20,6 +20,7 @@ import References from '@/components/References'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSystem, getType, getTypes } from '@/lib/content'
+import { getEntityIconKind } from '@/components/EntityIcon'
 
 
 /** Which type index to render. `system` is '' for a section with no systems. */
@@ -87,6 +88,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
    */
   const withSpecs = pages.filter((p) => p.specs.length > 0)
   const photoGrid = section === 'rail' && PHOTO_GRID_TYPES.has(type)
+  const entityKind = getEntityIconKind(section, type)
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -175,6 +177,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               line={page.line}
               operator={page.operator || undefined}
               image={page.hero?.image ? getImage(page.hero.image) : null}
+              entityKind={entityKind}
               meta={page.line && <LineBadge code={page.line} operator={page.operator || undefined} />}
             />
           ))}
@@ -197,6 +200,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               summary={page.summary}
               line={page.line}
               operator={page.operator || undefined}
+              entityKind={entityKind}
               /*
                * The icon is the line's own train, so it belongs on rows whose
                * subject IS a line. A fleet or a depot row gets the badge and

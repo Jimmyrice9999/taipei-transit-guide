@@ -36,6 +36,7 @@ import SpecTable from '@/components/SpecTable'
 import Spine, { type DepotMark } from '@/components/Spine'
 import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
+import EntityIcon, { getEntityIconKind } from '@/components/EntityIcon'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { branchTint, getAccent } from '@/lib/lines'
 import { getLineTrack } from '@/lib/network'
@@ -135,6 +136,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const typeMeta = getType(section, type, system)
   const systemMeta = system ? getSystem(section, system) : null
   const accent = getAccent(page.line, page.operator)
+  const entityKind = getEntityIconKind(section, type)
 
   /*
    * The hero photograph leads the page — before the title, the way a reader
@@ -206,7 +208,8 @@ export default async function EntityPage({ section, system = '', type, slug }: E
           />
 
           <header className="article-head">
-            <h1 className="page-title article-title">
+            <h1 className="page-title article-title page-title-with-icon">
+              {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
               <RichText operator={page.operator || undefined}>{page.title}</RichText>
             </h1>
             {page.summary && (
@@ -441,7 +444,8 @@ export default async function EntityPage({ section, system = '', type, slug }: E
         {/* The eyebrow that sat here said "Line · Wenhu Line" above an <h1>
             reading "Wenhu Line". The spine and the panel badge both carry line
             identity now, so it was the third statement of one fact. */}
-        <h1 className="page-title">
+        <h1 className="page-title page-title-with-icon">
+          {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
           <RichText operator={page.operator || undefined}>{page.title}</RichText>
         </h1>
         {page.summary && (

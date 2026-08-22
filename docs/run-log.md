@@ -14452,6 +14452,48 @@ and clean facts, geometry and CVD checks. Navigation passed all 19 checks;
 the separate full package test also passed. The two generated audit JSONs were
 restored; `probes/` remains untracked.
 
+## Run 89 - entity icons and Wikimedia image extension (23 August 2026)
+
+### Sourced
+
+Added labelled SVG subject marks for transit operators, depots, rail vehicle
+models, ticketing, ferries and bike-share. They use the existing text/accent
+tokens and remain supplementary to titles and prose. Existing representative
+Commons imagery remains in use for the bus network/Capital Bus, vehicle models,
+depots, TPASS, Blue Highway ferry and piers, and YouBike docks. Added
+`public/images/tmrt/hero` from the Commons file `2020-11-16 MRT train at Beitun
+Main Station.jpg` (CC BY-SA 2.0, Cheng-en Cheng), visually checked as a
+Taichung Green Line train on track, and attached it to the TMRT system page.
+
+### TBC
+
+No licence-clean, subject-verified image was found in this unit for a specific
+Blue Highway operator or for every individual bus operator/depot. The site
+keeps representative images rather than implying that one vehicle depicts all
+companies or that an unlabelled vehicle interior proves an operator identity.
+
+### Contradicted the corpus
+
+The existing image workflow's subject-first rule held: filenames and search
+matches were not accepted as evidence. No existing image was replaced.
+
+### Conflicts found
+
+`File:Train of Taichung MRT 20210107.jpg` visibly depicts Taichung Metro, but
+Commons reports its licence as `Attribution`, not one of the permitted CC0,
+public-domain, CC BY or CC BY-SA licences. It was rejected and not downloaded.
+
+### Verification
+
+The accepted source download had MD5 `9F86A2FDE579126E9AC4B003746DA24C` in the
+ignored cache; the shipped WebP variants were checked individually:
+1600w `4400366DF1CA02E4049825E05C747B2E`, 800w
+`0EFB2691DBE270462F1036758034D46F`, and 400w
+`917F3C760A222466F7A1EE9B14B44A32`. Full verify passed: 1,954 pages,
+217,942 internal links with no broken links or orphans, 1,457 a11y pages with
+no errors or warnings, 4,858 citations, 11,199 sourced / 4,305 TBC / 32
+asserted claims, all 212 unit tests, and clean research, geometry and CVD.
+
 ## Run 87 - ticketing and Blue Highway (23 August 2026)
 
 ### Sourced
