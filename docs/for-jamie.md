@@ -2,10 +2,17 @@
 
 ## Stop handoff — 23 August 2026
 
-Part 0 was verified at commit 597cfd8: 61 operator pages, 42 researched pages and 19 TDX-only stubs. Run 83 researched Dàyou Bus record 16474 without merging its separate Taipei record.
-Run 82 preserves Haloha’s water-operator mode mismatch in a zero-route bus record.
-Run 84 expanded all 19 remaining short district-office records with generated TDX route associations and authority context; the remaining private fields are TBC/N/A.
-Run 85 added sourced Model T, Yutong 6128HG, King Long, Danan Guandu, San Chung and Taipei Bus site records. Incomplete technical and depot fields remain TBC.
-YouBike indexes/data, ticketing/ferries, Taichung, icons/photos and final browser verification remain.
-Run 85 gates: full verify passed with no a11y warnings; build exports 1,875 pages; cite resolves 4,615; claims remain at 32 asserted statements.
-Generated links-audit.json and unused-audit.json were restored after verification. Do not stage probes/; it remains intentionally untracked.
+Part 0 is verified. Runs 83-84 completed the operator batches; Run 85 added
+sourced bus model and depot/site records.
+Run 86 committed the YouBike static TDX layer for Taipei, New Taipei and
+Taoyuan: 4,086 rows, 123,446 docks, 364 confirmed coordinate-only rail joins,
+and city/district indexes with no individual station pages.
+The live availability feed, most source districts, other municipalities,
+ticketing/ferries, Taichung, icons/photos and final browser verification remain.
+The current feed conflicts with the earlier 4,081-row snapshot; both are
+documented. Unclassified rows are not guessed into districts.
+Run 86 full verify passed: 1,906 pages, no broken links/orphans, no a11y
+warnings, 212/212 unit tests, 4,667 citations, 10,845 sourced claims,
+4,305 TBC, 32 asserted, research clean, geometry/CVD clean.
+Generated links-audit.json and unused-audit.json were restored. Do not stage
+probes/; it remains intentionally untracked.

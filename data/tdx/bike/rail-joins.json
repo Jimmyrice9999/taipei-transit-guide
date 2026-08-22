@@ -1,0 +1,3278 @@
+[
+  {
+    "bikeId": "youbike-NWT-NWT500203004",
+    "distanceM": 52.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A2",
+    "railNameEn": "Sanchong Station",
+    "railNameZh": "三重站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203014",
+    "distanceM": 105.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O14",
+    "railNameEn": "Cailiao",
+    "railNameZh": "菜寮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203015",
+    "distanceM": 188.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O14",
+    "railNameEn": "Cailiao",
+    "railNameZh": "菜寮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203034",
+    "distanceM": 20.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O50",
+    "railNameEn": "Sanchong Elementary School",
+    "railNameZh": "三重國小",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203048",
+    "distanceM": 169.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O51",
+    "railNameEn": "Sanhe Junior High School",
+    "railNameZh": "三和國中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203050",
+    "distanceM": 72.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O16",
+    "railNameEn": "Xianse Temple",
+    "railNameZh": "先嗇宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203060",
+    "distanceM": 55.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O15",
+    "railNameEn": "Sanchong",
+    "railNameZh": "三重",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203078",
+    "distanceM": 28.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O51",
+    "railNameEn": "Sanhe Junior High School",
+    "railNameZh": "三和國中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203084",
+    "distanceM": 199.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O13",
+    "railNameEn": "Taipei Bridge",
+    "railNameZh": "台北橋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500203109",
+    "distanceM": 140.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O16",
+    "railNameEn": "Xianse Temple",
+    "railNameZh": "先嗇宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206011",
+    "distanceM": 107,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL04",
+    "railNameEn": "Haishan",
+    "railNameZh": "海山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206014",
+    "distanceM": 52.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL03",
+    "railNameEn": "Tucheng",
+    "railNameZh": "土城",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206016",
+    "distanceM": 97.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL02",
+    "railNameEn": "Yongning",
+    "railNameZh": "永寧",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206022",
+    "distanceM": 132.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL01",
+    "railNameEn": "Dingpu",
+    "railNameZh": "頂埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206025",
+    "distanceM": 120.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL04",
+    "railNameEn": "Haishan",
+    "railNameZh": "海山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206063",
+    "distanceM": 82.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL02",
+    "railNameEn": "Yongning",
+    "railNameZh": "永寧",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206064",
+    "distanceM": 94.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL02",
+    "railNameEn": "Yongning",
+    "railNameZh": "永寧",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206065",
+    "distanceM": 14.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL03",
+    "railNameEn": "Tucheng",
+    "railNameZh": "土城",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206082",
+    "distanceM": 179.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL03",
+    "railNameEn": "Tucheng",
+    "railNameZh": "土城",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206083",
+    "distanceM": 128.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL03",
+    "railNameEn": "Tucheng",
+    "railNameZh": "土城",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206086",
+    "distanceM": 86.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL04",
+    "railNameEn": "Haishan",
+    "railNameZh": "海山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206090",
+    "distanceM": 168,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL04",
+    "railNameEn": "Haishan",
+    "railNameZh": "海山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206098",
+    "distanceM": 37.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL01",
+    "railNameEn": "Dingpu",
+    "railNameZh": "頂埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500206099",
+    "distanceM": 143.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL01",
+    "railNameEn": "Dingpu",
+    "railNameZh": "頂埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207005",
+    "distanceM": 103.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O01",
+    "railNameEn": "Nanshijiao",
+    "railNameZh": "南勢角",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207015",
+    "distanceM": 77.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y10",
+    "railNameEn": "Jingping",
+    "railNameZh": "景平",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207023",
+    "distanceM": 110.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y14",
+    "railNameEn": "Zhongyuan",
+    "railNameZh": "中原",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207030",
+    "distanceM": 22,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y12",
+    "railNameEn": "Zhonghe",
+    "railNameZh": "中和",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207042",
+    "distanceM": 14.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y09",
+    "railNameEn": "Xiulang Bridge",
+    "railNameZh": "秀朗橋",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207058",
+    "distanceM": 193.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y14",
+    "railNameEn": "Zhongyuan",
+    "railNameZh": "中原",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207068",
+    "distanceM": 130.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y10",
+    "railNameEn": "Jingping",
+    "railNameZh": "景平",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500207111",
+    "distanceM": 76.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y13",
+    "railNameEn": "Qiaohe",
+    "railNameZh": "橋和",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500210024",
+    "distanceM": 129.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O04",
+    "railNameEn": "Dingxi",
+    "railNameZh": "頂溪",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500210038",
+    "distanceM": 169.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O04",
+    "railNameEn": "Dingxi",
+    "railNameZh": "頂溪",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500210044",
+    "distanceM": 131.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O04",
+    "railNameEn": "Dingxi",
+    "railNameZh": "頂溪",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500210045",
+    "distanceM": 4.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O04",
+    "railNameEn": "Dingxi",
+    "railNameZh": "頂溪",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500210046",
+    "distanceM": 95.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O04",
+    "railNameEn": "Dingxi",
+    "railNameZh": "頂溪",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500216001",
+    "distanceM": 119.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A9",
+    "railNameEn": "Linkou Station",
+    "railNameZh": "林口站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500216044",
+    "distanceM": 144.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A9",
+    "railNameEn": "Linkou Station",
+    "railNameZh": "林口站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500216046",
+    "distanceM": 119.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A9",
+    "railNameEn": "Linkou Station",
+    "railNameZh": "林口站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218005",
+    "distanceM": 77.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL05",
+    "railNameEn": "Far Eastern Hospital",
+    "railNameZh": "亞東醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218018",
+    "distanceM": 110.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y15",
+    "railNameEn": "Banxin",
+    "railNameZh": "板新",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218019",
+    "distanceM": 42.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y17",
+    "railNameEn": "Xinpu Minsheng",
+    "railNameZh": "新埔民生",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218020",
+    "distanceM": 38.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL08",
+    "railNameEn": "Xinpu",
+    "railNameZh": "新埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218021",
+    "distanceM": 95.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL08",
+    "railNameEn": "Xinpu",
+    "railNameZh": "新埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218043",
+    "distanceM": 162.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL08",
+    "railNameEn": "Xinpu",
+    "railNameZh": "新埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218044",
+    "distanceM": 41.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL08",
+    "railNameEn": "Xinpu",
+    "railNameZh": "新埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218045",
+    "distanceM": 100.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL07",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218046",
+    "distanceM": 105.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL07",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218052",
+    "distanceM": 121.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218061",
+    "distanceM": 112.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218084",
+    "distanceM": 37,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL06",
+    "railNameEn": "Fuzhong",
+    "railNameZh": "府中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218096",
+    "distanceM": 117,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y16",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218097",
+    "distanceM": 65.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL06",
+    "railNameEn": "Fuzhong",
+    "railNameZh": "府中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218117",
+    "distanceM": 84.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y15",
+    "railNameEn": "Banxin",
+    "railNameZh": "板新",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218132",
+    "distanceM": 180.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218133",
+    "distanceM": 105.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218134",
+    "distanceM": 97.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218135",
+    "distanceM": 65.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218136",
+    "distanceM": 102.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218141",
+    "distanceM": 143.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y16",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218154",
+    "distanceM": 47.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y16",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218188",
+    "distanceM": 154.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y16",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218193",
+    "distanceM": 121.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL06",
+    "railNameEn": "Fuzhong",
+    "railNameZh": "府中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218199",
+    "distanceM": 166.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL07",
+    "railNameEn": "Banqiao",
+    "railNameZh": "板橋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218202",
+    "distanceM": 14,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL05",
+    "railNameEn": "Far Eastern Hospital",
+    "railNameZh": "亞東醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218211",
+    "distanceM": 40.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL09",
+    "railNameEn": "Jiangzicui",
+    "railNameZh": "江子翠",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218216",
+    "distanceM": 144.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL08",
+    "railNameEn": "Xinpu",
+    "railNameZh": "新埔",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500218217",
+    "distanceM": 72.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL05",
+    "railNameEn": "Far Eastern Hospital",
+    "railNameZh": "亞東醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500220007",
+    "distanceM": 58.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A5",
+    "railNameEn": "Taishan Station",
+    "railNameZh": "泰山站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500220011",
+    "distanceM": 40.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A6",
+    "railNameEn": "Taishan Guihe Station",
+    "railNameZh": "泰山貴和站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500220015",
+    "distanceM": 35.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A5",
+    "railNameEn": "Taishan Station",
+    "railNameZh": "泰山站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223002",
+    "distanceM": 54.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V09",
+    "railNameEn": "Binhai Shalun",
+    "railNameZh": "濱海沙崙",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223004",
+    "distanceM": 71.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V10",
+    "railNameEn": "Danhai New Town",
+    "railNameZh": "淡海新市鎮",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223007",
+    "distanceM": 110.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V28",
+    "railNameEn": "Taipei University of Marine Technology",
+    "railNameZh": "台北海洋大學",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223009",
+    "distanceM": 74.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R26",
+    "railNameEn": "Zhuwei",
+    "railNameZh": "竹圍",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223010",
+    "distanceM": 55.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R27",
+    "railNameEn": "Hongshulin",
+    "railNameZh": "紅樹林",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223016",
+    "distanceM": 39.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V27",
+    "railNameEn": "Shalun",
+    "railNameZh": "沙崙",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223017",
+    "distanceM": 51.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V26",
+    "railNameEn": "Tamsui Fisherman's Wharf",
+    "railNameZh": "淡水漁人碼頭",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223018",
+    "distanceM": 47.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V04",
+    "railNameEn": "Tamkang University",
+    "railNameZh": "淡江大學",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223019",
+    "distanceM": 37.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V05",
+    "railNameEn": "Danjin Beixin",
+    "railNameZh": "淡金北新",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223020",
+    "distanceM": 42.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V06",
+    "railNameEn": "Xinshi 1st Rd.",
+    "railNameZh": "新市一路",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223023",
+    "distanceM": 20.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V07",
+    "railNameEn": "Tamsui District Office",
+    "railNameZh": "淡水行政中心",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223029",
+    "distanceM": 46.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V11",
+    "railNameEn": "Kanding",
+    "railNameZh": "崁頂",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223036",
+    "distanceM": 161.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V03",
+    "railNameEn": "Danjin Denggong",
+    "railNameZh": "淡金鄧公",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223041",
+    "distanceM": 150.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R28",
+    "railNameEn": "Tamsui",
+    "railNameZh": "淡水",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223048",
+    "distanceM": 42.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V02",
+    "railNameEn": "Ganzhenlin",
+    "railNameZh": "竿蓁林",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223057",
+    "distanceM": 104.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R28",
+    "railNameEn": "Tamsui",
+    "railNameZh": "淡水",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223063",
+    "distanceM": 60.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V01",
+    "railNameEn": "Hongshulin",
+    "railNameZh": "紅樹林",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223065",
+    "distanceM": 182.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V08",
+    "railNameEn": "Binhai Yishan",
+    "railNameZh": "濱海義山",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223070",
+    "distanceM": 18.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V08",
+    "railNameEn": "Binhai Yishan",
+    "railNameZh": "濱海義山",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500223085",
+    "distanceM": 75.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "V11",
+    "railNameEn": "Kanding",
+    "railNameZh": "崁頂",
+    "railSystem": "New Taipei Danhai LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227004",
+    "distanceM": 158.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G03",
+    "railNameEn": "Qizhang",
+    "railNameZh": "七張",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227005",
+    "distanceM": 85.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y08",
+    "railNameEn": "Shisizhang",
+    "railNameZh": "十四張",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227007",
+    "distanceM": 49.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G03A",
+    "railNameEn": "Xiaobitan",
+    "railNameZh": "小碧潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227018",
+    "distanceM": 92.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G03",
+    "railNameEn": "Qizhang",
+    "railNameZh": "七張",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227021",
+    "distanceM": 107.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G01",
+    "railNameEn": "Xindian",
+    "railNameZh": "新店",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227032",
+    "distanceM": 77,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G02",
+    "railNameEn": "Xindian District Office",
+    "railNameZh": "新店區公所",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227034",
+    "distanceM": 30.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G02",
+    "railNameEn": "Xindian District Office",
+    "railNameZh": "新店區公所",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227039",
+    "distanceM": 183.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K08",
+    "railNameEn": "Xinhe Elementary School",
+    "railNameZh": "新和國小",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227042",
+    "distanceM": 192.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K06",
+    "railNameEn": "Ankang",
+    "railNameZh": "安康",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227053",
+    "distanceM": 36.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G03",
+    "railNameEn": "Qizhang",
+    "railNameZh": "七張",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227056",
+    "distanceM": 187.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K09",
+    "railNameEn": "Shisizhang",
+    "railNameZh": "十四張",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227073",
+    "distanceM": 77.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G03",
+    "railNameEn": "Qizhang",
+    "railNameZh": "七張",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227080",
+    "distanceM": 171.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K06",
+    "railNameEn": "Ankang",
+    "railNameZh": "安康",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227086",
+    "distanceM": 56.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K01",
+    "railNameEn": "Shuangcheng",
+    "railNameZh": "雙城",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227088",
+    "distanceM": 42.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K02",
+    "railNameEn": "Rose China Town",
+    "railNameZh": "玫瑰中國城",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227090",
+    "distanceM": 100.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K03",
+    "railNameEn": "Taipei Xiaocheng",
+    "railNameZh": "台北小城",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227091",
+    "distanceM": 113.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K05",
+    "railNameEn": "Jinwen University of Science and Technology",
+    "railNameZh": "景文科大",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227092",
+    "distanceM": 12.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K06",
+    "railNameEn": "Ankang",
+    "railNameZh": "安康",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227093",
+    "distanceM": 52.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K07",
+    "railNameEn": "Sunshine Sports Park",
+    "railNameZh": "陽光運動公園",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227094",
+    "distanceM": 18.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K08",
+    "railNameEn": "Xinhe Elementary School",
+    "railNameZh": "新和國小",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227098",
+    "distanceM": 147.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K06",
+    "railNameEn": "Ankang",
+    "railNameZh": "安康",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227108",
+    "distanceM": 200,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K06",
+    "railNameEn": "Ankang",
+    "railNameZh": "安康",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227113",
+    "distanceM": 158.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y08",
+    "railNameEn": "Shisizhang",
+    "railNameZh": "十四張",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500227118",
+    "distanceM": 155.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "K08",
+    "railNameEn": "Xinhe Elementary School",
+    "railNameZh": "新和國小",
+    "railSystem": "New Taipei Ankeng LRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229001",
+    "distanceM": 23.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y19",
+    "railNameEn": "Xingfu",
+    "railNameZh": "幸福",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229008",
+    "distanceM": 97.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O19",
+    "railNameEn": "Fu Jen University",
+    "railNameZh": "輔大",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229012",
+    "distanceM": 100.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A4",
+    "railNameEn": "Xinzhuang Fuduxin Station",
+    "railNameZh": "新莊副都心站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229015",
+    "distanceM": 35.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A3",
+    "railNameEn": "New Taipei Industrial Park Station",
+    "railNameZh": "新北產業園區站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229024",
+    "distanceM": 39.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O18",
+    "railNameEn": "Xinzhuang",
+    "railNameZh": "新莊",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229025",
+    "distanceM": 60.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O18",
+    "railNameEn": "Xinzhuang",
+    "railNameZh": "新莊",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229044",
+    "distanceM": 38.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O20",
+    "railNameEn": "Danfeng",
+    "railNameZh": "丹鳳",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229049",
+    "distanceM": 149.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O21",
+    "railNameEn": "Huilong",
+    "railNameZh": "迴龍",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229095",
+    "distanceM": 26.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O19",
+    "railNameEn": "Fu Jen University",
+    "railNameZh": "輔大",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229096",
+    "distanceM": 135.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O21",
+    "railNameEn": "Huilong",
+    "railNameZh": "迴龍",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229099",
+    "distanceM": 158.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A3",
+    "railNameEn": "New Taipei Industrial Park Station",
+    "railNameZh": "新北產業園區站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229104",
+    "distanceM": 141.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A3",
+    "railNameEn": "New Taipei Industrial Park Station",
+    "railNameZh": "新北產業園區站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229113",
+    "distanceM": 195.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y19",
+    "railNameEn": "Xingfu",
+    "railNameZh": "幸福",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500229120",
+    "distanceM": 56.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "Y19",
+    "railNameEn": "Xingfu",
+    "railNameZh": "幸福",
+    "railSystem": "New Taipei Circular Line"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233001",
+    "distanceM": 19.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O52",
+    "railNameEn": "St.lgnatius High School",
+    "railNameZh": "徐匯中學",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233011",
+    "distanceM": 78.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O53",
+    "railNameEn": "Sanmin Senior High School",
+    "railNameZh": "三民高中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233014",
+    "distanceM": 69.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O54",
+    "railNameEn": "Luzhou",
+    "railNameZh": "蘆洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233029",
+    "distanceM": 53.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O53",
+    "railNameEn": "Sanmin Senior High School",
+    "railNameZh": "三民高中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233032",
+    "distanceM": 58.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O54",
+    "railNameEn": "Luzhou",
+    "railNameZh": "蘆洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-NWT-NWT500233055",
+    "distanceM": 114.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O54",
+    "railNameEn": "Luzhou",
+    "railNameZh": "蘆洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500302001",
+    "distanceM": 106.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A15",
+    "railNameEn": "Dayuan Station",
+    "railNameZh": "大園站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500302002",
+    "distanceM": 177.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A17",
+    "railNameEn": "Linghang Station",
+    "railNameZh": "領航站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500302022",
+    "distanceM": 58.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A16",
+    "railNameEn": "Hengshan Station",
+    "railNameZh": "橫山站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500302023",
+    "distanceM": 115.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A17",
+    "railNameEn": "Linghang Station",
+    "railNameZh": "領航站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304034",
+    "distanceM": 13.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A18",
+    "railNameEn": "Taoyuan HSR Station",
+    "railNameZh": "高鐵桃園站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304035",
+    "distanceM": 85.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A19",
+    "railNameEn": "Taoyuan Sports Park Station",
+    "railNameZh": "桃園體育園區站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304036",
+    "distanceM": 41.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A21",
+    "railNameEn": "Huanbei Station",
+    "railNameZh": "環北站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304085",
+    "distanceM": 187.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A18",
+    "railNameEn": "Taoyuan HSR Station",
+    "railNameZh": "高鐵桃園站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304099",
+    "distanceM": 6.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A22",
+    "railNameEn": "Laojie River Station",
+    "railNameZh": "老街溪站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304115",
+    "distanceM": 68.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A18",
+    "railNameEn": "Taoyuan HSR Station",
+    "railNameZh": "高鐵桃園站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500304129",
+    "distanceM": 64.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A20",
+    "railNameEn": "Xingnan Station",
+    "railNameZh": "興南站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500311001",
+    "distanceM": 57.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A8",
+    "railNameEn": "Chang Gung Memorial Hospital Station",
+    "railNameZh": "長庚醫院站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500311010",
+    "distanceM": 65.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A7",
+    "railNameEn": "National Taiwan Sport University Station",
+    "railNameZh": "體育大學站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500311051",
+    "distanceM": 36.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A7",
+    "railNameEn": "National Taiwan Sport University Station",
+    "railNameZh": "體育大學站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500311059",
+    "distanceM": 26.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A8",
+    "railNameEn": "Chang Gung Memorial Hospital Station",
+    "railNameZh": "長庚醫院站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500311078",
+    "distanceM": 97.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A7",
+    "railNameEn": "National Taiwan Sport University Station",
+    "railNameZh": "體育大學站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500312023",
+    "distanceM": 77,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A11",
+    "railNameEn": "Kengkou Station",
+    "railNameZh": "坑口站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TAO-TAO500312047",
+    "distanceM": 52,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A10",
+    "railNameEn": "Shanbi Station",
+    "railNameZh": "山鼻站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101001",
+    "distanceM": 15.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR08",
+    "railNameEn": "Technology Building",
+    "railNameZh": "科技大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101002",
+    "distanceM": 53.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR08",
+    "railNameEn": "Technology Building",
+    "railNameZh": "科技大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101012",
+    "distanceM": 194.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101013",
+    "distanceM": 78,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR08",
+    "railNameEn": "Technology Building",
+    "railNameZh": "科技大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101021",
+    "distanceM": 154,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101022",
+    "distanceM": 14.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101100",
+    "distanceM": 63.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR06",
+    "railNameEn": "Linguang",
+    "railNameZh": "麟光",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101101",
+    "distanceM": 40.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR07",
+    "railNameEn": "Liuzhangli",
+    "railNameZh": "六張犁",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101104",
+    "distanceM": 141.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101128",
+    "distanceM": 196.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O07",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101133",
+    "distanceM": 84.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR10",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101141",
+    "distanceM": 99.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R04",
+    "railNameEn": "Xinyi Anhe",
+    "railNameZh": "信義安和",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101144",
+    "distanceM": 181.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R06",
+    "railNameEn": "Daan Park",
+    "railNameZh": "大安森林公園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101149",
+    "distanceM": 99.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O07",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101150",
+    "distanceM": 45.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL14",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101152",
+    "distanceM": 91.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O07",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101155",
+    "distanceM": 29.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R06",
+    "railNameEn": "Daan Park",
+    "railNameZh": "大安森林公園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101156",
+    "distanceM": 140.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R06",
+    "railNameEn": "Daan Park",
+    "railNameZh": "大安森林公園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101159",
+    "distanceM": 104.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101160",
+    "distanceM": 196.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL16",
+    "railNameEn": "Zhongxiao Dunhua",
+    "railNameZh": "忠孝敦化",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101161",
+    "distanceM": 109.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL16",
+    "railNameEn": "Zhongxiao Dunhua",
+    "railNameZh": "忠孝敦化",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101166",
+    "distanceM": 171.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR08",
+    "railNameEn": "Technology Building",
+    "railNameZh": "科技大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101167",
+    "distanceM": 40.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL17",
+    "railNameEn": "Sun Yat-Sen Memorial Hall",
+    "railNameZh": "國父紀念館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101169",
+    "distanceM": 117.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R04",
+    "railNameEn": "Xinyi Anhe",
+    "railNameZh": "信義安和",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101172",
+    "distanceM": 0,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R04",
+    "railNameEn": "Xinyi Anhe",
+    "railNameZh": "信義安和",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101177",
+    "distanceM": 176.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101181",
+    "distanceM": 102.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101197",
+    "distanceM": 165.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101207",
+    "distanceM": 45.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101208",
+    "distanceM": 175,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R04",
+    "railNameEn": "Xinyi Anhe",
+    "railNameZh": "信義安和",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101212",
+    "distanceM": 146.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL17",
+    "railNameEn": "Sun Yat-Sen Memorial Hall",
+    "railNameZh": "國父紀念館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101223",
+    "distanceM": 181.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR07",
+    "railNameEn": "Liuzhangli",
+    "railNameZh": "六張犁",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101227",
+    "distanceM": 58.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR10",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101233",
+    "distanceM": 39.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101236",
+    "distanceM": 198.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR06",
+    "railNameEn": "Linguang",
+    "railNameZh": "麟光",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101239",
+    "distanceM": 160.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101247",
+    "distanceM": 37,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101251",
+    "distanceM": 42.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL15",
+    "railNameEn": "Zhongxiao Fuxing",
+    "railNameZh": "忠孝復興",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101274",
+    "distanceM": 28.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR08",
+    "railNameEn": "Technology Building",
+    "railNameZh": "科技大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500101276",
+    "distanceM": 184.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103009",
+    "distanceM": 18.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R14",
+    "railNameEn": "Yuanshan",
+    "railNameZh": "圓山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103023",
+    "distanceM": 194.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R14",
+    "railNameEn": "Yuanshan",
+    "railNameZh": "圓山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103024",
+    "distanceM": 11.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O12",
+    "railNameEn": "Daqiaotou",
+    "railNameZh": "大橋頭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103025",
+    "distanceM": 139.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O12",
+    "railNameEn": "Daqiaotou",
+    "railNameZh": "大橋頭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103027",
+    "distanceM": 76.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R12",
+    "railNameEn": "Shuanglian",
+    "railNameZh": "雙連",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103028",
+    "distanceM": 45.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G13",
+    "railNameEn": "Beimen",
+    "railNameZh": "北門",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103037",
+    "distanceM": 74.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A1",
+    "railNameEn": "Taipei Main Station",
+    "railNameZh": "台北車站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103046",
+    "distanceM": 140.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O12",
+    "railNameEn": "Daqiaotou",
+    "railNameZh": "大橋頭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103057",
+    "distanceM": 91.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R14",
+    "railNameEn": "Yuanshan",
+    "railNameZh": "圓山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103059",
+    "distanceM": 199.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "A1",
+    "railNameEn": "Taipei Main Station",
+    "railNameZh": "台北車站",
+    "railSystem": "Taoyuan Airport MRT"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103077",
+    "distanceM": 154,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O12",
+    "railNameEn": "Daqiaotou",
+    "railNameZh": "大橋頭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103079",
+    "distanceM": 162.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O12",
+    "railNameEn": "Daqiaotou",
+    "railNameZh": "大橋頭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103084",
+    "distanceM": 77.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R14",
+    "railNameEn": "Yuanshan",
+    "railNameZh": "圓山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500103086",
+    "distanceM": 84.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G13",
+    "railNameEn": "Beimen",
+    "railNameZh": "北門",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104028",
+    "distanceM": 108.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R17",
+    "railNameEn": "Zhishan",
+    "railNameZh": "芝山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104030",
+    "distanceM": 53.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R15",
+    "railNameEn": "Jiantan",
+    "railNameZh": "劍潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104031",
+    "distanceM": 19.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R15",
+    "railNameEn": "Jiantan",
+    "railNameZh": "劍潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104041",
+    "distanceM": 20.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R16",
+    "railNameEn": "Shilin",
+    "railNameZh": "士林",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104046",
+    "distanceM": 60.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R17",
+    "railNameEn": "Zhishan",
+    "railNameZh": "芝山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104088",
+    "distanceM": 198,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R17",
+    "railNameEn": "Zhishan",
+    "railNameZh": "芝山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104091",
+    "distanceM": 178.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R15",
+    "railNameEn": "Jiantan",
+    "railNameZh": "劍潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104098",
+    "distanceM": 156,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R15",
+    "railNameEn": "Jiantan",
+    "railNameZh": "劍潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104108",
+    "distanceM": 71.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R17",
+    "railNameEn": "Zhishan",
+    "railNameZh": "芝山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500104136",
+    "distanceM": 198.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R15",
+    "railNameEn": "Jiantan",
+    "railNameZh": "劍潭",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105002",
+    "distanceM": 89.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G06",
+    "railNameEn": "Wanlong",
+    "railNameZh": "萬隆",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105003",
+    "distanceM": 93.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G06",
+    "railNameEn": "Wanlong",
+    "railNameZh": "萬隆",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105005",
+    "distanceM": 102.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G06",
+    "railNameEn": "Wanlong",
+    "railNameZh": "萬隆",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105007",
+    "distanceM": 107.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G05",
+    "railNameEn": "Jingmei",
+    "railNameZh": "景美",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105014",
+    "distanceM": 174.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G05",
+    "railNameEn": "Jingmei",
+    "railNameZh": "景美",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105019",
+    "distanceM": 68.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR01",
+    "railNameEn": "Taipei Zoo",
+    "railNameZh": "動物園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105020",
+    "distanceM": 146.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR02",
+    "railNameEn": "Muzha",
+    "railNameZh": "木柵",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105021",
+    "distanceM": 51.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR03",
+    "railNameEn": "Wanfang Community",
+    "railNameZh": "萬芳社區",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105023",
+    "distanceM": 89.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR05",
+    "railNameEn": "Xinhai",
+    "railNameZh": "辛亥",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105048",
+    "distanceM": 39.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR04",
+    "railNameEn": "Wanfang Hospital",
+    "railNameZh": "萬芳醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105062",
+    "distanceM": 97,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR01",
+    "railNameEn": "Taipei Zoo",
+    "railNameZh": "動物園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105071",
+    "distanceM": 186.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G05",
+    "railNameEn": "Jingmei",
+    "railNameZh": "景美",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105093",
+    "distanceM": 137.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR05",
+    "railNameEn": "Xinhai",
+    "railNameZh": "辛亥",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105101",
+    "distanceM": 34.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR02",
+    "railNameEn": "Muzha",
+    "railNameZh": "木柵",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500105117",
+    "distanceM": 22.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G05",
+    "railNameEn": "Jingmei",
+    "railNameZh": "景美",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106003",
+    "distanceM": 28.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106004",
+    "distanceM": 62.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106007",
+    "distanceM": 143.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106011",
+    "distanceM": 43.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106012",
+    "distanceM": 71.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G08",
+    "railNameEn": "Taipower Building",
+    "railNameZh": "台電大樓",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106039",
+    "distanceM": 74.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G11",
+    "railNameEn": "Xiaonanmen",
+    "railNameZh": "小南門",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106043",
+    "distanceM": 182,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL13",
+    "railNameEn": "Shandao Temple",
+    "railNameZh": "善導寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106049",
+    "distanceM": 69.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL13",
+    "railNameEn": "Shandao Temple",
+    "railNameZh": "善導寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106050",
+    "distanceM": 161.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G11",
+    "railNameEn": "Xiaonanmen",
+    "railNameZh": "小南門",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106062",
+    "distanceM": 179.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R09",
+    "railNameEn": "NTU Hospital",
+    "railNameZh": "台大醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106069",
+    "distanceM": 58.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL14",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106102",
+    "distanceM": 87.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL14",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106103",
+    "distanceM": 75.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O07",
+    "railNameEn": "Zhongxiao Xinsheng",
+    "railNameZh": "忠孝新生",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106104",
+    "distanceM": 75,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R09",
+    "railNameEn": "NTU Hospital",
+    "railNameZh": "台大醫院",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106110",
+    "distanceM": 31.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL13",
+    "railNameEn": "Shandao Temple",
+    "railNameZh": "善導寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106126",
+    "distanceM": 173.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL13",
+    "railNameEn": "Shandao Temple",
+    "railNameZh": "善導寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106135",
+    "distanceM": 186.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500106137",
+    "distanceM": 50.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G11",
+    "railNameEn": "Xiaonanmen",
+    "railNameZh": "小南門",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107008",
+    "distanceM": 50.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR15",
+    "railNameEn": "Jiannan Rd.",
+    "railNameZh": "劍南路",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107011",
+    "distanceM": 56,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR14",
+    "railNameEn": "Dazhi",
+    "railNameZh": "大直",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107024",
+    "distanceM": 28.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR12",
+    "railNameEn": "Zhongshan Junior High School",
+    "railNameZh": "中山國中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107035",
+    "distanceM": 49.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O10",
+    "railNameEn": "Zhongshan Elementary School",
+    "railNameZh": "中山國小",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107036",
+    "distanceM": 77.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O09",
+    "railNameEn": "Xingtian Temple",
+    "railNameZh": "行天宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107038",
+    "distanceM": 40.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O10",
+    "railNameEn": "Zhongshan Elementary School",
+    "railNameZh": "中山國小",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107062",
+    "distanceM": 64.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O09",
+    "railNameEn": "Xingtian Temple",
+    "railNameZh": "行天宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107092",
+    "distanceM": 80,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR14",
+    "railNameEn": "Dazhi",
+    "railNameZh": "大直",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107097",
+    "distanceM": 177.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O09",
+    "railNameEn": "Xingtian Temple",
+    "railNameZh": "行天宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107108",
+    "distanceM": 12.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR14",
+    "railNameEn": "Dazhi",
+    "railNameZh": "大直",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107112",
+    "distanceM": 123.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O10",
+    "railNameEn": "Zhongshan Elementary School",
+    "railNameZh": "中山國小",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107132",
+    "distanceM": 72.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR15",
+    "railNameEn": "Jiannan Rd.",
+    "railNameZh": "劍南路",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107144",
+    "distanceM": 129.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O09",
+    "railNameEn": "Xingtian Temple",
+    "railNameZh": "行天宮",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107164",
+    "distanceM": 30.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R12",
+    "railNameEn": "Shuanglian",
+    "railNameZh": "雙連",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107167",
+    "distanceM": 108.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR15",
+    "railNameEn": "Jiannan Rd.",
+    "railNameZh": "劍南路",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107184",
+    "distanceM": 189.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR12",
+    "railNameEn": "Zhongshan Junior High School",
+    "railNameZh": "中山國中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500107196",
+    "distanceM": 189.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "O10",
+    "railNameEn": "Zhongshan Elementary School",
+    "railNameZh": "中山國小",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108016",
+    "distanceM": 40,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR20",
+    "railNameEn": "Dahu Park",
+    "railNameZh": "大湖公園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108020",
+    "distanceM": 127.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR16",
+    "railNameEn": "Xihu",
+    "railNameZh": "西湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108021",
+    "distanceM": 14,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR16",
+    "railNameEn": "Xihu",
+    "railNameZh": "西湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108025",
+    "distanceM": 87,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR19",
+    "railNameEn": "Neihu",
+    "railNameZh": "內湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108028",
+    "distanceM": 37.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR18",
+    "railNameEn": "Wende",
+    "railNameZh": "文德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108031",
+    "distanceM": 160.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR18",
+    "railNameEn": "Wende",
+    "railNameZh": "文德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108057",
+    "distanceM": 85.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR21",
+    "railNameEn": "Huzhou",
+    "railNameZh": "葫洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108064",
+    "distanceM": 26.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR19",
+    "railNameEn": "Neihu",
+    "railNameZh": "內湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108070",
+    "distanceM": 81.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR17",
+    "railNameEn": "Gangqian",
+    "railNameZh": "港墘",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108082",
+    "distanceM": 31.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR19",
+    "railNameEn": "Neihu",
+    "railNameZh": "內湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108098",
+    "distanceM": 178.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR17",
+    "railNameEn": "Gangqian",
+    "railNameZh": "港墘",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108128",
+    "distanceM": 52.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR17",
+    "railNameEn": "Gangqian",
+    "railNameZh": "港墘",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108139",
+    "distanceM": 196.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR18",
+    "railNameEn": "Wende",
+    "railNameZh": "文德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108146",
+    "distanceM": 140.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR16",
+    "railNameEn": "Xihu",
+    "railNameZh": "西湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108153",
+    "distanceM": 191.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR17",
+    "railNameEn": "Gangqian",
+    "railNameZh": "港墘",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108154",
+    "distanceM": 162.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR17",
+    "railNameEn": "Gangqian",
+    "railNameZh": "港墘",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108168",
+    "distanceM": 18.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR16",
+    "railNameEn": "Xihu",
+    "railNameZh": "西湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108174",
+    "distanceM": 24.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR21",
+    "railNameEn": "Huzhou",
+    "railNameZh": "葫洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108188",
+    "distanceM": 64.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR22",
+    "railNameEn": "Donghu",
+    "railNameZh": "東湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108189",
+    "distanceM": 31.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR20",
+    "railNameEn": "Dahu Park",
+    "railNameZh": "大湖公園",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108199",
+    "distanceM": 27.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR22",
+    "railNameEn": "Donghu",
+    "railNameZh": "東湖",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108234",
+    "distanceM": 199.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR21",
+    "railNameEn": "Huzhou",
+    "railNameZh": "葫洲",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500108241",
+    "distanceM": 91.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR18",
+    "railNameEn": "Wende",
+    "railNameZh": "文德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109004",
+    "distanceM": 111.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R18",
+    "railNameEn": "Mingde",
+    "railNameZh": "明德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109010",
+    "distanceM": 61.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R24",
+    "railNameEn": "Zhongyi",
+    "railNameZh": "忠義",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109011",
+    "distanceM": 184.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R25",
+    "railNameEn": "Guandu",
+    "railNameZh": "關渡",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109012",
+    "distanceM": 66.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R25",
+    "railNameEn": "Guandu",
+    "railNameZh": "關渡",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109015",
+    "distanceM": 92.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R23",
+    "railNameEn": "Fuxinggang",
+    "railNameZh": "復興崗",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109023",
+    "distanceM": 91.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22A",
+    "railNameEn": "Xinbeitou",
+    "railNameZh": "新北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109024",
+    "distanceM": 35.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22",
+    "railNameEn": "Beitou",
+    "railNameZh": "北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109025",
+    "distanceM": 97.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R21",
+    "railNameEn": "Qiyan",
+    "railNameZh": "奇岩",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109031",
+    "distanceM": 101.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R20",
+    "railNameEn": "Qilian",
+    "railNameZh": "唭哩岸",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109034",
+    "distanceM": 11.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R19",
+    "railNameEn": "Shipai",
+    "railNameZh": "石牌",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109036",
+    "distanceM": 139.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R19",
+    "railNameEn": "Shipai",
+    "railNameZh": "石牌",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109049",
+    "distanceM": 41,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22A",
+    "railNameEn": "Xinbeitou",
+    "railNameZh": "新北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109053",
+    "distanceM": 43,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R18",
+    "railNameEn": "Mingde",
+    "railNameZh": "明德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109067",
+    "distanceM": 148.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22A",
+    "railNameEn": "Xinbeitou",
+    "railNameZh": "新北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109075",
+    "distanceM": 84.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22",
+    "railNameEn": "Beitou",
+    "railNameZh": "北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109077",
+    "distanceM": 104.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R20",
+    "railNameEn": "Qilian",
+    "railNameZh": "唭哩岸",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109079",
+    "distanceM": 36,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R24",
+    "railNameEn": "Zhongyi",
+    "railNameZh": "忠義",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109081",
+    "distanceM": 52.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22",
+    "railNameEn": "Beitou",
+    "railNameZh": "北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109099",
+    "distanceM": 139,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R19",
+    "railNameEn": "Shipai",
+    "railNameZh": "石牌",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109122",
+    "distanceM": 157.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R22",
+    "railNameEn": "Beitou",
+    "railNameZh": "北投",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500109136",
+    "distanceM": 153.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R18",
+    "railNameEn": "Mingde",
+    "railNameZh": "明德",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110002",
+    "distanceM": 31.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110006",
+    "distanceM": 191.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G18",
+    "railNameEn": "Nanjing Sanmin",
+    "railNameZh": "南京三民",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110007",
+    "distanceM": 111.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G18",
+    "railNameEn": "Nanjing Sanmin",
+    "railNameZh": "南京三民",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110009",
+    "distanceM": 13.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G18",
+    "railNameEn": "Nanjing Sanmin",
+    "railNameZh": "南京三民",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110018",
+    "distanceM": 138,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G17",
+    "railNameEn": "Taipei Arena",
+    "railNameZh": "台北小巨蛋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110047",
+    "distanceM": 101.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G17",
+    "railNameEn": "Taipei Arena",
+    "railNameZh": "台北小巨蛋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110049",
+    "distanceM": 174.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110050",
+    "distanceM": 136.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110051",
+    "distanceM": 137.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR12",
+    "railNameEn": "Zhongshan Junior High School",
+    "railNameZh": "中山國中",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110061",
+    "distanceM": 65.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G18",
+    "railNameEn": "Nanjing Sanmin",
+    "railNameZh": "南京三民",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110062",
+    "distanceM": 60.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110070",
+    "distanceM": 79.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110071",
+    "distanceM": 12,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G17",
+    "railNameEn": "Taipei Arena",
+    "railNameZh": "台北小巨蛋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110072",
+    "distanceM": 55.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G17",
+    "railNameEn": "Taipei Arena",
+    "railNameZh": "台北小巨蛋",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500110078",
+    "distanceM": 56.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G18",
+    "railNameEn": "Nanjing Sanmin",
+    "railNameZh": "南京三民",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111003",
+    "distanceM": 92.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL21",
+    "railNameEn": "Kunyang",
+    "railNameZh": "昆陽",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111005",
+    "distanceM": 102.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL20",
+    "railNameEn": "Houshanpi",
+    "railNameZh": "後山埤",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111007",
+    "distanceM": 175.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL20",
+    "railNameEn": "Houshanpi",
+    "railNameZh": "後山埤",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111019",
+    "distanceM": 112.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR23",
+    "railNameEn": "Nangang Software Park",
+    "railNameZh": "南港軟體園區",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111026",
+    "distanceM": 44.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111027",
+    "distanceM": 56.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111035",
+    "distanceM": 142.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111046",
+    "distanceM": 141,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL20",
+    "railNameEn": "Houshanpi",
+    "railNameZh": "後山埤",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111051",
+    "distanceM": 179.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111068",
+    "distanceM": 73.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111069",
+    "distanceM": 168,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL22",
+    "railNameEn": "Nangang",
+    "railNameZh": "南港",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111079",
+    "distanceM": 111.3,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL21",
+    "railNameEn": "Kunyang",
+    "railNameZh": "昆陽",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111097",
+    "distanceM": 105.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BR23",
+    "railNameEn": "Nangang Software Park",
+    "railNameZh": "南港軟體園區",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500111114",
+    "distanceM": 95,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL21",
+    "railNameEn": "Kunyang",
+    "railNameZh": "昆陽",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112010",
+    "distanceM": 74.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R02",
+    "railNameEn": "Xiangshan",
+    "railNameZh": "象山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112014",
+    "distanceM": 142.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R02",
+    "railNameEn": "Xiangshan",
+    "railNameZh": "象山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112019",
+    "distanceM": 69.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R03",
+    "railNameEn": "Taipei 101/World Trade Center",
+    "railNameZh": "台北101/世貿",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112036",
+    "distanceM": 69.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R03",
+    "railNameEn": "Taipei 101/World Trade Center",
+    "railNameZh": "台北101/世貿",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112049",
+    "distanceM": 152.9,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G19",
+    "railNameEn": "Songshan",
+    "railNameZh": "松山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112058",
+    "distanceM": 95.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL20",
+    "railNameEn": "Houshanpi",
+    "railNameZh": "後山埤",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112064",
+    "distanceM": 113.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R02",
+    "railNameEn": "Xiangshan",
+    "railNameZh": "象山",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112070",
+    "distanceM": 91.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL19",
+    "railNameEn": "Yongchun",
+    "railNameZh": "永春",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112076",
+    "distanceM": 124.8,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R03",
+    "railNameEn": "Taipei 101/World Trade Center",
+    "railNameZh": "台北101/世貿",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112090",
+    "distanceM": 168.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "R03",
+    "railNameEn": "Taipei 101/World Trade Center",
+    "railNameZh": "台北101/世貿",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112093",
+    "distanceM": 167.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL18",
+    "railNameEn": "Taipei City Hall",
+    "railNameZh": "市政府",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112104",
+    "distanceM": 77.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL17",
+    "railNameEn": "Sun Yat-Sen Memorial Hall",
+    "railNameZh": "國父紀念館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500112106",
+    "distanceM": 194.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL20",
+    "railNameEn": "Houshanpi",
+    "railNameZh": "後山埤",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113040",
+    "distanceM": 95.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113045",
+    "distanceM": 171.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113046",
+    "distanceM": 169.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113068",
+    "distanceM": 23.2,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113094",
+    "distanceM": 116.1,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500113095",
+    "distanceM": 85.5,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "BL10",
+    "railNameEn": "Longshan Temple",
+    "railNameZh": "龍山寺",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500119048",
+    "distanceM": 76.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500119056",
+    "distanceM": 193.4,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500119070",
+    "distanceM": 174.6,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  },
+  {
+    "bikeId": "youbike-TPE-TPE500119094",
+    "distanceM": 58.7,
+    "method": "nearest-coordinate-unique-within-200m",
+    "railCode": "G07",
+    "railNameEn": "Gongguan",
+    "railNameZh": "公館",
+    "railSystem": "Taipei Metro"
+  }
+]

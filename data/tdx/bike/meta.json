@@ -1,0 +1,63 @@
+{
+  "cities": {
+    "NewTaipei": {
+      "code": "NWT",
+      "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/NewTaipei",
+      "fields": [
+        "AuthorityID",
+        "BikesCapacity",
+        "ServiceType",
+        "SrcUpdateTime",
+        "StationAddress",
+        "StationID",
+        "StationName",
+        "StationPosition",
+        "StationUID",
+        "UpdateTime"
+      ],
+      "records": 1593
+    },
+    "Taipei": {
+      "code": "TPE",
+      "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Taipei",
+      "fields": [
+        "AuthorityID",
+        "BikesCapacity",
+        "ServiceType",
+        "SrcUpdateTime",
+        "StationAddress",
+        "StationID",
+        "StationName",
+        "StationPosition",
+        "StationUID",
+        "UpdateTime"
+      ],
+      "records": 1794
+    },
+    "Taoyuan": {
+      "code": "TAO",
+      "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Taoyuan",
+      "fields": [
+        "AuthorityID",
+        "BikesCapacity",
+        "ServiceType",
+        "SrcUpdateTime",
+        "StationAddress",
+        "StationID",
+        "StationName",
+        "StationPosition",
+        "StationUID",
+        "UpdateTime"
+      ],
+      "records": 699
+    }
+  },
+  "endpoint": "/api/basic/v2/Bike/Station/City/{City}",
+  "excluded": {
+    "availability": "GET /api/basic/v2/Bike/Availability/City/{City} is live dock occupancy and is intentionally not committed as static page content."
+  },
+  "fetchedAt": "2026-08-22T16:29:32.329Z",
+  "source": "Taiwan MOTC TDX (Transport Data eXchange)",
+  "sourceUrl": "https://tdx.transportdata.tw/",
+  "totalStations": 4086
+}

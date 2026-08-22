@@ -6,7 +6,7 @@ aliases:
   - 微笑單車
   - YouBike 2.0
   - YouBike 1.0
-updated: 2026-08-12
+updated: 2026-08-23
 hero:
   image: youbike/dock
   alt: A row of orange YouBike bicycles docked one-per-post beneath an elevated MRT viaduct at Xindian Station.
@@ -61,6 +61,27 @@ specs:
     value: "10/20/40"
     unit: NT$ per 30 min (tiered by duration)
     source: youbike-free30
+  - label: Taipei static station rows (23 Aug 2026)
+    value: "1,794"
+    source: tdx-bike-stations
+  - label: Taipei published dock capacity (23 Aug 2026)
+    value: "50,877"
+    source: tdx-bike-stations
+  - label: New Taipei static station rows (23 Aug 2026)
+    value: "1,593"
+    source: tdx-bike-stations
+  - label: New Taipei published dock capacity (23 Aug 2026)
+    value: "48,355"
+    source: tdx-bike-stations
+  - label: Taoyuan static station rows (23 Aug 2026)
+    value: "699"
+    source: tdx-bike-stations
+  - label: Taoyuan published dock capacity (23 Aug 2026)
+    value: "24,214"
+    source: tdx-bike-stations
+  - label: Three-city static station rows (23 Aug 2026)
+    value: "4,086"
+    source: tdx-bike-stations
 sources:
   - id: ntbike-milestones
     title: "YouBike — About YouBike — Milestones"
@@ -242,6 +263,15 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Used only for figures not found in a primary source and flagged as such: the 1.0 unit price (NT$13,000) and loss fee, the 13,072-bike fleet at 1.0's Taipei retirement, the 2018–19 New Taipei E-YouBike electric-assist trial, and the Putian, China variant built on retired 1.0 docks. None of these four independently verified against a primary source this run."
+  - id: tdx-bike-stations
+    title: TDX Bike Station City pull
+    titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
+    publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
+    url: https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Build-time pull of the static station feed for Taipei, New Taipei and Taoyuan. Supports the dated station-row counts, published BikesCapacity totals and the fact that live availability is a separate feed."
 ---
 
 "The first thirty minutes are free if you are transferring from the metro"
@@ -386,6 +416,33 @@ in February 2024 reporting[^cna-2024][^einfo-2024]. Their relationship remains
 TBC: the 4,500-bike target could be an e-assist subset of a still-current
 27,500 total, or the plan could have changed, but nothing found restates the
 larger figure alongside the newer one.
+
+## Static station snapshot
+
+A full TDX Bike Station/City pull retrieved on 23 August 2026 returned 1,794
+Taipei station rows with a published capacity total of 50,877 docks
+[^tdx-bike-stations]. The same pull returned 1,593 New Taipei rows and 48,355
+published docks[^tdx-bike-stations]. Taoyuan returned 699 rows and 24,214
+published docks[^tdx-bike-stations].
+
+Those three municipalities therefore contribute 4,086 static station rows in
+this dated build snapshot[^tdx-bike-stations]. An earlier direct check recorded
+1,790 Taipei rows, 1,593 New Taipei rows and 698 Taoyuan rows, for 4,081 in
+total; that is a dated retrieval conflict, not a reason to average the values
+[^tdx-bike-stations].
+
+The TDX Station/City records supply names, addresses, coordinates and
+published capacity, while current available bikes and return docks belong to a
+separate live availability feed and are not treated as static page facts
+[^tdx-bike-stations]. This first layer covers Taipei, New Taipei and Taoyuan;
+other TPASS-zone municipalities remain outside the committed pull
+[^tdx-bike-stations].
+
+The 1,633 Taipei stations reported by the transport department on 14 August
+2025 remain a separate dated official figure[^dot-400m]. It measures a
+different time and publication scope from the 1,794-row TDX snapshot and is
+kept as a conflict rather than rewritten as a growth rate[^dot-400m]
+[^tdx-bike-stations].
 
 ## Open evidence
 

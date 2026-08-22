@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6568,
-    "tbc": 4280,
+    "sourced": 10845,
+    "tbc": 4305,
     "asserted": 32,
-    "meta": 45
+    "meta": 67
   },
   "files": [
     {
@@ -18,8 +18,8 @@
     },
     {
       "file": "content/bike/history/youbike.md",
-      "sources": 20,
-      "sourced": 47,
+      "sources": 21,
+      "sourced": 62,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -33,9 +33,209 @@
       "meta": 1
     },
     {
+      "file": "content/bike/stations/new-taipei-banqiao.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-linkou.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-sanchong.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-shulin.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-tucheng.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-unclassified.md",
+      "sources": 2,
+      "sourced": 1573,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-xindian.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-xinzhuang.md",
+      "sources": 2,
+      "sourced": 11,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-yingge.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-yonghe.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei-zhonghe.md",
+      "sources": 2,
+      "sourced": 11,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/new-taipei.md",
+      "sources": 2,
+      "sourced": 18,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bike/stations/taipei-daan.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taipei-neihu.md",
+      "sources": 2,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taipei-unclassified.md",
+      "sources": 2,
+      "sourced": 1796,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taipei-zhongzheng.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taipei.md",
+      "sources": 2,
+      "sourced": 11,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bike/stations/taoyuan-dayuan.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-fuxing.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-guishan.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-pingzhen.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-taoyuan.md",
+      "sources": 2,
+      "sourced": 8,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-unclassified.md",
+      "sources": 2,
+      "sourced": 698,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan-yangmei.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bike/stations/taoyuan.md",
+      "sources": 2,
+      "sourced": 14,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bike/stations/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

@@ -14402,3 +14402,49 @@ checks. Build output is 1,875 pages; cite resolves 4,615 citations, claims are
 6,568 sourced, 4,280 TBC and 32 asserted, and research is clean at 108 files
 with 452 checked failures. The generated audits were restored; `probes/` remains
 untracked.
+
+## Run 86 - YouBike static data layer and indexes (23 August 2026)
+
+### Sourced
+
+Pulled the live TDX Bike/Station/City feeds for Taipei, New Taipei and Taoyuan
+and committed 4,086 static station rows with bilingual names, capacities,
+coordinates, source update fields and retrieval metadata. The pull contains
+1,794 Taipei rows with 50,877 docks, 1,593 New Taipei rows with 48,355 docks,
+and 699 Taoyuan rows with 24,214 docks. Generated city and source-district
+indexes expose the rows as searchable tables with map links. A geometric join
+to the committed rail registries produces 364 unique nearest-station links
+within 200 m; no station-name matching is used.
+
+### TBC
+
+The static feed does not expose a usable district for most rows, so those rows
+remain explicitly Unclassified. Live bike and return-dock availability is a
+separate feed and is outside this committed static layer. No growth rate is
+inferred: the current pull differs from the earlier published 1,790 Taipei,
+1,593 New Taipei and 698 Taoyuan snapshot, which is retained as a conflict.
+Other municipalities are outside this unit.
+
+### Contradicted the corpus
+
+The previous architecture note described the YouBike layer as absent. It is
+now implemented as committed TDX data plus municipality and district indexes;
+there are deliberately no individual station pages. The earlier 4,081-row
+snapshot is not silently replaced by the current 4,086-row pull.
+
+### Conflicts found
+
+The two official snapshots differ by five rows in total: Taipei 1,790 versus
+1,794 and Taoyuan 698 versus 699, while New Taipei remains 1,593. The sources
+do not establish whether the differences are additions, corrections or feed
+timing. A Taipei address can contain a district name without the TDX district
+field being populated; no district was inferred from that ambiguity.
+
+### Verification
+
+Full verify passed: 1,906 built pages checked for glyphs, 1,431 pages in the
+link audit with no broken links or orphans, 1,432 pages in the a11y audit with
+no errors or warnings, all 212 unit tests, 4,667 citations, 10,845 sourced
+claims / 4,305 TBC / 32 asserted, 108 research files with 452 checked failures,
+and geometry/CVD checks. Generated audit JSONs were restored; `probes/` remains
+untracked.

@@ -44,6 +44,8 @@ export type SearchEntry = {
   z?: string
   /** Codes, route numbers and aliases, space-separated. */
   k?: string
+  /** Multi-word aliases kept whole so address numbers do not become route keys. */
+  a?: string[]
   /** Where it goes. */
   h: string
   /** What kind of thing it is, for the result row's label. */
@@ -118,6 +120,11 @@ function scoreEntry(entry: SearchEntry, query: string): number | null {
 
   // Codes, numbers and aliases: the strongest signal, each key on its own.
   for (const token of (entry.k ?? '').split(' ')) rank(normalise(token), 0)
+
+  // Content aliases are phrases, not whitespace-delimited codes. Keeping them
+  // whole prevents the street number in a station name from outranking a bus
+  // route with that number while preserving exact and partial name searches.
+  for (const alias of entry.a ?? []) rank(normalise(alias), 1)
 
   // The names, whole — and then word by word, so "airport" still finds
   // "Songshan Airport" without letting a mid-word substring outrank a real

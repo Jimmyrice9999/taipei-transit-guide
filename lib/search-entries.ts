@@ -50,11 +50,12 @@ export function buildSearchIndex(): SearchIndex {
      */
     const han = page.aliases.filter((alias) => /[㐀-鿿]/.test(alias))
     const latin = page.aliases.filter((alias) => !/[㐀-鿿]/.test(alias))
-    const keys = [...latin, page.line].filter(Boolean)
+    const keys = [page.line].filter(Boolean)
     entries.push({
       t: page.title,
       ...(han.length ? { z: han.join(' ') } : {}),
       ...(keys.length ? { k: keys.join(' ') } : {}),
+      ...(latin.length ? { a: latin } : {}),
       h: page.href,
       c: categoryOf(page.type, page.system),
     })
