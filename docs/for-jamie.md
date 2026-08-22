@@ -2,10 +2,9 @@
 
 ## Stop handoff — 22 August 2026
 
-Part 0 and Part 1 are complete: the handoff correction was committed separately, and line codes are operator-namespaced with a passing cross-system collision test.
-Part 2 now has 41 researched operator pages and 20 TDX-only records (61 total); Run 82 documents 好樂好/Haloha as a water operator in a zero-route TDX bus record.
-The remaining 20 are zero-route authority or placeholder records; models and depots still remain.
-Parts 3–7 remain: YouBike data/indexes, ticketing/ferries, Taichung Green Line, entity icons/photos, and final verification.
-Latest gates: research, cite, claims, build, verify, nav, browser and the full test suite pass.
-Browser wrote 288 screenshots, passed all curated page types and 1,400-page axe; all 42 print checks passed.
-Generated audit JSONs are restored. Do not stage probes/; it remains intentionally untracked.
+Part 0 is verified against the repo: commit 597cfd8, 61 operator pages, 42 researched pages and 19 TDX-only stubs. The worktree started with only untracked probes/.
+Run 83 researched Dàyou Bus record 16474. Its New Taipei TDX record has zero routes; the separate Taipei record and official operator pages were not merged.
+Run 82 preserves Haloha's water-operator mode mismatch in a zero-route bus record.
+Models, depots, YouBike indexes/data, ticketing/ferries, Taichung, icons/photos and final browser verification remain.
+Run 83 gates: build, verify, cite, claims, research, nav and all 212 unit tests pass. Build exports 1,875 pages; claims remain at 32 asserted statements.
+Generated links-audit.json and unused-audit.json were restored after verification. Do not stage probes/; it remains intentionally untracked.

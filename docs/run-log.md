@@ -14274,3 +14274,56 @@ clipping, centered wide content and a readable landscape phone. Search index now
 contains 1,393 entries including the renamed Haloha page. No new page type was
 needed; operator-detail already covers it. Generated audits were restored; probes/
 remains intentionally untracked.
+
+## Run 83 — Part 1, researched Dàyou Bus record 16474, 22 August 2026
+
+### Sourced
+
+Researched 大有巴士 / Dàyou Bus, the New Taipei TDX operator record
+`bus-operator-16474-f0ksz1`. The committed pull has zero route associations for
+this record, while a separate Taipei TDX record shares the Chinese name. The
+operator's full company page establishes the 24 March 1969 founding date, early
+Nangang/Songshan service area, Wenshan operating headquarters and Xinzhuang and
+Nangang management stations. The full fleet page publishes King Long, Volvo,
+Taiwan Yutong, AEBUS and King Long year-groupings. Taipei PTO documents the
+2016 joint low-floor deployment with San Chung Bus and its accessibility
+equipment. The operator's Route 1961 page supplies a dated airport-service
+example without being used to hand-list routes for the zero-association record.
+The Highway Bureau record supplies the highway-passenger scope, 112 evaluation
+grade, insurance description and dated accident table; its directory supplies a
+separate Banqiao contact listing.
+
+### TBC
+
+The fetched primary pages do not establish a parent group, shareholder-control
+structure, legal merger chronology, route contracts, depot opening dates,
+capacities or route allocation, chassis/body/capacity specifications, fleet
+totals or electric/hybrid split. The official MOEA company endpoint returned a
+Cloudflare block on full fetch and was recorded as checked and failed; no
+aggregator or search snippet was used to fill the gap.
+
+### Contradicted the corpus
+
+The prior page was a TDX-only scaffold. The new record preserves its zero-route
+New Taipei association and adds the independently fetched company and regulator
+scope without merging it with the separate Taipei TDX record or inventing a
+route roster.
+
+### Conflicts found
+
+The New Taipei TDX record has zero route associations, while the separate Taipei
+record and the company service pages describe bus work; this is a record-scope
+mismatch. The company calls Wenshan its operating headquarters and Xinzhuang and
+Nangang management stations, while the Highway Bureau directory lists Banqiao;
+no source identifies any as a depot or publishes capacity. The operator page
+publishes 02-8663-9000 and 0800-088-626, while the directory prints
+02-86639000; these are retained as displayed contacts.
+
+### Verification
+
+`npm run verify` passed the build, marker/link/orphan, a11y, facts, citations,
+claims, all 212 unit tests, research, geometry and CVD checks. `npm run nav`
+passed all 19 checks. The build exports 1,875 pages; cite resolves 4,585
+citations, claims remain at 32 asserted statements, and research is clean at 89
+files with 376 checked failures. The generated links and unused audits were
+restored after verification; `probes/` remains untracked.
