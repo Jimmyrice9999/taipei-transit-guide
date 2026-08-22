@@ -14327,3 +14327,39 @@ passed all 19 checks. The build exports 1,875 pages; cite resolves 4,585
 citations, claims remain at 32 asserted statements, and research is clean at 89
 files with 376 checked failures. The generated links and unused audits were
 restored after verification; `probes/` remains untracked.
+
+## Run 84 — finish district-office operator records (23 August 2026)
+
+### Sourced
+
+Expanded the remaining 19 short New Taipei district-office TDX records with
+route associations generated from the committed `operatorIds` pull, the full
+New Taipei Government Transport Management Division index, and per-record
+research files. The pages explicitly distinguish municipal data records from
+private bus corporations and keep founding, ownership, parent group, merger,
+fleet, depot, contract and incident fields N/A/TBC where the fetched primaries
+do not establish them.
+
+### TBC
+
+No fetched primary in this batch supplied record-level fleet, propulsion,
+garage, contractor, contract-term or incident evidence. The absence is recorded
+as a checked gap rather than filled from a company-name inference.
+
+### Contradicted the corpus
+
+The prior pages were TDX-only scaffolds. The batch preserves their route counts
+and zero-route cases while adding the authority context; no old factual claim
+was contradicted.
+
+### Conflicts found
+
+TDX route rows are not treated as distinct route-family counts or proof of
+vehicle ownership. The authority page is citywide and does not identify the
+contractor or depot for any one district-office record.
+
+### Verification
+
+`npm run cite`, `npm run research`, `npm run claims`, `npm run search`,
+`npm run nav`, `npm run build` and all 212 unit tests passed. Build output is
+1,875 pages; audits were restored after the run; `probes/` remains untracked.

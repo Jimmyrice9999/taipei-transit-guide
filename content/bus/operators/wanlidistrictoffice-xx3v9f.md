@@ -1,7 +1,7 @@
 ---
-title: "Wanli District Office — NewTaipei TDX operator record"
-summary: "TDX operator record for Wanli District Office in NewTaipei."
-updated: 2026-08-18
+title: "Wanli District Office — New Taipei TDX operator record"
+summary: "TDX operator record for Wanli District Office (萬里區公所) in NewTaipei."
+updated: 2026-08-22
 facts:
   - label: English name
     value: "Wanli District Office"
@@ -47,30 +47,37 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the committed operator records, contact fields, source municipalities, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields.
+  - id: ntpc-transport-management
+    title: New Taipei Government Transport Management Division
+    titleOriginal: 運輸管理科
+    publisher: New Taipei City Government Traffic Bureau (新北市政府交通局)
+    url: https://www.traffic.ntpc.gov.tw/home.jsp?id=f06672ba2aadbd3c
+    accessed: 2026-08-22
+    kind: primary
+    lang: zh-Hant
+    note: Supports the division's published transport-management service index and its links to TPASS, electric-bus replacement, low-floor bus, bus evaluation and bus-information services; it does not identify the contractor, fleet or depot for these district-office records.
 ---
 
-## TDX record
+## What the record establishes
 
-The committed TDX pull identifies this page as the operator record for Wanli District Office (萬里區公所), with source municipality NewTaipei [^tdx-bus-operator-pull].
+The committed TDX pull identifies this page as the Wanli District Office record (萬里區公所) in the NewTaipei source set [^tdx-bus-operator-pull]. TDX gives the record ID bus-operator-wanlidistrictoffice-xx3v9f, operator code WanliDistrictOffice, operator number 1313, phone (02)2492-2064 and published URL http://www.wanli.ntpc.gov.tw [^tdx-bus-operator-pull]. Those are fields in a transport-data record; they are not, by themselves, a company-registration extract or proof that the district office owns vehicles [^tdx-bus-operator-pull].
 
-TDX publishes the record ID bus-operator-wanlidistrictoffice-xx3v9f, operator code WanliDistrictOffice, operator number 1313, phone (02)2492-2064 and URL http://www.wanli.ntpc.gov.tw for this record [^tdx-bus-operator-pull].
-
-This is a data record, not a claim that every TDX record with the same company name is a separate legal entity [^tdx-bus-operator-pull].
+The New Taipei Traffic Bureau's Transport Management Division page is the responsible authority's public service index for this subject area [^ntpc-transport-management]. Its links cover TPASS, electric-bus replacement, Jump Frog and rapid-bus services, low-floor bus information, bus dynamic information and bus-service quality evaluation [^ntpc-transport-management]. That index establishes the administrative context in which New Taipei's bus information is published, but the fetched page does not attach a fleet, garage or contract to this specific TDX record [^ntpc-transport-management].
 
 ## Routes associated with this record
 
-The list below is generated from the committed route pull’s operatorIds associations, so it records the current data snapshot rather than a hand-maintained route roster [^tdx-bus-operator-pull].
+The snapshot associates this record with 7 route records; the rows are shown below by their TDX route labels [^tdx-bus-operator-pull]. The list is generated from the repository's committed route operatorIds associations rather than hand-maintained prose, so it preserves the snapshot's distinction between a route family and a separate departure or branch row [^tdx-bus-operator-pull].
 
-- `F921Holiday` / F921假日 [^tdx-bus-operator-pull]
-- `F921` [^tdx-bus-operator-pull]
-- `F922naikan` / F922內崁 [^tdx-bus-operator-pull]
-- `F922Beiji` / F922北基 [^tdx-bus-operator-pull]
-- `F922wututan` / F922烏塗炭 [^tdx-bus-operator-pull]
-- `F923Holiday` / F923假日 [^tdx-bus-operator-pull]
-- `F923` [^tdx-bus-operator-pull]
+- F921Holiday / F921假日 [^tdx-bus-operator-pull]
+- F921 [^tdx-bus-operator-pull]
+- F922naikan / F922內崁 [^tdx-bus-operator-pull]
+- F922Beiji / F922北基 [^tdx-bus-operator-pull]
+- F922wututan / F922烏塗炭 [^tdx-bus-operator-pull]
+- F923Holiday / F923假日 [^tdx-bus-operator-pull]
+- F923 [^tdx-bus-operator-pull]
 
-## Research gaps
+## What remains unestablished
 
-The committed TDX operator record contains no founding history, ownership structure, fleet-model roster, depot or garage field, or contract-history field; each remains TBC here [^tdx-bus-operator-pull].
+This page does not turn a district-office record into a private bus-company biography. The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
 
-The record’s URL is reproduced as TDX metadata, but a company-history, ownership, fleet, depot or dated contract claim requires a full page from the operator or responsible government authority [^tdx-bus-operator-pull].
+No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
