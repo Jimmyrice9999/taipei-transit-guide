@@ -14452,6 +14452,58 @@ and clean facts, geometry and CVD checks. Navigation passed all 19 checks;
 the separate full package test also passed. The two generated audit JSONs were
 restored; `probes/` remains untracked.
 
+## Run 90 - browser coverage and visual verification (23 August 2026)
+
+### Sourced
+
+Extended the curated browser `PAGE_TYPES` inventory to 60 representatives:
+the YouBike section, history and three municipality indexes; ferry and Blue
+Highway indexes; cards and passes; Dàyou Bus; model and depot detail pages;
+and the TMRT system, operator, line, station index and station detail. The
+new entries cover the layouts added in Runs 83–89 rather than relying on the
+older fare-stage and Taipei-only representatives.
+
+### TBC
+
+The in-app browser connector was unavailable in this session, so no claim is
+made about an interactive signed-in browser session. The project harness ran
+to completion against the fresh static build, and every generated screenshot
+was inspected locally through contact sheets plus the landscape-phone image.
+
+### Contradicted the corpus
+
+The harness comment said the curated page-type list had been stale for three
+runs; the check confirmed the gap and closed it. The 41/61 operator-research
+state in the run brief was also stale: the repository has 61 operator pages
+and all 61 contain more than 200 words of prose. Haloha remains a documented
+water-transport/operator-data mismatch rather than a fabricated bus service.
+
+### Conflicts found
+
+No new factual source conflict was found in this verification unit. The
+existing generated screenshot and print artifacts changed as expected when
+the new page types were added; the two generated link/unused audit JSONs were
+restored and are not part of this unit.
+
+### Verification
+
+Fresh build: 1,808 Next routes and 1,954 postbuild pages. The browser harness
+checked reflow at 640 and 320 px across 1,456 real pages with zero document
+overflow and zero spine overlap; keyboard and ARIA probes were clean for all
+60 curated types; axe reported zero violations across all 1,456 pages; and
+the print pass produced 59 PDFs with every machine check green. It produced
+421 screenshots: 60 types × 375, 768, 1440, 1920, 2560, 320-zoom400 and
+640-zoom200, plus one 667×375 landscape phone. Visual inspection found no
+clipped primary content, unexpected collapse, or wide-screen composition
+failure. Search resolves YouBike municipality indexes, Blue Highway,
+cards/passes, TMRT Green Line/operator and Dàyou Bus pages. The full verify,
+navigation, citation and package-test gates are green;
+`npm run verify` passed (including 217,942 internal
+links, 1,457 a11y pages, 17 fact cross-checks, 109 research files and 456
+checked failures), `npm run nav` passed 19/19, and `npm test` passed 212/212.
+The known 10-file determinism artifact is unchanged; generated link/unused
+audits were restored.
+
 ## Run 89 - entity icons and Wikimedia image extension (23 August 2026)
 
 ### Sourced

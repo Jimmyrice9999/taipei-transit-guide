@@ -182,6 +182,31 @@ const PAGE_TYPES = [
   { name: 'gondola-station-maokong', url: '/rail/cable/stations/maokong-station/' },
   { name: 'ticketing-guides', url: '/ticketing/guides/' },
   { name: 'ticketing-fare-stages', url: '/ticketing/guides/bus-fare-stages/' },
+  /*
+   * Run 89: the bike, ferry, cards/passes, and Taichung Metro additions are
+   * distinct content families. Keep one representative for each index,
+   * detail, and municipality/system layout so the expensive checks and the
+   * screenshot/print matrix cover the entities added since Run 52.
+   */
+  { name: 'bike', url: '/bike/' },
+  { name: 'bike-history', url: '/bike/history/youbike/' },
+  { name: 'bike-stations', url: '/bike/stations/' },
+  { name: 'bike-stations-taipei', url: '/bike/stations/taipei/' },
+  { name: 'bike-stations-new-taipei', url: '/bike/stations/new-taipei/' },
+  { name: 'bike-stations-taoyuan', url: '/bike/stations/taoyuan/' },
+  { name: 'ferry', url: '/ferry/' },
+  { name: 'ferry-routes', url: '/ferry/routes/' },
+  { name: 'ferry-route-blue-highway', url: '/ferry/routes/blue-highway/' },
+  { name: 'ticketing-cards-passes', url: '/ticketing/guides/cards-passes-and-fares/' },
+  { name: 'bus-operator-dayou', url: '/bus/operators/16474-f0ksz1/' },
+  { name: 'bus-model-detail', url: '/bus/models/model-t-electric/' },
+  { name: 'bus-depot-detail', url: '/bus/depots/guandu-danan/' },
+  { name: 'tmrt-system', url: '/rail/tmrt/' },
+  { name: 'tmrt-lines', url: '/rail/tmrt/lines/' },
+  { name: 'tmrt-line-green', url: '/rail/tmrt/lines/green-line/' },
+  { name: 'tmrt-stations', url: '/rail/tmrt/stations/' },
+  { name: 'tmrt-station-g0', url: '/rail/tmrt/stations/g0/' },
+  { name: 'tmrt-operator', url: '/rail/operators/tmrt/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },
