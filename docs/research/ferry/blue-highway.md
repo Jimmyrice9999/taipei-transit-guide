@@ -1,11 +1,13 @@
 # Ferry — Blue Highway 藍色公路
 
-**Version 1.0 — 6 August 2026**  
-**Status: research. Not published. Verify before promoting to content.**
+**Version 1.1 — 23 August 2026**
+**Status: current official verification published to `content/ferry/routes/blue-highway.md`.**
 
 Tamsui River and Keelung River passenger services
 
-**Not published. Verify before promoting to content.**
+The historical and lead material below remains a research record. The current
+route and fare claims promoted to the site are in the dated verification section
+and are based on full official pages or PDFs read on 23 August 2026.
 
 ---
 
@@ -281,9 +283,39 @@ different fares, vessels and route types.
 
 The appendix preserves the Blue Highway definition, New Taipei management, boarding points, 2026 Danjiang Bridge tours and gaps as leads only. No incoming URL was available for those remaining claims, so they were not promoted here.
 
-## Conflicts
+## Current official verification — 2026-08-23
 
-No conflict was independently established in this migration sample. The incoming report’s statement that no conflicts existed is not treated as a corpus-wide finding.
+The following records are the current evidence used for the published route
+guide. URLs were fetched as full pages or full PDFs; no search-result summary is
+being used as the evidence.
+
+### What is established
+
+- **The current permitted operator set and vessel list.** Source: *藍色公路基本資訊*, titleOriginal 藍色公路基本資訊, 新北市政府交通局, https://www.traffic.ntpc.gov.tw/userfiles/1130901/files/%281150320%E6%9B%B4%E6%96%B0%E5%B1%80%E7%B6%B2%29%E8%97%8D%E8%89%B2%E5%85%AC%E8%B7%AF%E5%9F%BA%E6%9C%AC%E8%B3%87%E8%A8%8A.pdf, PRIMARY, High confidence because it is the regulator’s full 20 March 2026 operator sheet. Original-language basis: 114-115年新北市藍色公路營運業者及船舶資料 and the rows naming 順風航業、好樂好、長弘航業、舶克、女神遊艇及台北航運 with their vessels and routes.
+
+- **Current fixed routes and published fares.** Source: *藍色公路基本資訊*, titleOriginal 藍色公路基本資訊, 新北市政府交通局, https://www.traffic.ntpc.gov.tw/userfiles/1130901/files/%281150518%E6%9B%B4%E6%96%B0%E5%B1%80%E7%B6%B2%29%E8%97%8D%E8%89%B2%E5%85%AC%E8%B7%AF%E5%9F%BA%E6%9C%AC%E8%B3%87%E8%A8%8A.pdf, PRIMARY, High confidence because it is the full 18 May 2026 route/fare sheet. Original-language basis: 淡水渡船頭－八里渡船頭，航程約10-30分鐘; 平日07:00-19:00，假日07:00-20:00; 全票40元、半票20元、自行車25元、機車(150cc以下)40元; and the rows for 淡水客船碼頭－漁人碼頭, 忠孝碼頭－大稻埕－關渡－竹圍－淡水客船碼頭 and 大稻埕－淡水客船碼頭.
+
+- **The legal-pier list and the regulator’s route structure.** Source: *新北市藍色公路合法業者及合法碼頭*, titleOriginal 新北市藍色公路合法業者及合法碼頭, 新北市政府交通局, https://www.traffic.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=d4eba383d30921c340bfe7bfca9b1f0f&id=148, PRIMARY, High confidence because it is the department’s 2 May 2025 release. Original-language basis: 合法碼頭：淡水客船碼頭、淡水渡船頭、八里渡船頭、淡水竹圍碼頭、八里龍形碼頭、忠孝碼頭、華江碼頭 and 固定航線...淡水渡船頭至八里渡船頭...大稻埕至淡水客船碼頭...淡水客船碼頭至漁人碼頭.
+
+- **Holiday scheduling and tide cancellations.** Source: *藍色公路搭船相關問題*, titleOriginal 藍色公路搭船相關問題, 臺北市公共運輸處, https://pto.gov.taipei/News_Content.aspx?n=6B4D38874E971F4B&s=353A9A7764AD3301&sms=87415A8B9CE81B16, PRIMARY, High confidence because the full FAQ was fetched and is marked updated 2 April 2026. Original-language basis: 假日有固定航班，航班資訊請至...查詢 and 平日因潮汐水位過低可能取消航班，建議搭乘前先向業者確認.
+
+- **EasyCard treatment is not uniform across operators.** Source: *悠遊卡搭乘交通工具代墊*, titleOriginal 悠遊卡搭乘交通工具代墊, 悠遊卡股份有限公司, https://www.easycard.com.tw/faq?cls=1507889997&page=1, PRIMARY, High confidence because the full current FAQ was fetched. Original-language basis: 渡輪...屬於交通工具代墊範圍，惟台北藍色公路(長弘)及馬祖小三通除外.
+
+- **A Taipei Cruise-specific EasyCard rule.** Source: *台北航運悠遊卡搭乘資訊*, titleOriginal 台北航運悠遊卡搭乘資訊, 悠遊卡股份有限公司, https://www.easycard.com.tw/use?cls=1506497567&id=1508204624, PRIMARY, High confidence because the operator-specific page was fetched in full. Original-language basis: 可使用悠遊卡感應器進行扣款; the page’s fare and welfare-card paragraphs give the NT$20–50 full-fare range and say welfare, senior, disability and companion points do not apply.
+
+- **Danjiang Bridge tours.** Source: *淡江大橋導覽遊河航班資訊*, titleOriginal 淡江大橋導覽遊河航班資訊, 新北市政府交通局, https://www.traffic.ntpc.gov.tw/userfiles/1130901/files/%E6%B7%A1%E6%B1%9F%E5%A4%A7%E6%A9%8B%E5%B0%8E%E8%A6%BD%E9%81%8A%E6%B2%B3%E8%88%AA%E7%8F%AD%E8%B3%87%E8%A8%8A%28%E5%B1%80%E7%B6%B21150507%29.pdf, PRIMARY, High confidence because the full one-page official sheet was fetched. Original-language basis: A航線...航程約50分鐘...12:30、13:20、14:10; B航線...10:30出發、15:10返回; and 全票300元、優待票100元.
+
+- **Typhoon suspension.** Source: *颱風期間淡水河客船停航*, titleOriginal 颱風期間淡水河客船停航, 新北市政府交通局, https://www.traffic.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=b1760ca53a38eac08b912880a947a901&id=54fa46e9e522dde4, PRIMARY, High confidence because it is the full 9 July 2026 suspension notice. Original-language basis: 淡水河客船自7月10日起全面停航，包含淡水八里航線，待海象及風浪狀況許可並另行公告復航.
+
+### Conflicts
+
+- **Tamsui–Bali headway:** the full 20 March 2026 operator PDF says approximately 15–20 minutes, while the full 18 May 2026 fare PDF says approximately 15–30 minutes. Both are official New Taipei Transportation Bureau values; the content page publishes both and does not resolve the reason.
+
+- **Haloha contact number:** the 20 March 2026 New Taipei operator sheet gives 02-2558-5519, while the Taipei Public Transport Office FAQ updated 2 April 2026 gives 02-2550-2339. Both are current-looking official pages; the page does not choose between them.
+
+- **TPASS and ferries:** the older research lead said the pass explicitly covered 藍色公路（含渡輪）, but the full TPASS operating notice used for the ticketing page names MRT/LRT, municipal buses, specified TRA, named coach routes and YouBike without naming ferries. This is a contradiction between the lead and the full current notice; the published ferry page says not to assume inclusion until a current operator or government source confirms it.
+
+- **Historical/current fares:** older lead material contains NT$200/100 and other dated tour prices, while the current New Taipei sheets give NT$40/20 for Tamsui–Bali, NT$100/50 for Tamsui–Fisherman’s Wharf, NT$300/150 for the Chang Hong route and NT$400/200 for Haloha’s Dadaocheng–Tamsui service. These are different dated services or fare schedules; none is averaged or silently substituted for another.
 
 ## Checked and failed
 

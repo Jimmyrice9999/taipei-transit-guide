@@ -14403,6 +14403,53 @@ checks. Build output is 1,875 pages; cite resolves 4,615 citations, claims are
 with 452 checked failures. The generated audits were restored; `probes/` remains
 untracked.
 
+## Run 87 - ticketing and Blue Highway (23 August 2026)
+
+### Sourced
+
+Extended the ticketing guide with current EasyCard/iPASS/icash coverage
+differences, concession eligibility, single-journey token and refund rules,
+stored-value deposit/refund rules, the NT$1,200 TPASS coverage and purchase
+workflow, and the latest dated official take-up figure. Added the Blue Highway
+route guide covering the current New Taipei route/fare sheets, six permitted
+operators and vessel records, legal piers, Tamsui–Bali, Tamsui–Fisherman’s
+Wharf, Zhongxiao–Tamsui and Dadaocheng–Tamsui services, EasyCard caveats,
+weather/tide operation and Danjiang Bridge tours.
+
+### TBC
+
+The official icash transport PDF does not establish a complete current
+non-transit acceptance or refund catalogue; the current icash web pages
+returned a redirect loop. A single live table of Blue Highway charter prices,
+capacities, same-day cancellations and all payment methods was not found.
+TPASS ferry inclusion is not assumed because the current operating notice does
+not name ferries.
+
+### Contradicted the corpus
+
+The earlier Blue Highway lead asserted that TPASS explicitly covered
+藍色公路（含渡輪） and carried a Tamsui–Bali headway of 10–15 minutes. The
+full current TPASS notice does not list ferries, and the current New Taipei
+official sheets instead give 15–20 and 15–30 minutes; these are recorded as
+conflicts rather than resolved.
+
+### Conflicts found
+
+The March and May 2026 New Taipei sheets disagree on Tamsui–Bali headway
+(15–20 versus 15–30 minutes). The New Taipei operator sheet and Taipei PTO
+FAQ disagree on Haloha’s current phone number (02-2558-5519 versus
+02-2550-2339). Older tour fares and current fixed-route fares are retained as
+dated, different services.
+
+### Verification
+
+Full verify passed: 1,908 built pages, 1,433 link-audit pages with no broken
+links or orphans, 1,434 a11y pages with no errors or warnings, 4,689 citations,
+10,891 sourced claims / 4,305 TBC / 32 asserted, 108 research files with 453
+checked failures, all 212 unit tests, and clean research/geometry/CVD checks.
+Navigation passed all 19 checks. The search index was regenerated and the two
+generated audit JSONs were restored; probes/ remains untracked.
+
 ## Run 86 - YouBike static data layer and indexes (23 August 2026)
 
 ### Sourced

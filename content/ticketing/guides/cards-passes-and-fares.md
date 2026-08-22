@@ -2,7 +2,7 @@
 title: Cards, the commuter pass, and how fares work
 summary: EasyCard and iPass are separate companies from separate cities that happen to work on each other's networks. The NT$1,200 regional pass is cheaper and covers more than the pass it replaced. Neither fact is what most English guides say.
 order: 1
-updated: 2026-08-12
+updated: 2026-08-23
 aliases:
   - 悠遊卡
   - EasyCard
@@ -252,6 +252,114 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Source for the scheme's 3 January 2026 start date, the 5%/10%/15% cashback tiers at 11–20/21–40/41+ rides in the prior month, the exclusion of welfare and already-discounted cards, and the one-year validity of the credited cashback."
+  - id: trtc-payment-table
+    title: Taipei Metro multiple payment methods and discounts
+    titleOriginal: 臺北捷運多元支付方式及優惠
+    publisher: 臺北大眾捷運股份有限公司 (Taipei Rapid Transit Corporation)
+    url: "https://web.metro.taipei/QRCode/multipayment/Discount/directions.html"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The live payment comparison table. It lists EasyCard, iPASS and icash as stored-value cards for Taipei Metro and shows that the NT$1,200 pass is available only on EasyCard."
+  - id: ipass-range-2026
+    title: Where can I use iPASS?
+    titleOriginal: 一卡通使用範圍
+    publisher: 一卡通票證股份有限公司 (iPASS Corporation)
+    url: "https://www.i-pass.com.tw/Range/Index/0?type=1"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current iPASS acceptance directory. It lists Taipei/New Taipei/Taoyuan/Taichung/Kaohsiung rail and bus systems, TRA, YouBike and the non-transit acceptance categories, with operator-specific caveats."
+  - id: ipass-adult-2026
+    title: Adult iPASS card
+    titleOriginal: 普通卡
+    publisher: 一卡通票證股份有限公司 (iPASS Corporation)
+    url: "https://web.i-pass.com.tw/Page/Adult"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current product page. It says the stored-value card has no rental or deposit system, starts with a zero balance, and refunds stored value rather than the product purchase price."
+  - id: ipass-refund-2026
+    title: iPASS card return process
+    titleOriginal: 一卡通票證退卡流程
+    publisher: 一卡通票證股份有限公司 (iPASS Corporation)
+    url: "https://www.i-pass.com.tw/Page/CardReturnProcess"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current return procedure. It requires the physical card by registered post and sets the NT$20 charge when the card has not been used at least five times or held for at least three months."
+  - id: tra-multi-card-2025
+    title: Regulations for travel with electronic tickets
+    titleOriginal: 多卡通電子票證乘車營運規定
+    publisher: 臺灣鐵路股份有限公司 (Taiwan Railways Administration)
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00C/tipC21/view?lang=zh_TW&proCode=8ae4cac3756b7b41017572e76e08178d&subCode=8ae4cac290f06c930190f390e6930537"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The live TRA rules, effective for travel from 23 June 2025. It covers EasyCard, iPASS and icash acceptance, train exclusions, no-seat-reservation operation, and the senior, child and disability concession categories."
+  - id: easycard-refund-2026
+    title: EasyCard refund FAQ
+    titleOriginal: 悠遊卡退卡退費
+    publisher: 悠遊卡股份有限公司 (EasyCard Corporation)
+    url: "https://www.easycard.com.tw/faq?page=8"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current card-termination rules. It requires card locking, charges NT$20 unless the five-use and three-month conditions are met, and gives no balance refund for an anonymous lost card."
+  - id: easycard-deposit-2026
+    title: EasyCard deposit-card refund FAQ
+    titleOriginal: 悠遊卡押金卡退費
+    publisher: 悠遊卡股份有限公司 (EasyCard Corporation)
+    url: "https://www.easycard.com.tw/faq?page=11"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current deposit-card formulas: refundable deposit plus usable balance minus the refund fee, with the card cost also deducted for a damaged card."
+  - id: trtc-ticket-types-2026
+    title: Taipei Metro ticket types
+    titleOriginal: 臺北捷運票種說明
+    publisher: 臺北大眾捷運股份有限公司 (Taipei Rapid Transit Corporation)
+    url: "https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&s=AD70DC4F6A708EA7"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current ticket page. It gives the NT$20–65 single-journey range, ticket validity, sales points, QR purchase option, and eligibility for child and concession tickets."
+  - id: trtc-passenger-rules-2025
+    title: Regulations for use of the Taipei Metro system
+    titleOriginal: 臺北捷運系統旅客須知
+    publisher: 臺北大眾捷運股份有限公司 (Taipei Rapid Transit Corporation)
+    url: "https://web.metro.taipei/QRCode/Regulations%20for%20Use%20of%20the%20Taipei%20Metro%20System-Chinese.pdf?date=20250924"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current passenger-regulations PDF. It says an unused single ticket can be refunded only on its purchase day and that a used ticket or a ticket after a midway exit is not refundable."
+  - id: tpass-purchase-2026
+    title: TPASS 1200 purchase instructions
+    titleOriginal: 基北北桃1200都會通購票說明
+    publisher: 臺北大眾捷運股份有限公司 (Taipei Rapid Transit Corporation)
+    url: "https://web.metro.taipei/event/1200/Ticket1200.aspx?type=2"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current TRTC purchase instructions. They explain selecting TPASS/1200 and the automatic handling of an active 1280 pass on the same EasyCard."
+  - id: tpass-takeup-2025
+    title: TPASS use reaches nine million cards
+    titleOriginal: 基北北桃1200都會通發行量突破900萬張
+    publisher: 臺北市政府 (Taipei City Government)
+    url: "https://sec.gov.taipei/News_Content.aspx?n=49B4C3242CB7658C&s=30B81710E7FD062D&sms=72544237BBE4C5F6"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The city government's 19 February 2025 release, updated 13 March 2025. It reports cumulative issuance above nine million and total uses above 700 million at that date."
+  - id: icash-transport-2026
+    title: icash transport acceptance list
+    titleOriginal: 愛金卡交通運輸使用範圍
+    publisher: 愛金卡股份有限公司 (icash Corporation)
+    url: "https://www.icash.com.tw/pdf/icash_trans.pdf"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The current transport PDF fetched from icash. It lists selected bus operators and does not establish a complete current Taipei-region non-transit or refund catalogue; the guide preserves that limitation."
 ---
 
 Two different companies issue the two cards that work almost everywhere in
@@ -469,14 +577,123 @@ against that month's total fare spend and credited automatically to the same
 card's e-wallet on the first tap of the following month, valid for one year
 from the 1st of the crediting month[^trtc-frequent-rider].
 
+## EasyCard, iPASS and icash: the overlap has edges
+
+The current Taipei Metro payment table, fetched on 23 August 2026, lists
+EasyCard, iPASS and icash as stored-value cards, but marks the NT$1,200 TPASS
+as an EasyCard product rather than a pass available on all three cards[^trtc-payment-table].
+
+iPASS's own current acceptance directory lists Taipei, New Taipei, Taoyuan,
+Taichung and Kaohsiung rail and bus systems, TRA, and YouBike, while warning
+that acceptance can still vary by named operator or route[^ipass-range-2026].
+
+TRA's current electronic-ticket rules accept EasyCard, iPASS and icash on the
+listed island and branch-line services, but exclude sightseeing, group,
+Taroko, Puyuma, EMU3000 and other trains for which the rule says electronic
+tickets are not valid[^tra-multi-card-2025].
+
+The three cards therefore overlap on Taipei Metro and much of the ordinary
+regional network without being interchangeable products: the TPASS container
+is EasyCard-only, and iPASS publishes a wider national acceptance directory
+than any single Taipei operator's fare table[^trtc-payment-table][^ipass-range-2026].
+
+EasyCard's own company page lists non-transit uses including convenience
+stores, supermarkets, dining, attractions, hospitals, government fees and
+libraries[^easycard-about].
+
+iPASS's current directory separately lists non-transit categories including
+convenience stores, supermarkets, shopping, dining, attractions, cinemas,
+hotels, libraries, government fees, school services, medical services,
+donations and sports centres[^ipass-range-2026].
+
+The current icash transport PDF establishes selected bus acceptance, but it is
+not a complete current Taipei-region acceptance or refund catalogue, so this
+guide does not infer broader icash non-transit coverage from it[^icash-transport-2026].
+
+## Concessions: the identity document matters
+
+The Taipei Metro ticket page retrieved on 23 August 2026 defines concessionary
+eligibility for nationals aged 65 or over, a disability certificate holder and
+one companion, and Taipei or New Taipei Indigenous residents aged 55 or over
+with the required household documentation[^trtc-ticket-types-2026].
+
+The same page defines the Taipei/New Taipei child ticket for a locally
+registered child aged 6 to under 12 with household-registration proof, while
+the existing metro fare guidance records the separate free-travel threshold
+for a child under 6 or under 115 cm accompanied by a fare-paying passenger[^trtc-ticket-types-2026][^trtc-faq-free].
+
+TRA's current rules use a different national definition: senior nationals are
+65 or over, children are 6 to under 12, and a disability certificate holder
+may travel with the necessary companion at the concessionary rate[^tra-multi-card-2025].
+
+## Single-journey tokens and refunds
+
+The Taipei Metro single-journey fare retrieved on 23 August 2026 is NT$20–65,
+valid on the day of issue, and sold by station vending machines and station
+information counters, with a QR single ticket also available through Taipei
+Metro Go[^trtc-ticket-types-2026].
+
+The token is a contactless ticket: the gate reads it at entry and recovers it
+at the exit gate, so it is not a souvenir to carry through the journey[^trtc-ticket-types-2026].
+
+An unused single ticket can be refunded only on its purchase day, while a used
+ticket or one left after a midway exit is not refundable under the passenger
+regulations retrieved on 23 August 2026[^trtc-passenger-rules-2025].
+
+## Deposits and stored-value refunds
+
+EasyCard's current refund FAQ requires the card to be locked before a
+termination refund, charges NT$20 unless the card has been used at least five
+times and held for at least three months, and gives no balance refund for an
+anonymous lost card[^easycard-refund-2026].
+
+For an EasyCard deposit product, the current formula is refundable deposit plus
+usable balance minus the refund fee, with the card cost also deducted when the
+card is damaged[^easycard-deposit-2026].
+
+iPASS has no rental or deposit system: its current product page says only the
+stored balance is refundable, not the product purchase price, and its return
+process can charge NT$20 when the card has not met the five-use or three-month
+threshold[^ipass-adult-2026][^ipass-refund-2026].
+
+iPASS's current return process requires the physical card to be sent by
+registered mail, and an anonymous lost card is not a recoverable balance under
+the product rules[^ipass-refund-2026][^ipass-adult-2026].
+
+The fetched icash transport document does not establish a current complete
+icash refund rule, so that figure and procedure remain TBC rather than being
+borrowed from EasyCard or iPASS[^icash-transport-2026].
+
+## The NT$1,200 TPASS: coverage, purchase and take-up
+
+The TPASS operating notice prices the 基北北桃 pass at NT$1,200 for 30 days of
+unlimited use on the named MRT and light-rail systems, municipal buses, the
+specified TRA segment, listed intercity-coach routes and YouBike coverage; the
+TRA and coach clauses contain their own route and train exclusions[^megacity-notice].
+
+The notice does not list Blue Highway ferries among those named coverage
+categories, so this guide does not assume that a ferry fare is included in the
+pass without a separate operator or government confirmation[^megacity-notice].
+
+The current Taipei Metro purchase instructions say to select TPASS/1200 at
+the station process, and explain how an active 1280 pass on the same EasyCard
+is handled when the 1200 pass is purchased[^tpass-purchase-2026].
+
+The latest take-up figure found in a full official page is dated 19 February
+2025: Taipei City reported cumulative issuance above nine million passes and
+more than 700 million uses, with the page updated on 13 March 2025[^tpass-takeup-2025].
+
+Those are dated cumulative totals, not a 2026 monthly sales rate, so no newer
+growth figure is inferred here[^tpass-takeup-2025].
+
 ## What this page does not yet say
 
 - **Bus fares in detail.** The joint-operation network's own section-fare
   structure (段) and where the section boundaries fall are not covered
   here — a genuine gap for a future page, not a figure guessed at.
-- **Airport MRT, Danhai/Ankeng light rail, ferry and Maokong Gondola
-  fares.** Figures for these circulate widely but were not independently
-  verified against a primary source this run, so none appear above.
+- **Airport MRT, Danhai/Ankeng light rail and Maokong Gondola fares.** Figures
+  for these circulate widely but were not independently verified against a
+  primary source in the current ticketing pass, so none appear above.
 - **Whether EasyCard's 2009 "sole non-bank issuer" status ever formally
   ended.** iPass and icash are both confirmed today as accepted TRA
   electronic tickets[^pto-bus-cards], which requires their own issuer
@@ -484,3 +701,8 @@ from the 1st of the crediting month[^trtc-frequent-rider].
 - **A current EasyCard circulation figure.** The 98.32 million figure above
   is dated to October 2022; nothing more recent was fetched and confirmed
   this run.
+
+- **A complete current icash non-transit and refund catalogue.** The official
+  transport PDF was fetched, but the current icash web pages needed to settle
+  the wider question did not return a usable full page; the gap is recorded
+  rather than filled from a third-party list.

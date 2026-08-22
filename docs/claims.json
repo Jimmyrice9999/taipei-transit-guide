@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 10845,
+    "sourced": 10891,
     "tbc": 4305,
     "asserted": 32,
     "meta": 67
@@ -9401,6 +9401,22 @@
       "meta": 0
     },
     {
+      "file": "content/ferry/routes/blue-highway.md",
+      "sources": 10,
+      "sourced": 25,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/ferry/routes/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/ferry/_index.md",
       "sources": 0,
       "sourced": 0,
@@ -9810,8 +9826,8 @@
     },
     {
       "file": "content/ticketing/guides/cards-passes-and-fares.md",
-      "sources": 19,
-      "sourced": 57,
+      "sources": 31,
+      "sourced": 78,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

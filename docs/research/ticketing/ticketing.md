@@ -355,7 +355,35 @@ This section was almost entirely TBC in the lead file. It is not TBC now.
 
 ---
 
-## Conflicts
+## Current official verification — 2026-08-23
+
+The current ticketing additions were checked against full official pages or
+documents on 23 August 2026. Fare values in the content page carry the
+retrieval date in their source records.
+
+### What is established
+
+- **Taipei Metro accepts all three stored-value cards, but the regional pass is EasyCard-only in the current payment table.** Source: Taipei Rapid Transit Corporation, *臺北捷運多元支付方式及優惠*, https://web.metro.taipei/QRCode/multipayment/Discount/directions.html. PRIMARY. Confidence: High. Original-language basis: the table’s stored-value-card row names 悠遊卡、一卡通、愛金卡 and its 1200 monthly-pass row marks 悠遊卡.
+
+- **iPASS publishes current acceptance across the main northern and central/southern rail and bus systems, TRA and YouBike, plus non-transit categories.** Source: iPASS Corporation, *一卡通使用範圍*, https://www.i-pass.com.tw/Range/Index/0?type=1. PRIMARY. Confidence: High. Original-language basis: the current category and operator rows name 臺北捷運、新北捷運、桃園捷運、臺中捷運、高雄捷運、臺鐵、公共運輸及 YouBike, followed by convenience, shopping, dining, attraction, government, school, medical and other categories.
+
+- **TRA accepts EasyCard, iPASS and icash under a restricted electronic-ticket rule.** Source: Taiwan Railways Administration, *多卡通電子票證乘車營運規定*, https://www.railway.gov.tw/tra-tip-web/tip/tip00C/tipC21/view?lang=zh_TW&proCode=8ae4cac3756b7b41017572e76e08178d&subCode=8ae4cac290f06c930190f390e6930537. PRIMARY. Confidence: High. Original-language basis: 悠遊卡、一卡通及愛金卡 and the exclusion list naming 観光列車、團體列車、太魯閣、普悠瑪、EMU3000 and other restricted trains; the page says no seat reservation.
+
+- **The current Taipei Metro concession categories include senior, disability plus one companion, and locally documented Indigenous residents aged 55 or over.** Source: Taipei Rapid Transit Corporation, *臺北捷運票種說明*, https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&s=AD70DC4F6A708EA7. PRIMARY. Confidence: High. Original-language basis: the page’s 優待票 and 兒童票 paragraphs naming 年滿65歲國民、身心障礙者及必要陪伴者、設籍臺北市或新北市55歲以上原住民 and their documentation.
+
+- **The current Taipei Metro single journey is NT$20–65, valid on the purchase day, and available from vending machines, information counters and Taipei Metro Go QR purchase.** Source: Taipei Rapid Transit Corporation, *臺北捷運票種說明*, same URL. PRIMARY. Confidence: High. Original-language basis: 單程票：票價20至65元, 限購買當日有效, and the sales-channel paragraphs.
+
+- **A used or midway-exited single ticket is not refundable, while an unused one is refundable only on its purchase day.** Source: Taipei Rapid Transit Corporation, *臺北捷運系統旅客須知*, https://web.metro.taipei/QRCode/Regulations%20for%20Use%20of%20the%20Taipei%20Metro%20System-Chinese.pdf?date=20250924. PRIMARY. Confidence: High. Original-language basis: the single-ticket refund clauses under the passenger-regulations section.
+
+- **EasyCard and iPASS have different stored-value refund models.** EasyCard’s current FAQ gives the NT$20 termination fee, the five-use/three-month waiver and the anonymous-lost-card no-refund rule; its deposit-card FAQ gives the deposit-plus-balance formula and damaged-card deduction. Sources: EasyCard Corporation, *悠遊卡退卡退費*, https://www.easycard.com.tw/faq?page=8, and *悠遊卡押金卡退費*, https://www.easycard.com.tw/faq?page=11. PRIMARY. Confidence: High. Original-language basis: 退卡手續費20元, 持卡滿三個月且使用達五次免收, and the 押金卡退費計算 paragraphs.
+
+- **iPASS has no rental/deposit system and refunds stored value rather than the purchase price; its current return process uses registered mail and can charge NT$20 when the use or holding threshold is not met.** Sources: iPASS Corporation, *普通卡*, https://web.i-pass.com.tw/Page/Adult, and *一卡通票證退卡流程*, https://www.i-pass.com.tw/Page/CardReturnProcess. PRIMARY. Confidence: High. Original-language basis: 本卡無押金、無租借制度, 僅退還卡片內儲值金額, and the 未使用達五次或持有未滿三個月酌收20元 clause.
+
+- **The purchase workflow handles an active 1280 pass on the same EasyCard, and the latest retrieved official take-up figure is dated 19 February 2025.** Sources: Taipei Rapid Transit Corporation, *基北北桃1200都會通購票說明*, https://web.metro.taipei/event/1200/Ticket1200.aspx?type=2, and Taipei City Government, *基北北桃1200都會通發行量突破900萬張*, https://sec.gov.taipei/News_Content.aspx?n=49B4C3242CB7658C&s=30B81710E7FD062D&sms=72544237BBE4C5F6. PRIMARY. Confidence: High. Original-language basis: the purchase page’s 1200/1280 handling instructions and the city release’s 發行量突破900萬張 and 使用人次超過7億 figures.
+
+- **The fetched current icash transport PDF lists selected transport operators but does not establish a complete Taipei-region non-transit or refund catalogue.** Source: icash Corporation, *愛金卡交通運輸使用範圍*, https://www.icash.com.tw/pdf/icash_trans.pdf. PRIMARY. Confidence: Medium for the listed operators, Low for any inference beyond the PDF. Original-language basis: the operator rows in the PDF; no broader current refund clause was present in the fetched document.
+
+### Conflicts
 
 ### EasyCard's June–September 2002 launch: two Wikipedia articles, two accounts
 
@@ -453,6 +481,13 @@ sourced properly.
 
 ## Checked and failed
 
+- **Current icash web catalogue and refund pages** — fetched directly on
+  2026-08-23 from the official icash domain, including the transport and
+  product pages reached through the site, but the current pages returned a
+  redirect loop rather than a usable full page. The official transport PDF
+  was readable and is used only for its listed operators; exact broader
+  non-transit acceptance and current refund rules remain TBC.
+
 - **EasyCard/台北智慧卡票證 "registered 6 March 2000"** — searched
   specifically for a March 2000 registration date distinct from the 25
   February 2000 founding date, in several queries run on 2026-08-12. Not
@@ -495,6 +530,11 @@ sourced properly.
 ---
 
 ## Stated gaps
+
+- **A complete current icash non-transit and refund catalogue.** The official
+  transport PDF was fetched on 23 August 2026, but the current web catalogue
+  returned a redirect loop. A usable full icash product/refund page or issuer
+  notice would settle the gap.
 
 What this file still cannot say, and what would settle it:
 
