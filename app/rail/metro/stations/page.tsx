@@ -19,7 +19,7 @@ import LineIcon from '@/components/LineIcon'
 import JsonLd from '@/components/JsonLd'
 import { getImage } from '@/lib/images'
 import { breadcrumbSchema } from '@/lib/structured-data'
-import { lineKey, NEUTRAL_LINE, getLine } from '@/lib/lines'
+import { getInterchangeLine, lineKey, NEUTRAL_LINE, getLine } from '@/lib/lines'
 import { STATIONS, getStationHref } from '@/lib/stations'
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function StationsIndexPage() {
   // One group per line that actually has station pages.
   const byLine = new Map<string, typeof STATIONS>()
   for (const station of STATIONS) {
-    if (!getStationHref(station.code)) continue
+    if (station.operator === 'TMRT' || !getStationHref(station.code, station.operator)) continue
     const key = lineKey(station.operator, station.line)
     const group = byLine.get(key) ?? []
     group.push(station)
@@ -86,7 +86,7 @@ export default function StationsIndexPage() {
           <details key={key} className="index-disclosure" open={key === firstLineCode}>
             <summary>
               <span className="section-heading station-index-head" role="heading" aria-level={2}>
-                {line && <LineIcon code={line.code} size={28} />}
+                {line && <LineIcon code={line.code} operator={line.operator} size={28} />}
                 <span>{line ? `${line.name} Line` : code}</span>
               </span>
               <span className="disclosure-count">{stations.length} stations</span>
@@ -110,7 +110,7 @@ export default function StationsIndexPage() {
               {stations.map((station) => (
                 <PhotoCard
                   key={station.code}
-                  href={getStationHref(station.code)!}
+                  href={getStationHref(station.code, station.operator)!}
                   line={station.line}
                   image={getImage(`stations/${station.code.toLowerCase()}`)}
                   title={
@@ -148,13 +148,14 @@ export default function StationsIndexPage() {
                         "the lines it serves" beyond its own.
                       */}
                       {station.interchange.map((other) => {
-                        const otherLine = getLine(other)
+                        const otherLine = getInterchangeLine(other, station.operator)
                         if (!otherLine) return null
                         return (
                           <LineBadge
                             key={other}
                             className="badge-mini"
                             code={other}
+                            operator={otherLine.operator}
                             title={`Interchange with the ${otherLine.name} Line`}
                           />
                         )

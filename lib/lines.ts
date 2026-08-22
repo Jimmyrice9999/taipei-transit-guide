@@ -32,6 +32,7 @@ import tymcLines from '../data/tdx/TYMC/line.json' with { type: 'json' }
 // not under NTMC — see the note on OPERATORS in scripts/fetch-tdx.mjs.
 import ntdlrtLines from '../data/tdx/NTDLRT/line.json' with { type: 'json' }
 import ntalrtLines from '../data/tdx/NTALRT/line.json' with { type: 'json' }
+import tmrtLines from '../data/tdx/TMRT/line.json' with { type: 'json' }
 
 type TdxLine = {
   LineID: string
@@ -99,6 +100,7 @@ const SOURCE_LINES = buildLineRegistry([
   { operator: 'TYMC', records: tymcLines as unknown as TdxLine[] },
   { operator: 'NTDLRT', records: ntdlrtLines as unknown as TdxLine[] },
   { operator: 'NTALRT', records: ntalrtLines as unknown as TdxLine[] },
+  { operator: 'TMRT', records: tmrtLines as unknown as TdxLine[] },
 ])
 
 /**
@@ -120,6 +122,7 @@ const DISPLAY_ORDER = [
   ['TYMC', 'A'],
   ['NTDLRT', 'V'],
   ['NTALRT', 'K'],
+  ['TMRT', 'G'],
 ] as const
 
 /** Where a line's official colour was read. Printed, not just recorded. */
@@ -368,6 +371,21 @@ export function getLine(code: string | undefined | null, operator?: string | nul
   if (code !== code.trim()) return undefined
   if (operator) return BY_KEY.get(lineKey(operator, code))
   return resolveBareLine(BY_CODE, code)
+}
+
+/** Resolve a bare line token stored on a station's interchange list. */
+export function getInterchangeLine(
+  code: string | undefined | null,
+  stationOperator?: string | null,
+): Line | undefined {
+  if (!code) return undefined
+  const bare = getLine(code)
+  if (bare) return bare
+  // G is now published by both TRTC and TMRT. Taipei-region interchange data
+  // uses the TRTC line when a bare G token is encountered, including on an
+  // NTMC station that connects to the Taipei metro network.
+  if (code.trim().toUpperCase() === 'G') return getLine(code, 'TRTC')
+  return getLine(code, stationOperator)
 }
 
 /** The accent a page uses. Falls back to the site neutral. */

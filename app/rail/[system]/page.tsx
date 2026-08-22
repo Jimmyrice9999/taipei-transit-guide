@@ -70,7 +70,11 @@ export default async function RailSystemPage({ params }: Props) {
    * them today. When TRA station data is pulled it gets its own index under its
    * own system, which is the whole reason this level exists.
    */
-  const stationCount = system === 'metro' ? STATIONS.length : 0
+  const stationCount = system === 'metro'
+    ? STATIONS.filter((station) => station.operator !== 'TMRT').length
+    : system === 'tmrt'
+      ? STATIONS.filter((station) => station.operator === 'TMRT').length
+      : 0
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -139,8 +143,9 @@ export default async function RailSystemPage({ params }: Props) {
                     title={page.title}
                     summary={page.summary}
                     line={page.line}
+                    operator={page.operator || undefined}
                     image={page.hero?.image ? getImage(page.hero.image) : null}
-                    meta={page.line && <LineBadge code={page.line} />}
+                    meta={page.line && <LineBadge code={page.line} operator={page.operator || undefined} />}
                   />
                 ))}
               </ul>

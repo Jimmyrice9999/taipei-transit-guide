@@ -18,7 +18,7 @@ import { execFileSync } from 'node:child_process'
 import { getAllPages, getSections, getSystems, getTypes } from '../lib/content.ts'
 import { getBusRoutesByGroup } from '../lib/bus/routes.ts'
 import { getBuiltBusRouteGroups } from '../lib/bus/route-groups.ts'
-import { getLineStations, LINES_WITH_STATION_PAGES, STATIONS } from '../lib/stations.ts'
+import { getLineStations, getStationHref, LINES_WITH_STATION_PAGES, STATIONS } from '../lib/stations.ts'
 import { LINES } from '../lib/lines.ts'
 import { plannedRedirects } from '../scripts/moves.mjs'
 import { isRedirectStub } from '../scripts/redirect-stub.mjs'
@@ -74,8 +74,8 @@ test('every content page exported an index.html', () => {
 
 test('every station on every line with station pages exported a page', () => {
   const missing = [...LINES_WITH_STATION_PAGES]
-    .flatMap((line) => getLineStations(line))
-    .map((s) => `rail/metro/stations/${s.code.toLowerCase()}/index.html`)
+    .flatMap((line) => getLineStations(line).filter((station) => station.operator !== 'TMRT'))
+    .map((s) => `${getStationHref(s.code, s.operator)!.replace(/^\//, '')}index.html`)
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
 })
@@ -103,7 +103,7 @@ test('the expected number of pages was generated', () => {
    */
   const content = getAllPages().length
   const stations = [...LINES_WITH_STATION_PAGES].reduce(
-    (sum, line) => sum + getLineStations(line).length,
+    (sum, line) => sum + getLineStations(line).filter((station) => station.operator !== 'TMRT').length,
     0,
   )
   /*
@@ -323,7 +323,9 @@ test('the downloadable JSON is exported and parses', () => {
 test('the exported JSON agrees with the registry it was generated from', () => {
   const stations = JSON.parse(read('data/taipei-metro-stations.json'))
   const rows: { code: string }[] = Array.isArray(stations) ? stations : stations.stations
-  const tdxBacked = STATIONS.filter((station) => station.recordSource === 'tdx')
+  const tdxBacked = STATIONS.filter(
+    (station) => station.recordSource === 'tdx' && station.operator !== 'TMRT',
+  )
   assert.equal(
     rows.length,
     tdxBacked.length,

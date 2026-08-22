@@ -158,6 +158,7 @@ export default function RichText({
   link = false,
   label,
   badges = true,
+  operator,
 }: {
   children: string
   /**
@@ -200,6 +201,8 @@ export default function RichText({
    * know what the page is about — only the caller can.
    */
   badges?: boolean
+  /** Operator namespace for page fields whose line code is reused by another system. */
+  operator?: string
 }) {
   const tokens = tokenize(children)
   if (isPlain(tokens))
@@ -226,8 +229,8 @@ export default function RichText({
           )
         }
 
-        const line = getLine(token.line)
-        const station = getStation(token.value)
+        const line = getLine(token.line, operator)
+        const station = getStation(token.value, operator)
         if (!badges || !line || !station) return <Fragment key={i}>{token.value}</Fragment>
 
         return (

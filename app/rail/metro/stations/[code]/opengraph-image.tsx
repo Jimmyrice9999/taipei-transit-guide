@@ -16,7 +16,9 @@ export const alt = 'Taipei Transit Guide'
 
 export function generateStaticParams() {
   return [...LINES_WITH_STATION_PAGES].flatMap((line) =>
-    getLineStations(line).map((station) => ({ code: station.code.toLowerCase() })),
+    getLineStations(line)
+      .filter((station) => station.operator !== 'TMRT')
+      .map((station) => ({ code: station.code.toLowerCase() })),
   )
 }
 

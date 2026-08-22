@@ -684,7 +684,7 @@ function validateFrontmatter(relative: string, meta: PageMeta) {
         .flatMap((part) => part.split(/[-–—]/))
         .map((code) => code.trim())
         .filter(Boolean)
-        .filter((code) => !getStation(code))
+        .filter((code) => !getStation(code, meta.operator || undefined))
 
       if (unknown.length) {
         warnOnce(
@@ -829,7 +829,7 @@ export function getLinkEntities(): LinkEntity[] {
     for (const alias of page.aliases) entities.push({ name: alias, href: page.href })
   }
   for (const station of STATIONS) {
-    const href = getStationHref(station.code)
+    const href = getStationHref(station.code, station.operator)
     if (!href) continue
     entities.push({ name: station.name, href })
     if (station.nameZh) entities.push({ name: station.nameZh, href })
@@ -863,7 +863,8 @@ export function getLinePageHref(
   if (!linePageHrefs || !bareLinePageHrefs) {
     linePageHrefs = new Map()
     bareLinePageHrefs = new Map()
-    for (const page of getPages('rail', 'lines', 'metro')) {
+    for (const system of getSystems('rail')) {
+      for (const page of getPages('rail', 'lines', system.slug)) {
       if (!page.line) continue
       const resolved = getLine(page.line, page.operator || undefined)
       const namespace = page.operator || resolved?.operator
@@ -871,6 +872,7 @@ export function getLinePageHref(
       const candidates = bareLinePageHrefs.get(page.line.toUpperCase()) ?? []
       candidates.push(page.href)
       bareLinePageHrefs.set(page.line.toUpperCase(), candidates)
+      }
     }
   }
   const hrefs = linePageHrefs!
@@ -919,7 +921,12 @@ export async function getPageFromFile(
     .use(rehypeSlug) // give every heading an id, so headings are linkable
     // station code badges + <span lang="zh-Hant"> around Chinese, one pass;
     // on article pages the badges also link — no map there to do it instead
-    .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning, linkStations: article })
+    .use(rehypeRichText, {
+      file: relative,
+      onWarning: reportBadgeWarning,
+      linkStations: article,
+      operator: meta.operator || undefined,
+    })
     // After rehypeRichText: a marker is plain ASCII and survives that pass
     // untouched, but running first would let a `[^br01-thing]` id be eaten by
     // the station-code tokenizer.

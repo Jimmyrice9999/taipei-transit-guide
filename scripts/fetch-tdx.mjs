@@ -80,6 +80,7 @@ const OPERATORS = [
   { code: 'TYMC', name: 'Taoyuan Metro' },
   { code: 'NTDLRT', name: 'New Taipei Metro — Danhai Light Rail' },
   { code: 'NTALRT', name: 'New Taipei Metro — Ankeng Light Rail' },
+  { code: 'TMRT', name: 'Taichung Mass Rapid Transit Corporation' },
 ]
 
 /**

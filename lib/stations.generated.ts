@@ -10,7 +10,7 @@ export type GeneratedStation = {
   code: string
   /** Line prefix, e.g. "BR". */
   line: string
-  /** Operator publishing this line: TRTC, NTMC or TYMC. */
+  /** Operator publishing this line: the TDX rail-system code. */
   operator: string
   name: string
   /** Traditional Chinese name, when the source provides one. */
@@ -48,11 +48,11 @@ export type Provenance = {
 
 export const PROVENANCE: Provenance = {
   "source": "tdx",
-  "fetchedAt": "2026-08-10T13:36:24.570Z",
+  "fetchedAt": "2026-08-22T17:24:58.547Z",
   "sourceName": "Taiwan MOTC TDX (Transport Data eXchange)",
   "sourceUrl": "https://tdx.transportdata.tw/",
-  "operator": "TRTC",
-  "stationCount": 180
+  "operator": "TRTC, NTMC, TYMC, NTDLRT, NTALRT, TMRT",
+  "stationCount": 198
 }
 
 export const GENERATED_STATIONS: GeneratedStation[] = [
@@ -236,4 +236,22 @@ export const GENERATED_STATIONS: GeneratedStation[] = [
   { code: "K07", line: "K", operator: "NTALRT", name: "Sunshine Sports Park", nameZh: "陽光運動公園", district: "新店區", address: "", lat: 24.972351, lon: 121.519509, sequence: 7, interchange: [], chainageKm: 4.65 },
   { code: "K08", line: "K", operator: "NTALRT", name: "Xinhe Elementary School", nameZh: "新和國小", district: "新店區", address: "", lat: 24.983483, lon: 121.518444, sequence: 8, interchange: [], chainageKm: 6.06 },
   { code: "K09", line: "K", operator: "NTALRT", name: "Shisizhang", nameZh: "十四張", district: "新店區", address: "新北市新店區民權路282號(輕軌十四張站)", lat: 24.984328, lon: 121.527247, sequence: 9, interchange: [], chainageKm: 7.1 },
+  { code: "G0", line: "G", operator: "TMRT", name: "Beitun Main Station", nameZh: "北屯總站", district: "北屯區", address: "臺中市北屯區敦富東街100號", lat: 24.18913, lon: 120.70864, sequence: 1, interchange: [], chainageKm: 0 },
+  { code: "G3", line: "G", operator: "TMRT", name: "Jiushe", nameZh: "舊社", district: "北屯區", address: "臺中市北屯區松竹路一段1250號", lat: 24.18228, lon: 120.70729, sequence: 2, interchange: [], chainageKm: 0.99 },
+  { code: "G4", line: "G", operator: "TMRT", name: "Songzhu", nameZh: "松竹", district: "北屯區", address: "臺中市北屯區北屯路458號", lat: 24.1808, lon: 120.70145, sequence: 3, interchange: [], chainageKm: 1.67 },
+  { code: "G5", line: "G", operator: "TMRT", name: "Sihwei Elementary School", nameZh: "四維國小", district: "北屯區", address: "臺中市北屯區文心路四段 898號", lat: 24.17124, lon: 120.69329, sequence: 4, interchange: [], chainageKm: 3.31 },
+  { code: "G6", line: "G", operator: "TMRT", name: "Wenxin Chongde", nameZh: "文心崇德", district: "北屯區", address: "臺中市北屯區文心路四段 538 號", lat: 24.17219, lon: 120.68486, sequence: 5, interchange: [], chainageKm: 4.17 },
+  { code: "G7", line: "G", operator: "TMRT", name: "Wenxin Zhongqing", nameZh: "文心中清", district: "北區", address: "臺中市北區文心路三段700號", lat: 24.17368, lon: 120.67059, sequence: 6, interchange: [], chainageKm: 5.65 },
+  { code: "G8", line: "G", operator: "TMRT", name: "Wenhua Senior High School", nameZh: "文華高中", district: "西屯區", address: "臺中市西屯區文心路三段199號", lat: 24.17141, lon: 120.66045, sequence: 7, interchange: [], chainageKm: 6.71 },
+  { code: "G8a", line: "G", operator: "TMRT", name: "Wenxin Yinghua", nameZh: "文心櫻花", district: "西屯區", address: "臺中市西屯區文心路三段107之28號", lat: 24.16763, lon: 120.65367, sequence: 8, interchange: [], chainageKm: 7.53 },
+  { code: "G9", line: "G", operator: "TMRT", name: "Taichung City Hall", nameZh: "市政府", district: "西屯區", address: "臺中市西屯區文心路二段688號、699號", lat: 24.16199, lon: 120.64903, sequence: 9, interchange: [], chainageKm: 8.33 },
+  { code: "G10", line: "G", operator: "TMRT", name: "Shui-an Temple", nameZh: "水安宮", district: "南屯區", address: "臺中市南屯區文心路一段519號", lat: 24.15311, lon: 120.64668, sequence: 10, interchange: ["R"], chainageKm: 9.35 },
+  { code: "G10a", line: "G", operator: "TMRT", name: "Wenxin Forest Park", nameZh: "文心森林公園", district: "南屯區", address: "臺中市南屯區文心路一段259號", lat: 24.1454, lon: 120.6466, sequence: 11, interchange: [], chainageKm: 10.21 },
+  { code: "G11", line: "G", operator: "TMRT", name: "Nantun", nameZh: "南屯", district: "南屯區", address: "臺中市南屯區五權西路二段328號", lat: 24.1405, lon: 120.6466, sequence: 12, interchange: [], chainageKm: 10.75 },
+  { code: "G12", line: "G", operator: "TMRT", name: "Feng-le Park", nameZh: "豐樂公園", district: "南屯區", address: "臺中市南屯區文心南路168號", lat: 24.1326, lon: 120.64635, sequence: 13, interchange: ["BL"], chainageKm: 11.62 },
+  { code: "G13", line: "G", operator: "TMRT", name: "Daqing", nameZh: "大慶", district: "南區", address: "臺中市南區建國北路一段11號", lat: 24.1191, lon: 120.6476, sequence: 14, interchange: [], chainageKm: 13.23 },
+  { code: "G14", line: "G", operator: "TMRT", name: "Jiuzhangli", nameZh: "九張犁", district: "烏日區", address: "臺中市烏日區建國路915號", lat: 24.1145, lon: 120.6401, sequence: 15, interchange: ["R"], chainageKm: 14.15 },
+  { code: "G15", line: "G", operator: "TMRT", name: "Jiude", nameZh: "九德", district: "烏日區", address: "臺中市烏日區建國路639號", lat: 24.11104, lon: 120.63448, sequence: 16, interchange: ["O"], chainageKm: 14.84 },
+  { code: "G16", line: "G", operator: "TMRT", name: "Wuri", nameZh: "烏日", district: "烏日區", address: "臺中市烏日區建國路295號", lat: 24.1089, lon: 120.6249, sequence: 17, interchange: ["BR"], chainageKm: 15.87 },
+  { code: "G17", line: "G", operator: "TMRT", name: "HSR Taichung Station", nameZh: "高鐵臺中站", district: "烏日區", address: "臺中市烏日區高鐵東一路28號", lat: 24.11011, lon: 120.61405, sequence: 18, interchange: [], chainageKm: 16.93 },
 ]

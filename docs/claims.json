@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 10891,
+    "sourced": 11199,
     "tbc": 4305,
     "asserted": 32,
     "meta": 67
@@ -9769,6 +9769,14 @@
       "meta": 0
     },
     {
+      "file": "content/rail/operators/tmrt.md",
+      "sources": 11,
+      "sourced": 7,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/operators/trtc.md",
       "sources": 0,
       "sourced": 0,
@@ -9804,6 +9812,182 @@
       "file": "content/rail/technology/_index.md",
       "sources": 0,
       "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/lines/green-line.md",
+      "sources": 12,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/lines/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g0.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g10.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g10a.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g11.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g12.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g13.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g14.md",
+      "sources": 8,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g15.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g16.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g17.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g3.md",
+      "sources": 8,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g4.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g5.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g6.md",
+      "sources": 7,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g7.md",
+      "sources": 8,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g8.md",
+      "sources": 7,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g8a.md",
+      "sources": 8,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/g9.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/stations/_index.md",
+      "sources": 5,
+      "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/_index.md",
+      "sources": 11,
+      "sourced": 3,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

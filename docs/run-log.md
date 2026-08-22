@@ -14403,6 +14403,55 @@ checks. Build output is 1,875 pages; cite resolves 4,615 citations, claims are
 with 452 checked failures. The generated audits were restored; `probes/` remains
 untracked.
 
+## Run 88 - Taichung Metro Green Line pilot (23 August 2026)
+
+### Sourced
+
+Verified current TDX coverage for TMRT and committed the operator namespace,
+one Green Line, 18 operating stations, two directional route records, route
+geometry and station sequence. Added the TMRT system, line, operator and 18
+station pages. Operator, FAQ, project-package and public-art pages support
+the line's 16.71 km published operating length, steel-wheel driverless
+two-car engineering, station structure, civil packages, station siting and
+selected public-art and soundscape records. Control Yuan and operator records
+document the 2015 G4/G5 beam accident, the 2020 shaft-fracture incident, the
+2021 test restart and the 2021 opening.
+
+### TBC
+
+Station naming etymologies, station-specific public-art absence, individual
+station capacity and a complete station-by-station engineering design record
+remain TBC where the fetched operator and government pages do not establish
+them. No claim is made that a station has no artwork merely because the
+operator roster consulted does not name one.
+
+### Contradicted the corpus
+
+The requested chronology said the joint-collapse occurred in 2021 and
+reopening in 2022. The fetched operator and Control Yuan material instead
+record a 2020-11-21 shaft fracture, a 2021-03-25 test-operation restart and
+formal opening on 2021-04-25. The new research file records the correction.
+
+### Conflicts found
+
+The operator report publishes 16.71 km, TDX RouteLength publishes 16.70 km,
+and TDX station-of-route chainages end at 16.93 km in one direction and
+16.97 km in the other. These values are retained as different published
+measurements rather than averaged. TDX uses unpadded codes such as G3 and
+G10a; the architecture now keeps TMRT's G namespace separate from Taipei's.
+
+### Verification
+
+TMRT build completed with 1,808 Next routes and 1,954 postbuild pages; the
+TMRT station pages render under `/rail/tmrt/`, while legacy metro routes do
+not receive TMRT station rows. Full verify passed: 1,954 pages, 217,934
+internal links with no broken links or orphans, 1,457 a11y pages with no
+errors or warnings, 4,858 citations, 11,199 sourced claims / 4,305 TBC / 32
+asserted, 109 research files with 456 checked failures, all 212 unit tests,
+and clean facts, geometry and CVD checks. Navigation passed all 19 checks;
+the separate full package test also passed. The two generated audit JSONs were
+restored; `probes/` remains untracked.
+
 ## Run 87 - ticketing and Blue Highway (23 August 2026)
 
 ### Sourced

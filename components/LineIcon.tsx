@@ -46,15 +46,17 @@ import { getCharacter } from '@/lib/line-character'
  */
 export default function LineIcon({
   code,
+  operator,
   size = 26,
   className = '',
 }: {
   code: string
+  operator?: string
   /** Rendered px. Below about 22 the running gear stops being tellable apart. */
   size?: number
   className?: string
 }) {
-  const line = getLine(code)
+  const line = getLine(code, operator)
   if (!line) return null
 
   const character = getCharacter(line)

@@ -77,7 +77,12 @@ export type Station = {
 
 export const STATIONS: Station[] = [
   ...GENERATED_STATIONS.map((station) => {
-    const overlay = STATION_OVERLAY[station.code]
+    // Taipei's overlay is keyed by its bare station code. TMRT deliberately
+    // reuses G10–G17, so those rows must not inherit Taipei structure, exits,
+    // or engineering contracts.
+    const overlay = station.operator.toUpperCase() === 'TRTC'
+      ? STATION_OVERLAY[station.code]
+      : undefined
     return {
       ...station,
       interchange: station.interchange.filter((code) => code !== station.line),
@@ -105,10 +110,19 @@ export const STATIONS: Station[] = [
  * resolved: it rendered as `badge-absent` on /data/stations, which is the site
  * stating that a station it lists is not a real station.
  */
-const BY_CODE = new Map(STATIONS.map((s) => [s.code.toUpperCase(), s]))
+const BY_CODE = new Map<string, Station>()
+const BY_KEY = new Map<string, Station>()
+for (const station of STATIONS) {
+  // Taipei's existing bare-code links remain stable when another TDX system
+  // reuses a code. New callers must pass the operator for the namespaced row.
+  if (!BY_CODE.has(station.code.toUpperCase())) BY_CODE.set(station.code.toUpperCase(), station)
+  BY_KEY.set(`${station.operator.toUpperCase()}:${station.code.toUpperCase()}`, station)
+}
 
-export function getStation(code: string): Station | undefined {
-  return BY_CODE.get(code.trim().toUpperCase())
+export function getStation(code: string, operator?: string): Station | undefined {
+  const normalized = code.trim().toUpperCase()
+  if (operator?.trim()) return BY_KEY.get(`${operator.trim().toUpperCase()}:${normalized}`)
+  return BY_CODE.get(normalized)
 }
 
 /**
@@ -150,9 +164,12 @@ export const CATALOGUED_LINES = new Set(STATIONS.map((s) => s.line).filter(Boole
 export const LINES_WITH_STATION_PAGES = CATALOGUED_LINES
 
 /** The URL for a station's page, or null when it does not have one. */
-export function getStationHref(code: string): string | null {
-  const station = getStation(code)
+export function getStationHref(code: string, operator?: string): string | null {
+  const station = getStation(code, operator)
   if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) return null
+  if (station.operator.toUpperCase() === 'TMRT') {
+    return `/rail/tmrt/stations/${station.code.toLowerCase()}/`
+  }
   return `/rail/metro/stations/${station.code.toLowerCase()}/`
 }
 
@@ -186,7 +203,7 @@ export function resolveSpine(value: string, lineCode: string, operator?: string)
     }
     // Add the registry's own spelling, not the caller's. The spine matches on
     // `station.code`, so an uppercased "A14A" would never light A14a's tick.
-    const station = getStation(part)
+    const station = getStation(part, operator)
     if (station) marked.add(station.code)
   }
   return marked

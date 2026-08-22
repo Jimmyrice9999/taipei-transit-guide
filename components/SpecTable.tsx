@@ -18,9 +18,11 @@ import type { NumberedSource } from '@/lib/sources'
 export default function SpecTable({
   specs,
   references = [],
+  operator,
 }: {
   specs: Spec[]
   references?: NumberedSource[]
+  operator?: string
 }) {
   if (specs.length === 0) return null
 
@@ -34,9 +36,9 @@ export default function SpecTable({
           {specs.map((spec) => (
             <tr key={spec.label}>
               <th scope="row">
-                <RichText>{spec.label}</RichText>
+                <RichText operator={operator}>{spec.label}</RichText>
               </th>
-              <td className="specs-value">{spec.value ? <RichText>{spec.value}</RichText> : '—'}</td>
+              <td className="specs-value">{spec.value ? <RichText operator={operator}>{spec.value}</RichText> : '—'}</td>
               <td className="specs-unit">
                 {spec.unit}
                 <CiteMark id={spec.source} references={references} />

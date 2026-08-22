@@ -18,9 +18,11 @@ import { getStation, getStationHref } from '@/lib/stations'
  */
 export default function StationBadge({
   code,
+  operator,
   linked = true,
 }: {
   code: string
+  operator?: string
   /**
    * Pass false when the badge sits inside another link.
    *
@@ -34,8 +36,8 @@ export default function StationBadge({
    */
   linked?: boolean
 }) {
-  const station = getStation(code)
-  const line = station ? getLine(station.line) : undefined
+  const station = getStation(code, operator)
+  const line = station ? getLine(station.line, station.operator) : undefined
 
   if (!station || !line) {
     // Never render a badge for a station that is not in the registry: a badge
@@ -49,7 +51,7 @@ export default function StationBadge({
   } as React.CSSProperties
 
   const label = `${station.code} ${station.name}`
-  const href = linked ? getStationHref(code) : null
+  const href = linked ? getStationHref(code, station.operator) : null
 
   if (!href) {
     return (

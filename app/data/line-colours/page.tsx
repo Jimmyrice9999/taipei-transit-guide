@@ -138,7 +138,7 @@ export default function LineColoursPage() {
                     <tr key={line.key}>
                       <th scope="row">
                         <span className="colour-line">
-                          <LineBadge code={line.code} />
+                          <LineBadge code={line.code} operator={line.operator} />
                           <span className="colour-name">
                             {line.name}
                             {line.nameZh && (

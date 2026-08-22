@@ -10,7 +10,7 @@
     "station": "station codes, Chinese/English/Japanese/Korean names, coordinates, address",
     "station-of-route": "station sequence per route — what orders BR01 to BR24"
   },
-  "fetchedAt": "2026-08-10T13:36:24.570Z",
+  "fetchedAt": "2026-08-22T17:24:58.547Z",
   "licence": "Government open data — see https://data.gov.tw/licenses",
   "operators": {
     "NTALRT": {
@@ -392,6 +392,146 @@
       },
       "name": "New Taipei Metro"
     },
+    "TMRT": {
+      "datasets": {
+        "first-last-timetable": {
+          "fields": [
+            "DestinationStaionID",
+            "DestinationStationName",
+            "FirstTrainTime",
+            "LastTrainTime",
+            "LineID",
+            "LineNo",
+            "ServiceDay",
+            "SrcUpdateTime",
+            "StationID",
+            "StationName",
+            "TrainType",
+            "TripHeadSign",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 34,
+          "srcUpdatedNewest": "2026-08-22",
+          "srcUpdatedOldest": "2026-08-22",
+          "status": 200
+        },
+        "line": {
+          "fields": [
+            "IsBranch",
+            "LineColor",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "LineSectionName",
+            "SrcUpdateTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": "2025-11-11",
+          "srcUpdatedOldest": "2025-11-11",
+          "status": 200
+        },
+        "line-transfer": {
+          "records": 0,
+          "status": 404
+        },
+        "route": {
+          "fields": [
+            "Direction",
+            "EndStationID",
+            "EndStationName",
+            "LineID",
+            "LineNo",
+            "OperatorCode",
+            "RailRouteType",
+            "RouteID",
+            "RouteLength",
+            "RouteName",
+            "SrcUpdateTime",
+            "StartStationID",
+            "StartStationName",
+            "TravelTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": "2026-08-22",
+          "srcUpdatedOldest": "2026-08-22",
+          "status": 200
+        },
+        "s2s-travel-time": {
+          "fields": [
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "SrcUpdateTime",
+            "TrainType",
+            "TravelTimes",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": "2026-08-22",
+          "srcUpdatedOldest": "2026-08-22",
+          "status": 200
+        },
+        "shape": {
+          "fields": [
+            "EncodedPolyline",
+            "Geometry",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "UpdateTime"
+          ],
+          "records": 1,
+          "srcUpdatedNewest": null,
+          "srcUpdatedOldest": null,
+          "status": 200
+        },
+        "station": {
+          "fields": [
+            "BikeAllowOnHoliday",
+            "LocationCity",
+            "LocationCityCode",
+            "LocationTown",
+            "LocationTownCode",
+            "SrcUpdateTime",
+            "StationAddress",
+            "StationID",
+            "StationName",
+            "StationPosition",
+            "StationUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 18,
+          "srcUpdatedNewest": "2025-11-11",
+          "srcUpdatedOldest": "2025-11-11",
+          "status": 200
+        },
+        "station-of-route": {
+          "fields": [
+            "Direction",
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "RouteName",
+            "SrcUpdateTime",
+            "Stations",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": "2025-11-11",
+          "srcUpdatedOldest": "2025-11-11",
+          "status": 200
+        }
+      },
+      "name": "Taichung Mass Rapid Transit Corporation"
+    },
     "TRTC": {
       "datasets": {
         "first-last-timetable": {
@@ -697,11 +837,10 @@
     }
   },
   "partialFetch": {
-    "at": "2026-08-10T13:36:24.570Z",
+    "at": "2026-08-22T17:24:58.547Z",
     "note": "Only these operators were refetched; the others carry their earlier fetch record.",
     "operators": [
-      "NTDLRT",
-      "NTALRT"
+      "TMRT"
     ]
   },
   "source": "Taiwan MOTC TDX (Transport Data eXchange)",

@@ -30,7 +30,7 @@ import { getImage } from '@/lib/images'
 import { getLinePageHref, getPages, getSection, getSystem } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import { getLineGeometry } from '@/lib/geometry'
-import { branchTint, getAccent, getLine } from '@/lib/lines'
+import { branchTint, getAccent, getInterchangeLine, getLine } from '@/lib/lines'
 import { getDistrictEn } from '@/lib/districts'
 import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStation, LINES_WITH_STATION_PAGES } from '@/lib/stations'
@@ -45,7 +45,9 @@ export const dynamicParams = false
 
 export function generateStaticParams() {
   return [...LINES_WITH_STATION_PAGES].flatMap((line) =>
-    getLineStations(line).map((station) => ({ code: station.code.toLowerCase() })),
+    getLineStations(line)
+      .filter((station) => station.operator !== 'TMRT')
+      .map((station) => ({ code: station.code.toLowerCase() })),
   )
 }
 
@@ -79,7 +81,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (station.interchange.length) {
     const names = station.interchange
-      .map((other) => getLine(other)?.name)
+      .map((other) => getInterchangeLine(other, station.operator)?.name)
       .filter(Boolean)
       .join(' and ')
     parts.push(`Interchange with the ${names} Line${station.interchange.length > 1 ? 's' : ''}.`)
@@ -118,7 +120,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function StationPage({ params }: Props) {
   const { code } = await params
   const station = getStation(code)
-  if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) notFound()
+  if (!station || station.operator === 'TMRT' || !LINES_WITH_STATION_PAGES.has(station.line)) notFound()
 
   const line = getAccent(station.line, station.operator)
   const heroImage = getImage(`stations/${station.code.toLowerCase()}`)
@@ -161,7 +163,7 @@ export default async function StationPage({ params }: Props) {
    * the single most useful fact about an interchange station.
    */
   const interchangeLines = station.interchange
-    .map((code) => ({ code, line: getLine(code) }))
+    .map((code) => ({ code, line: getInterchangeLine(code, station.operator) }))
     .filter((entry): entry is { code: string; line: NonNullable<ReturnType<typeof getLine>> } =>
       Boolean(entry.line),
     )
@@ -247,6 +249,7 @@ export default async function StationPage({ params }: Props) {
                 {interchangeLines.map(({ code, line: otherLine }) => (
                   <LineBadge
                     code={code}
+                    operator={otherLine.operator}
                     key={code}
                     title={`Interchange with the ${otherLine.name} Line`}
                   />
@@ -263,6 +266,12 @@ export default async function StationPage({ params }: Props) {
                 {station.research.interchange.lineCode && (
                   <LineBadge
                     code={station.research.interchange.lineCode}
+                    operator={
+                      getInterchangeLine(
+                        station.research.interchange.lineCode,
+                        station.operator,
+                      )?.operator ?? station.operator
+                    }
                     title={station.research.interchange.label}
                   />
                 )}
@@ -345,6 +354,12 @@ export default async function StationPage({ params }: Props) {
                       <LineBadge
                         className="badge-mini"
                         code={station.research.interchange.lineCode}
+                        operator={
+                          getInterchangeLine(
+                            station.research.interchange.lineCode,
+                            station.operator,
+                          )?.operator ?? station.operator
+                        }
                         title={station.research.interchange.label}
                       />
                     )}{' '}
@@ -366,6 +381,7 @@ export default async function StationPage({ params }: Props) {
                       <LineBadge
                         className="badge-mini"
                         code={code}
+                        operator={otherLine.operator}
                         key={code}
                         title={`Interchange with the ${otherLine.name} Line`}
                       />

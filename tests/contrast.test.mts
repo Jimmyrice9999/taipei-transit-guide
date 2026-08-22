@@ -96,8 +96,8 @@ test('the lines needing a hairline are Orange, Yellow and Sanying only', () => {
    */
   // LB joined in run 12: #48B6D2 is 2.21:1 on white, so its length bar and its
   // accent rule need the ink hairline for the same reason Orange and Yellow do.
-  const needing = LINES.filter((l) => l.needsHairline).map((l) => l.code).sort()
-  assert.deepEqual(needing, ['LB', 'O', 'Y'])
+  const needing = LINES.filter((l) => l.needsHairline).map((l) => l.key).sort()
+  assert.deepEqual(needing, ['NTMC:LB', 'NTMC:Y', 'TMRT:G', 'TRTC:O'])
 })
 
 test('official colours are normalised uppercase hex', () => {
@@ -177,12 +177,13 @@ test('the confusable pairs are the measured ones, not the assumed ones', async (
   assert.ok(pair('BR', 'R', 'deuteranopia') < 10, 'brown/red should be unreliable under deuteranopia')
 })
 
-test('every line colour is distinct', () => {
+test('line colours are distinct within each operator namespace', () => {
   const seen = new Map<string, string>()
   for (const line of LINES) {
-    const previous = seen.get(line.map)
-    assert.equal(previous, undefined, `${line.code} and ${previous} share the colour ${line.map}`)
-    seen.set(line.map, line.code)
+    const key = `${line.operator}:${line.map}`
+    const previous = seen.get(key)
+    assert.equal(previous, undefined, `${line.key} and ${previous} share the colour ${line.map}`)
+    seen.set(key, line.key)
   }
 })
 

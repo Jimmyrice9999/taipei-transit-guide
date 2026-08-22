@@ -3,6 +3,7 @@ title: Xindian Depot
 summary: The green line's depot — with a metro branch line climbing through the middle of it.
 order: 4
 line: G
+operator: TRTC
 aliases:
   - 新店機廠
 updated: 2026-08-06

@@ -50,6 +50,7 @@ const LINE_SOURCES = [
   // entirely — see the note on OPERATORS in scripts/fetch-tdx.mjs.
   { prefix: 'V', operator: 'NTDLRT' },
   { prefix: 'K', operator: 'NTALRT' },
+  { prefix: 'G', operator: 'TMRT' },
 ] as const
 
 /** The line the hand-transcribed seed covers, and so the only one to reconcile. */
@@ -61,7 +62,7 @@ type Built = {
   code: string
   /** Line prefix, e.g. "BR". Stored so lookups need no string surgery. */
   line: string
-  /** The operator publishing this line: TRTC, NTMC or TYMC. */
+  /** The operator publishing this line: a TDX rail-system code. */
   operator: string
   name: string
   nameZh: string
@@ -93,10 +94,10 @@ const readJson = (operator: string, name: string): Row[] | null => {
 }
 
 /** The same dataset across every operator, merged. */
-const readAll = (name: string): Row[] => {
-  const operators = [...new Set(LINE_SOURCES.map((l) => l.operator))]
-  return operators.flatMap((op) => readJson(op, name) ?? [])
-}
+const readAll = (name: string): Row[] =>
+  [...new Set(LINE_SOURCES.map((line) => line.operator))].flatMap((operator) =>
+    (readJson(operator, name) ?? []).map((row) => ({ ...row, __operator: operator })),
+  )
 
 /* ------------------------------------------------------------------ */
 /* Field access, written defensively                                   */
@@ -128,7 +129,7 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
   const byId = new Map<string, Row>()
   for (const row of stationRows) {
     const id = row.StationID ?? row.StationUID
-    if (id) byId.set(String(id), row)
+    if (id && row.__operator) byId.set(`${row.__operator}:${String(id)}`, row)
   }
 
   /**
@@ -150,14 +151,19 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
    * wrong record renders the whole strip map backwards. So Direction 0 wins
    * explicitly rather than by whichever record happened to be encountered first.
    */
-  function sequenceFor(prefix: string) {
+  function sequenceFor(prefix: string, operator: string) {
     const candidates = routeRows
       .map((route) => ({
+        operator: String(route.__operator ?? ''),
         direction: Number(route.Direction ?? 0),
         routeId: String(route.RouteID ?? ''),
         stops: (route.Stations ?? route.stations ?? []) as Row[],
       }))
-      .filter((r) => r.stops.some((s) => onLine(String(s.StationID ?? ''), prefix)))
+      .filter(
+        (r) =>
+          r.operator === operator &&
+          r.stops.some((s) => onLine(String(s.StationID ?? ''), prefix)),
+      )
       .sort(
         (a, b) =>
           a.direction - b.direction || // outbound first
@@ -188,7 +194,7 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
   const stations: Built[] = []
 
   for (const { prefix, operator } of LINE_SOURCES) {
-    const chosen = sequenceFor(prefix)
+    const chosen = sequenceFor(prefix, operator)
 
     if (!chosen) {
       notes.push(`No route found for line ${prefix} — skipped.`)
@@ -201,7 +207,7 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
       fallbackName?: any,
       chainageKm: number | null = null,
     ): Built => {
-      const record = byId.get(code) ?? {}
+      const record = byId.get(`${operator}:${code}`) ?? {}
       const position = record.StationPosition ?? {}
       const fromTransfers = interchangeByStation.get(code)
 
@@ -247,7 +253,14 @@ function buildFromTdx(): { stations: Built[]; notes: string[] } | null {
     const seen = new Set(forLine.map((s) => s.code))
     const branch = stationRows
       .map((row) => String(row.StationID ?? ''))
-      .filter((code) => onLine(code, prefix) && !seen.has(code))
+      .filter(
+        (code) =>
+          onLine(code, prefix) &&
+          stationRows.some(
+            (row) => row.__operator === operator && String(row.StationID ?? '') === code,
+          ) &&
+          !seen.has(code),
+      )
       .sort()
       .map((code, index) => build(code, forLine.length + index + 1))
 
@@ -391,7 +404,7 @@ function main() {
     fetchedAt: meta?.fetchedAt ?? null,
     sourceName: usingTdx ? (meta?.source ?? 'Taiwan MOTC TDX') : 'Hand-transcribed, pending TDX fetch',
     sourceUrl: 'https://tdx.transportdata.tw/',
-    operator: meta?.operator ?? 'TRTC',
+    operator: [...new Set(stations.map((station) => station.operator))].join(', '),
     stationCount: stations.length,
   }
 
@@ -407,7 +420,7 @@ export type GeneratedStation = {
   code: string
   /** Line prefix, e.g. "BR". */
   line: string
-  /** Operator publishing this line: TRTC, NTMC or TYMC. */
+  /** Operator publishing this line: the TDX rail-system code. */
   operator: string
   name: string
   /** Traditional Chinese name, when the source provides one. */
@@ -473,18 +486,19 @@ ${stations
   const publicDir = path.join(ROOT, 'public', 'data')
   fs.mkdirSync(publicDir, { recursive: true })
 
-  const download = {
+  const makeDownload = (rows: Built[], label: string) => ({
     source: provenance.sourceName,
     sourceUrl: provenance.sourceUrl,
     licence: 'Government open data (Taiwan). See https://data.gov.tw/licenses',
-    operator: provenance.operator,
+    operator: label,
     retrieved: provenance.fetchedAt,
     note:
       'Generated by the Taipei Transit Guide from Taiwan MOTC TDX data. ' +
       'Elevated/underground status is NOT included: TDX does not publish it.',
-    stations: stations.map((s) => ({
+    stations: rows.map((s) => ({
       code: s.code,
       line: s.line,
+      operator: s.operator,
       nameEn: s.name,
       nameZh: s.nameZh,
       sequence: s.sequence,
@@ -492,13 +506,21 @@ ${stations
       lon: s.lon,
       interchange: s.interchange,
     })),
-  }
+  })
+
+  const taipeiRows = stations.filter((station) => station.operator !== 'TMRT')
+  const taichungRows = stations.filter((station) => station.operator === 'TMRT')
 
   fs.writeFileSync(
     path.join(publicDir, 'taipei-metro-stations.json'),
-    JSON.stringify(download, null, 2) + '\n',
+    JSON.stringify(makeDownload(taipeiRows, 'Taipei-region metro and light rail operators'), null, 2) + '\n',
   )
-  console.log(`stations: wrote public/data/taipei-metro-stations.json — ${stations.length} records.`)
+  fs.writeFileSync(
+    path.join(publicDir, 'taichung-metro-stations.json'),
+    JSON.stringify(makeDownload(taichungRows, 'Taichung Metro Corporation (TMRT)'), null, 2) + '\n',
+  )
+  console.log(`stations: wrote public/data/taipei-metro-stations.json — ${taipeiRows.length} records.`)
+  console.log(`stations: wrote public/data/taichung-metro-stations.json — ${taichungRows.length} records.`)
 
   if (stations.some((s) => s.nameZh)) {
     console.log('stations: Chinese names present — run `npm run fonts` to update the subset.')

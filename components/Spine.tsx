@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getLine, type Line } from '@/lib/lines'
+import { getInterchangeLine, type Line } from '@/lib/lines'
 import { STATIONS, getStationHref, type Station } from '@/lib/stations'
 
 /**
@@ -130,7 +130,7 @@ export default function Spine({
                         {station.code}
                       </span>
                       {station.interchange.map((code) => {
-                        const other = getLine(code)
+                        const other = getInterchangeLine(code, station.operator)
                         if (!other) return null
                         /*
                          * The interchange pill carries the *station's* code on
@@ -140,7 +140,7 @@ export default function Spine({
                          * the same name, which is what makes this resolvable.
                          */
                         const twin = STATIONS.find(
-                          (s) => s.line === code && s.name === station.name,
+                          (s) => s.line === code && s.operator === other.operator && s.name === station.name,
                         )
                         return (
                           <span
@@ -161,7 +161,7 @@ export default function Spine({
                     </span>
                   )
 
-                  const href = getStationHref(station.code)
+                  const href = getStationHref(station.code, station.operator)
                   return href ? (
                     <Link className="spine-station" href={href}>
                       {codes}

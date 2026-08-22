@@ -163,7 +163,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const line of LINES_WITH_STATION_PAGES) {
-    for (const station of getLineStations(line)) {
+    // This legacy route is Taipei metro only. TMRT reuses G station codes and
+    // has its own /rail/tmrt/ station route; including its rows here duplicates
+    // those canonical URLs.
+    for (const station of getLineStations(line).filter((station) => station.operator !== 'TMRT')) {
       entries.push({
         url: absoluteUrl(`/rail/metro/stations/${station.code.toLowerCase()}/`),
         lastModified: now,

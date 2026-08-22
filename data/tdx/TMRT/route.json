@@ -1,0 +1,64 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "G17",
+    "EndStationName": {
+      "En": "HSR Taichung Station",
+      "Ja": "高速鉄道台中駅",
+      "Ko": "타이중 고속철도 역",
+      "Zh_tw": "高鐵臺中站"
+    },
+    "LineID": "G",
+    "LineNo": "1",
+    "OperatorCode": "TMRT",
+    "RailRouteType": 33,
+    "RouteID": "G-1",
+    "RouteLength": 16.7,
+    "RouteName": {
+      "En": "Wuriwenxin  Beitun Line",
+      "Zh_tw": "烏日文心北屯線"
+    },
+    "SrcUpdateTime": "2026-08-22T01:39:22+08:00",
+    "StartStationID": "G0",
+    "StartStationName": {
+      "En": "Beitun Main Station",
+      "Ja": "北屯総駅",
+      "Ko": "베이툰 중앙 역",
+      "Zh_tw": "北屯總站"
+    },
+    "TravelTime": 71,
+    "UpdateTime": "2026-08-22T20:39:15+08:00",
+    "VersionID": 2077
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "G0",
+    "EndStationName": {
+      "En": "Beitun Main Station",
+      "Ja": "北屯総駅",
+      "Ko": "베이툰 중앙 역",
+      "Zh_tw": "北屯總站"
+    },
+    "LineID": "G",
+    "LineNo": "1",
+    "OperatorCode": "TMRT",
+    "RailRouteType": 33,
+    "RouteID": "G-1",
+    "RouteLength": 16.7,
+    "RouteName": {
+      "En": "Wuriwenxin  Beitun Line",
+      "Zh_tw": "烏日文心北屯線"
+    },
+    "SrcUpdateTime": "2026-08-22T01:39:22+08:00",
+    "StartStationID": "G17",
+    "StartStationName": {
+      "En": "HSR Taichung Station",
+      "Ja": "高速鉄道台中駅",
+      "Ko": "타이중 고속철도 역",
+      "Zh_tw": "高鐵臺中站"
+    },
+    "TravelTime": 71,
+    "UpdateTime": "2026-08-22T20:39:15+08:00",
+    "VersionID": 2077
+  }
+]

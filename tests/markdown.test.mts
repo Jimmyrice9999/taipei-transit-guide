@@ -150,7 +150,7 @@ test('every page has a title', () => {
 test('every `line:` in frontmatter is a real line code', () => {
   for (const page of getAllPages()) {
     if (!page.line) continue
-    assert.ok(getLine(page.line), `${page.href} sets line: ${page.line}, which is not a line`)
+    assert.ok(getLine(page.line, page.operator), `${page.href} sets line: ${page.line}, which is not a line`)
   }
 })
 

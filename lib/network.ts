@@ -172,7 +172,7 @@ export function getLineSummaries(): LineSummary[] {
      */
     const trunkStations = trunk
       ? trunk.stations
-          .map((code) => getStation(code))
+          .map((code) => getStation(code, line.operator))
           .filter((s): s is Station => !!s && s.lat !== null && s.lon !== null)
       : stations.filter((s) => s.lat !== null && s.lon !== null)
 
@@ -189,8 +189,8 @@ export function getLineSummaries(): LineSummary[] {
       // Termini from the trunk ROUTE, not from the first and last station by
       // sequence — branch stations are appended past the end of the sequence,
       // so "last" was G03A Xiaobitan rather than G19 Songshan.
-      from: (trunk && getStation(trunk.from)) ?? stations[0] ?? null,
-      to: (trunk && getStation(trunk.to)) ?? (stations.length ? stations[stations.length - 1] : null),
+      from: (trunk && getStation(trunk.from, line.operator)) ?? stations[0] ?? null,
+      to: (trunk && getStation(trunk.to, line.operator)) ?? (stations.length ? stations[stations.length - 1] : null),
       travelTimeMin: primary && primary.TravelTime > 0 ? primary.TravelTime : null,
       officialKm: trunk?.lengthKm ?? null,
       measuredKm: measurement ? measurement.revenueKm : null,
@@ -284,7 +284,7 @@ export function getLineTrack(lineCode: string, operator?: string): LineTrack {
 
   const points = (codes: Iterable<string>): Point[] =>
     [...codes]
-      .map((code) => getStation(code))
+      .map((code) => getStation(code, operator))
       .filter((s): s is Station => !!s && s.lat !== null && s.lon !== null)
       .map((s) => [s.lon!, s.lat!] as Point)
 
@@ -313,7 +313,7 @@ export function getLineTrack(lineCode: string, operator?: string): LineTrack {
     branch,
     runs: geometry.paths.length,
     branchStations: termini
-      .map((code) => getStation(code))
+      .map((code) => getStation(code, operator))
       .filter((s): s is Station => !!s),
     kind: 'surveyed',
   }

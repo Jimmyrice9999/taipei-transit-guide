@@ -1,0 +1,129 @@
+---
+title: Taichung Metro Corporation
+summary: The city-owned operator of Taichung's Green Line, responsible for running the railway after the city and national agencies delivered its construction packages.
+order: 5
+aliases:
+  - TMRT
+  - 臺中捷運公司
+  - 臺中捷運股份有限公司
+updated: 2026-08-23
+facts:
+  - label: TDX operator code
+    value: TMRT
+    source: tmrt-annual
+  - label: Line operated
+    value: Green Line
+    source: tmrt-map
+  - label: Company established
+    value: 1 January 2017
+    source: tmrt-events
+  - label: Public opening
+    value: 25 April 2021
+    source: tmrt-reopen
+sources:
+  - id: tmrt-annual
+    title: Taichung Metro Corporation 2021 operational route report
+    titleOriginal: 臺中捷運股份有限公司營運路線資料
+    publisher: Taichung Metro Corporation (臺中捷運股份有限公司)
+    url: https://www.tmrt.com.tw/Content/Uploads/PublicClassArticle/9ad3a311-c8e4-4bb8-883a-d36d756eeeae.pdf
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: The operator's route and system report identifies the Green Line, its 18 stations, 16.71 km route and system form.
+  - id: tmrt-map
+    title: Metro map
+    titleOriginal: 路線圖
+    publisher: Taichung Metro Corporation (臺中捷運股份有限公司)
+    url: https://www.tmrt.com.tw/metro-life/map
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: The operator's current map and station order.
+  - id: tmrt-events
+    title: Major events
+    titleOriginal: 大事紀
+    publisher: Taichung Metro Corporation (臺中捷運股份有限公司)
+    url: https://www.tmrt.com.tw/about/major-events
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Company establishment, construction accident, joint-shaft fracture and opening milestones.
+  - id: tmrt-reopen
+    title: Taichung Metro resumes test operation
+    titleOriginal: 臺中捷運恢復試營運
+    publisher: Taichung City Government (臺中市政府)
+    url: https://www.taichung.gov.tw/8868/8872/9962/1742706
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: The city announcement records the 25 March 2021 test restart and 25 April 2021 formal opening.
+  - id: cj910
+    title: CJ910 project record
+    titleOriginal: CJ910 工程
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C30
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: G0 and Beitun depot civil package.
+  - id: cj920
+    title: CJ920 project record
+    titleOriginal: CJ920 工程
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C29
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: G3–G9 civil package.
+  - id: cj930
+    title: CJ930 project record
+    titleOriginal: CJ930 工程
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C28
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: G10–G17 civil package.
+  - id: cj900
+    title: CJ900/CJ907 system-equipment project record
+    titleOriginal: CJ900、CJ907 機電系統工程
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C31
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Green Line system-equipment package.
+  - id: tmrt-faq
+    title: Frequently asked questions
+    titleOriginal: 常見問題
+    publisher: Taichung Metro Corporation (臺中捷運股份有限公司)
+    url: https://www.tmrt.com.tw/our-services/faq
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Current Green Line technical description.
+  - id: tmrt-art
+    title: Public works
+    titleOriginal: 公共藝術
+    publisher: Taichung Metro Corporation (臺中捷運股份有限公司)
+    url: https://www.tmrt.com.tw/art/public-works
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Current public-art roster.
+  - id: cy-control
+    title: Investigation into the Taichung Metro joint-shaft fracture
+    titleOriginal: 臺中捷運鋼箱梁斷裂案調查報告
+    publisher: Control Yuan, Taiwan (監察院)
+    url: https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/71448
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Investigation of the 2020 test-operation failure.
+---
+
+Taichung Metro Corporation (TMRT) is the operating company behind the Green Line. The operator records its company establishment on 1 January 2017 and its formal opening on 25 April 2021.[^tmrt-events][^tmrt-reopen] The railway was delivered through a split public construction and systems-procurement structure rather than as a single company-built object: the city construction bureau records civil packages CJ910, CJ920 and CJ930, while CJ900/CJ907 covers system equipment and rolling stock.[^cj910][^cj920][^cj930][^cj900]
+
+The company's current route is the 18-station Green Line from `G0` Beitun Main Station to `G17` HSR Taichung Station.[^tmrt-map][^tmrt-annual] It operates a steel-wheel, medium-capacity, fully driverless railway with two-car trains.[^tmrt-faq] The operator's own public-art programme treats the stations as a connected landscape and soundscape rather than as interchangeable platforms.[^tmrt-art] That is why the station pages below keep the station-specific artwork where the current roster names it and leave the rest as a stated gap.
+
+The most important correction in the company's operating history is chronological. The joint-shaft fracture occurred during test operation on 21 November 2020; test operation restarted on 25 March 2021 after remedial work and formal service began on 25 April 2021.[^tmrt-events][^cy-control][^tmrt-reopen] The sources read for this page do not support a separate “2022 reopening”, so that date is not asserted here.

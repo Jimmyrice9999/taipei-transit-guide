@@ -11,7 +11,7 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 
 import { STATIONS, getStation, getLineStations, resolveSpine } from '../lib/stations.ts'
-import { LINES, TDX_LINES, getLine } from '../lib/lines.ts'
+import { LINES, TDX_LINES, getInterchangeLine, getLine } from '../lib/lines.ts'
 import { getBranchRoutes, getRoutes, getTrunkRoute } from '../lib/routes.ts'
 import { getInterchanges } from '../lib/network.ts'
 import { validateSource } from '../lib/sources.ts'
@@ -31,28 +31,36 @@ import ntmcStations from '../data/tdx/NTMC/station.json' with { type: 'json' }
 import tymcStations from '../data/tdx/TYMC/station.json' with { type: 'json' }
 import ntdlrtStations from '../data/tdx/NTDLRT/station.json' with { type: 'json' }
 import ntalrtStations from '../data/tdx/NTALRT/station.json' with { type: 'json' }
+import tmrtStations from '../data/tdx/TMRT/station.json' with { type: 'json' }
 
 type TdxStation = {
+  operator: string
   StationID: string
   StationName?: { En?: string; Zh_tw?: string }
   StationPosition?: { PositionLat?: number; PositionLon?: number }
 }
 
+const withOperator = (operator: string, records: unknown): TdxStation[] =>
+  (records as TdxStation[]).map((record) => ({ ...record, operator }))
+
 const sourceStations = [
-  ...(trtcStations as unknown as TdxStation[]),
-  ...(ntmcStations as unknown as TdxStation[]),
-  ...(tymcStations as unknown as TdxStation[]),
-  ...(ntdlrtStations as unknown as TdxStation[]),
-  ...(ntalrtStations as unknown as TdxStation[]),
+  ...withOperator('TRTC', trtcStations),
+  ...withOperator('NTMC', ntmcStations),
+  ...withOperator('TYMC', tymcStations),
+  ...withOperator('NTDLRT', ntdlrtStations),
+  ...withOperator('NTALRT', ntalrtStations),
+  ...withOperator('TMRT', tmrtStations),
 ]
 
-const sourceById = new Map(sourceStations.map((s) => [s.StationID.toUpperCase(), s]))
+const sourceByKey = new Map(
+  sourceStations.map((s) => [`${s.operator}:${s.StationID.toUpperCase()}`, s]),
+)
 
 /* ------------------------------------------------------------------ */
 
 test('every registry station exists in the TDX source', () => {
   const missing = STATIONS.filter(
-    (s) => s.recordSource === 'tdx' && !sourceById.has(s.code.toUpperCase()),
+    (s) => s.recordSource === 'tdx' && !sourceByKey.has(`${s.operator}:${s.code.toUpperCase()}`),
   )
   assert.deepEqual(
     missing.map((s) => s.code),
@@ -70,7 +78,11 @@ test('the primary-sourced Sanying registry is complete and explicit about TDX ga
 
   for (const station of sanying) {
     assert.equal(station.recordSource, 'primary-research')
-    assert.equal(sourceById.has(station.code), false, `${station.code} unexpectedly exists in TDX`)
+    assert.equal(
+      sourceByKey.has(`${station.operator}:${station.code.toUpperCase()}`),
+      false,
+      `${station.code} unexpectedly exists in TDX`,
+    )
     assert.notEqual(station.lat, null, `${station.code} has no primary-sourced coordinate`)
     assert.notEqual(station.lon, null, `${station.code} has no primary-sourced coordinate`)
     assert.ok(station.address, `${station.code} has no primary-sourced address`)
@@ -89,7 +101,7 @@ test('the primary-sourced Sanying registry is complete and explicit about TDX ga
 test('names match the TDX source exactly', () => {
   const wrong: string[] = []
   for (const station of STATIONS) {
-    const source = sourceById.get(station.code.toUpperCase())
+    const source = sourceByKey.get(`${station.operator}:${station.code.toUpperCase()}`)
     if (!source) continue
     if (source.StationName?.En && source.StationName.En !== station.name) {
       wrong.push(`${station.code}: "${station.name}" vs source "${source.StationName.En}"`)
@@ -101,7 +113,7 @@ test('names match the TDX source exactly', () => {
 test('coordinates match the TDX source', () => {
   const wrong: string[] = []
   for (const station of STATIONS) {
-    const source = sourceById.get(station.code.toUpperCase())
+    const source = sourceByKey.get(`${station.operator}:${station.code.toUpperCase()}`)
     const lat = source?.StationPosition?.PositionLat
     const lon = source?.StationPosition?.PositionLon
     if (typeof lat === 'number' && Math.abs((station.lat ?? 0) - lat) > 1e-6) {
@@ -121,7 +133,7 @@ test('no duplicate station codes, case-insensitively', () => {
   const seen = new Map<string, string>()
   const clashes: string[] = []
   for (const station of STATIONS) {
-    const key = station.code.toUpperCase()
+    const key = `${station.operator}:${station.code.toUpperCase()}`
     const previous = seen.get(key)
     if (previous) clashes.push(`${previous} / ${station.code}`)
     else seen.set(key, station.code)
@@ -131,7 +143,7 @@ test('no duplicate station codes, case-insensitively', () => {
 
 test('sequences are contiguous and 1-based within each line', () => {
   for (const line of LINES) {
-    const stations = getLineStations(line.code)
+    const stations = getLineStations(line.code, line.operator)
     if (stations.length === 0) continue
     const sequences = stations.map((s) => s.sequence)
     assert.deepEqual(
@@ -146,7 +158,7 @@ test('every station resolves through getStation, including branch codes', () => 
   // This is the A14a regression. The registry held it; the lookup could not
   // find it, because the map was keyed on the raw code and the lookup
   // uppercased. It rendered as "not a real station" on /data/stations.
-  const unreachable = STATIONS.filter((s) => getStation(s.code)?.code !== s.code)
+  const unreachable = STATIONS.filter((s) => getStation(s.code, s.operator)?.code !== s.code)
   assert.deepEqual(unreachable.map((s) => s.code), [])
 })
 
@@ -208,7 +220,9 @@ test('every interchange code resolves to a real station', () => {
 test('every line code referenced as an interchange is a real line', () => {
   const bad = new Set<string>()
   for (const station of STATIONS) {
-    for (const other of station.interchange) if (!getLine(other)) bad.add(other)
+    for (const other of station.interchange) {
+      if (!getInterchangeLine(other, station.operator)) bad.add(other)
+    }
   }
   assert.deepEqual([...bad], [])
 })
@@ -220,17 +234,17 @@ test('every line has a trunk route whose endpoints are real stations', () => {
   // route records to have endpoints, and that absence is the documented state
   // rather than a fault. See OFF_PLATFORM in lib/lines.ts.
   for (const line of TDX_LINES) {
-    const trunk = getTrunkRoute(line.code)
+    const trunk = getTrunkRoute(line.code, line.operator)
     assert.ok(trunk, `${line.code} has no route record`)
-    assert.ok(getStation(trunk!.from), `${line.code} trunk starts at unknown ${trunk!.from}`)
-    assert.ok(getStation(trunk!.to), `${line.code} trunk ends at unknown ${trunk!.to}`)
+    assert.ok(getStation(trunk!.from, line.operator), `${line.code} trunk starts at unknown ${trunk!.from}`)
+    assert.ok(getStation(trunk!.to, line.operator), `${line.code} trunk ends at unknown ${trunk!.to}`)
   }
 })
 
 test('the trunk route is the longest route on its line', () => {
   for (const line of TDX_LINES) {
-    const trunk = getTrunkRoute(line.code)!
-    for (const route of getRoutes(line.code)) {
+    const trunk = getTrunkRoute(line.code, line.operator)!
+    for (const route of getRoutes(line.code, line.operator)) {
       assert.ok(
         route.stations.length <= trunk.stations.length,
         `${route.routeId} calls at more stations than the trunk ${trunk.routeId}`,
@@ -245,7 +259,7 @@ test('official route lengths are published and plausible', () => {
   // which is exactly how the RouteLength field misled the site in the first
   // place.
   for (const line of TDX_LINES) {
-    const trunk = getTrunkRoute(line.code)!
+    const trunk = getTrunkRoute(line.code, line.operator)!
     assert.ok(
       trunk.lengthKm !== null,
       `${line.code} trunk ${trunk.routeId} has no CumulativeDistance — the official route length is missing`,
@@ -266,7 +280,7 @@ test('the Wenhu Line route length is the official 25.17 km', () => {
 test('branch detection excludes short workings', () => {
   // G-2 (Taipower Building – Songshan) runs over trunk track and is not a
   // branch; G-3 (Qizhang – Xiaobitan) is. Counting routes would call both.
-  const branches = getBranchRoutes('G').map((r) => r.routeId)
+  const branches = getBranchRoutes('G', 'TRTC').map((r) => r.routeId)
   assert.deepEqual(branches, ['G-3'])
 
   assert.deepEqual(getBranchRoutes('Y').map((r) => r.routeId), [], 'the Circular Line has no branch')
@@ -277,9 +291,9 @@ test('trunk termini are not branch stations', () => {
   // The regression that put G03A Xiaobitan on the network page as a terminus of
   // the Songshan–Xindian Line.
   for (const line of TDX_LINES) {
-    const trunk = getTrunkRoute(line.code)!
+    const trunk = getTrunkRoute(line.code, line.operator)!
     const branchOnly = new Set(
-      getBranchRoutes(line.code)
+      getBranchRoutes(line.code, line.operator)
         .flatMap((r) => r.stations)
         .filter((s) => !trunk.stations.includes(s)),
     )
@@ -299,7 +313,7 @@ test('known termini are what the operator publishes', () => {
     A: ['A1', 'A22'],
   }
   for (const [code, [from, to]] of Object.entries(expected)) {
-    const trunk = getTrunkRoute(code)!
+    const trunk = getTrunkRoute(code, code === 'G' ? 'TRTC' : undefined)!
     assert.deepEqual([trunk.from, trunk.to], [from, to], `${code} termini`)
   }
 })

@@ -27,6 +27,7 @@ export default function FactsPanel({
   references = [],
   href,
   badges = true,
+  operator,
 }: {
   facts: Fact[]
   line: Line
@@ -42,6 +43,7 @@ export default function FactsPanel({
    * instead. See the note on `badges` in components/RichText.
    */
   badges?: boolean
+  operator?: string
 }) {
   if (facts.length === 0) return null
 
@@ -81,7 +83,7 @@ export default function FactsPanel({
         {facts.map((fact) => (
           <div className="platform-fact" key={fact.label}>
             <dt>
-              <RichText>{fact.label}</RichText>
+              <RichText operator={operator}>{fact.label}</RichText>
             </dt>
             {/*
               `link` on the value, not the label. A label is a field name —
@@ -91,7 +93,7 @@ export default function FactsPanel({
             */}
             <dd>
               {fact.value ? (
-                <RichText link label={fact.label} badges={badges}>
+                <RichText link label={fact.label} badges={badges} operator={operator}>
                   {fact.value}
                 </RichText>
               ) : (

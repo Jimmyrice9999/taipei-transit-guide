@@ -67,7 +67,7 @@ test('Wenhu and Bannan chain into a single continuous run', () => {
 
 test('every line publishes geometry', () => {
   for (const line of TDX_LINES) {
-    assert.ok(getLineGeometry(line.code), `${line.code} has no geometry`)
+    assert.ok(getLineGeometry(line.code, line.operator), `${line.code} has no geometry`)
   }
 })
 
@@ -80,7 +80,7 @@ test('a line the platform does not carry has no geometry, and says so', () => {
    * map and three pages of prose all need revisiting.
    */
   for (const line of LINES.filter((l) => !l.onTdx)) {
-    assert.equal(getLineGeometry(line.code), null, `${line.code} unexpectedly has geometry`)
+    assert.equal(getLineGeometry(line.code, line.operator), null, `${line.code} unexpectedly has geometry`)
     assert.equal(line.colourSource.kind, 'operator')
     assert.ok(line.colourSource.url, `${line.code} has no source URL for its colour`)
   }
@@ -98,9 +98,11 @@ test('simplification keeps the endpoints', () => {
 
 test('simplification never moves a station more than its tolerance', () => {
   for (const line of LINES) {
-    const geometry = getLineGeometry(line.code)
+    const geometry = getLineGeometry(line.code, line.operator)
     if (!geometry) continue
-    const stations = STATIONS.filter((s) => s.line === line.code && s.lat !== null)
+    const stations = STATIONS.filter(
+      (s) => s.line === line.code && s.operator === line.operator && s.lat !== null,
+    )
     for (const station of stations) {
       const raw = distanceToPaths([station.lon!, station.lat!], geometry.chained)
       const drawn = distanceToPaths([station.lon!, station.lat!], geometry.paths)
@@ -125,9 +127,11 @@ test('no station sits more than 200 m from its line', () => {
    */
   const flagged: string[] = []
   for (const line of LINES) {
-    const geometry = getLineGeometry(line.code)
+    const geometry = getLineGeometry(line.code, line.operator)
     if (!geometry) continue
-    for (const station of STATIONS.filter((s) => s.line === line.code && s.lat !== null)) {
+    for (const station of STATIONS.filter(
+      (s) => s.line === line.code && s.operator === line.operator && s.lat !== null,
+    )) {
       const d = distanceToPaths([station.lon!, station.lat!], geometry.chained)
       if (d > 200) flagged.push(`${station.code} ${station.name} — ${d.toFixed(0)} m`)
     }
@@ -205,7 +209,7 @@ test('the Wenhu Line measures 25.0 km, not 26.4', () => {
 
 test('every line summary reports the number of runs honestly', () => {
   for (const summary of getLineSummaries()) {
-    const geometry = getLineGeometry(summary.line.code)
+    const geometry = getLineGeometry(summary.line.code, summary.line.operator)
     assert.equal(summary.runs, geometry ? geometry.paths.length : 0)
   }
 })
@@ -222,7 +226,7 @@ test('branch flags come from routes, not from geometry breaks', () => {
 
 test('trunk termini are the first and last station drawn on the map', () => {
   for (const summary of getLineSummaries().filter((s) => s.line.onTdx)) {
-    const trunk = getTrunkRoute(summary.line.code)!
+    const trunk = getTrunkRoute(summary.line.code, summary.line.operator)!
     assert.equal(summary.from?.code, trunk.from)
     assert.equal(summary.to?.code, trunk.to)
   }

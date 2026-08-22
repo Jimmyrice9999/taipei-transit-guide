@@ -50,6 +50,7 @@ export default function PhotoCard({
   summary,
   meta,
   line: lineCode,
+  operator,
 }: {
   href: string
   image?: SiteImage | null
@@ -60,8 +61,9 @@ export default function PhotoCard({
   /** The "lines it serves" row — real links, rendered outside the card's own link. */
   meta?: React.ReactNode
   line?: string
+  operator?: string
 }) {
-  const line = getLine(lineCode)
+  const line = getLine(lineCode, operator)
 
   return (
     <li

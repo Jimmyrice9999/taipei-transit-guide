@@ -1,0 +1,19 @@
+[
+  {
+    "IsBranch": false,
+    "LineColor": "#84BD00",
+    "LineID": "G",
+    "LineName": {
+      "En": "Wuriwenxin  Beitun Line",
+      "Zh_tw": "烏日文心北屯線"
+    },
+    "LineNo": "1",
+    "LineSectionName": {
+      "En": "Beitun – HSR Taichung Station",
+      "Zh_tw": "北屯總站 – 高鐵臺中站"
+    },
+    "SrcUpdateTime": "2025-11-11T00:00:00+08:00",
+    "UpdateTime": "2026-08-22T20:39:10+08:00",
+    "VersionID": 942
+  }
+]

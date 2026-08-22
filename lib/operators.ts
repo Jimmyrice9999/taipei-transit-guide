@@ -27,6 +27,7 @@ const CODE_TO_SLUG: Record<string, string> = {
   NTDLRT: 'ntmc',
   NTALRT: 'ntmc',
   TYMC: 'tymc',
+  TMRT: 'tmrt',
 }
 
 /** The short name to print when the data gives only a code. */
@@ -36,6 +37,7 @@ const CODE_TO_NAME: Record<string, string> = {
   NTDLRT: 'New Taipei Metro Corporation',
   NTALRT: 'New Taipei Metro Corporation',
   TYMC: 'Taoyuan Metro Corporation',
+  TMRT: 'Taichung Metro Corporation',
 }
 
 /**

@@ -335,10 +335,10 @@ export default function NetworkPage() {
                           accessible name spells that out in words — see
                           components/LineIcon.
                         */}
-                        <LineIcon code={line.code} size={26} />
+                        <LineIcon code={line.code} operator={line.operator} size={26} />
                         <LineBadge code={line.code} operator={line.operator} />
                         <span className="network-name">
-                          {lineHref(line.code) ? (
+                          {lineHref(line.code, line.operator) ? (
                           <Link href={lineHref(line.code, line.operator)!}>{line.name}</Link>
                           ) : (
                             line.name

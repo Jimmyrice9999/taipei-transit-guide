@@ -3,6 +3,7 @@ title: Songshan–Xindian Line
 summary: The green line — three separate DORTS construction projects run as one, underground end to end, with the network's oddest branch climbing into the middle of a depot.
 order: 4
 line: G
+operator: TRTC
 aliases:
   - 松山新店線
   - Green Line

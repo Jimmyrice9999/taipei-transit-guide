@@ -30,12 +30,14 @@ import ntmcShapes from '../data/tdx/NTMC/shape.json' with { type: 'json' }
 import tymcShapes from '../data/tdx/TYMC/shape.json' with { type: 'json' }
 import ntdlrtShapes from '../data/tdx/NTDLRT/shape.json' with { type: 'json' }
 import ntalrtShapes from '../data/tdx/NTALRT/shape.json' with { type: 'json' }
+import tmrtShapes from '../data/tdx/TMRT/shape.json' with { type: 'json' }
 
 import trtcRoutes from '../data/tdx/TRTC/route.json' with { type: 'json' }
 import ntmcRoutes from '../data/tdx/NTMC/route.json' with { type: 'json' }
 import tymcRoutes from '../data/tdx/TYMC/route.json' with { type: 'json' }
 import ntdlrtRoutes from '../data/tdx/NTDLRT/route.json' with { type: 'json' }
 import ntalrtRoutes from '../data/tdx/NTALRT/route.json' with { type: 'json' }
+import tmrtRoutes from '../data/tdx/TMRT/route.json' with { type: 'json' }
 
 import trtcTransfers from '../data/tdx/TRTC/line-transfer.json' with { type: 'json' }
 import ntmcTransfers from '../data/tdx/NTMC/line-transfer.json' with { type: 'json' }
@@ -46,6 +48,7 @@ import ntmcStationOfRoute from '../data/tdx/NTMC/station-of-route.json' with { t
 import tymcStationOfRoute from '../data/tdx/TYMC/station-of-route.json' with { type: 'json' }
 import ntdlrtStationOfRoute from '../data/tdx/NTDLRT/station-of-route.json' with { type: 'json' }
 import ntalrtStationOfRoute from '../data/tdx/NTALRT/station-of-route.json' with { type: 'json' }
+import tmrtStationOfRoute from '../data/tdx/TMRT/station-of-route.json' with { type: 'json' }
 
 /*
  * `line-transfer` is absent for the two light rail operators, and that is the
@@ -65,6 +68,7 @@ const OPERATOR_DATA = {
     { operator: 'TYMC', records: tymcShapes },
     { operator: 'NTDLRT', records: ntdlrtShapes },
     { operator: 'NTALRT', records: ntalrtShapes },
+    { operator: 'TMRT', records: tmrtShapes },
   ],
   routes: [
     { operator: 'TRTC', records: trtcRoutes },
@@ -72,6 +76,7 @@ const OPERATOR_DATA = {
     { operator: 'TYMC', records: tymcRoutes },
     { operator: 'NTDLRT', records: ntdlrtRoutes },
     { operator: 'NTALRT', records: ntalrtRoutes },
+    { operator: 'TMRT', records: tmrtRoutes },
   ],
   transfers: [
     { operator: 'TRTC', records: trtcTransfers },
@@ -84,6 +89,7 @@ const OPERATOR_DATA = {
     { operator: 'TYMC', records: tymcStationOfRoute },
     { operator: 'NTDLRT', records: ntdlrtStationOfRoute },
     { operator: 'NTALRT', records: ntalrtStationOfRoute },
+    { operator: 'TMRT', records: tmrtStationOfRoute },
   ],
 } as const
 

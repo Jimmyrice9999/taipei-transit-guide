@@ -65,7 +65,10 @@ const data = JSON.parse(
         // in the registry and has no stations in MOTC's extract. Pages that
         // count "lines" mean one or the other, and the checks below have to
         // know which.
-        linesWithStations: new Set(STATIONS.map(s => s.line)).size,
+        // A bare code is not a line identity: TMRT and TRTC both publish G.
+        // Count operator/code pairs so this check follows the namespace used
+        // by the application and the station registry.
+        linesWithStations: new Set(STATIONS.map(s => s.operator + ':' + s.line)).size,
         summaries, br,
         interchanges: getInterchanges().map(i => ({ name: i.name, codes: i.codes })),
         brRoutes: getRoutes('BR').map(r => ({ id: r.routeId, lengthKm: r.lengthKm, from: r.from, to: r.to })),

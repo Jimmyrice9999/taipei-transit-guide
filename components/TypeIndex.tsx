@@ -173,8 +173,9 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               title={page.title}
               summary={page.summary}
               line={page.line}
+              operator={page.operator || undefined}
               image={page.hero?.image ? getImage(page.hero.image) : null}
-              meta={page.line && <LineBadge code={page.line} />}
+              meta={page.line && <LineBadge code={page.line} operator={page.operator || undefined} />}
             />
           ))}
               </ul>
@@ -195,6 +196,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               title={page.title}
               summary={page.summary}
               line={page.line}
+              operator={page.operator || undefined}
               /*
                * The icon is the line's own train, so it belongs on rows whose
                * subject IS a line. A fleet or a depot row gets the badge and

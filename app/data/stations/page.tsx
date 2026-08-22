@@ -8,7 +8,7 @@ import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import StationBadge from '@/components/StationBadge'
-import { NEUTRAL_LINE, LINES, getLine } from '@/lib/lines'
+import { NEUTRAL_LINE, LINES, getInterchangeLine, getLine } from '@/lib/lines'
 import { getOperator } from '@/lib/operators'
 import { PROVENANCE, STATIONS, getStationHref } from '@/lib/stations'
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/data/stations/' },
   title: 'Station records',
   description:
-    'Every Taipei-region metro station — TDX records plus twelve primary-sourced Sanying stations, with gaps marked TBC. The TDX subset is downloadable as JSON.',
+    'Every station record held by the guide for the Taipei region and Taichung Metro — TDX records plus primary-sourced Sanying stations, with gaps marked TBC.',
 }
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
@@ -58,8 +58,10 @@ export default function StationDataPage() {
       (s) => s.line === line.code && s.operator === line.operator,
     ).sort((a, b) => a.sequence - b.sequence),
   })).filter((group) => group.stations.length > 0)
-  const tdxStationCount = STATIONS.filter((station) => station.recordSource === 'tdx').length
-  const researchedStationCount = STATIONS.length - tdxStationCount
+  const taipeiStations = STATIONS.filter((station) => station.operator !== 'TMRT')
+  const taichungStations = STATIONS.filter((station) => station.operator === 'TMRT')
+  const tdxStationCount = taipeiStations.filter((station) => station.recordSource === 'tdx').length
+  const researchedStationCount = taipeiStations.length - tdxStationCount
 
   /*
    * Counted, not typed. Two strings on this page said "seven lines" and one of
@@ -86,17 +88,17 @@ export default function StationDataPage() {
       <JsonLd
         data={[
           datasetSchema({
-            name: 'Taipei Metro station records',
+            name: 'Taiwan rail station records',
             description:
-              `Every station on the Taipei Metro network — ${STATIONS.length} records across ` +
+              `Every station held in the guide — ${STATIONS.length} records across ` +
               `${byLine.length} lines and ${operatorCount} operators, with station codes, English and ` +
               'Traditional Chinese names, coordinates where published, districts and interchanges. ' +
-              `${tdxStationCount} are derived from Taiwan MOTC's TDX open data platform; ` +
+              `${tdxStationCount + taichungStations.length} are derived from Taiwan MOTC's TDX open data platform; ` +
               `${researchedStationCount} Sanying records are transcribed from operator primary sources.`,
             path: '/data/stations/',
             downloadPath: '/data/taipei-metro-stations.json',
             keywords: [
-              'Taipei Metro', 'MRT', 'rapid transit', 'station codes', 'Taiwan',
+              'Taipei Metro', 'Taichung Metro', 'MRT', 'rapid transit', 'station codes', 'Taiwan',
               'open data', 'TDX', '台北捷運',
             ],
           }),
@@ -172,11 +174,11 @@ export default function StationDataPage() {
                     {stations.map((station) => (
                       <tr key={station.code}>
                         <th scope="row">
-                          <StationBadge code={station.code} />
+                          <StationBadge code={station.code} operator={station.operator} />
                         </th>
                         <td>
-                          {getStationHref(station.code) ? (
-                            <Link href={getStationHref(station.code)!}>{station.name}</Link>
+                          {getStationHref(station.code, station.operator) ? (
+                            <Link href={getStationHref(station.code, station.operator)!}>{station.name}</Link>
                           ) : (
                             station.name
                           )}
@@ -191,6 +193,12 @@ export default function StationDataPage() {
                                 <LineBadge
                                   className="badge-mini"
                                   code={station.research.interchange.lineCode}
+                                  operator={
+                                    getInterchangeLine(
+                                      station.research.interchange.lineCode,
+                                      station.operator,
+                                    )?.operator ?? station.operator
+                                  }
                                   title={station.research.interchange.label}
                                 />
                               )}
@@ -202,12 +210,13 @@ export default function StationDataPage() {
                                   interchanging station's own code on the other
                                   line is not asserted, only the line. */}
                               {station.interchange.map((code) => {
-                                const other = getLine(code)
+                                const other = getInterchangeLine(code, station.operator)
                                 if (!other) return null
                                 return (
                                   <LineBadge
                                     className="badge-mini"
                                     code={code}
+                                    operator={other.operator}
                                     key={code}
                                     title={`Interchange with the ${other.name} Line`}
                                   />
@@ -241,11 +250,17 @@ export default function StationDataPage() {
               </span>
             </p>
             <p className="download-note">
-              This download contains only the {tdxStationCount} TDX-backed records. The{' '}
+              This Taipei-region download contains only the {tdxStationCount} TDX-backed records. The{' '}
               {researchedStationCount} primary-sourced Sanying records appear on this page
               and their station pages but are kept out of a file distributed under the TDX
               licence. Structure — elevated or underground — is deliberately excluded from
               the TDX export because the platform does not publish it.
+            </p>
+            <p className="download-links">
+              <a href={`${BASE_PATH}/data/taichung-metro-stations.json`} download>
+                ↓ taichung-metro-stations.json
+              </a>
+              <span className="download-meta">{taichungStations.length} TMRT stations · JSON</span>
             </p>
             <p className="download-note">
               Taiwan government open data, published by MOTC under the{' '}

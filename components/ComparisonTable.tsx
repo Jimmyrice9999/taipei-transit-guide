@@ -52,7 +52,7 @@ export default function ComparisonTable({ pages }: { pages: PageMeta[] }) {
                     <span className="compare-meta">
                       {/* Outside the column's own link, so this one can link
                           to the line rather than repeat the page above it. */}
-                      {line.code && <LineBadge code={line.code} />}
+                      {line.code && <LineBadge code={line.code} operator={line.operator} />}
                       {page.spine && <span className="compare-range">{page.spine}</span>}
                     </span>
                   </th>

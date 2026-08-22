@@ -46,6 +46,7 @@ export default function CardRow({
   title,
   summary,
   line: lineCode,
+  operator,
   /** True on an index OF lines, where the row's subject is the line itself. */
   isLine = false,
   /**
@@ -67,11 +68,12 @@ export default function CardRow({
   title: React.ReactNode
   summary?: string
   line?: string
+  operator?: string
   isLine?: boolean
   badges?: boolean
   search?: string
 }) {
-  const line = getLine(lineCode)
+  const line = getLine(lineCode, operator)
 
   return (
     <li
@@ -90,7 +92,7 @@ export default function CardRow({
           makes StationBadge take `linked={false}` inside the adjacent-station
           cards.
         */}
-        {isLine && line && <LineIcon code={line.code} size={30} className="card-icon" />}
+        {isLine && line && <LineIcon code={line.code} operator={line.operator} size={30} className="card-icon" />}
         <span className="card-body">
           <span className="card-title">
             {typeof title === 'string' ? <RichText badges={badges}>{title}</RichText> : title}

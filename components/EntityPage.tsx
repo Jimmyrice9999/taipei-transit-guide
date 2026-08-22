@@ -207,11 +207,11 @@ export default async function EntityPage({ section, system = '', type, slug }: E
 
           <header className="article-head">
             <h1 className="page-title article-title">
-              <RichText>{page.title}</RichText>
+              <RichText operator={page.operator || undefined}>{page.title}</RichText>
             </h1>
             {page.summary && (
               <p className="article-standfirst">
-                <RichText>{page.summary}</RichText>
+                <RichText operator={page.operator || undefined}>{page.summary}</RichText>
               </p>
             )}
           </header>
@@ -224,6 +224,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             title={page.title}
             references={page.references}
             href={page.href}
+            operator={page.operator || undefined}
           />
 
           <div
@@ -284,7 +285,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               {[...marked].map((code, i) => (
                 <span key={code}>
                   {i > 0 && ', '}
-                  <StationBadge code={code} />
+                  <StationBadge code={code} operator={page.operator || undefined} />
                 </span>
               ))}
             </>
@@ -357,7 +358,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             colour: accent.map,
             isTerminus: i === 0 || i === all.length - 1,
             isInterchange: s.interchange.length > 0,
-            href: getStationHref(s.code) ?? undefined,
+            href: getStationHref(s.code, s.operator) ?? undefined,
           }))}
         /*
          * The figure quoted here used to be geometry.lengthKm — the whole
@@ -441,11 +442,11 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             reading "Wenhu Line". The spine and the panel badge both carry line
             identity now, so it was the third statement of one fact. */}
         <h1 className="page-title">
-          <RichText>{page.title}</RichText>
+          <RichText operator={page.operator || undefined}>{page.title}</RichText>
         </h1>
         {page.summary && (
           <p className="page-summary">
-            <RichText>{page.summary}</RichText>
+            <RichText operator={page.operator || undefined}>{page.summary}</RichText>
           </p>
         )}
 
@@ -488,6 +489,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               title={page.title}
               references={page.references}
               href={page.href}
+              operator={page.operator || undefined}
             />
 
             {page.hero && !heroImage && (
@@ -549,7 +551,11 @@ export default async function EntityPage({ section, system = '', type, slug }: E
 
             {map}
 
-            <SpecTable specs={page.specs} references={page.references} />
+            <SpecTable
+              specs={page.specs}
+              references={page.references}
+              operator={page.operator || undefined}
+            />
 
             {/* Last on the page, after the specs, because a reference list is
                 what you check a figure against — it should sit below every

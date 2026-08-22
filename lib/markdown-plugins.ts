@@ -84,9 +84,11 @@ export function rehypeRichText({
   file,
   onWarning,
   linkStations = false,
+  operator,
 }: {
   file: string
   onWarning: (warning: BadgeWarning) => void
+  operator?: string
   /**
    * Render each station badge as a link to its station page. On by default
    * nowhere: line pages already link every station from the strip map, and a
@@ -126,8 +128,8 @@ export function rehypeRichText({
           continue
         }
 
-        const line = getLine(token.line)
-        const station = getStation(token.value)
+        const line = getLine(token.line, operator)
+        const station = getStation(token.value, operator)
 
         if (!line || !station) {
           onWarning({
@@ -139,7 +141,7 @@ export function rehypeRichText({
           continue
         }
 
-        const href = linkStations && !inAnchor ? getStationHref(token.value) : null
+        const href = linkStations && !inAnchor ? getStationHref(token.value, operator) : null
         out.push({
           type: 'element',
           tagName: href ? 'a' : 'span',
