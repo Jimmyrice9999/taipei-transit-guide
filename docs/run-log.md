@@ -14363,3 +14363,42 @@ contractor or depot for any one district-office record.
 `npm run cite`, `npm run research`, `npm run claims`, `npm run search`,
 `npm run nav`, `npm run build` and all 212 unit tests passed. Build output is
 1,875 pages; audits were restored after the run; `probes/` remains untracked.
+
+## Run 85 — bus models and depots (23 August 2026)
+
+### Sourced
+
+Added model records for Model T electric buses, Yutong 6128HG and King Long,
+using fetched New Taipei Government, Taiwan Transportation Safety Board and
+Dàyou Bus primaries. Added depot/site records for Danan Bus’s Guandu tender,
+San Chung Bus’s published operating and maintenance sites, and Taipei Bus’s
+published station network. The pages distinguish published facts from TBC
+chassis, body, capacity, propulsion, opening-date and route-allocation fields.
+
+### TBC
+
+The fetched material does not establish a complete manufacturer/chassis/body
+matrix, systemwide capacity or propulsion roster, subsidy programme totals,
+depot opening dates, site capacities for San Chung or Taipei Bus, or verified
+post-tender Guandu completion and route allocation.
+
+### Contradicted the corpus
+
+No prior sourced claim was contradicted. These pages replace index-level gaps
+with bounded primary evidence and retain TBC where the sources stop.
+
+### Conflicts found
+
+The TDX/operator data describes operators and routes, while the model and site
+primaries publish only partial fleet or location views; they are not treated as
+complete fleet or depot inventories. Danan’s tender specifies 74 parking spaces
+and battery assumptions but does not prove completion or route assignment.
+
+### Verification
+
+The final rerun passed build, markers, links/orphans, a11y with no warnings,
+facts, citations, claims, all 212 unit tests and the research/geometry/CVD
+checks. Build output is 1,875 pages; cite resolves 4,615 citations, claims are
+6,568 sourced, 4,280 TBC and 32 asserted, and research is clean at 108 files
+with 452 checked failures. The generated audits were restored; `probes/` remains
+untracked.

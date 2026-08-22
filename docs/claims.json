@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 6526,
-    "tbc": 4260,
+    "sourced": 6568,
+    "tbc": 4280,
     "asserted": 32,
     "meta": 45
   },
@@ -49,17 +49,65 @@
       "meta": 0
     },
     {
+      "file": "content/bus/depots/guandu-danan.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/depots/sanchung-operating-sites.md",
+      "sources": 1,
+      "sourced": 7,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/depots/taipei-bus-stations.md",
+      "sources": 2,
+      "sourced": 3,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/depots/_index.md",
       "sources": 1,
       "sourced": 1,
-      "tbc": 0,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/models/king-long.md",
+      "sources": 1,
+      "sourced": 5,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/models/model-t-electric.md",
+      "sources": 1,
+      "sourced": 13,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/models/yutong-6128hg.md",
+      "sources": 1,
+      "sourced": 6,
+      "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/models/_index.md",
-      "sources": 1,
-      "sourced": 1,
+      "sources": 4,
+      "sourced": 2,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
