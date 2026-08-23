@@ -15446,3 +15446,75 @@ launch produced four keyboard-open failures while touch and layout passed; an
 immediate unchanged rerun passed all 19 checks, consistent with the previously
 recorded startup race. The independent full suite passed 217 unit tests and all
 17 fact cross-checks.
+
+## Run 104 — Part 3, Tamsui–Xinyi Line technical rebuild (23 August 2026)
+
+### Audit finding and changed depth
+
+The line already cleared 300 words, but its 1,399-word body still rested on six
+primary and two secondary sources and did not use the DORTS technical
+publication family discovered later. Six primary pages were reopened in full;
+the research file's imported external appendix was treated only as a lead.
+The content body now has canonical Overview, Route and alignment, Construction
+history, Engineering, Stations and architecture, Operations, extension and
+conflict sections and measures 2,075 words by the same body-only whitespace
+count used for this batch.
+
+The new engineering account covers CK570H's five-tunnel interface and deep
+groundwater control, the Daan Park value-engineering move, the way Beitou's
+four-track operating layout drove its large-span structure, the deliberately
+varied architecture of the inherited railway corridor, and CR580C's contract,
+ground and construction constraints. Primary content remains ordinary visible
+Markdown; nothing was moved into a disclosure.
+
+### Sources
+
+- DORTS, *Station Architectural Design*:
+  <https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=D040F0979870BED5>
+- DORTS, *Architectural Form Design for Elevated MRT Stations*, p. 68:
+  <https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page68.html>
+- DORTS, *From Concept Creation to Innovation: Daan Park Station*, p. 71:
+  <https://ebook.dorts.gov.taipei/JRTST/ebook/no34/files/basic-html/page71.html>
+- DORTS, 2005 CK570H tunnel-interface paper, p. 96:
+  <https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page96.html>
+- DORTS, 2014 CK570H construction paper, p. 82:
+  <https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html>
+- DORTS, CR580C contract page:
+  <https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA>
+
+All are primary. Their original-language supporting sentences, publisher,
+confidence and access date are now in the established section of the research
+file rather than left only in its imported lead appendix.
+
+### TBC, contradictions and conflicts
+
+The east extension's project cost and opening date remain TBC: neither opened
+DORTS project page supplies them. The paper's NT$160 million Daan Park saving
+is published as an estimate, not converted into a final-account fact. No old
+corpus assertion was contradicted by the newly opened pages.
+
+The primary-source conflict is Dongmen. The 2005 DORTS paper gives about
+217 m × 24.7 m × 31.2 m and Xinyi shield drives of 1,240.5 m / 1,247.0 m
+(2,487.5 m combined); the 2014 DORTS paper gives about 216 m × 25 m × 32 m and
+1,219.3 m / 1,225.8 m (2,445.1 m combined). Both sets are published. Whether
+the difference is design stage, contract limits, as-built measurement or
+rounding remains TBC.
+
+### Gates
+
+The targeted citation gate resolves 4,960 citations (4,769 primary / 191
+secondary), including 14 on this page (12 primary / 2 secondary). Research is
+clean at 124 files / 527 dated checked-and-failed entries, the claims ratchet
+remains at zero asserted, and Markdown whitespace is clean.
+
+The first full build correctly rejected four Han glyphs introduced by the new
+original-language excerpts (`乎壤弱硬`) because they were absent from the
+committed content font subset. `npm run fonts` regenerated that subset; the
+unchanged rebuild then checked all 1,954 pages with no missing glyph. This was
+a rendering failure, not ignored build noise, and the existing permanent font
+gate detected it without a checker change.
+
+The final verifier passed 217 tests across 1,954 pages and 218,178 internal
+links; claims are 11,395 sourced / 4,314 TBC / zero asserted. Navigation passed
+all 19 checks. The independent full suite passed 217 unit tests and all 17 fact
+cross-checks.

@@ -218,6 +218,134 @@ than a share-out of the aggregate. The same index offers
 R02–R28 and R22A; that is a real route to a figure and it was not walked in this
 run, for budget.
 
+### Technical-publication expansion, independently re-fetched 2026-08-23
+
+#### Northern and Xinyi architectural languages
+
+**Established.** DORTS describes the former Beitou–Tamsui railway land as
+giving the Tamsui Line unusually broad architectural freedom. It identifies
+Jiantan's cable-suspended Chinese-form roof, Beitou's glass and space-truss
+large span, Tamsui's modern-material reference to Fort San Domingo, and local
+residential or Chinese structural imagery elsewhere. The same page calls the
+Xinyi Line's street-level theme 「對話」 and says architecture, landscape,
+interiors, public art, street furniture, lighting and colour were integrated
+with the surrounding city.
+
+- **Source:** *Station Architectural Design* / `車站建築設計`
+- **Publisher:** Taipei City Government Department of Rapid Transit Systems
+  (`臺北市政府捷運工程局`)
+- **URL:** <https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=D040F0979870BED5>
+- **Kind:** PRIMARY
+- **Confidence:** High — the builder's current line-level design account,
+  opened and read in full on 2026-08-23.
+- **Original:** `淡水線的基地原為北淡線舊鐵路用地，其基地的可運用度最大，因此建築設計形式幾乎不受任何限制`
+- **Original:** `信義線街面建築造型以「對話」為主題`
+
+#### Beitou's operating layout drove its structure
+
+**Established.** The DORTS engineering monograph records a central island
+platform, side platforms and four tracks because Beitou handles the main line,
+the Xinbeitou branch and short turns. The station is about twice ordinary
+station width, so the roof uses a space-truss system. Piles, pile caps and
+ground beams form the foundations; the superstructure is cast-in-place
+reinforced concrete, with formed metal roof panels and glazed curtain walls.
+
+- **Source:** *Taipei MRT Engineering Series, Revised Edition No. 34:
+  Architectural Form Design for Elevated MRT Stations* /
+  `捷運工程叢書 精進版－34 捷運高架車站建築造型設計`
+- **Publisher:** Taipei City Government Department of Rapid Transit Systems
+  (`臺北市政府捷運工程局`)
+- **URL:** <https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page68.html>
+- **Kind:** PRIMARY
+- **Confidence:** High — DORTS's engineering monograph, full basic-HTML page
+  opened on 2026-08-23.
+- **Original:** `車站中央設有島式月臺及兩側為側式月臺，共計四軌。`
+- **Original:** `因月臺有轉乘功能，站體寬度為一般車站之兩倍，故解決大跨距問題，以空間構架為屋頂之結構方式。`
+
+#### Daan Park value engineering
+
+**Established.** The alternative design moved engineering station R09, now
+passenger station R06, 9 m south and raised it 1.5 m. The paper says this
+increased northern building clearance from 9 m to 18 m, avoided most diversion
+of a drainage box, reduced utility relocation and road occupation, increased
+tunnel separation, and removed an intermediate sump. It estimates about
+NT$160 million in construction savings; the figure is an estimate, not a final
+account. Moving the box reduced its separation from Daan Forest Park from about
+14 m to about 5 m, enabling the sunken-garden design.
+
+- **Source:** *From Concept Creation to Innovation: Planning and Design of
+  Taipei MRT Daan Park Station (R09)* /
+  `從創意到創新－以臺北捷運大安森林公園站（R09）站之規劃設計為例探討`
+- **Publisher:** *Rapid Transit Systems & Technology*, Taipei DORTS
+  (`臺北市政府捷運工程局《捷運技術》`)
+- **URL:** <https://ebook.dorts.gov.taipei/JRTST/ebook/no34/files/basic-html/page71.html>
+- **Kind:** PRIMARY
+- **Confidence:** High for the design and its stated rationale; Medium for
+  NT$160 million as an achieved saving because the authors call it an estimate.
+- **Original:** `R09車站南移9.0m，站體提高1.5m。`
+- **Original:** `本項創新替代方案估計約可節省工程費新臺幣1億6仟萬元。`
+
+#### Dongmen groundwater engineering and conflicting dimensions
+
+**Established.** The later CK570H construction paper describes the Dongmen box
+with four metro shield tunnels and one common-utility shield tunnel. To control
+uplift without prolonged dewatering, 1.5 m-thick diaphragm walls were driven
+72 m down through 28 m of gravel to an impermeable stratum, in 172 panels.
+
+- **Source:** *Construction of Taipei MRT Xinyi Line Contract CK570H* /
+  `臺北捷運信義線CK570H區段標施工`
+- **Publisher:** *Rapid Transit Systems & Technology*, Taipei DORTS
+  (`臺北市政府捷運工程局《捷運技術》`)
+- **URL:** <https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html>
+- **Kind:** PRIMARY
+- **Confidence:** High — full DORTS basic-HTML page opened on 2026-08-23.
+- **Original:** `故改採72m深連續壁貫穿28m厚礫石層至不透水層`
+
+**Conflict.** The 2005 and 2014 DORTS papers publish different dimensions and
+shield lengths for the same CK570H works:
+
+| Measure | 2005 paper | 2014 paper |
+|---|---:|---:|
+| Station length | 約217 m | 約216 m |
+| Width | 24.7 m | 25 m |
+| Excavation depth | 約31.2 m | 約32 m |
+| Xinyi up-line shield | 1,240.5 m | 1,219.3 m |
+| Xinyi down-line shield | 1,247.0 m | 1,225.8 m |
+| Xinyi combined | 約2,487.5 m | 約2,445.1 m |
+
+- **Earlier source:** *Construction Problems Where Multiple Tunnels Cross and
+  Overlap: Xinzhuang Line CK570H* /
+  `多條隧道交叉重疊施工問題探討—以新莊線 CK570H 為例探討`
+- **URL:** <https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page96.html>
+- **Later source:** *Construction of Taipei MRT Xinyi Line Contract CK570H* /
+  `臺北捷運信義線CK570H區段標施工`
+- **URL:** <https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html>
+- **Publisher/kind:** both Taipei DORTS technical journal, PRIMARY
+- **Confidence:** High that both sets are printed; TBC for why they differ.
+- **Original A:** `車站長約217公尺、寬度24.7公尺，開挖深度約31.2公尺`
+- **Original B:** `車站長約216m、寬度25m，開挖深度約32m`
+
+#### CR580C contract and geology
+
+**Established.** The live contract page records a 17 October 2016 start, Moh
+and Associates as designer, DORTS Second District Project Office supervision,
+and a BES Engineering/Obayashi Taiwan joint venture. The retained station is a
+three-level underground island-platform box about 213.9 m by 16.55 m, with a
+119.4 m crossover. DORTS planned two shield machines for hard rock, weak clay
+and mixed ground. It says the deep rock was four times harder than expected and
+night-work suspension reduced construction continuity.
+
+- **Source:** *Xinyi Line East Extension — CR580C Section Contract* /
+  `捷運信義線東延段CR580C區段標工程`
+- **Publisher:** Taipei City Government Department of Rapid Transit Systems
+  (`臺北市政府捷運工程局`)
+- **URL:** <https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA>
+- **Kind:** PRIMARY
+- **Confidence:** High — the live full contract page, updated 11 August 2026
+  and opened in full on 2026-08-23.
+- **Original:** `淺層土壤弱軟，深層岩盤堅硬，硬度超出預期4倍`
+- **Original:** `為降低對民眾生活作息衝擊，夜間需暫停施工，影響作業連貫性。`
+
 ---
 
 ## Conflicts — every value, none resolved

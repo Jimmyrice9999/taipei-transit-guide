@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11416,
+    "sourced": 11395,
     "tbc": 4314,
     "asserted": 0,
     "meta": 52
@@ -9658,8 +9658,8 @@
     },
     {
       "file": "content/rail/metro/lines/tamsui-xinyi-line.md",
-      "sources": 8,
-      "sourced": 48,
+      "sources": 14,
+      "sourced": 27,
       "tbc": 5,
       "asserted": 0,
       "meta": 1

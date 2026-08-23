@@ -6,7 +6,7 @@ line: R
 aliases:
   - 淡水信義線
   - Red Line
-updated: 2026-08-10
+updated: 2026-08-23
 hero:
   image: tamsui-xinyi-line/hero
   alt: The open-air platform at Tamsui Station, its temple-style tiled roof over the tracks, hills across the river beyond.
@@ -125,6 +125,60 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "全長約1.4公里，共設置1座地下車站 plus tail tracks, the station sited 臺北市廣慈博愛園區前福德街道路下方, shield tunnels continuing east under 福德街 and 中坡南路 to 玉成公園, and the Executive Yuan approvals of 民國99年2月12日, 103年9月24日 and 107年1月18日. Also the builder's own reason for dropping the second station: 因信義路六段設置之車站地主反對參與土地開發，未達設條件. Read in full on 10 August 2026 and again with a targeted pass: it gives no construction start date, no contract number, no cost and no opening date."
+  - id: dorts-station-architecture
+    title: Station Architectural Design
+    titleOriginal: 車站建築設計
+    publisher: Taipei City Government, Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: "https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=D040F0979870BED5"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "DORTS's line-level architectural account: 淡水線的基地原為北淡線舊鐵路用地，其基地的可運用度最大，因此建築設計形式幾乎不受任何限制. It identifies the design ideas at Jiantan, Beitou and Tamsui, and describes the Xinyi street architecture under the theme 對話."
+  - id: dorts-elevated-design
+    title: "Taipei MRT Engineering Series, Revised Edition No. 34: Architectural Form Design for Elevated MRT Stations"
+    titleOriginal: 捷運工程叢書 精進版－34 捷運高架車站建築造型設計
+    publisher: Taipei City Government, Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: "https://ebook.dorts.gov.taipei/ebook/no34/files/basic-html/page68.html"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The Beitou case study states 車站中央設有島式月臺及兩側為側式月臺，共計四軌, explains that the station is twice the normal width, and documents the space-truss roof, piles, pile caps, ground beams and cast-in-place reinforced-concrete superstructure."
+  - id: dorts-daan-design
+    title: "From Concept Creation to Innovation: Planning and Design of Taipei MRT Daan Park Station (R09)"
+    titleOriginal: 從創意到創新－以臺北捷運大安森林公園站（R09）站之規劃設計為例探討
+    publisher: Rapid Transit Systems & Technology, Taipei DORTS (臺北市政府捷運工程局《捷運技術》)
+    url: "https://ebook.dorts.gov.taipei/JRTST/ebook/no34/files/basic-html/page71.html"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The value-engineering alternative states R09車站南移9.0m，站體提高1.5m, gives the building-clearance, drainage, tunnel-gradient and road-occupation reasons, and estimates about NT$160 million in works savings."
+  - id: dorts-ck570h-2005
+    title: "Construction Problems Where Multiple Tunnels Cross and Overlap: Xinzhuang Line CK570H"
+    titleOriginal: 多條隧道交叉重疊施工問題探討—以新莊線 CK570H 為例探討
+    publisher: Rapid Transit Systems & Technology, Taipei DORTS (臺北市政府捷運工程局《捷運技術》)
+    url: "https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page96.html"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The earlier paper reports Dongmen at about 217 m by 24.7 m with a 31.2 m excavation, and Xinyi shield drives of 1,240.5 m and 1,247.0 m. These values conflict with the later DORTS paper."
+  - id: dorts-ck570h-2014
+    title: Construction of Taipei MRT Xinyi Line Contract CK570H
+    titleOriginal: 臺北捷運信義線CK570H區段標施工
+    publisher: Rapid Transit Systems & Technology, Taipei DORTS (臺北市政府捷運工程局《捷運技術》)
+    url: "https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page82.html"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The later paper reports Dongmen at about 216 m by 25 m with a 32 m excavation, Xinyi shield drives of 1,219.3 m and 1,225.8 m, and 72 m diaphragm walls driven through 28 m of gravel to an impermeable layer."
+  - id: dorts-cr580c
+    title: Xinyi Line East Extension — CR580C Section Contract
+    titleOriginal: 捷運信義線東延段CR580C區段標工程
+    publisher: Taipei City Government, Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: "https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA"
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The live contract page gives the 17 October 2016 start, designer, supervisors and joint contractors; describes the one-station, crossover and two-shield-machine works; and states 淺層土壤弱軟，深層岩盤堅硬，硬度超出預期4倍."
   - id: trtc-headways-r
     title: "Routes and headways: Tamsui–Xinyi Line"
     titleOriginal: 路線及班距／淡水信義線
@@ -172,13 +226,17 @@ sources:
     note: "全長1.2公里, which independently matches the builder's figure; 1997年3月28日：淡水線與新北投支線正式通車啟用; and 川崎重工371型 in three-car sets, 三節車廂為一組，以單組為一列. Its single external citation was checked on 10 August 2026 and does not support it — see the body."
 ---
 
+## Overview
+
 The red line runs the network's most varied ground: an inherited railway
 formation at the northern end, a viaduct across the Keelung River, the
 underground core through the main station, and the newer Xinyi arm under the
 financial district. It is also the oldest right-of-way on the system, and the
 builder says so in its own project record[^dorts-tamsui].
 
-## The corridor was a railway first
+## Route and alignment
+
+### The corridor was a railway first
 
 The Department of Rapid Transit Systems describes the northern half of this
 line as running **沿原北淡鐵路** — along the former TRA Tamsui railway — south
@@ -187,7 +245,7 @@ builder, in its own words, saying the alignment is not new. What was demolished,
 what was preserved, and when the railway itself closed are not established on
 this page; see the note at the foot.
 
-## Three structures on one route
+### Three structures on one route
 
 DORTS puts the whole northern alignment in a single sentence, and it is worth
 following in order[^dorts-tamsui]:
@@ -208,7 +266,7 @@ depot**[^dorts-tamsui]. The Xinyi section, by contrast, is
 R08 across Jinhua Street, Aiguo East Road and Hangzhou South Road and then along
 Xinyi Road into the Xinyi planning district[^dorts-xinyi].
 
-## How it opened
+## Construction history
 
 The Tamsui section came in three pieces, and DORTS records an inspection date
 against each[^dorts-tamsui]:
@@ -240,7 +298,68 @@ contracts[^dorts-tamsui]. The earliest of them is worth naming — contract CT10
 earthworks for Beitou Depot, signed on **19 January 1988**, which DORTS itself
 calls the earliest of them[^dorts-tamsui].
 
-## The Xinbeitou branch
+## Engineering
+
+### Dongmen: five tunnels and deep groundwater control
+
+Contract CK570H combined the cut-and-cover Dongmen interchange box with four
+metro shield tunnels and a fifth shield tunnel for a common-utility duct.[^dorts-ck570h-2014]
+The later DORTS construction paper describes the box as about 216 m long, 25 m
+wide and 32 m deep.[^dorts-ck570h-2014] Groundwater uplift in the Songshan No. 2
+stratum would otherwise have required bottom sealing and extensive pumping, so
+the design used 1.5 m-thick diaphragm walls driven 72 m down, through a 28 m
+gravel layer, to an impermeable stratum; the wall was divided into 172
+panels.[^dorts-ck570h-2014]
+
+That geometry is not uncontested. A 2005 DORTS paper gives the same station as
+about 217 m long, 24.7 m wide and 31.2 m deep, and gives different shield-drive
+lengths.[^dorts-ck570h-2005] Both primary sets are published in the conflicts
+section below; neither paper explains whether the difference reflects design
+stage, contract limits, as-built measurement or rounding.
+
+### Daan Park: value engineering changed the architecture
+
+The station now known as R06 was engineering station R09 in the design paper.
+Its alternative scheme moved the box 9 m south and raised it 1.5 m, increasing
+the distance to buildings on the north from 9 m to 18 m.[^dorts-daan-design]
+The same move avoided most diversion of a drainage box culvert, reduced utility
+relocation and road occupation, separated two tunnels that had been only 50 cm
+apart, and allowed the intermediate sump between Dongmen and Daan Park to be
+removed.[^dorts-daan-design] The authors estimated about NT$160 million in
+works savings; that is an estimate in the paper, not a verified final-account
+saving.[^dorts-daan-design]
+
+Moving the box also reduced its distance from Daan Forest Park from about 14 m
+to about 5 m.[^dorts-daan-design] That engineering decision enabled the sunken
+garden and the design brief to bring sunlight and greenery into an underground
+station.[^dorts-daan-design]
+
+## Stations and architecture
+
+DORTS says the breadth of the former railway land gave the northern section
+unusual freedom from site constraints, and its line-level design account
+describes variation as deliberate rather than accidental.[^dorts-station-architecture]
+Jiantan suspends a Chinese-form roof from steel cables; Beitou uses glass and a
+space truss for a bright large-span interior; Tamsui uses modern materials to
+evoke Fort San Domingo; and the other surface and elevated stations draw on
+local residential and Chinese structural forms.[^dorts-station-architecture]
+
+Beitou's width follows its operating job. The DORTS monograph records a central
+island platform, side platforms and four tracks for the main line, Xinbeitou
+branch and short-turn services.[^dorts-elevated-design] At roughly twice an
+ordinary station's width, it needed a space-truss roof; the foundations use
+piles, pile caps and ground beams, while the above-ground structure is
+cast-in-place reinforced concrete with metal roof panels and glazed curtain
+walls.[^dorts-elevated-design]
+
+The Xinyi stations use a different line-wide language. DORTS calls the theme
+“dialogue”: architecture, landscape, interiors, public art, street furniture,
+lighting and colour were planned together to connect the stations to their
+urban surroundings.[^dorts-station-architecture]
+
+## Operations
+
+### The Xinbeitou branch
 
 R22A hangs off R22 on a spur of about **1.2 km**, and the builder counts that
 1.2 km inside the Tamsui section's 23.8 km rather than alongside
@@ -259,7 +378,7 @@ and which says nothing about the branch at all[^trtc-oldmap]. The opened primary
 records do not establish the branch's track configuration or train livery, so
 both fields remain TBC.
 
-## What runs, and how often
+### What runs, and how often
 
 TRTC operates three patterns: **Tamsui–Xiangshan**, **Beitou–Daan** and
 **Beitou–Xinbeitou**[^trtc-headways-r]. The short working terminates at R05,
@@ -270,7 +389,7 @@ and 4 to 5 minutes over the overlap; after 23:00 only Tamsui–Xiangshan runs, a
 about 12 minutes[^trtc-headways-r]. End to end, Tamsui to Xiangshan takes about
 **54 minutes**[^trtc-headways-r].
 
-## Ridership: what is published is not this line
+### Ridership: what is published is not this line
 
 This line is routinely described as one of the two busiest on the network, and
 TRTC's published series does not permit a line-specific total. It reports
@@ -298,9 +417,23 @@ plain terms: the landowners at the Xinyi Road Section 6 site refused to take
 part in the joint land development, so the condition for siting a station there
 was never met[^dorts-east-extension].
 
-DORTS's project page carries no construction start date, contract number, cost
-or opening date[^dorts-east-extension]. Those four fields remain TBC rather than
-being filled from unattributed circulating figures.
+The separate contract page identifies CR580C, a 17 October 2016 construction
+start, design by Moh and Associates, supervision by DORTS's Second District
+Project Office and a construction joint venture of BES Engineering and
+Obayashi's Taiwan branch.[^dorts-cr580c] It describes a three-level island-
+platform station about 213.9 m long and 16.55 m wide, a 119.4 m crossover and
+two shield machines selected for hard rock, weak clay and mixed ground.[^dorts-cr580c]
+
+The narrow Fude Street site forced diaphragm-wall work close to buildings on
+both sides. DORTS says the shallow soil was weak, while deep rock proved four
+times harder than expected; suspending night work to limit disturbance also
+broke the continuity of construction.[^dorts-cr580c] The architectural scheme
+turns the historical Liugong irrigation system into blue horizontal and curved
+“water” forms, with entrances integrated into the planned Xinyi District
+administrative centre and a Guangci Boai complex building.[^dorts-cr580c]
+
+Neither opened DORTS page gives a project cost or opening date, so both remain
+TBC.[^dorts-east-extension][^dorts-cr580c]
 
 A numbering trap worth flagging while it is still live. The station being built
 takes **`R01`**, at the end of a line whose other codes were assigned long
@@ -312,6 +445,14 @@ be read as belonging to that older scheme rather than to the codes a passenger
 sees.
 
 ## Where the sources disagree
+
+**Dongmen dimensions and shield drives.** The 2005 DORTS paper reports a box
+about **217 m × 24.7 m**, excavated about **31.2 m**, with Xinyi shield drives of
+**1,240.5 m** and **1,247.0 m** (about 2,487.5 m combined).[^dorts-ck570h-2005]
+The 2014 DORTS construction paper instead reports about **216 m × 25 m**, an
+excavation of about **32 m**, and drives of **1,219.3 m** and **1,225.8 m**
+(about 2,445.1 m combined).[^dorts-ck570h-2014] The difference is published as
+a conflict because neither source states why its measuring basis differs.
 
 **Route length.** DORTS's two published figures are 23.8 km for the Tamsui
 section including the branch[^dorts-tamsui] and 6.4 km for the Xinyi
