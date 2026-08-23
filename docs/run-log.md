@@ -16104,3 +16104,79 @@ sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
 failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
 run cite`, `npm run verify`, `npm run nav` (19/19), and `npm test` all passed.
 Generated links/unused audits were restored and `probes/` was not staged.
+
+# Run 114 - deepen short bus routes (23 August 2026)
+
+## Part 3 - bus routes
+
+The route-depth pass changed 989 short route pages, not the earlier estimate of
+412. Each now has a route-specific committed stop sequence from the checked TDX
+records, an operator/variant/shape evidence section, and an explicit TBC
+boundary for facts the schedule data does not publish. Stop labels were
+sanitised so punctuation in a TDX name cannot become an accidental claims
+assertion. The permanent generator is `scripts/deepen-short-bus-routes.mjs`;
+its data source is the committed `data/tdx/bus/` pull rather than prose copied
+from a search result.
+
+The depth gate was made permanent: every bus-route article must have at least
+300 Markdown-stripped body words. The first run found no residual ASSERTED
+claims after the route evidence was attached. The commit was Run 114
+(`092482d`) and was pushed after cite, verify, nav and tests passed.
+
+# Run 115 - close remaining shallow content (23 August 2026)
+
+## Part 3 - rail, YouBike and operators
+
+Twenty shallow rail pages, 22 YouBike pages and four short operator pages were
+expanded from their existing sourced data and research. Cable-rail pages now
+separate the Maokong line, Zhinan Temple, Zoo South and Zoo contexts; dynamic
+TMRT station pages use the namespaced TDX sequence, chainage, district,
+structure, civil package and TBC availability boundary; YouBike pages retain
+the static station/capacity/coordinate join and keep live availability TBC.
+TRTC, NTMC, TYMC and the existing TMRT operator record were brought into the
+same sourced depth and section conventions.
+
+The permanent depth tests now cover every published non-index content article,
+not only bus routes. Final state: zero content articles below 300 words; zero
+ASSERTED claims; 4,997 citations (4,813 primary / 184 secondary); 14,754
+sourced / 4,308 TBC; 219 unit tests; 124 research files / 534 checked failures.
+Run 115 (`c28251d`) was pushed after all required gates passed.
+
+# Run 116 - close mobile specs overflow and extend browser matrix (24 August 2026)
+
+## Parts 4-5 - UI and visual verification
+
+Fresh browser verification found one real defect: the Xindian Depot specs table
+was 4 px wider than the 320 px content column because the citation-bearing unit
+cell imposed an intrinsic minimum. `app/globals.css` now uses a fixed mobile
+table layout with proportional label/value/unit columns and a zero minimum on
+the unit column. `scripts/browser-verify.mjs` now includes the article history
+pages, rail cable pages, rail operator pages and YouBike generations in the
+curated `PAGE_TYPES` matrix (68 types).
+
+After a fresh build, browser verification completed clean: reflow at 640 and
+320 px across 1,456 pages, spine overlap clean, 68/68 keyboard and accessibility
+trees, zero axe violations, 477 screenshots and all print checks. Screenshots
+were inspected at 320, 375, 768, 1440, 1920, 2560 and landscape phone; the ToC,
+canonical section order, diagrams, references and reduced-motion behaviour were
+visible without overflow. Run 116 (`310da37`) was pushed after cite, verify,
+nav and the full test suite passed. The pre-fix stale-build browser run is kept
+as a diagnostic record; it is not the final result.
+
+# Run 117 - document TRA and THSR expansion groundwork (24 August 2026)
+
+## Part 6 - v3 research report
+
+`docs/taiwan-expansion.md` now records live TDX Basic/Public Transport/
+Historical coverage for TRA and THSR, the official PTX API and Government Data
+Standards schemas, primary source families (TRA, Railway Bureau, National
+Railway Museum, THSRC, MOTC and archival/academic history), the architecture
+breaks at branch/closed-line/gauge/rename scale, a namespaced interchange model,
+and a staged first-work order. No TRA or THSR pages were built.
+
+The report marks exact station totals, complete historical inventories, rename
+dates, gauge-change chronology and THSR historical API coverage TBC. It records
+five full-fetch failures for the official schema-example XML endpoints with
+their HTTP reason and URL, as required; no search snippet was promoted to a
+source. This is the final v3 groundwork unit and was committed/pushed as Run
+117 after the full gates passed.
