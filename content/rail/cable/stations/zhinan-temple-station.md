@@ -86,3 +86,10 @@ named specifically enough to record here rather than omit.
 
 It is the third of the line's four passenger stations, between Zoo South
 Station below and Maokong Station, the terminus, above[^gondola-system].
+## Siting, structure and service history
+
+The operator's station page locates Zhinan Temple Station at the temple's rear-mountain car park and names the Maokong sightseeing bus left-hand loop and 小10 as local connections.[^gondola-stations-zhinan] The access description is deliberately narrower than a catchment map: it establishes the named car park and bus links, not every path or parking facility in the surrounding hillside.[^gondola-stations-zhinan]
+
+The station's elevated T-shaped form, four above-ground floors and side platforms are reported in the station article.[^wiki-zhinan-station] The same source dates the station's service suspension from 1 October 2008 to 30 March 2010, while the line page records the T16 tower failure as the reason for the wider closure.[^wiki-zhinan-station] This page therefore distinguishes a station-level date pair from the engineering cause described elsewhere; it does not infer a separate station repair programme.
+
+The article also records a 15 June 2014 unveiling of the stainless-steel and titanium-plated 金龍獻瑞 dragon sculpture at the 迎仙亭 pond.[^wiki-zhinan-station] That is a dated secondary-source attribution, not a claim that the work is the station's only public art. The operator's route page places this station third of four, between Zoo South and Maokong.[^gondola-system]

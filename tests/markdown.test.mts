@@ -251,6 +251,19 @@ test('every bus route article has at least 300 body words', () => {
   assert.deepEqual(short, [], `short bus route articles: ${short.join(', ')}`)
 })
 
+test('every published content article has at least 300 body words', () => {
+  const walk = (dir: string): string[] =>
+    fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+      const full = path.join(dir, entry.name)
+      return entry.isDirectory() ? walk(full) : entry.name.endsWith('.md') && entry.name !== '_index.md' ? [full] : []
+    })
+  const short = walk(CONTENT)
+    .map((file) => ({ file, words: articleBodyWords(fs.readFileSync(file, 'utf8')) }))
+    .filter(({ words }) => words < 300)
+    .map(({ file, words }) => `${path.relative(process.cwd(), file)} (${words})`)
+  assert.deepEqual(short, [], `short content articles: ${short.join(', ')}`)
+})
+
 /* ---- formation notation ------------------------------------------- */
 
 /**

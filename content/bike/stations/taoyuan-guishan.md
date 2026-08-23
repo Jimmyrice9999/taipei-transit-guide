@@ -52,3 +52,10 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |
 |---|---:|---|---|---|
 | YouBike2.0_Multipurpose Gymnasium of NTSU / YouBike2.0_國立體育大學綜合體育館 [^tdx-bike-stations] | 41 [^tdx-bike-stations] | 25.03599, 121.38504 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.035994&mlon=121.38504#map=19/25.035994/121.38504) | — |
+## Reading this city snapshot
+
+The committed TDX extract groups 1 static station row under the Guishan district label and reports a combined published capacity of 41 docks.[^tdx-bike-stations] The station table preserves the row names, bilingual labels, addresses, coordinates and capacities returned by the city feed; it is a point-in-time data record rather than a live occupancy board.[^tdx-bike-stations] A capacity total is the sum of the published dock fields, not a count of bicycles currently available.
+
+The page's rail column is a separate nearest-coordinate join. This snapshot records 0 confirmed coordinate joins for the group.[^tdx-rail-stations] The join accepts a unique rail result within 200 metres and does not compare station names, so a zero is an evidence result rather than a claim that no rail service is nearby.[^tdx-rail-stations] A positive join likewise does not assert a fare integration, a same-building entrance or a signed cycle route.
+
+The static feed supports siting and capacity questions, including map links generated from the published coordinates.[^tdx-bike-stations] It does not publish the live number of bikes or empty docks used by a rider deciding whether to leave immediately; live availability remains TBC until a current availability feed is fetched and archived.[^tdx-bike-stations] The page therefore keeps the durable station identity separate from conditions that can change during a trip.

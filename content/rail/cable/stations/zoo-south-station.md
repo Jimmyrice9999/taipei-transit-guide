@@ -78,3 +78,10 @@ gates[^gondola-stations-zoo-south]. Structurally it is an elevated station
 with two above-ground floors and side platforms[^wiki-zoo-south]. It is the
 second of the line's four passenger stations, between Zoo Station below and
 Zhinan Temple Station above[^gondola-system].
+## Siting, naming and visitor access
+
+The operator locates Zoo South Station beside the wetland ecology pond on the zoo's south side and describes a shuttle-bus connection into the zoo proper.[^gondola-stations-zoo-south] This establishes the access relationship without turning the pond or shuttle into a separate interchange: no shared fare gate, timetable or transfer discount is stated by the source.[^gondola-stations-zoo-south]
+
+The station article gives the former name 動物園內站 and dates the change to 動物園南站 to 26 October 2015.[^wiki-zoo-south] That naming history matters when older engineering or safety documents use the former name. The same article describes an elevated building with two above-ground floors and side platforms.[^wiki-zoo-south] Its elevation is left TBC because the current station record does not publish a figure for it.
+
+The operator's route sequence places Zoo South second of four passenger stations, between Zoo Station and Zhinan Temple Station.[^gondola-system] The ordering is a line-level fact; it does not imply that the station shares a platform with either neighbour. The station's current access description and its historical name are kept separate so a reader can distinguish present signage from archived references.[^gondola-stations-zoo-south][^wiki-zoo-south]

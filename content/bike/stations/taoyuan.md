@@ -56,3 +56,10 @@ The MRT/LRT column is present only when the station has one unique nearest TDX r
 | [Guishan](/bike/stations/taoyuan-guishan/) [^tdx-bike-stations] | 1 | 41 | 0 |
 
 Each district link is a browse page rather than an individual station page: a dock is a data row here, not a thin standalone article [^tdx-bike-stations].
+## Reading this city snapshot
+
+The committed TDX extract groups 699 static station rows under the TBC district label and reports a combined published capacity of 24214 docks.[^tdx-bike-stations] The station table preserves the row names, bilingual labels, addresses, coordinates and capacities returned by the city feed; it is a point-in-time data record rather than a live occupancy board.[^tdx-bike-stations] A capacity total is the sum of the published dock fields, not a count of bicycles currently available.
+
+The page's rail column is a separate nearest-coordinate join. This snapshot records 18 confirmed coordinate joins for the group.[^tdx-rail-stations] The join accepts a unique rail result within 200 metres and does not compare station names, so a zero is an evidence result rather than a claim that no rail service is nearby.[^tdx-rail-stations] A positive join likewise does not assert a fare integration, a same-building entrance or a signed cycle route.
+
+The static feed supports siting and capacity questions, including map links generated from the published coordinates.[^tdx-bike-stations] It does not publish the live number of bikes or empty docks used by a rider deciding whether to leave immediately; live availability remains TBC until a current availability feed is fetched and archived.[^tdx-bike-stations] The page therefore keeps the durable station identity separate from conditions that can change during a trip.

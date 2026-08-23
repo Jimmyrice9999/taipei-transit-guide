@@ -75,3 +75,10 @@ loop of the Maokong sightseeing bus and routes 小10 and
 researched Brown-line feeder routes, whose own confirmed corridor runs from
 富德 up toward this same Maokong tea-house area (see
 [BR15 / 棕15](/bus/routes/colour-brown/brown-15/)).
+## Siting, access and operations
+
+The operator places Maokong Station at the centre of the hillside tea-house district and identifies storage space for cable-car maintenance within the station site.[^gondola-stations-maokong] That combination makes the terminus both a passenger destination and a working part of the ropeway: the source names maintenance storage, but it does not publish a separate workshop inventory or a capacity figure. Those details remain TBC.[^gondola-stations-maokong]
+
+The same operator page names the Maokong sightseeing bus right-hand loop, 小10 and 棕15 as local connections.[^gondola-stations-maokong] 棕15 is a bus route in this corpus, but the gondola source does not claim an integrated fare or a guaranteed timed connection; the relationship here is therefore a named access connection, not a timetable promise.[^gondola-stations-maokong] The operator also presents the station as a night-view point over greater Taipei, which is an access and visitor description rather than a measured visibility claim.[^gondola-stations-maokong]
+
+The route-system page places Maokong fourth in the four-station passenger order.[^gondola-system] Its upper-terminal role is therefore established by the operator's sequence, while the elevation and rotating-platform description come from the separately cited station record.[^gondola-system][^wiki-maokong-station]

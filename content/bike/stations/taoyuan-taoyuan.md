@@ -55,3 +55,10 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 |---|---:|---|---|---|
 | YouBike2.0_Sec. 3, Chenggong Rd.(Hutoushan Innovation Hub) / YouBike2.0_成功路三段(虎頭山創新園區) [^tdx-bike-stations] | 20 [^tdx-bike-stations] | 24.99788, 121.32522 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.997883&mlon=121.325222#map=19/24.997883/121.325222) | — |
 | YouBike2.0_Zhonglu 6th Children's Park / YouBike2.0_中路兒6公園 [^tdx-bike-stations] | 31 [^tdx-bike-stations] | 24.99679, 121.29364 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.996786&mlon=121.293644#map=19/24.996786/121.293644) | — |
+## Reading this city snapshot
+
+The committed TDX extract groups 2 static station rows under the Taoyuan district label and reports a combined published capacity of 51 docks.[^tdx-bike-stations] The station table preserves the row names, bilingual labels, addresses, coordinates and capacities returned by the city feed; it is a point-in-time data record rather than a live occupancy board.[^tdx-bike-stations] A capacity total is the sum of the published dock fields, not a count of bicycles currently available.
+
+The page's rail column is a separate nearest-coordinate join. This snapshot records 0 confirmed coordinate joins for the group.[^tdx-rail-stations] The join accepts a unique rail result within 200 metres and does not compare station names, so a zero is an evidence result rather than a claim that no rail service is nearby.[^tdx-rail-stations] A positive join likewise does not assert a fare integration, a same-building entrance or a signed cycle route.
+
+The static feed supports siting and capacity questions, including map links generated from the published coordinates.[^tdx-bike-stations] It does not publish the live number of bikes or empty docks used by a rider deciding whether to leave immediately; live availability remains TBC until a current availability feed is fetched and archived.[^tdx-bike-stations] The page therefore keeps the durable station identity separate from conditions that can change during a trip.

@@ -84,3 +84,10 @@ Maokong[^gondola-system]. This site's separate research on the line's T16
 tower failure and closure history is on the
 [Maokong Gondola](/rail/cable/lines/maokong-gondola/) page, not repeated
 here.
+## Siting and the out-of-station transfer
+
+The operator gives Zoo Station's address as 新光路二段8號 and describes the walk from the Wenhu Line's Taipei Zoo MRT station as roughly 350 metres.[^gondola-stations-zoo] The separate-station relationship is corroborated by the full station article, which distinguishes the gondola address from the MRT station at 新光路二段32號 and calls the connection a 站外轉乘 out-of-station transfer.[^wiki-zoo-station-mrt] A rider should therefore understand this as a walking link between buildings, not a shared platform or a fare-paid interchange.
+
+The station is the first passenger stop in the operator's four-station sequence and the lower terminus for the climb toward Zoo South, Zhinan Temple and Maokong.[^gondola-system] The city release used for the line-wide opening dates the gondola's public opening to 4 July 2007; it does not establish a separate ceremony for this building alone.[^gov-taipei-40m]
+
+The operator's access page names nearby bus services but does not publish a guaranteed timed connection or a combined ticket with the Wenhu Line.[^gondola-stations-zoo] Those fields remain TBC. The station's role is consequently defined by its physical location, route order and walking transfer, not by an assumed integrated interchange design.
