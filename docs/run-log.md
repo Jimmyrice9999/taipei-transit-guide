@@ -15902,3 +15902,57 @@ sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
 failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
 run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
 links/unused audits were restored and `probes/` was not staged.
+
+# Run 110 — rebuild Danhai LRT line depth (23 August 2026)
+
+## Part 3 — Danhai LRT
+
+### Sourced
+
+Reworked the page from 1,874 to 1,954 Markdown-stripped body words and added
+an overview, route/alignment, planning, construction, lines/stations, rolling
+stock, operations, history/public art, depot, fares and sources structure. Full
+DORTS reads at https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY,
+https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v,
+https://www.dorts.ntpc.gov.tw/about/route/6yEwdwyOmM04 and
+https://www.dorts.ntpc.gov.tw/about/routeProgress/6yEwdwyOmM04 supplied the
+early-works and turnkey dates, stability/inspection sequence, Blue Sea phase-1
+opening sequence, phase-2 route and station codes, and the preliminary-works
+contract. NTMC's full rolling-stock page at
+https://www.ntmetro.com.tw/basic/?mode=detail&node=19 re-confirmed the shared
+Danhai/Ankeng vehicle specification and fleet split.
+
+### TBC
+
+The fully built-out network total remains TBC: the sourced phase figures sum to
+12.87 km, while a separate 13.99 km / 20-station figure cannot be reconciled.
+The phase-2 final opening date, the exact 2017–20 interim operating contract,
+the complete public-vote provenance for 行武者號 and current depot capacity also
+remain TBC.
+
+### Contradicted the corpus
+
+The old page was already deep but lacked canonical section structure and did not
+separate early works from the main turnkey contract or the two lines' inspection
+sequences. The new page keeps the DORTS 24 December 2018 opening alongside the
+secondary 23/24 December conflict, and retains DORTS's 3.32 km phase-2 figure
+beside the secondary 4.44 km figure rather than choosing one.
+
+### Conflicts found
+
+Green Mountain opening is 24 December 2018 in DORTS's project record versus a
+23 December opening and 24 December trial-operation start in Chinese Wikipedia.
+Blue Sea phase 2 is 3.32 km in DORTS versus 4.44 km in the secondary article.
+The combined phase-1 network is 9.55 km / 14 stations; adding DORTS's phase 2
+gives 12.87 km, not the circulating 13.99 km / 20-station total.
+
+### Verification and gate
+
+The first claims run caught one newly added construction sentence without its
+source marker; attaching `[^dorts-green]` restored zero ASSERTED claims. Final
+verify passed: 1,954 pages, 218,210 internal links with no broken links,
+fragments or orphans; 4,988 citations (4,804 primary / 184 secondary); 11,439
+sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
+failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
+run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
+links/unused audits were restored and `probes/` was not staged.

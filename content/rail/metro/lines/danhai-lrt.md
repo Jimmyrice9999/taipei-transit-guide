@@ -5,7 +5,7 @@ order: 8
 line: V
 aliases:
   - 淡海輕軌
-updated: 2026-08-12
+updated: 2026-08-23
 hero:
   image: danhai-lrt/hero
   alt: A light-blue Danhai LRT tram running on street-level track through a still-under-construction new town, apartment towers rising behind it.
@@ -115,7 +115,7 @@ sources:
     titleOriginal: 淡海綠山線
     publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局)
     url: https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's own project record: 路線長度7.34公里、車站數量11座、通車日期107年12月24日 — length, station count and opening date, plus the construction and approval timeline and a combined-project funding figure of 128.1億元."
@@ -124,7 +124,7 @@ sources:
     titleOriginal: 淡海藍海線第一期
     publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局)
     url: https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "路線長度2.21公里、車站數量3座、營運開始日期109年11月15日 — the length added by phase 1, its station count, and its opening date. Shares the same 128.1億元 funding figure and the same approval dates as the Green Mountain Line page, consistent with both having been approved as one project."
@@ -133,7 +133,7 @@ sources:
     titleOriginal: 淡海線第二期
     publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局)
     url: https://www.dorts.ntpc.gov.tw/about/route/6yEwdwyOmM04
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "路線長度3.32公里、經費69.8億元、車站數量6座（V21、V22、V23、V24、V25、V26A） — length, budget and the six station codes, plus the approval history and the design-stage status. States that completion is expected five years after Executive Yuan approval of the revised plan."
@@ -142,7 +142,7 @@ sources:
     titleOriginal: 淡海線第二期施工進度
     publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局)
     url: https://www.dorts.ntpc.gov.tw/about/routeProgress/6yEwdwyOmM04
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "Tracks a preliminary-works contract only (utility relocation and track-bed preparation), not the whole phase: awarded 22 April 2026, NT$462,150,000, construction started 2 June 2026, expected completion January 2027, 0% progress recorded as of end of May 2026."
@@ -160,7 +160,7 @@ sources:
     titleOriginal: 輕軌列車
     publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
     url: "https://www.ntmetro.com.tw/basic/?mode=detail&node=19"
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The operator's own spec table for its light rail fleet: 全國第一列國車國造之輕軌列車為淡海輕軌列車, 共30列車(淡海15列車+安坑15列車), 5 cars/train, 265 passengers (62 seated), 34,450×2,650×3,750mm, 750VDC catenary or lithium battery, 70km/h under wire / 50km/h off-wire, 25m minimum curve radius, 70‰ maximum gradient. Presents Danhai and Ankeng under one shared spec table rather than two."
@@ -299,16 +299,23 @@ sources:
     note: "Manufacturer partnership (Taiwan Rolling Stock Co. with Germany's Voith), a stated 21.5% domestication rate for the Danhai order against 42% for the following Ankeng order, and a 500kN crash-resistance design figure. Not independently corroborated against an NTMC or manufacturer primary."
 ---
 
-Danhai is the line the network map's legend quietly implies does not exist:
-rail running down the middle of a street, sharing the road rather than owning
-a reserved corridor of its own. It serves the reclaimed new town north of
-Tamsui, feeding [Tamsui Station](/rail/metro/lines/tamsui-xinyi-line/) at its
-southern end rather than duplicating it, and it runs on a domestically
-designed and built tram that this line put into service before any other in
-Taiwan[^ntmc-train]. It is operated by
-[New Taipei Metro](/rail/operators/ntmc/).
+## Overview
 
-## Why light rail, not an extension of the metro
+Danhai is New Taipei's street-running light-rail system: rail shares the road
+through the reclaimed new town north of Tamsui rather than using a fully
+reserved corridor. It serves the new town and feeds [Tamsui Station](/rail/metro/lines/tamsui-xinyi-line/)
+at its southern end rather than duplicating it, and it runs on a domestically
+designed and built tram that this line put into service before any other in
+Taiwan[^ntmc-train]. It is operated by [New Taipei Metro](/rail/operators/ntmc/).
+
+## Route and alignment
+
+The V prefix covers two operating corridors: the Green Mountain Line from
+V01 Hongshulin to V11 Kanding, and the Blue Sea Line branch from V09 through
+V26 Fisherman's Wharf and V27 Shalun to V28 Taipei University of Marine
+Technology[^tdx][^dorts-green][^dorts-blue1].
+
+## Planning and approvals
 
 New Taipei's Rapid Transit Engineering Bureau — then still the Taipei City
 agency, before New Taipei's own DORTS existed — completed a feasibility study
@@ -319,6 +326,9 @@ Taipei DORTS submitted the medium-capacity proposal to the Ministry of
 Transportation and Communications (MOTC) in 1999, and MOTC declined to approve
 construction in 2002, citing budget priorities and recommending denser bus
 feeder service in the meantime rather than committing the money[^zh-danhai].
+
+## Construction history
+
 Construction of what eventually became the Danhai LRT did not begin until
 November 2014, more than two decades after the original study — DORTS's own
 Green Mountain Line project record dates the main-line works' start to that
@@ -328,7 +338,14 @@ primary document describing either in these terms was independently located,
 so that earlier history is published here as secondary, not upgraded to
 primary.
 
-## What has opened
+DORTS's construction chronology distinguishes an early-works package that ran
+from 18 August 2014 to 14 January 2015 from the main Green Mountain/Blue Sea
+phase-1 turnkey contract, awarded 7 November 2014[^dorts-green]. The Green Mountain system
+completed stability testing on 26 October 2018; preliminary inspection ran on
+11 November, MOTC's formal inspection on 10 December, and operating approval
+followed on 19 December[^dorts-green].
+
+## Lines and stations
 
 Two lines share the V prefix. The **Green Mountain Line** (綠山線, V01
 Hongshulin to V11 Kanding) is 7.34 km with 11 stations, and DORTS's own
@@ -348,6 +365,11 @@ as one combined project — DORTS's own pages for each state an identical total
 of NT$12.81 billion and identical approval dates[^dorts-green][^dorts-blue1]
 — and together they make up the **14-station, 9.55 km network now
 operating**[^wedid-phase1].
+
+The Blue Sea phase-1 opening sequence was separately recorded: it met
+preliminary-inspection conditions on 21 August 2020, held the preliminary
+inspection on 30 August, underwent MOTC inspection on 16 October, received
+operating approval on 4 November and opened on 15 November[^dorts-blue1].
 
 ![The canopy-covered platform at Danhai Xinshi Zhen Station, empty in the rain](/images/danhai-lrt/station-800.webp "Danhai Xinshi Zhen Station, on the new town side of the line. — 梁立豪, CC BY-SA 4.0, Wikimedia Commons")
 
@@ -372,12 +394,10 @@ later[^dorts-blue2]; a separate DORTS tracking page shows a preliminary
 utility-relocation contract for the phase already under way, awarded April
 2026 and due to finish January 2027[^dorts-blue2-progress].
 
-**No source found in this research gives one total figure for the fully
-built-out network.** A "13.99 km, 20 stations, 1 depot" total circulates
-across travel-blog aggregators, but it does not appear in Chinese Wikipedia's
-own infobox and does not fall out of a clean sum of any of the primary figures
-collected here — DORTS's own phase 1 (9.55 km) plus phase 2 (3.32 km) figures
-add to 12.87 km, not 13.99. That total is marked TBC rather than published.
+The fully built-out network total is **TBC**. The published phase figures add
+to 12.87 km (9.55 km in operation plus DORTS's 3.32 km phase 2)[^wedid-phase1][^dorts-blue2].
+A separate 13.99-km, 20-station figure is not supported by the fetched DORTS
+and secondary line records, so the two measurements cannot be reconciled here[^dorts-blue2][^zh-bluesea].
 
 ## Rolling stock — 行武者號
 
@@ -410,7 +430,7 @@ according to Chinese Wikipedia's rolling-stock article[^zh-rollingstock]. That
 detail was not independently corroborated against a primary NTMC or
 manufacturer announcement.
 
-## The Kaohsiung years, 2017–2020
+## Operations and service history, 2017–2020
 
 For its first three years of revenue service, Danhai LRT was not operated by
 the company that now runs it[^zh-danhai]. New Taipei Metro Corporation was
@@ -430,7 +450,7 @@ not be fetched directly in this research (their web.archive.org snapshots
 would not load), so the arrangement's exact contract value and the mechanics
 of the 2020 handover remain unestablished beyond this secondary account.
 
-## Public art and the route stamps
+## History, naming and public art
 
 The Green Mountain Line's public art is a collaboration with illustrator
 **幾米 (Jimmy Liao)**, based on his picture book 《閉上眼睛一下下》 ("Close
@@ -442,9 +462,7 @@ own site gives a slightly larger scope — 11 stations plus two bus shelters,
 2018 completion, which it describes as "nearly four years," not two-plus; it
 also notes the project won the 2020 National Excellence Construction Award in
 the Best Environmental Culture category[^jimmyspa]. Both accounts are
-published rather than reconciled. In keeping with this site's policy on
-copyrighted artwork, this page states the facts of the collaboration without
-describing what the installations depict.
+published rather than reconciled.
 
 Danhai also carries what Chinese Wikipedia describes as one of only two
 surviving railway *route* stamps (路線章, as distinct from ordinary station
@@ -452,7 +470,7 @@ stamps) left anywhere in Taiwan, now kept at V01 Hongshulin — a claim read in
 full on the page but attached to no footnote there, so it is published here
 as an unattributed secondary claim rather than a well-sourced fact[^zh-danhai].
 
-## Depot
+## Depot and facilities
 
 **淡海機廠 (Danhai Depot)** sits beside V11 Kanding, at the end of the Green
 Mountain Line, and houses the system's operations control centre, train

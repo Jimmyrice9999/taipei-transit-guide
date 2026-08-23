@@ -14,7 +14,7 @@ inline below rather than silently dropped.
 
 # Danhai LRT 淡海輕軌 (V)
 
-Run: 2026-08-12. New Taipei Metro Corporation (NTMC), New Taipei City
+Run: 2026-08-23. New Taipei Metro Corporation (NTMC), New Taipei City
 Department of Rapid Transit Systems (DORTS, 新北市政府捷運工程局).
 
 ## What is established
@@ -466,6 +466,23 @@ count, rather than the phase-by-phase figures found here.
 - Both are primary in the sense defined by this project's sourcing rules (the
   operator describing its own project; the artist describing their own work),
   and they disagree by roughly two years. Not resolved here — both published.
+
+## Independent full-page verification — 23 August 2026
+
+The current pass re-opened the DORTS Green Mountain, Blue Sea phase 1, Blue
+Sea phase 2 and phase-2 progress pages in full:
+`https://www.dorts.ntpc.gov.tw/about/route/kq4VmGpM2BoY`,
+`https://www.dorts.ntpc.gov.tw/about/route/LXlR27XkdV8v`,
+`https://www.dorts.ntpc.gov.tw/about/route/6yEwdwyOmM04` and
+`https://www.dorts.ntpc.gov.tw/about/routeProgress/6yEwdwyOmM04`.
+The full pages confirm the project-package dates, stability and inspection
+sequence, phase lengths and station codes, the revised-plan status, and the
+preliminary-works contract. NTMC's full rolling-stock page was also re-opened
+at `https://www.ntmetro.com.tw/basic/?mode=detail&node=19`; its shared Danhai/
+Ankeng specification table confirms the fleet split and vehicle figures. No
+new primary record resolves the secondary-only 1992 feasibility narrative,
+the 2017–20 interim operating contract, the public-vote naming account, or the
+phase-2 final opening date.
 
 ## Checked and failed
 

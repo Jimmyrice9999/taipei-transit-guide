@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11434,
+    "sourced": 11439,
     "tbc": 4307,
     "asserted": 0,
-    "meta": 48
+    "meta": 47
   },
   "files": [
     {
@@ -9635,10 +9635,10 @@
     {
       "file": "content/rail/metro/lines/danhai-lrt.md",
       "sources": 21,
-      "sourced": 56,
+      "sourced": 61,
       "tbc": 0,
       "asserted": 0,
-      "meta": 3
+      "meta": 2
     },
     {
       "file": "content/rail/metro/lines/sanying-line.md",
