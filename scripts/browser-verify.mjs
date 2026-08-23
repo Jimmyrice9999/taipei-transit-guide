@@ -128,6 +128,9 @@ const PAGE_TYPES = [
   { name: 'line-wenhu', url: '/rail/metro/lines/wenhu-line/' },
   { name: 'line-sanying', url: '/rail/metro/lines/sanying-line/' },
   { name: 'article-matra', url: '/rail/history/matra-dispute/' },
+  { name: 'article-incidents', url: '/rail/history/incidents/' },
+  { name: 'article-public-art', url: '/rail/history/public-art/' },
+  { name: 'article-station-naming', url: '/rail/history/station-naming/' },
   /* Added in run 7 with the layouts they exercise: station-numbering is the
      only page carrying the numbering ladder, and BR22 is the only station page
      with a planned-interchange strip. Run 5.1's lesson — a new layout that is
@@ -167,7 +170,11 @@ const PAGE_TYPES = [
    */
   { name: 'rail-system-metro', url: '/rail/metro/' },
   { name: 'rail-system-cable', url: '/rail/cable/' },
+  { name: 'rail-cable-lines', url: '/rail/cable/lines/' },
+  { name: 'rail-cable-line-maokong', url: '/rail/cable/lines/maokong-gondola/' },
   { name: 'rail-technology', url: '/rail/technology/' },
+  { name: 'rail-operators', url: '/rail/operators/' },
+  { name: 'rail-operator-trtc', url: '/rail/operators/trtc/' },
   { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },
   /*
    * Run 52: gondola stations and the fare-stages guide are new page types
@@ -189,6 +196,7 @@ const PAGE_TYPES = [
    * screenshot/print matrix cover the entities added since Run 52.
    */
   { name: 'bike', url: '/bike/' },
+  { name: 'bike-generations', url: '/bike/generations/' },
   { name: 'bike-history', url: '/bike/history/youbike/' },
   { name: 'bike-stations', url: '/bike/stations/' },
   { name: 'bike-stations-taipei', url: '/bike/stations/taipei/' },

@@ -4250,6 +4250,32 @@ a.adjacent-link:hover {
   .site-header .container {
     gap: 10px 20px;
   }
+
+  /*
+   * Specifications are a three-column table, but the browser's automatic
+   * table algorithm gives a citation-bearing unit cell an intrinsic minimum
+   * before it considers the table's 100% width.  On a 320px viewport that
+   * made the Xindian Depot table 308px inside a 288px content box.  Keep the
+   * desktop proportions and make the phone contract explicit: labels get
+   * enough room to scan, values retain the largest share, and units wrap
+   * rather than widening the page.
+   */
+  .specs table {
+    table-layout: fixed;
+  }
+
+  .specs th {
+    width: 40%;
+  }
+
+  .specs-value {
+    width: 45%;
+  }
+
+  .specs-unit {
+    width: 15%;
+    min-width: 0;
+  }
 }
 
 /* ==================================================================== */
