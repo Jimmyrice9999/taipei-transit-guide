@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11416,
+    "sourced": 11419,
     "tbc": 4316,
     "asserted": 0,
     "meta": 57
@@ -9514,8 +9514,8 @@
     },
     {
       "file": "content/rail/history/station-naming.md",
-      "sources": 9,
-      "sourced": 2,
+      "sources": 11,
+      "sourced": 5,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

@@ -2,7 +2,7 @@
 title: Station naming and renames
 summary: Officially documented former names, appended station names and the gaps where a current label is not yet a rename record.
 order: 3
-updated: 2026-08-17
+updated: 2026-08-23
 facts: []
 specs: []
 sources:
@@ -15,6 +15,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full official page recording the 2007 naming, renaming and appended-name procedure.
+  - id: taipei-naming-rules-2019
+    title: Rules for naming, renaming and appending names to Taipei metropolitan rapid-transit stations
+    titleOriginal: 臺北市臺北都會區大眾捷運系統捷運車站命名更名或車站站名加註名稱作業要點
+    publisher: Taipei City Government Department of Legal Affairs (臺北市政府法務局)
+    url: https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL043411
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Full current official rule text, including the 2019 order number, responsible bodies, naming criteria, rename vote and appended-name limits.
   - id: dorts-banqiao-former-name
     title: Bannan Line CP264 completion drawings, p. 260
     titleOriginal: 捷運技術半年刊 第45期
@@ -69,6 +78,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full current official route page publishing LB03 長壽山 and LB05 龍埔 with its appended name.
+  - id: ntpc-lb08-appended-gazette
+    title: New Taipei City Gazette, autumn issue 12, 2025
+    titleOriginal: 新北市政府公報 114年秋字第12期
+    publisher: New Taipei City Government (新北市政府)
+    url: https://doc2-exthird.ntpc.gov.tw/NTPC_SODPUBLISH/FILE/0000000/PUBLISH/114/3/114312.pdf
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: Full official gazette, p. 30, publishing the 8 September 2025 action that appends 新北市美術館 to LB08.
   - id: dorts-circular-planning-name
     title: Circular Line Y16 station design, p. 235
     titleOriginal: 捷運技術半年刊 第45期
@@ -93,6 +111,26 @@ Station names have two different kinds of official record: a naming action, and
 a later page that remembers or uses a name. DORTS says that naming, renaming and
 appended names are meant to follow a defined procedure established in 2007.[^dorts-naming-guideline]
 
+## How the formal process works
+
+The current Taipei rules are the text issued under order
+府捷秘字第10830001521號 on 17 January 2019.[^taipei-naming-rules-2019] They assign
+names for stations under construction to DORTS and names for operating stations
+to TRTC, with a standing review committee chaired by the DORTS commissioner.[^taipei-naming-rules-2019]
+Candidate names are assessed for local identity, landmark prominence and
+historical meaning; the named feature must be within 500 metres, names are
+limited to six Chinese characters, and duplicate or confusingly similar names
+are barred.[^taipei-naming-rules-2019]
+
+For a proposed Taipei rename, the 2019 rules require signatures from at least
+8% of eligible residents in the station's own and adjacent neighbourhoods.[^taipei-naming-rules-2019]
+After review and verification, a proposal passes only if yes votes outnumber no
+votes and reach one quarter of all eligible voters; a failed proposal cannot be
+resubmitted for that station for four years.[^taipei-naming-rules-2019] An
+appended name is a different instrument: it supplements an insufficiently
+distinct station name, is normally limited to one addition within 800 metres
+and six years, and does not appear on station entrances.[^taipei-naming-rules-2019]
+
 ## Former names recorded by DORTS
 
 | Station | Former name | What the primary page establishes |
@@ -113,6 +151,12 @@ The current New Taipei DORTS route page uses **LB03 長壽山**.[^ntmc-sanying-r
 The same gazette says LB05站：龍埔，加註「三峽廣行宮」; this is an appended
 name, not a rename of 龍埔.[^ntpc-sanying-naming-gazette] The current route page
 preserves that distinction as **LB05 龍埔（加註名稱：三峽廣行宮）**.[^ntmc-sanying-route]
+
+New Taipei later used the same type of action for LB08. Its 8 September 2025
+gazette says LB08站：加註「新北市美術館」 and identifies the legal basis as the
+New Taipei naming, renaming and appended-name rules.[^ntpc-lb08-appended-gazette]
+The notice calls this an addition to the station name, so it is not presented
+here as a replacement for the station's primary name.[^ntpc-lb08-appended-gazette]
 
 ## Planning labels and current names
 

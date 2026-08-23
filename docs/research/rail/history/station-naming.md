@@ -21,6 +21,22 @@ failed**.
   政府資訊公開原則……遂頒訂……作業要點，由該要點規定之程序辦理。」
   URL: https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page109.html
 
+- **Source:** *Rules for naming, renaming and appending names to Taipei
+  metropolitan rapid-transit stations* / 「臺北市臺北都會區大眾捷運系統捷運車站命名更名或車站站名加註名稱作業要點」,
+  Taipei City Government Department of Legal Affairs (臺北市政府法務局), PRIMARY,
+  High confidence. The full current rule page identifies the 17 January 2019
+  order as 「中華民國108年1月17日臺北市政府（108）府捷秘字第10830001521號令修正發布全文7點」.
+  It assigns construction-stage work to DORTS and operating-stage work to TRTC:
+  「興建中由捷運局主辦，營運中由臺北捷運公司主辦」. Naming criteria include
+  local identity, landmark prominence and historical meaning; the named feature
+  must be within 500 m and the name may not exceed six characters. A Taipei
+  rename petition needs signatures from 8% of eligible residents in the station
+  and adjoining neighbourhoods. The vote succeeds only when yes exceeds no and
+  yes reaches one quarter of all eligible voters; a failed proposal cannot be
+  resubmitted for four years. An appended name is normally limited to one
+  feature within 800 m and six years, and entrances do not carry it. URL:
+  https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL043411
+
 ### Former names documented by official sources
 
 - **BL07 Banqiao / 板橋站.** DORTS’s full technical-book page names the
@@ -56,6 +72,14 @@ failed**.
   including LB06 and LB07. That page is a current station list, not the legal
   act that created those names. PRIMARY, High confidence. URL:
   https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
+- **LB08.** The complete *New Taipei City Gazette, autumn issue 12, 2025* /
+  「新北市政府公報 114年秋字第12期」 was downloaded and all 36 pages parsed. The
+  action on printed p. 30 is dated 8 September 2025, order
+  新北府捷土字第11417626291號, and says: 「LB08站：加註『新北市美術館』。」 The
+  notice cites New Taipei's naming, renaming and appended-name rules, and the
+  action itself is an appended name rather than a replacement primary name.
+  PRIMARY, High confidence. URL:
+  https://doc2-exthird.ntpc.gov.tw/NTPC_SODPUBLISH/FILE/0000000/PUBLISH/114/3/114312.pdf
 
 ### Planning labels are not automatically renames
 
@@ -106,6 +130,13 @@ fetchable primary naming instrument was found, so none is promoted as a rename:
 - **Taipei Zoo South / 動物園內站** — the incoming lead was secondary and no operator or government rename notice was found in this check. Checked 17 August 2026.
 - **K04 耕莘安康院區 / 耕莘醫院** — the current official station page was found, but no official announcement explaining a former-name change was found. Checked 17 August 2026.
 - **The incoming report’s claimed source agreement** — its records contained no usable URLs, so that agreement could not be audited. Checked 17 August 2026.
+- **2017 New Taipei naming gazette** — the official search result identified
+  *New Taipei City Gazette, winter issue 14, 2017* and its notice concerning
+  Ankeng naming, an LB07 appended name and a Danhai rename. The browser fetch
+  timed out, and two direct full-file fetch attempts on 23 August 2026 stalled
+  after partial 32 KB bodies rather than producing the 3.04 MB PDF. The search
+  snippet was not used, and none of its values was published. Checked 23 August
+  2026.
 
 ## Stated gaps
 

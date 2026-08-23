@@ -15073,6 +15073,61 @@ orphans, missing glyphs, accessibility errors or warnings. Navigation and the
 independent full suite then passed all 19 navigation checks, all 217 unit tests
 and all 17 fact cross-checks.
 
+## Run 101 — Part 3, cross-cutting rail history (23 August 2026)
+
+### Sourced
+
+The premise audit found that public art and incidents no longer have the narrow
+source base described in the brief. Public art is 364 measured body words with
+40 primary DORTS, TYMC and NTMC sources, including the DORTS public-art table
+and individual station plans. Incidents is 843 words with 16 primary DORTS,
+TRTC, New Taipei Metro and Control Yuan sources. Neither was padded or rewritten.
+
+Station naming was the remaining thin page. It grew from the Part 0 count of
+297 to 521 sourced body words and from nine to eleven primary sources. The full
+current Taipei rules establish the responsible bodies, committee, 500 m and
+six-character naming limits, 8% rename-petition threshold, one-quarter approval
+threshold, four-year wait after a failed vote, and the distinct 800 m / six-year
+appended-name rules:
+https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL043411. The complete
+36-page *New Taipei City Gazette, autumn issue 12, 2025* establishes order
+新北府捷土字第11417626291號 of 8 September 2025 and its action
+「LB08站：加註『新北市美術館』」:
+https://doc2-exthird.ntpc.gov.tw/NTPC_SODPUBLISH/FILE/0000000/PUBLISH/114/3/114312.pdf.
+
+### TBC
+
+The formal instruments and action dates for the DORTS-recorded former names at
+BL07, O12 and R18 remain TBC. The official 2017 New Taipei gazette was found,
+but the browser timed out and two direct full-file attempts stalled after
+partial 32 KB bodies instead of returning the 3.04 MB PDF. Its search snippet
+was not used; the failure and date are in the research file.
+
+### Contradicted the corpus
+
+No existing published value was contradicted. The new rules do, however,
+confirm why a current station list or engineering label cannot be treated as a
+rename instrument: the formal process ends with approval and publication.
+
+### Conflicts found
+
+No new source conflict was found. The existing Y17 conflict remains published:
+DORTS's planning record says 民生新埔 while the current operator list says
+新埔民生, with no fetched action document that explains the order change. The
+2025 LB08 action is explicitly an appended name, not a competing primary name.
+
+### Gates
+
+Targeted checks resolve 4,954 citations (4,763 primary / 191 secondary), keep
+claims at 11,419 sourced / 4,316 TBC / 0 asserted, and keep research clean at
+124 files with 527 dated checked-and-failed entries. The clean full verifier
+passed all 217 tests across 1,954 pages and 218,169 internal links, with no
+broken links, fragment failures, orphans, missing glyphs, accessibility errors
+or warnings. No new gate was required; the existing full-page citation,
+sentence-provenance, scope, font and accessibility checks cover the change.
+Navigation passed all 19 keyboard/touch checks; the independent full suite
+passed all 217 unit tests and all 17 fact cross-checks.
+
 ## Run 96 — Part 3, C371 rolling stock (23 August 2026)
 
 ### Sourced
