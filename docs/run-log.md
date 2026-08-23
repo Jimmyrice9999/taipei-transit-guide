@@ -14815,3 +14815,70 @@ scope, typography, geometry, colour and accessibility gates green.
 The independent navigation harness passed all 19 keyboard, touch, hover and
 history checks, and the full `npm test` suite passed 217 tests plus all 17 fact
 cross-checks.
+
+## Run 94 — Part 3, C321 rolling stock (23 August 2026)
+
+### Sourced
+
+Replaced the 117-word C321 scope stub with 757 words of sourced body prose and
+created its mirrored per-subject research file. DORTS's fleet profile identifies
+Siemens, 36 six-car trains / 216 cars and the operating specification:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html.
+Its contract inventory independently divides those trains among CH321 (11),
+CN331 (17) and CC361 (eight):
+https://www.gov.taipei/News_Content.aspx?n=EEC70A4186D4C828&s=C8602F8588914E91&sms=87415A8B9CE81B16.
+The DORTS carbody article establishes that China Steel assembled 108 cars from
+semi-knocked-down kits at Beitou Depot:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no35/files/basic-html/page26.html.
+
+The new central history is DORTS's full six-page investigation of the 15
+September 2003 derailment. It records the competing failure sequences, temporary
+protection, fleet-wide near-term work, final torque-arm redesign, completion on
+all 36 trains and revised vibration requirements for later procurements:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no35/files/basic-html/page27.html and
+https://ebook.dorts.gov.taipei/JRTST/ebook/no35/files/basic-html/page31.html.
+TRTC and National Audit Office records establish the 2015 overhaul and delayed
+communications renewal; the fixed-asset project statement and current budget
+establish the joint C321/C341 propulsion reset, its NT$2.77798 billion original
+budget and the schedule's extension through 2027.
+
+### TBC
+
+Original procurement award dates and prices, overseas production sites, car
+dimensions, empty mass, axle loads and current depot allocation remain TBC.
+The propulsion contractor/equipment supplier and actual completion date also
+remain TBC pending an opened award notice and final-acceptance record.
+
+### Contradicted the corpus
+
+The old page centred an alleged failed body-material/side-impact test, permanent
+deformation, added material and resulting extra weight. The full DORTS carbody
+and rolling-stock engineering sources do not report that episode, so it was
+removed. The unsupported current assignment to Tucheng and Nangang and the
+unverified Taiwan Rolling Stock/ABB renewal award were also not promoted.
+
+### Conflicts found
+
+AIDC inferred the derailment bolt failed before the torque-arm upper lug;
+Siemens inferred the lug failed first and caused the bolt fracture. Both are
+published, with DORTS's attributed assessment that the Siemens sequence better
+fit the component-recovery evidence. The Audit Office calls the communications
+scope both `36輛電聯車` (36 cars/vehicles) and `全部36列車` (all 36 trains) in the
+same finding; both wordings remain visible. The original propulsion plan ran
+2021–2026 while the current budget says 2021–2027; neither is treated as proof
+of completion.
+
+### Gates
+
+Claims are 11,249 sourced / 4,307 TBC / 32 asserted, with no new assertion and
+no baseline change. Citations are 4,872 resolved (4,662 primary / 210 secondary),
+and research is 111 files with 467 dated checked-and-failed entries. The first
+fresh build correctly found three new Han glyphs absent from the previously
+generated subset; regenerating from that export fixed the asset. The next full
+verifier correctly rejected two Mandarin quotations placed inside inline-code
+markup because code bypassed the `zh-Hant` wrapper. Rendering them as normal
+quoted prose fixed the defect, and the existing all-export language test proves
+the class. The clean verifier passed 217 tests across 1,954 pages and 218,013
+internal links with no broken links, fragments, orphans, accessibility errors or
+warnings. Navigation passed all 19 checks; the independent full `npm test` run
+passed 217 tests and all 17 fact cross-checks.
