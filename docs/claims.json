@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11429,
-    "tbc": 4308,
+    "sourced": 11434,
+    "tbc": 4307,
     "asserted": 0,
-    "meta": 49
+    "meta": 48
   },
   "files": [
     {
@@ -9603,10 +9603,10 @@
     {
       "file": "content/rail/metro/lines/airport-mrt.md",
       "sources": 18,
-      "sourced": 55,
-      "tbc": 2,
+      "sourced": 60,
+      "tbc": 1,
       "asserted": 0,
-      "meta": 3
+      "meta": 2
     },
     {
       "file": "content/rail/metro/lines/ankeng-lrt.md",

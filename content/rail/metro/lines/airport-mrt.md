@@ -7,7 +7,7 @@ aliases:
   - 機場捷運
   - Airport MRT
   - 桃園機場捷運
-updated: 2026-08-13
+updated: 2026-08-23
 hero:
   image: airport-mrt/hero
   alt: A blue-liveried Airport MRT train crossing an elevated viaduct at Guishan, Taoyuan, apartment towers and a road interchange below.
@@ -115,7 +115,7 @@ sources:
     accessed: 2026-08-12
     kind: primary
     lang: zh-Hant
-    note: "The builder's own project record for the New Taipei-managed portion: 路線全長51.03公里, 22 stations (15 elevated, 7 underground), construction of the Sanchong–Airport–Zhongli section and E&M systems started 2006年2月27日, planning report approved 93年3月9日 (9 March 2004), full-line operation began 106年3月2日 (2 March 2017)."
+    note: "The builder's own project record: route length 51.03 km, 22 stations (15 elevated, 7 underground), about 10.92 km underground and 40.11 km elevated, two depots, and total construction cost about NT$113.85 billion. It records the 2006-02-27 start for the Sanchong–Airport–Zhongli section and E&M systems, the 2004-03-09 plan approval, the 2006-09-25 start of the underground Sanchong–Taipei section after Taipei's urban-design objection, and full-line operation on 2017-03-02."
   - id: motc-a22
     title: "Press release: the Airport MRT extension's A22 Laojiexi Station formally opens"
     titleOriginal: 交通新聞稿－機場捷運延伸線A22老街溪站正式通車
@@ -244,6 +244,8 @@ sources:
     note: "Read in full. Founded 6 July 2010, capital NT$3 billion, ownership split Taoyuan 64.01% / New Taipei 29.32% / Taipei 6.67% by original construction-cost share. Renamed 25 December 2014 when Taoyuan County became a municipality. Headquarters at the Qingpu Depot site, 251 Linghang North Road Section 4, Dayuan District — beside A17 Linghang, not A18 Taoyuan HSR."
 ---
 
+## Overview
+
 The airport line is the network's odd one out three times over: it belongs to
 [Taoyuan Metro](/rail/operators/tymc/) rather than either Taipei
 operator[^tymc-about], its fares sit outside the Taipei distance
@@ -253,43 +255,60 @@ distinguished on the platform by the purple and blue liveries of the
 [2000-type](#rolling-stock) and [1000-type](#rolling-stock) trains that run
 it[^zh-2000-type][^zh-1000-type].
 
+## Route and alignment
+
 The station list beside this page is generated from Taiwan's TDX open-data
 platform and is current: all 22 stations, A1 through A22, including the
 non-standard code `A14a` for Airport Hotel Station — plain `A14` is reserved
 for the still-unbuilt Terminal 3 station[^tdx].
 
-## From feasibility study to opening: nearly three decades, depending how you count
+TDX's A1 route records 51.76 km to A22, while the New Taipei DORTS project
+record gives the line as 51.03 km and describes 22 stations, 15 elevated and
+seven underground[^tdx][^dorts-airport]. DORTS further describes approximately
+10.92 km of underground alignment and 40.11 km of elevated alignment, running
+from Taipei through Sanchong, the airport and the Taoyuan HSR area to the
+Zhongli side[^dorts-airport]. Those are different published measurements; the
+sources do not identify which engineering boundary accounts for the 0.73 km
+difference[^tdx][^dorts-airport].
 
-Sources genuinely disagree about when this line's history starts, because
-different bodies mean different things by "planning." A 1989–90 feasibility
-study by the Ministry of Transportation's Institute of Transportation
-Research is the earliest date found for the idea of a Taoyuan-area
-metro[^cna-2016-delays], though the source for that specific study is a
-search synthesis rather than a page read in full here, and it is marked
-accordingly. What is better sourced is the sequence that actually built the
-railway: central government decided in October 1996 to build it as a BOT
+## Planning and approvals
+
+Sources disagree about when this line's history starts because different
+bodies mean different things by "planning." The first fully verified
+institutional milestone is the central government's October 1996 decision to
+build it as a BOT
 (build–operate–transfer) concession, and Long Life International Development
 Co. won that concession in 1998[^zh-airport-mrt]. The BOT model collapsed on
 31 December 2002, when Long Life and the High Speed Rail Bureau agreed to
 terminate the contract[^zh-airport-mrt]. Government took over: MOTC
 designated the High Speed Rail Bureau as the project's builder on 28 October
 2003, and the central government approved the construction plan on 9 March
-2004[^tymc-history][^dorts-airport]. Construction of the Sanchong–Airport–
+2004[^tymc-history][^dorts-airport].
+
+## Construction history
+
+Construction of the Sanchong–Airport–
 Zhongli section and its E&M systems formally started 27 February
 2006[^dorts-airport]; TYMC's own history page instead marks 26 June 2006, the
 date of a ceremonial groundbreaking presided over by the
 Premier[^tymc-history] — two different milestones in the same year, not a
-contradiction.
+contradiction. DORTS records that Taipei rejected the originally elevated
+Sanchong–Taipei section on urban-design and land-use grounds; Taipei City
+agreed to fund the extra cost of underground construction, and that section
+formally started on 25 September 2006 after its design and construction were
+assigned to DORTS[^dorts-airport]. The detailed design ran from March 1998
+through 2002, according to the same project chronology[^dorts-airport].
 
 The opening date itself moved repeatedly. The earliest announced target was
-January 2009; by March 2016 it had changed six times[^cna-2016-delays]. An
-itemised date-by-date account of each of the six changes was not recovered
-from the sources read for this page — the one contemporaneous account found
-was only partially readable — so this page states the six-changes headline
-fact rather than a table it cannot support. The line finally opened **2
-March 2017**[^tymc-about][^dorts-airport].
+January 2009; by March 2016 it had changed six times[^cna-2016-delays]. The
+fetched report gives that count but not a complete dated list of each change.
+The line finally opened **2 March 2017**[^tymc-about][^dorts-airport].
+TYMC's chronology records the 99% system-stability test on 20 November 2016,
+Ricardo's safety certification on 2 December, initial inspection on 3–4
+December, final inspection on 29–30 December, the operating permit on 25 January
+2017 and trial service from 2 February[^tymc-history].
 
-## The Marubeni dispute — two figures confirmed, a widely repeated total not found anywhere
+## Engineering and contract disputes — two figures confirmed, a widely repeated total not found anywhere
 
 The main electromechanical contract (ME01) went to a consortium led by the
 Japanese trading house **Marubeni** (丸紅), with Kawasaki Heavy Industries and
@@ -305,8 +324,8 @@ in the same account[^cna-2017-marubeni]. Both of the Bureau's figures were
 independently corroborated by two further contemporaneous reports naming the
 same amounts and the same reasons.
 
-**A combined "NT$7.2 billion" total for this dispute circulates widely, and
-this page does not repeat it.** NT$2.5 billion plus NT$1.9 billion is NT$4.4
+**A combined "NT$7.2 billion" total for this dispute circulates widely.**
+NT$2.5 billion plus NT$1.9 billion is NT$4.4
 billion, not NT$7.2 billion, and no primary or secondary source read for this
 page — not the three contemporaneous 2017 news accounts, not
 zh.wikipedia's own article on the line, which contains no Marubeni monetary
@@ -321,7 +340,7 @@ figures, and Marubeni's name, are published here on the strength of three
 independent contemporaneous accounts; the total is not, because it could not
 be found stated anywhere.
 
-## Service patterns
+## Operations and service patterns
 
 Two services share the same track. The **express (直達車)**, in purple,
 calls at A1, A3, A8, A12 and A13; a peak-only enhanced express additionally
@@ -339,6 +358,13 @@ pattern above rests on TYMC's own timetable page rather than the generated
 station data[^tdx][^tymc-timetable].
 
 ![The underground platform at A1 Taipei Main Station, trains standing on both sides](/images/airport-mrt/station-800.webp "A1 Taipei Main Station, the line's Taipei terminus. — Littlebtc, CC BY-SA 4.0, Wikimedia Commons")
+
+## Depots
+
+The fully read line account names Luzhu Depot (蘆竹機廠) and Qingpu Depot
+(青埔機廠) as the two maintenance bases serving the Airport MRT[^zh-airport-mrt].
+The source does not publish a current set-by-set allocation between them, so
+that operational detail remains TBC.
 
 ## Rolling stock
 
@@ -369,7 +395,7 @@ so this page publishes the per-set reading[^zh-1000-type].
 Both fleets run at 100 km/h in service, with a 110 km/h design
 maximum[^zh-2000-type][^zh-1000-type].
 
-## In-town check-in
+## Stations and passenger facilities
 
 Free advance check-in and baggage drop operate at two stations: **A1 Taipei
 Main Station**, on B1, 06:00–21:30, and **A3 New Taipei Industrial Park
@@ -384,7 +410,7 @@ Airlines, EVA Air, UNI Air, Tigerair Taiwan, and the AirAsia group.** Treat
 this list as liable to change without notice, and reconfirm with the airline
 or station before relying on it.
 
-## The A22 extension
+## Extensions and depot interface
 
 **A22 Laojiexi** opened **31 July 2023**, the same day its operating permit
 was issued[^motc-a22]. MOTC's own account gives three causes for the delay
@@ -402,15 +428,11 @@ and budgets are TBC.** News reporting circulates a July 2028-to-around-2029
 slip for `A23`, attributed to a platform redesign for the Green Line
 connection, and a late-2027 target for `A14`, each with its own NT$ budget
 figure — none of it established from a source read in full here, still TBC.
-This page's own research file records a Railway Bureau project page for `A14`
-that returned no readable content, and a fresh re-fetch attempt made for
-this correction could not locate and read in full the specific news
-articles behind the widely-repeated numbers either — only further
-search-engine summaries repeating the same figures, TBC by the same
-standard. Settling either date needs a Railway Bureau project page or a
-dated news article read directly, not a summary of one.
+No fetched Railway Bureau project page or dated full article establishes either
+opening date or budget; settling them needs one of those primary records rather
+than a summary.
 
-## The financial turnaround
+## Ridership and finances
 
 TYMC's finances went from a NT$706 million negative net worth and a NT$1.067
 billion bank loan in 2022 to record profitability within three years. 2023

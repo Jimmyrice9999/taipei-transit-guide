@@ -15844,3 +15844,61 @@ and 534 dated checked failures; 217 unit tests; and clean accessibility, facts,
 geometry and CVD checks. `npm run cite`, `npm run nav`, `npm test` and `npm run verify`
 all passed. Generated links/unused audit JSONs remain uncommitted, and `probes/` is
 untracked as required.
+
+# Run 109 — rebuild Airport MRT line depth (23 August 2026)
+
+## Part 3 — Taoyuan Airport MRT
+
+### Sourced
+
+Reworked the line page from 1,837 to 1,920 Markdown-stripped body words and
+put it into a canonical 13-section structure: overview, route/alignment,
+planning, construction, engineering/contract disputes, operations, depots,
+rolling stock, stations/passenger facilities, extensions, ridership/finances,
+fares and sources. The DORTS Airport Line page was fetched in full at
+https://www.dorts.ntpc.gov.tw/about/route/npW0dxy4Z3Ex and adds the 10.92 km
+underground / 40.11 km elevated split, Taipei's decision to underground the
+Sanchong–Taipei section, its 25 September 2006 start, detailed-design dates,
+two depots and the NT$1,138.5 billion project-cost figure. TYMC's full history
+page was re-opened at https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/history.html
+for the stability test, Ricardo certification, inspections, permit, trial
+service and opening sequence. TYMC's full timetable at
+https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable.php
+was used for the current express, enhanced-express and commuter stopping
+patterns. MOTC's A22 release was re-fetched at
+https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04.
+
+### TBC
+
+The engineering boundary behind TDX's 51.76 km and DORTS's 51.03 km remains
+unresolved. A14 Terminal 3 and A23 Zhongli opening dates and budgets remain
+TBC; the fetched records do not establish them. The linked airport-operator
+airline list for in-town check-in returned HTTP 403 and was not promoted to a
+primary claim. Current set-by-set depot allocation remains TBC.
+
+### Contradicted the corpus
+
+The old page had the route structure and dates but did not expose DORTS's
+underground/elevated kilometer split, Taipei's urban-design decision, detailed
+design period, or the full pre-opening test sequence. Those details are now
+published from the full DORTS and TYMC pages. The unverified 1989–90 feasibility
+lead was removed from the article rather than published from a search synthesis.
+
+### Conflicts found
+
+TDX records 51.76 km to A22 while DORTS publishes 51.03 km. DORTS's project
+chronology gives 27 February 2006 for the Sanchong–Airport–Zhongli/E&M start;
+TYMC's history page gives 26 June 2006 for the ceremonial groundbreaking; both
+are retained as different milestones. The route record's NT$1,138.5 billion
+construction cost is kept distinct from other Airport MRT financial figures.
+
+### Verification and gate
+
+The first verify run caught one unsourced sentence asserting the measurement
+conflict; adding `[^tdx][^dorts-airport]` restored the zero-ASSERTED claims gate.
+Final verify passed: 1,954 pages, 218,210 internal links with no broken links,
+fragments or orphans; 4,988 citations (4,804 primary / 184 secondary); 11,434
+sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
+failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
+run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
+links/unused audits were restored and `probes/` was not staged.

@@ -18,7 +18,7 @@ secondary source read for this run** — see claim 8 below.
 
 # Taoyuan Airport MRT 機場捷運 (A)
 
-Run: 2026-08-12. Taoyuan Metro Corporation (TYMC, 桃園大眾捷運股份有限公司),
+Run: 2026-08-23. Taoyuan Metro Corporation (TYMC, 桃園大眾捷運股份有限公司),
 交通部鐵道局 (MOTC Railway Bureau, formerly 高速鐵路工程局 / High Speed Rail
 Bureau, the body that built the line before handing it to TYMC).
 
@@ -60,6 +60,18 @@ Taipei City DORTS's own project page for the line instead states: 「臺灣桃�
   start/end reference point — but nothing found here says which. The
   research-file lead's "51.03 km" (unsourced) happened to match the DORTS
   figure, not TDX's.
+
+The same DORTS page gives the physical split as approximately 10.92 km
+underground and 40.11 km elevated, with 15 elevated and seven underground
+stations, two maintenance depots and construction cost about NT$1,138.5
+billion. It records that Taipei's objection to an elevated Sanchong–Taipei
+section led to an underground redesign funded by Taipei City, with that section
+starting 25 September 2006; its chronology dates detailed design from March
+1998 through 2002. These are direct readings of the full page, not search
+snippets.
+- Source: 機場線, New Taipei City DORTS,
+  https://www.dorts.ntpc.gov.tw/about/route/npW0dxy4Z3Ex, accessed 2026-08-23,
+  PRIMARY, confidence High.
 
 ### 3. Planning did not begin in one single year — three distinct starting points exist across sources
 
@@ -513,6 +525,25 @@ unchanged pricing per a 2025 secondary report on TYMC's fare package.
   Trip.com), not a page this run fetched and read directly stating the fare
   table; confidence Low for the exact figure, though it is consistent
   across every source seen and matches the lead file.
+
+## Independent full-page verification — 23 August 2026
+
+The existing source set was re-opened as full pages before the structural pass.
+The operator pages for company history, timetable, check-in and ticketing were
+fetched directly from `https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/history.html`,
+`https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable.php`,
+`https://www.tymetro.com.tw/tymetro-new/tw/_pages/checkin/process.php` and
+`https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/ticket.html`.
+The DORTS project record was read at
+`https://www.dorts.ntpc.gov.tw/about/route/npW0dxy4Z3Ex`; MOTC's A22 release at
+`https://www.motc.gov.tw/ch/app/data/view?module=news&id=14&serno=03fcdf67-3c92-46b9-b79b-cc98b983dc04`;
+and the Executive Yuan and Audit Office sources used for other lines were not
+used as Airport-line evidence. The full-page reads confirm the route length
+conflict, station structure, dates, express stopping pattern, check-in hours,
+fare products and A22 delay causes already recorded above. The airport operator
+airline list remains unverified because the linked page returned HTTP 403; it is
+not promoted to a primary claim. No new source resolves the A14/A23 opening-date
+or budget gaps.
 
 ## Checked and failed
 
