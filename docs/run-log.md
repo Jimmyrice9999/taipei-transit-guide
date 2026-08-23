@@ -14882,3 +14882,42 @@ the class. The clean verifier passed 217 tests across 1,954 pages and 218,013
 internal links with no broken links, fragments, orphans, accessibility errors or
 warnings. Navigation passed all 19 checks; the independent full `npm test` run
 passed 217 tests and all 17 fact cross-checks.
+
+## Run 95 — Part 3, C341 rolling stock (23 August 2026)
+
+### Sourced
+
+Rebuilt C341 from 153 to 502 sourced words and added its subject research file.
+DORTS establishes CP341's six Siemens six-car trains / 36 cars, 2003 manufacture,
+September–November 2004 delivery and first in-house rolling-stock design:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html.
+The same records establish IGBT equipment, serial-network train control, the
+six-train torque-arm remedy and Bannan operation. City committee minutes record
+a later Siemens–TRTC procurement mediation; the joint reset plan records the six
+C341 trains within its 42-train, NT$2.77798 billion scope.
+
+### TBC
+
+The signed subcontract, award date/value, dimensions, mass, current depot roster,
+reset supplier and completion remain TBC.
+
+### Contradicted the corpus
+
+The old civil-contractor/Hyundai rejection/1.5-times-price story was not found in
+an opened primary and is now explicitly TBC rather than the page's premise.
+
+### Conflicts found
+
+No official fleet-value conflict was found. Reset schedules differ: the original
+plan says 2021–2026 and the current budget says 2021–2027; neither proves completion.
+
+### Gates
+
+Claims remain at 11,266 sourced / 4,309 TBC / 32 asserted, so the baseline did
+not move. Citations are clean at 4,878 resolved (4,668 primary / 210 secondary),
+and research is clean at 112 files with 472 dated checked-and-failed entries.
+The fresh full verifier passed 217 tests across 1,954 pages and 218,026 internal
+links with no broken links, fragment failures, orphans, missing glyphs,
+accessibility errors or warnings. Navigation passed all 19 checks. The
+independent `npm test` rebuild passed all 217 unit tests and 17 fact
+cross-checks.
