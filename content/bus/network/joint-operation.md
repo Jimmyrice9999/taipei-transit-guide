@@ -553,45 +553,6 @@ nineteen routes surfaced as a search result title, but the page returns HTTP 404
 nothing found in this site's searches puts the nineteen-route figure in the
 regulator's own words. It remains zh.wikipedia's, and secondary.
 
-## What this page does not yet say
-
-Deliberately, and the list is shorter than it was.
-
-- **Whether there is a central revenue pool at all.** The arrangement is widely
-  described as fare revenue pooled centrally and redistributed between
-  operators, which would make it neither a franchise nor a contracted network
-  but something closer to a regulated cartel. **On this project's evidence that
-  claim has no source.** The sentence circulates in zh.wikipedia, where a
-  targeted fetch confirmed it **carries no footnote**[^zh-taipei-bus]; the
-  English Wikipedia article repeats it and its reference list carries nothing
-  supporting it. The Public Transport Office's own introduction, read in full in
-  Chinese, does not describe it[^pto-intro], and neither does the
-  joint-operation committee's own account of what it does[^busgroup]. Six
-  Taipei regulations were found and read — route allocation and its repealed
-  predecessor, loss subsidy, fare-difference subsidy, the evaluation committee
-  and the service-indicator rules — and **none mentions pooling, apportioning or
-  redistributing fare revenue between operators**. Meanwhile the loss-subsidy
-  formula computes against revenue attributed to a single route and a single
-  operator[^law-loss-subsidy]. What would settle it: the 聯營契約 between the
-  operators, a 臺北市議會 committee record, or the 1981 聯合報 article behind the
-  四分法 claim above.
-- **Which specific trunk routes are green, blue and yellow.** The *rule* is now
-  sourced to the regulator[^pto-trunk-identity]; the *assignment* is not. TDX or
-  the PTO route guide should give it.
-- **A regulator source for the feeder-prefix colours.** That 紅/綠/藍/棕/橘 mean
-  metro lines rests on zh.wikipedia[^zh-taipei-bus]. Nothing this site found is a
-  PTO or TRTC publication saying it. The TRTC route-map PDFs and the December
-  1999 launch of 捷運接駁公車 are the obvious next targets for this site.
-- **What 通勤 denotes** on 通勤7, 通勤9, 通勤11 and 907通勤. Neither news account
-  nor zh.wikipedia's numbering section covers it.
-- **The current evaluation-committee rule**, since the one read is
-  repealed[^law-evaluation-committee], and whether service evaluation is still
-  twice-yearly.
-- **The operators themselves**, their histories and their cross-holdings.
-- **Fares, transfer discounts and concessions** beyond the two subsidy rules
-  above.
-- **The garages.**
-
 ## Sources
 
 Scale, categories, the founding history and the regulator's own account of the

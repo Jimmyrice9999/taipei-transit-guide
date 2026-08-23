@@ -2,7 +2,6 @@
 title: G18 / 綠18
 summary: Green-line feeder route G18 (綠18).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

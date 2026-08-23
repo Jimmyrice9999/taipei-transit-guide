@@ -33,12 +33,12 @@ export function getBuiltBusRouteGroups(): BusRouteGroup[] {
  * route is a service class of its own, not a feeder, so it gets no feeder-
  * line fact unless a specific route's `railJoins` says otherwise.
  */
-export const GROUP_LINE: Partial<Record<BusRouteGroup, { code: string; name: string; sourceId: string }>> = {
-  'colour-red': { code: 'R', name: 'Red Line (Tamsui–Xinyi)', sourceId: 'ebus-red' },
-  'colour-blue': { code: 'BL', name: 'Blue Line (Bannan)', sourceId: 'ebus-blue' },
-  'colour-green': { code: 'G', name: 'Green Line (Songshan–Xindian)', sourceId: 'ebus-green' },
-  'colour-brown': { code: 'BR', name: 'Wenhu Line', sourceId: 'ebus-brown' },
-  'colour-orange': { code: 'O', name: 'Orange Line (Zhonghe–Xinlu)', sourceId: 'ebus-orange' },
+export const GROUP_LINE: Partial<Record<BusRouteGroup, { code: string; operator: 'TRTC'; name: string; sourceId: string }>> = {
+  'colour-red': { code: 'R', operator: 'TRTC', name: 'Red Line (Tamsui–Xinyi)', sourceId: 'ebus-red' },
+  'colour-blue': { code: 'BL', operator: 'TRTC', name: 'Blue Line (Bannan)', sourceId: 'ebus-blue' },
+  'colour-green': { code: 'G', operator: 'TRTC', name: 'Green Line (Songshan–Xindian)', sourceId: 'ebus-green' },
+  'colour-brown': { code: 'BR', operator: 'TRTC', name: 'Wenhu Line', sourceId: 'ebus-brown' },
+  'colour-orange': { code: 'O', operator: 'TRTC', name: 'Orange Line (Zhonghe–Xinlu)', sourceId: 'ebus-orange' },
 }
 
 /**
@@ -77,6 +77,11 @@ export const GROUP_PATH_COLOUR: Record<BusRouteGroup, string> = {
 /** Folder title → line code, for accent colour and card badges. */
 export function getGroupLineCode(group: BusRouteGroup): string | undefined {
   return GROUP_LINE[group]?.code
+}
+
+/** The operator namespace paired with a feeder group's otherwise bare code. */
+export function getGroupLineOperator(group: BusRouteGroup): string | undefined {
+  return GROUP_LINE[group]?.operator
 }
 
 /**

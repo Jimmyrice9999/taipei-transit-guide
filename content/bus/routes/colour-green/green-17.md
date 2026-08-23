@@ -2,7 +2,6 @@
 title: G17 / 綠17
 summary: Green-line feeder route G17 (綠17).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

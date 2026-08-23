@@ -2,7 +2,6 @@
 title: G3 / 綠3
 summary: Green-line feeder route G3 (綠3).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

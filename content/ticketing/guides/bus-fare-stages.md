@@ -235,16 +235,3 @@ rides at unlimited distance on both Taipei's joint-operation network and New
 Taipei's city buses[^megacity-notice]. A pass holder does not pay per segment
 at all — there is no separate multi-segment surcharge or cap to interact
 with.
-
-## What this page does not yet say
-
-- **A complete, official list of Taipei's segment points.** Only two are
-  confirmed directly from a primary source; a longer secondary list exists
-  on Wikipedia but is unverified and self-describes as only the "common"
-  ones, not an exhaustive account.
-- **Taipei-proper's own segment-count distribution**, as opposed to New
-  Taipei's, which is established above from already-committed project data.
-- **What specifically defines a "distance-charged" (里程收費) bus route**, how
-  many exist, and how their fares are structured — named as an exception
-  category in an existing FAQ title, but not itself researched for this
-  page.

@@ -75,11 +75,3 @@ loop of the Maokong sightseeing bus and routes 小10 and
 researched Brown-line feeder routes, whose own confirmed corridor runs from
 富德 up toward this same Maokong tea-house area (see
 [BR15 / 棕15](/bus/routes/colour-brown/brown-15/)).
-
-## What this page does not yet say
-
-- **A primary source beyond the operator's own promotional page for the
-  night-view or tea-house-centre framing** — not independently corroborated
-  against a second source this run.
-- **Passenger volumes or capacity specific to this station**, as opposed to
-  the line-wide ridership figures already on the line page.

@@ -2,7 +2,6 @@
 title: G6 / 綠6
 summary: Green-line feeder route G6 (綠6).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

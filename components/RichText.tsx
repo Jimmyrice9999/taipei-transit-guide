@@ -229,8 +229,8 @@ export default function RichText({
           )
         }
 
-        const line = getLine(token.line, operator)
         const station = getStation(token.value, operator)
+        const line = getLine(token.line, station?.operator ?? operator)
         if (!badges || !line || !station) return <Fragment key={i}>{token.value}</Fragment>
 
         return (

@@ -84,14 +84,3 @@ Maokong[^gondola-system]. This site's separate research on the line's T16
 tower failure and closure history is on the
 [Maokong Gondola](/rail/cable/lines/maokong-gondola/) page, not repeated
 here.
-
-## What this page does not yet say
-
-- **Elevation.** Two figures circulate for this station in secondary,
-  unverified sources found this run — approximately 24 m and approximately
-  55 m — neither confirmed by an independently fetched primary or
-  full-page secondary source. Not asserted here; see the research file's
-  Checked and failed section.
-- **The gondola station's own opening ceremony or construction history**,
-  as distinct from the line-wide 4 July 2007 opening already covered on the
-  line page.

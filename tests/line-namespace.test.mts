@@ -6,6 +6,7 @@ import {
   resolveBareLine,
   type TdxLine,
 } from '../lib/lines.ts'
+import { GROUP_LINE } from '../lib/bus/route-groups.ts'
 
 const line = (LineID: string): TdxLine => ({
   LineID,
@@ -43,4 +44,10 @@ test('duplicate code within one operator is rejected', () => {
       ]),
     /Duplicate namespaced line identity: TMRT:G/,
   )
+})
+
+test('every feeder group carries an explicit operator namespace', () => {
+  for (const [group, identity] of Object.entries(GROUP_LINE)) {
+    assert.equal(identity.operator, 'TRTC', `${group} has no TRTC line namespace`)
+  }
 })

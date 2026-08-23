@@ -2,7 +2,6 @@
 title: G9Gengxin / 綠9耕莘
 summary: Green-line feeder route G9Gengxin (綠9耕莘).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

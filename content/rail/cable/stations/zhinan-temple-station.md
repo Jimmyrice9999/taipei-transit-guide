@@ -86,10 +86,3 @@ named specifically enough to record here rather than omit.
 
 It is the third of the line's four passenger stations, between Zoo South
 Station below and Maokong Station, the terminus, above[^gondola-system].
-
-## What this page does not yet say
-
-- **A primary (rather than Wikipedia) source for the dragon sculpture** —
-  not independently found this run.
-- **Passenger volumes or capacity specific to this station**, as opposed to
-  the line-wide ridership figures already on the line page.

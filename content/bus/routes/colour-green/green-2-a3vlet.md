@@ -2,7 +2,6 @@
 title: G2Right / 綠2右
 summary: Green-line feeder route G2Right (綠2右).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

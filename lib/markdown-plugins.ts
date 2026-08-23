@@ -128,8 +128,12 @@ export function rehypeRichText({
           continue
         }
 
-        const line = getLine(token.line, operator)
         const station = getStation(token.value, operator)
+        // Resolve the station first: its registry row carries the operator
+        // namespace needed when two systems reuse a line code (TRTC:G and
+        // TMRT:G). Resolving the bare line first made every G station look
+        // invalid as soon as Taichung Metro was added.
+        const line = getLine(token.line, station?.operator ?? operator)
 
         if (!line || !station) {
           onWarning({
@@ -141,7 +145,7 @@ export function rehypeRichText({
           continue
         }
 
-        const href = linkStations && !inAnchor ? getStationHref(token.value, operator) : null
+        const href = linkStations && !inAnchor ? getStationHref(token.value, station.operator) : null
         out.push({
           type: 'element',
           tagName: href ? 'a' : 'span',

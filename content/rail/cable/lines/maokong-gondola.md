@@ -372,17 +372,3 @@ also runs Taipei Arena and the Taipei Children's Amusement
 Park[^tmr-profile]. Cumulative ridership passed **40 million riders on 19
 May 2026**, ahead of the system's 20th operating anniversary in July
 2027[^gov-taipei-40m].
-
-## What is not yet on this page
-
-- **Standard cabin weight capacity.** No source found in this research gives
-  a weight figure to go with the 8-passenger limit.
-- **The exact date operation transferred** from TRTC directly to North Metro
-  Recreation Company — reported in search results as 1 July 2025, but not
-  confirmed here against a primary announcement page.
-- **Current daily or annual ridership**, as distinct from the all-time
-  cumulative total above. Taipei's open-data platform publishes a daily
-  ridership dataset for the gondola that this page has not yet drawn on.
-- **Part 2 of the technicians'-journal T16 article.** Part 1, used
-  throughout this page, is explicitly labelled as the first of two; no
-  working link to a second part was found.

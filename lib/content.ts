@@ -548,7 +548,11 @@ export async function getFolderContent(
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeSlug)
-    .use(rehypeRichText, { file: relative, onWarning: reportBadgeWarning })
+    .use(rehypeRichText, {
+      file: relative,
+      onWarning: reportBadgeWarning,
+      operator: toText(parsed.data.operator).toUpperCase() || undefined,
+    })
     .use(rehypeCitations, {
       sources,
       used,

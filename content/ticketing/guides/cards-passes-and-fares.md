@@ -685,24 +685,3 @@ more than 700 million uses, with the page updated on 13 March 2025[^tpass-takeup
 
 Those are dated cumulative totals, not a 2026 monthly sales rate, so no newer
 growth figure is inferred here[^tpass-takeup-2025].
-
-## What this page does not yet say
-
-- **Bus fares in detail.** The joint-operation network's own section-fare
-  structure (段) and where the section boundaries fall are not covered
-  here — a genuine gap for a future page, not a figure guessed at.
-- **Airport MRT, Danhai/Ankeng light rail and Maokong Gondola fares.** Figures
-  for these circulate widely but were not independently verified against a
-  primary source in the current ticketing pass, so none appear above.
-- **Whether EasyCard's 2009 "sole non-bank issuer" status ever formally
-  ended.** iPass and icash are both confirmed today as accepted TRA
-  electronic tickets[^pto-bus-cards], which requires their own issuer
-  licences, but when each was granted is not established here.
-- **A current EasyCard circulation figure.** The 98.32 million figure above
-  is dated to October 2022; nothing more recent was fetched and confirmed
-  this run.
-
-- **A complete current icash non-transit and refund catalogue.** The official
-  transport PDF was fetched, but the current icash web pages needed to settle
-  the wider question did not return a usable full page; the gap is recorded
-  rather than filled from a third-party list.

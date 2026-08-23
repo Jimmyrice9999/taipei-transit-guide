@@ -13,7 +13,7 @@ import RichText from '@/components/RichText'
 import { getFolder, getFolderContent } from '@/lib/content'
 import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
 import { getNewTaipeiRouteSubgroup, NEW_TAIPEI_SUBGROUPS } from '@/lib/bus/new-taipei'
-import { getBuiltBusRouteGroups, getGroupLineCode } from '@/lib/bus/route-groups'
+import { getBuiltBusRouteGroups, getGroupLineCode, getGroupLineOperator } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
 type Props = { params: Promise<{ group: string }> }
@@ -57,6 +57,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
   const routes = getBusRoutesByGroup(group as BusRouteGroup).filter((route) => hasOverlay(group, route.canonicalSlug))
   const folderContent = await getFolderContent(['bus', 'routes'], group)
   const lineCode = getGroupLineCode(group as BusRouteGroup)
+  const lineOperator = getGroupLineOperator(group as BusRouteGroup)
   const subgroups = group === 'new-taipei'
     ? NEW_TAIPEI_SUBGROUPS.map((subgroup) => ({
         ...subgroup,
@@ -73,6 +74,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
       search={`${route.names.en} ${route.names.zh_tw} ${route.canonicalSlug}`}
       summary={`${route.sourceCities.join(', ')} · ${route.operatorIds.length} current operator record${route.operatorIds.length === 1 ? '' : 's'}`}
       line={lineCode}
+      operator={lineOperator}
       /* A bus route's number is its own; a collision with a metro station code
          is a coincidence of two numbering schemes. See RichText's `badges`. */
       badges={false}
@@ -80,7 +82,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
   ))
 
   return (
-    <PageShell accent={getAccent(lineCode)}>
+    <PageShell accent={getAccent(lineCode, lineOperator)}>
       <HanContentSubset />
       <Breadcrumbs trail={[{ label: 'Bus', href: '/bus/' }, { label: 'Routes', href: '/bus/routes/' }, { label: folder.title }]} />
       <BackLink href="/bus/routes/" label="Routes" />

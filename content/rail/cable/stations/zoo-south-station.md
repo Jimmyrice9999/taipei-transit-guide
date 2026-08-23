@@ -78,11 +78,3 @@ gates[^gondola-stations-zoo-south]. Structurally it is an elevated station
 with two above-ground floors and side platforms[^wiki-zoo-south]. It is the
 second of the line's four passenger stations, between Zoo Station below and
 Zhinan Temple Station above[^gondola-system].
-
-## What this page does not yet say
-
-- **Elevation.** No primary or full-page secondary source found this run
-  gives a specific figure for this station.
-- **The exact reason for the 2015 rename** — the change itself is dated and
-  sourced, but no primary announcement explaining why 動物園內站 was
-  considered a worse name than 動物園南站 was found this run.

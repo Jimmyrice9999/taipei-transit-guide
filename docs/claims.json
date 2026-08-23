@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11199,
-    "tbc": 4305,
+    "sourced": 11197,
+    "tbc": 4303,
     "asserted": 32,
-    "meta": 67
+    "meta": 62
   },
   "files": [
     {
@@ -315,10 +315,10 @@
     {
       "file": "content/bus/network/joint-operation.md",
       "sources": 13,
-      "sourced": 41,
+      "sourced": 40,
       "tbc": 2,
       "asserted": 0,
-      "meta": 5
+      "meta": 4
     },
     {
       "file": "content/bus/network/_index.md",
@@ -9430,7 +9430,7 @@
       "sourced": 52,
       "tbc": 1,
       "asserted": 0,
-      "meta": 2
+      "meta": 0
     },
     {
       "file": "content/rail/cable/lines/_index.md",
@@ -9462,15 +9462,15 @@
       "sourced": 8,
       "tbc": 1,
       "asserted": 0,
-      "meta": 2
+      "meta": 1
     },
     {
       "file": "content/rail/cable/stations/zoo-station.md",
       "sources": 4,
       "sourced": 7,
-      "tbc": 2,
+      "tbc": 1,
       "asserted": 0,
-      "meta": 1
+      "meta": 0
     },
     {
       "file": "content/rail/cable/stations/_index.md",
@@ -9642,7 +9642,7 @@
     },
     {
       "file": "content/rail/metro/lines/sanying-line.md",
-      "sources": 9,
+      "sources": 6,
       "sourced": 23,
       "tbc": 2,
       "asserted": 0,
@@ -10004,14 +10004,14 @@
       "file": "content/ticketing/guides/bus-fare-stages.md",
       "sources": 9,
       "sourced": 21,
-      "tbc": 1,
+      "tbc": 0,
       "asserted": 0,
       "meta": 1
     },
     {
       "file": "content/ticketing/guides/cards-passes-and-fares.md",
       "sources": 31,
-      "sourced": 78,
+      "sourced": 77,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

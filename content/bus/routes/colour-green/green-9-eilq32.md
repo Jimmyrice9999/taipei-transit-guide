@@ -2,7 +2,6 @@
 title: G9Beixin / 綠9北新國小
 summary: Green-line feeder route G9Beixin (綠9北新國小).
 updated: 2026-08-18
-line: G
 facts:
   - label: Service class
     value: MRT green-line feeder

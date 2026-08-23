@@ -14,7 +14,7 @@ import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 import { getFolder, getPageFromFile } from '@/lib/content'
 import { getBusRoutesByGroup, type BusRouteGroup } from '@/lib/bus/routes'
-import { getBuiltBusRouteGroups, getGroupLineCode } from '@/lib/bus/route-groups'
+import { getBuiltBusRouteGroups, getGroupLineCode, getGroupLineOperator } from '@/lib/bus/route-groups'
 import { getAccent } from '@/lib/lines'
 
 type Props = { params: Promise<{ group: string; slug: string }> }
@@ -70,7 +70,9 @@ export default async function BusRoutePage({ params }: Props) {
   if (!result) notFound()
   const { route, page } = result
   const folder = getFolder(['bus', 'routes'], group)
-  const accent = getAccent(getGroupLineCode(group as BusRouteGroup))
+  const lineCode = getGroupLineCode(group as BusRouteGroup)
+  const lineOperator = getGroupLineOperator(group as BusRouteGroup)
+  const accent = getAccent(lineCode, lineOperator)
   const routeTitle = `${route.names.en} / ${route.names.zh_tw}`
 
   return (

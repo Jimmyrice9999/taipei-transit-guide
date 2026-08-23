@@ -14638,3 +14638,65 @@ no errors or warnings, all 212 unit tests, 4,667 citations, 10,845 sourced
 claims / 4,305 TBC / 32 asserted, 108 research files with 452 checked failures,
 and geometry/CVD checks. Generated audit JSONs were restored; `probes/` remains
 untracked.
+
+## Run 91 — Parts 0 and 1, state audit and published-scope gate (23 August 2026)
+
+### Part 0 — full state audit
+
+Measured body prose across the live corpus rather than trusting the brief. The
+ten MRT line pages are already deep: 625–3,411 words, all above 300. The actual
+under-300 backlog is 1,021 of 1,051 bus routes; 83 of 214 rail/gondola/TMRT
+stations; four rail operators; all three bus models; nine of eleven depot/site
+pages; five of seven rolling-stock pages; station naming at 297 words; 22
+YouBike browse pages; all four gondola stations; and all 18 TMRT stations.
+Ticketing and ferry pages are already above 300. Fifty-six Markdown pages have
+no h2/h3 structure: 22 YouBike browse pages, six depots, five rolling-stock
+pages, four rail operators, the TMRT Green Line and its 18 station pages.
+
+The pre-技術彙刊 families are the seven rolling-stock pages, eight MRT depots,
+four rail-history pages and ten MRT line pages. The line/history material is
+already deep; the rolling-stock and depot families remain the old thin core.
+All four rail operator pages are thinner than their line children. No MRT line
+page is now thinner than its stations. Browse indexes are intentionally much
+shorter than child detail pages and were recorded separately from entity-parent
+inversions.
+
+### Part 1 — published scope statements
+
+The integrity sweep found nine reader-facing pages with explicit “what this
+page does not yet say” or “not yet on this page” sections. The Sanying page had
+the same scope section duplicated. Removed those reader-facing project-status
+sections from joint operation, the two ticketing guides, the gondola line, all
+four gondola stations and Sanying; the underlying research records remain the
+place for failed searches and gaps. Removed three Sanying source entries that
+became unused with the duplicated scope prose.
+
+Added `tests/scope-statements.test.mts` as a permanent gate. It was run against
+the defect first and failed with exactly the nine files, then passed after the
+fix. Citation resolution remains clean at 4,855; claims remain at 32 asserted,
+with the ratchet and baseline untouched. Repeated frontmatter values were
+audited: the high-frequency values are declared service classes,
+municipalities, fare classes and TMRT structure/operator facts, not a repeated
+numeric placeholder like the former 99 km defect.
+
+### Part 1 — line and station namespaces
+
+The full production build found a defect hidden from the earlier unit sweep:
+all 17 green-feeder overlays carried a bare `line: G`. Since TRTC and TMRT now
+both publish G, those pages warned and fell back to the neutral site accent.
+The feeder-group registry now pairs every MRT feeder code with `operator:
+TRTC`; group cards, group pages and route pages pass that namespace to line
+resolution. The redundant 17 bare green-line fields were removed.
+
+The same collision made valid inline TRTC station codes render as plain text
+across bus route and public-art pages. Rich-text rendering now resolves the
+station first and uses that registry row's operator to resolve its line. The
+Taichung system and station indexes declare `operator: TMRT`, so their reused
+G10–G17 codes resolve to Taichung stations. The literal `G17` inside a Taoyuan
+YouBike station name is code-formatted as an explicit non-station token.
+
+Added namespace regressions to `tests/line-namespace.test.mts` and
+`tests/markdown.test.mts`. Deliberately changing the green feeder namespace to
+TMRT failed the first gate; deliberately restoring line-first rich-text
+resolution failed the second on TRTC G17. Both defects were then restored and
+the targeted tests passed.

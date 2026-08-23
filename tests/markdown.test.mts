@@ -14,7 +14,7 @@ import matter from 'gray-matter'
 
 import { tokenize, isPlain, STATION_CODE_PATTERN } from '../lib/text-tokens.ts'
 import { getStation } from '../lib/stations.ts'
-import { getAllPages, getPage, getSections, getTypes } from '../lib/content.ts'
+import { getAllPages, getFolderContent, getPage, getSections, getTypes } from '../lib/content.ts'
 import { getLine } from '../lib/lines.ts'
 
 const CONTENT = path.join(process.cwd(), 'content')
@@ -110,6 +110,15 @@ test('badges render as spans carrying the line colours', async () => {
     page.html.includes(`--badge-fg:${line.badgeFg}`),
     'badge does not carry the derived foreground',
   )
+})
+
+test('colliding G station codes render in the page or folder operator namespace', async () => {
+  const trtc = await getPage('rail', 'history', 'public-art')
+  assert.match(trtc.html, /title="G17 Taipei Arena"/, 'TRTC G17 did not render in cross-cutting prose')
+
+  const tmrt = await getFolderContent(['rail'], 'tmrt')
+  assert.match(tmrt.html, /title="G10 Shui-an Temple"/, 'TMRT G10 resolved to the TRTC station')
+  assert.doesNotMatch(tmrt.html, /title="G10 Chiang Kai-Shek Memorial Hall"/)
 })
 
 test('every badge in rendered content resolves to a real station', async () => {

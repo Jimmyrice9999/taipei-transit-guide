@@ -129,33 +129,6 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Announces 06:00–24:00 service for 16–31 August and repeats that stored-value-card taps are free during the trial.
-  - id: ntmetro-stations
-    title: Sanying Line stations
-    titleOriginal: 三鶯線車站
-    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
-    url: https://www.ntmetro.com.tw/basic/?node=10164
-    accessed: 2026-08-14
-    kind: primary
-    lang: zh-Hant
-    note: The operator's current table of LB01–LB12 station codes, names, addresses and running order.
-  - id: dorts-sanying-route
-    title: Sanying Line project route and stations
-    titleOriginal: 三鶯線
-    publisher: New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局)
-    url: https://www.dorts.ntpc.gov.tw/about/routeInfo/1MJjdJr7dAv6
-    accessed: 2026-08-14
-    kind: primary
-    lang: zh-Hant
-    note: The builder's current project station list and its notes on appended station names.
-  - id: ntpc-sanying-landmark-coordinates
-    title: New Taipei City important landmarks information
-    titleOriginal: 新北市重要地標資訊
-    publisher: New Taipei City Government Research, Development and Evaluation Commission (新北市政府研究發展考核委員會)
-    url: https://data.ntpc.gov.tw/api/datasets/6dcff24a-838c-40fb-a9df-f1160afafe84/json?page=0&size=3000
-    accessed: 2026-08-14
-    kind: primary
-    lang: zh-Hant
-    note: Official 捷運站 records for all twelve Sanying stations, publishing TWD97 point fields used for the displayed WGS84 coordinates.
 ---
 
 Taiwan opened a new railway six weeks ago and, as of this page's writing, you
@@ -201,33 +174,5 @@ culture, and character figures from the Atayal and Paiwan
 peoples[^ltn-sanying-2026]. No published schedule says when it runs, which is
 presumably part of why chasing it has become a small local sport — but that
 last observation is this page editorialising, not a sourced claim.
-
-## What is not yet on this page
-
-- **Rolling stock detail.** The trains are reported as Hitachi-built, but the
-  accounts found so far disagree on which Hitachi plant built them, and the
-  fleet size and speed figures circulating are single-source. A dedicated
-  rolling stock page waits until the operator's or builder's own record can
-  be cited. Marked TBC above rather than borrowed.
-- **The depot.** zh.wikipedia names 三峽機廠 in Sanxia[^zh-sanying]; nothing
-  else about it is established here yet.
-- **Station pages and coordinates.** TDX still has no Sanying station dataset.
-  The twelve station pages already exist in the manually sourced registry,
-  built from NTMC/DORTS primary station material[^ntmetro-stations][^dorts-sanying-route].
-  Their displayed coordinates come from the official New Taipei landmark
-  records' published TWD97 point fields, converted to WGS84 without map
-  geocoding[^ntpc-sanying-landmark-coordinates].
-- **The extension.** An extension toward Bade in Taoyuan has Executive Yuan
-  approval[^zh-sanying]; its state of construction is not established here.
-
-## Why this page exists already
-
-This site's usual pattern is depth before breadth — one line finished
-properly before the next is started. The Sanying Line jumps the queue for a
-reason: it is six weeks old, English coverage is effectively nonexistent,
-and the facts above are the ones that rot fastest — trial dates, hours,
-fares. They are cited to the operator's own announcement, snapshotted, and
-dated, so that when the trial ends this page can say what changed rather than
-quietly rewriting itself.
 
 See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Station naming and renames](/rail/history/station-naming/).

@@ -2,6 +2,7 @@
 title: Stations
 description: Eighteen Green Line stations in TDX running order, with their siting, contract context and published station design.
 order: 2
+operator: TMRT
 sources:
   - id: tdx-tmrt
     title: Taiwan MOTC TDX rail records for TMRT
