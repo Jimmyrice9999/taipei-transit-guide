@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11395,
-    "tbc": 4314,
+    "sourced": 11419,
+    "tbc": 4312,
     "asserted": 0,
     "meta": 52
   },
@@ -9642,9 +9642,9 @@
     },
     {
       "file": "content/rail/metro/lines/sanying-line.md",
-      "sources": 6,
-      "sourced": 23,
-      "tbc": 2,
+      "sources": 12,
+      "sourced": 47,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },

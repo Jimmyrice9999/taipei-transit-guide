@@ -15518,3 +15518,91 @@ The final verifier passed 217 tests across 1,954 pages and 218,178 internal
 links; claims are 11,395 sourced / 4,314 TBC / zero asserted. Navigation passed
 all 19 checks. The independent full suite passed 217 unit tests and all 17 fact
 cross-checks.
+
+## Run 105 — Part 3, Sanying Line technical rebuild (23 August 2026)
+
+### Audit finding and changed depth
+
+Sanying was the thinnest line page in the Part 0 audit: 396 whitespace words,
+six sources and only two body sections. Its research file still described
+itself as unpublished, carried unverified secondary leads, and had a fleet unit
+wrong. The rewritten content has 1,689 body words, canonical Overview, Route and
+alignment, Planning and approvals, Engineering and construction, Stations and
+interchanges, Rolling stock, Operations, Bade extension and conflicts sections.
+All 12 cited sources are primary, and primary content remains visible Markdown.
+
+The new account covers the full street and river alignment, approval and
+revision sequence, the rejected underground Bannan extension, alignment
+geology, well-versus-pile foundation selection, the 13,452 m bridge schedule,
+Sanxia and Dahan special bridges, U-girder design, BIM and design-build
+procurement, station forms, the delivered Hitachi fleet and early operations.
+The 20.4 MB technical report was downloaded in full, all 28 pages extracted,
+and relevant pages rendered and read after the browser text fetch rejected its
+size; no search snippet was used as evidence.
+
+### Sources
+
+- New Taipei DORTS, live Sanying project record:
+  <https://www.dorts.ntpc.gov.tw/about/route/1MJjdJr7dAv6>
+- New Taipei Metro, Sanying electric multiple units:
+  <https://www.ntmetro.com.tw/basic/?mode=detail&node=864>
+- New Taipei City, 2014 early-works release:
+  <https://www.ntpc.gov.tw/ch/home.jsp?dataserno=97560cd17a0812998e7100388c4f7a3d&id=e8ca970cde5c00e1>
+- New Taipei DORTS, 2018 elevated-alignment response:
+  <https://www.ntpc.gov.tw/ch/home.jsp?dataserno=bff303d28030a2dd5daf2a0f641d7702&id=e8ca970cde5c00e1>
+- New Taipei City, 2015 NDC-stage plan:
+  <https://www.ntpc.gov.tw/ch/home.jsp?dataserno=42f3d489a109908ddf71d0e3978bbe5b&id=e8ca970cde5c00e1>
+- New Taipei DORTS, first-month operations:
+  <https://www.ntpc.gov.tw/ch/home.jsp?dataserno=07031ea7bcea44638f451e7a0530a6a4&id=e8ca970cde5c00e1>
+- New Taipei DORTS, Bade extension:
+  <https://www.dorts.ntpc.gov.tw/about/route/90V4drGQZqEN>
+- New Taipei DORTS, *捷運三鶯線建設計畫的推動歷程與精進作為*:
+  <https://www.dorts.ntpc.gov.tw/admin/Content/Upload/file/20211117/0a63f435-a113-4405-88a0-6c95b39f797d.pdf>
+
+The operator opening, MOTC final-inspection, August-hours and fare notices were
+also reopened or retained as full primary records. Original-language support,
+publisher, confidence and checked failures are now recorded claim by claim in
+the research file.
+
+### TBC, contradictions and conflicts
+
+Final project expenditure, the awarded design-build consortium, the Japanese
+manufacturing plant, train delivery chronology, ordinary paid-service start and
+as-built bridge quantities remain TBC; the research file names the source
+family that would settle each.
+
+The corpus's **29 cars** lead was contradicted: the operator says **29 trains**,
+each of two cars. The old unspecified “Hitachi Rail Italy” manufacturing claim
+was split into Hitachi Rail design and Japanese manufacture; no plant is named.
+The former 2035 Bade estimate is contradicted by the live official header's
+2034. The old negative search for random themed-train dispatch was also wrong:
+the full 25 July bureau release explicitly says 「隨機發車」. The unverified
+40,000 daily-ridership forecast did not survive; a 2014 primary instead gives
+118,600, while the engineering report publishes design-hour loads.
+
+Three official project costs are published without choosing: NT$55.022bn in
+October 2014, NT$50.5bn at the 2015 plan stage and in the 2018 report, and
+NT$50.200bn on the current builder page. Journey/headway values are likewise
+kept by measurement: 23 minutes / three minutes in the 2014 forecast,
+2.2 minutes LB01–LB08 and 4.4 minutes LB08–LB12 in the 2018 design pattern,
+30 minutes / six minutes at opening, and a 2.2-minute special-event service on
+4 July 2026. The live Bade page contradicts itself: its history records
+Executive Yuan approval on 1 August 2025 while its introduction says
+「本計畫尚未核定」.
+
+### Gates
+
+The first claim pass caught two sentence-level citations attached one sentence
+late; moving them produced zero asserted claims. The first full verifier then
+caught a spec unit embedded in its value and an English gloss that matched the
+scope-statement prohibition. Both were corrected, and planned cross-system
+station codes were code-formatted rather than rendered as current Sanying
+badges. The build's existing font gate caught the newly introduced Han glyph
+`掀`; `npm run fonts` regenerated the committed subset. No new checker was
+needed because the permanent claims, spec-shape, scope, badge and font gates
+each failed on its defect before the correction.
+
+The final verifier passed 217 tests across 1,954 pages and 218,187 internal
+links. Citations resolve at 4,966 (4,777 primary / 189 secondary); claims are
+11,419 sourced / 4,312 TBC / zero asserted; research is clean at 124 files /
+531 dated checked-and-failed entries.
