@@ -4,7 +4,7 @@
 Nothing here is citable until it has been checked against a primary source —
 see `.claude/skills/transit-research/SKILL.md`.**
 
-**Version 2.0 — 12 August 2026.**
+**Version 2.1 — 23 August 2026.**
 **Status: verified against primary sources this run. Supersedes the version
 headed "Version 1.0 — 6 August 2026, Status: research. Not published."** That
 earlier version is preserved in git history; this file replaces it as the
@@ -260,6 +260,121 @@ but not fully reconciled here.
 
 ---
 
+## Independent full-page verification — 15–23 August 2026
+
+The following primary pages were fetched and read in full after the earlier
+lead pass. They are recorded here so the line page is rebuilt from the DORTS
+technical corpus rather than from the transferred appendix.
+
+### Songshan planning, construction and opening
+
+*Songshan Line Route Planning and Operating Pattern* (`捷運技術` no. 52,
+DORTS, pp. 6–16) gives the project sequence: first-network approval in 1986,
+network review in 1993, route report in 1994, route-plan approval in 1997,
+financial approval in 2004, construction in 2006 and opening in 2014. Its
+route table describes an 8.5-km fully underground section with eight stations,
+including Ximen, and identifies the station sequence used in the contemporary
+engineering article. The article says the difficult depot land led the project
+to use Xindian Depot for routine maintenance. The same article records the
+post-opening operating pattern as independent coloured lines and gives network
+ridership context. Original text read: `松山線於103年11月15日通車……結束各路線跨線運行的過渡模式`.
+URL: <https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page6.html>
+PRIMARY, High confidence (official DORTS technical publication; pages 6–16
+were fetched).
+
+*Green Songshan Line Breakthrough — Taipei Metro Network Complete* (`捷運技術`
+no. 50, DORTS, pp. 141–147) supplies the civil-package history and engineering
+detail. DORTS lists CG590A, CG590B and CG590C with their start dates, designers,
+contract values and contractors; describes tunnelling below operating TRA and
+HSR corridors, old foundations and soft clay; and records the 274-m tail track
+with six-train storage. It also gives the 499.3億元 plan figure, demand target,
+and the 2014 public-art and station-dimension table. Original text read:
+`松山線全長約8.5公里，共設8座地下車站，並設置約274公尺長之尾軌`.
+URL: <https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page141.html>
+PRIMARY, High confidence (official article; pp. 141–147 fetched; pp. 145 and
+148–151 separately recorded as failed below).
+
+The DORTS Beimen heritage article (`捷運北門站周邊古蹟保護處理`, `捷運技術`
+no. 52, pp. 160–167) says the contract required work to stop when relics were
+found, with Cultural Heritage Preservation Law procedures and expert review.
+It records the overlap between Beimen station and the 1909 Taipei Workshop,
+the relocation of the workshop by about 30 m after reinforcement and
+design-build changes, and foundations, drains and artefacts assessed in the
+station area. Original text read: `施工中如發現疑似古蹟，應立即停工，並依文化資產保存法辦理`.
+URL: <https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page160.html>
+PRIMARY, High confidence (official article; pp. 160–167 fetched except p. 162).
+
+DORTS's power-system article (`捷運松山線供電系統創新設計與施工`, `捷運技術`
+no. 52, p. 120 and following pages) documents 161-kV and 22-kV gas-insulated
+equipment, optical-fibre temperature monitoring for tunnel cables, stray-current
+monitoring and high-impedance ground-fault warning. It places the Songshan main
+substation underground at Little Arena station. URL:
+<https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page120.html>
+PRIMARY, High confidence (official article; p. 120 and p. 124 were fetched).
+
+The Executive Yuan's opening notice confirms the 15 November 2014 opening and
+the split of the former Tamsui–Xindian through service into Songshan–Xindian
+and Tamsui–Xiangshan. It repeats the fully underground form, the eight-station
+description and the 499.3億元 plan figure. URL:
+<https://www.ey.gov.tw/Page/9277F759E41CCD91/aaa388c9-972a-4f6c-95f7-babda855e27f>
+PRIMARY, High confidence (Executive Yuan release fetched in full).
+
+The National Audit Office's four-page special-final-account report gives a
+different accounting layer: a 530億4,206萬元 expenditure budget and an audited
+final expenditure of 502億9,566萬元, alongside the DORTS 499.3億元 project-plan
+figure. These values are published as labelled accounting measures, not merged.
+Landing page: <https://www.audit.gov.tw/p/405-1000-3628%2Cc280.php?Lang=zh-tw>;
+full report: <https://auditreport.audit.gov.tw/ServerFile/Get/637927033231617129357c12bea3f0498585d044e95ec0ec0d05d>.
+PRIMARY, High confidence for the four-page report read; the report's detailed
+tables beyond that fragment remain unexamined.
+
+### Xindian construction, track and operation
+
+DORTS's construction-management article (`捷運工程技術文件管理實務`, no. 15,
+p. 36) gives an independently worded Xindian main-project length of 10.55 km,
+a 1.53-km branch, twelve underground stations and a flat depot, and explains
+that CH218/CH221/CH222/CH224 were internationally tendered packages where
+domestic capability was insufficient. Original text read:
+`新店線主線長約10.55公里，支線長約1.53公里`.
+URL: <https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page36.html>
+PRIMARY, High confidence (official technical book page fetched in full).
+
+DORTS's track article (`新店線軌道工程`, `捷運技術` no. 39, p. 21) identifies
+CT521/CT521A track from CKS Memorial Hall to Xindian and the depot, with 33.2 km
+of track and eleven stations in its project description. URL:
+<https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html>
+PRIMARY, High confidence (official technical article page fetched in full).
+
+The geotechnical article (`新店線CH218標潛盾施工`, `捷運工程` no. 6, p. 274)
+records monitoring of ground displacement and water pressure during early
+shield tunnelling, adjustment of face pressure, settlement reduction from
+54 mm to about 25 mm, and secondary grouting/backfill. URL:
+<https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page274.html>
+PRIMARY, High confidence (official technical article page fetched in full).
+
+The technical-document-management page (`臺北都會區大眾捷運系統技術文件管理實務`,
+no. 17, p. 23) uses yet another historical description: Songshan about 8.5 km
+and seven underground stations including Ximen; Xindian from CKS Memorial Hall
+to Xindian 11.2 km and ten stations, with the Xiaobitan branch and depot
+described separately. That wording is retained as a conflict, not silently
+corrected. URL: <https://ebook.dorts.gov.taipei/ebook/no17/files/basic-html/page23.html>
+PRIMARY, High confidence (official page fetched in full).
+
+### Current operations and legacy station labels
+
+TRTC's full February 2024 clarification says Songshan–Taipower Building trains
+run at about three-minute peak intervals while Xiaobitan insertion creates
+some six-minute gaps on the shared section. It confirms that the branch shares
+Qizhang station infrastructure. URL:
+<https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=089B9ADABE51C4E3>
+PRIMARY, High confidence (official release fetched in full).
+
+The 2014 technical article's station labels G13/G14/G16/G17/G18/G19/G21/G22
+are contemporary working numbers. The current TDX sequence is G12 Ximen,
+G13 Beimen, G14 Zhongshan, G15 Songjiang Nanjing, G16 Nanjing Fuxing, G17
+Taipei Arena, G18 Nanjing Sanmin and G19 Songshan. The page therefore treats
+the article's labels as historical identifiers rather than current badges.
+
 ## Conflicts
 
 ### Total route length
@@ -341,6 +456,12 @@ content page.
 The appendix preserves the report’s additional claims about Xindian, Xiaonanmen, opening chronology, station counts and route-length scope. They remain leads only. The report’s station-count conflict (two DORTS readings of 8 versus one reading of 7) remains a conflict, not a corrected value; its consolidated G-line length remains TBC. See the full transferred appendix after the existing corpus sections.
 
 ## Checked and failed
+
+
+- **`捷運技術` no. 50 page 145 and no. 52 page 162** — fetched 2026-08-15;
+  the ebook server returned an internal/cache error instead of page content on
+  each attempt. The surrounding pages were read in full and no claim below
+  depends on text from the failed pages.
 
 
 - **buzzorange.com/citiorange/2015/12/07/mrt-issue/ political-pressure account** — a CitiOrange feature reportedly describing the Xiaobitan campaign as driven by 中央新村 (a neighbourhood of retired National Assembly members) and quoting a named DORTS director (江耀宗) admitting political pressure via the Ministry of Transportation. Checked 2026-08-12, failed: the server returned HTTP 403 Forbidden on two attempts, so the claim could not be read in full — only a WebSearch snippet surfaced it, which this project's rules do not treat as sufficient. A different fetch of thenewslens.com/article/32247 independently corroborates the general shape of the claim (political pressure, 中央新村) without the director's name or the cost figure, and that narrower version is what the content page uses.

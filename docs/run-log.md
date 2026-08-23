@@ -15766,3 +15766,81 @@ second build checked all 1,954 pages with no missing glyphs. Full verify passed:
 citations (4,794 primary / 187 secondary); 11,424 sourced claims / 4,309 TBC /
 zero asserted; 124 research files / 533 checked failures; all 217 unit tests;
 clean accessibility, facts, geometry and CVD checks.
+
+# Run 108 — rebuild Songshan–Xindian Line depth (23 August 2026)
+
+## Part 3 — Songshan–Xindian Line
+
+### Sourced
+
+Rebuilt the page from 1,859 to 2,381 Markdown-stripped body words (+522). It
+now follows the canonical line structure with 12 h2 sections and a related-reading
+subsection. The page carries 21 citations (18 primary, three secondary) and adds
+planning, approval, contract, construction, engineering, branch/depot, rolling-stock,
+operations, ridership and incident detail. Full-page primary verification covered:
+
+- DORTS MRT Technical Journal no. 52, Songshan planning and contracts:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page6.html
+- DORTS MRT Technical Journal no. 50, opening milestones:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page141.html
+- DORTS MRT Technical Journal no. 52, Beimen heritage works:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page160.html
+- DORTS MRT Technical Journal no. 52, Songshan traction power:
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page120.html
+- DORTS Xindian construction, track and geotechnical records:
+  https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page36.html
+  https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html
+  https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page274.html
+- DORTS technical documentation on station scope:
+  https://ebook.dorts.gov.taipei/ebook/no17/files/basic-html/page23.html
+- Executive Yuan opening account:
+  https://www.ey.gov.tw/Page/9277F759E41CCD91/aaa388c9-972a-4f6c-95f7-babda855e27f
+- Audit Office final-account record:
+  https://auditreport.audit.gov.tw/ServerFile/Get/637927033231617129357c12bea3f0498585d044e95ec0ec0d05d
+- TRTC peak-headway clarification:
+  https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=089B9ADABE51C4E3
+
+### TBC
+
+The third branch set ID, the exact measurement boundary behind the competing
+main-line and Xiaobitan lengths, a consolidated as-operated length, current fleet
+allocation and current 2026 headways remain TBC. Searches also did not establish
+the complete platform-screen-door installation dates. The DORTS no. 50 page 145
+and no. 52 page 162 fetches failed with cache/internal errors and were recorded as
+checked-and-failed rather than replaced with snippets.
+
+### Contradicted the corpus
+
+The old page relied on a narrower secondary chronology and treated Beimen work as
+part of the Bannan account. The rebuilt page uses DORTS's Beimen heritage record,
+Songshan planning and power pages, Xindian construction/track/geotechnical records,
+and the Executive Yuan opening account. The old prose also implied one settled
+length and current headway; the page now prints the underlying values and their
+measurement contexts, with unresolved current values left TBC.
+
+### Conflicts found
+
+The principal route-length values remain TDX 18.77 km, Chinese Wikipedia 21.3 km,
+and DORTS project totals of about 20.6 km; DORTS technical records separately give
+10.55 km for the Songshan section and 1.53 km for Xiaobitan, while the track paper
+gives 11.2 km of track. The branch is approximately 1.5 km in DORTS's project
+description, 1.53 km in the technical record, 1.9 km in Chinese Wikipedia and
+1.94 km in TDX. The budget is NT$49.93 billion in DORTS's planning account versus
+the Audit Office's NT$53.04206 billion budget and NT$50.29566 billion audited final
+amount. DORTS route/milestone pages describe eight stations while no. 17's station
+scope table lists seven; both are retained. Historical G13/G14/G16/G17/G18/G19/G21/G22
+labels are shown beside the current TDX sequence, and TRTC's generic 4–6/6–8-minute
+range is distinguished from its later clarification of roughly three minutes on the
+trunk with some six-minute branch workings.
+
+### Verification and gate
+
+The first fresh verification stopped on missing Han-subset glyphs in the new source
+titles; the existing postbuild glyph gate therefore caught the defect before the
+subsets were regenerated. Final verify passed on 1,954 pages and 218,209 internal
+links with no broken links, fragments or orphans; 4,988 citations (4,804 primary /
+184 secondary); 11,429 sourced / 4,308 TBC / zero asserted claims; 124 research files
+and 534 dated checked failures; 217 unit tests; and clean accessibility, facts,
+geometry and CVD checks. `npm run cite`, `npm run nav`, `npm test` and `npm run verify`
+all passed. Generated links/unused audit JSONs remain uncommitted, and `probes/` is
+untracked as required.

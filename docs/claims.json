@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11424,
-    "tbc": 4309,
+    "sourced": 11429,
+    "tbc": 4308,
     "asserted": 0,
-    "meta": 50
+    "meta": 49
   },
   "files": [
     {
@@ -9650,11 +9650,11 @@
     },
     {
       "file": "content/rail/metro/lines/songshan-xindian-line.md",
-      "sources": 14,
-      "sourced": 62,
-      "tbc": 1,
+      "sources": 21,
+      "sourced": 67,
+      "tbc": 0,
       "asserted": 0,
-      "meta": 1
+      "meta": 0
     },
     {
       "file": "content/rail/metro/lines/tamsui-xinyi-line.md",
