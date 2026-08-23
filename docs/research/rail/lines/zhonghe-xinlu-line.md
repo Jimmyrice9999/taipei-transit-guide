@@ -1,6 +1,6 @@
 # Zhonghe–Xinlu Line 中和新蘆線 (O) — research
 
-**Version 2.0 — 12 August 2026**
+**Version 2.1 — 23 August 2026**
 **Status: research. Verify before further editing.**
 
 Supersedes `docs/research/rail/metro/lines/zhonghe-xinlu-line.md` v1.0 (6 August
@@ -517,6 +517,24 @@ averaged, or had one reading discarded.
 ### Remaining unverified lead material
 
 The appendix preserves the report’s component dimensions, openings, Losheng material, station-number discussion and source list as leads only. Its Xinzhuang Depot date conflict (2021-01-04 versus 2021-01-14) and the 55-versus-54 Losheng building count are retained as conflicts; no value is selected. Aggregate O-line length and passenger-station count remain TBC.
+
+## Independent full-page verification — 23 August 2026
+
+The following primary pages were fetched in full on 23 August 2026 and the
+claims promoted into the content page were checked against their rendered
+text, not a search result or lead appendix:
+
+- DORTS, “中和新蘆線”: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
+- DORTS, “新莊線路線說明”: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
+- DORTS, “蘆洲線路線說明”: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD
+- DORTS, fleet FAQ: https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
+- TRTC, “路線及班距”: https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=E153D917FDC2AC69
+- Bureau of Cultural Heritage, “樂生療養院”: https://twh.boch.gov.tw/taiwan/intro.aspx?id=14&lang=zh_tw
+
+These fetches confirm the project boundaries, station-count caveat at Guting,
+opening sequence, branch headways and journey times, original procurement
+counts, and the Losheng preservation figures already recorded above. No
+previously published line claim was contradicted by these full-page checks.
 
 ## Checked and failed
 

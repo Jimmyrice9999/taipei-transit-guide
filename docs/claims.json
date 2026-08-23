@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11439,
+    "sourced": 11441,
     "tbc": 4307,
     "asserted": 0,
     "meta": 47
@@ -9675,7 +9675,7 @@
     {
       "file": "content/rail/metro/lines/zhonghe-xinlu-line.md",
       "sources": 14,
-      "sourced": 61,
+      "sourced": 63,
       "tbc": 1,
       "asserted": 0,
       "meta": 1

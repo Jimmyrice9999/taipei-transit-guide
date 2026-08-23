@@ -15903,6 +15903,54 @@ failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
 run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
 links/unused audits were restored and `probes/` was not staged.
 
+## Run 111 — Zhonghe–Xinlu line depth and structure (23 August 2026)
+
+### Part 3 — sourced rebuild
+
+Zhonghe–Xinlu (O) grew from 1,951 to 2,151 Markdown-stripped body words. The
+page now has an Overview, Route and alignment, Planning and approvals,
+Construction and opening history, Operations and branch service, Engineering,
+contracts and budget, Depots (with Zhonghe, Xinzhuang/Losheng and Luzhou
+subsections), Length records and measurement conflicts, and Sources. The
+existing 31.5-km whole-network figure remains alongside TDX's 24.11-km
+Nanshijiao–Huilong and 18.41-km Nanshijiao–Luzhou branch measurements; none was
+averaged. The O50–O54 numbering block is described as observed rather than
+given an invented rationale. The planning section now records DORTS's original
+70.3-km network context, 1989 revision, DC180/DC181/DC190 design lots and CC560
+combined civil/systems procurement.
+
+### Sources and conflicts
+
+Full primary pages were fetched and read at:
+
+- DORTS, 中和新蘆線: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
+- DORTS, 新莊線路線說明: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
+- DORTS, 蘆洲線路線說明: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD
+- DORTS fleet FAQ: https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
+- TRTC routes and headways: https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=E153D917FDC2AC69
+- Bureau of Cultural Heritage, Losheng: https://twh.boch.gov.tw/taiwan/intro.aspx?id=14&lang=zh_tw
+
+The full-page checks confirm the three project boundaries, Guting's station
+count caveat, opening sequence, branch service pattern, original CC361/CK371/
+CL601 procurement counts and the 530-plan preservation figures. Conflicts kept
+explicit: DORTS's 39 buildings preserved in place versus Focus Taiwan's 40
+characterisation and campaigners' 28 actually delivered; Zhonghe Depot's DORTS
+1.47 hectares versus the secondary 1.1-hectare figure; Luzhou's DORTS 280-m
+width versus the secondary 300 m; and the unresolved CK570F award-date pair.
+TBC remains for the current in-service fleet total, the reason the 2019 budget
+revision fell, and the CK570F original award date.
+
+### Verification and gate
+
+`npm run cite`, `npm run verify`, `npm run nav` and `npm test` all passed. Final
+verification remains at 1,954 pages and 218,210 internal links with no broken
+links, fragments or orphans; 4,988 citations (4,804 primary / 184 secondary);
+11,441 sourced / 4,307 TBC / zero asserted claims; 124 research files / 534
+checked failures; 217 unit tests; clean accessibility, facts, geometry and CVD.
+The static ToC/fragments, heading hierarchy, reduced-motion and scroll-affordance
+gates all passed. Generated links/unused audits were restored and `probes/` was
+not staged.
+
 # Run 110 — rebuild Danhai LRT line depth (23 August 2026)
 
 ## Part 3 — Danhai LRT

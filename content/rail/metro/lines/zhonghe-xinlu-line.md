@@ -6,7 +6,7 @@ line: O
 aliases:
   - 中和新蘆線
   - Orange Line
-updated: 2026-08-12
+updated: 2026-08-23
 hero:
   image: zhonghe-xinlu-line/hero
   alt: The cross-platform interchange level at Guting Station, orange Zhonghe–Xinlu Line signage over the platform, passengers crossing between trains.
@@ -96,7 +96,7 @@ sources:
     titleOriginal: 中和新蘆線（中和線）
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The Zhonghe line's own route description, length, station count and station list, and the Zhonghe Depot description: 全長約5.4公里，設4座車站, and 中和機廠…佔地約1.47公頃(包括捷運南勢角車站)。因用地面積之限制…提供營運列車停放、一般維修及清潔之功能. Also the note against Guting that its construction was folded into the Xindian line project (本站工程併入捷運新店線辦理), which is why the Zhonghe line's own count is 4 stations despite Guting appearing on the same list."
@@ -105,7 +105,7 @@ sources:
     titleOriginal: 中和新蘆線（新莊線）
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=33245A586D747A2C
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The Xinzhuang line's own route description and length (全長約19.7公里，設16座車站); every inspection and opening date for the Xinzhuang, Dongmen and Xinzhuang-Depot sections; the original and 5th-revision budget figures; the contract structure (CK570A–J, IKTX02); and the Losheng-adjustment sentence: 新莊機廠因配合樂生療養院保存案計畫，調整機廠設施的配置."
@@ -114,7 +114,7 @@ sources:
     titleOriginal: 中和新蘆線（蘆洲線）
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The Luzhou line's own route description, length and station count (全長約6.4公里，設5座車站), locating its junction with the Xinzhuang line's track northwest of Taipei Bridge rather than at Daqiaotou; its own 初勘/履勘/通車 dates, identical to the Xinzhuang line's Taipei section; and the Luzhou Depot description (佔地面積約16.8公頃 and its facility list)."
@@ -123,7 +123,7 @@ sources:
     titleOriginal: 台北都會區大眾捷運系統路網中，各路線所採購之列車數為何？
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: "https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91"
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's own procurement table by contract: 中和線 CC361標 8列六車列車(48輛), 新莊線 CK371標 20列六車列車(120輛), 蘆洲線 CL601標 4列六車列車(24輛) — original counts, not the current in-service fleet."
@@ -132,7 +132,7 @@ sources:
     titleOriginal: 路線及班距
     publisher: Taipei Rapid Transit Corporation
     url: https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=E153D917FDC2AC69
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The operator's own service pattern for this line: peak/off-peak/late headways per branch and on the shared trunk, and one-way journey times of about 48 minutes Huilong–Nanshijiao and 38 minutes Luzhou–Nanshijiao."
@@ -184,7 +184,7 @@ sources:
     titleOriginal: 樂生療養院
     publisher: 文化部文化資產局 (Bureau of Cultural Heritage, Ministry of Culture)
     url: https://twh.boch.gov.tw/taiwan/intro.aspx?id=14&lang=zh_tw
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The Ministry's own record of the Executive Yuan's 30 May 2007 '530 plan' decision: 原地保留39棟建物，拆除6棟，9棟建物納入園區整體規劃進行則要重建. Also the preceding 41.6% and 90% preservation proposals."
@@ -217,6 +217,8 @@ sources:
     note: "The 2007 campaign timeline: the March 2007 demolition notice and crowdfunded advertisement, Premier 蘇貞昌's 11 April apology and 90%-preservation pledge, the 15 April march, and the founding dates of 青年樂生聯盟 (2004) and 樂生保留自救會 (2005)."
 ---
 
+## Overview
+
 The orange line is the network's only Y: one trunk south to Zhonghe, and two
 arms north-west that share it — one to Luzhou, one through Xinzhuang to
 Huilong[^dorts-luzhou]. It was not built as one railway. It is three separate projects,
@@ -228,7 +230,7 @@ details: the line's own station numbers jump from **O21** straight to
 
 ![An orange-liveried train at the platform of Luzhou Station, its name sign overhead](/images/zhonghe-xinlu-line/station-800.webp "Luzhou Station, on the line's northern Luzhou arm. — 李元顥, public domain, Wikimedia Commons")
 
-## Three projects, one line
+## Route and alignment
 
 DORTS still documents the line as three separate route descriptions, and
 reading them against each other is what actually explains the geography.
@@ -266,7 +268,16 @@ research states DORTS's reasoning for choosing the O50–O54 block specifically
 rather than simply continuing past O21 — it is recorded here as an observed
 fact of the numbering, not an explained one.
 
-## Opening, section by section
+## Planning and approvals
+
+The Zhonghe project was part of Taipei's original 70.3-km network plan[^dorts-zhonghe]. DORTS
+records the original orange alignment as about 6.5 km from Zhonghe to Roosevelt
+Road, followed by a 1989 revision and Executive Yuan approval; its detailed
+design was split into DC180, DC181 and DC190, with the civil, water,
+environmental and electrical works combined into CC560 and train, signalling
+and automatic-fare packages procured with the Xindian and Nangang projects[^dorts-zhonghe].
+
+## Construction and opening history
 
 | Section | Opened |
 | --- | --- |
@@ -292,7 +303,7 @@ today[^dorts-xinzhuang][^zh-zhonghe-xinlu]. The whole route was assigned
 **"4號線"** on 11 October 2014 and its station codes changed from numbers
 alone to the current **O**-prefixed system in October 2016[^zh-zhonghe-xinlu].
 
-## How the branches run
+## Operations and branch service
 
 Every train starts or ends at **O01 Nanshijiao**, in Zhonghe[^dorts-zhonghe]. From there it
 either continues north-west through Xinzhuang to **O21 Huilong**, or forks at
@@ -314,7 +325,7 @@ minutes**[^trtc-headways] per branch at weekday peak, which becomes about
 **12 minutes** per branch after 23:00 (**6 minutes** shared). Weekends and
 holidays run the off-peak pattern all day from 06:00[^trtc-headways].
 
-## Budget and contracts
+## Engineering, contracts and budget
 
 The Xinzhuang and Luzhou lines were planned and financed as one combined
 project. The Executive Yuan approved the route plan on **17 September
@@ -346,9 +357,11 @@ originally ordered[^dorts-fleet-faq]. All three ran as
 [C371](/rail/metro/rolling-stock/c371/) stock; the fleet's current in-service total
 remains TBC because the opened procurement record is not a current roster.
 
+## Depots
+
 ![The interior of a C371 train, passengers seated and standing, a passenger walking down the aisle](/images/zhonghe-xinlu-line/interior-800.webp "A C371 train's interior, in service on the Zhonghe–Xinlu line. — Tbatb, CC BY-SA 4.0, Wikimedia Commons")
 
-## Zhonghe Depot — built to fit, not to spare
+### Zhonghe Depot — built to fit, not to spare
 
 **Zhonghe Depot 中和機廠** sits on the former Taiwan
 Railways Zhonghe station site, south of Heping Street, and includes
@@ -361,7 +374,7 @@ area, about 1.1 hectares, and describes the depot as underground with six
 stabling tracks — neither of which DORTS's own page states, and neither
 reconciled here[^zh-zhonghe-depot].
 
-## Xinzhuang Depot and the Losheng Sanatorium
+### Xinzhuang Depot and the Losheng Sanatorium
 
 [Xinzhuang Depot](/rail/metro/depots/xinzhuang-depot/), beside Huilong station and
 straddling the New Taipei–Taoyuan boundary, stands on part of the former
@@ -413,7 +426,7 @@ case, and the work was re-tendered as **CK570J** in June 2008, won by
 original award date stays **TBC**; a Government e-Procurement record or a
 contemporaneous 2002–2004 news report naming the contract would settle it.
 
-## Luzhou Depot
+### Luzhou Depot
 
 [Luzhou Depot](/rail/metro/depots/luzhou-depot/) sits at the end of the Luzhou arm,
 bounded by the Tamsui River levee to the north, the Shuinangou drainage
@@ -431,7 +444,7 @@ footprint was cut back for the Losheng preservation plan — one depot's
 constraint becoming another depot's added workload, if that account is
 right[^zh-luzhou-depot].
 
-## How long the line is
+## Length records and measurement conflicts
 
 Three figures, and they are not really in conflict once labelled. **31.5 km
 and 26 stations** is the sum of the three component projects' own DORTS
