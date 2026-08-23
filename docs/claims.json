@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11304,
-    "tbc": 4310,
+    "sourced": 11416,
+    "tbc": 4316,
     "asserted": 0,
-    "meta": 58
+    "meta": 57
   },
   "files": [
     {
@@ -9530,17 +9530,17 @@
     },
     {
       "file": "content/rail/metro/depots/beitou-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 9,
+      "sourced": 21,
+      "tbc": 1,
       "asserted": 0,
-      "meta": 1
+      "meta": 0
     },
     {
       "file": "content/rail/metro/depots/luzhou-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 9,
+      "sourced": 19,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -9554,9 +9554,9 @@
     },
     {
       "file": "content/rail/metro/depots/nangang-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 9,
+      "sourced": 16,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -9570,25 +9570,25 @@
     },
     {
       "file": "content/rail/metro/depots/tucheng-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 7,
+      "sourced": 17,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/metro/depots/xindian-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 9,
+      "sourced": 19,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/metro/depots/xinzhuang-depot.md",
-      "sources": 0,
-      "sourced": 0,
-      "tbc": 0,
+      "sources": 7,
+      "sourced": 20,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },

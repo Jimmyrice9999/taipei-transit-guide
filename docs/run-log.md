@@ -14976,6 +14976,103 @@ missing glyphs, accessibility errors or warnings. Navigation passed all 19
 checks; the independent `npm test` rebuild passed all 217 unit tests and 17 fact
 cross-checks.
 
+## Run 100 — Part 3, remaining metro depots (23 August 2026)
+
+### Sourced
+
+Rebuilt the six remaining metro-depot pages and added a subject research file
+for each: Beitou 116→508 body words, Xindian 82→475, Nangang 66→490, Tucheng
+70→414, Luzhou 63→459 and Xinzhuang 137→530. Together with Run 99's Muzha and
+Neihu work, all eight metro depots now exceed 300 words without boilerplate.
+
+DORTS's network-planning and equipment inventories establish each depot's
+maintenance level, site, design capacity and installed systems:
+https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page200.html,
+https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page202.html,
+https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html and
+https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page107.html. Full
+route, contract and engineering records then establish the depot-specific
+history. Beitou's geotechnical record describes 15–50 m of compressible clay,
+maximum measured settlement of 1.46 m and the resulting track and utility work:
+https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page243.html and
+https://ebook.dorts.gov.taipei/ebook/no6/files/basic-html/page254.html.
+Xindian's records establish the Xiaobitan alignment, over-site development and
+2014 ballasted-track project:
+https://ebook.dorts.gov.taipei/ebook/no20/files/basic-html/page126.html,
+https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page69.html and
+https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page82.html.
+
+Nangang's full Typhoon Nari record establishes the 17 September 2001 inundation
+sequence and later floodwall, gate and design-level changes:
+https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page184.html and
+https://ebook.dorts.gov.taipei/ebook/no4/files/basic-html/page154.html.
+Tucheng's contract record identifies CD550—not the separately dated CD551—as
+the package containing the depot:
+https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page39.html. Luzhou's
+earthworks record establishes the former waste, farm and factory uses and reuse
+of excavation material in the adjacent park:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no38/files/basic-html/page83.html and
+https://ebook.dorts.gov.taipei/JRTST/ebook/no41/files/basic-html/page19.html.
+The Xinzhuang route record establishes the Losheng-driven boundary reduction,
+while the Ministry of Culture's heritage record establishes the institution's
+1930 origin and the government's 30 May 2007 preservation decision:
+https://www.dorts.gov.taipei/cp.aspx?n=122c012a85c41404&s=33245A586D747A2C and
+https://twh.boch.gov.tw/taiwan/intro.aspx?id=14&lang=zh_tw.
+
+### TBC
+
+Current fleet allocations and exact civil-work acceptance or commissioning
+dates remain TBC where the opened current TRTC roster and DORTS records do not
+state them. Beitou's exact completion date, Tucheng's CD550 award chronology,
+Nangang's original handover, and Xindian's original civil dates need signed
+contract or acceptance records. Xinzhuang's current roster and exact sequence
+between civil completion and the documented 25 October / 23 December 2020
+inspections need a current asset register and acceptance dossier. No value was
+inferred from an older rolling-stock procurement.
+
+### Contradicted the corpus
+
+Beitou's old universal claim that every new fleet is commissioned there first
+was not present in the opened primary record and was removed. Old Nangang,
+Tucheng and Luzhou wording treated historical procurement assignments as
+current allocations; it was removed or made TBC. The Xinzhuang lead's broad
+backlog language was replaced by the actual opened DORTS chronology. Its test
+track is not stated unqualified: the earlier route design lists one, while the
+later equipment inventory says the depot has none.
+
+### Conflicts found
+
+Every disagreement is published rather than resolved. Beitou is approximately
+40 ha in one DORTS inventory and 41 ha in another; its design capacity is 33
+storage spaces versus 30 stabling-road positions. Xindian is 3.5 ha in the
+early planning table but 12 ha in the route and equipment records, while its
+development base and parcels use still narrower boundaries; its capacities are
+18 spaces versus 15 positions. Nangang is 7.8, 7.83 and 7.9 ha at differing
+precision and has 14 spaces versus 13 positions. Tucheng has 34 spaces versus
+36 positions. Luzhou is 15.9, 16 and 16.8 ha across primary records. Xinzhuang
+began at 17.4/17.5 ha, was reduced to 13.9 ha, and appears as 17.2 ha in the
+later equipment table without an explained boundary; it has 16 spaces versus
+17 positions. The heritage record itself says 39 retained / 6 demolished / 9
+rebuilt buildings in one section and 39 / 6 / 10 in another.
+
+### Gates
+
+Claims are 11,416 sourced / 4,316 TBC / 0 asserted. Citations are clean at
+4,952 resolved (4,761 primary / 191 secondary), and research is clean at 124
+files with 526 dated checked-and-failed entries. The claims sweep caught two
+sentences whose citations were attached only to the following sentence;
+attaching the existing primary citations directly restored zero assertions.
+The fresh build also caught missing Han-subset glyphs, an obsolete contract code
+being parsed as a station badge, and Mandarin hidden from language tagging by
+inline-code markup. Regenerating the subset, marking the code literal and
+letting the Mandarin renderer tag the terms fixed them. No new checker was
+needed because the permanent provenance, font, badge and language gates caught
+each defect class. The clean full verifier passed all 217 tests across 1,954
+pages and 218,164 internal links, with no broken links, fragment failures,
+orphans, missing glyphs, accessibility errors or warnings. Navigation and the
+independent full suite then passed all 19 navigation checks, all 217 unit tests
+and all 17 fact cross-checks.
+
 ## Run 96 — Part 3, C371 rolling stock (23 August 2026)
 
 ### Sourced
