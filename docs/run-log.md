@@ -14752,3 +14752,66 @@ accessibility errors or warnings; citations remained 4,855; claims remained
 11,197 sourced / 4,303 TBC / 32 asserted with the baseline untouched; research,
 geometry and CVD passed. Navigation passed all 19 keyboard/touch checks, and
 the full `npm test` suite passed independently after `npm run verify`.
+
+## Run 93 — Part 3, C301 rolling stock (23 August 2026)
+
+### Sourced
+
+Replaced the 113-word C301 scope stub with 705 words of sourced body prose and
+created the mirrored per-subject research file. DORTS's full first-generation
+history establishes contract CT301 (NT$4.5 billion), contractor Union Rail Car
+Partnership, the failed all-motored first tender and revised 4M2T formation,
+22 six-car trains / 132 cars, AC traction and stainless-body decisions, 750 V
+third-rail and braking/suspension/door systems, the 1992–1995 delivery sequence,
+and testing through 1996:
+https://data.taipei/api/dataset/3812b03c-7e72-40c7-85cf-c67df9162f7e/resource/9b9c9bf1-b6e4-43b7-9d18-f2818b5d1718/download.
+The current DORTS line page supplies the CT301 package label and 28 March 1997
+opening: https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A.
+
+TRTC's 2012, 2014 and 2015 reports establish communications/passenger-display,
+traction-board, door-guide, overhaul, traction and air-conditioning work. DORTS
+*Rapid Transit Systems & Technology* no. 50 establishes the GTO-to-IGBT
+inverter change: https://ebook.dorts.gov.taipei/JRTST/ebook/no50/files/basic-html/page48.html.
+
+### TBC
+
+Car dimensions and empty mass remain TBC because no 301-specific primary
+specification table was found. A final-acceptance or renewal report is still
+needed for the traction-reset completion date and original/replacement
+suppliers. A current allocation record is needed before saying the fleet is
+exclusively based at Beitou; the source establishes delivery and testing there,
+not present-day exclusivity. The indexed 2016 CSR PDF returned an internal
+fetch error and is recorded as checked-and-failed rather than cited.
+
+### Contradicted the corpus
+
+The old page's “Kawasaki-built” shorthand is replaced by the named CT301
+contractor, URC, with DORTS's separate description of its Kawasaki relationship.
+The unsourced claims that this was Taiwan's first standard-gauge train, that the
+renewal ran from 2013 to 2017, and that named Westinghouse/Bombardier packages
+were original and replacement traction were not found in the fetched primaries
+and are not published.
+
+### Conflicts found
+
+DORTS no. 37 and TRTC 2012 publish 22 trains / 132 cars, consistent with the
+fixed six-car formation. DORTS no. 48 instead prints `132 輛 (21 列)`:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page137.html.
+Both official values are published on the page; the 21-train parenthetical is
+identified as conflicting rather than silently corrected.
+
+### Gates
+
+The claims gate reports 11,224 sourced facts, 4,305 explicit TBC values and 32
+asserted items, with no new assertion and no baseline change. Citation checking
+reports 4,862 citations (4,652 primary and 210 secondary), and the research
+checker reports 110 files and 462 dated checked-and-failed entries. The first
+full verifier correctly stopped on the newly introduced Han glyph `蹤`; the
+font subsets and manifest were regenerated. Its next run correctly stopped on
+the new `301型電聯車` search alias; the search index was regenerated. The clean
+rerun passed the complete verifier: 1,954 built pages, 217,988 checked links,
+no broken links, fragments or orphans, and all citation, claims, research,
+scope, typography, geometry, colour and accessibility gates green.
+The independent navigation harness passed all 19 keyboard, touch, hover and
+history checks, and the full `npm test` suite passed 217 tests plus all 17 fact
+cross-checks.
