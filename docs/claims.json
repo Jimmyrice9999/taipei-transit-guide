@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11419,
-    "tbc": 4316,
+    "sourced": 11415,
+    "tbc": 4314,
     "asserted": 0,
-    "meta": 57
+    "meta": 52
   },
   "files": [
     {
@@ -318,7 +318,7 @@
       "sourced": 40,
       "tbc": 2,
       "asserted": 0,
-      "meta": 4
+      "meta": 3
     },
     {
       "file": "content/bus/network/_index.md",
@@ -9499,10 +9499,10 @@
     {
       "file": "content/rail/history/matra-dispute.md",
       "sources": 13,
-      "sourced": 72,
+      "sourced": 71,
       "tbc": 0,
       "asserted": 0,
-      "meta": 4
+      "meta": 1
     },
     {
       "file": "content/rail/history/public-art.md",
@@ -9620,14 +9620,14 @@
       "file": "content/rail/metro/lines/bannan-line.md",
       "sources": 17,
       "sourced": 61,
-      "tbc": 4,
+      "tbc": 3,
       "asserted": 0,
-      "meta": 1
+      "meta": 0
     },
     {
       "file": "content/rail/metro/lines/circular-line.md",
       "sources": 16,
-      "sourced": 121,
+      "sourced": 119,
       "tbc": 4,
       "asserted": 0,
       "meta": 3
@@ -9659,8 +9659,8 @@
     {
       "file": "content/rail/metro/lines/tamsui-xinyi-line.md",
       "sources": 8,
-      "sourced": 49,
-      "tbc": 6,
+      "sourced": 48,
+      "tbc": 5,
       "asserted": 0,
       "meta": 1
     },

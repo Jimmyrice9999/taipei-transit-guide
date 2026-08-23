@@ -215,9 +215,8 @@ project's own already-committed New Taipei route-service data — 562 routes
 with a published fare row — segment counts run from 1 to 8: 128 routes are
 1-segment, 77 are 2-segment, 37 are 3-segment, 13 are 4-segment, 8 are
 5-segment, 3 are 6-segment, and 3 reach 8 segments, alongside a handful of
-free routes[^ntpc-bus-route-data]. Taipei-proper's own committed bus dataset
-does not carry a comparable segment-count field, so that same distribution
-for Taipei's own colour- and series-numbered routes is not established here.
+free routes[^ntpc-bus-route-data]. Taipei-proper's committed bus dataset has no
+comparable segment-count field, so its distribution remains TBC.
 
 ## How this interacts with transfers and the regional pass
 
@@ -226,8 +225,8 @@ NT$6 for a student card, NT$4 for a welfare card, within a 60-minute window —
 applies against a segment fare the same way it applies against any bus
 fare[^trtc-faq-transfer]. That same FAQ's own title is explicit that the
 discount excludes "distance-charged buses" (里程收費公車) — a separate,
-named fare category outside the segmented system this page describes, and
-one this project has not yet independently researched[^trtc-faq-transfer].
+named fare category outside the segmented system described above; its own fare
+mechanics remain TBC.[^trtc-faq-transfer]
 
 The TPASS 基北北桃1200都會通 regional pass sidesteps the segment system
 entirely for a pass holder: its own operating notice confirms unlimited

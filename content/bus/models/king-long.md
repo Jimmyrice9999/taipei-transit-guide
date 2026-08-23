@@ -40,8 +40,8 @@ sources:
 
 Dàyou’s official fleet page names King Long / 大金龍 in both its highway and city-bus sections [^dayou-fleet]. It places the highway group in 2019 and the city-bus groups in 2020 and 2024 [^dayou-fleet]. The page’s route-class labels distinguish highway passenger vehicles from city-bus vehicles, but it does not publish unit counts for these year groups [^dayou-fleet].
 
-## What is not established
+## Technical fields
 
-The fetched page does not provide a chassis code, body builder, seating/standing capacity, battery or fuel type, hybrid system, unit count or route-by-route allocation [^dayou-fleet]. Those are TBC here. The model page consequently describes what Dàyou itself publishes without treating a brand/year label as a complete technical specification [^dayou-fleet].
+The fetched fleet record provides no chassis code, body builder, seating/standing capacity, battery or fuel type, hybrid system, unit count or route-by-route allocation [^dayou-fleet]. Those fields remain TBC. Dàyou's brand/year labels are not treated as complete technical specifications [^dayou-fleet].
 
-A manufacturer data sheet, vehicle-registration extract or procurement batch document naming the exact Dàyou units would be needed to add those fields [^dayou-fleet].
+A manufacturer data sheet, vehicle-registration extract or procurement batch document naming the exact Dàyou units would settle those fields [^dayou-fleet].

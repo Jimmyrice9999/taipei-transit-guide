@@ -252,10 +252,9 @@ read, so treat the structure as indicative rather than current.
 ## How the money moves
 
 The arrangement is usually described in one sentence about a central revenue
-pool. This site has not been able to source that sentence to anybody, so it is
-dealt with at the end of this page, under what the page cannot yet say. What the
-city's own regulations *do* set out is a different and more specific machine, in
-four parts.
+pool. No opened primary source establishes that sentence. The city's own
+regulations instead set out a different and more specific machine, in four
+parts.
 
 ### Routes are allocated, not owned
 
@@ -335,8 +334,8 @@ is why fare theft by one company hurt the other three:
 
 **Read that with its footnote showing.** The footnote resolves to 唯真,
 〈關心話題 正本清源談公車票證〉, 聯合報, 13 April 1981 — a newspaper article
-this project has not read, because the 聯合報 archive is not openly
-fetchable[^zh-token-coin]. It is also confined to the *early* period, and
+whose full body could not be fetched from the closed 聯合報 archive[^zh-token-coin].
+It is also confined to the *early* period, and
 nothing found explains why a "four-way" split describes an arrangement that had
 ten participants. It is recorded here as the closest thing to a sourced
 revenue-distribution mechanism anywhere, and as a lead rather than a finding.
@@ -410,12 +409,9 @@ and 7xx blocks were air-conditioned services; 9xx are express[^zh-taipei-bus].
 geographic reading also circulates in Taiwanese transport writing, in which the
 leading digit records the part of the city a route was set up to serve — the
 historic core, then the outward districts, then the routes crossing into what is
-now New Taipei. **The specific bands are still not reproduced on this page**, and
-the reason has changed: it is no longer only that nothing found attaches a source
-to them. It is that every account which names an authority describes fare
-segments and service type
-instead[^setn-numbering][^tvbs-numbering][^zh-taipei-bus]. Nothing found in this
-site's searches sources the geographic bands to anybody.
+now New Taipei. No opened authority-backed account supplies those geographic
+bands. Every account that names an authority instead describes fare segments
+and service type[^setn-numbering][^tvbs-numbering][^zh-taipei-bus].
 
 ### 6xx and 7xx — the same officer, two answers
 

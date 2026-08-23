@@ -415,26 +415,8 @@ which is the same claim as the encyclopedia's "1.5 times", in different
 units[^zh-c341]. The six trains were delivered to
 the bureau between mid-September and mid-November 2004[^cna-2005].
 
-The contract number is **not established** here, nor what "did not agree" meant
-procedurally, nor what the [C321](/rail/metro/rolling-stock/c321/) unit price was, so
-that the 50 % can be checked rather than taken. No audit or court record has
-been located. The fuller account belongs on the fleet's own page, with those
-answers, not here.
-
-## Not established on this page
-
-- **Ridership for this line.** See above; TBC by choice.
-- **The 21 May 2014 attack** on a train between Longshan Temple and Jiangzicui
-  is part of this line's history and this page does not pretend otherwise. What
-  a transport reference should carry is what changed operationally afterwards —
-  staffing, patrols, emergency procedure — and that is not researched yet.
-  Nothing about it is asserted here.
-- **The naming.** The date the line was formally named 板南線 and numbered 5, and
-  the 2016 change to the BL prefix, are told on this site's station numbering
-  page against its own sources.
-
-- **Fleet allocation between the two depots**, the C321 formation, platform-door
-  fitment dates, and the proposed Zhangshuwan extension. All were in this site's
-  research corpus; none survived to a source in this pass.
+The contract number and the procedural meaning of "did not agree" remain TBC,
+as does the [C321](/rail/metro/rolling-stock/c321/) unit price needed to check
+the reported 50% difference. No opened audit or court record settles them.
 
 See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

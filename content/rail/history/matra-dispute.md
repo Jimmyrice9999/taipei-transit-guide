@@ -467,33 +467,3 @@ The last Matra-controlled train ran thirteen years after Matra stopped
 maintaining any of them. Nobody from the company was there to see it, and by
 then there was no company: the name had been gone from the rail business for
 eight years[^metro-mag-matra].
-
----
-
-## What is not established
-
-The gaps, recorded so they are searched for rather than papered over:
-
-- **The contract itself.** No tender documents, competing bids or evaluation
-  records were found; they would sit in DORTS's construction archive.
-- **The judgments.** Taiwan's court decisions are indexed and searchable, and
-  the 22 July 2005 Supreme Court civil judgment ought to be retrievable; it
-  would move the whole litigation section from reportage to primary record,
-  and settle the intermediate dates this page declines to give. The
-  single highest-value follow-up here.
-- **A contemporaneous report of the withdrawal**, which would close the
-  question above of which year it happened in[^zh-muzha][^zh-wenhu].
-- **Any accident investigation** into the 1993 fires, which would confirm or
-  kill the coupling explanation two secondary sources agree on. DORTS's own
-  classification of the testing-phase incident — 輪胎起火意外事故, a tyre
-  ignition accident[^dorts-wenhu] — is as close as the primary record gets, and
-  it names no date, no unit and no location.
-- **Which fire DORTS's 輪胎起火意外事故 describes.** The builder names an
-  incident and gives it no date and no ordinal[^dorts-wenhu]. There were two.
-  Nothing found says which, or whether the phrase names the class rather than an
-  instance.
-- **Matra's side.** Every substantive source on this page is Taiwanese. The
-  French trade press of the day, Lagardère's archive and Siemens's own history
-  of the VAL business would give the other account, and none has been found.
-  Its absence is the largest structural bias in this page, and it is not a
-  small one.

@@ -273,19 +273,17 @@ about 12 minutes[^trtc-headways-r]. End to end, Tamsui to Xiangshan takes about
 ## Ridership: what is published is not this line
 
 This line is routinely described as one of the two busiest on the network, and
-this page cannot put a number on it. TRTC's own ridership table reports
+TRTC's published series does not permit a line-specific total. It reports
 **文湖線 separately and everything else as an aggregate** — 高運量包含淡水信義、
 松山新店、中和新蘆、板南線, four lines under one heading[^trtc-ridership]. For
 June 2026 that aggregate was 5,651.03 萬人次 against the Wenhu Line's 596.14,
 and for the year to June, 34,448.75 against 3,583.92[^trtc-ridership].
 
-Dividing that four-line total is not something this page will guess at, so the
-ridership rows above read TBC. TRTC does publish per-station entry and exit
-counts going back to 2015[^trtc-ridership]; summing those across this line's
-stations is a real route to a figure, and it is the next task on this page
-rather than a number borrowed from somewhere else.
+The ridership rows therefore remain TBC. TRTC does publish per-station entry and
+exit counts going back to 2015[^trtc-ridership], but no opened operator table
+supplies the line total directly.
 
-## The extension, and what is not known about it
+## Xinyi east extension
 
 An eastward extension of the Xinyi section is under construction: **about
 1.4 km**, **one underground station**, plus tail tracks for operational
@@ -300,11 +298,9 @@ plain terms: the landowners at the Xinyi Road Section 6 site refused to take
 part in the joint land development, so the condition for siting a station there
 was never met[^dorts-east-extension].
 
-**What DORTS's project page does not say is when it opens.** It carries no
-construction start date, no contract number, no cost and no opening
-date[^dorts-east-extension], and it was read twice on 10 August 2026 looking for
-them. Figures for all four circulate; none of them appears on this page, because
-none has been traced to the builder.
+DORTS's project page carries no construction start date, contract number, cost
+or opening date[^dorts-east-extension]. Those four fields remain TBC rather than
+being filled from unattributed circulating figures.
 
 A numbering trap worth flagging while it is still live. The station being built
 takes **`R01`**, at the end of a line whose other codes were assigned long
@@ -339,22 +335,5 @@ C381A[^zh-tamsui-xinyi]; its Xinbeitou article names C371 for the
 branch[^zh-xinbeitou]. Two articles on one encyclopedia, two fleets. Neither was
 checked against a TRTC or manufacturer record, so the facts panel names no fleet
 at all. The obvious reconciliation is obvious enough to be suspicious.
-
-## Not established here
-
-- **The conversion itself.** That the corridor is the former Tamsui railway's is
-  the builder's own statement[^dorts-tamsui]. When the railway closed, what was
-  demolished and whether anything was preserved is not on this page.
-- **The 2014 changes** — the end of through running to the Xindian line, and the
-  formalisation of line names and numbers — are not sourced here.
-- **Platform doors, incident history, and the depot in detail.** The
-  [C301](/rail/metro/rolling-stock/c301/) fleet and
-  [Beitou Depot](/rail/metro/depots/beitou-depot/) have pages of their own.
-- **`R01`'s official English name.** Not established; the Chinese is used above.
-
-The research behind this page was done without any web search available, so it
-rests on primary material reached by walking the DORTS and TRTC sites and on two
-encyclopedia articles. No Taiwanese news archive was consulted. That is a
-limitation of the run, and the gaps above are mostly its shape.
 
 See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

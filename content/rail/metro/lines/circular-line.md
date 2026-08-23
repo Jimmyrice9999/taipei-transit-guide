@@ -647,26 +647,6 @@ A figure of 30.11 million for the same network total appears in search summaries
 of that release; the fetched text says 30.09 million, and that is what this page
 publishes[^ntmetro-ridership].
 
-## What is not established here
-
-- **Fleet size, formation, capacity and maximum speed.** Marked TBC above. The
-  bureau article that names the builder gives none of them, and no operator or
-  procurement record carrying them was found in this research.
-- **The East Ring's cost and completion year.** Not on the builder's project
-  page[^dorts-east-ring]; the DORTS press release that would settle them returned
-  HTTP 404 when fetched.
-- **The CF670 tender history.** An account of repeated failed tenders and a
-  substantially raised budget circulates; nothing in the primary reading behind
-  this page touches it.
-- **How many bearings were replaced in the repair.** The operator says they were
-  replaced wholesale and gives no count[^ntmetro-reopening].
-- **Whether the Zhongyuan seismometer was recommissioned** after the Control
-  Yuan's fourth finding.
-- **The outcome of the litigation**, and whether any prosecution followed.
-- **The South Ring's station codes**, `Y01` to `Y06`. The registry behind this
-  site comes from TDX, which carries only the operating section[^tdx]. Those names
-  arrive with the data when the South Ring opens.
-
 ## Sources
 
 Station names, codes, running order, coordinates, interchanges and the end-to-end

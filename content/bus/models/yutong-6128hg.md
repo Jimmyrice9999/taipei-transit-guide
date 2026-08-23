@@ -40,6 +40,6 @@ The Taiwan Transportation Safety Board factual report identifies the Dàyou-regi
 
 The source establishes the manufacturer/model and the passenger-capacity figures it prints, but it does not establish a complete procurement batch, fleet count, body-builder relationship or propulsion type [^ttsb-citiair]. Those fields remain TBC rather than being inferred from the model name [^ttsb-citiair].
 
-## Scope
+## Evidence from one vehicle
 
-This page is deliberately narrower than a fleet catalogue: it records a primary safety document’s exact vehicle identification. A current operator fleet register or vehicle approval record would be needed to establish whether Dàyou still operates this model, how many units it has, and whether later examples differ in body, capacity or propulsion [^ttsb-citiair].
+The safety report identifies one incident vehicle, not a procurement batch or current fleet [^ttsb-citiair]. Whether Dàyou still operates this model, how many units it acquired, and whether later examples differ in body, capacity or propulsion remain TBC. A current operator fleet register or vehicle approval record would settle those questions [^ttsb-citiair].

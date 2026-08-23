@@ -15328,3 +15328,58 @@ gate was added. The clean full verifier passed 217 tests across 1,954 pages and
 missing glyphs, accessibility errors or warnings. Navigation passed all 19
 checks; the independent `npm test` rebuild passed all 217 unit tests and 17 fact
 cross-checks.
+
+## Run 102 — Part 1, scope-statement gate completion (23 August 2026)
+
+### Audit finding
+
+The existing scope-statement test was green while eight published pages still
+described unfinished page or site coverage. The missed forms were headings such
+as `Scope`, `What is not established` and `Not established on this page`, plus
+sentences using `cannot yet`, `has not been able to source`, `not researched
+yet`, `next task on this page` and `still not reproduced on this page`.
+
+The eight affected pages were King Long, Yutong 6128HG, Joint operation, The
+Matra dispute, Bannan Line, Circular Line, Tamsui–Xinyi Line and Bus fare
+stages. The strengthened gate was run before the content fix and rejected all
+eight. After the fix it passes. A broader corpus sweep finds only four
+legitimate headings where “scope” describes an operator's legal or operating
+remit, not this site's coverage.
+
+### Changed
+
+Published scope inventories were removed. Source limitations that affect a
+live fact were rewritten as evidence statements or TBC: for example, TRTC's
+ridership series aggregates four high-capacity lines, the opened DORTS Xinyi
+extension page does not carry four listed project fields, and no opened audit
+or court record settles the Bannan procurement details. Removed line-page gaps
+are already preserved in their subject research files. The older Matra page
+has no mirrored subject research file; its missing pair remains a corpus defect
+for a primary-source rebuild, rather than being manufactured from its old
+secondary-source bibliography.
+
+Measured body counts changed as follows because unfinished-coverage prose was
+deleted rather than padded: King Long 132→117, Yutong 141→140, Joint operation
+2,776→2,715, Matra dispute 2,838→2,595, Bannan Line 1,668→1,517, Circular Line
+3,565→3,400, Tamsui–Xinyi Line 1,636→1,412 and Bus fare stages 939→922.
+King Long and Yutong remain below 300 and stay in the Part 3 source-research
+queue.
+
+### Sources, TBC, contradictions and conflicts
+
+This was a furniture/provenance fix and introduced no source or factual claim.
+Existing source URLs and conflicts are unchanged. The affected TBC fields
+remain TBC; no uncertainty was resolved by deletion. The contradiction was in
+the audit premise: a green gate did not mean the corpus was free of scope
+statements.
+
+### Gate added
+
+`tests/scope-statements.test.mts` now permanently rejects the missed heading and
+sentence families. Its red-before/green-after run proves that the new patterns
+detect the actual defects they were added for. The clean verifier passed all
+217 tests across 1,954 pages and 218,168 internal links; citations resolve at
+4,954 (4,763 primary / 191 secondary), claims remain at zero asserted with
+11,415 sourced / 4,314 TBC, and research remains clean at 124 files / 527 dated
+checked-and-failed entries. Navigation passed all 19 checks, and the independent
+full suite passed 217 unit tests and all 17 fact cross-checks.

@@ -18,7 +18,11 @@ test('published pages do not describe unfinished site or page coverage', () => {
   const forbidden = [
     /^##\s+What (?:this page|is) (?:does )?not yet\b/im,
     /^##\s+What is not yet on this page\b/im,
+    /^##\s+(?:(?:What is not|Not) established(?:\s+(?:here|on this page))?|Scope)\s*$/im,
+    /^##\s+.*\bwhat is not known\b.*$/im,
     /\b(?:this page|this site|this guide) (?:does not yet|has not yet|doesn't yet)\b/i,
+    /\b(?:this page|this site|this guide|this project)\s+(?:cannot yet|has not yet|hasn't yet|has not been able to source|is deliberately narrower)\b/i,
+    /\b(?:not researched yet|next task on this page|still not reproduced on this page)\b/i,
     /\b(?:future page|future version|future coverage)\b/i,
   ]
   const findings: string[] = []
