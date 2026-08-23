@@ -1,331 +1,308 @@
 ---
-title: Innovia APM 256 (C370)
-summary: Not a VAL, and not descended from one — a Canadian people mover built to fit a French railway, because the alternative was two incompatible halves of one line.
+title: C370 (Bombardier Innovia)
+summary: The 202-car Bombardier fleet built to extend the Matra railway without a transfer — with a four-country production chain and two conflicting published capacity measures.
 order: 2
 line: BR
-stub: true
+operator: TRTC
 aliases:
   - Innovia APM 256
   - C370
   - Innovia APM 256 (C370)
-updated: 2026-08-06
+updated: 2026-08-23
 hero:
   image: innovia-apm-256-c370/hero
-  alt: An Innovia APM 256 train curving between apartment towers on the approach to Liuzhangli station.
-  caption: An Innovia set threads the curve into [Liuzhangli](/rail/metro/stations/br07/).
-  wanted: An Innovia APM 256 set, framed to allow comparison with the VAL256 photograph — same angle if possible.
+  alt: A C370 train curving between apartment towers on the approach to Liuzhangli station.
+  caption: A C370 set threads the curve into [Liuzhangli](/rail/metro/stations/br07/).
 formation: Mc1=M2 + M2=Mc1
 facts:
-  - label: Builder
-    value: Bombardier Transportation (now Alstom)
-    source: zh-innovia
-  - label: Product name
-    value: Innovia APM 256
-    source: zh-innovia
-  - label: Fleet designation
-    value: C370
-    source: zh-taipei-fleet
-  - label: Procurement contract
+  - label: Vehicle contractor
+    value: Bombardier Transportation
+    source: dorts-design-spec
+  - label: Contract
     value: CB370
-    source: dorts-fleet-faq
-  - label: Operator
-    value: Taipei Rapid Transit Corporation
-  - label: Line
-    value: Wenhu
-  - label: Built
-    value: 2006—2009
-    source: zh-innovia
-  - label: In service
-    value: 4 July 2009 —
+    source: dorts-quantity
+  - label: Fleet
+    value: 101 married pairs / 202 cars
+    source: dorts-quantity
+  - label: Formation
+    value: Two married pairs / four fixed cars
+    source: dorts-design-spec
+  - label: Pittsburgh assembly
+    value: 100 cars
+    source: dorts-production
+  - label: Taiwan assembly
+    value: 102 cars
+    source: dorts-production
+  - label: Entered service
+    value: 4 July 2009
     source: dorts-wenhu
-  - label: Depot
-    value: Muzha and Neihu
-    source: zh-muzha-depot
 specs:
-  - label: Car width
-    value: "2.54"
-    unit: m
-    source: zh-innovia
   - label: Car length
     value: "13.78"
     unit: m
-    source: zh-innovia
+    source: dorts-design-spec
+  - label: Car width
+    value: "2.54"
+    unit: m
+    source: dorts-design-spec
   - label: Car height
     value: "3.53"
     unit: m
-    source: zh-innovia
-  - label: Cars per train
-    value: "4"
-    source: zh-innovia
-  - label: Empty weight
-    value: TBC
-    unit: t
-  - label: Design maximum speed
-    value: "90"
+    source: dorts-design-spec
+  - label: Maximum design speed
+    value: "80"
     unit: km/h
-    source: zh-innovia
-  - label: Operating speed
+    source: dorts-design-spec
+  - label: Maximum operating speed
     value: "70"
     unit: km/h
-    source: zh-innovia
-  - label: Seated capacity
-    value: "24"
-    unit: per car
-    source: zh-innovia
-  - label: Standing capacity
-    value: "73"
-    unit: per car
-    source: zh-innovia
-  - label: Train capacity
-    value: "456"
-    source: zh-innovia
-  - label: Doors per car
-    value: "4"
-    unit: 2 per side
-    source: zh-innovia
-  - label: Power supply
+    source: dorts-design-spec
+  - label: Supply
     value: "750"
-    unit: V DC
-    source: zh-innovia
-  - label: Traction motor
-    value: Bombardier 1512A
-    unit: 118 kW each
-    source: zh-innovia
-  - label: Control
-    value: MITRAC TC540 AU
-    unit: IGBT—VVVF
-    source: zh-innovia
-  - label: Signalling
-    value: CITYFLO 650
-    source: zh-innovia
-  - label: Automation
-    value: GoA4 (UTO)
-    source: zh-wenhu
-  - label: Fleet size
-    value: "202"
-    unit: cars
-    source: zh-innovia
-  - label: Pairs
-    value: "101"
-    source: dorts-fleet-faq
-  - label: Tyre replacement interval
+    unit: V DC side-contact conductor rail
+    source: dorts-equipment
+  - label: Carbody
+    value: Aluminium alloy
+    source: dorts-equipment
+  - label: Traction motors
+    value: "2"
+    unit: AC induction motors per car
+    source: dorts-traction
+  - label: Motor rating
+    value: "160"
+    unit: hp each at 1,760 rpm
+    source: dorts-traction
+  - label: Passenger doors
+    value: "4"
+    unit: per car, 2 per side
+    source: dorts-safety
+  - label: Empty mass
     value: TBC
+    unit: t
 sources:
-  - id: dorts-fleet-faq
-    title: How many trains were procured for each line of the Taipei metro network?
-    titleOriginal: 台北都會區大眾捷運系統路網中，各路線所採購之列車數為何？
-    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
-    url: "https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91"
-    snapshot: https://web.archive.org/web/20260807044541/https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
-    accessed: 2026-08-07
+  - id: dorts-design-overview
+    title: New medium-capacity EMUs for the Neihu Line — abstract
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page29.html
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
-    note: "The builder's own procurement table, by contract: 木柵線 CC350 51對電聯車（102輛）and 文湖線 CB370 101對電聯車（202輛）. It is the source for the contract designations and it settles the fleet totals — 51 + 101 = 152 pairs = 304 cars. Published 8 July 2008, last updated 18 March 2026."
-  - id: zh-innovia
-    title: Bombardier INNOVIA APM 256 electric multiple unit
-    titleOriginal: 龐巴迪INNOVIA APM 256型電聯車
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
-    snapshot: https://web.archive.org/web/20150531215555/https://zh.wikipedia.org/zh-tw/龐巴迪INNOVIA_APM_256型電聯車
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS identifies the 202-car fleet and the planned 101-car Taiwan assembly share at the design stage.
+  - id: dorts-design-spec
+    title: New medium-capacity EMUs for the Neihu Line — contract, formation and principal specification
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page30.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: The fullest specification found anywhere. It cites Bombardier's own product page and TRTC training documents; the Bombardier pages were retired after the Alstom acquisition, so the primary layer beneath this is currently unreachable.
-  - id: zh-taipei-fleet
-    title: Taipei Metro rolling stock
-    titleOriginal: 臺北捷運列車
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-hant/臺北捷運列車
-    snapshot: https://web.archive.org/web/20260807045301/https://zh.wikipedia.org/zh-hant/%E8%87%BA%E5%8C%97%E6%8D%B7%E9%81%8B%E5%88%97%E8%BB%8A
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS identifies Bombardier's system scope and publishes the fixed formation, dimensions, capacity design points and performance.
+  - id: dorts-equipment
+    title: New medium-capacity EMUs for the Neihu Line — materials, couplers, suspension and electrical equipment
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page31.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: "Source for the C370 fleet designation and the Tang Eng final-assembly split. Also the only source found describing the VAL256 as 「非固定編組」, a non-fixed formation — cited here because it is what makes the two fleets' formations a possible difference rather than an assumed sameness."
-  - id: zh-val256
-    title: Taipei Metro VAL256 electric multiple unit
-    titleOriginal: 台北捷運VAL256型電聯車
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
-    snapshot: https://web.archive.org/web/20221006051618/https://zh.wikipedia.org/zh-tw/台北捷運VAL256型電聯車
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS specifies the aluminium body, couplers, bogies, 750 V side-contact collection, AC motors, brakes and air-conditioning.
+  - id: dorts-safety
+    title: New medium-capacity EMUs for the Neihu Line — doors, safety and passenger information
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/jrtst/ebook/no33/files/basic-html/page32.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: Cited here only for the older fleet's bottom-contact shoe, for the comparison.
-  - id: zh-wenhu
-    title: Wenhu line
-    titleOriginal: 文湖線
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/文湖線
-    snapshot: https://web.archive.org/web/20250714045049/https://zh.wikipedia.org/zh-tw/文湖線
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS lists the passenger doors, emergency equipment, ATC functions, route displays, intercoms, CCTV and extinguishers.
+  - id: dorts-bogie
+    title: New medium-capacity EMUs for the Neihu Line — bogie and guidance design
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page34.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
+    note: DORTS describes side guide wheels, steering, switch travel and air-spring suspension designed for both old and new guideways.
+  - id: dorts-traction
+    title: New medium-capacity EMUs for the Neihu Line — propulsion and auxiliary power
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page36.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS describes Bombardier's IGBT/VVVF equipment, spin-slide control and two 160 hp AC induction motors per car.
+  - id: dorts-doors
+    title: New medium-capacity EMUs for the Neihu Line — door control and accessible warnings
+    titleOriginal: 內湖線新型中運量電聯車
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page41.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS documents microprocessor door control, obstacle detection, emergency releases, opening-side lights and audible warnings.
+  - id: dorts-production
+    title: Overseas training report on CB370 prototype EMU and onboard-system integration
+    titleOriginal: 木柵延伸（內湖）線CB370標原型電聯車及車載系統整合測試
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://data.taipei/api/dataset/52d674cd-4deb-4a31-afe8-415ddeb6ec70/resource/0b03221b-dd73-4811-8bf4-9164a2fe351d/download
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: The full DORTS report gives the 100-car Pittsburgh / 102-car Tang Eng split, Derby carbodies, Crespin bogies and assembly/test sequence.
+  - id: dorts-tests
+    title: Overseas report on CB370 bogie fatigue and passenger-door endurance testing
+    titleOriginal: 內湖線CB370標電聯車轉向架疲勞測試及車門耐久測試
+    publisher: Taipei City Government Department of Rapid Transit Systems / Taipei Open Data (臺北市政府捷運工程局／臺北市資料大平臺)
+    url: https://data.taipei/dataset/detail?id=dac794f0-93fa-4a99-a3b0-e121f089a644
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS records approved fatigue testing in Prague and door endurance testing at Faiveley in Paris in 2005.
+  - id: dorts-integration
+    title: Review and prospects for Taipei Metro electromechanical systems — Wenhu interoperability
+    titleOriginal: 臺北捷運機電系統工程之回顧與展望
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page203.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS explains why the 101 new pairs and 51 old pairs required one Cityflo 650 control system and records the retained legacy interfaces.
+  - id: dorts-quantity
+    title: DORTS frequently asked questions — train quantities
+    titleOriginal: 機電設計－台北都會區大眾捷運系統路網中，各路線所採購之列車數為何？
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS gives contract CB370 and 101 married pairs / 202 cars.
   - id: dorts-wenhu
-    title: Wenshan—Neihu Line
+    title: Wenshan–Neihu Line
     titleOriginal: 文山內湖線
-    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
     url: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    snapshot: https://web.archive.org/web/20260209210832/https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
-    note: The client's own project record. Gives section lengths, station counts, depot areas and opening dates.
-  - id: zh-muzha-depot
-    title: Muzha Depot
-    titleOriginal: 木柵機廠
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/木柵機廠
-    snapshot: https://web.archive.org/web/20220520160336/https://zh.wikipedia.org/zh-tw/木柵機廠
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS dates the Neihu extension's opening on 4 July 2009.
+  - id: trtc-network
+    title: Taipei Metro network introduction — Wenhu Line vehicles
+    titleOriginal: 路網簡介－文湖線介紹
+    publisher: Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)
+    url: https://www.metro.taipei/cp.aspx?n=ccf30033e6ed8008&s=405306CC7ACD137B
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: States that Muzha stables both fleets, contradicting the one-depot-per-fleet split this site previously asserted.
-  - id: lagardere-siemens
-    title: Siemens increases its stake in MATRA Transport International
-    publisher: Lagardère (press release, 1 October 1998)
-    url: https://www.lagardere.com/en/press-release/siemens-increases-its-stake-in-matra-transport-international/
-    snapshot: https://web.archive.org/web/20260806042121/https://www.lagardere.com/en/press-release/siemens-increases-its-stake-in-matra-transport-international/
-    accessed: 2026-08-06
-    kind: primary
-    note: Matra's own parent company announcing the sale. Primary for the ownership change, and the reason the "Bombardier bought Matra" claim previously on this page could not stand.
-  - id: metro-mag-matra
-    title: Matra Transport changes its name
-    publisher: Metro Magazine
-    url: https://www.metro-magazine.com/news/matra-transport-changes-its-name
-    snapshot: https://web.archive.org/web/20260807044158/https://www.metro-magazine.com/news/matra-transport-changes-its-name
-    accessed: 2026-08-06
-    kind: secondary
-    note: Trade press reporting the completion to 100% and the rename to Siemens Transportation Systems in November 2001.
-  - id: ec-bombardier-adtranz
-    title: Commission clears takeover of ADtranz by Bombardier (Case COMP/M.2139)
-    publisher: European Commission
-    url: https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_01_501/IP_01_501_EN.pdf
-    snapshot: https://web.archive.org/web/20260806042202/https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_01_501/IP_01_501_EN.pdf
-    accessed: 2026-08-06
-    kind: primary
-    note: The regulator's own decision. Establishes what Bombardier actually acquired in 2001 — Adtranz, from DaimlerChrysler, and nothing of Matra's.
-  - id: railway-gazette-adtranz
-    title: Adtranz takeover completed
-    publisher: Railway Gazette International, 1 June 2001
-    url: https://www.railwaygazette.com/news/adtranz-takeover-completed/28337.article
-    snapshot: https://web.archive.org/web/20260807045328/https://www.railwaygazette.com/news/2001/06/01/adtranz-takeover-completed/
-    accessed: 2026-08-06
-    kind: secondary
+    note: The operator publishes the four-car formation, 80 km/h maximum and approximately 386 passengers per Bombardier train at five standing passengers per square metre.
 ---
 
-This is **not** a VAL, and it is not descended from one. It is a Bombardier
-people mover, designed and named to fit infrastructure a French competitor had
-built thirteen years earlier — a harder thing to do than inheriting a design,
-and a more interesting one.
+## Overview
 
-The `256` is the same 2.56 m the VAL256 carries, but on this vehicle it names
-the guideway rather than the car. The car body is **2,540 mm**
-wide[^zh-innovia], twenty millimetres narrower than the VAL256 running beside
-it. What the two fleets genuinely share is the interface: the same
-running-surface spacing, the same side guide beams, the same 750 V taken off
-those beams, and — after 2009 — the same signalling.
+Contract CB370 supplied 101 married pairs, 202 cars, for the Neihu extension of
+the former Muzha Line.[^dorts-quantity] Bombardier was the electromechanical
+subcontractor: its scope included the new fleet, a new operations control
+centre, an upgraded backup control centre and new onboard train-control
+equipment for the 102 older cars.[^dorts-design-spec] The C370 fleet entered
+passenger service when the Neihu extension opened on 4 July 2009.[^dorts-wenhu]
 
-## Who owned what, and when
+The opened DORTS records call these vehicles C370, CB370 or the Bombardier
+fleet.[^dorts-design-spec] The more specific `APM 256` product suffix remains in
+this page's aliases because readers use it, but no opened primary Taipei
+procurement or manufacturer page recovered in this search gives that exact
+suffix.
 
-A story circulates — this page once told it — that Bombardier acquired Matra's
-people mover business and continued it as the Innovia APM, which would make the
-two fleets' compatibility a matter of inheritance. The record says otherwise.
-The lineage actually runs like this:
+## Procurement and production
 
-| Date | Event |
-| --- | --- |
-| Feb 1996 | Siemens buys 50% of Matra Transport, which becomes Matra Transport International[^lagardere-siemens] |
-| Oct 1998 | Siemens goes to 95%; Lagardère retains 5%[^lagardere-siemens] |
-| Nov 2001 | Siemens completes to 100%; the company is renamed Siemens Transportation Systems[^metro-mag-matra] |
-| May 2001 | Bombardier completes its acquisition of **Adtranz** — a different company, bought from DaimlerChrysler[^ec-bombardier-adtranz][^railway-gazette-adtranz] |
-| Jan 2021 | Alstom acquires Bombardier Transportation; CITYFLO becomes an Alstom product |
+DORTS's 2005 design article planned that half the order — 101 of 202 cars —
+would be assembled in Taiwan.[^dorts-design-overview] A later DORTS training
+report, written after production began, gives a different executable split:
+100 cars assembled at Bombardier's Pittsburgh plant and 102 by Tang Eng Rolling
+Stock Technology in Taiwan.[^dorts-production] These values describe different
+project stages and both remain visible; the later report's 100/102 split is used
+in the fact box because it accounts for the completed contract quantity.[^dorts-production]
 
-VAL went to **Siemens**, and stayed there — it is Siemens who market its
-descendants as CityVal and Airval. Bombardier's 2001 acquisition was Adtranz,
-whose people mover heritage runs through Westinghouse and AEG rather than
-Matra[^ec-bombardier-adtranz].
-The two deals closed in the same year and are easy to run together. They have
-nothing to do with each other.
+The production chain crossed four countries. Bombardier made carbodies at Derby
+in the United Kingdom and bogies at Crespin in France, then sent both to
+Pittsburgh for equipment installation, wiring and testing before shipment to
+Taiwan.[^dorts-production] Pittsburgh's four assembly stations progressed from
+mechanical equipment through couplers and interiors to underfloor equipment,
+tyres, static testing and finally dynamic testing on the factory test track.[^dorts-production]
 
-That leaves the compatibility to be explained by engineering rather than by
-ownership, which is the more useful answer anyway: Bombardier built to Taipei's
-existing guideway because Taipei's tender required it, not because it had
-acquired the drawings.
+## Formation and interoperability
 
-## Design
+Every service train is a fixed four-car formation made from two married pairs;
+the cars within each pair use a semi-permanent mechanical coupler, while the
+outer ends carry automatic couplers.[^dorts-design-spec][^dorts-equipment] This
+direct primary statement corrects the previous page's unresolved suggestion
+that coupling permanence was unknown.[^dorts-design-spec]
 
-Built between 2006 and 2009, principally at Bombardier's plant in West Mifflin,
-Pittsburgh, with **51 of the 101 pairs final-assembled in Taiwan** by Tang Eng
-Iron Works (唐榮車輛科技)[^zh-taipei-fleet].
+The new vehicles could not be treated as a separate railway. DORTS required a
+one-seat ride over the original and extended sections, so both the 101 new pairs
+and 51 old pairs had to run automatically over the whole line.[^dorts-integration]
+The legacy points and platform doors were retained and interfaced to Bombardier's
+Cityflo 650 moving-block control system, while the old trains received new
+onboard control equipment.[^dorts-integration]
 
-Compared with the original [VAL256](/rail/metro/rolling-stock/val256/) fleet the C370
-introduced a revised body shell and interior — blue inward-facing seating in
-place of the VAL's yellow forward-facing seats — and arrived from new with the
-CITYFLO 650 communications-based train control that was retrofitted to the older
-fleet after it entered service.
+## Carbody, guidance and suspension
 
-Current collection differs between the two fleets in a way worth recording: the
-C370 takes power through **side-contact** shoes with a fourth-rail
-return[^zh-innovia], where the VAL256 uses a bottom-contact shoe[^zh-val256].
-Both work off the same 750 V supply on the same guideway.
+Each aluminium-alloy car is 13.78 m long, 2.54 m wide and 3.53 m high.[^dorts-design-spec][^dorts-equipment]
+The body uses flame-resistant, low-smoke and low-toxicity interior materials;
+the floor structure was specified to resist fire for 30 minutes.[^dorts-equipment]
+Published empty mass remains TBC.
 
-### Formation — and a difference this page used to deny
+Each car has two single-axle bogies. Vertical dampers form the primary
+suspension and air springs the secondary suspension.[^dorts-equipment] External
+side guide wheels steer against guide rails compatible with both the original
+Muzha and new Neihu infrastructure; a flanged bearing lets the axle and guidance
+assembly rotate beneath the body.[^dorts-bogie] That official account replaces
+the earlier page's secondary comparison of side- and bottom-contact shoes.
 
-Cars come in pairs, 101 of them under contract CB370[^dorts-fleet-faq], and a
-train is two pairs: **2M+2M**[^zh-innovia]. That much is settled.
+## Propulsion, braking and performance
 
-**Whether the pairs are permanently married into fixed sets is not stated in
-anything found here.** zh.wikipedia gives the formation as 2M+2M and says
-nothing about coupling permanence, and no Bombardier or Alstom document survives
-the retirement of the product pages. Nothing searched on the operator's side has
-answered it either — which is a statement about this site's searching, not about
-what the operator publishes.
+Power is 750 V DC collected by side-contact shoes.[^dorts-equipment] Each car
+has two forced-cooled, four-pole AC induction motors rated at 160 hp at 1,760
+rpm.[^dorts-traction] Bombardier packaged two variable-voltage, variable-frequency
+motor inverters, an auxiliary static inverter, battery charger and cooling fans
+in an IP56 enclosure and used IGBT control devices.[^dorts-traction]
 
-That matters because **the other fleet on this line is described as
-「非固定編組」 — non-fixed**[^zh-taipei-fleet]. So the two fleets may well differ
-here, and this page used to say the opposite: that nothing sourced indicated a
-difference in formation and both were "permanently coupled pairs" — an argument
-from silence carrying an assertion nobody had made. Both are gone.
+DORTS specifies an 80 km/h design maximum and 70 km/h operating maximum, not
+the 90 km/h design figure previously carried by this page.[^dorts-design-spec]
+Normal braking blends regenerative electrical braking with air-controlled
+hydraulic disc brakes; every axle also has a parking brake.[^dorts-equipment]
+Wheel-speed comparison reduces tractive effort during spin and transfers to
+friction braking during detected slide before electrical braking returns.[^dorts-traction]
 
-*Interior layout, air conditioning, passenger information and tyre specification
-are still to be documented.*
+## Passenger systems and capacity
 
-## Fleet history
+Each car has four externally sliding doors, two per side, driven by DC motors.[^dorts-safety]
+Microprocessor controllers monitor direction, speed, obstacle detection and ATC
+commands.[^dorts-doors] Door-side lights flash for five seconds before opening,
+and multi-tone audible warnings provide an equivalent cue before opening and
+closing.[^dorts-doors] Four dynamic route displays, four passenger-information
+screens, two emergency intercoms, CCTV and two extinguishers were specified per
+car.[^dorts-safety]
 
-- **2006–2009** — built. 101 two-car sets, 202 cars, numbered 101–201[^zh-innovia].
-- **4 July 2009** — entered service with the opening of the Neihu extension,
-  BR13 through BR24[^dorts-wenhu].
+Capacity has an unresolved primary-source disagreement. The design paper gives
+20 seats and 93 people per car at five standing passengers per square metre,
+which implies 372 per four-car train.[^dorts-design-spec] TRTC's current network
+introduction uses the same five-person standing density but states approximately
+386 people per Bombardier train.[^trtc-network] The 14-person difference is not
+explained in either opened page, so both values are published rather than one
+being chosen.
 
-The numbering starts at 101 for a reason. The sets were originally to be numbered
-from 52, continuing the VAL256 sequence, and were renumbered so the two fleets
-could be told apart on sight[^zh-innovia].
+## Testing and service
 
-*Delivery sequence, and which unit numbers were built where, are still to be
-confirmed.*
+DORTS sent staff to observe bogie-frame fatigue testing at Škoda Výzkum in
+Prague and passenger-door endurance testing at Faiveley Transport in Paris in
+May–June 2005.[^dorts-tests] The contractor first had to submit detailed designs
+and approved test procedures; dye-penetrant and magnetic-particle inspections
+fed the bogie analysis.[^dorts-tests] The later prototype report records static
+factory tests followed by dynamic running tests at Pittsburgh.[^dorts-production]
 
-## Depot allocation
-
-Based at [Neihu Depot](/rail/metro/depots/neihu-depot/), the line's full-function
-maintenance depot. [Muzha Depot](/rail/metro/depots/muzha-depot/) stables both
-fleets[^zh-muzha-depot], so the allocation is not a clean one-fleet-per-depot
-split.
-
-## Corrections
-
-- **This page previously opened by saying Bombardier acquired Matra's people
-  mover business and continued it as the Innovia APM.** That was false, and it
-  was the page's entire explanation for the two fleets' compatibility. Siemens
-  bought Matra's transport business[^lagardere-siemens][^metro-mag-matra];
-  Bombardier bought Adtranz[^ec-bombardier-adtranz]. The compatibility is
-  engineering to a tender, not inheritance — see "Who owned what, and when"
-  above.
-- **This page previously said Muzha Depot was VAL256-only.** No source
-  supports a one-fleet-per-depot split; Muzha stables both
-  types[^zh-muzha-depot].
-- **"C370" was labelled as the contract number. It is not.** DORTS's own
-  procurement table gives the contract as **CB370**[^dorts-fleet-faq] — the same
-  CB series as the Neihu civil contracts CB410, CB420 and CB430, into which the
-  E&M scope was folded. C370 is the fleet designation, in the same series as the
-  high-capacity C301, C321, C341, C371 and C381[^zh-taipei-fleet]. Both are
-  correct names for different things, and the page was using one to mean the
-  other. The URL keeps `c370`, which is what the fleet is called.
+The procurement and integration records establish operation over the whole
+Wenhu Line, but they do not publish a current split between Muzha and Neihu
+depots.[^dorts-integration] Present depot allocation therefore remains TBC
+pending an operator asset roster.

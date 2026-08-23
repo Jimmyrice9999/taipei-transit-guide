@@ -15031,3 +15031,69 @@ and 218,043 internal links with no broken links, fragments, orphans, missing
 glyphs, accessibility errors or warnings. Navigation passed all 19 checks; the
 independent `npm test` rebuild passed all 217 unit tests and 17 fact
 cross-checks.
+
+## Run 98 — Part 3, C370 rolling stock (23 August 2026)
+
+### Sourced
+
+Rebuilt C370 from 886 to 831 sourced body words: shorter because the old
+ownership/corrections essay was removed, but now based entirely on 13 primary
+sources instead of four primary and seven secondary sources. DORTS's vehicle
+design article supplies the fixed four-car formation, dimensions, 80/70 km/h
+design/operating maxima, aluminium body, side-contact 750 V collection,
+guidance, suspension, IGBT/VVVF propulsion, two 160 hp motors per car, doors and
+passenger systems:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page30.html.
+The full prototype report establishes Derby carbodies, Crespin bogies, 100 cars
+assembled in Pittsburgh and 102 by Tang Eng:
+https://data.taipei/api/dataset/52d674cd-4deb-4a31-afe8-415ddeb6ec70/resource/0b03221b-dd73-4811-8bf4-9164a2fe351d/download.
+DORTS's test record establishes the 2005 Prague bogie-fatigue and Paris door-
+endurance programmes:
+https://data.taipei/dataset/detail?id=dac794f0-93fa-4a99-a3b0-e121f089a644.
+
+### TBC
+
+Empty mass, signed award date/value, final unit-by-unit delivery and acceptance
+chronology, current depot allocation and the exact primary `Innovia APM 256`
+commercial suffix remain TBC. The signed CB370 contract, acceptance
+certificates, current TRTC asset register and an archived Taipei-specific
+Bombardier product sheet would settle them respectively.
+
+### Contradicted the corpus
+
+The old page said fixed formation was unknown; DORTS explicitly requires two
+married pairs in a fixed four-car formation. It gave a 90 km/h design maximum;
+DORTS gives 80 km/h design and 70 km/h operation. It described 51 of 101 pairs
+as Taiwan-assembled from a secondary source; the full production report says
+102 cars in Taiwan and 100 in Pittsburgh. The page's secondary side-versus-
+bottom shoe comparison, depot split, unit numbering, build range and ownership
+essay were removed because the opened primary fleet records did not establish
+them or they did not belong in this vehicle profile.
+
+### Conflicts found
+
+The August 2005 design article planned 101 Taiwan-assembled cars; the later
+production report assigns 102 to Tang Eng and 100 to Pittsburgh. Both are
+published as design-stage and production-stage values. At five standing
+passengers per square metre, DORTS's 93-per-car design figure implies 372 per
+train while TRTC currently publishes approximately 386 per train. Neither
+source explains the 14-person difference, so neither value was selected over
+the other.
+
+### Gates
+
+Claims improved from 11,311 sourced / 4,308 TBC / 32 asserted to 11,302 sourced
+/ 4,307 TBC / 24 asserted; the lower sourced total reflects removal of repeated
+secondary-supported correction prose, while unsourced assertions fell by eight
+and the baseline was not changed. Citations are clean at 4,896 resolved (4,693
+primary / 203 secondary), and research is clean at 115 files with 488 dated
+checked-and-failed entries. The fresh build correctly rejected two new Han
+glyphs (`疲`, `耐`); regenerating the content subset fixed it. The unit gate then
+correctly rejected a unit embedded in the traction-motor value; splitting value
+and unit fixed it. The clean full verifier passed 217 tests across 1,954 pages
+and 218,051 internal links with no broken links, fragments, orphans, missing
+glyphs, accessibility errors or warnings. Navigation passed all 19 checks on
+the clean rerun after one non-reproducing keyboard-start failure; the independent
+`npm test` rebuild passed all 217 unit tests and 17 fact cross-checks. No new
+gate was needed because the permanent font and spec-shape gates caught both
+defects.
