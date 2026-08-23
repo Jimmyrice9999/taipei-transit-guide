@@ -34,12 +34,28 @@ sources:
     note: Supports the recorded FAB-978 vehicle’s manufacturer, model, seats/standing places and Dàyou registration; it is one incident vehicle record, not a complete fleet register.
 ---
 
-## Incident-record vehicle
+## Overview: one recorded vehicle
 
 The Taiwan Transportation Safety Board factual report identifies the Dàyou-registered collision vehicle as a Taiwan Yutong 6128HG and records 25 seats and 24 standing places [^ttsb-citiair]. Those figures belong to the vehicle described in that report, not automatically to every 6128HG or every Dàyou bus [^ttsb-citiair].
 
 The source establishes the manufacturer/model and the passenger-capacity figures it prints, but it does not establish a complete procurement batch, fleet count, body-builder relationship or propulsion type [^ttsb-citiair]. Those fields remain TBC rather than being inferred from the model name [^ttsb-citiair].
 
-## Evidence from one vehicle
+The report’s registration description places the vehicle with Dàyou while
+identifying Taiwan Yutong as its manufacturer; it also says maintenance matters
+were handled by Dàyou [^ttsb-citiair]. That division of responsibility belongs
+to the incident vehicle in the report and should not be generalised into a
+manufacturer-wide service arrangement [^ttsb-citiair]. The 25-seat and
+24-standing figures are likewise a capacity record for that vehicle, not a type
+approval for every 6128HG sold in Taiwan [^ttsb-citiair].
+
+The report therefore answers two different questions at once: it identifies the
+vehicle involved in the collision, and it records the passenger layout used in
+that vehicle [^ttsb-citiair]. It does not answer how the model was purchased,
+which routes normally used it, or whether Dàyou operated other 6128HG units
+with a different interior [^ttsb-citiair]. It also gives no retirement date for
+the recorded bus [^ttsb-citiair]. Those distinctions are why the page
+does not turn one safety-investigation record into a fleet total.
+
+## Evidence from one vehicle and remaining fields
 
 The safety report identifies one incident vehicle, not a procurement batch or current fleet [^ttsb-citiair]. Whether Dàyou still operates this model, how many units it acquired, and whether later examples differ in body, capacity or propulsion remain TBC. A current operator fleet register or vehicle approval record would settle those questions [^ttsb-citiair].

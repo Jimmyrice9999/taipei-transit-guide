@@ -16063,3 +16063,44 @@ sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
 failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
 run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
 links/unused audits were restored and `probes/` was not staged.
+# Run 113 - deepen short bus models and depot records (23 August 2026)
+
+## Part 3 - bus models and depots
+
+### Sourced
+
+The three bus-model pages now exceed 300 Markdown-stripped body words: King
+Long 125->327, Model T electric 186->329, and Taiwan Yutong 6128HG 144->307.
+The additions distinguish Dàyou's highway and city year-group labels, keep the
+Model T subsidy arithmetic tied to New Taipei's route-857 release, and keep the
+Yutong capacity and maintenance statements tied to the single TTSB incident
+vehicle. No unsupported chassis, battery, fleet-count or route-allocation values
+were introduced.
+
+The three bus-depot pages likewise exceed 300 words: Danan Guandu 145->318, San
+Chung operating sites 154->324, and Taipei Bus stations 130->316. The pages now
+separate tender design assumptions from completion, dispatch sites from
+maintenance yards, and operator contact directories from a TDX depot register.
+All additions use their existing primary sources: Dàyou's fleet page,
+New Taipei's Model T release, the TTSB factual report, Danan's site directory and
+charging tender, San Chung's company profile, and Taipei Bus's profile and
+station directory.
+
+### TBC and checked gaps
+
+The sources still do not publish complete King Long technical variants or unit
+counts, Model T manufacturer/battery/charging specifications, a Yutong fleet
+total, Guandu completion and route allocation, San Chung site capacities or
+opening dates, or Taipei Bus facility capacities and opening dates. Those gaps
+remain explicitly TBC; no route or depot value was inferred from a name.
+
+### Verification and gate
+
+The first claims run caught one uncited sentence about the Guandu completion
+milestone; attaching the tender citation restored zero ASSERTED claims. Final
+verify passed: 1,954 pages, 218,210 internal links with no broken links,
+fragments or orphans; 4,988 citations (4,804 primary / 184 secondary); 11,460
+sourced / 4,307 TBC / zero asserted claims; 124 research files / 534 checked
+failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
+run cite`, `npm run verify`, `npm run nav` (19/19), and `npm test` all passed.
+Generated links/unused audits were restored and `probes/` was not staged.

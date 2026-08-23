@@ -46,11 +46,31 @@ sources:
     note: Supports the planned 74-space charging scope, A/B class split, battery assumptions and completion deadline; it does not verify completion or route allocation.
 ---
 
-## Procurement record
+## Overview and procurement record
 
 Danan’s contact directory names Guandu as one of its operating sites and describes it at a road intersection rather than publishing a full street address [^danan-sites]. A separate Danan procurement specification describes an electric-bus parking and charging project for 74 spaces, split into 42 Class A and 32 Class B spaces [^danan-guandu-tender].
 
 The specification uses 350-kWh and 200-kWh battery assumptions for the two classes and gives 15 July 2026 as the completion deadline [^danan-guandu-tender]. Those are procurement requirements, not evidence that construction finished or that buses were assigned to specific routes [^danan-guandu-tender].
+
+The A/B split is a parking-and-charging design distinction: 42 spaces are
+classified A and 32 are classified B in the tender, while the battery figures
+are assumptions used for the electrical design [^danan-guandu-tender]. The
+document therefore supports the planned scale of the project and the load it
+was designed to serve, but not the number of chargers ultimately installed,
+the connector standard or the number of buses that can charge simultaneously
+[^danan-guandu-tender].
+
+Guandu is also a named Danan operating site in the company directory, which is
+stronger evidence for the location context than inferring a depot from a route
+terminus [^danan-sites]. The directory does not give a street number for the
+site, and the tender does not attach route numbers to individual spaces
+[^danan-sites][^danan-guandu-tender].
+
+The deadline is likewise a contractual milestone rather than an opening date
+[^danan-guandu-tender];
+the tender does not say that buses began using the spaces on 15 July 2026
+[^danan-guandu-tender]. A completion certificate or later operating notice is
+needed before the planned 74 spaces can be described as an active depot [^danan-guandu-tender].
 
 ## Gaps
 

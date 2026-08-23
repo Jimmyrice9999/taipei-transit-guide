@@ -40,11 +40,27 @@ sources:
     note: Supports the 13 San Chung Bus Model T electric buses on route 857, their dated entry into service, assistance systems and NT$1.5 million per-bus subsidy.
 ---
 
-## What is established
+## Overview and deployment
 
 New Taipei’s Transport Department records 13 Model T electric buses entering service on San Chung Bus route 857 on 19 September 2023 [^ntpc-electric-857]. The source describes the vehicle as electric and places it on a named route with a named operator; it does not present this as a complete San Chung fleet register [^ntpc-electric-857].
 
 The same release describes surround-view cameras, warnings for inner-wheel differences, electronic mirrors and passenger-facing route-request and stop-display equipment [^ntpc-electric-857]. It also records a municipal subsidy of NT$1.5 million for each bus [^ntpc-electric-857]. That is procurement/subsidy evidence for this deployment, not a claim that the same amount applies to every electric bus in Taiwan [^ntpc-electric-857].
+
+Thirteen buses at NT$1.5 million each represent a published subsidy exposure of
+NT$19.5 million for this deployment, calculated from the release's per-bus
+figure; the source does not say whether the operator paid an equal purchase
+price or whether the subsidy was disbursed in one instalment [^ntpc-electric-857].
+The date is an entry-into-service date for route 857, not a manufacture date,
+delivery date or fleet-wide conversion date [^ntpc-electric-857].
+
+## Equipment named by the release
+
+The assistance systems are part of the public announcement's description of
+these 13 vehicles: surround-view cameras, an inner-wheel-difference warning,
+electronic mirrors, a passenger stop-request interface and an onboard display
+for route and stop information [^ntpc-electric-857]. The wording establishes
+the equipment that New Taipei chose to highlight; it does not provide a wiring
+diagram, software version, camera supplier or charging specification [^ntpc-electric-857].
 
 ## Technical gaps
 

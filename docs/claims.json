@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11444,
+    "sourced": 11460,
     "tbc": 4307,
     "asserted": 0,
     "meta": 46
@@ -251,7 +251,7 @@
     {
       "file": "content/bus/depots/guandu-danan.md",
       "sources": 2,
-      "sourced": 7,
+      "sourced": 10,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -259,7 +259,7 @@
     {
       "file": "content/bus/depots/sanchung-operating-sites.md",
       "sources": 1,
-      "sourced": 7,
+      "sourced": 10,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -267,7 +267,7 @@
     {
       "file": "content/bus/depots/taipei-bus-stations.md",
       "sources": 2,
-      "sourced": 3,
+      "sourced": 5,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -283,7 +283,7 @@
     {
       "file": "content/bus/models/king-long.md",
       "sources": 1,
-      "sourced": 5,
+      "sourced": 8,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -291,7 +291,7 @@
     {
       "file": "content/bus/models/model-t-electric.md",
       "sources": 1,
-      "sourced": 13,
+      "sourced": 17,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -299,7 +299,7 @@
     {
       "file": "content/bus/models/yutong-6128hg.md",
       "sources": 1,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
