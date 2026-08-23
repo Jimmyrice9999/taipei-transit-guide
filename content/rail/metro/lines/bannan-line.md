@@ -6,7 +6,7 @@ line: BL
 aliases:
   - 板南線
   - Blue Line
-updated: 2026-08-10
+updated: 2026-08-23
 hero:
   image: bannan-line/hero
   alt: Passengers stepping off a Bannan Line train at Houshanpi, its doors open along the platform.
@@ -29,10 +29,10 @@ facts:
     source: dorts-dingpu
   - label: Depots
     value: Tucheng, Nangang
-    source: zh-bannan
+    source: dorts-tucheng-line
   - label: Rolling stock
     value: C321, C341
-    source: zh-bannan
+    source: dorts-rolling-stock
   - label: Operating hours
     value: 06:00–24:00
     source: trtc-bannan
@@ -86,18 +86,18 @@ specs:
   - label: Maximum operating speed
     value: "80"
     unit: km/h
-    source: zh-bannan
+    source: dorts-me-systems
   - label: Design speed
     value: "90"
     unit: km/h
-    source: zh-bannan
+    source: trtc-2022-report
   - label: Electrification
     value: "750"
     unit: V DC, third rail
-    source: zh-bannan
+    source: dorts-me-systems
   - label: Cars per train, C341
     value: "6"
-    source: zh-c341
+    source: dorts-me-systems
   - label: Daily ridership
     value: TBC
 sources:
@@ -214,15 +214,6 @@ sources:
     accessed: 2026-08-10
     kind: secondary
     note: "Cited only for its infobox length of 26.6 km, which is a third value in the length conflict and agrees with the TDX measurement to the rounding. The article carries one reference in total and says nothing substantive about the fleets."
-  - id: zh-c341
-    title: Taipei Metro 341 series electric multiple unit
-    titleOriginal: 臺北捷運341型電聯車
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/wiki/臺北捷運341型電聯車
-    accessed: 2026-08-10
-    kind: secondary
-    lang: zh-Hant
-    note: "The article title has no C in it, which is why it is easy to miss. Source for the six-car 4M2T formation. Its procurement sentence — 每輛車的價格是捷運工程局直接購買的321型的1.5倍 — carries no footnote; the news report cited beside it is what this page relies on for that claim."
   - id: cna-2005
     title: "Six new Taipei metro trainsets enter service one by one"
     titleOriginal: 台北捷運六列新電聯車 陸續投入營運
@@ -250,173 +241,401 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "The only account found of the empty-running extra workings: four 加班車 start at 亞東醫院 and two of them, at 08:07 and 08:16, 直接空車到江子翠站才開門載客, because trains 常在進入台北市前就已客滿. Quotes TRTC saying 班距已壓縮至2分15秒一班，無法再增加班次."
+  - id: dorts-construction-management
+    title: "Taipei MRT Engineering Series, revised edition, volume 15: MRT construction management practice"
+    titleOriginal: 捷運工程叢書 精進版－15 捷運工程施工管理實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "DORTS's procurement history. It gives an approximately 7 km Banqiao length, says the Xindian River shield tunnels drove joint bids for CP261–CP263, distinguishes the Nangang contracts by technical and security requirements, and records the cancellation of negotiated-price awards on Banqiao."
+  - id: dorts-tunnel-cp261
+    title: "Taipei MRT Engineering Series, revised edition, volume 8: MRT tunnel engineering practice — CP261 incident"
+    titleOriginal: 捷運工程叢書 精進版－8 捷運隧道工程實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page234.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Identifies CP261's 2,063 m scope and earth-pressure-balance shields, dates the 28 April 1995 groundwater inflow, and locates it at the most leakage-prone interface between silty fine sand and silty clay in the Songshan Formation's fifth unit."
+  - id: dorts-tunnel-cp261-response
+    title: "Taipei MRT Engineering Series, revised edition, volume 8: MRT tunnel engineering practice — CP261 emergency response"
+    titleOriginal: 捷運工程叢書 精進版－8 捷運隧道工程實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page236.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Gives the CP261 inflow chronology, the roughly 6 m surface void, the tilted ten-storey building, emergency sealing and grouting, and completion of water stopping at 13:00 that day."
+  - id: dorts-tunnel-beimen
+    title: "Taipei MRT Engineering Series, revised edition, volume 8: MRT tunnel engineering practice — Beimen"
+    titleOriginal: 捷運工程叢書 精進版－8 捷運隧道工程實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page308.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "DORTS's retrospective statement that all CN253B shield tunnels were completed without affecting the Beimen monument; treated as the builder's claim because the underlying monitoring records were not found."
+  - id: dorts-structures
+    title: "Taipei MRT Engineering Series, revised edition, volume 7: MRT structural engineering practice"
+    titleOriginal: 捷運工程叢書 精進版－7 捷運結構工程實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page183.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Describes cut-and-cover as the design method for initial-network underground stations including Bannan, and gives the basic—not universal—two-level, roughly 200 m by 18 m station box."
+  - id: dorts-power
+    title: Innovative design and construction of the Songshan Line power-supply system
+    titleOriginal: 捷運松山線供電系統創新設計與施工
+    publisher: MRT Technology, issue 52, Taipei City Government DORTS 捷運技術第52期，臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page138.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Records successive Bannan and Tucheng DC-cable incidents, TRTC's inspection, moisture/soil ingress at joints or damaged jackets, and the resulting standard joint method and material selection."
+  - id: dorts-architecture
+    title: Bannan Line station architectural design
+    titleOriginal: 車站建築設計－板南線
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Builder's design account for the Tucheng, Dingpu and Nangang stations, including the restrained surface volumes, Dingpu's light concept, Nangang's lake-green nostalgia/technology scheme and 62.5 m art walls, and Nangang Exhibition Center's digital theme."
+  - id: dorts-rolling-stock
+    title: "Taipei MRT Engineering Series, revised edition, volume 21: MRT rolling-stock practice"
+    titleOriginal: 捷運工程叢書 精進版－21 捷運電聯車實務
+    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS) 臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/ebook/no21/files/basic-html/page171.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "States that the 36 Siemens trains procured for Xindian/Nangang/Zhonghe and the six Siemens trains procured for Tucheng all operated on Bannan, and documents the interior fire and load requirements."
+  - id: dorts-me-systems
+    title: Tracing the development of Taipei Metro electrical and mechanical systems
+    titleOriginal: 臺北捷運機電系統精進軌跡尋蹤－機電規設之蛻變、創新與成長
+    publisher: MRT Technology, issue 48, Taipei City Government DORTS 捷運技術第48期，臺北市政府捷運工程局
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Primary technical account for the 36 six-car 321 trains and six six-car 341 trains, Siemens manufacture, 321 operating speed and 750 V third-rail supply, 341 delivery dates, and the technical changes between the fleets."
+  - id: trtc-2022-report
+    title: Taipei Metro 2022 annual report
+    titleOriginal: 台北捷運公司2022年報
+    publisher: Taipei Rapid Transit Corporation 臺北大眾捷運股份有限公司
+    url: https://www-ws.gov.taipei/001/Upload/405/relfile/18288/7592/4f9f0c33-869e-435c-bfd3-cd152fee80f3.pdf
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Operator annual-report technical table: models 321 and 341, 36 and six trains, six cars per train and a 90 km/h maximum design speed."
+  - id: control-yuan-dingpu
+    title: Investigation report on the Dingpu station joint-development project
+    titleOriginal: 監察院115交調0011調查報告
+    publisher: Control Yuan 監察院
+    url: https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/74451
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The 35-page investigation says the 2009 planning procedure was lawful, but finds limited effect from the stated reasons for pausing after failed 2016/2017 tenders, difficulty denying delay before the 2024 third tender, and insufficiently thorough earlier handling of the disputed planning return."
 ---
 
-The blue line is the network's east–west workhorse, running BL01 Dingpu in
-Tucheng to BL23 Nangang Exhibition Center across 23 stations[^tdx]. It was not
-built as one line. It was assembled from a Nangang line, a Banqiao line, a
-Tucheng line and two extensions, opened in **eight separate stages between 1999
-and 2015**[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu],
-and every one of those five projects was built underground[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu].
+## Overview
 
-## How it opened
+The Bannan Line is the Taipei Metro network's continuous east–west trunk,
+running from BL01 Dingpu in Tucheng to BL23 Nangang Exhibition Center through
+23 stations.[^tdx] Its present identity joins five construction projects: the
+Nangang, Banqiao and Tucheng lines, the Nangang eastern extension and the
+Dingpu extension.[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu]
+Those projects opened in eight passenger-service stages between 1999 and 2015,
+and DORTS describes every one as underground.[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu]
 
-| Opened | Section | Project |
+The line carries two overlapping services: BL23–BL01 over the whole route and
+BL23–BL05 Far Eastern Hospital over the busier eastern and central
+section.[^trtc-bannan] The operator schedules service from 06:00 to 24:00 and
+publishes journey times of about 48 minutes for the full route and 38 minutes
+for the short working.[^trtc-bannan]
+
+## Route and alignment
+
+From Dingpu the railway remains underground through Tucheng and Banqiao,
+crosses below the Xindian River between Jiangzicui and Longshan Temple, then
+follows Heping West Road, Zhonghua Road and the Zhongxiao corridor across
+central Taipei.[^dorts-banqiao-line][^dorts-construction-management] East of
+Kunyang, shield tunnels continue below Zhongxiao East Road to Nangang, cross
+the high-speed and conventional-rail tunnels, and reach Nangang Exhibition
+Center beneath Nanxi Park east of Academia Road.[^dorts-nangang-east]
+
+The western alignment was not the scheme first studied.[^dorts-banqiao-line]
+From 1987 DORTS examined alternatives on both sides of the Xindian River and a
+river-bottom tunnel before the Executive Yuan accepted a 1989 revision that
+changed the originally elevated western Blue Line to underground construction
+and extended it towards Tucheng.[^dorts-banqiao-line] The eastern end also
+changed: the 1986 initial-network approval had the Blue Line running from
+Banqiao to Songshan, before the Executive Yuan accepted an extension to Nangang
+on 21 January 1988.[^dorts-bannan]
+
+That eastern proposal still contained elevated and surface railway beyond the
+Dongxin Street tunnel portal.[^dorts-bannan] Taipei City Council asked in
+December 1989 for the roughly 1.75 km Xiangyang–Nangang section to be put
+underground, and a 1992 Executive Yuan public-works meeting directed that the
+main and branch routes east of Houshanpi, Kunyang station and the route to it
+would be underground, with Kunyang becoming the initial network's operating
+terminus.[^dorts-bannan]
+
+The committed TDX route measures 26.65 km between BL01 and BL23 and 20.48 km
+between BL05 and BL23 on the short working.[^tdx] Its longest inter-station gap
+is 3.08 km between BL09 Jiangzicui and BL10 Longshan Temple, across the Xindian
+River, while the shortest is 0.65 km between BL06 Fuzhong and BL07
+Banqiao.[^tdx]
+
+## Planning, contracts and opening
+
+The original Blue Line formed part of the 70.3 km initial network approved by
+the Executive Yuan on 4 April 1986; the NT$444.4 billion figure on the DORTS
+page is the approval total for that six-line initial network, rather than a
+Bannan-only cost.[^dorts-bannan] Tucheng planning began in 1990 and its route
+was approved on 18 October 1993 as about 5.6 km with four underground stations
+and a depot.[^dorts-tucheng-line] The eastern extension's route plan was
+approved on 17 June 1998, its financial plan on 13 June 2001, and its published
+total budget was NT$15.735 billion.[^dorts-nangang-east]
+
+DORTS divided the early Nangang works into numerous civil, building-services
+and systems packages, including rolling stock, signalling, power,
+communications, lifts, escalators, fare collection and depot
+facilities.[^dorts-bannan] Procurement strategy varied with the work: DORTS
+says technically demanding Nangang packages used international joint bids,
+others required foreign technical cooperation, and the security-sensitive
+CN251 and CN252 works through the Bo'ai special district were negotiated with
+the Veterans Engineering Agency.[^dorts-construction-management] The same
+retrospective records that political representatives and private contractors
+criticised negotiated-price awards to public construction bodies, after which
+the Banqiao Line abandoned that route to contract award.[^dorts-construction-management]
+
+| Opened | Passenger section | Construction project |
 |---|---|---|
-| 24 December 1999 | Municipal Government – Ximen | Nangang line[^dorts-bannan] |
-| 24 December 1999 | Ximen – Longshan Temple | Banqiao line, stage 1[^dorts-banqiao-line] |
-| 31 August 2000 | Longshan Temple – Xinpu | Banqiao line, stage 2[^dorts-banqiao-line] |
-| 30 December 2000 | Municipal Government – Kunyang | Nangang line[^dorts-bannan] |
-| 31 May 2006 | Xinpu – Yongning | Banqiao line stage 3 / Tucheng line[^dorts-banqiao-line][^dorts-tucheng-line] |
-| 25 December 2008 | Kunyang – Nangang | Nangang eastern extension[^dorts-nangang-east] |
-| 27 February 2011 | Nangang – Nangang Exhibition Center | Nangang eastern extension[^dorts-nangang-east] |
-| 6 July 2015 | Yongning – Dingpu | Dingpu extension[^dorts-dingpu] |
+| 24 December 1999 | Municipal Government–Ximen | Nangang line[^dorts-bannan] |
+| 24 December 1999 | Ximen–Longshan Temple | Banqiao line, stage 1[^dorts-banqiao-line] |
+| 31 August 2000 | Longshan Temple–Xinpu | Banqiao line, stage 2[^dorts-banqiao-line] |
+| 30 December 2000 | Municipal Government–Kunyang | Nangang line[^dorts-bannan] |
+| 31 May 2006 | Xinpu–Yongning | Banqiao stage 3 and Tucheng line[^dorts-banqiao-line][^dorts-tucheng-line] |
+| 25 December 2008 | Kunyang–Nangang | Nangang eastern extension[^dorts-nangang-east] |
+| 27 February 2011 | Nangang–Nangang Exhibition Center | Nangang eastern extension[^dorts-nangang-east] |
+| 6 July 2015 | Yongning–Dingpu | Dingpu extension[^dorts-dingpu] |
 
-The line's builder is explicit that the first two sections were
-hurried[^dorts-nangang-line]. Both
-were 趕工提前完工 — rushed to early completion — so that the east–west route
-would form the 雙十 network with the north–south Tamsui, Xindian, Zhonghe and
-Muzha lines as soon as possible[^dorts-nangang-line]. The eastward change came
-earlier still: the approved blue line originally ran only to Songshan, and the
-extension on to Nangang was accepted by the Executive Yuan on **21 January
-1988**[^dorts-bannan].
+DORTS says the Municipal Government–Ximen and Ximen–Longshan Temple works were
+rushed to early completion so the east–west railway could form the 雙十 network
+with the Tamsui, Xindian, Zhonghe and Muzha lines.[^dorts-nangang-line] The
+eastern extension was deliberately designed to open in two stages because its
+two-station tunnel was being delivered by the Railway Underground Project
+Office while DORTS's own civil work was split into CE730A and CE730B.[^dorts-nangang-east]
+Its seven systems packages—trains, signalling, power, communications, digital
+radio, fare collection and track—were bundled with the Xinzhuang–Luzhou Line
+systems to preserve compatibility and intellectual-property continuity while
+controlling cost.[^dorts-nangang-east]
 
-The two ends took the longest[^dorts-dingpu][^dorts-nangang-east]. The Dingpu
-extension is a single station and
-about 2 km, approved in February 2007, started on 31 December 2009 and opened on
-6 July 2015 at a total cost of NT$7.627 billion[^dorts-dingpu]. The eastern
-extension is 2.5 km and two stations for NT$15.735 billion[^dorts-nangang-east].
+The 2 km Dingpu extension was approved on 16 February 2007, began construction
+on 31 December 2009 and cost NT$7.627 billion according to the project
+page.[^dorts-dingpu] Initial inspection occurred on 6 June 2015, final
+inspection on 23 June and passenger service on 6 July.[^dorts-dingpu]
 
-## Under the densest part of the city
+## Engineering and construction
 
-DORTS names this as one of the network's harder lines to build, and says why:
-the route runs mostly through densely populated commercial districts with heavy
-traffic, adjacent to Taipei Main Station, the Executive Yuan and the Control
-Yuan, and construction had to pass **beneath Beimen, a first-grade historic
-monument**[^dorts-bannan].
+### Shield tunnelling below the Xindian River
 
-At the eastern end the line runs for about **725 m inside Taiwan Railways' land**,
-where metro, high speed rail and conventional rail share one structure — the
-三鐵共構 arrangement, given here as a length rather than an
-adjective[^dorts-nangang-east].
+DORTS identifies the shield tunnels below the Xindian River bed as both
+technically difficult and large enough in scale and cost to drive joint bidding
+for the CP261, CP262 and CP263 packages.[^dorts-construction-management] Its
+construction-management volume calls the Banqiao Line approximately 7 km long,
+where the current project page says approximately 7.1 km.[^dorts-construction-management][^dorts-banqiao-line]
+
+CP261 extended 2,063 m from the south end of Ximen station along Zhonghua Road
+and Heping West Road to a ventilation shaft below Huajiang Bridge, including
+Longshan Temple station and twin running tunnels.[^dorts-tunnel-cp261] The
+tunnels used earth-pressure-balance shields with soil conditioning.[^dorts-tunnel-cp261]
+
+On 28 April 1995, while workers were breaking out the launch face for the
+westbound tunnel, a small seep observed at 06:45 became a large water-and-sand
+inflow at 07:15.[^dorts-tunnel-cp261-response] From 08:10 the ground developed
+a void about 6 m across and a nearby ten-storey residential building tilted
+slightly.[^dorts-tunnel-cp261-response] DORTS locates the leak about 2.5 m above
+the shaft base at the boundary between more permeable silty fine sand and silty
+clay, where water pressure was greatest within that part of the Songshan
+Formation.[^dorts-tunnel-cp261]
+
+The emergency response pushed the shield into its steel bulkhead, pressurised
+the chamber, injected water-stopping material, backfilled the street void,
+grouted the surrounding ground at low pressure and increased
+monitoring.[^dorts-tunnel-cp261-response] DORTS says the inflow was stopped by
+13:00 and traffic then reopened; engineers later selected low-pressure grouting
+from five assessed methods to correct the building while minimising disruption
+to its structure and residents.[^dorts-tunnel-cp261-response]
+
+### Underground stations and the central corridor
+
+DORTS's structural manual says initial-network underground stations including
+those on Bannan were designed by cut-and-cover construction.[^dorts-structures]
+It describes the basic station form—not a dimension schedule for every
+station—as a two-level rectangular box roughly 200 m long and 18 m wide, with a
+concourse above the platform and tracks.[^dorts-structures]
+
+The builder classifies Nangang as one of the more difficult routes because it
+crossed dense commercial districts with heavy traffic beside Taipei Main
+Station, the Executive Yuan and the Control Yuan, while CN253B shield tunnels
+passed beneath the first-grade Beimen monument.[^dorts-bannan] Its tunnel manual
+later stated that CN253B had been completed without affecting Beimen, a claim
+from the builder rather than a separately published monitoring dataset.[^dorts-tunnel-beimen]
 
 ![The concourse at Taipei Main Station, ticket gates and destination signage overhead](/images/bannan-line/station-800.webp "The concourse at Taipei Main Station, platform 3, the interchange every east–west Bannan rider passes through. — Bigmorr, CC BY-SA 4.0, Wikimedia Commons")
 
-The two depots are very unequal. Nangang depot occupies about **7.83 hectares**
-east of Xiangyang Road and Dongxin Street, south of Zhongxiao East Road Section
-7 and north of Muzhi Mountain, for stabling, inspection and washing, with
-development rights reserved above the stabling shed's roof slab[^dorts-bannan].
-Tucheng depot, on the old Dahan River flood land, is about **26.8 hectares** and
-is the main stabling, washing and works facility for the Banqiao, Tucheng and
-Nangang sections' trains[^dorts-tucheng-line].
+### The three-railway eastern work
 
-## How long is it?
+East of Kunyang, DORTS records about 725 m of the extension inside Taiwan
+Railways land and describes a 三鐵共構 arrangement.[^dorts-nangang-east] The
+same sentence names high-speed rail and 地鐵 after its preceding alignment text
+has named the high-speed and Taiwan Railways tunnels, so the source's wording is
+preserved as an internal anomaly rather than silently normalised.[^dorts-nangang-east]
 
-Four figures are in circulation and this page publishes all four.
+The extension placed Nangang station south of the former TRA freight yard and
+carried the route beneath the high-speed and conventional-rail tunnels before
+turning towards Nangang Exhibition Center.[^dorts-nangang-east] The tunnel
+between the two new stations was designed and built on DORTS's behalf by the
+Taipei Railway Underground Project Office, now incorporated into the Railway
+Bureau.[^dorts-nangang-east]
 
-- **26.65 km** — the cumulative distance along route BL-1 from BL01 to BL23 in
-  the government TDX extract, which is a measurement between the end
-  stations[^tdx].
-- **26.6 km** — the English Wikipedia infobox, which agrees with TDX to the
-  rounding[^en-bannan].
-- **28.2 km** — the Chinese Wikipedia infobox[^zh-bannan].
-- **28.2 km** — also what the five DORTS project lengths add to: about 11 km for
-  the Nangang line, 7.1 for the Banqiao line, 5.6 for the Tucheng line, 2.5 for
-  the eastern extension and 2 for the Dingpu extension[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu].
+### Traction-cable faults
 
-Why the two pairs differ by 1.55 km is **not established here**. The shape of
-the disagreement resembles the Wenhu Line's three lengths, which turned out to
-be three correct measurements of three different things, but that is a
-resemblance and not a finding. A construction project normally runs past the end
-station into tail tracks and depot leads, and adjacent contracts can overlap at
-their joints — but **nothing found states how DORTS bounds a section**, so that
-is a hypothesis and it is not asserted here.
+A later DORTS technical paper records successive DC traction-cable incidents on
+the Bannan and Tucheng lines.[^dorts-power] TRTC's inspection found a small
+number of cables with low insulation resistance caused by moisture carrying
+soil into insufficiently waterproof joints, or by water entering through
+damaged outer jackets.[^dorts-power] The response standardised the construction
+method and material selection for joints between 500 mm² and 240 mm² DC
+cables.[^dorts-power]
 
-One related oddity, recorded rather than resolved: the Nangang line page gives
-its extent as 西門 to 南港 with 11 stations, but eleven stations from BL11 reach
-BL21 Kunyang, and Kunyang onwards is the separately documented eastern
-extension[^dorts-bannan][^dorts-nangang-east].
+## Stations and architecture
 
-The station spacing is unusually varied for an urban metro[^tdx]. The longest
-gap is **BL09 to BL10**, Jiangzicui to Longshan Temple, at 3.08 km — the Xindian
-River crossing[^tdx]. The shortest is **BL06 to BL07**, Fuzhong to Banqiao, at
-0.65 km[^tdx]. Nearly five times the difference, on the same line, three stations
-apart.
+DORTS says the Nangang stations were designed around their relationship with
+the existing urban and commercial environment rather than a single monumental
+architectural style.[^dorts-architecture] High land values and scarce sites led
+the surface entrances and ventilation structures to use restrained forms that
+minimised their mass in the streetscape.[^dorts-architecture] The Tucheng
+stations likewise prioritised functional interiors and the relationship of
+entrances and vents with their surroundings.[^dorts-architecture]
 
-## How it runs
+Dingpu's design translates the area's change from mining and industrial
+production towards high-technology research through a sequence of “light”
+elements across concourse, platform, ceiling, floor and walls.[^dorts-architecture]
+At Nangang, the “nostalgia and technology” concept uses lake green for the
+district's former ponds, ceramic floor tiles and historic imagery on glass,
+while each side of the platform carries a 62.5 m art wall based on Jimmy Liao's
+work.[^dorts-architecture] Nangang Exhibition Center instead adopts “digital
+space, e-station,” with dawn blue, metal finishes and barcode-like surface
+patterns tied to the nearby software park, trade centre and Academia
+Sinica.[^dorts-architecture]
 
-Two patterns run together: the full length, BL23 to BL01, and a short working
-from BL23 to BL05 Far Eastern Hospital that densifies the central section.
-Service runs 06:00 to 24:00[^trtc-bannan]. End to end takes about 48 minutes; the short
-working about 38[^trtc-bannan].
+## Rolling stock
 
-At weekday peaks — 07:00 to 09:00 and 17:00 to 19:30 — the whole-line headway is
-about 6 minutes and about 3 minutes over the overlapping section, and the
-operator publishes a densest figure of about **2 minutes 15 seconds** for
-Longshan Temple towards Kunyang between 08:00 and 09:00[^trtc-bannan]. Off-peak it is 8 to 10
-minutes, 4 to 5 over the overlap; after 23:00, 8 to 12 minutes and full-length
-trains only[^trtc-bannan].
+The line's verified fleet comprises the Siemens 321 and 341 series.[^dorts-rolling-stock]
+DORTS says all 36 trains procured under the Xindian/Nangang/Zhonghe contract and
+all six trains procured for Tucheng operated on Bannan.[^dorts-rolling-stock]
+Its electrical and mechanical history identifies both as six-car fleets: 216
+cars in 36 321 trains and 36 cars in six 341 trains.[^dorts-me-systems]
 
-Two published figures for the densest headway do not agree, and both are given
-here. The operator's own page said 2 minutes 15 seconds when read on 10 August
-2026[^trtc-bannan]. CNA reported in October 2025 that the densest headway was 2
-minutes, measured from Far Eastern Hospital towards Nangang Exhibition Center in
-the 08:00–08:30 half hour, and that from 10 November 2025 it would begin at
-07:30 instead — worth about 1,500 extra places, or about 2,000 counting six
-space-optimised trains already in service[^cna-2025]. These are different
-directions at different points as well as different dates, and nothing found
-says whether they are two measurements of one thing or two things.
+The 321 fleet uses 750 V DC third-rail power, VVVF-GTO control, regenerative and
+disc-friction braking, and ATC incorporating ATO, ATP and ATS; DORTS gives an
+80 km/h maximum operating speed and capacity of 2,200 passengers.[^dorts-me-systems]
+The 341 trains were manufactured by Siemens in 2003 and delivered to DORTS from
+September through November 2004 for the Tucheng opening.[^dorts-me-systems]
+Their changes included bellows-style gangway covers, larger front destination
+text, later side destination displays, IGBT traction and static inverters, a
+revised motor coupling, self-cooled braking resistors and updated current
+collection equipment.[^dorts-me-systems]
 
-The crowding produces a service pattern the operator does not publish at all. In
-August 2025 TVBS reported that of four extra workings starting at Far Eastern
-Hospital, two — at 08:07 and 08:16 — run **empty as far as Jiangzicui** and only
-open their doors there, because trains are full before they reach Taipei City
-and Jiangzicui passengers cannot board[^tvbs-2025]. TRTC's answer was that the headway was
-already compressed to one train every 2 minutes 15 seconds and could not be cut
-further, so from 20 August it would instead run four trains with fewer seats in
-the busiest half hour[^tvbs-2025]. Nothing on the operator's routes-and-headways
-page mentions any of this[^trtc-bannan].
+A contemporaneous CNA report adds a procurement dispute: civil contractor
+Continental Engineering bought the six trains after DORTS rejected its proposed
+KOROS equipment, then obtained Siemens trains for more than NT$2.248 billion at
+a reported unit price about 50% above DORTS's earlier Siemens purchase.[^cna-2005]
+That account is secondary evidence for the price and disagreement, while the
+DORTS technical publications independently establish the manufacturer, fleet
+size, delivery period and assignment.[^cna-2005][^dorts-me-systems][^dorts-rolling-stock]
 
-## Nobody publishes this line's ridership
+## Depots
 
-The Chinese Wikipedia article calls this the highest-ridership route on the
-network[^zh-bannan]. That may well be true. It is not something TRTC's published
-statistics can be used to show.
+Nangang depot occupies about 7.83 hectares east of Xiangyang Road and Dongxin
+Street, south of Zhongxiao East Road Section 7 and north of Muzhi Mountain,
+providing stabling, inspection and washing.[^dorts-bannan] DORTS says the roof
+slab above its stabling area reserved development rights.[^dorts-bannan]
 
-TRTC's annual and monthly ridership series splits the network exactly two ways —
-the Wenhu Line, and 高運量, "high capacity" — and states that 高運量 covers the
-Tamsui–Xinyi, Songshan–Xindian, Zhonghe–Xinlu and Bannan lines
-together[^trtc-ridership-series]. This line's number is inside an aggregate of
-four. What TRTC does publish per line is nothing; what it publishes per station
-is a monthly spreadsheet going back to 1996, and a system total — 62,471,614
-journeys in June 2026, averaging 2,082,387 a day across the whole
-network[^trtc-ridership-index][^trtc-ridership-monthly].
+Tucheng depot occupies about 26.8 hectares on former Dahan River flood-control
+land.[^dorts-tucheng-line] It is the principal stabling, washing and maintenance
+works for the trains of the Banqiao, Tucheng and Nangang sections.[^dorts-tucheng-line]
 
-A figure for this line alone could be built by summing the per-station series
-over BL01 to BL23, once the double counting at the five interchange stations is
-dealt with. Nobody has done that here, so the ridership row above says TBC
-rather than a plausible number.
+## Operations and crowding
 
-## The trains the city did not buy
+At weekday peaks from 07:00–09:00 and 17:00–19:30, TRTC publishes a whole-route
+headway of about six minutes and an overlapping-section headway of about three
+minutes.[^trtc-bannan] Its densest published interval is about 2 minutes 15
+seconds from Longshan Temple towards Kunyang between 08:00 and
+09:00.[^trtc-bannan] Off-peak service is every 8–10 minutes over the full route
+and 4–5 minutes on the overlap; after 23:00, full-length trains alone run every
+8–12 minutes.[^trtc-bannan]
 
-The [C341](/rail/metro/rolling-stock/c341/) is a six-car Siemens fleet, 4M2T[^zh-c341],
-that the metro authority did not order. This site held the story back for
-several revisions because it rested on a single encyclopedia entry whose
-sentence carries no footnote[^zh-c341]. A contemporaneous news source has now
-been found and it is that source this paragraph cites.
+The published peak figures conflict.[^trtc-bannan][^cna-2025] TRTC's route page
+gave 2 minutes 15 seconds when accessed on 10 August 2026, while CNA reported a
+two-minute interval from Far Eastern Hospital towards Nangang Exhibition Center
+during the 08:00–08:30 half-hour and said that interval would start at 07:30
+from 10 November 2025.[^trtc-bannan][^cna-2025] CNA attributed about 1,500 extra
+places to the earlier start, or about 2,000 when six trains with more standing
+space were counted.[^cna-2025]
 
-Reporting the trains into service in March 2005, CNA described them as six
-trainsets **bought by 大陸工程, the civil contractor for the Tucheng
-line**[^cna-2005]. The contractor had originally intended to buy from the Korean
-manufacturer KOROS; the metro engineering bureau did not agree[^cna-2005]. It
-bought from Siemens instead, for something over NT$2.248 billion, at a **unit
-price about 50 % higher than the bureau had itself paid Siemens**[^cna-2005] —
-which is the same claim as the encyclopedia's "1.5 times", in different
-units[^zh-c341]. The six trains were delivered to
-the bureau between mid-September and mid-November 2004[^cna-2005].
+TVBS reported another peak measure in August 2025: four extra trains began at
+Far Eastern Hospital, with the 08:07 and 08:16 workings running empty to
+Jiangzicui before boarding passengers.[^tvbs-2025] The report quoted TRTC saying
+trains were already 2 minutes 15 seconds apart and additional frequency was not
+available, so four peak trains would instead have fewer seats from 20
+August.[^tvbs-2025]
 
-The contract number and the procedural meaning of "did not agree" remain TBC,
-as does the [C321](/rail/metro/rolling-stock/c321/) unit price needed to check
-the reported 50% difference. No opened audit or court record settles them.
+TRTC's public ridership series combines Bannan with the other three
+high-capacity lines rather than giving it a separate total.[^trtc-ridership-series]
+The operator separately publishes monthly station-entry and exit spreadsheets
+back to 1996 and whole-system totals, including 62,471,614 journeys in June
+2026, but that system figure is not a Bannan value.[^trtc-ridership-index][^trtc-ridership-monthly]
+The daily-ridership fact therefore remains TBC.
+
+## Dingpu joint development
+
+The Control Yuan's 2026 investigation distinguishes construction of the
+operating station from the joint-development project above and beside
+it.[^control-yuan-dingpu] It found no illegality in the 2009 urban-planning
+procedure or the original landowner's agreement, while recommending that future
+projects consider less burdensome ways to deliver planning returns and whether
+local conditions justify adjusting their proportion.[^control-yuan-dingpu]
+
+After development tenders failed in August 2016 and February 2017, DORTS paused
+the process citing co-construction with Sanying station `LB01` and an urban-plan
+change, then held the third tender on 2 May 2024.[^control-yuan-dingpu] The
+Control Yuan found those two factors had limited effect on tendering and said it
+was difficult to deny delay; it also criticised the earlier failure to settle
+the disputed planning-return procedure thoroughly before land
+acquisition.[^control-yuan-dingpu]
+
+## Conflicting measurements and records
+
+The operating and construction lengths do not describe the line with one
+number.[^tdx][^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu]
+TDX measures 26.65 km from BL01 to BL23 and English Wikipedia rounds that to
+26.6 km, while Chinese Wikipedia gives 28.2 km.[^tdx][^en-bannan][^zh-bannan]
+The five DORTS project lengths also sum to 28.2 km: about 11, 7.1, 5.6, 2.5 and
+2 km respectively.[^dorts-bannan][^dorts-banqiao-line][^dorts-tucheng-line][^dorts-nangang-east][^dorts-dingpu]
+DORTS's construction-management volume introduces a further rounding by calling
+Banqiao about 7 km rather than the project page's 7.1 km.[^dorts-construction-management][^dorts-banqiao-line]
+
+The final-inspection date for the first 1999 opening also differs between DORTS
+pages.[^dorts-bannan][^dorts-banqiao-line] The parent Nangang record says 13
+December 1999, while the Banqiao record says 23 December for Ximen–Longshan
+Temple; both give passenger service on 24 December.[^dorts-bannan][^dorts-banqiao-line]
 
 See also: [Public art in the Taipei-region rail network](/rail/history/public-art/), [Station naming and renames](/rail/history/station-naming/), and [Metro incidents and service disruptions](/rail/history/incidents/).

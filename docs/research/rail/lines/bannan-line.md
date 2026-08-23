@@ -22,6 +22,199 @@ future run with search available should assume there is more.
 
 ---
 
+## Independently verified technical expansion — 23 August 2026
+
+This section is the independently fetched record used for the 23 August content
+rebuild. The later `Imported external-model appendix` remains leads only; no
+sentence was promoted from that appendix without reopening and reading the
+underlying full primary page listed here.
+
+### Alignment alternatives and approvals
+
+**Source title:** Bannan Line / Banqiao Line. **Original titles:** 「板南線」／
+「板橋線」. **Publisher:** Taipei City Government Department of Rapid Transit
+Systems, 臺北市政府捷運工程局. **URLs:**
+<https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065> and
+<https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14>.
+**PRIMARY. Confidence: High** — the planning and building authority describes
+its own approved route changes.
+
+- The 1986 initial-network Blue Line ended at Songshan; the Executive Yuan
+  accepted extension to Nangang on 1988-01-21. Original: 「原核定路線中藍線係
+  自板橋至松山」／「行政院於77年1月21日同意備查。」
+- From 1987 DORTS considered alignments on both banks of the Xindian River and a
+  river-bottom tunnel; a 1989 revision changed the elevated western line to
+  underground and extended it to Tucheng. Original: 「針對藍線西段（板橋段）
+  新店溪兩岸替選路線與興建河底隧道研擬修正方案」／「循原路線由高架改為
+  地下並延伸至土城。」
+- The approved eastern route initially emerged near Dongxin Street, crossed the
+  TRA main line and continued elevated/surface to Nangang. Taipei City Council
+  requested the approximately 1.75 km Xiangyang–Nangang section be underground
+  in 1989; the 1992 decision put Houshanpi–Kunyang and Kunyang station
+  underground and made Kunyang the initial terminus. Original: 「請將捷運南港
+  線之向陽路至南港路段長約1.75公里之高架方式改地下化興建」／「捷運藍線
+  初期路網以昆陽站為終點，以利及早通車。」
+
+### Procurement and the Xindian River crossing
+
+**Source title:** Taipei MRT Engineering Series, revised edition, volume 15:
+MRT construction management practice. **Original title:** 《捷運工程叢書
+精進版－15 捷運工程施工管理實務》. **Publisher:** 臺北市政府捷運工程局.
+**URL:**
+<https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html>.
+**PRIMARY. Confidence: High** — DORTS's own retrospective contract history.
+
+- The river-bed shield tunnels were a reason CP261, CP262 and CP263 used joint
+  bidding. Original: 「本路線採共同投標，主要係因潛盾隧道必須穿越新店溪
+  河床下，工程技術性高且工程規模與費用龐大。如CP261、CP262、CP263等標。」
+- Nangang procurement varied by technical and security conditions: CN253B and
+  CN257 were international joint bids, CN253A/CN254/CN256 required foreign
+  technical cooperation, and CN251/CN252 were negotiated with 榮工處 because
+  they crossed the security-sensitive 博愛特區. Original: 「基於地區的重要性、
+  安全保險之問題，CN251、CN252標採與榮工處議價方式發包。」
+- DORTS records criticism of negotiated-price public-body awards and says the
+  Banqiao Line cancelled that award method. Original: 「當時為民意代表及民營
+  業者所詬病，所以本路線已取消比、議價之招標方式。」
+
+### CP261 groundwater inflow and correction
+
+**Source title:** Taipei MRT Engineering Series, revised edition, volume 8:
+MRT tunnel engineering practice. **Original title:** 《捷運工程叢書 精進版－8
+捷運隧道工程實務》. **Publisher:** 臺北市政府捷運工程局. **URLs:**
+<https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page234.html>,
+<https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page236.html> and
+<https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page237.html>.
+**PRIMARY. Confidence: High** — DORTS's detailed incident and engineering case
+history, though it is not an independent investigation.
+
+- CP261 ran 2,063 m from Ximen's south end to the Huajiang Bridge ventilation
+  shaft, with Longshan Temple station and twin earth-pressure-balance shield
+  tunnels. Original: 「全長共2,063m」／「隧道全線採用加泥土壓平衡式潛盾機
+  進行施工。」
+- On 1995-04-28, seepage at 06:45 became a large inflow at 07:15; from 08:10 a
+  roughly 6 m void formed and a nearby ten-storey building tilted slightly.
+  Original: 「上午7時15分……突然大量湧水」／「地表產生沉陷（直徑約6m
+  空洞），且造成鄰近十層樓建物輕微傾斜。」
+- DORTS locates the leak at the silty-fine-sand/silty-clay interface about 2.5 m
+  above the shaft base, the point it identifies as most leak-prone in that
+  Songshan Formation layer. Original: 「漏水位置正為松五層最容易發生漏水之
+  處。」
+- The response used the shield bulkhead, chamber pressure, sealing injection,
+  street backfill, low-pressure grouting and increased monitoring; DORTS says
+  water stopping finished at 13:00. Five correction methods were compared and
+  low-pressure grouting selected. Original: 「該鏡面滲水意外於當日下午1時完成
+  止水」／「最後，認定採用低壓灌漿工法（LW）進行建物扶正作業。」
+
+### Eastern extension, stations and systems
+
+**Source title:** Nangang Line eastern extension. **Original title:** 「南港線
+東延段」. **Publisher:** 臺北市政府捷運工程局. **URL:**
+<https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=D392F4A16D3932DF>.
+**PRIMARY. Confidence: High.**
+
+- Shield tunnels ran from Kunyang to Nangang beside the former TRA freight yard,
+  crossed the HSR and TRA tunnels and continued to Nangang Exhibition Center;
+  the tunnel between the two new stations was entrusted to the railway
+  underground-project office. Original: 「穿越高鐵、臺鐵隧道向東續行」／
+  「委託交通部臺北市區地下鐵路工程處……代辦設計施工。」
+- DORTS planned two openings from the outset, divided its civil work between
+  CE730A and CE730B, and bundled seven train/signalling/power/communications/
+  radio/fare/track packages with Xinzhuang–Luzhou systems. Original: 「本局
+  初始即規劃兩階段通車」／「共計7個子施工標（CE631電聯車、632號誌、
+  633供電、635通訊、635A數位無線電、637自動收費及731軌道）。」
+- The page says about 725 m in TRA right-of-way formed 「與高鐵、地鐵形成三鐵
+  共構」. This wording conflicts internally with the page's immediately prior
+  reference to HSR and TRA tunnels; it is published as a source anomaly, not
+  normalised.
+
+### Structure, cable faults, architecture and trains
+
+1. **Source:** 《捷運工程叢書 精進版－7 捷運結構工程實務》, 臺北市政府捷運
+   工程局, <https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page183.html>.
+   **PRIMARY. Confidence: High for the standard form, not individual-station
+   dimensions.** Original: 「地下車站之結構系統皆採明挖覆蓋方式設計」 and
+   「基本形式……地下兩層……長約200m、寬18m之矩形箱形結構體。」
+2. **Source:** 「捷運松山線供電系統創新設計與施工」, 《捷運技術》第52期,
+   臺北市政府捷運工程局,
+   <https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page138.html>.
+   **PRIMARY. Confidence: Medium-High** — official technical diagnosis, not the
+   individual incident reports. Original: 「板南線、土城線曾陸續發生直流電纜
+   事故」 and 「主因係電纜接頭因防水性不足……或因外被覆破損絕緣滲水。」
+3. **Source:** 「車站建築設計－板南線」, 臺北市政府捷運工程局,
+   <https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2>.
+   **PRIMARY. Confidence: High.** Original examples: Nangang surface volumes
+   「均以簡約的設計手法盡量減少量體」; Nangang theme 「懷舊與科技」 and
+   「月台兩側各有長達62.5公尺的藝術牆板」; Nangang Exhibition Center
+   「數位空間、e化車站」 and 「車站主題色為清爽之黎明藍」.
+4. **Source:** 《捷運工程叢書 精進版－21 捷運電聯車實務》, 臺北市政府捷運
+   工程局, <https://ebook.dorts.gov.taipei/ebook/no21/files/basic-html/page171.html>.
+   **PRIMARY. Confidence: High.** Original: 「36列電聯車以及土城線所採購案
+   之6列電聯車（皆由德商西門子公司製造）目前全部行駛於板南線。」
+5. **Source:** 「臺北捷運機電系統精進軌跡尋蹤－機電規設之蛻變、創新與
+   成長」, 《捷運技術》第48期, 臺北市政府捷運工程局,
+   <https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html>.
+   **PRIMARY. Confidence: High.** Original: 321 「共有72組（36列），合計216
+   輛」, 750 V third rail and 80 km/h operating speed; 341 「共有12組（6列），
+   合計36輛」 and September–November 2004 deliveries.
+
+### Dingpu joint development
+
+**Source title:** Investigation report 115交調0011. **Original title:**
+「監察院115交調0011調查報告」. **Publisher:** Control Yuan 監察院. **URL:**
+<https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/74451>. **PRIMARY.
+Confidence: High** — the full 35-page investigation was fetched and read.
+
+- The report finds the 2009 planning procedure lawful. Original: 「都市計畫
+  變更之相關程序及實質內容，於法並無不合。」
+- After failed 2016 and 2017 tenders, DORTS cited Sanying `LB01`
+  co-construction and an urban-plan change, then waited until 2024-05-02 for the
+  third tender. The Control Yuan found the two factors had limited effect and
+  criticised the earlier process. Original: 「該2項因素對於招商作業影響有限，
+  難謂無延宕招商作業之情事」／「相關作業均有未盡周延之處。」
+
+### Conflicts established in this pass
+
+- **Banqiao length:** current DORTS project page 約7.1 km; construction-management
+  volume 約7 km. Both are rounded builder figures and both are retained.
+- **First-opening final inspection:** the DORTS parent record says 1999-12-13;
+  the Banqiao record says 1999-12-23. Both say passenger service began
+  1999-12-24.
+- **Whole-line length:** TDX endpoint measurement 26.65 km; English Wikipedia
+  26.6 km; Chinese Wikipedia 28.2 km; five DORTS project lengths sum to 28.2 km.
+  No fetched source defines the measurement boundary that produces the 1.55 km
+  difference.
+- **Peak interval:** operator route page 2 min 15 sec at Longshan Temple towards
+  Kunyang; CNA's 2025 report 2 min from Far Eastern Hospital towards Nangang
+  Exhibition Center. These differ by location, direction and publication date.
+
+### Checked and failed — 23 August 2026
+
+- **Control Yuan HTML landing page** — checked 2026-08-23; full-page fetch
+  returned an internal server/tool error. The linked 35-page official PDF
+  fetched successfully and is the cited source, so no claim uses the failed
+  landing page.
+- **CN253B Beimen monitoring dataset** — checked 2026-08-23; the DORTS tunnel
+  manual states no impact, but its page did not expose the underlying monitoring
+  series. Content therefore attributes the conclusion specifically to DORTS.
+- **Exact boundary behind 26.65 versus 28.2 km** — checked 2026-08-23 across
+  TDX and all five DORTS project pages; none defines the inclusions, overlaps,
+  tail tracks or depot leads behind the difference. The values remain an
+  unresolved conflict.
+
+### Stated gaps after this pass
+
+- A final account allocating cost to the continuous operating Bannan Line would
+  settle a line-wide construction cost; the NT$444.4 billion figure is for the
+  whole 70.3 km initial network and must not be relabelled.
+- The original Beimen monitoring record would independently test DORTS's
+  retrospective no-impact statement.
+- The individual Bannan/Tucheng traction-cable incident investigations would
+  supply dates and case-specific causes beyond the later DORTS synthesis.
+- TRTC's line-only ridership remains TBC unless the station spreadsheets are
+  aggregated with an explicit interchange-counting method.
+
+---
+
 ## 1. What is established
 
 ### 1.1 The opening sequence, from the builder

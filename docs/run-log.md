@@ -15606,3 +15606,91 @@ The final verifier passed 217 tests across 1,954 pages and 218,187 internal
 links. Citations resolve at 4,966 (4,777 primary / 189 secondary); claims are
 11,419 sourced / 4,312 TBC / zero asserted; research is clean at 124 files /
 531 dated checked-and-failed entries.
+
+## Run 106 — Part 3, Bannan Line technical rebuild (23 August 2026)
+
+### Sourced and changed depth
+
+Rebuilt the Bannan page from full primary project pages and DORTS technical
+publications, independently reopening every source promoted from the later
+lead-only research appendix. The same Markdown-stripped counter measures the
+body at 1,460 words before and 2,379 after. Seven topic headings became the
+canonical Overview, Route and alignment, Planning/contracts/opening,
+Engineering/construction, Stations/architecture, Rolling stock, Depots,
+Operations/crowding, Dingpu joint development and Conflicting measurements
+sections, with four engineering h3s. Primary prose remains open.
+
+The added evidence establishes the rejected elevated western and eastern
+alignments; 1986–1993 approval sequence; contract strategy; Xindian River
+shield works; the dated CP261 inflow, geology, emergency response and building
+correction; the eastern extension's staged construction and systems packages;
+cut-and-cover station standard; traction-cable faults; architectural programmes;
+the Siemens 321/341 fleet; depot roles; and the Control Yuan's Dingpu
+joint-development findings. The page now cites 27 sources, 22 primary and five
+secondary. Depot, rolling-stock, operating-speed, power and formation facts
+that formerly rested on Wikipedia now use DORTS/TRTC primary records.
+
+Primary URLs reopened in full:
+
+- DORTS Bannan and Banqiao project pages:
+  <https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065> and
+  <https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=F007031A0E7C5D14>
+- DORTS Nangang eastern extension:
+  <https://www.dorts.gov.taipei/cp.aspx?n=5E61169F8C735065&s=D392F4A16D3932DF>
+- DORTS construction-management volume 15:
+  <https://ebook.dorts.gov.taipei/ebook/no15/files/basic-html/page37.html>
+- DORTS tunnel-engineering volume 8, CP261 and Beimen:
+  <https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page234.html>,
+  <https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page236.html>,
+  <https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page237.html> and
+  <https://ebook.dorts.gov.taipei/ebook/no8/files/basic-html/page308.html>
+- DORTS structural volume 7 and rolling-stock volume 21:
+  <https://ebook.dorts.gov.taipei/ebook/no7/files/basic-html/page183.html> and
+  <https://ebook.dorts.gov.taipei/ebook/no21/files/basic-html/page171.html>
+- DORTS technical papers on power and vehicle systems:
+  <https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page138.html>
+  and <https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html>
+- DORTS station architecture:
+  <https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=30FCACCAB334BFA2>
+- Control Yuan's full 35-page Dingpu investigation:
+  <https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/74451>
+
+### TBC, corpus corrections and conflicts
+
+Line-wide final construction expenditure remains TBC: NT$444.4 billion is the
+whole 70.3 km initial-network approval, not Bannan. The source boundary behind
+26.65 versus 28.2 km, underlying Beimen monitoring data, case-specific cable
+incident reports and line-only ridership remain gaps; the research file records
+the source families needed to settle each. The Control Yuan HTML landing page
+failed with an internal server/tool error, while its official PDF succeeded and
+is the cited source.
+
+The former secondary-only facts were not merely retained: primary records now
+establish 36 six-car 321 trains and six six-car 341 trains, Siemens manufacture,
+750 V third-rail power and 80 km/h 321 operating speed. DORTS also separates the
+current operating station at Dingpu from a joint development delayed through
+failed 2016/2017 tenders and a 2024 third tender.
+
+Four disagreements remain published without selection: endpoint length 26.65
+km / English Wikipedia 26.6 km / Chinese Wikipedia and summed DORTS projects
+28.2 km; Banqiao approximately 7.0 km in the technical volume versus 7.1 km on
+the live project page; first-opening final inspection on 13 versus 23 December
+1999; and a 2:15 operator peak interval versus CNA's 2:00 report at another
+location/direction/date. The Nangang eastern page's own sentence also says HSR
+and 「地鐵」 form the three-railway structure after its alignment paragraph names
+HSR and TRA; the anomaly is quoted rather than silently normalised.
+
+### Gates
+
+No new checker was required: existing gates already cover source shape,
+citations, source use, fact provenance, TBC/assertion state, scope statements,
+station-code namespaces, open primary sections, ToC anchors, images, fonts,
+search, links and fragments. The first citation run exposed one newly unused
+Wikipedia fleet source; it was removed before the final runs.
+
+Final `npm run verify` passed 217 tests across 1,954 pages and 218,194 internal
+links. Citations resolve at 4,976 (4,788 primary / 188 secondary); claims are
+11,419 sourced / 4,310 TBC / zero asserted; research is clean at 124 files /
+531 dated checked-and-failed entries. `npm run nav` passed all 19 keyboard,
+touch and trail checks. The independent `npm test` build passed 217 unit tests
+and all 17 fact cross-checks.
