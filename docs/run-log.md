@@ -15383,3 +15383,66 @@ detect the actual defects they were added for. The clean verifier passed all
 11,415 sourced / 4,314 TBC, and research remains clean at 124 files / 527 dated
 checked-and-failed entries. Navigation passed all 19 checks, and the independent
 full suite passed 217 unit tests and all 17 fact cross-checks.
+
+## Run 103 — Part 1, body-only scope sweep (23 August 2026)
+
+### Audit finding
+
+The Run 102 gate still conflated frontmatter source notes with published body
+prose and missed four further forms: `This is a scope page`, `still to be
+written`, `not part of this page` / `not established on this page`, and an
+entity having `no page of its own on this site yet`. Strengthening the gate
+before editing produced a deliberate failure on 47 pages: YouBike history, 22
+generated YouBike district indexes, 19 district-office operator records, two
+metro line pages and three operator stubs. A broader heuristic sweep then found
+the Danhai page's `not yet in this site's station data`, bringing the fixed
+content total to 48 pages.
+
+### Changed
+
+The gate now separates Markdown body prose from YAML frontmatter, so a source
+note describing the cited webpage cannot be mistaken for this site's coverage.
+It permanently rejects all newly found body forms. The YouBike generator now
+states the TDX feed capability directly (`does not carry current occupancy`),
+and all 22 generated district pages were regenerated from that source template.
+The 19 district-office pages retain the cited TDX field limitations and TBC
+fields but drop the repeated editorial preface. The three unsourced rail-
+operator scope inventories were removed rather than published as promises.
+Tamsui–Xinyi, Zhonghe–Xinlu and Danhai now express source limitations or TBC
+without describing missing site pages or registry coverage.
+
+Measured body totals changed as follows: 22 bike district indexes
+69,108→69,085 words (the large total includes their data tables), 19 district-
+office operators 6,879→6,632, three rail-operator stubs 281→185, the three line
+pages 5,436→5,389, and YouBike history 1,734→1,719. Individually, NTMC changed
+112→81, TRTC 104→65 and TYMC 65→39; those three remain in the Part 3 source-
+research queue rather than being padded.
+
+### Sources, TBC, contradictions and conflicts
+
+No factual source, value or conflict changed. The existing TDX citations still
+support every feed-field statement, and all unknown operator, fleet, depot,
+track-configuration, livery and procurement-roster fields remain TBC. The
+contradicted premise was again the old green gate: a whole-body regex both
+missed published phrasing and risked false positives in source notes.
+
+### Gate added
+
+`tests/scope-statements.test.mts` was proved red on the 47-page defect set and
+green after the fixes; the Danhai wording was then added as a separate permanent
+pattern and the clean corpus passed again. The verifier then caught two genuine
+provenance regressions introduced by the rewrite: the generated bike pages made
+a current-occupancy absence claim that was not registered against the committed
+TDX fields, and the YouBike scrap-value explanation had lost its sentence-level
+citation. The fact checker now verifies the four availability fields directly,
+and the scrap-value sentence carries its existing Department of Transportation
+citation.
+
+The final verifier passed all 217 tests across 1,954 pages and 218,168 internal
+links; citations resolve at 4,954 (4,763 primary / 191 secondary), claims remain
+at zero asserted with 11,416 sourced / 4,314 TBC, and research remains clean at
+124 files / 527 dated checked-and-failed entries. Navigation's first browser
+launch produced four keyboard-open failures while touch and layout passed; an
+immediate unchanged rerun passed all 19 checks, consistent with the previously
+recorded startup race. The independent full suite passed 217 unit tests and all
+17 fact cross-checks.

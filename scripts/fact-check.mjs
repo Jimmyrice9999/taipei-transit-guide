@@ -511,6 +511,15 @@ const ok = (label) => checks.push(label)
     { about: /depot|機廠/i, fields: [] },
     { about: /opening date|opened/i, fields: [] },
     { about: /dimension|capacity/i, fields: [] },
+    {
+      about: /current occupancy|available (?:bikes|docks)|availability/i,
+      fields: [
+        'AvailableRentBikes',
+        'AvailableReturnBikes',
+        'availableRentBikes',
+        'availableReturnBikes',
+      ],
+    },
     { about: /construction history/i, fields: [] },
     { about: /engineering rationale/i, fields: [] },
     { about: /service pattern/i, fields: [] },

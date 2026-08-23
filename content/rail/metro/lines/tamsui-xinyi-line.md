@@ -255,9 +255,9 @@ Tamsui section, and says the shuttle runs Kawasaki C371 stock in three-car
 sets[^zh-xinbeitou]. Both are plausible and neither is confirmed here. That
 article's only external citation was followed on 10 August 2026: it points at a
 TRTC page which turns out to be the old-version network map and timetable index,
-and which says nothing about the branch at all[^trtc-oldmap]. **The branch's single-track status and
-the appearance of its painted train are not established on this page**, and are
-not asserted, because the sources that would settle them have not been read.
+and which says nothing about the branch at all[^trtc-oldmap]. The opened primary
+records do not establish the branch's track configuration or train livery, so
+both fields remain TBC.
 
 ## What runs, and how often
 

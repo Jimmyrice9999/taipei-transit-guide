@@ -23,12 +23,20 @@ test('published pages do not describe unfinished site or page coverage', () => {
     /\b(?:this page|this site|this guide) (?:does not yet|has not yet|doesn't yet)\b/i,
     /\b(?:this page|this site|this guide|this project)\s+(?:cannot yet|has not yet|hasn't yet|has not been able to source|is deliberately narrower)\b/i,
     /\b(?:not researched yet|next task on this page|still not reproduced on this page)\b/i,
+    /\b(?:this is a scope page|still to be written(?: up)?|nothing numerical is asserted on this page)\b/i,
+    /\b(?:not established on this page|not part of this page|no page of (?:its|their) own on this site)\b/i,
+    /\bthis page does not (?:turn|have a sourced figure)\b/i,
+    /\bnot yet in this site['’]s\b/i,
     /\b(?:future page|future version|future coverage)\b/i,
   ]
   const findings: string[] = []
 
   for (const file of markdownFiles(CONTENT)) {
-    const text = fs.readFileSync(file, 'utf8')
+    const raw = fs.readFileSync(file, 'utf8')
+    const frontmatterParts = raw.split(/^---\s*$/m)
+    const text = frontmatterParts.length >= 3
+      ? frontmatterParts.slice(2).join('\n')
+      : raw
     for (const pattern of forbidden) {
       if (pattern.test(text)) {
         findings.push(path.relative(process.cwd(), file).replace(/\\/g, '/'))

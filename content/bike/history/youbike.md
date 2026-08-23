@@ -383,10 +383,8 @@ beyond further use were sold to a recycling contractor in late 2021 at
 NT$41 each; the city's own clarification states this reflects the cost of
 disassembly, transport, labour and disposal rather than an underpriced sale
 of public property[^dot-10-scrap]. That NT$41 is a scrap value, not a
-replacement cost, and this page does not have a sourced figure for what an
-original YouBike 1.0 actually cost the city to buy — a NT$10,000 figure has
-circulated but was not found in any source this run, and Chinese Wikipedia's
-NT$13,000 carries no citation of its own[^zhwiki-youbike].
+replacement cost[^dot-10-scrap]. The city's original unit purchase price remains TBC. Chinese
+Wikipedia gives NT$13,000 but carries no citation for it[^zhwiki-youbike].
 
 ## Electric assist, and where things stand
 

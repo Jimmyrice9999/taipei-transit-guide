@@ -200,7 +200,7 @@ function writeDistrictPage(cityCode, district, stations, joinsById) {
   const label = DISTRICTS[cityCode]?.[district] || 'Unclassified'
   const capacity = stations.reduce((sum, station) => sum + (station.capacity ?? 0), 0)
   const joinCount = stations.filter((station) => joinsById.has(station.id)).length
-  let body = `This page lists ${stations.length} static TDX station rows in ${city.name}'s ${label} group, with a published capacity total of ${capacity} docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; current occupancy is not part of this page [^tdx-bike-stations].
+  let body = `This page lists ${stations.length} static TDX station rows in ${city.name}'s ${label} group, with a published capacity total of ${capacity} docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations].`
   if (district === '未分類') body += ` The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].`

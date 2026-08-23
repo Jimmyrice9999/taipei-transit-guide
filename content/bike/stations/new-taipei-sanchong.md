@@ -45,7 +45,7 @@ sources:
     note: Supports the rail station coordinates, codes and bilingual names used for the nearest-coordinate join; the join does not compare station names.
 ---
 
-This page lists 1 static TDX station rows in New Taipei's Sanchong group, with a published capacity total of 36 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; current occupancy is not part of this page [^tdx-bike-stations].
+This page lists 1 static TDX station rows in New Taipei's Sanchong group, with a published capacity total of 36 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations].
 

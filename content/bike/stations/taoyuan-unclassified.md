@@ -1426,7 +1426,7 @@ sources:
     note: Supports the rail station coordinates, codes and bilingual names used for the nearest-coordinate join; the join does not compare station names.
 ---
 
-This page lists 692 static TDX station rows in Taoyuan's Unclassified group, with a published capacity total of 24045 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; current occupancy is not part of this page [^tdx-bike-stations].
+This page lists 692 static TDX station rows in Taoyuan's Unclassified group, with a published capacity total of 24045 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations]. The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].
 
@@ -1435,7 +1435,7 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 | YouBike2.0_18th Children's Park / YouBike2.0_兒十八公園 [^tdx-bike-stations] | 24 [^tdx-bike-stations] | 25.01218, 121.29476 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.01218&mlon=121.29476#map=19/25.01218/121.29476) | — |
 | YouBike2.0_2nd Children's Park / YouBike2.0_兒2兒童公園 [^tdx-bike-stations] | 16 [^tdx-bike-stations] | 25.06740, 121.19795 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.0674&mlon=121.19795#map=19/25.0674/121.19795) | — |
 | YouBike2.0_8th Children's Park / YouBike2.0_兒八公園 [^tdx-bike-stations] | 23 [^tdx-bike-stations] | 25.00823, 121.21023 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.00823&mlon=121.21023#map=19/25.00823/121.21023) | — |
-| YouBike2.0_Aerotropolis `G17` (Puhang Rd.) / YouBike2.0_航空城`G17`(埔航路) [^tdx-bike-stations] | 25 [^tdx-bike-stations] | 25.04628, 121.22154 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.04628&mlon=121.22154#map=19/25.04628/121.22154) | — |
+| YouBike2.0_Aerotropolis G17 (Puhang Rd.) / YouBike2.0_航空城G17(埔航路) [^tdx-bike-stations] | 25 [^tdx-bike-stations] | 25.04628, 121.22154 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.04628&mlon=121.22154#map=19/25.04628/121.22154) | — |
 | YouBike2.0_Aly. 1, Ln. 1, Shanying Rd. / YouBike2.0_山鶯路1巷1弄 [^tdx-bike-stations] | 16 [^tdx-bike-stations] | 24.99041, 121.32211 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.990413&mlon=121.322114#map=19/24.990413/121.322114) | — |
 | YouBike2.0_Amusement Parks / YouBike2.0_經國環保公園 [^tdx-bike-stations] | 28 [^tdx-bike-stations] | 25.02611, 121.30147 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.02611&mlon=121.30147#map=19/25.02611/121.30147) | — |
 | YouBike2.0_Anping-Xinde St. Intersection / YouBike2.0_安平新德街口 [^tdx-bike-stations] | 23 [^tdx-bike-stations] | 24.94481, 121.21437 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.94481&mlon=121.21437#map=19/24.94481/121.21437) | — |

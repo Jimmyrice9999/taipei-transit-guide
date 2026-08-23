@@ -16,8 +16,3 @@ answer to two city halls. Its portfolio is the newer, lighter side of the
 map: the [Danhai](/rail/metro/lines/danhai-lrt/) and [Ankeng](/rail/metro/lines/ankeng-lrt/)
 light rail lines, the [Circular Line](/rail/metro/lines/circular-line/), and the
 new [Sanying Line](/rail/metro/lines/sanying-line/).
-
-*This is a scope page.* Founding, ownership and the operating agreements with
-the city that built the lines are still to be written up.
-
-*Nothing numerical is asserted on this page.*

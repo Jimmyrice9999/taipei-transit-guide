@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11415,
+    "sourced": 11416,
     "tbc": 4314,
     "asserted": 0,
     "meta": 52
@@ -19,7 +19,7 @@
     {
       "file": "content/bike/history/youbike.md",
       "sources": 21,
-      "sourced": 62,
+      "sourced": 63,
       "tbc": 2,
       "asserted": 0,
       "meta": 0

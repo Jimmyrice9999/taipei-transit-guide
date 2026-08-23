@@ -356,9 +356,7 @@ its length as 3.32 km, its budget as NT$6.98 billion, and its six stations by
 code — `V21` through `V25`, plus `V26A` — running from a new station behind
 Tamsui MRT Station, along the riverside to Guanchao Plaza, back onto
 Zhongzheng Road, and out to rejoin the existing line at Fisherman's
-Wharf[^dorts-blue2]. (These codes are not yet in this site's station data,
-which covers only what is built and operating, so they render as plain text
-here rather than as badges.) That is a direct answer to what the gap between
+Wharf[^dorts-blue2]. That is a direct answer to what the gap between
 **V11 and V26** is for: it is reserved for exactly these six phase-2
 stations. Chinese Wikipedia's own article on the Blue Sea Line gives a
 different phase 2 length, 4.44 km[^zh-bluesea] — a real disagreement with

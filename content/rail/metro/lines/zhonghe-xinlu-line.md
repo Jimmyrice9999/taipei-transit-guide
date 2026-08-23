@@ -344,14 +344,13 @@ record gives the Zhonghe line's CC361 contract as 8 six-car trains, the
 Xinzhuang line's CK371 as 20, and the Luzhou line's CL601 as 4 — 32 trains as
 originally ordered[^dorts-fleet-faq]. All three ran as
 [C371](/rail/metro/rolling-stock/c371/) stock; the fleet's current in-service total
-is not established on this page.
+remains TBC because the opened procurement record is not a current roster.
 
 ![The interior of a C371 train, passengers seated and standing, a passenger walking down the aisle](/images/zhonghe-xinlu-line/interior-800.webp "A C371 train's interior, in service on the Zhonghe–Xinlu line. — Tbatb, CC BY-SA 4.0, Wikimedia Commons")
 
 ## Zhonghe Depot — built to fit, not to spare
 
-**Zhonghe Depot 中和機廠** — which has no page of its own on this site yet —
-sits on the former Taiwan
+**Zhonghe Depot 中和機廠** sits on the former Taiwan
 Railways Zhonghe station site, south of Heping Street, and includes
 Nanshijiao station itself within its stated **1.47-hectare**
 footprint[^dorts-zhonghe]. DORTS gives its own reason for the depot's narrow

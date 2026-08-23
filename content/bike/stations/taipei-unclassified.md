@@ -3614,7 +3614,7 @@ sources:
     note: Supports the rail station coordinates, codes and bilingual names used for the nearest-coordinate join; the join does not compare station names.
 ---
 
-This page lists 1790 static TDX station rows in Taipei's Unclassified group, with a published capacity total of 50762 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; current occupancy is not part of this page [^tdx-bike-stations].
+This page lists 1790 static TDX station rows in Taipei's Unclassified group, with a published capacity total of 50762 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations]. The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].
 
