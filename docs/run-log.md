@@ -14922,6 +14922,60 @@ accessibility errors or warnings. Navigation passed all 19 checks. The
 independent `npm test` rebuild passed all 217 unit tests and 17 fact
 cross-checks.
 
+## Run 97 — Part 3, C381 rolling stock (23 August 2026)
+
+### Sourced
+
+Rebuilt C381 from 90 to 648 sourced body words and added its subject research
+file. DORTS's system-contract record establishes the 3 March 2007 award to the
+Kawasaki–Marubeni–CTCI team and Kawasaki's 23-train CR381/CG391 scope:
+https://data.taipei/dataset/detail?id=d8b75464-8885-4c53-9427-a2583e48fe38.
+Its fleet FAQ separates 13 CR381 six-car trains / 78 cars and 10 CG391 six-car
+trains / 60 cars, plus a later CD311A six-car set:
+https://www.dorts.gov.taipei/news_toggle.aspx?PageSize=20&n=2A66A485FACB0D5B&page=7&sms=87415A8B9CE81B16.
+Taiwan Rolling Stock identifies that add-on as C381 and records 96 base-order
+cars completed by January 2012 plus six add-on cars completed in August 2013:
+https://www.trsc.com.tw/train/tran-58acf37b4bd8a. DORTS engineering records add
+network-compatibility requirements, passenger-system changes, 30-year bogie
+frame testing and the CR381 design, delivery and acceptance chronology through
+August 2013.
+
+### TBC
+
+The signed award price, final-assembly location of the other 42 base-order cars,
+the detailed CG391 delivery and acceptance chronology, and a current line/depot
+roster remain TBC. The earlier approximate 50% component commonality with C371
+was not found in the opened primary record and remains TBC; the contract
+specification or an opened DORTS comparison table would settle it.
+
+### Contradicted the corpus
+
+The old page left the CD311A model identity unresolved. The opened manufacturer
+record directly classifies its six add-on cars as C381, so the page now reports
+24 six-car trains / 144 cars only when the original 23-train order and later
+add-on are deliberately combined. The old broad Taiwan-assembly wording was
+replaced by the manufacturer's exact 102-car production record. Its unsupported
+50% C371-parts claim was removed from prose.
+
+### Conflicts found
+
+The 23-train DORTS contract total and 24-train combined fleet are not competing
+values: the latter includes the separately listed six-car add-on. A DORTS open-
+data metadata row calls the Nangang/eastern extension fleet `CR391`, while that
+record's title, abstract and the fleet FAQ call it `CG391`; the discrepancy is
+published and the model is not silently normalised.
+
+### Gates
+
+Claims are 11,311 sourced / 4,308 TBC / 32 asserted, with no new assertion and
+no baseline change. Citations are clean at 4,894 resolved (4,684 primary / 210
+secondary), and research is clean at 114 files with 482 dated
+checked-and-failed entries. The clean full verifier passed 217 tests across
+1,954 pages and 218,061 internal links with no broken links, fragments, orphans,
+missing glyphs, accessibility errors or warnings. Navigation passed all 19
+checks; the independent `npm test` rebuild passed all 217 unit tests and 17 fact
+cross-checks.
+
 ## Run 96 — Part 3, C371 rolling stock (23 August 2026)
 
 ### Sourced

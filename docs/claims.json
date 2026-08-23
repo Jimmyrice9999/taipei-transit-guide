@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11289,
+    "sourced": 11311,
     "tbc": 4308,
     "asserted": 32,
     "meta": 60
@@ -9722,8 +9722,8 @@
     },
     {
       "file": "content/rail/metro/rolling-stock/c381.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 8,
+      "sourced": 22,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
