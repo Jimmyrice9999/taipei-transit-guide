@@ -66,6 +66,22 @@ The confirmed stop sequence runs 44 stops from 明日世界, past 德音國小, 
 
 The full New Taipei route-service row publishes endpoints “五股-中和”; published distance 37.6 km; service span Weekdays: 去程：0530-2230；返程：0530-2230; Holidays: 去程：0530-2230；返程：0530-2230; headway fields Weekdays: weekday peak 1015; weekday off-peak 1520; 20:30後班距30分; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 813; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**813 Ming Ri Shi Jie (44 stops):** Ming Ri Shi Jie -> Deyin Elementary School -> Far East Logistic -> Dake Bridge -> Mingzhi and Heping Intersection -> Taishan Post Office -> Taishan Police station -> Futai Village -> Tailin & Rende Rd Intersection -> MRT Taishan Station(Tailin Rd) -> Taishan MRT Park -> Xinzhuang High School -> Xinzhuang High School(Xinzhuang Culture & Arts Center) -> Zhongping Junior High School -> Zhongyuan Rd -> Zhongyuan Village -> Zhongyuan Rd 1 -> Touqian Junior High School(Zhongyuan Rd) -> MRT Xingfu Sta -> Renyi Village -> Siyuan & FuSing Intersection -> Taipei Hospital -> MRT Touqianzhuang Sta(Siyuan Rd) -> MRT Xinpu Sta -> Chihlee University of Technology -> Zhongshan Junior High School -> Xinmin Village -> Xianmin Blvd Intersection -> New Taipei City Hall(Zhongshan Rd) -> Minquan Rd Entrance -> Jieshou Park(Guanqian E Rd) -> Shijian & Chengdu Intersectuon -> Houpu Elementary school -> Chongqing & Zhongxiao Rd Intersection -> Chongqing Junior High School -> Post Office -> Xinyi Rd -> Yihuafang Factory -> Sibiantou -> Detention Center -> Jincheng Rd Entrance -> Yongfeng Rd Entrance -> Pinghe Village -> Transformer Station[^tdx-bus]
+
+**813 Transformer Station (46 stops):** Transformer Station -> Pinghe Village -> Yongfeng Rd Entrance -> Jincheng Rd Entrance -> Detention Center -> Sibiantou -> Yihua Textile -> Xinyi Rd -> Post Office -> Shoude New Village -> Chongqing Junior High School -> Chongqing & Zhongxiao Rd Intersection -> Houpu Elementary School -> Shijian & Chengdu Intersectuon -> Jieshou Park -> Minquan Rd Entrance -> New Taipei City Hall(Zhongshan Rd) -> Xianmin Blvd Intersection -> Xinmin Village -> Zhongshan Junior High School -> Chihlee University of Technology -> Banqiao Flower Market -> MRT Xinpu Sta -> MRT Touqianzhuang  Sta (Siyuan Rd) -> Taipei Hospital -> Siyuan & Fuxing Intersection -> MRT Xingfu Sta -> Touqian Junior High School(Zhongyuan Rd) -> Zhongyuan Rd 1 -> Zhongyuan Village -> Zhongyuan Rd -> Zhongyuan & Zhongping Intersection -> Zhongping Junior High School -> Xinzhuang High School(Xinzhuang Culture & Arts Center) -> Xinzhuang High School -> Taishan MRT Park -> MRT Taishan Station(Tailin Rd) -> Tailin & Rende Rd Intersection -> Futai Village -> Taishan Precinct -> Taishan Post Office -> Mingzhi and Heping Intersection -> Dake Bridge -> Far Eastern Logistic Co -> Deyin Elementary School -> Ming Ri Shi Jie[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

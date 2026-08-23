@@ -59,6 +59,22 @@ stop-ID join set: Guandu (R25), matching the route's own terminus.[^tdx-bus]
 The route runs a single subroute under one operator, 大南汽車, weekdays
 only with holidays suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R35Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R35(Shuttle) (6 stops):** MRT Guandu Sta -> Beitou District Office(Guandu) -> Ligong St -> Entrance of TNUA -> Music hall -> Administration Building of TNUA[^tdx-bus]
+
+**R35(Shuttle) (6 stops):** Center for Art and Technology of TNUA(Natatorium) -> Library of TNUA -> Administration Building of TNUA -> Music hall -> Grassland -> MRT Guandu Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

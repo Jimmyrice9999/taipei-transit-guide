@@ -73,6 +73,22 @@ directly in the stop sequence: 捷運新店站 (Xindian, G01), 捷運新店區�
 Y07), 捷運景美站 (Jingmei, G05), 捷運萬隆站 (Wanlong, G06), 捷運六張犁站
 (Liuzhangli, BR07) and 捷運市政府站 (Taipei City Hall, BL18).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Keelung Rd. Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Keelung Rd Metro Bus (40 stops):** Zhongshen Bridge -> Daqijiao -> Qingtan Maintenance Plant -> Youzheng Bridge -> Qingtan Elementary School -> Qingtan New Village -> Training Center of Land Bank -> Qingtan( Beiyi ) -> Qingtan 1 -> Xindian Elementary School -> Wenshan Junior High School -> Bitan -> MRT Xindian Sta(Beixin Rd) -> Bitan Bridge -> Binlang Rd -> MRT Xindian City Hall Sta(Beixin) -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Dapinglin -> MRT Ta Pinglin Station -> Hujiang High School -> MRT Jingmei -> Ministry of Finance Park -> Wanlong -> MRT Wanlong -> Wugong Elementary School (Roosevelt) -> National Taiwan Normal University Branch -> Gongguan -> NTUST -> NTU Hospital Gongguan Branch -> Keelung and Changxing Intersection -> Heping High School -> MRT Liuzhangli (Keelung Rd) -> George Vocational High School of Taipei -> Sanxing Elementary School (Linjiang St Night Market) -> Wuxing St Entrance -> World Trade Center (Keelung Rd) -> Taipei City Hall (Songzhi) -> MRT Taipei City Hall Sta[^tdx-bus]
+
+**Keelung Rd Metro Bus (46 stops):** City Fire Department (Songren) -> Xingya Junior High School -> Xinyi and Songren Intersection (Songren) -> Xinyi and Songren Intersection (Xinyi) -> Taipei 101 -> Taipei City Hall (SongShou) -> World Trade Center (Keelung Rd) -> Wuxing St Entrance -> Sanxing Elementary School (Linjiang St Night Market) -> George Vocational High School of Taipei -> MRT Liuzhangli (Keelung Rd) -> Heping High School -> Keelung and Changxing Intersection -> NTU Cancer Center(Keelung Rd) -> NTUST -> Gongguan -> National Taiwan Normal University Branch -> Wugong Elementary School (Roosevelt) -> MRT Wanlong -> Wanlong -> Ministry of Finance Park -> MRT Jingmei -> Hujiang High School -> MRT Ta Pinglin Station -> Dapinglin -> Xindian Post Office -> MRT Qizhang Sta -> Qizhang(Beixin Rd) -> MRT Hsintien City Hall Statio -> Binlang Rd -> Bitan Bridge -> MRT Xindian Sta(Beixin Rd) -> Bitan -> Wenshan Junior High School -> Xindian Elementary School -> Qingtan 1 -> Nanqing Temple -> Qingtan( Beiyi Rd) -> Training Center of Land Bank -> Qingtan New Village -> Qingtan Elementary School -> Qingtan Elementary School(1) -> Youzheng Bridge -> Qingtan Maintenance Plant -> Daqijiao -> Zhongshen Bridge[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the transfer discount's creation date remain TBC.[^tdx-bus] The 650 predecessor claim rests on a secondary source and was not independently corroborated against a primary PTO or 新店客運 announcement in this search.

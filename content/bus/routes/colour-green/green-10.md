@@ -57,6 +57,22 @@ departures, a rider boarding anywhere on the route pays the same amount
 whether they ride one stop or the full length between the university and
 大坪林.[^ebus-g10]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G10 (20 stops):** Jinwen U of Science and Technology -> Taimao Village 8 -> Anju Civil Service Housing -> Ankeng Elementary School -> Ankang Police Station -> Guanghua New Village(Ankang Rd) -> Anhua Rd Intersection -> Xiacheng Community -> Mansion of General Hu-Lien -> Dingcheng -> Dapingding -> Xitou -> Bitan Bridge -> Binlang Rd -> MRT Xindian City Hall Sta(Beixin) -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Dapingding -> MRT Dapingding Station[^tdx-bus]
+
+**G10 (23 stops):** Shunan St -> Jiangling Ercun -> Buddhist Tzu Chi General Hospital -> Minquan Industrial Area -> Minquan Rd Entrance -> Dapingding -> Xindian Post Office -> MRT Qizhang Sta -> Qizhang(Beixin Rd) -> MRT Xindian District Office Station(Beixin Rd) -> Binlang Rd -> Bitan Bridge -> Xitou -> Dapingding -> Dingcheng -> Mansion of General Hu-Lien -> Xiacheng Community -> Anhua Rd Intersection -> Guanghua New Village(Ankang Rd) -> Ankeng Elementary School -> Anju Civil Service Housing -> Taimao Village 8 -> Jinwen U of Science and Technology[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

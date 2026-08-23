@@ -60,6 +60,22 @@ G04, also Circular Line Y07) — the other two turn off earlier, at 耕莘醫院
 and 北新國小 respectively.[^tdx-bus] 捷運七張站 (Qizhang, G03) is confirmed on
 all three.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G9; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G9 (27 stops):** Great Xiangshan -> Daxiang mountain Trailhead -> Songlan Grange -> Mingren Village -> Dadi Shiji -> Changchun Rd -> Daqian Haojing -> Lantian Dadi -> International House -> Jiangpo Huacheng Ａ -> Jiangpo Huacheng Ｃ -> Daqian Riverview sentry -> Daqian Haojing -> Daqian Riverview sentry -> Jiangpo Huacheng Ｃ -> Hua Jiang Bo City Area A -> International House -> Wufeng Junior High School -> Zhongzheng Rd -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Dapinglin -> MRT Dapinglin -> Shunan St -> Jiangling Ercun -> Buddhist Tzu Chi General Hospital[^tdx-bus]
+
+**G9 (27 stops):** Minquan Industrial Area -> Minquan Rd Entrance -> Dapinglin -> Xindian Post Office -> MRT Qizhang Sta -> Qizhang(Baoqiao Rd) -> Baoqiao & Zhongxing Intersection -> Zhongxing&Zhongzheng Rd Intersection -> Wufeng Junior High School -> International House -> Jiangpo Huacheng Ａ -> Jiangpo Huacheng Ｃ -> Daqian Riverview sentry -> Daqian Haojing -> Daqian Riverview sentry -> Jiangpo Huacheng Ｃ -> Hua Jiang Bo City Area A -> International House -> Lantian Dadi -> Daqian Haojing -> Changchun Rd -> Dadi Shiji -> Mingren Village -> Mingren Park -> Songlan Grange -> Daxiang mountain Trailhead -> Great Xiangshan[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

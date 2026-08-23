@@ -60,6 +60,22 @@ Ximen — a Bannan–Songshan/Xindian interchange (BL11/G12) — Xianse Temple
 NTU Hospital (R09).[^tdx-bus] The route runs a single subroute under one
 operator, 首都客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL2 (44 stops):** Xisheng -> Dongfangzhixing -> Xishengguan -> Jiaqixintiandi -> Zhengfeng -> Datang Jiangshan -> Lane 403 Minan W Rd Intersection -> Guanghua St Entrance -> Xinbao Community -> Guangming Village -> Guanghua Elementary School (Minan W Rd) -> Guanghua Elementary School(Longan Rd) -> Longan Dadi -> Wanan Park -> Yumin Elementary School -> Danfeng High School -> Zhongzheng and Longan Intersection -> Danfeng Elementary School -> Shuangfeng & Fuguo Intersection -> MRT Danfeng Station -> Sanyo -> Yingpankou -> MRT Fu Jen University Station -> Institute for the Blind -> Haishan Village -> Xintai Rd Entrance -> MRT Xinzhuang Sta(Xinzhuang Post Office) -> Xinzhuang Elementary School -> Baoyuan Temple -> MRT Touqianzhuang Station -> Touqian -> Ginling Girls' High School -> Zhongxing St Entrance -> MRT Xianse Temple Sta -> Wuguwang Temple -> Chongxin Bridge -> Zushi Temple (GuiYang) -> Guiyang St -> MRT Ximen Station -> Baoqing Rd -> Boai Rd -> Chongqing S Road Sec 1 -> Taiwan Museum (Xiangyang) -> MRT NTU Hospital Station[^tdx-bus]
+
+**BL2 (40 stops):** 228 Peace Memorial Park -> Hengyang Rd -> Ximen Market (Chengdu) -> Ximen Elementary School -> Chongxin Bridge -> Wuguwang Temple -> MRT Xianse Temple Sta -> Zhongxing St Entrance -> Ginling Girls' High School -> Touqian -> MRT Touqianzhuang Station -> Dazhong Temple -> MRT Xinzhuang Sta(Xinzhuang Post Office) -> Xintai Rd Entrance -> Haishan Village -> Institute for the Blind -> MRT Fu Jen University Station -> Yingpankou -> Sanyo -> MRT Danfeng Station -> Shuangfeng & Fuguo Intersection -> Danfeng Elementary School -> Zhongzheng and Longan Intersection -> Danfeng High School -> Yumin Elementary School -> Wanan Park -> Longan Dadi -> Guanghua Elementary School(Longan Rd) -> Guanghua Elementary School(Minan W Rd) -> Guangming Village -> Xinbao Community -> Guanghua St Entrance -> Lane 403 Minan W Rd Intersection -> Datang Jiangshan -> Zhengfeng -> Xisheng 1 -> Jiaqixintiandi -> Xishengguan -> Dongfangzhixing -> Xisheng[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

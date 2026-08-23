@@ -66,6 +66,22 @@ The confirmed stop sequence runs 20 stops from 景明街口, past 武功國小(�
 
 The full New Taipei route-service row publishes endpoints “景明街口-溪園路”; published distance 16.5 km; service span Weekdays: 去程：0900-1400；返程：0900-1400; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 290Sub Wanhan; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**290sub Wanhan (20 stops):** Jingming St Entrance -> Changan Elementary School (Xinglong) -> Wanfu Elementary School -> Taipei Municipal Library (Ching-Mei Branch) -> Wanhe Park -> MRT Wanlong -> Guting Land Office -> Wanlong Community -> Ministry of Finance Park -> MRT Jingmei -> Hujiang High School -> MRT Dapinglin Station -> Minquan Rd Entrance -> Minquan Industrial Area -> Minquan Industrial Area 1 -> HuakaiFuGui -> Ershizhang Rd Intersection -> Zhongyang Rd -> Xindian Senior High School -> Zhongyang New Village[^tdx-bus]
+
+**290sub Wanhan (26 stops):** Tangquanyinghua(Zhongshan Entrance) -> Tangquanmeidi -> Tangquan Community -> Lane 255 Xiyuan Rd -> Lanzhuang -> Shisizhang Road -> MRT Shisizhang Sta -> Xiyuan Rd Lane 101 Entrance -> Zhongzheng&Huanhe RdIntersection -> Zhuangjing High School (Fuxing Rd) -> Fuxing Rd Entrance -> Buddhist Tzu Chi General Hospital -> Minquan Industrial Area -> Minquan Rd Entrance -> MRT Dapinglin Station -> Hujiang High School -> MRT Jingmei -> Sanfu St Intersection -> Wanlong Community -> Guting Land Office -> MRT Wanlong -> Wanhe Park -> Taipei Municipal Library (Ching-Mei Branch) -> Wanfu Elementary School -> Changan Elementary School (Xinglong) -> Jingming St Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

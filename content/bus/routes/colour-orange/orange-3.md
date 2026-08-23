@@ -66,6 +66,26 @@ substantially longer than its 18-stop return leg, one of the largest
 directional asymmetries recorded in this project's colour-orange
 coverage.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for O3; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O3 (35 stops):** Zhonghe Stop -> Jinhe Rd -> Xinan Village -> Lite-On Electronics Inc -> Zhongshan Rd Entrance -> Bannan Rd Entrance -> Ciaohe Rd -> Tailong Factory -> Huanhe W Rd -> Baoshun Rd Entrance -> Tailongboyuan -> Renai Park -> Renai & Yongping Intersection -> Jhongxi Village -> Renai Rd 1 -> Renai Rd -> Zhongzheng Bridge Stop -> Boai Activity Center -> Yongde Temple -> Huanhe E Rd -> Yuxi St Entrance -> Huanhe E Rd Sec 3 -> Fuhe Park -> Dalu New Village -> Minle Village 2 -> Liuhe Community(Chenggong Rd) -> Atomic Energy Council -> Yongheng Rd -> siouhe Village -> Yonghe Junior High School -> Yongfu Bridge -> Fuhe Rd -> Daxin St -> Zhengxing Village -> MRT Dingxi Station[^tdx-bus]
+
+**O3 (18 stops):** Renai Rd -> Renai Rd 1 -> Zhongxi Village -> Renai & Yongping Intersection -> Renai Park -> Baoshun Rd Entrance -> Yongping Elementary School -> Zhuangren Bridge -> Zhuangjing Rd -> Zhuangjing Rd Entrance -> Shengli Rd -> Tailong Factory -> Ciaohe Rd -> Bannan Rd Entrance -> Lite-On Electronics Inc -> Xinan Village -> Jinhe Rd -> Zhonghe Stop[^tdx-bus]
+
+**O3 (34 stops):** Zhonghe Stop -> Jinhe Rd -> Xinan Village -> Lite-On Electronics Inc -> Zhongshan Rd Entrance -> Bannan Rd Entrance -> Ciaohe Rd -> Tailong Factory -> Huanhe W Rd -> Baoshun Rd Entrance -> Tailongboyuan -> Renai Park -> Renai & Yongping Intersection -> Jhongxi Village -> Renai Rd 1 -> Renai Rd -> Zhongzheng Bridge Stop -> Boai Activity Center -> Yongde Temple -> Huanhe E Rd -> Yuxi St Entrance -> Huanhe E Rd Sec 3 -> Fuhe Park -> Dalu New Village -> Minle Village 2 -> Liuhe Community(Chenggong Rd) -> Atomic Energy Council -> Yongheng Rd -> siouhe Village -> Yonghe Junior High School -> Yongfu Bridge -> Fuhe Rd -> Daxin St -> Zhengxing Village[^tdx-bus]
+
+**O3 (18 stops):** Renai Rd -> Renai Rd 1 -> Zhongxi Village -> Renai & Yongping Intersection -> Renai Park -> Baoshun Rd Entrance -> Yongping Elementary School -> Zhuangren Bridge -> Zhuangjing Rd -> Zhuangjing Rd Entrance -> Shengli Rd -> Tailong Factory -> Ciaohe Rd -> Bannan Rd Entrance -> Lite-On Electronics Inc -> Xinan Village -> Jinhe Rd -> Zhonghe Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the stop-skip's creation date and rationale remain TBC.[^tdx-bus]

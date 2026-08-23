@@ -66,6 +66,22 @@ The confirmed stop sequence runs 16 stops from 伴山別墅(一), past 伴山別
 
 The full New Taipei route-service row publishes endpoints “綠野香坡-安忠路”; published distance 13.3 km; service span Weekdays: 去程：0605-0000；返程：0605-0000; Holidays: 去程：0615-0000；返程：0615-0000; headway fields Weekdays: weekday peak 1520; weekday off-peak 3040; Holidays: holiday peak 30; holiday off-peak 40; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for K3; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**K3 (16 stops):** Banshan Villa(1) -> Banshan Villa(2) -> Banshan Villa(3) -> Luyexiangpo -> ZaoJhen -> Green Villa Stage 2 -> Banwu Villa -> Caidie Villa -> Green Villa Stage 1 -> Anxiang Rd Entrance -> Damaopu(Anxiang Rd) -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Jinwen University of Science & Technology Sta -> Taimao Village 8 -> Anju Civil Service Housing[^tdx-bus]
+
+**K3 (16 stops):** Anzhong Rd Lane 56 -> Taimao Village 8 -> LRT Jinwen University of Science & Technology Sta -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> Damaopu(Anxiang Rd) -> Anxiang Rd Entrance -> Green Villa Stage 1 -> Caidie Villa -> Banwu Villa -> Green Villa Stage 2 -> ZaoJhen -> Luyexiangpo -> Banshan Villa(3) -> Banshan Villa(2) -> Banshan Villa(1)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-lrt][^ntpc-transport]

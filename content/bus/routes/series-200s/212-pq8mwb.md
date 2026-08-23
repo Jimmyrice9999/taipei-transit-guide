@@ -65,6 +65,22 @@ Center.[^tdx-bus] The route runs a single subroute under one operator,
 express sibling 212直, which confirms Nangang instead of Taipei Nangang
 Exhibition Center along an otherwise near-identical corridor.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 212; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**212 (51 stops):** Jiuzhang Stop 2 -> Jiuzhuang -> Jiuzhuang Elementary School -> Jiuzhuang 1st Stop -> Academia Sinica -> Zhongyan New Village -> Yuangong Bridge -> Nangang Water Plant -> Chengzheng Junior High School -> TWTC Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Dist Admin Center(Nangang Rail Sta) -> Taifei New Village -> Nangang Rd Sec2 Lane 178 Entrance -> Dongming Village / Taipei Music Center -> Tudigong Temple -> Nangang High School -> MRT Kunyang -> Army Logistics Command -> Guohua New Village -> TCUH, Zhongxiao Branch -> MRT Houshanpi Sta (Yongji) -> Yongji and Songshan Intersection -> Public Housing -> Songlong Rd -> Songshan High School (Songlong) -> United Daily News -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> Tourism Administration, MOTC -> Apollo Building -> MRT Zhongxiao Dunhua Sta -> Dinghao Market -> MRT Zhongxiao Fuxing Sta -> Zhengyi Post Office -> Nat'l Taipei U of Technology (Zhongxiao) -> Zhongxiao Elementary School -> Huashan Cultural and Creative Industries Park -> MRT Shandao Temple Sta -> Taipei Main Sta (Zhongxiao) -> Zhonghua Rd N Stop -> MRT Ximen Sta -> Xiaonanmen -> TCUH, Heping Branch -> Dapu St -> Shaan Village -> Nanjichang Apartment -> Zhonghua and Nanhai Intersection -> Youth Park (Guoxing) -> Guoxing Rd Entrance 1 -> Guoxing Rd Entrance[^tdx-bus]
+
+**212 (48 stops):** Zhonghua and Nanhai Intersection -> Nanjichang Apartment -> Shaan Village -> Dapu St -> TCUH, Heping Branch -> MRT Ximen Sta -> Zhonghua Rd N Stop -> Taipei Main Sta (Zhongxiao) -> MRT Shandao Temple Sta -> Huashan Cultural and Creative Industries Park -> Zhongxiao Elementary School -> Nat'l Taipei U of Technology (Zhongxiao) -> Zhengyi Post Office -> Huaisheng Junior High School -> Dinghao Market -> MRT Zhongxiao Dunhua Sta -> Apollo Building -> Tourism Administration, MOTC -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> United Daily News -> Songshan High School (Songlong) -> Songlong Rd Entrance -> Xingya Elementary School -> Public Housing -> Yongji and Songshan Intersection -> MRT Houshanpi Sta (Yongji) -> TCUH, Zhongxiao Branch -> Guohua New Village -> Army Logistics Command -> MRT Kunyang -> Nangang High School -> Tudigong Temple -> Dongming Village / Taipei Music Center -> Nangang Rd Sec2 Lane 178 Entrance -> Taifei New Village -> Nangang Dist Admin Center(Nangang Rail Sta) -> Nangang Vocational High School (Nangang Rd) -> Nangang -> TWTC Nangang Exhibition Hall -> Chengzheng Junior High School -> Nangang Water Plant -> Yuangong Bridge -> Zhongyan New Village -> Academia Sinica -> Jiuzhuang 1st Stop -> Jiuzhuang Elementary School -> Jiuzhuang -> Jiuzhang Stop 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the two near-identical 212 workings routing through two different Nangang-area stations was found in this search.

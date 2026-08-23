@@ -64,6 +64,26 @@ The route runs two named subroutes under one operator, 三重客運, one of
 two Taipei Sightseeing Bus lines classified together as 觀光巴士 in this
 batch.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for Taipei Sightseeing Bus Blue route; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Taipei Double Decker Bus (13 stops):** Taipei Main Sta (Zhongxiao) -> MRT Beimen Station -> Yanping Stop 1 (Nanjing) -> Taipei Circle -> Taipei Circle (Nanjing) -> MRT Zhongshan Sta (Zhiren High School) -> Grand Formosa Regent Taipei -> Tatung Company (Qingguang Market) -> Taipei Fine Arts Museum -> Grand Hotel -> Mingchuan U -> Chiang Kai-Shek Shilin Residence (Zhongshan) -> National Palace Museum (I)[^tdx-bus]
+
+**Taipei Double Decker Bus (6 stops):** MRT Shilin Sta (Zhongshan ) -> MRT Jiantan Sta (Zhongshan) -> Grand Hotel -> Taipei Fine Arts Museum -> Tatung Company (Qingguang Market) -> Taipei Main Sta (Zhongxiao)[^tdx-bus]
+
+**Taipei Double Decker Bus (13 stops):** Taipei Main Sta (Zhongxiao) -> MRT Beimen Station -> Yanping Stop 1 (Nanjing) -> Taipei Circle -> Taipei Circle (Nanjing) -> MRT Zhongshan Sta (Zhiren High School) -> Grand Formosa Regent Taipei -> Tatung Company (Qingguang Market) -> Taipei Fine Arts Museum -> Grand Hotel -> Mingchuan U -> Chiang Kai-Shek Shilin Residence (Zhongshan) -> National Palace Museum[^tdx-bus]
+
+**Taipei Double Decker Bus (6 stops):** MRT Shilin Sta (Zhongshan ) -> MRT Jiantan Sta (Zhongshan) -> Grand Hotel -> Taipei Fine Arts Museum -> Tatung Company (Qingguang Market) -> Taipei Main Sta (Zhongxiao)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] The route's own actual fare figures stay TBC, since the catalogue points to a separate table rather than publishing a plain per-stage value, and no stated reason for one working omitting the museum's own main building was found in this search.

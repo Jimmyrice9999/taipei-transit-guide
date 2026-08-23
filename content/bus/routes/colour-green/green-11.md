@@ -59,6 +59,26 @@ inside built-up Wenshan and Da'an respectively, unlike the several hillside
 and Ankeng-estate origins recorded on other routes in this project's
 colour-green coverage.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for G11; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G11 (17 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Police Substation -> Dept of Civil Servant Development -> Wanmei Community -> World Shanzhuang -> Lingliang Shanzhuang -> Xinhai Elementary School -> Qingfeng Activity Center -> Taipei Water Department (Xinhai) -> Taipei Water Department -> Fanglan Rd -> NTU Cancer Center -> NTU Cancer Center(Keelung Rd) -> NTUST -> Gongguan -> MRT Gongguan Sta[^tdx-bus]
+
+**G11 (22 stops):** Taipower Building -> Wenzhou St Entrance -> NTU Sports Center -> National Taiwan U -> MRT Gongguan Sta -> Gongguan -> NTUST -> NTU Hospital Gongguan Branch -> NTU Cancer Center -> Fanglan Rd -> Taipei Water Department -> National Center for Research on Earthquake Engineering -> Qingfeng Activity Center -> Taipei Huai Ai Funeral Parlor -> Xinhai Elementary School -> Lingliang Shanzhuang -> World Shanzhuang -> Wanmei Community -> Dept of Civil Servant Development -> Wanfang Police Substation -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+**G11 (18 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Police Substation -> Dept of Civil Servant Development -> Dept of Civil Servant Development (Main Gate) -> Wanmei Community -> World Shanzhuang -> Lingliang Shanzhuang -> Xinhai Elementary School -> Qingfeng Activity Center -> Taipei Water Department (Xinhai) -> Taipei Water Department -> Fanglan Rd -> NTU Cancer Center -> NTU Cancer Center(Keelung Rd) -> NTUST -> Gongguan -> MRT Gongguan Sta[^tdx-bus]
+
+**G11 (23 stops):** Taipower Building -> Wenzhou St Entrance -> NTU Sports Center -> National Taiwan U -> MRT Gongguan Sta -> Gongguan -> NTUST -> NTU Hospital Gongguan Branch -> NTU Cancer Center -> Fanglan Rd -> Taipei Water Department -> National Center for Research on Earthquake Engineering -> Qingfeng Activity Center -> Taipei Huai Ai Funeral Parlor -> Xinhai Elementary School -> Lingliang Shanzhuang -> World Shanzhuang -> Wanmei Community -> Dept of Civil Servant Development (Main Gate) -> Dept of Civil Servant Development -> Wanfang Police Substation -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the detour's creation date and rationale remain TBC.[^tdx-bus]

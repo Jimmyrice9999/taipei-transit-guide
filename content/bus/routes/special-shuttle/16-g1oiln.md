@@ -67,6 +67,22 @@ only the tourist-oriented 臺北觀光巴士紅線.[^tdx-bus] The route runs two
 named subroutes under one operator, 大南汽車, on a two-stage fare,
 weekdays only with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for NH16; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH16 (45 stops):** Guizikeng Soil and Water Conservation Park -> Xiushan Li -> Cihang Temple -> Guotai New Village -> Zhonghe Village -> Fuxing High School -> Zhonghe St -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Zhongyang S & Daxing St Intersection -> Cihou Temple -> Zhongyi New Village -> Chongren Rd Entrance -> MRT Qilian 2 (Xian) -> MRT Qilian Sta 1(Xi’an) -> Jianxing New Village (Xi’an) -> NYCU (Xi'an) -> Shipai Junior High School -> MRT Shipai Sta (Xi’an) -> Ziqiang St Entrance (Xi'an) -> MRT Mingde Sta (Xi'an) -> Mingde Junior High School -> Zhongzheng High School -> MRT Zhishan Sta (Taiwan Traditional Theatre Center) -> MRT Zhishan Sta 1 -> Shilin -> MRT Shilin Sta (Zhongzheng) -> Fulin Elementary School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Taibei High School -> Soochow University -> Waishuangxi -> MRT Jiannan Rd Station -> Zhipan New Village -> Neihu and Jihu Intersection -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> China Times Daily News Square -> Minquan Bridge[^tdx-bus]
+
+**NH16 (45 stops):** MinQuan Bridge -> China Times Daily News Square -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Zhipan New Village -> MRT Jiannan Rd Station -> Waishuangxi -> Soochow University -> Taibei High School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Fulin Elementary School -> MRT Shilin Sta (Zhongzheng) -> Shilin -> MRT Zhishan Sta 1 -> MRT Zhishan Sta (Taiwan Traditional Theatre Center) -> Zhongzheng High School -> Mingde Junior High School -> MRT Mingde Sta (Donghua) -> Ziqiang St Entrance (Donghua) -> MRT Shipai Sta (Donghua) -> Yili St Entrance -> NYCU (Donghua) -> Jianxing New Village (Donghua) -> MRT Qilian 1 -> MRT Qilian 2 -> Chongren Rd Entrance -> Zhongyi New Village -> Cihou Temple -> Qingjiang Village -> Zhongyang S Rd -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Zhonghe St -> Fuxing High School -> Zhonghe Village -> Guotai New Village -> Cihang Temple -> Xiushan Li -> Guizikeng Soil and Water Conservation Park -> Beitou Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 北投 with the Neihu Science Park specifically over such a long corridor, rather than a shorter feeder to a nearer station.

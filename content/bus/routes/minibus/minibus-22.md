@@ -64,6 +64,22 @@ route's own corridor threads.[^tdx-bus] The route runs a single subroute
 under one operator, 大南汽車, the same operator running the 小25/小26/
 小6/小7/小9 family over overlapping Beitou-area corridors.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S22; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S22 (12 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Xinmin Junior High School -> Beitou Armed Forces Hospital -> Linquan Village -> Xinmin Rd (End)[^tdx-bus]
+
+**S22 (14 stops):** Shangbeitou -> Bashengyuan -> Postal Service Training Center -> Yuanzhixiang -> Yaxuyuan -> Overseas Chinese Hotel -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Zhongyang S & Daxing St Intersection -> Cihou Temple -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 捷運北投站 with 泉源路 specifically as the route's own termini, distinct from the neighbouring routes sharing the same operator and district, was found in this search.

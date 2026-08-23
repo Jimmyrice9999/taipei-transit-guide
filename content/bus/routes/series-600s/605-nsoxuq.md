@@ -55,6 +55,22 @@ The full official schedule gives termini “汐止 - 臺北車站”, the curren
 
 The confirmed stop sequence runs from 東方山河社區, past 國泰醫院/汐止/潭美公園/南京舊宗路口, through a run of 南京東路 stops from 南京公寓 to 捷運中山站, along 圓環(南京)/圓環(重慶)/後車站, ending at 臺北車站/行政院/中山市場, a different corridor from the rest of the 605 family, which routes via 忠孝東路 and 南港 instead.[^tdx-bus] Five confirmed interchanges are recorded in the curated stop-ID join set, none shared with its own siblings: Taipei Main Station (BL12), Nanjing Fuxing (BR11/G16), Zhongshan (G14/R11), Songjiang Nanjing (G15/O08) and Nanjing Sanmin (G18).[^tdx-bus] The route runs a single subroute under one operator, 中興巴士, weekdays only with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 605Express; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**605(Fast) (28 stops):** Dongfang Shanhe Community -> Xiangzhang Rd Sec 1 -> Cathay General Hospital -> Xizhi -> Xizhi Park -> Tan-mei Park -> Nanjing and Jiuzong Intersection -> MacArthur No1 bridge -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> NanJing-SanMin Intersection -> Nanjing & Ningan Intersection -> Nanjing & Dunhua Intersection (Taipei Arena) -> MRT Nanjing Fuxing Station -> Nanjing & Longjiang Intersection -> Nanjing & Jianguo Intersection -> MRT Songjiang Nanjing Sta -> Nanjing & Jilin Intersection -> Nanjing & Linsen Intersection -> MRT Zhongshan Sta (Zhiren High School) -> Taipei Circle (Nanjing) -> Taipei Circle (Chongqing) -> Old Taipei Railway Sta -> Taipei Main Station (Chongqing) -> Chongqing S Road Sec 1 -> Taiwan Museum (Guanqian) -> Taipei Main Sta (Zhongxiao) -> Executive Yuan -> Zhongshan Market[^tdx-bus]
+
+**605(Fast) (18 stops):** Nanjing & Linsen Intersection -> Nanjing & Jilin Intersection -> MRT Songjiang Nanjing Sta -> Nanjing & Jianguo Intersection -> Nanjing & Longjiang Intersection -> MRT Nanjing Fuxing Station -> Nanjing & Dunhua Intersection (Taipei Arena) -> Nanjing & Ningan Intersection -> NanJing-SanMin Intersection -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> MacArthur No1 bridge -> Nanjing & Jiuzong Intersection -> Tan-mei Park -> Xizhi Junior High School -> Xizhi -> Cathay General Hospital -> Xiangzhang Rd Sec 1 -> Dongfang Shanhe Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for this route's own 南京東路 corridor sharing no confirmed interchange with the rest of the 605 family, despite carrying the same route number and both termini, was found in this search.

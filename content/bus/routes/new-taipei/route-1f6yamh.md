@@ -66,6 +66,22 @@ The confirmed stop sequence runs 27 stops from 湯泉櫻花(中山路口), past 
 
 The full New Taipei route-service row publishes endpoints “湯泉櫻花-湯泉櫻花”; published distance 8.2 km; service span Weekdays: 去程：0600-2300；返程：0600-2300; Holidays: 去程：0600-2300；返程：0600-2300; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Tangquan─Dapinglin; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Tangquan─Dapinglin (25 stops):** Tangquanyinghua(Zhongshan Entrance) -> Tangquanmeidi -> Lane 255 Xiyuan Rd -> Shisizhang Road -> Heping Community -> Sixin Temple -> Sixin Entrance -> Huakaifugui -> Minquan Industrial Area -> Minquan Rd Entrance -> Dapinglin -> Minzu & Beixin Intersection -> Dafeng Elementary School -> Minzu Rd Entrance(Cardinal Tien Hospital) -> Cardinal Tien Hospital(Zhongzheng Rd) -> Zhongyang Rd -> Xindian Senior High School -> Zhongyang New Village -> Tangquan Shouxi -> Tangquanyinghua(Zhongshan Entrance) -> Tangquanmeidi -> Lane 255 Xiyuan Rd -> Shisizhang Road -> Heping Community -> Sixin Temple[^tdx-bus]
+
+**Tangquan─Dapinglin (27 stops):** Tangquanyinghua(Zhongshan Entrance) -> Tangquanmeidi -> Lane 255 Xiyuan Rd -> Shisizhang Road -> Heping Community -> Sixin Temple -> Sixin Entrance -> Huakaifugui -> Zhuangjing High School (Fuxing Rd) -> Buddhist Tzu Chi General Hospital -> Minquan Industrial Area -> Minquan Rd Entrance -> Dapinglin -> Minzu & Beixin Intersection -> Dafeng Elementary School -> Minzu Rd Entrance(Cardinal Tien Hospital) -> Cardinal Tien Hospital(Zhongzheng Rd) -> Zhongyang Rd -> Xindian Senior High School -> Zhongyang New Village -> Tangquan Shouxi -> Tangquanyinghua(Zhongshan Entrance) -> Tangquanmeidi -> Lane 255 Xiyuan Rd -> Shisizhang Road -> Heping Community -> Sixin Temple[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 3 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

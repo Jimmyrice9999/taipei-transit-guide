@@ -61,6 +61,22 @@ Tamsui–Xinyi Line (R10) — plus Sanchong Elementary School (O50), Sanhe
 Junior High School (O51), St. Ignatius High School (O52) and Luzhou (O54).[^tdx-bus] The route runs a single subroute under one operator, 三重客運,
 with no recorded holiday variant or short working.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL1; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL1 (34 stops):** Luzhou Bus Terminal -> Minzu Rd Entrance -> MRT Luzhou Sta -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Changrong & Guangming Intersection -> Changrong & Zhongyuan Rd -> Changrong & Guanghua Intersection -> Wanquan Market -> Jiuqiong Temple -> Jiuqiong St Intersection -> Minsheng St Entrance -> Zhongshan 1st Rd -> XiQian -> MRT St Ignatius High School -> St Ignatius High School -> Xingfu Market -> Jianhe New Village -> MRT Sanhe Juior High School Sta -> Sanhe Junior High School -> Ger-Jyh Senior High School(Sanhe Rd) -> Houde Police Station -> Delin Temple(Sanhe Rd) -> Longmen Rd Entrance -> Sanan Village -> Changshou W St Entrance -> Changyuan WSt Entrance -> Jinguo & Theater Intersection -> Tiantai Square -> Datong Rd Entrance -> Zhongzheng S Rd -> Chongan St Entrance(Zhongzheng S Rd) -> Taipei Main Sta (Zhongxiao Rd)[^tdx-bus]
+
+**BL1 (33 stops):** Taipei Main Sta (Qingdao Rd) -> Taipei Main Sta (Zhongxiao) -> Chongan St Entrance(Zhongzheng S Rd) -> Zhongzheng S Rd -> Datong Rd Entrance -> Zhengyi&Chongxin Intersection -> Changyuan WSt Entrance -> Changshou W St Intersection -> Sanan Village -> Longmen Rd Entrance -> Delin Temple(Sanhe Rd) -> Houde Police Station -> Ger-Jyh Senior High School(Sanhe Rd) -> Sanhe Junior High School -> MRT Sanhe Juior High School Sta -> Jianhe New Village -> Xingfu Market -> MRT St Ignatius High School -> Minhe Apartment -> XiQian -> Zhongshan 1st Rd -> Minsheng St Entrance -> Yongan Village -> Jiuqiong St Entrance -> Jiuqiong Temple -> Wanquan Market -> Changrong & Guanghua Intersection -> Changrong & Zhongyuan Intersection -> Changrong & Guangming Intersection -> Yongping Market -> Changrong Rd -> MRT Luzhou Sta -> Zhongzheng & Guangrong intersection[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] Why 藍1 pairs 蘆洲 with 臺北車站 rather than a nearer Blue-line

@@ -62,6 +62,26 @@ two-thirds of the way along the route's own corridor.[^tdx-bus] TDX
 records two named subroutes distinguishing whether a working detours
 via 立農國小一.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for S21; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S21 (25 stops):** Zhiyuan New Village -> Jiying Temple -> Dahua Boyuan -> Dahua Boyuan -> Jiying Temple -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Elementary School -> Qiyan New Village -> Gongguan Mansion -> Qiyan 1st Stop -> Chongren Rd Entrance -> MRT Qilian 2 (Xian) -> MRT Qilian Sta 1(Xi’an) -> MRT Qilian 1 -> MRT Qilian 2 -> Linong Elementary School 1 -> Baxian Village -> Xiabaxian Tudigong Temple[^tdx-bus]
+
+**S21 (22 stops):** Baxian Village -> MRT Qilian Sta 1(Xi’an) -> MRT Qilian 1 -> MRT Qilian 2 -> Chongren Rd Entrance -> Qiyan 1st Stop -> Gongguan Huaxia -> Qiyan New Village -> Qingjiang Elementary School -> Shimen -> Fuan Temple -> Beitou Market (Gongguan) -> Beitou Elementary School -> Daye & Zhongyang N Rd Intersection -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Jiying Temple -> Dahua Boyuan -> Dahua Boyuan -> Jiying Temple -> Zhiyuan New Village[^tdx-bus]
+
+**S21 (25 stops):** Zhiyuan New Village -> Jiying Temple -> Dahua Boyuan -> Dahua Boyuan -> Jiying Temple -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Elementary School -> Qiyan New Village -> Gongguan Mansion -> Qiyan 1st Stop -> Chongren Rd Entrance -> MRT Qilian 2 (Xian) -> MRT Qilian Sta 1(Xi’an) -> MRT Qilian 1 -> MRT Qilian 2 -> Linong Elementary School 1 -> Baxian Village -> Xiabaxian Tudigong Temple[^tdx-bus]
+
+**S21 (22 stops):** Linong Elementary School 1 -> MRT Qilian Sta 1(Xi’an) -> MRT Qilian 1 -> MRT Qilian 2 -> Chongren Rd Entrance -> Qiyan 1st Stop -> Gongguan Huaxia -> Qiyan New Village -> Qingjiang Elementary School -> Shimen -> Fuan Temple -> Beitou Market (Gongguan) -> Beitou Elementary School -> Daye & Zhongyang N Rd Intersection -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Jiying Temple -> Dahua Boyuan -> Dahua Boyuan -> Jiying Temple -> Zhiyuan New Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the route's own shorter weekend span, 0640–1720 against a fuller weekday 0600–1900, was found in this search, nor a stated reason for pairing 北投 with 八仙里 specifically as the route's own termini, rather than a nearer named stop.

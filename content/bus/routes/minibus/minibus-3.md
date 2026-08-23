@@ -63,6 +63,22 @@ stop-ID join set, on two different rail lines: Kunyang (BL21), Neihu
 stops further along its Neihu corridor.[^tdx-bus] The route runs a
 single subroute under one operator, 東南客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S3; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S3 (26 stops):** MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> National Defense Medical Center -> Jiangjun Ling -> St Francis High School -> Chenggong Rd Sec 3 -> Neihu Police Substation -> National Taiwan College of Performing Arts -> Neihu Police Substation1 -> Huguang Market -> MRT Neihu Sta -> Xiuhu -> Dahu -> Dahu Shanzhuang -> Dahu Activity Center -> Ln 169, Dahu shanzhuang St -> Dahu Elementary School -> Daqiutian -> Xingshan temple -> Laoye Shanzhuang -> Cuibo Xincun[^tdx-bus]
+
+**S3 (25 stops):** Lane 214 Changqing Rd -> Changqing Police Sta -> Guojia Park Villa -> Xingshan temple -> Daqiutian -> Dahu Elementary School -> Ln 169, Dahu shanzhuang St -> Dahu -> Jinlong Village -> MRT Neihu Sta (Neihu) -> Bihu Elementary School -> Neihu Police Substation -> National Taiwan College of Performing Arts -> Neihu Police Substation -> Chenggong Rd Sec 3 -> St Francis High School -> Jiangjun Ling -> National Defense Medical Center -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運昆陽站 with 翠柏新村 specifically as the route's own termini was found in this search, nor a stated reason for the out-and-back loop past 觀光草莓園 shared with the unrelated 小2.

@@ -59,6 +59,26 @@ route's own terminus.[^tdx-bus] TDX records three named subroutes, 紅36,
 紅36東宇花園城 and 紅36捷運淡水站, apparently distinguishing directional
 terminus labels rather than corridor variants.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for R36; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R36 (18 stops):** DongyuGardenCity -> California community -> Chengbao Garden -> Community -> Mifenliao -> Xinxing St -> Shuxiang Dadi -> Dengxing Haojing -> Xinxing Elementary school -> Changchun Teng Community -> Tamkang High School -> Farmers Association (Xinxing Branch) -> Haijing Yuanzhongyuan -> Tamsui Xincheng -> Chongjian St Entrance -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+**R36 (17 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> JhongJian St Entrance -> Tamsui Xincheng -> Haijing Yuanzhongyuan -> Farmers Association (Xinxing Branch) -> Tamkang High School -> Changchun Teng Community -> Xinxing Elementary school -> Dengxing Haojing -> Shuxiang Dadi -> Xinxing St -> Mifenliao -> Motian 31 -> Jiazhou Community -> California community -> Dongyu Garden City[^tdx-bus]
+
+**R36 DongyuGardenCity (18 stops):** DongyuGardenCity -> California community -> Chengbao Garden -> Community -> Mifenliao -> Xinxing St -> Shuxiang Dadi -> Dengxing Haojing -> Xinxing Elementary school -> Changchun Teng Community -> Tamkang High School -> Farmers Association (Xinxing Branch) -> Haijing Yuanzhongyuan -> Tamsui Xincheng -> Chongjian St Entrance -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+**R36 MRT Tamsui Sta (17 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> JhongJian St Entrance -> Tamsui Xincheng -> Haijing Yuanzhongyuan -> Farmers Association (Xinxing Branch) -> Tamkang High School -> Changchun Teng Community -> Xinxing Elementary school -> Dengxing Haojing -> Shuxiang Dadi -> Xinxing St -> Mifenliao -> Motian 31 -> Jiazhou Community -> California community -> Dongyu Garden City[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅36 was found

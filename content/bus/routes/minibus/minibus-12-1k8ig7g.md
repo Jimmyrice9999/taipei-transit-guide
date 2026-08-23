@@ -62,6 +62,26 @@ Kunyang (BL21), Nangang (BL22), Taipei Nangang Exhibition Center
 (BL23/BR24) and Taipei Zoo (BR01).[^tdx-bus] TDX records two named
 subroutes, one shorter working ending at 富德公墓 itself.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for S12; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S12 (31 stops):** MRT Kunyang -> Nangang High School (Civic Blvd) -> TaipeiMusicCenter -> Civic Blvd Sec 8 -> Nangang Rail Sta -> Nangang Vocational High School (Nangang Rd) -> Nangang -> TWTC Nangang Exhibition Hall -> Chengzheng Junior High School -> Nangang Water Plant -> Yuangong Bridge -> Zhongyan New Village -> Academia Sinica -> Hushih Park -> Jiuru Village 1 -> Lingyun Village 5 -> Jiuru Village 2 -> Lingyun Stop -> China U of Science & Technology -> Lishan Bridge -> Xialiao Bridge -> Guanghuatian Temple -> Fude Cemetery -> FudeCemeterySec12 -> FudeCemeterySec14 -> FudeCemeterySec20 -> FudeCemeterySec28 -> Fude Columbarium (Tree Burial Area) -> FudekengEco-park -> MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station[^tdx-bus]
+
+**S12 (32 stops):** Maokong Gondola Taipei Zoo Station -> MRT Taipei Zoo Sta -> ShibikengFudeTemple -> FudekengEco-park -> Fude Columbarium (Tree Burial Area) -> FudeCemeterySec28 -> FudeCemeterySec20 -> FudeCemeterySec14 -> FudeCemeterySec12 -> Fude Cemetery -> Guanghuatian Temple -> Xialiao Bridge -> Lishan Bridge -> China U of Science & Technology -> Soldiers Public Cemetry -> Lingyun Stop -> Jiuru Village 2 -> Lingyun Village 5 -> Jiuru Village 1 -> Hushih Park -> Academia Sinica -> Zhongyan New Village -> Yuangong Bridge -> Nangang Water Plant -> Chengzheng Junior High School -> TWTC Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Rail Sta -> Civic Blvd Sec 8 -> TaipeiMusicCenter -> MRT Kunyang[^tdx-bus]
+
+**S12 (23 stops):** MRT Kunyang -> Nangang High School (Civic Blvd) -> TaipeiMusicCenter -> Civic Blvd Sec 8 -> Nangang Rail Sta -> Nangang Vocational High School (Nangang Rd) -> Nangang -> TWTC Nangang Exhibition Hall -> Chengzheng Junior High School -> Nangang Water Plant -> Yuangong Bridge -> Zhongyan New Village -> Academia Sinica -> Hushih Park -> Jiuru Village 1 -> Lingyun Village 5 -> Jiuru Village 2 -> Lingyun Stop -> China U of Science & Technology -> Lishan Bridge -> Xialiao Bridge -> Guanghuatian Temple -> Fude Cemetery[^tdx-bus]
+
+**S12 (23 stops):** Fude Cemetery -> Guanghuatian Temple -> Xialiao Bridge -> Lishan Bridge -> China U of Science & Technology -> Soldiers Public Cemetry -> Lingyun Stop -> Jiuru Village 2 -> Lingyun Village 5 -> Jiuru Village 1 -> Hushih Park -> Academia Sinica -> Zhongyan New Village -> Yuangong Bridge -> Nangang Water Plant -> Chengzheng Junior High School -> TWTC Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Rail Sta -> Civic Blvd Sec 8 -> TaipeiMusicCenter -> MRT Kunyang[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for

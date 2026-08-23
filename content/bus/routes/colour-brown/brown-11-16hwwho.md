@@ -71,6 +71,22 @@ The official 大臺北公車 catalogue lists 棕11副 under 捷運棕線接駁�
 
 The confirmed outbound stop sequence runs from 富德, past 象頭埔/普羅旺世/敦南美景, ending at 興旺公園.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei Zoo (BR01) and Wanfang Hospital (BR04).[^tdx-bus] The route runs 2 subroutes under a single operator, 欣欣客運富德站.[^tdx-bus] The 副 (sub-line) suffix marks this as a branch of plain 棕11, sharing its 富德 origin but ending at 興旺公園 rather than continuing to 捷運公館站.[^ebus-br11sub] The outbound working covers 45 stops; the return, starting from 敦南大地(文山森林公園), covers 43.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BR11Sub; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BR11(Sub) (45 stops):** Fude -> Xiangtoupu -> Wanfu Bridge -> MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station -> Wanshou Bridge (Xinguang) -> Wanshou Bridge (Xiuming) -> Wanxing Elementary School -> Zhinan Shanzhuang -> The Institute of International Relations -> Maokong Gondola Taipei Zoo Station -> National Chengchi U Qingjing Community -> Greenfield Shanzhuang -> Qixia Shanzhuang -> Zhengda Yuhuayuan -> Zhengda Yuhuayuan -> Qixia Shanzhuang -> Affiliated High School of NCU -> ZhengDa 2rd St Entrance -> Provence -> Zhaoru Nursing Center -> Zhaoru Nursing Center -> Provence -> Zhengda 3rd St -> National Chengchi U Heshu Community -> Xiaokengkou (Beizheng Jr High School) -> National Chengchi University -> Xinguang Rd Entrance -> Wenshan Dist Admin Center (Muxin) -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Wenshan Police Sta 1 -> Mamingtan (Zaixing High School) -> Xinglong Shanzhuang -> Coast Guard Administration 1 -> Coast Guard Administration -> Wenshan Sports Center (Xinglong) -> Taiwan Police College -> MRT Wanfang Hospital Sta -> China University of Technology (Xinglong) -> Xinglong Elementary School -> Fuxing Rd Entrance -> Dunnan Meijin Community -> xingwang Park[^tdx-bus]
+
+**BR11(Sub) (43 stops):** Dunnan Dadi Community (Wenshan Forest Park) -> Dunnan Meijin Community -> Fuxing Rd Entrance -> Xinglong Elementary School -> MRT Wanfang Hospital Sta -> Taiwan Police College -> Wenshan Sports Center (Xinglong) -> Coast Guard Administration -> Coast Guard Administration 1 -> Xinglong Shanzhuang -> Mamingtan (Zaixing High School) -> Wenshan Police Sta 1 -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanshou Bridge (Muzha) -> Wenshan Dist Admin Center (Muxin) -> National Chengchi University -> National Chengchi U (TCUH) -> Xiaokengkou (Beizheng Jr High School) -> ZhengDa 3rd St Entrance -> Provence -> Zhaoru Nursing Center -> Zhaoru Nursing Center -> Provence -> Affiliated High School of NCU -> Qixia Shanzhuang -> Zhengda Yuhuayuan -> Zhengda Yuhuayuan -> Qixia Shanzhuang -> Greenfield Shanzhuang -> National Chengchi U Qingjing Community -> The Institute of International Relations -> Zhinan Shanzhuang -> Wanxing Library -> Tacheng High School -> Wanshou Bridge (Xiuming) -> Wanshou Bridge (Xinguang) -> Maokong Gondola Taipei Zoo Station -> MRT Taipei Zoo Sta -> Wanfu Bridge -> Xiangtoupu -> Fude[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the structural fields shown above; route length remains TBC where that layer has no field.[^tdx-bus]

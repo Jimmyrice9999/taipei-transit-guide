@@ -62,6 +62,22 @@ numbered route is a coincidence of two different colour-classification
 systems and a Xindian housing-estate name, not evidence any of the three are
 connected.[^ebus-g15]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G15; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G15 (41 stops):** Banshan Villa(1) -> Banshan Villa(2) -> Banshan Villa(3) -> Luyexiangpo -> ZaoJhen -> Green Villa Stage 2 -> Banwu Villa -> Caidie Villa -> Green Villa Stage 1 -> Anxiang Rd Entrance -> Damaopu(Anxiang Rd) -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Cardinal Tien Hospital An Kang Branch Sta(Chezi Rd) -> Ankang Chezi Rd Intersection -> Taipei Tobacco Factory -> Langmanguizu -> Gonglun New Village(Feng Rong Hospital) -> Ankang Police Station -> Guanghua New Village(Ankang Rd) -> Anhua Rd Intersection -> Xiacheng Community -> Mansion of General Hu-Lien -> Dingcheng -> Dapingding -> Xitou -> Qinqing Riverside Park -> Huanhe-Lixing Intersection -> Xiaobitanbulao -> Zhongyang New Village(MRT Xiaobitan Sta) -> Xindian Senior High School -> Zhongyang Rd -> Ershizhang Rd -> Cardinal Tien Hospital -> Zhongzheng Public Housing -> Chongguang High School -> Zhongzheng Rd Entrance -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Dapinglin[^tdx-bus]
+
+**G15 (46 stops):** MRT Dapinglin Station -> Shunan St -> Jiangling Ercun -> Buddhist Tzu Chi General Hospital -> Minquan Industrial Area -> Minquan Rd Entrance -> Dapinglin -> Xindian Post Office -> MRT Qizhang Sta -> Qizhang(Beixin Rd) -> Zhongzheng Rd Entrance -> Chongguang High School -> Zhongzheng Public Housing -> Cardinal Tien Hospital(Zhongzheng Rd) -> Ershizhang Rd -> Zhongyang Rd -> Xindian Senior High School -> Zhongyang New Village -> Xiaobitanbulao -> Huanhe and Lixing Intersection -> Qinqing Riverside Park -> Xitou -> Dapingding -> Dingcheng -> Mansion of General Hu-Lien -> Xiacheng Community -> Anhua Rd Intersection -> Guanghua New Village(Ankang Rd) -> Ankang Police Station -> Gonglun New Village(Feng Rong Hospital) -> Langmanguizu -> Taipei Tobacco Factory -> Chezi Rd Intersection -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> Damaopu(Anxiang Rd) -> Anxiang Rd Entrance -> Green Villa Stage 1 -> Caidie Villa -> Banwu Villa -> Green Villa Stage 2 -> ZaoJhen -> Luyexiangpo -> Banshan Villa(3) -> Banshan Villa(2) -> Banshan Villa(1)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

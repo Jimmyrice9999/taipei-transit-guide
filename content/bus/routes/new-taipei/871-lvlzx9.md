@@ -66,6 +66,22 @@ The confirmed stop sequence runs 31 stops from 捷運淡水站, past 捷運淡�
 
 The full New Taipei route-service row publishes endpoints “捷運淡水站-行忠堂”; published distance 21.6 km; service span Weekdays: 去程：0535-0535；返程：0535-0535; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 871 Zhongshan North Road; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**871 Zhongshan North Road (31 stops):** MRT Tamsui Sta -> MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> BeiTamsui -> Dinghao -> Zhengde Junior High School -> TPC Dormitory -> Fude Temple -> LRT Danjin Beixin Sta -> Xinshi 1st Rd -> Department of Irrigation And Engineering -> Gongyuanju -> Public Sports Center -> Zhongshan & Binhai Intersection -> Gongsi Tianxi Bridge -> Pidao Village -> Yuying Elementary school -> Linzi -> Yishan Village -> Xiaguiroushan -> Yingguang Factory -> Dongyuan Factory -> Chelujiao -> Xianggenyuan -> Colorful World -> Daniutou RdEntrance -> Yunguangkeng -> Yunguangkeng -> Neighbor 7 Fanshu Village -> Xingzhong Temple -> Chunzihlin[^tdx-bus]
+
+**871 Zhongshan North Road (29 stops):** Xingzhong Temple -> Xianggong Mountain -> Laiyin Castle -> Kanghua Villa -> Shuibiantou -> No295 Kuiroushan Rd -> Daniuchou -> Xuli Electronics -> Xiaguiroushan -> Yishan Village -> Linzi -> Yuying Elementary school -> Pidao Village -> Gongsi Tianxi Bridge -> Zhongshan & Binhai Intersection -> Public Sports Center -> Gongyuanju -> Department of Irrigation And Engineering -> Xinshi 1st Rd -> Tamjin & Xinshi 1st Rd Intersection -> Tamsui Qingge -> Fude Temple -> TPC Dormitory -> Zhengde Junior High School -> Dinghao -> North Tamsui -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

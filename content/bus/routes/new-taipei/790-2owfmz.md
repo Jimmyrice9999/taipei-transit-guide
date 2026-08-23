@@ -66,6 +66,22 @@ The confirmed stop sequence runs 54 stops from 金山(南勢), past 金山消防
 
 The full New Taipei route-service row publishes endpoints “金山-基隆”; published distance 54 km; service span Weekdays: 去程：0500-2200；返程：0550-2250; Holidays: 去程：0500-2200；返程：0550-2250; headway fields Weekdays: weekday peak 1520; weekday off-peak 3040; Holidays: holiday peak 1520; holiday off-peak 3040; fare 三段票 / 3 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 790; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**790 (54 stops):** Jinshan(Nanshih) -> Fire Department -> Jinshan Hospital -> Zhongzheng Rd -> Jinshan District Office -> JinShan -> Jinshan Post Office -> Ziqiang Rd Entrance -> Jiatou Village -> Tianhu Temple -> Dapeng Village -> Dapeng Elementary School -> Dingliao -> Taipower Exhibit Center in Northern Taiwan -> Guosheng Village -> Guoshengpu -> Gangxi -> Yeliu -> New Taipei City Ren-ai Senior Citizens’Home -> Xinkending Rd Entrance -> The Mustard Seed Mission Wanli Camp -> Yutian Rd -> Green Bay -> Meilun -> Wanli Beach -> Wanli District office -> Wanli Bridge -> Jingmei Village -> Brick Factory -> Zhongfu -> New Tiapei City Line(Wanli Dist) -> Keelung City Line(Jijin 3rd Rd) -> Neiliao -> Wusheng St Entrance -> Lijing Tianxia -> Shishan -> Dawulun Industry Park -> Sanceng Station -> Dawulun -> Jinshan Iron Stores -> Qingren Lake Entrance -> Wuling St Entrance -> Zhonglian Warehouse -> Xingliao -> Shipilai -> Yingge Village(Anyi Rd Entrance) -> No387 Anyi Rd -> Keelung City Ren-ai Senior Citizens’Home -> Anle Junior High School -> Anding Office -> Chongde Rd Entrance -> Anle Market -> NO31 Bridge -> Keelung Transit Station[^tdx-bus]
+
+**790 (57 stops):** Keelung Transit Station -> Chenghung Temple -> Xiao 2nd Rd -> Anle Market -> Gancheng Village -> Anding Office -> Anle Junior High School -> Keelung City Ren-ai Senior Citizens’Home -> Laborer Activity Center -> Yingge Village(Anyi Rd Entrance) -> Shipilai -> Xingliao -> Zhonglian Warehouse -> Dongfang Bali Community -> Wuling St Entrance -> Qingren Lake Entrance -> Jinshan Iron Stores -> Dawulun -> Sanceng Station -> Dawulun Industry Park -> Shishan -> Lijing Tianxia -> Wusheng St Entrance -> Neiliao -> Jieliao -> Keelung City Line(Jijin 3rd Rd) -> New Tiapei City Line(Wanli Dist) -> Zhongfu -> Brickfield -> Jingmei Village -> Wanli Bridge -> Wanli District office -> Wanli Beach -> Meilun -> Green Bay -> Yutian Rd -> Yingdi -> Xinkending Rd Entrance -> Keelung City Ren-ai Senior Citizens’ Home -> Yeliu -> Gangxi -> Guoshengpu -> Guosheng Village -> Taipower Exhibit Center in Northern Taiwan -> Dingliao -> Dapeng Elementary School -> Dapeng Village -> Tianhu Temple -> Jiatou Village -> Ziqiang Rd Entrance -> Jinshan Post Office -> JinShan -> Jinshan District Office -> Zhongzheng Rd -> Jinshan Hospital -> Fire Department -> Jinshan(Nanshih)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

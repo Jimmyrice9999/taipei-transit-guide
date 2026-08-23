@@ -58,6 +58,22 @@ street path through 社后 than plain 藍21 takes — before joining the same
 are recorded in the curated stop-ID join set: Nangang (BL22) and Taipei
 Nangang Exhibition Center, a Bannan–Wenhu interchange (BL23/BR24).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL21Sub; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL21 Sub (19 stops):** Shehou Fire Brigade -> LiMing Community -> Taipei Miracle -> Bokeli Day Care Center -> Shenghuo Daguo Community -> Kangfu Village -> Xingfu Village -> Daxizhi Department Stores -> Shehou Fire Brigade -> Nanyang St Entrance -> No371 Fude 2nd Rd -> Huanhe Community Center -> Nanyang St Postal Bureau -> Hengke -> MRT Nangang Exhibition Hall (Nangang Rd) -> Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Rail Sta[^tdx-bus]
+
+**BL21 Sub (17 stops):** Nangang Dist Admin Center(Nangang Rail Sta) -> Nangang Vocational High School (Nangang Rd) -> Nangang -> MRT Nangang Exhibition Hall (Nangang Rd) -> Hengke -> Nanyang St Postal Bureau -> Huanhe Community Center -> Nanyang St Entrance -> Shehou Fire Brigade -> Daxizhi Department Stores -> Xingfu Village -> Kangfu Village -> Shenghuo Daguo Community -> Bokeli Day Care Center -> Taipei Miracle -> LiMing Community -> Shehou Fire Brigade[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍21 remain TBC.[^tdx-bus] Whether 藍21副 is a later addition to relieve 藍21, a permanent alternative

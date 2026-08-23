@@ -66,6 +66,22 @@ The confirmed stop sequence runs 4 stops from 捷運景安站(景平路), past �
 
 The full New Taipei route-service row publishes endpoints “捷運景安站-三峽臺北大學”; published distance 34.4 km; service span Weekdays: 去程：0715-0715；返程：1700-1700; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for MRT Jingan Sta.-National Taipei University(Sanxia Campus); each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**MRT Jingan Sta-National Taipei University(Sanxia Campus) Go (4 stops):** MRT Jingan Sta(Jingping Rd) -> Shuangho Hospital -> University Xueqin intersection -> Sanxia Stop 2[^tdx-bus]
+
+**MRT Jingan Sta-National Taipei University(Sanxia Campus) Back (4 stops):** Sanxia Stop 2 -> University Xueqin intersection -> Shuangho Hospital -> MRT Jingan Sta(Jingping Rd)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

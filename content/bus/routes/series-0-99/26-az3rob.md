@@ -76,6 +76,22 @@ The weekday table lists seven departures: 0550, 0730, 0900, 1630, 1800, 1930
 and 2050; no interval-based headway figure is published on the page.[^ebus-26]
 The operator is Capital Bus Co., Ltd. (首都客運).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 26; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**26 (20 stops):** Shezi Elementary School 2 -> Shezi Elementary School -> Yonoglun Village (south) -> Shezi Police Substation -> Shezi Market2 -> Shezi Market -> Fugang St -> Chengde Rd Sec 4 -> Danan Rd Entrance -> Yuanshan Royal Building -> Jiantan Elementary School -> Minglun High School -> Kulun St Entrance -> Minzu and Chengde Intersection -> Datong Elementary School -> Minquan and Zhongshan Intersection -> MRT Zhongshan Elementary School Sta -> Minquan and Jilin Intersection -> MRT Xingtian Temple Sta (Songjiang Rd) -> ChangChun&SongJiang Intersection[^tdx-bus]
+
+**26 (22 stops):** Nanjing & Jilin Intersection -> Nanjing & Linsen Intersection -> MRT Zhongshan Sta (Zhiren High School) -> Jiancheng Park -> Minsheng W Rd Entrance -> Chengyuan High School -> National Tuberculosis Association -> Datong Elementary School -> Minzu and Chengde Intersection -> Kulun St Entrance -> Minglun High School -> Jiantan Elementary School -> Yuanshan Royal Building -> Danan Rd Entrance -> Shishang Rd -> Yangming High School -> Shezi Market -> Sheyuan Village -> Shezi Police Substation -> Yonoglun Village (south) -> Shezi Elementary School -> Yonglun Village (Yanping)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

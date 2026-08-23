@@ -64,6 +64,38 @@ route's own starting stretch.[^tdx-bus] TDX records five named
 direction/variant records for this service, distinguishing workings
 that detour via 紗帽馬場 or that reroute onto 東昇路 on either leg.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 10 directional or variant stop sequences for S25; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S25 (27 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Chyuan Du Vacation Hotel -> Beitou Green Library -> Atami Hotel -> Thermal Valley -> Yinguang Lane Entrance -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum -> Dahuangzui -> Dunxu High School of Industry and Commerce -> Longfenggu -> Dingbeitou -> Shamao Bridge 1st -> MeiHu -> Wucuo 1 (Hengling Historic Trail Entrance) -> Wucuo -> Hudi Rd No 20 -> Hudi Rd No 66 -> Liuku 1 -> Liuku[^tdx-bus]
+
+**S25 (25 stops):** Liuku 1 -> Hudi Rd No 66 -> Hudi Rd No 20 -> Wu Home -> MeiHu -> Shamao Bridge 1st -> Dingbeitou -> Longfenggu -> Dunxu High School of Industry and Commerce -> Dahuangzui -> Beitou Museum -> Dongsheng Rd Entrance -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Branch -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+**S25(Race) (27 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Chyuan Du Vacation Hotel -> Beitou Green Library -> Atami Hotel -> Thermal Valley -> Yinguang Lane Entrance -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum -> Dahuangzui -> Dunxu High School of Industry and Commerce -> Longfenggu -> Dingbeitou -> Shamao Bridge 1st -> MeiHu -> Wucuo 1 (Hengling Historic Trail Entrance) -> Wucuo -> Hudi Rd No 20 -> Hudi Rd No 66 -> Liuku 1 -> Liuku[^tdx-bus]
+
+**S25(Race) (30 stops):** Liuku 1 -> Hudi Rd No 66 -> Hudi Rd No 20 -> Wu Home -> MeiHu -> Shamao Bridge 1st -> Shamao Bridge -> Shuijingwei -> Shamao Race -> Shuijingwei -> Shamao Bridge -> Dingbeitou -> Longfenggu -> Dunxu High School of Industry and Commerce -> Dahuangzui -> Beitou Museum -> Dongsheng Rd Entrance -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Branch -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+**S25(Race) (29 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Chyuan Du Vacation Hotel -> Beitou Green Library -> Atami Hotel -> Thermal Valley -> Yinguang Lane Entrance -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum -> Dahuangzui -> Shuijingwei -> Shamao Bridge -> Dingbeitou -> Longfenggu -> Dingbeitou -> Shamao Bridge 1st -> MeiHu -> Wucuo 1 (Hengling Historic Trail Entrance) -> Wucuo -> Hudi Rd No 20 -> Hudi Rd No 66 -> Liuku 1 -> Liuku[^tdx-bus]
+
+**S25(Race) (25 stops):** Liuku 1 -> Hudi Rd No 66 -> Hudi Rd No 20 -> Wu Home -> MeiHu -> Shamao Bridge 1st -> Shamao Bridge -> Shuijingwei -> Dunxu High School of Industry and Commerce -> Dahuangzui -> Beitou Museum -> Dongsheng Rd Entrance -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Branch -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+**S25(Race) (27 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Chyuan Du Vacation Hotel -> Beitou Green Library -> Atami Hotel -> Thermal Valley -> Yinguang Lane Entrance -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum -> Dahuangzui -> Dunxu High School of Industry and Commerce -> Longfenggu -> Dingbeitou -> Shamao Bridge 1st -> MeiHu -> Wucuo 1 (Hengling Historic Trail Entrance) -> Wucuo -> Hudi Rd No 20 -> Hudi Rd No 66 -> Liuku 1 -> Liuku[^tdx-bus]
+
+**S25(Race) (25 stops):** Liuku 1 -> Hudi Rd No 66 -> Hudi Rd No 20 -> Wu Home -> MeiHu -> Shamao Bridge 1st -> Shamao Bridge -> Shuijingwei -> Dunxu High School of Industry and Commerce -> Dahuangzui -> Beitou Museum -> Dongsheng Rd Entrance -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Branch -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+**S25(Race) (29 stops):** Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Chyuan Du Vacation Hotel -> Beitou Green Library -> Atami Hotel -> Thermal Valley -> Yinguang Lane Entrance -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum -> Dahuangzui -> Shuijingwei -> Shamao Bridge -> Dingbeitou -> Longfenggu -> Dingbeitou -> Shamao Bridge 1st -> MeiHu -> Wucuo 1 (Hengling Historic Trail Entrance) -> Wucuo -> Hudi Rd No 20 -> Hudi Rd No 66 -> Liuku 1 -> Liuku[^tdx-bus]
+
+**S25(Race) (26 stops):** Liuku 1 -> Hudi Rd No 66 -> Hudi Rd No 20 -> Wu Home -> MeiHu -> Shamao Bridge 1st -> Shamao Bridge -> Shuijingwei -> Shamao Race -> Dunxu High School of Industry and Commerce -> Dahuangzui -> Beitou Museum -> Dongsheng Rd Entrance -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Beitou Market (Huanggang) -> Fuan Temple -> Shimen -> Qingjiang Branch -> MRT Qiyan -> Daxing St Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 5 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the specific pairing of 紗帽馬場 detours with 東昇路 reroutes across five separate named variants, rather than a single flexible working, was found in this search.

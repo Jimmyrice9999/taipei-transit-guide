@@ -58,6 +58,22 @@ service 0625–2250 run as a fixed 27-departure schedule across the day, a
 single-section fare (一段票), and 大都會客運萬芳站 as the service contact.[^ebus-0south]
 The TDX snapshot records a single subroute for this route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 0South; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**0-South (27 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> Wanli St Entrance -> Palm Spring Community -> Wen Shan Sports Center (Wanfang) -> Taiwan Police College -> MRT Wanfang Hospital Sta -> China University of Technology (Xinglong) -> Xinglong Elementary School -> Xingde Elementary School -> Xinglong Market -> Chingshin Academy -> Xianguang Apartment -> Jingming St Entrance -> Changan Elementary School (Xinglong) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> National Taiwan U -> NTU Sports Center -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> Jinshan Chaozhou St Intersection -> Center for Public & Business Administration Education -> MRT Dongmen Sta (Jinshan)[^tdx-bus]
+
+**0-South (25 stops):** Xinyi & Yongkang Intersection (MRT Dongmen Sta) -> Jinhua and Xinsheng Intersection -> Heping and Xinsheng Intersection -> Longan Elementary School (Civil Service Development Institute) -> NTU Sports Center -> National Taiwan U -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Changan Elementary School (Xinglong) -> Jingming St Entrance -> Xianguang Apartment -> Chingshin Academy -> Xinglong Market -> Xingde Elementary School -> Xinglong Elementary School -> MRT Wanfang Hospital Sta -> Taiwan Police College -> Wen Shan Sports Center (Wanfang) -> Palm Spring Community -> Wanli St Entrance -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length

@@ -60,6 +60,26 @@ route runs a single subroute under one operator, 首都客運, over a
 noticeably shorter stop count than plain 紅7's own 21-23 stop
 sequence.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for R7Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R7Section (12 stops):** Yonglun Village (Shezhong) -> Yongping St Entrance -> Shezi Park -> Cathay Life Insurance Building -> Shezheng Rd -> Shezi Market -> Yangming High School -> Shilin Admin Center -> Shilin Jr High School -> Shilin Elementary School -> Xiaobei St -> MRT Jiantan Sta (Zhongshan)[^tdx-bus]
+
+**R7Section (13 stops):** MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Xiaobei St -> Shilin Farmers Assn -> Shilin Jr High School -> Shilin Admin Center -> Yangming High School -> Shezi Market -> Shezheng Rd -> Cathay Life Insurance Building -> Shezi Park -> Yongping St Entrance -> Yonglun Village (Shezhong)[^tdx-bus]
+
+**R7S (12 stops):** Yonglun Village (Shezhong) -> Yongping St Entrance -> Shezi Park -> Cathay Life Insurance Building -> Shezheng Rd -> Shezi Market -> Yangming High School -> Shilin Admin Center -> Shilin Jr High School -> Shilin Elementary School -> Xiaobei St -> MRT Jiantan Sta (Zhongshan)[^tdx-bus]
+
+**R7S (13 stops):** MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Xiaobei St -> Shilin Farmers Assn -> Shilin Jr High School -> Shilin Admin Center -> Yangming High School -> Shezi Market -> Shezheng Rd -> Cathay Life Insurance Building -> Shezi Park -> Yongping St Entrance -> Yonglun Village (Shezhong)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅7區 or its

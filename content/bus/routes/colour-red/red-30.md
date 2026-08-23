@@ -58,6 +58,22 @@ confirmed interchange is recorded in the curated stop-ID join set: Jiantan
 (R15), matching the route's own terminus.[^tdx-bus] The route runs a
 single subroute under one operator, 中興巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R30; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R30 (23 stops):** National Palace Museum (I) -> Gugong Rd Entrance -> CMPC Movie City -> Soochow University -> Meilin New Village -> Shuangxi Park -> Taibei High School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Fulin Elementary School -> MRT Shilin Sta (Zhongzheng) -> Shilin Jr High School -> Taipei Astronomical Museum -> National Taiwan Science Education Center -> Shilin High School of Commerce -> Yangming High School -> Shilin Motor Vehicles Office -> Taipei Children's Amusement Park -> Shilin High School of Commerce -> Shilin Admin Center -> Shilin Admin Center -> Civil Service Housing -> Shilin Market (Ming Chuan Hostel) -> MRT Jiantan Sta (Zhongshan)[^tdx-bus]
+
+**R30 (19 stops):** MRT Jiantan Sta (Taipei Performing Arts Center) -> Shilin Market (Ming Chuan Hostel) -> Civil Service Housing -> Shilin Admin Center -> Yangming High School -> Shilin Motor Vehicles Office -> Taipei Children's Amusement Park -> Shilin High School of Commerce -> Shilin Admin Center -> Shilin Jr High School -> MRT Shilin Sta (Zhongzheng) -> Fulin Elementary School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Taibei High School -> Shuangxi Park -> Meilin New Village -> Soochow University -> Waishuangxi -> National Palace Museum (I)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅30 was found

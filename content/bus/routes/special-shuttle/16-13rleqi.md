@@ -64,6 +64,26 @@ sometimes omits.[^tdx-bus] TDX records four named direction/variant
 records for this service under one operator, 欣欣客運, distinguishing
 the full working from the shorter one that skips 南港展覽館.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for CB16; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**CB16 (4 stops):** MRT Nangang Exhibition Center Sta (Jingmao 2) -> MRT Nangang Sta -> National Biotechnology Research Park -> National Biotechnology Research Park[^tdx-bus]
+
+**CB16 (4 stops):** National Biotechnology Research Park -> National Biotechnology Research Park -> MRT Nangang Exhibition Center Sta (Jingmao 2) -> MRT Nangang Sta[^tdx-bus]
+
+**CB16 (3 stops):** MRT Nangang Sta -> National Biotechnology Research Park -> National Biotechnology Research Park[^tdx-bus]
+
+**CB16 (3 stops):** National Biotechnology Research Park -> National Biotechnology Research Park -> MRT Nangang Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 4 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for two workings differing only in whether they touch 南港展覽館 on such a short corridor.

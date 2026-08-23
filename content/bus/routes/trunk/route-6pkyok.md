@@ -65,6 +65,22 @@ TDX records it as a single subroute run by a single operator, 欣欣客運,
 across its full 39-stop outbound and 41-stop return sequence, with no
 recorded holiday-specific or half-working variant.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Roosevelt Rd. Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Roosevelt Rd Metro Bus (39 stops):** MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station -> Wanshou Bridge (Xinguang) -> Wanshou Bridge (Xiuming) -> Wanxing Elementary School -> National Chengchi U 1 -> Xinguang Rd Entrance -> Zhinan Rd -> Muzha Market -> Muzha -> Wenshan Police Sta 1 -> Mamingtan (Zaixing High School) -> Xinglong Shanzhuang -> Coast Guard Administration 1 -> Coast Guard Administration -> Wenshan Sports Center (Xinglong) -> Taiwan Police College -> MRT Wanfang Hospital Sta -> China University of Technology (Xinglong) -> Xinglong Elementary School -> Xingde Elementary School -> Xinglong Market -> Chingshin Academy -> Xianguang Apartment -> Jingming St Entrance -> Changan Elementary School (Xinglong) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> Taipower Building -> MRT Taipower Building Sta -> Roosevelt and Pucheng Intersection -> Roosevelt and Kinmen St Intersection -> MRT Guting Sta (Roosevelt) -> Roosevelt and Chaozhou Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> Taipei First Girls High School (Gongyuan) -> MRT NTU Hospital Station -> Taiwan Museum (Guanqian) -> Taipei Main Sta (Kaifeng)[^tdx-bus]
+
+**Roosevelt Rd Metro Bus (41 stops):** Chongqing S Road Sec 1 -> Taiwan Museum (Xiangyang) -> MRT NTU Hospital Station -> Taipei First Girls High School (Gongyuan) -> Affiliated Experimental Elementary School of University of Taipei -> MRT Chiang Kai-Shek Memorial Hall -> Roosevelt and Chaozhou Intersection -> MRT Guting Sta (Roosevelt) -> Roosevelt and Kinmen St Intersection -> Roosevelt and Pucheng Intersection -> MRT Taipower Building Sta -> Taipower Building -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Changan Elementary School (Xinglong) -> Jingming St Entrance -> Xianguang Apartment -> Chingshin Academy -> Xinglong Market -> Xingde Elementary School -> Xinglong Elementary School -> MRT Wanfang Hospital Sta -> Taiwan Police College -> Wenshan Sports Center (Xinglong) -> Coast Guard Administration -> Coast Guard Administration 1 -> Xinglong Shanzhuang -> Mamingtan (Zaixing High School) -> Wenshan Police Sta 1 -> Muzha -> Muzha Market -> Yongan St -> Zhinan Rd Entrance -> National Chengchi University -> National Chengchi U 1 -> Wanxing Library -> Tacheng High School -> Wanshou Bridge (Xiuming) -> Wanshou Bridge (Xinguang) -> Maokong Gondola Taipei Zoo Station -> MRT Taipei Zoo Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

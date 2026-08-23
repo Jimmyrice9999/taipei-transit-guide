@@ -61,6 +61,26 @@ interchange is recorded in the curated stop-ID join set: Zhishan
 (R17), confirmed roughly midway along the route's own corridor.[^tdx-bus] TDX records three direction/variant records for this
 service under two operators, 光華巴士 and 中興巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BS1; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BS1 (13 stops):** Taipei Vocational Development Institute 2 -> Shidong Rd -> Tianmu Baseball Stadium -> Lanya Junior High School -> Dexing and Zhongcheng Intersection -> Zhongyi New Village -> Shiyou New Village -> Shilin Electric and Engineering Corp (Zhongshan & Dexing Rd Intersection) -> MRT Zhishan Sta (Fuguo) -> CTCI Second Headquarters -> FuMei ChengPing Intersection -> Sanwang Temple -> Fu Mei Stop[^tdx-bus]
+
+**BS1 (14 stops):** Fu Mei Stop -> Sanwang Temple -> FuMei ChengPing Intersection -> Farglory Ark Building -> CTCI Second Headquarters -> MRT Zhishan Sta (Fuhua) -> Zhongshan N Rd Entrance (Dexing) -> Shiyou New Village -> Zhongyi New Village -> Dexing and Zhongcheng Intersection -> Lanya Junior High School -> Tianmu Baseball Stadium -> Shidong Rd -> Taipei Vocational Development Institute 2[^tdx-bus]
+
+**BS1 (13 stops):** Taipei Vocational Development Institute 2 -> Shidong Rd -> Tianmu Baseball Stadium -> Lanya Junior High School -> Dexing and Zhongcheng Intersection -> Zhongyi New Village -> Shiyou New Village -> Shilin Electric and Engineering Corp (Zhongshan & Dexing Rd Intersection) -> MRT Zhishan Sta (Fuguo) -> CTCI Second Headquarters -> FuMei ChengPing Intersection -> Sanwang Temple -> Fu Mei Stop[^tdx-bus]
+
+**BS1 (14 stops):** Fu Mei Stop -> Sanwang Temple -> FuMei ChengPing Intersection -> Farglory Ark Building -> CTCI Second Headquarters -> MRT Zhishan Sta (Fuhua) -> Zhongshan N Rd Entrance (Dexing) -> Shiyou New Village -> Zhongyi New Village -> Dexing and Zhongcheng Intersection -> Lanya Junior High School -> Tianmu Baseball Stadium -> Shidong Rd -> Taipei Vocational Development Institute 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 士東路 with 北士科 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming only one interchange despite passing close to both Zhishan and Shilin on its own corridor.

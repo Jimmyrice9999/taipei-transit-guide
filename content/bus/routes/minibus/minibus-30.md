@@ -63,6 +63,22 @@ route's own starting stretch.[^tdx-bus] The route runs a single
 subroute under one operator, 東南客運, weekdays only with holiday
 service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S30; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S30 (26 stops):** Fude -> Xiangtoupu -> Wanfu Bridge -> Shibikeng -> Fengdongshi -> Bojia Elementary School -> Jungong New Village -> Wanfang Community (Heping) -> Heping Rd -> Mingmen Community -> Wolong New Village -> Dawoxinshe -> Linguang -> Wolong and Fuyang  Intersection -> Leye St -> Liming Social Education Center -> Fangfe Junior High School -> Taipei Water Department -> Fanglan Rd -> Fanglan -> NTU Cancer Center -> NTU Cancer Center(Keelung Rd) -> NTUST -> Gongguan -> Treasure Hill -> Water Museum (Dormitory of Prince)[^tdx-bus]
+
+**S30 (27 stops):** Water Museum (Dormitory of Prince) -> Treasure Hill -> Gongguan -> NTUST -> NTU Hospital Gongguan Branch -> NTU Cancer Center -> Fanglan -> Fanglan Rd -> Taipei Water Department -> National Center for Research on Earthquake Engineering -> Fangfe Junior High School -> Liming Social Education Center -> Leye St -> Wolong and Fuyang  Intersection -> Linguang -> Dawoxinshe -> Wolong New Village -> Mingmen Community -> Heping Rd -> Wanfang Community (Heping) -> Jungong New Village -> Bojia Elementary School -> Fengdongshi -> Shibikeng -> Wanfu Bridge -> Xiangtoupu -> Linguang Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 木柵路五段 with the water-museum terminus specifically, rather than a nearer campus stop.

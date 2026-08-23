@@ -65,6 +65,26 @@ starting stretch, the same pair confirmed for the neighbouring 小7,
 TDX records two named subroutes distinguishing whether a working
 detours via 永春橋/茄苳樹下 on its return leg.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for S6; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S6 (32 stops):** Zhiyuan New Village -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Youhua High School (Daye) -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Zhonghe St -> Fuxing High School -> Trust Baptist Church -> Fuxing High School -> No 100 Fuxing 4rd Rd -> Windsor Castle -> Anguo Temple -> Pineapple House -> Little White House Village -> Shuibiantou Fude Temple -> Cukeng -> Datun Elementary School -> Wu Family Shrine -> Fuxing 3rd Rd Lane 355 Entrance -> GuanSheng Temple -> Dawan -> Touqianlun -> No 463 Fuxing 3rd Rd -> AnXiLiao -> Qingtian Temple[^tdx-bus]
+
+**S6 (31 stops):** Qingtian Temple -> AnXiLiao -> No 463 Fuxing 3rd Rd -> Touqianlun -> Dawan -> GuanSheng Temple -> Fuxing 3rd Rd Lane 355 Entrance -> Wu Family Shrine -> Datun Elementary School -> Cukeng -> Shuibiantou Fude Temple -> Little White House Village -> Pineapple House -> Anguo Temple -> Windsor Castle -> No 100 Fuxing 4rd Rd -> Fuxing High School -> Trust Baptist Church -> Fuxing High School -> Zhonghe St -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Zhiyuan New Village[^tdx-bus]
+
+**S6 (32 stops):** Zhiyuan New Village -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Youhua High School (Daye) -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Zhonghe St -> Fuxing High School -> Trust Baptist Church -> Fuxing High School -> No 100 Fuxing 4rd Rd -> Windsor Castle -> Anguo Temple -> Pineapple House -> Little White House Village -> Shuibiantou Fude Temple -> Cukeng -> Datun Elementary School -> Wu Family Shrine -> Fuxing 3rd Rd Lane 355 Entrance -> GuanSheng Temple -> Dawan -> Touqianlun -> No 463 Fuxing 3rd Rd -> AnXiLiao -> Qingtian Temple[^tdx-bus]
+
+**S6 (33 stops):** Qingtian Temple -> AnXiLiao -> No 463 Fuxing 3rd Rd -> Touqianlun -> Dawan -> GuanSheng Temple -> Fuxing 3rd Rd Lane 355 Entrance -> Wu Family Shrine -> Datun Elementary School -> Cukeng -> Yongchun Bridge -> Bischofia Javanica -> Shuibiantou Fude Temple -> Little White House Village -> Pineapple House -> Anguo Temple -> Windsor Castle -> No 100 Fuxing 4rd Rd -> Fuxing High School -> Trust Baptist Church -> Fuxing High School -> Zhonghe St -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Zhiyuan New Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 北投 with 清天宮 specifically as the route's own termini was found in this search, nor a stated reason for the specific 永春橋/茄苳樹下 detour existing on only one leg of the round trip.

@@ -66,6 +66,22 @@ The confirmed stop sequence runs 55 stops from 四海站, past 少年觀護所, 
 
 The full New Taipei route-service row publishes endpoints “宏國德霖科技大學-捷運江子翠站”; published distance 29.3 km; service span Weekdays: 去程：0600-1800；返程：0600-1800; Holidays: 去程： - ；返程： -; fare 一段票 / 1 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 657Ext; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**657sub (55 stops):** Sihai Stop -> Juvenile Detention and Classification House -> Qinghua Village -> Hungkuo Delin University of Technology -> Qinghe Village -> Qingshan Rd -> Renai Rd Entrance -> Shu Shin Bou Wagashi Museum -> Qingshui Junior High School -> Mingde Rd -> Yongfeng Rd Entrance -> Pinghe Village -> Yanhe Community Park -> Yanhe Rd -> Anhe Elementary School -> Detention Center -> Sibiantou -> Yihua Textile -> Xinyi Rd -> Old Banqiao Sta -> Chongqing Elementary School -> Wuquan St Entrance -> Shoude New Village -> Chongqing Junior High School -> Chongqing & Zhongxiao Rd Intersection -> Zhongxiao Rd -> Zhongxing Hospital -> Fuxing Village -> Xiangyun Village -> Old Banqiao Sta Shopping Circle -> Jieshou Park -> Minzu & Quyun Intersection -> Telecommunications Training Center -> Guotai St Entrance -> Hanmin Rd -> Haishan High School -> Hansheng Rd -> Xianmin Blvd Intersection -> Xinmin Village -> Zhongshan Junior High School -> Chihlee University of Technology -> MRT Xinpu Sta -> MRT Xinpu Minsheng Sta -> Dahan Bridge -> Changjiang Rd Entrance -> Huajiang 9th Rd Entrance -> Xitou Park -> Huajiang 6th Rd Entrance -> Zhihui Park -> Huajiang 2nd Rd Entrance -> Huajiang 3rd Rd -> Lunyi Drivi -> Huajiang Bridge -> Jiangcui Elementary School(Wenhua Rd) -> MRT Jiangzicui Sta[^tdx-bus]
+
+**657sub (42 stops):** Jiangcui Junior High School -> MRT Xinpu Sta(Wenhua Rd) -> Chihlee University of Technology -> Zhongshan Junior High School -> Xinmin Village -> Xianmin Blvd Intersection -> Hansheng Rd -> Haishan High School -> Haishan Elementary School -> Hanmin Rd -> Guotai St Entrance -> Telecommunications Training Center -> Minzu & Quyun Intersection -> Banqiao Bus Terminal Extension -> Old Banqiao Sta Shopping Circle -> Xiangyun Village -> Fuxing Village -> Zhongxing Hospital -> Zhongxiao Rd -> Chongqing & Zhongxiao Rd Intersection -> Chongqing Junior High School -> Wuquan St Entrance -> Chongqing Elementary School -> Old Banqiao Sta -> Yihua Textile -> Sibiantou -> Detention Center -> Anhe Elementary School -> Yanhe Rd -> Yanhe Community Park -> Pinghe Village -> Yongfeng Rd Entrance -> Mingde Rd -> Qingshui Junior High School -> Shu Shin Bou Wagashi Museum -> Renai Rd Entrance -> Qingshan Rd -> Qinghe Village -> Hungkuo Delin University of Technology -> Qinghua Village -> Juvenile Detention and Classification House -> Sihai Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

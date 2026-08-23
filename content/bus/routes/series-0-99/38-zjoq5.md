@@ -62,6 +62,22 @@ literally named 捷運龍山寺站, then through Zhongzheng past 捷運小南門
 站.[^tdx-bus] None of these four literally-named MRT stops is in the
 curated stop-ID join set as a confirmed interchange for this route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 38; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**38 (23 stops):** Rongde Village -> Donglong Temple -> Hede Village -> Huannan Market -> General Market -> Dali High School -> Huajiang Police Station -> China Times -> MRT Longshan Temple Sta -> Longshan Junior High School -> Xiaonanmen(TCUH,Heping Branch) -> Xiaonanmen(TCUH,Heping Branch) -> Nanmen -> Taipei Water Dept West District Business Office (Ningbo) -> TCUH Branch of Women and Children 1 -> Chaozhou St Entrance -> Aiguo East Rd Entrance -> Jinou Girls High School -> MRT Dongmen Sta -> Xinyi & Yongkang Intersection (MRT Dongmen Sta) -> Xinyi & Xinsheng Intersection -> MRT Daan Park Sta -> Daan Public Housing[^tdx-bus]
+
+**38 (16 stops):** MRT Daan Park Sta -> Xinyi & Xinsheng Intersection -> XinYi-YongKang Intersection -> MRT Dongmen Sta -> Xinyi & Hangzhou Intersection -> CKS Memorial Hall -> Taipei First Girls High School (Guiyang) -> Soochow U Downtown Campus -> Xiaonanmen(TCUH,Heping Branch) -> Guilin and Kunming Intersection -> Guilin Rd -> Longshan Temple (Xiyuan) -> China Times -> Huajiang Police Station -> Dali High School -> General Market[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

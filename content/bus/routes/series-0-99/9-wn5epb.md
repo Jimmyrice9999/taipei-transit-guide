@@ -65,6 +65,22 @@ then through 捷運西門站 and 小南門 to end at 龍山寺(康定) in Wanhua
 None of these three literally-named MRT stops is in the curated stop-ID
 join set as a confirmed interchange for this route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 9; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**9 (28 stops):** Shezi Elementary School -> Yonoglun Village (south) -> Shezi Police Station -> Shezi Market2 -> Shezi Market -> Hulu Temple (Hulu Village) -> Huludu Market -> Haiguang New Village -> SheZi Fire Squad -> Sewage Treatment Plant -> Laoshi Village -> Jiuquan St -> Minzu and Chongqing Intersection -> Changji & Chongqing Intersection -> MRT Daqiaotou Sta -> Liangzhou and Chongqing Intersection -> Baoan St Entrance -> Minsheng W Rd Entrance (Dadaocheng Dock) -> Nanjing W Rd Entrance (Button St) -> Nanjing W Rd Entrance (Tacheng) -> TCUH Zhongxin Branch (Tacheng) -> MRT Beimen Station -> Zhonghua Rd N Stop -> MRT Ximen Sta -> Xiaonanmen -> Longshan Junior High School -> Kunming St Entrance -> Longshan Temple (Kangding)[^tdx-bus]
+
+**9 (30 stops):** Zushi Temple (Kangding) -> Changsha St -> MRT Ximen Sta -> Zhonghua Rd N Stop -> MRT Beimen Station -> Nanjing W Rd Entrance (Tacheng) -> Nanjing W Rd Entrance (Button St) -> Minsheng W Rd Entrance (Dadaocheng Dock) -> Baoan St Entrance -> Liangzhou and Chongqing Intersection -> MRT Daqiaotou Sta -> Changji & Chongqing Intersection -> Minzu and Chongqing Intersection -> Lanzhou Junior High School -> Minzu and Chengde Intersection -> Kulun St Entrance -> Dalongtong Baoan Temple -> Jiuquan and Chongqing Intersection -> Jiuquan St -> Laoshi Village -> Sewage Treatment Plant -> SheZi Fire Squad -> Haiguang New Village -> Huludu Market -> Hulu Temple (Hulu Village) -> Shezi Market -> Sheyuan Village -> Shezi Police Station -> Yonoglun Village (south) -> Shezi Elementary School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the stop and geometry records; route length and

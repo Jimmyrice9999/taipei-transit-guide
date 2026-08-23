@@ -66,6 +66,22 @@ The confirmed stop sequence runs 36 stops from 林口站, past 竹林山觀音�
 
 The full New Taipei route-service row publishes endpoints “林口站-臺北車站(鄭州)”; published distance 59.3 km; service span Weekdays: 去程：0530-2230；返程：0530-2230; Holidays: 去程：0530-2230；返程：0530-2230; headway fields Weekdays: weekday peak 0510; weekday off-peak 1015; Holidays: holiday peak 0510; holiday off-peak 1015; fare 二段票 / 2 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 966; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**966 (36 stops):** Linkou Stop -> Zhulinshan Temple -> Xiangcun Villa Community -> Oufeng Dajie Community -> Linkou Farmers' Association -> Linkou -> Hsing Wu University -> Fenliao Rd -> Xinsheng St Entrance -> RenaiLijing -> LinkouDistOffice -> Songbolu -> Renai & Donghu Intersection -> Linkou High School -> Sports Park -> Liyuan 1st St -> Liyuan 1st St(Dongshi Market) -> Liyuan Elementary School -> Zhongxiao Rd Entrance(C) -> Zhongxiao Rd Entrance B -> Linkou Mitsui Outlet Park -> Andun Community -> Wenhua 2nd Rd Sec 1 Post Office -> Highness Hotel -> Medical Building -> Chang-Gung Memorial Hospital -> FreewayBureau -> Taipei School for the Hearing Impaired -> Jiuquan and Chongqing Intersection -> Dalongtong Baoan Temple -> Kulun St -> Kulun St Entrance -> Minzu and Chengde Intersection -> Datong Elementary School -> Cheng Yuan High School -> Minsheng W Rd Entrance[^tdx-bus]
+
+**966 (37 stops):** Taipei Main Sta (Zhengzhou) -> Old Taipei Railway Sta -> Taipei Circle (Chongqing) -> Minsheng and Chongqing Intersection -> Liangzhou and Chongqing Intersection -> MRT Daqiaotou Sta -> Changji & Chongqing Intersection -> Minzu and Chongqing Intersection -> Jiuquan Chongqing Road Intersection -> Taipei School for the Hearing Impaired -> Taiwan Area National Freeway Bureau -> Chang-Gung Memorial Hospital -> Medical Building -> Highness Hotel -> Wenhua 2nd Rd Sec 1 Post Office -> Andun Community -> Linkou Mitsui Outlet Park -> Zhongxiao Rd Entrance B -> Zhongxiao Rd Entrance(C) -> Liyuan Elementary School -> Liyuan 1st St(Dongshi Market) -> Liyuan 1st -> Sports Park -> Linkou High School -> Renai & Donghu Intersection -> Songbolu -> LinkouDistOffice -> RenaiLijing -> Xinsheng St Entrance -> Fenliao Rd -> Hsing Wu University -> Linkou -> Linkou Farmers' Association -> Oufeng Dajie Community -> Xiangcun Villa Community -> Zhulinshan Temple -> Linkou Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-rapid][^ntpc-transport]

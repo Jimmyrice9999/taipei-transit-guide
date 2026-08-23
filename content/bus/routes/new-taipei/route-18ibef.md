@@ -66,6 +66,20 @@ The confirmed stop sequence runs 5 stops from 沙崙國小(篤行路), past 崑�
 
 The full New Taipei route-service row publishes endpoints “沙崙國小(篤行路)-捷運亞東醫院站”; published distance 3.3 km; service span Weekdays: 去程：0640-0640；返程：0640-0640; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for Shalun Elementary School(Duxing Rd.)-MRT Far Eastern Hospital Sta.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Shalun Elementary School(Duxing Rd)-MRT Far Eastern Hospital Sta (5 stops):** Shalun Elementary School(Duxing Rd) -> Kunlun Village -> Shalun Village -> Oriental University of Science & Technology(Nanya S Rd) -> MRT Far Eastern Hospital Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

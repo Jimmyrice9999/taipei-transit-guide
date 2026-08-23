@@ -66,6 +66,22 @@ outbound and 30-stop return workings run close to symmetric, unlike several
 other routes in this batch whose two directions differ by a wider
 margin.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O19; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O19 (31 stops):** Wugu Sta -> Luguang Public Housing I -> Luguang Public Housing -> Wufu Community -> Community Activity Center -> Yongfeng International Bank -> Zhouzi Bridge -> Chengtai Rd Sec 3 -> Kengkou -> Zhouzih(Wugu Household Registration Office) -> Chenggong Village -> Xiyun Temple(Wugu Civil Sports Center) -> Wufuqiansui -> Chengzhou Elementary School -> Wugu Post Office -> XinXing Apartment -> Huiyao -> MRT Luzhou Sta -> Minzu Rd Entrance -> National Open Univ(Sanmin Rd) -> MRT Sanmin Senior High School -> Luzhou District Office -> Lujiang Elementary School(Sanmin Rd) -> XiQian -> MRT St Ignatius High School -> Nicaragua Park -> Jixian Rd -> Wuhua St Entrance -> Carrefour -> Fenziwei -> New Taipei Senior High School[^tdx-bus]
+
+**O19 (30 stops):** Jisian Rd Intersection -> Nature Park -> Jixian Rd -> Nicaragua Park -> MRT St Ignatius High School Station -> Minhe Apartment(MRT St Ignatius High School Station) -> XiQian -> Lujiang Elementary School(Sanmin Rd) -> MRT Sanmin Senior High School -> Sanmin High School -> National Open Univ(Sanmin Rd) -> Minzu Rd Entrance -> MRT Luzhou Sta -> Huiyao -> Xinxing Apartment -> Wugu Post Office -> Chengzhou Elementary School -> Wufuqiansui -> Xiyun Temple(Wugu Civil Sports Center) -> Chenggong Village -> Zhouzih(Wugu Household Registration Office) -> Kengkou -> Chengtai Rd Sec 3 -> Zhouzi Bridge -> Yongfeng International Bank -> Community Activity Center -> Wufu Community -> Luguang Public Housing -> Luguang Public Housing I -> Wugu Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 橘19副 remain TBC.[^tdx-bus]

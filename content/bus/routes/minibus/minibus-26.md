@@ -64,6 +64,22 @@ stretch, the same pair confirmed for the neighbouring 小6, 小7 and 小9
 family over an overlapping Beitou-area corridor.[^tdx-bus] The route
 runs a single subroute under one operator, 大南汽車.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S26; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S26 (30 stops):** Zhiyuan New Village -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Youhua High School (Daye) -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Overseas Chinese Hotel -> Yaxuyuan -> Yuanzhixiang -> Postal Service Training Center -> Bashengyuan -> Shangbeitou -> Quanyuan Bieshu -> Mituo Temple (Sulfur Valley) -> Datong House -> Shibafeng Fude Temple -> Shibafen -> Quanyuan Elementary School -> Dormitory of Quanyuan Elementary School -> Hongshixia -> Wuweilun -> Fengwei -> Dinghu Activity Center -> Dinghu[^tdx-bus]
+
+**S26 (30 stops):** Dinghu -> Dinghu Activity Center -> Fengwei -> Wuweilun -> Hongshixia -> Dormitory of Quanyuan Elementary School -> Quanyuan Elementary School -> Shibafen -> Quanyuan 3rd Bridge -> Shibafeng Fude Temple -> Datong House -> Mituo Temple (Sulfur Valley) -> Quanyuan Bieshu -> Shangbeitou -> Bashengyuan -> Postal Service Training Center -> Yuanzhixiang -> Yaxuyuan -> Overseas Chinese Hotel -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Zhiyuan New Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for terminating at 頂湖 rather than continuing further up the same hillside as the neighbouring 小8 and 小9, both of which extend past 頂湖 into Yangmingshan itself, was found in this search.

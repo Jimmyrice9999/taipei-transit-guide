@@ -60,6 +60,22 @@ stop-ID join set: Songshan (G19), matching the route's own terminus.[^tdx-bus] T
 華巴士 and 中興巴士, weekdays only with holiday service suspended
 entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for NH8; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH8 (13 stops):** Songshan Rail Sta -> Zhoumei Village 1 -> Tanmei Elementary School (Jiuzong) -> Xinhu and Jiuzong Intersection -> Unitech Building -> Xinhu and Xingshan Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop[^tdx-bus]
+
+**NH8 (14 stops):** Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Xinhu and Xingshan Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu and Jiuzong Intersection -> Tanmei Elementary School (Jiuzong) -> Zhoumei Village 1 -> Songshan Rail Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 松山車站 with the Neihu Science Park specifically as the route's own termini, distinct from the several other Songshan-Neihu shuttles in this batch, was found in this search.

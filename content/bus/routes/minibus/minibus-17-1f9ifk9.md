@@ -61,6 +61,26 @@ ending at 新安里, distinct from the 菁山/擎天崗-bound corridor shared by
 小15, 小15區 and 小15區預. TDX records two named subroutes distinguishing
 whether a working detours via 莊頂.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for S17; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S17 (33 stops):** MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Shilin Police Precinct -> Shilin Farmers' Assn -> MRT Shilin Sta (Zhongzheng) -> Fulin Elementary School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Taibei High School -> Yanshan Village -> Yanshan Village 1 -> Zhilan New Village -> Huaxing High School -> Lingtou -> Bazaipu -> Yongling -> Yongfu (The Lin Yutang House) -> Yang Ming Home for the Disabled -> Fuyin -> Yangmingshan Elementary School -> Xinan Rd 1 -> Shuiqian -> Juan New Village -> Meeting Hall -> Xinan Rd 2 -> Xinan Rd 3 -> Xinan Rd 4 -> Xinan Rd 5 South Sta -> Xinan Rd 5 -> Xinan Rd 6 -> Xinan Rd 7 -> XinxianVillage West Station -> XinxianVillage Middle Station -> Shiaogengliao[^tdx-bus]
+
+**S17 (27 stops):** Xinan Village -> Xinan Rd 5 -> Xinan Rd 4 -> Xinan Rd 3 -> Xinan Rd 2 -> Meeting Hall -> Juan New Village -> Shuiqian -> Xinan Rd 1 -> Yangmingshan Elementary School -> Fuyin -> Yang Ming Home for the Disabled -> Yongfu (The Lin Yutang House) -> Yongling -> Bazipu -> Lingtou -> Huaxing High School -> Zhilan New Village -> Yanshan Village 1 -> Yanshan Village -> Taibei High School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Fulin Elementary School -> MRT Shilin Sta (Zhongzheng) -> Shilin Elementary School -> Shilin Police Precinct -> MRT Jiantan Sta (Zhongshan)[^tdx-bus]
+
+**S17-Zhuangding (34 stops):** MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Shilin Police Precinct -> Shilin Farmers' Assn -> MRT Shilin Sta (Zhongzheng) -> Fulin Elementary School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Taibei High School -> Yanshan Village -> Yanshan Village 1 -> Zhilan New Village -> Huaxing High School -> Lingtou -> Bazaipu -> Yongling -> Yongfu (The Lin Yutang House) -> Yang Ming Home for the Disabled -> Zifu Temple -> Fuyin -> Yangmingshan Elementary School -> Xinan Rd 1 -> Shuiqian -> Juan New Village -> Meeting Hall -> Xinan Rd 2 -> Xinan Rd 3 -> Xinan Rd 4 -> Xinan Rd 5 South Sta -> Xinan Rd 5 -> Xinan Rd 6 -> Xinan Rd 7 -> XinxianVillage West Station -> XinxianVillage Middle Station -> Shiaogengliao[^tdx-bus]
+
+**S17-Zhuangding (27 stops):** Xinan Village -> Xinan Rd 5 -> Xinan Rd 4 -> Xinan Rd 3 -> Xinan Rd 2 -> Meeting Hall -> Juan New Village -> Shuiqian -> Xinan Rd 1 -> Yangmingshan Elementary School -> Fuyin -> Yang Ming Home for the Disabled -> Yongfu (The Lin Yutang House) -> Yongling -> Bazipu -> Lingtou -> Huaxing High School -> Zhilan New Village -> Yanshan Village 1 -> Yanshan Village -> Taibei High School -> Chiang Kai-Shek Shilin Residence (Zhongzheng) -> Fulin Elementary School -> MRT Shilin Sta (Zhongzheng) -> Shilin Elementary School -> Shilin Police Precinct -> MRT Jiantan Sta (Zhongshan)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運劍潭站 with 新安里 specifically as the route's own termini was found in this search, nor a stated reason for confirming the same two stations as several unrelated Shilin-area minibus routes despite each running a distinct hillside corridor.

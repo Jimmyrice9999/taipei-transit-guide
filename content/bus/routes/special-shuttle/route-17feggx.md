@@ -61,6 +61,20 @@ consistent with its own corridor running entirely within the Maokong
 hillside, well away from any rail line.[^tdx-bus] The route runs a
 single subroute under one operator, 欣欣客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for Maokong Right; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Maokong Right (11 stops):** Maokong Gondola Stop -> Shipokeng -> Tianliao Bridge -> North Entrance of Camphor Tree Trail -> Zhangshan Temple -> Wangyuan Pavilion (Laoquan Village) -> Xinghualin (Laoquan Village) -> South Entrance of Camphor Tree Trail -> Wacuo -> Zhanghu Hiking Trail -> Maokong Gondola Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing this route's own loop with the separate 貓空左線(動物園) and 貓空左線(指南宮), rather than a single combined Maokong shuttle serving all three destinations from one shared terminus, was found in this search, nor a stated reason for the route's own slightly later weekday start against its own holiday hours.

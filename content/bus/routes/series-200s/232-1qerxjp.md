@@ -62,6 +62,22 @@ Station, Ximen, Taipei Main Station, Shandao Temple, Sanchong, St.
 Ignatius High School and Luzhou.[^tdx-bus] The route runs a single
 subroute under one operator, 三重客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 232; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**232 (41 stops):** Luzhou Bus Terminal -> Minzu Rd Entrance -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Yongle St -> Changan St -> Chenggong Elementary School -> Yongkang Park -> Changan St 1 -> Zhongyi Temple -> Yanping Village -> Jiuqiong St -> Jiuqiong Temple -> Jiuqiong St Entrance -> Heping Rd Entrance -> Luzhou Motor Vehicles Office -> Luzhou Police Station -> XiQian -> MRT St Ignatius High School -> St Ignatius High School -> Xingfu Market -> Yitian Temple -> Yongfu St Entrance -> Lixing Rd -> Zhongxiao Rd -> Zhongxiao Rd Entrance -> Wholesale Fruit and Vegetable Market -> New Taipei Blvd  Entrance -> Tax Administration -> Cailiao(Chongyang Rd) -> MRT Sanchong Station -> Chongxin Bridge -> Zushi Temple (GuiYang) -> Guiyang St -> MRT Ximen Sta -> Baoqing Rd -> Boai Rd -> Taipei Post Office -> Taipei Main Sta -> MRT Shandao Temple Sta[^tdx-bus]
+
+**232 (41 stops):** MRT Shandao Temple Sta -> Chenggong High School (Linsen) -> Legislative Yuan -> Taipei Main Sta (Zhongxiao) -> Zhonghua Rd N Stop -> Ximen Market (Chengdu) -> Ximen Elementary School -> Chongxin Bridge -> Fuzhi Village(Hongren Hospital) -> MRT Sanchong Station -> Cailiao(Chongyang Rd) -> Tax Administration -> New Taipei Blvd  Entrance -> Wholesale Fruit and Vegetable Market -> Zhongxiao Rd Entrance -> Zhongxiao Rd -> Lixing Rd -> Yongfu St Entrance -> Yitian Temple -> Xingfu Market -> MRT St Ignatius High School -> Minhe Apartment -> XiQian -> Luzhou Police Station -> Luzhou Motor Vehicles Office -> Heping Rd Entrance -> Jiuqiong St Entrance -> Jiuqiong Temple -> Jiuqiong St -> Yanping Village -> Zhongyi Temple -> Changan St 1 -> Yongkang Park -> Chenggong Elementary School -> Changan St -> Yongle St -> Yongping Market -> Changrong Rd -> MRT Luzhou Sta -> Minzu Rd Entrance -> Luzhou Bus Terminal[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 蘆洲 with 捷運善導寺站 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming fewer interchanges than its own express sibling 232快 despite covering a longer corridor.

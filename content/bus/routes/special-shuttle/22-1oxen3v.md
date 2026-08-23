@@ -64,6 +64,22 @@ The route runs two named subroutes under one operator, 首都客運, on a
 morning-only published window narrower than most other routes in this
 batch.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for NH22; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH22(Straight) (16 stops):** MRT Yuanshan Sta -> Taipei Fine Arts Museum -> The Grand Hotel -> Radio Taiwan International -> Martyr Shrine -> CHING-KUO Chihai Cultural Park -> Tiding Blvd Entrance -> Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> MRT Gangqian Station (Neihu Vocational High School) -> Xihu Library (Huguang Church) -> Neihu Elementary School -> Da Ren Catholic High School (National Taiwan College of Performing Arts) -> Neihu Police Substation[^tdx-bus]
+
+**NH22(Straight) (20 stops):** Chenggong Rd Sec 3 -> Neihu High School -> MRT Wende Sta (Bihu Park) -> Huguang Public Housing -> Xihu Library (Huguang Church) -> Gangqian Police Station -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> Tiding Blvd Entrance -> Mingshui Rd 3 -> Dazhi Pumping Sta -> Beian Jr High School -> Martyr Shrine -> Radio Taiwan International -> The Grand Hotel -> Taipei Fine Arts Museum -> Taipei Expo Park -> MRT Yuanshan Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own narrow 0650–0805 morning window was found in this search, nor a stated reason for pairing 捷運圓山站 with 西湖圖書館 specifically as the route's own termini.

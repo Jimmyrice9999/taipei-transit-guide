@@ -62,6 +62,30 @@ split across four separate operators — 首都客運, 光華巴士, 大都會�
 中興巴士 — for what the stop sequences show as the same physical
 corridor.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 6 directional or variant stop sequences for NH Express 1; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH Exp1-Neihu Science-Based (12 stops):** MRT Yuanshan Sta -> Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Xinhu and Xingshan Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu and Jiouzhong Intersection[^tdx-bus]
+
+**NH Exp1-Neihu Science-Based (11 stops):** Xinhu and Jiuzong Intersection -> Unitech Building -> Xinhu and Xingshan Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> MRT Yuanshan Sta[^tdx-bus]
+
+**NH Exp1-Neihu Science-Based (12 stops):** MRT Yuanshan Sta -> Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Xinhu and Xingshan Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu and Jiouzhong Intersection[^tdx-bus]
+
+**NH Exp1-Neihu Science-Based (12 stops):** MRT Yuanshan Sta -> Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Xinhu and Xingshan Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu and Jiouzhong Intersection[^tdx-bus]
+
+**NH Exp1-Neihu Science-Based (11 stops):** Xinhu and Jiuzong Intersection -> Unitech Building -> Xinhu and Xingshan Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> MRT Yuanshan Sta[^tdx-bus]
+
+**NH Exp1-Neihu Science-Based (11 stops):** Xinhu and Jiuzong Intersection -> Unitech Building -> Xinhu and Xingshan Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> MRT Yuanshan Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 6 direction/variant records, 4 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for four operators running what the data shows as one shared corridor rather than a single joint operation.

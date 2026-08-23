@@ -66,6 +66,22 @@ coverage.[^ebus-g5] Its own weekday and holiday service both run the full
 0530–2230 span with no split, a simpler pattern than the 大香山 sibling group
 covered elsewhere in this batch.[^ebus-g5]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G5; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G5 (39 stops):** Zhongshen Bridge -> Daqijiao -> Qingtan Maintenance Plant -> Youzheng Bridge -> Qingtan Elementary School -> Qingtan New Village -> Training Center of Land Bank -> Qingtan -> Qingtan (I) -> Xindian Elementary School -> Wenshan Junior High School -> Bitan -> MRT Xindian Sta(Beixin Rd) -> Bitan Bridge -> Binlang Rd -> MRT Xindian City Hall Sta(Beixin) -> Zhongzheng Rd Entrance -> Chongguang High School -> Zhongzheng Public Housing -> Cardinal Tien Hospital(Zhongzheng Rd) -> Ershizhang Rd -> Ershizhang Rd Entrance -> Huakaifugui -> Far East Industrial City -> Zhuangjing High School/National Human Rights Museum -> MRT Shisizhang Sta -> Central north social house -> Shisizhang Historical Park -> Yangbei 2nd Rd -> Xindian Senior High School -> Zhongyang New Village(Yangbei 1st Rd) -> Tangquanmeidi -> Tangquan Community -> Lane 255 Xiyuan Rd -> Lanzhuang -> Shisizhang Road -> MRT Shisizhang Sta -> Xiyuan Rd Lane 101 Entrance -> Fuxing Rd & Xiulang Bridge[^tdx-bus]
+
+**G5 (28 stops):** Zhongzheng&Huanhe RdIntersection -> Zhuangjing High School/National Human Rights Museum -> Far East Industrial City -> Huakaifugui -> Ershizhang Rd Entrance -> Ershizhang Rd -> Cardinal Tien Hospital -> Zhongzheng Public Housing -> Chongguang High School -> Zhongzheng Rd Entrance -> MRT Xindian Dist Office Station -> Binlang Rd -> Bitan Bridge -> MRT Xindian Sta(Beixin Rd) -> Bitan -> Wenshan Junior High School -> Xindian Elementary School -> QingTan(I) -> Nanqing Temple -> Qingtan( Beiyi Rd) -> Training Center of Land Bank -> Qingtan New Village -> Qingtan Elementary School -> Qingtan Elementary School -> Youzheng Bridge -> Qingtan Maintenance Plant -> Daqijiao -> Zhongshen Bridge[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

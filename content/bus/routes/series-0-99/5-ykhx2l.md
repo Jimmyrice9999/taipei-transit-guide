@@ -59,6 +59,22 @@ of 15–20 minutes and off-peak intervals of 20–30 minutes, holiday service
 service contact.[^ebus-5] The TDX snapshot records a single subroute for
 this route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 5; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**5 (40 stops):** Zhonghe Maintenance Plant -> Jiamei industrial Area -> MRT Zhonghe Sta (Zhongshan Rd) -> Yijiang New Village -> Zhonghe Farmers Association(Zhonghe Rd) -> Zhonghe Temple -> Zhonghe Police Station -> Nanshan High School -> Shuanghe Village -> Huatai New Village(Yian Rd) -> Yian Road -> Anping Rd -> Tanqian -> 823 Memorial Park -> Yongan Market -> Ziqiang St Entrance -> Yao Hua Shopping Area -> MRT Dingxi Sta -> Zhongzheng Bridge Stop -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> Fuzhou St -> Taipei Water Dept West District Business Office (Guling) -> Nanchang Rd -> Nanmen -> Taipei First Girls High School (Gongyuan) -> MRT NTU Hospital Station -> Taipei Main Sta (Qingdao) -> Executive Yuan -> ZhongShan Market -> Nanjing & Linsen Intersection -> Nanjing & Jilin Intersection -> MRT Songjiang Nanjing Sta -> ChangChun&SongJiang Intersection -> Minsheng & Songjiang Intersection -> Hejiang St Entrance -> Nat'I Taipei U(Taipei Campus) -> MRT Zhongshan Junior High School Sta -> Minquan and Longjiang Intersection -> Minquan & Jianguo Intersection -> Minquan and Songjiang Intersection[^tdx-bus]
+
+**5 (32 stops):** MRT Xingtian Temple Sta (Songjiang Rd) -> ChangChun&SongJiang Intersection -> Nanjing & Jilin Intersection -> Nanjing & Linsen Intersection -> ZhongShan Market -> Executive Yuan -> Taipei Main Sta (Gongyuan) -> MRT NTU Hospital Station -> Taipei First Girls High School (Gongyuan) -> Affiliated Experimental Elementary School of University of Taipei -> Nanmen -> Ningpo and Chongqing Intersection -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> MRT Dingxi Sta -> Zhongxing St Entrance -> Yao Hua Shopping Area -> Yonghe Rd Entrance -> Yongan Market(Yongzhen Rd) -> Zhongan St -> Anping Police Station -> Anping Rd -> Yian Road -> Huatai New Village(Yian Rd) -> Shuanghe Village -> Nanshan High School -> Zhonghe Police Station -> Zhonghe Temple -> Zhonghe Farmers Association(Zhonghe Rd) -> Yijiang New Village -> MRT Zhonghe Sta(Zhongshan Rd) -> Jiamei Industrial Park -> Zhonghe Maintenance Plant[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length

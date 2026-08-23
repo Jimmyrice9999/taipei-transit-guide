@@ -60,6 +60,22 @@ Yongning (BL02), Tucheng (BL03), Xinpu (BL08), Jiangzicui (BL09), Banxin
 under one operator, 臺北客運, with no recorded holiday variant or short
 working.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL17; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL17 (41 stops):** Wufu New Village -> FugueiNewVillage -> Freezing Plant -> Huaide St -> Jiangzicui -> Jiangcui Elementary School -> Jiangcui Elementary School(Wenhua Rd) -> MRT Jiangzicui Station -> Jiangcui Junior High School -> MRT Xinpu Sta(Wenhua Rd) -> MRT Xinpu Sta -> Banqiao Flower Market -> Minsheng Rd Bridge -> Xian Village -> Zhongshan Hansheng Rd Intersection -> Hansheng Rd -> Haishan High School -> Haishan Elementary School -> Hanmin Rd Entrance -> Juguang Rd Entrance -> Juguang Rd -> Guoguang Police Station -> Ziqiang Elementary School -> Huaan St Entrance -> Yanhe Rd -> Anhe Elementary School -> Jincheng Rd Entrance -> Mingde Rd -> Qingshui Junior High School -> International Park -> Renai Rd Entrance -> Qingshan Rd -> Mingde Rd 1 -> New Taipei Vocational High School(Jincheng) -> Ganlin Bridge -> Tucheng Hospital -> MRT Tucheng Station -> Tucheng Dist Office -> Ciansuei Rd -> Zhongcheng Rd -> Chengtian Rd[^tdx-bus]
+
+**BL17 (38 stops):** MRT Yongning Station -> Zhongyi Rd Entrance -> Tucheng Dist Office -> MRT Tucheng Station -> Tucheng Hospital -> Ganlin Bridge -> New Taipei Senior High School(Qingshui) -> Mingde Rd 1 -> Qingshan Rd -> Renai Rd Entrance -> International Park -> Chingshui High School -> Mingde Rd -> Jincheng Rd Entrance -> Anhe Elementary School -> Yanhe Rd -> Huaan St Entrance -> Ziqiang Elementary School -> Guoguang Police Station -> Juguang Rd -> Juguang & Deguang Intersection -> Hanmin Rd Entrance -> Haishan High School -> Hansheng Rd -> Zhongshan Hansheng Rd Intersection -> Xian Village -> Minsheng Zongshan Road Intersection -> Yuguang Village -> Minsheng Rd Bridge -> Banqiao Flower Market -> MRT Xinpu Sta(Wenhua Rd) -> New Taipei City Council -> Jiangcui Junior High School -> MRT Jiangzicui Sta -> Jiangcui Elementary School -> Huaide St (Wensheng) -> Refrigeration Plant(Wensheng) -> Music Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] Whether the route's six confirmed interchanges reflect a deliberate

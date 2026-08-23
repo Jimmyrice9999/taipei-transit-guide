@@ -59,6 +59,22 @@ terminus.[^tdx-bus] The stop sequence is otherwise identical to 藍43延南天�
 own, which continues past 捷運永寧站 into the 南天母 hills rather than
 stopping there.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL43; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL43 (25 stops):** Sanxia Stop 2 -> Guniang Temple -> Sanshu Rd -> Agricultural Research and Extension Station -> Nanyuan -> Jiayuan Xuechin Rd Intersection -> Shibajian -> Ganyuan -> Ganyuan Elementary School -> Minquan St Entrance -> Ganyuan St -> Dongyuan Village -> Ganyuan Precinct -> Hungwacuo -> Gancheng Bridge -> Honhai -> Goodwill -> Chenggong St Entrance -> Ziqiang St Entrance -> Taiwan Nougot Museum -> Yazhou Rd -> Zhonghua High School(Chenglin Rd) -> Zhonghua High School 1 -> Tucheng 2 -> MRT Yongning Station[^tdx-bus]
+
+**BL43 (28 stops):** MRT Yongning Station -> Tucheng (II) -> Zhonghua High School 1 -> Zhonghua High School(Yazhou Rd) -> Yazhou Rd -> Taiwan Nougot Museum -> Ziqiang St Entrance -> Chenggong St Entrance -> Zhongxing Rd Entrance -> Service Center -> Minzu Rd Entrance -> Minquan St Entrance -> Fuan St Entrance -> Gancheng Bridge -> Hungwacuo -> Ganyuan Precinct -> Dongyuan Village -> Ganyuan St -> Minquan St Entrance -> Ganyuan Elementary School -> Ganyuan -> Shibajian -> Landscape Wanping Park(Gongcuozi) -> Jiayuan Xuechin Rd Intersection -> Nanyuan -> Agricultural Research and Extension Station -> Sanshu Rd -> Sanxia Stop 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍43延南天母 remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍43 or a

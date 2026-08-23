@@ -59,6 +59,22 @@ join set: Zhongshan Junior High School (BR12), Songshan Airport (BR13),
 Neihu (BR19), Zhongshan Elementary School (O10) and Minquan W. Rd.
 (O11/R13).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R29; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R29 (41 stops):** SoutheastBusParkingLot -> Xingai Rd Lane 77 Entrance -> Xingshan & Xingai Intersection -> Xingshan & Shitan Roads -> Sanmin Junior High School -> Neihu Admin Building -> National Defense Medical Center -> Tri-Service General Hospital -> Jiangjun Ling -> St Francis High School -> Xingyun St -> Jingzhi New Village -> Neihu New Village -> Kangning AIT Community -> American Institute in Taiwan -> Kangning Police Substation -> Qingbai Village -> MRT Neihu Sta -> Huguang Market -> Chenggong Rd Sec 3 -> Neihu Jr High School -> Ziyang -> Ruiyang　Park No 3 -> Yangguang St -> Ruiguang Rd -> Gongguanshan -> Libao Building -> China Times Daily News Square -> Minquan Bridge -> Sanmin Elementary School -> MinQuan Elementary School -> China Airlines -> Minquan and Dunhua Intersection -> Minquan and Fuxing Intersection -> Minquan and Longjiang Intersection -> MinQuan-Jianguo Intersection -> Minquan and Songjiang Intersection -> Minquan and Jilin Intersection -> MRT Zhongshan Elementary School Sta -> Minquan and Zhongshan Intersection -> MRT Minquan W Rd Station[^tdx-bus]
+
+**R29 (45 stops):** Chengyuan High School -> Datong Police Sta -> MRT Minquan W Rd Station -> Minquan and Zhongshan Intersection -> MRT Zhongshan Elementary School Sta -> Minquan and Jilin Intersection -> Minquan and Songjiang Intersection -> Minquan & Jianguo Intersection -> Minquan and Longjiang Intersection -> Minquan and Fuxing Intersection -> Minquan and Dunhua Intersection -> Minquan E Rd Entrance -> China Airlines -> Minquan Park -> Minquan Elementary School -> Sanmin Elementary School -> MinQuan Bridge -> China Times Daily News Square -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Yangguang St -> Wende Police Substation -> Ziyang -> Neihu Jr High School -> Chenggong Rd Sec 3 -> Huguang Market -> MRT Neihu Sta -> Qingbai Village -> Kangning Police Substation -> American Institute in Taiwan -> Kangning AIT Community -> Neihu New Village -> Jingzhi New Village -> Xingyun St -> St Francis High School -> Jiangjun Ling -> Tri-Service General Hospital -> National Defense Medical Center -> Neihu Admin Building -> Ln 56, Sec 6, Minquan E Rd -> Xingshan and Shitan Intersection -> Xingshan & Xingai Intersection -> Xingai Rd Lane 77 Entrance -> Unitech Building[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅29 was found

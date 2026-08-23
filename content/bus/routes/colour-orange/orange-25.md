@@ -68,6 +68,22 @@ Its 20-stop outbound and 32-stop return workings differ substantially,
 reflecting the detour the return leg alone carries through 捷運台北橋站 and
 正義重新路口.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O25; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O25 (20 stops):** Luzhou Bus Terminal -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Yongle St -> Yongde Village -> Changan Village -> Yongan Library -> Datong New Village -> Baoziliao -> KuPao Home Economics & Commercial High School -> Xiangong Temple -> Boai New Village -> Sanchong Vocational School -> Zhongxiao Rd Entrance -> Wholesale Fruit and Vegetable Market -> Xiude Elementary School -> Dazhi St Intersection -> Jieshou Square -> MRT Sanchong Elementary School[^tdx-bus]
+
+**O25 (32 stops):** Sanchong Elementary School -> Sanhe & Changrong  Intersection -> Changsheng St Intersection -> Sanchong Police Station(Fude N Rd) -> Sanchong Police Station (Chongxin Rd) -> MRT Taipei Bridge Sta -> Zhengyi&Chongxin Intersection -> Changyuan WSt Entrance -> Sanchong Elementary School -> MRT Sanchong Elementary School -> Jieshou Square -> Dazhi St Entrance(Sanchong) -> Xiude Elementary School -> Mingzhi Junior High School -> Wholesale Fruit and Vegetable Market -> Zhongxiao Rd Entrance -> Sanchong Vocational School -> Boai New Village -> Xiangong Temple -> KuPao Home Economics & Commercial High School -> Baoziliao -> Datong New Village -> Yongan S Rd -> Yongan Library -> Changan Village -> Yongde Village -> Huanti Blvd -> Yongle St -> Guangrong Rd -> Changrong Rd -> MRT Luzhou Sta -> Zhongzheng & Guangrong intersection[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

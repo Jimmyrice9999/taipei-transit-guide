@@ -60,6 +60,26 @@ three named subroutes — 藍36, 藍36去程半 and 藍36返程半 — the outbo
 return half-workings sharing the same stop counts as the full route in
 this snapshot.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BL36; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B36 (36 stops):** Huanhe Community Center -> Huanhe Village -> Pandisk Technology Co -> Dashu Wood Co -> Beifeng Elementary School -> LiMing Community -> Taipei Miracle -> Bokeli Day Care Center -> Shenghuo Daguo Community -> Renchingwei Xiaozhen Community -> Kangfu Village -> FuDe Borough -> Daxizhi Department Stores -> Shidian Community -> Beifeng Village(Kangning St) -> Jinlong Elementary School(Kangning St) -> Munan Coal Mine -> Economic & Trade Park -> Beishan Village -> Donghu Elementary School -> Wufen Community -> Minghu Junior High School -> Minghu Elementary School (PTS) -> MRT Huzhou Sta (University of Kang Ning) -> Minquan Tunnel -> Minquan Tunnel 2 -> Minquan E Rd Sec 6 (Minquan Dunpin) -> National Defense Medical University -> Fuhua Market -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang[^tdx-bus]
+
+**B36 (34 stops):** MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> Fuhua Market -> Taipei Tennis Center -> Minquan E Rd Sec 6 (Minquan Dunpin) -> Minquan Tunnel 2 -> Minquan Tunnel -> MRT Huzhou Sta (University of Kang Ning) -> Minghu Elementary School (PTS) -> Wufen Community -> Donghu Elementary School -> Beishan Village -> Economic & Trade Park -> Munan Coal Mine -> Jinlong Elementary School(Kangning St) -> Beifeng Village(Kangning St) -> Shidian Community -> Daxizhi Department Stores -> FuDe Borough -> Kangfu Village -> Shenghuo Daguo Community -> Bokeli Day Care Center -> Taipei Miracle -> Liming Community -> Beifeng Elementary School -> Dashu Wood Co -> Pandisk Technology Co -> Huanhe Village -> Huanhe Community Center[^tdx-bus]
+
+**B36 (36 stops):** Huanhe Community Center -> Huanhe Village -> Pandisk Technology Co -> Dashu Wood Co -> Beifeng Elementary School -> LiMing Community -> Taipei Miracle -> Bokeli Day Care Center -> Shenghuo Daguo Community -> Renchingwei Xiaozhen Community -> Kangfu Village -> FuDe Borough -> Daxizhi Department Stores -> Shidian Community -> Beifeng Village(Kangning St) -> Jinlong Elementary School(Kangning St) -> Munan Coal Mine -> Economic & Trade Park -> Beishan Village -> Donghu Elementary School -> Wufen Community -> Minghu Junior High School -> Minghu Elementary School (PTS) -> MRT Huzhou Sta (University of Kang Ning) -> Minquan Tunnel -> Minquan Tunnel 2 -> Minquan E Rd Sec 6 (Minquan Dunpin) -> National Defense Medical University -> Fuhua Market -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang[^tdx-bus]
+
+**B36 (34 stops):** MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> Fuhua Market -> Taipei Tennis Center -> Minquan E Rd Sec 6 (Minquan Dunpin) -> Minquan Tunnel 2 -> Minquan Tunnel -> MRT Huzhou Sta (University of Kang Ning) -> Minghu Elementary School (PTS) -> Wufen Community -> Donghu Elementary School -> Beishan Village -> Economic & Trade Park -> Munan Coal Mine -> Jinlong Elementary School(Kangning St) -> Beifeng Village(Kangning St) -> Shidian Community -> Daxizhi Department Stores -> FuDe Borough -> Kangfu Village -> Shenghuo Daguo Community -> Bokeli Day Care Center -> Taipei Miracle -> Liming Community -> Beifeng Elementary School -> Dashu Wood Co -> Pandisk Technology Co -> Huanhe Village -> Huanhe Community Center[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍36 or its

@@ -65,6 +65,20 @@ sharing the 中和-臺北市政府 pairing with the neighbouring 通勤11.[^tdx-
 客運, on a two-stage fare and a same-time head/last-departure field
 publishing only one trip.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for CB12; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**CB12 (24 stops):** Zhonghe Maintenance Plant -> Jiamei industrial Area -> MRT Zhonghe Sta (Zhongshan Rd) -> Liancheng Rd Entrance -> Zhonghe Dist Office (Jingping Rd) -> Yuantong&Jingping Rd Entrance -> MRT Jingan Sta(Jingping Rd) -> Zhonghe Church -> Nanshijiao(Jingping Rd) -> MRT Jingping Sta -> Jingping Jingde Intersection -> Xiujing Village -> Fancuo -> Xiulang Rd Sec 3 Lane 70 -> Liucuo -> Liuhe Community -> Chenggong Dehe Rd -> Fuhe Bridge(Chonggong Rd) -> Heping Senior High School -> MRT Liuzhangli (Keelung Rd) -> Sanxing Elementary School (Linjiang St Night Market) -> Wuxing St Entrance -> World Trade Center (Keelung Rd) -> Taipei City Hall[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own single published trip, unlike the range of departures shown for the neighbouring 通勤11, was found in this search.

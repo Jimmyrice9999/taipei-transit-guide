@@ -65,6 +65,26 @@ dispatch point.[^ebus-o20] Its own two variants' dir0 workings run 22 and
 20 stops respectively, the shortest difference between named variants of
 any route in this project's colour-orange coverage.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for O20; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O20 Guanyin Mountain Visitor Center (22 stops):** Guanyin Mountain Visitor Center -> Lingyun Temple -> Lingyun Temple 1 -> Lingyun Temple -> Miaoyun Temple -> Guanyin Village -> Fulongshan -> Fulongshan 1 -> Guanyinshan -> Lingyun Road Sec 1 -> Zhongkeng -> Guanyinkeng -> Qigan Lake -> Lingyun Bridge 5 -> Jifu Village -> língfong Temple -> Zhongyi Bridge -> Chengzhou Market -> Wugu Post Office -> XinXing Apartment -> Huiyao -> MRT Luzhou Sta[^tdx-bus]
+
+**O20 Guanyin Mountain Visitor Center (33 stops):** Minzu Rd Entrance -> National Open Univ(Sanmin Rd) -> MRTSanMin High School -> Minquan Rd Entrance -> Fuxing Rd -> Loucuo -> Minzu & Minyi Intersection -> Renai St Entrance -> Renai Elementary School -> Minzu Rd Entrance -> MRT Luzhou Sta -> MRT Luzhou Sta -> Huiyao -> Xinxing Apartment -> Wugu Post Office -> Chengde Market -> Zhongyi Bridge -> língfong Temple -> Jifu Village -> Lingyun Bridge 5 -> Qigan Lake -> Guanyinkeng -> Zhongkeng -> Lingyun Road Sec 1 -> Guanyinshan -> Fulongshan 1 -> Fulongshan -> Guanyin Village -> Miaoyun Temple -> Lingyun Temple -> Lingyun Temple 1 -> Lingyun Temple -> Guanyin Mountain Visitor Center[^tdx-bus]
+
+**O20 Lingyun Temple Parking Lot (20 stops):** Lingyun Temple Parking Lot -> Lingyun Temple -> Miaoyun Temple -> Guanyin Village -> Fulongshan -> Fulongshan 1 -> Guanyinshan -> Lingyun Road Sec 1 -> Zhongkeng -> Guanyinkeng -> Qigan Lake -> Lingyun Bridge 5 -> Jifu Village -> língfong Temple -> Zhongyi Bridge -> Chengzhou Market -> Wugu Post Office -> XinXing Apartment -> Huiyao -> MRT Luzhou Sta[^tdx-bus]
+
+**O20 Lingyun Temple Parking Lot (31 stops):** Minzu Rd Entrance -> National Open Univ(Sanmin Rd) -> MRTSanMin High School -> Minquan Rd Entrance -> Fuxing Rd -> Loucuo -> Minzu & Minyi Intersection -> Renai St Entrance -> Renai Elementary School -> Minzu Rd Entrance -> MRT Luzhou Sta -> MRT Luzhou Sta -> Huiyao -> Xinxing Apartment -> Wugu Post Office -> Chengde Market -> Zhongyi Bridge -> língfong Temple -> Jifu Village -> Lingyun Bridge 5 -> Qigan Lake -> Guanyinkeng -> Zhongkeng -> Lingyun Road Sec 1 -> Guanyinshan -> Fulongshan 1 -> Fulongshan -> Guanyin Village -> Miaoyun Temple -> Lingyun Temple -> Lingyun Temple Parking Lot[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

@@ -66,6 +66,22 @@ The confirmed stop sequence runs 22 stops from 貢寮火車站, past 貢寮行�
 
 The full New Taipei route-service row publishes endpoints “貢寮火車站-鶯歌石”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0720-1700；返程：0600-1540; Holidays: 去程： - ；返程： -; fare 免費 / Free.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Fulian Route; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Fulian Route (22 stops):** Gongliao Rail Sta -> Gongliao Administration Building -> Gongliao Junior High School -> Lun Zai Wei -> Yuanwangkengkou -> Yuanwangkeng Riverside Park -> Yuanwangkengkou -> Fulong Gas Station -> Fulong -> Wazi(Fulong Elementary School) -> Dongxing Temple -> XiaoGuian -> Guian -> Xiaoxianglan -> Xianglan -> Daxianglan -> Marine Rehabilitation Park -> Maoao Police Station -> Maoao Community Activity Center -> Magang Community Activity Center -> Lailai -> Yinggeshe[^tdx-bus]
+
+**Fulian Route (21 stops):** Yinggeshe -> Lailai -> Magang Community Activity Center -> Maoao Community Activity Center -> Fulian Elementary School -> Marine Rehabilitation Park -> Daxianglan -> Xianglan -> Xiaoxianglan -> Guian -> XiaoGuian -> Dongxing Temple -> Wazi(Fulong Elementary School) -> Fulong -> Yuanwangkengkou -> Yuanwangkeng Riverside Park -> Yuanwangkengkou -> Lun Zai Wei -> Gongliao Junior High School -> Gongliao Administration Building -> Gongliao Rail Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

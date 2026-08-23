@@ -68,6 +68,22 @@ recorded in the curated stop-ID join set: Guting (G09/O05), Dingxi
 operators, 大都會客運 and 臺北客運, on a two-stage fare, weekdays only
 with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for NH3; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH3 (39 stops):** Drivers Training Center -> Zhonghe High School -> Liancheng Rd -> Liancheng Zhongzheng Intersection -> Liancheng Jinhe Rd Intersection -> Taimao Village 1 -> National Taxation Bureau Jhonghe Office -> Liancheng Jingping Rd Intersection -> Liancheng Zhonghe Rd Intersection -> Miaomei Village -> Nanshan High School(Zhongshan Rd) -> Jiahe Park -> Baosheng Rd Entrance -> Yongping High School -> Zhongshan Rd Entrance -> MRT Dingxi Sta -> Zhongzheng Bridge Stop -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> Heping W Rd Sec 1 -> Nanfu Banxi (Nanchang Park) -> MRT Guting Sta (Heping) -> Jinshan Chaozhou St Intersection -> Center for Public & Business Administration Education -> MRT Dongmen Sta (Jinshan) -> Renai Rd Sec 2 -> Jinshan and Taian  Intersection -> The Grand Hotel -> Radio Taiwan International -> Martyr Shrine -> CHING-KUO Chihai Cultural Park -> Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> China Times Daily News Square -> Minquan Bridge[^tdx-bus]
+
+**NH3 (38 stops):** Minquan Bridge -> China Times Daily News Square -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> Martyr Shrine -> Radio Taiwan International -> The Grand Hotel -> Jinshan and Taian  Intersection -> Renai Rd Sec 2 -> MRT Dongmen Sta (Jinshan) -> Center for Public & Business Administration Education -> Jinshan Chaozhou St Intersection -> MRT Guting Sta (Heping) -> Nanfu Banxi (Nanchang Park) -> Heping W Rd Sec 1 -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> MRT Dingxi Sta -> Zhongxing St Entrance -> Zhongshan Rd Entrance -> Yongping High School -> Baosheng Rd Entrance -> Jiahe Park -> Nanshan High School(Zhongshan Rd) -> Miaomei Village -> Liancheng Zhonghe Rd Intersection -> Liancheng Jingping Rd Intersection -> National Taxation Bureau Jhonghe Office -> Taimao Village 1 -> Liancheng Jinhe Rd Intersection -> Liancheng Zhongzheng Intersection -> Liancheng Rd -> Zhonghe High School -> Drivers Training Center[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for running two separately numbered Zhonghe–Neihu Science Park shuttles, 內科2 and 內科3, over a largely overlapping corridor under different operators, was found in this search.

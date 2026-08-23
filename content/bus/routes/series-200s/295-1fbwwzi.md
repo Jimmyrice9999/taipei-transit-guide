@@ -64,6 +64,22 @@ NTU Hospital.[^tdx-bus] The route runs a single subroute under one
 operator, 欣欣客運, with a slightly earlier weekday start than its own
 holiday span.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 295; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**295 (47 stops):** Fude -> Xiangtoupu -> Wanfu Bridge -> MRT Taipei Zoo Sta -> Taipei Zoo -> Wanshou Bridge (Xinguang) -> Wanshou Bridge (Xiuming) -> Wanxing Elementary School -> Xinguang Rd Entrance -> Zhinan Rd Entrance -> Munan Park -> Jingwen High School -> Sifa New Village -> Zhongshun Temple -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Muxin Rd Entrance -> Shijian Junior High School -> Zhonggang Pumping Sta -> Gouzikou (Xingfu huaxing) -> Xinhai Rd, Sec 6, Ln 21 -> Huaien Tunnel -> China University of Technology (Xinhai) -> Xinglong Rd Entrance (Xinhai) -> MRT Xinhai Sta -> Xinhai Elementary School -> Qingfeng Activity Center -> Taipei Water Department (Xinhai) -> Daan Sports Center -> Daan Dist Health Center -> Fuxing S Rd Entrance -> National Taipei University of Education Experiment Elementary School -> Longmen Jr High School (Heping) -> Daan Park -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> MRT Guting Sta (Heping) -> Nanchang Rd Furniture Market -> TCUH Branch of Women and Children 1 -> Nanchang Rd -> Nanmen -> Taipei First Girls High School (Gongyuan) -> MRT NTU Hospital Station -> Taipei Main Sta (Qingdao)[^tdx-bus]
+
+**295 (46 stops):** Qingdao & Linsen Intersection -> Chenggong High School (Linsen) -> Taipei Kainan High School -> Renai and Linsen Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> Nanchang Rd Furniture Market -> MRT Guting Sta (Heping) -> National Taiwan Normal U -> NTNU Union Building 1 -> Wenzhou St Entrance -> Daan Park -> Longmen Jr High School (Heping) -> Fuxing S Rd Entrance -> National Taipei University of Education -> Daan Dist Health Center -> NTU Guo-Ching Blidg -> Taipei Water Department (Xinhai) -> Qingfeng Activity Center -> Xinhai Elementary School -> MRT Xinhai Sta -> MRT Xinhai 1 -> Xinglong Rd Entrance (Xinhai) -> China University of Technology (Xinhai) -> Huaien Tunnel -> Gouzikou (Xingfu huaxing) -> Zhonggang Pumping Sta -> Shijian Junior High School -> Muxin Activity Center -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Zhongshun Temple -> Sifa New Village -> Jingwen High School -> Munan Park -> Zhinan Rd Entrance -> National Chengchi University -> Wanxing Library -> Tacheng High School -> Wanshou Bridge (Xiuming) -> Wanshou Bridge (Xinguang) -> Taipei Zoo -> MRT Taipei Zoo Sta -> Wanfu Bridge -> Xiangtoupu -> Fude[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 富德 with 臺北車站 specifically as the route's own termini, over a corridor that overlaps several other Wenshan-area routes in this batch, was found in this search.

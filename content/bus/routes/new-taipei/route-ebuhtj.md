@@ -66,6 +66,22 @@ The confirmed stop sequence runs 16 stops from 海濱, past 瑞濱, then 榮興,
 
 The full New Taipei route-service row publishes endpoints “瑞芳-南港”; published distance 66.6 km; service span Weekdays: 去程：0640-1700；返程：0750-1810; Holidays: 去程： - ；返程： -; fare 六段票 / 6 Segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Ruifang-Nangang; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Ruifang-Nangang Go (16 stops):** Haibin -> Ruibin -> Shen'ao Power Plant -> Jianji Coal Mine -> Rongxing -> Diaohe Market -> Diaohe St & Guanhai St Intersection -> Chunghuihuayuan Community -> Wukengkou -> Sankengkou -> HuayanClub Community -> Shenao Elementary School -> Wanyuankou -> Xiaodong Rd -> TWTC Nangang Exhibition Hall -> Nangang Bus Station[^tdx-bus]
+
+**Ruifang-Nangang Back (15 stops):** Nangang Bus Station -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> Wanyuankou -> Shenao Elementary School -> HuayanClub Community -> Sankengkou -> Wukengkou -> Chunghuihuayuan Community -> Diaohe St & Guanhai St Intersection -> Diaohe Market -> Rongxing -> Jianji Coal Mine -> Shen'ao Power Plant -> Ruibin -> Haibin[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

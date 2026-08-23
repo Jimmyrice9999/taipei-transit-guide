@@ -66,6 +66,22 @@ The confirmed stop sequence runs 8 stops from 下石厝路, past 直潭國小, t
 
 The full New Taipei route-service row publishes endpoints “下石厝路-新店捷運站”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0620-1905；返程：0700-1830; Holidays: 去程： - ；返程： -; headway fields Weekdays: 第8班僅行駛到新店捷運站.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Zhitan Village; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**水源區直潭里去 (8 stops):** Xiashicuo Rd -> Zhitan Elementary School -> Sanjiegong  Temple -> Jinlong Rd Entrance -> Haihui Temple -> Zhitan Village Office -> Yongye St Entrance -> MRT Xindian Sta[^tdx-bus]
+
+**水源區直潭里返 (8 stops):** MRT Xindian Sta -> Yongye St Entrance -> Zhitan Village Office -> Haihui Temple -> Jinlong Rd Entrance -> Sanjiegong  Temple -> Zhitan Elementary School -> Xiashicuo Rd[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

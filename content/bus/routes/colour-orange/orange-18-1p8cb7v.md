@@ -64,6 +64,22 @@ its 34-stop outbound one, both counting stops the plain 橘18 sibling's own
 31/38-stop pair does not exactly match despite the near-identical
 route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O18fu; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O18 fu (34 stops):** Luzhou Sta -> Jiuqiong St Entrance -> Jiuqiong Temple -> Wanquan Market -> Guanghua & Heping Intersection -> Guanghua & Zhongzheng Intersection -> Yonglian Temple -> MRT Sanmin Senior High School Station(Fuxing Rd 1) -> MRTSanMin High School -> Minquan Rd Entrance -> Fuxing Rd -> Hutian Temple -> Zhongxing St(Fuxing Rd) -> Zhongxing St(Minzu Rd) -> Yuqing Temple -> Xinyi Rd -> Xinyi Rd Entrance -> St Ignatius High School -> Xingfu Market -> Jianhe New Village -> MRT Sanhe Juior High School Sta -> Ziqiang Rd Entrance -> Xiwei St Entrance -> Renzheng St -> Fulong Rd -> Renai St -> Ziqiang Rd Sec 5 -> Wuhua St -> Bihua Elementary School -> Jiying Rd -> Sanxian and Jizhi Intersection -> Xinxian St -> New Taipei Senior High School -> Wuhua Elementary School[^tdx-bus]
+
+**O18 fu (41 stops):** Mozart Community -> Jinan St -> Tonghua St -> Wuhua Village -> Renyi St -> Jijing Community -> Chongyang Bridge Civic Activity Center -> New Taipei Senior High School -> Xinxian St -> Sanxian and Jizhi Intersection -> Jiying Rd -> Fenziwei -> Bihua Elementary School -> Wuhua St -> Ziqiang Rd Sec 5 -> Renai St -> Fulong Rd -> Renzheng St -> Xiwei St Entrance -> Ziqiang Rd Entrance -> Sanhe Junior High School -> MRT Sanhe Juior High School Sta -> Jianhe New Village -> Xingfu Market -> MRT St Ignatius High School -> Xinyi Rd Entrance -> Xinyi Rd -> Yuqing Temple -> Zhongxing St(Minzu Rd) -> Zhongxing St(Fuxing Rd) -> Hutian Temple -> Fuxing Rd -> Minquan Rd Entrance -> MRT Sanmin Senior High School Station(Fuxing Rd) -> Yonglian Temple -> Guanghua & Zhongzheng Intersection -> Guanghua & Heping Intersection -> Wanquan Market -> Jiucun Temple -> Jiucun St Intersection -> Luzhou Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the meaning of the 福隆路 suffix beyond a literal street name remain TBC.[^tdx-bus]

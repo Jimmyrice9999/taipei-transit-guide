@@ -62,6 +62,26 @@ roughly midway along the route's own corridor.[^tdx-bus] TDX records
 two named subroutes distinguishing whether a working detours via 士林
 監理站.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for M8; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M8 (22 stops):** Fu Mei Stop -> Sanwang Temple -> FuMei ChengPing Intersection -> Farglory Ark Building -> CTCI Second Headquarters -> Taipei Children's Amusement Park -> Shilin High School of Commerce -> Shilin Admin Center -> Shilin Jr High School -> Shilin Elementary School -> Xiaobei St -> Yangming Theater -> MRT Jiantan Sta (Taipei Performing Arts Center) -> Yuanshan Royal Building -> Jiantan Elementary School -> Mingsheng Village -> HualingSt -> Bailing Village -> Qiangang Park -> Bailing Elementary School -> Shilin Motor Vehicles Office -> Fugang St[^tdx-bus]
+
+**M8 (20 stops):** Hougang Village -> Bailing Elementary School -> Qiangang Park -> Bailing Village -> HualingSt -> Mingsheng Village -> Jiantan Elementary School -> Yuanshan Royal Building -> MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Xiaobei St -> Shilin Farmers' Assn -> Shilin Jr High School -> Shilin Admin Center -> Shilin High School of Commerce -> Taipei Children's Amusement Park -> CTCI Second Headquarters -> FuMei ChengPing Intersection -> Sanwang Temple -> Fu Mei Stop[^tdx-bus]
+
+**M8 (21 stops):** Fu Mei Stop -> Sanwang Temple -> FuMei ChengPing Intersection -> Farglory Ark Building -> CTCI Second Headquarters -> Taipei Children's Amusement Park -> Shilin High School of Commerce -> Shilin Admin Center -> Shilin Jr High School -> Shilin Elementary School -> Xiaobei St -> Yangming Theater -> MRT Jiantan Sta (Taipei Performing Arts Center) -> Yuanshan Royal Building -> Jiantan Elementary School -> Mingsheng Village -> HualingSt -> Bailing Village -> Qiangang Park -> Bailing Elementary School -> Fugang St[^tdx-bus]
+
+**M8 (20 stops):** Hougang Village -> Bailing Elementary School -> Qiangang Park -> Bailing Village -> HualingSt -> Mingsheng Village -> Jiantan Elementary School -> Yuanshan Royal Building -> MRT Jiantan Sta (Taipei Performing Arts Center) -> Yangming Theater -> Xiaobei St -> Shilin Farmers' Assn -> Shilin Jr High School -> Shilin Admin Center -> Shilin High School of Commerce -> Taipei Children's Amusement Park -> CTCI Second Headquarters -> FuMei ChengPing Intersection -> Sanwang Temple -> Fu Mei Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 北士科 with 後港里 specifically as the route's own termini was found in this search, nor a stated reason for the specific 士林監理站 detour existing as a separately named subroute rather than a fixed stop.

@@ -65,6 +65,22 @@ operator is also confirmed operating 綠2左/綠2右 in this project's coverage,
 running a substantially longer loop through the same general Wenshan
 area.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G18; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G18 (9 stops):** MRT Dapinglin Sta(Minquan Rd) -> Muxin Rd Entrance -> Shijian Junior High School -> Zhonggang Pumping Sta -> Gouzikou (Xingfu huaxing) -> Xinhai Rd Sec6 Lane21 Entrance -> Huaien Tunnel -> China University of Technology (Xinhai) -> MRT Wanfang Hospital Sta[^tdx-bus]
+
+**G18 (15 stops):** Taiwan Police College -> Wenshan Sports Center (Xinglong) -> Coast Guard Administration -> Coast Guard Administration 1 -> Xinglong Shanzhuang -> Mamingtan (Zaixing High School) -> Muzha Park -> Zhongshun St Entrance -> Guotai New Village (Xinglong) -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Dapinglin -> MRT Dapinglin Sta(Minquan Rd)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

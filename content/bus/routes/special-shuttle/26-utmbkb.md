@@ -63,6 +63,22 @@ under one operator, 首都客運, on a three-stage fare — tied with the
 separate 通勤24 for the highest fare tier confirmed in this batch — and
 a narrow 0920–1050 morning window.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for CB26; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**CB26 (18 stops):** Mt Dalunwei -> Mt Dalunwei Trail Entrance -> Shuangxi Community -> Shuangxi Sta 1 -> Shuangxi Stop 2 -> Cuishan St -> Mingxi St -> Shuangxi Elementary School -> Zhongshe Rd 17th Lane -> ZhongyangSta -> Zhongshe RdSec1 Lane 61 Entrance -> Cuishan Police Substation -> Community Development Assn -> Zhongshe Rd 11th Lane -> Cui Shanzhuang -> Fulin Elementary School -> Yangming Theater -> MRT Jiantan Sta (Taipei Performing Arts Center)[^tdx-bus]
+
+**CB26 (19 stops):** Shilin Market (Ming Chuan Hostel) -> Yangming Theater -> Fulin Elementary School -> Cui Shanzhuang -> Zhongshe Rd 11th Lane -> Community Development Assn -> Cuishan Police Substation -> Zhongshe RdSec1 Lane 61 Entrance -> ZhongyangSta -> Zhongshe Rd 17th Lane -> Shuangxi Elementary School -> Mingxi St -> Cuishan St -> Shuangxi Stop 2 -> Shuangxi Sta 1 -> Shuangxi Sta -> Shuangxi Community -> Mt Dalunwei Trail Entrance -> Mt Dalunwei[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own three-stage fare on a corridor this short, or its own narrow published window, was found in this search, nor a stated reason for pairing 雙溪 with 士林市場 specifically as the route's own termini.

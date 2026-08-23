@@ -60,6 +60,22 @@ Tamsui District Office (V07), Binhai Yishan (V08) and Danhai New Town
 (V10).[^tdx-bus] The route runs a single subroute under one operator,
 淡水客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R37 Via The Ocean Communty; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R37 Via The Ocean Communty (23 stops):** Xinshi Station -> Huangchengjiatianxia Community -> Houzhou & Xinshi 3rd Rd Intersection -> Ideal Home Community(Xinshi 2nd Rd) -> Danhai Elementary School -> LRT Danhai New Town Sta -> The Ocean Community -> Ocean Square -> No3 Ocean City -> Yishan & Xinshi 2nd Rd Intersection -> Sec1,Yishan Rd -> Tianshuijun Community -> LRT Tamsui District Office Sta -> Zhongshan & Binhai Intersection -> Tamsui administrative center -> Wailiao -> Mifenliao -> Shuiduizi -> Dinghao -> North Tamsui -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+**R37 Via The Ocean Communty (23 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> BeiTamsui -> Dinghao -> Shuiduizi -> Mifenliao -> Wailiao -> Tamsui administrative center -> LRT Tamsui District Center Sta -> Tianshuijun Community -> Jieyun yuejing Community -> Sec1,Yishan Rd -> Yishan & Xinshi 2nd Rd Intersection -> No3 Ocean City -> Ocean Square -> The Ocean Community -> LRT Danhai New Town Sta -> Xinshi 2nd Rd Sec 2 -> Danhai Elementary School -> Ideal Home Community(Xinshi 2nd Rd) -> Houzhou & Xinshi 3rd Rd Intersection -> Huangchengjiatianxia Community -> Xinshi Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for this route or

@@ -62,6 +62,22 @@ Minquan W. Rd., Taipei Bridge and Sanchong.[^tdx-bus] The route runs a
 single subroute under one operator, 中興巴士, weekdays only with
 holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 227Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**227(Shuttle) (22 stops):** Xiangong Temple -> Boai New Village -> Sanchong Vocational School -> Zhongxiao & Sanmin Intersection -> Donghai High School -> Sanmin St -> Sanchong Revenue Service -> Cailiao(Chongyang Rd) -> MRT Sanchong Sta -> Jimei St -> Sanchong High School -> Xinxing Rd -> Libaozhixing Community -> Chongan St Entrance(Zhongzheng S Rd) -> Zhongzheng S Rd -> Datong Rd Entrance -> GuoyuanTheater -> MRTTaipeiBridge -> Sanchong Police Station (Chongxin Rd) -> MRT Minquan W Rd Station -> Minquan and Zhongshan Intersection -> MRT Zhongshan Elementary School Sta[^tdx-bus]
+
+**227(Shuttle) (27 stops):** Xinxing Junior High School (Xinsheng) -> Jusheng village -> Xinxing Junior High School -> Minquan and Zhongshan Intersection -> MRT Minquan W Rd Station -> Minquan & Dalong Intersection -> Sanchong Police Station (Chongxin Rd) -> MRT Taipei Bridge Sta -> Tiantai Square -> Datong Rd Entrance -> Zhongzheng S Rd -> Chongan St Entrance(Zhongzheng S Rd) -> Libaozhixing Community -> Xinxing Rd -> Sanchong High School -> Jimei St -> Chongxin Bridge -> Fuzhi Village(Hongren Hospital) -> MRT Sanchong Station -> Cailiao 1 -> Tax Administration -> Sanmin St -> Donghai High School -> Zhongxiao & Sanmin Intersection -> Sanchong Vocational School -> Boai New Village -> Xiangong Temple[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the route's own holiday suspension, unlike its own all-week sibling 227, was found in this search.

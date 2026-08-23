@@ -62,6 +62,22 @@ under one operator, 大南汽車, with a markedly shorter published span,
 0900–1900, than most other minibus routes in this batch, several of
 which start service before 0600.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S39; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S39 (10 stops):** Xinbeitou Historic Sta -> Beitou Hot Spring Museum (Beitou Plum Garden) -> Yinguang Lane Entrance (Puji Temple) -> Youya Rd No7 -> Spring City Resort -> Youya Rd No35 -> Beitou Museum/Beitou Grotto for the Buddhist Deity Acala -> Quanyuan Bieshu -> Mituo Temple (Sulfur Valley) -> Datong House[^tdx-bus]
+
+**S39 (7 stops):** Mituo Temple (Sulfur Valley) -> Quanyuan Bieshu -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School(Beitou Heart Village) -> Xinbeitou Historic Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for this route's own late 0900 start, well after the neighbouring Beitou-area minibus routes sharing much of the same catchment, was found in this search, nor a stated reason for the short published corridor compared to those neighbours.

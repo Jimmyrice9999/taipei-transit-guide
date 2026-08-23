@@ -66,6 +66,22 @@ The confirmed stop sequence runs 9 stops from 立體停車場(五股公有市場
 
 The full New Taipei route-service row publishes endpoints “五股-臺北車站”; published distance 26.8 km; service span Weekdays: 去程：0710-1840；返程：0710-1840; Holidays: 去程：0800-2000；返程：0800-2000; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 582 Industrial Dist.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**582 Industrial Dist (9 stops):** Parking Lot(Wugu Market) -> Bourgeois Exhibit Center -> Shixiang -> Zhengchang Motors -> Standard Factory -> Management Center -> MRT New Taipei Industrial Park Sta -> Zhongxing Hospital -> Taipei Main Sta (Zhengzhou)[^tdx-bus]
+
+**582 Industrial Dist (9 stops):** Taipei Main Sta (Zhongxiao) -> MRT New Taipei Industrial Park Sta -> Wugong and Fuhui Intersection -> Management Center -> Standard Factory -> Zhengchang Motors -> Shixiang -> Bourgeois Exhibit Center -> Parking Lot(Wugu Market)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

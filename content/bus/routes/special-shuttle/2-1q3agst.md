@@ -63,6 +63,20 @@ Zhishan interchange.[^tdx-bus] The route runs a single subroute under
 two operators, 光華巴士 and 中興巴士, the same two operators running 兒樂
 1號線.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for TPE Child's Amuse. Park 2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Taipei Children's Amusement Park 2 (11 stops):** Taipei Children's Amusement Park -> Fugang St -> Chengde Rd Sec 4 -> Danan Rd Entrance -> MRT Jiantan Sta (Taipei Performing Arts Center) -> Shilin Market (Ming Chuan Hostel) -> Civil Service Housing -> Shilin Admin Center -> Astronomical Museum -> National Taiwan Science Education Center -> Taipei Children's Amusement Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the two children's-park routes running on opposite calendars — this one every day, 兒樂1號線 only on holidays — was found in this search.

@@ -62,6 +62,22 @@ station confirmed for the separate 市民小巴11, which runs the same
 street pattern.[^tdx-bus] The route runs a single subroute under one
 operator, 光華巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M16; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M16 (15 stops):** Tianmu Circle -> Chungying Shanzhuang -> Shuiguan Rd -> Tianmu Village -> Tianha Village -> Tianmu Library -> Dongha Park -> TianShan Li -> Taipei Municipal School of Special Education -> Tianmu Baseball Stadium (Zhongcheng) -> Lanya Junior High School -> Lanya New Village -> Yunong Elementary School -> Zhongcheng park -> MRT Zhishan Sta (Fuguo)[^tdx-bus]
+
+**M16 (16 stops):** MRT Zhishan Sta (Taiwan Traditional Theatre Center) -> Dexing W Rd -> Zhongshan N Rd Entrance (Dexing) -> Zhongcheng park -> Yunong Elementary School -> Lanya New Village -> Lanya Junior High School -> Tianmu Baseball Stadium (Zhongcheng) -> Taipei Municipal School of Special Education -> TianShan Li -> Dongha Park -> Tianmu Library -> Tianha Village -> Tianmu Village -> Old Tianmu Hiking Trail -> Tianmu Circle[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for running two separately numbered minibus routes over the same 天母-芝山 pairing, rather than publishing one route with branching stops, was found in this search.

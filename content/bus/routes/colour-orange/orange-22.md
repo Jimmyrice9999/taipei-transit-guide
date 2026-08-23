@@ -67,6 +67,22 @@ itself.[^tdx-bus] Its 三重客運新莊站 operator contact is a New Taipei dis
 point distinct from the several other 三重客運 stations named across this
 project's colour-orange coverage.[^ebus-o22]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O22; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O22 (20 stops):** Xinshu & Minan Intersection(Xintai Hospital) -> Xisheng -> Dongfangzhixing -> Xishengguan -> Jiaqixintiandi -> Zhengfeng -> Qionglin S Rd 1 -> Qionglin S Rd 2 -> Qionglin S Rd 3 -> Qionglin S Rd 4 -> Qionglin S Rd 5 -> Qiongying Lane Intersection -> Xinzhuang Farmers Association -> Fengnian Elementary School -> Institute for the Blind -> Haishan Village -> Xintai Rd Entrance -> MRT Xinzhuang Sta(Xinzhuang Post Office) -> Xinzhuang Elementary School -> Baoyuan Temple[^tdx-bus]
+
+**O22 (23 stops):** Dazhong Temple -> MRT Xinzhuang Station -> MRT Xinzhuang Sta(Xinzhuang Post Office) -> Xintai Rd Entrance -> Haishan Village -> Jingde Rd Entrance -> Fengnian Elementary School -> Qiongtai Activity Center -> Xinzhuang Farmers Association Qionglin Branch -> Qiongying Lane Intersection -> Zhangcuo -> Qionglin S Rd 5 -> Qionglin S Rd 4 -> Qionglin S Rd 3 -> Qionglin S Rd 2 -> Qionglin S Rd 1 -> Zhengfeng -> Xisheng 1 -> Jiaqixintiandi -> Xishengguan -> Dongfangzhixing -> Xisheng -> Xinshu & Minan Intersection(Xintai Hospital)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

@@ -58,6 +58,26 @@ confirmed interchange is recorded in the curated stop-ID join set: Shipai
 subroutes, matching the schedule page's own school-day 天母國中 return
 variant.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for R19; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R19 (11 stops):** Tianmu -> National Training Institute of Farmers' Organizations -> Tianmu New Village -> Tianmu Square -> Qifu Mansion -> Qixian Mansion -> Veterans General Hospital I -> Veterans General Hospital -> Yongming Police Substation -> General Market (MRT Shipai Sta) -> MRT Shipai Sta (Xi’an)[^tdx-bus]
+
+**R19 (10 stops):** MRT Shipai Sta (Donghua) -> General Market (MRT Shipai Sta) -> Yongming Police Substation -> Veterans General Hospital -> Cheng Hsin Park -> Qixian Mansion -> Qifu Mansion -> Tianmu Square -> Tianmu New Village -> Tianmu[^tdx-bus]
+
+**R19 (11 stops):** Tianmu -> National Training Institute of Farmers' Organizations -> Tianmu New Village -> Tianmu Square -> Qifu Mansion -> Qixian Mansion -> Veterans General Hospital I -> Veterans General Hospital -> Yongming Police Substation -> General Market (MRT Shipai Sta) -> MRT Shipai Sta (Xi’an)[^tdx-bus]
+
+**R19 (11 stops):** MRT Shipai Sta (Donghua) -> General Market (MRT Shipai Sta) -> Yongming Police Substation -> Veterans General Hospital -> Cheng Hsin Park -> Qixian Mansion -> Qifu Mansion -> Tianmu Junior High School -> Tianmu Square -> Tianmu New Village -> Tianmu[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

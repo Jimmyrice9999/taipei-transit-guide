@@ -64,6 +64,22 @@ and Banxin.[^tdx-bus] The route runs a single subroute under one
 operator, 大南汽車, detouring via 明德路 and 捷運海山站 at the Tucheng end,
 distinct from 265經中央路's own direct routing via 中央路.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 265Mingde Rd.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**265Mingde (48 stops):** Tucheng Sta -> Xueshi Rd Entrance -> MRT Haishan Sta -> Mingde Rd Sec 2 -> Mingde Rd -> Rixin Village -> Huorao Village -> Zhongyang Rd -> Zhongyang 1st Stop -> Nanya Stop -> Oriental University of Science & Technology -> Xinyi Rd -> Post Office -> Shoude New Village -> Chongqing Junior High School -> Chongqing & Zhongxiao Rd Intersection -> Zhongxiao Rd -> Zhongxing Hospital -> Fuxing Village -> Xiangyun Village -> Old Banqiao Sta Shopping Circle -> Jieshou Park -> Minquan Rd Entrance -> New Taipei City Hall(Xinfu Rd) -> NTPC Banqiao Bus Station -> New Taipei City Hall(Zhongshan Rd) -> Zhongshan Hansheng Rd Intersection -> MRT Banxin Sta -> Zhongshan Rd Entrance -> Zhenglong Square(Banxin Rd) -> Taiwan Water Company -> Changshou Village -> Puqian(Sanmin Rd) -> Puqian Police Station -> Guangfu Bridge -> Xiyuan Rd Sec 2 -> Huajiang High School (Xiyuan) -> Fashion Institute of Taipei -> Dali Garments -> MRT Longshan Temple Sta -> Longshan Junior High School -> Xiaonanmen -> MRT Ximen Sta -> Zhonghua Rd N Stop -> Taipei Main Sta (Zhongxiao) -> MRT Shandao Temple Sta -> Chenggong High School (Linsen) -> Legislative Yuan[^tdx-bus]
+
+**265Mingde (43 stops):** Taipei Main Sta (Zhongxiao) -> Zhonghua Rd N Stop -> MRT Ximen Sta -> Xiaonanmen -> Guilin and Kunming Intersection -> Guilin Rd -> Longshan Temple (Xiyuan) -> Dali Garments -> Fashion Institute of Taipei -> Huajiang High School (Xiyuan) -> Xiyuan Rd Sec 2 -> Guangfu Bridge -> Puqian Police Station -> Puqian(Sanmin Rd) -> Changshou Village -> Taiwan Water Company -> Zhenglong Square(Banxin Rd) -> Zhongshan Rd Entrance -> Zhongshan Hansheng Rd Intersection -> New Taipei City Hall(Zhongshan Rd) -> NTPC Banqiao Bus Station -> New Taipei City Hall(Xinfu Rd) -> Minquan Rd Entrance -> Banqiao Bus Terminal Extension -> Old Banqiao Sta Shopping Circle -> Xiangyun Village -> Fuxing Village -> Zhongxing Hospital -> Zhongxiao Rd -> Chongqing & Zhongxiao Rd Intersection -> Chongqing Junior High School(Guoqing Rd) -> Post Office -> Xinyi Rd -> Oriental University of Science & Technology -> Nanya Stop -> Zhongyang Rd -> Huorao Village -> Rixin Village -> Mingde Rd -> Mingde Rd Sec 2 -> MRT Haishan Sta -> Xueshi Rd Entrance -> Tucheng Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for splitting these two near-identical corridors into separately labelled route numbers rather than named subroutes of one 265 was found in this search.

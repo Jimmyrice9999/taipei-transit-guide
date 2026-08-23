@@ -66,6 +66,22 @@ The confirmed stop sequence runs 20 stops from 三峽二站, past 姑娘廟, the
 
 The full New Taipei route-service row publishes endpoints “三峽-中和高中”; published distance 31.6 km; service span Weekdays: 去程：0625-0625；返程：0625-0625; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Sanxia-Zhonghe High School; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Sanxia-Zhonghe High School (20 stops):** Sanxia Stop 2 -> Guniang Temple -> Fuxing Rd -> Sanxia Old St(Fuxing Rd) -> JiaoXi Village -> Jieshou Elementary School -> Hengxi -> Mazutian -> MRT Mazutian Sta(Taiyangcheng Community) -> MRT Dingpu Sta -> Danuan Rd Entrance -> Tucheng Junior High School -> MRT Yongning Station -> Tucheng Dist Office -> MRT Tucheng Station -> Zhongzheng Junior High School -> Banqiao District Court -> Yongfeng Rd Entrance -> Transformer Station -> Zhonghe High School[^tdx-bus]
+
+**Sanxia-Zhonghe High School (13 stops):** Transformer Station -> Yongfeng Rd Entrance -> New Taipei District Court(Jincheng) -> Zhongzheng Junior High School -> MRT Tucheng Station -> TuCheng Dist Office -> MRT Yongning Station -> Tucheng Junior High School -> Danuan Rd Entrance -> MRT Dingpu Sta -> MRT Mazutian Sta(Taiyangcheng Community) -> Mazutian -> Sanxia Stop 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

@@ -60,6 +60,26 @@ to end at the Maokong Gondola's own 貓空站(小天空步道), one stop short o
 is recorded in the curated stop-ID join set: Wanfang Community (BR03).[^tdx-bus] TDX records two named subroutes distinguishing whether the
 working detours via 小天空步道.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for S10Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S10Shuttle (31 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> MRT Wanfang Community Sta -> Muzha Vocational High School(Wanfang) -> Wanfang Rd Entrance -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Muzha Market -> Zhinan Rd -> National Chengchi University -> National Chengchi U (TCUH) -> Xiaokengkou (Beizheng Jr High School) -> Beizheng Jr High School (Experimental Elementary School of NCCU) -> Sanjiao Park -> National Chengchi U Vieshow -> Shuigangqin Community -> Zhinan Experimental Elementary School -> Shishijiao -> Zhangshan Temple -> South Entrance of Camphor Tree Trail -> Wacuo -> Zhanghu Hiking Trail -> Maokong Gondola Stop -> Tianen Temple -> Tea Promotion Center -> Maokong Pothole Sta -> Maokong Sta (Mini Skywalk)[^tdx-bus]
+
+**S10Shuttle (29 stops):** Maokong Sta (Mini Skywalk) -> Tea Promotion Center -> Tianen Temple -> Maokong Gondola Stop -> Shipokeng -> Tianliao Bridge -> North Entrance of Camphor Tree Trail -> Sanjiancuo -> Shishijiao -> Zhinan Experimental Elementary School -> Shuigangqin Community -> Sanjiao Park -> Beizheng Jr High School (Experimental Elementary School of NCCU) -> Xiaokengkou (Beizheng Jr High School) -> National Chengchi University -> Xinguang Rd Entrance -> Zhinan Rd -> Muzha Market -> Muzha -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanfang Rd Entrance -> Muzha Vocational High School(Wanfang) -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+**S10Shuttle (26 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> MRT Wanfang Community Sta -> Muzha Vocational High School(Wanfang) -> Wanfang Rd Entrance -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Muzha Market -> Zhinan Rd -> National Chengchi University -> National Chengchi U (TCUH) -> Xiaokengkou (Beizheng Jr High School) -> Beizheng Jr High School (Experimental Elementary School of NCCU) -> Sanjiao Park -> National Chengchi U Vieshow -> Shuigangqin Community -> Zhinan Experimental Elementary School -> Shishijiao -> Zhangshan Temple -> South Entrance of Camphor Tree Trail -> Wacuo -> Zhanghu Hiking Trail[^tdx-bus]
+
+**S10Shuttle (26 stops):** Maokong Gondola Stop -> Shipokeng -> Tianliao Bridge -> North Entrance of Camphor Tree Trail -> Sanjiancuo -> Shishijiao -> Zhinan Experimental Elementary School -> Shuigangqin Community -> Sanjiao Park -> Beizheng Jr High School (Experimental Elementary School of NCCU) -> Xiaokengkou (Beizheng Jr High School) -> National Chengchi University -> Xinguang Rd Entrance -> Zhinan Rd -> Muzha Market -> Muzha -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanfang Rd Entrance -> Muzha Vocational High School(Wanfang) -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for

@@ -61,6 +61,30 @@ in the curated stop-ID join set: Wanfang Community (BR03) and Qizhang
 (G03).[^tdx-bus] TDX records three named subroutes distinguishing whether
 a working detours via 救千宮 or 捷運七張站.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 6 directional or variant stop sequences for S11; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S11 (23 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> MRT Wanfang Community Sta -> Muzha Vocational High School(Wanfang) -> Wanfang Rd Entrance -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Muzha Market -> Jingwen High School (National Taiwan College of Performing Arts) -> Sifa New Village -> Zhongshun Temple -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Baogao Science and Intellectual Park(Baogao Rd) -> Lane 120 Baogao Rd Entrance -> Ciyin Shanzhuang -> Dachun Shanzhuang[^tdx-bus]
+
+**S11 (22 stops):** Baogao Community -> Baogao Science and Intellectual Park(Baogao Rd) -> Baogao Science and Intellectual Park -> Jingmei Girls High School -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Zhongshun Temple -> Sifa New Village -> Jingwen High School (National Taiwan College of Performing Arts) -> Muzha Market -> Muzha -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanfang Rd Entrance -> Muzha Vocational High School(Wanfang) -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+**S11 (23 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> MRT Wanfang Community Sta -> Muzha Vocational High School(Wanfang) -> Wanfang Rd Entrance -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Muzha Market -> Jingwen High School (National Taiwan College of Performing Arts) -> Sifa New Village -> Zhongshun Temple -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Baogao Science and Intellectual Park(Baogao Rd) -> Lane 120 Baogao Rd Entrance -> Ciyin Shanzhuang -> Dachun Shanzhuang[^tdx-bus]
+
+**S11 (23 stops):** Jiouqian Temple -> Baogao Community -> Baogao Science and Intellectual Park(Baogao Rd) -> Baogao Science and Intellectual Park -> Jingmei Girls High School -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Zhongshun Temple -> Sifa New Village -> Jingwen High School (National Taiwan College of Performing Arts) -> Muzha Market -> Muzha -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanfang Rd Entrance -> Muzha Vocational High School(Wanfang) -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+**S11 (33 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Elementary School -> Wanfang No6 Park -> MRT Wanfang Community Sta -> Muzha Vocational High School(Wanfang) -> Wanfang Rd Entrance -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Muzha Market -> Jingwen High School (National Taiwan College of Performing Arts) -> Sifa New Village -> Zhongshun Temple -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Baogao Science and Intellectual Park(Baozhong Rd) -> Baozhong Rd -> Bank of Taiwan -> Baoqiang Rd Entrance -> Xindian Post Office -> MRT Qizhang Sta -> Beixin Elementary School -> Baoqiao & Zhongxing Intersection -> Baoqiao & Zhongxing Intersection 1 -> Gas Sta -> Baogao Science and Intellectual Park(Baogao Rd) -> Lane 120 Baogao Rd Entrance -> Ciyin Shanzhuang -> Dachun Shanzhuang[^tdx-bus]
+
+**S11 (32 stops):** Baogao Community -> Baogao Science and Intellectual Park(Baogao Rd) -> Baogao Science and Intellectual Park(Baozhong Rd) -> Baozhong Rd -> Bank of Taiwan -> Baoqiang Rd Entrance -> Xindian Post Office -> MRT Qizhang Sta -> Beixin Elementary School -> Baoqiao & Zhongxing Intersection -> Baoqiao & Zhongxing Intersection 1 -> Gas Sta -> Baogao Science and Intellectual Park -> Jingmei Girls High School -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Zhongshun Temple -> Sifa New Village -> Jingwen High School (National Taiwan College of Performing Arts) -> Muzha Market -> Muzha -> Jiukang St Entrance -> Huaxia Village 6 -> Muzha Elementary School -> Wanfang Rd Entrance -> Muzha Vocational High School(Wanfang) -> MRT Wanfang Community Sta -> Wanfang No6 Park -> Wanfang Elementary School -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 8 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for

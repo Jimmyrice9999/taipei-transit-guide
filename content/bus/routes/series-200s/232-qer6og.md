@@ -65,6 +65,22 @@ and last-departure time, “0715 - 0715”, the same unusual pattern seen
 on the separate 218直 and 225區, weekdays only with holiday service
 suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 232Express; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**232(Fast) (30 stops):** Luzhou Bus Terminal -> Wangye Temple Entrance -> National Open Univ(Zhongzheng Rd) -> Zhongyuan Apartment -> Luzhou Elementary School -> Luzhou Motor Vehicles Office -> Luzhou Police Station -> XiQian -> MRT St Ignatius High School -> St Ignatius High School -> Xingfu Market -> Jianhe New Village -> MRT Sanhe Juior High School Sta -> Sanhe Junior High School -> Ger-Jyh Senior High School(Sanhe Rd) -> Zhengyi Post Office -> Huaisheng Junior High School -> Dinghao Market -> MRT Zhongxiao Dunhua Sta -> Apollo Building -> Tourism Administration, MOTC -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> United Daily News -> MRT Taipei City Hall Sta -> Songshan High School of Agriculture and Industry -> MRT Yongchun Sta (Zhongxiao) -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan)[^tdx-bus]
+
+**232(Fast) (29 stops):** Songshan Rail Sta (Songshan) -> Hulin St Entrance -> Yongji Junior High School -> Songlong Rd Entrance -> Songshan High School (Songlong) -> United Daily News -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> Tourism Administration, MOTC -> Apollo Building -> MRT Zhongxiao Dunhua Sta -> Dinghao Market -> MRT Zhongxiao Fuxing Sta -> Zhengyi Post Office -> Houde Police Station -> Ger-Jyh Senior High School(Sanhe Rd) -> Sanhe Junior High School -> MRT Sanhe Juior High School Sta -> Jianhe New Village -> Xingfu Market -> MRT St Ignatius High School -> Minhe Apartment -> XiQian -> Luzhou Police Station -> Luzhou Motor Vehicles Office(Zhongzheng Rd) -> Luzhou Elementary School -> Zhongyuan Apartment -> National Open Univ(Zhongzheng Rd) -> Wangye Temple Entrance -> Luzhou Bus Terminal[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the identical head and last-departure time was found in this search — whether this reflects a single daily trip or a data-entry artefact in the source schedule is not settled by the data pulled for this page.

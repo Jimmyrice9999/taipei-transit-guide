@@ -64,6 +64,26 @@ specific route at all — the two spans cover different parts of the day
 depending on the day type, rather than one span shrinking on
 holidays.[^ebus-g9gengxin]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for G9Gengxin; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G9Gengxin (25 stops):** Great Xiangshan -> Daxiang mountain Trailhead -> Songlan Grange -> Mingren Village -> Dadi Shiji -> Changchun Rd -> Daqian Haojing -> Lantian Dadi -> International House -> Jiangpo Huacheng Ａ -> Jiangpo Huacheng Ｃ -> Daqian Riverview sentry -> Daqian Haojing -> Daqian Riverview sentry -> Jiangpo Huacheng Ｃ -> Hua Jiang Bo City Area A -> International House -> Wufeng Junior High School -> Zhongzheng Rd -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Minzu and Beixin Intersection -> Dafeng Elementary School -> Minzu Rd Entrance(Cardinal Tien Hospital)[^tdx-bus]
+
+**G9Gengxin (26 stops):** Zhongzheng Public Housing -> Chongguang High School -> Zhongzheng Rd Entrance -> Qizhang(Beixin Rd) -> Qizhang(Baoqiao Rd) -> Baoqiao and Zhongxing Intersection -> Zhongxing&Zhongzheng Rd Intersection -> Wufeng Junior High School -> International House -> Jiangpo Huacheng Ａ -> Jiangpo Huacheng Ｃ -> Daqian Riverview sentry -> Daqian Haojing -> Daqian Riverview sentry -> Jiangpo Huacheng Ｃ -> Hua Jiang Bo City Area A -> International House -> Lantian Dadi -> Daqian Haojing -> Changchun Rd -> Dadi Shiji -> Mingren Village -> Mingren Park -> Songlan Grange -> Daxiang mountain Trailhead -> Great Xiangshan[^tdx-bus]
+
+**G9Gengxin Daqian Haojing (13 stops):** Daqian Haojing -> Daqian Riverview sentry -> Jiangpo Huacheng Ｃ -> Hua Jiang Bo City Area A -> International House -> Wufeng Junior High School -> Zhongzheng Rd -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Minzu and Beixin Intersection -> Dafeng Elementary School -> Minzu Rd Entrance(Cardinal Tien Hospital)[^tdx-bus]
+
+**G9Gengxin Daqian Haojing (13 stops):** Zhongzheng Public Housing -> Chongguang High School -> Zhongzheng Rd Entrance -> Qizhang(Beixin Rd) -> Qizhang(Baoqiao Rd) -> Baoqiao and Zhongxing Intersection -> Zhongxing&Zhongzheng Rd Intersection -> Wufeng Junior High School -> International House -> Jiangpo Huacheng Ａ -> Jiangpo Huacheng Ｃ -> Daqian Riverview sentry -> Daqian Haojing[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to the other 綠9 records remain TBC.[^tdx-bus]

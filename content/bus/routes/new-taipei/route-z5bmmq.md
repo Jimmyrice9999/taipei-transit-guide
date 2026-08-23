@@ -66,6 +66,22 @@ The confirmed stop sequence runs 16 stops from 萬里橋頭, past 武聖街口, 
 
 The full New Taipei route-service row publishes endpoints “萬里橋頭-基湖路口”; published distance 61.8 km; service span Weekdays: 去程：0600-0840；返程：1700-1930; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Wanli-Neihu; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Wanli-Neihu Go (16 stops):** Wanli Bridge -> Wusheng St Entrance -> Qingren Lake Entrance -> Wuling St Entrance -> Xingliao Village -> McGinn Road and happy three blocks -> Womem and Children Welfare Service Center -> Keelung Chang-Gung Memorial Hospital -> Fujing Tainxia Community -> Huxing -> National Defense Medical Center -> MRT Wende Sta (Bihu Park) -> Xihu Library (Huguang Church) -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance[^tdx-bus]
+
+**Wanli-Neihu Back (16 stops):** Jihu Rd Entrance -> Renbao Bldg -> 瑞光港墘路口 -> Xihu Library (Huguang Church) -> MRT Wende Sta (Bihu Park) -> National Defense Medical Center -> Huxing -> Fujing Tainxia Community -> Keelung Chang-Gung Memorial Hospital -> Womem and Children Welfare Service Center -> McGinn Road and happy three blocks -> Xingliao Village -> Wuling St Entrance -> Qingren Lake Entrance -> Wusheng St Entrance -> Wanli Bridge[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

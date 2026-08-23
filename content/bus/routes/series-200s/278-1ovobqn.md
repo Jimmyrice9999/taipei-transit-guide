@@ -64,6 +64,22 @@ Taipower Building and Guting.[^tdx-bus] The route runs a single
 subroute under one operator, 欣欣客運, weekdays only with holiday
 service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 278Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**278(SH) (41 stops):** Jingfu St -> Xikou Elementary School -> MRT Jingmei Sta -> Ministry of Finance Park -> Wanlong -> MRT Wanlong -> Wugong Elementary School (Roosevelt) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> Taipower Building -> MRT Taipower Building Sta -> Roosevelt and Pucheng Intersection -> Roosevelt and Kinmen St Intersection -> MRT Guting Sta (Heping) -> National Taiwan Normal U -> NTNU Union Building 1 -> Wenzhou St Entrance -> Daan Park -> Longmen Jr High School (Heping) -> Fuxing S Rd Entrance -> National Taipei University of Education -> Wolong St -> Chenggong Public Housing -> Daan Junior High School -> Xinyi & Dunhua Intersection -> Renai Junior High School(Institute of Diplomacy) -> Anhe-Dunhua Intersection -> MRT Zhongxiao Dunhua Sta -> Civic Boulevard Entrance -> TTV Enterprise Co -> Meiren Village -> Veterans Service Center -> Nanjing New Village -> Tri-Servics General Hospital Songshan Branch -> Xisong Junior High School -> Jiankang New Village -> Sanmin and Jiankang Intersection (Xisong High School) -> Sanmin Rd -> Guanghe New Village -> Sanmin Elementary School -> Xinyi Village[^tdx-bus]
+
+**278(SH) (42 stops):** Minsheng Junior High School -> Xindong St Entrance -> Sanmin Rd -> Sanmin and Jiankang Intersection (Xisong High School) -> Jiankang New Village -> Xisong Junior High School -> Tri-Servics General Hospital Songshan Branch -> Nanjing New Village -> Po Jen Hospital -> Taipei City Motor Vehicles Office (Guangfu) -> MRT Sun Yat-sen Memorial Hall Sta (Guangfu) -> Tourism Administration, MOTC -> Apollo Building -> MRT Zhongxiao Dunhua Sta -> Dinghao Market -> Huaisheng Junior High School -> TCUH, Renai Branch -> Dongfeng & Fuxing Intersection -> Daan Vocational High School (MRT Daan Sta) -> Kaiping Culinary School -> MRT Technology Building Sta -> Fuxing S Rd Entrance -> National Taipei University of Education -> Longmen Jr High School (Heping) -> Daan Park -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> MRT Guting Sta (Heping) -> Roosevelt and Kinmen St Intersection -> Roosevelt and Pucheng Intersection -> MRT Taipower Building Sta -> Taipower Building -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Wugong Elementary School (Roosevelt) -> MRT Wanlong -> Wanlong -> Ministry of Finance Park -> MRT Jingmei -> Xikou Elementary School -> Jingfu St[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension, unlike its own all-week sibling 278, was found in this search.

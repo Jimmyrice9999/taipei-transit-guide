@@ -226,6 +226,31 @@ test('frontmatter parses on every content file', () => {
   }
 })
 
+function articleBodyWords(markdown: string) {
+  const body = markdown
+    .replace(/^---[\s\S]*?---/m, '')
+    .replace(/\[\^[^\]]+\]/g, '')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/[^\p{L}\p{N}]+/gu, ' ')
+  return body.trim() ? body.trim().split(/\s+/u).length : 0
+}
+
+test('every bus route article has at least 300 body words', () => {
+  const walk = (dir: string): string[] =>
+    fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+      const full = path.join(dir, entry.name)
+      return entry.isDirectory() ? walk(full) : entry.name.endsWith('.md') && entry.name !== '_index.md' ? [full] : []
+    })
+  const root = path.join(CONTENT, 'bus', 'routes')
+  const short = walk(root)
+    .map((file) => ({ file, words: articleBodyWords(fs.readFileSync(file, 'utf8')) }))
+    .filter(({ words }) => words < 300)
+    .map(({ file, words }) => `${path.relative(process.cwd(), file)} (${words})`)
+  assert.deepEqual(short, [], `short bus route articles: ${short.join(', ')}`)
+})
+
 /* ---- formation notation ------------------------------------------- */
 
 /**

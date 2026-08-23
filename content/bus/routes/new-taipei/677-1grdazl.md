@@ -66,6 +66,22 @@ The confirmed stop sequence runs 37 stops from 社后消防隊, past 社后派�
 
 The full New Taipei route-service row publishes endpoints “汐止社后-金龍寺”; published distance 20.8 km; service span Weekdays: 去程：0600-2100；返程：0600-2100; Holidays: 去程： - ；返程： -; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 677; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**677 (37 stops):** Shehou Fire Brigade -> Shehou Police Station -> Gongjian Rd -> Shuidu Community -> Jhangshu International Creative Technical High School -> Houde Village -> Fuan Temple -> Zhangjiang Bridge 2 -> Zhangjiang Bridge -> Bojue Village -> Fude 1st Rd Entrance -> Duke Villa (I) -> BinHuDaDi -> Minghu New Village -> Hubin Villa -> Huqian St Entrance -> Beifeng Village(Kangning St) -> Jinlong Elementary School(Kangning St) -> Munan Coal Mine -> Economic & Trade Park -> Beishan Village -> Donghu Elementary School -> Wufen Community -> Minghu Junior High School -> Minghu Elementary School (PTS) -> MRT Huzhou Sta (University of Kang Ning) -> Kangning Hospital -> Huangshigong Temple -> Dahu Park -> MRT Dahu Park Sta -> Dahu -> Jinlong Village -> Jinlong Rd Entrance -> Maoshang Village 3 -> Bihu Elementary School (Jinlong) -> Jinlong Tunnel Entrance -> Jinlong Temple[^tdx-bus]
+
+**677 (37 stops):** Jinlong Tunnel Entrance -> Bihu Elementary School (Jinlong) -> Maoshang Village 3 -> Jinlong Rd Entrance -> Xiuhu -> Dahu -> MRT Dahu Park Sta -> Dahu Park -> Huangshigong Temple -> Kangning Hospital -> Kangning Community -> MRT Huzhou Sta (University of Kang Ning) -> Minghu Elementary School (PTS) -> Wufen Community -> Donghu Elementary School -> Beishan Village -> Economic & Trade Park -> Munan Coal Mine -> Jinlong Elementary School(Kangning St) -> Beifeng Village(Kangning St) -> Huqian St Entrance -> Hubin Villa -> Minghu New Village -> BinHuDaDi -> Bojue Village(1) -> Fude 1st Rd Entrance -> Bojue Village -> Zhangjiang Bridge -> Zhangjiang Bridge 2 -> Fuan Temple -> Houde Village -> Jhangshu International Creative Technical High School -> Shuidu Community -> Gongjian Rd -> Zhongxing Rd -> Shehou Police Station -> Shehou Fire Brigade[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

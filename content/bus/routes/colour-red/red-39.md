@@ -59,6 +59,26 @@ terminus.[^tdx-bus] TDX records three named subroutes, 紅39, 紅39東宇花園�
 and 紅39捷運淡水站, apparently distinguishing directional terminus labels
 rather than corridor variants — the same pattern as sibling 紅36.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for R39; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R39 (11 stops):** DongyuGardenCity -> California community -> Chengbao Garden Community -> Motain 31 Community -> Mifenliao -> Shuiduizi -> Dinghao -> North Tamsui -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+**R39 (10 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> BeiTamsui -> Dinghao -> Shuiduizi -> MiFenLiao -> Motain 31 Community -> Chengbao Garden -> California community -> Dongyu Garden City[^tdx-bus]
+
+**R39 DongyuGardenCity (11 stops):** DongyuGardenCity -> California community -> Chengbao Garden Community -> Motain 31 Community -> Mifenliao -> Shuiduizi -> Dinghao -> North Tamsui -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Sta[^tdx-bus]
+
+**R39 MRT Tamsui Sta (10 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> BeiTamsui -> Dinghao -> Shuiduizi -> MiFenLiao -> Motain 31 Community -> Chengbao Garden -> California community -> Dongyu Garden City[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅39 or its

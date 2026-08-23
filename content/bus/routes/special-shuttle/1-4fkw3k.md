@@ -60,6 +60,20 @@ recorded in the curated stop-ID join set: Zhishan (R17), confirmed on
 the outbound leg of the loop.[^tdx-bus] The route runs a single
 subroute under two operators, 光華巴士 and 中興巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for TPE Child's Amuse. Park 1; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Taipei Children's Amusement Park 1 (6 stops):** Taipei Children's Amusement Park -> MRT Zhishan Sta (Fuguo) -> MRT Shilin Sta (Zhongzheng) -> Astronomical Museum -> National Taiwan Science Education Center -> Taipei Children's Amusement Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route running only on holidays, the reverse pattern of most commuter shuttles in this batch, was found in this search — consistent with, but not confirmed by, its own name naming a children's amusement park.

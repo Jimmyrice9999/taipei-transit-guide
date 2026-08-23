@@ -60,6 +60,22 @@ interchange is recorded in the curated stop-ID join set: Zhishan (R17),
 matching the route's own terminus.[^tdx-bus] The route runs a single
 subroute under one operator, 光華巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M11; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M11 (15 stops):** Tianmu Circle -> Chungying Shanzhuang -> Shuiguan Rd -> Tianmu Village -> Tianha Village -> Tianmu Circle -> Tianmu Park -> Heku Train Center -> Tianyu Village -> Tianmu Elementary School -> Tianshou Village -> Laicuo -> Shidong Elementary School -> Lanya Jr Elementary School -> MRT Zhishan Sta (Fuhua)[^tdx-bus]
+
+**M11 (12 stops):** Lanya Jr Elementary School -> Shidong Elementary School -> Laicuo -> Tianshou Village -> Tianyu Village -> Heku Train Center -> Tianmu Park -> Tianmu Circle -> Tianha Village -> Tianmu Village -> Tianmu Historic Hiking Trail -> Tianmu Circle[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for

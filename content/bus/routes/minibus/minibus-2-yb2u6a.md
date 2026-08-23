@@ -62,6 +62,22 @@ the curated stop-ID join set: Beitou (R22) and Xinbeitou (R22A), both
 matching the route's own starting stretch.[^tdx-bus] The route runs a
 single subroute under one operator, 大南汽車.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M2 (15 stops):** MRT Beitou Sta (Beitou) -> Beitou Police Stn -> Beitou Market (Huanggang) -> Beitou Market (Gongguan) -> Beitou Juior High School -> Aaqua Bella Hotel -> Wenquan&Qiyan RdIntersection -> Atami Hotel -> Puji Temple -> Yinguang Lane Entrance -> Youya Rd Entrance -> Fazang Temple -> Zhongxin St Entrance -> Citizens Hostel (Beitou community college) -> Beitou Hot Spring Museum[^tdx-bus]
+
+**M2 (5 stops):** Beitou Park (Zhongshan) -> Beitou Park -> First Commercial Bank -> Beitou Police Stn -> MRT Beitou Sta (Yuren)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the outbound and return workings differing so sharply in stop count was found in this search, nor a stated reason for pairing 捷運北投站 with 溫泉路 specifically as the route's own termini, rather than a nearer named stop.

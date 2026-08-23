@@ -55,6 +55,22 @@ The full official schedule gives termini “汐止 - 松山車站”, the curren
 
 The confirmed stop sequence runs from 東方山河社區, past 國泰醫院/汐止/汐科站北站/遠東科技中心, through 捷運南港展覽館站/南港展覽館/南港, along 興華路/東新國小/中國電視公司/南港分局, ending at 玉成國小/南港路三段/松山磚廠/玉成里/松山車站, a shorter run than the plain 605 and 605新台五, which both continue past 松山車站 into central Taipei.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei Nangang Exhibition Center (BL23/BR24) and Songshan (G19), both confirmed for its longer siblings too.[^tdx-bus] The route runs a single subroute under one operator, 中興巴士, weekdays only with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 605Sub; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**605(Sub) (30 stops):** Dongfang Shanhe Community -> Xiangzhang Rd Sec 1 -> Cathay General Hospital -> Xizhi -> Xizhi Park -> Xizhi Elementary School -> Xike Science Park Sta N -> Far Eastern Technology Center -> Xike Science Park Sta S -> Haotianling -> United Daily News -> Zhang Shu Wan -> South Zhang Shu River Band -> Tifn Liang Satellite TV -> Hengke -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> TWTC Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Dist Admin Center(Nangang Rail Sta) -> Xinghua Rd -> Dongxin Elementary School -> China Television Company -> Nangang Police Dist (Chongyang) -> Yucheng Elementary School -> Xixin Village (Xinxin Park) -> Nangang Rd Sec 3 -> Songshan Brick Factory -> Yucheng Village -> Songshan Rail Sta[^tdx-bus]
+
+**605(Sub) (27 stops):** Yucheng Village -> Songshan Brick Factory -> Nangang Rd Sec 3 -> Xixin Village (Xinxin Park) -> Yucheng Elementary School -> Nangang Police Dist (Chongyang) -> China Television Company -> Dongxin Elementary School -> Xinghua Rd -> Nangang Dist Admin Center(Nangang Rail Sta) -> Nangang Vocational High School (Nangang Rd) -> Nangang -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> Hengke -> Fusin Hotel -> South Zhang Shu River Band -> Zhang Shu Wan -> United Daily News -> Haotianling -> Xike Science Park Sta S -> Xike Science Park Sta N -> Xizhi Elementary School -> Xizhi Junior High School -> Xizhi -> Cathay General Hospital -> Xiangzhang Rd Sec 1 -> Dongfang Shanhe Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for terminating at 松山車站 rather than continuing into central Taipei as the plain 605 does over much of the same corridor was found in this search.

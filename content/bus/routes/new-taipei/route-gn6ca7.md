@@ -66,6 +66,22 @@ The confirmed stop sequence runs 14 stops from 三峽二站, past 學成大成�
 
 The full New Taipei route-service row publishes endpoints “三峽-捷運台大醫院站”; published distance 57.6 km; service span Weekdays: 去程：0630-1740；返程：0630-1740; Holidays: 去程： - ；返程： -; fare 三段票 / 3 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Sanxia-National Taiw; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Sanxia-National Taiw (14 stops):** Sanxia Stop 2 -> Xuecheng & Dacheng Intersection -> Bei mei guan Community -> Shinrin Park -> Xuechin Rd -> Nat'l Taipei U (Main Gate) -> Xuecheng Rd -> EnChuKong Hospital -> MRT Fuzhong Station -> Wanhua Rail Sta -> MRT Ximen Sta -> Baoqing Rd -> Taiwan Museum (Xiangyang) -> MRT NTU Hospital Station[^tdx-bus]
+
+**Sanxia-National Taiw (13 stops):** Hengyang Rd -> MRT Ximen Sta -> Wanhua Rail Sta -> NTPC Banqiao Bus Station -> MRT Fuzhong Station -> EnChuKong Hospital -> Xuecheng Rd -> Nat'l Taipei U (Main Gate) -> Xuechin Rd -> Shinrin Park -> Shangsham Ruoshui Community -> Xuecheng & Dacheng Intersection -> Sanxia Stop 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

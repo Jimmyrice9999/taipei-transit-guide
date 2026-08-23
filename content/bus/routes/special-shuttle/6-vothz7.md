@@ -62,6 +62,22 @@ High School (O51), matching a stop early in the route's own corridor.[^tdx-bus] 
 客運, on a two-stage fare, weekdays only with holiday service
 suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for NH6; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NH6 (17 stops):** Luzhou Bus Terminal -> XiQian -> MRT Sanhe Juior High School Sta -> Delin Temple(Sanhe Rd) -> Changyuan WSt Entrance -> Datong Rd Entrance -> Chongan St Entrance(Zhongzheng S Rd) -> Xinhu 1st Rd Entrance -> Xinhu and Jiuzong Intersection -> Unitech Building -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop[^tdx-bus]
+
+**MH6 (18 stops):** Jihu Stop -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Unitech Building -> SoutheastBusParkingLot -> Xinhu and Jiuzong Intersection -> Xinhu 1st Rd Entrance -> Chongan St Entrance(Zhongzheng S Rd) -> Datong Rd Entrance -> Changyuan WSt Entrance -> Delin Temple(Sanhe Rd) -> MRT Sanhe Juior High School Sta -> XiQian -> Luzhou Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 蘆洲站 with the Neihu Science Park specifically as the route's own termini.

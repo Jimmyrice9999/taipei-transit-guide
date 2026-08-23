@@ -67,6 +67,22 @@ point distinct from every other named contact in this project's
 colour-orange coverage, which otherwise cluster around Sanchong, Wugu and
 Luzhou.[^ebus-o10]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O10 (37 stops):** Taishan  Sta(Taishan Rd) -> Leeming Institute Of Technology -> Shanjiao Bridge -> Taishan Jr High School -> Military Police Training Center -> Taishan Elementary School -> Taishan Post Office -> Mingzhi and Heping Intersection -> Dake Bridge -> Far Eastern Logistic Co -> Deyin Elementary School -> Mingde Rd Entrance -> Maoshang Public Housing -> Zhulin Road -> Zhushun General Temple -> Apartments for the Elderly -> Ziqiang Rd Entrance -> Ming Ri Shi Jie -> Military Police Academy -> Penglaikeng -> Wugu Elementary School -> Wugu Service Center -> Parking Lot(Wugu Market) -> Zhongyuan & Changan Intersection -> Zhengyi Park -> Changrong & Zhongyuan Intersection -> Changrong & Guangming Intersection -> Yongping Market -> Changrong Rd -> MRT Luzhou Sta -> Renai Elementary School -> Renai St Entrance -> Minzu & Minyi Intersection -> Shueihe Village -> EStopName -> EStopName -> Minquan Rd Entrance[^tdx-bus]
+
+**O10 (33 stops):** EStopName -> EStopName -> National Open Univ(Sanmin Rd) -> Minzu Rd Entrance -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Changrong & Guangming Intersection -> Changrong & Zhongyuan Rd -> Changrong & Guangming Intersection -> Changrong & Zhongyuan Intersection -> Parking Lot(Wugu Market) -> Zhongyuan & Changan Intersection -> Wugu Elementary School -> Penglaikeng -> Wugu Elementary School -> Penglaikeng -> Ziqiang Rd Entrance -> Apartments for the Elderly -> Zhushun General Temple -> Zhulin Road -> Maoshang Public Housing -> Mingde Rd Entrance -> Deyin Elementary School -> Ming Ri Shi Jie -> Deyin Elementary School -> Mingzhi and Heping Intersection -> Taishan Post Office -> Taishan Station -> Taishan Post Office -> Taishan Elementary School -> Military Police Training Center -> Leeming Institute Of Technology[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

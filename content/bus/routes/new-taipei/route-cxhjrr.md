@@ -66,6 +66,20 @@ The confirmed stop sequence runs 10 stops from 捷運蘆洲站, past 捷運三�
 
 The full New Taipei route-service row publishes endpoints “捷運蘆洲站-內湖科技園區”; published distance 17.2 km; service span Weekdays: 去程：0715-0800；返程：0715-0800; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for MRT Luzhou Sta.-Neihu Tech. Park; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**MRT Luzhou Sta-Neihu Tech Park (10 stops):** MRT Luzhou Sta -> MRT Sanmin Senior High School -> MRT St Ignatius High School -> MRT Sanhe Juior High School Sta -> Ger-Jyh Senior High School(Sanhe Rd) -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Renbao Bldg -> Jihu Rd Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

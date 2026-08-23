@@ -64,6 +64,26 @@ the stop sequence's own text.[^tdx-bus] TDX also records a "繞駛世界山莊"
 (detour via Shijie Villa) variant adding one stop, 世界山莊(和平), to the
 Wenshan end of the route.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for Heping Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Heping Metro Bus (34 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Police Substation -> Dept of Civil Servant Development -> Wanmei Community -> Wanfang Public Housing -> Wanning St -> WanNing Shanzhuang -> Mingmen Community -> Wolong New Village -> Dawoxinshe -> Linguang -> Lizhong Market -> Fuyang St Entrance -> MRT Liuzhangli Sta (Heping) -> Heping and Anhe intersection -> Wolong St -> National Taipei University of Education -> Fuxing S Rd Entrance -> National Taipei University of Education Experiment Elementary School -> Longmen Jr High School (Heping) -> Daan Park -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> MRT Guting Sta (Heping) -> Roosevelt and Chaozhou Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> MRT CKS Memorial Hall Station -> Jingfu Gate -> NTU Hospital -> Taipei Main Sta (Zhongxiao) -> Chongqing S Road Sec 1 -> 2/28 Peace Park[^tdx-bus]
+
+**Heping Metro Bus (34 stops):** Boai Rd -> Taipei Post Office -> Taipei Main Sta (Zhongxiao) -> MRT Shandao Temple Sta -> Taipei Kainan High School -> Renai and Linsen Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> Nanchang Rd Furniture Market -> MRT Guting Sta (Heping) -> National Taiwan Normal U -> NTNU Union Building 1 -> Wenzhou St Entrance -> Daan Park -> Longmen Jr High School (Heping) -> Fuxing S Rd Entrance -> National Taipei University of Education -> Wolong St -> Heping and Anhe intersection -> MRT Liuzhangli Sta (Heping) -> Fuyang St Entrance -> Lizhong Market -> MRT Linguang Sta -> Linguang -> Dawoxinshe -> Wolong New Village -> Mingmen Community -> WanNing Shanzhuang -> Wanning St -> Wanfang Public Housing -> Wanmei Community -> Dept of Civil Servant Development -> Wanfang Police Substation -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+**Heping Metro Bus (34 stops):** Wanfang Community -> Wanfang Activity Center -> Wanfang Police Substation -> Dept of Civil Servant Development -> Wanmei Community -> Wanfang Public Housing -> Wanning St -> WanNing Shanzhuang -> Mingmen Community -> World Shanzhuang (Heping) -> Dawoxinshe -> Linguang -> Lizhong Market -> Fuyang St Entrance -> MRT Liuzhangli Sta (Heping) -> Heping and Anhe intersection -> Wolong St -> National Taipei University of Education -> Fuxing S Rd Entrance -> National Taipei University of Education Experiment Elementary School -> Longmen Jr High School (Heping) -> Daan Park -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> MRT Guting Sta (Heping) -> Roosevelt and Chaozhou Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> MRT CKS Memorial Hall Station -> Jingfu Gate -> NTU Hospital -> Taipei Main Sta (Zhongxiao) -> Chongqing S Road Sec 1 -> 2/28 Peace Park[^tdx-bus]
+
+**Heping Metro Bus (34 stops):** Boai Rd -> Taipei Post Office -> Taipei Main Sta (Zhongxiao) -> MRT Shandao Temple Sta -> Taipei Kainan High School -> Renai and Linsen Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> Nanchang Rd Furniture Market -> MRT Guting Sta (Heping) -> National Taiwan Normal U -> NTNU Union Building 1 -> Wenzhou St Entrance -> Daan Park -> Longmen Jr High School (Heping) -> Fuxing S Rd Entrance -> National Taipei University of Education -> Wolong St -> Heping and Anhe intersection -> MRT Liuzhangli Sta (Heping) -> Fuyang St Entrance -> Lizhong Market -> MRT Linguang Sta -> Linguang -> Dawoxinshe -> World Shanzhuang (Heping) -> Mingmen Community -> WanNing Shanzhuang -> Wanning St -> Wanfang Public Housing -> Wanmei Community -> Dept of Civil Servant Development -> Wanfang Police Substation -> Wanfang Activity Center -> Wanfang Community[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the transfer discount's creation date remain TBC.[^tdx-bus]

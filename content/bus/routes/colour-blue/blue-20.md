@@ -58,6 +58,26 @@ stop-ID join set: Kunyang (BL21), Nangang (BL22) and Wende (BR18).[^tdx-bus]
 TDX records two subroutes, 藍20經三總 and 藍20不經三總, matching the schedule
 page's bypass note for 三軍總醫院內湖.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BL20 Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B20 Shuttle (32 stops):** Nangang Vocational High School 1 -> Nangang Rail Sta -> Nangang Depot -> MRT Kunyang -> MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> National Defense Medical Center -> Tri-Service General Hospital -> Jiangjun Ling -> St Francis High School -> Neihu High School -> MRT Wende Sta (Bihu Park) -> Huguang Public Housing -> Xihu Library (Huguang Church) -> Kangqian -> Lishan High School (Gangqian) -> Lishan High School (Huanshan) -> Lishan New Village -> Huanshan Rd -> Takming U of Science and Technology (Huanshan Rd) -> Xihu Junior High School -> Zhipan New Village -> Wenhu Elementary School -> Miramar -> Jingye 4th Rd -> Dazhi Meiti Garden 2 -> Dazhi Meiti Garden 3[^tdx-bus]
+
+**B20 Shuttle (34 stops):** Jingye 3rd Rd 1 -> Dazhi Meiti Garden 3 -> Jingye 4th Rd -> Miramar -> Wenhu Elementary School -> Zhipan New Village -> Xihu Junior High School -> TakMing Collage (HuanShan) -> Huanshan Rd -> Lishan New Village -> Lishan High School (Huanshan) -> Lishan High School (Gangqian) -> Kangqian -> Xihu Library (Huguang Church) -> Huguang Public Housing -> MRT Wende Sta (Bihu Park) -> Neihu High School -> St Francis High School -> Jiangjun Ling -> Tri-Service General Hospital -> National Defense Medical Center -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang -> MRT Kunyang -> Ministry of Health and Welfare -> Nangang Depot -> Nangang Rail Sta -> Nangang Vocational High School 1 -> Nangang Vocational High School (Chongyang)[^tdx-bus]
+
+**B20 Shuttle (31 stops):** Nangang Vocational High School 1 -> Nangang Rail Sta -> Nangang Depot -> MRT Kunyang -> MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> National Defense Medical Center -> Jiangjun Ling -> St Francis High School -> Neihu High School -> MRT Wende Sta (Bihu Park) -> Huguang Public Housing -> Xihu Library (Huguang Church) -> Kangqian -> Lishan High School (Gangqian) -> Lishan High School (Huanshan) -> Lishan New Village -> Huanshan Rd -> Takming U of Science and Technology (Huanshan Rd) -> Xihu Junior High School -> Zhipan New Village -> Wenhu Elementary School -> Miramar -> Jingye 4th Rd -> Dazhi Meiti Garden 2 -> Dazhi Meiti Garden 3[^tdx-bus]
+
+**B20 Shuttle (33 stops):** Jingye 3rd Rd 1 -> Dazhi Meiti Garden 3 -> Jingye 4th Rd -> Miramar -> Wenhu Elementary School -> Zhipan New Village -> Xihu Junior High School -> TakMing Collage (HuanShan) -> Huanshan Rd -> Lishan New Village -> Lishan High School (Huanshan) -> Lishan High School (Gangqian) -> Kangqian -> Xihu Library (Huguang Church) -> Huguang Public Housing -> MRT Wende Sta (Bihu Park) -> Neihu High School -> St Francis High School -> Jiangjun Ling -> National Defense Medical Center -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang -> MRT Kunyang -> Ministry of Health and Welfare -> Nangang Depot -> Nangang Rail Sta -> Nangang Vocational High School 1 -> Nangang Vocational High School (Chongyang)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the bypass's creation date and rationale remain TBC.[^tdx-bus] Which of the two subroutes runs more frequently, and whether the bypass

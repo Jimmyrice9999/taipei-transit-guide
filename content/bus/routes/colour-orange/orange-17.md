@@ -67,6 +67,22 @@ contact is a different 大都會客運 dispatch point from the 大都會客運�
 contact 橘18 and 橘18福隆路 share, the same operator running separate feeders
 from separate stations rather than one shared depot.[^ebus-o17]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O17; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O17 (44 stops):** Zhongyang & Changping Intersection -> Vision of Zhonggang Main Drainage -> MRT Xinzhuang Dubduxin Sta(Zhongyang Rd) -> Zhongping Rd 1 -> Zhongyuan Rd -> Zhongyuan Village -> Zhongyuan Rd 1 -> Touqian Junior High School(Zhongyuan Rd) -> Touqian Junior High School -> Siyuan Rd & New Taipei Blvd Intersection -> MRT New Taipei Industrial Park Sta -> Wugong and Fuhui Intersection -> Management Center -> Standard Factory -> Wuquan 3rd & Wugong Intersection -> Wuquan 3rd Rd -> Laborers Activity Center -> Bourgeois Exhibit Center -> Shixiang -> Wuquan & Wugong 3nd Intersection -> Jixiang Building -> Xinghua Elementary School -> Gengliao Elementary School -> Datong New Village -> Yongan Village -> Jiuqiong St Entrance -> Jiuqiong Temple -> Wanquan Market -> Changrong & Guanghua Intersection -> Changrong & Zhongyuan Intersection -> Changrong & Guangming Intersection -> Yongping Market -> Changrong Rd -> MRT Luzhou Sta -> Renai Elementary School -> Renai St Entrance -> Minzu & Minyi Intersection -> Shueihe Village -> Loucuo 1 -> Xinyi Village -> Yuqing Temple -> Daqing Community -> Lujiang Elementary School(Minzu Rd) -> MRT Sanmin Senior High School[^tdx-bus]
+
+**O17 (43 stops):** MRTSanMin High School -> Daqing Community -> Yuqing Temple -> Xinyi Village -> Loucuo 1 -> Minzu & Minyi Intersection -> Renai St Entrance -> Renai Elementary School -> Minzu Rd Entrance -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Changrong & Guangming Intersection -> Changrong & Zhongyuan Rd -> Changrong & Guanghua Intersection -> Wanquan Market -> Jiuqiong Temple -> Jiuqiong St Intersection -> Yongan Village -> Datong New Village -> Gengliao Elementary School -> Xinghua Elementary School -> Jixiang Building -> Wuquan & Wugong 2nd Intersection -> Wuquan & Wugong 3nd Intersection -> Shixiang -> Industry and Commerce Exhibit Center -> Laborers Activity Center -> Wuquan 3rd Rd -> Wuquan 3rd & Wugong Intersection -> Standard Factory -> Management Center -> MRT New Taipei Industrial Park Sta -> Siyuan Rd & New Taipei Blvd Intersection -> Touqian Junior High School -> Touqian Junior High School(Zhongyuan Rd) -> Zhongyuan Rd 1 -> Zhongyuan Village -> Zhongyuan Rd -> Zhongyuan & Zhongping Intersection -> Xinzhuang Joint Office Tower Executive Yuan -> MRT Xinzhuang Dubduxin Sta(Zhongyang Rd) -> Vision of Zhonggang Main Drainage[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

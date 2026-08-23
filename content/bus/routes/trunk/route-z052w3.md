@@ -67,6 +67,22 @@ the stop text (大直國小 for Dazhi, 麗山國中 and 恕德家商 near Gangqi
 Xihu), which this project's sourcing discipline records as confirmed by
 stop-ID rather than by name.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Neihu Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Neihu Metro Bus (51 stops):** Nanliao(Zhong 3rd St Entrance) -> Kanghu Tunnel Entrance(Baima Shanzhuang) -> Wufenpi -> Donghu Junior High School -> Kangle St -> Donghu Community -> Donghu Elementary School -> Wufen Community -> Minghu Junior High School -> Minghu Elementary School (PTS) -> MRT Huzhou Sta (University of Kang Ning) -> Kangning Hospital -> Huangshigong Temple -> Dahu Park -> MRT Dahu Park Sta -> Dahu -> Jinlong Village -> MRT Neihu Sta -> Huguang Market -> Chenggong Rd Sec 3 -> Neihu High School -> MRT Wende Sta (Bihu Park) -> Huguang Public Housing -> Xihu Library (Huguang Church) -> MRT Gangqian Station (Neihu Vocational High School) -> Lishan Jr High School -> Lishan St -> Shude High School of Commerce and Home Economics -> MRT Xihu Station -> Zhipan New Village -> Wenhu Elementary School -> Miramar -> MRT Jiannan Rd Station -> Zihqiang Tunnel -> Zhifu Temple -> MRT Dazhi Station -> Dazhi High School -> Air Force Command Headquarters -> Martyr Shrine -> Radio Taiwan International -> The Grand Hotel -> Taipei Fine Arts Museum -> Tatung U -> Tatung Company (Qingguang Market) -> Taini Building (Mackay Memorial Hospital) -> The Ambassador Hotel -> Zhongshan Market -> Executive Yuan -> Taipei Main Sta (Zhongxiao) -> Chongqing S Road Sec 1 -> 2/28 Peace Park[^tdx-bus]
+
+**Neihu Metro Bus (53 stops):** Boai Rd -> Taipei Post Office -> Taipei Main Sta (Zhongxiao) -> Executive Yuan -> Zhongshan Market -> The Ambassador Hotel -> Taini Building (Mackay Memorial Hospital) -> Tatung Company (Qingguang Market) -> Tatung U -> Taipei Fine Arts Museum -> The Grand Hotel -> Radio Taiwan International -> Martyr Shrine -> CHING-KUO Chihai Cultural Park -> Air Force Headquarters -> Dazhi High School -> Dazhi Elementary School -> MRT Dazhi Station -> Zhifu Temple -> Zihqiang Tunnel (Dazhi Church) -> Zihqiang Tunnel -> MRT Jiannan Rd Station -> Miramar -> Wenhu Elementary School -> Zhipan New Village -> MRT Xihu Station -> Shude High School of Commerce and Home Economics -> Lishan St -> MRT Gangqian Station (Neihu Vocational High School) -> Xihu Library (Huguang Church) -> Huguang Public Housing -> MRT Wende Sta (Bihu Park) -> Neihu High School -> Chenggong Rd Sec 3 -> Huguang Market -> MRT Neihu Sta -> Xiuhu -> Dahu -> MRT Dahu Park Sta -> Dahu Park -> Huangshigong Temple -> Kangning Hospital -> Kangning Community -> MRT Huzhou Sta (University of Kang Ning) -> Minghu Elementary School (PTS) -> Wufen Community -> Donghu Elementary School -> Donghu Community -> Kangle St -> Donghu Junior High School -> Wufenpi -> Kanghu Tunnel Entrance(Baima Shanzhuang) -> Nanliao(Zhong 3rd St Entrance)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

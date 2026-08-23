@@ -60,6 +60,30 @@ four named subroutes — 藍5, 藍5去程半, 藍5返程半 and 藍5去程不上
 last skipping the 拇指山 hillside loop entirely to run direct to the
 terminus.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 6 directional or variant stop sequences for BL5; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B5 (23 stops):** Wuxing St Bus Terminal -> Military Technical Training Ctr -> Mt Muzhishan Hiking Trail -> Jingyun St -> Gongyuan -> Tennis Court -> Ruiyun St Entrance -> Ziyun St Entrance -> Water Tower -> Yicui Shanzhuang -> Tiaomi Park -> Taihe Park -> Taihe Village -> Wuxing St Bus Terminal -> Songren Rd -> Wuxing Elementary School (Songren) -> Xinyi Junior High School (Zhuangjing) -> Taipei Medical U -> Jingxin Village -> World Trade Center (Zhuangjing) -> Taipei 101 -> Taipei City Hall (Songzhi) -> MRT Taipei City Hall Sta[^tdx-bus]
+
+**B5 (22 stops):** City Fire Department (Songren) -> Taipei City Hall (Songzhi) -> Taipei 101 -> World Trade Center (Zhuangjing) -> Jingxin Village -> Taipei Medical U -> Xinyi Junior High School (Zhuangjing) -> Wuxing Elementary School (Zhuangjing) -> Songren Rd -> Military Technical Training Ctr -> Mt Muzhishan Hiking Trail -> Jingyun St -> Gongyuan -> Tennis Court -> Ruiyun St Entrance -> Ziyun St Entrance -> Water Tower -> Yicui Shanzhuang -> Tiaomi Park -> Taihe Park -> Taihe Village -> Wuxing St Bus Terminal[^tdx-bus]
+
+**B5(Taipei City Hall) (23 stops):** Wuxing St Bus Terminal -> Military Technical Training Ctr -> Mt Muzhishan Hiking Trail -> Jingyun St -> Gongyuan -> Tennis Court -> Ruiyun St Entrance -> Ziyun St Entrance -> Water Tower -> Yicui Shanzhuang -> Tiaomi Park -> Taihe Park -> Taihe Village -> Wuxing St Bus Terminal -> Songren Rd -> Wuxing Elementary School (Songren) -> Xinyi Junior High School (Zhuangjing) -> Taipei Medical U -> Jingxin Village -> World Trade Center (Zhuangjing) -> Taipei 101 -> Taipei City Hall (Songzhi) -> MRT Taipei City Hall Sta[^tdx-bus]
+
+**B5(Taipei City Hall) (1 stops):** MRT Taipei City Hall Sta[^tdx-bus]
+
+**B5(Taipei City Hall) (22 stops):** City Fire Department (Songren) -> Taipei City Hall (Songzhi) -> Taipei 101 -> World Trade Center (Zhuangjing) -> Jingxin Village -> Taipei Medical U -> Xinyi Junior High School (Zhuangjing) -> Wuxing Elementary School (Zhuangjing) -> Songren Rd -> Military Technical Training Ctr -> Mt Muzhishan Hiking Trail -> Jingyun St -> Gongyuan -> Tennis Court -> Ruiyun St Entrance -> Ziyun St Entrance -> Water Tower -> Yicui Shanzhuang -> Tiaomi Park -> Taihe Park -> Taihe Village -> Wuxing St Bus Terminal[^tdx-bus]
+
+**B5(Taipei City Hall) (9 stops):** Wuxing St Bus Terminal -> Songren Rd -> Wuxing Elementary School (Songren) -> Xinyi Junior High School (Zhuangjing) -> Taipei Medical U -> Jingxin Village -> World Trade Center (Zhuangjing) -> Taipei 101 -> Taipei City Hall (Songzhi)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 4 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍5 or its own

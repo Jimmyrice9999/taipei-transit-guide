@@ -78,6 +78,22 @@ text.[^tdx-bus] TDX records 敦化幹線 as a single subroute with no separate h
 half-working or detour variant, unlike several other trunk routes in this
 project's coverage that carry two or more.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Dunhua Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Duhua Metro Bus (41 stops):** Linguang -> Lizhong Market -> Fuyang St Entrance -> MRT Liuzhangli Sta (Heping) -> Heping and Anhe intersection -> Chenggong Public Housing -> Daan Junior High School -> Xinyi & Dunhua Intersection -> Renai Junior High School(Institute of Diplomacy) -> Anhe-Dunhua Intersection -> MRT ZhongSiao-DunHua Station -> Civic Boulevard Entrance -> Municipal　gymnasiumn -> Taipei Arena -> Chang-Gung Memorial Hospital -> Fujin St Entrance -> Minquan and Dunhua Intersection -> Minquan and Fuxing Intersection -> Minquan and Longjiang Intersection -> Minquan & Jianguo Intersection -> Minquan and Songjiang Intersection -> Minquan and Jilin Intersection -> Zhongshan Elementary School -> Daojiang High School of Nursing and Home Economics -> Minzu E Rd Entrance -> Jiantan -> Mingchuan U -> Taiwan Power Company North Taipei District Office -> Chiang Kai-Shek Shilin Residence (Zhongshan) -> Fulin Bridge -> Zhongcheng park -> Yunong Elementary School -> Lanya New Village -> Lanya Junior High School -> Tianmu Baseball Stadium (Zhongcheng) -> Taipei Municipal School of Special Education -> Sanyu Temple -> Qifu Mansion -> QiSian Building -> Veterans General Hospital I -> Headquarters, First Constabulary[^tdx-bus]
+
+**Duhua Metro Bus (45 stops):** Veterans General Hospital -> Cheng Hsin Park -> Qixian Mansion -> Qifu Mansion -> Sanyu Temple -> Taipei Municipal School of Special Education -> Tianmu Baseball Stadium (Zhongcheng) -> Lanya Junior High School -> Lanya New Village -> Yunong Elementary School -> Zhongcheng park -> Dexing (Zhongshan & Zhongcheng Rd Intersection) -> Fulin Bridge -> MRT Shilin Sta (Zhongshan ) -> Taiwan Power Company North Taipei District Office -> Mingchuan U -> MRT Jiantan Sta (Zhongshan) -> Jiantan -> Minzu E Rd Entrance -> Daojiang High School of Nursing and Home Economics -> Zhongshan Elementary School -> Minquan and Jilin Intersection -> Minquan and Songjiang Intersection -> Minquan & Jianguo Intersection -> Minquan and Longjiang Intersection -> Minquan and Fuxing Intersection -> Minquan and Dunhua Intersection -> Minquan E Rd Entrance -> Minsheng & Dunhua Intersection -> ChangChun-DunHua Intersection -> Taipei Arena -> Bade & Dunhua Intersection -> Civic Blvd and Dunhua Intersection -> ZhongSiao-DunHua Intersection -> Renai and Dunhua Intersection -> Dunhua & Xinyi Intersection -> Daan Junior High School -> Chenggong Public Housing -> Fengchu Park -> Heping and Anhe intersection -> MRT Liuzhangli Sta (Heping) -> Fuyang St Entrance -> Lizhong Market -> MRT Linguang Sta -> Linguang[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

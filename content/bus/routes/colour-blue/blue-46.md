@@ -60,6 +60,22 @@ confirms along an overlapping 頂埔-area stretch, though 藍45 additionally
 confirms a fourth, Yongning, that 藍46 does not.[^tdx-bus] The route runs a single
 subroute under one operator, 臺北客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL46; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL46 (33 stops):** NCSIST-Guangwu Campus -> Jiali Community -> Erjiou -> Zhongyang Community -> Mingde Senior High School -> Dapu -> Zhongzheng Rd Sec 2 -> Cheliao -> XiQian -> DaTong Bridge 1 -> DaTong Bridge -> Formosa Plastics Corporation -> Anxi Junior High School -> Datong Rd -> Jieshou Village -> Jieshou Elementary School -> Yihua -> Jusheng Company -> Yuantanzigou -> Xinan Village -> Lincuo -> Hengxi -> Jieshou Rd Sec 3 -> Gas Sta -> Xibei Village -> MRT Changshoushan Sta -> Changshoushan -> Demen Temple -> Mazutian -> MRT Mazutian Sta(Taiyangcheng Community) -> Dingpu Elementary School -> Dingpu -> MRT Dingpu Sta[^tdx-bus]
+
+**BL46 (34 stops):** Tucheng Industrial Dist -> Danuan Rd Entrance -> MRT Dingpu Sta -> Dingpu -> Dingpu Elementary School -> MRT Mazutian Sta(Taiyangcheng Community) -> Mazutian -> Demen Temple -> Changshoushan -> MRT Changshoushan Sta -> Xibei Village -> Gas Sta -> Jieshou Rd Sec 3 -> Hengxi -> Lincuo -> Xinan Village -> Yuantanzigou -> Jusheng Company -> Yihua -> Jieshou Village -> Datong Rd -> Anxi Junior High School -> Formosa Plastics Corporation -> DaTong Bridge -> DaTong Bridge 1 -> XiQian -> Cheliao -> Zhongzheng Rd Sec 2 -> Dapu -> Mingde Senior High School -> Zhongyang Community -> Erjiou -> Jiali Community -> NCSIST-Guangwu Campus[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

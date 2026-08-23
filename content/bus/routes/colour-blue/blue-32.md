@@ -60,6 +60,22 @@ interchange (BL07/Y16).[^tdx-bus] The route runs a single subroute under
 one operator, 臺北客運, with no recorded holiday variant or short
 working.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL32; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL32 (21 stops):** Taipei Bus Nanya Station(Hua-dong St) -> Xinyi Elementary School -> Xinyi Park -> Yihua Textile -> Xinyi Rd -> Old Banqiao Sta -> Chongqing Elementary School -> Wuquan St Entrance -> Shoude New Village -> Chongqing Junior High School -> Chongqing & Zhongxiao Rd Intersection -> Houpu Elementary School -> Taipei County Auditing Office -> Jieshou Park -> Wanping Park -> NTPC Banqiao Bus Station -> Xinmin Village -> Hansheng Post Office -> Tangchen Mansion -> Wende Elementary School -> New Taipei City Hospital(Banqiao Branch)[^tdx-bus]
+
+**BL32 (20 stops):** Xinhai Police Sta -> Hansheng W Rd -> Xinmin Village -> NTPC Banqiao Bus Station -> Banqiao Bus Terminal Extension -> Old Banqiao Sta Shopping Circle -> Taipei County Auditing Office -> Houpu Elementary School -> Chongqing & Zhongxiao Rd Intersection -> Chongqing Junior High School -> Wuquan St Entrance -> Chongqing Elementary School -> Old Banqiao Sta -> Yihua Textile -> Xinyi Park -> Xinyi Elementary School -> Nanya Stop -> Oriental University of Science & Technology -> MRT Far Eastern Hospital Station -> Taipei Bus Nanya Station(Hua-dong St)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍32 or a

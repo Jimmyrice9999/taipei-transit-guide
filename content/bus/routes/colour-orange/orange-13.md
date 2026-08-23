@@ -68,6 +68,22 @@ contrasts with 橘20's two named variants and 橘19/橘19副's separate route
 records, a simpler structure than several sibling feeders in this
 batch.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O13; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O13 (21 stops):** Jixiang St Entrance -> New Taipei Senior High School -> Fenziwei -> Jixian Rd -> Nijialagua Park -> MRT St Ignatius High School Station (Jixian Rd) -> Minhe Apartment -> XiQian -> Luzhou Police Station -> Luzhou Motor Vehicles Station -> Heping Rd Entrance -> Zhenghe St Entrance -> Changrong & Guanghua Intersection -> Zhengyi Park -> Zhongyuan & Changan Intersection -> Zhongxing Rd Sec 3 -> Parking Lot(Wugu Market) -> Bank SinoPac -> Community Activity Center -> Daoyi Bridge -> Wufu Rd[^tdx-bus]
+
+**O13 (22 stops):** Wufu Rd Ring -> Wufu Rd -> Daoyi Bridge -> Community Activity Center -> Bank SinoPac -> Wugu Services Society -> Wugu District Office(Wugu Market) -> Zhongyuan & Changan Intersection -> Zhengyi Park -> Changrong & Guanghua Intersection -> Zhenghe St Entrance -> Heping Rd Entrance -> Luzhou Motor Vehicles Office -> Luzhou Police Station -> XiQian -> MRT St Ignatius High School -> NiJiaLaGua Park -> Jixian Rd -> Wuhua St Entrance -> Carrefour -> New Taipei Senior High School -> Jixiang Rd Intersection[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

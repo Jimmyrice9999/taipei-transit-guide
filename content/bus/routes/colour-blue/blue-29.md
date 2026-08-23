@@ -60,6 +60,22 @@ Bannan–Songshan/Xindian interchange (BL11/G12) — and Beimen (G13).[^tdx-bus]
 The route runs a single subroute under one operator, 欣欣客運, the same
 company that runs neighbouring 藍28.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL29; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B29 (29 stops):** Huazhong Riverside Park -> Wholesale Fruit and Vegetable Market -> Guangren Elementary School -> Qingnian Rd Police Substation -> Qingnian Rd -> Zhongzheng New Village -> Qingnian Community -> Youth Park (Qingnian) -> Youth Park (Guoxing) -> Guoxing Rd Entrance 1 -> Guting Junior High School -> Wanhua Hospital -> Guoxing Community -> Guoxing Rd Entrance 1 -> Guoxing Rd Entrance -> Zhonghua and Nanhai Intersection -> Nanjichang Apartment -> Xizang Rd -> Wanda Rd -> Juguang Rd Entrance -> Wanhua Station -> Longshan Temple (Bopiliao) -> Laosong Elementary School -> Kunming Activity Center -> Kunming St -> Taipei Municipal Hospital of Tradodional Chinese Medicine -> FuxingPark -> Luoyang Parking Lot -> TCUHZhongxinBranch[^tdx-bus]
+
+**B29 (29 stops):** MRT Beimen Station -> Wanhua Sports Center -> ZhongHua HanKou Intersection -> Zhonghua Rd N Stop -> MRT Ximen Sta -> Xiaonanmen -> Guilin and Kunming Intersection -> Laosong Elementary School -> Longshan Temple (Kangding) -> Wanhua Station -> Juguang Rd Entrance -> Wanda Rd -> Xizang Rd -> Shaan Village -> Nanjichang Apartment -> Zhonghua and Nanhai Intersection -> Guoxing Rd Entrance -> Guting Junior High School -> Wanhua Hospital -> Guoxing Community -> Youth Park (Guoxing) -> Youth Park (Qingnian) -> Qingnian Community -> Zhongzheng New Village -> Qingnian Rd -> Qingnian Rd Police Substation -> Guangren Elementary School -> Wholesale Fruit and Vegetable Market -> Huazhong Riverside Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

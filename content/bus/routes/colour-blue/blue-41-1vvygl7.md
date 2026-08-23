@@ -58,6 +58,22 @@ curated stop-ID join set: Jingan, a Zhonghe–Xinlu/Circular interchange
 (O02/Y11), and Yongan Market (O03).[^tdx-bus] The route runs a single
 subroute under one operator, 基隆客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL41; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL41 (33 stops):** Yuanfu Village -> Rihe Village -> Yumin Rd Entrance -> MRT Haishan Station -> Yumin Rd -> New Taipei Vocational High School(Yumin) -> Yumin Square -> Guangchuan Hospital -> Qingshui -> Qingshui & Liren Intersection -> Qingshui Elementary School -> Qingshui New Village -> Mingde Rd -> Yongfeng Rd Entrance -> Pinghe Village -> Transformer Station -> Drivers Training Center -> Zhonghe High School -> Liancheng Rd -> Zhongzheng Village I -> New Taipei City Zhonghe Civil Sports Center -> Jinhan High School -> Zhonghe Stop -> Yuantong Rd Lane 305 -> Shuang Ho Hospital -> Lixing Village -> Yuantong Rd Entrance -> Zhongxing St Entrance -> MRT Jingan Sta -> Jingxin St Entrance -> Anhe Rd Entrance -> Huatai Xincheng -> MRT Yongan Market Sta[^tdx-bus]
+
+**BL41 (35 stops):** Yonghe Rd Intersection -> Ziyou St Entrance -> Ziqiang St Entrance -> Yonghe Rd Entrance -> MRT Yongan Market Sta -> Huatai Xincheng -> Anhe Rd Entrance -> Jingxin St Entrance -> MRT Jingan Sta -> Lixing Village -> Shuang Ho Hospital -> Shuangho Hospital -> Jinhe Rd Entrance -> New Taipei City Zhonghe Civil Sports Center -> Liancheng Rd Entrance -> Liancheng Rd -> Zhonghe High School -> Drivers Training Center -> Transformer Station -> Pinghe Village -> Yongfeng Rd Entrance -> Mingde Rd -> Qingshui New Village -> Qingshui Elementary School -> Qingshui & Liren Intersection -> Qingshui -> Yumin Rd Entrance -> Guangchuan Hospital -> Yumin Square -> Haishan Vocational High School -> Yumin Rd -> MRT Haishan Sta -> Yumin Rd Entrance -> Rihe Village -> Yuanfu Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and any dated relationship to 藍41延和 remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

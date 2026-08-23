@@ -65,6 +65,22 @@ Bridge, Cailiao and Xinyi Anhe.[^tdx-bus] The route runs a single
 subroute under one operator, 首都客運, with a slightly earlier weekday
 start than its own holiday span.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 292; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**292 (40 stops):** Erchong Station -> Xiangong Temple -> Boai New Village -> Sanchong Vocational School -> Donghai High School -> Sanmin St -> Tax Administration -> Cailiao(Chongyang Rd) -> Cailiao(Chongxin Rd) -> MRT Cailiao Sta -> Zhong Shan Yishu Park -> Datong Rd Entrance -> Guoyuan Theater -> MRT Taipei Bridge Sta -> Sanchong Police Station (Chongxin Rd) -> Chengyuan High School -> Minsheng W Rd Entrance -> MRT Zhongshan Sta (Zhiren High School) -> Nanjing & Linsen Intersection -> Nanjing & Jilin Intersection -> MRT Songjiang Nanjing Sta -> Nanjing & Jianguo Intersection -> Nanjing & Longjiang Intersection -> MRT Nanjing Fuxing Station -> Bade & Dunhua Intersection -> CivicBlvdandDunhuaIntersection -> ZhongXiao-DunHua Intersection -> Renai and Dunhua Intersection -> Renai & Anhe Intersection -> Renai Elementary School -> MRT XinYi-AnHe Sta (AnHe) -> XinYi-TongHua Intersection -> XinYi & GuangFu Intersection -> Wuxing St Entrance -> Sanxing Elementary School (Linjiang St Night Market) -> George Vocational High School of Taipei -> MRT Liuzhangli Sta (Heping) -> Fuyang St Entrance -> Lizhong Market -> Terminal Stop MRT LinGuang Station[^tdx-bus]
+
+**292 (42 stops):** Lizhong Market -> Fuyang St Entrance -> MRT Liuzhangli Sta (Heping) -> George Vocational High School of Taipei -> Sanxing Elementary School (Linjiang St Night Market) -> Wuxing St Entrance -> World Trade Center (Keelung Rd) -> XinYi & GuangFu Intersection -> XinYi-TongHua Intersection -> MRT XinYi-AnHe Sta (Xinyi) -> Xinyi & Dunhua Intersection -> Renai Junior High School(Institute of Diplomacy) -> Anhe-Dunhua Intersection -> MRT Zhongxiao Dunhua Sta -> CivicBoulevardEntrance -> Municipal　gymnasiumn -> MRT Nanjing Fuxing Station -> Nanjing & Longjiang Intersection -> Nanjing & Jianguo Intersection -> MRT Songjiang Nanjing Sta -> Nanjing & Jilin Intersection -> Nanjing & Linsen Intersection -> MRT Zhongshan Sta (Zhiren High School) -> Jiancheng Park -> Minsheng W Rd Entrance -> Chengyuan High School -> Minquan & Dalong Intersection -> Sanchong Police Station (Chongxin Rd) -> MRT Taipei Bridge Sta -> Tiantai Square -> Datong Rd Entrance -> Zhongshan Art park -> MRT Cailiao Sta -> Cailiao(Chongxin Rd) -> Cailiao -> Tax Administration -> Sanmin St -> Donghai High School -> Sanchong Vocational School -> Boai New Village -> Terminal Stop XianGong Temple -> Erchong Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for pairing 二重 with 捷運麟光站 specifically as the route's own termini was found in this search, nor for the fare remaining a flat two-section rate over the whole confirmed corridor.

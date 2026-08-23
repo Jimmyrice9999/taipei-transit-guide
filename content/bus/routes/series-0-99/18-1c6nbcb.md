@@ -61,6 +61,22 @@ the 萬華 terminus in the route name.[^ebus-18] Route 18 is one of two routes i
 this group's four operated by 欣欣客運 (Shin-Shin Bus) rather than 大都會客運
 (Metropolitan Bus).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 18; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**18 (34 stops):** Huajiang Stop -> Renshou Village 1 -> Dali High School -> Huajiang Police Station -> Longshan Elementary School -> Wanhua Police Sta -> Guilin Rd -> Kunming Activity Center -> Neijiang St -> Ximen Market (Hanzhong) -> Baoqing Rd -> Boai Rd -> Taipei Post Office -> Taipei Main Sta (Zhongxiao) -> NTU Hospital -> MRT Chiang Kai-shek Memorial Hall Sta (Zhongshan ) -> MRT Chiang Kai-shek Memorial Hall Sta (Bureau of Labor Insurance) -> Taipei Water Dept West District Business Office (Ningbo) -> TCUH Branch of Women and Children 1 -> Nanchang Rd Furniture Market -> MRT Guting Sta (Heping) -> National Taiwan Normal U -> NTNU Union Building 1 -> Wenzhou St Entrance -> Daan Park -> Longmen Jr High School (Heping) -> Fuxing S Rd Entrance -> National Taipei University of Education -> Wolong St -> Heping and Anhe intersection -> MRT Liuzhangli Sta (Heping) -> Fuyang St Entrance -> Lizhong Market -> MRT Linguang Sta[^tdx-bus]
+
+**18 (32 stops):** Lizhong Market -> Fuyang St Entrance -> MRT Liuzhangli Sta (Heping) -> Heping and Anhe intersection -> Wolong St -> National Taipei University of Education -> Fuxing S Rd Entrance -> NTUEEES -> Longmen Jr High School (Heping) -> Daan Park -> Wenzhou St Entrance -> NTNU Union Building 1 -> National Taiwan Normal U -> MRT Guting Sta (Heping) -> Roosevelt and Chaozhou Intersection -> MRT Chiang Kai-Shek Memorial Hall (Roosevelt) -> Taipei First Girls High School (Gongyuan) -> MRT NTU Hospital Station -> Taiwan Museum (Guanqian) -> Taipei Main Sta (Kaifeng) -> Chongqing S Road Sec 1 -> 2/28 Peace Park -> Hengyang Rd -> Ximen Market (Chengdu) -> Xining S Rd -> Guilin and Kunming Intersection -> Guilin Rd -> Wanhua Police Sta -> Longshan Elementary School -> Huajiang Police Station -> Liba Community -> Huajiang Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the stop and geometry records; route length and

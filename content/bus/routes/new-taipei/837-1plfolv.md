@@ -66,6 +66,24 @@ The confirmed stop sequence is a there-and-back working of 45 stops from 捷運�
 
 The full New Taipei route-service row publishes endpoints “淡水-竹圍”; published distance 27.4 km; service span Weekdays: 去程：0620-1910；返程：0620-1910; Holidays: 去程：0620-1910；返程：0620-1910; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 3 directional or variant stop sequences for 837Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**837 Shuttle (38 stops):** MRT Tamsui Station -> Sports Park -> Waigan Zhenlin -> Xiaguan -> LRT Ganzhenlin Sta -> ShanHaiDaDi -> LRT Hongshulin Sta -> MRT Hongshulin Sta -> Bashi Village -> Zhuwei Elementary School -> Nursing Home -> Mackay Memorial Hospital -> MRT Zhuwei Sta -> Kid Castle -> Yuhuayuan -> Modeng Family -> Zhuwei Activity Center -> Gongjiu park -> Weige -> Zhulin & Minfu Intersection -> Zhuwei Junior High School -> Zhuwei Elementary School -> Xiayin -> Hanbiyuan -> Shuixian Village -> Gaocuokeng -> MRT Hongshulin Sta -> LRT Hongshulin Sta -> Danjin Rd Lane 16 -> Meigui Huayuan -> Feilengcui -> Hongshulin Rd 3 -> Haiyue Community -> Monaco -> Xiaguan -> Waigan Zhenlin -> SportsPark -> MRT Tamsui Sta[^tdx-bus]
+
+**837 Shuttle Ganzhen 2nd St Fude Temple (41 stops):** MRT Tamsui Station -> Sports Park -> Waigan Zhenlin -> Xiaguan -> LRT Ganzhenlin Sta -> ShanHaiDaDi -> LRT Hongshulin Sta -> MRT Hongshulin Sta -> Bashi Village -> Zhuwei Elementary School -> Nursing Home -> Mackay Memorial Hospital -> MRT Zhuwei Sta -> Kid Castle -> Yuhuayuan -> Modeng Family -> Zhuwei Activity Center -> Gongjiu park -> Weige -> Zhulin & Minfu Intersection -> Zhuwei Junior High School -> Zhuwei Elementary School -> Xiayin -> Hanbiyuan -> Shuixian Village -> Gaocuokeng -> MRT Hongshulin Sta -> LRT Hongshulin Sta -> Danjin Rd Lane 16 -> Meigui Huayuan -> Feilengcui -> Hongshulin Rd 3 -> Haiyue Community -> Monaco -> Xiaguan -> Ganzhen 2nd St 1 -> Ganzhen 2nd St Fude Temple -> Ganzhen 2nd St 2 -> Waigan Zhenlin -> SportsPark -> MRT Tamsui Sta[^tdx-bus]
+
+**837ShuttleB (45 stops):** MRT Tamsui Station -> Sports Park -> Waigan Zhenlin -> Ganzhenlin(Pingding Rd) -> Pingding Rd Lane 52 -> Hongshulin Rd 3 -> Hongshulin Rd 2 -> Hongshulin Rd 1 -> Hongshulin Rd -> Gaocuokeng -> Shuixian Village -> Hanbiyuan -> Xiayin -> Zhuwei Elementary School -> Zhuwei High School -> Zhulin & Minfu Intersection -> Weige -> Gongjiu park -> Zhuwei Activity Center -> MRT Zhuwei Sta -> Kid Castle -> Yuhuayuan -> Modeng Family -> Zhuwei Activity Center -> Gongjiu park -> Weige -> Zhulin & Minfu Intersection -> Zhuwei Junior High School -> Zhuwei Elementary School -> Xiayin -> Hanbiyuan -> Shuixian Village -> Gaocuokeng -> MRT Hongshulin Sta -> LRT Hongshulin Sta -> Danjin Rd Lane 16 -> Meigui Huayuan -> Feilengcui -> Hongshulin Rd 3 -> Haiyue Community -> Monaco -> Xiaguan -> Waigan Zhenlin -> SportsPark -> MRT Tamsui Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 3 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

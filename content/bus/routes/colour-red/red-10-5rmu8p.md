@@ -60,6 +60,22 @@ and Shilin (R16).[^tdx-bus] TDX carries a separate 紅10區 record (canonical
 slug `red-10-19a4vub`) sharing this route's corridor and operator but
 running weekdays only.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R10 (31 stops):** Fuzhou Village -> Taipei University of Maritime Technology -> Fuxian -> Fuzhou Village Sec 9 -> Weiling Temple -> Xiaxi Shawei -> Jianan New Village -> Fuan Elementary School -> Fuzhou Village Sec 8 -> Fuan Junior High School -> Linjiangyuan -> Dizang Temple -> XiaZhuWei -> Taipei City Fire Dept Fuan Sta -> Fuan Village -> Puji Temple -> Shezi Elementary School 2 -> Shezi Elementary School -> Yonoglun Village (south) -> Shezi Police Substation -> Shezi Market2 -> Shezi Market -> Yangming High School -> Shilin Admin Center -> Shilin Jr High School -> MRT Shilin Sta (Zhongzheng) -> MRT Shilin Sta (Zhongshan ) -> Taiwan Power Company North Taipei District Office -> Mingchuan U -> MRT Jiantan Sta (Zhongshan) -> MRT Jiantan Sta (Taipei Performing Arts Center)[^tdx-bus]
+
+**R10 (28 stops):** Xiaobei St -> Shilin Farmers Assn -> Shilin Jr High School -> Shilin Admin Center -> Yangming High School -> Shezi Market -> Sheyuan Village -> Shezi Police Substation -> Yonoglun Village (south) -> Shezi Elementary School -> Yonglun Village (Yanping) -> Zhoumei Bridge -> Zhongku -> Fuan Village -> Taipei City Fire Dept Fuan Sta -> Xiazhuwei -> Dizang Temple -> Linjiangyuan -> Fuan Junior High School -> Fuzhou Village Sec 8 -> Fuan Elementary School -> Jianan New Village -> Xiaxi Shawei -> Weiling Temple -> Fuzhou Village Sec 9 -> Fuxian -> Taipei University of Maritime Technology -> Fuzhou Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅10 was found

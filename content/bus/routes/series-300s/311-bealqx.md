@@ -86,6 +86,26 @@ terminus-end stops were adjusted on 24 January 2018, dropping 三軍總醫院、
 This is a secondary source and was not corroborated against a primary PTO
 or 中興巴士 announcement in this search.
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for 311 Shu.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**311 Shu (27 stops):** Drivers Training Center -> Zhonghe High School -> Liancheng Rd -> Liancheng Zhongzheng Intersection -> Liancheng Jinhe Rd Intersection -> Taimao Village 1 -> National Taxation Bureau Jhonghe Office -> Liancheng & Jingping Rd -> Liancheng Zhonghe Rd Intersection -> Zhonghe Temple -> Zhonghe Police Station -> Nanshan High School -> Shuanghe Village -> Huatai New Village(Yian Rd) -> Yian Road -> Yianjili -> Zhongxing Village 2 -> Zhongxing New Village -> Dehe Rd Entrance -> Yonghe Elementary School -> Jinyin Building -> Fuhe Village -> Fuhe Rd -> Yongfu Bridge -> Water Museum (Dormitory of Prince) -> MRT Gongguan Sta -> Shuiyuan Market[^tdx-bus]
+
+**311 Shu (26 stops):** Fuhe Bridge(Linsen Rd) -> Fuhe Junior High School -> Fuhe Junior High School(Yongjhen Rd) -> Fuhe Rd -> Fuhe Village -> JinYin Building -> Yonghe Elementary School -> Dehe Rd Entrance -> Zhongxing New Village -> Zhongxing Village 2 -> Chih-Kuang Senior Commercial & Industrial Vocational High School -> Yianjili -> Yian Road -> Huatai New Village(Yian Rd) -> Shuanghe Village -> Nanshan High School -> Zhonghe Police Station -> Zhonghe Temple Entrance -> Liancheng Zhonghe Rd Intersection -> Liancheng & Jingping Rd -> National Taxation Bureau Jhonghe Office -> Taimao Village 1 -> Liancheng Jinhe Rd Intersection -> Liancheng Zhongzheng Intersection -> Liancheng Rd -> Zhonghe High School[^tdx-bus]
+
+**311 Shu (27 stops):** Drivers Training Center -> Zhonghe High School -> Liancheng Rd -> Liancheng Zhongzheng Intersection -> Liancheng Jinhe Rd Intersection -> Taimao Village 1 -> National Taxation Bureau Jhonghe Office -> Liancheng & Jingping Rd -> Liancheng Zhonghe Rd Intersection -> Zhonghe Temple -> Zhonghe Police Station -> Nanshan High School -> Shuanghe Village -> Huatai New Village(Yian Rd) -> Yian Road -> Yianjili -> Zhongxing Village 2 -> Zhongxing New Village -> Dehe Rd Entrance -> Yonghe Elementary School -> Jinyin Building -> Fuhe Village -> Fuhe Rd -> Yongfu Bridge -> Water Museum (Dormitory of Prince) -> MRT Gongguan Sta -> Shuiyuan Market[^tdx-bus]
+
+**311 Shu (26 stops):** Fuhe Bridge(Linsen Rd) -> Fuhe Junior High School -> Fuhe Junior High School(Yongjhen Rd) -> Fuhe Rd -> Fuhe Village -> JinYin Building -> Yonghe Elementary School -> Dehe Rd Entrance -> Zhongxing New Village -> Zhongxing Village 2 -> Chih-Kuang Senior Commercial & Industrial Vocational High School -> Yianjili -> Yian Road -> Huatai New Village(Yian Rd) -> Shuanghe Village -> Nanshan High School -> Zhonghe Police Station -> Zhonghe Temple Entrance -> Liancheng Zhonghe Rd Intersection -> Liancheng & Jingping Rd -> National Taxation Bureau Jhonghe Office -> Taimao Village 1 -> Liancheng Jinhe Rd Intersection -> Liancheng Zhongzheng Intersection -> Liancheng Rd -> Zhonghe High School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route

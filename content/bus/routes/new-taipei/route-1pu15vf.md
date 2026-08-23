@@ -66,6 +66,22 @@ The confirmed stop sequence runs 15 stops from 師大(林口校區), past 醒吾
 
 The full New Taipei route-service row publishes endpoints “林口-捷運圓山站”; published distance 57.4 km; service span Weekdays: 去程：0620-1730；返程：1730-1830; Holidays: 去程： - ；返程： -; headway fields Weekdays: 返程林口端提供載客; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Linkou-MRT Yuanshan; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Linkou-MRT Yuanshan Go (15 stops):** Nat'l Taiwan Normal U Linkou Campus -> Hsing Wu University -> Touhu Rd Entrance -> Wenhua 3rd & Zhongshan Intersection -> Glory of the fature -> Swiss Garden Community 9 -> Simcity Societies -> FutureTownCommunity -> Linkou MRT station -> Taipei School for the Hearing Impaired -> Jiuquan and Chongqing Intersection -> Minzu and Chongqing Intersection -> Lanzhou Junior High School -> Minzu & Chengde Intersection -> MRT Yuanshan Station (Yuanshan Transfer Station)[^tdx-bus]
+
+**Linkou-MRT Yuanshan Back (14 stops):** MRT Yuanshan Station (Yuanshan Transfer Station) -> Kulun St -> Dalongtong Baoan Temple -> Jiuquan and Chongqing Intersection -> Taipei School for the Hearing Impaired -> Linkou Bus Station -> FutureTownCommunity -> Simcity Societies -> Swiss Garden Community 9 -> Glory of the fature -> Wenhua 3rd & Zhongshan Intersection -> Touhu Rd Entrance -> Hsing Wu University -> Nat'l Taiwan Normal U Linkou Campus[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

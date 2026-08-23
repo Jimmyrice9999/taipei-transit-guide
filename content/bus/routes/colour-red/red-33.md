@@ -60,6 +60,22 @@ recorded in the curated stop-ID join set: Zhongshan Elementary School
 single subroute under one operator, 首都客運, with fixed two-hourly
 departures rather than a continuous headway.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R33; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R33 (23 stops):** Hulu Temple (Hulu Village) -> Huludu Market -> Haiguang New Village -> Shezi Fire Squad -> Sewage Treatment Plant -> Laoshi Village -> JiuQuan-ChongQing Intersection -> Dalongtong Baoan Temple -> Kulun St -> MRT Yuanshan Sta -> Taipei Expo Park -> Tatung U -> Jingfu Temple -> Zhongshan Elementary School -> Xinxing Junior High School -> Jusheng village -> Gloria Hotel -> Mackay Memorial Hospital -> MRT Shuanglian Sta -> Blessed Imelda's school -> Dihua St -> Dadaocheng Dock -> YanPing Temple[^tdx-bus]
+
+**R33 (26 stops):** TCUH Zhongxin Branch (Xining) -> Nanjing & Xining Intersection -> Minsheng and Xining Intersection -> Dihua St -> Blessed Imelda's school -> Shuanglian Market -> MRT Shuanglian Sta -> Mackay Memorial Hospital -> Gloria Hotel -> Jusheng village -> Xinxing Junior High School -> Zhongshan Elementary School -> Jingfu Temple -> Tatung U -> Taipei Expo Park -> MRT Yuanshan Sta -> Kulun St -> Dalongtong Baoan Temple -> Jiuquan and Chongqing Intersection -> Jiuquan St -> Laoshi Village -> Sewage Treatment Plant -> Shezi Fire Squad -> Haiguang New Village -> Huludu Market -> Hulu Temple (Hulu Village)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅33 was found

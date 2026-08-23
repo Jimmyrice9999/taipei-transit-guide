@@ -66,6 +66,20 @@ The confirmed stop sequence runs 11 stops from 三峽一站, past 新興街口, 
 
 The full New Taipei route-service row publishes endpoints “三峽-臺北市信義區”; published distance 40.5 km; service span Weekdays: 去程：0710-0740；返程：0710-0740; Holidays: 去程： - ；返程： -; fare 三段票 / 3 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for Sanxia-Xinyi Dist. Taipei City; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Sanxia-Xinyi Dist,Taipei City (11 stops):** Sanxia Stop 1 -> Xinxing St Entrance -> Xuecheng & Dacheng Rd -> Daxue and Xuecheng Rd Intersection -> Xuechin Rd -> Daxue Fenglu Community(Xuechin Rd) -> Shinrin Park -> Shangsham Ruoshui Community -> Songshou Rd Entrance -> Taipei City Hall (Songgao Rd) -> Xingya Junior High School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

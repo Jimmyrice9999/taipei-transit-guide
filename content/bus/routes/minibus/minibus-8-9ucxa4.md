@@ -63,6 +63,22 @@ stop-ID join set: Shipai (R19), the same station confirmed for 小8
 itself.[^tdx-bus] The route runs a single subroute under one operator,
 大南汽車, the same operator running 小8 over the longer corridor.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S8Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S8Shuttle (47 stops):** MRT Shipai Sta (Donghua) -> General Market (MRT Shipai Sta) -> Yongming Police Substation -> Veterans General Hospital -> Rongguan New Village (Eastern District of VGH) -> Yongxin Village -> Wufu Temple (Shipai Rd) -> Wufu Temple (Xingyi Rd) -> Huangxi -> Mingshan Temple -> Yonghe Village -> Lane 154 Xingyi Rd -> Lane 186 Xingyi Rd -> Lane 260 Xingyi Rd -> Xingyi Rd hot spring area -> Lane 402 Xingyi Rd -> Dunxu High School of Industry and Commerce -> Datong House -> Shibafeng Fude Temple -> Quanyuan 3rd Bridge -> Zhongzhengshan Hiking Trail -> Shibafenpu -> Zhanggongshengjun Temple -> Lingtou -> Zhanggongshengjun Temple -> Shibafenpu -> Zhongzhengshan Hiking Trail -> Shibafen -> Quanyuan Elementary School -> Dormitory of Quanyuan Elementary School -> Hongshixia -> Wuweilun -> Fengwei -> Dinghu Activity Center -> Dinghu -> Neipu -> Zhounei -> Yangming Park 1 -> Yangming Park -> Yangming Waterfall -> Dakeng Temple -> Hushan Rd Sec 2 -> Yangmingshan Park Visitor Center -> Yangmingshan Car Park (Grass Mountain Residence) -> Dingping -> Hengling Historic Trail -> Second Contiunation Well[^tdx-bus]
+
+**S8Shuttle (48 stops):** Yangmingshan -> Dingping -> Yangmingshan Car Park (Grass Mountain Residence) -> Yangmingshan Park Visitor Center -> Hushan Rd Sec 2 -> Dakeng Temple -> Yangming Waterfall -> Yangming Park -> Yangming Park 1 -> Zhounei -> Neipu -> Dinghu -> Dinghu Activity Center -> Fengwei -> Wuweilun -> Hongshixia -> Dormitory of Quanyuan Elementary School -> Quanyuan Elementary School -> Shibafen -> Quanyuan 3rd Bridge -> Zhongzhengshan Hiking Trail -> Shibafenpu -> Zhanggongshengjun Temple -> Lingtou -> Zhanggongshengjun Temple -> Shibafenpu -> Zhongzhengshan Hiking Trail -> Quanyuan 3rd Bridge -> Shibafeng Fude Temple -> Datong House -> Dunxu High School of Industry and Commerce -> Lane 402 Xingyi Rd -> Xingyi Rd hot spring area -> Lane 260 Xingyi Rd -> Lane 186 Xingyi Rd -> Lane 154 Xingyi Rd -> Yonghe Village -> Mingshan Temple -> Huangxi -> Wufu Temple (Xingyi Rd) -> Wufu Temple (Shipai Rd) -> Yongxin Village -> Rongguan New Village (Eastern District of VGH) -> Veterans General Hospital I -> Veterans General Hospital -> Yongming Police Substation -> General Market (MRT Shipai Sta) -> MRT Shipai Sta (Xi’an)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the out-and-back loop past 嶺頭 rather than a direct pass was found in this search.

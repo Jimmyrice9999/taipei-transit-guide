@@ -66,6 +66,22 @@ The confirmed stop sequence runs 17 stops from 仙公廟, past 三重商工(中�
 
 The full New Taipei route-service row publishes endpoints “三重-內科”; published distance 34.9 km; service span Weekdays: 去程：0645-0645；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 二段票 / 2 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Sanchong-Neihu Tech.Park; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Sanchong-Neihu TechPark Go (17 stops):** Xiangong Temple -> Sanchong Vocational School -> Lixing Rd -> Yongfu St Entrance(Shengyou Temple) -> Xingfu Market -> MRT St Ignatius High School -> Jixian Rd -> Wuhua St -> Ziqiang & Wuhua Intersection -> Chongyang Bridge -> MRT Shilin Sta (Zhongzheng) -> MRT Jiannan Rd Station -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Libao Building[^tdx-bus]
+
+**Sanchong-Neihu TechPark Back (18 stops):** Libao Building -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> MRT Jiannan Rd Station -> MRT Shilin Sta (Zhongzheng) -> Chongyang Bridge -> Wufu Village -> Ziqiang & Wuhua Intersection -> Wuhua St -> Jixian Rd -> MRT St Ignatius High School Sta(Jixian Rd) -> Xingfu Market -> Yongfu St Entrance(Shengyou Temple) -> Lixing Rd -> Sanchong Vocational School -> Xiangong Temple[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

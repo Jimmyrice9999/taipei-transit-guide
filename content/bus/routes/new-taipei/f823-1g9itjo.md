@@ -66,6 +66,22 @@ The confirmed stop sequence runs 43 stops from 分水崙, past 一坑口, then �
 
 The full New Taipei route-service row publishes endpoints “分水崙-福隆”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0630-1540；返程：0740-1705; Holidays: 去程：0630-1540；返程：0740-1705.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for F823; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**F823Fenshuilun (43 stops):** Lun watershed -> Yikengkou -> Jingtongkeng -> Zhongpu -> Pingxi Junior High School -> Pingxi -> Waidian -> Tianzi -> Lingjiao Rail Sta -> Baiying Bridge -> Qinahan Stop -> Nanshan Community -> Shihfenliao Bridge -> 十分寮 -> Pinghu Village -> Chipilun -> Pingshui -> Wanqiong -> Shanglin -> Shanglin Community -> Lincuoqian -> Puwei -> Meizhuxi Rd -> Shuangx High School -> General Market -> Shuangxi Rail Sta -> Yuxing Community -> Xiaosi Temple -> Xiangong Temple -> Dingkeng -> Neicuo -> Xipingdi -> Changtan St -> Gongliao Rail Sta -> Gongliao District Office -> Gongliao Administration Building -> Gong Liu Street -> Gongliao Junior High School -> Shuanglongqiao Rd Entrance -> Dexin Temple -> Yuanwangkengkou -> Kongzi Bridge -> Fulong[^tdx-bus]
+
+**F823Fulong (43 stops):** Fulong -> Kongzi Bridge -> Yuanwangkengkou -> Dexin Temple -> Shuanglongqiao Rd Entrance -> Gongliao Junior High School -> Gong Liu Street -> Gongliao Administration Building -> Gongliao District Office -> Gongliao Rail Sta -> Changtan St -> Xipingdi -> Neicuo -> Dingkeng -> Xiangong Temple -> Xiaosi Temple -> Yuxing Community -> Shuangxi Rail Sta -> General Market -> Shuangxi Senior High School -> Meizhuxi Rd -> Puwei -> Lincuoqian -> Shanglin Community -> Shanglin -> Wanqiong -> Pingshui -> Chipilun -> Pinghu Village -> Shihfenliao -> Shifenliao Bridge -> Nanshan Community -> Qinahan Stop -> Baiying Bridge -> Lingjiao Rail Sta -> Tianzi -> Waidian -> Pingxi -> Pingxi Junior High School -> Zhongpu -> Jingtongkeng -> Yikengkou -> Fenshuilun[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

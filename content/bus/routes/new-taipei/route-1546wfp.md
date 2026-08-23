@@ -66,6 +66,26 @@ The confirmed stop sequence runs 8 stops from 承天路, past 科技公司, then
 
 The full New Taipei route-service row publishes endpoints “土城區公所-南天母廣場”; published distance 8.8 km; service span Weekdays: 去程：0620-1705；返程：0650-1715; Holidays: 去程： - ；返程： -; headway fields Weekdays: 承天路-南天母廣場16:30班次會於16:20土城區公所發車；寒暑假期間僅保留07:05、07:15、17:05、17:15班次; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for Tucheng-Nantianmu Square; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Chengtian Rd-Nantianmu Square (8 stops):** Chengtian Rd -> Technology Co -> Hiking Trail(Intersection) -> Nantianmu Rd -> Nantianmu Rd Lane 52 Entrance -> Nantianmu Rd 1 -> Nantianmu Rd 2 -> Nantianmu Square[^tdx-bus]
+
+**Nantianmu Square-Tucheng Junior High School-Chengtian Rd (10 stops):** Nantianmu Square -> Nantianmu Rd 2 -> Nantianmu Rd 1 -> Nantianmu Rd Lane 52 Entrance -> Nantianmu Rd -> Hiking Trail(Intersection) -> Zhongyi Rd -> Chengtian Rd -> Tucheng Junior High School -> Chengtian Rd[^tdx-bus]
+
+**Nantianmu Square-Chengtian Rd-Tucheng Dist Office (9 stops):** Nantianmu Square -> Nantianmu Rd 2 -> Nantianmu Rd 1 -> Nantianmu Rd Lane 52 Entrance -> Nantianmu Rd -> Hiking Trail(Intersection) -> Zhongyi Rd -> Chengtian Rd -> Tucheng Dist Office[^tdx-bus]
+
+**Nantianmu Square-Chengtian Rd (8 stops):** Nantianmu Square -> Nantianmu Rd 2 -> Nantianmu Rd 1 -> Nantianmu Rd Lane 52 Entrance -> Nantianmu Rd -> Hiking Trail(Intersection) -> Zhongyi Rd -> Chengtian Rd[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 4 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

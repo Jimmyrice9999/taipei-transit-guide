@@ -58,6 +58,22 @@ interchanges for this route, despite the literally-named 捷運士林站 stop
 along the way.[^tdx-bus] The route runs a single subroute under one
 operator, 中興巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R15; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R15 (25 stops):** Taipei Vocational Development Institute 2 -> Zhongxiao New Village -> Zhishan Elementary School -> Dexing and Zhiyu Intersection -> Zhongyi St -> Yunong Elementary School -> Yunong Elementary School -> Zhongcheng park -> Dexing (Zhongshan & Zhongcheng Rd Intersection) -> Fulin Bridge -> MRT Shilin Sta (Zhongzheng) -> Shilin Jr High School -> Shilin Admin Center -> Yangming High School -> Shezi Market -> Shezheng Rd -> Cathay Life Insurance Building -> Shezi Park -> Yongping St Entrance -> Yonglun Village (Shezhong) -> Shezi Elementary School -> Shezi Elementary School -> Yonoglun Village (south) -> Shezi Police Substation -> Shezi Market2[^tdx-bus]
+
+**R15 (13 stops):** Shezi Market -> Yangming High School -> Shilin Admin Center -> Shilin Jr High School -> Fulin Bridge -> Zhongcheng park -> Yunong Elementary School -> TCUH Yangming Branch -> Zhongyi St -> Dexing and Zhiyu Intersection -> Zhishan Elementary School -> Zhongxiao New Village -> Taipei Vocational Development Institute 2[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅15 was found

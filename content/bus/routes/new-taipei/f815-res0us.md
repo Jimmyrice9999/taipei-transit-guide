@@ -66,6 +66,20 @@ The confirmed stop sequence runs 19 stops from 嶺頭觀日, past 三港8鄰, th
 
 The current New Taipei route-service dataset has no row with this exact TDX route identity; route length, service span, headway and fare therefore remain TBC rather than being borrowed from a related route.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for F815; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**F815 (19 stops):** Lingtou Guanri -> Neighborhood 8 Sangang -> Cian Temple -> Shuiwei -> Shuangxi Rail Sta -> General Market -> Taihe Building -> Cizhiling -> Qianzhenkeng Entrance -> Neighborhood 3 Taiping Village -> Houliaozi Entrance -> Hubaotan -> Shoushan Temple -> Taiping 8 Neighborhood(Grocery) -> Liao Jiao Keng -> Baocheng Kengkou -> Shengbao Temple -> Pingxitou -> Wantan[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

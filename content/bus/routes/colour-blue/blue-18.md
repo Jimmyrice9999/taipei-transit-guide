@@ -60,6 +60,22 @@ Banxin (Y15) and Xinpu Minsheng (Y17).[^tdx-bus] TDX records two named
 subroutes, 藍18中和站 and 藍18新莊田徑場(中和里), matching the two schedule-page
 termini and run jointly by two operators, 首都客運 and 臺北客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL18; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL18Zhonghe Sta (33 stops):** Zhonghe Stop -> New Taipei City Zhonghe Civil Sports Center -> Zhongzheng Rd -> Lite-On Electronics Inc -> Zhongshan Rd Entrance -> Bannan Rd Entrance -> Lide St -> International Science Park -> Zhonghe District Household Registration Office(Yuanshan Branch) -> Zhenglong Square -> Military Police Squad -> Minsheng Zongshan Road Intersection -> Banqiao Flower Market -> MRT Xinpu Sta -> MRT Touqianzhuang  Sta (Siyuan Rd) -> Taipei Hospital -> Siyuan & Fuxing Intersection -> Xingfu & Siyuan Intersection -> Xingfu New Village -> Xingfu & Zhonghua Intersection -> Lianbang Community -> Zhonghua & Zhongyuan Intersection -> Zhongyuan Village -> Zhongyuan Rd -> Zhongyuan & Zhongping Intersection -> Zhongping Junior High School -> Xinzhuang High School(Xinzhuang Culture & Arts Center) -> Xinzhuang High School -> Zhongping Rd -> Xintai & Fuxing Intersection -> Xinzhuang Baseball Stadium(Ligong Village Lide Village) -> Xinzhuang Stadium(Ligong Village) -> Xinzhuang Athletic Field(Zhonghe Village)[^tdx-bus]
+
+**BL18Xinzhuang Stadium (32 stops):** Xinzhuang Athletic Field(Zhonghe Village) -> Xinzhuang Stadium(Ligong Village) -> Xinzhuang Baseball Stadium(Ligong Village Lide Village) -> Xintai Junior High School South Stop -> Zhongping Rd -> Xinzhuang High School -> Xinzhuang High School(Xinzhuang Culture & Arts Center) -> Zhongping Junior High School -> Zhongyuan Rd -> Zhongyuan Village -> Zhonghua & Zhongyuan Intersection -> Lianbang Community -> Xingfu & Zhonghua Intersection -> Xingfu New Village -> Xingfu & Siyuan Intersection -> Renyi Village -> Siyuan & Fuxing Intersection -> Taipei Hospital -> MRT Touqianzhuang(Siyuan Rd) -> MRT Xinpu Sta -> Banqiao Flower Market -> Minsheng Zongshan Road Intersection -> Zhenglong Square -> Yuanshan Rd Entrance -> MRT Zhongyuan Sta -> Jieshou Rd Sec 3 -> Bannan Rd Entrance -> Lite-On Electronics Inc -> Xinan Village -> New Taipei City Zhonghe Civil Sports Center -> Jinhan High School -> Zhonghe Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] How the two operators, 首都客運 and 臺北客運, divide the route's departures

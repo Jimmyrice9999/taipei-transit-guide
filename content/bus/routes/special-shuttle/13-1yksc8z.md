@@ -67,6 +67,22 @@ parallels for most of its own run.[^tdx-bus] The route runs two
 half-trip subroutes under one operator, 欣欣客運, on a two-stage fare,
 weekdays only with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for CB13; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**CB13 (34 stops):** Dafeng Elementary School -> Cardinal Tien Hospital(Minzu Rd) -> Cardinal Tien Hospital(Sanmin Rd) -> Gongyuan New Village -> Sanmin Rd -> Zhongzheng Elementary School(Sanmin Rd) -> Investigation Bureau -> Zhonghua Market -> MRT Xindian District Office Sta(Zhonghua) -> Qizhang(Beixin Rd) -> MRT Qizhang Sta -> Xindian Post Office -> Dapinglin -> MRT Ta Pinglin Station -> Hujiang High School -> MRT Jingmei -> Ministry of Finance Park -> Wanlong -> MRT Wanlong -> Wugong Elementary School (Roosevelt) -> National Taiwan Normal University Branch -> Gongguan -> NTUST -> NTU Hospital Gongguan Branch -> Keelung and Changxing Intersection -> Heping High School -> MRT Liuzhangli (Keelung Rd) -> George Vocational High School of Taipei -> Sanxing Elementary School (Linjiang St Night Market) -> Wuxing St Entrance -> World Trade Center (Keelung Rd) -> Taipei City Hall -> City Fire Department (Songren) -> Songshan High School of Agriculture and Industry[^tdx-bus]
+
+**CB13 (34 stops):** Songshan High School of Agriculture and Industry -> Petroleum Building -> Taipei City Hall (Songzhi) -> Taipei City Hall (SongShou) -> World Trade Center (Keelung Rd) -> Wuxing St Entrance -> Sanxing Elementary School (Linjiang St Night Market) -> George Vocational High School of Taipei -> MRT Liuzhangli (Keelung Rd) -> Heping High School -> Keelung and Changxing Intersection -> NTU Cancer Center(Keelung Rd) -> NTUST -> Gongguan -> National Taiwan Normal University Branch -> Wugong Elementary School (Roosevelt) -> MRT Wanlong -> Wanlong -> Ministry of Finance Park -> MRT Jingmei -> Hujiang High School -> MRT Ta Pinglin Station -> Dapinglin -> Xindian Post Office -> MRT Qizhang Sta -> Qizhang(Beixin Rd) -> MRT Xindian District Office Sta(Zhonghua) -> Zhonghua Market -> Zhongzheng Elementary School(Sanmin Rd) -> Sanmin Rd -> Gongyuan New Village -> Cardinal Tien Hospital(Sanmin Rd) -> Cardinal Tien Hospital(Minzu Rd) -> Dafeng Elementary School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for pairing 新店(民族路) with 臺北市政府 specifically as the route's own termini.

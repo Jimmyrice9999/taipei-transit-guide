@@ -66,6 +66,22 @@ The confirmed stop sequence runs 12 stops from 頭湖國小, past 凡爾賽, the
 
 The full New Taipei route-service row publishes endpoints “林口(文化三路)-捷運圓山站”; published distance 48.3 km; service span Weekdays: 去程：0630-1835；返程：0720-1845; Holidays: 去程： - ；返程： -; headway fields Weekdays: 試辦開放林口境內短程載客; fare 二段票 / 2 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Linkou-MRT Yuanshan Sta.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Linkou-MRT Yuanshan Sta Go (12 stops):** Touhu Elementary School -> Versailles Community -> Wenhua 3rd & Zhongshan Intersection -> Wensan & Xinyi Intersection -> Glory of the fature -> Swiss Garden Community 9 -> Simcity Societies -> RotaryPark(Wunhua 3rd) -> FutureTownCommunity -> MRT Linkou Sta -> Taipei School for the Hearing Impaired -> MRT Yuanshan Station (Yuanshan Transfer Station)[^tdx-bus]
+
+**Linkou-MRT Yuanshan Sta Back (11 stops):** Taipei School for the Hearing Impaired -> Linkou Bus Station -> FutureTownCommunity -> RotaryPark(Wunhua 3rd) -> Simcity Societies -> Swiss Garden Community 9 -> Glory of the fature -> Wunhua 3rd & Jixiangi Intersection -> Wenhua 3rd & Zhongshan Intersection -> Versailles Community -> Touhu Elementary School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

@@ -66,6 +66,22 @@ The confirmed stop sequence runs 29 stops from 新市站, past 勤家捷奏社�
 
 The full New Taipei route-service row publishes endpoints “淡海新市鎮-捷運淡水站”; published distance 15.8 km; service span Weekdays: 去程：0752-1750；返程：0752-1750; Holidays: 去程：0752-1750；返程：0752-1750; fare 一段票 / 1 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Lan Hai2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BS2 (29 stops):** Xinshi Station -> Qinjiajiezou  Community -> Taizi Temple -> The Ocean Community -> Ocean Square -> No3 Ocean City -> Yishan & Xinshi 2nd Rd Intersection -> Sec1,Yishan Rd -> LRT Binhai & YI SHAN Intersection Sta -> Kaide Temple -> LRT Binhai Shalun Sta -> Shalun Rd Sec 1 -> Shalun Rd Sec 1 1 -> Tiansheng Community -> Green Avenue -> Dahe Wenming -> Tiansheng Elementary School -> Danjiang New Residentail Quarter -> Shijieguan -> Youchekou -> Huwei Cultural and Arts Park(Martyrs' Shrine) -> VeterInary Research Institute -> Fort Santo Domingo (Aletheia University) -> Little White House (Danshui Precinct) -> Tamsui Liberry -> Chongjian St Intersection -> Yongle Lane Intersection(Zhongshan Market) -> Huanan bank -> MRT Tamsui Station[^tdx-bus]
+
+**BS2 (27 stops):** MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> JhongJian St Entrance -> Tamsui Liberry -> Little White House (Danshui Precinct) -> Fort Santo Domingo (Aletheia U) -> VeterInary Research Institute -> Huwei Cultural and Arts Park(Martyrs' Shrine) -> YouCheKou -> Tamkang New Village -> TianSheng Elementary School -> Dahewenming -> Green Avenue -> Tiansheng Community -> Shalun Rd Sec 1 1 -> Shalun Rd Sec 1 -> LRT Binhai Shalun Sta -> Kaide Temple -> LRT Binhai & YI SHAN Intersection Sta -> Sec1,Yishan Rd -> Yishan & Xinshi 2nd Rd Intersection -> No3 Ocean City -> Ocean Square -> The Ocean Community -> Fengxiang Dist -> Gongersan Park -> Xinshi Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-pioneer][^ntpc-transport]

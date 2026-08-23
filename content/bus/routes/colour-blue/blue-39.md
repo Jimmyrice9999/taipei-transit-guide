@@ -61,6 +61,22 @@ Nangang (BL22) and Taipei Nangang Exhibition Center, a Bannan–Wenhu
 interchange (BL23/BR24).[^tdx-bus] The route runs a single subroute under
 one operator, 光華巴士, the same company that runs 藍21, 藍21副 and 藍23.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL39; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL39 (27 stops):** Shehou Fire Brigade -> LiMing Community -> Taipei Miracle -> Bokeli Day Care Center -> Shenghuo Daguo Community -> Renchingwei Xiaozhen Community -> Fude 1st Rd Entrance -> Bojue Village -> Zhangjiang Bridge -> Zhangjiang Bridge 2 -> Shanguang Zhangshu 2nd Rd 330th Lane Entrance -> Kaishan Temple -> Zhangshu Elementary School -> Jhangshu International Creative Technical High School -> Shuidu Community -> Gongjian Rd -> Zhongxing Rd -> Zhang Shu Wan 1 -> South Zhang Shu River Band -> TIEN LIANG SATELLITE TV -> Hengke -> MRT Nangang Exhibition Hall Station(Nangang Rd) -> Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Rail Sta -> Nangang Dist Admin Center(Nangang Rail Sta)[^tdx-bus]
+
+**BL39 (24 stops):** Nangang Vocational High School (Nangang Rd) -> Nangang -> MRT Nangang Exhibition Hall Station(Nangang Rd) -> Hengke -> Fusin Hotel -> South Zhang Shu River Band -> Zhangshuwan (Datong Rd) -> Gongjian Rd -> Shuidu Community -> Jhangshu International Creative Technical High School -> Zhangshu Elementary School -> Zhangshu Elementary School(Zhangshu 1st Rd) -> Kaishan Temple -> Shanguang Community -> Zhangjiang Bridge 2 -> Zhangjiang Bridge -> Bojue Village -> Fude 1st Rd Entrance -> Kangfu Village -> Shenghuo Daguo Community -> Bokeli Day Care Center -> Taipei Miracle -> Liming Community -> Shehou Fire Brigade[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍39, nor a

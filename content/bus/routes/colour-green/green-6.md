@@ -67,6 +67,22 @@ holiday, is also the same span published for 綠7 and 綠8, though 綠3 —
 otherwise its closest sibling in corridor — closes 30 minutes earlier at
 2200.[^ebus-g6]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G6; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G6 (40 stops):** Mei Zhi Cheng -> Tan Zhi Xiang -> Temporary Stop -> Huangguan Community -> Huacheng Rd -> Huafu Temple -> Huacheng Rd Ln 10 Entrance -> Huacheng Rd Entrance -> Xitou -> MRT Xindian Sta -> Bitan Bridge -> Binlang Rd -> MRT Xindian City Hall Sta(Beixin) -> Zhongzheng Rd Entrance -> Chongguang High School -> Zhongzheng Public Housing -> Cardinal Tien Hospital(Zhongzheng Rd) -> Ershizhang Rd -> Ershizhang Rd Entrance -> Huakaifugui -> Far East Industrial City -> Zhuangjing High School/National Human Rights Museum -> MRT Xiulang Bridge Sta -> Jianshanjiao -> Jingping Jingde Intersection -> MRT Jingping Sta -> ET Plaza -> Nanshijiao(Jingping Rd) -> Zhonghe Church -> MRT Jingan Sta(Jingping Rd) -> Yuantong&Jingping Rd Entrance -> Zhonghe Dist Office (Jingping Rd) -> Taihe St -> Zhonghe Temple -> Zhonghe Police Station -> Nanshan High School -> Shuanghe Village -> Anhe Rd Entrance -> Jingsin St Entrance -> MRT Jingan Sta[^tdx-bus]
+
+**G6 (27 stops):** Zhonghe Church -> Nanshijiao(Jingping Rd) -> MRT Jingping Sta -> Jingping Jingde Intersection -> MRT Xiulang Bridge Sta -> Zhuangjing High School/National Human Rights Museum -> Far East Industrial City -> Huakaifugui -> Ershizhang Rd Entrance -> Ershizhang Rd -> Cardinal Tien Hospital -> Zhongzheng Public Housing -> Chongguang High School -> Zhongzheng Rd Entrance -> MRT Xindian Dist Office Sta(Beixin) -> Binlang Rd -> Bitan Bridge -> MRT Xindian Sta -> Xitou -> Huacheng Rd Entrance -> Huacheng Rd Ln 10 Entrance -> Huafu Temple -> Huacheng Rd -> Huangguan Community -> Temporary Stop -> Tan Zhi Xiang -> Mei Zhi Cheng[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

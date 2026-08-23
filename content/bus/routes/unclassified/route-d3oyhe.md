@@ -63,6 +63,22 @@ away from 景美女中 than travelling back towards it.[^tdx-bus]
 
 The full official schedule gives termini “景美女中 - 榮總”, the current head/last-departure field “[平日] 0520 - 1130 [假日] 停駛”, fare “二段票”.[^ebus-route-route-d3oyhe] It currently lists weekday service and suspended holiday service.[^ebus-route-route-d3oyhe]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Jingmei-T.V.G.H Express; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Jingmei-VGH Shuttle (33 stops):** Far Eastern Century -> Quanqiu Industrial Office -> Jingmei Girls High School -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Guotai New Village (Xinglong) -> Zhongshun St Entrance -> Aged Care Center -> Muzha Park -> Zhongshun St Entrance -> Guotai New Village (Xinglong) -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School -> Muxin Rd Entrance -> Shijian Junior High School -> Zhonggang Pumping Sta -> National Examinations Bldg -> Fuxing Police Substation -> Shih Hsin University -> Jingmei Elementary School (Jingxing) -> Jinhua Park -> Jingxing Junior High School -> Xianguang Apartment -> Jingming St Entrance -> Changan Elementary School (Xinglong) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> Shilin Small Claims Court -> General Market (MRT Shipai Sta) -> Veterans General Hospital[^tdx-bus]
+
+**Jingmei-VGH Shuttle (30 stops):** General Market (MRT Shipai Sta) -> Shilin Small Claims Court -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Changan Elementary School (Xinglong) -> Jingming St Entrance -> Xianguang Apartment -> Jingxing Junior High School -> Jinhua Park -> Jingmei Elementary School (Jingxing) -> Shih Hsin University -> Fuxing Police Substation -> National Examinations Bldg -> Zhonggang Pumping Sta -> Shijian Junior High School -> Muxin Rd Entrance -> Jingmei Girls High School -> Muxin Market -> Lixing Elementary School -> GuoTai New Village (Muxin) -> Guotai New Village (Xinglong) -> Zhongshun St Entrance -> Aged Care Center -> Muzha Park -> Zhongshun St Entrance -> Guotai New Village (Xinglong) -> GuoTai New Village (Muxin) -> Lixing Elementary School -> Muxin Market -> Jingmei Girls High School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]

@@ -65,6 +65,22 @@ class.[^ebus-g3] Its 新店客運碧潭站 contact is the same dispatch point na
 綠7, 綠10 and 綠12, four routes together covering most of 新店 and the hills
 around it under one operator.[^ebus-g3]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G3; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G3 (38 stops):** Huayuan Xincheng -> Huayuan Xincheng 1 -> Xincheng Blvd -> Yongxing Rd Entrance -> Zhongxingkeng -> Xiaocukeng -> Qingtan(Xinwu) -> Qingtan -> Qingtan (I) -> Xindian Elementary School -> Wenshan Junior High School -> Bitan -> Xindian -> Old Postal Hall -> Zhongxing Rd Sec 1 -> Wufeng Junior High School -> Zhongxing&Zhongzheng Rd Intersection -> Zhongxing Rd Sec 2 -> Baoxing Rd Entrance -> Baoqiao Rd Entrance -> Baozhong Rd Entrance -> Zhongxing Rd Sec 3 -> MRT Dapinglin Sta(Minquan Rd) -> Minquan Rd Entrance -> Minquan Industrial Park -> Buddhist Tzu Chi General Hospital -> Fuxing Rd Entrance -> Zhuangjing High School (Fuxing Rd) -> MRT Xiulang Bridge Sta -> Jianshanjiao -> Jingping Jingde Intersection -> MRT Jingping Sta -> ET Plaza -> Nanshijiao(Jingping Rd) -> Zhonghe Church -> MRT Jingan Sta(Jingping Rd) -> Yuantong&Jingping Rd Entrance -> Zhonghe Dist Office (Jingping Rd)[^tdx-bus]
+
+**G3 (43 stops):** Taihe St -> Zhonghe Temple -> Zhonghe Police Station -> Nanshan High School -> Shuanghe Village -> Anhe Rd Entrance -> Jingxin St Entrance -> MRT Jingan Sta -> Zhonghe Church -> Nanshijiao(Jingping Rd) -> MRT Jingping Sta -> Jingping Jingde Intersection -> MRT Xiulang Bridge Sta -> Zhuangjing High School (Fuxing Rd) -> Fuxing Rd Entrance -> Buddhist Tzu Chi General Hospital -> Minquan Industrial Park -> Minquan Rd Entrance -> MRT Dapinglin Sta(Minquan Rd) -> Zhongxing Rd Sec 3 -> Baozhong Rd Entrance -> Baoqiao Rd Entrance -> Baoxing Rd Entrance -> Zhongxing Rd Sec 2 -> Zhongxing&Zhongzheng Rd Intersection -> Wufong Junior High School -> Zhongxing Rd Sec 1 -> Old Postal Hall -> Xindian -> Bitan -> Wenshan Junior High School -> Xindian Elementary School -> Qingtan (I) -> Nanqing Temple -> Qingtan -> Qingtanyan -> Xiaocukeng -> Zhongxingkeng -> Yongxing Rd Entrance -> Qiding -> Xincheng Blvd -> Huayuan Xincheng 1 -> Huayuan Xincheng[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

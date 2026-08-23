@@ -53,6 +53,26 @@ The official 大臺北公車 catalogue lists 棕18 under 捷運棕線接駁公�
 
 The confirmed outbound stop sequence runs from 政大, past 政大(聯合醫院)/大誠高中, ending at 市政府(市府)/捷運市政府站.[^tdx-bus] Two confirmed interchanges are recorded in the curated stop-ID join set: Taipei City Hall (BL18) and Taipei Zoo (BR01).[^tdx-bus] The route runs 4 subroutes under a single operator, 欣欣客運富德站: standard trips and a 經松山車站 (via Songshan Station) variant, each with its own inbound and outbound working, extending the standard 政大–市政府 corridor east to 松山車站.[^ebus-br18][^tdx-bus] The standard outbound working covers 22 stops; the 經松山車站 outbound working covers 29, the difference being the eastward extension past City Hall.[^tdx-bus] Both variants share the same 政大 origin and the same two confirmed interchanges.
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BR18; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Br18 (22 stops):** National Chengchi University -> National Chengchi U (TCUH) -> Xiaokengkou (Beizheng Jr High School) -> Zhengda Center -> Zhengda 2nd St -> Affiliated High School of NCU -> Greenfield Shanzhuang -> National Chengchi U Qingjing Community -> The Institute of International Relations -> Zhinan Shanzhuang -> Wanxing Library -> Tacheng High School -> Wanshou Bridge (Xiuming) -> Wanshou Bridge (Xinguang) -> Maokong Gondola Taipei Zoo Station -> MRT Taipei Zoo Sta -> Shibikeng -> Fengdongshi -> Xinyi and Songren Intersection (Xinyi) -> MRT Taipei 101 / World Trade Center Sta (City Hall Rd) -> Taipei City Hall -> MRT Taipei City Hall Sta[^tdx-bus]
+
+**Br18 (20 stops):** City Fire Department (Songren) -> Xingya Junior High School -> Xinyi and Songren Intersection (Songren) -> Fengdongshi -> Shibikeng -> MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station -> Wanshou Bridge (Xinguang) -> Wanshou Bridge (Xiuming) -> Wanxing Elementary School -> Zhinan Shanzhuang -> The Institute of International Relations -> Maokong Gondola Taipei Zoo South Station -> National Chengchi U Qingjing Community -> Greenfield Shanzhuang -> Affiliated High School of NCU -> Zhengda 2nd St -> National Chengchi U Heshu Community -> Xiaokengkou (Beizheng Jr High School) -> National Chengchi University[^tdx-bus]
+
+**Br18 (29 stops):** National Chengchi University -> National Chengchi U (TCUH) -> Xiaokengkou (Beizheng Jr High School) -> Zhengda Center -> Zhengda 2nd St -> Affiliated High School of NCU -> Greenfield Shanzhuang -> National Chengchi U Qingjing Community -> The Institute of International Relations -> Zhinan Shanzhuang -> Wanxing Library -> Tacheng High School -> Wanshou Bridge (Xiuming) -> Wanshou Bridge (Xinguang) -> Maokong Gondola Taipei Zoo Station -> MRT Taipei Zoo Sta -> Shibikeng -> Fengdongshi -> Xinyi and Songren Intersection (Xinyi) -> MRT Taipei 101 / World Trade Center Sta (City Hall Rd) -> Taipei City Hall -> MRT Taipei City Hall Sta -> Songshan High School of Agriculture and Industry -> MRT Yongchun Sta (Zhongxiao) -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan) -> Songshan Rail Sta[^tdx-bus]
+
+**Br18 (26 stops):** Songshan Rail Sta (Songlong) -> Songshan Rail Sta (Songshan) -> Yongji and Songshan Intersection -> Yongchun Li (Songshan) -> MRT Yongchun Sta (Zhongxiao) -> Songshan High School of Agriculture and Industry -> City Fire Department (Songren) -> Xingya Junior High School -> Xinyi and Songren Intersection (Songren) -> Fengdongshi -> Shibikeng -> MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station -> Wanshou Bridge (Xinguang) -> Wanshou Bridge (Xiuming) -> Wanxing Elementary School -> Zhinan Shanzhuang -> The Institute of International Relations -> Maokong Gondola Taipei Zoo South Station -> National Chengchi U Qingjing Community -> Greenfield Shanzhuang -> Affiliated High School of NCU -> Zhengda 2nd St -> National Chengchi U Heshu Community -> Xiaokengkou (Beizheng Jr High School) -> National Chengchi University[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The committed TDX bus snapshot supplies the changing structural fields shown above; route length and timetable fields are TBC where that layer does not publish them.[^tdx-bus]

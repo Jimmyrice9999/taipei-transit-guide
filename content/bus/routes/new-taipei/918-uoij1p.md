@@ -66,6 +66,22 @@ The confirmed stop sequence runs 29 stops from 泰山站一(泰山路), past 黎
 
 The full New Taipei route-service row publishes endpoints “泰山-板橋”; published distance 24.2 km; service span Weekdays: 去程：0600-2100；返程：0600-2100; Holidays: 去程：0800-2100；返程：0800-2100; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 918Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**918Shuttle (29 stops):** Taishan Sta 1(Taishan Rd) -> Leeming Institute Of Technology -> Shanjiao Bridge -> Taishan Jr High School -> Military Police Training Center -> Taishan Elementary School -> Taishan Police station -> Futai Village -> Tailin & Rende Rd Intersection -> MRT Taishan Station(Tailin Rd) -> Taishan MRT Park -> Xinzhuang Senior High School (I) -> Xinzhuang Senior High School -> Zhonghe St Entrance -> Zhonggang -> Lianbang Community -> Zhonghua & Zhongyuan Intersection -> Zhongyuan Rd 1 -> Touqian Junior High School(Zhongyuan Rd) -> MRT Xingfu Sta -> Renyi Village -> Siyuan & FuSing Intersection -> Taipei Hospital -> MRT Touqianzhuang Sta(Siyuan Rd) -> MRT Xinpu Sta -> Chihlee University of Technology -> Zhongshan Junior High School -> Banqiao Rail Sta(Wenhua Rd) -> Wanping Park[^tdx-bus]
+
+**918Shuttle (27 stops):** Banqiao Rail Sta(Wenhua Rd) -> Zhongshan Junior High School -> Chihlee University of Technology -> Banqiao Flower Market -> MRT Xinpu Sta -> MRT Touqianzhuang  Sta (Siyuan Rd) -> Taipei Hospital -> Siyuan & Fuxing Intersection -> MRT Xingfu Sta -> Touqian Junior High School(Zhongyuan Rd) -> Zhongyuan Rd 1 -> Zhonghua & Zhongyuan Intersection -> Lianbang Community -> Zhonggang -> Zhonghe St Entrance -> Xinzhuang Senior High School -> Xinzhuang Senior High School (I) -> Taishan MRT Park -> MRT Taishan Station(Tailin Rd) -> Tailin & Rende Rd Intersection -> Futai Village -> Taishan Precinct -> Taishan Elementary School -> Military Police Training Center -> Taishan Junior High School -> Shanjiao Bridge -> Leeming Institute Of Technology[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

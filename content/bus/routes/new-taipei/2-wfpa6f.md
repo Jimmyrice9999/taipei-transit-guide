@@ -66,6 +66,22 @@ The confirmed stop sequence runs 16 stops from 觀天下, past 服務中心, the
 
 The full New Taipei route-service row publishes endpoints “黎明清境-玫瑰中國城”; published distance 7.5 km; service span Weekdays: 去程：0550-0000；返程：0550-0000; Holidays: 去程：0600-0000；返程：0600-0000; headway fields Weekdays: weekday peak 2030; weekday off-peak 3040; Holidays: holiday peak 30; holiday off-peak 40; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for K2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**K2 (16 stops):** Guantianxia -> Service Center -> Limingyuchin -> Liming Rd Lane 59 Entrance -> Limingqingjing -> No 9 Liming Rd -> LiMing Rd Entrance -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> Anfeng Rd -> Liqing Market -> Jen-Kang Hospital -> Kangle New Village -> Damaopu -> LRT Rose China Town Sta -> Mantangcai[^tdx-bus]
+
+**K2 (11 stops):** Benz Car Sale Center -> LRT Rose China Town Sta -> LRT Taipei Xiaocheng Sta(DaGuan Elementary and Junior High School) -> LRT Cardinal Tien Hospital An Kang Branch Sta -> LRT Cardinal Tien Hospital An Kang Branch Sta(Chezi Rd) -> LiMing Rd Entrance -> No 9 Liming Rd -> Limingqingjing -> Limingyuchin -> Service Center -> Guantianxia[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-lrt][^ntpc-transport]

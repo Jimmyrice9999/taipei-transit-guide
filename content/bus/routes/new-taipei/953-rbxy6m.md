@@ -66,6 +66,22 @@ The confirmed stop sequence runs 44 stops from 金山(南勢), past 金山醫院
 
 The full New Taipei route-service row publishes endpoints “金山-北科大”; published distance 97.2 km; service span Weekdays: 去程：0540-2100；返程：0540-2100; Holidays: 去程：0650-2100；返程：0650-2100; headway fields Weekdays: 班表:0540 0610 0620 0630 0640 0655 0720 0800 0840 0930 1030 1140 1250 1400 1510 1600 1630 1700 1740 1800 1930 2100; Holidays: 班表:0650 0830 1010 1150 1310 1350 1510 1700 1940 2100; fare 五段票 / 5 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 953Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**953Shuttle (44 stops):** Jinshan(Nanshih) -> Jinshan Hospital -> Zhongzheng Rd -> Jinshan District Office -> Jinshan Post Office -> Jiatou Village -> Dapeng Village -> Dapeng Elementary School -> Dingliao -> Taipower Exhibit Center in Northern Taiwan -> Yeliu -> Gangdong -> Yehliu Geopark -> Dongao -> Guihou Fishing Port -> Shijiao -> Guting -> Green Bay -> Meilun -> Wanli Beach -> Wanli District office -> Wanli Bridge -> Keelung City Line(Jijin 3rd Rd) -> Neiliao -> Wusheng St Entrance -> Lantian Lidi Community -> Shishan -> Dawulun Industry Park -> Sanceng -> Dawulun -> Jinshan Iron Stores -> Qingren Lake Entrance -> Wuling St Entrance -> Zhonglian Warehouse -> Xingliao Village -> Shipilai -> Xinshan Water Purification Plant -> Maijin & Leli 3rd St Intersection -> Womem and Children Welfare Service Center -> Keelung Chang-Gung Memorial Hospital -> Fujing Tainxia Community -> General Headquarters of the Air Force -> Xinsheng S Rd Entrance -> Nat'l Taipei U of Technology (Zhongxiao)[^tdx-bus]
+
+**953Shuttle (41 stops):** Fujing Tainxia Community -> Keelung Chang-Gung Memorial Hospital -> Womem and Children Welfare Service Center -> Maijin & Leli 3rd St Intersection -> 新山淨水廠 -> Shipilai -> Xingliao Village -> Zhonglian Warehouse -> Wuling St Entrance -> Qingren Lake Entrance -> Jinshan Iron Stores -> Dawulun -> Sanceng -> Dawulun Industry Park -> Shishan -> Lantian Lidi Community -> Wusheng St Entrance -> Neiliao -> Keelung City Line(Jijin 3rd Rd) -> Wanli Bridge -> Wanli District office -> Wanli Beach -> Meilun -> Green Bay -> Guting -> Shijiao -> Guihou Fishing Harbor -> Dongao -> Yehliu Geopark -> Gangdong -> Yeliu -> Taipower Exhibit Center in Northern Taiwan -> Dingliao -> Dapeng Elementary School -> Dapeng Village -> Jiatou Village -> Jinshan Post Office -> Jinshan District Office -> Zhongzheng Rd -> Jinshan Hospital -> Jinshan(Nanshih)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 2 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-rapid][^ntpc-transport]

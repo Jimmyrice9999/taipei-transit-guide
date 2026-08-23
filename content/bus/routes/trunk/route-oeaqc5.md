@@ -65,6 +65,22 @@ BL18) and 捷運永春站 (Yongchun, BL19).[^tdx-bus] The route effectively
 threads the entire Bannan Line's central-Taipei stretch by road, station by
 station, alongside its own street-level corridor.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Zhongxiao Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Zhongxiao Metro Bus (54 stops):** Luzhou Bus Terminal -> Wangye Temple Entrance -> National Open Univ(Zhongzheng Rd) -> Zhongyuan Apartment -> Luzhou Elementary School -> Luzhou Motor Vehicles Office -> Luzhou Police Station -> XiQian -> MRT St Ignatius High School -> St Ignatius High School -> Xingfu Market -> Jianhe New Village -> MRT Sanhe Juior High School Sta -> Sanhe Junior High School -> Ger-Jyh Senior High School(Sanhe Rd) -> Houde Police Station -> Delin Temple(Sanhe Rd) -> Longmen Rd Entrance -> Sanan Village -> Changshou W St Entrance -> Changyuan WSt Entrance -> Zhengyi and Chongxin Intersection -> Tiantai Square -> Datong Rd Entrance -> Zhongshan Art park -> MRT Cailiao Sta -> Guozun St -> Sanchong City Office -> Tax Administration -> Cailiao(Chongyang Rd) -> Jimei Elementary School -> Sanchong Civil Sports Center -> Sanchong High School -> Chongan St Entrance(Jimei St) -> Taipei Main Sta (Zhongxiao) -> MRT Shandao Temple Sta -> Huashan Cultural and Creative Industries Park -> Zhongxiao Elementary School -> Nat'l Taipei U of Technology (Zhongxiao) -> Zhengyi Post Office -> Huaisheng Junior High School -> Dinghao Market -> MRT Zhongxiao Dunhua Sta -> Apollo Building -> Tourism Administration, MOTC -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> United Daily News -> MRT Taipei City Hall Sta -> Songshan High School of Agriculture and Industry -> MRT Yongchun Sta (Zhongxiao) -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan)[^tdx-bus]
+
+**Zhongxiao Metro Bus (47 stops):** Hulin St Entrance -> Yongji Junior High School -> Songlong Rd Entrance -> Songshan High School (Songlong) -> United Daily News -> MRT Sun Yat-sen Memorial Hall Sta (Zhongxiao) -> Tourism Administration, MOTC -> Apollo Building -> MRT Zhongxiao Dunhua Sta -> Dinghao Market -> MRT Zhongxiao Fuxing Sta -> Zhengyi Post Office -> Nat'l Taipei U of Technology (Zhongxiao) -> Zhongxiao Elementary School -> Huashan Cultural and Creative Industries Park -> MRT Shandao Temple Sta -> Taipei Main Sta (Zhongxiao) -> Chongan St Entrance(Jimei St) -> Sanchong High School -> Sanchong Civil Sports Center -> Jimei Elementary School -> Cailiao(Chongxin Rd) -> MRT Cailiao Sta -> Zhongshan Art park -> Datong Rd Entrance -> Zhengyi&Chongxin Intersection -> Changyuan WSt Entrance -> Changshou W St Entrance -> Sanan Village -> Longmen Rd Entrance -> Delin Temple(Sanhe Rd) -> Houde Police Station -> Ger-Jyh Senior High School(Sanhe Rd) -> Sanhe Junior High School -> MRT Sanhe Juior High School Sta -> Jianhe New Village -> Xingfu Market -> MRT St Ignatius High School -> Minhe Apartment -> XiQian -> Luzhou Police Station -> Luzhou Motor Vehicles Office(Zhongzheng Rd) -> Luzhou Elementary School -> Zhongyuan Apartment -> National Open Univ(Zhongzheng Rd) -> Wangye Temple Entrance -> Luzhou Bus Terminal[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

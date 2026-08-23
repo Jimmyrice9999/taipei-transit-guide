@@ -62,6 +62,22 @@ subroute under one operator, 大南汽車, with an identical weekday and
 holiday schedule window, unlike several other minibus routes in this
 batch that suspend or shorten holiday service.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S28; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S28 (13 stops):** MRT Beitou Sta (Beitou) -> Zhongyang S Rd -> Beitou Elementary School -> Daye & Zhongyang N Rd Intersection -> Wenhua Activity Center -> Datong St Entrance -> Fuxing 1st Rd Entrance -> Jinxian Rd Entrance -> Changshou Rd Entrance -> Quanyuan Park -> Yifang Elementary School -> 48 Park -> Cihui Temple[^tdx-bus]
+
+**S28 (12 stops):** 48 Park -> Yifang Elementary School -> Quanyuan Park -> Changshou Rd Entrance -> Jinxian Rd Entrance -> Fuxing 1st Rd Entrance -> Datong St Entrance -> Wenhua Activity Center -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> Zhongyang S Rd -> Daxing St Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運北投站 with 珠海路 specifically as the route's own termini was found in this search, nor a stated reason for confirming only one interchange despite running most of its own corridor within a short walk of the Tamsui-Xinyi Line.

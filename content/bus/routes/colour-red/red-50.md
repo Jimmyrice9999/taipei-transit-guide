@@ -60,6 +60,26 @@ stop-ID join set: Zhongshan Junior High School (BR12), Songshan Airport
 紅50 and 紅50經復興北路, matching the schedule page's own subsidiary
 timetable.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for R50; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R50 (16 stops):** Xingshan and Shitan Intersection -> Xingshan & Xingai Intersection -> Xingai Rd Lane 77 Entrance -> Xingai Rd -> Xingzhong & Renai Intersection -> Sanmin Elementary School -> Minquan Elementary School -> China Airlines -> Minquan and Dunhua Intersection -> Minquan and Fuxing Intersection -> Rongxing Garden (MinQuan) -> Rongxing Garden -> The Second Wholesale Fruit and Vegetable Market -> Xinsheng Park -> Tatung U -> MRT Yuanshan Sta[^tdx-bus]
+
+**R50 (19 stops):** MRT Yuanshan Sta -> Tatung U -> Xinsheng Park -> Xinsheng Park (Jianguo) -> The Second Wholesale Fruit and Vegetable Market -> Rongxing Garden -> Minquan and Longjiang Intersection -> Minquan and Fuxing Intersection -> Minquan and Dunhua Intersection -> Minquan E Rd Entrance -> China Airlines -> Minquan Park -> Minquan Elementary School -> Sanmin Elementary School -> Minquan Bridge -> Xingzhong & Renai Intersection -> Xingai Rd -> Xingai Rd Lane 77 Entrance -> Xingshan & Xingai Intersection[^tdx-bus]
+
+**R50 (16 stops):** Xingshan and Shitan Intersection -> Xingshan & Xingai Intersection -> Xingai Rd Lane 77 Entrance -> Xingai Rd -> Xingzhong & Renai Intersection -> Sanmin Elementary School -> Minquan Elementary School -> China Airlines -> Minquan and Dunhua Intersection -> Wuchang St Entrance -> Xiapi Village -> The Second Wholesale Fruit and Vegetable Market -> Taipei Fish Market -> Xinsheng Park -> Tatung U -> MRT Yuanshan Sta[^tdx-bus]
+
+**R50 (18 stops):** MRT Yuanshan Sta -> Tatung U -> Xinsheng Park -> Taipei Fish Market -> The Second Wholesale Fruit and Vegetable Market -> Xiapi Village -> Fuxing N Village -> Minquan and Dunhua Intersection -> Minquan E Rd Entrance -> China Airlines -> Minquan Park -> Minquan Elementary School -> Sanmin Elementary School -> Minquan Bridge -> Xingzhong & Renai Intersection -> Xingai Rd -> Xingai Rd Lane 77 Entrance -> Xingshan & Xingai Intersection[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅50 was found

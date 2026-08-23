@@ -59,6 +59,22 @@ interchange is recorded in the curated stop-ID join set: Guandu (R25),
 matching the route's own terminus.[^tdx-bus] The route runs a single
 subroute under one operator, 淡水客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R13; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R13 (47 stops):** Tamsui Bus Bali Station -> Guimashan -> Zhonghua Rd Sec 2 -> Siajhuang Market -> Bali Junior High School -> Liaotianding Temple -> Shuixianxi Bridge -> Amusement Park -> Baxian Bridge -> Xiazhuwei -> Tudigong Temple -> Bali -> JiouCheng Village -> Bali District Farmers' Association -> Bali Service Sta -> Bali Elementary School -> Broadcasting Corporation of China -> Shanhaiguan -> Bali District Administration Center(Shisanhung Museum) -> Shihsanhang Rd Entrance -> Shihsanhang Museum(ShihsanhangRd) -> Bali Sewage Treatment Plant -> Shihsanhang Culture Park -> Waziwei Nature Reserve -> Reiron Park -> Shuixing Temple -> Rive Gauch Park-Rive Gauch Wharf -> Xiajiezi -> Ferryboats’Dock -> Shuiyun Shanzhuang -> Micang Village -> Guanyin Rd Entrance -> Micang Elementary School -> Micang Junior School 1 -> Shengxin Villa -> Wushantou -> Zhangcuo -> Sacred Heart Girls High School -> Longxing -> Dafu Community -> Bangka Bridge -> Bangka Bridge -> Guandu Bridge -> Guandu -> Guandu Nature Building -> Guandu Village -> MRT Guandu Sta[^tdx-bus]
+
+**R13 (47 stops):** Beitou District Office(Guandu) -> Ligong & Lide Intersection -> Da Ai Television -> Guandu -> Guandu Bridge -> Bangka Bridge -> Dafu Community -> Longxing -> Sacred Heart Girls High School -> Zhangcuo -> Wushantou -> Shengxin Villa -> Micang Elementary School I -> Micang Junior School -> Guanyin Rd Entrance -> Micang Village -> Shuiyun Shanzhuang -> Ferryboats' Dock -> Xiajie Zai -> Rive Gauch Park-Rive Gauch Wharf -> Shuixing Temple -> Reiron Park -> Waziwei Nature Reserve -> Shihsanhang Culture Park -> Bali Sewage Treatment Plant -> Ren 3rd St Entrance -> Shihsanhang Museum(MuseumRd) -> Shihsanhang Rd Entrance -> Bali District Administration Center(Shisanhung Museum) -> Shanhaiguan -> Broadcasting Corporation of China -> Bali Elementary School -> Bali Service Sta -> Bali District Farmers' Association -> JiouCheng Village -> Bali -> Tudigong Temple -> Xiazhuwei -> Baxian Bridge -> Amusement Park -> Shuixianxi Bridge -> Liaotianding Temple -> Bali Junior High School -> Siajhuang Market -> Zhonghua Rd Sec 2 -> Guimashan -> Tamsui Bus Bali Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅13 was found

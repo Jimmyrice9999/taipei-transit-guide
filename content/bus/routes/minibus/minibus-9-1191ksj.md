@@ -63,6 +63,26 @@ route, despite its own terminus naming 臺北車站.[^tdx-bus] TDX records
 two named subroutes distinguishing whether a working detours via 中興
 院區.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for M9; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M9 (18 stops):** Dajia Riverside Park -> Watergate No 8 -> Xinsheng Park (Lin An-tai Historic House) -> Xinsheng Park (Songjiang) -> Xinsheng Park -> Jilin Rd End -> Xinfu Village -> Xinshou Park -> Jinzhou St Entrance -> Minsheng E Rd Entrance -> Taipei Bank -> Jilin Elementary School -> Changan Elementary School (Jilin) -> Zhengshou Park -> Changan and Linsen Intersection -> Huashan Park (Taipei Zhongshan Presbyterian Church) -> Civic Blvd and Linsen Intersection -> Taipei Main Sta (Zhengzhou)[^tdx-bus]
+
+**M9 (19 stops):** TCUH Zhongxin Branch (Xining) -> Yanping Stop 1 -> Museum of Contemporary Art Taipei -> Changan E Rd Sec 1 -> Changan and Linsen Intersection -> Zhengshou Park -> Changan Elementary School (Jilin) -> Nanjing E Rd Entrance -> Jilin Elementary School -> Minsheng E Rd Entrance -> Jinzhou St Entrance -> Xinshou Park -> Xinfu Village -> Jilin Rd End -> Xinsheng Park -> Xinsheng and Minzu Intersection -> Lin An-tai Historic House -> Watergate No 9 -> Dajia Riverside Park[^tdx-bus]
+
+**M9 (18 stops):** Dajia Riverside Park -> Watergate No 8 -> Xinsheng Park (Lin An-tai Historic House) -> Xinsheng Park (Songjiang) -> Xinsheng Park -> Jilin Rd End -> Xinfu Village -> Xinshou Park -> Jinzhou St Entrance -> Minsheng E Rd Entrance -> Taipei Bank -> Jilin Elementary School -> Changan Elementary School (Jilin) -> Zhengshou Park -> Changan and Linsen Intersection -> Huashan Park (Taipei Zhongshan Presbyterian Church) -> Civic Blvd and Linsen Intersection -> Taipei Main Sta (Zhengzhou)[^tdx-bus]
+
+**M9 (19 stops):** TCUH Zhongxin Branch (Xining) -> Yanping Stop 1 -> Museum of Contemporary Art Taipei -> Changan E Rd Sec 1 -> Changan and Linsen Intersection -> Zhengshou Park -> Changan Elementary School (Jilin) -> Nanjing E Rd Entrance -> Jilin Elementary School -> Minsheng E Rd Entrance -> Jinzhou St Entrance -> Xinshou Park -> Xinfu Village -> Jilin Rd End -> Xinsheng Park -> Xinsheng and Minzu Intersection -> Lin An-tai Historic House -> Watergate No 9 -> Dajia Riverside Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 6 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the confirmed zero-interchange gap despite the route's own stops naming Taipei Main Station was found in this search, nor a stated reason for pairing 大佳河濱公園 with 聯合醫院中興院區 specifically as the route's own termini, rather than a nearer named stop.

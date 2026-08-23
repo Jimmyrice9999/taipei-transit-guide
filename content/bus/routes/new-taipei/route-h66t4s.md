@@ -66,6 +66,22 @@ The confirmed stop sequence runs 5 stops from 捷運鶯桃福德站, past 鳳鳴
 
 The full New Taipei route-service row publishes endpoints “捷運鶯桃福德站-銘傳大學(桃園校區)”; published distance 9.85 km; service span Weekdays: 去程：0730-0830；返程：1600-1700; Holidays: 去程： - ；返程： -; fare 二段票 / 2 Segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for MRT Yingtao Fude Sta.-Ming Chuan University (Taoyuan Campus); each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**MRT Yingtao Fude Sta-Ming Chuan University (Taoyuan Campus) (5 stops):** MRT Yingtao Fude Sta -> Fengming Rail Sta -> Ming Chuan Info & Mgmt Building -> Ming Chuan Design Building -> Ming Chuan Postal Agency[^tdx-bus]
+
+**MRT Yingtao Fude Sta-Ming Chuan University (Taoyuan Campus) (5 stops):** Ming Chuan Info & Mgmt Building -> Ming Chuan Design Building -> Ming Chuan Postal Agency -> Fengming Rail Sta -> MRT Yingtao Fude Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

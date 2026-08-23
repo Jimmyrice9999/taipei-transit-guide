@@ -60,6 +60,22 @@ Taipei City Hall (BL18), Nanjing Sanmin (G18) and Xiangshan (R02).[^tdx-bus]
 The route runs a single subroute under one operator, 首都客運, with no
 recorded holiday variant or short working.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B10 (23 stops):** Zhuangjing Village -> Xinyi Village -> Minsheng Junior High School -> Xindong St Entrance -> Sanmin Rd -> Sanmin and Jiankang Intersection (Xisong High School) -> Xisong Elementary School -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> Dongxing Rd 1 -> Dongxing Rd -> Songshan High School (Keelung Rd) -> MRT Taipei City Hall Sta -> City Fire Department (Songren) -> Taipei City Hall (Songzhi) -> Songshou Rd Entrance -> Xinyi and Songren Intersection (Songren) -> MRT Xianshan Sta -> Dormitory of National Tax Administration of Taipei -> Songshan High School of Commerce and Home Economics (Fude) -> Xinyi Dist AdminCenter (Songyou New Village) -> MRT Guangci/Fengtian Temple Sta(Fude) -> Fude Elementary School -> Chengfu Rd Entrance[^tdx-bus]
+
+**B10 (27 stops):** Nangang Garden Community 2 -> Chengfu Changchun Assembly -> Chengfu Rd Entrance -> Fude Elementary School -> MRT Guangci/Fengtian Temple Sta(Fude) -> Xinyi Dist AdminCenter (Songyou New Village) -> Songshan High School of Commerce and Home Economics (Fude) -> Guoye Village -> Dormitory of National Tax Administration of Taipei -> MRT Xianshan Sta -> Xinyi and Songren Intersection (Songren) -> Songshou Rd Entrance -> Taipei City Hall (Songzhi) -> City Fire Department (Songren) -> MRT Taipei City Hall Sta -> Songshan High School (Keelung Rd) -> Civic Blvd and Keelung Intersection -> Dongxing Rd -> Dongxing Rd 1 -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> Xisong Elementary School -> Sanmin and Jiankang Intersection (Xisong High School) -> Sanmin Rd -> Xindong St Entrance -> Minsheng Junior High School -> Xinyi Village -> Zhuangjing Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] Why the route is classified as a Blue-line feeder despite touching the

@@ -67,6 +67,22 @@ termini.[^tdx-bus] Its 25-stop outbound and 21-stop return workings are
 close but not identical in length, consistent with minor routing
 differences rather than a symmetric there-and-back service.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O26; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O26 (25 stops):** Dongsheng Park -> Zhongshan & Beiqian St Intersection -> Shulin Renai Hospital -> Yuying St Entrance(Catholic Church) -> Shulin Train Station Rear -> Zhongshan Rd Entrance -> Sandong Textile Factory -> BaoAn St Entrance -> TanDi -> Industrial Area -> WuLin Elementary School -> Guanghua -> Chunghwa Telecom Co,Ltd -> Shiji -> BaoAn & ZhongZheng Intersection -> SanDuo Village -> Gonglu New Village -> Huilong Post Office -> Huilong Police Station -> MRT Huilong Station -> Danfeng Elementary School(New Taipei Blvd) -> Fengshan St Entrance -> Qingshan Rd Entrance -> Shuangfeng Fude Temple -> Danfeng Police Station[^tdx-bus]
+
+**O26 (21 stops):** Shuangfeng & Fuguo Intersection -> Danfeng Elementary School -> MRT Huilong Station -> Huilong Post Office -> Gonglu New Village -> SanDuo Village -> BaoAn & ZhongZheng Intersection -> Shiji -> Chunghwa Telecom Co,Ltd -> Guanghua -> Guangrong St Entrance -> Wulin Elementary School -> Industrial Area -> TanDi -> Sandong Textile Factory -> Zhongshan Rd Entrance -> Shulin Train Station Rear -> Yuying St Entrance(Catholic Church) -> Shulin Renai Hospital -> Zhongshan & Beiqian St Intersection -> Dongsheng Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

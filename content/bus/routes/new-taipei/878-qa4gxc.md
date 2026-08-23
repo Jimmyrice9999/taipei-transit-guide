@@ -66,6 +66,22 @@ The confirmed stop sequence runs 46 stops from 淡水客運八里站, past 龜�
 
 The full New Taipei route-service row publishes endpoints “八里-馬偕醫院”; published distance 32.2 km; service span Weekdays: 去程：0720-2100；返程：0720-2100; Holidays: 去程：0720-2100；返程：0720-2100; fare 一段票 / 1 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 878Shuttle; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**878Shuttle (46 stops):** Tamsui Bus Bali Station -> Guimashan -> Zhonghua Rd Sec 2 -> Siajhuang Market -> Bali Junior High School -> Liaotianding Temple -> Shuixianxi Bridge -> Baxian Bridge -> Xiazhuwei -> Tudigong Temple -> Bali -> JiouCheng Village -> Bali District Farmers' Association -> Bali Service Sta -> Bali Elementary School -> Broadcasting Corporation of China -> Shanhaiguan -> Bali District Administration Center(Shisanhung Museum) -> Tianxin -> Gongtian -> Pitou Village -> Waziwei -> Dazhuwei -> Dakan Elementary School -> Senior Citizens Home -> Dakan Village -> Yitian Temple -> Ximen -> Xiajie Zai -> Ferryboats' Dock -> Shuiyun Shanzhuang -> Micang Village -> Guanyin Rd Entrance -> Micang Elementary School -> Micang Elementary School 1 -> Shengxin Villa -> Wushantou -> Zhangcuo -> Sacred Heart Girls High School -> Longxing -> Dafu Community -> Bangka Bridge -> Bangka Bridge -> Guandu Bridge -> Xucuo -> MRT Zhuwei Station[^tdx-bus]
+
+**878Shuttle (46 stops):** Mackay Memorial Hospital -> MRT Zhuwei Station -> Xucuo -> Guandu Bridge -> Bangka Bridge -> Dafu Community -> Longxing -> Sacred Heart Girls High School -> Zhangcuo -> Wushantou -> Shengxin Villa -> Micang Elementary School I -> Micang Elementary School -> Guanyin Rd Entrance -> Micang Village -> Shuiyun Shanzhuang -> Ferryboats' Dock -> Xiajie Zai -> Ximen -> Yitian Temple -> Dakan Village -> Senior Citizens Home -> Dakan Elementary School -> Dazhuwei -> Waziwei -> Pitou Village -> Gongtian -> Tianxin -> Bali District Administration Center(Shisanhung Museum) -> Shanhaiguan -> Broadcasting Corporation of China -> Bali Elementary School -> Bali Service Sta -> Bali District Farmers' Association -> JiouCheng Village -> Bali -> Tudigong Temple -> Xiazhuwei -> Baxian Bridge -> Shuixianxi Bridge -> Liaotianding Temple -> Bali Junior High School -> Siajhuang Market -> Zhonghua Rd Sec 2 -> Guimashan -> Tamsui Bus Bali Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

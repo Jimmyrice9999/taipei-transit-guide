@@ -66,6 +66,22 @@ The confirmed stop sequence is a there-and-back working of 49 stops from 捷運�
 
 The full New Taipei route-service row publishes endpoints “捷運淡水站-捷運淡水站”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0520-2200；返程： -; Holidays: 去程：0520-2200；返程： -.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for F101Pingding; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**F101 Pingding (45 stops):** MRT Tamsui Sta -> Sports Park -> Waigan Zhenlin -> Ganzhenlin(Pingding Rd) -> Pingding Rd Lane 52 -> Zonglu Community -> Pingding Rd 1 -> Songbo Villa -> Fenglin -> Sankongquan Xucuo -> Lachigaoyuan -> Sankongquan -> Guohua Village -> Pingding Elementary School -> Pingding Rd 760 Lane Entrance -> Pingding Fude Temple -> Wuzaicuo -> Pingding Fude Temple -> Xiaopingding -> Pindin Angong Temple -> Haishi Shanmeng Community -> Xingfuliao Community -> No15 Xingfuliao -> Zhensheng Temple -> Tudigong Temple -> Diku -> Activity Center -> No23 Fenjihu -> Puziding -> Baishijiao -> Puziding -> Bihu -> Fenji Lake -> Shulinkou -> Puwei -> Shulinkou Office -> Zhanglaoping -> Zunagong -> Education Center -> Saint Benedict Monastery -> Danjiangboyuan -> Wenhong Square -> Denggong Elementary School -> Denggong Village -> MRT Tamsui Sta[^tdx-bus]
+
+**F101 Pingding Wenhua Building (49 stops):** MRT Tamsui Sta -> Sports Park -> Waigan Zhenlin -> Ganzhenlin(Pingding Rd) -> Pingding Rd Lane 52 -> Zonglu Community -> Pingding Rd 1 -> Songbo Villa -> Fenglin -> Sankongquan Xucuo -> Lachigaoyuan -> Sankongquan -> Guohua Village -> Pingding Elementary School -> Pingding Rd 760 Lane Entrance -> Pingding Fude Temple -> Wuzaicuo -> Pingding Fude Temple -> Xiaopingding -> Pindin Angong Temple -> Haishi Shanmeng Community -> Xingfuliao Community -> No15 Xingfuliao -> Zhensheng Temple -> Tudigong Temple -> Diku -> Activity Center -> No23 Fenjihu -> Puziding -> Baishijiao -> Puziding -> Bihu -> Fenji Lake -> Shulinkou -> Puwei -> Shulinkou Office -> Zhanglaoping -> Zunagong -> Education Center -> Saint Benedict Monastery -> Danjiangboyuan -> Wenhong Square -> Denggong Elementary School -> Denggong Village -> MRT Tamsui Sta -> Yongle Lane Intersection(Zhongshan Market) -> JhongJian St Entrance -> Tamsui Liberry -> MRT Tamsui Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

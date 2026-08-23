@@ -63,6 +63,22 @@ itself a gap worth recording rather than filling in with a plausible
 figure — every other route in this project's colour-green coverage states
 one, and this is the one exception found.[^ebus-g17]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for G17; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**G17 (18 stops):** Huazhong Riverside Park -> Fruits and Vegetable Market -> Wanda Elementary School -> Dechang St Entrance -> Wanhua Junior High School -> Huajiang High School (Xizang) -> Huajiang High School (Xiyuan) -> Fashion Institute of Taipei -> Dali Garments -> Longshan Temple (Xiyuan) -> Qingshan Temple -> Changsha St -> MRT Ximen Sta -> Zhonghua Rd N Stop -> MRT Beimen Station -> Yuquan Village -> Nanjing & Xining Intersection -> Minsheng and Xining Intersection[^tdx-bus]
+
+**G17 (18 stops):** Dadaocheng Dock -> YanPing Temple -> TCUH Zhongxin Branch (Tacheng) -> MRT Beimen Station -> Zhonghua Rd N Stop -> MRT Ximen Sta -> Changsha St -> Kangding Rd Entrance -> Bangka Tianhou Temple -> Longshan Temple (Xiyuan) -> Dali Garments -> Fashion Institute of Taipei -> Huajiang High School (Xiyuan) -> Jufu Temple -> Baode Village -> Dongyuan Elementary School -> Wholesale Fruit and Vegetable Market -> Huazhong Riverside Park[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

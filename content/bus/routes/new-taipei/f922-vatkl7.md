@@ -66,6 +66,24 @@ The confirmed stop sequence runs 26 stops from 萬里區公所, past 萬里北�
 
 The full New Taipei route-service row publishes endpoints “萬里區公所-靈泉寺”; published distance 99 km (a value shared identically across 175 otherwise unrelated New Taipei routes in this dataset, which reads as an unpopulated placeholder rather than a measured distance for this specific route); service span Weekdays: 去程：0600-1530；返程：0630-1600; Holidays: 去程：0600-1530；返程：0630-1600.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 3 directional or variant stop sequences for F922wututan; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**F922wututan Wanli District office (26 stops):** Wanli District office -> Wanli Beiji Intersection -> Zhongfu Temple -> Zhongfu Bridge -> Gucuo -> Liukeng -> Erkeng Rd Entrance -> Erkeng -> Tudigong Temple -> Jinghukou -> Wheelchair Factory -> Sanchang -> Wukeng -> Kanjiao Police Station -> Kanjiao Elementary School -> Yuda Bridge -> Guocuo Rd Entrance -> Wucuo Rd Entrance -> No6 Wututan Rd Entrance -> Tongcuo -> No21 Fushiping -> Zoucuo -> Zhangcuo -> Bei 28 & Bei 28 & 2 Intersection -> Lingquan Temple -> Ruiquan Rd Entrance[^tdx-bus]
+
+**F922wututan Lingquan Temple (29 stops):** Lingquan Temple -> Bei 28 & Bei 28 & 2 Intersection -> Xidi Bridge No3 -> Xucuo -> Mazu Temple -> Huangcuo -> Zou Family House -> Chencuo -> Daping Elementary School Xidi Campus -> Fudekeng Bridge -> Fudekeng -> Xiangyuanlin Bridge -> Xiangyuanlin Entrance -> Tudigong Temple -> Kanjiao Elementary School -> Kanjiao Police Station -> Wukeng -> Sanchang -> Wheelchair Factory -> Jinghukou -> Tudigong Temple -> Erkeng -> Erkeng Rd Entrance -> Liukeng -> Gucuo -> Zhongfu Bridge -> Zhongfu Temple -> Wanli Beiji Intersection -> Wanli District office[^tdx-bus]
+
+**F922wututanBack1600 (30 stops):** Lingquan Temple -> Bei 28 & Bei 28 & 2 Intersection -> Xidi Bridge No3 -> Xucuo -> Mazu Temple -> Huangcuo -> Zou Family House -> Chencuo -> Daping Elementary School Xidi Campus -> Fudekeng Bridge -> Fudekeng -> Xiangyuanlin Bridge -> Xiangyuanlin Entrance -> Tudigong Temple -> Kanjiao Elementary School -> Kanjiao Police Station -> Wukeng -> Sanchang -> Wheelchair Factory -> Jinghukou -> Tudigong Temple -> Erkeng -> Erkeng Rd Entrance -> Liukeng -> Gucuo -> Zhongfu Bridge -> Zhongfu Temple -> Wanli Beiji Intersection -> Beiji Ren 4th St Park -> Wanli District office[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 3 direction/variant records, 1 operator record, and 3 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-newbus][^ntpc-transport]

@@ -65,6 +65,22 @@ name.[^ebus-orange] Its operator, 指南客運, also runs 橘9 out of the same
 錦繡 dispatch point, the two routes' corridors diverging only at the 南勢角
 end, where 橘9 continues on to 雙和醫院.[^ebus-o1]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O1; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O1 (37 stops):** Jinxiu Rd Entrance -> Biyao -> Rixing Library -> Sancheng -> Jianye Rd -> Ercheng -> Central Engraving and Printing Plant -> Zhongyang New Village -> Toucheng -> Toucheng 1 -> Damaopu -> Kangle New Village -> Jen-Kang Hospital -> Yirenkeng -> Ankang Chezi Rd Intersection -> Taipei Tobacco Factory -> Langmanguizu -> Gonglun New Village(Feng Rong Hospital) -> Ankang Police Station -> LRT Ankang Sta -> Chi Jen High School -> Shisifen -> Guanghua St Entrance -> LRT Sunshine Sports Park Sta -> Shitoucuo -> Anhe Rd Sec 2 -> Yangguang Park (Xindian Flower Market) -> Yongping Village -> LRT Xinhe Elementary School Sta(Hydraulic building) -> Xinhe Elementary School -> Sanjie Temple -> Jingxin St -> Anle Rd Entrance -> Anhe Rd -> Xinxin Xiangrong -> Jingxin St Intersection -> MRT Jingan Sta[^tdx-bus]
+
+**O1 (31 stops):** Zhonghe Church -> Jingxin St -> Sanjie Temple -> Xinhe Elementary School -> LRT Xinhe Elementary School Sta(Hydraulic building) -> Yongping Village -> Yangguang Park (Xindian Flower Market) -> Anhe Rd Sec 2 -> Shitoucuo -> LRT Sunshine Sports Park Sta -> Guanghua St Entrance -> Shisifen -> Chi Jen High School -> LRT Ankang Sta -> Ankang Police Station -> Gonglun New Village(Feng Rong Hospital) -> Langmanguizu -> Taipei Tobacco Factory -> Chezih Rd -> Yirenkeng -> Jen-Kang Hospital -> Kangle New Village -> Damaopu -> Toucheng 1 -> Toucheng -> Central Engraving and Printing Plant -> Ercheng -> Jianye Rd -> Sancheng -> Rixing Library -> Biyao[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

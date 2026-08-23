@@ -66,6 +66,22 @@ The confirmed stop sequence runs 36 stops from 體育大學行政教學大樓, p
 
 The full New Taipei route-service row publishes endpoints “體育大學行政教學大樓-捷運市政府站”; published distance 69.5 km; service span Weekdays: 去程：0615-1800；返程：0615-1800; Holidays: 去程：0730-1930；返程：0730-1930; fare 三段票 / 3 Segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 967Express; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**967 Express (36 stops):** National Taiwan Sport University Administrative ed -> Changgung University -> National Sports University Gymnasium -> MRT National Taiwan Sport University -> Wenhua 1st Rd & Leshan 2nd Rd Intersection -> Gaozheng Steel -> Taoyuan Sake Brewery -> Management Center -> Chang-Gung Memorial Hospital -> Medical Building -> Highness Hotel -> Wenhua 2nd Rd Sec 1 Post Office -> Andun Community -> Linkou Mitsui Outlet Park -> Zhongxiao Rd Entrance B -> Farmers Association Branch -> FreewayBureau -> Xingtian Temple -> Minquan Jianguo Road Intersection -> Minquan and Longjiang Intersection -> Minquan and Fuxing Intersection -> Minquan and Dunhua Intersection -> Songshan Airport -> Minsheng & Dunhua Intersection -> Changchun Dunhua Road Intersection -> Taipei Arena -> Bade Dunhua Road Intersection -> Civic Blvd Dunhua Intersection -> Zhongxiao and Dunhua Roads -> Renai Dunhua  Road Intersection -> Renai and Anhe Intersection -> Cathay General Hospital -> Ren-ai Yanji Street Intersection -> Ren-ai Guangfu Road Intersection -> Dr Sun Yat-sen Memorial Hall -> Taipei City Hall[^tdx-bus]
+
+**967 Express (36 stops):** MRT Taipei City Hall Sta -> DrSun Yat-Sen Memorial Hall Station -> Ren-ai Guangfu Road Intersection -> Ren-ai Yanji Street Intersection -> Renai Cathay General Hospital -> Renai & Anhe Intersection -> Anhe-Dunhua Intersection -> MRT Zhongxiao Dunhua Station -> Cive Boulevard Entrance -> Municipal　gymnasiumn -> Taipei Arena -> Chang-Gung Memorial Hospital -> Fujin St Entrance -> Songshan Airport -> Minquan and Dunhua Intersection -> Minquan and Fuxing Intersection -> Minquan and Longjiang Intersection -> Minquan Jianguo Road Intersection -> Xingtian Temple -> Taiwan Area National Freeway Bureau -> Zhongxiao Rd Entrance B -> Linkou Mitsui Outlet Park -> Andun Community -> Wenhua 2nd Rd Sec 1 Post Office -> Highness Hotel -> Medical Building -> Chang-Gung Memorial Hospital -> MRT Chang-Gung Memorial Hospital Sta -> Management Center -> Taoyuan Sake Brewery -> Gaozheng Steel Enterprise Company -> Wenhua 1st Rd & Leshan 2nd Rd Intersection -> MRT National Taiwan Sport University -> National Sports University Gymnasium -> Changgung University -> National Taiwan Sport University Administrative ed[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-rapid][^ntpc-transport]

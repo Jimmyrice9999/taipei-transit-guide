@@ -66,6 +66,20 @@ The confirmed stop sequence runs 75 stops from 捷運動物園站, past 貓纜�
 
 The full New Taipei route-service row publishes endpoints “木柵-平溪”; published distance 29.1 km; service span Weekdays: 去程：0450-2220；返程：0450-2220; Holidays: 去程：0620-2220；返程：0620-2220; fare 三段票 / 3 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for 795Pingsi; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**795 Pingsi (75 stops):** MRT Taipei Zoo Sta -> Maokong Gondola Taipei Zoo Station -> Wanshou Bridge (Xinguang) -> Muzha Elementary School -> Huaxia Village 6 -> Jiukang St Entrance -> Muzha -> Wenshan Dist Admin Center -> Wanshou Bridge (Muzha) -> Wanfang Rd Entrance -> Muzha Vocational High School -> MRT Muzha Station -> Bojia Elementary School -> Fengdongshi -> Shibikeng -> Xiangtoupu -> Fude -> Wenhe Bridge -> Fude Village -> Caodiwei -> Wanshunliao -> Tungnan U -> Taixin Factory -> Shenkeng Post Office -> Shenkeng -> Shenkeng Township Office -> Shenkeng Elementary School -> Transformer Station -> Caoditou -> Shenmei Bridge -> Cuigu Village -> Laizhongkeng -> Tuku -> Qiaoxin New Village -> Beishen & Songbo Intersection -> Bafenliao -> Shiding High School -> Sanmin Coal Mine -> Longsheng Village -> Changtanbi -> Shuangxikou -> Taiwan Water Company -> Faji Temple -> Pailiao -> Pailiao Bridge -> Chuanxue Lake -> Confucian Temple -> Shidingpu -> Wenshan Coal Mine -> Temporary Stop -> Huangdidian -> Temporary Stop -> Yongding Elementary School -> Daxiqian -> Yongding Village -> Yongding Coal Mine -> Tengliaokeng -> Yongdingshengxing Temple -> Guniang Temple -> Wukeng -> Dahuge -> Cide Temple -> Guanyingshan -> Zhancuo -> Pingxi Village -> Yikengkou -> Shulangjian -> Jingtong Coal Mine -> Erkengkou -> Jingtongkeng -> Zhongpu -> Sansheng -> Cihui Temple -> Pingxi Junior High School -> Pingxi[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-general][^ntpc-transport]

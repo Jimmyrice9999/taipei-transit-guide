@@ -66,6 +66,22 @@ The confirmed stop sequence runs 11 stops from 五股站, past 陸光國宅, the
 
 The full New Taipei route-service row publishes endpoints “五股-捷運港墘站(內湖高工)”; published distance 41.9 km; service span Weekdays: 去程：0710-0745；返程：1750-1810; Holidays: 去程： - ；返程： -; fare 兩段票 / 2 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Wugu-Neihu; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Wugu-Neihu Go (11 stops):** Wugu Sta -> Luguang Public Housing -> Wufu Community -> Community Activity Center -> Bank SinoPac -> Parking Lot(Wugu Market) -> Yangguang Pumping Sta -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Neihu and Jihu Intersection -> MRT Gangqian Station (Neihu Vocational High School)[^tdx-bus]
+
+**Wugu-Neihu Back (11 stops):** MRT Gangqian Station (Neihu Vocational High School) -> Neihu and Jihu Intersection -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Gangqian Rd -> Parking Lot(Wugu Market) -> Bank SinoPac -> Community Activity Center -> Wufu Community -> Luguang Public Housing -> Wugu Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

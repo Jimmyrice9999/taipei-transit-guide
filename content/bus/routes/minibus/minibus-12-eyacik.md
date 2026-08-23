@@ -62,6 +62,22 @@ route's own terminus.[^tdx-bus] The route runs a single subroute under one
 operator, 三重客運, weekdays only with holiday service suspended
 entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M12; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M12 (14 stops):** MRT Zhishan Sta (Fuhua) -> Xinguang General Hospital -> Shilin Admin Center -> Yangming High School -> Shezi Market -> Shezheng Rd -> Cathay Life Insurance Building -> Shezi Park -> Yongping St Entrance -> Yonglun Village (Shezhong) -> Shezi Elementary School -> Yonoglun Village (south) -> Shezi Police Substation -> Shezi Market2[^tdx-bus]
+
+**M12 (12 stops):** Shezi Market -> Hulu Temple (Hulu Village) -> Hulu Elementary School (Hulu Village) -> Haiguang Park -> Fuguang Village -> Haiguang New Village -> Huludu Market -> Hudong & Chongqing Intersection -> Yangming High School -> Shilin Admin Center -> Xinguang General Hospital -> MRT Zhishan Sta (Fuhua)[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the

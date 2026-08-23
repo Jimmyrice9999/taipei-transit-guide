@@ -60,6 +60,26 @@ Longshan Temple (BL10), Gongguan (G07), Taipower Building (G08) and
 Guting, a Songshan–Xindian/Zhonghe–Xinlu interchange (G09/O05).[^tdx-bus]
 TDX records a second subroute, 藍28經環南市場, detouring via 環南市場.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BL28; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**B28 (27 stops):** Jingming St Entrance -> Changan Elementary School (Xinglong) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> Taipower Building -> MRT Taipower Building Sta -> Roosevelt and Pucheng Intersection -> Roosevelt and Kinmen St Intersection -> MRT Guting Sta (Roosevelt) -> MRT Guting Sta (Hangzhou) -> Nanfu Banxi (Nanchang Park) -> Heping W Rd Sec 1 -> Sanyuan St -> Longxing Temple -> Sanyuan and Nanhai Intersection -> Botanical Garden -> Heping & Zhonghua Intersection -> Kunming St Entrance -> MRT Longshan Temple Sta -> Dali Fushih -> Fashion Institute of Taipei -> Huajiang High School (Xiyuan) -> Jufu Temple -> Baode Village -> Dongyuan Elementary School -> Wholesale Fruit and Vegetable Market -> Huazhong Riverside Park[^tdx-bus]
+
+**B28 (25 stops):** Huazhong Riverside Park -> Wholesale Fruit and Vegetable Market -> Wanda Elementary School -> Dechang St Entrance -> Wanhua Junior High School -> Huajiang High School (Xizang) -> Huajiang High School (Xiyuan) -> Fashion Institute of Taipei -> Dali Fushih -> MRT Longshan Temple Sta -> Kunming St Entrance -> Heping & Zhonghua Intersection -> Sanyuan and Nanhai Intersection -> Longxing Temple -> Sanyuan St -> Heping W Rd Sec 1 -> Nanfu Banxi (Nanchang Park) -> Roosevelt and hfu Kinmen Lukou -> Roosevelt and Pucheng Intersection -> MRT Taipower Building Sta -> Taipower Building -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Changan Elementary School (Xinglong) -> Jingming St Entrance[^tdx-bus]
+
+**B28 (30 stops):** Jingming St Entrance -> Changan Elementary School (Xinglong) -> National Taiwan Normal University Branch -> MRT Gongguan Sta -> Taipower Building -> MRT Taipower Building Sta -> Roosevelt and Pucheng Intersection -> Roosevelt and Kinmen St Intersection -> MRT Guting Sta (Roosevelt) -> MRT Guting Sta (Hangzhou) -> Nanfu Banxi (Nanchang Park) -> Heping W Rd Sec 1 -> Sanyuan St -> Longxing Temple -> Sanyuan and Nanhai Intersection -> Botanical Garden -> Heping & Zhonghua Intersection -> Kunming St Entrance -> MRT Longshan Temple Sta -> Dali Fushih -> Fashion Institute of Taipei -> Huajiang High School (Xiyuan) -> Xiyuan Rd Sec 2 -> Huannan Market -> Huannan Market (Xizang) -> Jufu Temple -> Baode Village -> Dongyuan Elementary School -> Wholesale Fruit and Vegetable Market -> Huazhong Riverside Park[^tdx-bus]
+
+**B28 (25 stops):** Huazhong Riverside Park -> Wholesale Fruit and Vegetable Market -> Wanda Elementary School -> Dechang St Entrance -> Wanhua Junior High School -> Huajiang High School (Xizang) -> Huajiang High School (Xiyuan) -> Fashion Institute of Taipei -> Dali Fushih -> MRT Longshan Temple Sta -> Kunming St Entrance -> Heping & Zhonghua Intersection -> Sanyuan and Nanhai Intersection -> Longxing Temple -> Sanyuan St -> Heping W Rd Sec 1 -> Nanfu Banxi (Nanchang Park) -> Roosevelt and hfu Kinmen Lukou -> Roosevelt and Pucheng Intersection -> MRT Taipower Building Sta -> Taipower Building -> MRT Gongguan Sta -> National Taiwan Normal University Branch -> Changan Elementary School (Xinglong) -> Jingming St Entrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

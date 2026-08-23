@@ -75,6 +75,26 @@ is markedly narrower than the near-all-day spans published for most other
 trunk routes in this project's coverage, and matches the office-park
 corridor it serves.[^ebus-donghuan]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for Donghuan Metro Bus; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Donghuan (26 stops):** Songde Stop -> Xingya Junior High School -> Land Bank of Taiwan -> Yongchun Apartment -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan) -> Songshan Rail Sta -> Yucheng Village -> Zhoumei Village 1 -> Tanmei Elementary School (Jiuzong) -> Xinhu 1st Rd Entrance -> Xinhu 3rd Rd Entrance (Taipei Flower Market) -> Xingzhong Rd Entrance -> Neihu Recreational Sports Park -> Yangguang Pumping Sta -> Yangguang St -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> Binjiang Jr High School -> Dazhi Meiti Garden 2 -> Dazhi Meiti Garden 3[^tdx-bus]
+
+**Donghuan (25 stops):** Jingye 3rd Rd 1 -> Dazhi Meiti Garden 3 -> Keelung River 2nd Term Public Housing 1 -> Binjiang Jr High School -> Zhipan New Village -> Neihu and Jihu Intersection -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Gangqian Rd -> Neihu Recreational Sports Park -> Xinhu 3rd Rd Entrance (Taipei Flower Market) -> Xinhu 1st Rd Entrance -> Tanmei Elementary School (Jiuzong) -> Zhoumei Village 1 -> Yucheng Village -> Songshan Rail Sta -> Songshan Rail Sta (Songlong) -> Songshan Rail Sta (Songshan) -> Yongji and Songshan Intersection -> Shuangyong Elementary School -> Yongchun Apartment -> Land Bank of Taiwan -> Xinyi & Songde Intersection -> Songde Stop[^tdx-bus]
+
+**Donghuan (26 stops):** Songde Stop -> Xingya Junior High School -> Land Bank of Taiwan -> Yongchun Apartment -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan) -> Songshan Rail Sta -> Yucheng Village -> Zhoumei Village 1 -> Tanmei Elementary School (Jiuzong) -> Xinhu 1st Rd Entrance -> Xinhu 3rd Rd -> Tiding Blvd Sec 1 -> Neihu Recreational Sports Park -> Yangguang Pumping Sta -> Yangguang St -> Ruiguang Rd -> Ruiguang &Gangqian Roads -> Renbao Bldg -> Jihu Rd Entrance -> Jihu Stop -> Binjiang Jr High School -> Dazhi Meiti Garden 2 -> Dazhi Meiti Garden 3[^tdx-bus]
+
+**Donghuan (25 stops):** Jingye 3rd Rd 1 -> Dazhi Meiti Garden 3 -> Keelung River 2nd Term Public Housing 1 -> Binjiang Jr High School -> Zhipan New Village -> Neihu and Jihu Intersection -> Jihu Rd Entrance -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Gangqian Rd -> Neihu Recreational Sports Park -> Xinhu 3rd Rd Entrance (Taipei Flower Market) -> Xinhu 1st Rd Entrance -> Tanmei Elementary School (Jiuzong) -> Zhoumei Village 1 -> Yucheng Village -> Songshan Rail Sta -> Songshan Rail Sta (Songlong) -> Songshan Rail Sta (Songshan) -> Yongji and Songshan Intersection -> Shuangyong Elementary School -> Yongchun Apartment -> Land Bank of Taiwan -> Xinyi & Songde Intersection -> Songde Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The 綠16 predecessor claim rests on a secondary source and was not independently corroborated against a primary PTO or 大都會客運 announcement in this search.

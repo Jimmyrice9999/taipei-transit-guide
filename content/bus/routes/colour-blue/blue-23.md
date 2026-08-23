@@ -59,6 +59,22 @@ paths — before joining the same 橫科/南港展覽館 corridor and continuing
 curated stop-ID join set: Kunyang (BL21) and Taipei Nangang Exhibition
 Center, a Bannan–Wenhu interchange (BL23/BR24).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL23; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL23 (34 stops):** Fude 2nd Rd -> Pandisk Technology Co -> Dashu Wood Co -> Beifeng Elementary School -> LiMing Community -> Taipei Miracle -> Bokeli Day Care Center -> Shenghuo Daguo Community -> Renchingwei Xiaozhen Community -> Fude 1st Rd Entrance -> Bojue Village -> Zhangjiang Bridge -> Zhangjiang Bridge 2 -> Fuan Temple -> Houde Village -> Zhangshu Elementary School -> Zhongxiao Village -> Zhangshu 1st Rd Intersection -> United Daily News Group -> Zhang Shu Wan -> South Zhang Shu River Band -> TIEN LIANG SATELLITE TV -> Hengke -> MRT Nangang Exhibition Hall (Nangang Rd) -> Nangang Exhibition Hall -> Nangang -> Nangang Vocational High School (Nangang Rd) -> Nangang Dist Admin Center(Nangang Rail Sta) -> Taifei New Village -> Nangang Rd Sec2 Lane 178 Entrance -> Dongming Village / Taipei Music Center -> Tudigong Temple -> Nangang Senior High School -> MRT Kunyang[^tdx-bus]
+
+**BL23 (32 stops):** MRT Kunyang -> Nangang Senior High School -> Tudigong Temple -> Dongming Village / Taipei Music Center -> Nangang Rd Sec2 Lane 178 Entrance -> Taifei New Village -> Nangang Dist Admin Center(Nangang Rail Sta) -> Nangang Vocational High School (Nangang Rd) -> Nangang -> MRT Nangang Exhibition Hall (Nangang Rd) -> Hengke -> Fusin Hotel -> South Zhang Shu River Band -> Zhang Shu Wan -> Zhangshu 1st Rd Intersection -> Zhongxiao Village -> Zhangshu Elementary School -> Houde Village -> Fuan Temple -> Zhangjiang Bridge 2 -> Zhangjiang Bridge -> Bojue Village -> Fude 1st Rd Entrance -> Kangfu Village -> Shenghuo Daguo Community -> Bokeli Day Care Center -> Taipei Miracle -> Liming Community -> Beifeng Elementary School -> Dashu Muye -> Pandisk Technology Co -> Fude 2nd Rd[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] With 藍21, 藍21副 and 藍23 all sharing the same 汐止社后 origin area and the

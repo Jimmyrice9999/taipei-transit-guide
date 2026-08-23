@@ -66,6 +66,20 @@ The confirmed stop sequence runs 10 stops from 幸福市, past 文三信義路�
 
 The full New Taipei route-service row publishes endpoints “林口-內湖園區”; published distance 29.3 km; service span Weekdays: 去程：0705-0705；返程：0705-0705; Holidays: 去程： - ；返程： -; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 1 directional or variant stop sequence for Linkou-Neihu; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Linkou-Neihu (10 stops):** Xingfushi Community -> Wunhua 3rd & Jhongshan Intersection -> Glory of the fature -> RotaryPark(Wunhua 3rd) -> FutureTownCommunity -> Administrative Park -> MRT Linkou Station -> Yangguang Pumping Sta -> Ruiguang & Gangqian Intersection -> MRT Xihu Station[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

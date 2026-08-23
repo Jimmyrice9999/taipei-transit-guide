@@ -59,6 +59,22 @@ in the curated stop-ID join set: St. Ignatius High School (O52), Sanmin
 Senior High School (O53), Luzhou (O54) and Jiantan (R15).[^tdx-bus] The
 route runs a single subroute under one operator, 三重客運.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R9; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R9 (33 stops):** Zhongyi Elementary School -> Liudi Park -> Zhongyuan Park -> Changrong & Zhongyuan Rd Intersection -> Changrong & Guangming Rd Intersection -> Yongping Market -> Changrong Rd -> MRT Luzhou Sta -> Renai Elementary School -> Renai St Entrance -> Minzu & Minyi Intersection -> Shueihe Village -> LouCuo 1 -> Fuxing Rd -> Minquan Rd Entrance -> MRTSanMin High School -> Luzhou District Office -> Lujiang Elementary School(Sanmin Rd) -> XiQian -> MRT St Ignatius High School -> Nicaragua Park -> Jixian Rd -> Wuhua St Entrance -> Fenziwei -> New Taipei Senior High School -> Wuhua Elementary School -> Chongyang Bridge -> Yangming High School -> Shilin Admin Center -> Shilin Admin Center -> Civil Service Housing -> Shilin Market (Ming Chuan Hostel) -> MRT Jiantan Sta (Taipei Performing Arts Center)[^tdx-bus]
+
+**R9 (29 stops):** Danan Rd Entrance -> Shishang Rd -> Yangming High School -> Chongyang Bridge -> New Taipei Senior High School -> Fenziwei -> Jixian Rd -> Nicaragua Park -> MRT St Ignatius High School -> Minhe Apartment -> XiQian -> Lujiang Elementary School(Sanmin Rd) -> MRT Sanmin Senior High School -> MRTSanMin High School -> Minquan Rd Entrance -> Fuxing Rd -> LouCuo 1 -> Minzu & Minyi Intersection -> Renai St Entrance -> Renai Elementary School -> Minzu Rd Entrance -> MRT Luzhou Sta -> Changrong Rd -> Yongping Market -> Changrong & Guangming Rd Intersection -> Changrong & Zhongyuan Rd -> Zhongyuan Park -> Liudi Park -> Zhongyi Elementary School[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅9 was found in

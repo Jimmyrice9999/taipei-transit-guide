@@ -61,6 +61,22 @@ route.[^tdx-bus] The route runs a single subroute under one operator,
 首都客運, with weekday-only service and holiday service suspended
 entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M10 (16 stops):** Xinhu and Jiuzong Intersection -> Xinhu and Minshan Intersection (1) -> Xingshan Rd -> Tanmei Elementary School (Jiuzong) -> Zhoumei Village -> Xinming Rd -> TCBD -> Xinming and Chenggong Intersection -> Shitan Park (Chenggong) -> Chenggong Rd Sec 2(Interchange) -> Shangwanzi -> Huxing -> National Defense Medical Center -> Tri-Service General Hospital -> Neihu Admin Building -> Sanmin Junior High School[^tdx-bus]
+
+**M10 (16 stops):** Sanmin Junior High School -> Neihu Admin Building -> Tri-Service General Hospital -> National Defense Medical Center -> Huxing -> Shangwanzi -> Chenggong Rd Sec 2(Interchange) -> Shitan Park (Chenggong) -> Xinming and Chenggong Intersection -> TCBD -> Xinming Rd -> Zhoumei Village -> Jiuzong Rd Sec (Xingshan) -> Xingshan Rd -> Xinhu and Minshan Intersection (1) -> Xinhu and Jiuzong Intersection[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for the

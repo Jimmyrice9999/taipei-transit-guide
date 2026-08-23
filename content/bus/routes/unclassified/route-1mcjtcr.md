@@ -64,6 +64,42 @@ operator's own line.[^tdx-bus]
 
 The full official schedule gives termini “內科 - 南軟”, the current head/last-departure field “[平日] 0700 - 1845 [假日] 停駛”, fare “一段票”.[^ebus-route-route-1mcjtcr] It currently lists weekday service and suspended holiday service.[^ebus-route-route-1mcjtcr]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 12 directional or variant stop sequences for NEIHU GREEN BUS; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+**NEIHU GREEN BUS (17 stops):** Ruihu StEntrance -> Yangguang Pumping Sta -> Jintai Park -> Jihu Stop -> MRT Xihu Station -> Renbao Bldg -> Ruiguang & Gangqian Intersection -> Ruiguang Rd -> Gongguanshan -> Libao Building -> Jinfeng and Jinzhuang Intersection -> Unitech Building -> SoutheastBusParkingLot -> Xinhu 1st Rd Entrance -> Tan-mei Park -> Shitan Park (Chenggong) -> Nangang Rail Sta[^tdx-bus]
+
+**NEIHU GREEN BUS (16 stops):** MRT Nangang Sta -> TCBD -> Zhoumei Village -> Nanjing and Jiuzong Intersection -> Xinhu 2nd Rd & Minshan Intersection -> Xinhu and Jiuzong Intersection -> Unitech Building -> Jinfeng and Jinzhuang Intersection -> Libao Building -> Gongguanshan -> Ruiguang Rd -> Ruiguang & Gangqian Intersection -> Renbao Bldg -> Jihu Rd Entrance -> Jintai Park -> Ruihu StEntrance[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 6 direction/variant records, 10 operator records, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus]

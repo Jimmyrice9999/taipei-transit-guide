@@ -58,6 +58,22 @@ curated stop-ID join set: Shipai (R19), matching the route's own
 terminus.[^tdx-bus] The route runs a single subroute under one operator,
 中興巴士, with no recorded holiday variant or short working.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for R12; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**R12 (20 stops):** Astronomical Museum -> National Taiwan Science Education Center -> Shilin High School of Commerce -> Shilin Admin Center -> Shilin Jr High School -> Fulin Bridge -> Zhongcheng park -> Yunong Elementary School -> Lanya New Village -> Lanya Junior High School -> Tianmu Baseball Stadium (Zhongcheng) -> Taipei Municipal School of Special Education -> Sanyu Temple -> Qifu Mansion -> Qixian Mansion -> Veterans General Hospital I -> Veterans General Hospital -> Yongming Police Substation -> General Market (MRT Shipai Sta) -> MRT Shipai Sta (Xian)[^tdx-bus]
+
+**R12 (22 stops):** MRT Shipai Sta (Donghua) -> General Market (MRT Shipai Sta) -> Yongming Police Substation -> Veterans General Hospital -> Cheng Hsin Park -> Qixian Mansion -> Qifu Mansion -> Sanyu Temple -> Taipei Municipal School of Special Education -> Tianmu Baseball Stadium (Zhongcheng) -> Lanya Junior High School -> Lanya New Village -> Yunong Elementary School -> Zhongcheng park -> Dexing (Zhongshan & Zhongcheng Rd Intersection) -> Fulin Bridge -> MRT Shilin Sta (Zhongzheng) -> Shilin Jr High School -> Shilin Admin Center -> Shilin High School of Commerce -> National Taiwan Science Education Center -> Astronomical Museum[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 紅12 was found

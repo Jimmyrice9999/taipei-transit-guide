@@ -68,6 +68,22 @@ Its 16-stop outbound and 13-stop return workings make it one of the
 shortest routes by stop count in this project's colour-orange
 coverage.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for O12; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**O12 (16 stops):** Xiangong Temple -> Boai New Village -> Sanchong Vocational School -> Zhongxiao Rd -> Peace Park -> Yongde Village -> Gezhi High School -> Sanhe Junior High School -> Ger-Jyh Senior High School(Sanhe Rd) -> Houde Police Station -> Delin Temple(Longmen Rd) -> Renai St Entrance -> Renxing St Intersection -> Longbin Park -> Changle St Entrance -> Changjiang Village[^tdx-bus]
+
+**O12 (13 stops):** Changsheng St Intersection -> Sanhe & Changrong  Intersection -> MRT Sanchong Elementary School -> Delin Temple(Sanhe Rd) -> Houde Police Station -> Ger-Jyh Senior High School(Sanhe Rd) -> Ger-Jyh Senior High School(Ziqiang Rd) -> Yongde Village -> Peace Park -> Zhongxiao Road -> Sanchong Vocational School -> Boai New Village -> Xiangong Temple[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

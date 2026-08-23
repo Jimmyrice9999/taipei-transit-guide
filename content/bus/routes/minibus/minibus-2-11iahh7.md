@@ -62,6 +62,22 @@ recorded in the curated stop-ID join set: Neihu (BR19) and Taipei City
 Hall (BL18), on two different rail lines at the route's own two ends.[^tdx-bus] The route runs a single subroute under one operator, 東南
 客運, weekdays only with holiday service suspended entirely.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S2; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S2 (37 stops):** National Taiwan College of Performing Arts -> Neihu Police Substation -> Bihu Elementary School -> MRT Neihu Sta (Neihu) -> MaoshangVillage3 -> Bishan Rd Entrance -> Bixia Temple -> Yuan Jue Temple (Liyushan) -> Bishanyan (Baishihu Bridge) -> Chenmenzai (Xuanming Temple) -> Hengguang Temple -> Shikan -> Sightseeing Strawberry Park 2 -> Sightseeing Strawberry Park -> Bishanyan (Baishihu Bridge) -> Chenmenzai (Xuanming Temple) -> Bixia Temple -> Taiyang Temple -> Bishan Rd Entrance -> Maoshang Village 3 -> MRT Neihu Sta (Neihu) -> Bihu Elementary School -> Neihu Police Substation -> Da Ren Catholic High School (National Taiwan College of Performing Arts) -> Neihu Elementary School -> Xihu Library (Huguang Church) -> Xihu Library (Huguang Church) -> Huguang Public Housing -> Wende Park No2 -> Ruiyang　Park No 3 -> Yangguang St -> Gangqian Rd -> Neihu Recreational Sports Park -> Xinhu 3rd Rd Entrance (Taipei Flower Market) -> Xinhu 1st Rd Entrance -> Tanmei Elementary School (Jiuzong) -> Songshan High School (Keelung Rd)[^tdx-bus]
+
+**S2 (14 stops):** MRT Taipei City Hall Sta -> Tanmei Elementary School (Jiuzong) -> Xinhu 1st Rd Entrance -> Xinhu 3rd Rd Entrance (Taipei Flower Market) -> Neihu Recreational Sports Park -> Yangguang Pumping Sta -> Gangqian Rd -> Ruiguang Rd -> Wende Police Substation -> Wende Park No2 -> Huguang Public Housing -> Neihu Elementary School -> Da Ren Catholic High School (National Taiwan College of Performing Arts) -> National Taiwan College of Performing Arts[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for the route's own holiday suspension was found in this search, nor a stated reason for the out-and-back loop past 碧山巖 rather than a direct pass.

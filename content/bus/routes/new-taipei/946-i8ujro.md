@@ -66,6 +66,22 @@ The confirmed stop sequence runs 37 stops from 林口站, past 湖北里2.3鄰�
 
 The full New Taipei route-service row publishes endpoints “林口-內湖科技園區”; published distance 68.5 km; service span Weekdays: 去程：0540-2200；返程：0540-2200; Holidays: 去程：0600-1900；返程：0600-1900; fare 二段票 / Charge for 2 sections.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 946; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**946 (37 stops):** Linkou Stop -> Neighborhood 23 Hubei Village Entrance -> Wunhua 3rd & Zhonghua Intersection -> Linkou Civil Sports Center(Wunhua 3rd) -> Xingfushi Community -> Wenhua 3rd & Zhongshan Intersection -> Chuncheng Lichi -> Chunghwa Telecom Co,Ltd -> Touhu Rd Entrance -> Linkou Farmers' Association -> Development Bank of Singapore -> Hsing Wu University -> Fenliao Rd -> Xinsheng St Entrance -> RenaiLijing -> LinkouDistOffice -> Songbolu -> Renai & Donghu Intersection -> Linkou High School -> SportsPark(Renai Rd) -> Taipei Sindou -> Swiss Garden Community 9 -> Simcity Societies -> RotaryPark(Wunhua 3rd) -> Wenhua 3rd & Zhongxiao Intersection -> FutureTownCommunity -> Administrative Park -> MRT Linkou Station -> Gongsi -> Military Police Training Centre -> Fuxing1stRdIntersection -> Chang-Gung Memorial Hospital -> FreewayBureau -> Yangguang Pumping Sta -> Yangguang St -> Ruiguang Rd -> Ruiguang & Gangqian Intersection[^tdx-bus]
+
+**946 (45 stops):** Renbao Bldg -> Jihu Rd Intersection -> Neihu and Jihu Intersection -> MRT Xihu Station -> Shude High School of Commerce and Home Economics -> Lishan St -> MRT Gangqian Station (Neihu Vocational High School) -> Gangqian Police Station -> Gangqian Rd -> Freeway Bureau -> Chang-Gung Memorial Hospital -> Fuxing1stRdIntersection -> Wunhua 3rd Rd Entrance -> Wunhua 3rd Rd Intersection -> Military Police Training Centre -> Linkou Bus Station -> Administrative Park -> FutureTownCommunity -> Wenhua 3rd & Zhongxiao Intersection -> RotaryPark(Wunhua 3rd) -> Simcity Societies -> Swiss Garden Community 9 -> Taipei Sindou -> SportsPark(Renai Rd) -> Linkou High School -> Renai & Donghu Intersection -> Songbolu -> LinkouDistOffice -> RenaiLijing -> Xinsheng St Entrance -> Fenliao Rd -> Hsing Wu University -> Linkou -> Linkou Farmers' Association -> Linkou Farmers' Association 2 -> Touhu Rd Entrance -> Chunghwa Telecom Co,Ltd -> Zhongshan&Wenyi Intersection -> Zhonghua Telecom -> Wenhua 3rd & Zhongshan Intersection -> Xingfushi Community -> Linkou Civil Sports Center(Wunhua 3rd) -> Wunhua 3rd & Zhonghua Intersection -> Neighborhood 23 Hubei Village Entrance -> Linkou Stop[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-rapid][^ntpc-transport]

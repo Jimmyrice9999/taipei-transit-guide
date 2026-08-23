@@ -65,6 +65,22 @@ shorter shuttle sibling 小9區.[^tdx-bus] The route runs a single
 subroute under one operator, 大南汽車, branded as a 台灣好行 (Taiwan
 Tourist Shuttle) service on a two-stage fare.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for S9; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**S9 (55 stops):** Zhiyuan New Village -> Daoxiang Library -> Fuxinggang -> Wenhua Elementary School -> Youhua High School (Daye) -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Daye & Zhongyang N Rd Intersection -> Beitou Elementary School -> First Commercial Bank -> Beitou Park -> Xinbeitou -> Xinmin Junior High School -> Beitou Armed Forces Hospital -> Linquan Village -> Xinmin Rd (End) -> Quanyuan Bieshu -> Mituo Temple (Sulfur Valley) -> Datong House -> Shibafeng Fude Temple -> Shibafen -> Quanyuan Elementary School -> Dormitory of Quanyuan Elementary School -> Hongshixia -> Wuweilun -> Fengwei -> Dinghu Activity Center -> Dinghu -> Neipu -> Zhounei -> Yangming Park 1 -> Yangming Park -> Yangming Waterfall -> Dakeng Temple -> Hushan Rd Sec 2 -> Yangmingshan Park Visitor Center -> Yangmingshan Car Park (Grass Mountain Residence) -> Dingping -> Hengling Historic Trail -> Second Contiunation Well -> Yangmingshan -> Yangmingshan National Park Headquarters -> Boy Scouts Stop -> Huangziwai -> Central Weather Bureau -> Yangming Academy House -> Zhuzihu Rd No4-1 -> Zhuzihu Rd No2-2 -> Zhuzihu Rd No7 -> Zhuza Police Substation -> Hutian Bridge -> Zhuzihu -> Hutian Community Center -> Fengjikou -> Dinghu Entrance (Zhuzihu)[^tdx-bus]
+
+**S9 (48 stops):** Hutian Bridge -> Zhuza Police Substation -> Zhuzihu Rd No7 -> Shuiyunjian -> Yangming Academy House -> Central Weather Bureau -> Huangziwai -> Boy Scouts Stop -> Yangmingshan National Park Headquarters -> Yangmingshan -> Dingping -> Yangmingshan Car Park (Grass Mountain Residence) -> Yangmingshan Park Visitor Center -> Hushan Rd Sec 2 -> Dakeng Temple -> Yangming Waterfall -> Yangming Park -> Yangming Park 1 -> Zhounei -> Neipu -> Dinghu -> Dinghu Activity Center -> Fengwei -> Wuweilun -> Hongshixia -> Dormitory of Quanyuan Elementary School -> Quanyuan Elementary School -> Shibafen -> Quanyuan 3rd Bridge -> Shibafeng Fude Temple -> Datong House -> Mituo Temple (Sulfur Valley) -> Quanyuan Bieshu -> Xinmin Rd (End) -> Linquan Village -> Beitou Armed Forces Hospital -> Xinmin Junior High School -> Xinbeitou -> Beitou Park -> First Commercial Bank -> Zhongyang S Rd -> Daxing St Entrance -> MRT Beitou Sta (Beitou) -> YouHua Vocational High School (Beitou) -> Wenhua Elementary School -> Fuxinggang -> Daoxiang Library -> Zhiyuan New Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] No stated reason for this route's own two-stage fare and Taiwan Tourist Shuttle branding, distinct from the plain minibus classification and one-stage fare of most routes in this batch, was found in this search.

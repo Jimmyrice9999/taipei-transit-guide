@@ -53,6 +53,22 @@ The official catalogue lists 棕10 under 捷運棕線接駁公車.[^ebus-brown] 
 
 The confirmed outbound stop sequence runs from 捷運大湖公園站, past 大湖公園/園區街/南京敦化路口(小巨蛋), ending at 捷運南京復興站.[^tdx-bus] One confirmed interchange is recorded in the curated stop-ID join set, at the route's own starting terminus: Dahu Park (BR20).[^tdx-bus] The route runs 2 subroutes under a single operator, 東南客運, with no separate variant suffix in the current TDX record.[^tdx-bus] The outbound working covers 18 stops; the return working, starting from 龍江路口, covers 21, a longer stop count on the return leg that the TDX sequence records but does not explain.[^tdx-bus] The single confirmed interchange sits at the route's own starting stop rather than partway along the corridor, so a rider joining anywhere past 捷運大湖公園站 has no further curated MRT connection until the 南京復興 terminus, whose own station code is not among the confirmed joins.[^tdx-bus] The one-section fare and 東南客運 contact recorded on the schedule page apply across both directions of this two-subroute record without a published discount or transfer note.[^ebus-br10]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BR10; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BR10 (18 stops):** MRT Dahu Park Sta -> Dahu Park -> Huangshigong Temple -> Kangning Hospital -> Kangning Community -> MRT Huzhou Sta (University of Kang Ning) -> Minghu Elementary School (PTS) -> Minghu Junior High School -> MRT Donghu Sta (Nanhu High School) -> Park St -> Nangang Pumping Sta -> Nanjing and Jiuzong Intersection -> MacArthur No1 bridge -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> NanJing-SanMin Intersection -> Nanjing & Ningan Intersection -> Nanjing & Dunhua Intersection (Taipei Arena) -> MRT Nanjing Fuxing Station[^tdx-bus]
+
+**BR10 (21 stops):** Longjiang Rd Entrance -> Changchun Market -> Liaoning St Entrance -> MRT Nanjing Fuxing Station -> Nanjing & Dunhua Intersection (Taipei Arena) -> Nanjing & Ningan Intersection -> NanJing-SanMin Intersection -> Nanjing Apartment (MRT Nanjing Sanmin Sta) -> MacArthur No1 bridge -> Nanjing & Jiuzong Intersection -> Nangang Pumping Sta -> Park St -> Nangang Software Park N -> MRT Donghu Sta (Nanhu High School) -> Minghu Junior High School -> Minghu Elementary School (PTS) -> MRT Huzhou Sta (University of Kang Ning) -> Kangning Hospital -> Huangshigong Temple -> Dahu Park -> MRT Dahu Park Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus]

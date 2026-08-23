@@ -62,6 +62,22 @@ Kunyang and Nangang Exhibition Center interchanges with the separate
 小12, which additionally confirms Nangang (BL22) and Taipei Zoo (BR01)
 on its own longer run to the Maokong Gondola.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for M15; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**M15 (12 stops):** MRT Kunyang -> Nangang High School -> Nangang Police Dist (Xiangyang) -> Wengehua Community -> Fendi Community -> Dongyang Elementary School -> Dongxin Elementary School -> Nangang Vocational High School (Chongyang) -> Yucheng High School -> Sanchong Village -> Nangang Pumping Sta -> MRT Nangang Software Park Sta[^tdx-bus]
+
+**M15 (17 stops):** MRT Taipei Nangang Exhibition Center Sta (Jingmao 2) -> TWTC Nangang Exhibition Hall -> Nangang Software Park S -> Nangang Software Park N -> Nangang Pumping Sta -> Sanchong Village -> Yucheng High School -> Nangang Vocational High School (Chongyang) -> Dongxin Elementary School -> China Television Company -> Dongyang Elementary School -> Fendi Community -> Wengehua Community -> Xiangyang　Park -> Nangang Police Dist (Xiangyang) -> Nangang High School -> MRT Kunyang[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 捷運昆陽站 with 捷運南港展覽館站 specifically as the route's own termini, rather than a more direct pairing, was found in this search.

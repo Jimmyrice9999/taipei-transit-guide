@@ -60,6 +60,26 @@ Banqiao.[^tdx-bus] TDX records a second subroute, 藍33繞, adding stops at
 光復國小 and 光復高中 that match the schedule page's own school-day detour
 note.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 4 directional or variant stop sequences for BL33; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL33 (16 stops):** Wufu New Village -> Zhenyi Village -> Guangfu Bridge -> Zhenwu Temple -> Guangfu St -> Puqian Police Station -> Puqian(Zhongshan Rd) -> Huairen St -> Zhongshan Park -> Shuangshi Rd -> Jiangcui Junior High School -> MRT Xinpu Sta(Wenhua Rd) -> Chihlee University of Technology -> Zhongshan Junior High School -> Xinmin Village -> NTPC Banqiao Bus Station[^tdx-bus]
+
+**BL33 (16 stops):** Banqiao Rail Sta(Wenhua Rd) -> Zhongshan Junior High School -> Chihlee University of Technology -> MRT Xinpu Sta(Wenhua Rd) -> New Taipei City Council -> Jiangcui Junior High School -> Shuangshi Rd -> Zhongshan Park -> Yongfong St -> Huairen St -> Puqian(Zhongshan Rd) -> Puqian Police Station -> Guangfu St 1 -> Guangfu St 2 -> Zhenyi Village -> Wufu New Village[^tdx-bus]
+
+**BL33S (18 stops):** Wufu New Village -> Zhenyi Village -> Guangfu Bridge -> Zhenwu Temple -> Guangfu Elementary School -> Guangfu High School -> Guangfu St -> Puqian Police Station -> Puqian(Zhongshan Rd) -> Huairen St -> Zhongshan Park -> Shuangshi Rd -> Jiangcui Junior High School -> MRT Xinpu Sta(Wenhua Rd) -> Chihlee University of Technology -> Zhongshan Junior High School -> Xinmin Village -> NTPC Banqiao Bus Station[^tdx-bus]
+
+**BL33S (16 stops):** Banqiao Rail Sta(Wenhua Rd) -> Zhongshan Junior High School -> Chihlee University of Technology -> MRT Xinpu Sta(Wenhua Rd) -> New Taipei City Council -> Jiangcui Junior High School -> Shuangshi Rd -> Zhongshan Park -> Yongfong St -> Huairen St -> Puqian(Zhongshan Rd) -> Puqian Police Station -> Guangfu St 1 -> Guangfu St 2 -> Zhenyi Village -> Wufu New Village[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 4 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision and the detour's creation date and rationale remain TBC.[^tdx-bus] The route length also remains TBC, and no dated history for 藍33 or a

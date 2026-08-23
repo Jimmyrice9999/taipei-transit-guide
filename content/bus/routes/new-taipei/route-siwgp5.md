@@ -66,6 +66,22 @@ The confirmed stop sequence runs 5 stops from 瑞芳火車站, past 天良電視
 
 The full New Taipei route-service row publishes endpoints “瑞芳-松山車站”; published distance 54.9 km; service span Weekdays: 去程：0720-0720；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segment.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Ruifang-Songshan Station; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**RF-SS(TP)GO (5 stops):** Ruifang Rail Sta -> Tien Liang Television -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> Nangang Rail Sta -> Songshan Rail Sta[^tdx-bus]
+
+**RF-SS(TP)BACK (6 stops):** Songshan Rail Sta -> Nangang Rail Sta -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> Fusin Hotel -> Zushi Temple -> Resident Square[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

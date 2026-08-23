@@ -62,6 +62,22 @@ and Songshan.[^tdx-bus] The route runs a single subroute under one
 operator, 大都會客運, over a shorter corridor than its own express
 sibling 286副, which continues past this stretch to 行天宮.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 286; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**286 (18 stops):** Chengfu Stop -> Nangang Garden Community 2 -> Nangang Garden Community 1 -> Nangang Garden Community 5 -> Nangang Garden Community 4 -> Nangang Garden Community 3 -> Chengfu Changchun Assembly -> Chengfu Rd Entrance -> Fude Elementary School -> MRT Guangci/Fengtian Temple Sta(Fude) -> Xinyi Dist AdminCenter (Songyou New Village) -> Songshan High School of Commerce and Home Economics (Fude) -> Yongchun Apartment -> Yongchun Li (Songshan) -> Shuangyong Elementary School -> Yongji and Songshan Intersection -> Songshan Rail Sta (Songshan) -> Songshan Rail Sta[^tdx-bus]
+
+**286 (20 stops):** Songshan Rail Sta (Songlong) -> Songshan Rail Sta (Songshan) -> Yongji and Songshan Intersection -> Shuangyong Elementary School -> Yongchun Apartment -> Land Bank of Taiwan -> Xinyi & Songde Intersection -> Dormitory of National Tax Administration of Taipei -> Songshan High School of Commerce and Home Economics (Fude) -> Xinyi Dist AdminCenter (Songyou New Village) -> MRT Guangci/Fengtian Temple Sta(Fude) -> Fude Elementary School -> Chengfu Rd Entrance -> Chengfu Changchun Assembly -> Nangang Garden Community 2 -> Nangang Garden Community 1 -> Nangang Garden Community 5 -> Nangang Garden Community 4 -> Nangang Garden Community 3 -> Chengfu Changchun Assembly[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 南港花園社區 with 松山車站 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming far fewer interchanges than its own express sibling 286副.

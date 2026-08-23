@@ -66,6 +66,22 @@ The confirmed stop sequence runs 17 stops from 捷運新店站(新店路), past 
 
 The full New Taipei route-service row publishes endpoints “新店-汐止”; published distance 52 km; service span Weekdays: 去程：0740-0740；返程：1800-1800; Holidays: 去程： - ；返程： -; fare 三段票.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Xindian-Xizhi; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**Xindian-Xizhi Go (17 stops):** MRT Xindian Sta -> MRT Xindian City Hall Sta(Beixin) -> Chongguang High School -> Zhongzheng Public Housing -> Cardinal Tien Hospital(Zhongzheng Rd) -> Huakaifugui -> Minquan Rd Entrance -> MRT Dapinglin Sta(Minquan Rd) -> Zhongxing Rd Sec 3 -> Baozhong Rd Entrance -> Baoqiao Rd Entrance -> Baoxing Rd Entrance -> MRT Nangang Exhibition Center Sta (Jingmao 2) -> Far East World Center -> Oriental Science Park -> Lianxing St Entrance -> Xioufong High School(Zhongxiao E Rd)[^tdx-bus]
+
+**Xindian-Xizhi Back (17 stops):** Xioufong High School(Zhongxiao E Rd) -> Lianxing St Entrance -> Oriental Science Park -> Far East World Center -> MRT Nangang Exhibition Center Sta (Nangang Rd) -> Baoxing Rd Entrance -> Baoqiao Rd Entrance -> Baozhong Rd Entrance -> Zhongxing Rd Sec 3 -> MRT Dapinglin Sta(Minquan Rd) -> Minquan Rd Entrance -> Huakaifugui -> Cardinal Tien Hospital(Zhongzheng Rd) -> Zhongzheng Public Housing -> Chongguang High School -> MRT Xindian City Hall Sta(Beixin) -> MRT Xindian Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]

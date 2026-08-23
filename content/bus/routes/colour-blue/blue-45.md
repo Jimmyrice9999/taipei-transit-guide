@@ -57,6 +57,22 @@ ending at 捷運永寧站 via 頂埔/震安宮.[^tdx-bus] Four confirmed interch
 recorded in the curated stop-ID join set: Dingpu (BL01/LB01), Yongning
 (BL02), Mazutian (LB02) and Changshoushan (LB03).[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for BL45; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**BL45 (36 stops):** Tianliao Stop -> Zhulun -> Dacheng Elementary School -> Check Point -> Luotuotan -> Chengfu Police Station -> Chengfu Activity Center -> Haiyi 1 -> Haiyi -> Tatung Factory -> Daping New Village -> Cihxiu Senior High School -> Chengfu Elementary School -> Xidong -> Xidong Village -> Longxin Factory -> Hengxi -> Jieshou Rd Sec 3 -> Gas Sta -> Xibei Village -> MRT Changshoushan Sta -> Changshoushan -> Demen Temple -> Mazutian -> MRT Mazutian Sta(Taiyangcheng Community) -> Dingpu Elementary School -> Dingpu -> MRT Dingpu Sta -> Danuan Rd Entrance -> Tucheng Industrial Dist -> Fude Temple -> Tucheng Junior High School -> Zhongyang Rd Sec 3 -> MRT Yongning Station -> Zhongyi Rd Entrance -> Jhenan Temple[^tdx-bus]
+
+**BL45 (35 stops):** Zhongyi Rd Entrance -> MRT Yongning Station -> Zhongyang Rd Sec 3 -> Tucheng Junior High School -> Fude Temple -> Tucheng Industrial Dist -> Danuan Rd Entrance -> MRT Dingpu Sta -> Dingpu -> Dingpu Elementary School -> MRT Mazutian Sta(Taiyangcheng Community) -> Mazutian -> Demen Temple -> Changshoushan -> MRT Changshoushan Sta -> Xibei Village -> Gas Sta -> Jieshou Rd Sec 3 -> Hengxi -> Longxin Factory -> Xidong Village -> Xiubo Electronics -> Chengfu Elementary School -> Cixiu high School -> Daping New Village -> Tatung Factory -> Haiyi -> Haiyi 1 -> Chengfu Activity Center -> Chengfu Police Station -> Luotuotan -> Security Checkpoint -> Zhulun -> Tianliao Stop -> Queenstown farm[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route history, the corridor-selection decision, unusual short workings and operator changes remain TBC.[^tdx-bus] The route length and a headway-by-day-type figure also remain TBC, and no

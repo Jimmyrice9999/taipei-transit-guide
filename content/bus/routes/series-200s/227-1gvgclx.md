@@ -62,6 +62,22 @@ Kai-Shek Memorial Hall, Dingxi, Zhongshan Elementary School, Minquan
 W. Rd., Taipei Bridge and Cailiao.[^tdx-bus] The route runs a single
 subroute under one operator, 中興巴士.[^tdx-bus]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for 227; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**227 (38 stops):** Xiangong Temple -> Boai New Village -> Sanchong Vocational School -> Zhongxiao & Sanmin Intersection -> Donghai High School -> Sanmin St -> Sanchong Revenue Service -> Cailiao(Chongyang Rd) -> Cailiao(Chongxin Rd) -> MRT Cailiao Sta -> Zhongshan Arts Park -> Datong Rd Entrance -> Guoyuan Theater -> MRT Taipei Bridge Sta -> Sanchong Police Station (Chongxin Rd) -> MRT Minquan W Rd Station -> Taini Building (Mackay Memorial Hospital) -> The Ambassador Hotel -> Zhongshan Market -> Executive Yuan -> NTU Hospital -> MRT Chiang Kai-shek Memorial Hall Sta (Zhongshan ) -> Nanmen -> Ningpo and Chongqing Intersection -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> MRT Dingxi Sta -> Zhongxing St Entrance -> Lehua Business Center -> Yonghe Rd Entrance -> Yongan Market(Yongzhen Rd) -> 823 Memorial Park -> Dehe Rd 1 -> Zhongxing New Village -> Zhongxing Village 2 -> Chih-Kuang Senior Commercial & Industrial Vocational High School -> Yianjili -> Anping Rd -> Tanqian[^tdx-bus]
+
+**227 (36 stops):** 823 Memorial Park -> Yongan Market -> Ziqiang St Entrance -> Lehua Business Center -> MRT Dingxi Sta -> Zhongzheng Bridge Stop -> Chongqing S Road Sec 3 (Zhongzheng Bridge) -> Ningpo and Chongqing Intersection -> Nanchang Rd -> Nanmen -> Taipei First Girls High School (Gongyuan) -> MRT NTU Hospital -> Executive Yuan -> Zhongshan Market -> The Ambassador Hotel -> Gloria Hotel -> Jusheng village -> Xinxing Junior High School -> Minquan and Zhongshan Intersection -> MRT Minquan W Rd Station -> Minquan & Dalong Intersection -> Sanchong Police Station (Chongxin Rd) -> MRT Taipei Bridge Sta -> Tiantai Square -> Datong Rd Entrance -> Zhongshan Art park -> MRT Cailiao Sta -> Cailiao(Chongxin Rd) -> Cailiao 1 -> Tax Administration -> Sanmin St -> Donghai High School -> Zhongxiao & Sanmin Intersection -> Sanchong Vocational School -> Boai New Village -> Xiangong Temple[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 1 direction/variant record, 1 operator record, and 2 published shape records in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The TDX snapshot supplies the changing stop and geometry records; route length remains TBC, and no dated route history or operator-change record was promoted from the current catalogue pages.[^tdx-bus] A headway-by-day-type figure also stays TBC, and no stated reason for pairing 三重 with 永和 specifically as the route's own termini was found in this search, nor a stated reason for the route confirming fewer interchanges than the neighbouring 227區 despite covering a longer corridor.

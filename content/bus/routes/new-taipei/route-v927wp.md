@@ -66,6 +66,22 @@ The confirmed stop sequence runs 14 stops from 石門區公所, past 石門, the
 
 The full New Taipei route-service row publishes endpoints “石門-捷運紅樹林站”; published distance 25.5 km; service span Weekdays: 去程：0600-0600；返程：0600-0600; Holidays: 去程： - ；返程： -; fare 四段票 / 4 segments.[^ntpc-bus-route-data]
 
+## Committed stop sequence
+
+The committed TDX snapshot carries 2 directional or variant stop sequences for Shimen-MRT Hongshulin Sta.; each sequence below is ordered from its first boarding stop to its last; this is the current data record, not an inferred route history[^tdx-bus].
+
+**853 Jumping Frog Bus A Sub (14 stops):** Shimen District office -> Shimen -> Mackay Memorial Hospital -> Xinshui Juyi -> Sanzhi -> Beishixi Intersection -> Linzi -> St John‘s University -> Xiaguiroushan -> Linzi -> Beixin Rd Entrance -> LRT Ganzhenlin Sta -> MRT Hongshulin Sta -> Zhuwei High School[^tdx-bus]
+
+**853Frog2 (13 stops):** Shimen District office -> Shimen -> Mackay Memorial Hospital -> Xinshui Juyi -> Sanzhi -> Beishixi Intersection -> Linzi -> St John‘s University -> Xiaguiroushan -> Linzi -> Beixin Rd Entrance -> LRT Ganzhenlin Sta -> MRT Hongshulin Sta[^tdx-bus]
+
+The sequence is kept separate from the route shape: a stop is a boarding record, while the shape is the published alignment used for mapping. A missing stop name or a changed sequence is therefore a TDX-data issue, not evidence that the service was historically rerouted[^tdx-bus].
+
+## Service record and evidence boundary
+
+This normalized identity retains 2 direction/variant records, 1 operator record, and 1 published shape record in the snapshot[^tdx-bus]. The official catalogue and schedule citations attached to this route remain the authority for its service class, termini, operating span, headway and fare where those fields are printed.
+
+The TDX route layer does not carry a sourced route-length history, opening date, corridor-selection rationale or dated operator-change record for this identity. Those fields remain TBC rather than being reconstructed from stop names or from a related route[^tdx-bus].
+
 ## Research status
 
 The New Taipei category, route-service and transport-management pages were fetched for this entry; route opening history, predecessor/renumbering history, dated operator changes and route-specific eligibility remain TBC unless a dated primary source says otherwise.[^ntpc-bus-route-data][^ntpc-category-jumpfrog][^ntpc-transport]
