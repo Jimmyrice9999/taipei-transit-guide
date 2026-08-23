@@ -1,13 +1,13 @@
 ---
 title: Muzha Depot
-summary: Where the network started — the first depot Taipei ever built for a metro, and demoted in 2009 from the whole of the system's engineering capability to the junior of two.
+summary: The original 6.2-hectare Wenhu facility — now the line's secondary depot, with 12 stabling roads, capacity for 84 married pairs and heavy-maintenance equipment for the 102-car Matra fleet.
 order: 1
 line: BR
+operator: TRTC
 spine: BR01
-stub: true
 aliases:
   - 木柵機廠
-updated: 2026-08-06
+updated: 2026-08-23
 hero:
   image: muzha-depot/hero
   alt: A VAL256 train on the elevated guideway between Taipei Zoo station and Muzha Depot, hills and the incinerator tower behind.
@@ -16,126 +16,147 @@ hero:
 facts:
   - label: Chinese name
     value: 木柵機廠
+    source: dorts-planning
   - label: Operator
     value: Taipei Rapid Transit Corporation
+    source: dorts-line
   - label: Line
     value: Wenhu
-  - label: Connects at
-    value: BR01
+    source: dorts-planning
   - label: District
     value: Wenshan
-  - label: Opened
+    source: dorts-planning
+  - label: Role
+    value: Secondary depot
+    source: dorts-planning
+  - label: Line opened
     value: 28 March 1996
-    source: zh-muzha-depot
-  - label: Grade
-    value: Third-level depot
-    source: zh-muzha-depot
-  - label: Fleet based
-    value: VAL256 and Innovia APM 256
-    source: zh-muzha-depot
+    source: dorts-line
+  - label: Current fleet allocation
+    value: TBC
 specs:
   - label: Site area
-    value: "6.2"
+    value: approximately 6.2
     unit: ha
-    source: dorts-wenhu
+    source: dorts-capacity
   - label: Stabling roads
     value: "12"
-    source: zh-muzha-depot
+    source: dorts-equipment-table
   - label: Stabling capacity
     value: "84"
-    unit: pairs
-    source: zh-muzha-depot
-  - label: Heavy overhaul
-    value: TBC
-  - label: Light maintenance
-    value: "Yes"
-    source: dorts-wenhu
-  - label: Train wash
-    value: "Yes"
-    source: dorts-wenhu
+    unit: married pairs
+    source: dorts-capacity
   - label: Test track
     value: "Yes"
-    source: zh-muzha-depot
-  - label: Operations control centre
-    value: Secondary since 2009
-    source: zh-neihu-depot
+    source: dorts-equipment-table
+  - label: Heavy-maintenance equipment
+    value: Complete equipment for 102 cars
+    source: dorts-equipment-list
+  - label: Exact civil-work start
+    value: TBC
+  - label: Exact depot commissioning
+    value: TBC
 sources:
-  - id: dorts-wenhu
-    title: Wenshan—Neihu Line
+  - id: dorts-line
+    title: Wenshan–Neihu Line
     titleOriginal: 文山內湖線
-    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
     url: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    snapshot: https://web.archive.org/web/20260209210832/https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
-    note: "The builder's own project record. Puts the depot near the zoo exit at about 6.2 ha, with functions 車輛儲存、維修、行控、清洗 — storage, maintenance, operations control and washing."
-  - id: zh-muzha-depot
-    title: Muzha Depot
-    titleOriginal: 木柵機廠
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/木柵機廠
-    snapshot: https://web.archive.org/web/20220520160336/https://zh.wikipedia.org/zh-tw/木柵機廠
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS locates the depot by Taipei Zoo, gives approximately 6.2 ha and lists vehicle storage, maintenance, control, washing, wayside maintenance and parts warehousing; the same page dates Muzha Line opening.
+  - id: dorts-planning
+    title: Taipei Metro network planning practice — depot roles and locations
+    titleOriginal: 捷運路網規劃實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page200.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: The only source found for the 12 stabling roads, the 84-pair capacity, the third-level grade, and for both fleets being stabled here. All four are one source deep.
-  - id: zh-neihu-depot
-    title: Neihu Depot
-    titleOriginal: 內湖機廠
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/內湖機廠
-    snapshot: https://web.archive.org/web/20260807043713/https://zh.wikipedia.org/zh-tw/%E5%85%A7%E6%B9%96%E6%A9%9F%E5%BB%A0
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS places Muzha Depot between Xinguang Road Section 2 and the Jingmei River, and says it changed from the original line's main depot to the Wenhu Line's secondary depot after Neihu Depot opened.
+  - id: dorts-capacity
+    title: Taipei Metro network planning practice — depot inventory
+    titleOriginal: 捷運路網規劃實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page202.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: Records that Neihu's control centre took over the primary function from Muzha in 2009.
+    note: DORTS classifies Muzha as the Wenhu Line's rubber-tyred secondary depot and publishes approximately 6.2 ha with storage for 84 married pairs.
+  - id: dorts-equipment-list
+    title: Taipei Metro depot equipment practice — maintenance-equipment contracts
+    titleOriginal: 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS lists CM350 complete heavy-maintenance equipment for 102 cars plus CM351A test instruments and CM351B small equipment and tools.
+  - id: dorts-equipment-table
+    title: Taipei Metro depot equipment practice — fleet and depot table
+    titleOriginal: 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page107.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS publishes 25 trains, secondary grade, 12 stabling roads, a test track, 6.2 ha and capacity for 84 married pairs.
 ---
 
-Every train on the Taipei network traces back to this site. When the Muzha Line
-opened in 1996 there was nowhere else — no other depot, no other line, no other
-fleet. 木柵機廠 was the whole of the system's engineering capability, sitting at
-the foot of the hills beside BR01.
+## Overview
 
-Thirteen years later it stopped being that. When
-[Neihu Depot](/rail/metro/depots/neihu-depot/) opened in 2009 it took over as the
-line's full-function depot and as its primary operations control
-centre[^zh-neihu-depot], and Muzha was regraded from a fifth-level to a
-**third-level** depot[^zh-muzha-depot]. The oldest depot on the network is now
-the junior of the line's two[^zh-muzha-depot].
+Muzha Depot, 木柵機廠, sits in Wenshan District between Xinguang Road Section 2
+and the Jingmei River, beside the Taipei Zoo end of the original Muzha Line.[^dorts-planning]
+DORTS gives its area as approximately 6.2 hectares and lists vehicle storage,
+maintenance, operations control, train washing, wayside maintenance and parts
+warehousing among its functions.[^dorts-line]
 
-## Facilities
+The depot began as the Muzha Line's main facility.[^dorts-planning] When Neihu
+Depot entered the operating arrangement, DORTS reclassified Muzha as the
+Wenhu Line's secondary depot and Neihu as the main depot.[^dorts-planning]
+The line itself opened on 28 March 1996, but the opened records do not isolate
+the depot's civil-work start, handover or commissioning dates.[^dorts-line]
 
-DORTS lists storage, maintenance, operations control, washing, lineside
-maintenance and parts warehousing[^dorts-wenhu]. zh.wikipedia adds the
-buildings — a stabling yard, a workshop, a plant room, the control centre, a
-traction substation, a main substation, emergency power, a pumping station and a
-test track — with **12 stabling roads holding 84 pairs**[^zh-muzha-depot].
+## Role and capacity
 
-Eighty-four pairs is a striking number against a line whose entire fleet is 152
-pairs, and it rests on one source. It should be checked before anything is built
-on it.
+Two DORTS manuals describe capacity in different units that should not be
+combined. The network-planning inventory publishes room for 84 two-car married
+pairs.[^dorts-capacity] The depot-equipment table publishes 12 stabling roads,
+along with a 25-train fleet context and a test track.[^dorts-equipment-table]
+The 84-pair figure is therefore storage capacity, while 12 counts the roads
+used to provide it; neither is a count of four-car trains.[^dorts-capacity][^dorts-equipment-table]
 
-*Not established: what heavy overhaul is done here rather than at Neihu, and
-whether either depot does it at all rather than contracting it out.*
+The pair capacity is larger than the 51 pairs procured for the original Matra
+fleet, but DORTS does not explain in these pages whether the surplus represents
+operational flexibility, shared Wenhu storage, maintenance positioning or a
+different planning horizon.[^dorts-capacity] Current vehicle allocation by
+fleet and active/reserve status remains TBC.
 
-## Allocation
+## Maintenance equipment
 
-The best available source says Muzha stables **both** fleets —
-[VAL256](/rail/metro/rolling-stock/val256/) and Innovia APM 256[^zh-muzha-depot] —
-so the line's allocation is not a clean one-fleet-per-depot split.
-[Neihu Depot](/rail/metro/depots/neihu-depot/) is the Innovia fleet's principal
-base.
+DORTS's equipment inventory identifies CM350 as the turnkey package containing
+complete heavy-maintenance equipment for 102 cars.[^dorts-equipment-list] It
+also lists CM351A for non-VAL-system test instruments and CM351B for non-VAL
+small maintenance equipment and tools.[^dorts-equipment-list] Those records
+correct the former page's suggestion that heavy overhaul might not happen here:
+the official inventory explicitly says complete heavy-maintenance equipment was
+procured for the original fleet.[^dorts-equipment-list]
 
-## Access
+The opened material does not establish which of that equipment remains active,
+what work has migrated to Neihu, or how responsibilities are divided for the
+Bombardier fleet. Those current workshop allocations remain TBC rather than
+being inferred from the depots' main/secondary labels.
 
-Not open to the public. *Any public viewing points or open-day arrangements to
-be added.*
+## Relationship with Neihu Depot
 
-## Corrections
+DORTS says the two depots support one another and share Wenhu train storage and
+maintenance.[^dorts-line] That wording establishes a paired maintenance system,
+not a one-fleet-per-depot assignment. Neihu provides the principal function and
+Muzha the secondary function, while the current fleet split is not published in
+the opened records.[^dorts-planning]
 
-- **This page previously said Muzha was home to the VAL256 fleet alone.** That
-  one-fleet-per-depot split was never sourced; it was tidy, and wrong. The
-  best available source says the depot stables both types[^zh-muzha-depot],
-  and the Allocation section now matches the source rather than the
-  assumption.
+The page's diagram locates the junction at BR01 from the project's curated
+depot-join record. No opened prose source independently states that station code,
+so the exact named junction remains a structured-data fact rather than a claim
+about current workshop allocation.

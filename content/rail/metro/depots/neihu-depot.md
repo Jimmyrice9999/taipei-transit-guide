@@ -1,13 +1,13 @@
 ---
 title: Neihu Depot
-summary: The line's main workshop — named after a district it is not in, and joined to the running line at the opposite end from the station that shares its name.
+summary: The Wenhu Line's 7.11-hectare main depot in Nangang — a 16-road, 144-pair facility with complete heavy-maintenance equipment for the 202-car Bombardier fleet.
 order: 2
 line: BR
+operator: TRTC
 spine: BR24
-stub: true
 aliases:
   - 內湖機廠
-updated: 2026-08-06
+updated: 2026-08-23
 hero:
   image: neihu-depot/hero
   alt: Aerial view of Neihu Depot's blue-roofed stabling building beside the expressway and the Keelung River.
@@ -16,152 +16,154 @@ hero:
 facts:
   - label: Chinese name
     value: 內湖機廠
+    source: dorts-planning
   - label: Operator
     value: Taipei Rapid Transit Corporation
+    source: dorts-line
   - label: Line
     value: Wenhu
-  - label: Connects at
-    value: BR24
-    source: zh-neihu-depot
+    source: dorts-planning
   - label: District
     value: Nangang
-    source: dorts-wenhu
-  - label: Completed
-    value: 22 February 2009
-    source: zh-neihu-depot
-  - label: In use
+    source: dorts-planning
+  - label: Role
+    value: Main depot
+    source: dorts-planning
+  - label: Neihu Line opened
     value: 4 July 2009
-    source: dorts-wenhu
-  - label: Grade
-    value: Full-function maintenance depot
-    source: dorts-wenhu
-  - label: Fleet based
-    value: Innovia APM 256
+    source: dorts-line
+  - label: Current fleet allocation
+    value: TBC
 specs:
   - label: Site area
-    value: "7.11"
+    value: approximately 7.11
     unit: ha
-    source: dorts-wenhu
-  - label: Site length
-    value: "600"
-    unit: m
-    source: zh-neihu-depot
-  - label: Site width
-    value: "120"
-    unit: m
-    source: zh-neihu-depot
+    source: dorts-capacity
   - label: Stabling roads
-    value: TBC
-  - label: Train capacity
-    value: TBC
-  - label: Heavy overhaul
-    value: TBC
-  - label: Light maintenance
-    value: "Yes"
-    source: dorts-wenhu
-  - label: Train wash
-    value: "Yes"
-    source: dorts-wenhu
+    value: "16"
+    source: dorts-equipment-table
+  - label: Stabling capacity
+    value: "144"
+    unit: married pairs
+    source: dorts-capacity
   - label: Test track
     value: "Yes"
-    source: zh-neihu-depot
-  - label: Operations control centre
-    value: "Yes"
-    source: zh-neihu-depot
+    source: dorts-equipment-table
+  - label: Heavy-maintenance equipment
+    value: "18"
+    unit: groups serving 202 cars
+    source: dorts-equipment-list
+  - label: Exact civil-work start
+    value: TBC
+  - label: Exact depot commissioning
+    value: TBC
 sources:
-  - id: dorts-wenhu
-    title: Wenshan—Neihu Line
+  - id: dorts-line
+    title: Wenshan–Neihu Line
     titleOriginal: 文山內湖線
-    publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
     url: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    snapshot: https://web.archive.org/web/20260209210832/https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
-    note: "The builder's own project record. Locates the depot at 南港經貿園區特定專用區東北側，緊鄰基隆河 — the northeast side of the Nangang Economic and Trade Park, hard against the Keelung River — and gives 7.11 ha and the full-function grade."
-  - id: zh-neihu-depot
-    title: Neihu Depot
-    titleOriginal: 內湖機廠
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/內湖機廠
-    snapshot: https://web.archive.org/web/20260807043713/https://zh.wikipedia.org/zh-tw/%E5%85%A7%E6%B9%96%E6%A9%9F%E5%BB%A0
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS locates the site beside the Keelung River in the Nangang Economic and Trade Park area, gives approximately 7.11 ha and lists its full maintenance, storage, testing, recovery and control functions; the page also dates line-project milestones.
+  - id: dorts-planning
+    title: Taipei Metro network planning practice — depot roles and locations
+    titleOriginal: 捷運路網規劃實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page200.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: "Source for the site dimensions, the February 2009 completion date, the facility list, and the flat statement 雖名為內湖機廠，卻位於南港區 — despite the name, it is in Nangang District."
-  - id: zh-muzha-depot
-    title: Muzha Depot
-    titleOriginal: 木柵機廠
-    publisher: 維基百科 (Chinese Wikipedia)
-    url: https://zh.wikipedia.org/zh-tw/木柵機廠
-    snapshot: https://web.archive.org/web/20220520160336/https://zh.wikipedia.org/zh-tw/木柵機廠
-    accessed: 2026-08-06
-    kind: secondary
+    note: DORTS places Neihu Depot in Nangang within the land bounded by Huandong Boulevard, Gangdong Street and Jingmao 1st Road, and says it became the Wenhu Line's main depot.
+  - id: dorts-capacity
+    title: Taipei Metro network planning practice — depot inventory
+    titleOriginal: 捷運路網規劃實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page202.html
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
+    note: DORTS classifies Neihu as the Wenhu Line's rubber-tyred main depot and publishes approximately 7.11 ha with storage for 144 married pairs.
+  - id: dorts-equipment-list
+    title: Taipei Metro depot equipment practice — maintenance-equipment contracts
+    titleOriginal: 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS lists CB370 as a turnkey package with 18 groups of complete heavy-maintenance equipment for 202 cars.
+  - id: dorts-equipment-table
+    title: Taipei Metro depot equipment practice — fleet and depot table
+    titleOriginal: 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page107.html
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: DORTS publishes 50 trains, main grade, 16 stabling roads, a test track, 7.1 ha and capacity for 144 married pairs.
 ---
 
-Doubling the line's length meant doubling what had to be stabled overnight, and
-[Muzha Depot](/rail/metro/depots/muzha-depot/) at the far southern end could not
-absorb it. 內湖機廠 was built for the Neihu extension, completed on 22 February
-2009[^zh-neihu-depot] and brought into use when the extension opened on 4 July
-2009[^dorts-wenhu].
+## Overview
 
-Despite the name, the depot is not in Neihu. It sits on the northeast side of
-the Nangang Economic and Trade Park (南港經貿園區特定專用區), against the
-Keelung River[^dorts-wenhu] — which is **Nangang District**. zh.wikipedia puts
-it plainly: 雖名為內湖機廠，卻位於南港區[^zh-neihu-depot]. The name follows the
-line it was built for, not the ground it stands on — and the connection to the
-running line follows the same logic, joining not at BR19 Neihu but at **BR24
-Taipei Nangang Exhibition Center**, the far end of the line[^zh-neihu-depot].
+Neihu Depot, 內湖機廠, is the Wenhu Line's main depot even though the site is in
+Nangang District.[^dorts-planning] DORTS places it within the land bounded by
+Huandong Boulevard, Gangdong Street and Jingmao 1st Road.[^dorts-planning] Its
+line-project page describes a long northwest–southeast site on the northeast
+side of the Nangang Economic and Trade Park special district, immediately beside
+the Keelung River.[^dorts-line]
 
-## Facilities
+DORTS publishes an area of approximately 7.11 hectares and calls Neihu a
+full-function maintenance depot.[^dorts-line][^dorts-capacity] Its listed work
+includes stabling, washing, inspection, servicing, repair, testing, emergency
+recovery and train control.[^dorts-line] The name therefore follows the Neihu
+Line project it was built to serve, while the official location is Nangang.[^dorts-planning]
 
-The DORTS record describes a full-function maintenance depot — 停駐、清洗、檢查、
-保養、維修、測試 — stabling, washing, inspection, servicing, repair and
-testing[^dorts-wenhu]. zh.wikipedia adds a maintenance workshop, a multi-storey
-stabling building, an operations control centre, a substation, an underframe
-washing plant, a paint shop, a sewage treatment plant, a fan-shaped track area
-and a test track[^zh-neihu-depot].
+## Planning and opening context
 
-The operations control centre here took over the primary control function from
-Muzha when it opened[^zh-neihu-depot], which is the substantive change of 2009:
-the line's centre of gravity moved from the 1996 end to the 2009 end.
+The Executive Yuan approved the Neihu Line plan on 7 August 1993, but the 1993
+Muzha test fire led Taipei City Council to require a fresh high-capacity-system
+assessment.[^dorts-line] DORTS records an eight-year review before the council
+voted on 9 January 2001 to retain the approved elevated medium-capacity system.[^dorts-line]
 
-*Not established: stabling capacity in trains or pairs, the number of roads, and
-whether heavy overhaul happens here at all. None of the sources consulted gives
-any of it. That is the kind of figure that lives in an environmental impact
-assessment or a construction record rather than on a public page.*
+The earliest line construction contract identified by DORTS was CB420, signed
+on 11 April 2002; CB410 followed on 12 June 2003 and incorporated the CB370
+electromechanical work.[^dorts-line] These are project-package milestones, not
+depot-specific groundbreaking dates. DORTS dates the Neihu Line's initial and
+final inspections to 7 May and 6 June 2009, and passenger opening to 4 July
+2009.[^dorts-line] An exact depot handover or commissioning date remains TBC.
 
-## Allocation
+## Capacity and stabling
 
-Principal base for the
-[Innovia APM 256 (C370)](/rail/metro/rolling-stock/innovia-apm-256-c370/)
-fleet[^dorts-wenhu].
-[Muzha Depot](/rail/metro/depots/muzha-depot/) stables both types[^zh-muzha-depot],
-so the arrangement is not a clean one-fleet-per-depot split.
+The planning inventory gives storage for 144 two-car married pairs.[^dorts-capacity]
+A separate depot-equipment table gives 16 stabling roads, a 50-train fleet
+context and a test track; its note repeats the 144-pair capacity.[^dorts-equipment-table]
+These values are complementary rather than competing: 144 counts vehicle pairs,
+16 counts roads and 50 describes the fleet context used by that table.[^dorts-equipment-table]
 
-## Planning and construction
+The same technical table rounds the site to 7.1 hectares while the line and
+planning pages publish 7.11.[^dorts-line][^dorts-capacity][^dorts-equipment-table]
+Both values remain visible because the shorter figure appears to be rounding;
+the sources do not explicitly say so.
 
-*To be written.* This site previously asserted that the siting was contested
-during planning. Three runs of research have found **no source for that at
-all**, and it has been removed rather than left standing with a hedge. If it
-happened it will be in the environmental impact assessment or in contemporaneous
-local news, and it would be worth having.
+## Maintenance equipment
 
-## Access
+DORTS identifies CB370 as the turnkey depot-equipment package and says it
+contained 18 groups of complete heavy-maintenance equipment for 202 cars.[^dorts-equipment-list]
+That directly establishes heavy-maintenance capability and corrects the former
+TBC field.[^dorts-equipment-list] The 202-car number describes the equipment's
+design scope, not proof that every Bombardier car is currently based at Neihu.
 
-Not open to the public. The park-and-ride car park on the site is — it is the
-only part of the depot a member of the public can reach.
+DORTS says Neihu and Muzha support one another and jointly share Wenhu storage
+and maintenance.[^dorts-line] The documents do not publish a current depot-by-depot
+fleet roster, so present Matra/Bombardier allocation remains TBC.
 
-## Corrections
+## Relationship with the line
 
-Two errors previously published on this page, both inferences from the depot's
-name:
-
-- **This page said the depot was in Neihu District.** It is in Nangang, on the
-  DORTS record's own siting[^dorts-wenhu].
-- **This page said the depot joined the line near BR19 Neihu.** It connects at
-  BR24[^zh-neihu-depot]. The same error placed the depot marker at the wrong
-  end of the line page's strip map for four builds — an illustration, where
-  nobody reads a footnote — and `npm run facts` now cross-checks that marker
-  against this page's stated junction.
+After Neihu Depot entered use, it became the Wenhu Line's main depot and Muzha
+became the secondary depot.[^dorts-planning] The page's diagram locates Neihu's
+junction at BR24 from the project's curated depot-join record. The full DORTS
+prose locates the depot at the Nangang end but does not itself state that station
+code, so the exact named junction is not presented here as an independently
+published workshop fact.

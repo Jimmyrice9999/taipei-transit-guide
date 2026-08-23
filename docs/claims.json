@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 11302,
-    "tbc": 4307,
-    "asserted": 24,
-    "meta": 60
+    "sourced": 11304,
+    "tbc": 4310,
+    "asserted": 0,
+    "meta": 58
   },
   "files": [
     {
@@ -9546,11 +9546,11 @@
     },
     {
       "file": "content/rail/metro/depots/muzha-depot.md",
-      "sources": 3,
-      "sourced": 14,
-      "tbc": 1,
-      "asserted": 7,
-      "meta": 2
+      "sources": 5,
+      "sourced": 15,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
     },
     {
       "file": "content/rail/metro/depots/nangang-depot.md",
@@ -9562,10 +9562,10 @@
     },
     {
       "file": "content/rail/metro/depots/neihu-depot.md",
-      "sources": 3,
-      "sourced": 15,
+      "sources": 5,
+      "sourced": 18,
       "tbc": 3,
-      "asserted": 5,
+      "asserted": 0,
       "meta": 0
     },
     {
@@ -9667,9 +9667,9 @@
     {
       "file": "content/rail/metro/lines/wenhu-line.md",
       "sources": 15,
-      "sourced": 61,
+      "sourced": 66,
       "tbc": 0,
-      "asserted": 5,
+      "asserted": 0,
       "meta": 7
     },
     {
@@ -9738,10 +9738,10 @@
     },
     {
       "file": "content/rail/metro/rolling-stock/val256.md",
-      "sources": 11,
-      "sourced": 33,
-      "tbc": 2,
-      "asserted": 7,
+      "sources": 13,
+      "sourced": 26,
+      "tbc": 3,
+      "asserted": 0,
       "meta": 0
     },
     {
@@ -10033,180 +10033,5 @@
       "meta": 0
     }
   ],
-  "asserted": [
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "facts: Chinese name",
-      "text": "木柵機廠"
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "facts: Operator",
-      "text": "Taipei Rapid Transit Corporation"
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "facts: Line",
-      "text": "Wenhu"
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "facts: Connects at",
-      "text": "BR01"
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "facts: District",
-      "text": "Wenshan"
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "When the Muzha Line opened in 1996 there was nowhere else — no other depot, no other line, no other fleet. 木柵機廠 was the whole of the system'",
-      "signals": [
-        "date",
-        "count",
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/metro/depots/muzha-depot.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Eighty-four pairs is a striking number against a line whose entire fleet is 152 pairs, and it rests on one source.",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/metro/depots/neihu-depot.md",
-      "state": "asserted",
-      "where": "facts: Chinese name",
-      "text": "內湖機廠"
-    },
-    {
-      "file": "content/rail/metro/depots/neihu-depot.md",
-      "state": "asserted",
-      "where": "facts: Operator",
-      "text": "Taipei Rapid Transit Corporation"
-    },
-    {
-      "file": "content/rail/metro/depots/neihu-depot.md",
-      "state": "asserted",
-      "where": "facts: Line",
-      "text": "Wenhu"
-    },
-    {
-      "file": "content/rail/metro/depots/neihu-depot.md",
-      "state": "asserted",
-      "where": "facts: Fleet based",
-      "text": "Innovia APM 256"
-    },
-    {
-      "file": "content/rail/metro/depots/neihu-depot.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The park-and-ride car park on the site is — it is the only part of the depot a member of the public can reach.",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/metro/lines/wenhu-line.md",
-      "state": "asserted",
-      "where": "facts: Line code",
-      "text": "BR"
-    },
-    {
-      "file": "content/rail/metro/lines/wenhu-line.md",
-      "state": "asserted",
-      "where": "facts: Operator",
-      "text": "Taipei Rapid Transit Corporation"
-    },
-    {
-      "file": "content/rail/metro/lines/wenhu-line.md",
-      "state": "asserted",
-      "where": "facts: Termini",
-      "text": "BR01 — BR24"
-    },
-    {
-      "file": "content/rail/metro/lines/wenhu-line.md",
-      "state": "asserted",
-      "where": "facts: Depots",
-      "text": "Muzha, Neihu"
-    },
-    {
-      "file": "content/rail/metro/lines/wenhu-line.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Station names, codes, running order, coordinates and the end-to-end journey time come from **Taiwan MOTC's TDX platform**, operator TRTC — g",
-      "signals": [
-        "date",
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "facts: Family",
-      "text": "VAL"
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "facts: Operator",
-      "text": "Taipei Rapid Transit Corporation"
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "facts: Line",
-      "text": "Wenhu"
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "A train delivered in the early 1990s is still running the line, and almost nothing tells it what to do any more.",
-      "signals": [
-        "figure"
-      ]
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "So for nearly eighteen months the whole 24-station line ran on the Bombardier fleet alone, while the trains that had opened the railway sat ",
-      "signals": [
-        "count"
-      ]
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Ordered for the Muzha Line and in service from its opening on 28 March 1996, originally working BR01 through BR12 only.",
-      "signals": [
-        "date",
-        "count",
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/rail/metro/rolling-stock/val256.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Since December 2010 the fleet has run the full route alongside the [Innovia APM 256 (C370)].",
-      "signals": [
-        "date",
-        "count"
-      ]
-    }
-  ]
+  "asserted": []
 }

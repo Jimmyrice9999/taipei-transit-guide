@@ -15097,3 +15097,82 @@ the clean rerun after one non-reproducing keyboard-start failure; the independen
 `npm test` rebuild passed all 217 unit tests and 17 fact cross-checks. No new
 gate was needed because the permanent font and spec-shape gates caught both
 defects.
+
+## Run 99 — Part 3, VAL256 and Wenhu depots (23 August 2026)
+
+### Sourced
+
+Rebuilt VAL256 from 697 to 751 sourced body words and added its subject research
+file. Thirteen primary sources now replace a source list that was mostly
+secondary. DORTS records the March 1988 Matra V256 selection, 1991 manufacture,
+CC350 quantity of 51 pairs / 102 cars and 28 March 1996 opening:
+https://data.taipei/api/dataset/3812b03c-7e72-40c7-85cf-c67df9162f7e/resource/75f441a8-9cbc-4bf6-8b8b-e8cee765b369/download and
+https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&s=C8602F8588914E91.
+Its technical records establish dimensions, two doors per side, two DC motors
+per car, original fixed-block control and the later Cityflo 650 conversion:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html,
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page139.html,
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page202.html and
+https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page203.html.
+TRTC records all 51 converted pairs returning on 26 December 2010 and publishes
+the current approximate 420-person capacity and the 2023 seat-removal trial.
+
+Rebuilt Muzha Depot from 306 to 418 sourced body words and Neihu Depot from 476
+to 478, adding a research file for each. DORTS's depot inventory establishes
+Muzha as a 6.2 ha secondary depot with 84-pair capacity and Neihu as the Wenhu
+main depot with 144-pair capacity:
+https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page200.html and
+https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page202.html. Its
+equipment record establishes 12 and 16 stabling roads, test tracks, complete
+heavy-maintenance equipment for the 102-car and 202-car fleets, and the CM350,
+CM351 and CB370 packages:
+https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html and
+https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page107.html. The
+Wenhu Line page's final five assertions were connected to its existing DORTS
+and TDX sources.
+
+### TBC
+
+VAL256 empty mass, operating maximum, present depot allocation, exact pair-by-
+pair delivery and supplier chronology and a confirmed replacement programme
+remain TBC. Muzha and Neihu current fleet rosters and exact depot civil-work and
+commissioning dates remain TBC. Recent official-report URLs that timed out or
+failed to return their documents are dated in the research files as checked and
+failed; their snippets were not used.
+
+### Contradicted the corpus
+
+The VAL256 page's GEC Alsthom co-builder, 1990–93 build range, 70 km/h operating
+maximum, 440-person capacity, present depot allocation and non-fixed formation
+did not survive the opened primary record and were removed or made TBC. The
+primary fleet record instead gives 1991 manufacture and approximately 420
+people under its stated loading assumption. The depot pages' old secondary-
+source allocation language was narrowed to the design and equipment scopes the
+opened DORTS documents actually establish.
+
+### Conflicts found
+
+DORTS publishes Neihu Depot as both approximately 7.11 ha and 7.1 ha in two
+primary records; both values are retained, with the latter identified as the
+one-decimal presentation. No unresolved primary-value conflict was found for
+Muzha. For VAL256, the approximately 400-person pre-trial and approximately
+420-person post-reconfiguration capacities are dated states, not competing
+measurements, and are presented as such.
+
+### Gates
+
+The claims sweep reached 11,304 sourced / 4,310 TBC / 0 asserted. That exposed
+the permanent stale-baseline test: leaving the old allowance at 32 failed the
+gate, so `docs/claims-baseline.json` was tightened from 32 to zero. It was not
+raised and no checker was weakened. Citations are clean at 4,902 resolved
+(4,711 primary / 191 secondary), and research is clean at 118 files with 505
+dated checked-and-failed entries. The font gate caught two new Han glyphs and
+the spec-shape gate caught a mixed value/unit; regenerating the subset and
+separating the unit fixed them. Search ranking caught a broad VAL alias
+outranking the exact Matra-dispute article and was corrected without changing
+the matcher. These defect classes already had permanent gates, so no duplicate
+gate was added. The clean full verifier passed 217 tests across 1,954 pages and
+218,044 internal links with no broken links, fragment failures, orphans,
+missing glyphs, accessibility errors or warnings. Navigation passed all 19
+checks; the independent `npm test` rebuild passed all 217 unit tests and 17 fact
+cross-checks.

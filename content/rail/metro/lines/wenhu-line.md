@@ -37,10 +37,13 @@ profile:
 facts:
   - label: Line code
     value: BR
+    source: dorts-wenhu
   - label: Operator
     value: Taipei Rapid Transit Corporation
+    source: trtc-headways
   - label: Termini
     value: BR01 — BR24
+    source: dorts-wenhu
   - label: Stations
     value: "24"
     source: dorts-wenhu
@@ -73,6 +76,7 @@ facts:
     source: zh-wenhu
   - label: Depots
     value: Muzha, Neihu
+    source: dorts-wenhu
 specs:
   - label: Route length, operating
     value: "25.17"
@@ -498,7 +502,7 @@ line[^dorts-wenhu].
 
 Station names, codes, running order, coordinates and the end-to-end journey time
 come from **Taiwan MOTC's TDX platform**, operator TRTC — government open data,
-retrieved 5 August 2026. The strip map is generated from it directly. Everything
+retrieved 5 August 2026.[^tdx] The strip map is generated from it directly. Everything
 else is cited inline and listed below.
 
 TDX does not publish station structure, headways, or anything about rolling
