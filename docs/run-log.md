@@ -14921,3 +14921,59 @@ links with no broken links, fragment failures, orphans, missing glyphs,
 accessibility errors or warnings. Navigation passed all 19 checks. The
 independent `npm test` rebuild passed all 217 unit tests and 17 fact
 cross-checks.
+
+## Run 96 — Part 3, C371 rolling stock (23 August 2026)
+
+### Sourced
+
+Rebuilt C371 from 122 to 751 sourced body words and added its subject research
+file. DORTS establishes Kawasaki's 1 September 2003 award and the five-contract
+family: https://data.taipei/dataset/detail?id=da06f518-74ca-497a-8b5b-b5e2b51c0166.
+Its full FAQ quantities total 52 six-car trains plus three three-car trains / 321
+cars. DORTS and Taiwan Rolling Stock independently establish 162 cars / 27
+six-car trains manufactured in Taiwan through the complete-build-up industrial
+cooperation programme:
+https://ebook.dorts.gov.taipei/JRTST/ebook/no41/files/basic-html/page194.html and
+https://www.trsc.com.tw/train/tran-58ace453a7ad8. The manufacturer supplies the
+formation, power, gauge, performance, dimensions and mass specification. DORTS's
+CK371 crashworthiness paper supplies the 25 km/h collision cases and compliant
+mechanical-fuse results; the Control Yuan supplies the dated CCTV and intercom
+retrofits.
+
+### TBC
+
+The signed award price, complete Japan/Taiwan delivery chronology, any proven
+sub-division inside the 162-car domestic share, series-3/series-4 totals and a
+current line/depot allocation roster remain TBC. The primary award notice,
+acceptance certificates, formal fleet specification and current TRTC roster
+would settle them respectively.
+
+### Contradicted the corpus
+
+The old page called C371 Taiwan's first domestically manufactured metro train.
+The opened primary manufacturer record supports only two narrower firsts: it was
+Taiwan Rolling Stock's first industrial-cooperation production model and that
+company's first complete-build-up programme. The broad national claim was
+removed. The lead file's 159 Japan / 12 SKD / 150 complete-build split also did
+not survive primary checking: the opened DORTS and manufacturer pages describe
+all 162 domestic cars / 27 six-car trains as complete-build-up work.
+
+### Conflicts found
+
+No manufacturer, award-date, 321-car or 162-car conflict was found. The apparent
+fleet-count difference is retained with its measurement: DORTS lists 52
+six-car trains and three three-car trains, while the Control Yuan calls the same
+mixed-formation fleet `53.5列車` (train-equivalents).
+
+### Gates
+
+Claims are 11,289 sourced / 4,308 TBC / 32 asserted, with no new assertion and
+no baseline change. Citations are clean at 4,886 resolved (4,676 primary / 210
+secondary), and research is clean at 113 files with 477 dated
+checked-and-failed entries. The first fresh build correctly stopped on two Han
+glyphs introduced by the Control Yuan title; regenerating the committed content
+subset added them. The clean full verifier passed 217 tests across 1,954 pages
+and 218,043 internal links with no broken links, fragments, orphans, missing
+glyphs, accessibility errors or warnings. Navigation passed all 19 checks; the
+independent `npm test` rebuild passed all 217 unit tests and 17 fact
+cross-checks.
