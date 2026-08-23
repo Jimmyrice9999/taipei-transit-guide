@@ -353,6 +353,93 @@ below.** This file mirrors the content page at
 
 ---
 
+## Independently verified technical expansion — 23 August 2026
+
+### Planning, approvals and commissioning
+
+- **Feasibility was approved 1 July 2013; comprehensive planning was approved
+  8 June 2015; the civil design-build contract was awarded 3 March 2016; main
+  construction began 6 April 2016.** Source title: *Ankeng Line*;
+  `titleOriginal`: 安坑線. Publisher: New Taipei City Government Department of
+  Rapid Transit Systems (新北市政府捷運工程局). URL:
+  https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ. PRIMARY, builder
+  publishing its own project chronology. High confidence because the full
+  chronology page was fetched and read. Original: 「行政院於102年7月1日核定可行性
+  研究報告」; 「行政院於104年6月8日核定綜合規劃報告」; 「105年3月3日完成土建統包
+  工程決標」; 「主體工程於105年4月6日正式開工」.
+- **The route's environmental record began in 2003, with later difference
+  analyses in 2016 and 2020; urban-plan changes took effect in January 2018
+  and November 2019.** Same DORTS route page. PRIMARY. High confidence because
+  each dated milestone is printed in the full chronology. Original:
+  「92年10月14日環境影響說明書行政院環境保護署備查」; 「109年4月24日行政院環境
+  保護署備查…第2次環境差異分析報告(機廠配置及土方變更)」; 「107年1月22日發布實施」;
+  「108年11月13日發布實施…河川區變更」.
+- **Initial inspection occurred 11 December 2022, improvements were reported
+  complete 27 December, final inspection occurred 14 January 2023, and MOTC
+  issued operating approval 2 February.** Source title: *Ankeng LRT receives
+  operating permit and opens 10 February*; `titleOriginal`: 安坑輕軌獲營運許可
+  2月10日通車. Publisher: New Taipei City Government (新北市政府). URL:
+  https://www.ntpc.gov.tw/ch/home.jsp?dataserno=471c4aecd1fe681460bc91c9f77f27a4&id=e8ca970cde5c00e1.
+  PRIMARY, project owner. High confidence because the full announcement gives
+  the complete sequence. Original: 「111年12月11日完成初勘」; 「12月27日完成改善並報請
+  交通部辦理履勘」; 「今年1月14日完成履勘」; 「於今(2)日獲得交通部核發營運許可函」.
+- **Sinotech Engineering Consultants was project/construction manager and MOH
+  and Associates was supervising consultant.** Source title: *Gender analysis
+  of construction-management staff in the joint site office — Ankeng LRT case
+  study*; `titleOriginal`: 工地聯合辦公室施工管理人員之性別探討及策進作為－以安坑
+  輕軌為例. Publisher: New Taipei City Government DORTS (新北市政府捷運工程局).
+  URL: https://www.dorts.ntpc.gov.tw/cdn/file/20211025/2835d99f-85e8-4a32-8106-f8ce91b8bf2c.pdf.
+  PRIMARY, official project-management paper. High confidence because all ten
+  pages of the PDF were fetched and read. Original: 「專案管理中興工程顧問股份有限公司」;
+  「監造亞新工程顧問股份有限公司」.
+
+### Track and bridge engineering
+
+- **Three floating-slab installations total 800 m across both directions,
+  placed near vibration-sensitive housing around K07 and K08.** Source title:
+  *Floating-slab track reduces noise and vibration on Ankeng LRT*;
+  `titleOriginal`: 安坑輕軌浮動式道床降低噪音振動. Publisher: New Taipei City
+  Government DORTS (新北市政府捷運工程局). URL:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/WQR2W0lodGPV.
+  PRIMARY, builder's technical explanation. High confidence because the full
+  page states every location and combined length. Original: 「全線共有3處浮動式道床，
+  上下行總長度800公尺」; 「K7與K8車站區間鄰近住宅區屬噪音與振動敏感地區」.
+- **Flood requirements limited An-Xin Bridge to two river piers; it is a 502 m
+  three-span hybrid cable-stayed/steel-truss structure with a 225 m main span,
+  designed for wind speeds up to 80 m/s and tested at 1:60 scale.** Source
+  title: *An-Xin Bridge — a New Taipei landmark built to resist severe winds*;
+  `titleOriginal`: 安心橋－耐強風的新北地標. Publisher: New Taipei City
+  Government DORTS (新北市政府捷運工程局). URL:
+  https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpKlv2LK7.
+  PRIMARY, builder's engineering page. High confidence because the full page
+  states the design constraint, dimensions and test. Original: 「水利署要求安心橋跨河
+  段於河道中僅能設置2座橋墩」; 「主跨徑長達225公尺」; 「設計風速高達每秒80公尺」;
+  「製作比例1比60的縮尺模型進行風洞試驗」.
+- **The bridge team used BIM for clash checking, coordinated drawings,
+  drone-derived 3D GIS, coating-colour simulation, quantity calculation and
+  operating-stage handover.** Source title: *Practical study of BIM in the
+  design and construction of An-Xin Bridge for the Ankeng LRT system*;
+  `titleOriginal`: 建築資訊模型(BIM)於安坑輕軌系統安心橋設計施工應用實務探討.
+  Publisher: New Taipei City Government DORTS (新北市政府捷運工程局). URL:
+  https://www.dorts.ntpc.gov.tw/admin/content/upload/file/20211117/e24abaab-d892-4a63-b31a-dc61c6915f87.pdf.
+  PRIMARY, paper by the owner and design-build participants. High confidence:
+  the full eight-page PDF was downloaded, text-extracted, rendered page by page
+  and visually checked. Original: 「本論文並以安心橋之設計及施工等各階段為例，來說明
+  並討論BIM技術在設計衝突問題解決、橋塔錨碇座與基樁鋼筋、圖說輸出、三維(3D GIS)
+  模型建立成果、4D模型運用、橋體塗裝配色模擬以及工程數量計算等各項目之輔助成效」.
+
+### Operations
+
+- **Ankeng LRT carried more than 2.03 million journeys in 2025.** Source title:
+  *New Taipei Metro exceeds 30 million journeys in 2025, a record high*;
+  `titleOriginal`: 新北捷運2025全年運量突破3,000萬人次！創歷史新高. Publisher:
+  New Taipei Metro Corporation (新北大眾捷運股份有限公司). URL:
+  https://www.ntmetro.com.tw/basic/?mode=detail&node=843. PRIMARY, operator's
+  full-year release. High confidence because the full page was fetched rather
+  than using the search result. Original: 「安坑輕軌…全年運量站穩203萬人次大關」.
+
+---
+
 ## Conflicts
 
 Published side by side, not resolved:
@@ -375,9 +462,9 @@ Published side by side, not resolved:
    longest **span** (225 m) among Taiwan's rail bridges; a named contractor
    engineer, quoted by CNA, claims the longest rail **bridge** outright.
    Both published; not the same claim.
-4. **TPASS purchase location.** Secondary round-ups describe K09 as a TPASS
-   sales point; NTMC's own page listing sales points for that pass does not
-   include any Ankeng LRT station. Published as a conflict.
+4. **TPASS purchase location.** MOTC's own 2022 programme table names K09 as a
+   sales point; NTMC's current sales-point page does not include any Ankeng LRT
+   station. Published as a dated primary-versus-primary conflict.
 5. **The first-anniversary headway change.** The lead file said flatly
    "tightened to 6 minutes." NTMC's own release gives 6–8 minutes for the
    morning peak and 8–10 minutes for the evening peak — narrower ranges, not
@@ -400,10 +487,19 @@ Published side by side, not resolved:
   readable content (PDF not parsed). Not used; superseded by the 自由時報
   article's verbatim quote of the same list. Checked 12 August 2026.
 - **What happened to the Ankeng Depot platform trial after 31 December
-  2024** — searched repeatedly (English and Chinese) for whether it became
-  a permanent station, was discontinued, or continued informally. Nothing
-  found. Recorded as a stated gap, not asserted either way. Checked
-  12 August 2026.
+  2024** — searched repeatedly in Traditional Chinese and English for whether
+  it became a permanent station, was discontinued, or continued informally.
+  The later DORTS depot feature still describes only the July–December 2024
+  trial, and no later outcome announcement appeared. Recorded as a stated gap,
+  not asserted either way. Checked 12 August and again 23 August 2026.
+- **Semantic fetch of the official An-Xin Bridge BIM PDF** — the browser's PDF
+  parser returned an internal error. Direct download of the same official URL
+  succeeded; all eight pages were text-extracted and rendered to images, and
+  pages 1, 4, 5, 7 and 8 were visually inspected. The source therefore
+  survived via the full-document fallback and is used. Checked 23 August 2026.
+- **A separate search result for a New Taipei project-delivery-model PDF** —
+  full-page fetch returned an internal error and no reliably identified
+  document body. It was not used. Checked 23 August 2026.
 - **The 雙安隧道 tunnel's own length** — searched; found only that it exists,
   its type (three-bore, road either side, light rail centre), and its
   location (between K01 and the depot). No figure found. Checked

@@ -5,7 +5,7 @@ order: 9
 line: K
 aliases:
   - 安坑輕軌
-updated: 2026-08-12
+updated: 2026-08-23
 hero:
   image: ankeng-lrt/hero
   alt: Two cream-and-black Ankeng LRT trams on grass-lined track, overhead wires above and wooded hillside behind.
@@ -145,10 +145,55 @@ sources:
     publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局, DORTS)
     url: https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ
     snapshot: https://web.archive.org/web/20260812000002/https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ
-    accessed: 2026-08-12
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
-    note: "The builder's own route page: 全線約7.5公里, 9座車站, and a structure description of an at-grade section along Anyi Road transitioning to elevated (以高架方式沿安和路北行) from around K06. Combined with DORTS's own public-art page for K02 (below), this supports 5 elevated (K02, K06–K09) and 4 at-grade (K01, K03–K05) stations, though no single DORTS table listing all nine by structure was found."
+    note: "The builder's full route and chronology page: the corridor and nine stations; July 2013 feasibility approval; June 2015 comprehensive-planning approval; environmental and urban-plan milestones; the 3 March 2016 civil design-build award; the 6 April 2016 start; inspections and the 2 February 2023 operating approval."
+  - id: ntpc-opening-process
+    title: Ankeng LRT receives operating permit and opens 10 February
+    titleOriginal: 安坑輕軌獲營運許可 2月10日通車
+    publisher: New Taipei City Government (新北市政府)
+    url: https://www.ntpc.gov.tw/ch/home.jsp?dataserno=471c4aecd1fe681460bc91c9f77f27a4&id=e8ca970cde5c00e1
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "The commissioning sequence: initial inspection on 11 December 2022, completion of improvements and submission for final inspection on 27 December, final inspection on 14 January 2023, and MOTC operating approval on 2 February. Also records construction disruption from labour and material shortages and the pandemic."
+  - id: dorts-floating-track
+    title: Floating-slab track reduces noise and vibration on Ankeng LRT
+    titleOriginal: 安坑輕軌浮動式道床降低噪音振動
+    publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局, DORTS)
+    url: https://www.dorts.ntpc.gov.tw/documentary/articleInfo/WQR2W0lodGPV
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Three floating-slab-track locations total 800 m over both directions: 300 m around K08 on each approach combined and 200 m beside the Anhe fire brigade, selected near vibration-sensitive housing around K07 and K08. Explains the elastic-pad isolation mechanism."
+  - id: dorts-bridge-engineering
+    title: An-Xin Bridge — a New Taipei landmark built to resist severe winds
+    titleOriginal: 安心橋－耐強風的新北地標
+    publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局, DORTS)
+    url: https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpKlv2LK7
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Water-agency flood requirements limited the river crossing to two piers; the resulting 502 m, three-span hybrid cable-stayed and steel-truss bridge has a 225 m main span. Records 80 m/s wind design and 1:60 wind-tunnel modelling."
+  - id: dorts-bim
+    title: Practical study of BIM in the design and construction of An-Xin Bridge for the Ankeng LRT system
+    titleOriginal: 建築資訊模型(BIM)於安坑輕軌系統安心橋設計施工應用實務探討
+    publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局, DORTS)
+    url: https://www.dorts.ntpc.gov.tw/admin/content/upload/file/20211117/e24abaab-d892-4a63-b31a-dc61c6915f87.pdf
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Full eight-page technical paper, downloaded and rendered for verification. Documents BIM clash checking, bridge-member coordination, drone-derived 3D GIS, coating-colour simulation, quantity calculation and model handover across design, construction and operations."
+  - id: dorts-project-management
+    title: Gender analysis of construction-management staff in the joint site office — Ankeng LRT case study
+    titleOriginal: 工地聯合辦公室施工管理人員之性別探討及策進作為－以安坑輕軌為例
+    publisher: New Taipei City Government, Department of Rapid Transit Systems (新北市政府捷運工程局, DORTS)
+    url: https://www.dorts.ntpc.gov.tw/cdn/file/20211025/2835d99f-85e8-4a32-8106-f8ce91b8bf2c.pdf
+    accessed: 2026-08-23
+    kind: primary
+    lang: zh-Hant
+    note: "Full ten-page official paper. Identifies Sinotech Engineering Consultants as project/construction manager and MOH and Associates as supervising consultant, and records how those teams expanded as systems work grew."
   - id: dorts-k02
     title: Ankeng LRT Rose China Town station
     titleOriginal: 安坑輕軌玫瑰中國城站
@@ -242,7 +287,7 @@ sources:
     accessed: 2026-08-12
     kind: primary
     lang: zh-Hant
-    note: "Confirms the depot boarding-platform trial's final extension to 31 December 2024, with roughly 50 riders a day across the two peak trips, run as an evaluation of whether the platform should become a full station: 長期持續觀察在地民眾搭乘輕軌成效. No source found states what happened after that date."
+    note: "Confirms the depot boarding-platform trial's final extension to 31 December 2024, with roughly 50 riders a day across the two peak trips, run as an evaluation of whether the platform should become a full station: 長期持續觀察在地民眾搭乘輕軌成效."
   - id: dorts-placename
     title: Why is it called the "Ankeng" LRT?
     titleOriginal: 為什麼叫做「安坑」輕軌呢?
@@ -306,15 +351,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Ankeng LRT resumed normal operation at 16:30 on 3 April 2024, at a 15-minute headway: 安坑輕軌已於16：30恢復正常營運，班距為15分鐘."
-  - id: udn-ridership-2025
-    title: "Ankeng LRT reaches only 65% of ridership target; New Taipei Metro: network-wide achievement 93.5%"
-    titleOriginal: 安坑輕軌運量僅達標65% 新北捷運：整體路網達成率93.5%
-    publisher: 聯合新聞網 (UDN)
-    url: https://udn.com/news/story/7323/9655456
-    accessed: 2026-08-12
-    kind: secondary
+  - id: ntmc-ridership-2025
+    title: New Taipei Metro exceeds 30 million journeys in 2025, a record high
+    titleOriginal: 新北捷運2025全年運量突破3,000萬人次！創歷史新高
+    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
+    url: https://www.ntmetro.com.tw/basic/?mode=detail&node=843
+    accessed: 2026-08-23
+    kind: primary
     lang: zh-Hant
-    note: "Reports NTMC's own 2025 figures: Ankeng LRT ridership at 65.38% of budgeted target, revenue at 70.02%, while all three New Taipei light-rail/circular lines together reached 93.5% of target, the company's best combined year yet. Not independently checked against an NTMC primary release, which was not found."
+    note: "The operator's full-year release says Ankeng LRT exceeded 2.03 million journeys in 2025; New Taipei Metro's three operated lines together exceeded 30.09 million."
   - id: motc-tpass-table
     title: "Table 1: contents and purchase channels of the Taipei–New Taipei–Keelung–Taoyuan living-circle commuter monthly pass"
     titleOriginal: 表1、基北北桃生活圈通勤月票方案內容及購買通路
@@ -335,44 +380,153 @@ sources:
     note: "Infobox distinguishes 路線長度 7.67公里 from 營運長度 7.5公里 (the latter matching NTMC/TDX exactly), and its route sentence gives the reason: the line is described as starting 起自安坑機廠 (at the depot), not at K01. Also the source for the 2.8+4.3+0.4 km structure breakdown, the 2018 four-option livery vote shortlist, and the July–December 2024 depot trial dates."
 ---
 
-The Ankeng light rail threads a valley of hillside housing into the network
-at Shisizhang on the [Circular Line](/rail/metro/lines/circular-line/), doing for
-the Ankeng district what the [Danhai LRT](/rail/metro/lines/danhai-lrt/) does for
-the Tamsui new town: feeding the heavy network rather than reaching the core
-itself. It opened on 10 February 2023, is run by
-[New Taipei Metro](/rail/operators/ntmc/), and its most-repeated visitor
-fact is also true: the doors do not open by themselves — you press a button,
-at every stop, on and off[^dorts-operating].
+The Ankeng light rail is a nine-station feeder through the hills and valley of
+Xindian, meeting the [Circular Line](/rail/metro/lines/circular-line/) at K09
+Shisizhang rather than entering central Taipei itself.[^dorts-route][^ntmc-stations]
+It opened on 10 February 2023 and is operated by
+[New Taipei Metro](/rail/operators/ntmc/).[^ntmc-opening] The doors do not open
+automatically: riders press the illuminated button to board or alight at every
+stop.[^dorts-operating]
 
 ![The cable-stayed Anxin Bridge, near the Ankeng LRT's route into the valley](/images/ankeng-lrt/guideway-800.webp "Anxin Bridge, near the Ankeng LRT's route. — Tze Chiang Hao, CC BY 4.0, Wikimedia Commons")
 
-## Route and stations
+## Overview
 
-Nine stations, K01 to K09, run from Ankeng Depot through the Ankeng valley to
-Shisizhang, where K09 connects to the Circular Line[^ntmc-stations][^ntmc-fares].
-Five stations are elevated — K02, and K06 through K09 — and four run at
-grade — K01, K03, K04 and K05[^dorts-route][^dorts-k02]. The at-grade
-stretch follows Anyi Road out of the valley; the line climbs onto viaduct
-around K06 Ankang and stays elevated along Anhe Road to the Circular Line
-interchange[^dorts-route].
+The line begins beside Ankeng Depot at the junction of Antai and Anyi roads,
+runs north along Anyi Road through the valley, turns onto the Anhe branch road
+and Anhe Road, then crosses National Freeway 3, the Zhong-An Bridge approach,
+the New Taipei Expressway and the Xindian River before reaching
+Shisizhang.[^dorts-route] DORTS describes the built railway as a mixed at-grade
+and elevated system; the passenger service covers about 7.5 km between K01 and
+K09.[^dorts-route][^tdx]
 
-**K04's station name has two forms in circulation, and only one is
-official.** New Taipei's own station-naming panel settled on 耕莘安康院區
-(Cardinal Tien Hospital Ankang Branch) in December 2017, years before the
-line opened[^ltn-naming-2017], and that is the name on NTMC's own station
-page[^ntmc-k04], on the operator's full station list[^ntmc-stations], and in
-Taiwan MOTC's TDX station record[^tdx]. The shorter "耕莘醫院" that appears in
-some secondary round-ups names the same hospital group's main site, not the
-branch campus the station actually stands beside — no primary source found
-here uses it as the station's name.
+The project gave the Ankeng district a direct rail interchange with the wider
+Taipei network at Shisizhang.[^dorts-route] Its alignment required very
+different civil works within one short line: street-level track, viaduct, a
+depot lead through Shuang'an Tunnel, vibration-isolated track beside housing,
+and the long An-Xin Bridge over the Xindian River.[^dorts-tunnel][^dorts-floating-track][^dorts-anxin-bridge]
+
+## Route and alignment
+
+From the depot, the alignment reaches K01 Shuangcheng near the Antai Road–Anyi
+Road junction. K02 Rose China Town stands on viaduct, while K03 Taiping Temple,
+K04 Cardinal Tien Hospital Ankang Branch and K05 Jingwen University of Science
+and Technology form the at-grade middle of the valley route.[^dorts-route][^dorts-k02]
+The railway rises again for K06 Ankang and remains elevated through K07
+Yangguang Sports Park and K08 Xinhe Elementary School to K09
+Shisizhang.[^dorts-route]
+
+The final approach turns east near the Water Resources Agency's Xindian office,
+then north on a new road before the railway crosses the expressway and river on
+An-Xin Bridge.[^dorts-route] K09 stands in the Shisizhang redevelopment area,
+where the light rail terminates beside Circular Line station Y08.[^dorts-route][^ntmc-fares]
+
+## Planning and approvals
+
+The Executive Yuan approved feasibility on 1 July 2013.[^dorts-route] New
+Taipei then began comprehensive planning that June, held public hearings on 27
+and 30 December, and sent the plan to the Ministry of Transportation and
+Communications on 7 May 2014.[^dorts-route] After ministry reviews in September
+and November 2014 and National Development Council review on 18 May 2015, the
+Executive Yuan approved the comprehensive plan on 8 June 2015.[^dorts-route]
+
+Environmental review had a longer history. The original environmental-impact
+statement was placed on record on 14 October 2003; later difference analyses
+covered design changes in 2016 and changes to depot layout and earthworks in
+2020.[^dorts-route] The urban-plan changes for the route took effect on 24
+January 2018, followed by a separate change affecting the river zone on 18
+November 2019.[^dorts-route]
+
+## Construction history
+
+The civil and track design-build contract was awarded on 3 March 2016, and
+main construction began on 6 April.[^dorts-route] An official project-management
+paper identifies Sinotech Engineering Consultants as the project and
+construction manager and MOH and Associates as supervising consultant; its
+figures show both the government and consultant site teams expanding as the
+work moved from civil construction into railway systems.[^dorts-project-management]
+
+Testing and commissioning closed the gap between construction and public
+service. Stability testing was complete on 7 November 2022, initial inspection
+followed on 11 December, and the project team reported its corrective work
+complete on 27 December.[^dorts-route][^ntpc-opening-process] The Ministry of
+Transportation and Communications conducted final inspection on 14 January
+2023 and issued the operating permit on 2 February; public service began eight
+days later.[^ntpc-opening-process][^ntmc-opening]
+
+New Taipei's opening account says labour shortages, material shortages and the
+COVID-19 pandemic disrupted delivery.[^ntpc-opening-process] Those statements
+describe the builder's account of the schedule pressure; the cited page does
+not quantify a separate delay attributable to each cause.
+
+## Engineering
+
+### Track, tunnel and vibration control
+
+Shuang'an Tunnel lies between K01 and Ankeng Depot, on the depot lead rather
+than between two passenger stations.[^dorts-tunnel] DORTS describes it as
+Taiwan's first combined road-and-light-rail tunnel: road bores flank the light
+rail bore, and the tracks contain a crossover at grade inside the tunnel so
+trains can change direction during depot movements.[^dorts-tunnel]
+
+Near K07 and K08, homes beside the railway made vibration and secondary noise
+a design concern.[^dorts-floating-track] DORTS records three floating-slab
+track installations totalling 800 m across both running directions: two
+sections around K08 total 300 m each, and the section beside the Anhe fire
+brigade totals 200 m.[^dorts-floating-track] Elastic pads separate the heavy
+track slab from the bridge deck or structural invert, lowering the system's
+natural frequency and reducing vibration transferred into the supporting
+structure.[^dorts-floating-track]
+
+### An-Xin Bridge
+
+Between K08 and K09, An-Xin Bridge crosses a roughly 400 m-wide reach of the
+Xindian River.[^dorts-anxin-bridge] Flood-management requirements limited the
+crossing to two river piers, leading to a 502 m, three-span structure with a
+225 m main span.[^dorts-bridge-engineering] Its structural system combines an
+asymmetric cable-stayed bridge with a steel truss; the 130 m pylon and
+water-bird-wing profile form the line's most conspicuous landmark.[^dorts-anxin-bridge][^dorts-bridge-engineering]
+
+Wind was a specific design load. DORTS says the bridge was checked for wind
+speeds up to 80 m/s—above the 61.2 m/s threshold it gives for Beaufort force
+17—and tested with a 1:60 wind-tunnel model.[^dorts-bridge-engineering] The
+same source explains the name 安心 as a pairing of 安坑 and 新店 as well as a
+promise of reassurance.[^dorts-bridge-engineering]
+
+The bridge's design-build team used building-information modelling from
+detailed design through construction.[^dorts-bim] The official technical paper
+describes collision checks between structural elements, coordinated shop and
+construction drawings, drone-derived three-dimensional terrain for the K08–K09
+area, simulations of the bridge coating colours, and model-based quantity
+calculations.[^dorts-bim] Its handover table also includes models, records and
+manuals intended for the operating stage, making the model a project record
+rather than only a presentation image.[^dorts-bim]
+
+The bridge's record claim varies by source. DORTS calls its 225 m main span the
+longest span in a Taiwanese rail transport system; its comparison gives 120.7
+m for Danhai's Blue Sea Bridge and about 96 m for Kaohsiung's Love River
+Bridge.[^dorts-bridge-comparison] CNA instead quotes a named Sinyi Construction
+Development project director calling the whole 502 m structure Taiwan's
+longest rail bridge and reports a pylon weight of about 3,450 tonnes.[^cna-anxin-bridge]
+These are different superlatives—span and total bridge—and remain attributed
+to the sources that make them.
+
+## Stations and interchange
+
+Nine stations carry codes K01 to K09.[^ntmc-stations] Five are elevated—K02
+and K06 through K09—and four are at grade—K01 and K03 through K05—according
+to the route description and DORTS's K02 station record.[^dorts-route][^dorts-k02]
+At K09, riders may board from either side platform before transferring to the
+Circular Line.[^dorts-operating][^ntmc-fares]
+
+K04's full official name is 耕莘安康院區, Cardinal Tien Hospital Ankang Branch.
+New Taipei's station-naming panel settled on that form in December 2017, and it
+appears consistently in NTMC's station page, its full station list and the TDX
+station record.[^ltn-naming-2017][^ntmc-k04][^ntmc-stations][^tdx]
 
 ![The canopied platform at Cardinal Tien Hospital Ankang Branch station, overhead wire and open track running beside it](/images/ankeng-lrt/station-800.webp "K04 Cardinal Tien Hospital Ankang Branch station. — S8321414, CC BY-SA 4.0, Wikimedia Commons")
 
-At K09 Shisizhang, both side platforms can be boarded — worth knowing,
-because it is not the way most interchange stations on this network
-work[^dorts-operating].
-
-## How long the line is
+## Route-length records
 
 Three figures circulate for this line's length, and they are not simple
 duplicates of each other.
@@ -383,40 +537,52 @@ duplicates of each other.
 | 7.1 km | TDX's own station-to-station chainage, K01 to K09 | TDX `CumulativeDistance`[^tdx] |
 | 7.67 km | zh.wikipedia's total route length | zh.wikipedia[^zh-wikipedia] |
 
-zh.wikipedia's own infobox separates this 7.67 km 路線長度 from a 營運長度
-(operating length) of 7.5 km — the same figure NTMC and TDX publish — and its
-route description explains the gap: the line is described there as running
-「起自安坑機廠」, starting at Ankeng Depot itself, not at K01[^zh-wikipedia].
-That is the same distinction this site draws on the
-[Wenhu Line](/rail/metro/lines/wenhu-line/) between an operating length and a
-longer total that includes a depot lead. No source found here states the
-arithmetic outright, and this site's own reading of it is offered as that —
-a reading, not a settled fact. About 0.17 km of the 7.67 km figure is not
-accounted for by any source found.
+The three published length figures use incompatible labels. TDX gives 7.5 km
+as `RouteLength` but 7.1 km as the cumulative station-to-station distance at
+K09.[^tdx] Chinese Wikipedia labels 7.67 km as total route length and 7.5 km
+as operating length, while describing the route as beginning at Ankeng Depot
+rather than K01.[^zh-wikipedia] DORTS independently publishes “about 7.5 km”
+for the line but does not define its measurement boundary.[^dorts-route]
 
-## Underground section — an unresolved question
+Chinese Wikipedia also divides 7.5 km into 2.8 km at grade, 4.3 km elevated
+and 0.4 km underground including a portal.[^zh-wikipedia] DORTS, by contrast,
+describes the passenger system simply as elevated and at grade, while placing
+Shuang'an Tunnel between the depot and K01.[^dorts-route][^dorts-tunnel] The
+sources therefore do not establish whether the 0.4 km is counted within the
+K01–K09 passenger route or on its depot connection.
 
-Neither DORTS's own route page nor its operating-pattern page for this line
-mentions an underground section on the K01–K09 passenger route: both
-describe the line as built elevated and at grade,
-「採用高架、平面混合型式建置」[^dorts-route][^dorts-operating]. zh.wikipedia's
-structure breakdown, by contrast, gives 2.8 km at grade, 4.3 km elevated and
-0.4 km underground "including the portal" (含出土) — summing to the 7.5 km
-operating figure, which would put that 0.4 km inside the passenger
-route[^zh-wikipedia].
+## Rolling stock
 
-A tunnel genuinely exists on the alignment: 雙安隧道 (Shuang'an Tunnel),
-described by DORTS as Taiwan's first road-and-light-rail co-built tunnel,
-with road bores either side of a central light rail bore, and an unusual
-at-grade track crossover inside it[^dorts-tunnel]. DORTS's own account places it **between
-K01 station and Ankeng Depot** — on the depot lead, not between two
-passenger stations[^dorts-tunnel]. That placement sits awkwardly next to
-zh.wikipedia's breakdown, which counts the underground section inside the
-operating total rather than outside it. This site cannot settle which
-reading is right and publishes both rather than picking one. The tunnel's
-own length was not found in any source searched.
+Taiwan Rolling Stock Company built the fleet with Germany's Voith Engineering
+Services.[^ntmc-fleet] NTMC's fleet page groups the Danhai and Ankeng orders
+together: thirty trains of the design were built, fifteen allocated to each
+line.[^ntmc-fleet] Each five-car, fully low-floor train has a stated capacity
+of 265 passengers—62 seated and 203 standing—and a maximum speed of 70 km/h
+under overhead wire or 50 km/h on an unwired section.[^ntmc-fleet]
 
-## Service pattern
+![The empty interior of an Ankeng LRT tram, longitudinal seats and a centre grab pole running the length of the car](/images/ankeng-lrt/interior-800.webp "An Ankeng LRT tram's interior. — Wctaiwan, CC BY 4.0, Wikimedia Commons")
+
+The gold livery, 光耀金, was selected by a public vote.[^ntmc-fleet] Chinese
+Wikipedia records the other 2018 ballot options as red-gold, purple and green,
+but the NTMC fleet page confirms only the winning colour.[^zh-wikipedia][^ntmc-fleet]
+
+## Depot
+
+Ankeng Depot sits on the hillside beyond K01 and connects to the passenger
+line through Shuang'an Tunnel.[^dorts-tunnel][^dorts-depot] DORTS divides its
+rail facilities into a nine-track stabling yard and a five-track maintenance
+shop, with the latter used for inspection, testing, maintenance and cleaning;
+the administration building houses train control, dispatch and staff-training
+functions.[^dorts-depot]
+
+The depot's boarding platform carried two weekday morning passenger departures
+during a trial from July through December 2024.[^dorts-depot-trial] The 06:28
+and 07:16 trains ran toward K09, used a portable fare reader, and charged as if
+the rider had boarded at K01.[^dorts-depot-trial] New Taipei said the trial was
+an input to evaluating whether the platform should be proposed for conversion
+to a normal station.[^dorts-depot-trial]
+
+## Operations
 
 Two service patterns run the line. The full-line service, K01 to K09, takes
 about 21 minutes; a short working, K06 to K09, takes about 9
@@ -425,67 +591,14 @@ peak on the overlapping K06–K09 section and 10–15 minutes peak on the
 non-overlapping K01–K05 section, both about 15 minutes off
 peak[^dorts-operating].
 
-**A year in, NTMC changed the pattern on ridership data.** By February 2024
+By February 2024
 the line had carried 2 million cumulative passengers, averaging 5,600 a day,
 with growth concentrated on the non-short-working stretch between K05
 Jingwen University of Science and Technology and K01
 Shuangcheng[^ntmc-anniversary]. From 26 February 2024 the peak short
 workings became full-line services: morning-peak headway tightened to 6–8
 minutes, evening-peak to 8–10 minutes[^ntmc-anniversary]. Off-peak sections were left
-unchanged, to keep pace with Circular Line transfer patterns rather than the
-line's own demand[^ntmc-anniversary].
-
-## The depot platform trial
-
-From 1 July to 31 December 2024, Ankeng Depot's own boarding platform opened
-to passengers on weekday mornings at 06:28 and 07:16, explicitly as a trial
-to evaluate whether it should become a permanent station[^zh-wikipedia]. The trial was
-extended twice from a narrower initial window, citing strong uptake each
-time — around 50 riders a day across the two trips in its final eight
-weeks — and fares on those extra services were calculated as if boarding
-from K01, so the depot-to-K01 leg itself was not charged[^dorts-depot-trial][^zh-wikipedia].
-**What happened after 31 December 2024 is TBC** — no source found here says
-whether the trial lapsed, continued informally, or the platform became a
-numbered station; settling it needs a later DORTS or NTMC announcement that
-this search did not turn up.
-
-## Rolling stock
-
-Trains are built by Taiwan Rolling Stock Company with Germany's Voith
-Engineering Services — the same manufacturing partnership NTMC's own page
-describes for both of New Taipei's light rail lines together, rather than a
-detail assumed to carry over from Danhai's fleet[^ntmc-fleet]. Thirty trains
-were built to this design in total, 15 for Danhai and 15 for
-Ankeng[^ntmc-fleet]. Each Ankeng train has 5 cars and carries 265 passengers,
-62 seated and 203 standing, running up to 70 km/h under overhead wire and
-50 km/h on wire-free sections[^ntmc-fleet].
-
-![The empty interior of an Ankeng LRT tram, longitudinal seats and a centre grab pole running the length of the car](/images/ankeng-lrt/interior-800.webp "An Ankeng LRT tram's interior. — Wctaiwan, CC BY 4.0, Wikimedia Commons")
-
-The livery, 光耀金 (Radiant Gold), was chosen by public vote — confirmed on
-NTMC's own rolling-stock page, though that page does not itself list the
-options that lost[^ntmc-fleet]. zh.wikipedia gives a 2018 shortlist of four —
-光耀金, 祥紅金 (Auspicious Red-Gold), 高雅紫 (Elegant Purple) and 青翠綠 (Verdant
-Green) — treated here as a lead rather than independently
-confirmed[^zh-wikipedia].
-
-## 安心橋 An-Xin Bridge
-
-Between K08 Xinhe Elementary School and K09 Shisizhang, the line crosses the
-Xindian River on 安心橋 (An-Xin Bridge): a 502 m, three-span continuous
-asymmetric cable-stayed bridge on a 130 m pylon, spanning a 400 m-wide reach
-of the river[^dorts-anxin-bridge]. DORTS calls it the line's hardest single
-piece of engineering, not a length record in itself[^dorts-anxin-bridge].
-
-The superlative claim made for the bridge depends on which source is read.
-DORTS's own bridge-comparison material claims the longest **span** among
-Taiwan's rail bridges — 225 m, against 120.7 m for Danhai's Blue Sea Bridge
-and about 96 m for Kaohsiung's Love River Bridge[^dorts-bridge-comparison].
-CNA separately quotes a named Sinyi Construction Development project
-director calling it, more broadly, Taiwan's longest rail bridge outright,
-and gives a pylon weight of about 3,450 tonnes[^cna-anxin-bridge]. Both are
-published here as what each source actually claims, not merged into one
-figure.
+unchanged.[^ntmc-anniversary]
 
 ## Fares
 
@@ -495,48 +608,34 @@ every NT$200 accumulated on an e-ticket, stated in NTMC's own Ankeng-specific
 announcement rather than only a general New Taipei light-rail
 scheme[^ntmc-opening].
 
-The line is within the scope of the TPASS 基北北桃1200 monthly pass: MOTC's
-own programme table lists light rail generally among the pass's covered
-modes, in line with that pass's general coverage of rail, light rail and bus
-services across the four municipalities[^motc-tpass-table]. **Where the pass
-can actually be bought is a genuine conflict between two primary sources,
-not just a secondary-versus-primary gap.** MOTC's own 2022 sales-point table
+The line is covered by the TPASS 基北北桃1200 monthly pass: MOTC's programme
+table lists light rail among the covered modes across the four participating
+municipalities.[^motc-tpass-table] The published sales locations conflict.
+MOTC's 2022 sales-point table
 names **K09 Shisizhang** directly[^motc-tpass-table], but NTMC's own current
 page listing sales locations for the pass names only Circular Line stations
 and two Danhai LRT stations — no Ankeng LRT station appears on
-it[^ntmc-tpass]. Both are published here rather than resolved either way; a
-station that stopped selling passes after the 2022 launch and an NTMC page
-that is simply incomplete are equally plausible explanations, and no source
-found here settles which.
+it.[^ntmc-tpass] The sources establish different lists at different publication
+dates, not whether K09 currently sells the pass.
 
-## Incidents and ridership since
+## Incidents and ridership
 
 The line was affected by the 3 April 2024 Hualien earthquake: immediately
 afterward, K09–K06 ran single-track bidirectional and K06–K01 ran a partial
 service, before the whole line returned to normal running at 16:30 the same
 day, at a 15-minute headway[^ntmc-earthquake][^ntmc-earthquake-resume].
 
-NTMC's reported 2025 figures put full-year ridership at about 2.03 million,
-but only 65.38% of the company's own budgeted target for the
-line — against 93.5% reached across all three of New Taipei's light-rail and
-Circular Line services combined, the company's best year yet on that
-combined measure[^udn-ridership-2025].
+NTMC's full-year release says the line carried more than 2.03 million journeys
+in 2025.[^ntmc-ridership-2025] The same release gives more than 6.01 million
+for Danhai LRT and 22.04 million for the Circular Line, within a New Taipei
+Metro total exceeding 30.09 million journeys.[^ntmc-ridership-2025]
 
-## Place and context
+## Naming and place
 
 Ankeng's old name was 暗坑 (Hokkien Àm-kheⁿ), and the district was renamed in
 1801 by Lin Deng-xuan, grandson of the pioneer settler Lin Tian-cheng,
-because the old name — "dark valley" — sounded unpleasant, per DORTS's own
-account of the choice of line name[^dorts-placename].
-
-## Sources
-
-Station names, codes, running order and coordinates come from **Taiwan
-MOTC's TDX platform**, operator code `NTALRT` — government open data,
-retrieved 12 August 2026[^tdx]. The strip map and geographic map on this page are
-generated from it directly. Everything else is cited inline and listed
-above. TDX does not publish station structure, headways or rolling-stock
-detail; those come from NTMC's and DORTS's own publications where they
-exist, and are marked secondary where they do not.
+because the old name meant “dark valley” and was considered
+inauspicious.[^dorts-placename] The modern line name therefore preserves the
+district's later name rather than inventing a separate railway identity.
 
 See also: [Public art in the Taipei-region rail network](/rail/history/public-art/) and [Metro incidents and service disruptions](/rail/history/incidents/).

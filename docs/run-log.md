@@ -15694,3 +15694,75 @@ links. Citations resolve at 4,976 (4,788 primary / 188 secondary); claims are
 531 dated checked-and-failed entries. `npm run nav` passed all 19 keyboard,
 touch and trail checks. The independent `npm test` build passed 217 unit tests
 and all 17 fact cross-checks.
+# Run 107 — rebuild Ankeng LRT depth (23 August 2026)
+
+## Part 3 — Ankeng LRT
+
+### Sourced
+
+Rebuilt the line page from 1,598 to 1,986 Markdown-stripped body words and put
+it into the canonical line order: overview, route/alignment, planning,
+construction, engineering, stations, length records, rolling stock, depot,
+operations, fares, incidents/ridership and naming. The public page now cites
+29 sources, 26 primary and three secondary. Reader-facing search-status prose,
+the unresolved-question heading and the generated Sources prose were removed;
+the failed searches remain in the research record.
+
+The new primary base is DORTS's full project chronology
+(https://www.dorts.ntpc.gov.tw/about/route/jW0OdPGn2nbJ), New Taipei's full
+commissioning account
+(https://www.ntpc.gov.tw/ch/home.jsp?dataserno=471c4aecd1fe681460bc91c9f77f27a4&id=e8ca970cde5c00e1),
+DORTS's floating-slab technical page
+(https://www.dorts.ntpc.gov.tw/documentary/articleInfo/WQR2W0lodGPV), bridge
+wind-design page
+(https://www.dorts.ntpc.gov.tw/documentary/articleInfo/1AldpKlv2LK7), full
+BIM paper
+(https://www.dorts.ntpc.gov.tw/admin/content/upload/file/20211117/e24abaab-d892-4a63-b31a-dc61c6915f87.pdf),
+full project-management paper
+(https://www.dorts.ntpc.gov.tw/cdn/file/20211025/2835d99f-85e8-4a32-8106-f8ce91b8bf2c.pdf),
+and NTMC's official 2025 ridership release
+(https://www.ntmetro.com.tw/basic/?mode=detail&node=843). These establish the
+2013–15 approvals, 2016 award/start, 2022–23 inspection sequence, delivery
+roles, 800 m of floating-slab track, 80 m/s bridge wind design, BIM uses and
+more than 2.03 million Ankeng journeys in 2025.
+
+### TBC
+
+The tunnel's own length, the measurement boundary behind the three route
+lengths, the post-December-2024 depot-platform outcome, a primary list of the
+losing livery colours and current K09 TPASS sales status remain unestablished.
+Traditional-Chinese searches found only the dated depot trial and no later
+outcome. The BIM PDF's semantic fetch failed, but direct full-document download,
+text extraction, eight-page rendering and visual inspection succeeded. A
+separate project-delivery PDF whose full fetch failed was recorded and not used.
+
+### Contradicted the corpus
+
+The earlier page's 2025 ridership/target paragraph depended on a UDN report
+that had not been verified against NTMC; it was removed and replaced with the
+operator's independently fetched full-year total. The earlier presentation of
+an “unresolved underground section” implied more certainty about competing
+interpretations than either source supplies; the new page prints DORTS's depot
+tunnel placement and Chinese Wikipedia's 0.4 km breakdown side by side.
+
+### Conflicts found
+
+Route length remains 7.5 km as TDX `RouteLength` and DORTS's approximate line
+length, 7.1 km as TDX K01–K09 cumulative distance, and 7.67 km as Chinese
+Wikipedia's depot-origin total. Structure remains DORTS's passenger-line
+elevated/at-grade description against Chinese Wikipedia's 2.8 km at grade,
+4.3 km elevated and 0.4 km underground. DORTS claims a 225 m national-record
+rail span; CNA quotes a contractor claiming the whole 502 m bridge as the
+record. MOTC's 2022 TPASS table names K09 as a sales point while NTMC's current
+sales page omits Ankeng entirely.
+
+### Verification and gate
+
+The first fresh build deliberately stopped because the new source title used
+`床` and `噪`, absent from the content CJK subset. The existing postbuild glyph
+gate therefore proved the defect before the font subset was regenerated; the
+second build checked all 1,954 pages with no missing glyphs. Full verify passed:
+218,198 internal links with no broken links, fragments or orphans; 4,981
+citations (4,794 primary / 187 secondary); 11,424 sourced claims / 4,309 TBC /
+zero asserted; 124 research files / 533 checked failures; all 217 unit tests;
+clean accessibility, facts, geometry and CVD checks.
