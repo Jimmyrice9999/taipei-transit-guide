@@ -14700,3 +14700,55 @@ Added namespace regressions to `tests/line-namespace.test.mts` and
 TMRT failed the first gate; deliberately restoring line-first rich-text
 resolution failed the second on TRTC G17. Both defects were then restored and
 the targeted tests passed.
+
+## Run 92 — Part 2, canonical sections and static contents (23 August 2026)
+
+### Structure
+
+Documented canonical h2/h3 orders for rail stations, bus routes, operators,
+vehicle and rolling-stock pages, depots, lines, history, ticketing, ferries,
+YouBike and Taichung in `docs/content-structure.md`. Empty subjects are omitted
+rather than represented by empty headings. Existing body prose remains open;
+the earlier section-collapsing function is explicitly identity-only, with a
+unit gate that rejects wrapping primary prose in a disclosure.
+
+Added a generated, static-HTML table of contents to every page containing at
+least three h2 sections. Markdown h2/h3 headings are collected after stable
+slug generation; generated Specifications and References headings and the
+custom rail-station and bus-route sections join that same inventory. Hand-built
+About, bibliography, provenance, line-colour and station-data pages declare
+matching stable ids. Folder prose now contributes its actual headings as well.
+
+The contents panel is inline rather than sticky: it stays in reading and
+keyboard order, does not compete with the rail spine, remains within the prose
+measure, wraps long labels at 320 px and is suppressed in print. It is a named
+navigation landmark, uses visible text links, inherited AA link colours and no
+JavaScript. Error documents are the sole exception because their h2 elements
+are short recovery choices, not article sections.
+
+### Gates
+
+`tests/build-output.test.mts` now walks the complete static export: every
+non-error page with at least three h2 sections must contain the contents
+landmark and every fragment must resolve to an id in that document. Its first
+run exposed eleven non-content surfaces; the real pages were fixed and only
+the three error outputs were excluded. A second run exposed the three YouBike
+city indexes because Specifications was not in the shared inventory; that was
+fixed in `EntityPage`. The final targeted export test passed all 20 checks.
+
+The gate's mutation test changed all generated targets to nonexistent
+`#missing-*` fragments. It failed on 6,211 missing targets across the export,
+then the correct target construction was restored. Word counts are unchanged:
+this unit reorganises and navigates existing sourced prose and adds no padding
+or factual claims.
+
+The first full verifier then found one untagged Traditional Chinese ToC label,
+`市民小巴`, on the joint-operation page. ToC labels now pass through the same
+rich-text renderer as body content, and the existing all-export Han-language
+gate covers the class permanently. A clean rerun passed 217 unit tests,
+including the new ToC and open-primary-content checks; 1,954 pages and 217,973
+links had no broken links, fragments or orphans; 1,456 audited pages had no
+accessibility errors or warnings; citations remained 4,855; claims remained
+11,197 sourced / 4,303 TBC / 32 asserted with the baseline untouched; research,
+geometry and CVD passed. Navigation passed all 19 keyboard/touch checks, and
+the full `npm test` suite passed independently after `npm run verify`.

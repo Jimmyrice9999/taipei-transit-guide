@@ -33,6 +33,7 @@ import References from '@/components/References'
 import RichText from '@/components/RichText'
 import RouteMap from '@/components/RouteMap'
 import SpecTable from '@/components/SpecTable'
+import TableOfContents from '@/components/TableOfContents'
 import Spine, { type DepotMark } from '@/components/Spine'
 import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
@@ -137,6 +138,13 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const systemMeta = system ? getSystem(section, system) : null
   const accent = getAccent(page.line, page.operator)
   const entityKind = getEntityIconKind(section, type)
+  const toc = [
+    ...page.toc,
+    ...(!ARTICLE_TYPES.has(type) && page.specs.length
+      ? [{ id: 'specifications', label: 'Specifications', level: 2 as const }]
+      : []),
+    ...(page.references.length ? [{ id: 'references', label: 'References', level: 2 as const }] : []),
+  ]
 
   /*
    * The hero photograph leads the page — before the title, the way a reader
@@ -229,6 +237,8 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             href={page.href}
             operator={page.operator || undefined}
           />
+
+          <TableOfContents items={toc} />
 
           <div
             className="prose article-body"
@@ -525,6 +535,8 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             {page.device === 'numbering-ladder' && (
               <NumberingLadder line={accent} stations={stations} seriesBreakAfter="BR13" />
             )}
+
+            <TableOfContents items={toc} />
 
             {/*
               The Markdown body was converted to HTML at build time, including

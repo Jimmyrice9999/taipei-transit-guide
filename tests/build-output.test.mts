@@ -72,6 +72,34 @@ test('every content page exported an index.html', () => {
   assert.deepEqual(missing, [])
 })
 
+test('every page with three sections has a static ToC whose fragments exist', () => {
+  const problems: string[] = []
+  for (const file of allHtml()) {
+    const rel = path.relative(OUT, file).replaceAll('\\', '/')
+    // Error documents offer recovery choices rather than a long article. They
+    // intentionally keep those choices directly visible without page furniture.
+    if (rel === '404.html' || rel === '404/index.html' || rel === '_not-found/index.html') continue
+    const html = visible(fs.readFileSync(file, 'utf8'))
+    if (!/class="[^"]*(?:page-main|page-article|page-body)/.test(html)) continue
+    const h2Count = [...html.matchAll(/<h2\b/gi)].length
+    if (h2Count < 3) continue
+
+    const toc = html.match(/<nav class="page-toc wide"[\s\S]*?<\/nav>/i)?.[0]
+    if (!toc) {
+      problems.push(`${rel}: ${h2Count} h2 sections but no ToC`)
+      continue
+    }
+
+    for (const match of toc.matchAll(/href="#([^"]+)"/g)) {
+      const id = match[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      if (!new RegExp(`\\sid="${id}"`).test(html)) {
+        problems.push(`${rel}: ToC target #${match[1]} is absent`)
+      }
+    }
+  }
+  assert.deepEqual(problems, [])
+})
+
 test('every station on every line with station pages exported a page', () => {
   const missing = [...LINES_WITH_STATION_PAGES]
     .flatMap((line) => getLineStations(line).filter((station) => station.operator !== 'TMRT'))

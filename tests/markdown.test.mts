@@ -146,6 +146,7 @@ test('headings carry ids, so the spine can sync and links can anchor', async () 
   const page = await getPage('rail', 'lines', 'wenhu-line', 'metro')
   assert.match(page.html, /<h2 id="history">/)
   assert.ok(Object.keys(page.sectionStations).length > 0, 'no section-to-station map built')
+  assert.deepEqual(page.toc[0], { id: 'history', label: 'History', level: 2 })
 })
 
 /* ---- frontmatter -------------------------------------------------- */

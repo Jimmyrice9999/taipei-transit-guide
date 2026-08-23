@@ -13,6 +13,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import LineBadge from '@/components/LineBadge'
 import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
+import TableOfContents from '@/components/TableOfContents'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import { AA, AA_NON_TEXT, NEAR_BLACK, WHITE, contrast } from '@/lib/color'
 import { LINES, NEUTRAL_LINE, TDX_LINES } from '@/lib/lines'
@@ -107,6 +108,13 @@ export default function LineColoursPage() {
       </p>
 
       <div className="page-body">
+        <TableOfContents items={[
+          { id: 'what-everyone-else-has', label: 'What everyone else has', level: 2 },
+          { id: 'not-from-tdx', label: 'The one that is not from TDX', level: 2 },
+          { id: 'citation-chains', label: 'A warning about citation chains', level: 2 },
+          { id: 'caveats', label: 'Caveats', level: 2 },
+          { id: 'download', label: 'Download', level: 2 },
+        ]} />
           <div className="wide table-scroll" tabIndex={0}>
             <table className="colour-table">
               <thead>
@@ -199,7 +207,7 @@ export default function LineColoursPage() {
             derived value on this site is generated that way, never picked by eye.
           </p>
 
-          <h2 className="section-heading">What everyone else has</h2>
+          <h2 className="section-heading" id="what-everyone-else-has">What everyone else has</h2>
 
           <div className="wide table-scroll" tabIndex={0}>
             <table className="colour-table">
@@ -238,7 +246,7 @@ export default function LineColoursPage() {
             </table>
           </div>
 
-          <h2 className="section-heading">The one that is not from TDX</h2>
+          <h2 className="section-heading" id="not-from-tdx">The one that is not from TDX</h2>
 
           <p>
             The Sanying Line opened on 30 June 2026 and has no record on the platform of
@@ -272,7 +280,7 @@ export default function LineColoursPage() {
             is, and this page is not going to resolve it by choosing.
           </p>
 
-          <h2 className="section-heading">A warning about citation chains</h2>
+          <h2 className="section-heading" id="citation-chains">A warning about citation chains</h2>
 
           <p>
             Two of these are worth dwelling on, because they show a failure mode that is
@@ -302,7 +310,7 @@ export default function LineColoursPage() {
             API, use the API.
           </p>
 
-          <h2 className="section-heading">Caveats</h2>
+          <h2 className="section-heading" id="caveats">Caveats</h2>
           <ul>
             <li>
               <strong>Circular and Airport MRT are not TRTC.</strong> Circular is New Taipei
@@ -323,7 +331,7 @@ export default function LineColoursPage() {
           </ul>
 
           <section className="download wide">
-            <h2 className="download-head">Download</h2>
+            <h2 className="download-head" id="download">Download</h2>
             <p className="download-links">
               <a href={`${BASE_PATH}/data/taipei-metro-line-colours.json`} download>
                 ↓ taipei-metro-line-colours.json

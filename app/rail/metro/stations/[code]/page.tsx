@@ -26,6 +26,7 @@ import RouteMap from '@/components/RouteMap'
 import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
 import LineBadge from '@/components/LineBadge'
+import TableOfContents from '@/components/TableOfContents'
 import { getImage } from '@/lib/images'
 import { getLinePageHref, getPages, getSection, getSystem } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
@@ -155,6 +156,19 @@ export default async function StationPage({ params }: Props) {
 
   const structureLabel =
     station.structure === 'unknown' ? 'Not established' : station.structure === 'elevated' ? 'Elevated' : 'Underground'
+  const toc = [
+    { id: 'overview', label: 'Overview', level: 2 as const },
+    { id: 'location', label: 'Location', level: 2 as const },
+    ...(service.length > 0
+      ? [{ id: 'first-and-last-trains', label: 'First and last trains', level: 2 as const }]
+      : []),
+    ...(station.prose?.length
+      ? [{ id: 'station-context', label: 'Station context', level: 2 as const }]
+      : []),
+    ...((station.research || station.sources.length > 0)
+      ? [{ id: 'references', label: 'References', level: 2 as const }]
+      : []),
+  ]
 
   /*
    * Computed once, used twice: the header banner below and the facts-panel
@@ -313,6 +327,8 @@ export default async function StationPage({ params }: Props) {
       </div>
 
       <div className="page-body">
+        <TableOfContents items={toc} />
+        <h2 className="section-heading" id="overview">Overview</h2>
         <section className="platform wide" aria-label="Station facts">
           {/*
             Run 10: the badge and the line name both link to the line. On a
@@ -684,7 +700,7 @@ export default async function StationPage({ params }: Props) {
           )}
         </section>
 
-        <h2 className="section-heading">Location</h2>
+        <h2 className="section-heading" id="location">Location</h2>
         <dl className="detail-list">
           <div>
             <dt>Address</dt>
@@ -727,7 +743,7 @@ export default async function StationPage({ params }: Props) {
 
         {service.length > 0 && (
           <>
-            <h2 className="section-heading">First and last trains</h2>
+            <h2 className="section-heading" id="first-and-last-trains">First and last trains</h2>
             <div className="wide table-scroll" tabIndex={0}>
               <table className="station-table">
                 <thead>
@@ -766,6 +782,7 @@ export default async function StationPage({ params }: Props) {
 
         {station.prose && station.prose.length > 0 && (
           <div className="prose station-prose">
+            <h2 id="station-context">Station context</h2>
             <p>
               {station.prose.map((sentence, index) => (
                 <span key={`${station.code}-${index}`}>

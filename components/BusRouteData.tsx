@@ -9,6 +9,7 @@ import { GROUP_LINE, GROUP_PATH_COLOUR } from '@/lib/bus/route-groups'
 import type { Line } from '@/lib/lines'
 import type { NumberedSource } from '@/lib/sources'
 import type { Point } from '@/lib/geometry'
+import type { ReactNode } from 'react'
 
 function parseLineString(geometry: string): Point[] {
   const inner = geometry.match(/^LINESTRING\s*\((.*)\)$/i)?.[1]
@@ -271,11 +272,12 @@ export function BusStopSequences({ route, references }: { route: BusRoute; refer
   )
 }
 
-export default function BusRouteData({ route, line, references, href }: { route: BusRoute; line: Line; references: NumberedSource[]; href: string }) {
+export default function BusRouteData({ route, line, references, href, contents }: { route: BusRoute; line: Line; references: NumberedSource[]; href: string; contents?: ReactNode }) {
   return (
     <>
       <RouteFacts route={route} line={line} references={references} href={href} />
       <OperatorRecords route={route} references={references} />
+      {contents}
       <BusRouteMap route={route} references={references} />
       <BusStopSequences route={route} references={references} />
     </>

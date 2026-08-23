@@ -11,6 +11,7 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import TableOfContents from '@/components/TableOfContents'
 import meta from '@/data/tdx/meta.json' with { type: 'json' }
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
@@ -66,6 +67,13 @@ export default function ProvenancePage() {
       </p>
 
       <div className="page-body">
+        <TableOfContents items={[
+          { id: 'who-publishes-what', label: 'Who publishes what', level: 2 },
+          { id: 'researched-here', label: 'Ours — researched, not official', level: 2 },
+          { id: 'corrected', label: 'Corrected', level: 2 },
+          { id: 'still-open', label: 'Still open', level: 2 },
+          { id: 'licence-and-reuse', label: 'Licence and reuse', level: 2 },
+        ]} />
         {oldest && (
           <p className="note">
             <strong>The source data is not current.</strong> We retrieved it on{' '}
@@ -77,7 +85,7 @@ export default function ProvenancePage() {
           </p>
         )}
 
-        <h2 className="section-heading">Who publishes what</h2>
+        <h2 className="section-heading" id="who-publishes-what">Who publishes what</h2>
         <p className="section-desc">
           Taipei's network is run by three companies, and they do not publish identical
           datasets. If you are building on this data, this is the table you want before you
@@ -136,7 +144,7 @@ export default function ProvenancePage() {
           to record. An em dash means the operator does not publish that dataset at all.
         </p>
 
-        <h2 className="section-heading">Ours — researched, not official</h2>
+        <h2 className="section-heading" id="researched-here">Ours — researched, not official</h2>
         <ul>
           <li>
             <strong>Elevated or underground.</strong> TDX does not publish structure. Ours
@@ -159,7 +167,7 @@ export default function ProvenancePage() {
           </li>
         </ul>
 
-        <h2 className="section-heading">Corrected</h2>
+        <h2 className="section-heading" id="corrected">Corrected</h2>
         <p>
           This site previously said TDX did not publish route length, because the{' '}
           <code>RouteLength</code> field on the route record is zero for every metro route.
@@ -170,7 +178,7 @@ export default function ProvenancePage() {
           check the whole record before concluding a source is silent.
         </p>
 
-        <h2 className="section-heading">Still open</h2>
+        <h2 className="section-heading" id="still-open">Still open</h2>
         <ul>
           <li>Which two Wenhu stations are underground.</li>
           <li>
@@ -186,7 +194,7 @@ export default function ProvenancePage() {
           </li>
         </ul>
 
-        <h2 className="section-heading">Licence and reuse</h2>
+        <h2 className="section-heading" id="licence-and-reuse">Licence and reuse</h2>
         <p>
           The underlying records are Taiwan government open data, published by MOTC through
           TDX under the{' '}

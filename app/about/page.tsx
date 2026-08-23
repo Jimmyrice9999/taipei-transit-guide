@@ -15,6 +15,7 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import TableOfContents from '@/components/TableOfContents'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
 import { LINES, TDX_LINES } from '@/lib/lines'
@@ -46,7 +47,14 @@ export default function AboutPage() {
       </p>
 
       <div className="page-body">
-        <h2 className="section-heading">What this is</h2>
+        <TableOfContents items={[
+          { id: 'what-this-is', label: 'What this is', level: 2 },
+          { id: 'how-it-sources-material', label: 'How it sources material', level: 2 },
+          { id: 'where-it-has-got-to', label: 'Where it has got to', level: 2 },
+          { id: 'corrections', label: 'Corrections', level: 2 },
+          { id: 'how-it-is-built', label: 'How it is built', level: 2 },
+        ]} />
+        <h2 className="section-heading" id="what-this-is">What this is</h2>
         <p>
           Taipei's transport network is unusually well documented — in Mandarin. Between{' '}
           <span lang="zh-Hant">批踢踢</span> (PTT), Mobile01 and the Chinese Wikipedia there
@@ -66,7 +74,7 @@ export default function AboutPage() {
           or any bus operator, and it carries no advertising.
         </p>
 
-        <h2 className="section-heading">How it sources material</h2>
+        <h2 className="section-heading" id="how-it-sources-material">How it sources material</h2>
 
         <h3>Official data where it exists</h3>
         <p>
@@ -164,7 +172,7 @@ export default function AboutPage() {
           is official, what is researched here, what is derived, and what is still open.
         </p>
 
-        <h2 className="section-heading">Where it has got to</h2>
+        <h2 className="section-heading" id="where-it-has-got-to">Where it has got to</h2>
         <p>
           This is version 1. Every line now has a page written from primary sources, and
           the Wenhu Line — the first one built, and the one this site went deepest on — also
@@ -185,7 +193,7 @@ export default function AboutPage() {
           shown as TBC rather than inferred from maps.
         </p>
 
-        <h2 className="section-heading">Corrections</h2>
+        <h2 className="section-heading" id="corrections">Corrections</h2>
         <p>
           Corrections are welcome, and specific ones are most useful: the page, the figure,
           and what it should be, with a source. A source in Mandarin is as good as one in
@@ -204,7 +212,7 @@ export default function AboutPage() {
           as welcome — what matters is the source, not the channel.
         </p>
 
-        <h2 className="section-heading">How it is built</h2>
+        <h2 className="section-heading" id="how-it-is-built">How it is built</h2>
         <p>
           Content is Markdown; the site is generated as static HTML and served as files,
           with no server and no runtime API calls. Station code badges, Chinese language

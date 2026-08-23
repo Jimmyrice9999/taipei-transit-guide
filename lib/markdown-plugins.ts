@@ -13,6 +13,12 @@ import { CITE_MARKER_PATTERN, type Source } from './sources.ts'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type Node = any
 
+export type TocEntry = {
+  id: string
+  label: string
+  level: 2 | 3
+}
+
 /** Elements whose text is left completely alone. */
 const OPAQUE = new Set(['code', 'pre', 'script', 'style'])
 
@@ -54,6 +60,26 @@ function transformText(
     if (changed) node.children = out
   }
   walk(tree, false)
+}
+
+/** Collect the real h2/h3 nodes after rehype-slug has assigned stable ids. */
+export function rehypeCollectHeadings({ into }: { into: TocEntry[] }) {
+  const textOf = (node: Node): string => {
+    if (node?.type === 'text') return node.value
+    return (node?.children ?? []).map(textOf).join('')
+  }
+
+  return (tree: Node) => {
+    const walk = (node: Node) => {
+      if (node?.type === 'element' && (node.tagName === 'h2' || node.tagName === 'h3')) {
+        const id = typeof node.properties?.id === 'string' ? node.properties.id : ''
+        const label = textOf(node).trim()
+        if (id && label) into.push({ id, label, level: node.tagName === 'h2' ? 2 : 3 })
+      }
+      for (const child of node?.children ?? []) walk(child)
+    }
+    walk(tree)
+  }
 }
 
 /* ------------------------------------------------------------------ */

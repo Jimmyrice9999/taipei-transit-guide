@@ -8,6 +8,7 @@ import BackLink from '@/components/BackLink'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, datasetSchema } from '@/lib/structured-data'
 import StationBadge from '@/components/StationBadge'
+import TableOfContents from '@/components/TableOfContents'
 import { NEUTRAL_LINE, LINES, getInterchangeLine, getLine } from '@/lib/lines'
 import { getOperator } from '@/lib/operators'
 import { PROVENANCE, STATIONS, getStationHref } from '@/lib/stations'
@@ -23,6 +24,8 @@ export const metadata: Metadata = {
 }
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const lineSectionId = (operator: string, code: string) =>
+  `line-${operator.toLowerCase()}-${code.toLowerCase()}`
 
 /**
  * This page loads its own Han subset, and only this page.
@@ -125,12 +128,20 @@ export default function StationDataPage() {
       </p>
 
       <div className="page-body">
+          <TableOfContents items={[
+            ...byLine.map(({ line }) => ({
+              id: lineSectionId(line.operator, line.code),
+              label: line.name,
+              level: 2 as const,
+            })),
+            { id: 'download', label: 'Download', level: 2 },
+          ]} />
           {/* `wide` sits on the section, not the table: only direct children of
               the editorial container participate in the grid, so the class on a
               nested element would silently do nothing. */}
           {byLine.map(({ line, stations }) => (
             <section key={line.key} className="wide">
-              <h2 className="section-heading">
+              <h2 className="section-heading" id={lineSectionId(line.operator, line.code)}>
                 <span
                   className="network-swatch"
                   style={{ background: line.map }}
@@ -240,7 +251,7 @@ export default function StationDataPage() {
           {/* A footnote, not a header: you download the file after deciding the
               data is what you want, not before. */}
           <section className="download wide">
-            <h2 className="download-head">Download</h2>
+            <h2 className="download-head" id="download">Download</h2>
             <p className="download-links">
               <a href={`${BASE_PATH}/data/taipei-metro-stations.json`} download>
                 ↓ taipei-metro-stations.json

@@ -37,12 +37,14 @@ import {
   rehypeArticleLayout,
   rehypeBasePath,
   rehypeCitations,
+  rehypeCollectHeadings,
   rehypeFigures,
   rehypeRichText,
   rehypeSafeLinks,
   rehypeSectionStations,
   rehypeTableScroll,
   type BadgeWarning,
+  type TocEntry,
 } from './markdown-plugins.ts'
 import { numberSources, validateSource, type NumberedSource, type Source } from './sources.ts'
 import { getImageSize } from './image-size.ts'
@@ -260,6 +262,8 @@ export type Profile = {
 
 export type Page = PageMeta & {
   html: string
+  /** Actual h2/h3 headings collected after stable ids are assigned. */
+  toc: TocEntry[]
   /** Station codes mentioned by each `##` section, keyed by heading id. */
   sectionStations: Record<string, string[]>
   /** The page's sources with their numbers, and whether anything cites them. */
@@ -532,22 +536,24 @@ function readFolder(parents: string[], slug: string): Folder {
 export async function getFolderContent(
   parents: string[],
   slug: string,
-): Promise<{ html: string; references: NumberedSource[] }> {
+): Promise<{ html: string; references: NumberedSource[]; toc: TocEntry[] }> {
   const indexPath = path.join(CONTENT_DIR, ...parents, slug, '_index.md')
-  if (!fs.existsSync(indexPath)) return { html: '', references: [] }
+  if (!fs.existsSync(indexPath)) return { html: '', references: [], toc: [] }
 
   const parsed = matter(fs.readFileSync(indexPath, 'utf8'))
-  if (!parsed.content.trim()) return { html: '', references: [] }
+  if (!parsed.content.trim()) return { html: '', references: [], toc: [] }
 
   const relative = `content/${[...parents, slug].join('/')}/_index.md`
   const sources = toSources(parsed.data.sources)
   const used = new Set<string>()
+  const toc: TocEntry[] = []
 
   const html = await unified()
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeSlug)
+    .use(rehypeCollectHeadings, { into: toc })
     .use(rehypeRichText, {
       file: relative,
       onWarning: reportBadgeWarning,
@@ -567,7 +573,7 @@ export async function getFolderContent(
     .use(rehypeStringify)
     .process(parsed.content)
 
-  return { html: String(html), references: numberSources(sources, used) }
+  return { html: String(html), references: numberSources(sources, used), toc }
 }
 
 export async function getFolderBody(parents: string[], slug: string): Promise<string> {
@@ -904,6 +910,7 @@ export async function getPageFromFile(
 
   const relative = options.relative ?? `content/${section}/${type}/${slug}.md`
   const sectionStations: Record<string, string[]> = {}
+  const toc: TocEntry[] = []
   const autoLinks: LinkEntity[] = []
   const meta = readPageMetaAt(file, relative, section, type, slug, options.href, options.system ?? '')
 
@@ -923,6 +930,7 @@ export async function getPageFromFile(
     .use(remarkGfm) // adds tables, strikethrough, task lists
     .use(remarkRehype) // Markdown tree -> HTML tree
     .use(rehypeSlug) // give every heading an id, so headings are linkable
+    .use(rehypeCollectHeadings, { into: toc })
     // station code badges + <span lang="zh-Hant"> around Chinese, one pass;
     // on article pages the badges also link — no map there to do it instead
     .use(rehypeRichText, {
@@ -977,6 +985,7 @@ export async function getPageFromFile(
   return {
     ...meta,
     html: String(html),
+    toc,
     sectionStations,
     references: numberSources(meta.sources, used),
     autoLinks,

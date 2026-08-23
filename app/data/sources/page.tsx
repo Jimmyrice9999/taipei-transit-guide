@@ -16,6 +16,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import RichText from '@/components/RichText'
+import TableOfContents from '@/components/TableOfContents'
 import { getAllSources } from '@/lib/content'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { breadcrumbSchema } from '@/lib/structured-data'
@@ -75,6 +76,12 @@ export default async function SourcesPage() {
       </p>
 
       <div className="page-body">
+        <TableOfContents items={[
+          ...groups
+            .filter((group) => group.entries.length > 0)
+            .map((group) => ({ id: `${group.kind}-sources`, label: group.heading, level: 2 as const })),
+          { id: 'limits', label: 'What this page does not tell you', level: 2 },
+        ]} />
         {entries.length === 0 ? (
           <p className="note">
             <strong>Nothing is cited yet.</strong> Pages declare their sources in
@@ -96,7 +103,7 @@ export default async function SourcesPage() {
             {groups.map((group) =>
               group.entries.length === 0 ? null : (
                 <section key={group.kind}>
-                  <h2 className="section-heading">
+                  <h2 className="section-heading" id={`${group.kind}-sources`}>
                     {group.heading} <span className="biblio-count">{group.entries.length}</span>
                   </h2>
                   <p>{group.blurb}</p>
@@ -173,7 +180,7 @@ export default async function SourcesPage() {
           </>
         )}
 
-        <h2 className="section-heading">What this page does not tell you</h2>
+        <h2 className="section-heading" id="limits">What this page does not tell you</h2>
         <p>
           It lists what is cited, not what is asserted. A page can carry a figure with no
           citation at all, and that figure will not appear here — which is precisely why

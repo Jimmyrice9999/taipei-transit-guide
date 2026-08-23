@@ -17,6 +17,7 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import References from '@/components/References'
+import TableOfContents from '@/components/TableOfContents'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSystem, getType, getTypes } from '@/lib/content'
@@ -89,6 +90,11 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
   const withSpecs = pages.filter((p) => p.specs.length > 0)
   const photoGrid = section === 'rail' && PHOTO_GRID_TYPES.has(type)
   const entityKind = getEntityIconKind(section, type)
+  const toc = [
+    ...folderContent.toc,
+    ...(withSpecs.length >= 2 ? [{ id: 'side-by-side', label: 'Side by side', level: 2 as const }] : []),
+    ...(folderContent.references.length > 0 ? [{ id: 'references', label: 'References', level: 2 as const }] : []),
+  ]
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -108,6 +114,8 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
       />
       <h1 className="page-title">{typeMeta.title}</h1>
       {typeMeta.description && <p className="page-summary">{typeMeta.description}</p>}
+
+      <TableOfContents items={toc} />
 
       {/*
         Run 10 removed three things from this page, and they were all the same
@@ -224,7 +232,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
       */}
       {withSpecs.length >= 2 && (
         <>
-          <h2 className="section-heading">Side by side</h2>
+          <h2 className="section-heading" id="side-by-side">Side by side</h2>
           <ComparisonTable pages={pages} />
         </>
       )}

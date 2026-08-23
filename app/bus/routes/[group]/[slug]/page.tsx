@@ -10,6 +10,7 @@ import PageShell from '@/components/PageShell'
 import References from '@/components/References'
 import RichText from '@/components/RichText'
 import SpecTable from '@/components/SpecTable'
+import TableOfContents from '@/components/TableOfContents'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 import { getFolder, getPageFromFile } from '@/lib/content'
@@ -74,6 +75,11 @@ export default async function BusRoutePage({ params }: Props) {
   const lineOperator = getGroupLineOperator(group as BusRouteGroup)
   const accent = getAccent(lineCode, lineOperator)
   const routeTitle = `${route.names.en} / ${route.names.zh_tw}`
+  const toc = [
+    { id: 'stop-sequence', label: 'Stop sequence', level: 2 as const },
+    ...page.toc,
+    ...(page.references.length ? [{ id: 'references', label: 'References', level: 2 as const }] : []),
+  ]
 
   return (
     <PageShell accent={accent}>
@@ -94,7 +100,13 @@ export default async function BusRoutePage({ params }: Props) {
         {page.summary && <p className="page-summary"><RichText badges={false}>{page.summary}</RichText></p>}
         <div className="page-grid no-spine">
           <div className="page-main">
-            <BusRouteData route={route} line={accent} references={page.references} href={page.href} />
+            <BusRouteData
+              route={route}
+              line={accent}
+              references={page.references}
+              href={page.href}
+              contents={<TableOfContents items={toc} />}
+            />
             <div className="prose" dangerouslySetInnerHTML={{ __html: page.html }} />
             <SpecTable specs={page.specs} references={page.references} />
             {/* badges={false}: see the note on References' own badges prop —
