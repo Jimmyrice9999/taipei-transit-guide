@@ -6,7 +6,7 @@ line: Y
 aliases:
   - 環狀線
   - Yellow Line
-updated: 2026-08-10
+updated: 2026-08-23
 hero:
   image: circular-line/hero
   alt: A yellow-and-white articulated Circular Line train standing on depot tracks under overhead wires, against a blue sky.
@@ -115,7 +115,7 @@ sources:
     titleOriginal: 監察院調查報告 114交調0005
     publisher: 監察院 (Control Yuan of the Republic of China)
     url: https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The single most important document on this subject, and the source for everything on this page attributed to the investigation. Commissioners 趙永清 and 葉宜津, on their own motion; reviewed 11 March 2025, published 17 June 2025. Read here from the report's .docx (https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/68978), whose word/document.xml was extracted directly — about 15,800 characters of body text, the whole report minus figures and tables. A .pdf of the same report is at https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/72631 and could not be rendered in the environment used. Note that the report's 案由 recites the allegation being investigated — eleven displacements, NT$400m+, over a year — and is not the same thing as its findings."
@@ -124,7 +124,7 @@ sources:
     titleOriginal: 常見問答－機電設施＞環狀線全線之路線與型式為何?
     publisher: 臺北市政府捷運工程局 (Taipei City Government, Department of Rapid Transit Systems)
     url: "https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&sms=87415A8B9CE81B16&s=5283528B7AF0EECA"
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's own whole-line answer, and the only page found in this research that gives all four sections' dimensions together: 環狀線係採鋼軌鋼輪全自動無人駕駛中運量系統; 共15.4公里，14車站(地下1站，高架13站) 及1座機廠; 北環段：共14.93公里，12車站及1座地下機廠; 南環段：共5.73公里，6車站（地下6站，不包括大坪林站）; 東環段：約13.25公里，10車站及1座地下機廠（地下10站）. It states no whole-ring total. Fetched twice, the second time asking only for verbatim sentences containing 公里, because a first fetch had produced a total that the second could not find."
@@ -133,7 +133,7 @@ sources:
     titleOriginal: 環狀線第一階段
     publisher: 臺北市政府捷運工程局 (Taipei City Government, Department of Rapid Transit Systems)
     url: https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's project record for the section now open: 於109年1月31日通車營運; 第2次修正計畫於104年5月6日奉行政院核定，總經費699.73億元 against an initial financial plan of 401.18億元; and the depot, 南機廠位於新店十四張農業區，面積約14.33公頃，供佈設機廠之面積約12.19公頃. The depot's published name is 南機廠, South Depot; 十四張 is where it is, not what it is called."
@@ -142,7 +142,7 @@ sources:
     titleOriginal: 新北環狀線
     publisher: 新北市政府捷運工程局 (New Taipei City Government, Department of Rapid Transit Systems)
     url: https://www.dorts.ntpc.gov.tw/about/route/zj6Dd5ajdA1o
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The other bureau's page for the same railway, cited here because it independently repeats Taipei DORTS's figures — 15.4 公里, 14 座車站, 中運量, 109年1月31日全線通車營運, 699.73億元, one depot in the 新店十四張 agricultural zone. Two bureaux publishing the same numbers is what makes the 15.4 km figure solid enough to set beside the chainage."
@@ -151,7 +151,7 @@ sources:
     titleOriginal: 環狀線(南環段/北環段)
     publisher: 新北市政府捷運工程局 (New Taipei City Government, Department of Rapid Transit Systems)
     url: https://www.dorts.ntpc.gov.tw/about/route/bQw92Vzy2jOk
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The under-construction rings, from the bureau building them: 路線全長20.66公里(其中新北市轄內8.21公里), 18 stations of which 7 are inside New Taipei, 1798.98億元, 預計120年完工. Also the section-contract start dates quoted on this page. Its 20.66 km equals the 5.73 + 14.93 of Taipei DORTS's two section figures exactly, which is a cross-check between two bureaux rather than a coincidence."
@@ -160,7 +160,7 @@ sources:
     titleOriginal: 環狀線東環段
     publisher: 臺北市政府捷運工程局 (Taipei City Government, Department of Rapid Transit Systems)
     url: https://www.dorts.gov.taipei/cp.aspx?n=F47E41B6C8884DC6
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The East Ring project page: 約13.25公里, 10 stations all underground, one underground depot, basic design completed 110年10月18日 and approved 112年3月29日. It carries no cost figure and no completion year, which is why neither appears on this page. A DORTS press release that would have settled both returned HTTP 404 on 2026-08-10."
@@ -230,7 +230,7 @@ sources:
     titleOriginal: 新北環狀線準備好了!確認安全無虞12:00 全線復駛
     publisher: 新北大眾捷運股份有限公司 (New Taipei Metro Corporation), 12 December 2024
     url: "https://www.ntmetro.com.tw/basic/?mode=detail&node=754"
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The reopening, with the repair inventory: nine spans of steel box girder repositioned, 139 items damaged, 1,438 track baseplates replaced, 1,050 m of track restored, 41,500 m of cable replaced, headways back to 5–7 min peak and 8–10 off-peak. Also 李政安 on the remedy — 除了全面更換為優化的盤式支承設施外、也增設永久防落橋及抗拉拔裝置為第二道防線 — which replaces the bearings wholesale without stating how many."
@@ -239,7 +239,7 @@ sources:
     titleOriginal: 新北捷運2025全年運量突破3,000萬人次！ 創歷史新高
     publisher: 新北大眾捷運股份有限公司 (New Taipei Metro Corporation)
     url: "https://www.ntmetro.com.tw/basic/?mode=detail&node=843"
-    accessed: 2026-08-10
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "環狀線發揮強大路網轉乘效益，全年服務超過2,204萬人次; 2025年全年度總運量正式突破3,009萬人次大關; 相較於2024年全年的2,135萬人次，整體成長幅度超過40%. A daily average of about 82,000 appears in search summaries of this release and is not in the fetched text, so it is not published here."
@@ -254,6 +254,8 @@ sources:
     note: "Cited for one thing only: its infobox 路線長度 of 49.18公里 for the completed ring, which is the figure that circulates in English material. No government page reached in this research states a whole-ring total, so the figure cannot be checked against the builder — it is published here as a conflicting value, not as an authority."
 ---
 
+## Overview
+
 At 07:58 on 3 April 2024 a magnitude 7.2 earthquake off Shoufeng in Hualien
 County destroyed the pot bearings between the steel box girders and the piers on
 the Circular Line's viaduct through Zhonghe and along Jingping Road, shoving
@@ -267,7 +269,7 @@ and its report, case 114交調0005, reviewed on 11 March 2025 and published on 1
 June 2025 by commissioners 趙永清 and 葉宜津, is the fullest published account of
 what happened and why[^cy-114]. It is the source for most of this page.
 
-## What the investigation established
+## Incident investigation and engineering findings
 
 Read the report carefully and the first thing to notice is what is *not* a
 finding[^cy-114]. Its terms of reference recite the allegation it was asked to look at —
@@ -417,9 +419,8 @@ date of the report, the Circular Line control centre held **no seismic record
 from that instrument at all**[^cy-114].
 
 The 2019 letter identifies the instruments by the codes `Y9` and `Y13`, which are
-not the codes the stations at those positions carry today; this page does not
-attempt to reconcile the two numbering schemes, and the station the report names
-is Zhongyuan[^cy-114].
+not the codes the stations at those positions carry today; the two numbering
+schemes remain unreconciled, and the station the report names is Zhongyuan[^cy-114].
 
 The report also states as fact that when Taipei City Government handed operations
 to New Taipei City Government on 23 May 2023, New Taipei Metro took the equipment
@@ -447,7 +448,7 @@ and improve, and report back — not a correction[^cy-114]. Findings two and fou
 went to Taipei City for review, finding four also to New Taipei City, and
 findings five and six to MOTC[^cy-114].
 
-## What happened on the day, and over the following eight months
+## Incident and recovery timeline
 
 **3 April 2024.** The whole line was suspended[^ntmetro-0403]. The Danhai LRT was
 unaffected and the Ankeng LRT was back to normal by 16:30 on a 15-minute
@@ -472,15 +473,15 @@ inventory the operator published: nine spans of steel box girder repositioned,
 off-peak[^ntmetro-reopening]. The bearings were replaced wholesale with optimised
 pot bearings, and permanent fall-prevention and anti-uplift devices were added as
 a second line of defence — the protection the design had
-lacked[^ntmetro-reopening]. No source read for this page gives a count of
-bearings replaced.
+lacked[^ntmetro-reopening]. The published repair inventory gives no count of
+bearings replaced[^ntmetro-reopening].
 
 The Control Yuan's own summary of the repair: 250 days of emergency work against
 an original estimate of one year and two months, finished six months early, with
 123 hours of total testing before service resumed — whole-line and section tests,
 and ten simulation drills[^cy-114].
 
-## The claim against the contractor, and the contractor's answer
+## Engineering responsibility and dispute
 
 On 3 January 2025 New Taipei City Government announced that the two city
 governments would jointly sue BES Engineering for **NT$1.927 billion**, on the
@@ -495,11 +496,11 @@ and the bearing failure are **not** the main cause of the damage, which it says
 needs further examination from the direction of structural design
 strength[^pts-bes].
 
-The outcome of the litigation is not established here, and neither is whether any
-prosecution followed the Control Yuan's request that New Taipei DORTS pursue
+The litigation outcome, and whether any prosecution followed the Control Yuan's
+request that New Taipei DORTS pursue
 liability for public-danger offences[^cy-114].
 
-## Where the sources disagree
+## Conflicts and measurement records
 
 ### How many displacements, and how many spans
 
@@ -508,9 +509,8 @@ liability for public-danger offences[^cy-114].
 | **11** displaced steel box girders | Control Yuan[^cy-114]; New Taipei DORTS[^ntpc-dorts-damage] | Locations where a girder moved |
 | **9** spans of steel box girder repositioned | New Taipei Metro's reopening release[^ntmetro-reopening]; CNA[^cna-filing] | Spans that had to be jacked back into place |
 
-Eleven displacement locations across nine spans is arithmetically possible and is
-the obvious reading. **No source found in the research behind this page says so**,
-so this page does not assert it.
+Eleven displacement locations across nine spans is arithmetically possible, but
+the available records do not establish that mapping[^cy-114][^ntmetro-reopening].
 
 ### How far the damage ran
 
@@ -535,9 +535,10 @@ Zhonghe could not operate[^cy-114].
 | **15.06 km** | TDX cumulative chainage at Y20[^tdx] | Platform to platform, Y07 to Y20 — station to station, not the whole built alignment |
 | **0** | TDX `RouteLength`[^tdx] | Not published; the field is present and empty |
 
-The 0.34 km between the first two is the same shape as the result this site found
-on the [Wenhu Line](/rail/metro/lines/wenhu-line/): chainage between end platforms is
-not the route length. This page does not reconcile them.
+The 0.34 km between the first two is the same shape as the result recorded on
+the [Wenhu Line](/rail/metro/lines/wenhu-line/): chainage between end platforms
+is not the route length[^dorts-phase1][^tdx]. The two values remain separate
+measurements[^dorts-phase1][^tdx].
 
 ### How long the finished ring will be
 
@@ -547,8 +548,8 @@ not the route length. This page does not reconcile them.
 | **49.18 km** | zh.wikipedia's infobox[^zh-circular] | The figure that circulates in English material; not traceable to a government page in this research |
 | **20.66 km** for the South and North rings together | New Taipei DORTS[^ntpc-dorts-rings] | Equals 5.73 + 14.93 exactly, so the two bureaux agree on the sections |
 
-**No government page reached in this research states a whole-ring total.** That
-is a statement about the search, not about DORTS.
+The whole-ring total remains TBC: the fetched government pages publish section
+lengths, while the secondary 49.18-km figure is not corroborated by those pages[^dorts-faq][^ntpc-dorts-rings][^zh-circular].
 
 ### Whose fault it was
 
@@ -571,7 +572,7 @@ The Control Yuan apportions responsibility to contractor, designer, supervisor
 first[^pts-bes]. The litigation filed in March 2025 has not been resolved on this
 page.
 
-## The line itself
+## Route and alignment
 
 The Circular Line is a **steel-wheel, steel-rail, fully automatic driverless
 medium-capacity system** — not straddle-beam and not rubber-tyred[^dorts-faq].
@@ -610,7 +611,7 @@ data records it as not a branch[^tdx]. It meets five other lines[^tdx]:
 
 End to end takes 34 minutes in either direction[^tdx].
 
-## The rest of the ring
+## Extensions and future phases
 
 Three further sections are planned or under construction, and Taipei DORTS
 publishes dimensions for all of them[^dorts-faq]:
@@ -633,7 +634,7 @@ The East Ring's basic design was completed on 18 October 2021 and approved on 29
 March 2023[^dorts-east-ring]. Its project page carries **no cost figure and no
 completion year**, and neither is asserted here.
 
-## Ridership
+## Operations and ridership
 
 In 2025 the Circular Line carried over **22.04 million** passengers, which New
 Taipei Metro describes as the main engine of its network's
@@ -644,8 +645,8 @@ attached: 2024 is the year this line lost its Zhonghe section from 3 April to 12
 December[^ntmetro-0403][^ntmetro-reopening].
 
 A figure of 30.11 million for the same network total appears in search summaries
-of that release; the fetched text says 30.09 million, and that is what this page
-publishes[^ntmetro-ridership].
+of that release; the fetched text says 30.09 million, which is the supported
+value[^ntmetro-ridership].
 
 ## Sources
 

@@ -9,7 +9,7 @@ aliases:
   - 木柵線
   - 內湖線
   - Brown Line
-updated: 2026-08-06
+updated: 2026-08-23
 hero:
   image: wenhu-line/hero
   alt: A four-car VAL256 train crossing the Keelung River on the elevated guideway, apartment towers behind.
@@ -153,7 +153,7 @@ sources:
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
     snapshot: https://web.archive.org/web/20260209210832/https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's own project record for both halves: 木柵線 約10.9公里，設12座車站 and 內湖線 約14.8公里，設12座車站（地下段3.9公里，2座地下站）. Those two lengths are what add to the 25.7 km that circulates as this line's route length."
@@ -192,7 +192,7 @@ sources:
     publisher: Taipei City Government, Department of Rapid Transit Systems (DORTS)
     url: "https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F"
     snapshot: https://web.archive.org/web/20260807045159/https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F
-    accessed: 2026-08-07
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: "The builder's own account of why the stations look as they do, and — from a completely different direction than the project record — a count that identifies the underground pair: 「文湖線內湖段為木柵段之延伸，屬中運量系統，除大直站為地下車站外，其餘共有十座高架車站」. Ten elevated plus Dazhi is eleven of the Neihu section's twelve; the twelfth is Songshan Airport. Also the source for the single-column load constraint on the Muzha section and the 「空中之河」 / 「湖城故事」 framing of the Neihu section."
@@ -202,7 +202,7 @@ sources:
     publisher: Taipei Rapid Transit Corporation
     url: https://www.metro.taipei/cp.aspx?n=EAD981369A065968
     snapshot: https://web.archive.org/web/20260803093910/https://www.metro.taipei/cp.aspx?n=EAD981369A065968
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
     note: The operator's own published service pattern. Weekday peak about 2–4 min, off-peak about 4–10 min, about 12 min after 23:00, and one-way running time about 45 minutes.
@@ -260,7 +260,7 @@ sources:
     publisher: Taipei Rapid Transit Corporation
     url: https://www.metro.taipei/cp.aspx?n=c4b618682db27979&s=288E97B4A5E9A725
     snapshot: https://web.archive.org/web/20250616230758/https://www.metro.taipei/cp.aspx?n=C4B618682DB27979&s=288E97B4A5E9A725
-    accessed: 2026-08-06
+    accessed: 2026-08-23
     kind: primary
     lang: zh-Hant
   - id: railway-tech-lille
@@ -339,7 +339,7 @@ again until 26 December 2010[^zh-val256] — eighteen months in which the 1996
 railway ran entirely on the 2009 trains. See
 [VAL256](/rail/metro/rolling-stock/val256/).
 
-## Route
+## Route and alignment
 
 Elevated for almost its entire length. From BR01 the line climbs north through
 Wenshan District, crosses central Taipei on an east–west alignment, then turns
@@ -366,7 +366,7 @@ No source read for this page establishes the platform depths; they remain TBC.
 Every platform on the line has full-height platform screen doors: Faiveley
 equipment from BR01 to BR12, ST Electronics from BR13 to BR24[^trtc-psd].
 
-## How many ways out
+## Stations and passenger facilities
 
 DORTS's station table counts the street exits at every station, and the
 distribution is lopsided in a way that says something about how the line was
@@ -401,7 +401,7 @@ of them already built[^zh-linguang] — everywhere else, a second exit was
 something added later or not at all. The same station has **two ticket machines,
 the fewest anywhere on the network**[^zh-linguang].
 
-## Operations
+## Operations and service
 
 Trains run without on-board drivers under automatic train control, at GoA4 —
 unattended train operation, the highest grade[^zh-wenhu].
@@ -413,7 +413,7 @@ reverse[^trtc-headways]. zh.wikipedia adds that the headway can be compressed to
 80 seconds[^zh-wenhu]; that is a signalling capability rather than a timetable,
 and no primary source for it was found.
 
-## How long the line is
+## Length records and measurement conflicts
 
 Four figures circulate, and they are not in conflict — they measure four
 different things. **This site publishes 25.17 km, the operating length**, and

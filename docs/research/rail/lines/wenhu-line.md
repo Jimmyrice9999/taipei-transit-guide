@@ -2,7 +2,7 @@
 
 Line 1 · Brown · TRTC · **Taiwan's first metro line**
 
-**Version 1.0 — 6 August 2026**
+**Version 1.1 — 23 August 2026**
 **Status: research. Not published. Verify before promoting to content.**
 
 Supersedes nothing. Companion files: `wenhu-research-2026-08.md` (fleet renewal,
@@ -485,6 +485,23 @@ deadline and breach); zh.wikipedia 西湖站 (ridership, public art); baike.baid
 (alignment corroboration).
 
 ---
+
+## Independent full-page verification — 23 August 2026
+
+The following primary pages were fetched in full and read on 23 August 2026:
+
+- DORTS, “文山內湖線路線說明”: https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94
+- DORTS, “車站建築設計—文湖線”: https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F
+- TRTC, “路線及班距”: https://www.metro.taipei/cp.aspx?n=EAD981369A065968
+- TRTC, “安全設備”: https://www.metro.taipei/cp.aspx?n=c4b618682db27979&s=288E97B4A5E9A725
+
+These full-page checks confirm the two project lengths and opening dates, the
+3.9-km/two-station underground section, the station and depot descriptions,
+the architecture count used to identify BR13 and BR14, published headways,
+and the two platform-screen-door suppliers. The DORTS fleet FAQ was also
+attempted at its live URL but returned an internal error in this fetch; its
+procurement figures remain attributed to the earlier successful fetch and are
+not promoted from this failed attempt.
 
 ## Checked and failed
 

@@ -15903,6 +15903,65 @@ failures; 217 unit tests; clean accessibility, facts, geometry and CVD. `npm
 run cite`, `npm run nav`, `npm test` and `npm run verify` all passed. Generated
 links/unused audits were restored and `probes/` was not staged.
 
+# Run 112 — rebuild Wenhu and Circular line depth (23 August 2026)
+
+## Part 3 — remaining MRT line pages
+
+### Sourced
+
+Rechecked and structurally rebuilt the Wenhu page from 2,106 to 2,193
+Markdown-stripped body words. Its canonical sections now cover history, route
+and alignment, stations and passenger facilities, operations, length records,
+rolling stock, depots, sources and corrections. Full primary-page reads at
+https://www.dorts.gov.taipei/cp.aspx?n=DBAC040496EFAB94,
+https://www.dorts.gov.taipei/cp.aspx?n=980C85299DA2890A&s=6B0F524CA1EB5C9F,
+https://www.metro.taipei/cp.aspx?n=EAD981369A065968 and
+https://www.metro.taipei/cp.aspx?n=c4b618682db27979&s=288E97B4A5E9A725
+confirmed the two project lengths and opening dates, the 3.9-km/two-station
+underground section, station and depot descriptions, the architecture count,
+published headways and platform-screen-door suppliers. The DORTS fleet FAQ
+was attempted at its live URL but returned an internal error; no figure was
+promoted from that failed fetch. The page keeps the sourced 25.17-km TDX route
+length alongside DORTS's 25.7-km sum as a measurement conflict.
+
+The Circular page grew from 3,436 to 3,539 body words and now uses nine real
+sections: overview, investigation findings, recovery timeline, responsibility
+and dispute, conflicts, route/alignment, future phases, operations/ridership
+and sources. Full reads at
+https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082,
+https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&sms=87415A8B9CE81B16&s=5283528B7AF0EECA,
+https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789,
+https://www.dorts.ntpc.gov.tw/about/route/zj6Dd5ajdA1o,
+https://www.dorts.ntpc.gov.tw/about/route/bQw92Vzy2jOk,
+https://www.dorts.gov.taipei/cp.aspx?n=F47E41B6C8884DC6,
+https://www.ntmetro.com.tw/basic/?mode=detail&node=754 and
+https://www.ntmetro.com.tw/basic/?mode=detail&node=843 confirmed the
+investigation metadata, phase dimensions and dates, repair inventory, and
+2025 ridership.
+
+### TBC and conflicts
+
+Wenhu's 25.17-km TDX revenue route and DORTS's 10.9 + 14.8 = 25.7-km project
+sum remain separate measurements. Fleet FAQ material was not re-promoted after
+the failed live fetch. Circular retains 15.4 km versus 15.06 km for the open
+section, 49.31 km arithmetic versus the secondary 49.18-km whole-ring value,
+20.66 km for the sourced North/South extensions, and the unresolved 11
+displacement locations versus 9 repaired spans. No whole-ring government total
+was found in the fetched pages, so it remains TBC rather than being inferred.
+
+### Verification and gate
+
+The first post-edit claims run caught one uncited comparison sentence in the
+Circular page; adding the existing DORTS and TDX markers restored zero ASSERTED
+claims. Final verify passed: 1,954 pages, 218,210 internal links with no broken
+links, fragments or orphans; 4,988 citations (4,804 primary / 184 secondary);
+11,444 sourced / 4,307 TBC / zero asserted claims; 124 research files / 534
+checked failures; 217 unit tests; clean accessibility, facts, geometry and CVD.
+`npm run cite`, `npm run verify`, `npm run nav` (19/19), and `npm test` all
+passed. A first nav invocation had four timing failures before the immediate
+rerun passed all 19; no checker was weakened. Generated links/unused audits
+were restored and `probes/` was not staged.
+
 ## Run 111 — Zhonghe–Xinlu line depth and structure (23 August 2026)
 
 ### Part 3 — sourced rebuild

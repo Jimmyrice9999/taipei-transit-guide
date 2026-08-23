@@ -6,7 +6,7 @@
 
 # Circular Line 環狀線 (Y)
 
-**Version 2.0 — 10 August 2026.** Rewritten from v1.0 (6 August 2026) after the
+**Version 2.1 — 23 August 2026.** Rechecked from v2.0 (10 August 2026) after the
 Control Yuan investigation report was located, downloaded and read in full.
 Where v1.0 and the primary sources disagree, the primary sources are recorded
 here and v1.0's version is struck in `## Checked and failed`.
@@ -459,6 +459,24 @@ rediscovered.
 ### Remaining unverified lead material
 
 The appendix preserves Phase One chronology, package structure, station architecture, number-system mapping, earthquake damage and future-line material as leads only. The 1.2-versus-1.12 km underground-length conflict and 11-locations-versus-9-spans conflict remain published conflicts; neither is normalized.
+
+## Independent full-page verification — 23 August 2026
+
+The following primary pages were fetched in full and read on 23 August 2026:
+
+- Control Yuan investigation record: https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082
+- Taipei DORTS Circular Line FAQ: https://www.dorts.gov.taipei/News_Content.aspx?n=2A66A485FACB0D5B&sms=87415A8B9CE81B16&s=5283528B7AF0EECA
+- Taipei DORTS Phase 1: https://www.dorts.gov.taipei/cp.aspx?n=86E55BE3A390F789
+- New Taipei DORTS operating section: https://www.dorts.ntpc.gov.tw/about/route/zj6Dd5ajdA1o
+- New Taipei DORTS South/North rings: https://www.dorts.ntpc.gov.tw/about/route/bQw92Vzy2jOk
+- Taipei DORTS East Ring: https://www.dorts.gov.taipei/cp.aspx?n=F47E41B6C8884DC6
+- New Taipei Metro reopening release: https://www.ntmetro.com.tw/basic/?mode=detail&node=754
+- New Taipei Metro 2025 ridership release: https://www.ntmetro.com.tw/basic/?mode=detail&node=843
+
+These full-page reads confirm the investigation metadata, the Phase 1 and ring
+dimensions, project dates, repair inventory and ridership values. A new
+whole-ring total was not found in the fetched government pages; the 49.18-km
+secondary value therefore remains a conflict rather than a chosen answer.
 
 ## Checked and failed
 
