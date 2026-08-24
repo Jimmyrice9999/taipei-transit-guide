@@ -16798,3 +16798,16 @@ patterns, aliases, gauge chronology and closed alignments remain TBC.
 Gates: build 2,104 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: continue the
 Western Main Line sequence.
+
+# Run 133 - TRA Western station batch (24 August 2026)
+
+The fourth TRA content unit adds Western Main Line station positions 46–60.
+The current Western page set now reaches 60 station pages, while the Eastern
+line page remains available as the next trunk-family landing page. No new
+source family was introduced; the same fetched TDX and TRA primary pages are
+carried with each page and every unresolved operational or historical field is
+left TBC.
+
+Gates: build 2,134 pages; Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: continue the
+Western Main Line sequence.
