@@ -161,6 +161,9 @@ const PAGE_TYPES = [
   /* Run 119: the family/lot roster table is the first rolling-stock page
      whose primary purpose is a wide, horizontally scrollable data table. */
   { name: 'stock-fleet-roster', url: '/rail/metro/rolling-stock/fleet-roster/' },
+  /* Run 121: systems-and-operations adds the first wide line-by-line
+     signalling/power/headway table to the technology section. */
+  { name: 'metro-operations', url: '/rail/technology/metro-operations/' },
   { name: 'depot-muzha', url: '/rail/metro/depots/muzha-depot/' },
   /*
    * Run 20 built these three photo-card grids and never added any of them

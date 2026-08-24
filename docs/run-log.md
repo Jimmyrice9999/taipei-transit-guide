@@ -16293,3 +16293,69 @@ accessibility-tree probes passed for the expanded matrix, axe found zero
 violations, 498 screenshots and all print PDFs completed. The new roster was
 visually checked at 320/400% and 1440px. Generated browser JSON/audit files and
 screenshots/prints remain untracked and are not staged.
+
+# Run 121 - systems and operations (24 August 2026)
+
+## Part 4 - signalling, power, depots, service and platform doors
+
+The audit found that the first/last-train requirement already had a committed
+implementation: station pages read the TDX `FirstLastTimetable` snapshots and
+show the published direction rows, with retrieval metadata in
+`data/tdx/meta.json`. This unit therefore added the engineering evidence and
+coverage boundary around that data rather than duplicating it. The new page is
+`content/rail/technology/metro-operations.md`; its body is 944 words and its
+line table covers BR, R, G, O, BL, Y, LB, V, K and A.
+
+The page records DORTS's Alstom/GRS fixed-block high-capacity family, Wenhu's
+Bombardier CITYFLO 650 moving-block CBTC, Circular's Hitachi CBTC and the
+published but less specific Sanying and light-rail systems. It records 750 V
+DC third rail as the Taipei standard, the 22 kV conversion and substation
+spacing rules, named depot roles, the TRTC and NTMC published headways, the
+TDX first/last coverage, and the 2006–2018 high-capacity platform-door retrofit.
+The technology index now points readers at the completed page; browser
+coverage adds `metro-operations`.
+
+Full primary pages fetched and read:
+
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page73.html
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page225.html
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page292.html
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page303.html
+- https://www.ntmetro.com.tw/basic/?node=10012
+- https://report.ndc.gov.tw/ReportFront/PageSystem/reportFileDownload/C09603079/001
+- https://www.trsc.com.tw/train/tran-58acf47251060
+- https://ebook.dorts.gov.taipei/ebook/no24/files/basic-html/page364.html
+- https://ebook.dorts.gov.taipei/ebook/no24/files/basic-html/page81.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page139.html
+- https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page27.html
+- https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page202.html
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/road03.php
+- https://www.metro.taipei/cp.aspx?n=ead981369a065968&s=C58C8C2C6419810F
+- https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=1CC297E1D0B4C7B1
+- https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=0F3F913C344BA050
+- https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=E153D917FDC2AC69
+- https://www.metro.taipei/cp.aspx?n=EAD981369A065968&s=3092796CF14AC78E
+- https://www.ntmetro.com.tw/basic/?node=10005
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=712
+- https://tdx.transportdata.tw/api-service/swagger/basic/268fc230-2e04-471b-a728-a726167c1cfc
+- https://ebook.dorts.gov.taipei/ebook/no2/files/basic-html/page127.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page159.html
+- https://web.metro.taipei/ebook/2014ebook/files/basic-html/page47.html
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page180.html
+
+Conflicts retained: fixed-block signalling and automated train-control
+functions are different layers; depot planning capacity and current stabling
+are different measures; and line-level platform-door history does not become a
+station-level register. TBC: a current unit-to-depot register, a complete
+station door-type register, comparable design-versus-actual capacity, and
+signalling supplier/generation for Sanying, Danhai and Ankeng. These were
+searched in DORTS systems/power/depot volumes, TRTC route and safety pages,
+NTMC fleet/FAQ releases, TYMC route/organization pages, MOTC project material
+and TDX; the gaps remain TBC because no complete primary table was found.
+
+Verification: `npm run research`, `cite`, `facts`, `claims` (0 ASSERTED),
+`test:unit` (219/219), `a11y`, `check`, build, and browser verification passed.
+The build generated 1,812 routes and 1,960 postbuild pages; axe found zero
+violations across 1,458 pages, with 505 screenshots and all representative
+print PDFs. The new page was visually checked at 320/400% and 1440px. Generated
+audit JSONs and browser artifacts were restored/not staged.
