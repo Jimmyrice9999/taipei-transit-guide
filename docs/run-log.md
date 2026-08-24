@@ -17181,3 +17181,46 @@ verification is clean: zero axe violations across 1,848 pages, 666 screenshots,
 all curated TYMC keyboard/accessibility probes, and 86 print PDFs. The 320px
 station and 1440px line screenshots were inspected; no reflow finding. Generated
 audit JSONs, screenshots and PDFs were restored and are not part of the commit.
+
+# Run 155 - Taichung Metro Blue Line main project (25 August 2026)
+
+Part 12's third unit adds one evidence-led Taichung project page rather than
+20 station stubs. The full Taichung Rapid Transit Systems Bureau Blue Line page
+establishes 24.78 km, 20 planned stations, eight elevated and 12 underground,
+one depot, the feasibility/comprehensive-plan/basic-design chronology and the
+BM01/BD01–BD03 implementation milestones. Sources:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C46
+
+The bureau's full BC11 release establishes the 2.49 km B01–B03 package, its
+NT$11.95758bn award and 1,950-day term:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1593
+The full BC12 release establishes the 7.86 km B04–B08 package and
+NT$22.63460bn award:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1600
+The procurement ledger records the dated BC11/BC12 tender sequence:
+https://tcrt.taichung.gov.tw/form/Details?Parser=28%2C12%2C203%2C201%2C%2C%2C376
+
+TDX was probed live for TMRT on 25 August. It returned the operating Green
+Line only; no Blue project or operating record, coordinates, geometry,
+facilities, timetable or ridership was published in the checked response.
+Those fields, the complete station-name inventory, opening date and one
+programme-wide progress percentage remain TBC. The page decision is deliberate:
+the primary records are route/project-level, so a project page is stronger than
+manufacturing station pages from a partial B01–B08 procurement list.
+
+No numerical source conflict was found. The 24.78 km/20-station values are
+project-wide; 2.49 km and 7.86 km are package scopes. The procurement ledger's
+21 July “latest” second tender and the 11 August BC12 award are a dated update,
+not competing values. No corpus claim was contradicted in this unit. The
+Taichung Traffic Bureau basic-design URL was fetched in full but returned only
+a navigation shell, so it was recorded as checked-and-failed and not used.
+
+The Blue page is 570 body words and the updated project-status page 801.
+Gates: build generated 2,578 pages and postbuild checked 2,736; cite, research,
+conflicts check and claims clean (20,465 sourced, 4,453 TBC, 0 ASSERTED); unit
+tests 231/231; a11y 1,850 pages; internal links 419,242 with no breaks or
+orphans. Browser verification is clean: no reflow or spine findings, curated
+keyboard/accessibility probes including the new project type pass, zero axe
+violations across 1,849 pages, 673 screenshots and 86 print PDFs. The 320px and
+1440px Blue screenshots were inspected. Generated audit JSONs, screenshots and
+PDFs were restored and are not part of the commit.

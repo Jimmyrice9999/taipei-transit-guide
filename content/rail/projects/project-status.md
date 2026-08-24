@@ -168,6 +168,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Records the full-page search of DORTS, New Taipei DORTS, Railway Bureau approvals/budgets, and the cited route histories for a named Taipei-region project that was cancelled after construction began; no verified case was found in this pass."
+  - id: taichung-blue
+    title: Taichung Metro Blue Line project page
+    titleOriginal: 臺中市政府捷運工程局-捷運路網-捷運藍線
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C46
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full project page for the Blue Line's route scope and implementation milestones.
 ---
 
 ## How to read project status
@@ -207,6 +216,8 @@ policy document simultaneously describes their civil works as being advanced,
 so both descriptions are retained rather than silently reconciled.[^dorts-115-plan][^dorts-ring-ns]
 
 ## Approved or advancing extensions
+
+Taichung's Blue Line is documented separately as an approved project moving into route construction.[^taichung-blue] The full project page gives 24.78 km, 20 stations and one depot; current route contracts cover BC11 (B01–B03) and BC12 (B04–B08).[^taichung-blue] See the [Taichung Metro Blue Line project page](/rail/projects/taichung-blue-line/) for the dated approval and procurement record.
 
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^dorts-east-contract]
