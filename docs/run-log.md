@@ -16870,3 +16870,18 @@ and closed alignments remain TBC.
 Gates: build 2,238 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: Eastern station
 batches, then the smallest verified branches.
+
+# Run 138 - TRA Eastern station batch (24 August 2026)
+
+The ninth TRA content unit adds Eastern Main Line station positions 1–15.
+The line page and the Western station set remain unchanged. The batch uses
+the same TDX StationOfLine ordering and does not infer train stopping patterns,
+station facilities, ridership or historical aliases from coordinates or line
+membership.
+
+Sources, conflicts and TBC boundaries remain as recorded in the TRA research
+file and Runs 130–137. No new secondary source was promoted into content.
+
+Gates: build 2,266 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: Eastern positions
+16–30.

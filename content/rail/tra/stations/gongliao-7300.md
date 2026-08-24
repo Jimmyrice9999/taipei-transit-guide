@@ -1,43 +1,43 @@
 ---
-title: "Badu — Taiwan Railways"
-summary: "Badu (八堵), TDX station 0920, in 基隆市; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Gongliao — Taiwan Railways"
+summary: "Gongliao (貢寮), TDX station 7300, in 新北市; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 9
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "0920"
+    value: "7300"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "八堵"
+    value: "貢寮"
     source: tdx-tra-station
   - label: "Administrative city"
-    value: "基隆市"
+    value: "新北市"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "暖暖區"
+    value: "貢寮區"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "2"
+    value: "4"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Eastern Main Line (EL); Western Main Line (WL)"
+    value: "Eastern Main Line (EL)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "25.10838"
+    value: "25.02197"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "121.72904"
+    value: "121.90879"
     unit: degrees
     source: tdx-tra-station
   - label: "Eastern Main Line sequence"
-    value: 1
+    value: 9
     unit: position
     source: tdx-tra-line
   - label: "Eastern Main Line travelled distance"
-    value: "0"
+    value: "28.2"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Badu (八堵) is station ID 0920 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 2 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Gongliao (貢寮) is station ID 7300 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 205001基隆市暖暖區八南里八堵路 142 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 228003新北市貢寮區貢寮里朝陽街 33 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Eastern Main Line
 
-On the Eastern Main Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Nuannuan (7390).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Eastern Main Line StationOfLine record, this station has sequence 9 and a supplied travelled distance of 28.2 km.[^tdx-tra-line] The preceding member is Shuangxi (7310) and the following member is Fulong (7290).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Eastern Main Line (EL), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Eastern Main Line (EL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 25.10838 and longitude 121.72904.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 25.02197 and longitude 121.90879.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 
