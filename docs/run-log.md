@@ -17029,3 +17029,19 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,404 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the seven-station
 Pingxi Branch (PX).
+
+# Run 148 - TRA Pingxi branch (24 August 2026)
+
+The nineteenth TRA content unit adds the complete seven-station Pingxi Branch
+(PX), including its line page and station pages. The build first found 濁 in
+the generated changelog base subset; regenerating the derived fonts resolved
+the postbuild check.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the existing TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,418 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the twelve-station
+Neiwan Branch (NW).
