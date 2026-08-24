@@ -16684,3 +16684,26 @@ pages, found zero axe violations, passed all curated THSR keyboard/tree probes,
 captured 596 screenshots and representative print PDFs; the THSR line, station,
 system and data pages were viewed at 320/400% and 1440px. Generated audit JSONs,
 screenshots and PDFs were restored and are not staged.
+
+# Run 128 - TRA temporal architecture primitives (24 August 2026)
+
+## Part 11 - architecture gate
+
+Before importing TRA records, the rail model now has explicit temporal
+primitives in `lib/rail-architecture.ts`: namespaced stable station identities,
+current and former names, route memberships with trunk/branch/spur/closed
+roles, route versions, dated historical geometries, and gauge-bearing segments.
+Gauge is attached to a segment and interval, so a route can retain both the
+confirmed 1,435 mm and 1,067 mm records without collapsing them into one line
+field. Interchange groups are namespaced station references. The existing
+present-day `Station` type exposes these fields as optional future-compatible
+properties without changing current metro data.
+
+The fixture test is intentionally synthetic and makes no historical claim: it
+contains a branch station, a renamed station, a closed route version, a dated
+geometry pair, a 1,435 mm historical segment and 1,067 mm current segments.
+Tests reject duplicate namespaced identities, dangling branch/interchange
+references, overlapping route versions, invalid intervals and invalid gauges.
+The full unit suite passed 223/223. No TRA page or historical transport claim
+was published in this architecture-only unit; the next batch is the live TDX
+pull and source-backed TRA line inventory.

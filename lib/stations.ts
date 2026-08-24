@@ -23,6 +23,7 @@ import { STATION_OVERLAY, type StationProseSentence, type Structure } from './st
 import { SANYING_STATIONS } from './sanying-stations.ts'
 import type { StationResearch } from './station-research.ts'
 import type { Source } from './sources.ts'
+import type { RailFormerName, RailRouteMembership, RailStatus } from './rail-architecture.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
 export type PlannedInterchange = {
@@ -73,6 +74,14 @@ export type Station = {
   recordSource: 'tdx' | 'primary-research'
   /** Page-level evidence for a hand-researched station; null for TDX records. */
   research: StationResearch | null
+  /** Stable identity and temporal fields used by historical systems such as TRA. */
+  stableId?: string
+  formerNames?: RailFormerName[]
+  routeMembership?: RailRouteMembership[]
+  validFrom?: string
+  validTo?: string
+  status?: RailStatus
+  interchangeGroup?: string
 }
 
 export const STATIONS: Station[] = [

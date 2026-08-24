@@ -1,8 +1,7 @@
 # For Jamie
 
 ## Active handoff - 24 August 2026
-Parts 0-10 are complete. Parts 11-15 remain.
-Part 1 CI hard gate is green: Actions run 342 passed Tests, Build for Pages and deployment.
+Parts 0-10 are complete; Part 11 is in progress and Parts 12-15 remain. CI hard gate is green: Actions run 342 passed Tests, Build for Pages and deployment.
 Part 2 ships dated TRTC, NTMC and TYMC ridership data and panels.
 Part 3 ships the family/lot fleet roster; unit-level records remain TBC.
 Part 4 ships metro systems/operations evidence; Part 5 ships fare history,
@@ -22,4 +21,4 @@ ridership layer; Route and StationOfRoute returned 404, while station ridership/
 and accessibility remain TBC.
 Part 10 gates: build (2,004), links (262,497), cite, research, claims 0 ASSERTED, facts,
 unit 219, a11y (1,484), geometry, CVD, browser (1,483, zero axe, 596 shots).
-Next: Part 11 TRA architecture gaps.
+Part 11 architecture primitives (temporal station/route graph, historical gauges, branches, aliases and closures) pass 223 unit tests. Next: TRA current data import.
