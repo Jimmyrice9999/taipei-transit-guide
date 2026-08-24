@@ -9,6 +9,7 @@ const ROOT = process.cwd()
 const OUT = path.join(ROOT, 'content', 'rail', 'tra')
 const DATE = '2026-08-24'
 const requestedLine = process.argv.find((arg) => arg.startsWith('--line='))?.slice(7) || 'WL'
+const stationStart = Number(process.argv.find((arg) => arg.startsWith('--station-start='))?.slice(16) || '0')
 const stationLimit = Number(process.argv.find((arg) => arg.startsWith('--station-limit='))?.slice(16) || '15')
 
 const urls = {
@@ -270,8 +271,8 @@ write('stations/_index.md', stationIndex())
 const line = lineById.get(requestedLine)
 if (!line) throw new Error('Unknown TRA line ' + requestedLine)
 write('lines/' + lineSlug(line) + '.md', linePage(line))
-for (const member of members(line).slice(0, stationLimit)) {
+for (const member of members(line).slice(stationStart, stationStart + stationLimit)) {
   const station = stationById.get(member.StationID)
   if (station) write('stations/' + stationSlug(station) + '.md', stationPage(station, member, line))
 }
-console.log('Generated TRA system indexes, ' + lineSlug(line) + ' and ' + Math.min(stationLimit, members(line).length) + ' station pages.')
+console.log('Generated TRA system indexes, ' + lineSlug(line) + ' and ' + Math.max(0, Math.min(stationLimit, members(line).length - stationStart)) + ' station pages from offset ' + stationStart + '.')

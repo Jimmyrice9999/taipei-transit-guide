@@ -16763,3 +16763,21 @@ count conflict and report aggregate conflicts remain published in the pages.
 Gates: build 2,042 pages; cite, research, claims 0 ASSERTED, conflicts check,
 and unit 226/226 all pass. Next batch: continue Western Main Line station
 pages, then Eastern Main Line, before branch and historical sections.
+
+# Run 131 - TRA Western continuation and Eastern line (24 August 2026)
+
+The second TRA content unit adds the Eastern Main Line page and the next 15
+Western Main Line station pages, bringing the current station-page set to 30
+Western stations. The generator now accepts an explicit station offset so a
+batch cannot overwrite an earlier station range. All line and station pages
+retain the TDX StationOfLine sequence and the source boundary around service
+patterns, accessibility, ridership and historical identity.
+
+The same full primary sources listed in Run 130 were reused; no search snippet
+was promoted into content. The published conflicts remain the current TDX
+245-station snapshot versus the end-2023 report's 241 stations and the report
+route aggregates versus overlapping TDX line records. TBCs remain explicit.
+
+Gates: build 2,074 pages; cite, research, claims 0 ASSERTED, conflicts check,
+and unit 226/226 all pass. Next: finish the Western Main Line, then generate
+the Eastern station batches and the smallest verified branch lines.
