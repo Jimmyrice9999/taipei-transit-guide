@@ -1,15 +1,15 @@
 ---
-title: "Taitung — Taiwan Railways"
-summary: "Taitung (臺東), TDX station 6000, in 臺東縣; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 24
+title: "Kangle — Taiwan Railways"
+summary: "Kangle (康樂), TDX station 5240, in 臺東縣; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 23
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "6000"
+    value: "5240"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "臺東"
+    value: "康樂"
     source: tdx-tra-station
   - label: "Administrative city"
     value: "臺東縣"
@@ -18,26 +18,26 @@ facts:
     value: "臺東市"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "1"
+    value: "4"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Eastern Main Line (EL); South Link Line (SL)"
+    value: "South Link Line (SL)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "22.79372"
+    value: "22.76426"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "121.1231"
+    value: "121.09356"
     unit: degrees
     source: tdx-tra-station
   - label: "South Link Line sequence"
-    value: 24
+    value: 23
     unit: position
     source: tdx-tra-line
   - label: "South Link Line travelled distance"
-    value: "138.4"
+    value: "133.9"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Taitung (臺東) is station ID 6000 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 1 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Kangle (康樂) is station ID 5240 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 950030臺東縣臺東市岩灣里岩灣路 101 巷 598 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 950029臺東縣臺東市康樂里博物館路 51 巷 131 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on South Link Line
 
-On the South Link Line StationOfLine record, this station has sequence 24 and a supplied travelled distance of 138.4 km.[^tdx-tra-line] The preceding member is Kangle (5240) and the following member is the last member in this TDX sequence.[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the South Link Line StationOfLine record, this station has sequence 23 and a supplied travelled distance of 133.9 km.[^tdx-tra-line] The preceding member is Zhiben (5230) and the following member is Taitung (6000).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Eastern Main Line (EL), South Link Line (SL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is South Link Line (SL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 22.79372 and longitude 121.1231.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 22.76426 and longitude 121.09356.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 

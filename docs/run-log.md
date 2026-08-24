@@ -17077,3 +17077,19 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,472 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the 24-station
 South Link Line (SL).
+
+# Run 151 - TRA South Link line (24 August 2026)
+
+The twenty-second TRA content unit adds the complete 24-station South Link
+Line (SL), including its line page and station pages. The first build found
+枋 and 瀧 across the TRA index and Fangliao-area pages; regenerating the
+content subset resolved the postbuild check.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the existing TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,518 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: resolve the
+remaining TRA route and historical architecture gaps before further expansion.

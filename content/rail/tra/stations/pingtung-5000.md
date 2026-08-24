@@ -1,7 +1,7 @@
 ---
 title: "Pingtung — Taiwan Railways"
 summary: "Pingtung (屏東), TDX station 5000, in 屏東縣; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 112
+order: 1
 operator: TRA
 updated: 2026-08-24
 facts:
@@ -32,12 +32,12 @@ specs:
     value: "120.48617"
     unit: degrees
     source: tdx-tra-station
-  - label: "Western Main Line sequence"
-    value: 112
+  - label: "South Link Line sequence"
+    value: 1
     unit: position
     source: tdx-tra-line
-  - label: "Western Main Line travelled distance"
-    value: "420.8"
+  - label: "South Link Line travelled distance"
+    value: "0"
     unit: km
     source: tdx-tra-line
 sources:
@@ -85,9 +85,9 @@ Pingtung (屏東) is station ID 5000 in the TDX Station response retrieved on 20
 
 The address field is 900011屏東縣屏東市建國里公勇路 62 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
-## Position on Western Main Line
+## Position on South Link Line
 
-On the Western Main Line StationOfLine record, this station has sequence 112 and a supplied travelled distance of 420.8 km.[^tdx-tra-line] The preceding member is Liukuaicuo (4470) and the following member is the last member in this TDX sequence.[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the South Link Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Guilai (5010).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
 The current line membership list for this station is South Link Line (SL), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
