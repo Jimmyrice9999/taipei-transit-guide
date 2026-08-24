@@ -76,6 +76,8 @@ const TRACK_WIDTH = 5
 const BRANCH_CORE_WIDTH = 3.6
 
 export type MapStation = {
+  /** Namespaces reused station codes such as G10 across operators. */
+  id?: string
   code: string
   name: string
   nameZh?: string
@@ -349,7 +351,7 @@ export default function RouteMap({
 
             if (!station.href) {
               return (
-                <g key={station.code} className="routemap-station">
+                <g key={station.id ?? station.code} className="routemap-station">
                   {dot}
                 </g>
               )
@@ -357,7 +359,7 @@ export default function RouteMap({
 
             return (
               <a
-                key={station.code}
+                key={station.id ?? station.code}
                 href={station.href}
                 className="routemap-station is-link"
                 aria-label={`${station.code} ${station.name}${station.nameZh ? ` ${station.nameZh}` : ''}`}

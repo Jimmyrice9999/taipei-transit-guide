@@ -121,6 +121,33 @@ export default function DataPage() {
                 {PROVENANCE.fetchedAt ? `Retrieved ${PROVENANCE.fetchedAt.slice(0, 10)}` : 'Pending'}
               </span>
             </Link>
+
+            <Link href="/data/network-growth/" className="data-card">
+              <span className="data-card-title">Network growth</span>
+              <span className="data-card-desc">
+                A dated station-opening timeline from the researched station records, with
+                every missing opening date left as TBC and grouped by line for checking.
+              </span>
+              <span className="data-card-meta">Opening chronology · 1996 to now</span>
+            </Link>
+
+            <Link href="/data/comparisons/" className="data-card">
+              <span className="data-card-title">Comparisons</span>
+              <span className="data-card-desc">
+                Lines by length and stations, operators by documented fleet-family records,
+                and every station by structure and latest imported ridership.
+              </span>
+              <span className="data-card-meta">Accessible tables · no JavaScript required</span>
+            </Link>
+
+            <Link href="/data/changelog/" className="data-card">
+              <span className="data-card-title">Changelog</span>
+              <span className="data-card-desc">
+                The project's run log as a reader-facing history of new research, corrections,
+                audits and data layers, regenerated at build time.
+              </span>
+              <span className="data-card-meta">Generated from docs/run-log.md</span>
+            </Link>
           </div>
 
           <h2 className="section-heading">Use it</h2>

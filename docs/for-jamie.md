@@ -1,7 +1,7 @@
 # For Jamie
 
 ## Active handoff - 24 August 2026
-Parts 0-8 are complete. Parts 9-15 remain.
+Parts 0-9 are complete. Parts 10-15 remain.
 Part 1 CI hard gate is green: Actions run 342 passed Tests, Build for Pages and deployment.
 Part 2 ships dated TRTC, NTMC and TYMC ridership data and panels.
 Part 3 ships the family/lot fleet roster; unit-level records remain TBC.
@@ -14,5 +14,9 @@ Zhongshan J1 completion, and codes for future-labelled Y-series sites.
 Part 8 ships the 994-word transport glossary and generator-backed 41-record conflicts index.
 Part 8 gates passed: build (1,969 pages), cite (5,245), research, claims (0 ASSERTED),
 facts, 219 unit tests, a11y, links, geometry, CVD and browser (1,464 pages, 540 screenshots).
-Both new pages were viewed at 320/400% and 1440px. Generated artifacts are not staged.
-Next: Part 9 static interactive network map, near-station joins, timeline, comparisons and changelog.
+Part 9 ships the progressive network map, station bus/YouBike joins, growth timeline,
+comparisons and generated changelog. It leaves 102 station opening dates TBC.
+Part 9 gates passed: build (1,972 pages), links (239,067, none broken), cite, research,
+claims (0 ASSERTED), facts, 219 unit tests, a11y, geometry, CVD and browser (1,467 pages,
+zero axe violations, 561 screenshots). New pages were viewed at 320/400% and 1440px.
+Generated artifacts are not staged. Next: Part 10 THSR.

@@ -25,7 +25,7 @@ import { NetworkRidershipPanel } from '@/components/RidershipPanel'
 import StationBadge from '@/components/StationBadge'
 import { NEUTRAL_LINE, branchTint } from '@/lib/lines'
 import { getInterchanges, getLineSummaries, getLineTrack } from '@/lib/network'
-import { PROVENANCE } from '@/lib/stations'
+import { getStationHref, PROVENANCE } from '@/lib/stations'
 
 export const metadata: Metadata = {
   // Without an explicit canonical this page inherits the root layout's,
@@ -129,28 +129,31 @@ export default function NetworkPage() {
     summary.stations
       .filter((s) => s.lat !== null && s.lon !== null)
       .map((s, i, all) => ({
+        id: `${summary.line.operator}:${s.code}`,
         code: s.code,
         name: s.name,
         nameZh: s.nameZh,
         lat: s.lat!,
         lon: s.lon!,
         colour: summary.line.map,
+        href: getStationHref(s.code, summary.line.operator) ?? undefined,
         isTerminus: i === 0 || i === all.length - 1,
         isInterchange: interchangeCodes.has(s.code),
         /*
-         * Deliberately NOT links here, although 24 of these stations have pages.
+         * Every catalogued station is a real link. Progressive pan-and-zoom
+         * enhancement separates dense dots on a small screen; the line table
+         * and interchange list remain ordinary text links as a second route.
          *
-         * At network scale the Wenhu stations BR02 and BR03 fall 8.3 viewBox
+         * At network scale the Wenhu stations BR02 and BR03 can be close together;
          * units apart — about 4 CSS px on a phone, 12 on a wide desktop. Their
-         * tap targets overlap several times over, so a tap could not reliably
-         * reach the station it was aimed at on any device. A control that looks
-         * interactive and cannot be operated accurately is worse than a plain
-         * dot: it invites a tap and then acts on something else.
+         * Pan-and-zoom makes the individual targets separable without removing
+         * the static links.
+         * The map also keeps a title on each dot, so hover and screen readers
+         * still identify stations.
          *
          * Every station on this page is still reachable at full size — from the
          * termini badges in the table and the interchange list below it, both of
-         * which are ordinary text links. The map keeps its <title> on each dot,
-         * so hovering and screen readers still name them.
+         * which are ordinary text links.
          */
       })),
   )

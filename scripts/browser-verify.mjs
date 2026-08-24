@@ -240,6 +240,9 @@ const PAGE_TYPES = [
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },
   { name: 'provenance', url: '/data/provenance/' },
+  { name: 'data-network-growth', url: '/data/network-growth/' },
+  { name: 'data-comparisons', url: '/data/comparisons/' },
+  { name: 'data-changelog', url: '/data/changelog/' },
   { name: 'about', url: '/about/' },
   { name: '404', url: '/no/such/page/' },
 ]

@@ -1,26 +1,33 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
+
+type MapView = { scale: number; x: number; y: number }
+
+const MIN_SCALE = 1
+const MAX_SCALE = 3
 
 /**
- * Makes map stations usable by touch without breaking them for anyone else.
+ * Progressive enhancement for geographic SVG maps.
  *
- * The stations are real links, so pointer, keyboard and screen reader access all
- * work with no JavaScript at all — hover and focus reveal the label in CSS, and
- * Enter follows the link. This adds one thing on top: on a touch device, the
- * first tap on a station selects it and opens a detail panel instead of
- * navigating immediately.
- *
- * Why that, rather than pan and zoom: both maps fit a phone at full width
- * without pinching, so zoom would solve a problem that does not exist, while
- * a hand-rolled pan implementation would fight the page's own scrolling. The
- * real touch problem is that a 4px dot is not a finger-sized target, and that is
- * solved in the SVG with a transparent 24px hit circle, not with gestures.
- *
- * Degrades to plain links if this never runs.
+ * The SVG remains a normal document with real station links when JavaScript is
+ * absent. Once hydrated, pointer dragging and the wheel provide pan and zoom;
+ * the buttons give the same controls to keyboard users. Station links still
+ * win over the gesture: a tap selects a station, while a drag moves the map.
  */
-export default function MapInteraction({ children }: { children: React.ReactNode }) {
+export default function MapInteraction({ children }: { children: ReactNode }) {
   const container = useRef<HTMLDivElement>(null)
+  const viewRef = useRef<MapView>({ scale: 1, x: 0, y: 0 })
+  const dragRef = useRef<{
+    pointerId: number
+    startX: number
+    startY: number
+    startView: MapView
+    moved: boolean
+  } | null>(null)
+  const suppressClick = useRef(false)
+  const [view, setView] = useState<MapView>({ scale: 1, x: 0, y: 0 })
+  const [enhanced, setEnhanced] = useState(false)
   const [selected, setSelected] = useState<{
     code: string
     name: string
@@ -32,25 +39,63 @@ export default function MapInteraction({ children }: { children: React.ReactNode
     const root = container.current
     if (!root) return
 
+    setEnhanced(true)
     let lastPointerWasTouch = false
 
+    const updateView = (next: MapView) => {
+      viewRef.current = next
+      setView(next)
+    }
+
     const onPointerDown = (event: PointerEvent) => {
+      if (!event.isPrimary || (event.target as Element | null)?.closest('.routemap-controls')) return
       lastPointerWasTouch = event.pointerType === 'touch' || event.pointerType === 'pen'
+      dragRef.current = {
+        pointerId: event.pointerId,
+        startX: event.clientX,
+        startY: event.clientY,
+        startView: viewRef.current,
+        moved: false,
+      }
+      root.setPointerCapture?.(event.pointerId)
+    }
+
+    const onPointerMove = (event: PointerEvent) => {
+      const drag = dragRef.current
+      if (!drag || drag.pointerId !== event.pointerId) return
+      const dx = event.clientX - drag.startX
+      const dy = event.clientY - drag.startY
+      if (!drag.moved && Math.hypot(dx, dy) < 5) return
+      drag.moved = true
+      event.preventDefault()
+      updateView({ scale: drag.startView.scale, x: drag.startView.x + dx, y: drag.startView.y + dy })
+    }
+
+    const onPointerUp = (event: PointerEvent) => {
+      const drag = dragRef.current
+      if (!drag || drag.pointerId !== event.pointerId) return
+      if (drag.moved) suppressClick.current = true
+      dragRef.current = null
+      root.releasePointerCapture?.(event.pointerId)
+    }
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Enter' || event.key === ' ') lastPointerWasTouch = false
     }
 
     const onClick = (event: MouseEvent) => {
       const target = (event.target as Element | null)?.closest('a.routemap-station')
       if (!(target instanceof SVGAElement) && !(target instanceof HTMLElement)) return
-      if (!target) return
+
+      if (suppressClick.current) {
+        event.preventDefault()
+        suppressClick.current = false
+        return
+      }
 
       const code = target.getAttribute('data-code') ?? ''
       const href = target.getAttribute('href') ?? ''
-      if (!code || !href) return
-
-      // Mouse and keyboard: behave like a link.
-      if (!lastPointerWasTouch) return
-
-      // Touch: first tap selects, second tap on the panel link navigates.
+      if (!code || !href || !lastPointerWasTouch) return
       if (selected?.code === code) return
 
       event.preventDefault()
@@ -62,32 +107,89 @@ export default function MapInteraction({ children }: { children: React.ReactNode
       })
     }
 
-    root.addEventListener('pointerdown', onPointerDown, true)
+    const onWheel = (event: WheelEvent) => {
+      event.preventDefault()
+      const rect = root.getBoundingClientRect()
+      const pointerX = event.clientX - rect.left
+      const pointerY = event.clientY - rect.top
+      const current = viewRef.current
+      const nextScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, current.scale * (event.deltaY < 0 ? 1.16 : 0.86)))
+      const ratio = nextScale / current.scale
+      updateView({
+        scale: nextScale,
+        x: pointerX - (pointerX - current.x) * ratio,
+        y: pointerY - (pointerY - current.y) * ratio,
+      })
+    }
+
+    root.addEventListener('pointerdown', onPointerDown)
+    root.addEventListener('pointermove', onPointerMove)
+    root.addEventListener('pointerup', onPointerUp)
+    root.addEventListener('pointercancel', onPointerUp)
+    root.addEventListener('keydown', onKeyDown)
     root.addEventListener('click', onClick)
+    root.addEventListener('wheel', onWheel, { passive: false })
     return () => {
-      root.removeEventListener('pointerdown', onPointerDown, true)
+      root.removeEventListener('pointerdown', onPointerDown)
+      root.removeEventListener('pointermove', onPointerMove)
+      root.removeEventListener('pointerup', onPointerUp)
+      root.removeEventListener('pointercancel', onPointerUp)
+      root.removeEventListener('keydown', onKeyDown)
       root.removeEventListener('click', onClick)
+      root.removeEventListener('wheel', onWheel)
     }
   }, [selected])
 
+  const adjustScale = (factor: number) => {
+    const root = container.current
+    const current = viewRef.current
+    const nextScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, current.scale * factor))
+    if (nextScale === current.scale) return
+    const rect = root?.getBoundingClientRect()
+    const cx = rect ? rect.width / 2 : 0
+    const cy = rect ? rect.height / 2 : 0
+    const ratio = nextScale / current.scale
+    const next = {
+      scale: nextScale,
+      x: cx - (cx - current.x) * ratio,
+      y: cy - (cy - current.y) * ratio,
+    }
+    viewRef.current = next
+    setView(next)
+  }
+
+  const reset = () => {
+    const next = { scale: 1, x: 0, y: 0 }
+    viewRef.current = next
+    setView(next)
+  }
+
   return (
-    <div className="routemap-interactive" ref={container}>
-      {children}
+    <div className={`routemap-interactive${enhanced ? ' is-enhanced' : ''}`} ref={container}>
+      {enhanced && (
+        <div className="routemap-controls" aria-label="Map controls">
+          <button type="button" onClick={() => adjustScale(1.25)} aria-label="Zoom in">+</button>
+          <button type="button" onClick={() => adjustScale(0.8)} aria-label="Zoom out">−</button>
+          <button type="button" onClick={reset} aria-label="Reset map view">Reset</button>
+          <span aria-live="polite">{Math.round(view.scale * 100)}%</span>
+        </div>
+      )}
+
+      <div
+        className="routemap-viewport"
+        style={{ transform: `translate(${view.x}px, ${view.y}px) scale(${view.scale})` }}
+      >
+        {children}
+      </div>
 
       {selected && (
         <div className="routemap-panel" role="status">
           <span className="routemap-panel-code">{selected.code}</span>
           <span className="routemap-panel-name">
             {selected.name}
-            {selected.zh && (
-              <span className="routemap-panel-zh" lang="zh-Hant">
-                {selected.zh}
-              </span>
-            )}
+            {selected.zh && <span className="routemap-panel-zh" lang="zh-Hant">{selected.zh}</span>}
           </span>
-          <a className="routemap-panel-go" href={selected.href}>
-            Open →
-          </a>
+          <a className="routemap-panel-go" href={selected.href}>Open →</a>
           <button
             className="routemap-panel-close"
             type="button"

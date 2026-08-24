@@ -116,6 +116,9 @@ test('the generated routes exported', () => {
     'data/stations/index.html',
     'data/line-colours/index.html',
     'data/provenance/index.html',
+    'data/network-growth/index.html',
+    'data/comparisons/index.html',
+    'data/changelog/index.html',
     'about/index.html',
   ]) {
     assert.ok(exists(rel), `${rel} was not exported`)
@@ -153,9 +156,10 @@ test('the expected number of pages was generated', () => {
     0,
   )
   // /, /rail/network, /rail/metro/stations, /data, /data/stations,
-  // /data/line-colours, /data/provenance, /data/sources, /about, /404,
+  // /data/line-colours, /data/provenance, /data/sources, /data/network-growth,
+  // /data/comparisons, /data/changelog, /about, /404,
   // /_not-found
-  const generated = 11
+  const generated = 14
   /* Bus route overlays live in a nested registry, so they are not part of
      getAllPages(). Count every built group's index page and its route pages
      here — one line per group would drift the moment a group is added, so

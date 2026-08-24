@@ -16462,6 +16462,48 @@ keyboard/tree probes and all representative print PDFs. The new page was
 visually checked at 320/400% and 1440px; generated audits and screenshots
 were restored and are not staged.
 
+# Run 126 - static network map, station joins and data explorer (24 August 2026)
+
+## Part 9 - progressive network exploration
+
+The audit added a progressive-enhancement network map: the existing linked SVG
+is the no-JavaScript baseline; after hydration it gains pointer/touch pan,
+bounded wheel zoom, reset controls, keyboard-operable controls, and a station
+panel while retaining real station links and line labels. Namespace-qualified
+station ids prevent the G-code collision between Taipei Metro and Taichung
+Metro. Reduced motion leaves the map without animated transitions.
+
+Every metro station page now has a build-time `Near this station` section.
+Bus entries come only from the curated exact-stop join data; YouBike entries
+are nearest-coordinate matches within 200 m from the committed TDX station
+snapshot. The panels expose the snapshot dates and source links, and explicitly
+do not claim live bike availability. The underlying TDX source is:
+
+- https://tdx.transportdata.tw/
+
+The data hub now has generated Network growth, Comparisons and Changelog
+pages. Network growth groups dates already present in the station research
+overlay from 1996 onward and leaves 102 stations as TBC where no opening date
+is sourced. Comparisons keep published, measured, and ridership values in
+separate columns; Changelog parses the top-level entries in this run log at
+build time. No new transport-history claim was researched for this unit; the
+joins and opening dates remain tied to committed TDX and research records.
+
+The 1996 timeline boundary is a presentation scope, not a claim that the
+network began in 1996; the earliest dated station record in the current overlay
+is later. Missing opening dates, complete operator fleet totals, and line-level
+ridership without a source remain TBC. No conflicts were resolved by the new
+comparison tables; each existing measurement remains labelled by its field.
+
+Verification: build generated 1,826 routes and postbuild checked 1,972 pages;
+the link audit found 239,067 internal links with no broken links; cite,
+research, claims (0 ASSERTED), facts, 219/219 unit tests, a11y (1,468 pages,
+no warnings), geometry and CVD passed. Browser verification was clean across
+1,467 pages, with zero axe violations, responsive reflow and keyboard/tree
+probes, 561 screenshots and representative print PDFs. The new map and data
+pages were viewed at 320/400% and 1440px; generated audits, screenshots and
+PDFs were restored and are not staged.
+
 # Run 124 - TOD and joint development index (24 August 2026)
 
 ## Part 7 - land, buildings, value allocation and disputes

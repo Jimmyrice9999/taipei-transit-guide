@@ -106,6 +106,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: absoluteUrl('/data/network-growth/'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: absoluteUrl('/data/comparisons/'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: absoluteUrl('/data/changelog/'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
   ]
 
   // Sections and page types, straight from the content folder.

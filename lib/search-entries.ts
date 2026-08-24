@@ -131,6 +131,9 @@ export function buildSearchIndex(): SearchIndex {
   entries.push({ t: 'The network', h: '/rail/network/', c: 'Index' })
   entries.push({ t: 'Stations', h: '/rail/metro/stations/', c: 'Index' })
   entries.push({ t: 'Data', h: '/data/', c: 'Section' })
+  entries.push({ t: 'Network growth timeline', h: '/data/network-growth/', c: 'Data' })
+  entries.push({ t: 'Network comparisons', h: '/data/comparisons/', c: 'Data' })
+  entries.push({ t: 'Changelog', h: '/data/changelog/', c: 'Data' })
   entries.push({ t: 'About', h: '/about/', c: 'Page' })
 
   /*

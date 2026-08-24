@@ -23,6 +23,7 @@ import HanLineSubset from '@/components/HanLineSubset'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
 import RidershipPanel from '@/components/RidershipPanel'
+import NearStation from '@/components/NearStation'
 import RouteMap from '@/components/RouteMap'
 import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
@@ -170,6 +171,7 @@ export default async function StationPage({ params }: Props) {
   const toc = [
     { id: 'overview', label: 'Overview', level: 2 as const },
     { id: 'location', label: 'Location', level: 2 as const },
+    { id: 'near-this-station', label: 'Near this station', level: 2 as const },
     ...(service.length > 0
       ? [{ id: 'first-and-last-trains', label: 'First and last trains', level: 2 as const }]
       : []),
@@ -772,6 +774,8 @@ export default async function StationPage({ params }: Props) {
             </dd>
           </div>
         </dl>
+
+        <NearStation station={station} references={stationReferences} />
 
         {service.length > 0 && (
           <>
