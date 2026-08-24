@@ -177,6 +177,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full project page for the Blue Line's route scope and implementation milestones.
+  - id: taichung-purple
+    title: Taichung Metro Purple Line project page
+    titleOriginal: 臺中市政府捷運工程局-捷運路網-屯區捷運環狀線（紫線）
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full project page for route scope, feasibility chronology and current central-review status.
+  - id: taichung-purple-july
+    title: Purple Line feasibility study under review
+    titleOriginal: 藍線開工、紫線接力！中市提前布局屯區捷運環狀線 打造完整捷運路網
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full July 2026 release for the Purple Line's rounded length, station count and estimated cost.
 ---
 
 ## How to read project status
@@ -218,6 +236,8 @@ so both descriptions are retained rather than silently reconciled.[^dorts-115-pl
 ## Approved or advancing extensions
 
 Taichung's Blue Line is documented separately as an approved project moving into route construction.[^taichung-blue] The full project page gives 24.78 km, 20 stations and one depot; current route contracts cover BC11 (B01–B03) and BC12 (B04–B08).[^taichung-blue] See the [Taichung Metro Blue Line project page](/rail/projects/taichung-blue-line/) for the dated approval and procurement record.
+
+Taichung's Purple Line remains a feasibility-stage project under central review.[^taichung-purple] Its full project page gives approximately 16.31 km and 16 planned stations, while the July 2026 release gives the estimated NT$690.87 billion cost.[^taichung-purple][^taichung-purple-july] See the [Taichung Metro Purple Line project page](/rail/projects/taichung-purple-line/) for its dated review chronology and route boundary.
 
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^dorts-east-contract]

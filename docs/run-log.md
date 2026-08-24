@@ -17224,3 +17224,47 @@ keyboard/accessibility probes including the new project type pass, zero axe
 violations across 1,849 pages, 673 screenshots and 86 print PDFs. The 320px and
 1440px Blue screenshots were inspected. Generated audit JSONs, screenshots and
 PDFs were restored and are not part of the commit.
+
+# Run 156 - Taichung Metro Purple Line feasibility project (25 August 2026)
+
+Part 12's fourth unit adds the Purple Line as a project page because the
+primary record is still a feasibility study rather than an operating line.
+The full Taichung Rapid Transit Systems Bureau project page establishes the
+preliminary approximately 16.31 km, 16-station elevated route, its Dali–
+Taiping–Beitun–Daqing/Green Line loop role, and a dated feasibility chronology:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142
+
+The bureau's full January and July 2026 releases establish the planned
+interchange context, the medium-capacity description, the approximately 16.3
+km rounded value, and the July estimate of NT$690.87bn total cost (NT$292.04bn
+central support; NT$398.83bn local share):
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1314
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549
+The current project page records Railway Bureau comments on 27 July 2026 and
+another city revision before resubmission. The whole-network page places Purple
+among medium-term feasibility studies:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C44
+
+TDX was probed live for TMRT on 25 August. It returned the operating Green Line
+only; no Purple project/operating record, station inventory, coordinates,
+geometry, facilities, timetable, ridership, contract, approval or opening date
+was published in the checked response. Those fields remain TBC. The page
+decision is deliberate: the primary records support one project page, not 16
+manufactured station stubs.
+
+Conflicts are retained: the full project page says approximately 16.31 km,
+while the July release says approximately 16.3 km; the sources do not explain
+whether this is rounding or a planning revision. January and July releases say
+the revised report was resubmitted and under central review; the later current
+page records 27 July comments and revision before another resubmission. No
+corpus claim was contradicted in this unit.
+
+The Purple page is 575 body words and the updated project-status page 855.
+Gates: build generated 2,580 pages and postbuild checked 2,738; cite 6,987
+resolved citations, research 137 files/580 checked failures, conflicts current,
+claims 20,488 sourced/4,455 TBC/0 ASSERTED; unit tests 231/231; a11y 1,851
+pages; internal links 421,315 with no breaks or orphans. Browser verification
+is clean: no reflow or spine findings, curated keyboard/ARIA probes pass, zero
+axe violations across 1,850 pages, 680 screenshots and 97 print PDFs. The
+320px and 1440px Purple screenshots were inspected. Generated audit JSONs,
+screenshots and PDFs were restored and are not part of the commit.

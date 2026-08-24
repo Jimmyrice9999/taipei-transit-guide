@@ -1245,6 +1245,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The operator publishes the four-car formation, 80 km/h maximum and approximately 386 passengers per Bombardier train at five standing passengers per square metre."
+  - id: "rail-projects-taichung-purple-line-tcrt-purple"
+    title: "Tun District MRT Loop Line (Purple Line) project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-屯區捷運環狀線（紫線）"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project page for purpose, preliminary route, 16.31 km/16-station/elevated scope, complete feasibility chronology and 27 July 2026 review status."
+  - id: "rail-projects-taichung-purple-line-tcrt-purple-july"
+    title: "Purple Line feasibility study under review"
+    titleOriginal: "〖新聞〗藍線開工、紫線接力！中市提前布局屯區捷運環狀線 打造完整捷運路網"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full 3 July 2026 release for 16.3 km/16 elevated stations/medium-capacity description, cost split and central-review status."
   - id: "rail-projects-tod-joint-development-ntpc-meihe-news"
     title: "Xizhou construction and Meihe City review"
     titleOriginal: "溪洲7月底前動工 美河市歷15年依法審議"
@@ -2603,6 +2621,21 @@ being chosen.
 - [New medium-capacity EMUs for the Neihu Line — door control and accessible warnings](https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page41.html) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-dorts-doors]
 - [New medium-capacity EMUs for the Neihu Line — contract, formation and principal specification](https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page30.html) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-dorts-design-spec]
 - [Taipei Metro network introduction — Wenhu Line vehicles](https://www.metro.taipei/cp.aspx?n=ccf30033e6ed8008&s=405306CC7ACD137B) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-trtc-network]
+
+## Taichung Metro Purple Line — Published scope and conflicts
+
+Discussed on [Taichung Metro Purple Line](/rail/projects/taichung-purple-line/) in the source page's “Published scope and conflicts” section.[^rail-projects-taichung-purple-line-tcrt-purple]
+
+### Published scope and conflicts
+
+The current project page gives a preliminary length of approximately 16.31 km, 16 stations and an elevated form.[^rail-projects-taichung-purple-line-tcrt-purple] The July 2026 release describes the same preliminary project as approximately 16.3 km, with 16 elevated stations and a medium-capacity metro system.[^rail-projects-taichung-purple-line-tcrt-purple-july] Both values are retained because the sources do not explain whether the 0.01 km difference is rounding or a small planning revision.[^rail-projects-taichung-purple-line-tcrt-purple][^rail-projects-taichung-purple-line-tcrt-purple-july]
+
+The July release gives a total estimated cost of NT$690.87 billion, with estimated central support of NT$292.04 billion and a local share of NT$398.83 billion.[^rail-projects-taichung-purple-line-tcrt-purple-july] These are estimates attached to a feasibility-stage project, not a construction contract value or a final approved funding split.[^rail-projects-taichung-purple-line-tcrt-purple-july]
+
+#### Sources for this entry
+
+- [Tun District MRT Loop Line (Purple Line) project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-taichung-purple-line-tcrt-purple]
+- [Purple Line feasibility study under review](https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-taichung-purple-line-tcrt-purple-july]
 
 ## TOD and joint development — Meihe City and the legal dispute
 

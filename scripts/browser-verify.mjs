@@ -188,6 +188,7 @@ const PAGE_TYPES = [
      construction/proposal tables and conflict notes. */
   { name: 'rail-project-status', url: '/rail/projects/project-status/' },
   { name: 'rail-project-taichung-blue', url: '/rail/projects/taichung-blue-line/' },
+  { name: 'rail-project-taichung-purple', url: '/rail/projects/taichung-purple-line/' },
   { name: 'rail-tod-joint-development', url: '/rail/projects/tod-joint-development/' },
   { name: 'rail-operators', url: '/rail/operators/' },
   { name: 'rail-operator-trtc', url: '/rail/operators/trtc/' },
