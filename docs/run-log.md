@@ -16180,3 +16180,26 @@ five full-fetch failures for the official schema-example XML endpoints with
 their HTTP reason and URL, as required; no search snippet was promoted to a
 source. This is the final v3 groundwork unit and was committed/pushed as Run
 117 after the full gates passed.
+
+# Run 118 - verify ridership publication boundaries (24 August 2026)
+
+## Part 2 - ridership source audit
+
+The live primary-source audit is recorded in
+`docs/research/rail/metro/ridership.md`. TRTC's full ridership index exposes
+monthly per-station ODS files beginning in 2015 on the checked page, a daily /
+hourly station dataset through its API catalogue, and a separate monthly
+cross-system series reaching back to 1996. NTMC's operator page exposes
+monthly whole-system files split by Danhai, Ankeng and Circular totals, and
+TYMC exposes both current per-station entry/exit PDFs and whole-system daily
+monthly PDFs. MOTC Table 2-10 supplies operator-level monthly statistics;
+TDX supplies the structural station and line joins rather than historical
+ridership.
+
+The report publishes the non-equivalences between station, entry/exit,
+operator-total and handover-era measures. It records three checked retrieval
+failures: the text browser's unsupported ODS MIME type (the official file was
+then fetched and parsed locally), a timeout on the New Taipei statistics link,
+and one failed MOTC listing render (the full official PDF was fetched instead).
+No figure was promoted from a snippet, and the 2018-2019 TRTC station gap and
+NTMC station-level gap remain TBC pending the named primary sources.
