@@ -17045,3 +17045,19 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,418 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the twelve-station
 Neiwan Branch (NW).
+
+# Run 149 - TRA Neiwan branch (24 August 2026)
+
+The twentieth TRA content unit adds the complete twelve-station Neiwan Branch
+(NW), including its line page and station pages. The first postbuild pass
+found 讚 in the TRA index, station index and Jiuzantou page; regenerating the
+content subset resolved the check.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the existing TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,440 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the 18-station
+TRA Coast Line (WL-C).

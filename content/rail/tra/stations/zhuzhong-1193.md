@@ -1,7 +1,7 @@
 ---
 title: "Zhuzhong — Taiwan Railways"
 summary: "Zhuzhong (竹中), TDX station 1193, in 新竹縣; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+order: 4
 operator: TRA
 updated: 2026-08-24
 facts:
@@ -32,12 +32,12 @@ specs:
     value: "121.03141"
     unit: degrees
     source: tdx-tra-station
-  - label: "Liujia Line sequence"
-    value: 1
+  - label: "Neiwan Line sequence"
+    value: 4
     unit: position
     source: tdx-tra-line
-  - label: "Liujia Line travelled distance"
-    value: "0"
+  - label: "Neiwan Line travelled distance"
+    value: "6.5"
     unit: km
     source: tdx-tra-line
 sources:
@@ -85,9 +85,9 @@ Zhuzhong (竹中) is station ID 1193 in the TDX Station response retrieved on 20
 
 The address field is 310019新竹縣竹東鎮頭重里竹中路 145 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
-## Position on Liujia Line
+## Position on Neiwan Line
 
-On the Liujia Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Liujia (1194).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Neiwan Line StationOfLine record, this station has sequence 4 and a supplied travelled distance of 6.5 km.[^tdx-tra-line] The preceding member is Xinzhuang (1192) and the following member is Shangyuan (1201).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
 The current line membership list for this station is Liujia Line (LJ), Neiwan Line (NW).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 

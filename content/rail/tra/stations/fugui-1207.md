@@ -1,43 +1,43 @@
 ---
-title: "North Hsinchu — Taiwan Railways"
-summary: "North Hsinchu (北新竹), TDX station 1190, in 新竹市; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Fugui — Taiwan Railways"
+summary: "Fugui (富貴), TDX station 1207, in 新竹縣; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 11
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "1190"
+    value: "1207"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "北新竹"
+    value: "富貴"
     source: tdx-tra-station
   - label: "Administrative city"
-    value: "新竹市"
+    value: "新竹縣"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "東區"
+    value: "橫山鄉"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "4"
+    value: "5"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Neiwan Line (NW); Western Main Line (WL)"
+    value: "Neiwan Line (NW)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "24.80875"
+    value: "24.71551"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.98381"
+    value: "121.16743"
     unit: degrees
     source: tdx-tra-station
   - label: "Neiwan Line sequence"
-    value: 1
+    value: 11
     unit: position
     source: tdx-tra-line
   - label: "Neiwan Line travelled distance"
-    value: "0"
+    value: "24.3"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-North Hsinchu (北新竹) is station ID 1190 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Fugui (富貴) is station ID 1207 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 5 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 300002新竹市 東區東園里中華路一段 291 之 2 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 312003新竹縣橫山鄉豐田村中山街一段 (無站房).[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Neiwan Line
 
-On the Neiwan Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Qianjia (1191).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Neiwan Line StationOfLine record, this station has sequence 11 and a supplied travelled distance of 24.3 km.[^tdx-tra-line] The preceding member is Hexing (1206) and the following member is Neiwan (1208).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Neiwan Line (NW), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Neiwan Line (NW).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 24.80875 and longitude 120.98381.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 24.71551 and longitude 121.16743.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 
