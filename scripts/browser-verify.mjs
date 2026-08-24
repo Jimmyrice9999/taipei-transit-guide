@@ -158,6 +158,9 @@ const PAGE_TYPES = [
   { name: 'station-a1', url: '/rail/metro/stations/a1/' },
   { name: 'line-airport-mrt', url: '/rail/metro/lines/airport-mrt/' },
   { name: 'stock-val256', url: '/rail/metro/rolling-stock/val256/' },
+  /* Run 119: the family/lot roster table is the first rolling-stock page
+     whose primary purpose is a wide, horizontally scrollable data table. */
+  { name: 'stock-fleet-roster', url: '/rail/metro/rolling-stock/fleet-roster/' },
   { name: 'depot-muzha', url: '/rail/metro/depots/muzha-depot/' },
   /*
    * Run 20 built these three photo-card grids and never added any of them

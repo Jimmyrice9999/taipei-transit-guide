@@ -16247,3 +16247,49 @@ passed. Browser reflow/keyboard/tree/axe/print checks were clean; axe found
 zero violations across 1,456 pages and the expanded matrix produced 491
 screenshots. Generated audit JSONs and tracked browser artifacts were restored;
 new screenshots/prints remain untracked and were not staged.
+
+# Run 120 - fleet roster evidence and page design (24 August 2026)
+
+## Part 3 - evidence boundary and roster table
+
+The live primary-source review establishes a family/lot roster, not a truthful
+individual-set register. DORTS supplies C301/C321/C341/C371/C381 procurement
+lots, counts and delivery milestones; Taiwan Rolling Stock supplies the
+partial C371 and C381 car-number ranges; TRTC supplies selected overhaul and
+renewal work. NTMC's current pages supply 15 Danhai + 15 Ankeng light-rail
+trains, 17 Circular Line trains and 29 Sanying trains, with builders and
+formations. Sources fetched in full include:
+
+- https://data.taipei/api/dataset/3812b03c-7e72-40c7-85cf-c67df9162f7e/resource/9b9c9bf1-b6e4-43b7-9d18-f2818b5d1718/download
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page138.html
+- https://ebook.dorts.gov.taipei/ebook/no41/files/basic-html/page194.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page249.html
+- https://www.trsc.com.tw/train/tran-58acf37b4bd8a
+- https://www.trsc.com.tw/train/tran-58ace453a7ad8
+- https://www.ntmetro.com.tw/basic/?node=10012
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=19
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=864
+- https://www.ntmetro.com.tw/basic/?mode=detail&node=843
+
+`content/rail/metro/rolling-stock/fleet-roster.md` is the shipped table. It
+keeps known identifiers (EMU 01/02, cars 401-418 and 431-466, cars 515-546 and
+547-548, plus the C381 delivery sequence) without implying those are complete
+set registers. Current unit-to-line/depot allocation, full serial ranges,
+withdrawal and preservation remain TBC. NTMC's 2025 release records three
+Ankeng trains temporarily at Danhai Depot for compatibility validation; this
+is published as a temporary movement, not a permanent allocation.
+
+Conflicts retained: C301's detailed 22-train/132-car record versus a later
+DORTS article's 21-train/132-car parenthetical; C381's 23-train base order
+versus its separate one-train Dingpu add-on; and historical procurement line,
+depot function and temporary validation location are kept as different fields.
+Research is in `docs/research/rail/metro/fleet-rosters.md`, with four checked
+and failed records dated 2026-08-24.
+
+Verification: build generated 1,810 routes and postbuild checked 1,957 pages;
+cite, research, claims (0 ASSERTED), facts and all 219 unit tests passed.
+Browser verification passed: 1,457 pages reflowed at 640/320, keyboard and
+accessibility-tree probes passed for the expanded matrix, axe found zero
+violations, 498 screenshots and all print PDFs completed. The new roster was
+visually checked at 320/400% and 1440px. Generated browser JSON/audit files and
+screenshots/prints remain untracked and are not staged.
