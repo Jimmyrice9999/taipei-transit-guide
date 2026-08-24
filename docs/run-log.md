@@ -17093,3 +17093,24 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,518 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: resolve the
 remaining TRA route and historical architecture gaps before further expansion.
+
+# Run 152 - TRA current-route coverage and post-Part verification (24 August 2026)
+
+Part 11 current-route coverage is complete for all 12 TDX line IDs: WL, EL,
+CZ, JJ, LJ, NW, PX, SA, SH, SL, SU and WL-C. The committed TDX snapshot holds
+245 stations; the operator report remains the conflicting 241-station
+end-of-2023 value. The primary sources remain the TDX Station, StationOfLine
+and Shape responses, TRA route-construction history, timetable and statistical
+report pages recorded in `docs/research/rail/tra.md`.
+
+The code architecture and tests preserve temporal names, branches, closures,
+gauge-by-segment and geometry versions. TDX Route and StationOfRoute returned
+404 and remain recorded as checked failures; aliases, gauge chronology,
+ridership, facilities and closed-line inventory remain TBC rather than being
+invented. No new secondary source was promoted.
+
+Post-Part gates: build 2,518 pages with Han subsets complete; cite, research,
+claims 0 ASSERTED, conflicts check and unit 226/226 pass. Browser verification
+is clean: 1,740-page axe pass with zero violations, 596 screenshots, all
+curated keyboard/accessibility probes, and all print PDFs. Generated audit
+JSONs, screenshots and PDFs were restored and are not part of the commit.
