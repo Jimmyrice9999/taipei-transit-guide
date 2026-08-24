@@ -22,6 +22,7 @@ import Figure from '@/components/Figure'
 import HanLineSubset from '@/components/HanLineSubset'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
+import RidershipPanel from '@/components/RidershipPanel'
 import RouteMap from '@/components/RouteMap'
 import RichText from '@/components/RichText'
 import StationBadge from '@/components/StationBadge'
@@ -165,6 +166,7 @@ export default async function StationPage({ params }: Props) {
     ...(station.prose?.length
       ? [{ id: 'station-context', label: 'Station context', level: 2 as const }]
       : []),
+    { id: 'ridership', label: 'Ridership', level: 2 as const },
     ...((station.research || station.sources.length > 0)
       ? [{ id: 'references', label: 'References', level: 2 as const }]
       : []),
@@ -794,6 +796,8 @@ export default async function StationPage({ params }: Props) {
             </p>
           </div>
         )}
+
+        <RidershipPanel station={station} />
 
         {/*
           ── Run 51, part 3: the diagram follows the content ────────────────────

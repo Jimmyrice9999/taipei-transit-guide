@@ -152,6 +152,11 @@ const PAGE_TYPES = [
    */
   { name: 'station-y07', url: '/rail/metro/stations/y07/' },
   { name: 'station-k01', url: '/rail/metro/stations/k01/' },
+  /* Run 118: ridership adds a second operator data shape. A1 exercises
+     TYMC's station entry/exit report, while the Airport MRT line exercises a
+     published line total alongside the TRTC and NTMC variants above. */
+  { name: 'station-a1', url: '/rail/metro/stations/a1/' },
+  { name: 'line-airport-mrt', url: '/rail/metro/lines/airport-mrt/' },
   { name: 'stock-val256', url: '/rail/metro/rolling-stock/val256/' },
   { name: 'depot-muzha', url: '/rail/metro/depots/muzha-depot/' },
   /*

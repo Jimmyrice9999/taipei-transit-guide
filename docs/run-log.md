@@ -16203,3 +16203,47 @@ then fetched and parsed locally), a timeout on the New Taipei statistics link,
 and one failed MOTC listing render (the full official PDF was fetched instead).
 No figure was promoted from a snippet, and the 2018-2019 TRTC station gap and
 NTMC station-level gap remain TBC pending the named primary sources.
+
+# Run 119 - build the ridership data layer and page panels (24 August 2026)
+
+## Part 2 - data and presentation
+
+The committed data layer now contains 13 months of TRTC per-station entry and
+exit ODS reductions (July 2025–July 2026), 13 months of TYMC per-station PDF
+entry/exit reductions (July 2025–July 2026), and ten months of NTMC ODS station
+rows and operator line subtotals (September 2025–June 2026). The importers are
+`scripts/import-trtc-ridership.ps1`, `scripts/import-tymc-ridership.py` and
+`scripts/import-ntmc-ridership.py`; source URLs and retrieval date are retained
+inside `data/ridership/*.json`. TDX remains the identity/sequence join.
+
+Station pages now show the latest dated movement, entry/exit dimensions, rank
+within the line, an SVG trend and the same values in a visible table. Line pages
+show published NTMC/TYMC line totals and a truthful TBC boundary for TRTC, whose
+checked source does not separate the four lines. `/rail/network/` shows the
+three operator series separately; it does not deduplicate transfers into an
+invented network total. Browser representatives include TYMC A1 and Airport
+MRT line pages.
+
+Primary sources fetched in full: TRTC ridership index and API catalogue
+(https://english.metro.taipei/cp.aspx?n=C702FF0562802D53;
+https://www.metro.taipei/cp.aspx?n=BDEB860F2BE3E249), NTMC statistics
+(https://www.ntmetro.com.tw/basic/?node=10145), TYMC statistics
+(https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html), MOTC
+Table 2-10 PDF
+(https://www.motc.gov.tw/ch/app/data/doc?detailNo=1&id=580&module=mebook&serno=202410140000&type=s),
+and TDX API documentation
+(https://tdx.transportdata.tw/api-service/swagger/basic/268fc230-2e04-471b-a728-a726167c1cfc).
+
+Conflicts retained: TRTC station versus cross-network scope; TYMC entry/exit
+versus system exit total; NTMC system values versus manual statistics and
+entry/exit; and MOTC's Circular Line operator handover. TBC: older months have
+not yet been imported, and the New Taipei statistics portal link timed out.
+`npm run research` is clean after correcting the report's earlier false claim
+that TRTC lacked 2018–2019 station links and NTMC lacked station rows.
+
+Verification: build generated 1,808 routes and 1,954 postbuild pages; cite,
+facts, 219 unit tests, a11y (1,457 pages), research and browser verification
+passed. Browser reflow/keyboard/tree/axe/print checks were clean; axe found
+zero violations across 1,456 pages and the expanded matrix produced 491
+screenshots. Generated audit JSONs and tracked browser artifacts were restored;
+new screenshots/prints remain untracked and were not staged.

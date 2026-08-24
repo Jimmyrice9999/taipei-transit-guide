@@ -1,0 +1,3516 @@
+{
+  "retrieved": "2026-08-24",
+  "currentPeriod": "2026-06",
+  "source": {
+    "id": "ntmc-system-ods",
+    "title": "Monthly whole-system passenger traffic",
+    "titleOriginal": "全系統運量統計",
+    "publisher": "New Taipei Metro Corporation",
+    "publisherOriginal": "新北大眾捷運股份有限公司",
+    "indexUrl": "https://www.ntmetro.com.tw/basic/?node=10145",
+    "accessed": "2026-08-24",
+    "kind": "primary",
+    "measure": "The operator's monthly report publishes entry and exit station-day rows and line subtotals. Station value is entry plus exit movement; network and line values use exit counts, with both dimensions retained.",
+    "files": [
+      {
+        "period": "2026-06",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA3MjIxMDI1MTQ(3D.ods",
+        "title": "115年6月全系統運量統計.ods"
+      },
+      {
+        "period": "2026-05",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA3MDkwNTAwMzg(3D.ods",
+        "title": "115年5月全系統運量統計.ods"
+      },
+      {
+        "period": "2026-04",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NOaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA1MjYxMDIxMzQ(3D.ods",
+        "title": "115年4月全系統運量統計.ods"
+      },
+      {
+        "period": "2026-03",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0M(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA0MjMwMjE5MzY(3D.ods",
+        "title": "115年3月全系統運量統計.ods"
+      },
+      {
+        "period": "2026-02",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0MuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjAzMjMwMTM1NTI(3D.ods",
+        "title": "115年2月全系統運量統計.ods"
+      },
+      {
+        "period": "2026-01",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0MeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjAzMDUwNDA5MTk(3D.ods",
+        "title": "115年1月全系統運量統計.ods"
+      },
+      {
+        "period": "2025-12",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTLmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjYwMTI3MDIyMzQ4.ods",
+        "title": "114年12月全系統運量統計.ods"
+      },
+      {
+        "period": "2025-11",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTHmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjUxMjIyMDMxNTQz.ods",
+        "title": "114年11月全系統運量統計.ods"
+      },
+      {
+        "period": "2025-10",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTDmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjUxMTE4MTAyNDU4.ods",
+        "title": "114年10月全系統運量統計.ods"
+      },
+      {
+        "period": "2025-09",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0OeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTEwMjAwMjE0NDg(3D.ods",
+        "title": "114年9月全系統運量統計.ods"
+      }
+    ]
+  },
+  "stations": [
+    {
+      "operator": "NTMC",
+      "code": "K01",
+      "line": "K",
+      "name": "K01",
+      "nameZh": "雙城站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 26614,
+          "entry": 12022,
+          "exit": 14592,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 25986,
+          "entry": 11740,
+          "exit": 14246,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 25344,
+          "entry": 11368,
+          "exit": 13976,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 24978,
+          "entry": 11200,
+          "exit": 13778,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 25282,
+          "entry": 11190,
+          "exit": 14092,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 23306,
+          "entry": 10624,
+          "exit": 12682,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 25894,
+          "entry": 11482,
+          "exit": 14412,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 26894,
+          "entry": 12154,
+          "exit": 14740,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 27420,
+          "entry": 12116,
+          "exit": 15304,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 24762,
+          "entry": 10956,
+          "exit": 13806,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K02",
+      "line": "K",
+      "name": "K02",
+      "nameZh": "玫瑰中國城站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 53162,
+          "entry": 24082,
+          "exit": 29080,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 54986,
+          "entry": 25054,
+          "exit": 29932,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 56232,
+          "entry": 25590,
+          "exit": 30642,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 59668,
+          "entry": 27310,
+          "exit": 32358,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 56620,
+          "entry": 26230,
+          "exit": 30390,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 45906,
+          "entry": 21546,
+          "exit": 24360,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 60854,
+          "entry": 27680,
+          "exit": 33174,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 57796,
+          "entry": 26312,
+          "exit": 31484,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 59054,
+          "entry": 26864,
+          "exit": 32190,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 56696,
+          "entry": 25280,
+          "exit": 31416,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K03",
+      "line": "K",
+      "name": "K03",
+      "nameZh": "台北小城站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 26088,
+          "entry": 14466,
+          "exit": 11622,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 26218,
+          "entry": 14458,
+          "exit": 11760,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 26868,
+          "entry": 14908,
+          "exit": 11960,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 29488,
+          "entry": 16252,
+          "exit": 13236,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 25870,
+          "entry": 14192,
+          "exit": 11678,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 15022,
+          "entry": 8240,
+          "exit": 6782,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 29842,
+          "entry": 16738,
+          "exit": 13104,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 27008,
+          "entry": 15252,
+          "exit": 11756,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 27324,
+          "entry": 15394,
+          "exit": 11930,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 26182,
+          "entry": 14878,
+          "exit": 11304,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K04",
+      "line": "K",
+      "name": "K04",
+      "nameZh": "耕莘安康院區站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 36034,
+          "entry": 16910,
+          "exit": 19124,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 36580,
+          "entry": 17048,
+          "exit": 19532,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 37350,
+          "entry": 17502,
+          "exit": 19848,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 39916,
+          "entry": 18920,
+          "exit": 20996,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 38828,
+          "entry": 18614,
+          "exit": 20214,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 30958,
+          "entry": 15084,
+          "exit": 15874,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 39838,
+          "entry": 19008,
+          "exit": 20830,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 38442,
+          "entry": 18108,
+          "exit": 20334,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 40526,
+          "entry": 19196,
+          "exit": 21330,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 37550,
+          "entry": 17662,
+          "exit": 19888,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K05",
+      "line": "K",
+      "name": "K05",
+      "nameZh": "景文科大站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 57002,
+          "entry": 28260,
+          "exit": 28742,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 73310,
+          "entry": 37204,
+          "exit": 36106,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 78978,
+          "entry": 40130,
+          "exit": 38848,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 83846,
+          "entry": 42216,
+          "exit": 41630,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 60430,
+          "entry": 29752,
+          "exit": 30678,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 40482,
+          "entry": 19848,
+          "exit": 20634,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 90406,
+          "entry": 45318,
+          "exit": 45088,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 83706,
+          "entry": 42004,
+          "exit": 41702,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 80882,
+          "entry": 40148,
+          "exit": 40734,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 71506,
+          "entry": 35198,
+          "exit": 36308,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K06",
+      "line": "K",
+      "name": "K06",
+      "nameZh": "安康站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 69994,
+          "entry": 32662,
+          "exit": 37332,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 71288,
+          "entry": 33488,
+          "exit": 37800,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 74086,
+          "entry": 34964,
+          "exit": 39122,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 77052,
+          "entry": 36304,
+          "exit": 40748,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 70910,
+          "entry": 33490,
+          "exit": 37420,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 54654,
+          "entry": 25940,
+          "exit": 28714,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 77096,
+          "entry": 36512,
+          "exit": 40584,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 73056,
+          "entry": 34572,
+          "exit": 38484,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 75104,
+          "entry": 35700,
+          "exit": 39404,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 71294,
+          "entry": 33602,
+          "exit": 37692,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K07",
+      "line": "K",
+      "name": "K07",
+      "nameZh": "陽光運動公園站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 47404,
+          "entry": 22274,
+          "exit": 25130,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 48922,
+          "entry": 22858,
+          "exit": 26064,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 53654,
+          "entry": 24866,
+          "exit": 28788,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 55598,
+          "entry": 26480,
+          "exit": 29118,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 55798,
+          "entry": 26656,
+          "exit": 29142,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 48346,
+          "entry": 22990,
+          "exit": 25356,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 57322,
+          "entry": 27152,
+          "exit": 30170,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 52758,
+          "entry": 24678,
+          "exit": 28080,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 55124,
+          "entry": 25842,
+          "exit": 29282,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 52874,
+          "entry": 25250,
+          "exit": 27624,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K08",
+      "line": "K",
+      "name": "K08",
+      "nameZh": "新和國小站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 88952,
+          "entry": 41540,
+          "exit": 47412,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 93470,
+          "entry": 43712,
+          "exit": 49758,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 95496,
+          "entry": 44724,
+          "exit": 50772,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 100102,
+          "entry": 47444,
+          "exit": 52658,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 93876,
+          "entry": 44058,
+          "exit": 49818,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 77152,
+          "entry": 37054,
+          "exit": 40098,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 97766,
+          "entry": 45846,
+          "exit": 51920,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 94468,
+          "entry": 43976,
+          "exit": 50492,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 99228,
+          "entry": 46378,
+          "exit": 52850,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 97600,
+          "entry": 45582,
+          "exit": 52018,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "K09",
+      "line": "K",
+      "name": "K09",
+      "nameZh": "十四張站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 298704,
+          "entry": 159858,
+          "exit": 138846,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 322568,
+          "entry": 171276,
+          "exit": 151292,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 334820,
+          "entry": 177404,
+          "exit": 157416,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 351298,
+          "entry": 185226,
+          "exit": 166072,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 320760,
+          "entry": 170142,
+          "exit": 150618,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 259218,
+          "entry": 136452,
+          "exit": 122766,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 356008,
+          "entry": 188230,
+          "exit": 167778,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 337054,
+          "entry": 178506,
+          "exit": 158548,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 347526,
+          "entry": 184480,
+          "exit": 163046,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 330982,
+          "entry": 176524,
+          "exit": 154458,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB01",
+      "line": "LB",
+      "name": "LB01",
+      "nameZh": "頂埔站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 31024,
+          "entry": 17118,
+          "exit": 13906,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB02",
+      "line": "LB",
+      "name": "LB02",
+      "nameZh": "媽祖田站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 2216,
+          "entry": 1110,
+          "exit": 1106,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB03",
+      "line": "LB",
+      "name": "LB03",
+      "nameZh": "長壽山站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 842,
+          "entry": 442,
+          "exit": 400,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB04",
+      "line": "LB",
+      "name": "LB04",
+      "nameZh": "橫溪站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 1298,
+          "entry": 636,
+          "exit": 662,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB05",
+      "line": "LB",
+      "name": "LB05",
+      "nameZh": "龍埔站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 1306,
+          "entry": 636,
+          "exit": 670,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB06",
+      "line": "LB",
+      "name": "LB06",
+      "nameZh": "三峽站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 12644,
+          "entry": 5868,
+          "exit": 6776,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB07",
+      "line": "LB",
+      "name": "LB07",
+      "nameZh": "臺北大學站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 12938,
+          "entry": 6544,
+          "exit": 6394,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB08",
+      "line": "LB",
+      "name": "LB08",
+      "nameZh": "鶯歌車站站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 13778,
+          "entry": 6970,
+          "exit": 6808,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB09",
+      "line": "LB",
+      "name": "LB09",
+      "nameZh": "陶瓷老街站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 9074,
+          "entry": 4436,
+          "exit": 4638,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB10",
+      "line": "LB",
+      "name": "LB10",
+      "nameZh": "國華站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 3662,
+          "entry": 1878,
+          "exit": 1784,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB11",
+      "line": "LB",
+      "name": "LB11",
+      "nameZh": "永吉公園站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 3634,
+          "entry": 1830,
+          "exit": 1804,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "LB12",
+      "line": "LB",
+      "name": "LB12",
+      "nameZh": "鶯桃福德站",
+      "periods": [
+        {
+          "period": "2026-06",
+          "value": 11862,
+          "entry": 5904,
+          "exit": 5958,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V01",
+      "line": "V",
+      "name": "V01",
+      "nameZh": "紅樹林站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 891646,
+          "entry": 498812,
+          "exit": 392834,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 911904,
+          "entry": 506918,
+          "exit": 404986,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 933982,
+          "entry": 517096,
+          "exit": 416886,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 992418,
+          "entry": 551674,
+          "exit": 440744,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 905848,
+          "entry": 500962,
+          "exit": 404886,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 764232,
+          "entry": 418540,
+          "exit": 345692,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 981060,
+          "entry": 543594,
+          "exit": 437466,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 982248,
+          "entry": 549612,
+          "exit": 432636,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 1136822,
+          "entry": 640998,
+          "exit": 495824,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 972878,
+          "entry": 541688,
+          "exit": 431190,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V02",
+      "line": "V",
+      "name": "V02",
+      "nameZh": "竿蓁林站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 119988,
+          "entry": 54122,
+          "exit": 65866,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 122614,
+          "entry": 55936,
+          "exit": 66678,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 124338,
+          "entry": 56532,
+          "exit": 67806,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 129782,
+          "entry": 59230,
+          "exit": 70552,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 120490,
+          "entry": 54892,
+          "exit": 65598,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 101400,
+          "entry": 46328,
+          "exit": 55072,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 125592,
+          "entry": 57058,
+          "exit": 68534,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 121082,
+          "entry": 55210,
+          "exit": 65872,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 127614,
+          "entry": 58076,
+          "exit": 69538,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 122776,
+          "entry": 55574,
+          "exit": 67202,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V03",
+      "line": "V",
+      "name": "V03",
+      "nameZh": "淡金鄧公站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 11038,
+          "entry": 5436,
+          "exit": 5602,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 10932,
+          "entry": 5432,
+          "exit": 5500,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 10852,
+          "entry": 5424,
+          "exit": 5428,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 12892,
+          "entry": 6598,
+          "exit": 6294,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 12784,
+          "entry": 6290,
+          "exit": 6494,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 19404,
+          "entry": 9340,
+          "exit": 10064,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 15492,
+          "entry": 7616,
+          "exit": 7876,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 11944,
+          "entry": 5844,
+          "exit": 6100,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 11300,
+          "entry": 5646,
+          "exit": 5654,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 12190,
+          "entry": 5896,
+          "exit": 6294,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V04",
+      "line": "V",
+      "name": "V04",
+      "nameZh": "淡江大學站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 86422,
+          "entry": 37080,
+          "exit": 49342,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 94430,
+          "entry": 41664,
+          "exit": 52766,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 93320,
+          "entry": 40858,
+          "exit": 52462,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 98586,
+          "entry": 43170,
+          "exit": 55416,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 72068,
+          "entry": 32618,
+          "exit": 39450,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 53526,
+          "entry": 23788,
+          "exit": 29738,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 95954,
+          "entry": 41482,
+          "exit": 54472,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 86530,
+          "entry": 37428,
+          "exit": 49102,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 93254,
+          "entry": 39590,
+          "exit": 53664,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 80722,
+          "entry": 35454,
+          "exit": 45268,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V05",
+      "line": "V",
+      "name": "V05",
+      "nameZh": "淡金北新站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 124436,
+          "entry": 56494,
+          "exit": 67942,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 125336,
+          "entry": 57490,
+          "exit": 67846,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 128242,
+          "entry": 58872,
+          "exit": 69370,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 134002,
+          "entry": 61292,
+          "exit": 72710,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 124244,
+          "entry": 57186,
+          "exit": 67058,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 106588,
+          "entry": 48548,
+          "exit": 58040,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 138078,
+          "entry": 62926,
+          "exit": 75152,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 130460,
+          "entry": 59662,
+          "exit": 70798,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 134450,
+          "entry": 61726,
+          "exit": 72724,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 126084,
+          "entry": 58128,
+          "exit": 67956,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V06",
+      "line": "V",
+      "name": "V06",
+      "nameZh": "新市一路站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 135152,
+          "entry": 58754,
+          "exit": 76398,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 135398,
+          "entry": 59782,
+          "exit": 75616,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 141520,
+          "entry": 62818,
+          "exit": 78702,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 147992,
+          "entry": 65524,
+          "exit": 82468,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 141144,
+          "entry": 62350,
+          "exit": 78794,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 122172,
+          "entry": 54444,
+          "exit": 67728,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 147316,
+          "entry": 64890,
+          "exit": 82426,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 141924,
+          "entry": 62772,
+          "exit": 79152,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 146706,
+          "entry": 65194,
+          "exit": 81512,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 139576,
+          "entry": 61562,
+          "exit": 78014,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V07",
+      "line": "V",
+      "name": "V07",
+      "nameZh": "淡水行政中心站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 151786,
+          "entry": 67058,
+          "exit": 84728,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 150288,
+          "entry": 66468,
+          "exit": 83820,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 152956,
+          "entry": 68690,
+          "exit": 84266,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 161438,
+          "entry": 72020,
+          "exit": 89418,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 152742,
+          "entry": 68174,
+          "exit": 84568,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 129480,
+          "entry": 58066,
+          "exit": 71414,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 171228,
+          "entry": 76554,
+          "exit": 94674,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 163224,
+          "entry": 73308,
+          "exit": 89916,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 177212,
+          "entry": 80062,
+          "exit": 97150,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 157926,
+          "entry": 70958,
+          "exit": 86968,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V08",
+      "line": "V",
+      "name": "V08",
+      "nameZh": "濱海義山站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 171442,
+          "entry": 76768,
+          "exit": 94674,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 175436,
+          "entry": 79322,
+          "exit": 96114,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 184436,
+          "entry": 84190,
+          "exit": 100246,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 194974,
+          "entry": 88480,
+          "exit": 106494,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 187034,
+          "entry": 84694,
+          "exit": 102340,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 155310,
+          "entry": 71140,
+          "exit": 84170,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 198324,
+          "entry": 89758,
+          "exit": 108566,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 192876,
+          "entry": 87626,
+          "exit": 105250,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 196996,
+          "entry": 89592,
+          "exit": 107404,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 185118,
+          "entry": 83648,
+          "exit": 101470,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V09",
+      "line": "V",
+      "name": "V09",
+      "nameZh": "濱海沙崙站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 96428,
+          "entry": 43754,
+          "exit": 52674,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 97514,
+          "entry": 44004,
+          "exit": 53510,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 101770,
+          "entry": 45968,
+          "exit": 55802,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 108710,
+          "entry": 48842,
+          "exit": 59868,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 102052,
+          "entry": 46252,
+          "exit": 55800,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 89738,
+          "entry": 41592,
+          "exit": 48146,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 111882,
+          "entry": 51048,
+          "exit": 60834,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 110458,
+          "entry": 50488,
+          "exit": 59970,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 113716,
+          "entry": 52538,
+          "exit": 61178,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 103298,
+          "entry": 47878,
+          "exit": 55420,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V10",
+      "line": "V",
+      "name": "V10",
+      "nameZh": "淡海新市鎮站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 24348,
+          "entry": 11106,
+          "exit": 13242,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 24918,
+          "entry": 11160,
+          "exit": 13758,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 26184,
+          "entry": 12190,
+          "exit": 13994,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 26362,
+          "entry": 12418,
+          "exit": 13944,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 24822,
+          "entry": 11480,
+          "exit": 13342,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 19962,
+          "entry": 9040,
+          "exit": 10922,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 25928,
+          "entry": 11864,
+          "exit": 14064,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 24738,
+          "entry": 11318,
+          "exit": 13420,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 26142,
+          "entry": 12084,
+          "exit": 14058,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 24386,
+          "entry": 11336,
+          "exit": 13050,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V11",
+      "line": "V",
+      "name": "V11",
+      "nameZh": "崁頂站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 58872,
+          "entry": 28594,
+          "exit": 30278,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 58836,
+          "entry": 28648,
+          "exit": 30188,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 60640,
+          "entry": 29566,
+          "exit": 31074,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 62522,
+          "entry": 30588,
+          "exit": 31934,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 62652,
+          "entry": 30746,
+          "exit": 31906,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 53456,
+          "entry": 26268,
+          "exit": 27188,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 64902,
+          "entry": 31720,
+          "exit": 33182,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 64876,
+          "entry": 31772,
+          "exit": 33104,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 66312,
+          "entry": 32112,
+          "exit": 34200,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 63660,
+          "entry": 31054,
+          "exit": 32606,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V26",
+      "line": "V",
+      "name": "V26",
+      "nameZh": "淡水漁人碼頭站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 59780,
+          "entry": 28442,
+          "exit": 31338,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 61042,
+          "entry": 28134,
+          "exit": 32908,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 63048,
+          "entry": 28784,
+          "exit": 34264,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 82736,
+          "entry": 36960,
+          "exit": 45776,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 54212,
+          "entry": 25090,
+          "exit": 29122,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 71718,
+          "entry": 32652,
+          "exit": 39066,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 54414,
+          "entry": 25692,
+          "exit": 28722,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 128550,
+          "entry": 56460,
+          "exit": 72090,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 272634,
+          "entry": 118112,
+          "exit": 154522,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 134648,
+          "entry": 60872,
+          "exit": 73776,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V27",
+      "line": "V",
+      "name": "V27",
+      "nameZh": "沙崙站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 22758,
+          "entry": 11824,
+          "exit": 10934,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 20866,
+          "entry": 10578,
+          "exit": 10288,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 18548,
+          "entry": 9572,
+          "exit": 8976,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 12498,
+          "entry": 6482,
+          "exit": 6016,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 14702,
+          "entry": 7392,
+          "exit": 7310,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 20284,
+          "entry": 10364,
+          "exit": 9920,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 18402,
+          "entry": 9422,
+          "exit": 8980,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 23854,
+          "entry": 12004,
+          "exit": 11850,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 38386,
+          "entry": 19168,
+          "exit": 19218,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 24002,
+          "entry": 12272,
+          "exit": 11730,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "V28",
+      "line": "V",
+      "name": "V28",
+      "nameZh": "台北海洋大學站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 34314,
+          "entry": 16612,
+          "exit": 17702,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 39026,
+          "entry": 19222,
+          "exit": 19804,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 38208,
+          "entry": 18574,
+          "exit": 19634,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 41728,
+          "entry": 20376,
+          "exit": 21352,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 26912,
+          "entry": 12500,
+          "exit": 14412,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 23548,
+          "entry": 11026,
+          "exit": 12522,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 37618,
+          "entry": 18080,
+          "exit": 19538,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 36108,
+          "entry": 17314,
+          "exit": 18794,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 38130,
+          "entry": 18540,
+          "exit": 19590,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 34190,
+          "entry": 16222,
+          "exit": 17968,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y07",
+      "line": "Y",
+      "name": "Y07",
+      "nameZh": "大坪林站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 791154,
+          "entry": 516374,
+          "exit": 274780,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 816410,
+          "entry": 533860,
+          "exit": 282550,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 845918,
+          "entry": 556104,
+          "exit": 289814,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 900864,
+          "entry": 587124,
+          "exit": 313740,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 860916,
+          "entry": 561486,
+          "exit": 299430,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 677826,
+          "entry": 441044,
+          "exit": 236782,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 909062,
+          "entry": 597110,
+          "exit": 311952,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 852244,
+          "entry": 561128,
+          "exit": 291116,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 889546,
+          "entry": 586710,
+          "exit": 302836,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 851828,
+          "entry": 559860,
+          "exit": 291968,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y08",
+      "line": "Y",
+      "name": "Y08",
+      "nameZh": "十四張站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 378658,
+          "entry": 120352,
+          "exit": 258306,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 401246,
+          "entry": 127828,
+          "exit": 273418,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 414678,
+          "entry": 130368,
+          "exit": 284310,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 442594,
+          "entry": 142050,
+          "exit": 300544,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 413226,
+          "entry": 132332,
+          "exit": 280894,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 320580,
+          "entry": 100930,
+          "exit": 219650,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 448990,
+          "entry": 142144,
+          "exit": 306846,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 425706,
+          "entry": 134822,
+          "exit": 290884,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 438392,
+          "entry": 137966,
+          "exit": 300426,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 419976,
+          "entry": 130940,
+          "exit": 289036,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y09",
+      "line": "Y",
+      "name": "Y09",
+      "nameZh": "秀朗橋站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 254458,
+          "entry": 87762,
+          "exit": 166696,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 266856,
+          "entry": 91486,
+          "exit": 175370,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 274352,
+          "entry": 94760,
+          "exit": 179592,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 291076,
+          "entry": 102088,
+          "exit": 188988,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 280468,
+          "entry": 97830,
+          "exit": 182638,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 237814,
+          "entry": 82844,
+          "exit": 154970,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 290172,
+          "entry": 100546,
+          "exit": 189626,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 276332,
+          "entry": 96546,
+          "exit": 179786,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 286160,
+          "entry": 100032,
+          "exit": 186128,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 275996,
+          "entry": 96350,
+          "exit": 179646,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y10",
+      "line": "Y",
+      "name": "Y10",
+      "nameZh": "景平站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 373194,
+          "entry": 128692,
+          "exit": 244502,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 386896,
+          "entry": 133362,
+          "exit": 253534,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 397078,
+          "entry": 137356,
+          "exit": 259722,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 423554,
+          "entry": 148092,
+          "exit": 275462,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 409812,
+          "entry": 144060,
+          "exit": 265752,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 345728,
+          "entry": 122914,
+          "exit": 222814,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 425538,
+          "entry": 149340,
+          "exit": 276198,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 407992,
+          "entry": 143622,
+          "exit": 264370,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 423492,
+          "entry": 148724,
+          "exit": 274768,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 412450,
+          "entry": 143948,
+          "exit": 268502,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y11",
+      "line": "Y",
+      "name": "Y11",
+      "nameZh": "景安站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 823372,
+          "entry": 606340,
+          "exit": 217032,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 857066,
+          "entry": 629052,
+          "exit": 228014,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 881150,
+          "entry": 646258,
+          "exit": 234892,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 941926,
+          "entry": 692320,
+          "exit": 249606,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 904312,
+          "entry": 668466,
+          "exit": 235846,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 741136,
+          "entry": 543242,
+          "exit": 197894,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 931864,
+          "entry": 682110,
+          "exit": 249754,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 879606,
+          "entry": 645238,
+          "exit": 234368,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 909700,
+          "entry": 668276,
+          "exit": 241424,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 893026,
+          "entry": 661542,
+          "exit": 231484,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y12",
+      "line": "Y",
+      "name": "Y12",
+      "nameZh": "中和站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 517520,
+          "entry": 194530,
+          "exit": 322990,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 544718,
+          "entry": 204482,
+          "exit": 340236,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 558018,
+          "entry": 210076,
+          "exit": 347942,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 597470,
+          "entry": 226544,
+          "exit": 370926,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 582596,
+          "entry": 224812,
+          "exit": 357784,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 482458,
+          "entry": 184744,
+          "exit": 297714,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 596536,
+          "entry": 227604,
+          "exit": 368932,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 571318,
+          "entry": 218546,
+          "exit": 352772,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 590188,
+          "entry": 224942,
+          "exit": 365246,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 571486,
+          "entry": 217242,
+          "exit": 354244,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y13",
+      "line": "Y",
+      "name": "Y13",
+      "nameZh": "橋和站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 234034,
+          "entry": 93250,
+          "exit": 140784,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 236280,
+          "entry": 93992,
+          "exit": 142288,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 253938,
+          "entry": 101130,
+          "exit": 152808,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 277126,
+          "entry": 110596,
+          "exit": 166530,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 280552,
+          "entry": 112252,
+          "exit": 168300,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 206846,
+          "entry": 82116,
+          "exit": 124730,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 280276,
+          "entry": 112042,
+          "exit": 168234,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 259046,
+          "entry": 103296,
+          "exit": 155750,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 269982,
+          "entry": 107784,
+          "exit": 162198,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 275658,
+          "entry": 109566,
+          "exit": 166092,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y14",
+      "line": "Y",
+      "name": "Y14",
+      "nameZh": "中原站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 318174,
+          "entry": 126534,
+          "exit": 191640,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 322240,
+          "entry": 128074,
+          "exit": 194166,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 333542,
+          "entry": 133022,
+          "exit": 200520,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 366876,
+          "entry": 145942,
+          "exit": 220934,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 361416,
+          "entry": 144840,
+          "exit": 216576,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 264204,
+          "entry": 106026,
+          "exit": 158178,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 372862,
+          "entry": 148166,
+          "exit": 224696,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 341112,
+          "entry": 135432,
+          "exit": 205680,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 351872,
+          "entry": 139410,
+          "exit": 212462,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 353950,
+          "entry": 141098,
+          "exit": 212852,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y15",
+      "line": "Y",
+      "name": "Y15",
+      "nameZh": "板新站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 302580,
+          "entry": 120532,
+          "exit": 182048,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 312258,
+          "entry": 124214,
+          "exit": 188044,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 318866,
+          "entry": 126026,
+          "exit": 192840,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 346794,
+          "entry": 138662,
+          "exit": 208132,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 340304,
+          "entry": 137508,
+          "exit": 202796,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 260378,
+          "entry": 105582,
+          "exit": 154796,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 352846,
+          "entry": 140826,
+          "exit": 212020,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 330926,
+          "entry": 132668,
+          "exit": 198258,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 349090,
+          "entry": 139984,
+          "exit": 209106,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 345938,
+          "entry": 139288,
+          "exit": 206650,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y16",
+      "line": "Y",
+      "name": "Y16",
+      "nameZh": "板橋站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 1237142,
+          "entry": 539616,
+          "exit": 697526,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 1329726,
+          "entry": 578096,
+          "exit": 751630,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 1405046,
+          "entry": 610016,
+          "exit": 795030,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 1566590,
+          "entry": 678506,
+          "exit": 888084,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 1395974,
+          "entry": 613382,
+          "exit": 782592,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 1208630,
+          "entry": 533862,
+          "exit": 674768,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 1457542,
+          "entry": 632314,
+          "exit": 825228,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 1407976,
+          "entry": 611368,
+          "exit": 796608,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 1459514,
+          "entry": 635684,
+          "exit": 823830,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 1402370,
+          "entry": 613584,
+          "exit": 788786,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y17",
+      "line": "Y",
+      "name": "Y17",
+      "nameZh": "新埔民生站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 481374,
+          "entry": 203614,
+          "exit": 277760,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 505868,
+          "entry": 212674,
+          "exit": 293194,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 532990,
+          "entry": 223806,
+          "exit": 309184,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 577618,
+          "entry": 242730,
+          "exit": 334888,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 557006,
+          "entry": 241464,
+          "exit": 315542,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 447906,
+          "entry": 192800,
+          "exit": 255106,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 589784,
+          "entry": 248414,
+          "exit": 341370,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 541960,
+          "entry": 230302,
+          "exit": 311658,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 569888,
+          "entry": 241740,
+          "exit": 328148,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 535778,
+          "entry": 228714,
+          "exit": 307064,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y18",
+      "line": "Y",
+      "name": "Y18",
+      "nameZh": "頭前庄站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 569984,
+          "entry": 477612,
+          "exit": 92372,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 613484,
+          "entry": 517764,
+          "exit": 95720,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 641276,
+          "entry": 539788,
+          "exit": 101488,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 694792,
+          "entry": 586548,
+          "exit": 108244,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 617532,
+          "entry": 509490,
+          "exit": 108042,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 511232,
+          "entry": 421576,
+          "exit": 89656,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 689240,
+          "entry": 581494,
+          "exit": 107746,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 638032,
+          "entry": 535908,
+          "exit": 102124,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 665072,
+          "entry": 557360,
+          "exit": 107712,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 632868,
+          "entry": 528488,
+          "exit": 104380,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y19",
+      "line": "Y",
+      "name": "Y19",
+      "nameZh": "幸福站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 440640,
+          "entry": 170976,
+          "exit": 269664,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 458310,
+          "entry": 177252,
+          "exit": 281058,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 478458,
+          "entry": 186160,
+          "exit": 292298,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 522046,
+          "entry": 204608,
+          "exit": 317438,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 499544,
+          "entry": 196644,
+          "exit": 302900,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 411094,
+          "entry": 163906,
+          "exit": 247188,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 534292,
+          "entry": 208002,
+          "exit": 326290,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 492794,
+          "entry": 192654,
+          "exit": 300140,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 508628,
+          "entry": 197752,
+          "exit": 310876,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 493114,
+          "entry": 192082,
+          "exit": 301032,
+          "days": 30
+        }
+      ]
+    },
+    {
+      "operator": "NTMC",
+      "code": "Y20",
+      "line": "Y",
+      "name": "Y20",
+      "nameZh": "新北產業園區站",
+      "periods": [
+        {
+          "period": "2025-09",
+          "value": 685960,
+          "entry": 317938,
+          "exit": 368022,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 706270,
+          "entry": 326678,
+          "exit": 379592,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 716014,
+          "entry": 330792,
+          "exit": 385222,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 803626,
+          "entry": 370666,
+          "exit": 432960,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 784530,
+          "entry": 359528,
+          "exit": 425002,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 637136,
+          "entry": 294898,
+          "exit": 342238,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 810484,
+          "entry": 374632,
+          "exit": 435852,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 761132,
+          "entry": 351558,
+          "exit": 409574,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 798016,
+          "entry": 368406,
+          "exit": 429610,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 778322,
+          "entry": 358678,
+          "exit": 419644,
+          "days": 30
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "period": "2025-09",
+      "value": 5082332,
+      "entry": 5083828,
+      "exit": 5082332,
+      "days": 30,
+      "lines": {
+        "Y": {
+          "value": 3704122,
+          "entry": 3704122,
+          "exit": 3704122,
+          "published": true
+        },
+        "V": {
+          "value": 1024662,
+          "entry": 1025964,
+          "exit": 1024662,
+          "published": true
+        },
+        "K": {
+          "value": 353548,
+          "entry": 353742,
+          "exit": 353548,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2025-10",
+      "value": 5298052,
+      "entry": 5299376,
+      "exit": 5298052,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 3878814,
+          "entry": 3878814,
+          "exit": 3878814,
+          "published": true
+        },
+        "V": {
+          "value": 1041038,
+          "entry": 1042014,
+          "exit": 1041038,
+          "published": true
+        },
+        "K": {
+          "value": 378200,
+          "entry": 378548,
+          "exit": 378200,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2025-11",
+      "value": 5476272,
+      "entry": 5476580,
+      "exit": 5476272,
+      "days": 30,
+      "lines": {
+        "Y": {
+          "value": 4025662,
+          "entry": 4025662,
+          "exit": 4025662,
+          "published": true
+        },
+        "V": {
+          "value": 1058886,
+          "entry": 1059110,
+          "exit": 1058886,
+          "published": true
+        },
+        "K": {
+          "value": 391724,
+          "entry": 391808,
+          "exit": 391724,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2025-12",
+      "value": 5912098,
+      "entry": 5913524,
+      "exit": 5912098,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 4376476,
+          "entry": 4376476,
+          "exit": 4376476,
+          "published": true
+        },
+        "V": {
+          "value": 1124042,
+          "entry": 1124710,
+          "exit": 1124042,
+          "published": true
+        },
+        "K": {
+          "value": 411580,
+          "entry": 412338,
+          "exit": 411580,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-01",
+      "value": 5537002,
+      "entry": 5536822,
+      "exit": 5537002,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 4144094,
+          "entry": 4144094,
+          "exit": 4144094,
+          "published": true
+        },
+        "V": {
+          "value": 1018018,
+          "entry": 1017564,
+          "exit": 1018018,
+          "published": true
+        },
+        "K": {
+          "value": 374890,
+          "entry": 375164,
+          "exit": 374890,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-02",
+      "value": 4557750,
+      "entry": 4549716,
+      "exit": 4557750,
+      "days": 28,
+      "lines": {
+        "Y": {
+          "value": 3376484,
+          "entry": 3376484,
+          "exit": 3376484,
+          "published": true
+        },
+        "V": {
+          "value": 883044,
+          "entry": 874498,
+          "exit": 883044,
+          "published": true
+        },
+        "K": {
+          "value": 298222,
+          "entry": 298734,
+          "exit": 298222,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-03",
+      "value": 5863898,
+      "entry": 5862022,
+      "exit": 5863898,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 4344744,
+          "entry": 4344744,
+          "exit": 4344744,
+          "published": true
+        },
+        "V": {
+          "value": 1101394,
+          "entry": 1098612,
+          "exit": 1101394,
+          "published": true
+        },
+        "K": {
+          "value": 417760,
+          "entry": 418666,
+          "exit": 417760,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-04",
+      "value": 5648376,
+      "entry": 5651082,
+      "exit": 5648376,
+      "days": 30,
+      "lines": {
+        "Y": {
+          "value": 4093088,
+          "entry": 4093088,
+          "exit": 4093088,
+          "published": true
+        },
+        "V": {
+          "value": 1159032,
+          "entry": 1161796,
+          "exit": 1159032,
+          "published": true
+        },
+        "K": {
+          "value": 396256,
+          "entry": 396198,
+          "exit": 396256,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-05",
+      "value": 5997342,
+      "entry": 6004592,
+      "exit": 5997342,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 4254770,
+          "entry": 4254770,
+          "exit": 4254770,
+          "published": true
+        },
+        "V": {
+          "value": 1334438,
+          "entry": 1341640,
+          "exit": 1334438,
+          "published": true
+        },
+        "K": {
+          "value": 408134,
+          "entry": 408182,
+          "exit": 408134,
+          "published": true
+        },
+        "LB": {
+          "value": null,
+          "entry": null,
+          "exit": null,
+          "published": false
+        }
+      }
+    },
+    {
+      "period": "2026-06",
+      "value": 5672010,
+      "entry": 5678524,
+      "exit": 5672010,
+      "days": 30,
+      "lines": {
+        "Y": {
+          "value": 4121380,
+          "entry": 4121380,
+          "exit": 4121380,
+          "published": true
+        },
+        "V": {
+          "value": 1114950,
+          "entry": 1118580,
+          "exit": 1114950,
+          "published": true
+        },
+        "K": {
+          "value": 384774,
+          "entry": 385192,
+          "exit": 384774,
+          "published": true
+        },
+        "LB": {
+          "value": 50906,
+          "entry": 53372,
+          "exit": 50906,
+          "published": true
+        }
+      }
+    }
+  ]
+}

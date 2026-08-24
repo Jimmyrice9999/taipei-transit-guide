@@ -15,8 +15,7 @@ coverage rules and publication formats.
 
 - **TRTC publishes monthly per-station ridership files.** Its current English
   index labels the section `Ridership statistics per station`; the visible
-  years are 2015–2017, 2020–2026, with 2018 and 2019 not listed on the checked
-  page. Each month is a link to an ODS file under
+  years are 2015–2026, including 2018 and 2019. Each month is a link to an ODS file under
   `web.metro.taipei/RidershipPerStation/`. Source: TRTC, *Ridership Counts*,
   English page, primary, High confidence: the full index and its month links
   were fetched. Original wording: “Ridership statistics per station”.
@@ -53,9 +52,11 @@ coverage rules and publication formats.
 
 ### New Taipei Metro Corporation (NTMC)
 
-- **NTMC publishes current whole-system monthly files, not a per-station table
-  on the checked statistics page.** The operator page lists ROC 115 January–June
-  2026 ODS files and ROC 114 January–July 2025 PDF files. Source: NTMC,
+- **NTMC publishes whole-system monthly files that contain daily station rows
+  and line subtotals.** The operator page lists ROC 115 January–June 2026 ODS
+  files and ROC 114 January–July 2025 PDF files. The ODS reports have separate
+  entry and exit sections; the data layer aggregates those dated station rows
+  without treating the result as a precomputed operator table. Source: NTMC,
   *統計資料*, primary, High confidence. Original wording: the filenames
   `115年6月全系統運量統計.ods` through `115年1月全系統運量統計.ods` and
   `114年7月全系統運量統計.pdf` through `114年1月全系統運量統計.pdf`.
@@ -164,13 +165,12 @@ coverage rules and publication formats.
 
 ## Stated gaps
 
-- TRTC’s checked index does not list station ODS files for 2018 or 2019. A
-  complete station trend across those years needs an archived operator file or
-  a directly published replacement.
-- NTMC’s checked operator files provide daily and monthly line totals, not
-  station-level values. The New Taipei Transportation Bureau statistics system
-  is the next primary source to resolve this, after the timed-out link can be
-  fetched.
+- The current committed TRTC pull covers July 2025–July 2026 even though the
+  operator index reaches back to 2015. Extending the data layer to older months
+  requires fetching and parsing the remaining official ODS files.
+- The current committed NTMC pull covers September 2025–June 2026. Older
+  operator files and the New Taipei Transportation Bureau statistics system
+  remain to be fetched before a longer station trend is claimed.
 - MOTC and TDX provide operator/line or structural data, not a substitute for
   each operator’s station-level historical series.
 - The source pages publish different measures (station counts, entry/exit,

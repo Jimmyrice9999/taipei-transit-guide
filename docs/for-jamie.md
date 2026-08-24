@@ -1,24 +1,24 @@
 # For Jamie
 
-## Active handoff - 24 August 2026
+## Active handoff — 24 August 2026
+Parts 0–2 are complete. Parts 3–6 remain complete through Runs 104–117.
+Part 1’s CI hard gate is green: Actions run 342 completed Tests, Build for
+Pages and deployment after fixing adversarial warning attribution.
 
-Parts 0-2 are complete. Part 3 is complete through Runs 104-115: all ten MRT
-line pages, rolling stock, depots, cross-cutting history, 989 short bus routes,
-short rail/YouBike pages, and short operators now meet the 300-word sourced
-minimum with canonical sections and static ToCs where applicable.
+Part 2 adds `data/ridership/` plus three permanent importers. TRTC and TYMC
+have 13 months of station entry/exit data; NTMC has 10 months of station rows
+and line subtotals. Station pages now show dated movement, trend, rank and a
+no-JS table; line pages show published totals or TBC; `/rail/network/` shows
+operator trends without deduplicating transfers.
 
-Run 116 completed Parts 4-5. The mobile specs-table intrinsic-width defect is
-fixed; the browser matrix has 68 curated page types. Fresh browser verification
-passed reflow, keyboard, accessibility trees, axe, print and 477 screenshots.
+Full-source research is in `docs/research/rail/metro/ridership.md`; Run 119 is
+in `docs/run-log.md`. TRTC’s index reaches 2015 and includes 2018–2019; those
+older months are not yet imported. NTMC’s statistics-portal link timed out.
 
-Run 117 completed Part 6. `docs/taiwan-expansion.md` contains live TDX TRA/THSR
-coverage, primary source families, architecture break analysis, interchange
-modelling and a proposed v3 order. No TRA or THSR pages were built.
-Final gates are green: cite, verify, nav, full tests and browser verification.
-The final audit reports 1,954 pages, 219,647 internal links, 4,997 citations,
-14,754 sourced / 4,308 TBC / zero asserted claims, 124 research files / 534
-checked failures, and 219 unit tests. Runs 114-117 are pushed.
+Fresh gates passed: build, cite, facts, 219 unit tests, a11y (1,457 pages),
+research and browser verification. Browser axe found zero violations across
+1,456 pages; the expanded matrix produced 491 screenshots and clean print
+checks. Generated audits were restored and `probes/` was not staged.
 
-Known determinism artefact remains unchanged; generated audits and browser
-artifacts are restored or untracked. Never stage `probes/`. Parts 0-6 are
-complete; v3 TRA/THSR page construction is a separate decision.
+Known determinism artefact remains unchanged. Next unit: Part 3 fleet evidence
+and roster design, then Parts 4–15 in the user-specified order.

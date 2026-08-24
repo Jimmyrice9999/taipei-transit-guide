@@ -20,6 +20,8 @@ import LineIcon from '@/components/LineIcon'
 import { getLinePageHref as lineHref, getSection } from '@/lib/content'
 import { getOperator } from '@/lib/operators'
 import RouteMap from '@/components/RouteMap'
+import TableOfContents from '@/components/TableOfContents'
+import { NetworkRidershipPanel } from '@/components/RidershipPanel'
 import StationBadge from '@/components/StationBadge'
 import { NEUTRAL_LINE, branchTint } from '@/lib/lines'
 import { getInterchanges, getLineSummaries, getLineTrack } from '@/lib/network'
@@ -202,6 +204,14 @@ export default function NetworkPage() {
         circulating in English-language sources, which are all slightly wrong.
       </p>
 
+      <TableOfContents
+        items={[
+          { id: 'ridership', label: 'Ridership', level: 2 },
+          { id: 'lines', label: 'Lines', level: 2 },
+          { id: 'interchanges', label: 'Interchanges', level: 2 },
+        ]}
+      />
+
       <div className="page-body">
           {/*
             What is on this map is what TDX publishes, and what is missing is
@@ -286,7 +296,9 @@ export default function NetworkPage() {
             }
           />
 
-          <h2 className="section-heading">Lines</h2>
+          <NetworkRidershipPanel />
+
+          <h2 className="section-heading" id="lines">Lines</h2>
           <div className="wide table-scroll" tabIndex={0}>
             <table className="network-table">
               <thead>
@@ -549,7 +561,7 @@ export default function NetworkPage() {
             </p>
           )}
 
-          <h2 className="section-heading">Interchanges</h2>
+          <h2 className="section-heading" id="interchanges">Interchanges</h2>
           <p className="section-desc">
             {interchanges.length} places where you can change lines. Each carries a
             different code on each line it serves, which is exactly what the badge system

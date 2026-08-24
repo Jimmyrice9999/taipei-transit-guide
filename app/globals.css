@@ -5796,3 +5796,153 @@ a.badge-link:focus-visible {
     background-image: none;
   }
 }
+
+/* Ridership is a data panel, not a decorative chart. The table remains in the
+   normal flow so it is usable without JavaScript, at narrow widths, and by
+   assistive technology. */
+.ridership-panel {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 2px solid var(--rule-strong);
+}
+
+.ridership-panel > .section-heading {
+  margin-top: 0;
+}
+
+.ridership-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 1.25rem 0;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.ridership-summary > div {
+  min-width: 0;
+  padding: 0.8rem 0.9rem;
+  background: var(--bg-well);
+}
+
+.ridership-summary dt {
+  color: var(--text-3);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.ridership-summary dd {
+  margin: 0.15rem 0 0;
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+
+.ridership-chart {
+  margin: 1.5rem 0 1rem;
+  padding: 0.8rem 1rem 0.7rem;
+  background: var(--bg-well);
+  border: 1px solid var(--rule);
+}
+
+.ridership-chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: var(--accent);
+}
+
+.ridership-chart line {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+
+.ridership-chart polyline {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.ridership-chart circle {
+  fill: var(--bg-well);
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.ridership-chart figcaption {
+  margin-top: 0.5rem;
+  color: var(--text-2);
+  font-size: 0.85rem;
+}
+
+.ridership-table-wrap {
+  margin-top: 1rem;
+}
+
+.ridership-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.ridership-table caption {
+  margin-bottom: 0.5rem;
+  color: var(--text-2);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 650;
+  text-align: left;
+}
+
+.ridership-table th,
+.ridership-table td {
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+
+.ridership-table thead th {
+  color: var(--text-2);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.ridership-table .num {
+  text-align: right;
+}
+
+.ridership-table tbody th {
+  font-weight: 550;
+}
+
+.ridership-source {
+  margin: 0.75rem 0 0;
+  color: var(--text-3);
+  font-size: 0.82rem;
+}
+
+.network-ridership-operator {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.network-ridership-operator h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+@media (max-width: 600px) {
+  .ridership-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ridership-chart {
+    padding-inline: 0.55rem;
+  }
+}

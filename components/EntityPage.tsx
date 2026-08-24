@@ -30,6 +30,7 @@ import Figure from '@/components/Figure'
 import FormationDiagram from '@/components/FormationDiagram'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
+import RidershipPanel from '@/components/RidershipPanel'
 import RichText from '@/components/RichText'
 import RouteMap from '@/components/RouteMap'
 import SpecTable from '@/components/SpecTable'
@@ -140,6 +141,9 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const entityKind = getEntityIconKind(section, type)
   const toc = [
     ...page.toc,
+    ...(type === 'lines' && page.line
+      ? [{ id: 'ridership', label: 'Ridership', level: 2 as const }]
+      : []),
     ...(!ARTICLE_TYPES.has(type) && page.specs.length
       ? [{ id: 'specifications', label: 'Specifications', level: 2 as const }]
       : []),
@@ -548,6 +552,10 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               className="prose"
               dangerouslySetInnerHTML={{ __html: collapseMajorSections(page.html) }}
             />
+
+            {type === 'lines' && page.line && (
+              <RidershipPanel lineCode={page.line} operator={page.operator} />
+            )}
 
             {/*
               The section drawing goes above the geographic map, because they

@@ -1,0 +1,2364 @@
+{
+  "retrieved": "2026-08-24",
+  "currentPeriod": "2026-07",
+  "source": {
+    "id": "tymc-station-pdf",
+    "title": "Monthly station passenger traffic",
+    "titleOriginal": "各站旅運量統計",
+    "publisher": "Taoyuan Metro Corporation",
+    "publisherOriginal": "桃園大眾捷運股份有限公司",
+    "indexUrl": "https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html",
+    "accessed": "2026-08-24",
+    "kind": "primary",
+    "measure": "Station value is entry plus exit movement. The network value is the published exit total; both dimensions are retained.",
+    "files": [
+      {
+        "period": "2025-07",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250812121118_0.pdf"
+      },
+      {
+        "period": "2025-08",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250910041054_0.pdf"
+      },
+      {
+        "period": "2025-09",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20251014054831_0.pdf"
+      },
+      {
+        "period": "2025-10",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20251118100455_0.pdf"
+      },
+      {
+        "period": "2025-11",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20251211023916_0.pdf"
+      },
+      {
+        "period": "2025-12",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260114105502_0.pdf"
+      },
+      {
+        "period": "2026-01",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260212020430_0.pdf"
+      },
+      {
+        "period": "2026-02",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260313042431_0.pdf"
+      },
+      {
+        "period": "2026-03",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260420_084721_doc_856.pdf"
+      },
+      {
+        "period": "2026-04",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260515_112934_doc_492.pdf"
+      },
+      {
+        "period": "2026-05",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260615_134158_doc_731.pdf"
+      },
+      {
+        "period": "2026-06",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260714_154819_doc_104.pdf"
+      },
+      {
+        "period": "2026-07",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20260819_111103_doc_243.pdf"
+      }
+    ]
+  },
+  "stations": [
+    {
+      "operator": "TYMC",
+      "code": "A1",
+      "line": "A",
+      "name": "Taipei Main Station",
+      "nameZh": "台北車站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 1717076,
+          "entry": 858787,
+          "exit": 858289,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 1797294,
+          "entry": 902606,
+          "exit": 894688,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 1719811,
+          "entry": 864707,
+          "exit": 855104,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 1776286,
+          "entry": 886317,
+          "exit": 889969,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 1818290,
+          "entry": 915264,
+          "exit": 903026,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 1910675,
+          "entry": 952277,
+          "exit": 958398,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 1787406,
+          "entry": 909728,
+          "exit": 877678,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 1510823,
+          "entry": 753137,
+          "exit": 757686,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 1928150,
+          "entry": 973050,
+          "exit": 955100,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 1747454,
+          "entry": 878100,
+          "exit": 869354,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 1808927,
+          "entry": 916057,
+          "exit": 892870,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 1685235,
+          "entry": 855854,
+          "exit": 829381,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 1712542,
+          "entry": 860067,
+          "exit": 852475,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A10",
+      "line": "A",
+      "name": "Shanbi Station",
+      "nameZh": "山鼻站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 207078,
+          "entry": 102397,
+          "exit": 104681,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 216195,
+          "entry": 106788,
+          "exit": 109407,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 208576,
+          "entry": 103235,
+          "exit": 105341,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 214500,
+          "entry": 106056,
+          "exit": 108444,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 212006,
+          "entry": 104881,
+          "exit": 107125,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 227088,
+          "entry": 112523,
+          "exit": 114565,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 214631,
+          "entry": 106355,
+          "exit": 108276,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 195384,
+          "entry": 96142,
+          "exit": 99242,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 231278,
+          "entry": 114274,
+          "exit": 117004,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 216544,
+          "entry": 106663,
+          "exit": 109881,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 228410,
+          "entry": 112819,
+          "exit": 115591,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 215376,
+          "entry": 106429,
+          "exit": 108947,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 226530,
+          "entry": 112601,
+          "exit": 113929,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A11",
+      "line": "A",
+      "name": "Kengkou Station",
+      "nameZh": "坑口站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 74477,
+          "entry": 37022,
+          "exit": 37455,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 81544,
+          "entry": 40905,
+          "exit": 40639,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 74252,
+          "entry": 37316,
+          "exit": 36936,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 74328,
+          "entry": 37167,
+          "exit": 37161,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 74481,
+          "entry": 37250,
+          "exit": 37231,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 82080,
+          "entry": 41010,
+          "exit": 41070,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 80783,
+          "entry": 40263,
+          "exit": 40520,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 71024,
+          "entry": 35630,
+          "exit": 35394,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 83943,
+          "entry": 41776,
+          "exit": 42167,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 79949,
+          "entry": 40112,
+          "exit": 39837,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 84377,
+          "entry": 42463,
+          "exit": 41914,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 80088,
+          "entry": 40276,
+          "exit": 39812,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 88505,
+          "entry": 44530,
+          "exit": 43975,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A12",
+      "line": "A",
+      "name": "Airport Terminal 1 Station",
+      "nameZh": "機場第一航廈站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 703401,
+          "entry": 346744,
+          "exit": 356657,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 755527,
+          "entry": 375738,
+          "exit": 379789,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 707915,
+          "entry": 351575,
+          "exit": 356340,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 774521,
+          "entry": 384148,
+          "exit": 390373,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 753507,
+          "entry": 371583,
+          "exit": 381924,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 796396,
+          "entry": 397566,
+          "exit": 398830,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 774981,
+          "entry": 366804,
+          "exit": 408177,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 733438,
+          "entry": 365621,
+          "exit": 367817,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 824624,
+          "entry": 408934,
+          "exit": 415690,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 735200,
+          "entry": 363786,
+          "exit": 371414,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 725057,
+          "entry": 355005,
+          "exit": 370052,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 697304,
+          "entry": 337830,
+          "exit": 359474,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 732462,
+          "entry": 363738,
+          "exit": 368724,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A13",
+      "line": "A",
+      "name": "Airport Terminal 2 Station",
+      "nameZh": "機場第二航廈站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 654213,
+          "entry": 353684,
+          "exit": 300529,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 704674,
+          "entry": 377910,
+          "exit": 326764,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 641274,
+          "entry": 343308,
+          "exit": 297966,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 703802,
+          "entry": 381763,
+          "exit": 322039,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 666868,
+          "entry": 360502,
+          "exit": 306366,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 699089,
+          "entry": 380079,
+          "exit": 319010,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 683137,
+          "entry": 355787,
+          "exit": 327350,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 663743,
+          "entry": 360036,
+          "exit": 303707,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 737022,
+          "entry": 395612,
+          "exit": 341410,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 698494,
+          "entry": 375050,
+          "exit": 323444,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 694609,
+          "entry": 371170,
+          "exit": 323439,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 688495,
+          "entry": 365996,
+          "exit": 322499,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 719552,
+          "entry": 382611,
+          "exit": 336941,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A14a",
+      "line": "A",
+      "name": "Airport Hotel Station",
+      "nameZh": "機場旅館站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 74963,
+          "entry": 35766,
+          "exit": 39197,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 78637,
+          "entry": 37964,
+          "exit": 40673,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 71983,
+          "entry": 34174,
+          "exit": 37809,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 71443,
+          "entry": 33842,
+          "exit": 37601,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 70025,
+          "entry": 33247,
+          "exit": 36778,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 80865,
+          "entry": 38680,
+          "exit": 42185,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 75230,
+          "entry": 35847,
+          "exit": 39383,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 58342,
+          "entry": 27312,
+          "exit": 31030,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 78146,
+          "entry": 37231,
+          "exit": 40915,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 71656,
+          "entry": 33956,
+          "exit": 37700,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 72219,
+          "entry": 34311,
+          "exit": 37908,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 72478,
+          "entry": 34761,
+          "exit": 37717,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 74328,
+          "entry": 35602,
+          "exit": 38726,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A15",
+      "line": "A",
+      "name": "Dayuan Station",
+      "nameZh": "大園站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 139305,
+          "entry": 66504,
+          "exit": 72801,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 145402,
+          "entry": 69421,
+          "exit": 75981,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 138391,
+          "entry": 65731,
+          "exit": 72660,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 139341,
+          "entry": 65545,
+          "exit": 73796,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 138951,
+          "entry": 66081,
+          "exit": 72870,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 147747,
+          "entry": 70347,
+          "exit": 77400,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 141927,
+          "entry": 67285,
+          "exit": 74642,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 128558,
+          "entry": 60914,
+          "exit": 67644,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 149319,
+          "entry": 70695,
+          "exit": 78624,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 143024,
+          "entry": 67977,
+          "exit": 75047,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 150449,
+          "entry": 71703,
+          "exit": 78746,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 141435,
+          "entry": 67264,
+          "exit": 74171,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 150291,
+          "entry": 71435,
+          "exit": 78856,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A16",
+      "line": "A",
+      "name": "Hengshan Station",
+      "nameZh": "橫山站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 23642,
+          "entry": 11747,
+          "exit": 11895,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 25798,
+          "entry": 13015,
+          "exit": 12783,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 23914,
+          "entry": 11794,
+          "exit": 12120,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 24710,
+          "entry": 12192,
+          "exit": 12518,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 23095,
+          "entry": 11466,
+          "exit": 11629,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 25060,
+          "entry": 12497,
+          "exit": 12563,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 23992,
+          "entry": 12011,
+          "exit": 11981,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 21160,
+          "entry": 10555,
+          "exit": 10605,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 25572,
+          "entry": 12683,
+          "exit": 12889,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 24791,
+          "entry": 12269,
+          "exit": 12522,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 25612,
+          "entry": 12639,
+          "exit": 12973,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 24955,
+          "entry": 12417,
+          "exit": 12538,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 26711,
+          "entry": 13355,
+          "exit": 13356,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A17",
+      "line": "A",
+      "name": "Linghang Station",
+      "nameZh": "領航站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 75390,
+          "entry": 38423,
+          "exit": 36967,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 73094,
+          "entry": 37158,
+          "exit": 35936,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 85343,
+          "entry": 44386,
+          "exit": 40957,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 91015,
+          "entry": 47020,
+          "exit": 43995,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 90546,
+          "entry": 46938,
+          "exit": 43608,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 92827,
+          "entry": 48216,
+          "exit": 44611,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 83181,
+          "entry": 43022,
+          "exit": 40159,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 63304,
+          "entry": 31947,
+          "exit": 31357,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 93640,
+          "entry": 48499,
+          "exit": 45141,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 86864,
+          "entry": 44805,
+          "exit": 42059,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 89824,
+          "entry": 46464,
+          "exit": 43360,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 85128,
+          "entry": 43728,
+          "exit": 41400,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 80855,
+          "entry": 41205,
+          "exit": 39650,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A18",
+      "line": "A",
+      "name": "Taoyuan HSR Station",
+      "nameZh": "高鐵桃園站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 674508,
+          "entry": 339574,
+          "exit": 334934,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 720156,
+          "entry": 360895,
+          "exit": 359261,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 653263,
+          "entry": 328299,
+          "exit": 324964,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 726013,
+          "entry": 364702,
+          "exit": 361311,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 699596,
+          "entry": 348571,
+          "exit": 351025,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 751557,
+          "entry": 372056,
+          "exit": 379501,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 688558,
+          "entry": 353898,
+          "exit": 334660,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 725514,
+          "entry": 364125,
+          "exit": 361389,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 731891,
+          "entry": 367398,
+          "exit": 364493,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 714517,
+          "entry": 357636,
+          "exit": 356881,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 714870,
+          "entry": 361269,
+          "exit": 353601,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 686329,
+          "entry": 347122,
+          "exit": 339207,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 720242,
+          "entry": 362640,
+          "exit": 357602,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A19",
+      "line": "A",
+      "name": "Taoyuan Sports Park Station",
+      "nameZh": "桃園體育園區站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 129899,
+          "entry": 63869,
+          "exit": 66030,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 150052,
+          "entry": 73295,
+          "exit": 76757,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 139134,
+          "entry": 68028,
+          "exit": 71106,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 134248,
+          "entry": 65151,
+          "exit": 69097,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 158617,
+          "entry": 78368,
+          "exit": 80249,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 148575,
+          "entry": 72994,
+          "exit": 75581,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 117667,
+          "entry": 57744,
+          "exit": 59923,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 102331,
+          "entry": 50385,
+          "exit": 51946,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 135692,
+          "entry": 66280,
+          "exit": 69412,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 147922,
+          "entry": 71987,
+          "exit": 75935,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 163510,
+          "entry": 79467,
+          "exit": 84043,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 145567,
+          "entry": 71347,
+          "exit": 74220,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 143652,
+          "entry": 70535,
+          "exit": 73117,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A2",
+      "line": "A",
+      "name": "Sanchong Station",
+      "nameZh": "三重站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 308398,
+          "entry": 151730,
+          "exit": 156668,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 323389,
+          "entry": 159614,
+          "exit": 163775,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 314992,
+          "entry": 155088,
+          "exit": 159904,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 322928,
+          "entry": 158532,
+          "exit": 164396,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 333441,
+          "entry": 164771,
+          "exit": 168670,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 351315,
+          "entry": 173727,
+          "exit": 177588,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 339067,
+          "entry": 167937,
+          "exit": 171130,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 352176,
+          "entry": 174453,
+          "exit": 177723,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 398133,
+          "entry": 196980,
+          "exit": 201153,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 334957,
+          "entry": 164847,
+          "exit": 170110,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 352368,
+          "entry": 174043,
+          "exit": 178325,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 325621,
+          "entry": 160508,
+          "exit": 165113,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 328402,
+          "entry": 161829,
+          "exit": 166573,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A20",
+      "line": "A",
+      "name": "Xingnan Station",
+      "nameZh": "興南站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 15976,
+          "entry": 8006,
+          "exit": 7970,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 16389,
+          "entry": 8321,
+          "exit": 8068,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 15728,
+          "entry": 7938,
+          "exit": 7790,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 16508,
+          "entry": 8305,
+          "exit": 8203,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 16106,
+          "entry": 8116,
+          "exit": 7990,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 18375,
+          "entry": 9272,
+          "exit": 9103,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 17002,
+          "entry": 8750,
+          "exit": 8252,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 16940,
+          "entry": 8778,
+          "exit": 8162,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 17755,
+          "entry": 9110,
+          "exit": 8645,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 17812,
+          "entry": 9160,
+          "exit": 8652,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 19317,
+          "entry": 9812,
+          "exit": 9505,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 17944,
+          "entry": 9037,
+          "exit": 8907,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 21091,
+          "entry": 10867,
+          "exit": 10224,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A21",
+      "line": "A",
+      "name": "Huanbei Station",
+      "nameZh": "環北站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 134881,
+          "entry": 66796,
+          "exit": 68085,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 143136,
+          "entry": 70516,
+          "exit": 72620,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 132548,
+          "entry": 65462,
+          "exit": 67086,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 135334,
+          "entry": 66528,
+          "exit": 68806,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 134237,
+          "entry": 66124,
+          "exit": 68113,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 144590,
+          "entry": 71447,
+          "exit": 73143,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 135243,
+          "entry": 67087,
+          "exit": 68156,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 124846,
+          "entry": 60835,
+          "exit": 64011,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 141400,
+          "entry": 69479,
+          "exit": 71921,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 134797,
+          "entry": 66405,
+          "exit": 68392,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 138913,
+          "entry": 68533,
+          "exit": 70380,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 130366,
+          "entry": 64298,
+          "exit": 66068,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 133118,
+          "entry": 65805,
+          "exit": 67313,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A22",
+      "line": "A",
+      "name": "Laojie River Station",
+      "nameZh": "老街溪站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 222171,
+          "entry": 108347,
+          "exit": 113824,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 245191,
+          "entry": 118797,
+          "exit": 126394,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 234080,
+          "entry": 114157,
+          "exit": 119923,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 247875,
+          "entry": 121103,
+          "exit": 126772,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 250433,
+          "entry": 122064,
+          "exit": 128369,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 272778,
+          "entry": 132647,
+          "exit": 140131,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 246021,
+          "entry": 120694,
+          "exit": 125327,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 239006,
+          "entry": 114722,
+          "exit": 124284,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 271826,
+          "entry": 132633,
+          "exit": 139193,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 261942,
+          "entry": 128564,
+          "exit": 133378,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 274767,
+          "entry": 135072,
+          "exit": 139695,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 253057,
+          "entry": 123850,
+          "exit": 129207,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 260194,
+          "entry": 126859,
+          "exit": 133335,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A3",
+      "line": "A",
+      "name": "New Taipei Industrial Park Station",
+      "nameZh": "新北產業園區站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 491554,
+          "entry": 247648,
+          "exit": 243906,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 486159,
+          "entry": 244131,
+          "exit": 242028,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 478759,
+          "entry": 240893,
+          "exit": 237866,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 490786,
+          "entry": 247036,
+          "exit": 243750,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 488231,
+          "entry": 245885,
+          "exit": 242346,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 540068,
+          "entry": 272745,
+          "exit": 267323,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 524066,
+          "entry": 266627,
+          "exit": 257439,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 446427,
+          "entry": 224159,
+          "exit": 222268,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 553048,
+          "entry": 277921,
+          "exit": 275127,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 515110,
+          "entry": 259361,
+          "exit": 255749,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 535555,
+          "entry": 269608,
+          "exit": 265947,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 521951,
+          "entry": 263449,
+          "exit": 258502,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 532649,
+          "entry": 268365,
+          "exit": 264284,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A4",
+      "line": "A",
+      "name": "Xinzhuang Fuduxin Station",
+      "nameZh": "新莊副都心站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 202671,
+          "entry": 99661,
+          "exit": 103010,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 196033,
+          "entry": 95941,
+          "exit": 100092,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 201432,
+          "entry": 98913,
+          "exit": 102519,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 206839,
+          "entry": 101151,
+          "exit": 105688,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 210308,
+          "entry": 103563,
+          "exit": 106745,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 216944,
+          "entry": 106606,
+          "exit": 110338,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 218166,
+          "entry": 107470,
+          "exit": 110696,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 172582,
+          "entry": 84436,
+          "exit": 88146,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 217107,
+          "entry": 106174,
+          "exit": 110933,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 203845,
+          "entry": 99738,
+          "exit": 104107,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 226247,
+          "entry": 111037,
+          "exit": 115210,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 211938,
+          "entry": 103903,
+          "exit": 108035,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 216693,
+          "entry": 106131,
+          "exit": 110562,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A5",
+      "line": "A",
+      "name": "Taishan Station",
+      "nameZh": "泰山站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 141897,
+          "entry": 69596,
+          "exit": 72301,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 140505,
+          "entry": 68483,
+          "exit": 72022,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 146150,
+          "entry": 71485,
+          "exit": 74665,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 146268,
+          "entry": 71958,
+          "exit": 74310,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 147629,
+          "entry": 72619,
+          "exit": 75010,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 156835,
+          "entry": 77283,
+          "exit": 79552,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 145983,
+          "entry": 72326,
+          "exit": 73657,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 120921,
+          "entry": 59614,
+          "exit": 61307,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 159931,
+          "entry": 78250,
+          "exit": 81681,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 145704,
+          "entry": 71642,
+          "exit": 74062,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 150920,
+          "entry": 74198,
+          "exit": 76722,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 143419,
+          "entry": 70980,
+          "exit": 72439,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 140134,
+          "entry": 69102,
+          "exit": 71032,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A6",
+      "line": "A",
+      "name": "Taishan Guihe Station",
+      "nameZh": "泰山貴和站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 166586,
+          "entry": 84001,
+          "exit": 82585,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 169358,
+          "entry": 85605,
+          "exit": 83753,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 170432,
+          "entry": 85672,
+          "exit": 84760,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 177097,
+          "entry": 89782,
+          "exit": 87315,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 177281,
+          "entry": 89492,
+          "exit": 87789,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 187303,
+          "entry": 94793,
+          "exit": 92510,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 177146,
+          "entry": 90034,
+          "exit": 87112,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 154152,
+          "entry": 77743,
+          "exit": 76409,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 191847,
+          "entry": 96282,
+          "exit": 95565,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 179411,
+          "entry": 90480,
+          "exit": 88931,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 186443,
+          "entry": 93375,
+          "exit": 93068,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 173771,
+          "entry": 87441,
+          "exit": 86330,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 177385,
+          "entry": 89803,
+          "exit": 87582,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A7",
+      "line": "A",
+      "name": "National Taiwan Sport University Station",
+      "nameZh": "體育大學站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 410242,
+          "entry": 207250,
+          "exit": 202992,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 397034,
+          "entry": 200783,
+          "exit": 196251,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 410667,
+          "entry": 206909,
+          "exit": 203758,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 395853,
+          "entry": 201398,
+          "exit": 194455,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 403117,
+          "entry": 203939,
+          "exit": 199178,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 436900,
+          "entry": 222248,
+          "exit": 214652,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 406794,
+          "entry": 205125,
+          "exit": 201669,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 329475,
+          "entry": 168238,
+          "exit": 161237,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 486543,
+          "entry": 243725,
+          "exit": 242818,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 422173,
+          "entry": 214512,
+          "exit": 207661,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 457138,
+          "entry": 229470,
+          "exit": 227668,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 421047,
+          "entry": 212112,
+          "exit": 208935,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 411799,
+          "entry": 208372,
+          "exit": 203427,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A8",
+      "line": "A",
+      "name": "Chang Gung Memorial Hospital Station",
+      "nameZh": "長庚醫院站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 642936,
+          "entry": 319760,
+          "exit": 323176,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 641975,
+          "entry": 318812,
+          "exit": 323163,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 629137,
+          "entry": 312856,
+          "exit": 316281,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 636738,
+          "entry": 316798,
+          "exit": 319940,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 631814,
+          "entry": 313133,
+          "exit": 318681,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 683648,
+          "entry": 339796,
+          "exit": 343852,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 642249,
+          "entry": 318233,
+          "exit": 324016,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 524047,
+          "entry": 259746,
+          "exit": 264301,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 684461,
+          "entry": 338227,
+          "exit": 346234,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 641651,
+          "entry": 318551,
+          "exit": 323100,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 660022,
+          "entry": 326416,
+          "exit": 333606,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 636698,
+          "entry": 314665,
+          "exit": 322033,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 667252,
+          "entry": 330506,
+          "exit": 336746,
+          "days": 31
+        }
+      ]
+    },
+    {
+      "operator": "TYMC",
+      "code": "A9",
+      "line": "A",
+      "name": "Linkou Station",
+      "nameZh": "林口站",
+      "periods": [
+        {
+          "period": "2025-07",
+          "value": 391168,
+          "entry": 189769,
+          "exit": 201399,
+          "days": 31
+        },
+        {
+          "period": "2025-08",
+          "value": 410881,
+          "entry": 198940,
+          "exit": 211941,
+          "days": 31
+        },
+        {
+          "period": "2025-09",
+          "value": 393185,
+          "entry": 188384,
+          "exit": 204801,
+          "days": 30
+        },
+        {
+          "period": "2025-10",
+          "value": 399237,
+          "entry": 192274,
+          "exit": 206963,
+          "days": 31
+        },
+        {
+          "period": "2025-11",
+          "value": 400934,
+          "entry": 192814,
+          "exit": 208120,
+          "days": 30
+        },
+        {
+          "period": "2025-12",
+          "value": 431140,
+          "entry": 207214,
+          "exit": 223926,
+          "days": 31
+        },
+        {
+          "period": "2026-01",
+          "value": 405440,
+          "entry": 196453,
+          "exit": 208987,
+          "days": 31
+        },
+        {
+          "period": "2026-02",
+          "value": 362991,
+          "entry": 176325,
+          "exit": 186666,
+          "days": 28
+        },
+        {
+          "period": "2026-03",
+          "value": 409027,
+          "entry": 196760,
+          "exit": 212267,
+          "days": 31
+        },
+        {
+          "period": "2026-04",
+          "value": 393188,
+          "entry": 188956,
+          "exit": 204232,
+          "days": 30
+        },
+        {
+          "period": "2026-05",
+          "value": 403681,
+          "entry": 193044,
+          "exit": 210637,
+          "days": 31
+        },
+        {
+          "period": "2026-06",
+          "value": 386380,
+          "entry": 185339,
+          "exit": 201041,
+          "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 400765,
+          "entry": 192764,
+          "exit": 208001,
+          "days": 31
+        }
+      ]
+    }
+  ],
+  "network": [
+    {
+      "period": "2025-07",
+      "value": 3795351,
+      "entry": 3807081,
+      "exit": 3795351,
+      "days": 31
+    },
+    {
+      "period": "2025-08",
+      "value": 3952785,
+      "entry": 3965638,
+      "exit": 3952785,
+      "days": 31
+    },
+    {
+      "period": "2025-09",
+      "value": 3790656,
+      "entry": 3800310,
+      "exit": 3790656,
+      "days": 30
+    },
+    {
+      "period": "2025-10",
+      "value": 3946902,
+      "entry": 3958768,
+      "exit": 3946902,
+      "days": 31
+    },
+    {
+      "period": "2025-11",
+      "value": 3942842,
+      "entry": 3956671,
+      "exit": 3942842,
+      "days": 30
+    },
+    {
+      "period": "2025-12",
+      "value": 4195832,
+      "entry": 4206023,
+      "exit": 4195832,
+      "days": 31
+    },
+    {
+      "period": "2026-01",
+      "value": 3959190,
+      "entry": 3969480,
+      "exit": 3959190,
+      "days": 31
+    },
+    {
+      "period": "2026-02",
+      "value": 3552331,
+      "entry": 3564853,
+      "exit": 3552331,
+      "days": 28
+    },
+    {
+      "period": "2026-03",
+      "value": 4268382,
+      "entry": 4281973,
+      "exit": 4268382,
+      "days": 31
+    },
+    {
+      "period": "2026-04",
+      "value": 3952448,
+      "entry": 3964557,
+      "exit": 3952448,
+      "days": 30
+    },
+    {
+      "period": "2026-05",
+      "value": 4075260,
+      "entry": 4087975,
+      "exit": 4075260,
+      "days": 31
+    },
+    {
+      "period": "2026-06",
+      "value": 3865976,
+      "entry": 3878606,
+      "exit": 3865976,
+      "days": 30
+    },
+    {
+      "period": "2026-07",
+      "value": 3976430,
+      "entry": 3988722,
+      "exit": 3976430,
+      "days": 31
+    }
+  ]
+}
