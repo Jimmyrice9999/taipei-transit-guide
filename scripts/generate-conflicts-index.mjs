@@ -110,7 +110,17 @@ function collect() {
   const sources = []
 
   for (const file of walk(CONTENT)) {
-    const parsed = matter(fs.readFileSync(file, 'utf8'))
+    let parsed
+    try {
+      parsed = matter(fs.readFileSync(file, 'utf8'))
+    } catch (error) {
+      const relative = path.relative(ROOT, file).replaceAll(path.sep, '/')
+      throw new Error(
+        `Could not parse frontmatter in ${relative} — ` +
+          `${error instanceof Error ? error.message : String(error)}`,
+        { cause: error },
+      )
+    }
     const pageSources = sourceMap(parsed.data)
     const found = sections(parsed.content)
     if (found.length === 0) continue
