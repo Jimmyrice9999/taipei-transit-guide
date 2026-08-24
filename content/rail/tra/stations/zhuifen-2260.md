@@ -1,43 +1,43 @@
 ---
-title: "Chenggong — Taiwan Railways"
-summary: "Chenggong (成功), TDX station 3350, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Zhuifen — Taiwan Railways"
+summary: "Zhuifen (追分), TDX station 2260, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 2
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "3350"
+    value: "2260"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "成功"
+    value: "追分"
     source: tdx-tra-station
   - label: "Administrative city"
     value: "臺中市"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "烏日區"
+    value: "大肚區"
     source: tdx-tra-station
   - label: "Station class code"
     value: "3"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Chengzhui Line (CZ); Western Main Line (WL)"
+    value: "Chengzhui Line (CZ); Western Main Line (Coast Line) (WL-C)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "24.11424"
+    value: "24.12051"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.59021"
+    value: "120.57018"
     unit: degrees
     source: tdx-tra-station
   - label: "Chengzhui Line sequence"
-    value: 1
+    value: 2
     unit: position
     source: tdx-tra-line
   - label: "Chengzhui Line travelled distance"
-    value: "0"
+    value: "2.2"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Chenggong (成功) is station ID 3350 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 3 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Zhuifen (追分) is station ID 2260 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 3 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 414012臺中市烏日區榮泉里中山路三段 550 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 43245臺中市大肚區王田里追分街 13 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Chengzhui Line
 
-On the Chengzhui Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Zhuifen (2260).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Chengzhui Line StationOfLine record, this station has sequence 2 and a supplied travelled distance of 2.2 km.[^tdx-tra-line] The preceding member is Chenggong (3350) and the following member is the last member in this TDX sequence.[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Chengzhui Line (CZ), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Chengzhui Line (CZ), Western Main Line (Coast Line) (WL-C).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 24.11424 and longitude 120.59021.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 24.12051 and longitude 120.57018.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 

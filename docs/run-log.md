@@ -16981,3 +16981,19 @@ operator or government records are fetched and verified.
 Gates: build 2,376 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the two-station
 Chengzhui and Liujia branches (CZ and LJ).
+
+# Run 145 - TRA Chengzhui and Liujia branches (24 August 2026)
+
+The sixteenth TRA content unit adds the two-station Chengzhui Branch (CZ) and
+the two-station Liujia Branch (LJ), including both line pages and four station
+pages. The first build found the new station characters 隘 and 肚 in the
+content subset; regenerating it resolved the postbuild check.
+
+TDX StationOfLine remains the primary source for branch membership and
+sequence, with the existing TRA history, timetable and statistical report
+sources retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,386 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the two-station
+Su’aoxin–Su’ao Branch (SU), then Jiji.

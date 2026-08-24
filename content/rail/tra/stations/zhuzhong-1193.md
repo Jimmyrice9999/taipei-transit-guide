@@ -1,42 +1,42 @@
 ---
-title: "Chenggong — Taiwan Railways"
-summary: "Chenggong (成功), TDX station 3350, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
+title: "Zhuzhong — Taiwan Railways"
+summary: "Zhuzhong (竹中), TDX station 1193, in 新竹縣; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 1
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "3350"
+    value: "1193"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "成功"
+    value: "竹中"
     source: tdx-tra-station
   - label: "Administrative city"
-    value: "臺中市"
+    value: "新竹縣"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "烏日區"
+    value: "竹東鎮"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "3"
+    value: "4"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Chengzhui Line (CZ); Western Main Line (WL)"
+    value: "Liujia Line (LJ); Neiwan Line (NW)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "24.11424"
+    value: "24.78145"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.59021"
+    value: "121.03141"
     unit: degrees
     source: tdx-tra-station
-  - label: "Chengzhui Line sequence"
+  - label: "Liujia Line sequence"
     value: 1
     unit: position
     source: tdx-tra-line
-  - label: "Chengzhui Line travelled distance"
+  - label: "Liujia Line travelled distance"
     value: "0"
     unit: km
     source: tdx-tra-line
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Chenggong (成功) is station ID 3350 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 3 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Zhuzhong (竹中) is station ID 1193 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 414012臺中市烏日區榮泉里中山路三段 550 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 310019新竹縣竹東鎮頭重里竹中路 145 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
-## Position on Chengzhui Line
+## Position on Liujia Line
 
-On the Chengzhui Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Zhuifen (2260).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Liujia Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Liujia (1194).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Chengzhui Line (CZ), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Liujia Line (LJ), Neiwan Line (NW).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 24.11424 and longitude 120.59021.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 24.78145 and longitude 121.03141.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 
