@@ -21,4 +21,4 @@ ridership layer; Route and StationOfRoute returned 404, while station ridership/
 and accessibility remain TBC.
 Part 10 gates: build (2,004), links (262,497), cite, research, claims 0 ASSERTED, facts,
 unit 219, a11y (1,484), geometry, CVD, browser (1,483, zero axe, 596 shots).
-Part 11 architecture primitives (temporal station/route graph, historical gauges, branches, aliases and closures) pass 223 unit tests. Next: TRA current data import.
+Part 11 architecture passes 226 tests; TDX snapshot has 245 stations, 12 lines and 12 shapes. Route/StationOfRoute are 404; aliases, gauge chronology and closed-line inventory remain TBC. Next: TRA line pages.

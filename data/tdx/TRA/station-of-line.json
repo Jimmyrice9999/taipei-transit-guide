@@ -1,0 +1,1622 @@
+[
+  {
+    "LineID": "CZ",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "3350",
+        "StationName": "成功",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "2260",
+        "StationName": "追分",
+        "TraveledDistance": 2.2
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "EL",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "0920",
+        "StationName": "八堵",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "7390",
+        "StationName": "暖暖",
+        "TraveledDistance": 1.6
+      },
+      {
+        "Sequence": 2,
+        "StationID": "7380",
+        "StationName": "四腳亭",
+        "TraveledDistance": 3.9
+      },
+      {
+        "Sequence": 3,
+        "StationID": "7360",
+        "StationName": "瑞芳",
+        "TraveledDistance": 8.9
+      },
+      {
+        "Sequence": 4,
+        "StationID": "7350",
+        "StationName": "猴硐",
+        "TraveledDistance": 13.5
+      },
+      {
+        "Sequence": 5,
+        "StationID": "7330",
+        "StationName": "三貂嶺",
+        "TraveledDistance": 16
+      },
+      {
+        "Sequence": 6,
+        "StationID": "7320",
+        "StationName": "牡丹",
+        "TraveledDistance": 19.5
+      },
+      {
+        "Sequence": 7,
+        "StationID": "7310",
+        "StationName": "雙溪",
+        "TraveledDistance": 22.9
+      },
+      {
+        "Sequence": 8,
+        "StationID": "7300",
+        "StationName": "貢寮",
+        "TraveledDistance": 28.2
+      },
+      {
+        "Sequence": 9,
+        "StationID": "7290",
+        "StationName": "福隆",
+        "TraveledDistance": 32
+      },
+      {
+        "Sequence": 10,
+        "StationID": "7280",
+        "StationName": "石城",
+        "TraveledDistance": 37.4
+      },
+      {
+        "Sequence": 11,
+        "StationID": "7270",
+        "StationName": "大里",
+        "TraveledDistance": 40.1
+      },
+      {
+        "Sequence": 12,
+        "StationID": "7260",
+        "StationName": "大溪",
+        "TraveledDistance": 44.8
+      },
+      {
+        "Sequence": 13,
+        "StationID": "7250",
+        "StationName": "龜山",
+        "TraveledDistance": 49.4
+      },
+      {
+        "Sequence": 14,
+        "StationID": "7240",
+        "StationName": "外澳",
+        "TraveledDistance": 52.9
+      },
+      {
+        "Sequence": 15,
+        "StationID": "7230",
+        "StationName": "頭城",
+        "TraveledDistance": 56.6
+      },
+      {
+        "Sequence": 16,
+        "StationID": "7220",
+        "StationName": "頂埔",
+        "TraveledDistance": 58.8
+      },
+      {
+        "Sequence": 17,
+        "StationID": "7210",
+        "StationName": "礁溪",
+        "TraveledDistance": 62.9
+      },
+      {
+        "Sequence": 18,
+        "StationID": "7200",
+        "StationName": "四城",
+        "TraveledDistance": 67.6
+      },
+      {
+        "Sequence": 19,
+        "StationID": "7190",
+        "StationName": "宜蘭",
+        "TraveledDistance": 71.3
+      },
+      {
+        "Sequence": 20,
+        "StationID": "7180",
+        "StationName": "二結",
+        "TraveledDistance": 77.1
+      },
+      {
+        "Sequence": 21,
+        "StationID": "7170",
+        "StationName": "中里",
+        "TraveledDistance": 78.3
+      },
+      {
+        "Sequence": 22,
+        "StationID": "7160",
+        "StationName": "羅東",
+        "TraveledDistance": 80.1
+      },
+      {
+        "Sequence": 23,
+        "StationID": "7150",
+        "StationName": "冬山",
+        "TraveledDistance": 85.1
+      },
+      {
+        "Sequence": 24,
+        "StationID": "7140",
+        "StationName": "新馬",
+        "TraveledDistance": 89.3
+      },
+      {
+        "Sequence": 25,
+        "StationID": "7130",
+        "StationName": "蘇澳新",
+        "TraveledDistance": 90.2
+      },
+      {
+        "Sequence": 26,
+        "StationID": "7110",
+        "StationName": "永樂",
+        "TraveledDistance": 95.4
+      },
+      {
+        "Sequence": 27,
+        "StationID": "7100",
+        "StationName": "東澳",
+        "TraveledDistance": 101.1
+      },
+      {
+        "Sequence": 28,
+        "StationID": "7090",
+        "StationName": "南澳",
+        "TraveledDistance": 109.1
+      },
+      {
+        "Sequence": 29,
+        "StationID": "7080",
+        "StationName": "武塔",
+        "TraveledDistance": 112.8
+      },
+      {
+        "Sequence": 30,
+        "StationID": "7070",
+        "StationName": "漢本",
+        "TraveledDistance": 125.7
+      },
+      {
+        "Sequence": 31,
+        "StationID": "7060",
+        "StationName": "和平",
+        "TraveledDistance": 130.1
+      },
+      {
+        "Sequence": 32,
+        "StationID": "7050",
+        "StationName": "和仁",
+        "TraveledDistance": 138
+      },
+      {
+        "Sequence": 33,
+        "StationID": "7040",
+        "StationName": "崇德",
+        "TraveledDistance": 148
+      },
+      {
+        "Sequence": 34,
+        "StationID": "7030",
+        "StationName": "新城",
+        "TraveledDistance": 153.3
+      },
+      {
+        "Sequence": 35,
+        "StationID": "7020",
+        "StationName": "景美",
+        "TraveledDistance": 158.6
+      },
+      {
+        "Sequence": 36,
+        "StationID": "7010",
+        "StationName": "北埔",
+        "TraveledDistance": 165.1
+      },
+      {
+        "Sequence": 37,
+        "StationID": "7000",
+        "StationName": "花蓮",
+        "TraveledDistance": 169.7
+      },
+      {
+        "Sequence": 38,
+        "StationID": "6250",
+        "StationName": "吉安",
+        "TraveledDistance": 173.2
+      },
+      {
+        "Sequence": 39,
+        "StationID": "6240",
+        "StationName": "志學",
+        "TraveledDistance": 182
+      },
+      {
+        "Sequence": 40,
+        "StationID": "6230",
+        "StationName": "平和",
+        "TraveledDistance": 185
+      },
+      {
+        "Sequence": 41,
+        "StationID": "6220",
+        "StationName": "壽豐",
+        "TraveledDistance": 186.8
+      },
+      {
+        "Sequence": 42,
+        "StationID": "6210",
+        "StationName": "豐田",
+        "TraveledDistance": 189.6
+      },
+      {
+        "Sequence": 43,
+        "StationID": "6200",
+        "StationName": "林榮新光",
+        "TraveledDistance": 195.8
+      },
+      {
+        "Sequence": 44,
+        "StationID": "6190",
+        "StationName": "南平",
+        "TraveledDistance": 198
+      },
+      {
+        "Sequence": 45,
+        "StationID": "6180",
+        "StationName": "鳳林",
+        "TraveledDistance": 202.2
+      },
+      {
+        "Sequence": 46,
+        "StationID": "6170",
+        "StationName": "萬榮",
+        "TraveledDistance": 207.1
+      },
+      {
+        "Sequence": 47,
+        "StationID": "6160",
+        "StationName": "光復",
+        "TraveledDistance": 212.7
+      },
+      {
+        "Sequence": 48,
+        "StationID": "6150",
+        "StationName": "大富",
+        "TraveledDistance": 220.2
+      },
+      {
+        "Sequence": 49,
+        "StationID": "6140",
+        "StationName": "富源",
+        "TraveledDistance": 223.4
+      },
+      {
+        "Sequence": 50,
+        "StationID": "6130",
+        "StationName": "瑞穗",
+        "TraveledDistance": 232.5
+      },
+      {
+        "Sequence": 51,
+        "StationID": "6120",
+        "StationName": "三民",
+        "TraveledDistance": 241.9
+      },
+      {
+        "Sequence": 52,
+        "StationID": "6110",
+        "StationName": "玉里",
+        "TraveledDistance": 252.7
+      },
+      {
+        "Sequence": 53,
+        "StationID": "6100",
+        "StationName": "東里",
+        "TraveledDistance": 259.5
+      },
+      {
+        "Sequence": 54,
+        "StationID": "6090",
+        "StationName": "東竹",
+        "TraveledDistance": 265.5
+      },
+      {
+        "Sequence": 55,
+        "StationID": "6080",
+        "StationName": "富里",
+        "TraveledDistance": 271.6
+      },
+      {
+        "Sequence": 56,
+        "StationID": "6070",
+        "StationName": "池上",
+        "TraveledDistance": 278.4
+      },
+      {
+        "Sequence": 57,
+        "StationID": "6060",
+        "StationName": "海端",
+        "TraveledDistance": 284.1
+      },
+      {
+        "Sequence": 58,
+        "StationID": "6050",
+        "StationName": "關山",
+        "TraveledDistance": 290.6
+      },
+      {
+        "Sequence": 59,
+        "StationID": "6040",
+        "StationName": "瑞和",
+        "TraveledDistance": 298.1
+      },
+      {
+        "Sequence": 60,
+        "StationID": "6030",
+        "StationName": "瑞源",
+        "TraveledDistance": 300.8
+      },
+      {
+        "Sequence": 61,
+        "StationID": "6020",
+        "StationName": "鹿野",
+        "TraveledDistance": 306.3
+      },
+      {
+        "Sequence": 62,
+        "StationID": "6010",
+        "StationName": "山里",
+        "TraveledDistance": 312.4
+      },
+      {
+        "Sequence": 63,
+        "StationID": "6000",
+        "StationName": "臺東",
+        "TraveledDistance": 320.6
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "JJ",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "3430",
+        "StationName": "二水",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "3431",
+        "StationName": "源泉",
+        "TraveledDistance": 3
+      },
+      {
+        "Sequence": 2,
+        "StationID": "3432",
+        "StationName": "濁水",
+        "TraveledDistance": 10.8
+      },
+      {
+        "Sequence": 3,
+        "StationID": "3433",
+        "StationName": "龍泉",
+        "TraveledDistance": 15.7
+      },
+      {
+        "Sequence": 4,
+        "StationID": "3434",
+        "StationName": "集集",
+        "TraveledDistance": 20
+      },
+      {
+        "Sequence": 5,
+        "StationID": "3435",
+        "StationName": "水里",
+        "TraveledDistance": 27.4
+      },
+      {
+        "Sequence": 6,
+        "StationID": "3436",
+        "StationName": "車埕",
+        "TraveledDistance": 29.6
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "LJ",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "1193",
+        "StationName": "竹中",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "1194",
+        "StationName": "六家",
+        "TraveledDistance": 3.1
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "NW",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "1190",
+        "StationName": "北新竹",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "1191",
+        "StationName": "千甲",
+        "TraveledDistance": 2.2
+      },
+      {
+        "Sequence": 2,
+        "StationID": "1192",
+        "StationName": "新莊",
+        "TraveledDistance": 5.2
+      },
+      {
+        "Sequence": 3,
+        "StationID": "1193",
+        "StationName": "竹中",
+        "TraveledDistance": 6.5
+      },
+      {
+        "Sequence": 4,
+        "StationID": "1201",
+        "StationName": "上員",
+        "TraveledDistance": 9.2
+      },
+      {
+        "Sequence": 5,
+        "StationID": "1202",
+        "StationName": "榮華",
+        "TraveledDistance": 13.6
+      },
+      {
+        "Sequence": 6,
+        "StationID": "1203",
+        "StationName": "竹東",
+        "TraveledDistance": 15.2
+      },
+      {
+        "Sequence": 7,
+        "StationID": "1204",
+        "StationName": "橫山",
+        "TraveledDistance": 18.7
+      },
+      {
+        "Sequence": 8,
+        "StationID": "1205",
+        "StationName": "九讚頭",
+        "TraveledDistance": 20.7
+      },
+      {
+        "Sequence": 9,
+        "StationID": "1206",
+        "StationName": "合興",
+        "TraveledDistance": 22.9
+      },
+      {
+        "Sequence": 10,
+        "StationID": "1207",
+        "StationName": "富貴",
+        "TraveledDistance": 24.3
+      },
+      {
+        "Sequence": 11,
+        "StationID": "1208",
+        "StationName": "內灣",
+        "TraveledDistance": 26.5
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "PX",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "7330",
+        "StationName": "三貂嶺",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "7331",
+        "StationName": "大華",
+        "TraveledDistance": 3.6
+      },
+      {
+        "Sequence": 2,
+        "StationID": "7332",
+        "StationName": "十分",
+        "TraveledDistance": 6.4
+      },
+      {
+        "Sequence": 3,
+        "StationID": "7333",
+        "StationName": "望古",
+        "TraveledDistance": 8.1
+      },
+      {
+        "Sequence": 4,
+        "StationID": "7334",
+        "StationName": "嶺腳",
+        "TraveledDistance": 10.2
+      },
+      {
+        "Sequence": 5,
+        "StationID": "7335",
+        "StationName": "平溪",
+        "TraveledDistance": 11.2
+      },
+      {
+        "Sequence": 6,
+        "StationID": "7336",
+        "StationName": "菁桐",
+        "TraveledDistance": 12.9
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "SA",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "7360",
+        "StationName": "瑞芳",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "7361",
+        "StationName": "海科館",
+        "TraveledDistance": 4.3
+      },
+      {
+        "Sequence": 2,
+        "StationID": "7362",
+        "StationName": "八斗子",
+        "TraveledDistance": 4.7
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "SH",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "4270",
+        "StationName": "中洲",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "4271",
+        "StationName": "長榮大學",
+        "TraveledDistance": 2.6
+      },
+      {
+        "Sequence": 2,
+        "StationID": "4272",
+        "StationName": "沙崙",
+        "TraveledDistance": 5.7
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "SL",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "5000",
+        "StationName": "屏東",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "5010",
+        "StationName": "歸來",
+        "TraveledDistance": 2.6
+      },
+      {
+        "Sequence": 2,
+        "StationID": "5020",
+        "StationName": "麟洛",
+        "TraveledDistance": 4.9
+      },
+      {
+        "Sequence": 3,
+        "StationID": "5030",
+        "StationName": "西勢",
+        "TraveledDistance": 7.3
+      },
+      {
+        "Sequence": 4,
+        "StationID": "5040",
+        "StationName": "竹田",
+        "TraveledDistance": 11
+      },
+      {
+        "Sequence": 5,
+        "StationID": "5050",
+        "StationName": "潮州",
+        "TraveledDistance": 15
+      },
+      {
+        "Sequence": 6,
+        "StationID": "5060",
+        "StationName": "崁頂",
+        "TraveledDistance": 19.9
+      },
+      {
+        "Sequence": 7,
+        "StationID": "5070",
+        "StationName": "南州",
+        "TraveledDistance": 22.3
+      },
+      {
+        "Sequence": 8,
+        "StationID": "5080",
+        "StationName": "鎮安",
+        "TraveledDistance": 26.1
+      },
+      {
+        "Sequence": 9,
+        "StationID": "5090",
+        "StationName": "林邊",
+        "TraveledDistance": 29.2
+      },
+      {
+        "Sequence": 10,
+        "StationID": "5100",
+        "StationName": "佳冬",
+        "TraveledDistance": 33.1
+      },
+      {
+        "Sequence": 11,
+        "StationID": "5110",
+        "StationName": "東海",
+        "TraveledDistance": 36.2
+      },
+      {
+        "Sequence": 12,
+        "StationID": "5120",
+        "StationName": "枋寮",
+        "TraveledDistance": 40.3
+      },
+      {
+        "Sequence": 13,
+        "StationID": "5130",
+        "StationName": "加祿",
+        "TraveledDistance": 45.6
+      },
+      {
+        "Sequence": 14,
+        "StationID": "5140",
+        "StationName": "內獅",
+        "TraveledDistance": 49.1
+      },
+      {
+        "Sequence": 15,
+        "StationID": "5160",
+        "StationName": "枋山",
+        "TraveledDistance": 53.9
+      },
+      {
+        "Sequence": 16,
+        "StationID": "5170",
+        "StationName": "枋野",
+        "TraveledDistance": 60.8
+      },
+      {
+        "Sequence": 17,
+        "StationID": "5190",
+        "StationName": "大武",
+        "TraveledDistance": 84.1
+      },
+      {
+        "Sequence": 18,
+        "StationID": "5200",
+        "StationName": "瀧溪",
+        "TraveledDistance": 95.8
+      },
+      {
+        "Sequence": 19,
+        "StationID": "5210",
+        "StationName": "金崙",
+        "TraveledDistance": 104.2
+      },
+      {
+        "Sequence": 20,
+        "StationID": "5220",
+        "StationName": "太麻里",
+        "TraveledDistance": 115.1
+      },
+      {
+        "Sequence": 21,
+        "StationID": "5230",
+        "StationName": "知本",
+        "TraveledDistance": 126.8
+      },
+      {
+        "Sequence": 22,
+        "StationID": "5240",
+        "StationName": "康樂",
+        "TraveledDistance": 133.9
+      },
+      {
+        "Sequence": 23,
+        "StationID": "6000",
+        "StationName": "臺東",
+        "TraveledDistance": 138.4
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "SU",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "7130",
+        "StationName": "蘇澳新",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "7120",
+        "StationName": "蘇澳",
+        "TraveledDistance": 3.3
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "WL",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "0900",
+        "StationName": "基隆",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "0910",
+        "StationName": "三坑",
+        "TraveledDistance": 1.5
+      },
+      {
+        "Sequence": 2,
+        "StationID": "0920",
+        "StationName": "八堵",
+        "TraveledDistance": 3.9
+      },
+      {
+        "Sequence": 3,
+        "StationID": "0930",
+        "StationName": "七堵",
+        "TraveledDistance": 6.2
+      },
+      {
+        "Sequence": 4,
+        "StationID": "0940",
+        "StationName": "百福",
+        "TraveledDistance": 8.9
+      },
+      {
+        "Sequence": 5,
+        "StationID": "0950",
+        "StationName": "五堵",
+        "TraveledDistance": 11.9
+      },
+      {
+        "Sequence": 6,
+        "StationID": "0960",
+        "StationName": "汐止",
+        "TraveledDistance": 13.3
+      },
+      {
+        "Sequence": 7,
+        "StationID": "0970",
+        "StationName": "汐科",
+        "TraveledDistance": 14.6
+      },
+      {
+        "Sequence": 8,
+        "StationID": "0980",
+        "StationName": "南港",
+        "TraveledDistance": 19.3
+      },
+      {
+        "Sequence": 9,
+        "StationID": "0990",
+        "StationName": "松山",
+        "TraveledDistance": 22.1
+      },
+      {
+        "Sequence": 10,
+        "StationID": "1000",
+        "StationName": "臺北",
+        "TraveledDistance": 28.5
+      },
+      {
+        "Sequence": 11,
+        "StationID": "1001",
+        "StationName": "臺北-環島",
+        "TraveledDistance": 28.5
+      },
+      {
+        "Sequence": 12,
+        "StationID": "1010",
+        "StationName": "萬華",
+        "TraveledDistance": 31.3
+      },
+      {
+        "Sequence": 13,
+        "StationID": "1020",
+        "StationName": "板橋",
+        "TraveledDistance": 35.7
+      },
+      {
+        "Sequence": 14,
+        "StationID": "1030",
+        "StationName": "浮洲",
+        "TraveledDistance": 38.1
+      },
+      {
+        "Sequence": 15,
+        "StationID": "1040",
+        "StationName": "樹林",
+        "TraveledDistance": 41.1
+      },
+      {
+        "Sequence": 16,
+        "StationID": "1050",
+        "StationName": "南樹林",
+        "TraveledDistance": 43.1
+      },
+      {
+        "Sequence": 17,
+        "StationID": "1060",
+        "StationName": "山佳",
+        "TraveledDistance": 45
+      },
+      {
+        "Sequence": 18,
+        "StationID": "1070",
+        "StationName": "鶯歌",
+        "TraveledDistance": 49.4
+      },
+      {
+        "Sequence": 19,
+        "StationID": "1075",
+        "StationName": "鳳鳴",
+        "TraveledDistance": 54.4
+      },
+      {
+        "Sequence": 20,
+        "StationID": "1080",
+        "StationName": "桃園",
+        "TraveledDistance": 57.6
+      },
+      {
+        "Sequence": 21,
+        "StationID": "1090",
+        "StationName": "內壢",
+        "TraveledDistance": 63.5
+      },
+      {
+        "Sequence": 22,
+        "StationID": "1100",
+        "StationName": "中壢",
+        "TraveledDistance": 67.5
+      },
+      {
+        "Sequence": 23,
+        "StationID": "1110",
+        "StationName": "埔心",
+        "TraveledDistance": 73.3
+      },
+      {
+        "Sequence": 24,
+        "StationID": "1120",
+        "StationName": "楊梅",
+        "TraveledDistance": 77.3
+      },
+      {
+        "Sequence": 25,
+        "StationID": "1130",
+        "StationName": "富岡",
+        "TraveledDistance": 84.1
+      },
+      {
+        "Sequence": 26,
+        "StationID": "1140",
+        "StationName": "新富",
+        "TraveledDistance": 85.8
+      },
+      {
+        "Sequence": 27,
+        "StationID": "1150",
+        "StationName": "北湖",
+        "TraveledDistance": 87.3
+      },
+      {
+        "Sequence": 28,
+        "StationID": "1160",
+        "StationName": "湖口",
+        "TraveledDistance": 89.8
+      },
+      {
+        "Sequence": 29,
+        "StationID": "1170",
+        "StationName": "新豐",
+        "TraveledDistance": 96
+      },
+      {
+        "Sequence": 30,
+        "StationID": "1180",
+        "StationName": "竹北",
+        "TraveledDistance": 100.8
+      },
+      {
+        "Sequence": 31,
+        "StationID": "1190",
+        "StationName": "北新竹",
+        "TraveledDistance": 105.2
+      },
+      {
+        "Sequence": 32,
+        "StationID": "1210",
+        "StationName": "新竹",
+        "TraveledDistance": 106.6
+      },
+      {
+        "Sequence": 33,
+        "StationID": "1220",
+        "StationName": "三姓橋",
+        "TraveledDistance": 111.4
+      },
+      {
+        "Sequence": 34,
+        "StationID": "1230",
+        "StationName": "香山",
+        "TraveledDistance": 114.6
+      },
+      {
+        "Sequence": 35,
+        "StationID": "1240",
+        "StationName": "崎頂",
+        "TraveledDistance": 120.8
+      },
+      {
+        "Sequence": 36,
+        "StationID": "1250",
+        "StationName": "竹南",
+        "TraveledDistance": 125.3
+      },
+      {
+        "Sequence": 37,
+        "StationID": "3140",
+        "StationName": "造橋",
+        "TraveledDistance": 130.7
+      },
+      {
+        "Sequence": 38,
+        "StationID": "3150",
+        "StationName": "豐富",
+        "TraveledDistance": 136.6
+      },
+      {
+        "Sequence": 39,
+        "StationID": "3160",
+        "StationName": "苗栗",
+        "TraveledDistance": 140.6
+      },
+      {
+        "Sequence": 40,
+        "StationID": "3170",
+        "StationName": "南勢",
+        "TraveledDistance": 147.2
+      },
+      {
+        "Sequence": 41,
+        "StationID": "3180",
+        "StationName": "銅鑼",
+        "TraveledDistance": 151.4
+      },
+      {
+        "Sequence": 42,
+        "StationID": "3190",
+        "StationName": "三義",
+        "TraveledDistance": 158.8
+      },
+      {
+        "Sequence": 43,
+        "StationID": "3210",
+        "StationName": "泰安",
+        "TraveledDistance": 169.7
+      },
+      {
+        "Sequence": 44,
+        "StationID": "3220",
+        "StationName": "后里",
+        "TraveledDistance": 172.3
+      },
+      {
+        "Sequence": 45,
+        "StationID": "3230",
+        "StationName": "豐原",
+        "TraveledDistance": 179
+      },
+      {
+        "Sequence": 46,
+        "StationID": "3240",
+        "StationName": "栗林",
+        "TraveledDistance": 181.6
+      },
+      {
+        "Sequence": 47,
+        "StationID": "3250",
+        "StationName": "潭子",
+        "TraveledDistance": 184.1
+      },
+      {
+        "Sequence": 48,
+        "StationID": "3260",
+        "StationName": "頭家厝",
+        "TraveledDistance": 186
+      },
+      {
+        "Sequence": 49,
+        "StationID": "3270",
+        "StationName": "松竹",
+        "TraveledDistance": 187.7
+      },
+      {
+        "Sequence": 50,
+        "StationID": "3280",
+        "StationName": "太原",
+        "TraveledDistance": 189.5
+      },
+      {
+        "Sequence": 51,
+        "StationID": "3290",
+        "StationName": "精武",
+        "TraveledDistance": 191.2
+      },
+      {
+        "Sequence": 52,
+        "StationID": "3300",
+        "StationName": "臺中",
+        "TraveledDistance": 193.1
+      },
+      {
+        "Sequence": 53,
+        "StationID": "3310",
+        "StationName": "五權",
+        "TraveledDistance": 195.3
+      },
+      {
+        "Sequence": 54,
+        "StationID": "3320",
+        "StationName": "大慶",
+        "TraveledDistance": 197.4
+      },
+      {
+        "Sequence": 55,
+        "StationID": "3330",
+        "StationName": "烏日",
+        "TraveledDistance": 200.5
+      },
+      {
+        "Sequence": 56,
+        "StationID": "3340",
+        "StationName": "新烏日",
+        "TraveledDistance": 201.4
+      },
+      {
+        "Sequence": 57,
+        "StationID": "3350",
+        "StationName": "成功",
+        "TraveledDistance": 203.8
+      },
+      {
+        "Sequence": 58,
+        "StationID": "3360",
+        "StationName": "彰化",
+        "TraveledDistance": 210.9
+      },
+      {
+        "Sequence": 59,
+        "StationID": "3370",
+        "StationName": "花壇",
+        "TraveledDistance": 217.5
+      },
+      {
+        "Sequence": 60,
+        "StationID": "3380",
+        "StationName": "大村",
+        "TraveledDistance": 222.1
+      },
+      {
+        "Sequence": 61,
+        "StationID": "3390",
+        "StationName": "員林",
+        "TraveledDistance": 225.6
+      },
+      {
+        "Sequence": 62,
+        "StationID": "3400",
+        "StationName": "永靖",
+        "TraveledDistance": 229.1
+      },
+      {
+        "Sequence": 63,
+        "StationID": "3410",
+        "StationName": "社頭",
+        "TraveledDistance": 232.8
+      },
+      {
+        "Sequence": 64,
+        "StationID": "3420",
+        "StationName": "田中",
+        "TraveledDistance": 237.1
+      },
+      {
+        "Sequence": 65,
+        "StationID": "3430",
+        "StationName": "二水",
+        "TraveledDistance": 242.9
+      },
+      {
+        "Sequence": 66,
+        "StationID": "3450",
+        "StationName": "林內",
+        "TraveledDistance": 251
+      },
+      {
+        "Sequence": 67,
+        "StationID": "3460",
+        "StationName": "石榴",
+        "TraveledDistance": 255.8
+      },
+      {
+        "Sequence": 68,
+        "StationID": "3470",
+        "StationName": "斗六",
+        "TraveledDistance": 260.6
+      },
+      {
+        "Sequence": 69,
+        "StationID": "3480",
+        "StationName": "斗南",
+        "TraveledDistance": 268.2
+      },
+      {
+        "Sequence": 70,
+        "StationID": "3490",
+        "StationName": "石龜",
+        "TraveledDistance": 272.1
+      },
+      {
+        "Sequence": 71,
+        "StationID": "4050",
+        "StationName": "大林",
+        "TraveledDistance": 276.7
+      },
+      {
+        "Sequence": 72,
+        "StationID": "4060",
+        "StationName": "民雄",
+        "TraveledDistance": 282.5
+      },
+      {
+        "Sequence": 73,
+        "StationID": "4070",
+        "StationName": "嘉北",
+        "TraveledDistance": 289.2
+      },
+      {
+        "Sequence": 74,
+        "StationID": "4080",
+        "StationName": "嘉義",
+        "TraveledDistance": 291.8
+      },
+      {
+        "Sequence": 75,
+        "StationID": "4090",
+        "StationName": "水上",
+        "TraveledDistance": 298.4
+      },
+      {
+        "Sequence": 76,
+        "StationID": "4100",
+        "StationName": "南靖",
+        "TraveledDistance": 301
+      },
+      {
+        "Sequence": 77,
+        "StationID": "4110",
+        "StationName": "後壁",
+        "TraveledDistance": 307
+      },
+      {
+        "Sequence": 78,
+        "StationID": "4120",
+        "StationName": "新營",
+        "TraveledDistance": 314.7
+      },
+      {
+        "Sequence": 79,
+        "StationID": "4130",
+        "StationName": "柳營",
+        "TraveledDistance": 318
+      },
+      {
+        "Sequence": 80,
+        "StationID": "4140",
+        "StationName": "林鳳營",
+        "TraveledDistance": 321.9
+      },
+      {
+        "Sequence": 81,
+        "StationID": "4150",
+        "StationName": "隆田",
+        "TraveledDistance": 327.4
+      },
+      {
+        "Sequence": 82,
+        "StationID": "4160",
+        "StationName": "拔林",
+        "TraveledDistance": 329.6
+      },
+      {
+        "Sequence": 83,
+        "StationID": "4170",
+        "StationName": "善化",
+        "TraveledDistance": 334.2
+      },
+      {
+        "Sequence": 84,
+        "StationID": "4180",
+        "StationName": "南科",
+        "TraveledDistance": 337.1
+      },
+      {
+        "Sequence": 85,
+        "StationID": "4190",
+        "StationName": "新市",
+        "TraveledDistance": 341.8
+      },
+      {
+        "Sequence": 86,
+        "StationID": "4200",
+        "StationName": "永康",
+        "TraveledDistance": 346.8
+      },
+      {
+        "Sequence": 87,
+        "StationID": "4210",
+        "StationName": "大橋",
+        "TraveledDistance": 350.5
+      },
+      {
+        "Sequence": 88,
+        "StationID": "4220",
+        "StationName": "臺南",
+        "TraveledDistance": 353.2
+      },
+      {
+        "Sequence": 89,
+        "StationID": "4250",
+        "StationName": "保安",
+        "TraveledDistance": 360.8
+      },
+      {
+        "Sequence": 90,
+        "StationID": "4260",
+        "StationName": "仁德",
+        "TraveledDistance": 362.2
+      },
+      {
+        "Sequence": 91,
+        "StationID": "4270",
+        "StationName": "中洲",
+        "TraveledDistance": 364.7
+      },
+      {
+        "Sequence": 92,
+        "StationID": "4290",
+        "StationName": "大湖",
+        "TraveledDistance": 367.6
+      },
+      {
+        "Sequence": 93,
+        "StationID": "4300",
+        "StationName": "路竹",
+        "TraveledDistance": 370.6
+      },
+      {
+        "Sequence": 94,
+        "StationID": "4310",
+        "StationName": "岡山",
+        "TraveledDistance": 378.4
+      },
+      {
+        "Sequence": 95,
+        "StationID": "4320",
+        "StationName": "橋頭",
+        "TraveledDistance": 382
+      },
+      {
+        "Sequence": 96,
+        "StationID": "4330",
+        "StationName": "楠梓",
+        "TraveledDistance": 386.2
+      },
+      {
+        "Sequence": 97,
+        "StationID": "4340",
+        "StationName": "新左營",
+        "TraveledDistance": 391.3
+      },
+      {
+        "Sequence": 98,
+        "StationID": "4350",
+        "StationName": "左營",
+        "TraveledDistance": 393.3
+      },
+      {
+        "Sequence": 99,
+        "StationID": "4360",
+        "StationName": "內惟",
+        "TraveledDistance": 394.4
+      },
+      {
+        "Sequence": 100,
+        "StationID": "4370",
+        "StationName": "美術館",
+        "TraveledDistance": 396.1
+      },
+      {
+        "Sequence": 101,
+        "StationID": "4380",
+        "StationName": "鼓山",
+        "TraveledDistance": 397.3
+      },
+      {
+        "Sequence": 102,
+        "StationID": "4390",
+        "StationName": "三塊厝",
+        "TraveledDistance": 399
+      },
+      {
+        "Sequence": 103,
+        "StationID": "4400",
+        "StationName": "高雄",
+        "TraveledDistance": 399.9
+      },
+      {
+        "Sequence": 104,
+        "StationID": "4410",
+        "StationName": "民族",
+        "TraveledDistance": 401.2
+      },
+      {
+        "Sequence": 105,
+        "StationID": "4420",
+        "StationName": "科工館",
+        "TraveledDistance": 402.3
+      },
+      {
+        "Sequence": 106,
+        "StationID": "4430",
+        "StationName": "正義",
+        "TraveledDistance": 404.1
+      },
+      {
+        "Sequence": 107,
+        "StationID": "4440",
+        "StationName": "鳳山",
+        "TraveledDistance": 405.4
+      },
+      {
+        "Sequence": 108,
+        "StationID": "4450",
+        "StationName": "後庄",
+        "TraveledDistance": 409.3
+      },
+      {
+        "Sequence": 109,
+        "StationID": "4460",
+        "StationName": "九曲堂",
+        "TraveledDistance": 413.5
+      },
+      {
+        "Sequence": 110,
+        "StationID": "4470",
+        "StationName": "六塊厝",
+        "TraveledDistance": 418.5
+      },
+      {
+        "Sequence": 111,
+        "StationID": "5000",
+        "StationName": "屏東",
+        "TraveledDistance": 420.8
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  },
+  {
+    "LineID": "WL-C",
+    "LineNo": "",
+    "Stations": [
+      {
+        "Sequence": 0,
+        "StationID": "1250",
+        "StationName": "竹南",
+        "TraveledDistance": 0
+      },
+      {
+        "Sequence": 1,
+        "StationID": "2110",
+        "StationName": "談文",
+        "TraveledDistance": 4.5
+      },
+      {
+        "Sequence": 2,
+        "StationID": "2120",
+        "StationName": "大山",
+        "TraveledDistance": 11.3
+      },
+      {
+        "Sequence": 3,
+        "StationID": "2130",
+        "StationName": "後龍",
+        "TraveledDistance": 15
+      },
+      {
+        "Sequence": 4,
+        "StationID": "2140",
+        "StationName": "龍港",
+        "TraveledDistance": 18.6
+      },
+      {
+        "Sequence": 5,
+        "StationID": "2150",
+        "StationName": "白沙屯",
+        "TraveledDistance": 26.7
+      },
+      {
+        "Sequence": 6,
+        "StationID": "2160",
+        "StationName": "新埔",
+        "TraveledDistance": 29.8
+      },
+      {
+        "Sequence": 7,
+        "StationID": "2170",
+        "StationName": "通霄",
+        "TraveledDistance": 35.6
+      },
+      {
+        "Sequence": 8,
+        "StationID": "2180",
+        "StationName": "苑裡",
+        "TraveledDistance": 41.7
+      },
+      {
+        "Sequence": 9,
+        "StationID": "2190",
+        "StationName": "日南",
+        "TraveledDistance": 49.4
+      },
+      {
+        "Sequence": 10,
+        "StationID": "2200",
+        "StationName": "大甲",
+        "TraveledDistance": 54.1
+      },
+      {
+        "Sequence": 11,
+        "StationID": "2210",
+        "StationName": "臺中港",
+        "TraveledDistance": 59.3
+      },
+      {
+        "Sequence": 12,
+        "StationID": "2220",
+        "StationName": "清水",
+        "TraveledDistance": 65.3
+      },
+      {
+        "Sequence": 13,
+        "StationID": "2230",
+        "StationName": "沙鹿",
+        "TraveledDistance": 68.5
+      },
+      {
+        "Sequence": 14,
+        "StationID": "2240",
+        "StationName": "龍井",
+        "TraveledDistance": 73.1
+      },
+      {
+        "Sequence": 15,
+        "StationID": "2250",
+        "StationName": "大肚",
+        "TraveledDistance": 78.1
+      },
+      {
+        "Sequence": 16,
+        "StationID": "2260",
+        "StationName": "追分",
+        "TraveledDistance": 83.1
+      },
+      {
+        "Sequence": 17,
+        "StationID": "3360",
+        "StationName": "彰化",
+        "TraveledDistance": 90.3
+      }
+    ],
+    "UpdateTime": "2026-08-24T04:38:59+08:00"
+  }
+]

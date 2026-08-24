@@ -16707,3 +16707,36 @@ references, overlapping route versions, invalid intervals and invalid gauges.
 The full unit suite passed 223/223. No TRA page or historical transport claim
 was published in this architecture-only unit; the next batch is the live TDX
 pull and source-backed TRA line inventory.
+
+# Run 129 - TRA TDX current snapshot and line inventory (24 August 2026)
+
+## Part 11 - live structured data
+
+The authenticated TDX pull was run with paced requests and committed under
+`data/tdx/TRA/`. It returned 245 Station records, 12 StationOfLine records and
+12 Shape records. The 12 line IDs are `CZ`, `EL`, `JJ`, `LJ`, `NW`, `PX`, `SA`,
+`SH`, `SL`, `SU`, `WL` and `WL-C`; the raw localized line names and all station
+coordinates, addresses, update stamps, sequences, chainage values and WKT
+geometries are retained. A first unpaced write attempt received HTTP 429; the
+fetcher now honors Retry-After, retries at most four times, and paces pages.
+
+Full primary pages fetched and read were the [TRA route-construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5),
+the [TRA timetable index](https://www.railway.gov.tw/tra-tip-web/tip/tip00C/tipC21/view?proCode=8ae4cac3756b7b41017572e9077f1790&subCode=8ae4cac3756b7b41017573e352ae18f8),
+the [TRA network report PDF](https://www.railway.gov.tw/tra-tip-web/tip/file/486e23bd-740a-46a1-bb75-f68442125a2a),
+the [Railway Bureau construction-history PDF](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5),
+and the [railway terminology PDF](https://www.railway.gov.tw/tra-tip-web/tip/file/9dcdec22-11a1-45e5-9da4-54b93fd03f7b). The
+research report records the original-language sentences and source roles.
+
+Conflicts retained: TDX currently returns 245 station records, while the
+operator report says 241 stations at the end of 2023; the report's 1,065 km
+total and 551.2/423.3/90.5 km family totals are not reconstructed by summing
+the overlapping TDX line records; and TDX's 12 API line records are a different
+layer from the operator's Western/Eastern/South Link and four-branch timetable
+groupings. No values were averaged or selected.
+
+Checked failures: `/Rail/TRA/Route` and `/Rail/TRA/StationOfRoute` returned HTTP
+404 with `Resouce Not Found`; both are recorded in `data/tdx/TRA/meta.json` and
+the research file. Historical gauge-change chronology, a complete closed-line
+legal inventory, and the century of station aliases remain TBC. The full
+architecture/data test suite passed 226/226; research passed (133 files, 565
+checked failures). No TRA content page was generated in this data-only batch.

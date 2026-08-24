@@ -1,0 +1,43 @@
+{
+  "datasets": {
+    "Route": {
+      "error": "{\"message\":\"Resouce Not Found\"}",
+      "note": "Checked live; response failed and is not used as data.",
+      "records": 0,
+      "status": 404,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Route?%24format=JSON&%24top=1000&%24skip=0"
+    },
+    "Shape": {
+      "error": null,
+      "note": "Full paged response fetched from the live TDX endpoint.",
+      "records": 12,
+      "status": 200,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Shape?%24format=JSON&%24top=1000&%24skip=0"
+    },
+    "Station": {
+      "error": null,
+      "note": "Full paged response fetched from the live TDX endpoint.",
+      "records": 245,
+      "status": 200,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Station?%24format=JSON&%24top=1000&%24skip=0"
+    },
+    "StationOfLine": {
+      "error": null,
+      "note": "Full paged response fetched from the live TDX endpoint.",
+      "records": 12,
+      "status": 200,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0"
+    },
+    "StationOfRoute": {
+      "error": "{\"message\":\"Resouce Not Found\"}",
+      "note": "Checked live; response failed and is not used as data.",
+      "records": 0,
+      "status": 404,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfRoute?%24format=JSON&%24top=1000&%24skip=0"
+    }
+  },
+  "operator": "TRA",
+  "publisher": "Taiwan Railways Administration and Taiwan MOTC, TDX",
+  "publisherOriginal": "交通部運輸資料流通服務平台；臺灣鐵路公司",
+  "retrieved": "2026-08-24"
+}
