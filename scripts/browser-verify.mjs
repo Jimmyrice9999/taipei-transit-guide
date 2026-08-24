@@ -248,6 +248,13 @@ const PAGE_TYPES = [
   { name: 'krtc-line', url: '/rail/krtc/lines/red-line/' },
   { name: 'krtc-stations', url: '/rail/krtc/stations/' },
   { name: 'krtc-station', url: '/rail/krtc/stations/formosa-boulevard-r10/' },
+  /* Run 154: Taoyuan's Green Line is a project registry pending its own TDX
+     operating dataset, so verify its system, line, station index and code page. */
+  { name: 'tymc-system', url: '/rail/tymc/' },
+  { name: 'tymc-lines', url: '/rail/tymc/lines/' },
+  { name: 'tymc-line', url: '/rail/tymc/lines/green-line/' },
+  { name: 'tymc-stations', url: '/rail/tymc/stations/' },
+  { name: 'tymc-station', url: '/rail/tymc/stations/jiande-xingfeng-g01/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },

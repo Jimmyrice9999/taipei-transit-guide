@@ -1,10 +1,12 @@
 # For Jamie
 
-## Active handoff — 24 August 2026
+## Active handoff — 25 August 2026
 
 CI hard gate is green: Actions run 342 passed Tests, Build for Pages and deployment.
-Parts 0–11 are complete. TRA has a 245-station, 12-line TDX snapshot and current pages; Route/StationOfRoute are 404, while aliases, gauge chronology, ridership and closed-line inventory remain TBC.
-Parts 2–10 ship ridership, fleet, systems, fares/accessibility, projects, TOD, glossary/conflicts, interactions and THSR; all retain their stated TBC boundaries.
-Part 12 has begun with KRTC: TDX plus KRTC/MTBU primary data, three line pages and 77 station pages. TDX and government route lengths conflict (29.72/13.12 km versus 28.3/14.4 km); ridership, facilities, fleet, depots, operations, LRT coordinates and construction history remain TBC.
-KRTC gates: build 2,529, cite/research clean, claims 0 ASSERTED, unit 229/229, browser zero axe across 1,823 pages, 631 screenshots, 86 print PDFs; 320px reflow is clean after the heading fix.
-Next: Taoyuan Green Line, Taichung remaining lines, then New Taipei projects; continue sequentially through Parts 13–15.
+Parts 0–11 are complete; Part 12 now includes KRTC plus the Taoyuan Green Line project registry.
+Taoyuan adds 21 project stations, a Green Line page, TYMC routing, TDX coverage checks and primary DORTS research.
+Conflict: DORTS reports 72.19% programme progress while package values range 6.12%–93.85%; TDX currently exposes only Airport MRT A.
+Taoyuan TBC: ridership, coordinates/geometry, final G02/G16–G19 names, facilities, accessibility, fares, operations, fleet and depots.
+Gates: build 2,576 / postbuild 2,734; cite/research/conflicts clean, claims 0 ASSERTED, unit 231/231, browser zero axe across 1,848 pages, 666 screenshots, 86 PDFs.
+The 320px Taoyuan station and 1440px line screenshots were inspected; no reflow or keyboard/accessibility findings.
+Next: Taichung remaining lines, then New Taipei projects; continue sequentially through Parts 13–15.

@@ -25,6 +25,7 @@ import type { StationResearch } from './station-research.ts'
 import type { Source } from './sources.ts'
 import type { RailFormerName, RailRouteMembership, RailStatus } from './rail-architecture.ts'
 import { KRTC_LRT_STATIONS, KRTC_METRO_STATIONS, getKrtcRoute } from './krtc.ts'
+import { TAOYUAN_GREEN_STATIONS } from './taoyuan-green.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
 export type PlannedInterchange = {
@@ -163,6 +164,31 @@ const KRTC_STATIONS: Station[] = [
 ]
 
 const KRTC_BY_CODE = new Map(KRTC_STATIONS.map((station) => [station.code.toUpperCase(), station]))
+const TYMC_GREEN_STATIONS: Station[] = TAOYUAN_GREEN_STATIONS.map((station, index) => ({
+  code: station.code,
+  line: 'G',
+  operator: 'TYMC',
+  name: station.name,
+  nameZh: station.nameZh,
+  district: '',
+  address: station.location,
+  location: station.location,
+  locationSource: 'Taoyuan DORTS Green Line station table',
+  sources: [],
+  prose: [],
+  lat: null,
+  lon: null,
+  sequence: index + 1,
+  chainageKm: null,
+  interchange: [],
+  structure: station.structure,
+  engineering: '',
+  exits: null,
+  planned: [],
+  recordSource: 'primary-research' as const,
+  research: null,
+}))
+const TYMC_GREEN_BY_CODE = new Map(TYMC_GREEN_STATIONS.map((station) => [station.code.toUpperCase(), station]))
 
 /*
  * Keyed on the UPPERCASED code, because lookups uppercase too.
@@ -185,8 +211,9 @@ for (const station of STATIONS) {
 export function getStation(code: string, operator?: string): Station | undefined {
   const normalized = code.trim().toUpperCase()
   if (operator?.trim().toUpperCase() === 'KRTC') return KRTC_BY_CODE.get(normalized)
+  if (operator?.trim().toUpperCase() === 'TYMC') return BY_KEY.get(`TYMC:${normalized}`) ?? TYMC_GREEN_BY_CODE.get(normalized)
   if (operator?.trim()) return BY_KEY.get(`${operator.trim().toUpperCase()}:${normalized}`)
-  return BY_CODE.get(normalized) ?? KRTC_BY_CODE.get(normalized)
+  return BY_CODE.get(normalized) ?? KRTC_BY_CODE.get(normalized) ?? TYMC_GREEN_BY_CODE.get(normalized)
 }
 
 /**
@@ -212,6 +239,7 @@ export function getLineStations(lineCode: string, operator?: string): Station[] 
         chainageKm: route.stations[index].cumulativeDistance,
       }))
   }
+  if (namespace === 'TYMC' && prefix === 'G') return TYMC_GREEN_STATIONS
   return STATIONS.filter(
     (s) => s.line === prefix && (!namespace || s.operator.toUpperCase() === namespace),
   ).sort((a, b) => a.sequence - b.sequence)
@@ -246,6 +274,10 @@ export function getStationHref(code: string, operator?: string): string | null {
   if (station?.operator.toUpperCase() === 'KRTC') {
     const slug = station.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
     return `/rail/krtc/stations/${slug}-${station.code.toLowerCase()}/`
+  }
+  if (station?.operator.toUpperCase() === 'TYMC' && station.line === 'G') {
+    const slug = station.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || station.code.toLowerCase()
+    return `/rail/tymc/stations/${slug}-${station.code.toLowerCase()}/`
   }
   if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) return null
   if (station.operator.toUpperCase() === 'TMRT') {

@@ -1299,6 +1299,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The official statement records the Control Yuan’s criticism that public entities supplied 37.42% and describes the supervision and BOT-principle dispute."
+  - id: "rail-tymc-lines-green-line-dorts-green"
+    title: "Taoyuan Metro Green Line project page"
+    titleOriginal: "桃園市政府捷運工程局-捷運綠線"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: "rail-tymc-lines-green-line-dorts-rail-progress"
+    title: "Taoyuan rail construction progress overview"
+    titleOriginal: "軌道建設進度總覽"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?n=23173"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Current programme-level progress record: Green Line construction stage and 72.19% total progress."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -2633,6 +2651,21 @@ The original financial model did not remain unchanged. The Railway Bureau says a
 - [Taiwan High-Speed Rail project](https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-24.[^rail-thsr-lines-thsr-rb-thsr]
 - [Investigation into whether government investment in the High-Speed Rail company violated BOT principles](https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-bot]
 - [High-Speed Rail did not fulfil the government-zero-investment commitment](https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-funding]
+
+## Taoyuan Green Line — Construction approvals and progress
+
+Discussed on [Taoyuan Green Line](/rail/tymc/lines/green-line/) in the source page's “Construction approvals and progress” section.[^rail-tymc-lines-green-line-dorts-green]
+
+### Construction approvals and progress
+
+The feasibility study was approved by the Executive Yuan on 26 August 2011, the environmental assessment on 9 September 2014 and the comprehensive planning report on 20 April 2016.[^rail-tymc-lines-green-line-dorts-green] The bureau records the GM01 systems package award in 2018, GC01’s elevated civil package in 2018, GC02 and GC03 underground packages in 2019, and the GC05 lifts-and-escalators package in 2022.[^rail-tymc-lines-green-line-dorts-green] It separately records GD04A detailed design and GC04B’s later elevated civil package, with the package progress values dated to June 2026.[^rail-tymc-lines-green-line-dorts-green]
+
+The current construction overview lists the Green Line as being in the construction stage at 72.19% overall progress.[^rail-tymc-lines-green-line-dorts-rail-progress] That programme figure is not silently substituted for any package figure: the line page records both the overview value and the bureau’s individual GM01, GC01, GC02, GC03, GC05 and GC04B values as different measurements with different dates.[^rail-tymc-lines-green-line-dorts-green][^rail-tymc-lines-green-line-dorts-rail-progress]
+
+#### Sources for this entry
+
+- [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-green]
+- [Taoyuan rail construction progress overview](https://dorts.tycg.gov.tw/cp.aspx?n=23173) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-rail-progress]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 

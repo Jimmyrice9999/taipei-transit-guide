@@ -1,0 +1,36 @@
+# Taoyuan Metro Green Line — research report
+
+> Corpus warning: files under `docs/research/` are leads and working notes, not sources. Every published claim below was checked against the linked primary page or live data response.
+
+**Checked:** 24 August 2026. **Subject:** the Taoyuan Metro Green Line project registry, current construction record, station table and TDX coverage boundary.
+
+## What is established
+
+- The full Taoyuan Department of Rapid Transit Systems project page describes the Green Line as 27.8 km with 21 stations: 10 underground and 11 elevated. It describes the alignment from G01 in Bade through Taoyuan and Luzhu, with branches toward Airport MRT A11 and A16. **PRIMARY, High confidence:** current government project page, read in full. Original-language basis: `捷運綠線全長27.8公里，共設21座車站(地下10站、高架11站)` and the page’s G01–G19/G15a/G15b station table. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The same page records an estimated project cost of NT$982.64 billion, a 41.77% self-financing rate, NT$397.44 billion in central support and NT$172.12 billion in Taoyuan funding. **PRIMARY, High confidence:** the figures are in the current project finance table. Original-language basis: the table fields `計畫總經費`, `自償率`, `中央補助` and `桃園市政府`. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The current station table identifies G01–G15, G15a, G15b and G16–G19, and gives each row a location and civil form. It explicitly says: `G16、G17、G18及G19站車站名稱尚未命名。` G02 remains a provisional project name because the road at the station site has not yet received its final name. **PRIMARY, High confidence:** full station table, not a map transcription. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The project page records the Executive Yuan approvals as feasibility study on 26 August 2011, environmental assessment on 9 September 2014 and comprehensive planning on 20 April 2016. Original-language basis: `可行性研究：100年8月26日行政院核定。`, `環境影響評估：103年9月9日` and `綜合規劃報告書：105年4月20日行政院核定。` **PRIMARY, High confidence:** approval timeline on the full DORTS page. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The project page gives a main-line opening target of 2030. Original-language basis: `捷運綠線預估於119年主線通車。` **PRIMARY, High confidence:** this is a project target, not an operating timetable. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The current DORTS construction overview lists the Green Line as `施工階段` with `計畫總進度72.19%`. **PRIMARY, High confidence:** programme-level overview fetched in full on 24 August 2026. [dorts-rail-progress](https://dorts.tycg.gov.tw/cp.aspx?n=23173)
+- The project page separately lists civil, systems, detailed-design and station-equipment packages. The checked values are GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% as of March 2026, and GC04B 6.12% as of June 2026. **PRIMARY, High confidence:** package rows on the full project page; dates are retained because these are not one common measurement date. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- DORTS publishes a separate record linking the approved Green Line comprehensive-planning report volumes. **PRIMARY, High confidence:** official report record fetched in full; the linked volumes are the source family for deeper civil, financial and design questions not answered by the summary page. Original-language title: `桃園捷運綠線綜合規劃報告書`. [dorts-green-report](https://dorts.tycg.gov.tw/News_Content.aspx?n=23199&s=1582920)
+- A live TDX check of the TYMC Line, Station, StationOfRoute, Route, Shape, LineTransfer and FirstLastTimetable families on 24 August 2026 returned Airport MRT records, including one `LineID` `A`, but no `LineID` `G` or Green Line station/route record. **PRIMARY, High confidence for the checked response boundary:** direct MOTC TDX responses; this does not establish that no future Green Line dataset will be published. [tdx-tymc-green-check](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TYMC?$format=JSON&$top=1000&$skip=0)
+
+## Conflicts
+
+- The DORTS construction overview gives 72.19% for the whole Green Line programme, while the project page gives package-specific values ranging from 6.12% to 93.85%, with package dates ranging from March to June 2026. These are not interchangeable measures: the first is a programme total, while the others are individual contracts or design/equipment packages. Every value is retained in the content and no average or “best” progress value is chosen. [dorts-rail-progress](https://dorts.tycg.gov.tw/cp.aspx?n=23173) [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The DORTS project registry establishes a planned 21-station Green Line, while the live TDX TYMC operating dataset exposes only the Airport MRT A line. This is a publication-state conflict between a government project registry and an operating-data API, not evidence that the project stations are open or that the project does not exist. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) [tdx-tymc-green-check](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TYMC?$format=JSON&$top=1000&$skip=0)
+
+## Checked and failed
+
+- **TDX Green Line station and operating coverage** — checked 24 August 2026. The TYMC Line response returned one Airport MRT `A` record; the corresponding station, station-of-route, route, shape, transfer and first/last-timetable pulls returned Airport MRT data or no Green Line record. The project registry is therefore kept as primary research data and is not fabricated into TDX records.
+- **Green Line ridership** — checked 24 August 2026. The live TYMC TDX families pulled for this unit did not expose a Green Line ridership table because no Green Line operating line was returned. Ridership remains TBC.
+- **Station coordinates and geometry** — checked 24 August 2026. The DORTS project page supplies a station table and route description but the checked pages did not provide a machine-readable Green Line geometry or station coordinate table. Coordinates and geometry remain TBC.
+- **Station facilities and operations** — checked 24 August 2026. The project page does not establish lifts, tactile routes, accessible toilets, nursing rooms, platform gaps, first/last trains, headways, fares, signalling, power or depot allocation for the not-yet-operating Green Line. Those fields remain TBC rather than being copied from Airport MRT records.
+
+## Stated gaps
+
+- The final names for G16–G19 and the final status/name of G02 need a later DORTS station-name record or approved design volume.
+- Opening dates remain TBC beyond the published 2030 main-line target. A construction update, commissioning notice and operator timetable would settle the distinction.
+- Ridership, fleet, depot/workshop allocation, signalling, power, design capacity, headways, accessibility and platform-screen-door history require operator records, approved technical volumes, procurement documents or later operating data.
+- A GIS or TDX Green Line geometry response would settle coordinates, route shape and exact interchange geometry. The checked DORTS project page and report-record page are not sufficient for those fields.

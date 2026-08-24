@@ -17140,3 +17140,44 @@ is clean: 1,823-page axe pass with zero violations, 631 screenshots, all
 curated KRTC keyboard/accessibility probes, and 86 print PDFs. The KRTC station
 heading received a shrinkable text wrapper after the first 320px pass exposed
 28 real overflows; the fresh matrix has no reflow findings.
+
+# Run 154 - Taoyuan Metro Green Line project registry (25 August 2026)
+
+Part 12's second unit adds the Taoyuan Metro Green Line as a separate TYMC
+project namespace: one system page, one line page, two type indexes and 21
+station pages. The live TDX TYMC probe returned the Airport MRT A record but no
+G record in the Line, Station, StationOfRoute, Route, Shape, LineTransfer or
+FirstLastTimetable families, so the Green Line remains a DORTS primary-research
+registry rather than being presented as an operating dataset.
+
+The full primary sources were the DORTS Green Line project page
+(https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132), the DORTS rail construction
+overview (https://dorts.tycg.gov.tw/cp.aspx?n=23173), the approved comprehensive-
+planning report record
+(https://dorts.tycg.gov.tw/News_Content.aspx?n=23199&s=1582920), and the live
+TDX Line response
+(https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TYMC?$format=JSON&$top=1000&$skip=0).
+The project page establishes 27.8 km, 21 stations, 10 underground and 11
+elevated stations, the finance table, approval dates, station table, package
+milestones and a 2030 main-line target. The station pages are 344–359 body
+words; the line page is 534 body words; the 21 station bodies total 7,331 words.
+
+Conflicts are retained: DORTS's programme overview is 72.19% overall, while
+the package records are GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%,
+GC05 29.29%, GD04A 80.14% (March 2026) and GC04B 6.12% (June 2026). These
+measure different packages and dates. DORTS publishes 21 planned stations;
+TDX currently publishes only the operating Airport MRT A record, with no G
+record. No value was averaged or selected.
+
+TBC: Green Line ridership, coordinates and geometry, opening dates beyond the
+2030 target, final G02/G16–G19 names, facilities, accessibility, fares,
+headways, fleet, depots, signalling, power and platform-screen-door history.
+The source families searched and failed are recorded in
+docs/research/rail/taoyuan-green.md.
+
+Gates: build generated 2,576 pages and postbuild checked 2,734; cite, research,
+conflicts check and unit 231/231 pass, with claims 0 ASSERTED. Browser
+verification is clean: zero axe violations across 1,848 pages, 666 screenshots,
+all curated TYMC keyboard/accessibility probes, and 86 print PDFs. The 320px
+station and 1440px line screenshots were inspected; no reflow finding. Generated
+audit JSONs, screenshots and PDFs were restored and are not part of the commit.

@@ -25,6 +25,7 @@ import { STATIONS } from '@/lib/stations'
 import { THSR_STATIONS } from '@/lib/thsr'
 import { TRA_STATION_COUNT } from '@/lib/tra'
 import { KRTC_STATION_COUNT } from '@/lib/krtc'
+import { TAOYUAN_GREEN_STATION_COUNT } from '@/lib/taoyuan-green'
 import { getFolderContent, getPages, getSection, getSystem, getSystems, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ system: string }> }
@@ -83,7 +84,9 @@ export default async function RailSystemPage({ params }: Props) {
           ? TRA_STATION_COUNT
           : system === 'krtc'
             ? KRTC_STATION_COUNT
-            : 0
+            : system === 'tymc'
+              ? TAOYUAN_GREEN_STATION_COUNT
+              : 0
 
   return (
     <PageShell accent={NEUTRAL_LINE}>

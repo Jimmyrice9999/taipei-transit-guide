@@ -233,6 +233,18 @@ const OFF_PLATFORM: Record<
       accessed: '2026-08-24',
     },
   },
+  [lineKey('TYMC', 'G')]: {
+    nameEn: 'Green Line',
+    nameZh: '綠線',
+    colour: '#5DA131',
+    operator: 'TYMC',
+    colourSource: {
+      kind: 'operator',
+      label: "Taoyuan Department of Rapid Transit Systems' official Green Line route map; green route stroke read from the published map image",
+      url: 'https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132',
+      accessed: '2026-08-24',
+    },
+  },
 }
 
 /**
@@ -367,6 +379,8 @@ export function branchTint(line: Line, amount = 0.45): string {
 export const LINES: Line[] = DISPLAY_ORDER.map(([operator, code]) => derive(operator, code))
 const KRTC_LINES: Line[] = ['R', 'O', 'C'].map((code) => derive('KRTC', code))
 const KRTC_BY_KEY = new Map(KRTC_LINES.map((line) => [line.key, line]))
+const TYMC_GREEN_LINES: Line[] = [derive('TYMC', 'G')]
+const TYMC_GREEN_BY_KEY = new Map(TYMC_GREEN_LINES.map((line) => [line.key, line]))
 
 const BY_KEY = new Map(LINES.map((l) => [l.key, l]))
 const BY_CODE = buildBareLineIndex(LINES)
@@ -407,7 +421,10 @@ export function getLine(code: string | undefined | null, operator?: string | nul
   // Preserve the lookup contract: a caller must pass the code token itself,
   // not a string that only becomes valid after whitespace is silently removed.
   if (code !== code.trim()) return undefined
-  if (operator) return BY_KEY.get(lineKey(operator, code)) ?? KRTC_BY_KEY.get(lineKey(operator, code))
+  if (operator) {
+    const key = lineKey(operator, code)
+    return BY_KEY.get(key) ?? KRTC_BY_KEY.get(key) ?? TYMC_GREEN_BY_KEY.get(key)
+  }
   return resolveBareLine(BY_CODE, code)
 }
 
