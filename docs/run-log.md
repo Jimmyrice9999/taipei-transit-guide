@@ -16838,3 +16838,18 @@ filled from an unverified secondary lead.
 Gates: build 2,194 pages; Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: finish the
 Western Main Line sequence before expanding the Eastern station pages.
+
+# Run 136 - TRA Western station batch and font subset (24 August 2026)
+
+The seventh TRA content unit adds Western Main Line station positions 91–105.
+The build found four glyphs absent from the existing content subset; the font
+pipeline was regenerated and the final export covers 2,224 pages with no Han
+subset gaps. The Western sequence is now within its final seven members.
+
+Sources, conflicts and TBC boundaries remain unchanged from the earlier TRA
+batches. No ridership, facilities, service pattern, alias, gauge chronology or
+closed-alignment claim was filled without a fetched primary source.
+
+Gates: build 2,224 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: finish Western
+and begin Eastern station batches.
