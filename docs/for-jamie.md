@@ -2,7 +2,7 @@
 
 ## Active handoff - 25 August 2026
 
-CI hard gate is green: Actions run 342 passed Tests, Build for Pages and deployment.
+CI hard gate was green on Actions run 342; run 384 exposed and locally reproduced a fact-checker false positive on a `tdx-tmrt` footnote id, now fixed before the replacement run.
 Parts 0-11 are complete; Part 12 now includes KRTC, Taoyuan Green, Taichung Blue, Purple, Orange, Orange Sea and Red.
 The Sea Line page is a 715-word feasibility entry: the January interim proposal is approximately 16.50 km, 10 stations, one level-five depot, with Sanmin Road and Wuqi Fishing Port branches.
 The current TCRT page says no route is final; the revised interim report was submitted on 6 July 2026 and remains under review.

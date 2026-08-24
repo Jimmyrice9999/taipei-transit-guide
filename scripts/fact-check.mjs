@@ -564,8 +564,14 @@ const ok = (label) => checks.push(label)
   })()
 
   const checkAbsenceClaims = (where, text) => {
+    // Footnote ids such as [^tdx-tmrt] and HTML attributes such as
+    // href="#source-tdx-tmrt" are citations, not prose claims.  Searching the
+    // raw source made the TDX id itself look like the start of a sentence and
+    // then attached a later "do not provide" clause to it.  Keep this check
+    // about what a reader can read, while preserving the actual claim text.
+    const searchable = text.replace(/\[\^[^\]]+\]/g, ' ').replace(/<[^>]+>/g, ' ')
     NEGATIVE_CLAIM.lastIndex = 0
-    for (const match of text.matchAll(NEGATIVE_CLAIM)) {
+    for (const match of searchable.matchAll(NEGATIVE_CLAIM)) {
       const object = match[2]
       const entry = ABSENCE_REGISTER.find((e) => e.about.test(object))
 
