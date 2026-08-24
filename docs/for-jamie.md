@@ -1,24 +1,24 @@
 # For Jamie
 
 ## Active handoff - 24 August 2026
-Parts 0-5 are complete. Parts 6-15 remain.
+Parts 0-6 are complete. Parts 7-15 remain.
 Part 1 CI hard gate is green: Actions run 342 completed Tests, Build for Pages
 and deployment after adversarial warning attribution was fixed.
 Part 2 ships dated ridership data and panels for TRTC, NTMC and TYMC.
 Part 3 ships the family/lot fleet roster; unit-level records remain TBC.
-Part 4 ships `/rail/technology/metro-operations/` and its research report;
-signalling, power, depot roles, headways, TDX first/last data and platform-door
-history are covered, while capacity comparisons and complete equipment
-registers remain TBC after primary-source searches.
-Part 5 ships the fare/concession timeline and station accessibility layer.
-TRTC's 121 station API records are committed; station pages expose lifts,
-step-free routes, tactile paths, toilets, nursing rooms and platform-gap TBCs.
-The fare page is 816 sourced words. Fare-gazette completeness, Sanying's
-normal post-trial table, TYMC/TRTC nursing-room locations and platform gaps
-remain TBC after the searches recorded in the research file.
-
-Fresh Part 5 gates passed: build, cite, facts, research, claims (0 ASSERTED),
-219 unit tests, a11y, links, geometry, CVD and browser verification. Axe found
-zero violations across 1,459 pages; 512 screenshots and print checks completed.
-Parts 1-5 are pushed. The known determinism artefact remains unchanged.
-Next: Part 6 projects built, building, cancelled and abandoned alignments.
+Part 4 ships metro systems and operations evidence; thin supplier, capacity,
+depot-allocation and station-door registers remain explicitly TBC.
+Part 5 ships the fare/concession timeline and station accessibility layer;
+platform gaps and incomplete nursing-room locations remain TBC.
+Part 6 ships `/rail/projects/project-status/`, a 705-word project index and
+research report covering under construction, approved, advancing, proposed,
+rejected and unresolved cases. Construction-cancelled-after-start and the
+complete abandoned-alignment catalogue remain TBC after the official searches.
+The source review corrected the corpus's collapsed Sanying-Bade approvals and
+overconfident Danhai Phase 2 status, and preserves all measured conflicts.
+Fresh Part 6 gates passed: build, cite, research, facts, claims (0 ASSERTED),
+219 unit tests, a11y with no warnings, links, geometry, CVD and browser.
+Browser verification covered 1,461 pages, 519 screenshots, axe/tree/keyboard
+probes and representative print PDFs; the new page was viewed at 320/400% and
+1440px. Part 6 is committed and pushed; generated artifacts are not staged.
+Next: Part 7 TOD and joint development sites, cross-linked to stations.

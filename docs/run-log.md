@@ -16416,3 +16416,48 @@ The build generated 1,812 routes and 1,960 postbuild pages; axe found zero
 violations across 1,458 pages, with 505 screenshots and all representative
 print PDFs. The new page was visually checked at 320/400% and 1440px. Generated
 audit JSONs and browser artifacts were restored/not staged.
+
+# Run 123 - rail projects status index (24 August 2026)
+
+## Part 6 - built, building, approved, proposed, rejected and unresolved
+
+The audit added `content/rail/projects/project-status.md`, a 705-word sourced
+project index, plus the research report at
+`docs/research/rail/projects/project-status.md`. It keeps DORTS's current
+construction categories separate from planned routes and preserves the
+North/South Ring status wording conflict, the ROC 115 Xinyi target versus its
+current inspection status, and the 4.4 km original versus 3.32 km revised
+Danhai Phase 2 alignments. The source record did not establish a named
+Taipei-region project cancelled after construction began, so that category is
+TBC rather than filled with an inferred example.
+
+Full primary pages fetched and read:
+
+- https://www.dorts.gov.taipei/Content_List.aspx?n=6AB1B4653CB9DFAE
+- https://www.dorts.gov.taipei/Content_List.aspx?n=DB5E985E6B7CAB80
+- https://www.dorts.gov.taipei/cp.aspx?n=F47E41B6C8884DC6
+- https://www.dorts.gov.taipei/cp.aspx?n=7CEEE7ECF48CE83F&s=A536EA54CD8F7E7F
+- https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA
+- https://www.dorts.gov.taipei/News_Content.aspx?Create=1&n=2A66A485FACB0D5B&s=5154D7C19D53C545&sms=87415A8B9CE81B16
+- https://www.dorts.ntpc.gov.tw/about/routeProgress/8pRG2lkJmb5z
+- https://wedid.ntpc.gov.tw/governance/detail/6YdLEB3olR7b
+- https://wedid.ntpc.gov.tw/governance/detail/Go5lQMN0lQkY
+- https://www.dorts.ntpc.gov.tw/service/information01
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=bff303d28030a2dd5daf2a0f641d7702&id=e8ca970cde5c00e1
+- https://www.rb.gov.tw/public/files/artsinfo/1756447737-2.pdf
+
+The current full-page records correct the corpus's collapsed Sanying-Bade
+approval stages and its overconfident Danhai Phase 2 status; the exact
+Gregorian date implied by the corpus's Xinyi end-August expectation remains
+unverified. Other TBCs are a complete abandoned-alignment catalogue, a
+construction-cancelled case, and comparable progress percentages; DORTS,
+New Taipei DORTS, Railway Bureau budget/approval material, project pages,
+gazette and audit leads were searched and are recorded in the research file.
+
+Verification: build generated 1,817 routes and postbuild checked 1,965 pages;
+cite resolved 5,069 citations; research, facts, claims (0 ASSERTED),
+test:unit (219/219), a11y (no warnings), check, geometry and CVD passed.
+Browser verification was clean: 1,461 reflow/axe pages, 519 screenshots,
+keyboard/tree probes and all representative print PDFs. The new page was
+visually checked at 320/400% and 1440px; generated audits and screenshots
+were restored and are not staged.

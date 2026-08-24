@@ -184,6 +184,9 @@ const PAGE_TYPES = [
   { name: 'rail-cable-lines', url: '/rail/cable/lines/' },
   { name: 'rail-cable-line-maokong', url: '/rail/cable/lines/maokong-gondola/' },
   { name: 'rail-technology', url: '/rail/technology/' },
+  /* Run 123: project status is a new long-form rail section with its own
+     construction/proposal tables and conflict notes. */
+  { name: 'rail-project-status', url: '/rail/projects/project-status/' },
   { name: 'rail-operators', url: '/rail/operators/' },
   { name: 'rail-operator-trtc', url: '/rail/operators/trtc/' },
   { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },

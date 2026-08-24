@@ -64,7 +64,7 @@ const CONTENT_DIR = path.join(process.cwd(), 'content')
  * An entity page (a line, a fleet, a depot) keeps the spine because "which
  * stretch of the line this concerns" is one of its facts.
  */
-export const ARTICLE_TYPES = new Set(['history'])
+export const ARTICLE_TYPES = new Set(['history', 'projects'])
 
 /** Prefix for GitHub Pages subpath hosting; empty when served from the root. */
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''

@@ -27,7 +27,8 @@ facts:
     source: tpass-launch
 specs:
   - label: First MRT–bus discount
-    value: 25 November 1996
+    value: 1996-11-25
+    unit: date
     source: taipei-transfer-history
   - label: Two-way ordinary-card transfer discount
     value: NT$8 within the current one-hour window
