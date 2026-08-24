@@ -187,6 +187,7 @@ const PAGE_TYPES = [
   /* Run 123: project status is a new long-form rail section with its own
      construction/proposal tables and conflict notes. */
   { name: 'rail-project-status', url: '/rail/projects/project-status/' },
+  { name: 'rail-tod-joint-development', url: '/rail/projects/tod-joint-development/' },
   { name: 'rail-operators', url: '/rail/operators/' },
   { name: 'rail-operator-trtc', url: '/rail/operators/trtc/' },
   { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },

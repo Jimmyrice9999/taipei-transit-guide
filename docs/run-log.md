@@ -16461,3 +16461,65 @@ Browser verification was clean: 1,461 reflow/axe pages, 519 screenshots,
 keyboard/tree probes and all representative print PDFs. The new page was
 visually checked at 320/400% and 1440px; generated audits and screenshots
 were restored and are not staged.
+
+# Run 124 - TOD and joint development index (24 August 2026)
+
+## Part 7 - land, buildings, value allocation and disputes
+
+The audit added `content/rail/projects/tod-joint-development.md`, a 1,254-word
+sourced index, and the matching research report. It treats TOD as a reader
+label while retaining the primary sources' land-development and joint-
+development categories. The page is cross-linked to the committed station
+pages for Daan Park (R06), Daan (R05), Zhongshan (R11/G14), Xinpu (BL08),
+Chiang Kai-Shek Memorial Hall (R08/G10), and Xindian District Office (G02).
+
+The page records Daan Forest Park J2/J3 and Zhongshan J1/J2 with site area,
+floor area, use-permit or progress dates and station interfaces; Taipei's
+incentive-floor-area and value-conversion rules; named investors and contract
+dates from the public-land register; New Taipei's development sequence;
+Circular Line portfolio and public-return figures; and the Meihe City case.
+It does not turn a contract into proof of completion or a building-value
+calculation into a universal revenue-share percentage. The Judicial Yuan
+Interpretation No. 743 is published as the legal dispute, while the older
+Meihe City research is identified as secondary government research.
+
+Full primary pages fetched and read:
+
+- https://www.dorts.gov.taipei/Content_List.aspx?n=6AB1B4653CB9DFAE
+- https://www.dorts.gov.taipei/News_toggle.aspx?PageSize=200&n=2A66A485FACB0D5B&page=1&sms=87415A8B9CE81B16
+- https://www.dorts.gov.taipei/cp.aspx?n=811989757BA2C23B
+- https://ebook.dorts.gov.taipei/ebook/no18/files/basic-html/page122.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no51/files/basic-html/page17.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no52/files/basic-html/page145.html
+- https://ebook.dorts.gov.taipei/JRTST/ebook/no53/files/basic-html/page135.html
+- https://nsr.dorts.gov.taipei/Dorts/uploads/LatestNews/20251103122311_1_11411%E6%8D%B7%E9%81%8B%E8%81%AF%E5%90%88%E9%96%8B%E7%99%BC%E5%A4%A7%E6%A8%93%28%E5%95%86%E3%80%81%E8%BE%A6%E3%80%81%E4%BD%8F%E5%AE%85%29%E6%AF%8F%E5%9D%AA%E6%AF%8F%E6%9C%88%E7%A7%9F%E9%87%91%E4%B8%80%E8%A6%BD%E8%A1%A8.pdf
+- https://pppproject.gov.taipei/Content_List.aspx?n=1FC101BC0318680D
+- https://www.dorts.ntpc.gov.tw/service/landdevelopment01
+- https://www.dorts.ntpc.gov.tw/documentary/articleInfo/JnldAOVVmY9v?page=1
+- https://www.dorts.ntpc.gov.tw/ethics/circular_Line01
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=b132417c20cac512d4ccb1b9d00a382a&id=e8ca970cde5c00e1
+- https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201406150005&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27
+- https://web.law.ntpc.gov.tw/Scripts/FLAWDOC03.aspx?ccode=D&cno=743&rtype=C
+
+Conflicts retained: Taipei's half-incentive-floor-area rule is not the same
+thing as a universal cash revenue share; Daan's basic-design area (23,499.96
+m²) differs from the investor permit design (34,644.77 m²); Zhongshan J1 and
+J2 are separate development records with different sites and floor areas;
+New Taipei's public-return totals and value-allocation formula are not
+interchangeable with Taipei's; and the current DORTS office, rental inventory,
+and public-land register describe different stages and fields. TBC: a complete
+developer/floor-area/completion/revenue/dispute table for every site, final
+completion for Zhongshan J1, and a station-code mapping for future-labelled
+Y-series sites. The DORTS and NTPC land-development pages, technical journals,
+public-land register, rental table, current finance/integrity pages, official
+news, government research, and Judicial Yuan material were searched; failed
+or incomplete searches are recorded in the research file.
+
+Verification: build generated 1,819 routes and postbuild checked 1,967 pages;
+cite resolved 5,085 citations, research was clean at 130 files/555 checked
+failures, and claims remained at 0 ASSERTED (14,874 sourced, 4,313 TBC).
+Facts, unit tests (219/219), a11y with no warnings, links, geometry and CVD
+passed. Browser verification was clean across 1,462 pages: 526 screenshots,
+responsive reflow, keyboard/tree probes, zero axe violations and all
+representative print PDFs. The new page was viewed at 320/400% and 1440px.
+Generated audit JSONs, screenshots and PDFs are not staged.
