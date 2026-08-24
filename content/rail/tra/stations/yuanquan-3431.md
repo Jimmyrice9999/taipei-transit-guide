@@ -1,15 +1,15 @@
 ---
-title: "Ershui — Taiwan Railways"
-summary: "Ershui (二水), TDX station 3430, in 彰化縣; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Yuanquan — Taiwan Railways"
+summary: "Yuanquan (源泉), TDX station 3431, in 彰化縣; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 2
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "3430"
+    value: "3431"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "二水"
+    value: "源泉"
     source: tdx-tra-station
   - label: "Administrative city"
     value: "彰化縣"
@@ -18,26 +18,26 @@ facts:
     value: "二水鄉"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "2"
+    value: "5"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Jiji Line (JJ); Western Main Line (WL)"
+    value: "Jiji Line (JJ)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "23.81321"
+    value: "23.79845"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.61805"
+    value: "120.64211"
     unit: degrees
     source: tdx-tra-station
   - label: "Jiji Line sequence"
-    value: 1
+    value: 2
     unit: position
     source: tdx-tra-line
   - label: "Jiji Line travelled distance"
-    value: "0"
+    value: "3"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Ershui (二水) is station ID 3430 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 2 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Yuanquan (源泉) is station ID 3431 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 5 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 530018彰化縣二水鄉光化村光文路 1 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 530017彰化縣二水鄉合興村英義路 (無站房).[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Jiji Line
 
-On the Jiji Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Yuanquan (3431).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Jiji Line StationOfLine record, this station has sequence 2 and a supplied travelled distance of 3 km.[^tdx-tra-line] The preceding member is Ershui (3430) and the following member is Zhuoshui (3432).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Jiji Line (JJ), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Jiji Line (JJ).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 23.81321 and longitude 120.61805.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 23.79845 and longitude 120.64211.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 

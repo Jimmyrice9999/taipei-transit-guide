@@ -17013,3 +17013,19 @@ and closed alignments remain TBC.
 Gates: build 2,390 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the seven-station
 Jiji Branch (JJ).
+
+# Run 147 - TRA Jiji branch (24 August 2026)
+
+The eighteenth TRA content unit adds the complete seven-station Jiji Branch
+(JJ), including its line page and station pages. The first postbuild pass
+found the new character 濁 in the TRA index, station index and Zhuoshui page;
+regenerating the content subset resolved the check.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the existing TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,404 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the seven-station
+Pingxi Branch (PX).
