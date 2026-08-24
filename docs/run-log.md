@@ -16811,3 +16811,18 @@ left TBC.
 Gates: build 2,134 pages; Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: continue the
 Western Main Line sequence.
+
+# Run 134 - TRA Western station batch and font subset (24 August 2026)
+
+The fifth TRA content unit adds Western Main Line station positions 61–75.
+Three new Han glyphs were found only after the export completed, so the
+content subset was regenerated and the clean rebuild now covers 2,164 pages.
+
+Sources, conflicts and TBC boundaries are unchanged: full TDX Station,
+StationOfLine and Shape responses plus the full TRA history, timetable and
+statistical report pages. Ridership, accessibility facilities, service
+patterns, aliases, gauge chronology and closed alignments remain TBC.
+
+Gates: build 2,164 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: continue the
+Western Main Line sequence.

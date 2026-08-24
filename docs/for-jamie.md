@@ -21,4 +21,4 @@ ridership layer; Route and StationOfRoute returned 404, while station ridership/
 and accessibility remain TBC.
 Part 10 gates: build (2,004), links (262,497), cite, research, claims 0 ASSERTED, facts,
 unit 219, a11y (1,484), geometry, CVD, browser (1,483, zero axe, 596 shots).
-Part 11 architecture and first content units pass 226 tests; TRA has a 245-station, 12-line TDX snapshot, Western Main Line plus 60 station pages, an Eastern line page, and current Han font subsets. Route/StationOfRoute are 404; aliases, gauge chronology, ridership and closed-line inventory remain TBC. Next: continue Western, then Eastern and branch pages.
+Part 11 architecture and first content units pass 226 tests; TRA has a 245-station, 12-line TDX snapshot, Western Main Line plus 75 station pages, an Eastern line page, and current Han font subsets. Route/StationOfRoute are 404; aliases, gauge chronology, ridership and closed-line inventory remain TBC. Next: continue Western, then Eastern and branch pages.
