@@ -1245,6 +1245,105 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The operator publishes the four-car formation, 80 km/h maximum and approximately 386 passengers per Bombardier train at five standing passengers per square metre."
+  - id: "rail-projects-project-status-taichung-blue"
+    title: "Taichung Metro Blue Line project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-捷運藍線"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C46"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full project page for the Blue Line's route scope and implementation milestones."
+  - id: "rail-projects-project-status-taichung-purple"
+    title: "Taichung Metro Purple Line project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-屯區捷運環狀線（紫線）"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full project page for route scope, feasibility chronology and current central-review status."
+  - id: "rail-projects-project-status-taichung-purple-july"
+    title: "Purple Line feasibility study under review"
+    titleOriginal: "藍線開工、紫線接力！中市提前布局屯區捷運環狀線 打造完整捷運路網"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full July 2026 release for the Purple Line's rounded length, station count and estimated cost."
+  - id: "rail-projects-project-status-taichung-orange"
+    title: "Taichung Airport MRT Orange Line project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-機場捷運（橘線）"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C99"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project page for the Orange Line's feasibility chronology, 18 August 2026 approval, route scope and aggregate station count."
+  - id: "rail-projects-project-status-taichung-orange-sea"
+    title: "Orange Line extension to coastal districts project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-機場捷運（橘線）延伸海線地區"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C158"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project page for the Orange Sea extension's feasibility funding, interim-report chronology and under-review status."
+  - id: "rail-projects-project-status-dorts-east-contract"
+    title: "Xinyi Line East Extension CR580C contract"
+    titleOriginal: "捷運信義線東延段CR580C區段標工程"
+    publisher: "Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)"
+    url: "https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full contract page: the 17 October 2016 start, one station, crossover, tail tracks and shield-tunnel works."
+  - id: "rail-projects-project-status-dorts-115-plan"
+    title: "DORTS 2026 policy priorities"
+    titleOriginal: "捷運工程局115年度施政重點"
+    publisher: "Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)"
+    url: "https://www.dorts.gov.taipei/Content_List.aspx?n=DB5E985E6B7CAB80"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full 2026 priorities: Xinyi east extension entering service after inspection; 11.02 km and 9 Taipei stations for the Taipei section of Minsheng–Xizhi; and three construction routes totalling 43.41 km and 37 stations: Circular east, Circular north/south, and Wanda Phase 1."
+  - id: "rail-projects-project-status-dorts-construction-targets"
+    title: "DORTS construction completion targets"
+    titleOriginal: "工程管理>捷運在建工程(施工中)各線預定完工年期？"
+    publisher: "Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)"
+    url: "https://www.dorts.gov.taipei/News_Content.aspx?Create=1&n=2A66A485FACB0D5B&s=5154D7C19D53C545&sms=87415A8B9CE81B16"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full FAQ published 29 August 2022 and updated 24 March 2026: ROC 118 for Wanda Phase 1, ROC 115 for Xinyi east, ROC 120 for North/South Ring, and ROC 123 for East Ring. These are dated targets, not opening guarantees."
+  - id: "rail-projects-project-status-ntpc-bade"
+    title: "Sanying Line extension to Bade, Taoyuan"
+    titleOriginal: "三鶯線延伸桃園八德段"
+    publisher: "New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局)"
+    url: "https://wedid.ntpc.gov.tw/governance/detail/6YdLEB3olR7b"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project record: LB12 tail track to LB14/G04, 4.03 km, three stations, two elevated and one underground shared with Taoyuan Green Line G04; feasibility approved 2019, comprehensive plan approved 1 August 2025, detailed design begun 1 July 2026."
+  - id: "rail-projects-project-status-ntpc-blue2"
+    title: "Danhai Blue Sea Line Phase 2"
+    titleOriginal: "淡海輕軌藍海線第二期"
+    publisher: "New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局)"
+    url: "https://wedid.ntpc.gov.tw/governance/detail/Go5lQMN0lQkY"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project record: original 4.4 km six-station alignment, revised riverside 3.32 km six-station alignment, plan revision under review, urban-plan approval in May 2026, and advance contract works begun 2 June 2025."
+  - id: "rail-projects-project-status-rb-115-rail"
+    title: "Railway Bureau 2026 transport and rail construction budget"
+    titleOriginal: "交通部鐵道局及所屬115年度歲出計畫提要及分支計畫概況表"
+    publisher: "Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)"
+    url: "https://www.rb.gov.tw/public/files/artsinfo/1756447737-2.pdf"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full 204-page budget document: the approved A14 Airport MRT station works and the 15.59 km, 13-station Nangang–Badu commuter-rail/metro project, with the 113–123 ROC-year programme."
   - id: "rail-projects-taichung-purple-line-tcrt-purple"
     title: "Tun District MRT Loop Line (Purple Line) project page"
     titleOriginal: "臺中市政府捷運工程局-捷運路網-屯區捷運環狀線（紫線）"
@@ -2621,6 +2720,55 @@ being chosen.
 - [New medium-capacity EMUs for the Neihu Line — door control and accessible warnings](https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page41.html) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-dorts-doors]
 - [New medium-capacity EMUs for the Neihu Line — contract, formation and principal specification](https://ebook.dorts.gov.taipei/JRTST/ebook/no33/files/basic-html/page30.html) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-dorts-design-spec]
 - [Taipei Metro network introduction — Wenhu Line vehicles](https://www.metro.taipei/cp.aspx?n=ccf30033e6ed8008&s=405306CC7ACD137B) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-23.[^rail-metro-rolling-stock-innovia-apm-256-c370-trtc-network]
+
+## Taipei-region rail projects — Approved or advancing extensions
+
+Discussed on [Taipei-region rail projects](/rail/projects/project-status/) in the source page's “Approved or advancing extensions” section.[^rail-projects-project-status-taichung-blue]
+
+### Approved or advancing extensions
+
+Taichung's Blue Line is documented separately as an approved project moving into route construction.[^rail-projects-project-status-taichung-blue] The full project page gives 24.78 km, 20 stations and one depot; current route contracts cover BC11 (B01–B03) and BC12 (B04–B08).[^rail-projects-project-status-taichung-blue] See the [Taichung Metro Blue Line project page](/rail/projects/taichung-blue-line/) for the dated approval and procurement record.
+
+Taichung's Purple Line remains a feasibility-stage project under central review.[^rail-projects-project-status-taichung-purple] Its full project page gives approximately 16.31 km and 16 planned stations, while the July 2026 release gives the estimated NT$690.87 billion cost.[^rail-projects-project-status-taichung-purple][^rail-projects-project-status-taichung-purple-july] See the [Taichung Metro Purple Line project page](/rail/projects/taichung-purple-line/) for its dated review chronology and route boundary.
+
+Taichung's Airport Orange Line feasibility study was approved by the Executive Yuan on 18 August 2026.[^rail-projects-project-status-taichung-orange] The current project page gives approximately 29.23 km and 26 planned stations; see the [Taichung Airport MRT Orange Line project page](/rail/projects/taichung-orange-line/) for its approval sequence, forecast boundary and pre-construction status.[^rail-projects-project-status-taichung-orange]
+
+The Orange Line Sea Line extension remains a feasibility-stage project with an interim revised report under review.[^rail-projects-project-status-taichung-orange-sea] Its January public proposal is approximately 16.50 km with 10 stations and branches toward Sanmin Road and Wuqi Fishing Port; see the [Orange Line Sea Line extension project page](/rail/projects/taichung-orange-sea-extension/) for the planning boundary, mode debate and source conflicts.[^rail-projects-project-status-taichung-orange-sea]
+
+The Xinyi East Extension is a one-station, approximately 1.4 km extension with
+tail tracks; its CR580C contract page records a 17 October 2016 start.[^rail-projects-project-status-dorts-east-contract]
+DORTS's 2026 priorities describe the construction fences coming down and the
+extension entering service after preliminary inspection, while its older FAQ
+gives ROC 115 as the dated completion target.[^rail-projects-project-status-dorts-115-plan][^rail-projects-project-status-dorts-construction-targets]
+
+The Sanying–Bade extension is approved at the comprehensive-planning level but
+is not presented here as a construction start. The current New Taipei record
+describes a 4.03 km, three-station route from LB12 to a jointly built `LB14`/G04,
+and records detailed design beginning 1 July 2026.[^rail-projects-project-status-ntpc-bade] Danhai Blue Sea
+Line Phase 2 has moved further than a sketch but is still a changing project:
+the original route was 4.4 km, the revised riverside route is 3.32 km, and
+advance road, utility and track works began in June 2025 while the revised plan
+continued through review.[^rail-projects-project-status-ntpc-blue2]
+
+The Railway Bureau's current budget also separates approved projects from
+municipal route proposals. It includes the `A14` Airport MRT station works and
+the 15.59 km, 13-station Nangang–Badu project, which is planned to connect the
+Taipei-region metro systems, TRA and HSR; this budget record gives its programme
+as ROC 113–123.[^rail-projects-project-status-rb-115-rail]
+
+#### Sources for this entry
+
+- [Taichung Metro Blue Line project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C46) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-blue]
+- [Taichung Metro Purple Line project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C142) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-purple]
+- [Purple Line feasibility study under review](https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-purple-july]
+- [Taichung Airport MRT Orange Line project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C99) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-orange]
+- [Orange Line extension to coastal districts project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C158) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-orange-sea]
+- [Xinyi Line East Extension CR580C contract](https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-east-contract]
+- [DORTS 2026 policy priorities](https://www.dorts.gov.taipei/Content_List.aspx?n=DB5E985E6B7CAB80) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-115-plan]
+- [DORTS construction completion targets](https://www.dorts.gov.taipei/News_Content.aspx?Create=1&n=2A66A485FACB0D5B&s=5154D7C19D53C545&sms=87415A8B9CE81B16) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-construction-targets]
+- [Sanying Line extension to Bade, Taoyuan](https://wedid.ntpc.gov.tw/governance/detail/6YdLEB3olR7b) — primary; New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-ntpc-bade]
+- [Danhai Blue Sea Line Phase 2](https://wedid.ntpc.gov.tw/governance/detail/Go5lQMN0lQkY) — primary; New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-ntpc-blue2]
+- [Railway Bureau 2026 transport and rail construction budget](https://www.rb.gov.tw/public/files/artsinfo/1756447737-2.pdf) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-24.[^rail-projects-project-status-rb-115-rail]
 
 ## Taichung Metro Purple Line — Published scope and conflicts
 

@@ -204,6 +204,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full current project page for the Orange Line's feasibility chronology, 18 August 2026 approval, route scope and aggregate station count.
+  - id: taichung-orange-sea
+    title: Orange Line extension to coastal districts project page
+    titleOriginal: 臺中市政府捷運工程局-捷運路網-機場捷運（橘線）延伸海線地區
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C158
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full current project page for the Orange Sea extension's feasibility funding, interim-report chronology and under-review status.
 ---
 
 ## How to read project status
@@ -249,6 +258,8 @@ Taichung's Blue Line is documented separately as an approved project moving into
 Taichung's Purple Line remains a feasibility-stage project under central review.[^taichung-purple] Its full project page gives approximately 16.31 km and 16 planned stations, while the July 2026 release gives the estimated NT$690.87 billion cost.[^taichung-purple][^taichung-purple-july] See the [Taichung Metro Purple Line project page](/rail/projects/taichung-purple-line/) for its dated review chronology and route boundary.
 
 Taichung's Airport Orange Line feasibility study was approved by the Executive Yuan on 18 August 2026.[^taichung-orange] The current project page gives approximately 29.23 km and 26 planned stations; see the [Taichung Airport MRT Orange Line project page](/rail/projects/taichung-orange-line/) for its approval sequence, forecast boundary and pre-construction status.[^taichung-orange]
+
+The Orange Line Sea Line extension remains a feasibility-stage project with an interim revised report under review.[^taichung-orange-sea] Its January public proposal is approximately 16.50 km with 10 stations and branches toward Sanmin Road and Wuqi Fishing Port; see the [Orange Line Sea Line extension project page](/rail/projects/taichung-orange-sea-extension/) for the planning boundary, mode debate and source conflicts.[^taichung-orange-sea]
 
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^dorts-east-contract]

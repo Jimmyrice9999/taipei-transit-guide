@@ -17349,3 +17349,83 @@ findings, curated keyboard/ARIA probes pass, zero axe violations across 1,851
 pages, 687 screenshots and 98 print PDFs. The 320px and 1440px Orange
 screenshots were inspected. Generated audit JSONs, screenshots and PDFs were
 restored and are not part of the commit.
+
+# Run 158 - Taichung Orange Line Sea Line extension (25 August 2026)
+
+## Sourced
+
+Part 12's sixth unit adds the Orange Line's Sea Line extension as a separate
+feasibility-project page. The full current TCRT page establishes the planning
+boundary, purpose, NT$20m study budget, MOTC/local funding split and chronology
+through the 6 July 2026 revised interim report:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C158
+
+The full 9 January 2026 official release establishes the interim proposal of
+approximately 16.50 km, 10 stations, one level-five depot, a main section, a
+Sanmin Road branch and a Wuqi Fishing Port branch, with links to the Blue Line
+and TRA QingShui Station:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1307
+
+The full 13-page public-meeting deck establishes the interim labels `OE1`-`OE7`,
+`OE10`-`OE12`, the elevated/at-grade split, intended transfers and the ROC 140
+model outputs of 58,363 passengers per day and 3,507 passengers per kilometre
+per day. It compares 3,507 with the 6,000 medium-capacity and 3,500 light-rail
+reference thresholds, while saying the final route follows central approval:
+https://tcrt.taichung.gov.tw/df_ufiles/160/橘線延伸海線可研地方說明會簡報v4_20260115.pdf
+
+The full 17-page meeting record establishes the unresolved public requests for
+medium-capacity or same-system service, concerns about mixed traffic and heavy
+trucks, questions about `OE10`/`B05`, and requests for different station
+locations:
+https://tcrt.taichung.gov.tw/df_ufiles/030/1150115-橘線延伸海線第一次地方說明會會議紀錄V4(2).pdf
+The full three-page official summary repeats the interim 16.50 km/10-station
+scope and the airport/Blue Line/TRA/Wuqi Fishing Port connection purpose:
+https://tcrt.taichung.gov.tw/df_ufiles/160/說明會民眾摘要V1.pdf
+The full current network page confirms the extension remains in the medium-term
+feasibility group with its interim revised report under review:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C44
+
+## TBC
+
+The live TDX TMRT probe on 25 August returned the operating Green Line only;
+there is no Orange Sea extension station, route, geometry, timetable or
+ridership record. Final route, station inventory, adopted system type,
+comprehensive-plan approval, environmental approval, construction procurement,
+construction start, opening date and actual ridership remain TBC. The checked
+source families were the current TCRT project and network pages, the January
+official release, the full public-meeting deck, the full public-meeting record,
+the official summary PDF and live TDX TMRT records.
+
+## Contradicted the corpus
+
+No corpus assertion was contradicted in this unit. The page decision is
+deliberate: the primary records support a feasibility page with a dated interim
+proposal, not 10 operating station pages.
+
+## Conflicts found
+
+The current project page says no route has yet been planned and its map is
+reference-only, while the January release and deck present an interim 16.50 km,
+10-station branching proposal. This is published as a dated planning boundary,
+not resolved by choosing one status.
+
+The deck says the forecast density meets the light-rail reference threshold;
+the meeting record documents repeated requests for medium-capacity or the same
+system as the Orange/Blue lines, including opposition to light rail. The final
+mode remains TBC. The current page visibly strikes through `沙鹿車站`, while
+the January deck includes TRA Shalu Station in its interim interchange diagram;
+the source set does not explain whether that is a route revision or editing
+artifact, so both values are retained. A search lead for the 115年度 rail-fund
+budget PDF was fetched and returned the bureau error page; it was recorded as
+checked-and-failed and not used.
+
+The Sea Line page is 715 body words and the updated project-status page is 961.
+Gates: build generated 2,584 pages and postbuild checked 2,742; cite 7,006
+resolved citations, research 139 files/587 checked failures, conflicts current
+with 45 records, claims 20,539 sourced/4,460 TBC/0 ASSERTED; unit tests 231/231;
+a11y 1,853 pages; internal links 425,482 with no breaks or orphans. Browser
+verification is clean: no reflow or spine findings, curated keyboard/ARIA probes
+including the new Sea Line type pass, zero axe violations across 1,852 pages,
+694 screenshots and 99 print PDFs. The 320px and 1440px Sea Line screenshots
+were inspected. Generated audit JSONs, screenshots and PDFs were restored and
+are not part of the commit.
