@@ -1,43 +1,43 @@
 ---
-title: "Zhongzhou — Taiwan Railways"
-summary: "Zhongzhou (中洲), TDX station 4270, in 臺南市; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Chang Jung Christian University — Taiwan Railways"
+summary: "Chang Jung Christian University (長榮大學), TDX station 4271, in 臺南市; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 2
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "4270"
+    value: "4271"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "中洲"
+    value: "長榮大學"
     source: tdx-tra-station
   - label: "Administrative city"
     value: "臺南市"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "仁德區"
+    value: "歸仁區"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "2"
+    value: "4"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Shalun Line (SH); Western Main Line (WL)"
+    value: "Shalun Line (SH)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "22.90446"
+    value: "22.90729"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.25284"
+    value: "120.27263"
     unit: degrees
     source: tdx-tra-station
   - label: "Shalun Line sequence"
-    value: 1
+    value: 2
     unit: position
     source: tdx-tra-line
   - label: "Shalun Line travelled distance"
-    value: "0"
+    value: "2.6"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Zhongzhou (中洲) is station ID 4270 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 2 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Chang Jung Christian University (長榮大學) is station ID 4271 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 717014臺南市仁德區中洲五街236號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 711010臺南市歸仁區大潭里長大路15 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Shalun Line
 
-On the Shalun Line StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Chang Jung Christian University (4271).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Shalun Line StationOfLine record, this station has sequence 2 and a supplied travelled distance of 2.6 km.[^tdx-tra-line] The preceding member is Zhongzhou (4270) and the following member is Shalun (4272).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Shalun Line (SH), Western Main Line (WL).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Shalun Line (SH).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 22.90446 and longitude 120.25284.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 22.90729 and longitude 120.27263.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 

@@ -16966,3 +16966,18 @@ promoted into content.
 Gates: build 2,370 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the three-station
 Shalun Branch (SH).
+
+# Run 144 - TRA Shalun branch (24 August 2026)
+
+The fifteenth TRA content unit adds the complete three-station Shalun Branch
+(SH), including its line page and station pages. The branch uses the existing
+TDX StationOfLine ordering and the same primary TRA history, timetable and
+statistical report sources; no secondary source was promoted.
+
+The pages make no unsupported claims about stopping patterns, facilities,
+ridership, aliases or closed alignments. Those remain TBC until the relevant
+operator or government records are fetched and verified.
+
+Gates: build 2,376 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the two-station
+Chengzhui and Liujia branches (CZ and LJ).
