@@ -22,6 +22,7 @@ import RichText from '@/components/RichText'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { STATIONS } from '@/lib/stations'
+import { THSR_STATIONS } from '@/lib/thsr'
 import { getFolderContent, getPages, getSection, getSystem, getSystems, getTypes } from '@/lib/content'
 
 type Props = { params: Promise<{ system: string }> }
@@ -74,7 +75,9 @@ export default async function RailSystemPage({ params }: Props) {
     ? STATIONS.filter((station) => station.operator !== 'TMRT').length
     : system === 'tmrt'
       ? STATIONS.filter((station) => station.operator === 'TMRT').length
-      : 0
+      : system === 'thsr'
+        ? THSR_STATIONS.length
+        : 0
 
   return (
     <PageShell accent={NEUTRAL_LINE}>

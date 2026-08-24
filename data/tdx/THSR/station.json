@@ -1,0 +1,290 @@
+[
+  {
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "南港區",
+    "LocationTownCode": "63000090",
+    "OperatorID": "THSR",
+    "StationAddress": "台北市南港區南港路一段313號",
+    "StationCode": "NAK",
+    "StationID": "0990",
+    "StationName": {
+      "En": "Nangang",
+      "Ja": "南港",
+      "Ko": "난강",
+      "Zh_tw": "南港"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqx0zs6",
+      "PositionLat": 25.053704,
+      "PositionLon": 121.60709
+    },
+    "StationUID": "THSR-0990",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "臺北市",
+    "LocationCityCode": "TPE",
+    "LocationTown": "中正區",
+    "LocationTownCode": "63000050",
+    "OperatorID": "THSR",
+    "StationAddress": "台北市北平西路3號",
+    "StationCode": "TPE",
+    "StationID": "1000",
+    "StationName": {
+      "En": "Taipei",
+      "Ja": "台北",
+      "Ko": "타이페이",
+      "Zh_tw": "台北"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqqmpvcq",
+      "PositionLat": 25.04767,
+      "PositionLon": 121.516983
+    },
+    "StationUID": "THSR-1000",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "新北市",
+    "LocationCityCode": "NWT",
+    "LocationTown": "板橋區",
+    "LocationTownCode": "65000010",
+    "OperatorID": "THSR",
+    "StationAddress": "新北市板橋區縣民大道二段7號",
+    "StationCode": "BAC",
+    "StationID": "1010",
+    "StationName": {
+      "En": "Banqiao",
+      "Ja": "板橋",
+      "Ko": "반차오",
+      "Zh_tw": "板橋"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqq7cxnr",
+      "PositionLat": 25.014214,
+      "PositionLon": 121.4638
+    },
+    "StationUID": "THSR-1010",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "桃園市",
+    "LocationCityCode": "TAO",
+    "LocationTown": "中壢區",
+    "LocationTownCode": "68000020",
+    "OperatorID": "THSR",
+    "StationAddress": "桃園市中壢區高鐵北路一段6號",
+    "StationCode": "TAY",
+    "StationID": "1020",
+    "StationName": {
+      "En": "Taoyuan",
+      "Ja": "桃園",
+      "Ko": "타오위안",
+      "Zh_tw": "桃園"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqnq33y7",
+      "PositionLat": 25.012861,
+      "PositionLon": 121.214729
+    },
+    "StationUID": "THSR-1020",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "新竹縣",
+    "LocationCityCode": "HSQ",
+    "LocationTown": "竹北市",
+    "LocationTownCode": "10004010",
+    "OperatorID": "THSR",
+    "StationAddress": "新竹縣竹北市高鐵七路6號",
+    "StationCode": "HSC",
+    "StationID": "1030",
+    "StationName": {
+      "En": "Hsinchu",
+      "Ja": "新竹",
+      "Ko": "신주",
+      "Zh_tw": "新竹"
+    },
+    "StationPosition": {
+      "GeoHash": "wsqj4k4zd",
+      "PositionLat": 24.808441,
+      "PositionLon": 121.04026
+    },
+    "StationUID": "THSR-1030",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "苗栗縣",
+    "LocationCityCode": "MIA",
+    "LocationTown": "後龍鎮",
+    "LocationTownCode": "10005060",
+    "OperatorID": "THSR",
+    "StationAddress": "苗栗縣後龍鎮高鐵三路268號",
+    "StationCode": "MIL",
+    "StationID": "1035",
+    "StationName": {
+      "En": "Miaoli",
+      "Ja": "苗栗",
+      "Ko": "먀오리",
+      "Zh_tw": "苗栗"
+    },
+    "StationPosition": {
+      "GeoHash": "wsmgvrq30",
+      "PositionLat": 24.605448,
+      "PositionLon": 120.825272
+    },
+    "StationUID": "THSR-1035",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "臺中市",
+    "LocationCityCode": "TXG",
+    "LocationTown": "烏日區",
+    "LocationTownCode": "66000230",
+    "OperatorID": "THSR",
+    "StationAddress": "台中市烏日區站區二路8號",
+    "StationCode": "TAC",
+    "StationID": "1040",
+    "StationName": {
+      "En": "Taichung",
+      "Ja": "台中",
+      "Ko": "타이중",
+      "Zh_tw": "台中"
+    },
+    "StationPosition": {
+      "GeoHash": "wsmc0ttc7",
+      "PositionLat": 24.112484,
+      "PositionLon": 120.615967
+    },
+    "StationUID": "THSR-1040",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "彰化縣",
+    "LocationCityCode": "CHA",
+    "LocationTown": "田中鎮",
+    "LocationTownCode": "10007120",
+    "OperatorID": "THSR",
+    "StationAddress": "彰化縣田中鎮站區路二段99號",
+    "StationCode": "CHA",
+    "StationID": "1043",
+    "StationName": {
+      "En": "Changhua",
+      "Ja": "彰化",
+      "Ko": "장화",
+      "Zh_tw": "彰化"
+    },
+    "StationPosition": {
+      "GeoHash": "wsjxzdpy0",
+      "PositionLat": 23.874327,
+      "PositionLon": 120.574608
+    },
+    "StationUID": "THSR-1043",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "雲林縣",
+    "LocationCityCode": "YUN",
+    "LocationTown": "虎尾鎮",
+    "LocationTownCode": "10009030",
+    "OperatorID": "THSR",
+    "StationAddress": "雲林縣虎尾鎮站前東路301號",
+    "StationCode": "YUL",
+    "StationID": "1047",
+    "StationName": {
+      "En": "Yunlin",
+      "Ja": "雲林",
+      "Ko": "윈린",
+      "Zh_tw": "雲林"
+    },
+    "StationPosition": {
+      "GeoHash": "wsjxh1h9s",
+      "PositionLat": 23.736231,
+      "PositionLon": 120.416512
+    },
+    "StationUID": "THSR-1047",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "嘉義縣",
+    "LocationCityCode": "CYQ",
+    "LocationTown": "太保市",
+    "LocationTownCode": "10010010",
+    "OperatorID": "THSR",
+    "StationAddress": "嘉義縣太保市高鐵西路168號",
+    "StationCode": "CHY",
+    "StationID": "1050",
+    "StationName": {
+      "En": "Chiayi",
+      "Ja": "嘉義",
+      "Ko": "자이",
+      "Zh_tw": "嘉義"
+    },
+    "StationPosition": {
+      "GeoHash": "wsjt6n8tx",
+      "PositionLat": 23.459507,
+      "PositionLon": 120.323257
+    },
+    "StationUID": "THSR-1050",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "臺南市",
+    "LocationCityCode": "TNN",
+    "LocationTown": "歸仁區",
+    "LocationTownCode": "67000280",
+    "OperatorID": "THSR",
+    "StationAddress": "台南市歸仁區歸仁大道100號",
+    "StationCode": "TNN",
+    "StationID": "1060",
+    "StationName": {
+      "En": "Tainan",
+      "Ja": "台南",
+      "Ko": "타이난",
+      "Zh_tw": "台南"
+    },
+    "StationPosition": {
+      "GeoHash": "wsjd3jmsr",
+      "PositionLat": 22.925077,
+      "PositionLon": 120.286201
+    },
+    "StationUID": "THSR-1060",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  },
+  {
+    "LocationCity": "高雄市",
+    "LocationCityCode": "KHH",
+    "LocationTown": "左營區",
+    "LocationTownCode": "64000030",
+    "OperatorID": "THSR",
+    "StationAddress": "高雄市左營區高鐵路105號",
+    "StationCode": "ZUY",
+    "StationID": "1070",
+    "StationName": {
+      "En": "Zuoying",
+      "Ja": "左營",
+      "Ko": "쭤잉",
+      "Zh_tw": "左營"
+    },
+    "StationPosition": {
+      "GeoHash": "wsj91dj5x",
+      "PositionLat": 22.687391,
+      "PositionLon": 120.307487
+    },
+    "StationUID": "THSR-1070",
+    "UpdateTime": "2023-10-17T00:00:00+08:00",
+    "VersionID": 2
+  }
+]

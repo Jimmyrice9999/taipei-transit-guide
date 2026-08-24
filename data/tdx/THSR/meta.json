@@ -1,0 +1,34 @@
+{
+  "datasets": {
+    "route": {
+      "error": "{\"message\":\"Resouce Not Found\"}",
+      "note": "Checked live; TDX returned 404, so no route metadata is inferred.",
+      "records": 0,
+      "status": 404,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/Route?%24format=JSON&%24top=1000"
+    },
+    "shape": {
+      "note": "One current line geometry record.",
+      "records": 1,
+      "status": 200,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/Shape?%24format=JSON&%24top=1000"
+    },
+    "station": {
+      "note": "12 current station records with IDs, names, addresses, coordinates and update metadata.",
+      "records": 12,
+      "status": 200,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/Station?%24format=JSON&%24top=1000"
+    },
+    "stationOfRoute": {
+      "error": "{\"message\":\"Resouce Not Found\"}",
+      "note": "Checked live; TDX returned 404, so station sequence is kept as a hand-verified operator list.",
+      "records": 0,
+      "status": 404,
+      "url": "https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/StationOfRoute?%24format=JSON&%24top=1000"
+    }
+  },
+  "operator": "THSR",
+  "publisher": "Taiwan Ministry of Transportation and Communications, TDX",
+  "publisherOriginal": "交通部運輸資料流通服務平臺",
+  "retrieved": "2026-08-24"
+}

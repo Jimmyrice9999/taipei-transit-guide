@@ -16621,3 +16621,66 @@ violations and all representative print PDFs. The two new pages were viewed
 at 320/400% and 1440px. The `塞` glyph required by the glossary was added to
 the committed content font subset. Generated audits, screenshots and PDFs
 were restored and are not staged.
+
+## Part 10 - Taiwan High Speed Rail
+
+The THSR unit adds a source-backed line page and all 12 station pages. The
+Railway Bureau project page, THSRC's business page, and every THSRC station
+page were fetched in full. TDX supplied the committed station and line-shape
+snapshot: 12 stations and one shape record retrieved on 2026-08-24. The pages
+carry station IDs, names, coordinates, addresses, operator-named transfers,
+floor/transfer details from the station pages, and 300+ words of station-
+specific prose; current station ridership, trend, and within-line rank remain
+TBC because the fetched MOTC PDF's station table was not transcribed into the
+station data layer.
+
+Primary URLs fetched and used:
+
+- https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/
+- https://www.thsrc.com.tw/corp/410c493f-6d1b-49ae-8480-8b36dab7c5ef
+- https://www.thsrc.com.tw/ArticleContent/2f940836-cedc-41ef-8e28-c2336ac8fe68
+- https://www.thsrc.com.tw/ArticleContent/977abb69-413a-4ccf-a109-0272c24fd490
+- https://www.thsrc.com.tw/ArticleContent/e6e26e66-7dc1-458f-b2f3-71ce65fdc95f
+- https://www.thsrc.com.tw/ArticleContent/fbd828d8-b1da-4b06-a3bd-680cdca4d2cd
+- https://www.thsrc.com.tw/ArticleContent/a7a04c89-900b-4798-95a3-c01c455622f4
+- https://www.thsrc.com.tw/ArticleContent/e8fc2123-2aaf-46ff-ad79-51d4002a1ef3
+- https://www.thsrc.com.tw/ArticleContent/3301e395-46b8-47aa-aa37-139e15708779
+- https://www.thsrc.com.tw/ArticleContent/38b8c40b-aef0-4d66-b257-da96ec51620e
+- https://www.thsrc.com.tw/ArticleContent/5f4c7bb0-c676-4e39-8d3c-f12fc188ee5f
+- https://www.thsrc.com.tw/ArticleContent/60831846-f0e4-47f6-9b5b-46323ebdcef7
+- https://www.thsrc.com.tw/ArticleContent/9c5ac6ca-ec89-48f8-aab0-41b738cb1814
+- https://www.thsrc.com.tw/ArticleContent/f2519629-5973-4d08-913b-479cce78a356
+- https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356
+- https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321
+- https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/54560
+- https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/45303
+- https://www.motc.gov.tw/ch/app/data/doc?detailNo=1&id=580&module=mebook&serno=202501090000&type=s
+- https://www.motc.gov.tw/201506260001/app/govdata_list/view?id=1615&uid=201705110088
+- https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/Station?%24format=JSON&%24top=1000
+- https://tdx.transportdata.tw/api/basic/v2/Rail/THSR/Shape?%24format=JSON&%24top=1000
+
+Conflicts retained: the original BOT concession is described as 35 years of
+construction/operation plus 50 years of station-area development, while the
+2015 amendment is 70 years with station-area development cancelled and NT$30
+billion of government investment; the Control Yuan records 37.42% public/state
+enterprise funding against the promised zero-government-investment model; and
+the tender history records a German ICE/French TGV reference followed by a
+Japanese Shinkansen core-system change, while another Control Yuan report says
+European Siemens turnouts and control equipment remained for local needs.
+
+TBC and checked failures: individual station ridership rows, accessibility
+attributes, architects/design authorship, a complete current ridership trend,
+and station-level rank remain TBC. TDX `/Rail/THSR/Route` and
+`/Rail/THSR/StationOfRoute` returned HTTP 404 on 2026-08-24 and are recorded as
+checked-and-failed; the station-level MOTC table was fetched but not
+transcribed. The fetched sources do not settle the 12-station architectural
+authorship or the exact scope of the retained European equipment.
+
+Verification: build generated 1,855 routes and postbuild checked 2,004 pages;
+links checked 262,497 with none broken; cite, research, facts, claims (0
+ASSERTED), unit (219/219), a11y (1,484 pages, zero errors/warnings), geometry,
+CVD, and the full browser verifier passed. Browser verification reflowed 1,483
+pages, found zero axe violations, passed all curated THSR keyboard/tree probes,
+captured 596 screenshots and representative print PDFs; the THSR line, station,
+system and data pages were viewed at 320/400% and 1440px. Generated audit JSONs,
+screenshots and PDFs were restored and are not staged.

@@ -1272,6 +1272,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full official interpretation fetched: Article 6 expropriated MRT land cannot be used in the same plan for Article 7 joint development, and transfer to a third party requires clear legal authority."
+  - id: "rail-thsr-lines-thsr-rb-thsr"
+    title: "Taiwan High-Speed Rail project"
+    titleOriginal: "台灣高鐵"
+    publisher: "Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)"
+    url: "https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The builder and regulator’s project history gives the BOT contract, financial restructuring, route, opening chronology, structures, power, signalling, vehicles and maintenance facilities."
+  - id: "rail-thsr-lines-thsr-cy-bot"
+    title: "Investigation into whether government investment in the High-Speed Rail company violated BOT principles"
+    titleOriginal: "政府直接、間接投資高鐵公司有無違反BOT精神案"
+    publisher: "Control Yuan, Taiwan (監察院)"
+    url: "https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official investigation record identifies the case number, adoption date and report files for the government-investment/BOT dispute."
+  - id: "rail-thsr-lines-thsr-cy-funding"
+    title: "High-Speed Rail did not fulfil the government-zero-investment commitment"
+    titleOriginal: "高鐵未能履行「政府零出資」承諾"
+    publisher: "Control Yuan, Taiwan (監察院)"
+    url: "https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official statement records the Control Yuan’s criticism that public entities supplied 37.42% and describes the supervision and BOT-principle dispute."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -2590,6 +2617,22 @@ large-scale station-area project.[^rail-projects-tod-joint-development-judicial-
 - [Xizhou construction and Meihe City review](https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201406150005&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27) — primary; New Taipei City Government (新北市政府); accessed 2026-08-24.[^rail-projects-tod-joint-development-ntpc-meihe-news]
 - [Research on the Meihe City MRT joint-development case](https://www.rde.ntpc.gov.tw/userfiles/1160700/files/8_%E6%8D%B7%E9%81%8B%E8%81%AF%E5%90%88%E9%96%8B%E7%99%BC%E6%A1%88%E5%95%8F%E9%A1%8C%E4%B9%8B%E7%A0%94%E7%A9%B6-%E4%BB%A5%E7%BE%8E%E6%B2%B3%E5%B8%82%E7%82%BA%E4%BE%8B.pdf) — secondary; New Taipei City Land Administration (新北市政府地政局); accessed 2026-08-24.[^rail-projects-tod-joint-development-ntpc-meihe-research]
 - [Judicial Interpretation No. 743](https://web.law.ntpc.gov.tw/Scripts/FLAWDOC03.aspx?ccode=D&cno=743&rtype=C) — primary; Judicial Yuan (司法院); accessed 2026-08-24.[^rail-projects-tod-joint-development-judicial-743]
+
+## Taiwan High Speed Rail — BOT contract and financial disputes
+
+Discussed on [Taiwan High Speed Rail](/rail/thsr/lines/thsr/) in the source page's “BOT contract and financial disputes” section.[^rail-thsr-lines-thsr-rb-thsr]
+
+### BOT contract and financial disputes
+
+The Railway Bureau describes the project as Taiwan’s first major national infrastructure project promoted through private investment participation.[^rail-thsr-lines-thsr-rb-thsr] It records the 23 July 1998 signing of a 35-year construction-and-operation concession and a separate 50-year station-area development concession.[^rail-thsr-lines-thsr-rb-thsr] The stated project cost was approximately NT$513.3 billion, with the government responsible for land, the Taipei underground co-construction section, supervision and management, while the concession company funded civil works, stations, core electromechanical systems, operation and maintenance.[^rail-thsr-lines-thsr-rb-thsr]
+
+The original financial model did not remain unchanged. The Railway Bureau says a 27 July 2015 amendment extended the concession to 70 years, cancelled the station-area development contract, returned development land, reduced capital to clear accumulated losses and added NT$30 billion of government investment.[^rail-thsr-lines-thsr-rb-thsr] The Control Yuan’s official record names an investigation into whether direct and indirect public investment violated BOT principles.[^rail-thsr-lines-thsr-cy-bot] In a related statement, the Control Yuan says public and state-enterprise entities supplied 37.42% and describes that as a serious departure from the government-zero-investment commitment.[^rail-thsr-lines-thsr-cy-funding] Those are the source’s figures and characterization; this page does not average them into a new ownership percentage.
+
+#### Sources for this entry
+
+- [Taiwan High-Speed Rail project](https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-24.[^rail-thsr-lines-thsr-rb-thsr]
+- [Investigation into whether government investment in the High-Speed Rail company violated BOT principles](https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-bot]
+- [High-Speed Rail did not fulfil the government-zero-investment commitment](https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-funding]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 

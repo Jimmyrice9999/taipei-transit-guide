@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-08-24",
+  "source": {
+    "title": "High-Speed Rail traffic statistics dataset",
+    "titleOriginal": "高鐵運量統計表",
+    "publisher": "Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)",
+    "indexUrl": "https://www.motc.gov.tw/201506260001/app/govdata_list/view?id=1615&uid=201705110088",
+    "downloadUrl": "https://www.rb.gov.tw/api/proxy/v4/file-service/Opendata%2F%E5%9B%9E%E5%82%B3%E9%99%84%E4%BB%B6-%E9%AB%98%E9%90%B5%E9%81%8B%E9%87%8F%E7%B5%B1%E8%A8%88%E8%A1%A8%28%E6%9B%B4%E6%96%B0%E8%87%B311504%29%28CSV%E6%AA%94%29.csv",
+    "measure": "monthly network passengers",
+    "unit": "passengers"
+  },
+  "observations": [
+    { "period": "2019-12", "passengers": 6075220 },
+    { "period": "2020-12", "passengers": 5786384 },
+    { "period": "2021-12", "passengers": 5539344 },
+    { "period": "2022-12", "passengers": 6214472 },
+    { "period": "2023-12", "passengers": 6710532 },
+    { "period": "2024-12", "passengers": 7150425 },
+    { "period": "2025-12", "passengers": 7407572 },
+    { "period": "2026-04", "passengers": 7220802 }
+  ]
+}
