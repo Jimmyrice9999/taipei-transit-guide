@@ -16740,3 +16740,26 @@ the research file. Historical gauge-change chronology, a complete closed-line
 legal inventory, and the century of station aliases remain TBC. The full
 architecture/data test suite passed 226/226; research passed (133 files, 565
 checked failures). No TRA content page was generated in this data-only batch.
+
+# Run 130 - TRA first content batch (24 August 2026)
+
+The filesystem rail renderer is now wired to the TRA system data layer. The
+first content batch adds the Taiwan Railways system, line and station indexes,
+the Western Main Line page, and 15 Western Main Line station pages. Every
+published line and station page exceeds the 300-word body requirement; the
+pages distinguish the current TDX snapshot from operator history and leave
+ridership, facilities, service patterns, aliases, gauge chronology and closed
+alignments TBC.
+
+Primary full pages used are the [TDX Station](https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Station?%24format=JSON&%24top=1000&%24skip=0),
+[TDX StationOfLine](https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0),
+[TDX Shape](https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Shape?%24format=JSON&%24top=1000&%24skip=0),
+[TRA route history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5),
+[TRA timetable index](https://www.railway.gov.tw/tra-tip-web/tip/tip00C/tipC21/view?proCode=8ae4cac3756b7b41017572e9077f1790&subCode=8ae4cac3756b7b41017573e352ae18f8),
+and [TRA statistical report](https://www.railway.gov.tw/tra-tip-web/tip/file/486e23bd-740a-46a1-bb75-f68442125a2a),
+all fetched and read in full on 24 August 2026. The 245-versus-241 station
+count conflict and report aggregate conflicts remain published in the pages.
+
+Gates: build 2,042 pages; cite, research, claims 0 ASSERTED, conflicts check,
+and unit 226/226 all pass. Next batch: continue Western Main Line station
+pages, then Eastern Main Line, before branch and historical sections.

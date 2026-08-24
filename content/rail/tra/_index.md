@@ -1,0 +1,39 @@
+---
+title: Taiwan Railways
+kind: system
+description: Taiwan Railways current station and line data, with historical route architecture kept distinct from the live TDX snapshot.
+order: 4
+operator: TRA
+sources:
+  - id: tdx-tra-station
+    title: "TDX Taiwan Railways station records"
+    titleOriginal: "臺灣鐵路車站資料"
+    publisher: "Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平台)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Station?%24format=JSON&%24top=1000&%24skip=0"
+    accessed: 2026-08-24
+    kind: primary
+    lang: zh-Hant
+    note: "The full 24 August 2026 pull contains 245 TRA station records with station IDs, names, addresses, administrative areas, classes, coordinates and update times."
+  - id: tdx-tra-line
+    title: "TDX Taiwan Railways station-of-line records"
+    titleOriginal: "臺灣鐵路路線車站資料"
+    publisher: "Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平台)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0"
+    accessed: 2026-08-24
+    kind: primary
+    lang: zh-Hant
+    note: "The full pull contains 12 line records with ordered station members and, where supplied, travelled distances."
+  - id: tra-history
+    title: "Railway construction history"
+    titleOriginal: "鐵路建設沿革"
+    publisher: "Taiwan Railways Administration (臺灣鐵路公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-1-5"
+    accessed: 2026-08-24
+    kind: primary
+    lang: zh-Hant
+    note: "The operator history page gives the official route-history framework and gauge terminology used to separate current data from historical alignments."
+---
+
+Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
+
+The first current pages cover the Western Main Line.[^tdx-tra-line] Eastern Main Line, branch lines and closed alignments follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
