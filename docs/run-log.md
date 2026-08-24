@@ -16853,3 +16853,20 @@ closed-alignment claim was filled without a fetched primary source.
 Gates: build 2,224 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: finish Western
 and begin Eastern station batches.
+
+# Run 137 - TRA Western completion and font subset (24 August 2026)
+
+The eighth TRA content unit adds the final Western Main Line station positions
+106–112. The current Western page set now covers every one of the 112 TDX
+members. One new Han glyph appeared in Fongshan; the content subset was
+regenerated and the final export has no missing glyphs.
+
+The full TDX Station, StationOfLine and Shape responses and full TRA history,
+timetable and statistical report pages remain the sources. The 245-versus-241
+station conflict and the report-versus-overlapping-line aggregates remain
+published; ridership, facilities, service patterns, aliases, gauge chronology
+and closed alignments remain TBC.
+
+Gates: build 2,238 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: Eastern station
+batches, then the smallest verified branches.
