@@ -17061,3 +17061,19 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,440 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the 18-station
 TRA Coast Line (WL-C).
+
+# Run 150 - TRA Coast Line (24 August 2026)
+
+The twenty-first TRA content unit adds the complete 18-station Coast Line
+(WL-C), including its line page and station pages. The first postbuild pass
+found 讚 in the changelog, 霄 across the TRA index and coastal station pages,
+and 孟 at Rinan; regenerating the derived subsets resolved all seven reports.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the existing TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC.
+
+Gates: build 2,472 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the 24-station
+South Link Line (SL).

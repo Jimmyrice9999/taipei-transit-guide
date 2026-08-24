@@ -1,7 +1,7 @@
 ---
 title: "Zhuifen — Taiwan Railways"
 summary: "Zhuifen (追分), TDX station 2260, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 2
+order: 17
 operator: TRA
 updated: 2026-08-24
 facts:
@@ -32,12 +32,12 @@ specs:
     value: "120.57018"
     unit: degrees
     source: tdx-tra-station
-  - label: "Chengzhui Line sequence"
-    value: 2
+  - label: "Western Main Line (Coast Line) sequence"
+    value: 17
     unit: position
     source: tdx-tra-line
-  - label: "Chengzhui Line travelled distance"
-    value: "2.2"
+  - label: "Western Main Line (Coast Line) travelled distance"
+    value: "83.1"
     unit: km
     source: tdx-tra-line
 sources:
@@ -85,9 +85,9 @@ Zhuifen (追分) is station ID 2260 in the TDX Station response retrieved on 202
 
 The address field is 43245臺中市大肚區王田里追分街 13 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
-## Position on Chengzhui Line
+## Position on Western Main Line (Coast Line)
 
-On the Chengzhui Line StationOfLine record, this station has sequence 2 and a supplied travelled distance of 2.2 km.[^tdx-tra-line] The preceding member is Chenggong (3350) and the following member is the last member in this TDX sequence.[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Western Main Line (Coast Line) StationOfLine record, this station has sequence 17 and a supplied travelled distance of 83.1 km.[^tdx-tra-line] The preceding member is Dadu (2250) and the following member is Changhua (3360).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
 The current line membership list for this station is Chengzhui Line (CZ), Western Main Line (Coast Line) (WL-C).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 

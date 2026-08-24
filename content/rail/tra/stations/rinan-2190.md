@@ -1,43 +1,43 @@
 ---
-title: "Zhunan — Taiwan Railways"
-summary: "Zhunan (竹南), TDX station 1250, in 苗栗縣; current line membership and coordinates from the 2026-08-24 snapshot."
-order: 1
+title: "Rinan — Taiwan Railways"
+summary: "Rinan (日南), TDX station 2190, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
+order: 10
 operator: TRA
 updated: 2026-08-24
 facts:
   - label: "Station ID"
-    value: "1250"
+    value: "2190"
     source: tdx-tra-station
   - label: "Traditional Chinese name"
-    value: "竹南"
+    value: "日南"
     source: tdx-tra-station
   - label: "Administrative city"
-    value: "苗栗縣"
+    value: "臺中市"
     source: tdx-tra-station
   - label: "Administrative district"
-    value: "竹南鎮"
+    value: "大甲區"
     source: tdx-tra-station
   - label: "Station class code"
-    value: "1"
+    value: "4"
     source: tdx-tra-station
   - label: "Line memberships"
-    value: "Western Main Line (WL); Western Main Line (Coast Line) (WL-C)"
+    value: "Western Main Line (Coast Line) (WL-C)"
     source: tdx-tra-line
 specs:
   - label: "Latitude"
-    value: "24.68654"
+    value: "24.37815"
     unit: degrees
     source: tdx-tra-station
   - label: "Longitude"
-    value: "120.88041"
+    value: "120.65412"
     unit: degrees
     source: tdx-tra-station
   - label: "Western Main Line (Coast Line) sequence"
-    value: 1
+    value: 10
     unit: position
     source: tdx-tra-line
   - label: "Western Main Line (Coast Line) travelled distance"
-    value: "0"
+    value: "49.4"
     unit: km
     source: tdx-tra-line
 sources:
@@ -81,19 +81,19 @@ sources:
 
 ## Identity in the current station data
 
-Zhunan (竹南) is station ID 1250 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 1 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
+Rinan (日南) is station ID 2190 in the TDX Station response retrieved on 2026-08-24.[^tdx-tra-station] That record supplies the English and Traditional Chinese names, the address, administrative city and district, station-class field, coordinates and source update time.[^tdx-tra-station] The page reports those fields as fields: it does not turn the class code 4 into a passenger-service ranking because the checked station response does not define that code in the record itself.[^tdx-tra-station]
 
-The address field is 350007苗栗縣竹南鎮竹南里中山路 166 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
+The address field is 437105臺中市大甲區孟春里中山路二段 140 巷 8 號.[^tdx-tra-station] This is the source station address, not a claim about the size of the station site, the walking catchment or every entrance.[^tdx-tra-station] A street address and a coordinate answer different questions, so both are retained when present.[^tdx-tra-station]
 
 ## Position on Western Main Line (Coast Line)
 
-On the Western Main Line (Coast Line) StationOfLine record, this station has sequence 1 and a supplied travelled distance of 0 km.[^tdx-tra-line] The preceding member is the first member in this TDX sequence and the following member is Tanwen (2110).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
+On the Western Main Line (Coast Line) StationOfLine record, this station has sequence 10 and a supplied travelled distance of 49.4 km.[^tdx-tra-line] The preceding member is Yuanli (2180) and the following member is Dajia (2200).[^tdx-tra-line] These are adjacency statements about the ordered dataset; they are not a claim about the stopping pattern of a particular train.[^tdx-tra-line]
 
-The current line membership list for this station is Western Main Line (WL), Western Main Line (Coast Line) (WL-C).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
+The current line membership list for this station is Western Main Line (Coast Line) (WL-C).[^tdx-tra-line] A shared station can therefore appear in more than one TDX line family without the data proving that all services, rolling stock or timetables use every listed relationship.[^tdx-tra-line] Route service patterns and first or last trains are TBC on this page because the committed endpoint supplies station membership rather than a complete timetable.[^tdx-tra-line]
 
 ## Location and architecture boundary
 
-TDX places the station at latitude 24.68654 and longitude 120.88041.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
+TDX places the station at latitude 24.37815 and longitude 120.65412.[^tdx-tra-station] The guide keeps those values at the precision returned by the source and does not infer platform orientation, elevation, track count or station depth from a point coordinate.[^tdx-tra-station] Platform arrangement, lifts, tactile paths, accessible toilets, nursing rooms, platform gap, exits, staffing and station opening hours are TBC until the operator station-level material is transcribed.[^tra-history]
 
 The operator route-history page is used for historical construction and gauge terminology, not as a substitute for this station live identity record.[^tra-history] If a future primary source gives a former name, opening date, relocation, closure interval or rebuilt platform, it belongs in the station temporal architecture record rather than overwriting the current TDX name.[^tra-history]
 
