@@ -16997,3 +16997,19 @@ ridership, aliases and closed alignments remain TBC.
 Gates: build 2,386 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the two-station
 Su’aoxin–Su’ao Branch (SU), then Jiji.
+
+# Run 146 - TRA Su’aoxin–Su’ao branch (24 August 2026)
+
+The seventeenth TRA content unit adds the two-station Su’aoxin–Su’ao Branch
+(SU), its line page and both station pages. The first build found 隘 and 肚 in
+the generated changelog base subset; regenerating the derived fonts resolved
+the postbuild check.
+
+TDX StationOfLine remains the primary source for membership and sequence,
+with the TRA history, timetable and statistical report sources retained for
+context. Route geometry, stopping patterns, facilities, ridership, aliases
+and closed alignments remain TBC.
+
+Gates: build 2,390 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the seven-station
+Jiji Branch (JJ).
