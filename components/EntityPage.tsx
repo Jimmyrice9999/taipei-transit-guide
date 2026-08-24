@@ -224,7 +224,9 @@ export default async function EntityPage({ section, system = '', type, slug }: E
           <header className="article-head">
             <h1 className="page-title article-title page-title-with-icon">
               {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
-              <RichText operator={page.operator || undefined}>{page.title}</RichText>
+              <span className="page-title-text">
+                <RichText operator={page.operator || undefined}>{page.title}</RichText>
+              </span>
             </h1>
             {page.summary && (
               <p className="article-standfirst">
@@ -462,7 +464,9 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             identity now, so it was the third statement of one fact. */}
         <h1 className="page-title page-title-with-icon">
           {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
-          <RichText operator={page.operator || undefined}>{page.title}</RichText>
+          <span className="page-title-text">
+            <RichText operator={page.operator || undefined}>{page.title}</RichText>
+          </span>
         </h1>
         {page.summary && (
           <p className="page-summary">

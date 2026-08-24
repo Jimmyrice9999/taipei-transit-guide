@@ -22,6 +22,7 @@
     "tdx:bike": "node scripts/fetch-bike-tdx.mjs",
     "thsr": "node scripts/fetch-thsr.mjs",
     "tra": "node scripts/fetch-tra.mjs",
+    "krtc": "node scripts/generate-krtc-pages.mjs",
     "bike:index": "node scripts/generate-bike-indexes.mjs",
     "ntpc:bus": "node scripts/fetch-ntpc-bus-route-data.mjs",
     "bus:joins": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/curate-bus-rail-joins.mts",

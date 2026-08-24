@@ -81,6 +81,7 @@ const OPERATORS = [
   { code: 'NTDLRT', name: 'New Taipei Metro — Danhai Light Rail' },
   { code: 'NTALRT', name: 'New Taipei Metro — Ankeng Light Rail' },
   { code: 'TMRT', name: 'Taichung Mass Rapid Transit Corporation' },
+  { code: 'KRTC', name: 'Kaohsiung Rapid Transit Corporation' },
 ]
 
 /**
@@ -445,6 +446,14 @@ async function main() {
         }
       }
       writeJson(path.join(OUT_DIR, 'meta.json'), meta)
+      const operatorMetaCodes = only ? [...only] : Object.keys(meta.operators)
+      for (const code of operatorMetaCodes) {
+        const operator = meta.operators[code]
+        writeJson(path.join(OUT_DIR, code, 'meta.json'), {
+          ...meta,
+          operators: { [code]: operator },
+        })
+      }
     }
   }
 

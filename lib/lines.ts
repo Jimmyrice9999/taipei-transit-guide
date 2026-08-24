@@ -197,6 +197,42 @@ const OFF_PLATFORM: Record<
       accessed: '2026-08-12',
     },
   },
+  [lineKey('KRTC', 'R')]: {
+    nameEn: 'Red Line',
+    nameZh: '紅線',
+    colour: '#DF0043',
+    operator: 'KRTC',
+    colourSource: {
+      kind: 'operator',
+      label: "KRTC's own operating network map; exact colour transcribed from the operator's map image",
+      url: 'https://www.krtc.com.tw/Guide/guide_map',
+      accessed: '2026-08-24',
+    },
+  },
+  [lineKey('KRTC', 'O')]: {
+    nameEn: 'Orange Line',
+    nameZh: '橘線',
+    colour: '#F39C0F',
+    operator: 'KRTC',
+    colourSource: {
+      kind: 'operator',
+      label: "KRTC's own operating network map; exact colour transcribed from the operator's map image",
+      url: 'https://www.krtc.com.tw/Guide/guide_map',
+      accessed: '2026-08-24',
+    },
+  },
+  [lineKey('KRTC', 'C')]: {
+    nameEn: 'Circular Light Rail',
+    nameZh: '環狀輕軌',
+    colour: '#80BF3D',
+    operator: 'KRTC',
+    colourSource: {
+      kind: 'operator',
+      label: "KRTC's own operating network map; exact colour transcribed from the operator's map image",
+      url: 'https://www.krtc.com.tw/Guide/guide_map',
+      accessed: '2026-08-24',
+    },
+  },
 }
 
 /**
@@ -214,7 +250,7 @@ const OFF_PLATFORM: Record<
  * So the distinction is recorded here, once, and the pages that need it read
  * it from here rather than hard-coding a list of codes.
  */
-const LIGHT_RAIL = new Set(['V', 'K'])
+const LIGHT_RAIL = new Set(['V', 'K', 'C'])
 
 export type Line = {
   /** Stable operator/system namespace plus the bare line code. */
@@ -329,6 +365,8 @@ export function branchTint(line: Line, amount = 0.45): string {
 }
 
 export const LINES: Line[] = DISPLAY_ORDER.map(([operator, code]) => derive(operator, code))
+const KRTC_LINES: Line[] = ['R', 'O', 'C'].map((code) => derive('KRTC', code))
+const KRTC_BY_KEY = new Map(KRTC_LINES.map((line) => [line.key, line]))
 
 const BY_KEY = new Map(LINES.map((l) => [l.key, l]))
 const BY_CODE = buildBareLineIndex(LINES)
@@ -369,7 +407,7 @@ export function getLine(code: string | undefined | null, operator?: string | nul
   // Preserve the lookup contract: a caller must pass the code token itself,
   // not a string that only becomes valid after whitespace is silently removed.
   if (code !== code.trim()) return undefined
-  if (operator) return BY_KEY.get(lineKey(operator, code))
+  if (operator) return BY_KEY.get(lineKey(operator, code)) ?? KRTC_BY_KEY.get(lineKey(operator, code))
   return resolveBareLine(BY_CODE, code)
 }
 

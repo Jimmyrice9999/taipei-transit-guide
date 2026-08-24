@@ -250,6 +250,11 @@ a:hover {
   gap: 12px;
 }
 
+.page-title-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .page-title-icon {
   color: var(--accent);
 }

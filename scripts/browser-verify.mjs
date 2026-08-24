@@ -241,6 +241,13 @@ const PAGE_TYPES = [
   { name: 'thsr-line', url: '/rail/thsr/lines/thsr/' },
   { name: 'thsr-stations', url: '/rail/thsr/stations/' },
   { name: 'thsr-station', url: '/rail/thsr/stations/taipei/' },
+  /* Run 153: Kaohsiung's Metro and Circular Light Rail use a separate
+     operator namespace and have distinct system, line, and station layouts. */
+  { name: 'krtc-system', url: '/rail/krtc/' },
+  { name: 'krtc-lines', url: '/rail/krtc/lines/' },
+  { name: 'krtc-line', url: '/rail/krtc/lines/red-line/' },
+  { name: 'krtc-stations', url: '/rail/krtc/stations/' },
+  { name: 'krtc-station', url: '/rail/krtc/stations/formosa-boulevard-r10/' },
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },

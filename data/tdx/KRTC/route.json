@@ -1,0 +1,110 @@
+[
+  {
+    "Direction": 0,
+    "EndStationID": "OT1",
+    "EndStationName": {
+      "En": "Daliao",
+      "Zh_tw": "大寮"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "KRTC",
+    "RailRouteType": 33,
+    "RouteID": "O",
+    "RouteLength": 13.12,
+    "RouteName": {
+      "En": "Orange Line",
+      "Zh_tw": "橘線"
+    },
+    "SrcUpdateTime": "2016-11-23T10:33:49+08:00",
+    "StartStationID": "O1",
+    "StartStationName": {
+      "En": "Hamasen",
+      "Zh_tw": "哈瑪星"
+    },
+    "TravelTime": 23,
+    "UpdateTime": "2017-04-25T10:42:38+08:00",
+    "VersionID": 1
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "O1",
+    "EndStationName": {
+      "En": "Hamasen",
+      "Zh_tw": "哈瑪星"
+    },
+    "LineID": "O",
+    "LineNo": "O",
+    "OperatorCode": "KRTC",
+    "RailRouteType": 33,
+    "RouteID": "O",
+    "RouteLength": 13.12,
+    "RouteName": {
+      "En": "Orange Line",
+      "Zh_tw": "橘線"
+    },
+    "SrcUpdateTime": "2016-11-23T10:33:49+08:00",
+    "StartStationID": "OT1",
+    "StartStationName": {
+      "En": "Daliao",
+      "Zh_tw": "大寮"
+    },
+    "TravelTime": 23,
+    "UpdateTime": "2017-04-25T10:42:38+08:00",
+    "VersionID": 1
+  },
+  {
+    "Direction": 0,
+    "EndStationID": "RK1",
+    "EndStationName": {
+      "En": "Gangshan Station",
+      "Zh_tw": "岡山車站"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "KRTC",
+    "RailRouteType": 33,
+    "RouteID": "R",
+    "RouteLength": 29.72,
+    "RouteName": {
+      "En": "Red Line",
+      "Zh_tw": "紅線"
+    },
+    "SrcUpdateTime": "2016-11-23T10:33:49+08:00",
+    "StartStationID": "R3",
+    "StartStationName": {
+      "En": "Siaogang",
+      "Zh_tw": "小港"
+    },
+    "TravelTime": 50,
+    "UpdateTime": "2017-04-25T10:42:38+08:00",
+    "VersionID": 1
+  },
+  {
+    "Direction": 1,
+    "EndStationID": "R3",
+    "EndStationName": {
+      "En": "Siaogang",
+      "Zh_tw": "小港"
+    },
+    "LineID": "R",
+    "LineNo": "R",
+    "OperatorCode": "KRTC",
+    "RailRouteType": 33,
+    "RouteID": "R",
+    "RouteLength": 29.72,
+    "RouteName": {
+      "En": "Red Line",
+      "Zh_tw": "紅線"
+    },
+    "SrcUpdateTime": "2016-11-23T10:33:49+08:00",
+    "StartStationID": "RK1",
+    "StartStationName": {
+      "En": "Gangshan Station",
+      "Zh_tw": "岡山車站"
+    },
+    "TravelTime": 50,
+    "UpdateTime": "2017-04-25T10:42:38+08:00",
+    "VersionID": 1
+  }
+]

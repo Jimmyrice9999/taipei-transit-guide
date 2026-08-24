@@ -1,0 +1,184 @@
+{
+  "apiBase": "https://tdx.transportdata.tw/api/basic",
+  "datasetNotes": {
+    "first-last-timetable": "first and last train per station and direction",
+    "line": "line records, including the official LineColor",
+    "line-transfer": "interchange pairs, better than inferring transfers from station names",
+    "route": "route records, termini and end-to-end travel time",
+    "s2s-travel-time": "run time and dwell between adjacent stations, in seconds",
+    "shape": "route geometry as WKT — the surveyed alignment the maps are drawn from",
+    "station": "station codes, Chinese/English/Japanese/Korean names, coordinates, address",
+    "station-of-route": "station sequence per route — what orders BR01 to BR24"
+  },
+  "fetchedAt": "2026-08-24T14:00:05.657Z",
+  "licence": "Government open data — see https://data.gov.tw/licenses",
+  "operators": {
+    "KRTC": {
+      "datasets": {
+        "first-last-timetable": {
+          "fields": [
+            "DestinationStaionID",
+            "DestinationStationName",
+            "FirstTrainTime",
+            "LastTrainTime",
+            "LineID",
+            "LineNo",
+            "ServiceDay",
+            "SrcUpdateTime",
+            "StationID",
+            "StationName",
+            "TrainType",
+            "TripHeadSign",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 304,
+          "srcUpdatedNewest": "2026-07-01",
+          "srcUpdatedOldest": "2026-07-01",
+          "status": 200
+        },
+        "line": {
+          "fields": [
+            "IsBranch",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "LineSectionName",
+            "SrcUpdateTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": "2017-05-26",
+          "srcUpdatedOldest": "2017-05-26",
+          "status": 200
+        },
+        "line-transfer": {
+          "fields": [
+            "FromLineID",
+            "FromLineName",
+            "FromLineNo",
+            "FromStationID",
+            "FromStationName",
+            "SrcUpdateTime",
+            "ToLineID",
+            "ToLineName",
+            "ToLineNo",
+            "ToStationID",
+            "ToStationName",
+            "TransferDescription",
+            "TransferTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": "2017-05-26",
+          "srcUpdatedOldest": "2017-05-26",
+          "status": 200
+        },
+        "route": {
+          "fields": [
+            "Direction",
+            "EndStationID",
+            "EndStationName",
+            "LineID",
+            "LineNo",
+            "OperatorCode",
+            "RailRouteType",
+            "RouteID",
+            "RouteLength",
+            "RouteName",
+            "SrcUpdateTime",
+            "StartStationID",
+            "StartStationName",
+            "TravelTime",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2016-11-23",
+          "srcUpdatedOldest": "2016-11-23",
+          "status": 200
+        },
+        "s2s-travel-time": {
+          "fields": [
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "SrcUpdateTime",
+            "TrainType",
+            "TravelTimes",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2024-07-05",
+          "srcUpdatedOldest": "2024-07-05",
+          "status": 200
+        },
+        "shape": {
+          "fields": [
+            "EncodedPolyline",
+            "Geometry",
+            "LineID",
+            "LineName",
+            "LineNo",
+            "UpdateTime"
+          ],
+          "records": 2,
+          "srcUpdatedNewest": null,
+          "srcUpdatedOldest": null,
+          "status": 200
+        },
+        "station": {
+          "fields": [
+            "BikeAllowOnHoliday",
+            "LocationCity",
+            "LocationCityCode",
+            "LocationTown",
+            "LocationTownCode",
+            "SrcUpdateTime",
+            "StationAddress",
+            "StationID",
+            "StationName",
+            "StationPosition",
+            "StationUID",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 39,
+          "srcUpdatedNewest": "2024-09-12",
+          "srcUpdatedOldest": "2024-09-12",
+          "status": 200
+        },
+        "station-of-route": {
+          "fields": [
+            "Direction",
+            "LineID",
+            "LineNo",
+            "RouteID",
+            "RouteName",
+            "SrcUpdateTime",
+            "Stations",
+            "UpdateTime",
+            "VersionID"
+          ],
+          "records": 4,
+          "srcUpdatedNewest": "2024-07-09",
+          "srcUpdatedOldest": "2024-07-09",
+          "status": 200
+        }
+      },
+      "name": "Kaohsiung Rapid Transit Corporation"
+    }
+  },
+  "partialFetch": {
+    "at": "2026-08-24T14:00:05.657Z",
+    "note": "Only these operators were refetched; the others carry their earlier fetch record.",
+    "operators": [
+      "KRTC"
+    ]
+  },
+  "source": "Taiwan MOTC TDX (Transport Data eXchange)",
+  "sourceUrl": "https://tdx.transportdata.tw/"
+}

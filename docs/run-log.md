@@ -17114,3 +17114,29 @@ claims 0 ASSERTED, conflicts check and unit 226/226 pass. Browser verification
 is clean: 1,740-page axe pass with zero violations, 596 screenshots, all
 curated keyboard/accessibility probes, and all print PDFs. Generated audit
 JSONs, screenshots and PDFs were restored and are not part of the commit.
+
+# Run 153 - Kaohsiung KRTC metro and Circular Light Rail (24 August 2026)
+
+Part 12 begins with the Kaohsiung Rapid Transit Corporation operator namespace:
+TDX Station, StationOfRoute, Line, Route, Shape, LineTransfer and
+FirstLastTimetable were fetched live, yielding 39 metro stations, four metro
+route directions, two lines, two shapes, two transfer records and 304
+station-direction timetable records. The operator guide map and station guide
+were read alongside the Kaohsiung City Government Mass Rapid Transit Bureau
+Red/Orange and Circular Light Rail project pages. Content adds the KRTC system,
+three line pages and 77 station pages, including the operator-published C21A
+light-rail station as a distinct record.
+
+The route-length conflict is preserved: TDX gives Red 29.72 km and Orange
+13.12 km, while the government project page gives 28.3 km and 14.4 km. The
+difference is not resolved because the sources do not define the same measure.
+Ridership, detailed accessibility/facilities, fleet, depots, signalling,
+power, headways, LRT coordinates and construction chronology remain TBC; the
+research file records the source families searched and the checked failures.
+
+Gates: build 2,529 pages with Han subsets complete; cite clean, research clean,
+claims 0 ASSERTED, conflicts check and unit 229/229 pass. Browser verification
+is clean: 1,823-page axe pass with zero violations, 631 screenshots, all
+curated KRTC keyboard/accessibility probes, and 86 print PDFs. The KRTC station
+heading received a shrinkable text wrapper after the first 320px pass exposed
+28 real overflows; the fresh matrix has no reflow findings.

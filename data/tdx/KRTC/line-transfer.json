@@ -1,0 +1,56 @@
+[
+  {
+    "FromLineID": "O",
+    "FromLineName": {
+      "Zh_tw": "橘線"
+    },
+    "FromLineNo": "O",
+    "FromStationID": "O5",
+    "FromStationName": {
+      "En": "Formosa Boulevard",
+      "Zh_tw": "美麗島"
+    },
+    "SrcUpdateTime": "2017-05-26T00:00:00+08:00",
+    "ToLineID": "R",
+    "ToLineName": {
+      "Zh_tw": "紅線"
+    },
+    "ToLineNo": "R",
+    "ToStationID": "R10",
+    "ToStationName": {
+      "En": "Formosa Boulevard",
+      "Zh_tw": "美麗島"
+    },
+    "TransferDescription": "美麗島",
+    "TransferTime": 3,
+    "UpdateTime": "2020-12-15T15:24:41+08:00",
+    "VersionID": 2
+  },
+  {
+    "FromLineID": "R",
+    "FromLineName": {
+      "Zh_tw": "紅線"
+    },
+    "FromLineNo": "R",
+    "FromStationID": "R10",
+    "FromStationName": {
+      "En": "Formosa Boulevard",
+      "Zh_tw": "美麗島"
+    },
+    "SrcUpdateTime": "2017-05-26T00:00:00+08:00",
+    "ToLineID": "O",
+    "ToLineName": {
+      "Zh_tw": "橘線"
+    },
+    "ToLineNo": "O",
+    "ToStationID": "O5",
+    "ToStationName": {
+      "En": "Formosa Boulevard",
+      "Zh_tw": "美麗島"
+    },
+    "TransferDescription": "美麗島",
+    "TransferTime": 3,
+    "UpdateTime": "2020-12-15T15:24:41+08:00",
+    "VersionID": 2
+  }
+]

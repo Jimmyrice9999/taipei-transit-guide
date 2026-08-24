@@ -24,6 +24,7 @@ import { SANYING_STATIONS } from './sanying-stations.ts'
 import type { StationResearch } from './station-research.ts'
 import type { Source } from './sources.ts'
 import type { RailFormerName, RailRouteMembership, RailStatus } from './rail-architecture.ts'
+import { KRTC_LRT_STATIONS, KRTC_METRO_STATIONS, getKrtcRoute } from './krtc.ts'
 
 /** A line that will serve a station but does not yet. See the overlay. */
 export type PlannedInterchange = {
@@ -110,6 +111,59 @@ export const STATIONS: Station[] = [
   ...SANYING_STATIONS,
 ]
 
+const KRTC_STATIONS: Station[] = [
+  ...KRTC_METRO_STATIONS.map((station) => ({
+    code: station.code,
+    line: station.code.startsWith('O') || station.code === 'OT1' ? 'O' : 'R',
+    operator: 'KRTC',
+    name: station.name,
+    nameZh: station.nameZh,
+    district: station.town,
+    address: station.address,
+    location: station.address,
+    locationSource: 'TDX Station response',
+    sources: [],
+    prose: [],
+    lat: station.latitude,
+    lon: station.longitude,
+    sequence: 0,
+    chainageKm: null,
+    interchange: [],
+    structure: 'unknown' as Structure,
+    engineering: '',
+    exits: null,
+    planned: [],
+    recordSource: 'tdx' as const,
+    research: null,
+  })),
+  ...KRTC_LRT_STATIONS.map((station) => ({
+    code: station.id,
+    line: 'C',
+    operator: 'KRTC',
+    name: station.nameEn,
+    nameZh: station.nameZh,
+    district: '',
+    address: station.location,
+    location: station.location,
+    locationSource: 'KRTC/MTBU Circular Light Rail route pages',
+    sources: [],
+    prose: [],
+    lat: null,
+    lon: null,
+    sequence: station.sequence,
+    chainageKm: null,
+    interchange: [],
+    structure: 'unknown' as Structure,
+    engineering: '',
+    exits: null,
+    planned: [],
+    recordSource: 'tdx' as const,
+    research: null,
+  })),
+]
+
+const KRTC_BY_CODE = new Map(KRTC_STATIONS.map((station) => [station.code.toUpperCase(), station]))
+
 /*
  * Keyed on the UPPERCASED code, because lookups uppercase too.
  *
@@ -130,8 +184,9 @@ for (const station of STATIONS) {
 
 export function getStation(code: string, operator?: string): Station | undefined {
   const normalized = code.trim().toUpperCase()
+  if (operator?.trim().toUpperCase() === 'KRTC') return KRTC_BY_CODE.get(normalized)
   if (operator?.trim()) return BY_KEY.get(`${operator.trim().toUpperCase()}:${normalized}`)
-  return BY_CODE.get(normalized)
+  return BY_CODE.get(normalized) ?? KRTC_BY_CODE.get(normalized)
 }
 
 /**
@@ -144,6 +199,19 @@ export function getLineStations(lineCode: string, operator?: string): Station[] 
   const prefix = lineCode.trim().toUpperCase()
   if (!prefix) return []
   const namespace = operator?.trim().toUpperCase()
+  if (namespace === 'KRTC') {
+    if (prefix === 'C') return KRTC_STATIONS.filter((station) => station.line === prefix)
+    const route = getKrtcRoute(prefix)
+    if (!route) return []
+    return route.stations
+      .map((member) => KRTC_BY_CODE.get(member.stationId.toUpperCase()))
+      .filter((station): station is Station => Boolean(station))
+      .map((station, index) => ({
+        ...station,
+        sequence: route.stations[index].sequence,
+        chainageKm: route.stations[index].cumulativeDistance,
+      }))
+  }
   return STATIONS.filter(
     (s) => s.line === prefix && (!namespace || s.operator.toUpperCase() === namespace),
   ).sort((a, b) => a.sequence - b.sequence)
@@ -175,6 +243,10 @@ export const LINES_WITH_STATION_PAGES = CATALOGUED_LINES
 /** The URL for a station's page, or null when it does not have one. */
 export function getStationHref(code: string, operator?: string): string | null {
   const station = getStation(code, operator)
+  if (station?.operator.toUpperCase() === 'KRTC') {
+    const slug = station.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+    return `/rail/krtc/stations/${slug}-${station.code.toLowerCase()}/`
+  }
   if (!station || !LINES_WITH_STATION_PAGES.has(station.line)) return null
   if (station.operator.toUpperCase() === 'TMRT') {
     return `/rail/tmrt/stations/${station.code.toLowerCase()}/`
