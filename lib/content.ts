@@ -66,6 +66,16 @@ const CONTENT_DIR = path.join(process.cwd(), 'content')
  */
 export const ARTICLE_TYPES = new Set(['history', 'projects'])
 
+/** Long-form guides that use the article reading layout without changing the
+ * layout of the older ticketing guide records. */
+export function isArticlePage(section: string, type: string, slug: string): boolean {
+  return (
+    ARTICLE_TYPES.has(type) ||
+    (section === 'ticketing' && type === 'guides' &&
+      (slug === 'glossary' || slug === 'conflicts-index'))
+  )
+}
+
 /** Prefix for GitHub Pages subpath hosting; empty when served from the root. */
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
@@ -923,7 +933,7 @@ export async function getPageFromFile(
     [...meta.facts, ...meta.specs].map((row) => row.source).filter(Boolean),
   )
 
-  const article = ARTICLE_TYPES.has(type)
+  const article = isArticlePage(section, type, slug)
 
   const processor = unified()
     .use(remarkParse) // Markdown text -> syntax tree

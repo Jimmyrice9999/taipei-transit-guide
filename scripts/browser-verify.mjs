@@ -208,6 +208,8 @@ const PAGE_TYPES = [
      distinct long-form ticketing page, so keep a representative in the
      curated screenshot/print matrix. */
   { name: 'ticketing-fare-history', url: '/ticketing/guides/fare-history/' },
+  { name: 'ticketing-glossary', url: '/ticketing/guides/glossary/' },
+  { name: 'ticketing-conflicts-index', url: '/ticketing/guides/conflicts-index/' },
   /*
    * Run 89: the bike, ferry, cards/passes, and Taichung Metro additions are
    * distinct content families. Keep one representative for each index,

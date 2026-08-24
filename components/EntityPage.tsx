@@ -43,7 +43,7 @@ import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { branchTint, getAccent } from '@/lib/lines'
 import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
-import { ARTICLE_TYPES, getPage, getPages, getSection, getSystem, getType } from '@/lib/content'
+import { getPage, getPages, getSection, getSystem, getType, isArticlePage } from '@/lib/content'
 import { getImage } from '@/lib/images'
 import { collapseMajorSections } from '@/lib/collapsible-html'
 import JsonLd from '@/components/JsonLd'
@@ -139,12 +139,13 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const systemMeta = system ? getSystem(section, system) : null
   const accent = getAccent(page.line, page.operator)
   const entityKind = getEntityIconKind(section, type)
+  const articlePage = isArticlePage(section, type, slug)
   const toc = [
     ...page.toc,
     ...(type === 'lines' && page.line
       ? [{ id: 'ridership', label: 'Ridership', level: 2 as const }]
       : []),
-    ...(!ARTICLE_TYPES.has(type) && page.specs.length
+    ...(!articlePage && page.specs.length
       ? [{ id: 'specifications', label: 'Specifications', level: 2 as const }]
       : []),
     ...(page.references.length ? [{ id: 'references', label: 'References', level: 2 as const }] : []),
@@ -165,7 +166,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
    * a narrative it is an unlabelled rail of ticks — decoration pretending to
    * be data — so it is not rendered at all. See ARTICLE_TYPES in lib/content.
    */
-  if (ARTICLE_TYPES.has(type)) {
+  if (articlePage) {
     /*
      * The facts strip belongs after the opening, not after the title: a
      * narrative page should begin by being read, not consulted. The rendered

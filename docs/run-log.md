@@ -16523,3 +16523,59 @@ passed. Browser verification was clean across 1,462 pages: 526 screenshots,
 responsive reflow, keyboard/tree probes, zero axe violations and all
 representative print PDFs. The new page was viewed at 320/400% and 1440px.
 Generated audit JSONs, screenshots and PDFs are not staged.
+
+# Run 125 - glossary and generated conflicts index (24 August 2026)
+
+## Part 8 - reader terms and the conflicts index
+
+The audit added `content/ticketing/guides/glossary.md`, a 994-word sourced
+glossary, and `content/ticketing/guides/conflicts-index.md`, a 13,477-word
+generated index containing 41 conflict records. The glossary covers 段次,
+分段緩衝區, 幹線公車, 先導公車, 通勤專車, 市民小巴, 區/副/繞/延/預,
+區間車, 區間快, 幹線, 悠遊卡, 一卡通, TPASS, 轉乘優惠, 固定閉塞,
+移動閉塞, 第三軌 and 聯合開發. The generated page copies the source-page
+sections, keeps every published value and measurement, namespaces the copied
+citation ids, and links each record back to the page where the disagreement
+was found. `npm run conflicts:check` now makes that page drift detectable at
+build time; optional missing source fields remain empty rather than becoming
+the literal string `undefined`.
+
+Full primary pages fetched and read:
+
+- https://www.railway.gov.tw/tra-tip-web/tip/file/5322d613-4dd7-4a35-9c9a-4257face1d25
+- https://wedid.ntpc.gov.tw/Governance/Detail/Eg8MLyOJvRkq
+- https://ebus.gov.taipei/ebus?ct=tpc
+- https://ebus.gov.taipei/ProjectBus/Taipeidrts
+- https://ebus.gov.taipei/EBus/VsSimpleMap?rid=11217&sec=1
+- https://ebus.gov.taipei/RelatedLinks/TicketInfo
+- https://tdx.transportdata.tw/api-service/swagger/basic/268fc230-2e04-471b-a728-a726167c1cfc
+- https://www.metro.taipei/News_Content.aspx?n=566DA580861CEE77&sms=87415A8B9CE81B16&s=1CDFC00134A98701
+- https://www.easycard.com.tw/about
+- https://www.i-pass.com.tw/page/aboutus
+- https://www.easycard.com.tw/_upload/files/Megacity%20Pass.pdf
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page73.html
+- https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page225.html
+- https://ebook.dorts.gov.taipei/ebook/no24/files/basic-html/page364.html
+- https://www.dorts.gov.taipei/News_toggle.aspx?PageSize=200&n=2A66A485FACB0D5B&page=1&sms=87415A8B9CE81B16
+
+Conflicts and gaps: the live bus pages establish route-specific examples of
+區, 副, 繞, 延 and 預 but do not publish one universal suffix dictionary, so
+the glossary does not invent one. The TRA timetable distinguishes 區間車
+from 區間快 and uses 幹線 as a rail grouping; the bus portal uses 幹線公車
+for a different mode-sensitive family. The generated index preserves all 41
+existing conflict sections and their competing values rather than averaging
+or selecting among them. The monthly-pass PDF lead returned HTTP 404 and the
+TRA route-numbering PDF timed out on 2026-08-24; neither search result was
+used. A complete TRA service-class glossary remains TBC pending the railway's
+fare, timetable and operating-rule pages.
+
+Verification: build generated 1,823 routes and postbuild checked 1,969 pages;
+cite resolved 5,245 citations (5,038 primary, 207 secondary); research was
+clean at 131 files/558 checked failures; claims were 15,137 sourced, 4,315
+TBC and 0 ASSERTED. Conflicts, facts, unit tests (219/219), a11y with no
+warnings, links, geometry and CVD passed. Browser verification was clean:
+1,464 pages reflowed, 540 screenshots, all keyboard/tree probes, zero axe
+violations and all representative print PDFs. The two new pages were viewed
+at 320/400% and 1440px. The `塞` glyph required by the glossary was added to
+the committed content font subset. Generated audits, screenshots and PDFs
+were restored and are not staged.

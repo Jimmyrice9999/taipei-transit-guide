@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/postbuild.mjs",
+    "build": "npm run conflicts:check && next build && node scripts/postbuild.mjs",
     "start": "next start",
     "fonts": "node scripts/subset-cjk.mjs",
     "palette": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/palette.mts",
@@ -27,6 +27,8 @@
     "geometry": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/geometry-report.mts",
     "colours": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/export-colours.mts",
     "search": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/search-index.mts",
+    "conflicts": "node scripts/generate-conflicts-index.mjs",
+    "conflicts:check": "node scripts/generate-conflicts-index.mjs --check",
     "data": "npm run stations && npm run colours && npm run search",
     "check": "node scripts/check-links.mjs",
     "a11y": "node scripts/a11y-report.mjs",
