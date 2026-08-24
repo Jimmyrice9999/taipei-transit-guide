@@ -17429,3 +17429,40 @@ including the new Sea Line type pass, zero axe violations across 1,852 pages,
 694 screenshots and 99 print PDFs. The 320px and 1440px Sea Line screenshots
 were inspected. Generated audit JSONs, screenshots and PDFs were restored and
 are not part of the commit.
+
+# Run 159 - Taichung Metro Chongde–Fengyuan Line (25 August 2026)
+
+## Sourced
+
+Part 12's seventh unit adds the Chongde–Fengyuan Line as a single feasibility-project page. The full current TCRT project page establishes the corridor origin, the Fengyuan Station extension, NT$20m feasibility-study budget, MOTC/local funding split and chronology through the 24 July 2026 final-report submission:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C137
+
+The full 18 December 2025 release establishes the 15.42 km/11-station preliminary scope, approximately 220,000 target-year service population within 500 metres and the 2.5-minute peak-headway forecast:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1285
+
+The full 24 December release establishes the one-depot scope, approximately 108,000 target-year daily forecast, approximately 16,000 peak-hour forecast and the three Fengyuan urban-section alternatives, while retaining central approval as the final decision point:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1289
+
+The full 15-page Fengyuan deck establishes provisional `R1`–`R11` labels, the connections to Green/Orange/Fengke/TRA, the 108,310 daily / 16,910 peak-hour / 5,870 maximum interstation target-year values, and the north-ring-road elevated, south-ring-road elevated and Zhongzheng Road underground alternatives:
+https://tcrt.taichung.gov.tw/df_ufiles/030/台中捷運紅線114年12月22日豐原區地方說明會-簡報.pdf
+
+The full 14-page Beitun deck and the full Fengyuan and Beitun meeting records preserve the final-approval boundary and local concerns about station spacing, Houli extension space, traffic, road width, parking, pedestrian space, noise, vibration, underground construction and possible network branches:
+https://tcrt.taichung.gov.tw/df_ufiles/030/台中捷運紅線114年12月23日北屯區地方說明會-簡報.pdf
+https://tcrt.taichung.gov.tw/df_ufiles/030/台中捷運紅線114年12月22日豐原區地方說明會-會議紀錄.pdf
+https://tcrt.taichung.gov.tw/df_ufiles/030/台中捷運紅線114年12月23日北屯區地方說明會-會議紀錄.pdf
+
+## TBC
+
+The live TDX TMRT probe on 25 August returned the operating Green Line only; it contains no Red Line project, station, geometry, timetable or ridership record. The final station names and coordinates, selected Fengyuan alternative, final guideway form, central approval, environmental/comprehensive planning, construction procurement, progress, opening date and observed ridership remain TBC. The checked source families were the current TCRT project page, the two official releases, both full presentation decks, both full meeting records and live TDX TMRT records.
+
+## Contradicted the corpus
+
+No corpus assertion was contradicted in this unit. The page decision is deliberate: the primary records support a feasibility page with provisional labels and competing Fengyuan alternatives, not 11 manufactured station pages.
+
+## Conflicts found
+
+The public scope is described as all elevated in the preliminary materials, while the Fengyuan deck presents two elevated options and one underground option for the urban section and the meeting records request additional underground evaluation. This is a planning-level conflict, not a selected design; no final guideway form is published.
+
+The 24 December release reports approximately 16,000 peak-hour passengers, while the presentation reports 16,910 peak-hour passengers and 5,870 maximum interstation passengers per hour. These are retained as different precisions/metrics from the target-year model and are not current ridership.
+
+The Red page is 682 body words including citation markers and the updated project-status page is 1,003 by the same rough line-based count. Gates: build generated 2,586 pages and postbuild checked 2,744 with no missing glyphs; cite 7,026 resolved citations, research 140 files/591 checked failures, conflicts current with 45 records, claims 20,557 sourced/4,462 TBC/0 ASSERTED; unit tests 231/231; a11y 1,854 pages; internal links 427,561 with no breaks or orphans. Browser verification is clean: no reflow or spine findings, curated keyboard/ARIA probes including the new Red Line type pass, zero axe violations across 1,853 pages, 701 screenshots and 99 print PDFs. The 320px and 1440px Red screenshots were inspected. Generated audit JSONs, screenshots and PDFs were restored and are not part of the commit.

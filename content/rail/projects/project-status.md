@@ -204,6 +204,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full current project page for the Orange Line's feasibility chronology, 18 August 2026 approval, route scope and aggregate station count.
+  - id: taichung-red
+    title: Taichung Metro Chongde–Fengyuan Line project page
+    titleOriginal: 臺中市政府捷運工程局-捷運路網-崇德豐原線（紅線）
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C137
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full current project page for the Red Line's route scope, 11-station Fengyuan extension and final-report review status.
+  - id: taichung-red-dec24
+    title: Red Line public meetings collect local opinions
+    titleOriginal: 崇德豐原線說明會北屯、豐原接力舉辦　中市府傾聽民意優化規劃
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1289
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full 24 December 2025 release for the 15.42 km/11-station/one-depot preliminary scope, forecasts and unresolved Fengyuan alternatives.
   - id: taichung-orange-sea
     title: Orange Line extension to coastal districts project page
     titleOriginal: 臺中市政府捷運工程局-捷運路網-機場捷運（橘線）延伸海線地區
@@ -260,6 +278,8 @@ Taichung's Purple Line remains a feasibility-stage project under central review.
 Taichung's Airport Orange Line feasibility study was approved by the Executive Yuan on 18 August 2026.[^taichung-orange] The current project page gives approximately 29.23 km and 26 planned stations; see the [Taichung Airport MRT Orange Line project page](/rail/projects/taichung-orange-line/) for its approval sequence, forecast boundary and pre-construction status.[^taichung-orange]
 
 The Orange Line Sea Line extension remains a feasibility-stage project with an interim revised report under review.[^taichung-orange-sea] Its January public proposal is approximately 16.50 km with 10 stations and branches toward Sanmin Road and Wuqi Fishing Port; see the [Orange Line Sea Line extension project page](/rail/projects/taichung-orange-sea-extension/) for the planning boundary, mode debate and source conflicts.[^taichung-orange-sea]
+
+Taichung's Chongde–Fengyuan Red Line remains in feasibility review.[^taichung-red] Its preliminary scope is approximately 15.42 km with 11 stations and one level-five depot, but the Fengyuan urban section still has two elevated and one underground alternatives.[^taichung-red][^taichung-red-dec24] See the [Taichung Metro Chongde–Fengyuan Line project page](/rail/projects/taichung-red-line/) for the study chronology, forecast boundary and unresolved route choice.
 
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^dorts-east-contract]

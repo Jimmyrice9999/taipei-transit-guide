@@ -1290,6 +1290,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full current project page for the Orange Sea extension's feasibility funding, interim-report chronology and under-review status."
+  - id: "rail-projects-project-status-taichung-red"
+    title: "Taichung Metro Chongde–Fengyuan Line project page"
+    titleOriginal: "臺中市政府捷運工程局-捷運路網-崇德豐原線（紅線）"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C137"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current project page for the Red Line's route scope, 11-station Fengyuan extension and final-report review status."
+  - id: "rail-projects-project-status-taichung-red-dec24"
+    title: "Red Line public meetings collect local opinions"
+    titleOriginal: "崇德豐原線說明會北屯、豐原接力舉辦　中市府傾聽民意優化規劃"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1289"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full 24 December 2025 release for the 15.42 km/11-station/one-depot preliminary scope, forecasts and unresolved Fengyuan alternatives."
   - id: "rail-projects-project-status-dorts-east-contract"
     title: "Xinyi Line East Extension CR580C contract"
     titleOriginal: "捷運信義線東延段CR580C區段標工程"
@@ -2735,6 +2753,8 @@ Taichung's Airport Orange Line feasibility study was approved by the Executive Y
 
 The Orange Line Sea Line extension remains a feasibility-stage project with an interim revised report under review.[^rail-projects-project-status-taichung-orange-sea] Its January public proposal is approximately 16.50 km with 10 stations and branches toward Sanmin Road and Wuqi Fishing Port; see the [Orange Line Sea Line extension project page](/rail/projects/taichung-orange-sea-extension/) for the planning boundary, mode debate and source conflicts.[^rail-projects-project-status-taichung-orange-sea]
 
+Taichung's Chongde–Fengyuan Red Line remains in feasibility review.[^rail-projects-project-status-taichung-red] Its preliminary scope is approximately 15.42 km with 11 stations and one level-five depot, but the Fengyuan urban section still has two elevated and one underground alternatives.[^rail-projects-project-status-taichung-red][^rail-projects-project-status-taichung-red-dec24] See the [Taichung Metro Chongde–Fengyuan Line project page](/rail/projects/taichung-red-line/) for the study chronology, forecast boundary and unresolved route choice.
+
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^rail-projects-project-status-dorts-east-contract]
 DORTS's 2026 priorities describe the construction fences coming down and the
@@ -2763,6 +2783,8 @@ as ROC 113–123.[^rail-projects-project-status-rb-115-rail]
 - [Purple Line feasibility study under review](https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1549) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-purple-july]
 - [Taichung Airport MRT Orange Line project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C99) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-orange]
 - [Orange Line extension to coastal districts project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C158) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-orange-sea]
+- [Taichung Metro Chongde–Fengyuan Line project page](https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C137) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-red]
+- [Red Line public meetings collect local opinions](https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1289) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-25.[^rail-projects-project-status-taichung-red-dec24]
 - [Xinyi Line East Extension CR580C contract](https://www.dorts.gov.taipei/cp.aspx?n=027CDB8C2A690039&s=A900A23BE33939EA) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-east-contract]
 - [DORTS 2026 policy priorities](https://www.dorts.gov.taipei/Content_List.aspx?n=DB5E985E6B7CAB80) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-115-plan]
 - [DORTS construction completion targets](https://www.dorts.gov.taipei/News_Content.aspx?Create=1&n=2A66A485FACB0D5B&s=5154D7C19D53C545&sms=87415A8B9CE81B16) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-24.[^rail-projects-project-status-dorts-construction-targets]
