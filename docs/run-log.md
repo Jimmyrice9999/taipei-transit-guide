@@ -16933,3 +16933,19 @@ stopping patterns, facilities, ridership and aliases remain TBC.
 Gates: build 2,356 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: Eastern positions
 61–64.
+
+# Run 142 - TRA Eastern station batch (24 August 2026)
+
+The thirteenth TRA content unit completes all 64 Eastern Main Line station
+pages with the final four positions. The first postbuild pass found two
+content-derived glyph gaps (壠 in the changelog and 卑 at Shanli); regenerating
+the subsets resolved both while leaving the checker intact.
+
+Sources, conflicts and TBC boundaries remain as recorded in the TRA research
+file and Runs 130–141. No secondary source was promoted into content. The
+completed Eastern pages report verified TDX station membership and sequence;
+stopping patterns, facilities, ridership and aliases remain TBC.
+
+Gates: build 2,364 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the smallest
+verified branch lines, beginning with SA and SH.
