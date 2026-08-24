@@ -38,6 +38,7 @@ import { getLineTrack } from '@/lib/network'
 import { getLineStations, getStation, LINES_WITH_STATION_PAGES } from '@/lib/stations'
 import { formatRunTime, getFirstLast, getRunTime } from '@/lib/timetable'
 import { numberSources } from '@/lib/sources'
+import { getStationAccessibility } from '@/lib/trtc-accessibility'
 import JsonLd from '@/components/JsonLd'
 import { breadcrumbSchema, stationSchema } from '@/lib/structured-data'
 
@@ -149,7 +150,16 @@ export default async function StationPage({ params }: Props) {
   const service = getFirstLast(station.code)
   const geometry = getLineGeometry(station.line, station.operator)
   const track = getLineTrack(station.line, station.operator)
-  const stationSources = station.research?.sources ?? station.sources
+  const accessibility = getStationAccessibility(
+    station.operator,
+    station.line,
+    station.code,
+    station.structure,
+  )
+  const stationSources = [
+    ...(station.research?.sources ?? station.sources),
+    ...(accessibility ? [accessibility.source] : []),
+  ].filter((source, index, sources) => sources.findIndex((item) => item.id === source.id) === index)
   const stationReferences = numberSources(
     stationSources,
     new Set(stationSources.map((source) => source.id)),
@@ -167,7 +177,7 @@ export default async function StationPage({ params }: Props) {
       ? [{ id: 'station-context', label: 'Station context', level: 2 as const }]
       : []),
     { id: 'ridership', label: 'Ridership', level: 2 as const },
-    ...((station.research || station.sources.length > 0)
+    ...(stationSources.length > 0
       ? [{ id: 'references', label: 'References', level: 2 as const }]
       : []),
   ]
@@ -455,18 +465,38 @@ export default async function StationPage({ params }: Props) {
                 </dd>
               </div>
             )}
-            {station.research && (
-              <div className="platform-fact">
-                <dt>Facilities</dt>
+              {station.research && (
+                <div className="platform-fact">
+                  <dt>Facilities</dt>
                 <dd>
                   <RichText>{station.research.facilities}</RichText>
                   <CiteMark
                     id={station.research.facilitiesSource ?? station.research.mapSource}
                     references={stationReferences}
                   />
+                  </dd>
+                </div>
+              )}
+              <div className="platform-fact platform-fact-accessibility">
+                <dt>Accessibility</dt>
+                <dd>
+                  {accessibility ? (
+                    <div className="station-accessibility-list">
+                      <div><strong>Lifts</strong> {accessibility.lift}</div>
+                      <div><strong>Step-free route</strong> {accessibility.stepFree}</div>
+                      <div><strong>Tactile path and warnings</strong> {accessibility.tactile}</div>
+                      <div><strong>Accessible toilet</strong> {accessibility.toilet}</div>
+                      <div><strong>Nursing room</strong> {accessibility.nursing}</div>
+                      <div><strong>Platform gap</strong> {accessibility.platformGap}</div>
+                    </div>
+                  ) : (
+                    'TBC — no station-specific accessibility record has been added for this operator and line.'
+                  )}
+                  {accessibility && (
+                    <CiteMark id={accessibility.source.id} references={stationReferences} />
+                  )}
                 </dd>
               </div>
-            )}
             {station.research?.exitDetails && (
               <div className="platform-fact">
                 <dt>Exit locations</dt>
@@ -880,7 +910,7 @@ export default async function StationPage({ params }: Props) {
           )}
         </nav>
 
-        {(station.research || station.sources.length > 0) && <References references={stationReferences} />}
+          {stationSources.length > 0 && <References references={stationReferences} />}
       </div>
     </PageShell>
   )

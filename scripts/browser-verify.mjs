@@ -200,6 +200,10 @@ const PAGE_TYPES = [
   { name: 'gondola-station-maokong', url: '/rail/cable/stations/maokong-station/' },
   { name: 'ticketing-guides', url: '/ticketing/guides/' },
   { name: 'ticketing-fare-stages', url: '/ticketing/guides/bus-fare-stages/' },
+  /* Run 122: dated fare history and the operator concession timeline are a
+     distinct long-form ticketing page, so keep a representative in the
+     curated screenshot/print matrix. */
+  { name: 'ticketing-fare-history', url: '/ticketing/guides/fare-history/' },
   /*
    * Run 89: the bike, ferry, cards/passes, and Taichung Metro additions are
    * distinct content families. Keep one representative for each index,

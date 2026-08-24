@@ -16343,6 +16343,63 @@ Full primary pages fetched and read:
 - https://web.metro.taipei/ebook/2014ebook/files/basic-html/page47.html
 - https://ebook.dorts.gov.taipei/ebook/no22/files/basic-html/page180.html
 
+# Run 122 - fare history and station accessibility (24 August 2026)
+
+## Part 5 - fare timeline, concessions and station access
+
+The audit found official evidence for the 1996 opening fares, 1996 transfer
+vouchers, 1999 stored-value/free-transfer rule, 2003 transfer-fare stages,
+2005 transfer-window change, 2020 Circular Phase 1, 2023 TPASS, 2025 TPASS
+2.0 rebates, current Taipei bus fares, and current NTMC/TYMC fare tables. The
+new `fare-history` page contains 816 body words and a dated source table; it
+does not invent a complete gazette series where the full series was not found.
+
+TRTC's fetched `stationdisabledinfo` endpoint returned 121 station records.
+The committed accessibility layer retains lift/ramp, accessible-toilet,
+tactile, anti-slip, gate, announcement and related operator fields, while
+station pages now show explicit lift, step-free, tactile, toilet, nursing-room
+and platform-gap rows. NTMC's full page supplies Circular/light-rail access
+and nursing-room station codes; TYMC's full page supplies system-wide lift,
+gate, toilet, tactile and ramp statements. Platform-gap measurements remain
+TBC, as do TRTC/TYMC nursing-room locations where the fetched page/API has no
+station field for them.
+
+Full primary pages fetched and read:
+
+- https://www.metro.taipei/cp.aspx?n=B27E7BC8CBBCDA61&s=9ABADF3671A79331
+- https://wsdo.gov.taipei/cp.aspx?n=3D33E9D6085135B8
+- https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTA1MTLoh7rljJfluILlpKfnnL7pgYvovLjlg7nmoLzoqr%2FmlbTlvbHpn7%2FoqZXmnpAucGRm&u=LzAwMS9VcGxvYWQvMzY3L3JlbGZpbGUvNDUwMDAvNzY2MjY1My84MjlmOGRlMC1iMDQ5LTQ5YjctODM1ZC1jOThjNTQwNDdlZDcucGRm
+- https://www-ws.gov.taipei/001/Upload/405/attachment/7592/910191134944.pdf
+- https://www.metro.taipei/cp.aspx?n=ECEADC266D7120A7&s=A965100AF27E50FF
+- https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=5o236YGL55Kw54uA57ea56ys5LiA6ZqO5q616YCa6LuK5b6M56Wo5YO55WsgZKLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvNDA1L3JlbGZpbGUvMTgyODgvNzYxOC9jMzI2ZmQwMi04MWJlLTQ5MDMtOWUxOS1mNDZmODYyMTZjNmQucGRm
+- https://ebus.gov.taipei/RelatedLinks/TicketInfo
+- https://pto.gov.taipei/News_Content.aspx?n=D065CCB1467288C8&s=FB42176B7B44EDED
+- https://www.thb.gov.tw/News_Content_table.aspx?n=87&s=219668
+- https://www.thb.gov.tw/News_Content_table.aspx?n=12181&s=264039&sms=14672
+- https://www.ntmetro.com.tw/basic/?node=10105
+- https://www.ntmetro.com.tw/basic/?node=10166
+- https://www.ntmetro.com.tw/basic/?node=10041
+- https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/accessible.html
+- https://web.metro.taipei/pages/tw/stationdisabledinfo/
+- https://web.metro.taipei/apis/metrostationapi/stationdisabledinfo
+
+Conflicts retained: 1996 opening fares versus the 2020/current 20–65 fare
+structure are different dates/scopes; PTO's 15/12/8 passenger fares versus
+the 2020 regulated bus operating rate are different measures; and Sanying's
+published free-trial rule remains separate from its missing normal fare table.
+TBC: a gazette-by-gazette historic fare list, normal post-trial Sanying fares,
+TRTC/TYMC nursing-room locations and all numerical platform gaps. The failed
+TRTC ticket-history POST endpoints and the incomplete source searches are
+recorded in `docs/research/ticketing/fare-history.md`.
+
+Verification: build generated 1,814 routes and postbuild checked 1,961 pages;
+cite resolved 5,056 citations, research was clean, claims stayed at 0
+ASSERTED, facts/unit/a11y/check/links/geometry/CVD all passed. Browser
+verification passed: 1,459 pages, 512 screenshots, keyboard/axe/tree probes
+and all representative print PDFs. Fare history and station accessibility
+were visually checked at 320/400% and 1440px. Generated audit artifacts were
+restored and are not staged.
+
 Conflicts retained: fixed-block signalling and automated train-control
 functions are different layers; depot planning capacity and current stabling
 are different measures; and line-level platform-door history does not become a
