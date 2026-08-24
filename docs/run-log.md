@@ -16949,3 +16949,20 @@ stopping patterns, facilities, ridership and aliases remain TBC.
 Gates: build 2,364 pages, Han subsets complete; cite, research, claims
 0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the smallest
 verified branch lines, beginning with SA and SH.
+
+# Run 143 - TRA Shenao branch (24 August 2026)
+
+The fourteenth TRA content unit adds the complete three-station Shenao Branch
+(SA), including its line page and station pages. The build first found the
+new character 卑 in the generated changelog; regenerating the base subset
+resolved the postbuild check.
+
+The TDX StationOfLine response remains the primary source for membership and
+sequence, with the TRA history, timetable and statistical report sources
+retained for context. Route geometry, stopping patterns, facilities,
+ridership, aliases and closed alignments remain TBC; no secondary source was
+promoted into content.
+
+Gates: build 2,370 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: the three-station
+Shalun Branch (SH).
