@@ -2,7 +2,7 @@
 title: Taipei-region rail projects
 summary: What is being built, what is approved, what remains a proposal, and what the primary record still cannot establish.
 order: 0
-updated: 2026-08-24
+updated: 2026-08-25
 facts:
   - label: Taipei construction programme
     value: 3 lines, 43.41 km, 37 stations in the 2026 plan
@@ -195,6 +195,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full July 2026 release for the Purple Line's rounded length, station count and estimated cost.
+  - id: taichung-orange
+    title: Taichung Airport MRT Orange Line project page
+    titleOriginal: 臺中市政府捷運工程局-捷運路網-機場捷運（橘線）
+    publisher: Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C99
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Full current project page for the Orange Line's feasibility chronology, 18 August 2026 approval, route scope and aggregate station count.
 ---
 
 ## How to read project status
@@ -238,6 +247,8 @@ so both descriptions are retained rather than silently reconciled.[^dorts-115-pl
 Taichung's Blue Line is documented separately as an approved project moving into route construction.[^taichung-blue] The full project page gives 24.78 km, 20 stations and one depot; current route contracts cover BC11 (B01–B03) and BC12 (B04–B08).[^taichung-blue] See the [Taichung Metro Blue Line project page](/rail/projects/taichung-blue-line/) for the dated approval and procurement record.
 
 Taichung's Purple Line remains a feasibility-stage project under central review.[^taichung-purple] Its full project page gives approximately 16.31 km and 16 planned stations, while the July 2026 release gives the estimated NT$690.87 billion cost.[^taichung-purple][^taichung-purple-july] See the [Taichung Metro Purple Line project page](/rail/projects/taichung-purple-line/) for its dated review chronology and route boundary.
+
+Taichung's Airport Orange Line feasibility study was approved by the Executive Yuan on 18 August 2026.[^taichung-orange] The current project page gives approximately 29.23 km and 26 planned stations; see the [Taichung Airport MRT Orange Line project page](/rail/projects/taichung-orange-line/) for its approval sequence, forecast boundary and pre-construction status.[^taichung-orange]
 
 The Xinyi East Extension is a one-station, approximately 1.4 km extension with
 tail tracks; its CR580C contract page records a 17 October 2016 start.[^dorts-east-contract]

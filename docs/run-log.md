@@ -17268,3 +17268,84 @@ is clean: no reflow or spine findings, curated keyboard/ARIA probes pass, zero
 axe violations across 1,850 pages, 680 screenshots and 97 print PDFs. The
 320px and 1440px Purple screenshots were inspected. Generated audit JSONs,
 screenshots and PDFs were restored and are not part of the commit.
+
+# Run 157 - Taichung Airport MRT Orange Line feasibility project (25 August 2026)
+
+## Sourced
+
+Part 12's fifth unit adds the Orange Line as a project page. The full current
+Taichung Rapid Transit Systems Bureau page establishes the airport-to-Wufeng
+corridor, its planning purpose, approximately 29.23 km route, 26 planned
+stations, 15 elevated sections and 11 underground sections, and the complete
+ROC 109-115 feasibility chronology through Executive Yuan approval on 18 August
+2026:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C99
+
+The full 5 August 2026 bureau release gives the rounded 29.23 km/26-station
+scope, estimated NT$160.2bn total cost, the pre-approval report resubmission,
+and an estimated 12-year construction period after approval and sequencing:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1597
+The full 25 May release establishes public reading for the comprehensive-plan,
+environmental-impact and basic-design technical-services procurement; the full
+15 July response records that it was still a public-reading response, not a
+construction award:
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C160%2C%2C%2C%2C1490
+https://tcrt.taichung.gov.tw/latestevent/Details?Parser=9%2C4%2C31%2C161%2C%2C%2C1563
+
+The full network page records the 18 August feasibility approval and places the
+Orange Line among the city's medium-term projects:
+https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C44
+The full MOTC 112 Transport Yearbook records the same project at 29.2 km, 26
+stations, 15 elevated sections and 11 underground sections, and is retained as
+a dated rounded value rather than silently replaced by the current page:
+https://www.motc.gov.tw/ch/app/yearbook/doc?detailNo=2&id=21&module=directory&serno=10185&type=s&year=112
+
+The full Taichung Transport Bureau forecast chapter reports conditional model
+outputs, not observed ridership. Its conservative/basic/TOD daily scenarios are
+102,474/112,356/120,236 in ROC 114, 122,010/136,560/145,850 in ROC 120, and
+153,390/164,650/185,280 in ROC 130; it identifies O9/B9-O10 as the maximum
+segment and O9/B9 and O4/G7 as forecast transfer points:
+https://www.traffic.taichung.gov.tw/df_ufiles/f/Ch05%20%E8%B7%AF%E7%B7%9A%E9%81%8B%E9%87%8F%E9%A0%90%E6%B8%AC%E8%88%87%E5%88%86%E6%9E%90.pdf
+
+## TBC
+
+The live TDX TMRT probe on 25 August returned the operating Green Line only;
+it published no Orange project or operating record. Station names and codes,
+coordinates, geometry, exits, accessibility, timetable, actual ridership,
+contracts, construction award, programme-wide progress percentage and opening
+date remain TBC. The checked source families were TCRT's current project,
+network, release and procurement pages; MOTC's transport yearbook; the
+Taichung Transport Bureau forecast chapter; and the live TDX TMRT records.
+
+## Contradicted the corpus
+
+No corpus assertion was contradicted in this unit. The page decision is
+deliberate: the primary records support a feasibility-project page, not 26
+manufactured station pages.
+
+## Conflicts found
+
+The current TCRT page and 5 August release use approximately 29.23 km, while
+the MOTC 112 Transport Yearbook uses 29.2 km. Both describe the same 26-station,
+15-elevated/11-underground project scope; the sources do not say whether the
+difference is rounding or a planning revision, so both values are published.
+
+There is also a dated status progression: the 5 August release says the report
+was resubmitted and seeking Executive Yuan approval, while the current page,
+network page and 20 August modification record approval on 18 August. These
+are not averaged or collapsed; the later approval is published alongside the
+earlier pre-approval state. Forecast figures are kept separate from observed
+ridership because the forecast source explicitly describes scenario analysis.
+
+The Orange page is 726 body words and the updated project-status page is 904.
+The first build failed at postbuild because two pages rendered Han glyphs absent
+from the content subset; `npm run fonts` regenerated the committed content font
+subset, after which the build passed. Final gates: build generated 2,582 pages
+and postbuild checked 2,740; cite 6,998 resolved citations, research 138
+files/584 checked failures, conflicts current, claims 20,512 sourced/4,457 TBC/
+0 ASSERTED; unit tests 231/231; a11y 1,852 pages; internal links 423,392 with
+no breaks or orphans. Browser verification is clean: no reflow or spine
+findings, curated keyboard/ARIA probes pass, zero axe violations across 1,851
+pages, 687 screenshots and 98 print PDFs. The 320px and 1440px Orange
+screenshots were inspected. Generated audit JSONs, screenshots and PDFs were
+restored and are not part of the commit.
