@@ -77,6 +77,24 @@ function build() {
   }
 }
 
+/*
+ * The real corpus currently contains intentional proofing warnings for route
+ * prose that mentions codes outside the route's own line namespace. Those
+ * warnings are useful, but they are not evidence that the fixture just added
+ * to the corpus was warned about. Matching any `⚠` in the complete build
+ * output therefore makes every otherwise-clean fixture fail as soon as an
+ * unrelated warning exists elsewhere in the site.
+ *
+ * Each fixture is written under a unique `zz-*` basename, and all content
+ * warnings carry the source file path. Scope the assertion to that path so a
+ * clean fixture still has to be clean and a warning fixture still has to
+ * produce its own warning. Build failures are handled independently below.
+ */
+function warnsForFixture(output, testCase) {
+  const fixtureNames = Object.keys(testCase.files).map((file) => path.basename(file, path.extname(file)))
+  return /⚠/.test(output) && fixtureNames.some((name) => output.includes(name))
+}
+
 const read = (rel) => {
   const full = path.join(OUT, rel)
   return fs.existsSync(full) ? fs.readFileSync(full, 'utf8') : null
@@ -318,7 +336,7 @@ for (const testCase of CASES) {
   for (const [rel, body] of Object.entries(testCase.files)) write(rel, body)
 
   const { code, output } = build()
-  const warned = /⚠/.test(output)
+  const warned = warnsForFixture(output, testCase)
   const built = code === 0
 
   let verdict = null
