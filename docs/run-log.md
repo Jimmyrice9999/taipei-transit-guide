@@ -16781,3 +16781,20 @@ route aggregates versus overlapping TDX line records. TBCs remain explicit.
 Gates: build 2,074 pages; cite, research, claims 0 ASSERTED, conflicts check,
 and unit 226/226 all pass. Next: finish the Western Main Line, then generate
 the Eastern station batches and the smallest verified branch lines.
+
+# Run 132 - TRA Western station batch and font subset (24 August 2026)
+
+The third TRA content unit adds Western Main Line station positions 31–45.
+The first build caught four missing Han glyphs introduced by those pages; the
+font-subset pipeline was rerun from the completed export and the regenerated
+font assets now cover the new content. This is recorded as a build dependency,
+not hidden as a page-level exception.
+
+Sources and conflicts are unchanged from Runs 130–131: full TDX Station,
+StationOfLine and Shape responses, and the full TRA history, timetable and
+statistical report pages. Ridership, accessibility facilities, service
+patterns, aliases, gauge chronology and closed alignments remain TBC.
+
+Gates: build 2,104 pages, Han subsets complete; cite, research, claims
+0 ASSERTED, conflicts check and unit 226/226 all pass. Next: continue the
+Western Main Line sequence.
