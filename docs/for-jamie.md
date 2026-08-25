@@ -2,15 +2,15 @@
 
 ## Active handoff - 25 August 2026
 
-Run 170 adds Tainan regional buses: full TDX route/operator/ordered-stop data,
-seven official annual ridership CSVs (Minguo 108–114), fare/portal research,
-and a separate 52-route 小黃公車 layer. The snapshot has 165 routes, 692
-direction records, 23,386 stops, 10 operators and 1,032 ridership rows.
-The official Q&A says 52 routes/32 districts; the 5 August notice says 49/31.
-Both values remain published. Municipal JSON resource fetches failed; TDX
-and direct CSV downloads succeeded. No snippets used; no corpus contradiction.
-Gates: cite 7,183; research 151/636; claims 0 ASSERTED; build 2,765 pages;
-unit 234/234; check 441,644; a11y 1,867; search 1,877; browser zero axe on
-1,866 pages, 764 screenshots, 107 PDFs; Tainan inspected at 320/375/1440.
-Generated audits restored; `probes/` remains untracked.
-Next: Part 13 Kaohsiung regional buses, then Part 14 other modes.
+Run 171 adds Kaohsiung regional buses: live TDX route/operator/ordered-stop
+data, official fare and 公車式小黃 research, and an explicit municipal-index
+boundary. The snapshot has 316 routes, 617 direction records, 19,191 stops
+and 30 operator records; the municipal index separately says 197 routes.
+Both counts remain published. Ridership resources, accessibility PDF,
+municipal XML and the 113 report link failed direct fetch; all are recorded.
+No snippets used; no corpus contradiction. Page body: 832 words.
+Gates: cite 7,206; research 152/642; claims 0 ASSERTED; build 2,766 pages;
+unit 234/234; check 441,880; a11y 1,868; search 1,878; browser zero axe on
+1,867 pages, 771 screenshots, 107 PDFs; Kaohsiung inspected at 320/375/768/
+1440/1920/2560. Generated audits restored; `probes/` remains untracked.
+Next: Part 14 other modes.

@@ -1,6 +1,6 @@
 ---
 title: Regional bus networks
-description: City and county bus networks beyond the Taipei core, with dated Hsinchu, Taichung and Tainan layers.
+description: City and county bus networks beyond the Taipei core, with dated Hsinchu, Taichung, Tainan and Kaohsiung layers.
 order: 4
 sources:
   - id: hsinchu-portal
@@ -129,6 +129,42 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official 小黃公車 route, service-mode and reservation page.
+  - id: kaohsiung-route-index
+    title: Kaohsiung bus route overview by route
+    titleOriginal: 公車路線總覽(依路線別)
+    publisher: Kaohsiung City Government Transportation Bureau (高雄市政府交通局)
+    url: https://www.tbkc.gov.tw/Service/PublicTransport/NewBusRoute
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The official municipal route index and its displayed route count.
+  - id: kaohsiung-route-tdx
+    title: Kaohsiung city-bus route response
+    titleOriginal: 高雄市公車路線資料（TDX Route）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Kaohsiung?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The full live route snapshot used by the Kaohsiung page.
+  - id: kaohsiung-stop-tdx
+    title: Kaohsiung TDX ordered bus stops by route
+    titleOriginal: 高雄市公車路線站序資料（TDX StopOfRoute）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/StopOfRoute/City/Kaohsiung?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The full live ordered-stop snapshot used by the Kaohsiung page.
+  - id: kaohsiung-yellow
+    title: Kaohsiung 公車式小黃 service plan
+    titleOriginal: 公車式小黃服務計畫簡介
+    publisher: Kaohsiung City Government Transportation Bureau (高雄市政府交通局)
+    url: https://www.tbkc.gov.tw/Service/PublicTransport/Taxis?id=db7194a9-88c3-4277-9343-6e080d7493e8
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The official taxi-bus service description and route boundary.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -138,6 +174,8 @@ The first regional entry is [Hsinchu regional buses](/bus/regional/hsinchu/).[^h
 The second entry is [Taichung regional buses](/bus/regional/taichung/).[^taichung-dataset] It preserves 392 city-bus route records and the separate 26-route 小黃公車 reservation catalogue, while leaving city-bus frequency and route-level fares TBC where the fetched primary data has no such field.[^taichung-csv][^taichung-yellow][^taichung-citybus]
 
 The third entry is [Tainan regional buses](/bus/regional/tainan/).[^tainan-route-dataset][^tainan-route-tdx] Its route and ordered-stop snapshot is joined to the city's annual route-ridership resources and its separate 小黃公車 route table, while timetable history remains outside the static layer.[^tainan-stop-tdx][^tainan-ridership-dataset][^tainan-yellow]
+
+The fourth entry is [Kaohsiung regional buses](/bus/regional/kaohsiung/).[^kaohsiung-route-index][^kaohsiung-route-tdx] Its live TDX snapshot preserves 316 route records, 617 direction runs and 19,191 ordered stops, while the municipal index's separate 197-route count remains published as a scope conflict.[^kaohsiung-route-tdx][^kaohsiung-stop-tdx][^kaohsiung-route-index] The city's 公車式小黃 service is kept as a documented service category rather than merged into a conventional fixed-route timetable.[^kaohsiung-yellow]
 
 ## Coverage
 

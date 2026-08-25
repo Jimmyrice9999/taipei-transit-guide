@@ -327,6 +327,51 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the committed operator record, contact fields, source municipality, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields."
+  - id: "bus-regional-kaohsiung-kaohsiung-route-index"
+    title: "Kaohsiung bus route overview by route"
+    titleOriginal: "公車路線總覽(依路線別)"
+    publisher: "Kaohsiung City Government Transportation Bureau (高雄市政府交通局)"
+    url: "https://www.tbkc.gov.tw/Service/PublicTransport/NewBusRoute"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full municipal route index displayed 197 routes when fetched; its count is retained as a separate publication scope from TDX's 316 route records."
+  - id: "bus-regional-kaohsiung-kaohsiung-route-tdx"
+    title: "Kaohsiung city-bus route response"
+    titleOriginal: "高雄市公車路線資料（TDX Route）"
+    publisher: "Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Kaohsiung?$format=JSON"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full live response supplied 316 route records, route names, terminal labels, operator objects, sub-routes, route-map URLs, version IDs and source update times."
+  - id: "bus-regional-kaohsiung-kaohsiung-stop-tdx"
+    title: "Kaohsiung TDX ordered bus stops by route"
+    titleOriginal: "高雄市公車路線站序資料（TDX StopOfRoute）"
+    publisher: "Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Bus/StopOfRoute/City/Kaohsiung?$format=JSON"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full live response supplied 617 direction-level records and 19,191 ordered stop objects with names, sequence values, boarding flags and coordinates."
+  - id: "bus-regional-kaohsiung-kaohsiung-accessibility"
+    title: "Kaohsiung public-transport accessibility service index"
+    titleOriginal: "無障礙服務"
+    publisher: "Kaohsiung City Government Transportation Bureau (高雄市政府交通局)"
+    url: "https://www.tbkc.gov.tw/Service/PublicTransport/Accessibility"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full page lists a dated low-floor-bus route and reservation information file, plus separate rehabilitation-bus and facility entries; the linked low-floor PDF itself failed fetch and is not expanded here."
+  - id: "bus-regional-kaohsiung-kaohsiung-ridership"
+    title: "Kaohsiung MRT feeder-bus operations"
+    titleOriginal: "高雄市捷運接駁公車營運情形"
+    publisher: "Kaohsiung City Government Budget Office (高雄市政府主計處)"
+    url: "https://data.gov.tw/dataset/159665"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full catalogue lists annual fields including route mileage, vehicles, trips, passenger count, passenger-kilometres and revenue; its linked JSON and CSV resources failed direct fetch, so no values are asserted."
   - id: "bus-regional-taichung-taichung-dataset"
     title: "Taichung city-bus route and stop information dataset"
     titleOriginal: "臺中市市區公車路線站點資訊"
@@ -1860,6 +1905,22 @@ The Highway Bureau's open-data catalogue is narrower and newer: its dataset was 
 - [Electric-bus operations observation event](https://enews.moenv.gov.tw/Page/3B3C62C78849F32F/c786de79-bdd3-43e7-ae4b-a23241d918a9) — primary; Environmental Protection Administration, Executive Yuan (行政院環境保護署; now Ministry of Environment); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-history]
 - [National electric-bus operating vehicle count and manufacturer dataset](https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=734) — primary; Highway Bureau, Ministry of Transportation and Communications (交通部公路局); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-data]
 - [TDX bus operator and route pull](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺); accessed 2026-08-15.[^bus-operators-taoyuanbus-2ov8j-tdx-bus-operator-pull]
+
+## Kaohsiung regional buses — Conflicts and gaps
+
+Discussed on [Kaohsiung regional buses](/bus/regional/kaohsiung/) in the source page's “Conflicts and gaps” section.[^bus-regional-kaohsiung-kaohsiung-route-index]
+
+### Conflicts and gaps
+
+The 197-route municipal index and the 316-record TDX snapshot are both published values, but the fetched sources do not define a common counting unit: the index is a public route list while TDX includes separately identified route records and branch/service variants.[^bus-regional-kaohsiung-kaohsiung-route-index][^bus-regional-kaohsiung-kaohsiung-route-tdx] The page therefore publishes both and leaves the reconciliation TBC. A historical route-change series, current route-level timetable history, fleet allocation, depot assignment, reliability, route-level ridership and a complete accessibility inventory also remain TBC because the fetched primary pages and structured responses do not supply those fields.[^bus-regional-kaohsiung-kaohsiung-route-tdx][^bus-regional-kaohsiung-kaohsiung-stop-tdx][^bus-regional-kaohsiung-kaohsiung-accessibility][^bus-regional-kaohsiung-kaohsiung-ridership]
+
+#### Sources for this entry
+
+- [Kaohsiung bus route overview by route](https://www.tbkc.gov.tw/Service/PublicTransport/NewBusRoute) — primary; Kaohsiung City Government Transportation Bureau (高雄市政府交通局); accessed 2026-08-25.[^bus-regional-kaohsiung-kaohsiung-route-index]
+- [Kaohsiung city-bus route response](https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Kaohsiung?$format=JSON) — primary; Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務); accessed 2026-08-25.[^bus-regional-kaohsiung-kaohsiung-route-tdx]
+- [Kaohsiung TDX ordered bus stops by route](https://tdx.transportdata.tw/api/basic/v2/Bus/StopOfRoute/City/Kaohsiung?$format=JSON) — primary; Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務); accessed 2026-08-25.[^bus-regional-kaohsiung-kaohsiung-stop-tdx]
+- [Kaohsiung public-transport accessibility service index](https://www.tbkc.gov.tw/Service/PublicTransport/Accessibility) — primary; Kaohsiung City Government Transportation Bureau (高雄市政府交通局); accessed 2026-08-25.[^bus-regional-kaohsiung-kaohsiung-accessibility]
+- [Kaohsiung MRT feeder-bus operations](https://data.gov.tw/dataset/159665) — primary; Kaohsiung City Government Budget Office (高雄市政府主計處); accessed 2026-08-25.[^bus-regional-kaohsiung-kaohsiung-ridership]
 
 ## Taichung regional buses — Conflicts
 

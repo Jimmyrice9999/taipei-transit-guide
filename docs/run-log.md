@@ -17948,6 +17948,61 @@ screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
 
+# Run 171 - Kaohsiung regional bus layer (25 August 2026)
+
+## Sourced
+
+Added the Kaohsiung regional-bus page at `content/bus/regional/kaohsiung.md`,
+the primary-led research record at `docs/research/bus/kaohsiung.md`, and the
+deterministic TDX snapshotter `scripts/fetch-kaohsiung-bus.mjs`. Full primary
+pages read include the Kaohsiung route index
+(`https://www.tbkc.gov.tw/Service/PublicTransport/NewBusRoute`), operator index
+(`https://www.tbkc.gov.tw/Service/PublicTransport/BusRouterTrader`), fare page
+and fare Q&A, section-fare PDF, 公車式小黃 service plan, accessibility index,
+Government Data Open Platform route-stop catalogue and ridership catalogue.
+The live TDX Route, StopOfRoute and Operator responses were fetched directly:
+316 route records, 617 direction records, 19,191 ordered stops and 30 operator
+records, all retrieved 2026-08-25 with source update time
+2026-08-25T20:27:59+08:00. The page has 832 body words and 14 primary sources.
+
+## TBC
+
+Route-level ridership, historical ridership trends, route-change history,
+current timetable history, fleet/depot allocation, reliability and a complete
+route-level accessibility inventory remain TBC. The official ridership
+catalogue was read in full, but its linked JSON and CSV resources failed direct
+fetch; the low-floor-bus PDF failed fetch; the municipal XML stop endpoint
+failed fetch; and the linked 113 transportation statistical report returned
+404. No values were copied from search results. Each failure is recorded in
+`docs/research/bus/kaohsiung.md` under `Checked and failed`.
+
+## Contradicted the corpus
+
+No existing Kaohsiung or regional-bus claim was found to contradict. The new
+layer keeps Kaohsiung city routes separate from the national Highway Bureau
+intercity timetable and from the Hsinchu, Taichung and Tainan municipal layers.
+
+## Conflicts found
+
+The full municipal route and operator indexes each display 197 routes, while
+the full TDX route response contains 316 route records and 316 distinct route
+names. The sources do not define a common counting unit, so both values remain
+published. The fare page title says 1 July 2026, its internal heading says 1
+March 2026, and the linked official PDF says implementation from 1 July 2026;
+all three strings remain recorded. Municipal operator grouping, TDX operator
+records and route-attached operator objects are also kept as different
+populations rather than reconciled.
+
+Gates: cite 7,206 resolved clean; research 152 files/642 checked failures
+clean; conflicts current; claims 20,819 sourced/4,483 TBC/0 ASSERTED; build
+2,766 pages and 2,766 Han-subset checks clean; unit 234/234; check 441,880
+internal links; a11y 1,868 pages; search 1,878 entries; facts, geometry,
+fonts and links clean. Browser verification was clean: reflow at 640/320,
+keyboard/tree checks including Kaohsiung, zero axe violations across 1,867
+pages, 771 screenshots and 107 print PDFs. Kaohsiung screenshots were
+inspected at 320, 375, 768, 1440, 1920 and 2560 px. Generated audit JSONs,
+screenshots and PDFs were restored; `probes/` remains untracked.
+
 # Run 170 - Tainan regional bus layer (25 August 2026)
 
 ## Sourced
