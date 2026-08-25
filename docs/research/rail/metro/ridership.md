@@ -1,13 +1,25 @@
-# Taipei-region metro ridership — research findings, 24 August 2026
+# Taipei-region metro ridership — research findings, 24–26 August 2026
 
 **Corpus warning: `docs/research/` is leads only. It has been wrong repeatedly.
 Nothing here is citable until it has been checked against a primary source —
 see `.claude/skills/transit-research/SKILL.md`.**
 
 This report records the publication boundary before the site derives any
-station, line or network figures. The retrieval date is 2026-08-24. The
-figures below are not interchangeable: the operators use different units,
-coverage rules and publication formats.
+station, line or network figures. The initial retrieval date was 2026-08-24;
+the NTMC publication index and current monthly pull were refreshed on
+2026-08-26. The figures below are not interchangeable: the operators use
+different units, coverage rules and publication formats.
+
+### Refresh checked 26 August 2026
+
+The full NTMC statistics page now lists `115年7月全系統運量統計.ods` as its
+newest file, followed by the 115年 January–June files and 114年 files. The
+importer fetched every `.ods` entry exposed by that page rather than retaining
+an arbitrary ten-file window. The committed NTMC data layer now covers
+September 2025–July 2026, with 11 monthly network records and the operator's
+entry, exit, line and station rows retained. Source: NTMC, *統計資料*, primary,
+High confidence: the full index was fetched and the linked ODS files were
+parsed locally. Original wording: `115年7月全系統運量統計.ods`.
 
 ## What is established
 
@@ -53,13 +65,13 @@ coverage rules and publication formats.
 ### New Taipei Metro Corporation (NTMC)
 
 - **NTMC publishes whole-system monthly files that contain daily station rows
-  and line subtotals.** The operator page lists ROC 115 January–June 2026 ODS
-  files and ROC 114 January–July 2025 PDF files. The ODS reports have separate
+  and line subtotals.** The operator page lists ROC 115 January–July 2026 ODS
+  files and earlier ROC 114 ODS/PDF files. The ODS reports have separate
   entry and exit sections; the data layer aggregates those dated station rows
   without treating the result as a precomputed operator table. Source: NTMC,
   *統計資料*, primary, High confidence. Original wording: the filenames
-  `115年6月全系統運量統計.ods` through `115年1月全系統運量統計.ods` and
-  `114年7月全系統運量統計.pdf` through `114年1月全系統運量統計.pdf`.
+  `115年7月全系統運量統計.ods` through `115年1月全系統運量統計.ods` and
+  the earlier 114年 files shown on the same page.
 - **The checked NTMC monthly file is daily and line-split.** Its January 2025
   PDF has daily columns for `總運量`, `淡海輕軌`, `安坑輕軌` and `環狀線`, a
   monthly total and a daily average. It explicitly warns that the data include
@@ -168,7 +180,7 @@ coverage rules and publication formats.
 - The current committed TRTC pull covers July 2025–July 2026 even though the
   operator index reaches back to 2015. Extending the data layer to older months
   requires fetching and parsing the remaining official ODS files.
-- The current committed NTMC pull covers September 2025–June 2026. Older
+- The current committed NTMC pull covers September 2025–July 2026. Older
   operator files and the New Taipei Transportation Bureau statistics system
   remain to be fetched before a longer station trend is claimed.
 - MOTC and TDX provide operator/line or structural data, not a substitute for

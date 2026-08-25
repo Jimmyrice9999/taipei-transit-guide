@@ -1,6 +1,6 @@
 {
-  "retrieved": "2026-08-24",
-  "currentPeriod": "2026-06",
+  "retrieved": "2026-08-26",
+  "currentPeriod": "2026-07",
   "source": {
     "id": "ntmc-system-ods",
     "title": "Monthly whole-system passenger traffic",
@@ -8,10 +8,15 @@
     "publisher": "New Taipei Metro Corporation",
     "publisherOriginal": "新北大眾捷運股份有限公司",
     "indexUrl": "https://www.ntmetro.com.tw/basic/?node=10145",
-    "accessed": "2026-08-24",
+    "accessed": "2026-08-26",
     "kind": "primary",
     "measure": "The operator's monthly report publishes entry and exit station-day rows and line subtotals. Station value is entry plus exit movement; network and line values use exit counts, with both dimensions retained.",
     "files": [
+      {
+        "period": "2026-07",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0N(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA4MjQxMTE2Mjg(3D.ods",
+        "title": "115年7月全系統運量統計.ods"
+      },
       {
         "period": "2026-06",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA3MjIxMDI1MTQ(3D.ods",
@@ -141,6 +146,13 @@
           "entry": 10956,
           "exit": 13806,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 25702,
+          "entry": 11694,
+          "exit": 14008,
+          "days": 31
         }
       ]
     },
@@ -220,6 +232,13 @@
           "entry": 25280,
           "exit": 31416,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 51932,
+          "entry": 24040,
+          "exit": 27892,
+          "days": 31
         }
       ]
     },
@@ -299,6 +318,13 @@
           "entry": 14878,
           "exit": 11304,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 17700,
+          "entry": 9358,
+          "exit": 8342,
+          "days": 31
         }
       ]
     },
@@ -378,6 +404,13 @@
           "entry": 17662,
           "exit": 19888,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 38920,
+          "entry": 18658,
+          "exit": 20262,
+          "days": 31
         }
       ]
     },
@@ -457,6 +490,13 @@
           "entry": 35198,
           "exit": 36308,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 36842,
+          "entry": 17610,
+          "exit": 19232,
+          "days": 31
         }
       ]
     },
@@ -536,6 +576,13 @@
           "entry": 33602,
           "exit": 37692,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 66626,
+          "entry": 30954,
+          "exit": 35672,
+          "days": 31
         }
       ]
     },
@@ -615,6 +662,13 @@
           "entry": 25250,
           "exit": 27624,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 53116,
+          "entry": 26266,
+          "exit": 26850,
+          "days": 31
         }
       ]
     },
@@ -694,6 +748,13 @@
           "entry": 45582,
           "exit": 52018,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 93544,
+          "entry": 43734,
+          "exit": 49810,
+          "days": 31
         }
       ]
     },
@@ -773,6 +834,13 @@
           "entry": 176524,
           "exit": 154458,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 298450,
+          "entry": 159230,
+          "exit": 139220,
+          "days": 31
         }
       ]
     },
@@ -789,6 +857,13 @@
           "entry": 17118,
           "exit": 13906,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 1143456,
+          "entry": 619820,
+          "exit": 523636,
+          "days": 31
         }
       ]
     },
@@ -805,6 +880,13 @@
           "entry": 1110,
           "exit": 1106,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 70300,
+          "entry": 33198,
+          "exit": 37102,
+          "days": 31
         }
       ]
     },
@@ -821,6 +903,13 @@
           "entry": 442,
           "exit": 400,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 46624,
+          "entry": 23474,
+          "exit": 23150,
+          "days": 31
         }
       ]
     },
@@ -837,6 +926,13 @@
           "entry": 636,
           "exit": 662,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 42182,
+          "entry": 21116,
+          "exit": 21066,
+          "days": 31
         }
       ]
     },
@@ -853,6 +949,13 @@
           "entry": 636,
           "exit": 670,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 38188,
+          "entry": 18494,
+          "exit": 19694,
+          "days": 31
         }
       ]
     },
@@ -869,6 +972,13 @@
           "entry": 5868,
           "exit": 6776,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 464700,
+          "entry": 205704,
+          "exit": 258996,
+          "days": 31
         }
       ]
     },
@@ -885,6 +995,13 @@
           "entry": 6544,
           "exit": 6394,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 438828,
+          "entry": 219520,
+          "exit": 219308,
+          "days": 31
         }
       ]
     },
@@ -901,6 +1018,13 @@
           "entry": 6970,
           "exit": 6808,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 564166,
+          "entry": 270436,
+          "exit": 293730,
+          "days": 31
         }
       ]
     },
@@ -917,6 +1041,13 @@
           "entry": 4436,
           "exit": 4638,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 504330,
+          "entry": 246760,
+          "exit": 257570,
+          "days": 31
         }
       ]
     },
@@ -933,6 +1064,13 @@
           "entry": 1878,
           "exit": 1784,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 108654,
+          "entry": 54744,
+          "exit": 53910,
+          "days": 31
         }
       ]
     },
@@ -949,6 +1087,13 @@
           "entry": 1830,
           "exit": 1804,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 110122,
+          "entry": 54504,
+          "exit": 55618,
+          "days": 31
         }
       ]
     },
@@ -965,6 +1110,13 @@
           "entry": 5904,
           "exit": 5958,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 311334,
+          "entry": 153732,
+          "exit": 157602,
+          "days": 31
         }
       ]
     },
@@ -1044,6 +1196,13 @@
           "entry": 541688,
           "exit": 431190,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 903406,
+          "entry": 499856,
+          "exit": 403550,
+          "days": 31
         }
       ]
     },
@@ -1123,6 +1282,13 @@
           "entry": 55574,
           "exit": 67202,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 119506,
+          "entry": 54566,
+          "exit": 64940,
+          "days": 31
         }
       ]
     },
@@ -1202,6 +1368,13 @@
           "entry": 5896,
           "exit": 6294,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 12180,
+          "entry": 6128,
+          "exit": 6052,
+          "days": 31
         }
       ]
     },
@@ -1281,6 +1454,13 @@
           "entry": 35454,
           "exit": 45268,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 58826,
+          "entry": 26182,
+          "exit": 32644,
+          "days": 31
         }
       ]
     },
@@ -1360,6 +1540,13 @@
           "entry": 58128,
           "exit": 67956,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 116046,
+          "entry": 53160,
+          "exit": 62886,
+          "days": 31
         }
       ]
     },
@@ -1439,6 +1626,13 @@
           "entry": 61562,
           "exit": 78014,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 131714,
+          "entry": 57778,
+          "exit": 73936,
+          "days": 31
         }
       ]
     },
@@ -1518,6 +1712,13 @@
           "entry": 70958,
           "exit": 86968,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 145952,
+          "entry": 65560,
+          "exit": 80392,
+          "days": 31
         }
       ]
     },
@@ -1597,6 +1798,13 @@
           "entry": 83648,
           "exit": 101470,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 182940,
+          "entry": 82760,
+          "exit": 100180,
+          "days": 31
         }
       ]
     },
@@ -1676,6 +1884,13 @@
           "entry": 47878,
           "exit": 55420,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 99288,
+          "entry": 46886,
+          "exit": 52402,
+          "days": 31
         }
       ]
     },
@@ -1755,6 +1970,13 @@
           "entry": 11336,
           "exit": 13050,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 24108,
+          "entry": 11062,
+          "exit": 13046,
+          "days": 31
         }
       ]
     },
@@ -1834,6 +2056,13 @@
           "entry": 31054,
           "exit": 32606,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 62008,
+          "entry": 30224,
+          "exit": 31784,
+          "days": 31
         }
       ]
     },
@@ -1913,6 +2142,13 @@
           "entry": 60872,
           "exit": 73776,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 114868,
+          "entry": 52836,
+          "exit": 62032,
+          "days": 31
         }
       ]
     },
@@ -1992,6 +2228,13 @@
           "entry": 12272,
           "exit": 11730,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 32114,
+          "entry": 16226,
+          "exit": 15888,
+          "days": 31
         }
       ]
     },
@@ -2071,6 +2314,13 @@
           "entry": 16222,
           "exit": 17968,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 27010,
+          "entry": 13066,
+          "exit": 13944,
+          "days": 31
         }
       ]
     },
@@ -2150,6 +2400,13 @@
           "entry": 559860,
           "exit": 291968,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 836080,
+          "entry": 544928,
+          "exit": 291152,
+          "days": 31
         }
       ]
     },
@@ -2229,6 +2486,13 @@
           "entry": 130940,
           "exit": 289036,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 386908,
+          "entry": 121660,
+          "exit": 265248,
+          "days": 31
         }
       ]
     },
@@ -2308,6 +2572,13 @@
           "entry": 96350,
           "exit": 179646,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 276536,
+          "entry": 97642,
+          "exit": 178894,
+          "days": 31
         }
       ]
     },
@@ -2387,6 +2658,13 @@
           "entry": 143948,
           "exit": 268502,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 413212,
+          "entry": 146366,
+          "exit": 266846,
+          "days": 31
         }
       ]
     },
@@ -2466,6 +2744,13 @@
           "entry": 661542,
           "exit": 231484,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 883998,
+          "entry": 656684,
+          "exit": 227314,
+          "days": 31
         }
       ]
     },
@@ -2545,6 +2830,13 @@
           "entry": 217242,
           "exit": 354244,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 567902,
+          "entry": 217866,
+          "exit": 350036,
+          "days": 31
         }
       ]
     },
@@ -2624,6 +2916,13 @@
           "entry": 109566,
           "exit": 166092,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 290538,
+          "entry": 115768,
+          "exit": 174770,
+          "days": 31
         }
       ]
     },
@@ -2703,6 +3002,13 @@
           "entry": 141098,
           "exit": 212852,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 360540,
+          "entry": 144374,
+          "exit": 216166,
+          "days": 31
         }
       ]
     },
@@ -2782,6 +3088,13 @@
           "entry": 139288,
           "exit": 206650,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 339636,
+          "entry": 138616,
+          "exit": 201020,
+          "days": 31
         }
       ]
     },
@@ -2861,6 +3174,13 @@
           "entry": 613584,
           "exit": 788786,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 1430196,
+          "entry": 631774,
+          "exit": 798422,
+          "days": 31
         }
       ]
     },
@@ -2940,6 +3260,13 @@
           "entry": 228714,
           "exit": 307064,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 537126,
+          "entry": 232348,
+          "exit": 304778,
+          "days": 31
         }
       ]
     },
@@ -3019,6 +3346,13 @@
           "entry": 528488,
           "exit": 104380,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 590652,
+          "entry": 486472,
+          "exit": 104180,
+          "days": 31
         }
       ]
     },
@@ -3098,6 +3432,13 @@
           "entry": 192082,
           "exit": 301032,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 488670,
+          "entry": 194550,
+          "exit": 294120,
+          "days": 31
         }
       ]
     },
@@ -3177,6 +3518,13 @@
           "entry": 358678,
           "exit": 419644,
           "days": 30
+        },
+        {
+          "period": "2026-07",
+          "value": 794466,
+          "entry": 369182,
+          "exit": 425284,
+          "days": 31
         }
       ]
     }
@@ -3508,6 +3856,39 @@
           "value": 50906,
           "entry": 53372,
           "exit": 50906,
+          "published": true
+        }
+      }
+    },
+    {
+      "period": "2026-07",
+      "value": 7388252,
+      "entry": 7391242,
+      "exit": 7388252,
+      "days": 31,
+      "lines": {
+        "Y": {
+          "value": 4098230,
+          "entry": 4098230,
+          "exit": 4098230,
+          "published": true
+        },
+        "V": {
+          "value": 1026948,
+          "entry": 1029562,
+          "exit": 1026948,
+          "published": true
+        },
+        "K": {
+          "value": 341692,
+          "entry": 341948,
+          "exit": 341692,
+          "published": true
+        },
+        "LB": {
+          "value": 1921382,
+          "entry": 1921502,
+          "exit": 1921382,
           "published": true
         }
       }

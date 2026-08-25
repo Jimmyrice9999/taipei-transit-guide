@@ -2,17 +2,16 @@
 
 ## Active handoff - 26 August 2026
 
-Run 177 adds the sourced Taiwan airport ground-transport guide and research
-record. It establishes the CAA's 17-airport service-directory boundary and
-documents full-source access details for Taoyuan, Songshan, Kaohsiung and
-Taitung, with a dated Taoyuan accessible-bus sheet.
-The page has 803 sourced body words. Taichung detail, Songshan route/fares,
-Taoyuan shuttle/bus/taxi detail and complete national airport coverage remain
-TBC; failed fetches are recorded as checked-and-failed.
-No direct numerical conflict was found; directory scope and operator scope are
-kept separate.
-Gates: cite 7,266; research 157/664; claims 0 ASSERTED; build 2,775;
-unit 234/234; a11y 1,877; browser zero axe across 1,876 pages, 820 screenshots,
-108 PDFs; airport inspected at 320/1440.
-Generated audits restored; `probes/` remains untracked.
-Next: remaining Part 14 modes after airport coverage.
+Run 178 refreshes the NTMC ridership data layer from the full official
+statistics index. It now includes 49 station records and 11 monthly records,
+September 2025 through July 2026, with entry, exit, line and station values.
+The prior ten-file truncation is gone; older XLSX/PDF formats remain TBC until
+parsed and checked.
+The live index correction supersedes the stale June endpoint in the earlier
+research note. No numerical conflict was introduced.
+Gates: cite clean; research 157/664; claims 0 ASSERTED; build 2,775;
+unit 234/234; a11y 1,877 clean. Browser harness unchanged; Run 177's full
+matrix remains clean.
+Generated claims output restored; `probes/` remains untracked.
+Next: extend ridership history beyond the current operator windows, beginning
+with TRTC's official per-station ODS archive.

@@ -18604,3 +18604,46 @@ verification: reflow, painted-box, keyboard/tree and print checks clean, zero
 axe violations across 1,876 pages, 820 screenshots and 108 print PDFs. The
 320/400%-equivalent and 1440px airport screenshots were inspected. Generated
 audits, screenshots and PDFs were restored; `probes/` remains untracked.
+
+## Run 178 - refresh NTMC ridership through July 2026 (2026-08-26)
+
+### Sourced
+
+Refreshed `data/ridership/ntmc-system.json` from the full NTMC statistics page
+(`https://www.ntmetro.com.tw/basic/?node=10145`) fetched on 26 August 2026.
+The importer now consumes every `.ods` entry exposed by the page instead of
+silently truncating the list at ten files. The committed layer has 49 station
+records and 11 monthly records from September 2025 through July 2026, retaining
+the operator's entry, exit, line and station dimensions. Updated
+`docs/research/rail/metro/ridership.md` with the fresh publication boundary and
+retrieval date.
+
+### TBC and checked failures
+
+NTMC station history before September 2025 remains TBC in the data layer. The
+page also exposes older `.xlsx` and `.pdf` files; this refresh consumes the
+current `.ods` series only, so those formats require a separate parser and
+verification before they can widen the trend. This is a coverage boundary, not
+evidence that older data does not exist.
+
+### Contradicted the corpus
+
+The previous ridership research statement that the current NTMC page stopped at
+115年6月 was stale when the full page was fetched again: the live page now lists
+115年7月. The prior arbitrary ten-file importer window was also removed; the
+research file and data metadata now state the actual 11-file `.ods` range.
+
+### Conflicts found
+
+No numerical conflict was introduced. NTMC's `.ods`, `.xlsx` and `.pdf` entries
+are different publication formats and are not merged or treated as equivalent
+without parsing each one.
+
+### Gates
+
+`cite` clean (1,670 content files; 7,266 citations); `research` 157 files/664
+checked failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build 2,775
+Han-subset checks; unit 234/234; a11y 1,877 pages with no errors or warnings.
+Geometry and links remain clean from Run 177. This data-only refresh did not
+change the browser harness or page structure; generated claims output was
+restored and `probes/` remains untracked.

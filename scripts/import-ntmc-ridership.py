@@ -16,7 +16,7 @@ from xml.etree import ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data/ridership/ntmc-system.json"
 INDEX_URL = "https://www.ntmetro.com.tw/basic/?node=10145"
-RETRIEVED = "2026-08-24"
+RETRIEVED = "2026-08-26"
 TABLE_NS = "urn:oasis:names:tc:opendocument:xmlns:table:1.0"
 TEXT_NS = "urn:oasis:names:tc:opendocument:xmlns:text:1.0"
 
@@ -58,7 +58,7 @@ def fetch_entries() -> list[tuple[str, str, str]]:
         entries.append((f"{year:04d}-{month:02d}", urllib.parse.urljoin(INDEX_URL, match.group("h")), match.group("title")))
     if not entries:
         raise RuntimeError("no NTMC ODS links found on the official statistics page")
-    return entries[:10]
+    return entries
 
 
 def sum_row(row: list[str]) -> int:
