@@ -17825,5 +17825,87 @@ MTBU’s planning page targeted Phase 1 completion in ROC106 June (2017), while
 KRTC records formal full-line operation on 26 February 2024. The planning split
 is 8.7 km plus 13.4 km; the completed-route page reports the combined 22.1 km,
 so the values are retained as planned phases versus current whole-route scope.
-MTBU’s station names differ from KRTC’s current names at C26, C27 and C31;
+MTBU's station names differ from KRTC's current names at C26, C27 and C31;
 both sets remain published with their source and naming context.
+
+# Run 165 - Kaohsiung Red Line (25 August 2026)
+
+## Sourced
+
+Added the 1,437-word Red Line page at
+`content/rail/krtc/lines/red-line.md` and the primary-led research record at
+`docs/research/rail/lines/red-line.md`. The page keeps the current TDX
+boundary of 25 ordered stations and 29.72 km beside the government project
+summary of 28.3 km and 24 stations. It establishes the joint Red/Orange
+private-participation project, the six-year construction/30-year operation
+and 36-year concession framing, Red regular service on 9 March 2008, R24's
+23 December 2012 opening, the temporary/permanent R11 interface, RK1's 2024
+trial and formal operation, Red depot functions and the systems evidence
+actually published for the original design snapshot and RK1 extension.
+
+Full primary pages fetched and used: KRTC company origin
+(`https://corp.krtc.com.tw/About/page?id=6df67da0dd21469da80e9528f32d7057`),
+MTBU long-term network history
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN01.html`),
+MTBU Red/Orange route description
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/CompletedRoutes/RedandOrange/RedandOrange01.html`),
+KRTC service history
+(`https://www.krtc.com.tw/Information/news_more?id=1b8bdb412efe4f489271bd368efdd22d`),
+MTBU R11 record
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/CompletedRoutes/RedandOrange/RedandOrange02.html`),
+the R24 delivery-study PDF, MTBU's 109-year statistical yearbook and service-
+indicator PDF, KRTC South and North depot pages, and the MTBU RK1 opening,
+formal-operation, systems-test, power and current-progress notices. Live TDX
+route/station-of-route, timetable and line records supply the structured data.
+The generated conflicts index gained the Red-line conflict section.
+
+Additional direct URLs are recorded here for the less-readable primary files:
+R24 study (`https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=101%E5%B9%B47%E6%9C%88-%E5%A2%9E%E8%A8%AD%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B%E7%B4%85%E7%B7%9A%E5%8D%97%E5%B2%A1%E5%B1%B1%E7%AB%99%E8%BE%A6%E7%90%86%E6%96%B9%E5%BC%8F%E7%A0%94%E6%9E%90&fileDictionary=FileUpload&fileFormat=.pdf&fileId=e13f8edc-c8c3-4307-aadd-4b42c778b4e6&fileName=20200312204112663.pdf`), yearbook (`https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=%E9%AB%98%E9%9B%84%E5%B8%82%E6%94%BF%E5%BA%9C%E6%8D%B7%E9%81%8B%E5%B7%A5%E7%A8%8B%E5%B1%80109%E5%B9%B4%E5%BA%A6%E7%B5%B1%E8%A8%88%E5%B9%B4%E5%A0%B1&fileDictionary=FileUpload&fileFormat=.pdf&fileId=efe781ae-fb6b-4f6d-8af9-2c0f1ea14abb&fileName=20210810163925808.pdf`), service indicators (`https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=95%E5%B9%B48%E6%9C%88-%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B%E7%87%9F%E9%81%8B%E6%9C%8D%E5%8B%99%E6%8C%87%E6%A8%99&fileDictionary=FileUpload&fileFormat=.pdf&fileName=20200312203955689.pdf`), depots (`https://corp.krtc.com.tw/Business/land_development_more?id=db843544a4ce473bb05505ce84013ca8` and `https://corp.krtc.com.tw/Business/land_development_more?id=ec242f99d99949be84f3cfdef6d56b0b`), RK1 opening/formal operation (`https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=fb12bab3-733e-4218-9c6d-0375d3101dc9&Keyword=&PageNumber=19&PageType=1&id=51834dab-87c9-4c7a-b722-d2324998f5a0` and `https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=ee7b8b6d-03c0-4e8f-b133-e0a7c97fa933&Keyword=RK1&PageNumber=1&PageType=1&id=3672721d-f352-48fb-be98-c441503042ce`), and RK1 systems/power/progress (`https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=fb12bab3-733e-4218-9c6d-0375d3101dc9&Keyword=&PageNumber=17&PageType=1&id=b37208c9-e0c9-44d4-802a-b29a088c3bcd`, `https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=fb12bab3-733e-4218-9c6d-0375d3101dc9&Keyword=&PageNumber=3&PageType=1&id=8cad73f8-0149-4839-94a3-7b2ab628fc56`, and `https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=ee7b8b6d-03c0-4e8f-b133-e0a7c97fa933&Keyword=&PageNumber=1&PageType=1&id=b9541369-9d07-440e-af7b-d6686be20659`).
+
+Gates: cite 7,108 clean; research 146 files/612 checked failures clean;
+claims 20,682 sourced/4,471 TBC/0 ASSERTED; build 2,599 static routes and
+2,760 Han-subset checks clean after refreshing the content subset for a new
+character; unit 234/234; check 440,503 internal links with no broken links;
+a11y, facts and geometry clean; links audit exit 0. Browser verification was
+clean with zero axe violations across 1,861 pages, 736 screenshots and the
+representative print set. The Red page was inspected at 320, 375 and 1440 px.
+Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains
+untracked.
+
+## TBC
+
+The searched KRTC corporate, station-guide, depot and service-history pages;
+MTBU completed-route, long-term-network, annual-report, service-indicator,
+R11, R24 and RK1 notices; and TDX route, station, timetable and line records
+do not establish the original Red signalling supplier or generation, the
+original traction-voltage/substation register, line-wide headways or design
+capacity, a station-by-station first/last timetable synthesis, full-line
+platform-screen-door retrofit history, a complete accessibility inventory or
+per-station/monthly ridership. A direct fetch of the suspected RK1 signalling
+detail page returned Internal Error; its snippet was not used. These remain
+TBC pending KRTC procurement/annual-report archives, MTBU technical records,
+MOTC ridership tables or station facility records.
+
+## Contradicted the corpus
+
+No existing Red-line assertion was contradicted. The existing KRTC research
+and TDX data were treated as leads/current-data boundaries and checked against
+the fetched government and operator pages. This run extends the existing
+KRTC coverage; it does not reuse the separate New Taipei Circular Line record.
+
+## Conflicts found
+
+The route boundary remains a published conflict: historical service
+indicators give 28.3 km/23 stations; current MTBU gives 28.3 km/24; the
+109-year yearbook gives 29.214 km/24; and TDX gives 29.72 km/25 ordered
+records. These appear to be a historical design snapshot, a current project
+summary, an annual-report construction table and a current structured route
+sequence including RK1. Opening chronology also differs: MTBU says ROC97
+completion, KRTC gives Red regular service on 9 March 2008, and the yearbook
+gives Red as ROC97 April; Orange joined on 14 September 2008. Station
+completion is not one date: R11's temporary station opened with the original
+service and its permanent operating area began 5 September 2018; R24 opened
+23 December 2012; RK1 trial service began 30 June 2024 and formal charging on
+1 September 2024. Finally, KRTC describes a 36-year concession while MTBU
+breaks it into six years of construction plus 30 years of operation; those
+are retained as different milestone framings.

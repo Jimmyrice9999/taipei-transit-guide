@@ -615,6 +615,69 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full NTMC operator page for Jimmy Liao's line-wide Green Mountain work 閉上眼睛一下下, its V01–V11 scope and cast-bronze/painted-glass media; year, selection and cost are not published."
+  - id: "rail-krtc-lines-red-line-mtbu-network-origin"
+    title: "Long-term network introduction"
+    titleOriginal: "路網簡介"
+    publisher: "Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)"
+    url: "https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN01.html"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The government records Red and Orange as first-stage routes approved in ROC80 and places their completion in ROC97, with later network planning reviewed after the 2010 county-city merger."
+  - id: "rail-krtc-lines-red-line-krtc-history"
+    title: "Mission and vision: company origin"
+    titleOriginal: "使命與願景"
+    publisher: "Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司)"
+    url: "https://corp.krtc.com.tw/About/page?id=6df67da0dd21469da80e9528f32d7057"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator records the 1999 invitation, 2000 selection and incorporation, 2001 concession and construction start, six-year construction period, and 36-year concession."
+  - id: "rail-krtc-lines-red-line-mtbu-red-orange"
+    title: "Red and Orange Line route description"
+    titleOriginal: "路線說明（含路網及車站）"
+    publisher: "Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)"
+    url: "https://mtbu.kcg.gov.tw/KaohsiungMetro/CompletedRoutes/RedandOrange/RedandOrange01.html"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The government project page gives the Red/Orange route lengths, station counts, type, depot count and transfer relationships."
+  - id: "rail-krtc-lines-red-line-krtc-15th-anniversary"
+    title: "KRTC fifteenth-anniversary service history"
+    titleOriginal: "歡慶高雄捷運通車十五週年 高捷柑心為你"
+    publisher: "Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司)"
+    url: "https://www.krtc.com.tw/Information/news_more?id=1b8bdb412efe4f489271bd368efdd22d"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator records Red service from 9 March 2008, Orange service from 14 September 2008, and network-level daily-ridership milestones."
+  - id: "rail-krtc-lines-red-line-mtbu-service-indicators"
+    title: "Kaohsiung MRT operating service indicators"
+    titleOriginal: "高雄捷運營運服務指標"
+    publisher: "Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)"
+    url: "https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=95%E5%B9%B48%E6%9C%88-%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B%E7%87%9F%E9%81%8B%E6%9C%8D%E5%8B%99%E6%8C%87%E6%A8%99&fileDictionary=FileUpload&fileFormat=.pdf&fileName=20200312203955689.pdf"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The government document describes the historical Red/Orange design boundary, underground/elevated split and the electrical, signalling, communications, platform and fare systems that form the integrated system."
+  - id: "rail-krtc-lines-red-line-tdx-krtc-route"
+    title: "TDX Kaohsiung Metro route records"
+    titleOriginal: "高雄捷運路線資料"
+    publisher: "Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平臺)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Route/KRTC?%24format=JSON&%24top=1000&%24skip=0"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The live pull contains four directional route records with source route lengths, termini and travel times."
+  - id: "rail-krtc-lines-red-line-tdx-krtc-station-of-route"
+    title: "TDX Kaohsiung Metro station-of-route records"
+    titleOriginal: "高雄捷運路線車站資料"
+    publisher: "Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平臺)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/StationOfRoute/KRTC?%24format=JSON&%24top=1000&%24skip=0"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The live pull contains four directional records: two for the Red Line and two for the Orange Line, with ordered members and cumulative distances."
   - id: "rail-metro-lines-airport-mrt-zh-airport-mrt"
     title: "Taoyuan Airport MRT"
     titleOriginal: "桃園機場捷運"
@@ -1908,6 +1971,28 @@ See the [Wenhu Line](/rail/metro/lines/wenhu-line/), [Tamsui–Xinyi Line](/rail
 - [Daqiaotou station architecture](https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635) — primary; Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-17.[^rail-history-public-art-dorts-o12-architecture]
 - [Airport MRT public art](https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html) — primary; Taoyuan Metro Corporation (桃園大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-tymc-airport-public-art]
 - [Danhai LRT public art](https://www.ntmetro.com.tw/basic/?mode=detail&node=17) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-ntmc-danhai-public-art]
+
+## Red Line — Construction and opening chronology
+
+Discussed on [Red Line](/rail/krtc/lines/red-line/) in the source page's “Construction and opening chronology” section.[^rail-krtc-lines-red-line-mtbu-network-origin]
+
+### Construction and opening chronology
+
+The government’s network history places the Red and Orange lines in the first stage of Kaohsiung’s first-period MRT development plan, approved in ROC80, and says that the two routes were completed and opened in ROC97.[^rail-krtc-lines-red-line-mtbu-network-origin] KRTC’s company history gives a more granular institutional chronology: the city invited private participation on 1 February 1999, the China Steel-led application was selected on 10 May 2000, the company received its licence on 28 December 2000, and the construction and development agreements were signed on 12 January 2001.[^rail-krtc-lines-red-line-krtc-history] KRTC records construction beginning in October 2001 and describes the concession as 36 years from the start of construction, comprising more than six years of construction before the Red and Orange lines entered service.[^rail-krtc-lines-red-line-krtc-history]
+
+MTBU treats the Red and Orange network as one private-participation construction and operating project: its page gives six years of construction, 30 years of operation and a 36-year concession, with a planned 42.7 km and 38 stations, three depots and a total construction cost of NT$183.963 billion.[^rail-krtc-lines-red-line-mtbu-red-orange] KRTC records the Red Line’s regular service opening on 9 March 2008 and the Orange Line’s opening on 14 September 2008; the latter date marks the full operation of the original cross-shaped network, not the first Red Line service.[^rail-krtc-lines-red-line-krtc-15th-anniversary]
+
+The historical service-indicator document is a separate design snapshot. It describes a Red Line of 28.3 km, with 19.8 km underground and 8.5 km elevated, and 23 stations at the time of that document.[^rail-krtc-lines-red-line-mtbu-service-indicators] The current government page reports 28.3 km and 24 Red Line stations, while the TDX route pull reports 29.72 km and its current sequence includes R24 and RK1.[^rail-krtc-lines-red-line-mtbu-red-orange][^rail-krtc-lines-red-line-tdx-krtc-route][^rail-krtc-lines-red-line-tdx-krtc-station-of-route] Those values are retained as different dated or structured boundaries rather than made to agree by arithmetic.
+
+#### Sources for this entry
+
+- [Long-term network introduction](https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN01.html) — primary; Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局); accessed 2026-08-25.[^rail-krtc-lines-red-line-mtbu-network-origin]
+- [Mission and vision: company origin](https://corp.krtc.com.tw/About/page?id=6df67da0dd21469da80e9528f32d7057) — primary; Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司); accessed 2026-08-25.[^rail-krtc-lines-red-line-krtc-history]
+- [Red and Orange Line route description](https://mtbu.kcg.gov.tw/KaohsiungMetro/CompletedRoutes/RedandOrange/RedandOrange01.html) — primary; Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局); accessed 2026-08-24.[^rail-krtc-lines-red-line-mtbu-red-orange]
+- [KRTC fifteenth-anniversary service history](https://www.krtc.com.tw/Information/news_more?id=1b8bdb412efe4f489271bd368efdd22d) — primary; Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司); accessed 2026-08-25.[^rail-krtc-lines-red-line-krtc-15th-anniversary]
+- [Kaohsiung MRT operating service indicators](https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=95%E5%B9%B48%E6%9C%88-%E9%AB%98%E9%9B%84%E6%8D%B7%E9%81%8B%E7%87%9F%E9%81%8B%E6%9C%8D%E5%8B%99%E6%8C%87%E6%A8%99&fileDictionary=FileUpload&fileFormat=.pdf&fileName=20200312203955689.pdf) — primary; Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局); accessed 2026-08-25.[^rail-krtc-lines-red-line-mtbu-service-indicators]
+- [TDX Kaohsiung Metro route records](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Route/KRTC?%24format=JSON&%24top=1000&%24skip=0) — primary; Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平臺); accessed 2026-08-24.[^rail-krtc-lines-red-line-tdx-krtc-route]
+- [TDX Kaohsiung Metro station-of-route records](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/StationOfRoute/KRTC?%24format=JSON&%24top=1000&%24skip=0) — primary; Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平臺); accessed 2026-08-24.[^rail-krtc-lines-red-line-tdx-krtc-station-of-route]
 
 ## Taoyuan Airport MRT — Planning and approvals
 
