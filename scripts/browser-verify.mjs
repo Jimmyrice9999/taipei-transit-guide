@@ -243,6 +243,7 @@ const PAGE_TYPES = [
   { name: 'ferry-routes', url: '/ferry/routes/' },
   { name: 'ferry-route-blue-highway', url: '/ferry/routes/blue-highway/' },
   { name: 'ferry-route-cijin', url: '/ferry/routes/cijin/' },
+  { name: 'ferry-route-penghu', url: '/ferry/routes/penghu/' },
   { name: 'ticketing-cards-passes', url: '/ticketing/guides/cards-passes-and-fares/' },
   { name: 'bus-operator-dayou', url: '/bus/operators/16474-f0ksz1/' },
   { name: 'bus-model-detail', url: '/bus/models/model-t-electric/' },

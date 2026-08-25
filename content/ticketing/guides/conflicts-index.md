@@ -642,6 +642,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length or timetable field. Also records three subroutes — 950路, 950去程半 and 950返程半."
+  - id: "ferry-routes-penghu-phpto-timetable"
+    title: "Public ferry timetable"
+    titleOriginal: "交通船時刻表"
+    publisher: "澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office)"
+    url: "https://www.phpto.gov.tw/home.jsp?id=106"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The live official timetable page fetched on 26 August 2026. Its displayed query covers 26 August–1 September 2026 and lists South Sea services, vessel names, ticket points, weather-stop rules and the page update date of 18 August 2026."
+  - id: "ferry-routes-penghu-phpto-ticket-guidance"
+    title: "Public ferry ticket-purchase guidance"
+    titleOriginal: "澎湖縣政府公共車船管理處交通船船票購買須知"
+    publisher: "澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office)"
+    url: "https://www.penghu.gov.tw/userfiles/03/files/%E6%BE%8E%E6%B9%96%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%AC%E5%85%B1%E8%BB%8A%E8%88%B9%E7%AE%A1%E7%90%86%E8%99%95%E4%BA%A4%E9%80%9A%E8%88%B9%E8%88%AA%E7%8F%AD%E8%B3%BC%E7%A5%A8%E9%A0%88%E7%9F%A5114_07_19.pdf"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full one-page official guidance, effective 19 July 2025. It describes fixed and special services, ticket-sales windows, online reservations, wind thresholds and refunds."
   - id: "rail-history-incidents-dorts-flood-technical-87"
     title: "Practical water, environmental-control and fire-safety engineering, p. 87"
     titleOriginal: "捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務"
@@ -2118,6 +2136,28 @@ than disagreeing about the same one.[^bus-routes-series-900s-950-tdx-bus]
 - [Cross-city express bus 950 'Zhonghe–Neihu Science Park' opens 15 April](https://www.ntpc.gov.tw/ch/home.jsp?id=28&parentpath=0%2C6%2C27&mcustomize=news_view.jsp&dataserno=201404110032) — primary; New Taipei City Government, 新北市政府; accessed 2026-08-19.[^bus-routes-series-900s-950-ntpc-950-launch]
 - [950 route schedule](https://ebus.gov.taipei/Route/RouteSchedule?routeid=0100095000) — primary; Taipei City Public Transportation Office, 臺北市政府公共運輸處; accessed 2026-08-19.[^bus-routes-series-900s-950-ebus-950]
 - [TDX bus data](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX, 交通部運輸資料流通服務平臺; accessed 2026-08-19.[^bus-routes-series-900s-950-tdx-bus]
+
+## Penghu island ferry services — What remains date-sensitive
+
+Discussed on [Penghu island ferry services](/ferry/routes/penghu/) in the source page's “What remains date-sensitive” section.[^ferry-routes-penghu-phpto-timetable]
+
+### What remains date-sensitive
+
+The county’s live page is the source for the displayed 26 August–1 September
+week, while the ticket guidance is an effective-date document from July 2025;
+neither should be read as a permanent timetable.[^ferry-routes-penghu-phpto-timetable][^ferry-routes-penghu-phpto-ticket-guidance]
+The live page and the older ticket PDF also publish slightly different wind
+threshold values: the live page gives 15.6, 13.6 and 10.5 m/s for its named
+service groups, while the PDF’s table displays 15.5, 10, 10 and 13.5 m/s across
+its service columns.[^ferry-routes-penghu-phpto-timetable][^ferry-routes-penghu-phpto-ticket-guidance] The headings in
+the PDF’s extracted text do not expose a clean one-to-one mapping for every
+column, so the values are reported as a dated source conflict rather than
+reconciled by guesswork.
+
+#### Sources for this entry
+
+- [Public ferry timetable](https://www.phpto.gov.tw/home.jsp?id=106) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-timetable]
+- [Public ferry ticket-purchase guidance](https://www.penghu.gov.tw/userfiles/03/files/%E6%BE%8E%E6%B9%96%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%AC%E5%85%B1%E8%BB%8A%E8%88%B9%E7%AE%A1%E7%90%86%E8%99%95%E4%BA%A4%E9%80%9A%E8%88%B9%E8%88%AA%E7%8F%AD%E8%B3%BC%E7%A5%A8%E9%A0%88%E7%9F%A5114_07_19.pdf) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-ticket-guidance]
 
 ## Metro incidents and service disruptions — Conflicts and gaps
 

@@ -17872,6 +17872,7 @@ representative print set. The Red page was inspected at 320, 375 and 1440 px.
 Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains
 untracked.
 
+
 ## TBC
 
 The searched KRTC corporate, station-guide, depot and service-history pages;
@@ -18406,3 +18407,51 @@ failures, zero axe violations across 1,872 pages, 792 screenshots and 107
 print PDFs. The Cijin page was inspected at 320/400%-equivalent and 1440 px.
 Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains
 untracked.
+
+## Run 174 — Penghu island ferry services (2026-08-26)
+
+### Sourced
+
+Added `content/ferry/routes/penghu.md` (898 body words) and
+`docs/research/ferry/penghu.md`, linked from the ferry-routes index, and added
+`ferry-route-penghu` to the browser harness. The full Penghu County live
+timetable was fetched on 2026-08-26 and displayed 2026-08-26–09-01: the
+Magong–Wangan–Qimei public pattern, Kaohsiung extensions, overnight Qimei and
+Friday-special services. The county ticket PDF (effective 2025-07-19) supplied
+reservation, QR-ticket, refund and weather rules. The full Penghu National
+Scenic Area pages supplied the island fare table, departure-centre map,
+Taiwan–Penghu seasonal routes, approximate 90-minute/4-hour crossings and
+operator families.
+
+### TBC and checked failures
+
+Tongpan/Hujing and Southern Four Islands current departure times remain TBC:
+the linked Magong City and Wangan Township pages timed out. The Penghu County
+alternate timetable page, May timetable PDF and MOTC passenger-ship page each
+failed full fetches (internal error) and were recorded as checked-and-failed.
+Annual frequency, capacity, accessibility, ridership and a live mainland
+departure board remain unsourced.
+
+### Contradicted the corpus
+
+No Penghu claim in the existing corpus was contradicted; this adds the island
+service boundary and keeps public boats separate from private tour packages.
+
+### Conflicts found
+
+The live timetable gives wind-stop values 15.6, 13.6 and 10.5 m/s for its named
+service groups; the older ticket PDF displays 15.5, 10, 10 and 13.5 m/s across
+its columns. Both are published without reconciliation. The scenic-area fare
+table also has Magong–Wangan at NT$272 in the Wangan/Qimei row and NT$300 in
+the Southern Four Islands row; both category values remain visible.
+
+### Gates
+
+`cite` 7,236 resolved (7,029 primary); `research` 154 files/649 checked
+failures; `claims` 24,351 sourced/4,487 TBC/0 ASSERTED; build 2,771 pages and
+2,771 Han-subset checks; unit 234/234; a11y 1,874 pages clean; geometry and
+links clean. Browser verification: reflow and painted-box checks clean,
+keyboard/tree probes clean including Penghu, zero axe violations across 1,873
+pages, 799 screenshots and 107 print PDFs. The 320/400%-equivalent and 1440px
+Penghu screenshots were inspected. Generated audits, screenshots and PDFs were
+restored; `probes/` remains untracked.
