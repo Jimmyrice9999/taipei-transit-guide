@@ -196,6 +196,7 @@ const PAGE_TYPES = [
   { name: 'rail-project-taichung-orange-sea', url: '/rail/projects/taichung-orange-sea-extension/' },
   { name: 'rail-project-taichung-red', url: '/rail/projects/taichung-red-line/' },
   { name: 'rail-tod-joint-development', url: '/rail/projects/tod-joint-development/' },
+  { name: 'rail-project-minsheng-xizhi', url: '/rail/projects/minsheng-xizhi-line/' },
   { name: 'rail-operators', url: '/rail/operators/' },
   { name: 'rail-operator-trtc', url: '/rail/operators/trtc/' },
   { name: 'bus-route-new-taipei', url: '/bus/routes/new-taipei/' },

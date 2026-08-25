@@ -17697,3 +17697,76 @@ scheduled full-line passenger reopening. Nos. 25/31 are described as repaired
 and running after conversion, while No. 26 is recorded as static display.
 Every value remains published with its apparent measurement or roster scope;
 none was averaged or selected.
+
+# Run 163 - Minsheng–Xizhi Line (25 August 2026)
+
+## Sourced
+
+Added `content/rail/projects/minsheng-xizhi-line.md` and its full research
+record at `docs/research/rail/projects/minsheng-xizhi-line.md`. The 564-word
+project page keeps Minsheng–Xizhi at project level: Taipei DORTS currently gives
+11.02 km, nine stations, eight underground and one elevated, with LRRT system
+type; New Taipei DORTS gives the separately reported Xidong section as 5.56 km
+and six stations. The page records the 2011 feasibility approval, Taipei’s
+current central-review/design chronology, Xidong’s 2024 turnkey award and 2025
+start, the NT$31,961,983,967 contract and April 2032 target, and the July 2026
+0% controlled-programme measure without reconciling different denominators.
+
+Primary pages fetched in full: Taipei DORTS’s current `民生汐止線` record
+(`https://www.dorts.gov.taipei/cp.aspx?n=640DFDDFA9B8FEA8`), New Taipei
+DORTS’s `汐東捷運（原汐止民生線）` route and progress records
+(`https://www.dorts.ntpc.gov.tw/about/route/8l19Zo7NZveD` and
+`https://www.dorts.ntpc.gov.tw/about/routeProgress/8l19Zo7NZveD`), its
+`民生線` record (`https://www.dorts.ntpc.gov.tw/about/route/Wr6421Jvd9nR`),
+the DORTS technical-journal pages
+(`https://ebook.dorts.gov.taipei/JRTST/ebook/no44/files/basic-html/page65.html`
+and `https://ebook.dorts.gov.taipei/ebook/no3/files/basic-html/page33.html`),
+and the DORTS feasibility-report index
+(`https://www.dorts.gov.taipei/News_Content.aspx?n=4027AA15756300C8&s=723720BF36363E12&sms=4E98D53D04E37D56`).
+
+The older technical journal records 17.52 km main route + 2.26 km branch and
+15 + 3 stations; the environmental-planning page says its SB01–SB06 labels are
+planning identifiers, not final station names. No station stubs were created.
+The browser harness now includes `rail-project-minsheng-xizhi`.
+
+Gates: cite 7,086 citations resolved and clean; research 144 files/604 checked
+failures and clean; claims 20,662 sourced/4,471 TBC/0 ASSERTED; build exported
+2,599 static routes and postbuild checked 2,760 pages with no missing glyphs;
+unit tests 234/234; check 440,477 internal links with no breaks/fragments or
+orphans; a11y 1,862 pages with no errors or warnings; facts 17/17; links exit 0;
+geometry clean. Browser verification passed 320/640 reflow, painted-box,
+keyboard and accessibility-tree probes, axe with zero violations across 1,861
+pages, 729 screenshots and 104 print PDFs. The new page passed keyboard and ARIA
+probes and was visually inspected at 320/375/1440. Generated verification
+JSONs, screenshots and PDFs were restored and are not part of the commit.
+
+## TBC
+
+The fetched primary pages do not establish final Taipei station names/codes,
+Taipei construction start or completion, a complete-corridor opening date,
+Taipei timetable, observed ridership, a unified accessibility inventory or a
+whole-project progress percentage. The searched families were Taipei and New
+Taipei DORTS current project/progress pages, the feasibility-report index, two
+DORTS technical publications and the current route histories. The page records
+these as TBC rather than manufacturing station pages or adding the two phase
+scopes together.
+
+## Contradicted the corpus
+
+No existing corpus assertion was contradicted. The page adds the project record
+that the handoff identified as incomplete and explicitly preserves the current
+Taipei review boundary instead of treating the 2011 feasibility approval as a
+current construction approval.
+
+## Conflicts found
+
+The full sources disagree on scope: the earlier technical journal gives 17.52 km
+main + 2.26 km branch and 15 + 3 stations, while the current Taipei page gives
+11.02 km and nine stations. The second-route environmental approval is dated
+21 August 2020 on Taipei DORTS and New Taipei’s Minsheng Line page, but 2
+November 2020 on New Taipei’s Xidong route page; both values remain published.
+Taipei DORTS calls the current record `民生汐止線`, New Taipei uses `民生線` for
+the Taipei section and `汐東捷運（原汐止民生線）` for the Xidong phase. Taipei
+remains in review while Xidong’s contract has started but its controlled measure
+is 0%; these are phase and denominator differences, not a reason to infer one
+combined status.
