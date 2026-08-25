@@ -327,6 +327,42 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the committed operator record, contact fields, source municipality, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields."
+  - id: "bus-regional-taichung-taichung-dataset"
+    title: "Taichung city-bus route and stop information dataset"
+    titleOriginal: "臺中市市區公車路線站點資訊"
+    publisher: "Taichung City Government Transportation Bureau (臺中市政府交通局)"
+    url: "https://data.gov.tw/dataset/83748"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official dataset page defines the route-map scope, fields, provider, irregular update frequency, 2026-06-09 metadata update and warning that the published compilation can lag actual service."
+  - id: "bus-regional-taichung-taichung-citybus"
+    title: "Taichung bus real-time information"
+    titleOriginal: "台中公車即時動態資訊"
+    publisher: "Taichung City Government Transportation Bureau (臺中市政府交通局)"
+    url: "https://citybus.taichung.gov.tw/ebus"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official city-bus interface publishes network fare rules, directs passengers to live/operator schedules for actual departures and lists operator links."
+  - id: "bus-regional-taichung-taichung-csv"
+    title: "Taichung city-bus route-map CSV"
+    titleOriginal: "taichung_bus_maps_2026.CSV"
+    publisher: "Taichung City Government Transportation Bureau (臺中市政府交通局)"
+    url: "https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=20c2e4cc-49bf-45d5-a880-714c7c66eed6"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full CSV snapshot supplies 392 route records with operator labels, route descriptions, map links and outbound/return stop strings; counts and direction terminal summaries in this page are derived from those records."
+  - id: "bus-regional-taichung-taichung-yellow"
+    title: "Taichung 小黃公車"
+    titleOriginal: "臺中市小黃公車"
+    publisher: "Taichung City Government Transportation Bureau (臺中市政府交通局)"
+    url: "https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,505,52"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official page lists 26 Yellow routes, fixed-departure and reservation rules, two reservation phone groups, stop behaviour and linked route/timetable images."
   - id: "bus-routes-colour-brown-brown-20-bgsxaf-ebus-brown"
     title: "Taipei/New Taipei bus route catalogue"
     titleOriginal: "大臺北公車"
@@ -1752,6 +1788,25 @@ The Highway Bureau's open-data catalogue is narrower and newer: its dataset was 
 - [Electric-bus operations observation event](https://enews.moenv.gov.tw/Page/3B3C62C78849F32F/c786de79-bdd3-43e7-ae4b-a23241d918a9) — primary; Environmental Protection Administration, Executive Yuan (行政院環境保護署; now Ministry of Environment); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-history]
 - [National electric-bus operating vehicle count and manufacturer dataset](https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=734) — primary; Highway Bureau, Ministry of Transportation and Communications (交通部公路局); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-data]
 - [TDX bus operator and route pull](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺); accessed 2026-08-15.[^bus-operators-taoyuanbus-2ov8j-tdx-bus-operator-pull]
+
+## Taichung regional buses — Conflicts
+
+Discussed on [Taichung regional buses](/bus/regional/taichung/) in the source page's “Conflicts” section.[^bus-regional-taichung-taichung-dataset]
+
+### Conflicts
+
+The route-map dataset warns that its compiled publication can lag actual operations, while the citybus interface directs passengers to dynamic information or operator schedules for actual departures.[^bus-regional-taichung-taichung-dataset][^bus-regional-taichung-taichung-citybus] These sources measure different publication layers, so the JSON retains route identity and stops but does not turn them into a frequency claim.[^bus-regional-taichung-taichung-dataset][^bus-regional-taichung-taichung-csv]
+
+The full CSV contains 23 raw operator-label values, while the visible operator-link group on the citybus page presents 14 labels.[^bus-regional-taichung-taichung-csv][^bus-regional-taichung-taichung-citybus] The first is a count of labels attached to route records and the second is a portal link list; neither is treated as a legal-company count.[^bus-regional-taichung-taichung-csv][^bus-regional-taichung-taichung-citybus]
+
+The city-bus CSV has no departure-time field, while the separate 小黃公車 page describes 26 services with fixed departure times and linked image schedules.[^bus-regional-taichung-taichung-csv][^bus-regional-taichung-taichung-yellow] The two values belong to different networks and publication formats, so the Yellow timetable is kept in its own data-layer object.[^bus-regional-taichung-taichung-yellow]
+
+#### Sources for this entry
+
+- [Taichung city-bus route and stop information dataset](https://data.gov.tw/dataset/83748) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-dataset]
+- [Taichung bus real-time information](https://citybus.taichung.gov.tw/ebus) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-citybus]
+- [Taichung city-bus route-map CSV](https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=20c2e4cc-49bf-45d5-a880-714c7c66eed6) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-csv]
+- [Taichung 小黃公車](https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,505,52) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-yellow]
 
 ## BR20B / 棕20預 — Classification and conflict
 

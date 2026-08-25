@@ -17948,6 +17948,63 @@ screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
 
+# Run 169 - Taichung regional bus layer (25 August 2026)
+
+## Sourced
+
+Added `content/bus/regional/taichung.md` (858 body words), the Taichung
+regional entry in `content/bus/regional/_index.md`, the primary-led research
+record at `docs/research/bus/taichung.md`, and the deterministic snapshotter
+`scripts/fetch-taichung-bus.mjs`. The fetcher reads the full Taichung City
+Government route-map CSV at
+`https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=20c2e4cc-49bf-45d5-a880-714c7c66eed6`, retrieved 25 August 2026, and writes
+`data/taichung-bus/routes.json` plus `public/data/taichung-bus-routes.json`.
+
+Primary pages read in full: the Government Data Open Platform dataset
+(`https://data.gov.tw/dataset/83748`), Taichung's citybus interface
+(`https://citybus.taichung.gov.tw/ebus`), the official 小黃公車 page
+(`https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1%2C7%2C505%2C52`),
+and the 2026-06-12 service-adjustment notice
+(`https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9%2C4%2C20%2C%2C%2C%2C21415`). The snapshot has 392 city-bus route records,
+23 raw operator labels, 784 direction records, 37,138 ordered stop records
+and a separate 26-route 小黃公車 reservation object. A first/last stop is
+derived from each source direction string; the raw string is retained.
+
+## TBC
+
+City-bus route-level departure times, frequencies and fares remain TBC because
+the full CSV has no timetable or fare fields. 小黃公車 fixed departure times
+remain TBC because the official HTML links schedule images; two full image
+fetches returned cache misses. Ridership, vehicles, depots, accessibility,
+contracts and historical route changes remain TBC. OAS YAML/API-doc endpoints
+were unresolvable, the live XML bus root returned HTTP 403, and the rendered
+timetable shell supplied no numeric values; all are recorded as checked-and-
+failed, with no snippets used.
+
+## Contradicted the corpus
+
+No existing Taichung regional-bus claim was found to contradict. The city-bus
+route-map layer and 小黃公車 layer are kept separate from the national Highway
+Bureau intercity export and from each other.
+
+## Conflicts found
+
+The dataset's static route-map warning and the citybus page's live-schedule
+instruction measure different publication layers. The CSV has 23 raw operator
+labels, while the visible citybus operator-link group has 14 labels; these are
+not the same population. The city-bus CSV has no timetable field, while the
+separate 小黃公車 page states that its 26 routes have fixed departure times and
+linked image schedules. All values remain published with those boundaries.
+
+Gates: cite 7,149 resolved clean; research 150 files/631 checked failures
+clean; conflicts current; claims 20,758 sourced/4,478 TBC/0 ASSERTED; build
+2,764 pages and 2,764 Han-subset checks clean; unit 234/234; check 441,399
+internal links; a11y 1,866 pages; facts, geometry and links clean; search
+index 1,876 entries. Browser verification was clean: zero axe violations
+across 1,865 pages, clean reflow/keyboard/tree checks, 757 screenshots and
+107 print PDFs; Taichung was inspected at 320, 375 and 1440 px. Generated
+audit JSONs, screenshots and PDFs were restored; `probes/` remains untracked.
+
 ## TBC
 
 The searched KRTC corporate, station-guide, FAQ, depot and service-history
