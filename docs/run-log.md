@@ -18043,3 +18043,64 @@ schema has no route-fare field, while the 2024 fare notice gives a basic-fare
 adjustment, filing and notice process rather than a current route table. The
 operator directory is dated 114-08-13 and the timetable catalogue 115-07-01;
 they are separate publication dates, not a single network freshness value.
+
+# Run 168 - Hsinchu regional bus layer (25 August 2026)
+
+## Sourced
+
+Added the regional-bus type index at `content/bus/regional/_index.md`, the
+769-word Hsinchu page at `content/bus/regional/hsinchu.md`, the primary-led
+research record at `docs/research/bus/hsinchu.md`, and the deterministic
+portal snapshotter `scripts/fetch-hsinchu-bus.mjs`. The generator fetched the
+full Hsinchu City Government iBus route selector, then every selected route's
+full route-detail response and every direction's `GetRoadLine` stop response.
+
+Primary sources read in full: Hsinchu's public-transport portal
+(`https://hisatisfy.hccg.gov.tw/ibusWeb/PublicTransport/`), route-detail
+endpoint (`https://hisatisfy.hccg.gov.tw/ibusWeb/Partial_PublicTransportDetail/`),
+ordered stop endpoint
+(`https://hisatisfy.hccg.gov.tw/ibusWeb/IFrame_Map/GetRoadLine`) and current
+notices (`https://hisatisfy.hccg.gov.tw/ibusWeb/Home/`). The Highway Bureau
+national timetable and monthly-statistics catalogues were also read to keep
+the national intercity layer separate from the regional layer.
+
+The committed snapshot contains 68 route entries, 7 operator labels, 96
+direction runs, 970 published departure values and 2,989 direction-stop
+records: 36 city-bus, 10 county-express, 14 Zhubei citizen-bus, 5 tourist and
+3 medical-shuttle entries. The JSON preserves selector values, branch labels,
+operators, run IDs, departure strings, fare links, ordered stops, coordinates,
+and derived first/last stop summaries at `data/hsinchu-bus/routes.json` and
+`public/data/hsinchu-bus-routes.json`.
+
+## TBC
+
+Numeric fares, concession rules, ridership, revenue, vehicles, depots,
+contracts, accessibility, reliability and a historical route-change series
+remain TBC. The portal exposed fare links but no fare values in the fetched
+route-detail responses. An official 2024 route-summary PDF lead returned HTTP
+403; an official route page timed out and the department home returned HTTP
+403, all recorded as checked-and-failed rather than replaced with snippets.
+
+## Contradicted the corpus
+
+No existing Hsinchu regional-bus claim was found to contradict. This unit
+adds the regional boundary without merging the portal's city/county entries
+with the national Highway Bureau timetable.
+
+## Conflicts found
+
+Route 10's displayed detail label says `總站→成德高中`, while the returned
+opposite-direction stop sequence ends at `火車站`; these are different source
+fields and both remain published. The Hsinchu portal also exposes national
+and regional highway-bus query categories beside city/county categories; the
+page keeps those as separate publication layers rather than collapsing route
+identities.
+
+Gates: cite 7,140 resolved clean; research 149 files/623 checked failures
+clean; claims 20,732 sourced/4,476 TBC/0 ASSERTED; build 2,763 pages and
+2,763 Han-subset checks clean; unit 234/234; check 441,168 internal links;
+a11y 1,865 pages, facts, geometry and links clean. Browser verification was
+clean: zero axe violations across 1,864 pages, clean reflow/keyboard/tree,
+750 screenshots and 107 print PDFs; the Hsinchu page was inspected at 320,
+375 and 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
+`probes/` remains untracked.

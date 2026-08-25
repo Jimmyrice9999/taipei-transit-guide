@@ -120,6 +120,7 @@ const PAGE_TYPES = [
   { name: 'bus-network', url: '/bus/network/' },
   { name: 'bus-routes', url: '/bus/routes/' },
   { name: 'bus-intercity', url: '/bus/intercity/' },
+  { name: 'bus-regional-hsinchu', url: '/bus/regional/hsinchu/' },
   { name: 'bus-route-brown', url: '/bus/routes/colour-brown/' },
   { name: 'bus-route-detail', url: '/bus/routes/colour-brown/brown-1/' },
   { name: 'bus-operators', url: '/bus/operators/' },
