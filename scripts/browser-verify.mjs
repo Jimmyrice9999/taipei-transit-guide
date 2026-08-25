@@ -245,6 +245,7 @@ const PAGE_TYPES = [
   { name: 'ferry-route-cijin', url: '/ferry/routes/cijin/' },
   { name: 'ferry-route-penghu', url: '/ferry/routes/penghu/' },
   { name: 'ferry-route-kinmen', url: '/ferry/routes/kinmen/' },
+  { name: 'ferry-route-matsu', url: '/ferry/routes/matsu/' },
   { name: 'ticketing-cards-passes', url: '/ticketing/guides/cards-passes-and-fares/' },
   { name: 'bus-operator-dayou', url: '/bus/operators/16474-f0ksz1/' },
   { name: 'bus-model-detail', url: '/bus/models/model-t-electric/' },

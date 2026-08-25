@@ -8,3 +8,4 @@ order: 1
 - [Kaohsiung Cijin ferries](/ferry/routes/cijin/)
 - [Penghu island ferry services](/ferry/routes/penghu/)
 - [Kinmen island ferry services](/ferry/routes/kinmen/)
+- [Matsu island ferry services](/ferry/routes/matsu/)

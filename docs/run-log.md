@@ -14452,6 +14452,56 @@ and clean facts, geometry and CVD checks. Navigation passed all 19 checks;
 the separate full package test also passed. The two generated audit JSONs were
 restored; `probes/` remains untracked.
 
+## Run 176 - Matsu island ferry services (2026-08-26)
+
+### Sourced
+
+Added `content/ferry/routes/matsu.md` (926 body words) and
+`docs/research/ferry/matsu.md`, linked from the ferry-routes index, and added
+`ferry-route-matsu` to the browser harness. Full primary sources fetched:
+Matsu National Scenic Area Administration island transport
+(`https://www.matsu-nsa.gov.tw/zh-TW/transport/island`), ferry access
+(`https://www.matsu-nsa.gov.tw/zh-TW/transport/ferry`), and the county booking
+portal and fare table (`https://www.matsuebs.com/`,
+`https://www.matsuebs.com/BoatNotice?contentType=notice01`); MOTC's
+mini-three-links table, ticket directory, vessel records and the 26-27 August
+Daqiu suspension notice were also fetched in full.
+
+### TBC and checked failures
+
+Annual ridership, frequency/capacity series, a machine-readable full-network
+live timetable, a complete accessibility inventory, Taipei-Port operating
+status and the airport-to-pier ground-transport join remain TBC. The MOTC
+PassengerShip list returned an internal error; BoatSchedule exposed no
+date-specific Matsu roster; and the e-point portal exposed no machine-readable
+full-network timetable. Each is recorded as checked-and-failed.
+
+### Contradicted the corpus
+
+No existing Matsu claim was contradicted. The page adds the five-island
+domestic network, Taiwan overnight service, Fuzhou mini-three-links and live
+weather-sensitive notices as separate contexts.
+
+### Conflicts found
+
+The Keelung fare table publishes direction-specific first-class fares of
+NT$1,890 outbound and NT$1,800 returning; both remain visible. The static Daqiu
+schedule is published beside the dated 26-27 August 2026 all-day suspension.
+The South-North Star page describes a charter context while MOTC's ticket
+directory still points Taipei-Matsu passengers to the booking portal; no fixed
+schedule is inferred.
+
+### Gates
+
+`cite` 7,255 resolved (7,048 primary); `research` 156 files/657 checked
+failures; `claims` 24,381 sourced/4,488 TBC/0 ASSERTED; build 2,774 pages and
+2,774 Han-subset checks; unit 234/234; a11y 1,876 pages clean; geometry and
+links clean. Browser verification: reflow and painted-box checks clean,
+keyboard/tree probes clean including Matsu, zero axe violations across 1,875
+pages, 813 screenshots and 107 print PDFs. The 320/400%-equivalent and 1440px
+Matsu screenshots were inspected. Generated audits, screenshots and PDFs were
+restored; `probes/` remains untracked.
+
 ## Run 90 - browser coverage and visual verification (23 August 2026)
 
 ### Sourced
