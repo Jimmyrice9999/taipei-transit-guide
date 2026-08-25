@@ -17948,6 +17948,76 @@ screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
 
+# Run 170 - Tainan regional bus layer (25 August 2026)
+
+## Sourced
+
+Added `content/bus/regional/tainan.md`, `docs/research/bus/tainan.md`, the
+TDX/ridership snapshotter `scripts/fetch-tainan-bus.mjs`, and committed data
+at `data/tainan-bus/routes.json` plus `public/data/tainan-bus-routes.json`.
+The generator fetched the full live TDX Route, StopOfRoute and Operator
+responses for Tainan and all seven full official ridership CSV resources for
+Minguo 108–114. It also preserves the full official 小黃公車 grouped route
+table and unique route names. Sources read in full include the Tainan route
+and stop dataset pages, the Tainan bus portal and fare page, the 小黃公車 Q&A,
+the 5 August 2026 expansion notice and the ridership catalogue:
+
+- https://data.gov.tw/dataset/85855
+- https://data.gov.tw/dataset/85852
+- https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Tainan?$format=JSON
+- https://tdx.transportdata.tw/api/basic/v2/Bus/StopOfRoute/City/Tainan?$format=JSON
+- https://tdx.transportdata.tw/api/basic/v2/Bus/Operator/City/Tainan?$format=JSON
+- https://data.gov.tw/dataset/53402
+- https://2384.tainan.gov.tw/tnbusweb/Default.aspx
+- https://2384.tainan.gov.tw/newtnbusweb/priceInfo.html?Lang=cht
+- https://2384.tainan.gov.tw/newtnbusweb/othersInfoDrtsQA.html
+- https://traffic.tainan.gov.tw/Announcement/news?PageType=1&id=5606215d-e4c4-4b81-9bb0-3bb2d230b29d
+
+The snapshot contains 165 route entries, 692 direction-level stop records,
+23,386 ordered stops, 10 TDX operator records, 1,032 ridership rows across
+seven Minguo years and 52 unique 小黃公車 route names. The no-JavaScript
+ridership table sums annual route totals: 46,625,144 (108), 36,182,134 (109),
+12,672,621 (110), 13,301,069 (111), 15,116,658 (112), 15,947,047 (113) and
+16,787,769 (114). The page body is 957 words and includes 17 primary
+sources; the route data retains source update timestamps and no timetable
+values are invented.
+
+## TBC
+
+Route-level timetable history, historical fare series, vehicle/depot
+allocation, accessibility, reliability, contracts and a complete route-change
+log remain TBC. The municipal `soa.tainan.gov.tw` route, stop-order and
+transfer-hub JSON resources failed direct fetches with `TypeError: fetch
+failed`; the ridership JSON timed out, so the successful TDX responses and
+direct CSV downloads are used. The browser reader could not render some CSVs
+(`400 Unsupported content-type: text/csv` or cache miss), but direct full
+downloads succeeded and are cited by URL.
+
+## Contradicted the corpus
+
+No existing Tainan regional-bus claim was found to contradict. The new page
+keeps Tainan's municipal regional layer separate from the national Highway
+Bureau intercity timetable.
+
+## Conflicts found
+
+The full Tainan Q&A says 52 小黃公車 routes across 32 districts. The full
+5 August 2026 official expansion notice says that adding 黃3, 黃16 and 黃23
+took the network from 46 to 49 routes across 31 districts. Both values are
+published, the reason for the difference is not stated, and neither value was
+silently selected. The annual ridership CSV is also a route-month series,
+while TDX is a current structural snapshot; the derived annual sums are not
+presented as a live official network-total field.
+
+Gates: cite 7,183 resolved clean; research 151/636 clean; conflicts current;
+claims 20,795 sourced/4,480 TBC/0 ASSERTED; build 2,765 pages and 2,765
+Han-subset checks clean; unit 234/234; check 441,644 internal links; a11y
+1,867 pages with no errors or warnings; facts (17), geometry and fonts clean;
+search 1,877 entries. Browser verification was clean: zero axe violations
+across 1,866 pages, clean reflow/keyboard/tree, 764 screenshots and 107 print
+PDFs; Tainan was inspected at 320, 375 and 1440 px. Generated audit JSONs,
+screenshots and PDFs were restored; `probes/` remains untracked.
+
 # Run 169 - Taichung regional bus layer (25 August 2026)
 
 ## Sourced

@@ -122,6 +122,7 @@ const PAGE_TYPES = [
   { name: 'bus-intercity', url: '/bus/intercity/' },
   { name: 'bus-regional-hsinchu', url: '/bus/regional/hsinchu/' },
   { name: 'bus-regional-taichung', url: '/bus/regional/taichung/' },
+  { name: 'bus-regional-tainan', url: '/bus/regional/tainan/' },
   { name: 'bus-route-brown', url: '/bus/routes/colour-brown/' },
   { name: 'bus-route-detail', url: '/bus/routes/colour-brown/brown-1/' },
   { name: 'bus-operators', url: '/bus/operators/' },

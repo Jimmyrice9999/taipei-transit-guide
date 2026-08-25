@@ -363,6 +363,78 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The official page lists 26 Yellow routes, fixed-departure and reservation rules, two reservation phone groups, stop behaviour and linked route/timetable images."
+  - id: "bus-regional-tainan-tainan-route-dataset"
+    title: "Tainan city-bus route data"
+    titleOriginal: "大台南公車路線資料"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://data.gov.tw/dataset/85855"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official dataset page defines the route-data fields, identifies the Tainan Transportation Bureau as provider and identifies route data as sourced through TDX."
+  - id: "bus-regional-tainan-tainan-stop-dataset"
+    title: "Tainan city-bus route stop order data"
+    titleOriginal: "大台南公車路線站序資料"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://data.gov.tw/dataset/85852"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The official dataset page defines the RouteUID, RouteID, direction, ordered Stops, UpdateTime and VersionID fields and identifies TDX as the data source."
+  - id: "bus-regional-tainan-tainan-operator-tdx"
+    title: "Tainan bus operator response"
+    titleOriginal: "大台南公車業者資料（TDX Operator）"
+    publisher: "Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Bus/Operator/City/Tainan?$format=JSON"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full live response supplies ten operator records with names, contacts, URLs and source update times."
+  - id: "bus-regional-tainan-tainan-route-tdx"
+    title: "Tainan city-bus route response"
+    titleOriginal: "大台南公車路線資料（TDX Route）"
+    publisher: "Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Tainan?$format=JSON"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full live TDX response supplies 165 Tainan route records, route names, operators, sub-routes, terminal labels, fare descriptions, map links and source update times."
+  - id: "bus-regional-tainan-tainan-ridership-dataset"
+    title: "Tainan city-bus ridership information"
+    titleOriginal: "大台南公車運量資訊"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://data.gov.tw/dataset/53402"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full dataset page defines monthly route ridership fields, lists annual CSV/JSON resources for Minguo years 108–114, gives annual update frequency and records metadata updated 2026-08-11 16:29."
+  - id: "bus-regional-tainan-tainan-portal"
+    title: "Tainan City Bus portal"
+    titleOriginal: "大台南公車"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://2384.tainan.gov.tw/tnbusweb/Default.aspx"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full official portal exposes dynamic bus information, route maps, stop information, transfer queries, fare queries and timetable/download links."
+  - id: "bus-regional-tainan-tainan-yellow"
+    title: "Tainan 小黃公車 information and Q&A"
+    titleOriginal: "小黃公車資訊"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://2384.tainan.gov.tw/newtnbusweb/othersInfoDrtsQA.html"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full official page explains the taxi-bus model, fixed and reservation services, fare rules, service districts and the 52 unique route names in its route table."
+  - id: "bus-regional-tainan-tainan-yellow-notice"
+    title: "Tainan 小黃公車 service expansion notice"
+    titleOriginal: "臺南市小黃公車新增路線及服務方式"
+    publisher: "Tainan City Government Transportation Bureau (臺南市政府交通局)"
+    url: "https://traffic.tainan.gov.tw/Announcement/news?PageType=1&id=5606215d-e4c4-4b81-9bb0-3bb2d230b29d"
+    accessed: "2026-08-25"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full official notice records the 黃3/黃16 joint bus-taxi operation, new 黃23 service, reservation window and fare treatment."
   - id: "bus-routes-colour-brown-brown-20-bgsxaf-ebus-brown"
     title: "Taipei/New Taipei bus route catalogue"
     titleOriginal: "大臺北公車"
@@ -1807,6 +1879,27 @@ The city-bus CSV has no departure-time field, while the separate 小黃公車 pa
 - [Taichung bus real-time information](https://citybus.taichung.gov.tw/ebus) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-citybus]
 - [Taichung city-bus route-map CSV](https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=20c2e4cc-49bf-45d5-a880-714c7c66eed6) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-csv]
 - [Taichung 小黃公車](https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,505,52) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-yellow]
+
+## Tainan regional buses — Gaps and conflicts
+
+Discussed on [Tainan regional buses](/bus/regional/tainan/) in the source page's “Gaps and conflicts” section.[^bus-regional-tainan-tainan-route-dataset]
+
+### Gaps and conflicts
+
+The route and stop datasets provide current structure, but not a historical route-change log, reliability series, depot allocation, vehicle assignment or accessibility inventory.[^bus-regional-tainan-tainan-route-dataset][^bus-regional-tainan-tainan-stop-dataset][^bus-regional-tainan-tainan-operator-tdx] TDX provides route and stop update timestamps, while the ridership catalogue provides annual route totals; neither is a complete timetable history.[^bus-regional-tainan-tainan-route-tdx][^bus-regional-tainan-tainan-ridership-dataset] The city portal and the 小黃公車 Q&A are therefore retained as the service-information boundary, and any timetable or route change should be refreshed from those sources before publication.[^bus-regional-tainan-tainan-portal][^bus-regional-tainan-tainan-yellow]
+
+The official sources disagree on the current 小黃公車 count. The Q&A page says 52 routes across 32 administrative districts, while the 5 August 2026 expansion notice says that adding 黃3, 黃16 and 黃23 increased the total from 46 to 49 routes across 31 districts.[^bus-regional-tainan-tainan-yellow][^bus-regional-tainan-tainan-yellow-notice] These may be different publication snapshots or scopes, but the fetched sources do not explain the difference. The data layer preserves the Q&A table's 52 unique route names and reports the notice's 49 separately; it does not average them or choose a winner.[^bus-regional-tainan-tainan-yellow][^bus-regional-tainan-tainan-yellow-notice]
+
+#### Sources for this entry
+
+- [Tainan city-bus route data](https://data.gov.tw/dataset/85855) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-route-dataset]
+- [Tainan city-bus route stop order data](https://data.gov.tw/dataset/85852) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-stop-dataset]
+- [Tainan bus operator response](https://tdx.transportdata.tw/api/basic/v2/Bus/Operator/City/Tainan?$format=JSON) — primary; Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務); accessed 2026-08-25.[^bus-regional-tainan-tainan-operator-tdx]
+- [Tainan city-bus route response](https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Tainan?$format=JSON) — primary; Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務); accessed 2026-08-25.[^bus-regional-tainan-tainan-route-tdx]
+- [Tainan city-bus ridership information](https://data.gov.tw/dataset/53402) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-ridership-dataset]
+- [Tainan City Bus portal](https://2384.tainan.gov.tw/tnbusweb/Default.aspx) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-portal]
+- [Tainan 小黃公車 information and Q&A](https://2384.tainan.gov.tw/newtnbusweb/othersInfoDrtsQA.html) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-yellow]
+- [Tainan 小黃公車 service expansion notice](https://traffic.tainan.gov.tw/Announcement/news?PageType=1&id=5606215d-e4c4-4b81-9bb0-3bb2d230b29d) — primary; Tainan City Government Transportation Bureau (臺南市政府交通局); accessed 2026-08-25.[^bus-regional-tainan-tainan-yellow-notice]
 
 ## BR20B / 棕20預 — Classification and conflict
 

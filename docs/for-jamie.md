@@ -2,17 +2,15 @@
 
 ## Active handoff - 25 August 2026
 
-Run 169 adds Taichung regional buses: a sourced page, research record and
-route/stops snapshot in data/taichung-bus/ plus public/data/.
-The full CSV contains 392 route records, 23 raw operator labels, 784 direction
-records and 37,138 ordered stops; a separate object lists 26 小黃公車 routes.
-City-bus frequencies/fares remain TBC because the CSV has neither field;
-Yellow departure times remain TBC because linked schedule images failed fetch.
-Conflicts retained: 23 CSV labels versus 14 visible operator links, and static
-route-map scope versus live departure instructions. No snippets were used.
-Gates: cite 7,149; research 150/631; claims 0 ASSERTED; build 2,764 pages;
-unit 234/234; check 441,399 links; a11y/facts/geometry/search clean.
-Browser: zero axe across 1,865 pages, 757 screenshots and 107 print PDFs;
-Taichung inspected at 320/375/1440. Generated audit artifacts restored;
-`probes/` remains untracked.
-Next: Part 13 Tainan regional buses, then Kaohsiung, one city at a time.
+Run 170 adds Tainan regional buses: full TDX route/operator/ordered-stop data,
+seven official annual ridership CSVs (Minguo 108–114), fare/portal research,
+and a separate 52-route 小黃公車 layer. The snapshot has 165 routes, 692
+direction records, 23,386 stops, 10 operators and 1,032 ridership rows.
+The official Q&A says 52 routes/32 districts; the 5 August notice says 49/31.
+Both values remain published. Municipal JSON resource fetches failed; TDX
+and direct CSV downloads succeeded. No snippets used; no corpus contradiction.
+Gates: cite 7,183; research 151/636; claims 0 ASSERTED; build 2,765 pages;
+unit 234/234; check 441,644; a11y 1,867; search 1,877; browser zero axe on
+1,866 pages, 764 screenshots, 107 PDFs; Tainan inspected at 320/375/1440.
+Generated audits restored; `probes/` remains untracked.
+Next: Part 13 Kaohsiung regional buses, then Part 14 other modes.

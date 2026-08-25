@@ -1,6 +1,6 @@
 ---
 title: Regional bus networks
-description: City and county bus networks beyond the Taipei core, with dated Hsinchu and Taichung layers.
+description: City and county bus networks beyond the Taipei core, with dated Hsinchu, Taichung and Tainan layers.
 order: 4
 sources:
   - id: hsinchu-portal
@@ -84,6 +84,51 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The separate monthly aggregate statistics catalogue.
+  - id: tainan-route-dataset
+    title: Tainan city-bus route data
+    titleOriginal: 大台南公車路線資料
+    publisher: Tainan City Government Transportation Bureau (臺南市政府交通局)
+    url: https://data.gov.tw/dataset/85855
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The official route-data catalogue and its TDX-backed field definitions.
+  - id: tainan-route-tdx
+    title: Tainan city-bus route response
+    titleOriginal: 大台南公車路線資料（TDX Route）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Tainan?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The full route snapshot used by the Tainan page.
+  - id: tainan-stop-tdx
+    title: Tainan TDX ordered bus stops by route
+    titleOriginal: 大台南公車路線站序資料（TDX StopOfRoute）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/StopOfRoute/City/Tainan?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The full ordered-stop snapshot used by the Tainan page.
+  - id: tainan-ridership-dataset
+    title: Tainan city-bus ridership information
+    titleOriginal: 大台南公車運量資訊
+    publisher: Tainan City Government Transportation Bureau (臺南市政府交通局)
+    url: https://data.gov.tw/dataset/53402
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The annual route-ridership catalogue and its listed Minguo 108–114 resources.
+  - id: tainan-yellow
+    title: Tainan 小黃公車 information and Q&A
+    titleOriginal: 小黃公車資訊
+    publisher: Tainan City Government Transportation Bureau (臺南市政府交通局)
+    url: https://2384.tainan.gov.tw/newtnbusweb/othersInfoDrtsQA.html
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: The official 小黃公車 route, service-mode and reservation page.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -91,6 +136,8 @@ This section records regional bus networks as dated source-backed data layers. I
 The first regional entry is [Hsinchu regional buses](/bus/regional/hsinchu/).[^hsinchu-portal] It keeps the route identities and operator labels as the portal publishes them, with terminals derived from each direction's ordered stop response and fare links retained without inventing a current price.[^hsinchu-detail][^hsinchu-roadline]
 
 The second entry is [Taichung regional buses](/bus/regional/taichung/).[^taichung-dataset] It preserves 392 city-bus route records and the separate 26-route 小黃公車 reservation catalogue, while leaving city-bus frequency and route-level fares TBC where the fetched primary data has no such field.[^taichung-csv][^taichung-yellow][^taichung-citybus]
+
+The third entry is [Tainan regional buses](/bus/regional/tainan/).[^tainan-route-dataset][^tainan-route-tdx] Its route and ordered-stop snapshot is joined to the city's annual route-ridership resources and its separate 小黃公車 route table, while timetable history remains outside the static layer.[^tainan-stop-tdx][^tainan-ridership-dataset][^tainan-yellow]
 
 ## Coverage
 
