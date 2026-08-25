@@ -4,6 +4,7 @@ description: Current Blue Highway routes, Kaohsiung Cijin ferry routes and Pengh
 order: 1
 ---
 
-- [Blue Highway](/ferry/routes/blue-highway/) — routes, fares, piers, EasyCard rules and weather-dependent operation.
-- [Kaohsiung Cijin ferries](/ferry/routes/cijin/) — the Gushan–Cijin public crossing, the Fronten–Zhongzhou route and the KW2 sea bus.
-- [Penghu island ferry services](/ferry/routes/penghu/) — South Sea public boats, island fares, Taiwan–Penghu ferries and weather limits.
+- [Blue Highway](/ferry/routes/blue-highway/)
+- [Kaohsiung Cijin ferries](/ferry/routes/cijin/)
+- [Penghu island ferry services](/ferry/routes/penghu/)
+- [Kinmen island ferry services](/ferry/routes/kinmen/)

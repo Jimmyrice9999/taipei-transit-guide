@@ -18455,3 +18455,53 @@ keyboard/tree probes clean including Penghu, zero axe violations across 1,873
 pages, 799 screenshots and 107 print PDFs. The 320/400%-equivalent and 1440px
 Penghu screenshots were inspected. Generated audits, screenshots and PDFs were
 restored; `probes/` remains untracked.
+
+## Run 175 — Kinmen island ferry services (2026-08-26)
+
+### Sourced
+
+Added `content/ferry/routes/kinmen.md` (741 body words) and
+`docs/research/ferry/kinmen.md`, linked from the ferry-routes index, and added
+`ferry-route-kinmen` to the browser harness. Full primary sources fetched:
+MOTC mini-three-links sailing table
+(`https://www.motcmpb.gov.tw/BoatSchedule?nodeId=380&siteId=1`), MOTC
+cross-strait operations
+(`https://www.motcmpb.gov.tw/Information/Detail/68173c5b-6b25-401f-ab32-62a7d902bd95?NodeId=334&SiteId=1`),
+the MOTC August 2026 Xiamen and Quanzhou schedule PDFs, Kinmen Tourism’s
+mini-three-links notice (`https://kinmen.travel/zh-tw/news/details/3470`),
+the county ferry timetable PDF, and the Lieyu representative-council notice
+on the 2023 post-bridge Jin–Lie adjustment.
+
+### TBC and checked failures
+
+The current Jin–Lie passenger fare, vehicle fares, timetable publication date,
+machine-readable live domestic board, ridership and complete pier/vessel
+accessibility inventory remain TBC. The current Lieyu transport page returned
+502/internal error; the MOTC PassengerShip registry returned internal error;
+the county vehicle-office FAQ endpoint was rejected as unsafe; two historical
+county news pages returned 502; and the official mini-three-links handbook PDF
+timed out. Each is recorded in the research file with its URL and date.
+
+### Contradicted the corpus
+
+No existing Kinmen claim was found to contradict. This unit adds the domestic
+Jin–Lie service boundary and keeps it separate from the cross-strait routes.
+
+### Conflicts found
+
+The 22 February 2023 Jin–Lie notice announces only 07:00–08:30 and 17:00–18:30
+windows after bridge opening, while the fetched county timetable PDF exposes
+broad Jiugong/Shuitou columns; both dated contexts are published. The Tourism
+notice’s NT$100/160 passenger-service fee is not silently treated as a vessel
+ticket fare, while domestic vehicle-fare questions remain unanswered.
+
+### Gates
+
+`cite` 7,244 resolved (7,037 primary); `research` 155 files/654 checked
+failures; `claims` 24,364 sourced/4,488 TBC/0 ASSERTED; build 2,773 pages and
+2,773 Han-subset checks; unit 234/234; a11y 1,875 pages clean; geometry and
+links clean. Browser verification: reflow and painted-box checks clean,
+keyboard/tree probes clean including Kinmen, zero axe violations across 1,874
+pages, 806 screenshots and 107 print PDFs. The 320/400%-equivalent and 1440px
+Kinmen screenshots were inspected. Generated audits, screenshots and PDFs were
+restored; `probes/` remains untracked.
