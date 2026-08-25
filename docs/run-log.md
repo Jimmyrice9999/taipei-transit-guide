@@ -17981,3 +17981,65 @@ report's 36-year superficies concession. Depot scope is three depots in the
 joint Red/Orange project summary, one Orange depot in the engineering tables,
 and Daliao's 54-hectare site split into about 36 hectares of maintenance and
 18 hectares of commercial-service area. All values remain published together.
+
+# Run 167 - National intercity bus layer (25 August 2026)
+
+## Sourced
+
+Added `content/bus/intercity/_index.md` (968 body words), the primary-led
+research record at `docs/research/bus/intercity.md`, and the deterministic
+generator `scripts/fetch-intercity-bus.mjs`. The generator fetches the full
+Highway Bureau timetable export at
+`https://www.taiwanbus.tw/TimeTableExport/timetable.csv`, retrieved 25 August
+2026, and writes `data/intercity-bus/routes.json` plus the public copy at
+`/data/intercity-bus-routes.json`. The complete export contains 132,398 rows;
+the grouping key produces 1,837 route variants and 44 operator labels.
+
+Full primary catalogue and policy sources read: the bureau's company and
+booking directory (`https://www.thb.gov.tw/cp.aspx?Create=1&n=312`), the daily
+`客運時刻` catalogue (`https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=599`),
+the monthly `國道汽車客運概況` catalogue
+(`https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=492`), the 2024
+fare-adjustment notice
+(`https://www.thb.gov.tw/News_Content.aspx?n=87&s=245774&sms=13235`), the
+2030 electric-bus plan PDF, and TDX's `InterCityBus` API documentation
+(`https://tdx.transportdata.tw/api-service/swagger`). The route page explains
+why a summary table/data layer is appropriate for a dated, changing timetable
+export instead of thousands of route stubs.
+
+Gates: cite 7,129 clean; research 148 files/620 checked failures clean;
+claims 20,711 sourced/4,473 TBC/0 ASSERTED; build 2,760 generated pages and
+2,761 Han-subset checks clean; unit 234/234; check 440,731 internal links with
+no broken links; a11y, facts and geometry clean; search index 1,873 entries.
+Browser verification was clean with zero axe violations across 1,862 pages,
+clean reflow/keyboard/tree checks, 743 screenshots and 105 print PDFs. The
+new page was inspected at 320, 375 and 1440 px. Generated audit JSONs,
+screenshots and PDFs were restored; `probes/` remains untracked.
+
+## TBC
+
+Current fares by route, live departures, historical route changes, fleet
+allocation, terminal facilities, ridership/revenue values, and a stable
+transfer graph remain TBC. The direct full fetch of the bureau's basic-fare
+page returned Internal Error; the statistics download redirected to a
+`ws.thb.gov.tw` response that returned HTTP 500/unsafe; and the local TDX
+credential attempt returned `invalid_client` followed by 401 route responses.
+No snippets were used to fill those gaps.
+
+## Contradicted the corpus
+
+No existing national intercity-bus page or claim was found to contradict.
+The existing Taipei and New Taipei municipal bus layers remain separate; this
+unit adds the national Highway Bureau timetable boundary without merging
+municipal route identities into it.
+
+## Conflicts found
+
+The current export gives 1,837 timetable route variants versus the 2030 plan's
+173 highway routes in its May 2022 planning snapshot; these measure different
+identities and dates. The export has 44 operator labels versus the plan's 57
+supervised operators; those are also different populations. The timetable
+schema has no route-fare field, while the 2024 fare notice gives a basic-fare
+adjustment, filing and notice process rather than a current route table. The
+operator directory is dated 114-08-13 and the timetable catalogue 115-07-01;
+they are separate publication dates, not a single network freshness value.

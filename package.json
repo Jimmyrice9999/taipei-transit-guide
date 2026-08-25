@@ -19,6 +19,7 @@
     "assets": "npm run fonts && npm run favicon && npm run wordmark",
       "tdx": "node scripts/fetch-tdx.mjs",
       "tdx:bus": "node scripts/fetch-bus-tdx.mjs",
+    "intercity-bus": "node scripts/fetch-intercity-bus.mjs",
     "tdx:bike": "node scripts/fetch-bike-tdx.mjs",
     "thsr": "node scripts/fetch-thsr.mjs",
     "tra": "node scripts/fetch-tra.mjs",
