@@ -2,15 +2,15 @@
 
 ## Active handoff - 26 August 2026
 
-Run 172 extends the static YouBike layer to Taichung and Kaohsiung.
-TDX pull (retrieved 25 Aug): Taipei 1,794 / 50,876 docks; New Taipei
-1,593 / 48,355; Taoyuan 699 / 24,214; Taichung 1,817 / 38,746;
-Kaohsiung 1,500 / 30,382 — 7,403 rows total.
-Municipal open-data catalogues were fetched for Taichung and Kaohsiung.
-New indexes are browse pages, not station stubs; new rows stay Unclassified
-where TDX gives no district. Static availability remains excluded.
-Gates: cite 7,219; research 152/642; claims 0 ASSERTED; build 2,770;
-unit 234/234; check 442,769; a11y 1,872; browser zero axe on 1,871;
-785 screenshots, 107 PDFs; new pages inspected at 320/1440.
+Run 173 adds the sourced Kaohsiung Cijin ferry page and research record.
+Gushan–Cijin: 06:00–24:00, 4–6 minutes, 0.5 nautical mile, NT$30 full cash.
+Fronten–Zhongzhou: 05:45–22:10, 20–30 minutes, 1.05 nautical miles, NT$30.
+KW2–Cijin: 12:30–16:15 weekdays / 12:00–18:45 weekends, NT$80/40.
+The page includes official pier access, fare rules, electric ferries and a
+budget forecast; it keeps capacities, actual ridership, accessibility and
+full machine-readable timetables TBC.
+Gates: cite 7,230; research 153/644; claims 0 ASSERTED; build 2,771;
+unit 234/234; check 442,769; a11y 1,873; browser zero axe on 1,872;
+792 screenshots, 107 PDFs; Cijin inspected at 320/1440.
 Generated audits restored; `probes/` remains untracked.
-Next: continue Part 14 with ferries, islands and airport ground transport.
+Next: continue Part 14 with island services, municipal ferries and airport ground transport.

@@ -18335,3 +18335,74 @@ clean: zero axe violations across 1,864 pages, clean reflow/keyboard/tree,
 750 screenshots and 107 print PDFs; the Hsinchu page was inspected at 320,
 375 and 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
+
+# Run 173 - Kaohsiung Cijin ferries (26 August 2026)
+
+## Sourced
+
+Added the 300+ word route page at `content/ferry/routes/cijin.md`, the
+primary-led research record at `docs/research/ferry/cijin.md`, and the route
+index link at `content/ferry/routes/_index.md`. The page keeps the main
+Gushan–Cijin public crossing separate from the Fronten–Zhongzhou connection
+and the shorter-window KW2–Cijin sea bus.
+
+Full official pages and PDF read in Traditional Chinese: Kaohsiung City
+Shipping Co. route pages for Gushan–Cijin
+(`https://kcs.kcg.gov.tw/Content_List.aspx?n=2EDF685BBC9D2857`), Fronten–Zhongzhou
+(`https://kcs.kcg.gov.tw/Content_List.aspx?n=C0BCB904EB284223`), KW2–Cijin
+(`https://kcs.kcg.gov.tw/Content_List.aspx?n=6DA8A39BB8402A6D`), Gushan pier
+(`https://kcs.kcg.gov.tw/Content_List.aspx?n=539EE52615393A8C`), Cijin pier
+(`https://kcs.kcg.gov.tw/Content_List.aspx?n=6A079D4DDA1F70C1`), electric-ferry
+release (`https://kcs.kcg.gov.tw/News_Content.aspx?n=0B3BE2A2D8AF984E&s=C6EC2EADEFC3E69F&sms=5F57400441267452`)
+and 115-year budget PDF
+(`https://orgws.kcg.gov.tw/001/KcgOrgUploadFiles/316/RelFile/0/94817/fc7ad4c7-51ea-4556-a449-351de07fe8ac.pdf`); Cijin District Office
+transport page (`https://cijin.kcg.gov.tw/Content_List.aspx?n=7957C12CCD70E4E1`);
+Kaohsiung Transportation Bureau supervision page
+(`https://www.tbkc.gov.tw/Service/PublicTransport/ship?id=eff9b637-d56f-4817-bc2f-e140465e1876`);
+Kaohsiung Port Land Development KW2 fare notice
+(`https://www.kpld.com.tw/notice/53`); and city-government Cijin pier-renewal
+release (`https://takao.kcg.gov.tw/article/3858`).
+
+The verified snapshot is: Gushan–Cijin 06:00–24:00, roughly 4–6 minutes,
+0.5 nautical mile, full cash NT$30; Fronten–Zhongzhou 05:45–22:10,
+roughly 20–30 minutes, 1.05 nautical miles, full cash NT$30; and KW2–Cijin
+12:30–16:15 weekdays / 12:00–18:45 weekends and public holidays, full/half
+NT$80/40. The page also records fare media and concessions, motorcycle
+holiday controls, pier addresses and onward bus/MRT/LRT/bike access, three
+electric ferries with their published allocations, and the 115-year budget
+forecast of nine operating ferries, three sightseeing vessels and 4,278,838
+passenger trips.
+
+## TBC
+
+No official vessel-by-vessel capacity table, station-level accessibility
+inventory, historical actual ridership series, or complete machine-readable
+timetable was found in the source families searched. The 4,278,838 figure is
+a budget forecast. Fare history before the current operator notices remains
+TBC. The MOTC Maritime and Port Bureau passenger-ship page returned an
+internal error and is recorded as checked-and-failed; the KCS timetable
+graphics were fetched but not exposed as machine-readable text.
+
+## Contradicted the corpus
+
+No existing Cijin ferry claim or research page was found to contradict. The
+unit adds a municipal-ferry boundary alongside, rather than inside, the
+existing New Taipei Blue Highway page.
+
+## Conflicts found
+
+No conflicting current route value was found. NT$30 applies to the Gushan–Cijin
+and Fronten–Zhongzhou operator pages; NT$80/40 applies to the separate KW2–Cijin
+sea bus notice. The KCS KW2 page omits a numeric fare in its fetched text while
+the current KPLD notice supplies it; this is recorded as a source-coverage gap,
+not resolved into a false contradiction.
+
+Gates: cite 7,230 resolved clean; research 153 files/644 checked failures
+clean; claims 24,331 sourced/4,487 TBC/0 ASSERTED; build 2,771 pages and
+2,771 Han-subset checks clean; unit 234/234; check 442,769 internal links;
+a11y 1,873 pages with no errors/warnings; geometry and links clean. Browser
+verification was clean: no reflow overflow at 320/640, no keyboard/tree
+failures, zero axe violations across 1,872 pages, 792 screenshots and 107
+print PDFs. The Cijin page was inspected at 320/400%-equivalent and 1440 px.
+Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains
+untracked.
