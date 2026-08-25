@@ -2,7 +2,7 @@
 
 ## Active handoff - 25 August 2026
 
-Actions run 384's fact-checker false positive is fixed; replacement run 385 passed facts and browser verification but exposed missing file context in two adversarial YAML errors, now fixed and validated 16/16 locally before the next run.
+Actions run 384's fact-checker false positive and run 385's missing YAML error context are fixed; run 386 passed Tests, Build for Pages and Deploy.
 Parts 0-11 are complete; Part 12 now includes KRTC, Taoyuan Green, Taichung Blue, Purple, Orange, Orange Sea and Red.
 The Sea Line page is a 715-word feasibility entry: the January interim proposal is approximately 16.50 km, 10 stations, one level-five depot, with Sanmin Road and Wuqi Fishing Port branches.
 The current TCRT page says no route is final; the revised interim report was submitted on 6 July 2026 and remains under review.
