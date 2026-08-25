@@ -1,0 +1,18 @@
+{
+  "system": "alishan-forest-railway",
+  "operator": "Alishan Forest Railway and Cultural Heritage Office",
+  "operatorOriginal": "阿里山林業鐵路及文化資產管理處",
+  "retrieved": "2026-08-25",
+  "sources": {
+    "afr-home": "https://afrch.forest.gov.tw/",
+    "afr-main-timetable": "https://afrch.forest.gov.tw/0000115",
+    "afr-branch-timetable": "https://afrch.forest.gov.tw/0000300",
+    "afr-mileage": "https://afrch.forest.gov.tw/0000120",
+    "afr-diesel": "https://afrch.forest.gov.tw/0000106",
+    "boch-potential": "https://twh.boch.gov.tw/taiwan/intro.aspx?id=7&lang=zh_tw"
+  },
+  "notes": [
+    "This is a normalized snapshot of the operator's published station, timetable and mileage pages, not a TDX or GTFS feed.",
+    "The operator's station, timetable and heritage inventories are retained as separate source views where they disagree."
+  ]
+}

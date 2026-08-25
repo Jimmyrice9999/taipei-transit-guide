@@ -1,0 +1,74 @@
+[
+  {
+    "id": "main-line",
+    "nameEn": "Main line",
+    "nameZh": "本線",
+    "status": "scheduled",
+    "start": "Chiayi",
+    "end": "Alishan",
+    "publishedLengthKm": 71.6,
+    "stationIds": [
+      "main-chiayi",
+      "main-beimen",
+      "main-lumachan",
+      "main-zhuqi",
+      "main-muliliao",
+      "main-zhangnaoliao",
+      "main-dulishan",
+      "main-liyuanliao",
+      "main-jiaoliping",
+      "main-shuisheliao",
+      "main-fenqihu",
+      "main-duolin",
+      "main-shizilu",
+      "main-pingzhena",
+      "main-erwanping",
+      "main-alishan"
+    ],
+    "source": "afr-home"
+  },
+  {
+    "id": "shenmu-line",
+    "nameEn": "Shenmu Line",
+    "nameZh": "神木線",
+    "status": "scheduled",
+    "start": "Alishan",
+    "end": "Shenmu",
+    "publishedLengthKm": null,
+    "source": "afr-branch-timetable",
+    "stationIds": ["main-alishan", "branch-shenmu"]
+  },
+  {
+    "id": "zhaoping-line",
+    "nameEn": "Zhaoping Line",
+    "nameZh": "沼平線",
+    "status": "scheduled",
+    "start": "Alishan",
+    "end": "Zhaoping",
+    "publishedLengthKm": null,
+    "source": "afr-branch-timetable",
+    "stationIds": ["main-alishan", "branch-zhaoping"]
+  },
+  {
+    "id": "zhushan-line",
+    "nameEn": "Zhushan Line",
+    "nameZh": "祝山線",
+    "status": "scheduled",
+    "start": "Alishan",
+    "end": "Zhushan",
+    "publishedLengthKm": null,
+    "source": "afr-branch-timetable",
+    "stationIds": ["main-alishan", "branch-duigaoyue", "branch-zhushan"]
+  },
+  {
+    "id": "mianyue-line",
+    "nameEn": "Mianyue Line",
+    "nameZh": "眠月線",
+    "status": "closed",
+    "start": "Alishan",
+    "end": "TBC",
+    "publishedLengthKm": 9.2,
+    "source": "afr-branch-timetable",
+    "stationIds": []
+  }
+]

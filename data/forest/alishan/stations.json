@@ -1,0 +1,22 @@
+[
+  { "id": "main-chiayi", "lineId": "main-line", "sequence": 1, "nameEn": "Chiayi", "nameZh": "嘉義", "chainageKm": 0, "elevationM": 30, "serviceStatus": "scheduled" },
+  { "id": "main-beimen", "lineId": "main-line", "sequence": 2, "nameEn": "Beimen", "nameZh": "北門", "chainageKm": 1.6, "elevationM": 31, "serviceStatus": "scheduled" },
+  { "id": "main-lumachan", "lineId": "main-line", "sequence": 3, "nameEn": "Luma Chan", "nameZh": "鹿麻產", "chainageKm": 10.84, "elevationM": 82, "serviceStatus": "scheduled" },
+  { "id": "main-zhuqi", "lineId": "main-line", "sequence": 4, "nameEn": "Zhuqi", "nameZh": "竹崎", "chainageKm": 14.2, "elevationM": 127, "serviceStatus": "scheduled" },
+  { "id": "main-muliliao", "lineId": "main-line", "sequence": 5, "nameEn": "Muliliao", "nameZh": "木履寮", "chainageKm": 18.9, "elevationM": 324, "serviceStatus": "scheduled" },
+  { "id": "main-zhangnaoliao", "lineId": "main-line", "sequence": 6, "nameEn": "Zhangnaoliao", "nameZh": "樟腦寮", "chainageKm": 23.3, "elevationM": 543, "serviceStatus": "scheduled" },
+  { "id": "main-dulishan", "lineId": "main-line", "sequence": 7, "nameEn": "Duli Shan", "nameZh": "獨立山", "chainageKm": 27.3, "elevationM": 743, "serviceStatus": "scheduled" },
+  { "id": "main-liyuanliao", "lineId": "main-line", "sequence": 8, "nameEn": "Liyuanliao", "nameZh": "梨園寮", "chainageKm": 31.4, "elevationM": 904, "serviceStatus": "scheduled" },
+  { "id": "main-jiaoliping", "lineId": "main-line", "sequence": 9, "nameEn": "Jiaoliping", "nameZh": "交力坪", "chainageKm": 34.9, "elevationM": 997, "serviceStatus": "scheduled" },
+  { "id": "main-shuisheliao", "lineId": "main-line", "sequence": 10, "nameEn": "Shuisheliao", "nameZh": "水社寮", "chainageKm": 40.5, "elevationM": 1186, "serviceStatus": "scheduled" },
+  { "id": "main-fenqihu", "lineId": "main-line", "sequence": 11, "nameEn": "Fenqihu", "nameZh": "奮起湖", "chainageKm": 45.52, "elevationM": 1403, "serviceStatus": "scheduled" },
+  { "id": "main-duolin", "lineId": "main-line", "sequence": 12, "nameEn": "Duolin", "nameZh": "多林", "chainageKm": 50.68, "elevationM": 1516, "serviceStatus": "scheduled" },
+  { "id": "main-shizilu", "lineId": "main-line", "sequence": 13, "nameEn": "Shizilu", "nameZh": "十字路", "chainageKm": 55, "elevationM": 1534, "serviceStatus": "scheduled" },
+  { "id": "main-pingzhena", "lineId": "main-line", "sequence": 14, "nameEn": "Pingzhena", "nameZh": "屏遮那", "chainageKm": 60.18, "elevationM": 1711, "serviceStatus": "scheduled" },
+  { "id": "main-erwanping", "lineId": "main-line", "sequence": 15, "nameEn": "Erwanping", "nameZh": "二萬平", "chainageKm": 67.16, "elevationM": 2000, "serviceStatus": "scheduled" },
+  { "id": "main-alishan", "lineId": "main-line", "sequence": 16, "nameEn": "Alishan", "nameZh": "阿里山", "chainageKm": 71.6, "elevationM": 2216, "serviceStatus": "scheduled" },
+  { "id": "branch-shenmu", "lineId": "shenmu-line", "sequence": 2, "nameEn": "Shenmu", "nameZh": "神木", "chainageKm": 69.94, "distanceFromAlishanKm": 2.78, "elevationM": 2138, "serviceStatus": "scheduled" },
+  { "id": "branch-zhaoping", "lineId": "zhaoping-line", "sequence": 2, "nameEn": "Zhaoping", "nameZh": "沼平", "distanceFromAlishanKm": 1.3, "elevationM": 2274, "serviceStatus": "scheduled" },
+  { "id": "branch-duigaoyue", "lineId": "zhushan-line", "sequence": 2, "nameEn": "Duigaoyue", "nameZh": "對高岳", "distanceFromAlishanKm": 4.9, "elevationM": 2405, "serviceStatus": "passenger-stop-tbc" },
+  { "id": "branch-zhushan", "lineId": "zhushan-line", "sequence": 3, "nameEn": "Zhushan", "nameZh": "祝山", "distanceFromAlishanKm": 6.25, "elevationM": 2451, "serviceStatus": "scheduled" }
+]

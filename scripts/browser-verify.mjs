@@ -157,6 +157,9 @@ const PAGE_TYPES = [
      published line total alongside the TRTC and NTMC variants above. */
   { name: 'station-a1', url: '/rail/metro/stations/a1/' },
   { name: 'line-airport-mrt', url: '/rail/metro/lines/airport-mrt/' },
+  { name: 'system-alishan', url: '/rail/alishan/' },
+  { name: 'line-alishan-forest-railway', url: '/rail/alishan/lines/alishan-forest-railway/' },
+  { name: 'stations-alishan', url: '/rail/alishan/stations/alishan-stations/' },
   { name: 'stock-val256', url: '/rail/metro/rolling-stock/val256/' },
   /* Run 119: the family/lot roster table is the first rolling-stock page
      whose primary purpose is a wide, horizontally scrollable data table. */

@@ -2,14 +2,12 @@
 
 ## Active handoff - 25 August 2026
 
-Actions run 388 passed Tests, Build for Pages and Deploy; the Wanda page is live.
-Parts 0–11 are complete; Part 12 includes KRTC, Taoyuan Green and Taichung Blue, Purple, Orange, Orange Sea and Red.
-Wanda is an 816-word, two-phase record: 9.5 km/9 underground stations in Phase 1 and 13.3 km/13 stations in Phase 2.
-Its programme revisions, package activity, Phase 2 dates and LG11 siting dispute remain published as source conflicts.
-Final opening, accessibility inventory, timetable, ridership, final Phase 2 programme and a unified progress denominator remain TBC.
-The requested “Sanmin Line” produced a 500+ word checked-and-failed page; no verified New Taipei project record uses 三民線.
-Official 三鶯線 and 民生汐止線 are kept separate; no alias or route data was invented.
-Sanmin gates are clean: research/cite/conflicts, claims 0 ASSERTED, build 2,590 pages, facts 17/17, unit tests 231/231, links 431,724 clean.
-Actions run 389 exposed a real postbuild failure: the generated changelog used 汐止 absent from the committed base Han subset.
-The fresh-build → `npm run fonts` → rebuild sequence passes all 2,748 glyph checks; only the base font files/manifest changed.
-Generated claims JSON was restored and `probes/` remains untracked. Next: commit/push this font correction, confirm CI/Pages, then research Minsheng–Xizhi.
+Run 162 adds Alishan Forest Railway: 16 current main-line stops, four named forest-park points, three scheduled branches and closed Mianyue kept separate.
+System, line and station pages are 834/886/767 body words; grouped fleet data is used because primary sources do not support reliable individual-set stubs.
+Primary evidence covers 762 mm gauge, 1912 opening, spiral/U/Z engineering, Shay and diesel records, No. 42 reconstruction and the 2024 reopening.
+Published conflicts remain: approximately 72/71.6/71.34 km, different station inventories, 29 December 2023 construction completion versus 6 July 2024 passenger reopening, and Shay roster scope.
+TBC: individual depot allocation, ridership, complete Mianyue station list, all-stop accessibility, and full TDX/GTFS coordinate coverage.
+The Chinese No. 108 Shay page failed with an internal error/timeout; its official English mirror was fetched and used, with the failure recorded.
+Gates are clean: cite, research, claims 0 ASSERTED, build 2,597/2,758 glyph checks, unit 234/234, facts 17/17, links 438,390, a11y 1,861.
+Browser verification is clean: 320/640 reflow, keyboard/ARIA, zero axe violations across 1,860 pages, 722 screenshots and 103 print PDFs; Alishan renders were inspected at 320/375/1440.
+Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains untracked. Next: commit/push Run 162, check Actions once, then continue Minsheng–Xizhi.

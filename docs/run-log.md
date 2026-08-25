@@ -17624,3 +17624,76 @@ checks; the base subset grew by exactly two characters and no checker was
 weakened or skipped. The generated audit JSONs remain restored and `probes/`
 remains unstaged. The font correction is pushed separately and awaits Actions
 run 390 before the next research unit starts.
+
+# Run 162 - Alishan Forest Railway (25 August 2026)
+
+## Sourced
+
+Added a normalized Alishan Forest Railway data layer under
+`data/forest/alishan/`: 20 named current operator points, comprising the 16-stop
+main-line timetable plus Shenmu, Zhaoping, Duigaoyue and Zhushan; Duigaoyue is
+explicitly `passenger-stop-tbc`, while the three other branches are scheduled.
+Mianyue is a separate closed 9.2 km historical line. The station and line
+records retain chainage, elevation, service state and line membership, and the
+rolling-stock snapshot uses grouped diesel and Shay records because the fetched
+operator sources do not provide a complete unit-by-unit depot roster.
+
+Added the Alishan system index, line page and station-inventory page. Body word
+counts are 834, 886 and 767 respectively. The primary source set includes the
+operator overview and timetables (`https://afrch.forest.gov.tw/`,
+`https://afrch.forest.gov.tw/0000115`, `https://afrch.forest.gov.tw/0000300`),
+operator technology and rolling-stock pages (`https://afrch.forest.gov.tw/0000524`,
+`https://afrch.forest.gov.tw/0000107`, `https://afrch.forest.gov.tw/0000106`,
+`https://afrch.forest.gov.tw/EN/0000108`), the Forestry and Nature Conservation
+Agency reopening notice (`https://www.forest.gov.tw/news/0073945`), the No. 42
+tunnel record (`https://afrch.forest.gov.tw/AllNews/0073708`), the government
+chronology (`https://recreation.forest.gov.tw/Forestry/FR?typ=11&typ_id=0900041`),
+the typhoon resumption notice (`https://afrch.forest.gov.tw/AllNews/0074597`)
+and the Ministry of Culture potential-site page
+(`https://twh.boch.gov.tw/taiwan/intro.aspx?id=7&lang=zh_tw`).
+
+Gates: cite 7,079 citations resolved and clean; research 143 files/601 checked
+failures and clean; claims 20,643 sourced/4,469 TBC/0 ASSERTED; build generated
+2,597 pages and postbuild checked 2,758 pages with no missing glyphs; unit tests
+234/234; facts 17/17; a11y 1,861 pages with no errors or warnings; internal-link
+check 438,390 links with no breaks, fragments or orphans. Browser verification
+passed reflow at 320/640, painted-box, keyboard and ARIA probes, axe with zero
+violations across 1,860 pages, 722 screenshots and 103 print PDFs. The new
+system, line and station pages were visually inspected at narrow and desktop
+widths. Generated verification JSONs, screenshots and PDFs were restored and
+are not part of the commit.
+
+## TBC
+
+No fetched primary source supplies unit-by-unit current train allocation or
+depot assignment, ridership, complete historical Mianyue station inventory,
+TDX/GTFS coordinates for every forest-railway point, or a uniform accessibility
+record covering every stop. The checked source families were the operator's
+overview, FAQ, timetables, mileage, station, technology and vehicle pages; the
+Forestry and Nature Conservation Agency; the government recreation chronology;
+and the Ministry of Culture heritage record. The Chinese No. 108 Shay page
+timed out/returned a 400 during the check, so the official English mirror is
+used for the No. 25 and No. 31 conversion record.
+
+## Contradicted the corpus
+
+No existing Alishan corpus assertion was contradicted: there was no prior
+Alishan page to promote. The new report explicitly marks the unverified
+historical Mianyue station list and the all-stop accessibility inventory as
+gaps instead of filling them from secondary summaries.
+
+## Conflicts found
+
+The operator technology page says approximately 72 km, the current station
+overview publishes 71.6 km to Alishan, and the Ministry of Culture potential
+site uses 71.34 km for its cultural-landscape scope. The current timetable/FAQ
+lists 16 main-line stations including Luma Chan; the operator overview adds
+four forest-park points, with only three established as scheduled branch
+services; the heritage page uses a different older list of 16; and the 2016
+operation-mileage matrix omits Luma Chan and branch points. The government
+chronology records 29 December 2023 for last-mile construction completion,
+while the Forestry and Nature Conservation Agency records 6 July 2024 for
+scheduled full-line passenger reopening. Nos. 25/31 are described as repaired
+and running after conversion, while No. 26 is recorded as static display.
+Every value remains published with its apparent measurement or roster scope;
+none was averaged or selected.
