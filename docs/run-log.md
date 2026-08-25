@@ -17909,3 +17909,75 @@ service and its permanent operating area began 5 September 2018; R24 opened
 1 September 2024. Finally, KRTC describes a 36-year concession while MTBU
 breaks it into six years of construction plus 30 years of operation; those
 are retained as different milestone framings.
+
+# Run 166 - Kaohsiung Orange Line (25 August 2026)
+
+## Sourced
+
+Expanded `content/rail/krtc/lines/orange-line.md` to 1,276 body words and
+added the primary-led record at `docs/research/rail/lines/orange-line.md`.
+The page establishes the joint Red/Orange private-participation origin, the
+ROC80 approval and ROC97 completion boundary, KRTC's exact Orange opening on
+14 September 2008, the current O1–OT1 station sequence from TDX, Daliao's
+54-hectare depot/land-development role, the published engineering split, and
+KRTC's current service pattern. TDX route and timetable records:
+`https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/KRTC?%24format=JSON&%24top=1000&%24skip=0`,
+`https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/StationOfRoute/KRTC?%24format=JSON&%24top=1000&%24skip=0`,
+and `https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/FirstLastTimetable/KRTC?%24format=JSON&%24top=1000&%24skip=0`.
+
+Full primary HTML pages fetched: KRTC's company-origin record
+(`https://corp.krtc.com.tw/About/page?id=6df67da0dd21469da80e9528f32d7057`),
+MTBU's long-term network history
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN01.html`),
+KRTC's 15th-anniversary chronology
+(`https://www.krtc.com.tw/Information/news_more?id=1b8bdb412efe4f489271bd368efdd22d`),
+the service-hours and Red/Orange FAQ pages, Daliao land-development page
+(`https://corp.krtc.com.tw/Business/land_development_more?id=278b8920c45c4ac78f3e010646cf4f4f`),
+MTBU's systems FAQ and roadmap. Full primary PDFs include MTBU's 104 BOT
+report (`https://mtbu.kcg.gov.tw/FileContent/GetDownloadFile?fileCaption=104%E5%B9%B47%E6%9C%88-%E9%AB%98%E9%9B%84%E5%B8%82%E5%A4%A7%E7%9C%BE%E6%8D%B7%E9%81%8B%E7%B3%BB%E7%B5%B1%E7%B4%85%E6%A9%98%E7%B7%9A%E8%B7%AF%E7%B6%B2%E6%B0%B8%E7%BA%8C%E7%B6%93%E7%87%9F%EF%BC%8D%E4%BB%A5%E6%94%BF%E5%BA%9C%E5%8D%94%E5%8A%A9%E5%9C%B0%E9%96%8B%E7%99%BC%E7%B8%BE%E6%95%88%E7%82%BA%E4%BE%8B&fileDictionary=FileUpload&fileFormat=.pdf&fileId=4d9f212a-630a-4860-9a55-24d1f0c75b87&fileName=20200312203849553.pdf`),
+the 109-year yearbook, the service-indicator PDF, and the 108/112 engineering
+summaries; their exact URLs are recorded in the content and research files.
+
+Gates: cite 7,122 clean; research 147 files/616 checked failures clean;
+claims 20,693 sourced/4,471 TBC/0 ASSERTED; build 2,599 static routes and
+2,760 Han-subset checks clean after refreshing the content subset; unit
+234/234; check 440,518 internal links with no broken links; a11y, facts,
+geometry and links audit clean. Browser verification found zero axe violations
+across 1,861 pages, clean 320/640 reflow and keyboard/tree checks, 736
+screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
+1440 px. Generated audit JSONs, screenshots and PDFs were restored;
+`probes/` remains untracked.
+
+## TBC
+
+The searched KRTC corporate, station-guide, FAQ, depot and service-history
+pages; MTBU completed-route, long-term-network, engineering, annual-report,
+service-indicator, BOT, roadmap and systems records; and TDX route/station/
+timetable records do not establish the original signalling supplier or
+generation, traction voltage/substations, design capacity, a station-by-
+station first/last synthesis, platform-door retrofit history, full
+accessibility inventory or Orange-only monthly ridership. A plus-sign title
+variant of the MTBU 109-year report returned Internal Error on full fetch; it
+was not used. These gaps remain TBC pending procurement and technical archives,
+MOTC ridership tables and station facility records.
+
+## Contradicted the corpus
+
+No existing Orange assertion was contradicted. The existing KRTC line index,
+TDX station sequence and current route fields were treated as leads/current
+structured boundaries and checked against the fetched operator and government
+records. No Taipei Orange material was reused as evidence for Kaohsiung.
+
+## Conflicts found
+
+Route scope remains four published values: TDX 13.12 km; MTBU project summary
+14.4 km/14 stations; MTBU engineering table 0.408 km ground plus 12.858 km
+underground, or 13.266 km; and MTBU's expanded track accounting 13.548 km
+including depot-entry/turnout additions. Opening chronology is KRTC's exact
+14 September 2008, MTBU's ROC97 September table, and the MTBU 104 report's
+22 September 2008. Concession framing is KRTC's six-year construction plus
+36-year concession, MTBU's six years plus 30 years operation, and the 104
+report's 36-year superficies concession. Depot scope is three depots in the
+joint Red/Orange project summary, one Orange depot in the engineering tables,
+and Daliao's 54-hectare site split into about 36 hectares of maintenance and
+18 hectares of commercial-service area. All values remain published together.
