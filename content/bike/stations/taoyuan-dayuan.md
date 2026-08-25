@@ -1,7 +1,7 @@
 ---
 title: Taoyuan — Dayuan YouBike stations
 summary: Static YouBike station rows in Taoyuan's Dayuan group, with coordinates, capacity and confirmed nearby rail joins.
-updated: 2026-08-23
+updated: 2026-08-25
 aliases:
   - "YouBike2.0_Nangang Civil Activity Center(Dayuan)"
   - "YouBike2.0_南港市民活動中心"
@@ -30,7 +30,7 @@ sources:
     titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
     publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
     url: 'https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}'
-    accessed: 2026-08-23
+    accessed: 2026-08-25
     kind: primary
     lang: zh-Hant
     note: Supports the static station rows, bilingual names and addresses, coordinates, capacity and the city snapshot counts. It does not support live bike or dock availability.
@@ -48,14 +48,19 @@ sources:
 This page lists 1 static TDX station rows in Taoyuan's Dayuan group, with a published capacity total of 33 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations].
+## Snapshot detail
+
+The Taoyuan's Dayuan group section is a build-time view of 1 returned TDX Station/City records, not a live occupancy display [^tdx-bike-stations]. The normalized rows retain 1 English station names, 1 Traditional Chinese station names, and 1 valid coordinate pairs; the source response also supplies station identifiers, addresses, service type, capacity and source-update timestamps [^tdx-bike-stations].
+
+The published capacity values in this group range from 33 to 33 docks per row, with the total shown above calculated by summing the returned BikesCapacity fields [^tdx-bike-stations]. The observed ServiceType distribution is 2: 1, so a missing or null service value is not converted into an assumed operating category [^tdx-bike-stations].
+
+The TDX records used for this page carried UpdateTime value(s) 2026-08-25T23:37:06+08:00 [^tdx-bike-stations]. Those timestamps date the source response, while the page frontmatter records the retrieval date; neither timestamp is presented as a prediction of future station availability [^tdx-bike-stations].
+
+Representative rows in this group are station ID 500302021 (33 docks; YouBike2.0_南港市民活動中心) [^tdx-bike-stations]. They remain rows in a browse index because the source provides a compact identity, address, coordinate and capacity record; creating a separate article for every dock would repeat the same source fields without adding a sourced history or design record [^tdx-bike-stations].
+
+The nearby-rail column is conservative: 0 rows have a confirmed coordinate join in this group [^tdx-rail-stations]. A match is retained only when one nearest candidate is within 200 metres and not tied at the one-metre ambiguity threshold, and the calculation compares coordinates rather than station names [^tdx-rail-stations]. Current available bikes and return docks are deliberately outside this static page because TDX publishes those values through a separate availability feed [^tdx-bike-stations].
+
 
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |
 |---|---:|---|---|---|
 | YouBike2.0_Nangang Civil Activity Center(Dayuan) / YouBike2.0_南港市民活動中心 [^tdx-bike-stations] | 33 [^tdx-bike-stations] | 25.05059, 121.16966 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.05059&mlon=121.169662#map=19/25.05059/121.169662) | — |
-## Reading this city snapshot
-
-The committed TDX extract groups 1 static station row under the Dayuan district label and reports a combined published capacity of 33 docks.[^tdx-bike-stations] The station table preserves the row names, bilingual labels, addresses, coordinates and capacities returned by the city feed; it is a point-in-time data record rather than a live occupancy board.[^tdx-bike-stations] A capacity total is the sum of the published dock fields, not a count of bicycles currently available.
-
-The page's rail column is a separate nearest-coordinate join. This snapshot records 0 confirmed coordinate joins for the group.[^tdx-rail-stations] The join accepts a unique rail result within 200 metres and does not compare station names, so a zero is an evidence result rather than a claim that no rail service is nearby.[^tdx-rail-stations] A positive join likewise does not assert a fare integration, a same-building entrance or a signed cycle route.
-
-The static feed supports siting and capacity questions, including map links generated from the published coordinates.[^tdx-bike-stations] It does not publish the live number of bikes or empty docks used by a rider deciding whether to leave immediately; live availability remains TBC until a current availability feed is fetched and archived.[^tdx-bike-stations] The page therefore keeps the durable station identity separate from conditions that can change during a trip.

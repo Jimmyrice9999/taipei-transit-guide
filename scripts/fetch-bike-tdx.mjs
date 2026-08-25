@@ -1,4 +1,4 @@
-/** Fetch and normalize static TDX YouBike station data for three cities. */
+/** Fetch and normalize static TDX YouBike station data for five cities. */
 
 import fs from 'node:fs'
 import path from 'node:path'
@@ -14,6 +14,8 @@ const CITIES = [
   { name: 'Taipei', code: 'TPE' },
   { name: 'NewTaipei', code: 'NWT' },
   { name: 'Taoyuan', code: 'TAO' },
+  { name: 'Taichung', code: 'TXG' },
+  { name: 'Kaohsiung', code: 'KHH' },
 ]
 
 const DISTRICTS = {

@@ -1,7 +1,7 @@
 ---
 title: Taipei — Unclassified YouBike stations
 summary: Static YouBike station rows in Taipei's Unclassified group, with coordinates, capacity and confirmed nearby rail joins.
-updated: 2026-08-23
+updated: 2026-08-25
 aliases:
   - "YouBike2.0_2nd Student Activity Center"
   - "YouBike2.0_ADATA Technology"
@@ -3585,7 +3585,7 @@ facts:
     value: 1790
     source: tdx-bike-stations
   - label: Published dock capacity total
-    value: 50762
+    value: 50761
     source: tdx-bike-stations
   - label: Confirmed coordinate joins
     value: 208
@@ -3599,7 +3599,7 @@ sources:
     titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
     publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
     url: 'https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}'
-    accessed: 2026-08-23
+    accessed: 2026-08-25
     kind: primary
     lang: zh-Hant
     note: Supports the static station rows, bilingual names and addresses, coordinates, capacity and the city snapshot counts. It does not support live bike or dock availability.
@@ -3614,9 +3614,21 @@ sources:
     note: Supports the rail station coordinates, codes and bilingual names used for the nearest-coordinate join; the join does not compare station names.
 ---
 
-This page lists 1790 static TDX station rows in Taipei's Unclassified group, with a published capacity total of 50762 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
+This page lists 1790 static TDX station rows in Taipei's Unclassified group, with a published capacity total of 50761 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations]. The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].
+## Snapshot detail
+
+The Taipei's Unclassified group section is a build-time view of 1790 returned TDX Station/City records, not a live occupancy display [^tdx-bike-stations]. The normalized rows retain 1790 English station names, 1790 Traditional Chinese station names, and 1790 valid coordinate pairs; the source response also supplies station identifiers, addresses, service type, capacity and source-update timestamps [^tdx-bike-stations].
+
+The published capacity values in this group range from 5 to 99 docks per row, with the total shown above calculated by summing the returned BikesCapacity fields [^tdx-bike-stations]. The observed ServiceType distribution is 2: 1790, so a missing or null service value is not converted into an assumed operating category [^tdx-bike-stations].
+
+The TDX records used for this page carried UpdateTime value(s) 2026-08-25T23:37:06+08:00 [^tdx-bike-stations]. Those timestamps date the source response, while the page frontmatter records the retrieval date; neither timestamp is presented as a prediction of future station availability [^tdx-bike-stations].
+
+Representative rows in this group are station ID 500101023 (87 docks; YouBike2.0_第二學生活動中心), station ID 500111014 (54 docks; YouBike2.0_中研公園) and station ID 500111010 (30 docks; YouBike2.0_研究院舊莊街口) [^tdx-bike-stations]. They remain rows in a browse index because the source provides a compact identity, address, coordinate and capacity record; creating a separate article for every dock would repeat the same source fields without adding a sourced history or design record [^tdx-bike-stations].
+
+The nearby-rail column is conservative: 208 rows have a confirmed coordinate join in this group [^tdx-rail-stations]. A match is retained only when one nearest candidate is within 200 metres and not tied at the one-metre ambiguity threshold, and the calculation compares coordinates rather than station names [^tdx-rail-stations]. Current available bikes and return docks are deliberately outside this static page because TDX publishes those values through a separate availability feed [^tdx-bike-stations].
+
 
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |
 |---|---:|---|---|---|
@@ -3672,7 +3684,7 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 | YouBike2.0_Aly. 9, Ln. 493, Zhonghe St. / YouBike2.0_中和街493巷9弄口 [^tdx-bike-stations] | 16 [^tdx-bike-stations] | 25.14390, 121.49447 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.1439&mlon=121.49447#map=19/25.1439/121.49447) | — |
 | YouBike2.0_Aly. 9, Ln. 87, TianMu N. Rd. / YouBike2.0_天母北路87巷9弄 [^tdx-bike-stations] | 20 [^tdx-bike-stations] | 25.12207, 121.52731 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.12207&mlon=121.52731#map=19/25.12207/121.52731) | — |
 | YouBike2.0_Aly. 93, Ln. 189, Sec. 3, Kangning Rd. / YouBike2.0_康寧路三段189巷93弄口 [^tdx-bike-stations] | 25 [^tdx-bike-stations] | 25.07350, 121.61258 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.0735&mlon=121.61258#map=19/25.0735/121.61258) | — |
-| YouBike2.0_Aly. 95, Ln. 113, Donghu Rd / YouBike2.0_東湖路113巷95弄 [^tdx-bike-stations] | 17 [^tdx-bike-stations] | 25.07232, 121.61491 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.07232&mlon=121.61491#map=19/25.07232/121.61491) | — |
+| YouBike2.0_Aly. 95, Ln. 113, Donghu Rd / YouBike2.0_東湖路113巷95弄 [^tdx-bike-stations] | 17 [^tdx-bike-stations] | 25.07215, 121.61505 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.072153981463313&mlon=121.61505008806692#map=19/25.072153981463313/121.61505008806692) | — |
 | YouBike2.0_Anhu No.3 Park / YouBike2.0_安湖三號公園 [^tdx-bike-stations] | 16 [^tdx-bike-stations] | 25.07021, 121.61593 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.07021&mlon=121.61593#map=19/25.07021/121.61593) | — |
 | YouBike2.0_Anhu Park / YouBike2.0_安湖公園 [^tdx-bike-stations] | 15 [^tdx-bike-stations] | 25.07392, 121.61545 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.07392&mlon=121.61545#map=19/25.07392/121.61545) | — |
 | YouBike2.0_Ankang Park / YouBike2.0_安康公園 [^tdx-bike-stations] | 25 [^tdx-bike-stations] | 25.06657, 121.61360 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.06657&mlon=121.6136#map=19/25.06657/121.6136) | — |
@@ -4253,7 +4265,7 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 | YouBike2.0_Ln. 22, Xianyan Rd. / YouBike2.0_仙岩路22巷口 [^tdx-bike-stations] | 28 [^tdx-bike-stations] | 24.99892, 121.54887 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.99892&mlon=121.54887#map=19/24.99892/121.54887) | — |
 | YouBike2.0_Ln. 220, Sec. 3, Nangang Rd. Intersection / YouBike2.0_南港路三段220巷口 [^tdx-bike-stations] | 25 [^tdx-bike-stations] | 25.05289, 121.58599 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.05289&mlon=121.58599#map=19/25.05289/121.58599) | — |
 | YouBike2.0_Ln. 220, WenDe Rd. / YouBike2.0_文德路220巷口 [^tdx-bike-stations] | 20 [^tdx-bike-stations] | 25.07862, 121.58796 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.07862&mlon=121.58796#map=19/25.07862/121.58796) | — |
-| YouBike2.0_Ln. 223, JingFu St. / YouBike2.0_景福街223巷 [^tdx-bike-stations] | 18 [^tdx-bike-stations] | 24.99442, 121.53844 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.99442&mlon=121.53844#map=19/24.99442/121.53844) | — |
+| YouBike2.0_Ln. 223, JingFu St. / YouBike2.0_景福街223巷 [^tdx-bike-stations] | 17 [^tdx-bike-stations] | 24.99442, 121.53844 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=24.99442&mlon=121.53844#map=19/24.99442/121.53844) | — |
 | YouBike2.0_Ln. 223, Sec. 4, Zhongxiao E. Rd. Intersection / YouBike2.0_忠孝東路四段223巷口(市民大道側) [^tdx-bike-stations] | 49 [^tdx-bike-stations] | 25.04427, 121.55291 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.04427&mlon=121.55291#map=19/25.04427/121.55291) | — |
 | YouBike2.0_Ln. 225, JianKang Rd. / YouBike2.0_健康路225巷口 [^tdx-bike-stations] | 26 [^tdx-bike-stations] | 25.05415, 121.56263 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.05415&mlon=121.56263#map=19/25.05415/121.56263) | — |
 | YouBike2.0_Ln. 225, Sec. 6, Zhongxiao E. Rd Intersection / YouBike2.0_忠孝東路六段225巷口 [^tdx-bike-stations] | 35 [^tdx-bike-stations] | 25.04919, 121.58832 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.04919&mlon=121.58832#map=19/25.04919/121.58832) | — |

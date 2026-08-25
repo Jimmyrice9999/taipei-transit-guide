@@ -6,7 +6,7 @@ aliases:
   - 微笑單車
   - YouBike 2.0
   - YouBike 1.0
-updated: 2026-08-23
+updated: 2026-08-25
 hero:
   image: youbike/dock
   alt: A row of orange YouBike bicycles docked one-per-post beneath an elevated MRT viaduct at Xindian Station.
@@ -82,6 +82,30 @@ specs:
   - label: Three-city static station rows (23 Aug 2026)
     value: "4,086"
     source: tdx-bike-stations
+  - label: Taipei static station rows (25 Aug 2026)
+    value: "1,794"
+    source: tdx-bike-stations-current
+  - label: Taipei published dock capacity (25 Aug 2026)
+    value: "50,876"
+    source: tdx-bike-stations-current
+  - label: Taichung static station rows (25 Aug 2026)
+    value: "1,817"
+    source: tdx-bike-stations-current
+  - label: Taichung published dock capacity (25 Aug 2026)
+    value: "38,746"
+    source: tdx-bike-stations-current
+  - label: Kaohsiung static station rows (25 Aug 2026)
+    value: "1,500"
+    source: tdx-bike-stations-current
+  - label: Kaohsiung published dock capacity (25 Aug 2026)
+    value: "30,382"
+    source: tdx-bike-stations-current
+  - label: Five-city static station rows (25 Aug 2026)
+    value: "7,403"
+    source: tdx-bike-stations-current
+  - label: Five-city published dock capacity (25 Aug 2026)
+    value: "192,573"
+    source: tdx-bike-stations-current
 sources:
   - id: ntbike-milestones
     title: "YouBike — About YouBike — Milestones"
@@ -272,6 +296,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Build-time pull of the static station feed for Taipei, New Taipei and Taoyuan. Supports the dated station-row counts, published BikesCapacity totals and the fact that live availability is a separate feed."
+  - id: tdx-bike-stations-current
+    title: TDX Bike Station City pull — five-city snapshot
+    titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
+    publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
+    url: https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: "Build-time pull of the static Station/City feed for Taipei, New Taipei, Taoyuan, Taichung and Kaohsiung. Supports the 25 August 2026 row and BikesCapacity totals, source-update timestamps and the fact that live availability is a separate feed."
+  - id: taichung-youbike-open-data
+    title: Taichung City Public Bicycle (YouBike2.0) Rental Station and Real-time Parking Space Data
+    titleOriginal: 臺中市公共自行車(YouBike2.0)租借站&即時車位資料
+    publisher: Taichung City Government Transportation Bureau / 臺中市政府交通局
+    url: https://opendata.taichung.gov.tw/search/6e38eb56-0e9a-4b9e-806d-23cd35d44d6b
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: "The municipal open-data catalogue identifies the dataset as current Taichung YouBike2.0 station and live-parking data, with a ten-minute update frequency, station/address/coordinate/capacity fields and a citywide spatial scope."
+  - id: kaohsiung-youbike-open-data
+    title: Kaohsiung YouBike2.0 Public Bicycle Rental Station Real-time Information
+    titleOriginal: 高雄YouBike2.0公共自行車租賃站即時資訊
+    publisher: Kaohsiung City Government Transportation Bureau / 高雄市政府交通局
+    url: https://data.gov.tw/dataset/173477
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: "The national open-data catalogue identifies Kaohsiung's station/live-information dataset, lists district, address, station code, capacity, coordinates and operational-state fields, and states that it is provided by the Kaohsiung Transportation Bureau."
 ---
 
 "The first thirty minutes are free if you are transferring from the metro"
@@ -429,18 +480,49 @@ this dated build snapshot[^tdx-bike-stations]. An earlier direct check recorded
 total; that is a dated retrieval conflict, not a reason to average the values
 [^tdx-bike-stations].
 
+The 25 August 2026 pull extends the committed layer to Taichung and Kaohsiung:
+Taichung contributes 1,817 rows and 38,746 published docks, while Kaohsiung
+contributes 1,500 rows and 30,382 published docks[^tdx-bike-stations-current].
+Together with the three earlier municipalities, the current five-city pull
+contains 7,403 rows and 192,573 published docks[^tdx-bike-stations-current].
+The three existing row counts are unchanged between the dated pulls, but
+Taipei's published capacity is 50,876 in the current pull rather than 50,877
+on 23 August; both values remain published because they are separate live
+retrievals[^tdx-bike-stations][^tdx-bike-stations-current].
+
+Taichung's municipal open-data catalogue separately describes a citywide
+YouBike2.0 station and live-parking dataset with a ten-minute update frequency
+and station, address, coordinate and capacity fields[^taichung-youbike-open-data].
+Kaohsiung's catalogue likewise identifies a YouBike2.0 station/live-information
+dataset supplied by the city Transportation Bureau, including district,
+address, station-code, capacity, coordinate and operating-state fields
+[^kaohsiung-youbike-open-data]. These catalogue records corroborate the
+operator/data-publication scope, while the committed static counts above come
+from the dated TDX Station/City pull[^tdx-bike-stations-current].
+
 The TDX Station/City records supply names, addresses, coordinates and
 published capacity, while current available bikes and return docks belong to a
 separate live availability feed and are not treated as static page facts
-[^tdx-bike-stations]. This first layer covers Taipei, New Taipei and Taoyuan;
-other TPASS-zone municipalities remain outside the committed pull
-[^tdx-bike-stations].
+[^tdx-bike-stations-current]. Taichung and Kaohsiung rows with no usable
+district value remain explicitly unclassified; no district is inferred from a
+station name or address[^tdx-bike-stations-current].
 
 The 1,633 Taipei stations reported by the transport department on 14 August
 2025 remain a separate dated official figure[^dot-400m]. It measures a
 different time and publication scope from the 1,794-row TDX snapshot and is
 kept as a conflict rather than rewritten as a growth rate[^dot-400m]
 [^tdx-bike-stations].
+
+## Conflicts in the static station snapshot
+
+The 23 August TDX snapshot records 4,086 rows across Taipei, New Taipei and
+Taoyuan, including 50,877 Taipei docks[^tdx-bike-stations]. The 25 August
+snapshot records 7,403 rows across five municipalities, including 50,876
+Taipei docks[^tdx-bike-stations-current]. These are different retrievals of a
+live-maintained feed: the later value adds Taichung and Kaohsiung and changes
+Taipei's returned capacity by one, so both values are published rather than
+averaged or selected as a definitive total[^tdx-bike-stations]
+[^tdx-bike-stations-current].
 
 ## Open evidence
 

@@ -17948,6 +17948,55 @@ screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
 
+# Run 172 - YouBike Taichung and Kaohsiung static layer (25 August 2026)
+
+## Sourced
+
+Extended the build-time TDX Bike/Station/City data layer and generated browse
+indexes for Taichung and Kaohsiung without creating individual station stubs.
+The 25 August pull contains Taipei 1,794 rows / 50,876 docks, New Taipei
+1,593 / 48,355, Taoyuan 699 / 24,214, Taichung 1,817 / 38,746 and Kaohsiung
+1,500 / 30,382: 7,403 rows and 192,573 published docks total. The source
+endpoint is https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}.
+The Taichung municipal catalogue
+(https://opendata.taichung.gov.tw/search/6e38eb56-0e9a-4b9e-806d-23cd35d44d6b)
+and Kaohsiung national catalogue (https://data.gov.tw/dataset/173477) were
+fetched in full and confirm each city's separate live station/availability
+publication. Generated indexes keep Taichung's and Kaohsiung's rows explicitly
+Unclassified because TDX exposed no usable district field. Updated
+docs/youbike-architecture.md, docs/research/bike/youbike.md,
+content/bike/history/youbike.md and the browser harness with the new scope.
+
+## TBC
+
+Live bike/return-dock availability is intentionally not committed as static
+content. District assignment for the new city rows remains TBC rather than
+being inferred from address strings. The operator's regional YouBike pages
+were rejected by the web fetcher as unsafe URLs; municipal catalogues and TDX
+were used instead.
+
+## Contradicted the corpus
+
+The previous architecture record stated that the committed layer covered only
+Taipei, New Taipei and Taoyuan. It is now superseded by the five-city layer;
+the earlier dated three-city snapshots remain published as retrieval conflicts.
+
+## Conflicts found
+
+The 23 August snapshot contained 4,086 three-city rows and 50,877 Taipei docks;
+the 25 August snapshot contains 7,403 five-city rows and 50,876 Taipei docks.
+These are separate live-feed retrievals, not values to average. The 2025 DOT
+figure of 1,633 Taipei stations remains a separate dated publication scope.
+
+Gates: cite 7,219 resolved clean; research 152 files/642 checked failures
+clean; claims 24,316 sourced/4,487 TBC/0 ASSERTED; build 2,770 pages and
+2,770 Han-subset checks clean; unit 234/234; check 442,769 internal links;
+a11y 1,872 pages with no errors or warnings; facts, geometry and fonts clean.
+Browser verification was clean: no reflow overflow, zero axe violations across
+1,871 pages, new bike types passed keyboard/tree checks, 785 screenshots and
+107 print PDFs. New pages were inspected at 320 and 1440 px. Generated audits,
+screenshots and PDFs were restored; `probes/` remains untracked.
+
 # Run 171 - Kaohsiung regional bus layer (25 August 2026)
 
 ## Sourced

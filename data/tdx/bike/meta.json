@@ -1,5 +1,22 @@
 {
   "cities": {
+    "Kaohsiung": {
+      "code": "KHH",
+      "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Kaohsiung",
+      "fields": [
+        "AuthorityID",
+        "BikesCapacity",
+        "ServiceType",
+        "SrcUpdateTime",
+        "StationAddress",
+        "StationID",
+        "StationName",
+        "StationPosition",
+        "StationUID",
+        "UpdateTime"
+      ],
+      "records": 1500
+    },
     "NewTaipei": {
       "code": "NWT",
       "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/NewTaipei",
@@ -16,6 +33,23 @@
         "UpdateTime"
       ],
       "records": 1593
+    },
+    "Taichung": {
+      "code": "TXG",
+      "endpoint": "https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/Taichung",
+      "fields": [
+        "AuthorityID",
+        "BikesCapacity",
+        "ServiceType",
+        "SrcUpdateTime",
+        "StationAddress",
+        "StationID",
+        "StationName",
+        "StationPosition",
+        "StationUID",
+        "UpdateTime"
+      ],
+      "records": 1817
     },
     "Taipei": {
       "code": "TPE",
@@ -56,8 +90,8 @@
   "excluded": {
     "availability": "GET /api/basic/v2/Bike/Availability/City/{City} is live dock occupancy and is intentionally not committed as static page content."
   },
-  "fetchedAt": "2026-08-22T16:29:32.329Z",
+  "fetchedAt": "2026-08-25T15:37:12.538Z",
   "source": "Taiwan MOTC TDX (Transport Data eXchange)",
   "sourceUrl": "https://tdx.transportdata.tw/",
-  "totalStations": 4086
+  "totalStations": 7403
 }

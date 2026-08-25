@@ -4,7 +4,7 @@
 Nothing here is citable until it has been checked against a primary source —
 see `.claude/skills/transit-research/SKILL.md`.**
 
-**Version 2.0 — 12 August 2026.**
+**Version 2.1 — 25 August 2026.**
 **Status: verified against primary sources this run. Supersedes the version
 headed "Not published. Verify before promoting to content." (6 August 2026).**
 That earlier version is preserved in git history; this file replaces it as the
@@ -296,6 +296,51 @@ sources on both ends:
   trial and 2.0. This was not independently verified against a primary
   Microprogram or city source this run. Confidence: Low.
 
+### Current five-city static station layer
+
+- **TDX publishes a static Bike/Station/City feed for Taichung and Kaohsiung
+  with the same structured fields used for the existing Taipei-region pull.**
+  A direct authenticated pull on 25 August 2026 returned 1,817 Taichung rows
+  and 1,500 Kaohsiung rows. The normalized records contain StationUID,
+  StationID, StationName, StationAddress, StationPosition, BikesCapacity,
+  ServiceType, SrcUpdateTime and UpdateTime. Confidence: High (MOTC TDX
+  primary data, fetched directly; the response's original field names are the
+  evidence rather than a search snippet). The observed TDX UpdateTime values
+  were 2026-08-25T23:37:06+08:00 for Taichung's first page and
+  2026-08-25T23:38:06+08:00 for the later Taichung and Kaohsiung pages.
+  Source URL: `https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}`.
+- **The 25 August five-city build contains 7,403 static rows and 192,573
+  published docks.** By city: Taipei 1,794 / 50,876; New Taipei 1,593 /
+  48,355; Taoyuan 699 / 24,214; Taichung 1,817 / 38,746; Kaohsiung 1,500 /
+  30,382. Confidence: High for the retrieved snapshot (TDX primary; sums
+  calculated from the returned `BikesCapacity` fields). The current pull
+  produced 364 unique nearest-coordinate joins to the Taipei-region rail
+  registry; Taichung and Kaohsiung received none because that registry's
+  candidate systems are Taipei Metro, New Taipei Circular/Danhai/Ankeng and
+  Taoyuan Airport MRT, not a claim that those cities lack rail interchanges.
+- **Taichung's municipal open-data catalogue publishes a citywide YouBike2.0
+  station and live-parking dataset, updated every ten minutes, with station,
+  address, coordinate and capacity fields.** Source: 臺中市公共自行車
+  (YouBike2.0)租借站&即時車位資料, 臺中市政府交通局, primary,
+  `https://opendata.taichung.gov.tw/search/6e38eb56-0e9a-4b9e-806d-23cd35d44d6b`.
+  Original-language text: 「提供目前臺中市公共自行車(YouBike2.0)租借站點與即時車位資料」;
+  「更新頻率｜即時(每10分鐘)」. Confidence: High (municipal catalogue
+  page fetched in full on 25 August 2026).
+- **Kaohsiung's national open-data catalogue publishes a YouBike2.0 station
+  real-time information dataset supplied by the city Transportation Bureau.**
+  The page lists district, address, station code, total capacity, coordinates,
+  available-bike/return-bike and operating-state fields and says the data is
+  updated every ten minutes in its description. Source: 高雄YouBike2.0公共自行車
+  租賃站即時資訊, 高雄市政府交通局, primary,
+  `https://data.gov.tw/dataset/173477`. Original-language text: 「包含租賃站
+  場站名稱、行政區、地址、場站代號、總車位、可借車輛、場站資料修改時間、緯度、經度、可還車輛及營運狀態等資訊，資料每10分鐘更新一次」.
+  Confidence: High (catalogue page fetched in full on 25 August 2026).
+- **TDX did not expose a usable district field in the Taichung or Kaohsiung
+  Station/City records pulled on 25 August 2026.** All 1,817 Taichung rows and
+  all 1,500 Kaohsiung rows therefore remain in an explicit Unclassified group
+  in the generated indexes. Confidence: High for the data shape and grouping
+  decision; no district was inferred from address text or station name.
+
 ## Conflicts (summary — see full detail above)
 
 | Claim | Value A | Value B | What's measured |
@@ -305,6 +350,7 @@ sources on both ends:
 | Original 1.0 unit cost | NT$10,000 (existing lead file, unsourced) | NT$13,000 (zh.wikipedia, secondary, unattributed) | Neither independently confirmed; NT$41 recycling value (primary, confirmed) is a different measure entirely |
 | Free-30-min "start" | Lead file: transfer discount from April 2018 | This run: unconditional free 2009–2015, NT$5 flat 2015–2018/2024 depending on transfer, transfer-only discount 2018–2024, unconditional free again from 28 Feb 2024 | Lead file described one era as though it were the whole history |
 | Monthly subsidy saving from the April 2015 fee change | ≈NT$20M → NT$8M/month (storm.mg) | ≈NT$20M → NT$13M/month (The News Lens) | Same policy change, two secondary figures for the resulting saving |
+| Static TDX bike snapshot | 23 Aug: 4,086 Taipei/New Taipei/Taoyuan rows; Taipei capacity 50,877 | 25 Aug: 7,403 five-city rows; Taipei capacity 50,876 | Separate retrievals; the later pull adds Taichung and Kaohsiung and changes Taipei's returned capacity by one dock |
 
 ## Checked and failed
 
@@ -340,6 +386,10 @@ sources on both ends:
   listings (twincn.com, recruitment-site company pages) that was not opened
   and read in full. Flagged Low confidence above rather than treated as
   established.
+- **YouBike operator regional pages for Taichung and Kaohsiung.** Direct page
+  opens were rejected by the web fetcher as unsafe URLs on 25 August 2026, so
+  no operator-page assertion is published from them. The municipal open-data
+  catalogue pages and TDX primary feed were fetched and used instead.
 
 ## Stated gaps
 

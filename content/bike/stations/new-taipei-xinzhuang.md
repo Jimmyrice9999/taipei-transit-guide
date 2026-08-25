@@ -1,7 +1,7 @@
 ---
 title: New Taipei — Xinzhuang YouBike stations
 summary: Static YouBike station rows in New Taipei's Xinzhuang group, with coordinates, capacity and confirmed nearby rail joins.
-updated: 2026-08-23
+updated: 2026-08-25
 aliases:
   - "YouBike2.0_Changlong Elementary School"
   - "YouBike2.0_Litai Village(Zhonghuan Rd. Sec. 2)"
@@ -38,7 +38,7 @@ sources:
     titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
     publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
     url: 'https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}'
-    accessed: 2026-08-23
+    accessed: 2026-08-25
     kind: primary
     lang: zh-Hant
     note: Supports the static station rows, bilingual names and addresses, coordinates, capacity and the city snapshot counts. It does not support live bike or dock availability.
@@ -56,6 +56,18 @@ sources:
 This page lists 5 static TDX station rows in New Taipei's Xinzhuang group, with a published capacity total of 193 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations].
+## Snapshot detail
+
+The New Taipei's Xinzhuang group section is a build-time view of 5 returned TDX Station/City records, not a live occupancy display [^tdx-bike-stations]. The normalized rows retain 5 English station names, 5 Traditional Chinese station names, and 5 valid coordinate pairs; the source response also supplies station identifiers, addresses, service type, capacity and source-update timestamps [^tdx-bike-stations].
+
+The published capacity values in this group range from 12 to 70 docks per row, with the total shown above calculated by summing the returned BikesCapacity fields [^tdx-bike-stations]. The observed ServiceType distribution is 2: 5, so a missing or null service value is not converted into an assumed operating category [^tdx-bike-stations].
+
+The TDX records used for this page carried UpdateTime value(s) 2026-08-25T23:37:06+08:00 [^tdx-bike-stations]. Those timestamps date the source response, while the page frontmatter records the retrieval date; neither timestamp is presented as a prediction of future station availability [^tdx-bike-stations].
+
+Representative rows in this group are station ID 500229038 (46 docks; YouBike2.0_昌隆國小), station ID 500229036 (25 docks; YouBike2.0_立泰里(中環路二段)) and station ID 500229015 (70 docks; YouBike2.0_捷運新北產業園區站) [^tdx-bike-stations]. They remain rows in a browse index because the source provides a compact identity, address, coordinate and capacity record; creating a separate article for every dock would repeat the same source fields without adding a sourced history or design record [^tdx-bike-stations].
+
+The nearby-rail column is conservative: 1 rows have a confirmed coordinate join in this group [^tdx-rail-stations]. A match is retained only when one nearest candidate is within 200 metres and not tied at the one-metre ambiguity threshold, and the calculation compares coordinates rather than station names [^tdx-rail-stations]. Current available bikes and return docks are deliberately outside this static page because TDX publishes those values through a separate availability feed [^tdx-bike-stations].
+
 
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |
 |---|---:|---|---|---|
@@ -64,10 +76,3 @@ The rail column is a nearest-coordinate join against the committed TDX rail stat
 | YouBike2.0_MRT New Taipei Industrial Park Sta. / YouBike2.0_捷運新北產業園區站 [^tdx-bike-stations] | 70 [^tdx-bike-stations] | 25.06203, 121.45918 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.06203&mlon=121.45918#map=19/25.06203/121.45918) | [New Taipei Industrial Park Station / 新北產業園區站](/rail/metro/stations/a3/) (36 m) [^tdx-rail-stations] |
 | YouBike2.0_New Taipei City Xinzhuang Civil Sports Center (Hexing St.) / YouBike2.0_新莊國民運動中心(和興街) [^tdx-bike-stations] | 12 [^tdx-bike-stations] | 25.03891, 121.44759 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.03891&mlon=121.44759#map=19/25.03891/121.44759) | — |
 | YouBike2.0_Yijibang / YouBike2.0_伊吉邦社區 [^tdx-bike-stations] | 40 [^tdx-bike-stations] | 25.03019, 121.41340 [^tdx-bike-stations] | [Map](https://www.openstreetmap.org/?mlat=25.03019&mlon=121.4134#map=19/25.03019/121.4134) | — |
-## Reading this city snapshot
-
-The committed TDX extract groups 5 static station rows under the Xinzhuang district label and reports a combined published capacity of 193 docks.[^tdx-bike-stations] The station table preserves the row names, bilingual labels, addresses, coordinates and capacities returned by the city feed; it is a point-in-time data record rather than a live occupancy board.[^tdx-bike-stations] A capacity total is the sum of the published dock fields, not a count of bicycles currently available.
-
-The page's rail column is a separate nearest-coordinate join. This snapshot records 1 confirmed coordinate join for the group.[^tdx-rail-stations] The join accepts a unique rail result within 200 metres and does not compare station names, so a zero is an evidence result rather than a claim that no rail service is nearby.[^tdx-rail-stations] A positive join likewise does not assert a fare integration, a same-building entrance or a signed cycle route.
-
-The static feed supports siting and capacity questions, including map links generated from the published coordinates.[^tdx-bike-stations] It does not publish the live number of bikes or empty docks used by a rider deciding whether to leave immediately; live availability remains TBC until a current availability feed is fetched and archived.[^tdx-bike-stations] The page therefore keeps the durable station identity separate from conditions that can change during a trip.

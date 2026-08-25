@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const DATA = path.join(ROOT, 'data', 'tdx', 'bike')
 const OUT = path.join(ROOT, 'content', 'bike', 'stations')
+const SNAPSHOT_DATE = '2026-08-25'
 const RAIL_FILES = [
   ['TRTC', 'Taipei Metro', 'TRTC'],
   ['NTMC', 'New Taipei Circular Line', 'NTMC'],
@@ -19,6 +20,8 @@ const CITIES = {
   TPE: { name: 'Taipei', slug: 'taipei', endpoint: 'Taipei' },
   NWT: { name: 'New Taipei', slug: 'new-taipei', endpoint: 'NewTaipei' },
   TAO: { name: 'Taoyuan', slug: 'taoyuan', endpoint: 'Taoyuan' },
+  TXG: { name: 'Taichung', slug: 'taichung', endpoint: 'Taichung' },
+  KHH: { name: 'Kaohsiung', slug: 'kaohsiung', endpoint: 'Kaohsiung' },
 }
 
 const DISTRICTS = {
@@ -49,7 +52,7 @@ const sourceBlock = `sources:
     titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
     publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
     url: 'https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}'
-    accessed: 2026-08-23
+    accessed: ${SNAPSHOT_DATE}
     kind: primary
     lang: zh-Hant
     note: Supports the static station rows, bilingual names and addresses, coordinates, capacity and the city snapshot counts. It does not support live bike or dock availability.
@@ -73,6 +76,53 @@ const stable = (value) => Array.isArray(value)
 const slugify = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 const escapeCell = (value) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const number = (value) => Number.isFinite(Number(value)) ? Number(value) : null
+const list = (values) => values.length > 1
+  ? `${values.slice(0, -1).join(', ')} and ${values.at(-1)}`
+  : values[0] || 'none'
+
+function stats(stations) {
+  const capacities = stations.map((station) => station.capacity).filter((value) => Number.isFinite(value))
+  const services = new Map()
+  for (const station of stations) {
+    const key = station.serviceType === null ? 'not stated' : String(station.serviceType)
+    services.set(key, (services.get(key) || 0) + 1)
+  }
+  return {
+    englishNames: stations.filter((station) => station.names.en).length,
+    chineseNames: stations.filter((station) => station.names.zh_tw).length,
+    coordinates: stations.filter((station) => Number.isFinite(station.position.lat) && Number.isFinite(station.position.lon)).length,
+    minCapacity: capacities.length ? Math.min(...capacities) : 'TBC',
+    maxCapacity: capacities.length ? Math.max(...capacities) : 'TBC',
+    updates: [...new Set(stations.map((station) => station.updateTime).filter(Boolean))].sort(),
+    services: [...services.entries()].sort((a, b) => a[0].localeCompare(b[0])),
+  }
+}
+
+function snapshotDetail(city, stations, joinsById, label = null) {
+  const detail = stats(stations)
+  const scope = label ? `${city.name}'s ${label} group` : `${city.name} municipality`
+  const samples = stations
+    .slice()
+    .sort((a, b) => `${a.names.en}:${a.stationId}`.localeCompare(`${b.names.en}:${b.stationId}`))
+    .slice(0, 3)
+    .map((station) => `station ID ${station.stationId || 'TBC'} (${station.capacity ?? 'TBC'} docks; ${station.names.zh_tw || 'Chinese name not stated'})`)
+  const serviceText = detail.services.map(([service, count]) => `${service}: ${count}`).join('; ')
+  const updateText = list(detail.updates)
+  const railText = `${stations.filter((station) => joinsById.has(station.id)).length} rows have a confirmed coordinate join in this group`
+  return `
+## Snapshot detail
+
+The ${scope} section is a build-time view of ${stations.length} returned TDX Station/City records, not a live occupancy display [^tdx-bike-stations]. The normalized rows retain ${detail.englishNames} English station names, ${detail.chineseNames} Traditional Chinese station names, and ${detail.coordinates} valid coordinate pairs; the source response also supplies station identifiers, addresses, service type, capacity and source-update timestamps [^tdx-bike-stations].
+
+The published capacity values in this group range from ${detail.minCapacity} to ${detail.maxCapacity} docks per row, with the total shown above calculated by summing the returned BikesCapacity fields [^tdx-bike-stations]. The observed ServiceType distribution is ${serviceText || 'not stated in the returned rows'}, so a missing or null service value is not converted into an assumed operating category [^tdx-bike-stations].
+
+The TDX records used for this page carried UpdateTime value(s) ${updateText} [^tdx-bike-stations]. Those timestamps date the source response, while the page frontmatter records the retrieval date; neither timestamp is presented as a prediction of future station availability [^tdx-bike-stations].
+
+Representative rows in this group are ${list(samples)} [^tdx-bike-stations]. They remain rows in a browse index because the source provides a compact identity, address, coordinate and capacity record; creating a separate article for every dock would repeat the same source fields without adding a sourced history or design record [^tdx-bike-stations].
+
+The nearby-rail column is conservative: ${railText} [^tdx-rail-stations]. A match is retained only when one nearest candidate is within 200 metres and not tied at the one-metre ambiguity threshold, and the calculation compares coordinates rather than station names [^tdx-rail-stations]. Current available bikes and return docks are deliberately outside this static page because TDX publishes those values through a separate availability feed [^tdx-bike-stations].
+`
+}
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'))
@@ -127,7 +177,7 @@ function pageHeader({ title, summary, facts, aliases = [] }) {
   return `---
 title: ${title}
 summary: ${summary}
-updated: 2026-08-23
+updated: ${SNAPSHOT_DATE}
 ${aliases.length ? `aliases:\n${aliases.map((alias) => `  - ${JSON.stringify(alias)}`).join('\n')}\n` : ''}facts:
 ${facts.map((fact) => `  - label: ${fact.label}\n    value: ${fact.value}${fact.source ? `\n    source: ${fact.source}` : ''}`).join('\n')}
 specs:
@@ -168,7 +218,7 @@ function writeCityPage(cityCode, stations, joinsById) {
     { label: 'Published dock capacity total', value: capacity, source: 'tdx-bike-stations' },
     { label: 'Confirmed coordinate joins', value: joinCount, source: 'tdx-rail-stations' },
   ]
-  let body = `This is the ${city.name} browse index for the static TDX Bike Station/City snapshot retrieved on 23 August 2026 [^tdx-bike-stations]. It contains ${stations.length} station rows and a published capacity total of ${capacity} docks [^tdx-bike-stations]. Live available-bike and available-return-dock values are excluded because they belong to a separate availability feed [^tdx-bike-stations].
+  let body = `This is the ${city.name} browse index for the static TDX Bike Station/City snapshot retrieved on 25 August 2026 [^tdx-bike-stations]. It contains ${stations.length} station rows and a published capacity total of ${capacity} docks [^tdx-bike-stations]. Live available-bike and available-return-dock values are excluded because they belong to a separate availability feed [^tdx-bike-stations].
 
 The MRT/LRT column is present only when the station has one unique nearest TDX rail station within 200 metres by coordinates [^tdx-rail-stations]. The join does not compare names, and an ambiguous or more distant result is left blank [^tdx-rail-stations].
 
@@ -187,6 +237,7 @@ The MRT/LRT column is present only when the station has one unique nearest TDX r
   body += `
 Each district link is a browse page rather than an individual station page: a dock is a data row here, not a thin standalone article [^tdx-bike-stations].
 `
+  body += snapshotDetail(city, stations, joinsById)
   fs.writeFileSync(path.join(OUT, `${city.slug}.md`), pageHeader({
     title: `${city.name} YouBike station index`,
     summary: `Searchable static YouBike station rows for ${city.name}, grouped by district with coordinate-verified rail joins.`,
@@ -204,6 +255,7 @@ function writeDistrictPage(cityCode, district, stations, joinsById) {
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations].`
   if (district === '未分類') body += ` The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].`
+  body += snapshotDetail(city, stations, joinsById, label)
   body += `
 
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |

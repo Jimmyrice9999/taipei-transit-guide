@@ -1,7 +1,7 @@
 ---
 title: New Taipei — Unclassified YouBike stations
 summary: Static YouBike station rows in New Taipei's Unclassified group, with coordinates, capacity and confirmed nearby rail joins.
-updated: 2026-08-23
+updated: 2026-08-25
 aliases:
   - "YouBike2.0_0"
   - "YouBike2.0_11"
@@ -3151,7 +3151,7 @@ sources:
     titleOriginal: 交通部運輸資料流通服務平臺 — Bike Station/City
     publisher: Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺
     url: 'https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}'
-    accessed: 2026-08-23
+    accessed: 2026-08-25
     kind: primary
     lang: zh-Hant
     note: Supports the static station rows, bilingual names and addresses, coordinates, capacity and the city snapshot counts. It does not support live bike or dock availability.
@@ -3169,6 +3169,18 @@ sources:
 This page lists 1567 static TDX station rows in New Taipei's Unclassified group, with a published capacity total of 47489 docks. TDX's Station/City feed supplies identity, bilingual names, addresses, coordinates and capacity; that feed does not carry current occupancy [^tdx-bike-stations].
 
 The rail column is a nearest-coordinate join against the committed TDX rail station registry. It is shown only for a unique result within 200 metres; station names are not used to create a match [^tdx-rail-stations]. The feed did not expose a usable district for these rows, so they remain in an explicit Unclassified group rather than being assigned from a guessed address or station name [^tdx-bike-stations].
+## Snapshot detail
+
+The New Taipei's Unclassified group section is a build-time view of 1567 returned TDX Station/City records, not a live occupancy display [^tdx-bike-stations]. The normalized rows retain 1567 English station names, 1567 Traditional Chinese station names, and 1567 valid coordinate pairs; the source response also supplies station identifiers, addresses, service type, capacity and source-update timestamps [^tdx-bike-stations].
+
+The published capacity values in this group range from 8 to 99 docks per row, with the total shown above calculated by summing the returned BikesCapacity fields [^tdx-bike-stations]. The observed ServiceType distribution is 2: 1567, so a missing or null service value is not converted into an assumed operating category [^tdx-bike-stations].
+
+The TDX records used for this page carried UpdateTime value(s) 2026-08-25T23:37:06+08:00 [^tdx-bike-stations]. Those timestamps date the source response, while the page frontmatter records the retrieval date; neither timestamp is presented as a prediction of future station availability [^tdx-bike-stations].
+
+Representative rows in this group are station ID 500205047 (10 docks; YouBike2.0_國慶學成路口), station ID 500233030 (15 docks; YouBike2.0_鷺江國中(長興路298巷)) and station ID 500231042 (25 docks; YouBike2.0_柑園五里聯合活動中心) [^tdx-bike-stations]. They remain rows in a browse index because the source provides a compact identity, address, coordinate and capacity record; creating a separate article for every dock would repeat the same source fields without adding a sourced history or design record [^tdx-bike-stations].
+
+The nearby-rail column is conservative: 135 rows have a confirmed coordinate join in this group [^tdx-rail-stations]. A match is retained only when one nearest candidate is within 200 metres and not tied at the one-metre ambiguity threshold, and the calculation compares coordinates rather than station names [^tdx-rail-stations]. Current available bikes and return docks are deliberately outside this static page because TDX publishes those values through a separate availability feed [^tdx-bike-stations].
+
 
 | Station / 站名 | Capacity | Coordinates | Map | Confirmed nearby MRT/LRT |
 |---|---:|---|---|---|

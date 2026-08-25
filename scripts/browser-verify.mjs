@@ -237,6 +237,8 @@ const PAGE_TYPES = [
   { name: 'bike-stations-taipei', url: '/bike/stations/taipei/' },
   { name: 'bike-stations-new-taipei', url: '/bike/stations/new-taipei/' },
   { name: 'bike-stations-taoyuan', url: '/bike/stations/taoyuan/' },
+  { name: 'bike-stations-taichung', url: '/bike/stations/taichung/' },
+  { name: 'bike-stations-kaohsiung', url: '/bike/stations/kaohsiung/' },
   { name: 'ferry', url: '/ferry/' },
   { name: 'ferry-routes', url: '/ferry/routes/' },
   { name: 'ferry-route-blue-highway', url: '/ferry/routes/blue-highway/' },
