@@ -17474,3 +17474,69 @@ Actions run 384 supplied the actual failure: `Cross-check stated facts` rejected
 Replacement run 385 passed citations, the root build, unit/regression tests, facts, palette, geometry, accessibility and the full browser verification, which took approximately 67 minutes on CI. It then exposed the next real failure in `Adversarial fixtures`: the two malformed-frontmatter cases exited 1 but the build output did not name `zz-unterminated` or `zz-bad-yaml`. Local reproduction captured the underlying exception — `YAMLException: can not read a block mapping entry...` — from `generate-conflicts-index.mjs` before that script added a file path. The generator now wraps `gray-matter` parse errors as `Could not parse frontmatter in content/rail/metro/lines/<file> — ...`; the complete local adversarial run passes 16/16. Build for Pages and Deploy were skipped by run 385 and awaited the replacement run.
 
 Actions run 386 then passed the full Tests job: all 16 adversarial fixtures, artifact upload, colour-vision reporting and cleanup succeeded. Browser verification took 43m22s; the full Tests job took 1h45m. Build for Pages passed the static build, deployment link check and Pages artifact upload, and Deploy completed successfully at https://jimmyrice9999.github.io/taipei-transit-guide/.
+
+# Run 160 - Taipei Metro Wanda–Zhonghe–Shulin Line (25 August 2026)
+
+## Sourced
+
+Added an 816-word project page and a mirrored research report. The New Taipei
+DORTS route record establishes Phase 1 as 9.5 km with nine underground stations
+and a depot branch, including a 5.7 km LG05–LG08A New Taipei segment; its current
+revision record carries the 2008 EIA, 2010 comprehensive plan, NT$74.178bn 2018
+revision and the later NT$84.801bn revision sent to the Executive Yuan on 18 May
+2026. Sources: https://www.dorts.ntpc.gov.tw/about/route/8pRG2lkJmb5z and
+https://www.dorts.ntpc.gov.tw/about/routeInfo/8pRG2lkJmb5z.
+
+The same official project pages establish Phase 2 as 13.3 km, 13 stations, two
+underground and 11 elevated, with the current progress record identifying CQ880A,
+CQ880B and CQ890 and their award/start records. Sources:
+https://www.dorts.ntpc.gov.tw/about/route/DPRV2j4NZrWv,
+https://www.dorts.ntpc.gov.tw/about/routeProgress/DPRV2j4NZrWv and
+https://wedid.ntpc.gov.tw/Governance/Detail/q2RBP28mlZkz.
+
+The New Taipei government construction record identifies CQ850, CQ861, CQ860 and
+CQ870 as under construction. Taipei DORTS supplies the package engineering
+boundaries, including the LG09–LG13 underground/elevated split, Dahan River and
+operating-rail interfaces, and the planned Taoyuan Brown Line interface. The LG11
+Q&A records residents’ land, alignment, home and school-distance objections and
+the bureau’s multi-factor siting rationale. Sources:
+https://wedid.ntpc.gov.tw/Governance/Detail/Eg8MLyDoPRkq,
+https://www.dorts.gov.taipei/cp.aspx?n=6FC32B216EEF396F&s=09A8F8F5D643693A and
+https://www.dorts.gov.taipei/News_Content.aspx?n=620CC69B769A7536&s=030E2768DD8A3838.
+
+The required gates pass after regenerating the committed search index (the first
+full test run correctly failed because the new page was missing from that index):
+research 141 files/594 checked failures, cite 7,038 resolved citations, claims
+0 ASSERTED, build 2,588 generated pages and 2,746 postbuild checks, unit tests
+231/231, facts 17/17, internal links 429,646 with no breaks or orphans. Generated
+claims audit JSON was restored; `probes/` was not staged.
+
+## TBC
+
+No fetched primary source supplies a final complete-corridor opening date, a
+station-level exit/accessibility inventory, operating timetable or observed
+ridership. The final Phase 2 programme, final station names/codes and a unified
+construction-progress denominator also remain TBC. The searched families were
+New Taipei DORTS route, station, progress and project-governance pages; Taipei
+DORTS technical and LG11 consultation pages; and the current transport data
+boundary. The page says TBC rather than inferring an answer.
+
+## Contradicted the corpus
+
+No existing corpus assertion was contradicted. The project-status summary already
+preserved the Phase 1 0% progress measure; this unit adds the dedicated project
+record and documents why that measure is not silently treated as proof that every
+package is idle.
+
+## Conflicts found
+
+The financial/programme record contains NT$74.178bn and an end-ROC-116 target in
+the 2018 revision, versus NT$84.801bn, end-ROC-116 completion and an end-ROC-118
+programme in the 2026 revision record. The Phase 1 progress page reports 0% at
+the end of ROC-115 July while the New Taipei project record says four civil-work
+packages are under construction. Phase 2’s older route page gives ROC-117
+physical completion, ROC-118 acceptance and ROC-119 closeout, while its current
+package records mark completion as subject to programme adjustment. LG11 remains
+a published siting dispute: residents objected to the alignment and land impacts,
+while the bureau calls the selected location the best feasible choice. These
+values are all retained with their apparent scope; none was averaged or selected.

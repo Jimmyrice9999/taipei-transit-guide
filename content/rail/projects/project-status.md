@@ -253,7 +253,9 @@ environmental and systems installation/testing.[^dorts-115-plan]
 
 New Taipei's separate progress page, fetched as a July 2026 record, displays
 0% for its controlled Wanda–Zhonghe programme but gives no scope explanation;
-the value is retained without interpretation.[^ntpc-wanda-progress]
+the value is retained without interpretation.[^ntpc-wanda-progress] The route,
+package and LG11 siting record is documented separately in the [Wanda–Zhonghe–
+Shulin Line project page](/rail/projects/wanda-zhonghe-shulin/).
 
 The East Ring is a 13.25 km underground route from the North Ring tail track
 through Neihu, Songshan, Xinyi and Wenshan to the South Ring Zoo station, with
