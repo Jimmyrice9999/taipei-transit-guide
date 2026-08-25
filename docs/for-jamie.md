@@ -2,13 +2,16 @@
 
 ## Active handoff - 25 August 2026
 
-Run 163 adds the Minsheng–Xizhi project page and research record.
-Taipei DORTS: 11.02 km, 9 stations, 8 underground/1 elevated, LRRT; Taipei comprehensive plan remains in review.
-New Taipei DORTS: Xidong is 5.56 km/6 stations; its contract started 20 March 2025, target April 2032, controlled progress 0% in July 2026.
-The page keeps the earlier 17.52 km + 2.26 km planning scope and the 11.02 km current Taipei scope as a conflict; no figures were averaged.
-The second-route EIA date conflict is retained: 21 August 2020 versus 2 November 2020.
-TBC: final Taipei station names/codes, Taipei construction/opening/timetable/ridership, unified accessibility and whole-project progress.
-No station stubs were created because the technical station labels are explicitly provisional.
-Gates are clean: cite 7,086, research 144/604, claims 0 ASSERTED, build 2,599/2,760, unit 234/234, check 440,477, a11y 1,862, facts 17/17, geometry clean.
-Browser verification is clean: 320/640 reflow, keyboard/ARIA, zero axe violations across 1,861 pages, 729 screenshots and 104 print PDFs; the new page was inspected at 320/375/1440.
-Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains untracked. Next: commit/push Run 163, check Actions once, then continue the next incomplete unit.
+Run 164 adds the Kaohsiung Circular Light Rail history page and research record.
+Current primary evidence: 22.1 km, 38 stations, surface 1,435 mm light rail, and NT$211.16bn approved programme cost.
+KRTC records full-line trial service on 1 January 2024 and formal operation on 26 February 2024.
+The page preserves the planned 8.7 km/13.4 km phase split and ROC106 June target against the later opening date.
+The 2020 dispute record includes five hearings, 1,874 opinion forms and a nine-option expert review.
+TBC: package costs and actual civil dates, ridership, accessibility inventory, rolling stock, substations and full Phase 2 cost split.
+Failed procurement/material allegations fetches returned Internal Error; snippets were not used.
+MTBU/KRTC name differences at C26, C27 and C31 remain published as conflicts.
+The existing Circular Line research is New Taipei, not Kaohsiung, and was not reused.
+Gates: cite 7,087, research 145/607, claims 0 ASSERTED, build 2,760 Han checks, unit 234/234, links 0.
+Browser: zero axe violations across 1,861 pages, 736 screenshots and 105 print PDFs; Circular page inspected at 320/375/1440.
+Generated audit JSONs, screenshots and PDFs were restored; `probes/` remains untracked.
+Next: continue Part 11 with sourced Kaohsiung Red and Orange Line history and systems records.

@@ -255,6 +255,7 @@ const PAGE_TYPES = [
   { name: 'krtc-system', url: '/rail/krtc/' },
   { name: 'krtc-lines', url: '/rail/krtc/lines/' },
   { name: 'krtc-line', url: '/rail/krtc/lines/red-line/' },
+  { name: 'krtc-line-circular', url: '/rail/krtc/lines/circular-light-rail/' },
   { name: 'krtc-stations', url: '/rail/krtc/stations/' },
   { name: 'krtc-station', url: '/rail/krtc/stations/formosa-boulevard-r10/' },
   /* Run 154: Taoyuan's Green Line is a project registry pending its own TDX

@@ -17770,3 +17770,60 @@ the Taipei section and `汐東捷運（原汐止民生線）` for the Xidong pha
 remains in review while Xidong’s contract has started but its controlled measure
 is 0%; these are phase and denominator differences, not a reason to infer one
 combined status.
+
+# Run 164 - Kaohsiung Circular Light Rail (25 August 2026)
+
+## Sourced
+
+Added the 880-word Circular Light Rail line page at
+`content/rail/krtc/lines/circular-light-rail.md` and its primary-source research
+record at `docs/research/rail/lines/circular-light-rail.md`. The page establishes
+the current 22.1 km, 38-station surface route, its 1,435 mm standard gauge and
+low-floor B-type built form, the approved NT$211.16 billion combined programme
+cost, and the operator’s 26 February 2024 formal full-line opening. It records
+the C21A addition and current operator naming where the government and operator
+pages differ, without creating invented station or ridership data.
+
+Full primary pages fetched: Kaohsiung MTBU’s completed-route record
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/CompletedRoutes/LightRail/LightRail01.html`),
+approved-route planning record
+(`https://mtbu.kcg.gov.tw/KaohsiungMetro/ApprovedRoutes/LightRail/LightRail0202.html`),
+2020 Phase 2 delay response
+(`https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=ee7b8b6d-03c0-4e8f-b133-e0a7c97fa933&PageType=1&id=35f1845d-588f-4cce-b857-d6dafad25662`),
+2021 environmental-difference approval
+(`https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=ee7b8b6d-03c0-4e8f-b133-e0a7c97fa933&Keyword=%E6%A8%B9&PageNumber=4&PageType=1&id=a5b4517e-8be6-4df0-a0cf-e1f7c81129d4`),
+KRTC’s operator FAQ (`https://www.krtc.com.tw/Service/faq_more?id=10def821c28c4466a394be86edca7383`),
+timetable (`https://www.krtc.com.tw/KLRT/timetable`) and English guide map
+(`https://www.krtc.com.tw/eng/KLRT/guide_map`). The browser harness now includes
+the new line page as a representative.
+
+Gates: cite 7,087 clean; research 145 files/607 checked failures clean; claims
+20,668 sourced/4,471 TBC/0 ASSERTED; build 2,760 Han-subset checks clean after
+refreshing the content font for 宕; unit 234/234; links exit 0; browser clean
+with 1,861 axe pages, 736 screenshots and 105 print PDFs. The new page passed
+320/640 reflow, keyboard/ARIA and visual checks at 320/375/1440. Generated
+verification JSONs, screenshots and PDFs were restored.
+
+## TBC
+
+The searched MTBU/DORTS and KRTC primary pages do not establish package-level
+contract values or actual civil-work completion dates, a KRTC LRT ridership
+series, per-station accessibility inventory, rolling-stock allocation, power
+substations or a complete Phase 2 cost breakdown. Direct full-page fetches for
+the suspected procurement/material-quality allegations returned Internal Error;
+their search snippets were excluded. These gaps remain TBC rather than inferred.
+
+## Contradicted the corpus
+
+No Kaohsiung assertion in the existing corpus was contradicted. The existing
+`docs/research/rail/lines/circular-line.md` is the New Taipei Circular Line and
+was not reused as evidence; this run adds the separate Kaohsiung subject.
+
+## Conflicts found
+
+MTBU’s planning page targeted Phase 1 completion in ROC106 June (2017), while
+KRTC records formal full-line operation on 26 February 2024. The planning split
+is 8.7 km plus 13.4 km; the completed-route page reports the combined 22.1 km,
+so the values are retained as planned phases versus current whole-route scope.
+MTBU’s station names differ from KRTC’s current names at C26, C27 and C31;
+both sets remain published with their source and naming context.
