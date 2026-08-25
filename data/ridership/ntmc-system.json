@@ -2,70 +2,129 @@
   "retrieved": "2026-08-26",
   "currentPeriod": "2026-07",
   "source": {
-    "id": "ntmc-system-ods",
-    "title": "Monthly whole-system passenger traffic",
+    "id": "ntmc-system-reports",
+    "title": "Monthly whole-system passenger traffic reports",
     "titleOriginal": "全系統運量統計",
     "publisher": "New Taipei Metro Corporation",
     "publisherOriginal": "新北大眾捷運股份有限公司",
     "indexUrl": "https://www.ntmetro.com.tw/basic/?node=10145",
     "accessed": "2026-08-26",
     "kind": "primary",
-    "measure": "The operator's monthly report publishes entry and exit station-day rows and line subtotals. Station value is entry plus exit movement; network and line values use exit counts, with both dimensions retained.",
+    "measure": "Current ODS reports publish entry and exit station-day rows and line subtotals. The August 2025 XLSX has separate entry and exit station sheets, so its line values are summed from those station rows. Older PDFs publish daily and monthly whole-system and line totals without station rows or separate entry and exit dimensions. Station values are entry plus exit movement where station rows exist; network and line values retain the source measure.",
     "files": [
       {
         "period": "2026-07",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0N(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA4MjQxMTE2Mjg(3D.ods",
-        "title": "115年7月全系統運量統計.ods"
+        "title": "115年7月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-06",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA3MjIxMDI1MTQ(3D.ods",
-        "title": "115年6月全系統運量統計.ods"
+        "title": "115年6月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-05",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA3MDkwNTAwMzg(3D.ods",
-        "title": "115年5月全系統運量統計.ods"
+        "title": "115年5月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-04",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0NOaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA1MjYxMDIxMzQ(3D.ods",
-        "title": "115年4月全系統運量統計.ods"
+        "title": "115年4月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-03",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0M(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjA0MjMwMjE5MzY(3D.ods",
-        "title": "115年3月全系統運量統計.ods"
+        "title": "115年3月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-02",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0MuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjAzMjMwMTM1NTI(3D.ods",
-        "title": "115年2月全系統運量統計.ods"
+        "title": "115年2月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2026-01",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE15bm0MeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNjAzMDUwNDA5MTk(3D.ods",
-        "title": "115年1月全系統運量統計.ods"
+        "title": "115年1月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2025-12",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTLmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjYwMTI3MDIyMzQ4.ods",
-        "title": "114年12月全系統運量統計.ods"
+        "title": "114年12月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2025-11",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTHmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjUxMjIyMDMxNTQz.ods",
-        "title": "114年11月全系統運量統計.ods"
+        "title": "114年11月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2025-10",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MTDmnIjlhajns7vntbHpgYvph4(2FntbHoqIhfMjUxMTE4MTAyNDU4.ods",
-        "title": "114年10月全系統運量統計.ods"
+        "title": "114年10月全系統運量統計.ods",
+        "format": "ods"
       },
       {
         "period": "2025-09",
         "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0OeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTEwMjAwMjE0NDg(3D.ods",
-        "title": "114年9月全系統運量統計.ods"
+        "title": "114年9月全系統運量統計.ods",
+        "format": "ods"
+      },
+      {
+        "period": "2025-08",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0OOaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA5MjQwNTEwMTc(3D.xlsx",
+        "title": "114年8月全系統運量統計.xlsx",
+        "format": "xlsx"
+      },
+      {
+        "period": "2025-07",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0N(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA4MTkwMzQ1MzA(3D.pdf",
+        "title": "114年7月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-06",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0NuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA3MjEwOTM5MDg(3D.pdf",
+        "title": "114年6月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-05",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0NeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA2MTkwMTU0NDQ(3D.pdf",
+        "title": "114年5月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-04",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0NOaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA1MjgxMDU5MTI(3D.pdf",
+        "title": "114年4月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-03",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0M(2BaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTA0MjkxMDMyMDI(3D.pdf",
+        "title": "114年3月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-02",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MuaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTAzMjYxMDQzMjU(3D.pdf",
+        "title": "114年2月全系統運量統計.pdf",
+        "format": "pdf"
+      },
+      {
+        "period": "2025-01",
+        "url": "https://www.ntmetro.com.tw/basic/?mode=download&func=basic&code=basic10145&join=10145&path=MTE05bm0MeaciOWFqOezu(2Be1semBi(2BmHj(2Be1seioiF8yNTAzMDMwMjA0MDU(3D.pdf",
+        "title": "114年1月全系統運量統計.pdf",
+        "format": "pdf"
       }
     ]
   },
@@ -77,6 +136,13 @@
       "name": "K01",
       "nameZh": "雙城站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 11952,
+          "entry": 5423,
+          "exit": 6529,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 26614,
@@ -164,6 +230,13 @@
       "nameZh": "玫瑰中國城站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 23425,
+          "entry": 10812,
+          "exit": 12613,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 53162,
           "entry": 24082,
@@ -249,6 +322,13 @@
       "name": "K03",
       "nameZh": "台北小城站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 8053,
+          "entry": 4395,
+          "exit": 3658,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 26088,
@@ -336,6 +416,13 @@
       "nameZh": "耕莘安康院區站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 17692,
+          "entry": 8488,
+          "exit": 9204,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 36034,
           "entry": 16910,
@@ -421,6 +508,13 @@
       "name": "K05",
       "nameZh": "景文科大站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 12484,
+          "entry": 5742,
+          "exit": 6742,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 57002,
@@ -508,6 +602,13 @@
       "nameZh": "安康站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 29482,
+          "entry": 13578,
+          "exit": 15904,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 69994,
           "entry": 32662,
@@ -593,6 +694,13 @@
       "name": "K07",
       "nameZh": "陽光運動公園站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 24045,
+          "entry": 11857,
+          "exit": 12188,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 47404,
@@ -680,6 +788,13 @@
       "nameZh": "新和國小站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 42514,
+          "entry": 19971,
+          "exit": 22543,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 88952,
           "entry": 41540,
@@ -765,6 +880,13 @@
       "name": "K09",
       "nameZh": "十四張站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 132566,
+          "entry": 70835,
+          "exit": 61731,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 298704,
@@ -1128,6 +1250,13 @@
       "nameZh": "紅樹林站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 458547,
+          "entry": 256356,
+          "exit": 202191,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 891646,
           "entry": 498812,
@@ -1213,6 +1342,13 @@
       "name": "V02",
       "nameZh": "竿蓁林站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 60664,
+          "entry": 27297,
+          "exit": 33367,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 119988,
@@ -1300,6 +1436,13 @@
       "nameZh": "淡金鄧公站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 6415,
+          "entry": 3235,
+          "exit": 3180,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 11038,
           "entry": 5436,
@@ -1385,6 +1528,13 @@
       "name": "V04",
       "nameZh": "淡江大學站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 31216,
+          "entry": 13776,
+          "exit": 17440,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 86422,
@@ -1472,6 +1622,13 @@
       "nameZh": "淡金北新站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 59960,
+          "entry": 26995,
+          "exit": 32965,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 124436,
           "entry": 56494,
@@ -1557,6 +1714,13 @@
       "name": "V06",
       "nameZh": "新市一路站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 67244,
+          "entry": 29093,
+          "exit": 38151,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 135152,
@@ -1644,6 +1808,13 @@
       "nameZh": "淡水行政中心站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 72053,
+          "entry": 31805,
+          "exit": 40248,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 151786,
           "entry": 67058,
@@ -1729,6 +1900,13 @@
       "name": "V08",
       "nameZh": "濱海義山站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 86526,
+          "entry": 39010,
+          "exit": 47516,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 171442,
@@ -1816,6 +1994,13 @@
       "nameZh": "濱海沙崙站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 50727,
+          "entry": 23259,
+          "exit": 27468,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 96428,
           "entry": 43754,
@@ -1901,6 +2086,13 @@
       "name": "V10",
       "nameZh": "淡海新市鎮站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 12428,
+          "entry": 5673,
+          "exit": 6755,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 24348,
@@ -1988,6 +2180,13 @@
       "nameZh": "崁頂站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 29049,
+          "entry": 14212,
+          "exit": 14837,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 58872,
           "entry": 28594,
@@ -2073,6 +2272,13 @@
       "name": "V26",
       "nameZh": "淡水漁人碼頭站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 63061,
+          "entry": 28462,
+          "exit": 34599,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 59780,
@@ -2160,6 +2366,13 @@
       "nameZh": "沙崙站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 22895,
+          "entry": 12075,
+          "exit": 10820,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 22758,
           "entry": 11824,
@@ -2245,6 +2458,13 @@
       "name": "V28",
       "nameZh": "台北海洋大學站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 12567,
+          "entry": 6058,
+          "exit": 6509,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 34314,
@@ -2332,6 +2552,13 @@
       "nameZh": "大坪林站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 381029,
+          "entry": 246240,
+          "exit": 134789,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 791154,
           "entry": 516374,
@@ -2417,6 +2644,13 @@
       "name": "Y08",
       "nameZh": "十四張站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 167034,
+          "entry": 51812,
+          "exit": 115222,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 378658,
@@ -2504,6 +2738,13 @@
       "nameZh": "秀朗橋站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 127937,
+          "entry": 44168,
+          "exit": 83769,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 254458,
           "entry": 87762,
@@ -2589,6 +2830,13 @@
       "name": "Y10",
       "nameZh": "景平站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 189324,
+          "entry": 65231,
+          "exit": 124093,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 373194,
@@ -2676,6 +2924,13 @@
       "nameZh": "景安站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 413245,
+          "entry": 305872,
+          "exit": 107373,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 823372,
           "entry": 606340,
@@ -2761,6 +3016,13 @@
       "name": "Y12",
       "nameZh": "中和站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 264611,
+          "entry": 100556,
+          "exit": 164055,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 517520,
@@ -2848,6 +3110,13 @@
       "nameZh": "橋和站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 117969,
+          "entry": 47447,
+          "exit": 70522,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 234034,
           "entry": 93250,
@@ -2933,6 +3202,13 @@
       "name": "Y14",
       "nameZh": "中原站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 160754,
+          "entry": 65103,
+          "exit": 95651,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 318174,
@@ -3020,6 +3296,13 @@
       "nameZh": "板新站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 146661,
+          "entry": 59777,
+          "exit": 86884,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 302580,
           "entry": 120532,
@@ -3105,6 +3388,13 @@
       "name": "Y16",
       "nameZh": "板橋站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 641196,
+          "entry": 283939,
+          "exit": 357257,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 1237142,
@@ -3192,6 +3482,13 @@
       "nameZh": "新埔民生站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 234916,
+          "entry": 101170,
+          "exit": 133746,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 481374,
           "entry": 203614,
@@ -3277,6 +3574,13 @@
       "name": "Y18",
       "nameZh": "頭前庄站",
       "periods": [
+        {
+          "period": "2025-08",
+          "value": 266702,
+          "entry": 219803,
+          "exit": 46899,
+          "days": 31
+        },
         {
           "period": "2025-09",
           "value": 569984,
@@ -3364,6 +3668,13 @@
       "nameZh": "幸福站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 217776,
+          "entry": 86138,
+          "exit": 131638,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 440640,
           "entry": 170976,
@@ -3450,6 +3761,13 @@
       "nameZh": "新北產業園區站",
       "periods": [
         {
+          "period": "2025-08",
+          "value": 348562,
+          "entry": 161602,
+          "exit": 186960,
+          "days": 31
+        },
+        {
           "period": "2025-09",
           "value": 685960,
           "entry": 317938,
@@ -3531,35 +3849,288 @@
   ],
   "network": [
     {
+      "period": "2025-01",
+      "value": 2219731,
+      "entry": null,
+      "exit": null,
+      "days": 31,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 451153,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 150513,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1618065,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-02",
+      "value": 2218858,
+      "entry": null,
+      "exit": null,
+      "days": 28,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 437330,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 149882,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1631646,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-03",
+      "value": 2514859,
+      "entry": null,
+      "exit": null,
+      "days": 31,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 514023,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 170335,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1830501,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-04",
+      "value": 2424140,
+      "entry": null,
+      "exit": null,
+      "days": 30,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 496416,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 164879,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1762845,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-05",
+      "value": 2485113,
+      "entry": null,
+      "exit": null,
+      "days": 31,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 504369,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 169633,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1811111,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-06",
+      "value": 2391331,
+      "entry": null,
+      "exit": null,
+      "days": 30,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 489371,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 156223,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1745737,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-07",
+      "value": 2454531,
+      "entry": null,
+      "exit": null,
+      "days": 31,
+      "measure": "published-total",
+      "lines": {
+        "V": {
+          "value": 483222,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "K": {
+          "value": 150849,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        },
+        "Y": {
+          "value": 1820460,
+          "entry": null,
+          "exit": null,
+          "published": true,
+          "measure": "published-total"
+        }
+      }
+    },
+    {
+      "period": "2025-08",
+      "value": 2506016,
+      "entry": 2507265,
+      "exit": 2506016,
+      "days": 31,
+      "measure": "station-sum",
+      "lines": {
+        "Y": {
+          "value": 1838858,
+          "entry": 1838858,
+          "exit": 1838858,
+          "published": true,
+          "measure": "station-sum"
+        },
+        "V": {
+          "value": 516046,
+          "entry": 517306,
+          "exit": 516046,
+          "published": true,
+          "measure": "station-sum"
+        },
+        "K": {
+          "value": 151112,
+          "entry": 151101,
+          "exit": 151112,
+          "published": true,
+          "measure": "station-sum"
+        }
+      }
+    },
+    {
       "period": "2025-09",
       "value": 5082332,
       "entry": 5083828,
       "exit": 5082332,
       "days": 30,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 3704122,
           "entry": 3704122,
           "exit": 3704122,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1024662,
           "entry": 1025964,
           "exit": 1024662,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 353548,
           "entry": 353742,
           "exit": 353548,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3569,30 +4140,35 @@
       "entry": 5299376,
       "exit": 5298052,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 3878814,
           "entry": 3878814,
           "exit": 3878814,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1041038,
           "entry": 1042014,
           "exit": 1041038,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 378200,
           "entry": 378548,
           "exit": 378200,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3602,30 +4178,35 @@
       "entry": 5476580,
       "exit": 5476272,
       "days": 30,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4025662,
           "entry": 4025662,
           "exit": 4025662,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1058886,
           "entry": 1059110,
           "exit": 1058886,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 391724,
           "entry": 391808,
           "exit": 391724,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3635,30 +4216,35 @@
       "entry": 5913524,
       "exit": 5912098,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4376476,
           "entry": 4376476,
           "exit": 4376476,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1124042,
           "entry": 1124710,
           "exit": 1124042,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 411580,
           "entry": 412338,
           "exit": 411580,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3668,30 +4254,35 @@
       "entry": 5536822,
       "exit": 5537002,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4144094,
           "entry": 4144094,
           "exit": 4144094,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1018018,
           "entry": 1017564,
           "exit": 1018018,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 374890,
           "entry": 375164,
           "exit": 374890,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3701,30 +4292,35 @@
       "entry": 4549716,
       "exit": 4557750,
       "days": 28,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 3376484,
           "entry": 3376484,
           "exit": 3376484,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 883044,
           "entry": 874498,
           "exit": 883044,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 298222,
           "entry": 298734,
           "exit": 298222,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3734,30 +4330,35 @@
       "entry": 5862022,
       "exit": 5863898,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4344744,
           "entry": 4344744,
           "exit": 4344744,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1101394,
           "entry": 1098612,
           "exit": 1101394,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 417760,
           "entry": 418666,
           "exit": 417760,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3767,30 +4368,35 @@
       "entry": 5651082,
       "exit": 5648376,
       "days": 30,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4093088,
           "entry": 4093088,
           "exit": 4093088,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1159032,
           "entry": 1161796,
           "exit": 1159032,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 396256,
           "entry": 396198,
           "exit": 396256,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3800,30 +4406,35 @@
       "entry": 6004592,
       "exit": 5997342,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4254770,
           "entry": 4254770,
           "exit": 4254770,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1334438,
           "entry": 1341640,
           "exit": 1334438,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 408134,
           "entry": 408182,
           "exit": 408134,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": null,
           "entry": null,
           "exit": null,
-          "published": false
+          "published": false,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3833,30 +4444,35 @@
       "entry": 5678524,
       "exit": 5672010,
       "days": 30,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4121380,
           "entry": 4121380,
           "exit": 4121380,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1114950,
           "entry": 1118580,
           "exit": 1114950,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 384774,
           "entry": 385192,
           "exit": 384774,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": 50906,
           "entry": 53372,
           "exit": 50906,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         }
       }
     },
@@ -3866,30 +4482,35 @@
       "entry": 7391242,
       "exit": 7388252,
       "days": 31,
+      "measure": "entry-exit",
       "lines": {
         "Y": {
           "value": 4098230,
           "entry": 4098230,
           "exit": 4098230,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "V": {
           "value": 1026948,
           "entry": 1029562,
           "exit": 1026948,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "K": {
           "value": 341692,
           "entry": 341948,
           "exit": 341692,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         },
         "LB": {
           "value": 1921382,
           "entry": 1921502,
           "exit": 1921382,
-          "published": true
+          "published": true,
+          "measure": "entry-exit"
         }
       }
     }

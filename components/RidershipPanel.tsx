@@ -14,7 +14,9 @@ type LineProps = { station?: never; lineCode: string; operator?: string }
 type Props = StationProps | LineProps
 
 function sourceLink(source: RidershipSource): { href: string; label: string } {
-  const latest = source.files[source.files.length - 1]
+  const latest = source.files.reduce((candidate, file) => (
+    !candidate || file.period > candidate.period ? file : candidate
+  ), undefined as RidershipSource['files'][number] | undefined)
   return { href: latest?.url ?? source.indexUrl, label: source.title }
 }
 
@@ -54,17 +56,17 @@ function RidershipChart({ id, label, series }: { id: string; label: string; seri
         })}
       </svg>
       <figcaption id={`${id}-caption`}>
-        {label} monthly trend. Exact values, entry and exit dimensions, and dates are in the table below.
+        {label} monthly trend. Exact values and dates are in the table below; entry and exit dimensions are retained where the source publishes them.
       </figcaption>
     </figure>
   )
 }
 
-function RidershipTable({ id, series, line }: { id: string; series: RidershipPoint[]; line?: boolean }) {
+function RidershipTable({ id, series, line, network }: { id: string; series: RidershipPoint[]; line?: boolean; network?: boolean }) {
   return (
     <div className="wide table-scroll ridership-table-wrap" tabIndex={0}>
       <table className="ridership-table" id={id}>
-        <caption>{line ? 'Published line ridership by month' : 'Station ridership by month'}</caption>
+        <caption>{line ? 'Published line ridership by month' : network ? 'Published network ridership by month' : 'Station ridership by month'}</caption>
         <thead>
           <tr>
             <th scope="col">Month</th>
@@ -140,6 +142,7 @@ function StationRidershipPanel({ station }: StationProps) {
 
 function LineRidershipPanel({ lineCode, operator }: LineProps) {
   const ridership = getLineRidership(lineCode, operator)
+  const ntmcLegacyFormats = ridership.source?.id === 'ntmc-system-reports'
   return (
     <section className="ridership-panel" id="ridership" aria-labelledby="ridership-heading">
       <h2 className="section-heading" id="ridership-heading">Ridership</h2>
@@ -148,7 +151,8 @@ function LineRidershipPanel({ lineCode, operator }: LineProps) {
           <p className="section-desc">
             The operator&rsquo;s published line total for {periodLabel(ridership.current.period)} is{' '}
             <strong>{formatRidership(ridership.current.value)}</strong>. The table preserves the source&rsquo;s
-            entry and exit dimensions; the line total follows the published exit count.
+            entry and exit dimensions where they are published.
+            {ntmcLegacyFormats && ' NTMC’s older PDF records publish whole-system and line totals without station rows or separate entry and exit dimensions; the table leaves those cells TBC.'}
           </p>
           <dl className="ridership-summary">
             <div>
@@ -205,7 +209,7 @@ export function NetworkRidershipPanel() {
               <strong>{formatRidership(current.value)}</strong> system trips.
             </p>
             <RidershipChart id={id} label={network.label} series={network.series} />
-            <RidershipTable id={`${id}-table`} series={network.series} />
+            <RidershipTable id={`${id}-table`} series={network.series} network />
             <SourceNote source={network.source} />
           </section>
         )

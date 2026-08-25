@@ -9,6 +9,7 @@ export type RidershipPoint = {
   entry?: number
   exit?: number
   days?: number
+  measure?: 'entry-exit' | 'station-sum' | 'published-total'
 }
 
 type SourceRecord = {
@@ -37,6 +38,7 @@ type LineRecord = {
   entry: number | null
   exit: number | null
   published: boolean
+  measure?: RidershipPoint['measure']
 }
 
 type NetworkRecord = RidershipPoint & {
@@ -141,6 +143,7 @@ function networkLineSeries(document: RidershipDocument, line: string): Ridership
         entry: linePoint.entry ?? undefined,
         exit: linePoint.exit ?? undefined,
         days: point.days,
+        measure: linePoint.measure ?? point.measure,
       }
     })
   return points.filter((point): point is RidershipPoint => point !== null)

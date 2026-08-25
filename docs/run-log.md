@@ -18692,3 +18692,53 @@ clean, zero axe violations across 1,876 pages, 820 screenshots and 108 PDFs.
 The 320/400%-equivalent and 1440px station, line and network renders were
 inspected. Generated audits, screenshots and PDFs were restored; `probes/`
 remains untracked.
+
+## Run 180 - extend NTMC ridership across legacy report formats (2026-08-26)
+
+### Sourced
+
+Fetched the full NTMC statistics index and all 19 linked reports from
+`https://www.ntmetro.com.tw/basic/?node=10145`: 11 ODS files for September
+2025–July 2026, the August 2025 XLSX, and seven January–July 2025 PDFs. The
+importer now parses all three formats. Network and line trends reach January
+2025; the August XLSX adds station entry/exit/movement, so station trends reach
+August 2025. PDF whole-system and line totals retain their source measure.
+The line panel now labels missing legacy entry/exit cells TBC, the network table
+has a network caption, and source links select the latest period rather than
+the first file in a descending operator index.
+
+### TBC and checked failures
+
+The older PDFs contain no station rows, so no station values were created for
+January–July 2025. Their entry and exit dimensions remain TBC. The New Taipei
+Transportation Bureau statistics system was not promoted: the operator's link
+remains a separate follow-up after its checked timeout.
+
+### Contradicted the corpus
+
+Run 179's handoff said NTMC older XLSX/PDF formats still needed parsing. The
+full binary files are now parsed and recorded in the committed data layer. The
+previous research statement that the current NTMC pull began in September 2025
+is narrowed: network/line history begins in January 2025, while station history
+honestly begins in August 2025.
+
+### Conflicts found
+
+The ODS reports provide station entry/exit rows and line subtotals; the XLSX
+provides separate entry/exit station sheets whose line values are summed; the
+PDFs provide only whole-system and line totals in columns headed
+`總運量`, `淡海輕軌`, `安坑輕軌`, `環狀線`. These are retained as distinct
+measures, never averaged or backfilled. Text-browser checks also differ from
+local binary retrieval: the XLSX was unsupported and PDF opens were cache
+misses; the downloaded operator files parsed successfully.
+
+### Gates
+
+`cite` clean (1,670 content files; 7,266 citations); `research` 157 files/665
+checked failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build compiled
+and passed its 2,775 Han-subset checks; unit 234/234; a11y 1,877 pages with no
+errors or warnings. Browser verification: reflow, painted-box, keyboard/tree
+and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
+and 119 PDFs. Station K01, Wenhu Line and network renders were inspected at
+320/1440. Generated audits, screenshots and PDFs were restored; `probes/`
+remains untracked.

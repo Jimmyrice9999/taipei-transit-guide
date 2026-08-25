@@ -12,14 +12,17 @@ different units, coverage rules and publication formats.
 
 ### Refresh checked 26 August 2026
 
-The full NTMC statistics page now lists `115年7月全系統運量統計.ods` as its
-newest file, followed by the 115年 January–June files and 114年 files. The
-importer fetched every `.ods` entry exposed by that page rather than retaining
-an arbitrary ten-file window. The committed NTMC data layer now covers
-September 2025–July 2026, with 11 monthly network records and the operator's
-entry, exit, line and station rows retained. Source: NTMC, *統計資料*, primary,
-High confidence: the full index was fetched and the linked ODS files were
-parsed locally. Original wording: `115年7月全系統運量統計.ods`.
+The full NTMC statistics page now lists 19 monthly reports: 11 ODS files for
+September 2025–July 2026, an August 2025 XLSX, and seven PDFs for January–July
+2025. The importer fetched every linked file exposed by that page. The
+committed NTMC network and line data layer now covers January 2025–July 2026;
+the station series begins in August 2025 because the PDFs publish no station
+rows. The ODS and XLSX retain entry and exit dimensions. The older PDFs retain
+their published whole-system and line totals without inventing station or
+entry/exit rows. Source: NTMC, *統計資料*, primary, High confidence: the full
+index was fetched and all 19 linked files were downloaded and parsed locally.
+Original wording: `115年7月全系統運量統計.ods` and the linked 114年 report
+formats shown on the same page.
 
 The TRTC importer was then widened to the full station archive currently
 published by the operator: January 2015–July 2026, 139 monthly ODS files, 121
@@ -73,14 +76,17 @@ the committed range was downloaded and parsed locally. Original wording:
 
 ### New Taipei Metro Corporation (NTMC)
 
-- **NTMC publishes whole-system monthly files that contain daily station rows
-  and line subtotals.** The operator page lists ROC 115 January–July 2026 ODS
-  files and earlier ROC 114 ODS/PDF files. The ODS reports have separate
-  entry and exit sections; the data layer aggregates those dated station rows
-  without treating the result as a precomputed operator table. Source: NTMC,
-  *統計資料*, primary, High confidence. Original wording: the filenames
-  `115年7月全系統運量統計.ods` through `115年1月全系統運量統計.ods` and
-  the earlier 114年 files shown on the same page.
+- **NTMC publishes monthly reports in three formats with different scopes.**
+  The current ODS reports have separate entry and exit sections, while the
+  August 2025 XLSX has separate entry and exit station sheets; the importer
+  retains those station rows and sums the XLSX line values from them. The
+  January–July 2025 PDFs publish daily columns for the whole system, 淡海輕軌,
+  安坑輕軌 and 環狀線, plus monthly totals and averages, but no station rows or
+  separate entry/exit dimensions. Source: NTMC, *統計資料*, primary, High
+  confidence: the full index and all linked files were fetched and parsed.
+  Original wording: `附表1.每日全線各站運量統計表(進站)`,
+  `附表1.每日全線各站運量統計表(出站)`, and the PDF headings
+  `總運量 淡海輕軌 安坑輕軌 環狀線`.
 - **The checked NTMC monthly file is daily and line-split.** Its January 2025
   PDF has daily columns for `總運量`, `淡海輕軌`, `安坑輕軌` and `環狀線`, a
   monthly total and a daily average. It explicitly warns that the data include
@@ -172,6 +178,11 @@ the committed range was downloaded and parsed locally. Original wording:
    `St. Ignatius High School`. The importer normalises only this exact mismatch;
    the O52 values are retained rather than left as an unexplained all-zero
    series.
+6. **NTMC legacy measures.** The XLSX station sheets support entry, exit and
+   station movement for August 2025, while the January–July 2025 PDFs support
+   only their published whole-system and line totals. Both measures remain in
+   the network trend; the PDF periods show `TBC` for entry and exit and do not
+   create station records.
 
 ## Checked and failed
 
@@ -188,6 +199,11 @@ the committed range was downloaded and parsed locally. Original wording:
   Checked 24 August 2026. The underlying full MOTC monthly-statistics PDF was found
   and fetched directly through the official document record, so the table is
   established from the PDF rather than the failed listing render.
+- **NTMC legacy report rendering** — the official XLSX returned an unsupported
+  binary content response in the text browser, and the linked 2025 PDFs returned
+  cache misses when opened there. Checked 26 August 2026. The full binary files
+  were nevertheless fetched from the operator’s download URLs and parsed locally;
+  the data layer does not rely on the failed browser render.
 
 ## Stated gaps
 
@@ -195,9 +211,10 @@ the committed range was downloaded and parsed locally. Original wording:
   operator also publishes a separate cross-system series back to March 1996;
   those network records are not interchangeable with station entry/exit rows
   and remain a separate historical expansion.
-- The current committed NTMC pull covers September 2025–July 2026. Older
-  operator files and the New Taipei Transportation Bureau statistics system
-  remain to be fetched before a longer station trend is claimed.
+- The current committed NTMC network and line pull covers January 2025–July
+  2026. The station trend covers August 2025–July 2026; the older PDFs have no
+  station rows. The New Taipei Transportation Bureau statistics system remains
+  to be fetched before claiming an older station trend.
 - MOTC and TDX provide operator/line or structural data, not a substitute for
   each operator’s station-level historical series.
 - The source pages publish different measures (station counts, entry/exit,
