@@ -17540,3 +17540,59 @@ package records mark completion as subject to programme adjustment. LG11 remains
 a published siting dispute: residents objected to the alignment and land impacts,
 while the bureau calls the selected location the best feasible choice. These
 values are all retained with their apparent scope; none was averaged or selected.
+
+# Run 161 - “Sanmin Line” name check (25 August 2026)
+
+## Sourced
+
+This unit records the requested New Taipei “Sanmin Line” as a checked-and-failed
+subject rather than silently assigning the name to another project. The full
+Taipei DORTS network page lists 民生汐止線 and 社子線 as planning routes and lists
+the active construction routes, but no 三民線:
+https://www.dorts.gov.taipei/Content_List.aspx?n=6AB1B4653CB9DFAE
+
+The full New Taipei DORTS “four rings/eight lines” chronology and its official
+route-status table likewise name the New Taipei project families without a
+三民線 record:
+https://www.dorts.ntpc.gov.tw/service/information01
+https://www.dorts.ntpc.gov.tw/admin/content/upload/file/20231019/49f41733-28d7-44b8-8968-bcb846223c74.pdf
+
+The current official Sanying page identifies 三鶯線 as a distinct 14.29 km,
+12-station route opened on 30 June 2026, while the Taipei DORTS page identifies
+民生汐止線 separately:
+https://www.dorts.ntpc.gov.tw/about/route/1MJjdJr7dAv6
+
+The new page is 500+ words and every published factual sentence is cited. Gates:
+research 142 files/598 checked failures, cite 7,042 resolved citations,
+conflicts current, claims 20,580 sourced/4,468 TBC/0 ASSERTED, facts 17/17,
+unit tests 231/231, geometry clean, internal links 431,724 with no breaks or
+orphans, and build 2,590 generated pages with 2,748 postbuild glyph checks.
+
+## TBC
+
+No verified source under the requested name supplies a project identity, route
+length, station count, alignment, approval, cost, construction status, opening
+date or ridership. The searched source families were the full Taipei DORTS
+network page, the full New Taipei DORTS chronology, the official New Taipei
+route-status PDF, the current official Sanying project page and the existing
+project index. These gaps remain TBC; no equivalence to Sanying or to
+Minsheng–Xizhi is inferred.
+
+## Contradicted the corpus
+
+No existing corpus assertion was contradicted. The result is a source-boundary
+record for an impossible project name, not a claim that no similarly named
+local route can exist outside the checked records.
+
+## Conflicts found
+
+The requested “Sanmin” label conflicts with the official names 三鶯線
+(Sanying), 民生汐止線 (Minsheng–Xizhi) and 社子線 (Shizi); all are retained as
+separate names and no alias is selected. The dated official route table lists
+三鶯線 under construction, while the current Sanying route page records its
+30 June 2026 opening. That is a status-date conflict for Sanying, not evidence
+for a Sanmin Line, and the page does not convert it into one.
+
+The initial content parse exposed an unquoted colon in a YAML source title; it
+was corrected, the search index regenerated, and the generated claims audit was
+restored before commit. `probes/` remains unstaged.
