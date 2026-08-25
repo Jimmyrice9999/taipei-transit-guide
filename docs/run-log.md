@@ -18647,3 +18647,48 @@ Han-subset checks; unit 234/234; a11y 1,877 pages with no errors or warnings.
 Geometry and links remain clean from Run 177. This data-only refresh did not
 change the browser harness or page structure; generated claims output was
 restored and `probes/` remains untracked.
+
+## Run 179 - extend TRTC ridership to the 2015 archive (2026-08-26)
+
+### Sourced
+
+Extended the reproducible TRTC importer default from the last year to every
+official station ODS file in the operator's published archive: January 2015
+through July 2026, 139 monthly records and 121 current stations. The station
+tables retain entry, exit, movement and source URL for each month, so the
+existing station rank, line and network panels now have a multi-year trend.
+The exact TDX/ODS O52 spelling mismatch was normalised and documented; BL01's
+January–June 2015 zero rows remain visible before its July service opening.
+
+### TBC and checked failures
+
+TRTC's separate cross-system series reaches back to March 1996 but is not
+silently merged into station movement. Older NTMC XLSX/PDF formats and older
+TYMC statistics still need separate parsers and primary verification before
+they widen those operators' histories. No line total is inferred from TRTC's
+station series where the operator does not publish one.
+
+### Contradicted the corpus
+
+The prior ridership gap saying the committed TRTC pull began in July 2025 was
+closed by the full ODS archive fetch. The current TDX O52 label is also
+corrected against TRTC's own ODS header rather than published as an all-zero
+station series.
+
+### Conflicts found
+
+O52 is published as `St.lgnatius High School` in TDX and `St. Ignatius High
+School` in TRTC's ODS; both strings remain recorded and the narrow join rule is
+documented. The ODS's explicit BL01 zero rows before July 2015 are retained;
+no alternate historical value was selected.
+
+### Gates
+
+`cite` clean (1,670 content files; 7,266 citations); `research` 157 files/664
+checked failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build 2,775
+Han-subset checks; unit 234/234; a11y 1,877 pages with no errors or warnings.
+Browser verification: reflow, painted-box, keyboard/tree and print checks
+clean, zero axe violations across 1,876 pages, 820 screenshots and 108 PDFs.
+The 320/400%-equivalent and 1440px station, line and network renders were
+inspected. Generated audits, screenshots and PDFs were restored; `probes/`
+remains untracked.

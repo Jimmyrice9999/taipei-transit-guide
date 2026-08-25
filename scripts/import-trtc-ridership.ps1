@@ -11,10 +11,7 @@ physical-station columns in the source, not line-separated columns.
 [CmdletBinding()]
 param(
   [string]$Output = 'data/ridership/trtc-station.json',
-  [string[]]$Periods = @(
-    '202507', '202508', '202509', '202510', '202511', '202512',
-    '202601', '202602', '202603', '202604', '202605', '202606', '202607'
-  )
+  [string[]]$Periods = @()
 )
 
 $ErrorActionPreference = 'Stop'
@@ -22,6 +19,13 @@ $root = Split-Path -Parent $PSScriptRoot
 $outputPath = Join-Path $root $Output
 $tempRoot = Join-Path ([IO.Path]::GetTempPath()) 'taipei-transit-trtc-ridership'
 New-Item -ItemType Directory -Force -Path $tempRoot | Out-Null
+
+if ($Periods.Count -eq 0) {
+  $Periods = foreach ($year in 2015..2026) {
+    $lastMonth = if ($year -eq 2026) { 7 } else { 12 }
+    foreach ($month in 1..$lastMonth) { '{0}{1:D2}' -f $year, $month }
+  }
+}
 
 $odsNs = 'urn:oasis:names:tc:opendocument:xmlns:table:1.0'
 $textNs = 'urn:oasis:names:tc:opendocument:xmlns:text:1.0'
@@ -43,7 +47,10 @@ function Get-Cells([Xml.XmlElement]$row) {
 }
 
 function Normalize-Name([string]$name) {
-  return (($name -replace '\s*\([^)]*\)$', '').Trim().ToLowerInvariant())
+  $normalized = (($name -replace '\s*\([^)]*\)$', '').Trim().ToLowerInvariant())
+  # TDX's current English field has a one-character typo for O52; the
+  # operator's ODS header spells the same station "St. Ignatius High School".
+  return $normalized -replace '^st\.lgnatius ', 'st. ignatius '
 }
 
 function To-Number([string]$value) {
@@ -182,7 +189,7 @@ $networkRows = foreach ($period in $Periods) {
 }
 
 $document = [ordered]@{
-  retrieved = '2026-08-24'
+  retrieved = '2026-08-26'
   currentPeriod = Period-Label $Periods[-1]
   source = [ordered]@{
     id = 'trtc-station-ods'

@@ -21,6 +21,15 @@ entry, exit, line and station rows retained. Source: NTMC, *統計資料*, prima
 High confidence: the full index was fetched and the linked ODS files were
 parsed locally. Original wording: `115年7月全系統運量統計.ods`.
 
+The TRTC importer was then widened to the full station archive currently
+published by the operator: January 2015–July 2026, 139 monthly ODS files, 121
+current station records. The official files are station-by-day matrices; the
+data layer sums each station's entry and exit rows and preserves the original
+monthly URL for every point. Source: TRTC, *Ridership Counts*, primary,
+High confidence: the full English index was fetched and every dated ODS file in
+the committed range was downloaded and parsed locally. Original wording:
+`Station ridership statistics have been collected since 2015.`
+
 ## What is established
 
 ### Taipei Rapid Transit Corporation (TRTC)
@@ -158,6 +167,11 @@ parsed locally. Original wording: `115年7月全系統運量統計.ods`.
 4. **NTMC system/manual values.** NTMC states that its monthly data contain both
    system values and manual statistics. They are not presented as identical to
    gate-only station counts.
+5. **O52 station-name join.** The current TDX station record spells the English
+   name as `St.lgnatius High School`, while the TRTC ODS header spells it
+   `St. Ignatius High School`. The importer normalises only this exact mismatch;
+   the O52 values are retained rather than left as an unexplained all-zero
+   series.
 
 ## Checked and failed
 
@@ -177,9 +191,10 @@ parsed locally. Original wording: `115年7月全系統運量統計.ods`.
 
 ## Stated gaps
 
-- The current committed TRTC pull covers July 2025–July 2026 even though the
-  operator index reaches back to 2015. Extending the data layer to older months
-  requires fetching and parsing the remaining official ODS files.
+- The current committed TRTC station pull covers January 2015–July 2026. The
+  operator also publishes a separate cross-system series back to March 1996;
+  those network records are not interchangeable with station entry/exit rows
+  and remain a separate historical expansion.
 - The current committed NTMC pull covers September 2025–July 2026. Older
   operator files and the New Taipei Transportation Bureau statistics system
   remain to be fetched before a longer station trend is claimed.
