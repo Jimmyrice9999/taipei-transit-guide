@@ -17596,3 +17596,31 @@ for a Sanmin Line, and the page does not convert it into one.
 The initial content parse exposed an unquoted colon in a YAML source title; it
 was corrected, the search index regenerated, and the generated claims audit was
 restored before commit. `probes/` remains unstaged.
+
+## CI correction — Actions run 389 (25 August 2026)
+
+### Actual failure
+
+The failed job log, not its summary, identifies step `Build (root path, for the
+test suites)` as the failing step. The Next build itself generated all 2,590
+pages; postbuild then stopped with the exact error:
+
+```text
+postbuild: 1 page(s) render Han that is not in the subset they load.
+  Run `npm run fonts` and commit public/fonts/.
+  data/changelog/index.html (base subset) → 汐止
+```
+
+The job finished in 4m 38s with exit code 1. This is a font-subset coverage
+failure, not the earlier long-run CI ceiling. The local build before the Sanmin
+run-log append was stale with respect to the generated changelog, which is why
+the initial local gate did not reproduce it.
+
+### Fix and verification
+
+I reproduced the failure locally with a fresh build, ran `npm run fonts` against
+that completed export, and rebuilt. The second build passed all 2,748 Han-subset
+checks; the base subset grew by exactly two characters and no checker was
+weakened or skipped. The generated audit JSONs remain restored and `probes/`
+remains unstaged. The font correction is pushed separately and awaits Actions
+run 390 before the next research unit starts.
