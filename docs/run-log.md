@@ -18555,3 +18555,52 @@ keyboard/tree probes clean including Kinmen, zero axe violations across 1,874
 pages, 806 screenshots and 107 print PDFs. The 320/400%-equivalent and 1440px
 Kinmen screenshots were inspected. Generated audits, screenshots and PDFs were
 restored; `probes/` remains untracked.
+
+## Run 177 - Taiwan airport ground transport (2026-08-26)
+
+### Sourced
+
+Added `content/ticketing/guides/airport-ground-transport.md` (803 body words)
+and `docs/research/ticketing/airport-ground-transport.md`, linked the guide
+from the ticketing index, and added its page type to the browser harness. The
+full Civil Aeronautics Administration airport-service directory established a
+17-airport national boundary. Full operator pages supplied the Taoyuan Airport
+MRT timetable and fare table, Songshan transport categories and BR13 station
+map, Kaohsiung R4/bus/taxi access, and Taitung bus/taxi access and counter hours.
+The dated Taoyuan accessible-bus sheet was retained as a limited source rather
+than treated as a complete national timetable.
+
+### TBC and checked failures
+
+Current route, fare and frequency detail remains TBC for the remaining airports
+and for national coverage not exposed by the fetched pages. Taichung's detailed
+bus and transfer child pages and general transport page timed out. The Taoyuan
+Airport transport page returned no usable full-page lines, its in-town check-in
+page returned no lines, and the terminal-shuttle asset returned 403. Songshan's
+full transport page exposed categories but not route/fare detail. The Kaohsiung
+English bus URL redirected to the home page; the complete Chinese transport
+page was used. Each failed retrieval is recorded in the research file.
+
+### Contradicted the corpus
+
+No existing airport-ground-transport claim was contradicted. This unit adds the
+CAA directory boundary and keeps airport, municipal and operator layers
+separate instead of implying that one national timetable exists.
+
+### Conflicts found
+
+No direct numerical conflict survived among the fetched sources. The CAA's
+17-row service-desk directory and the operator pages describe different scopes:
+the former is a national airport inventory, while the latter expose selected
+airport access details. That scope difference is published, not merged into a
+single unsupported coverage claim.
+
+### Gates
+
+`cite` 7,266 resolved (7,059 primary); `research` 157 files/664 checked
+failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build 2,775 Han-subset
+checks; unit 234/234; a11y 1,877 pages clean; geometry and links clean. Browser
+verification: reflow, painted-box, keyboard/tree and print checks clean, zero
+axe violations across 1,876 pages, 820 screenshots and 108 print PDFs. The
+320/400%-equivalent and 1440px airport screenshots were inspected. Generated
+audits, screenshots and PDFs were restored; `probes/` remains untracked.

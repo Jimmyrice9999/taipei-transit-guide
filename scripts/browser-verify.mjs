@@ -217,6 +217,7 @@ const PAGE_TYPES = [
   { name: 'rail-cable-stations', url: '/rail/cable/stations/' },
   { name: 'gondola-station-maokong', url: '/rail/cable/stations/maokong-station/' },
   { name: 'ticketing-guides', url: '/ticketing/guides/' },
+  { name: 'ticketing-airport-ground', url: '/ticketing/guides/airport-ground-transport/' },
   { name: 'ticketing-fare-stages', url: '/ticketing/guides/bus-fare-stages/' },
   /* Run 122: dated fare history and the operator concession timeline are a
      distinct long-form ticketing page, so keep a representative in the

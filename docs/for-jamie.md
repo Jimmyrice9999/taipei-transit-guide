@@ -2,18 +2,17 @@
 
 ## Active handoff - 26 August 2026
 
-Run 176 adds the sourced Matsu island-ferry page and research record.
-It covers the five-island domestic network, Taiwan overnight service,
-Fuzhou mini-three-links, fares, crossing times, accessibility examples,
-booking rules and the live Daqiu weather suspension.
-The page has 926 sourced body words.
-Annual ridership, frequency/capacity series, full live timetable, complete
-accessibility inventory, Taipei-Port status and airport-pier ground transport
-remain TBC; all failed fetches are recorded as checked-and-failed.
-Conflicts retain both direction-specific Keelung fares, the static Daqiu
-schedule beside its dated cancellation, and the charter/booking contexts.
-Gates: cite 7,255; research 156/657; claims 0 ASSERTED; build 2,774;
-unit 234/234; a11y 1,876; browser zero axe across 1,875 pages, 813 screenshots,
-107 PDFs; Matsu inspected at 320/1440.
+Run 177 adds the sourced Taiwan airport ground-transport guide and research
+record. It establishes the CAA's 17-airport service-directory boundary and
+documents full-source access details for Taoyuan, Songshan, Kaohsiung and
+Taitung, with a dated Taoyuan accessible-bus sheet.
+The page has 803 sourced body words. Taichung detail, Songshan route/fares,
+Taoyuan shuttle/bus/taxi detail and complete national airport coverage remain
+TBC; failed fetches are recorded as checked-and-failed.
+No direct numerical conflict was found; directory scope and operator scope are
+kept separate.
+Gates: cite 7,266; research 157/664; claims 0 ASSERTED; build 2,775;
+unit 234/234; a11y 1,877; browser zero axe across 1,876 pages, 820 screenshots,
+108 PDFs; airport inspected at 320/1440.
 Generated audits restored; `probes/` remains untracked.
-Next: airport ground transport, then the remaining Part 14 modes.
+Next: remaining Part 14 modes after airport coverage.
