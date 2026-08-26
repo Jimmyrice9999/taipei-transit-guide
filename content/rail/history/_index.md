@@ -38,3 +38,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Hualien–Ruisui Reconstruction Record](/rail/history/hualien-ruisui-double-track/)
 - [The Taiwan Railways Su'aoxin–Hanben Double-track Record](/rail/history/suaoxin-hanben-double-track/)
 - [The Taiwan Railways Hualien Port Line Reconstruction Record](/rail/history/hualien-port-line-reconstruction/)
+- [The Taiwan Railways Songshan–Nangang Underground Record](/rail/history/songshan-nangang-underground/)

@@ -20539,3 +20539,59 @@ links checked across 2,831 pages with no broken links, unresolved fragments or
 orphan pages; search 1,915; nav 19/19; unit 234/234; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 215 - add TRA Songshan–Nangang underground record (2026-08-26)
+
+### Sourced
+
+Added Songshan–Nangang as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 96 as Songshan–Nangang
+at 7.7 km and names the Railway Reconstruction Bureau. Its rendered places
+table aligns with the following chronology row: construction in 1998,
+operation from 2008 and `鐵路地下化` (railway underground):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML history table does not repeat a matching row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The current operator station-information pages identify Songshan 0990 and
+Nangang 0980:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/0990`
+and
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/0980`.
+The committed TDX WL pull places Nangang at source sequence 8 and 19.3 km,
+and Songshan at source sequence 9 and 22.1 km: one-based positions 9 and 10,
+with a 2.8 km endpoint-field difference. The current TDX interval is kept
+separate from the historical 7.7 km project record.
+
+### TBC and checked failures
+
+The surveyed project boundary, tunnel portals, station relocation or depth
+schedule, contract and completion records, detailed structures, current
+as-built track inventory and the reason for the 7.7 km versus 2.8 km
+difference remain TBC. TDX sequence adjacency is not used to infer train
+stopping patterns or historical construction limits.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The new record is kept as a historical
+construction subject beside, rather than merged into, the current Songshan
+and Nangang station pages and TDX Western Main Line interval.
+
+### Conflicts found
+
+The historical operator PDF supplies a 7.7 km Songshan–Nangang underground
+record, while the current operator HTML omits a matching row. The current TDX
+endpoint fields differ by 2.8 km. The checked primaries do not state whether
+the two measurements use different surveyed boundaries, station reference
+points or project scopes, so neither value is averaged or silently substituted.
+
+### Gates
+
+`cite` clean (1,699 content files; 7,440 citations); `research` clean (186
+files; 785 checked failures); claims 24,860 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,685 static pages and postbuild checked 2,833 pages; 473,312
+internal links checked across 2,833 pages with no broken links, unresolved
+fragments or orphan pages; search 1,916; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.

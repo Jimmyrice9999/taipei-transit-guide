@@ -2,18 +2,18 @@
 
 ## Active handoff - 26 August 2026
 
-Run 214 adds the next verified TRA subject, the Hualien Port Line
-reconstruction record. The complete operator construction-history PDF records
-10.5 km, construction in 1992 and operation from 2004, with heavier rail and
-PC sleepers. The current operator HTML omits this older row and instead lists
-Xincheng–Hualien Port at 19.2 km. Current operator and TDX data supply Hualien
-7000 as a reference station but no named Hualien Port passenger endpoint. The
-surveyed boundary, former station sequence, current service boundary and
-relationship to the other Hualien Port-named records remain TBC.
+Run 215 adds the next verified TRA subject, the Songshan–Nangang underground
+record. The complete operator construction-history PDF records 7.7 km, names
+the Railway Reconstruction Bureau, and aligns the project with construction
+in 1998 and operation from 2008 as railway underground. The current operator
+station pages identify 0990 Songshan and 0980 Nangang; current TDX WL fields
+place them at one-based positions 10 and 9 with a separate 2.8 km endpoint
+interval. The historical boundary, tunnel portals, detailed works, and reason
+for the 7.7 km versus 2.8 km difference remain TBC.
 
-Gates: cite 1,698/7,434; research 185/781; claims 24,843 sourced/4,495
-TBC/0 ASSERTED; build 2,683 static pages and 2,831 postbuild pages; links
-473,075 across 2,831 pages; search 1,915; nav 19/19; unit 234/234;
+Gates: cite 1,699/7,440; research 186/785; claims 24,860 sourced/4,495
+TBC/0 ASSERTED; build 2,685 static pages and 2,833 postbuild pages; links
+473,312 across 2,833 pages; search 1,916; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD zero genuine contrast failures.
 Generated audits were restored after verification; `probes/` remains untracked.
 
