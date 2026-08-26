@@ -2,24 +2,75 @@
 
 ## Active handoff - 27 August 2026
 
-Run 227 adds the next verified TRA subject, the Shanli–Taitung double-track
-record. The complete operator construction-history PDF records row 110 at
-7.3 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
-Office as constructor, 2010 and 2013 year fields, and a double-tracking
-explanation. The current operator pages identify Shanli 6010 and Taitung 6000;
-current TDX exposes an EL interval of 8.2 km with Luye between the endpoints,
-kept separate from the historical project value because the sources do not
-establish a common boundary.
+Run 228 adds the next verified TRA subject, the Huatan–Shetou double-track
+record. The complete operator construction-history PDF records row 111 at
+4.3 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
+Office as constructor, 2006 and 2014 year fields, and a Yuan-Lin Railway
+elevated explanation. The current operator pages identify Huatan 3370 and
+Shetou 3410; current TDX exposes a WL interval of 15.3 km with Dacun, Yuanlin
+and Yongjing between the endpoints, kept separate from the historical project
+value because the sources do not establish a common boundary.
 
-Gates: cite 1,711/7,528; research 198/841; claims 25,107 sourced/4,495
-TBC/0 ASSERTED; build 2,709 static pages and 2,857 postbuild pages; links
-476,143 across 2,857 pages; links audit 1,917 pages/745 destinations; search
-1,928; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,712/7,536; research 199/845; claims 25,128 sourced/4,495
+TBC/0 ASSERTED; build 2,711 static pages and 2,859 postbuild pages; links
+476,379 across 2,859 pages; links audit 1,918 pages/746 destinations; search
+1,929; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 111, Huatan–Shetou) before broader fleet/systems work.
+(row 112, Jinlun–Taimali) before broader fleet/systems work.
+
+## Run 228 - add TRA Huatan–Shetou double-track record (2026-08-27)
+
+### Sourced
+
+Added row 111 from the complete operator construction-history PDF. It records
+Huatan–Shetou at 4.3 km as a double-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2006
+in the construction-year field, 2014 in the operation-start year field, and
+Yuan-Lin Railway elevated as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Huatan 3370 and Shetou 3410. The committed
+TDX WL record places them at source sequences 59 and 63, with supplied
+travelled-distance fields 217.5 km and 232.8 km, a difference of 15.3 km;
+Dacun, Yuanlin and Yongjing are the three current members between them:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/3370`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/3410`.
+
+### TBC and checked failures
+
+The surveyed 4.3 km boundary, exact construction/elevated-railway/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 15.3 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 111; that is retained as a
+coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical double-track record is
+kept beside, rather than merged into, the current Huatan, Shetou and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 4.3 km, while subtracting the current TDX WL endpoint
+fields gives 15.3 km. Dacun, Yuanlin and Yongjing intervene in the current
+ordered record, and the sources do not establish a common distance boundary or
+measurement purpose, so the values are reported separately and are not
+averaged.
+
+### Gates
+
+`cite` clean (1,712 content files; 7,536 citations); `research` clean (199
+files; 845 checked failures); claims 25,128 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,711 static pages and postbuild checked 2,859 pages; 476,379
+internal links checked across 2,859 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,918 pages and 746 linkable
+destinations; search 1,929; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 227 - add TRA Shanli–Taitung double-track record (2026-08-27)
 
