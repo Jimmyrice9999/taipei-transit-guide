@@ -149,6 +149,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6090 as Dongzhu (東竹)."
+  - id: tra-station-fuli
+    title: "Fuli Station information"
+    titleOriginal: "富里車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6080"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 6080 as Fuli (富里)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -177,3 +186,4 @@ The [Xinshi–Yongkang double-track record](/rail/history/xinshi-yongkang-double
 The [Wuhe–Sanmin single-track record](/rail/history/wuhe-sanmin-single-track/) retains row 104's 1.6 km and 2013/2013 fields beside its Hualien–Taitung electrification explanation and the current Sanmin 6120 EL record, without inventing a Wuhe endpoint.[^tra-construction-history][^tra-station-sanmin][^tdx-tra-line]
 The [Sanmin–Yuli single-track record](/rail/history/sanmin-yuli-single-track/) retains row 105's 4.1 km and 2013/2013 fields beside its Hualien–Taitung electrification explanation and the current Sanmin 6120–Yuli 6110 EL record.[^tra-construction-history][^tra-station-sanmin][^tra-station-yuli][^tdx-tra-line]
 The [Dongli–Dongzhu single-track record](/rail/history/dongli-dongzhu-single-track/) retains row 106's 2.1 km and 2012/2013 fields beside its Hualien–Taitung electrification explanation and the current Dongli 6100–Dongzhu 6090 EL record.[^tra-construction-history][^tra-station-dongli][^tra-station-dongzhu][^tdx-tra-line]
+The [Dongzhu–Fuli single-track record](/rail/history/dongzhu-fuli-single-track/) retains row 107's 2.9 km and 2012/2013 fields beside its Hualien–Taitung electrification explanation and the current Dongzhu 6090–Fuli 6080 EL record.[^tra-construction-history][^tra-station-dongzhu][^tra-station-fuli][^tdx-tra-line]

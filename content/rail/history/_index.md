@@ -47,3 +47,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Wuhe–Sanmin Single-track Record](/rail/history/wuhe-sanmin-single-track/)
 - [The Taiwan Railways Sanmin–Yuli Single-track Record](/rail/history/sanmin-yuli-single-track/)
 - [The Taiwan Railways Dongli–Dongzhu Single-track Record](/rail/history/dongli-dongzhu-single-track/)
+- [The Taiwan Railways Dongzhu–Fuli Single-track Record](/rail/history/dongzhu-fuli-single-track/)

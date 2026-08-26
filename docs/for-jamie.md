@@ -2,23 +2,78 @@
 
 ## Active handoff - 27 August 2026
 
-Run 223 adds the next verified TRA subject, the Dongli–Dongzhu single-track
-record. The complete operator construction-history PDF records row 106 at
-2.1 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
+Run 224 adds the next verified TRA subject, the Dongzhu–Fuli single-track
+record. The complete operator construction-history PDF records row 107 at
+2.9 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
 Office as constructor, 2012 and 2013 year fields, and a Hualien–Taitung
-electrification explanation. The row's year fields are 2012 and 2013. The
-current operator pages identify Dongli 6100 and Dongzhu 6090; current TDX
-exposes an adjacent EL interval of 6.0 km, kept separate from the historical
+electrification explanation. Its adjacent English cell spells the pair
+`Dongzhi-Fuli`, while the current operator page identifies 東竹 as Dongzhu;
+that transcription difference is recorded rather than silently normalized.
+The current operator pages identify Dongzhu 6090 and Fuli 6080; current TDX
+exposes an adjacent EL interval of 6.1 km, kept separate from the historical
 project value because the sources do not establish a common boundary.
 
-Gates: cite 1,707/7,498; research 194/824; claims 25,023 sourced/4,495
-TBC/0 ASSERTED; build 2,701 static pages and 2,849 postbuild pages; links
-475,199 across 2,849 pages; search 1,924; nav 19/19; unit 234/234;
-accessibility checks clean; CVD zero genuine contrast failures. Generated audits
-were restored after verification; `probes/` remains untracked.
+Gates: cite 1,708/7,505; research 195/829; claims 25,044 sourced/4,495
+TBC/0 ASSERTED; build 2,703 static pages and 2,851 postbuild pages; links
+475,435 across 2,851 pages; links audit 1,914 pages/742 destinations; search
+1,925; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+contrast failures. Generated audits were restored after verification;
+`probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
 before broader fleet/systems work.
+
+## Run 224 - add TRA Dongzhu–Fuli single-track record (2026-08-27)
+
+### Sourced
+
+Added row 107 from the complete operator construction-history PDF. It records
+Dongzhu–Fuli at 2.9 km as a single-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2012
+in the construction-year field, 2013 in the operation-start year field, and
+Hualien–Taitung railway electrification engineering as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The same PDF's English cell spells the pair `Dongzhi-Fuli`, while its Chinese
+row is 東竹─富里. The current operator pages identify station 6090 as Dongzhu
+and station 6080 as Fuli. The committed TDX EL record places them adjacently at
+source sequences 54 and 55, with supplied travelled-distance fields 265.5 km
+and 271.6 km, a difference of 6.1 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6090`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6080`.
+
+### TBC and checked failures
+
+The surveyed 2.9 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 6.1 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 107; that is retained as a coverage
+difference. No operator note explaining the PDF's `Dongzhi` spelling variant
+was found.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Dongzhu, Fuli and TDX records.
+
+### Conflicts found
+
+The historical PDF gives 2.9 km, while subtracting the current TDX EL endpoint
+fields gives 6.1 km. The PDF's English cell says `Dongzhi-Fuli`, while the
+Chinese row and current station page use 東竹 / Dongzhu. The sources do not
+establish a common distance boundary or explain the spelling difference, so both
+discrepancies are reported without averaging or normalization.
+
+### Gates
+
+`cite` clean (1,708 content files; 7,505 citations); `research` clean (195
+files; 829 checked failures); claims 25,044 sourced/4,495 TBC/0 ASSERTED; build
+generated 2,703 static pages and postbuild checked 2,851 pages; 475,435 internal
+links checked across 2,851 pages with no broken links, unresolved fragments or
+orphan pages; links audit 1,914 pages and 742 linkable destinations; search
+1,925; nav 19/19; unit 234/234; accessibility checks clean; CVD audit reports
+zero genuine contrast failures. Generated audit reports were restored after
+verification; `probes/` remains untracked.
 
 ## Run 223 - add TRA Dongli–Dongzhu single-track record (2026-08-27)
 
