@@ -19344,3 +19344,52 @@ across 2,791 pages with no broken links, unresolved fragments or orphan pages;
 unit 234/234; navigation 19/19; a11y 1,885 pages with no errors or warnings;
 CVD audit reports zero genuine WCAG contrast failures. Generated audit reports
 were restored after verification; `probes/` remains untracked.
+
+## Run 193 - add TRA Houtong–Sandiaoling double-track history (2026-08-26)
+
+### Sourced
+
+Added Houtong–Sandiaoling as the next TRA construction-history subject, distinct
+from a current route identity. TRA's full construction table lists row 42 as a
+2.5 km double-track segment, constructed in 1967 and opened in 1968:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The full current Houtong and Sandiaoling station pages establish station IDs 7350
+and 7330, current adjacency and service directions:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7350`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7330`.
+TRA's full bicycle-train station map keeps them in the current New Taipei /
+Pingxi-Shen'ao passenger-information grouping:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip113/gobybiketrainno`.
+The full 152-page TRA safety report treats Houtong–Shuangxi as a wider modern
+engineering corridor with 16 300–400 m curve bottlenecks and a proposed cutoff:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/2c408d0e-35fb-41ce-bcd8-a756ec01e30d`.
+
+### TBC and checked failures
+
+Exact day/month and completion/commissioning record, track diagrams/surveyed
+2.5 km boundary, and whether the modern Houtong–Shuangxi proposal was built
+remain TBC. The 2017 signal/track-counting PDF fetch timed out and was not used.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The next construction row is now represented
+without inventing a separate current line identity; historical 侯硐 and current
+猴硐 spellings remain visible.
+
+### Conflicts found
+
+The historical construction-table scope is 2.5 km, while the modern safety-study
+scope is Houtong–Shuangxi and is wider; these are separate measurements. The
+construction table's historical `侯硐` differs from current `猴硐`; no second
+station is inferred. Current passenger-information groupings are kept separate
+from the historical construction entry.
+
+### Gates
+
+`cite` clean (1,680 content files; 7,325 citations); `research` clean (167
+files; 704 checked failures); claims 24,552 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,795 Han-subset checks; 468,812 internal links checked
+across 2,795 pages with no broken links, unresolved fragments or orphan pages;
+unit 234/234; navigation 19/19; browser/accessibility checks clean; CVD audit
+reports zero genuine WCAG contrast failures. Generated audit reports were
+restored after verification; `probes/` remains untracked.

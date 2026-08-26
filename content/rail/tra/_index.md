@@ -41,8 +41,17 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full operator PDF supplies the historical route entries used by the Linkou, Shen'ao–Liandong and Hualien–Tianpu history pages."
+  - id: tra-bike-route
+    title: "Taiwan Railways bicycle-train station map"
+    titleOriginal: "臺鐵自行車列車路線資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip113/gobybiketrainno"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator page lists Houtong and Sandiaoling in the New Taipei and Pingxi/Shen'ao station groupings."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
 
-The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/), the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), the [Taipei–Danshui Line](/rail/history/taipei-danshui-line/), the [Xindian Line](/rail/history/xindian-line/), the [Zhonghe Line](/rail/history/zhonghe-line/), the [Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/), the [Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/) and the [Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/), kept in the cross-system history section because their historical route records are not current TDX route identities.[^tra-history][^tra-construction-history] Further closed alignments follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
+The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/), the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), the [Taipei–Danshui Line](/rail/history/taipei-danshui-line/), the [Xindian Line](/rail/history/xindian-line/), the [Zhonghe Line](/rail/history/zhonghe-line/), the [Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/), the [Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/) and the [Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/), while the [Houtong–Sandiaoling double-track segment](/rail/history/houtong-sandiaoling-double-track/) is kept alongside them as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history][^tra-bike-route] Further historical alignments and construction subjects follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
