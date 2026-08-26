@@ -19647,12 +19647,13 @@ audit reports were restored after verification; `probes/` remains untracked.
 ### Sourced
 
 Added Jianan–Qingshui as the next TRA construction-history subject, kept distinct
-from a current route identity. The full current operator HTML table lists row 27
-as a 6.0 km double-track segment, constructed in 1974 and opened in 1974, with
-TRA as constructor and the explanation that it was extended to double track:
-`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
-The full operator PDF repeats the same entry as row 48:
+from a current route identity. The full operator PDF records row 48 as a 6.0 km
+double-track segment, constructed in 1974 and opened in 1974, with TRA as
+constructor and the explanation that it was extended to double track:
 `https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML table omits this subject; its row 27 is
+Xincheng–Hualian Port:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
 The full current operator station pages identify Taichung Port as 2210 and
 Qingshui as 2220:
 `https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2210`,
@@ -19670,15 +19671,17 @@ records for this exact historical boundary.
 
 ### Contradicted the corpus
 
-No prior corpus claim was contradicted. The operator HTML and PDF agree on the
-subject, so it is added without turning a historical double-track record into a
-separate current route identity or conflating the current TDX distance fields
-with the historical construction scope.
+No prior corpus claim was contradicted. The PDF record is added without turning
+a historical double-track record into a separate current route identity or
+conflating the current TDX distance fields with the historical construction
+scope.
 
 ### Conflicts found
 
-No disagreement was found between the full operator HTML and PDF: they provide
-the same 6.0 km, 1974/1974 and double-track record under different row numbers.
+The full PDF contains Jianan–Qingshui as row 48 with the 6.0 km, 1974/1974 and
+double-track record, while the current HTML table omits it and has
+Xincheng–Hualian Port as row 27. The two primary presentations therefore have
+different row coverage; the discrepancy is retained rather than resolved.
 The current TDX endpoint-distance difference is also 6.0 km at the supplied
 one-decimal precision. That numerical agreement is retained as arithmetic only;
 it is not treated as proof that the live interval and historical construction
@@ -19689,6 +19692,55 @@ boundary are surveyed equivalents.
 `cite` clean (1,686 content files; 7,359 citations); `research` clean (173
 files; 729 checked failures); claims 24,641 sourced/4,492 TBC/0 ASSERTED;
 build completed with 2,807 Han-subset checks; 470,238 internal links checked
+across 2,807 pages with no broken links, unresolved fragments or orphan pages;
+search 1,903 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
+## Run 200 - correct TRA Jianan–Qingshui source boundary (2026-08-26)
+
+### Sourced
+
+The full operator PDF records Jianan–Qingshui as row 48: 6.0 km, TRA as
+constructor, construction in 1974, operation from 1974 and 添築雙線 (extended
+to be double-tracked):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The complete current operator HTML page was reread and found to omit the
+subject; its row 25 is Xinpu–Tongxiao, row 26 is Yuanli–Rinan and row 27 is
+Xincheng–Hualian Port:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+Run 199's initial claim that the HTML listed Jianan–Qingshui was corrected in
+the content page, research file, handoff and Run 199 log block. The current
+station and TDX layers remain unchanged.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract/completion certificate,
+intermediate historical station register, surveyed 6.0 km boundary and current
+track-count/as-built status remain TBC. No checked primary source supplies those
+records for this exact historical boundary.
+
+### Contradicted the corpus
+
+The correction supersedes an attribution error in Run 199's working record; no
+prior published corpus claim was contradicted. The PDF record remains published
+without turning it into a separate current route identity or conflating current
+TDX distance fields with the historical construction scope.
+
+### Conflicts found
+
+The full PDF contains Jianan–Qingshui as row 48 with the 6.0 km, 1974/1974 and
+double-track record, while the current HTML table omits it and has
+Xincheng–Hualian Port as row 27. The two primary presentations have different
+row coverage, which is retained rather than resolved. The current TDX
+endpoint-distance difference is 6.0 km at the supplied one-decimal precision;
+that numerical agreement is retained as arithmetic only, not as proof that the
+live interval and historical construction boundary are surveyed equivalents.
+
+### Gates
+
+`cite` clean (1,686 content files; 7,359 citations); `research` clean (173
+files; 730 checked failures); claims 24,642 sourced/4,492 TBC/0 ASSERTED;
+build completed with 2,807 Han-subset checks; 470,240 internal links checked
 across 2,807 pages with no broken links, unresolved fragments or orphan pages;
 search 1,903 entries; unit 234/234; navigation 19/19; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated

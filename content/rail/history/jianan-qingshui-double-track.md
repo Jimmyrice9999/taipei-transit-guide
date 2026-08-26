@@ -1,6 +1,6 @@
 ---
 title: The Taiwan Railways Jianan–Qingshui Double Track
-summary: A 6.0 km TRA construction-history segment recorded as built and opened in 1974 with an added second track, kept separate from the current Western Main Line data layer.
+summary: A 6.0 km TRA construction-history record preserved in the operator PDF as built and opened in 1974 with an added second track, while the current HTML history table omits the row.
 order: 20
 updated: 2026-08-26
 aliases:
@@ -9,19 +9,19 @@ aliases:
   - Jianan–Qingshui
   - Jianan–Qingshui double track
 facts:
-  - label: Operator-listed construction segment length
+  - label: Operator-PDF construction segment length
     value: 6.0
     unit: km
-    source: tra-history-page
-  - label: Construction year
+    source: tra-construction-history
+  - label: Construction year in the operator PDF
     value: 1974
-    source: tra-history-page
-  - label: Operation-start year
+    source: tra-construction-history
+  - label: Operation-start year in the operator PDF
     value: 1974
-    source: tra-history-page
-  - label: Operator listed as constructor
+    source: tra-construction-history
+  - label: Operator listed as constructor in the PDF
     value: Taiwan Railways Administration
-    source: tra-history-page
+    source: tra-construction-history
   - label: Current Taichung Port station record
     value: Taichung Port (2210)
     source: tra-station-taichung-port
@@ -31,7 +31,7 @@ facts:
 specs:
   - label: Historical construction-table explanation
     value: Extended to be double-tracked
-    source: tra-history-page
+    source: tra-construction-history
   - label: Current TDX line membership
     value: Western Main Line (Coast Line)
     source: tdx-tra-line
@@ -47,7 +47,7 @@ sources:
     accessed: 2026-08-26
     kind: primary
     lang: zh-Hant
-    note: Full current operator HTML page. Row 27 lists Jianan–Qingshui (double track) at 6.0 km, built in 1974, opened in 1974, with TRA as constructor and the explanation 添築雙線.
+    note: "Full current operator HTML page, marked last updated 2026-04-27. Its current table omits Jianan–Qingshui: rows 25 and 26 are Xinpu–Tongxiao and Yuanli–Rinan, and row 27 is Xincheng–Hualian Port."
   - id: tra-construction-history
     title: Chronological History of Railroad Construction
     titleOriginal: 路線修築沿革
@@ -88,20 +88,24 @@ sources:
 
 ## One historical double-track record
 
-Taiwan Railways' full current construction-history table lists row 27 as
-甲南–清水(雙線), Jianan–Qingshui, at 6.0 km.[^tra-history-page] The row gives
-1974 as both the construction year and the operation-start year, with Taiwan
-Railways Administration listed as the constructor.[^tra-history-page] Its
-explanation is 添築雙線, rendered by the operator as “Extended to be
-double-tracked.”[^tra-history-page]
+The full operator construction-history PDF identifies row 48 as
+甲南─清水(雙線), Jianan–Qingshui, at 6.0 km, with Taiwan Railways
+Administration as constructor.[^tra-construction-history] Its aligned
+chronology gives 1974 as both the construction year and the operation-start
+year.[^tra-construction-history] Its explanation is 添築雙線, rendered by the
+operator as “Extended to be double-tracked.”[^tra-construction-history]
 
-The full operator PDF repeats the same subject as row 48, with the same 6.0 km
-distance and 1974/1974 chronology.[^tra-construction-history] The HTML and PDF
-are two presentations of the same operator construction record, not two
-independent route measurements.[^tra-history-page][^tra-construction-history]
+The current operator HTML history page is a different presentation boundary.
+It is marked last updated 2026-04-27; rows 25 and 26 are Xinpu–Tongxiao and
+Yuanli–Rinan, and row 27 is Xincheng–Hualian Port.[^tra-history-page] A full read of that current
+table found no Jianan–Qingshui row.[^tra-history-page] The PDF still contains
+the subject as row 48, so this page preserves the discrepancy rather than
+deleting the PDF record or pretending that the current HTML and PDF have
+identical row coverage.[^tra-history-page][^tra-construction-history]
+
 The 6.0 km value is therefore retained as the historical construction-table
-scope, not converted into a current track-count or a separate present-day line
-identity.[^tra-history-page][^tra-construction-history]
+scope in the PDF, not converted into a current track-count or a separate
+present-day line identity.[^tra-construction-history]
 
 ## Current station records are a separate layer
 
@@ -125,7 +129,7 @@ and the current line-membership data as separate records.[^tra-history-page][^td
 
 ## Records still missing
 
-The checked operator records provide the distance, years, constructor and
+The checked operator records provide the PDF distance, years, constructor and
 double-track explanation, but not the day and month of either milestone, the
 contract and completion certificate, a surveyed historical boundary, an
 intermediate station register or a current track-count/as-built survey.[^tra-history-page][^tra-construction-history]
