@@ -19393,3 +19393,52 @@ across 2,795 pages with no broken links, unresolved fragments or orphan pages;
 unit 234/234; navigation 19/19; browser/accessibility checks clean; CVD audit
 reports zero genuine WCAG contrast failures. Generated audit reports were
 restored after verification; `probes/` remains untracked.
+
+## Run 194 - add TRA Changhua–Minxiong double-track history (2026-08-26)
+
+### Sourced
+
+Added Changhua–Minxiong as the next TRA construction-history subject, distinct
+from a current route identity. The full current TRA construction-history HTML
+table lists a 71.7 km double-track segment, constructed in 1957 and opened in
+1970, with TRA as constructor and the explanation that it was extended to
+double track:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The full operator PDF repeats the same entry as row 43:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The full current operator station pages identify Changhua as 3360 and Minxiong
+as 4060:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/3360`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4060`.
+The committed TDX StationOfLine pull keeps current Western Main Line membership
+separate from the historical construction-table boundary.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract/completion certificate,
+intermediate historical station register, surveyed 71.7 km boundary and current
+track-count/as-built status remain TBC. No checked primary source supplies those
+records for this exact historical boundary.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The next operator construction row is now
+represented without turning a historical double-track segment into a separate
+current route identity or conflating it with current TDX travelled distances.
+
+### Conflicts found
+
+The HTML table and PDF repeat the same 71.7 km, 1957 and 1970 record rather than
+providing independent route measurements. The historical `添築雙線` explanation
+is retained separately from current TDX station membership and current station
+pages; no current track-count claim is inferred.
+
+### Gates
+
+`cite` clean (1,681 content files; 7,332 citations); `research` clean (168
+files; 708 checked failures); claims 24,569 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,797 Han-subset checks; 469,053 internal links checked
+across 2,797 pages with no broken links, unresolved fragments or orphan pages;
+unit 234/234; navigation 19/19; browser/accessibility checks clean; CVD audit
+reports zero genuine WCAG contrast failures. Generated audit reports were
+restored after verification; `probes/` remains untracked.

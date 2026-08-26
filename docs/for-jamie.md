@@ -2,17 +2,18 @@
 
 ## Active handoff - 26 August 2026
 
-Run 193 adds the Houtong–Sandiaoling double-track construction segment as a
-distinct TRA history subject. TRA's construction table gives 2.5 km, construction
-in 1967 and double-track operation from 1968. Current TRA station pages establish
-Houtong (7350) and Sandiaoling (7330); a wider TRA safety report separately
-describes 16 tight curves in the Houtong–Shuangxi corridor and a proposed cutoff.
-The historical 侯硐/current 猴硐 spelling and the 2.5 km versus wider-corridor
-boundaries remain explicit. Exact commissioning details, surveyed boundaries,
-and whether the modern proposal was built remain TBC.
+Run 194 adds the Changhua–Minxiong double-track construction segment as a
+distinct TRA history subject. The operator's full construction table and PDF
+agree on 71.7 km, construction in 1957, and operation from 1970, with TRA as
+constructor and an explanation that it was extended to double track. Current TRA
+station pages identify Changhua (3360) and Minxiong (4060), while the TDX line
+snapshot keeps their current Western Main Line memberships separate from the
+historical construction boundary. Exact commissioning details, surveyed
+boundaries, intermediate historical stations and current track-count status
+remain TBC.
 
-Gates: cite 1,680/7,325; research 167/704; claims 0 ASSERTED; build 2,795;
-links 468,812 across 2,795 pages; search 1,897; nav 19/19; unit 234/234;
+Gates: cite 1,681/7,332; research 168/708; claims 0 ASSERTED; build 2,797;
+links 469,053 across 2,797 pages; search 1,898; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD zero genuine contrast failures.
 Generated audits restored; `probes/` remains untracked.
 

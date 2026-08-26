@@ -660,6 +660,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The full one-page official guidance, effective 19 July 2025. It describes fixed and special services, ticket-sales windows, online reservations, wind thresholds and refunds."
+  - id: "rail-history-changhua-minxiong-double-track-tra-history-page"
+    title: "Railway route construction history"
+    titleOriginal: "臺灣鐵路路線建造史"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-1-5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full operator HTML page. Its construction table lists Changhua–Minxiong (double track) at 71.7 km, built in 1957, opened in 1970, with TRA as constructor and the explanation that it was extended to double track."
+  - id: "rail-history-changhua-minxiong-double-track-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Its row 43 repeats the Changhua–Minxiong double-track segment as 71.7 km, with 1957 construction and 1970 operation-start fields."
   - id: "rail-history-incidents-dorts-flood-technical-87"
     title: "Practical water, environmental-control and fire-safety engineering, p. 87"
     titleOriginal: "捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務"
@@ -2194,6 +2212,30 @@ reconciled by guesswork.
 
 - [Public ferry timetable](https://www.phpto.gov.tw/home.jsp?id=106) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-timetable]
 - [Public ferry ticket-purchase guidance](https://www.penghu.gov.tw/userfiles/03/files/%E6%BE%8E%E6%B9%96%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%AC%E5%85%B1%E8%BB%8A%E8%88%B9%E7%AE%A1%E7%90%86%E8%99%95%E4%BA%A4%E9%80%9A%E8%88%B9%E8%88%AA%E7%8F%AD%E8%B3%BC%E7%A5%A8%E9%A0%88%E7%9F%A5114_07_19.pdf) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-ticket-guidance]
+
+## The Taiwan Railways Changhua–Minxiong Double Track — One historical double-track record
+
+Discussed on [The Taiwan Railways Changhua–Minxiong Double Track](/rail/history/changhua-minxiong-double-track/) in the source page's “One historical double-track record” section.[^rail-history-changhua-minxiong-double-track-tra-history-page]
+
+### One historical double-track record
+
+Taiwan Railways' full construction-history table lists Changhua–Minxiong as a
+71.7 km double-track segment.[^rail-history-changhua-minxiong-double-track-tra-history-page] The table gives 1957 as the
+construction year and 1970 as the operation-start year, with Taiwan Railways
+Administration listed as the constructor.[^rail-history-changhua-minxiong-double-track-tra-history-page] Its explanation is
+添築雙線, rendered by the operator as “Extended to be double-tracked.”[^rail-history-changhua-minxiong-double-track-tra-history-page]
+
+The full operator PDF repeats the same segment and values in its row 43, so the
+HTML table and PDF are two presentations of the same primary construction
+record, not two different measurements.[^rail-history-changhua-minxiong-double-track-tra-construction-history] This page
+therefore treats 71.7 km as the operator's historical construction-table scope.
+It does not turn the row into a separate present-day line, and it does not infer
+that the table's operation-start field supplies an exact commissioning date.[^rail-history-changhua-minxiong-double-track-tra-history-page][^rail-history-changhua-minxiong-double-track-tra-construction-history]
+
+#### Sources for this entry
+
+- [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-history-page]
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-construction-history]
 
 ## Metro incidents and service disruptions — Conflicts and gaps
 

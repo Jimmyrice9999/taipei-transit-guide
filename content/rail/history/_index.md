@@ -20,3 +20,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/)
 - [The Taiwan Railways Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/)
 - [The Taiwan Railways Houtong–Sandiaoling Double Track](/rail/history/houtong-sandiaoling-double-track/)
+- [The Taiwan Railways Changhua–Minxiong Double Track](/rail/history/changhua-minxiong-double-track/)
