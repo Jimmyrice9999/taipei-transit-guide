@@ -2,14 +2,16 @@
 
 ## Active handoff - 26 August 2026
 
-Run 186 adds the former Taipei–Danshui alignment as the fourth closed TRA
-history subject. Its 21.2 km operator entry, 1988 operating-era boundary and
-8 May 1989 dismantling start remain separate from DORTS's 22.8/23.8 km MRT
-measurements. Siding details, last train, legal closure, station register,
-gauge chronology and rebuilt/reused boundary remain TBC.
-Gates: cite 1,674/7,289; research 161/680; claims 0 ASSERTED; build 2,783;
-search 1,891; unit 234/234; a11y 1,881 clean; browser zero axe across 1,880
-pages, 820 screenshots, full print set. Article template inspected at
-320/1440. Generated audits restored; `probes/` remains untracked.
+Run 188 adds the former Wanhua–Xindian alignment as the fifth closed TRA
+history subject. The operator's 10.4 km entry, DORTS's 25 March 1921 opening,
+1,067 mm gauge and 20 March 1965 operating stop remain separate from the
+district-office 10.5 km and Taipei City Government 10.7 km figures. Exact last
+service, legal closure, former-station register, removal chronology and reused
+road/metro boundary remain TBC; the page is kept separate from the modern MRT
+identity.
+Gates: cite 1,675/7,298; research 162/684; claims 0 ASSERTED; build 2,785;
+search 1,892; unit 234/234; a11y 1,882 clean; browser zero findings across
+125 selected pages in 5m03s with 4 workers, 477 screenshots and 67 PDFs.
+Generated audits restored; `probes/` remains untracked.
 Next: continue the smallest verified closed TRA alignment, then resolve the
 remaining TRA branch/renaming gaps before the broader fleet/systems work.

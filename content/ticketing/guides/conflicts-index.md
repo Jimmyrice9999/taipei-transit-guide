@@ -804,6 +804,42 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full NTMC operator page for Jimmy Liao's line-wide Green Mountain work 閉上眼睛一下下, its V01–V11 scope and cast-bronze/painted-glass media; year, selection and cost are not published."
+  - id: "rail-history-xindian-line-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Its Wanhua–Xindian row gives 10.4 km; the aligned explanation records purchase in 1949 and dismantling in 1965."
+  - id: "rail-history-xindian-line-dorts-xindian-history"
+    title: "Urban texture formed by railways (5) — Xindian Line"
+    titleOriginal: "鐵道型塑的都市紋理(五)-新店線"
+    publisher: "New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局)"
+    url: "https://www.dorts.ntpc.gov.tw/documentary/articleInfo/VKgmOlr42nxA?page=3"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full municipal history page. It gives the 25 March 1921 full opening, 1,067 mm gauge, 20 March 1965 operating stop, 1968 road conversion and the broad overlap with the modern Xindian MRT line."
+  - id: "rail-history-xindian-line-taipei-jingmei-history"
+    title: "Jingmei’s former splendour"
+    titleOriginal: "景美風華再現"
+    publisher: "Taipei City Government (臺北市政府)"
+    url: "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EC29198AFE22C076&sms=72544237BBE4C5F6"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full city-government history page. It gives 10.7 km, fourteen stations in the Japanese-era account, ten after retrocession and the 1965 end of operation, and locates later road construction on the former route."
+  - id: "rail-history-xindian-line-ntu-wanxin-history"
+    title: "The early NTU people’s “metro” — the narrow-gauge Wanxin Railway story"
+    titleOriginal: "早年臺大人的「捷運」——萬新鐵路窄軌火車的故事"
+    publisher: "National Taiwan University Alumni Bimonthly (國立臺灣大學校友雙月刊)"
+    url: "https://ntualumnibm.ntu.edu.tw/bm.bimonthly.article/detail/sn/4114"
+    accessed: "2026-08-26"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full alumni feature, retained as a secondary lead for the claimed 24–25 March 1965 passenger/freight final-service times; those exact times are not promoted as established because the checked operator records do not confirm them."
   - id: "rail-krtc-lines-red-line-mtbu-network-origin"
     title: "Long-term network introduction"
     titleOriginal: "路網簡介"
@@ -2258,6 +2294,24 @@ See the [Wenhu Line](/rail/metro/lines/wenhu-line/), [Tamsui–Xinyi Line](/rail
 - [Daqiaotou station architecture](https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635) — primary; Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-17.[^rail-history-public-art-dorts-o12-architecture]
 - [Airport MRT public art](https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html) — primary; Taoyuan Metro Corporation (桃園大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-tymc-airport-public-art]
 - [Danhai LRT public art](https://www.ntmetro.com.tw/basic/?mode=detail&node=17) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-ntmc-danhai-public-art]
+
+## The Taiwan Railways Xindian Line — Records still missing
+
+Discussed on [The Taiwan Railways Xindian Line](/rail/history/xindian-line/) in the source page's “Records still missing” section.[^rail-history-xindian-line-tra-construction-history]
+
+### Records still missing
+
+The checked primary records do not provide a complete former-station register,
+a dated legal closure instrument, a full track-removal chronology or a surveyed
+boundary showing which road and metro sections reused railway land.[^rail-history-xindian-line-tra-construction-history][^rail-history-xindian-line-dorts-xindian-history][^rail-history-xindian-line-taipei-jingmei-history] Exact last-service times remain TBC because the
+full sources disagree or give only a year.[^rail-history-xindian-line-dorts-xindian-history][^rail-history-xindian-line-ntu-wanxin-history]
+
+#### Sources for this entry
+
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-xindian-line-tra-construction-history]
+- [Urban texture formed by railways (5) — Xindian Line](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/VKgmOlr42nxA?page=3) — primary; New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局); accessed 2026-08-26.[^rail-history-xindian-line-dorts-xindian-history]
+- [Jingmei’s former splendour](https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EC29198AFE22C076&sms=72544237BBE4C5F6) — primary; Taipei City Government (臺北市政府); accessed 2026-08-26.[^rail-history-xindian-line-taipei-jingmei-history]
+- [The early NTU people’s “metro” — the narrow-gauge Wanxin Railway story](https://ntualumnibm.ntu.edu.tw/bm.bimonthly.article/detail/sn/4114) — secondary; National Taiwan University Alumni Bimonthly (國立臺灣大學校友雙月刊); accessed 2026-08-26.[^rail-history-xindian-line-ntu-wanxin-history]
 
 ## Red Line — Construction and opening chronology
 

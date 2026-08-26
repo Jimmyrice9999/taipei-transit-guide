@@ -19069,3 +19069,59 @@ curated keyboard/tree probes clean, zero axe violations across 1,880 pages,
 820 screenshots and the full print set. The article template was visually
 inspected at 320/1440; generated audit JSON, screenshots and PDFs were restored
 and `probes/` remains untracked.
+
+## Run 188 - add TRA Xindian Line history (2026-08-26)
+
+### Sourced
+
+Added the former Wanhua-Xindian alignment as the fifth closed TRA history
+subject. The operator's full construction-history table gives 10.4 km and
+records purchase in 1949 and dismantling in 1965:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+New Taipei DORTS's full history page records the 25 March 1921 full opening,
+1,067 mm gauge, a 20 March 1965 operating stop, 1968 conversion to ordinary
+roads and broad overlap with the modern Xindian MRT route:
+`https://www.dorts.ntpc.gov.tw/documentary/articleInfo/VKgmOlr42nxA?page=3`.
+The Xindian District Office gives a 10.5 km single-track route, fourteen
+stations and four daily round trips:
+`https://www.xindian.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=bced6183b4d67af535c871cd71f636ef&id=2b519b334822681d`.
+Taipei City Government gives 10.7 km, fourteen Japanese-era stations, ten after
+retrocession and the 1965 end of operation:
+`https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EC29198AFE22C076&sms=72544237BBE4C5F6`.
+
+### TBC and checked failures
+
+Exact final passenger and freight service times, a complete former-station
+register, the legal closure instrument, a full track-removal chronology and a
+surveyed boundary for reused road and metro land remain TBC. The checked full
+sources provide differing counts and broad corridor descriptions, not those
+records.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research identified
+the closed-line inventory as incomplete; this run turns the Wanhua-Xindian lead
+into a sourced page and keeps it separate from the modern MRT identity.
+
+### Conflicts found
+
+The operator, Xindian District Office and Taipei City Government give 10.4,
+10.5 and 10.7 km respectively; these are retained as source-specific figures.
+DORTS gives 20 March 1965 for the operating stop, the operator gives 1965 for
+dismantling, and a full NTU alumni feature gives 24-25 March for passenger and
+freight service; no exact final date is asserted. The sources also differ on
+whether the 1965 dismantling and 1968 road conversion describe the same stage,
+and on the station-count scope (fourteen versus ten after retrocession).
+
+### Gates
+
+`cite` clean (1,675 content files; 7,298 citations); `research` clean (162
+files; 684 checked failures); claims 24,478 sourced/4,491 TBC/0 ASSERTED;
+root-path build completed with 2,785 output pages; search index 1,892 entries;
+unit 234/234; a11y 1,882 pages with no errors or warnings. Default browser
+verification completed cleanly in 5m03s with 4 workers: 125 selected pages
+(68 canonical templates plus 57 deduplicated extremes), no reflow, painted-box,
+keyboard or accessibility-tree findings, zero axe violations, 477 screenshots
+and 67 print PDFs. The unreachable-URL timeout probe also named the failed page
+and continued to its control page. Generated browser audits were restored;
+`probes/` remains untracked.
