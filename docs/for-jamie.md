@@ -2,6 +2,27 @@
 
 ## Active handoff - 27 August 2026
 
+Run 242 adds the metro depot maintenance-levels page and its one-subject
+research pair. Full official records establish that Taipei's five inspection
+levels are capability tiers: Level 3 adds partial-disassembly inspection,
+wheel reprofiling and annual route-train maintenance, while Level 5 adds
+network-level maintenance, emergency repair, spares, major overhaul and
+training. The page distinguishes the legal vehicle-inspection definitions from
+DORTS's depot-planning labels and keeps Luzhou's “quasi-Level-5” wording
+qualified because the public record does not define the prefix.
+
+The current detailed fleet schedules, a complete train-to-depot work matrix,
+the quasi-Level-5 technical boundary and one current regrading register remain
+TBC.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot, South Depot and depot-levels subjects,
+starting with the next explicitly incomplete system or line subject.
+
+## Previous handoff - Run 241
+
 Run 241 adds the Circular Line South Depot page and its one-subject research
 pair, extending the depot inventory beyond the nine-site TRTC scope. Full
 official records establish 南機廠 as the Circular Line Phase 1 main/Level-5

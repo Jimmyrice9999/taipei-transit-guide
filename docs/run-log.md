@@ -1,3 +1,56 @@
+## Run 242 - explain metro depot maintenance levels (2026-08-27)
+
+### Sourced
+
+Added a technology page and one-subject research pair that resolve the open
+systems question behind the site's “Third-level depot” labels. The official
+Taipei MRT vehicle-inspection rule defines five periodic inspection levels:
+Level 3 uses partial disassembly for inspection, adjustment, calibration and
+testing, while Level 5 thoroughly checks general components and overhauls
+important components; higher levels include lower-level work. DORTS's planning
+manual maps the facility capability: Level 3 adds wheel reprofiling and annual
+route-train maintenance, and Level 5 adds network-wide maintenance, emergency
+repair, spares, major overhaul and staff training. It also distinguishes main
+depots, which can perform train overhaul, from secondary depots.
+
+DORTS's planning record and presentation classify the high-capacity depots by
+level and group medium-capacity secondary depots at Levels 2-4 and main depots
+at Level 5. The current FAQ collection supplies the published Xinzhuang Level 3,
+Luzhou quasi-Level-5 and South Depot full-function Level-5 examples.
+
+### TBC and checked failures
+
+The detailed current inspection schedule by fleet, a current train-to-depot
+work-allocation matrix, the technical boundary of Luzhou's quasi-Level-5
+designation, and one dated network-wide regrading register remain TBC. The
+research file records each retrieval failure and keeps depot capability labels
+separate from operator-specific maintenance calendars.
+
+### Contradicted the corpus
+
+No factual claim was contradicted. This run fills the systems research file's
+explicitly recorded Level 3/Level 5 definition gap without changing the
+existing depot pages' source-specific classifications.
+
+### Conflicts found
+
+- The law defines vehicle inspection work, while DORTS's planning text defines
+  depot capability and equipment; they are related scales but not the same
+  current fleet schedule.
+- DORTS calls Luzhou “quasi-Level-5” rather than Level 5 and does not define the
+  qualification; the published distinction is retained.
+
+### Gates
+
+`cite` clean: 1,726 content files and 7,613 citations (7,394 primary, 219
+secondary). `verify` clean: 2,738 static pages and 2,890 postbuild pages; no
+missing glyphs; 487,429 internal links across 2,890 pages with no broken links,
+fragments or orphans; links audit 1,932 pages and 759 linkable destinations;
+accessibility clean; claims 25,368 sourced, 4,502 TBC and 0 ASSERTED; research
+213 files and 904 checked failures; geometry and CVD clean. `nav` passed 19/19
+checks. `npm test` passed 234/234 tests and the fact cross-check reported no
+contradictions. `probes/` remains untouched and untracked.
+
 ## Run 241 - add Circular Line South Depot record (2026-08-27)
 
 ### Sourced
