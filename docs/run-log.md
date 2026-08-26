@@ -18147,6 +18147,56 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 232 - add TRA Taoyuan Station switching record (2026-08-27)
+
+### Sourced
+
+Added row 115 from the complete operator construction-history PDF. It records
+Taoyuan Station at 0.3 km, with Taiwan Railways Administration as constructor,
+2015 in both the construction-year and operation-start fields, and `Switching
+of the Taoyuan temperal Station` as the operator's English explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator page identifies Taoyuan station 1080. The committed TDX
+WL record places it at source sequence 20 and supplied travelled distance
+57.6 km, between Fengming 1075 and Neili 1090; the guide presents it as
+one-based position 21:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1080`.
+
+### TBC and checked failures
+
+The exact switching, station-opening or commissioning day; temporary and
+permanent station sequence; surveyed boundary for the 0.3 km value; station
+plan; contract and completion records; detailed work scope; and source-defined
+mapping to the current 57.6 km TDX field remain TBC. The first full build
+reported that `切` was missing from the content font subset; `npm run fonts`
+regenerated the subsets and the rerun passed. The current operator
+construction-history HTML was fetched and does not repeat row 115; that is
+retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical station-switching record
+is kept beside, rather than merged into, the current Taoyuan and TDX records.
+
+### Conflicts found
+
+No direct numeric contradiction was found among the checked primaries. The
+historical PDF gives 0.3 km, while the current TDX record supplies Taoyuan’s
+57.6 km line-position field. These are different records with different stated
+purposes, so they are reported separately and are not added or averaged.
+
+### Gates
+
+`cite` clean (1,716 content files; 7,565 citations); `research` clean (203
+files; 862 checked failures); claims 25,212 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,719 static pages and postbuild checked 2,867 pages; 477,323
+internal links checked across 2,867 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,922 pages and 750 linkable
+destinations; search 1,933; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 231 - add TRA Shoufeng–Nanping double-track record (2026-08-27)
 
 ### Sourced
