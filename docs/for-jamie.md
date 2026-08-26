@@ -2,24 +2,75 @@
 
 ## Active handoff - 27 August 2026
 
-Run 229 adds the next verified TRA subject, the Jinlun–Taimali single-track
-record. The complete operator construction-history PDF records row 112 at
-1.9 km, with Taiwan Railways Administration as constructor, 2010 and 2014
-year fields, and the operator's exact English explanation `South-Taimail
-Bridge reconstruction`. The current operator pages identify Jinlun 5210 and
-Taimali 5220; current TDX exposes an SL interval of 10.9 km, kept separate
-from the historical project value because the sources do not establish a
-common boundary.
+Run 230 adds the next verified TRA subject, the Pingtung–Chaozhou double-track
+record. The complete operator construction-history PDF records row 113 at
+16.3 km, with the Railway Reconstruction Bureau's Southern Region Engineering
+Office as constructor, 2009 and 2015 year fields, and the operator's exact
+English explanation `South of Pingtung to Chaozhou Railway Elevated`. The
+current operator pages identify Pingtung 5000 and Chaozhou 5050; current TDX
+exposes an SL interval of 15.0 km, kept separate from the historical project
+value because the sources do not establish a common boundary.
 
-Gates: cite 1,713/7,544; research 200/849; claims 25,150 sourced/4,495
-TBC/0 ASSERTED; build 2,713 static pages and 2,861 postbuild pages; links
-476,614 across 2,861 pages; links audit 1,919 pages/747 destinations; search
-1,930; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,714/7,552; research 201/853; claims 25,172 sourced/4,495
+TBC/0 ASSERTED; build 2,715 static pages and 2,863 postbuild pages; links
+476,849 across 2,863 pages; links audit 1,920 pages/748 destinations; search
+1,931; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 113, Pingtung–Chaozhou) before broader fleet/systems work.
+(row 114, Shoufeng–Nanping) before broader fleet/systems work.
+
+## Run 230 - add TRA Pingtung–Chaozhou double-track record (2026-08-27)
+
+### Sourced
+
+Added row 113 from the complete operator construction-history PDF. It records
+Pingtung–Chaozhou at 16.3 km as a double-track subject, with the Railway
+Reconstruction Bureau's Southern Region Engineering Office as constructor,
+2009 in the construction-year field, 2015 in the operation-start year field,
+and `South of Pingtung to Chaozhou Railway Elevated` as the operator's English
+explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Pingtung 5000 and Chaozhou 5050. The
+committed TDX SL record places them at source sequences 0 and 5, with supplied
+travelled-distance fields 0.0 km and 15.0 km, a difference of 15.0 km, and
+Guilai, Linluo, Xishi and Zhutian between them:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5000`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5050`.
+
+### TBC and checked failures
+
+The surveyed 16.3 km boundary, exact construction/elevation/service days,
+contract and completion records, detailed work scope, and source-defined
+mapping to the current 15.0 km TDX interval remain TBC. The current operator
+construction-history HTML was fetched and does not repeat row 113; that is
+retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical double-track record is
+kept beside, rather than merged into, the current Pingtung, Chaozhou and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 16.3 km, while the current TDX SL endpoint fields give
+15.0 km. The current endpoints have four intervening members in the ordered
+record, but the sources do not establish a common distance boundary or
+measurement purpose, so the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,714 content files; 7,552 citations); `research` clean (201
+files; 853 checked failures); claims 25,172 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,715 static pages and postbuild checked 2,863 pages; 476,849
+internal links checked across 2,863 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,920 pages and 748 linkable
+destinations; search 1,931; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 229 - add TRA Jinlun–Taimali single-track record (2026-08-27)
 

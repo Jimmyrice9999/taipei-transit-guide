@@ -239,6 +239,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 5220 as Taimali (太麻里)."
+  - id: tra-station-pingtung
+    title: "Pingtung Station information"
+    titleOriginal: "屏東車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5000"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 5000 as Pingtung (屏東)."
+  - id: tra-station-chaozhou
+    title: "Chaozhou Station information"
+    titleOriginal: "潮州車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5050"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 5050 as Chaozhou (潮州)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -273,3 +291,4 @@ The [Haiduan–Ruiyuan single-track record](/rail/history/haiduan-ruiyuan-single
 The [Shanli–Taitung double-track record](/rail/history/shanli-taitung-double-track/) retains row 110's 7.3 km and 2010/2013 fields beside its double-tracking explanation and the current Shanli 6010–Taitung 6000 EL record.[^tra-construction-history][^tra-station-shanli][^tra-station-taitung][^tdx-tra-line]
 The [Huatan–Shetou double-track record](/rail/history/huatan-shetou-double-track/) retains row 111's 4.3 km and 2006/2014 fields beside its Yuan-Lin Railway elevated explanation and the current Huatan 3370–Shetou 3410 WL record.[^tra-construction-history][^tra-station-huatan][^tra-station-shetou][^tdx-tra-line]
 The [Jinlun–Taimali single-track record](/rail/history/jinlun-taimali-single-track/) retains row 112's 1.9 km and 2010/2014 fields beside its South-Taimail Bridge reconstruction explanation and the current Jinlun 5210–Taimali 5220 SL record.[^tra-construction-history][^tra-station-jinlun][^tra-station-taimali][^tdx-tra-line]
+The [Pingtung–Chaozhou double-track record](/rail/history/pingtung-chaozhou-double-track/) retains row 113's 16.3 km and 2009/2015 fields beside its South of Pingtung to Chaozhou Railway Elevated explanation and the current Pingtung 5000–Chaozhou 5050 SL record.[^tra-construction-history][^tra-station-pingtung][^tra-station-chaozhou][^tdx-tra-line]
