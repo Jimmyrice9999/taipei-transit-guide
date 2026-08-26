@@ -2,6 +2,23 @@
 
 ## Active handoff - 27 August 2026
 
+Run 240 adds the missing Zhonghe Depot page and its one-subject research pair.
+Full DORTS sources establish the former TRA Zhonghe station site, the older
+1.47-hectare boundary including Nanshijiao Station, and the newer planning
+inventory's level-one, approximately 1.2-hectare, six-trainset storage-only
+description. The page preserves the area and function conflicts, records the
+underground CT561/CC561 track-package account and the 1998 line commissioning
+sequence, and leaves a current roster, road count and standalone depot handover
+date as TBC.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra and Zhonghe Depot subjects, starting with the next
+explicitly incomplete system subject.
+
+## Previous handoff - Run 239
+
 Run 239 adds the missing Matra dispute research pair. It promotes the official
 DORTS accounts of the 1993 test fires, the four-car brake-synchronisation
 failure, the civil-works delay behind the arbitration claim, the inspection and

@@ -1,3 +1,50 @@
+## Run 240 - add Zhonghe Depot record (2026-08-27)
+
+### Sourced
+
+Added the missing Zhonghe Depot content and one-subject research pair. Full
+DORTS sources establish the former Taiwan Railways Zhonghe Station site south
+of Heping Street, the older 1.47-hectare boundary including Nanshijiao Station,
+and the later planning inventory's level-one, approximately 1.2-hectare,
+six-trainset storage-only description. The record also captures the underground
+track package, the CT561/CC561 identifier discrepancy, the NT$490 million
+contract account and the 1998 Zhonghe Line inspection and opening dates.
+
+### TBC and checked failures
+
+A current depot-level train roster, separate stabling-road count, standalone
+depot handover date, and a source-supported reconciliation of the older
+maintenance description with the newer storage-only classification remain TBC.
+The research file records each retrieval failure and leaves both official area
+values and both function descriptions visible.
+
+### Contradicted the corpus
+
+No prior published claim was contradicted. The new page fills the depot gap
+identified in the existing depot research lead without promoting its unresolved
+measurements to a single value.
+
+### Conflicts found
+
+- DORTS gives approximately 1.47 hectares including Nanshijiao Station; its
+  later inventory gives approximately 1.2 hectares without defining the same
+  boundary.
+- The route page describes stabling, general maintenance and cleaning; the
+  planning pages describe a level-one secondary depot providing storage only.
+- The technical article uses CT561 in its package heading and CC561 in its
+  contract-award sentence.
+
+### Gates
+
+`cite` clean: 1,724 content files and 7,604 citations (7,385 primary, 219
+secondary). `verify` clean: 2,734 static pages and 2,884 postbuild pages; no
+missing glyphs; 483,068 internal links across 2,884 pages with no broken links,
+fragments or orphans; links audit 1,930 pages and 757 linkable destinations;
+accessibility clean; claims 25,343 sourced, 4,500 TBC and 0 ASSERTED; research
+211 files and 896 checked failures; geometry and CVD clean. `nav` passed 19/19
+checks. `npm test` passed 234/234 tests and the fact cross-check reported no
+contradictions. `probes/` remains untouched and untracked.
+
 ## Run 239 - add Matra dispute research record (2026-08-27)
 
 ### Sourced
@@ -39,7 +86,14 @@ could not be verified against the original records.
 
 ### Gates
 
-Pending final gates for this run. `probes/` remains untouched and untracked.
+`cite` clean: 1,723 content files and 7,600 citations (7,381 primary, 219
+secondary). `verify` clean: 2,732 static pages and 2,881 postbuild pages; no
+missing glyphs; no broken links, fragments or orphans; links audit 1,929 pages
+and 756 linkable destinations; accessibility clean; claims 25,330 sourced,
+4,497 TBC and 0 ASSERTED; research 210 files and 891 checked failures;
+geometry and CVD clean. `nav` passed 19/19 checks. `npm test` passed 234/234
+tests and the fact cross-check reported no contradictions. `probes/` remains
+untouched and untracked.
 
 ## Run 238 - add Xinyi Line East Extension record (2026-08-27)
 
