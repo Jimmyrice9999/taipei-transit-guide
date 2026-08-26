@@ -1,3 +1,46 @@
+## Run 239 - add Matra dispute research record (2026-08-27)
+
+### Sourced
+
+Added the missing research counterpart for the existing Matra dispute content
+page. Full official DORTS publications establish the two Muzha testing fires,
+the four-car VAL256 brake/propulsion synchronisation failure and tyre-ignition
+mechanism, the 6 October 1993 arbitration and its civil-works delay cause, the
+inspection and cap-beam reinforcement programme, and the 28 March 1996 opening.
+The official Fair Trade Commission decision records the separate 1996–98
+maintenance dispute and conditional settlement process. The Public Construction
+Commission case study supplies the currency breakdown and litigation summary as
+secondary evidence.
+
+### TBC and checked failures
+
+The original contract, full arbitration award, Supreme Court judgments, 1994
+Control Yuan impeachment document, incident-by-incident accident reports, exact
+technical-staff withdrawal date and final maintenance-agreement outcome remain
+unretrieved. The official DORTS award figure (NT$1.04 billion) and the official
+procurement case study's approximately NT$1.025 billion before interest are
+reported as a conflict, not reconciled.
+
+### Contradicted the corpus
+
+No prior published claim was changed. The earlier Wenhu research file remains a
+lead; the new subject report records where its court and Control Yuan leads
+could not be verified against the original records.
+
+### Conflicts found
+
+- DORTS reports NT$1.04 billion; the Public Construction Commission itemises
+  three currencies totalling approximately NT$1.025 billion before interest.
+- DORTS describes tyre ignition and explains the mechanism; secondary accounts
+  use the broader `火燒車` vehicle-fire wording.
+- Secondary sources vary on elapsed litigation time and interest-inclusive
+  totals; the missing court texts and payment record prevent a more precise
+  reconciliation.
+
+### Gates
+
+Pending final gates for this run. `probes/` remains untouched and untracked.
+
 ## Run 238 - add Xinyi Line East Extension record (2026-08-27)
 
 ### Sourced

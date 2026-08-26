@@ -2,6 +2,27 @@
 
 ## Active handoff - 27 August 2026
 
+Run 239 adds the missing Matra dispute research pair. It promotes the official
+DORTS accounts of the 1993 test fires, the four-car brake-synchronisation
+failure, the civil-works delay behind the arbitration claim, the inspection and
+cap-beam reinforcement programme, and the distinct post-opening maintenance
+dispute. The Public Construction Commission case study is retained as a
+secondary source for the currency breakdown and litigation summary, rather
+than treated as a substitute for the court judgments.
+
+TBC: the original contract, full arbitration award, Supreme Court judgments,
+the 1994 Control Yuan impeachment file, a primary accident report for each
+fire, the exact technical-staff withdrawal date and the final maintenance
+agreement. The award amount is retained as both DORTS's NT$1.04 billion and
+the procurement case study's approximately NT$1.025 billion before interest.
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension and Matra subjects, starting with the next explicitly
+incomplete system subject.
+
+## Previous handoff - Run 238
+
 Run 238 adds the Xinyi Line East Extension (信義線東延段) project record. It
 keeps the current one-station scope separate from the original two-station
 environmental statement, records why the Xinyi Road Sec. 6 station was
