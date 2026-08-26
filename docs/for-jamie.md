@@ -2,7 +2,25 @@
 
 ## Active handoff - 27 August 2026
 
-Run 240 adds the missing Zhonghe Depot page and its one-subject research pair.
+Run 241 adds the Circular Line South Depot page and its one-subject research
+pair, extending the depot inventory beyond the nine-site TRTC scope. Full
+official records establish 南機廠 as the Circular Line Phase 1 main/Level-5
+depot, the 14.33-hectare site and 12.19-hectare depot-layout boundary, current
+New Taipei Metro management evidence, and the older 17-trainset/32-road
+equipment-table account. The planning inventory's 64-trainset value and the
+12.9-hectare equipment-table area remain visibly qualified rather than merged;
+current allocation, standalone handover date, and operator-transition date are
+TBC.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot and South Depot subjects, starting with
+the next explicitly incomplete system subject.
+
+## Previous handoff - Run 240
+
+Run 240 added the missing Zhonghe Depot page and its one-subject research pair.
 Full DORTS sources establish the former TRA Zhonghe station site, the older
 1.47-hectare boundary including Nanshijiao Station, and the newer planning
 inventory's level-one, approximately 1.2-hectare, six-trainset storage-only
@@ -12,10 +30,6 @@ sequence, and leaves a current roster, road count and standalone depot handover
 date as TBC.
 
 `probes/` remains untracked.
-
-Next: continue the remaining 14-part brief outside the completed TRA,
-Xinyi-extension, Matra and Zhonghe Depot subjects, starting with the next
-explicitly incomplete system subject.
 
 ## Previous handoff - Run 239
 

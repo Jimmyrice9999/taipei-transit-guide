@@ -1,3 +1,55 @@
+## Run 241 - add Circular Line South Depot record (2026-08-27)
+
+### Sourced
+
+Added the Circular Line South Depot page and one-subject research pair. Full
+DORTS sources identify 南機廠 as the Circular Line Phase 1 main maintenance
+depot in the Shisizhang agricultural zone, with Level-5 inspection capability,
+listed stabling/washing/inspection/maintenance/testing/emergency-repair and
+traffic-control functions, and a site area of approximately 14.33 hectares of
+which approximately 12.19 hectares are laid out as depot. New Taipei Metro's
+current announcement refers to the facility as under its management. DORTS's
+planning inventory gives 64 trainsets; its older equipment-practice table gives
+17 trainsets, 32 stabling-road positions and approximately 12.9 hectares.
+
+### TBC and checked failures
+
+Current unit allocation, standalone depot civil-completion or handover date,
+the boundary behind the equipment table's 12.9-hectare figure, and the date and
+mechanism of the management transition remain TBC. The research file records
+each failed retrieval and keeps the planning and equipment-table contexts
+separate.
+
+### Contradicted the corpus
+
+No factual claim was contradicted. The existing depot lead intentionally
+excluded South Depot from the nine-site TRTC-only inventory; this run adds it as
+a separate wider Taipei metropolitan entry because current New Taipei Metro
+management is now evidenced.
+
+### Conflicts found
+
+- DORTS gives approximately 14.33 hectares for a site including Shisizhang
+  Station and the viaduct, approximately 12.19 hectares for depot layout, and
+  approximately 12.9 hectares in an older equipment table without defining the
+  same denominator.
+- The planning inventory gives 64 trainsets, while the older equipment table
+  gives 17; neither is treated as a current fleet roster.
+- The operator context changes from older Taipei DORTS planning material to
+  current New Taipei Metro management evidence; this is a scope/management
+  transition, not a physical-identity conflict.
+
+### Gates
+
+`cite` clean: 1,725 content files and 7,608 citations (7,389 primary, 219
+secondary). `verify` clean: 2,736 static pages and 2,887 postbuild pages; no
+missing glyphs; 485,249 internal links across 2,887 pages with no broken links,
+fragments or orphans; links audit 1,931 pages and 758 linkable destinations;
+accessibility clean; claims 25,356 sourced, 4,502 TBC and 0 ASSERTED; research
+212 files and 900 checked failures; geometry and CVD clean. `nav` passed 19/19
+checks. `npm test` passed 234/234 tests and the fact cross-check reported no
+contradictions. `probes/` remains untouched and untracked.
+
 ## Run 240 - add Zhonghe Depot record (2026-08-27)
 
 ### Sourced
