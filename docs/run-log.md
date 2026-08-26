@@ -20244,3 +20244,69 @@ contrast failures. The first full-gate attempt correctly stopped on the
 generated Han-subset check for the new term 拓寬; `npm run fonts` regenerated
 the content subsets, and the complete rerun passed. Generated audit reports
 were restored after verification; `probes/` remains untracked.
+
+## Run 210 - add TRA Hanben–Hualien double-track record (2026-08-26)
+
+### Sourced
+
+Added Hanben–Hualien as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 91 as 42.5 km, with the
+Railway Reconstruction Bureau's Eastern Region Engineering Office as
+constructor. Its aligned chronology gives 1992 construction and operation
+from 2003, and records double-tracking, electrification, heavier rail and PC
+sleepers:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The fetched current operator HTML table does not contain this older row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The operator's full chronology records the East Line widening beginning at
+Nanhua in 1978:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=17`.
+The Office of the President's full 4 July 2003 ceremony record says North
+Link electrification formally opened and thanks the Railway Reconstruction
+Bureau and its Eastern Region Engineering Office:
+`https://www.president.gov.tw/NEWS/154`.
+The current operator station pages identify Hanben as 7070 and Hualien as
+7000:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7070`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7000`.
+The committed TDX station-of-line pull places Hanben at EL source sequence 30
+with a supplied distance of 125.7 km and Hualien at source sequence 37 with
+169.7 km. The guide presents those as positions 31 and 38 and retains the
+calculated 44.0 km field difference as a current data-layer measurement.
+
+### TBC and checked failures
+
+The surveyed 42.5 km project boundary and chainage, contract package,
+completion certificate, detailed track-by-track sequence, current as-built
+inventory and service boundary remain TBC. The checked sources also do not
+explain whether the 1.5 km difference between the historical operator length
+and current TDX endpoint fields reflects rounding, route definition, station
+reference points or another measurement boundary.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds the
+operator's row 91 and 2003 North Link opening context while retaining the
+current TDX interval and the current HTML coverage boundary as distinct
+records.
+
+### Conflicts found
+
+The full operator PDF contains row 91, while the fetched current operator HTML
+table does not contain a Hanben–Hualien row. This is a source-coverage conflict,
+not a disagreement over two published lengths. The historical operator record
+is 42.5 km; current TDX endpoint fields yield 44.0 km, a different measurement
+layer whose relationship to the historical value is not explained. The page
+does not average or silently substitute the two values.
+
+### Gates
+
+`cite` clean (1,695 content files; 7,416 citations); `research` clean (182
+files; 767 checked failures); claims 24,793 sourced/4,494 TBC/0 ASSERTED;
+build generated 2,677 static pages and postbuild checked 2,825 pages; 472,367
+internal links checked across 2,825 pages with no broken links, unresolved
+fragments or orphan pages; search 1,912 entries; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD audit reports zero genuine WCAG
+contrast failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.

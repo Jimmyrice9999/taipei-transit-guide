@@ -34,3 +34,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Hualien–Heping Construction Record](/rail/history/hualien-heping/)
 - [The Taiwan Railways Heping–Su'aoxin Construction Record](/rail/history/heping-su-aoxin/)
 - [The Taiwan Railways Hualien–Taitung Widening Record](/rail/history/hualien-taitung-widening/)
+- [The Taiwan Railways Hanben–Hualien Double-track Record](/rail/history/hanben-hualien-double-track/)
