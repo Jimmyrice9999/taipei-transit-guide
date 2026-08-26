@@ -19491,3 +19491,54 @@ across 2,799 pages with no broken links, unresolved fragments or orphan pages;
 unit 234/234; navigation 19/19; browser/accessibility checks clean; CVD audit
 reports zero genuine WCAG contrast failures. Generated audit reports were
 restored after verification; `probes/` remains untracked.
+
+## Run 196 - add TRA Jianan–Taichung Port history (2026-08-26)
+
+### Sourced
+
+Added Jianan–Taichung Port as the next TRA construction-history subject, kept
+distinct from a current route identity. The full operator construction PDF lists
+row 45 as a 7.8 km TRA-built segment, constructed in 1957 and opened in 1970,
+with the explanation that it was extended to double track:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The full current operator HTML history table is marked updated 2026-04-27 and
+does not contain the PDF's Jianan–Taichung Port row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The full current Taichung Port station page identifies station 2210 and gives an
+address on 甲南路:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2210`.
+The committed TDX snapshots keep current station 2210 in WL-C and do not contain
+a separate current Jianan/甲南 station record.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract/completion certificate,
+intermediate historical station register, surveyed 7.8 km boundary,
+verified historical-to-current station mapping and current track-count/as-built
+status remain TBC. No checked primary source supplies those records for this
+exact historical boundary.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The PDF row is now represented without
+silently substituting the current HTML table's different numbering and coverage,
+or turning the historical construction record into a current line identity.
+
+### Conflicts found
+
+The full PDF lists Jianan–Taichung Port as row 45, while the current HTML table
+omits that row and uses a different current numbering sequence; both operator
+presentations are retained rather than merged. The current station address keeps
+甲南路 visible as a lead, but does not prove that the historical place name is a
+current station identity or that the 7.8 km boundary maps one-to-one to current
+station data.
+
+### Gates
+
+`cite` clean (1,683 content files; 7,344 citations); `research` clean (170
+files; 717 checked failures); claims 24,599 sourced/4,492 TBC/0 ASSERTED;
+build completed with 2,801 Han-subset checks; 469,531 internal links checked
+across 2,801 pages with no broken links, unresolved fragments or orphan pages;
+search 1,900 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
