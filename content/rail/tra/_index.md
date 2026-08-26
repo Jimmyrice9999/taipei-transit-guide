@@ -58,3 +58,4 @@ The current pages cover the Western Main Line, Eastern Main Line and the branch 
 The [Jianan–Qingshui double-track segment](/rail/history/jianan-qingshui-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]
 The [Dajia–Jianan double-track segment](/rail/history/dajia-jianan-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]
 The [Dongshan–Su'aoxin double-track segment](/rail/history/dongshan-su-aoxin-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]
+The [Sijiaoting–Ruifang double-track segment](/rail/history/sijiaoting-ruifang-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]

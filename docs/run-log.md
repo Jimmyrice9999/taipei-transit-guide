@@ -19906,3 +19906,56 @@ across 2,811 pages with no broken links, unresolved fragments or orphan pages;
 search 1,905 entries; unit 234/234; navigation 19/19; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 204 - add TRA Sijiaoting–Ruifang double-track history (2026-08-26)
+
+### Sourced
+
+Added Sijiaoting–Ruifang as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 52 as 5.8 km, with TRA as
+constructor, construction in 1974, operation from 1977 and 添築雙線 (extended
+to be double-tracked):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML independently lists the same subject as row 29 with
+the same 5.8 km, 1974/1977 chronology and double-track explanation:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The current operator station pages identify Sijiaoting as 7380 and Ruifang as
+7360. The committed TDX station-of-line pull places them consecutively on EL,
+with source-sequence distance fields of 3.9 km and 8.9 km, a current endpoint
+difference of 5.0 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7380`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7360`,
+`https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0`.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract or completion certificate,
+historical engineering chainage, surveyed 5.8 km boundary and current as-built
+track count remain TBC. The 5.0 km TDX endpoint-field difference is retained as
+a current data-layer measure, not substituted for the historical construction
+scope.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The PDF and current HTML agree
+on the historical values; the current TDX interval is kept as a separate
+measurement rather than being used to rewrite the operator's historical record.
+
+### Conflicts found
+
+No numerical disagreement was found between the full operator PDF and current
+operator HTML: both report 5.8 km, TRA, 1974 construction, 1977 operation start
+and double-track work. Their row numbers differ (52 versus 29). The historical
+operator scope is 5.8 km, while current TDX endpoint fields differ by 5.0 km;
+these presentation and measurement boundaries are retained rather than
+averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,689 content files; 7,377 citations); `research` clean (176
+files; 743 checked failures); claims 24,688 sourced/4,494 TBC/0 ASSERTED;
+build completed with 2,813 Han-subset checks; 470,950 internal links checked
+across 2,813 pages with no broken links, unresolved fragments or orphan pages;
+search 1,906 entries; nav 19/19; unit 234/234; browser/accessibility checks
+clean; CVD audit reports zero genuine WCAG contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
