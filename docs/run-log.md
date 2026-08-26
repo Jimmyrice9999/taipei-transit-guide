@@ -20006,3 +20006,66 @@ fragments or orphan pages; search 1,907 entries; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD audit reports zero genuine WCAG
 contrast failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 206 - add TRA Hualien–Hualien Port records (2026-08-26)
+
+### Sourced
+
+Added Hualien–Hualien Port as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 25 as 4.0 km, attributed
+to the Taiwan Railway Bureau before Retrocession, and row 54 as 5.8 km, with
+TRA as constructor. The aligned chronology gives the later record 1975 as its
+construction year and 1979 as its operation-start year:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator history table does not repeat a Hualien–Hualien Port row,
+but does retain Xincheng–Hualien Port and later Hualien-area rows:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The full 2005 operator statistical report independently records Hualien–Hualien
+Port as a 5.8 km Huatung Line operating section at the end of 2005:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/67277957-973c-428a-a4a4-e803baadb956`.
+The operator chronology records Hualien Port station and branch electrification
+from 22 June 2012:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=14`.
+The current Hualien station page identifies passenger station 7000:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7000`.
+The committed TDX pulls contain Hualien at one-based EL position 38 with a
+169.7 km supplied distance and no named Hualien Port passenger-station record.
+
+### TBC and checked failures
+
+The former station sequence and surveyed port endpoint, the relationship
+between the 4.0 km and 5.8 km records, any construction or relocation contract,
+the current passenger/freight service boundary and current as-built track count
+remain TBC. Exact day-level construction and commissioning records were not
+found in the checked operator history sources. The 169.7 km TDX distance and
+position are retained as current data-layer fields, not used to infer the
+historical port boundary.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds a distinct
+pre-Retrocession operator record, later TRA record, dated operating-section
+record and electrification milestone without collapsing their different source
+contexts.
+
+### Conflicts found
+
+The complete operator PDF presents two same-named entries at 4.0 km and 5.8 km;
+it does not explain whether the later value is a rebuild, widening, relocation
+or redefined scope. The current HTML omits the same-named row while retaining
+nearby Hualien-area entries. The 2005 report agrees numerically with the later
+5.8 km entry, but its operating-section table is kept as a separate dated
+measurement context. These values and coverage boundaries are published
+separately rather than averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,691 content files; 7,390 citations); `research` clean (178
+files; 751 checked failures); claims 24,725 sourced/4,494 TBC/0 ASSERTED;
+build generated 2,669 static pages and postbuild checked 2,817 pages; 471,423
+internal links checked across 2,817 pages with no broken links, unresolved
+fragments or orphan pages; search 1,908 entries; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD audit reports zero genuine WCAG
+contrast failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.

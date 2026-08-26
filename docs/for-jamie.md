@@ -2,17 +2,19 @@
 
 ## Active handoff - 26 August 2026
 
-Run 205 adds the next verified TRA subject, Mudan–Shuangxi. The full operator
-PDF and current HTML table both record 3.1 km, with TRA as constructor,
-construction in 1974, operation from 1978 and 添築雙線 (extended to be
-double-tracked). Current TDX data places Mudan 7320 and Shuangxi 7310
-consecutively on EL; its supplied endpoint-distance difference is 3.4 km,
-retained separately from the historical 3.1 km construction scope. The
-historical engineering boundary and current track-count status remain TBC.
+Run 206 adds the next verified TRA subject, Hualien–Hualien Port. The complete
+operator construction-history PDF preserves two records: 4.0 km attributed to
+the Taiwan Railway Bureau before Retrocession, and 5.8 km for the later TRA
+record, with construction in 1975 and operation from 1979. The operator's 2005
+statistical report separately records a 5.8 km Hualien–Hualien Port operating
+section on the Huatung Line. Current TDX data identifies Hualien as 7000 and
+position 38 on EL, but supplies no named Hualien Port passenger-station code.
+The exact relationship between the two historical values and current physical
+and service boundaries remains TBC.
 
-Gates: cite 1,690/7,383; research 177/747; claims 24,705 sourced/4,494 TBC/0
-ASSERTED; build 2,815 postbuild pages (2,667 static); links 471,186 across
-2,815 pages; search 1,907; nav 19/19; unit 234/234; browser/accessibility
+Gates: cite 1,691/7,390; research 178/751; claims 24,725 sourced/4,494 TBC/0
+ASSERTED; build 2,817 postbuild pages (2,669 static); links 471,423 across
+2,817 pages; search 1,908; nav 19/19; unit 234/234; browser/accessibility
 checks clean; CVD zero genuine contrast failures.
 Generated audits will be restored after verification; `probes/` remains
 untracked.
