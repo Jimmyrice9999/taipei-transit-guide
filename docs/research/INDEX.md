@@ -54,17 +54,18 @@ The file says so itself, which is the right instinct.
 **Strongest sources.** DORTS FAQ 機電設計 (primary — verified this run, §3); the
 李政安 & 蘇瑞文 technical paper on the Neihu medium-capacity system, hosted by New
 Taipei DORTS, which the file calls primary-adjacent and largely unexploited. It
-is right about that: **this is the single most valuable unread source in the
-corpus.**
+was read in full and published as the one-subject record
+`rail/technology/wenhu-steel-running-surface.md` in Run 243.
 
 **Stated gaps.** Track gauge; electrification collection method; the full headway
 table; car dimensions; tyre specification; formal GoA grade; whether the 2023
 trial and 2024 rollout seat specifications genuinely differ.
 
-**Publishable now.** The steel-versus-concrete running surface is the standout
-and it needs the technical paper read first. The renewal programme is publishable
-only as "announced, provisional, news-sourced", which is how the site already
-carries it.
+**Published.** The steel-versus-concrete running surface is now recorded at
+`rail/technology/wenhu-steel-running-surface.md`, with the paper-era quantities
+qualified as a construction account. The renewal programme is publishable only
+as "announced, provisional, news-sourced", which is how the site already carries
+it.
 
 ---
 
@@ -497,7 +498,7 @@ source has that.
 | `wenhu-line.md` | new `/rail/technology/station-numbering` | The three numbering systems — **published in run 7** |
 | `wenhu-line.md` | 24 station pages | Exit counts, engineering numbers — **published in run 7** |
 | `wenhu-line.md` | `/rail/metro/lines/wenhu-line` | Station architecture: the single-column load constraint, 空中之河, 湖城故事 — not yet published, sourced and ready |
-| `wenhu-research-2026-08.md` | `/rail/systems` | The steel running surface on the Neihu section. Read the 李政安 paper first |
+| `wenhu-research-2026-08.md` | `/rail/systems` | The steel running surface on the Neihu section. The 李政安 paper is now read and published at `rail/technology/wenhu-steel-running-surface.md` |
 | `wenhu-research-2026-08.md` | `/rail/metro/rolling-stock/*` | The 2026 renewal programme, provisional |
 | `wenhu-research-part2.md` | `/rail/history/matra-dispute` | Already published |
 | `systems.md` | `/rail/systems` (scope statement today) | Platform-door completion dates; the structure-type table; the 拼裝捷運 critique; the three elevated-vs-underground decisions |
@@ -671,7 +672,7 @@ one cannot even be searched for.
 
 | Source | Where | Note |
 | --- | --- | --- |
-| **P?** 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 | wenhu-2026-08, systems | Hosted by New Taipei DORTS. **The most valuable unread source in the corpus.** |
+| **P** 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 | wenhu-steel-running-surface | Official DORTS technical paper, read in full and published in Run 243; construction quantities remain qualified as a paper-era account. |
 | **P?** 台灣省土木技師公會 technical journal (T16) | maokong | Called the best single source in its file |
 
 ### Secondary
@@ -731,14 +732,11 @@ references.
 
 ## 6. Reading order, if somebody has an afternoon
 
-1. **李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述.** Named as important by two
-   separate files, never opened. Likely answers the running-surface, signalling
-   and electrification gaps at once.
-2. **The Control Yuan's 403 report.** A real primary investigation, and the story
+1. **The Control Yuan's 403 report.** A real primary investigation, and the story
    it supports is the best-sourced unwritten article the site has.
-3. **`ebook.dorts.gov.taipei`.** Still unread after four runs of being the
+2. **`ebook.dorts.gov.taipei`.** Still unread after four runs of being the
    recommendation. It is DORTS's own technical book series about building this
    railway.
-4. **The DORTS FAQ, in full.** This run opened one question of it and got a
+3. **The DORTS FAQ, in full.** This run opened one question of it and got a
    sixteen-row procurement table that corrected a live page. There are dozens
    more questions on that node.

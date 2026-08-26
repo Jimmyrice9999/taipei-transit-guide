@@ -164,9 +164,11 @@ in a sentence, and it is entirely absent from English coverage.
 Wenhu recommended **revised maintenance standards for the steel running surface**
 and **wet-weather speed reduction principles**, and flagged **water film slip**.
 
-*Source: 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 — a technical paper hosted by
-New Taipei DORTS. **Primary-adjacent and high quality. Read it in full — it likely
-answers several other TBCs.***
+*Source: 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 — an official DORTS
+technical paper hosted by New Taipei DORTS. It was read in full in Run 243 and
+its running-surface findings are published at
+`content/rail/technology/wenhu-steel-running-surface.md`. The 2025 expert-review
+lead above remains unverified and is not used as a current operating claim.*
 
 ---
 

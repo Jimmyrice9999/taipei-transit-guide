@@ -187,9 +187,11 @@ The Neihu section uses **moving block CBTC**, maintaining train separation
 automatically and continuously monitoring all train positions — different from
 both the original Muzha system and Taipei's high-capacity lines.
 
-*Source: 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 — a technical paper hosted
-by New Taipei DORTS. **Primary-adjacent and high quality.** Worth reading in full;
-likely answers more TBCs than are captured here.*
+*Source: 李政安 & 蘇瑞文, 臺北捷運內湖線中運量系統概述 — an official DORTS
+technical paper hosted by New Taipei DORTS. Read in full in Run 243; the
+running-surface findings are published at
+`content/rail/technology/wenhu-steel-running-surface.md`. The signalling and
+dimension passages remain leads for later, separately sourced integration.*
 
 ### Neihu section dimensions
 

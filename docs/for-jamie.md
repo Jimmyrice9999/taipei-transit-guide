@@ -2,6 +2,28 @@
 
 ## Active handoff - 27 August 2026
 
+Run 243 adds the Neihu Line steel running-surface page and its one-subject
+research pair. The full official DORTS technical paper establishes the
+Muzha-versus-Neihu material difference, the rainy-climate design rationale,
+mechanical pre-bending, anti-rust treatment and paint-and-filler traction
+coating, plus the paper's reported 14.8 km construction quantities. The page
+keeps those quantities qualified as a 2009 construction account rather than a
+current inventory.
+
+The exact material handoff boundary, steel specification, current condition and
+replacement history, current maintenance cycle and wet-weather rule remain
+TBC. The 2025 expert-review lead in the systems research file remains
+unverified and is not published as a current operating claim.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot, South Depot, depot-levels and Neihu
+running-surface subjects, starting with the next explicitly incomplete system
+or line subject.
+
+## Previous handoff - Run 242
+
 Run 242 adds the metro depot maintenance-levels page and its one-subject
 research pair. Full official records establish that Taipei's five inspection
 levels are capability tiers: Level 3 adds partial-disassembly inspection,

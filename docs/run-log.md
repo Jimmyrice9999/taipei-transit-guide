@@ -1,3 +1,57 @@
+## Run 243 - add Neihu steel running-surface record (2026-08-27)
+
+### Sourced
+
+Added the technology page and one-subject research pair for the Neihu Line's
+steel running surface. The official DORTS technical paper, read in full,
+describes the through-running medium-capacity system as rubber-tyred and
+records ordinary reinforced concrete on the older Muzha section versus a steel
+running surface on the Neihu section. It attributes the change to maintenance
+difficulty in northern Taiwan's rainy, humid climate and describes the steel as
+mechanically pre-bent to the designed curvature, anti-rust treated, and coated
+on the tyre-contact face with a paint-and-filler traction mixture.
+
+The page publishes the paper's reported construction quantities, including
+6,465 tonnes of section steel, 5,203 fishplate sets, 589 finger plates, the
+clip, plate, rubber and bolt quantities, and the paper's 14.8 km section scope.
+Every quantity is marked as a paper-era construction account rather than a
+current inventory or independent as-built audit.
+
+### TBC and checked failures
+
+The exact physical handoff boundary between the Muzha concrete and Neihu steel
+surfaces, steel grade and dimensions, complete coating formulation, current
+condition and replacement history, current operator-approved maintenance cycle,
+and any wet-weather operating rule remain TBC. The research file records each
+failed retrieval against the full technical paper.
+
+### Contradicted the corpus
+
+No factual claim was contradicted. The stale research index description of the
+paper as unread was corrected; the earlier systems lead's mention of a 2025
+expert review remains explicitly unverified and is not published as a current
+operating claim.
+
+### Conflicts found
+
+- The paper reports construction quantities, but no current inventory or
+  replacement history was found; the two are not treated as equivalent.
+- The paper gives the Neihu project length as 14.8 km and distinguishes the
+  section materials, but it does not state the exact physical material-change
+  boundary. No competing boundary value was found.
+
+### Gates
+
+`cite` clean: 1,727 content files and 7,614 citations (7,395 primary, 219
+secondary). `verify` clean: 2,740 static pages and 2,893 postbuild pages; no
+missing glyphs; 489,601 internal links across 2,893 pages with no broken links,
+fragments or orphans; links audit 1,933 pages and 760 linkable destinations;
+accessibility clean; claims 25,388 sourced, 4,502 TBC and 0 ASSERTED; research
+214 files and 908 checked failures; geometry and CVD clean. `nav` passed 19/19
+checks. `npm test` passed 234/234 tests and the fact cross-check reported no
+contradictions. Generated audit reports were restored after verification;
+`probes/` remains untouched and untracked.
+
 ## Run 242 - explain metro depot maintenance levels (2026-08-27)
 
 ### Sourced
