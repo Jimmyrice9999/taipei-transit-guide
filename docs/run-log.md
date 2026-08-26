@@ -19498,8 +19498,8 @@ restored after verification; `probes/` remains untracked.
 
 Added Jianan–Taichung Port as the next TRA construction-history subject, kept
 distinct from a current route identity. The full operator construction PDF lists
-row 45 as a 7.8 km TRA-built segment, constructed in 1957 and opened in 1970,
-with the explanation that it was extended to double track:
+row 45 as a 7.8 km TRA-built segment, constructed in 1973 and opened in 1974;
+row 45 has no construction explanation:
 `https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
 The full current operator HTML history table is marked updated 2026-04-27 and
 does not contain the PDF's Jianan–Taichung Port row:
@@ -19531,7 +19531,8 @@ omits that row and uses a different current numbering sequence; both operator
 presentations are retained rather than merged. The current station address keeps
 甲南路 visible as a lead, but does not prove that the historical place name is a
 current station identity or that the 7.8 km boundary maps one-to-one to current
-station data.
+station data. The previous 1957/1970 and double-track attribution was a row
+mapping error: those entries align with PDF rows 43 and 44, not row 45.
 
 ### Gates
 
@@ -19740,6 +19741,54 @@ live interval and historical construction boundary are surveyed equivalents.
 
 `cite` clean (1,686 content files; 7,359 citations); `research` clean (173
 files; 730 checked failures); claims 24,642 sourced/4,492 TBC/0 ASSERTED;
+build completed with 2,807 Han-subset checks; 470,240 internal links checked
+across 2,807 pages with no broken links, unresolved fragments or orphan pages;
+search 1,903 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 201 - correct TRA Jianan–Taichung Port source mapping (2026-08-26)
+
+### Sourced
+
+Reread the complete operator construction-history PDF and corrected the
+Jianan–Taichung Port page. PDF row 45 is 7.8 km, lists TRA as constructor, and
+aligns with 1973 construction and 1974 operation; row 45 has no construction
+explanation. The 1957/1970 `添築雙線` entries align with rows 43 and 44, not
+row 45:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The page title and summary now describe a construction record, while its
+existing URL slug is retained. The current operator HTML table still omits
+Jianan–Taichung Port:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+### TBC and checked failures
+
+Row-45 construction explanation, exact day/month and commissioning record,
+contract/completion certificate, intermediate historical station register,
+surveyed 7.8 km boundary, verified historical-to-current station mapping and
+current track-count/as-built status remain TBC. No checked primary source
+supplies those records for this exact historical boundary.
+
+### Contradicted the corpus
+
+The previous Run 196 page and handoff attributed 1957/1970 and a double-track
+explanation to row 45. The complete PDF reread shows those values belong to
+rows 43 and 44; row 45 is 1973/1974 with no explanation. The content, research
+report, index labels, handoff and Run 196 log description were corrected.
+
+### Conflicts found
+
+The operator PDF retains Jianan–Taichung Port as row 45, while the current
+operator HTML table omits it and uses a different numbering boundary. The
+current Taichung Port station address on 甲南路 remains a lead, not proof that
+the historical Jianan place name maps one-to-one to station 2210. These
+boundaries remain published separately.
+
+### Gates
+
+`cite` clean (1,686 content files; 7,359 citations); `research` clean (173
+files; 730 checked failures); claims 24,641 sourced/4,493 TBC/0 ASSERTED;
 build completed with 2,807 Han-subset checks; 470,240 internal links checked
 across 2,807 pages with no broken links, unresolved fragments or orphan pages;
 search 1,903 entries; unit 234/234; navigation 19/19; browser/accessibility

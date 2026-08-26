@@ -1,23 +1,22 @@
 ---
-title: The Taiwan Railways Jianan–Taichung Port Double-Track Record
-summary: A 7.8 km TRA construction-history record for Jianan–Taichung Port, recorded in the operator PDF as built in 1957 and opened in 1970 with an added second track, while the current HTML history table omits the row.
+title: The Taiwan Railways Jianan–Taichung Port Construction Record
+summary: A 7.8 km TRA construction-history record for Jianan–Taichung Port, recorded in the operator PDF as constructed in 1973 and opened in 1974, while the current HTML history table omits the row.
 order: 17
 updated: 2026-08-26
 aliases:
   - 甲南—臺中港
   - 甲南─臺中港
   - Jianan–Taichung Port
-  - Jianan–Taichung Port double track
 facts:
   - label: Operator-PDF construction segment length
     value: 7.8
     unit: km
     source: tra-construction-history
   - label: Construction year in the operator PDF
-    value: 1957
+    value: 1973
     source: tra-construction-history
   - label: Operation-start year in the operator PDF
-    value: 1970
+    value: 1974
     source: tra-construction-history
   - label: Operator listed as constructor
     value: Taiwan Railways Administration
@@ -26,9 +25,8 @@ facts:
     value: Taichung Port (2210)
     source: tra-station-taichung-port
 specs:
-  - label: Historical construction-table explanation
-    value: Extended to be double-tracked
-    source: tra-construction-history
+  - label: Historical construction-table explanation for row 45
+    value: TBC
   - label: Current TDX line membership at Taichung Port
     value: Western Main Line (Coast Line)
     source: tdx-tra-line
@@ -43,7 +41,7 @@ sources:
     accessed: 2026-08-26
     kind: primary
     lang: zh-Hant
-    note: Full ten-page operator PDF. Its row 45 lists Jianan–Taichung Port as 7.8 km with TRA as constructor; the aligned chronology gives 1957 construction, 1970 operation start and 添築雙線, or an extension to double track.
+    note: Full ten-page operator PDF. Its row 45 lists Jianan–Taichung Port as 7.8 km with TRA as constructor; the aligned chronology gives 1973 construction and 1974 operation start, with no explanation in that row.
   - id: tra-history-page
     title: Railway route construction history
     titleOriginal: 臺灣鐵路路線建造史
@@ -87,16 +85,18 @@ sources:
 The full operator construction-history PDF identifies row 45 as 甲南─臺中港,
 Jianan–Taichung Port, and gives the segment 7.8 km with Taiwan Railways
 Administration as constructor.[^tra-construction-history] In the aligned
-chronology, the record carries 1957 as the construction year and 1970 as the
-operation-start year.[^tra-construction-history] Its explanation is 添築雙線,
-which the PDF renders as “Extended to be double-tracked.”[^tra-construction-history]
+chronology, the record carries 1973 as the construction year and 1974 as the
+operation-start year.[^tra-construction-history] Row 45 is not marked with an
+explanation in the PDF's aligned row.[^tra-construction-history] The following
+rows contain separate 添築雙線 (“Extended to be double-tracked”) entries, but
+their explanations are not transferred to Jianan–Taichung Port.[^tra-construction-history]
 
 This page calls it a PDF-recorded construction subject because the source
 provides a historical record, not a current route identity. The 7.8 km value is
 therefore retained as the PDF's construction-table scope.[^tra-construction-history]
 The operation-start field supplies a year, not an exact commissioning date, and
-the double-track explanation is not silently converted into a current track-count
-survey.[^tra-construction-history]
+the absence of a row-45 explanation is not converted into a claim about the
+current track count.[^tra-construction-history]
 
 ## Two operator presentations, not one merged table
 
@@ -127,9 +127,9 @@ Taichung Port or that a current track count can be inferred.[^tdx-tra-station][^
 
 ## Records still missing
 
-The checked primary records provide the PDF's 7.8 km subject, constructor, 1957
-construction year, 1970 operation-start year and double-track explanation, but
-not the day and month of either milestone, the contract or completion
+The checked primary records provide the PDF's 7.8 km subject, constructor, 1973
+construction year and 1974 operation-start year, but not a row-45 explanation,
+the day and month of either milestone, the contract or completion
 certificate, a surveyed historical boundary, an intermediate station register,
 or a current as-built track-count survey.[^tra-construction-history] They also do
 not supply a verified current station ID for the historical Jianan name; that
