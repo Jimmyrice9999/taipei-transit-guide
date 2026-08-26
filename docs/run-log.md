@@ -19231,3 +19231,61 @@ across 2,789 pages with no broken links, unresolved fragments or orphan pages;
 unit 234/234; navigation 19/19; a11y 1,884 pages with no errors or warnings;
 CVD audit reports zero genuine WCAG contrast failures. Generated audit reports
 were restored after verification; `probes/` remains untracked.
+
+## Run 191 - add TRA Tanzi–Shengang Line history (2026-08-26)
+
+### Sourced
+
+Added the Tanzi–Shengang route as the eighth closed-alignment subject in the
+TRA history inventory. TRA's full construction-history table lists the route at
+8.7 km, constructed in 1956 and opened in 1957, with TRA as constructor:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+Tanzi District Office's full page describes the later Tanyashen Greenway as a
+roughly 14 km reuse of a military logistics railway discontinued in 1998:
+`https://www.tanzi.taichung.gov.tw/981916/1854974/3252725/3252745/3252846`.
+Shengang District Office's full page dates the greenway opening to 2 May 2004,
+records the Ministry of Defense's May 2000 access agreement and identifies the
+former military Shengang branch:
+`https://www.shengang.taichung.gov.tw/982296/982509/982566/982611/982620/1179283/post`.
+The city tourism bureau confirms the roughly 14 km route and military-railway
+description:
+`https://www.tourism.taichung.gov.tw/16592/16596/1183991/1524538`.
+The full Shengang urban-plan review instead calls the corridor the former
+longitudinal railway's Taichung branch and records its reuse as the greenway:
+`https://www.ud.taichung.gov.tw/media/1112635/%E7%A5%9E%E5%B2%A1%E9%83%BD%E5%B8%82%E8%A8%88%E7%95%AB-%E4%B8%89%E9%80%9A-%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5-%E6%9B%B8.pdf`.
+
+### TBC and checked failures
+
+The complete historical station register, legal closure or operator-to-military
+transfer instrument, segment-by-segment track-removal chronology and surveyed
+comparison between the 8.7 km operator route and the approximately 14 km
+greenway remain TBC. The official records establish reuse milestones but do not
+settle those archival boundaries.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The TRA research had left the
+Tanzi–Shengang entry as an unwritten closed-alignment gap; this run adds the
+operator record and preserves the municipal identity conflict instead of
+asserting that the two administrative descriptions are the same.
+
+### Conflicts found
+
+TRA's construction table describes an 8.7 km TRA-built route constructed in
+1956 and opened in 1957. Tanzi, Shengang and tourism pages describe the reused
+corridor as a military logistics railway or military Shengang branch, while the
+urban plan calls it the former longitudinal railway's Taichung branch. The
+operator gives 8.7 km; municipal greenway sources give approximately 14 km.
+The 1998 discontinuation, May 2000 access agreement and 2 May 2004 greenway
+opening are retained as separate milestones because the operator row supplies
+no corresponding closure or transfer date.
+
+### Gates
+
+`cite` clean (1,678 content files; 7,313 citations); `research` clean (165
+files; 696 checked failures); claims 24,521 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,791 Han-subset checks; 468,341 internal links checked
+across 2,791 pages with no broken links, unresolved fragments or orphan pages;
+unit 234/234; navigation 19/19; a11y 1,885 pages with no errors or warnings;
+CVD audit reports zero genuine WCAG contrast failures. Generated audit reports
+were restored after verification; `probes/` remains untracked.
