@@ -18147,6 +18147,56 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 225 - add TRA Chishang–Haiduan single-track record (2026-08-27)
+
+### Sourced
+
+Added row 108 from the complete operator construction-history PDF. It records
+Chishang–Haiduan at 0.3 km as a single-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2012
+in the construction-year field, 2013 in the operation-start year field, and
+Hualien–Taitung railway electrification engineering as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Chishang 6070 and Haiduan 6060. The
+committed TDX EL record places them adjacently at source sequences 56 and 57,
+with supplied travelled-distance fields 278.4 km and 284.1 km, a difference of
+5.7 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6070`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6060`.
+
+### TBC and checked failures
+
+The surveyed 0.3 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 5.7 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 108; that is retained as a
+coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Chishang, Haiduan and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 0.3 km, while subtracting the current TDX EL endpoint
+fields gives 5.7 km. The sources do not establish a common distance boundary
+or measurement purpose, so the values are reported separately and are not
+averaged.
+
+### Gates
+
+`cite` clean (1,709 content files; 7,513 citations); `research` clean (196
+files; 833 checked failures); claims 25,065 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,705 static pages and postbuild checked 2,853 pages; 475,671
+internal links checked across 2,853 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,915 pages and 743 linkable
+destinations; search 1,926; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 224 - add TRA Dongzhu–Fuli single-track record (2026-08-27)
 
 ### Sourced
