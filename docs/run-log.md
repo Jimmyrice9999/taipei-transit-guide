@@ -1,3 +1,60 @@
+## Run 238 - add Xinyi Line East Extension record (2026-08-27)
+
+### Sourced
+
+Added the Xinyi Line East Extension project and research pair from full Taipei
+DORTS, Taipei City Government and TRTC pages. The record gives the current
+approximately 1.4 km, one-underground-station scope from the Xiangshan tail
+track toward Guangci/Fengtian Temple and Yucheng Park; it preserves the
+original two-station plan and the documented cancellation of the Xinyi Road
+Sec. 6 station. It records the 2010 planning approval, 2014 financial-plan
+approval, 2015 urban-plan approvals, 2016 environmental change approval and
+2018 second-plan revision, plus CR580C's 2016 start, station/crossover/tunnel
+dimensions and construction constraints.
+
+The status record keeps the September 2025 87.12% report and first-quarter-2026
+target dated, then records TRTC's May 2026 trial operation without passenger
+use of the new station and DORTS's 1 August 2026 final inspection: 28 items,
+including five pre-operation improvements. The latest notice requires those
+items to be corrected and reported before operating permission; no public
+opening date is asserted.
+
+### TBC and checked failures
+
+The public opening date, CR580C budget or contract value, final public station
+code, revenue timetable and observed ridership remain TBC. The DORTS page's
+1.4 km and the Taipei City FAQ's 1.42 km are both retained as a source
+precision/scope conflict. The engineering page's `R03` is reported as a
+project designation, not converted into a public station-code claim.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The earlier opening target is retained
+as historical because the latest inspection notice describes remaining
+permission steps.
+
+### Conflicts found
+
+- Route length: DORTS publishes approximately 1.4 km; the Taipei City FAQ
+  publishes approximately 1.42 km. The pages do not explain the difference.
+- Station count: the original environmental statement covered two stations;
+  the current route has one after the Xinyi Road Sec. 6 station cancellation.
+- Naming: the engineering page uses `R03`, while the public route and operator
+  notices use Guangci/Fengtian Temple; no public code mapping is inferred.
+- Opening timing: the September 2025 first-quarter-2026 target is superseded
+  by the later inspection and permission boundary, not silently rewritten.
+
+### Gates
+
+`cite` clean: 1,723 content files and 7,600 citations (7,381 primary, 219
+secondary). `verify` clean: 2,732 static pages and 2,881 postbuild pages; no
+missing glyphs; 480,890 internal links across 2,881 pages with no broken links,
+fragments or orphans; links audit 1,929 pages and 756 linkable destinations;
+accessibility clean; claims 25,330 sourced, 4,497 TBC and 0 ASSERTED;
+research 209 files and 887 checked failures; geometry and CVD clean. `nav`
+passed 19/19 checks. `npm test` passed 234/234 tests and the fact cross-check
+reported no contradictions. `probes/` remains untouched and untracked.
+
 # Run log
 
 Three unattended sessions, newest last. Runs 1 and 2 on 5 August 2026,
