@@ -52,3 +52,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Haiduan–Ruiyuan Single-track Record](/rail/history/haiduan-ruiyuan-single-track/)
 - [The Taiwan Railways Shanli–Taitung Double-track Record](/rail/history/shanli-taitung-double-track/)
 - [The Taiwan Railways Huatan–Shetou Double-track Record](/rail/history/huatan-shetou-double-track/)
+- [The Taiwan Railways Jinlun–Taimali Single-track Record](/rail/history/jinlun-taimali-single-track/)

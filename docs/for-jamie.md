@@ -2,24 +2,74 @@
 
 ## Active handoff - 27 August 2026
 
-Run 228 adds the next verified TRA subject, the Huatan–Shetou double-track
-record. The complete operator construction-history PDF records row 111 at
-4.3 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
-Office as constructor, 2006 and 2014 year fields, and a Yuan-Lin Railway
-elevated explanation. The current operator pages identify Huatan 3370 and
-Shetou 3410; current TDX exposes a WL interval of 15.3 km with Dacun, Yuanlin
-and Yongjing between the endpoints, kept separate from the historical project
-value because the sources do not establish a common boundary.
+Run 229 adds the next verified TRA subject, the Jinlun–Taimali single-track
+record. The complete operator construction-history PDF records row 112 at
+1.9 km, with Taiwan Railways Administration as constructor, 2010 and 2014
+year fields, and the operator's exact English explanation `South-Taimail
+Bridge reconstruction`. The current operator pages identify Jinlun 5210 and
+Taimali 5220; current TDX exposes an SL interval of 10.9 km, kept separate
+from the historical project value because the sources do not establish a
+common boundary.
 
-Gates: cite 1,712/7,536; research 199/845; claims 25,128 sourced/4,495
-TBC/0 ASSERTED; build 2,711 static pages and 2,859 postbuild pages; links
-476,379 across 2,859 pages; links audit 1,918 pages/746 destinations; search
-1,929; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,713/7,544; research 200/849; claims 25,150 sourced/4,495
+TBC/0 ASSERTED; build 2,713 static pages and 2,861 postbuild pages; links
+476,614 across 2,861 pages; links audit 1,919 pages/747 destinations; search
+1,930; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 112, Jinlun–Taimali) before broader fleet/systems work.
+(row 113, Pingtung–Chaozhou) before broader fleet/systems work.
+
+## Run 229 - add TRA Jinlun–Taimali single-track record (2026-08-27)
+
+### Sourced
+
+Added row 112 from the complete operator construction-history PDF. It records
+Jinlun–Taimali at 1.9 km as a single-track subject, with Taiwan Railways
+Administration as constructor, 2010 in the construction-year field, 2014 in
+the operation-start year field, and `South-Taimail Bridge reconstruction` as
+the operator's English explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Jinlun 5210 and Taimali 5220. The
+committed TDX SL record places them adjacently at source sequences 19 and 20,
+with supplied travelled-distance fields 104.2 km and 115.1 km, a difference of
+10.9 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5210`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/5220`.
+
+### TBC and checked failures
+
+The surveyed 1.9 km boundary, exact construction/bridge-reconstruction/service
+days, contract and completion records, work scope, and source-defined mapping
+to the current 10.9 km TDX interval remain TBC. The current operator
+construction-history HTML was fetched and does not repeat row 112; that is
+retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Jinlun, Taimali and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 1.9 km, while subtracting the current TDX SL endpoint
+fields gives 10.9 km. The current endpoints are adjacent in the ordered record,
+but the sources do not establish a common distance boundary or measurement
+purpose, so the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,713 content files; 7,544 citations); `research` clean (200
+files; 849 checked failures); claims 25,150 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,713 static pages and postbuild checked 2,861 pages; 476,614
+internal links checked across 2,861 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,919 pages and 747 linkable
+destinations; search 1,930; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 228 - add TRA Huatan–Shetou double-track record (2026-08-27)
 
