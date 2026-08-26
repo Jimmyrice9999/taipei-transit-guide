@@ -36,3 +36,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Hualien–Taitung Widening Record](/rail/history/hualien-taitung-widening/)
 - [The Taiwan Railways Hanben–Hualien Double-track Record](/rail/history/hanben-hualien-double-track/)
 - [The Taiwan Railways Hualien–Ruisui Double-track Record](/rail/history/hualien-ruisui-double-track/)
+- [The Taiwan Railways Su'aoxin–Hanben Double-track Record](/rail/history/suaoxin-hanben-double-track/)

@@ -20367,3 +20367,61 @@ links checked across 2,827 pages with no broken links, unresolved fragments or
 orphan pages; search 1,913; nav 19/19; unit 234/234; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 212 - add TRA Su'aoxin–Hanben double-track record (2026-08-26)
+
+### Sourced
+
+Added Su'aoxin–Hanben as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 94 as 36.7 km, with the
+Railway Reconstruction Bureau's Eastern Region Engineering Office as
+constructor. Its aligned chronology gives 1992 construction and operation from
+2003, and records heavy rail and PC sleepers:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The fetched current operator HTML table does not contain a Su'aoxin–Hanben row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The current operator station pages identify Su'aoxin as 7130 and Hanben as
+7070:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7130`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7070`.
+The committed TDX station pull contains both current station records. Its
+Eastern Line station-of-line data places Su'aoxin at source sequence 25 with a
+supplied distance of 90.2 km and Hanben at source sequence 30 with 125.7 km.
+The guide presents those as positions 26 and 31 and retains the calculated
+35.5 km field difference as a current data-layer measurement, not a
+replacement for the historical 36.7 km project record.
+
+### TBC and checked failures
+
+The surveyed project boundary and chainage, contract and completion records,
+detailed structures beyond the heavy-rail and PC-sleeper labels, current
+as-built track inventory and service boundary, and the reason for the 1.2 km
+difference between the operator and TDX measurements remain TBC. No source was
+found that defines the current HTML omission as a contradiction of the older
+PDF row.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds the shared
+operator project record while retaining its recorded rail and sleeper works,
+the current station identities and the TDX measurement layer separately.
+
+### Conflicts found
+
+The complete operator PDF contains row 94, while the fetched current operator
+HTML table does not contain a Su'aoxin–Hanben row. This is a source-coverage
+conflict, not a disagreement over two published lengths. The historical
+operator record is 36.7 km; current TDX endpoint fields yield 35.5 km, a
+different measurement layer whose relationship to the historical value is not
+explained. The page does not average or silently substitute the values.
+
+### Gates
+
+`cite` clean (1,697 content files; 7,428 citations); `research` clean (184
+files; 777 checked failures); claims 24,827 sourced/4,494 TBC/0 ASSERTED; build
+generated 2,681 static pages and postbuild checked 2,829 pages; 472,837 internal
+links checked across 2,829 pages with no broken links, unresolved fragments or
+orphan pages; search 1,914; nav 19/19; unit 234/234; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
