@@ -18147,6 +18147,52 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 235 - add TRA Shanhua Station platform record (2026-08-27)
+
+### Sourced
+
+Added row 118 from the complete operator construction-history PDF. It records
+Shanhua Station at 0.3 km, with Taiwan Railways Administration as constructor,
+2017 in both the construction-year and operation-start fields, and `增設月台`
+as the explanation; the operator's English column says `Add platform`:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator page identifies Shanhua station 4170. The committed TDX
+WL record places it at source sequence 83, with supplied travelled distance
+334.2 km; the guide presents that as one-based position 84:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4170`.
+
+### TBC and checked failures
+
+The exact platform-addition or commissioning day; platform count, type and
+geometry; surveyed boundary for the 0.3 km value; contract and completion
+records; detailed work scope; and source-defined mapping to the current
+334.2 km TDX field remain TBC. The current operator construction-history HTML
+was fetched and does not repeat row 118; that is retained as a coverage
+difference. The source's Add platform wording is reported as published.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical station-platform subject
+is kept beside, rather than merged into, the current Shanhua and TDX records.
+
+### Conflicts found
+
+No direct numeric contradiction was found. The historical PDF gives 0.3 km and
+the current TDX field gives 334.2 km, but they belong to records with different
+stated purposes and are not competing measurements of the same boundary.
+
+### Gates
+
+`cite` clean (1,719 content files; 7,585 citations); `research` clean (206
+files; 875 checked failures); claims 25,273 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,725 static pages and postbuild checked 2,873 pages; 478,030
+internal links checked across 2,873 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,925 pages and 753 linkable
+destinations; search 1,936; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 234 - add TRA Haikeguan–Badouzi reopening record (2026-08-27)
 
 ### Sourced

@@ -2,24 +2,69 @@
 
 ## Active handoff - 27 August 2026
 
-Run 234 adds the next verified TRA subject, the Haikeguan–Badouzi reopening
-record. The complete operator construction-history PDF records row 117 at
-0.4 km, with Taiwan Railways Administration as constructor, 2015 and 2016
-year fields, and the source explanation `復駛` whose English column reads
-`Revest drove`. The current operator pages identify Haikeguan 7361 and
-Badouzi 7362; current TDX exposes an SA interval of 0.4 km, kept separate
-from the historical subject because the sources do not establish a common
-measurement boundary.
+Run 235 adds the next verified TRA subject, the Shanhua Station platform
+record. The complete operator construction-history PDF records row 118 at
+0.3 km, with Taiwan Railways Administration as constructor, 2017 in both
+year fields, and the source explanation `增設月台` whose English column reads
+`Add platform`. The current operator page identifies Shanhua 4170; current
+TDX places it at Western Main Line position 84 and 334.2 km, kept separate
+from the historical station-work value.
 
-Gates: cite 1,718/7,580; research 205/870; claims 25,256 sourced/4,495
-TBC/0 ASSERTED; build 2,723 static pages and 2,871 postbuild pages; links
-477,795 across 2,871 pages; links audit 1,924 pages/752 destinations; search
-1,935; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,719/7,585; research 206/875; claims 25,273 sourced/4,495
+TBC/0 ASSERTED; build 2,725 static pages and 2,873 postbuild pages; links
+478,030 across 2,873 pages; links audit 1,925 pages/753 destinations; search
+1,936; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 118, Shanhua Station) before broader fleet/systems work.
+(row 119, Sanmin Station) before broader fleet/systems work.
+
+## Run 235 - add TRA Shanhua Station platform record (2026-08-27)
+
+### Sourced
+
+Added row 118 from the complete operator construction-history PDF. It records
+Shanhua Station at 0.3 km, with Taiwan Railways Administration as constructor,
+2017 in both the construction-year and operation-start fields, and `增設月台`
+as the explanation; the operator's English column says `Add platform`:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator page identifies Shanhua station 4170. The committed TDX
+WL record places it at source sequence 83, with supplied travelled distance
+334.2 km; the guide presents that as one-based position 84:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4170`.
+
+### TBC and checked failures
+
+The exact platform-addition or commissioning day; platform count, type and
+geometry; surveyed boundary for the 0.3 km value; contract and completion
+records; detailed work scope; and source-defined mapping to the current
+334.2 km TDX field remain TBC. The current operator construction-history HTML
+was fetched and does not repeat row 118; that is retained as a coverage
+difference. The source's Add platform wording is reported as published.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical station-platform subject
+is kept beside, rather than merged into, the current Shanhua and TDX records.
+
+### Conflicts found
+
+No direct numeric contradiction was found. The historical PDF gives 0.3 km and
+the current TDX field gives 334.2 km, but they belong to records with different
+stated purposes and are not competing measurements of the same boundary.
+
+### Gates
+
+`cite` clean (1,719 content files; 7,585 citations); `research` clean (206
+files; 875 checked failures); claims 25,273 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,725 static pages and postbuild checked 2,873 pages; 478,030
+internal links checked across 2,873 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,925 pages and 753 linkable
+destinations; search 1,936; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 234 - add TRA Haikeguan–Badouzi reopening record (2026-08-27)
 
