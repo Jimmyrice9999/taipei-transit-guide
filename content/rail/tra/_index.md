@@ -275,6 +275,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6210 as Fengtian (豐田)."
+  - id: tra-station-haikeguan
+    title: "Haikeguan Station information"
+    titleOriginal: "海科館車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7361"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 7361 as Haikeguan (海科館)."
+  - id: tra-station-badouzi
+    title: "Badouzi Station information"
+    titleOriginal: "八斗子車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7362"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 7362 as Badouzi (八斗子)."
   - id: tra-station-nanping
     title: "Nanping Station information"
     titleOriginal: "南平車站資訊"
@@ -322,3 +340,4 @@ The [Pingtung–Chaozhou double-track record](/rail/history/pingtung-chaozhou-do
 The [Shoufeng–Nanping double-track record](/rail/history/shoufeng-nanping-double-track/) retains row 114's 12.0 km and 2014/2015 fields beside its Extended to be double-tracked explanation and the current Shoufeng 6220–Nanping 6190 EL record.[^tra-construction-history][^tra-station-shoufeng][^tra-station-nanping][^tdx-tra-line]
 The [Taoyuan Station switching record](/rail/history/taoyuan-station-switching/) retains row 115's 0.3 km and 2015/2015 fields beside its Switching of the Taoyuan temperal Station explanation and the current Taoyuan 1080 WL record.[^tra-construction-history][^tra-station-taoyuan][^tdx-tra-line]
 The [Shoufeng–Fengtian double-track record](/rail/history/shoufeng-fengtian-double-track/) retains row 116's 2.7 km and 2015/2016 fields beside its Extended to be double-tracked explanation and the current Shoufeng 6220–Fengtian 6210 EL record.[^tra-construction-history][^tra-station-shoufeng][^tra-station-fengtian][^tdx-tra-line]
+The [Haikeguan–Badouzi reopening record](/rail/history/haikeguan-badouzi-reopening/) retains row 117's 0.4 km and 2015/2016 fields beside its 復駛 explanation and the current Haikeguan 7361–Badouzi 7362 SA record.[^tra-construction-history][^tra-station-haikeguan][^tra-station-badouzi][^tdx-tra-line]
