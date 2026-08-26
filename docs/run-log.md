@@ -18943,3 +18943,64 @@ painted-box, keyboard/tree and print checks passed, zero axe violations across
 1,878 pages, 820 screenshots and 116 PDFs. Article-template screenshots were
 inspected at 320/1440; generated audit outputs were restored and `probes/`
 remains untracked.
+
+## Run 185 - add TRA Hualien–Tianpu history (2026-08-26)
+
+### Sourced
+
+Added the former Hualien–Tianpu alignment as the third closed TRA history
+subject. The operator's full construction-history table gives the entry as 2.4
+km and records its dismantling in 1982:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+Hualien County Government's full cultural-park page documents the old station's
+762 mm narrow-gauge East Line context, the 1982 widening and the retired
+Tianpu/old-station city stations:
+`https://hk.hl.gov.tw/News_Content.aspx?n=39458&s=175434&sms=28561`.
+The municipal Hualien City page records 27 June 1982 as the transfer of old
+station business to the new station:
+`https://hk.hl.gov.tw/cp.aspx?n=39464`.
+The Hualien County Cultural Affairs Bureau records the former rail corridor,
+progressive rail removal and the surviving water tower:
+`https://www.hccc.gov.tw/zh-tw/CulturalHeritage/Detail/32`.
+The Hualien City cultural feature records the 2002 cultural-park opening and
+keeps the separate old-coastal and port-line distances distinct:
+`https://culture-tourism.hualien.gov.tw/review_dt.php?id=19`.
+Content body: 512 tokens; research report: 903 tokens.
+
+### TBC and checked failures
+
+The fetched records do not provide a complete former-station register or
+timetable, an exact legal closure instrument, a segment-by-segment removal
+schedule, a segment-level gauge conversion chronology or complete historical
+geometry. The research file records those checked gaps and keeps 2.4 km, the
+1982 dismantling year and 27 June station-transfer date in their separate
+measurement scopes; no figure was guessed.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research correctly left
+Hualien/Tianpu within the historical gauge and closed-line architecture gaps;
+this run turns that lead into a sourced historical alignment page without
+creating an unsupported former-station stub list.
+
+### Conflicts found
+
+The operator's 2.4 km entry is not merged with the municipal article's 1.1 km
+old-coastal-line or 4.0 km old-port-line figures, which describe different
+segments. The operator's 1982 dismantling year is kept alongside the municipal
+27 June 1982 station-transfer milestone; the sources do not establish that every
+track-removal action occurred on that date. Municipal pages identify the old
+762 mm context, while the fetched operator table does not provide a
+segment-level gauge-conversion chronology.
+
+### Gates
+
+`cite` clean (1,673 content files; 7,283 citations); `research` clean (160
+files; 676 checked failures); `claims` 24,444 sourced/4,489 TBC/0 ASSERTED;
+build completed with 2,781 Han-subset checks; search index 1,890 entries;
+unit 234/234; a11y 1,880 pages with no errors or warnings. Browser verification
+completed cleanly: 1,879 pages reflowed at 640/320, no painted-box overflow,
+curated keyboard/tree probes clean, zero axe violations across 1,879 pages,
+820 screenshots and the full print set. The article template was visually
+inspected at 320/1440; generated audit JSON, screenshots and PDFs were restored
+and `probes/` remains untracked.

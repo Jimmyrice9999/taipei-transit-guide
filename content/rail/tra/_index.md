@@ -32,8 +32,17 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator history page gives the official route-history framework and gauge terminology used to separate current data from historical alignments."
+  - id: tra-construction-history
+    title: "Chronological history of railroad construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full operator PDF supplies the historical route entries used by the Linkou, Shen'ao–Liandong and Hualien–Tianpu history pages."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
 
-The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The first closed-alignment record is the [Linkou Line](/rail/history/linkou-line/), kept in the cross-system history section because its current route is no longer an operating TDX line.[^tra-history] Further closed alignments follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
+The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/) and the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), kept in the cross-system history section because their historical route records are not current TDX route identities.[^tra-history][^tra-construction-history] Further closed alignments follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
