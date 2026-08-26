@@ -20425,3 +20425,59 @@ links checked across 2,829 pages with no broken links, unresolved fragments or
 orphan pages; search 1,914; nav 19/19; unit 234/234; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 213 - correct TRA construction-history alignment (2026-08-26)
+
+### Sourced
+
+The complete operator construction-history PDF was reread with its rendered
+table pages, rather than relying on text extraction alone. The row order on
+the places page aligns directly with the chronology rows on the following
+page. This corrects the two preceding entries:
+
+- Row 92, Hualien–Ruisui, is 70.5 km, constructed in 1992 and opened for
+  operation in 2003; its explanation is `舖設重軌、PC枕` (laid heavier rail and
+  PC sleepers).
+- Row 94, Su'aoxin–Hanben, is 36.7 km, constructed in 1993 and opened for
+  operation in 2004; its explanation is `添築雙線` (extended to be
+  double-tracked).
+
+The full operator PDF is the source for both corrections:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML table was reread and omits both older rows:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The corrected pages retain their current station records and TDX endpoint
+fields as separate measurement layers.
+
+### TBC and checked failures
+
+The surveyed project boundaries and chainage, contract and completion records,
+detailed structures beyond the PDF's short work descriptions, current as-built
+track inventories and service boundaries, and the reasons for the 7.7 km and
+1.2 km differences between the historical rows and TDX endpoint fields remain
+TBC. No source was found that defines the current HTML omissions as
+contradictions of the older PDF rows.
+
+### Contradicted the corpus
+
+The prior Run 211 page and handoff attributed 1987/1994 and double-tracking to
+Hualien–Ruisui. The prior Run 212 page and handoff attributed 1992/2003 and
+heavy rail/PC sleepers to Su'aoxin–Hanben. The rendered PDF table shows those
+continuation rows belong to the immediately preceding and following entries:
+Hualien–Ruisui is 1992/2003 with heavy rail/PC sleepers, and Su'aoxin–Hanben
+is 1993/2004 with double-tracking. Both content pages, both research reports,
+the TRA index labels and this handoff were corrected.
+
+### Conflicts found
+
+The complete historical PDF contains both rows, while the current operator
+HTML table omits them; that remains a source-coverage conflict. The historical
+values (70.5 km and 36.7 km) also remain different measurement layers from the
+current TDX endpoint-field differences (62.8 km and 35.5 km). No source checked
+in this run explains those differences, so neither pair was averaged or
+silently substituted.
+
+### Gates
+
+Run 213 verification is pending; generated audit reports will be restored after
+verification. `probes/` remains untracked.

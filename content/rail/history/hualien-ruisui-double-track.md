@@ -1,23 +1,23 @@
 ---
-title: The Taiwan Railways Hualien–Ruisui Double-track Record
-summary: The operator records Hualien–Ruisui as a 70.5 km Railway Reconstruction Bureau project built in 1987 and opened in 1994 with double-tracking; current TDX endpoint fields measure 62.8 km.
+title: The Taiwan Railways Hualien–Ruisui Reconstruction Record
+summary: The operator records Hualien–Ruisui as a 70.5 km Railway Reconstruction Bureau project built in 1992 and opened in 2003 with heavier rail and PC sleepers; current TDX endpoint fields measure 62.8 km.
 order: 30
 updated: 2026-08-26
 aliases:
   - 花蓮–瑞穗
   - 花蓮瑞穗雙線
   - Hualien–Ruisui
-  - Hualien–Ruisui double track
+  - Hualien–Ruisui reconstruction
 facts:
   - label: Operator-record construction length
     value: 70.5
     unit: km
     source: tra-construction-history
   - label: Operator-record construction year
-    value: 1987
+    value: 1992
     source: tra-construction-history
   - label: Operator-record operation-start year
-    value: 1994
+    value: 2003
     source: tra-construction-history
   - label: Current operator Hualien station record
     value: Hualien (7000)
@@ -30,7 +30,7 @@ specs:
     value: Railway Reconstruction Bureau, Eastern Region Engineering Office
     source: tra-construction-history
   - label: Recorded works
-    value: Extended to be double-tracked
+    value: Heavier rail and PC sleepers
     source: tra-construction-history
   - label: Hualien position in current TDX EL data
     value: 38
@@ -53,7 +53,7 @@ sources:
     accessed: 2026-08-26
     kind: primary
     lang: zh-Hant
-    note: Full ten-page operator PDF. It lists row 92 as Hualien–Ruisui at 70.5 km with the Railway Reconstruction Bureau Eastern Region Engineering Office as constructor; the aligned chronology gives 1987 construction, 1994 operation start and an explanation that the section was extended to be double-tracked.
+    note: Full ten-page operator PDF. It lists row 92 as Hualien–Ruisui at 70.5 km with the Railway Reconstruction Bureau Eastern Region Engineering Office as constructor; the aligned chronology gives 1992 construction, 2003 operation start and an explanation recording heavier rail and PC sleepers.
   - id: tra-history-page
     title: Railway route construction history
     titleOriginal: 臺灣鐵路路線建造史
@@ -101,19 +101,19 @@ sources:
     note: The committed full pull places Hualien 7000 at EL source sequence 37 with travelled distance 169.7 km and Ruisui 6130 at source sequence 50 with 232.5 km; the guide presents those as positions 38 and 51 and calculates a 62.8 km field difference.
 ---
 
-## A recorded double-track project, not a new route identity
+## A recorded reconstruction project, not a new route identity
 
 Taiwan Railways' complete construction-history PDF lists row 92 as
 Hualien–Ruisui, with a distance of 70.5 km.[^tra-construction-history] The
 constructor field names the Railway Reconstruction Bureau's Eastern Region
 Engineering Office.[^tra-construction-history] The aligned chronology gives
-1987 as the construction year and 1994 as the operation-start year.[^tra-construction-history]
+1992 as the construction year and 2003 as the operation-start year.[^tra-construction-history]
 
-The explanation for the row says 添築雙線, translated in the operator PDF as
-an extension to double track.[^tra-construction-history] That is the operator's
-recorded work category. The page does not turn it into a claim that every
-present-day track element between the two station records has the same
-construction history.[^tra-construction-history]
+The explanation for the row says 舖設重軌、PC枕, translated in the operator
+PDF as laying heavier rail and PC sleepers.[^tra-construction-history] Those
+are the operator's recorded work categories. The page does not turn them into
+a claim that every present-day track element between the two station records
+has the same construction history.[^tra-construction-history]
 
 The current operator's full HTML history table does not contain a
 Hualien–Ruisui row.[^tra-history-page] That omission is a coverage difference
@@ -145,7 +145,7 @@ historical 70.5 km construction record.[^tdx-tra-line][^tra-construction-history
 The checked primary sources do not provide a surveyed 70.5 km engineering
 boundary, contract package, completion certificate, detailed track-by-track
 sequence or current as-built inventory for this row.[^tra-construction-history][^tra-history-page]
-The operator PDF records the double-track work category but does not specify
+The operator PDF records the heavy-rail and PC-sleeper work categories but does not specify
 the individual structures or the complete civil-work package in the row.[^tra-construction-history]
 
 The checked sources also do not explain whether the 7.7 km difference between
@@ -154,5 +154,5 @@ rounding, route definition, station reference points or another measurement
 boundary.[^tdx-tra-line][^tra-construction-history] Those fields remain TBC.
 
 The stable result is narrower: the operator records a 70.5 km Hualien–Ruisui
-project built in 1987 and opened in 1994 with an extension to double track,
+project built in 1992 and opened in 2003 with heavier rail and PC sleepers,
 while the current data layer supplies a separate 62.8 km EL endpoint interval.[^tra-construction-history][^tdx-tra-line]

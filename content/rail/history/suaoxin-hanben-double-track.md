@@ -1,6 +1,6 @@
 ---
 title: The Taiwan Railways Su'aoxin–Hanben Double-track Record
-summary: The operator records Su'aoxin–Hanben as a 36.7 km Railway Reconstruction Bureau project built in 1992 and opened in 2003 with heavier rail and PC sleepers; current TDX endpoint fields measure 35.5 km.
+summary: The operator records Su'aoxin–Hanben as a 36.7 km Railway Reconstruction Bureau project built in 1993 and opened in 2004 with double-tracking; current TDX endpoint fields measure 35.5 km.
 order: 31
 updated: 2026-08-26
 aliases:
@@ -14,10 +14,10 @@ facts:
     unit: km
     source: tra-construction-history
   - label: Operator-record construction year
-    value: 1992
+    value: 1993
     source: tra-construction-history
   - label: Operator-record operation-start year
-    value: 2003
+    value: 2004
     source: tra-construction-history
   - label: Current operator Su'aoxin station record
     value: Su'aoxin (7130)
@@ -30,7 +30,7 @@ specs:
     value: Railway Reconstruction Bureau, Eastern Region Engineering Office
     source: tra-construction-history
   - label: Recorded works
-    value: Heavier rail and PC sleepers
+    value: Extended to be double-tracked
     source: tra-construction-history
   - label: Su'aoxin position in current TDX EL data
     value: 26
@@ -53,7 +53,7 @@ sources:
     accessed: 2026-08-26
     kind: primary
     lang: zh-Hant
-    note: Full ten-page operator PDF. It lists row 94 as Su'aoxin–Hanben at 36.7 km with the Railway Reconstruction Bureau Eastern Region Engineering Office as constructor; the aligned chronology gives 1992 construction, 2003 operation start and an explanation recording heavier rail and PC sleepers.
+    note: Full ten-page operator PDF. It lists row 94 as Su'aoxin–Hanben at 36.7 km with the Railway Reconstruction Bureau Eastern Region Engineering Office as constructor; the aligned chronology gives 1993 construction, 2004 operation start and an explanation that the section was extended to be double-tracked.
   - id: tra-history-page
     title: Railway route construction history
     titleOriginal: 臺灣鐵路路線建造史
@@ -107,12 +107,13 @@ Taiwan Railways' complete construction-history PDF lists row 94 as
 Su'aoxin–Hanben, with a distance of 36.7 km.[^tra-construction-history] The
 constructor field names the Railway Reconstruction Bureau's Eastern Region
 Engineering Office.[^tra-construction-history] The aligned chronology gives
-1992 as the construction year and 2003 as the operation-start year.[^tra-construction-history]
+1993 as the construction year and 2004 as the operation-start year.[^tra-construction-history]
 
-The row's explanation records heavy rail and PC sleepers.[^tra-construction-history]
-Those are the operator's recorded work categories. The page does not turn them
-into a claim that every present-day track element between the two station
-records has the same construction history.[^tra-construction-history]
+The explanation for the row says 添築雙線, translated in the operator PDF as
+an extension to double track.[^tra-construction-history] That is the operator's
+recorded work category. The page does not turn it into a claim that every
+present-day track element between the two station records has the same
+construction history.[^tra-construction-history]
 
 The current operator's full HTML history table does not contain a
 Su'aoxin–Hanben row.[^tra-history-page] That omission is a coverage difference
@@ -144,7 +145,7 @@ historical 36.7 km construction record.[^tdx-tra-line][^tra-construction-history
 The checked primary sources do not provide a surveyed 36.7 km engineering
 boundary, contract package, completion certificate, detailed track-by-track
 sequence or current as-built inventory for this row.[^tra-construction-history][^tra-history-page]
-The operator PDF records heavy rail and PC sleepers but does not specify the
+The operator PDF records the double-track work category but does not specify the
 individual structures or the complete civil-work package in the row.[^tra-construction-history]
 
 The checked sources also do not explain whether the 1.2 km difference between
@@ -153,5 +154,5 @@ rounding, route definition, station reference points or another measurement
 boundary.[^tdx-tra-line][^tra-construction-history] Those fields remain TBC.
 
 The stable result is narrower: the operator records a 36.7 km Su'aoxin–Hanben
-project built in 1992 and opened in 2003 with heavier rail and PC sleepers,
+project built in 1993 and opened in 2004 with an extension to double track,
 while the current data layer supplies a separate 35.5 km EL endpoint interval.[^tra-construction-history][^tdx-tra-line]
