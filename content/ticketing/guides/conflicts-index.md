@@ -678,6 +678,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full ten-page operator PDF. Its row 43 repeats the Changhua–Minxiong double-track segment as 71.7 km, with 1957 construction and 1970 operation-start fields."
+  - id: "rail-history-chiayi-xinshi-double-track-tra-history-page"
+    title: "Railway route construction history"
+    titleOriginal: "臺灣鐵路路線建造史"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-1-5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full operator HTML page. Its construction table lists Chiayi–Xinshi (double track) at 50.1 km, built in 1957, opened in 1970, with TRA as constructor and the explanation that it was extended to double track."
+  - id: "rail-history-chiayi-xinshi-double-track-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Its row 44 repeats the Chiayi–Xinshi double-track segment as 50.1 km, with 1957 construction and 1970 operation-start fields."
   - id: "rail-history-incidents-dorts-flood-technical-87"
     title: "Practical water, environmental-control and fire-safety engineering, p. 87"
     titleOriginal: "捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務"
@@ -2236,6 +2254,30 @@ that the table's operation-start field supplies an exact commissioning date.[^ra
 
 - [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-history-page]
 - [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-construction-history]
+
+## The Taiwan Railways Chiayi–Xinshi Double Track — One historical double-track record
+
+Discussed on [The Taiwan Railways Chiayi–Xinshi Double Track](/rail/history/chiayi-xinshi-double-track/) in the source page's “One historical double-track record” section.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
+
+### One historical double-track record
+
+Taiwan Railways' full construction-history table lists Chiayi–Xinshi as a
+50.1 km double-track segment.[^rail-history-chiayi-xinshi-double-track-tra-history-page] The table gives 1957 as the
+construction year and 1970 as the operation-start year, with Taiwan Railways
+Administration listed as the constructor.[^rail-history-chiayi-xinshi-double-track-tra-history-page] Its explanation is
+添築雙線, rendered by the operator as “Extended to be double-tracked.”[^rail-history-chiayi-xinshi-double-track-tra-history-page]
+
+The full operator PDF repeats the same segment and values in its row 44, so the
+HTML table and PDF are two presentations of the same primary construction
+record, not two different measurements.[^rail-history-chiayi-xinshi-double-track-tra-construction-history] This page
+therefore treats 50.1 km as the operator's historical construction-table scope.
+It does not turn the row into a separate present-day line, and it does not infer
+that the table's operation-start field supplies an exact commissioning date.[^rail-history-chiayi-xinshi-double-track-tra-history-page][^rail-history-chiayi-xinshi-double-track-tra-construction-history]
+
+#### Sources for this entry
+
+- [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-construction-history]
 
 ## Metro incidents and service disruptions — Conflicts and gaps
 
