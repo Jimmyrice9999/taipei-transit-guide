@@ -20126,3 +20126,61 @@ fragments or orphan pages; search 1,909 entries; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD audit reports zero genuine WCAG
 contrast failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 208 - add TRA Heping–Su'aoxin construction record (2026-08-26)
+
+### Sourced
+
+Added Heping–Su'aoxin as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 56 as 39.8 km, with TRA
+as constructor, construction in 1973 and operation from 1980:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML independently lists row 32 at the same 39.8 km and
+the same 1973/1980 chronology, but names Taiwan Provincial Government as the
+constructor:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The current operator station pages identify Heping as 7060 and Su'aoxin as
+7130:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7060`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7130`.
+The committed TDX station-of-line pull places Su'aoxin at source sequence 25
+with a supplied travelled distance of 90.2 km and Heping at source sequence 31
+with 130.1 km. The guide presents those as positions 26 and 32 and retains
+the calculated 39.9 km field difference as a current data-layer measurement,
+not a replacement for the operator's historical 39.8 km.
+
+### TBC and checked failures
+
+The reason for the constructor attribution difference, the surveyed 39.8 km
+engineering boundary and chainage, any contract or completion certificate, the
+current as-built track count and the current service boundary remain TBC. The
+checked sources also do not explain whether the 0.1 km difference between the
+TDX endpoint fields and the historical operator record reflects rounding,
+datum, route definition or another boundary.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds the shared
+operator length and chronology while preserving the constructor disagreement
+and separating the current TDX interval from the historical construction
+record.
+
+### Conflicts found
+
+The full operator PDF names TRA as constructor, while the current operator HTML
+names Taiwan Provincial Government. Both presentations retain 39.8 km and
+1973/1980. Current TDX supplied endpoint fields yield 39.9 km, but the source
+does not explain the 0.1 km difference. These constructor and measurement
+boundaries are published separately rather than averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,693 content files; 7,402 citations); `research` clean (180
+files; 759 checked failures); claims 24,758 sourced/4,494 TBC/0 ASSERTED;
+build generated 2,673 static pages and postbuild checked 2,821 pages; 471,895
+internal links checked across 2,821 pages with no broken links, unresolved
+fragments or orphan pages; search 1,910 entries; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD audit reports zero genuine WCAG
+contrast failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
