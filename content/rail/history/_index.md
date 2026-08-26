@@ -42,3 +42,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Keelung Station Track-removal Records](/rail/history/keelung-station-track-removal/)
 - [The Taiwan Railways Zhuzhong–Liujia Double-track Record](/rail/history/zhuzhong-liujia-double-track/)
 - [The Taiwan Railways Tao-yuan Station Track-removal Record](/rail/history/taoyuan-station-track-removal/)
+- [The Taiwan Railways Longtian–Shanhua Double-track Record](/rail/history/longtian-shanhua-double-track/)
