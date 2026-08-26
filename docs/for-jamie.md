@@ -2,23 +2,71 @@
 
 ## Active handoff - 27 August 2026
 
-Run 235 adds the next verified TRA subject, the Shanhua Station platform
-record. The complete operator construction-history PDF records row 118 at
-0.3 km, with Taiwan Railways Administration as constructor, 2017 in both
-year fields, and the source explanation `增設月台` whose English column reads
-`Add platform`. The current operator page identifies Shanhua 4170; current
-TDX places it at Western Main Line position 84 and 334.2 km, kept separate
-from the historical station-work value.
+Run 236 adds the final verified TRA construction-history subject, the Sanmin
+Station track record. The complete operator construction-history PDF records
+row 119 at 2.1 km, with the Railway Reconstruction Bureau as constructor,
+2010 and 2017 year fields, and the source explanation `增設股道` whose English
+column reads `Add track`. The current operator page identifies Sanmin 6120;
+current TDX places it at Eastern Main Line position 52 and 241.9 km, kept
+separate from the historical station-work value.
 
-Gates: cite 1,719/7,585; research 206/875; claims 25,273 sourced/4,495
-TBC/0 ASSERTED; build 2,725 static pages and 2,873 postbuild pages; links
-478,030 across 2,873 pages; links audit 1,925 pages/753 destinations; search
-1,936; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,720/7,590; research 207/880; claims 25,290 sourced/4,495
+TBC/0 ASSERTED; build 2,727 static pages and 2,875 postbuild pages; links
+478,265 across 2,875 pages; links audit 1,926 pages/754 destinations; search
+1,937; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
-Next: continue the next verified TRA construction or historical route subject
-(row 119, Sanmin Station) before broader fleet/systems work.
+Next: continue the remaining 14-part brief outside this completed TRA
+construction-history table, starting with the next explicitly incomplete
+fleet/system subject.
+
+## Run 236 - add TRA Sanmin Station track record (2026-08-27)
+
+### Sourced
+
+Added row 119 from the complete operator construction-history PDF. It records
+Sanmin Station at 2.1 km, with Railway Reconstruction Bureau as constructor,
+2010 in the construction-year field, 2017 in the operation-start year field,
+and `增設股道` as the explanation; the operator's English column says `Add
+track`:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator page identifies Sanmin station 6120. The committed TDX
+EL record places it at source sequence 51 with supplied travelled distance
+241.9 km; the guide presents that as one-based position 52:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6120`.
+
+### TBC and checked failures
+
+The exact track-addition or commissioning day; track count, type and geometry;
+surveyed boundary for the 2.1 km value; contract and completion records;
+detailed work scope; and source-defined mapping to the current 241.9 km TDX
+field remain TBC. The current operator construction-history HTML was fetched
+and does not repeat row 119; that is retained as a coverage difference. The
+source's Add track wording is reported as published.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical station-track subject is
+kept beside, rather than merged into, the current Sanmin and TDX records.
+
+### Conflicts found
+
+No direct numeric contradiction was found. The historical PDF gives 2.1 km and
+the current TDX field gives 241.9 km, but they belong to records with different
+stated purposes and are not competing measurements of the same boundary.
+
+### Gates
+
+`cite` clean (1,720 content files; 7,590 citations); `research` clean (207
+files; 880 checked failures); claims 25,290 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,727 static pages and postbuild checked 2,875 pages; 478,265
+internal links checked across 2,875 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,926 pages and 754 linkable
+destinations; search 1,937; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 235 - add TRA Shanhua Station platform record (2026-08-27)
 
