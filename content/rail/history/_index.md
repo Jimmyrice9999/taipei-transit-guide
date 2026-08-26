@@ -24,3 +24,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Chiayi–Xinshi Double Track](/rail/history/chiayi-xinshi-double-track/)
 - [The Taiwan Railways Jianan–Taichung Port Double-Track Record](/rail/history/jianan-taichung-port-double-track/)
 - [The Taiwan Railways Xinpu–Tongxiao Double Track](/rail/history/xinpu-tongxiao-double-track/)
+- [The Taiwan Railways Yuanli–Rinan Double Track](/rail/history/yuanli-rinan-double-track/)
