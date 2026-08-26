@@ -50,6 +50,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator page lists Houtong and Sandiaoling in the New Taipei and Pingxi/Shen'ao station groupings."
+  - id: tra-station-zhuzhong
+    title: "Zhuzhong Station information"
+    titleOriginal: "竹中車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1193"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 1193 as Zhuzhong (竹中)."
+  - id: tra-station-liujia
+    title: "Liujia Station information"
+    titleOriginal: "六家車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1194"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 1194 as Liujia (六家)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -70,3 +88,5 @@ The [Su'aoxin–Hanben double-track record](/rail/history/suaoxin-hanben-double-
 The [Hualien Port Line reconstruction record](/rail/history/hualien-port-line-reconstruction/) retains the operator's 10.5 km 1992–2004 reconstruction record and its listed heavy-rail and PC-sleeper works without assigning a current passenger endpoint.[^tra-construction-history][^tra-history][^tdx-tra-station]
 The [Songshan–Nangang underground record](/rail/history/songshan-nangang-underground/) retains the operator's 7.7 km 1998–2008 underground record beside the current TDX WL station interval, whose endpoint fields differ by 2.8 km.[^tra-construction-history][^tdx-tra-line]
 The [Keelung Station track-removal records](/rail/history/keelung-station-track-removal/) retain the operator's separate 2.9 km and 2.0 km Keelung Station rows, each with a distinct 27 April 2010 removal scope, beside the current Keelung 0900 TDX record.[^tra-construction-history][^tra-history][^tdx-tra-station][^tdx-tra-line]
+
+The [Zhuzhong–Liujia double-track record](/rail/history/zhuzhong-liujia-double-track/) retains the operator's 3.1 km row 99 and its 2005/2011 year fields beside the current two-member LJ TDX record.[^tra-construction-history][^tra-station-zhuzhong][^tra-station-liujia][^tdx-tra-line]

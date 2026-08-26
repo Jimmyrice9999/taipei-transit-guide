@@ -20650,3 +20650,55 @@ fragments or orphan pages; search 1,917; nav 19/19; unit 234/234; browser and
 accessibility checks clean; CVD audit reports zero genuine WCAG contrast
 failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 217 - add TRA Zhuzhong–Liujia double-track record (2026-08-26)
+
+### Sourced
+
+Added the row 99 Zhuzhong–Liujia record from the complete operator
+construction-history PDF. It records 3.1 km, Railway Reconstruction Bureau as
+constructor, 2005 in the construction-year field, 2011 in the operation-start
+year field and 添築雙線, rendered there as “Extended to be double-tracked”:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator history HTML does not repeat a matching row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`. Current operator station
+pages identify 1193 Zhuzhong and 1194 Liujia:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1193`
+and
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1194`.
+The committed TDX LJ record contains those two ordered members with supplied
+travelled distances 0.0 km and 3.1 km, while Zhuzhong also appears in NW at
+6.5 km.
+
+### TBC and checked failures
+
+The surveyed 3.1 km boundary, intermediate historical station register,
+contract and completion records, before-and-after track inventory,
+electrification and signalling scope, and proof that the current TDX 3.1 km
+interval uses the same measurement points remain TBC.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The new historical construction record
+is kept beside, rather than merged into, the current Zhuzhong and Liujia station
+pages and TDX LJ line record.
+
+### Conflicts found
+
+No numeric contradiction was found: the historical PDF gives 3.1 km and the
+current LJ TDX endpoint fields differ by 3.1 km. The sources do not establish
+that those values use the same boundary, so the apparent correspondence is
+reported without merging the measurements. The current operator HTML's omission
+of the row is retained as a source-coverage difference.
+
+### Gates
+
+`cite` clean (1,701 content files; 7,452 citations); `research` clean (188
+files; 794 checked failures); claims 24,896 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,689 static pages and postbuild checked 2,837 pages; 473,781
+internal links checked across 2,837 pages with no broken links, unresolved
+fragments or orphan pages; search 1,918; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.

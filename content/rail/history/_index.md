@@ -40,3 +40,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Hualien Port Line Reconstruction Record](/rail/history/hualien-port-line-reconstruction/)
 - [The Taiwan Railways Songshan–Nangang Underground Record](/rail/history/songshan-nangang-underground/)
 - [The Taiwan Railways Keelung Station Track-removal Records](/rail/history/keelung-station-track-removal/)
+- [The Taiwan Railways Zhuzhong–Liujia Double-track Record](/rail/history/zhuzhong-liujia-double-track/)
