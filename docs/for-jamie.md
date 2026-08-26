@@ -2,24 +2,74 @@
 
 ## Active handoff - 27 August 2026
 
-Run 230 adds the next verified TRA subject, the Pingtung–Chaozhou double-track
-record. The complete operator construction-history PDF records row 113 at
-16.3 km, with the Railway Reconstruction Bureau's Southern Region Engineering
-Office as constructor, 2009 and 2015 year fields, and the operator's exact
-English explanation `South of Pingtung to Chaozhou Railway Elevated`. The
-current operator pages identify Pingtung 5000 and Chaozhou 5050; current TDX
-exposes an SL interval of 15.0 km, kept separate from the historical project
-value because the sources do not establish a common boundary.
+Run 231 adds the next verified TRA subject, the Shoufeng–Nanping double-track
+record. The complete operator construction-history PDF records row 114 at
+12.0 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
+Office as constructor, 2014 and 2015 year fields, and the operator's exact
+English explanation `Extended to be double-tracked`. The current operator
+pages identify Shoufeng 6220 and Nanping 6190; current TDX exposes an EL
+interval of 11.2 km, kept separate from the historical project value because
+the sources do not establish a common boundary.
 
-Gates: cite 1,714/7,552; research 201/853; claims 25,172 sourced/4,495
-TBC/0 ASSERTED; build 2,715 static pages and 2,863 postbuild pages; links
-476,849 across 2,863 pages; links audit 1,920 pages/748 destinations; search
-1,931; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,715/7,560; research 202/857; claims 25,194 sourced/4,495
+TBC/0 ASSERTED; build 2,717 static pages and 2,865 postbuild pages; links
+477,084 across 2,865 pages; links audit 1,921 pages/749 destinations; search
+1,932; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 114, Shoufeng–Nanping) before broader fleet/systems work.
+(row 115, Taoyuan Station) before broader fleet/systems work.
+
+## Run 231 - add TRA Shoufeng–Nanping double-track record (2026-08-27)
+
+### Sourced
+
+Added row 114 from the complete operator construction-history PDF. It records
+Shoufeng–Nanping at 12.0 km as a double-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor,
+2014 in the construction-year field, 2015 in the operation-start year field,
+and `Extended to be double-tracked` as the operator's English explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Shoufeng 6220 and Nanping 6190. The
+committed TDX EL record places them at source sequences 41 and 44, with supplied
+travelled-distance fields 186.8 km and 198.0 km, a difference of 11.2 km, and
+Fengtian and Linrong Xinguang between them:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6220`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6190`.
+
+### TBC and checked failures
+
+The surveyed 12.0 km boundary, exact construction/double-tracking/service
+days, contract and completion records, detailed work scope, and source-defined
+mapping to the current 11.2 km TDX interval remain TBC. The current operator
+construction-history HTML was fetched and does not repeat row 114; that is
+retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical double-track record is
+kept beside, rather than merged into, the current Shoufeng, Nanping and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 12.0 km, while the current TDX EL endpoint fields give
+11.2 km. The current endpoints have two intervening members in the ordered
+record, but the sources do not establish a common distance boundary or
+measurement purpose, so the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,715 content files; 7,560 citations); `research` clean (202
+files; 857 checked failures); claims 25,194 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,717 static pages and postbuild checked 2,865 pages; 477,084
+internal links checked across 2,865 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,921 pages and 749 linkable
+destinations; search 1,932; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 230 - add TRA Pingtung–Chaozhou double-track record (2026-08-27)
 

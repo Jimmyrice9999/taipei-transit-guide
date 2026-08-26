@@ -54,3 +54,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Huatan–Shetou Double-track Record](/rail/history/huatan-shetou-double-track/)
 - [The Taiwan Railways Jinlun–Taimali Single-track Record](/rail/history/jinlun-taimali-single-track/)
 - [The Taiwan Railways Pingtung–Chaozhou Double-track Record](/rail/history/pingtung-chaozhou-double-track/)
+- [The Taiwan Railways Shoufeng–Nanping Double-track Record](/rail/history/shoufeng-nanping-double-track/)
