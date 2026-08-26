@@ -18048,6 +18048,58 @@ accessibility checks clean; CVD audit reports zero genuine WCAG contrast
 failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
 
+## Run 221 - add TRA Wuhe–Sanmin single-track record (2026-08-26)
+
+### Sourced
+
+Added row 104 from the complete operator construction-history PDF. It records
+Wuhe–Sanmin as a 1.6 km single-track subject, with the Railway Reconstruction
+Bureau's Eastern Region Engineering Office as constructor, 2013 in both year
+fields, and Hualien–Taitung railway electrification engineering as the
+explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The operator's broader achievement page records the Hualien–Taitung programme
+as approved in 2008, started on 4 December 2009, and covering about 155.46 km
+and 30 stations; those are programme fields, not row 104's boundary:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1`.
+The current operator page identifies Sanmin 6120, while the committed TDX EL
+record places Sanmin at source sequence 51 and 241.9 km between Ruisui and Yuli:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6120`.
+
+### TBC and checked failures
+
+The surveyed 1.6 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, current Wuhe identity and a
+source-defined mapping to a current TDX interval remain TBC. The current
+operator construction-history HTML was fetched and does not repeat row 104;
+that is retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside current Sanmin 6120 and the EL data, without treating the broad
+Hualien–Taitung programme total as the row distance.
+
+### Conflicts found
+
+No like-for-like current Wuhe–Sanmin interval was found. The historical PDF
+gives 1.6 km, while current TDX exposes only Sanmin's 241.9 km field and no
+Wuhe member from which an endpoint difference could be calculated. The broader
+155.46 km programme total is a separate scope and is not compared as a segment
+measurement.
+
+### Gates
+
+`cite` clean (1,705 content files; 7,481 citations); `research` clean (192
+files; 814 checked failures); claims 24,977 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,697 static pages and postbuild checked 2,845 pages; 474,725
+internal links checked across 2,845 pages with no broken links, unresolved
+fragments or orphan pages; search 1,922; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
+
 # Run 172 - YouBike Taichung and Kaohsiung static layer (25 August 2026)
 
 ## Sourced
