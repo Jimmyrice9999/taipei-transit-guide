@@ -16,3 +16,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Taipei–Danshui Line](/rail/history/taipei-danshui-line/)
 - [The Taiwan Railways Xindian Line](/rail/history/xindian-line/)
 - [The Taiwan Railways Zhonghe Line](/rail/history/zhonghe-line/)
+- [The Taiwan Railways Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/)

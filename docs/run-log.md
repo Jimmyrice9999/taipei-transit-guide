@@ -19176,3 +19176,58 @@ build completed with 2,787 Han-subset checks; search index 1,893 entries;
 unit 234/234; navigation 19/19; a11y 1,883 pages with no errors or warnings.
 Generated audit reports were restored after verification; `probes/` remains
 untracked.
+
+## Run 190 - add TRA Fengyuan–Dongshi Line history (2026-08-26)
+
+### Sourced
+
+Added the former Fengyuan–Dongshi, or Dongshi, alignment as the seventh closed
+TRA history subject. TRA's full construction-history table gives 14.1 km,
+construction in 1958, operation from 1959 and stopping in September 1991:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+TRA's chronology dates station withdrawal to 1 September 1991:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=17`.
+Taichung's full Hakka Affairs retrospective dates the last train to 31 August
+1991:
+`https://www.taichung.gov.tw/1867179/post`.
+The Forestry Bureau's 1991 chronology links the branch to Dasyueshan Forestry
+Company timber transport and records a planned 11 km green corridor:
+`https://www.forest.gov.tw/0001327`.
+Taichung Tourism records the present 13.6 km Dongfeng bikeway, rebuilt from the
+abandoned railway with railway features retained:
+`https://travel.taichung.gov.tw/zh-tw/experience/cyclingtrip/3`.
+
+### TBC and checked failures
+
+The complete former-station register, legal closure instrument, segment-by-
+segment track-removal chronology and exact boundary between railway land and
+the later bikeway remain TBC. The checked sources establish the alignment and
+later reuse but do not provide those records.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research identified
+the closed-line inventory as incomplete; this run turns the Fengyuan–Dongshi
+lead into a sourced page and keeps the historical railway, the 11 km planned
+green corridor and the 13.6 km present bikeway as separate measurements.
+
+### Conflicts found
+
+Taichung's retrospective dates the final public train to 31 August 1991,
+whereas TRA's chronology records station withdrawal on 1 September; both are
+published as separate milestones. The operator gives 14.1 km, the municipal
+retrospective gives approximately 14.1–14.7 km, the Forestry record gives an
+11 km planned corridor and current tourism material gives a 13.6 km bikeway.
+Those measurements are retained source-by-source and are not averaged. A
+municipal retrospective's former stop sequence is labelled as such rather than
+treated as a complete operator register.
+
+### Gates
+
+`cite` clean (1,677 content files; 7,308 citations); `research` clean (164
+files; 692 checked failures); claims 24,506 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,789 Han-subset checks; 468,105 internal links checked
+across 2,789 pages with no broken links, unresolved fragments or orphan pages;
+unit 234/234; navigation 19/19; a11y 1,884 pages with no errors or warnings;
+CVD audit reports zero genuine WCAG contrast failures. Generated audit reports
+were restored after verification; `probes/` remains untracked.
