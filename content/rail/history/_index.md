@@ -15,3 +15,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/)
 - [The Taiwan Railways Taipei–Danshui Line](/rail/history/taipei-danshui-line/)
 - [The Taiwan Railways Xindian Line](/rail/history/xindian-line/)
+- [The Taiwan Railways Zhonghe Line](/rail/history/zhonghe-line/)

@@ -19125,3 +19125,54 @@ keyboard or accessibility-tree findings, zero axe violations, 477 screenshots
 and 67 print PDFs. The unreachable-URL timeout probe also named the failed page
 and continued to its control page. Generated browser audits were restored;
 `probes/` remains untracked.
+
+## Run 189 - add TRA Zhonghe Line history (2026-08-26)
+
+### Sourced
+
+Added the former Taiwan Railways Banqiao-Zhonghe alignment as the sixth closed
+TRA history subject. The operator's full construction-history table gives a
+6.5 km route and records physical dismantling in September 1993:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+New Taipei DORTS's full history page records freight-only operation from 5 March
+1965, built to move Zhonghe coal, and describes a 1990 stop/dismantling account:
+`https://www.dorts.ntpc.gov.tw/documentary/articleInfo/Qw92VjrK2jOk`.
+Its full route page places the former corridor from old Banqiao station through
+Banxin Road, Bannan Road and Heping Street to Zhonghe, with closure and
+dismantling around 1990:
+`https://www.dorts.ntpc.gov.tw/documentary/articleInfo/apVdMxXj2KRw`.
+The Zhonghe District Office's full chronology records the same 5 March 1965
+opening, Zhonghe as a third-class station, and a 23 September 1990 service stop
+followed by conversion to Bannan Road:
+`https://www.zhonghe.ntpc.gov.tw/home.jsp?id=e32fc9bbd6f35420`.
+
+### TBC and checked failures
+
+The complete former-station register, legal closure instrument, segment-by-
+segment track-removal chronology and surveyed boundary between railway land,
+roads and MRT works remain TBC. The sources provide endpoints, one station
+classification and a corridor description, but not those records.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research identified the
+closed-line inventory as incomplete; this run turns the Banqiao-Zhonghe lead into
+a sourced page and keeps the later MRT and road corridor uses distinct from the
+former TRA identity.
+
+### Conflicts found
+
+The operator records physical dismantling in September 1993. New Taipei DORTS
+uses 1990 or around 1990 for stopping and dismantling, while the district
+chronology gives the exact 23 September 1990 service stop and road conversion.
+These are retained as separate milestones. The operator's 6.5 km route figure
+has no competing figure in the checked municipal pages.
+
+### Gates
+
+`cite` clean (1,676 content files; 7,302 citations); `research` clean (163
+files; 688 checked failures); claims 24,491 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,787 Han-subset checks; search index 1,893 entries;
+unit 234/234; navigation 19/19; a11y 1,883 pages with no errors or warnings.
+Generated audit reports were restored after verification; `probes/` remains
+untracked.
