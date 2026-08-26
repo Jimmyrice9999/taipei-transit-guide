@@ -18089,6 +18089,17 @@ Wuhe member from which an endpoint difference could be calculated. The broader
 155.46 km programme total is a separate scope and is not compared as a segment
 measurement.
 
+### Gates
+
+`cite` clean (1,705 content files; 7,481 citations); `research` clean (192
+files; 814 checked failures); claims 24,977 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,697 static pages and postbuild checked 2,845 pages; 474,725
+internal links checked across 2,845 pages with no broken links, unresolved
+fragments or orphan pages; search 1,922; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
+
 ## Run 222 - add TRA Sanmin–Yuli single-track record (2026-08-27)
 
 ### Sourced
@@ -18136,16 +18147,53 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 223 - add TRA Dongli–Dongzhu single-track record (2026-08-27)
+
+### Sourced
+
+Added row 106 from the complete operator construction-history PDF. It records
+Dongli–Dongzhu at 2.1 km as a single-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2012
+in the construction-year field, 2013 in the operation-start year field, and
+Hualien–Taitung railway electrification engineering as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Dongli 6100 and Dongzhu 6090. The committed
+TDX EL record places them adjacently at source sequences 53 and 54, with supplied
+travelled-distance fields 259.5 km and 265.5 km, a difference of 6.0 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6100`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6090`.
+
+### TBC and checked failures
+
+The surveyed 2.1 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 6.0 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 106; that is retained as a coverage
+difference. The broader Hualien–Taitung programme total remains separate from
+the row distance.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Dongli, Dongzhu and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 2.1 km, while subtracting the current TDX EL endpoint
+fields gives 6.0 km. The sources do not establish a common boundary or
+measurement purpose, so the values are reported separately and are not averaged.
+
 ### Gates
 
-`cite` clean (1,705 content files; 7,481 citations); `research` clean (192
-files; 814 checked failures); claims 24,977 sourced/4,495 TBC/0 ASSERTED;
-build generated 2,697 static pages and postbuild checked 2,845 pages; 474,725
-internal links checked across 2,845 pages with no broken links, unresolved
-fragments or orphan pages; search 1,922; nav 19/19; unit 234/234; browser and
-accessibility checks clean; CVD audit reports zero genuine WCAG contrast
-failures. Generated audit reports were restored after verification;
-`probes/` remains untracked.
+`cite` clean (1,707 content files; 7,498 citations); `research` clean (194
+files; 824 checked failures); claims 25,023 sourced/4,495 TBC/0 ASSERTED; build
+generated 2,701 static pages and postbuild checked 2,849 pages; 475,199 internal
+links checked across 2,849 pages with no broken links, unresolved fragments or
+orphan pages; search 1,924; nav 19/19; unit 234/234; browser and accessibility
+checks clean; CVD audit reports zero genuine contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
 
 # Run 172 - YouBike Taichung and Kaohsiung static layer (25 August 2026)
 
