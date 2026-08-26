@@ -18885,3 +18885,61 @@ reflow, painted-box, keyboard/tree and print checks passed, zero axe violations
 across 1,877 pages, 820 screenshots and 116 PDFs. The article template was
 visually inspected at 320/1440; generated audit outputs were restored and
 `probes/` remains untracked.
+
+## Run 184 - add TRA Shen'ao–Liandong history (2026-08-26)
+
+### Sourced
+
+Added the former Shen'ao–Liandong alignment as the second closed TRA history
+subject. The operator's full construction-history PDF records a 6.0 km route,
+construction in 1966, operation in 1967, dismantling of the 3.7 km
+Haipin–Liandong section in December 1977 and a Shen'ao–Haipin stoppage in
+August 1990:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The operator's full restoration note records passenger service from Ruifang to
+Haikeguan on 9 January 2014, approximately 4.2 km and ten daily round trips:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/9a3ddb1f-e02e-407e-b618-12fe08554783`.
+The operator chronology records the 2014 reopening ceremony and the 2016
+Haikeguan–Badouzi extension at 4.7 km:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=12`,
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=10`.
+The current TDX snapshot keeps the SA sequence at three members with a final
+4.7 km travelled-distance field. The museum's full history article is retained
+as secondary evidence for the 1989 passenger/freight milestone and continued
+coal operation: `https://www.nmmst.gov.tw/chhtml/publication_detail/519/3/8`.
+
+### TBC and checked failures
+
+No complete former station register, exact legal closure instrument, full
+track-removal chronology, historical gauge/geometry record or legal relationship
+between the surviving northern route and the historical 6.0 km entry was found.
+The full 2014 annual report URL returned a cache miss; the full Ruifang District
+Office transport-history PDF returned an internal error; and a direct TDX API
+re-fetch was rejected as unsafe. Those failures are recorded in the research
+file and were not used as evidence.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research correctly
+identified Shen'ao–Haibin/Liandong as a closed-line gap; this run turns that
+lead into a phased page and leaves the wider closed-line inventory incomplete.
+
+### Conflicts found
+
+The operator's construction-history table says Shen'ao–Haipin stopped in August
+1990; the museum article says passenger/freight service stopped on 21 August
+1989 while coal trains continued. The historical 6.0 km length, the 2014
+approximately 4.2 km Ruifang–Haikeguan restoration and the 2016/current 4.7 km
+Haikeguan–Badouzi route are retained as different measurements. Partial 1977
+dismantling is not treated as proof of a complete legal closure.
+
+### Gates
+
+`cite` clean (1,672 content files; 7,277 citations); `research` clean (159
+files; 672 checked failures); `claims` 24,431 sourced/4,488 TBC/0 ASSERTED;
+build completed with 2,779 Han-subset checks; unit 234/234; a11y 1,879 pages
+with no errors or warnings. Browser verification completed cleanly: reflow,
+painted-box, keyboard/tree and print checks passed, zero axe violations across
+1,878 pages, 820 screenshots and 116 PDFs. Article-template screenshots were
+inspected at 320/1440; generated audit outputs were restored and `probes/`
+remains untracked.

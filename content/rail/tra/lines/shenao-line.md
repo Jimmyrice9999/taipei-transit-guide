@@ -72,6 +72,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator history page gives the official route-history framework and gauge terminology used to separate current data from historical alignments."
+  - id: tra-construction-history
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full construction-history table identifies the historical Shen'ao–Liandong alignment, its 1977 partial dismantling and its 1990 northern stoppage."
   - id: tra-timetable
     title: "Taiwan Railways timetable and route index"
     titleOriginal: "臺鐵時刻表及路線資料"
@@ -107,6 +116,8 @@ The member list can overlap another TDX line record at a shared station. That is
 ## Trunk, branch and historical boundaries
 
 The operator timetable index names the Western, Eastern and South Link trunk families and identifies the Pingxi, Shenao, Neiwan, Liujia, Jiji and Shalun branches.[^tra-timetable] This page preserves the TDX line ID SA and the operator name instead of rewriting it into an English grouping that the source does not use.[^tra-timetable][^tdx-tra-shape] The route-history page is the source for historical construction and gauge terminology; it does not turn this current snapshot into a complete closed-line inventory.[^tra-history]
+
+The former [Shen'ao–Liandong alignment](/rail/history/shenao-line/) is documented separately because the operator's construction-history record describes a 6.0 km historical route, partial dismantling and a 1990 northern stoppage that must not be merged into the current three-member TDX record.[^tra-construction-history][^tdx-tra-line]
 
 The end-2023 operator report gives system-level aggregates of 1,065 km, 90.5 km of branches and 241 stations, while the current TDX station pull contains 245 records.[^tra-report][^tdx-tra-station] Those values are published together here as a dated conflict between a report aggregate and a later live-data snapshot; neither is silently substituted for the other.[^tra-report][^tdx-tra-station]
 
