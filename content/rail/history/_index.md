@@ -45,3 +45,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Longtian–Shanhua Double-track Record](/rail/history/longtian-shanhua-double-track/)
 - [The Taiwan Railways Xinshi–Yongkang Double-track Record](/rail/history/xinshi-yongkang-double-track/)
 - [The Taiwan Railways Wuhe–Sanmin Single-track Record](/rail/history/wuhe-sanmin-single-track/)
+- [The Taiwan Railways Sanmin–Yuli Single-track Record](/rail/history/sanmin-yuli-single-track/)

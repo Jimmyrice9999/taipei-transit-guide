@@ -122,6 +122,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6120 as Sanmin (三民)."
+  - id: tra-station-yuli
+    title: "Yuli Station information"
+    titleOriginal: "玉里車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6110"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 6110 as Yuli (玉里)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -148,3 +157,4 @@ The [Tao-yuan Station track-removal record](/rail/history/taoyuan-station-track-
 The [Longtian–Shanhua double-track record](/rail/history/longtian-shanhua-double-track/) retains row 102's 3.8 km and 2001/2013 fields beside its Zeng-Wun River Bridge explanation and the current Longtian 4150, Baling and Shanhua 4170 WL record.[^tra-construction-history][^tra-station-longtian][^tra-station-shanhua][^tdx-tra-line]
 The [Xinshi–Yongkang double-track record](/rail/history/xinshi-yongkang-double-track/) retains row 103's 2.9 km and 2009/2013 fields beside its Yan-shui River Bridge explanation and the current Xinshi 4190 and Yongkang 4200 WL record.[^tra-construction-history][^tra-station-xinshi][^tra-station-yongkang][^tdx-tra-line]
 The [Wuhe–Sanmin single-track record](/rail/history/wuhe-sanmin-single-track/) retains row 104's 1.6 km and 2013/2013 fields beside its Hualien–Taitung electrification explanation and the current Sanmin 6120 EL record, without inventing a Wuhe endpoint.[^tra-construction-history][^tra-station-sanmin][^tdx-tra-line]
+The [Sanmin–Yuli single-track record](/rail/history/sanmin-yuli-single-track/) retains row 105's 4.1 km and 2013/2013 fields beside its Hualien–Taitung electrification explanation and the current Sanmin 6120–Yuli 6110 EL record.[^tra-construction-history][^tra-station-sanmin][^tra-station-yuli][^tdx-tra-line]

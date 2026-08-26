@@ -1,23 +1,71 @@
 # For Jamie
 
-## Active handoff - 26 August 2026
+## Active handoff - 27 August 2026
 
-Run 221 adds the next verified TRA subject, the Wuhe–Sanmin single-track
-record. The complete operator construction-history PDF records row 104 at
-1.6 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
+Run 222 adds the next verified TRA subject, the Sanmin–Yuli single-track
+record. The complete operator construction-history PDF records row 105 at
+4.1 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
 Office as constructor, 2013 and 2013 year fields, and a Hualien–Taitung
-electrification explanation. The current operator page identifies Sanmin 6120;
-current TDX exposes Sanmin on EL but no Wuhe endpoint record, so no present-day
-interval is invented.
+electrification explanation. The current operator pages identify Sanmin 6120
+and Yuli 6110; current TDX exposes an adjacent EL interval of 10.8 km, kept
+separate from the historical project value because the sources do not establish
+a common boundary.
 
-Gates: cite 1,705/7,481; research 192/814; claims 24,977 sourced/4,495
-TBC/0 ASSERTED; build 2,697 static pages and 2,845 postbuild pages; links
-474,725 across 2,845 pages; search 1,922; nav 19/19; unit 234/234;
+Gates: cite 1,706/7,489; research 193/819; claims 25,000 sourced/4,495
+TBC/0 ASSERTED; build 2,699 static pages and 2,847 postbuild pages; links
+474,962 across 2,847 pages; search 1,923; nav 19/19; unit 234/234;
 accessibility checks clean; CVD zero genuine contrast failures. Generated audits
 were restored after verification; `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
 before broader fleet/systems work.
+
+## Run 222 - add TRA Sanmin–Yuli single-track record (2026-08-27)
+
+### Sourced
+
+Added row 105 from the complete operator construction-history PDF. It records
+Sanmin–Yuli at 4.1 km as a single-track subject, with the Railway Reconstruction
+Bureau's Eastern Region Engineering Office as constructor, 2013 in both year
+fields, and Hualien–Taitung railway electrification engineering as the
+explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Sanmin 6120 and Yuli 6110. The committed
+TDX EL record places them adjacently at source sequences 51 and 52, with supplied
+travelled-distance fields 241.9 km and 252.7 km, a difference of 10.8 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6120`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6110`.
+
+### TBC and checked failures
+
+The surveyed 4.1 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 10.8 km TDX interval remain TBC. The current operator construction-
+history HTML was fetched and does not repeat row 105; that is retained as a
+coverage difference. The operator's broader Hualien–Taitung programme total is
+also kept separate from the row distance.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Sanmin, Yuli and TDX records.
+
+### Conflicts found
+
+The historical PDF gives 4.1 km, while subtracting the current TDX EL endpoint
+fields gives 10.8 km. The sources do not establish a common boundary or
+measurement purpose, so the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,706 content files; 7,489 citations); `research` clean (193
+files; 819 checked failures); claims 25,000 sourced/4,495 TBC/0 ASSERTED; build
+generated 2,699 static pages and postbuild checked 2,847 pages; 474,962 internal
+links checked across 2,847 pages with no broken links, unresolved fragments or
+orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
 
 ## Run 219 - add TRA Longtian–Shanhua double-track record (2026-08-26)
 
