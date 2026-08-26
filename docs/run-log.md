@@ -19794,3 +19794,59 @@ across 2,807 pages with no broken links, unresolved fragments or orphan pages;
 search 1,903 entries; unit 234/234; navigation 19/19; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 202 - add TRA Dajia–Jianan double-track history (2026-08-26)
+
+### Sourced
+
+Added Dajia–Jianan as the next TRA construction-history subject, kept distinct
+from a current route identity. The complete operator construction-history PDF
+lists row 50 as 5.3 km, with TRA as constructor, construction in 1974,
+operation from 1977 and 添築雙線 (extended to be double-tracked):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML history table omits this subject; its current rows 27
+and 28 are Xincheng–Hualian Port and Dongshan–Su’aoxin Station:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The current operator station page identifies Dajia as 2200, and the committed
+TDX WL-C pull places it at source sequence 10 with a supplied travelled distance
+of 54.1 km, followed by Taichung Port at source sequence 11 and 59.3 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2200`,
+`https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0`.
+The current data-layer difference is 5.2 km. The Taichung Port operator page
+gives an address on 甲南路, but that is retained as a lead rather than treated
+as proof of a one-to-one historical Jianan endpoint mapping.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract or completion certificate,
+intermediate historical station register, surveyed 5.3 km boundary, verified
+historical-to-current endpoint mapping and current as-built track count remain
+TBC. The full current station pull has no separate Jianan or 甲南 record; no
+checked primary source supplies the missing historical mapping.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The PDF record is added as a
+historical construction subject without turning it into a separate current line
+identity or conflating its 5.3 km construction scope with the current 5.2 km
+TDX interval.
+
+### Conflicts found
+
+The full operator PDF contains Dajia–Jianan as row 50, while the current operator
+HTML table omits it and uses a different current row boundary. The historical
+PDF names Jianan as the endpoint, while current operator and TDX records expose
+Dajia 2200 followed by Taichung Port 2210. The current Taichung Port address on
+甲南路 is not enough to resolve that mapping. The PDF’s 5.3 km and the TDX
+distance difference of 5.2 km are retained as separate measures, not averaged or
+silently substituted.
+
+### Gates
+
+`cite` clean (1,687 content files; 7,365 citations); `research` clean (174
+files; 735 checked failures); claims 24,655 sourced/4,494 TBC/0 ASSERTED;
+build completed with 2,809 Han-subset checks; 470,477 internal links checked
+across 2,809 pages with no broken links, unresolved fragments or orphan pages;
+search 1,904 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
