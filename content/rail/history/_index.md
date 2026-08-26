@@ -50,3 +50,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Dongzhu–Fuli Single-track Record](/rail/history/dongzhu-fuli-single-track/)
 - [The Taiwan Railways Chishang–Haiduan Single-track Record](/rail/history/chishang-haiduan-single-track/)
 - [The Taiwan Railways Haiduan–Ruiyuan Single-track Record](/rail/history/haiduan-ruiyuan-single-track/)
+- [The Taiwan Railways Shanli–Taitung Double-track Record](/rail/history/shanli-taitung-double-track/)

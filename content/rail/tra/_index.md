@@ -185,6 +185,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6030 as Ruiyuan (瑞源)."
+  - id: tra-station-shanli
+    title: "Shanli Station information"
+    titleOriginal: "山里車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6010"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 6010 as Shanli (山里)."
+  - id: tra-station-taitung
+    title: "Taitung Station information"
+    titleOriginal: "臺東車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6000"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 6000 as Taitung (臺東)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -216,3 +234,4 @@ The [Dongli–Dongzhu single-track record](/rail/history/dongli-dongzhu-single-t
 The [Dongzhu–Fuli single-track record](/rail/history/dongzhu-fuli-single-track/) retains row 107's 2.9 km and 2012/2013 fields beside its Hualien–Taitung electrification explanation and the current Dongzhu 6090–Fuli 6080 EL record.[^tra-construction-history][^tra-station-dongzhu][^tra-station-fuli][^tdx-tra-line]
 The [Chishang–Haiduan single-track record](/rail/history/chishang-haiduan-single-track/) retains row 108's 0.3 km and 2012/2013 fields beside its Hualien–Taitung electrification explanation and the current Chishang 6070–Haiduan 6060 EL record.[^tra-construction-history][^tra-station-chishang][^tra-station-haiduan][^tdx-tra-line]
 The [Haiduan–Ruiyuan single-track record](/rail/history/haiduan-ruiyuan-single-track/) retains row 109's 4.6 km and 2010/2013 fields beside its Hualien–Taitung electrification explanation and the current Haiduan 6060–Ruiyuan 6030 EL record.[^tra-construction-history][^tra-station-haiduan][^tra-station-ruiyuan][^tdx-tra-line]
+The [Shanli–Taitung double-track record](/rail/history/shanli-taitung-double-track/) retains row 110's 7.3 km and 2010/2013 fields beside its double-tracking explanation and the current Shanli 6010–Taitung 6000 EL record.[^tra-construction-history][^tra-station-shanli][^tra-station-taitung][^tdx-tra-line]

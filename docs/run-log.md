@@ -18147,6 +18147,56 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 227 - add TRA Shanli–Taitung double-track record (2026-08-27)
+
+### Sourced
+
+Added row 110 from the complete operator construction-history PDF. It records
+Shanli–Taitung at 7.3 km as a double-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2010
+in the construction-year field, 2013 in the operation-start year field, and
+double-tracking as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Shanli 6010 and Taitung 6000. The
+committed TDX EL record places them at source sequences 62 and 63, with
+supplied travelled-distance fields 312.4 km and 320.6 km, a difference of
+8.2 km; Luye is the current member between them:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6010`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6000`.
+
+### TBC and checked failures
+
+The surveyed 7.3 km boundary, exact construction/double-tracking/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 8.2 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 110; that is retained as a
+coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical double-track record is
+kept beside, rather than merged into, the current Shanli, Taitung and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 7.3 km, while subtracting the current TDX EL endpoint
+fields gives 8.2 km. Luye intervenes in the current ordered record, and the
+sources do not establish a common distance boundary or measurement purpose, so
+the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,711 content files; 7,528 citations); `research` clean (198
+files; 841 checked failures); claims 25,107 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,709 static pages and postbuild checked 2,857 pages; 476,143
+internal links checked across 2,857 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,917 pages and 745 linkable
+destinations; search 1,928; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 226 - add TRA Haiduan–Ruiyuan single-track record (2026-08-27)
 
 ### Sourced
