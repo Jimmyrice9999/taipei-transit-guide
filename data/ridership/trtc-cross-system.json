@@ -1,0 +1,4467 @@
+{
+  "retrieved": "2026-08-26",
+  "currentPeriod": "2026-07",
+  "source": {
+    "id": "trtc-cross-system-html",
+    "title": "Ridership Counts — monthly cross-system HTML reports",
+    "titleOriginal": "Cross-system ridership statistics",
+    "publisher": "Taipei Rapid Transit Corporation",
+    "publisherOriginal": "臺北大眾捷運股份有限公司",
+    "indexUrl": "https://english.metro.taipei/cp.aspx?n=C702FF0562802D53",
+    "accessed": "2026-08-26",
+    "kind": "primary",
+    "measure": "Published monthly cross-system ridership total in trips; it is a separate operator series from station entry-plus-exit movement and is not merged with it.",
+    "files": [
+      {
+        "period": "1996-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8503e.htm",
+        "title": "March-1996"
+      },
+      {
+        "period": "1996-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8504e.htm",
+        "title": "April-1996"
+      },
+      {
+        "period": "1996-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8505e.htm",
+        "title": "May-1996"
+      },
+      {
+        "period": "1996-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8506e.htm",
+        "title": "June-1996"
+      },
+      {
+        "period": "1996-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8507e.htm",
+        "title": "July-1996"
+      },
+      {
+        "period": "1996-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8508e.htm",
+        "title": "August-1996"
+      },
+      {
+        "period": "1996-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8509e.htm",
+        "title": "September-1996"
+      },
+      {
+        "period": "1996-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8510e.htm",
+        "title": "October-1996"
+      },
+      {
+        "period": "1996-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8511e.htm",
+        "title": "November-1996"
+      },
+      {
+        "period": "1996-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8512e.htm",
+        "title": "December-1996"
+      },
+      {
+        "period": "1997-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8601e.htm",
+        "title": "January-1997"
+      },
+      {
+        "period": "1997-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8602e.htm",
+        "title": "February-1997"
+      },
+      {
+        "period": "1997-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8603e.htm",
+        "title": "March-1997"
+      },
+      {
+        "period": "1997-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8604e.htm",
+        "title": "April-1997"
+      },
+      {
+        "period": "1997-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8605e.htm",
+        "title": "May-1997"
+      },
+      {
+        "period": "1997-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8606e.htm",
+        "title": "June-1997"
+      },
+      {
+        "period": "1997-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8607e.htm",
+        "title": "July-1997"
+      },
+      {
+        "period": "1997-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8608e.htm",
+        "title": "August-1997"
+      },
+      {
+        "period": "1997-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8609e.htm",
+        "title": "September-1997"
+      },
+      {
+        "period": "1997-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8610e.htm",
+        "title": "October-1997"
+      },
+      {
+        "period": "1997-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8611e.htm",
+        "title": "November-1997"
+      },
+      {
+        "period": "1997-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8612e.htm",
+        "title": "December-1997"
+      },
+      {
+        "period": "1998-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8701e.htm",
+        "title": "January-1998"
+      },
+      {
+        "period": "1998-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8702e.htm",
+        "title": "February-1998"
+      },
+      {
+        "period": "1998-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8703e.htm",
+        "title": "March-1998"
+      },
+      {
+        "period": "1998-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8704e.htm",
+        "title": "April-1998"
+      },
+      {
+        "period": "1998-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8705e.htm",
+        "title": "May-1998"
+      },
+      {
+        "period": "1998-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8706e.htm",
+        "title": "June-1998"
+      },
+      {
+        "period": "1998-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8707e.htm",
+        "title": "July-1998"
+      },
+      {
+        "period": "1998-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8708e.htm",
+        "title": "August-1998"
+      },
+      {
+        "period": "1998-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8709e.htm",
+        "title": "September-1998"
+      },
+      {
+        "period": "1998-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8710e.htm",
+        "title": "October-1998"
+      },
+      {
+        "period": "1998-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8711e.htm",
+        "title": "November-1998"
+      },
+      {
+        "period": "1998-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8712e.htm",
+        "title": "December-1998"
+      },
+      {
+        "period": "1999-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8801e.htm",
+        "title": "January-1999"
+      },
+      {
+        "period": "1999-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8802e.htm",
+        "title": "February-1999"
+      },
+      {
+        "period": "1999-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8803e.htm",
+        "title": "March-1999"
+      },
+      {
+        "period": "1999-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8804e.htm",
+        "title": "April-1999"
+      },
+      {
+        "period": "1999-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8805e.htm",
+        "title": "May-1999"
+      },
+      {
+        "period": "1999-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8806e.htm",
+        "title": "June-1999"
+      },
+      {
+        "period": "1999-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8807e.htm",
+        "title": "July-1999"
+      },
+      {
+        "period": "1999-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8808e.htm",
+        "title": "August-1999"
+      },
+      {
+        "period": "1999-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8809e.htm",
+        "title": "September-1999"
+      },
+      {
+        "period": "1999-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8810e.htm",
+        "title": "October-1999"
+      },
+      {
+        "period": "1999-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8811e.htm",
+        "title": "November-1999"
+      },
+      {
+        "period": "1999-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8812e.htm",
+        "title": "December-1999"
+      },
+      {
+        "period": "2000-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8901e.htm",
+        "title": "January-2000"
+      },
+      {
+        "period": "2000-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8902e.htm",
+        "title": "February-2000"
+      },
+      {
+        "period": "2000-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8903e.htm",
+        "title": "March-2000"
+      },
+      {
+        "period": "2000-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8904e.htm",
+        "title": "April-2000"
+      },
+      {
+        "period": "2000-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8905e.htm",
+        "title": "May-2000"
+      },
+      {
+        "period": "2000-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8906e.htm",
+        "title": "June-2000"
+      },
+      {
+        "period": "2000-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8907e.htm",
+        "title": "July-2000"
+      },
+      {
+        "period": "2000-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8908e.htm",
+        "title": "August-2000"
+      },
+      {
+        "period": "2000-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8909e.htm",
+        "title": "September-2000"
+      },
+      {
+        "period": "2000-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8910e.htm",
+        "title": "October-2000"
+      },
+      {
+        "period": "2000-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8911e.htm",
+        "title": "November-2000"
+      },
+      {
+        "period": "2000-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/8912e.htm",
+        "title": "December-2000"
+      },
+      {
+        "period": "2001-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9001e.htm",
+        "title": "January-2001"
+      },
+      {
+        "period": "2001-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9002e.htm",
+        "title": "February-2001"
+      },
+      {
+        "period": "2001-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9003e.htm",
+        "title": "March-2001"
+      },
+      {
+        "period": "2001-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9004e.htm",
+        "title": "April-2001"
+      },
+      {
+        "period": "2001-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9005e.htm",
+        "title": "May-2001"
+      },
+      {
+        "period": "2001-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9006e.htm",
+        "title": "June-2000"
+      },
+      {
+        "period": "2001-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9007e.htm",
+        "title": "July-2001"
+      },
+      {
+        "period": "2001-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9008e.htm",
+        "title": "August-2001"
+      },
+      {
+        "period": "2001-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9009e.htm",
+        "title": "September-2001"
+      },
+      {
+        "period": "2001-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9010e.htm",
+        "title": "October-2000"
+      },
+      {
+        "period": "2001-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9011e.htm",
+        "title": "November-2001"
+      },
+      {
+        "period": "2001-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9012e.htm",
+        "title": "December-2001"
+      },
+      {
+        "period": "2002-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9101e.htm",
+        "title": "January-2002"
+      },
+      {
+        "period": "2002-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9102e.htm",
+        "title": "February-2002"
+      },
+      {
+        "period": "2002-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9103e.htm",
+        "title": "March-2002"
+      },
+      {
+        "period": "2002-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9104e.htm",
+        "title": "April-2002"
+      },
+      {
+        "period": "2002-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9105e.htm",
+        "title": "May-2002"
+      },
+      {
+        "period": "2002-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9106e.htm",
+        "title": "June-2002"
+      },
+      {
+        "period": "2002-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9107e.htm",
+        "title": "July-2002"
+      },
+      {
+        "period": "2002-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9108e.htm",
+        "title": "August-2002"
+      },
+      {
+        "period": "2002-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9109e.htm",
+        "title": "September-2002",
+        "indexLabel": "2002-92"
+      },
+      {
+        "period": "2002-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9110e.htm",
+        "title": "October-2002"
+      },
+      {
+        "period": "2002-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9111e.htm",
+        "title": "November-2002"
+      },
+      {
+        "period": "2002-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9112e.htm",
+        "title": "December-2002"
+      },
+      {
+        "period": "2003-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9201e.htm",
+        "title": "January-2003"
+      },
+      {
+        "period": "2003-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9202e.htm",
+        "title": "February-2003"
+      },
+      {
+        "period": "2003-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9203e.htm",
+        "title": "March-2003"
+      },
+      {
+        "period": "2003-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9204e.htm",
+        "title": "April-2003"
+      },
+      {
+        "period": "2003-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9205e.htm",
+        "title": "May-2003"
+      },
+      {
+        "period": "2003-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9206e.htm",
+        "title": "June-2003"
+      },
+      {
+        "period": "2003-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9207e.htm",
+        "title": "July-2003"
+      },
+      {
+        "period": "2003-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9208e.htm",
+        "title": "August-2003"
+      },
+      {
+        "period": "2003-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9209e.htm",
+        "title": "September-2003"
+      },
+      {
+        "period": "2003-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9210e.htm",
+        "title": "October-2003"
+      },
+      {
+        "period": "2003-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9211e.htm",
+        "title": "November-2003"
+      },
+      {
+        "period": "2003-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9212e.htm",
+        "title": "December-2003"
+      },
+      {
+        "period": "2004-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9301e.htm",
+        "title": "January-2004"
+      },
+      {
+        "period": "2004-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9302e.htm",
+        "title": "February-2004"
+      },
+      {
+        "period": "2004-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9303e.htm",
+        "title": "March-2004"
+      },
+      {
+        "period": "2004-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9304e.htm",
+        "title": "April-2004"
+      },
+      {
+        "period": "2004-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9305e.htm",
+        "title": "May-2004"
+      },
+      {
+        "period": "2004-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9306e.htm",
+        "title": "June-2004"
+      },
+      {
+        "period": "2004-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9307e.htm",
+        "title": "July-2004"
+      },
+      {
+        "period": "2004-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9308e.htm",
+        "title": "August-2004"
+      },
+      {
+        "period": "2004-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9309e.htm",
+        "title": "September-2004",
+        "indexLabel": "2004-08"
+      },
+      {
+        "period": "2004-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9310e.htm",
+        "title": "October-2004"
+      },
+      {
+        "period": "2004-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9311e.htm",
+        "title": "November-2004"
+      },
+      {
+        "period": "2004-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9312e.htm",
+        "title": "December-2004"
+      },
+      {
+        "period": "2005-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9401e.htm",
+        "title": "January-2005"
+      },
+      {
+        "period": "2005-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9402e.htm",
+        "title": "February-2005"
+      },
+      {
+        "period": "2005-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9403e.htm",
+        "title": "March-2005"
+      },
+      {
+        "period": "2005-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9404e.htm",
+        "title": "April-2005"
+      },
+      {
+        "period": "2005-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9405e.htm",
+        "title": "May-2005"
+      },
+      {
+        "period": "2005-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9406e.htm",
+        "title": "June-2005"
+      },
+      {
+        "period": "2005-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9407e.htm",
+        "title": "July-2005"
+      },
+      {
+        "period": "2005-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9408e.htm",
+        "title": "August-2005"
+      },
+      {
+        "period": "2005-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9409e.htm",
+        "title": "September-2005"
+      },
+      {
+        "period": "2005-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9410e.htm",
+        "title": "October-2005"
+      },
+      {
+        "period": "2005-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9411e.htm",
+        "title": "November-2005"
+      },
+      {
+        "period": "2005-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9412e.htm",
+        "title": "December-2005"
+      },
+      {
+        "period": "2006-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9501e.htm",
+        "title": "January-2006"
+      },
+      {
+        "period": "2006-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9502e.htm",
+        "title": "February-2006"
+      },
+      {
+        "period": "2006-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9503e.htm",
+        "title": "March-2006"
+      },
+      {
+        "period": "2006-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9504e.htm",
+        "title": "April-2006"
+      },
+      {
+        "period": "2006-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9505e.htm",
+        "title": "May-2006"
+      },
+      {
+        "period": "2006-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9506e.htm",
+        "title": "June-2006"
+      },
+      {
+        "period": "2006-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9507e.htm",
+        "title": "July-2006"
+      },
+      {
+        "period": "2006-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9508e.htm",
+        "title": "August-2006"
+      },
+      {
+        "period": "2006-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9509e.htm",
+        "title": "September-2006"
+      },
+      {
+        "period": "2006-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9510e.htm",
+        "title": "October-2006"
+      },
+      {
+        "period": "2006-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9511e.htm",
+        "title": "November-2006"
+      },
+      {
+        "period": "2006-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9512e.htm",
+        "title": "December-2006"
+      },
+      {
+        "period": "2007-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9601e.htm",
+        "title": "January-2007"
+      },
+      {
+        "period": "2007-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9602e.htm",
+        "title": "February-2007"
+      },
+      {
+        "period": "2007-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9603e.htm",
+        "title": "March-2007"
+      },
+      {
+        "period": "2007-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9604e.htm",
+        "title": "April-2007"
+      },
+      {
+        "period": "2007-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9605e.htm",
+        "title": "May-2007"
+      },
+      {
+        "period": "2007-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9606e.htm",
+        "title": "June-2007"
+      },
+      {
+        "period": "2007-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9607e.htm",
+        "title": "July-2007"
+      },
+      {
+        "period": "2007-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9608e.htm",
+        "title": "August-2007"
+      },
+      {
+        "period": "2007-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9609e.htm",
+        "title": "September-2007"
+      },
+      {
+        "period": "2007-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9610e.htm",
+        "title": "October-2007"
+      },
+      {
+        "period": "2007-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9611e.htm",
+        "title": "November-2007"
+      },
+      {
+        "period": "2007-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9612e.htm",
+        "title": "December-2007"
+      },
+      {
+        "period": "2008-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9701e.htm",
+        "title": "January-2008"
+      },
+      {
+        "period": "2008-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9702e.htm",
+        "title": "February-2008"
+      },
+      {
+        "period": "2008-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9703e.htm",
+        "title": "March-2008"
+      },
+      {
+        "period": "2008-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9704e.htm",
+        "title": "April-2008"
+      },
+      {
+        "period": "2008-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9705e.htm",
+        "title": "May-2008"
+      },
+      {
+        "period": "2008-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9706e.htm",
+        "title": "June-2008"
+      },
+      {
+        "period": "2008-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9707e.htm",
+        "title": "July-2008"
+      },
+      {
+        "period": "2008-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9708e.htm",
+        "title": "August-2008"
+      },
+      {
+        "period": "2008-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9709e.htm",
+        "title": "September-2008"
+      },
+      {
+        "period": "2008-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9710e.htm",
+        "title": "October-2008"
+      },
+      {
+        "period": "2008-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9711e.htm",
+        "title": "November-2008"
+      },
+      {
+        "period": "2008-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9712e.htm",
+        "title": "December-2008"
+      },
+      {
+        "period": "2009-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9801e.htm",
+        "title": "January-2009"
+      },
+      {
+        "period": "2009-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9802e.htm",
+        "title": "February-2009"
+      },
+      {
+        "period": "2009-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9803e.htm",
+        "title": "March-2009"
+      },
+      {
+        "period": "2009-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9804e.htm",
+        "title": "April-2009"
+      },
+      {
+        "period": "2009-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9805e.htm",
+        "title": "May-2009"
+      },
+      {
+        "period": "2009-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9806e.htm",
+        "title": "June-2009"
+      },
+      {
+        "period": "2009-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9807e.htm",
+        "title": "July-2009"
+      },
+      {
+        "period": "2009-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9808e.htm",
+        "title": "August-2009"
+      },
+      {
+        "period": "2009-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9809e.htm",
+        "title": "September-2009"
+      },
+      {
+        "period": "2009-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9810e.htm",
+        "title": "October-2009"
+      },
+      {
+        "period": "2009-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9811e.htm",
+        "title": "November-2009"
+      },
+      {
+        "period": "2009-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9812e.htm",
+        "title": "December-2009"
+      },
+      {
+        "period": "2010-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9901e.htm",
+        "title": "January-2010"
+      },
+      {
+        "period": "2010-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9902e.htm",
+        "title": "February-2010"
+      },
+      {
+        "period": "2010-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9903e.htm",
+        "title": "March-2010"
+      },
+      {
+        "period": "2010-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9904e.htm",
+        "title": "April-2010"
+      },
+      {
+        "period": "2010-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9905e.htm",
+        "title": "May-2010"
+      },
+      {
+        "period": "2010-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9906e.htm",
+        "title": "June-2010"
+      },
+      {
+        "period": "2010-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9907e.htm",
+        "title": "July-2010"
+      },
+      {
+        "period": "2010-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9908e.htm",
+        "title": "August-2010"
+      },
+      {
+        "period": "2010-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9909e.htm",
+        "title": "September-2010"
+      },
+      {
+        "period": "2010-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9910e.htm",
+        "title": "October-2010"
+      },
+      {
+        "period": "2010-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9911e.htm",
+        "title": "November-2010"
+      },
+      {
+        "period": "2010-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/9912e.htm",
+        "title": "December-2010"
+      },
+      {
+        "period": "2011-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10001e.htm",
+        "title": "January-2011",
+        "indexLabel": "2011-02"
+      },
+      {
+        "period": "2011-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10002e.htm",
+        "title": "February-2011"
+      },
+      {
+        "period": "2011-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10003e.htm",
+        "title": "March-2011"
+      },
+      {
+        "period": "2011-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10004e.htm",
+        "title": "April-2011"
+      },
+      {
+        "period": "2011-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10005e.htm",
+        "title": "May-2011"
+      },
+      {
+        "period": "2011-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10006e.htm",
+        "title": "June-2011"
+      },
+      {
+        "period": "2011-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10007e.htm",
+        "title": "July-2011"
+      },
+      {
+        "period": "2011-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10008e.htm",
+        "title": "August-2011"
+      },
+      {
+        "period": "2011-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10009e.htm",
+        "title": "September-2011"
+      },
+      {
+        "period": "2011-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10010e.htm",
+        "title": "October-2011"
+      },
+      {
+        "period": "2011-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10011e.htm",
+        "title": "November-2011"
+      },
+      {
+        "period": "2011-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10012e.htm",
+        "title": "December-2011"
+      },
+      {
+        "period": "2012-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10101e.htm",
+        "title": "January-2012"
+      },
+      {
+        "period": "2012-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10102e.htm",
+        "title": "February-2012"
+      },
+      {
+        "period": "2012-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10103e.htm",
+        "title": "March-2012"
+      },
+      {
+        "period": "2012-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10104e.htm",
+        "title": "April-2012"
+      },
+      {
+        "period": "2012-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10105e.htm",
+        "title": "May-2012"
+      },
+      {
+        "period": "2012-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10106e.htm",
+        "title": "June-2012"
+      },
+      {
+        "period": "2012-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10107e.htm",
+        "title": "July-2012"
+      },
+      {
+        "period": "2012-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10108e.htm",
+        "title": "August-2012"
+      },
+      {
+        "period": "2012-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10109e.htm",
+        "title": "September-2012"
+      },
+      {
+        "period": "2012-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10110e.htm",
+        "title": "October-2012"
+      },
+      {
+        "period": "2012-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10111e.htm",
+        "title": "November-2012"
+      },
+      {
+        "period": "2012-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10112e.htm",
+        "title": "December-2012"
+      },
+      {
+        "period": "2013-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10201e.htm",
+        "title": "January-2013"
+      },
+      {
+        "period": "2013-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10202e.htm",
+        "title": "February-2013"
+      },
+      {
+        "period": "2013-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10203e.htm",
+        "title": "March-2013"
+      },
+      {
+        "period": "2013-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10204e.htm",
+        "title": "April-2013"
+      },
+      {
+        "period": "2013-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10205e.htm",
+        "title": "May-2013"
+      },
+      {
+        "period": "2013-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10206e.htm",
+        "title": "June-2013"
+      },
+      {
+        "period": "2013-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10207e.htm",
+        "title": "July-2013"
+      },
+      {
+        "period": "2013-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10208e.htm",
+        "title": "August-2013"
+      },
+      {
+        "period": "2013-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10209e.htm",
+        "title": "September-2013"
+      },
+      {
+        "period": "2013-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10210e.htm",
+        "title": "October-2013"
+      },
+      {
+        "period": "2013-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10211e.htm",
+        "title": "November-2013"
+      },
+      {
+        "period": "2013-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10212e.htm",
+        "title": "December-2013"
+      },
+      {
+        "period": "2014-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10301e.htm",
+        "title": "January-2014"
+      },
+      {
+        "period": "2014-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10302e.htm",
+        "title": "February-2014"
+      },
+      {
+        "period": "2014-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10303e.htm",
+        "title": "March-2014"
+      },
+      {
+        "period": "2014-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10304e.htm",
+        "title": "April-2014"
+      },
+      {
+        "period": "2014-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10305e.htm",
+        "title": "May-2014"
+      },
+      {
+        "period": "2014-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10306e.htm",
+        "title": "June-2014"
+      },
+      {
+        "period": "2014-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10307e.htm",
+        "title": "July-2014"
+      },
+      {
+        "period": "2014-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10308e.htm",
+        "title": "August-2014"
+      },
+      {
+        "period": "2014-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10309e.htm",
+        "title": "September-2014"
+      },
+      {
+        "period": "2014-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10310e.htm",
+        "title": "October-2014"
+      },
+      {
+        "period": "2014-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10311e.htm",
+        "title": "November-2014"
+      },
+      {
+        "period": "2014-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10312e.htm",
+        "title": "December-2014"
+      },
+      {
+        "period": "2015-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10401e.htm",
+        "title": "January-2015"
+      },
+      {
+        "period": "2015-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10402e.htm",
+        "title": "February-2015"
+      },
+      {
+        "period": "2015-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10403e.htm",
+        "title": "March-2015"
+      },
+      {
+        "period": "2015-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10404e.htm",
+        "title": "April-2015"
+      },
+      {
+        "period": "2015-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10405e.htm",
+        "title": "May-2015"
+      },
+      {
+        "period": "2015-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10406e.htm",
+        "title": "June-2015"
+      },
+      {
+        "period": "2015-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10407e.htm",
+        "title": "July-2015"
+      },
+      {
+        "period": "2015-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10408e.htm",
+        "title": "August-2015"
+      },
+      {
+        "period": "2015-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10409e.htm",
+        "title": "September-2015"
+      },
+      {
+        "period": "2015-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10410e.htm",
+        "title": "October-2015"
+      },
+      {
+        "period": "2015-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10411e.htm",
+        "title": "November-2015"
+      },
+      {
+        "period": "2015-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10412e.htm",
+        "title": "December-2015"
+      },
+      {
+        "period": "2016-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10501e.htm",
+        "title": "January-2016"
+      },
+      {
+        "period": "2016-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10502e.htm",
+        "title": "February-2016"
+      },
+      {
+        "period": "2016-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10503e.htm",
+        "title": "March-2016"
+      },
+      {
+        "period": "2016-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10504e.htm",
+        "title": "April-2016"
+      },
+      {
+        "period": "2016-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10505e.htm",
+        "title": "May-2016"
+      },
+      {
+        "period": "2016-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10506e.htm",
+        "title": "June-2016"
+      },
+      {
+        "period": "2016-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10507e.htm",
+        "title": "July-2016"
+      },
+      {
+        "period": "2016-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10508e.htm",
+        "title": "August-2016"
+      },
+      {
+        "period": "2016-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10509e.htm",
+        "title": "September-2016"
+      },
+      {
+        "period": "2016-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10510e.htm",
+        "title": "October-2016"
+      },
+      {
+        "period": "2016-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10511e.htm",
+        "title": "November-2016"
+      },
+      {
+        "period": "2016-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10512e.htm",
+        "title": "December-2016"
+      },
+      {
+        "period": "2017-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10601e.htm",
+        "title": "January-2017"
+      },
+      {
+        "period": "2017-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10602e.htm",
+        "title": "February-2017"
+      },
+      {
+        "period": "2017-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10603e.htm",
+        "title": "March-2017"
+      },
+      {
+        "period": "2017-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10604e.htm",
+        "title": "April-2017"
+      },
+      {
+        "period": "2017-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10605e.htm",
+        "title": "May-2017"
+      },
+      {
+        "period": "2017-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10606e.htm",
+        "title": "June-2017"
+      },
+      {
+        "period": "2017-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10607e.htm",
+        "title": "July-2017"
+      },
+      {
+        "period": "2017-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10608e.htm",
+        "title": "August-2017"
+      },
+      {
+        "period": "2017-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10609e.htm",
+        "title": "September-2017"
+      },
+      {
+        "period": "2017-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10610e.htm",
+        "title": "October-2017"
+      },
+      {
+        "period": "2017-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10611e.htm",
+        "title": "November-2017"
+      },
+      {
+        "period": "2017-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10612e.htm",
+        "title": "December-2017"
+      },
+      {
+        "period": "2018-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10701e.htm",
+        "title": "January-2018"
+      },
+      {
+        "period": "2018-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10702e.htm",
+        "title": "February-2018"
+      },
+      {
+        "period": "2018-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10703e.htm",
+        "title": "March-2018"
+      },
+      {
+        "period": "2018-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10704e.htm",
+        "title": "April-2018"
+      },
+      {
+        "period": "2018-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10705e.htm",
+        "title": "May-2018"
+      },
+      {
+        "period": "2018-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10706e.htm",
+        "title": "June-2018"
+      },
+      {
+        "period": "2018-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10707e.htm",
+        "title": "July-2018"
+      },
+      {
+        "period": "2018-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10708e.htm",
+        "title": "August-2018"
+      },
+      {
+        "period": "2018-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10709e.htm",
+        "title": "September-2018"
+      },
+      {
+        "period": "2018-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10710e.htm",
+        "title": "October-2018"
+      },
+      {
+        "period": "2018-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10711e.htm",
+        "title": "November-2018"
+      },
+      {
+        "period": "2018-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10712e.htm",
+        "title": "December-2018"
+      },
+      {
+        "period": "2019-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10801e.htm",
+        "title": "January-2019"
+      },
+      {
+        "period": "2019-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10802e.htm",
+        "title": "February-2019"
+      },
+      {
+        "period": "2019-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10803e.htm",
+        "title": "March-2019"
+      },
+      {
+        "period": "2019-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10804e.htm",
+        "title": "April-2019"
+      },
+      {
+        "period": "2019-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10805e.htm",
+        "title": "May-2019"
+      },
+      {
+        "period": "2019-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10806e.htm",
+        "title": "June-2019"
+      },
+      {
+        "period": "2019-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10807e.htm",
+        "title": "July-2019"
+      },
+      {
+        "period": "2019-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10808e.htm",
+        "title": "August-2019"
+      },
+      {
+        "period": "2019-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10809e.htm",
+        "title": "September-2019"
+      },
+      {
+        "period": "2019-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10810e.htm",
+        "title": "October-2019"
+      },
+      {
+        "period": "2019-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10811e.htm",
+        "title": "November-2019"
+      },
+      {
+        "period": "2019-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10812e.htm",
+        "title": "December-2019"
+      },
+      {
+        "period": "2020-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10901e.htm",
+        "title": "January-2020"
+      },
+      {
+        "period": "2020-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10902e.htm",
+        "title": "February-2020"
+      },
+      {
+        "period": "2020-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10903e.htm",
+        "title": "March-2020"
+      },
+      {
+        "period": "2020-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10904e.htm",
+        "title": "April-2020"
+      },
+      {
+        "period": "2020-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10905e.htm",
+        "title": "May-2020"
+      },
+      {
+        "period": "2020-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10906e.htm",
+        "title": "June-2020"
+      },
+      {
+        "period": "2020-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10907e.htm",
+        "title": "July-2020"
+      },
+      {
+        "period": "2020-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10908e.htm",
+        "title": "August-2020"
+      },
+      {
+        "period": "2020-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10909e.htm",
+        "title": "September-2020"
+      },
+      {
+        "period": "2020-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10910e.htm",
+        "title": "October-2020"
+      },
+      {
+        "period": "2020-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10911e.htm",
+        "title": "November-2020"
+      },
+      {
+        "period": "2020-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/10912e.htm",
+        "title": "December-2020"
+      },
+      {
+        "period": "2021-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11001e.htm",
+        "title": "January-2021"
+      },
+      {
+        "period": "2021-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11002e.htm",
+        "title": "February-2021"
+      },
+      {
+        "period": "2021-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11003e.htm",
+        "title": "March-2021"
+      },
+      {
+        "period": "2021-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11004e.htm",
+        "title": "April-2021"
+      },
+      {
+        "period": "2021-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11005e.htm",
+        "title": "May-2021"
+      },
+      {
+        "period": "2021-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11006e.htm",
+        "title": "June-2021"
+      },
+      {
+        "period": "2021-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11007e.htm",
+        "title": "July-2021"
+      },
+      {
+        "period": "2021-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11008e.htm",
+        "title": "August-2021"
+      },
+      {
+        "period": "2021-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11009e.htm",
+        "title": "September-2021"
+      },
+      {
+        "period": "2021-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11010e.htm",
+        "title": "October-2021"
+      },
+      {
+        "period": "2021-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11011e.htm",
+        "title": "November-2021"
+      },
+      {
+        "period": "2021-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11012e.htm",
+        "title": "December-2021"
+      },
+      {
+        "period": "2022-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11101e.htm",
+        "title": "January-2022"
+      },
+      {
+        "period": "2022-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11102e.htm",
+        "title": "February-2022"
+      },
+      {
+        "period": "2022-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11103e.htm",
+        "title": "March-2022"
+      },
+      {
+        "period": "2022-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11104e.htm",
+        "title": "April-2022"
+      },
+      {
+        "period": "2022-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11105e.htm",
+        "title": "May-2022"
+      },
+      {
+        "period": "2022-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11106e.htm",
+        "title": "June-2022"
+      },
+      {
+        "period": "2022-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11107e.htm",
+        "title": "July-2022"
+      },
+      {
+        "period": "2022-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11108e.htm",
+        "title": "August-2022"
+      },
+      {
+        "period": "2022-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11109e.htm",
+        "title": "September-2022"
+      },
+      {
+        "period": "2022-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11110e.htm",
+        "title": "October-2022"
+      },
+      {
+        "period": "2022-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11111e.htm",
+        "title": "November-2022"
+      },
+      {
+        "period": "2022-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11112e.htm",
+        "title": "December-2022"
+      },
+      {
+        "period": "2023-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11201e.htm",
+        "title": "January-2023"
+      },
+      {
+        "period": "2023-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11202e.htm",
+        "title": "February-2023"
+      },
+      {
+        "period": "2023-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11203e.htm",
+        "title": "March-2023"
+      },
+      {
+        "period": "2023-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11204e.htm",
+        "title": "April-2023"
+      },
+      {
+        "period": "2023-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11205e.htm",
+        "title": "May-2023"
+      },
+      {
+        "period": "2023-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11206e.htm",
+        "title": "June-2023"
+      },
+      {
+        "period": "2023-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11207e.htm",
+        "title": "July-2023"
+      },
+      {
+        "period": "2023-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11208e.htm",
+        "title": "August-2023"
+      },
+      {
+        "period": "2023-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11209e.htm",
+        "title": "September-2023"
+      },
+      {
+        "period": "2023-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11210e.htm",
+        "title": "October-2023"
+      },
+      {
+        "period": "2023-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11211e.htm",
+        "title": "November-2023"
+      },
+      {
+        "period": "2023-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11212e.htm",
+        "title": "December-2023"
+      },
+      {
+        "period": "2024-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11301e.htm",
+        "title": "January-2024"
+      },
+      {
+        "period": "2024-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11302e.htm",
+        "title": "February-2024"
+      },
+      {
+        "period": "2024-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11303e.htm",
+        "title": "March-2024"
+      },
+      {
+        "period": "2024-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11304e.htm",
+        "title": "April-2024"
+      },
+      {
+        "period": "2024-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11305e.htm",
+        "title": "May-2024"
+      },
+      {
+        "period": "2024-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11306e.htm",
+        "title": "June-2024"
+      },
+      {
+        "period": "2024-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11307e.htm",
+        "title": "July-2024"
+      },
+      {
+        "period": "2024-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11308e.htm",
+        "title": "August-2024"
+      },
+      {
+        "period": "2024-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11309e.htm",
+        "title": "September-2024"
+      },
+      {
+        "period": "2024-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11310e.htm",
+        "title": "October-2024"
+      },
+      {
+        "period": "2024-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11311e.htm",
+        "title": "November-2024"
+      },
+      {
+        "period": "2024-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11312e.htm",
+        "title": "December-2024"
+      },
+      {
+        "period": "2025-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11401e.htm",
+        "title": "January-2025"
+      },
+      {
+        "period": "2025-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11402e.htm",
+        "title": "February-2025"
+      },
+      {
+        "period": "2025-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11403e.htm",
+        "title": "March-2025"
+      },
+      {
+        "period": "2025-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11404e.htm",
+        "title": "April-2025"
+      },
+      {
+        "period": "2025-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11405e.htm",
+        "title": "May-2025"
+      },
+      {
+        "period": "2025-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11406e.htm",
+        "title": "June-2025"
+      },
+      {
+        "period": "2025-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11407e.htm",
+        "title": "July-2025"
+      },
+      {
+        "period": "2025-08",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11408e.htm",
+        "title": "August-2025"
+      },
+      {
+        "period": "2025-09",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11409e.htm",
+        "title": "September-2025"
+      },
+      {
+        "period": "2025-10",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11410e.htm",
+        "title": "October-2025"
+      },
+      {
+        "period": "2025-11",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11411e.htm",
+        "title": "November-2025"
+      },
+      {
+        "period": "2025-12",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11412e.htm",
+        "title": "December-2025"
+      },
+      {
+        "period": "2026-01",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11501e.htm",
+        "title": "January-2025"
+      },
+      {
+        "period": "2026-02",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11502e.htm",
+        "title": "February-2025"
+      },
+      {
+        "period": "2026-03",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11503e.htm",
+        "title": "March-2025"
+      },
+      {
+        "period": "2026-04",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11504e.htm",
+        "title": "April-2025"
+      },
+      {
+        "period": "2026-05",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11505e.htm",
+        "title": "May-2025"
+      },
+      {
+        "period": "2026-06",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11506e.htm",
+        "title": "June-2025"
+      },
+      {
+        "period": "2026-07",
+        "url": "https://web.metro.taipei/RidershipCounts/E/11507e.htm",
+        "title": "July-2025"
+      }
+    ]
+  },
+  "network": [
+    {
+      "period": "1996-03",
+      "value": 330714,
+      "days": 4,
+      "measure": "published-total",
+      "averageDaily": 82679
+    },
+    {
+      "period": "1996-04",
+      "value": 1370561,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 45685
+    },
+    {
+      "period": "1996-05",
+      "value": 1216399,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 39239
+    },
+    {
+      "period": "1996-06",
+      "value": 956596,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 31887
+    },
+    {
+      "period": "1996-07",
+      "value": 1102603,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 35568
+    },
+    {
+      "period": "1996-08",
+      "value": 1296025,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 41807
+    },
+    {
+      "period": "1996-09",
+      "value": 1113494,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 37116
+    },
+    {
+      "period": "1996-10",
+      "value": 1256923,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 40546
+    },
+    {
+      "period": "1996-11",
+      "value": 1211712,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 40390
+    },
+    {
+      "period": "1996-12",
+      "value": 1319332,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 42559
+    },
+    {
+      "period": "1997-01",
+      "value": 1242472,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 40080
+    },
+    {
+      "period": "1997-02",
+      "value": 1172552,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 41877
+    },
+    {
+      "period": "1997-03",
+      "value": 1337029,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 43130
+    },
+    {
+      "period": "1997-04",
+      "value": 2238747,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 74625
+    },
+    {
+      "period": "1997-05",
+      "value": 2741930,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 88449
+    },
+    {
+      "period": "1997-06",
+      "value": 2672635,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 89088
+    },
+    {
+      "period": "1997-07",
+      "value": 3158423,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 101885
+    },
+    {
+      "period": "1997-08",
+      "value": 2928078,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 94454
+    },
+    {
+      "period": "1997-09",
+      "value": 3016479,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 100549
+    },
+    {
+      "period": "1997-10",
+      "value": 3501311,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 112946
+    },
+    {
+      "period": "1997-11",
+      "value": 3306454,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 110215
+    },
+    {
+      "period": "1997-12",
+      "value": 3765395,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 121464
+    },
+    {
+      "period": "1998-01",
+      "value": 369812,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 11929
+    },
+    {
+      "period": "1998-02",
+      "value": 4091078,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 146110
+    },
+    {
+      "period": "1998-03",
+      "value": 4807209,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 155071
+    },
+    {
+      "period": "1998-04",
+      "value": 4812240,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 160408
+    },
+    {
+      "period": "1998-05",
+      "value": 4933190,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 159135
+    },
+    {
+      "period": "1998-06",
+      "value": 4572868,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 152429
+    },
+    {
+      "period": "1998-07",
+      "value": 4907065,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 158292
+    },
+    {
+      "period": "1998-08",
+      "value": 5182575,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 167180
+    },
+    {
+      "period": "1998-09",
+      "value": 5130292,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 171010
+    },
+    {
+      "period": "1998-10",
+      "value": 5305882,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 171157
+    },
+    {
+      "period": "1998-11",
+      "value": 5848865,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 194962
+    },
+    {
+      "period": "1998-12",
+      "value": 7323246,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 236234
+    },
+    {
+      "period": "1999-01",
+      "value": 8822559,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 284599
+    },
+    {
+      "period": "1999-02",
+      "value": 7927522,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 283126
+    },
+    {
+      "period": "1999-03",
+      "value": 10118012,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 326387
+    },
+    {
+      "period": "1999-04",
+      "value": 9565661,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 318855
+    },
+    {
+      "period": "1999-05",
+      "value": 9842305,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 317494
+    },
+    {
+      "period": "1999-06",
+      "value": 9170981,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 305699
+    },
+    {
+      "period": "1999-07",
+      "value": 10315019,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 332743
+    },
+    {
+      "period": "1999-08",
+      "value": 10792265,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 348138
+    },
+    {
+      "period": "1999-09",
+      "value": 9899623,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 329987
+    },
+    {
+      "period": "1999-10",
+      "value": 11069573,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 357083
+    },
+    {
+      "period": "1999-11",
+      "value": 12954558,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 431819
+    },
+    {
+      "period": "1999-12",
+      "value": 16474044,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 531421
+    },
+    {
+      "period": "2000-01",
+      "value": 19119125,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 616746
+    },
+    {
+      "period": "2000-02",
+      "value": 20134936,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 694308
+    },
+    {
+      "period": "2000-03",
+      "value": 21544104,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 694971
+    },
+    {
+      "period": "2000-04",
+      "value": 20516356,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 683879
+    },
+    {
+      "period": "2000-05",
+      "value": 21426187,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 691167
+    },
+    {
+      "period": "2000-06",
+      "value": 20347558,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 678252
+    },
+    {
+      "period": "2000-07",
+      "value": 22614695,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 729506
+    },
+    {
+      "period": "2000-08",
+      "value": 22459295,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 724493
+    },
+    {
+      "period": "2000-09",
+      "value": 23841922,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 794731
+    },
+    {
+      "period": "2000-10",
+      "value": 24862127,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 802004
+    },
+    {
+      "period": "2000-11",
+      "value": 24337959,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 811265
+    },
+    {
+      "period": "2000-12",
+      "value": 27512476,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 887499
+    },
+    {
+      "period": "2001-01",
+      "value": 24367635,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 786053
+    },
+    {
+      "period": "2001-02",
+      "value": 26674023,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 952644
+    },
+    {
+      "period": "2001-03",
+      "value": 27686991,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 893129
+    },
+    {
+      "period": "2001-04",
+      "value": 26165096,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 872170
+    },
+    {
+      "period": "2001-05",
+      "value": 27069704,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 873216
+    },
+    {
+      "period": "2001-06",
+      "value": 25896546,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 863218
+    },
+    {
+      "period": "2001-07",
+      "value": 27572474,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 889435
+    },
+    {
+      "period": "2001-08",
+      "value": 28878337,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 931559
+    },
+    {
+      "period": "2001-09",
+      "value": 16276009,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 542534
+    },
+    {
+      "period": "2001-10",
+      "value": 15110775,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 487444
+    },
+    {
+      "period": "2001-11",
+      "value": 18647082,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 621569
+    },
+    {
+      "period": "2001-12",
+      "value": 25298042,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 816066
+    },
+    {
+      "period": "2002-01",
+      "value": 25603402,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 825916
+    },
+    {
+      "period": "2002-02",
+      "value": 23473254,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 838331
+    },
+    {
+      "period": "2002-03",
+      "value": 27118827,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 874801
+    },
+    {
+      "period": "2002-04",
+      "value": 25768631,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 858954
+    },
+    {
+      "period": "2002-05",
+      "value": 27019953,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 871611
+    },
+    {
+      "period": "2002-06",
+      "value": 25533309,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 851110
+    },
+    {
+      "period": "2002-07",
+      "value": 27890392,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 899690
+    },
+    {
+      "period": "2002-08",
+      "value": 28352991,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 914613
+    },
+    {
+      "period": "2002-09",
+      "value": 25747115,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 858237
+    },
+    {
+      "period": "2002-10",
+      "value": 28684322,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 925301
+    },
+    {
+      "period": "2002-11",
+      "value": 28724883,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 957496
+    },
+    {
+      "period": "2002-12",
+      "value": 30516478,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 984403
+    },
+    {
+      "period": "2003-01",
+      "value": 28014216,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 903684
+    },
+    {
+      "period": "2003-02",
+      "value": 26241269,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 937188
+    },
+    {
+      "period": "2003-03",
+      "value": 29040656,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 936795
+    },
+    {
+      "period": "2003-04",
+      "value": 25791169,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 859706
+    },
+    {
+      "period": "2003-05",
+      "value": 18647030,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 601517
+    },
+    {
+      "period": "2003-06",
+      "value": 20713548,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 690452
+    },
+    {
+      "period": "2003-07",
+      "value": 26104763,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 842089
+    },
+    {
+      "period": "2003-08",
+      "value": 26946918,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 869255
+    },
+    {
+      "period": "2003-09",
+      "value": 26920391,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 897346
+    },
+    {
+      "period": "2003-10",
+      "value": 29090570,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 938405
+    },
+    {
+      "period": "2003-11",
+      "value": 28189502,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 939650
+    },
+    {
+      "period": "2003-12",
+      "value": 30489096,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 983519
+    },
+    {
+      "period": "2004-01",
+      "value": 26615701,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 858571
+    },
+    {
+      "period": "2004-02",
+      "value": 28581061,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 985554
+    },
+    {
+      "period": "2004-03",
+      "value": 30223485,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 974951
+    },
+    {
+      "period": "2004-04",
+      "value": 28547591,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 951586
+    },
+    {
+      "period": "2004-05",
+      "value": 29122328,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 939430
+    },
+    {
+      "period": "2004-06",
+      "value": 27682149,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 922738
+    },
+    {
+      "period": "2004-07",
+      "value": 30233548,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 975276
+    },
+    {
+      "period": "2004-08",
+      "value": 28219215,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 910297
+    },
+    {
+      "period": "2004-09",
+      "value": 28609682,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 953656
+    },
+    {
+      "period": "2004-10",
+      "value": 30245644,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 975666
+    },
+    {
+      "period": "2004-11",
+      "value": 30124807,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1004160
+    },
+    {
+      "period": "2004-12",
+      "value": 31936745,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1030218
+    },
+    {
+      "period": "2005-01",
+      "value": 29811881,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 961674
+    },
+    {
+      "period": "2005-02",
+      "value": 25879279,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 924260
+    },
+    {
+      "period": "2005-03",
+      "value": 31866866,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1027963
+    },
+    {
+      "period": "2005-04",
+      "value": 29576241,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 985875
+    },
+    {
+      "period": "2005-05",
+      "value": 30251626,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 975859
+    },
+    {
+      "period": "2005-06",
+      "value": 29029861,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 967662
+    },
+    {
+      "period": "2005-07",
+      "value": 30011759,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 968121
+    },
+    {
+      "period": "2005-08",
+      "value": 30343866,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 978834
+    },
+    {
+      "period": "2005-09",
+      "value": 29408909,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 980297
+    },
+    {
+      "period": "2005-10",
+      "value": 30689307,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 989978
+    },
+    {
+      "period": "2005-11",
+      "value": 30604448,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1020148
+    },
+    {
+      "period": "2005-12",
+      "value": 33255760,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1072766
+    },
+    {
+      "period": "2006-01",
+      "value": 29452611,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 950084
+    },
+    {
+      "period": "2006-02",
+      "value": 28772163,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1027577
+    },
+    {
+      "period": "2006-03",
+      "value": 31936004,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1030194
+    },
+    {
+      "period": "2006-04",
+      "value": 29566184,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 985539
+    },
+    {
+      "period": "2006-05",
+      "value": 30871353,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 995850
+    },
+    {
+      "period": "2006-06",
+      "value": 31493316,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1049777
+    },
+    {
+      "period": "2006-07",
+      "value": 32933003,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1062355
+    },
+    {
+      "period": "2006-08",
+      "value": 33606001,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1084065
+    },
+    {
+      "period": "2006-09",
+      "value": 33070809,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1102360
+    },
+    {
+      "period": "2006-10",
+      "value": 33232773,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1072025
+    },
+    {
+      "period": "2006-11",
+      "value": 33331291,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1111043
+    },
+    {
+      "period": "2006-12",
+      "value": 35737712,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1152829
+    },
+    {
+      "period": "2007-01",
+      "value": 34293670,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1106247
+    },
+    {
+      "period": "2007-02",
+      "value": 29436141,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1051291
+    },
+    {
+      "period": "2007-03",
+      "value": 36155960,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1166321
+    },
+    {
+      "period": "2007-04",
+      "value": 33430442,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1114348
+    },
+    {
+      "period": "2007-05",
+      "value": 34924960,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1126612
+    },
+    {
+      "period": "2007-06",
+      "value": 32984025,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1099468
+    },
+    {
+      "period": "2007-07",
+      "value": 35816762,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1155379
+    },
+    {
+      "period": "2007-08",
+      "value": 34828039,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1123485
+    },
+    {
+      "period": "2007-09",
+      "value": 33010544,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1100351
+    },
+    {
+      "period": "2007-10",
+      "value": 35679396,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1150948
+    },
+    {
+      "period": "2007-11",
+      "value": 36441830,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1214728
+    },
+    {
+      "period": "2007-12",
+      "value": 39227916,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1265417
+    },
+    {
+      "period": "2008-01",
+      "value": 36825587,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1187922
+    },
+    {
+      "period": "2008-02",
+      "value": 33223866,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 1145651
+    },
+    {
+      "period": "2008-03",
+      "value": 38432595,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1239761
+    },
+    {
+      "period": "2008-04",
+      "value": 36472089,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1215736
+    },
+    {
+      "period": "2008-05",
+      "value": 38096236,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1228911
+    },
+    {
+      "period": "2008-06",
+      "value": 36551844,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1218395
+    },
+    {
+      "period": "2008-07",
+      "value": 38641308,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1246494
+    },
+    {
+      "period": "2008-08",
+      "value": 39806858,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1284092
+    },
+    {
+      "period": "2008-09",
+      "value": 34944963,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1164832
+    },
+    {
+      "period": "2008-10",
+      "value": 39569451,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1276434
+    },
+    {
+      "period": "2008-11",
+      "value": 37509706,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1250324
+    },
+    {
+      "period": "2008-12",
+      "value": 39949912,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1288707
+    },
+    {
+      "period": "2009-01",
+      "value": 34771207,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1121652
+    },
+    {
+      "period": "2009-02",
+      "value": 36236921,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1294176
+    },
+    {
+      "period": "2009-03",
+      "value": 38808194,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1251877
+    },
+    {
+      "period": "2009-04",
+      "value": 37410418,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1247014
+    },
+    {
+      "period": "2009-05",
+      "value": 37753738,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1217863
+    },
+    {
+      "period": "2009-06",
+      "value": 36551854,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1218395
+    },
+    {
+      "period": "2009-07",
+      "value": 41123297,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1326558
+    },
+    {
+      "period": "2009-08",
+      "value": 37895799,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1222445
+    },
+    {
+      "period": "2009-09",
+      "value": 38229962,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1274332
+    },
+    {
+      "period": "2009-10",
+      "value": 40426260,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1304073
+    },
+    {
+      "period": "2009-11",
+      "value": 39548647,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1318288
+    },
+    {
+      "period": "2009-12",
+      "value": 43716054,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1410195
+    },
+    {
+      "period": "2010-01",
+      "value": 39736747,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1281831
+    },
+    {
+      "period": "2010-02",
+      "value": 34838161,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1244220
+    },
+    {
+      "period": "2010-03",
+      "value": 42790249,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1380331
+    },
+    {
+      "period": "2010-04",
+      "value": 40251854,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1341728
+    },
+    {
+      "period": "2010-05",
+      "value": 41473930,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1337869
+    },
+    {
+      "period": "2010-06",
+      "value": 39479910,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1315997
+    },
+    {
+      "period": "2010-07",
+      "value": 42491066,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1370680
+    },
+    {
+      "period": "2010-08",
+      "value": 42042218,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1356201
+    },
+    {
+      "period": "2010-09",
+      "value": 39760508,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1325350
+    },
+    {
+      "period": "2010-10",
+      "value": 43727622,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1410568
+    },
+    {
+      "period": "2010-11",
+      "value": 47277592,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1575920
+    },
+    {
+      "period": "2010-12",
+      "value": 50416877,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1626351
+    },
+    {
+      "period": "2011-01",
+      "value": 46769306,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1508687
+    },
+    {
+      "period": "2011-02",
+      "value": 42217591,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1507771
+    },
+    {
+      "period": "2011-03",
+      "value": 48818361,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1574786
+    },
+    {
+      "period": "2011-04",
+      "value": 47205199,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1573507
+    },
+    {
+      "period": "2011-05",
+      "value": 46653336,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1504946
+    },
+    {
+      "period": "2011-06",
+      "value": 44438781,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1481293
+    },
+    {
+      "period": "2011-07",
+      "value": 48204332,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1554978
+    },
+    {
+      "period": "2011-08",
+      "value": 47806171,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1542135
+    },
+    {
+      "period": "2011-09",
+      "value": 46440216,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1548007
+    },
+    {
+      "period": "2011-10",
+      "value": 48612662,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1568150
+    },
+    {
+      "period": "2011-11",
+      "value": 47637209,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1587907
+    },
+    {
+      "period": "2011-12",
+      "value": 51601325,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1664559
+    },
+    {
+      "period": "2012-01",
+      "value": 46910524,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1513243
+    },
+    {
+      "period": "2012-02",
+      "value": 48222267,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 1662837
+    },
+    {
+      "period": "2012-03",
+      "value": 51761349,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1669721
+    },
+    {
+      "period": "2012-04",
+      "value": 48278769,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1609292
+    },
+    {
+      "period": "2012-05",
+      "value": 50131129,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1617133
+    },
+    {
+      "period": "2012-06",
+      "value": 47661008,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1588700
+    },
+    {
+      "period": "2012-07",
+      "value": 50456552,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1627631
+    },
+    {
+      "period": "2012-08",
+      "value": 49651320,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1601655
+    },
+    {
+      "period": "2012-09",
+      "value": 48795624,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1626521
+    },
+    {
+      "period": "2012-10",
+      "value": 53218414,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1716723
+    },
+    {
+      "period": "2012-11",
+      "value": 51654227,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1721808
+    },
+    {
+      "period": "2012-12",
+      "value": 55458159,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1788973
+    },
+    {
+      "period": "2013-01",
+      "value": 52749452,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1701595
+    },
+    {
+      "period": "2013-02",
+      "value": 45786691,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1635239
+    },
+    {
+      "period": "2013-03",
+      "value": 54349272,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1753202
+    },
+    {
+      "period": "2013-04",
+      "value": 50269978,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1675666
+    },
+    {
+      "period": "2013-05",
+      "value": 53058455,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1711563
+    },
+    {
+      "period": "2013-06",
+      "value": 50466513,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1682217
+    },
+    {
+      "period": "2013-07",
+      "value": 52949777,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1708057
+    },
+    {
+      "period": "2013-08",
+      "value": 52984136,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1709166
+    },
+    {
+      "period": "2013-09",
+      "value": 50471993,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1682400
+    },
+    {
+      "period": "2013-10",
+      "value": 54652173,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1762973
+    },
+    {
+      "period": "2013-11",
+      "value": 55447598,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1848253
+    },
+    {
+      "period": "2013-12",
+      "value": 61775045,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1992743
+    },
+    {
+      "period": "2014-01",
+      "value": 55842595,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1801374
+    },
+    {
+      "period": "2014-02",
+      "value": 52200340,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1864298
+    },
+    {
+      "period": "2014-03",
+      "value": 59584296,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1922074
+    },
+    {
+      "period": "2014-04",
+      "value": 55365751,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1845525
+    },
+    {
+      "period": "2014-05",
+      "value": 56671844,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1828124
+    },
+    {
+      "period": "2014-06",
+      "value": 52928720,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1764291
+    },
+    {
+      "period": "2014-07",
+      "value": 55610445,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1793885
+    },
+    {
+      "period": "2014-08",
+      "value": 56508518,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1822855
+    },
+    {
+      "period": "2014-09",
+      "value": 53588179,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1786273
+    },
+    {
+      "period": "2014-10",
+      "value": 57923300,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1868494
+    },
+    {
+      "period": "2014-11",
+      "value": 58232217,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1941074
+    },
+    {
+      "period": "2014-12",
+      "value": 65050196,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2098393
+    },
+    {
+      "period": "2015-01",
+      "value": 59691839,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1925543
+    },
+    {
+      "period": "2015-02",
+      "value": 52532633,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1876165
+    },
+    {
+      "period": "2015-03",
+      "value": 62848327,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2027365
+    },
+    {
+      "period": "2015-04",
+      "value": 58332655,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1944422
+    },
+    {
+      "period": "2015-05",
+      "value": 60761657,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1960053
+    },
+    {
+      "period": "2015-06",
+      "value": 57568402,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1918947
+    },
+    {
+      "period": "2015-07",
+      "value": 59994731,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1935314
+    },
+    {
+      "period": "2015-08",
+      "value": 58896058,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1899873
+    },
+    {
+      "period": "2015-09",
+      "value": 57138189,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1904606
+    },
+    {
+      "period": "2015-10",
+      "value": 62296159,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2009554
+    },
+    {
+      "period": "2015-11",
+      "value": 60909070,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2030302
+    },
+    {
+      "period": "2015-12",
+      "value": 66542089,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2146519
+    },
+    {
+      "period": "2016-01",
+      "value": 62491126,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2015843
+    },
+    {
+      "period": "2016-02",
+      "value": 55880942,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 1926929
+    },
+    {
+      "period": "2016-03",
+      "value": 65094282,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2099816
+    },
+    {
+      "period": "2016-04",
+      "value": 59818335,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1993945
+    },
+    {
+      "period": "2016-05",
+      "value": 62641349,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2020689
+    },
+    {
+      "period": "2016-06",
+      "value": 58943413,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1964780
+    },
+    {
+      "period": "2016-07",
+      "value": 60814153,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1961747
+    },
+    {
+      "period": "2016-08",
+      "value": 63103402,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2035594
+    },
+    {
+      "period": "2016-09",
+      "value": 56229449,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1874315
+    },
+    {
+      "period": "2016-10",
+      "value": 62802378,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2025883
+    },
+    {
+      "period": "2016-11",
+      "value": 62796023,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2093201
+    },
+    {
+      "period": "2016-12",
+      "value": 69375314,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2237913
+    },
+    {
+      "period": "2017-01",
+      "value": 60035066,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1936615
+    },
+    {
+      "period": "2017-02",
+      "value": 57307769,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 2046706
+    },
+    {
+      "period": "2017-03",
+      "value": 65799002,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2122548
+    },
+    {
+      "period": "2017-04",
+      "value": 61034570,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2034486
+    },
+    {
+      "period": "2017-05",
+      "value": 62331397,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2010690
+    },
+    {
+      "period": "2017-06",
+      "value": 60600002,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2020000
+    },
+    {
+      "period": "2017-07",
+      "value": 60845996,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1962774
+    },
+    {
+      "period": "2017-08",
+      "value": 63338720,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2043185
+    },
+    {
+      "period": "2017-09",
+      "value": 60251267,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2008376
+    },
+    {
+      "period": "2017-10",
+      "value": 61801612,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1993600
+    },
+    {
+      "period": "2017-11",
+      "value": 63033961,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2101132
+    },
+    {
+      "period": "2017-12",
+      "value": 69687194,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2247974
+    },
+    {
+      "period": "2018-01",
+      "value": 64500974,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2080677
+    },
+    {
+      "period": "2018-02",
+      "value": 54709408,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1953907
+    },
+    {
+      "period": "2018-03",
+      "value": 67358839,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2172866
+    },
+    {
+      "period": "2018-04",
+      "value": 60665191,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2022173
+    },
+    {
+      "period": "2018-05",
+      "value": 64979317,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2096107
+    },
+    {
+      "period": "2018-06",
+      "value": 61504022,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2050134
+    },
+    {
+      "period": "2018-07",
+      "value": 62957672,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2030893
+    },
+    {
+      "period": "2018-08",
+      "value": 64683872,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2086577
+    },
+    {
+      "period": "2018-09",
+      "value": 60868879,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2028963
+    },
+    {
+      "period": "2018-10",
+      "value": 67071863,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2163608
+    },
+    {
+      "period": "2018-11",
+      "value": 65606945,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2186898
+    },
+    {
+      "period": "2018-12",
+      "value": 70563145,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2276230
+    },
+    {
+      "period": "2019-01",
+      "value": 68003177,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2193651
+    },
+    {
+      "period": "2019-02",
+      "value": 56013818,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 2000494
+    },
+    {
+      "period": "2019-03",
+      "value": 67278996,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2170290
+    },
+    {
+      "period": "2019-04",
+      "value": 63674114,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2122470
+    },
+    {
+      "period": "2019-05",
+      "value": 67470852,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2176479
+    },
+    {
+      "period": "2019-06",
+      "value": 62899805,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2096660
+    },
+    {
+      "period": "2019-07",
+      "value": 66557788,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2147025
+    },
+    {
+      "period": "2019-08",
+      "value": 65067353,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2098947
+    },
+    {
+      "period": "2019-09",
+      "value": 61917289,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2063910
+    },
+    {
+      "period": "2019-10",
+      "value": 68684775,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2215638
+    },
+    {
+      "period": "2019-11",
+      "value": 68384772,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2279492
+    },
+    {
+      "period": "2019-12",
+      "value": 73646275,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2375686
+    },
+    {
+      "period": "2020-01",
+      "value": 62341846,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2011027
+    },
+    {
+      "period": "2020-02",
+      "value": 53122226,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 1831801
+    },
+    {
+      "period": "2020-03",
+      "value": 53320169,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1720005
+    },
+    {
+      "period": "2020-04",
+      "value": 45348047,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1511602
+    },
+    {
+      "period": "2020-05",
+      "value": 53173491,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1715274
+    },
+    {
+      "period": "2020-06",
+      "value": 55134226,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1837808
+    },
+    {
+      "period": "2020-07",
+      "value": 60458810,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1950284
+    },
+    {
+      "period": "2020-08",
+      "value": 59933608,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1933342
+    },
+    {
+      "period": "2020-09",
+      "value": 60712565,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2023752
+    },
+    {
+      "period": "2020-10",
+      "value": 61473624,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1983020
+    },
+    {
+      "period": "2020-11",
+      "value": 62394352,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2079812
+    },
+    {
+      "period": "2020-12",
+      "value": 68237813,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2201220
+    },
+    {
+      "period": "2021-01",
+      "value": 59627877,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1923480
+    },
+    {
+      "period": "2021-02",
+      "value": 49903948,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1782284
+    },
+    {
+      "period": "2021-03",
+      "value": 63662116,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2053617
+    },
+    {
+      "period": "2021-04",
+      "value": 60228378,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2007613
+    },
+    {
+      "period": "2021-05",
+      "value": 33793743,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1090121
+    },
+    {
+      "period": "2021-06",
+      "value": 13119922,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 437331
+    },
+    {
+      "period": "2021-07",
+      "value": 19326321,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 623430
+    },
+    {
+      "period": "2021-08",
+      "value": 31909547,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1029340
+    },
+    {
+      "period": "2021-09",
+      "value": 37417702,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1247257
+    },
+    {
+      "period": "2021-10",
+      "value": 48391442,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1561014
+    },
+    {
+      "period": "2021-11",
+      "value": 53694731,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1789824
+    },
+    {
+      "period": "2021-12",
+      "value": 60044608,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1936923
+    },
+    {
+      "period": "2022-01",
+      "value": 49839834,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1607737
+    },
+    {
+      "period": "2022-02",
+      "value": 41907368,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1496692
+    },
+    {
+      "period": "2022-03",
+      "value": 57507027,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1855065
+    },
+    {
+      "period": "2022-04",
+      "value": 43166022,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1438867
+    },
+    {
+      "period": "2022-05",
+      "value": 33442128,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1078778
+    },
+    {
+      "period": "2022-06",
+      "value": 39433399,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1314447
+    },
+    {
+      "period": "2022-07",
+      "value": 47377976,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1528322
+    },
+    {
+      "period": "2022-08",
+      "value": 50558370,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1630915
+    },
+    {
+      "period": "2022-09",
+      "value": 50032664,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1667755
+    },
+    {
+      "period": "2022-10",
+      "value": 53451837,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1724253
+    },
+    {
+      "period": "2022-11",
+      "value": 57215039,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1907168
+    },
+    {
+      "period": "2022-12",
+      "value": 63326188,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2042780
+    },
+    {
+      "period": "2023-01",
+      "value": 52502386,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1693625
+    },
+    {
+      "period": "2023-02",
+      "value": 56091010,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 2003250
+    },
+    {
+      "period": "2023-03",
+      "value": 62605487,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2019532
+    },
+    {
+      "period": "2023-04",
+      "value": 56684568,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1889486
+    },
+    {
+      "period": "2023-05",
+      "value": 60510291,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1951945
+    },
+    {
+      "period": "2023-06",
+      "value": 54987194,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1832906
+    },
+    {
+      "period": "2023-07",
+      "value": 58046189,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1872458
+    },
+    {
+      "period": "2023-08",
+      "value": 58839358,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1898044
+    },
+    {
+      "period": "2023-09",
+      "value": 58555890,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1951863
+    },
+    {
+      "period": "2023-10",
+      "value": 61214212,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1974652
+    },
+    {
+      "period": "2023-11",
+      "value": 62840839,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2094695
+    },
+    {
+      "period": "2023-12",
+      "value": 67308154,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2171231
+    },
+    {
+      "period": "2024-01",
+      "value": 62741676,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2023925
+    },
+    {
+      "period": "2024-02",
+      "value": 54529739,
+      "days": 29,
+      "measure": "published-total",
+      "averageDaily": 1880336
+    },
+    {
+      "period": "2024-03",
+      "value": 64628305,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2084784
+    },
+    {
+      "period": "2024-04",
+      "value": 59431226,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1981041
+    },
+    {
+      "period": "2024-05",
+      "value": 64106287,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2067945
+    },
+    {
+      "period": "2024-06",
+      "value": 58744279,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 1958143
+    },
+    {
+      "period": "2024-07",
+      "value": 58844774,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1898219
+    },
+    {
+      "period": "2024-08",
+      "value": 62505962,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2016321
+    },
+    {
+      "period": "2024-09",
+      "value": 60163650,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2005455
+    },
+    {
+      "period": "2024-10",
+      "value": 60120337,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1939366
+    },
+    {
+      "period": "2024-11",
+      "value": 65614980,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2187166
+    },
+    {
+      "period": "2024-12",
+      "value": 70393296,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2270751
+    },
+    {
+      "period": "2025-01",
+      "value": 60053435,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 1937208
+    },
+    {
+      "period": "2025-02",
+      "value": 59028861,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 2108174
+    },
+    {
+      "period": "2025-03",
+      "value": 66362946,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2140740
+    },
+    {
+      "period": "2025-04",
+      "value": 62931862,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2097729
+    },
+    {
+      "period": "2025-05",
+      "value": 64083919,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2067223
+    },
+    {
+      "period": "2025-06",
+      "value": 61626094,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2054203
+    },
+    {
+      "period": "2025-07",
+      "value": 64066879,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2066674
+    },
+    {
+      "period": "2025-08",
+      "value": 64835018,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2091452
+    },
+    {
+      "period": "2025-09",
+      "value": 63140722,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2104691
+    },
+    {
+      "period": "2025-10",
+      "value": 64220299,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2071623
+    },
+    {
+      "period": "2025-11",
+      "value": 66719414,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2223980
+    },
+    {
+      "period": "2025-12",
+      "value": 70051219,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2259717
+    },
+    {
+      "period": "2026-01",
+      "value": 65425847,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2110511
+    },
+    {
+      "period": "2026-02",
+      "value": 53812781,
+      "days": 28,
+      "measure": "published-total",
+      "averageDaily": 1921885
+    },
+    {
+      "period": "2026-03",
+      "value": 68576347,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2212140
+    },
+    {
+      "period": "2026-04",
+      "value": 63594355,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2119812
+    },
+    {
+      "period": "2026-05",
+      "value": 66445712,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2143410
+    },
+    {
+      "period": "2026-06",
+      "value": 62471614,
+      "days": 30,
+      "measure": "published-total",
+      "averageDaily": 2082387
+    },
+    {
+      "period": "2026-07",
+      "value": 63465508,
+      "days": 31,
+      "measure": "published-total",
+      "averageDaily": 2047274
+    }
+  ],
+  "indexMismatches": [
+    {
+      "period": "2011-01",
+      "url": "https://web.metro.taipei/RidershipCounts/E/10001e.htm",
+      "reported": "2011-02"
+    },
+    {
+      "period": "2004-09",
+      "url": "https://web.metro.taipei/RidershipCounts/E/9309e.htm",
+      "reported": "2004-08"
+    },
+    {
+      "period": "2002-09",
+      "url": "https://web.metro.taipei/RidershipCounts/E/9109e.htm",
+      "reported": "2002-92"
+    }
+  ],
+  "headingMismatches": [
+    {
+      "period": "2026-01",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11501e.htm",
+      "reported": "January-2025"
+    },
+    {
+      "period": "2026-02",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11502e.htm",
+      "reported": "February-2025"
+    },
+    {
+      "period": "2026-03",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11503e.htm",
+      "reported": "March-2025"
+    },
+    {
+      "period": "2026-04",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11504e.htm",
+      "reported": "April-2025"
+    },
+    {
+      "period": "2026-05",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11505e.htm",
+      "reported": "May-2025"
+    },
+    {
+      "period": "2026-06",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11506e.htm",
+      "reported": "June-2025"
+    },
+    {
+      "period": "2026-07",
+      "url": "https://web.metro.taipei/RidershipCounts/E/11507e.htm",
+      "reported": "July-2025"
+    },
+    {
+      "period": "2001-06",
+      "url": "https://web.metro.taipei/RidershipCounts/E/9006e.htm",
+      "reported": "June-2000"
+    },
+    {
+      "period": "2001-10",
+      "url": "https://web.metro.taipei/RidershipCounts/E/9010e.htm",
+      "reported": "October-2000"
+    }
+  ],
+  "failures": []
+}

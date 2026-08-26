@@ -1,4 +1,5 @@
 import trtcDocument from '@/data/ridership/trtc-station.json'
+import trtcCrossSystemDocument from '@/data/ridership/trtc-cross-system.json'
 import tymcDocument from '@/data/ridership/tymc-station.json'
 import ntmcDocument from '@/data/ridership/ntmc-system.json'
 import type { Station } from '@/lib/stations'
@@ -53,7 +54,13 @@ type RidershipDocument = {
   network: NetworkRecord[]
 }
 
+type CrossSystemDocument = {
+  source: RidershipDocument['source']
+  network: NetworkRecord[]
+}
+
 const TRTC = trtcDocument as RidershipDocument
+const TRTC_CROSS_SYSTEM = trtcCrossSystemDocument as CrossSystemDocument
 const TYMC = tymcDocument as RidershipDocument
 const NTMC = ntmcDocument as RidershipDocument
 
@@ -90,6 +97,11 @@ export type NetworkRidership = {
   label: string
   series: RidershipPoint[]
   source: RidershipSource
+  alternate?: {
+    label: string
+    series: RidershipPoint[]
+    source: RidershipSource
+  }
 }
 
 function normalized(value: string): string {
@@ -190,7 +202,13 @@ export function getLineRidership(line: string, operator?: string): LineRidership
 
 export function getNetworkRidership(): NetworkRidership[] {
   return [
-    { operator: 'TRTC', label: 'Taipei Metro', series: TRTC.network, source: TRTC.source },
+    {
+      operator: 'TRTC',
+      label: 'Taipei Metro',
+      series: TRTC.network,
+      source: TRTC.source,
+      alternate: { label: 'TRTC cross-system', series: TRTC_CROSS_SYSTEM.network, source: TRTC_CROSS_SYSTEM.source },
+    },
     { operator: 'NTMC', label: 'New Taipei Metro', series: NTMC.network, source: NTMC.source },
     { operator: 'TYMC', label: 'Taoyuan Metro', series: TYMC.network, source: TYMC.source },
   ]

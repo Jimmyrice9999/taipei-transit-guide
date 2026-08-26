@@ -18788,3 +18788,48 @@ and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
 and 119 PDFs. Station A1, Airport MRT line and network renders were inspected
 at 320/1440. Generated audits, screenshots and PDFs were restored; `probes/`
 remains untracked.
+
+## Run 182 - import TRTC cross-system ridership history (2026-08-26)
+
+### Sourced
+
+Fetched the full TRTC Ridership Counts index:
+`https://english.metro.taipei/cp.aspx?n=C702FF0562802D53`. It exposes 365
+official cross-system HTML reports from March 1996 through July 2026; all 365
+returned successfully and were parsed. The new data layer preserves each
+published monthly total, daily-row count, source URL, and retrieval date as a
+separate series from station entry-plus-exit movement. The network page now
+shows both the current station-derived series and the longer cross-system
+chart/table without merging them.
+
+### TBC and checked failures
+
+No linked cross-system report failed retrieval or parsing. This unit keeps line
+totals TBC: TRTC's cross-system pages publish a network series, not a line
+allocation that can be safely inferred for individual lines.
+
+### Contradicted the corpus
+
+The earlier research shorthand said the cross-system archive ran from 1996 and
+2001 onward. The full index actually exposes every month from 1997 through
+2025, plus January-July 2026, and the committed layer now imports all 365
+reports. The previous station-only gap is closed without conflating scopes.
+
+### Conflicts found
+
+Three index labels disagree with their ROC-style URL codes: 2011.02 versus
+`10001e.htm` (2011.01), 2004.08 versus `9309e.htm` (2004.09), and 2002.92
+versus `9109e.htm` (2002.09). Nine HTML headings are stale: seven 2026 pages
+say January-July 2025, and two 2001 pages say June/October 2000. The importer
+uses the URL code for canonical periods and records both mismatch sets.
+
+### Gates
+
+`cite` clean (1,670 content files; 7,266 citations); `research` 157 files/666
+checked failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build compiled
+and passed its 2,775 Han-subset checks; unit 234/234; a11y 1,877 pages with no
+errors or warnings. Browser verification: reflow, painted-box, keyboard/tree
+and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
+and 119 PDFs. Network renders were inspected at 320/1440; the long table stayed
+contained and readable. Generated audits, screenshots and PDFs were restored;
+`probes/` remains untracked.

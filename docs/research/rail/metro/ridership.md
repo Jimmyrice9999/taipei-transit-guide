@@ -33,6 +33,14 @@ High confidence: the full English index was fetched and every dated ODS file in
 the committed range was downloaded and parsed locally. Original wording:
 `Station ridership statistics have been collected since 2015.`
 
+The same full TRTC index exposes 365 cross-system HTML reports: March-December
+1996, every month from 1997 through 2025, and January-July 2026. All 365
+official pages were fetched and parsed locally. The data layer keeps their
+published monthly total and count of dated daily rows in a separate network
+series; it is not added to or substituted for station movement. Source: TRTC,
+*Ridership Counts*, primary, High confidence: every linked cross-system page
+returned successfully. Original wording: `Cross-system ridership statistics`.
+
 The TYMC statistics archive was checked through its full pagination (`statistics.html?page=2`
 through `page=5`). The fetched pages expose station PDFs from March 2025 through
 July 2026; the importer now downloads and parses 17 monthly station reports for
@@ -65,10 +73,10 @@ guessed URL.
   confidence. Original wording: “Tickets not passed through the gates, such as
   single-journey tickets for cyclist, are not included in the station
   statistics, but only in the cross-network passenger counts.”
-- **TRTC publishes a longer cross-system monthly series.** The same index lists
-  monthly links from 1996 (March–December) and 2001 onward, with the years and
-  months shown on the fetched page. Source: TRTC, *Ridership Counts*, primary,
-  High confidence. Original wording: “Cross-system ridership statistics”.
+- **TRTC publishes a longer cross-system monthly series.** The full index lists 365 monthly links from March-December 1996 through July 2026, and the committed data layer fetches every linked HTML report.
+  It covers every month from 1997 through 2025 and January-July 2026. Source:
+  TRTC, *Ridership Counts*, primary, High confidence: the full index and every
+  linked HTML report were fetched. Original wording: “Cross-system ridership statistics”.
 - **The TRTC API catalogue describes a daily station dataset and an hourly
   extension.** Its entry says `臺北捷運各站進出量統計` is daily station entry/exit
   volume, and that hourly station entry/exit volume is provided from ROC 104
@@ -197,7 +205,14 @@ guessed URL.
    station movement for August 2025, while the January–July 2025 PDFs support
    only their published whole-system and line totals. Both measures remain in
    the network trend; the PDF periods show `TBC` for entry and exit and do not
-   create station records.
+ create station records.
+7. **TRTC cross-system date labels.** The index labels three links with dates
+   that do not match the ROC-style URL code: `10001e.htm` is labelled 2011.02
+   although its code maps to 2011.01, `9309e.htm` is labelled 2004.08 although
+   its code maps to 2004.09, and `9109e.htm` is labelled 2002.92 although its
+   code maps to 2002.09. The HTML heading is also stale on seven 2026 pages
+   (January-July 2025) and two 2001 pages (June and October 2000). The importer
+   uses the URL code as the period and preserves both mismatch lists.
 
 ## Checked and failed
 
@@ -229,9 +244,9 @@ guessed URL.
 ## Stated gaps
 
 - The current committed TRTC station pull covers January 2015–July 2026. The
-  operator also publishes a separate cross-system series back to March 1996;
-  those network records are not interchangeable with station entry/exit rows
-  and remain a separate historical expansion.
+  separate cross-system pull now covers 365 reports from March 1996 through
+  July 2026. Those network records are not interchangeable with station
+  entry/exit rows and remain a separate historical series.
 - The current committed NTMC network and line pull covers January 2025–July
   2026. The station trend covers August 2025–July 2026; the older PDFs have no
   station rows. The New Taipei Transportation Bureau statistics system remains

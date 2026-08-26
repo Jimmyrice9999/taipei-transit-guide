@@ -211,6 +211,26 @@ export function NetworkRidershipPanel() {
             <RidershipChart id={id} label={network.label} series={network.series} />
             <RidershipTable id={`${id}-table`} series={network.series} network />
             <SourceNote source={network.source} />
+            {network.alternate && (
+              <section className="network-ridership-alternate" aria-labelledby={`${id}-alternate-heading`}>
+                <h4 id={`${id}-alternate-heading`}>{network.alternate.label}</h4>
+                <p>
+                  TRTC publishes this longer cross-system total separately from station movement;
+                  it is not merged into the station-derived network series above.
+                </p>
+                <RidershipChart
+                  id={`${id}-alternate`}
+                  label={network.alternate.label}
+                  series={network.alternate.series}
+                />
+                <RidershipTable
+                  id={`${id}-alternate-table`}
+                  series={network.alternate.series}
+                  network
+                />
+                <SourceNote source={network.alternate.source} />
+              </section>
+            )}
           </section>
         )
       })}
