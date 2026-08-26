@@ -29,3 +29,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Dajia–Jianan Double Track](/rail/history/dajia-jianan-double-track/)
 - [The Taiwan Railways Dongshan–Su'aoxin Double Track](/rail/history/dongshan-su-aoxin-double-track/)
 - [The Taiwan Railways Sijiaoting–Ruifang Double Track](/rail/history/sijiaoting-ruifang-double-track/)
+- [The Taiwan Railways Mudan–Shuangxi Double Track](/rail/history/mudan-shuangxi-double-track/)

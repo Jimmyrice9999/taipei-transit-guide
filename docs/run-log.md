@@ -19959,3 +19959,50 @@ across 2,813 pages with no broken links, unresolved fragments or orphan pages;
 search 1,906 entries; nav 19/19; unit 234/234; browser/accessibility checks
 clean; CVD audit reports zero genuine WCAG contrast failures. Generated audit
 reports were restored after verification; `probes/` remains untracked.
+
+## Run 205 - add TRA Mudan–Shuangxi double-track history (2026-08-26)
+
+### Sourced
+
+Added Mudan–Shuangxi as the next TRA construction-history subject. The complete
+operator construction-history PDF lists row 53 as 3.1 km, with TRA as
+constructor, construction in 1974, operation from 1978 and 添築雙線 (extended
+to be double-tracked). The current operator HTML independently lists the same
+historical values in row 30. Current operator station pages identify Mudan as
+7320 and Shuangxi as 7310. The committed TDX station-of-line pull places them
+consecutively on EL, with source-sequence distance fields of 19.5 km and 22.9
+km, a current endpoint difference of 3.4 km.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract or completion certificate,
+historical engineering chainage, surveyed 3.1 km boundary and current as-built
+track count remain TBC. The 3.4 km TDX endpoint-field difference is retained as
+a current data-layer measure, not substituted for the historical construction
+scope.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The PDF and current HTML agree
+on the historical values; the current TDX interval is kept as a separate
+measurement rather than being used to rewrite the operator's historical record.
+
+### Conflicts found
+
+No numerical disagreement was found between the full operator PDF and current
+operator HTML: both report 3.1 km, TRA, 1974 construction, 1978 operation start
+and double-track work. Their row numbers differ (53 versus 30). The historical
+operator scope is 3.1 km, while current TDX endpoint fields differ by 3.4 km;
+these presentation and measurement boundaries are retained rather than
+averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,690 content files; 7,383 citations); `research` clean (177
+files; 747 checked failures); claims 24,705 sourced/4,494 TBC/0 ASSERTED;
+build generated 2,667 static pages and postbuild checked 2,815 pages; 471,186
+internal links checked across 2,815 pages with no broken links, unresolved
+fragments or orphan pages; search 1,907 entries; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD audit reports zero genuine WCAG
+contrast failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
