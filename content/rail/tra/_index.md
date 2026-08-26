@@ -68,6 +68,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 1194 as Liujia (六家)."
+  - id: tra-station-taoyuan
+    title: "Taoyuan Station information"
+    titleOriginal: "桃園車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1080"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 1080 as Taoyuan (桃園)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -90,3 +99,4 @@ The [Songshan–Nangang underground record](/rail/history/songshan-nangang-under
 The [Keelung Station track-removal records](/rail/history/keelung-station-track-removal/) retain the operator's separate 2.9 km and 2.0 km Keelung Station rows, each with a distinct 27 April 2010 removal scope, beside the current Keelung 0900 TDX record.[^tra-construction-history][^tra-history][^tdx-tra-station][^tdx-tra-line]
 
 The [Zhuzhong–Liujia double-track record](/rail/history/zhuzhong-liujia-double-track/) retains the operator's 3.1 km row 99 and its 2005/2011 year fields beside the current two-member LJ TDX record.[^tra-construction-history][^tra-station-zhuzhong][^tra-station-liujia][^tdx-tra-line]
+The [Tao-yuan Station track-removal record](/rail/history/taoyuan-station-track-removal/) retains row 100's 3.1 km and 1969/1969 fields beside its May 2012 removal explanation and the current Taoyuan 1080 TDX record.[^tra-construction-history][^tra-station-taoyuan][^tdx-tra-line]

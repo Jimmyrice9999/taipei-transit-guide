@@ -20702,3 +20702,53 @@ fragments or orphan pages; search 1,918; nav 19/19; unit 234/234; browser and
 accessibility checks clean; CVD audit reports zero genuine WCAG contrast
 failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 218 - add TRA Tao-yuan Station track-removal record (2026-08-26)
+
+### Sourced
+
+Added row 100 from the complete operator construction-history PDF. It records
+Tao-yuan Station at 3.1 km, Taiwan Railways Administration as constructor,
+1969 in both the construction-year and operation-start fields, and the
+explanation that tracks 5–11, the loading line and the flour line in Tao-yuan
+Station were dismantled in May 2012:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator page identifies station 1080 Taoyuan:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/1080`.
+The committed TDX station and StationOfLine pulls retain current station 1080;
+TDX places it at WL source sequence 20 with supplied travelled distance 57.6 km,
+between Fengming 1075 and Neili 1090:
+`https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0`.
+
+### TBC and checked failures
+
+The exact day in May 2012, the surveyed boundary of the historical 3.1 km
+value, station-yard plan, removal sequence, asset disposition, and a source-
+defined mapping to TDX's 57.6 km WL field remain TBC. The current operator's
+route-history HTML was fetched and does not repeat row 100; that is recorded as
+a source-coverage difference, not a reason to remove the PDF record.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The new station-yard record is kept
+beside, rather than merged into, the current Taoyuan 1080 station and TDX WL
+record.
+
+### Conflicts found
+
+No direct numeric contradiction was found. The historical 3.1 km and current
+TDX 57.6 km values belong to different records and stated purposes, so they are
+not averaged, added or treated as competing measurements of one boundary. The
+current operator HTML omission is retained as a coverage difference.
+
+### Gates
+
+`cite` clean (1,702 content files; 7,458 citations); `research` clean (189
+files; 799 checked failures); claims 24,915 sourced/4,495 TBC/0 ASSERTED; build
+generated 2,691 static pages and postbuild checked 2,839 pages; 474,017
+internal links checked across 2,839 pages with no broken links, unresolved
+fragments or orphan pages; search 1,919; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
