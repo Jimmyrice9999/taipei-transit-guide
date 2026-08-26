@@ -2,24 +2,75 @@
 
 ## Active handoff - 27 August 2026
 
-Run 225 adds the next verified TRA subject, the Chishang–Haiduan single-track
-record. The complete operator construction-history PDF records row 108 at
-0.3 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
-Office as constructor, 2012 and 2013 year fields, and a Hualien–Taitung
-electrification explanation. The current operator pages identify Chishang 6070
-and Haiduan 6060; current TDX exposes an adjacent EL interval of 5.7 km,
-kept separate from the historical project value because the sources do not
-establish a common boundary.
+Run 226 adds the next verified TRA subject, the Haiduan–Ruiyuan single-track
+record. The complete operator construction-history PDF records row 109 at
+4.6 km, with the Railway Reconstruction Bureau's Eastern Region Engineering
+Office as constructor, 2010 and 2013 year fields, and a Hualien–Taitung
+electrification explanation. The current operator pages identify Haiduan 6060
+and Ruiyuan 6030; current TDX exposes an EL interval of 16.7 km with Guanshan
+and Ruihe between the endpoints, kept separate from the historical project
+value because the sources do not establish a common boundary.
 
-Gates: cite 1,709/7,513; research 196/833; claims 25,065 sourced/4,495
-TBC/0 ASSERTED; build 2,705 static pages and 2,853 postbuild pages; links
-475,671 across 2,853 pages; links audit 1,915 pages/743 destinations; search
-1,926; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
+Gates: cite 1,710/7,520; research 197/837; claims 25,086 sourced/4,495
+TBC/0 ASSERTED; build 2,707 static pages and 2,855 postbuild pages; links
+475,907 across 2,855 pages; links audit 1,916 pages/744 destinations; search
+1,927; nav 19/19; unit 234/234; accessibility checks clean; CVD zero genuine
 contrast failures. Generated audits were restored after verification;
 `probes/` remains untracked.
 
 Next: continue the next verified TRA construction or historical route subject
-(row 109, Haiduan–Ruiyuan) before broader fleet/systems work.
+(row 110, Shanli–Taitung) before broader fleet/systems work.
+
+## Run 226 - add TRA Haiduan–Ruiyuan single-track record (2026-08-27)
+
+### Sourced
+
+Added row 109 from the complete operator construction-history PDF. It records
+Haiduan–Ruiyuan at 4.6 km as a single-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor, 2010
+in the construction-year field, 2013 in the operation-start year field, and
+Hualien–Taitung railway electrification engineering as the explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Haiduan 6060 and Ruiyuan 6030. The
+committed TDX EL record places them at source sequences 57 and 60, with
+supplied travelled-distance fields 284.1 km and 300.8 km, a difference of
+16.7 km; Guanshan and Ruihe are the two current members between them:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6060`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6030`.
+
+### TBC and checked failures
+
+The surveyed 4.6 km boundary, exact construction/electrification/service days,
+contract and completion records, work scope, and source-defined mapping to the
+current 16.7 km TDX interval remain TBC. The current operator construction-history
+HTML was fetched and does not repeat row 109; that is retained as a
+coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical single-track record is
+kept beside, rather than merged into, the current Haiduan, Ruiyuan and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 4.6 km, while subtracting the current TDX EL endpoint
+fields gives 16.7 km. Guanshan and Ruihe intervene in the current ordered
+record, and the sources do not establish a common distance boundary or
+measurement purpose, so the values are reported separately and are not
+averaged.
+
+### Gates
+
+`cite` clean (1,710 content files; 7,520 citations); `research` clean (197
+files; 837 checked failures); claims 25,086 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,707 static pages and postbuild checked 2,855 pages; 475,907
+internal links checked across 2,855 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,916 pages and 744 linkable
+destinations; search 1,927; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
 
 ## Run 225 - add TRA Chishang–Haiduan single-track record (2026-08-27)
 
