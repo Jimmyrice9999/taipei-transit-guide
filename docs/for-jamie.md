@@ -2,18 +2,18 @@
 
 ## Active handoff - 26 August 2026
 
-Run 215 adds the next verified TRA subject, the Songshan–Nangang underground
-record. The complete operator construction-history PDF records 7.7 km, names
-the Railway Reconstruction Bureau, and aligns the project with construction
-in 1998 and operation from 2008 as railway underground. The current operator
-station pages identify 0990 Songshan and 0980 Nangang; current TDX WL fields
-place them at one-based positions 10 and 9 with a separate 2.8 km endpoint
-interval. The historical boundary, tunnel portals, detailed works, and reason
-for the 7.7 km versus 2.8 km difference remain TBC.
+Run 216 adds the next verified TRA subject, the paired Keelung Station
+track-removal records. The complete operator construction-history PDF records
+row 97 at 2.9 km from 1978 for tracks 10–16 and row 98 at 2.0 km from 1969
+for tracks 3–5 plus an enginehouse line and turntable line; both explanations
+record removal on 27 April 2010. Current operator and TDX data identify
+Keelung as station 0900 and current WL position 1 with travelled distance
+0.0 km. Whether the historical distances are nested, overlapping or separate
+accounting boundaries remains TBC.
 
-Gates: cite 1,699/7,440; research 186/785; claims 24,860 sourced/4,495
+Gates: cite 1,700/7,445; research 187/789; claims 24,877 sourced/4,495
 TBC/0 ASSERTED; build 2,685 static pages and 2,833 postbuild pages; links
-473,312 across 2,833 pages; search 1,916; nav 19/19; unit 234/234;
+473,546 across 2,835 pages; search 1,917; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD zero genuine contrast failures.
 Generated audits were restored after verification; `probes/` remains untracked.
 

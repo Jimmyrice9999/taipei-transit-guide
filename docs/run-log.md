@@ -20595,3 +20595,58 @@ fragments or orphan pages; search 1,916; nav 19/19; unit 234/234; browser and
 accessibility checks clean; CVD audit reports zero genuine WCAG contrast
 failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 216 - add TRA Keelung Station track-removal records (2026-08-26)
+
+### Sourced
+
+Added the paired Keelung Station records from the complete operator
+construction-history PDF. Row 97 records 2.9 km, with TRA as constructor; its
+aligned chronology gives 1978 and 2010 and says tracks 10–16 inside Keelung
+Station were dismantled on 27 April 2010. Row 98 records a separate 2.0 km
+TRA entry; its aligned chronology gives 1969 and 2010 and says tracks 3–5, one
+enginehouse line and the turntable line were dismantled on the same date:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator HTML history table does not repeat either historical
+Keelung Station row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The current operator station page identifies 0900 Keelung:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/0900`.
+The committed TDX WL pull places current Keelung at source sequence 0 and
+travelled distance 0.0 km, shown as one-based position 1. These current fields
+are kept separate from the historical yard records.
+
+### TBC and checked failures
+
+The surveyed boundary for either row, a mapped asset register, contract and
+completion records, detailed Keelung yard plan, post-removal disposition and
+the relationship between the 2.9 km and 2.0 km distances remain TBC. The
+operator's 99-year chronology page was also checked and did not independently
+expand the PDF's 27 April 2010 explanation.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The two records are new historical
+subjects kept beside, rather than merged into, the current Keelung 0900
+station page and TDX WL station record.
+
+### Conflicts found
+
+The historical PDF gives two different distances under the same Keelung
+Station name, with different construction-year fields and different removal
+scopes. The checked source does not say whether the distances are nested,
+overlapping or separate accounting boundaries, so they are not added into a
+4.9 km total or averaged. The current operator HTML omits both rows, which is
+retained as a source-coverage difference.
+
+### Gates
+
+`cite` clean (1,700 content files; 7,445 citations); `research` clean (187
+files; 789 checked failures); claims 24,877 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,687 static pages and postbuild checked 2,835 pages; 473,546
+internal links checked across 2,835 pages with no broken links, unresolved
+fragments or orphan pages; search 1,917; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
