@@ -31,3 +31,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Sijiaoting–Ruifang Double Track](/rail/history/sijiaoting-ruifang-double-track/)
 - [The Taiwan Railways Mudan–Shuangxi Double Track](/rail/history/mudan-shuangxi-double-track/)
 - [The Taiwan Railways Hualien–Hualien Port Records](/rail/history/hualien-hualien-port/)
+- [The Taiwan Railways Hualien–Heping Construction Record](/rail/history/hualien-heping/)

@@ -2,19 +2,18 @@
 
 ## Active handoff - 26 August 2026
 
-Run 206 adds the next verified TRA subject, Hualien–Hualien Port. The complete
-operator construction-history PDF preserves two records: 4.0 km attributed to
-the Taiwan Railway Bureau before Retrocession, and 5.8 km for the later TRA
-record, with construction in 1975 and operation from 1979. The operator's 2005
-statistical report separately records a 5.8 km Hualien–Hualien Port operating
-section on the Huatung Line. Current TDX data identifies Hualien as 7000 and
-position 38 on EL, but supplies no named Hualien Port passenger-station code.
-The exact relationship between the two historical values and current physical
-and service boundaries remains TBC.
+Run 207 adds the next verified TRA subject, Hualien–Heping. The complete
+operator construction-history PDF and current HTML table agree on 39.4 km,
+construction in 1978 and operation from 1979, but disagree on the constructor:
+the PDF says TRA while the current HTML says Taiwan Provincial Government.
+Current TDX data identifies Heping as 7060 and Hualien as 7000; its supplied
+endpoint fields differ by 39.6 km, retained separately from the historical
+39.4 km construction record. The reason for the constructor disagreement and
+the engineering boundary remain TBC.
 
-Gates: cite 1,691/7,390; research 178/751; claims 24,725 sourced/4,494 TBC/0
-ASSERTED; build 2,817 postbuild pages (2,669 static); links 471,423 across
-2,817 pages; search 1,908; nav 19/19; unit 234/234; browser/accessibility
+Gates: cite 1,692/7,396; research 179/755; claims 24,741 sourced/4,494 TBC/0
+ASSERTED; build 2,819 postbuild pages (2,671 static); links 471,659 across
+2,819 pages; search 1,909; nav 19/19; unit 234/234; browser/accessibility
 checks clean; CVD zero genuine contrast failures.
 Generated audits will be restored after verification; `probes/` remains
 untracked.
