@@ -19004,3 +19004,68 @@ curated keyboard/tree probes clean, zero axe violations across 1,879 pages,
 820 screenshots and the full print set. The article template was visually
 inspected at 320/1440; generated audit JSON, screenshots and PDFs were restored
 and `probes/` remains untracked.
+
+## Run 186 - add TRA Taipei–Danshui history (2026-08-26)
+
+### Sourced
+
+Added the former Taiwan Railways Taipei–Danshui alignment as the fourth closed
+TRA history subject, kept separate from the current MRT Tamsui Line. The full
+operator construction-history table gives a 21.2 km route, construction in
+1900, operation from 1901 and dismantling from 8 May 1989:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The National Archives Administration's full HTML research article gives 25
+August 1901 as the opening, an initial materials-transport role, operation
+through 1988 and continuation in MRT form from 1997:
+`https://www.archives.gov.tw/tw/arctw/76-6555.html`.
+DORTS's full current route page says the MRT follows the original Beidan
+railway right-of-way and gives approximately 23.8 km including the 1.2 km
+Beitou–Xinbeitou branch, 22 stations and one main depot:
+`https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A`.
+Its full technical schedule gives a separate 22.8 km MRT row, built 1988–1997
+and opened 25 December 1997:
+`https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page170.html`.
+The full Control Yuan report lists the Tamsui Line and Xinbeitou branch among
+former TRA rights-of-way converted into MRT systems:
+`https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/44930`.
+Taipei's full heritage page records the old Xinbeitou station's 1988 removal
+to Changhua and its 2016–2017 return and reconstruction:
+`https://culture.gov.taipei/cp.aspx?n=8A525F479E319D08&s=E2853B3322924CD2`.
+Content body: 435 tokens; research report: 944 tokens.
+
+### TBC and checked failures
+
+The National Archives research PDF on the line's five sidings timed out on a
+full fetch and is recorded as checked-and-failed; its detailed siding claims
+were not used. Exact last train date, legal closure instrument, complete former
+station sequence, gauge chronology and the track-by-track boundary between
+reused railway land and rebuilt MRT remain TBC. The searched operator, Archives,
+DORTS, Control Yuan and heritage sources did not supply those records.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research correctly left
+the Taipei–Danshui closed-line, former-station and gauge questions in the
+architecture gaps; this run turns that lead into a sourced route-history page
+without treating the current MRT as the same live TRA identity.
+
+### Conflicts found
+
+The operator's historical route entry is 21.2 km. DORTS publishes 22.8 km for
+the MRT schedule and approximately 23.8 km for the current route including the
+Beitou–Xinbeitou branch; the page keeps all three scopes rather than selecting
+one. The Archives and heritage sources place the operating-era boundary in 1988,
+while the operator records physical dismantling from 8 May 1989; these are kept
+as separate service and dismantling milestones.
+
+### Gates
+
+`cite` clean (1,674 content files; 7,289 citations); `research` clean (161
+files; 680 checked failures); `claims` 24,459 sourced/4,490 TBC/0 ASSERTED;
+build completed with 2,783 Han-subset checks; search index 1,891 entries;
+unit 234/234; a11y 1,881 pages with no errors or warnings. Browser verification
+completed cleanly: 1,880 pages reflowed at 640/320, no painted-box overflow,
+curated keyboard/tree probes clean, zero axe violations across 1,880 pages,
+820 screenshots and the full print set. The article template was visually
+inspected at 320/1440; generated audit JSON, screenshots and PDFs were restored
+and `probes/` remains untracked.
