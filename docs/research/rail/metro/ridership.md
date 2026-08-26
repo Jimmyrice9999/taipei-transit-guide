@@ -33,6 +33,18 @@ High confidence: the full English index was fetched and every dated ODS file in
 the committed range was downloaded and parsed locally. Original wording:
 `Station ridership statistics have been collected since 2015.`
 
+The TYMC statistics archive was checked through its full pagination (`statistics.html?page=2`
+through `page=5`). The fetched pages expose station PDFs from March 2025 through
+July 2026; the importer now downloads and parses 17 monthly station reports for
+all 22 Airport MRT stations. The full page and PDF URLs are official:
+`https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html?page=5`
+and the March–June 2025 station files
+`20250425121109_0.pdf`, `20250521111652_0.pdf`, `20250612115214_0.pdf` and
+`20250710094646_0.pdf` under
+`https://www.tymetro.com.tw/tymetro-new/upload/file/`. January–February 2025
+were not present in the fetched archive pages and remain a gap rather than a
+guessed URL.
+
 ## What is established
 
 ### Taipei Rapid Transit Corporation (TRTC)
@@ -102,11 +114,14 @@ the committed range was downloaded and parsed locally. Original wording:
 
 ### Taoyuan Metro Corporation (TYMC)
 
-- **TYMC publishes a current per-station monthly PDF.** The full statistics
-  page lists `115年7月各站旅運量統計(pdf)`, dated 2026-08-19, and the linked
-  one-page PDF contains station-level `入站` and `出站` counts for A1–A22,
-  plus group-ticket and other categories. Source: TYMC, *統計資料*, primary,
-  High confidence. Original wording: `115年7月各站旅運量統計` and `入站 出站`.
+- **TYMC publishes monthly per-station PDFs.** Its paginated statistics pages
+  list station reports from `114年3月各站旅運量統計` through
+  `115年7月各站旅運量統計`; the committed pull contains 17 monthly PDFs for
+  all 22 Airport MRT stations. Each one-page PDF contains station-level `入站`
+  and `出站` counts plus group-ticket and other categories. Source: TYMC,
+  *統計資料*, primary, High confidence: pages 2–5 and the linked PDFs were
+  fetched in full. Original wording: `各站旅運量統計`, `入站 出站` and
+  `桃園大眾捷運股份有限公司`.
 - **TYMC also publishes a daily whole-system monthly PDF.** The linked
   `115年7月全系統旅運量統計` PDF contains daily totals, a monthly total of
   3,976,430 and a daily average of 128,272. Source: TYMC, *115年7月全系統
@@ -204,6 +219,12 @@ the committed range was downloaded and parsed locally. Original wording:
   cache misses when opened there. Checked 26 August 2026. The full binary files
   were nevertheless fetched from the operator’s download URLs and parsed locally;
   the data layer does not rely on the failed browser render.
+- **TYMC archive pagination beyond page 5** — the text browser rejected the
+  official `statistics.html?page=6` and `page=7` URLs as unsafe to open, and
+  direct opens of the older PDF URLs also failed its safe-open check. Checked 26
+  August 2026. Pages 2–5 were fetched in full and their official PDF download
+  URLs were fetched as binary files locally; January–February 2025 are recorded
+  as not found in the pages successfully checked, not as nonexistent.
 
 ## Stated gaps
 
@@ -215,6 +236,10 @@ the committed range was downloaded and parsed locally. Original wording:
   2026. The station trend covers August 2025–July 2026; the older PDFs have no
   station rows. The New Taipei Transportation Bureau statistics system remains
   to be fetched before claiming an older station trend.
+- The current committed TYMC station and network pull covers March 2025–July
+  2026, 17 monthly PDFs and 22 stations. January–February 2025 were not found
+  in the successfully fetched official pagination; an older report or a stable
+  archive link would settle that gap.
 - MOTC and TDX provide operator/line or structural data, not a substitute for
   each operator’s station-level historical series.
 - The source pages publish different measures (station counts, entry/exit,

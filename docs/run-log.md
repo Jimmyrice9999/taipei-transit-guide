@@ -18742,3 +18742,49 @@ and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
 and 119 PDFs. Station K01, Wenhu Line and network renders were inspected at
 320/1440. Generated audits, screenshots and PDFs were restored; `probes/`
 remains untracked.
+
+## Run 181 - extend TYMC ridership history (2026-08-26)
+
+### Sourced
+
+Fetched the full TYMC statistics archive at
+`https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html`,
+including pages 2 through 5. The committed importer now reads 17 official
+station reports from March 2025 through July 2026 for all 22 Airport MRT
+stations. Each report preserves station entry, exit, movement, days, the
+published network total, retrieval date, and its direct operator PDF URL.
+
+### TBC and checked failures
+
+January and February 2025 station reports were not found in the successfully
+fetched official pagination and remain TBC; no guessed URL was imported. Page
+6, page 7, and direct browser opens of older PDF URLs returned safe-open
+failures, recorded in the research file. Local binary retrieval of the
+official March-June files succeeded and their full PDF tables parsed.
+
+### Contradicted the corpus
+
+Run 180's handoff said TYMC historical ridership was still next. The archive
+now extends the committed station and network layer from July 2025 back to
+March 2025; the remaining January-February gap is explicit rather than
+silently filled.
+
+### Conflicts found
+
+TYMC station reports publish per-station entry and exit values plus movement,
+while the whole-system reports publish a network total and daily average. The
+data layer retains the station-report movement and the published network value
+as separate dimensions; it does not average or infer between the report types.
+The archive is also exposed through paginated pages rather than one complete
+index, so the successfully fetched page boundary remains part of the evidence.
+
+### Gates
+
+`cite` clean (1,670 content files; 7,266 citations); `research` 157 files/666
+checked failures; `claims` 24,398 sourced/4,488 TBC/0 ASSERTED; build compiled
+and passed its 2,775 Han-subset checks; unit 234/234; a11y 1,877 pages with no
+errors or warnings. Browser verification: reflow, painted-box, keyboard/tree
+and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
+and 119 PDFs. Station A1, Airport MRT line and network renders were inspected
+at 320/1440. Generated audits, screenshots and PDFs were restored; `probes/`
+remains untracked.

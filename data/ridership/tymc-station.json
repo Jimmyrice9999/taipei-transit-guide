@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-08-24",
+  "retrieved": "2026-08-26",
   "currentPeriod": "2026-07",
   "source": {
     "id": "tymc-station-pdf",
@@ -8,10 +8,26 @@
     "publisher": "Taoyuan Metro Corporation",
     "publisherOriginal": "桃園大眾捷運股份有限公司",
     "indexUrl": "https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html",
-    "accessed": "2026-08-24",
+    "accessed": "2026-08-26",
     "kind": "primary",
     "measure": "Station value is entry plus exit movement. The network value is the published exit total; both dimensions are retained.",
     "files": [
+      {
+        "period": "2025-03",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250425121109_0.pdf"
+      },
+      {
+        "period": "2025-04",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250521111652_0.pdf"
+      },
+      {
+        "period": "2025-05",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250612115214_0.pdf"
+      },
+      {
+        "period": "2025-06",
+        "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250710094646_0.pdf"
+      },
       {
         "period": "2025-07",
         "url": "https://www.tymetro.com.tw/tymetro-new/upload/file/20250812121118_0.pdf"
@@ -74,6 +90,34 @@
       "name": "Taipei Main Station",
       "nameZh": "台北車站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 1819668,
+          "entry": 920723,
+          "exit": 898945,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 1722320,
+          "entry": 856923,
+          "exit": 865397,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 1744888,
+          "entry": 879415,
+          "exit": 865473,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 1667982,
+          "entry": 842511,
+          "exit": 825471,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 1717076,
@@ -175,6 +219,34 @@
       "nameZh": "山鼻站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 194162,
+          "entry": 96040,
+          "exit": 98122,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 190954,
+          "entry": 94545,
+          "exit": 96409,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 197236,
+          "entry": 97556,
+          "exit": 99680,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 198412,
+          "entry": 97920,
+          "exit": 100492,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 207078,
           "entry": 102397,
@@ -274,6 +346,34 @@
       "name": "Kengkou Station",
       "nameZh": "坑口站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 70389,
+          "entry": 34729,
+          "exit": 35660,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 68141,
+          "entry": 33682,
+          "exit": 34459,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 70828,
+          "entry": 35317,
+          "exit": 35511,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 71457,
+          "entry": 35548,
+          "exit": 35909,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 74477,
@@ -375,6 +475,34 @@
       "nameZh": "機場第一航廈站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 741476,
+          "entry": 367042,
+          "exit": 374434,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 726571,
+          "entry": 368874,
+          "exit": 357697,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 738276,
+          "entry": 361488,
+          "exit": 376788,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 716458,
+          "entry": 353560,
+          "exit": 362898,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 703401,
           "entry": 346744,
@@ -474,6 +602,34 @@
       "name": "Airport Terminal 2 Station",
       "nameZh": "機場第二航廈站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 670236,
+          "entry": 360256,
+          "exit": 309980,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 656664,
+          "entry": 357756,
+          "exit": 298908,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 654918,
+          "entry": 347801,
+          "exit": 307117,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 653042,
+          "entry": 350103,
+          "exit": 302939,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 654213,
@@ -575,6 +731,34 @@
       "nameZh": "機場旅館站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 71677,
+          "entry": 34062,
+          "exit": 37615,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 69970,
+          "entry": 33431,
+          "exit": 36539,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 71048,
+          "entry": 34154,
+          "exit": 36894,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 72544,
+          "entry": 34887,
+          "exit": 37657,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 74963,
           "entry": 35766,
@@ -674,6 +858,34 @@
       "name": "Dayuan Station",
       "nameZh": "大園站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 134158,
+          "entry": 63026,
+          "exit": 71132,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 134839,
+          "entry": 63729,
+          "exit": 71110,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 137878,
+          "entry": 65209,
+          "exit": 72669,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 136466,
+          "entry": 64865,
+          "exit": 71601,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 139305,
@@ -775,6 +987,34 @@
       "nameZh": "橫山站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 22599,
+          "entry": 11122,
+          "exit": 11477,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 22292,
+          "entry": 11045,
+          "exit": 11247,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 22352,
+          "entry": 10991,
+          "exit": 11361,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 22858,
+          "entry": 11296,
+          "exit": 11562,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 23642,
           "entry": 11747,
@@ -874,6 +1114,34 @@
       "name": "Linghang Station",
       "nameZh": "領航站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 85207,
+          "entry": 44109,
+          "exit": 41098,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 87871,
+          "entry": 45529,
+          "exit": 42342,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 85218,
+          "entry": 43888,
+          "exit": 41330,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 81041,
+          "entry": 41672,
+          "exit": 39369,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 75390,
@@ -975,6 +1243,34 @@
       "nameZh": "高鐵桃園站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 662353,
+          "entry": 330833,
+          "exit": 331520,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 683945,
+          "entry": 338961,
+          "exit": 344984,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 659321,
+          "entry": 331231,
+          "exit": 328090,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 661746,
+          "entry": 332233,
+          "exit": 329513,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 674508,
           "entry": 339574,
@@ -1074,6 +1370,34 @@
       "name": "Taoyuan Sports Park Station",
       "nameZh": "桃園體育園區站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 133083,
+          "entry": 65685,
+          "exit": 67398,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 135396,
+          "entry": 66617,
+          "exit": 68779,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 132142,
+          "entry": 64441,
+          "exit": 67701,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 144347,
+          "entry": 70376,
+          "exit": 73971,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 129899,
@@ -1175,6 +1499,34 @@
       "nameZh": "三重站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 328254,
+          "entry": 161722,
+          "exit": 166532,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 314145,
+          "entry": 154475,
+          "exit": 159670,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 315348,
+          "entry": 155472,
+          "exit": 159876,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 305903,
+          "entry": 150615,
+          "exit": 155288,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 308398,
           "entry": 151730,
@@ -1274,6 +1626,34 @@
       "name": "Xingnan Station",
       "nameZh": "興南站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 17165,
+          "entry": 8629,
+          "exit": 8536,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 16041,
+          "entry": 8109,
+          "exit": 7932,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 14832,
+          "entry": 7467,
+          "exit": 7365,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 14921,
+          "entry": 7573,
+          "exit": 7348,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 15976,
@@ -1375,6 +1755,34 @@
       "nameZh": "環北站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 130094,
+          "entry": 64102,
+          "exit": 65992,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 128807,
+          "entry": 63060,
+          "exit": 65747,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 130045,
+          "entry": 64136,
+          "exit": 65909,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 130841,
+          "entry": 64403,
+          "exit": 66438,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 134881,
           "entry": 66796,
@@ -1474,6 +1882,34 @@
       "name": "Laojie River Station",
       "nameZh": "老街溪站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 225405,
+          "entry": 110045,
+          "exit": 115360,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 224380,
+          "entry": 109332,
+          "exit": 115048,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 228255,
+          "entry": 111819,
+          "exit": 116436,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 224547,
+          "entry": 109997,
+          "exit": 114550,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 222171,
@@ -1575,6 +2011,34 @@
       "nameZh": "新北產業園區站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 480483,
+          "entry": 240871,
+          "exit": 239612,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 460478,
+          "entry": 229706,
+          "exit": 230772,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 463765,
+          "entry": 233187,
+          "exit": 230578,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 468016,
+          "entry": 233868,
+          "exit": 234148,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 491554,
           "entry": 247648,
@@ -1674,6 +2138,34 @@
       "name": "Xinzhuang Fuduxin Station",
       "nameZh": "新莊副都心站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 203102,
+          "entry": 99827,
+          "exit": 103275,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 197231,
+          "entry": 97456,
+          "exit": 99775,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 203027,
+          "entry": 100269,
+          "exit": 102758,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 196271,
+          "entry": 96681,
+          "exit": 99590,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 202671,
@@ -1775,6 +2267,34 @@
       "nameZh": "泰山站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 154011,
+          "entry": 75006,
+          "exit": 79005,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 147774,
+          "entry": 72124,
+          "exit": 75650,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 146603,
+          "entry": 71828,
+          "exit": 74775,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 139336,
+          "entry": 67818,
+          "exit": 71518,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 141897,
           "entry": 69596,
@@ -1874,6 +2394,34 @@
       "name": "Taishan Guihe Station",
       "nameZh": "泰山貴和站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 174988,
+          "entry": 88162,
+          "exit": 86826,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 168204,
+          "entry": 84758,
+          "exit": 83446,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 170098,
+          "entry": 86033,
+          "exit": 84065,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 162623,
+          "entry": 81821,
+          "exit": 80802,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 166586,
@@ -1975,6 +2523,34 @@
       "nameZh": "體育大學站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 439081,
+          "entry": 220723,
+          "exit": 218358,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 409552,
+          "entry": 207022,
+          "exit": 202530,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 419349,
+          "entry": 212794,
+          "exit": 206555,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 377714,
+          "entry": 190178,
+          "exit": 187536,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 410242,
           "entry": 207250,
@@ -2074,6 +2650,34 @@
       "name": "Chang Gung Memorial Hospital Station",
       "nameZh": "長庚醫院站",
       "periods": [
+        {
+          "period": "2025-03",
+          "value": 633489,
+          "entry": 313646,
+          "exit": 319843,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 604815,
+          "entry": 299924,
+          "exit": 304891,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 613755,
+          "entry": 305562,
+          "exit": 308193,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 605649,
+          "entry": 299460,
+          "exit": 306189,
+          "days": 30
+        },
         {
           "period": "2025-07",
           "value": 642936,
@@ -2175,6 +2779,34 @@
       "nameZh": "林口站",
       "periods": [
         {
+          "period": "2025-03",
+          "value": 396363,
+          "entry": 191340,
+          "exit": 205023,
+          "days": 31
+        },
+        {
+          "period": "2025-04",
+          "value": 378507,
+          "entry": 182201,
+          "exit": 196306,
+          "days": 30
+        },
+        {
+          "period": "2025-05",
+          "value": 377365,
+          "entry": 182661,
+          "exit": 194704,
+          "days": 31
+        },
+        {
+          "period": "2025-06",
+          "value": 369465,
+          "entry": 177954,
+          "exit": 191511,
+          "days": 30
+        },
+        {
           "period": "2025-07",
           "value": 391168,
           "entry": 189769,
@@ -2269,6 +2901,34 @@
     }
   ],
   "network": [
+    {
+      "period": "2025-03",
+      "value": 3885743,
+      "entry": 3901700,
+      "exit": 3885743,
+      "days": 31
+    },
+    {
+      "period": "2025-04",
+      "value": 3769638,
+      "entry": 3779259,
+      "exit": 3769638,
+      "days": 30
+    },
+    {
+      "period": "2025-05",
+      "value": 3793828,
+      "entry": 3802719,
+      "exit": 3793828,
+      "days": 31
+    },
+    {
+      "period": "2025-06",
+      "value": 3706300,
+      "entry": 3715339,
+      "exit": 3706300,
+      "days": 30
+    },
     {
       "period": "2025-07",
       "value": 3795351,

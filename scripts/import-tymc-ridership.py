@@ -19,10 +19,14 @@ from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data/ridership/tymc-station.json"
-RETRIEVED = "2026-08-24"
+RETRIEVED = "2026-08-26"
 INDEX_URL = "https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/statistics.html"
 
 FILES = [
+    ("2025-03", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250425121109_0.pdf"),
+    ("2025-04", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250521111652_0.pdf"),
+    ("2025-05", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250612115214_0.pdf"),
+    ("2025-06", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250710094646_0.pdf"),
     ("2025-07", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250812121118_0.pdf"),
     ("2025-08", "https://www.tymetro.com.tw/tymetro-new/upload/file/20250910041054_0.pdf"),
     ("2025-09", "https://www.tymetro.com.tw/tymetro-new/upload/file/20251014054831_0.pdf"),
