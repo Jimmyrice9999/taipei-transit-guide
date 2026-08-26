@@ -20184,3 +20184,63 @@ fragments or orphan pages; search 1,910 entries; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD audit reports zero genuine WCAG
 contrast failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 209 - add TRA Hualien–Taitung widening record (2026-08-26)
+
+### Sourced
+
+Added the Hualien–Taitung widening as the next TRA construction-history
+subject. The complete operator construction-history PDF lists row 58 as
+162.2 km, with Taiwan Provincial Government as constructor, work in 1978 and
+operation from 1982, under the Eastern Line widening:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML independently repeats the same 162.2 km, constructor,
+1978/1982 chronology and Eastern Line widening explanation in row 33:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The current operator station pages identify Hualien as 7000 and Taitung as
+6000:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7000`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6000`.
+The committed TDX station-of-line pull places Hualien at Eastern Line source
+sequence 37 with a supplied distance of 169.7 km, and Taitung at source
+sequence 63 with 320.6 km. The guide presents those as positions 38 and 64
+and retains the calculated 150.9 km field difference as a current data-layer
+measurement, not a replacement for the operator's historical project length.
+
+### TBC and checked failures
+
+The surveyed project boundary and chainage, contracts and detailed works, the
+track-count transition, current as-built state, and the reason the current
+TDX endpoint fields differ from the historical operator length remain TBC. The
+same Taitung station also appears in another TDX line family; it is not merged
+into this Eastern Line comparison because the operator source identifies the
+project as Eastern Line widening.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds the shared
+operator project record while keeping the operator's widening label, current
+station identities and TDX measurement layer distinct.
+
+### Conflicts found
+
+The two checked operator tables do not disagree: both report 162.2 km, Taiwan
+Provincial Government, 1978 construction and 1982 operation. The current TDX
+Eastern Line endpoint fields yield 150.9 km, a different measurement layer
+whose relationship to the historical 162.2 km record is not explained by the
+checked sources. The page does not turn the word widening into an unsupported
+claim about a particular track-count change, and does not average the values.
+
+### Gates
+
+`cite` clean (1,694 content files; 7,408 citations); `research` clean (181
+files; 763 checked failures); claims 24,775 sourced/4,494 TBC/0 ASSERTED;
+build generated 2,675 static pages and postbuild checked 2,823 pages; 472,130
+internal links checked across 2,823 pages with no broken links, unresolved
+fragments or orphan pages; search 1,911 entries; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD audit reports zero genuine WCAG
+contrast failures. The first full-gate attempt correctly stopped on the
+generated Han-subset check for the new term 拓寬; `npm run fonts` regenerated
+the content subsets, and the complete rerun passed. Generated audit reports
+were restored after verification; `probes/` remains untracked.
