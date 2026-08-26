@@ -2,20 +2,21 @@
 
 ## Active handoff - 26 August 2026
 
-Run 191 adds the Tanzi–Shengang route as the eighth TRA historical-alignment
-subject. TRA records an 8.7 km route built in 1956 and opened in 1957. Tanzi,
-Shengang and tourism pages describe the reused corridor as a military logistics
-railway or military Shengang branch, while the urban plan calls it the former
-longitudinal railway's Taichung branch. The municipal reuse record gives a
-roughly 14 km greenway, discontinued in 1998, opened on 2 May 2004 after a May
-2000 access agreement. These identity and length conflicts remain explicit.
-Former stations, closure/transfer records, removal chronology and the exact
-8.7-to-14 km boundary remain TBC.
+Run 192 adds Ruifang–Shen'ao as the ninth TRA historical-alignment subject,
+separate from Shen'ao–Liandong. TRA's construction table gives 6.3 km,
+construction in 1959 and operation from 1961. The National Museum of Marine
+Science and Technology gives an alternate 1965 opening, passenger/freight
+stoppage on 21 August 1989 and full suspension in 2007 after coal service.
+TRA's full records describe the 2014 Ruifang–Haikeguan restoration at about
+4.2 km and the 2016 Badouzi extension/current 4.7 km boundary. These opening,
+route-length and traffic-boundary conflicts remain explicit. Historical
+station register, closure/traffic orders, removal chronology and the exact
+6.3-to-4.2/4.7 km boundary remain TBC.
 
-Gates: cite 1,678/7,313; research 165/696; claims 0 ASSERTED; build 2,791;
-links 468,341 across 2,791 pages; search 1,895; nav 19/19; unit 234/234;
-a11y 1,885 clean; CVD zero genuine contrast failures. Generated audits
-restored; `probes/` remains untracked.
+Gates: cite 1,679/7,319; research 166/700; claims 0 ASSERTED; build 2,793;
+links 468,577 across 2,793 pages; search 1,896; nav 19/19; unit 234/234;
+browser/accessibility checks clean; CVD zero genuine contrast failures.
+Generated audits restored; `probes/` remains untracked.
 
-Next: continue the next verified closed TRA alignment, then resolve remaining
-TRA branch/renaming gaps before the broader fleet/systems work.
+Next: continue the next verified TRA historical route, then resolve remaining
+branch/renaming gaps before broader fleet/systems work.

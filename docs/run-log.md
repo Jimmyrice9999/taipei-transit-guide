@@ -19177,6 +19177,61 @@ unit 234/234; navigation 19/19; a11y 1,883 pages with no errors or warnings.
 Generated audit reports were restored after verification; `probes/` remains
 untracked.
 
+## Run 192 - add TRA Ruifang–Shen'ao Line history (2026-08-26)
+
+### Sourced
+
+Added Ruifang–Shen'ao as a separate TRA historical-alignment subject from the
+Shen'ao–Liandong entry. TRA's full construction-history table lists the route
+at 6.3 km, constructed in 1959 and put into operation in 1961:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The National Museum of Marine Science and Technology's full institutional
+history gives an alternate 1965 opening, dates passenger and freight stoppage
+to 21 August 1989, and dates full suspension after coal service to 2007:
+`https://www.nmmst.gov.tw/chhtml/content/232`.
+TRA's full restoration note records the Ruifang–Haikeguan passenger return on
+9 January 2014 at approximately 4.2 km, while its full chronologies record the
+reopening ceremony and the 2016 Badouzi extension/current 4.7 km boundary:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/9a3ddb1f-e02e-407e-b618-12fe08554783`,
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=12`,
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=10`.
+The committed TDX snapshot supplies the current three-station SA sequence and
+4.7 km travelled-distance value.
+
+### TBC and checked failures
+
+The complete historical station register, legal closure or traffic-order
+records, segment-by-segment track-removal chronology and surveyed boundary
+between the 6.3 km construction-table route and the later 4.2/4.7 km passenger
+measurements remain TBC. The checked operator and institutional sources do not
+provide those records; the 2014 annual-report fetch was a cache miss and was
+not used.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The TRA construction table's separate
+6.3 km Ruifang–Shen'ao and 6.0 km Shen'ao–Liandong rows are now represented
+separately, with no silent merger of the historical route identities.
+
+### Conflicts found
+
+The operator table gives operation from 1961, while the museum history gives a
+1965 opening. The historical route is 6.3 km in the operator table; the
+restored passenger boundaries are approximately 4.2 km in 2014 and 4.7 km in
+the 2016/current records. The museum distinguishes 21 August 1989 passenger
+and freight stoppage from 2007 full suspension after coal service. These values
+are retained as separate source claims and are not averaged or resolved.
+
+### Gates
+
+`cite` clean (1,679 content files; 7,319 citations); `research` clean (166
+files; 700 checked failures); claims 24,538 sourced/4,491 TBC/0 ASSERTED;
+build completed with 2,793 Han-subset checks; 468,577 internal links checked
+across 2,793 pages with no broken links, unresolved fragments or orphan pages;
+unit 234/234; navigation 19/19; browser/accessibility checks clean; CVD audit
+reports zero genuine WCAG contrast failures. Generated audit reports were
+restored after verification; `probes/` remains untracked.
+
 ## Run 190 - add TRA Fengyuan–Dongshi Line history (2026-08-26)
 
 ### Sourced
