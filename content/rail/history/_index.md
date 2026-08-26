@@ -27,3 +27,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Yuanli–Rinan Double Track](/rail/history/yuanli-rinan-double-track/)
 - [The Taiwan Railways Jianan–Qingshui Double Track](/rail/history/jianan-qingshui-double-track/)
 - [The Taiwan Railways Dajia–Jianan Double Track](/rail/history/dajia-jianan-double-track/)
+- [The Taiwan Railways Dongshan–Su'aoxin Double Track](/rail/history/dongshan-su-aoxin-double-track/)

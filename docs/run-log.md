@@ -19850,3 +19850,59 @@ across 2,809 pages with no broken links, unresolved fragments or orphan pages;
 search 1,904 entries; unit 234/234; navigation 19/19; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 203 - add TRA Dongshan–Su'aoxin double-track history (2026-08-26)
+
+### Sourced
+
+Added Dongshan–Su'aoxin as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 51 as 5.4 km, with TRA as
+constructor, construction in 1974, operation from 1977 and 添築雙線 (extended
+to be double-tracked):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML independently lists the same subject as row 28 with
+the same 5.4 km, 1974/1977 chronology and double-track explanation:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The current operator station pages identify Dongshan as 7150 and Su'aoxin as
+7130:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7150`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7130`.
+The committed TDX pulls place Dongshan at source sequence 23 and 85.1 km,
+Xinma at 24 and 89.3 km, and Su'aoxin at 25 and 90.2 km on EL. The current
+endpoint-distance difference is 5.1 km; Xinma is an intermediate current
+station in that ordered data:
+`https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/StationOfLine?%24format=JSON&%24top=1000&%24skip=0`.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract or completion certificate,
+historical engineering chainage, surveyed 5.4 km boundary and current as-built
+track count remain TBC. The current source records establish Xinma as an
+intermediate TDX member and report a temporary service notice, but do not
+establish that its current interval is the historical construction boundary.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The two operator presentations
+agree on the historical values and are retained as separate source
+presentations, while the TDX distance fields are not substituted for the
+construction-table scope.
+
+### Conflicts found
+
+No numerical disagreement was found between the full operator PDF and current
+operator HTML: both report 5.4 km, TRA, 1974 construction, 1977 operation start
+and double-track work. Their row numbers differ (51 versus 28). The historical
+operator scope is 5.4 km, while current TDX endpoint fields differ by 5.1 km and
+include Xinma between the endpoints. These presentation and measurement
+boundaries are retained rather than averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,688 content files; 7,371 citations); `research` clean (175
+files; 739 checked failures); claims 24,671 sourced/4,494 TBC/0 ASSERTED;
+build completed with 2,811 Han-subset checks; 470,714 internal links checked
+across 2,811 pages with no broken links, unresolved fragments or orphan pages;
+search 1,905 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
