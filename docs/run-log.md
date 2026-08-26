@@ -19542,3 +19542,53 @@ across 2,801 pages with no broken links, unresolved fragments or orphan pages;
 search 1,900 entries; unit 234/234; navigation 19/19; browser/accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
+
+## Run 197 - add TRA Xinpu–Tongxiao double-track history (2026-08-26)
+
+### Sourced
+
+Added Xinpu–Tongxiao as the next TRA construction-history subject, kept distinct
+from a current route identity. The full current operator HTML table lists row 25
+as a 5.8 km double-track segment, constructed in 1974 and opened in 1974, with
+TRA as constructor and the explanation that it was extended to double track:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+The full operator PDF repeats the same entry as row 46:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The full current operator station pages identify Xinpu as 2160 and Tongxiao as
+2170:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2160`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2170`.
+The committed TDX StationOfLine pull places Xinpu at sequence 6 and Tongxiao at
+sequence 7 on WL-C, with supplied travelled distances of 29.8 km and 35.6 km.
+
+### TBC and checked failures
+
+Exact day/month and commissioning record, contract/completion certificate,
+intermediate historical station register, surveyed 5.8 km boundary and current
+track-count/as-built status remain TBC. No checked primary source supplies those
+records for this exact historical boundary.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The operator HTML and PDF agree on the
+subject, so it is added without turning a historical double-track record into a
+separate current route identity or conflating the current TDX distance fields
+with the historical construction scope.
+
+### Conflicts found
+
+No disagreement was found between the full operator HTML and PDF: they provide
+the same 5.8 km, 1974/1974 and double-track record under different row numbers.
+The 5.8 km difference between the two supplied TDX travelled-distance values is
+retained as arithmetic only; it is not treated as proof that the live interval
+and historical construction boundary are identical.
+
+### Gates
+
+`cite` clean (1,684 content files; 7,349 citations); `research` clean (171
+files; 721 checked failures); claims 24,613 sourced/4,492 TBC/0 ASSERTED;
+build completed with 2,803 Han-subset checks; 469,768 internal links checked
+across 2,803 pages with no broken links, unresolved fragments or orphan pages;
+search 1,901 entries; unit 234/234; navigation 19/19; browser/accessibility
+checks clean; CVD audit reports zero genuine contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
