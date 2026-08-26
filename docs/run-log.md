@@ -20481,3 +20481,61 @@ silently substituted.
 
 Run 213 verification is pending; generated audit reports will be restored after
 verification. `probes/` remains untracked.
+
+## Run 214 - add TRA Hualien Port Line reconstruction record (2026-08-26)
+
+### Sourced
+
+Added Hualien Port Line as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 95 as Hualien Port Line
+at 10.5 km, with the Railway Reconstruction Bureau's Eastern Region
+Engineering Office as constructor. Its rendered places table aligns with the
+following chronology row: construction in 1992, operation from 2004 and
+`舖設重軌、PC枕` (heavier rail and PC sleepers):
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The current operator HTML omits Hualien Port Line but lists Xincheng–Hualien
+Port as 19.2 km:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The 2012 operator chronology records Hualien Port station and branch
+electrification from 22 June 2012, but it does not define that milestone as the
+same 10.5 km boundary:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=14`.
+The current operator station page identifies Hualien as 7000:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7000`.
+The committed TDX station and station-of-line pulls contain Hualien 7000 but
+no named Hualien Port passenger endpoint, so no port station code is assigned.
+
+### TBC and checked failures
+
+The surveyed endpoint and boundary, former station sequence, detailed
+structures, contract and completion records, current passenger/freight service
+boundary and track count, and the relationship between row 95 and the other
+Hualien Port-named records remain TBC. The current Hualien 7000 and EL fields
+are kept as reference data only; they are not used to invent a port endpoint.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The new page is kept separate from the
+existing Hualien–Hualien Port records and from the current Xincheng–Hualien
+Port row because the checked primaries do not establish a shared surveyed
+boundary.
+
+### Conflicts found
+
+The historical PDF supplies a 10.5 km Hualien Port Line row, while the current
+operator HTML supplies a different 19.2 km Xincheng–Hualien Port row and omits
+row 95. The operator's 2012 chronology names the port branch but does not
+connect its boundary to row 95. The current TDX passenger layer has no named
+Hualien Port endpoint. These are retained as coverage and boundary conflicts,
+not averaged or silently resolved.
+
+### Gates
+
+`cite` clean (1,698 content files; 7,434 citations); `research` clean (185
+files; 781 checked failures); claims 24,843 sourced/4,495 TBC/0 ASSERTED; build
+generated 2,683 static pages and postbuild checked 2,831 pages; 473,075 internal
+links checked across 2,831 pages with no broken links, unresolved fragments or
+orphan pages; search 1,915; nav 19/19; unit 234/234; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
