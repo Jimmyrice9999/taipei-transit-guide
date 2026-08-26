@@ -18147,6 +18147,57 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 237 - add TRA rolling-stock evidence boundary (2026-08-27)
+
+### Sourced
+
+Added the TRA rolling-stock evidence page and its paired research report. The
+operator's acquisition page records 520 Hyundai Rotem commuter EMU cars,
+delivered in September 2023; 600 Hitachi Asia Pacific intercity EMU cars,
+delivered in August 2024; 102 locomotives split into 68 electric and 34
+diesel-electric vehicles; and 60 energy-efficient branch passenger cars still
+in manufacture at the page's June 2025 update:
+`https://www.railway.gov.tw/tra-tip-web/adr/customized_info?I=BOdk83SFNKcj1mQnyA%2BwVMZL6kWlC9PkOcotriiesUX3Ssl3qzbtK%2BY3sXHxRORsqCzTJPwTv03WS%2BJIpR%2FCKuUrvlfmS%2BdkqjPfJMUzv1fF`.
+
+The operator's 114 Safety Management Report gives the wider programme as
+1,307 vehicles, including 127 locomotives, and plans retirement of 842 older
+vehicles. The operator vehicle guide records the published passenger
+formations, including 10-car EMU900, 12-car EMU3000, 8-car TEMU1000 and
+TEMU2000, and 3-car DR3100 examples. The 2024-2027 maintenance plan defines
+the third- and fourth-level maintenance boundary and lists work by vehicle
+family.
+
+### TBC
+
+The public primary records do not provide a current unit-by-unit fleet
+register, active car numbers, line or depot assignments, withdrawal or
+preservation status, or a reconciliation of the 102-locomotive acquisition
+page against the 127-locomotive safety-report total.
+
+### Contradicted the corpus
+
+No prior published TRA rolling-stock claim was contradicted. The existing lead
+files remain leads; no unverified complete roster was promoted into content.
+
+### Conflicts found
+
+The June 2025 acquisition page says 102 locomotives (68 electric plus 34
+diesel-electric), while the 114 Safety Management Report says 127 locomotives
+within the 1,307-vehicle programme. Both values are retained with their
+programme context; neither is treated as a calculated current fleet total.
+
+### Gates
+
+`cite` clean (1,722 content files; 7,594 citations); `research` clean (208
+files; 883 checked failures); claims 25,312 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,730 static pages and postbuild checked 2,879 pages; 480,652
+internal links checked across 2,879 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,928 pages and 755 linkable
+destinations; search 1,939; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Initial gates exposed
+and corrected two schema/citation issues in the new page. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 236 - add TRA Sanmin Station track record (2026-08-27)
 
 ### Sourced

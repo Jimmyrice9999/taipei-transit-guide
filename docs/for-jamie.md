@@ -2,6 +2,30 @@
 
 ## Active handoff - 27 August 2026
 
+Run 237 adds the first TRA rolling-stock page: an evidence-weighted fleet
+record built from the operator's acquisition programme, 114 Safety Management
+Report, vehicle-facilities guide and 2024-2027 maintenance plan. It records the
+520-car EMU900 and 600-car EMU3000 programmes, the 102-locomotive acquisition
+page against the safety report's 127-locomotive programme total, 60 branch
+passenger cars, published passenger formations, and the 842-vehicle retirement
+plan. It explicitly does not invent a current unit roster.
+
+TBC: active car numbers, current family totals, line/depot assignments,
+withdrawal or preservation status, and the 102-versus-127 locomotive
+reconciliation. No prior published TRA rolling-stock claim was contradicted.
+
+Gates after correction: cite 1,722/7,594; research 208/883; claims 25,312
+sourced/4,495 TBC/0 ASSERTED; build 2,730 static pages and 2,879 postbuild
+pages; no missing glyphs; links 480,652; links audit 1,928 pages/755
+destinations; search 1,939; nav 19/19; unit 234/234; accessibility checks
+clean; CVD zero genuine contrast failures. `probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA route,
+construction-history and fleet-evidence layers, starting with the next
+explicitly incomplete system subject.
+
+## Previous handoff - Run 236
+
 Run 236 adds the final verified TRA construction-history subject, the Sanmin
 Station track record. The complete operator construction-history PDF records
 row 119 at 2.1 km, with the Railway Reconstruction Bureau as constructor,
