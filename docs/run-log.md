@@ -20310,3 +20310,60 @@ fragments or orphan pages; search 1,912 entries; nav 19/19; unit 234/234;
 browser/accessibility checks clean; CVD audit reports zero genuine WCAG
 contrast failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+
+## Run 211 - add TRA Hualien–Ruisui double-track record (2026-08-26)
+
+### Sourced
+
+Added Hualien–Ruisui as the next TRA construction-history subject. The
+complete operator construction-history PDF lists row 92 as 70.5 km, with the
+Railway Reconstruction Bureau's Eastern Region Engineering Office as
+constructor. Its aligned chronology gives 1987 construction and operation from
+1994, and records an extension to double track:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The fetched current operator HTML table does not contain a Hualien–Ruisui row:
+`https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`.
+
+The current operator station pages identify Hualien as 7000 and Ruisui as
+6130:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7000`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6130`.
+The committed TDX station pull contains both current station records. Its
+Eastern Line station-of-line data places Hualien at source sequence 37 with a
+supplied distance of 169.7 km and Ruisui at source sequence 50 with 232.5 km.
+The guide presents those as positions 38 and 51 and retains the calculated
+62.8 km field difference as a current data-layer measurement, not a
+replacement for the historical 70.5 km project record.
+
+### TBC and checked failures
+
+The surveyed project boundary and chainage, contract and completion records,
+detailed structures beyond the double-track label, current as-built track
+inventory and service boundary, and the reason for the 7.7 km difference
+between the operator and TDX measurements remain TBC. No source was found that
+defines the current HTML omission as a contradiction of the older PDF row.
+
+### Contradicted the corpus
+
+No prior published corpus claim was contradicted. The new page adds the shared
+operator project record while retaining the operator's double-track label, the
+current station identities and the TDX measurement layer separately.
+
+### Conflicts found
+
+The complete operator PDF contains row 92, while the fetched current operator
+HTML table does not contain a Hualien–Ruisui row. This is a source-coverage
+conflict, not a disagreement over two published lengths. The historical
+operator record is 70.5 km; current TDX endpoint fields yield 62.8 km, a
+different measurement layer whose relationship to the historical value is not
+explained. The page does not average or silently substitute the values.
+
+### Gates
+
+`cite` clean (1,696 content files; 7,422 citations); `research` clean (183
+files; 772 checked failures); claims 24,810 sourced/4,494 TBC/0 ASSERTED; build
+generated 2,679 static pages and postbuild checked 2,827 pages; 472,602 internal
+links checked across 2,827 pages with no broken links, unresolved fragments or
+orphan pages; search 1,913; nav 19/19; unit 234/234; browser/accessibility
+checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
+audit reports were restored after verification; `probes/` remains untracked.
