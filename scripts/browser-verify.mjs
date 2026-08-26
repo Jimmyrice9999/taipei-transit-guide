@@ -11,18 +11,20 @@
  *
  * What it produces:
  *
- *   docs/screenshots/     every page type at 375 / 768 / 1440 px, plus
- *                         200% and 400% zoom equivalents (640 / 320 px)
- *   docs/print/           print-media PDF per page type
+ *   docs/screenshots/     every canonical template at 375 / 768 / 1440 px in
+ *                         the default run; --full retains the original
+ *                         curated visual set, plus 200% and 400% equivalents
+ *   docs/print/           print-media PDF for the selected visual set
  *   docs/browser-verification.json   every raw finding, for the tests
  *   docs/browser-verification.md    the human-readable report
  *
  * Checks, in order:
  *
- *   1. REFLOW (WCAG 1.4.10) — every page loaded at 320 CSS px (the 400%-zoom
- *      equivalent of a 1280 desktop) and 640 px (200%); any document-level
- *      horizontal scrollbar is a violation. Overflow *inside* an
- *      overflow-x:auto container is allowed — that is the sanctioned pattern.
+ *   1. REFLOW (WCAG 1.4.10) — the default loads the selected canonical and
+ *      extreme pages at 320 CSS px (the 400%-zoom equivalent of a 1280
+ *      desktop) and 640 px (200%); --full loads every real page. Any
+ *      document-level horizontal scrollbar is a violation. Overflow *inside*
+ *      an overflow-x:auto container is allowed — that is the sanctioned pattern.
  *
  *   2. KEYBOARD — scripted Tab traversal per page type. Records focus order,
  *      flags any focused element with no visible focus indicator (no outline,
@@ -34,9 +36,11 @@
  *      formation diagram is. An SVG announcing bare "graphic"/"image" with no
  *      name is recorded as a failure.
  *
- *   4. AXE — axe-core against every page, violations grouped by impact.
+ *   4. AXE — axe-core against the selected pages by default, or every real
+ *      page with --full; violations are grouped by impact.
  *
- *   5. SCREENSHOTS and PRINT PDFs for human review.
+ *   5. SCREENSHOTS and PRINT PDFs for human review. The default uses one
+ *      canonical page per template; --full retains the original visual set.
  *
  * The static server mimics GitHub Pages: extensionless → 404 unless a
  * directory with index.html, correct MIME by extension. Serving out/ through
@@ -46,6 +50,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import http from 'node:http'
+import { availableParallelism } from 'node:os'
 import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright'
 import { isRedirectStub } from './redirect-stub.mjs'
@@ -55,6 +60,29 @@ const OUT = path.join(ROOT, 'out')
 const SHOTS = path.join(ROOT, 'docs', 'screenshots')
 const PRINT = path.join(ROOT, 'docs', 'print')
 const AXE_PATH = path.join(ROOT, 'node_modules', 'axe-core', 'axe.min.js')
+
+const CLI_ARGS = process.argv.slice(2)
+const hasFlag = (flag) => CLI_ARGS.includes(flag)
+const optionValue = (name) => {
+  const prefix = `${name}=`
+  const inline = CLI_ARGS.find((arg) => arg.startsWith(prefix))
+  if (inline) return inline.slice(prefix.length)
+  const index = CLI_ARGS.indexOf(name)
+  return index >= 0 ? CLI_ARGS[index + 1] : undefined
+}
+const positiveInteger = (value, fallback) => {
+  const number = Number(value)
+  return Number.isInteger(number) && number > 0 ? number : fallback
+}
+const DEFAULT_WORKERS = Math.max(1, Math.min(4, availableParallelism() - 1))
+const WORKERS = positiveInteger(optionValue('--workers') ?? process.env.BROWSER_VERIFY_WORKERS, DEFAULT_WORKERS)
+const PAGE_TIMEOUT_MS = positiveInteger(
+  optionValue('--timeout') ?? process.env.BROWSER_VERIFY_TIMEOUT,
+  30_000,
+)
+const FULL_SWEEP = hasFlag('--full') || process.env.BROWSER_VERIFY_FULL === '1'
+const PROBE_URL = optionValue('--probe-url') ?? process.env.BROWSER_VERIFY_PROBE_URL
+const PROBE_ONLY = hasFlag('--probe-only')
 
 if (!fs.existsSync(OUT)) {
   console.error('No out/ directory. Run `npm run build` first.')
@@ -111,7 +139,7 @@ function serve() {
 /* Page inventory                                                      */
 /* ------------------------------------------------------------------ */
 
-/** One representative per page type, for the expensive checks. */
+/** Curated preferred candidates; inventory selection deduplicates these by rendered template. */
 const PAGE_TYPES = [
   { name: 'home', url: '/' },
   { name: 'section-rail', url: '/rail/' },
@@ -288,7 +316,7 @@ const PAGE_TYPES = [
   { name: '404', url: '/no/such/page/' },
 ]
 
-/** Every real page, for the cheap checks (axe, reflow measurement). */
+/** Every real page, excluding generated redirect stubs. */
 function allPages() {
   const found = []
   const walk = (dir) => {
@@ -310,12 +338,275 @@ function allPages() {
         // Next's error shell. Every "finding" on that URL was this harness
         // testing a page that does not exist.
         const dir = path.relative(OUT, path.dirname(full)).split(path.sep).join('/')
-        found.push(dir === '' ? '/' : `/${dir}/`)
+        found.push({ file: full, url: dir === '' ? '/' : `/${dir}/` })
       }
     }
   }
   walk(OUT)
-  return found.sort()
+  return found.sort((a, b) => a.url.localeCompare(b.url))
+}
+
+/* ------------------------------------------------------------------ */
+/* Template inventory                                                  */
+/* ------------------------------------------------------------------ */
+
+/*
+ * The default run is a rendered-template check, not a census of every data
+ * row. The exporter already gives us a cheap, deterministic inventory of the
+ * real pages. Read that HTML once to identify the shape of each page and to
+ * choose the content extremes that are most likely to break it:
+ *
+ *   - longest name: rendered h1 text length
+ *   - most stops: route-map stations, or bus stop table rows where there is no map
+ *   - widest table: largest number of cells in any rendered table row
+ *   - deepest nesting: maximum HTML element depth in the rendered export
+ *   - most citations: rendered links to numbered references
+ *
+ * These are layout-risk measurements, not claims about the transport data.
+ * The selected URL, metric and template key are written to the JSON report so
+ * a future page addition cannot silently disappear from browser coverage.
+ */
+const TEMPLATE_FEATURES = [
+  'page-hero',
+  'page-spine',
+  'routemap',
+  'bus-stops',
+  'station-table',
+  'profile',
+  'formation-train',
+  'lead-figure',
+  'table-scroll',
+  'entity-icon',
+  'has-map',
+  'has-spine',
+  'station-accessibility-list',
+  'ridership-panel',
+  'page-title-with-icon',
+  'pill-planned',
+  'adjacent',
+  'near-station',
+  'specs',
+  'data-cards',
+  'comparison-table',
+  'numbering-ladder',
+  'section-desc',
+  'no-spine',
+]
+
+const SYSTEMS = new Set(['alishan', 'cable', 'krtc', 'metro', 'thsr', 'tmrt', 'tra', 'tymc'])
+
+function withoutScripts(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+}
+
+function decodeHtml(text) {
+  return text
+    .replace(/<[^>]+>/g, '')
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([\da-f]+);/gi, (_, code) => String.fromCodePoint(parseInt(code, 16)))
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function getClasses(body) {
+  return new Set(
+    [...body.matchAll(/class="([^"]+)"/g)]
+      .flatMap((match) => match[1].split(/\s+/))
+      .filter((name) => name && !name.includes('__')),
+  )
+}
+
+function featureKey(classes) {
+  return TEMPLATE_FEATURES.filter((feature) => classes.has(feature)).join(',') || 'base'
+}
+
+function templateKey(url, classes) {
+  if (url === '/') return 'home'
+  if (url === '/no/such/page/') return 'not-found'
+  if (url === '/about/') return 'about'
+
+  const parts = url.split('/').filter(Boolean)
+  if (parts[0] === 'data') return `data:${parts[1] ?? 'index'}`
+
+  if (classes.has('bus-stops')) return `bus-route:${featureKey(classes)}`
+  if (classes.has('station-head')) return `metro-station:${featureKey(classes)}`
+
+  // EntityPage is the shared content renderer for line, station, operator,
+  // depot, article and similar detail pages. Optional furniture is part of the
+  // template contract, so it stays in the key rather than being lost.
+  if (classes.has('refs') && classes.has('prose')) return `entity-detail:${featureKey(classes)}`
+
+  if (parts[0] === 'rail' && SYSTEMS.has(parts[1])) {
+    if (parts.length === 2) return `rail-system-index:${featureKey(classes)}`
+    if (parts.length === 3) return `rail-system-type-index:${featureKey(classes)}`
+  }
+
+  if (parts.length === 1) return `section-index:${featureKey(classes)}`
+  if (parts.length === 2) return `type-index:${parts[0]}:${featureKey(classes)}`
+  return `nested-index:${parts.slice(0, -1).join('-')}:${featureKey(classes)}`
+}
+
+function maxTableColumns(body) {
+  let widest = 0
+  for (const table of body.matchAll(/<table\b[\s\S]*?<\/table>/gi)) {
+    for (const row of table[0].matchAll(/<tr\b[\s\S]*?<\/tr>/gi)) {
+      widest = Math.max(widest, (row[0].match(/<(?:th|td)\b/gi) ?? []).length)
+    }
+  }
+  return widest
+}
+
+function maxElementDepth(body) {
+  const voidElements = new Set([
+    'area',
+    'base',
+    'br',
+    'col',
+    'embed',
+    'hr',
+    'img',
+    'input',
+    'link',
+    'meta',
+    'param',
+    'source',
+    'track',
+    'wbr',
+  ])
+  let depth = 0
+  let maximum = 0
+  for (const token of body.matchAll(/<\/?([a-z][\w:-]*)\b[^>]*>/gi)) {
+    const name = token[1].toLowerCase()
+    if (token[0][1] === '/') {
+      depth = Math.max(0, depth - 1)
+    } else if (!voidElements.has(name) && !token[0].endsWith('/>')) {
+      depth += 1
+      maximum = Math.max(maximum, depth)
+    }
+  }
+  return maximum
+}
+
+function pageMetrics(page) {
+  const body = withoutScripts(fs.readFileSync(page.file, 'utf8'))
+  const classes = getClasses(body)
+  const title = decodeHtml(body.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] ?? '')
+  const mapStations = (body.match(/class="[^"]*\broutemap-station\b[^"]*"/gi) ?? []).length
+  const busRows = classes.has('bus-stops') ? (body.match(/<tr\b/gi) ?? []).length : 0
+
+  return {
+    ...page,
+    title,
+    template: templateKey(page.url, classes),
+    metrics: {
+      longestName: title.length,
+      mostStops: Math.max(mapStations, busRows),
+      widestTable: maxTableColumns(body),
+      deepestNesting: maxElementDepth(body),
+      mostCitations: (body.match(/href="#ref-/gi) ?? []).length,
+    },
+  }
+}
+
+const EXTREMES = [
+  ['longest-name', 'longestName'],
+  ['most-stops', 'mostStops'],
+  ['widest-table', 'widestTable'],
+  ['deepest-nesting', 'deepestNesting'],
+  ['most-citations', 'mostCitations'],
+]
+
+function addSelected(selected, record, role, reason, preferredName) {
+  if (!record) return
+  const existing = selected.get(record.url)
+  if (existing) {
+    existing.roles = [...new Set([...existing.roles, role])]
+    if (reason) existing.extremes = [...new Set([...existing.extremes, reason])]
+    return
+  }
+  selected.set(record.url, {
+    name: preferredName ?? (record.url.replaceAll('/', '-').replace(/^-|-$/g, '') || 'page'),
+    url: record.url,
+    template: record.template,
+    roles: [role],
+    extremes: reason ? [reason] : [],
+    metrics: record.metrics,
+  })
+}
+
+function selectTemplatePages(corpus) {
+  const records = corpus.map(pageMetrics)
+  const byUrl = new Map(records.map((record) => [record.url, record]))
+  const notFound = {
+    url: '/no/such/page/',
+    title: 'Page not found',
+    template: 'not-found',
+    metrics: { longestName: 15, mostStops: 0, widestTable: 0, deepestNesting: 5, mostCitations: 0 },
+  }
+  records.push(notFound)
+  byUrl.set(notFound.url, notFound)
+
+  const preferred = PAGE_TYPES.map((candidate) => {
+    const record = byUrl.get(candidate.url)
+    if (!record) return null
+    return { ...record, preferredName: candidate.name }
+  }).filter(Boolean)
+  const preferredByTemplate = new Map()
+  for (const candidate of preferred) {
+    if (!preferredByTemplate.has(candidate.template)) preferredByTemplate.set(candidate.template, candidate)
+  }
+
+  const groups = new Map()
+  for (const record of records) {
+    if (!groups.has(record.template)) groups.set(record.template, [])
+    groups.get(record.template).push(record)
+  }
+
+  const selected = new Map()
+  const templates = []
+  for (const [template, members] of [...groups].sort(([a], [b]) => a.localeCompare(b))) {
+    const canonical = preferredByTemplate.get(template) ?? members[0]
+    addSelected(selected, canonical, 'canonical', '', canonical.preferredName)
+    const extremeSelections = {}
+    for (const [reason, metric] of EXTREMES) {
+      const extreme = members.reduce((best, member) =>
+        member.metrics[metric] > best.metrics[metric] ? member : best,
+      members[0])
+      extremeSelections[reason] = {
+        url: extreme.url,
+        value: extreme.metrics[metric],
+      }
+      addSelected(selected, extreme, 'extreme', reason)
+    }
+    templates.push({
+      key: template,
+      memberCount: members.length,
+      canonical: canonical.url,
+      extremes: extremeSelections,
+    })
+  }
+
+  const pages = [...selected.values()].sort((a, b) => a.url.localeCompare(b.url))
+  const nameCounts = new Map()
+  for (const page of pages) {
+    const count = nameCounts.get(page.name) ?? 0
+    nameCounts.set(page.name, count + 1)
+    if (count > 0) page.name = `${page.name}-${count + 1}`
+  }
+
+  return {
+    records,
+    templates,
+    pages,
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -395,7 +686,7 @@ const FOCUSABLE_HELPER = () => {
  * therefore writing to a DOM that was about to be discarded.
  */
 async function stampFocusable(page) {
-  await page.waitForLoadState('networkidle').catch(() => {})
+  await page.waitForLoadState('networkidle', { timeout: PAGE_TIMEOUT_MS }).catch(() => {})
 
   let expected = []
   for (let attempt = 0; attempt < 8; attempt++) {
@@ -567,6 +858,147 @@ async function ariaProbes(page) {
   })
 }
 
+function duration(started) {
+  const seconds = Math.max(0, (Date.now() - started) / 1000)
+  if (seconds < 60) return `${seconds.toFixed(1)}s`
+  const minutes = Math.floor(seconds / 60)
+  return `${minutes}m ${(seconds % 60).toFixed(0).padStart(2, '0')}s`
+}
+
+function errorSummary(error) {
+  return String(error?.message ?? error).split('\n')[0].slice(0, 240)
+}
+
+function recordPageFailure(report, item, phase, error) {
+  const message = errorSummary(error)
+  const timeout = /timeout/i.test(message) || error?.name === 'TimeoutError'
+  const failure = {
+    name: item.name,
+    url: item.url,
+    phase,
+    kind: timeout ? 'timeout' : 'navigation/error',
+    message,
+    expected: item.expected === true,
+  }
+  report.pageFailures.push(failure)
+  console.log(
+    `  ✗ ${phase} ${item.name} (${item.url}) — ${timeout ? 'timed out' : 'failed'}: ${message}`,
+  )
+  return failure
+}
+
+async function gotoPage(page, item, base, report, phase) {
+  const url = /^https?:\/\//i.test(item.url) ? item.url : base + item.url
+  try {
+    await page.goto(url, { waitUntil: 'load', timeout: PAGE_TIMEOUT_MS })
+    return true
+  } catch (error) {
+    recordPageFailure(report, item, phase, error)
+    return false
+  }
+}
+
+function startProgress(report, progress, phase, total) {
+  progress.phase = phase
+  progress.done = 0
+  progress.total = total
+  progress.lastLogged = 0
+  report.progress.push({ phase, total, started: new Date().toISOString() })
+  console.log(`\n── ${phase} ──`)
+  console.log(`  progress: 0/${total} pages, elapsed ${duration(progress.started)}`)
+}
+
+function logProgress(progress, force = false) {
+  const now = Date.now()
+  if (!force && now - progress.lastLogged < 5_000) return
+  progress.lastLogged = now
+  console.log(`  progress: ${progress.done}/${progress.total} pages, elapsed ${duration(progress.started)}`)
+}
+
+async function runConcurrent({ browser, items, phase, contextOptions, initScript, task, report, progress }) {
+  startProgress(report, progress, phase, items.length)
+  const phaseReport = report.progress.at(-1)
+  if (items.length === 0) {
+    phaseReport.done = 0
+    phaseReport.elapsed = duration(progress.started)
+    return
+  }
+
+  let cursor = 0
+  const workerCount = Math.min(WORKERS, items.length)
+  const worker = async (workerNumber) => {
+    const context = await browser.newContext(contextOptions)
+    try {
+      if (initScript) await context.addInitScript(initScript)
+      const page = await context.newPage()
+      page.setDefaultTimeout(PAGE_TIMEOUT_MS)
+      page.setDefaultNavigationTimeout(PAGE_TIMEOUT_MS)
+      while (true) {
+        const index = cursor++
+        if (index >= items.length) break
+        const item = items[index]
+        try {
+          await task(page, item, workerNumber)
+        } catch (error) {
+          recordPageFailure(report, item, phase, error)
+        } finally {
+          progress.done += 1
+          logProgress(progress, progress.done === items.length || progress.done % 25 === 0)
+        }
+      }
+    } finally {
+      await context.close().catch((error) => {
+        console.log(`  ✗ ${phase} worker ${workerNumber + 1} failed to close: ${errorSummary(error)}`)
+      })
+    }
+  }
+
+  await Promise.all(Array.from({ length: workerCount }, (_, i) => worker(i)))
+  logProgress(progress, true)
+  phaseReport.done = progress.done
+  phaseReport.elapsed = duration(progress.started)
+}
+
+function writeHumanReport(report) {
+  const failures = report.pageFailures.filter((failure) => !failure.expected)
+  const templateLines = report.inventory.templates.map((template) => {
+    const extremes = Object.entries(template.extremes)
+      .map(([reason, value]) => `${reason}=${value.url} (${value.value})`)
+      .join('; ')
+    return `- ${template.key}: ${template.memberCount} page(s); canonical ${template.canonical}; ${extremes}`
+  })
+  const coverage = report.mode === 'full'
+    ? `Reflow and axe cover all ${report.corpusPages} real pages. Keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages; screenshots and print cover the ${report.visualPages} curated visual pages from the original sweep.`
+    : `Reflow, axe, keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages. Screenshots and print cover ${report.visualPages} canonical templates; use \`npm run verify:browser:full\` for the ${report.corpusPages}-page reflow and axe sweep.`
+  const text = [
+    '# Browser verification',
+    '',
+    `- Mode: **${report.mode}**`,
+    `- Corpus pages: **${report.corpusPages}**`,
+    `- Templates identified: **${report.templateCount}**`,
+    `- Pages visited by this mode: **${report.visitedPages}**`,
+    `- Canonical template pages: **${report.canonicalPages}**; additional extreme pages: **${report.extremePages}**`,
+    `- Visual/print pages: **${report.visualPages}**`,
+    `- Workers: **${report.workers}**`,
+    `- Per-page timeout: **${report.pageTimeoutMs} ms**`,
+    `- Elapsed: **${report.elapsed}**`,
+    '',
+    coverage,
+    '',
+    '## Selection method',
+    '',
+    'Each rendered export is grouped by route family plus the optional rendered furniture that changes its layout. One curated canonical candidate is retained for each group, then the maximum rendered h1 length, stop count, table column count, DOM nesting depth and citation-link count are retained for that group. Duplicate URLs are visited once and carry all applicable roles.',
+    '',
+    ...templateLines,
+    '',
+    `## Findings`,
+    '',
+    failures.length ? failures.map((failure) => `- ✗ ${failure.phase}: ${failure.name} (${failure.url}) — ${failure.message}`).join('\n') : '✓ none',
+    '',
+  ].join('\n')
+  fs.writeFileSync(path.join(ROOT, 'docs', 'browser-verification.md'), text)
+}
+
 /* ------------------------------------------------------------------ */
 /* Main                                                                */
 /* ------------------------------------------------------------------ */
@@ -601,41 +1033,124 @@ const axeSource = fs.readFileSync(AXE_PATH, 'utf8')
 
 const report = {
   generated: new Date().toISOString(),
+  mode: FULL_SWEEP ? 'full' : 'template',
+  workers: WORKERS,
+  pageTimeoutMs: PAGE_TIMEOUT_MS,
   reflow: [],
   keyboard: {},
   aria: {},
   axe: {},
+  axeNames: {},
   axeSummary: { critical: 0, serious: 0, moderate: 0, minor: 0 },
   print: [],
   spineOverlap: [],
+  pageFailures: [],
+  progress: [],
 }
 
 const log = (msg) => console.log(msg)
+const runStarted = Date.now()
+const progress = { started: runStarted, phase: '', done: 0, total: 0, lastLogged: 0 }
+const progressTimer = setInterval(() => logProgress(progress, true), 30_000)
 
-/* ---- 1. reflow at zoom equivalents, every page ---- */
+const corpus = allPages()
+const inventory = selectTemplatePages(corpus)
+const templatePages = inventory.pages
+const canonicalPages = templatePages.filter((page) => page.roles.includes('canonical'))
+const visualPages = FULL_SWEEP
+  ? PAGE_TYPES
+  : canonicalPages
+const verificationPages = FULL_SWEEP
+  ? corpus.map((page) => ({ name: page.url, url: page.url }))
+  : templatePages
+report.corpusPages = corpus.length
+report.templateCount = inventory.templates.length
+report.templatePages = templatePages.length
+report.visualPages = visualPages.length
+report.canonicalPages = canonicalPages.length
+report.extremePages = templatePages.length - canonicalPages.length
+report.visitedPages = verificationPages.length
+report.inventory = {
+  selectionMethod: 'route family plus rendered optional furniture; canonical plus five per-template maxima',
+  templates: inventory.templates,
+  pages: templatePages,
+}
+
+log(
+  `\nBrowser verification mode=${report.mode}; corpus=${report.corpusPages} pages; ` +
+    `templates=${report.templateCount}; pages visited=${report.visitedPages} ` +
+    `(canonical=${report.canonicalPages}, extremes=${report.extremePages}); workers=${WORKERS}; ` +
+    `timeout=${PAGE_TIMEOUT_MS}ms`,
+)
+if (!FULL_SWEEP) {
+  log('  default selection: one canonical page per rendered template plus longest-name, most-stops, widest-table, deepest-nesting and most-citations extremes')
+}
+if (PROBE_URL) log(`  timeout probe: ${PROBE_URL}${PROBE_ONLY ? ' (probe-only)' : ''}`)
+
+/* ---- 0. timeout probe ------------------------------------------------ */
+
+if (PROBE_URL) {
+  const probeItems = [
+    { name: 'deliberately-unreachable', url: PROBE_URL, expected: true },
+    { name: 'after-timeout-probe', url: '/', expected: false },
+  ]
+  await runConcurrent({
+    browser,
+    items: probeItems,
+    phase: 'Timeout probe',
+    contextOptions: { viewport: { width: 1280, height: 900 } },
+    task: async (page, item) => {
+      const ok = await gotoPage(page, item, base, report, 'Timeout probe')
+      if (item.expected && ok) throw new Error('deliberately unreachable URL loaded unexpectedly')
+      if (!item.expected && !ok) throw new Error('control page failed after timeout probe')
+    },
+    report,
+    progress,
+  })
+  const probeFailures = report.pageFailures.filter((failure) => failure.expected)
+  const controlFailure = report.pageFailures.find((failure) => failure.name === 'after-timeout-probe')
+  report.timeoutProbe = {
+    url: PROBE_URL,
+    caught: probeFailures.length === 1,
+    continued: !controlFailure,
+  }
+  if (PROBE_ONLY) {
+    clearInterval(progressTimer)
+    report.elapsed = duration(runStarted)
+    writeHumanReport(report)
+    fs.writeFileSync(path.join(ROOT, 'docs', 'browser-verification.json'), JSON.stringify(report, null, 2))
+    const passed = report.timeoutProbe.caught && report.timeoutProbe.continued
+    console.log(`\n${passed ? '✓' : '✗'} timeout probe ${passed ? 'caught the failed page and continued' : 'did not meet both expectations'}\n`)
+    await browser.close()
+    server.close()
+    process.exit(passed ? 0 : 1)
+  }
+}
+
+/* ---- 1. reflow at zoom equivalents ---------------------------------- */
 
 log('\n═══ 1. Reflow at 200% and 400% zoom equivalents ═══\n')
 
-const pages = allPages()
-{
-  const context = await browser.newContext()
-  const page = await context.newPage()
-
-  for (const width of [640, 320]) {
-    await page.setViewportSize({ width, height: 900 })
-    for (const url of pages) {
-      await page.goto(base + url, { waitUntil: 'load' })
+await runConcurrent({
+  browser,
+  items: verificationPages,
+  phase: 'Reflow at 200% and 400% zoom equivalents',
+  contextOptions: {},
+  task: async (page, item) => {
+    for (const width of [640, 320]) {
+      await page.setViewportSize({ width, height: 900 })
+      if (!(await gotoPage(page, item, base, report, 'Reflow'))) break
       const { overflow, culprits } = await measureOverflow(page)
       if (overflow > 0) {
-        report.reflow.push({ url, width, overflow, culprits })
-        log(`  ✗ ${url} at ${width}px: ${overflow}px horizontal overflow`)
+        report.reflow.push({ name: item.name, url: item.url, width, overflow, culprits })
+        log(`  ✗ ${item.url} at ${width}px: ${overflow}px horizontal overflow`)
         for (const c of culprits) log(`      <${c.tag} class="${c.cls}"> width ${c.width}`)
       }
     }
-    log(`  (${width}px: ${pages.length} pages checked)`)
-  }
-  await context.close()
-}
+  },
+  report,
+  progress,
+})
 if (report.reflow.length === 0) log('  ✓ no page produces a document-level horizontal scrollbar')
 
 /* ---- 1b. nothing paints across the floated spine ---- */
@@ -658,11 +1173,13 @@ if (report.reflow.length === 0) log('  ✓ no page produces a document-level hor
 log('\n═══ 1b. Painted boxes across the spine float ═══\n')
 
 {
-  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } })
-  const page = await context.newPage()
-
-  for (const { name, url } of PAGE_TYPES) {
-    await page.goto(base + url, { waitUntil: 'load' })
+  await runConcurrent({
+    browser,
+    items: templatePages,
+    phase: 'Painted boxes across the spine float',
+    contextOptions: { viewport: { width: 1440, height: 900 } },
+    task: async (page, item) => {
+      if (!(await gotoPage(page, item, base, report, 'Painted boxes across the spine float'))) return
     const bad = await page.evaluate(() => {
       const spine = document.querySelector('.page-spine')
       const main = document.querySelector('.page-main')
@@ -695,14 +1212,16 @@ log('\n═══ 1b. Painted boxes across the spine float ═══\n')
       return out
     })
     for (const b of bad) {
-      report.spineOverlap.push({ page: name, url, ...b })
-      log(`  ✗ ${name}: <${b.tag} class="${b.cls}"> paints from ${b.left}, spine ends ${b.spineRight}`)
+      report.spineOverlap.push({ page: item.name, url: item.url, ...b })
+      log(`  ✗ ${item.name}: <${b.tag} class="${b.cls}"> paints from ${b.left}, spine ends ${b.spineRight}`)
     }
-  }
+    },
+    report,
+    progress,
+  })
   if (report.spineOverlap.length === 0) {
     log('  ✓ no painted box in .page-main runs under the spine')
   }
-  await context.close()
 }
 
 /* ---- 2. keyboard, per page type ---- */
@@ -710,24 +1229,27 @@ log('\n═══ 1b. Painted boxes across the spine float ═══\n')
 log('\n═══ 2. Keyboard traversal ═══\n')
 
 {
-  const context = await browser.newContext({ viewport: { width: 1280, height: 900 } })
-  // Before any page script, so it is still there after hydration has replaced
-  // the document's nodes.
-  await context.addInitScript(FOCUSABLE_HELPER)
-  const page = await context.newPage()
-
-  for (const { name, url } of PAGE_TYPES) {
-    await page.goto(base + url, { waitUntil: 'load' })
-    const result = await keyboardTraversal(page)
-    report.keyboard[name] = result
-    const bad = result.trapped || result.noRing.length > 0
-    log(
-      `  ${bad ? '✗' : '✓'} ${name.padEnd(16)} ${String(result.distinct).padStart(3)}/${result.expectedCount} reachable` +
-        (result.trapped ? '  TRAPPED' : '') +
-        (result.noRing.length ? `  ${result.noRing.length} without focus ring` : ''),
-    )
-  }
-  await context.close()
+  await runConcurrent({
+    browser,
+    items: templatePages,
+    phase: 'Keyboard traversal',
+    contextOptions: { viewport: { width: 1280, height: 900 } },
+    initScript: FOCUSABLE_HELPER,
+    task: async (page, item) => {
+      if (!(await gotoPage(page, item, base, report, 'Keyboard traversal'))) return
+      const result = await keyboardTraversal(page)
+      report.keyboard[item.name] = result
+      const bad = result.trapped || result.noRing.length > 0
+      log(
+        `  ${bad ? '✗' : '✓'} ${item.name.padEnd(28)} ${String(result.distinct).padStart(3)}/${result.expectedCount} reachable` +
+          (result.trapped ? '  TRAPPED' : '') +
+          (result.noRing.length ? `  ${result.noRing.length} without focus ring` : '') +
+          (result.unreached.length ? `  (${result.unreached.length} beyond traversal cap)` : ''),
+      )
+    },
+    report,
+    progress,
+  })
 }
 
 /* ---- 3. accessibility tree, per page type ---- */
@@ -735,59 +1257,68 @@ log('\n═══ 2. Keyboard traversal ═══\n')
 log('\n═══ 3. Accessibility tree probes ═══\n')
 
 {
-  const context = await browser.newContext({ viewport: { width: 1280, height: 900 } })
-  const page = await context.newPage()
+  await runConcurrent({
+    browser,
+    items: templatePages,
+    phase: 'Accessibility tree probes',
+    contextOptions: { viewport: { width: 1280, height: 900 } },
+    task: async (page, item) => {
+      if (!(await gotoPage(page, item, base, report, 'Accessibility tree probes'))) return
+      const probes = await ariaProbes(page)
+      // The full ARIA snapshot, for the record.
+      probes.snapshot = await page.locator('main').ariaSnapshot().catch(() => '(no main)')
+      report.aria[item.name] = probes
 
-  for (const { name, url } of PAGE_TYPES) {
-    await page.goto(base + url, { waitUntil: 'load' })
-    const probes = await ariaProbes(page)
-    // The full ARIA snapshot, for the record.
-    probes.snapshot = await page.locator('main').ariaSnapshot().catch(() => '(no main)')
-    report.aria[name] = probes
-
-    const nameless =
-      (probes.mapStations ?? []).filter((s) => s.name === '(NONE)').length +
-      (probes.mapSvg && !probes.mapSvg.name ? 1 : 0) +
-      (probes.formation && !probes.formation.name ? 1 : 0)
-    log(`  ${nameless ? '✗' : '✓'} ${name.padEnd(16)}${nameless ? ` ${nameless} unnamed graphics` : ''}`)
-  }
-  await context.close()
+      const nameless =
+        (probes.mapStations ?? []).filter((s) => s.name === '(NONE)').length +
+        (probes.mapSvg && !probes.mapSvg.name ? 1 : 0) +
+        (probes.formation && !probes.formation.name ? 1 : 0)
+      log(`  ${nameless ? '✗' : '✓'} ${item.name.padEnd(28)}${nameless ? ` ${nameless} unnamed graphics` : ''}`)
+    },
+    report,
+    progress,
+  })
 }
 
-/* ---- 4. axe, every page ---- */
+/* ---- 4. axe, selected pages by default; every page in --full mode ---- */
 
-log('\n═══ 4. axe-core, all pages ═══\n')
+log(`\n═══ 4. axe-core, ${FULL_SWEEP ? 'all pages' : 'selected pages'} ═══\n`)
 
 {
-  const context = await browser.newContext({ viewport: { width: 1280, height: 900 } })
-  const page = await context.newPage()
-
-  for (const url of pages) {
-    await page.goto(base + url, { waitUntil: 'load' })
-    await page.evaluate(axeSource)
-    const results = await page.evaluate(() =>
-      axe.run(document, { resultTypes: ['violations'] }).then((r) =>
-        r.violations.map((v) => ({
-          id: v.id,
-          impact: v.impact,
-          help: v.help,
-          nodes: v.nodes.length,
-          sample: v.nodes[0]?.target?.join(' ') ?? '',
-        })),
-      ),
-    )
-    if (results.length) {
-      report.axe[url] = results
-      for (const v of results) {
-        report.axeSummary[v.impact] = (report.axeSummary[v.impact] ?? 0) + 1
-        log(`  ✗ ${url} [${v.impact}] ${v.id}: ${v.help} (${v.nodes} nodes)`)
+  await runConcurrent({
+    browser,
+    items: verificationPages,
+    phase: 'axe-core',
+    contextOptions: { viewport: { width: 1280, height: 900 } },
+    task: async (page, item) => {
+      if (!(await gotoPage(page, item, base, report, 'axe-core'))) return
+      await page.evaluate(axeSource)
+      const results = await page.evaluate(() =>
+        axe.run(document, { resultTypes: ['violations'] }).then((r) =>
+          r.violations.map((v) => ({
+            id: v.id,
+            impact: v.impact,
+            help: v.help,
+            nodes: v.nodes.length,
+            sample: v.nodes[0]?.target?.join(' ') ?? '',
+          })),
+        ),
+      )
+      if (results.length) {
+        report.axe[item.url] = results
+        report.axeNames[item.url] = item.name
+        for (const v of results) {
+          report.axeSummary[v.impact ?? 'unknown'] = (report.axeSummary[v.impact ?? 'unknown'] ?? 0) + 1
+          log(`  ✗ ${item.name} (${item.url}) [${v.impact}] ${v.id}: ${v.help} (${v.nodes} nodes)`)
+        }
       }
-    }
-  }
+    },
+    report,
+    progress,
+  })
   const total = Object.values(report.axeSummary).reduce((a, b) => a + b, 0)
-  if (total === 0) log(`  ✓ zero violations across ${pages.length} pages`)
+  if (total === 0) log(`  ✓ zero violations across ${verificationPages.length} pages`)
   else log(`\n  ${total} violation instances: ${JSON.stringify(report.axeSummary)}`)
-  await context.close()
 }
 
 /* ---- 5. screenshots ---- */
@@ -795,9 +1326,6 @@ log('\n═══ 4. axe-core, all pages ═══\n')
 log('\n═══ 5. Screenshots ═══\n')
 
 {
-  const context = await browser.newContext()
-  const page = await context.newPage()
-
   /*
    * 1920 and 2560 added permanently in run 10.
    *
@@ -818,26 +1346,36 @@ log('\n═══ 5. Screenshots ═══\n')
     [320, '-zoom400'],
   ]
 
-  for (const { name, url } of PAGE_TYPES) {
-    for (const [width, suffix] of widths) {
-      await page.setViewportSize({ width, height: 900 })
-      await page.goto(base + url, { waitUntil: 'load' })
-      await page.screenshot({
-        path: path.join(SHOTS, `${name}-${width}${suffix}.png`),
-        fullPage: true,
-      })
-    }
-  }
-  // A landscape phone is a distinct height/width relationship, not a wide
-  // desktop screenshot. Keep one representative operator page for it.
-  await page.setViewportSize({ width: 667, height: 375 })
-  await page.goto(base + '/bus/operators/taipeibus-1m9ums8/', { waitUntil: 'load' })
-  await page.screenshot({
-    path: path.join(SHOTS, 'bus-operator-detail-landscape-phone.png'),
-    fullPage: true,
+  await runConcurrent({
+    browser,
+    items: visualPages,
+    phase: 'Screenshots',
+    contextOptions: {},
+    task: async (page, item) => {
+      for (const [width, suffix] of widths) {
+        await page.setViewportSize({ width, height: 900 })
+        if (!(await gotoPage(page, item, base, report, 'Screenshots'))) break
+        await page.screenshot({
+          path: path.join(SHOTS, `${item.name}-${width}${suffix}.png`),
+          fullPage: true,
+        })
+      }
+      // A landscape phone is a distinct height/width relationship, not a wide
+      // desktop screenshot. Keep one representative operator page for it.
+      if (item.url === '/bus/operators/taipeibus-1m9ums8/') {
+        await page.setViewportSize({ width: 667, height: 375 })
+        if (await gotoPage(page, item, base, report, 'Screenshots')) {
+          await page.screenshot({
+            path: path.join(SHOTS, 'bus-operator-detail-landscape-phone.png'),
+            fullPage: true,
+          })
+        }
+      }
+    },
+    report,
+    progress,
   })
-  log(`  ${PAGE_TYPES.length * widths.length + 1} screenshots → docs/screenshots/`)
-  await context.close()
+  log(`  ${visualPages.length * widths.length + 1} screenshots → docs/screenshots/`)
 }
 
 /* ---- 6. print PDFs ---- */
@@ -845,60 +1383,64 @@ log('\n═══ 5. Screenshots ═══\n')
 log('\n═══ 6. Print PDFs ═══\n')
 
 {
-  const context = await browser.newContext()
-  const page = await context.newPage()
+  const printPages = visualPages.filter((item) => item.url !== '/no/such/page/')
+  await runConcurrent({
+    browser,
+    items: printPages,
+    phase: 'Print PDFs',
+    contextOptions: {},
+    task: async (page, item) => {
+      if (!(await gotoPage(page, item, base, report, 'Print PDFs'))) return
+      await page.emulateMedia({ media: 'print' })
 
-  for (const { name, url } of PAGE_TYPES) {
-    if (name === '404') continue
-    await page.goto(base + url, { waitUntil: 'load' })
-    await page.emulateMedia({ media: 'print' })
+      try {
+        // Machine checks before the PDF: is the chrome actually gone, are the
+        // scroll containers actually unwrapped, are URLs actually expanded?
+        const printChecks = await page.evaluate(() => {
+          const gone = (sel) => {
+            const el = document.querySelector(sel)
+            return !el || getComputedStyle(el).display === 'none'
+          }
+          const scroller = document.querySelector('.table-scroll')
+          const badge = document.querySelector('.badge')
+          return {
+            headerGone: gone('.site-header'),
+            navGone: gone('.site-nav'),
+            upLinkGone: gone('.up-link'),
+            adjacentGone: gone('.adjacent'),
+            scrollUnwrapped: scroller ? getComputedStyle(scroller).overflowX === 'visible' : null,
+            badgeHasBorder: badge ? getComputedStyle(badge).borderTopWidth !== '0px' : null,
+            spineFloatCleared: (() => {
+              const spine = document.querySelector('.page-spine')
+              return spine ? getComputedStyle(spine).float === 'none' : null
+            })(),
+          }
+        })
+        report.print.push({ name: item.name, url: item.url, ...printChecks })
 
-    // Machine checks before the PDF: is the chrome actually gone, are the
-    // scroll containers actually unwrapped, are URLs actually expanded?
-    const printChecks = await page.evaluate(() => {
-      const gone = (sel) => {
-        const el = document.querySelector(sel)
-        return !el || getComputedStyle(el).display === 'none'
+        await page.pdf({
+          path: path.join(PRINT, `${item.name}.pdf`),
+          format: 'A4',
+          printBackground: true,
+        })
+
+        const bad = Object.entries(printChecks).filter(([, v]) => v === false)
+        log(`  ${bad.length ? '✗' : '✓'} ${item.name}.pdf${bad.length ? '  failed: ' + bad.map(([k]) => k).join(', ') : ''}`)
+      } finally {
+        await page.emulateMedia({ media: 'screen' })
       }
-      const scroller = document.querySelector('.table-scroll')
-      const badge = document.querySelector('.badge')
-      return {
-        headerGone: gone('.site-header'),
-        navGone: gone('.site-nav'),
-        upLinkGone: gone('.up-link'),
-        adjacentGone: gone('.adjacent'),
-        scrollUnwrapped: scroller ? getComputedStyle(scroller).overflowX === 'visible' : null,
-        badgeHasBorder: badge ? getComputedStyle(badge).borderTopWidth !== '0px' : null,
-        spineFloatCleared: (() => {
-          const spine = document.querySelector('.page-spine')
-          return spine ? getComputedStyle(spine).float === 'none' : null
-        })(),
-      }
-    })
-    report.print.push({ name, url, ...printChecks })
-
-    await page.pdf({
-      path: path.join(PRINT, `${name}.pdf`),
-      format: 'A4',
-      printBackground: true,
-    })
-    await page.emulateMedia({ media: 'screen' })
-
-    const bad = Object.entries(printChecks).filter(([, v]) => v === false)
-    log(`  ${bad.length ? '✗' : '✓'} ${name}.pdf${bad.length ? '  failed: ' + bad.map(([k]) => k).join(', ') : ''}`)
-  }
-  await context.close()
+    },
+    report,
+    progress,
+  })
 }
 
 /* ------------------------------------------------------------------ */
 
+clearInterval(progressTimer)
+report.elapsed = duration(runStarted)
 await browser.close()
 server.close()
-
-fs.writeFileSync(
-  path.join(ROOT, 'docs', 'browser-verification.json'),
-  JSON.stringify(report, null, 2),
-)
 
 /*
  * Every finding as one line, so a failure names itself — in the console, as
@@ -915,8 +1457,22 @@ for (const [name, k] of Object.entries(report.keyboard)) {
     findings.push(`keyboard: no visible focus ring on ${name}: ${k.noRing.slice(0, 3).join(', ')}`)
   }
 }
-for (const [name, count] of Object.entries(report.axeSummary)) {
-  if (count) findings.push(`axe: ${count} violation(s) on ${name} — details in browser-verification.json`)
+for (const [url, violations] of Object.entries(report.axe)) {
+  findings.push(
+    `axe: ${violations.length} violation(s) on ${report.axeNames[url] ?? url} — details in browser-verification.json`,
+  )
+}
+for (const [name, probes] of Object.entries(report.aria)) {
+  const nameless =
+    (probes.mapStations ?? []).filter((station) => station.name === '(NONE)').length +
+    (probes.mapSvg && !probes.mapSvg.name ? 1 : 0) +
+    (probes.formation && !probes.formation.name ? 1 : 0)
+  if (nameless) findings.push(`aria: ${nameless} unnamed graphic(s) on ${name}`)
+}
+for (const failure of report.pageFailures.filter((failure) => !failure.expected)) {
+  findings.push(
+    `page: ${failure.phase} failed ${failure.name} (${failure.url}) — ${failure.message}`,
+  )
 }
 for (const o of report.spineOverlap) {
   findings.push(
@@ -938,10 +1494,20 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   fs.appendFileSync(
     process.env.GITHUB_STEP_SUMMARY,
     `## Browser verification\n\n` +
+      `Mode: **${report.mode}** · templates: **${report.templateCount}** · ` +
+      `pages visited: **${report.visitedPages}** · workers: **${report.workers}** · ` +
+      `elapsed: **${report.elapsed}**\n\n` +
       (findings.length ? findings.map((f) => `- ✗ ${f}`).join('\n') : '✓ clean — no findings') +
       `\n\nFull data in the \`verification\` artifact (browser-verification.json).\n`,
   )
 }
+
+report.findings = findings
+fs.writeFileSync(
+  path.join(ROOT, 'docs', 'browser-verification.json'),
+  JSON.stringify(report, null, 2),
+)
+writeHumanReport(report)
 
 console.log(`\nFull data → docs/browser-verification.json`)
 console.log(findings.length === 0 ? '\n✓ browser verification clean\n' : `\n✗ ${findings.length} finding(s):\n`)

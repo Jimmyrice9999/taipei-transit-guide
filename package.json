@@ -46,6 +46,7 @@
     "test:unit": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/*.test.mts",
     "test": "npm run cite && npm run markers && npm run build && npm run test:unit && npm run facts",
     "verify:browser": "node scripts/browser-verify.mjs",
+    "verify:browser:full": "node scripts/browser-verify.mjs --full",
     "adversarial": "node scripts/adversarial.mjs",
     "facts": "node scripts/fact-check.mjs",
     "cite": "node scripts/citations.mjs",

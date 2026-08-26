@@ -3,18 +3,27 @@
 # One-time setup in your repository: Settings > Pages > Build and deployment >
 # Source: "GitHub Actions".
 #
-# Three jobs in a chain. The point of the chain is that a broken push fails
-# loudly at `test` instead of quietly publishing: `deploy` cannot start until
-# `build` succeeds, and `build` cannot start until `test` does.
+# The deployment jobs form a chain. The point of the chain is that a broken
+# push fails loudly at `test` instead of quietly publishing: `deploy` cannot
+# start until `build` succeeds, and `build` cannot start until `test` does.
+# The scheduled/manual full browser sweep is an independent audit job.
 #
-# Pull requests run `test` only. Nothing deploys from a branch.
+# Every push and pull request runs the fast test job. Only main publishes.
 name: Test, build and deploy
 
 on:
   push:
-    branches: [main]
   pull_request:
+  schedule:
+    - cron: '17 3 * * 0'
+  # A manual run can exercise the full corpus without waiting for the weekly run.
   workflow_dispatch:
+    inputs:
+      full_sweep:
+        description: Run the full-corpus browser sweep
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: read
@@ -22,8 +31,9 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: pages-${{ github.ref }}
+  # A newer push must wait for an in-flight Pages deployment to finish.
+  cancel-in-progress: false
 
 # Pinned to the exact version development runs, not a floating major. The
 # suite and the data scripts are .mts and rely on Node executing TypeScript
@@ -37,6 +47,7 @@ jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
+    if: github.event_name != 'schedule'
     steps:
       - uses: actions/checkout@v7
 
@@ -80,11 +91,10 @@ jobs:
       - name: Accessibility audit
         run: npm run a11y
 
-      # Real Chromium: reflow at 200%/400% zoom, keyboard traversal, the
-      # accessibility tree, and axe-core over every page. Structure checks
-      # cannot see any of this. The verify script exits 2 with instructions if
-      # this install step is ever removed, and emits ::error annotations per
-      # finding — runs #2–#4 failed here saying only "exit code 1".
+      # Real Chromium: template-level reflow at 200%/400% zoom, keyboard
+      # traversal, the accessibility tree, axe-core, screenshots and print.
+      # The explicit full mode keeps the exhaustive reflow/axe sweep for the
+      # scheduled/manual job below. Structure checks cannot see any of this.
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
@@ -121,7 +131,7 @@ jobs:
     name: Build for Pages
     needs: test
     runs-on: ubuntu-latest
-    if: github.event_name != 'pull_request'
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     steps:
       - uses: actions/checkout@v7
 
@@ -163,3 +173,34 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  full-browser-sweep:
+    name: Full browser sweep
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.full_sweep)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+
+      - run: npm ci
+      - name: Build export for the exhaustive sweep
+        run: npm run build
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser verification (full corpus)
+        run: npm run verify:browser:full
+      - name: Upload full-sweep artifacts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: full-browser-verification
+          path: |
+            docs/browser-verification.json
+            docs/browser-verification.md
+            docs/screenshots/
+            docs/print/
+          retention-days: 14
