@@ -17999,6 +17999,55 @@ screenshots and 62 print PDFs. The Orange page was inspected at 320, 375 and
 1440 px. Generated audit JSONs, screenshots and PDFs were restored;
 `probes/` remains untracked.
 
+## Run 220 - add TRA Xinshi–Yongkang double-track record (2026-08-26)
+
+### Sourced
+
+Added row 103 from the complete operator construction-history PDF. It records
+Xinshi–Yongkang at 2.9 km, Taiwan Railways Administration as constructor, 2009
+in the construction-year field, 2013 in the operation-start year field, and
+the new construction of the Yan-shui River Bridge:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator station pages identify Xinshi 4190 and Yongkang 4200:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4190` and
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4200`.
+The committed TDX WL record places Xinshi at source sequence 85 and 341.8 km
+and Yongkang at sequence 86 and 346.8 km; the supplied endpoint fields
+therefore differ by 5.0 km.
+
+### TBC and checked failures
+
+The exact construction, bridge-completion and operation-start days, surveyed
+2.9 km boundary, complete bridge scope, contract and completion records,
+before-and-after track inventory, and source-defined mapping to the current
+5.0 km TDX field remain TBC. The current operator route-history HTML was
+fetched and does not repeat row 103; this is retained as a source-coverage
+difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical construction record is
+kept beside, rather than merged into, the current Xinshi and Yongkang station
+and TDX records.
+
+### Conflicts found
+
+The historical PDF gives 2.9 km, while current TDX endpoint fields give 5.0 km.
+No current station member intervenes, but the sources do not establish a common
+boundary, so the values are not averaged or treated as one measurement.
+
+### Gates
+
+`cite` clean (1,704 content files; 7,474 citations); `research` clean (191
+files; 809 checked failures); claims 24,956 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,695 static pages and postbuild checked 2,843 pages; 474,489
+internal links checked across 2,843 pages with no broken links, unresolved
+fragments or orphan pages; search 1,921; nav 19/19; unit 234/234; browser and
+accessibility checks clean; CVD audit reports zero genuine WCAG contrast
+failures. Generated audit reports were restored after verification;
+`probes/` remains untracked.
+
 # Run 172 - YouBike Taichung and Kaohsiung static layer (25 August 2026)
 
 ## Sourced

@@ -95,6 +95,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 4170 as Shanhua (善化)."
+  - id: tra-station-xinshi
+    title: "Xinshi Station information"
+    titleOriginal: "新市車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4190"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 4190 as Xinshi (新市)."
+  - id: tra-station-yongkang
+    title: "Yongkang Station information"
+    titleOriginal: "永康車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4200"
+    accessed: 2026-08-26
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 4200 as Yongkang (永康)."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -119,3 +137,4 @@ The [Keelung Station track-removal records](/rail/history/keelung-station-track-
 The [Zhuzhong–Liujia double-track record](/rail/history/zhuzhong-liujia-double-track/) retains the operator's 3.1 km row 99 and its 2005/2011 year fields beside the current two-member LJ TDX record.[^tra-construction-history][^tra-station-zhuzhong][^tra-station-liujia][^tdx-tra-line]
 The [Tao-yuan Station track-removal record](/rail/history/taoyuan-station-track-removal/) retains row 100's 3.1 km and 1969/1969 fields beside its May 2012 removal explanation and the current Taoyuan 1080 TDX record.[^tra-construction-history][^tra-station-taoyuan][^tdx-tra-line]
 The [Longtian–Shanhua double-track record](/rail/history/longtian-shanhua-double-track/) retains row 102's 3.8 km and 2001/2013 fields beside its Zeng-Wun River Bridge explanation and the current Longtian 4150, Baling and Shanhua 4170 WL record.[^tra-construction-history][^tra-station-longtian][^tra-station-shanhua][^tdx-tra-line]
+The [Xinshi–Yongkang double-track record](/rail/history/xinshi-yongkang-double-track/) retains row 103's 2.9 km and 2009/2013 fields beside its Yan-shui River Bridge explanation and the current Xinshi 4190 and Yongkang 4200 WL record.[^tra-construction-history][^tra-station-xinshi][^tra-station-yongkang][^tdx-tra-line]
