@@ -18833,3 +18833,55 @@ and print checks clean, zero axe violations across 1,876 pages, 820 screenshots
 and 119 PDFs. Network renders were inspected at 320/1440; the long table stayed
 contained and readable. Generated audits, screenshots and PDFs were restored;
 `probes/` remains untracked.
+
+## Run 183 - add TRA Linkou Line history (2026-08-26)
+
+### Sourced
+
+Added the first closed TRA alignment as a separate historical record: the
+operator's full construction-history table gives the Linkou Line as 19.2 km,
+constructed in 1966, with a 1968 operation field and a 2013 stopped-operating
+field: `https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+The operator chronology records the passenger-service opening ceremony on 27
+October 2005: `https://www.railway.gov.tw/tra-tip-web/adr/about-timeline?selectIndex=17`.
+The MOTC 101 yearbook records the 31 December 2012 suspension milestone and all
+45 level crossings taken out of use:
+`https://www.motc.gov.tw/ch/app/yearbook/doc?detailNo=2&id=21&module=directory&serno=5807&type=s&year=101`.
+The Railway Bureau's full planning document records the later approximately
+19.2 km Linkou corridor revitalisation scope without treating it as a railway
+reopening: `https://www.rb.gov.tw/public/files/artsinfo/1622619792-m0.pdf`.
+
+### TBC and checked failures
+
+No complete historical station list, dated legal closure gazette, full
+track-removal chronology, or segment-level historical gauge record survived
+the fetched primary set. Former-structure survival was also not established.
+The research file records each failed search and the source family that would
+settle it; no figure was guessed.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The existing TRA research correctly
+left the closed-line inventory, historical station sequence and gauge
+chronology open. This run converts Linkou from that stated gap into the first
+verified closed-alignment page without implying that the wider inventory is
+complete.
+
+### Conflicts found
+
+The operator's 1968 operation field and its 2005 passenger-opening ceremony
+describe different milestones. MOTC's 31 December 2012 suspension milestone
+does not contradict the operator's 2013 stopped-operating table field; they are
+different date conventions. The repeated 19.2 km value is retained once as the
+operator's line distance and once as the later bureau's corridor scope.
+
+### Gates
+
+`cite` clean (1,671 content files; 7,270 citations); `research` clean (158
+files; 669 checked failures); `claims` 24,414 sourced/4,488 TBC/0 ASSERTED;
+fresh build completed with 2,777 Han-subset checks; unit 234/234; a11y 1,878
+pages with no errors or warnings. Browser verification completed cleanly:
+reflow, painted-box, keyboard/tree and print checks passed, zero axe violations
+across 1,877 pages, 820 screenshots and 116 PDFs. The article template was
+visually inspected at 320/1440; generated audit outputs were restored and
+`probes/` remains untracked.

@@ -32,4 +32,4 @@ sources:
     note: "The operator history page gives the official route-history framework and gauge terminology used to separate current data from historical alignments."
 ---
 
-The current line index follows the twelve line identities returned by TDX on 2026-08-24.[^tdx-tra-shape] The source calls some records trunk lines and others branches; the guide preserves those identities instead of flattening the railway into one invented route.[^tra-timetable] Historical route names, closed alignments and gauge changes remain separate research work until each chronology is verified against a primary record.[^tra-history]
+The current line index follows the twelve line identities returned by TDX on 2026-08-24.[^tdx-tra-shape] The source calls some records trunk lines and others branches; the guide preserves those identities instead of flattening the railway into one invented route.[^tra-timetable] The [Linkou Line](/rail/history/linkou-line/) is documented separately as the first closed-alignment subject; other historical route names, closures and gauge changes remain separate research work until each chronology is verified against a primary record.[^tra-history]
