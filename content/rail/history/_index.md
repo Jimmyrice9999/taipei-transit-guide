@@ -56,3 +56,4 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Pingtung–Chaozhou Double-track Record](/rail/history/pingtung-chaozhou-double-track/)
 - [The Taiwan Railways Shoufeng–Nanping Double-track Record](/rail/history/shoufeng-nanping-double-track/)
 - [The Taiwan Railways Taoyuan Station Switching Record](/rail/history/taoyuan-station-switching/)
+- [The Taiwan Railways Shoufeng–Fengtian Double-track Record](/rail/history/shoufeng-fengtian-double-track/)

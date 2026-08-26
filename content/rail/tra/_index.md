@@ -266,6 +266,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6220 as Shoufeng (壽豐)."
+  - id: tra-station-fengtian
+    title: "Fengtian Station information"
+    titleOriginal: "豐田車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6210"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current operator station page identifies station 6210 as Fengtian (豐田)."
   - id: tra-station-nanping
     title: "Nanping Station information"
     titleOriginal: "南平車站資訊"
@@ -312,3 +321,4 @@ The [Jinlun–Taimali single-track record](/rail/history/jinlun-taimali-single-t
 The [Pingtung–Chaozhou double-track record](/rail/history/pingtung-chaozhou-double-track/) retains row 113's 16.3 km and 2009/2015 fields beside its South of Pingtung to Chaozhou Railway Elevated explanation and the current Pingtung 5000–Chaozhou 5050 SL record.[^tra-construction-history][^tra-station-pingtung][^tra-station-chaozhou][^tdx-tra-line]
 The [Shoufeng–Nanping double-track record](/rail/history/shoufeng-nanping-double-track/) retains row 114's 12.0 km and 2014/2015 fields beside its Extended to be double-tracked explanation and the current Shoufeng 6220–Nanping 6190 EL record.[^tra-construction-history][^tra-station-shoufeng][^tra-station-nanping][^tdx-tra-line]
 The [Taoyuan Station switching record](/rail/history/taoyuan-station-switching/) retains row 115's 0.3 km and 2015/2015 fields beside its Switching of the Taoyuan temperal Station explanation and the current Taoyuan 1080 WL record.[^tra-construction-history][^tra-station-taoyuan][^tdx-tra-line]
+The [Shoufeng–Fengtian double-track record](/rail/history/shoufeng-fengtian-double-track/) retains row 116's 2.7 km and 2015/2016 fields beside its Extended to be double-tracked explanation and the current Shoufeng 6220–Fengtian 6210 EL record.[^tra-construction-history][^tra-station-shoufeng][^tra-station-fengtian][^tdx-tra-line]

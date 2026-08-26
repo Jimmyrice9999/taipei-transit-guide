@@ -18147,6 +18147,56 @@ orphan pages; search 1,923; nav 19/19; unit 234/234; browser and accessibility
 checks clean; CVD audit reports zero genuine WCAG contrast failures. Generated
 audit reports were restored after verification; `probes/` remains untracked.
 
+## Run 233 - add TRA Shoufeng–Fengtian double-track record (2026-08-27)
+
+### Sourced
+
+Added row 116 from the complete operator construction-history PDF. It records
+Shoufeng–Fengtian at 2.7 km as a double-track subject, with the Railway
+Reconstruction Bureau's Eastern Region Engineering Office as constructor,
+2015 in the construction-year field, 2016 in the operation-start year field,
+and `Extended to be double-tracked` as the operator's English explanation:
+`https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5`.
+
+The current operator pages identify Shoufeng 6220 and Fengtian 6210. The
+committed TDX EL record places them adjacently at source sequences 41 and 42,
+with supplied travelled-distance fields 186.8 km and 189.6 km, a difference
+of 2.8 km:
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6220`,
+`https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/6210`.
+
+### TBC and checked failures
+
+The surveyed 2.7 km boundary, exact construction/double-tracking/service days,
+contract and completion records, detailed work scope, and source-defined
+mapping to the current 2.8 km TDX interval remain TBC. The current operator
+construction-history HTML was fetched and does not repeat row 116; that is
+retained as a coverage difference.
+
+### Contradicted the corpus
+
+No prior corpus claim was contradicted. The historical double-track record is
+kept beside, rather than merged into, the current Shoufeng, Fengtian and TDX
+records.
+
+### Conflicts found
+
+The historical PDF gives 2.7 km, while subtracting the current TDX EL endpoint
+fields gives 2.8 km. The endpoints are adjacent in the ordered record, but the
+sources do not establish a common distance boundary or measurement purpose, so
+the values are reported separately and are not averaged.
+
+### Gates
+
+`cite` clean (1,717 content files; 7,572 citations); `research` clean (204
+files; 866 checked failures); claims 25,234 sourced/4,495 TBC/0 ASSERTED;
+build generated 2,721 static pages and postbuild checked 2,869 pages; 477,558
+internal links checked across 2,869 pages with no broken links, unresolved
+fragments or orphan pages; links audit 1,923 pages and 751 linkable
+destinations; search 1,934; nav 19/19; unit 234/234; accessibility checks
+clean; CVD audit reports zero genuine contrast failures. Generated audit
+reports were restored after verification; `probes/` remains untracked.
+
 ## Run 232 - add TRA Taoyuan Station switching record (2026-08-27)
 
 ### Sourced
