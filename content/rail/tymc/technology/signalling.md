@@ -1,10 +1,16 @@
 ---
 title: Taoyuan Airport MRT signalling and automation grade
-summary: A British subcontractor named for the first time in a decade-old dispute, and an automation grade — GoA2 then GoA4 — this page declines to publish because the one source carrying it cites nothing.
+summary: WESTRACE interlocking and a CBTC-EP train-control layer, confirmed at last by a 2013 primary construction report — plus a British subcontractor named for the first time, and an automation grade this page still declines to publish because the one source carrying it cites nothing.
 order: 1
 operator: TYMC
 updated: 2026-08-28
 facts:
+  - label: Signalling interlocking product
+    value: WESTRACE
+    source: hsr-bureau-2013-annual-report
+  - label: Train-control system
+    value: CBTC-EP (ATO, ATP, ATS)
+    source: hsr-bureau-2013-annual-report
   - label: Signalling subcontractor at the centre of the Marubeni dispute
     value: Invensys (UK)
     source: cna-marubeni-signalling-dispute
@@ -45,7 +51,39 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full press release, read directly. States the extension uses dual onboard signalling equipment to bridge old and new systems, without naming either product.
+  - id: hsr-bureau-2013-annual-report
+    title: "High Speed Rail Engineering Bureau 2013 (民國102年) Annual Report"
+    titleOriginal: 高鐵局102年年報
+    publisher: High Speed Rail Engineering Bureau, MOTC (交通部高速鐵路工程局, predecessor of today's Railway Bureau)
+    url: https://www.rb.gov.tw/public/files/artsinfo/1503058979-0.pdf
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Full 83-page PDF, extracted with pdftotext after the fetch tooling used could not read it directly. Names the original line's signalling interlocking (WESTRACE) and train-control system (CBTC-EP with ATO/ATP/ATS) as of a 2013 construction-progress snapshot.
 ---
+
+## What the system actually is, at last
+
+A 2013 High Speed Rail Engineering Bureau annual report — read in full,
+after the tooling used to fetch it could not extract text from the PDF
+directly — names the original line's signalling system for the first time
+with a real, checkable product name: interlocking product WESTRACE and
+train-control system CBTC-EP, providing automatic train operation (ATO),
+automatic train protection (ATP) and automatic train supervision (ATS),
+with control signals delivered to trains by radio (RTS).[^hsr-bureau-2013-annual-report]
+As of that 2013 snapshot, stations A21 through A2 had signalling equipment
+and cabling fully installed, while A1 station and the Luzhu depot were still
+under installation — a construction-progress detail, not a claim about the
+system as it operates today.[^hsr-bureau-2013-annual-report]
+
+WESTRACE is a genuinely distinct product from any of the labels Wikipedia's
+infobox carries for this line ("Siemens Trainguard MT," "DTG-R SCS,"
+"Rail9000") — this page does not treat the new finding as confirming any of
+those. WESTRACE originated as an Invensys Rail product family, later
+carried under Siemens branding after Siemens acquired Invensys Rail — the
+same year as this report — a connection to the subcontracting dispute below
+that is consistent with the timing but not established by any source
+read.
 
 ## A subcontractor named, a decade later
 
@@ -85,11 +123,13 @@ could not reach and treats as unverified.[^zhwiki-airport-mrt]
 
 ## Remaining gaps
 
-The line's automation grade and its signalling system's actual product name
-are both TBC. Whether Marubeni's illegally-subcontracted Invensys system is
-the same equipment later labelled "Siemens Trainguard MT" in Wikipedia
-infoboxes — Siemens acquired Invensys Rail in 2013 — is not stated by any
-source found. Who actually led the 2006 ME01 electromechanical contract is
-disputed between sources: Marubeni, per Chinese-language coverage, versus
-Hitachi, per a 2006 Hitachi press release cited by English Wikipedia that
-this page could not independently read.
+The line's automation grade remains TBC. Whether Marubeni's illegally-
+subcontracted Invensys system became the WESTRACE/CBTC-EP system named
+above is not stated by any source found — the timing (Siemens acquired
+Invensys Rail the same year as the 2013 report) is suggestive, not
+confirmed. Whether the extension's newer signalling generation is also
+WESTRACE-based, or a genuinely different product, is not addressed by any
+source found — the 2013 report predates the extension. Who actually led the 2006 ME01
+electromechanical contract is disputed between sources: Marubeni, per
+Chinese-language coverage, versus Hitachi, per a 2006 Hitachi press release
+cited by English Wikipedia that this page could not independently read.

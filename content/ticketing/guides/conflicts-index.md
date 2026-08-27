@@ -930,6 +930,33 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Full alumni feature, retained as a secondary lead for the claimed 24–25 March 1965 passenger/freight final-service times; those exact times are not promoted as established because the checked operator records do not confirm them."
+  - id: "rail-krtc-facilities-depots-krtc-daliao-depot"
+    title: "Daliao Depot"
+    titleOriginal: "大寮機廠"
+    publisher: "Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司)"
+    url: "https://corp.krtc.com.tw/Business/land_development_more?id=278b8920c45c4ac78f3e010646cf4f4f"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, read directly. States location, 54-hectare total site area, and Level 5 maintenance tier as the network's main repair depot."
+  - id: "rail-krtc-facilities-depots-zhwiki-depot-table"
+    title: "Kaohsiung Rapid Transit"
+    titleOriginal: "高雄捷運"
+    publisher: "Wikipedia"
+    url: "https://zh.wikipedia.org/zh-tw/高雄捷運"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Depot-comparison table gives Daliao Depot as 55.0 hectares and North Depot as covering Ciaotou District only — both figures conflict with KRTC's own depot pages."
+  - id: "rail-krtc-facilities-depots-krtc-north-depot"
+    title: "North Depot"
+    titleOriginal: "北機廠"
+    publisher: "Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司)"
+    url: "https://corp.krtc.com.tw/Business/land_development_more?id=ec242f99d99949be84f3cfdef6d56b0b"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, read directly. States location across two districts, 34-hectare total site area (24.6 hectares as depot/access-road/station facility zone), and Level 3 maintenance tier."
   - id: "rail-krtc-lines-red-line-mtbu-network-origin"
     title: "Long-term network introduction"
     titleOriginal: "路網簡介"
@@ -2623,6 +2650,29 @@ full sources disagree or give only a year.[^rail-history-xindian-line-dorts-xind
 - [Urban texture formed by railways (5) — Xindian Line](https://www.dorts.ntpc.gov.tw/documentary/articleInfo/VKgmOlr42nxA?page=3) — primary; New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局); accessed 2026-08-26.[^rail-history-xindian-line-dorts-xindian-history]
 - [Jingmei’s former splendour](https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EC29198AFE22C076&sms=72544237BBE4C5F6) — primary; Taipei City Government (臺北市政府); accessed 2026-08-26.[^rail-history-xindian-line-taipei-jingmei-history]
 - [The early NTU people’s “metro” — the narrow-gauge Wanxin Railway story](https://ntualumnibm.ntu.edu.tw/bm.bimonthly.article/detail/sn/4114) — secondary; National Taiwan University Alumni Bimonthly (國立臺灣大學校友雙月刊); accessed 2026-08-26.[^rail-history-xindian-line-ntu-wanxin-history]
+
+## Kaohsiung Metro maintenance depots — Conflicts
+
+Discussed on [Kaohsiung Metro maintenance depots](/rail/krtc/facilities/depots/) in the source page's “Conflicts” section.[^rail-krtc-facilities-depots-krtc-daliao-depot]
+
+### Conflicts
+
+Kaohsiung Metro's own comparison table for Daliao Depot's site area is 54
+hectares.[^rail-krtc-facilities-depots-krtc-daliao-depot] A zh.wikipedia depot table gives 55.0 hectares
+for the same facility, not independently traced to its own
+footnote.[^rail-krtc-facilities-depots-zhwiki-depot-table] Both values are published; neither is
+picked.
+
+North Depot's district coverage is stated by KRTC's own page as spanning
+two districts, Gangshan and Ciaotou.[^rail-krtc-facilities-depots-krtc-north-depot] The same
+zh.wikipedia depot table gives Ciaotou District only.[^rail-krtc-facilities-depots-zhwiki-depot-table]
+Both are published as a direct primary-versus-secondary disagreement.
+
+#### Sources for this entry
+
+- [Daliao Depot](https://corp.krtc.com.tw/Business/land_development_more?id=278b8920c45c4ac78f3e010646cf4f4f) — primary; Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司); accessed 2026-08-27.[^rail-krtc-facilities-depots-krtc-daliao-depot]
+- [Kaohsiung Rapid Transit](https://zh.wikipedia.org/zh-tw/高雄捷運) — secondary; Wikipedia; accessed 2026-08-27.[^rail-krtc-facilities-depots-zhwiki-depot-table]
+- [North Depot](https://corp.krtc.com.tw/Business/land_development_more?id=ec242f99d99949be84f3cfdef6d56b0b) — primary; Kaohsiung Rapid Transit Corporation (高雄捷運股份有限公司); accessed 2026-08-27.[^rail-krtc-facilities-depots-krtc-north-depot]
 
 ## Red Line — Construction and opening chronology
 

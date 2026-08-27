@@ -1,3 +1,83 @@
+## Run 279 - KRTC and TYMC maintenance depots; TYMC signalling upgrade confirmed (2026-08-28)
+
+### Sourced
+
+**TYMC signalling.** A 2013 High Speed Rail Engineering Bureau annual report
+(already fetched this session via `pdftotext` for a different subject) names
+the Airport MRT's original-line signalling system for the first time with a
+checkable product name: interlocking product WESTRACE and train-control
+system CBTC-EP (with ATO/ATP/ATS), radio-linked via RTS. This does not
+confirm the three product labels ("Siemens Trainguard MT," "DTG-R SCS,"
+"Rail9000") Wikipedia's infobox carries — they remain unconfirmed — but it is
+a genuine, checkable primary finding published in its own right. The same
+report's construction-progress snapshot: A21-A2 stations fully wired for
+signalling by end of 2013, A1 and Luzhu Depot still under installation.
+
+**KRTC depots.** Three named Red/Orange Line depots confirmed from KRTC's own
+site: South Depot (26 ha, Level 3, also hosts KRTC HQ and the operations
+control centre), North Depot (34 ha across Gangshan and Ciaotou Districts,
+Level 3, also the power-interconnection point for the Gangshan-Luzhu
+extension's RK1 station), and Daliao Depot (54 ha, Level 5, the network's
+main repair depot). The Circular Light Rail's own depot is named only
+"輕軌機廠" by the government route-description primary source, at the Ruixi
+St/Ruibei Rd intersection.
+
+**TYMC depots.** The same 2013 HSR Bureau report also fully describes the
+Airport MRT's two depots' 2013 construction state: Qingpu Depot (hosting the
+admin building, completed January 2012, and the operations control centre;
+98.06% civil-engineering complete by end of 2013; the point where all 123
+delivered EMU carriages arrived) and Luzhu Depot (trailing on every measure
+given: 82.36% civil complete, signalling still at layout/cabling stage). A
+secondary (company-registry) source places TYMC's headquarters on the Qingpu
+Depot site as of 19 July 2014, consistent with but not independently
+reconfirmed against the primary building list.
+
+### TBC and checked failures
+
+Neither KRTC nor TYMC depot page found a train-stabling capacity (roads or
+trains) in any source read. Whether a new depot serves the incoming Hyundai
+Rotem fleet on KRTC's extensions is TBC — North Depot is confirmed only as
+an electrical interconnection point, not a maintenance base for new stock.
+TYMC depot site areas in hectares were not found in the 2013 primary report
+or on TYMC's own site, which returned HTTP 404 on the URLs tried this
+session (checked 2026-08-28). The Circular Light Rail depot's alternate
+name "前鎮機廠" and area (3.8 ha) rest on a 2015 environmental impact
+statement hosted only on web.archive.org, which the fetch tooling used
+cannot reach (checked 2026-08-27) — not published as established. The
+session's web-search budget was fully exhausted before either depot task
+could issue a query (checked 2026-08-27/28); all findings rest on direct
+fetches of already-known URLs or documents already fetched this session for
+other subjects.
+
+### Contradicted the corpus
+
+None — the existing corpus (`docs/research/rail/krtc.md`,
+`docs/research/rail/lines/airport-mrt.md`) listed depot/workshop allocation
+as an open gap rather than asserting anything that turned out wrong.
+
+### Conflicts found
+
+Daliao Depot's site area: 54 ha (KRTC's own page) vs 55.0 ha (a zh.wikipedia
+depot-comparison table, uncited within that table). North Depot's district
+coverage: Gangshan + Ciaotou (KRTC's own page) vs Ciaotou only
+(zh.wikipedia's same table). Both published as direct primary-vs-secondary
+disagreements, neither picked.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing several missing `[^id]` markers the
+claims ratchet caught (North Depot's hectare split, both Conflicts-section
+sentences, one Luzhu Depot sentence, and the TYMC facilities index blurb's
+phrasing). `gate:full` run twice against a fresh build: the first run caught
+two real spec-formatting violations (hectare and percent values need the
+`unit:` field split out, matching the existing convention on
+`circular-line-south-depot.md` and TRA operations pages) that `gate:fast`
+structurally cannot see; the second run was fully clean — 234/234 tests,
+`facts` (17/17 cross-checks), `research`, `cite`, `claims`, `geometry:audit`,
+`a11y`, all against a fresh build, matching CI's exact step sequence.
+Generated audit JSONs (`docs/links-audit.json`, `docs/unused-audit.json`)
+restored, not committed. `probes/` remains untracked.
+
 ## Run 278 - open KRTC/TYMC facilities and operations; fix stale-build font bug permanently (2026-08-28)
 
 ### Sourced
