@@ -1848,6 +1848,51 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "A genuine primary government record confirming the Hualien elevation project's existence and its feasibility/planning-stage status, covering 7 named crossings."
+  - id: "rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules"
+    title: "Taiwan Railway Administration Steam Locomotive Management and Lending Guidelines"
+    titleOriginal: "臺灣鐵路管理局蒸汽機車管理及租借要點"
+    publisher: "Taiwan Railways Administration (交通部臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6dc22469-5878-45f8-b4f4-d3ee6e751e35"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full internal administrative regulation, read directly. Dated originally 2001, last amended 2021. Source for the five-locomotive tiered rental system, running restrictions and CK101's parts-availability constraint."
+  - id: "rail-tra-rolling-stock-heritage-preservation-cna-ct273-2025-run"
+    title: "Steam Queen CT273 returns for a limited three runs, Yuli to Taitung"
+    titleOriginal: "蒸機女王CT273限定復活3趟次 行駛玉里至台東"
+    publisher: "Central News Agency (中央社)"
+    url: "https://www.cna.com.tw/news/ahel/202506020030.aspx"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Read via search synthesis rather than a full page fetch; reports CT273 hauling a 2025 summer tourist train, flagged as needing a full re-fetch to raise confidence."
+  - id: "rail-tra-rolling-stock-heritage-preservation-zhwiki-tra-steam-locomotives"
+    title: "List of Taiwan Railways steam locomotives"
+    titleOriginal: "臺灣鐵路管理局蒸汽機車列表"
+    publisher: "Wikipedia"
+    url: "https://zh.wikipedia.org/zh-tw/臺灣鐵路管理局蒸汽機車列表"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Lead index only, not independently verified against a primary TRA source. Source for CK124's and LDK59's restoration years and reported base locations."
+  - id: "rail-tra-rolling-stock-heritage-preservation-nrm-phase1-opening"
+    title: "National Railway Museum opens its first phase on 31 July, 'Railway Museum, Moving Forward,' creating a new cultural landmark"
+    titleOriginal: "國家鐵道博物館7月31日第一階段正式開放「鐵博．前行」打造文化新地標"
+    publisher: "National Railway Museum Preparatory Office (國家鐵道博物館籌備處)"
+    url: "https://www.nrm.gov.tw/News_Content.aspx?n=3307&s=241584"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full press release, read directly, corroborated by two separate nrm.gov.tw pages and five independent secondary outlets. Source for the Phase 1 buildings, exhibitions and vehicle count."
+  - id: "rail-tra-rolling-stock-heritage-preservation-nrm-current-hours"
+    title: "National Railway Museum visitor information"
+    titleOriginal: "國家鐵道博物館參觀資訊"
+    publisher: "National Railway Museum (國家鐵道博物館)"
+    url: "https://www.nrm.gov.tw/cp.aspx?n=3319"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Live museum page, read directly. Confirms the museum remains open and operating in 2026 on the Phase 1 footprint; states no Phase 2 date."
   - id: "rail-tra-technology-signalling-ttsb-puyuma-report"
     title: "TTSB completes supplemental work on the Executive Yuan's Puyuma accident investigation and releases findings"
     titleOriginal: "運安會完成行政院普悠瑪事故調查報告補強作業，於109年10月19日發布調查結果"
@@ -3596,6 +3641,66 @@ construction.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
 
 - [TRA grade separation](https://zh.wikipedia.org/zh-tw/臺鐵立體化) — secondary; Wikipedia; accessed 2026-08-27.[^rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation]
 - [Legislative Yuan record: Hualien-Ji'an railway elevation](https://www.ly.gov.tw/EngPages/Detail.aspx?nodeid=38514&pid=227478) — primary; Legislative Yuan (立法院); accessed 2026-08-27.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
+
+## Taiwan Railways heritage rolling stock and the National Railway Museum — Five locomotives, still formally managed
+
+Discussed on [Taiwan Railways heritage rolling stock and the National Railway Museum](/rail/tra/rolling-stock/heritage-preservation/) in the source page's “Five locomotives, still formally managed” section.[^rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules]
+
+### Five locomotives, still formally managed
+
+TRA's own internal regulation still actively manages five steam locomotives
+as a tiered rental asset class: CT273 and CK124 in the top "special-A" tier,
+DT668 and CK101 in the "A" tier, and the narrow-gauge LDK59 in the "B"
+tier, each with a stated rate for a dynamic (running) rental.[^rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules]
+The same regulation bars CT273 and DT668 from the Pingxi, Shen'ao and Jiji
+lines entirely, and restricts CK101 to static or motionless display on major
+festival days only, because its original manufacturer has closed and parts
+and wheels can no longer be sourced.[^rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules]
+
+CT273, a 1943 Kawasaki-built CT270-class locomotive based on the Japan
+Railways C57 design, was TRA's last steam locomotive withdrawn from regular
+service, in 1984, and was restored to operation in 2014; a 2025 news report,
+read via search synthesis rather than a full fetch and flagged accordingly
+for confidence, describes it hauling a summer tourist train between Yuli and
+Taitung, based at Hualien.[^rail-tra-rolling-stock-heritage-preservation-cna-ct273-2025-run] DT668, a 1941 Kawasaki-built
+DT650-class locomotive and TRA's heaviest steam class, was withdrawn March
+1984 and restored to run on the Neiwan Branch Line in November 2011. CK124
+was restored to operation in 2001, and LDK59, TRA's preserved narrow-gauge
+locomotive, in 2011 — both dates from a secondary lead index, not
+independently verified against a primary source.[^rail-tra-rolling-stock-heritage-preservation-zhwiki-tra-steam-locomotives]
+This page does not state where each is
+currently based with confidence: sources disagree between Changhua
+Roundhouse and TRA's Fugang depot for both CK101 and DT668, and this page
+publishes both locations rather than choosing one.
+
+#### Sources for this entry
+
+- [Taiwan Railway Administration Steam Locomotive Management and Lending Guidelines](https://www.railway.gov.tw/tra-tip-web/tip/file/6dc22469-5878-45f8-b4f4-d3ee6e751e35) — primary; Taiwan Railways Administration (交通部臺灣鐵路管理局); accessed 2026-08-27.[^rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules]
+- [Steam Queen CT273 returns for a limited three runs, Yuli to Taitung](https://www.cna.com.tw/news/ahel/202506020030.aspx) — secondary; Central News Agency (中央社); accessed 2026-08-27.[^rail-tra-rolling-stock-heritage-preservation-cna-ct273-2025-run]
+- [List of Taiwan Railways steam locomotives](https://zh.wikipedia.org/zh-tw/臺灣鐵路管理局蒸汽機車列表) — secondary; Wikipedia; accessed 2026-08-27.[^rail-tra-rolling-stock-heritage-preservation-zhwiki-tra-steam-locomotives]
+
+## Taiwan Railways heritage rolling stock and the National Railway Museum — A museum, open since 2025
+
+Discussed on [Taiwan Railways heritage rolling stock and the National Railway Museum](/rail/tra/rolling-stock/heritage-preservation/) in the source page's “A museum, open since 2025” section.[^rail-tra-rolling-stock-heritage-preservation-nrm-phase1-opening]
+
+### A museum, open since 2025
+
+The National Railway Museum's first phase opened 31 July 2025 at the former
+Taipei Railway Workshop site, comprising six restored heritage buildings —
+the Diesel-Electric Workshop, General Administration Building, Technical
+Training Institute, Materials Testing Lab, Grand Hall and Bathhouse — eight
+exhibitions, a weekend heritage-train ride over roughly 650 m using restored
+diesel railcars, and 24 displayed heritage vehicles.[^rail-tra-rolling-stock-heritage-preservation-nrm-phase1-opening]
+The museum's own current page confirms it remains open in 2026 on the same
+footprint, Tuesday through Sunday; no source read for this page states a
+Phase 2 opening date or scope.[^rail-tra-rolling-stock-heritage-preservation-nrm-current-hours] The site itself, Taipei
+Railway Workshop, was designated a national historic monument in 2015;
+sources disagree on the exact date.
+
+#### Sources for this entry
+
+- [National Railway Museum opens its first phase on 31 July, 'Railway Museum, Moving Forward,' creating a new cultural landmark](https://www.nrm.gov.tw/News_Content.aspx?n=3307&s=241584) — primary; National Railway Museum Preparatory Office (國家鐵道博物館籌備處); accessed 2026-08-27.[^rail-tra-rolling-stock-heritage-preservation-nrm-phase1-opening]
+- [National Railway Museum visitor information](https://www.nrm.gov.tw/cp.aspx?n=3319) — primary; National Railway Museum (國家鐵道博物館); accessed 2026-08-27.[^rail-tra-rolling-stock-heritage-preservation-nrm-current-hours]
 
 ## Taiwan Railways train control and signalling — What the 2018 Puyuma accident changed
 

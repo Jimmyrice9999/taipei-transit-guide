@@ -1,4 +1,86 @@
 
+## Run 271 - publish TRA heritage rolling-stock and fire/evacuation boundaries (2026-08-27)
+
+### Sourced
+
+Two `line-scout`s researched TRA-specific subjects concurrently, neither
+previously covered.
+
+**Heritage rolling stock.** TRA's own internal steam-locomotive management
+regulation, read in full, still formally manages five locomotives under a
+tiered rental system: CT273 and CK124 (top tier), DT668 and CK101 (second
+tier), and the narrow-gauge LDK59 (third tier) — with CT273/DT668 barred
+from the Pingxi, Shen'ao and Jiji lines, and CK101 restricted to static
+display because its manufacturer has closed and parts can no longer be
+sourced. The National Railway Museum's own primary pages confirm its Phase 1
+opened 31 July 2025 (six restored buildings, 24 displayed vehicles) and
+remains open through 2026; no Phase 2 date was found anywhere.
+
+**Fire and evacuation.** No currently-adopted, tunnel-specific TRA fire
+regulation was confirmed: a 2005 research report (read via a PDF-extraction
+proxy after the native fetch tool failed on the binary) explicitly states it
+is proposed reference material, not an adopted standard, and Taiwan's
+general fire-equipment regulation, read in full, confirms it names no
+railway-tunnel category. The Taiwan Transportation Safety Board's own
+investigation into the 2021 Qingshui Tunnel derailment (North Link Line)
+found crew-training and documentation gaps around on-board emergency
+equipment, but this page could not access findings about the tunnel's own
+fixed infrastructure — only the TTSB's summary page was reachable, not the
+full report. Three little-known Taipei-underground emergency stopping
+stations (Ximen, Fuxing, Guangfu) are covered as adjacent context, not
+conflated with the long-tunnel subject.
+
+### TBC and checked failures
+
+No individual heritage locomotive was confirmed to hold its own
+cultural-asset designation — only the museum's Taipei Railway Workshop site
+holds monument status, and the national heritage database's search could not
+be executed by the fetch tooling used, so this is recorded as "not found,"
+not "does not exist." A directly on-topic 2008 TRA South Link tunnel-safety
+inspection report could not be read (PDF extraction failed, not retried via
+the proxy technique that worked for the 2005 report) — a specific,
+named lead for a future run. The 2021 accident's exact casualty count is an
+unresolved three-way conflict across unfetched search summaries.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted; neither subject had a prior page.
+
+### Conflicts found
+
+CK101's current physical location (Changhua Roundhouse vs. Fugang Depot) and
+build/withdrawal years (1916 vs 1917; 1974 vs 1978) are published as found,
+not resolved — none of the underlying claims were independently fetched in
+full. Taipei Railway Workshop's monument-designation date (15 March vs 16
+April 2015) is unresolved; the Bureau of Cultural Heritage's own case page
+could not be rendered by the fetch tooling. The 2021 Qingshui Tunnel
+casualty count (49/213 vs 49/309 vs 51 dead) is unresolved.
+
+### Gates
+
+`npm run gate:fast` passed after fixes: 8 uncited sentences across both
+pages (missing citations to a secondary lead source used for two facts, and
+several meta/gap sentences reworded to the project's TBC vocabulary rather
+than left as bare assertions). Regenerating the conflicts index (`npm run
+conflicts`) was required twice more in this batch — normal now that
+`gate:fast` runs `conflicts:check` automatically per Run 269. `npm run
+research` is clean: 237 files, 992 checked-and-failed entries. `npm run
+fonts` found no new glyphs needing a subset update this round. `probes/`
+remains untracked; generated audit JSONs were restored.
+
+## Run 270 - regenerate content font subset for new CJK glyphs (2026-08-27)
+
+### What happened
+
+Post-commit check after Run 267-268's content (level-crossings, seismic
+design, maintenance-depots pages) found `npm run gate:full`'s build step
+reporting 7 pages rendering Han characters not in the content font subset
+(`data/sources`, `rail/history/donggang-line`, and four TRA pages). Ran `npm
+run fonts` to regenerate `public/fonts/noto-sans-tc-content-{400,700}.woff2`
+and `subset-manifest.json`; `gate:fast` passed clean afterward. Committed the
+regenerated font files alone, matching a pattern already seen in earlier
+runs (e.g. Run 257) whenever new Chinese characters enter the corpus.
+
 ## Run 269 - regenerate stale conflicts index; harden the fast gate (2026-08-27)
 
 ### What happened

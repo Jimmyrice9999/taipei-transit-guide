@@ -13,4 +13,7 @@ protection, the dispatch-control upgrade and the in-house research programme
 separate rather than treating them as one system. The [seismic design and
 earthquake response record](/rail/tra/technology/seismic-design/) keeps
 structural design standards separate from post-earthquake operating
-practice and infrastructure-recovery history.
+practice and infrastructure-recovery history. The [fire safety and
+evacuation record](/rail/tra/technology/fire-and-evacuation/) covers a
+proposed tunnel standard, kept separate from what a real accident
+investigation did and did not establish about tunnel infrastructure.
