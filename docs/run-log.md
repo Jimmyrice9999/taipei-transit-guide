@@ -42,6 +42,49 @@ failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
 passed all 19 checks. `npm test` passed all 234 tests, including the fact
 cross-checks. `probes/` remains untouched and untracked.
 
+## Run 250 - tighten TRA East Line gauge boundary (2026-08-27)
+
+### Sourced
+
+Updated the existing Hualien–Taitung widening pair with two full National
+Archives records. The archival presentation identifies the former
+Hualien–Taitung railway as 762 mm and the widening as a 1978–1982 project. The
+full six-page catalogue records Ji'an station as complete on 20 June 1982 and
+describes the work as changing the five-fen track to narrow gauge, rerouting
+the railway, retiring old stations and building new ones. The current TRA
+terminology page supplies the operator's 1,067 mm gauge example.
+
+### TBC and checked failures
+
+The archive description does not state a numeric target gauge or provide a
+complete section schedule. The surveyed 162.2 km boundary, exact work packages,
+current as-built track plan and complete historical geometry remain TBC.
+
+### Contradicted the corpus
+
+No published fact was contradicted. The previous broad TRA gap is narrowed:
+one dated Ji'an widening milestone and its work mechanism are now sourced, but
+the full segment-by-segment numeric chronology remains unproven.
+
+### Conflicts found
+
+No direct source conflict was found. The operator's 1978/1982 widening row and
+the Archives' 20 June 1982 Ji'an milestone describe different reporting scopes;
+the archive's unnumbered "narrow gauge" target is kept separate from the
+operator's general 1,067 mm TRA example.
+
+### Gates
+
+`npm run verify` passed: build generated 2,746 static pages and 2,901 postbuild
+pages; 494,240 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,937 pages with no errors or warnings; citations
+resolved 7,635 markers (7,414 primary, 221 secondary); claims reported 25,459
+sourced, 4,502 TBC and 0 ASSERTED; research checked 217 files with 921 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 checks. `npm test` passed all 234 tests, including the fact
+cross-checks. `npm run fonts` regenerated the Han subsets after the new archive
+title added `擊`. `probes/` remains untouched and untracked.
+
 ## Run 249 - publish platform-door rollout boundary (2026-08-27)
 
 ### Sourced

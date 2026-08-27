@@ -1,5 +1,20 @@
 # For Jamie
 
+## Active handoff - Run 250 - 27 August 2026
+
+Run 250 tightens the TRA East Line gauge chronology. The full National Archives
+records establish that the 1982 widening at Ji'an included replacing the
+five-fen track, rerouting the railway, retiring old stations and building new
+ones. The operator's terminology page supplies the 1,067 mm TRA example; the
+page labels reading that as the target gauge an inference because the archive
+description says only "narrow gauge".
+
+A complete numeric segment-by-segment gauge schedule, surveyed 162.2 km
+boundary, current as-built track plan and detailed widening contracts remain
+TBC. `probes/` remains untracked.
+
+Next: continue the next incomplete TRA or systems subject in the 14-part brief.
+
 ## Active handoff - Run 249 - 27 August 2026
 
 Run 249 adds a focused platform-screen-door page and research pair. Official

@@ -21,12 +21,44 @@ and the boundary between its historical project length and current TDX fields.
 - The 150.9 km TDX difference is a subtraction of current supplied travelled-distance fields on EL. It is not silently substituted for the historical project length.
 - Current station IDs identify current passenger records, not the surveyed project boundary or a complete track-count transition.
 
+## Additional gauge-boundary evidence
+
+- **The National Archives catalogue describes the East Line widening as a
+  physical conversion and station-rebuild programme at a dated Ji'an milestone.**
+  Source: National Archives Administration, *2026 archival research and cultural
+  selection — Taiwan Railway project image*, titleOriginal `強『檔』出擊─2026檔案研究及文創徵選活動`,
+  publisher 國家發展委員會檔案管理局,
+  `https://www.archives.gov.tw/wSite/public/Attachment/001/f1772517989625.pdf`,
+  SECONDARY, Medium confidence because the full six-page government catalogue
+  was read but it describes an archival image rather than publishing the
+  underlying engineering file. Original-language basis: `1982 年 06 月 20 日
+  完成拓寬的東部鐵路吉安站` and `所謂的拓寬工程，包括：五分車軌換成窄軌，鐵路路線重新劃設，廢棄舊站，新站建設等。`
+- **The operator's terminology page identifies 1,067 mm as the TRA example and
+  762 mm as the Alishan Forest Railway example; the National Archives East Line
+  presentation says the former Hualien–Taitung railway remained 762 mm until
+  the 1978–1982 widening.** Sources: National Taiwan Railways Corporation,
+  *Railway route construction history*,
+  `https://www.railway.gov.tw/tra-tip-web/adr/about-1-5`, PRIMARY, High
+  confidence; and National Archives Administration, *East Line gauge-widening
+  project*, `https://art.archives.gov.tw/tw/art/382-10997.html`, SECONDARY,
+  Medium confidence. Original-language basis: `如臺鐵(1,067㎜)、阿里山森林鐵路
+  (762mm)`; `一直維持762mm軌距`; and `東線鐵路拓寬計畫於1978年開工，1982年完工通車`.
+  Reading the catalogue's unnumbered `窄軌` target as 1,067 mm is an inference
+  from the operator's terminology, not a quoted segment-level engineering value.
+
 ## Conflicts between primary presentations
 
 - No disagreement was found between the complete operator PDF and current operator HTML for this row. The historical project length and current TDX interval differ because they are different measurement layers, not because the operator tables disagree with each other.
 - Taitung appears in more than one TDX line-family record. The EL record is used here because the operator record names the Eastern Line widening; the other family is not merged into this project measurement.
 
 ## Checked and failed
+
+- **Complete segment-level numeric gauge conversion and historical geometry** —
+  checked 2026-08-27 in the full operator route-history page, the National
+  Archives East Line presentation and the six-page archival catalogue. The
+  catalogue establishes a 20 June 1982 Ji'an widening milestone and describes
+  five-fen track changing to narrow gauge, but no complete numeric target-gauge
+  schedule or full alignment geometry was found.
 
 - **Surveyed engineering boundary and detailed widening works** — checked 2026-08-26 in the complete construction-history PDF, complete current operator HTML and committed TDX line pull. No contract-level boundary, work package list or surveyed chainage was found.
 - **Complete track-count transition and current as-built boundary** — checked 2026-08-26 in the operator history sources, current station pages and committed TDX pulls. The operator says widening but the checked row does not provide a complete project-wide track-count transition or current as-built survey.
@@ -37,5 +69,7 @@ and the boundary between its historical project length and current TDX fields.
 
 An operator engineering file, contract/completion record, route diagram and
 current as-built track plan would be needed to define the 162.2 km widening
-boundary and relate it to the 150.9 km current EL interval. Until those are
-fetched and read, the project and current data layers remain separate records.
+boundary and relate it to the 150.9 km current EL interval. A complete numeric
+segment-by-segment gauge schedule would also settle the inferred 1,067 mm target.
+Until those are fetched and read, the project and current data layers remain
+separate records.

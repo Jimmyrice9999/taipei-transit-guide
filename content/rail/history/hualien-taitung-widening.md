@@ -2,7 +2,7 @@
 title: The Taiwan Railways Hualien–Taitung Widening Record
 summary: The operator records the Hualien–Taitung widening as a 162.2 km project opened in 1982 after work in 1978, while current TDX endpoint fields cover 150.9 km between Hualien and Taitung.
 order: 28
-updated: 2026-08-26
+updated: 2026-08-27
 aliases:
   - 花蓮–臺東拓寬
   - 花蓮臺東拓寬
@@ -19,6 +19,9 @@ facts:
   - label: Operator-record operation-start year
     value: 1982
     source: tra-construction-history
+  - label: Archived Ji'an widening milestone
+    value: 20 June 1982
+    source: archives-jian-gauge
   - label: Current operator Hualien station record
     value: Hualien (7000)
     source: tra-station-hualien
@@ -44,6 +47,9 @@ specs:
     value: 150.9
     unit: km
     source: tdx-tra-line
+  - label: Archived widening work description
+    value: Five-fen track replaced by narrow gauge; route redrawn; old stations retired; new stations built
+    source: archives-jian-gauge
 sources:
   - id: tra-construction-history
     title: Chronological History of Railroad Construction
@@ -99,6 +105,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull places Hualien 7000 at source sequence 37 with travelled distance 169.7 km and Taitung 6000 at source sequence 63 with travelled distance 320.6 km on EL; the guide presents those as positions 38 and 64 and calculates a 150.9 km field difference.
+  - id: archives-east-gauge
+    title: East Line gauge-widening project
+    titleOriginal: 東線鐵路拓寬案
+    publisher: National Archives Administration, National Development Council (國家發展委員會檔案管理局)
+    url: https://art.archives.gov.tw/tw/art/382-10997.html
+    accessed: 2026-08-27
+    kind: secondary
+    lang: zh-Hant
+    note: "The full archival presentation identifies the source agency as Taiwan Railways Administration and says the Hualien–Taitung railway remained 762 mm until the East Line widening began in 1978 and completed in 1982."
+  - id: archives-jian-gauge
+    title: 2026 archival research and cultural selection — Taiwan Railway project image
+    titleOriginal: 強『檔』出擊─2026檔案研究及文創徵選活動
+    publisher: National Archives Administration, National Development Council (國家發展委員會檔案管理局)
+    url: https://www.archives.gov.tw/wSite/public/Attachment/001/f1772517989625.pdf
+    accessed: 2026-08-27
+    kind: secondary
+    lang: zh-Hant
+    note: "The full six-page archival catalogue describes a 20 June 1982 completed Ji'an station and defines the widening works as changing the five-fen track to narrow gauge, rerouting the railway, retiring old stations and building new ones."
 ---
 
 ## The operator calls this a widening, not a new route
@@ -128,6 +152,24 @@ as station 6000.[^tra-station-hualien][^tra-station-taitung] These are current
 passenger-station records and do not by themselves define the 1978 widening
 boundary or prove which construction components the 162.2 km figure covers.[^tra-station-hualien][^tra-station-taitung]
 
+## What the archive adds to the gauge boundary
+
+The operator's current route-history page defines TRA's gauge example as
+1,067 mm and separately gives 762 mm for the Alishan Forest Railway.[^tra-history-page]
+The National Archives' full East Line presentation identifies the source agency
+as the Taiwan Railways Administration and says the Hualien–Taitung railway
+remained 762 mm until the widening project began in 1978 and was completed in
+1982.[^archives-east-gauge]
+
+A separate full archival catalogue records Ji'an station as complete on 20 June
+1982 and describes the widening work as replacing the five-fen track with narrow
+gauge, redrawing the route, retiring old stations and building new ones.[^archives-jian-gauge]
+That makes the conversion mechanism and the station-and-alignment consequences
+explicit for this recorded milestone. Because the catalogue description calls
+the target only "narrow gauge", the numeric reading of the target as TRA's
+1,067 mm is an inference from the operator's gauge terminology, not a substitute
+for a segment-level engineering register.[^tra-history-page][^archives-jian-gauge]
+
 The committed TDX station-of-line pull places Hualien at source sequence 37,
 with a supplied travelled distance of 169.7 km, and Taitung at source sequence
 63, with a supplied travelled distance of 320.6 km on EL.[^tdx-tra-line] In the
@@ -146,6 +188,8 @@ other line-family distance into this calculation.[^tdx-tra-line]
 The checked primary sources do not provide a surveyed 162.2 km engineering
 boundary, a contract or completion certificate, the exact widening works, a
 complete track-count transition or a current as-built boundary.[^tra-construction-history][^tra-history-page]
+The archive catalogue now supplies a work description for the Ji'an milestone,
+but it does not provide a complete numeric gauge schedule for every section.
 They also do not explain whether the 150.9 km TDX field difference is caused by
 rounding, measurement datum, route definition, the operator's project scope or
 another boundary.[^tdx-tra-line][^tra-construction-history] Those fields remain
