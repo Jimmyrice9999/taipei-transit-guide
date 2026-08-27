@@ -251,7 +251,10 @@ concrete" version is circulating and it's wrong.
 - Network control centre arrangements for all three operators
 - **What TRTC's depot maintenance "Level 3" and "Level 5" actually mean** — the
   terms appear constantly and nothing defines them
-- Track gauge per line (high-capacity is standard gauge; VAL and the LRT lines TBC)
+- Track gauge per line — the focused [gauge boundary record](../../../content/rail/technology/metro-track-gauges.md)
+  confirms the high-capacity standard and the shared Danhai/Ankeng vehicle-table
+  value, while conventional Wenhu, Circular, Sanying, Airport MRT and Taoyuan
+  Green Line infrastructure values remain TBC
 - The 2007 seismic code and how it compares to current standards
 - Fire and evacuation systems, given the 1993 Wenhu fire and the 2025 Circular Line
   walkway evacuation

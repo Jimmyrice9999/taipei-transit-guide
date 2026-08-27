@@ -1,5 +1,30 @@
 # For Jamie
 
+## Active handoff - Run 255 - 27 August 2026
+
+Run 255 publishes the metro track-gauge boundary. Full DORTS records establish
+1,435 +/- 1.5 mm as the basic high-capacity steel-wheel track gauge and
+separate that family from Wenhu's rubber-tyred VAL-derived guideway and the
+Circular Line's steel-wheel/steel-rail medium-capacity system. A current DORTS
+vehicle-parameter table gives 1,435 mm for the shared Danhai/Ankeng light-rail
+design, and NTMC confirms the common vehicle design and 15-train allocation on
+each line.
+
+A complete current line-by-line as-built infrastructure gauge register,
+numeric Circular gauge, conventional Wenhu equivalent, Sanying/Airport/Green
+Line values and separate light-rail construction tolerances remain TBC. No
+direct numeric source conflict was found; the page preserves the scope
+boundary between track, guideway and vehicle values. TRA remains a separate
+railway gauge subject. `probes/` remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed. The final gates reported 1,735 content files, 7,668 citations, 0
+ASSERTED claims, 222 research files with 942 checked failures, 2,916 postbuild
+pages, 234 passing tests and 17 clean fact cross-checks.
+
+Next: continue the remaining 14-part brief with the seismic-code gap, then the
+fire-and-evacuation systems gap, one subject at a time.
+
 ## Active handoff - Run 254 - 27 August 2026
 
 Run 254 publishes the operator-level control-centre boundary. TRTC’s published

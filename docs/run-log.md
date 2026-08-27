@@ -22503,3 +22503,48 @@ sourced, 4,502 TBC and 0 ASSERTED; research checked 216 files with 918 recorded
 failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
 passed all 19 checks. `npm test` passed all 234 tests, including the fact
 cross-checks. `probes/` remains untouched and untracked.
+## Run 255 - publish metro track gauge boundary (2026-08-27)
+
+### Sourced
+
+Added a focused track-gauge page and research pair. Full DORTS records establish
+1,435 +/- 1.5 mm as the basic Taipei high-capacity steel-wheel track gauge and
+separate that family from Wenhu's rubber-tyred VAL-derived guideway and the
+Circular Line's steel-wheel/steel-rail medium-capacity system. A 2025 DORTS
+vehicle-parameter table gives 1,435 mm for the shared Danhai/Ankeng light-rail
+vehicle design; NTMC confirms the common design and 15 trains on each line.
+
+### TBC and checked failures
+
+A current line-by-line as-built infrastructure gauge register, numeric Circular
+gauge, conventional Wenhu equivalent, Sanying/Airport/Green Line values and
+separate Danhai/Ankeng infrastructure tolerances remain TBC. The full official
+pages checked for this subject did not provide a single register, so no value
+was inferred from system type or vehicle design.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The systems lead now records the
+bounded result rather than treating “high-capacity is standard gauge” as a
+complete line-by-line register. TRA's separate 1,067 mm/1,435 mm railway
+terminology remains outside the metro page and was not used to fill metro gaps.
+
+### Conflicts found
+
+No direct numeric gauge conflict was found among the full official sources. The
+scope differences are retained: high-capacity has a track value, New Taipei
+light rail has a shared vehicle-table value, Circular has a steel-wheel system
+classification without a number in the checked FAQ, and Wenhu is described by
+its rubber guideway and compatibility boundary rather than a conventional
+steel-rail gauge.
+
+### Gates
+
+`npm run cite` passed: 1,735 content files and 7,668 citations resolved (7,447
+primary, 221 secondary). `npm run verify` passed with 0 ASSERTED claims;
+research checked 222 files with 942 recorded failures, the build exported 2,916
+postbuild pages, and geometry/CVD audits were clean. The explicit `npm run nav`
+gate passed all 19 checks. The explicit `npm test` gate passed all 234 tests and
+all 17 fact cross-checks. `probes/` remains untouched and untracked.
+
+## Run 254 - publish operator control-centre boundary (2026-08-27)
