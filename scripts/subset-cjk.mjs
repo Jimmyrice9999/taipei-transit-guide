@@ -138,6 +138,32 @@ export function walk(dir, exts, found = []) {
   return found
 }
 
+/**
+ * Whether out/ predates the source it's supposed to represent.
+ *
+ * Run 276 and Run 277 both hit the same bug: `out/` survived from an earlier
+ * build, `collectFromBuild()` happily read it as if it were current, and
+ * newly-added Han characters were silently missing from the regenerated
+ * subset because the pages containing them were never in that stale build.
+ * `npm run fonts` has no way to know a build is stale on its own — it only
+ * reads whatever is in out/ — so this checks the one thing it can: whether
+ * any scanned source file was modified after out/'s own newest file.
+ */
+export function buildIsStale() {
+  if (!fs.existsSync(BUILD_DIR)) return false // no build to be stale
+  let newestOut = 0
+  for (const { file } of builtPages()) {
+    const mtime = fs.statSync(file).mtimeMs
+    if (mtime > newestOut) newestOut = mtime
+  }
+  for (const { dir, exts } of SCAN) {
+    for (const file of walk(dir, exts)) {
+      if (fs.statSync(file).mtimeMs > newestOut) return true
+    }
+  }
+  return false
+}
+
 export function collectFromSource() {
   const chars = new Set()
   const perFile = new Map()
@@ -245,7 +271,17 @@ const sorted = (set) => [...set].sort((a, b) => a.codePointAt(0) - b.codePointAt
 /* ------------------------------------------------------------------ */
 
 async function main() {
-  const fromBuild = collectFromBuild()
+  const stale = buildIsStale()
+  if (stale) {
+    console.warn(
+      'subset-cjk: ⚠ out/ is older than at least one scanned source file — a stale build\n' +
+        '  from before your latest edits, most likely. Reading it would silently miss any\n' +
+        '  Han characters only your newest changes introduced (this happened for real in\n' +
+        '  Runs 276 and 277). Falling back to the source scan instead of trusting it.\n' +
+        '  Run `npm run build` first if you want the smaller, page-split subset sizes.',
+    )
+  }
+  const fromBuild = stale ? null : collectFromBuild()
   let sets
   let mode
 

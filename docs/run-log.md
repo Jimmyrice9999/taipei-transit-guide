@@ -1,3 +1,84 @@
+## Run 278 - open KRTC/TYMC facilities and operations; fix stale-build font bug permanently (2026-08-28)
+
+### Sourced
+
+Two more `line-scout`s researched accessibility and ridership for KRTC and
+TYMC concurrently, extending both operators past technology/rolling-stock
+into facilities/operations — the same four-section structure TRA already
+has.
+
+**KRTC.** The operator's accessibility page states every station has an
+accessible elevator, as a universal-provision statement rather than a
+measured percentage, and cites no named regulation — checked specifically,
+twice. Ridership: the corporate homepage gives separate 2025 annual totals
+(71.3 million MRT, 13.34 million light rail); a 220-record monthly PDF
+archive exists but is JavaScript-rendered, so its download links — and thus
+any monthly or per-station figure — could not be resolved by a non-browser
+fetch in either the original scout pass or a follow-up attempt with direct
+`curl`/`pdftotext` access.
+
+**TYMC.** The operator's accessibility page describes facilities down to
+train wheelchair-space dimensions (94.25 cm, doors 1-3/2-3/3-1/4-1, 140 cm
+door openings) but, checked specifically, cites no named standard either.
+Ridership built directly on an already-committed structured data pull
+(`data/ridership/tymc-station.json`, 22 stations, monthly): Taipei Main
+Station carries 1,712,542 passengers in July 2026, more than double the
+next-busiest stop (Airport Terminal 1, 732,462). A genuine Wikipedia
+miscitation was caught by checking a secondary citation against what it
+claims to support (this project's rule 4): the infobox's 2024 daily-ridership
+figure is footnoted to a TYMC article dated 26 May 2017, which by its date
+cannot be the source of a 2024 statistic and, by its title, reads as a 2017
+opinion piece — not published as a source for any figure here.
+
+### TBC and checked failures
+
+Neither operator publishes a named accessibility standard or numeric
+completion figure — checked directly against both operators' own pages,
+not merely absent from what was found. KRTC's monthly ridership PDFs remain
+entirely unread; a URL fragment obtained through a browser-capable tool did
+not resolve when retried directly with `curl`. Whether KRTC's 2025 total
+(MRT-only) and a separately-sourced, unverified 2024 MOTC-cited total cover
+the same scope (MRT alone, or MRT plus light rail) is unclear. TYMC's 2024
+daily ridership is unresolved between two close but non-identical secondary
+figures (114,472 vs 114,289), neither confirmed against a primary source.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted; this is new ground for both operators.
+
+### Conflicts found
+
+TYMC's 2024 daily ridership: 114,472 (Wikipedia, miscited as shown above)
+versus 114,289 (a December 2024 secondary source that predates year-end by
+nine days and may be a projection). KRTC's 2025 total (71.3M, primary,
+MRT-only) versus a 2024 total (78,022,516, Wikipedia citing MOTC) whose
+scope is unclear and whose cited MOTC source could not be reached to verify.
+
+### Gates — a permanent fix, not another patch
+
+Runs 276 and 277 each independently hit the same bug: `npm run fonts`
+silently trusted a stale `out/` left over from an earlier build and missed
+newly-added Han characters, requiring a manual `rm -rf out` each time.
+Fixed properly this run: `scripts/subset-cjk.mjs` now has a `buildIsStale()`
+check comparing the newest scanned-source mtime against the build's own
+newest file, and `main()` refuses to trust `collectFromBuild()` when stale,
+falling back to the safe (if larger) source-scan mode with a loud warning
+instead. Verified directly: staged a fake stale `out/`, confirmed the
+warning and fallback fired, confirmed a real build afterward produces the
+normal optimized per-page split again.
+
+Separately: ran the *full* local test suite (`node --test tests/*.test.mts`,
+234 tests) against a fresh build for the first time this session, rather
+than relying on `gate:fast`'s excluded-by-design subset — and it caught a
+real bug immediately: two new `_index.md` descriptions (34 and 38
+characters) under `discoverability.test.mts`'s 40-character minimum. Fixed
+both. `gate:fast` structurally cannot see this class of bug (it needs
+rendered HTML), so running the full suite at least once per batch, not just
+at 5-commit intervals, is now this run's practice going forward. Also ran
+`npm run facts`, `npm run palette`, `npm run a11y` and `npm run
+geometry:audit` directly — all clean, matching CI's named steps exactly.
+`probes/` remains untracked.
+
 ## Run 277 - open TYMC systems coverage: signalling and rolling stock (2026-08-28)
 
 ### Sourced
