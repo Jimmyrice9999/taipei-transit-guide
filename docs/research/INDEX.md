@@ -227,8 +227,11 @@ clear) that is specific enough to be checkable and is widely misreported.
 **Stated gaps.** Y01–Y06 names; ridership; Shisizhang Depot; whether the Control
 Yuan report led to prosecution.
 
-**Publishable now: yes, and it is the strongest candidate for the next article.**
-See §6.
+**Published now:** the focused 0403 investigation record is published at
+`/rail/history/circular-line-0403-earthquake/` in Run 244. The line page keeps
+the wider route context; the focused article carries the official mechanism,
+design and oversight findings, recovery counts and the unresolved contractor
+dispute.
 
 ---
 
@@ -512,7 +515,7 @@ source has that.
 | `rolling-stock.md` | `/rail/metro/rolling-stock/c371` | First Taiwanese-built metro train; the local-content split |
 | `tamsui-xinyi-line.md` | `/rail/metro/lines/tamsui-xinyi-line` | The Xinyi East Extension. **Time-critical.** Needs a primary pass |
 | `zhonghe-xinlu-line.md` | `/rail/metro/lines/zhonghe-xinlu-line` | The O21→O50 gap; the three component projects; the fifteen-year completion |
-| `circular-line.md` | `/rail/metro/lines/circular-line` + article | The 403 earthquake, the bearing mechanism, the NT$1.927 bn claim, the Wenhu comparison |
+| `circular-line.md` | `/rail/metro/lines/circular-line` + `/rail/history/circular-line-0403-earthquake` | The 403 earthquake, the bearing mechanism, the NT$1.927 bn claim, the Wenhu comparison — focused article published in Run 244 |
 | `bannan-line.md` | `/rail/metro/lines/bannan-line` | Three service patterns; the empty peak workings; beneath Beimen |
 | `songshan-xindian-line.md` | `/rail/metro/lines/songshan-xindian-line` + article | The 1987 underground decision; Xiaobitan; the end of cross-colour running |
 | `airport-mrt.md` | `/rail/metro/lines/airport-mrt` | Service patterns, journey times, in-town check-in |
@@ -732,8 +735,8 @@ references.
 
 ## 6. Reading order, if somebody has an afternoon
 
-1. **The Control Yuan's 403 report.** A real primary investigation, and the story
-   it supports is the best-sourced unwritten article the site has.
+1. **The Control Yuan's 403 report.** A real primary investigation, now read in
+   full and published as the focused Circular Line 0403 earthquake article.
 2. **`ebook.dorts.gov.taipei`.** Still unread after four runs of being the
    recommendation. It is DORTS's own technical book series about building this
    railway.

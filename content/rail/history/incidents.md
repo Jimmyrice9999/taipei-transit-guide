@@ -218,6 +218,7 @@ described in secondary histories remain TBC.[^dorts-wenhu-incident]
 ## Earthquake: Circular and Ankeng lines
 
 The 3 April 2024 earthquake displaced eleven Circular Line girder locations and
+is covered in the focused [0403 earthquake investigation](/rail/history/circular-line-0403-earthquake/).
 closed the damaged section.[^cy-circular-earthquake][^ntpc-circular-damage] The Control Yuan investigation attributes the
 failure to construction and inspection problems around the bearing assembly,
 while New Taipei DORTS records seven severe displacements of 20–92 centimetres

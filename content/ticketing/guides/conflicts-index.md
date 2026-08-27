@@ -696,6 +696,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full ten-page operator PDF. Its row 44 repeats the Chiayi–Xinshi double-track segment as 50.1 km, with 1957 construction and 1970 operation-start fields."
+  - id: "rail-history-circular-line-0403-earthquake-bes-statement"
+    title: "Circular Line statement"
+    titleOriginal: "環狀線聲明稿"
+    publisher: "BES Engineering Corporation (中華工程股份有限公司)"
+    url: "https://www.bes.com.tw/en/news_detail.php?id=186"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "BES's 6 January 2025 statement of its own technical and legal position. It says the contractor followed the approved drawings, that both upper and lower supports had milled-through slope plates but only the upper support failed, and that the plate detail and bearing failure were not the main cause. It is primary for BES's position, not an independent adjudication."
+  - id: "rail-history-circular-line-0403-earthquake-cy-114"
+    title: "Investigation report 114交調0005: Circular Line 0403 earthquake damage"
+    titleOriginal: "監察院調查報告 114交調0005"
+    publisher: "Control Yuan of the Republic of China (監察院)"
+    url: "https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Official Control Yuan case record and report landing page. It identifies the commissioners, review and publication dates, supplies the report files, and records the investigation's findings on the earthquake damage, pot bearings, design, supervision, instrumentation and code. The report's direct files are the DOCX at https://cybsbox.cy.gov.tw/CYBsBoxSSL/edoc/download/68978 and PDF at https://cybsbox.cy.gov.tw/CYBsBoxSSL/edoc/download/72631."
+  - id: "rail-history-circular-line-0403-earthquake-ntmc-reopening"
+    title: "New Taipei Circular Line ready; full service resumes at noon"
+    titleOriginal: "新北環狀線準備好了!確認安全無虞12:00 全線復駛"
+    publisher: "New Taipei Metro Corporation (新北大眾捷運股份有限公司)"
+    url: "https://www.ntmetro.com.tw/basic/?mode=detail&node=754"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator's 12 December 2024 reopening notice. It records nine repositioned steel-box-girder spans, 139 damaged items, 1,438 replaced track baseplates, 1,050 metres of restored track, 41,500 metres of replaced cable, the 248-day repair account and the added permanent unseating and uplift-restraint devices."
   - id: "rail-history-incidents-dorts-flood-technical-87"
     title: "Practical water, environmental-control and fire-safety engineering, p. 87"
     titleOriginal: "捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務"
@@ -2278,6 +2305,38 @@ that the table's operation-start field supplies an exact commissioning date.[^ra
 
 - [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
 - [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-construction-history]
+
+## The Circular Line's 0403 earthquake — What is disputed
+
+Discussed on [The Circular Line's 0403 earthquake](/rail/history/circular-line-0403-earthquake/) in the source page's “What is disputed” section.[^rail-history-circular-line-0403-earthquake-bes-statement]
+
+### What is disputed
+
+BES's own statement says the damaged section was between its Y12 Qiaohe and Y14
+Banxin engineering labels and that the contractor followed the approved
+drawings.[^rail-history-circular-line-0403-earthquake-bes-statement] BES says the upper and lower bearing arrangements both
+had milled-through slope plates but only the upper support failed; it therefore
+argues that the milling-through detail and bearing failure were not the main
+cause, and that the design strength and unequal seismic demand require further
+examination.[^rail-history-circular-line-0403-earthquake-bes-statement]
+
+That position conflicts with the Control Yuan's finding that the work did not
+follow the drawings and that the pin's loss of the shear interface was the
+failure mechanism.[^rail-history-circular-line-0403-earthquake-cy-114] The sources on this page establish the competing
+positions, not a final court determination. The full court merits judgment,
+final settlement and current responsibility allocation remain TBC.
+
+The repair itself added permanent unseating-prevention and uplift-restraint
+devices as a second line of defence, while replacing the pot-bearing facilities
+and restoring track, cables and other systems.[^rail-history-circular-line-0403-earthquake-ntmc-reopening] That is the
+published remedy; it does not by itself decide which party's explanation of the
+original cause will prevail.
+
+#### Sources for this entry
+
+- [Circular Line statement](https://www.bes.com.tw/en/news_detail.php?id=186) — primary; BES Engineering Corporation (中華工程股份有限公司); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-bes-statement]
+- [Investigation report 114交調0005: Circular Line 0403 earthquake damage](https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082) — primary; Control Yuan of the Republic of China (監察院); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-cy-114]
+- [New Taipei Circular Line ready; full service resumes at noon](https://www.ntmetro.com.tw/basic/?mode=detail&node=754) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-ntmc-reopening]
 
 ## Metro incidents and service disruptions — Conflicts and gaps
 

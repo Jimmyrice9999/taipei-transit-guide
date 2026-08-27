@@ -2,6 +2,27 @@
 
 ## Active handoff - 27 August 2026
 
+Run 244 adds the focused Circular Line 0403 earthquake investigation page and
+its one-subject research pair. The full official Control Yuan record establishes
+the pot-bearing mechanism, 5 mm versus 41 mm plate-depth finding, 36 mm excess
+space and 40 mm pin, plus the design, inspection, instrumentation, seismic-code
+and accountability findings. Official New Taipei records preserve both the
+11-location and 9-span recovery units. BES's full statement is retained as the
+contractor's contrary primary position; no causal or legal outcome is inferred.
+
+TBC: court merits judgment, final repair cost or settlement, current
+responsibility allocation, a mapping from eleven displacement locations to nine
+repaired spans, and a current bearing inventory or condition survey.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot, South Depot, depot-levels, Neihu
+running-surface and Circular Line 0403 subjects, starting with the next explicit
+line or system gap.
+
+## Active handoff - 27 August 2026
+
 Run 243 adds the Neihu Line steel running-surface page and its one-subject
 research pair. The full official DORTS technical paper establishes the
 Muzha-versus-Neihu material difference, the rainy-climate design rationale,

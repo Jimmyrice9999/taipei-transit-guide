@@ -1,3 +1,61 @@
+## Run 244 - add Circular Line 0403 earthquake investigation (2026-08-27)
+
+### Sourced
+
+Added a focused history page and one-subject research pair for the Circular
+Line's 3 April 2024 earthquake. The official Control Yuan case record and report
+establish the 11 displacement locations, 139 damaged items, 92 cm maximum
+displacement, 5 mm drawing recess, 41 mm field measurement, 36 mm excess space,
+40 mm pin height, the pot-bearing mechanism, the design and inspection findings,
+the missing control-centre seismic record, the transverse-code gap and the
+formal processing directed at Taipei City Government. New Taipei DORTS supplies
+the initial 11-location severity split and over-one-year estimate; New Taipei
+Metro supplies the nine-span repair count, 139-item inventory, replacement
+quantities and 12 December 2024 reopening.
+
+The article publishes BES's full official statement as the contractor's primary
+counter-position: BES says it followed the approved drawings and that the
+over-milled plate and bearing failure were not the main cause. No causal dispute
+is resolved. The article keeps the official 11-location and 9-span counts as
+different units, and links from the general incidents page.
+
+### TBC and checked failures
+
+The research file records failed checks for a court merits judgment, a mapping
+from the 11 locations to the 9 spans, a final repair cost or settlement/current
+responsibility allocation, and a current bearing inventory or condition survey.
+The final court outcome and financial result remain TBC.
+
+### Contradicted the corpus
+
+No factual claim in the existing published Circular Line page was contradicted.
+The stale research-index wording that called this the strongest unwritten
+article was corrected to record the Run 244 publication. The existing line page
+already distinguished the Control Yuan's findings from BES's position and the
+11-location/9-span count conflict; the focused article makes that same boundary
+available as a separate history record.
+
+### Conflicts found
+
+- Eleven displacement locations in the Control Yuan and early DORTS account
+  versus nine repaired spans in the operator's reopening account; no source-read
+  mapping reconciles the units.
+- The Control Yuan's nonconforming-construction finding versus BES's statement
+  that it followed the drawings and that bearing failure was not the main cause.
+- Initial over-one-year estimate, 248-day operator repair account and 250-day
+  Control Yuan account; the official records do not publish one reconciliation.
+
+### Gates
+
+`npm run verify` passed: build generated 2,742 static pages and 2,895 postbuild
+pages; 489,852 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,935 pages with no errors or warnings; citations
+resolved 7,621 markers (7,402 primary, 219 secondary); claims reported 25,423
+sourced, 4,502 TBC and 0 ASSERTED; research checked 215 files with 912 recorded
+failures; geometry and CVD audits were clean. The required explicit `npm run nav`
+passed all 19 checks and `npm test` passed all 234 tests. Generated audit reports
+were restored before commit; `probes/` remains untouched and untracked.
+
 ## Run 243 - add Neihu steel running-surface record (2026-08-27)
 
 ### Sourced
