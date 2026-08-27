@@ -1,3 +1,64 @@
+## Run 288 - add TMRT land development, completing the three-operator TOD set (2026-08-28)
+
+### Sourced
+
+Third and richest of the TOD/joint-development set (KRTC Run 286, TYMC
+Run 287, now TMRT). Unlike the other two, every Taichung City Rapid
+Transit Systems Bureau (TCRT) page fetched this session worked fully,
+including a genuine case list — the first of the three operators where
+this project reached one.
+
+Mechanism: an urban-plan-designated "metro development zone," landowner
+provides land, city solicits an investor, all three share the completed
+building — same shape as Kaohsiung's and Taoyuan's programmes, same
+central legal basis (Mass Rapid Transit Act, Land Development
+Regulations) plus Urban Planning Act and Building Act, plus nine
+Taichung-specific ordinances. A landowner can take building space instead
+of cash, or take cash while keeping priority purchase/lease rights later.
+If no investor is found in time, the city can build the shared structure
+itself first rather than delay the line's opening.
+
+The case list: seven named Green Line sites (G5, G6, G8, G8a, G9-1, G9-2,
+G11), each with site area, coverage/FAR ratios, named investors, planned
+use, execution stage and a dated timeline, tracing to a single 20
+September 2011 public notice under Land Development Regulations Article
+7. G8 (Wenhua Senior High School) is the standout: a complete
+contract-to-handover record (Nov 2014 → Jul 2017 → Nov 2021), now
+marketed for sale/lease — the only site with a finished lifecycle. G9-2
+(City Hall south) sits at the opposite extreme: no investor secured at
+all, still in pre-solicitation. G6's roughly 4.5-year gap between signed
+contract (Dec 2020) and reported construction start (Jun 2025) is
+recorded as-is, unexplained by the source.
+
+### TBC and checked failures
+
+No projected completion date for either City Hall site (checked
+2026-08-28). No explanation given for G6's multi-year contract-to-
+construction gap (checked 2026-08-28). Web-search budget remained
+exhausted; no independent verification of any named investor or project
+attempted (checked 2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered TMRT land
+development.
+
+### Conflicts found
+
+None — no second source addressing the case list or mechanism was located
+this session. The central legal basis matches what this project's KRTC
+and TYMC land-development research separately found for those cities,
+consistent rather than conflicting.
+
+### Gates
+
+`gate:fast` caught one claims-ratchet flag (a superlative "only one of...
+three" phrasing in an index-page sentence, reworded). Second run clean
+(107/107). `gate:full` run against a fresh build, fully clean — 234/234
+tests, `facts` (17/17 cross-checks), `research`, `cite`, `claims`,
+`geometry:audit`, `a11y`. Generated audit JSONs restored, not committed.
+`probes/` remains untracked.
+
 ## Run 287 - add TYMC joint land development mechanism (2026-08-28)
 
 ### Sourced
