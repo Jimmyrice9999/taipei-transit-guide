@@ -1,31 +1,28 @@
 # For Jamie
 
-## Active handoff - Run 286 - 27 August 2026
+## Active handoff - Run 287 - 27 August 2026
 
-Run 286 opens KRTC's TOD/joint-development coverage — the brief's TOD
-subject had only a Taipei-only page before this. Legal basis (Mass Rapid
-Transit Act Art. 7, Land Development Regulations), a stated
-"合建分坪、利潤共享" three-party philosophy, and a 3-stage/7-step process
-are all sourced from the bureau's own page. The bureau's own case-list
-page ("土地開發案件基本資料") was located but is JavaScript-rendered — a
-confirmed, not unsearched, gap, so this page documents the mechanism only,
-no concrete example project.
+Run 287 adds TYMC's TOD/joint-development page, the second of a planned
+set alongside Run 286's KRTC page. Genuine cross-city finding: Taoyuan's
+programme is now called "捷運土地開發" but was formerly "聯合開發" — the
+exact term Kaohsiung's programme still uses as its current name. Same
+central legal basis both cities cite (Mass Rapid Transit Act + Land
+Development Regulations), plus nine Taoyuan-specific implementing
+instruments.
 
-Full local validation across Runs 279-286 (KRTC/TYMC depots, TMRT
-tech+rolling-stock, TMRT facilities+operations, KRTC Yellow Line, TYMC/
-KRTC/TMRT fares, KRTC joint development): `gate:fast` clean every time,
-`gate:full` clean against a fresh build every time — 8 commits, all
-pushed, none reverted.
+Both KRTC's and TYMC's case-list pages (the actual project examples)
+remain unread, for two different reasons: KRTC's is JavaScript-rendered,
+TYMC's DORTS site genuinely timed out across three attempts (60s/90s/150s)
+— a real fetch failure, not a tooling gap on a working page. Both pages
+document the mechanism only, no concrete project example yet.
 
-CI status (checked once this run, not polled further): the earlier stuck
-run on faa1ade1 (Run 278) resolved itself — eventually completed with
-"success" after being stuck 1.5+ hours. A new stuck run appeared on
-3c842f2b (Run 283) around the same check, not yet resolved as of the
-check. This looks like a recurring but self-resolving GitHub Actions
-infrastructure hiccup rather than a code problem, given faa1ade1's outcome
-— worth a manual glance at the Actions tab but not urgent.
+Full local validation across Runs 279-287 (9 commits this continuation):
+`gate:fast` clean every time, `gate:full` clean against a fresh build
+every time. Audit JSONs restored each time, not committed. `probes/`
+remains untracked.
 
-Next: TYMC or TMRT's own TOD/joint-development pages (parallel to KRTC's,
-following the same pattern), or continuing the brief's remaining
-interactive-features Part, or deeper KRTC Yellow Line gaps (depot name,
-opening date) as sources surface.
+CI status unchanged since Run 286's check — not re-polled this run per the
+no-looping rule.
+
+Next: TMRT's own TOD page (completing the three-operator set, matching
+the fare-history pattern), or continuing other Parts of the brief.

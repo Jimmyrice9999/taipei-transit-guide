@@ -1,3 +1,53 @@
+## Run 287 - add TYMC joint land development mechanism (2026-08-28)
+
+### Sourced
+
+Second of a planned TOD/joint-development set (KRTC Run 286, now TYMC),
+extending the same subject. Two DORTS (Taoyuan City Department of Rapid
+Transit Systems) pages fetched and parsed directly from raw HTML — a slow
+site requiring progressively longer timeouts (60s worked for two pages).
+
+Taoyuan's own programme, "捷運土地開發" (metro land development), was
+formerly called "聯合開發" (joint development) — the same term Kaohsiung's
+equivalent programme still uses as its current name, a genuine naming
+difference between the two cities' current usage, not a conflict. Same
+central legal basis as Kaohsiung (Mass Rapid Transit Act, MRT System Land
+Development Regulations), plus nine Taoyuan-specific implementing
+instruments across three process categories (land acquisition, investor
+selection, rights allocation) — a considerably longer published
+instrument list than Kaohsiung's own overview names, though that may just
+reflect what each bureau chose to publish.
+
+### TBC and checked failures
+
+No specific joint-development case established, same as KRTC's page — but
+a different underlying cause this time: DORTS's own case-list page timed
+out on three separate attempts (60s, 90s, 150s), a genuine server-side or
+network failure rather than KRTC's JavaScript-rendering gap (checked
+2026-08-28). Two referenced diagrams (cooperation structure, process flow)
+are images, not extracted (checked 2026-08-28). Web-search budget remained
+exhausted (checked 2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered TYMC's land-
+development mechanism.
+
+### Conflicts found
+
+None in the strict sense — the naming difference between Taoyuan's
+"捷運土地開發" (current) / "聯合開發" (former) and Kaohsiung's still-current
+"聯合開發" is reported as a genuine difference in each city's own current
+usage, not two sources disagreeing about the same fact.
+
+### Gates
+
+`gate:fast` clean on the first run (107/107) — no claims-ratchet fixes
+needed this time. `gate:full` run against a fresh build, fully clean —
+234/234 tests, `facts` (17/17 cross-checks), `research`, `cite`, `claims`,
+`geometry:audit`, `a11y`. Generated audit JSONs restored, not committed.
+`probes/` remains untracked.
+
 ## Run 286 - add KRTC joint land development mechanism (2026-08-28)
 
 ### Sourced
