@@ -65,3 +65,7 @@ The Airport MRT pages use TDX-backed station, route, geometry, timetable and rid
 ## Source boundary
 
 The system is an index of an operator line and a construction project, not a claim that they are equally mature datasets.[^tdx-tymc-green-check][^dorts-green][^dorts-green-report]
+
+## Systems and rolling stock
+
+The [signalling record](/rail/tymc/technology/signalling/) names the British firm at the centre of the Marubeni signalling dispute for the first time on this site, and declines to publish an automation grade that appears in Wikipedia infoboxes with no supporting citation. The [rolling-stock record](/rail/tymc/rolling-stock/fleet-roster/) covers both the express and commuter fleets, including a case where two primary sources agree on a seat count that a Wikipedia table gets wrong.

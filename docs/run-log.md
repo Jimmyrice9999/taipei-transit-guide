@@ -1,3 +1,72 @@
+## Run 277 - open TYMC systems coverage: signalling and rolling stock (2026-08-28)
+
+### Sourced
+
+Ran the full local `gate:full` (12m50s) before this batch, given Run 276
+needed real fixes CI had caught — 234/234 unit tests, 17/17 fact
+cross-checks, clean. Then two `line-scout`s researched Taoyuan Airport MRT
+(TYMC) subjects concurrently, the first content beyond lines/stations for
+this operator.
+
+**Signalling.** A 2017 wire report, read in full, names the previously-
+unidentified British subcontractor from this project's existing Marubeni
+signalling-dispute research: Invensys, with roughly NT$1.9 billion of the
+performance bond withheld over the illegal subcontracting. MOTC's own
+press release for the extension's A22 opening confirms the line runs two
+signalling-system generations bridged by dual onboard equipment, without
+naming either product. Three more specific technical labels ("Siemens
+Trainguard MT," "DTG-R SCS," "Rail9000") and an automation grade (GoA2
+rising to GoA4) all trace only to Wikipedia's infobox — the GoA line
+carries no citation at all within that article, and GoA4 (driverless) is
+inconsistent with every source describing this line's conventionally crewed
+trains. None of these is published as established; automation grade is
+published as TBC rather than repeat an unsupported figure that happened to
+sound plausible.
+
+**Rolling stock.** No manufacturer is named on TYMC's own current
+travel-guide page for either the express or commuter fleet. A genuine
+cross-check catch: the commuter fleet's manufacturer (Taiwan Rolling Stock
+Co.) publishes its own per-car seat breakdown, summing to 188 — matching
+the operator's own whole-train total exactly. Wikipedia's own composition
+table for the same fleet sums to 185 instead, a discrepancy published as a
+conflict (likely a transcription error in the secondary source) rather than
+silently corrected. Kawasaki's reported role in the express fleet and part
+of the commuter fleet rests on Wikipedia alone, flagged as such rather than
+presented at equal confidence with the manufacturer-confirmed portion.
+
+### TBC and checked failures
+
+TYMC's own 2010-2011 annual report PDF, cited by Wikipedia as a source for
+fleet delivery details, downloaded successfully but could not be text-
+extracted in this pass (no Bash access in that agent run to retry via the
+`pdftotext` fallback documented in AGENTS.md) — a specific, named lead for a
+follow-up. Two government report URLs central to the signalling sourcing
+(`report.nat.gov.tw`) failed to resolve entirely. Who led the 2006 ME01
+electromechanical contract — Marubeni (Chinese-language coverage) or Hitachi
+(a 2006 Hitachi press release cited by English Wikipedia, itself unreadable
+behind a `web.archive.org` block) — is unresolved.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted; `docs/research/rail/lines/airport-mrt.md`
+already correctly left the signalling subcontractor unnamed rather than
+guessing, and this run filled that specific gap.
+
+### Conflicts found
+
+Commuter-fleet seat composition: 188 (two independently-read primary
+sources, agreeing exactly) versus 185 (Wikipedia's own table, which does
+not even match its own article's stated total). ME01 contract leadership:
+Marubeni versus Hitachi, unresolved. Signalling-system labels: three named
+products found only in an uncited or unreachably-cited Wikipedia infobox,
+none corroborated by a primary source.
+
+### Gates
+
+`npm run gate:fast` passed after fixing 2 meta-sentences that needed
+citations added to a new Wikipedia infobox source. `npm run research`
+clean: 242 files, 1007 checked-and-failed entries. `font:check` passed
+without needing regeneration. `probes/` remains untracked.
 
 ## Run 276 - open KRTC systems coverage: signalling and rolling stock (2026-08-28)
 
