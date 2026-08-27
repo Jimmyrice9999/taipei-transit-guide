@@ -1,3 +1,67 @@
+## Run 280 - open TMRT (Taichung Metro) technology and rolling-stock coverage (2026-08-28)
+
+### Sourced
+
+TMRT had only lines+stations before this run — the state TRA, KRTC and TYMC
+were all in at the start of this session. Two subjects, fetched and parsed
+directly from raw HTML rather than search snippets (both URLs were already
+in the existing corpus, one from the system `_index.md`'s own sources).
+
+**Signalling and automation.** The operator's own FAQ states the Green
+Line runs "全自動無人駕駛" (full automatic driverless operation), with a
+28.4 km/h average and 75 km/h maximum cruising speed — but the page never
+attaches a GoA (Grade of Automation) number, so this page publishes
+automation grade as TBC rather than inferring one. The Taichung City
+Rapid Transit Systems Bureau's CJ900/CJ907 project record names the entire
+system-equipment contract's winning consortium (Kawasaki Heavy Industries,
+Alstom Transport, China Engineering Corporation) and its six subsystems —
+Operation Control System, Automatic Fare Collection, Communication, Depot
+Equipment, EMU and Power Supply — but never states which firm supplied
+which subsystem, and never names a branded signalling product (no CBTC,
+no product name of the kind TRA/KRTC/TYMC's pages each found at least one
+of).
+
+**Rolling stock.** The same operator FAQ gives fleet size (18 two-car
+trainsets) and precise car dimensions (22.17 m long, 2.98 m wide, 3.78 m
+high cars; 44.34 m full train; ~536 passenger capacity) — but, again, no
+manufacturer split within the three-firm CJ900/CJ907 consortium and no
+model/series name, unlike this project's other rolling-stock pages.
+
+### TBC and checked failures
+
+No branded signalling/train-control product name found for TMRT (checked
+2026-08-28) — genuinely absent from both sources read, not merely
+unsearched. No EMU model/series name found (checked 2026-08-28). Which
+CJ900/CJ907 consortium member supplied which subsystem is not stated by
+the one primary source read, for either the OCS or EMU subsystems — this
+page does not assume Alstom did signalling or Kawasaki did the cars merely
+from their respective general reputations. The session's web-search budget
+remained exhausted (checked 2026-08-28); both pages rest entirely on two
+already-known URLs, fetched as raw HTML and parsed directly rather than
+through a search-result summary.
+
+### Contradicted the corpus
+
+None — `docs/research/rail/tmrt/green-line.md` already recorded the
+driverless claim in passing without asserting a GoA number or signalling
+product, so nothing here contradicts it; this run adds detail the existing
+lead file did not have.
+
+### Conflicts found
+
+None found for either subject — no second source addressing the CJ900/CJ907
+contract or the automation/fleet claims was located this session.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing two count-signal (`18`)
+unsourced-assertion flags in index-page prose, reworded rather than cited
+(index pages carry no `sources:` block). `gate:full` run against a fresh
+build, fully clean on the first attempt this time — 234/234 tests, `facts`
+(17/17 cross-checks), `research`, `cite`, `claims`, `geometry:audit`,
+`a11y`. Generated audit JSONs restored, not committed. `probes/` remains
+untracked.
+
 ## Run 279 - KRTC and TYMC maintenance depots; TYMC signalling upgrade confirmed (2026-08-28)
 
 ### Sourced

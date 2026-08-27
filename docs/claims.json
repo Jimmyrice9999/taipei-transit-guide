@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 25883,
-    "tbc": 4541,
+    "sourced": 25902,
+    "tbc": 4545,
     "asserted": 0,
-    "meta": 70
+    "meta": 71
   },
   "files": [
     {
@@ -11489,6 +11489,22 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tmrt/rolling-stock/fleet-roster.md",
+      "sources": 2,
+      "sourced": 10,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/tmrt/rolling-stock/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tmrt/stations/g0.md",
       "sources": 7,
       "sourced": 17,
@@ -11636,6 +11652,22 @@
       "file": "content/rail/tmrt/stations/_index.md",
       "sources": 5,
       "sourced": 1,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/technology/signalling.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/technology/_index.md",
+      "sources": 0,
+      "sourced": 0,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
