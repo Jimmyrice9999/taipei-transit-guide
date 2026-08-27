@@ -1,5 +1,23 @@
 # For Jamie
 
+## Active handoff - Run 253 - 27 August 2026
+
+Run 253 publishes the electrification boundary for Taipei-region rail. Full
+DORTS records establish Taipei Metro’s 750 V DC third-rail architecture,
+24-pulse high-capacity and 12-pulse medium-capacity rectifiers, approximate
+traction-substation spacing and the Wenhu 161 kV → 22 kV → 750 V chain.
+Current New Taipei operator records specify 750 V third rail for Circular and
+Sanying and 750 V overhead plus lithium storage for Danhai and Ankeng.
+
+The Airport MRT remains TBC: the Railway Bureau’s technical power page says
+750 V DC lower-contact third rail, while its separate project overview says
+1,500 V DC overhead catenary. A signed as-built specification, current
+line-by-line traction asset register and detailed renewal/gap schedules remain
+open. `probes/` remains untracked.
+
+Next: continue the remaining 14-part brief with the next explicit systems gap,
+after this electrification conflict.
+
 ## Active handoff - Run 252 - 27 August 2026
 
 Run 252 publishes the signalling-generation boundary for the Taipei-region

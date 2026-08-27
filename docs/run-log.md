@@ -1,3 +1,44 @@
+## Run 253 - publish metro electrification boundary (2026-08-27)
+
+### Sourced
+
+Added a focused electrification page and research pair. Full DORTS records
+establish Taipei Metro’s 750 V DC third-rail architecture, 24-pulse
+high-capacity and 12-pulse medium-capacity rectifiers, approximate traction-
+substation spacing and the Wenhu 161 kV → 22 kV → 750 V chain. Current New
+Taipei operator records specify 750 V third rail for Circular and Sanying and
+750 V overhead plus lithium storage for Danhai and Ankeng.
+
+### TBC and checked failures
+
+The Airport MRT remains TBC because the Railway Bureau’s technical power page
+says 750 V DC lower-contact third rail while its separate project overview says
+1,500 V DC overhead catenary. A signed as-built specification, current
+line-by-line traction asset register, detailed light-rail overhead-gap/battery
+schedule and current substation renewal chronology remain TBC.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The new page makes the existing
+broad 750 V/third-rail wording system-specific and preserves the Railway
+Bureau’s Airport conflict instead of selecting one official value.
+
+### Conflicts found
+
+The two Railway Bureau pages publish incompatible Airport MRT voltage and
+collection values: 750 V DC lower-contact third rail versus 1,500 V DC
+overhead catenary. DORTS/NTMC third-rail and New Taipei light-rail
+overhead/storage records describe different systems and are not a conflict.
+
+### Gates
+
+`npm run cite` passed: 1,733 content files and 7,655 citations resolved (7,434
+primary, 221 secondary). `npm run verify` passed with 0 ASSERTED claims;
+research checked 220 files with 932 recorded failures, and the geometry and
+CVD audits were clean. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact cross-checks.
+`probes/` remains untouched and untracked.
+
 ## Run 252 - publish metro signalling generations (2026-08-27)
 
 ### Sourced

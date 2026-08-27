@@ -1758,6 +1758,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full official interpretation fetched: Article 6 expropriated MRT land cannot be used in the same plan for Article 7 joint development, and transfer to a third party requires clear legal authority."
+  - id: "rail-technology-metro-electrification-rb-airport-power"
+    title: "Power system"
+    titleOriginal: "電力系統"
+    publisher: "Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)"
+    url: "https://www.rb.gov.tw/zh-TW/main/main_71/main_80/main_87/main_92/"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full Railway Bureau technical page describes domestic metro 750 V DC third rail as the mainstream and says the operating Airport MRT uses a 750 V DC lower-contact third rail, with 3 BSS, 27 TSS and 22 SSS."
+  - id: "rail-technology-metro-electrification-rb-airport-project"
+    title: "Taiwan Taoyuan International Airport Access MRT system construction project"
+    titleOriginal: "臺灣桃園國際機場聯外捷運系統建設計畫"
+    publisher: "Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局)"
+    url: "https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_155203/"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full Railway Bureau project overview lists the Airport MRT core electrical system as 1,500 V DC overhead catenary; it conflicts with the Bureau’s separate technical power page and is retained as a published project-description value."
   - id: "rail-thsr-lines-thsr-rb-thsr"
     title: "Taiwan High-Speed Rail project"
     titleOriginal: "台灣高鐵"
@@ -3407,6 +3425,31 @@ large-scale station-area project.[^rail-projects-tod-joint-development-judicial-
 - [Xizhou construction and Meihe City review](https://www.ntpc.gov.tw/ch/home.jsp?dataserno=201406150005&id=28&mcustomize=news_view.jsp&parentpath=0%2C6%2C27) — primary; New Taipei City Government (新北市政府); accessed 2026-08-24.[^rail-projects-tod-joint-development-ntpc-meihe-news]
 - [Research on the Meihe City MRT joint-development case](https://www.rde.ntpc.gov.tw/userfiles/1160700/files/8_%E6%8D%B7%E9%81%8B%E8%81%AF%E5%90%88%E9%96%8B%E7%99%BC%E6%A1%88%E5%95%8F%E9%A1%8C%E4%B9%8B%E7%A0%94%E7%A9%B6-%E4%BB%A5%E7%BE%8E%E6%B2%B3%E5%B8%82%E7%82%BA%E4%BE%8B.pdf) — secondary; New Taipei City Land Administration (新北市政府地政局); accessed 2026-08-24.[^rail-projects-tod-joint-development-ntpc-meihe-research]
 - [Judicial Interpretation No. 743](https://web.law.ntpc.gov.tw/Scripts/FLAWDOC03.aspx?ccode=D&cno=743&rtype=C) — primary; Judicial Yuan (司法院); accessed 2026-08-24.[^rail-projects-tod-joint-development-judicial-743]
+
+## Taipei-region metro electrification — Airport MRT: an official conflict
+
+Discussed on [Taipei-region metro electrification](/rail/technology/metro-electrification/) in the source page's “Airport MRT: an official conflict” section.[^rail-technology-metro-electrification-rb-airport-power]
+
+### Airport MRT: an official conflict
+
+The Railway Bureau’s technical power page says domestic high- and
+medium-capacity metro systems use third rail as the mainstream arrangement.[^rail-technology-metro-electrification-rb-airport-power] It
+states that the operating Airport MRT uses a 750 V DC lower-contact third rail.
+It also describes three main substations, 27 traction substations and 22 station
+substations for the example system.[^rail-technology-metro-electrification-rb-airport-power]
+
+The Bureau’s separate Airport MRT project overview gives a different value in
+its core-electromechanical summary: 1,500 V DC supplied through overhead
+catenary.[^rail-technology-metro-electrification-rb-airport-project] Both are official Bureau pages, and the project
+overview is itself maintained as a project description. The current page
+therefore reports the Airport MRT collection method and voltage as TBC rather
+than silently choosing one record. A signed as-built electrical specification,
+operator asset register or dated acceptance record would settle the conflict.
+
+#### Sources for this entry
+
+- [Power system](https://www.rb.gov.tw/zh-TW/main/main_71/main_80/main_87/main_92/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-27.[^rail-technology-metro-electrification-rb-airport-power]
+- [Taiwan Taoyuan International Airport Access MRT system construction project](https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_155203/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-27.[^rail-technology-metro-electrification-rb-airport-project]
 
 ## Taiwan High Speed Rail — BOT contract and financial disputes
 
