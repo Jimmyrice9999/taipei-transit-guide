@@ -1,3 +1,45 @@
+## Run 251 - publish metro automation grades (2026-08-27)
+
+### Sourced
+
+Added a focused metro automation-grade page and research pair. Full DORTS
+records define GoA0–GoA4 and distinguish the operating layers; official pages
+name Wenhu, Circular and Sanying as GoA4, Tamsui-Xinyi and Bannan as GoA2
+examples, and Danhai and Ankeng as GoA1 examples. The page keeps formal GoA
+labels separate from CBTC, signalling block type and a temporary manual
+fallback.
+
+### TBC and checked failures
+
+The Airport MRT’s formal current grade, a complete current route-by-route
+register, and a current GoA3 route remain TBC. The sources checked show a
+manual fallback event for Airport MRT but do not turn that into a nominal grade.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The broad systems draft’s GoA
+statements are narrowed: named lines and examples are promoted only where an
+official source says them, while G/O and the Airport MRT are not inferred.
+
+### Conflicts found
+
+DORTS’s broad “early high-capacity GoA2” summary and the New Taipei explainer’s
+named Tamsui-Xinyi/Bannan examples are retained as different scopes. NTMC’s
+Sanying train page describes unattended CBTC while the New Taipei DORTS page
+supplies the formal GoA4 label. Taoyuan’s manual fallback notice is an
+operating-event record, not a nominal grade.
+
+### Gates
+
+`npm run verify` passed: build generated 2,748 static pages and 2,904 postbuild
+pages; 496,428 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,937 pages with no errors or warnings; citations
+resolved 7,641 markers (7,420 primary, 221 secondary); claims reported 25,472
+sourced, 4,503 TBC and 0 ASSERTED; research checked 218 files with 924 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 checks. `npm test` passed all 234 tests, including the fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 246 - tighten C341 procurement evidence (2026-08-27)
 
 ### Sourced

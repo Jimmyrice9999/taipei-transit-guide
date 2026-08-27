@@ -1,5 +1,20 @@
 # For Jamie
 
+## Active handoff - Run 251 - 27 August 2026
+
+Run 251 publishes the formal GoA automation boundary for Taipei-region metro
+systems. DORTS defines GoA0–GoA4 and the STO/DTO/UTO operating layers; official
+records name Wenhu, Circular and Sanying as GoA4, Tamsui-Xinyi and Bannan as
+GoA2 examples, and Danhai and Ankeng as GoA1 examples. The page keeps GoA
+separate from CBTC, signalling block type and fallback driving.
+
+The Airport MRT’s formal current GoA grade, a complete route-by-route grade
+register, and any current GoA3 route remain TBC. `probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA and
+automation-grade subject, starting with the next explicit systems or
+historical gap.
+
 ## Active handoff - Run 250 - 27 August 2026
 
 Run 250 tightens the TRA East Line gauge chronology. The full National Archives
