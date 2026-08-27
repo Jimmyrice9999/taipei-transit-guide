@@ -1,26 +1,19 @@
 # For Jamie
 
-## Active handoff - Run 268 - 27 August 2026
+## Active handoff - Run 269 - 27 August 2026
 
-Run 268 publishes TRA's maintenance-workshop network, and corrects a framing
-risk in the process: TRA's "depots" are actually two legally distinct
-tiers, not one flat list — three heavy-overhaul workshops (富岡/Fugang,
-潮州/Chaozhou, 花蓮/Hualien, each under its own bylaw per the Organization
-Act) versus seven lighter operating sections (機務段) plus four inspection
-sections (檢車段). The existing fleet-roster page's "operating groups"
-(Qidu/Taipei/Hsinchu etc.) are 機務段-level stabling assignments, not
-heavy-overhaul depot assignments — that distinction is now stated on the
-new page rather than left implicit. TRA's approved 2024-27 maintenance plan
-(65 pages, read in full) gives each workshop's planned annual volume and
-explains why EMU900/EMU3000 Level 3/4 work moved to Chaozhou (Fugang and
-Hualien were already at capacity).
+Run 269 is a one-line finding from running the full gate: `npm run build`
+(inside `gate:full`) failed fast because the generated conflicts index
+(`content/ticketing/guides/conflicts-index.md`) was stale — five content
+runs (264-268) had each added a "Conflicts" section without regenerating it,
+and `gate:fast` didn't check. Ran `npm run conflicts` to regenerate it (59
+records now, was fewer), and added `conflicts:check` to `gate:fast` itself
+(+1.5s, still ~7s total) so this can't recur silently. Full gate is running
+again now with the regenerated index.
 
-This is commit 5 of the run: per the tiered-gate policy, `npm run gate:full`
-(`verify && test`) is now due before continuing.
-
-`npm run gate:fast` passed after fixes (3 uncited sentences found and
-sourced); `npm run research` clean (235 files, 985 checked failures).
 `probes/` remains untracked.
 
-Next: run the full gate, then continue TRA-systems/closed-line subjects via
-parallel scouts.
+Next: once the full gate passes clean, continue TRA-systems/closed-line
+subjects via parallel scouts. Two more scouts (TRA tunnel fire/evacuation,
+TRA heritage rolling-stock preservation) are already running for the next
+batch.

@@ -786,6 +786,33 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Carries the 1997 reading of the withdrawal — 馬特拉與台北市政府捷運工程局發生合約糾紛後，將技術人員全數撤離."
+  - id: "rail-history-old-mountain-line-einfo-two-bridges-monument"
+    title: "Two Old Mountain Line iron bridges of recognised value designated as monuments"
+    titleOriginal: "具珍貴價值 舊山線2座鐵橋獲指定為古蹟"
+    publisher: "Taiwan Environmental Information Center (環境資訊中心)"
+    url: "https://e-info.org.tw/node/216883"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full article read directly. Source for the 2019 county-monument designation of Neishechuan and Yutengping iron bridges."
+  - id: "rail-history-old-mountain-line-culture-memory-bank-closure-reopening"
+    title: "The Old Mountain Line Railway's Closure and Reopening"
+    titleOriginal: "舊山線鐵道停駛與復駛"
+    publisher: "Culture Memory Bank 2.0, Ministry of Culture, citing Miaoli Literature no. 49 (2012), Miaoli County Cultural and Tourism Bureau"
+    url: "https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Event&id=233563"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full page read directly. Source for the 23–24 September 1998 changeover and the 5 June 2010 heritage-service resumption."
+  - id: "rail-history-old-mountain-line-motc-tourism-old-mountain-line"
+    title: "The Old Mountain Line Railway"
+    titleOriginal: "舊山線鐵道"
+    publisher: "Tourism Administration, Ministry of Transportation and Communications (交通部觀光署)"
+    url: "https://www.taiwan.net.tw/m1.aspx?sNo=0001110&id=A12-00494"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full official tourism-agency page, read directly. Source for the 1908 completion, the 402.326 m Shengxing elevation, the 8-tunnel/3-bridge/4-station count and the Rail Bike conversion."
   - id: "rail-history-public-art-dorts-general-public-art"
     title: "Taipei Metro public-art table"
     titleOriginal: "捷運公共藝術總表"
@@ -1803,6 +1830,51 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The official statement records the Control Yuan’s criticism that public entities supplied 37.42% and describes the supervision and BOT-principle dispute."
+  - id: "rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation"
+    title: "TRA grade separation"
+    titleOriginal: "臺鐵立體化"
+    publisher: "Wikipedia"
+    url: "https://zh.wikipedia.org/zh-tw/臺鐵立體化"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Lead index for grade-separation project dates and scope; the Railway Bureau's own project pages could not be fetched (see the research file's Checked and failed section), so this is the strongest source obtained for most projects."
+  - id: "rail-tra-facilities-level-crossings-ly-hualien-elevation"
+    title: "Legislative Yuan record: Hualien-Ji'an railway elevation"
+    titleOriginal: "花蓮市至吉安 7個平交道高架化有譜"
+    publisher: "Legislative Yuan (立法院)"
+    url: "https://www.ly.gov.tw/EngPages/Detail.aspx?nodeid=38514&pid=227478"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "A genuine primary government record confirming the Hualien elevation project's existence and its feasibility/planning-stage status, covering 7 named crossings."
+  - id: "rail-tra-technology-signalling-ttsb-puyuma-report"
+    title: "TTSB completes supplemental work on the Executive Yuan's Puyuma accident investigation and releases findings"
+    titleOriginal: "運安會完成行政院普悠瑪事故調查報告補強作業，於109年10月19日發布調查結果"
+    publisher: "Taiwan Transportation Safety Board (國家運輸安全調查委員會)"
+    url: "https://www.ttsb.gov.tw/1133/1178/1179/27718/post"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full official announcement, read directly. States that ATP was illegally isolated and the train exceeded the applicable speed, and that TRA failed to enforce its own existing rules; groups 27 recommendations by domain without itemising each."
+  - id: "rail-tra-technology-signalling-ltn-atp-isolation-speedlimit"
+    title: "60 km/h speed limit set for ATP failure; Puyuma and Taroko trains to be equipped by year end"
+    titleOriginal: "ATP失效設60公里速限 普悠瑪、太魯閣號年底前裝設"
+    publisher: "Liberty Times (自由時報)"
+    url: "https://news.ltn.com.tw/news/life/breakingnews/3321111"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Source for the ATP isolation speed-limit system's 60 km/h cap, NT$245 million budget and 52-trainset rollout scope."
+  - id: "rail-tra-technology-signalling-twreporter-atp-history"
+    title: "Transport safety: the black-hole loop — TRA's track keeps getting rougher; 30 years built only half an ATP"
+    titleOriginal: "【運安篇】安全黑洞迴圈：台鐵軌道愈修愈不平、30年只建了半套ATP"
+    publisher: "The Reporter (報導者)"
+    url: "https://www.twreporter.org/a/taiwan-railway-examination-report-transportation-safety"
+    accessed: "2026-08-27"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Investigative journalism sourced to a named railway expert. Source for the roughly 30-year, NT$3-4 billion cumulative upgrade figure and the alternative NT$270 million ATP isolation speed-limit system budget."
   - id: "rail-tymc-lines-green-line-dorts-green"
     title: "Taoyuan Metro Green Line project page"
     titleOriginal: "桃園市政府捷運工程局-捷運綠線"
@@ -2415,6 +2487,39 @@ second[^rail-history-matra-dispute-ltn-2005].
 
 - [Muzha metro line: Matra wins, Taipei to pay NT$1.64 billion](https://www.epochtimes.com/b5/5/7/23/n995027.htm) — secondary; 孫友廉, 陳曉宜, 鄭學庸, 自由時報, 23 July 2005 (via 大紀元 reprint); accessed 2026-08-06.[^rail-history-matra-dispute-ltn-2005]
 - [Wenhu line](https://zh.wikipedia.org/zh-tw/文湖線) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-06.[^rail-history-matra-dispute-zh-wenhu]
+
+## The Taiwan Railways Old Mountain Line — Heritage status and today's rail bike
+
+Discussed on [The Taiwan Railways Old Mountain Line](/rail/history/old-mountain-line/) in the source page's “Heritage status and today's rail bike” section.[^rail-history-old-mountain-line-einfo-two-bridges-monument]
+
+### Heritage status and today's rail bike
+
+Two of the 1938-era replacement iron bridges — 內社川鐵橋 (Neishechuan Iron
+Bridge) and the Yutengping replacement span — were designated Miaoli County
+monuments, approved by the county's Tangible Cultural Assets Review Committee
+on 10 March 2019 and announced the next day, making them the corridor's fourth
+and fifth protected heritage sites after Shengxing Station, Longteng Broken
+Bridge and Taichung's Taian Station.[^rail-history-old-mountain-line-einfo-two-bridges-monument] This page
+does not state the designation dates for Shengxing Station or Longteng Bridge
+themselves as established facts: they are reported by several secondary
+accounts, but the Ministry of Culture's own heritage database could not be
+read to confirm them directly (see Remaining gaps).
+
+The old alignment briefly returned to scheduled service on 5 June 2010, with
+a steam-hauled heritage train running Sanyi to the former Taian
+station.[^rail-history-old-mountain-line-culture-memory-bank-closure-reopening] Miaoli County Government has
+since redeveloped the corridor as 舊山線鐵道自行車 (Old Mountain Line Rail
+Bike), which the Tourism Administration describes as Taiwan's first rail-bike
+attraction, run under a "dynamic preservation" model rather than as a TRA
+passenger service.[^rail-history-old-mountain-line-motc-tourism-old-mountain-line] Sources disagree on
+exactly when the Rail Bike itself began operating, and this page does not
+pick between them.
+
+#### Sources for this entry
+
+- [Two Old Mountain Line iron bridges of recognised value designated as monuments](https://e-info.org.tw/node/216883) — secondary; Taiwan Environmental Information Center (環境資訊中心); accessed 2026-08-27.[^rail-history-old-mountain-line-einfo-two-bridges-monument]
+- [The Old Mountain Line Railway's Closure and Reopening](https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Event&id=233563) — secondary; Culture Memory Bank 2.0, Ministry of Culture, citing Miaoli Literature no. 49 (2012), Miaoli County Cultural and Tourism Bureau; accessed 2026-08-27.[^rail-history-old-mountain-line-culture-memory-bank-closure-reopening]
+- [The Old Mountain Line Railway](https://www.taiwan.net.tw/m1.aspx?sNo=0001110&id=A12-00494) — primary; Tourism Administration, Ministry of Transportation and Communications (交通部觀光署); accessed 2026-08-27.[^rail-history-old-mountain-line-motc-tourism-old-mountain-line]
 
 ## Public art in the Taipei-region rail network — Conflicts and gaps
 
@@ -3466,6 +3571,63 @@ The original financial model did not remain unchanged. The Railway Bureau says a
 - [Taiwan High-Speed Rail project](https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-24.[^rail-thsr-lines-thsr-rb-thsr]
 - [Investigation into whether government investment in the High-Speed Rail company violated BOT principles](https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-bot]
 - [High-Speed Rail did not fulfil the government-zero-investment commitment](https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-funding]
+
+## Taiwan Railways level crossings — Elimination by grade separation
+
+Discussed on [Taiwan Railways level crossings](/rail/tra/facilities/level-crossings/) in the source page's “Elimination by grade separation” section.[^rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation]
+
+### Elimination by grade separation
+
+TRA has been eliminating crossings city by city through grade-separation
+megaprojects for decades, though this page's confidence in the individual
+project details is limited: the Railway Bureau's own project pages, the
+natural primary source, returned no readable content on every fetch
+attempted. Taipei's underground project reached full through-running on 24
+October 2011.[^rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation] Kaohsiung's underground project's
+first phase eliminated seven named surface crossings, with the last
+surface-running train departing 13 October 2018; sources disagree on when
+its second phase was completed, and this page publishes both years found
+rather than choosing one. Hualien's own elevation project, covering seven
+crossings between Hualien and Ji'an, is confirmed by Legislative Yuan
+records to remain at the feasibility and planning stage, not under
+construction.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
+
+#### Sources for this entry
+
+- [TRA grade separation](https://zh.wikipedia.org/zh-tw/臺鐵立體化) — secondary; Wikipedia; accessed 2026-08-27.[^rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation]
+- [Legislative Yuan record: Hualien-Ji'an railway elevation](https://www.ly.gov.tw/EngPages/Detail.aspx?nodeid=38514&pid=227478) — primary; Legislative Yuan (立法院); accessed 2026-08-27.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
+
+## Taiwan Railways train control and signalling — What the 2018 Puyuma accident changed
+
+Discussed on [Taiwan Railways train control and signalling](/rail/tra/technology/signalling/) in the source page's “What the 2018 Puyuma accident changed” section.[^rail-tra-technology-signalling-ttsb-puyuma-report]
+
+### What the 2018 Puyuma accident changed
+
+The Taiwan Transportation Safety Board's own investigation into the 2018
+Puyuma derailment found that ATP had been illegally isolated and the train
+was travelling over the applicable speed, attributing part of the root cause
+to TRA's own failure to enforce its existing rules against unauthorised ATP
+isolation; the report issued 27 recommendations, though the published
+announcement does not itemise which specifically concern ATP or signalling
+design as distinct from management and procedure.[^rail-tra-technology-signalling-ttsb-puyuma-report]
+
+In response, TRA built an "ATP isolation speed-limit system" that forces a
+speed cap even when ATP itself is switched off. Sources disagree on both its
+budget and its cap: one report gives a 60 km/h limit and a NT$245 million
+budget covering 52 systems across 18 Puyuma and 8 Taroko
+trainsets;[^rail-tra-technology-signalling-ltn-atp-isolation-speedlimit] another gives a NT$270 million
+budget.[^rail-tra-technology-signalling-twreporter-atp-history] A separate, earlier report describes an
+initial ministerial directive for a 65 km/h cap that explicitly did not rule
+out going lower — consistent with, but not confirmed as, the same rollout.
+Post-accident operating rules also require drivers to check ATP at both cab
+ends before departure and require a faulty-ATP train be swapped rather than
+dispatched.
+
+#### Sources for this entry
+
+- [TTSB completes supplemental work on the Executive Yuan's Puyuma accident investigation and releases findings](https://www.ttsb.gov.tw/1133/1178/1179/27718/post) — primary; Taiwan Transportation Safety Board (國家運輸安全調查委員會); accessed 2026-08-27.[^rail-tra-technology-signalling-ttsb-puyuma-report]
+- [60 km/h speed limit set for ATP failure; Puyuma and Taroko trains to be equipped by year end](https://news.ltn.com.tw/news/life/breakingnews/3321111) — secondary; Liberty Times (自由時報); accessed 2026-08-27.[^rail-tra-technology-signalling-ltn-atp-isolation-speedlimit]
+- [Transport safety: the black-hole loop — TRA's track keeps getting rougher; 30 years built only half an ATP](https://www.twreporter.org/a/taiwan-railway-examination-report-transportation-safety) — secondary; The Reporter (報導者); accessed 2026-08-27.[^rail-tra-technology-signalling-twreporter-atp-history]
 
 ## Taoyuan Green Line — Construction approvals and progress
 

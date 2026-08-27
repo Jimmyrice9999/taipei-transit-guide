@@ -1,4 +1,29 @@
 
+## Run 269 - regenerate stale conflicts index; harden the fast gate (2026-08-27)
+
+### What happened
+
+Running `npm run gate:full` after commit 5 (per the tiered-gate policy from
+Run 264) failed immediately: `npm run build`'s `conflicts:check` step found
+the generated conflicts index stale. Runs 264-268 each added prose
+"Conflicts" sections to their content pages without regenerating
+`content/ticketing/guides/conflicts-index.md`, and `gate:fast` — cite,
+markers, the fast unit-test subset — had no step that would have caught
+this, so it went undetected through five green fast-gate runs.
+
+Fixed by running `npm run conflicts` (regenerated: 59 records, up from
+before this run's five new pages). Also added `npm run conflicts:check` to
+`gate:fast` itself: measured at 1.5s standalone, it brings the fast gate
+from ~6s to ~7.4s, still well under the one-minute target, and closes this
+blind spot going forward rather than leaving it for the next full-gate run
+to catch.
+
+### Gates
+
+`npm run gate:fast` (now including `conflicts:check`) passes clean at 107/107
+tests. `npm run gate:full` is re-running with the regenerated index; result
+recorded in the next log entry once it completes.
+
 ## Run 268 - publish TRA maintenance-workshop network (2026-08-27)
 
 ### Sourced
