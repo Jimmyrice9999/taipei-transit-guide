@@ -1,5 +1,39 @@
 # For Jamie
 
+## Active handoff - Run 257 - 27 August 2026
+
+Run 257 publishes the fire-and-evacuation systems boundary. Full DORTS records
+establish the layered boundary between tunnel hydrants, evacuation signs,
+ventilation, smoke-exhaust fans, dedicated evacuation connections, life-safety
+power, fire-resistant smoke equipment, vehicle egress and emergency operation.
+They also publish paired-station smoke-control direction, station detector to
+damper/fan operation, Circular Line walkway placement, and the separate
+high-capacity/Circular gangway versus VAL256 side-door boundary.
+
+The 2021 DORTS design study publishes a named Y28-Y27 Circular Line scenario:
+the 578 m model takes 1,873 seconds against an assumed 1,800-second train
+fire-resistance boundary, while a 542 m alternative takes 1,783 seconds. That
+is kept as a design-study result, not a current line-wide criterion. The full
+2025 CNA account corrects the old shorthand: the station manager used the
+maintenance walkway to reach and manually move the train; about 150 passengers
+alighted at Xinpu Minsheng after the train reached the station. It was not a
+passenger foot evacuation along the walkway.
+
+A current line-by-line asset register, route-by-route smoke modes and
+degraded-power commands, as-built Circular Line escape-path performance, a
+primary NTMC incident release for the 30 December 2025 warning, and
+vehicle-specific instructions for every metro fleet remain TBC. `probes/`
+remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed. The final gates reported 1,737 content files, 7,689 citations, 0
+ASSERTED claims, 224 research files with 951 checked failures, 2,922 postbuild
+pages, 503,773 clean internal links and 234 passing tests. The new Chinese
+characters required the content font-subset update.
+
+Next: continue the remaining 14-part brief with the depot maintenance-level
+definitions gap, one subject at a time.
+
 ## Active handoff - Run 256 - 27 August 2026
 
 Run 256 publishes the Taipei Metro seismic-design boundary. Full DORTS records

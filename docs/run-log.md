@@ -1,3 +1,66 @@
+## Run 257 - publish metro fire and evacuation boundary (2026-08-27)
+
+### Sourced
+
+Added a focused fire-and-evacuation page and research pair. Full DORTS records
+establish the layered tunnel boundary: hydrants, evacuation signs, tunnel
+ventilation, smoke-exhaust fans and dedicated evacuation connections; separate
+vehicle, station/tunnel, ventilation, power, communications and compartment
+inspection scopes; life-safety power; and 250 C / one-hour fire resistance for
+the listed smoke and tunnel-ventilation equipment. They also publish paired-
+station smoke control, control-centre airflow direction, a 2.5 m/s minimum and
+11 m/s maximum practice value, and station detector-to-damper/fan operation.
+
+The vehicle record distinguishes 1.1-1.4 m open gangways on high-capacity and
+Circular Line trains from VAL256 side-door evacuation. New Taipei DORTS places
+the Circular elevated emergency path between tracks on ordinary viaducts and
+beside the track on stacked viaducts, level with the train floor. The 2021 DORTS
+seminar models the named Y28-Y27 case at 578 m / 1,873 seconds and a 542 m /
+1,783-second alternative against an assumed 1,800-second fire-resistance time.
+NTMC's current train page lists an emergency intercom and door-opening device,
+and its published security procedure directs a train to the next station while
+preparing that station for evacuation.
+
+### TBC and checked failures
+
+A current line-by-line fire/life-safety asset register, route-by-route
+smoke-control mode table, degraded-power commands, as-built Circular Line
+escape-path lengths and performance criteria, a primary NTMC incident release
+for the 30 December 2025 warning, and current vehicle-specific evacuation
+instructions remain TBC. The full official pages checked describe system
+families and selected examples, not one current register for every line. The
+2021 PDF does not identify its named design model as an as-built or current
+operating criterion. No matching full NTMC incident release was found for the
+CNA account.
+
+### Contradicted the corpus
+
+The old `docs/research/rail/systems.md` lead described the 2025 Circular Line
+event as a walkway evacuation. The full CNA report says the station manager
+used the maintenance walkway to reach the train and switch it to manual
+driving, while the passengers alighted after the train reached Xinpu Minsheng.
+The lead now points to the sourced boundary page and preserves that distinction.
+
+### Conflicts found
+
+DORTS's tunnel volume prints an 11 m/s maximum practice value, while its
+MEP/fire volume describes an upper value below 11.2 m/s as the NFPA 130
+recommendation. The sources do not reconcile rounding, adopted practice versus
+recommendation, or design editions, so both scopes remain published. The 2021
+Y28-Y27 simulation is also explicitly kept separate from a current line-wide
+register, and the CNA event wording remains secondary evidence rather than a
+primary NTMC incident record.
+
+### Gates
+
+`npm run cite` passed: 1,737 content files and 7,689 citations resolved (7,467
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,922 pages with no missing glyphs, 503,773 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact cross-checks.
+`probes/` remains untouched and untracked.
+
 ## Run 256 - publish metro seismic design boundary (2026-08-27)
 
 ### Sourced

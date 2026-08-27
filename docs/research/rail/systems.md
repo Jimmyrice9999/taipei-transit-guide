@@ -259,8 +259,7 @@ concrete" version is circulating and it's wrong.
   value, while conventional Wenhu, Circular, Sanying, Airport MRT and Taoyuan
   Green Line infrastructure values remain TBC
 - The [metro seismic-design boundary](../../../content/rail/technology/metro-seismic-design.md): the early 0.18 g basis, later 0.23/0.24 g scopes, the 2006 Circular bridge-code date, and comparison with current building-code levels
-- Fire and evacuation systems, given the 1993 Wenhu fire and the 2025 Circular Line
-  walkway evacuation
+- The [metro fire-and-evacuation boundary](../../../content/rail/technology/metro-fire-and-evacuation.md): fixed fire systems, smoke-control modes, vehicle and viaduct egress, and the 2025 Circular Line emergency-response record
 
 ## Sources
 
