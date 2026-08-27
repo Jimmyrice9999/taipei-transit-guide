@@ -1,3 +1,72 @@
+## Run 281 - open TMRT facilities and operations coverage (2026-08-28)
+
+### Sourced
+
+Completes the same four-section (technology/rolling-stock/facilities/
+operations) structure for TMRT that TRA, KRTC and TYMC now all have.
+
+**Accessibility.** The operator's dedicated station-service-facilities page
+names ten accessibility features with full descriptions — accessible
+ramps, parking, guide signage, tactile warning tiles, low ticket machines,
+accessible gates with a staff call button, fully accessible elevators
+(braille panel, voice system, intercom), a platform wheelchair waiting
+zone aligned to the train's first door, emergency call buttons in
+restrooms/nursing rooms, and station intercoms. The page itself carries a
+visible "1 2" pagination control; page 2's content is client-side rendered
+and could not be retrieved by a direct fetch this session — recorded as a
+confirmed, not merely unsearched, gap.
+
+**Ridership.** The operator's monthly ridership-statistics PDF archive
+(`資訊公開專區`) yielded the most recent entry, July 2026: a daily figure
+for every date, a monthly total (1,484,410) and a daily average (47,884)
+that arithmetically cross-check each other almost exactly. One date,
+2026/07/10, is a sharp outlier with no stated cause. The table's own
+column-header text did not survive `pdftotext` extraction (a CJK font
+issue), so what precisely is being counted rests on the file's own title
+("運量統計表") rather than a read label — published as TBC, not asserted.
+The operator's 2024 annual report, which might have settled that
+definition, hit a more severe PDF failure: an `Adobe-CNS1` character
+collection `pdftotext` could not decode at all, leaving only the isolated
+English word "ridership" extractable from the entire document.
+
+### TBC and checked failures
+
+TMRT accessibility page 2 remains unread (client-side pagination, checked
+2026-08-28). No numeric accessibility-completion figure or named
+regulatory standard found (checked 2026-08-28). The 2024 annual report PDF
+is unreadable with this session's tooling — a distinct, more severe
+extraction failure than the column-header gap in the monthly ridership
+table (checked 2026-08-28). No station-by-station ridership breakdown
+found; the monthly table is system-wide only (checked 2026-08-28). The
+2026-07-10 ridership anomaly's cause is not stated by the source and not
+guessed at. Web-search budget remained exhausted throughout (checked
+2026-08-28); every finding rests on direct fetches of URLs discovered by
+following links already on pages already fetched this session.
+
+### Contradicted the corpus
+
+None — no existing TMRT research file addressed accessibility or
+ridership before this run.
+
+### Conflicts found
+
+None — no second source addressing either subject was located this
+session.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing two claims-ratchet flags (a
+count-signal digit in an index-page sentence, a date-signal digit in a
+Remaining-gaps sentence — both reworded rather than cited). `gate:full`
+run against a fresh build twice: the first run caught a real bug
+`gate:fast` structurally cannot see — the new `operations/_index.md`
+description at 33 characters, under the 40-character discoverability
+minimum (the same class of bug Run 278 hit); fixed by lengthening it. The
+second run was fully clean — 234/234 tests, `facts` (17/17 cross-checks),
+`research`, `cite`, `claims`, `geometry:audit`, `a11y`, all against a fresh
+build. Generated audit JSONs restored, not committed. `probes/` remains
+untracked.
+
 ## Run 280 - open TMRT (Taichung Metro) technology and rolling-stock coverage (2026-08-28)
 
 ### Sourced

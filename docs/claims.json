@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 25902,
-    "tbc": 4545,
+    "sourced": 25916,
+    "tbc": 4550,
     "asserted": 0,
     "meta": 71
   },
@@ -11473,6 +11473,22 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tmrt/facilities/accessibility.md",
+      "sources": 1,
+      "sourced": 7,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/facilities/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tmrt/lines/green-line.md",
       "sources": 12,
       "sourced": 15,
@@ -11482,6 +11498,22 @@
     },
     {
       "file": "content/rail/tmrt/lines/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/operations/ridership.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/operations/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
