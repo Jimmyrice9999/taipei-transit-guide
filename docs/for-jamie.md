@@ -1,39 +1,32 @@
 # For Jamie
 
-## Active handoff - Run 283 - 27 August 2026
+## Active handoff - Run 284 - 27 August 2026
 
-Run 283 adds TYMC fare history, upgrading a thin existing lead (the
-airport-mrt.md research had only a search-synthesis NT$160 figure, flagged
-as unverified). Two TYMC ticketing pages fetched directly turned up a real
-fare-reform event the corpus had entirely missed: on 2 January 2025, TYMC
-replaced its whole season-pass line with a new "超值定期票" scheme —
-different day-counts, different discount tiers on every duration, not a
-rebrand. Six-month fee-free exchange/refund window for old-pass holders.
+Run 284 adds KRTC fare history, the parallel to Run 283's TYMC page. Nine
+KRTC ticketing pages fetched directly (site redirects to a different URL
+pattern than guessed). Concessions: social-welfare 50%, group (10+) 80%,
+school groups (20+) 50% weekdays-only, bicycle NT$100/80. Time passes with
+real dated NT$ figures: 24h/48h unlimited NT$180/280; QR day passes
+NT$150-325 effective from 1 January 2024; MeN Go multi-modal pass
+NT$299-499 (physical) / NT$199-399 (QR) for 24/48/72h, operated by a
+separate company KRTC sells on commission. TPASS x MeN Go has no price on
+KRTC's own page.
 
-The base single fare in NT$ is still unconfirmed — both TYMC pages
-reference "公告票價" only as a formula variable behind a JS fare
-calculator; TDX's ODFare endpoint needs an API key this session doesn't
-have. This is now a *confirmed* gap (TYMC's static pages genuinely don't
-state it) rather than the previous session's unverified gap.
+Same confirmed gap as TYMC: KRTC's own single-ticket page states price
+follows a chart posted physically at station machines — not reproduced as
+text anywhere on the site. Both operators now carry this as a specific,
+source-confirmed gap rather than an unexplored one.
 
-`gate:fast` caught a real scope-statements violation: a header and a
-sentence both used "this page cannot yet ..." phrasing, which
-tests/scope-statements.test.mts correctly flags as process-commentary that
-belongs in docs/research, not reader-facing content. Reworded both to
-state the gap as a source fact rather than a page limitation.
-
-Full local validation across Runs 279-283 (KRTC/TYMC depots, TMRT
+Full local validation across Runs 279-284 (KRTC/TYMC depots, TMRT
 tech+rolling-stock, TMRT facilities+operations, KRTC Yellow Line, TYMC
-fares): `gate:fast` clean every time, `gate:full` clean against a fresh
-build every time. Audit JSONs restored each time, not committed. `probes/`
-remains untracked.
+fares, KRTC fares): `gate:fast` clean every time, `gate:full` clean
+against a fresh build every time. Audit JSONs restored each time, not
+committed. `probes/` remains untracked.
 
-CI note from Run 282 (not re-checked since, per the no-polling rule):
-commit faa1ade1's (Run 278) "Tests" job was stuck in_progress 50+ minutes
-past normal, not auto-cancelled by later pushes unlike three other
-commits — still the same unresolved stuck-runner pattern, still outside
-what's fixable from here.
+CI note from Run 282 (last checked, not polled since): commit faa1ade1's
+(Run 278) "Tests" job was stuck in_progress well past normal duration and
+wasn't auto-cancelled by later pushes unlike other commits — unresolved,
+outside what's fixable from this session.
 
-Next: KRTC fare history (parallel gap to TYMC's), or continuing the
-brief's remaining Parts 2-8 (TOD, interactive features) across any
-operator.
+Next: TMRT fare history (the third parallel), or continuing the brief's
+remaining Parts (TOD, interactive features) across any operator.

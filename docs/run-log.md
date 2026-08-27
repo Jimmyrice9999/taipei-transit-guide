@@ -1,3 +1,56 @@
+## Run 284 - add KRTC fare history (2026-08-28)
+
+### Sourced
+
+First dedicated fare-history page for Kaohsiung Metro, the parallel to
+Run 283's TYMC page. Nine ticket-type pages fetched and parsed directly
+from raw HTML (following redirects the site's own category pages issued
+to a different URL pattern than the one guessed).
+
+Concessions: social-welfare single ticket 50% (seniors 65+, disabled +1
+companion); group ticket (10+) 80%/person; school field-trip groups (20+)
+50%, weekdays only; bicycle ticket NT$100 full / NT$80 discounted. Time
+passes with real, stated NT$ figures: 24h/48h unlimited metro NT$180/280;
+QR-code 1/2-day metro-only NT$150/250 and metro+LRT NT$200/325, explicitly
+effective from 1 January 2024; MeN Go multi-modal pass (metro+LRT+bus+
+coach+limited ferry+YouBike, operated by a separate company, KRTC sells
+on commission) NT$299/399/499 physical or NT$199/299/399 QR for 24/48/72h.
+A TPASS x MeN Go monthly pass exists as a named product but KRTC's own
+page states no price, deferring to the other operator's site.
+
+### TBC and checked failures
+
+The base/maximum single fare in NT$ is confirmed absent from KRTC's own
+site text — the single-ticket page states price follows a fare chart
+posted physically at station machines, not reproduced anywhere as text
+(checked 2026-08-28) — the same class of gap independently found for TYMC
+in Run 283. TPASS x MeN Go's price is TBC, KRTC's page defers elsewhere
+(checked 2026-08-28). Whether any of the fixed-price products have changed
+price over time beyond the one explicit 2024 date is TBC (checked
+2026-08-28). Web-search budget remained exhausted; TDX's ODFare endpoint
+returned "Valid API Key Required" with no credentials configured this
+session (checked 2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered KRTC fares.
+
+### Conflicts found
+
+None found — no second source addressing any of these fares was located
+this session.
+
+### Gates
+
+`gate:fast` caught two claims-ratchet flags in both places this content
+was linked from (the operations index and the system index) — both
+sentences tripped the superlative-signal words "never" and "only," not a
+digit; reworded both to avoid the trigger words entirely. `gate:full` run
+against a fresh build, fully clean — 234/234 tests, `facts` (17/17
+cross-checks), `research`, `cite`, `claims`, `geometry:audit`, `a11y`.
+Generated audit JSONs restored, not committed. `probes/` remains
+untracked.
+
 ## Run 283 - add TYMC fare history (2026-08-28)
 
 ### Sourced
