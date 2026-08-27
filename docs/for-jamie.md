@@ -1,5 +1,22 @@
 # For Jamie
 
+## Active handoff - Run 252 - 27 August 2026
+
+Run 252 publishes the signalling-generation boundary for the Taipei-region
+metro. Full DORTS records identify the high-capacity R/G/O/BL corridors as an
+Alstom (formerly GRS) conventional fixed-block, audio-frequency-track-circuit
+family; Wenhu as Bombardier CITYFLO 650 moving-block CBTC; and Circular as
+Hitachi CBTC with the same system identified on Sanying. The page separates
+signalling architecture from automation grade and preserves the documented
+Muzha-to-Neihu signalling renewal as a historical boundary.
+
+A current line-by-line equipment/software register, complete high-capacity
+renewal chronology, comparable Airport/light-rail generation labels and a
+route-by-route degraded-mode matrix remain TBC. `probes/` remains untracked.
+
+Next: continue the remaining 14-part brief with the next explicit systems gap,
+starting with electrification specification.
+
 ## Active handoff - Run 251 - 27 August 2026
 
 Run 251 publishes the formal GoA automation boundary for Taipei-region metro

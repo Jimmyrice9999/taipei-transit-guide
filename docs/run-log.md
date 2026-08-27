@@ -1,3 +1,44 @@
+## Run 252 - publish metro signalling generations (2026-08-27)
+
+### Sourced
+
+Added a focused signalling-generation page and research pair. Full DORTS
+records identify the high-capacity R/G/O/BL corridors as an Alstom (formerly
+GRS) conventional fixed-block, audio-frequency-track-circuit family; Wenhu as
+Bombardier CITYFLO 650 moving-block CBTC; and Circular as Hitachi CBTC with the
+same system identified on Sanying. The page also records the documented
+Muzha-to-Neihu signalling renewal and keeps signalling architecture separate
+from formal automation grade.
+
+### TBC and checked failures
+
+A current line-by-line equipment/software register, complete high-capacity
+renewal chronology, comparable Airport/light-rail generation labels and a
+route-by-route degraded-mode matrix remain TBC. No line assignment is inferred
+from a supplier name or from CBTC/ATP/ATO terminology alone.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The existing broad systems page
+already carried the family-level signalling facts; this focused page documents
+their primary-source boundaries and narrows the open generation/renewal claims.
+
+### Conflicts found
+
+The DORTS summary uses broad historical shorthand—early high-capacity GoA2 ATC
+versus CBTC GoA4—while the technical pages identify particular corridors and
+systems. Those are retained as different scopes. The source records do not
+provide a current comparable software or fallback register for every line.
+
+### Gates
+
+`npm run cite` passed: 1,732 content files and 7,647 citations resolved (7,426
+primary, 221 secondary). `npm run verify` passed with 0 ASSERTED claims;
+research checked 219 files with 928 recorded failures, and the geometry and CVD
+audits were clean. The explicit `npm run nav` gate passed all 19 checks. The
+explicit `npm test` gate passed all 234 tests and all 17 fact cross-checks.
+`probes/` remains untouched and untracked.
+
 ## Run 251 - publish metro automation grades (2026-08-27)
 
 ### Sourced
