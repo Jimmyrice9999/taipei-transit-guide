@@ -1,3 +1,47 @@
+## Run 254 - publish operator control-centre boundary (2026-08-27)
+
+### Sourced
+
+Added a focused control-centre page and research pair. TRTC’s published 2014
+arrangement names two physical centres, at the Jiojiu Control Building and
+Neihu Depot; its current responsibilities page still lists High-capacity and
+Wenhu control groups. TYMC currently lists separate Airport Line and Green Line
+control centres, each with dispatch, monitoring, emergency and maintenance-
+coordination duties. NTMC’s current organization chart separates light-rail and
+medium-capacity operations, while its safety release documents control-centre
+CCTV monitoring and emergency train/station direction.
+
+### TBC and checked failures
+
+A current TRTC physical line-assignment register, NTMC’s exact physical centre
+and backup topology, TYMC room locations/staffing/redundancy, and any
+cross-operator fallback protocol remain TBC. The DORTS Sanying design PDF was
+checked but its 14.7 MB size exceeded the full-page fetch limit; its snippet was
+not used as evidence.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The existing systems note correctly
+identified control-centre arrangements as an open gap; this page replaces the
+uncited outline with operator-specific published boundaries and keeps current
+physical topology open where the sources do not provide it.
+
+### Conflicts found
+
+No direct factual conflict was found. TRTC’s 2014 physical-centre description
+and its current organizational grouping describe different scopes. NTMC’s two
+operating divisions are not treated as evidence of exactly two physical control
+rooms.
+
+### Gates
+
+`npm run cite` passed: 1,734 content files and 7,660 citations resolved (7,439
+primary, 221 secondary). `npm run verify` passed with 0 ASSERTED claims;
+research checked 221 files with 937 recorded failures, and the geometry and CVD
+audits were clean. The explicit `npm run nav` gate passed all 19 checks. The
+explicit `npm test` gate passed all 234 tests and all 17 fact cross-checks.
+`probes/` remains untouched and untracked.
+
 ## Run 253 - publish metro electrification boundary (2026-08-27)
 
 ### Sourced

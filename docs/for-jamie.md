@@ -1,5 +1,24 @@
 # For Jamie
 
+## Active handoff - Run 254 - 27 August 2026
+
+Run 254 publishes the operator-level control-centre boundary. TRTC’s published
+2014 arrangement names two physical centres, at the Jiojiu Control Building and
+Neihu Depot; its current responsibilities page still lists High-capacity and
+Wenhu control groups. TYMC currently lists separate Airport Line and Green Line
+control centres. NTMC’s current organization chart separates light-rail and
+medium-capacity operations, while its safety release documents control-centre
+CCTV monitoring and emergency train/station direction.
+
+A current TRTC physical line-assignment register, NTMC’s exact physical centre
+and backup topology, TYMC room locations/staffing/redundancy, and any
+cross-operator fallback protocol remain TBC. `probes/` remains untracked.
+One large DORTS Sanying design PDF could not be fetched in full and was not used
+as evidence.
+
+Next: continue the remaining 14-part brief with depot maintenance-level
+definitions or the seismic/fire-safety gaps, one subject at a time.
+
 ## Active handoff - Run 253 - 27 August 2026
 
 Run 253 publishes the electrification boundary for Taipei-region rail. Full
