@@ -87,3 +87,5 @@ The [timetable and service-pattern record](/rail/tra/operations/timetable-and-se
 The operator also exposes a date/station/train query and a dated XML archive, which are recorded as separate data layers because this pass did not turn them into a verified joined dataset.[^tra-timetable-query][^tra-timetable-xml-archive]
 
 The [freight and transportation record](/rail/tra/operations/freight-and-transportation/) keeps the monthly report's freight measures separate from passenger performance and timetable-family data.[^tra-monthly-2026-06]
+
+The [fare and ticket-type record](/rail/tra/operations/fares/) covers a published charter-train rate table and a dated free-seating rollout, while the ordinary single-ticket base fare stays behind an unfetched calculator tool — the same gap this project separately found at each metro operator it has checked.

@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26001,
-    "tbc": 4560,
+    "sourced": 26019,
+    "tbc": 4561,
     "asserted": 0,
     "meta": 74
   },
@@ -11893,6 +11893,14 @@
       "sources": 3,
       "sourced": 1,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tra/operations/fares.md",
+      "sources": 1,
+      "sourced": 18,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },

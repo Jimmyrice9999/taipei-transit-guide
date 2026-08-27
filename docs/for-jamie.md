@@ -1,35 +1,32 @@
 # For Jamie
 
-## Active handoff - Run 288 - 27 August 2026
+## Active handoff - Run 289 - 28 August 2026
 
-Run 288 completes a three-run TOD/joint-development sequence (KRTC 286,
-TYMC 287, now TMRT) — all three non-Taipei operators covered. TMRT was
-the standout: unlike KRTC (JS-rendered case page) and TYMC (case page
-timed out 3x), every TCRT page worked, yielding a genuine seven-site case
-list for the Green Line (G5, G6, G8, G8a, G9-1, G9-2, G11) with real
-investors, site figures and dated timelines.
+Run 289 adds TRA's own fare page — the fourth and final operator to get
+one, extending past the three-operator metro fare set (Runs 283-285).
+Richer than expected: a full published charter-train rate table (5
+distance tiers × 3 classes, NT$/person/km), a dated free-seating rollout
+(1 July 2026, named EMU3000 train numbers, 95% adult fare), group-ticket
+tiers, and Puyuma/Taroko round-trip volume discounts effective 1 January
+2026.
 
-Highlights: G8 (Wenhua Senior High School) has a complete contract→
-groundbreaking→handover record (2014→2017→2021), now marketed for sale —
-the only finished lifecycle among the seven. G9-2 (City Hall south) has
-no investor at all, still in pre-solicitation despite sitting next to
-G9-1 which already has one. G6's ~4.5-year gap between signed contract
-(Dec 2020) and reported construction start (Jun 2025) is recorded
-unexplained, as the source states it. All three cities' programmes share
-the same central legal basis (Mass Rapid Transit Act + Land Development
-Regulations).
+Same cross-operator pattern confirmed a fourth time: TRA's own page also
+defers the ordinary single-ticket base fare to an unfetched calculator
+tool rather than stating it as text — matching TYMC, KRTC and TMRT. Nine
+named regional TPASS-style passes plus several other named products
+(season pass, TR-PASS, etc.) are confirmed to exist but weren't followed
+through to their own pages this session.
 
-Full local validation across Runs 279-288 (10 commits this
-continuation): `gate:fast` clean every time, `gate:full` clean against a
-fresh build every time. Audit JSONs restored each time, not committed.
-`probes/` remains untracked.
+Full local validation across Runs 279-289 (11 commits this
+continuation): `gate:fast` clean every time (after one scope-statements
+fix — a "this page does not yet..." header, same class hit twice before),
+`gate:full` clean against a fresh build every time. Audit JSONs restored
+each time, not committed. `probes/` remains untracked.
 
-CI status unchanged since Run 286's check — not re-polled this run.
+All four Taiwan rail operators (TRA, KRTC, TYMC, TMRT) now have technology,
+rolling-stock, facilities, operations/ridership, and operations/fares
+coverage. KRTC/TYMC/TMRT also have projects/TOD coverage.
 
-All four operators (TRA, KRTC, TYMC, TMRT) now share: technology,
-rolling-stock, facilities, operations (ridership+fares) sections, and
-KRTC/TYMC/TMRT now also share a projects/TOD section. Next: continuing
-other Parts of the brief (interactive features), or deeper gaps within
-any operator (KRTC Yellow Line depot name/opening date, TMRT accessibility
-page 2, base single-fare figures if a browser-capable fetch becomes
-available).
+Next: TRA's own TOD/land-development page (if TRA has an equivalent
+programme — not yet checked), the nine regional TPASS passes in more
+depth, or continuing other Parts of the brief (interactive features).

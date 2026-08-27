@@ -1,3 +1,59 @@
+## Run 289 - add TRA fare and ticket-type history (2026-08-28)
+
+### Sourced
+
+First fare-history page for TRA (the flagship national operator), the
+fourth and final operator to get one, extending the fare-history theme
+past the three-operator metro set completed in Runs 283-285. One TRA page
+fetched and parsed directly from raw HTML — richer than expected, with a
+genuine published rate table.
+
+Single-ticket categories (full/child/senior/disability); a dated
+free-seating rollout on West Coast EMU3000 trains effective 1 July 2026,
+with named train numbers and per-service car counts, at 95% of full
+Tzu-Chiang fare for adults only; onboard no-ticket surcharge (50% if not
+voluntarily declared); group pricing (non-reserved 80%/65% by size tier,
+reserved-seat groups full fare, no discount). The standout: a full
+published charter-train per-km rate table across 5 distance tiers × 3
+train classes (Local 2.18→1.42, Chu-Kuang 2.61→1.70, Tzu-Chiang
+3.39→2.20 NT$/person/km) — explicitly scoped to charter pricing, not
+conflated with ordinary single-ticket rates. Puyuma/Taroko charter
+round-trip volume discounts (85%/80% at 600km/800km, effective 1 January
+2026); a suspended "living-room car" charter product with its service fee
+revised 23 June 2025 (NT$300→380).
+
+### TBC and checked failures
+
+No base single-ticket fare in NT$ or per-km established — TRA's own page
+defers to an unfetched fare-calculator tool, the same gap this project
+independently found at TYMC, KRTC and TMRT, now confirmed a fourth time
+across the national operator too (checked 2026-08-28). Nine named
+regional TPASS-style passes, a season pass, platform ticket, TR-PASS,
+university-student scheme and welfare-card points riding are all named
+but not detailed — not followed through to their own pages this session
+(checked 2026-08-28). Web-search budget remained exhausted (checked
+2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered TRA fares.
+
+### Conflicts found
+
+None — no second source addressing any of the above was located this
+session.
+
+### Gates
+
+`gate:fast` caught one scope-statements violation on the first pass: a
+section header used the forbidden "What this page does not yet cover"
+pattern (the same class hit in Run 283's TYMC fares and Run 286's KRTC
+land-development pages). Reworded. Second `gate:fast` run clean
+(107/107). `gate:full` run against a fresh build, fully clean — 234/234
+tests, `facts` (17/17 cross-checks), `research`, `cite`, `claims`,
+`geometry:audit`, `a11y`. Generated audit JSONs restored, not committed.
+`probes/` remains untracked.
+
 ## Run 288 - add TMRT land development, completing the three-operator TOD set (2026-08-28)
 
 ### Sourced
