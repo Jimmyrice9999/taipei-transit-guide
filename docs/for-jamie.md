@@ -1,5 +1,31 @@
 # For Jamie
 
+## Active handoff - Run 261 - 27 August 2026
+
+Run 261 publishes the TRA accessibility and facilities boundary. The
+operator's two-page plan says older stations required phased accessibility
+improvements, prioritises the 90 highest-entry/exit stations, and sets
+historical targets of 184 station elevators and about 98.5% passenger
+coverage. Its three-stage step-free plan uses 92–96 cm platforms, modified
+rolling stock, and a 115 cm final platform height, with ROC 110/111 target
+dates.
+
+Current station pages are station-specific: Gushan, Yongle, Xike and
+Kaohsiung Museum of Fine Arts show different accessibility and facility
+lists, with locations/counts where supplied. Current network-wide coverage,
+completion, outage status, continuous step-free routes, tactile continuity,
+accessible toilet inventory and platform gaps remain TBC. `probes/` remains
+untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed before this handoff was written. The final gates reported 1,743 content
+files, 7,716 citations, 0 ASSERTED claims, 2,934 postbuild pages, 511,084
+clean internal links, 227 research files with 961 checked failures, 234
+passing tests and 17 passing fact cross-checks.
+
+Next: continue the remaining 14-part brief with the next explicitly incomplete
+TRA or rail-systems subject, one subject at a time.
+
 ## Active handoff - Run 260 - 27 August 2026
 
 Run 260 publishes the TRA operations and ridership boundary. The operator's

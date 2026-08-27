@@ -356,6 +356,51 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's current public-information page separates monthly reports, annual reports and public statistical tables."
+  - id: tra-accessibility-plan
+    title: "TRA accessibility facilities and service improvement plan"
+    titleOriginal: "國營臺灣鐵路股份有限公司無障礙設施及服務改善計畫"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/9988694f-a7ef-47a7-bea3-9f29bc0b835c"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full two-page operator plan describes the historical elevator, platform, rolling-stock and service-improvement programme; its target dates are not treated as proof of current completion."
+  - id: tra-station-gushan-4380
+    title: "Gushan Station information"
+    titleOriginal: "鼓山車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://tip.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4380"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current station record lists Gushan's accessibility and general facilities, including locations and counts where the operator supplies them."
+  - id: tra-station-yongle-7110
+    title: "Yongle Station information"
+    titleOriginal: "永樂車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://tip.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/7110"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current station record lists Yongle's accessibility, general and ticketing facilities; it is a station-specific page, not a network total."
+  - id: tra-station-xike-0970
+    title: "Xike Station information"
+    titleOriginal: "汐科車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://tip.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/0970"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current station record lists Xike's accessibility and general facilities, including the stated ramp and platform-lift locations."
+  - id: tra-station-kaohsiung-4370
+    title: "Kaohsiung Museum of Fine Arts Station information"
+    titleOriginal: "美術館車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://tip.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4370"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full current station record lists the station's ramp, three accessibility lifts, accessible ticket window, service bells, breastfeeding room and escalators."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
@@ -363,6 +408,8 @@ Taiwan Railways is represented here as a system with its own station identities,
 The [Taiwan Railways electrification record](/rail/tra/technology/electrification/) keeps the operator's staged electrification chronology, its 25 kV technical-study boundary and the dated 2023 network aggregates separate from a current line-by-line power register.[^tra-electrification-history][^tra-electrification-paper][^tra-network-report]
 
 The [TRA operations and ridership record](/rail/tra/operations/ridership-and-service/) keeps the current network performance statistics separate from the operator's timetable-family index and from station-level service data that has not yet been transcribed.[^tra-monthly-2026-06][^tra-timetable-2026-07][^tra-statistics-index]
+
+The [TRA station accessibility and facilities record](/rail/tra/facilities/accessibility-and-facilities/) keeps the operator's historical improvement plan separate from the station-specific facility lists published on current station pages.[^tra-accessibility-plan][^tra-station-gushan-4380][^tra-station-yongle-7110][^tra-station-xike-0970][^tra-station-kaohsiung-4370]
 
 The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/), the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), the [Taipei–Danshui Line](/rail/history/taipei-danshui-line/), the [Xindian Line](/rail/history/xindian-line/), the [Zhonghe Line](/rail/history/zhonghe-line/), the [Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/), the [Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/) and the [Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/), while the [Houtong–Sandiaoling double-track segment](/rail/history/houtong-sandiaoling-double-track/), [Changhua–Minxiong double-track segment](/rail/history/changhua-minxiong-double-track/), [Chiayi–Xinshi double-track segment](/rail/history/chiayi-xinshi-double-track/), [Jianan–Taichung Port construction record](/rail/history/jianan-taichung-port-double-track/), [Xinpu–Tongxiao double-track segment](/rail/history/xinpu-tongxiao-double-track/) and [Yuanli–Rinan double-track segment](/rail/history/yuanli-rinan-double-track/) are kept alongside them as construction-history subjects rather than separate current line identities.[^tra-history][^tra-construction-history][^tra-bike-route] Further historical alignments and construction subjects follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
 The [Jianan–Qingshui double-track segment](/rail/history/jianan-qingshui-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]

@@ -1,4 +1,56 @@
 
+## Run 261 - publish TRA accessibility boundary (2026-08-27)
+
+### Sourced
+
+Added a focused TRA station accessibility and facilities page, research
+record and facilities index. The operator's full two-page improvement plan
+records the older-station constraint, phased work, priority for the 90
+highest-entry/exit stations, historical targets of 184 station elevators and
+about 98.5% passenger coverage, and a three-stage step-free platform and
+rolling-stock plan ending at 115 cm platforms. The plan's ROC 110/111 dates
+and figures are kept as historical targets, not current completion claims.
+
+Current operator station pages provide concrete but station-specific records:
+Gushan lists a ramp, one entrance lift, two platform lifts, service bells and
+other facilities; Yongle lists a ramp, service bell and platform lift; Xike
+lists a ramp, a platform lift for platform changes and service bell; and
+Kaohsiung Museum of Fine Arts lists a ramp, one entrance lift, lifts at
+platforms 1/2, an accessible ticket window and service bells.
+
+### TBC and checked failures
+
+The opened primary records do not establish a current network-wide
+accessibility percentage, completed elevator total, outage register, joined
+station-by-station inventory, continuous step-free route map, tactile-paving
+continuity, accessible-toilet inventory or platform-gap register. The plan's
+targets cannot settle current status; a current operator export and route-level
+accessibility audit would settle those gaps.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The existing TRA research lead
+identified accessibility as an open boundary; this focused record narrows it
+to the operator's historical improvement plan and the station-information
+fields currently exposed, without inferring network completion from examples.
+
+### Conflicts found
+
+No direct numeric conflict was found in the opened primary records. The plan's
+network targets and the current station pages describe different scopes and
+times, so neither is substituted for the other. The differing facility lists
+are station-level variation, not a network-wide inventory.
+
+### Gates
+
+`npm run cite` passed: 1,743 content files and 7,716 citations resolved (7,494
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,934 pages with no missing glyphs, 511,084 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 260 - publish TRA operations boundary (2026-08-27)
 
 ### Sourced
