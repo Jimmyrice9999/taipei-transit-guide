@@ -1,3 +1,57 @@
+## Run 286 - add KRTC joint land development mechanism (2026-08-28)
+
+### Sourced
+
+First KRTC page addressing TOD/joint land development, extending the
+brief's TOD subject beyond the existing Taipei-only page
+(`content/rail/projects/tod-joint-development.md`, which names no
+non-Taipei operator). Legal basis, philosophy and process fetched and
+parsed directly from raw HTML.
+
+Kaohsiung's own joint-development mechanism rests on Article 7 of the
+Mass Rapid Transit Act and the Mass Rapid Transit System Land Development
+Regulations, under a stated "合建分坪、利潤共享" (joint construction,
+shared profit) philosophy: investor, landowner and the competent authority
+develop a site as three parties, splitting the completed building by
+contribution-cost ratio. The bureau's own process description gives three
+chronological stages (land acquisition, investor solicitation/
+construction, rights allocation) broken into seven named steps total.
+
+### TBC and checked failures
+
+No specific joint-development case — site, scale, investor, completion
+status — is established. The bureau's own dedicated case-list page ("土地
+開發案件基本資料") was located and fetched, but its content renders
+client-side via JavaScript this session's tooling could not execute — a
+confirmed, located-but-unreadable gap, not an unsearched one (checked
+2026-08-28). Whether the three named Red/Orange depot sites (already
+covered separately in this project's depots research) were themselves
+developed under this specific mechanism, versus a different disposal
+method, is not stated by any source read and not assumed (checked
+2026-08-28). Web-search budget remained exhausted (checked 2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered KRTC's joint-
+development mechanism.
+
+### Conflicts found
+
+None — no second source addressing this mechanism was located this
+session.
+
+### Gates
+
+Caught and fixed proactively during writing (before running gate:fast, on
+the strength of Run 283's earlier hit): a section header and a sentence
+both drafted with "this page cannot yet ..." phrasing, the same
+scope-statements pattern `tests/scope-statements.test.mts` forbids.
+Reworded both before validating. `gate:fast` clean on the first run
+(107/107). `gate:full` run against a fresh build, fully clean — 234/234
+tests, `facts` (17/17 cross-checks), `research`, `cite`, `claims`,
+`geometry:audit`, `a11y`. Generated audit JSONs restored, not committed.
+`probes/` remains untracked.
+
 ## Run 285 - add TMRT fare history, completing the three-operator set (2026-08-28)
 
 ### Sourced

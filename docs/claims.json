@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 25980,
-    "tbc": 4557,
+    "sourced": 25985,
+    "tbc": 4558,
     "asserted": 0,
     "meta": 73
   },
@@ -10189,6 +10189,22 @@
       "sources": 0,
       "sourced": 0,
       "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/krtc/projects/joint-development.md",
+      "sources": 1,
+      "sourced": 5,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/krtc/projects/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },

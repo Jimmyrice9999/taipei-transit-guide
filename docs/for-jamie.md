@@ -1,38 +1,31 @@
 # For Jamie
 
-## Active handoff - Run 285 - 27 August 2026
+## Active handoff - Run 286 - 27 August 2026
 
-Run 285 completes a three-run fare-history sequence (TYMC, KRTC, now
-TMRT) — all three non-Taipei Taiwan metro operators now have a fare page.
-TMRT's was the richest: concessions (senior/disability 50%, group 80%,
-bicycle/double-bass NT$70 each), day/hour passes (NT$120-380 across
-several tiers), and a genuine standout — Taichung's senior card carries a
-monthly points subsidy (NT$1,000, NT$1,500 for Indigenous cardholders)
-stacked on top of its 50% concession, and a four-tier regional 30-day
-season pass spans Taichung/Changhua/Nantou/Miaoli with real
-residency-based pricing (NT$299-999).
+Run 286 opens KRTC's TOD/joint-development coverage — the brief's TOD
+subject had only a Taipei-only page before this. Legal basis (Mass Rapid
+Transit Act Art. 7, Land Development Regulations), a stated
+"合建分坪、利潤共享" three-party philosophy, and a 3-stage/7-step process
+are all sourced from the bureau's own page. The bureau's own case-list
+page ("土地開發案件基本資料") was located but is JavaScript-rendered — a
+confirmed, not unsearched, gap, so this page documents the mechanism only,
+no concrete example project.
 
-The headline cross-operator finding, now confirmed three separate times:
-none of TYMC, KRTC or TMRT publish a base single-fare figure as static
-text anywhere on their own sites — all three defer to either a physical
-chart or a JavaScript-rendered fare-query tool. This is reported
-explicitly on all three fare pages as a shared structural pattern, not
-three unrelated gaps.
+Full local validation across Runs 279-286 (KRTC/TYMC depots, TMRT
+tech+rolling-stock, TMRT facilities+operations, KRTC Yellow Line, TYMC/
+KRTC/TMRT fares, KRTC joint development): `gate:fast` clean every time,
+`gate:full` clean against a fresh build every time — 8 commits, all
+pushed, none reverted.
 
-Full local validation across Runs 279-285 (KRTC/TYMC depots, TMRT
-tech+rolling-stock, TMRT facilities+operations, KRTC Yellow Line, TYMC
-fares, KRTC fares, TMRT fares): `gate:fast` clean every time, `gate:full`
-clean against a fresh build every time. Audit JSONs restored each time,
-not committed. `probes/` remains untracked.
+CI status (checked once this run, not polled further): the earlier stuck
+run on faa1ade1 (Run 278) resolved itself — eventually completed with
+"success" after being stuck 1.5+ hours. A new stuck run appeared on
+3c842f2b (Run 283) around the same check, not yet resolved as of the
+check. This looks like a recurring but self-resolving GitHub Actions
+infrastructure hiccup rather than a code problem, given faa1ade1's outcome
+— worth a manual glance at the Actions tab but not urgent.
 
-CI note from Run 282 (last checked, not polled since): commit faa1ade1's
-(Run 278) "Tests" job was stuck in_progress well past normal duration and
-wasn't auto-cancelled by later pushes unlike other commits — unresolved,
-outside what's fixable from this session. Worth a manual look at the
-Actions tab.
-
-Next: continuing the brief's remaining Parts (TOD, interactive features)
-across any operator, or returning to remaining gaps within any of the
-four operators now covered (KRTC Yellow Line depot name/opening date,
-TMRT accessibility page 2, TYMC/KRTC base fare figures if a browser-
-capable fetch becomes available).
+Next: TYMC or TMRT's own TOD/joint-development pages (parallel to KRTC's,
+following the same pattern), or continuing the brief's remaining
+interactive-features Part, or deeper KRTC Yellow Line gaps (depot name,
+opening date) as sources surface.
