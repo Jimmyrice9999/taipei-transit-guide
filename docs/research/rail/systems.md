@@ -248,12 +248,11 @@ concrete" version is circulating and it's wrong.
 
 ## Still to research
 
-- Signalling generation by high-capacity line
+- High-capacity signalling generation and renewal — the focused [signalling boundary record](../../../content/rail/technology/metro-signalling-generations.md) now establishes the relay/VPI construction boundary and the 113-117 ROC-year control-computer reset plan; post-cutover acceptance and a current field register remain TBC
 - Electrification specification, comprehensively
 - Formal GoA grades
 - Network control centre arrangements for all three operators
-- **What TRTC's depot maintenance "Level 3" and "Level 5" actually mean** — the
-  terms appear constantly and nothing defines them
+- Depot maintenance levels — the focused [depot maintenance-level record](../../../content/rail/technology/metro-depot-maintenance-levels.md) defines the legal inspection scale and DORTS facility-capability labels; current fleet schedules and Luzhou's quasi-Level-5 boundary remain TBC
 - Track gauge per line — the focused [gauge boundary record](../../../content/rail/technology/metro-track-gauges.md)
   confirms the high-capacity standard and the shared Danhai/Ankeng vehicle-table
   value, while conventional Wenhu, Circular, Sanying, Airport MRT and Taoyuan

@@ -13,6 +13,12 @@ facts:
   - label: Circular and Sanying signalling family
     value: Hitachi CBTC, with unattended operation documented for the Circular Line and the same approach used on Sanying
     source: dorts-circular-cbtc
+  - label: High-capacity signalling computer reset sequence
+    value: Bannan in 114 ROC year, Zhonghe-Xinlu in 115, Songshan-Xindian in 116 and Tamsui-Xinyi in 117
+    source: dorts-high-capacity-renewal-plan
+  - label: High-capacity reset programme boundary
+    value: Five-year 113-117 ROC-year hardware reset of the four high-capacity control-computer groups
+    source: dorts-high-capacity-renewal-plan
   - label: Complete current equipment-generation register
     value: TBC
 specs:
@@ -25,6 +31,10 @@ specs:
   - label: Circular location boundary
     value: CBTC location error no greater than 10 metres in the published design description
     source: dorts-circular-cbtc
+  - label: High-capacity reset programme value
+    value: 180.28
+    unit: million NTD
+    source: dorts-high-capacity-renewal-plan
 sources:
   - id: dorts-signalling-introduction
     title: Practical signalling systems for Taipei Metro — introduction
@@ -80,6 +90,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full summary page contrasts early high-capacity GoA2 ATC using ATO/ATP with CBTC GoA4 unattended operation and describes ATS SCADA as the operating core of the latter."
+  - id: dorts-high-capacity-renewal-plan
+    title: High-capacity signalling computer hardware reset plan
+    titleOriginal: 高運量號誌電腦硬體重置
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTUu6auY6YGL6YeP6Jmf6KqM6Zu76IWm56Gs6auU6YeN572uLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzg4L3JlbGZpbGUvMTc2MTkvMTM5MjkzL2JkYmM5MWUwLWQ5ZTAtNDBlYi04MzQ0LTg4NDc1YmVjMWExNS5wZGY%3D
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full official two-page plan identifies the four existing high-capacity control-computer activation years, explains the obsolescence and unsupported operating-system risk, and schedules a 113-117 ROC-year hardware reset by line and equipment count."
+  - id: dorts-high-capacity-renewal-progress
+    title: 114 annual major-project budget execution report - high-capacity signalling computer hardware reset
+    titleOriginal: 114年度第4期重大計畫預算執行績效分析表
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTE0MTLph43nva7ln7rph5HmnIPoqIjmnIjloLEt5pawLTExNTAyMjMucGRm&u=LzAwMS9VcGxvYWQvMzg4L3JlbGZpbGUvMTc2MTkvMTM3MTIzLzdjNjE3MjcxLTFkYjQtNDYwYS04ZDQzLWFkNjUxYjE2MGFkNi5wZGY%3D
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full official 114-year fourth-period report records the project contract, 114-year budget execution and 21 percent overall progress for the 113-117 reset programme."
 ---
 
 Taipei’s published signalling record is a sequence of system families, not a
@@ -107,6 +135,32 @@ DORTS’s comparison says that this position estimate can have an error of rough
 moving-block example.[^dorts-wenhu-cbtc] The source describes the family and its
 technical principles; it does not publish a current line-by-line inventory of
 relay rooms, software versions, replacement dates or residual equipment.
+
+## Successive generations inside the fixed-block family
+
+The fixed-block label does not mean that every high-capacity installation is
+the same generation.[^dorts-signalling-evolution] DORTS says the Tamsui/Xindian signalling control circuits
+were relay-based, while the Nangang/Banqiao projects onward used programmable
+VPI interlocking.[^dorts-signalling-evolution] That is a hardware and control-
+logic boundary inside the same fixed-block operating family, not a conversion
+to CBTC.[^dorts-high-capacity-signalling][^dorts-signalling-evolution]
+
+DORTS's later reset plan dates the high-capacity control-computer groups by
+their previous activation: Songshan-Xindian in ROC 96, Bannan in ROC 97,
+Zhonghe-Xinlu in ROC 100 and Tamsui-Xinyi in ROC 102.[^dorts-high-capacity-renewal-plan]
+The plan schedules their replacement in a different sequence: Bannan in ROC
+114 with 80 equipment items, Zhonghe-Xinlu in ROC 115 with 123, Songshan-Xindian
+in ROC 116 with 160, and Tamsui-Xinyi in ROC 117 with 84.[^dorts-high-capacity-renewal-plan]
+
+The plan is a hardware-reset programme, not a published new signalling
+generation. It says virtualization is used so the existing software can be
+retained, and gives a total planned resource of NT$180.28 million.[^dorts-high-capacity-renewal-plan]
+The official 114-year execution report records a contract value of NT$176.4
+million, 100 percent execution of the 114-year available budget and 21 percent
+overall project progress at the end of that ROC year.[^dorts-high-capacity-renewal-progress]
+Those figures establish the procurement and progress boundary; they do not
+establish that the whole four-line reset or its post-cutover acceptance is
+complete.[^dorts-high-capacity-renewal-progress]
 
 ## Wenhu: moving-block CBTC
 
@@ -148,7 +202,9 @@ The primary records establish three broad boundaries: Alstom/GRS fixed-block
 signalling for the high-capacity network, Bombardier CITYFLO 650 moving-block
 CBTC for Wenhu, and Hitachi CBTC for Circular with the same system identified on
 Sanying.[^dorts-high-capacity-signalling][^dorts-wenhu-cbtc][^dorts-circular-cbtc]
-They do not expose a complete current equipment-generation register, the date
-and scope of every high-capacity renewal, or the exact fallback mode for each
-line. Those details remain TBC rather than being inferred from a supplier name,
-a line’s automation grade or the age of its civil works.
+The sources now also establish an internal relay-to-VPI boundary and a
+113-117 ROC-year high-capacity control-computer reset plan, but they do not
+expose a complete post-reset equipment-generation register, acceptance record
+for each line or the exact fallback mode for each route. Those details remain
+TBC rather than being inferred from a supplier name, a line's automation grade
+or the age of its civil works.

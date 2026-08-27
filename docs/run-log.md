@@ -1,3 +1,61 @@
+## Run 258 - strengthen metro signalling-generation boundary (2026-08-27)
+
+### Sourced
+
+Extended the existing signalling-generation page and research record. Full
+DORTS technical material establishes the fixed-block/audio-frequency family,
+the relay-based Tamsui/Xindian control circuits, programmable VPI from the
+Nangang/Banqiao projects onward, and the historic ROC 94-98 high-capacity
+control-centre reset with parallel monitoring and geographically separate
+Beitou backup.
+
+The official 113-117 high-capacity control-computer reset plan records the
+previous activation years as ROC 96, 97, 100 and 102; schedules Bannan,
+Zhonghe-Xinlu, Songshan-Xindian and Tamsui-Xinyi in ROC 114-117 with 80, 123,
+160 and 84 equipment items; and specifies virtualization with the existing
+software retained. It states NT$180.28 million in planned resources and
+identifies the unsupported XP/Windows Server 2003 boundary. The 114-year
+execution report records a NT$176.4 million contract, 100% execution of that
+year's available budget, and 21% overall progress.
+
+### TBC and checked failures
+
+A post-reset line-by-line acceptance register, current software and
+field-equipment inventory, exact replacement scope beyond the control-computer
+groups, and a route-by-route fallback matrix remain TBC. The plan and progress
+report establish chronology, scope and a progress boundary; neither is a
+current field-level acceptance register.
+
+### Contradicted the corpus
+
+The older systems lead treated high-capacity signalling generation as an open
+single-family question. The full technical source now establishes an internal
+relay-to-VPI boundary and a dated four-line computer-reset programme. This
+clarifies the lead rather than changing the published metro/CBTC boundary.
+The stale depot and Zhonghe open statuses in `docs/research/INDEX.md` were also
+corrected to the already-published Run 242 and Run 240 records.
+
+### Conflicts found
+
+There is no direct numeric conflict in the signalling-generation boundary:
+relay/VPI is a construction and control-logic distinction, not CBTC. The
+reset plan's NT$180.28 million is a planned-resource figure, while the later
+114-year report gives NT$176.674 million as project total and NT$176.4 million
+as contract value; these are retained as separate planning and
+budget/contract values. The report's 21% overall progress is not treated as
+completion, and virtualization/software retention is not called a new
+signalling generation.
+
+### Gates
+
+`npm run cite` passed: 1,737 content files and 7,691 citations resolved (7,469
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,922 pages with no missing glyphs, 503,781 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 257 - publish metro fire and evacuation boundary (2026-08-27)
 
 ### Sourced

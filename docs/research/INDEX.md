@@ -105,12 +105,12 @@ paragraph is the best single paragraph in the corpus.
 **Strongest sources.** The Control Yuan report on the Circular Line (11 March
 2025) — a genuine primary investigation document. The 李政安 & 蘇瑞文 paper again.
 
-**Stated gaps.** Signalling generation per high-capacity line; electrification
-comprehensively; formal GoA grades; control-centre arrangements; **what TRTC's
-depot "Level 3" and "Level 5" actually mean**, which the corpus notes is
-referenced constantly and defined nowhere. That last one is a real hole: the site
-publishes "Third-level depot" on a live page without being able to say what it
-means.
+**Stated gaps.** The focused technology records now cover high-capacity
+signalling generation and reset planning, electrification, formal GoA grades,
+control-centre arrangements and the meaning of TRTC's depot "Level 3" and
+"Level 5" labels. Current post-reset signalling acceptance, route-by-route
+fallback modes, fleet maintenance calendars and other operator registers remain
+TBC where the sources do not publish them.
 
 **Publishable now.** The platform-door completion table. The structure-type table.
 The 403 bearing-failure mechanism, which is well enough sourced to write and is
@@ -603,13 +603,14 @@ contract added as its own row on a primary source.
 zh.wikipedia. Two primary DORTS documents establish the pair between them.
 Corrected; the encyclopedia is now corroboration.
 
-**(d) OPEN — the site publishes "Third-level depot" and cannot say what it
-means.** `systems.md` records that TRTC's Level 3 / Level 5 maintenance grades
-are referenced constantly and defined nowhere. Muzha Depot's facts panel carries
-"Grade: Third-level depot" as though it were self-explanatory. It is not.
+**(d) FIXED in Run 242 — the site publishes "Third-level depot" and now explains
+what it means.** The focused depot-maintenance page separates the legal vehicle
+inspection levels from DORTS's facility-capability labels and retains the
+quasi-Level-5 qualification where the source does not define it.
 
-**(e) OPEN — the site has no Zhonghe Depot page.** Eight depot pages, and the
-smallest and most constrained depot on the network is not among them.
+**(e) FIXED in Run 240 — the site now has a Zhonghe Depot page.** The page keeps
+the constrained storage/cleaning and general-maintenance boundary sourced to
+DORTS rather than treating the depot as a full overhaul facility.
 
 **(f) OPEN — VAL256's facts row reads "In service: 28 March 1996 —".** The fleet
 was out of service between 4 July 2009 and 26 December 2010, which the page's own

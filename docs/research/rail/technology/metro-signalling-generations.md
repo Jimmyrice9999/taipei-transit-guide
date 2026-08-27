@@ -111,6 +111,79 @@ service.
 The “evolution” language supports a historical technology boundary, not a
 claim that each high-capacity line received a later replacement.
 
+### The fixed-block family contains a relay-to-VPI boundary
+
+**Claim - Confirmed:** DORTS records relay-based signalling control circuits
+for the Tamsui/Xindian work and programmable VPI interlocking from the
+Nangang/Banqiao projects onward. This is an internal generation boundary within
+the fixed-block family, not a CBTC conversion.
+
+- **Source title:** *Review and outlook of Taipei Metro electromechanical engineering - signalling evolution*
+- **Original title:** `臺北捷運機電工程回顧與展望`
+- **Publisher:** 臺北市政府捷運工程局 / Taipei City Government Department of Rapid Transit Systems
+- **URL:** <https://ebook.dorts.gov.taipei/JRTST/ebook/no48/files/basic-html/page193.html>
+- **Archive snapshot:** not captured
+- **Kind:** primary
+- **Confidence:** High - full official technical-journal page read on 27 August 2026
+- **Original-language sentence:**
+  > 淡水／新店線號誌系統控制電路以繼電器（Relay）為主，自南港／板橋線之後改為可程式控制器為主之 VPI 架構（Vital Processor Interlocking，號誌維生處理器連鎖控制）。
+
+The same page says the initial high-capacity design used traditional fixed
+blocks and audio-frequency track circuits, then describes the 94-98 ROC-year
+control-centre reset as a PC-based replacement with old/new-system parallel
+monitoring and a Beitou disaster-recovery computer.[^dorts-signalling-evolution]
+
+### DORTS publishes a four-line high-capacity control-computer reset plan
+
+**Claim - Confirmed:** The official 113-year plan says the four high-capacity
+control-computer groups were activated in ROC 96 for Songshan-Xindian, ROC 97
+for Bannan, ROC 100 for Zhonghe-Xinlu and ROC 102 for Tamsui-Xinyi. It schedules
+a 113-117 ROC-year hardware reset: Bannan in ROC 114 with 80 equipment items,
+Zhonghe-Xinlu in ROC 115 with 123, Songshan-Xindian in ROC 116 with 160, and
+Tamsui-Xinyi in ROC 117 with 84.
+
+- **Source title:** *High-capacity signalling computer hardware reset plan*
+- **Original title:** `高運量號誌電腦硬體重置`
+- **Publisher:** 臺北市政府捷運工程局 / Taipei City Government Department of Rapid Transit Systems
+- **URL:** <https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTUu6auY6YGL6YeP6Jmf6KqM6Zu76IWm56Gs6YeN572uLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzg4L3JlbGZpbGUvMTc2MTkvMTM5MjkzL2JkYmM5MWUwLWQ5ZTAtNDBlYi04MzQ0LTg4NDc1YmVjMWExNS5wZGY%3D>
+- **Archive snapshot:** not captured
+- **Kind:** primary
+- **Confidence:** High - full official two-page plan read on 27 August 2026
+- **Original-language sentences:**
+  > 高運量號誌電腦現行使用設備分別為松山新店線（原淡新中線）96年…板南線97年…中和新蘆線100年…淡水信義線102年…
+  > 本計畫分5年進行，總工期113～117年度之分年計畫
+  > 114年度…板南線…（80項設備）
+  > 115年度…中和新蘆線…（123項設備）
+  > 116年度…松山新店線…（160項設備）
+  > 117年度…淡水信義線…（84項設備）
+
+The plan gives NT$180.28 million as the total resource requirement and says
+the reset uses virtualization while retaining the existing software version.
+It describes the then-current Windows XP and Windows Server 2003 environment
+as unsupported and the original hardware as discontinued; that is a reason for
+the plan, not evidence that the replacement is already complete.[^dorts-high-capacity-renewal-plan]
+
+### The 114-year report gives a progress boundary, not completion
+
+**Claim - Confirmed:** DORTS's 114-year fourth-period major-project report lists
+the high-capacity reset with a NT$176.674 million plan total, NT$176.4 million
+contract value, 100 percent execution of the 114-year available budget and 21
+percent overall progress at the end of ROC 114.
+
+- **Source title:** *114 annual major-project budget execution report - high-capacity signalling computer hardware reset*
+- **Original title:** `114年度第4期重大計畫預算執行績效分析表`
+- **Publisher:** 臺北市政府捷運工程局 / Taipei City Government Department of Rapid Transit Systems
+- **URL:** <https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=MTE0MTLph43nva7ln7rph5HmnIPoqIjmnIjloLEt5pawLTExNTAyMjMucGRm&u=LzAwMS9VcGxvYWQvMzg4L3JlbGZpbGUvMTc2MTkvMTM3MTIzLzdjNjE3MjcxLTFkYjQtNDYwYS04ZDQzLWFkNjUxYjE2MGFkNi5wZGY%3D>
+- **Archive snapshot:** not captured
+- **Kind:** primary
+- **Confidence:** High - full official 114-year report table read on 27 August 2026
+- **Original-language sentence:**
+  > 高運量號誌電腦硬體重置（113-117）…計畫總金額176,674,000…累計執行數37,821,000…100.00…實際進度21.00
+
+The report records the 114-year stage and overall progress; it does not publish
+the post-cutover acceptance of each line, the current field equipment inventory
+or a replacement software-generation label.
+
 ### Circular and Sanying are identified with Hitachi CBTC
 
 **Claim — Confirmed:** DORTS identifies Hitachi Rail Transportation Signalling
@@ -179,13 +252,15 @@ Airport MRT, light rail or every future line.
 
 - **Complete current signalling-equipment register by line** — checked
   27 August 2026. The full DORTS signalling volume pages identify broad families,
-  suppliers and selected architectures, but do not list current software,
-  relay-room equipment, replacement dates and fallback arrangements for every
-  line. An operator asset or signalling-maintenance register would settle it.
+  suppliers, the relay-to-VPI boundary and a four-line computer-reset plan, but
+  do not list current post-reset software, relay-room equipment, acceptance
+  records and fallback arrangements for every line. An operator asset or
+  signalling-maintenance register would settle it.
 - **High-capacity line-by-line renewal chronology** — checked 27 August 2026.
-  The sources describe the family and the Wenhu Muzha-to-Neihu update, but do not
-  give a complete dated renewal schedule for R, G, O and BL. Contract and
-  acceptance records for each signalling package would settle it.
+  The sources now provide the relay/VPI construction boundary, the historic
+  control-centre reset window and the 113-117 reset schedule, but not a complete
+  field-level renewal and acceptance chronology for every route. Contract,
+  commissioning and acceptance records for each package would settle it.
 - **Formal signalling generation for Airport MRT and the light-rail lines** —
   checked 27 August 2026. The sources used here do not provide a comparable
   current generation label for A, V or K. The page leaves those assignments TBC

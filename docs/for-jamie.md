@@ -1,5 +1,32 @@
 # For Jamie
 
+## Active handoff - Run 258 - 27 August 2026
+
+Run 258 strengthens the metro signalling-generation boundary. Full DORTS
+records establish the fixed-block/audio-frequency family, relay-based
+Tamsui/Xindian control circuits, programmable VPI from the Nangang/Banqiao
+projects onward, the historic ROC 94-98 high-capacity control-centre reset,
+and the official ROC 113-117 four-line control-computer hardware-reset plan.
+The plan records previous activation years (ROC 96/97/100/102), reset order
+and equipment counts (80/123/160/84), virtualization with software retained,
+and NT$180.28 million in planned resources. The 114-year report records a
+NT$176.4 million contract, 100% annual budget execution and 21% overall
+progress; it does not establish completion.
+
+A post-reset line-by-line acceptance register, current software and
+field-equipment inventory, exact replacement scope beyond the control-computer
+groups, and a route-by-route fallback matrix remain TBC. `probes/` remains
+untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed. The final gates reported 1,737 content files, 7,691 citations, 0
+ASSERTED claims, 2,922 postbuild pages, 503,781 clean internal links and 234
+passing tests.
+
+Next: continue the remaining 14-part brief with the next unresolved signalling
+fallback, Airport/light-rail generation, or other explicitly incomplete
+subject, one subject at a time.
+
 ## Active handoff - Run 257 - 27 August 2026
 
 Run 257 publishes the fire-and-evacuation systems boundary. Full DORTS records
