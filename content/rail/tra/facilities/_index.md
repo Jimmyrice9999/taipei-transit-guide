@@ -15,4 +15,4 @@ sources:
     note: "The full two-page operator plan describes the historical accessibility improvement programme and is not used as a current completion register."
 ---
 
-The [TRA station accessibility and facilities record](/rail/tra/facilities/accessibility-and-facilities/) distinguishes the operator's historical improvement plan from current station-specific facility listings.[^tra-accessibility-plan]
+The [TRA station accessibility and facilities record](/rail/tra/facilities/accessibility-and-facilities/) distinguishes the operator's historical improvement plan from current station-specific facility listings.[^tra-accessibility-plan] The [level-crossings record](/rail/tra/facilities/level-crossings/) covers the current safety-classification regulation, a pending 2026 amendment, and the separate grade-separation programme eliminating crossings city by city.

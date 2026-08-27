@@ -1,4 +1,78 @@
 
+## Run 267 - publish TRA seismic-design and level-crossing boundaries (2026-08-27)
+
+### Sourced
+
+Two `line-scout`s researched TRA-specific subjects concurrently, neither
+previously covered anywhere in the corpus.
+
+**Seismic design.** MOTC's Railway Bridge Seismic Design Code, confirmed via
+its own regulation-index page, was first promulgated 1999 and revised in
+2000, 2007 and 2021; the page confirms a three-level (I/II/III) seismic
+force structure but the code's own PDF text could not be extracted (a
+compressed binary both MOTC's own copy and a civil-engineers'-association
+mirror shared), so the numeric return-period/PGA thresholds are TBC rather
+than assumed from the building/highway codes' familiar 30/475/2,500-year
+pattern. A post-earthquake speed rule (30 km/h then 60 km/h at intensity 4;
+60 km/h at intensity 3) widely attributed to "TRA regulations" in news
+coverage was checked against the actual national 鐵路行車規則 regulation,
+fetched in full — it is not there; the regulation requires natural-hazard
+detection facilities only for high-speed rail. The page follows the North
+Link Line's repeated post-2024-earthquake closures (three separate events
+over three months) through a rejected realignment proposal to an interim,
+roughly NT$7.8 billion safety-improvement plan now advancing instead.
+
+**Level crossings.** A reported current total of 415 crossings nationwide,
+attributed to TRA/the Railway Bureau across three independently fetched
+outlets but not traced to a cited document. The current safety-
+classification regulation has been unrevised since 1996; a June 2026 draft
+amendment would bar new crossings on existing lines in principle and add a
+vehicle-blocking crossing subtype, with regulatory age and general risk
+given as the stated rationale rather than one named accident. A 1981
+derailment at an unguarded bridge-adjacent crossing (30 dead) is documented
+as the cause of TRA's orange "owl stripe" express livery and the abolition
+of unguarded bridge-adjacent crossings.
+
+### TBC and checked failures
+
+The Railway Bureau's own project pages (rb.gov.tw) returned empty/unreadable
+content on every fetch attempted across both subjects — this is a real,
+repeated sourcing gap for TRA infrastructure megaprojects specifically, not
+worked around by substituting a weaker source silently. Grade-separation
+project details for Taichung, Chiayi, Pingtung-Chaozhou, Tainan, Yilan and
+Taoyuan rest on zh.wikipedia and Legislative Yuan records only. Whether TRA
+runs any automatic, CWA-triggered seismic train-stop system (as opposed to
+the manual post-hoc speed rule) is TBC; the CWA's own FAQ page names this
+only as a future capability. TRA's own primary account of the 0403
+earthquake was never read directly — its news-detail pages are
+JavaScript-rendered and returned only the current news list on every fetch.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted; neither subject had a prior page.
+
+### Conflicts found
+
+0403 earthquake magnitude: M7.2 (two independently fetched CNA articles) vs.
+M7.1 (an unverified search-tool summary of a wikipedia figure not
+independently read). The bridge seismic code's second-revision date: 9
+January 2007 (MOTC's own page) vs. December 2006 (a DORTS bibliography
+citation). Level-crossing count: 415 (2026 news) vs. 435 (a summed
+2017-dated wikipedia table) — roughly nine years apart, consistent with an
+active elimination programme but neither independently verified. Kaohsiung
+underground Phase 2 completion year: 2023 (a 2018-era projection) vs. 2025
+(current wikipedia text).
+
+### Gates
+
+`npm run gate:fast` passed after one round of fixes: the claims ratchet
+caught 4 uncited sentences, all fixed by adding the correct citation
+(two sentences had been citing an adjacent but wrong source id) rather than
+by raising the baseline. `npm run research` is clean: 234 files, 984
+checked-and-failed entries. `probes/` remains untracked; generated audit
+JSONs were restored. This is commit 4 of the run under the tiered-gate
+policy; the full gate is due at commit 5.
+
 ## Run 266 - publish TRA train-control/signalling boundary; rule out two candidate closed lines (2026-08-27)
 
 ### Sourced
