@@ -23,6 +23,12 @@ facts:
   - label: Older-vehicle retirement programme
     value: 842 vehicles planned
     source: tra-safety
+  - label: Published EMU900 operating grouping
+    value: 52 ten-car groups; Qidu 20, Taipei 7 and Hsinchu 25
+    source: tra-operating-groups
+  - label: Published EMU800 operating grouping
+    value: 42 eight-car groups; Hsinchu 9, Changhua 6 and Chiayi 27
+    source: tra-operating-groups
 specs:
   - label: EMU900 formation shown by TRA
     value: 10
@@ -81,6 +87,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The approved maintenance plan defines the third- and fourth-level maintenance boundary and lists scheduled work by vehicle family, including EMU500, EMU600, EMU700, EMU900 and EMU3000.
+  - id: tra-operating-groups
+    title: EMU800 and EMU900 commuter-train onboard LCD advertising-space inventory
+    titleOriginal: 國營臺灣鐵路股份有限公司通勤電聯車車廂內 LCD 廣告版面招租資訊一覽表
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://www.railway.gov.tw/tra-tip-web/tip/file/03257c41-221e-4f48-8eb0-9bc48fc1357a
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full operator PDF lists 52 ten-car EMU900 groups split among Qidu, Taipei and Hsinchu depots, and 42 eight-car EMU800 groups split among Hsinchu, Changhua and Chiayi; it also gives principal operating zones and says the advertised vehicles include units rotating through maintenance and may be adjusted for operational needs."
+  - id: tra-chaozhou-base
+    title: Kaohsiung locomotive factory Chaozhou base phase II construction plan
+    titleOriginal: 臺鐵公司高雄機廠潮州基地二期工程建設計畫
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://www.railway.gov.tw/tra-tip-web/adr/about-policy?selectIndex=2
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: The operator page, last updated 12 February 2026, describes expanded EMU inspection facilities for EMU900 and EMU3000, a project schedule being revised, and construction/approval status for the named facilities.
 ---
 
 This is a fleet evidence page, not a vehicle-by-vehicle census. The public operator record separates acquisition programmes, passenger-service formation diagrams and maintenance planning; those layers are kept separate here rather than being combined into a guessed “current fleet”.[^tra-purchases][^tra-safety][^tra-vehicle-guide][^tra-maintenance]
@@ -92,6 +116,8 @@ The operator's acquisition page records a 520-car air-conditioned commuter EMU p
 The same page records a locomotive programme of 102 vehicles: 68 electric locomotives and 34 diesel-electric locomotives, awarded to Toshiba and Stadler respectively, with delivery still under way when the page was updated.[^tra-purchases] It also records 60 energy-efficient branch passenger cars for non-electrified lines, contracted to Taiwan Rolling Stock and still in manufacture at that update.[^tra-purchases]
 
 These are programme quantities and delivery statements, not proof that every vehicle was active on a particular line or assigned to a particular depot.[^tra-purchases] The source does not publish a current unit-to-depot roster alongside them.[^tra-purchases]
+
+A separate TRA advertising-inventory PDF lists 52 ten-car EMU900 groups, split among Qidu (20), Taipei (7) and Hsinchu (25) depots, and 42 eight-car EMU800 groups, split among Hsinchu (9), Changhua (6) and Chiayi (27) depots.[^tra-operating-groups] It also gives principal operating zones and approximate service counts for those groups.[^tra-operating-groups] This is a published grouping for advertising scope rather than a unit register: the contract template says the included cars can rotate through depot maintenance and that operations may be adjusted for the company's needs.[^tra-operating-groups]
 
 ## Passenger formations published by the operator
 
@@ -109,6 +135,8 @@ The same report plans the retirement of 842 older vehicles.[^tra-safety] Its fir
 
 The approved 2024–2027 maintenance plan describes third-level maintenance as a comprehensive inspection involving disassembly of important parts, and fourth-level maintenance as renewal work when severe wear requires rebuilding.[^tra-maintenance] Its vehicle schedule includes older EMU500, EMU600 and EMU700 fleets as well as the newer EMU900 and EMU3000 families.[^tra-maintenance]
 
+An operator policy page last updated 12 February 2026 describes the Chaozhou base phase-II project as an expansion of electric-train inspection workshops and supply warehouses for the newer EMU900 and EMU3000 fleets.[^tra-chaozhou-base] The page says the general and electric-train workshops were under construction, while the preparation workshop, materials warehouse, storage shed and test-line inspection shed awaited approval of a revised plan.[^tra-chaozhou-base] This is a maintenance-facility project status, not proof that every current heavy-maintenance assignment is published.
+
 ## The unresolved locomotive total
 
 Two official operator records publish different locomotive quantities. The acquisition page updated in June 2025 says 102, split into 68 electric and 34 diesel-electric locomotives.[^tra-purchases] The 114 Safety Management Report describes the wider 1,307-vehicle programme as containing 127 locomotives.[^tra-safety]
@@ -117,4 +145,4 @@ The records do not expose a change notice or a common vehicle-by-vehicle schedul
 
 ## What remains TBC
 
-The opened primary sources do not provide a complete current count by vehicle family, a stable list of active car numbers, current line assignment, current depot allocation, withdrawal or preservation status, or a final reconciliation of the two locomotive totals.[^tra-purchases][^tra-safety][^tra-vehicle-guide][^tra-maintenance] A current TRA asset register, stabling roster and the contract-change records for the locomotive programme would be needed to fill those gaps.
+The opened primary sources do not provide a complete current count by vehicle family, a stable list of active car numbers, complete current line or depot assignment, withdrawal or preservation status, or a final reconciliation of the two locomotive totals.[^tra-purchases][^tra-safety][^tra-vehicle-guide][^tra-maintenance][^tra-operating-groups][^tra-chaozhou-base] The group-level advertising inventory is partial and operationally adjustable, not a substitute for a current asset register or stabling roster. Those records, together with the contract-change records for the locomotive programme, would be needed to fill the gaps.

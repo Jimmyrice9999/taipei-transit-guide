@@ -1,5 +1,26 @@
 # For Jamie
 
+## Active handoff - Run 247 - 27 August 2026
+
+Run 247 extends the TRA rolling-stock record with the operator's group-level
+operating and maintenance boundary. A full TRA advertising-inventory PDF lists
+52 ten-car EMU900 groups split among Qidu, Taipei and Hsinchu depots, and 42
+eight-car EMU800 groups split among Hsinchu, Changhua and Chiayi depots. Its
+contract template says those groups include cars rotating through maintenance
+and that operations may be adjusted, so it is not promoted to a unit-by-unit
+roster.
+
+The operator's February 2026 Chaozhou base phase-II page says the project is
+expanding inspection workshops and supply facilities for EMU900 and EMU3000;
+some works were under construction and other facilities awaited approval of a
+revised plan. Current car numbers, a complete stabling roster, preservation or
+withdrawal status, and the 102-versus-127 locomotive reconciliation remain TBC.
+`probes/` remains untracked.
+
+Next: continue the TRA procurement and fleet-register gaps if a stronger
+operator record appears; otherwise move to the next incomplete subject in the
+14-part brief.
+
 ## Active handoff - 27 August 2026
 
 Run 246 tightens the C341 procurement record from the primary evidence. An

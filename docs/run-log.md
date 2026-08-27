@@ -22161,3 +22161,52 @@ fragments or orphan pages; search 1,919; nav 19/19; unit 234/234; browser and
 accessibility checks clean; CVD audit reports zero genuine WCAG contrast
 failures. Generated audit reports were restored after verification;
 `probes/` remains untracked.
+## Run 247 - add TRA operating-group boundary (2026-08-27)
+
+### Sourced
+
+Added two official TRA records to the existing rolling-stock evidence page and
+research report. The full commuter-train LCD advertising-inventory PDF lists
+52 ten-car EMU900 groups: Qidu 20, Taipei 7 and Hsinchu 25. It also lists 42
+eight-car EMU800 groups: Hsinchu 9, Changhua 6 and Chiayi 27, with principal
+operating zones and approximate service counts. The contract template states
+that the advertised vehicles include cars rotating through depot maintenance
+and that operating arrangements may change.
+
+The operator's Chaozhou base phase-II policy page, last updated 12 February
+2026, describes expanded inspection workshops and supply facilities for EMU900
+and EMU3000. It reports the general and electric-train workshops under
+construction and other facilities awaiting approval of a revised plan.
+
+### TBC and checked failures
+
+The group-level inventory does not provide car numbers or a complete current
+stabling roster. Current family totals, line/depot assignment outside the listed
+groups, withdrawal or preservation status, and the 102-versus-127 locomotive
+reconciliation remain TBC.
+
+### Contradicted the corpus
+
+No published TRA rolling-stock fact was contradicted. The new evidence narrows
+the group-level operating boundary without changing the page's explicit warning
+that it is not a vehicle-by-vehicle census.
+
+### Conflicts found
+
+The operator's advertising inventory gives 52 EMU900 groups and 42 EMU800
+groups, while the earlier vehicle-facilities guide gives formation examples and
+the acquisition record gives purchase programmes. These records describe
+different scopes; none is treated as a substitute for a current fleet
+register. The Chaozhou policy page describes maintenance infrastructure, not a
+vehicle assignment list.
+
+### Gates
+
+`npm run verify` passed: build generated 2,744 static pages and 2,898 postbuild
+pages; 492,039 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,936 pages with no errors or warnings; citations
+resolved 7,628 markers (7,409 primary, 219 secondary); claims reported 25,440
+sourced, 4,502 TBC and 0 ASSERTED; research checked 216 files with 918 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 checks. `npm test` passed all 234 tests, including the fact
+cross-checks. `probes/` remains untouched and untracked.
