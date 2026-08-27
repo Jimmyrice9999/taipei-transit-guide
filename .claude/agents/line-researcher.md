@@ -1,6 +1,6 @@
 ---
 name: line-researcher
-description: Researches ONE Taipei-region transport subject from primary Mandarin sources and writes both its research file under docs/research/ and its content page under content/. Use when a subject needs a real page written from sources rather than from the existing corpus. Give it one subject per invocation — fresh context per subject is the point.
+description: Researches ONE Taipei-region transport subject from primary Mandarin sources and writes both its research file under docs/research/ and its content page under content/. Use when a subject needs a real page written from sources rather than from the existing corpus. Give it one subject per invocation — fresh context per subject is the point. NEVER run more than one of these concurrently — it writes to the repo and git, and two writers racing on the same working tree is the exact failure mode that once destroyed ~570 files. To research several subjects at once, spawn several read-only `line-scout` agents in parallel instead and write the files yourself, sequentially, from what they return.
 tools: WebSearch, WebFetch, Read, Write, Edit, Grep, Glob, Bash
 ---
 

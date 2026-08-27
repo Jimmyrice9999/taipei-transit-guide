@@ -1,4 +1,67 @@
 
+## Run 264 - parallel read-only research and tiered gates (2026-08-27)
+
+### What changed
+
+This run is infrastructure, prompted by a brief instructing "PART 0 — SPEED
+FIXES. DO FIRST." before resuming the 14-part content brief. Before acting, it
+audited the repo against the brief's stated remaining scope and found the
+premise stale: TRA station coverage is 242/245 (the 3-station gap being
+non-passenger yard/workshop entries — Shulin Rail Yard 1998, and Chaozhou
+workshop entries 5998/5999), and all 12 THSR stations are already published.
+Several other "remaining parts" (fleet roster, accessibility, ridership, fare
+history, TOD) already have pages from earlier runs. The brief's "~240 TRA
+stations remaining" estimate does not match the current tree.
+
+**Fix 1 — parallel read-only research.** Added a new `line-scout` subagent
+(`tools: WebSearch, WebFetch, Read, Grep, Glob` — no `Write`, `Edit`, or
+`Bash`) that fetches and reads sources and returns findings as text; it cannot
+touch the working tree or git. Documented the pattern as rule 11 in both
+`AGENTS.md` and `.claude/skills/transit-research/SKILL.md`: research subagents
+may run concurrently because concurrent readers have no failure mode
+corresponding to the incident that destroyed roughly 570 files (two agents
+each running a directory-wide `git checkout --` concurrently); all writes and
+commits stay sequential in the main session. In the course of this, found that
+`.claude/commands/research-line.md` was itself spawning multiple
+`line-researcher` agents — each with `Write`/`Edit`/`Bash` — concurrently on a
+multi-subject request, which is exactly the concurrent-writer risk class.
+Rewrote the command so multi-subject batches fan out through read-only
+`line-scout`s and the calling session writes each file pair sequentially from
+what they return; added an explicit "never run more than one `line-researcher`
+concurrently" warning to that agent's own description.
+
+**Fix 2 — tiered gates.** `npm test` rebuilds ~2,900 pages and checks
+~500,000 links every run, which is disproportionate to a single new page.
+Added `npm run gate:fast` (`cite` + `markers` + a 13-file subset of
+`test:unit` — the genuinely fast content/data-level checks, including the
+`sourcing.test.mts` claims-ratchet test — chosen by excluding the 8 test files
+that read the built `out/` directory or otherwise re-render the full content
+corpus) and `npm run gate:full` (`npm run verify && npm test`, as specified).
+Measured: `gate:fast` completes in **~6 seconds** (107 tests); `gate:full`
+completes in **12m13s** (234/234 unit tests, 17/17 fact cross-checks, 0
+broken links across 2,938 pages, clean before any of this run's content
+changes). Neither gate's contents were narrowed to make them faster — the
+full corpus-rendering tests (`accessibility`, `build-output`, `discoverability`,
+`search`, plus `contrast`, `collapsible-html`, `images`, `markdown`, which
+render every content file) still run in full inside `gate:full`.
+
+**Hygiene.** `docs/for-jamie.md` had grown to 1,485 lines: every run since at
+least Run 3 had prepended its full handoff without ever removing the previous
+one, in direct violation of the file's own "keep it under 25 lines" rule.
+Trimmed it to the single active handoff; the removed history was already
+fully duplicated in this file, so nothing was lost.
+
+### Gates
+
+`npm run gate:full` (`verify && test`) was run once, before any content
+change, as the clean timing baseline described above: 1,745 content files,
+7,730 citations, 0 ASSERTED claims, 2,938 postbuild pages, 517,440 clean
+internal links, 234/234 unit tests, 17/17 fact cross-checks. `npm run
+gate:fast` was then run after each subsequent file change in this run and
+stayed clean. `probes/` remains untracked; generated audit JSONs
+(`docs/claims.json`, `docs/links-audit.json`, `docs/unused-audit.json`) were
+restored after verification and are not part of this commit.
+
 ## Run 263 - publish TRA freight boundary (2026-08-27)
 
 ### Sourced

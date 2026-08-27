@@ -173,6 +173,36 @@ engineering, controversy and design decisions are written from sources.
 
 Do not research a station list. Do not invent an engineering history.
 
+## 11. Parallel read-only research, sequential writes
+
+Sequential Chinese-source fetching is this project's main bottleneck, and
+fetch-and-read is embarrassingly parallel: nothing about reading a page
+depends on another page having been read first.
+
+Research subagents may run concurrently, but only under a hard boundary:
+
+- They fetch and read sources, and return findings as text to the coordinating
+  session. That is the whole job.
+- They **never** write to the repo, **never** run `git`, **never** touch the
+  working tree, and **never** spawn further subagents.
+- All writes — research files, content pages, `docs/run-log.md`,
+  `docs/for-jamie.md` — and all commits happen in the main session, one at a
+  time, after the parallel research returns.
+
+This is not a relaxation of the incident that made this project cautious
+about concurrency: that incident was concurrent *writers* — two agents each
+ran a directory-wide `git checkout --` and together destroyed roughly 570
+files. The danger was two processes racing to mutate the same working tree.
+Read-only fetches racing each other mutate nothing, so there is no
+corresponding failure mode. One writer, sequenced, is what keeps that true —
+do not let a "helper" agent write, commit, or touch git, even in passing.
+
+Fetched pages may be cached outside `content/` (for example under a scratch
+or `probes/`-style directory that is never staged) so that retries and 403s
+are not re-hit across a batch. A cache is a convenience for refetching, not a
+source: never publish a claim from a cached page without recording the URL
+that produced it, per rule 2 above.
+
 ## Output contract
 
 Research goes in `docs/research/<section>/<subject>.md`. Content goes in
