@@ -52,6 +52,19 @@ two sentences that are not adjacent in the source.
 - When a page is long, that is not a reason to rely on the summary — it is the
   reason the material is there at all.
 
+### When a PDF won't extract
+
+The environment has no `pdftoppm`/poppler, so the Read tool's page-image
+fallback cannot render any PDF. It does have `pdftotext` (xpdf, on `PATH`),
+which is a working substitute: `curl -sL -o /tmp/x.pdf '<url>'` then
+`pdftotext -enc UTF-8 /tmp/x.pdf /tmp/x.txt` (add `-layout` only for tables;
+it can scramble vertically-stacked CJK). A source can also be genuinely
+unreachable — an Incapsula-protected page returns an HTML challenge, not a
+PDF, and that is a fetch failure to record, not a tool gap. For a
+multi-column statistical table, confirm you can actually align a number with
+its label before publishing it; if you can't, that is a stated gap, not a
+guess.
+
 ## 3. Every claim carries its provenance
 
 For every factual claim, record:

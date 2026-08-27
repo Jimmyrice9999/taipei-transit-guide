@@ -1,9 +1,9 @@
 ---
 title: Taiwan Railways station-level ridership data
-summary: A live per-station entry/exit dataset exists and is publicly downloadable — the previous "still needs a data pass" framing was too pessimistic — but this page could not read its content, and no source confirms a true station-to-station matrix exists at all.
+summary: A live per-station entry/exit dataset, and an annual report that really does carry a station-by-station table — just not the monthly one secondary sources cited it in — but this page still can't reliably align its rows with its numbers.
 order: 2
 operator: TRA
-updated: 2026-08-27
+updated: 2026-08-28
 facts:
   - label: Open dataset
     value: 臺鐵每日各站點進出站人數 (daily per-station entry/exit counts)
@@ -12,7 +12,10 @@ facts:
     value: from 23 April 2019
     source: datagovtw-station-gate-counts
   - label: Annual report's station-level table
-    value: 表6 各站客貨運起訖量 (Table 6, existence confirmed, content unread)
+    value: 表6 各站客貨運起訖量 (Table 6, 2024 annual digest — confirmed by direct extraction)
+    source: tra-annual-2024-statistics
+  - label: Monthly report's own Table 6
+    value: 線別客運延人公里 (line-level passenger-kilometres — not station-level)
     source: tra-monthly-report-jan2024
 specs:
   - label: Station-to-station OD matrix availability, per a third-party TDX guide
@@ -33,10 +36,19 @@ sources:
     titleOriginal: 臺灣鐵路統計月報
     publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
     url: https://www.railway.gov.tw/tra-tip-web/tip/file/3e5a77ba-0e7a-4fa3-81d6-cb56413b6e35
-    accessed: 2026-08-27
+    accessed: 2026-08-28
     kind: primary
     lang: zh-Hant
-    note: A genuine PDF, confirmed to exist; the fetch tooling used could not extract its table content, including the station-level Table 6.
+    note: Full PDF, extracted with pdftotext after the fetch tooling used could not read it directly. Its own Table 6 is a line-level passenger-kilometre table, not the station-level table secondary sources attributed to "Table 6" — that table is in the annual report instead.
+  - id: tra-annual-2024-statistics
+    title: "Taiwan Railway Statistical Digest, 2024 (113年)"
+    titleOriginal: 臺灣鐵路統計要覽 113年
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Full PDF, extracted with pdftotext. Its Table 6, 各站客貨運起訖量, is the genuine station-level boarding-count table; this page could not confirm the extracted text's row-to-value alignment, so no individual station figure from it is published as established.
   - id: tdx-guide-rail-data
     title: "TDX Data Interface Guide — rail transport data"
     titleOriginal: TDX 運輸資料介接指南－軌道運輸資料
@@ -67,18 +79,38 @@ automated summary of the raw file rather than a verified parse, and is
 reported here only as a low-confidence example, not an established
 figure.[^datagovtw-station-gate-counts]
 
-## A separate table this page could not read
+## Two reports, two different Table 6es
 
-TRA's own Monthly and Annual Statistical Reports separately contain a
-station-level table, 表6 各站客貨運起訖量 (Table 6, volume of passenger and
-freight traffic by station). Its existence and PDF format were confirmed by
-directly fetching the report files, but no tool available to this page's
-sourcing process could extract the table's actual content — the PDFs
-resisted every extraction method tried.[^tra-monthly-report-jan2024]
-Whether Table 6's "起訖量" (origin-destination volume) measures the same
-thing as the open dataset's gate-entry/exit counts is not established by
-any source this page could read; the two are not assumed to be
-interchangeable.
+Secondary sources cite "Table 6" of TRA's Statistical Report for a
+station-level 各站客貨運起訖量 (volume of passenger and freight traffic by
+station) figure. Reading the reports directly shows this is only true of
+one of them.[^tra-monthly-report-jan2024][^tra-annual-2024-statistics] TRA's **monthly** report has 21 tables, and its own Table 6 is
+線別客運延人公里 (passenger-kilometres by line) — a line-level measure with
+no station breakdown at all.[^tra-monthly-report-jan2024] TRA's **2024
+annual** Statistical Digest does carry a Table 6 titled exactly 各站客貨運起訖量,
+spanning six pages of continuations and giving each station's boarding
+count (上車人數) for the year.[^tra-annual-2024-statistics] The two reports
+are not interchangeable copies of each other, and a citation to "Table 6"
+needs to say which report it means.
+
+This page still does not publish any individual station's figure from the
+annual table.[^tra-annual-2024-statistics] The table renders station names as single characters stacked
+vertically in narrow columns, and every text-extraction method tried
+reconstructs that as two separately-ordered blocks — all station labels,
+then all values — rather than a row that keeps a label next to its own
+number; one more aggressive layout-reconstruction attempt visibly
+scrambled station names together instead of fixing this.[^tra-annual-2024-statistics] One figure, a
+2024 annual boarding count of 22,598,749 in the position where Taipei
+Station's row should be, is at least consistent in order of magnitude with
+the open dataset's single-day Taipei figure (roughly 62,800 for 1 January
+2026; 22,598,749 ÷ 365 ≈ 61,900/day) — but this page treats that as
+suggestive, not confirmed, because the row-to-value mapping itself was
+never verified against the PDF's actual visual layout.[^tra-annual-2024-statistics]
+
+Whether the open dataset's "進出站人數" (gate entry/exit) and the annual
+report's "起訖量" (origin-destination volume) measure the same thing is not
+established by any source this page could read; the two are not assumed to
+be interchangeable.
 
 ## What does not appear to exist
 
@@ -91,9 +123,9 @@ MRT.[^tdx-guide-rail-data]
 
 ## Remaining gaps
 
-No verified station-by-station ranking exists from a primary source this
-page could read; every specific figure beyond the single low-confidence
-Taipei data point above rests on unverified secondary compilations and is
-not published here. A working PDF text extraction of the Statistical
-Report's Table 6, or a proper parse of the open dataset's JSON download,
+No verified station-by-station ranking is published here; every specific
+figure beyond the single, position-only Taipei data point above rests on
+unverified secondary compilations or an unconfirmed text-extraction
+alignment. Confirming the annual table's actual row-to-value mapping against
+its visual layout, or a proper parse of the open dataset's JSON download,
 would settle most of what remains TBC on this page.

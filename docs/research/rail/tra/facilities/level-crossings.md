@@ -14,6 +14,7 @@ grade-separation details below, flagged explicitly where it applies.
 ## What is established
 
 - **News reporting in June 2026 gives TRA's current level-crossing count as 415 nationwide, of which roughly 350 are on main lines.** Corroborated across three independently fetched outlets: ETtoday, `台鐵3年27起事故 交通部擬修法「禁設新平交道」`, `https://www.ettoday.net/news/20260613/3182640.htm`; Liberty Times, `交部將修法 鐵路不再新增平交道`, `https://news.ltn.com.tw/news/life/breakingnews/5471008`; CNA, `https://www.cna.com.tw/news/ahel/202606130076.aspx`. All SECONDARY, Medium confidence — the 415 figure appears in each as unattributed running text, not as a quoted TRA/Railway Bureau document.
+- **The 415 figure is now independently confirmed by a primary source: the operator's own 113-year (2024) Annual Statistical Report, Table 9 (平交道數量, Number of Level Crossings), gives 415 as the total at year-end 民國113年 (2024), citing Article 14 of the same crossing-classification regulation already used above.** Source: National Taiwan Railways Corporation, `臺灣鐵路統計要覽 113年`, `https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0`, PRIMARY, High confidence — the full PDF, previously unreadable by the fetch tooling used, was extracted in full with `pdftotext` (see AGENTS.md's PDF-extraction guidance) on 2026-08-28. Table 9 also gives a clean year-end time series back to 民國75年 (1986: 834), though this page does not publish the fuller line-by-line type breakdown in the same table, whose column alignment could not be confirmed reliably from the extracted text. Original-language basis: `民國113年底 End of 2024 415`; `平交道種別分類係依據「鐵路立體交叉及平交道防護設施設置標準與費用分擔規則」第14條`.
 - **TRA's own open dataset of level crossings exists and is live, but does not itself surface a total-record count.** Source: 政府資料開放平臺 (data.gov.tw), `平交道公開資料`, `https://data.gov.tw/dataset/11970`, PRIMARY, High confidence for existence and fields (name, line, crossing type, county/city, coordinates); metadata last updated 2024-08-26, stated update cadence "irregular." A live per-record lookup at `https://tip.railway.gov.tw/tra-tip-web/adr/about-public-info-6-detail`, PRIMARY, was fetched and shows a current update timestamp, but pagination was not exhausted to derive an independent total.
 - **TRA's own attributed statement, per Liberty Times, gives 313 level crossings currently fitted with obstacle-detection systems, with full coverage targeted before 2031 at an estimated cost of roughly NT$400 million; a Railway Bureau statement to the same outlet gives 11, 9 and 7 main-line crossing accidents for 2023, 2024 and 2025 respectively.** Source: Liberty Times (as above), SECONDARY, Medium confidence — explicitly attributed to TRA/the Railway Bureau by the reporter, but not independently checked against a TRA or Railway Bureau press release.
 - **The current statutory safety-classification regulation, in force since 15 June 1996 (民國85年) without revision since, sets four crossing types: Type 1 (gates + warning devices, staffed 24 hours), Type 2 (gates + warning devices, staffed during specified hours), Type 3 (automatic warning + automatic gates, unstaffed), Type 4 (warning signs only, unstaffed).** Source: 全國法規資料庫, `鐵路立體交叉及平交道防護設施設置標準與費用分擔規則`, `https://law.moj.gov.tw/LawClass/LawAll.aspx?PCODE=K0030009`, PRIMARY, High confidence — full regulation text fetched. Original-language basis (Article 14): `第一種：設遮斷器及警報裝置，並應晝夜派看柵工駐守`; `第三種：設自動警報裝置及自動遮斷器，不派看柵工駐守`.
@@ -24,7 +25,7 @@ grade-separation details below, flagged explicitly where it applies.
 
 ## Conflicts
 
-- **415 (2026 news reporting) versus 435 (a zh.wikipedia table dated January 2017, which sums 6+1+381+28+11+8=435 by this page's own addition)** for the total level-crossing count. Both measure the same thing roughly nine years apart, consistent with an active elimination programme, but neither has been independently verified against a primary document. A third figure, 456, appeared only in an unfetched search-tool snippet and does not appear anywhere in the fetched zh.wikipedia page — rejected per the no-snippet rule, not published.
+- **415 (now primary-confirmed for end of 2024, via the operator's own Annual Statistical Report Table 9) versus 435 (a zh.wikipedia table dated January 2017, which sums 6+1+381+28+11+8=435 by this page's own addition).** Both measure the same thing roughly seven years apart, consistent with an active elimination programme; the 435 figure remains unverified against a primary source. A third figure, 456, appeared only in an unfetched search-tool snippet and does not appear anywhere in the fetched zh.wikipedia page — rejected per the no-snippet rule, not published.
 - **Kaohsiung underground Phase 2 completion year: 2023, per a 2018-era projection in 今周刊, versus 2025, per zh.wikipedia's current text.** Not resolved; may reflect an early projection versus the actual later completion, but no source states that explicitly.
 - **Hualien elevation project cost estimate: "at least roughly NT$17+ billion" versus NT$26.5 billion**, both appearing in the same search-summarized coverage without clearly separating whether these are two different estimates at two different planning stages (an earlier MOTC assessment versus a later county feasibility submission). Not resolved; flagged pending a full fetch of the underlying article.
 
@@ -38,10 +39,13 @@ grade-separation details below, flagged explicitly where it applies.
 
 ## Stated gaps
 
-No primary TRA or Railway Bureau document was found stating "415 level
-crossings" as of a specific date; a TRA monthly statistical report or the
-MOTC draft amendment's own explanatory document would settle this, as would
-exhausting the open-data database's pagination. No specific accident
+A primary document stating "415 level crossings" as of a specific date (end
+of 2024) has now been found and cited above. The same table's fuller
+line-by-line and type-by-type breakdown for 2024 is not published here: the
+extracted text's column alignment across "西部幹線/東部幹線/南迴線" and
+"第一至四種" groupings could not be confirmed reliably, and misattributing a
+sub-total would be worse than leaving it TBC. Exhausting the open-data
+database's pagination independently would still be useful corroboration. No specific accident
 triggering the 2026 regulation amendment was found in any source read; all
 three news accounts cite general regulatory age and risk. The mapping
 between the four statutory crossing types and the finer categories used in

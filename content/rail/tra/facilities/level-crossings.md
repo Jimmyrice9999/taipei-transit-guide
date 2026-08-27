@@ -1,13 +1,13 @@
 ---
 title: Taiwan Railways level crossings
-summary: A 30-year-old safety regulation about to be replaced, a reported 415 crossings the primary sources don't total up directly, and a Taipei Metro-style elimination programme this page could not verify against its own Railway Bureau source.
+summary: A 30-year-old safety regulation about to be replaced, a primary-confirmed total of 415 crossings at end of 2024, and a Taipei Metro-style elimination programme this page could not verify against its own Railway Bureau source.
 order: 3
 operator: TRA
-updated: 2026-08-27
+updated: 2026-08-28
 facts:
-  - label: Reported current total, nationwide
+  - label: Total, end of 2024
     value: 415
-    source: ettoday-crossing-count
+    source: tra-annual-2024-statistics
   - label: Fitted with obstacle-detection systems
     value: 313
     source: ettoday-crossing-count
@@ -33,7 +33,16 @@ sources:
     accessed: 2026-08-27
     kind: secondary
     lang: zh-Hant
-    note: Source for the reported 415 current-crossing total, the 313-crossing obstacle-detection rollout and the 2023-2025 accident counts, all reported in running text or attributed to TRA/the Railway Bureau without a cited document.
+    note: Source for the 313-crossing obstacle-detection rollout and the 2023-2025 accident counts, reported in running text or attributed to TRA/the Railway Bureau without a cited document. The 415 total it also reports is independently confirmed by a primary source below.
+  - id: tra-annual-2024-statistics
+    title: "Taiwan Railway Statistical Digest, 2024 (113年)"
+    titleOriginal: 臺灣鐵路統計要覽 113年
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Full annual statistical report, extracted in full with pdftotext after the fetch tooling used could not read the PDF directly. Table 9 gives 415 level crossings at end of 2024 and cites the same classification regulation used elsewhere on this page; its fuller type/line breakdown is not published here because this page could not confirm the extracted text's column alignment.
   - id: datagovtw-crossing-dataset
     title: TRA level-crossing open dataset
     titleOriginal: 平交道公開資料
@@ -90,18 +99,20 @@ sources:
     note: A genuine primary government record confirming the Hualien elevation project's existence and its feasibility/planning-stage status, covering 7 named crossings.
 ---
 
-## A regulation about to change, and a count this page could not verify directly
+## A regulation about to change, and a total now confirmed
 
-TRA is reported to operate 415 level crossings nationwide as of mid-2026,
-roughly 350 of them on main lines, with 313 already fitted with obstacle-
-detection systems and full coverage targeted before 2031.[^ettoday-crossing-count]
-That figure comes from news coverage attributing it to TRA and the Railway
-Bureau in running text, not from a cited document this page could
-independently check; TRA's own open dataset of individual crossings exists
-and updates live, but this page did not exhaust its pagination to derive a
-total of its own.[^datagovtw-crossing-dataset] The same coverage attributes
-11, 9 and 7 main-line crossing accidents to 2023, 2024 and 2025
-respectively.[^ettoday-crossing-count]
+TRA operated 415 level crossings at the end of 2024, per the operator's own
+annual statistical report — Table 9, which also cites the same
+classification regulation this page uses below.[^tra-annual-2024-statistics]
+News coverage from mid-2026 reports the same 415 figure, plus 313 crossings
+already fitted with obstacle-detection systems (full coverage targeted
+before 2031) and roughly 350 crossings on main lines, though those two
+additional figures remain attributed to TRA and the Railway Bureau only in
+running text, not a cited document.[^ettoday-crossing-count] TRA's own open
+dataset of individual crossings exists and updates live, but this page did
+not exhaust its pagination to derive a total of its own.[^datagovtw-crossing-dataset]
+The same coverage attributes 11, 9 and 7 main-line crossing accidents to
+2023, 2024 and 2025 respectively.[^ettoday-crossing-count]
 
 The regulation governing crossing safety equipment has been in force since
 15 June 1996 without revision — over 30 years — and sets four crossing
@@ -146,10 +157,11 @@ construction.[^ly-hualien-elevation]
 
 ## Remaining gaps
 
-No primary TRA or Railway Bureau document stating the current 415-crossing
-total by name was found; that figure, and the mapping between the four
-statutory crossing types and the finer categories used in older counts, are
-TBC. A specific accident behind the 2026 regulation amendment was not found.
+The mapping between the four statutory crossing types and the finer
+categories used in older counts remains TBC, as does the annual report's own
+fuller type/line breakdown for 2024, whose column alignment this page could
+not confirm from extracted text. A specific accident behind the 2026
+regulation amendment was not found.
 Individual grade-separation project scopes and dates for Taichung, Chiayi,
 Pingtung–Chaozhou, Tainan, Yilan and Taoyuan remain unverified against a
 working Railway Bureau source and are not stated here beyond what Wikipedia

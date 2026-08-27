@@ -17,9 +17,10 @@ public TRA/TDX data at all.
 - **TRA publishes a live, per-station, per-day entry/exit (turnstile-gate) dataset as open government data, with JSON and compressed downloads.** Source: National Taiwan Railway Corporation, `臺鐵每日各站點進出站人數`, via 政府資料開放平臺, `https://data.gov.tw/dataset/8792`, PRIMARY, High confidence — full page fetched, not a snippet. Fields: `trnOpDate`, `staCode`, `gateInComingCnt`, `gateOutGoingCnt`. Original-language basis: `檢視資料自20190423開始至20251231之進出站人數`.
 - **The live JSON download resource, fetched directly, returns records for dates in January 2026, later than the dataset landing page's own stated end date of 31 December 2025.** Same URL family as above, PRIMARY, Medium confidence — a genuine, unresolved discrepancy between the landing page's coverage note and the resource's actual live content (see Conflicts).
 - **One data point read from that live resource: station code 1000 (corroborated by a secondary railfan source as Taipei Station) recorded a `gateInComingCnt` of 62,751 and `gateOutGoingCnt` of 47,316 for 1 January 2026.** Same source, PRIMARY as data, but Low-Medium confidence on extraction — obtained via an AI summariser reading a large binary/JSON file rather than a verified parse; not independently re-parsed.
-- **TRA's separate Statistical Report (monthly and annual) contains a station-level table titled 「表6 各站客貨運起訖量」 (Table 6, volume of passenger and freight traffic by station); its existence and PDF format were confirmed by direct fetch, but its actual table content could not be read by any tool available in this research.** Sources confirmed to exist as genuine PDFs: `https://www.railway.gov.tw/tra-tip-web/tip/file/3e5a77ba-0e7a-4fa3-81d6-cb56413b6e35` (January 2024 monthly report) and `https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0` (a 2024/113年 annual report, per a secondary citation). PRIMARY for existence, Medium confidence; content unread — see Checked and failed.
+- **Correction to the above (2026-08-28): the two PDFs are not two copies of the same report, and only one of them carries the station-level table.** Both were successfully extracted in full with `pdftotext` after the fetch tooling used could not read either directly (see AGENTS.md's PDF-extraction guidance). The January 2024 **monthly** report (`https://www.railway.gov.tw/tra-tip-web/tip/file/3e5a77ba-0e7a-4fa3-81d6-cb56413b6e35`) has 21 tables, and its own Table 6 is 「線別客運延人公里」 (Passenger-Kilometers by Lines) — a **line-level**, not station-level, table. The secondary sources' claimed 「表6 各站客貨運起訖量」 does not exist under that number in the monthly report at all. The 2024 **annual** Statistical Digest (`https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0`, titled 臺灣鐵路統計要覽 113年) does carry a Table 6 titled exactly 「各站客貨運起訖量」 (Volume of Passenger & Freight Traffic, by station), spanning six pages (five continuations) and giving 上車人數 (boarding count) by station for civil year 113 (2024). PRIMARY, High confidence for the table's existence, title, scope and year. Original-language basis: `表6 各站客貨運起訖量`; `中華民國113年`; monthly report's own Table 6 heading: `表6 線別客運延人公里`.
+- **The annual report's Table 6 content was read, but individual station-to-figure alignment could not be confirmed reliably from the extracted text, so no per-station figure from it is published as established.** The table renders station names as vertically-stacked single characters in narrow columns; both default and `-layout` text extraction reconstruct this as two separately-ordered blocks (all labels, then all values) rather than a clean row-by-row table, and a mis-scan attempt (`-layout` mode) visibly interleaved unrelated station-name characters. One data point — Taipei's 2024 annual boarding count of 22,598,749 — is plausible by position and is consistent in order of magnitude with the live open dataset's single-day Taipei figure (roughly 62,800 for 1 January 2026; 22,598,749 ÷ 365 ≈ 61,900/day), but this page still does not publish it as confirmed, because the underlying row-to-value mapping was not independently verified against the PDF's visual layout.
 - **A third-party TDX guide (not TDX's own documentation) reports that TDX exposes the same-style entry/exit data via a documented function, and states that a full station-to-station origin-destination matrix is currently available only for Taipei MRT, not TRA.** Source: `TDX 運輸資料介接指南`, bookdown.org (independent author, not TDX itself), `https://bookdown.org/chiajungyeh/TDX_Guide/軌道運輸資料.html`, SECONDARY, Medium confidence — not verified against TDX's own primary documentation. Original-language basis: `目前僅臺北捷運提供` (currently only Taipei MRT provides [station-to-station volumes]).
-- **A Wikipedia ranking article states its own methodology explicitly and cites Table 6 as its source, but that citation could not be verified against the primary because Table 6's content is unreadable to this research.** Source: `臺灣鐵路車站旅客人次排名`, zh.wikipedia, SECONDARY, lead index only. Original-language basis: `排名順序則依據「每日平均進出站人次」一項目`.
+- **A Wikipedia ranking article states its own methodology explicitly and cites Table 6 as its source; Table 6's existence, title and station-level scope are now confirmed (above), but its specific ranking figures remain unverified against the primary — see Conflicts.** Source: `臺灣鐵路車站旅客人次排名`, zh.wikipedia, SECONDARY, lead index only. Original-language basis: `排名順序則依據「每日平均進出站人次」一項目`.
 
 ## Conflicts
 
@@ -30,10 +31,9 @@ public TRA/TDX data at all.
 
 ## Checked and failed
 
-- **The January 2024 TRA Monthly Statistical Report PDF** (`https://www.railway.gov.tw/tra-tip-web/tip/file/3e5a77ba-0e7a-4fa3-81d6-cb56413b6e35`) — checked 2026-08-27, confirmed as a genuine PDF but the fetch tool could not extract readable table content from the compressed PDF stream.
-- **A 2024 TRA Annual Statistical Report PDF** (`https://tip.railway.gov.tw/tra-tip-web/tip/file/28e611f8-e25a-4ca9-9aad-967ca91ae8e0`) — checked 2026-08-27, same extraction failure.
-- **An older (~2019) station-level table PDF** (`https://www.railway.gov.tw/tra-tip-web/tip/file/7703f24b-0378-4419-88a3-9363d0457d54`) — checked 2026-08-27, same extraction failure.
-- **A direct attempt to render these PDFs locally via the Read tool's page-image mode** — checked 2026-08-27, failed: the environment lacks `pdftoppm`/poppler-utils, so no PDF rendering method was available at all for these files.
+- **The January 2024 TRA Monthly Statistical Report PDF and the 2024 Annual Statistical Digest PDF, via the original fetch tooling** — checked 2026-08-27, both confirmed as genuine PDFs but unreadable by that tooling (compressed-stream extraction failure). Superseded 2026-08-28: both were successfully extracted with `pdftotext` (see "What is established" above); this entry is retained to record that the *original* fetch method failed, not that the content remains unread.
+- **An older (~2019) station-level table PDF** (`https://www.railway.gov.tw/tra-tip-web/tip/file/7703f24b-0378-4419-88a3-9363d0457d54`) — checked 2026-08-27, same original extraction failure; not re-attempted with `pdftotext` in this pass.
+- **A direct attempt to render these PDFs locally via the Read tool's page-image mode** — checked 2026-08-27, failed: the environment lacks `pdftoppm`/poppler-utils, so no PDF rendering method was available at all for these files this way. `pdftotext` (a separate tool, already present) succeeded instead — see AGENTS.md.
 - **MOTC's own monthly statistics table for TRA passenger figures** (`https://www.motc.gov.tw/ch/app/statistics401/view?module=month&id=579&serno=201111160014`) — checked 2026-08-27, returned HTTP 500.
 - **A Wayback Machine snapshot of the same MOTC page** — checked 2026-08-27, `web.archive.org` fetches are blocked in the tooling used.
 - **TDX's own API documentation, to verify the third-party guide's claims (Claim 6 above)** — checked 2026-08-27; not fetched in this research, a real, specific gap left for a follow-up pass.
@@ -44,12 +44,13 @@ Whether the open dataset's gate-count figures and the annual report's
 origin-destination table measure the same thing is unresolved. No verified
 top-N or bottom-N station ranking exists from a primary source this
 research could read — every specific station figure beyond the single,
-low-confidence Taipei Station data point rests on unverified secondary
-compilations. Reading Table 6's actual content — via a working PDF text
-extraction tool, or a proper JSON parse of the open dataset — would settle
-most of the above and is the clear next step for this subject. Whether MOTC
-separately publishes a station-level table is unresolved due to a server
-error. A genuine station-to-station origin-destination matrix does not
-appear to exist in public TRA/TDX data (unlike Taipei MRT, per one
-unverified secondary source) — this specific negative claim itself remains
-unconfirmed against TDX's own documentation.
+unconfirmed-by-position Taipei data point rests on unverified secondary
+compilations or an unreliable text-extraction alignment. Confirming the
+annual report Table 6's row-to-value alignment — by checking the extracted
+text against the PDF's actual visual layout, not just position in a text
+dump — would settle most of the above and is the clear next step for this
+subject. Whether MOTC separately publishes a station-level table is
+unresolved due to a server error. A genuine station-to-station
+origin-destination matrix does not appear to exist in public TRA/TDX data
+(unlike Taipei MRT, per one unverified secondary source) — this specific
+negative claim itself remains unconfirmed against TDX's own documentation.

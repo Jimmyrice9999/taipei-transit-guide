@@ -1,4 +1,99 @@
 
+## Run 274 - fast-gate font check; pdftotext PDF fallback; two content corrections (2026-08-28)
+
+### What happened
+
+Two follow-up fixes requested after Run 273's CI break, plus what fixing
+the second one immediately surfaced.
+
+**Fast-gate font check.** Added `npm run font:check` (new `scripts/font-check.mjs`,
+wired into `gate:fast`) that scans `content/**/*.md` for Han characters
+appearing in a run of 2+ consecutive Han-range codepoints and fails if any
+is absent from every committed font subset — closing the exact gap that let
+Runs 265-272 push with a stale subset undetected. Verified sensitivity
+directly: removed `籌` from every subset, confirmed the check failed and
+named the correct source file, restored the manifest, confirmed clean.
+Deliberately scoped to `content/` only, not the full `lib/`, `components/`,
+`app/` set `subset-cjk.mjs` itself scans: including those surfaced 9
+characters in three pre-existing station data files
+(`lib/danhai-stations.ts`, `lib/circular-stations.ts`,
+`lib/airport-mrt-stations.ts`) that a completed full build's own postbuild
+check confirms never actually render on any current page — a real,
+pre-existing, low-priority gap, but including it here would make the fast
+gate permanently red on something the exact rendered-HTML check has already
+established isn't a live problem, exactly the kind of noise that trains
+people to stop reading a check. Runtime: ~1s, bringing `gate:fast` to ~10s
+total.
+
+**PDF extraction fallback.** The sandbox has no `pdftoppm`/poppler, so the
+Read tool's page-image PDF fallback cannot work at all. It does have
+`pdftotext` (xpdf, already on `PATH` via the Git-for-Windows MSYS2
+toolchain) — confirmed by pulling two of the three PDFs Run 272 had marked
+checked-and-failed and reading them in full: a 143-page TRA South Link
+tunnel-safety report, and TRA's 2024 (113年) annual Statistical Digest. The
+third, rb.gov.tw's fire-safety research report, remains unreadable, but for
+a different reason: `curl` against it returns an Incapsula bot-challenge
+HTML page, not a PDF — a genuine fetch failure, not a missing tool.
+Documented the working method and both caveats (Incapsula-style blocks;
+`-layout` mode can scramble vertically-stacked CJK worse than the default
+extraction) in `AGENTS.md` and the `transit-research` skill.
+
+**What the newly-readable annual digest changed.** Its Table 9 (平交道數量,
+level crossings) gives **415 at end of 2024** — a direct primary
+confirmation of the figure `level-crossings.md` had carried as secondary-only
+since Run 267, now re-cited accordingly. Its Table 6 also settled a real
+confusion in `station-ridership.md`: the *monthly* report's own Table 6 is
+線別客運延人公里 (line-level passenger-kilometres, not stations at all) —
+the station-level 各站客貨運起訖量 table secondary sources meant is Table 6
+of the *annual* digest specifically, a distinction Run 272 had not been able
+to check because neither PDF was readable yet. The annual table's content
+was extracted, but this page still does not publish any individual
+station's figure from it: the table renders station names as vertically
+stacked single characters, and every extraction method tried (default and
+`-layout`) reconstructs it as two separately-ordered blocks — labels, then
+values — not confirmed to correlate row-by-row, and a more aggressive
+layout-reconstruction attempt visibly scrambled the station names further.
+One position-based data point (Taipei, 22,598,749 for 2024) is
+order-of-magnitude consistent with the open dataset's single-day figure but
+is explicitly not published as confirmed.
+
+### Gates
+
+`npm run gate:fast` passed after two rounds of fixes (4 uncited sentences
+total across the two corrected pages, one caused by a wrong-source-id
+citation carried over from an earlier draft). `npm run research` is clean:
+238 files, 996 checked-and-failed entries — two stale "checked and failed"
+entries for the now-readable PDFs were reworded to record that the
+*original* fetch method failed rather than leave a contradicted claim
+standing. No conflicts-index or font-subset regeneration was needed this
+round. `probes/` remains untracked. This is commit 2 since the last full
+gate (Run 272); `npm run gate:full` is being run once more before
+continuing the content brief, given the scope of what changed since CI
+broke.
+
+## Run 273 - regenerate content font subset for CI (2026-08-28)
+
+### What happened
+
+CI's postbuild check had failed on the last several pushes (Runs 265-272):
+3 pages render `籌` (from 國家鐵道博物館籌備處, introduced in Run 271) which
+was outside the committed subset — the font subset had gone stale because
+new Han characters had arrived via generated pages (`conflicts-index.md`,
+the `/data/sources` aggregation route) as well as ordinary content pages,
+and nothing in the fast-gate path prompted regeneration (the gap Run 274,
+above, closes). Ran `npm run fonts` and committed the regenerated
+`public/fonts/noto-sans-tc-content-{400,700}.woff2` and
+`subset-manifest.json`; confirmed `籌` present in the content subset before
+pushing.
+
+### Gates
+
+Confirmed `籌` is in the regenerated manifest's content subset by direct
+inspection before committing. Pushed immediately as commit `290d049e` to
+unblock deploy; the fuller verification (a from-scratch build, confirming
+nothing else was still missing) is recorded under Run 274 above, run
+immediately after.
+
 ## Run 272 - publish TRA station-level ridership boundary (2026-08-27)
 
 ### Sourced

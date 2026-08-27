@@ -68,7 +68,7 @@ const LINE_CODES = ['BR', 'R', 'G', 'O', 'BL', 'Y', 'LB', 'A', 'V', 'K']
 const LINE_KEYS = LINE_CODES.map((code) => `line-${code.toLowerCase()}`)
 
 /** Directories scanned for Han characters. */
-const SCAN = [
+export const SCAN = [
   { dir: path.join(ROOT, 'content'), exts: ['.md'] },
   { dir: path.join(ROOT, 'lib'), exts: ['.ts', '.tsx'] },
   { dir: path.join(ROOT, 'components'), exts: ['.ts', '.tsx'] },
@@ -128,7 +128,7 @@ export function sinkOf(html) {
 
 /* ------------------------------------------------------------------ */
 
-function walk(dir, exts, found = []) {
+export function walk(dir, exts, found = []) {
   if (!fs.existsSync(dir)) return found
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name)
@@ -138,7 +138,7 @@ function walk(dir, exts, found = []) {
   return found
 }
 
-function collectFromSource() {
+export function collectFromSource() {
   const chars = new Set()
   const perFile = new Map()
 

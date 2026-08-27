@@ -63,6 +63,33 @@ two sentences that are not adjacent in the source.
 - When a page is long, that is not a reason to rely on the summary — it is the
   reason the material is there at all.
 
+### When a PDF won't extract
+
+The environment has no `pdftoppm`/poppler, so the Read tool's page-image
+fallback cannot render any PDF. It does have `pdftotext` (xpdf, bundled with
+Git for Windows' MSYS2 toolchain, on `PATH` as `pdftotext`), which is a
+working substitute for extraction — confirmed by pulling a PDF a fetch tool
+had failed on and reading it directly:
+
+```
+curl -sL -o /tmp/x.pdf '<url>'
+pdftotext -enc UTF-8 /tmp/x.pdf /tmp/x.txt   # add -layout only for tables;
+```                                            # it can scramble vertical CJK
+
+Two caveats found in practice. First, a source can be genuinely unreachable
+rather than merely a PDF-extraction problem — `curl` against an
+Incapsula-protected page returns an HTML challenge page, not a PDF, and
+`pdftotext` will correctly refuse to read it; that is a fetch failure to
+record as checked-and-failed, not a tool gap. Second, `-layout` reconstructs
+columns by position and can badly scramble a table where station names are
+rendered as vertically-stacked single characters next to a column of
+numbers — the default (non-`-layout`) extraction, which groups all labels
+then all values as two separate blocks, is often easier to correlate by
+position, but multi-page or multi-column statistical tables can still defeat
+reliable extraction. Confirm you can actually align a given number with its
+label before publishing it; if you can't, that is a stated gap, not a
+guess.
+
 ## 3. Every claim carries its provenance
 
 For every factual claim, record:
