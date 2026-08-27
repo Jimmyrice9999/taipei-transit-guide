@@ -510,8 +510,8 @@ source has that.
 | `depots.md` | `/rail/metro/depots/nangang-depot` | 7.83 ha; the air-rights mechanism |
 | `depots.md` | `/rail/metro/depots/xindian-depot` | The Xiaobitan branch climbing to an elevated station inside the depot |
 | `depots.md` | new history article | Losheng |
-| `rolling-stock.md` | all fleet pages | The car-numbering convention; DORTS's sixteen-row procurement table |
-| `rolling-stock.md` | `/rail/metro/rolling-stock/c341` | The Continental Engineering procurement — needs a second source |
+| `rolling-stock.md` | all fleet pages, including `/rail/metro/rolling-stock/c341` | The car-numbering convention; DORTS's sixteen-row procurement table; the CP341 contractor and product-inspection boundary published in Run 246; the legal purchaser, KOROS rejection and price sequence remain TBC |
+| `rolling-stock.md` | `/rail/metro/rolling-stock/c341` | Continental Engineering's CP341 project-contractor record and inspection boundary; the legal purchaser, KOROS rejection and price sequence still need a primary record |
 | `rolling-stock.md` | `/rail/metro/rolling-stock/c371` | First Taiwanese-built metro train; the local-content split |
 | `tamsui-xinyi-line.md` | `/rail/metro/lines/tamsui-xinyi-line` | The Xinyi East Extension. **Time-critical.** Needs a primary pass |
 | `zhonghe-xinlu-line.md` | `/rail/metro/lines/zhonghe-xinlu-line` | The O21→O50 gap; the three component projects; the fifteen-year completion |

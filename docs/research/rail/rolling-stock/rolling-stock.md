@@ -95,6 +95,24 @@ were retrofitted later.
 supplier it didn't want, at 1.5× the price, for a fleet of six trains — that's a
 complete article.
 
+### Primary records now establish the CP341 contractor and inspection boundary
+
+An official DORTS statistical monthly report independently places CP341 in the
+Banqiao electrical-works table, calls it the electric-train detailed-design and
+system-engineering package, and names Continental Engineering Corporation as
+the contractor. The full report is *90 August Taipei MRT statistical monthly
+report* (`90年08月份捷運統計月報`), Taipei City Government Department of Rapid
+Transit Systems, <https://www-ws.gov.taipei/001/Upload/388/attachment/7348097/90%E5%B9%B408%E6%9C%88%E4%BB%BD%E6%8D%B7%E9%81%8B%E7%B5%B1%E8%A8%88%E6%9C%88%E5%A0%B1.pdf>, **PRIMARY, High**. The relevant full-report table is page 168; its original-language evidence is `CP341 電聯車細部設計系統工程` alongside `大陸工程股份有限公司`. This confirms the contractor role in the DORTS project record, but does not by itself establish the legal purchaser, a KOROS rejection or the disputed price.
+
+The Taipei government data catalogue also exposes a primary metadata record for
+*First product inspection of CP341 train carbody, bogie, brake, door and coupler
+subsystems* (`板橋線CP341標電聯車車體、轉向架、煞車、車門及聯結器等次級系統首次產品檢測`),
+<https://data.taipei/dataset/detail?id=66698de2-c1a8-4e99-8cf2-0e00bc1ba0d7>,
+**PRIMARY, High for the metadata**. It records a 5–18 March 2003 inspection
+trip to Austria, Britain and the United States. It does not expose the
+acceptance report or supplier decision, so it corroborates the inspection
+boundary rather than the procurement narrative.
+
 ## C371 — the first Taiwanese-built metro train
 
 | Field | Value |
@@ -366,6 +384,7 @@ rather than deleted, so the same lead is not chased twice.
   7 August 2026, run 7, against DORTS's own procurement FAQ, which gives
   木柵線 CC350 and 文湖線 CB370. C370 is the fleet designation, in the C301 /
   C321 / C341 / C371 / C381 series. Both names are correct for different things.
+- **The exact C341 purchaser, KOROS rejection and NT$2.248 billion price sequence** — checked 27 August 2026 against the full DORTS statistical monthly report, the full DORTS C341 technical pages and the Taipei government CP341 product-inspection record. The official report confirms Continental Engineering's contractor role and the data record confirms the inspection metadata, but none of the opened primary records establishes the legal purchaser, rejection sequence or price comparison. Those claims remain TBC.
 
 
 ---

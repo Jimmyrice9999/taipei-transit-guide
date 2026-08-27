@@ -2,6 +2,26 @@
 
 ## Active handoff - 27 August 2026
 
+Run 246 tightens the C341 procurement record from the primary evidence. An
+official DORTS statistical monthly report names Continental Engineering as the
+CP341 electric-train detailed-design/system-engineering contractor, and a Taipei
+government catalogue record documents the first product inspection for the
+carbody, bogie, brake, door and coupler subsystems in Austria, Britain and the
+United States during 5–18 March 2003.
+
+The stronger claim that Continental was the legal purchaser, first proposed
+KOROS, was refused by DORTS, then bought Siemens trains for NT$2.248 billion at
+1.5 times the C321 price remains TBC. The opened primary records do not expose
+that subcontract, rejection record or price comparison. `probes/` remains
+untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot, South Depot, depot-levels, Neihu
+running-surface, Circular Line 0403, Wenhu architecture and C341
+contractor/inspection pass, starting with the next explicit line or system gap.
+
+## Active handoff - 27 August 2026
+
 Run 245 adds the focused Wenhu Line station-architecture page and its
 one-subject research pair. The full official DORTS architecture record supports
 the Muzha steel-and-glass/simple-form rationale, the single-column load

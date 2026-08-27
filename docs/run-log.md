@@ -1,3 +1,47 @@
+## Run 246 - tighten C341 procurement evidence (2026-08-27)
+
+### Sourced
+
+Added two primary records to the existing C341 page and rolling-stock research.
+The full DORTS statistical monthly report places CP341 in the Banqiao electrical
+works table, labels it the electric-train detailed-design/system-engineering
+package and names Continental Engineering Corporation as contractor. A Taipei
+government data-catalogue record separately documents the first product
+inspection for the carbody, bogie, brake, door and coupler subsystems, with a
+5–18 March 2003 inspection trip to Austria, Britain and the United States.
+
+### TBC and checked failures
+
+The legal-purchaser identity, the reported KOROS proposal and DORTS rejection,
+the NT$2.248 billion price and the 1.5-times-C321 comparison remain TBC. The
+opened primary records confirm the contractor and inspection boundary but do not
+expose the subcontract, rejection record, acceptance report or price comparison.
+
+### Contradicted the corpus
+
+No published C341 fact was contradicted. The primary evidence narrows a former
+TBC boundary: Continental Engineering is now confirmed as the CP341 project
+contractor, without upgrading that role into a legal-purchaser claim.
+
+### Conflicts found
+
+The primary DORTS record and the secondary account differ in evidentiary scope,
+not in a directly comparable numeric value: the official report names the CP341
+contractor but does not state the purchaser or price, while the secondary account
+asserts both. The site preserves the secondary version as unconfirmed rather
+than presenting it as a resolved procurement fact.
+
+### Gates
+
+`npm run verify` passed: build generated 2,744 static pages and 2,898 postbuild
+pages; 492,039 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,936 pages with no errors or warnings; citations
+resolved 7,626 markers (7,407 primary, 219 secondary); claims reported 25,436
+sourced, 4,502 TBC and 0 ASSERTED; research checked 216 files with 917 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 checks. `npm test` passed all 234 tests, including the fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 245 - add Wenhu station architecture record (2026-08-27)
 
 ### Sourced
