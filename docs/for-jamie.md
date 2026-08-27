@@ -1,5 +1,22 @@
 # For Jamie
 
+## Active handoff - Run 249 - 27 August 2026
+
+Run 249 adds a focused platform-screen-door page and research pair. Official
+TRTC and DORTS records establish 58 initially doorless high-capacity stations
+entered retrofit from 2006, 13 were complete by 2014, and all operating
+initial-network high-capacity stations were complete in ROC107 (2018) after
+14 years. DORTS also documents full-height doors from Xinzhuang/Luzhou, later
+full-glass Xinyi/Songshan doors, and the six-car sliding/emergency-door
+interface.
+
+The exact line/station completion calendar, current door type/replacement/
+condition register, and post-2018 refurbishment remain TBC. The old systems
+draft's exact dates are not promoted without a primary record. `probes/`
+remains untracked.
+
+Next: continue the next incomplete systems or fleet subject in the 14-part brief.
+
 ## Active handoff - Run 248 - 27 August 2026
 
 Run 248 strengthens the TRA rolling-stock procurement boundary with the full

@@ -42,6 +42,45 @@ failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
 passed all 19 checks. `npm test` passed all 234 tests, including the fact
 cross-checks. `probes/` remains untouched and untracked.
 
+## Run 249 - publish platform-door rollout boundary (2026-08-27)
+
+### Sourced
+
+Added a focused platform-screen-door page and research pair. TRTC's 2014
+report establishes 58 initially doorless high-capacity stations, retrofit work
+from 2006, 13 completed by 2014, and planned completion by the end of 2018.
+DORTS later states that all operating initial-network high-capacity stations
+were complete in ROC107 after 14 years. DORTS also records full-height doors
+from Xinzhuang/Luzhou, full-glass Xinyi/Songshan design, and the six-car
+sliding/emergency/end/driver-door interface.
+
+### TBC and checked failures
+
+No complete official line/station completion calendar, current door-type/
+replacement/condition register, or post-2018 refurbishment record was found.
+Exact dates remain TBC; older draft dates were not promoted.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The old systems research table's
+exact per-line dates remain explicitly unpromoted pending primary evidence.
+
+### Conflicts found
+
+TRTC's 2014 interim progress and DORTS's later ROC107 retrospective are
+different dated scopes, not contradictory values.
+
+### Gates
+
+`npm run verify` passed: build generated 2,746 static pages and 2,901 postbuild
+pages; 494,237 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,937 pages with no errors or warnings; citations
+resolved 7,633 markers (7,414 primary, 219 secondary); claims reported
+25,453 sourced, 4,502 TBC and 0 ASSERTED; research checked 217 files with 920
+recorded failures; geometry and CVD audits were clean. The explicit `npm run
+nav` gate passed all 19 checks. `npm test` passed all 234 tests, including the
+fact cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 248 - strengthen TRA locomotive procurement boundary (2026-08-27)
 
 ### Sourced
