@@ -25,6 +25,12 @@ and former names as temporal fields, and attaches the present gauge value to
 segments rather than routes. Current TDX station-of-line sequence is preserved;
 the missing StationOfRoute dataset is not replaced by a guessed route table.
 
+The focused [TRA electrification research record](tra/technology/electrification.md)
+now covers the operator's staged electrification chronology, the technical
+study's 25 kV overhead-supply model, centralised power dispatch and the dated
+2023 network aggregate. A current line-by-line power asset register remains
+TBC.
+
 ## Conflicts
 
 - TDX returns 245 current station records, while the operator's 2023 report says 241 stations at the end of 2023. These are not silently reconciled: the TDX count is a current structured snapshot, while the report's count is dated and explicitly classifies passenger/freight service. [tdx-tra](https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Station?%24format=JSON&%24top=1000) [tra-report](https://www.railway.gov.tw/tra-tip-web/tip/file/486e23bd-740a-46a1-bb75-f68442125a2a)

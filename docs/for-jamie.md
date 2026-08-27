@@ -1,5 +1,30 @@
 # For Jamie
 
+## Active handoff - Run 259 - 27 August 2026
+
+Run 259 publishes the TRA electrification and traction-power boundary. The
+operator's full achievement record dates the electrification programme from
+ROC 63, the three Western Main Line phases, North Link and southern activation
+milestones, the Shalun and Liujia branch records, and the Hualien–Taitung
+project boundary. A 2014 Taiwan Railway Journal study describes the 69/161 kV
+to 25 kV single-phase 60 Hz overhead-catenary model, with an explicit
+study-era scope limitation. The operator also records centralised SCADA power
+dispatch from ROC 90.
+
+The operator's 2023 report gives 1,065 km of network, 997.7 km electrified and
+67.3 km non-electrified. Those totals remain a dated statistical layer, not a
+current line-by-line register. Current route electrification, neutral sections,
+switching boundaries, substations, feeders, protection equipment and renewal
+acceptance remain TBC. `probes/` remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed before this handoff was written. The pre-handoff gates reported 1,739
+content files, 7,697 citations, 0 ASSERTED claims, 2,926 postbuild pages,
+506,210 clean internal links and 234 passing tests.
+
+Next: continue the remaining 14-part brief with the next explicitly incomplete
+TRA or rail-systems subject, one subject at a time.
+
 ## Active handoff - Run 258 - 27 August 2026
 
 Run 258 strengthens the metro signalling-generation boundary. Full DORTS

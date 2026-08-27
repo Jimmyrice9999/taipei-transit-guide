@@ -1,3 +1,56 @@
+## Run 259 - publish TRA electrification boundary (2026-08-27)
+
+### Sourced
+
+Added a focused TRA electrification and traction-power page, research record
+and technology index. The operator's full achievement record dates the start
+of electrification to ROC 63, the three Western Main Line phases, North Link
+and southern activation milestones, the Shalun and Liujia branch records, and
+the Hualien–Taitung project boundary. A 2014 Taiwan Railway Journal study
+describes the 69/161 kV to 25 kV single-phase 60 Hz overhead-catenary model,
+with its study-era scope limitation. The operator also records centralised
+SCADA power dispatch from ROC 90.
+
+The operator's 2023 report gives 1,065 km of network, 997.7 km electrified and
+67.3 km non-electrified. These are retained as a dated statistical layer and
+are not silently turned into a current line-by-line power map.
+
+### TBC and checked failures
+
+The opened primary sources do not provide a current route-by-route
+electrification table, neutral-section or switching map, current substation
+and feeder inventory, protection register, or complete commissioning and
+renewal acceptance record. The 2014 technical paper is a study, not a binding
+current standard; the operator history provides selected milestones, not a
+current asset register.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The existing TRA research lead
+identified power and electrification as an open architecture gap; this focused
+record replaces that gap with sourced chronology, the study's technical model
+and dated aggregate totals while keeping the current asset boundary open.
+
+### Conflicts found
+
+The 2023 report's 997.7 km electrified and 67.3 km non-electrified totals are a
+dated network aggregate, while the achievement page gives historical project
+and energisation milestones. The technical journal describes a study-era
+catenary model and the operator page describes dispatch scope; neither is
+treated as a competing current asset register. The report's 90.5 km branch
+aggregate is retained separately from the individual Shalun and Liujia project
+figures because the sources do not establish a common denominator.
+
+### Gates
+
+`npm run cite` passed: 1,739 content files and 7,697 citations resolved (7,475
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,926 pages with no missing glyphs, 506,210 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact cross-checks.
+`probes/` remains untouched and untracked.
+
 ## Run 258 - strengthen metro signalling-generation boundary (2026-08-27)
 
 ### Sourced

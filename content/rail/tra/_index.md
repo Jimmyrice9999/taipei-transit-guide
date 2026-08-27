@@ -302,9 +302,38 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full current operator station page identifies station 6190 as Nanping (南平)."
+  - id: tra-electrification-history
+    title: "Railway electrification chronology and achievements"
+    titleOriginal: "臺鐵電氣化沿革及歷年建設"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railway Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1?selectIndex=0"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full operator achievement page gives the electrification chronology, Western Main Line phases, later branch and regional extensions, substation milestones and the 2001 centralised SCADA power-dispatch arrangement."
+  - id: tra-electrification-paper
+    title: "A Study on Reliability of Ordinary-Speed Railway Overhead Catenary System"
+    titleOriginal: "傳統鐵路電車線系統可靠度之研究"
+    publisher: "Taiwan Railway Administration (臺灣鐵路管理局)"
+    url: "https://tip.railway.gov.tw/tra-tip-web/tip/file/53dc2c5e-fdfa-49c4-b069-ddb662585738"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full 2014 Taiwan Railway Journal paper describes the ordinary-speed railway catenary supply model; it is a technical study, not a current asset register or binding standard."
+  - id: tra-network-report
+    title: "Taiwan Railways statistical report"
+    titleOriginal: "臺灣鐵路統計資料"
+    publisher: "Taiwan Railways Administration (臺灣鐵路公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/486e23bd-740a-46a1-bb75-f68442125a2a"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The operator report gives the end-2023 route-length, electrification and non-electrification aggregates; those dated totals are kept separate from a current line-by-line power register."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
+
+The [Taiwan Railways electrification record](/rail/tra/technology/electrification/) keeps the operator's staged electrification chronology, its 25 kV technical-study boundary and the dated 2023 network aggregates separate from a current line-by-line power register.[^tra-electrification-history][^tra-electrification-paper][^tra-network-report]
 
 The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/), the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), the [Taipei–Danshui Line](/rail/history/taipei-danshui-line/), the [Xindian Line](/rail/history/xindian-line/), the [Zhonghe Line](/rail/history/zhonghe-line/), the [Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/), the [Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/) and the [Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/), while the [Houtong–Sandiaoling double-track segment](/rail/history/houtong-sandiaoling-double-track/), [Changhua–Minxiong double-track segment](/rail/history/changhua-minxiong-double-track/), [Chiayi–Xinshi double-track segment](/rail/history/chiayi-xinshi-double-track/), [Jianan–Taichung Port construction record](/rail/history/jianan-taichung-port-double-track/), [Xinpu–Tongxiao double-track segment](/rail/history/xinpu-tongxiao-double-track/) and [Yuanli–Rinan double-track segment](/rail/history/yuanli-rinan-double-track/) are kept alongside them as construction-history subjects rather than separate current line identities.[^tra-history][^tra-construction-history][^tra-bike-route] Further historical alignments and construction subjects follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
 The [Jianan–Qingshui double-track segment](/rail/history/jianan-qingshui-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]
