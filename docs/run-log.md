@@ -1,3 +1,70 @@
+## Run 283 - add TYMC fare history (2026-08-28)
+
+### Sourced
+
+First dedicated fare-history page for the Taoyuan Airport MRT, upgrading a
+thin existing lead (this project's airport-mrt.md claim 18, which flagged
+its own NT$160 single-fare figure as resting on a search-engine synthesis
+of blog aggregators, not a primary page). Two TYMC ticketing pages fetched
+and parsed directly from raw HTML — the season-pass page turned out to
+carry a real, dated fare-reform event the existing corpus had missed
+entirely.
+
+On 2 January 2025, TYMC replaced its entire season-pass product line with
+a new "超值定期票" (Value Season Pass) scheme, discontinuing both the old
+four-design commuter pass and a separate group-discount programme. This was
+a genuine repricing, not a rebrand: every tier's day-count and discount
+multiplier changed (e.g. the new 30-day tier prices at full-fare × 30 days
+× 2 trips × 35%, versus the old scheme's 30-day tier at × 21 days × 2
+trips × 70%). Old-pass holders got a fee-free exchange or full refund in a
+six-month transition window (23 Dec 2024 – 30 June 2025). Single-ticket
+concessions: 50% for seniors/disabled/qualifying Indigenous residents,
+80% for children 6–11.
+
+### TBC and checked failures
+
+The base/maximum single fare in NT$ remains unconfirmed from a primary
+source (checked 2026-08-28) — both TYMC pages reference "公告票價"
+(published fare) only as a formula variable pointing to a JavaScript fare
+calculator this session's tooling can't execute, and TDX's ODFare
+endpoint required an API key this session doesn't have. This is a more
+specific, confirmed failure than the existing corpus's version of the same
+gap (which never established whether TYMC's own static pages state the
+figure at all — they don't). The existing NT$10 single-ticket-discount
+cancellation claim (GVM, secondary) was neither re-confirmed nor
+contradicted — neither fetched page addressed it (checked 2026-08-28).
+Whether that discount cancellation and the season-pass repricing are one
+coordinated reform or coincidentally same-dated is not stated by any
+source and not assumed (checked 2026-08-28). Web-search budget remained
+exhausted (checked 2026-08-28).
+
+### Contradicted the corpus
+
+None directly, but this run substantially deepens what the corpus had:
+the existing airport-mrt.md lead only knew about the single-ticket
+discount cancellation, not the season-pass overhaul on the same date —
+recorded as new information, not a correction.
+
+### Conflicts found
+
+None found — no second source addressing the season-pass repricing was
+located this session.
+
+### Gates
+
+`gate:fast` caught a real issue on the first pass:
+`tests/scope-statements.test.mts`'s "published pages do not describe
+unfinished site or page coverage" — a section header and a sentence both
+matched the forbidden "this page cannot yet ..." pattern (meta-commentary
+about the page's own research process belongs in docs/research, not
+reader-facing content). Fixed by rewording both to state the gap as a fact
+about the sources, not a limitation of the page. Also fixed two
+claims-ratchet flags (a digit-bearing sentence, reworded). Second
+`gate:fast` run clean (107/107). `gate:full` run against a fresh build,
+fully clean — 234/234 tests, `facts` (17/17 cross-checks), `research`,
+`cite`, `claims`, `geometry:audit`, `a11y`. Generated audit JSONs restored,
+not committed. `probes/` remains untracked.
+
 ## Run 282 - add KRTC Yellow Line (2026-08-28)
 
 ### Sourced

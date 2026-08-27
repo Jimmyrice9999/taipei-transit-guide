@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 25930,
-    "tbc": 4552,
+    "sourced": 25945,
+    "tbc": 4553,
     "asserted": 0,
-    "meta": 71
+    "meta": 73
   },
   "files": [
     {
@@ -13953,6 +13953,14 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/operations/fares.md",
+      "sources": 3,
+      "sourced": 13,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/operations/ridership.md",
       "sources": 5,
       "sourced": 9,
@@ -13966,7 +13974,7 @@
       "sourced": 0,
       "tbc": 0,
       "asserted": 0,
-      "meta": 1
+      "meta": 2
     },
     {
       "file": "content/rail/tymc/rolling-stock/fleet-roster.md",
@@ -14182,7 +14190,7 @@
       "sourced": 6,
       "tbc": 1,
       "asserted": 0,
-      "meta": 1
+      "meta": 2
     },
     {
       "file": "content/rail/_index.md",
@@ -14218,8 +14226,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 222,
-      "sourced": 330,
+      "sources": 223,
+      "sourced": 332,
       "tbc": 2,
       "asserted": 0,
       "meta": 6

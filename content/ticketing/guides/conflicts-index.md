@@ -1965,6 +1965,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Current programme-level progress record: Green Line construction stage and 72.19% total progress."
+  - id: "rail-tymc-operations-fares-gvm-tymc-discount-cancelled"
+    title: "Taoyuan Airport MRT's 2024 surplus hit a record NT$500 million — why cancel the system-wide NT$10 ticket discount?"
+    titleOriginal: "桃園機場捷運2024盈餘5億創新高！為何全線取消車票10元優惠？"
+    publisher: "城市學 (GVM/Global Views Monthly)"
+    url: "https://city.gvm.com.tw/article/117975"
+    accessed: "2026-08-12"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Already recorded in this project's existing airport-mrt line research (claim 18/15) as the source for the January 2025 single-ticket discount cancellation, dated 22 December 2024, predating year-end by nine days; not independently re-fetched this session."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -3798,6 +3807,28 @@ The current construction overview lists the Green Line as being in the construct
 
 - [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-green]
 - [Taoyuan rail construction progress overview](https://dorts.tycg.gov.tw/cp.aspx?n=23173) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-rail-progress]
+
+## Taoyuan Airport MRT fare history — A separately reported discount, not verified here
+
+Discussed on [Taoyuan Airport MRT fare history](/rail/tymc/operations/fares/) in the source page's “A separately reported discount, not verified here” section.[^rail-tymc-operations-fares-gvm-tymc-discount-cancelled]
+
+### A separately reported discount, not verified here
+
+Existing research on this project's Airport MRT line page separately
+records a January 2025 cancellation of a NT$10 discount that had applied to
+single tickets, sourced to a Global Views Monthly (遠見雜誌) article citing
+the company chairman on rising electricity costs.[^rail-tymc-operations-fares-gvm-tymc-discount-cancelled]
+Neither of the two ticketing pages read for this report mentions that
+change, so it is neither newly confirmed nor contradicted here — it remains
+at the same secondary-source strength already on record. Whether that
+single-ticket discount cancellation and the season-pass repricing described
+above form one coordinated fare reform, both taking effect the same day, or
+are simply two unrelated changes that happened to land together, is not
+established by any source read and is not assumed either way.
+
+#### Sources for this entry
+
+- [Taoyuan Airport MRT's 2024 surplus hit a record NT$500 million — why cancel the system-wide NT$10 ticket discount?](https://city.gvm.com.tw/article/117975) — secondary; 城市學 (GVM/Global Views Monthly); accessed 2026-08-12.[^rail-tymc-operations-fares-gvm-tymc-discount-cancelled]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 
