@@ -1,3 +1,62 @@
+## Run 256 - publish metro seismic design boundary (2026-08-27)
+
+### Sourced
+
+Added a focused metro seismic-design page and research pair. Full DORTS
+records establish the 1987 (ROC year 76) study/catalogue boundary, the early
+475-year / 10%-exceedance / 0.18 g basis and the later 0.23 g CEDM tenth-edition
+value. They distinguish elevated and ground structures from underground
+structures, which use a Southern California metro-underground reference and
+forced-ground-deformation / soil-structure-interaction methods. DORTS also
+publishes 475-year design and 2500-year maximum-considered station-planning
+levels.
+
+The Circular Line earthquake investigation corrects the old systems lead's
+2007 code label to the MOTC railway-bridge code issued in December 2006, with
+0.24 g Taipei-basin motion, importance factor 1.2 and a 0.288 g minimum design
+force. It records the 2021 bridge-code gap around transverse displacement. The
+current national building-code page separately records the 2006, 2011, 2022
+and 2024 revisions and its approximately 30-year / 475-year / 2500-year
+performance levels.
+
+### TBC and checked failures
+
+A current signed CEDC, line-by-line as-built compliance register, the original
+1987 calculations, an explanation for DORTS's 0.14/0.23 g versus 0.15/0.24 g
+structure-specific pairs, and the post-2021 corrective design requirements
+remain TBC. The official catalogue exposed the 1987 study metadata but not the
+study file itself. A current metro compliance register and a direct comparison
+with the 2024 national building-code revision were not found in the full
+official sources checked.
+
+### Contradicted the corpus
+
+The old `docs/research/rail/systems.md` lead called the Circular Line code
+"2007"; the full Control Yuan investigation identifies the governing bridge
+code as the December 2006 issue. The lead is corrected to 2006. The existing
+published Circular Line earthquake page already carried the 2006 / 0.24 g
+boundary, so no published content fact was contradicted.
+
+### Conflicts found
+
+DORTS's underground-station assessment prints ODE/MDE values of 0.15/0.24 g,
+while its cut-and-cover tunnel volume prints 0.14/0.23 g; the checked sources
+do not identify whether the difference is an edition, structure type or design
+boundary. DORTS's 475-year / 2500-year vocabulary overlaps the current
+building code, but the sources do not establish one current metro-building-code
+register. The 2007 lead date conflicts with the December 2006 primary record.
+
+### Gates
+
+`npm run cite` passed: 1,736 content files and 7,677 citations resolved (7,456
+primary, 221 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,919 pages for Han subsets with no missing glyphs, links
+checked 503,513 internal links with no broken links/fragments/orphans, research
+checked 223 files with 947 recorded failures, and geometry/CVD audits were
+clean. The explicit `npm run nav` gate passed all 19 checks. The explicit
+`npm test` gate passed all 234 tests and all 17 fact cross-checks. `probes/`
+remains untouched and untracked.
+
 ## Run 254 - publish operator control-centre boundary (2026-08-27)
 
 ### Sourced

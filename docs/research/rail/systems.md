@@ -223,8 +223,11 @@ reliability comparison.
 
 ## Seismic design — and where it failed
 
-**Design code:** the Circular Line was designed by **台灣世曦 (CECI)** to MOTC's
-**2007 railway bridge seismic code**, nominally to withstand intensity **6-weak**.
+**Design code:** the Circular Line investigation identifies the affected
+viaduct as designed under MOTC's **December 2006 railway bridge seismic code**
+(ROC year 95), with a Taipei-basin design ground motion of 0.24 g and an
+importance factor of 1.2. The older 2007 label was a one-year error, not a
+published code date.
 
 **It was damaged at 5-strong** in the 3 April 2024 earthquake.
 
@@ -255,7 +258,7 @@ concrete" version is circulating and it's wrong.
   confirms the high-capacity standard and the shared Danhai/Ankeng vehicle-table
   value, while conventional Wenhu, Circular, Sanying, Airport MRT and Taoyuan
   Green Line infrastructure values remain TBC
-- The 2007 seismic code and how it compares to current standards
+- The [metro seismic-design boundary](../../../content/rail/technology/metro-seismic-design.md): the early 0.18 g basis, later 0.23/0.24 g scopes, the 2006 Circular bridge-code date, and comparison with current building-code levels
 - Fire and evacuation systems, given the 1993 Wenhu fire and the 2025 Circular Line
   walkway evacuation
 

@@ -1,5 +1,39 @@
 # For Jamie
 
+## Active handoff - Run 256 - 27 August 2026
+
+Run 256 publishes the Taipei Metro seismic-design boundary. Full DORTS records
+establish the 1987 (ROC year 76) study/catalogue boundary, the early 475-year /
+10%-exceedance / 0.18 g basis, and the later 0.23 g CEDM tenth-edition value.
+They distinguish elevated and ground structures from underground structures,
+which use a Southern California metro-underground reference and forced-ground-
+deformation / soil-structure-interaction methods. DORTS also publishes station-
+planning levels of a 475-year design earthquake and a 2500-year maximum-
+considered earthquake.
+
+The Circular Line earthquake investigation corrects the old systems lead's
+2007 code label to the MOTC railway-bridge code issued in December 2006, with
+0.24 g Taipei-basin motion, importance factor 1.2 and a 0.288 g minimum design
+force. It also records the 2021 bridge-code gap around transverse displacement.
+The current national building-code page separately records the 2006, 2011,
+2022 and 2024 revisions and its approximately 30-year / 475-year / 2500-year
+performance levels; shared return-period vocabulary is not treated as proof
+that today's metro structures use the building code.
+
+A current signed CEDC, line-by-line as-built compliance register, the original
+1987 calculations, an explanation for DORTS's 0.14/0.23 g versus 0.15/0.24 g
+structure-specific pairs, and the post-2021 corrective design requirements
+remain TBC. `probes/` remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed. The final gates reported 1,736 content files, 7,677 citations, 0
+ASSERTED claims, 223 research files with 947 checked failures, 2,919 postbuild
+pages and 234 passing tests. The new content page also caused the expected
+content font-subset update for `液`.
+
+Next: continue the remaining 14-part brief with the fire-and-evacuation
+systems gap, one subject at a time.
+
 ## Active handoff - Run 255 - 27 August 2026
 
 Run 255 publishes the metro track-gauge boundary. Full DORTS records establish
