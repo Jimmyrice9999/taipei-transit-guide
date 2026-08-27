@@ -1,3 +1,66 @@
+## Run 282 - add KRTC Yellow Line (2026-08-28)
+
+### Sourced
+
+First dedicated content and research pages for Kaohsiung Metro's
+under-construction Yellow Line, previously mentioned only in passing by
+this session's KRTC technology/rolling-stock pages. Three government
+project pages fetched and parsed directly from raw HTML — route
+description, planning description, construction progress — none reachable
+by guessing the URL pattern used for the completed Red/Orange/LRT pages;
+found instead by fetching the bureau's own metro-section homepage and
+following its actual menu links.
+
+Route: 22.91 km, 1 elevated + 22 underground stations + 1 depot, six
+districts crossed (Niaosong, Xinxing, Lingya, Qianzhen, Fengshan, Sanmin).
+Full Y1-Y23 station table with platform type, location and six named
+interchanges (TRA Minzu, Orange O6, Red R8, Circular LRT C9, TRA
+Zhengyi-Chengqing, Orange O10, Red R5) — station names explicitly stated
+by the operator as provisional. Approvals: feasibility study 2019,
+comprehensive plan 2022 (NT$144.237bn), revised plan 2025 that raised the
+construction budget to NT$236.858bn — roughly a 64% increase the bureau's
+own page states without explaining. Six contract packages (YM01
+electromechanical+depot, YT01 track, YC01/YC02/YC03 civil, YD01 design)
+each tracked to a distinct current stage, including one August 2026 tender
+that failed with zero bidders.
+
+### TBC and checked failures
+
+No opening date found in any of the three pages read (checked 2026-08-28).
+No depot name found, unlike the Red/Orange system's three named depots
+this session already researched (checked 2026-08-28). The construction
+budget's ~64% increase is stated but not explained by the source (checked
+2026-08-28). Web-search budget remained exhausted; all three URLs were
+found by following links from the bureau's own site, not by search
+(checked 2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered this line in detail.
+
+### Conflicts found
+
+None — no second source addressing route, cost or construction status was
+located this session.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing two claims-ratchet flags (digit
+signals in unsourced prose, reworded). `gate:full`'s first run caught a
+real failure `gate:fast` doesn't check: `tests/markdown.test.mts`'s "every
+`line:` in frontmatter is a real line code" test — `line: Y` has no
+registered accent-colour entry for KRTC specifically (Yellow Line has no
+TDX or project-registry data-layer entry, unlike TYMC's Green Line, which
+was specially registered in an earlier run). Registering a new line colour
+is an infra change requiring a verified official colour source, out of
+scope for a content/research run; fixed instead by dropping the `line:`
+field from the frontmatter, matching the project's convention of leaving a
+genuine data-layer gap unfilled rather than guessing at a colour. Second
+`gate:full` run, fully clean — 234/234 tests, `facts` (17/17 cross-checks),
+`research`, `cite`, `claims`, `geometry:audit`, `a11y`, all against a fresh
+build. Generated audit JSONs restored, not committed. `probes/` remains
+untracked.
+
 ## Run 281 - open TMRT facilities and operations coverage (2026-08-28)
 
 ### Sourced

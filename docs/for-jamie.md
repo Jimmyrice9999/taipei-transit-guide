@@ -1,32 +1,37 @@
 # For Jamie
 
-## Active handoff - Run 281 - 27 August 2026
+## Active handoff - Run 282 - 27 August 2026
 
-Run 281 completes TMRT's four-section structure (technology, rolling-stock,
-facilities, operations) — now matching TRA, KRTC and TYMC. All four Taiwan
-rail operators covered by this site now have the same section shape.
+Run 282 adds Kaohsiung Metro's under-construction Yellow Line: first
+dedicated content+research pages, found by fetching the bureau's actual
+menu (guessed URLs 404'd). 22.91 km, 1 elevated + 22 underground stations
++ 1 depot, full Y1-Y23 station table with six named interchanges, station
+names explicitly provisional. Construction budget rose from NT$144.237bn
+(2022 comprehensive plan) to NT$236.858bn (2025 revised plan) — ~64%,
+unexplained by the source. Six contract packages each at a different
+stage; one August 2026 tender failed with zero bidders. No opening date,
+no depot name found.
 
-Accessibility: ten named facilities from the operator's own dedicated page
-(ramps, parking, signage, tactile tiles, low ticket machines, accessible
-gates, elevators, platform waiting zone, emergency buttons, intercoms) —
-the page's own "1 2" pagination confirms a second page exists that
-client-side rendering blocked this session from reading.
+`gate:full` caught a real bug: `line: Y` in frontmatter has no registered
+accent-colour for KRTC (Yellow Line has no TDX/project-registry data-layer
+entry — unlike TYMC Green Line, registered in an earlier run). Fixed by
+dropping the `line:` field rather than guessing a colour or doing infra
+work outside a content run's scope — a real follow-up if line colours
+matter here later.
 
-Ridership: one real month (July 2026) from the operator's PDF archive —
-1,484,410 total, 47,884 daily average, internally consistent. The table's
-own column headers didn't survive `pdftotext` extraction (CJK font issue),
-so what's being counted rests on the file's title, not a read label — TBC,
-not asserted. The 2024 annual report hit a worse PDF failure (undecodable
-`Adobe-CNS1` font) and stayed unread.
+CI note (single check, not polled further): commit `faa1ade1` (Run 278,
+pushed ~13:38 UTC checked at ~14:20 UTC) has had its "Tests" job stuck
+`in_progress` for 50+ minutes — far longer than any local run (~60-85s)
+— and, unlike three later pushes which correctly got auto-cancelled by
+newer commits on the same branch, this one wasn't. Looks like the same
+stuck-runner class of issue reported after Run 278, still unresolved,
+still outside what's fixable from this session.
 
-Full local validation across Runs 279-281 (KRTC/TYMC depots, TMRT
-tech+rolling-stock, TMRT facilities+operations): `gate:fast` clean every
-time, `gate:full` clean against a fresh build every time (234/234 tests,
-facts, research, geometry:audit, a11y) — two real bugs caught along the
-way (spec `unit:` formatting, a too-short `_index.md` description), both
-only visible to the full suite, not `gate:fast`. Audit JSONs restored each
-time, not committed. `probes/` remains untracked.
+Full local validation across Runs 279-282: `gate:fast` clean every time,
+`gate:full` clean against a fresh build every time (234/234 tests, facts,
+research, geometry:audit, a11y). Audit JSONs restored each time, not
+committed. `probes/` remains untracked.
 
-Next: the brief's remaining Parts 2-8 (fare history, TOD, interactive
-features) across any operator, or a first pass at THSR/TRA gaps not yet
-covered by this session's operator-parity sweep.
+Next: continuing the brief — remaining Parts 2-8 (fare history, TOD,
+interactive features), or more KRTC Yellow Line depth (depot name,
+opening date) as sources surface.

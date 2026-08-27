@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 25916,
-    "tbc": 4550,
+    "sourced": 25930,
+    "tbc": 4552,
     "asserted": 0,
     "meta": 71
   },
@@ -10149,6 +10149,14 @@
       "sources": 23,
       "sourced": 19,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/krtc/lines/yellow-line.md",
+      "sources": 3,
+      "sourced": 14,
+      "tbc": 2,
       "asserted": 0,
       "meta": 0
     },

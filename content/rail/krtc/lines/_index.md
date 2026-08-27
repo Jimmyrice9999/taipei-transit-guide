@@ -1,6 +1,6 @@
 ---
 title: Lines
-description: Kaohsiung Metro Red and Orange Lines and the Circular Light Rail, with source-specific route and station boundaries.
+description: Kaohsiung Metro Red and Orange Lines, the Circular Light Rail and the under-construction Yellow Line, with source-specific route and station boundaries.
 order: 1
 operator: KRTC
 sources:
@@ -76,3 +76,5 @@ The Red and Orange pages show the TDX route-length fields beside the government 
 The Circular Light Rail is described by the government as 22.1 km, surface light rail and 38 stations.[^mtbu-lrt] Its page has an explicit station list including C21A and C21 as separate codes, which the guide preserves.[^mtbu-lrt] The operator’s English guide map supplies the English names used by the line and station pages.[^krtc-guide-map-en]
 
 A line page is therefore a source map as much as a route summary. It tells the reader which facts came from TDX, which came from the government’s project page and which came from the operator’s station publication.[^tdx-krtc-line][^mtbu-red-orange][^mtbu-lrt] Service frequencies, construction chronology, signalling, power and fleet history are not inferred from the station sequence and remain TBC until their primary records are transcribed.[^tdx-krtc-first-last][^krtc-station-guide-en]
+
+The under-construction [Yellow Line](/rail/krtc/lines/yellow-line/) sits outside the TDX boundary entirely — it has no operating dataset yet, so its page rests on the government's own route, planning and construction-progress pages instead: a full station table of provisional names, a construction budget revised sharply upward between the comprehensive and revised plans, and several contract packages each tracked to a different construction stage.
