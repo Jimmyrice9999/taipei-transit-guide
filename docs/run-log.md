@@ -1,4 +1,60 @@
 
+## Run 272 - publish TRA station-level ridership boundary (2026-08-27)
+
+### Sourced
+
+A `line-scout` re-examined the station-level-ridership gap Run 260 left
+TBC. Finding: TRA does publish a live, per-station, per-day gate
+entry/exit dataset as open government data (data.gov.tw #8792, JSON and
+compressed downloads, stated coverage from 23 April 2019) — the prior
+`operations/_index.md` wording ("still needs a separate primary-data pass")
+was too pessimistic on this specific point, and is now corrected with a
+link to the new page rather than left standing. TRA's separate Statistical
+Report also contains a station-level table (表6 各站客貨運起訖量) whose
+existence and PDF format were confirmed by direct fetch.
+
+### TBC and checked failures
+
+This run could not read either source's actual content. The open dataset's
+live JSON was only summarised by an AI tool reading a large binary file, not
+parsed — a single Taipei Station data point is published at low confidence
+as an example, not as an established ranking. Table 6's PDF, and two other
+TRA statistical-report PDFs, resisted every extraction method available:
+the environment has no `pdftoppm`/poppler-utils installed, so even the
+Read tool's page-image fallback cannot render any PDF in this project
+currently. This is a recurring, environment-level blocker, not a one-off
+dead link — it has now affected three separate subjects this session (this
+one, the TRA fire/evacuation report, and a Chaozhou Phase I lead), and is
+worth fixing at the environment level rather than re-discovering per run.
+Whether the open dataset's "進出站人數" and Table 6's "起訖量" even measure
+the same thing is unresolved. A working TDX credential/API read was not
+attempted; a third-party (unverified) guide states no full TRA
+station-to-station matrix exists publicly, unlike Taipei MRT.
+
+### Contradicted the corpus
+
+The operations section's own prior framing overstated the gap: it is not
+that station-level data doesn't exist, only that this project hadn't yet
+found and characterised it. Corrected in `_index.md` with a link, not by
+rewriting the existing ridership-and-service.md page's own content.
+
+### Conflicts found
+
+Three unverified secondary figures for Taipei Station's daily-average
+entry/exit count (113,506/day 2023; 122,149.53/day 2024; 121,905/day
+"2025 in part") — all from sources this run could not read in the primary,
+published as found, none picked, none published as an established figure
+on the content page. The dataset's own landing page states coverage ending
+31 December 2025 while the live resource itself returned January 2026
+records — unresolved.
+
+### Gates
+
+`npm run gate:fast` passed clean on the first pass. `npm run research`
+needed one fix (a checked-and-failed entry missing its date) before
+passing clean at 238 files, 995 entries. No new conflicts-index or font
+regeneration was needed this round. `probes/` remains untracked.
+
 ## Run 271 - publish TRA heritage rolling-stock and fire/evacuation boundaries (2026-08-27)
 
 ### Sourced
