@@ -1,4 +1,50 @@
 
+## Run 263 - publish TRA freight boundary (2026-08-27)
+
+### Sourced
+
+Added a focused TRA freight and transportation page and research record. The
+full June 2026 monthly report records 296,529 tonnes of June freight and
+2,039,101 tonnes for January–June, with June freight work of 15,001,347
+tonne-kilometres and freight revenue of NT$28,561,095. It also records 42.67%
+freight-car utilisation and 100.00% freight-train punctuality. The report's
+freight section and Tables 5–11 keep aggregate freight, commodity components,
+freight work, revenue, transportation status, train counts and train/car
+kilometres in their stated scopes.
+
+### TBC and checked failures
+
+The opened primary report does not establish station-to-station freight origins
+and destinations, a current freight-terminal inventory, a wagon-by-commodity
+or wagon-by-route roster, or current freight timetable and working-day rules.
+Those remain TBC pending a joined freight movement export, current facilities
+register, assignment register or dated freight operating plan.
+
+### Contradicted the corpus
+
+No published TRA freight fact was contradicted. The new record narrows the
+aggregate statistical boundary and does not infer a freight network from
+commodity totals, car utilisation or punctuality.
+
+### Conflicts found
+
+No direct numeric conflict was found in the opened primary report. June,
+January–June and annual comparison figures are different time scopes, while
+commodity rows are components of the aggregate total rather than competing
+totals.
+
+### Gates
+
+`npm run verify` passed: the build generated 2,773 static pages and postbuild
+checked 2,938 pages; 517,440 internal links had no broken links, fragments or
+orphans; 1,745 Markdown files passed marker checks; claims reported 25,653
+sourced, 4,513 TBC and 0 ASSERTED; research checked 229 files with 969
+recorded failures; accessibility, geometry and CVD audits were clean. The
+explicit `npm run cite` gate passed with 7,730 citations (7,508 primary, 222
+secondary). The explicit `npm run nav` and `npm test` gates passed all 19 nav
+checks, all 234 tests and all 17 fact cross-checks. `probes/` remains
+untouched and untracked.
+
 ## Run 262 - publish TRA timetable boundary (2026-08-27)
 
 ### Sourced

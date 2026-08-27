@@ -1,5 +1,28 @@
 # For Jamie
 
+## Active handoff - Run 263 - 27 August 2026
+
+Run 263 publishes the TRA freight and transportation boundary. The full June
+2026 monthly report records 296,529 tonnes of June freight, 2,039,101 tonnes
+for January–June, 15,001,347 June tonne-kilometres, NT$28,561,095 in June
+freight revenue, 42.67% freight-car utilisation and 100.00% freight-train
+punctuality. Its tables separate aggregate freight, commodity components,
+freight work, revenue, transportation status, train counts and train/car
+kilometres.
+
+Station-to-station freight origins and destinations, current terminal
+inventory, wagon-by-commodity or wagon-by-route assignments, and current
+freight timetable/working-day rules remain TBC. `probes/` remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed before this handoff was written. The final gates reported 1,745 content
+files, 7,730 citations, 0 ASSERTED claims, 2,938 postbuild pages, 517,440
+clean internal links, 229 research files with 969 checked failures, 234
+passing tests and 17 passing fact cross-checks.
+
+Next: continue the remaining 14-part brief with the next explicitly incomplete
+TRA or rail-systems subject, one subject at a time.
+
 ## Active handoff - Run 262 - 27 August 2026
 
 Run 262 publishes the TRA timetable and service-pattern boundary. The

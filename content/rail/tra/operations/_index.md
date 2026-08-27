@@ -84,3 +84,5 @@ still needs a separate primary-data pass.[^tra-monthly-2026-06][^tra-timetable-2
 The [timetable and service-pattern record](/rail/tra/operations/timetable-and-service-patterns/) reads the linked timetable files without turning their examples into a network-wide headway or first/last-train register.[^tra-timetable-2026-07][^tra-timetable-western-2026-07][^tra-timetable-pingxi-2026-07][^tra-timetable-neiwan-2026-07][^tra-timetable-shalun-2026-07]
 
 The operator also exposes a date/station/train query and a dated XML archive, which are recorded as separate data layers because this pass did not turn them into a verified joined dataset.[^tra-timetable-query][^tra-timetable-xml-archive]
+
+The [freight and transportation record](/rail/tra/operations/freight-and-transportation/) keeps the monthly report's freight measures separate from passenger performance and timetable-family data.[^tra-monthly-2026-06]
