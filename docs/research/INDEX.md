@@ -500,7 +500,7 @@ source has that.
 | `wenhu-line.md` | `/rail/metro/lines/wenhu-line` | Engineering numbers, exit counts, underground pair, 1993 wording, the fourth length figure — **all published in run 7** |
 | `wenhu-line.md` | new `/rail/technology/station-numbering` | The three numbering systems — **published in run 7** |
 | `wenhu-line.md` | 24 station pages | Exit counts, engineering numbers — **published in run 7** |
-| `wenhu-line.md` | `/rail/metro/lines/wenhu-line` | Station architecture: the single-column load constraint, 空中之河, 湖城故事 — not yet published, sourced and ready |
+| `wenhu-line.md` | `/rail/metro/lines/wenhu-line` + `/rail/technology/wenhu-station-architecture` | Station architecture: the single-column load constraint, 空中之河, 湖城故事 — focused article published in Run 245 |
 | `wenhu-research-2026-08.md` | `/rail/systems` | The steel running surface on the Neihu section. The 李政安 paper is now read and published at `rail/technology/wenhu-steel-running-surface.md` |
 | `wenhu-research-2026-08.md` | `/rail/metro/rolling-stock/*` | The 2026 renewal programme, provisional |
 | `wenhu-research-part2.md` | `/rail/history/matra-dispute` | Already published |

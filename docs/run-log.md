@@ -1,3 +1,54 @@
+## Run 245 - add Wenhu station architecture record (2026-08-27)
+
+### Sourced
+
+Added a focused technology page and one-subject research pair for the Wenhu
+Line's station architecture. The full official DORTS architecture record
+establishes the Muzha section's steel-and-glass simple forms, the urban-road and
+single-column load constraints, the Neihu section's three design vocabularies,
+the `空中之河` (“river in the sky”) concept and `湖城故事` (“Lake City Story”)
+theme, the shared vocabulary adjusted by local conditions, special-form stations,
+materials, sound walls, the approximately ten-kilometre U-girder viaduct and
+the dry-landscape treatment below the stations. DORTS's route record supplies
+the 14.8 km Neihu section, 3.9 km underground running and two-station count;
+the article identifies BR13 Songshan Airport and BR14 Dazhi as a two-source
+synthesis and states that boundary explicitly.
+
+### TBC and checked failures
+
+The research file records failed checks for a station-by-station architect
+roster, every station's public-art subtheme and colour plan, a current survey of
+altered materials, and a precisely bounded measurement for the approximately
+ten-kilometre elevated-bridge figure.
+
+### Contradicted the corpus
+
+No published Wenhu fact was contradicted. The existing line page already carried
+the primary architecture source and its underground-pair arithmetic; Run 245
+turns the previously unpublished design section into a focused page and links
+to it from that line page.
+
+### Conflicts found
+
+The official route record says twelve Neihu stations with two underground, while
+the architecture record names Dazhi and counts ten other Neihu stations as
+elevated without naming the second underground station in the same sentence.
+The pair is therefore retained as a two-source synthesis, not overstated as a
+single-source quote. The approximately ten-kilometre bridge figure has no
+published survey boundary and remains qualified.
+
+### Gates
+
+`npm run verify` passed: build generated 2,744 static pages and 2,898 postbuild
+pages; 492,037 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,935 pages with no errors or warnings; citations
+resolved 7,624 markers (7,405 primary, 219 secondary); claims reported 25,434
+sourced, 4,502 TBC and 0 ASSERTED; research checked 216 files with 916 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 navigation checks, and `npm test` passed all 234 tests, including
+the 2,744-page build and postbuild Han-glyph check. Generated audit reports will
+be restored before commit; `probes/` remains untouched and untracked.
+
 ## Run 244 - add Circular Line 0403 earthquake investigation (2026-08-27)
 
 ### Sourced

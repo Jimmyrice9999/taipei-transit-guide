@@ -2,6 +2,29 @@
 
 ## Active handoff - 27 August 2026
 
+Run 245 adds the focused Wenhu Line station-architecture page and its
+one-subject research pair. The full official DORTS architecture record supports
+the Muzha steel-and-glass/simple-form rationale, the single-column load
+constraint, the three Neihu design vocabularies, `空中之河` and `湖城故事`, the
+line's shared vocabulary/material choices, sound-control and underside landscape
+treatment. The route record supports the 14.8 km Neihu section, 3.9 km
+underground running and two underground stations; BR13 Songshan Airport and
+BR14 Dazhi remain identified as a two-source synthesis with that boundary made
+explicit.
+
+TBC: station-by-station architect roster, each station's public-art subtheme and
+colour plan, a current altered-materials survey, and the precise measurement
+boundary for the approximately ten-kilometre elevated-bridge figure.
+
+`probes/` remains untracked.
+
+Next: continue the remaining 14-part brief outside the completed TRA,
+Xinyi-extension, Matra, Zhonghe Depot, South Depot, depot-levels, Neihu
+running-surface, Circular Line 0403 and Wenhu architecture subjects, starting
+with the next explicit line or system gap.
+
+## Active handoff - 27 August 2026
+
 Run 244 adds the focused Circular Line 0403 earthquake investigation page and
 its one-subject research pair. The full official Control Yuan record establishes
 the pot-bearing mechanism, 5 mm versus 41 mm plate-depth finding, 36 mm excess

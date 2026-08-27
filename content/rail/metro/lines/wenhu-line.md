@@ -392,6 +392,10 @@ gives for why these stations carry no decoration, which is that a single-column
 support system limits what you can hang on
 it[^dorts-architecture]. The exits are the same economy, at street level.
 
+The builder's full design rationale is expanded in [Why the Wenhu Line looks the
+way it does](/rail/technology/wenhu-station-architecture/), including the three
+Neihu architectural vocabularies and the treatment of the viaduct underside.[^dorts-architecture]
+
 Every station page carries its own count, from the same
 table[^dorts-wenhu].
 
