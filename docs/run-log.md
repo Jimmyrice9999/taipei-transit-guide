@@ -1,4 +1,56 @@
 
+## Run 262 - publish TRA timetable boundary (2026-08-27)
+
+### Sourced
+
+Added a focused TRA timetable and service-pattern page and research record.
+The operator's regular timetable index was last updated on 13 June 2026 and
+lists files effective from 1 July 2026: six reserved-express directions, ten
+Western local directional groups, four Eastern local groups and four branch
+groups. The opened Western Main Line, Pingxi–Shen'ao, Neiwan–Liujia and
+Shalun PDFs show train numbers, service types, endpoints, station times and
+symbols. The branch examples also show distinct operating patterns, including
+through-origin/destination variations and separate Neiwan/Liujia workings.
+
+The current query page exposes time, station and train-number modes and warns
+that train services are adjusted periodically. The current XML archive page
+lists dated daily files, but its linked payload was not parsed because the
+full-fetch tool rejected its application/octet-stream response.
+
+### TBC and checked failures
+
+The opened primary records do not establish a current network-wide
+first/last-train register, headways by route and time band, day-type calendar,
+complete train-to-station stop matrix or timetable-version diff. A successfully
+parsed and versioned XML/ODS dataset, joined to station identities, would
+settle these gaps.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. The existing TRA operations page
+already identified timetable downloads as a separate publication layer; this
+record reads representative full PDFs and makes the stopping-pattern and
+machine-readable-data boundary explicit without deriving unsupported network
+headways.
+
+### Conflicts found
+
+No direct numeric conflict was found among the opened primary records. The
+regular index, dated PDFs, query service and XML archive are different
+publication layers, so a family label, a PDF row and a query result are not
+treated as interchangeable evidence for a current network-wide service
+matrix.
+
+### Gates
+
+`npm run cite` passed: 1,744 content files and 7,729 citations resolved (7,507
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,936 pages with no missing glyphs, 515,240 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 261 - publish TRA accessibility boundary (2026-08-27)
 
 ### Sourced

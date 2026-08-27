@@ -1,5 +1,30 @@
 # For Jamie
 
+## Active handoff - Run 262 - 27 August 2026
+
+Run 262 publishes the TRA timetable and service-pattern boundary. The
+operator's current timetable index was last updated on 13 June 2026 and lists
+regular files effective from 1 July 2026: six reserved-express directions,
+ten Western local directional groups, four Eastern local groups and four
+branch groups. Full linked PDFs show that rows carry train numbers, service
+types, endpoints, station times and symbols, with branch examples that have
+more than one operating pattern.
+
+The operator also exposes a date/station/train query and a dated daily XML
+archive. The XML payload was not parsed because its application/octet-stream
+response was rejected by the full-fetch tool. Current first/last trains,
+headways, day-type calendars, a complete train-to-station matrix and
+timetable-version changes remain TBC. `probes/` remains untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed before this handoff was written. The final gates reported 1,744 content
+files, 7,729 citations, 0 ASSERTED claims, 2,936 postbuild pages, 515,240
+clean internal links, 228 research files with 965 checked failures, 234
+passing tests and 17 passing fact cross-checks.
+
+Next: continue the remaining 14-part brief with the next explicitly incomplete
+TRA or rail-systems subject, one subject at a time.
+
 ## Active handoff - Run 261 - 27 August 2026
 
 Run 261 publishes the TRA accessibility and facilities boundary. The
