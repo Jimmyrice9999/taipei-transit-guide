@@ -1,4 +1,79 @@
 
+## Run 268 - publish TRA maintenance-workshop network (2026-08-27)
+
+### Sourced
+
+A `line-scout` researched TRA's physical maintenance-facility network,
+explicitly instructed not to duplicate the existing fleet-roster page's
+group-level EMU depot assignments. The finding materially corrects this
+project's framing: TRA's Organization Act (Article 16, read in full)
+establishes workshops (機廠) under their own separate bylaws, distinct from
+the general branch-organization law (Article 5, read in full) that instead
+names seven operating sections (機務段: Qidu, Taipei, Hsinchu, Changhua,
+Chiayi, Kaohsiung, Hualien, plus three sub-sections) and four inspection
+sections (檢車段). TRA's own approved 2024-2027 rolling-stock maintenance
+plan — a 65-page PDF read in full, not a snippet — names exactly three
+current heavy-overhaul workshops (Fugang, Chaozhou, Hualien), gives each
+one's planned annual maintenance volume, and explains that EMU900/EMU3000
+Level 3/4 maintenance moved to Chaozhou specifically because Fugang and
+Hualien were already at full capacity. A separate operator policy page gives
+Chaozhou base Phase II's NT$12.148 billion investment and 2021 approval; a
+government body's own release confirms a commissioning ceremony with the
+then-Premier quoted on the renaming, though its exact date conflicts with
+other reporting. Both Fugang's and Chaozhou's own operating bylaws, read in
+full, still carry pre-2022 names and predate the fleets now assigned to
+them — flagged explicitly so neither is read as describing current EMU
+maintenance scope.
+
+The existing `content/rail/tra/rolling-stock/fleet-roster.md` page's
+"operating groups" language is not changed by this run, but the new page
+now states explicitly that those groups are 機務段-level stabling
+assignments, not the three heavy-overhaul workshops — a distinction the
+existing page did not draw.
+
+### TBC and checked failures
+
+Chaozhou Phase I's (the original relocation from Kaohsiung) budget, dates
+and site area rest only on unverified search summaries; a direct attempt to
+locate the operator's own Phase I project page returned an unrelated
+project and a server error, and a join.gov.tw petition page on the former
+site's preservation returned HTTP 503. What distinguishes the "A" and "B"
+sub-grades inside the maintenance plan's own Level 3/4 schedules is not
+defined anywhere read for this page.
+
+### Contradicted the corpus
+
+Nothing published was contradicted outright, but the new page corrects an
+implicit gap in the existing fleet-roster page: its "operating groups"
+(Qidu/Taipei/Hsinchu for EMU900; Hsinchu/Changhua/Chiayi for EMU800) could
+be misread as heavy-maintenance depot assignments. They are not — Level 3/4
+overhaul for those same fleets is reserved to the three workshops, per the
+maintenance plan. The fleet-roster page itself was not edited this run; the
+new maintenance-depots page states the distinction and links from the
+rolling-stock section index.
+
+### Conflicts found
+
+The Chaozhou base commissioning/ceremony date: 18 June 2022 (an unverified
+search summary) versus what a direct fetch of a government body's own
+release appears to date to 18 June 2023 (not independently re-verified
+against the raw page text, so not treated as fully settled either). Fugang's
+and Chaozhou's site areas are both reported, via separate unverified
+summaries, as an identical roughly 52 hectares — possibly a genuine
+coincidence, possibly a search-tool conflation between the two sites;
+neither is published as established.
+
+### Gates
+
+`npm run gate:fast` passed after one round of fixes: the claims ratchet
+caught 3 uncited sentences (two missing citations to bylaw sources that
+existed in the research file but hadn't been added to the content page's
+frontmatter, one meta sentence reworded to the project's TBC vocabulary).
+`npm run research` is clean: 235 files, 985 checked-and-failed entries.
+`probes/` remains untracked; generated audit JSONs were restored. This is
+commit 5 of the run — `npm run gate:full` is run next per the tiered-gate
+policy.
+
 ## Run 267 - publish TRA seismic-design and level-crossing boundaries (2026-08-27)
 
 ### Sourced
