@@ -1,3 +1,60 @@
+## Run 285 - add TMRT fare history, completing the three-operator set (2026-08-28)
+
+### Sourced
+
+Third and final fare-history page of this three-run sequence (TYMC Run
+283, KRTC Run 284, now TMRT), completing parallel coverage across all
+three non-Taipei Taiwan metro operators. Three TMRT pages fetched and
+parsed directly from raw HTML — richest of the three so far.
+
+Concessions: senior/disability 50%, group (10+) 80%/person, bicycle and
+double-bass tickets NT$70 each, lost-ticket replacement fee NT$50.
+Taichung's own senior/disability card carries an additional monthly points
+subsidy (NT$1,000, or NT$1,500 for Indigenous cardholders) stacked on top
+of the 50% concession — a genuinely distinct benefit this project hadn't
+seen the shape of elsewhere. Day/hour passes: TMRT-only NT$120/150/250
+(1-day/24h/48h); a city-run MaaS pass covering TMRT+buses at
+NT$180/280/380 (24/48/72h). The standout find: a four-tier regional
+30-day season pass spanning Taichung, Changhua, Nantou and Miaoli, priced
+by residency (Taichung City NT$299 resident/NT$599 non-resident; Changhua
+and Nantou county passes NT$699 each; combined four-county pass NT$699
+resident/NT$999 non-resident) — Changhua/Nantou tiers explicitly stated as
+not yet usable on TRA, pending unspecified equipment readiness.
+
+### TBC and checked failures
+
+The base/maximum single fare in NT$ is confirmed absent from TMRT's own
+site text (checked 2026-08-28) — the dedicated fare page is a dropdown
+station-pair query tool rendering via JavaScript, and several ticket
+entries reference an unstated "minimum single fare" without giving the
+figure. This is now the third of three Taiwan metro operators checked this
+session (after TYMC Run 283, KRTC Run 284) with the identical class of
+gap — a genuine cross-operator pattern, not three isolated failures. No
+date found for Changhua/Nantou TRA compatibility or the MaaS pass's launch
+(checked 2026-08-28). Web-search budget remained exhausted (checked
+2026-08-28).
+
+### Contradicted the corpus
+
+None — no existing research file previously covered TMRT fares.
+
+### Conflicts found
+
+The two TMRT pages read give different levels of detail for the same
+regional-pass product: the ticket-types page names only two tiers
+(Taichung City and the four-county pass), the dedicated season-pass page
+names all four (adding Changhua and Nantou individually). Treated as the
+dedicated page being more complete, not as a contradiction — no source
+states a different price for the same tier.
+
+### Gates
+
+`gate:fast` clean on the first pass this time (107/107) — no claims-ratchet
+fixes needed. `gate:full` run against a fresh build, fully clean — 234/234
+tests, `facts` (17/17 cross-checks), `research`, `cite`, `claims`,
+`geometry:audit`, `a11y`. Generated audit JSONs restored, not committed.
+`probes/` remains untracked.
+
 ## Run 284 - add KRTC fare history (2026-08-28)
 
 ### Sourced
