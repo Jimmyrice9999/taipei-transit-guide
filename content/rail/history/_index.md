@@ -60,3 +60,5 @@ disagreement, and a gap is labelled rather than papered over.
 - [The Taiwan Railways Haikeguan–Badouzi Reopening Record](/rail/history/haikeguan-badouzi-reopening/)
 - [The Taiwan Railways Shanhua Station Platform Record](/rail/history/shanhua-station-platform/)
 - [The Taiwan Railways Sanmin Station Track Record](/rail/history/sanmin-station-track/)
+- [The Taiwan Railways Donggang Line](/rail/history/donggang-line/)
+- [The Taiwan Railways Old Mountain Line](/rail/history/old-mountain-line/)

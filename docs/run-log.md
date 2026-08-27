@@ -1,4 +1,89 @@
 
+## Run 265 - publish two closed TRA lines via parallel scouts (2026-08-27)
+
+### Sourced
+
+The first content run using Run 264's pattern: two `line-scout` agents
+researched the Old Mountain Line and the Donggang Line concurrently, and the
+main session wrote both research files and content pages sequentially from
+their returned briefs.
+
+**Donggang Line (東港線).** An Academia Historica (國史館) magazine article,
+read in full, establishes groundbreaking 17 March 1938, passenger service
+from 19 July 1940, a 6.2 km single, non-electrified 1,067 mm branch from
+社邊/today's 鎮安 (Chen'an) station via 大鵬 (Dapeng) to Donggang, and a
+military spur to a naval air base at Dapeng Bay. The same source and two
+`自由時報` articles establish closure was attributed to the 雙園大橋 bridge
+ending road-travel dependence on the line, not to South Link Line changes —
+no source found supports that hypothesis, which the research brief had
+proposed verifying rather than assuming. Two further `自由時報` articles
+establish the former station site's redevelopment into a township office and
+transit centre (opened 7 January 2024), and a cancelled 2016-2019 revival
+study.
+
+**Old Mountain Line (舊山線).** The Tourism Administration and Ministry of
+Culture (BOCH) primary pages, both read in full, establish the original
+Sanyi–Fengyuan alignment completed 1908, Shengxing Station's 402.326 m
+elevation (TRA's highest), Longteng Bridge's destruction in the 21 April 1935
+earthquake and its 1938 replacement, and the corridor's current status as a
+Miaoli County-run rail-bike attraction rather than a TRA passenger service.
+
+### TBC and checked failures
+
+TRA's own construction-history PDF — the primary source used for every other
+closed-line page on this project — returned as an unreadable, compressed
+Excel-derived export for the Donggang Line specifically; that subject's page
+is therefore built from secondary sources only, explicitly marked as such.
+For the Old Mountain Line, the Ministry of Culture's National Cultural
+Heritage Network (nchdb.boch.gov.tw) — the primary record for every
+heritage-designation date on the corridor — is a JavaScript-rendered SPA that
+returned only its static shell on every case-record fetch attempted, and
+`web.archive.org` fetches are blocked entirely in the tooling used, closing
+off an archived snapshot of the underlying case record. No heritage-
+designation date for Shengxing Station or Longteng Bridge is therefore stated
+as established; both are reported only as secondary leads. Also checked and
+failed: a 1990 level-crossing collision cited only by zh.wikipedia with no
+independent corroboration found (Donggang); a Miaoli county-monument list
+page and a Culture Memory Bank alternate URL that failed to resolve; a udn.com
+restoration-project article that 404'd (Old Mountain Line).
+
+### Contradicted the corpus
+
+Neither `docs/research/` nor any published content page previously covered
+either subject, so nothing existing was contradicted. The research brief's
+own working hypothesis that the Donggang Line's 1991 closure connected to
+South Link Line route changes was checked and not supported by any source
+found; the page states the bridge/ridership reason actually given instead.
+
+### Conflicts found
+
+Donggang Line: Academia Historica gives 28 February 1991 for the last
+passenger train; zh.wikipedia gives 1 March 1991 for when passenger service
+ended — both published. Old Mountain Line: multiple conflicts published
+rather than resolved — the original opening date's granularity (staged
+1903/1908 per zh.wikipedia vs. a flat "1908" per two primary pages); the
+Longteng Bridge original construction year (1905/1906/1907 across
+search-summary-only sources, none independently fetched, so none published as
+fact); which pier failed in the 1999 earthquake (4th vs. 6th, across two
+sources); tunnel/bridge counts (9/4 vs. 8/3/4-stations); the closure's
+23-vs-24-September-1998 framing; and the heritage-tourism relaunch year
+(2010 steam service vs. 2019 vs. 2021 for the rail-bike, unreconciled).
+
+### Gates
+
+`npm run gate:fast` (cite, markers, the fast unit-test subset) passed after
+one round of fixes: the claims ratchet initially caught 3 unsourced sentences
+on the Old Mountain Line page (two meta statements about the page's own
+sourcing gaps, one factual sentence missing its own citation marker carried
+over from the previous sentence), all fixed by citing or rephrasing to the
+project's TBC/meta vocabulary rather than by raising the baseline. `npm run
+research` is clean: 231 files, 977 checked-and-failed entries (both new
+files' entries needed explicit checked-dates added to pass the format check).
+`probes/` remains untracked; generated audit JSONs were restored and are not
+part of this commit. Per the new tiered-gate policy this is commit 2 of the
+run, so the full gate was not re-run here — it ran clean as Run 264's
+baseline and will run again at commit 5 or run end.
+
 ## Run 264 - parallel read-only research and tiered gates (2026-08-27)
 
 ### What changed
