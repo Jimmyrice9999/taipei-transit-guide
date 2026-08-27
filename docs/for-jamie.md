@@ -1,5 +1,22 @@
 # For Jamie
 
+## Active handoff - Run 248 - 27 August 2026
+
+Run 248 strengthens the TRA rolling-stock procurement boundary with the full
+operator's 113 Annual Report, published in July 2025. Its procurement section
+reports all 520 commuter cars delivered, 600 intercity cars delivered by the end
+of ROC113, and 60 electric locomotives delivered. The revised 104–116 programme
+still lists 127 locomotives and says the electric-locomotive case is in detailed
+design; it does not reconcile that scope with the separate 102-locomotive
+procurement page. The conflict stays published, with no current locomotive
+total calculated.
+
+`probes/` remains untracked.
+
+Next: continue the TRA fleet-register gaps only if a stronger dated asset or
+acceptance record appears; otherwise move to the next incomplete subject in the
+14-part brief.
+
 ## Active handoff - Run 247 - 27 August 2026
 
 Run 247 extends the TRA rolling-stock record with the operator's group-level

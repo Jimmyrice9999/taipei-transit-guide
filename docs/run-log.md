@@ -42,6 +42,49 @@ failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
 passed all 19 checks. `npm test` passed all 234 tests, including the fact
 cross-checks. `probes/` remains untouched and untracked.
 
+## Run 248 - strengthen TRA locomotive procurement boundary (2026-08-27)
+
+### Sourced
+
+Added the operator's full 113 Annual Report, published in July 2025, to the TRA
+rolling-stock evidence pair. Its procurement section reports all 520 commuter
+cars delivered, 600 intercity cars delivered by the end of ROC113, and 60
+electric locomotives delivered. The same revised 104–116 programme section
+retains 127 locomotives and says the electric-locomotive case is in detailed
+design.
+
+### TBC and checked failures
+
+The report does not identify how its 127-locomotive programme scope relates to
+the separate 102-locomotive procurement page, nor does it provide a unit-level
+asset, acceptance or stabling register. The current locomotive total, active
+car numbers, allocation and retirement status remain TBC.
+
+### Contradicted the corpus
+
+No published TRA rolling-stock fact was contradicted. The new annual-report
+snapshot makes the 102-versus-127 conflict more explicit and adds a dated
+60-electric-locomotive delivery milestone without resolving the scope.
+
+### Conflicts found
+
+The June 2025 operator acquisition page records 102 locomotives (68 electric and
+34 diesel-electric), while the 114 Safety Management Report and the 113 Annual
+Report retain 127 in the broader programme. The annual report also reports 60
+electric locomotives delivered and detailed design continuing. These are all
+official operator records with different stated scopes; no value is selected.
+
+### Gates
+
+`npm run verify` passed: build generated 2,744 static pages and 2,898 postbuild
+pages; 492,039 internal links were checked with no broken links, fragments or
+orphans; accessibility checked 1,936 pages with no errors or warnings; citations
+resolved 7,629 markers (7,410 primary, 219 secondary); claims reported 25,442
+sourced, 4,502 TBC and 0 ASSERTED; research checked 216 files with 918 recorded
+failures; geometry and CVD audits were clean. The explicit `npm run nav` gate
+passed all 19 checks. `npm test` passed all 234 tests, including the fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 245 - add Wenhu station architecture record (2026-08-27)
 
 ### Sourced

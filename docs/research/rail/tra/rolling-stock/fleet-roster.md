@@ -21,6 +21,19 @@
 
 The full page was opened and read, including its update date of 3 June 2025. It establishes the programme quantities, named builders, completed EMU delivery milestones and the stated in-progress status of the locomotive and branch-car purchases. It does not provide a current unit-to-depot roster.
 
+### 113 Annual Report procurement snapshot
+
+- **English title:** National Taiwan Railways 113 Annual Report
+- **Original title:** `113年報`
+- **Publisher:** National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+- **URL:** https://tip.railway.gov.tw/tra-tip-web/tip/file/844f77bf-da25-43b1-996f-09d24dfcbbf1
+- **Class:** PRIMARY
+- **Confidence:** High for the report's own dated programme and execution snapshot; it is not a vehicle-level fleet register and does not by itself reconcile the separate procurement scopes.
+- **Original-language basis:** `通勤電聯車已全數交車 520 輛、城際電聯車截至 113 年底完成交車 600 輛，機車購案中電力機車已交車 60 輛案，刻正辦理細部設計中。`
+- **Original-language basis:** `規劃計採購城際電聯車 600 輛、空調通勤電聯車 520 輛、支線客車 60 輛及機車 127 輛，奉行政院 104 年 5 月 22 日院臺交字第 1040026871 號函核定辦理。` The same section records the 113-year approved revision of the plan.
+
+The full 85-page report was opened and read. Its publication block says `113 年報` and gives a publication month of ROC114 July (July 2025). The procurement section reports the completed 520- and 600-car deliveries, 60 electric locomotives delivered and detailed design continuing, while retaining 127 as the revised programme quantity. It does not expose the amendment or acceptance schedule needed to map this statement to the separate 102-locomotive procurement page.
+
 ### 114 Safety Management Report
 
 - **English title:** 114 Safety Management Report
@@ -73,13 +86,13 @@ The operator's *Kaohsiung locomotive factory Chaozhou base phase II construction
 
 ## Conflicts
 
-- The June 2025 acquisition page says the locomotive purchase contains **102 vehicles**, split into 68 electric and 34 diesel-electric locomotives. The 114 Safety Management Report describes the broader purchase programme as containing **127 locomotives** and totals the programme at 1,307 vehicles. Both are official operator records; the opened sources do not provide the amendment or unit schedule needed to reconcile them. The page publishes both values instead of choosing one.
+- The June 2025 acquisition page says the locomotive purchase contains **102 vehicles**, split into 68 electric and 34 diesel-electric locomotives. The 114 Safety Management Report describes the broader purchase programme as containing **127 locomotives** and totals the programme at 1,307 vehicles. The 113 Annual Report repeats **127** for the revised 104–116 plan and reports **60 electric locomotives delivered** with detailed design continuing. All three are official operator records; the opened sources do not provide the amendment or unit schedule needed to reconcile the scopes. The page publishes both values and the later 60-delivered milestone instead of choosing one.
 - The acquisition page describes the locomotive and branch-car work as still in delivery/manufacture on its 3 June 2025 update, while the safety report describes EMU900 and EMU3000 deployment and an older-vehicle retirement plan in its 114 report. These are different vehicle-programme milestones, not evidence that all purchases share one current status.
 
 ## Checked and failed
 
 - **Current unit-by-unit TRA fleet register** — checked 2026-08-27. The operator acquisition page, safety report, passenger-facilities guide and approved maintenance plan were fetched and read in full. They provide programme quantities, formation examples and maintenance categories, but no single current register naming every active car/set, line assignment, depot allocation, withdrawal state and preservation status. The page reports the evidence boundary and leaves the complete current roster TBC; a TRA asset register, stabling roster or maintenance fleet register would settle it.
-- **Reconciliation of 102 and 127 locomotives** — checked 2026-08-27. The full operator pages confirm both numbers, but no opened change notice, tender amendment or vehicle-level schedule explains whether the difference is a revised scope, an accounting boundary or another programme distinction. Both official values remain published with dates and scopes; no current locomotive count is calculated from them.
+- **Reconciliation of 102 and 127 locomotives** — checked 2026-08-27. The full operator acquisition page, safety report and 113 Annual Report confirm the 102 procurement scope, the broader 127 programme scope and the later report's 60-electric-locomotive delivery milestone, but no opened change notice, tender amendment or vehicle-level schedule explains whether the difference is a revised scope, an accounting boundary or another programme distinction. Both official values remain published with dates and scopes; no current locomotive count is calculated from them.
 - **Complete active roster for older passenger families** — checked 2026-08-27. The operator guide names formations for TEMU1000, TEMU2000, E1000, DR3100, EMU400–900, 3000-type and other passenger vehicles. The maintenance plan names vehicle families for planned work. Neither is a complete dated active-roster or retirement register. Formation examples are published; active set counts, car-number ranges, present service assignment and withdrawal status remain TBC.
 - **Complete current line/depot allocation** — checked 27 August 2026 against the operator's full advertising-inventory PDF and Chaozhou-base policy page. The advertising record supplies group-level EMU900 and EMU800 depot and operating-zone rows, but says cars rotate through maintenance and that operations may be adjusted; the policy page describes a maintenance-facility project rather than a vehicle assignment list. A dated asset or stabling register remains TBC.
 

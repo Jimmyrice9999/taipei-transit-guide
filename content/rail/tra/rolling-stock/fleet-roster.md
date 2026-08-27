@@ -14,6 +14,9 @@ facts:
   - label: EMU3000 purchase
     value: 600 cars; delivery completed August 2024
     source: tra-purchases
+  - label: 113 annual-report programme snapshot
+    value: 520 commuter cars and 600 intercity cars delivered by end of ROC113; 60 electric locomotives delivered
+    source: tra-annual-report
   - label: Locomotive purchase programme
     value: 102 locomotives — 68 electric and 34 diesel
     source: tra-purchases
@@ -60,6 +63,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The operator's page, updated 3 June 2025, records the EMU900, EMU3000, locomotive and branch passenger-car purchase programmes, quantities, contractors and stated delivery status.
+  - id: tra-annual-report
+    title: National Taiwan Railways 113 Annual Report
+    titleOriginal: 113年報
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://tip.railway.gov.tw/tra-tip-web/tip/file/844f77bf-da25-43b1-996f-09d24dfcbbf1
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's report, published in July 2025, says all 520 commuter cars were delivered, 600 intercity cars were delivered by the end of ROC113, and 60 electric locomotives had been delivered; its revised 104–116 plan still lists 127 locomotives and says the electric-locomotive case was in detailed design."
   - id: tra-safety
     title: 114 Safety Management Report
     titleOriginal: 114年安全管理報告
@@ -115,6 +127,8 @@ The operator's acquisition page records a 520-car air-conditioned commuter EMU p
 
 The same page records a locomotive programme of 102 vehicles: 68 electric locomotives and 34 diesel-electric locomotives, awarded to Toshiba and Stadler respectively, with delivery still under way when the page was updated.[^tra-purchases] It also records 60 energy-efficient branch passenger cars for non-electrified lines, contracted to Taiwan Rolling Stock and still in manufacture at that update.[^tra-purchases]
 
+The operator's 113 Annual Report, published in July 2025, gives a later programme snapshot: all 520 commuter cars were delivered, 600 intercity cars had been delivered by the end of ROC113, and 60 electric locomotives had been delivered.[^tra-annual-report] The same report describes the revised 104–116 plan as covering 127 locomotives and says the electric-locomotive case was in detailed design; it does not explain how that scope relates to the separate 102-locomotive procurement page.[^tra-annual-report]
+
 These are programme quantities and delivery statements, not proof that every vehicle was active on a particular line or assigned to a particular depot.[^tra-purchases] The source does not publish a current unit-to-depot roster alongside them.[^tra-purchases]
 
 A separate TRA advertising-inventory PDF lists 52 ten-car EMU900 groups, split among Qidu (20), Taipei (7) and Hsinchu (25) depots, and 42 eight-car EMU800 groups, split among Hsinchu (9), Changhua (6) and Chiayi (27) depots.[^tra-operating-groups] It also gives principal operating zones and approximate service counts for those groups.[^tra-operating-groups] This is a published grouping for advertising scope rather than a unit register: the contract template says the included cars can rotate through depot maintenance and that operations may be adjusted for the company's needs.[^tra-operating-groups]
@@ -139,10 +153,10 @@ An operator policy page last updated 12 February 2026 describes the Chaozhou bas
 
 ## The unresolved locomotive total
 
-Two official operator records publish different locomotive quantities. The acquisition page updated in June 2025 says 102, split into 68 electric and 34 diesel-electric locomotives.[^tra-purchases] The 114 Safety Management Report describes the wider 1,307-vehicle programme as containing 127 locomotives.[^tra-safety]
+Three official operator records now bound the locomotive conflict. The acquisition page updated in June 2025 says 102, split into 68 electric and 34 diesel-electric locomotives.[^tra-purchases] The 114 Safety Management Report describes the wider 1,307-vehicle programme as containing 127 locomotives.[^tra-safety] The 113 Annual Report repeats 127 in the revised 104–116 plan while reporting 60 electric locomotives delivered and detailed design continuing; it does not identify the missing scope between 102 and 127.[^tra-annual-report]
 
-The records do not expose a change notice or a common vehicle-by-vehicle schedule that reconciles 102 with 127.[^tra-purchases][^tra-safety] Both values therefore remain published with their source and programme context; this page does not calculate a current locomotive fleet from either one.[^tra-purchases][^tra-safety]
+The records do not expose a change notice or a common vehicle-by-vehicle schedule that reconciles 102 with 127.[^tra-purchases][^tra-safety][^tra-annual-report] Both values therefore remain published with their source and programme context; this page does not calculate a current locomotive fleet from either one.[^tra-purchases][^tra-safety][^tra-annual-report]
 
 ## What remains TBC
 
-The opened primary sources do not provide a complete current count by vehicle family, a stable list of active car numbers, complete current line or depot assignment, withdrawal or preservation status, or a final reconciliation of the two locomotive totals.[^tra-purchases][^tra-safety][^tra-vehicle-guide][^tra-maintenance][^tra-operating-groups][^tra-chaozhou-base] The group-level advertising inventory is partial and operationally adjustable, not a substitute for a current asset register or stabling roster. Those records, together with the contract-change records for the locomotive programme, would be needed to fill the gaps.
+The opened primary sources do not provide a complete current count by vehicle family, a stable list of active car numbers, complete current line or depot assignment, withdrawal or preservation status, or a final reconciliation of the two locomotive totals.[^tra-purchases][^tra-safety][^tra-annual-report][^tra-vehicle-guide][^tra-maintenance][^tra-operating-groups][^tra-chaozhou-base] The group-level advertising inventory is partial and operationally adjustable, not a substitute for a current asset register or stabling roster. Those records, together with the contract-change and final-acceptance records for the locomotive programme, would be needed to fill the gaps.
