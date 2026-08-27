@@ -1,11 +1,13 @@
 ---
 title: Technology
-description: Taiwan Railways traction power and infrastructure technology records.
+description: Taiwan Railways traction power and signalling technology records.
 order: 3
-status: planned
 ---
 
 The technology layer records the engineering boundaries that the current station
 and line snapshot cannot provide. The [Taiwan Railways electrification record](/rail/tra/technology/electrification/)
 keeps the operator's construction chronology, traction-power description and
-dated network totals separate from a current asset register.
+dated network totals separate from a current asset register. The [train control
+and signalling record](/rail/tra/technology/signalling/) keeps train-borne
+protection, the dispatch-control upgrade and the in-house research programme
+separate rather than treating them as one system.

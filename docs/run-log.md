@@ -1,4 +1,79 @@
 
+## Run 266 - publish TRA train-control/signalling boundary; rule out two candidate closed lines (2026-08-27)
+
+### Sourced
+
+A `line-scout` researched TRA's train-control and signalling systems — a
+subject with no prior page anywhere in the corpus for TRA specifically (the
+project has a metro signalling-generations page, but TRA is a different
+network). The published page keeps three layers separate, because the
+sources do: (1) **ATP** — the operator's own achievement page confirms
+full-line on-board ATP activation in August ROC96 (2007), stating this
+brought TRA's signalling/protection system to ERTMS/ETCS Level 1, with
+earlier milestones back to 1950; (2) **CTC 3.0** — MOTC's own press release
+confirms TRA formally launched a third-generation dispatch-control system on
+29 April 2026 with Japan Signal Company and two Taiwanese partners, target
+ROC118 (2029), including a geographically separate backup centre at Fugang,
+Taoyuan; (3) **Train Control 4.0** (行控4.0/列控4.0) — a separate,
+Puyuma-accident-triggered in-house R&D programme, confirmed by six
+independently fetched news sources to have completed only a December 2022
+proof-of-concept, called "fundamentally unusable" by the TTSB chairman in
+April 2024 testimony, with allegations the winning contractor's claimed
+reference project was denied by the transit authority that supposedly hosted
+it.
+
+Also researched and ruled **out of scope**: two candidate closed-TRA-branch
+subjects, 布袋線 (Budai Line) and 北港線 (Beigang Line), both southern
+narrow-gauge lines. Two `line-scout`s independently confirmed both were
+purely Taiwan Sugar Corporation-operated lines (762 mm gauge, sugar-company
+builders) with no TRA passenger operation found in any source checked — only
+physical freight-interchange trackage at shared stations, which is not
+operation. No pages were written for either; recorded here so neither is
+re-investigated without new evidence.
+
+### TBC and checked failures
+
+Whether ATP now covers the full network at track level (as opposed to the
+vehicle-side rollout described) is TBC: the Railway Bureau's own signalling
+page and two TRA PDFs that likely bear on it (one titled to directly cover
+the CTC 3.0 procurement) returned unreadable — scanned images or empty
+content. Which of the TTSB's 27 Puyuma recommendations specifically concern
+ATP/signalling design, CTC 3.0's contract value from a primary source, and
+Train Control 4.0's current (2026) operating status all remain TBC.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted; no prior page covered this subject. The
+`布袋線`/`北港線` scope check did not correct a wrong existing claim — it
+prevented one that had not yet been made, after the brief's list of
+candidate closed lines included both without verifying operator identity
+first.
+
+### Conflicts found
+
+Three separate budget figures for the Train Control 4.0 subsidy across
+independently fetched sources (NT$60.67 million, NT$69.46 million, and a
+differently-scoped NT$56.4 million contract value) — all published, none
+picked. The ATP-isolation speed-limit system's budget (NT$245 million vs.
+NT$270 million) and its speed cap (60 km/h implemented vs. 65 km/h as an
+initial directive that explicitly did not rule out going lower). The CTC
+predecessor system's establishment date (2001 per a 2023 report vs. ROC93/2004
+per a 2026 report, both CNA-lineage). The Train Control 4.0 programme's
+NT$3.95 billion CTC 3.0 budget appears only in secondary press, not the MOTC
+primary release.
+
+### Gates
+
+`npm run gate:fast` passed after one round of fixes: the claims ratchet
+caught 3 uncited sentences (two budget claims missing their own citation
+markers, one section-index sentence restating specific facts that an index
+page does not footnote — reworded to match the project's existing
+non-specific index-page style rather than added citations there). `npm run
+research` is clean: 232 files, 978 checked-and-failed entries. `probes/`
+remains untracked; generated audit JSONs were restored. This is commit 3 of
+the run under the new tiered-gate policy — the full gate is due at commit 5
+or run end, not yet re-run here.
+
 ## Run 265 - publish two closed TRA lines via parallel scouts (2026-08-27)
 
 ### Sourced

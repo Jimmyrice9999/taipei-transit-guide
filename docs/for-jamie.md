@@ -1,29 +1,25 @@
 # For Jamie
 
-## Active handoff - Run 265 - 27 August 2026
+## Active handoff - Run 266 - 27 August 2026
 
-Run 265 is the first content run using Run 264's parallel pattern: two
-`line-scout` agents researched the Old Mountain Line (舊山線, Sanyi–Houlong)
-and the Donggang Line (東港線) concurrently; the main session wrote both
-pages sequentially from what they returned.
+Run 266 publishes TRA's train-control/signalling boundary — a subject with no
+metro-equivalent page yet for TRA specifically. Three layers, kept separate:
+a completed 2007 ATP rollout (operator page: full-line activation August
+ROC96, stated ERTMS/ETCS Level 1 equivalence); a funded CTC 3.0 dispatch
+upgrade MOTC launched 29 April 2026 (target ROC118/2029, Japan Signal +
+Taiwanese partners); and an unproven in-house "Train Control 4.0" R&D
+programme, called "fundamentally unusable" by the TTSB chairman in 2024
+testimony and of unconfirmed current status.
 
-Donggang Line: TRA's own construction-history PDF could not be read for this
-subject (unreadable compressed export) — the page rests on an Academia
-Historica article and four news reports, all marked secondary. Closure
-(1991) is attributed to a bridge ending road-travel dependence on the line,
-not to South Link changes as the brief's hypothesis assumed; no source
-supports that hypothesis. Old Mountain Line: heritage-designation dates for
-Shengxing Station and Longteng Bridge could not be verified — the Ministry of
-Culture's heritage database is a JS-rendered SPA the fetch tooling can't
-execute, and web.archive.org is blocked — so those dates are reported as
-unverified leads, not facts. Both pages publish several genuine multi-source
-conflicts (exact closure dates, bridge construction year, tunnel/bridge
-counts) rather than picking a value.
+Two candidate closed-line subjects (Budai Line 布袋線, Beigang Line 北港線)
+were checked and ruled **out of scope**: both were confirmed as pure Taiwan
+Sugar Corporation lines with no TRA passenger operation found in any source —
+no pages written; not to be re-investigated absent new evidence.
 
-`npm run gate:fast` passed after fixes (3 initially-unsourced sentences were
-found and cited); `npm run research` is clean (231 files, 977 checked
-failures). `probes/` remains untracked.
+`npm run gate:fast` passed after fixes (3 uncited sentences found and
+sourced); `npm run research` clean (232 files, 978 checked failures).
+`probes/` remains untracked. This is commit 3 of the run; full gate is due at
+commit 5.
 
-Next: continue with more closed-line/branch subjects via the same
-parallel-scout pattern, then move to Parts 2-8 once TRA/THSR gaps are
-exhausted.
+Next: continue closed-line/TRA-systems subjects via parallel scouts, then
+move to Parts 2-8 once TRA/THSR gaps are exhausted.
