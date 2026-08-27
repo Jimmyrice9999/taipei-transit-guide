@@ -1,5 +1,31 @@
 # For Jamie
 
+## Active handoff - Run 260 - 27 August 2026
+
+Run 260 publishes the TRA operations and ridership boundary. The operator's
+June 2026 monthly report records 18,583,868 passenger journeys for June,
+119,278,790 for January–June, 792,603,914 passenger-kilometres for June,
+49.62% seat utilisation and 93.00% passenger-train punctuality. Its annual
+comparison row records 242,772,738 passenger journeys and 10,764,554,799
+passenger-kilometres for 2025. The current timetable index was updated on 13
+June 2026 and publishes timetable-family downloads effective from 1 July 2026
+for reserved expresses, local services and four branch groups.
+
+Current station-level ridership, line-level passenger allocation, a joined
+station-by-station service matrix, and first/last-train values remain TBC. The
+114-year annual PDF linked from the current statistics index timed out during
+the full-fetch attempt and was not used as evidence. `probes/` remains
+untracked.
+
+`npm run cite`, `npm run verify`, `npm run nav` and standalone `npm test` all
+passed before this handoff was written. The final gates reported 1,741 content
+files, 7,705 citations, 0 ASSERTED claims, 2,930 postbuild pages, 508,647
+clean internal links, 226 research files with 958 checked failures, 234
+passing tests and 17 passing fact cross-checks.
+
+Next: continue the remaining 14-part brief with the next explicitly incomplete
+TRA or rail-systems subject, one subject at a time.
+
 ## Active handoff - Run 259 - 27 August 2026
 
 Run 259 publishes the TRA electrification and traction-power boundary. The

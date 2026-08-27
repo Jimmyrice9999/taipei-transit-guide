@@ -1,3 +1,57 @@
+
+## Run 260 - publish TRA operations boundary (2026-08-27)
+
+### Sourced
+
+Added a focused TRA operations and ridership page, research record and
+operations index. The operator's full June 2026 monthly report records
+18,583,868 passenger journeys, 792,603,914 passenger-kilometres,
+NT$2,248,767,058 passenger revenue, a 42.7 km average journey, 49.62% seat
+utilisation and 93.00% passenger-train punctuality. Its January-June 2026 row
+records 119,278,790 passenger journeys and 5,167,715,332 passenger-kilometres;
+the annual comparison row records 242,772,738 passenger journeys and
+10,764,554,799 passenger-kilometres for 2025.
+
+The current operator timetable index was last updated on 13 June 2026 and
+lists downloads effective from 1 July 2026 for Western, Eastern and South
+Link reserved expresses, Western and Eastern local-service families, and the
+Pingxi/Shenao, Neiwan/Liu-jia, Jiji and Shalun branch groups. The public
+statistics index separately exposes monthly reports, annual reports and public
+statistical tables.
+
+### TBC and checked failures
+
+The opened primary records do not establish current station-level ridership,
+line-level passenger allocation, a joined station-by-station service matrix,
+headways, service-day rules, or first/last-train values. The linked 114-year
+annual-report PDF timed out during a full-fetch attempt and was not used as
+evidence. A current station dataset, the linked timetable files, and a
+documented station-identity join would settle these gaps.
+
+### Contradicted the corpus
+
+No published content fact was contradicted. This bounded, dated operations
+layer replaces generic TRA operations uncertainty with the network statistics
+and timetable-family scope the operator actually publishes, while preserving
+the station and train-level gaps.
+
+### Conflicts found
+
+No direct numeric conflict was found in the opened primary records. The 2025
+annual comparison row and June 2026 monthly row describe different periods.
+The timetable-family index and the TDX station snapshot are different scopes,
+so neither is substituted for the other.
+
+### Gates
+
+`npm run cite` passed: 1,741 content files and 7,705 citations resolved (7,483
+primary, 222 secondary). `npm run verify` passed with 0 ASSERTED claims;
+postbuild checked 2,930 pages with no missing glyphs, 508,647 internal links
+with no broken links/fragments/orphans, and clean accessibility, research,
+geometry and CVD audits. The explicit `npm run nav` gate passed all 19 checks.
+The explicit `npm test` gate passed all 234 tests and all 17 fact
+cross-checks. `probes/` remains untouched and untracked.
+
 ## Run 259 - publish TRA electrification boundary (2026-08-27)
 
 ### Sourced

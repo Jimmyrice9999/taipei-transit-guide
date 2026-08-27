@@ -329,11 +329,40 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator report gives the end-2023 route-length, electrification and non-electrification aggregates; those dated totals are kept separate from a current line-by-line power register."
+  - id: tra-monthly-2026-06
+    title: "Monthly Statistical Report of Taiwan Railway — June 2026"
+    titleOriginal: "臺灣鐵路統計月報"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/7bf499cd-6c63-4277-ac88-7dc3807f8d87"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full June 2026 monthly report gives current network passenger, passenger-kilometre, revenue, seat-utilisation and punctuality measures, plus the 2020–2026 comparison series; it is not a station-level ridership register."
+  - id: tra-timetable-2026-07
+    title: "Regular Taiwan Railway timetable downloads"
+    titleOriginal: "定期行駛列車時刻表"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00C/tipC21/view?proCode=8ae4cac3756b7b41017572e9077f1790&subCode=8ae4cac3756b7b41017573e352ae18f8"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The full operator index was last updated 13 June 2026 and lists the timetable PDF/ODS families effective from 1 July 2026, including trunk directions, local groups and four branch groups."
+  - id: tra-statistics-index
+    title: "Taiwan Railway statistical information"
+    titleOriginal: "臺鐵統計資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-public-info-3"
+    accessed: 2026-08-27
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's current public-information page separates monthly reports, annual reports and public statistical tables."
 ---
 
 Taiwan Railways is represented here as a system with its own station identities, route memberships and historical intervals. The current data layer is a full TDX snapshot retrieved on 2026-08-24.[^tdx-tra-station] The operator historical pages and reports are used to mark what is established, what conflicts with the current snapshot, and what remains TBC.[^tra-history]
 
 The [Taiwan Railways electrification record](/rail/tra/technology/electrification/) keeps the operator's staged electrification chronology, its 25 kV technical-study boundary and the dated 2023 network aggregates separate from a current line-by-line power register.[^tra-electrification-history][^tra-electrification-paper][^tra-network-report]
+
+The [TRA operations and ridership record](/rail/tra/operations/ridership-and-service/) keeps the current network performance statistics separate from the operator's timetable-family index and from station-level service data that has not yet been transcribed.[^tra-monthly-2026-06][^tra-timetable-2026-07][^tra-statistics-index]
 
 The current pages cover the Western Main Line, Eastern Main Line and the branch records returned by TDX.[^tdx-tra-line] The closed-alignment records include the [Linkou Line](/rail/history/linkou-line/), the [Shen'ao–Liandong Line](/rail/history/shenao-line/), the [Hualien–Tianpu Line](/rail/history/hualien-tianpu-line/), the [Taipei–Danshui Line](/rail/history/taipei-danshui-line/), the [Xindian Line](/rail/history/xindian-line/), the [Zhonghe Line](/rail/history/zhonghe-line/), the [Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/), the [Tanzi–Shengang Line](/rail/history/tanzi-shengang-line/) and the [Ruifang–Shen'ao Line](/rail/history/ruifang-shenao-line/), while the [Houtong–Sandiaoling double-track segment](/rail/history/houtong-sandiaoling-double-track/), [Changhua–Minxiong double-track segment](/rail/history/changhua-minxiong-double-track/), [Chiayi–Xinshi double-track segment](/rail/history/chiayi-xinshi-double-track/), [Jianan–Taichung Port construction record](/rail/history/jianan-taichung-port-double-track/), [Xinpu–Tongxiao double-track segment](/rail/history/xinpu-tongxiao-double-track/) and [Yuanli–Rinan double-track segment](/rail/history/yuanli-rinan-double-track/) are kept alongside them as construction-history subjects rather than separate current line identities.[^tra-history][^tra-construction-history][^tra-bike-route] Further historical alignments and construction subjects follow in separate batches so route sequence, gauge and historical status are not silently merged.[^tra-history] The page count is a work boundary, not a claim that an unwritten station or alignment does not exist.[^tra-history]
 The [Jianan–Qingshui double-track segment](/rail/history/jianan-qingshui-double-track/) is kept as a construction-history subject rather than a separate current line identity.[^tra-history][^tra-construction-history]
