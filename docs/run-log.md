@@ -1,4 +1,40 @@
 
+## Run 275 - fix specs/facts misplacement; stale search index; harden fast gate again (2026-08-28)
+
+### What happened
+
+Ran `npm run gate:full` locally after Run 274 rather than trust CI alone,
+given how much had changed since it broke. Caught two real failures
+`gate:fast` does not check.
+
+**`specs:` frontmatter holding non-numeric values.** `tests/markdown.test.mts`
+enforces that `specs:` entries are clean numeric value+unit pairs (so a spec
+table column can align); dates and multi-clause prose belong in `facts:`.
+Five pages from Runs 265-274 violated this — dates ("7 January 2024", "24
+October 2011", "30 September 2025", "5 January 2007") and one compound value
+("8 tunnels, 3 bridges, 4 stations") that had been placed under `specs:`
+instead of `facts:`. Moved all six entries; `specs: []` where a page had
+nothing numeric left.
+
+**Stale search index.** `public/data/search-index.json` had not been
+regenerated since before Run 265's content started landing — nine new pages
+were invisible to site search. Same class of gap as the conflicts-index
+staleness Run 269 fixed: a generated artifact with no fast-gate check.
+Added a `--check` mode to `scripts/search-index.mts` (mirroring
+`generate-conflicts-index.mjs`'s existing pattern) and a `search:check` npm
+script, wired into `gate:fast`. Verified sensitivity: blanked the index,
+confirmed the check failed, restored it, confirmed clean.
+
+### Gates
+
+`gate:fast` now runs cite, markers, `conflicts:check`, `search:check`,
+`font:check` and the 107-test fast unit subset in ~14s total, still well
+under the one-minute target. Re-ran `tests/markdown.test.mts` and
+`tests/search.test.mts` standalone (both excluded from `gate:fast` as
+slow/build-dependent) to confirm the original `gate:full` failures are
+resolved — both pass clean. `npm run research` clean: 238 files, 996
+checked-and-failed entries. `probes/` remains untracked.
+
 ## Run 274 - fast-gate font check; pdftotext PDF fallback; two content corrections (2026-08-28)
 
 ### What happened

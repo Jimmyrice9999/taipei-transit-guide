@@ -1,38 +1,32 @@
 # For Jamie
 
-## Active handoff - Run 274 - 27 August 2026
+## Active handoff - Run 275 - 27 August 2026
 
-Run 274 closes the two gaps flagged after Run 273's CI fix. `npm run
-font:check` (new, in `gate:fast`, ~1s) scans content/**/*.md for Han
-characters in 2+-character runs and fails if any is missing from every
-committed subset — verified it actually fails (removed 籌, confirmed
-detection, restored). Scoped to content/ only after lib/components/app
-produced 9 false-positive-in-spirit hits: real characters in pre-existing
-Danhai/Circular/Airport-MRT data files that a full build's own postbuild
-check confirms never actually render on any current page — narrower scope
-avoids permanent noise while still catching the real failure mode (new
-content pages, which is what broke CI).
+Run 275: the local `gate:full` I ran after Run 274 (before assuming CI would
+pass) caught two real failures `gate:fast` doesn't check. (1) `specs:` on 5
+pages from Runs 265-274 held dates/multi-clause values ("7 January 2024",
+"8 tunnels, 3 bridges, 4 stations") that trip a real test — `specs` is for
+numeric value+unit pairs, dates/prose belong in `facts:`; moved all 6 to
+`facts:`. (2) `public/data/search-index.json` was stale — never regenerated
+after adding 9 pages this session, and nothing caught it (same class of gap
+as the conflicts-index staleness from Run 269). Added `search:check`
+(new --check mode on scripts/search-index.mts, ~2s) to `gate:fast`,
+verified it fails when the index is blanked, restored, confirmed clean.
 
-PDF extraction: `pdftoppm`/poppler isn't installed, but `pdftotext` (xpdf)
-already is, on PATH. Confirmed by extracting 2 of the 3 previously-failed
-PDFs in full (a 143-page TRA tunnel-safety report; the TRA annual
-statistics digest) — documented in AGENTS.md/SKILL.md. The third
-(rb.gov.tw's fire-safety report) is Incapsula-blocked at the network level,
-not a tool gap.
+`gate:fast` is now ~14s total (cite, markers, conflicts:check, search:check,
+font:check, 107 fast unit tests) — still well under a minute. `npm run
+research` clean (238 files, 996 checked failures). `probes/` remains
+untracked.
 
-That extraction paid off immediately: TRA's annual 2024 statistics digest,
-now readable, **primary-confirms level-crossings.md's 415 figure** (was
-secondary-only) and reveals the earlier station-ridership research
-mis-cited which report has "Table 6" — the *monthly* report's Table 6 is
-line-level passenger-km, not stations; the *annual* report's Table 6 is the
-real station-level table, extracted but not yet reliably row-aligned (still
-TBC, honestly). Both pages corrected and re-cited.
+Two KRTC (Kaohsiung Metro) scouts already returned rich material —
+signalling/automation (Red/Orange is driver-operated on Siemens track-circuit
+interlockings; the under-construction Yellow Line is Siemens Trainguard MT
+CBTC at GoA4, confirmed by the manufacturer's own press release) and rolling
+stock (42 Siemens trainsets from 2005, a new 16-set Hyundai Rotem order for
+extensions). content/rail/krtc/ currently has only lines/ and stations/ —
+this is genuinely new ground, not a duplicate.
 
-`npm run gate:fast` passed after fixes; `npm run research` clean (238
-files, 996 checked failures). `probes/` remains untracked.
-
-Next: continue the 14-part brief. TRA is at 242/245 stations and all 12
-THSR are done (confirmed stale in the prior brief) — audit before assuming
-scope. This is commit 2 since the last full gate (Run 272); running
-`gate:full` once more anyway before continuing, given how much changed
-(font tooling, PDF workflow) since CI broke.
+Next: write up both KRTC pages, commit, then continue — TRA/THSR-adjacent
+systems content is getting saturated; KRTC and TYMC (both currently
+lines+stations only) are the next large, well-defined gap matching the
+brief's Parts 2-8 (fleet rosters, systems/operations).

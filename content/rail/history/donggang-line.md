@@ -31,10 +31,10 @@ facts:
   - label: Line's history formally ended
     value: July 2002, when the Air Force base at Dapeng Bay withdrew
     source: ntl-donggang-magazine
-specs:
   - label: Donggang Transit Center opened
     value: 7 January 2024
     source: ltn-donggang-transit-center
+specs:
   - label: Revival feasibility study budget (2016)
     value: NT$8.5 million
     source: ltn-donggang-revival-study

@@ -20,13 +20,13 @@ facts:
   - label: Yilan-Fenglin double-track restoration target
     value: noon, 4 April 2024
     source: cna-0403-restoration
+  - label: CWA-TRA disaster-resilience MOU signed
+    value: 30 September 2025
+    source: cna-cwa-tra-mou
 specs:
   - label: Interim North Link/South Link safety-improvement plan
     value: approximately NT$7.799 billion
     source: udn-north-link-safety-plan
-  - label: CWA-TRA disaster-resilience MOU signed
-    value: 30 September 2025
-    source: cna-cwa-tra-mou
 sources:
   - id: motc-bridge-seismic-code
     title: Railway Bridge Seismic Design Code (regulation index page)

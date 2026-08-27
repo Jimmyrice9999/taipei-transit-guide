@@ -21,15 +21,27 @@ import { buildSearchIndex } from '../lib/search-entries.ts'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = path.join(ROOT, 'public', 'data', 'search-index.json')
+const CHECK = process.argv.includes('--check')
 
 const index = buildSearchIndex()
+const output = JSON.stringify(index) + '\n'
 
-fs.mkdirSync(path.dirname(OUT), { recursive: true })
-fs.writeFileSync(OUT, JSON.stringify(index) + '\n')
+if (CHECK) {
+  const current = fs.existsSync(OUT) ? fs.readFileSync(OUT, 'utf8') : ''
+  if (current !== output) {
+    console.error('search: generated index is stale; run `npm run search` and commit public/data/search-index.json.')
+    process.exitCode = 1
+  } else {
+    console.log('search: generated index is current.')
+  }
+} else {
+  fs.mkdirSync(path.dirname(OUT), { recursive: true })
+  fs.writeFileSync(OUT, output)
 
-const bytes = fs.statSync(OUT).size
-const withZh = index.entries.filter((entry) => entry.z).length
-console.log(
-  `search: wrote public/data/search-index.json — ${index.entries.length} entries ` +
-    `(${withZh} with a Chinese name), ${(bytes / 1024).toFixed(0)} KB.`,
-)
+  const bytes = fs.statSync(OUT).size
+  const withZh = index.entries.filter((entry) => entry.z).length
+  console.log(
+    `search: wrote public/data/search-index.json — ${index.entries.length} entries ` +
+      `(${withZh} with a Chinese name), ${(bytes / 1024).toFixed(0)} KB.`,
+  )
+}

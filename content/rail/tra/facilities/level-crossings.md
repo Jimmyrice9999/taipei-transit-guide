@@ -17,13 +17,13 @@ facts:
   - label: Current safety-classification regulation in force since
     value: 15 June 1996
     source: law-moj-crossing-standards
+  - label: Taipei underground project, full through-running
+    value: 24 October 2011
+    source: zhwiki-tra-grade-separation
 specs:
   - label: Crossing types under the current regulation
     value: 4 (Type 1 staffed 24h to Type 4 signage-only)
     source: law-moj-crossing-standards
-  - label: Taipei underground project, full through-running
-    value: 24 October 2011
-    source: zhwiki-tra-grade-separation
 sources:
   - id: ettoday-crossing-count
     title: "TRA: 27 accidents over 3 years; MOTC drafts amendment to bar new level crossings"

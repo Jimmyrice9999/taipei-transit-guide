@@ -20,13 +20,13 @@ facts:
   - label: Ximen emergency station platform length
     value: 300 m
     source: ltn-emergency-stations
-specs:
   - label: Ximen emergency station stated evacuation target
     value: 5 minutes to ground level
     source: ltn-emergency-stations
   - label: Ximen shared with THSR as emergency facility since
     value: 5 January 2007
     source: zhwiki-ximen-emergency-station
+specs: []
 sources:
   - id: rb-2005-tunnel-fire-report
     title: "Research report: standards for fire-prevention/evacuation facilities and fire-safety equipment in railway tunnels and underground stations"

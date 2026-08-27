@@ -26,13 +26,13 @@ facts:
   - label: Heritage-tourism service resumed
     value: 5 June 2010 (Sanyi to old Taian, steam-hauled)
     source: culture-memory-bank-closure-reopening
-specs:
   - label: Tunnels and bridges, per the Tourism Administration/BOCH
     value: 8 tunnels, 3 bridges, 4 stations
     source: motc-tourism-old-mountain-line
   - label: Two 1938-replacement iron bridges designated county monuments
     value: 10 March 2019 (announced 11 March 2019)
     source: einfo-two-bridges-monument
+specs: []
 sources:
   - id: zhwiki-old-mountain-line
     title: Old Mountain Line
