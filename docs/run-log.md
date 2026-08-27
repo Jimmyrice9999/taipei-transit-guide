@@ -1,4 +1,78 @@
 
+## Run 276 - open KRTC systems coverage: signalling and rolling stock (2026-08-28)
+
+### Sourced
+
+Two `line-scout`s researched Kaohsiung Metro (KRTC) subjects concurrently —
+the first content beyond lines/stations for this operator.
+
+**Signalling.** An operator FAQ and the Gangshan–Luzhu extension's own
+engineering page (both read in full) confirm the Red and Orange Lines
+(open since 2008) run driver-operated on Siemens track-circuit
+interlockings: the extension is built by expanding the existing R22
+interlocking room to also cover new station RK1, not by overlaying a newer
+signalling generation. Siemens Mobility's own press release confirms the
+under-construction Yellow Line will be Kaohsiung's first driverless metro,
+running Trainguard MT CBTC at GoA4 across 22.8 km, 23 stations and 25
+trains — a genuinely different system, not the existing one upgraded.
+
+**Rolling stock.** No primary KRTC or government page stating the original
+fleet's size or manufacturer in prose was found; the widely-cited 42
+Siemens trainsets rest on two independently corroborating secondary
+sources only, flagged as such. A confirmed new order: a Hyundai
+Rotem/Singapore Technologies Electronics joint venture won the Gangshan–Luzhu
+extension's electromechanical contract, with 16 trainsets total (10 then 6
+more for the Xiaogang–Linyuan extension) explicitly stated compatible with
+the existing Siemens system. The Circular Light Rail's two rolling-stock
+generations (CAF, then Alstom) and the Yellow Line's Stadler-built trains
+are each sourced separately — a primary Bureau FAQ confirms the light
+rail's physical train configuration (5 cars, 250 passengers) without naming
+either manufacturer itself.
+
+### TBC and checked failures
+
+Neither the Siemens nor the Hyundai Rotem fleet has a confirmed model/series
+name. The Hyundai Rotem contract's value is unresolved (one figure found
+was internally arithmetically inconsistent — not published). Whether the
+Circular Light Rail's KRTC-operating relationship is stated in one explicit
+primary sentence was checked and not found; the site's existing framing is
+preserved but not re-asserted as freshly sourced. A KRTC 2006 internal
+newsletter, cited by Wikipedia as the underlying source for several
+manufacturer/date claims, could not be located online.
+
+### Contradicted the corpus
+
+Nothing existing was contradicted — `docs/research/rail/krtc.md` already
+listed fleet data and signalling as unaddressed TBC; this fills a
+previously-acknowledged gap.
+
+### Conflicts found
+
+Car body height: 3,750 mm (Wikipedia infobox, the only figure backed by a
+readable page) versus ~3,600 mm from a krtc.com.tw product page that
+returned a dead-resource error on direct fetch — not treated as a genuine
+two-source conflict, the second figure is not published. YM01 (Yellow Line
+E&M contract) evaluation-completion date: 17 August 2022 (a named Bureau
+official, quoted in fully-fetched coverage) versus 26 August 2022
+"formal award" (unverified search summary) — both recorded, may describe
+different procedural steps.
+
+### Gates
+
+A second font-tooling trap this session: `npm run fonts` used a stale
+`out/` still in "build" mode from an earlier run and silently missed 2 new
+characters (`掛`, `睽`) entirely, because build-mode trusts whatever
+rendered pages happen to be on disk. Deleted `out/` to force the safe
+source-scan fallback (unions every character into every subset — correct
+but bloats each to 693KB), then ran a full fresh rebuild afterward to
+restore the optimized per-page split (back to 25-180 KB pairs). Confirmed
+clean via `tests/build-output.test.mts`, `accessibility.test.mts`,
+`discoverability.test.mts`, `search.test.mts` and `markdown.test.mts`
+run directly against the fresh build (104 tests, all excluded from
+`gate:fast` as slow/build-dependent) — all pass. `npm run gate:fast` passed
+after fixing 2 uncited sentences. `npm run research` clean: 240 files, 1004
+checked-and-failed entries. `probes/` remains untracked.
+
 ## Run 275 - fix specs/facts misplacement; stale search index; harden fast gate again (2026-08-28)
 
 ### What happened
