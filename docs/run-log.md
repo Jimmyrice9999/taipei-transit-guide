@@ -1,3 +1,116 @@
+## Run 290 - Part 1: nested rail nav hierarchy, long-list filtering (2026-08-28)
+
+### What was wrong
+
+Audited the brief against the live nav (`lib/nav.ts`, `components/SiteNav.tsx`)
+before touching anything, since this brief warned it has been stale before.
+Confirmed the specific complaint: Rail's dropdown panel flattened
+system×type into one array of sibling groups — 8 systems (Metro, TRA, THSR,
+KRTC, TYMC, TMRT, Alishan, Cable) each contributing up to 6 type groups
+(Lines, Stations, Rolling stock, Depots, Technology, Facilities,
+Operations/Projects), plus 4 cross-system types (Operators, Projects,
+Technology, History) and Network — 30+ disclosures in one panel, ordered
+type-adjacent-to-type with no system grouping at all. Every other section
+(Bus, Bike, Ferry, Ticketing) has zero or one system, so the problem was
+Rail-specific and did not need a redesign of the whole nav model.
+
+### The fix: nest system inside section, type inside system
+
+`NavGroup` gained an optional `subgroups: NavGroup[]`. A section with more
+than one system (`nestSystems = systems.length > 1`, true only for Rail
+today) now builds one top-level group per system, each carrying its own
+types nested inside rather than flattened beside it. `SiteNav`'s
+`NavGroupView` was made recursive: a group with `subgroups` renders as a
+`<details>` disclosure whose body is a direct link to the system's own index
+plus a vertical stack of its type disclosures (reusing the existing leaf
+rendering unchanged) rather than the top-level grid. Metro's synthetic
+"Stations" entry (generated from the station registry, not a content folder)
+now nests into Metro's own subgroups instead of splicing into the
+section-level array. Every section that is not Rail is byte-for-byte
+unaffected — the branch is `nestSystems ? nested : flat`, and `nestSystems`
+is false everywhere else.
+
+Result: Rail's panel top level is now 13 entries (8 systems + 4 cross-system
+types + Network), each closed by default; opening a system reveals only its
+own types. SYSTEM before PAGE TYPE, three clicks or fewer to any page,
+nothing enumerated at any level past what fits a glance. Verified with
+fresh screenshots at 1440px and 320px (Rail closed, Metro expanded showing
+Lines/Rolling stock/Depots/Stations nested one level in) and with
+`npm run nav`, the project's existing Playwright keyboard/touch/hover-
+independence harness — all 19 checks pass, including two that already
+anticipated a nested category ("Tab reaches the first nested category",
+"Enter opens the nested category"), suggesting this shape was designed for
+even before it was built.
+
+### Audited every index page for the same problem
+
+`TypeIndex.tsx` is the shared component behind every rail-system type index
+and every flat section type index (bus operators, bike stations, etc.), so
+fixing it once fixes the pattern everywhere rather than page by page. TRA's
+station index is the standout offender: 242 published stations in one flat
+`<ul class="card-list">`. Reused the existing `RouteFilter` component
+(`components/RouteFilter.tsx`) already shipping on `/bus/routes/new-taipei/`
+(562 routes) rather than inventing a grouping scheme — it hides
+non-matching rows via `hidden` on real static `<a>`s, so the page is still a
+complete index with JavaScript off, and it already had the accessibility
+work done (`role="status"` live count, matches on title/aliases/slug, not
+on rendered summary text). Extended it to any `TypeIndex` list at or past
+the same 24-row threshold the bus pages use (`components/RouteFilter`'s
+`FILTER_THRESHOLD`, now `LIST_FILTER_THRESHOLD`). Now present on TRA
+stations (242), KRTC stations (78), bus operators (62) and bike stations
+(30); correctly absent on TYMC (22) and TMRT (19), both under the
+threshold. Not offered on the two photo-grid types (rolling stock, depots)
+— `PhotoCard` does not write `data-search`, and both are well under
+threshold anyway, so extending it there was not needed.
+
+Checked every other index-page route (`app/[section]/page.tsx`,
+`app/bus/routes/page.tsx`) for the same shape: the section landing page
+already leads with system cards (SYSTEM before PAGE TYPE, same principle
+applied to page content, not just the nav, and already correct); the bus
+route-group browser lists "under two dozen" stable groups, not a long tail.
+No further index page needed changing.
+
+### A real bug found while wiring this up
+
+The obvious refactor — export `LIST_FILTER_THRESHOLD` as a named constant
+from `components/RouteFilter.tsx` and import it into the two Server
+Components that needed it — silently broke both filters. `RouteFilter.tsx`
+is `'use client'`, and Next's RSC boundary replaces *every* export of a
+client module, not just its default component, with an opaque client
+reference when a Server Component imports it. `pages.length >=
+LIST_FILTER_THRESHOLD` became `242 >= {clientRef}`, which is always false,
+so `/bus/routes/new-taipei/`'s filter (562 routes) silently stopped
+rendering the moment the constant moved — a regression in already-shipped,
+previously-working code, caught only by grepping the built HTML's own RSC
+payload for a literal `false` where the filter box should have been. Fixed
+by moving the constant to a plain module (`lib/list-filter.ts`, no
+directive) that both the client component and the two server pages import
+directly. Documented in that file's own header comment so the failure mode
+does not get rediscovered the same way twice.
+
+### Gates
+
+`gate:fast` clean (107/107) after the initial nav change, again after the
+`LIST_FILTER_THRESHOLD` fix. `gate:full` run against a fresh build: 234/234
+tests, `facts` (17/17 cross-checks), clean — the pre-existing unknown-
+station-code warnings (KRTC Yellow Line's Y-codes, the Taichung Purple Line
+project page, the fare-stages conflicts index) are unrelated pre-existing
+warnings, not new. `npm run nav` (19/19) and `npm run verify:browser`
+(default mode) both clean. `probes/` (scratch Playwright scripts used to
+capture verification screenshots) remains untracked. `docs/browser-
+verification.json`, `docs/links-audit.json`, `docs/unused-audit.json` and
+the `docs/screenshots/`/`docs/print/` trees were regenerated by
+`verify:browser` and restored to their committed state rather than
+committed here — they were already stale against the current site (last
+refreshed at Run 90, long before most of the current page types existed),
+which is a pre-existing gap unrelated to this change; refreshing that
+baseline is deferred to the run-end VERIFY pass rather than bundled into
+an unrelated nav commit.
+
+### Next
+
+Part 1's audit is done. Moving to Part 2 (photos, visual landing pages).
+
 ## Run 289 - add TRA fare and ticket-type history (2026-08-28)
 
 ### Sourced

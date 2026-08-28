@@ -45,6 +45,19 @@ export type NavGroup = {
   truncated: boolean
   /** A large category points to its index rather than enumerating items here. */
   large?: boolean
+  /**
+   * A system's own page types, nested one level inside its own disclosure.
+   *
+   * Only set when a section has more than one system (today, only Rail: eight
+   * systems each with up to six types once stations are added — flattening
+   * system×type into one panel put 30-40 disclosures side by side, unscannable
+   * and in the wrong order (type before system). Nesting means the panel's top
+   * level lists systems, and opening one reveals what belongs to it — SYSTEM
+   * before PAGE TYPE, as asked. A system group with `subgroups` still carries
+   * `large: true` so SiteNav can fall back to a plain direct link if every
+   * subgroup turns out empty.
+   */
+  subgroups?: NavGroup[]
 }
 
 export type NavSection = {
@@ -117,19 +130,20 @@ export function getNavTree(): NavSection[] {
     const systems = getSystems(section.slug)
 
     /*
-     * A type inside a system carries the system's name in the menu when the
-     * section has more than one — "Metro lines" and, when Taiwan Railway
-     * arrives, "TRA lines". With one system the prefix would be noise, so it
-     * is not applied. Computed rather than typed, so the menu cannot end up
-     * with two groups both called "Lines".
+     * A section with more than one system nests each system's types inside
+     * that system's own disclosure (see NavGroup.subgroups) rather than
+     * flattening system×type into one panel — a type there already sits
+     * inside "TRA" or "KRTC", so prefixing its own title with the system name
+     * again would repeat what the disclosure it lives inside already says.
+     * A single-system section has no such disclosure to sit inside, so its
+     * type keeps a plain title too — there is only ever one system it could
+     * mean.
      */
-    const label = (systemTitle: string, typeTitle: string) =>
-      systems.length > 1 ? `${systemTitle} ${typeTitle.toLowerCase()}` : typeTitle
+    const nestSystems = systems.length > 1
 
     const typeGroup = (
       type: { slug: string; href: string; title: string },
       system: string,
-      systemTitle: string,
     ): NavGroup => {
       const pages = getPages(section.slug, type.slug, system)
       const ordered =
@@ -144,7 +158,7 @@ export function getNavTree(): NavSection[] {
           : pages
       return {
         href: type.href,
-        title: system ? label(systemTitle, type.title) : type.title,
+        title: type.title,
         links: ordered.slice(0, CAP).map((page) => {
           const line =
             LINES.find((l) => l.key === lineKey(page.operator || '', page.line)) ??
@@ -168,29 +182,44 @@ export function getNavTree(): NavSection[] {
       }
     }
 
-    const groups: NavGroup[] = [
-      /*
-       * Each system gets a direct link of its own before its types. A system
-       * page is a real destination — the top of one railway — and without this
-       * the only way into it from the bar would be to open a type index and
-       * come back up.
-       */
-      ...systems.flatMap((system) => [
-        { href: system.href, title: system.title, links: [], truncated: false, large: true },
-        ...getTypes(section.slug, system.slug).map((type) =>
-          typeGroup(type, system.slug, system.title),
-        ),
-      ]),
-      ...getTypes(section.slug).map((type) => typeGroup(type, '', '')),
-    ]
-      /*
-       * A type folder with no pages does not go in the menu. Run 10's brief:
-       * a nav item leading to "0 pages" advertises absence. The folder still
-       * exists and its index still renders for anyone holding the URL — it is
-       * removed from the menu, not from the site. A system's own direct link
-       * is `large` and keeps its place regardless.
-       */
-      .filter((group) => group.large || group.links.length > 0)
+    /*
+     * A type folder with no pages does not go in the menu. Run 10's brief: a
+     * nav item leading to "0 pages" advertises absence. The folder still
+     * exists and its index still renders for anyone holding the URL — it is
+     * removed from the menu, not from the site.
+     */
+    const nonEmpty = (group: NavGroup) => group.large || group.links.length > 0
+
+    const groups: NavGroup[] = nestSystems
+      ? [
+          /*
+           * One entry per system, each carrying its own types nested inside
+           * — SYSTEM before PAGE TYPE, and the panel's top level stays a
+           * short list of systems (eight, for Rail) instead of every
+           * system's every type laid out side by side (30-40 groups before
+           * this). `large: true` is kept on the system itself so SiteNav
+           * falls back to a plain direct link if a system's types all turn
+           * out empty, the same fallback a leaf group already had.
+           */
+          ...systems.map((system) => ({
+            href: system.href,
+            title: system.title,
+            links: [],
+            truncated: false,
+            large: true,
+            subgroups: getTypes(section.slug, system.slug)
+              .map((type) => typeGroup(type, system.slug))
+              .filter(nonEmpty),
+          })),
+          ...getTypes(section.slug).map((type) => typeGroup(type, '')).filter(nonEmpty),
+        ]
+      : [
+          ...systems.flatMap((system) => [
+            { href: system.href, title: system.title, links: [], truncated: false, large: true },
+            ...getTypes(section.slug, system.slug).map((type) => typeGroup(type, system.slug)),
+          ]),
+          ...getTypes(section.slug).map((type) => typeGroup(type, '')),
+        ].filter(nonEmpty)
 
     return { href: section.href, title: section.title, groups }
   })
@@ -213,17 +242,16 @@ export function getNavTree(): NavSection[] {
        */
       const STATION_CAP = 6
       /*
-       * Placed with the rest of the metro's types rather than appended after
-       * everything, so the panel reads down the hierarchy: the system, then
-       * what belongs to it, then the section-level groups. Found by position
-       * rather than by index so it stays right if the metro gains a type.
+       * Nested into the metro system's own subgroups rather than appended to
+       * the section-level panel, so it reads as one of the metro's types
+       * (Lines, Rolling stock, Depots, Stations) rather than a ninth item
+       * bolted on beside eight unrelated systems. Titled plainly — "Metro"
+       * is already the disclosure it lives inside.
        */
-      const afterMetro = rail.groups.findLastIndex((group) =>
-        group.href.startsWith('/rail/metro/'),
-      )
-      rail.groups.splice(afterMetro + 1, 0, {
+      const metro = rail.groups.find((group) => group.href === '/rail/metro/')
+      metro?.subgroups?.push({
         href: '/rail/metro/stations/',
-        title: 'Metro stations',
+        title: 'Stations',
         links: [],
         truncated: withPages.length > STATION_CAP,
         large: true,

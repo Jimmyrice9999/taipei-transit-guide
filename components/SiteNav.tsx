@@ -19,6 +19,35 @@ function isInSection(pathname: string, href: string) {
 }
 
 function NavGroupView({ group }: { group: NavGroup }) {
+  // A system nested one level inside a section (Rail's eight systems): its
+  // own disclosure, opening onto its types rather than the type's own links
+  // — SYSTEM before PAGE TYPE. Checked first because a system still carries
+  // `large: true` as a fallback for the case right below, and that fallback
+  // must not pre-empt a system that actually has something nested inside it.
+  if (group.subgroups && group.subgroups.length > 0) {
+    return (
+      <details className="nav-submenu nav-system">
+        <summary>
+          <span>{group.title}</span>
+          <span className="nav-submenu-caret" aria-hidden="true" />
+        </summary>
+        <div className="nav-submenu-body">
+          <Link className="nav-group-index" href={group.href}>
+            Open {group.title.toLowerCase()}
+            <span aria-hidden="true"> →</span>
+          </Link>
+          <div className="nav-subgroups">
+            {group.subgroups.map((sub) => (
+              <div className="nav-group nav-subgroup" key={sub.href}>
+                <NavGroupView group={sub} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </details>
+    )
+  }
+
   // A disclosure that opens to reveal exactly one link costs a click and
   // reveals nothing a direct link wouldn't — the same shape as Stations and
   // Network already get. `<= 1` rather than `=== 0` so a group with a single

@@ -17,6 +17,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import HanContentSubset from '@/components/HanContentSubset'
 import References from '@/components/References'
+import RouteFilter from '@/components/RouteFilter'
+import { LIST_FILTER_THRESHOLD } from '@/lib/list-filter'
 import TableOfContents from '@/components/TableOfContents'
 import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
@@ -156,7 +158,7 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
         control, and having one is a way for the page to be wrong.
       */}
       {pages.length === 0 ? null : (
-        <section className="index-section">
+        <section className="index-section" data-route-filter={photoGrid ? undefined : ''}>
           {/*
             No heading. The disclosure this replaced needed one for its summary,
             but the `<h1>` two lines up already says "Lines" — repeating it as an
@@ -166,6 +168,21 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
           <p className="index-count">
             {pages.length} {pages.length === 1 ? 'entry' : 'entries'}
           </p>
+          {/*
+            A type index can run past 200 entries — TRA's station index is 243
+            rows in a single flat list, the same "long flat list" problem the
+            nav redesign fixed at the dropdown level. Reuses the exact filter
+            the bus route groups already ship (components/RouteFilter) rather
+            than inventing a second one: it hides non-matching rows via
+            `hidden` on real static `<a>`s, so the list stays a complete index
+            with JavaScript off. Not offered on a photo grid — the photo-card
+            layout does not write `data-search` onto its rows (see PhotoCard),
+            and every photo-grid type on the site (rolling stock, depots) is
+            well under the threshold anyway.
+          */}
+          {!photoGrid && pages.length >= LIST_FILTER_THRESHOLD && (
+            <RouteFilter total={pages.length} noun={typeMeta.title.toLowerCase()} />
+          )}
           <div>
             {photoGrid ? (
         /*
@@ -209,6 +226,11 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
               line={page.line}
               operator={page.operator || undefined}
               entityKind={entityKind}
+              /* Same three keys the global search index and the bus route
+                 filter both match on: the title, any alternate names, and the
+                 slug — not the rendered summary, which can carry an unrelated
+                 number (a county, a sequence) that would produce false hits. */
+              search={[page.title, ...page.aliases, page.slug].join(' ')}
               /*
                * The icon is the line's own train, so it belongs on rows whose
                * subject IS a line. A fleet or a depot row gets the badge and

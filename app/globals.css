@@ -692,6 +692,43 @@ th > .badge:only-child {
 }
 
 /*
+ * A system's own types, nested one level inside its disclosure (Rail's eight
+ * systems today — see the note on NavGroup.subgroups). A vertical stack, not
+ * the top level's grid: `.nav-group`'s 158px `min-width` is sized for a
+ * column in a multi-column panel, and reusing it inside an already-narrower
+ * nested body would force the panel wider than the outer grid intends. The
+ * left border is the nesting cue — indentation alone reads as a stray gap at
+ * a glance, the same reasoning the mobile `.nav-submenu-body` rule below
+ * already used for the outer level.
+ */
+.nav-subgroups {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.nav-subgroup {
+  min-width: 0;
+}
+
+/*
+ * A touch-sized 44px row (the mobile rule further down) is still correct on
+ * a nested row — narrower does not mean smaller target. This shrink is
+ * desktop-only, where the row is a mouse target and the extra indent level
+ * makes the panel taller than a hover menu should be.
+ */
+@media (min-width: 781px) {
+  .nav-subgroup .nav-submenu > summary,
+  .nav-subgroup .nav-group-direct {
+    font-size: 10px;
+    min-height: 28px;
+  }
+}
+
+/*
  * ── Run 51: the panel is an overlay at EVERY width ──────────────────────────
  *
  * Below 780 this used to set `position: static; order: 99; flex-basis: 100%`,

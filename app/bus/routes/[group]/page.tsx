@@ -6,6 +6,7 @@ import BackLink from '@/components/BackLink'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import CardRow from '@/components/CardRow'
 import RouteFilter from '@/components/RouteFilter'
+import { LIST_FILTER_THRESHOLD } from '@/lib/list-filter'
 import HanContentSubset from '@/components/HanContentSubset'
 import PageShell from '@/components/PageShell'
 import References from '@/components/References'
@@ -19,16 +20,6 @@ import { getAccent } from '@/lib/lines'
 type Props = { params: Promise<{ group: string }> }
 
 export const dynamicParams = false
-
-/*
- * Above this many routes a group gets its own filter box.
- *
- * Twenty is the size of the brown-line feeder group, which fits on one screen
- * at desktop width and does not need one; New Taipei's 562 plainly does. The
- * number is a judgement about when a list stops being scannable, not a
- * measurement, and it is here rather than inline so it is one decision.
- */
-const FILTER_THRESHOLD = 24
 
 function hasOverlay(group: string, slug: string) {
   return fs.existsSync(path.join(process.cwd(), 'content', 'bus', 'routes', group, `${slug}.md`))
@@ -95,7 +86,7 @@ export default async function BusRouteGroupPage({ params }: Props) {
         in components/RouteFilter for why it works that way round.
       */}
       <div data-route-filter="">
-      {routes.length >= FILTER_THRESHOLD && <RouteFilter total={routes.length} />}
+      {routes.length >= LIST_FILTER_THRESHOLD && <RouteFilter total={routes.length} />}
       {group === 'new-taipei' ? (
         <div className="bus-subgroups">
           {subgroups.map((subgroup, index) => (
