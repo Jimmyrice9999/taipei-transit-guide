@@ -1,26 +1,27 @@
 # For Jamie
 
-## Active handoff - Run 299 - 28 August 2026 - long autonomous brief in progress
+## Active handoff - Run 300 - 28 August 2026 - long autonomous brief in progress
 
-Parts 1-2 done (290-291). Part 3's per-operator content-gap sweep: TYMC
-(293), TRA entries (292, 297), ferries (294), THSR (295), Taipei Metro
-(296), TMRT (298), Alishan Forest Railway (299) - rolling stock and a
-full ridership decade, the last gap this pass's audit found. Cable/
-Maokong checked too and found already well-covered inline.
+Parts 1-2 done (290-291). Part 3's per-operator content sweep closed:
+TYMC (293), TRA entries (292, 297), ferries (294), THSR (295), Taipei
+Metro (296), TMRT (298), Alishan (299) - each a confirmed empty-category
+gap, closed with real primary sourcing.
 
-Run 299 caught a Wikipedia citation that doesn't hold up (a train's
-claimed launch date, sourced to a CNA article that on fetch doesn't
-mention the train) and surfaced a real conflict with the site's own
-earlier content - two operator pages giving different years for the
-same repairs. Neither overwritten; both published as a stated conflict.
+Run 300: audited every `status: planned` marker site-wide (5 found).
+Four were stale - the described work already existed, just wasn't
+linked or the flag never got cleared. Fixed those. The fifth
+(bike/generations) is genuinely open, but its content mostly already
+lives inside youbike.md - writing separate pages now would mostly
+duplicate it, so I left it flagged rather than force duplicate work.
 
-Now twice: a scout flags a primary PDF its own tools can't read;
-fetching it directly with curl/pdftotext in the main session unlocks it
-- this time, ten years of ridership no operator page states as one
-number anywhere.
+Two catches worth attention from Runs 298-299: a research brief's own
+hypothesis (a depot location) was wrong and caught before publishing;
+a Wikipedia citation (a train's launch date) didn't hold up against its
+own source, verified directly. Also twice now: a scout flags a primary
+PDF its tools can't read, and fetching it directly with curl/pdftotext
+in the main session unlocks real data.
 
 Process notes: a read-only fork once ignored "no write/commit/push".
-`gate:full` runs every 10th commit (44% faster after a fix) - this is
-commit 5 of 10 since the last one.
+`gate:full` runs every 10th commit - this is commit 6 of 10.
 
-Detail in docs/run-log.md Runs 290-299.
+Detail in docs/run-log.md Runs 290-300.

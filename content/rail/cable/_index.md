@@ -3,7 +3,6 @@ title: Cable
 kind: system
 description: The Maokong Gondola — an aerial ropeway run by a TRTC subsidiary, and the region's only cable transit.
 order: 2
-status: planned
 hero:
   image: gondola/station
   alt: Maokong Station, the gondola's hilltop terminus, its long sloping roof set among wooded tea-plantation hillside, with a support tower and a cabin to the right.
@@ -23,7 +22,7 @@ affiliation, shared ticketing, and a genuine engineering and incident history
 that English coverage — which is entirely tourist-oriented — has not touched.
 The story worth telling is the long typhoon closure: a tower foundation
 undermined, a multi-institute engineering assessment, and a reopening under
-monitoring. That is the kind of material this site exists for, and it will be
+monitoring. That is the kind of material this site exists for, and it is
 written against the city's own engineering publications rather than travel
 blogs.
 

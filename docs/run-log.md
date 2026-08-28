@@ -1,3 +1,49 @@
+## Run 300 - a "planned" marker audit, and one manufactured-work trap avoided (2026-08-28)
+
+After Run 299 closed the last confirmed empty-category gap in rail, I
+looked for a second signal beyond "folder doesn't exist": `status:
+planned` on category `_index.md` files, a marker meant to flag genuinely
+pending work. Five files carried it. Checked each against its own actual
+directory contents before touching anything:
+
+- `content/rail/cable/_index.md` (Maokong Gondola) — its own body text
+  described the T16 typhoon-closure story as "will be written," but the
+  linked line page already covers exactly that (Control Yuan
+  investigation, multi-institute assessment, tower relocation) in full,
+  and even the same _index.md's own next paragraph already links to it.
+  Stale. Flag removed; the self-contradictory "will be written" line
+  fixed to match what's actually there.
+- `content/rail/technology/_index.md` — 12 substantive subpages already
+  exist (automation grades, control centres, electrification, signalling
+  generations, etc.); the index page just never linked them. Stale flag
+  removed, subpages named in the body.
+- `content/rail/tra/facilities/_index.md` — already has both
+  accessibility-and-facilities.md and level-crossings.md. Stale, removed.
+- `content/bike/history/_index.md` — the youbike.md page it describes
+  (pilot, expansion, 2.0 launch, retirement) already runs to 4,191 words
+  and covers all of it, including the dock-incompatibility engineering
+  detail. Stale, removed; the page now links to it.
+- `content/bike/generations/_index.md` — the one genuine case: no
+  generation-specific pages exist. But checked the content that *does*
+  exist first, and found the youbike.md history page already covers the
+  1.0/2.0/2.0E dock-incompatibility and mains-power story in real depth,
+  including the unverified China-market (Putian) variant flagged as such.
+  A literal split into separate generation pages right now would mostly
+  duplicate that existing, well-sourced material rather than add new
+  coverage. Left as `planned` — a genuine future call, not something to
+  force into existence for the sake of clearing a flag. Recorded here so
+  a future run doesn't rediscover this and write the duplicate anyway.
+
+This is the useful complement to the pattern that's driven the last five
+runs: not every apparent gap is one. Checking before writing is what kept
+four stale flags from being cleared without correction, and kept one
+genuine flag from turning into wasted, duplicate work.
+
+### Gates
+
+`gate:fast` clean (107/107). No content claims changed meaning, no new
+Han characters. `gate:full` not run this commit (6th since Run 294).
+
 ## Run 299 - Alishan Forest Railway's rolling stock and a decade of ridership (2026-08-28)
 
 ### The last gap this pass's audit found: two whole missing categories

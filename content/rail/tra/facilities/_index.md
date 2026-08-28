@@ -2,7 +2,6 @@
 title: Facilities
 description: Taiwan Railways accessibility and station-facility records.
 order: 2
-status: planned
 sources:
   - id: tra-accessibility-plan
     title: "TRA accessibility facilities and service improvement plan"
