@@ -16,6 +16,7 @@ import type { MetadataRoute } from 'next'
 import { getAllPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getLineStations, LINES_WITH_STATION_PAGES, PROVENANCE } from '@/lib/stations'
 import { absoluteUrl } from '@/lib/site'
+import { REGIONS } from '@/lib/regions'
 
 export const dynamic = 'force-static'
 
@@ -76,6 +77,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
+    {
+      url: absoluteUrl('/regions/'),
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    ...REGIONS.map((region) => ({
+      url: absoluteUrl(`/regions/${region.slug}/`),
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
     {
       url: absoluteUrl('/data/'),
       lastModified: now,

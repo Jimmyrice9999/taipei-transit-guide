@@ -320,6 +320,11 @@ const PAGE_TYPES = [
   { name: 'data-comparisons', url: '/data/comparisons/' },
   { name: 'data-changelog', url: '/data/changelog/' },
   { name: 'about', url: '/about/' },
+  /* Run 303, Part 2b: the geography index. 'regions' is the index over every
+     mode; 'region-detail' exercises a card list with a "Not yet on this
+     site" gaps section, which 'regions' itself does not have. */
+  { name: 'regions', url: '/regions/' },
+  { name: 'region-detail', url: '/regions/taichung/' },
   { name: '404', url: '/no/such/page/' },
 ]
 

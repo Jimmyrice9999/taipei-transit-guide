@@ -267,7 +267,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* Data is an explicit nav item, not a content folder: it is
                 generated from the TDX records rather than written in Markdown,
                 so it has no submenu and is passed separately. */}
-            <SiteNav sections={navTree} extra={[{ href: '/data/', title: 'Data' }]} />
+            <SiteNav
+              sections={navTree}
+              extra={[
+                { href: '/regions/', title: 'Regions' },
+                { href: '/data/', title: 'Data' },
+              ]}
+            />
             {/* Last in the bar and last in the tab order: the sections are the
                 primary navigation and search is the shortcut past them. */}
             <SiteSearch />
