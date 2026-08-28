@@ -1,14 +1,17 @@
 ---
-title: "Taoyuan Green Line stations"
-description: "Primary-research station records for the under-construction Taoyuan Green Line."
-updated: 2026-08-24
+title: "Taoyuan Metro stations"
+description: "22 current Airport MRT stations (TDX-backed) and 21 under-construction Green Line stations (primary-research project records) — two different data states, kept visibly distinct."
+updated: 2026-08-28
 facts:
-  - label: "Records"
+  - label: "Airport MRT stations (current, operating)"
+    value: "22 stations, A1-A22"
+    source: tdx-tymc-green-check
+  - label: "Green Line stations (project registry)"
     value: "21 stations"
     source: dorts-green
 specs:
   - label: "Coordinates"
-    value: "TBC"
+    value: "TBC for Green Line; TDX-backed for Airport MRT"
   - label: "Ridership"
     value: "TBC"
 sources:
@@ -31,14 +34,14 @@ sources:
     lang: zh-Hant
     note: "Live probe retrieved on 2026-08-24: the TYMC Line endpoint returned one A record and no G record; the project registry therefore remains primary-research rather than TDX-backed."
 ---
-## Station records
+## Two different data states, in one folder
 
-These records follow the Taoyuan engineering bureau’s current Green Line station table: G01–G15, G15a, G15b and G16–G19.[^dorts-green] The table publishes locations, elevated or underground form and selected future transfer notes; G02 remains provisional and G16–G19 remain unnamed in that source.[^dorts-green]
+This folder holds two genuinely different kinds of record, and the difference matters more than the fact that both are called "stations." The 22 Airport MRT stations (A1–A22) are the current, operating line: TDX-backed for code, address, coordinates and sequence, with prose built from the Railway Bureau's own station-architecture report and TYMC's own per-station pages.[^tdx-tymc-green-check] The 21 Green Line stations (G01–G19, plus G15a and G15b) are project records for a line that has not opened: they follow the Taoyuan engineering bureau's current Green Line station table, which publishes locations, elevated-or-underground form and selected future transfer notes, but G02 remains provisional and G16–G19 remain unnamed even in that source.[^dorts-green]
 
 ## Data boundary
 
-The live TYMC TDX check returned Airport MRT operating records but no Green Line station or route dataset.[^tdx-tymc-green-check] Coordinates, entrances, accessibility, fares, opening dates and ridership are therefore TBC on these pages. A project station code is not silently upgraded into a live station record.[^dorts-green][^tdx-tymc-green-check]
+The live TYMC TDX check that established this split returned Airport MRT operating records but no Green Line station or route dataset.[^tdx-tymc-green-check] Coordinates, entrances, accessibility, fares, opening dates and ridership are therefore TBC on the Green Line pages specifically — not on the Airport MRT pages, which draw those fields from TDX and the operator directly. A project station code is not silently upgraded into a live station record.[^dorts-green][^tdx-tymc-green-check]
 
 ## Source boundary
 
-The station pages link back to the full project table so readers can distinguish what is planned from what is currently operated.[^dorts-green][^tdx-tymc-green-check]
+Every page in this folder states which of the two kinds it is in its own opening paragraph, and the Green Line pages link back to the full project table so a reader can distinguish what is planned from what is currently operated.[^dorts-green][^tdx-tymc-green-check]
