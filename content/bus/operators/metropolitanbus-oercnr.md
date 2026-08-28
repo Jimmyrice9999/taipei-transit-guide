@@ -120,6 +120,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports named Metropolitan Bus sites and published municipal land areas or lease calculations; it does not provide depot opening dates or vehicle capacity.
+  - id: dot-history
+    title: Organisational history
+    titleOriginal: 臺北市政府交通局-史沿革
+    publisher: Taipei City Department of Transportation (臺北市政府交通局)
+    url: https://www.dot.gov.taipei/cp.aspx?n=9CB8E3F779E6F103
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports, from a different city body and different wording than the PTO history above, that the former Bus Administration was abolished on 1 January 2004 to implement the privatisation policy, and that it already existed by May 1973.
+  - id: ltn-2010-ownership
+    title: Capital Bus takes over Metropolitan Bus, becoming the dominant group by scale
+    titleOriginal: 首都入主大都會客運 集團規模稱霸
+    publisher: Liberty Times (自由時報)
+    url: https://news.ltn.com.tw/news/local/paper/454049
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Supports Capital Bus chairman 李博文 taking board control in December 2010 through combined shareholdings, and independently corroborates the city's 38% stake seven years after privatisation.
+  - id: gvm-2004-privatization
+    title: Metropolitan Bus drives out with new momentum for a "quiet revolution"
+    titleOriginal: 大都會客運 駛出『寧靜革命』新動能
+    publisher: Global Views Monthly (遠見雜誌), issue 219
+    url: https://www.gvm.com.tw/article/9690
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Supports pre-privatisation loss figures, the early-retirement cost, and post-privatisation revenue/profit change; a single-outlet magazine account, not cross-checked against a primary financial audit.
   - id: ttsb-metropolitan-incident
     title: Metropolitan electric-bus fire incident record
     titleOriginal: 1140616大都會客運電動公車於臺北市松山區敦化北路往北起火事故
@@ -182,6 +209,8 @@ This page is the NewTaipei member of the committed MetropolitanBus TDX records a
 ## Company history and ownership evidence
 
 The underlying legal company is 大都會汽車客運股份有限公司. MOEA records registration on 16 December 2003 at 港墘路3號1樓 with 李博文 as representative [^moea-metropolitan]. Taipei PTO dates the former Taipei Municipal Bus Administration’s privatization and renaming as Metropolitan Bus to 1 January 2004 [^taipei-pto-history]. Taipei DOT’s transition account says the city’s vehicle contribution represented 38% of shares and former employees held the other 62% [^dot-metropolitan-privatization]. These records establish the handover mechanism, but the checked primary material does not publish a current statutory parent, merger chronology or route-contract history [^moea-metropolitan][^dot-metropolitan-privatization].
+
+A separate Department of Transportation institutional-history page independently corroborates the 1 January 2004 date, in different terms and from a different city body: it records the Bus Administration abolished on that date "為提升公車營運效率及執行民營化政策" (to improve bus operating efficiency and implement the privatisation policy), and establishes the Bus Administration already existed by May 1973 [^dot-history]. Ownership changed hands within the private company afterward: in December 2010, Capital Bus (首都客運) chairman 李博文 took board control of Metropolitan Bus through combined shareholdings, with contemporary reporting stating the city still held 38% at that point [^ltn-2010-ownership]. A September 2004 magazine feature gives financial background not found in any government primary checked — a pre-privatisation daily operating loss of roughly NT$5 million, cumulative losses exceeding NT$13.8 billion, and a roughly 35% post-privatisation rise in monthly revenue — resting on a single magazine account, not a primary financial audit [^gvm-2004-privatization].
 
 ## New Taipei service, facilities and fleet evidence
 

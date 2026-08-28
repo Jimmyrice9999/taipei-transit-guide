@@ -129,6 +129,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the 16 June 2025 Route 262 fire, location, vehicle destruction, evacuation and no-injury record.
+  - id: dot-history
+    title: Organisational history
+    titleOriginal: 臺北市政府交通局-史沿革
+    publisher: Taipei City Department of Transportation (臺北市政府交通局)
+    url: https://www.dot.gov.taipei/cp.aspx?n=9CB8E3F779E6F103
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports, from a different city body and different wording than the PTO history above, that the former Bus Administration was abolished on 1 January 2004 to implement the privatisation policy, and that it already existed by May 1973.
+  - id: ltn-2010-ownership
+    title: Capital Bus takes over Metropolitan Bus, becoming the dominant group by scale
+    titleOriginal: 首都入主大都會客運 集團規模稱霸
+    publisher: Liberty Times (自由時報)
+    url: https://news.ltn.com.tw/news/local/paper/454049
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Supports Capital Bus chairman 李博文 taking board control in December 2010 through combined shareholdings, and independently corroborates the city's 38% stake seven years after privatisation.
+  - id: gvm-2004-privatization
+    title: Metropolitan Bus drives out with new momentum for a "quiet revolution"
+    titleOriginal: 大都會客運 駛出『寧靜革命』新動能
+    publisher: Global Views Monthly (遠見雜誌), issue 219
+    url: https://www.gvm.com.tw/article/9690
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Supports pre-privatisation loss figures, the early-retirement cost, and post-privatisation revenue/profit change; a single-outlet magazine account, not cross-checked against a primary financial audit.
   - id: ttsb-metropolitan-vehicle
     title: Preliminary report and vehicle facts for the Metropolitan electric-bus occurrence
     titleOriginal: 重大公路事故調查初步報告；1140616大都會客運電動公車於臺北市松山區敦化北路往北起火事故事實資料報告
@@ -180,6 +207,10 @@ This is a data record, not a claim that every TDX record with the same company n
 The Ministry of Economic Affairs record identifies this legal company as 大都會汽車客運股份有限公司, with English charter name Metropolitan Transport Corporation, representative 李博文, registered address at 港墘路3號1樓 and registration date 16 December 2003 [^moea-metropolitan]. Taipei’s transport-history page dates the operational transition differently: the former Taipei Municipal Bus Administration became a private-company organization and was renamed Metropolitan Bus on 1 January 2004 [^taipei-pto-history]. The two dates are retained because company registration and the service handover are different events [^moea-metropolitan][^taipei-pto-history].
 
 Taipei DOT’s contemporary explanation describes the ownership arrangement at that transition: the city contributed former bus-division vehicles for 38% of the shares, while former employees collectively supplied the remaining 62% [^dot-metropolitan-privatization]. The same source describes the city’s five public representatives and its oversight of public-share interests; it does not establish a current statutory parent or a later merger chain [^dot-metropolitan-privatization]. A complete legal parent and merger history is therefore TBC rather than inferred from the public group label used by later safety releases.
+
+A separate Department of Transportation institutional-history page independently corroborates the 1 January 2004 date, from a different city body and in different terms: it records the Bus Administration abolished on that date "為提升公車營運效率及執行民營化政策" (to improve bus operating efficiency and implement the privatisation policy), and establishes the Bus Administration already existed by May 1973, transferred into the newly created Department of Transportation from the city's Construction Bureau at that time [^dot-history]. It gives no founding date of its own for the Bus Administration.
+
+Ownership changed hands within the private company after privatisation. In December 2010, Capital Bus (首都客運) chairman 李博文 took board control of Metropolitan Bus through combined shareholdings via Capital Bus and Taipei Bus; contemporary reporting states the city still held 38% at that point, seven years after privatisation, and had held the chairmanship through government-appointed representatives up to then [^ltn-2010-ownership]. A September 2004 magazine feature, published shortly after privatisation, gives financial background not found in any government primary checked for this page: a pre-privatisation daily operating loss of roughly NT$5 million, a 2001 single-year loss of NT$1.95 billion, cumulative losses exceeding NT$13.8 billion, a government-funded early-retirement cost of NT$4.5 billion, personnel cost equal to 1.2× total revenue, and roughly 2,000 employees near retirement age at the transition; after privatisation it reports a roughly 35% rise in monthly revenue and a first-half pre-tax profit of about NT$13 million [^gvm-2004-privatization]. These figures rest on a single magazine account and are not cross-checked against a primary financial audit.
 
 ## Fleet, facilities and oversight
 

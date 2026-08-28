@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26789,
+    "sourced": 26795,
     "tbc": 4606,
     "asserted": 0,
     "meta": 86
@@ -570,16 +570,16 @@
     },
     {
       "file": "content/bus/operators/metropolitanbus-h3iwov.md",
-      "sources": 12,
-      "sourced": 26,
+      "sources": 15,
+      "sourced": 29,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/metropolitanbus-oercnr.md",
-      "sources": 12,
-      "sourced": 29,
+      "sources": 15,
+      "sourced": 32,
       "tbc": 5,
       "asserted": 0,
       "meta": 0
