@@ -124,13 +124,218 @@ within its own boundary, but this is inference, not a sourced claim.
   installed, and this pass had no Bash access to attempt the documented
   `pdftotext` workaround. Checked 2026-08-28.
 
+## Beyond Taipei and New Taipei
+
+Research pass, 28 August 2026 (Run 303). Every city checked below runs a
+parallel scheme; none of the corpus's earlier files mentioned any of them,
+so nothing here corrects a prior claim — this is new territory.
+
+### Taoyuan — confirmed running, current dispute in progress
+
+臺灣桃園市政府交通局 outsources a "桃園市轄市區公車服務品質評鑑" by competitive
+tender. Source: 桃園市政府交通局 press release, "公車服務品質評鑑標案依法辦理，
+公車動態資訊準點性已逐漸改善", https://traffic.tycg.gov.tw/businessD/post/upt.aspx?p0=106055,
+115/05/13 (13 May 2026), PRIMARY, High (fetched via reader proxy against
+the live government page after direct fetch was refused by the domain —
+this is still a full-page primary fetch, not a snippet). Quoted: "自112年
+起，改由智晟公司承攬本市評鑑案件"; "公車發車準點率已由80%提升至95%"; "站點觸發率
+亦由93.3%提升至99.6%"; "桃園市市區公車每年約有136萬班次營運." The prior
+contractor, 輿智公司, "曾於110-111年承攬評鑑案，後因違反政府採購法而停權3年" —
+independently corroborated by a directly-fetched secondary news source
+(LIFE生活網, https://life.tw/article/...-3123031) naming the same scheme
+and the same blacklisting.
+
+A second primary release, https://traffic.tycg.gov.tw/businessD/post/upt.aspx?p0=106113,
+115/07/05, PRIMARY, High, confirms an active public dispute: a city
+councillor accused the Bureau of withholding evaluation data; the Bureau's
+rebuttal states reports were supplied 4 and 16 June 2026. **The 95%
+punctuality figure the Bureau cites is itself the subject of public
+dispute in the same month** — a UDN piece (found via search, not
+independently fetched this pass) is titled "桃園公車95％準點率民眾無感." This
+is recorded as a contested-interpretation flag, not resolved either way.
+
+Two historical rounds (106年度/2017, 110年度/2021) were named by title in
+search results with specific 優等/甲等 operator lists and category counts,
+but **the archived announcement pages no longer resolve on the live CMS**
+(both `p0=72627` and `p0=94713&cid2=611` now redirect to the current 2026
+announcement index) and could not be independently fetched by any method
+tried, including a reader-proxy fetch and an attempted Wayback Machine
+fallback (refused by the fetch tool). **These historical grade lists are
+NOT published as sourced fact** — they exist only as unfetched
+search-summary text and must not be cited without a working fetch.
+
+### Taichung — confirmed running since at least 2015, current legal basis 2019
+
+《臺中市市區汽車客運營運與服務評鑑執行要點》, promulgated 22 February 2019
+(民國108年2月22日), most recently amended 19 March 2026. Source: 臺中市政府
+regulations system, https://law.taichung.gov.tw/LawContent.aspx?id=GL003594,
+PRIMARY, High (full article text quoted directly). Legal basis: "依「大眾
+運輸營運與服務評鑑辦法第四條規定」訂定." Grading scale, Article 7, identical
+five-tier structure to Taipei's: "優等：九十分以上。甲等：八十分以上，未滿九十
+分。乙等：七十分以上，未滿八十分。丙等：六十分以上，未滿七十分。丁等：未滿六十分。"
+Five evaluation categories named in Article 4 (percentage weightings not
+stated in the article text itself): "場站設施與服務、運輸工具設備與安全、旅客
+服務品質與駕駛員管理、無障礙之場站設施、服務、運輸工具設備與安全及公司經營與管理".
+
+A **predecessor legal instrument** existed from 3 August 2005
+(《臺中市市區汽車客運營運及服務評鑑審議委員會設置要點(改制前)》) and was abolished
+25 December 2010, the date of the Taichung City/County merger. Source:
+https://law.taichung.gov.tw/LawContent.aspx?id=FL036651, PRIMARY, High.
+
+**A genuine gap, not resolved**: published annual evaluation reports exist
+back to 104年度 (2015) — https://www.traffic.taichung.gov.tw/form/index.asp?Parser=2,8,602,358,
+PRIMARY, High, ten report titles listed — which predates the 2019
+執行要點 by four years. No source found bridges what legal basis governed
+evaluation between the 2010 abolition and the 2019 promulgation.
+
+**113年度 (2024) results, both periods, from the Bureau's own press
+releases** (both PRIMARY, High, full verbatim text quoted):
+- Period 1: 14 operators, 244 routes evaluated. 優: 和欣客運 (1). 甲 (11):
+  台中客運、統聯客運、全航客運、豐原客運、東南客運、苗栗客運、中台灣客運、中鹿客運、
+  國光客運、建明客運、睿奕交通. 乙 (2): 總達客運、巨業交通. Source:
+  https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9%2C4%2C20%2C%2C%2C%2C20761
+  (a second, garbled machine-summarised read of the same URL invented an
+  internally-inconsistent 甲-list on first pass — corrected by re-fetching
+  for verbatim text; recorded so the error is not repeated).
+- Period 2: same 14 operators/244 routes. 優 (3): 和欣客運、中台灣客運、
+  睿奕交通. 甲 (8, only 台中客運 individually named — the other 7 are a
+  stated gap). 乙 (3): 巨業交通、總達客運、東南客運. Source:
+  https://www.taichung.gov.tw/3278919/post.
+
+A pedestrian-safety deduction rule is quoted verbatim in both releases:
+"若未禮讓行人或有嚴重違規如闖紅燈或逆向行駛等嚴重影響行車安全等行為，非但無法得分，
+更會再倒扣總分." Results feed the annual operating-loss subsidy, per the
+same releases: "公車評鑑成績將影響公車業者年度虧損補貼額度."
+
+**仁友客運, sometimes named as a Taichung operator, does not appear in
+either 113年度 roster** — see the Taichung operators section below.
+
+### Kaohsiung — confirmed running since at least 2011, name changed over time
+
+高雄市政府交通局 runs "歷年公車服務品質評鑑成果" — an archive of annual reports.
+Source: https://www.tbkc.gov.tw/Service/PublicTransport/BusPlan, PRIMARY,
+High, full page fetched, ten report titles listed 100年度 (2011) through
+113年度 (2024). The scheme's own name changed across that span: 100年度
+"公車服務品質評鑑"; by 110年度 (2021) renamed to include 營運:
+"公車營運與服務品質評鑑"; by 113年度 (2024) expanded again to
+"公車營運與服務品質評鑑暨無障礙及性別友善度評鑑" (adding an accessibility/
+gender-friendliness track). **The report PDFs themselves did not extract
+as readable text with any tool available this pass** — grades below rest
+on separately-fetched primary news releases, not the reports directly.
+
+**106年度 (2017) results, from two independently-fetched primary sources
+that agree**: 優等 (5): 港都汽車客運、統聯汽車客運、漢程汽車客運、高雄汽車客運、
+南台灣汽車客運. Source A: https://www.mirrormedia.mg/story/20180130prf005/
+(a press-release syndication page, treated as PRIMARY-adjacent since it
+reproduces the Bureau's own release verbatim), High. Source B: the same
+release republished on 交通部 (MOTC)'s own safety portal,
+https://168.motc.gov.tw/theme/news/post/1906121103663, High. **A direct
+fetch of the presumed originating KCG press release
+(kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D...) failed twice**,
+returning unrelated current-dated content rather than the article —
+the 2017 results therefore rest on two agreeing secondary/republished
+copies, not the primary itself.
+
+Category names, quoted from a directly-fetched press-release mirror:
+"評分項目包括場站設施與服務、運輸工具設備與安全、旅客服務品質與駕駛員管理、公司
+經營與管理" — four categories (the pre-accessibility-track version),
+matching Taipei's own pre-2022 four-category regime in name though not
+independently confirmed as legally identical.
+
+**Name-collision check, explicitly run**: no evidence was found of a
+Kaohsiung operator called 大都會客運 or 岡山客運. Kaohsiung's current
+operator list (below) has neither name. The only 大都會客運 found anywhere
+is Taipei's, already documented on this site. Treat any reference to a
+Kaohsiung "大都會客運" or "岡山客運" as an unconfirmed premise, not a fact.
+
+### Tainan — confirmed running annually, legal basis named but unread
+
+Tainan's own press release confirms an annual scheme: "大臺南公車致力推動
+友善無障礙公共運輸服務，每年度辦理的公車評鑑作業." Source: 臺南市政府,
+https://www.tainan.gov.tw/news_content.aspx?n=13370&s=7916168, 111年8月26日
+(26 Aug 2022), PRIMARY, High. Five categories named, matching Taipei's and
+matching the *national* framework's category names exactly: "「場站設施與
+服務」、「運輸工具設備與安全」、「旅客服務品質與駕駛員管理」、「無障礙之場站設施、
+服務、運輸工具設備與安全」、及「公司經營與管理」."
+
+The **national** regulation behind every city's scheme was read directly:
+《大眾運輸營運與服務評鑑辦法》, 交通部, https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0020049,
+PRIMARY, High. Article 3 gives percentage weightings — 場站設施與服務 15%、
+運輸工具設備與安全 25%、旅客服務品質與駕駛員管理 30%、無障礙設施與服務 10%、
+公司經營與管理 20% — and Article 10 requires "直轄市、縣（市）政府每年應至少辦理
+一次" (a municipality must run this at least once a year), which is the
+legal floor every city scheme sits on. **Whether Tainan's own local rule
+adopts these exact weightings was not confirmed** — Tainan's implementing
+regulation, 《臺南市市區汽車客運業營運與服務評鑑執行要點》, is named by title only
+(found via search) at https://law01.tainan.gov.tw/glrsnewsout/LawContent.aspx?id=GL000428;
+every fetch attempt against the whole `law01.tainan.gov.tw` domain failed
+with `ECONNREFUSED`, repeatedly, across the session.
+
+**Results, four ceremony years, all PRIMARY/High (each independently
+fetched)**:
+- 110年 (ceremony Feb 2021): 優等 (3): 新營客運、興南客運、漢程客運. 甲等 (2):
+  府城客運、四方公司. 5 operators covered.
+- 112年 (Jan 2023): 優等 (3): 新營客運、興南客運、漢程客運. 甲等 (1): 府城客運.
+  4 operators — 四方公司 absent.
+- 113年 (Jan 2024): same 4-operator pattern, same three 優等 names, 府城客運
+  甲等.
+- 114年 (ceremony Feb 2026): same pattern again.
+
+四方公司's disappearance after the 110年 round is consistent with (not
+proven identical to) a separately-sourced zh.wikipedia claim that 四方公司
+exited the 大台南公車 network on 23 September 2022, SECONDARY, Medium
+(its own footnote was not independently opened). **No source fetched
+shows any Tainan operator receiving 乙等 or below** — every source found is
+an "outstanding operator" awards-ceremony release, which by its own
+framing may simply omit lower grades rather than confirm none exist.
+
+## Checked and failed (Run 303 additions)
+
+- **Taoyuan's 106年度/2017 and 110年度/2021 result pages**
+  (`traffic.tycg.gov.tw/businessD/post/upt.aspx?p0=72627` and `p0=94713&cid2=611`)
+  — direct fetch `ECONNREFUSED`; reader-proxy fetch reached the live site
+  but both URLs now serve the current 2026 announcement index, not the
+  archived content. web.archive.org refused by the fetch tool. Checked
+  2026-08-28.
+- **Hsinchu City's result PDFs** (dep-traffic.hccg.gov.tw) and its
+  indicator/weighting table (ltc.hccg.gov.tw) — HTTP 403 on direct fetch
+  and on reader-proxy fetch (binary PDF, not renderable). Hsinchu City's
+  scheme is confirmed to exist (three dated announcement rounds visible on
+  its own index page, PRIMARY) but no grade or weighting was extracted.
+  Checked 2026-08-28.
+- **Hsinchu County's evaluation news page** (gdd.hsinchu.gov.tw) —
+  `ECONNREFUSED` direct, HTTP 422 via reader proxy. Everything about a
+  Hsinchu County scheme rests on unfetched search-summary text only and is
+  NOT published as fact anywhere on this site.
+- **Kaohsiung's KCG primary press release** for the 2017 results
+  (kcg.gov.tw/CityNews_Detail1.aspx) — fetched twice, both times returned
+  unrelated current-dated homepage content rather than the article body.
+  Checked 2026-08-28.
+- **Kaohsiung's 110年度 result PDF** — fetched successfully as a 309-page
+  binary; no text extraction tool was available to the researching scout
+  (`pdftoppm` not installed, no Bash access in that role). A guessed
+  grading-scale reading from an AI summariser was explicitly discarded
+  rather than published. Checked 2026-08-28.
+- **Tainan's local implementing regulation**, `law01.tainan.gov.tw` (both
+  http/https, and the associated announcement page) — `ECONNREFUSED` on
+  every one of five attempts across the session; appears to be a
+  domain-level block from this environment rather than a transient fault.
+  web.archive.org refused by the fetch tool. Checked 2026-08-28.
+- **Tainan's 111年度 annual performance-report PDF**
+  (traffic.tainan.gov.tw) — two attempts both returned empty output.
+  Checked 2026-08-28.
+
 ## Stated gaps
 
-The exact text and count of the "26 indicators" is unconfirmed — every
+The exact text and count of Taipei's "26 indicators" is unconfirmed — every
 source naming that figure is an unfetched AI search-summary, not a quoted
 primary sentence. Whether the current regulation's own text states the
 twice-yearly cadence explicitly, versus it being inferable only from
 practice, was not independently re-quoted this pass. New Taipei's own
 indicator table beyond category letters A/B/C is unconfirmed (source
 403'd). The fleet-size threshold for ranking exclusion vs. an actual low
-grade is not stated by any source found.
+grade is not stated by any source found. Taoyuan's historical (2017/2021)
+grade lists, Hsinchu City's and Hsinchu County's actual grades and
+weightings, Kaohsiung's 2021–2024 grade tables, and whether Tainan's local
+weightings match the national ones exactly, are all open — see each
+city's own "checked and failed" entry above for what would settle it.

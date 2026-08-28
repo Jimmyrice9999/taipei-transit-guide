@@ -1,6 +1,6 @@
 ---
 title: Operator service ratings
-summary: Twice a year since 1992, Taipei has graded its bus operators 優/甲/乙/丙/丁 on 26 indicators — and the grade can cost an operator its routes. New Taipei runs a separate scheme that grades some of the same companies differently.
+summary: Twice a year since 1992, Taipei has graded its bus operators 優/甲/乙/丙/丁 on 26 indicators — and the grade can cost an operator its routes. It is a national requirement, not a Taipei quirk — New Taipei, Taoyuan, Taichung, Kaohsiung and Tainan each run their own separate scheme.
 updated: 2026-08-28
 facts:
   - label: Scheme
@@ -93,6 +93,96 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the route-points mechanism that ties evaluation results to route allocation, already cited on the joint-operation network page.
+  - id: tycg-punctuality
+    title: Bus service quality evaluation contract handled lawfully; real-time punctuality has gradually improved
+    titleOriginal: 公車服務品質評鑑標案依法辦理，公車動態資訊準點性已逐漸改善
+    publisher: Taoyuan City Government Department of Transportation (桃園市政府交通局)
+    url: https://traffic.tycg.gov.tw/businessD/post/upt.aspx?p0=106055
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Released 115/05/13. Supports the scheme's existence, its outsourced contractor, the 2023 contractor change and the disputed 95% punctuality claim.
+  - id: taichung-gl003594
+    title: Taichung City Municipal Bus Operation and Service Evaluation Execution Points
+    titleOriginal: 臺中市市區汽車客運營運與服務評鑑執行要點
+    publisher: Taichung City Government Regulations System (臺中市政府主管法規共用系統)
+    url: https://law.taichung.gov.tw/LawContent.aspx?id=GL003594
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Promulgated 108/02/22, amended 115/03/19. Supports the grading scale (Article 7) and five categories (Article 4).
+  - id: taichung-113-1
+    title: Taichung bus evaluation results — 1 excellent, 11 first-class
+    titleOriginal: 中市公車評鑑出爐！ 1家優等、11家甲等 市府交通局：強化行人安全與服務品質
+    publisher: Taichung City Government Department of Transportation (臺中市政府交通局)
+    url: https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9,4,20,,,,20761
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the 113年度 Period 1 grade results (14 operators, 244 routes).
+  - id: taichung-113-2
+    title: Taichung city bus evaluation results press release
+    titleOriginal: 臺中市市區公車評鑑結果新聞稿
+    publisher: Taichung City Government (臺中市政府)
+    url: https://www.taichung.gov.tw/3278919/post
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the 113年度 Period 2 grade results.
+  - id: kcg-busplan
+    title: Historical Bus Service Quality Evaluation Results
+    titleOriginal: 歷年公車服務品質評鑑成果
+    publisher: Kaohsiung City Government Department of Transportation (高雄市政府交通局)
+    url: https://www.tbkc.gov.tw/Service/PublicTransport/BusPlan
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the scheme's name changes over time and its report archive back to 100年度 (2011).
+  - id: kcg-2017-motc
+    title: Honouring Kaohsiung public-transport evaluation top performers
+    titleOriginal: 表揚高雄市公共運輸評鑑特優業者
+    publisher: MOTC Traffic Safety Portal, republishing a Kaohsiung DOT release (交通部168交通安全入口網)
+    url: https://168.motc.gov.tw/theme/news/post/1906121103663
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: A government portal's republication of Kaohsiung's own 2017 (106年度) release; the release's own primary URL failed to fetch, so this and a matching press-syndication copy are the best evidence found. Supports the 106年度 grade results and category names.
+  - id: tainan-2022-launch
+    title: Tainan bus evaluation begins — inviting disabled and visually-impaired riders
+    titleOriginal: 臺南公車評鑑起跑！邀請身(視)障朋友參與乘車體驗
+    publisher: Tainan City Government (臺南市政府)
+    url: https://www.tainan.gov.tw/news_content.aspx?n=13370&s=7916168
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the scheme's annual cadence, five categories and 2022 operator coverage.
+  - id: tainan-113
+    title: Tainan public transport outstanding-operator and driver awards ceremony
+    titleOriginal: 大臺南公共運輸績優業者暨優良駕駛表揚典禮
+    publisher: Tainan City Government (臺南市政府)
+    url: https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8613933
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the 113年 (Jan 2024) grade results, one of four ceremony years read.
+  - id: tainan-110
+    title: Tainan public transport outstanding-operator and driver awards ceremony, 110年
+    titleOriginal: 110年大臺南公共運輸績優業者暨優良駕駛表揚典禮
+    publisher: Tainan City Government (臺南市政府)
+    url: https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=7744023
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports the 110年 (Feb 2021) grade results — the earliest of the four ceremony years read, and the only one where 四方公司 still appears.
+  - id: national-eval-rule
+    title: Regulations for Mass Transit Operation and Service Evaluation
+    titleOriginal: 大眾運輸營運與服務評鑑辦法
+    publisher: Ministry of Transportation and Communications (交通部)
+    url: https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0020049
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: The national regulation every city scheme sits under. Supports the category weightings and the once-a-year floor (Article 10) — Tainan's own category names match this exactly; whether every city's weightings match was not confirmed city by city.
 ---
 
 Since 民國81年 (1992), Taipei has graded its joint-operation bus operators
@@ -153,3 +243,69 @@ despite operating in both cities[^ntpc-113-1] [^pto-113-1] [^pto-113-2].
 No source found explains the jurisdictional scoping — plausibly each city
 evaluates only the portion of a shared operator's fleet or routes within
 its own boundary, but that is inference rather than a sourced claim.
+
+## Every major city runs one — this is a national requirement, not a Taipei quirk
+
+Every city scheme sits on the same floor: MOTC's own regulation requires
+"直轄市、縣（市）政府每年應至少辦理一次" — a municipality must evaluate its
+urban bus operators at least once a year[^national-eval-rule]. Taoyuan,
+Taichung, Kaohsiung and Tainan each run a distinctly-named, separately
+administered scheme, none of them a republication of another city's
+results.
+
+**Taoyuan.** Outsourced by tender to a third-party evaluator; the
+contractor changed in 2023 after the previous one, 輿智公司, was suspended
+for three years over a procurement-law violation[^tycg-punctuality]. The
+Bureau's own figures claim bus departure punctuality rising from 80% to
+95% and station-trigger accuracy from 93.3% to 99.6%[^tycg-punctuality] —
+figures publicly disputed by a city councillor the same year the Bureau
+cited them[^tycg-punctuality]. Historical grade tables (2017, 2021) could
+not be sourced this pass: the archived announcement pages no longer
+resolve, so those results stay TBC rather than published from a
+search-engine summary.
+
+**Taichung.** Current legal basis since 2022年 (民國108年2月22日), an
+identical five-tier 優/甲/乙/丙/丁 scale to Taipei's[^taichung-gl003594].
+Published evaluation reports exist back to 2015, four years before that
+regulation's own promulgation date — an unresolved gap in what legal
+basis applied between 2010 and 2019[^taichung-gl003594]. 113年度 (2024),
+both periods, evaluated the same 14 operators across 244 routes:
+
+| Period | 優 | 甲 | 乙 |
+|---|---|---|---|
+| 113年第1期 | 和欣客運 (1) | 11 named operators[^taichung-113-1] | 總達客運, 巨業交通 (2)[^taichung-113-1] |
+| 113年第2期 | 和欣客運, 中台灣客運, 睿奕交通 (3)[^taichung-113-2] | 台中客運 + 7 others, unnamed[^taichung-113-2] | 巨業交通, 總達客運, 東南客運 (3)[^taichung-113-2] |
+
+Results feed the annual loss subsidy directly, and a pedestrian-safety
+violation zeroes and then deducts from an operator's score for that
+item[^taichung-113-1].
+
+**Kaohsiung.** Reports published back to 2011, under a name that changed
+twice — 公車服務品質評鑑 (2011) → 公車營運與服務品質評鑑 (2021) →
+公車營運與服務品質評鑑暨無障礙及性別友善度評鑑 (2024, adding an accessibility
+track)[^kcg-busplan]. 106年度 (2017) 優等: 港都汽車客運, 統聯汽車客運,
+漢程汽車客運, 高雄汽車客運, 南台灣汽車客運[^kcg-2017-motc]. **A name
+collision worth flagging explicitly**: no Kaohsiung operator called
+大都會客運 or 岡山客運 was found anywhere — Kaohsiung's own current operator
+list has neither, and the only 大都會客運 this site has found is Taipei's,
+already documented on its [operator page](/bus/operators/metropolitanbus-h3iwov/).
+Newer Kaohsiung grade tables (2018–2024) remain TBC — the report PDFs did
+not extract as readable text.
+
+**Tainan.** Runs annually, covering (as of 2022) five operators —
+府城客運, 興南客運, 新營客運, 四方公司, 漢程客運 — on the same five categories
+MOTC's national rule names[^tainan-2022-launch] [^national-eval-rule].
+Four consecutive award-ceremony years show the same three 優等 operators
+each time, with 四方公司 disappearing from the roster after
+2021[^tainan-113]:
+
+| Ceremony year | 優等 | 甲等 |
+|---|---|---|
+| 110年 (Feb 2021) | 新營客運, 興南客運, 漢程客運[^tainan-110] | 府城客運, 四方公司[^tainan-110] |
+| 112年–114年 (2023–2026) | 新營客運, 興南客運, 漢程客運 | 府城客運[^tainan-113] |
+
+This site found every Tainan result drawn from an "outstanding operator"
+ceremony release[^tainan-110] [^tainan-113], which by its own framing may
+simply omit operators graded 乙等 or below rather than confirm none
+exist — no source found states whether a lower grade has ever been
+awarded in Tainan.

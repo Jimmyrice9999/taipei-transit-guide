@@ -1196,3 +1196,58 @@ A Taipei City Council Gazette search result appeared to contain a more exact **A
 https://gaz.tcc.gov.tw/pdf/ogaz_viewer.html?group=GZ7211&ord=156
 
 or obtain the corresponding Taipei City Government/Transport Bureau fare-approval order independently. Until one is actually read, “1997” is established but “August 20, 1997” is only a lead.
+
+## Route-level operational detail (Run 303, 28 August 2026)
+
+Dispatched to settle three specific questions the site had not yet
+answered: per-route vehicle allocation, where 段次 (fare-stage) boundaries
+fall on an actual route, and whether evaluation scores a route or an
+operator. All three published to `content/bus/network/joint-operation.md`.
+
+**Fare-stage boundaries are published per route on ebus.gov.taipei**, not
+on busgroup.org.tw and not as a citywide map. Three routes read directly:
+信義幹線 (single fare stage, no boundary), 260 (two-stage, boundary
+岩山里－劍潭), 0東 (two-stage, direction-asymmetric boundary — outbound
+新益里－忠孝敦化路口, return MRT忠孝敦化站－新益里). Source: ebus.gov.taipei
+per-route pages, PRIMARY, High for the field values quoted (verbatim
+Chinese returned), Medium for completeness (JS-backed pages; other fields
+may exist unseen). No source aggregates every route's boundary into one
+table.
+
+**Vehicle allocation is constrained only in two administrative
+situations**, both in FL055169 第四條第二項: an incoming operator on a
+route may not propose more vehicles than the route previously had (第2款);
+a designated 服務性路線 is capped at 20% of the operator's own
+highest-revenue route's vehicle count (第4款). No general per-route
+formula (route length, frequency, ridership) was found in this
+regulation. PRIMARY, High — re-fetched with a vehicle-count-specific
+question and the Chinese held on a second, independent fetch.
+
+**Evaluation scores the operator, never the route** — confirmed by direct
+reading of FL055087 (the current evaluation regulation): 「路線積分，係指
+交通局依各期評鑑成績及評鑑項目成績所給予之評分」, valid for two years. No
+route-sampling or route-level scoring methodology is stated anywhere in
+the regulation. This is a settled negative, not a mere absence — the
+regulation's own definitional structure shows why no route-level metric
+exists.
+
+### Checked and failed
+
+臺北市聯營公共汽車行車效率－按路線分, Taipei DOT's own statistical table
+(likely the richest genuine per-route vehicle/trip dataset, per its search
+description: columns for route number, 段次, 公里, 人次, 元, 元/公里) — the
+DOT landing page and a Scribd mirror both returned metadata only, and a
+monthly statistical report PDF fetched successfully as binary but could
+not be read: this environment's Read tool requires `pdftoppm` for PDF
+rendering, not installed, and the researching scout had no Bash access to
+attempt the documented `pdftotext` workaround. Checked 28 August 2026.
+**Follow-up**: retry via the main session with `pdftotext`, either on that
+monthly report or the 113年臺北市交通統計年報, which a search result
+describes as containing "Operation Efficiency of City Bus in Taipei
+City-By Routes" with exactly those columns.
+
+Whether 段次 in that DOT table means "fare stage" or "number of
+trips/departures" is itself unresolved without reading it — the existing
+law-route-allocation source defines 車次 as a round trip, a different
+technical sense; do not conflate the two without checking the table's own
+header row.

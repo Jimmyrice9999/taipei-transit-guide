@@ -74,5 +74,6 @@ the manufacturer-level pages below [^vscc-list-0715]:
 - [Imported diesel bus and coach chassis](/bus/models/imported-diesel-chassis/) — Hino, Isuzu, Mercedes-Benz, Volvo, Scania and MAN, their Taiwan distributors and current models; only MAN has a confirmed public government type-approval trail [^vscc-man-cog].
 - [Taiwan Yutong 6128HG](/bus/models/yutong-6128hg/) — one Dàyou vehicle identified in a safety report, with seat and standing figures [^ttsb-citiair].
 - [King Long / 大金龍](/bus/models/king-long/) — Dàyou’s official fleet page names year groups and route classes, but not a complete technical roster [^dayou-fleet].
+- [CNG buses](/bus/models/cng-buses/) — one documented six-vehicle Taipei pilot in 1999, no manufacturer named anywhere, and no VSCC type-approval trail for the fuel type at all.
 
 Manufacturer, chassis/body, passenger capacity and propulsion are not silently inferred from a trade name or a photograph. Where the source does not publish them, the entity page says TBC [^tdx-bus-operator-pull].

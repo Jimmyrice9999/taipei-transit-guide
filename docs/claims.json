@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26844,
-    "tbc": 4608,
+    "sourced": 26869,
+    "tbc": 4611,
     "asserted": 0,
-    "meta": 89
+    "meta": 96
   },
   "files": [
     {
@@ -329,6 +329,14 @@
       "meta": 0
     },
     {
+      "file": "content/bus/models/cng-buses.md",
+      "sources": 2,
+      "sourced": 7,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 6
+    },
+    {
       "file": "content/bus/models/imported-diesel-chassis.md",
       "sources": 23,
       "sourced": 27,
@@ -410,19 +418,19 @@
     },
     {
       "file": "content/bus/network/joint-operation.md",
-      "sources": 13,
-      "sourced": 40,
+      "sources": 17,
+      "sourced": 44,
       "tbc": 2,
       "asserted": 0,
       "meta": 3
     },
     {
       "file": "content/bus/network/operator-ratings.md",
-      "sources": 7,
-      "sourced": 18,
-      "tbc": 4,
+      "sources": 17,
+      "sourced": 32,
+      "tbc": 6,
       "asserted": 0,
-      "meta": 1
+      "meta": 2
     },
     {
       "file": "content/bus/network/_index.md",

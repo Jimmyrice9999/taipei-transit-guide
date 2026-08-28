@@ -162,6 +162,42 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Source for the nineteen-route figure, for 八橫八縱 as the network's nickname, and for the list of numbered and colour-prefixed routes converted into trunk routes. Its own statement of the colour rule 「其中南北向為綠色，東西向為藍色，非屬前兩者為黃色」 agrees with the PTO release, which is corroboration rather than a second source: the encyclopedia is downstream of the regulator here."
+  - id: ebus-route-pages
+    title: Greater Taipei Bus — per-route stop list and fare information (信義幹線, 260, 0東)
+    titleOriginal: 大臺北公車
+    publisher: Taipei and New Taipei City Governments, jointly (臺北市政府、新北市政府)
+    url: https://ebus.gov.taipei/
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "The real-time bus system's own per-route pages, which is where 段次 (fare-stage) boundaries are actually published — as a named pair of stops, not a citywide map. Three routes read directly: 信義幹線 (routeid 0161001200, single fare stage), 260 (routeid 0100026020, two-stage, boundary 「岩山里－劍潭」), 0東 (routeid 0100000A00, two-stage, direction-asymmetric boundary)."
+  - id: law-route-allocation-vehicles
+    title: Principles for handling applications to allocate and adjust joint-operation bus routes and departures (vehicle-count clauses)
+    titleOriginal: 臺北市聯營公車申請分配調整路線及車次處理原則 第四條第二項
+    publisher: 臺北市公共運輸處 (法規類號 北市07－04－3006)
+    url: https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL055169
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "Same regulation as law-route-allocation above, re-fetched for its vehicle-count language. 第4條第2項第2款: a route's incoming operator may not propose more vehicles than the route previously had. 第4條第2項第4款: a designated 服務性路線 is capped at 20% of the operator's own highest-revenue route's vehicle count."
+  - id: pto-evaluation-points
+    title: Directions for the operating and service evaluation of Taipei City urban bus operators
+    titleOriginal: 臺北市市區汽車客運業營運與服務評鑑執行要點
+    publisher: Taipei City Government (臺北市政府法規查詢系統)
+    url: https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL055087
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "Read specifically to test whether evaluation scores a route or an operator. 第2條: 「路線積分，係指交通局依各期評鑑成績及評鑑項目成績所給予之評分」 — route points are derived from the operator's own periodic score. 第7條第4項: 路線積分之有效期限為二年. No route-level scoring methodology is stated anywhere in the regulation."
+  - id: busgroup-fare
+    title: Fare information
+    titleOriginal: 票價資訊
+    publisher: 臺北市公車聯營管理委員會
+    url: https://www.busgroup.org.tw/fare
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "The joint committee's own general statement of the fare-stage crossing rule: 「臺北市聯營公車係依路段分段收費，搭乘二段票(含)以上路線之車輛，若跨越分段點(或分段緩衝區)，應加收一段票」."
   - id: zh-token-coin
     title: Taipei city bus tokens
     titleOriginal: 台北市公共汽車乘車專用幣
@@ -277,6 +313,52 @@ apply to adjust it for a year[^law-route-allocation].
 That single provision does more to explain the shape of the network than any
 account of pooling: **a route that earns well is a thing the regulator can move
 between operators.**
+
+### Vehicle counts are constrained, not centrally set — and evaluation scores the operator, never the route
+
+No general "buses per route" formula exists. The route-allocation
+regulation constrains vehicle counts only in two specific situations:
+when a route changes hands, the incoming operator's proposed vehicle
+count may not exceed what the route had before,「接駛業者以維持原輸運能量及
+不得高於原有配車數下，提出該路線需配置車輛數」[^law-route-allocation-vehicles];
+and a designated 服務性路線 — a route an operator cannot refuse — is capped
+at 20% of that operator's own highest-revenue route's vehicle count,
+「指定接駛之服務性路線配車數以接駛最高營收路線配車數之百分之20（四捨五入）為
+上限」[^law-route-allocation-vehicles]. Outside those two administrative
+cases, no source found sets vehicle counts by route length, frequency or
+ridership.
+
+The [operator service-rating scheme](/bus/network/operator-ratings/)
+scores the **operator**, never the individual route[^pto-evaluation-points].
+The regulation says so directly: 「路線積分，係指交通局依各期評鑑成績及評鑑項目成績所給予之評分」 —
+route points are the score the Department of Transportation assigns from
+each period's *operator-level* evaluation, not a score computed for a
+route[^pto-evaluation-points]. Those points stay valid for two
+years[^pto-evaluation-points]. No published route-level service-quality
+metric exists on this site's evidence.
+
+### Where the fare-stage line actually falls
+
+The 段次 (fare-stage) boundary for a two-segment route is not published as
+a citywide map anywhere found — but it *is* published, per individual
+route, on the government's real-time bus system,
+[ebus.gov.taipei](https://ebus.gov.taipei/)[^ebus-route-pages]. Three
+examples, read directly:
+
+| Route | Fare | Boundary |
+| --- | --- | --- |
+| 信義幹線 (MRT Kunyang–Taipei Main Station) | 一段票, single stage | none |
+| 260 (Yangmingshan–Taipei Main Station) | 兩段票, two stages | 岩山里－劍潭[^ebus-route-pages] |
+| 0東 (Neihu–Taipei Main Station) | 兩段票, two stages | outbound 新益里－忠孝敦化路口; return MRT忠孝敦化站－新益里[^ebus-route-pages] |
+
+**0東's boundary is not the same pair reversed** — the outbound and
+return boundaries sit at different stop pairs entirely[^ebus-route-pages].
+Whether that asymmetry is typical of two-segment routes generally, or
+particular to 0東, is not established from a two-route sample. No source
+found aggregates every route's boundary into one table or map; the
+general fare-stage rule itself is stated by the joint committee, 「臺北市
+聯營公車係依路段分段收費，搭乘二段票(含)以上路線之車輛，若跨越分段點(或分段緩衝區)，
+應加收一段票」[^busgroup-fare].
 
 ### Losses are subsidised route by route, on a published formula
 
