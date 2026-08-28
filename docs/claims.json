@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26019,
-    "tbc": 4561,
+    "sourced": 26349,
+    "tbc": 4563,
     "asserted": 0,
-    "meta": 74
+    "meta": 76
   },
   "files": [
     {
@@ -11962,8 +11962,8 @@
     },
     {
       "file": "content/rail/tra/rolling-stock/maintenance-depots.md",
-      "sources": 10,
-      "sourced": 12,
+      "sources": 13,
+      "sourced": 14,
       "tbc": 1,
       "asserted": 0,
       "meta": 1
@@ -13993,6 +13993,14 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/lines/airport-mrt.md",
+      "sources": 24,
+      "sourced": 25,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/lines/green-line.md",
       "sources": 4,
       "sourced": 17,
@@ -14065,10 +14073,42 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/airport-hotel-a14a.md",
+      "sources": 7,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/airport-terminal-1-a12.md",
+      "sources": 8,
+      "sourced": 12,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/airport-terminal-2-a13.md",
+      "sources": 9,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/arts-district-g11.md",
       "sources": 2,
       "sourced": 8,
       "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/chang-gung-memorial-hospital-a8.md",
+      "sources": 7,
+      "sourced": 13,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -14085,6 +14125,14 @@
       "sources": 2,
       "sourced": 9,
       "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/dayuan-a15.md",
+      "sources": 9,
+      "sourced": 14,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -14129,6 +14177,22 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/hengshan-a16.md",
+      "sources": 11,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/huanbei-a21.md",
+      "sources": 7,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/jiande-xingfeng-g01.md",
       "sources": 2,
       "sourced": 9,
@@ -14145,12 +14209,44 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/kengkou-a11.md",
+      "sources": 8,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/kengkou-g15b.md",
       "sources": 2,
       "sourced": 9,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/laojie-river-a22.md",
+      "sources": 8,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/tymc/stations/linghang-a17.md",
+      "sources": 9,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/linkou-a9.md",
+      "sources": 8,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
     },
     {
       "file": "content/rail/tymc/stations/luxingpi-g12.md",
@@ -14177,10 +14273,42 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/national-taiwan-sport-university-a7.md",
+      "sources": 7,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/new-taipei-industrial-park-a3.md",
+      "sources": 8,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/rende-park-g02.md",
       "sources": 2,
       "sourced": 9,
       "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/sanchong-a2.md",
+      "sources": 8,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/shanbi-a10.md",
+      "sources": 7,
+      "sourced": 14,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -14193,6 +14321,30 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/taipei-main-station-a1.md",
+      "sources": 8,
+      "sourced": 14,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/taishan-a5.md",
+      "sources": 7,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/taishan-guihe-a6.md",
+      "sources": 8,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/taoyuan-g07.md",
       "sources": 2,
       "sourced": 9,
@@ -14201,10 +14353,42 @@
       "meta": 0
     },
     {
+      "file": "content/rail/tymc/stations/taoyuan-hsr-station-a18.md",
+      "sources": 8,
+      "sourced": 12,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/taoyuan-sports-park-a19.md",
+      "sources": 8,
+      "sourced": 14,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/tymc/stations/xiaodanan-g05.md",
       "sources": 2,
       "sourced": 8,
       "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/xingnan-a20.md",
+      "sources": 6,
+      "sourced": 13,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tymc/stations/xinzhuang-fuduxin-a4.md",
+      "sources": 8,
+      "sourced": 13,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -14259,7 +14443,7 @@
     {
       "file": "content/rail/tymc/_index.md",
       "sources": 3,
-      "sourced": 6,
+      "sourced": 7,
       "tbc": 1,
       "asserted": 0,
       "meta": 2
@@ -14298,8 +14482,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 223,
-      "sourced": 332,
+      "sources": 228,
+      "sourced": 339,
       "tbc": 2,
       "asserted": 0,
       "meta": 6

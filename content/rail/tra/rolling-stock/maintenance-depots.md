@@ -3,7 +3,7 @@ title: Taiwan Railways maintenance workshops
 summary: Three heavy-overhaul workshops, legally distinct from the seven operating sections that stable and lightly service the same fleets — not the flat list of "depots" the fleet-roster page's operating groups might suggest.
 order: 3
 operator: TRA
-updated: 2026-08-27
+updated: 2026-08-28
 facts:
   - label: Current heavy-overhaul workshops
     value: Fugang (富岡), Chaozhou (潮州), Hualien (花蓮)
@@ -28,6 +28,15 @@ specs:
     value: 286 / 514 / 504 / 504 vehicles/year
     source: tra-maintenance-plan
 sources:
+  - id: tdx-tra-station
+    title: "TDX Taiwan Railways station records"
+    titleOriginal: "臺灣鐵路車站資料"
+    publisher: "Ministry of Transportation and Communications, TDX (交通部運輸資料流通服務平台)"
+    url: "https://tdx.transportdata.tw/api/basic/v2/Rail/TRA/Station?%24format=JSON&%24top=1000&%24skip=0"
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "The full snapshot carries three station records with no line membership: 1998 Shulin Rail Yard, 5998 'South' (南方小站) and 5999 Chaozhou Railway Workshop (潮州基地) — the same snapshot this project's rail/tra pages already use."
   - id: law-moj-inspection-rules
     title: Railway Locomotive and Rolling Stock Inspection Rules
     titleOriginal: 鐵路機車車輛檢修規則
@@ -118,6 +127,24 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: Source for Fugang's 1935 origin, 2013 relocation and 2022 renaming; a TRA primary press release on the same ceremony could not be fetched.
+  - id: pts-south-station
+    title: "A look at TRA's mysterious 'South Station' — a staff-only halt open to riders on weekends"
+    titleOriginal: 一睹台鐵神秘「南方小站」 台鐵員工專用車站假日開放搭乘
+    publisher: Public Television Service (公視新聞網 PNN)
+    url: https://news.pts.org.tw/article/645470
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Public broadcaster reporting, read in full. States the halt is unlisted on TRA's official route map and was staff-only before the July-August 2023 public weekend service; gives the 1.9 km distance from Chaozhou Station, the NT$120 round-trip fare and the 10-round-trips-a-day, 10:05-16:00 schedule. A TRA primary press release on the same halt could not be located in this search."
+  - id: ltn-railway-park-artworks
+    title: "Chaozhou Railway Culture Park pushes toward a million visitors: eight public artworks unveiled"
+    titleOriginal: 「潮州鐵道園區」再衝百萬人潮！台鐵「觀光專列」過年後開進南方小站
+    publisher: Liberty Times (自由時報電子報)
+    url: https://news.ltn.com.tw/news/life/breakingnews/4927996
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Dated coverage (around January 2025), read in full. Records the park nearing one million cumulative visitors and the Minister of Transportation and Communications stating a regular 'tourism special train' (觀光專列) service into South Station would begin once that milestone was reached — a later, ongoing arrangement distinct from 2023's limited 16-weekend pilot. Does not itself give a confirmed launch date."
 ---
 
 ## Two tiers, not one list of depots
@@ -193,6 +220,35 @@ the bylaw's title. This page does not read either bylaw as a current
 description of EMU900 or EMU3000 maintenance scope, since both predate those
 fleets' arrival; that current scope comes instead from the 2024 maintenance
 plan above.[^tra-maintenance-plan]
+
+## A staff-only halt inside the Chaozhou site
+
+TRA's current TDX station snapshot carries three records with no line
+membership at all — facilities rather than passenger stops on any route.
+Two of them are already described above under their operating names:
+Chaozhou base (潮州基地, station ID 5999) is the Chaozhou workshop
+detailed in the section above, and Shulin (樹林, station ID 1998, recorded
+as "Shulin Rail Yard") corresponds to the Shulin sub-section named among
+the seven operating sections' three subordinate sub-sections.[^tdx-tra-station][^law-moj-branch-organization]
+
+The third, station ID 5998, is recorded by TDX under the English name
+"South" — 南方小站 ("South Station") in the original.[^tdx-tra-station] It sits inside the
+Chaozhou Railway Culture Park (潮州鐵道園區), the public visitor site built
+around the relocated workshop, and was originally a staff-only halt not
+shown on TRA's own published route map, used by Chaozhou Workshop
+employees commuting to work rather than by passengers.[^pts-south-station]
+TRA opened it to the public on a limited basis for 16 weekend days across
+July and August 2023: a 1.9 km round trip from Chaozhou Station, a NT$120
+round-trip fare, and ten round trips a day between 10:05 and
+16:00.[^pts-south-station] By around January 2025 the park had drawn
+close to one million cumulative visitors, and the Minister of
+Transportation and Communications said a regular "tourism special train"
+(觀光專列) service into South Station would begin once that milestone was
+reached — a standing arrangement rather than the original limited
+pilot, though this later coverage does not itself give a confirmed launch
+date.[^ltn-railway-park-artworks] Neither the station's platform
+configuration nor a current, ongoing timetable is established by any
+source read for this page; both remain TBC.
 
 ## Remaining gaps
 

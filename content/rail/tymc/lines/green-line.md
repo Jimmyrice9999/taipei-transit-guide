@@ -4,7 +4,7 @@ summary: "Taoyuan’s under-construction green route from Bade through Taoyuan a
 line: G
 operator: TYMC
 updated: 2026-08-24
-order: 1
+order: 2
 facts:
   - label: "Line code"
     value: "G"

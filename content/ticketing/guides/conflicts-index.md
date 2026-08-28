@@ -1947,6 +1947,51 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Investigative journalism sourced to a named railway expert. Source for the roughly 30-year, NT$3-4 billion cumulative upgrade figure and the alternative NT$270 million ATP isolation speed-limit system budget."
+  - id: "rail-tymc-lines-airport-mrt-zhwiki-bot-history"
+    title: "Taoyuan Airport MRT (BOT and planning history)"
+    titleOriginal: "桃園機場捷運"
+    publisher: "維基百科 (zh.wikipedia)"
+    url: "https://zh.wikipedia.org/zh-tw/桃園機場捷運"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the October 1996 BOT decision, Long Life International Development Co.'s 1998 winning bid, and the 31 December 2002 termination of the BOT contract."
+  - id: "rail-tymc-lines-airport-mrt-tymc-history"
+    title: "Company milestones"
+    titleOriginal: "桃捷大事紀"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: "https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/history.html"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "States 機場捷運線於106年3月2日正式營運通車 (opened 2 March 2017), plus test-operation, certification and trial-ride dates leading up to it, and the 26 June 2006 ceremonial groundbreaking presided over by the Premier."
+  - id: "rail-tymc-lines-airport-mrt-ntpc-dorts-route"
+    title: "Airport MRT project record"
+    titleOriginal: "機場線"
+    publisher: "Department of Rapid Transit Systems, New Taipei City Government (新北市政府捷運工程局)"
+    url: "https://www.dorts.ntpc.gov.tw/about/route/npW0dxy4Z3Ex"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Builder's own project record: 路線全長51.03公里 (route length 51.03 km), 10.92 km underground / 40.11 km elevated, 7 underground / 15 elevated stations, two depots, and 工程建設總經費約1,138.5億元 — 1,138.5億元 converts to NT$113.85 billion, not NT$1,138.5 billion."
+  - id: "rail-tymc-lines-airport-mrt-cna-marubeni-2017"
+    title: "Airport MRT settles accounts: Railway Bureau to fine Marubeni NT$2.5 billion and seek damages"
+    titleOriginal: "機捷算總帳 高鐵局將罰丸紅25億並求償"
+    publisher: "Central News Agency (中央社)"
+    url: "https://www.cna.com.tw/news/ahel/201701090048.aspx"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Contemporaneous wire report (9 January 2017): NT$2.5 billion delay-penalty cap, NT$1.9 billion performance bond withheld for unauthorised signalling subcontracting, and Marubeni's own NT$12.9 billion counter-claim over Bureau-directed design changes. States no combined total; 2.5 + 1.9 = 4.4, not 7.2."
+  - id: "rail-tymc-lines-airport-mrt-cna-marubeni-2021"
+    title: "Airport MRT running times missed target: Railway Bureau withholds over NT$700 million from Marubeni"
+    titleOriginal: "機捷行車時間未達標 鐵道局扣丸紅7億多元工程款"
+    publisher: "Central News Agency (中央社)"
+    url: "https://www.cna.com.tw/news/firstnews/202108290054.aspx"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "29 August 2021: NT$726,926,496 withheld for missing three contractual performance standards — express journey time, average speed and headway — a separate, later dispute from the 2017 one."
   - id: "rail-tymc-lines-green-line-dorts-green"
     title: "Taoyuan Metro Green Line project page"
     titleOriginal: "桃園市政府捷運工程局-捷運綠線"
@@ -3792,6 +3837,37 @@ dispatched.
 - [TTSB completes supplemental work on the Executive Yuan's Puyuma accident investigation and releases findings](https://www.ttsb.gov.tw/1133/1178/1179/27718/post) — primary; Taiwan Transportation Safety Board (國家運輸安全調查委員會); accessed 2026-08-27.[^rail-tra-technology-signalling-ttsb-puyuma-report]
 - [60 km/h speed limit set for ATP failure; Puyuma and Taroko trains to be equipped by year end](https://news.ltn.com.tw/news/life/breakingnews/3321111) — secondary; Liberty Times (自由時報); accessed 2026-08-27.[^rail-tra-technology-signalling-ltn-atp-isolation-speedlimit]
 - [Transport safety: the black-hole loop — TRA's track keeps getting rougher; 30 years built only half an ATP](https://www.twreporter.org/a/taiwan-railway-examination-report-transportation-safety) — secondary; The Reporter (報導者); accessed 2026-08-27.[^rail-tra-technology-signalling-twreporter-atp-history]
+
+## Airport MRT — From a failed BOT to a government-built line
+
+Discussed on [Airport MRT](/rail/tymc/lines/airport-mrt/) in the source page's “From a failed BOT to a government-built line” section.[^rail-tymc-lines-airport-mrt-zhwiki-bot-history]
+
+### From a failed BOT to a government-built line
+
+Planning has at least three defensible starting points, and different sources plainly mean different things by it: an October 1989 feasibility study is the earliest date found, though only at secondary strength; in October 1996 the central government decided to build the line under a Build-Operate-Transfer (BOT) model; and Long Life International Development Co. (長生國際開發) won the BOT bid in 1998.[^rail-tymc-lines-airport-mrt-zhwiki-bot-history] The BOT arrangement collapsed on 31 December 2002, when Long Life and the then High Speed Rail Bureau agreed to terminate the contract.[^rail-tymc-lines-airport-mrt-zhwiki-bot-history] The government took direct responsibility afterward: MOTC designated the High Speed Rail Bureau as the project's construction body on 28 October 2003, and the central government approved the construction plan on 9 March 2004.[^rail-tymc-lines-airport-mrt-tymc-history][^rail-tymc-lines-airport-mrt-ntpc-dorts-route]
+
+Construction start likewise has more than one dated event rather than one clean answer: New Taipei's project record gives 27 February 2006 for the formal start of the Sanchong–Airport–Zhongli section and its E&M systems, while TYMC's own company history instead records a ceremonial groundbreaking on 26 June 2006, presided over by the Premier.[^rail-tymc-lines-airport-mrt-ntpc-dorts-route][^rail-tymc-lines-airport-mrt-tymc-history] The line opened on 2 March 2017 for stations A1 through A21, after the originally announced January 2009 target had been publicly revised six times — the specific dates and reasons for each of the six changes are not established by any source read for this page and stay TBC.[^rail-tymc-lines-airport-mrt-tymc-history]
+
+#### Sources for this entry
+
+- [Taoyuan Airport MRT (BOT and planning history)](https://zh.wikipedia.org/zh-tw/桃園機場捷運) — secondary; 維基百科 (zh.wikipedia); accessed 2026-08-28.[^rail-tymc-lines-airport-mrt-zhwiki-bot-history]
+- [Company milestones](https://www.tymetro.com.tw/tymetro-new/tw/_pages/about/history.html) — primary; Taoyuan Metro Corporation (桃園大眾捷運股份有限公司); accessed 2026-08-28.[^rail-tymc-lines-airport-mrt-tymc-history]
+- [Airport MRT project record](https://www.dorts.ntpc.gov.tw/about/route/npW0dxy4Z3Ex) — primary; Department of Rapid Transit Systems, New Taipei City Government (新北市政府捷運工程局); accessed 2026-08-28.[^rail-tymc-lines-airport-mrt-ntpc-dorts-route]
+
+## Airport MRT — The Marubeni dispute: two confirmed figures, one unconfirmed total
+
+Discussed on [Airport MRT](/rail/tymc/lines/airport-mrt/) in the source page's “The Marubeni dispute: two confirmed figures, one unconfirmed total” section.[^rail-tymc-lines-airport-mrt-cna-marubeni-2017]
+
+### The Marubeni dispute: two confirmed figures, one unconfirmed total
+
+Around the 2017 opening, contemporaneous wire reporting recorded the then High Speed Rail Bureau imposing a NT$2.5 billion delay-penalty cap on contractor Marubeni Corporation (丸紅), the contractual maximum, plus a separate NT$1.9 billion performance bond withheld over Marubeni's unauthorised subcontracting of the signalling system to a British firm — its contract required Marubeni to design that system itself.[^rail-tymc-lines-airport-mrt-cna-marubeni-2017] Marubeni separately counter-claimed NT$12.9 billion against the Ministry, on the grounds of repeated Bureau-directed design changes.[^rail-tymc-lines-airport-mrt-cna-marubeni-2017] No source read for this page states a combined total for the dispute of any kind: NT$2.5 billion plus NT$1.9 billion is NT$4.4 billion, not any commonly-circulated larger figure, and the individual component figures are published here on that basis rather than an unconfirmed total.
+
+A separate, later dispute in 2021 concerned in-service performance rather than construction delay: the Public Construction Commission recommended withholding NT$726,926,496 from Marubeni for missing three contractual operating standards — express journey time, average speed and train headway.[^rail-tymc-lines-airport-mrt-cna-marubeni-2021]
+
+#### Sources for this entry
+
+- [Airport MRT settles accounts: Railway Bureau to fine Marubeni NT$2.5 billion and seek damages](https://www.cna.com.tw/news/ahel/201701090048.aspx) — secondary; Central News Agency (中央社); accessed 2026-08-28.[^rail-tymc-lines-airport-mrt-cna-marubeni-2017]
+- [Airport MRT running times missed target: Railway Bureau withholds over NT$700 million from Marubeni](https://www.cna.com.tw/news/firstnews/202108290054.aspx) — secondary; Central News Agency (中央社); accessed 2026-08-28.[^rail-tymc-lines-airport-mrt-cna-marubeni-2021]
 
 ## Taoyuan Green Line — Construction approvals and progress
 

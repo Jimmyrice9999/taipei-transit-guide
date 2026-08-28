@@ -230,6 +230,34 @@ are not re-hit across a batch. A cache is a convenience for refetching, not a
 source: never publish a claim from a cached page without recording the URL
 that produced it, per rule 2 above.
 
+### Pipelining: overlap the next batch's fetches with this batch's writes
+
+The naive shape — fetch batch N, then write batch N, then verify, then
+commit, then fetch batch N+1 — leaves scouts idle for the entire write/verify/
+commit phase. That phase is where the main session's own time actually goes
+(assembling frontmatter, cross-checking citations, running gates), and
+nothing about it depends on batch N+1's sources existing yet.
+
+Pipeline it instead: **before starting to write batch N, dispatch the scouts
+for batch N+1.** They fetch in the background while the main session writes,
+verifies and commits batch N. By the time batch N is committed, batch N+1's
+findings are already sitting in the conversation, and writing can start on
+them immediately with no fetch-side dead time in between.
+
+This does not relax rule 11 above in any way:
+
+- Scouts stay strictly read-only — fetch and return text, never write, never
+  run `git`, never touch the working tree, never spawn further subagents.
+- There is still exactly one writer. Commits remain sequential, one at a time,
+  in the main session.
+- Only the *reads* move earlier to overlap the writes. Nothing about *who
+  writes* or *when a commit happens* changes.
+
+Run 6+ scouts per batch, scaling toward 8 (per the run brief's own guidance),
+and back off immediately if a single source starts returning rate-limit
+errors or 403s across the batch — a slower run is always preferable to
+getting a government portal to block the project.
+
 ## Output contract
 
 Research goes in `docs/research/<section>/<subject>.md`. Content goes in

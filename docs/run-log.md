@@ -1,3 +1,198 @@
+## Run 293 - Part 3: the Taoyuan Airport MRT operating line, 22 stations (2026-08-28)
+
+### The gap, found by auditing rather than assuming
+
+Checked "Kaohsiung, Taoyuan, Taichung, New Taipei remaining lines and
+stations" against what actually exists before researching anything, per this
+brief's own repeated warning that it goes stale. KRTC (4/4 lines, stations
+matching TDX+LRT counts exactly) and TMRT (1/1 line, 18/18 stations) turned
+out to already be complete. TYMC did not: `content/rail/tymc/lines/` held
+only the Green Line — a project registry for a line that is not yet open —
+and zero of the 22 stations on TYMC's actual *operating* line, the Airport
+MRT, had a page. The system's own `_index.md` already stated in prose that
+"the Taoyuan Metro system page has one current TDX operating line, the
+Airport MRT" — the operating line was already named as existing; it had
+just never been written. This is the largest, highest-value single gap
+found in this run so far: an entire system's passenger service, undocumented
+at the line and station level, while its not-yet-open future line had 21
+station stub pages.
+
+### Piloted the pipelined research pattern this session
+
+Six line-scouts dispatched concurrently in one message: one for the line
+overview, five for station clusters (A1-A5, A6-A9, A10-A14a, A15-A19,
+A20-A22). While they ran, read the two existing `docs/research/` files for
+this subject — an airport-mrt.md (644 lines) and an airport-mrt-stations.md
+(843 lines), both dated within the last two weeks, both far more thorough
+than a typical lead file, evidently researched in a prior run and never
+turned into content. Cross-referenced the scouts' fresh, independent
+findings against that corpus rather than either re-deriving everything from
+scratch or trusting the corpus uncensored — per rule 9, it is leads, not
+sources, and this run's scouts did catch things the corpus didn't have (a
+third route-length figure from zh.wikipedia's infobox; a corrected 2029 A23
+date; the A16↔Green-Line-G19 interchange, sourced fresh from two Taoyuan
+DORTS pages the corpus hadn't quoted at that level of confirmation) as well
+as one likely error IN the corpus (a unit-conversion slip: New Taipei
+DORTS's own 「工程建設總經費約1,138.5億元」 was recorded in the existing
+research file as "about NT$1,138.5 billion" — 億元 is 100 million, so the
+correct conversion is NT$113.85 billion, a factor-of-ten error the line page
+now corrects and states explicitly).
+
+### What shipped
+
+One line page (`content/rail/tymc/lines/airport-mrt.md`) and 22 station
+pages. The line page covers: the joint-venture operator (Taoyuan 64.01%,
+New Taipei 29.32%, Taipei 6.67%, not a Taoyuan-City-owned corporation as
+the brief's own framing assumed); three genuinely different route-length
+figures (TDX 51.76 km, DORTS/Executive Yuan 51.03 km, zh.wikipedia 51.95
+km) published side by side per rule 5, not averaged; the BOT concession's
+1998 award and 2002 collapse; the six-times-delayed opening (headline fact
+confirmed, itemised date list stays TBC — not found despite three separate
+scouts and this session's own attempts on the same CNA archive); the
+Marubeni dispute's two confirmed figures (NT$2.5bn penalty, NT$1.9bn
+withheld bond) and one explicitly *not* confirmed combined total (no source
+anywhere states NT$7.2bn, and 2.5+1.9=4.4, not 7.2 — the previous research
+file's own biggest correction, carried through); the two rolling-stock
+fleets and their split manufacturing; the 2023 A22 extension and its three
+stated delay causes; and the 2022-2025 financial turnaround, with a genuine
+conflict on the 2024 profit figure (NT$400m+ retrospective vs NT$500m
+pre-year-end estimate) published as both.
+
+Each of the 22 station pages carries its own TDX-backed facts (code,
+address, coordinates, sequence, cumulative distance — already-committed
+data, not researched) plus prose built from the Railway Bureau's own
+station-architecture report, TYMC's own per-station pages, and — where a
+station needed it — a news or Wikipedia source explicitly marked secondary.
+Genuine conflicts are published rather than picked: A9's elevation (253 m
+per zh.wikipedia vs ~255 m per a New Taipei government article); A11's
+structure (the Railway Bureau's own primary report says elevated; two
+different zh.wikipedia pages disagree with *each other*, one saying
+elevated and one saying underground — the primary is followed, the
+secondary self-contradiction is stated rather than hidden); A16's Green
+Line interchange code (Taoyuan DORTS's own two pages agree on G19; one
+Liberty Times article says G18, unattributed — recorded as a conflict, not
+silently resolved either way); A23's two internally-conflicting target
+years on a single Taoyuan government page (117年/2028 in one section,
+118年/2029 in another). One important correction to the task brief itself
+found by a scout and verified: A18 (Taoyuan HSR Station) does **not**
+interchange with Taiwan Railways despite the shared "Taoyuan" name — TRA's
+own transfer-information page states Taoyuan is one of exactly two stations
+nationwide where its own station and THSR's are "not co-structured, not
+co-line."
+
+### A real sourcing mistake caught and fixed before it shipped
+
+While drafting station bodies, cited public-art data (work titles, artists)
+to each station's own `tymc-{code}-station` page — the wrong source. The
+art data came from a different operator page, TYMC's public-art programme
+listing, not the individual station pages. Caught on review, not by the
+build: every such citation was corrected to a newly-added `tymc-art` source
+pointing at the actual page the claim rests on. Recorded here because this
+is exactly the failure mode rule 4 exists to catch, and catching it in your
+own drafting rather than only in someone else's citation is the harder,
+more valuable case.
+
+### Two process notes that cost real time
+
+`npm run fonts` must run *after* a build whose `out/` already reflects the
+current content — its own doc comment says so — not before. Running it
+against a stale or partial `out/` silently produces an incomplete,
+oversized fallback subset rather than an error; the next full build then
+reports genuine missing-glyph pages (all in unrelated bus-route content,
+which is what made it look at first like a pre-existing, unrelated flaky
+bug rather than a self-inflicted ordering mistake). The fix is the
+documented sequence: build, then fonts, then build again to confirm.
+
+The site's badge auto-linker flags any bare line/station code it cannot
+resolve in the current page's own operator context, even when the code is
+a real station on a *different* operator — `Y19`/`Y20` (Circular Line,
+mentioned while describing the A3 interchange), `O5` (Zhonghe–Xinlu Line,
+mentioned at A2) and `A23` (a future, not-yet-open station, mentioned at
+A22 and on the line page) all triggered this, correctly, and were wrapped
+in backticks per the tool's own stated convention rather than left as
+warnings.
+
+### Gates
+
+`gate:fast` clean (107/107) and `gate:full` clean (234/234, facts 17/17)
+against a fresh build. `npm run search`, `npm run conflicts` and
+`npm run fonts` all rerun and committed — the new pages added station
+codes to the search index, new published conflicts to the conflicts index,
+and new Han characters to the font subset. `probes/` (the station-page
+generator script and two follow-up word-count-expansion scripts, all
+scratch, none staged) remains untracked.
+
+### Next
+
+TYMC's line/station gap is closed. Continuing Part 3's "smallest first"
+list: Alishan Forest Railway (currently 1 station, 1 line — the brief's
+named stations/rolling-stock/switchback/typhoon-closure content is
+essentially all still open), then regional bus networks and the bike/ferry
+items.
+
+## Run 292 - Part 3 start: TRA's three non-passenger station entries (2026-08-28)
+
+### Audit first
+
+TRA's current TDX snapshot carries 245 station records; 242 have content
+pages. Checked what the remaining three actually are before assuming they
+warrant full station pages: station ID 1998 (樹林/"Shulin Rail Yard"), 5998
+("South"/南方小站) and 5999 (潮州基地/Chaozhou Railway Workshop). None
+carries any line membership in the station-of-line snapshot — they are
+facilities, not passenger stops, so giving them a page in the same folder
+as the other 242 (each with a "line memberships" fact) would misrepresent
+them.
+
+Two of the three turned out to already be substantively covered:
+`content/rail/tra/rolling-stock/maintenance-depots.md` (an existing,
+well-sourced article on TRA's legal two-tier maintenance structure) already
+names Chaozhou base under its operating name, and already names Shulin as
+one of the law-named sub-sections. Only the third — 南方小站, "South
+Station" — was a genuine gap.
+
+### What South Station is
+
+A staff-only halt inside the Chaozhou Railway Culture Park (潮州鐵道園區,
+the public heritage site built around the relocated workshop), not shown on
+TRA's own published route map, originally used only by Chaozhou Workshop
+employees commuting to work. TRA opened it to the public for
+16 weekend days across July-August 2023 (1.9 km round trip from Chaozhou
+Station, NT$120 fare, ten round trips a day, 10:05-16:00). By around
+January 2025 the park was nearing one million cumulative visitors and the
+Minister of Transportation and Communications said a standing "tourism
+special train" service would begin once that milestone was reached —
+distinct from the original limited pilot, though the later coverage does
+not itself give a confirmed launch date. No TRA primary press release on
+either the original halt or the later service could be located; both
+citations are Public Television Service and Liberty Times reporting,
+correctly marked `kind: secondary`.
+
+Added as a new section in the existing maintenance-depots.md article
+(where the other two non-passenger entries already lived) rather than as
+a standalone station-folder page — consistent placement for a facility,
+not a stop.
+
+### A process note
+
+Adding the section tripped the claims ratchet: one sentence restating a
+TDX field ("recorded by TDX under the English name 'South'") had no
+`[^source]` marker, because this page's own `sources:` list had never
+needed a TDX citation before (it's built entirely from law and policy
+citations). Added the same `tdx-tra-station` source entry this project's
+other TRA pages already use, cited the sentence, and reran — clean.
+`npm run fonts` needed a rerun too: 睹 (from a source title) was not yet in
+the committed CJK subset. Neither is a claim about the finding; both are
+recorded here per the "process notes that cost time" convention this log
+already has.
+
+### Gates
+
+`gate:fast` clean (107/107) after the citation and font-subset fixes.
+`docs/claims.json` is committed as part of this change (it always is —
+unlike the audit JSONs under docs/ that verify:browser/links/unused
+regenerate, `claims.json` is the ratchet's own tracked baseline count, not
+a rebuildable-and-discardable report).
+
 ## Run 291 - Part 2 (opening batch): the six missing system hero photos (2026-08-28)
 
 ### Audit first

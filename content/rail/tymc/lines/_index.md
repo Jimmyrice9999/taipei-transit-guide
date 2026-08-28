@@ -1,10 +1,10 @@
 ---
 title: "Taoyuan Metro lines"
 description: "The Airport MRT operating line and the Green Line construction registry."
-updated: 2026-08-24
+updated: 2026-08-28
 facts:
   - label: "Records"
-    value: "1 project line"
+    value: "1 operating line (Airport MRT), 1 project line (Green Line)"
     source: dorts-green
 specs:
   - label: "Coordinates"
