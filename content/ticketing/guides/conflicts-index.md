@@ -642,6 +642,69 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the normalized route, operator, stop, sequence, shape and source-update fields; the committed bus layer does not publish a route-length or timetable field. Also records three subroutes — 950路, 950去程半 and 950返程半."
+  - id: "ferry-routes-green-island-eastcoast-nsa-ferry"
+    title: "Ferries"
+    titleOriginal: "客船"
+    publisher: "East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處)"
+    url: "https://www.eastcoast-nsa.gov.tw/zh-tw/service/ferry/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The scenic-area authority's own current ferry information page, naming ports, crossing time and operator contact numbers."
+  - id: "ferry-routes-green-island-tsang-jai"
+    title: "Tianwangxing 21 (Uranus 21)"
+    titleOriginal: "天王星21號"
+    publisher: "Changjie Shipping Co., Ltd. (長杰航運股份有限公司)"
+    url: "https://www.tsang-jai.com.tw/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The third pooled operator's own site, confirming its new vessel's first sailing on 28 March 2025; the page states no fare figures."
+  - id: "ferry-routes-green-island-eastcoast-nsa-green-island"
+    title: "Green Island traffic information"
+    titleOriginal: "交通資訊－天堂島嶼"
+    publisher: "East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處)"
+    url: "https://www.eastcoast-nsa.gov.tw/greenisland/zh-tw/tour/traffic"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The administration's dedicated Green Island subsite, corroborating the Fugang-Nanliao port pair and crossing time, and naming the seasonal Chenggong route."
+  - id: "ferry-routes-orchid-island-taitung-tourism-island-lanyu"
+    title: "Outlying island transport"
+    titleOriginal: "離島交通"
+    publisher: "Taitung County Government (臺東縣政府)"
+    url: "https://tour.taitung.gov.tw/zh-tw/traffic/island"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The county government's own tourism page, giving a 120-minute Fugang-Orchid Island crossing time, a 120-150 minute Houbihu figure, and Daily Air's Taitung-Orchid Island flight details."
+  - id: "ferry-routes-orchid-island-dafaship"
+    title: "Dafa Steamship fares and route information"
+    titleOriginal: "大發輪船票價及航線資訊"
+    publisher: "Dafa Steamship Co., Ltd. (大發輪船股份有限公司)"
+    url: "https://www.dafaship.com/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator's own current fare table for the Fugang-Orchid Island route, and its own stated crossing time of about 150 minutes."
+  - id: "ferry-routes-orchid-island-eastcoast-nsa-ferry-lanyu"
+    title: "Ferries"
+    titleOriginal: "客船"
+    publisher: "East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處)"
+    url: "https://www.eastcoast-nsa.gov.tw/zh-tw/service/ferry/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The scenic-area authority's own current ferry page, naming Fugang as the port, three operators for the Orchid Island route, and describing the peak-season triangle routing via Green Island."
+  - id: "ferry-routes-orchid-island-lanyu-info-blue-door"
+    title: "Traffic information"
+    titleOriginal: "交通資訊"
+    publisher: "Blue Door Lanyu (蘭色大門, private tourism portal)"
+    url: "https://travel.lanyu.info/trip-info/traffic/"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "A private (non-government) tourism portal, the only source found stating the Houbihu route's specific mid-March to mid-October operating window."
   - id: "ferry-routes-penghu-phpto-timetable"
     title: "Public ferry timetable"
     titleOriginal: "交通船時刻表"
@@ -2451,6 +2514,37 @@ than disagreeing about the same one.[^bus-routes-series-900s-950-tdx-bus]
 - [Cross-city express bus 950 'Zhonghe–Neihu Science Park' opens 15 April](https://www.ntpc.gov.tw/ch/home.jsp?id=28&parentpath=0%2C6%2C27&mcustomize=news_view.jsp&dataserno=201404110032) — primary; New Taipei City Government, 新北市政府; accessed 2026-08-19.[^bus-routes-series-900s-950-ntpc-950-launch]
 - [950 route schedule](https://ebus.gov.taipei/Route/RouteSchedule?routeid=0100095000) — primary; Taipei City Public Transportation Office, 臺北市政府公共運輸處; accessed 2026-08-19.[^bus-routes-series-900s-950-ebus-950]
 - [TDX bus data](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX, 交通部運輸資料流通服務平臺; accessed 2026-08-19.[^bus-routes-series-900s-950-tdx-bus]
+
+## Green Island ferry services — Operators — a genuine count conflict
+
+Discussed on [Green Island ferry services](/ferry/routes/green-island/) in the source page's “Operators — a genuine count conflict” section.[^ferry-routes-green-island-eastcoast-nsa-ferry]
+
+### Operators — a genuine count conflict
+
+The scenic-area administration's own contact page names four ferry brands serving Green Island: Kaixuan (凱旋), Green Island Star (綠島之星), Uranus (天王星) and Golden Star/Hengxing (金星、恆星).[^ferry-routes-green-island-eastcoast-nsa-ferry] Several other sources — including two of the operators' own sites and a booking aggregator — describe only three companies as running the actual pooled, scheduled service: Kaixuan (registered as Farnlin Shipping, 帆利航運), Green Island Star (registered as Long Hong Shipping, 龍鴻航業) and Uranus (registered as Changjie Shipping, 長杰航運, whose new vessel Tianwangxing 21 began sailing 28 March 2025).[^ferry-routes-green-island-tsang-jai] No operational detail for Golden Star/Hengxing was found in any source beyond a phone number on the administration's own contact list. Both counts are published here rather than one being picked.
+
+The administration's page separately lists two different phone numbers for Uranus across its two hosted pages (089-281617 on the general ferry page, 089-281618 on the Green Island subsite), and assigns that same 089-281618 number to Golden Star/Hengxing on the subsite while the general page gives Golden Star/Hengxing a third number, 089-281477.[^ferry-routes-green-island-eastcoast-nsa-ferry][^ferry-routes-green-island-eastcoast-nsa-green-island] Neither discrepancy is resolved here.
+
+#### Sources for this entry
+
+- [Ferries](https://www.eastcoast-nsa.gov.tw/zh-tw/service/ferry/) — primary; East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處); accessed 2026-08-28.[^ferry-routes-green-island-eastcoast-nsa-ferry]
+- [Tianwangxing 21 (Uranus 21)](https://www.tsang-jai.com.tw/) — primary; Changjie Shipping Co., Ltd. (長杰航運股份有限公司); accessed 2026-08-28.[^ferry-routes-green-island-tsang-jai]
+- [Green Island traffic information](https://www.eastcoast-nsa.gov.tw/greenisland/zh-tw/tour/traffic) — primary; East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處); accessed 2026-08-28.[^ferry-routes-green-island-eastcoast-nsa-green-island]
+
+## Orchid Island ferry services — Crossing time: a genuine spread, not one number
+
+Discussed on [Orchid Island ferry services](/ferry/routes/orchid-island/) in the source page's “Crossing time: a genuine spread, not one number” section.[^ferry-routes-orchid-island-taitung-tourism-island-lanyu]
+
+### Crossing time: a genuine spread, not one number
+
+Sources disagree substantially on the Fugang–Orchid Island crossing time, and this page publishes the spread rather than picking one. Taitung County's own tourism page states 120 minutes.[^ferry-routes-orchid-island-taitung-tourism-island-lanyu] Dafa Steamship's own operator page states about 150 minutes for the same route.[^ferry-routes-orchid-island-dafaship] The East Coast National Scenic Area Administration's page gives "about 2-3 hours."[^ferry-routes-orchid-island-eastcoast-nsa-ferry-lanyu] A booking aggregator separately reports 150 minutes outbound and 200 minutes on the return leg when the return is routed via Green Island. For the Houbihu–Orchid Island leg, Taitung County's page gives "120-150 minutes," roughly consistent with a private portal's "about 2 hours."[^ferry-routes-orchid-island-taitung-tourism-island-lanyu][^ferry-routes-orchid-island-lanyu-info-blue-door] None of these figures is treated as more authoritative than another; the range itself is the finding.
+
+#### Sources for this entry
+
+- [Outlying island transport](https://tour.taitung.gov.tw/zh-tw/traffic/island) — primary; Taitung County Government (臺東縣政府); accessed 2026-08-28.[^ferry-routes-orchid-island-taitung-tourism-island-lanyu]
+- [Dafa Steamship fares and route information](https://www.dafaship.com/) — primary; Dafa Steamship Co., Ltd. (大發輪船股份有限公司); accessed 2026-08-28.[^ferry-routes-orchid-island-dafaship]
+- [Ferries](https://www.eastcoast-nsa.gov.tw/zh-tw/service/ferry/) — primary; East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處); accessed 2026-08-28.[^ferry-routes-orchid-island-eastcoast-nsa-ferry-lanyu]
+- [Traffic information](https://travel.lanyu.info/trip-info/traffic/) — secondary; Blue Door Lanyu (蘭色大門, private tourism portal); accessed 2026-08-28.[^ferry-routes-orchid-island-lanyu-info-blue-door]
 
 ## Penghu island ferry services — What remains date-sensitive
 

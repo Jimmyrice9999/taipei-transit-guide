@@ -1,6 +1,6 @@
 ---
 title: Ferry routes
-description: Current Blue Highway routes, Kaohsiung Cijin ferry routes and Penghu island services, with piers, operators, fares and date-sensitive rules.
+description: Current Blue Highway routes, Kaohsiung Cijin ferry routes and Penghu, Kinmen, Matsu, Green Island and Orchid Island services, with piers, operators, fares and date-sensitive rules.
 order: 1
 ---
 
@@ -9,3 +9,5 @@ order: 1
 - [Penghu island ferry services](/ferry/routes/penghu/)
 - [Kinmen island ferry services](/ferry/routes/kinmen/)
 - [Matsu island ferry services](/ferry/routes/matsu/)
+- [Green Island ferry services](/ferry/routes/green-island/)
+- [Orchid Island ferry services](/ferry/routes/orchid-island/)

@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26349,
+    "sourced": 26388,
     "tbc": 4563,
     "asserted": 0,
     "meta": 76
@@ -9497,6 +9497,14 @@
       "meta": 0
     },
     {
+      "file": "content/ferry/routes/green-island.md",
+      "sources": 7,
+      "sourced": 15,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/ferry/routes/kinmen.md",
       "sources": 8,
       "sourced": 13,
@@ -9508,6 +9516,14 @@
       "file": "content/ferry/routes/matsu.md",
       "sources": 11,
       "sourced": 17,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/ferry/routes/orchid-island.md",
+      "sources": 8,
+      "sourced": 15,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -14419,7 +14435,7 @@
     {
       "file": "content/rail/tymc/stations/_index.md",
       "sources": 2,
-      "sourced": 1,
+      "sourced": 4,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -14482,8 +14498,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 228,
-      "sourced": 339,
+      "sources": 235,
+      "sourced": 345,
       "tbc": 2,
       "asserted": 0,
       "meta": 6

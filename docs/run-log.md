@@ -1,3 +1,82 @@
+## Run 294 - Green Island and Orchid Island ferries; gate:full made ~44% faster (2026-08-28)
+
+### Two genuine ferry gaps closed
+
+A direct audit (after a fork drifted off an audit task — see the incident
+entry below) confirmed the site's ferry coverage (Blue Highway, Cijin,
+Penghu, Kinmen, Matsu) had no page for either Green Island (綠島/Lyudao) or
+Orchid Island (蘭嶼/Lanyu), both inhabited islands off Taitung reached by
+public ferry. Two line-scouts researched them in parallel; both pages are
+now published (`content/ferry/routes/green-island.md`,
+`content/ferry/routes/orchid-island.md`), each carrying real published
+conflicts rather than a picked number: Green Island's operator count (3 vs
+4, depending on source), a 5-sailings-vs-2-sailings frequency conflict, and
+an unconfirmed Uranus fare increase; Orchid Island's crossing time (three
+different figures, 120/150/"2-3 hours", none preferred over another), an
+uncited zh.wikipedia off-season claim contradicted by an equally-uncited
+alternative, and a resident-fare subsidy sourced only to PTS News because
+the Lanyu Township Office's own site could not be reached (repeated
+connection failures, recorded as checked-and-failed rather than silently
+dropped). Both scouts stayed inside their read-only boundary this time.
+
+### gate:full measured and made ~44% faster, per explicit instruction
+
+Instructed to measure before optimising rather than guessing. Ran each of
+`verify`'s 13 constituent steps individually, timed, on a warm cache:
+`build` 305.6s, `test:unit` 65.6s, `links` 63.3s — these three are 94% of
+the 464.8s total; every other step (markers, check, unused, a11y, facts,
+cite, claims, research, geometry:audit, cvd) sums to under 30s combined.
+
+Checked the "cold build cache" hypothesis directly rather than assuming
+it: `.next/cache/turbopack` persists across runs (dated days before this
+session), and nothing in the `verify`/`test` chain deletes `.next` —
+`scripts/determinism.mjs` does, but it is its own separate npm script, not
+part of `gate:full`'s dependency chain. Caching was not the problem.
+
+The actual cause, found by reading `package.json` rather than guessing:
+`"gate:full": "npm run verify && npm test"`, and `test` (`cite && markers
+&& build && test:unit && facts`) is a **strict subset** of steps `verify`
+already runs — same build, same test:unit, same facts/cite/markers, in
+that order, a second time. Confirmed against the actual log, not just the
+script text: two `▲ Next.js` build banners and two `test:unit` runs
+appear in a single `gate:full` invocation. The redundant second pass costs
+~378s (build 305.6 + test:unit 65.6 + facts 3.3 + cite 1.7 + markers
+1.7) — 45% of the ~843s a full `gate:full` was taking, spent re-doing
+work already done, with zero additional coverage.
+
+Fix: `gate:full` is now `"npm run verify"` — dropping `&& npm test`
+loses nothing, since every step `test` ran is already inside `verify`'s
+own list. Checked `.github/workflows/` before changing anything: CI does
+not call `gate:full` or `npm test` at all — it runs each underlying step
+(`cite`, `build`, `test:unit`, `facts`, `a11y`, `verify:browser`,
+`adversarial`, `cvd`, etc.) as independent workflow steps, so this is a
+local/agent-only change with no effect on what CI checks or how often.
+
+**Measured, not estimated: a full timed run of the fixed `gate:full`
+took 471s (14:12:07 to 14:19:58), against ~843s before — a 44% reduction,
+matching the ~378s of redundant work calculated above almost exactly.**
+Confirmed clean afterward: one `▲ Next.js` banner, one `test:unit` run,
+no failures anywhere in the log, 17/17 fact cross-checks still passing.
+No check was weakened, skipped or reordered to get this — the same 13
+steps in `verify` run exactly as before; only the wasteful duplicate half
+of `gate:full` is gone.
+
+### Cadence change, per instruction
+
+`gate:full` moves from every 5th commit to every 10th, plus before any
+push ending a part, plus at run end. `gate:fast` still runs before every
+commit. This is a workflow change for this run, not a repo rule, so it is
+recorded here rather than in AGENTS.md.
+
+### Gates
+
+`gate:fast` clean (107/107). `gate:full` (both the pre-fix baseline run
+and the post-fix confirmation run) clean — 234 checks via `verify`'s own
+chain, 17/17 fact cross-checks, no contradictions. `probes/` (the two
+research write-ups' generator wasn't needed this batch — these two pages
+were hand-written directly from scout findings — plus the new
+`time-gate-steps.mjs` timing harness) remains untracked.
+
 ## Run 293 follow-up - a process incident, recorded plainly (2026-08-28)
 
 Dispatched a read-only fork to audit what genuinely remains open in the

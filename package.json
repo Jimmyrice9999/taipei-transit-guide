@@ -49,7 +49,7 @@
     "test": "npm run cite && npm run markers && npm run build && npm run test:unit && npm run facts",
     "font:check": "node scripts/font-check.mjs",
     "gate:fast": "npm run cite && npm run markers && npm run conflicts:check && npm run search:check && npm run font:check && npm run test:unit:fast",
-    "gate:full": "npm run verify && npm test",
+    "gate:full": "npm run verify",
     "verify:browser": "node scripts/browser-verify.mjs",
     "verify:browser:full": "node scripts/browser-verify.mjs --full",
     "adversarial": "node scripts/adversarial.mjs",
