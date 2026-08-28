@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26559,
-    "tbc": 4589,
+    "sourced": 26570,
+    "tbc": 4590,
     "asserted": 0,
     "meta": 82
   },
@@ -11653,6 +11653,14 @@
       "sources": 1,
       "sourced": 7,
       "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/tmrt/facilities/depots.md",
+      "sources": 3,
+      "sourced": 11,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },

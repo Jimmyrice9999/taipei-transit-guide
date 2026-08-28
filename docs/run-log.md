@@ -1,3 +1,31 @@
+## Run 298 - TMRT's missing depot page, and a wrong hypothesis caught (2026-08-28)
+
+A smaller, final gap from this pass's audit: TMRT (Taichung Metro) had no
+`facilities/depots.md`, unlike KRTC and TYMC, though a depot is mentioned
+in passing across its rolling-stock, technology and station pages. The
+scout dispatched for it caught something worth recording: the research
+brief itself hypothesised a "Wuri Depot" near G17 (reasoning from the
+line's HSR-adjacent southern end), which does not exist. Direct primary
+sources instead placed the depot — 北屯機廠, Beitun Depot — at the
+opposite, northern terminus, beside G0. Two independent primary sources
+(the depot's own civil-contract page and a separate system-equipment
+contract scoped "from Beitun Depot to G17") confirmed this from different
+directions. New page: `content/rail/tmrt/facilities/depots.md`.
+
+The main session also fetched two PDFs directly (`curl`/`pdftotext`) that
+had defeated the scout's tools — one turned out to be a dead 404 link
+(confirming a real gap, not a tool failure), the other a real 24MB
+document that, once read, still contained no train-storage capacity
+figure for the depot. That capacity number stays TBC — not because it
+wasn't looked for, but because two separate direct reads confirmed it
+genuinely isn't published.
+
+### Gates
+
+`gate:fast` clean (107/107) on the first pass — no unsourced sentences
+this time, no new Han characters. `gate:full` not run this commit (4th
+since Run 294, per the 10th-commit cadence).
+
 ## Run 297 - TRA's missing station-area land-development page (2026-08-28)
 
 ### One scout, one strong primary find in the main session
