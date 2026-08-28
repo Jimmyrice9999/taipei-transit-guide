@@ -1,3 +1,44 @@
+## Run 297 - TRA's missing station-area land-development page (2026-08-28)
+
+### One scout, one strong primary find in the main session
+
+TRA had no `content/rail/tra/projects/` folder at all, unlike KRTC, TYMC
+and TMRT (the cross-system MRT joint-development page at
+`content/rail/projects/tod-joint-development.md` doesn't cover TRA — checked
+directly, confirmed no overlap). One read-only scout researched TRA's
+mechanism and specific cases; its report leaned heavily on secondary,
+partly-unverified sources for the Kaohsiung/Taichung/Tainan station
+narratives, but flagged one high-value unread primary source it couldn't
+open: TRA Corp's own 60MB "元年報告書" (first-year report) PDF, which
+exceeded its WebFetch tool's 10MB limit. The main session, which has
+`curl`/`pdftotext` access the scout's toolset lacks, fetched and read it
+directly — this is exactly the documented PDF-extraction workaround in
+AGENTS.md, and it substantially strengthened the page: six named 2024
+deals with real dates and dollar figures (a NT$159M/year Banqiao Station
+lease renewal, a ~NT$70.8bn Nangang urban-renewal case, a Kaohsiung MRT
+land-development case worth a fraction of that), a 10-station priority
+list for 2024-2025, and the exact legal mechanism corporatisation created
+in January 2024 — a two-track split between assets TRA Corp itself
+operates on and a separate MOTC-administered debt-repayment fund holding
+everything else, independently confirmed by the report's own revenue
+accounting language.
+
+New page: `content/rail/tra/projects/joint-development.md`, plus a
+category `_index.md` and `docs/research/rail/tra/projects/joint-development.md`.
+Secondary-sourced material on Kaohsiung/Taichung/Tainan station
+redevelopment (heritage relocations, an ROT retail history at Taipei
+Station, the Tainan undergrounding controversy) is published with its
+confidence explicitly downgraded rather than presented at the same
+confidence as the primary first-year-report material — several specific
+leads (a "交九用地"/workers'-union dispute, a Taichung station mall) could
+not be verified and are recorded as unconfirmed, not asserted.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing 3 unsourced sentences the same
+way as prior runs. No new Han characters needed. `gate:full` not run this
+commit (3rd since the last one, per the 10th-commit cadence).
+
 ## Run 296 - Taipei Metro's missing ridership, fares and accessibility pages (2026-08-28)
 
 ### Confirmed by audit, not assumed
