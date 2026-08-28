@@ -1,24 +1,25 @@
 # For Jamie
 
-## Active handoff - Run 302 - 28 August 2026 - V4 bus depth, 8 commits
+## Active handoff - Run 303 - 29 August 2026 - Taiwan rebrand + nav split + V4 bus depth done, 7 commits
 
-Parts 0-1 done and pushed (CI screenshot-crash fix, gate:fast gaps
-closed, CI build caching, timing report). Part 2 (V4 bus depth): 6
-commits covering electric bus manufacturers + VSCC registry, the 2030
-electrification programme, payment/ticketing infrastructure, operator
-service ratings, a sourcing correction + ownership-history deepening
-for Metropolitan Bus, and imported diesel chassis + charging
-infrastructure. Caught and fixed a wrong hypothesis in the brief itself
-(Model T is Foxtron's, not Tron Energy's) and a self-inflicted font-
-subset regression along the way (see Run 302 in run-log.md).
+Rebranded to Taiwan Transit Guide throughout, fixing real staleness found
+alongside it (about/rail pages claimed things long false, e.g. "TRA/THSR
+have no pages yet"). Rail's nav now groups by mode instead of a flat
+8-system list — nav-only, no URLs moved. Added `/regions/`, a geography
+index gathering every mode by place.
 
-Every commit has its own fresh, held-still `gate:full` pass. Ran 12
-scouts total across two batches, all with zero scope violations - the
-concurrency ceiling the brief asked to be tested is still unresolved,
-just unhit.
+V4 bus depth is essentially finished: CNG buses, historic manufacturers,
+2f route deepening, operator ratings for Taoyuan/Taichung/Kaohsiung/Tainan
+(not just Taipei/New Taipei), and operator/fleet depth for all four
+regional bus pages. The old handoff's claim that the 聯營公車 history page
+didn't exist was itself stale — it's existed since Run 9.
 
-**Not yet written**: a dedicated 聯營公車 history page (citation error is
-fixed, ownership history added to operator pages, but no standalone
-page exists); 2f (route deepening); CNG bus manufacturers.
+Two full `gate:full` checkpoints, both clean; caught 3 real bugs
+`gate:fast` missed, and self-inflicted the same CJK font regression 3
+times (fonts before build) — caught every time, worth fixing the habit.
 
-Detail in docs/run-log.md Run 302.
+**Not reached**: Part 3 (visual/photos) and Part 4 (depth audit) not
+started. Browser/viewport verification wasn't run — do `/regions/` and
+the new nav first next time. Scout concurrency ceiling still untested (a
+10-scout burst hit a session rate limit before any of them started).
+Detail in docs/run-log.md Run 303.

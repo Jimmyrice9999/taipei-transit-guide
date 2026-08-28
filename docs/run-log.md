@@ -1,3 +1,246 @@
+## Run 303 - Taiwan rebrand, rail nav split, geography index, V4 bus depth finished (2026-08-28/29)
+
+New standing brief this run: the site is no longer Taipei-only. It now covers
+TRA, THSR, Kaohsiung, Taichung, Taoyuan, New Taipei, Alishan, national intercity
+coaches, regional buses in four cities, island ferries and airport transport,
+and the brief asked for a rebrand, a navigation/taxonomy overhaul, a visual
+pass, deeper research, and finishing V4 bus depth. Audited the brief before
+acting, per its own instruction that it has been stale before — and it had
+been: Run 302's handoff claimed no dedicated 聯營公車 history page existed.
+`content/bus/network/joint-operation.md` has existed since Run 9 and was last
+touched at Run 102; it is a comprehensive page. No work was needed there, and
+Part 5 proceeded on the brief's other three genuinely open items instead
+(CNG manufacturers, 2f route deepening, ratings beyond Taipei) plus historic
+manufacturers and regional operator/vehicle depth once those were reached too.
+
+Seven commits, each with its own `gate:fast`, two full `gate:full` checkpoints
+(mid-run and at push time), pushed twice. Scope executed this run: **Part 1**
+(rebrand) and **Part 5** (V4 bus depth) essentially completely; **Part 2**
+partially (2a and 2b done, 2c inherited rather than freshly audited); **Parts
+3 and 4, and the full device-verification matrix, not started** — see "Not
+reached this run" below for why and what a follow-up should do first.
+
+### Part 1 — rebrand to Taiwan Transit Guide
+
+Renamed the site everywhere the brief named: `lib/site.ts` (SITE_NAME/
+SITE_DESCRIPTION), the wordmark alt text, all four `opengraph-image.tsx`
+routes, `app/icon.svg`, README, `docs/framework.md`, `docs/design-reference.md`,
+the discoverability test's title assertion, and two content pages' own
+self-citations. Regenerated `public/data/*.json` and the search index for the
+new attribution string via `npm run stations`/`npm run search` — both ran
+offline against already-committed TDX data, no drift.
+
+Audited for Taipei-only framing beyond the literal name, per the brief's
+explicit ask, and found the about page, the bus/rail/ferry section indexes and
+`/data`'s lead copy were not just Taipei-scoped but **stale on top of that** —
+the about page still said "the bus section is empty" and "this is version 1,
+only Wenhu has station pages" (both long false: the bus section alone has
+1,000+ route pages), the rail index said TRA and THSR "have no pages yet"
+(both are populated, 277 and 27 files respectively), and `/data`'s lead
+hard-coded "seven" line colours from an earlier, smaller LINES array. Rewrote
+all of them for accuracy and national scope together, since the staleness fix
+and the scope fix were the same edit in every case.
+
+**Self-inflicted and recovered: a CJK font regression**, the same failure
+mode flagged as a past-run risk in the run brief. Ran `npm run fonts` before
+rebuilding after editing `content/`; the script's own documented stale-build
+fallback fired (`out/` predated the edits) and unioned every per-line subset
+to the full 706 KB base set instead of the normal 25-178 KB per-line pairs.
+Rebuilt first, regenerated correctly, confirmed the result was byte-identical
+to what was already committed — no actual drift shipped, but the near-miss is
+recorded because the same trap fired again on three later batches (Part 2b,
+and twice in Part 5), each time caught the same way (rebuild before font
+regen) before it reached a commit.
+
+Did not rename the GitHub repository or Pages URL, per the brief's own
+instruction that doing so breaks the deployed site and every existing link.
+
+### Part 2a — split Rail's nav dropdown by mode
+
+**Taxonomy chosen**: Metro and light rail (`metro`, `tymc`, `tmrt`, `krtc`) /
+Conventional and high speed rail (`tra`, `thsr`) / Heritage and special
+railways (`alishan`, `cable`) — grouping at the existing SYSTEM (content
+folder) level, not the individual line. Three reasons this stopped there
+rather than going finer:
+
+1. `metro` already mixes TRTC, NTMC and the currently-operating Taoyuan
+   Airport MRT line under one folder — it is not a single-operator system
+   even today, and splitting it further by operator would fight the site's
+   own existing content organisation rather than the nav.
+2. The Sanying Line's own mode classification (metro vs light rail) is
+   explicitly recorded as the *weakest* claim in `lib/line-character.ts`.
+   Bucketing the whole `metro` folder under "Metro and light rail" does not
+   resolve that per-line ambiguity — it just doesn't force a finer call the
+   sources don't support either, which is exactly what the brief asked for.
+3. `tymc` (Taoyuan Metro, the company) is a different thing from the
+   `metro`-folder Airport MRT *line* it currently operates — the site
+   already separates "system as operator" from "line as entity" in a few
+   places, and the mode grouping had to respect that rather than merge them.
+
+**Implementation, deliberately narrow**: `lib/nav.ts` gained a mode layer
+above the existing per-system layer, reusing `NavGroupView`'s existing
+recursion through `NavGroup.subgroups` (already used for system → type
+nesting) — no new rendering code in `components/SiteNav.tsx` was needed, one
+level of nesting was already generic. Every mode bucket's own link points at
+`/rail/`, since none of the three buckets has (or needs) a dedicated URL of
+its own; nothing under `content/rail/` moved, no canonical URL changed. Fixed
+one break the restructure caused: the Stations subgroup lookup
+(`rail.groups.find(g => g.href === '/rail/metro/')`) assumed `metro` was a
+direct child of `rail.groups`, which stopped being true once it moved one
+level deeper into its mode bucket — now searches `subgroups` too.
+
+**What was deliberately not attempted**: physically moving `content/rail/tra`,
+`/thsr`, etc. under new top-level URL groupings. The brief's 2b explicitly
+requires the geography index to preserve every page's one canonical URL; 2a
+does not repeat that constraint, which reads as room for an actual URL
+reorganisation. Assessed and set aside this run — the existing redirect-stub
+mechanism (`scripts/postbuild.mjs`, already generating 1,078 stubs from 13
+move rules) would support it, but verifying ~550 rail pages' worth of new
+redirects, breadcrumbs and cross-links across a site that's live and
+presumably indexed is a much larger, higher-blast-radius task than fit safely
+alongside everything else this run. A nav-only split gets a reader the actual
+externally-visible benefit (mode is now legible, dropdowns are organised)
+without that risk. Recorded here as a scoped, reasoned deferral, not a silent
+scope cut — a future run doing the physical reorg should start from this
+taxonomy rather than re-deriving one.
+
+### Part 2b — a geography index over the existing mode hierarchy
+
+Added `/regions/` and `/regions/[slug]/` (`lib/regions.ts`, `app/regions/`),
+a hand-built route in the same family as `/about` and `/data`: Taipei and New
+Taipei, Taoyuan, Taichung, Kaohsiung, Tainan, Hsinchu, and Chiayi/Alishan.
+Pure index — every link is a page's one existing canonical URL, nothing
+duplicated. Where a region has nothing built for it (Tainan and Hsinchu have
+no rail/light rail or committed YouBike data on this site's evidence), the
+region page names the gap explicitly under "Not yet on this site" rather than
+linking somewhere approximate. Wired into the section nav bar, the sitemap,
+and `scripts/browser-verify.mjs`'s `PAGE_TYPES` (the brief's own warning that
+this list goes stale on new page types was accurate again — three runs
+running now, including this session's own new page type until it was added).
+
+`gate:full` (not run since before this run started) caught three real bugs
+from Parts 1-2b that `gate:fast`'s narrower scope had missed: 6 broken links
+in the Part 1 ferry-index rewrite (wrong hrefs — `/ferry/kinmen/` instead of
+the real `/ferry/routes/kinmen/`), 4 a11y warnings from raw Chinese text in
+the new region pages rendered outside a `zh-Hant` element (fixed by routing
+region summaries/notes through the existing `RichText` component, the same
+one the homepage already uses for exactly this), and a title collision plus
+an exact-page-count assertion both broken by the four region pages whose
+place names collide with existing THSR station page titles (Taichung,
+Taoyuan, Tainan, Hsinchu) — fixed with a disambiguating `<title>` suffix and
+an updated hand-maintained count in `tests/build-output.test.mts`.
+
+### Part 5 — CNG buses, 2f route deepening, historic manufacturers, ratings and operator depth beyond Taipei
+
+Dispatched 10 read-only scouts in one batch at the very start of the run, per
+the brief's instruction to saturate scouts before touching Part 1. **All 10
+failed immediately** — a session-wide rate limit ("You've hit your session
+limit") triggered by the burst of parallel dispatch. Continued directly with
+Part 1's mechanical rebrand work (no scouts needed) while the limit was in
+effect; the user's own next message asked to reactivate them, and by then the
+limit had cleared — resumed all 10 via `SendMessage` to their existing
+agent IDs rather than relaunching fresh ones, so each continued from
+whatever partial context it had. All 10 eventually completed successfully
+with substantial findings. The stated ceiling-test from the brief remains
+unresolved by this run in either direction — the failure was a rate limit
+hit by the *burst* of 10 simultaneous dispatches, not evidence about a
+sustainable running-concurrency ceiling.
+
+**CNG buses** (`content/bus/models/cng-buses.md`): the thinnest subject this
+project has researched. One Medium-confidence source (an ARTC technical
+article, not Taipei's own record) for a 6-vehicle 1999 pilot with a Neihu
+slow-fill station and a stated failure; no manufacturer named anywhere; no
+VSCC type-approval register exists for the fuel type at all, checked directly
+against VSCC's own index. Published honestly short.
+
+**2f route-level deepening**, folded into `content/bus/network/joint-operation.md`:
+fare-stage (段次) boundaries are published per individual route on
+ebus.gov.taipei, not as a citywide map — three routes read directly, with
+0東's boundary shown to be direction-asymmetric (outbound and return
+boundaries sit at different stop pairs entirely). Vehicle allocation is
+constrained only in two specific administrative situations (a route changing
+hands; a designated 服務性路線), not by a general per-route formula. Confirmed
+by direct regulation text that operator evaluation scores the operator, never
+the route.
+
+**Historic and domestic manufacturers** (`content/bus/models/historic-manufacturers.md`):
+two dated 1970s/80s fleet purchases (1976 Mercedes-Benz L508D, 1980 Hino
+BM400/BY420) from a single Wikipedia article, checked directly against a
+sibling article on the same topic and found uncorroborated even there.
+Metropolitan Bus's post-2004-privatisation Isuzu-chassis/日盈機械-body pairing,
+with a genuine unresolved conflict on when that coachbuilder closed
+(zh.wikipedia: "late 2009"; an independent registry mirror: 23 October 2013).
+Ruled out three candidate domestic manufacturers the brief's own leads
+pointed at (China Motor Corp, Ford Liuho, San Fu) — detailed vehicle
+histories exist for all three with no bus connection found in any.
+
+**Operator ratings beyond Taipei**, extending `content/bus/network/operator-ratings.md`:
+every one of Taoyuan, Taichung, Kaohsiung and Tainan runs its own separate
+scheme, none a republication of another city's. Dated grade tables for
+Taichung (113年度, both periods) and Tainan (four ceremony years), Kaohsiung's
+2017 results, and Taoyuan's currently-live scheme including a publicly
+disputed punctuality figure — with Taoyuan's historical (2017/2021) grades
+explicitly left TBC because the archived announcement pages no longer resolve
+on the live site. Ran down and closed out a premise in the run brief itself:
+no Kaohsiung operator named 大都會客運 or 岡山客運 exists, checked directly
+against Kaohsiung's own current operator list.
+
+**Regional bus operator and vehicle depth**, appended to all four existing
+`content/bus/regional/*.md` pages (each already had "operator/fleet/depot
+history" as a named stated gap): Taichung's four operator corporate
+histories, its six-line colour-coded trunk network, and its 2013-2015 BRT
+Blue Line (Taiwan's first articulated-bus route, converted to an ordinary bus
+lane after 13 months); Kaohsiung's two differently-formed dominant operators
+(高雄客運, owned by 三地集團 since ~2016, vs. 港都客運, the 2014 privatisation of
+the former municipal operator) and three different, unreconciled citywide
+electric-bus counts across three dates; Tainan's unstable, tender-reshaped
+operator roster including a sixth operator added after this page's own TDX
+snapshot was taken; Hsinchu's three-operator trunk-line split and one
+question left genuinely open (whether 新竹客運 still runs Hsinchu *city* buses
+after its confirmed exit from regional *highway* routes).
+
+### Verification
+
+Two full `gate:full` checkpoints, both clean at the standing baseline (0
+genuine WCAG contrast failures, 0 broken links, 0 a11y errors/warnings, 0
+ASSERTED claims, 236/236 unit tests, 17/17 fact cross-checks). `npm run
+verify:browser` (the real-device screenshot/reflow/keyboard sweep) was
+**not run this session** — see below.
+
+### Not reached this run
+
+**Part 2c** (nav interaction rules — closed-by-default subgroups, the
+hover-gap fix, 320px behaviour, keyboard/touch/screen-reader correctness) was
+not freshly audited; the existing `SiteNav`/`NavGroupView` architecture
+already implements most of what 2c asks for (verified by reading the code,
+not by testing on real devices), and the region/mode-split work reused it
+rather than changing it. **Part 3** (homepage redesign, system colour
+identities, Wikimedia photo sourcing with MD5 verification, consistent
+iconography, reduced-motion-respecting transitions) — not started at all.
+**Part 4** (the word-count-distribution audit and systematic DORTS/gazette/
+thesis source-family exhaustion the brief asks for before any page is allowed
+to stay short) — not started as a standalone pass, though several Part 5
+pages individually did exhaust the equivalent source families for their own
+subject and documented it in their own "Checked and failed" sections.
+
+**The full device-verification matrix** (17 viewports × every page type,
+reflow at 400%/200% zoom, screenshot-by-screenshot review) was not run. This
+is the largest single remaining risk: the mode-split nav and the two new
+region page types have not been visually verified at 320px or in a real
+browser, only confirmed to build, pass `a11y`/`check`/unit tests, and render
+correct HTML structure. A follow-up run should treat `npm run verify:browser`
+as the first task, specifically on `/regions/`, `/regions/[slug]/` and the
+mode-split Rail dropdown, before doing anything else — those are exactly the
+kind of new layout the brief's own Run 5.1 lesson (quoted in
+`scripts/browser-verify.mjs`) warns has no coverage until someone looks.
+
+**The scout concurrency ceiling** the brief has asked three runs running to
+find remains untested in either direction: this run's 10-scout burst all
+failed to a rate limit before any of them made a request, which is evidence
+about burst dispatch, not about a sustained ceiling. A future run should
+stagger dispatch (e.g. two batches of 5 a few seconds apart) rather than one
+burst of 10, to actually separate "too many at once" from "too many running."
+
 ## Run 302 - fix CI screenshot crash, close 3 gate:fast gaps, start V4 bus depth (2026-08-28)
 
 ### Part 0 — CI was crashing on /data/sources/
