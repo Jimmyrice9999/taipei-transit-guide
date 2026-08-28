@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26880,
-    "tbc": 4612,
+    "sourced": 26910,
+    "tbc": 4613,
     "asserted": 0,
-    "meta": 107
+    "meta": 108
   },
   "files": [
     {
@@ -946,32 +946,32 @@
     },
     {
       "file": "content/bus/regional/hsinchu.md",
-      "sources": 6,
-      "sourced": 20,
+      "sources": 10,
+      "sourced": 25,
       "tbc": 3,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/bus/regional/kaohsiung.md",
-      "sources": 14,
-      "sourced": 21,
-      "tbc": 3,
+      "sources": 21,
+      "sourced": 30,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/regional/taichung.md",
-      "sources": 5,
-      "sourced": 22,
+      "sources": 14,
+      "sourced": 30,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/regional/tainan.md",
-      "sources": 17,
-      "sourced": 34,
+      "sources": 23,
+      "sourced": 42,
       "tbc": 2,
       "asserted": 0,
       "meta": 0

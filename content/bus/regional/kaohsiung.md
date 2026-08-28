@@ -2,7 +2,7 @@
 title: Kaohsiung regional buses
 description: A dated TDX snapshot of Kaohsiung city-bus routes, operators and ordered stops, with the municipal fare, low-demand taxi-bus and accessibility boundaries kept explicit.
 summary: Kaohsiung's TDX snapshot exposes 316 route records, 617 direction runs, 19,191 ordered stops and 30 operator records; the municipal route index separately reports 197 routes.
-updated: 2026-08-25
+updated: 2026-08-28
 facts:
   - label: TDX route entries
     value: "316"
@@ -162,6 +162,69 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full catalogue lists annual fields including route mileage, vehicles, trips, passenger count, passenger-kilometres and revenue; its linked JSON and CSV resources failed direct fetch, so no values are asserted.
+  - id: zh-ksbus
+    title: Kaohsiung Bus Co., Ltd.
+    titleOriginal: 高雄客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/wiki/高雄客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Traces to 高旗自動車株式會社 (Japanese era, 1941 by this article's account, not independently confirmed on the operator's own primary page). Names parent 三地集團 (Santi Group) and subsidiaries 府城客運, 普悠瑪客運, 嘉義客運 (2019) and 苗栗客運 (2024).
+  - id: ksbus-about
+    title: Kaohsiung Bus — company history
+    titleOriginal: 高雄客運-歷史沿革
+    publisher: 高雄汽車客運股份有限公司
+    url: https://ksbus.com.tw/about.asp?id=2
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's own page (fetched without the www. subdomain, which fails a certificate check). States eleven business stations by name, including one at Gangshan (岡山) — direct evidence against a separate \"岡山客運\" company — and 63 maintenance staff. Does not state an explicit founding year in the text this site could extract."
+  - id: mirror-santi
+    title: Quietly taking control of Guai Guai and Nanren Lake — Kaohsiung's land-consolidation magnate revealed
+    titleOriginal: 低調入主乖乖南仁湖 高雄百億土地重劃大王揭祕
+    publisher: 鏡週刊 (Mirror Media)
+    url: https://www.mirrormedia.mg/story/20210705fin005
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Investigative feature naming 高雄客運 as 三地集團's first acquisition/turnaround target roughly five years before the 2021-07-05 article (so approximately 2016, not exact), quoting group CEO 鍾育霖.
+  - id: zh-gangdubus
+    title: Gangdu Bus
+    titleOriginal: 港都客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/wiki/港都客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Formed 1 January 2014 privatising 高雄市公共汽車管理處 (predecessor operating from 1937 under Japanese rule). Ownership roughly 42% Kaohsiung City Government, 58% former public-bus-office employees. The operator's own site (gdbus.com.tw) could not be fetched — a TLS configuration error — so every claim here rests on this secondary source."
+  - id: takao-pictorial
+    title: Kaohsiung's new good-life progress, No. 05
+    titleOriginal: 高雄新好生活進行式 No.05
+    publisher: Kaohsiung City Government Information Bureau (高雄市政府新聞局), 高雄畫刊
+    url: https://takao.kcg.gov.tw/article/760
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: "Published 2026-05-06. States a citywide figure of 195 electric low-floor buses out of roughly 1,000+ total city buses (19%), and profiles a Foxtron \"Model T\" bus in service on Route 24 with a stated 2-hour 80% charge time."
+  - id: motc168-ksev-2018
+    title: Green electric bus era arrives — Kaohsiung buses roll out further and further
+    titleOriginal: 綠色電動巴士時代來臨 高雄公車愈開愈遠
+    publisher: MOTC Traffic Safety Portal (交通部168交通安全入口網)
+    url: https://168.motc.gov.tw/theme/fullsized/post/1906121103392
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Dated 2018-04-10. States a citywide total of 77 electric buses across seven private operators: 港都客運 50, 南台灣客運 14, 高雄客運 11, 漢程客運 2 — a much smaller figure than the 2022 195-bus count, from an earlier date."
+  - id: zh-pingtungbus
+    title: Pingtung Bus
+    titleOriginal: 屏東客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/wiki/屏東客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Founded 1931, current name from 1947. Runs routes 9117, 9127, 9188, 9189 jointly with 高雄客運 into Kaohsiung, with a Kaohsiung station established 2001.
   - id: kaohsiung-statistics-journal
     title: Kaohsiung transportation statistical reports index
     titleOriginal: 統計刊物專區
@@ -196,6 +259,53 @@ Kaohsiung's 公車式小黃 plan explains that taxi vehicles substitute for bus 
 The Transportation Bureau maintains a separate accessibility index listing a dated low-floor-bus route and reservation-information file, a rehabilitation-bus service and facility information.[^kaohsiung-accessibility] The linked low-floor-bus PDF did not return successfully in the full fetch, so this regional page does not invent a route-level accessible-bus list or claim that every TDX route is step-free.[^kaohsiung-accessibility]
 
 The official open-data catalogue for Kaohsiung MRT feeder-bus operations lists annual route mileage, vehicles, trips, operated kilometres, passenger count, passenger-kilometres and revenue fields.[^kaohsiung-ridership] Its linked JSON and CSV resources both failed direct fetch in this environment, so current passenger totals and a historical ridership series remain TBC.[^kaohsiung-ridership] The bureau's statistical-publications index confirms that transportation reports exist for Minguo 104 through 113, but the 113 report link returned 404 in the full fetch; no table value is substituted from a search result.[^kaohsiung-statistics-journal]
+
+## Operators and ownership
+
+**Two operators dominate the network by history rather than by TDX
+record count.** 高雄客運 (Kaohsiung Bus) traces to a Japanese-era
+predecessor, 高旗自動車株式會社[^zh-ksbus] — a date this site could not
+independently confirm on the operator's own history page, which states
+eleven named business stations (including one at **岡山**, Gangshan) and
+63 maintenance staff without giving an explicit founding year in the text
+fetched[^ksbus-about]. It has been owned by **三地集團** (Santi Group)
+since roughly 2016 (an approximate date — the source gives only "five
+years before" a 2021 article), whose other holdings include 府城客運
+(Tainan), 普悠瑪客運 (Taitung), and, more recently, 嘉義客運 (2019) and
+苗栗客運 (2024)[^zh-ksbus] [^mirror-santi]. **港都客運** (Gangdu Bus) is a
+different company: formed 1 January 2014 by privatising the former
+municipal operator, 高雄市公共汽車管理處, which itself traces to a business
+operating from 1937 under Japanese rule[^zh-gangdubus]. Ownership splits
+roughly 42% Kaohsiung City Government and 58% former public-bus-office
+employees[^zh-gangdubus] — the same city-minority/employee-majority shape
+as Taipei's 大都會客運, formed the same way a decade later.
+
+**A name-collision check, run directly against this evidence**: no
+operator called 大都會客運 or 岡山客運 exists in Kaohsiung. 高雄客運's own page
+names a Gangshan (岡山) service **station**, not a separate company[^ksbus-about],
+and the only 大都會客運 this site has found anywhere is
+[Taipei's](/bus/operators/metropolitanbus-h3iwov/) — see the [operator
+ratings page](/bus/network/operator-ratings/) for the fuller account.
+**屏東客運** (Pingtung Bus), founded 1931, also serves Kaohsiung: routes
+9117, 9127, 9188 and 9189 run jointly with 高雄客運, with a dedicated
+Kaohsiung station since 2001[^zh-pingtungbus].
+
+## Electric buses — three citywide counts, three different dates
+
+No single reconciled figure exists; this site publishes all three rather
+than picking one. **10 April 2018**: 77 electric buses across seven
+private operators — 港都客運 50, 南台灣客運 14, 高雄客運 11, 漢程客運
+2[^motc168-ksev-2018]. **6 May 2022**: a city government publication
+states 195 electric low-floor buses out of roughly 1,000+ total city
+buses, 19% — described as the first among Taiwan's major
+cities[^takao-pictorial]. **A higher, unverified figure**: search results
+describe up to 130 electric buses at 港都客運 alone, called "全國第一"
+(first nationally) by a business magazine — this site could not fetch
+that article (HTTP 403 on every attempt, including an AMP variant) and
+does not publish the figure as fact. The same 2022 publication profiles a
+Foxtron [Model T](/bus/models/model-t-electric/) bus in service on Route
+24, with a stated 80%-charge time of two hours, though it does not name
+which operator runs that route[^takao-pictorial].
 
 ## Conflicts and gaps
 

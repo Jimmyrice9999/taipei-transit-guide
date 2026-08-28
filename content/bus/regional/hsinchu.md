@@ -2,7 +2,7 @@
 title: Hsinchu regional buses
 description: A dated snapshot of Hsinchu city and county buses, route terminals, published departures and fare links.
 summary: The Hsinchu iBus portal's city, county express, Zhubei, tourist and medical-bus categories, preserved as a dated route and stop data layer.
-updated: 2026-08-25
+updated: 2026-08-28
 facts:
   - label: Route entries
     value: "68"
@@ -96,6 +96,42 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Identifies the separate monthly aggregate fields that would be needed for a Hsinchu ridership comparison; no Hsinchu values are asserted here.
+  - id: zh-hsinchubus
+    title: Hsinchu Bus Co.
+    titleOriginal: 新竹客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/wiki/新竹客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Founded 29 September 1919 as 台灣軌道株式會社, reorganised into 新竹汽車客運股份有限公司 in 1946 — the region's first bus operator. States the company currently runs only Hsinchu city buses and two intercity routes, which sits in tension with the fully-exited framing of a separately fetched 2024 news article — see the conflict noted below."
+  - id: ltn-hsinchubus-exit
+    title: Hsinchu Bus exits Hsinchu–Miaoli routes — a century of history carrying the city's memories
+    titleOriginal: 新竹客運退出竹竹苗路線 百年風華承載大新竹城市記憶與故事
+    publisher: 自由時報 (Liberty Times)
+    url: https://news.ltn.com.tw/news/life/breakingnews/4849155
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Reports 新竹客運's full exit from 竹竹苗 (Hsinchu-Miaoli) regional highway-bus routes effective 1 November 2024, citing falling ridership from demographic and pandemic pressures and rising private-vehicle ownership. Whether this exit included Hsinchu city routes specifically, as opposed to only intercity/highway routes, is not resolved against the zh.wikipedia claim above — published as a conflict."
+  - id: zh-hsinchu-green-line
+    title: Hsinchu City Bus Green Line
+    titleOriginal: 新竹市公車綠線
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/新竹市公車綠線
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: The Green Line, formed 25 December 2015 from former Miaoli Bus (苗栗客運) highway route 5809, is operated by 苗栗客運 — not by 新竹客運, the operator of the city's Blue Line (formed the same date from former routes 1 and 15).
+  - id: hakkanews-pilot-bus
+    title: Hsinchu's electric pilot bus in trial operation by month's end, formal launch by year's end
+    titleOriginal: 竹市電動公車本月底前試營運 年底前正式上路
+    publisher: 客新聞 HakkaNews
+    url: https://hakkanews.tw/2024/09/24/144810/
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Dated 2024-09-24. The 新竹市先導公車 (pilot bus) route, 10 electric buses funded by a NT$52 million MOTC Highway Bureau subsidy, is operated by 國光客運, not by 新竹客運 — merging the former 紅線/橘線 circular shuttles and linking the station, two universities, the Science Park and HSR Hsinchu.
 ---
 
 Hsinchu's public bus information is split across city and county responsibilities, but the city government's iBus portal presents the regional catalogue in one route selector.[^hsinchu-portal] The committed snapshot covers five categories shown by that selector: 新竹市市區公車 (Hsinchu City buses), 新竹縣快捷巴士 (Hsinchu County express buses), 竹北市民公車 (Zhubei citizen buses), 新竹縣觀光巴士 (Hsinchu County tourist buses), and 新竹縣醫療專車 (Hsinchu County medical shuttles).[^hsinchu-portal] The same portal also exposes national and regional highway-bus queries, but those are a different publication layer from the city-and-county route records below.[^hsinchu-portal][^thb-intercity-timetable]
@@ -133,3 +169,32 @@ The detail response provides a linked 票價 page for routes, but it does not in
 The national Highway Bureau timetable is kept separate because its catalogue describes a static nationwide export with its own operator, route, stop, date and departure fields.[^thb-intercity-timetable] A Hsinchu route appearing in both systems would be a cross-layer relationship to verify, not a reason to merge the two route identities. This page does not use the Highway Bureau's national route count or monthly aggregate statistics as Hsinchu figures.[^thb-intercity-timetable][^thb-intercity-stats]
 
 No ridership series, vehicle roster, depot allocation, contract history, accessibility inventory or stable historical route-change series is asserted here. Those fields need primary records from Hsinchu City, Hsinchu County, operators or the Highway Bureau, fetched at full length. A 2024 Hsinchu transport-department PDF route-summary lead was checked on 25 August 2026 but returned HTTP 403, so it is recorded as a failed lead in the research file and is not used to fill the current snapshot.[^hsinchu-portal]
+
+## Operators, and one unsettled question about scope
+
+新竹客運 (Hsinchu Bus), the region's oldest operator, traces to 台灣軌道
+株式會社, founded 29 September 1919[^zh-hsinchubus]. **Whether it still
+runs Hsinchu city buses is not settled.** zh.wikipedia's own article
+states the company currently operates only Hsinchu city buses and two
+intercity routes[^zh-hsinchubus]. A separately fetched news account
+reports that 新竹客運 exited **regional highway-bus routes** across
+Hsinchu-Miaoli (竹竹苗) entirely on 1 November 2024, citing falling
+ridership from demographic decline, pandemic effects and rising
+private-vehicle ownership[^ltn-hsinchubus-exit] — but that article's own
+framing is about intercity/highway routes, not explicitly about the city
+network the route catalogue above draws from, which still lists 新竹客運
+as an operator label. This site does not resolve the two readings against
+each other; the catalogue above, dated 25 August 2026, is the more recent
+primary evidence and leans toward "still operating city routes."
+
+The city's own two trunk lines have different operators: the **Blue
+Line** (formed 25 December 2015 from former routes 1 and 15) is run by
+新竹客運, while the separately-formed **Green Line**, from the same date,
+is run by **苗栗客運** (Miaoli Bus) — originally a highway route,
+5809[^zh-hsinchu-green-line]. A newer, fully electric **先導公車** (pilot
+bus) route is run by **國光客運**: ten electric buses, funded by a
+NT$52 million Highway Bureau subsidy, merging the former 紅線/橘線 circular
+shuttles and linking the railway station, two universities, the Science
+Park and HSR Hsinchu Station[^hakkanews-pilot-bus]. Hsinchu's route
+catalogue is therefore run by at least four distinct companies across its
+different lines, not one dominant city operator.

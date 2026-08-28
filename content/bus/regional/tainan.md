@@ -2,7 +2,7 @@
 title: Tainan regional buses
 description: A dated TDX route-and-stop snapshot of Tainan city buses, annual route ridership and the 小黃公車 reservation network.
 summary: Tainan's live TDX city-bus catalogue exposes route identities, operators and ordered stops, while the city publishes seven Minguo years of annual route ridership and a separate 52-route 小黃公車 network.
-updated: 2026-08-25
+updated: 2026-08-28
 facts:
   - label: TDX route entries
     value: "165"
@@ -202,6 +202,60 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full official notice records the 黃3/黃16 joint bus-taxi operation, new 黃23 service, reservation window and fare treatment.
+  - id: zh-shingnanbus
+    title: Shing Nan Bus
+    titleOriginal: 興南客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/興南客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: "Traces to 台灣輕鐵株式會社 (1921), merged into 興南乘合自動車株式會社 1 September 1941, renamed 興南汽車客運股份有限公司 26 April 1947. Fetched twice; a first pass garbled the years to 1912/1942, corrected on a targeted re-fetch — quoted text here is from the corrected fetch: 「1941年9月3日，台灣輕鐵株式會社、新化軌道株式會社與佳里商會合併為興南乘合自動車株式會社」."
+  - id: zh-xinyingbus
+    title: Xinying Bus
+    titleOriginal: 新營客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/新營客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Formally established January 1950, tracing to a Japanese-era predecessor. Joined the Tainan city-bus system in a first batch of 44 transferred highway routes — this source and the separate 大台南公車 wiki article disagree on the year (2011 here, 2012 there); not independently resolved.
+  - id: zh-fuchengbus
+    title: Fucheng Bus (Tainan Bus)
+    titleOriginal: 府城客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/府城客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Founded 2013-06-19 (統編 54077201) as a subsidiary spun off from 高雄客運 at the Tainan Transportation Bureau's request, after the original 台南客運 (a differently-owned company despite the similar English name) ceased operating city routes in 2003. Took over routes from 高雄客運 through 2013; later added double-decker circular routes (2018) and a tourist shuttle.
+  - id: zh-hanchengbus
+    title: Han-Cheng Bus
+    titleOriginal: 漢程客運
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/漢程客運
+    accessed: 2026-08-28
+    kind: secondary
+    lang: zh-Hant
+    note: Founded 2013-11-15, HQ Kaohsiung, member of 台灣愛巴士交通聯盟 (Taiwan iBus Transportation Alliance, alongside 巨業交通 and 全航客運, also documented on this site's Taichung page). Began Kaohsiung operations 2013-12-15; expanded into Tainan 2019-12-05 as its fourth city-bus operator.
+  - id: tainan-route77-transfer
+    title: Route 77 operator transfer notice
+    titleOriginal: 大台南公車77路4/10起改由漢程客運營運
+    publisher: Tainan City Government (臺南市政府)
+    url: https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8381879
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Dated 2023-04-08. Route 77 transferred from 府城客運 to 漢程客運 effective 2023-04-10, 40 daily trips, same stops and alignment.
+  - id: tainan-2024-tender
+    title: Tainan city bus network reorganisation — new route awards
+    titleOriginal: 大台南公車路網整理計畫 新增業者路線
+    publisher: Tainan City Government (臺南市政府)
+    url: https://www.tainan.gov.tw/news_content.aspx?n=13370&s=8687622
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Dated 2024-08-21. Awarded 巨業交通 nine routes (existing and new) with a first batch targeted for Q4 2024, and awarded 統聯客運 ten routes, becoming Tainan's sixth operator from 2025-01-03.
 ---
 
 Tainan's public-bus data has several official layers, and they are not interchangeable. The Government Data Open Platform describes the route and stop datasets as Tainan Transportation Bureau data sourced through TDX, while the live TDX responses expose the route identities and ordered stop records used here.[^tainan-route-dataset][^tainan-stop-dataset][^tainan-route-tdx][^tainan-stop-tdx] The [committed Tainan route JSON](/data/tainan-bus-routes.json) keeps that distinction visible: route metadata, sub-routes and source update times are separate from the direction-level stop arrays.[^tainan-route-tdx][^tainan-stop-tdx]
@@ -248,6 +302,44 @@ The sharp fall between 109 and 110 is visible in the source-derived sum, but thi
 Tainan describes 小黃公車 as city-bus service operated with taxi vehicles, with fixed routes, stops and timetables plus a reservation mode for trips within one kilometre of a route stop when booked by 17:00 the day before.[^tainan-yellow] The official Q&A also describes reservation stops in places without a fixed route or fixed timetable, so a stop listed in that part of the page must not be treated as a normal scheduled stop.[^tainan-yellow] Its current route table names 52 unique routes across 32 administrative districts and identifies 台一大車隊 or 中華衛星大車隊 for the grouped services.[^tainan-yellow]
 
 The city has continued to change the service model. A recent official notice describes 黃3 and 黃16 as joint bus-and-taxi services, adds 黃23 between 西寮代天府 and 柳營奇美醫院, and states a reservation window from 06:00 to 22:00 for qualifying bookings.[^tainan-yellow-notice] The JSON preserves the grouped route table and unique route names, but leaves individual departure times to the official portal's timetable layer rather than copying a dynamic or image-only schedule into a static claim.[^tainan-yellow][^tainan-portal]
+
+## Operators — a network that keeps changing hands
+
+Tainan's city-bus operator roster has been actively reshaped by tender
+through the 2020s, unlike Taipei's stable joint-operation
+group[^tainan-2024-tender]. **興南客運** (Shing Nan Bus) is the oldest, tracing to 台灣輕鐵株式會社 (1921)
+and a 1941 merger into 興南乘合自動車株式會社[^zh-shingnanbus]. **新營客運**
+(Xinying Bus), formally established January 1950, joined the Tainan
+system in a first batch of 44 transferred highway routes — sources
+disagree on whether that was 2011 or 2012[^zh-xinyingbus]. **府城客運**
+(Fucheng Bus) is younger and structurally distinct: founded 2013 as a
+subsidiary spun off from **Kaohsiung Bus** (高雄客運, also documented on
+this site's [Kaohsiung page](/bus/regional/kaohsiung/)) specifically to
+give Tainan a dedicated city-bus brand, after the original, differently-owned
+台南客運 stopped running city routes in 2003[^zh-fuchengbus]. **漢程客運**
+(Han-Cheng Bus), founded 2013 in Kaohsiung as part of the same 台灣愛巴士
+交通聯盟 alliance as 巨業交運/巨業交通, expanded into Tainan in December 2019
+as its fourth operator[^zh-hanchengbus].
+
+**Route 77 traces a small chain of hand-offs that is itself informative.**
+Launched 2016 as Tainan's first electric-bus route, it passed from its
+original operator to 府城客運 and then, from 10 April 2023, to 漢程客運 — the
+same 40 daily trips and alignment carried through each transfer[^tainan-route77-transfer].
+A **2024-08-21 network reorganisation** awarded 巨業交通 nine routes
+(existing and new, first batch targeted for Q4 2024) and 統聯客運 ten
+routes, making 統聯客運 Tainan's sixth operator from **3 January
+2025**[^tainan-2024-tender] — after the TDX snapshot above was retrieved,
+so that operator may not yet appear in the committed route/operator
+records.
+
+## Conflicts
+
+新營客運's own zh.wikipedia article and the separate 大台南公車 overview
+article disagree on the year it joined the Tainan network — 2011 in one,
+2012 in the other, describing what appears to be the same 44-route
+transfer[^zh-xinyingbus]. Neither is independently corroborated against a
+Tainan city government primary source; both are published rather than
+picked.
 
 ## Gaps and conflicts
 

@@ -462,6 +462,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the committed operator record, contact fields, source municipality, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields."
+  - id: "bus-regional-kaohsiung-motc168-ksev-2018"
+    title: "Green electric bus era arrives — Kaohsiung buses roll out further and further"
+    titleOriginal: "綠色電動巴士時代來臨 高雄公車愈開愈遠"
+    publisher: "MOTC Traffic Safety Portal (交通部168交通安全入口網)"
+    url: "https://168.motc.gov.tw/theme/fullsized/post/1906121103392"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Dated 2018-04-10. States a citywide total of 77 electric buses across seven private operators: 港都客運 50, 南台灣客運 14, 高雄客運 11, 漢程客運 2 — a much smaller figure than the 2022 195-bus count, from an earlier date."
+  - id: "bus-regional-kaohsiung-takao-pictorial"
+    title: "Kaohsiung's new good-life progress, No. 05"
+    titleOriginal: "高雄新好生活進行式 No.05"
+    publisher: "Kaohsiung City Government Information Bureau (高雄市政府新聞局), 高雄畫刊"
+    url: "https://takao.kcg.gov.tw/article/760"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Published 2026-05-06. States a citywide figure of 195 electric low-floor buses out of roughly 1,000+ total city buses (19%), and profiles a Foxtron \"Model T\" bus in service on Route 24 with a stated 2-hour 80% charge time."
   - id: "bus-regional-kaohsiung-kaohsiung-route-index"
     title: "Kaohsiung bus route overview by route"
     titleOriginal: "公車路線總覽(依路線別)"
@@ -507,6 +525,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The full catalogue lists annual fields including route mileage, vehicles, trips, passenger count, passenger-kilometres and revenue; its linked JSON and CSV resources failed direct fetch, so no values are asserted."
+  - id: "bus-regional-taichung-taichung-about"
+    title: "Taichung Bus — company profile"
+    titleOriginal: "台中客運-公司簡介"
+    publisher: "臺中汽車客運股份有限公司"
+    url: "https://www.tcbus.com.tw/co_about.html"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator's own page, fetched in full. Supports the 474-vehicle fleet figure (undated) and one of two disagreeing depot/station lists — see the conflicts section."
+  - id: "bus-regional-taichung-taichung-office"
+    title: "Taichung Bus — stations"
+    titleOriginal: "台中客運-站場簡介"
+    publisher: "臺中汽車客運股份有限公司"
+    url: "https://www.tcbus.com.tw/co_office.html"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator's own second, longer depot/station list (12 facilities against the About page's 8-9) — the two pages do not agree and this site publishes both."
   - id: "bus-regional-taichung-taichung-dataset"
     title: "Taichung city-bus route and stop information dataset"
     titleOriginal: "臺中市市區公車路線站點資訊"
@@ -543,6 +579,60 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The official page lists 26 Yellow routes, fixed-departure and reservation rules, two reservation phone groups, stop behaviour and linked route/timetable images."
+  - id: "bus-regional-tainan-tainan-2024-tender"
+    title: "Tainan city bus network reorganisation — new route awards"
+    titleOriginal: "大台南公車路網整理計畫 新增業者路線"
+    publisher: "Tainan City Government (臺南市政府)"
+    url: "https://www.tainan.gov.tw/news_content.aspx?n=13370&s=8687622"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Dated 2024-08-21. Awarded 巨業交通 nine routes (existing and new) with a first batch targeted for Q4 2024, and awarded 統聯客運 ten routes, becoming Tainan's sixth operator from 2025-01-03."
+  - id: "bus-regional-tainan-zh-shingnanbus"
+    title: "Shing Nan Bus"
+    titleOriginal: "興南客運"
+    publisher: "維基百科 (Chinese Wikipedia)"
+    url: "https://zh.wikipedia.org/zh-tw/興南客運"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Traces to 台灣輕鐵株式會社 (1921), merged into 興南乘合自動車株式會社 1 September 1941, renamed 興南汽車客運股份有限公司 26 April 1947. Fetched twice; a first pass garbled the years to 1912/1942, corrected on a targeted re-fetch — quoted text here is from the corrected fetch: 「1941年9月3日，台灣輕鐵株式會社、新化軌道株式會社與佳里商會合併為興南乘合自動車株式會社」."
+  - id: "bus-regional-tainan-zh-xinyingbus"
+    title: "Xinying Bus"
+    titleOriginal: "新營客運"
+    publisher: "維基百科 (Chinese Wikipedia)"
+    url: "https://zh.wikipedia.org/zh-tw/新營客運"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Formally established January 1950, tracing to a Japanese-era predecessor. Joined the Tainan city-bus system in a first batch of 44 transferred highway routes — this source and the separate 大台南公車 wiki article disagree on the year (2011 here, 2012 there); not independently resolved."
+  - id: "bus-regional-tainan-zh-fuchengbus"
+    title: "Fucheng Bus (Tainan Bus)"
+    titleOriginal: "府城客運"
+    publisher: "維基百科 (Chinese Wikipedia)"
+    url: "https://zh.wikipedia.org/zh-tw/府城客運"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Founded 2013-06-19 (統編 54077201) as a subsidiary spun off from 高雄客運 at the Tainan Transportation Bureau's request, after the original 台南客運 (a differently-owned company despite the similar English name) ceased operating city routes in 2003. Took over routes from 高雄客運 through 2013; later added double-decker circular routes (2018) and a tourist shuttle."
+  - id: "bus-regional-tainan-zh-hanchengbus"
+    title: "Han-Cheng Bus"
+    titleOriginal: "漢程客運"
+    publisher: "維基百科 (Chinese Wikipedia)"
+    url: "https://zh.wikipedia.org/zh-tw/漢程客運"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Founded 2013-11-15, HQ Kaohsiung, member of 台灣愛巴士交通聯盟 (Taiwan iBus Transportation Alliance, alongside 巨業交通 and 全航客運, also documented on this site's Taichung page). Began Kaohsiung operations 2013-12-15; expanded into Tainan 2019-12-05 as its fourth city-bus operator."
+  - id: "bus-regional-tainan-tainan-route77-transfer"
+    title: "Route 77 operator transfer notice"
+    titleOriginal: "大台南公車77路4/10起改由漢程客運營運"
+    publisher: "Tainan City Government (臺南市政府)"
+    url: "https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8381879"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Dated 2023-04-08. Route 77 transferred from 府城客運 to 漢程客運 effective 2023-04-10, 40 daily trips, same stops and alignment."
   - id: "bus-regional-tainan-tainan-route-dataset"
     title: "Tainan city-bus route data"
     titleOriginal: "大台南公車路線資料"
@@ -2668,6 +2758,32 @@ The Highway Bureau's open-data catalogue is narrower and newer: its dataset was 
 - [National electric-bus operating vehicle count and manufacturer dataset](https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=734) — primary; Highway Bureau, Ministry of Transportation and Communications (交通部公路局); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-data]
 - [TDX bus operator and route pull](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺); accessed 2026-08-15.[^bus-operators-taoyuanbus-2ov8j-tdx-bus-operator-pull]
 
+## Kaohsiung regional buses — Electric buses — three citywide counts, three different dates
+
+Discussed on [Kaohsiung regional buses](/bus/regional/kaohsiung/) in the source page's “Electric buses — three citywide counts, three different dates” section.[^bus-regional-kaohsiung-motc168-ksev-2018]
+
+### Electric buses — three citywide counts, three different dates
+
+No single reconciled figure exists; this site publishes all three rather
+than picking one. **10 April 2018**: 77 electric buses across seven
+private operators — 港都客運 50, 南台灣客運 14, 高雄客運 11, 漢程客運
+2[^bus-regional-kaohsiung-motc168-ksev-2018]. **6 May 2022**: a city government publication
+states 195 electric low-floor buses out of roughly 1,000+ total city
+buses, 19% — described as the first among Taiwan's major
+cities[^bus-regional-kaohsiung-takao-pictorial]. **A higher, unverified figure**: search results
+describe up to 130 electric buses at 港都客運 alone, called "全國第一"
+(first nationally) by a business magazine — this site could not fetch
+that article (HTTP 403 on every attempt, including an AMP variant) and
+does not publish the figure as fact. The same 2022 publication profiles a
+Foxtron [Model T](/bus/models/model-t-electric/) bus in service on Route
+24, with a stated 80%-charge time of two hours, though it does not name
+which operator runs that route[^bus-regional-kaohsiung-takao-pictorial].
+
+#### Sources for this entry
+
+- [Green electric bus era arrives — Kaohsiung buses roll out further and further](https://168.motc.gov.tw/theme/fullsized/post/1906121103392) — secondary; MOTC Traffic Safety Portal (交通部168交通安全入口網); accessed 2026-08-28.[^bus-regional-kaohsiung-motc168-ksev-2018]
+- [Kaohsiung's new good-life progress, No. 05](https://takao.kcg.gov.tw/article/760) — primary; Kaohsiung City Government Information Bureau (高雄市政府新聞局), 高雄畫刊; accessed 2026-08-28.[^bus-regional-kaohsiung-takao-pictorial]
+
 ## Kaohsiung regional buses — Conflicts and gaps
 
 Discussed on [Kaohsiung regional buses](/bus/regional/kaohsiung/) in the source page's “Conflicts and gaps” section.[^bus-regional-kaohsiung-kaohsiung-route-index]
@@ -2686,9 +2802,16 @@ The 197-route municipal index and the 316-record TDX snapshot are both published
 
 ## Taichung regional buses — Conflicts
 
-Discussed on [Taichung regional buses](/bus/regional/taichung/) in the source page's “Conflicts” section.[^bus-regional-taichung-taichung-dataset]
+Discussed on [Taichung regional buses](/bus/regional/taichung/) in the source page's “Conflicts” section.[^bus-regional-taichung-taichung-about]
 
 ### Conflicts
+
+台中客運's own site gives two different depot/station lists: its About
+page names roughly eight facilities[^bus-regional-taichung-taichung-about], its separate
+Stations page names twelve, including a transfer station and a 秋紅谷 site
+the About page omits[^bus-regional-taichung-taichung-office]. Both are the operator's own
+primary pages; neither explains the discrepancy, and this site publishes
+both rather than merging them.
 
 The route-map dataset warns that its compiled publication can lag actual operations, while the citybus interface directs passengers to dynamic information or operator schedules for actual departures.[^bus-regional-taichung-taichung-dataset][^bus-regional-taichung-taichung-citybus] These sources measure different publication layers, so the JSON retains route identity and stops but does not turn them into a frequency claim.[^bus-regional-taichung-taichung-dataset][^bus-regional-taichung-taichung-csv]
 
@@ -2698,10 +2821,71 @@ The city-bus CSV has no departure-time field, while the separate 小黃公車 pa
 
 #### Sources for this entry
 
+- [Taichung Bus — company profile](https://www.tcbus.com.tw/co_about.html) — primary; 臺中汽車客運股份有限公司; accessed 2026-08-28.[^bus-regional-taichung-taichung-about]
+- [Taichung Bus — stations](https://www.tcbus.com.tw/co_office.html) — primary; 臺中汽車客運股份有限公司; accessed 2026-08-28.[^bus-regional-taichung-taichung-office]
 - [Taichung city-bus route and stop information dataset](https://data.gov.tw/dataset/83748) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-dataset]
 - [Taichung bus real-time information](https://citybus.taichung.gov.tw/ebus) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-citybus]
 - [Taichung city-bus route-map CSV](https://newdatacenter.taichung.gov.tw/api/v1/no-auth/resource.download?rid=20c2e4cc-49bf-45d5-a880-714c7c66eed6) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-csv]
 - [Taichung 小黃公車](https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,505,52) — primary; Taichung City Government Transportation Bureau (臺中市政府交通局); accessed 2026-08-25.[^bus-regional-taichung-taichung-yellow]
+
+## Tainan regional buses — Operators — a network that keeps changing hands
+
+Discussed on [Tainan regional buses](/bus/regional/tainan/) in the source page's “Operators — a network that keeps changing hands” section.[^bus-regional-tainan-tainan-2024-tender]
+
+### Operators — a network that keeps changing hands
+
+Tainan's city-bus operator roster has been actively reshaped by tender
+through the 2020s, unlike Taipei's stable joint-operation
+group[^bus-regional-tainan-tainan-2024-tender]. **興南客運** (Shing Nan Bus) is the oldest, tracing to 台灣輕鐵株式會社 (1921)
+and a 1941 merger into 興南乘合自動車株式會社[^bus-regional-tainan-zh-shingnanbus]. **新營客運**
+(Xinying Bus), formally established January 1950, joined the Tainan
+system in a first batch of 44 transferred highway routes — sources
+disagree on whether that was 2011 or 2012[^bus-regional-tainan-zh-xinyingbus]. **府城客運**
+(Fucheng Bus) is younger and structurally distinct: founded 2013 as a
+subsidiary spun off from **Kaohsiung Bus** (高雄客運, also documented on
+this site's [Kaohsiung page](/bus/regional/kaohsiung/)) specifically to
+give Tainan a dedicated city-bus brand, after the original, differently-owned
+台南客運 stopped running city routes in 2003[^bus-regional-tainan-zh-fuchengbus]. **漢程客運**
+(Han-Cheng Bus), founded 2013 in Kaohsiung as part of the same 台灣愛巴士
+交通聯盟 alliance as 巨業交運/巨業交通, expanded into Tainan in December 2019
+as its fourth operator[^bus-regional-tainan-zh-hanchengbus].
+
+**Route 77 traces a small chain of hand-offs that is itself informative.**
+Launched 2016 as Tainan's first electric-bus route, it passed from its
+original operator to 府城客運 and then, from 10 April 2023, to 漢程客運 — the
+same 40 daily trips and alignment carried through each transfer[^bus-regional-tainan-tainan-route77-transfer].
+A **2024-08-21 network reorganisation** awarded 巨業交通 nine routes
+(existing and new, first batch targeted for Q4 2024) and 統聯客運 ten
+routes, making 統聯客運 Tainan's sixth operator from **3 January
+2025**[^bus-regional-tainan-tainan-2024-tender] — after the TDX snapshot above was retrieved,
+so that operator may not yet appear in the committed route/operator
+records.
+
+#### Sources for this entry
+
+- [Tainan city bus network reorganisation — new route awards](https://www.tainan.gov.tw/news_content.aspx?n=13370&s=8687622) — primary; Tainan City Government (臺南市政府); accessed 2026-08-28.[^bus-regional-tainan-tainan-2024-tender]
+- [Shing Nan Bus](https://zh.wikipedia.org/zh-tw/興南客運) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-28.[^bus-regional-tainan-zh-shingnanbus]
+- [Xinying Bus](https://zh.wikipedia.org/zh-tw/新營客運) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-28.[^bus-regional-tainan-zh-xinyingbus]
+- [Fucheng Bus (Tainan Bus)](https://zh.wikipedia.org/zh-tw/府城客運) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-28.[^bus-regional-tainan-zh-fuchengbus]
+- [Han-Cheng Bus](https://zh.wikipedia.org/zh-tw/漢程客運) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-28.[^bus-regional-tainan-zh-hanchengbus]
+- [Route 77 operator transfer notice](https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8381879) — primary; Tainan City Government (臺南市政府); accessed 2026-08-28.[^bus-regional-tainan-tainan-route77-transfer]
+
+## Tainan regional buses — Conflicts
+
+Discussed on [Tainan regional buses](/bus/regional/tainan/) in the source page's “Conflicts” section.[^bus-regional-tainan-zh-xinyingbus]
+
+### Conflicts
+
+新營客運's own zh.wikipedia article and the separate 大台南公車 overview
+article disagree on the year it joined the Tainan network — 2011 in one,
+2012 in the other, describing what appears to be the same 44-route
+transfer[^bus-regional-tainan-zh-xinyingbus]. Neither is independently corroborated against a
+Tainan city government primary source; both are published rather than
+picked.
+
+#### Sources for this entry
+
+- [Xinying Bus](https://zh.wikipedia.org/zh-tw/新營客運) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-28.[^bus-regional-tainan-zh-xinyingbus]
 
 ## Tainan regional buses — Gaps and conflicts
 
