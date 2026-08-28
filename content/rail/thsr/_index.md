@@ -4,6 +4,10 @@ kind: system
 description: Taiwan’s 350 km high-speed railway, with 12 stations from Nangang to Zuoying and a BOT history that changed during financial restructuring.
 order: 3
 operator: THSR
+hero:
+  image: thsr/hero
+  alt: A white-and-orange 700T high-speed train on an elevated viaduct approaching a platform, overhead catenary structures above.
+  caption: A 700T train approaching Taichung Station.
 sources:
   - id: tdx-thsr
     title: "TDX THSR station records"

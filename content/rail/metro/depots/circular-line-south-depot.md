@@ -8,6 +8,10 @@ spine: Y08
 aliases:
   - 南機廠
 updated: 2026-08-27
+hero:
+  image: circular-line-south-depot/hero
+  alt: The depot's main gate at night, lit signage reading "環狀線 南機廠 CIRCULAR LINE SOUTH DEPOT" beside a perforated-metal perimeter fence.
+  caption: The depot's main gate, Shisizhang.
 facts:
   - label: Chinese name
     value: 南機廠

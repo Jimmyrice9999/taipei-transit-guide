@@ -4,6 +4,10 @@ kind: system
 description: Taiwan's 762 mm forest and mountain railway from Chiayi to Alishan, with active sunrise and forest-park branches.
 order: 7
 operator: AFRCHO
+hero:
+  image: alishan/hero
+  alt: Shay geared steam locomotive No. 25, numbered disc on its smokebox door, coupled to open carriages, steam venting beneath it among trees.
+  caption: Shay locomotive No. 25 with a carriage rake.
 sources:
   - id: afr-technology
     title: Railway technology

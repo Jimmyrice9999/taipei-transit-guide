@@ -4,6 +4,10 @@ kind: system
 description: Taiwan Railways current station and line data, with historical route architecture kept distinct from the live TDX snapshot.
 order: 4
 operator: TRA
+hero:
+  image: tra/hero
+  alt: A silver TRA EMU900 local train ("區間車" on its destination display) approaching on curved track, overhead catenary and apartment blocks behind.
+  caption: An EMU900 local train on the Western Line.
 sources:
   - id: tdx-tra-station
     title: "TDX Taiwan Railways station records"

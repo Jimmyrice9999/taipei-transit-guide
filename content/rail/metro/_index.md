@@ -3,6 +3,10 @@ title: Metro
 kind: system
 description: The metropolitan metro network — the lines a rider treats as one railway, under one numbering scheme and one fare system.
 order: 1
+hero:
+  image: metro/hero
+  alt: A train with open doors at Zhongshan Station Platform 4, passengers boarding and waiting, the station's Chinese and English name signage overhead.
+  caption: A train at Zhongshan Station, Platform 4.
 ---
 
 The 捷運 network as this site files it: TRTC's lines, New Taipei Metro's

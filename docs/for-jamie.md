@@ -1,23 +1,25 @@
 # For Jamie
 
-## Active handoff - Run 290 - 28 August 2026 - long autonomous brief in progress
+## Active handoff - Run 291 - 28 August 2026 - long autonomous brief in progress
 
 Running the multi-part brief (nav hierarchy → photos/visual → finish v3)
-to completion, unattended. Part 1 done: Rail's dropdown nested system
-before type (8 systems flattened 30+ groups into one panel; now 13
-top-level entries, each system opening onto only its own types) and every
-long flat index (TRA stations 242, KRTC 78, bus operators 62) got the
-existing bus-route filter box. Found and fixed a real bug along the way —
-a constant re-exported from a `'use client'` file silently broke as
-`undefined` when imported into a Server Component, which had already
-silently disabled New Taipei's 562-route filter.
+unattended. Part 1 done (Run 290): Rail's dropdown nested system before
+type; long flat indexes got a filter box; fixed a real bug where a
+`'use client'`-exported constant had silently disabled New Taipei's
+562-route filter.
 
-`gate:fast`/`gate:full` clean, `npm run nav` (keyboard/touch/hover) clean,
-fresh screenshots checked by eye. Full detail in docs/run-log.md Run 290.
+Part 2 opening batch done (Run 291): the six Rail system landing pages
+with no hero photo (Metro, TRA, KRTC, THSR, TYMC, Alishan) now have one,
+plus the one metro depot not yet checked. Every image subject-verified
+against its decoded pixels, not its filename. Full station-level photo
+coverage (TRA 242, KRTC 78, etc.) is NOT done — judged not tractable at
+the needed accuracy in one session; recorded as an open gap, not
+attempted at low confidence.
 
-Screenshot/PDF review deliverables under docs/ are stale (last refreshed
-Run 90, predates most current page types) — deferred to the run-end
-VERIFY pass rather than bundled into this commit.
+Lost time to a Windows process-tracking quirk: `run_in_background: true`
+gate:full calls were reported "killed" while the real npm process kept
+running detached, blocking the next attempt with a stale `.next/lock`.
+Plain Bash calls that auto-background past timeout tracked correctly.
 
-Continuing into Part 2 (photos) next, then Part 3 (content completion).
-This file will be updated again before the run ends or hands off.
+`gate:fast`/`gate:full` clean on both commits. Detail in docs/run-log.md
+Runs 290-291. Continuing into Part 3 next, batching by system.

@@ -4,6 +4,10 @@ kind: system
 description: Kaohsiung Metro’s Red and Orange Lines and the Circular Light Rail, with TDX metro data and operator/government LRT records kept distinct.
 order: 5
 operator: KRTC
+hero:
+  image: krtc/hero
+  alt: A green-and-white Kaohsiung MRT train at a platform, red destination display partly reading "...aogang", passengers waiting on the platform.
+  caption: A Kaohsiung MRT train at a station platform.
 sources:
   - id: tdx-krtc-station
     title: "TDX Kaohsiung Metro station records"

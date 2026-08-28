@@ -4,6 +4,10 @@ description: "Taoyuan Metro’s operating Airport MRT and the separate Green Lin
 kind: system
 updated: 2026-08-24
 order: 3
+hero:
+  image: tymc/hero
+  alt: A purple-and-silver "Commuter" Airport MRT train on an elevated guideway above a city road, cars and street trees below.
+  caption: A Commuter-service Airport MRT train on the elevated guideway.
 facts:
   - label: "Operating TDX line"
     value: "A — Airport MRT"

@@ -1,3 +1,88 @@
+## Run 291 - Part 2 (opening batch): the six missing system hero photos (2026-08-28)
+
+### Audit first
+
+Counted every content page without a `hero:` field before fetching anything:
+1,677 of 1,707 pages. The overwhelming majority (roughly 1,000) are bus
+routes, which the brief's own Part 2 list does not name — it names
+stations, rolling stock, depots, bus operators/models, ticketing objects,
+ferries/piers, YouBike, TRA/THSR and the newer systems. Narrowing to that
+list, the single highest-leverage gap was not a station at all: six of
+Rail's eight *system landing pages* — Metro, KRTC, TRA, THSR, TYMC,
+Alishan — had no hero image, despite `app/rail/[system]/page.tsx` already
+being wired to render one. Metro's absence was the most surprising: the
+network's own top page, on a site whose deepest coverage is Taipei, had
+never had one. Cable already did (Run-log doesn't record when). A stale
+`Circular Line South Depot` gap turned up alongside it — the only one of
+the four hero-less metro depots that wasn't already investigated
+and confirmed absent (`components/PhotoCard.tsx`'s own comment records
+Tucheng and Xinzhuang as checked in Run 19; Zhonghe was checked this
+session and still has nothing usable on Commons).
+
+### What was fetched, and how each was verified
+
+Seven images, all CC BY-SA (2.0 or 4.0), all through the existing
+`npm run image` pipeline (`scripts/fetch-commons.mjs` — licence gate,
+committed WebP, sidecar attribution). Commons category browsing under-
+performed direct API category-member and full-text search queries (fewer
+false leads, no LLM-summarisation drift), so search moved to `curl` against
+`action=query&list=search|categorymembers` directly partway through.
+
+Every candidate was checked two ways before it shipped: the Commons
+`extmetadata` description field (catches a wrong-subject file before
+download — one THSR candidate, "2015_THSR_Bneto_01.jpg", turned out to be
+a photo of a THSR meal box, not a train, and was rejected on the
+description alone) and, after download, the Read tool directly on the
+encoded WebP to confirm the actual pixels match the claimed subject — not
+assumed from the filename, per the brief's explicit warning that an
+unlabelled image is evidence for nothing:
+
+- **Metro** — a train at Zhongshan Station Platform 4, doors open,
+  passengers boarding; the platform signage is legible in-frame.
+- **TRA** — a silver EMU900 with the green "R" mark and "區間車" (local
+  train) on its destination display, unambiguous.
+- **KRTC** — a green-liveried train at a platform, destination display
+  partly reading "...aogang" (Siaogang), a red "K" roundel visible.
+- **THSR** — a 700T on an elevated viaduct approaching a platform,
+  distinctive nose profile.
+- **TYMC** — a purple/silver "Commuter"-liveried Airport MRT train on
+  the elevated guideway, the word "Commuter" legible on the car side.
+- **Alishan** — Shay geared locomotive No. 25 (roundel numbered "25"
+  visible) with a carriage rake, steam venting, an unmistakable subject
+  for this system specifically.
+- **Circular Line South Depot** — the depot's own lit gate signage,
+  reading "環狀線 南機廠 CIRCULAR LINE SOUTH DEPOT" in-frame — about as
+  close to self-verifying as a photograph gets.
+
+All seven render correctly with dimensions set from the sidecar (no
+layout shift), attribution line intact, at 900px width — checked with
+fresh screenshots, not assumed from the build succeeding.
+
+### What Part 2 does not yet cover
+
+This is the honest boundary, not a claim of completion. Untouched:
+station-level photos across every system (TRA 242, KRTC 78, TYMC 21,
+TMRT 18, THSR 12, cable 4 — the actual bulk of the brief's photo list),
+rolling-stock and depot photos beyond what already existed, bus operators
+and vehicle models, ticketing objects, ferries/piers, YouBike docks, and
+the layout/iconography/motion side of Part 2 (largely already satisfied
+by the existing design system — `EntityIcon`, `.disclosure-caret`'s
+reduced-motion guard, `Figure`'s dimension-locking — rather than newly
+built this run). Exhaustive per-station photo verification at the
+volume the brief describes is not something this session judged it could
+do at the accuracy bar the sourcing discipline requires — each one needs
+the same two-step subject check as above, and getting one wrong (an
+unlabelled platform photo attributed to the wrong station) is exactly the
+failure mode the brief warns against. Recorded here rather than silently
+left; a future run should batch by system, verifying each candidate
+before fetch rather than after.
+
+### Gates
+
+`gate:fast` clean (107/107). `gate:full` run against a fresh build:
+234/234 tests, `facts` (17/17), clean. `probes/` (scratch Commons-search
+and screenshot scripts) remains untracked.
+
 ## Run 290 - Part 1: nested rail nav hierarchy, long-list filtering (2026-08-28)
 
 ### What was wrong
