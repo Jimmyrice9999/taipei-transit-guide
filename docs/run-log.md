@@ -203,36 +203,61 @@ after its confirmed exit from regional *highway* routes).
 
 Two full `gate:full` checkpoints, both clean at the standing baseline (0
 genuine WCAG contrast failures, 0 broken links, 0 a11y errors/warnings, 0
-ASSERTED claims, 236/236 unit tests, 17/17 fact cross-checks). `npm run
-verify:browser` (the real-device screenshot/reflow/keyboard sweep) was
-**not run this session** — see below.
+ASSERTED claims, 236/236 unit tests, 17/17 fact cross-checks).
+
+Also ran `npm run verify:browser` (default/template mode: 137 representative
+pages, reflow at 320/640, screenshots at 375/768/1440/1920/2560 plus a
+320-zoom400 shot, print PDFs, axe, keyboard) — the first time this session,
+and **it found a real bug the rest of the run had missed entirely**. Part 1's
+rebrand fixed the wordmark's *alt text* (`lib/site.ts`'s `SITE_NAME`) but not
+the actual rendered image: `scripts/make-wordmark.mjs` hard-codes its own
+`TEXT` constant independently of `SITE_NAME`, and `public/wordmark.svg` is a
+generated, committed file rather than something derived at build time — so
+every single page's header graphic kept visibly reading "TAIPEI TRANSIT
+GUIDE" throughout Parts 1, 2a, 2b and all of Part 5, despite every other
+visible occurrence of the name being correctly changed. Found by actually
+looking at a screenshot (`home-375.png`), not by trusting the pass/fail
+summary — exactly the distinction the run brief's verification section
+insists on. Fixed the one-line constant, dimensions unchanged (both names
+are six characters), re-ran `verify:browser` clean before and after: 0
+reflow findings, 0 axe violations at any severity, 0 keyboard issues across
+137 pages, 0 spine overlaps, 0 page failures — including the two new
+`/regions/` page types and the mode-split Rail nav that appears on every
+page. This is not the full 17-viewport matrix the brief asks for (`npm run
+verify:browser:full` remains unrun), but it substantially de-risks the "not
+visually verified" gap this run's own first pass at this section had left
+open, and it is the reason that gap is written past-tense below rather than
+still open.
 
 ### Not reached this run
 
 **Part 2c** (nav interaction rules — closed-by-default subgroups, the
 hover-gap fix, 320px behaviour, keyboard/touch/screen-reader correctness) was
-not freshly audited; the existing `SiteNav`/`NavGroupView` architecture
-already implements most of what 2c asks for (verified by reading the code,
-not by testing on real devices), and the region/mode-split work reused it
-rather than changing it. **Part 3** (homepage redesign, system colour
-identities, Wikimedia photo sourcing with MD5 verification, consistent
-iconography, reduced-motion-respecting transitions) — not started at all.
-**Part 4** (the word-count-distribution audit and systematic DORTS/gazette/
-thesis source-family exhaustion the brief asks for before any page is allowed
-to stay short) — not started as a standalone pass, though several Part 5
-pages individually did exhaust the equivalent source families for their own
-subject and documented it in their own "Checked and failed" sections.
+not freshly audited as its own task, but the default `verify:browser` sweep
+above exercises the mode-split nav on every one of its 137 pages with 0
+keyboard or axe findings — real evidence, not just a code read, though still
+short of dedicated interaction testing (opening/closing subgroups by hand,
+touch-target measurement, screen-reader narration). **Part 3** (homepage
+redesign, system colour identities, Wikimedia photo sourcing with MD5
+verification, consistent iconography, reduced-motion-respecting transitions)
+— not started at all. **Part 4** (the word-count-distribution audit and
+systematic DORTS/gazette/thesis source-family exhaustion the brief asks for
+before any page is allowed to stay short) — not started as a standalone
+pass, though several Part 5 pages individually did exhaust the equivalent
+source families for their own subject and documented it in their own
+"Checked and failed" sections.
 
-**The full device-verification matrix** (17 viewports × every page type,
-reflow at 400%/200% zoom, screenshot-by-screenshot review) was not run. This
-is the largest single remaining risk: the mode-split nav and the two new
-region page types have not been visually verified at 320px or in a real
-browser, only confirmed to build, pass `a11y`/`check`/unit tests, and render
-correct HTML structure. A follow-up run should treat `npm run verify:browser`
-as the first task, specifically on `/regions/`, `/regions/[slug]/` and the
-mode-split Rail dropdown, before doing anything else — those are exactly the
-kind of new layout the brief's own Run 5.1 lesson (quoted in
-`scripts/browser-verify.mjs`) warns has no coverage until someone looks.
+**The full 17-viewport device-verification matrix** (`verify:browser:full`,
+every page, 400%/200% zoom reflow, screenshot-by-screenshot review at every
+named width including 390/414/428/667×375/844×390/932×430/834/1024, none of
+which the default sweep above covers) was not run — the default sweep above
+is real signal, not a substitute for it. A follow-up run should treat the
+full sweep as an early task given how large the corpus has grown (2,064
+pages × many viewports is a long run), and should look at the screenshots
+for `/regions/`, `/regions/[slug]/` and a mode-split Rail dropdown open state
+specifically, since those are the newest layouts and exactly what the
+brief's own Run 5.1 lesson (quoted in `scripts/browser-verify.mjs`) warns
+has no coverage until someone looks.
 
 **The scout concurrency ceiling** the brief has asked three runs running to
 find remains untested in either direction: this run's 10-scout burst all
