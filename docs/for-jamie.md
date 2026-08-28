@@ -1,25 +1,24 @@
 # For Jamie
 
-## Active handoff - Run 301 - 28 August 2026 - long autonomous brief in progress
+## Active handoff - Run 302 - 28 August 2026 - V4 bus depth in progress
 
-Parts 1-2 done (290-291). Part 3's per-operator sweep closed 5 systems
-(293-299), then a "planned"-marker cleanup (300). Then ran `gate:full`
-as a checkpoint (hadn't run since 294) and it was NOT clean - important,
-please read this part.
+Part 0 (CI screenshot crash on /data/sources/) and Part 1 (gate:fast
+gaps, CI build caching, timing) both done and pushed. Part 2 (V4 bus
+depth) started: electric bus manufacturers (VSCC registry, Master,
+Tron Energy, Tang Eng) and the 2030 electrification programme are
+written, sourced and committed - including catching a wrong hypothesis
+in the run brief itself (Model T is Foxtron's, not Tron Energy's).
 
-Two real bug classes had accumulated across 6 commits of `gate:fast`-
-only work, invisible to the fast checks: 11 spec-table formatting
-violations (values like "20 to 40" that break the column layout), one
-Chinese title mistakenly tagged as English on the bibliography page,
-and 46 `npm run research` failures - every "Checked and failed" entry
-I wrote all run was missing the required date stamp the tooling checks
-for, even though I'd followed the spirit of the rule (explaining what
-disproved each lead) without the literal format. All fixed; `gate:full`
-is clean now (234/234, citations/research/claims all clean).
+8 scouts ran in parallel with zero scope violations; the ceiling
+question from the brief is unresolved, not answered, since this
+batch's own writing absorbed the rest of the session.
 
-The lesson worth keeping: `gate:fast` clean across several runs isn't
-the same claim as "this work is correct" - it only means the fast
-subset stayed green. Worth an occasional `gate:full` checkpoint even
-mid-way to the 10th commit, not just waiting for the count.
+**Researched but not yet written**: payment/ticketing infrastructure,
+the Taipei bus operator service-rating scheme (甲乙丙丁 grades), and a
+聯營公車 joint-operation history correction (a docs/research citation
+that doesn't check out against its primary). Re-research fresh rather
+than trusting my summary if much time has passed.
 
-Detail in docs/run-log.md Runs 290-301.
+2f/2g and non-electric bus manufacturers are untouched.
+
+Detail in docs/run-log.md Run 302.

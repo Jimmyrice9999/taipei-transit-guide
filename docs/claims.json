@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26611,
-    "tbc": 4594,
+    "sourced": 26749,
+    "tbc": 4600,
     "asserted": 0,
-    "meta": 83
+    "meta": 85
   },
   "files": [
     {
@@ -329,10 +329,42 @@
       "meta": 0
     },
     {
+      "file": "content/bus/models/master-bus-electric.md",
+      "sources": 8,
+      "sourced": 21,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/models/model-t-electric.md",
-      "sources": 1,
-      "sourced": 17,
+      "sources": 2,
+      "sourced": 21,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/models/rac-700.md",
+      "sources": 5,
+      "sourced": 23,
       "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/bus/models/tang-eng-alighter.md",
+      "sources": 10,
+      "sourced": 24,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/bus/models/vscc-qualified-registry.md",
+      "sources": 7,
+      "sourced": 23,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -346,11 +378,19 @@
     },
     {
       "file": "content/bus/models/_index.md",
-      "sources": 4,
-      "sourced": 2,
+      "sources": 5,
+      "sourced": 3,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
+    },
+    {
+      "file": "content/bus/network/electric-bus-programme.md",
+      "sources": 7,
+      "sourced": 26,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
     },
     {
       "file": "content/bus/network/joint-operation.md",
@@ -362,8 +402,8 @@
     },
     {
       "file": "content/bus/network/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 1
@@ -14682,8 +14722,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 245,
-      "sourced": 357,
+      "sources": 255,
+      "sourced": 372,
       "tbc": 3,
       "asserted": 0,
       "meta": 6

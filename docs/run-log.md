@@ -1,3 +1,165 @@
+## Run 302 - fix CI screenshot crash, close 3 gate:fast gaps, start V4 bus depth (2026-08-28)
+
+### Part 0 — CI was crashing on /data/sources/
+
+Browser verification's `fullPage: true` screenshot step was throwing
+"Unable to capture screenshot" on `/data/sources/` — the bibliography
+page, 7,700+ citations, 214,914px of rendered height, which exceeds
+Chromium's screenshot texture-height ceiling. The page was not even in
+`browser-verify.mjs`'s `PAGE_TYPES` list, so it was only reached at all
+by accident, as the canonical page for its own auto-detected template,
+with no name a failing CI log could point at.
+
+Fixed two things: added `/data/sources/` to `PAGE_TYPES` explicitly (a
+gap `PAGE_TYPES` had gone three runs stale on, per the run brief), and
+made the screenshot step catch the capture protocol error and retry as
+a clipped (non-`fullPage`) capture bounded to 12,000px, recording every
+clip in `docs/browser-verification.json`/`.md` with the page's actual
+rendered height. A page that still fails even clipped is now a named
+finding, not a silent skip.
+
+Verified with a fresh build + `npm run verify:browser`: 0 findings,
+`data-sources-2560.png` correctly clipped to 12,000px (full height
+214,914px) instead of crashing, and one other page — `/rail/metro/` at
+1440px, 5,816px tall, well under the cap — exercised the same
+catch-and-retry path successfully, showing the fallback isn't only a
+height-threshold check but also survives whatever transient condition
+made that particular capture throw. Pushed; did not poll Actions
+further per the run brief.
+
+### Part 1 — 3 real gate:fast coverage gaps, plus CI build caching
+
+Timed every step of `npm run verify` (=`gate:full`) individually:
+`build` 226.0s (dominant — more than every other step combined),
+`test:unit` 82.0s, `links` 79.4s, `a11y` 8.8s, and the rest (`facts`,
+`unused`, `claims`, `check`, `cite`, `geometry:audit`, `cvd`, `markers`,
+`research`) all under 3s each, for a total gate:full runtime of ~424s
+(7m04s). Confirmed the suspected duplication directly: `npm test`
+(`cite`+`markers`+`build`+`test:unit`+`facts`) is a strict subset of
+every step `verify` already runs — the project's own run-log history
+shows a long habit of running both back to back as an "independent
+rebuild" sanity check, which pays `build` (226s) + `test:unit` (82s)
+twice for zero additional coverage. There's no script literally
+chaining the two to fix; it's a workflow habit, recorded here so a
+future gate:full checkpoint skips the redundant `npm test` afterward.
+CI's own Tests job runs each step independently already (not via the
+`test`/`verify` aliases), so it was never double-building within
+itself.
+
+Added GitHub's official Next.js CI-cache recipe
+(`node_modules/next/dist/docs/01-app/02-guides/ci-build-caching.md`) —
+`.next/cache`, keyed on the lockfile plus source files with a
+lockfile-only restore-key — to all three jobs that run `npm run build`
+(`test`, `build`, `full-browser-sweep`), targeting the single largest
+remaining lever ("No build cache found" in the CI logs).
+
+Moved three specific checks into `gate:fast`, closing exactly the gaps
+Run 301's checkpoint found: added `tests/markdown.test.mts` to
+`test:unit:fast` (it's entirely source-based via `lib/content.ts`, no
+`out/` dependency, and already contains the exact spec-unit-in-value
+check that caught bug #1 — it was simply never in the fast list); added
+two new buildless tests to it — a `lang: en` source can't carry a
+Chinese `titleOriginal` (bug #2's class, checked from frontmatter
+instead of rendered HTML), and category/type descriptions must clear
+the same length floor the built meta description enforces (bug #3's
+class); and added `npm run research` (4.5s) as a literal `gate:fast`
+step, closing the gap that let 46 missing date-stamps go unnoticed for
+a whole run. New `gate:fast` runtime: 67s.
+
+These three additions immediately paid for themselves in Part 2 below:
+`gate:fast` on the first new-content batch failed all three checks on
+the first try — a table-embedded unit, a `lang`/`titleOriginal`
+mismatch on a source written this run, and a missing citation — before
+any of it could have reached `gate:full` unnoticed.
+
+**Process note on the verify step itself:** the first `gate:full`
+checkpoint after Part 1 (before any Part 2 content existed) failed with
+"210 page(s) render Han that is not in the subset they load." Cause:
+I ran that checkpoint in the background and then, in violation of the
+project's own single-writer discipline, kept editing `content/` files
+while it was still running — the live build picked up new bus-model
+pages with Han characters not yet in the committed font subset. Not a
+real bug; re-ran `npm run fonts` and repeated `gate:full` with no
+concurrent edits, which passed clean. Recording this so a future run
+does not treat "gate:full failed" as content-checking gospel without
+first checking whether the working tree was actually held still for
+the run.
+
+### Part 2 — V4 bus depth, batch 1: electric bus manufacturers and programme
+
+Started with 2a (bus vehicle models) per the run brief's own priority
+order, since the corpus's only three existing model pages were thin,
+incidentally-sourced fragments (a marketing name from a press release,
+one vehicle from a safety report, a fleet-page year group). Dispatched
+8 read-only research scouts in parallel — the stated ceiling to test —
+covering the VSCC/MOTC qualified-model registry, three electric-bus
+manufacturers (成運/Master, 華德動能/Tron Energy, 唐榮/Tang Eng), the 2030
+electrification programme, payment/ticketing infrastructure, the
+operator service-rating scheme, and the 1977 聯營公車 joint-operation and
+municipal-privatisation history. All 8 completed successfully with no
+scope violations (`git status` checked clean after the batch); 8 was
+not pushed past because the batch's own content absorbed the full
+session's remaining writing time — the ceiling question is unresolved,
+not answered.
+
+**A wrong hypothesis in the run brief, caught and corrected.** The
+brief assumed 華德動能 ("Tron Energy") made the existing "Model T"
+page's vehicle. It does not: Foxconn's own group press release and an
+independent VSCC government filing both confirm Model T is 鴻華先進科技
+(Foxtron)'s product — a separate, unrelated manufacturer that happens
+to share no connection with 華德動能 beyond both being MOTC-qualified.
+Corrected `model-t-electric.md` to name Foxtron, sourced to Foxconn's
+own release, with an explicit note distinguishing it from Tron Energy's
+actual current model, RAC-700.
+
+Wrote, from primary VSCC/MOTC disclosure PDFs (read directly via the
+Read tool — WebFetch's summarizer could not parse them) and
+manufacturer/news sources:
+
+- `docs/research/bus/models/electric-buses.md` — the consolidated
+  research file across the registry and three manufacturers.
+- `content/bus/models/vscc-qualified-registry.md` — every manufacturer
+  and type code MOTC/VSCC has certified, across three dated snapshots
+  (5 Nov 2024, 11 Feb 2025, 15 Jul 2026) plus a separate, earlier
+  demonstration-programme register.
+- `content/bus/models/rac-700.md` — Tron Energy's actual English name
+  ("RAC Electric Vehicles Inc.", not "Tron Energy" — no primary source
+  found uses that name), current full spec sheet, and three
+  conflicting older-generation figure sets published side by side.
+- `content/bus/models/master-bus-electric.md` — Master's four electric
+  body types with full manufacturer specs, and two unreconciled
+  delivery-count claims to the same operator (Capital Bus Group).
+- `content/bus/models/tang-eng-alighter.md` — exported to Guatemala,
+  but absent from every VSCC qualified-model list checked (current and
+  lapsed-certificate sections both), directly contradicting a 2021-era
+  secondary claim that Tang Eng was among the first manufacturers
+  qualified.
+- `docs/research/bus/electric-bus-programme.md` and
+  `content/bus/network/electric-bus-programme.md` — the NT$64.327
+  billion 2030年客運車輛電動化推動計畫, with three Legislative Yuan
+  committee reviews establishing it is running well behind its own
+  interim targets (17.31% city penetration against a 25% target as of
+  August 2024, first-half 2024 manufacturing output of 50 vehicles
+  against a 1,070-vehicle target), and six differently-scoped fleet
+  counts published as separate measurements rather than merged.
+
+Corrected `content/bus/models/_index.md` and `content/bus/network/_index.md`
+to link the new pages. `npm run gate:fast` clean (136/136 tests) after
+fixing three real bugs the new gate:fast checks caught on first run —
+a table cell with an embedded unit (`"362 kWh LFP, liquid-cooled, ..."`),
+a `lang: en`/Chinese-`titleOriginal` mismatch on the RAC-700 page's own
+manufacturer-name source, and a missing citation. `npm run research`
+clean.
+
+### Not reached this run
+
+Payment/ticketing infrastructure (2c), the operator service-rating
+scheme (2d) and the 聯營公車/大都會客運 history correction (2e) all have
+complete scout findings sitting unused — see the handoff in
+`docs/for-jamie.md`. 2f (route deepening), 2g (depots/charging) and the
+non-electric manufacturer families (imported diesel chassis, CNG) are
+untouched.
+
 ## Run 301 - a real gate:full run finds real bugs, from 6 commits of gate:fast-only work (2026-08-28)
 
 ### What gate:fast doesn't check

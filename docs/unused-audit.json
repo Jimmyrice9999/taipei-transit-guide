@@ -1,12 +1,12 @@
 {
-  "exports": 305,
-  "cssClasses": 332,
-  "imageSidecars": 70,
+  "exports": 422,
+  "cssClasses": 374,
+  "imageSidecars": 78,
   "unusedExports": [
     {
       "name": "BusStopSequences",
       "file": "components/BusRouteData.tsx",
-      "line": 236
+      "line": 237
     },
     {
       "name": "UndergroundExtent",
@@ -26,7 +26,7 @@
     {
       "name": "TypeRef",
       "file": "components/TypeIndex.tsx",
-      "line": 26
+      "line": 30
     },
     {
       "name": "NewTaipeiRouteSubgroup",
@@ -109,14 +109,14 @@
       "line": 251
     },
     {
-      "name": "getBusRoutesByRailStation",
-      "file": "lib/bus/routes.ts",
-      "line": 255
-    },
-    {
       "name": "getBusStop",
       "file": "lib/bus/routes.ts",
       "line": 273
+    },
+    {
+      "name": "ChangelogEntry",
+      "file": "lib/changelog.ts",
+      "line": 4
     },
     {
       "name": "AA_MARGIN",
@@ -124,24 +124,39 @@
       "line": 32
     },
     {
-      "name": "Hero",
-      "file": "lib/content.ts",
-      "line": 217
-    },
-    {
       "name": "Profile",
       "file": "lib/content.ts",
-      "line": 251
+      "line": 265
     },
     {
       "name": "getFolderBody",
       "file": "lib/content.ts",
-      "line": 567
+      "line": 589
     },
     {
       "name": "rgbToLab",
       "file": "lib/cvd.ts",
       "line": 148
+    },
+    {
+      "name": "TimelineEvent",
+      "file": "lib/data-explorer.ts",
+      "line": 8
+    },
+    {
+      "name": "LineComparison",
+      "file": "lib/data-explorer.ts",
+      "line": 53
+    },
+    {
+      "name": "OperatorComparison",
+      "file": "lib/data-explorer.ts",
+      "line": 78
+    },
+    {
+      "name": "StationComparison",
+      "file": "lib/data-explorer.ts",
+      "line": 110
     },
     {
       "name": "LineGeometry",
@@ -151,22 +166,82 @@
     {
       "name": "Chainage",
       "file": "lib/geometry.ts",
-      "line": 329
-    },
-    {
-      "name": "Measurement",
-      "file": "lib/geometry.ts",
-      "line": 484
+      "line": 353
     },
     {
       "name": "Projection",
       "file": "lib/geometry.ts",
-      "line": 549
+      "line": 573
     },
     {
       "name": "ImageSize",
       "file": "lib/image-size.ts",
       "line": 16
+    },
+    {
+      "name": "KrtcStation",
+      "file": "lib/krtc.ts",
+      "line": 8
+    },
+    {
+      "name": "KrtcRouteStation",
+      "file": "lib/krtc.ts",
+      "line": 23
+    },
+    {
+      "name": "KrtcRoute",
+      "file": "lib/krtc.ts",
+      "line": 31
+    },
+    {
+      "name": "KrtcLine",
+      "file": "lib/krtc.ts",
+      "line": 41
+    },
+    {
+      "name": "KrtcLrtStation",
+      "file": "lib/krtc.ts",
+      "line": 48
+    },
+    {
+      "name": "KRTC_METRO_STATION_COUNT",
+      "file": "lib/krtc.ts",
+      "line": 132
+    },
+    {
+      "name": "KRTC_LRT_STATION_COUNT",
+      "file": "lib/krtc.ts",
+      "line": 133
+    },
+    {
+      "name": "KRTC_STATION_SOURCE",
+      "file": "lib/krtc.ts",
+      "line": 139
+    },
+    {
+      "name": "KRTC_STATION_OF_ROUTE_SOURCE",
+      "file": "lib/krtc.ts",
+      "line": 140
+    },
+    {
+      "name": "KRTC_LINE_SOURCE",
+      "file": "lib/krtc.ts",
+      "line": 141
+    },
+    {
+      "name": "KRTC_ROUTE_SOURCE",
+      "file": "lib/krtc.ts",
+      "line": 142
+    },
+    {
+      "name": "KRTC_SHAPE_SOURCE",
+      "file": "lib/krtc.ts",
+      "line": 143
+    },
+    {
+      "name": "getKrtcLine",
+      "file": "lib/krtc.ts",
+      "line": 150
     },
     {
       "name": "Cab",
@@ -184,14 +259,24 @@
       "line": 123
     },
     {
+      "name": "LineSourceGroup",
+      "file": "lib/lines.ts",
+      "line": 50
+    },
+    {
+      "name": "BareLineIndexEntry",
+      "file": "lib/lines.ts",
+      "line": 76
+    },
+    {
       "name": "ColourSource",
       "file": "lib/lines.ts",
-      "line": 70
+      "line": 129
     },
     {
       "name": "LIGHT_RAIL_LINES",
       "file": "lib/lines.ts",
-      "line": 300
+      "line": 417
     },
     {
       "name": "NavLink",
@@ -199,24 +284,39 @@
       "line": 21
     },
     {
+      "name": "NearBusRoute",
+      "file": "lib/near-station.ts",
+      "line": 29
+    },
+    {
+      "name": "NearBikeDock",
+      "file": "lib/near-station.ts",
+      "line": 34
+    },
+    {
+      "name": "NearStationData",
+      "file": "lib/near-station.ts",
+      "line": 39
+    },
+    {
       "name": "PublishedFigures",
       "file": "lib/network.ts",
-      "line": 61
+      "line": 62
     },
     {
       "name": "LineSummary",
       "file": "lib/network.ts",
-      "line": 81
+      "line": 82
     },
     {
       "name": "TrackKind",
       "file": "lib/network.ts",
-      "line": 219
+      "line": 226
     },
     {
       "name": "LineTrack",
       "file": "lib/network.ts",
-      "line": 221
+      "line": 228
     },
     {
       "name": "OgFrame",
@@ -226,7 +326,42 @@
     {
       "name": "OperatorRef",
       "file": "lib/operators.ts",
-      "line": 76
+      "line": 78
+    },
+    {
+      "name": "RailInterval",
+      "file": "lib/rail-architecture.ts",
+      "line": 13
+    },
+    {
+      "name": "RailName",
+      "file": "lib/rail-architecture.ts",
+      "line": 18
+    },
+    {
+      "name": "RailRouteVersion",
+      "file": "lib/rail-architecture.ts",
+      "line": 45
+    },
+    {
+      "name": "RailInterchangeGroup",
+      "file": "lib/rail-architecture.ts",
+      "line": 77
+    },
+    {
+      "name": "StationRidership",
+      "file": "lib/ridership.ts",
+      "line": 71
+    },
+    {
+      "name": "LineRidership",
+      "file": "lib/ridership.ts",
+      "line": 80
+    },
+    {
+      "name": "NetworkRidership",
+      "file": "lib/ridership.ts",
+      "line": 95
     },
     {
       "name": "SanyingResearch",
@@ -236,7 +371,7 @@
     {
       "name": "SearchHit",
       "file": "lib/search.ts",
-      "line": 88
+      "line": 90
     },
     {
       "name": "SITE_ORIGIN",
@@ -271,12 +406,7 @@
     {
       "name": "PlannedInterchange",
       "file": "lib/stations.ts",
-      "line": 28
-    },
-    {
-      "name": "Role",
-      "file": "lib/surfaces.ts",
-      "line": 28
+      "line": 31
     },
     {
       "name": "Swatch",
@@ -284,9 +414,64 @@
       "line": 41
     },
     {
+      "name": "TaoyuanGreenStation",
+      "file": "lib/taoyuan-green.ts",
+      "line": 8
+    },
+    {
+      "name": "ThsrStation",
+      "file": "lib/thsr.ts",
+      "line": 5
+    },
+    {
+      "name": "THSR_LINE",
+      "file": "lib/thsr.ts",
+      "line": 50
+    },
+    {
+      "name": "THSR_DATA_SOURCE",
+      "file": "lib/thsr.ts",
+      "line": 60
+    },
+    {
+      "name": "THSR_SHAPE_SOURCE",
+      "file": "lib/thsr.ts",
+      "line": 61
+    },
+    {
+      "name": "THSR_RETRIEVED",
+      "file": "lib/thsr.ts",
+      "line": 62
+    },
+    {
+      "name": "getThsrStation",
+      "file": "lib/thsr.ts",
+      "line": 64
+    },
+    {
       "name": "ServicePattern",
       "file": "lib/timetable.ts",
       "line": 98
+    },
+    {
+      "name": "TRA_RETRIEVED",
+      "file": "lib/tra.ts",
+      "line": 39
+    },
+    {
+      "name": "TRA_SEGMENTS",
+      "file": "lib/tra.ts",
+      "line": 89
+    },
+    {
+      "name": "TRA_GEOMETRIES",
+      "file": "lib/tra.ts",
+      "line": 102
+    },
+    {
+      "name": "StationAccessibility",
+      "file": "lib/trtc-accessibility.ts",
+      "line": 4
     },
     {
       "name": "HEDGE",
@@ -299,14 +484,24 @@
       "line": 66
     },
     {
+      "name": "buildIsStale",
+      "file": "scripts/subset-cjk.mjs",
+      "line": 152
+    },
+    {
+      "name": "collectFromSource",
+      "file": "scripts/subset-cjk.mjs",
+      "line": 167
+    },
+    {
       "name": "builtPages",
       "file": "scripts/subset-cjk.mjs",
-      "line": 189
+      "line": 215
     },
     {
       "name": "collectFromBuild",
       "file": "scripts/subset-cjk.mjs",
-      "line": 221
+      "line": 247
     }
   ],
   "unusedClasses": [

@@ -21,6 +21,96 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Build-time pull of the static Station/City feed for Taipei, New Taipei, Taoyuan, Taichung and Kaohsiung. Supports the 25 August 2026 row and BikesCapacity totals, source-update timestamps and the fact that live availability is a separate feed."
+  - id: "bus-models-rac-700-wiki-race150"
+    title: "Tron Energy RACE150"
+    titleOriginal: "華德RACE150"
+    publisher: "Wikipedia (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/華德RACE150"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports two earlier-generation dimension/battery/motor figures, offered as a conflict against the current racev.com spec sheet rather than as an established fact; the article's own footnotes were not independently re-read this pass."
+  - id: "bus-models-rac-700-racev-spec"
+    title: "RAC-700 product page"
+    titleOriginal: "華德動能科技股份有限公司產品頁 — RAC-700"
+    publisher: "RAC Electric Vehicles Inc. (華德動能科技股份有限公司)"
+    url: "https://www.racev.com/zh-TW/product/jR"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Supports the current RAC-700 dimensions, weight, seating, motor, battery, top speed and charging figures."
+  - id: "bus-models-rac-700-udn-h1-deliveries"
+    title: "Tron Energy electric bus deliveries accelerate"
+    titleOriginal: "華德動能電巴交車 加速"
+    publisher: "United Daily News (聯合報)"
+    url: "https://udn.com/news/story/7252/9642289"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports first-half delivery counts, cumulative production estimate and the newly launched 350kWh dual-gun fast-charge configuration."
+  - id: "bus-models-tang-eng-alighter-ctee-guatemala"
+    title: "Tang Eng's electric bus export — a small step for Tang Eng, a big step for Taiwan's EV development"
+    titleOriginal: "唐榮電巴出口一小步台灣電動車發展一大步"
+    publisher: "Commercial Times (工商時報/CTEE)"
+    url: "https://www.ctee.com.tw/news/20230208700339-431202"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports the first 20-unit Guatemala export, named operating partners, and a lower battery/range figure framed as an export minimum spec."
+  - id: "bus-models-tang-eng-alighter-gvm-latam"
+    title: "A first-round revenue of NT$4 billion — how much gold can Tang Eng's electric buses mine in Latin America?"
+    titleOriginal: "首戰進帳40億，唐榮電巴在拉丁美洲淘金力多大？"
+    publisher: "Global Views Monthly (遠見雜誌)"
+    url: "https://www.gvm.com.tw/article/98919"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports the Guatemala shipment's arrival date and unverified annual order-commitment figures for Guatemala and Paraguay."
+  - id: "bus-models-tang-eng-alighter-vscc-list-0715"
+    title: "MOTC Electric Bus Promotion Programme qualified vehicle operators and models, updated 15 Jul 2026 (current)"
+    titleOriginal: "交通部電動大客車推動計畫合格車輛業者及其車輛車型（115.07.15）"
+    publisher: "Vehicle Safety Certification Center, for MOTC (財團法人車輛安全審驗中心)"
+    url: "https://www.vscc.org.tw/File/Download/472d89ee-1953-4aec-b572-e67571b87af2"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The current and lapsed-certificate sections of this register contain no Tang Eng entry, contradicting the 2021-era BusinessNext claim."
+  - id: "bus-models-tang-eng-alighter-bnext-teq-qualification"
+    title: "The electric bus national team is scrambling to form up! Teco and Tron Energy partner on 500 powertrain sets; Tatung and Tang Eng join forces"
+    titleOriginal: "電動巴士國家隊忙組隊！東元、華得動能合作500套動力系統，大同、唐榮攜手"
+    publisher: "BusinessNext (數位時代)"
+    url: "https://www.bnext.com.tw/article/61404/taiwan-electric-bus"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports a 2021-era claim that Tang Eng was among the first manufacturers to pass demonstration-programme vehicle qualification, which the VSCC register does not corroborate."
+  - id: "bus-models-vscc-qualified-registry-cy-report-112jd026"
+    title: "Control Yuan investigation-closure summary, case 112交調026"
+    titleOriginal: "監察院交通及採購委員會調查報告結案情形一覽表"
+    publisher: "Control Yuan (監察院)"
+    url: "https://cybsbox.cy.gov.tw/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Supports the count of four qualified manufacturers and combined 2025 capacity planning as of 29 November 2024."
+  - id: "bus-models-vscc-qualified-registry-moj-vehicle-type-reg"
+    title: "Vehicle Type Safety Approval Management Regulations"
+    titleOriginal: "車輛型式安全審驗管理辦法"
+    publisher: "Laws & Regulations Database of the Republic of China, Ministry of Justice (全國法規資料庫)"
+    url: "https://law.moj.gov.tw/LawClass/LawAll.aspx?PCODE=K0040065"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Supports the two-year certificate validity period and bus-specific chassis/body and durability-test submission requirements."
+  - id: "bus-models-vscc-qualified-registry-vscc-role"
+    title: "Vehicle Type Safety Approval"
+    titleOriginal: "車輛型式安全審驗"
+    publisher: "Vehicle Safety Certification Center (財團法人車輛安全審驗中心)"
+    url: "https://www.vscc.org.tw/Home/Content/520"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Supports VSCC's authorised role in pre-sale vehicle safety/spec review and issuing the type safety approval certificate."
   - id: "bus-operators-0606-20m33c-haloha-emergency-plan"
     title: "100年度 Taipei City Blue Highway vessel emergency-support plan"
     titleOriginal: "臺北市藍色公路船舶支援救災計畫"
@@ -2231,6 +2321,104 @@ averaged or selected as a definitive total[^bike-history-youbike-tdx-bike-statio
 
 - [TDX Bike Station City pull](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-23.[^bike-history-youbike-tdx-bike-stations]
 - [TDX Bike Station City pull — five-city snapshot](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-25.[^bike-history-youbike-tdx-bike-stations-current]
+
+## RAC-700 (Tron Energy) — Conflicting figures for earlier generations
+
+Discussed on [RAC-700 (Tron Energy)](/bus/models/rac-700/) in the source page's “Conflicting figures for earlier generations” section.[^bus-models-rac-700-wiki-race150]
+
+### Conflicting figures for earlier generations
+
+Wikipedia's article on the RACE150 platform describes two earlier
+generations with figures that do not match the current spec sheet above —
+published here as a conflict, not resolved, since neither source states an
+exact model-year boundary and the article's underlying footnotes were not
+independently re-checked this pass[^bus-models-rac-700-wiki-race150] [^bus-models-rac-700-racev-spec]:
+
+- **Dimensions and weight:** 11,990×2,480×3,220 mm, curb weight 12,140 kg,
+  max weight 15,350 kg (Wikipedia, "2011–2017" generation)[^bus-models-rac-700-wiki-race150]
+  against the current 12,000×2,500×3,206 mm, 13,400 kg, 16,100 kg
+  above[^bus-models-rac-700-racev-spec]. The 5,800 mm wheelbase is the one figure that agrees
+  across both[^bus-models-rac-700-wiki-race150] [^bus-models-rac-700-racev-spec].
+- **Battery:** 250 kWh (Wikipedia, "2011–2017"); 282 kWh, ternary lithium
+  (Wikipedia, "2018+")[^bus-models-rac-700-wiki-race150]; 350 kWh, LFP (current spec sheet,
+  corroborated by a 2026 news report of a "newly launched" 350 kWh dual-gun
+  fast-charge model)[^bus-models-rac-700-racev-spec] [^bus-models-rac-700-udn-h1-deliveries].
+- **Motor:** "Fulton Electric" AC air-cooled, 150 kW (Wikipedia,
+  "2011–2017"); Tatung (大同) water-cooled PMSM/SRPM, 189 kW (Wikipedia,
+  "2018+")[^bus-models-rac-700-wiki-race150]; PMSM, 350 kW max (current spec sheet)[^bus-models-rac-700-racev-spec].
+
+#### Sources for this entry
+
+- [Tron Energy RACE150](https://zh.wikipedia.org/zh-tw/華德RACE150) — secondary; Wikipedia (維基百科); accessed 2026-08-28.[^bus-models-rac-700-wiki-race150]
+- [RAC-700 product page](https://www.racev.com/zh-TW/product/jR) — primary; RAC Electric Vehicles Inc. (華德動能科技股份有限公司); accessed 2026-08-28.[^bus-models-rac-700-racev-spec]
+- [Tron Energy electric bus deliveries accelerate](https://udn.com/news/story/7252/9642289) — secondary; United Daily News (聯合報); accessed 2026-08-28.[^bus-models-rac-700-udn-h1-deliveries]
+
+## Alighter (Tang Eng) — Export, not domestic VSCC qualification
+
+Discussed on [Alighter (Tang Eng)](/bus/models/tang-eng-alighter/) in the source page's “Export, not domestic VSCC qualification” section.[^bus-models-tang-eng-alighter-ctee-guatemala]
+
+### Export, not domestic VSCC qualification
+
+The first export shipment — 20 buses to Guatemala — cleared customs 8
+February 2023 and shipped two days later, arriving after a 42-day voyage on
+30 March, deployed by operating partners Innovate Group and Luka Electric
+Group in Antigua and Mixco[^bus-models-tang-eng-alighter-ctee-guatemala] [^bus-models-tang-eng-alighter-gvm-latam]. A magazine account
+reports unverified order commitments of 100 buses/year from Guatemala and
+200 buses/year from Paraguay, at a cited unit price of USD 450,000 — figures
+not checked against any contract document[^bus-models-tang-eng-alighter-gvm-latam].
+
+**唐榮車輛科技 does not appear on any VSCC electric-bus qualified-model
+register checked for this site** — current, lapsed-certificate, or the
+earlier demonstration-programme list — see the [VSCC qualified-model
+registry](/bus/models/vscc-qualified-registry/)[^bus-models-tang-eng-alighter-vscc-list-0715]. This
+directly contradicts a 2021-era secondary claim that Tang Eng was "among the
+first companies to pass the electric bus demonstration programme vehicle
+qualification review"[^bus-models-tang-eng-alighter-bnext-teq-qualification]. Whether Tang Eng never
+qualified domestically, or qualified and was later dropped from the register
+entirely — rather than moved to the lapsed-certificate section where other
+manufacturers' expired models do appear — is not explained by any source
+found[^bus-models-tang-eng-alighter-vscc-list-0715] [^bus-models-tang-eng-alighter-bnext-teq-qualification].
+
+#### Sources for this entry
+
+- [Tang Eng's electric bus export — a small step for Tang Eng, a big step for Taiwan's EV development](https://www.ctee.com.tw/news/20230208700339-431202) — secondary; Commercial Times (工商時報/CTEE); accessed 2026-08-28.[^bus-models-tang-eng-alighter-ctee-guatemala]
+- [A first-round revenue of NT$4 billion — how much gold can Tang Eng's electric buses mine in Latin America?](https://www.gvm.com.tw/article/98919) — secondary; Global Views Monthly (遠見雜誌); accessed 2026-08-28.[^bus-models-tang-eng-alighter-gvm-latam]
+- [MOTC Electric Bus Promotion Programme qualified vehicle operators and models, updated 15 Jul 2026 (current)](https://www.vscc.org.tw/File/Download/472d89ee-1953-4aec-b572-e67571b87af2) — primary; Vehicle Safety Certification Center, for MOTC (財團法人車輛安全審驗中心); accessed 2026-08-28.[^bus-models-tang-eng-alighter-vscc-list-0715]
+- [The electric bus national team is scrambling to form up! Teco and Tron Energy partner on 500 powertrain sets; Tatung and Tang Eng join forces](https://www.bnext.com.tw/article/61404/taiwan-electric-bus) — secondary; BusinessNext (數位時代); accessed 2026-08-28.[^bus-models-tang-eng-alighter-bnext-teq-qualification]
+
+## VSCC electric bus qualified-model registry — What the primary sources establish, and what they do not
+
+Discussed on [VSCC electric bus qualified-model registry](/bus/models/vscc-qualified-registry/) in the source page's “What the primary sources establish, and what they do not” section.[^bus-models-vscc-qualified-registry-cy-report-112jd026]
+
+### What the primary sources establish, and what they do not
+
+The Control Yuan independently corroborates four qualified manufacturers as
+of 29 November 2024 — 成運, 華德, 創奕 and 鴻華 — with combined planned capacity
+of 5,960 vehicles by the end of 2025[^bus-models-vscc-qualified-registry-cy-report-112jd026]. 唐榮車輛科技 (Tang
+Eng) does not appear on any of the four register snapshots checked for this
+page, current or lapsed — see [its own page](/bus/models/tang-eng-alighter/)
+for the secondary source this contradicts.
+
+The regulation governing the process, 車輛型式安全審驗管理辦法, is issued under
+公路法第63條第5項 and requires domestic bus body-builders to submit chassis
+construction specifications, and requires Class A/B buses to submit
+durability-performance test verification[^bus-models-vscc-qualified-registry-moj-vehicle-type-reg]. Its own text
+defines the certifying body generically as "a domestic vehicle-professional
+institution entrusted by MOTC" rather than naming VSCC specifically — VSCC's
+own page is what identifies VSCC as that body[^bus-models-vscc-qualified-registry-moj-vehicle-type-reg]
+[^bus-models-vscc-qualified-registry-vscc-role].
+
+This register gives model names, type codes, applicants and route/use classes
+— it does not give unit counts, fleet allocations, or vehicle-by-vehicle
+registrations. Taiwan publishes no equivalent census; per-model deployment
+figures on this site come from operator and news records, not from this
+registry, and are marked as such.
+
+#### Sources for this entry
+
+- [Control Yuan investigation-closure summary, case 112交調026](https://cybsbox.cy.gov.tw/) — primary; Control Yuan (監察院); accessed 2026-08-28.[^bus-models-vscc-qualified-registry-cy-report-112jd026]
+- [Vehicle Type Safety Approval Management Regulations](https://law.moj.gov.tw/LawClass/LawAll.aspx?PCODE=K0040065) — primary; Laws & Regulations Database of the Republic of China, Ministry of Justice (全國法規資料庫); accessed 2026-08-28.[^bus-models-vscc-qualified-registry-moj-vehicle-type-reg]
+- [Vehicle Type Safety Approval](https://www.vscc.org.tw/Home/Content/520) — primary; Vehicle Safety Certification Center (財團法人車輛安全審驗中心); accessed 2026-08-28.[^bus-models-vscc-qualified-registry-vscc-role]
 
 ## Haloha Shipping Co., Ltd. — TDX operator record — Water operations recorded by public sources
 
