@@ -23,11 +23,11 @@ facts:
     value: TBC (absent from NTMC's own accessibility hub page)
 specs:
   - label: Danhai LRT priority seating
-    value: "12 of 62"
+    value: "12/62"
     unit: seats per train (19.4%)
     source: ntmc-accessibility-hub
   - label: Circular Line priority seating
-    value: "30 of 98"
+    value: "30/98"
     unit: seats per train (30.6%)
     source: ntmc-accessibility-hub
   - label: TRTC minimum platform-train gap

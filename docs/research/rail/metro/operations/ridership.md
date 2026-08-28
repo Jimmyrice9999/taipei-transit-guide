@@ -29,7 +29,7 @@
 ## Checked and failed
 
 - **The Taipei City Transportation Bureau's 114年臺北市交通統計年報 PDF**, cited by zh.wikipedia for the 767,120,668 figure — fetched successfully (6MB) but its tables are embedded as scanned images; WebFetch's summarizer could not locate the figure, and the Read tool's PDF-to-image fallback failed (`pdftoppm is not installed` in the scout's environment). The main session, which does have `pdftotext` access per AGENTS.md, should retry this PDF directly before treating either figure as settled.
-- **NTMC's raw per-line statistics-download files (ODS/XLSX/PDF)** — one fetch attempt resolved to NTMC's homepage instead of the file (URL-encoding/redirect issue). Per-line figures instead came from NTMC's press releases, a valid but different primary source.
+- **NTMC's raw per-line statistics-download files (ODS/XLSX/PDF)** — one fetch attempt resolved to NTMC's homepage instead of the file (URL-encoding/redirect issue). Per-line figures instead came from NTMC's press releases, a valid but different primary source. Checked 2026-08-28.
 - **TRTC's "1億人次" (1998) and "30億人次" (2008) milestones**, both claimed by zh.wikipedia without an attached citation in its own wikitext — neither found in the portion of TRTC's chronicle successfully extracted. Not published; recorded as an unresolved lead, not a confirmed gap in TRTC's chronicle (which may simply not have been extracted in full).
 
 ## Stated gaps

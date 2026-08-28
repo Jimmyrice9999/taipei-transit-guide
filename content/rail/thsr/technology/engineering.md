@@ -30,7 +30,7 @@ facts:
     source: ltn-yilan-extension
 specs:
   - label: Design maximum speed (conflicting figures)
-    value: "350 or 315"
+    value: "350 / 315"
     unit: km/h — unresolved, see below
     source: zhwiki-thsr-general
   - label: Commercial operating speed

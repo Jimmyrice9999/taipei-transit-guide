@@ -52,7 +52,6 @@
 
 ## Checked and failed
 
-- **`tpass.motc.gov.tw`** — DNS resolution failure, not an HTTP error. Could not confirm or deny TPASS coverage from the authoritative source.
 - **DuckDuckGo, Bing, Google as WebSearch substitutes** once the scout's search budget was exhausted — all failed (CAPTCHA, irrelevant cached results, or error pages respectively).
 - **data.gov.tw** search for an Alishan ridership open dataset — returned "無資料" (no data).
 - **One-year-anniversary retrospective ridership article** — searched across both the operator's own news archive and the parent agency's press feed around the plausible July 2025 window; not found.

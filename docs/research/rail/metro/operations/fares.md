@@ -35,11 +35,11 @@
 
 ## Checked and failed
 
-- **`web.metro.taipei` (TRTC's newer client-rendered site)** — returns only an empty SPA shell to a non-browser fetch for every fare-related URL tried; the legacy server-rendered `www.metro.taipei` domain was used instead throughout, successfully.
+- **`web.metro.taipei` (TRTC's newer client-rendered site)** — returns only an empty SPA shell to a non-browser fetch for every fare-related URL tried; the legacy server-rendered `www.metro.taipei` domain was used instead throughout, successfully. Checked 2026-08-28.
 - **web.archive.org**, needed to verify the pre-2020 fare-page wording for the EasyCard-discount-removal claim — fetches fail categorically in this environment ("Claude Code is unable to fetch from web.archive.org"). Not verified.
-- **The Taipei City Transportation Bureau statistical annual report PDF and NTMC's `.odt` fare-detail attachments** — the annual report's tables are scanned images (unextractable without a working `pdftotext` pass, not attempted by the scout, which had no Bash tool); the `.odt` files are zip/XML archives the scout's toolset could not open.
-- **Whether the 24/48/72-hour passes cover Danhai/Ankeng/Sanying LRT** — TRTC's page text confirmed Circular Line coverage only; the three light-rail lines are neither confirmed included nor excluded.
-- **TRTC's original 1996 opening fare structure** — not found in any page reached this run; no news-archive search was possible (WebSearch budget exhausted).
+- **The Taipei City Transportation Bureau statistical annual report PDF and NTMC's `.odt` fare-detail attachments** — the annual report's tables are scanned images (unextractable without a working `pdftotext` pass, not attempted by the scout, which had no Bash tool); the `.odt` files are zip/XML archives the scout's toolset could not open. Checked 2026-08-28.
+- **Whether the 24/48/72-hour passes cover Danhai/Ankeng/Sanying LRT** — TRTC's page text confirmed Circular Line coverage only; the three light-rail lines are neither confirmed included nor excluded. Checked 2026-08-28.
+- **TRTC's original 1996 opening fare structure** — not found in any page reached this run; no news-archive search was possible (WebSearch budget exhausted). Checked 2026-08-28.
 
 ## Stated gaps
 

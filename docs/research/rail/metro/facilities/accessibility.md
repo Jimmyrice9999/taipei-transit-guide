@@ -29,12 +29,12 @@
 ## Checked and failed
 
 - **TRTC's official passenger-regulations PDF** (`https://web.metro.taipei/QRCode/Regulations for Use of the Taipei Metro System-Chinese.pdf`) — WebFetch could not extract readable text (binary/FlateDecode streams); the scout's Read-tool PDF fallback failed (`pdftoppm is not installed`) and it had no Bash tool for the project's documented `pdftotext` workaround. TRTC's formal legal guide-dog/accessibility clause remains unread — the main session, which has Bash/pdftotext access, should retry this PDF directly.
-- **A network-wide TRTC elevator/accessible-route completion percentage or year** — checked across TRTC's site, both DORTS pages, and search-result triage. Not found anywhere; a genuine, searched-for absence.
-- **A named legal/regulatory citation on TRTC's or DORTS's own accessibility pages** — checked directly on both DORTS pages fetched in full. Neither cites a specific regulation by number.
-- **A Control Yuan case specifically about physical accessibility infrastructure (not enforcement fairness) at TRTC/NTMC** — only the 112交正0002 fine-enforcement case surfaced via available search; `cy.gov.tw`'s own site could not be reached directly (DNS failure on one attempt), so this search relied entirely on third-party indexing, which may be incomplete.
-- **Sanying Line accessibility facilities** — checked on NTMC's accessibility hub page and the Sanying Line station-list page; not found on either. Individual station-info sheets were not opened.
-- **Whether the 2023 building-inspection improvement deadline (end of 2023) was met** — no follow-up source located.
-- **The original Yahoo News source for the Dapinglin platform-gap incident** — the presumed original URL returned HTTP 403; only a third-party reproduction was successfully fetched.
+- **A network-wide TRTC elevator/accessible-route completion percentage or year** — checked across TRTC's site, both DORTS pages, and search-result triage. Not found anywhere; a genuine, searched-for absence. Checked 2026-08-28.
+- **A named legal/regulatory citation on TRTC's or DORTS's own accessibility pages** — checked directly on both DORTS pages fetched in full. Neither cites a specific regulation by number. Checked 2026-08-28.
+- **A Control Yuan case specifically about physical accessibility infrastructure (not enforcement fairness) at TRTC/NTMC** — only the 112交正0002 fine-enforcement case surfaced via available search; `cy.gov.tw`'s own site could not be reached directly (DNS failure on one attempt), so this search relied entirely on third-party indexing, which may be incomplete. Checked 2026-08-28.
+- **A search for Sanying Line-specific accessibility content** — checked on NTMC's accessibility hub page and the Sanying Line station-list page; not found on either. Individual station-info sheets were not opened. Checked 2026-08-28.
+- **Whether the 2023 building-inspection improvement deadline (end of 2023) was met** — no follow-up source located. Checked 2026-08-28.
+- **The original Yahoo News source for the Dapinglin platform-gap incident** — the presumed original URL returned HTTP 403; only a third-party reproduction was successfully fetched. Checked 2026-08-28.
 
 ## Stated gaps
 

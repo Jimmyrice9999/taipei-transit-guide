@@ -30,10 +30,10 @@
 ## Checked and failed
 
 - **web.archive.org archived MOTC Railway Bureau pages** (three URLs cited by zh.wikipedia's 700T article, footnotes [官3]/[官5]/[官7]) — the fetch tool categorically cannot reach web.archive.org in this environment. Blocks direct verification of the 989-seat figure's origin, the 5 January 2007 service-start date, and the 2015-01-25 second-batch delivery announcement.
-- **China Times article cited by zh.wikipedia for the TR33 Kanahera-livery removal date** — HTTP 403 Forbidden.
-- **A THSRC page found via search, apparently on a Kanahera "gift train" collaboration** — HTTP 404 Not Found.
+- **China Times article cited by zh.wikipedia for the TR33 Kanahera-livery removal date** — HTTP 403 Forbidden. Checked 2026-08-28.
+- **A THSRC page found via search, apparently on a Kanahera "gift train" collaboration** — HTTP 404 Not Found. Checked 2026-08-28.
 - **A UDN theme article on the 2010 derailment** ("秘密武器救了3百條人命") — redirected to a dead generic topic index page; the 300-passenger and 298km/h figures came from 遠見雜誌 instead.
-- **Two THSRC ArticleContent URLs found via search as apparent "700T spec pages"** — both fetched successfully but turned out to be KATO N-gauge model-train product pages, not real fleet data. Recorded so the same dead end isn't re-chased.
+- **Two THSRC ArticleContent URLs found via search as apparent "700T spec pages"** — both fetched successfully but turned out to be KATO N-gauge model-train product pages, not real fleet data. Recorded so the same dead end isn't re-chased. Checked 2026-08-28.
 
 ## Stated gaps
 

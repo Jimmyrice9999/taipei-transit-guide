@@ -27,9 +27,9 @@
 ## Checked and failed
 
 - **`維護管理個別設施彙整表.pdf`**, linked from TMRT's own train-info page as the likely source for maintenance-tier specifics — the URL returned a 404 HTML page when fetched directly with `curl` in the main session (confirming the scout's earlier WebFetch failure was a dead link, not a tool limitation).
-- **The 2021 route/organisation PDF** — successfully fetched and read directly in the main session (`curl` + `pdftotext`) after exceeding the scout's WebFetch size limit; contains maintenance-staff headcounts but no capacity figures — see above.
-- **A specific train-storage/stabling-track capacity figure for Beitun Depot** — not found in any source read, including the two PDFs specifically checked for it. Genuinely TBC, not an artifact of a fetch failure.
-- **Independent news coverage of the depot's construction or an environmental-impact-statement page** — not located; the scout's WebSearch budget was exhausted before this could be pursued further.
+- **The 2021 route/organisation PDF** — successfully fetched and read directly in the main session (`curl` + `pdftotext`) after exceeding the scout's WebFetch size limit; contains maintenance-staff headcounts but no capacity figures — see above. Checked 2026-08-28.
+- **A specific train-storage/stabling-track capacity figure for Beitun Depot** — not found in any source read, including the two PDFs specifically checked for it. Genuinely TBC, not an artifact of a fetch failure. Checked 2026-08-28.
+- **Independent news coverage of the depot's construction or an environmental-impact-statement page** — not located; the scout's WebSearch budget was exhausted before this could be pursued further. Checked 2026-08-28.
 
 ## Stated gaps
 

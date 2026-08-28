@@ -27,8 +27,11 @@ specs:
     value: "97"
     unit: "seats per set, incl. 2 accessible, vs. the existing fleet's 108"
     source: afr-senli-press
-  - label: 森里號 EVI total order
-    value: "5 locomotives, 26 coaches"
+  - label: 森里號 EVI total order, locomotives
+    value: "5"
+    source: afr-senli-press
+  - label: 森里號 EVI total order, coaches
+    value: "26"
     source: afr-senli-press
 sources:
   - id: afr-shay

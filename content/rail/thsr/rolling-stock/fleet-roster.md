@@ -39,8 +39,11 @@ specs:
     value: "315"
     unit: km/h
     source: zhwiki-700t
-  - label: N700ST order size
-    value: "12 trainsets, 144 carriages"
+  - label: N700ST order size, trainsets
+    value: "12"
+    source: thsr-n700st-contract
+  - label: N700ST order size, carriages
+    value: "144"
     source: thsr-n700st-contract
 sources:
   - id: thsr-car-facilities

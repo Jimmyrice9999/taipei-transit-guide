@@ -22,6 +22,9 @@ facts:
     source: tcrt-cj910
   - label: Train-storage/stabling capacity
     value: TBC (not stated by any source read, including two directly-fetched PDFs)
+  - label: CJ910 contract period
+    value: "31 December 2012 to 18 February 2019"
+    source: tcrt-cj910
 specs:
   - label: Site area
     value: "20"
@@ -30,9 +33,6 @@ specs:
   - label: CJ910 civil contract value
     value: "~53.745"
     unit: NT$ hundred million
-    source: tcrt-cj910
-  - label: CJ910 contract period
-    value: "31 December 2012 to 18 February 2019"
     source: tcrt-cj910
 sources:
   - id: tcrt-cj910

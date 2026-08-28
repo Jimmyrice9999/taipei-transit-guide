@@ -1,6 +1,6 @@
 ---
 title: Operations
-description: Taipei Metro ridership and fare records.
+description: Taipei Metro ridership and fare records, covering both TRTC and NTMC.
 order: 4
 ---
 

@@ -62,10 +62,10 @@
 
 - **Two Railway Bureau (rb.gov.tw) technical pages** (電力系統, and the general THSR overview page) — both returned blank/empty content on repeated fetch attempts; possibly JS-rendered.
 - **zhuanlan.zhihu.com and haixia-info.com** (claimed sources for the Mitsubishi/Hitachi signalling-supplier attribution) — DNS failure and HTTP 404 respectively.
-- **cw.com.tw and thenewslens.com articles on the BOT near-bankruptcy** — both HTTP 403 Forbidden.
-- **A "73% of THSR's route is elevated" figure** — appeared only in a WebSearch-tool summary, not a fetched page. Not published.
-- **A "government profit exceeded NT$100 billion post-restructuring" claim (citing a 2020 UDN report)** — appeared only in a WebSearch-tool paraphrase of Wikipedia's own citation list, not independently fetched. Not published.
-- **A direct MOTC/Executive Yuan primary press release for the Yilan extension** — not located within the search budget available; current sourcing rests on one fully-fetched news article plus unfetched search-summarised coverage of others.
+- **cw.com.tw and thenewslens.com articles on the BOT near-bankruptcy** — both HTTP 403 Forbidden. Checked 2026-08-28.
+- **A "73% of THSR's route is elevated" figure** — appeared only in a WebSearch-tool summary, not a fetched page. Not published. Checked 2026-08-28.
+- **A "government profit exceeded NT$100 billion post-restructuring" claim (citing a 2020 UDN report)** — appeared only in a WebSearch-tool paraphrase of Wikipedia's own citation list, not independently fetched. Not published. Checked 2026-08-28.
+- **A direct MOTC/Executive Yuan primary press release for the Yilan extension** — not located within the search budget available; current sourcing rests on one fully-fetched news article plus unfetched search-summarised coverage of others. Checked 2026-08-28.
 
 ## Stated gaps
 

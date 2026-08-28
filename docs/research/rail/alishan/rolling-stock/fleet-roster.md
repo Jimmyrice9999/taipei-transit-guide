@@ -35,10 +35,10 @@
 
 ## Checked and failed
 
-- **web.archive.org** — categorically unreachable in this environment; blocked checking an archived CNA snapshot for the 福森號 claim.
-- **Lion Travel 福森號 microsite** — fetched, returned only a page title, no body content (likely JS-rendered).
+- **web.archive.org** — categorically unreachable in this environment; blocked checking an archived CNA snapshot for the 福森號 claim. Checked 2026-08-28.
+- **Lion Travel 福森號 microsite** — fetched, returned only a page title, no body content (likely JS-rendered). Checked 2026-08-28.
 - Several guessed `afrch.forest.gov.tw/News*` URL patterns — HTTP 404.
-- **Full verbatim reproduction of the 0000108 steam-locomotive table** — the fetch tool declined a second verbatim request; the table is reconstructed from two independently-worded summaries of the same page, not one full quote.
+- **Full verbatim reproduction of the 0000108 steam-locomotive table** — the fetch tool declined a second verbatim request; the table is reconstructed from two independently-worded summaries of the same page, not one full quote. Checked 2026-08-28.
 
 ## Stated gaps
 

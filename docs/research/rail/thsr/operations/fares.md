@@ -34,8 +34,7 @@
 - **THSRC's fare-query tool** (`https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c`) — fetched successfully but is JS-driven and exposes no static NT$ figures; confirmed by design, not a fetch failure.
 - **A first full-table fetch of the ticket-types page** (743c51ac…) returned several long-distance standard-class figures (e.g. Taipei–Taichung NT$1,250, Taipei–Zuoying NT$2,440) contradicted by independent corroboration and internal early-bird-table arithmetic. Judged to have suffered column/row misalignment on a wide table; its long-distance standard-class figures are not used.
 - **A conference-hosted PDF fare table** (tact2024.conf.tw) — fare tables rendered as embedded images, not extractable; also a third-party mirror, not thsrc.com.tw itself.
-- **`tpass.motc.gov.tw`** — does not resolve (DNS failure); no primary TPASS operator-coverage page was located.
-- **WebSearch budget was exhausted before a planned direct search for a primary MOTC/Railway Bureau statement of the annual base-rate approval mechanism** — the mechanism description above rests on two independently-written news articles cross-checked against each other, not against a regulator primary source.
+- **WebSearch budget was exhausted before a planned direct search for a primary MOTC/Railway Bureau statement of the annual base-rate approval mechanism** — the mechanism description above rests on two independently-written news articles cross-checked against each other, not against a regulator primary source. Checked 2026-08-28.
 
 ## Stated gaps
 

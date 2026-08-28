@@ -30,13 +30,13 @@
 ## Checked and failed
 
 - **Railway Bureau (rb.gov.tw) pages specifically on the HSR-station-district mechanism and the Taichung tender announcement** (multiple URLs) — returned empty content on every attempt, likely JS-rendered.
-- **MOTC 交通年鑑 (Transportation Yearbook) PDF, both the 100年 and 110年 editions** — fetched as unparseable binary/flate-encoded PDFs; this environment has no `pdftotext`/Bash access to work around it. The core 5-station mechanism claim rests on a WebSearch synthesis of this document, not a direct read — flagged prominently above and on the content page.
+- **MOTC 交通年鑑 (Transportation Yearbook) PDF, both the 100年 and 110年 editions** — fetched as unparseable binary/flate-encoded PDFs; this environment has no `pdftotext`/Bash access to work around it. The core 5-station mechanism claim rests on a WebSearch synthesis of this document, not a direct read — flagged prominently above and on the content page. Checked 2026-08-28.
 - **MOI Land Administration Agency page on zone expropriation** (`land.moi.gov.tw`) — `ECONNREFUSED`.
 - **An academic-quoted article on why Miaoli/Changhua/Yunlin underdeveloped** (thenewslens.com/article/46759) — HTTP 403 Forbidden.
 - **A Chiayi outlet-tender article** (`udn.com/news/story/7241/7648898`) — HTTP 404. The entire Chiayi joint-development item rests on unfetched search synthesis as a result — flagged as not meeting the sourcing bar.
-- **web.archive.org** — categorically unreachable in this environment; no Wayback fallback available for any failed primary page.
-- **A Wikipedia article specifically on a Miaoli HSR special district** — HTTP 404; no such dedicated article exists (unlike Banqiao's).
-- **Searches for a Control Yuan or Audit Office report on the underdeveloped special districts** — not run exhaustively due to a WebSearch budget cutoff partway through this task; a plausible next step, not completed here.
+- **web.archive.org** — categorically unreachable in this environment; no Wayback fallback available for any failed primary page. Checked 2026-08-28.
+- **A Wikipedia article specifically on a Miaoli HSR special district** — HTTP 404; no such dedicated article exists (unlike Banqiao's). Checked 2026-08-28.
+- **Searches for a Control Yuan or Audit Office report on the underdeveloped special districts** — not run exhaustively due to a WebSearch budget cutoff partway through this task; a plausible next step, not completed here. Checked 2026-08-28.
 
 ## Stated gaps
 

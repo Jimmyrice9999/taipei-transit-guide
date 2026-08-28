@@ -42,19 +42,19 @@ specs:
     unit: NT$
     source: trtc-passes
   - label: Circular Line fare range
-    value: "20 to 40"
+    value: "20–40"
     unit: NT$, Y07–Y20
     source: ntmc-fare-tables
   - label: Danhai LRT fare range
-    value: "20 to 30"
+    value: "20–30"
     unit: NT$, V01–V11/V26–V28
     source: ntmc-fare-tables
   - label: Ankeng LRT fare range
-    value: "20 to 25"
+    value: "20–25"
     unit: NT$, K01–K09
     source: ntmc-fare-tables
   - label: Sanying Line fare range
-    value: "20 to 35"
+    value: "20–35"
     unit: NT$, LB01–LB12
     source: ntmc-fare-tables
 sources:

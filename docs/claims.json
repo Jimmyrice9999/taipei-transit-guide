@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26609,
+    "sourced": 26611,
     "tbc": 4594,
     "asserted": 0,
     "meta": 83
@@ -9587,7 +9587,7 @@
     {
       "file": "content/rail/alishan/rolling-stock/fleet-roster.md",
       "sources": 6,
-      "sourced": 15,
+      "sourced": 16,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -11539,7 +11539,7 @@
     {
       "file": "content/rail/thsr/rolling-stock/fleet-roster.md",
       "sources": 9,
-      "sourced": 16,
+      "sourced": 17,
       "tbc": 1,
       "asserted": 0,
       "meta": 0

@@ -28,7 +28,7 @@ specs:
     unit: days before travel
     source: afr-ticketing
   - label: Booking window, online
-    value: "1 to 14"
+    value: "1–14"
     unit: days before travel
     source: afr-ticketing
   - label: 2023 main-line annual ridership (derived)

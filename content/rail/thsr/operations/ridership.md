@@ -40,7 +40,7 @@ specs:
 sources:
   - id: thsr-2025-annual-report
     title: 2025 Annual Report
-    titleOriginal: 台灣高速鐵路股份有限公司2025年年報
+    titleOriginal: Taiwan High Speed Rail Corporation 2025 Annual Report
     publisher: Taiwan High Speed Rail Corporation (台灣高速鐵路股份有限公司)
     url: https://en.thsrc.com.tw/Corp/e5d9a893-ea05-4ff7-80e6-cc71c46d2fb4/assets/94446967-7d9a-4619-b349-61dcf64ae366.pdf
     accessed: 2026-08-28

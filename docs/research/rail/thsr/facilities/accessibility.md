@@ -28,8 +28,8 @@
 ## Checked and failed
 
 - **A THSR mobile-site page apparently describing an accessible route at Taipei Station** (`m.thsrc.com.tw/tw/stationinfo/accessible/977abb69-...`) — `ECONNRESET` on four attempts.
-- **The same path under `www2.thsrc.com.tw`** — `ENOTFOUND`, the subdomain does not resolve; a retired legacy subdomain still indexed by search engines.
-- **The same path under `www.thsrc.com.tw`** — HTTP 404.
+- **The same path under `www2.thsrc.com.tw`** — `ENOTFOUND`, the subdomain does not resolve; a retired legacy subdomain still indexed by search engines. Checked 2026-08-28.
+- **The same path under `www.thsrc.com.tw`** — HTTP 404. Checked 2026-08-28.
 - **A disability-focused outlet's article on the 2018 protest** (`ttod.flow.tw/hsr-seat/`) — TLS certificate expired, could not fetch.
 - **Two CommonWealth Magazine opinion pieces on wheelchair accessibility** (`opinion.cw.com.tw/...`, `cw.com.tw/article/5086019`) — both HTTP 403 Forbidden.
 - **The 2018 advocacy group's own primary PDF** (台灣身心障礙者自立生活聯盟, a meeting record with THSR) — HTTP 403 Forbidden. This would have been the strongest available first-party source for the advocacy side of the 2018 dispute; only the NPOst secondary account remains.

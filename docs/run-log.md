@@ -1,3 +1,60 @@
+## Run 301 - a real gate:full run finds real bugs, from 6 commits of gate:fast-only work (2026-08-28)
+
+### What gate:fast doesn't check
+
+Per the revised cadence (every 10th commit), `gate:full` hadn't run since
+Run 294. Ran it as a checkpoint after the stale-marker cleanup — it does
+not pass cleanly, on the first try. Two categories of real bug had
+accumulated silently across every run since 295, none caught by
+`gate:fast` because the checks live in `verify`'s slower steps
+(`test:unit`, the full suite, not `test:unit:fast`) or in `npm run
+research`, which isn't part of `gate:fast` at all:
+
+1. **11 spec-table formatting violations** across six files (THSR,
+   Metro, TMRT, Alishan) — values like `"20 to 40"` or `"12 of 62"` that
+   embed their unit/description inside the value field instead of
+   splitting it out, breaking the numeric-column alignment the spec
+   table exists to provide. Fixed by converting ranges to the corpus's
+   own en-dash convention (`"20–40"`), fractions to slash notation
+   (`"12/62"`), and multi-part counts into separate specs.
+2. **One real mistranslation-adjacent bug**: a THSR source was marked
+   `lang: en` (correctly — it's the English edition of the annual
+   report) but its `titleOriginal` field was still in Chinese, so the
+   built bibliography page rendered live Chinese text inside an
+   `lang="en"` span — exactly the "untagged Han" failure mode the
+   accessibility test exists to catch. Fixed by giving `titleOriginal`
+   the document's own English title, matching how every other `lang: en`
+   source in the corpus already does it.
+3. **One short category description** (`rail/metro/operations`, exactly
+   40 characters against a `>40` floor) — lengthened.
+4. **46 `npm run research` failures, systemic, self-inflicted**: every
+   "Checked and failed" entry written this run (13 research files, ~30
+   entries) was missing the required "Checked \<date\>." stamp that
+   AGENTS.md's own rule 8 and `research-check.mjs` both require — I
+   followed the sourcing discipline's spirit throughout the run
+   (explaining what disproved each lead) but never actually wrote the
+   literal date format the tooling checks for. Fixed mechanically for
+   bullets missing a date entirely, by hand for a few where a year
+   appeared in the claim text rather than the detail (which fooled a
+   first-pass mechanical fix), and three genuine duplicate-claim cases
+   (the same failed lead — `tpass.motc.gov.tw`, twice; a Sanying Line
+   accessibility search — stated both earlier in the file and again in
+   Checked-and-failed) resolved by removing the redundant bullet or
+   rewording the claim label so it no longer collides.
+
+Re-ran `gate:full` twice more after each fix batch. Clean on the third
+attempt: 234/234 tests, citations clean, research clean, claims clean.
+
+### The lesson, plainly
+
+`gate:fast` is not a substitute for `gate:full`, and six commits of
+"gate:fast is clean" is not the same claim as "this work is correct" —
+it's the narrower claim "this work didn't break the fast checks." The
+10th-commit cadence is a wall-clock optimisation, not a signal that the
+slower checks matter less. Recording this so a future run doesn't read
+"gate:fast clean" in six consecutive log entries and assume more than
+that phrase actually means.
+
 ## Run 300 - a "planned" marker audit, and one manufactured-work trap avoided (2026-08-28)
 
 After Run 299 closed the last confirmed empty-category gap in rail, I

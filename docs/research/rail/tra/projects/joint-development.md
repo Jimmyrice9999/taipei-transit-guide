@@ -58,12 +58,12 @@
 
 ## Checked and failed
 
-- **`https://www.tra.gov.tw`** — DNS failure. TRA's operational domain remains `www.railway.gov.tw`.
-- **Ministry of Justice law database (`law.moj.gov.tw`)** — the correct `pcode` for the TRA Establishment Act could not be located; one guessed URL returned the wrong law (Highway Act) and a search-style URL returned HTTP 400. The statute text used above rests on zh.wikisource transcriptions, not the Ministry of Justice's own canonical database.
-- **Railway Bureau (交通部鐵道局) domain** — could not be located (`rbtra.gov.tw` and `rb.gov.tw` both failed to resolve in the scout's session); the ETtoday four-asset/debt-fund claim remains unverified against a Railway Bureau primary source.
+- **`https://www.tra.gov.tw`** — DNS failure. TRA's operational domain remains `www.railway.gov.tw`. Checked 2026-08-28.
+- **Ministry of Justice law database (`law.moj.gov.tw`)** — the correct `pcode` for the TRA Establishment Act could not be located; one guessed URL returned the wrong law (Highway Act) and a search-style URL returned HTTP 400. The statute text used above rests on zh.wikisource transcriptions, not the Ministry of Justice's own canonical database. Checked 2026-08-28.
+- **Railway Bureau (交通部鐵道局) domain** — could not be located (`rbtra.gov.tw` and `rb.gov.tw` both failed to resolve in the scout's session); the ETtoday four-asset/debt-fund claim remains unverified against a Railway Bureau primary source. Checked 2026-08-28.
 - **`https://www.chinatimes.com/newspapers/20190621001185-260204?chdtv`** (source for the Kaohsiung 11-station/812-hectare claim) — HTTP 403 Forbidden.
 - **`https://www.invest-taichung.com.tw/`** (source for the Taichung 「橘町三丁目」 station-mall claim) — returned no usable page content.
-- **zh.wikipedia articles titled `交九用地` and `臺北車站特定專用區`** — both 404, do not exist under those titles.
+- **zh.wikipedia articles titled `交九用地` and `臺北車站特定專用區`** — both 404, do not exist under those titles. Checked 2026-08-28.
 
 ## Stated gaps
 
