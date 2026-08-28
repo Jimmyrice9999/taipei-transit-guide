@@ -66,7 +66,7 @@ const GLYPH_W = 5
 const GLYPH_H = 7
 const GLYPH_GAP = 1
 
-const TEXT = 'TAIPEI TRANSIT GUIDE'
+const TEXT = 'TAIWAN TRANSIT GUIDE'
 const PITCH = 2 // px per dot cell
 const PAD = 2 // panel padding, in dot cells
 
