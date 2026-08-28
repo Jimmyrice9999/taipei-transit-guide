@@ -48,6 +48,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the electric-bus qualified-model registry and its manufacturer roster.
+  - id: vscc-man-cog
+    title: Large coach chassis centre-of-gravity position diagrams
+    titleOriginal: 大客車底盤重心位置圖
+    publisher: Vehicle Safety Certification Center (財團法人車輛安全審驗中心)
+    url: https://www.vscc.org.tw/Home/List/166
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Supports MAN as the only imported diesel brand with confirmed public VSCC type-approval documents found this pass.
 ---
 
 The committed TDX bus pull has no vehicle-model field, so a model page is published only where a fetched operator, regulator or government source names the vehicle [^tdx-bus-operator-pull].
@@ -62,6 +71,7 @@ the manufacturer-level pages below [^vscc-list-0715]:
 - [RAC-700 (Tron Energy)](/bus/models/rac-700/) — RAC Electric Vehicles Inc.'s current model, with a VSCC type-code history spanning four generations and conflicting older-generation specs [^vscc-list-0715].
 - [Master electric bus family](/bus/models/master-bus-electric/) — Master Transportation's four electric bus body types, full specs from the manufacturer's own model page, with an unreconciled delivery record [^vscc-list-0715].
 - [Alighter (Tang Eng)](/bus/models/tang-eng-alighter/) — exported to Guatemala, but absent from every VSCC qualified-model list checked, contradicting a 2021-era qualification claim [^vscc-list-0715].
+- [Imported diesel bus and coach chassis](/bus/models/imported-diesel-chassis/) — Hino, Isuzu, Mercedes-Benz, Volvo, Scania and MAN, their Taiwan distributors and current models; only MAN has a confirmed public government type-approval trail [^vscc-man-cog].
 - [Taiwan Yutong 6128HG](/bus/models/yutong-6128hg/) — one Dàyou vehicle identified in a safety report, with seat and standing figures [^ttsb-citiair].
 - [King Long / 大金龍](/bus/models/king-long/) — Dàyou’s official fleet page names year groups and route classes, but not a complete technical roster [^dayou-fleet].
 

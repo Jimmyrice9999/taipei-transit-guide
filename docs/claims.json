@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26795,
-    "tbc": 4606,
+    "sourced": 26845,
+    "tbc": 4608,
     "asserted": 0,
-    "meta": 86
+    "meta": 87
   },
   "files": [
     {
@@ -281,6 +281,14 @@
       "meta": 0
     },
     {
+      "file": "content/bus/depots/charging-infrastructure.md",
+      "sources": 9,
+      "sourced": 20,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/bus/depots/guandu-danan.md",
       "sources": 2,
       "sourced": 10,
@@ -319,6 +327,14 @@
       "tbc": 2,
       "asserted": 0,
       "meta": 0
+    },
+    {
+      "file": "content/bus/models/imported-diesel-chassis.md",
+      "sources": 23,
+      "sourced": 27,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
     },
     {
       "file": "content/bus/models/king-long.md",
@@ -378,7 +394,7 @@
     },
     {
       "file": "content/bus/models/_index.md",
-      "sources": 5,
+      "sources": 6,
       "sourced": 3,
       "tbc": 0,
       "asserted": 0,
@@ -14730,8 +14746,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 255,
-      "sourced": 372,
+      "sources": 258,
+      "sourced": 375,
       "tbc": 3,
       "asserted": 0,
       "meta": 6

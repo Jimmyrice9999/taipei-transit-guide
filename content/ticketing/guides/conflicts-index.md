@@ -21,6 +21,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Build-time pull of the static Station/City feed for Taipei, New Taipei, Taoyuan, Taichung and Kaohsiung. Supports the 25 August 2026 row and BikesCapacity totals, source-update timestamps and the fact that live availability is a separate feed."
+  - id: "bus-models-imported-diesel-chassis-isuzu-about"
+    title: "About Isuzu Taiwan"
+    titleOriginal: "關於五十鈴"
+    publisher: "Taipei Union Motors Co., Ltd. (台北合眾汽車有限公司)"
+    url: "https://isuzu.jetbean.com.tw/web/Comp?command=Intro"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Supports the current distributor's own tonnage-class product range and its stated (but conflicting, see body) 2014 agency-transition date."
+  - id: "bus-models-imported-diesel-chassis-isuzu-tw-history"
+    title: "Isuzu truck development history"
+    titleOriginal: "ISUZU貨車發展史"
+    publisher: "isuzu-tw.com (independent/dealer account)"
+    url: "https://www.isuzu-tw.com/isuzu貨車發展史/"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports a fuller Taiwan Isuzu history including 1952 first exports and 1996-2007 domestic manufacture, and gives 2012 (conflicting with isuzu-about's 2014) for the current distributor's agency start."
+  - id: "bus-models-imported-diesel-chassis-isuzu-tw-site"
+    title: "ISUZU Taiwan"
+    titleOriginal: "ISUZU Taiwan"
+    publisher: "Taipei Union Motors Co., Ltd. (台北合眾汽車有限公司)"
+    url: "https://www.isuzu.com.tw/nqr-bus/"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "en"
+    note: "Supports the current NQR(Bus) 8.5t and LT Bus 14.5t chassis and the NQR's engine/emissions specification."
   - id: "bus-models-rac-700-wiki-race150"
     title: "Tron Energy RACE150"
     titleOriginal: "華德RACE150"
@@ -2321,6 +2348,29 @@ averaged or selected as a definitive total[^bike-history-youbike-tdx-bike-statio
 
 - [TDX Bike Station City pull](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-23.[^bike-history-youbike-tdx-bike-stations]
 - [TDX Bike Station City pull — five-city snapshot](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-25.[^bike-history-youbike-tdx-bike-stations-current]
+
+## Imported diesel bus and coach chassis — Isuzu
+
+Discussed on [Imported diesel bus and coach chassis](/bus/models/imported-diesel-chassis/) in the source page's “Isuzu” section.[^bus-models-imported-diesel-chassis-isuzu-about]
+
+### Isuzu
+
+台北合眾汽車有限公司 is the current distributor, though sources conflict on
+when its agency began: 2014 per the distributor's own "About"
+page[^bus-models-imported-diesel-chassis-isuzu-about], or 2012 per an independent account that also gives a
+fuller history — first Taiwan exports in 1952, domestic manufacture
+1996–2007 halted after the then-manufacturer's parent bank collapsed in a
+2007 fraud scandal[^bus-models-imported-diesel-chassis-isuzu-tw-history]. Current chassis, fetched directly
+from the live site: **NQR(Bus) 8.5t** (4HK1 engine, 190PS,
+Euro-5-equivalent without urea injection) and **LT Bus 14.5t**[^bus-models-imported-diesel-chassis-isuzu-tw-site].
+No full-size route-bus or highway-coach Isuzu model (Erga, Gala, Journey)
+was found sold or deployed in Taiwan.
+
+#### Sources for this entry
+
+- [About Isuzu Taiwan](https://isuzu.jetbean.com.tw/web/Comp?command=Intro) — primary; Taipei Union Motors Co., Ltd. (台北合眾汽車有限公司); accessed 2026-08-28.[^bus-models-imported-diesel-chassis-isuzu-about]
+- [Isuzu truck development history](https://www.isuzu-tw.com/isuzu貨車發展史/) — secondary; isuzu-tw.com (independent/dealer account); accessed 2026-08-28.[^bus-models-imported-diesel-chassis-isuzu-tw-history]
+- [ISUZU Taiwan](https://www.isuzu.com.tw/nqr-bus/) — primary; Taipei Union Motors Co., Ltd. (台北合眾汽車有限公司); accessed 2026-08-28.[^bus-models-imported-diesel-chassis-isuzu-tw-site]
 
 ## RAC-700 (Tron Energy) — Conflicting figures for earlier generations
 
