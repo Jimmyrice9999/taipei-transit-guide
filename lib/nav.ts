@@ -76,6 +76,26 @@ export type NavSection = {
  */
 const CAP = 10
 
+/**
+ * Rail's eight systems, grouped by mode so the section's dropdown reads as
+ * three scannable categories instead of a flat list of eight system names in
+ * an order nobody chose. See docs/run-log.md (Run 303, Part 2) for why this
+ * particular grouping and not, say, one bucket per operator.
+ *
+ * The grouping is deliberately coarse — at the SYSTEM (content folder) level,
+ * not the individual line. `metro` already holds TRTC, NTMC and the currently
+ * operating Taoyuan Airport MRT line together as "the metropolitan network",
+ * including the Sanying Line, whose own mode classification is the weakest
+ * claim in lib/line-character.ts — grouping the whole `metro` folder under
+ * "Metro and light rail" does not resolve that per-line ambiguity, it just
+ * doesn't force a finer call the sources don't support either.
+ */
+const RAIL_MODE_GROUPS: { title: string; systems: string[] }[] = [
+  { title: 'Metro and light rail', systems: ['metro', 'tymc', 'tmrt', 'krtc'] },
+  { title: 'Conventional and high speed rail', systems: ['tra', 'thsr'] },
+  { title: 'Heritage and special railways', systems: ['alishan', 'cable'] },
+]
+
 export function getNavTree(): NavSection[] {
   /*
    * Line pages are ordered by the network's own line order, not by title, so
@@ -190,27 +210,70 @@ export function getNavTree(): NavSection[] {
      */
     const nonEmpty = (group: NavGroup) => group.large || group.links.length > 0
 
+    const systemGroups: NavGroup[] = systems.map((system) => ({
+      href: system.href,
+      title: system.title,
+      links: [],
+      truncated: false,
+      large: true,
+      subgroups: getTypes(section.slug, system.slug)
+        .map((type) => typeGroup(type, system.slug))
+        .filter(nonEmpty),
+    }))
+
+    /*
+     * Rail alone gets a mode layer above its systems (Part 2a, Run 303):
+     * eight systems in one flat panel no longer told a reader "this is a
+     * metro" versus "this is a heavy railway" versus "this is a heritage
+     * line". Every other multi-system section (today none) keeps the plain
+     * system list — this recurses through the same NavGroupView.subgroups
+     * mechanism a system already uses for its own types, one level deeper,
+     * so no new nav-rendering code was needed.
+     */
+    const railModeGroups: NavGroup[] | null =
+      section.slug === 'rail'
+        ? (() => {
+            const bySlug = new Map(systems.map((s, i) => [s.href, systemGroups[i]]))
+            const used = new Set<string>()
+            const buckets: NavGroup[] = RAIL_MODE_GROUPS.map((bucket) => {
+              const subgroups = bucket.systems
+                .map((slug): NavGroup | null => {
+                  const sys = systems.find((s) => s.href.endsWith(`/${slug}/`))
+                  if (!sys) return null
+                  used.add(sys.href)
+                  return bySlug.get(sys.href) ?? null
+                })
+                .filter((g): g is NavGroup => g !== null)
+              return {
+                href: '/rail/',
+                title: bucket.title,
+                links: [],
+                truncated: false,
+                large: true,
+                subgroups,
+              }
+            }).filter((bucket) => bucket.subgroups.length > 0)
+            // Any system the mapping above doesn't account for (a new folder
+            // added without updating RAIL_MODE_GROUPS) still appears, rather
+            // than silently vanishing from the nav.
+            const leftover = systemGroups.filter((g) => !used.has(g.href))
+            return [...buckets, ...leftover]
+          })()
+        : null
+
     const groups: NavGroup[] = nestSystems
       ? [
           /*
-           * One entry per system, each carrying its own types nested inside
-           * — SYSTEM before PAGE TYPE, and the panel's top level stays a
-           * short list of systems (eight, for Rail) instead of every
-           * system's every type laid out side by side (30-40 groups before
-           * this). `large: true` is kept on the system itself so SiteNav
-           * falls back to a plain direct link if a system's types all turn
-           * out empty, the same fallback a leaf group already had.
+           * One entry per system (or, for Rail, per mode bucket of
+           * systems), each carrying its own types nested inside — SYSTEM
+           * before PAGE TYPE, and the panel's top level stays a short,
+           * scannable list instead of every system's every type laid out
+           * side by side (30-40 groups before this). `large: true` is kept
+           * so SiteNav falls back to a plain direct link if everything
+           * nested inside turns out empty, the same fallback a leaf group
+           * already had.
            */
-          ...systems.map((system) => ({
-            href: system.href,
-            title: system.title,
-            links: [],
-            truncated: false,
-            large: true,
-            subgroups: getTypes(section.slug, system.slug)
-              .map((type) => typeGroup(type, system.slug))
-              .filter(nonEmpty),
-          })),
+          ...(railModeGroups ?? systemGroups),
           ...getTypes(section.slug).map((type) => typeGroup(type, '')).filter(nonEmpty),
         ]
       : [
@@ -248,7 +311,12 @@ export function getNavTree(): NavSection[] {
        * bolted on beside eight unrelated systems. Titled plainly — "Metro"
        * is already the disclosure it lives inside.
        */
-      const metro = rail.groups.find((group) => group.href === '/rail/metro/')
+      // "metro" now sits one level deeper, inside the "Metro and light
+      // rail" mode bucket (Part 2a, Run 303) rather than directly under
+      // rail.groups, so the lookup has to check subgroups too.
+      const metro = rail.groups
+        .flatMap((group) => group.subgroups ?? [group])
+        .find((group) => group.href === '/rail/metro/')
       metro?.subgroups?.push({
         href: '/rail/metro/stations/',
         title: 'Stations',
