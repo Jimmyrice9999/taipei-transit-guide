@@ -1,24 +1,24 @@
 # For Jamie
 
-## Active handoff - Run 302 - 28 August 2026 - V4 bus depth in progress
+## Active handoff - Run 302 - 28 August 2026 - V4 bus depth, 8 commits
 
-Part 0 (CI screenshot crash on /data/sources/) and Part 1 (gate:fast
-gaps, CI build caching, timing) both done and pushed. Part 2 (V4 bus
-depth) started: electric bus manufacturers (VSCC registry, Master,
-Tron Energy, Tang Eng) and the 2030 electrification programme are
-written, sourced and committed - including catching a wrong hypothesis
-in the run brief itself (Model T is Foxtron's, not Tron Energy's).
+Parts 0-1 done and pushed (CI screenshot-crash fix, gate:fast gaps
+closed, CI build caching, timing report). Part 2 (V4 bus depth): 6
+commits covering electric bus manufacturers + VSCC registry, the 2030
+electrification programme, payment/ticketing infrastructure, operator
+service ratings, a sourcing correction + ownership-history deepening
+for Metropolitan Bus, and imported diesel chassis + charging
+infrastructure. Caught and fixed a wrong hypothesis in the brief itself
+(Model T is Foxtron's, not Tron Energy's) and a self-inflicted font-
+subset regression along the way (see Run 302 in run-log.md).
 
-8 scouts ran in parallel with zero scope violations; the ceiling
-question from the brief is unresolved, not answered, since this
-batch's own writing absorbed the rest of the session.
+Every commit has its own fresh, held-still `gate:full` pass. Ran 12
+scouts total across two batches, all with zero scope violations - the
+concurrency ceiling the brief asked to be tested is still unresolved,
+just unhit.
 
-**Researched but not yet written**: payment/ticketing infrastructure,
-the Taipei bus operator service-rating scheme (甲乙丙丁 grades), and a
-聯營公車 joint-operation history correction (a docs/research citation
-that doesn't check out against its primary). Re-research fresh rather
-than trusting my summary if much time has passed.
-
-2f/2g and non-electric bus manufacturers are untouched.
+**Not yet written**: a dedicated 聯營公車 history page (citation error is
+fixed, ownership history added to operator pages, but no standalone
+page exists); 2f (route deepening); CNG bus manufacturers.
 
 Detail in docs/run-log.md Run 302.

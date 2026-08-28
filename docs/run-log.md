@@ -151,14 +151,55 @@ a `lang: en`/Chinese-`titleOriginal` mismatch on the RAC-700 page's own
 manufacturer-name source, and a missing citation. `npm run research`
 clean.
 
+### Part 2, continued — batches 2 and 3
+
+Kept going past the first electric-bus batch. Batch 2 wrote payment/
+ticketing infrastructure (2c: card technology, on-bus validator hardware,
+the 2020-2023 electronic-ticket/electronic-payment regulatory merger,
+the 2019-2020 tap-on/tap-off rollout) and the operator service-rating
+scheme (2d: Taipei's twice-yearly 優/甲/乙/丙/丁 evaluation, running since
+1992, tied to the route-points mechanism, actual grade results across
+three rounds, and New Taipei's genuinely separate parallel scheme).
+Also corrected a miscited claim a parallel scout found in
+`docs/research/bus/operators/metropolitanbus.md` (a citation that did
+not check out against its named primary — see the dedicated commit),
+and used the same scout's findings to deepen both metropolitanbus-*.md
+operator pages with ownership history: a 2010 takeover by Capital Bus's
+chairman, and 2004 privatisation-era financial figures from a magazine
+account.
+
+Batch 3 dispatched 4 more scouts for imported diesel bus/coach chassis
+(Hino, Isuzu, Mercedes-Benz, Volvo, Scania, MAN — 2a's second half per
+the brief's stated order) and depot/charging infrastructure (2g). Wrote
+both as consolidated pages. Notable findings: only MAN of the six diesel
+brands has a confirmed public VSCC type-approval trail; a genuine,
+unresolved conflict on whether Kuo-Kuang Motor Transport actually runs
+Volvo coaches (a coachbuilder's client list says yes, Kuo-Kuang's own
+Wikipedia fleet snapshot says no); Taiwan's national public-EV-charger
+ratios are explicitly measured against passenger cars, not buses, and
+no dedicated depot-electrification budget line exists in the 2030
+programme's published budget breakdown; and a scout-caught example of
+its own tooling failing safely — a first-pass paraphrased article fetch
+invented a NT$90 million subsidy figure and a wrong place name, both of
+which vanished when the same article was re-fetched and forced to quote
+verbatim, and neither was published.
+
+Three commits, each with its own fresh held-still `gate:full` (236/236
+tests, 0 broken links, 0 a11y errors, 0 ASSERTED claims) — see
+`docs/for-jamie.md` for what's still outstanding.
+
 ### Not reached this run
 
-Payment/ticketing infrastructure (2c), the operator service-rating
-scheme (2d) and the 聯營公車/大都會客運 history correction (2e) all have
-complete scout findings sitting unused — see the handoff in
-`docs/for-jamie.md`. 2f (route deepening), 2g (depots/charging) and the
-non-electric manufacturer families (imported diesel chassis, CNG) are
-untouched.
+The 聯營公車/大都會客運 history is corrected and partially deepened (see
+above) but has no dedicated standalone history page of its own — the
+scout's remaining material (1977 founding detail, Japanese-era origins,
+the trade-federation naming lead) is unused. 2f (route deepening: vehicle
+allocation, 段次 fare-stage detail, operator evaluation grade, route
+history per bus route page) and CNG bus manufacturers are untouched. The
+per-scout-batch concurrency ceiling the brief asked to be tested remains
+unresolved at 8 — every batch dispatched this run used 4-8 scouts
+successfully with zero scope violations, but nothing pushed past 8 to
+find where it actually breaks.
 
 ## Run 301 - a real gate:full run finds real bugs, from 6 commits of gate:fast-only work (2026-08-28)
 
