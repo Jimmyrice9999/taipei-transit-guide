@@ -200,6 +200,51 @@ test('specs split unit out of value, so the column can align', () => {
   }
 })
 
+/*
+ * Run 301: a THSR source was correctly marked `lang: en` (it is the English
+ * edition of the annual report) but its `titleOriginal` was left in Chinese,
+ * so the built bibliography page rendered live Han text inside a `lang="en"`
+ * span — the untagged-Han failure mode `accessibility.test.mts` exists to
+ * catch, but that check only runs against the built site in the full suite.
+ * This is the same class of bug caught at the source, before a build: an
+ * `en` source's `titleOriginal` is its own English title, not the original
+ * Chinese held over from a `titleOriginal` field that should read `zh-Hant`.
+ */
+test('a `lang: en` source does not carry a Chinese titleOriginal', () => {
+  for (const page of getAllPages()) {
+    for (const source of page.sources) {
+      if (source.lang !== 'en') continue
+      assert.ok(
+        !/[一-鿿]{2,}/.test(source.titleOriginal),
+        `${page.href} source "${source.id}" is lang: en but titleOriginal is Chinese: ${source.titleOriginal}`,
+      )
+    }
+  }
+})
+
+/*
+ * Run 301: `rail/metro/operations`'s category description was exactly 40
+ * characters against discoverability.test.mts's `> 40` floor for the built
+ * meta description — a one-character-margin failure only visible after a
+ * full build. The frontmatter `description:` field is what the meta
+ * description is built from, so checking its length at the source catches
+ * the same failure before a build is needed.
+ */
+test('category and type descriptions are a usable length', () => {
+  for (const section of getSections()) {
+    assert.ok(
+      section.description.length > 40 && section.description.length < 400,
+      `${section.slug}: description is ${section.description.length} chars`,
+    )
+    for (const type of getTypes(section.slug)) {
+      assert.ok(
+        type.description.length > 40 && type.description.length < 400,
+        `${section.slug}/${type.slug}: description is ${type.description.length} chars`,
+      )
+    }
+  }
+})
+
 test('every folder has an _index.md', () => {
   for (const section of getSections()) {
     const index = path.join(CONTENT, section.slug, '_index.md')
