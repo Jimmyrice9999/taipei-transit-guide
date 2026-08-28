@@ -22,13 +22,20 @@ lists are generated from the committed route pull.
 - **Confidence.** High — full record fetched and read on 21 August 2026.
 - **Original-language sentence.** 「公司名稱｜大都會汽車客運股份有限公司」; 「統一編號｜80653426」; 「公司所在地｜臺北市內湖區港墘路3號1樓」; 「公司設立日期｜2003/12/16」
 
-- **Claim.** Taipei PTO’s transport history says the former Taipei Municipal Bus Administration became a private company organization and was renamed Metropolitan Bus on 1 January 2004. Taipei DOT’s contemporary explanation says the city contributed former bus-division vehicles for 38% of shares and former employees collectively held the remaining 62%.
+- **Claim.** Taipei PTO’s transport history says the former Taipei Municipal Bus Administration became a private company organization and was renamed Metropolitan Bus on 1 January 2004.
 - **Source.** Taipei city-bus history / `titleOriginal`: 公車簡介
 - **Publisher.** Taipei City Public Transportation Office / 臺北市公共運輸處
 - **URL.** https://pto.gov.taipei/News_Content.aspx?n=AAEEE8A01971ECFB&s=FBAD7AB84D95E137&sms=D0111F238E458DC8
 - **Kind.** PRIMARY — responsible transport authority history.
-- **Confidence.** High — full HTML page fetched and read on 21 August 2026.
+- **Confidence.** High — full HTML page fetched and read on 21 August 2026, and independently re-fetched 28 August 2026 (see Checked and failed): confirms this specific sentence, no more.
 - **Original-language sentence.** 「臺北市公共汽車管理處自2004年1月1日起轉型民營化公司組織並改名為大都會汽車客運公司」
+
+- **Claim.** Taipei DOT’s contemporary clarification says the city contributed former bus-division vehicles for 38% of shares and former employees collectively held the remaining 62%.
+- **Source.** Taipei DOT clarification on Metropolitan Bus governance / `titleOriginal`: 臺北市政府交通局針對部分媒體報導大都會客運公司車輛採購及董事有無善盡職責等相關問題，特別提出澄清
+- **Publisher.** Taipei City Department of Transportation / 臺北市政府交通局
+- **URL.** https://english.udd.gov.taipei/News_Content.aspx?n=DD9CEC17A97FBC64&s=A7B3D2A0C690E5F6&sms=72544237BBE4C5F6
+- **Kind.** PRIMARY — the city transport bureau's own governance clarification.
+- **Confidence.** Medium — this is the source the content pages (`metropolitanbus-h3iwov.md`, `metropolitanbus-oercnr.md`) already cite for this figure; it has not yet been independently re-fetched and re-read against this exact sentence in this research pass. **Correction, 28 August 2026:** this claim was previously miscited in this file to the PTO `公車簡介` page above, which does not contain a share-split sentence at all — see Checked and failed.
 
 - **Claim.** The company-registration date and the service transition date are different dated events: 16 December 2003 is the registered-company date in MOEA’s record, while 1 January 2004 is the municipal authority’s stated privatization/operation date. They are published together rather than collapsed into one founding date.
 - **Source.** MOEA company record and Taipei PTO history above.
@@ -87,6 +94,29 @@ lists are generated from the committed route pull.
 - **Confidence.** High for the event and response; no causal conclusion is asserted.
 - **Original-language sentence.** 「1輛大都會汽車客運股份有限公司所屬電動公車執行262路線載客任務」; 「大都會客運該路線同批20輛電動公車已於114年6月17日停派進行逐車檢查」
 
+### 4. Institutional lineage and ownership history, 28 August 2026
+
+- **Claim.** Taipei's Department of Transportation independently corroborates the 1 January 2004 privatisation date from its own institutional-history page, in different terms from the PTO's account above: "另為提升公車營運效率及執行民營化政策，93年1月1日裁撤臺北市公共汽車管理處" (the Bureau abolished the Bus Administration on that date to improve efficiency and implement the privatisation policy). The same page establishes the Bus Administration already existed by May 1973 (民國62年5月), transferred into the newly created Department of Transportation from the city's Construction Bureau at that time; it gives no founding date of its own for the Bus Administration.
+- **Source.** Taipei City Department of Transportation, organisational history / `titleOriginal`: 臺北市政府交通局-史沿革
+- **Publisher.** Taipei City Department of Transportation / 臺北市政府交通局
+- **URL.** https://www.dot.gov.taipei/cp.aspx?n=9CB8E3F779E6F103
+- **Kind.** PRIMARY — the transport bureau's own organisational history.
+- **Confidence.** High — fetched and read in full. A second, independent primary confirmation of the 1 January 2004 date, from a different city body (DOT rather than PTO) and different wording (abolition rather than transformation/renaming).
+
+- **Claim.** In December 2010, 首都客運 (Capital Bus) chairman 李博文 took board control of Metropolitan Bus through combined shareholdings via Capital Bus and Taipei Bus; the city still held 38% at that point, seven years after privatisation, and had held the chairmanship through government-appointed representatives up to then.
+- **Source.** "首都入主大都會客運 集團規模稱霸" / Capital Bus takes over Metropolitan Bus, becoming the dominant group by scale
+- **Publisher.** Liberty Times (自由時報), 22 December 2010
+- **URL.** https://news.ltn.com.tw/news/local/paper/454049
+- **Kind.** SECONDARY — news report.
+- **Confidence.** Medium-High — fetched in full. Independently consistent with the 38% city-share figure discussed above (claim 2 in section 1), without itself stating the 62% employee figure.
+
+- **Claim.** A September 2004 magazine feature gives financial background to the privatisation not found in any government primary checked this pass: pre-privatisation daily operating loss of roughly NT$5 million; a 2001 single-year loss of NT$1.95 billion; cumulative losses over NT$13.8 billion; a government-funded early-retirement cost of NT$4.5 billion; personnel cost equal to 1.2× total revenue; roughly 2,000 employees near retirement age at the transition; and, after privatisation, a roughly 35% rise in monthly revenue and a first-half pre-tax profit of about NT$13 million, plus roughly NT$80 million/year in depot-site rental income to the city. It separately gives an approximate, independent corroboration of the employee share figure: "2.5億元買下新公司62％的股權" (NT$250 million for 62% of the new company), close to but not identical to the NT$248,005,260 figure that circulates elsewhere in secondary material with no primary source found for it (see Stated gaps).
+- **Source.** "大都會客運 駛出『寧靜革命』新動能" / Metropolitan Bus drives out with new momentum for a "quiet revolution"
+- **Publisher.** Global Views Monthly (遠見雜誌), issue 219, 1 September 2004, author 張元祥
+- **URL.** https://www.gvm.com.tw/article/9690
+- **Kind.** SECONDARY — magazine feature, no primary financial-audit document found to cross-check its figures.
+- **Confidence.** Medium — fetched in full; a contemporaneous, detailed account, but a single-outlet source for all figures given.
+
 ## Conflicts
 
 1. **Date of establishment versus service transition.** MOEA records company registration on 16 December 2003; Taipei PTO records privatization and renaming on 1 January 2004. These are different events and both remain on the pages.
@@ -100,7 +130,10 @@ lists are generated from the committed route pull.
 - **Legal parent, merger history and ownership after privatization** — Checked the full MOEA record, Taipei PTO history and Taipei DOT privatization notices on 21 August 2026. They establish the 38/62 transition arrangement but do not establish a current statutory parent or later merger chronology.
 - **Final fire cause** — Checked the full TTSB incident record, preliminary report and Taipei PTO response on 21 August 2026. The source says the investigation was opened and the cause would be published after completion; no final cause is asserted here.
 - **TaiwanJobs employer page** — The search result exposed a 2003-12-16 date and 民權東路 address, but a direct full-page fetch timed out on 21 August 2026. It was not used as evidence; the same registration date is supported by the readable MOEA record.
+- **The PTO `公車簡介` page as the source for the 38%/62% share split** — Independently re-fetched in full twice on 28 August 2026 (per a separate research pass on the joint-operation network) and confirmed it contains only the renaming/dissolution sentence quoted above; no sentence about share percentages, capital amount or employee investment appears on that page at all. This file previously cited that page for the 38/62 claim; corrected above to cite the actual source the content pages already use, a separate Taipei DOT governance clarification, which itself has not yet been independently re-verified against this exact sentence.
 
 ## Stated gaps
 
 The pages still cannot give a complete current fleet/model inventory, hybrid-bus evidence, depot opening dates or capacities, a statutory parent/merger chronology, or route contract awards and renewals. A readable company registry history, procurement/subsidy award table, operator fleet register, and completed TTSB report would settle those gaps.
+
+The precise NT$248,005,260 employee-share figure and the exact 38%/62% capital breakdown (NT$600 million founding capital, NT$152 million municipal stake) that circulate identically across zh.wikipedia, several enthusiast wikis, twincn.com and a job portal have still not been traced to a primary government source as of 28 August 2026 — a DOT/PTO privatisation-era press release, a city council record, or the company's own founding filing would settle it. The Taipei DOT governance-clarification source now cited for the 38%/62% split above (see section 1) gives the percentages but its exact wording for the underlying capital amount has not yet been independently re-quoted in this file.
