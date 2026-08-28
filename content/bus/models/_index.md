@@ -75,5 +75,6 @@ the manufacturer-level pages below [^vscc-list-0715]:
 - [Taiwan Yutong 6128HG](/bus/models/yutong-6128hg/) — one Dàyou vehicle identified in a safety report, with seat and standing figures [^ttsb-citiair].
 - [King Long / 大金龍](/bus/models/king-long/) — Dàyou’s official fleet page names year groups and route classes, but not a complete technical roster [^dayou-fleet].
 - [CNG buses](/bus/models/cng-buses/) — one documented six-vehicle Taipei pilot in 1999, no manufacturer named anywhere, and no VSCC type-approval trail for the fuel type at all.
+- [Historic and domestic manufacturers](/bus/models/historic-manufacturers/) — two dated 1970s/80s fleet purchases, and the domestic coachbuilders that bodied imported chassis after privatisation, with a genuine unresolved conflict on one closure date.
 
 Manufacturer, chassis/body, passenger capacity and propulsion are not silently inferred from a trade name or a photograph. Where the source does not publish them, the entity page says TBC [^tdx-bus-operator-pull].

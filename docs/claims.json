@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26869,
-    "tbc": 4611,
+    "sourced": 26880,
+    "tbc": 4612,
     "asserted": 0,
-    "meta": 96
+    "meta": 107
   },
   "files": [
     {
@@ -335,6 +335,14 @@
       "tbc": 1,
       "asserted": 0,
       "meta": 6
+    },
+    {
+      "file": "content/bus/models/historic-manufacturers.md",
+      "sources": 4,
+      "sourced": 11,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 11
     },
     {
       "file": "content/bus/models/imported-diesel-chassis.md",
