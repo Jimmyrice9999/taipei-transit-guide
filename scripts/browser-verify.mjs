@@ -308,6 +308,13 @@ const PAGE_TYPES = [
   { name: 'data', url: '/data/' },
   { name: 'data-stations', url: '/data/stations/' },
   { name: 'data-colours', url: '/data/line-colours/' },
+  /* Run 302: every source the site cites (7,700+ citations) — the single
+     tallest rendered page on the site. Was never in this list, so it was
+     being visited only by accident (selected as its own template's
+     canonical), with no name anyone could grep for. It is also the page
+     that proved fullPage screenshots need a clipped fallback; see
+     MAX_SCREENSHOT_HEIGHT below. */
+  { name: 'data-sources', url: '/data/sources/' },
   { name: 'provenance', url: '/data/provenance/' },
   { name: 'data-network-growth', url: '/data/network-growth/' },
   { name: 'data-comparisons', url: '/data/comparisons/' },
@@ -991,6 +998,17 @@ function writeHumanReport(report) {
     '',
     ...templateLines,
     '',
+    '## Clipped screenshots',
+    '',
+    report.clippedScreenshots.length
+      ? report.clippedScreenshots
+          .map(
+            (c) =>
+              `- ${c.name} (${c.url}) — clipped to ${c.clipHeight}px; full rendered height ${c.fullHeight}px exceeds Chromium's fullPage capture limit`,
+          )
+          .join('\n')
+      : '✓ none — every screenshot captured at full page height',
+    '',
     `## Findings`,
     '',
     failures.length ? failures.map((failure) => `- ✗ ${failure.phase}: ${failure.name} (${failure.url}) — ${failure.message}`).join('\n') : '✓ none',
@@ -1045,6 +1063,7 @@ const report = {
   print: [],
   spineOverlap: [],
   pageFailures: [],
+  clippedScreenshots: [],
   progress: [],
 }
 
@@ -1325,6 +1344,42 @@ log(`\n═══ 4. axe-core, ${FULL_SWEEP ? 'all pages' : 'selected pages'} ═
 
 log('\n═══ 5. Screenshots ═══\n')
 
+/*
+ * Chromium's screenshot compositing has a hard texture-height ceiling
+ * (Page.captureScreenshot throws "Unable to capture screenshot" above it,
+ * not a graceful downscale). /data/sources/ lists every citation on the
+ * site — 7,700+ of them — and at that length a fullPage capture exceeds the
+ * ceiling regardless of viewport width. This is a genuine limit of the
+ * capture tool, not a defect in the page, so the fix is a bounded clipped
+ * capture, not excluding the page from coverage.
+ *
+ * 12,000px is comfortably under every documented ceiling (Chromium's
+ * maximum texture dimension is 16,384px on typical GPUs) while still being
+ * generous enough that only genuinely extreme pages ever hit it.
+ */
+const MAX_SCREENSHOT_HEIGHT = 12_000
+
+async function captureScreenshot(page, filePath) {
+  try {
+    await page.screenshot({ path: filePath, fullPage: true })
+    return { clipped: false }
+  } catch (error) {
+    if (!/unable to capture screenshot/i.test(String(error?.message ?? error))) throw error
+    const fullHeight = await page.evaluate(() => document.documentElement.scrollHeight)
+    const clipHeight = Math.min(fullHeight, MAX_SCREENSHOT_HEIGHT)
+    const viewportWidth = page.viewportSize()?.width ?? 1280
+    try {
+      await page.screenshot({
+        path: filePath,
+        clip: { x: 0, y: 0, width: viewportWidth, height: clipHeight },
+      })
+      return { clipped: true, fullHeight, clipHeight }
+    } catch (retryError) {
+      return { clipped: true, fullHeight, clipHeight, failed: true, message: errorSummary(retryError) }
+    }
+  }
+}
+
 {
   /*
    * 1920 and 2560 added permanently in run 10.
@@ -1355,20 +1410,41 @@ log('\n═══ 5. Screenshots ═══\n')
       for (const [width, suffix] of widths) {
         await page.setViewportSize({ width, height: 900 })
         if (!(await gotoPage(page, item, base, report, 'Screenshots'))) break
-        await page.screenshot({
-          path: path.join(SHOTS, `${item.name}-${width}${suffix}.png`),
-          fullPage: true,
-        })
+        const name = `${item.name}-${width}${suffix}.png`
+        const result = await captureScreenshot(page, path.join(SHOTS, name))
+        if (result.clipped) {
+          report.clippedScreenshots.push({ name, url: item.url, width, ...result })
+          if (result.failed) {
+            recordPageFailure(
+              report,
+              item,
+              'Screenshots',
+              `could not capture even clipped to ${result.clipHeight}px (full height ${result.fullHeight}px): ${result.message}`,
+            )
+          } else {
+            log(
+              `  ⚠ ${name} clipped to ${result.clipHeight}px — full rendered height ${result.fullHeight}px exceeds Chromium's capture limit`,
+            )
+          }
+        }
       }
       // A landscape phone is a distinct height/width relationship, not a wide
       // desktop screenshot. Keep one representative operator page for it.
       if (item.url === '/bus/operators/taipeibus-1m9ums8/') {
         await page.setViewportSize({ width: 667, height: 375 })
         if (await gotoPage(page, item, base, report, 'Screenshots')) {
-          await page.screenshot({
-            path: path.join(SHOTS, 'bus-operator-detail-landscape-phone.png'),
-            fullPage: true,
-          })
+          const result = await captureScreenshot(
+            page,
+            path.join(SHOTS, 'bus-operator-detail-landscape-phone.png'),
+          )
+          if (result.clipped) {
+            report.clippedScreenshots.push({
+              name: 'bus-operator-detail-landscape-phone.png',
+              url: item.url,
+              width: 667,
+              ...result,
+            })
+          }
         }
       }
     },
@@ -1376,6 +1452,9 @@ log('\n═══ 5. Screenshots ═══\n')
     progress,
   })
   log(`  ${visualPages.length * widths.length + 1} screenshots → docs/screenshots/`)
+  if (report.clippedScreenshots.length) {
+    log(`  ${report.clippedScreenshots.length} screenshot(s) clipped to stay under Chromium's capture limit — see docs/browser-verification.json`)
+  }
 }
 
 /* ---- 6. print PDFs ---- */
