@@ -1,3 +1,53 @@
+## Run 299 - Alishan Forest Railway's rolling stock and a decade of ridership (2026-08-28)
+
+### The last gap this pass's audit found: two whole missing categories
+
+Alishan (and separately, the Maokong Gondola cable system, checked and
+found already well-covered inline) had only `lines/` and `stations/`
+folders — no rolling-stock or operations content at all, unlike every
+other rail system on the site. Two read-only scouts researched
+concurrently. New pages: `content/rail/alishan/rolling-stock/fleet-roster.md`,
+`content/rail/alishan/operations/fares-and-ridership.md`.
+
+### A wrong Wikipedia citation, caught twice more
+
+The rolling-stock scout independently verified a Wikipedia claim that a
+train called 福森號 (Formosensis) launched on the railway's July 2024
+reopening day, citing a CNA article by name. Fetching that exact article
+directly shows it contains no mention of the train at all — a checked
+citation failure, not published. Separately, the new fleet-roster page
+surfaced a genuine conflict with the site's own existing content: this
+run's fresh fetch of the operator's Shay-locomotive page dates two
+diesel-converted locomotives' return to service to the same year (2007),
+while `content/rail/alishan/_index.md` already cited a different operator
+page (an English mirror, fetched days earlier) giving two different years
+(2006 and 2004) for the same two locomotives. Neither is corrected to
+match the other — both published, flagged explicitly, per the site's own
+rule against silently picking one figure over another.
+
+### A decade of ridership, pulled from an unreadable PDF
+
+The fares/ridership scout found a genuinely useful primary source — the
+operator's own monthly operations statistics, January 2014 to December
+2023 — but couldn't extract it (no `pdftotext` access in its environment).
+The main session fetched it directly and extracted it with `pdftotext`,
+then parsed the raw text programmatically rather than by hand, verifying
+the month-to-value alignment against a `-layout` rendering of the first
+row before trusting the rest. This produced ten years of annual passenger
+totals (main line vs. the three branch lines combined) that no page on
+the operator's own site states as a single number anywhere — a genuine,
+derived addition, published as derived, not as an operator-stated figure.
+The raw data itself contains an unexplained anomaly (negative passenger
+counts for three months in 2019); reported exactly as it appears in the
+source rather than smoothed over.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing 12 unsourced sentences (mostly
+a ridership table needing per-row citations, the same pattern as prior
+runs). No new Han characters needed. `gate:full` not run this commit
+(5th since Run 294 — halfway to the 10th-commit cadence).
+
 ## Run 298 - TMRT's missing depot page, and a wrong hypothesis caught (2026-08-28)
 
 A smaller, final gap from this pass's audit: TMRT (Taichung Metro) had no
