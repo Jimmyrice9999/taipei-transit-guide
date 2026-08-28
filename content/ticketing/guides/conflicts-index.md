@@ -1623,6 +1623,51 @@ sources:
     kind: "primary"
     lang: ""
     note: "Government open data, committed to this repository at data/tdx/. Route O-1 (Nanshijiao–Huilong) and O-2 (Nanshijiao–Luzhou) give CumulativeDistance of 24.11 km and 18.41 km, and TravelTime of 48 and 38 minutes, matching TRTC's own published journey times exactly."
+  - id: "rail-metro-operations-fares-trtc-welfare-points"
+    title: "FAQ — Senior/Disability Social-Welfare Cards"
+    titleOriginal: "敬老卡愛心卡愛心陪伴卡相關問題"
+    publisher: "Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)"
+    url: "https://www.metro.taipei/News_Content.aspx?n=566DA580861CEE77&sms=87415A8B9CE81B16&s=41B78C4788395C41"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, fetched directly. States 600 monthly points for senior/disability cardholders — conflicts with NTMC's own stated figure of 480; both published, neither resolved."
+  - id: "rail-metro-operations-fares-ntmc-faq"
+    title: "Frequently Asked Questions"
+    titleOriginal: "常見問題"
+    publisher: "New Taipei Metro Corporation (新北大眾捷運股份有限公司)"
+    url: "https://www.ntmetro.com.tw/basic/?node=10005"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, fetched directly. States NTMC's fare-setting authority, its own 40% concession rate, its flat NT$200-spend/NT$50-rebate frequent-rider mechanic, and the 480-point monthly social-welfare allowance that conflicts with TRTC's stated 600."
+  - id: "rail-metro-operations-ridership-trtc-fy2025-performance"
+    title: "FY2025 (ROC 114) Operational Performance Report"
+    titleOriginal: "臺北捷運公司114年度營運績效報告"
+    publisher: "Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)"
+    url: "https://www.metro.taipei/cp.aspx?n=2EC550B62FFE16C2"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full 10-page PDF read directly. Source for average daily ridership, the monthly 2019/2024/2025 series, per-line punctuality/headway/availability tables, MKBF reliability figures, and the ~14.5-billion cumulative-ridership figure current when the report was written."
+  - id: "rail-metro-operations-ridership-trtc-chronicle"
+    title: "Company Chronicle"
+    titleOriginal: "大事紀"
+    publisher: "Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)"
+    url: "https://www.metro.taipei/cp.aspx?n=B27E7BC8CBBCDA61"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Fetched directly with explicit ROC-to-Gregorian date conversion. Source for cumulative ridership milestones from 500 million (2001) through 15 billion (2026); the extraction pass used may not be exhaustive — earlier or intermediate milestones may exist unread on this page."
+  - id: "rail-metro-operations-ridership-trtc-annual-line-stats"
+    title: "Annual and Prior-Month Ridership Statistics"
+    titleOriginal: "各年度暨前一月旅運量統計資料"
+    publisher: "Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)"
+    url: "https://www.metro.taipei/cp.aspx?n=FED7CC0F31E0A664"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, fetched directly. States annual and monthly ridership split only two ways — Wenhu Line vs. the other four lines combined — with no further per-line breakdown, and gives the historical series back to 1998."
   - id: "rail-metro-rolling-stock-c301-dorts-first-generation"
     title: "The First Generation Electric Multiple Units of Taipei Heavy Rail Rapid Transit System"
     titleOriginal: "臺北捷運第一代高運量電聯車"
@@ -3650,6 +3695,86 @@ network total.
 - [Zhonghe–Xinlu Line — Luzhou Line](https://www.dorts.gov.taipei/cp.aspx?n=122C012A85C41404&s=3843E83F882E79FD) — primary; Taipei City Government, Department of Rapid Transit Systems (DORTS); accessed 2026-08-23.[^rail-metro-lines-zhonghe-xinlu-line-dorts-luzhou]
 - [Zhonghe–Xinlu line](https://zh.wikipedia.org/zh-tw/中和新蘆線) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-12.[^rail-metro-lines-zhonghe-xinlu-line-zh-zhonghe-xinlu]
 - [Taiwan MOTC TDX — Route and StationOfRoute, operator TRTC](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications, Taiwan; accessed 2026-08-12.[^rail-metro-lines-zhonghe-xinlu-line-tdx]
+
+## Taipei Metro fares — A genuine conflict: how many social-welfare points, exactly
+
+Discussed on [Taipei Metro fares](/rail/metro/operations/fares/) in the source page's “A genuine conflict: how many social-welfare points, exactly” section.[^rail-metro-operations-fares-trtc-welfare-points]
+
+### A genuine conflict: how many social-welfare points, exactly
+
+Senior (敬老卡) and disability (愛心卡) cardholders get a monthly allowance
+of social-welfare points, usable across TRTC, NTMC's Circular Line and
+light rail, Maokong Gondola, and joint bus operators, before falling back to
+a 40% MRT discount or 50% bus discount once exhausted.[^rail-metro-operations-fares-trtc-welfare-points]
+TRTC's own FAQ states
+this allowance as **600 points a month**; NTMC's own FAQ, describing what
+reads as the identical benefit for the identical population, states **480
+points a month**.[^rail-metro-operations-fares-trtc-welfare-points][^rail-metro-operations-fares-ntmc-faq] Both are primary sources
+directly contradicting each other on a figure that affects a specific,
+sizeable population of riders. Neither is picked here.
+
+#### Sources for this entry
+
+- [FAQ — Senior/Disability Social-Welfare Cards](https://www.metro.taipei/News_Content.aspx?n=566DA580861CEE77&sms=87415A8B9CE81B16&s=41B78C4788395C41) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-28.[^rail-metro-operations-fares-trtc-welfare-points]
+- [Frequently Asked Questions](https://www.ntmetro.com.tw/basic/?node=10005) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-28.[^rail-metro-operations-fares-ntmc-faq]
+
+## Taipei Metro ridership — TRTC: 2.1 million riders a day, most of the way back from COVID
+
+Discussed on [Taipei Metro ridership](/rail/metro/operations/ridership/) in the source page's “TRTC: 2.1 million riders a day, most of the way back from COVID” section.[^rail-metro-operations-ridership-trtc-fy2025-performance]
+
+### TRTC: 2.1 million riders a day, most of the way back from COVID
+
+TRTC's own FY2025 performance report puts average daily ridership at
+2,101,700 — up 3.7% on FY2024's 2,026,843 — split into 2,276,587 on an
+average weekday and 1,740,170 on an average holiday or
+weekend.[^rail-metro-operations-ridership-trtc-fy2025-performance] That figure is 97.2% of the pre-pandemic
+FY2019 average of 2,163,285, a recovery TRTC states directly rather than
+leaving a reader to infer it.[^rail-metro-operations-ridership-trtc-fy2025-performance] Service quality
+stayed within the operator's own statutory floors across all five lines:
+punctuality (arrival within schedule) ranged from 99.69% to 99.93%, and
+train-availability rates from 91.85% to 95.83%, both comfortably above the
+99% and 90% floors respectively.[^rail-metro-operations-ridership-trtc-fy2025-performance] System
+reliability, measured in mean distance between failures (MKBF), reached
+23.009 million car-kilometres in FY2024 — the best year on record — and
+19.678 million in FY2025, the second-best.[^rail-metro-operations-ridership-trtc-fy2025-performance] A
+widely repeated shorthand claiming MKBF "exceeds 20 million car-km" holds
+for FY2024 but not FY2025, which fell just short of that threshold — worth
+stating precisely rather than rounding up.
+
+TRTC's cumulative ridership has passed several billion-scale thresholds
+since the system opened in 1996: 500 million by January 2001, 2 billion by
+August 2005, 4 billion by April 2010, 5 billion by February 2012, 10 billion
+by March 2019, 13 billion by November 2023, and 15 billion by 24 June
+2026.[^rail-metro-operations-ridership-trtc-chronicle] TRTC's own operational report, written earlier in
+2026, separately states the system had "surpassed 14.5 billion" trips as of
+that writing — consistent with, not contradicting, the chronicle's later
+15-billion milestone a few months on.[^rail-metro-operations-ridership-trtc-fy2025-performance][^rail-metro-operations-ridership-trtc-chronicle]
+
+#### Sources for this entry
+
+- [FY2025 (ROC 114) Operational Performance Report](https://www.metro.taipei/cp.aspx?n=2EC550B62FFE16C2) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-28.[^rail-metro-operations-ridership-trtc-fy2025-performance]
+- [Company Chronicle](https://www.metro.taipei/cp.aspx?n=B27E7BC8CBBCDA61) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-28.[^rail-metro-operations-ridership-trtc-chronicle]
+
+## Taipei Metro ridership — Remaining gaps
+
+Discussed on [Taipei Metro ridership](/rail/metro/operations/ridership/) in the source page's “Remaining gaps” section.[^rail-metro-operations-ridership-trtc-annual-line-stats]
+
+### Remaining gaps
+
+Per-line ridership for TRTC's four heavy lines individually (Red, Green,
+Orange, Blue) is not published anywhere found for this page. Whether the
+31 December 2025 24-hour figure of 3,043,167 system-wide riders is TRTC's
+genuine all-time single-day record is not established — TRTC's own
+chronicle states the figure without record-specific language. TRTC's
+FY2025 annual total, calculated here by summing its own two-category table,
+sits within rounding distance of a different figure attributed to a
+city-government statistical yearbook, but that yearbook's own tables could
+not be independently read to confirm the match precisely — not
+established.[^rail-metro-operations-ridership-trtc-annual-line-stats]
+
+#### Sources for this entry
+
+- [Annual and Prior-Month Ridership Statistics](https://www.metro.taipei/cp.aspx?n=FED7CC0F31E0A664) — primary; Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司); accessed 2026-08-28.[^rail-metro-operations-ridership-trtc-annual-line-stats]
 
 ## C301 — Fleet-count conflict
 

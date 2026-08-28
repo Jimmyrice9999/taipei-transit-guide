@@ -1,3 +1,55 @@
+## Run 296 - Taipei Metro's missing ridership, fares and accessibility pages (2026-08-28)
+
+### Confirmed by audit, not assumed
+
+After closing THSR's gap (Run 295), a directory audit found Taipei Metro
+(TRTC/NTMC) — the network every other page on this site treats as the
+core system — had no `operations/` or `facilities/` folder at all: no
+ridership, fares or accessibility page, though every other operator
+(TRA, KRTC, TYMC, TMRT, THSR) has all three. Technology and
+station-area-development were checked too and turned out to be genuinely
+covered already, cross-system, under `content/rail/technology/` and
+`content/rail/projects/tod-joint-development.md` — so only three pages
+were a real gap, not five. Three read-only scouts researched
+concurrently; three pages written: `content/rail/metro/operations/
+ridership.md`, `operations/fares.md`, `facilities/accessibility.md`,
+plus two category `_index.md` files and matching `docs/research/rail/
+metro/**` files.
+
+### What's now established
+
+TRTC's FY2025 average daily ridership (2,101,700, 97.2% recovered from
+COVID) and a full punctuality/reliability table, all from the operator's
+own performance report — plus a caught secondary-source overstatement (a
+paraphrase claimed the system's reliability metric "exceeds 20 million
+car-km" both years; the primary report shows FY2025 fell just short).
+NTMC's separate per-line figures show the Circular Line, Danhai LRT and
+Ankeng LRT all posting record ridership a year after an April 2024
+earthquake shut the Circular Line down. On fares: a distance-band table
+(NT$20-65) and a direct contradiction of a common assumption — TRTC's own
+site states an EasyCard costs exactly the same as a paper token today (a
+secondary, unverified claim says that wasn't always true, before a 2020
+change). A genuine, unresolved conflict between TRTC and NTMC's own FAQ
+pages over how many monthly social-welfare points a senior or disability
+card carries (600 vs 480) — published as a real conflict, not picked. On
+accessibility: the operator's own account of being Taiwan's first
+mass-transit system to adopt accessibility facilities, set directly
+against a 2023 city inspection that found every one of 81 checked
+accessibility facilities failed, and a Control Yuan corrective measure
+over TRTC fining an autistic passenger without reviewing the CCTV
+footage that would have cleared him. A genuine design contrast between
+NTMC's own Danhai LRT and Circular Line priority-seat ratios (19.4% vs
+30.6% of seats) and restroom coverage.
+
+### Gates
+
+`gate:fast` clean (107/107) after fixing 9 genuinely unsourced sentences
+the same way as Run 295 — citations added or rephrased into explicit
+TBC/not-established language, none hidden. One new Han character
+required a font-subset rebuild (build to fonts to build again, per the
+documented ordering) — clean, no missing glyphs across 3,110 pages.
+`gate:full` not run this commit, per the 10th-commit cadence.
+
 ## Run 295 - THSR's entire missing content layer: ridership, fares, fleet, accessibility, engineering, TOD (2026-08-28)
 
 ### The single largest confirmed Part-3 gap, closed in one batch

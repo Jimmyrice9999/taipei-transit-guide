@@ -21,3 +21,11 @@ to file a line somewhere a rider would not look for it. Taiwan Railway and
 high speed rail are outside it because they are separate networks with separate
 ticketing, separate stations and separate operators — not because they are a
 different kind of train.
+
+The [ridership](/rail/metro/operations/ridership/) and
+[fare](/rail/metro/operations/fares/) records cover what TRTC and NTMC each
+publish about their own networks — including a genuine, unresolved conflict
+between the two operators over a widely-used social-welfare benefit. The
+[accessibility record](/rail/metro/facilities/accessibility/) covers what
+the operator states about its network, and a city inspection that did not
+agree with it.
