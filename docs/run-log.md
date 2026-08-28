@@ -1,3 +1,101 @@
+## Run 304 - Part 1 audit, targeted single-source fixes, new research seams (2026-08-29)
+
+Audited the brief per its own instruction (stale in four consecutive runs) —
+Run 303's handoff was accurate this time: Parts 3 (new research seams) and 4
+(visual/photos) genuinely not started, Part 5 ran only the default
+`verify:browser` sweep not the full matrix, Part 2's depth audit (this run's
+Part 1) never ran. Dispatched 8 read-only scouts immediately, before touching
+Part 1, for the Part 3 research seams (3a Japanese-era railway, 3b sugar
+railway, 3c forestry railways beyond Alishan, 3d mining railways, 3e ports
+and rail freight, 3f airports and domestic aviation, 3g long-distance/
+international ferries, 3h transport policy history), then 4 more once Part 1
+identified concrete secondary-source targets (accessible-facility regulation
+basis, TRA base fare table, transport statistics for 3i, a second source for
+two single-sourced bus models) — 12 scouts total, all launched successfully,
+no rate-limit hit at that concurrency.
+
+### Part 1 — word-count and sourcing audit
+
+Wrote a one-off audit script reusing `scripts/citations.mjs`'s own
+`contentFiles`/`readContent`/`sourcesOf` helpers (for parsing consistent with
+the build's own citation checker) rather than a fresh regex pass, run against
+all 1,850 content files. Word counts strip code fences, HTML comments, table
+rows, heading markers, footnote markers and markdown link syntax before
+counting, i.e. body prose only, not frontmatter facts/specs.
+
+**Per page type** (n, median words, P25/P75, min/max, avg sources, % resting
+on one source) — the full table is reproducible by rerunning the script, kept
+out of git as a scratch tool, not committed:
+
+| type | n | median | P25 | P75 | avg sources | 1-source % |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| bus/routes | 1071 | 582 | 483 | 704 | 3.63 | 0.0% |
+| rail/tra | 277 | 485 | 485 | 487 | 4.29 | 1.1% |
+| rail/krtc | 96 | 436 | 419 | 450 | 6.49 | 2.1% |
+| bus/operators | 62 | 620 | 382 | 742 | 5.98 | 1.6% |
+| rail/tymc | 60 | 335 | 296 | 356 | 4.55 | 1.7% |
+| rail/history | 58 | 449 | 407 | 483 | 6.62 | 0.0% |
+| rail/metro | 37 | 636 | 421 | 1736 | 9.92 | 0.0% |
+| rail/tmrt | 34 | 425 | 297 | 440 | 5.12 | 2.9% |
+| bike/stations | 30 | 368 | 352 | 397 | 1.97 | 3.3% |
+| rail/thsr | 27 | 713 | 342 | 721 | 4.30 | 0.0% |
+| bus/models | 11 | 522 | 408 | 590 | 6.27 | 18.2% |
+| bus/depots | 5 | 328 | 321 | 328 | 3.00 | 40.0% |
+
+(remaining smaller types — rail/technology, rail/projects, rail/alishan,
+ferry/routes, rail/cable, ticketing/guides, bus/regional, rail/operators,
+bus/network, bike/history — each n≤14, in the full script output.)
+
+**269 of 1,850 pages (14.5%) are under 400 words.** Of those, roughly 40 are
+`_index.md` category-index pages with 0-100 words and 0 sources by design
+(navigational listing pages, not prose content — `content/rail/tmrt/lines/
+_index.md`, `content/rail/thsr/stations/_index.md` and similar), which this
+audit does not treat as depth failures: they were never meant to carry sourced
+prose, and inflating them would be exactly the padding the brief prohibits.
+Excluding those, the real thin-content population clusters in three groups:
+TYMC's newer Circular Line (G-series) stations (2 sources, ~335-360w, a
+uniform pattern from one shared research pass), bike-share regional pages (2
+sources, ~350-399w), and New Taipei bus district-office operator pages (2
+sources, ~370-384w) — each cluster shares one fix pattern rather than needing
+269 individually bespoke research passes.
+
+**16 pages rest on a single source; 10 of those are real content pages** (the
+rest are `_index.md`). Read all 10 in full before deciding what each actually
+needs — every one turned out to already be a careful, honest, well-sourced
+page (TTSB incident report for a Yutong 6128HG; Dàyou's own fleet page for
+King Long year-groups; San Chung Bus's own site for its depot network; TYMC/
+KRTC/TMRT accessibility pages, each explicitly flagging "named regulatory
+basis: TBC" because the operator's own page cites none; KRTC's joint-
+development mechanism page, blocked from its case-list by client-side
+rendering; the Neihu Line's steel-running-surface DORTS paper; TRA's June
+2026 freight statistics; TRA's fare page, which defers the base single-ticket
+rate to an unfetched calculator). None of these needed more prose — every one
+already reads as dense, sourced fact with real stated gaps. **The actual fix
+these need is a second corroborating source**, which is what the four
+follow-up scouts (accessibility regulation, TRA base fare, Yutong/King Long
+second source) were dispatched to find, per the brief's own framing that a
+400-word single-source page is weaker than a 300-word six-source page — this
+project already had the second half of that right and the first half wrong.
+
+Citations-per-page and distinct-sources-per-page are identical in every row
+above (`avgSources` = `avgDistinctCited`) because this corpus already cites
+every listed source at least once — no unused-source pattern was found at
+the type level; `npm run cite`'s own unused-entry warning is the finer-grained
+version of this and already runs in `gate:fast`.
+
+### Part 2 — targeted single-source fixes (pending scout results)
+
+Scouts dispatched (see above); writes will follow once findings return,
+sequentially, one commit per subject, each gated with `gate:fast`.
+
+Not yet started this run: Part 2's broader depth pass on the 220-ish thin
+non-index content pages beyond the single-source-10 (TYMC G-stations, bike
+regional pages, NT district-office operator pages) — flagged for the next
+batch once Part 3's new-seam pages and the single-source fixes are committed.
+Part 4 (visual/photos/icons/motion) and Part 5's full device matrix are also
+not yet reached this run; will update this entry or add a new one as the
+session continues.
+
 ## Run 303 - Taiwan rebrand, rail nav split, geography index, V4 bus depth finished (2026-08-28/29)
 
 New standing brief this run: the site is no longer Taipei-only. It now covers
