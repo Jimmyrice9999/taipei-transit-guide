@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26749,
-    "tbc": 4600,
+    "sourced": 26789,
+    "tbc": 4606,
     "asserted": 0,
-    "meta": 85
+    "meta": 86
   },
   "files": [
     {
@@ -401,9 +401,17 @@
       "meta": 3
     },
     {
+      "file": "content/bus/network/operator-ratings.md",
+      "sources": 7,
+      "sourced": 18,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
       "file": "content/bus/network/_index.md",
-      "sources": 1,
-      "sourced": 1,
+      "sources": 2,
+      "sourced": 2,
       "tbc": 0,
       "asserted": 0,
       "meta": 1
@@ -14745,9 +14753,17 @@
       "meta": 0
     },
     {
+      "file": "content/ticketing/guides/payment-infrastructure.md",
+      "sources": 13,
+      "sourced": 20,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/ticketing/guides/_index.md",
-      "sources": 0,
-      "sourced": 0,
+      "sources": 1,
+      "sourced": 1,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

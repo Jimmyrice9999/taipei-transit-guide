@@ -1,6 +1,6 @@
 {
-  "pages": 2050,
-  "destinations": 849,
+  "pages": 2052,
+  "destinations": 851,
   "ambiguous": [
     "Daan",
     "大安",
@@ -1119,6 +1119,16 @@
       "page": "/bus/network/joint-operation/",
       "name": "Songshan",
       "href": "/rail/metro/stations/g19/"
+    },
+    {
+      "page": "/bus/network/operator-ratings/",
+      "name": "Taiwan High Speed Rail",
+      "href": "/rail/thsr/lines/thsr/"
+    },
+    {
+      "page": "/bus/network/operator-ratings/",
+      "name": "Alishan Forest Railway",
+      "href": "/rail/alishan/lines/alishan-forest-railway/"
     },
     {
       "page": "/bus/operators/0606-20m33c/",
@@ -27602,6 +27612,16 @@
     },
     {
       "page": "/ticketing/guides/",
+      "name": "Alishan Forest Railway",
+      "href": "/rail/alishan/lines/alishan-forest-railway/"
+    },
+    {
+      "page": "/ticketing/guides/payment-infrastructure/",
+      "name": "Taiwan High Speed Rail",
+      "href": "/rail/thsr/lines/thsr/"
+    },
+    {
+      "page": "/ticketing/guides/payment-infrastructure/",
       "name": "Alishan Forest Railway",
       "href": "/rail/alishan/lines/alishan-forest-railway/"
     },
