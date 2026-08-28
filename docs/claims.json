@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26388,
-    "tbc": 4563,
+    "sourced": 26490,
+    "tbc": 4580,
     "asserted": 0,
-    "meta": 76
+    "meta": 81
   },
   "files": [
     {
@@ -11393,6 +11393,22 @@
       "meta": 0
     },
     {
+      "file": "content/rail/thsr/facilities/accessibility.md",
+      "sources": 9,
+      "sourced": 10,
+      "tbc": 4,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/facilities/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/thsr/lines/thsr.md",
       "sources": 9,
       "sourced": 22,
@@ -11402,6 +11418,62 @@
     },
     {
       "file": "content/rail/thsr/lines/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/operations/fares.md",
+      "sources": 9,
+      "sourced": 16,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/thsr/operations/ridership.md",
+      "sources": 4,
+      "sourced": 19,
+      "tbc": 7,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/operations/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/thsr/projects/joint-development.md",
+      "sources": 7,
+      "sourced": 16,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 2
+    },
+    {
+      "file": "content/rail/thsr/projects/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/rolling-stock/fleet-roster.md",
+      "sources": 9,
+      "sourced": 16,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/rolling-stock/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -11506,6 +11578,22 @@
     },
     {
       "file": "content/rail/thsr/stations/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/thsr/technology/engineering.md",
+      "sources": 12,
+      "sourced": 19,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/rail/thsr/technology/_index.md",
       "sources": 0,
       "sourced": 0,
       "tbc": 0,
@@ -14498,8 +14586,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 235,
-      "sourced": 345,
+      "sources": 240,
+      "sourced": 351,
       "tbc": 2,
       "asserted": 0,
       "meta": 6

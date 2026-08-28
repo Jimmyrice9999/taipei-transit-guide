@@ -1,3 +1,71 @@
+## Run 295 - THSR's entire missing content layer: ridership, fares, fleet, accessibility, engineering, TOD (2026-08-28)
+
+### The single largest confirmed Part-3 gap, closed in one batch
+
+A direct file-existence audit found THSR — the flagship system — had only a
+line page and 12 station pages: no ridership, fares, fleet-roster,
+accessibility, technology or station-area-development content at all,
+unlike every other operator on the site. Six read-only line-scouts
+researched all six subjects concurrently (not staged in batches, since this
+was one coherent gap rather than a sequence); all six pages were then
+written, cited and verified in the main session. New pages:
+`content/rail/thsr/operations/ridership.md`,
+`content/rail/thsr/operations/fares.md`,
+`content/rail/thsr/rolling-stock/fleet-roster.md`,
+`content/rail/thsr/facilities/accessibility.md`,
+`content/rail/thsr/technology/engineering.md`,
+`content/rail/thsr/projects/joint-development.md`, plus five new category
+`_index.md` files and matching `docs/research/rail/thsr/**` files.
+
+### What's now established
+
+2025 ridership (82.07 million, +4.88%), a full five-year COVID-recovery
+table, and 2007-to-2025 cumulative milestones — all from THSRC's own 2025
+annual report. A caught-and-corrected error: an early AI summarisation pass
+of a Wikipedia page produced "1 billion passengers by day 265"; re-checking
+the specific footnote text suggested "10 million" instead, but since even
+that correction is unverified against a directly-read primary, neither
+figure is published — the milestone stays TBC, and the near-miss is
+recorded openly rather than smoothed over. The fare table (early-bird,
+concessions, season pass), confirmed THSR is not part of TPASS, and one
+station-pair fare (Nangang–Zuoying) that stays genuinely unresolved between
+two conflicting figures neither source could pin down cleanly. The 700T
+fleet, a manufacturer-attribution correction (three companies build the
+cars; Toshiba/Mitsubishi Electric supply only the traction electrics — the
+brief's own working premise conflated these), the incoming N700ST order,
+a 977-vs-989 seating-capacity conflict, and the 2010 Jiaxian earthquake
+derailment (a Control Yuan primary source, plus a genuine 3-way passenger-count
+conflict resolved by scope, not averaged). Accessibility: 4 wheelchair
+spaces per trainset today, rising to 6 on N700ST, tied directly to a 2018
+disability-rights campaign that demanded exactly that increase. Engineering:
+the Control Yuan-documented BOT financial crisis (peak accumulated losses
+over NT$70.2 billion by mid-2009) and the 2015 restructuring that stretched
+the concession from 35 to 70 years, an unresolved 350-vs-315 km/h
+design-speed conflict between two Wikipedia accounts of the same railway,
+and the newly-approved 2026 Yilan extension. Station-area development: a
+named 5-station government mechanism, and a real, sourced contrast between
+Taoyuan/Hsinchu's "HSR baby boom" and Changhua ranking last of all 12
+stations by ridership.
+
+### A sourcing mistake caught before publishing
+
+The joint-development page's first draft cited a "never passed 1 million
+annual boardings" Changhua figure to the wrong source (a land-sale article
+that never states a ridership number) — caught while fixing the claims-
+ratchet gate, not by an external reviewer. Fixed by re-sourcing the fact to
+what the cited article actually supports (last of 12 by ridership, per the
+THSR 20th-anniversary report) and dropping the unsupported specific figure
+rather than leaving a wrong citation in place.
+
+### Gates
+
+`gate:fast` clean (107/107) after three passes of fixing genuinely unsourced
+prose (34 flagged, all either cited or rephrased into explicit TBC language
+— none hidden by loosening the checker). Font subset extended for 9 new Han
+characters (build → fonts → build, per the documented ordering) — clean, no
+missing glyphs across 3,100 pages. `gate:full` not run this commit per the
+10th-commit cadence; last ran clean at Run 294.
+
 ## Run 294 - Green Island and Orchid Island ferries; gate:full made ~44% faster (2026-08-28)
 
 ### Two genuine ferry gaps closed

@@ -1920,6 +1920,51 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The official statement records the Control Yuan’s criticism that public entities supplied 37.42% and describes the supervision and BOT-principle dispute."
+  - id: "rail-thsr-projects-joint-development-cna-thsr-20th"
+    title: "THSR at 20: more than movement, twelve stations have grown into 'HSR cities'"
+    titleOriginal: "高鐵20年不只帶來人口移動 12站催生「高鐵市」"
+    publisher: "Central News Agency (中央社)"
+    url: "https://www.cna.com.tw/news/ahel/202608190128.aspx"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full article, fetched directly, reporting a THSR Corporation 20th-anniversary event. Source for the Qingpu/Zhubei demographic and economic figures, the chairman's direct quotes, and the ridership-growth-multiple figures for all 12 stations. A Tainan-vs-Zuoying figure could not be cleanly resolved between two mirror-fetches of this same story and is not published."
+  - id: "rail-thsr-projects-joint-development-ltn-changhua-land"
+    title: "Changhua's HSR special district: land sales fall short of expectations"
+    titleOriginal: "高鐵彰化站特定區 土地開發成效不如預期"
+    publisher: "Liberty Times (自由時報)"
+    url: "https://news.ltn.com.tw/news/life/paper/1766076"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full article, fetched directly. States land-sale figures since 2014 and the district's rezoning to attract new industry, including elder-care."
+  - id: "rail-thsr-projects-joint-development-cna-miaoli-nvidia"
+    title: "Miaoli pitches its HSR special district to Nvidia"
+    titleOriginal: "苗栗高鐵特區向輝達招商"
+    publisher: "Central News Agency (中央社)"
+    url: "https://www.cna.com.tw/news/afe/202510200331.aspx"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full article, fetched directly, dated 20 October 2025. Reports Miaoli County officials' pitch and the district's stalled prior industrial-land tenders."
+  - id: "rail-thsr-rolling-stock-fleet-roster-thsr-car-facilities"
+    title: "Car Facilities"
+    titleOriginal: "車廂設施"
+    publisher: "Taiwan High Speed Rail Corporation (台灣高速鐵路股份有限公司)"
+    url: "https://www.thsrc.com.tw/ArticleContent/52ffe06e-3e38-4352-8170-93a768905dbd"
+    accessed: "2026-08-28"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full page, fetched directly. States per-car seat counts for all 12 cars, summing to 977 (911 standard + 66 business) — the operator's own current-configuration figure."
+  - id: "rail-thsr-rolling-stock-fleet-roster-zhwiki-700t"
+    title: "Taiwan High Speed Rail 700T EMU"
+    titleOriginal: "台灣高速鐵路700T型電聯車"
+    publisher: "Wikipedia"
+    url: "https://zh.wikipedia.org/zh-tw/台灣高速鐵路700T型電聯車"
+    accessed: "2026-08-28"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Lead index, not independently verified against the primary source it cites (an archived MOTC Railway Bureau document, unreachable via web.archive.org in this environment). Source for the manufacturer split, fleet size, speed figures and service-start date."
   - id: "rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation"
     title: "TRA grade separation"
     titleOriginal: "臺鐵立體化"
@@ -3814,6 +3859,67 @@ The original financial model did not remain unchanged. The Railway Bureau says a
 - [Taiwan High-Speed Rail project](https://www.rb.gov.tw/zh-TW/main/main_28/20250505_152320/20251104_134001/20250505_180533/) — primary; Railway Bureau, Ministry of Transportation and Communications (交通部鐵道局); accessed 2026-08-24.[^rail-thsr-lines-thsr-rb-thsr]
 - [Investigation into whether government investment in the High-Speed Rail company violated BOT principles](https://www.cy.gov.tw/CyBsBoxContent2.aspx?n=718&s=356) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-bot]
 - [High-Speed Rail did not fulfil the government-zero-investment commitment](https://www.cy.gov.tw/News_Content.aspx?n=795&s=5321) — primary; Control Yuan, Taiwan (監察院); accessed 2026-08-24.[^rail-thsr-lines-thsr-cy-funding]
+
+## THSR station-area development — Success and stagnation, in the same programme
+
+Discussed on [THSR station-area development](/rail/thsr/projects/joint-development/) in the source page's “Success and stagnation, in the same programme” section.[^rail-thsr-projects-joint-development-cna-thsr-20th]
+
+### Success and stagnation, in the same programme
+
+THSR's own twentieth-anniversary framing draws a sharp contrast. At Qingpu,
+next to Taoyuan Station, roughly 70% of the local population is now under
+45, with new commercial floor space added between 2017 and 2025 equal to
+about 80% of the area's entire prior office stock.[^rail-thsr-projects-joint-development-cna-thsr-20th] At
+Zhubei, next to Hsinchu Station, the under-45 population grew 43.8% — the
+only one of the twelve station areas to show positive growth in that age
+band — alongside a fourfold rise in local output value.[^rail-thsr-projects-joint-development-cna-thsr-20th]
+THSR's chairman described this as a shift from "movement" to "relocation" to
+"liveability."[^rail-thsr-projects-joint-development-cna-thsr-20th]
+
+Changhua tells a different story. THSR's own twentieth-anniversary figures
+rank it last of the twelve stations by absolute ridership.[^rail-thsr-projects-joint-development-cna-thsr-20th]
+Since 2014, the county has offered 66.34 hectares of buildable land for sale
+around the station; 36.76 hectares remained unsold as of the most recent
+figures read for this page, and the county's own description is blunt:
+development has fallen short of expectations.[^rail-thsr-projects-joint-development-ltn-changhua-land] Miaoli
+tells a related story — two county-owned industrial parcels went to bid 42
+times without a single successful sale — though the county was still
+actively pitching the site to prospective tenants, including Nvidia, as
+recently as October 2025.[^rail-thsr-projects-joint-development-cna-miaoli-nvidia]
+
+A genuine statistical trap sits inside this same anniversary
+report:[^rail-thsr-projects-joint-development-cna-thsr-20th] Miaoli, Yunlin and Changhua post the *highest*
+ridership-growth multiples of all twelve stations. Both things are true at
+once — the fastest percentage
+growth, and the lowest absolute ridership — because an extremely small
+opening-period base makes any subsequent traffic look like a large
+multiple. Neither figure should be read as contradicting the other.
+
+#### Sources for this entry
+
+- [THSR at 20: more than movement, twelve stations have grown into 'HSR cities'](https://www.cna.com.tw/news/ahel/202608190128.aspx) — secondary; Central News Agency (中央社); accessed 2026-08-28.[^rail-thsr-projects-joint-development-cna-thsr-20th]
+- [Changhua's HSR special district: land sales fall short of expectations](https://news.ltn.com.tw/news/life/paper/1766076) — secondary; Liberty Times (自由時報); accessed 2026-08-28.[^rail-thsr-projects-joint-development-ltn-changhua-land]
+- [Miaoli pitches its HSR special district to Nvidia](https://www.cna.com.tw/news/afe/202510200331.aspx) — secondary; Central News Agency (中央社); accessed 2026-08-28.[^rail-thsr-projects-joint-development-cna-miaoli-nvidia]
+
+## THSR rolling stock — A seating-capacity conflict that stays open
+
+Discussed on [THSR rolling stock](/rail/thsr/rolling-stock/fleet-roster/) in the source page's “A seating-capacity conflict that stays open” section.[^rail-thsr-rolling-stock-fleet-roster-thsr-car-facilities]
+
+### A seating-capacity conflict that stays open
+
+THSR's own current car-facilities page states 977 seats per
+trainset.[^rail-thsr-rolling-stock-fleet-roster-thsr-car-facilities] A different figure, 989, traces back through
+Wikipedia's own citation trail to an archived MOTC Railway Bureau document
+this research could not independently fetch to check its date or
+context.[^rail-thsr-rolling-stock-fleet-roster-zhwiki-700t] No source found explains why the two numbers differ —
+a guess that some standard-class seating was later converted to luggage
+space is not established and not published as fact here. Both figures are
+recorded; neither is picked.
+
+#### Sources for this entry
+
+- [Car Facilities](https://www.thsrc.com.tw/ArticleContent/52ffe06e-3e38-4352-8170-93a768905dbd) — primary; Taiwan High Speed Rail Corporation (台灣高速鐵路股份有限公司); accessed 2026-08-28.[^rail-thsr-rolling-stock-fleet-roster-thsr-car-facilities]
+- [Taiwan High Speed Rail 700T EMU](https://zh.wikipedia.org/zh-tw/台灣高速鐵路700T型電聯車) — secondary; Wikipedia; accessed 2026-08-28.[^rail-thsr-rolling-stock-fleet-roster-zhwiki-700t]
 
 ## Taiwan Railways level crossings — Elimination by grade separation
 

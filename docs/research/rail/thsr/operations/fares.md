@@ -1,0 +1,45 @@
+# THSR fares — research findings, 28 August 2026
+
+> Corpus warning: files under `docs/research/` are leads and working notes,
+> not sources. `docs/research/rail/thsr.md` was checked first; it contains no
+> fare material at all, confirming this as a genuine gap rather than a place
+> to correct.
+
+## What is established
+
+- **Early-bird (早鳥優惠) discount scheme: three tiers, sold in sequence, standard class only.** Source: THSRC, 早鳥優惠, `https://www.thsrc.com.tw/ArticleContent/7039d17d-1463-4c14-ad93-4d491dedcad5`, PRIMARY, High confidence, fetched in full. 65% of full fare, then 80%, then 90%, each tier selling out before the next opens: "65 折車票銷售完畢即改發售 8 折 → 8 折銷售完畢即改發售 9 折 → 9 折銷售完畢即提前截止並改發售原價車票". Name-registered to the traveller's ID/passport number, sold up to 5 days before travel: "最晚發售至乘車日（含）前 5 日截止".
+- **Standard-class full fares, cross-checked by two methods.** The early-bird table's three tiers for each pair divide back to the same implied full fare (to within NT$5 rounding), which is strong internal corroboration against scrambled-table extraction:
+  - Taipei–Taichung: NT$700 (455/0.65=700, 560/0.8=700, 630/0.9=700).
+  - Taipei–Zuoying: NT$1,490 (965/0.65≈1485, 1190/0.8≈1488, 1340/0.9≈1489), independently corroborated by 2026 fare-ceiling news coverage describing NT$1,490 as the current fare (ctee.com.tw, today.line.me, both SECONDARY, not independently fetched in full).
+  - Taipei–Tainan: NT$1,350 (875/0.65≈1346, 1080/0.8=1350, 1215/0.9=1350).
+  - Nangang–Zuoying: unresolved, see Conflicts.
+- **Business-class flat upgrade: NT$450 per ticket regardless of distance.** Source: THSRC, 商務車廂升等銀行規則, `https://www.thsrc.com.tw/ArticleContent/d39dbfbc-8240-4705-ab90-92b7a05c2dec`, PRIMARY, High confidence, fetched in full.
+- **Business-class fare history: the one confirmed base-rate change on record.** Source: THSRC, "4月1日起商務車廂全票售價調整回政府備查票價原價", `https://www.thsrc.com.tw/ArticleContent/d5a6d273-ed57-4b5b-a41c-e7f10e7c10f2`, PRIMARY, High confidence, fetched in full twice. Publication date on the page: 2019/02/21. Effective sentence: "2019年4月1日(一)起，商務車廂全票票價優惠措施告一段落，全票售價將調整回原價(政府備查票價)" — a promotional discount ended and business-class full fares reverted to the government-registered rate, citing rising occupancy and sold-out peak trains as the reason. This confirms THSR fares sit under a government-registered/approved rate ceiling ("政府備查票價"), not a company-set free price. A WebSearch synthesis substituted "2024" for this 2019 date — a snippet-derived error, not published; the primary page's own text (2019) is what's used.
+- **Group tickets (團體票): 11+ people, same date/train/O-D/class, travelling together; not available on the three short intra-metro sections (Nangang–Taipei, Nangang–Banqiao, Taipei–Banqiao).** Source: THSRC, 團體票種說明, `https://www.thsrc.com.tw/ArticleContent/743c51ac-124d-4b1a-a57b-1fd820848032`, PRIMARY, High confidence. A separate designated-train promotion (指定車次團體優惠), `https://www.thsrc.com.tw/ArticleContent/06856109-7afe-4ba1-abe7-a7cc23793191`, PRIMARY, gives full-fare group passengers 60%/70%/77%/85% depending on date/train and concession-status passengers a flat 50%, running "即日起至2026/12/31". Group and concession discounts cannot be combined.
+- **Standard concessions (優待票): senior (65+), disability-certificate holder, and child (under 12) fares are all 50% of full fare.** Same ticket-types page, PRIMARY, High confidence — confirmed by the page's price columns being exactly half the full-fare figures at every pair checked. Children under 115cm not requiring a seat travel free.
+- **University student discount: 50%/75%/88% off, sold-in-sequence like early-bird, on designated trains only, standard class reserved seats.** Source: THSRC, 大學生優惠, `https://www.thsrc.com.tw/ArticleContent/530e869c-479d-441a-a4b4-61a8166827e9`, PRIMARY, High confidence. Excludes open/air universities and college-attached cram schools.
+- **Season pass (定期票): 30 consecutive days from first use, unreserved seating only, priced at 49% of the unreserved full fare calculated on a two-trips-per-day basis, plus a one-time NT$100 non-refundable card fee.** Source: THSRC, 定期票優惠, `https://www.thsrc.com.tw/ArticleContent/fe34c4a1-d274-48ae-bcbe-f8eff4c2faf3`, PRIMARY, High confidence: "優惠效期 30 天不限次數搭乘，票價為自由座 49 折（以每天搭乘 2 次計算）". Not sold on the three short intra-metro sections. Example prices (Taoyuan–Hsinchu NT$3,675; Taichung–Chiayi NT$10,730; Tainan–Zuoying NT$3,965, all per 30 days) come from a WebSearch synthesis of the same page, not independently re-verified — Medium confidence.
+- **THSR is not part of TPASS.** Source: 聯合新聞網 (udn), "藍營拋「高鐵納入TPASS」 學界示警財政負擔與公平性", `https://udn.com/news/story/7266/9478091`, SECONDARY, fetched in full, High confidence for the "not currently included" fact. Quoted: "高鐵目前未納入TPASS". The article covers a live 2026 political proposal to add a THSR-inclusive TPASS surcharge tier, opposed by named academics on subsidy-burden and peak-capacity grounds. A primary TPASS scheme page enumerating covered operators was not located (`tpass.motc.gov.tw` does not resolve — DNS failure).
+- **A base-fare increase is under active review as of mid-2026 but has not been implemented.** Source: 中央社 (CNA), "台灣高鐵票價恐也調漲 估2026年達資金缺口高峰", `https://www.cna.com.tw/news/ahel/202409100398.aspx`, SECONDARY, September 2024, High confidence for the quoted THSRC statement: "現行票價維持與2007年通車營運時相同" (fare table unchanged since 2007 opening) against "17多年來台灣地區消費者物價指數（CPI）累計年增率已高達25.7%" (cumulative CPI +25.7% over the same period), both attributed directly to THSRC. Later 2026 reporting (ctee.com.tw, dated by URL 1 April 2026, SECONDARY, not independently fetched) describes an approved ceiling that would allow Taipei–Zuoying to rise from NT$1,490 to NT$1,780, with a Deputy Minister quoted "目前不會調，時機不對" (not adjusting for now). Other reporting (via search synthesis) puts a possible implementation as early as September 2028, tied to full N700ST fleet delivery.
+
+## Conflicts
+
+- **Nangang–Zuoying standard full fare: NT$1,530 vs NT$1,630.** Two WebSearch synthesis passes over overlapping THSRC-linked pages returned different figures. Back-calculation from the early-bird table (990/0.65≈1523, 1220/0.8=1525, 1375/0.9≈1528) converges near 1,525–1,530, favouring 1,530, but no page was fetched that states either figure as running text I could quote directly. Unresolved; do not publish either as settled without a direct re-fetch of the fare-query tool for this specific pair.
+- **Business-class fare-reversion date: 2019 (primary page's own text) vs 2024 (a search-tool synthesis substitution).** Trusting the fetched primary page (2019) — see above.
+- **Base-rate ceiling figures differ between the 2025 and 2026 news cycles** (NT$4.551/km→NT$5.061/km per a 2025 article vs NT$4.728/km→NT$5.257/km per a 2026 article) — not contradictory once read as consecutive annual reviews, but reported with their dates rather than as one current figure. Neither article was independently fetched in full.
+- **Designated-train group-promotion discount tiers**: a WebSearch synthesis gave different fractions than a direct WebFetch of the primary promotion page (60%/70%/77%/85%, trusted as the fetched primary). The promotion is dated through 2026/12/31 and may have changed between the two fetch times.
+
+## Checked and failed
+
+- **THSRC's fare-query tool** (`https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c`) — fetched successfully but is JS-driven and exposes no static NT$ figures; confirmed by design, not a fetch failure.
+- **A first full-table fetch of the ticket-types page** (743c51ac…) returned several long-distance standard-class figures (e.g. Taipei–Taichung NT$1,250, Taipei–Zuoying NT$2,440) contradicted by independent corroboration and internal early-bird-table arithmetic. Judged to have suffered column/row misalignment on a wide table; its long-distance standard-class figures are not used.
+- **A conference-hosted PDF fare table** (tact2024.conf.tw) — fare tables rendered as embedded images, not extractable; also a third-party mirror, not thsrc.com.tw itself.
+- **`tpass.motc.gov.tw`** — does not resolve (DNS failure); no primary TPASS operator-coverage page was located.
+- **WebSearch budget was exhausted before a planned direct search for a primary MOTC/Railway Bureau statement of the annual base-rate approval mechanism** — the mechanism description above rests on two independently-written news articles cross-checked against each other, not against a regulator primary source.
+
+## Stated gaps
+
+- Nangang–Zuoying standard fare: NT$1,530 or NT$1,630, unresolved.
+- Business-class full fares for pairs beyond Taipei–Taichung and Taipei–Zuoying: not independently verified (the suspect big-table extraction covered these).
+- Whether 回數票 (multi-ride tickets) still exist as a distinct THSR product from 定期票: mentioned only in passing (an app feature listing), not characterised.
+- A primary regulator statement of the base-fare approval/CPI-threshold mechanism: not located; current sourcing is two cross-checked news articles only.
