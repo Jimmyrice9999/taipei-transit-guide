@@ -1,6 +1,6 @@
 ---
 title: Bus
-description: How Taipei's joint-operation bus network is numbered, coloured and paid for.
+description: City and regional bus networks across Taiwan — Taipei's joint-operation system, and the operators, vehicles and fares of Taichung, Kaohsiung, Tainan, Hsinchu and intercity coaches.
 order: 2
 sources:
   - id: tdx-bus-operator-pull
@@ -21,42 +21,41 @@ structural fact — how many companies, how many routes, and the four city
 regulations that actually set out how the money moves — is explained in full
 on [the joint-operation network](/bus/network/joint-operation/).
 
-## What comes next
+Beyond Taipei and New Taipei, this section also covers the city bus networks
+of [Taichung](/bus/regional/taichung/), [Kaohsiung](/bus/regional/kaohsiung/),
+[Tainan](/bus/regional/tainan/) and [Hsinchu](/bus/regional/hsinchu/), plus
+national [intercity coach](/bus/intercity/) services — each with its own
+operators, fare structure and, where one exists, a rating or evaluation
+scheme distinct from Taipei's.
 
-**The network itself, before anything else.** Taipei's city buses run as 聯營公車 — a joint
-operation. Private companies operate under one fare structure, one numbering
-scheme and one brand, so that to a passenger it looks like a single network
-when it is not. That structural fact is the most valuable thing this section
-can explain, almost no English source states it, and it is why
-[Network](/bus/network/) sits above the operator and route pages rather than
-below them.
+## What this section covers
 
-**Operators.** The [TDX operator index](/bus/operators/) lists the 61 operator
-records in the committed pull, with route associations generated from the same
-data pull [^tdx-bus-operator-pull]. The relationships between them —
+**Network.** This site's [Network](/bus/network/) pages hold the
+joint-operation history, the route-numbering conventions, payment and
+ticketing infrastructure, the operator service-rating schemes (Taipei's
+since 1992, New Taipei's separate scheme, and others where a city runs one),
+and the 2030 electrification programme.
+
+**Operators.** The [TDX operator index](/bus/operators/) lists the operator
+records in the committed pull, with route associations generated from the
+same data pull [^tdx-bus-operator-pull], deepened with ownership and
+corporate history where sources exist. The relationships between them —
 including who owns whom — are poorly documented in English, which makes this
 the part most likely to be worth reading rather than merely present.
 
-**Routes.** The trunk corridors to begin with — the numbered services and the bus lanes
-along Zhongxiao, Renai, Xinyi and Nanjing — rather than attempting the lot. Taipei City and New Taipei between them run several hundred routes, and a
-few hundred stub pages would be worth less than twenty written ones. The route
-*numbering system* itself needs an explainer before any route page makes sense.
+**Routes.** Route pages are generated from the same TDX pull
+[^tdx-bus-operator-pull]; this site explains the route-*numbering system*
+separately so a bare number means something before any individual route
+page does.
 
-**Vehicles and garages.** Fleet lists exist through enthusiast sources and
-operator publications; they churn constantly, which is why
-[Models](/bus/models/) and [Depots](/bus/depots/) now report the corresponding
-TDX gaps rather than filling them from an unverified transcription.
+**Vehicles and garages.** [Models](/bus/models/) covers electric, diesel and
+imported chassis with VSCC/MOTC type-approval records where they exist, and
+[Depots](/bus/depots/) covers garages and charging infrastructure — both
+report a field as TBC rather than filling it from an unverified fleet-list
+transcription.
 
 **Fares and payment.** Section-based fares, the EasyCard transfer discount
 between bus and metro, and where the section boundaries actually fall — which is
 the thing visitors get wrong most often.
-
-Operators and routes come after the network explainer rather than alongside
-it, for a reason specific to buses: metro station data comes from MOTC's open
-data platform — authoritative, stable, slow to change. Bus route data is
-published per-operator and per-municipality, changes far more often, and the
-English-language versions of it go out of date quickly. Covering it honestly
-needs a data pipeline rather than a transcription, so operator and route
-pages wait on that rather than on effort.
 
 See [about](/about/) for how this site sources material.

@@ -207,7 +207,7 @@ export default function ProvenancePage() {
         <p>
           Our derived work — the contrast-checked badge and accent colours, the chained
           geometry, the structure overlay — is offered on the same terms. Attribution to
-          Taipei Transit Guide is welcome but not required; attribution to MOTC is required
+          Taiwan Transit Guide is welcome but not required; attribution to MOTC is required
           by their licence, not ours.
         </p>
 

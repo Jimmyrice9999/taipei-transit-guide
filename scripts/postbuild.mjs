@@ -139,7 +139,7 @@ const ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || 'https://jimmyrice9999.github
 function redirectStub(target, why) {
   return [
     `<!doctype html><html lang="en" ${REDIRECT_STUB_MARKER}><head><meta charset="utf-8">`,
-    `<title>Moved — Taipei Transit Guide</title>`,
+    `<title>Moved — Taiwan Transit Guide</title>`,
     `<link rel="canonical" href="${ORIGIN}${target}">`,
     `<meta http-equiv="refresh" content="0; url=${target}">`,
     '<meta name="robots" content="noindex">',

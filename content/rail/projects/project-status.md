@@ -54,7 +54,7 @@ sources:
   - id: method
     title: Project-status method
     titleOriginal: 捷運路網規劃與興建中路網
-    publisher: Taipei Transit Guide
+    publisher: Taiwan Transit Guide
     url: https://github.com/Jimmyrice9999/taipei-transit-guide
     accessed: 2026-08-24
     kind: primary
@@ -162,7 +162,7 @@ sources:
   - id: search-boundary
     title: Project-status search boundary
     titleOriginal: 捷運路網規劃與興建中路網資料查核範圍
-    publisher: Taipei Transit Guide
+    publisher: Taiwan Transit Guide
     url: https://www.dorts.gov.taipei/Content_List.aspx?n=6AB1B4653CB9DFAE
     accessed: 2026-08-24
     kind: primary

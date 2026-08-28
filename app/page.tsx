@@ -27,10 +27,11 @@ export default function HomePage() {
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
-      <h1 className="page-title">Taipei Transit Guide</h1>
+      <h1 className="page-title">Taiwan Transit Guide</h1>
       <p className="page-summary">
-        An English-language reference for public transport in Taipei — metro lines,
-        rolling stock, depots and bus routes.
+        An English-language reference for public transport across Taiwan — metro and rail
+        systems, high speed rail, national and regional bus networks, ferries and
+        bike-share.
       </p>
 
       {featured && (

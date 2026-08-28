@@ -41,8 +41,9 @@ export default function AboutPage() {
       <BackLink href="/" label="the home page" />
       <h1 className="page-title">About</h1>
       <p className="page-summary">
-        An English-language reference for public transport in Taipei, written because
-        the material exists in Mandarin and nowhere else in a form you can look
+        An English-language reference for public transport across Taiwan — Taipei and
+        New Taipei, Taoyuan, Taichung, Kaohsiung and the systems beyond them — written
+        because the material exists in Mandarin and nowhere else in a form you can look
         something up in.
       </p>
 
@@ -56,22 +57,26 @@ export default function AboutPage() {
         ]} />
         <h2 className="section-heading" id="what-this-is">What this is</h2>
         <p>
-          Taipei's transport network is unusually well documented — in Mandarin. Between{' '}
+          Taiwan's transport network is unusually well documented — in Mandarin. Between{' '}
           <span lang="zh-Hant">批踢踢</span> (PTT), Mobile01 and the Chinese Wikipedia there
           is detailed, argued-over coverage of rolling stock, depot allocations, signalling
-          contracts and construction history. Some of it is better than anything published
-          officially.
+          contracts and construction history, for systems from Taipei Metro to Kaohsiung
+          Rapid Transit to the branch lines of Taiwan Railway. Some of it is better than
+          anything published officially.
         </p>
         <p>
           In English there is an encyclopedia article per line and a great deal of
           visitor-facing advice about which exit to use. What is missing is the layer in
           between: structured reference material you can look a fact up in, with the
-          source attached. That gap is what this site is for.
+          source attached, and covering the country rather than one city. That gap is what
+          this site is for.
         </p>
         <p>
-          It is independent and non-commercial. It is not affiliated with Taipei Rapid
-          Transit Corporation, New Taipei Metro, Taoyuan Metro, the Taipei City Government
-          or any bus operator, and it carries no advertising.
+          It is independent and non-commercial. It is not affiliated with any transit
+          operator — Taipei Rapid Transit Corporation, New Taipei Metro, Taoyuan Metro,
+          Taichung Metro, Kaohsiung Rapid Transit, Taiwan Railway, Taiwan High Speed Rail,
+          any city or county government, or any bus, ferry or bike-share operator — and it
+          carries no advertising.
         </p>
 
         <h2 className="section-heading" id="how-it-sources-material">How it sources material</h2>
@@ -129,12 +134,12 @@ export default function AboutPage() {
           no longer tell which numbers had been checked.
         </p>
         <p>
-          The same applies structurally. The <Link href="/bus/">bus section</Link> is empty
-          and says so rather than being hidden. Where a figure has been settled since — the
-          two underground Wenhu stations were marked &ldquo;not established&rdquo; for four
-          builds and are now named, from the builder&rsquo;s own record and an encyclopedia
-          agreeing from different directions — the page says how it was settled rather than
-          quietly filling the gap.
+          The same applies structurally. A section that has not been researched yet says so
+          on its own index page rather than being hidden or padded out. Where a figure has
+          been settled since — the two underground Wenhu Line stations were marked
+          &ldquo;not established&rdquo; for four builds and are now named, from the
+          builder&rsquo;s own record and an encyclopedia agreeing from different directions —
+          the page says how it was settled rather than quietly filling the gap.
         </p>
 
         <h3>Citations, and a count of what has none</h3>
@@ -174,23 +179,24 @@ export default function AboutPage() {
 
         <h2 className="section-heading" id="where-it-has-got-to">Where it has got to</h2>
         <p>
-          This is version 1. Every line now has a page written from primary sources, and
-          the Wenhu Line — the first one built, and the one this site went deepest on — also
-          has a page per station, built from official records. {stubs} of the {written}
-          {' '}written pages still carry a stub flag, meaning some figures on them still need
-          tracing to a primary source.
+          Coverage grew outward from Taipei Metro's Wenhu Line, this site's first deep case
+          study, and now spans metro and light rail systems in Taipei, New Taipei, Taoyuan,
+          Taichung and Kaohsiung; the national bus network across several cities; Taiwan
+          Railway and High Speed Rail groundwork; ferries to the outlying islands; and
+          YouBike. Depth is uneven by design — a system gets a page per station and per line
+          once it has been researched to that standard, and a section not yet at that depth
+          says so rather than padding itself out. {stubs} of the {written} written pages
+          still carry a stub flag, meaning some figures on them still need tracing to a
+          primary source.
         </p>
         <p>
-          All {STATIONS.length} stations across the network are registered, so any station
-          code on the site validates and any of them can be looked up on{' '}
-          <Link href="/data/stations/">the station records page</Link>, and every one of them
-          now has a page of its own — position, district, coordinates, interchanges, and run
-          times where its source publishes them. Wenhu's 24 go further: TDX does not publish
-          structure, street exits or engineering numbers, so those come from a hand-built
-          overlay, plus a photograph for every station. A station on another line is a plain
-          TDX read until someone researches it the way Wenhu was researched. Sanying's 12
-          are the other exception: primary-sourced station records, with unavailable fields
-          shown as TBC rather than inferred from maps.
+          All {STATIONS.length} rail stations the platform carries are registered, so any
+          station code on the site validates and any of them can be looked up on{' '}
+          <Link href="/data/stations/">the station records page</Link>, with position,
+          district, coordinates, interchanges and run times where the source publishes them.
+          Where TDX does not publish structure, street exits or engineering numbers, some
+          lines carry a hand-built overlay sourced from the operator directly instead — the
+          station page for any given line says which kind of record it is.
         </p>
 
         <h2 className="section-heading" id="corrections">Corrections</h2>

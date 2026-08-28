@@ -1,6 +1,6 @@
-# Taipei Transit Guide
+# Taiwan Transit Guide
 
-An English-language reference site for public transport in Taipei. Built with
+An English-language reference site for public transport across Taiwan. Built with
 Next.js, exported as a static site, hosted on GitHub Pages.
 
 ## Writing pages

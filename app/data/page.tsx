@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/data/' },
   title: 'Data',
   description:
-    "Taipei Metro's official line colours from Taiwan MOTC open data, with station records, provenance, and a reconciliation against the community-sourced values in circulation.",
+    "Official rail line colours across Taiwan's systems from Taiwan MOTC open data, with station records, provenance, and a reconciliation against the community-sourced values in circulation.",
 }
 
 export default function DataPage() {
@@ -33,11 +33,11 @@ export default function DataPage() {
 
       <div className="page-body">
           <p className="lede wide">
-            Every English-language source we could find has Taipei's metro line colours
+            Every English-language source we could find has Taiwan's metro line colours
             wrong. Not badly wrong — most are within a few percent — but not one of the
-            seven matches what the operators actually publish. These are the official
-            values, taken from Taiwan's Ministry of Transportation and Communications, with
-            the working shown.
+            {' '}{LINES.length} matches what the operators actually publish. These are the
+            official values, taken from Taiwan's Ministry of Transportation and
+            Communications, with the working shown.
           </p>
 
           <div className="data-cards wide">

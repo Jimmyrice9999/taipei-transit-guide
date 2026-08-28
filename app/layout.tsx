@@ -259,7 +259,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <img
                 className="wordmark"
                 src={`${BASE_PATH}/wordmark.svg`}
-                alt="Taipei Transit Guide"
+                alt={SITE_NAME}
                 width={WORDMARK.width}
                 height={WORDMARK.height}
               />
@@ -287,10 +287,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               readers the opposite of the truth on 45 pages at once.
             */}
             <p>
-              An independent, non-commercial reference site. Not affiliated with Taipei
-              Rapid Transit Corporation, Taipei City Government, or any bus operator.
-              Line colours are the official values published by each operator through
-              Taiwan MOTC's open data platform. <Link href="/about/">About this site</Link>.
+              An independent, non-commercial reference site. Not affiliated with any
+              transit operator or government body in Taiwan. Line colours are the
+              official values published by each operator through Taiwan MOTC's open
+              data platform. <Link href="/about/">About this site</Link>.
             </p>
             {/* Where the station data came from, and how current it is. Readers
                 of a reference site are entitled to know both. */}

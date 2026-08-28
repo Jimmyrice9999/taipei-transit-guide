@@ -1,4 +1,4 @@
-# Taipei Transit Guide — the framework
+# Taiwan Transit Guide — the framework
 
 **Version 1.3 — last updated 15 August 2026 (run 23).**
 
@@ -15,8 +15,9 @@ Keep this as `docs/framework.md`. It's the thing to reread when scope creeps.
 
 ## The project in one paragraph
 
-An English-language reference site for Taipei-region public transport, modelled on
-Land Transport Guru (ltg.sg). The gap it fills: deep transit coverage exists in
+An English-language reference site for public transport across Taiwan — Taipei and
+New Taipei outward to Taoyuan, Taichung, Kaohsiung and the systems beyond them —
+modelled on Land Transport Guru (ltg.sg). The gap it fills: deep transit coverage exists in
 Mandarin across zh.wikipedia, PTT, Mobile01, official operator and government sites
 and railfan wikis, but **no structured English equivalent exists** beyond thin
 Wikipedia stubs and tourist content.

@@ -26,11 +26,11 @@ export const SITE_ORIGIN = (
 /** Origin plus base path — the true root of the deployed site. */
 export const SITE_URL = `${SITE_ORIGIN}${BASE_PATH}`
 
-export const SITE_NAME = 'Taipei Transit Guide'
+export const SITE_NAME = 'Taiwan Transit Guide'
 
 export const SITE_DESCRIPTION =
-  'An English-language reference for public transport in Taipei: metro lines, stations, ' +
-  'rolling stock and depots, built from Taiwan MOTC open data with sources attached.'
+  'An English-language reference for public transport across Taiwan: metro, rail, high ' +
+  'speed rail, buses, ferries and bike-share, built from Taiwan MOTC open data with sources attached.'
 
 /**
  * A site-absolute path turned into an absolute URL.

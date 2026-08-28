@@ -1,6 +1,6 @@
 ---
 title: Ferry
-description: The Blue Highway — small, real, inside the fare system, and absent from almost every English account of Taipei transit.
+description: Scheduled passenger boats across Taiwan — the Tamsui/Keelung river Blue Highway, and the outlying-island lifelines to Kinmen, Matsu, Penghu, Green Island and Orchid Island.
 order: 5
 status: complete
 hero:
@@ -19,3 +19,11 @@ Start with the Blue Highway guide for current routes, operators, piers,
 published fares, stored-value-card rules, and weather-dependent operation.
 The guide keeps the official timetable and fare conflicts visible instead of
 turning a changing river service into a single timeless schedule.
+
+Beyond the Tamsui and Keelung rivers, this site also covers the ferries
+that are the only public transport link to several of Taiwan's outlying
+islands: [Kinmen](/ferry/kinmen/), [Matsu](/ferry/matsu/),
+[Penghu](/ferry/penghu/), [Green Island](/ferry/green-island/),
+[Orchid Island](/ferry/orchid-island/) and [Cijin](/ferry/cijin/) off
+Kaohsiung. These are not river commuter services — they are the way people
+and vehicles actually get to and from these islands.

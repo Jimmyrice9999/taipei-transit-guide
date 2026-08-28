@@ -169,7 +169,7 @@ sources:
   - id: search-boundary
     title: TOD and joint-development search boundary
     titleOriginal: 捷運土地開發資料查核範圍
-    publisher: Taipei Transit Guide
+    publisher: Taiwan Transit Guide
     url: https://www.dorts.gov.taipei/cp.aspx?n=811989757BA2C23B
     accessed: 2026-08-24
     kind: primary

@@ -99,7 +99,7 @@ test('page titles are distinct and carry the site name', () => {
     const title = titleOf(fs.readFileSync(file, 'utf8'))!
     assert.ok(!titles.has(title), `${rel} repeats the title "${title}"`)
     titles.add(title)
-    assert.match(title, /Taipei Transit Guide/, `${rel}: "${title}" does not name the site`)
+    assert.match(title, /Taiwan Transit Guide/, `${rel}: "${title}" does not name the site`)
   }
 })
 

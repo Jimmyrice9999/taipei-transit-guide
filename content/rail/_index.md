@@ -1,28 +1,32 @@
 ---
 title: Rail & cable
-description: Fixed-guideway transit in the Taipei region — the metro network, the Maokong ropeway, and the conventional and high speed railways to come.
+description: Fixed-guideway transit across Taiwan — metro and light rail in five cities, Taiwan Railway, High Speed Rail, the Maokong and Alishan cable and forestry lines.
 order: 1
 ---
 
-This section holds the region's **fixed-guideway** systems: services that run on
+This section holds Taiwan's **fixed-guideway** systems: services that run on
 their own track or cable, to published stations, in a published order. That is
 the property metro, light rail, conventional rail, high speed rail and an aerial
 ropeway share, and it is what separates them from a bus route or a bike dock.
 
 Below this heading the next level down is a **system**, not a page type. A system
 is a network with its own stations, its own numbering and its own fleet: the
-metro network is one, the Maokong Gondola is another, and Taiwan Railway and
-high speed rail will be two more. Lines, stations, rolling stock and depots
-belong to a system and are filed under it, so that a TRA line does not have to
-share an index with the Wenhu Line. Operators, history and technology cut across
+Taipei Metro network is one, Kaohsiung Rapid Transit another, Taiwan Railway and
+High Speed Rail two more. Lines, stations, rolling stock and depots belong to a
+system and are filed under it, so that a TRA line does not have to share an
+index with the Wenhu Line. Operators, history and technology cut across
 systems — one company runs metro and light rail, one dispute shaped several
 lines — so they stay at this level rather than being copied into each.
 
-The heading says "cable" as well as "rail" because one of these systems is a
-ropeway, and calling it rail would be a small false claim in the furniture,
-which is the sort of thing this site keeps catching in itself.
+The heading says "cable" as well as "rail" because some of these systems are
+ropeways or cable-hauled forestry railways, and calling them rail without
+qualification would be a small false claim in the furniture, which is the sort
+of thing this site keeps catching in itself.
 
-**Covered today:** the metro network at entity level — its lines, its stations,
-its fleets and its depots each have a page — with the Wenhu Line researched in
-depth, and the Maokong Gondola. Taiwan Railway and high speed rail have no pages
-yet.
+**Covered today:** [Taipei Metro](/rail/metro/) at entity level — its lines,
+stations, fleets and depots — with the Wenhu Line researched in particular
+depth; [New Taipei Metro (TYMC)](/rail/tymc/), [Taichung Metro (TMRT)](/rail/tmrt/)
+and [Kaohsiung Rapid Transit (KRTC)](/rail/krtc/); [Taiwan Railway (TRA)](/rail/tra/)
+and [Taiwan High Speed Rail (THSR)](/rail/thsr/); the [Maokong Gondola](/rail/cable/)
+and the [Alishan Forest Railway](/rail/alishan/). Depth varies by system — see
+each system's own pages for what is TDX-backed and what is still TBC.

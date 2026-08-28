@@ -12,7 +12,7 @@ export const dynamic = "force-static"
 
 export const size = OG_SIZE
 export const contentType = OG_CONTENT_TYPE
-export const alt = 'Taipei Transit Guide'
+export const alt = 'Taiwan Transit Guide'
 
 export function generateStaticParams() {
   return [...LINES_WITH_STATION_PAGES].flatMap((line) =>

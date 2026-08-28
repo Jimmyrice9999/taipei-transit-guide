@@ -1,4 +1,4 @@
-# Design Reference — Taipei Transit Guide
+# Design Reference — Taiwan Transit Guide
 
 Source material for the site's visual identity. Drawn from the Taipei MRT's own
 design system rather than invented from scratch.

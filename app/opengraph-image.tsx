@@ -10,13 +10,13 @@ export const dynamic = "force-static"
 
 export const size = OG_SIZE
 export const contentType = OG_CONTENT_TYPE
-export const alt = 'Taipei Transit Guide'
+export const alt = 'Taiwan Transit Guide'
 
 export default function Image() {
   return new ImageResponse(
     (
       <OgContentCard
-        title="Taipei Transit Guide"
+        title="Taiwan Transit Guide"
         subtitle={SITE_DESCRIPTION}
         accent="#3D454E"
         footer="Reference"

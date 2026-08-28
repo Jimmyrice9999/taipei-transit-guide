@@ -48,7 +48,7 @@ export type Provenance = {
 
 export const PROVENANCE: Provenance = {
   "source": "tdx",
-  "fetchedAt": "2026-08-22T17:24:58.547Z",
+  "fetchedAt": "2026-08-24T14:00:05.657Z",
   "sourceName": "Taiwan MOTC TDX (Transport Data eXchange)",
   "sourceUrl": "https://tdx.transportdata.tw/",
   "operator": "TRTC, NTMC, TYMC, NTDLRT, NTALRT, TMRT",

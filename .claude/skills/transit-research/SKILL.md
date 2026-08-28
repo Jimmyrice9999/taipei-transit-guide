@@ -1,6 +1,6 @@
 ---
 name: transit-research
-description: This project's sourcing discipline for researching Taipei-region transport subjects — Mandarin sources first, full-page fetches rather than search snippets, primary distinguished from secondary, conflicts published rather than resolved, TBC over a plausible number. Use whenever researching or writing any content page, research file, or factual claim for the Taipei Transit Guide.
+description: This project's sourcing discipline for researching Taiwan transport subjects — Mandarin sources first, full-page fetches rather than search snippets, primary distinguished from secondary, conflicts published rather than resolved, TBC over a plausible number. Use whenever researching or writing any content page, research file, or factual claim for the Taiwan Transit Guide.
 ---
 
 # Transit research — the sourcing discipline
