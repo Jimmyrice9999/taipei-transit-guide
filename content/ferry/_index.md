@@ -22,8 +22,8 @@ turning a changing river service into a single timeless schedule.
 
 Beyond the Tamsui and Keelung rivers, this site also covers the ferries
 that are the only public transport link to several of Taiwan's outlying
-islands: [Kinmen](/ferry/kinmen/), [Matsu](/ferry/matsu/),
-[Penghu](/ferry/penghu/), [Green Island](/ferry/green-island/),
-[Orchid Island](/ferry/orchid-island/) and [Cijin](/ferry/cijin/) off
+islands: [Kinmen](/ferry/routes/kinmen/), [Matsu](/ferry/routes/matsu/),
+[Penghu](/ferry/routes/penghu/), [Green Island](/ferry/routes/green-island/),
+[Orchid Island](/ferry/routes/orchid-island/) and [Cijin](/ferry/routes/cijin/) off
 Kaohsiung. These are not river commuter services — they are the way people
 and vehicles actually get to and from these islands.

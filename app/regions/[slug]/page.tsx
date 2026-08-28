@@ -11,6 +11,7 @@ import { notFound } from 'next/navigation'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { REGIONS, getRegion } from '@/lib/regions'
 
@@ -28,7 +29,11 @@ export async function generateMetadata({
   if (!region) return {}
   return {
     alternates: { canonical: `/regions/${region.slug}/` },
-    title: region.title,
+    // "Taichung", "Taoyuan", "Tainan" and "Hsinchu" are already page titles
+    // elsewhere (THSR station pages) — the discoverability test requires
+    // every built title to be distinct, so this route's <title> disambiguates
+    // even though the on-page <h1> stays the plain place name.
+    title: `${region.title} region`,
     description: region.summary,
   }
 }
@@ -47,7 +52,9 @@ export default async function RegionPage({
       <Breadcrumbs trail={[{ href: '/regions/', label: 'Regions' }, { label: region.title }]} />
       <BackLink href="/regions/" label="all regions" />
       <h1 className="page-title">{region.title}</h1>
-      <p className="page-summary">{region.summary}</p>
+      <p className="page-summary">
+        <RichText>{region.summary}</RichText>
+      </p>
 
       <div className="page-body">
         <ul className="card-list">
@@ -56,7 +63,9 @@ export default async function RegionPage({
               <Link href={link.href}>
                 <span className="card-body">
                   <span className="card-title">{link.title}</span>
-                  <span className="card-desc">{link.note}</span>
+                  <span className="card-desc">
+                    <RichText>{link.note}</RichText>
+                  </span>
                 </span>
                 <span className="card-meta">
                   <span className="card-arrow" aria-hidden="true">
@@ -73,7 +82,9 @@ export default async function RegionPage({
             <h2 className="section-heading">Not yet on this site</h2>
             <ul>
               {region.gaps.map((gap) => (
-                <li key={gap}>{gap}</li>
+                <li key={gap}>
+                  <RichText>{gap}</RichText>
+                </li>
               ))}
             </ul>
           </>

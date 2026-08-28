@@ -12,6 +12,7 @@ import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { REGIONS } from '@/lib/regions'
 
@@ -43,7 +44,9 @@ export default function RegionsPage() {
               <Link href={`/regions/${region.slug}/`}>
                 <span className="card-body">
                   <span className="card-title">{region.title}</span>
-                  <span className="card-desc">{region.summary}</span>
+                  <span className="card-desc">
+                    <RichText>{region.summary}</RichText>
+                  </span>
                 </span>
                 <span className="card-meta">
                   {region.links.length} {region.links.length === 1 ? 'page' : 'pages'}

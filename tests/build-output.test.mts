@@ -22,6 +22,7 @@ import { getLineStations, getStationHref, LINES_WITH_STATION_PAGES, STATIONS } f
 import { LINES } from '../lib/lines.ts'
 import { plannedRedirects } from '../scripts/moves.mjs'
 import { isRedirectStub } from '../scripts/redirect-stub.mjs'
+import { REGIONS } from '../lib/regions.ts'
 
 const OUT = path.join(process.cwd(), 'out')
 
@@ -120,6 +121,7 @@ test('the generated routes exported', () => {
     'data/comparisons/index.html',
     'data/changelog/index.html',
     'about/index.html',
+    'regions/index.html',
   ]) {
     assert.ok(exists(rel), `${rel} was not exported`)
   }
@@ -158,8 +160,12 @@ test('the expected number of pages was generated', () => {
   // /, /rail/network, /rail/metro/stations, /data, /data/stations,
   // /data/line-colours, /data/provenance, /data/sources, /data/network-growth,
   // /data/comparisons, /data/changelog, /about, /404,
-  // /_not-found
-  const generated = 14
+  // /_not-found, /regions
+  const generated = 15
+  // One per lib/regions.ts entry (Part 2b, Run 303) — /regions/<slug>/,
+  // generated from that array rather than the content tree, so it belongs
+  // here alongside `generated` rather than in `content`.
+  const regionPages = REGIONS.length
   /* Bus route overlays live in a nested registry, so they are not part of
      getAllPages(). Count every built group's index page and its route pages
      here — one line per group would drift the moment a group is added, so
@@ -170,7 +176,8 @@ test('the expected number of pages was generated', () => {
     )
     return sum + overlays.length + 1
   }, 0)
-  const expected = content + stations + sections + systems + types + generated + busGroupPages
+  const expected =
+    content + stations + sections + systems + types + generated + busGroupPages + regionPages
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
   assert.equal(

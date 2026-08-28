@@ -1,5 +1,5 @@
 {
-  "exports": 422,
+  "exports": 426,
   "cssClasses": 374,
   "imageSidecars": 78,
   "unusedExports": [
@@ -347,6 +347,11 @@
       "name": "RailInterchangeGroup",
       "file": "lib/rail-architecture.ts",
       "line": 77
+    },
+    {
+      "name": "RegionLink",
+      "file": "lib/regions.ts",
+      "line": 15
     },
     {
       "name": "StationRidership",
