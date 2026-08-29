@@ -1,5 +1,5 @@
 {
-  "exports": 426,
+  "exports": 430,
   "cssClasses": 379,
   "imageSidecars": 97,
   "unusedExports": [
@@ -482,6 +482,21 @@
       "name": "HEDGE",
       "file": "scripts/bus-rail-join-audit.mjs",
       "line": 42
+    },
+    {
+      "name": "extractPageTitle",
+      "file": "scripts/nav-labels-check.mjs",
+      "line": 114
+    },
+    {
+      "name": "extractStubTarget",
+      "file": "scripts/nav-labels-check.mjs",
+      "line": 127
+    },
+    {
+      "name": "extractAnchors",
+      "file": "scripts/nav-labels-check.mjs",
+      "line": 148
     },
     {
       "name": "SPLIT_ROUTE",
