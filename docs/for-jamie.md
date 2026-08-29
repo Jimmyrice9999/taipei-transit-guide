@@ -1,6 +1,34 @@
 # For Jamie
 
-## Active handoff - Run 303 - 29 August 2026 - Taiwan rebrand + nav split + V4 bus depth done, 9 commits
+## Active handoff - Run 304 - 29 August 2026 - audit, 6 new history pages, second sources, full browser sweep, 7 commits
+
+Part 1 audited all 1,850 pages: 269 under 400 words (~40 by-design empty
+indexes), only 10 real pages single-sourced — and those 10 were already
+dense and honest, just needing a second source. Fixed that: TRA's fare
+page, TYMC/KRTC/TMRT accessibility, and the Yutong bus page each gained a
+genuine second source (King Long stayed TBC — none existed despite an
+exhaustive search).
+
+Part 3: 12 scouts (8 then 4, one later batch hit a rate limit mid-run and
+resumed fine via SendMessage) produced 6 new `rail/history` pages
+(Japanese-era trunk line, sugar/forestry/mining railways, port rail
+connections, Ten Major Constructions/THSR BOT) plus ferry-page enrichment
+(checked first that routes weren't already covered — they were, so
+enriched rather than duplicated). Airports and transport statistics were
+researched but not built into pages — no section exists yet; written to
+docs/research/ as groundwork.
+
+Part 5: ran the full 17-viewport sweep Run 303 flagged as missed. Clean —
+zero axe violations across 2,070 pages, zero reflow/keyboard failures, no
+orphans, no broken links. One reported screenshot error, checked by eye,
+was a false positive.
+
+**Not reached**: Part 2's broader depth pass (~200 pages beyond the
+single-source-10); Part 4 (photos, icons, homepage, motion) entirely —
+different work needing visual judgment, best started fresh. Detail in
+docs/run-log.md Run 304.
+
+## Run 303 - 29 August 2026 - Taiwan rebrand + nav split + V4 bus depth done, 9 commits
 
 Rebranded to Taiwan Transit Guide throughout, fixing real staleness found
 alongside it (about/rail pages claimed things long false, e.g. "TRA/THSR

@@ -179,14 +179,48 @@ statistics findings are in this run's own scout transcript, not yet
 transcribed to a docs/research file — flagged for whoever picks this up
 next.
 
-**Not reached this run**: Part 2's broader depth pass on the ~220 thin
-non-index pages beyond the single-source set (TYMC G-stations, bike
-regional pages, NT district-office operator pages — each shares one fix
-pattern rather than needing 220 bespoke passes, per the Part 1 audit);
-Part 4 (visual design, photos, icons, motion) entirely; Part 5's full
-17-viewport `verify:browser:full` matrix (only `gate:full`'s narrower
-`verify:browser` default sweep ran, as part of the pre-commit gate, not
-as a standalone Part 5 pass). See `docs/for-jamie.md` for the handoff.
+### Part 5 — the full 17-viewport `verify:browser:full` sweep
+
+Run 303 explicitly flagged this as not reached; ran it this session. All
+120 canonical/extreme pages checked at every configured viewport: reflow at
+200%/400% zoom equivalents clean across all 2,070 pages visited (no
+document-level horizontal scroll anywhere), keyboard traversal clean on
+every one of the 136 templates, accessibility-tree probes clean, axe-core
+zero violations across all 2,070 pages, all 119 print PDFs generated
+successfully. One reported finding — a screenshot write failure for
+`bus-regional-kaohsiung-1920.png` — was checked by eye rather than trusted
+at face value (per the brief's own instruction to look at screenshots, not
+just confirm files exist): the file exists at proper size and the page
+renders cleanly, wordmark correctly reading "TAIWAN TRANSIT GUIDE," so this
+was a transient write error, not a real bug. `npm run check` independently
+confirmed no orphan pages and no broken links across 676,291 internal links
+on 3,155 pages. PAGE_TYPES needed no update — the new rail/history pages
+render through the existing article template already represented there
+(`article-matra`, etc.), so no new layout went unexercised.
+
+### TYMC Green Line depth (a small Part 2 slice, opportunistic)
+
+One more scout, dispatched to fill idle time while `gate:full` ran rather
+than as a planned batch: fresh DORTS research on the Taoyuan Metro Green
+Line, since Part 1's audit had flagged its ~20 G-series station pages as a
+thin, shared-fix-pattern cluster. Used the return to enrich two pages
+rather than all twenty, since the material split unevenly — most of it
+(per-package construction progress, a station renumbering, a driverless-
+signalling demo, two extensions in planning) is line-wide and belongs on
+the line overview page, while G07 specifically had a genuinely novel story
+(Taiwan's deepest MRT excavation at 40m, a two-year construction halt for
+an archaeological find spanning three eras) that the other ~19 station
+pages don't share. Left the other ~19 G-station pages unchanged rather than
+force line-wide facts onto pages that don't need them — depth should track
+where the real information is, not spread evenly for its own sake.
+
+**Not reached this run**: Part 2's broader depth pass on the remaining
+~200 thin non-index pages beyond what got touched (bike regional pages, NT
+district-office operator pages, most of the TYMC G-stations — each shares
+one fix pattern rather than needing bespoke passes, per the Part 1 audit);
+Part 4 (visual design, photos, icons, motion) entirely, including the
+photo audit, homepage redesign and icon system the brief asked for — none
+of it started. See `docs/for-jamie.md` for the handoff.
 
 ## Run 303 - Taiwan rebrand, rail nav split, geography index, V4 bus depth finished (2026-08-28/29)
 
