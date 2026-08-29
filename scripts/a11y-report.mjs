@@ -148,8 +148,20 @@ for (const file of pages) {
 
   // Han characters outside a zh-Hant-tagged element render with the wrong
   // glyph variants and are announced in the wrong language.
+  //
+  // The closing tag must match the SAME tag name as the one that opened
+  // with the lang attribute, via a backreference — not `<\/[a-z]+>`, any
+  // closing tag. A lang-tagged span that itself contains a nested element
+  // (an auto-linked `<a>`, a badge `<span>`) followed by more Han text in
+  // the same outer span used to strip only as far as that inner element's
+  // OWN closing tag, leaving the correctly-tagged trailing Han text (still
+  // genuinely inside the outer span, just past a nested `</a>`) looking
+  // like a bare, untagged run to this regex. Real case: a station-name
+  // list rendered as one Han-tagged span with one entity-linked name in
+  // the middle — `<span lang="zh-Hant">…<a>林口站</a>、江子翠站…</span>` — where
+  // `<\/[a-z]+>` matched `</a>` first and stopped there.
   const stripped = html
-    .replace(/<[^>]*lang\s*=\s*["']zh[^"']*["'][^>]*>[\s\S]*?<\/[a-z]+>/gi, '')
+    .replace(/<([a-z]+)\b[^>]*\blang\s*=\s*["']zh[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, '')
     .replace(/<[^>]*>/g, ' ')
   const strayHan = stripped.match(/[一-鿿]{2,}/g)
   if (strayHan) {

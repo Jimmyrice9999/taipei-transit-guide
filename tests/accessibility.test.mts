@@ -324,10 +324,22 @@ test('Chinese is always tagged zh-Hant', () => {
    * One column header on /data/stations had slipped through, because it was the
    * only Han written straight into JSX rather than passing through the Markdown
    * pipeline or RichText.
+   *
+   * The closing tag in the strip pattern must match the SAME tag name the
+   * lang attribute opened on, via a backreference — not `<\/[a-z]+>`, any
+   * closing tag. A lang-tagged span containing a nested element (an
+   * auto-linked `<a>`, a badge `<span>`) followed by more Han text in the
+   * same outer span used to strip only as far as that inner element's own
+   * closing tag, leaving genuinely-tagged trailing Han (still inside the
+   * outer span, just past a nested `</a>`) looking like a bare run. Real
+   * case: a station-name list rendered as one Han-tagged span with one
+   * entity-linked name in the middle —
+   * `<span lang="zh-Hant">…<a>林口站</a>、江子翠站…</span>` — where
+   * `<\/[a-z]+>` matched `</a>` first and stopped there.
    */
   for (const file of allHtml()) {
     const html = visible(fs.readFileSync(file, 'utf8'))
-      .replace(/<[^>]*lang\s*=\s*["']zh[^"']*["'][^>]*>[\s\S]*?<\/[a-z]+>/gi, '')
+      .replace(/<([a-z]+)\b[^>]*\blang\s*=\s*["']zh[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, '')
       .replace(/<[^>]*>/g, ' ')
     const stray = html.match(/[一-鿿]{2,}/g)
     assert.equal(
