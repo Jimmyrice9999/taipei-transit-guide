@@ -1281,6 +1281,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full NTMC operator page for Jimmy Liao's line-wide Green Mountain work 閉上眼睛一下下, its V01–V11 scope and cast-bronze/painted-glass media; year, selection and cost are not published."
+  - id: "rail-history-ten-major-constructions-zhwiki-ten-projects"
+    title: "Ten Major Construction Projects"
+    titleOriginal: "十大建設"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/十大建設"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Lead-only encyclopedia synthesis, citing 行政院經濟建設委員會 (1979), 行政院主計處, 交通部運輸研究所 (1980年鑑) and contemporary newspapers in its own footnotes — this research did not independently open and verify each of those underlying citations, so cost/date figures here should be treated as leads pending that follow-up."
+  - id: "rail-history-ten-major-constructions-zhwiki-freeway"
+    title: "Sun Yat-sen Freeway"
+    titleOriginal: "中山高速公路"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/中山高速公路"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Gives three different construction-cost figures across its own article body and footnotes (NT$42.9bn, \"over NT$40bn,\" NT$44.8bn) — published as a conflict, not resolved, since none was traced to a primary 交通部高速公路局 or 國史館 source in this research."
+  - id: "rail-history-ten-major-constructions-storystudio-freeway"
+    title: "Taiwan's first freeway"
+    titleOriginal: "台灣第一條高速公路"
+    publisher: "StoryStudio (故事)"
+    url: "https://storystudio.tw/article/gushi/taiwan-first-freeway"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full page fetched. States Chiang Ching-kuo overrode objections (\"力排眾議\") to push the freeway through in 1970, without naming who objected or on what grounds — notably thinner than a search-engine summary of the same subject had implied, an example of the gap this project's sourcing discipline exists to catch."
   - id: "rail-history-xindian-line-tra-construction-history"
     title: "Chronological History of Railroad Construction"
     titleOriginal: "路線修築沿革"
@@ -3572,6 +3599,42 @@ See the [Wenhu Line](/rail/metro/lines/wenhu-line/), [Tamsui–Xinyi Line](/rail
 - [Daqiaotou station architecture](https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635) — primary; Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-17.[^rail-history-public-art-dorts-o12-architecture]
 - [Airport MRT public art](https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html) — primary; Taoyuan Metro Corporation (桃園大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-tymc-airport-public-art]
 - [Danhai LRT public art](https://www.ntmetro.com.tw/basic/?mode=detail&node=17) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-ntmc-danhai-public-art]
+
+## The Ten Major Constructions and the THSR BOT crisis — Six transport projects under one 1970s banner
+
+Discussed on [The Ten Major Constructions and the THSR BOT crisis](/rail/history/ten-major-constructions/) in the source page's “Six transport projects under one 1970s banner” section.[^rail-history-ten-major-constructions-zhwiki-ten-projects]
+
+### Six transport projects under one 1970s banner
+
+Premier Chiang Ching-kuo announced the Ten Major Construction Projects
+(十大建設) in 1973, to be completed 1974-1979, in response to the 1973 oil
+crisis and infrastructure bottlenecks from a decade of rapid
+industrialisation.[^rail-history-ten-major-constructions-zhwiki-ten-projects] Six of the ten were transport
+projects: the Sun Yat-sen Freeway (Keelung to Kaohsiung, 373 km, completed
+31 October 1978), railway electrification of the western trunk line
+(completed 27 June 1979), the North-Link Line connecting the eastern rail
+network to the western one (full operation from 1 February 1980), Taoyuan
+International Airport (opened 26 February 1979 as Chiang Kai-shek
+International Airport), Taichung Port, and Su'ao Port.[^rail-history-ten-major-constructions-zhwiki-ten-projects]
+The freeway's construction cost is reported with three different figures
+across the same secondary source — NT$42.9 billion, "over NT$40 billion,"
+and NT$44.8 billion — none of which this research traced to a primary
+government figure, so all three are published here rather than
+resolved.[^rail-history-ten-major-constructions-zhwiki-freeway] A separate full-page fetch of a popular history
+site, checked specifically because a search-engine summary had implied it
+documented a substantive motorway-versus-rail policy debate, found only a
+much thinner account: that Chiang overrode unspecified objections in 1970,
+with no named opponents and no cost comparison — an example of a search
+snippet outrunning what the underlying page actually
+supports.[^rail-history-ten-major-constructions-storystudio-freeway] No source found in this research documents
+a contemporaneous, sourced debate over widening the existing rail/road
+corridor as an alternative to a new freeway alignment.
+
+#### Sources for this entry
+
+- [Ten Major Construction Projects](https://zh.wikipedia.org/zh-tw/十大建設) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-ten-major-constructions-zhwiki-ten-projects]
+- [Sun Yat-sen Freeway](https://zh.wikipedia.org/zh-tw/中山高速公路) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-ten-major-constructions-zhwiki-freeway]
+- [Taiwan's first freeway](https://storystudio.tw/article/gushi/taiwan-first-freeway) — secondary; StoryStudio (故事); accessed 2026-08-29.[^rail-history-ten-major-constructions-storystudio-freeway]
 
 ## The Taiwan Railways Xindian Line — Records still missing
 

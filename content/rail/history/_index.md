@@ -15,6 +15,7 @@ disagreement, and a gap is labelled rather than papered over.
 - [Forestry railways beyond Alishan](/rail/history/forestry-railways/)
 - [Coal and mineral mining railways](/rail/history/mining-railways/)
 - [Port rail connections — Kaohsiung, Keelung, Taichung](/rail/history/port-rail-connections/)
+- [The Ten Major Constructions and the THSR BOT crisis](/rail/history/ten-major-constructions/)
 
 ## Taiwan Railways historical alignments
 
