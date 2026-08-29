@@ -2,7 +2,7 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27058,
+    "sourced": 27065,
     "tbc": 4638,
     "asserted": 0,
     "meta": 110
@@ -14330,8 +14330,8 @@
     },
     {
       "file": "content/rail/tymc/lines/green-line.md",
-      "sources": 4,
-      "sourced": 17,
+      "sources": 7,
+      "sourced": 19,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
@@ -14674,8 +14674,8 @@
     },
     {
       "file": "content/rail/tymc/stations/taoyuan-g07.md",
-      "sources": 2,
-      "sourced": 9,
+      "sources": 5,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -14810,8 +14810,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 281,
-      "sourced": 404,
+      "sources": 284,
+      "sourced": 407,
       "tbc": 9,
       "asserted": 0,
       "meta": 6

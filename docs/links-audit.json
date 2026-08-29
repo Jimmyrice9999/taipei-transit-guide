@@ -1,6 +1,6 @@
 {
-  "pages": 2069,
-  "destinations": 860,
+  "pages": 2070,
+  "destinations": 861,
   "ambiguous": [
     "Daan",
     "大安",
@@ -16567,6 +16567,11 @@
     },
     {
       "page": "/rail/history/taoyuan-station-track-removal/",
+      "name": "Alishan Forest Railway",
+      "href": "/rail/alishan/lines/alishan-forest-railway/"
+    },
+    {
+      "page": "/rail/history/ten-major-constructions/",
       "name": "Alishan Forest Railway",
       "href": "/rail/alishan/lines/alishan-forest-railway/"
     },

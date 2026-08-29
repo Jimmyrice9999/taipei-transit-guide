@@ -3,7 +3,7 @@ title: "Taoyuan — Taoyuan Green Line"
 summary: "Taoyuan (G07) on Taoyuan Metro's under-construction Green Line; location, structure and transfer evidence are kept separate from TDX's Airport MRT operating records."
 line: G
 operator: TYMC
-updated: 2026-08-24
+updated: 2026-08-29
 facts:
   - label: "Station code"
     value: "G07"
@@ -50,6 +50,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Live probe retrieved on 2026-08-24: the TYMC Line endpoint returned one A record and no G record; the project registry therefore remains primary-research rather than TDX-backed."
+  - id: dorts-g07-progress
+    title: "G07 station construction news"
+    titleOriginal: "捷運綠線工程動態"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1847139
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Dated 27 August 2026. States G07 is currently Taiwan's deepest MRT station excavation at 40 metres, built by top-down method, with a roughly 80,000 cubic metre concrete pour timed ahead of typhoon season."
+  - id: ltn-g07-archaeology
+    title: "Taoyuan Green Line railway remains backfilled; heritage groups criticise the timing"
+    titleOriginal: 桃捷綠線鐵道遺構填平 文團批：破壞前蓋裹屍布
+    publisher: Liberty Times (自由時報)
+    url: https://news.ltn.com.tw/news/life/breakingnews/4016910
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Dated 6 August 2022. Describes the archaeological finds (訊塘埔文化 remains, a Qing-era railway bed, Japanese-era brick and rail-bed remains), the roughly two-year construction halt, and the heritage committee's 29 June 2022 preservation plan. This research could not independently fetch the underlying archaeological report to verify the article's specific dimensions and disposition details."
+  - id: dorts-g07-archaeology-index
+    title: "Archaeological site index — G07 station"
+    titleOriginal: 考古遺址-G07車站
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/News.aspx?n=23235&s=20189
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Confirms a formal archaeological report exists, dated 26 August 2024 (大樹林疑似遺址（桃園火車站舊站）...清理發掘計畫成果報告), corroborating that the site and report described in the Liberty Times article are real; the report itself was not fetched in this research."
 ---
 ## Current identity
 
@@ -58,6 +85,32 @@ Taoyuan is the project-page English rendering of 桃園車站 (G07).[^dorts-gree
 ## Place in the Green Line project
 
 G07 sits in the Taoyuan Green Line station sequence published by the Taoyuan engineering bureau. The source table lists the code, a location description and a transfer note where one has been defined; it does not turn an unnamed station code into a final public name.[^dorts-green] The published transfer statement is: Future transfer to the underground TRA Taoyuan station.[^dorts-green]
+
+## Taiwan's deepest MRT excavation, and a two-year archaeological halt
+
+G07 is under construction as the deepest MRT station excavation in Taiwan,
+reaching 40 metres, built with a top-down (逆打) method that excavates and
+casts each floor slab in sequence from the surface downward rather than
+completing excavation before building up.[^dorts-g07-progress] A single
+concrete pour for the station structure used roughly 80,000 cubic metres of
+concrete, more than 10,000 truck loads, timed to finish before typhoon
+season.[^dorts-g07-progress]
+
+Construction was halted for roughly two years, from August 2020 to August
+2022, after archaeological finds at the site: remains attributed to the
+訊塘埔文化 culture, a Qing-era railway bed attributed to Liu Ming-chuan's
+original line — an 8-by-4-metre stretch of cobblestones laid in a pattern
+resembling modern railway sleepers — and Japanese-era brick and rail-bed
+remains from the old Taoyuan station.[^ltn-g07-archaeology] A heritage
+review committee approved a preservation plan on 29 June 2022; the site was
+recorded by 3D scanning and moulding before being backfilled, with
+extracted material planned for display on two underground levels and a
+plaza.[^ltn-g07-archaeology] The engineering bureau's own site index
+confirms a formal archaeological report on the find exists, dated 26 August
+2024, though this research did not fetch that underlying report and cannot
+independently verify the Liberty Times account's specific dimensions and
+disposition details beyond confirming the report and site are
+real.[^dorts-g07-archaeology-index]
 
 ## Evidence boundary
 
