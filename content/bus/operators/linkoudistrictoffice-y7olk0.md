@@ -65,6 +65,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the division's published transport-management service index and its links to TPASS, electric-bus replacement, low-floor bus, bus evaluation and bus-information services; it does not identify the contractor, fleet or depot for these district-office records.
+  - id: ntpc-new-bus-explainer
+    title: New Taipei City New Bus (free community bus)
+    titleOriginal: 免費新北市新巴士
+    publisher: New Taipei City Government (新北市政府)
+    url: https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Fetched in full. Groups Linkou's routes under the F2 cluster with Xinzhuang, Taishan and Wugu: 「F2 新莊、泰山、五股、林口」. States the F-prefix stands for 'FREE' and that the system consolidates townships' individually-run community buses under one citywide free-fare programme, per the fuller quote recorded on this cluster's other district-office pages."
 ---
 
 ## What the record establishes
@@ -89,6 +98,10 @@ The snapshot associates this record with 7 route records; the rows are shown bel
 
 Linkou District Office's own site confirms the same seven routes as the TDX pull — F233, F235, F236, F237, F238, F239 and F250 — but describes none of them directly, linking each out to New Taipei's ebus.gov.taipei route-information system and to a separate downloadable route/stop/timetable file[^linkou-office-buses]. No operator or fare is stated on the district-office page itself[^linkou-office-buses].
 
+## The citywide consolidation this route family belongs to
+
+New Taipei City Government's own New Bus explainer places Linkou's routes in the F2 cluster alongside Xinzhuang, Taishan and Wugu: 「F2 新莊、泰山、五股、林口」.[^ntpc-new-bus-explainer] As with every route family in this system, the F prefix stands for "FREE," and the programme consolidates what were once separate township-run community buses under one citywide free-fare service rather than a commercial contract.[^ntpc-new-bus-explainer]
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the seven routes; the linked ebus pages and timetable file were not opened in this research pass.
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No named contractor has been confirmed for any of the seven routes despite a direct search; the linked ebus pages and timetable file were not opened in this research pass.

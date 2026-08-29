@@ -65,6 +65,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the division's published transport-management service index and its links to TPASS, electric-bus replacement, low-floor bus, bus evaluation and bus-information services; it does not identify the contractor, fleet or depot for these district-office records.
+  - id: ntpc-new-bus-explainer
+    title: New Taipei City New Bus (free community bus)
+    titleOriginal: 免費新北市新巴士
+    publisher: New Taipei City Government (新北市政府)
+    url: https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Fetched in full. Explains the citywide consolidation this route family belongs to: pre-merger townships and cities each ran their own community bus, later consolidated and formally named 新北市新巴士 while keeping the prior free-fare policy: 「整合未升格前各鄉鎮市自行開辦的社區巴士，除延續免費搭乘的服務外，並正式定名整合後的社區巴士為『新北市新巴士』」. States the F-prefix stands for 'FREE': 「一方面強調『免費FREE』的服務」. Groups Pinglin's routes under the F7 cluster with Xindian, Shenkeng, Shiding and Wulai: 「F7 新店、深坑、石碇、坪林、烏來」."
 ---
 
 ## What the record establishes
@@ -88,6 +97,10 @@ The snapshot associates this record with 6 route records; the rows are shown bel
 
 Pinglin District Office's own site names four current free routes — F721 南山寺路線, F722 金瓜寮路線, F723 大林路線 (with separate 上石曹 and 下石曹 branch workings) and F724 水德路線 — with no operator or fare stated for any of them[^pinglin-office-buses]. The same page states a standing suspension rule tying the district's free buses to New Taipei City Government's own work/school closure declarations: "如遇新北市政府發布停班停課本區免費巴士將停班停駛"[^pinglin-office-buses].
 
+## The citywide consolidation this route family belongs to
+
+New Taipei City Government's own explainer for the "New Bus" (新巴士) system describes how these routes came to exist: before New Taipei's 2010 upgrade to a special municipality, individual townships and county-administered cities each ran their own community bus service, later consolidated under one citywide programme that kept the original free-fare policy and adopted the name 新北市新巴士.[^ntpc-new-bus-explainer] The "F" prefix on the route numbers stands for "FREE": 「一方面強調『免費FREE』的服務」.[^ntpc-new-bus-explainer] Pinglin's routes sit in the F7 group alongside Xindian, Shenkeng, Shiding and Wulai: 「F7 新店、深坑、石碇、坪林、烏來」.[^ntpc-new-bus-explainer] This citywide page corroborates the free-fare status Pinglin's own site already states, but names the district office itself as the historical operator rather than a separate contracted company.[^ntpc-new-bus-explainer]
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the four routes; fleet, depot and contract fields remain TBC.
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No named contractor has been confirmed for any of the four routes despite a direct search of the district office's own site and of likely regional operators; fleet, depot and contract fields remain TBC.

@@ -2,8 +2,8 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27238,
-    "tbc": 4649,
+    "sourced": 27263,
+    "tbc": 4647,
     "asserted": 0,
     "meta": 122
   },
@@ -9778,8 +9778,8 @@
     },
     {
       "file": "content/rail/cable/stations/maokong-station.md",
-      "sources": 3,
-      "sourced": 10,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -9794,17 +9794,17 @@
     },
     {
       "file": "content/rail/cable/stations/zoo-south-station.md",
-      "sources": 3,
-      "sourced": 9,
-      "tbc": 1,
+      "sources": 5,
+      "sourced": 11,
+      "tbc": 0,
       "asserted": 0,
       "meta": 1
     },
     {
       "file": "content/rail/cable/stations/zoo-station.md",
-      "sources": 4,
-      "sourced": 9,
-      "tbc": 1,
+      "sources": 5,
+      "sourced": 12,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -11890,8 +11890,8 @@
     },
     {
       "file": "content/rail/tmrt/lines/green-line.md",
-      "sources": 12,
-      "sourced": 15,
+      "sources": 17,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -11914,8 +11914,8 @@
     },
     {
       "file": "content/rail/tmrt/operations/ridership.md",
-      "sources": 2,
-      "sourced": 7,
+      "sources": 3,
+      "sourced": 8,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -11946,8 +11946,8 @@
     },
     {
       "file": "content/rail/tmrt/rolling-stock/fleet-roster.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 11,
       "tbc": 2,
       "asserted": 0,
       "meta": 1
@@ -12066,8 +12066,8 @@
     },
     {
       "file": "content/rail/tmrt/stations/g6.md",
-      "sources": 7,
-      "sourced": 15,
+      "sources": 11,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -12082,16 +12082,16 @@
     },
     {
       "file": "content/rail/tmrt/stations/g8.md",
-      "sources": 7,
-      "sourced": 15,
+      "sources": 11,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/tmrt/stations/g8a.md",
-      "sources": 8,
-      "sourced": 15,
+      "sources": 10,
+      "sourced": 17,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -14946,8 +14946,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 293,
-      "sourced": 418,
+      "sources": 304,
+      "sourced": 423,
       "tbc": 9,
       "asserted": 0,
       "meta": 8

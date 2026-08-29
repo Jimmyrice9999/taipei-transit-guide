@@ -65,6 +65,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the division's published transport-management service index and its links to TPASS, electric-bus replacement, low-floor bus, bus evaluation and bus-information services; it does not identify the contractor, fleet or depot for these district-office records.
+  - id: wanli-traffic-info
+    title: "Wanli District Office — transport information"
+    titleOriginal: "萬里區公所-交通資訊"
+    publisher: "Wanli District Office, New Taipei City Government (新北市萬里區公所)"
+    url: https://www.wanli.ntpc.gov.tw/home.jsp?id=f579627a5f15ddf4
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Fetched in full. Names Keelung Bus (基隆客運) as the operator of F921, in the office's own access directions, twice: 「於淡水捷運站搭基隆客運862號公車，於『萬里區公所』站下車，轉乘基隆客運F921號公車」and an equivalent routing from Keelung Station via routes 790/862. States F921 is primarily a school-commute service for mountain-area children with low frequency: 「※F921公車主要供山區學童上下學通勤使用，班次較少，平日3班，假日2班」."
+  - id: ctwant-wanli-complaints
+    title: "Driver 'played blind,' missed runs repeatedly... Wanli New Bus draws public complaints, Traffic Bureau responds"
+    titleOriginal: 司機裝瞎、脫班不斷...萬里新巴士惹民怨 交通局回應了
+    publisher: CTWANT
+    url: https://www.ctwant.com/article/398372
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News report, fetched in full, naming Keelung Bus as operator of F921/F923: 「由基隆客運營運」. Reports 9 formal complaints in the prior year, including an April 2024 incident and three consecutive no-show days. Quotes New Taipei Traffic Bureau's Transport Management Section Chief 林詩欽 confirming violations were penalized and that a transfer of route management to the district office was still going through administrative procedure, not yet completed: 「還有相關的行政程序需要辦理」."
 ---
 
 ## What the record establishes
@@ -89,6 +107,12 @@ The snapshot associates this record with 7 route records; the rows are shown bel
 
 Wanli District Office's own site publishes three current community-bus routes with running schedules directly on the page[^wanli-office-buses]: F921 山海線, running the district office to Shuangxing and Jinshan Hospital, first departure 06:40 and last 17:05; F922 山線, to Ruiquan junction/Xidi; and F923 海線, to Yehliu and Jinshan Hospital, first departure 06:20 and last 17:25[^wanli-office-buses]. The page names no operating contractor and states no fare for any of the three[^wanli-office-buses].
 
+## The operator, named on the office's own site
+
+Unlike most of the district-office bus records in this cluster, Wanli's routes have a named operating contractor. The office's own transport-information page directs riders to "轉乘基隆客運F921號公車" (transfer to Keelung Bus route F921), naming Keelung Bus (基隆客運) as the operator in its own access instructions, given twice for two different starting points.[^wanli-traffic-info] The same page describes F921 specifically as a low-frequency service mainly for mountain-area schoolchildren's commute: 「※F921公車主要供山區學童上下學通勤使用，班次較少，平日3班，假日2班」— three weekday and two holiday round trips.[^wanli-traffic-info]
+
+CTWANT news reporting corroborates Keelung Bus as operator of both F921 and F923 — 「由基隆客運營運」— and covers real service-quality complaints: nine formal complaints in the year before the report, including an April 2024 incident and three consecutive no-show days.[^ctwant-wanli-complaints] New Taipei's Traffic Bureau Transport Management Section Chief, quoted by name, confirmed violations had been penalized and that transferring route management from Keelung Bus to the district office itself was still going through administrative procedure at the time of the report, not yet completed.[^ctwant-wanli-complaints] A separate, unconfirmed claim — that operations transferred to a company named 甲天下通運 effective 1 January 2026 — was searched for directly and found no corroboration in any source; it is not published here, and the office's own transport-information page still names Keelung Bus as of this research.[^wanli-traffic-info]
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the three routes; fleet, depot and contract fields remain TBC.
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, or contract value for the Keelung Bus arrangement [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. F922's operator was not confirmed by any source checked and remains TBC.

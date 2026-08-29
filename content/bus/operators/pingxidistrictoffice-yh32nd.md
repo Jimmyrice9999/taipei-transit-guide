@@ -65,6 +65,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the division's published transport-management service index and its links to TPASS, electric-bus replacement, low-floor bus, bus evaluation and bus-information services; it does not identify the contractor, fleet or depot for these district-office records.
+  - id: ntpc-new-bus-explainer
+    title: New Taipei City New Bus (free community bus)
+    titleOriginal: 免費新北市新巴士
+    publisher: New Taipei City Government (新北市政府)
+    url: https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Fetched in full. Groups Pingxi's routes under the F8 cluster with Ruifang, Shuangxi and Gongliao: 「F8 瑞芳、雙溪、平溪、貢寮」."
+  - id: pingxi-lantern-festival-2025
+    title: 2025 New Taipei Pingxi Lantern Festival traffic information
+    titleOriginal: 2025新北市平溪天燈節交通資訊
+    publisher: "Pingxi District Office, New Taipei City Government (新北市平溪區公所)"
+    url: "https://www.pingxi.ntpc.gov.tw/home.jsp?act=be4f48068b2b0031&dataserno=7e7a904bead345fdb5df29433772a710&id=b4cafbf11e0d8c3b"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Press release, fetched in full, dated 2025-02-07. Shows the office adjusting its own New Bus services for the festival's two peak dates (8 and 12 February 2025): last-bus cancellations on F821, F822, F823, F823區間 and F825, and F823 rerouted to bypass Shifen Liaojiao Bridge via Nanshan Community."
 ---
 
 ## What the record establishes
@@ -87,6 +105,10 @@ The snapshot associates this record with 5 route records; the rows are shown bel
 
 Pingxi District Office's own site identifies its current routes collectively as "新北市新巴士": F821 新寮線, F822 東勢線, F823 平溪雙溪福隆線 (with a further sectioned F823區 working) and F825 平溪雙溪基隆線[^pingxi-office-buses]. F823's name shows the route already crosses into neighbouring Shuangxi District, consistent with F823 also appearing on Shuangxi District Office's own route list. No fare or operator is stated on the Pingxi page, and its timetables exist only as linked files not opened in this research pass[^pingxi-office-buses].
 
+## Citywide grouping, and the office's own festival-day route control
+
+New Taipei's New Bus explainer places Pingxi's routes in the F8 cluster with Ruifang, Shuangxi and Gongliao: 「F8 瑞芳、雙溪、平溪、貢寮」.[^ntpc-new-bus-explainer] The office directly controls its own routes' schedules for major local events: a dated 2025 notice for the Pingxi Lantern Festival's two peak dates (8 and 12 February) shows the office cancelling last runs on F821, F822, F823, F823區間 and F825, and rerouting F823 to bypass a bridge crossing via Nanshan Community.[^pingxi-lantern-festival-2025] This is the office exercising day-to-day operational control over its own routes, not evidence of an external operating contractor.[^pingxi-lantern-festival-2025]
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the four routes; the linked timetable files were not opened, so schedules remain unread; fleet, depot and contract fields remain TBC.
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No named contractor company distinct from the district office itself has been confirmed for any of the four routes despite a direct search; the linked timetable files were not opened, so schedules remain unread; fleet, depot and contract fields remain TBC.
