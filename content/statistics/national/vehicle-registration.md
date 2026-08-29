@@ -51,6 +51,42 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "MOTC monthly statistics table, 民國104年(2015) to 114年1月(January 2025). 2021: 22,597,694 total / 8,330,774 cars / 14,266,920 scooters. End of 2024: 23,335,950 / 8,679,866 / 14,656,084. End of January 2025: 23,342,799 / 8,686,630 / 14,656,169."
+  - id: motc-vehicle-registration-table3-9
+    title: "Registered automobiles by brand, table 3-9, end of January 2025"
+    titleOriginal: 表3-9 各型汽車按廠牌分
+    publisher: 公路局 (Highway Bureau), via 交通部
+    url: "https://www.motc.gov.tw/uploaddowndoc?file=month/23090.pdf"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "A separate MOTC monthly table (brand breakdown, not the same document as table 3-5). Its own grand-total row for end of January 2025 sums 小客車 7,427,433 + 小貨車 979,116 + 特種車 73,868 + 大客車 29,910 + 大貨車 176,303 = 8,686,630, independently reproducing table 3-5's car figure for the same month to the digit."
+  - id: dgbas-vehicle-nov2022
+    title: "Motor vehicle new registrations fell 6.0% year-on-year, November 2022 (National Statistics Bulletin No. 246)"
+    titleOriginal: 111年1-11月機動車輛新增掛牌數年減6.0% (國情統計通報第246號)
+    publisher: 行政院主計總處 綜合統計處 (Directorate-General of Budget, Accounting and Statistics, DGBAS)
+    url: "https://ws.dgbas.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDYzL3JlbGZpbGUvMTEwMjAvMjMwNDgyLzBjMWVkMGE5LWE1NGMtNDFhOS1hOWM0LTk2OGY0OGZiNjczZi5wZGY%3D&n=TjExMTEyMjYucGRm"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "DGBAS's own statistical bulletin, but the table itself states its source as 交通部統計處 (MOTC), making this DGBAS relaying MOTC figures rather than MOTC's own publication; stat.motc.gov.tw could not be reached directly to verify against MOTC itself. Gives a stock count of registered electric vehicles as of end November 2022: 電能汽車 31,000 (+65.1% YoY), 電能機車 622,000 (+16.6% YoY)."
+  - id: evalue-ev-2025
+    title: "Pure-electric vehicle registrations reach 128,631 by end of 2025"
+    titleOriginal: 截至2025年底，純電動車登記數達128,631輛，較2024年成長33.4%
+    publisher: EVALUE (電動車專業網站), reprinted from 財團法人車輛研究測試中心 (ARTC)
+    url: "https://www.evalue.com.tw/research/121"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Cites 交通部公路局統計查詢網 as its underlying source, compiled by 車輛研究測試中心 (ARTC); that query site returned HTTP 403 on direct fetch, so this could not be verified against the Highway Bureau itself. Its own framing compares the 128,631 figure against roughly 8.44 million total 小客貨, suggesting the figure is scoped to cars/vans, not all electric vehicles including scooters — the exact scope is not stated plainly enough to be certain."
+  - id: artc-ev-sales-2023
+    title: "Taiwan's 2023 electric-vehicle sales reach 29,329 units"
+    titleOriginal: 2023年臺灣電動車總銷售量達29,329輛（BEV+PHEV），年增率高達60%
+    publisher: 財團法人車輛研究測試中心 (Automotive Research & Testing Center, ARTC)
+    url: "https://www.artc.org.tw/tw/knowledge/articles/13739"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "ARTC reporting on MOTC data (cites 交通部統計查詢網), not MOTC's own publication. This is an annual new-registration/sales count (BEV+PHEV combined), a different measure from the stock counts in the other two EV sources — 795 units in 2018 against 29,329 in 2023."
 ---
 
 MOTC publishes an annual motor-vehicle registration count reaching back to
@@ -82,11 +118,47 @@ from 1988 to 1998, but by only about 1.8 million across the eight years
 from 2016 to 2024, even though the 2016-2024 span is nearly as
 long.[^motc-vehicle-registration-1988-2016][^motc-vehicle-registration-2015-2025]
 
+## A cross-check between two different MOTC tables agrees to the digit
+
+Table 3-5 (the total/car/scooter series used above) and table 3-9 (a
+separate MOTC monthly table breaking cars down by brand) are different
+documents in the same monthly statistics bundle. Table 3-9's own vehicle-type
+subtotals for end of January 2025 — 小客車 7,427,433, 小貨車 979,116, 特種車
+73,868, 大客車 29,910 and 大貨車 176,303 — sum to 8,686,630, exactly matching
+table 3-5's car figure for the same month.[^motc-vehicle-registration-table3-9]
+That is a genuine independent cross-check for one shared month, though it does
+not address the two original tables' own 2015-2016 overlap years, for which no
+third source was found.
+
+## Electric vehicles: three sources, three different measures
+
+A MOTC or Highway Bureau table specifically breaking out electric vehicles
+was not found — the Highway Bureau's own statistics-query site
+returned errors on every attempt. Three secondary sources give EV figures,
+but they measure different things and should not be read as one series:
+DGBAS's own bulletin, citing MOTC as its source, gives a stock count of
+31,000 registered electric cars and 622,000 electric scooters as of the end
+of November 2022, each up more than 16% year-on-year.[^dgbas-vehicle-nov2022]
+ARTC, via EVALUE, gives a stock count of 128,631 pure-electric vehicles by
+the end of 2025, apparently scoped to cars and vans rather than all electric
+vehicles including scooters, though the source does not state its own scope
+plainly enough to be certain.[^evalue-ev-2025] ARTC separately gives an
+annual new-registration count — not a stock count — of 29,329 electric
+vehicles (battery-electric plus plug-in hybrid combined) sold in 2023, up
+from 795 in 2018.[^artc-ev-sales-2023] These three figures are not
+comparable to each other without knowing each one's exact vehicle-category
+scope, which this page could not fully establish for the EVALUE figure
+specifically.
+
 ## What remains TBC
 
 A single MOTC table covering the entire 1988-2025 span without the seam
-between the two source PDFs used here was not located, and this page has
-not independently cross-checked the two tables' figures for their years of
-overlap against each other. A breakdown by vehicle sub-type finer than
-"car"/"scooter" (electric vehicles specifically, for instance) is TBC
-pending a further primary fetch.
+between the two source PDFs used here was not found, despite trying
+MOTC's statistics-query site, the Highway Bureau's statistics-query site,
+two data.gov.tw dataset pages and MOTC's monthly-bulletin index — every
+route either failed to load or (one data.gov.tw dataset) confirmed a
+different, later seam (starting February 2017) rather than a continuous
+span back to 1988. The two original tables' own 2015-2016 overlap years
+are TBC, not cross-checked against a third source. A single, MOTC-published
+electric-vehicle registration series by year, comparable in scope to the
+car/scooter totals above, is also TBC.

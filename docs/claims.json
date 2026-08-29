@@ -2,18 +2,18 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27387,
+    "sourced": 27398,
     "tbc": 4646,
-    "asserted": 0,
-    "meta": 128
+    "asserted": 6,
+    "meta": 127
   },
   "files": [
     {
       "file": "content/air/airports/kaohsiung.md",
-      "sources": 3,
-      "sourced": 8,
+      "sources": 7,
+      "sourced": 12,
       "tbc": 2,
-      "asserted": 0,
+      "asserted": 1,
       "meta": 1
     },
     {
@@ -9666,10 +9666,10 @@
     },
     {
       "file": "content/ferry/routes/penghu.md",
-      "sources": 7,
-      "sourced": 20,
+      "sources": 10,
+      "sourced": 22,
       "tbc": 0,
-      "asserted": 0,
+      "asserted": 1,
       "meta": 0
     },
     {
@@ -14898,11 +14898,11 @@
     },
     {
       "file": "content/statistics/national/vehicle-registration.md",
-      "sources": 2,
-      "sourced": 11,
+      "sources": 6,
+      "sourced": 13,
       "tbc": 0,
-      "asserted": 0,
-      "meta": 1
+      "asserted": 3,
+      "meta": 0
     },
     {
       "file": "content/statistics/national/_index.md",
@@ -14946,10 +14946,10 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 326,
-      "sourced": 453,
+      "sources": 329,
+      "sourced": 456,
       "tbc": 9,
-      "asserted": 0,
+      "asserted": 1,
       "meta": 9
     },
     {
@@ -14993,5 +14993,63 @@
       "meta": 0
     }
   ],
-  "asserted": []
+  "asserted": [
+    {
+      "file": "content/air/airports/kaohsiung.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "CAA's own by-airport passenger-statistics page and the station's own performance-data and annual-report pages exist but render only via clie",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/ferry/routes/penghu.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "Taihua was not the first vessel on this route.",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/statistics/national/vehicle-registration.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "No MOTC or Highway Bureau table specifically breaking out electric vehicles was reached directly — the Highway Bureau's own statistics-query",
+      "signals": [
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/statistics/national/vehicle-registration.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "A single MOTC table covering the entire 1988-2025 span without the seam between the two source PDFs used here was not located, despite tryin",
+      "signals": [
+        "date",
+        "count",
+        "superlative"
+      ]
+    },
+    {
+      "file": "content/statistics/national/vehicle-registration.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "The two original tables' own 2015-2016 overlap years remain uncross-checked against a third source.",
+      "signals": [
+        "date",
+        "count"
+      ]
+    },
+    {
+      "file": "content/ticketing/guides/conflicts-index.md",
+      "state": "asserted",
+      "where": "prose",
+      "text": "No MOTC or Highway Bureau table specifically breaking out electric vehicles was reached directly — the Highway Bureau's own statistics-query",
+      "signals": [
+        "superlative"
+      ]
+    }
+  ]
 }

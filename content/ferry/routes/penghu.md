@@ -53,6 +53,33 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: "Lead-only encyclopedia article, footnoted to CNA, NowNews, UDN and other press but not independently verified against those primaries in this pass. Supports the September 1989 completion, 34 years of service and 23 August 2023 final sailing."
+  - id: udntime-penghu-fleet-history
+    title: "From 'Taipeng Ferry' to 'Taihua Ferry': a history of the Penghu-Taiwan ferry fleet"
+    titleOriginal: 從「台澎輪」到「台華輪」回顧澎湖與台灣本島交通輪船史
+    publisher: 報時光 (UDN Time, a 聯合報系 digital-archive feature)
+    url: "https://time.udn.com/udntime/story/122833/8201639"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "A dated historical retrospective quoting older Economic Daily/UDN reporting, independent of the Wikipedia article also cited here. Gives 台華輪's tonnage/capacity (corroborating Wikipedia) and 臺澎輪's 1971 specifications and 17-knot speed."
+  - id: ncmb-penghu-wheel-history
+    title: "Passenger ferry 'Penghu Wheel'"
+    titleOriginal: 客輪「澎湖輪」
+    publisher: 國家文化記憶庫 (National Culture Memory Bank)
+    url: "https://tcmb.culture.tw/zh-tw/detail?id=607892&indexCode=Culture_Place"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "A culture-heritage archival platform, not the operator or MOTC. Names the pre-1989 Kaohsiung-Magong fleet: 臺帆一號 (200 tons), 恆春輪 and 宜蘭輪 (500 tons each), and the original 800-ton 澎湖輪 (1959-1971, capacity 250) — a name later reused for the unrelated 2023, 9,932-ton vessel."
+  - id: ltn-penghu-wheel-launch
+    title: New Penghu ferry launch ceremony
+    titleOriginal: "(高雄馬公新船下水典禮報導)"
+    publisher: 自由時報 (Liberty Times)
+    url: "https://news.ltn.com.tw/news/life/breakingnews/4260496"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Reports the service as a 20-year, 300-voyages-per-year commitment under a government 'buy transport service' (購買運送服務) model, and states 台航 signed a service-procurement contract with 航港局 on 29 June (of the year before this article) — a different date from the operator's own '2021 tender' framing, not merged with it since no single source states both."
   - id: phpto-timetable
     title: Public ferry timetable
     titleOriginal: 交通船時刻表
@@ -193,7 +220,40 @@ figures rather than treating as the same measurement.[^ltn-penghu-wheel-contract
 Penghu Wheel replaced 臺華輪 (Taihua), which had served the Kaohsiung–Magong
 route for 34 years after completion in Nagasaki in September 1989, making its
 final sailing on 23 August 2023 before being sent to Bangladesh for
-scrapping.[^zhwiki-taihua]
+scrapping.[^zhwiki-taihua] A UDN historical retrospective independently
+corroborates Taihua's tonnage and capacity — 8,134 gross tons, 1,150
+passengers, about 100 small cars — without relying on the Wikipedia
+article.[^udntime-penghu-fleet-history] One source gives the service length
+as 33 years rather than 34; both describe the same 1989-2023 vessel, and
+this page reports the discrepancy rather than silently picking
+one.[^zhwiki-taihua][^udntime-penghu-fleet-history]
+
+Taihua was not the first vessel on this route.[^ncmb-penghu-wheel-history] A national culture-heritage
+archive names an earlier fleet: 臺帆一號 (200 tons) in the early postwar
+years, then 恆春輪 and 宜蘭輪 (500 tons each), then an 800-ton 澎湖輪 that ran
+from December 1959 to 1971 carrying up to 250
+passengers.[^ncmb-penghu-wheel-history] That name, 澎湖輪, is therefore used
+twice on this route: once for the 800-ton 1959 vessel and again, unrelated,
+for the current 9,932-ton 2023 vessel — a reuse this page notes rather than
+leaves to cause confusion.[^ncmb-penghu-wheel-history] A 2,000-ton 臺澎輪
+followed from November 1971, carrying 500 passengers on its first sailing
+and expanded to a 660-passenger capacity by 1973, at a reported cruising
+speed of 17 knots.[^udntime-penghu-fleet-history]
+
+News coverage of the 2023 vessel's launch describes the current
+arrangement as a 20-year, 300-voyages-per-year service commitment under a
+government "buy transport service" model, distinct from owning and running
+the vessel directly, and separately reports Taiwan Navigation signing a
+service-procurement contract with the Maritime and Port Bureau — a date
+this page does not merge with the operator's own "2021 tender" framing,
+since no single fetched source states both the tender and the contract
+together.[^ltn-penghu-wheel-launch] Sources also disagree on the current
+vessel's small-car capacity beyond the 82-84-85-car range already implied
+by comparing the operator's as-delivered page against the pre-delivery
+report above: this page publishes the operator's own 82-car,
+9,932/3,310-ton as-delivered figures as the primary record and treats
+higher pre-delivery figures as describing the planned rather than
+delivered specification.[^penghu-wheel-about][^ltn-penghu-wheel-contract]
 
 ## What remains date-sensitive
 

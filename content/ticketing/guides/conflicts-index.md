@@ -2901,6 +2901,33 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "News comparison table citing MOTC A30 figures against a series it attributes to MOHW, both for 2020-2024: MOTC 2,972/2,962/3,064/3,023/2,950; MOHW (as cited here) 2,644/2,589/2,658/2,591/2,426. This MOHW-attributed 2024 figure of 2,426 differs from the figure MOHW's own official page states for the same year (2,932) — see Conflicts. States the gap for 2024 as 524 people, 17.7%, attributed to MOTC official Wu Donglin (吳東林) without a directly located primary quote."
+  - id: "statistics-national-vehicle-registration-dgbas-vehicle-nov2022"
+    title: "Motor vehicle new registrations fell 6.0% year-on-year, November 2022 (National Statistics Bulletin No. 246)"
+    titleOriginal: "111年1-11月機動車輛新增掛牌數年減6.0% (國情統計通報第246號)"
+    publisher: "行政院主計總處 綜合統計處 (Directorate-General of Budget, Accounting and Statistics, DGBAS)"
+    url: "https://ws.dgbas.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDYzL3JlbGZpbGUvMTEwMjAvMjMwNDgyLzBjMWVkMGE5LWE1NGMtNDFhOS1hOWM0LTk2OGY0OGZiNjczZi5wZGY%3D&n=TjExMTEyMjYucGRm"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "DGBAS's own statistical bulletin, but the table itself states its source as 交通部統計處 (MOTC), making this DGBAS relaying MOTC figures rather than MOTC's own publication; stat.motc.gov.tw could not be reached directly to verify against MOTC itself. Gives a stock count of registered electric vehicles as of end November 2022: 電能汽車 31,000 (+65.1% YoY), 電能機車 622,000 (+16.6% YoY)."
+  - id: "statistics-national-vehicle-registration-evalue-ev-2025"
+    title: "Pure-electric vehicle registrations reach 128,631 by end of 2025"
+    titleOriginal: "截至2025年底，純電動車登記數達128,631輛，較2024年成長33.4%"
+    publisher: "EVALUE (電動車專業網站), reprinted from 財團法人車輛研究測試中心 (ARTC)"
+    url: "https://www.evalue.com.tw/research/121"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Cites 交通部公路局統計查詢網 as its underlying source, compiled by 車輛研究測試中心 (ARTC); that query site returned HTTP 403 on direct fetch, so this could not be verified against the Highway Bureau itself. Its own framing compares the 128,631 figure against roughly 8.44 million total 小客貨, suggesting the figure is scoped to cars/vans, not all electric vehicles including scooters — the exact scope is not stated plainly enough to be certain."
+  - id: "statistics-national-vehicle-registration-artc-ev-sales-2023"
+    title: "Taiwan's 2023 electric-vehicle sales reach 29,329 units"
+    titleOriginal: "2023年臺灣電動車總銷售量達29,329輛（BEV+PHEV），年增率高達60%"
+    publisher: "財團法人車輛研究測試中心 (Automotive Research & Testing Center, ARTC)"
+    url: "https://www.artc.org.tw/tw/knowledge/articles/13739"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "ARTC reporting on MOTC data (cites 交通部統計查詢網), not MOTC's own publication. This is an annual new-registration/sales count (BEV+PHEV combined), a different measure from the stock counts in the other two EV sources — 795 units in 2018 against 29,329 in 2023."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -5768,6 +5795,36 @@ attributed to the same ministry.
 - [Road traffic accident overview, 2024](https://tadd.org.tw/situation56.htm) — secondary; 財團法人道路交通安全教育基金會 (Road Traffic Safety Education Foundation), republishing MOTC/police statistics; accessed 2026-08-29.[^statistics-national-traffic-safety-tadd-2024]
 - [113 statistical results for national causes of death](https://www.mohw.gov.tw/cp-7177-82775-1.html) — primary; 衛生福利部 (Ministry of Health and Welfare); accessed 2026-08-29.[^statistics-national-traffic-safety-mohw-2024-causes-of-death]
 - [Comparison of MOTC and MOHW traffic-death figures, 2020-2024](https://udn.com/news/story/7270/9339444) — secondary; 聯合報 (United Daily News, UDN); accessed 2026-08-29.[^statistics-national-traffic-safety-udn-death-comparison]
+
+## Vehicle registration, 1988-2025 — Electric vehicles: three sources, three different measures
+
+Discussed on [Vehicle registration, 1988-2025](/statistics/national/vehicle-registration/) in the source page's “Electric vehicles: three sources, three different measures” section.[^statistics-national-vehicle-registration-dgbas-vehicle-nov2022]
+
+### Electric vehicles: three sources, three different measures
+
+A MOTC or Highway Bureau table specifically breaking out electric vehicles
+was not found — the Highway Bureau's own statistics-query site
+returned errors on every attempt. Three secondary sources give EV figures,
+but they measure different things and should not be read as one series:
+DGBAS's own bulletin, citing MOTC as its source, gives a stock count of
+31,000 registered electric cars and 622,000 electric scooters as of the end
+of November 2022, each up more than 16% year-on-year.[^statistics-national-vehicle-registration-dgbas-vehicle-nov2022]
+ARTC, via EVALUE, gives a stock count of 128,631 pure-electric vehicles by
+the end of 2025, apparently scoped to cars and vans rather than all electric
+vehicles including scooters, though the source does not state its own scope
+plainly enough to be certain.[^statistics-national-vehicle-registration-evalue-ev-2025] ARTC separately gives an
+annual new-registration count — not a stock count — of 29,329 electric
+vehicles (battery-electric plus plug-in hybrid combined) sold in 2023, up
+from 795 in 2018.[^statistics-national-vehicle-registration-artc-ev-sales-2023] These three figures are not
+comparable to each other without knowing each one's exact vehicle-category
+scope, which this page could not fully establish for the EVALUE figure
+specifically.
+
+#### Sources for this entry
+
+- [Motor vehicle new registrations fell 6.0% year-on-year, November 2022 (National Statistics Bulletin No. 246)](https://ws.dgbas.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNDYzL3JlbGZpbGUvMTEwMjAvMjMwNDgyLzBjMWVkMGE5LWE1NGMtNDFhOS1hOWM0LTk2OGY0OGZiNjczZi5wZGY%3D&n=TjExMTEyMjYucGRm) — secondary; 行政院主計總處 綜合統計處 (Directorate-General of Budget, Accounting and Statistics, DGBAS); accessed 2026-08-29.[^statistics-national-vehicle-registration-dgbas-vehicle-nov2022]
+- [Pure-electric vehicle registrations reach 128,631 by end of 2025](https://www.evalue.com.tw/research/121) — secondary; EVALUE (電動車專業網站), reprinted from 財團法人車輛研究測試中心 (ARTC); accessed 2026-08-29.[^statistics-national-vehicle-registration-evalue-ev-2025]
+- [Taiwan's 2023 electric-vehicle sales reach 29,329 units](https://www.artc.org.tw/tw/knowledge/articles/13739) — secondary; 財團法人車輛研究測試中心 (Automotive Research & Testing Center, ARTC); accessed 2026-08-29.[^statistics-national-vehicle-registration-artc-ev-sales-2023]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 
