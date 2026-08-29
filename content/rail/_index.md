@@ -2,6 +2,10 @@
 title: Rail & cable
 description: Fixed-guideway transit across Taiwan — metro and light rail in five cities, Taiwan Railway, High Speed Rail, the Maokong and Alishan cable and forestry lines.
 order: 1
+hero:
+  image: metro/hero
+  alt: A train with open doors at Zhongshan Station Platform 4, passengers boarding and waiting, the station's Chinese and English name signage overhead.
+  caption: A train at Zhongshan Station, Platform 4.
 ---
 
 This section holds Taiwan's **fixed-guideway** systems: services that run on

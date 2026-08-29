@@ -11,9 +11,39 @@ import { notFound } from 'next/navigation'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
+import Figure from '@/components/Figure'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
+import { getImage } from '@/lib/images'
 import { REGIONS, getRegion } from '@/lib/regions'
+
+/**
+ * The same alt/caption already written for this image where it is used as
+ * the hero on that system's own section page — not reinvented here, so a
+ * reader who has seen the image once gets a consistent description of it.
+ */
+const REGION_HERO_CAPTION: Record<string, { alt: string; caption: string }> = {
+  'metro/hero': {
+    alt: "A train with open doors at Zhongshan Station Platform 4, passengers boarding and waiting, the station's Chinese and English name signage overhead.",
+    caption: 'A train at Zhongshan Station, Platform 4.',
+  },
+  'airport-mrt/hero': {
+    alt: 'A blue-liveried Airport MRT train crossing an elevated viaduct at Guishan, Taoyuan, apartment towers and a road interchange below.',
+    caption: 'An Airport MRT train on the elevated guideway at Guishan, on the Taoyuan side of the line.',
+  },
+  'tmrt/hero': {
+    alt: 'A white-and-green Taichung Metro Green Line train approaching Beitun Main Station over steel track and switches.',
+    caption: 'A Taichung Metro Green Line train at Beitun Main Station.',
+  },
+  'krtc/hero': {
+    alt: 'A green-and-white Kaohsiung MRT train at a platform, red destination display partly reading "...aogang", passengers waiting on the platform.',
+    caption: 'A Kaohsiung MRT train at a station platform.',
+  },
+  'alishan/hero': {
+    alt: 'Shay geared steam locomotive No. 25, numbered disc on its smokebox door, coupled to open carriages, steam venting beneath it among trees.',
+    caption: 'Shay locomotive No. 25 with a carriage rake.',
+  },
+}
 
 export function generateStaticParams() {
   return REGIONS.map((region) => ({ slug: region.slug }))
@@ -47,6 +77,9 @@ export default async function RegionPage({
   const region = getRegion(slug)
   if (!region) notFound()
 
+  const heroImage = region.hero ? getImage(region.hero) : null
+  const heroCaption = region.hero ? REGION_HERO_CAPTION[region.hero] : undefined
+
   return (
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ href: '/regions/', label: 'Regions' }, { label: region.title }]} />
@@ -55,6 +88,15 @@ export default async function RegionPage({
       <p className="page-summary">
         <RichText>{region.summary}</RichText>
       </p>
+
+      {heroImage && (
+        <Figure
+          image={heroImage}
+          alt={heroCaption?.alt}
+          caption={heroCaption?.caption}
+          className="figure page-hero"
+        />
+      )}
 
       <div className="page-body">
         <ul className="card-list">

@@ -27,11 +27,20 @@ export type Region = {
   links: RegionLink[]
   /** Named systems/services that serve this region but have no dedicated page yet. */
   gaps?: string[]
+  /**
+   * A pipeline image id (lib/images) representative of the region's own
+   * network — the same system-hero photograph already used on that system's
+   * own section page, not a new photograph shot for this index. Omitted
+   * rather than left to fall back to a generic placeholder for a region
+   * this site has not sourced imagery for yet (Tainan, Hsinchu).
+   */
+  hero?: string
 }
 
 export const REGIONS: Region[] = [
   {
     slug: 'taipei-new-taipei',
+    hero: 'metro/hero',
     title: 'Taipei and New Taipei',
     summary:
       'The core network: one metro system spanning two municipalities, one ' +
@@ -49,6 +58,7 @@ export const REGIONS: Region[] = [
   },
   {
     slug: 'taoyuan',
+    hero: 'airport-mrt/hero',
     title: 'Taoyuan',
     summary:
       'Airport MRT and a Green Line still under construction, run by Taoyuan ' +
@@ -65,6 +75,7 @@ export const REGIONS: Region[] = [
   },
   {
     slug: 'taichung',
+    hero: 'tmrt/hero',
     title: 'Taichung',
     summary:
       'A single driverless metro line, a large bus network run by fourteen ' +
@@ -79,6 +90,7 @@ export const REGIONS: Region[] = [
   },
   {
     slug: 'kaohsiung',
+    hero: 'krtc/hero',
     title: 'Kaohsiung',
     summary:
       'Two metro lines plus a circular light rail line, a ferry to Cijin ' +
@@ -125,6 +137,7 @@ export const REGIONS: Region[] = [
   },
   {
     slug: 'chiayi-alishan',
+    hero: 'alishan/hero',
     title: 'Chiayi and Alishan',
     summary:
       'Home to the Alishan Forest Railway, Taiwan’s 762 mm mountain and ' +

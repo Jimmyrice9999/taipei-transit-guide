@@ -1,7 +1,7 @@
 ---
 title: "Shulin District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Shulin District Office (樹林區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Shulin District Office (樹林區公所) in NewTaipei, with the office's own schedule for its one free medical shuttle route."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Shulin District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: shulin-office-buses
+    title: "Shulin District Office — F611 free medical shuttle page"
+    titleOriginal: "免費醫療專車/便民服務-F611新巴士"
+    publisher: "Shulin District Office, New Taipei City Government (新北市樹林區公所)"
+    url: https://www.shulin.ntpc.gov.tw/home.jsp?id=6824dd712b8a168d
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Describes F611 as a free medical shuttle between Shulin and Linkou, with two round trips daily (08:00 outbound/11:30 return, 13:00 outbound/17:00 return, both terminating at Linkou Chang Gung Memorial Hospital) and no service on Saturdays, Sundays or public holidays. States passengers may only board on the outbound leg and only alight on the return leg at the two named hospital stops. No operator named."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -70,8 +79,10 @@ The snapshot associates this record with 1 route records; the rows are shown bel
 
 - F611 [^tdx-bus-operator-pull]
 
+## The office's own route detail
+
+Shulin District Office's own site describes F611 as a free medical shuttle running between Shulin and Linkou, with two round trips daily terminating at Linkou Chang Gung Memorial Hospital (08:00 outbound/11:30 return, 13:00 outbound/17:00 return) and no service on Saturdays, Sundays or public holidays: "週六(日)及國定假日停駛"[^shulin-office-buses]. The page states passengers may only board on the outbound leg and only alight on the return leg at the two named hospital stops: "去程下車服務站為桃園分院及林口長庚，沿線各站僅供乘客上車。回程上車服務站為桃園分院及林口長庚，沿線各站僅供乘客下車"[^shulin-office-buses]. No operator is named[^shulin-office-buses]. One intermediate stop name on the fetched page rendered as "大學風呂" (literally "university bathhouse"), which reads as an OCR or rendering artifact rather than a plausible Taiwan place name; it is recorded here as an unresolved gap rather than corrected by guesswork.
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for F611; the garbled intermediate stop name remains unresolved; fleet, depot and contract fields remain TBC.

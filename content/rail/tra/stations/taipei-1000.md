@@ -3,7 +3,11 @@ title: "Taipei — Taiwan Railways"
 summary: "Taipei (臺北), TDX station 1000, in 臺北市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 11
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/taipei
+  alt: Taipei Main Station's exterior building, viewed from the street.
+  caption: Taipei Main Station.
 facts:
   - label: "Station ID"
     value: "1000"

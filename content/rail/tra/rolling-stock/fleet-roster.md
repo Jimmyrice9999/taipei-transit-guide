@@ -3,7 +3,11 @@ title: Taiwan Railways rolling stock
 summary: An evidence-weighted record of Taiwan Railways passenger formations, new-vehicle programmes and the gaps in the public current fleet register.
 order: 1
 operator: TRA
-updated: 2026-08-27
+updated: 2026-08-29
+hero:
+  image: tra/rolling-stock/taroko-express
+  alt: A Taroko Express TEMU1000 tilting train set running on the main line at Qidu, Keelung.
+  caption: A Taroko Express (太魯閣號) TEMU1000 set at Qidu, Keelung.
 facts:
   - label: Evidence boundary
     value: Operator purchase programmes and passenger formation diagrams; not a current unit register
@@ -136,6 +140,10 @@ A separate TRA advertising-inventory PDF lists 52 ten-car EMU900 groups, split a
 ## Passenger formations published by the operator
 
 TRA's passenger-facilities guide shows an eight-car formation for the TEMU1000 Taroko train and an eight-car formation for the TEMU2000 Puyuma train.[^tra-vehicle-guide] It shows the push-pull E1000 example as a 12-vehicle formation and the DR3100 diesel multiple unit as a three-car formation.[^tra-vehicle-guide]
+
+![A TEMU2000 Puyuma Express set, car TED2031, departing Xizhi Station northbound.](/images/tra/rolling-stock/puyuma-express-1600.webp "A Puyuma Express (普悠瑪號) TEMU2000 set leaving Xizhi Station. — Rsa · CC BY-SA 3.0")
+
+![An EMU900 commuter set at Qidu Station.](/images/tra/rolling-stock/emu900-1600.webp "An EMU900 commuter EMU at Qidu Station. — Takeshi Aida from Hong Kong, Hong Kong · CC BY-SA 2.0")
 
 The same guide shows four-car examples for the EMU400, EMU500, EMU600 and EMU700 commuter families, an eight-car EMU800 formation, a ten-car EMU900 formation and a 12-car 3000-type formation.[^tra-vehicle-guide] Its formation diagrams are useful for vehicle and accessibility context, but their presence is not a dated statement that every named family remained in passenger service on the page's access date.[^tra-vehicle-guide]
 

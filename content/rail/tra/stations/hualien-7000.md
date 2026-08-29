@@ -3,7 +3,11 @@ title: "Hualien — Taiwan Railways"
 summary: "Hualien (花蓮), TDX station 7000, in 花蓮縣; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 38
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/hualien
+  alt: Hualien Station's east entrance.
+  caption: Hualien Station, east entrance.
 facts:
   - label: "Station ID"
     value: "7000"

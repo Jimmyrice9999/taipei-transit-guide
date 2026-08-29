@@ -1,7 +1,7 @@
 ---
 title: "Luzhou District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Luzhou District Office (蘆洲區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Luzhou District Office (蘆洲區公所) in NewTaipei, with the office's own route list and schedules."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Luzhou District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: luzhou-office-buses
+    title: "Luzhou District Office — New Bus routes page"
+    titleOriginal: "新北市新巴士-新北市蘆洲區公所"
+    publisher: "Luzhou District Office, New Taipei City Government (新北市蘆洲區公所)"
+    url: https://www.luzhou.ntpc.gov.tw/home.jsp?id=0d3d21434cf9c0b1
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Names four current routes with weekday-only operating rules stated directly on the page: F312 水湳線, F319 長永線 and F320 民蘆線 run Monday-Friday only, suspended on public holidays, New Year's Day, Lunar New Year, election days and typhoon closures; F317 醫療線 runs three outbound departures Monday-Friday at 08:00, 10:00 and 13:00. No operator or fare stated. A linked route handbook PDF was checked but its text extracted only as garbled scanned-image content, with no operator name recoverable."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -73,8 +82,10 @@ The snapshot associates this record with 4 route records; the rows are shown bel
 - F319 [^tdx-bus-operator-pull]
 - F320 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Luzhou District Office's own site names four current routes with operating rules stated directly on the page[^luzhou-office-buses]. F312 水湳線, F319 長永線 and F320 民蘆線 run Monday to Friday only, with the page stating suspension on public holidays, New Year's Day, Lunar New Year, election days and typhoon closures[^luzhou-office-buses]. F317 醫療線 runs three outbound departures on weekdays, at 08:00, 10:00 and 13:00[^luzhou-office-buses]. No operator or fare is named for any route; a linked handbook PDF was checked but its extracted text was garbled scanned-image content with no operator name recoverable[^luzhou-office-buses].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the four routes; fleet, depot and contract fields remain TBC.

@@ -1,7 +1,7 @@
 ---
 title: "Tucheng District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Tucheng District Office (土城區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Tucheng District Office (土城區公所) in NewTaipei — the office's own site documents its free routes converting to paid city bus service in 2020, unlike most other New Taipei district offices."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Tucheng District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: tucheng-office-conversion
+    title: "Tucheng District Office — Nantianmu holiday bus conversion notice"
+    titleOriginal: "假日往南天母公車"
+    publisher: "Tucheng District Office, New Taipei City Government (新北市土城區公所)"
+    url: https://www.tucheng.ntpc.gov.tw/home.jsp?id=18002f51f0be4ec9
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "States that former free holiday shuttle routes F601-F607 converted to paid regular New Taipei city bus routes effective 1 January 2020, with route paths and stops unchanged: 既有路線及站牌位置均不變，僅路線名稱變更. Gives the conversion table F601→570, F602→571, F603→572, F605→573, F606→574, F607→575, a NT$1,280 monthly pass and a senior discount card, but no single-trip fare figure or operator name."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -70,8 +79,10 @@ The snapshot associates this record with no route records, so there is no genera
 
 No route record in the committed TDX route pull currently references this operator record [^tdx-bus-operator-pull].
 
+## Why the route count is zero: a 2020 conversion, and no surviving free network found
+
+Unlike most other New Taipei district offices researched for this record, Tucheng does not appear to still run a free district-administered shuttle network. The district office's own site states that its former free holiday routes to the Nantianmu (南天母) recreation area, F601 through F607, converted to paid regular city bus routes effective 1 January 2020, with the physical routes and stops kept unchanged and only the route names/numbers changed: "既有路線及站牌位置均不變，僅路線名稱變更"[^tucheng-office-conversion]. The published conversion table is F601→570, F602→571, F603→572, F605→573, F606→574 and F607→575[^tucheng-office-conversion]. The same page names a NT$1,280 monthly pass and a senior discount card but gives no single-trip fare figure and no operator name[^tucheng-office-conversion]. A search for other Tucheng free-bus route codes (such as F640 or F650) found nothing on the district office's own site.
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Which operator now runs routes 570-575 remains TBC pending a primary source.

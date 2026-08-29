@@ -1,7 +1,11 @@
 ---
 title: Imported diesel bus and coach chassis
 summary: Six imported brands — Hino, Isuzu, Mercedes-Benz, Volvo, Scania, MAN — supply the chassis for Taiwan's highway coaches and part of its city-bus fleet, bodied by domestic coachbuilders. Only one of the six has a confirmed public government type-approval trail.
-updated: 2026-08-28
+updated: 2026-08-29
+hero:
+  image: bus/models/volvo-b8r
+  alt: A Volvo B8R coach, fleet number KKB-2179, operated by Dàyou Bus (大有巴士) on a chartered route.
+  caption: A Volvo B8R operated by Dàyou Bus — a different operator from the Kuo-Kuang client-list conflict this page records, confirming the model in Taiwan service.
 facts:
   - label: Hino Taiwan distributor
     value: 和泰汽車 (Hotai Motor), since 1952

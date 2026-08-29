@@ -1,7 +1,7 @@
 ---
 title: "Zhonghe District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Zhonghe District Office (中和區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Zhonghe District Office (中和區公所) in NewTaipei, with the office's own route list; an operator name circulating on an uncited wiki page could not be confirmed."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Zhonghe District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: zhonghe-office-buses
+    title: "Zhonghe District Office — New Bus and public-bike page"
+    titleOriginal: "新巴士及微笑單車-新北市中和區公所"
+    publisher: "Zhonghe District Office, New Taipei City Government (新北市中和區公所)"
+    url: https://www.zhonghe.ntpc.gov.tw/home.jsp?id=2d948011cfea5c5b
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Names three current routes — F512 (自強國中-捷運景安站), F512副 (烘爐地-橫路里-光復國小) and F513 (秀山-灰磘) — with no operator or fare stated. New Taipei's own ebus.gov.taipei page for F512 (routeid=0454051210) was checked directly and shows only the district office's own phone number under 'operator service phone', not a distinct operator field."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -72,8 +81,12 @@ The snapshot associates this record with 3 route records; the rows are shown bel
 - F512Sub / F512副 [^tdx-bus-operator-pull]
 - F513 [^tdx-bus-operator-pull]
 
+## The office's own route list, and an unconfirmed operator claim
+
+Zhonghe District Office's own site names three current routes — F512, its F512副 branch, and F513 — with no operator or fare stated on the page[^zhonghe-office-buses]. New Taipei's own ebus.gov.taipei record for F512 was fetched directly and also carries no distinct operator field, only the district office's own phone number repeated under "operator service phone"[^zhonghe-office-buses].
+
+A zh.wikiversity page on F512 states the route is operated by Xinxin Bus (欣欣客運), but that page cites no source of its own for the claim, so it is not published here as an established fact — a tender award notice or a route-licence record from the Directorate General of Highways would be needed to confirm it.
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed from a primary source for any of the three routes; fleet, depot and contract fields remain TBC.

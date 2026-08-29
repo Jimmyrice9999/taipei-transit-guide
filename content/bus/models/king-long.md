@@ -1,7 +1,11 @@
 ---
 title: King Long
 summary: King Long year-group and route-class records from Dàyou Bus’s official fleet page.
-updated: 2026-08-23
+updated: 2026-08-29
+hero:
+  image: bus/models/king-long
+  alt: A King Long KL6120U1 bus operated by CTbus (中台灣客運) on Taichung city route 151 — a different operator from the Dàyou/CitiAir fleet this page documents, shown here to illustrate the manufacturer and model.
+  caption: A King Long KL6120U1, operated by CTbus (中台灣客運) in Taichung — not the Dàyou/CitiAir fleet this page's facts describe, which no Commons photograph confirmed as of this research pass.
 facts:
   - label: Manufacturer name published
     value: King Long

@@ -1,7 +1,7 @@
 ---
 title: "Xinzhuang District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Xinzhuang District Office (新莊區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Xinzhuang District Office (新莊區公所) in NewTaipei, with the office's own free-shuttle route list and holiday-service note."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Xinzhuang District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: xinzhuang-office-buses
+    title: "Xinzhuang District Office — free shuttle bus (New Bus) page"
+    titleOriginal: "新莊區公所-免費接駁專車（新巴士）"
+    publisher: "Xinzhuang District Office, New Taipei City Government (新北市新莊區公所)"
+    url: https://www.xinzhuang.ntpc.gov.tw/home.jsp?id=e837ee31c63180d3
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Confirms F201, F202, F205, F206 and F207 as the office's current free shuttle routes and states a holiday-service split: F201 and F202 run reduced Lunar New Year/national-holiday service, while F205, F206 and F207 do not run at all on those days."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -74,8 +83,10 @@ The snapshot associates this record with 5 route records; the rows are shown bel
 - F206 [^tdx-bus-operator-pull]
 - F207 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Xinzhuang District Office's own free-shuttle page confirms F201 (福營新莊線), F202 (中港頭前線), F205 and F206 (both serving Chang Gung Memorial Hospital, Linkou) and F207 (to Linkou Chang Gung Memorial Hospital) as its current free routes, and states that F201 and F202 run a reduced Lunar New Year/national-holiday timetable while F205, F206 and F207 do not run at all on those days[^xinzhuang-office-buses]: "F201、F202春節時間及國定假日依假日班次行駛；F205、F206、F207春節時間及國定假日停駛"[^xinzhuang-office-buses]. New Taipei's own transit-info platform (eBus) carries a record for F201 but leaves its fare field blank and gives an "operator service phone" that is identical to the district office's own number, so it does not independently name a contracted operator[^tdx-bus-operator-pull].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. A contractor name circulating in secondary material could not be confirmed against any primary page fetched for this record and is not published here; fleet, depot and contract fields remain TBC.

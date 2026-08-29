@@ -1,7 +1,7 @@
 ---
 title: "Shenkeng District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Shenkeng District Office (深坑區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Shenkeng District Office (深坑區公所) in NewTaipei, with the office's own published schedules for its three routes."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Shenkeng District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: shenkeng-office-buses
+    title: "Shenkeng District Office — New Bus routes page"
+    titleOriginal: "深坑區公所-新巴士"
+    publisher: "Shenkeng District Office, New Taipei City Government (新北市深坑區公所)"
+    url: https://www.shenkeng.ntpc.gov.tw/home.jsp?id=554fc298d2f50600
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Publishes on-page schedules for three routes: F711 土庫尖線 (District Office public market to Shenkeng Elementary, five daily departures, with a note that a Yunxiang community leg was added on a trial basis from November 2014), F712 大崙尾線 (two departures) and F713 大坑線 (five departures, not running on holidays or during typhoons)."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -72,8 +81,10 @@ The snapshot associates this record with 3 route records; the rows are shown bel
 - F712 [^tdx-bus-operator-pull]
 - F713 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Shenkeng District Office's own site names three current routes with running schedules published directly on the page[^shenkeng-office-buses]. F711 土庫尖線 runs between the district's public market and Shenkeng Elementary School with five daily departures (07:00, 08:00, 10:00, 12:40, 17:20), and the page notes a Yunxiang community leg was added on a trial basis starting November 2014 ("自103年11月起，試營運新增雲鄉社區路線")[^shenkeng-office-buses]. F712 大崙尾線 runs two departures (07:50, 15:00), and F713 大坑線 runs five departures (07:00, 10:00, 12:40, 16:05, 17:20) but does not operate on public holidays or typhoon days ("例假日、颱風天不行駛")[^shenkeng-office-buses]. No operator or fare is stated for any of the three[^shenkeng-office-buses].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the three routes; fleet, depot and contract fields remain TBC.

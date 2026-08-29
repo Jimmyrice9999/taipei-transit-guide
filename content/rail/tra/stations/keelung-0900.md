@@ -3,7 +3,11 @@ title: "Keelung — Taiwan Railways"
 summary: "Keelung (基隆), TDX station 0900, in 基隆市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 1
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/keelung
+  alt: An elevated view of Keelung Station's south entrance from a footbridge, taxis and a crosswalk below.
+  caption: Keelung Station, south entrance.
 facts:
   - label: "Station ID"
     value: "0900"

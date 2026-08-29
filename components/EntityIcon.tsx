@@ -8,7 +8,7 @@
  * The mark never carries the fact by itself. It has a text label and every
  * rendered page remains fully intelligible with colour and SVG disabled.
  */
-export type EntityIconKind = 'operator' | 'depot' | 'fleet' | 'ticket' | 'ferry' | 'bike'
+export type EntityIconKind = 'operator' | 'depot' | 'fleet' | 'ticket' | 'ferry' | 'bike' | 'region'
 
 const LABEL: Record<EntityIconKind, string> = {
   operator: 'Transit operator',
@@ -17,6 +17,7 @@ const LABEL: Record<EntityIconKind, string> = {
   ticket: 'Ticketing and fares',
   ferry: 'Ferry service',
   bike: 'Bike-share service',
+  region: 'Geographic region',
 }
 
 /** The page types that have a stable subject vocabulary and icon. */
@@ -96,6 +97,13 @@ export default function EntityIcon({
           <circle cx="8" cy="23" r="4.5" />
           <circle cx="24" cy="23" r="4.5" />
           <path d="M8 23 13 12h5l6 11M13 12l-3-3M15 23h-7M18 12l3-3h3M16 12l-3 11" />
+        </>
+      )}
+
+      {kind === 'region' && (
+        <>
+          <path d="M16 4C10.5 4 6 8.4 6 13.7 6 21.5 16 29 16 29s10-7.5 10-15.3C26 8.4 21.5 4 16 4Z" />
+          <circle cx="16" cy="13.5" r="4" />
         </>
       )}
     </svg>

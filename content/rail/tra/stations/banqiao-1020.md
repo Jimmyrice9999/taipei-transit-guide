@@ -3,7 +3,11 @@ title: "Banqiao — Taiwan Railways"
 summary: "Banqiao (板橋), TDX station 1020, in 新北市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 14
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/banqiao
+  alt: The north entrance 1A door of Banqiao Station's building, in bright sunlight.
+  caption: Banqiao Station, entrance 1A.
 facts:
   - label: "Station ID"
     value: "1020"

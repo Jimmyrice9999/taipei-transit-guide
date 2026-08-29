@@ -3,7 +3,11 @@ title: THSR rolling stock
 summary: 34 700T trainsets built by three Japanese manufacturers with a fourth handling only the electrical system — a distinction the common shorthand collapses — plus a 12-set N700ST order now arriving, a seating-capacity conflict, and the 2010 derailment that a magnetic brake pad may have stopped from going further.
 order: 1
 operator: THSR
-updated: 2026-08-28
+updated: 2026-08-29
+hero:
+  image: thsr/rolling-stock/700t
+  alt: A THSR 700T trainset at Platform 1, THSR Taoyuan Station.
+  caption: A 700T trainset at THSR Taoyuan Station.
 facts:
   - label: Current fleet
     value: 34 trainsets (700T)

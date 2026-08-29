@@ -1,7 +1,7 @@
 ---
 title: "Sanchong District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Sanchong District Office (三重區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Sanchong District Office (三重區公所) in NewTaipei, with the office's own current route list and a leads-only note on how they are run."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Sanchong District Office"
@@ -38,6 +38,33 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: sanchong-office-buses
+    title: "Sanchong District Office — free bus routes page"
+    titleOriginal: "三重區公所-免費巴士"
+    publisher: "Sanchong District Office, New Taipei City Government (新北市三重區公所)"
+    url: https://www.sanchong.ntpc.gov.tw/home.jsp?id=9fc8d54f24b47dc5
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Names three current district free routes (二重線, 永福線, 龍濱線); the index page itself carries no operator or contractor detail for any of them."
+  - id: ntpc-district-bus-structure
+    title: "New Taipei City Government — New Bus (新巴士) programme page"
+    titleOriginal: "新北市政府-新巴士"
+    publisher: "New Taipei City Government (新北市政府)"
+    url: https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "States that New Bus routes are managed separately by each township/city district office (分由各鄉鎮市公所管理), corroborating from the government side that district offices, not the city Traffic Bureau, administer these routes."
+  - id: ptt-sanchong-routes
+    title: "PTT BusTimes board post on Sanchong district routes"
+    titleOriginal: "PTT BusTimes 板 — 三重區免費巴士整理"
+    publisher: "PTT Bulletin Board System (批踢踢實業坊)"
+    url: https://www.ptt.cc/bbs/BusTimes/
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Enthusiast lead, not corroborated against a primary: states F301/F302/F303 are self-operated by the district office (公所自營) and names a fourth route, F304 水岸線, as outsourced from 18 March 2026. A named contractor for F304 appeared in the post but could not be corroborated against any primary procurement or district-office record, so it is not published here."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -73,8 +100,14 @@ The snapshot associates this record with 4 route records; the rows are shown bel
 - F303 [^tdx-bus-operator-pull]
 - F304 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Sanchong District Office's own website names three current free routes under its 免費巴士 page: 二重線 (Erchong Line), 永福線 (Yongfu Line) and 龍濱線 (Longbin Line)[^sanchong-office-buses]. The office's page gives no operator or contractor for any of them[^sanchong-office-buses].
+
+A PTT enthusiast post gives fuller operational detail, and is published here as a lead rather than a confirmed fact: it states the three routes above are self-operated by the district office (公所自營, i.e. run with the office's own arrangement rather than contracted out), and names a fourth, newer route, F304 水岸線, launched 18 March 2026 and outsourced (委外營運)[^ptt-sanchong-routes]. A contractor name for F304 appeared in that post but a search of Taiwan's government procurement records for this district office turned up no corroborating tender record, so no contractor is published here for it[^ptt-sanchong-routes].
+
+New Taipei's own city government page corroborates the general pattern at the administrative level rather than for Sanchong specifically: district-scale routes are "分由各鄉鎮市公所管理" (managed separately by each township/city district office), with the city Traffic Bureau doing only dynamic system-wide management[^ntpc-district-bus-structure].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. A fourth route's contractor, and any fleet, depot or contract-value figures for the three self-operated routes, remain TBC pending a primary source.

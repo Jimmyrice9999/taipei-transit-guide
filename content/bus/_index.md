@@ -2,6 +2,10 @@
 title: Bus
 description: City and regional bus networks across Taiwan — Taipei's joint-operation system, and the operators, vehicles and fares of Taichung, Kaohsiung, Tainan, Hsinchu and intercity coaches.
 order: 2
+hero:
+  image: bus/hero
+  alt: The front of an orange and white Capital Bus vehicle working route 2, its destination display reading NTU Hospital to TUMT in Chinese and English.
+  caption: A Capital Bus vehicle on joint-operation route 2, Taipei.
 sources:
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull

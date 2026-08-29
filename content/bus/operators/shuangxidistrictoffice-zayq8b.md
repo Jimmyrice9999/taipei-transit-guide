@@ -1,7 +1,7 @@
 ---
 title: "Shuangxi District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Shuangxi District Office (雙溪區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Shuangxi District Office (雙溪區公所) in NewTaipei — the office's own New Bus route list, plus a second, separate reservation-based Happy Bus programme run with the national highway authority."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Shuangxi District Office"
@@ -38,6 +38,33 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: shuangxi-office-buses
+    title: "Shuangxi District Office — New Bus routes page"
+    titleOriginal: "雙溪區公所-新巴士"
+    publisher: "Shuangxi District Office, New Taipei City Government (新北市雙溪區公所)"
+    url: https://www.shuangxi.ntpc.gov.tw/home.jsp?id=6002ee7aa741d9a3
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Lists the district's current New Bus routes: F811 澳底-八股線, F812 牡丹-柑腳線 (effective 1 January 2026), F813 雙瑞線, F815 雙溪-灣潭線 (with weekday and holiday schedules), F816 貢寮-雙溪-基隆線, and F823 平溪、雙溪、福隆線 (deferring to Pingxi District Office's own announcement for that shared route)."
+  - id: pingxi-office-buses
+    title: "Pingxi District Office — New Bus routes page"
+    titleOriginal: "平溪區公所-新北市新巴士"
+    publisher: "Pingxi District Office, New Taipei City Government (新北市平溪區公所)"
+    url: https://www.pingxi.ntpc.gov.tw/home.jsp?id=0c69de209c17e5c4
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Names F823 平溪雙溪福隆線 as one of Pingxi's own routes, corroborating that F823 is shared between Pingxi and Shuangxi districts."
+  - id: epoch-times-shuangxi-happy-bus
+    title: "Report on Shuangxi's Happy Bus / Happy Taxi 2.0 launch"
+    titleOriginal: "雙溪幸福巴士、幸福小黃2.0上路"
+    publisher: "The Epoch Times (大紀元)"
+    url: https://www.epochtimes.com/b5/21/9/15/n13236015.htm
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Reports that the Directorate General of Highways (交通部公路總局) guided the district office to launch a reservation-based flexible-route scheme, Happy Bus/Happy Taxi, on 15 September 2021, distinct from the F-series New Bus routes; gives fares of NT$15 for the first 5 km plus NT$5 per 500 m for Happy Taxi, and a flat NT$15 zone fare for Happy Bus. Not independently fetched from the Directorate General of Highways or the district office directly."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -75,8 +102,12 @@ The snapshot associates this record with 6 route records; the rows are shown bel
 - F815 [^tdx-bus-operator-pull]
 - F816 [^tdx-bus-operator-pull]
 
+## The office's own route list, and a second, separate programme
+
+Shuangxi District Office's own site names six current New Bus routes: F811 澳底-八股線, F812 牡丹-柑腳線 (effective 1 January 2026), F813 雙瑞線, F815 雙溪-灣潭線 (with separate weekday and holiday schedules), F816 貢寮-雙溪-基隆線, and F823 平溪、雙溪、福隆線, for which the page defers to Pingxi District Office's own announcement since that route is shared between the two districts[^shuangxi-office-buses][^pingxi-office-buses]. No operator or fare is stated for any of the six[^shuangxi-office-buses].
+
+Separately from the F-series New Bus programme, a news report describes a second, reservation-based scheme launched 15 September 2021: "交通部公路總局輔導雙溪區公所規劃以幸福巴士/幸福小黃提供預約制全區彈性路線" — the Directorate General of Highways guided the district office to set up a flexible, reservation-based Happy Bus/Happy Taxi service covering the whole district[^epoch-times-shuangxi-happy-bus]. The same report gives fares of NT$15 for the first 5 km plus NT$5 per additional 500 m for Happy Taxi, and a flat NT$15 zone fare for Happy Bus ("里程計費，5公里以下15元，超過5公里每500公尺5元"; "採段次計費，一段票15元")[^epoch-times-shuangxi-happy-bus]. This is a secondary source, not independently re-fetched from the Directorate General of Highways or the district office directly, and no operating contractor is named in it[^epoch-times-shuangxi-happy-bus].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the six New Bus routes or for the Happy Bus/Happy Taxi scheme; fleet, depot and contract fields remain TBC.

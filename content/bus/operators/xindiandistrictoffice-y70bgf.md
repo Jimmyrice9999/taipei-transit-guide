@@ -1,7 +1,7 @@
 ---
 title: "Xindian District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Xindian District Office (新店區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Xindian District Office (新店區公所) in NewTaipei, with the named contractor and schedule the office's own site publishes for one of its five routes."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Xindian District Office"
@@ -38,6 +38,33 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: xindian-office-buses
+    title: "Xindian District Office — New Bus / Happy Bus routes page"
+    titleOriginal: "新店區公所-新巴士/幸福巴士"
+    publisher: "Xindian District Office, New Taipei City Government (新北市新店區公所)"
+    url: https://www.xindian.ntpc.gov.tw/home.jsp?id=f5283933ad7f4729
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Lists nine named district routes, including 直潭線, F703安康山區線, 塗潭平日/假日線, 龜山線, 廣興線 (平日/假日), 屈尺里線 and 華城線 — a fuller route set than the four/five TDX records this page otherwise carries."
+  - id: xindian-zhitan-route
+    title: "Xindian District Office — Zhitan Village Line detail page"
+    titleOriginal: "新店區公所-直潭里線"
+    publisher: "Xindian District Office, New Taipei City Government (新北市新店區公所)"
+    url: https://www.xindian.ntpc.gov.tw/home.jsp?id=97e0fd65d395d7af
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Names the operating contractor directly (營運單位：京華通運有限公司), states the route is free (收費方式：免費), and gives first/last departure times (頭班06:20發車，末班19:05發車)."
+  - id: ntpc-district-bus-structure
+    title: "New Taipei City Government — New Bus (新巴士) programme page"
+    titleOriginal: "新北市政府-新巴士"
+    publisher: "New Taipei City Government (新北市政府)"
+    url: https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "States that New Bus routes are managed separately by each township/city district office (分由各鄉鎮市公所管理), corroborating from the government side that district offices, not the city Traffic Bureau, administer these routes."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -74,8 +101,14 @@ The snapshot associates this record with 5 route records; the rows are shown bel
 - Tutan Holidays / 塗潭假日線 [^tdx-bus-operator-pull]
 - Tutan Weekdays / 塗潭平日線 [^tdx-bus-operator-pull]
 
+## The office's own route list, and a named contractor
+
+Xindian District Office's own site lists nine named routes under its 新巴士/幸福巴士 programme — more than the four or five carried in the committed TDX pull above: 直潭線, F703安康山區線, 塗潭平日線, 塗潭假日線, 龜山線, 廣興線 (平日and假日 variants), 屈尺里線 and 華城線[^xindian-office-buses]. This is a district-run programme distinct from, and broader than, what TDX's operator-record pull currently reflects.
+
+The office's own detail page for the Zhitan Village line (直潭里線) names its operating contractor directly: "營運單位：京華通運有限公司" (operating unit: Jinghua Tongyun Co., Ltd.), states the route is free ("收費方式：免費"), and gives its first and last departures as 06:20 and 19:05[^xindian-zhitan-route]. This is the office naming its own contractor on its own site, not a secondary characterisation of one.
+
+New Taipei's own city government page corroborates the general administrative pattern: district-scale routes are "分由各鄉鎮市公所管理" (managed separately by each township/city district office)[^ntpc-district-bus-structure].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+Only the Zhitan Village line's contractor, fare and schedule have been confirmed from a primary source; the other eight routes named on the office's own index page have not each been checked for their own operator, fare and schedule[^xindian-office-buses]. The TDX pull carries no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location or contract value for any route[^tdx-bus-operator-pull]. The New Taipei Traffic Bureau's own domain (traffic.ntpc.gov.tw) failed to resolve on two fetch attempts during this research pass and was not used as a source.

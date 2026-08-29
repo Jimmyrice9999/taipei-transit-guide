@@ -5,7 +5,16 @@ import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
-import { getImage, src as imageSrc } from '@/lib/images'
+import { getImage, src as imageSrc, srcCapped, srcsetCapped } from '@/lib/images'
+
+/**
+ * Section-card thumbnail cap.
+ *
+ * Five section cards render on one page, so each references the dedicated
+ * 240w "card" tier (scripts/make-card-thumbs.mjs) rather than a hero-sized
+ * tier — the same reasoning PhotoCard uses for a photographed index grid.
+ */
+const SECTION_IMAGE_MAX_WIDTH = 240
 
 // Stated rather than inherited, so the home page's canonical is deliberate and
 // so the test that every page declares one has something to find here too.
@@ -82,15 +91,51 @@ export default function HomePage() {
 
       {sections.map((section) => {
         const types = getTypes(section.slug)
+        const sectionImage = section.hero?.image ? getImage(section.hero.image) : null
         return (
-          <section key={section.slug}>
-            <h2 className="section-heading">
-              {section.title}
-              <Link className="all-link" href={section.href}>
-                All {section.title.toLowerCase()} pages →
-              </Link>
-            </h2>
-            {section.description && <p className="section-desc">{section.description}</p>}
+          <section key={section.slug} className="home-section">
+            <div className="home-section-lead">
+              {sectionImage && (
+                <span className="home-section-photo">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={srcCapped(sectionImage, SECTION_IMAGE_MAX_WIDTH)}
+                    srcSet={srcsetCapped(sectionImage, SECTION_IMAGE_MAX_WIDTH)}
+                    sizes={`${SECTION_IMAGE_MAX_WIDTH}px`}
+                    alt=""
+                    width={sectionImage.width}
+                    height={sectionImage.height}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </span>
+              )}
+              <div className="home-section-body">
+                <h2 className="section-heading">
+                  {section.title}
+                  <Link className="all-link" href={section.href}>
+                    All {section.title.toLowerCase()} pages →
+                  </Link>
+                </h2>
+                {section.description && <p className="section-desc">{section.description}</p>}
+                {sectionImage && (
+                  <span className="figure-credit home-section-credit">
+                    <a href={sectionImage.source} rel="nofollow noopener">
+                      <RichText>{sectionImage.artist}</RichText>
+                    </a>
+                    {' · '}
+                    {sectionImage.licenseUrl ? (
+                      <a href={sectionImage.licenseUrl} rel="nofollow noopener license">
+                        {sectionImage.license}
+                      </a>
+                    ) : (
+                      sectionImage.license
+                    )}
+                    {' · Wikimedia Commons'}
+                  </span>
+                )}
+              </div>
+            </div>
             <ul className="card-list">
               {/*
                 A section's systems come before its types, and are the branch a

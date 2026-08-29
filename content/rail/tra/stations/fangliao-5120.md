@@ -3,7 +3,11 @@ title: "Fangliao — Taiwan Railways"
 summary: "Fangliao (枋寮), TDX station 5120, in 屏東縣; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 13
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/fangliao
+  alt: The front of Fangliao Station's building.
+  caption: Fangliao Station.
 facts:
   - label: "Station ID"
     value: "5120"

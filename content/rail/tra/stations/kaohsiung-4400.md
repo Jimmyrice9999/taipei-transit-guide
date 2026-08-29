@@ -3,7 +3,11 @@ title: "Kaohsiung — Taiwan Railways"
 summary: "Kaohsiung (高雄), TDX station 4400, in 高雄市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 104
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/kaohsiung
+  alt: The exterior of the current Kaohsiung Station building.
+  caption: Kaohsiung Station.
 facts:
   - label: "Station ID"
     value: "4400"

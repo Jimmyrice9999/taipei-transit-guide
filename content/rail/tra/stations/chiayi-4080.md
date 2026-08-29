@@ -3,7 +3,11 @@ title: "Chiayi — Taiwan Railways"
 summary: "Chiayi (嘉義), TDX station 4080, in 嘉義市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 75
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/chiayi
+  alt: The exterior of Chiayi Station.
+  caption: Chiayi Station.
 facts:
   - label: "Station ID"
     value: "4080"

@@ -2523,6 +2523,60 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Already recorded in this project's existing airport-mrt line research (claim 18/15) as the source for the January 2025 single-ticket discount cancellation, dated 22 December 2024, predating year-end by nine days; not independently re-fetched this session."
+  - id: "rail-tymc-stations-g18-g18-dorts-green"
+    title: "Taoyuan Metro Green Line project page"
+    titleOriginal: "桃園市政府捷運工程局-捷運綠線"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: "rail-tymc-stations-g18-g18-dorts-groundbreaking"
+    title: "Groundbreaking news release for the G18-G19 elevated section"
+    titleOriginal: "桃園捷運綠線GC04B標(G18、G19)土建統包工程動工"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581665"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "DORTS's own release on the same GC04B contract's 14 November 2024 groundbreaking names the covered stations as G18 and G19, not G17-G18 as the project table's own contract label reads — a disagreement between two DORTS pages about the same contract, published as a conflict rather than resolved. Gives budget NT$5.83 billion, elevated section length approximately 1.3 km, and a crossing of National Highway 2."
+  - id: "rail-tymc-stations-g18-g18-raito-gc04b"
+    title: "GC04B contract case page"
+    titleOriginal: "利德工程股份有限公司-桃園捷運綠線GC04B標統包工程"
+    publisher: "Raito Engineering Co., Ltd. (利德工程股份有限公司), the contractor"
+    url: "https://www.raito.com.tw/case_detail46_1.htm"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The contractor's own case page for this award names the contract scope as G17-G18 in its title but describes it as covering 'G17 and G18' in body text, agreeing with the DORTS project table's station-pair label rather than the DORTS news release's G18-G19; also names supervision consultant 中興工程顧問 and design consultant 林同棪工程顧問 (T.Y. Lin International), with a 2024-2030 timeline."
+  - id: "rail-tymc-stations-g19-g19-dorts-green"
+    title: "Taoyuan Metro Green Line project page"
+    titleOriginal: "桃園市政府捷運工程局-捷運綠線"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132"
+    accessed: "2026-08-24"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: "rail-tymc-stations-g19-g19-dorts-groundbreaking"
+    title: "Groundbreaking news release for the G18-G19 elevated section"
+    titleOriginal: "桃園捷運綠線GC04B標(G18、G19)土建統包工程動工"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581665"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "DORTS's own release on the same GC04B contract's 14 November 2024 groundbreaking names the covered stations as G18 and G19, agreeing with this station's own presence in the contract even though the project table's own contract label reads G17-G18 — a disagreement between two DORTS pages about the same contract, published as a conflict rather than resolved. Gives budget NT$5.83 billion, elevated section length approximately 1.3 km, and a crossing of National Highway 2."
+  - id: "rail-tymc-stations-g19-g19-raito-gc04b"
+    title: "GC04B contract case page"
+    titleOriginal: "利德工程股份有限公司-桃園捷運綠線GC04B標統包工程"
+    publisher: "Raito Engineering Co., Ltd. (利德工程股份有限公司), the contractor"
+    url: "https://www.raito.com.tw/case_detail46_1.htm"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The contractor's own case page for this award names the contract scope as G17-G18 in its title but describes it as covering 'G17 and G18' in body text, agreeing with the DORTS project table's station-pair label rather than the DORTS news release's G18-G19; also names supervision consultant 中興工程顧問 and design consultant 林同棪工程顧問 (T.Y. Lin International), with a 2024-2030 timeline."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -4995,6 +5049,38 @@ established by any source read and is not assumed either way.
 #### Sources for this entry
 
 - [Taoyuan Airport MRT's 2024 surplus hit a record NT$500 million — why cancel the system-wide NT$10 ticket discount?](https://city.gvm.com.tw/article/117975) — secondary; 城市學 (GVM/Global Views Monthly); accessed 2026-08-12.[^rail-tymc-operations-fares-gvm-tymc-discount-cancelled]
+
+## G18 — Taoyuan Green Line — Construction contract GC04B, and a conflict between two DORTS pages
+
+Discussed on [G18 — Taoyuan Green Line](/rail/tymc/stations/g18-g18/) in the source page's “Construction contract GC04B, and a conflict between two DORTS pages” section.[^rail-tymc-stations-g18-g18-dorts-green]
+
+### Construction contract GC04B, and a conflict between two DORTS pages
+
+Unlike G16 and G17, G18 sits on an awarded, groundbreaking construction contract. DORTS's own project table lists an elevated civil-works package awarded 26 July 2024, with cumulative progress of 6.12% as of June 2026.[^rail-tymc-stations-g18-g18-dorts-green] A separate DORTS news release on the same contract's 14 November 2024 groundbreaking gives it a budget of NT$5.83 billion, an elevated-section length of approximately 1.3 km, a crossing of National Highway 2 (國道2號), and connection toward Airport MRT A16 Hengshan station.[^rail-tymc-stations-g18-g18-dorts-groundbreaking] The contractor's own case page for the award, Raito Engineering (利德工程股份有限公司), names the project management/supervision consultant as 中興工程顧問 and the design consultant as 林同棪工程顧問 (T.Y. Lin International), with a 2024-2030 execution window.[^rail-tymc-stations-g18-g18-raito-gc04b]
+
+The three sources disagree on which two stations the contract covers. The DORTS project table's own contract label reads G17-G18; the contractor's own case page agrees with G17-G18 in its title but describes "G17 and G18" in body text; DORTS's own news release about the same contract's groundbreaking instead names the stations as G18 and G19.[^rail-tymc-stations-g18-g18-dorts-green][^rail-tymc-stations-g18-g18-raito-gc04b][^rail-tymc-stations-g18-g18-dorts-groundbreaking] This is the same publisher disagreeing with itself across two of its own pages, published here as a conflict rather than resolved by picking one. A possible explanation raised in general search results — that a mid-project station renumbering after G15a/G15b were inserted shifted every code after G15 up by one — was not verified against any full-fetched primary source and is not asserted here.
+
+#### Sources for this entry
+
+- [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-stations-g18-g18-dorts-green]
+- [Groundbreaking news release for the G18-G19 elevated section](https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581665) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-29.[^rail-tymc-stations-g18-g18-dorts-groundbreaking]
+- [GC04B contract case page](https://www.raito.com.tw/case_detail46_1.htm) — primary; Raito Engineering Co., Ltd. (利德工程股份有限公司), the contractor; accessed 2026-08-29.[^rail-tymc-stations-g18-g18-raito-gc04b]
+
+## G19 — Taoyuan Green Line — Construction contract GC04B, and a conflict between two DORTS pages
+
+Discussed on [G19 — Taoyuan Green Line](/rail/tymc/stations/g19-g19/) in the source page's “Construction contract GC04B, and a conflict between two DORTS pages” section.[^rail-tymc-stations-g19-g19-dorts-green]
+
+### Construction contract GC04B, and a conflict between two DORTS pages
+
+DORTS's own project table lists an elevated civil-works package (contract label G17-G18 on that page) awarded 26 July 2024, with cumulative progress of 6.12% as of June 2026.[^rail-tymc-stations-g19-g19-dorts-green] DORTS's own news release on the same contract's 14 November 2024 groundbreaking, however, names the covered stations as G18 and G19 — this station included — giving a budget of NT$5.83 billion, an elevated-section length of approximately 1.3 km, and a crossing of National Highway 2 (國道2號).[^rail-tymc-stations-g19-g19-dorts-groundbreaking] The contractor's own case page for the award, Raito Engineering (利德工程股份有限公司), agrees with the project table's G17-G18 label in its title while describing "G17 and G18" in body text, and names the supervision consultant as 中興工程顧問 and the design consultant as 林同棪工程顧問 (T.Y. Lin International), with a 2024-2030 execution window.[^rail-tymc-stations-g19-g19-raito-gc04b]
+
+Three sources disagree on which two stations this contract covers, and two of the three are DORTS's own pages. This is published as a conflict rather than resolved by picking one; a possible mid-project renumbering after G15a/G15b were inserted was raised in general search results but not verified against any full-fetched primary source and is not asserted here.
+
+#### Sources for this entry
+
+- [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-stations-g19-g19-dorts-green]
+- [Groundbreaking news release for the G18-G19 elevated section](https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581665) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-29.[^rail-tymc-stations-g19-g19-dorts-groundbreaking]
+- [GC04B contract case page](https://www.raito.com.tw/case_detail46_1.htm) — primary; Raito Engineering Co., Ltd. (利德工程股份有限公司), the contractor; accessed 2026-08-29.[^rail-tymc-stations-g19-g19-raito-gc04b]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 

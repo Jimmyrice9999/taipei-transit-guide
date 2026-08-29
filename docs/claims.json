@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27065,
-    "tbc": 4638,
+    "sourced": 27107,
+    "tbc": 4642,
     "asserted": 0,
-    "meta": 110
+    "meta": 112
   },
   "files": [
     {
@@ -490,9 +490,9 @@
     },
     {
       "file": "content/bus/operators/banqiaodistrictoffice-11jjtvo.md",
-      "sources": 2,
-      "sourced": 10,
-      "tbc": 3,
+      "sources": 3,
+      "sourced": 15,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
@@ -586,7 +586,7 @@
     },
     {
       "file": "content/bus/operators/linkoudistrictoffice-y7olk0.md",
-      "sources": 2,
+      "sources": 3,
       "sourced": 10,
       "tbc": 3,
       "asserted": 0,
@@ -594,8 +594,8 @@
     },
     {
       "file": "content/bus/operators/luzhoudistrictoffice-yrnsxy.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -634,7 +634,7 @@
     },
     {
       "file": "content/bus/operators/pinglindistrictoffice-yqziud.md",
-      "sources": 2,
+      "sources": 3,
       "sourced": 10,
       "tbc": 3,
       "asserted": 0,
@@ -642,8 +642,8 @@
     },
     {
       "file": "content/bus/operators/pingxidistrictoffice-yh32nd.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -666,8 +666,8 @@
     },
     {
       "file": "content/bus/operators/sanchongdistrictoffice-z1nemx.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -706,8 +706,8 @@
     },
     {
       "file": "content/bus/operators/shenkengdistrictoffice-ygzx5e.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -738,16 +738,16 @@
     },
     {
       "file": "content/bus/operators/shuangxidistrictoffice-zayq8b.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 5,
+      "sourced": 13,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/shulindistrictoffice-xd1idi.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -818,8 +818,8 @@
     },
     {
       "file": "content/bus/operators/tamsuidistrictoffice-105inwu.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -834,39 +834,39 @@
     },
     {
       "file": "content/bus/operators/tuchengdistrictoffice-x31woj.md",
-      "sources": 2,
-      "sourced": 10,
-      "tbc": 3,
+      "sources": 3,
+      "sourced": 13,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/wanlidistrictoffice-xx3v9f.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/wugudistrictoffice-yho78z.md",
-      "sources": 2,
-      "sourced": 10,
-      "tbc": 3,
+      "sources": 3,
+      "sourced": 12,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/xindiandistrictoffice-y70bgf.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/xinzhuangdistrictoffice-105ltet.md",
-      "sources": 2,
+      "sources": 3,
       "sourced": 10,
       "tbc": 3,
       "asserted": 0,
@@ -890,9 +890,9 @@
     },
     {
       "file": "content/bus/operators/yonghedistrictoffice-wt2azk.md",
-      "sources": 2,
-      "sourced": 10,
-      "tbc": 3,
+      "sources": 3,
+      "sourced": 11,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
@@ -914,8 +914,8 @@
     },
     {
       "file": "content/bus/operators/zhonghedistrictoffice-11tjfkn.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -14482,16 +14482,16 @@
     },
     {
       "file": "content/rail/tymc/stations/g18-g18.md",
-      "sources": 2,
-      "sourced": 7,
+      "sources": 5,
+      "sourced": 11,
       "tbc": 5,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/rail/tymc/stations/g19-g19.md",
-      "sources": 2,
-      "sourced": 8,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 4,
       "asserted": 0,
       "meta": 0
@@ -14810,11 +14810,11 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 284,
-      "sourced": 407,
+      "sources": 290,
+      "sourced": 413,
       "tbc": 9,
       "asserted": 0,
-      "meta": 6
+      "meta": 7
     },
     {
       "file": "content/ticketing/guides/fare-history.md",

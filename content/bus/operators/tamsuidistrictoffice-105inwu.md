@@ -1,7 +1,7 @@
 ---
 title: "Tamsui District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Tamsui District Office (淡水區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Tamsui District Office (淡水區公所) in NewTaipei, with the office's own current free-route list."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Tamsui District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: tamsui-office-buses
+    title: "Tamsui District Office — New Bus route page"
+    titleOriginal: "淡水區公所-新巴士"
+    publisher: "Tamsui District Office, New Taipei City Government (新北市淡水區公所)"
+    url: https://www.tamsui.ntpc.gov.tw/home.jsp?id=b9bc7443e132f143
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Lists the office's current free routes (F101 Pingding and Shuxing branches, F102, F103, F105 and its reverse working, F106, F109), mostly running between MRT Tamsui Station and outlying villages. No operator or fare stated on this page."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -77,8 +86,10 @@ The snapshot associates this record with 8 route records; the rows are shown bel
 - F106 [^tdx-bus-operator-pull]
 - F109 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Tamsui District Office's own site lists its current free routes as F101 (with separate Pingding 坪頂 and Shuxing 樹興 branches), F102, F103, F105 and a reverse F105反 working, F106 and F109, the majority running the "MRT Tamsui Station-華南銀行" pattern between the metro terminus and outlying villages[^tamsui-office-buses]. The page states no operator or fare for any route[^tamsui-office-buses]. A separate New Taipei eBus record for a differently-numbered route in the area (894) names an operator, 淡水客運 (Tamsui Bus Co.)[^tdx-bus-operator-pull]; because that route number does not appear in the district office's own F10x list, it is not published here as evidence for who runs the F-series shuttles.
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the seven F10x routes; fleet, depot and contract fields remain TBC.

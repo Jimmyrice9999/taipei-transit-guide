@@ -1,7 +1,7 @@
 ---
 title: "Wanli District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Wanli District Office (萬里區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Wanli District Office (萬里區公所) in NewTaipei, with the office's own published schedules for its three community routes."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Wanli District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: wanli-office-buses
+    title: "Wanli District Office — community bus routes page"
+    titleOriginal: "萬里區公所-社區巴士"
+    publisher: "Wanli District Office, New Taipei City Government (新北市萬里區公所)"
+    url: https://www.wanli.ntpc.gov.tw/home.jsp?id=c8529e1525d82126
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Lists three current routes with on-page schedules: F921 山海線 (District Office-Shuangxing-Jinshan Hospital, first run 06:40, last 17:05), F922 山線 (District Office-Ruiquan junction/Xidi) and F923 海線 (District Office-Yehliu-Jinshan Hospital, first run 06:20, last 17:25). No operator name or fare stated."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -76,8 +85,10 @@ The snapshot associates this record with 7 route records; the rows are shown bel
 - F923Holiday / F923假日 [^tdx-bus-operator-pull]
 - F923 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Wanli District Office's own site publishes three current community-bus routes with running schedules directly on the page[^wanli-office-buses]: F921 山海線, running the district office to Shuangxing and Jinshan Hospital, first departure 06:40 and last 17:05; F922 山線, to Ruiquan junction/Xidi; and F923 海線, to Yehliu and Jinshan Hospital, first departure 06:20 and last 17:25[^wanli-office-buses]. The page names no operating contractor and states no fare for any of the three[^wanli-office-buses].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the three routes; fleet, depot and contract fields remain TBC.

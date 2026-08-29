@@ -3,7 +3,11 @@ title: "Taichung — Taiwan Railways"
 summary: "Taichung (臺中), TDX station 3300, in 臺中市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 53
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/taichung
+  alt: The historic 1917 Taichung Station building, brick and stone with a central clock tower.
+  caption: The 1917 Taichung Station building, now preserved as a historic structure.
 facts:
   - label: "Station ID"
     value: "3300"

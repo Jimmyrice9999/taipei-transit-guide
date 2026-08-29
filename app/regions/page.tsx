@@ -8,12 +8,12 @@
  */
 
 import type { Metadata } from 'next'
-import Link from 'next/link'
 import PageShell from '@/components/PageShell'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
-import RichText from '@/components/RichText'
+import PhotoCard from '@/components/PhotoCard'
 import { NEUTRAL_LINE } from '@/lib/lines'
+import { getImage } from '@/lib/images'
 import { REGIONS } from '@/lib/regions'
 
 export const metadata: Metadata = {
@@ -38,24 +38,21 @@ export default function RegionsPage() {
       </p>
 
       <div className="page-body">
-        <ul className="card-list">
+        <ul className="photo-card-grid">
           {REGIONS.map((region) => (
-            <li key={region.slug}>
-              <Link href={`/regions/${region.slug}/`}>
-                <span className="card-body">
-                  <span className="card-title">{region.title}</span>
-                  <span className="card-desc">
-                    <RichText>{region.summary}</RichText>
-                  </span>
-                </span>
-                <span className="card-meta">
+            <PhotoCard
+              key={region.slug}
+              href={`/regions/${region.slug}/`}
+              image={region.hero ? getImage(region.hero) : null}
+              title={region.title}
+              summary={region.summary}
+              entityKind="region"
+              meta={
+                <span className="photo-card-subtitle">
                   {region.links.length} {region.links.length === 1 ? 'page' : 'pages'}
-                  <span className="card-arrow" aria-hidden="true">
-                    →
-                  </span>
                 </span>
-              </Link>
-            </li>
+              }
+            />
           ))}
         </ul>
       </div>

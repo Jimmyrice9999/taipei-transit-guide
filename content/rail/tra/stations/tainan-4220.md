@@ -3,7 +3,11 @@ title: "Tainan — Taiwan Railways"
 summary: "Tainan (臺南), TDX station 4220, in 臺南市; current line membership and coordinates from the 2026-08-24 snapshot."
 order: 89
 operator: TRA
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: tra/stations/tainan
+  alt: The exterior of Tainan Station.
+  caption: Tainan Station.
 facts:
   - label: "Station ID"
     value: "4220"

@@ -1,7 +1,7 @@
 ---
 title: "Wugu District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Wugu District Office (五股區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Wugu District Office (五股區公所) in NewTaipei — the office's own site records its free shuttles converting to paid city bus routes in 2020, which is why the current TDX pull shows zero routes."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Wugu District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: wugu-office-conversion
+    title: "Wugu District Office — New Bus conversion notice"
+    titleOriginal: "五股區公所-新巴士轉型市區公車公告"
+    publisher: "Wugu District Office, New Taipei City Government (新北市五股區公所)"
+    url: https://www.wugu.ntpc.gov.tw/home.jsp?id=274b37750a0ba621
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "States its New Bus shuttles converted to paid city bus routes from 1 July 2020 (109年7月1日): F221 to route 580, F222 to 581, F223 to 582, F225 to 583. This is the reason the committed TDX pull, taken at the operator level, currently shows zero routes for this record."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -70,8 +79,10 @@ The snapshot associates this record with no route records, so there is no genera
 
 No route record in the committed TDX route pull currently references this operator record [^tdx-bus-operator-pull].
 
+## Why the route count is zero: a 2020 conversion, not an absent service
+
+The district office's own site states that its New Bus free shuttles converted to paid city bus routes from 1 July 2020: "五股區新巴士於109年7月1日起轉型為市區付費公車"[^wugu-office-conversion]. Four named conversions are given: F221 (大窠橋-馬偕醫院) became route 580, F222 (五股站-御史路) became 581, F223 (立體停車場-台北車站) became 582, and F225 (五股站-榮總) became 583[^wugu-office-conversion]. This is the reason the committed TDX operator-level pull shows no routes for Wugu District Office today — the routes still run, but as paid city bus services no longer associated with the district-office operator record[^tdx-bus-operator-pull][^wugu-office-conversion]. The conversion notice names no operator or fare for the successor routes[^wugu-office-conversion].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Which operator now runs routes 580-583 remains TBC pending a primary source.

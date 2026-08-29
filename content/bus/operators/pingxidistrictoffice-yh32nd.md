@@ -1,7 +1,7 @@
 ---
 title: "Pingxi District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Pingxi District Office (平溪區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Pingxi District Office (平溪區公所) in NewTaipei, with the office's own route list — one route shared jointly with Shuangxi District."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "Pingxi District Office"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: pingxi-office-buses
+    title: "Pingxi District Office — New Bus routes page"
+    titleOriginal: "平溪區公所-新北市新巴士"
+    publisher: "Pingxi District Office, New Taipei City Government (新北市平溪區公所)"
+    url: https://www.pingxi.ntpc.gov.tw/home.jsp?id=0c69de209c17e5c4
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Lists the district's current 新北市新巴士 routes: F821 新寮線, F822 東勢線, F823 平溪雙溪福隆線 (with a further sectioned F823區) and F825 平溪雙溪基隆線. No fare or operator stated; timetables exist only as linked files not opened in this research pass."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -74,8 +83,10 @@ The snapshot associates this record with 5 route records; the rows are shown bel
 - F823 [^tdx-bus-operator-pull]
 - F825 [^tdx-bus-operator-pull]
 
+## The office's own route list
+
+Pingxi District Office's own site identifies its current routes collectively as "新北市新巴士": F821 新寮線, F822 東勢線, F823 平溪雙溪福隆線 (with a further sectioned F823區 working) and F825 平溪雙溪基隆線[^pingxi-office-buses]. F823's name shows the route already crosses into neighbouring Shuangxi District, consistent with F823 also appearing on Shuangxi District Office's own route list. No fare or operator is stated on the Pingxi page, and its timetables exist only as linked files not opened in this research pass[^pingxi-office-buses].
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator has been confirmed for any of the four routes; the linked timetable files were not opened, so schedules remain unread; fleet, depot and contract fields remain TBC.
