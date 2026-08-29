@@ -2,12 +2,68 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27107,
-    "tbc": 4642,
+    "sourced": 27238,
+    "tbc": 4649,
     "asserted": 0,
-    "meta": 112
+    "meta": 122
   },
   "files": [
+    {
+      "file": "content/air/airports/kaohsiung.md",
+      "sources": 3,
+      "sourced": 8,
+      "tbc": 2,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/air/airports/main-island-hubs.md",
+      "sources": 2,
+      "sourced": 9,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/air/airports/outlying-islands.md",
+      "sources": 6,
+      "sourced": 17,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/air/airports/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/air/operators/domestic-carriers.md",
+      "sources": 4,
+      "sourced": 9,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/air/operators/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/air/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
     {
       "file": "content/bike/generations/_index.md",
       "sources": 0,
@@ -466,16 +522,16 @@
     },
     {
       "file": "content/bus/operators/16476-eglll3.md",
-      "sources": 2,
-      "sourced": 6,
+      "sources": 3,
+      "sourced": 8,
       "tbc": 7,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/16479-bepyye.md",
-      "sources": 2,
-      "sourced": 5,
+      "sources": 3,
+      "sourced": 7,
       "tbc": 8,
       "asserted": 0,
       "meta": 0
@@ -9586,8 +9642,8 @@
     },
     {
       "file": "content/ferry/routes/kinmen.md",
-      "sources": 8,
-      "sourced": 13,
+      "sources": 11,
+      "sourced": 15,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
@@ -14467,7 +14523,7 @@
     {
       "file": "content/rail/tymc/stations/g16-g16.md",
       "sources": 2,
-      "sourced": 7,
+      "sourced": 9,
       "tbc": 5,
       "asserted": 0,
       "meta": 0
@@ -14475,7 +14531,7 @@
     {
       "file": "content/rail/tymc/stations/g17-g17.md",
       "sources": 2,
-      "sourced": 7,
+      "sourced": 9,
       "tbc": 5,
       "asserted": 0,
       "meta": 0
@@ -14785,6 +14841,86 @@
       "meta": 0
     },
     {
+      "file": "content/road/network/national-freeways.md",
+      "sources": 6,
+      "sourced": 20,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 2
+    },
+    {
+      "file": "content/road/network/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/road/regulation/taxi-and-ride-hailing.md",
+      "sources": 5,
+      "sourced": 12,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/road/regulation/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/road/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/statistics/national/modal-share.md",
+      "sources": 1,
+      "sourced": 16,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/statistics/national/traffic-safety.md",
+      "sources": 4,
+      "sourced": 14,
+      "tbc": 1,
+      "asserted": 0,
+      "meta": 2
+    },
+    {
+      "file": "content/statistics/national/vehicle-registration.md",
+      "sources": 2,
+      "sourced": 11,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
+      "file": "content/statistics/national/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/statistics/_index.md",
+      "sources": 0,
+      "sourced": 0,
+      "tbc": 0,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
       "file": "content/ticketing/guides/airport-ground-transport.md",
       "sources": 11,
       "sourced": 17,
@@ -14810,11 +14946,11 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 290,
-      "sourced": 413,
+      "sources": 293,
+      "sourced": 418,
       "tbc": 9,
       "asserted": 0,
-      "meta": 7
+      "meta": 8
     },
     {
       "file": "content/ticketing/guides/fare-history.md",

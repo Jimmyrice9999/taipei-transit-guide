@@ -2577,6 +2577,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The contractor's own case page for this award names the contract scope as G17-G18 in its title but describes it as covering 'G17 and G18' in body text, agreeing with the DORTS project table's station-pair label rather than the DORTS news release's G18-G19; also names supervision consultant 中興工程顧問 and design consultant 林同棪工程顧問 (T.Y. Lin International), with a 2024-2030 timeline."
+  - id: "statistics-national-traffic-safety-tadd-2024"
+    title: "Road traffic accident overview, 2024"
+    titleOriginal: "113年道路交通事故概況"
+    publisher: "財團法人道路交通安全教育基金會 (Road Traffic Safety Education Foundation), republishing MOTC/police statistics"
+    url: "https://tadd.org.tw/situation56.htm"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "An NGO republication of official 30-day (A30) statistics: 2024 total 2,950 deaths, 160 of them drunk-driving related; 2025 total 2,858, 143 drunk-driving related. Consistent with a 工商時報 news account of the same MOTC data giving 393,000 accidents and 524,000 injured for 2024."
+  - id: "statistics-national-traffic-safety-mohw-2024-causes-of-death"
+    title: "113 statistical results for national causes of death"
+    titleOriginal: "113年國人死因統計結果"
+    publisher: "衛生福利部 (Ministry of Health and Welfare)"
+    url: "https://www.mohw.gov.tw/cp-7177-82775-1.html"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "MOHW's own official statistical release, published 16 June 2025. States 2024 「運輸事故死亡2,932人，較112年減136人(-4.4%)」— 2,932 transport-accident deaths, down 136 (4.4%) from 2023. States total all-cause deaths at 201,383, down 2.0% from 2023, with 事故傷害 (all accidental-injury deaths, a broader category) ranking 7th among top causes of death at 6,924."
+  - id: "statistics-national-traffic-safety-udn-death-comparison"
+    title: "Comparison of MOTC and MOHW traffic-death figures, 2020-2024"
+    titleOriginal: ""
+    publisher: "聯合報 (United Daily News, UDN)"
+    url: "https://udn.com/news/story/7270/9339444"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "News comparison table citing MOTC A30 figures against a series it attributes to MOHW, both for 2020-2024: MOTC 2,972/2,962/3,064/3,023/2,950; MOHW (as cited here) 2,644/2,589/2,658/2,591/2,426. This MOHW-attributed 2024 figure of 2,426 differs from the figure MOHW's own official page states for the same year (2,932) — see Conflicts. States the gap for 2024 as 524 people, 17.7%, attributed to MOTC official Wu Donglin (吳東林) without a directly located primary quote."
   - id: "ticketing-guides-bus-fare-stages-wiki-ntpc-bus"
     title: "New Taipei city buses"
     titleOriginal: "新北市市區公車"
@@ -5081,6 +5108,46 @@ Three sources disagree on which two stations this contract covers, and two of th
 - [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-stations-g19-g19-dorts-green]
 - [Groundbreaking news release for the G18-G19 elevated section](https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581665) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-29.[^rail-tymc-stations-g19-g19-dorts-groundbreaking]
 - [GC04B contract case page](https://www.raito.com.tw/case_detail46_1.htm) — primary; Raito Engineering Co., Ltd. (利德工程股份有限公司), the contractor; accessed 2026-08-29.[^rail-tymc-stations-g19-g19-raito-gc04b]
+
+## Traffic-death statistics — a three-way disagreement — The 2024 figures, and a conflict this page does not resolve
+
+Discussed on [Traffic-death statistics — a three-way disagreement](/statistics/national/traffic-safety/) in the source page's “The 2024 figures, and a conflict this page does not resolve” section.[^statistics-national-traffic-safety-tadd-2024]
+
+### The 2024 figures, and a conflict this page does not resolve
+
+For 2024, the A30 total is well established at 2,950 deaths, alongside
+393,000 recorded accidents and 524,000 injured, from an NGO republication of
+the official MOTC/police statistics.[^statistics-national-traffic-safety-tadd-2024] The Ministry of Health and
+Welfare's own official statistical release states a 2024 "運輸事故" (transport
+accident) death count of 2,932, down 136 people (4.4%) from
+2023.[^statistics-national-traffic-safety-mohw-2024-causes-of-death]
+
+A separate news comparison, published to illustrate the growing gap between
+MOTC and MOHW figures, cites a different MOHW-attributed value for the same
+year: 2,426.[^statistics-national-traffic-safety-udn-death-comparison] That comparison piece uses the same
+Chinese term, 運輸事故死亡人數, for a number 506 lower than the one on
+MOHW's own official page for the identical year. This page does not resolve
+which of the two MOHW-attributed figures is correct, or whether they
+measure genuinely different populations — for instance, MOHW's own page may
+report all-mode transport-accident deaths including rail, air and water,
+while the news comparison's figure may be a road-traffic-only subset drawn
+from a more granular MOHW release this research did not locate and fetch.
+Both values are published here with their sources rather than one being
+silently preferred.
+
+The same news comparison gives the 2024 MOTC-MOHW gap as 524 people, or
+17.7%.[^statistics-national-traffic-safety-udn-death-comparison] That arithmetic is only consistent with the
+2,426 MOHW-attributed figure (2,950 − 2,426 = 524), not with MOHW's own
+official 2,932 figure (2,950 − 2,932 = 18, a 0.6% gap) — which is itself
+evidence that the "2,426" comparison figure and the "2,932" figure on MOHW's
+own page are measuring two different things, even though both are
+attributed to the same ministry.
+
+#### Sources for this entry
+
+- [Road traffic accident overview, 2024](https://tadd.org.tw/situation56.htm) — secondary; 財團法人道路交通安全教育基金會 (Road Traffic Safety Education Foundation), republishing MOTC/police statistics; accessed 2026-08-29.[^statistics-national-traffic-safety-tadd-2024]
+- [113 statistical results for national causes of death](https://www.mohw.gov.tw/cp-7177-82775-1.html) — primary; 衛生福利部 (Ministry of Health and Welfare); accessed 2026-08-29.[^statistics-national-traffic-safety-mohw-2024-causes-of-death]
+- [Comparison of MOTC and MOHW traffic-death figures, 2020-2024](https://udn.com/news/story/7270/9339444) — secondary; 聯合報 (United Daily News, UDN); accessed 2026-08-29.[^statistics-national-traffic-safety-udn-death-comparison]
 
 ## How bus fare stages (段) actually work — How crossing multiple segments is counted
 

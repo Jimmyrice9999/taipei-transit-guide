@@ -64,3 +64,26 @@
 ## Sources and archive status
 
 All promoted sources are official government/operator pages or official PDFs fetched in full on 2026-08-26. No archive snapshot URL was captured in this unit; the live URLs, update dates and schedule dates are retained.
+
+## Addendum, 2026-08-29 (Run 306, Part 6b)
+
+A read-only scout researching long-distance/international ferries generally
+found and fetched the actual statutory basis for the mini-three-links, which
+this file did not previously carry: 離島建設條例 Article 18
+(law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030121&flno=18, PRIMARY,
+High confidence, fetched in full) authorises the pilot link, and its
+implementing regulation, 試辦金門馬祖澎湖與大陸地區通航實施辦法
+(law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030123, PRIMARY, High
+confidence), Article 32, is the mechanism behind every suspension the route
+has had — the Executive Yuan may halt the trial "by order" for national
+interest or security reasons. A 公視 (PTS) news account
+(news.pts.org.tw/article/615247, SECONDARY) quoting Article 32 was checked
+against the statute text and matches verbatim — a genuine corroboration.
+The same PTS account gives a phased 2023 COVID-era resumption timeline (7
+January-6 February trial, full resumption by 19 February, mainland-born
+spouses from 20 July, foreign/HK/Macau nationals from 27 September) that
+rests on this one secondary source; a primary Executive Yuan or Mainland
+Affairs Council resumption announcement was sought but not reachable
+(mac.gov.tw returned HTTP 403 on every attempt) — stated gap, not
+published as more certain than it is. This legal-basis and suspension-
+history material has been added to the built content page.

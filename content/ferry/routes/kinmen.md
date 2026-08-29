@@ -101,6 +101,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full official FAQ page. It does not print a fare; it directs readers to a separate Public Vehicle and Ship Management Office FAQ, which was not safely fetchable during this unit."
+  - id: offshore-islands-act
+    title: Offshore Islands Development Act, Article 18
+    titleOriginal: 離島建設條例 第18條
+    publisher: 全國法規資料庫 (National Laws & Regulations Database, Ministry of Justice)
+    url: "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0030121&flno=18"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "The statute text itself. It authorises a pilot navigation link between Kinmen, Matsu, Penghu and mainland China ahead of full cross-strait links, with the implementing method left to the Executive Yuan — the legal root of the mini-three-links."
+  - id: mini-links-trial-measures
+    title: Regulations for Trial Implementation of Navigation between Kinmen, Matsu, Penghu and Mainland China, Article 32
+    titleOriginal: 試辦金門馬祖澎湖與大陸地區通航實施辦法 第32條
+    publisher: 全國法規資料庫 (National Laws & Regulations Database, Ministry of Justice)
+    url: "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030123"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "The Executive Yuan's implementing regulation, made under Article 18 of the Offshore Islands Development Act. Article 32 lets the Executive Yuan suspend all or part of the trial link 'by order' where national interest or security is endangered — the legal basis both SARS-era and COVID-era suspensions used."
+  - id: pts-mini-links-legal-basis
+    title: Small three links legal basis and resumption timeline
+    titleOriginal: 小三通法源依據與復航時程
+    publisher: 公共電視 (Public Television Service, PTS)
+    url: "https://news.pts.org.tw/article/615247"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News account of the phased 2023 COVID-era resumption. Its quotation of Article 32 was checked against the statute text at law.moj.gov.tw and matches; used here for the resumption date sequence, which the statute itself does not carry."
 ---
 
 Kinmen’s ferry picture has two different scales. Jin–Lie ferries connect the
@@ -180,6 +207,37 @@ and the notice specifically mentions passports or Mainland Travel Permits for
 the People’s Republic of China.[^kinmen-travel-mini-links] The official August
 schedule PDFs publish booking telephone numbers by vessel/operator, so a dated
 booking check is preferable to copying a generic departure pattern.[^motc-august-xiamen][^motc-august-quanzhou]
+
+## Legal basis and suspension history
+
+The mini-three-links exist under a specific statutory carve-out, not general
+cross-strait shipping policy. Article 18 of the Offshore Islands Development
+Act (離島建設條例) lets the government open pilot navigation links between
+Kinmen, Matsu, Penghu and mainland China "in advance of" full cross-strait
+links, before Taiwan and mainland China otherwise permitted direct
+transport.[^offshore-islands-act] Its wording: 「為促進離島發展，在臺灣本島與大陸地區全面通航之前，得先行試辦金門、馬祖、澎湖地區與大陸地區通航...其實施辦法，由行政院定之。」[^offshore-islands-act]
+The Executive Yuan's implementing regulation, the Regulations for Trial
+Implementation of Navigation between Kinmen, Matsu, Penghu and Mainland China
+(試辦金門馬祖澎湖與大陸地區通航實施辦法), is made directly under that
+article.[^mini-links-trial-measures]
+
+That regulation's Article 32 is the mechanism behind every suspension the
+route has had: the Executive Yuan may halt all or part of the trial "by
+order" where national interest or security is endangered, or for other major
+cause.[^mini-links-trial-measures] Its text: 「本辦法試辦期間，如有危害國家利益、安全之虞或其他重大事由時，得由行政院以命令終止一部或全部之實施。」[^mini-links-trial-measures]
+The route has been suspended twice under this framework: roughly two months
+in 2003 for SARS, and just under three years from February 2020 for
+COVID-19.[^pts-mini-links-legal-basis] The 2023 resumption was phased rather
+than immediate — a Lunar New Year trial (7 January–6 February 2023) limited
+to Kinmen and Matsu residents and mainland-born spouses, full resumption of
+all four passenger routes by 19 February 2023, mainland-born spouses with
+visiting-relative documentation admitted from 20 July 2023, and foreign
+nationals and Hong Kong/Macau residents admitted from 27 September
+2023.[^pts-mini-links-legal-basis] This account is a news report, not the
+Executive Yuan's own resumption order; its quotation of Article 32 matches
+the statute text, but the specific resumption dates rest on this one
+secondary source and would benefit from a primary Mainland Affairs Council
+or Executive Yuan announcement.[^pts-mini-links-legal-basis]
 
 ## What remains date-sensitive
 

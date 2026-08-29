@@ -8,7 +8,15 @@
  * The mark never carries the fact by itself. It has a text label and every
  * rendered page remains fully intelligible with colour and SVG disabled.
  */
-export type EntityIconKind = 'operator' | 'depot' | 'fleet' | 'ticket' | 'ferry' | 'bike' | 'region'
+export type EntityIconKind =
+  | 'operator'
+  | 'depot'
+  | 'fleet'
+  | 'ticket'
+  | 'ferry'
+  | 'bike'
+  | 'region'
+  | 'airport'
 
 const LABEL: Record<EntityIconKind, string> = {
   operator: 'Transit operator',
@@ -18,10 +26,12 @@ const LABEL: Record<EntityIconKind, string> = {
   ferry: 'Ferry service',
   bike: 'Bike-share service',
   region: 'Geographic region',
+  airport: 'Airport',
 }
 
 /** The page types that have a stable subject vocabulary and icon. */
 export function getEntityIconKind(section: string, type: string): EntityIconKind | null {
+  if (section === 'air' && type === 'airports') return 'airport'
   if (type === 'operators') return 'operator'
   if (type === 'depots') return 'depot'
   if (type === 'rolling-stock' || type === 'models') return 'fleet'
@@ -104,6 +114,13 @@ export default function EntityIcon({
         <>
           <path d="M16 4C10.5 4 6 8.4 6 13.7 6 21.5 16 29 16 29s10-7.5 10-15.3C26 8.4 21.5 4 16 4Z" />
           <circle cx="16" cy="13.5" r="4" />
+        </>
+      )}
+
+      {kind === 'airport' && (
+        <>
+          <path d="M16 4v24M16 4l6 6-6 2-6-2 6-6ZM4 20l10-3v6L4 26v-2ZM28 20l-10-3v6l10 3v-2Z" />
+          <path d="M12 28h8" />
         </>
       )}
     </svg>
