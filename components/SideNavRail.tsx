@@ -40,20 +40,35 @@ export default function SideNavRail({
   const pathname = usePathname()
 
   return (
-    <nav className="side-nav-rail" aria-label="Sections">
+    <nav className="side-nav-rail" aria-label="Sections, wide layout">
       <ul className="side-nav-list">
         {sections.map((section) => {
           const current = isInSection(pathname, section.href)
           return (
             <li className="side-nav-item" key={section.href}>
               <details className="side-nav-section" open={current}>
-                <summary>
-                  <Link href={section.href} aria-current={current ? 'true' : undefined}>
-                    {section.title}
-                  </Link>
+                {/*
+                  No nested `<Link>` here — `<summary>` is itself an
+                  interactive control (it's what gives `<details>` its native
+                  toggle), and axe correctly flags an anchor nested inside one
+                  as "Interactive controls must not be nested" (serious).
+                  SiteNav's own popover sidesteps this by keeping its section
+                  link and its toggle button as SEPARATE siblings; the
+                  equivalent here is the "Open … index" link already
+                  established as this rail's own convention for every nested
+                  type group (see NavGroupView) — first item in the opened
+                  body, not a second interactive control racing the summary
+                  for the same click.
+                */}
+                <summary aria-current={current ? 'true' : undefined}>
+                  <span>{section.title}</span>
                   <span className="nav-submenu-caret" aria-hidden="true" />
                 </summary>
                 <div className="side-nav-section-body">
+                  <Link className="nav-group-index" href={section.href}>
+                    Open {section.title.toLowerCase()} index
+                    <span aria-hidden="true"> →</span>
+                  </Link>
                   {section.groups.map((group) => (
                     <div className="nav-group" key={group.href}>
                       <NavGroupView group={group} />

@@ -175,6 +175,41 @@ console.log(
     (occupied ? `, ${occupied} path(s) already a real page` : ''),
 )
 
+/* ---- 4a. a 404.html GitHub Pages will actually find --------------- */
+
+/*
+ * ─────────────────────────────────────────────────────────────────────────────
+ * `trailingSlash: true` makes Next's static export write the not-found page as
+ * a folder, `out/_not-found/index.html` — consistent with every other route on
+ * the site, but not what a static host looks for. GitHub Pages' own 404
+ * handling is a fixed convention: it serves whatever sits at the RESPONSE
+ * ROOT's `404.html` for any unmatched request. Nothing wrote that file, so
+ * every mistyped or dead link on the deployed site was falling through to
+ * GitHub's own generic 404 — this project's own not-found page (with its own
+ * design, nav and search) was built on every run and never actually reachable
+ * by a real visitor who hit a bad URL.
+ *
+ * `scripts/browser-verify.mjs`'s own local static server has the identical
+ * assumption baked in (it serves `out/404.html` for anything missing) — this
+ * is also what a full verification sweep crashed on hard, not a soft failure,
+ * the moment the crawler's traversal reached a page that does not exist.
+ *
+ * Copied, not moved: `_not-found/index.html` is still Next's own internal
+ * reference for that route (its rewritten asset paths, any client-side
+ * fallback), so it stays where Next put it. `404.html` at the root is the
+ * GitHub Pages-facing copy.
+ * ─────────────────────────────────────────────────────────────────────────────
+ */
+const notFoundSrc = path.join(OUT, '_not-found', 'index.html')
+const notFoundDest = path.join(OUT, '404.html')
+if (fs.existsSync(notFoundSrc)) {
+  fs.copyFileSync(notFoundSrc, notFoundDest)
+  console.log('postbuild: wrote out/404.html from _not-found/index.html')
+} else {
+  console.error('postbuild: out/_not-found/index.html is missing — cannot write a working 404.html')
+  process.exit(1)
+}
+
 /* ---- 5. every rendered Han character is in the subset that page loads ---- */
 
 /*

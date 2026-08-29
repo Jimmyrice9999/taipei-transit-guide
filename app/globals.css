@@ -1187,21 +1187,20 @@ main {
   display: none;
 }
 
-.side-nav-section > summary a {
+.side-nav-section > summary span:first-child {
   color: var(--band-ink);
-  text-decoration: none;
   font-weight: 600;
   font-size: 14.5px;
   letter-spacing: 0.01em;
   border-bottom: 2px solid transparent;
 }
 
-.side-nav-section > summary a:hover,
-.side-nav-section > summary a:focus-visible {
+.side-nav-section > summary:hover span:first-child,
+.side-nav-section > summary:focus-visible span:first-child {
   border-bottom-color: rgba(255, 255, 255, 0.35);
 }
 
-.side-nav-section > summary a[aria-current='true'] {
+.side-nav-section > summary[aria-current='true'] span:first-child {
   border-bottom-color: var(--amber);
 }
 
@@ -1215,6 +1214,23 @@ main {
 
 .side-nav-section-body {
   padding: 8px 0 14px 2px;
+}
+
+/* The section's own "Open … index" link — the direct route to the
+   section's overview page, since (unlike the popover) the summary/toggle
+   here can't also be a link without nesting two interactive controls. */
+.side-nav-section-body > .nav-group-index {
+  display: block;
+  padding: 4px 0 10px;
+  color: var(--band-ink);
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+}
+
+.side-nav-section-body > .nav-group-index:hover,
+.side-nav-section-body > .nav-group-index:focus-visible {
+  text-decoration: underline;
 }
 
 .side-nav-section-body .nav-group + .nav-group {

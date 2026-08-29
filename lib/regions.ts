@@ -54,6 +54,7 @@ export const REGIONS: Region[] = [
       { title: 'YouBike — Taipei', href: '/bike/stations/taipei/', note: 'Station snapshot by district.' },
       { title: 'YouBike — New Taipei', href: '/bike/stations/new-taipei/', note: 'Station snapshot by district.' },
       { title: 'Operator service ratings', href: '/bus/network/operator-ratings/', note: 'Taipei’s and New Taipei’s separate bus evaluation schemes.' },
+      { title: 'Taipei Songshan Airport', href: '/air/airports/main-island-hubs/', note: 'The city’s in-town joint military-civil airfield, covered together with Taoyuan and Taichung.' },
     ],
   },
   {
@@ -66,6 +67,7 @@ export const REGIONS: Region[] = [
       'over its own punctuality figures.',
     links: [
       { title: 'Taoyuan Metro', href: '/rail/tymc/', note: 'Airport MRT (operating) and the Green Line project registry (not yet built).' },
+      { title: 'Taoyuan International Airport', href: '/air/airports/main-island-hubs/', note: 'Taiwan’s main international gateway, run by a dedicated state corporation — covered together with Songshan and Taichung.' },
       { title: 'YouBike — Taoyuan', href: '/bike/stations/taoyuan/', note: 'Station snapshot by district.' },
       { title: 'Operator service ratings', href: '/bus/network/operator-ratings/', note: 'Taoyuan’s scheme, outsourced by tender, current as of 2026 — historical grades TBC.' },
     ],
@@ -84,6 +86,7 @@ export const REGIONS: Region[] = [
     links: [
       { title: 'Taichung Metro (TMRT)', href: '/rail/tmrt/', note: 'The Green Line — Beitun, the city centre and the HSR station.' },
       { title: 'Taichung regional buses', href: '/bus/regional/taichung/', note: 'Route-and-stop snapshot, 392 city-bus entries and the 小黃公車 reservation network.' },
+      { title: 'Taichung Airport', href: '/air/airports/main-island-hubs/', note: 'A joint military-civil airfield per CAA’s own list — covered together with Taoyuan and Songshan.' },
       { title: 'YouBike — Taichung', href: '/bike/stations/taichung/', note: 'Station snapshot by district.' },
       { title: 'Operator service ratings', href: '/bus/network/operator-ratings/', note: 'Taichung’s scheme, running since at least 2015, dated 113年度 grade tables.' },
     ],
@@ -100,6 +103,7 @@ export const REGIONS: Region[] = [
       { title: 'Kaohsiung Rapid Transit (KRTC)', href: '/rail/krtc/', note: 'Red and Orange Lines, and the Circular Light Rail, kept as distinct records.' },
       { title: 'Kaohsiung regional buses', href: '/bus/regional/kaohsiung/', note: 'Route-and-stop snapshot.' },
       { title: 'Cijin ferry', href: '/ferry/routes/cijin/', note: 'The harbour crossing to Cijin Island.' },
+      { title: 'Kaohsiung International Airport', href: '/air/airports/kaohsiung/', note: 'The south’s main airport, with its own dedicated page.' },
       { title: 'YouBike — Kaohsiung', href: '/bike/stations/kaohsiung/', note: 'Station snapshot by district.' },
       { title: 'Operator service ratings', href: '/bus/network/operator-ratings/', note: 'Kaohsiung’s scheme — 2017 results sourced, newer grade tables TBC (report PDFs did not extract).' },
     ],

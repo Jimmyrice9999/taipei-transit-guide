@@ -111,24 +111,45 @@ const MIME = {
 
 function serve() {
   const server = http.createServer((req, res) => {
-    // Not new URL(): a request for "//" parses as protocol-relative and
-    // throws. Split off the query by hand; a static server needs no more.
-    let urlPath = decodeURIComponent(req.url.split('?')[0].replace(/\/{2,}/g, '/'))
-    let file = path.join(OUT, urlPath)
+    try {
+      // Not new URL(): a request for "//" parses as protocol-relative and
+      // throws. Split off the query by hand; a static server needs no more.
+      let urlPath = decodeURIComponent(req.url.split('?')[0].replace(/\/{2,}/g, '/'))
+      let file = path.join(OUT, urlPath)
 
-    if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
-      file = path.join(file, 'index.html')
+      if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
+        file = path.join(file, 'index.html')
+      }
+      if (!fs.existsSync(file)) {
+        res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' })
+        // out/404.html is postbuild's GitHub-Pages-facing copy of Next's own
+        // `_not-found/index.html` (see scripts/postbuild.mjs) — read whichever
+        // actually exists rather than crashing the whole sweep on a missing
+        // file, since a 404 during crawling is themselves a signal worth a
+        // clean report, not a hard process exit.
+        const notFound = fs.existsSync(path.join(OUT, '404.html'))
+          ? path.join(OUT, '404.html')
+          : path.join(OUT, '_not-found', 'index.html')
+        res.end(fs.existsSync(notFound) ? fs.readFileSync(notFound) : 'Not found')
+        return
+      }
+      const ext = path.extname(file)
+      res.writeHead(200, {
+        'Content-Type': MIME[ext] ?? 'application/octet-stream',
+      })
+      res.end(fs.readFileSync(file))
+    } catch (err) {
+      // Any of the fs calls above race against nothing under normal
+      // operation, but a many-hundred-page sweep runs long enough that a
+      // transient OS-level hiccup (this has been observed as an ENOENT on a
+      // file that `existsSync` had just confirmed present, on Windows) must
+      // not take down the whole run — the same reasoning as the 404 branch
+      // above, generalised to "any request handler error is a signal to
+      // report for that one request, not a reason to crash the process."
+      console.warn(`  ! request handler error for ${req.url}: ${err.message}`)
+      if (!res.headersSent) res.writeHead(500, { 'Content-Type': 'text/plain' })
+      res.end('Internal error')
     }
-    if (!fs.existsSync(file)) {
-      res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' })
-      res.end(fs.readFileSync(path.join(OUT, '404.html')))
-      return
-    }
-    const ext = path.extname(file)
-    res.writeHead(200, {
-      'Content-Type': MIME[ext] ?? 'application/octet-stream',
-    })
-    res.end(fs.readFileSync(file))
   })
   return new Promise((resolve) => {
     server.listen(0, '127.0.0.1', () => resolve({ server, port: server.address().port }))
@@ -325,6 +346,20 @@ const PAGE_TYPES = [
      site" gaps section, which 'regions' itself does not have. */
   { name: 'regions', url: '/regions/' },
   { name: 'region-detail', url: '/regions/taichung/' },
+  /* Run 306, Part 6/7: air, road and statistics are new top-level sections.
+     The auto-inventory below already assigns them their own template keys
+     (confirmed: `type-index:air:...`, `nested-index:air-airports:...` etc. all
+     appeared in a real sweep without any change here), so these are named
+     entries for readable screenshot/print filenames, not new coverage. */
+  { name: 'section-air', url: '/air/' },
+  { name: 'air-airports-index', url: '/air/airports/' },
+  { name: 'air-airport-kaohsiung', url: '/air/airports/kaohsiung/' },
+  { name: 'air-operators-index', url: '/air/operators/' },
+  { name: 'section-road', url: '/road/' },
+  { name: 'road-taxi-and-ride-hailing', url: '/road/regulation/taxi-and-ride-hailing/' },
+  { name: 'road-national-freeways', url: '/road/network/national-freeways/' },
+  { name: 'section-statistics', url: '/statistics/' },
+  { name: 'statistics-modal-share', url: '/statistics/national/modal-share/' },
   { name: '404', url: '/no/such/page/' },
 ]
 
