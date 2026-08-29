@@ -2,7 +2,7 @@
 title: The Shen'ao–Liandong Line
 summary: A former 6.0 km Taiwan Railways alignment whose southern section was dismantled in 1977 while the northern route later returned to passenger service.
 order: 6
-updated: 2026-08-26
+updated: 2026-08-29
 aliases:
   - 深澳線
   - 深澳─濂洞線
@@ -99,7 +99,52 @@ sources:
     kind: secondary
     lang: zh-Hant
     note: Full institutional history article. It describes the 21 August 1989 passenger/freight stoppage and continued coal operation; it is secondary evidence about the operator's history.
+  - id: nmmst-haikeguan
+    title: Taiwan Railways Haikeguan Station
+    titleOriginal: 臺鐵海科館站
+    publisher: National Museum of Marine Science and Technology (國立海洋科技博物館)
+    url: https://www.nmmst.gov.tw/chhtml/content/232
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Traces the corridor's origin to a 1936-completed Japanese-era mining railway carrying Jinguashi gold and copper ore, run postwar by Taiwan Metal Mining Corporation until it stopped for financial reasons around 1962, before TRA's 1966 rebuild this page documents.
+  - id: zhwiki-shenao-line
+    title: Shen'ao Line (Wikipedia article)
+    titleOriginal: 深澳線
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/深澳線
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Unfootnoted for the sentences cited here. Gives an exact 26 August 1962 abandonment date for the pre-TRA mining railway, and states the highway-driven 1977 closure and dismantling followed the same broad pattern the operator's own record gives, without a legal instrument or day-level date.
+  - id: milkyrailway-shenao
+    title: "[Old-route trace] A railway borrowed and never returned: the last stretch of the Shen'ao Line's old alignment (Haipin-Liandong)"
+    titleOriginal: 【舊路尋跡】有借無還的鐵路：深澳線最後段舊線跡（海濱=濂洞）
+    publisher: Milky Railway (blog)
+    url: https://milkyrailway.blogspot.com/2023/11/blog-post.html
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: An enthusiast account naming three primary archives (a 1984 highway-engineering-office construction report, a TRA archive file, and 1983-84 provincial-assembly gazettes) it does not itself reproduce in full; those archives were not independently opened. Gives a detailed account of the highway/rail land dispute behind the 1977 dismantling not found in any other source checked.
 ---
+
+## Before the operator's own record begins
+
+TRA's construction-history table starts this corridor's record in
+1966.[^tra-construction-history] Secondary institutional and encyclopedia
+sources describe an earlier, legally separate line on the same
+alignment: a private mining railway completed in 1936 by a Japanese mining
+company, carrying gold and copper ore from Jinguashi via Bachimen,
+Badouzi and Shen'ao to Liandong.[^nmmst-haikeguan] Postwar, Taiwan Metal
+Mining Corporation (臺灣金屬鑛業股份有限公司) operated it as an important
+passenger-and-freight route for Jinguashi residents until financial
+difficulty ended operations, an encyclopedia source dating the closure to
+26 August 1962.[^zhwiki-shenao-line][^nmmst-haikeguan] No primary source
+for this pre-TRA era was found; both accounts are secondary, and the
+encyclopedia account carries no footnote of its own for these
+sentences.[^nmmst-haikeguan][^zhwiki-shenao-line] TRA's 1966/1967
+construction and operation-start fields describe a rebuild of this
+corridor, not its first railway.[^tra-construction-history][^nmmst-haikeguan]
 
 ## One alignment, two operating histories
 
@@ -121,12 +166,36 @@ therefore describes a staged break: the southern section disappeared from the
 construction-history account before the northern section's later operating
 stop.[^tra-construction-history]
 
+A blog account naming, but not itself reproducing, three primary archives
+(a 1984 highway-engineering construction report, a TRA archive file and
+1983–84 provincial-assembly gazettes) gives a detailed narrative behind the
+1977 dismantling: North Coast Highway planning began in 1975, and the
+highway engineering office originally intended to remove the railway
+entirely and pave over its bed, until the Ministry of Economic Affairs
+intervened before construction to require road and rail coexist, adding
+budget for slope excavation and road widening.[^milkyrailway-shenao] Even
+so, the account says insufficient land remained a problem, and TRA
+suspended Shen'ao–Liandong service and dismantled two specific track
+sections when the highway's own construction reached that stretch, with
+replacement buses run by a named bus company; even after the highway's
+first phase was completed, the account says, trains still could not
+resume running on the affected section.[^milkyrailway-shenao] This account
+does not itself state a year for the suspension it describes; it is
+consistent with, but does not independently confirm, the operator's own
+December 1977 date.[^milkyrailway-shenao][^tra-construction-history] None
+of the three archives it names were independently
+opened.[^milkyrailway-shenao]
+
 A later museum history gives a different passenger-era milestone, saying that
 on 21 August 1989 the line's passenger and freight operation stopped while coal
 trains continued.[^nmmst-badouzi] That article is secondary evidence and does
 not replace the operator's 1990 construction-history field.[^nmmst-badouzi][^tra-construction-history]
-The two dates may describe different traffic scopes, but the fetched sources do
-not establish the legal distinction, so both remain visible here.[^nmmst-badouzi][^tra-construction-history]
+An encyclopedia source independently gives the same 21 August 1989 date with
+no footnote of its own, so this is now corroborated across two secondary
+sources rather than one, though neither is the
+operator.[^zhwiki-shenao-line][^nmmst-badouzi] The two dates may describe
+different traffic scopes, but the fetched sources do not establish the legal
+distinction, so both remain visible here.[^nmmst-badouzi][^tra-construction-history]
 
 ## Passenger service returned on the northern route
 

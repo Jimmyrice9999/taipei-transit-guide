@@ -46,3 +46,58 @@ measurement endpoints would settle the missing details. Until then, row 119 is
 kept as a historical 2.1 km Sanmin Station track subject with 2010/2017 fields
 and the Add track wording, while current station 6120 and the EL position remain
 a separate live-data layer.
+
+## Update, 29 August 2026 — programme context, not a confirmed identity
+
+- **TRA, `臺鐵電氣化沿革及歷年建設`**, `https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1`.
+  PRIMARY. Confirms the Railway Reconstruction Bureau (row 119's named
+  constructor) ran a Hualien-Taitung bottleneck double-tracking/full-line
+  electrification programme, ~155.46 km/30 stations, construction from
+  4 December 2010 — same year as row 119's construction field. Does not
+  name Sanmin or row 119.
+- **zh.wikipedia, `花東鐵路電氣化`**, SECONDARY. Names Ruisui-Sanmin as one
+  of four bottleneck double-track sections; states the west main line
+  opened via a new Ziqiang Tunnel on 26 September 2017 (matches row 119's
+  2017 field at year level); gives a NT$25.429 billion whole-programme
+  cost (matches the TRA-sourced figure order of magnitude); gives Executive
+  Yuan approval as 13 March 2009, one year later than TRA's own
+  18 Feb/13 Mar 2008 dates — a genuine primary-vs-secondary conflict, not
+  resolved.
+- **zh.wikipedia, `自強隧道 (花蓮縣)`**, SECONDARY. New double-track tunnel
+  between Wuhe Signal Station and Sanmin, built because the original
+  single-track tunnel could not fit a second track or electrification
+  clearance; reported length 2,676 m — does not match row 119's 2.1 km.
+- **zh.wikipedia, `舞鶴號誌站`**, SECONDARY. Wuhe Signal Station (train-
+  crossing point only, no passenger service) formally abolished the same
+  day, 26 September 2017, when the new double track opened — explaining
+  why a crossing point was needed on the old single track and why it
+  became unnecessary.
+- **Not established**: any source explicitly naming row 119 as this tunnel
+  project. The circumstantial match (year, agency, project family) is
+  reported on the content page as a possible but unconfirmed connection,
+  not a stated identity. The 2.1 km vs 2,676 m discrepancy is unresolved.
+
+### Corrected mid-research error
+
+An initial automated fetch summary of the `臺東線` Wikipedia article wrongly
+attributed "the line's first double-tracked section" to Ruisui-Sanmin; a
+stricter re-fetch showed that phrase actually describes a different, 2007
+Yuli-Dongli section. Not used on the content page.
+
+### Checked and failed (this pass)
+
+- `https://www.rrb.gov.tw/showpage.php?lmenuid=3&smenuid=84` (Railway Bureau
+  page naming the four bottleneck sections) — returned empty content,
+  likely JS-rendered.
+- `https://www.rrb.gov.tw/` and `http://www.rrb.gov.tw/02110.aspx?lan=ch&id=612`
+  (the Railway Reconstruction Bureau's own 2017-09-25 switchover press
+  release — would have been the strongest possible primary link to row
+  119) — both `ECONNREFUSED`; the domain appears dead, consistent with the
+  agency's 2018 dissolution.
+- Apple Daily article on the same 2017 switchover — certificate expired.
+- TRA construction-history PDF re-extraction for row 119's cell layout —
+  WebFetch could not parse the PDF binary this pass; relying on the
+  existing research file's prior extraction, not independently re-verified
+  this pass.
+- 自由時報/聯合報/中央社/PTT searches — not run; WebSearch budget exhausted
+  after two calls this pass.

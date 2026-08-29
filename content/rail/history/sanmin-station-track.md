@@ -2,7 +2,7 @@
 title: The Taiwan Railways Sanmin Station Track Record
 summary: The operator's historical PDF records a 2.1 km Sanmin Station subject with 2010 construction and 2017 operation-start fields and an Add track explanation; current TDX places Sanmin at Eastern Main Line position 52.
 order: 54
-updated: 2026-08-27
+updated: 2026-08-29
 aliases:
   - 三民車站
   - 三民站增設股道
@@ -86,6 +86,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull places Sanmin on EL at source sequence 51 with supplied travelled distance 241.9 km; the guide presents that as one-based position 52.
+  - id: tra-achievement-page
+    title: Railway achievements — electrification history
+    titleOriginal: 臺鐵電氣化沿革及歷年建設
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: States the Hualien-Taitung bottleneck double-tracking and full-line electrification programme was reviewed by the Council for Economic Planning and Development on 18 February 2008 and directed by the Executive Yuan on 13 March 2008; construction began 4 December 2010, covering 30 stations over about 155.46 km from Hualien to Taitung. Does not name Sanmin, the Railway Reconstruction Bureau's four bottleneck sections, or row 119 specifically.
+  - id: zhwiki-hualien-taitung-electrification
+    title: Hualien-Taitung Railway Electrification (Wikipedia article)
+    titleOriginal: 花東鐵路電氣化
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/花東鐵路電氣化
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Names Ruisui-Sanmin as one of four named bottleneck double-tracking sections in this programme, gives an Executive Yuan approval date of 13 March 2009 (a year later than the operator's own 2008 date), and states the west main line through the new Ziqiang Tunnel opened 26 September 2017, matching row 119's 2017 field at year granularity but not confirmed as the same construction record.
+  - id: zhwiki-ziqiang-tunnel-hualien
+    title: Ziqiang Tunnel, Hualien County (Wikipedia article)
+    titleOriginal: 自強隧道 (花蓮縣)
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/自強隧道_(花蓮縣)
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: States the new, double-track Ziqiang Tunnel between Wuhe Signal Station and Sanmin was built because the original single-track tunnel could not accommodate a second track or electrification clearances; gives a reported tunnel length of 2,676 m, which does not match row 119's 2.1 km figure — not established as measuring the same boundary.
 ---
 
 ## A recorded station-track subject
@@ -122,6 +149,36 @@ sequence 51 with a supplied travelled distance of 241.9 km.[^tdx-tra-line] The g
 presents it as one-based position 52.[^tdx-tra-line] The 241.9 km value is a current
 line-position field, not a substitute for or a measurement to be combined with the
 historical 2.1 km station subject.[^tdx-tra-line][^tra-construction-history]
+
+## A possible, unconfirmed connection to a named programme
+
+Row 119 names the Railway Reconstruction Bureau (鐵路改建工程局) as
+constructor, an agency that existed until it merged into the current
+Railway Bureau in June 2018.[^tra-construction-history] The operator's own
+achievement page confirms that agency carried out a Hualien–Taitung
+bottleneck double-tracking and full-line electrification programme,
+covering about 155.46 km and 30 stations, construction beginning
+4 December 2010 — the same construction-start year row 119
+records.[^tra-achievement-page] That page does not name Sanmin, a specific
+bottleneck section, or row 119 itself.[^tra-achievement-page]
+
+A secondary source names Ruisui–Sanmin as one of four bottleneck sections
+in that same programme, and states its west main line opened through a
+newly built double-track tunnel on 26 September 2017 — matching row 119's
+2017 operation-start field at year granularity.[^zhwiki-hualien-taitung-electrification]
+The new tunnel is reported to have replaced a single-track tunnel that
+could not fit a second track or electrification clearances, sitting
+directly between Wuhe Signal Station and Sanmin.[^zhwiki-ziqiang-tunnel-hualien]
+
+This page does not treat that match as a confirmed identity. No source
+checked explicitly names row 119 as this tunnel project, and the tunnel's
+reported 2,676 m length does not match row 119's 2.1 km
+figure.[^zhwiki-ziqiang-tunnel-hualien] The two may describe different
+boundaries of the same work, or different work entirely; either way, the
+gap is not filled in. A secondary source also gives 13 March 2009 for the
+programme's Executive Yuan approval, a year later than the operator's own
+18 February/13 March 2008 dates — published as a conflict, not
+resolved.[^tra-achievement-page][^zhwiki-hualien-taitung-electrification]
 
 ## Records still missing
 

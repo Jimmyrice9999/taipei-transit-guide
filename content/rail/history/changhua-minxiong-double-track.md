@@ -2,7 +2,7 @@
 title: The Taiwan Railways Changhua–Minxiong Double Track
 summary: A 71.7 km TRA construction-history segment recorded as built in 1957 and opened in 1970 with a double-track extension, kept separate from the current Western Main Line data layer.
 order: 15
-updated: 2026-08-26
+updated: 2026-08-29
 aliases:
   - 彰化—民雄(雙線)
   - 彰化─民雄(雙線)
@@ -84,6 +84,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull contains current ordered station memberships, including Changhua and Minxiong on the Western Main Line families.
+  - id: zhwiki-longitudinal-south-cm
+    title: Longitudinal Line (Southern Section) (Wikipedia article)
+    titleOriginal: 縱貫線 (南段)
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/縱貫線_(南段)
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Its raw wikitext gives a staged sub-segment chronology inside this 71.7 km corridor — three separate completion dates in 1970 (11 June, 6 October) and 1971 (28 June, for the Ershui-Linnei bridge crossing), footnoted to MOTC Transportation Research Institute yearbooks and a 1969/1971 newspaper this page did not independently open.
+  - id: zhwiki-ershui-station
+    title: Ershui Station (Wikipedia article)
+    titleOriginal: 二水車站
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/二水車站
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: States Tianzhong-Ershui double-tracked 25 August 1969, citing a contemporary 1969 newspaper — a full year before Tianzhong Station's own article and the 縱貫線(南段) article give for the same segment (11 June 1970, citing a later government yearbook). Also corroborates 28 June 1971 for Ershui-Linnei against an independent citation on the Linnei Station article.
+  - id: zhwiki-linnei-station
+    title: Linnei Station (Wikipedia article)
+    titleOriginal: 林內車站
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/林內車站
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: States Linnei-Douliu double-tracked 11 June 1970 (matching the 縱貫線(南段) batch) and Ershui-Linnei on 28 June 1971 (matching Ershui Station's independent citation), while also noting a third, conflicting claim from an enthusiast site that Ershui-Linnei instead completed 6 October 1970.
 ---
 
 ## One historical double-track record
@@ -123,6 +150,36 @@ historical construction record, a current line-membership dataset and a live
 station information page answer different questions. Keeping them separate
 avoids adding the segment length to a current travelled-distance field or
 inventing a second Western Main Line identity.[^tra-history-page][^tdx-tra-line]
+
+## A single aggregate row against a staged, conflicting sub-segment chronology
+
+A secondary source describing the wider Longitudinal Line's southern
+section gives this 71.7 km corridor a staged chronology TRA's single
+1957–1970 row does not break out: sub-segments completing on 11 June 1970
+(Changhua–Yuanlin, Shetou–Ershui, Linnei–Douliu), 6 October 1970
+(Yuanlin–Shetou, Douliu–Minxiong), and 28 June 1971 for Ershui–Linnei —
+the last needing an entirely new bridge over the Zhuoshui River before it
+could carry double track, an event the source describes as what
+"substantively completed" double track across the wider Changhua–Tainan
+corridor.[^zhwiki-longitudinal-south-cm] Two individual station articles
+independently corroborate the 28 June 1971 Ershui–Linnei date, one citing a
+contemporary 1971 newspaper and the other a 1972 government
+yearbook.[^zhwiki-ershui-station][^zhwiki-linnei-station]
+
+Two sub-segment dates conflict outright. For Tianzhong–Ershui, one source
+gives 25 August 1969, citing a contemporary 1969
+newspaper.[^zhwiki-ershui-station] A different source gives 11 June 1970 —
+a full year later — citing a 1971-published government
+yearbook.[^zhwiki-longitudinal-south-cm] For Ershui–Linnei, alongside the
+28 June 1971 date two independent sources agree on, a third source (an
+enthusiast site) gives 6 October 1970 instead.[^zhwiki-linnei-station] None
+of these are resolved here; all values are
+published.[^zhwiki-ershui-station][^zhwiki-longitudinal-south-cm][^zhwiki-linnei-station]
+
+None of this secondary staging is checked against a primary TRA source
+beyond the aggregate 71.7 km row itself, and the underlying yearbooks and
+newspapers these Wikipedia articles cite were not independently opened for
+this page.[^zhwiki-longitudinal-south-cm][^zhwiki-ershui-station][^zhwiki-linnei-station]
 
 ## Records still missing
 

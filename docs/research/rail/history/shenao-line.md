@@ -113,3 +113,57 @@ sequence, the legal boundary between the 1977 dismantling and the 1990 stop,
 the gauge and the surviving structures. The current evidence supports the
 phased account above, not a complete historical station page for each former
 stop.
+
+## Update, 29 August 2026 — pre-TRA origin and the 1977 highway dispute
+
+- **NMMST, `臺鐵海科館站`**, SECONDARY. Traces the corridor to a private
+  1936-completed Japanese-era mining railway (Jinguashi ore via Bachimen,
+  Badouzi, Shen'ao to Liandong), run postwar by Taiwan Metal Mining Corp
+  until financial failure ended it. A second NMMST article on Badouzi
+  gives a different origin year, 1935 (extended 1936) — reported as an
+  unresolved date conflict, not merged.
+- **zh.wikipedia, `深澳線`**, SECONDARY, unfootnoted for these sentences.
+  Same mining-railway narrative with company name 日本礦業株式會社; gives
+  an exact abandonment date, 26 August 1962, not found in either NMMST
+  article.
+- **A railfan blog, Milky Railway**, `https://milkyrailway.blogspot.com/2023/11/blog-post.html`,
+  SECONDARY (enthusiast), names but does not itself reproduce three
+  primary archives (a 1984 highway-engineering-office construction report;
+  a TRA archive file 深澳複線, 檔號 A315180000M/0069/235/001; and 1983-84
+  provincial-assembly gazettes). Gives the fullest account found of *why*
+  the 1977 dismantling happened: North Coast Highway planning from 1975
+  originally intended full railway removal; the Ministry of Economic
+  Affairs intervened to require road/rail coexistence with added budget;
+  insufficient land remained a problem regardless, leading to the
+  suspension and dismantling of two specific chainage sections when
+  highway construction reached them, with named substitute-bus operator
+  Keelung Bus Company and a target vehicle-return date of September 1978.
+  The blog's own quoted sentence does not state a year for the
+  suspension — consistent with, not confirming, TRA's December 1977 date.
+- **21 August 1989 stoppage now corroborated by a second independent
+  secondary source**: zh.wikipedia's `深澳線` gives the same date (previously
+  only NMMST's Badouzi article had it), still with no primary source and
+  still conflicting with TRA's own August 1990 field.
+
+### Conflict, not resolved: three-way mining-origin year/builder
+
+1933 (台灣鑛業株式會社, per the Milky Railway blog) vs. 1935/extended-1936
+(日本礦業株式會社, per NMMST's Badouzi article) vs. 1936 (日本礦業株式會社, per
+NMMST's Haikeguan article and zh.wikipedia). The company names differ, not
+just the years — this may be a real distinction between initial survey/
+construction and completion, or an error in one source; not resolved.
+
+### Checked and failed (this pass)
+
+- Taipower (台電) primary source for the plant/coal-rail connection —
+  `taipower.com.tw` page returned blank (likely JS-rendered); no Taipower
+  primary reached at all this pass.
+- The three archives the Milky Railway blog names — no accessible URL
+  found for any of them.
+- zh.wikipedia's own footnotes for the mining-origin and 1977-dismantling
+  sentences — confirmed absent; the article's only reference for that
+  section is an unpaged print book (《臺灣鐵路古今站名詞典》), so this
+  material is unsourced on Wikipedia's own terms, not merely unverified by
+  this pass.
+- 自由時報/聯合報/中央社 archives — not searched; WebSearch budget exhausted
+  before this pass began.

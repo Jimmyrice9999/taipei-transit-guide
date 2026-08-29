@@ -1,7 +1,7 @@
 {
   "exports": 433,
   "cssClasses": 387,
-  "imageSidecars": 97,
+  "imageSidecars": 102,
   "unusedExports": [
     {
       "name": "BusStopSequences",

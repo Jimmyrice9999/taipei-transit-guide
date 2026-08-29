@@ -39,3 +39,73 @@ between the former railway and present bikeway. Until those records are found,
 the page retains the operator’s 14.1 km and September 1991 values alongside the
 municipal 31 August final-train date and the separate 11 km and 13.6 km reuse
 measurements.
+
+## Update, 29 August 2026 — construction schedule, decline narrative, disaster damage
+
+- **zh.wikipedia, `東勢線`**, SECONDARY, citing two books not independently
+  obtained (古庭維、鄧志忠《台灣舊鐵道散步地圖》2010; 蔡仁輝《閒話臺鐵五十年》1996).
+  Construction schedule: began 14 March 1958, first test train 26 December
+  1958, opened 12 January 1959, opening timetable 8 passenger + 2 mixed
+  round trips daily. Full six-stop list with distances. Second construction
+  purpose (Deji Dam hydroelectric materials) not found in the Forestry
+  Bureau primary. Decline narrative: 1973 Dasyueshan Forestry Co.
+  dissolution (chainsaw logging exhausted accessible timber), road
+  competition, student-dominated final ridership. Closing day: 14,419
+  system-wide tickets sold, last train left Dongshi 18:02.
+- **A travel blog (apextraveller.com)** repeats the dual-purpose claim in
+  near-identical wording to the Wikipedia article — treated as likely
+  derivative, not independent corroboration.
+- **A second travel blog (bobbytravel.tw)**, no sources cited on the page,
+  names a third and different dam — Shigang Dam (石岡水壩), not Deji Dam —
+  as a construction purpose. A three-way conflict on what "hydroelectric
+  materials" purpose means: Forestry Bureau primary (timber only) vs.
+  Wikipedia/apextraveller (Deji Dam) vs. bobbytravel (Shigang Dam). Not
+  resolved; only the primary-vs-Wikipedia pairing is published on the
+  content page, since the Shigang Dam claim's source cites nothing of its
+  own.
+- **A fourth, unverified figure**: a Yahoo search snippet only (not a full
+  fetch) of `tune-shih-railroad.fuludun.tw` claimed ~100,000 tonnes/year of
+  Deji Dam construction material moved via this line. Every fetch attempt
+  failed (self-signed certificate; web.archive.org refused). **Not
+  published anywhere**, per rule 2 — snippet-only, unverifiable.
+- **zh.wikipedia, `石岡車站（台灣）`**, SECONDARY, citing TRA statistical
+  yearbooks (1975-1991) not independently opened. Station-level downgrade
+  timeline: 1959 opened 3rd-class, 1971-05-01 downgraded to simplified
+  station, 1983-03-01 downgraded to request-stop, 1991-09-01 withdrawn.
+  Corroborates 921 earthquake fault damage to the disused platform/track.
+- **zh.wikipedia, `東勢車站`**, SECONDARY, same yearbook-citation caveat.
+  Parallel downgrade timeline for the terminus: 2nd-class from 1959,
+  3rd-class from 1981-01-01, simplified station from 1989-10-01, withdrawn
+  1991-09-01.
+- **zh.wikipedia, `東豐自行車綠廊`**, SECONDARY. Paving/planting began 1998
+  under then-Taichung-County magistrate 廖永來; bikeway formally opened
+  15 November 2000. A fifth length figure, ~12 km, for the present bikeway
+  (against the operator's 14.1 km, the tourism board's 13.6 km, and the
+  Forestry Bureau's 11 km plan — four now, not reconciled). Describes 921
+  earthquake damage (destroyed townhouses on the fault-rupture zone next to
+  the greenway; ~10 m vertical displacement at the former Shigang platform,
+  now a fault-viewing site) and a 2006 flood-damage/2008 repair episode at
+  the Meizi Iron Bridge, the latter citing an archived source (`emmm.tw`
+  via web.archive.org) this page could not reach.
+- **A separate news source** (自由時報, on 埤豐橋/Pifeng Bridge, Dongshi) was
+  chased as a possible earthquake-damaged railway bridge and ruled out: it
+  is a road bridge built in 1991, unrelated to this railway.
+
+### Checked and failed (this pass)
+
+- `https://tw.appledaily.com/forum/...` (Apple Daily forum piece cited by
+  zh.wikipedia for local opinion on the bikeway) — 404, live and archived.
+- `tune-shih-railroad.fuludun.tw` (both paths) — self-signed certificate,
+  every attempt.
+- NTU railway club scenery page (`club.ntu.edu.tw`) — DNS resolution
+  failure, domain appears defunct.
+- `uptogo.com.tw` article on the line's history — blocked by CAPTCHA/bot
+  challenge, direct and via reader-proxy retry.
+- web.archive.org, all attempts — fetch tool refuses this host entirely.
+- 1991-era contemporary news coverage (聯合報, 中國時報, 中央社) of the
+  closure — targeted searches returned no results. Not found, not
+  confirmed absent; subscription newspaper archives not attempted.
+- Taichung City Cultural Heritage Bureau historic-building list, and the
+  National Cultural Heritage Network — neither showed a Dongshi or Shigang
+  station listing in what was checked; heritage status not determined
+  either way.

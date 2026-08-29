@@ -37,3 +37,71 @@ as-built track plan would settle the day-level milestone, exact boundary and
 relationship between the historical row and current route data. Until then,
 50.1 km, 1957, 1970 and `添築雙線` remain the operator's historical record,
 while current station and TDX membership are retained as separate layers.
+
+## Update, 29 August 2026 — a staged secondary chronology inside the corridor
+
+A second pass found a secondary source giving a much more granular, staged
+account of double-tracking inside the same Chiayi–Xinshi corridor, at odds
+in structure (though not necessarily in substance) with TRA's single
+1957–1970 aggregate row.
+
+- **zh.wikipedia, `縱貫線 (南段)` (Longitudinal Line, Southern Section)**,
+  `https://zh.wikipedia.org/wiki/縱貫線_(南段)`, SECONDARY. States
+  Minxiong–Chiayi double track completed 1942 and Xinshi–Tainan completed
+  1943 (both footnoted only to an enthusiast site, `trstour.com`, which
+  could not be fetched — see below), and Nanjing–Linfengying double-tracked
+  11 June 1970 (footnoted to 交通部交通研究所編《中華民國59年交通年鑑》(1971),
+  a government yearbook not accessible online in this pass).
+- **zh.wikipedia, `新市車站 (臺灣)`**, `https://zh.wikipedia.org/wiki/新市車站_(臺灣)`,
+  and **`善化車站`**, SECONDARY. State Shanhua–Xinshi double track opened
+  30 September 1969, footnoted (on the Shanhua article) to the same
+  enthusiast site.
+- **zh.wikipedia, `嘉義車站`** and **`民雄車站`**, SECONDARY. Both state the
+  Chiayi–Minxiong double track completed in 1942, without a footnote on
+  that specific sentence at the station-article level — possibly the same
+  underlying claim repeated across two pages rather than two independent
+  corroborations.
+
+**Conflict, not resolved**: TRA's own table records one aggregate 1957
+(construction) / 1970 (operation-start) project for the full 50.1 km
+corridor. The secondary chronology above instead describes: parts of the
+same corridor already double-tracked before 1945 (1942, 1943, at the
+corridor's edges), and other parts still being completed piecemeal as late
+as mid-1970 (Shanhua–Xinshi in 1969; Nanjing–Linfengying on 11 June 1970).
+TRA's table contains no pre-1945 row anywhere for this corridor — a scope
+limit of the table (it appears to record only TRA/postwar-attributed
+construction), not evidence the 1942/1943 claims are false. A plausible
+but **unstated-by-any-source** reading is that Japanese-era double track
+in parts of this corridor was later reduced to single track (a documented
+wartime practice elsewhere) and TRA's 1957–1970 「添築雙線」project rebuilt
+it; this is flagged as a hypothesis only, not published as a claim.
+
+**A caught secondary-citation error, corrected before use**: an initial
+automated read of the 縱貫線(南段) article's `1971年6月28日` entry
+mischaracterized it as "full double-track Changhua–Tainan achieved." A
+stricter re-fetch shows this date is specifically about the commissioning
+of the second-generation Zhuoshui River Bridge between Ershui and Linnei —
+well north of this corridor, and not a full-corridor-complete statement.
+Not used on the content page.
+
+### Checked and failed (this pass)
+
+- `http://trstour.com/shan-hua.htm` and `http://trstour.com/index1.htm`
+  (the enthusiast site underlying the 1942/1943/1969 dates above) — both
+  failed with an invalid self-signed HTTPS certificate, 2026-08-29.
+- web.archive.org snapshots of both trstour.com pages — the fetch tool
+  refuses this host entirely in this environment.
+- 交通部交通研究所編《中華民國59年交通年鑑》(1971) and 《中華民國60年交通年鑑》
+  (1972), the government yearbooks the 縱貫線(南段) article cites for its
+  1970/1971 entries — not found at any accessible URL.
+- TRA construction-history PDF row 44 — could not be re-parsed this pass
+  (WebFetch cannot extract this PDF's binary content; the Read-tool
+  PDF-image fallback needs `pdftoppm`, not installed in this environment,
+  and no Bash tool was available to this scout to run the project's
+  documented `pdftotext` workaround). Row 44's values were not
+  re-independently verified this pass, though they match the first pass's
+  reading already cited above.
+- General web search (Bing returned unrelated content; DuckDuckGo returned
+  a CAPTCHA) — not usable; WebSearch tool budget was exhausted before this
+  pass began, so 自由時報/聯合報/中央社 archives were not checked at all this
+  pass — the clearest next step for a further research session.

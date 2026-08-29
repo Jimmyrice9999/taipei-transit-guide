@@ -37,3 +37,61 @@ as-built track plan would settle the day-level milestone, exact boundary and
 relationship between the historical row and current route data. Until then,
 71.7 km, 1957, 1970 and `添築雙線` remain the operator's historical record,
 while current station and TDX membership are retained as separate layers.
+
+## Update, 29 August 2026 — a staged, internally-conflicting sub-segment chronology
+
+- **zh.wikipedia, `縱貫線 (南段)`**, raw wikitext, SECONDARY. Batches:
+  1970-06-11 (Changhua-Yuanlin, Shetou-Ershui, Linnei-Douliu), footnoted to
+  中華民國59年《交通年鑑》(1971); 1970-10-06 (Yuanlin-Shetou, Douliu-Minxiong,
+  Linfengying-Shanhua), same footnote; 1971-06-28 (Ershui-Linnei, requiring
+  a new Zhuoshui River bridge), footnoted to 中華民國60年《交通年鑑》(1972),
+  described as what "substantively completed" double track across the
+  wider Changhua-Tainan corridor.
+- **zh.wikipedia, `二水車站`**, SECONDARY. Tianzhong-Ershui: 25 August 1969,
+  citing a contemporary 臺灣民聲日報 article (1969-08-19). Ershui-Linnei:
+  28 June 1971, citing a different 民聲日報 article (1971-06-29).
+- **zh.wikipedia, `田中車站 (臺灣)`**, SECONDARY. Tianzhong-Ershui: 11 June
+  1970, citing 中華民國59年《交通年鑑》(1971) — one year later than Ershui
+  Station's newspaper-sourced date for the identical segment.
+- **zh.wikipedia, `林內車站`**, SECONDARY. Linnei-Douliu: 11 June 1970,
+  citing the same 1971 yearbook. Ershui-Linnei: 28 June 1971, citing 中華民國
+  60年《交通年鑑》(1972) — agrees with Ershui Station's independent citation.
+  Also carries its own footnote flagging a third value for Ershui-Linnei,
+  6 October 1970, from the enthusiast site 臺灣驛站之旅 — a source `縱貫線
+  (南段)`'s own explicit 1970-10-06 completion list does not include this
+  segment in, weighing against but not disproving the enthusiast claim.
+- **zh.wikipedia, `民雄車站`**, SECONDARY. Corroborates TRA table row 21
+  (a separate, Japanese-era 1938/1942 Minxiong-Chiayi double-track entry,
+  9.3 km) as distinct from this page's postwar 71.7 km Changhua-Minxiong
+  row.
+
+### Conflicts, not resolved
+
+1. **Tianzhong-Ershui**: 25 August 1969 (newspaper) vs. 11 June 1970
+   (yearbook) — a full year apart, for the identical segment.
+2. **Ershui-Linnei**: 28 June 1971 (two independent sources: a 1971
+   newspaper and a 1972 yearbook) vs. 6 October 1970 (one enthusiast site,
+   contradicted by a third source's own explicit completion list).
+3. None of TRA's own PDF or HTML table entries were re-independently
+   verified against this sub-segment material this pass — the 71.7 km
+   aggregate figure stands as the operator's own scope, unreconciled with
+   any of the sub-segment dates above.
+
+### A PDF/HTML year discrepancy noted but not resolved
+
+The existing research file's own PDF quote reads `民國47年1957` (ROC 47 =
+1958, not 1957) against its HTML quote of `民國四六年 1957` (ROC 46 = 1957,
+consistent). This pass could not re-open the PDF to check whether "47" is
+a genuine PDF value or an earlier transcription slip — flagged for a
+future pass with a working PDF-extraction path, not asserted as an error
+in either direction.
+
+### Checked and failed (this pass)
+
+- TRA construction-history PDF re-extraction — WebFetch could not parse
+  the binary; no `pdftotext` fallback available to this scout.
+- `http://taipei100.blogspot.com/2013/07/1970.html` (the blog cited for a
+  1970-10-24 Changhua ceremony) — HTTP 404, live and archived.
+- web.archive.org snapshots generally — fetch tool refuses this host.
+- General web search (Bing, Google, DuckDuckGo) — all unusable; WebSearch
+  budget exhausted before this pass began.

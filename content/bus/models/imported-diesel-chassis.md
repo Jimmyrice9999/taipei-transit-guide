@@ -340,6 +340,8 @@ reportedly bought 30 Scania units in 2012 — but this rests on an
 unfootnoted wiki claim not corroborated by the operator's own site, which
 names no vehicle brand at all[^wiki-ubus].
 
+![A blue Scania K380 coach operated by Capital Bus (首都客運) under its Capital Star (首都之星) intercity brand, bound for Taipei.](/images/bus/models/scania-k380-800.webp "A Capital Bus (首都客運) Scania K380, a different operator from the 統聯客運 fleet this section's facts describe, shown here to illustrate the chassis. — SCANIA K380 · CC BY-SA 4.0")
+
 ## MAN
 
 德曼汽車集團 (Deman Auto Group) has held exclusive Taiwan distribution for

@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27284,
-    "tbc": 4647,
+    "sourced": 27344,
+    "tbc": 4648,
     "asserted": 0,
-    "meta": 125
+    "meta": 127
   },
   "files": [
     {
@@ -9826,19 +9826,19 @@
     },
     {
       "file": "content/rail/history/changhua-minxiong-double-track.md",
-      "sources": 5,
-      "sourced": 14,
+      "sources": 8,
+      "sourced": 17,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/history/chiayi-xinshi-double-track.md",
-      "sources": 5,
-      "sourced": 14,
+      "sources": 8,
+      "sourced": 17,
       "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/rail/history/chishang-haiduan-single-track.md",
@@ -9882,8 +9882,8 @@
     },
     {
       "file": "content/rail/history/dongshan-su-aoxin-double-track.md",
-      "sources": 6,
-      "sourced": 16,
+      "sources": 9,
+      "sourced": 20,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -9898,8 +9898,8 @@
     },
     {
       "file": "content/rail/history/fengyuan-dongshi-line.md",
-      "sources": 6,
-      "sourced": 15,
+      "sources": 9,
+      "sourced": 20,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -10026,8 +10026,8 @@
     },
     {
       "file": "content/rail/history/jianan-qingshui-double-track.md",
-      "sources": 5,
-      "sourced": 15,
+      "sources": 8,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -10130,16 +10130,16 @@
     },
     {
       "file": "content/rail/history/ruifang-shenao-line.md",
-      "sources": 6,
-      "sourced": 17,
+      "sources": 8,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/history/sanmin-station-track.md",
-      "sources": 5,
-      "sourced": 17,
+      "sources": 8,
+      "sourced": 21,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -10154,9 +10154,9 @@
     },
     {
       "file": "content/rail/history/shanhua-station-platform.md",
-      "sources": 5,
-      "sourced": 17,
-      "tbc": 0,
+      "sources": 9,
+      "sourced": 22,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -10170,8 +10170,8 @@
     },
     {
       "file": "content/rail/history/shenao-line.md",
-      "sources": 6,
-      "sourced": 16,
+      "sources": 9,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -11418,8 +11418,8 @@
     },
     {
       "file": "content/rail/operators/trtc.md",
-      "sources": 3,
-      "sourced": 3,
+      "sources": 7,
+      "sourced": 7,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -14946,11 +14946,11 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 304,
-      "sourced": 423,
+      "sources": 325,
+      "sourced": 449,
       "tbc": 9,
       "asserted": 0,
-      "meta": 8
+      "meta": 9
     },
     {
       "file": "content/ticketing/guides/fare-history.md",

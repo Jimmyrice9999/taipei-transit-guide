@@ -3,7 +3,11 @@ title: "Hamasen (O1) — Kaohsiung Metro"
 summary: "Hamasen (哈瑪星), TDX station O1, with current KRTC line membership, coordinates and source update fields."
 order: 1
 operator: KRTC
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: krtc/stations/hamasen
+  alt: The concourse at Hamasen Station, with escalators and stairs leading down to the platform level and an overhead sign reading "Platform".
+  caption: The concourse at Hamasen (哈瑪星) Station, above the platform level.
 facts:
   - label: "Station ID"
     value: "O1"

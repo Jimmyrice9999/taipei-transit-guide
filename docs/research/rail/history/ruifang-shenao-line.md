@@ -40,3 +40,37 @@ track-removal chronology and the relationship between the 6.3 km construction
 entry and the later 4.2/4.7 km passenger route. Until those records are found,
 the operator table, museum history and current passenger/data boundaries remain
 separate.
+
+## Update, 29 August 2026 — a 2024-2025 closure, and a mid-2014 through-running extension not previously recorded
+
+- **TRA's own restoration-note PDF, re-read in full this pass**: beyond the
+  9 January 2014 Ruifang-Haikeguan reopening already cited, the same PDF
+  states infrastructure/tourism-facility preparation was already complete
+  by end of 2010 (diesel railcars reassigned from other branch lines), and
+  that from mid-July 2014 TRA extended the restored passenger service
+  through to Jingtong (菁桐) on the Pingxi Line — Jingtong-Haikeguan, still
+  10 daily round trips, extra carriages added on holidays. Not currently
+  reflected on the content page; worth adding in a future pass alongside a
+  citation check of exactly which PDF passage this comes from.
+- **Newtalk 新聞, 2024-03-15**, `https://newtalk.tw/news/view/2024-03-15/912388`.
+  SECONDARY. Reports slope-reinforcement work closing Haikeguan-Badouzi
+  from 9 April 2024, 20 services shortened.
+- **中華日報, 2025-02-25**, `https://www.cdns.com.tw/articles/1173872`.
+  SECONDARY. Reports the same closure completed 15 January 2025, full
+  service resumed 26 February 2025; cause given as poor lower-slope
+  stability. Several other outlets (Yahoo奇摩新聞, 青年日報, 屏東時報,
+  LTVNews) carried the same headline for the same date but were not all
+  independently fetched — only these two were read in full.
+- No TRA primary announcement for either the 2024 closure or the 2025
+  reopening was found.
+
+### Checked and failed (this pass)
+
+- Taipower primary source for the coal-rail connection — blank/JS-rendered
+  page, no Taipower primary reached.
+- 青年日報 (ydn.com.tw) full-page fetch for the 2025 reopening — HTTP 403.
+- UDN article on the same reopening, cited elsewhere — no working URL
+  located.
+- General web search — Google/Bing/DuckDuckGo all unusable (error pages,
+  irrelevant cached content, CAPTCHA); WebSearch budget exhausted before
+  this pass began.

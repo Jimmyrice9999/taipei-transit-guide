@@ -15902,8 +15902,18 @@
     },
     {
       "page": "/rail/history/changhua-minxiong-double-track/",
+      "name": "縱貫線",
+      "href": "/rail/history/japanese-era-trunk-line/"
+    },
+    {
+      "page": "/rail/history/changhua-minxiong-double-track/",
       "name": "Taiwan High Speed Rail",
       "href": "/rail/thsr/lines/thsr/"
+    },
+    {
+      "page": "/rail/history/changhua-minxiong-double-track/",
+      "name": "Tainan",
+      "href": "/rail/thsr/stations/tainan/"
     },
     {
       "page": "/rail/history/changhua-minxiong-double-track/",
@@ -15912,8 +15922,18 @@
     },
     {
       "page": "/rail/history/chiayi-xinshi-double-track/",
+      "name": "縱貫線",
+      "href": "/rail/history/japanese-era-trunk-line/"
+    },
+    {
+      "page": "/rail/history/chiayi-xinshi-double-track/",
       "name": "Taiwan High Speed Rail",
       "href": "/rail/thsr/lines/thsr/"
+    },
+    {
+      "page": "/rail/history/chiayi-xinshi-double-track/",
+      "name": "Tainan",
+      "href": "/rail/thsr/stations/tainan/"
     },
     {
       "page": "/rail/history/chiayi-xinshi-double-track/",
@@ -16436,6 +16456,11 @@
       "href": "/rail/alishan/lines/alishan-forest-railway/"
     },
     {
+      "page": "/rail/history/shanhua-station-platform/",
+      "name": "Shalun",
+      "href": "/rail/metro/stations/v27/"
+    },
+    {
       "page": "/rail/history/shanli-taitung-double-track/",
       "name": "Taiwan High Speed Rail",
       "href": "/rail/thsr/lines/thsr/"
@@ -16447,7 +16472,7 @@
     },
     {
       "page": "/rail/history/shenao-line/",
-      "name": "Shen'ao Line",
+      "name": "深澳線",
       "href": "/rail/history/ruifang-shenao-line/"
     },
     {
@@ -22712,11 +22737,6 @@
     },
     {
       "page": "/rail/operators/trtc/",
-      "name": "Maokong Gondola",
-      "href": "/rail/cable/lines/maokong-gondola/"
-    },
-    {
-      "page": "/rail/operators/trtc/",
       "name": "Taiwan High Speed Rail",
       "href": "/rail/thsr/lines/thsr/"
     },
@@ -27927,6 +27947,11 @@
     },
     {
       "page": "/ticketing/guides/conflicts-index/",
+      "name": "縱貫線",
+      "href": "/rail/history/japanese-era-trunk-line/"
+    },
+    {
+      "page": "/ticketing/guides/conflicts-index/",
       "name": "Zuoying",
       "href": "/rail/thsr/stations/zuoying/"
     },
@@ -27984,6 +28009,11 @@
       "page": "/ticketing/guides/conflicts-index/",
       "name": "Nangang",
       "href": "/rail/metro/stations/bl22/"
+    },
+    {
+      "page": "/ticketing/guides/conflicts-index/",
+      "name": "Shalun",
+      "href": "/rail/metro/stations/v27/"
     },
     {
       "page": "/ticketing/guides/fare-history/",

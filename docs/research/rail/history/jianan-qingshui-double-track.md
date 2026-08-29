@@ -44,3 +44,69 @@ relationship between the historical row and current route data. Until then,
 6.0 km, 1974, 1974 and `添築雙線` remain the operator PDF's historical record,
 while the current HTML omission, station pages and TDX membership are retained
 as separate layers.
+
+## Update, 29 August 2026 — a second operator source and wider corridor context
+
+A second pass found a second, independent TRA open-data distribution of the
+same construction-chronology dataset, plus wider Coast Line and station
+naming-history context.
+
+- **TRA open-data CSV, dataset id 77240**, `https://data.gov.tw/dataset/77240`,
+  download `https://ods.railway.gov.tw/tra-ods-web/ods/download/dataResource/8963bc574e36428cac242c40372bbaa8`.
+  PRIMARY. Row: `甲南─清水(雙線),6,臺灣鐵路管理局,1974,1974,添築雙線。` — matches the
+  PDF exactly. Neighbouring rows: 苑裡–日南 (7.8 km, 1974/1974), 新埔–通霄
+  (5.8 km, 1974/1974), 大甲–甲南 (5.3 km, construction 1974, opened 1977),
+  甲南–臺中港 (7.8 km, 1973/1974, no 添築雙線 note — a different branch, see
+  below). None of these rows name a shared programme. Note: extracted by
+  WebFetch's page-reading model, not independently read byte-for-byte —
+  high confidence but not a raw-file read.
+- **zh.wikipedia, `清水車站 (台灣)`** (note: simplified-character disambiguator;
+  the traditional-character URL 404s), states present-day track
+  configuration is double north of Qingshui, single south — unfootnoted,
+  no date given, geographically consistent with but not confirming this
+  page's 1974 record.
+- **Taichung Port station naming/rename conflict**: `臺中港車站`
+  (zh.wikipedia) gives 1 January 1985 for the Jianan→Taichung Port rename,
+  citing the 1985 TRA yearbook (not independently opened); `台中港線`
+  (zh.wikipedia, on the separate harbor branch line) gives 1 April 1985 for
+  the same rename, citing different news sources. Unresolved, both
+  published.
+
+### A separate branch line sharing the same junction station — not conflated
+
+`甲南–臺中港` (Jianan–Taichung Harbor branch), 7.8 km per both the TRA CSV
+and zh.wikipedia's infobox, is a physically separate spur to the harbor
+itself, not a double-tracking of the coast mainline. zh.wikipedia's
+`台中港線` article (unverified footnotes: four news citations not
+independently fetched) describes it as originally built 1974 under a
+different authority (`台中港工程局`), with operating rights transferred to
+TRA on 1976-10-31 — conflicting with the TRA CSV's own attribution of the
+branch to TRA itself as builder, 1973/1974. Both attributions published,
+not resolved. A low-confidence secondary (a blog snippet, never
+independently fetched) gave a conflicting ~13 km length for this branch
+against the CSV/Wikipedia-agreeing 7.8 km — flagged but not used, since the
+13 km source was never opened and its measurement basis is unknown.
+
+### An unverified date conflict, not published on the content page
+
+A search-snippet-only lead pointed to an enthusiast site
+(`http://trstour.com/cing-shuei.htm`) allegedly stating double-tracking
+between Qingshui and Jianan completed 15 November, ROC year 65 (1976) — a
+full year later than TRA's 1974 date. Every fetch attempt failed (self-signed
+certificate; web.archive.org refused by the fetch tool). Per rule 2, this is
+recorded here as an unresolved, unverified lead only — it is NOT published
+on the content page and must not be treated as an established conflict
+until the source itself can actually be read.
+
+### Checked and failed (this pass)
+
+- `http://trstour.com/cing-shuei.htm` — self-signed certificate, twice.
+- web.archive.org snapshot of the same page — fetch tool refuses this host
+  entirely.
+- TRA PDF re-extraction for surrounding rows — WebFetch could not parse
+  the PDF binary this pass; no `pdftotext` fallback available to this scout.
+- 自由時報 news footnotes underlying the `台中港線` Wikipedia article (four
+  citations) — not independently located.
+- 1985 TRA statistical yearbook (中華民國74年臺灣鐵路統計年報) — not located.
+- General web search (Bing, DuckDuckGo) — unusable (irrelevant results;
+  CAPTCHA); WebSearch budget exhausted before this pass began.

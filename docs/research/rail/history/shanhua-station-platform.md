@@ -46,3 +46,62 @@ measurement endpoints would settle the missing details. Until then, row 118 is
 kept as a historical 0.3 km Shanhua Station platform subject with 2017/2017 fields
 and the Add platform wording, while current station 4170 and the WL position remain
 a separate live-data layer.
+
+## Update, 29 August 2026 — purpose and date from secondary sources
+
+A second research pass, still unable to find any TRA-authored account of row
+118 beyond its year-level fields, found secondary material that gives the
+platform addition's purpose and a day-level date.
+
+- **PeoPo (公視 PeoPo 公民新聞), 2017-04-10, `善化車站第二月台配合本月底改點啟用 沙崙線列車始發`**,
+  `https://www.peopo.org/news/333307`. SECONDARY, Medium confidence (citizen
+  journalism, internally detailed, corroborated in outline by later
+  independent reporting). States the new platform lets Shalun Line trains
+  originate at Shanhua instead of running empty from Nanke, gives an opening
+  date of 27 April 2017, and names eight renumbered train workings. Original:
+  `對於善化車站欲前往沙崙線的旅客一直以來有很大的不便，有『看得到車，搭不到車』的窘況`.
+- **zh.wikipedia, `善化車站`**, `https://zh.wikipedia.org/wiki/善化車站`. SECONDARY,
+  cites the PeoPo article for the same date and adds an unverified claim
+  (Shanhua was previously TRA's only single-platform second-class station)
+  not found in the cited article itself — flagged as unverified, not used on
+  the content page.
+- **Liberty Times (自由時報), 2024-06-27/28**, `https://news.ltn.com.tw/news/life/breakingnews/4719121`
+  and `https://news.ltn.com.tw/news/life/paper/1653707`. SECONDARY. Describe a
+  separate, later cross-platform reconstruction plan (NT$20m planning fee,
+  NT$715m estimated construction for Shanhua alone, part of a combined
+  ~NT$1.4bn plan with Longtian Station) — not the 2017 platform addition.
+  Confirms Shanhua's role as the Shalun Line's originating station and >3,000
+  daily trips as of 2024.
+- **PTT Railway board, 2022-03-05, `[新聞] 台鐵善化站 交通局力爭擴建`**,
+  `https://www.ptt.cc/bbs/Railway/M.1646454709.A.CEB.html`. SECONDARY repost
+  of news coverage. Describes a 2020-proposed "Platform 1 expansion and
+  station-yard improvement," a third, differently-named and differently-dated
+  project.
+
+**Conflict/ambiguity, not resolved**: three chronologically distinct episodes
+of platform work at Shanhua now have some documentation — the 2017 `增設月台`
+row, a 2020-proposed "Platform 1 expansion," and a 2020s cross-platform
+reconstruction plan reported in 2022–2024 — and no source read explicitly
+states whether any two of these describe the same physical platform. Do not
+merge them.
+
+### Checked and failed (this pass)
+
+- CNA/中央社 search endpoint (`cna.com.tw/search/hydsearchws.aspx`) — tried
+  2026-08-29 with two encodings; both HTTP 404. Endpoint likely wrong path,
+  not a confirmed zero-result search.
+- UDN/聯合報 site search for `善化車站 月台` — tried 2026-08-29; returned
+  "共找到0筆" (0 results) for 2017-specific coverage.
+- Liberty Times site search for 2017-specific coverage (as opposed to the
+  2024 reconstruction articles already found) — tried 2026-08-29 with two
+  keyword encodings; both HTTP 404. Unresolved, not a confirmed zero.
+- TRA's own primary announcement of the April 2017 timetable change — several
+  guessed URL paths on railway.gov.tw all returned 404; the operator's
+  current construction-history HTML (already recorded above as not
+  containing row 118) was rechecked in full and still does not contain it.
+- web.archive.org fetch of the PeoPo article — refused by the fetch tool for
+  that domain; relied on the live peopo.org page instead, which was
+  reachable.
+- General web search (Google, Bing, DuckDuckGo, Marginalia) for 2017-specific
+  coverage — all either blocked, geo-mismatched, or CAPTCHA'd; WebSearch tool
+  budget was exhausted before any query in this pass could run.

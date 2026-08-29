@@ -3,7 +3,11 @@ title: "Formosa Boulevard (O5) — Kaohsiung Metro"
 summary: "Formosa Boulevard (美麗島), TDX station O5, with current KRTC line membership, coordinates and source update fields."
 order: 4
 operator: KRTC
-updated: 2026-08-24
+updated: 2026-08-29
+hero:
+  image: krtc/stations/formosa-boulevard
+  alt: A street-level view of Formosa Boulevard Station's glass-panelled entrance structure, with traffic on Zhongshan 1st Road in the foreground.
+  caption: Formosa Boulevard (美麗島) Station's street-level entrance structure, on Zhongshan 1st Road.
 facts:
   - label: "Station ID"
     value: "O5"

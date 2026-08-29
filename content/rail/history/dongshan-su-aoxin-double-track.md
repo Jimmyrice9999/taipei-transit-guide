@@ -2,7 +2,7 @@
 title: The Taiwan Railways Dongshan–Su'aoxin Double Track
 summary: A 5.4 km TRA construction-history segment recorded in both operator presentations as built in 1974 and opened in 1977 with an added second track, while current TDX data places Xinma between its named endpoints.
 order: 22
-updated: 2026-08-26
+updated: 2026-08-29
 aliases:
   - 冬山─蘇澳新站(雙線)
   - Dongshan–Su'aoxin Station
@@ -99,6 +99,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull places Dongshan at source sequence 23 and 85.1 km, Xinma at 24 and 89.3 km, and Su'aoxin at 25 and 90.2 km on EL; the content layer presents these ordered positions as 24, 25 and 26.
+  - id: zhwiki-yilan-line
+    title: Yilan Line (Wikipedia article)
+    titleOriginal: 宜蘭線
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/宜蘭線
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: States double track was added between 1974 and 1978 across three sections including Dongshan–Xinma–Su'aoxin, footnoted to a 1978 MOTC transport yearbook this page could not access directly; also states the line's 1980 upgrade from branch to trunk followed the separate North-Link Line's opening, not this double-tracking project.
+  - id: zhwiki-xinma-station
+    title: Xinma Station (Wikipedia article)
+    titleOriginal: 新馬車站
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/新馬車站
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Gives Xinma's naming history (新城 to 1975, 聖湖 1975–1983, 新馬 from 1983) and states the 1975 rename coincided with a Nanshenghu(now Su'aoxin)–Dongshan double-tracking project that shortened its spacing to Su'aoxin to 1.1 km; the rename date is cited to the TRA statistical yearbook, the double-track/spacing claim only to an enthusiast site this page could not reach.
+  - id: zhwiki-suaoxin-station
+    title: Su'aoxin Station (Wikipedia article)
+    titleOriginal: 蘇澳新站
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/蘇澳新站
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Gives Su'aoxin's naming history — opened 1968 as Nanxincheng (南新城), renamed Nanshenghu (南聖湖) 1975-01-01, renamed to the current Su'aoxin 1982-01-01 — each date cited to a TRA yearbook or a municipal gazetteer this page did not independently open.
 ---
 
 ## One historical double-track record
@@ -139,6 +166,47 @@ The current Su'aoxin page also reports a station notice that Xinma is
 temporarily out of service and directs passengers to transfer at Su'aoxin.[^tra-station-su-aoxin]
 That live service notice does not change Xinma's membership in the committed
 TDX station sequence or establish the historical construction boundary.[^tra-station-su-aoxin][^tdx-tra-line]
+
+## A named intermediate station, and its own naming history
+
+A secondary source on the Yilan Line gives a wider date range for this
+double-tracking than the operator's own 1974/1977 row: "between 1974 and
+1978," covering this segment together with two others further north,
+footnoted to a 1978 transport yearbook this page could not access
+directly.[^zhwiki-yilan-line] The same source states the line's later 1980
+upgrade from branch to trunk followed the separate North-Link Line's
+opening, not this double-tracking project — the two are described as
+distinct, not as one programme.[^zhwiki-yilan-line]
+
+Xinma, the station TDX places between the two named endpoints, is not
+simply a later addition to the current data layer: a secondary source on
+Xinma's own naming history states the station was renamed from Xincheng
+(新城) to Shenghu (聖湖) on 1 June 1975 — a date it cites to the TRA
+statistical yearbook — and that the same year, the Nanshenghu (南聖湖, now
+Su'aoxin)–Dongshan double-tracking project this page documents shortened
+the station's spacing to Su'aoxin to 1.1 km, a claim cited only to an
+enthusiast site this page could not reach to verify.[^zhwiki-xinma-station]
+The station was renamed again, to its current Xinma, in 1983.[^zhwiki-xinma-station]
+A further, later, and separate 2003 electrification project is stated to
+have shortened the same interval again, to 0.9 km — a different project
+from the one in this page's scope, reported here only to avoid confusing
+the two if the current 5.1 km TDX figure is compared against either
+historical value.[^zhwiki-xinma-station]
+
+Su'aoxin's own naming history, per the same source family, opened in 1968
+as Nanxincheng (南新城), was renamed Nanshenghu (南聖湖) on 1 January 1975,
+and reached its current name only on 1 January 1982 — five years after the
+operator's recorded 1977 operation-start year for this
+double-track.[^zhwiki-suaoxin-station] At the construction and operation
+dates this page's sourced facts describe, neither endpoint carried its
+present-day name.[^zhwiki-suaoxin-station]
+
+These naming and midpoint-station details come from secondary sources that
+cite primary TRA yearbooks and a municipal gazetteer this page did not
+independently open, and one detail (the 1975 distance-shortening) traces
+only to an unreachable enthusiast site.[^zhwiki-xinma-station][^zhwiki-suaoxin-station]
+They are reported as a lead on the corridor's history, not as confirmed
+operator fact.
 
 ## Records still missing
 

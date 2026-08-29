@@ -43,3 +43,72 @@ as-built track plan would settle the day-level milestones, exact construction
 boundary and relationship between the 5.4 km record and the current 5.1 km
 distance-field interval. Until then, both measures and the current Xinma
 intermediate station are retained separately.
+
+## Update, 29 August 2026 — Xinma is the project's historical midpoint, not just a current-layer fact
+
+A second pass found that Xinma (the current intermediate station already
+noted from TDX data) is directly named as the midpoint of this same
+double-tracking project in its own naming-history article, and that both
+endpoint stations carried different names at the time of construction.
+
+- **zh.wikipedia, `宜蘭線`**, `https://zh.wikipedia.org/wiki/宜蘭線`, SECONDARY.
+  States double-tracking "between 1974 and 1978" across three sections
+  including 冬山=聖湖（今新馬站）=南聖湖（今蘇澳新站）, footnoted to
+  中華民國66年《交通年鑑》(1978), p.223 — not independently accessed. A wider
+  range than the operator's own 1974/1977 row for this specific segment; not
+  necessarily contradictory (a multi-year programme can have a narrower
+  single-segment record), but not reconciled by any source read.
+- **zh.wikipedia, `新馬車站`**, `https://zh.wikipedia.org/wiki/新馬車站`,
+  SECONDARY. States the station was renamed 新城→聖湖 on 1 June 1975 (cited
+  to the TRA 1975 Statistical Yearbook, 大事紀要, p.294 — not independently
+  opened), and that the same year the Nanshenghu–Dongshan double-tracking
+  project shortened its spacing to Su'aoxin to 1.1 km (cited only to an
+  unreachable enthusiast site, trstour.com). Renamed again, to 新馬, on
+  1983-04-01. A separate, later 2003 electrification project is stated to
+  have shortened the same interval again, to 0.9 km.
+- **zh.wikipedia, `蘇澳新站`**, `https://zh.wikipedia.org/wiki/蘇澳新站`,
+  SECONDARY. Naming history: opened 1968-04-15 as 南新城 (cited to a 1968
+  newspaper via a public library digital archive, and to a TRA 30th
+  North-Link-anniversary volume); renamed 南聖湖 1975-01-01 (cited to the TRA
+  1975 yearbook and a 2013 municipal gazetteer); renamed to the current
+  蘇澳新站 only on 1982-01-01 — five years after this page's recorded 1977
+  operation-start year. None of these citations were independently opened.
+
+**Conflict, not resolved**: three different year statements now exist for
+this corridor — the operator's own 1974 (construction) / 1977
+(operation-start) row for the specific 5.4 km entry; Wikipedia's combined
+"1974–1978" range covering three sections together; and Wikipedia's implied
+1975 for the Xinma-adjacent portion specifically (tied to Xinma's 1 June
+1975 rename). Published as three separate values; none is picked.
+
+**Methodological note**: a second independent fetch of the operator's HTML
+construction table returned this entry as row 29, not row 28 as recorded
+above from the first fetch — most likely an artefact of how the fetch
+tool's summarizing model counts table rows across calls, since the
+underlying values (5.4 km, TRA, 1974/1977, 添築雙線) were identical and
+stable across every fetch. Row-number citations from this table should be
+treated cautiously; the content values are the load-bearing fact, not the
+row index.
+
+### Checked and failed (this pass)
+
+- `http://trstour.com/yi-lan%20line.htm` (the enthusiast site behind the
+  Xinma 1975 distance-shortening claim) — failed with an invalid
+  self-signed HTTPS certificate, 2026-08-29.
+- web.archive.org snapshots of the same page, and of the TRA yearbook
+  citation pages on twinfo.ncl.edu.tw — the fetch tool refuses
+  web.archive.org entirely in this environment; the twinfo.ncl.edu.tw page
+  returned with no extractable text.
+- 1978《交通年鑑》p.223 and 1975《臺灣鐵路統計年報》大事紀要 p.294 — page
+  references to physical government yearbooks with no accessible digital
+  copy found.
+- Re-parsing the TRA construction-history PDF for rows 46–56 to cross-check
+  the row-numbering discrepancy — WebFetch could not parse the PDF's binary
+  content this pass; no `pdftotext` fallback was available to this scout.
+- Contractor, project cost, day/month milestones, named engineering
+  structures, and any construction dispute — checked across the TRA table,
+  both TRA station pages, and all five zh.wikipedia articles read this
+  pass (宜蘭線, 北迴線, 冬山車站, 新馬車站, 蘇澳新站); none supply any of these.
+  Confirmed absent from everything checked, not merely unsearched.
+- 自由時報/聯合報/中央社 archives — not searched this pass; WebSearch budget
+  was exhausted before this scout began.

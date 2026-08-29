@@ -948,6 +948,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full ten-page operator PDF. Its row 43 repeats the Changhua–Minxiong double-track segment as 71.7 km, with 1957 construction and 1970 operation-start fields."
+  - id: "rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm"
+    title: "Longitudinal Line (Southern Section) (Wikipedia article)"
+    titleOriginal: "縱貫線 (南段)"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/縱貫線_(南段)"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Its raw wikitext gives a staged sub-segment chronology inside this 71.7 km corridor — three separate completion dates in 1970 (11 June, 6 October) and 1971 (28 June, for the Ershui-Linnei bridge crossing), footnoted to MOTC Transportation Research Institute yearbooks and a 1969/1971 newspaper this page did not independently open."
+  - id: "rail-history-changhua-minxiong-double-track-zhwiki-ershui-station"
+    title: "Ershui Station (Wikipedia article)"
+    titleOriginal: "二水車站"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/二水車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States Tianzhong-Ershui double-tracked 25 August 1969, citing a contemporary 1969 newspaper — a full year before Tianzhong Station's own article and the 縱貫線(南段) article give for the same segment (11 June 1970, citing a later government yearbook). Also corroborates 28 June 1971 for Ershui-Linnei against an independent citation on the Linnei Station article."
+  - id: "rail-history-changhua-minxiong-double-track-zhwiki-linnei-station"
+    title: "Linnei Station (Wikipedia article)"
+    titleOriginal: "林內車站"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/林內車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States Linnei-Douliu double-tracked 11 June 1970 (matching the 縱貫線(南段) batch) and Ershui-Linnei on 28 June 1971 (matching Ershui Station's independent citation), while also noting a third, conflicting claim from an enthusiast site that Ershui-Linnei instead completed 6 October 1970."
   - id: "rail-history-chiayi-xinshi-double-track-tra-history-page"
     title: "Railway route construction history"
     titleOriginal: "臺灣鐵路路線建造史"
@@ -966,6 +993,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full ten-page operator PDF. Its row 44 repeats the Chiayi–Xinshi double-track segment as 50.1 km, with 1957 construction and 1970 operation-start fields."
+  - id: "rail-history-chiayi-xinshi-double-track-zhwiki-longitudinal-south"
+    title: "Longitudinal Line (Southern Section)"
+    titleOriginal: "縱貫線 (南段)"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/縱貫線_(南段)"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Gives a staged, sub-segment chronology within this corridor that TRA's own aggregate 1957/1970 table row does not break out — Minxiong-Chiayi double track in 1942 and Xinshi-Tainan in 1943 (both footnoted only to an enthusiast site), and Nanjing-Linfengying double-tracking on 11 June 1970 (footnoted to a 1971 MOTC transport yearbook this page could not independently access). Not corroborated against a primary TRA source; reported as a documented conflict, not resolved."
+  - id: "rail-history-chiayi-xinshi-double-track-zhwiki-xinshi-station"
+    title: "Xinshi Station (Taiwan) (Wikipedia article)"
+    titleOriginal: "新市車站 (臺灣)"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/新市車站_(臺灣)"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the Shanhua-Xinshi double track opened 30 September 1969, footnoted (on the matching Shanhua Station article) to an enthusiast railfan site whose page could not be fetched (invalid certificate) to verify the citation."
+  - id: "rail-history-chiayi-xinshi-double-track-zhwiki-chiayi-station"
+    title: "Chiayi Station (Wikipedia article)"
+    titleOriginal: "嘉義車站"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/嘉義車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the Chiayi-Minxiong double track was completed in 1942, matching the Minxiong Station article; no footnote is attached to this specific sentence at the station-article level."
   - id: "rail-history-circular-line-0403-earthquake-bes-statement"
     title: "Circular Line statement"
     titleOriginal: "環狀線聲明稿"
@@ -993,6 +1047,42 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The operator's 12 December 2024 reopening notice. It records nine repositioned steel-box-girder spans, 139 damaged items, 1,438 replaced track baseplates, 1,050 metres of restored track, 41,500 metres of replaced cable, the 248-day repair account and the added permanent unseating and uplift-restraint devices."
+  - id: "rail-history-fengyuan-dongshi-line-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Its Fengyuan–Dongshi row gives 14.1 km, construction in 1958, operation starting in 1959 and stopping in September 1991."
+  - id: "rail-history-fengyuan-dongshi-line-taichung-dongfeng-retrospective"
+    title: "Taichung Good Life, September 2018"
+    titleOriginal: "臺中好生活2018年9月號"
+    publisher: "Taichung City Government News Bureau (臺中市政府新聞局)"
+    url: "https://www.taichung.gov.tw/media/366888/臺中好生活2018年9月號72dpi.pdf"
+    accessed: "2026-08-26"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Full municipal magazine PDF. Its local history feature records the former route, four named intermediate stops, a 14.1–14.7 km length range, the logging purpose and the 31 August 1991 shutdown; those are retained as a retrospective account rather than merged with the operator table."
+  - id: "rail-history-fengyuan-dongshi-line-forest-bureau-1991"
+    title: "ROC year 80 (1991)"
+    titleOriginal: "第十節　民國80年（1991）"
+    publisher: "Forestry and Nature Conservation Agency, Ministry of Agriculture (農業部林業及自然保育署；formerly Forestry Bureau, Council of Agriculture)"
+    url: "https://www.forest.gov.tw/0001327"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full forestry chronology. Its September 1991 entry says the Dongfeng branch had been built to move Dasyueshan Forestry Company materials and records an 11 km green-corridor plan after suspension."
+  - id: "rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line"
+    title: "Dongshi Line (Wikipedia article)"
+    titleOriginal: "東勢線"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/zh-tw/東勢線"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Gives a construction schedule (started 14 March 1958, first test train 26 December 1958, opened 12 January 1959) and a full six-stop station list with distances; cites two books this page did not independently obtain. States two construction purposes (Dasyueshan timber and Deji Dam hydroelectric materials), the second not found in the Forestry Bureau primary source."
   - id: "rail-history-forestry-railways-baxianshan-primary"
     title: "Baxianshan National Forest Recreation Area (park page)"
     titleOriginal: "八仙山國家森林遊樂區"
@@ -1047,6 +1137,33 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full operator reopening release for 12 December 2024, including nine repositioned spans and the published repair inventory."
+  - id: "rail-history-jianan-qingshui-double-track-tra-opendata-construction-csv"
+    title: "Railway Line Construction Chronology (open-data CSV)"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司), via data.gov.tw"
+    url: "https://data.gov.tw/dataset/77240"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "A second, independent TRA open-data distribution of the same construction-chronology dataset the PDF and HTML page already cite. Its 甲南─清水(雙線) row reproduces the same 6 km, 1974/1974, TRA-constructor, 添築雙線 values, and its neighbouring rows show four other Coast Line double-track segments completed in the same 1974-1977 window, none naming a shared programme."
+  - id: "rail-history-jianan-qingshui-double-track-zhwiki-qingshui-station"
+    title: "Qingshui Station (Taiwan) (Wikipedia article)"
+    titleOriginal: "清水車站 (台灣)"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/清水車站_(台灣)"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the present-day track configuration has double track north of Qingshui and single track south of it — geographically consistent with, though not dated to, this page's 1974 double-tracking of the Jianan(Taichung Port)-Qingshui section; the sentence carries no footnote of its own."
+  - id: "rail-history-jianan-qingshui-double-track-zhwiki-taichungport-station"
+    title: "Taichung Port Station (Wikipedia article)"
+    titleOriginal: "臺中港車站"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/臺中港車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the station now called Taichung Port was formerly named Jianan (甲南) and gives 1 January 1985 as its renaming date, citing the 1985 TRA statistical yearbook this page did not independently open; a second Wikipedia article on the Taichung Harbor branch line gives a conflicting 1 April 1985 date for the same rename, citing different news sources."
   - id: "rail-history-matra-dispute-ltn-2005"
     title: "Muzha metro line: Matra wins, Taipei to pay NT$1.64 billion"
     titleOriginal: "木柵捷運線 馬特拉勝訴 北市要賠16.4億"
@@ -1281,6 +1398,78 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full NTMC operator page for Jimmy Liao's line-wide Green Mountain work 閉上眼睛一下下, its V01–V11 scope and cast-bronze/painted-glass media; year, selection and cost are not published."
+  - id: "rail-history-sanmin-station-track-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Row 119 records Sanmin Station at 2.1 km with the Railway Reconstruction Bureau as constructor; its aligned chronology gives 2010 and 2017 and records 增設股道 (Add track)."
+  - id: "rail-history-sanmin-station-track-tra-achievement-page"
+    title: "Railway achievements — electrification history"
+    titleOriginal: "臺鐵電氣化沿革及歷年建設"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "States the Hualien-Taitung bottleneck double-tracking and full-line electrification programme was reviewed by the Council for Economic Planning and Development on 18 February 2008 and directed by the Executive Yuan on 13 March 2008; construction began 4 December 2010, covering 30 stations over about 155.46 km from Hualien to Taitung. Does not name Sanmin, the Railway Reconstruction Bureau's four bottleneck sections, or row 119 specifically."
+  - id: "rail-history-sanmin-station-track-zhwiki-hualien-taitung-electrification"
+    title: "Hualien-Taitung Railway Electrification (Wikipedia article)"
+    titleOriginal: "花東鐵路電氣化"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/花東鐵路電氣化"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Names Ruisui-Sanmin as one of four named bottleneck double-tracking sections in this programme, gives an Executive Yuan approval date of 13 March 2009 (a year later than the operator's own 2008 date), and states the west main line through the new Ziqiang Tunnel opened 26 September 2017, matching row 119's 2017 field at year granularity but not confirmed as the same construction record."
+  - id: "rail-history-sanmin-station-track-zhwiki-ziqiang-tunnel-hualien"
+    title: "Ziqiang Tunnel, Hualien County (Wikipedia article)"
+    titleOriginal: "自強隧道 (花蓮縣)"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/自強隧道_(花蓮縣)"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "States the new, double-track Ziqiang Tunnel between Wuhe Signal Station and Sanmin was built because the original single-track tunnel could not accommodate a second track or electrification clearances; gives a reported tunnel length of 2,676 m, which does not match row 119's 2.1 km figure — not established as measuring the same boundary."
+  - id: "rail-history-shanhua-station-platform-peopo-shanhua-2017"
+    title: "Shanhua Station's second platform to open with this month's timetable change; Shalun Line trains to originate there"
+    titleOriginal: "善化車站第二月台配合本月底改點啟用 沙崙線列車始發"
+    publisher: "PeoPo Citizen Journalism / Public Television Service (公視 PeoPo 公民新聞)"
+    url: "https://www.peopo.org/news/333307"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "A 2017-04-10 citizen-journalism article giving a day-level opening date (27 April 2017), the platform's operational purpose (letting Shalun Line trains originate at Shanhua instead of running empty from Nanke) and eight renumbered train workings. Not an operator source; the day-level date and purpose are not independently confirmed by TRA."
+  - id: "rail-history-shanhua-station-platform-zhwiki-shanhua"
+    title: "Shanhua Station (Wikipedia article)"
+    titleOriginal: "善化車站"
+    publisher: "Wikimedia Foundation / Chinese Wikipedia"
+    url: "https://zh.wikipedia.org/wiki/善化車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Cites the PeoPo article above for the same 27 April 2017 date and adds an unverified superlative claim (that Shanhua was previously TRA's only single-platform second-class station), which is not stated in the PeoPo article itself and is not used on this page."
+  - id: "rail-history-shanhua-station-platform-tra-construction-history"
+    title: "Chronological History of Railroad Construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full ten-page operator PDF. Row 118 records Shanhua Station at 0.3 km with TRA as constructor; its aligned chronology gives 2017 and 2017 and records 增設月台 (Add platform)."
+  - id: "rail-history-shanhua-station-platform-tra-station-shanhua"
+    title: "Shanhua Station information"
+    titleOriginal: "善化車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4170"
+    accessed: "2026-08-27"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full current operator station page. Its heading identifies station 4170 as Shanhua (善化)."
   - id: "rail-history-ten-major-constructions-zhwiki-ten-projects"
     title: "Ten Major Construction Projects"
     titleOriginal: "十大建設"
@@ -3428,6 +3617,46 @@ that the table's operation-start field supplies an exact commissioning date.[^ra
 - [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-history-page]
 - [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-changhua-minxiong-double-track-tra-construction-history]
 
+## The Taiwan Railways Changhua–Minxiong Double Track — A single aggregate row against a staged, conflicting sub-segment chronology
+
+Discussed on [The Taiwan Railways Changhua–Minxiong Double Track](/rail/history/changhua-minxiong-double-track/) in the source page's “A single aggregate row against a staged, conflicting sub-segment chronology” section.[^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm]
+
+### A single aggregate row against a staged, conflicting sub-segment chronology
+
+A secondary source describing the wider Longitudinal Line's southern
+section gives this 71.7 km corridor a staged chronology TRA's single
+1957–1970 row does not break out: sub-segments completing on 11 June 1970
+(Changhua–Yuanlin, Shetou–Ershui, Linnei–Douliu), 6 October 1970
+(Yuanlin–Shetou, Douliu–Minxiong), and 28 June 1971 for Ershui–Linnei —
+the last needing an entirely new bridge over the Zhuoshui River before it
+could carry double track, an event the source describes as what
+"substantively completed" double track across the wider Changhua–Tainan
+corridor.[^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm] Two individual station articles
+independently corroborate the 28 June 1971 Ershui–Linnei date, one citing a
+contemporary 1971 newspaper and the other a 1972 government
+yearbook.[^rail-history-changhua-minxiong-double-track-zhwiki-ershui-station][^rail-history-changhua-minxiong-double-track-zhwiki-linnei-station]
+
+Two sub-segment dates conflict outright. For Tianzhong–Ershui, one source
+gives 25 August 1969, citing a contemporary 1969
+newspaper.[^rail-history-changhua-minxiong-double-track-zhwiki-ershui-station] A different source gives 11 June 1970 —
+a full year later — citing a 1971-published government
+yearbook.[^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm] For Ershui–Linnei, alongside the
+28 June 1971 date two independent sources agree on, a third source (an
+enthusiast site) gives 6 October 1970 instead.[^rail-history-changhua-minxiong-double-track-zhwiki-linnei-station] None
+of these are resolved here; all values are
+published.[^rail-history-changhua-minxiong-double-track-zhwiki-ershui-station][^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm][^rail-history-changhua-minxiong-double-track-zhwiki-linnei-station]
+
+None of this secondary staging is checked against a primary TRA source
+beyond the aggregate 71.7 km row itself, and the underlying yearbooks and
+newspapers these Wikipedia articles cite were not independently opened for
+this page.[^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm][^rail-history-changhua-minxiong-double-track-zhwiki-ershui-station][^rail-history-changhua-minxiong-double-track-zhwiki-linnei-station]
+
+#### Sources for this entry
+
+- [Longitudinal Line (Southern Section) (Wikipedia article)](https://zh.wikipedia.org/wiki/縱貫線_(南段)) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-changhua-minxiong-double-track-zhwiki-longitudinal-south-cm]
+- [Ershui Station (Wikipedia article)](https://zh.wikipedia.org/wiki/二水車站) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-changhua-minxiong-double-track-zhwiki-ershui-station]
+- [Linnei Station (Wikipedia article)](https://zh.wikipedia.org/wiki/林內車站) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-changhua-minxiong-double-track-zhwiki-linnei-station]
+
 ## The Taiwan Railways Chiayi–Xinshi Double Track — One historical double-track record
 
 Discussed on [The Taiwan Railways Chiayi–Xinshi Double Track](/rail/history/chiayi-xinshi-double-track/) in the source page's “One historical double-track record” section.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
@@ -3451,6 +3680,52 @@ that the table's operation-start field supplies an exact commissioning date.[^ra
 
 - [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
 - [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-construction-history]
+
+## The Taiwan Railways Chiayi–Xinshi Double Track — A single aggregate row against a staged secondary chronology
+
+Discussed on [The Taiwan Railways Chiayi–Xinshi Double Track](/rail/history/chiayi-xinshi-double-track/) in the source page's “A single aggregate row against a staged secondary chronology” section.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
+
+### A single aggregate row against a staged secondary chronology
+
+TRA's own table treats Chiayi–Xinshi as one 50.1 km project spanning 1957 to
+1970.[^rail-history-chiayi-xinshi-double-track-tra-history-page] A secondary source describing the same stretch of
+the Longitudinal Line's southern section instead reports several distinct,
+narrower double-tracking events inside that span, at different dates: the
+Minxiong–Chiayi segment, at the corridor's north end, in 1942; the
+Xinshi–Tainan segment, immediately south of the corridor, in 1943; the
+Shanhua–Xinshi segment, near the corridor's southern end, on 30 September
+1969; and the Nanjing–Linfengying segment, nearer the corridor's middle, on
+11 June 1970.[^rail-history-chiayi-xinshi-double-track-zhwiki-longitudinal-south][^rail-history-chiayi-xinshi-double-track-zhwiki-xinshi-station] The 1942
+and 1943 dates are footnoted only to an enthusiast railfan site whose page
+could not be reached to verify what it actually says; the 1970 date is
+footnoted to a 1971 Ministry of Transportation and Communications yearbook
+this page could not independently access; the 1969 date is footnoted, on
+the matching Shanhua Station article, to the same unreachable enthusiast
+site.[^rail-history-chiayi-xinshi-double-track-zhwiki-longitudinal-south][^rail-history-chiayi-xinshi-double-track-zhwiki-xinshi-station]
+
+These claims are not necessarily inconsistent with TRA's single 1957–1970
+row — a corridor can carry double track in some pre-war sections and be
+completed piecemeal through the 1950s–1970s elsewhere — but no source
+checked for this page states that explicitly, and TRA's own construction
+table contains no pre-1945 entry anywhere for this corridor. Both readings
+are published here rather than merged into one narrative: TRA's aggregate
+record, and the secondary, staged, and only partly-verifiable
+chronology.[^rail-history-chiayi-xinshi-double-track-tra-history-page][^rail-history-chiayi-xinshi-double-track-zhwiki-longitudinal-south][^rail-history-chiayi-xinshi-double-track-zhwiki-xinshi-station]
+
+Two 嘉義車站 and 民雄車站 Wikipedia articles independently state the 1942
+Minxiong–Chiayi date, describing it as leaving the two stations Taiwan's
+longest inter-station gap on the Western Main Line before a later tunnel
+and an intermediate station were added — but neither article attaches a
+footnote to that specific sentence, so this may be one underlying claim
+repeated across two pages rather than two independent
+corroborations.[^rail-history-chiayi-xinshi-double-track-zhwiki-chiayi-station]
+
+#### Sources for this entry
+
+- [Railway route construction history](https://www.railway.gov.tw/tra-tip-web/adr/about-1-5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-chiayi-xinshi-double-track-tra-history-page]
+- [Longitudinal Line (Southern Section)](https://zh.wikipedia.org/wiki/縱貫線_(南段)) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-chiayi-xinshi-double-track-zhwiki-longitudinal-south]
+- [Xinshi Station (Taiwan) (Wikipedia article)](https://zh.wikipedia.org/wiki/新市車站_(臺灣)) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-chiayi-xinshi-double-track-zhwiki-xinshi-station]
+- [Chiayi Station (Wikipedia article)](https://zh.wikipedia.org/wiki/嘉義車站) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-chiayi-xinshi-double-track-zhwiki-chiayi-station]
 
 ## The Circular Line's 0403 earthquake — What is disputed
 
@@ -3483,6 +3758,51 @@ original cause will prevail.
 - [Circular Line statement](https://www.bes.com.tw/en/news_detail.php?id=186) — primary; BES Engineering Corporation (中華工程股份有限公司); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-bes-statement]
 - [Investigation report 114交調0005: Circular Line 0403 earthquake damage](https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082) — primary; Control Yuan of the Republic of China (監察院); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-cy-114]
 - [New Taipei Circular Line ready; full service resumes at noon](https://www.ntmetro.com.tw/basic/?mode=detail&node=754) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-ntmc-reopening]
+
+## The Taiwan Railways Fengyuan–Dongshi Line — A TRA branch built for the mountain economy
+
+Discussed on [The Taiwan Railways Fengyuan–Dongshi Line](/rail/history/fengyuan-dongshi-line/) in the source page's “A TRA branch built for the mountain economy” section.[^rail-history-fengyuan-dongshi-line-tra-construction-history]
+
+### A TRA branch built for the mountain economy
+
+Taiwan Railways’ construction-history table records the Fengyuan–Dongshi route
+as 14.1 km, constructed in 1958 and put into operation in 1959.[^rail-history-fengyuan-dongshi-line-tra-construction-history]
+The line is also called the Dongshi Line, Dongshi branch or Dongfeng Railway in
+the local historical record.[^rail-history-fengyuan-dongshi-line-taichung-dongfeng-retrospective] The Forestry
+Bureau’s 1991 chronology says the branch had been built to move materials for
+Dasyueshan Forestry Company.[^rail-history-fengyuan-dongshi-line-forest-bureau-1991]
+
+A Taichung municipal retrospective describes the route as running between
+Fengyuan and Dongshi, with Meizi, Shigang and Puzikou named between the two
+endpoints.[^rail-history-fengyuan-dongshi-line-taichung-dongfeng-retrospective] That is a retrospective stop
+sequence, not a complete period station register; the latter remains open until
+an operator or archival register is found.
+
+An encyclopedia source gives a fuller six-stop list with distances —
+Fengyuan (0.0 km, origin), Fengyuan North signal station (2.7 km), Puzikou
+(3.4 km, request stop from 1961), Shigang (6.6 km), Meizi (9.3 km, request
+stop from 1959), Dongshi (14.1 km, terminus) — and a specific construction
+schedule: work began 14 March 1958, the first test train ran 26 December
+1958, and the line opened 12 January 1959.[^rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line] That
+schedule refines, without contradicting, the operator table's 1958/1959
+year fields; it is secondary and cites two books this page did not
+independently obtain.[^rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line][^rail-history-fengyuan-dongshi-line-tra-construction-history]
+
+The same source names a second construction purpose beyond forestry
+transport — materials for the Dajia River hydroelectric scheme, naming Deji
+Dam as an example — which is not present in the Forestry Bureau's own 1991
+chronology, the only primary source checked for this
+page.[^rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line][^rail-history-fengyuan-dongshi-line-forest-bureau-1991] Both are published as
+found: the primary source names forestry transport only, the secondary
+source names forestry and hydroelectric materials, and is not treated as
+correcting or replacing the primary.[^rail-history-fengyuan-dongshi-line-forest-bureau-1991][^rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line]
+
+#### Sources for this entry
+
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-26.[^rail-history-fengyuan-dongshi-line-tra-construction-history]
+- [Taichung Good Life, September 2018](https://www.taichung.gov.tw/media/366888/臺中好生活2018年9月號72dpi.pdf) — secondary; Taichung City Government News Bureau (臺中市政府新聞局); accessed 2026-08-26.[^rail-history-fengyuan-dongshi-line-taichung-dongfeng-retrospective]
+- [ROC year 80 (1991)](https://www.forest.gov.tw/0001327) — primary; Forestry and Nature Conservation Agency, Ministry of Agriculture (農業部林業及自然保育署；formerly Forestry Bureau, Council of Agriculture); accessed 2026-08-26.[^rail-history-fengyuan-dongshi-line-forest-bureau-1991]
+- [Dongshi Line (Wikipedia article)](https://zh.wikipedia.org/zh-tw/東勢線) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-fengyuan-dongshi-line-zhwiki-dongshi-line]
 
 ## Forestry railways beyond Alishan — Records still missing
 
@@ -3536,6 +3856,50 @@ See also: [Wenhu Line](/rail/metro/lines/wenhu-line/), [Songshan–Xindian Line]
 - [Control Yuan investigation report, case 114交調0005](https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082) — primary; Control Yuan of the Republic of China (監察院); accessed 2026-08-17.[^rail-history-incidents-cy-circular-earthquake]
 - [Initial explanation of Circular Line earthquake damage](https://www.dorts.ntpc.gov.tw/news/indexInfo/1AldprRBmLK7) — primary; New Taipei City Department of Rapid Transit Systems (新北市政府捷運工程局); accessed 2026-08-17.[^rail-history-incidents-ntpc-circular-damage]
 - [Circular Line ready; full service resumes at noon](https://www.ntmetro.com.tw/basic/?mode=detail&node=754) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-incidents-ntmc-circular-reopening]
+
+## The Taiwan Railways Jianan–Qingshui Double Track — A second operator distribution, and the wider Coast Line pattern
+
+Discussed on [The Taiwan Railways Jianan–Qingshui Double Track](/rail/history/jianan-qingshui-double-track/) in the source page's “A second operator distribution, and the wider Coast Line pattern” section.[^rail-history-jianan-qingshui-double-track-tra-opendata-construction-csv]
+
+### A second operator distribution, and the wider Coast Line pattern
+
+A second, independently-fetched TRA open-data distribution of the same
+construction-chronology dataset reproduces the PDF's Jianan–Qingshui row
+exactly — 6 km, 1974 for both years, TRA as constructor, 添築雙線 — and its
+neighbouring rows show four other Coast Line double-track segments
+completed across 1974–1977 (Xinpu–Tongxiao, Yuanli–Rinan, and
+Dajia–Jianan, the last of which started construction the same year, 1974,
+but did not open until 1977), none of them naming a shared
+programme.[^rail-history-jianan-qingshui-double-track-tra-opendata-construction-csv] The dataset therefore documents
+segment-by-segment Coast Line double-tracking through the mid-1970s rather
+than one named all-at-once project, and does not tie this section to the
+Ten Major Construction Projects or any other named
+programme.[^rail-history-jianan-qingshui-double-track-tra-opendata-construction-csv]
+
+Qingshui station's own current article states that today's track
+configuration has double track to its north and single track to its
+south — a boundary that sits geographically consistent with a 1974
+Jianan(Taichung Port)–Qingshui double-tracking, since Taichung Port lies
+immediately north of Qingshui.[^rail-history-jianan-qingshui-double-track-zhwiki-qingshui-station] No date is given
+for when that configuration was reached, and the sentence carries no
+footnote of its own, so it is reported as a present-day, unattributed
+description rather than confirmation that today's boundary is the direct,
+unaltered legacy of this 1974 record.[^rail-history-jianan-qingshui-double-track-zhwiki-qingshui-station]
+
+The current Taichung Port station was itself named Jianan (甲南) until a
+1985 rename — after this page's 1974 construction record, and using a name
+this page's own sources describe.[^rail-history-jianan-qingshui-double-track-zhwiki-taichungport-station] Two
+secondary sources disagree on the rename date: one gives 1 January 1985,
+citing the TRA statistical yearbook for that year; another gives 1 April
+1985, citing separate news coverage. Neither citation was independently
+opened, and both dates are published here rather than
+chosen.[^rail-history-jianan-qingshui-double-track-zhwiki-taichungport-station]
+
+#### Sources for this entry
+
+- [Railway Line Construction Chronology (open-data CSV)](https://data.gov.tw/dataset/77240) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司), via data.gov.tw; accessed 2026-08-29.[^rail-history-jianan-qingshui-double-track-tra-opendata-construction-csv]
+- [Qingshui Station (Taiwan) (Wikipedia article)](https://zh.wikipedia.org/wiki/清水車站_(台灣)) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-jianan-qingshui-double-track-zhwiki-qingshui-station]
+- [Taichung Port Station (Wikipedia article)](https://zh.wikipedia.org/wiki/臺中港車站) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-jianan-qingshui-double-track-zhwiki-taichungport-station]
 
 ## The Matra dispute — Two disputes, not one
 
@@ -3779,6 +4143,89 @@ See the [Wenhu Line](/rail/metro/lines/wenhu-line/), [Tamsui–Xinyi Line](/rail
 - [Daqiaotou station architecture](https://www.dorts.gov.taipei/cp.aspx?n=7F9131BAD8DCF960&s=CEDF8906C30FD635) — primary; Taipei City Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-17.[^rail-history-public-art-dorts-o12-architecture]
 - [Airport MRT public art](https://www.tymetro.com.tw/tymetro-new/tw/_pages/life/public_art.html) — primary; Taoyuan Metro Corporation (桃園大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-tymc-airport-public-art]
 - [Danhai LRT public art](https://www.ntmetro.com.tw/basic/?mode=detail&node=17) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-17.[^rail-history-public-art-ntmc-danhai-public-art]
+
+## The Taiwan Railways Sanmin Station Track Record — A possible, unconfirmed connection to a named programme
+
+Discussed on [The Taiwan Railways Sanmin Station Track Record](/rail/history/sanmin-station-track/) in the source page's “A possible, unconfirmed connection to a named programme” section.[^rail-history-sanmin-station-track-tra-construction-history]
+
+### A possible, unconfirmed connection to a named programme
+
+Row 119 names the Railway Reconstruction Bureau (鐵路改建工程局) as
+constructor, an agency that existed until it merged into the current
+Railway Bureau in June 2018.[^rail-history-sanmin-station-track-tra-construction-history] The operator's own
+achievement page confirms that agency carried out a Hualien–Taitung
+bottleneck double-tracking and full-line electrification programme,
+covering about 155.46 km and 30 stations, construction beginning
+4 December 2010 — the same construction-start year row 119
+records.[^rail-history-sanmin-station-track-tra-achievement-page] That page does not name Sanmin, a specific
+bottleneck section, or row 119 itself.[^rail-history-sanmin-station-track-tra-achievement-page]
+
+A secondary source names Ruisui–Sanmin as one of four bottleneck sections
+in that same programme, and states its west main line opened through a
+newly built double-track tunnel on 26 September 2017 — matching row 119's
+2017 operation-start field at year granularity.[^rail-history-sanmin-station-track-zhwiki-hualien-taitung-electrification]
+The new tunnel is reported to have replaced a single-track tunnel that
+could not fit a second track or electrification clearances, sitting
+directly between Wuhe Signal Station and Sanmin.[^rail-history-sanmin-station-track-zhwiki-ziqiang-tunnel-hualien]
+
+This page does not treat that match as a confirmed identity. No source
+checked explicitly names row 119 as this tunnel project, and the tunnel's
+reported 2,676 m length does not match row 119's 2.1 km
+figure.[^rail-history-sanmin-station-track-zhwiki-ziqiang-tunnel-hualien] The two may describe different
+boundaries of the same work, or different work entirely; either way, the
+gap is not filled in. A secondary source also gives 13 March 2009 for the
+programme's Executive Yuan approval, a year later than the operator's own
+18 February/13 March 2008 dates — published as a conflict, not
+resolved.[^rail-history-sanmin-station-track-tra-achievement-page][^rail-history-sanmin-station-track-zhwiki-hualien-taitung-electrification]
+
+#### Sources for this entry
+
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-27.[^rail-history-sanmin-station-track-tra-construction-history]
+- [Railway achievements — electrification history](https://www.railway.gov.tw/tra-tip-web/adr/about-achievement-1) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-29.[^rail-history-sanmin-station-track-tra-achievement-page]
+- [Hualien-Taitung Railway Electrification (Wikipedia article)](https://zh.wikipedia.org/wiki/花東鐵路電氣化) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-sanmin-station-track-zhwiki-hualien-taitung-electrification]
+- [Ziqiang Tunnel, Hualien County (Wikipedia article)](https://zh.wikipedia.org/wiki/自強隧道_(花蓮縣)) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-sanmin-station-track-zhwiki-ziqiang-tunnel-hualien]
+
+## The Taiwan Railways Shanhua Station Platform Record — What the platform addition was for
+
+Discussed on [The Taiwan Railways Shanhua Station Platform Record](/rail/history/shanhua-station-platform/) in the source page's “What the platform addition was for” section.[^rail-history-shanhua-station-platform-peopo-shanhua-2017]
+
+### What the platform addition was for
+
+A 2017 citizen-journalism report — not an operator source, but internally
+detailed and consistent with later independent coverage — describes the
+purpose behind row 118's <span lang="zh-Hant">增設月台</span>: enabling Shalun Line
+(<span lang="zh-Hant">沙崙線</span>) trains to originate at Shanhua rather
+than running empty from Nanke Station to pick up passengers, a pattern the
+article says had produced visible complaints from Shanhua-area riders who
+could see trains pass without being able to board them.[^rail-history-shanhua-station-platform-peopo-shanhua-2017]
+It names eight specific train workings renumbered to originate at Shanhua
+once the new platform opened and gives a day-level opening date of 27 April
+2017 — a date not found in any operator source checked for this page, only
+in this secondary account and in zh.wikipedia's citation of
+it.[^rail-history-shanhua-station-platform-peopo-shanhua-2017][^rail-history-shanhua-station-platform-zhwiki-shanhua] The operator's own construction
+record supplies only the year 2017 in both its construction and
+operation-start fields; the day-level date refines that year rather than
+contradicting it, but it remains secondary-sourced, not
+operator-confirmed.[^rail-history-shanhua-station-platform-tra-construction-history][^rail-history-shanhua-station-platform-peopo-shanhua-2017]
+
+zh.wikipedia's article, citing the same 2017 report, additionally claims
+Shanhua had until then been the only single-platform second-class station on
+the TRA network.[^rail-history-shanhua-station-platform-zhwiki-shanhua] That specific superlative is not stated in
+the cited article itself and was not corroborated by any other source
+checked for this page; it is reported here only as an unverified claim, not
+as an established fact.[^rail-history-shanhua-station-platform-zhwiki-shanhua]
+
+The operator's current Shanhua station page still lists a Shalun–Shanhua
+working on its live train board, which is consistent with — though it does
+not by itself establish the history of — the origination pattern the 2017
+report describes.[^rail-history-shanhua-station-platform-tra-station-shanhua][^rail-history-shanhua-station-platform-peopo-shanhua-2017]
+
+#### Sources for this entry
+
+- [Shanhua Station's second platform to open with this month's timetable change; Shalun Line trains to originate there](https://www.peopo.org/news/333307) — secondary; PeoPo Citizen Journalism / Public Television Service (公視 PeoPo 公民新聞); accessed 2026-08-29.[^rail-history-shanhua-station-platform-peopo-shanhua-2017]
+- [Shanhua Station (Wikipedia article)](https://zh.wikipedia.org/wiki/善化車站) — secondary; Wikimedia Foundation / Chinese Wikipedia; accessed 2026-08-29.[^rail-history-shanhua-station-platform-zhwiki-shanhua]
+- [Chronological History of Railroad Construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局); accessed 2026-08-27.[^rail-history-shanhua-station-platform-tra-construction-history]
+- [Shanhua Station information](https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/4170) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-27.[^rail-history-shanhua-station-platform-tra-station-shanhua]
 
 ## The Ten Major Constructions and the THSR BOT crisis — Six transport projects under one 1970s banner
 

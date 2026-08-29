@@ -2,7 +2,7 @@
 title: The Taiwan Railways Ruifang–Shen'ao Line
 summary: A 6.3 km operator-table route with conflicting 1961 and 1965 opening records, passenger and freight service stopped in 1989, and passenger service restored on a shorter surviving route in 2014.
 order: 13
-updated: 2026-08-26
+updated: 2026-08-29
 aliases:
   - 瑞芳─深澳
   - 深澳線
@@ -102,6 +102,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull contains the current SA sequence of three ordered station members and a final travelled distance of 4.7 km; it is a current-data boundary, not a complete historical register.
+  - id: newtalk-shenao-2024-closure
+    title: "Heads up before you travel! TRA Shen'ao Line construction shortens 20 services from 9 April"
+    titleOriginal: 出遊注意！台鐵深澳線施工 20列車4/9起截短行駛
+    publisher: Newtalk 新聞
+    url: https://newtalk.tw/news/view/2024-03-15/912388
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Reports slope-reinforcement work between Haikeguan and Badouzi closing that section from 9 April 2024, with 20 scheduled services shortened to terminate or originate at Haikeguan.
+  - id: cdns-shenao-2025-reopening
+    title: "TRA Shen'ao Line slope repair complete, service resumes from the 26th"
+    titleOriginal: 台鐵深澳線邊坡改善完成 26日起恢復行駛
+    publisher: China Daily News (中華日報)
+    url: https://www.cdns.com.tw/articles/1173872
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Reports the same closure's cause (poor lower-slope stability between Haikeguan and Badouzi), construction from 9 April 2024 to completion 15 January 2025, and full service resumed 26 February 2025.
 ---
 
 ## One operator table, two opening years
@@ -145,6 +163,22 @@ operator table's historical 6.3 km entry.[^tra-construction-history][^tdx-tra-li
 The 2014 and 2016 operator records describe restoration and extension of the
 surviving route; they do not establish that the dismantled southern
 Shen'ao–Liandong section was rebuilt.[^tra-revival-note][^tra-timeline-105][^tra-construction-history]
+
+## Current status: a 2024–2025 closure
+
+The restored line has been closed and reopened again since the 2016
+extension.[^newtalk-shenao-2024-closure][^cdns-shenao-2025-reopening]
+Slope-reinforcement work between Haikeguan and Badouzi closed
+that section from 9 April 2024, shortening 20 scheduled services to
+terminate or originate at Haikeguan instead of running the full branch, with
+a fare discount offered on the combined Pingxi–Shen'ao day
+pass.[^newtalk-shenao-2024-closure] Reporting on the reopening gives the
+cause as poor lower-slope stability between the two stations affecting
+operational safety, construction running from 9 April 2024 to completion on
+15 January 2025, and full service resuming 26 February
+2025.[^cdns-shenao-2025-reopening] Both reports are news coverage, not an
+operator source; no TRA primary announcement of this closure or reopening
+was found for this page.[^newtalk-shenao-2024-closure][^cdns-shenao-2025-reopening]
 
 ## Records still missing
 
