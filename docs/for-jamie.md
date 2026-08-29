@@ -31,8 +31,10 @@ note added.
 **Not reached**: a dedicated Part 4 icon/colour pass (motion and icons
 were checked directly this run and are already clean, so this is lower
 priority than it sounds). Remaining thin pages (~118) are overwhelmingly
-bus/routes and TYMC/bike station pages, TDX-data-only per rule 10 — worth
-a spot-check before assuming that holds for all of them, not a known gap.
+bus/routes and TYMC/bike station pages; spot-checked 4 bus/routes pages
+this run to confirm they're genuinely TDX-data-only per rule 10 (each has
+its own explicit "Research status" section marking history/renumbering
+TBC by design) — confirmed, not a research gap.
 
 ## Run 305 - 29 August 2026 - NTPC bus depth, first photos, homepage/regions redesign, full browser sweep, 4 commits
 
