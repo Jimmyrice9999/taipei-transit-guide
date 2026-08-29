@@ -1,3 +1,108 @@
+## Run 305 - NTPC bus-office depth, first photo pipeline batch, homepage/regions redesign, full browser sweep (2026-08-29)
+
+Dispatched 5 read-only scouts before touching Part 1: three for the thin-page
+audit clusters the brief named (TYMC G-series stations, bike regional pages,
+NTPC district-office bus operators) and two for Part 2 photo-candidate
+hunting on Wikimedia Commons (TRA stations; KRTC/TMRT other-line/TYMC
+stations), with a sixth (rolling stock and bus models) following once the
+first wave landed. `git status` clean after every batch.
+
+**Part 1.** TYMC's five G-series station stubs and the bike/stations
+regional pages were confirmed genuinely at their ceiling for now: the
+G-series pages are project-table stubs for an unbuilt line (G18/G19 gained
+a real construction-contract section once a scout found the awarded GC04B
+contract, including a genuine conflict between two DORTS pages on which two
+stations that contract covers — published as a conflict, not resolved;
+G16/G17 gained their design-contract progress figure), and the bike/stations
+pages are deliberately TDX-data-only per the project's own rule 10, not a
+research gap. The New Taipei district-office bus cluster (19 pages) was the
+opposite: genuinely under-researched. Each district office independently
+publishes its own named community-bus routes on its own site — several with
+a named contractor (Xindian: 京華通運有限公司), some with a documented
+paid/free conversion history (Banqiao's 2005-2024 arc via CNA; Wugu and
+Tucheng's 2020 conversions to numbered city routes), one purely
+self-operated/outsourced split (Sanchong). Wrote real sourced content into
+all 19, including the two smallest stubs (Shiding: 8 routes from a dated
+PDF; Wulai: a seasonal timetable plus a second route document confirmed to
+exist but unreadable as .odt this session). Two operator-name claims found
+only on uncited zh.wikiversity pages (Zhonghe F512, Yonghe F521) were
+reported as unconfirmed rather than published.
+
+**Part 2.** The site already had a full Commons image pipeline
+(`scripts/fetch-commons.mjs`, license-gated, MD5-implicit via the fetch
+itself) but only 78 sidecars across ~2,000 pages, and all 24 existing station
+photos were one single TRTC line. Scouts verified license, photographer and
+genuine subject match against the full Commons file page (not search
+snippets) for ~30 candidates, rejecting several along the way (a Kaohsiung
+Main Station photo that was actually TRA not KRTC subject matter; a Chiayi
+exterior under Taiwan's non-CC "Government Website" license; a superseded
+2002-2018 Kaohsiung station building; two mislabeled/miscategorised Commons
+files). Downloaded and committed 19: nine TRA stations (Taipei, Banqiao,
+Taichung's historic 1917 building, Tainan, Kaohsiung, Hualien, Chiayi,
+Keelung, Fangliao), three TRA rolling-stock types (Taroko Express, Puyuma
+Express, EMU900), THSR's 700T, two bus models (King Long, Volvo B8R — the
+King Long photo is explicitly captioned as a different operator than the
+page's own Dàyou fleet, since none was found for that specific fleet), and
+four TRTC/TYMC stations (Ximen, Jiantan, and TYMC's Airport Terminal 1 and
+Taipei Main Station Express platforms). Discovered and fixed a real naming
+bug along the way: TRTC/metro stations resolve their photo via an automatic
+`stations/${code}` lookup keyed to the bare station code, not a
+slug — an early download under `stations/ximen-bl11` silently would not
+have rendered; renamed to `stations/bl11` before it shipped.
+
+Five verified, ready-to-fetch candidates (KRTC Formosa Boulevard and
+Sizihwan, TRTC Beitou, TRTC/Taipei101-WTC, one Scania K380 bus) could not be
+downloaded this run — Commons' upload host rate-limited this session for a
+sustained period (tens of minutes, recovering only intermittently, not on a
+predictable per-file basis); repeated retries across the whole session
+succeeded roughly half the time. Their File: titles, licenses and
+photographer credits are recorded in this run's scout transcripts for the
+next session to fetch directly without re-researching.
+
+**Part 3.** Gave all five top-level sections (rail, bus, ferry, bike,
+ticketing) and five of seven regions a lead photograph on `/` and
+`/regions/`, using existing sourced hero images rather than new
+photography — replacing what had been a pure text link list on both pages.
+Added a `region` entity icon. Tainan and Hsinchu regions (bus-only, no
+sourced imagery) render through the same photo-card component's documented
+no-photo case rather than a placeholder.
+
+**Part 4.** Icons (`components/EntityIcon.tsx`) and the photo-card/hero
+infrastructure were already substantially built from prior runs; extended
+rather than rebuilt. Actually tested — not assumed — that
+`prefers-reduced-motion: reduce` disables every transition on the site, via
+a real Playwright check (`reducedMotion: 'reduce'` vs `'no-preference'`,
+computed `transitionDuration`). Found one real gap this way:
+`.site-search-results a`'s hover background-color transition had no reduce
+override, unlike every other transition on the site — fixed.
+
+**Part 5.** Ran the full 17-viewport `verify:browser:full` sweep after two
+full rebuilds (content changes mid-build twice triggered the documented
+stale-`out/` CJK font regression; both caught by rebuilding before
+`npm run fonts`, never reaching a commit). 2,070 pages x reflow at 200%/400%
+zoom equivalents: zero document-level horizontal scroll. 139 templates:
+keyboard traversal clean, no painted box under the spine float,
+accessibility-tree probes clean. axe-core: zero violations across 2,070
+pages. 119/119 print PDFs generated. `npm run check`: 676,492 internal
+links across 3,155 pages, no broken links, no orphans, no unresolved
+`#fragment`s. One reported finding — a screenshot timeout for
+`/data/sources/` — checked by eye rather than trusted at face value: that
+page is a genuine 5.5 MB HTML document (the site's full source index), and
+a 30s screenshot budget on a page that size is an expected characteristic,
+not a regression. Representative page-weight check: TRA Taipei Station's
+built HTML grew ~2.4 KB once it gained its hero photo; the photo itself is
+a responsive image (11-110 KB depending on viewport), well under the
+400 KB per-page image budget `tests/images.test.mts` enforces.
+
+**Not reached**: the broader depth pass on the ~200 remaining thin pages
+beyond the three named clusters (bus routes, TRA station clusters, etc. —
+this run's scouts and writes were fully absorbed by the 19-page NTPC
+cluster, which turned out much deeper than expected); the five rate-limited
+photo candidates above; a systematic per-entity-type icon audit beyond the
+one new `region` kind added; sourcing photography for KRTC/TMRT/TYMC
+stations beyond the two TYMC platforms landed. gate:fast clean throughout
+(136/136 tests), claims ratchet held at 0 ASSERTED. 4 commits, all pushed.
+
 ## Run 304 - Part 1 audit, targeted single-source fixes, new research seams (2026-08-29)
 
 Audited the brief per its own instruction (stale in four consecutive runs) —

@@ -1,6 +1,32 @@
 # For Jamie
 
-## Active handoff - Run 304 - 29 August 2026 - audit, 6 new history pages, second sources, full browser sweep, 7 commits
+## Active handoff - Run 305 - 29 August 2026 - NTPC bus depth, first photos, homepage/regions redesign, full browser sweep, 4 commits
+
+Part 1: found the New Taipei district-office bus cluster (19 pages) badly
+under-researched, not exhausted — each office runs its own named routes,
+several with a contractor named on the office's own site. Wrote real depth
+into all 19. TYMC G18/G19 gained a construction-contract section with a
+genuine DORTS-vs-DORTS conflict on which stations one contract covers.
+
+Part 2: the site already had a full Commons photo pipeline but almost no
+photos used. Sourced and committed 19 license/subject-verified images (TRA
+stations, TRA/THSR rolling stock, two bus models, four TRTC/TYMC stations).
+Five more verified candidates are ready but Commons rate-limited this
+session for a sustained period — their File: titles and licenses are in
+this run's scout transcripts, ready to fetch next time with no re-research.
+
+Part 3: gave the homepage and `/regions/` a lead photo per section/region
+instead of a plain link list. Part 4: found and fixed a real reduced-motion
+gap via an actual Playwright check, not assumption — a search-results
+hover transition had no `prefers-reduced-motion` override.
+
+Part 5: full 17-viewport sweep clean — zero axe violations across 2,070
+pages, no reflow/keyboard failures, no orphans, no broken links.
+
+**Not reached**: the ~200-page broader depth pass beyond the three named
+clusters (absorbed by the NTPC cluster's real depth); KRTC/TMRT photos.
+
+## Run 304 - 29 August 2026 - audit, 6 new history pages, second sources, full browser sweep, 7 commits
 
 Part 1 audited all 1,850 pages: 269 under 400 words (~40 by-design empty
 indexes), only 10 real pages single-sourced — and those 10 were already
