@@ -1,7 +1,7 @@
 ---
 title: Operator service ratings
 summary: Twice a year since 1992, Taipei has graded its bus operators 優/甲/乙/丙/丁 on 26 indicators — and the grade can cost an operator its routes. It is a national requirement, not a Taipei quirk — New Taipei, Taoyuan, Taichung, Kaohsiung and Tainan each run their own separate scheme.
-updated: 2026-08-28
+updated: 2026-08-30
 facts:
   - label: Scheme
     value: 臺北市市區公車營運服務指標評鑑
@@ -84,6 +84,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the existence and archive scope of New Taipei's own, separate evaluation scheme, 2012–2025.
+  - id: ntpc-112-2
+    title: New Taipei bus evaluation released — Taipei Bus and Capital Bus stay excellent for 15 straight years
+    titleOriginal: 新北市公車評鑑出爐臺北、首都客運蟬連15年優等
+    publisher: New Taipei City Department of Transportation (新北市政府交通局)
+    url: https://www.traffic.ntpc.gov.tw/home.jsp?id=148&act=be4f48068b2b0031&dataserno=6c01bed9a6d94f8bf11dc6f4b37f5978
+    accessed: 2026-08-30
+    kind: primary
+    lang: zh-Hant
+    note: "Dated 2 July 2024. 優等 (4): Sanchong, Taipei, Metropolitan, Capital Bus, with Taipei/Capital's streak stated as 15 years for this round — one round earlier than the 16-year streak the 113年第1期 announcement gives. Also states 360 city routes, 2,900 smart bus-stop signs and 244 electric buses at that date."
+  - id: yam-ntpc-114-2
+    title: New Taipei keeps building smart public transport — Hou Yu-ih honours excellent-grade bus operators
+    titleOriginal: 新北持續打造智慧公共運輸 侯友宜表揚公車服務品質優等業者
+    publisher: 蕃新聞 (Yam News)
+    url: https://n.yam.com/Article/20260714381617
+    accessed: 2026-08-30
+    kind: secondary
+    lang: zh-Hant
+    note: "Dated 14 July 2026, reporting the 114年第2期 award ceremony — the underlying New Taipei Department of Transportation press page could not be located directly, so this round rests on this secondary report only. 優等 (5): Metropolitan, Sanchong, Capital, Taipei, Danan — Taoyuan Bus has dropped off the list since 113年第1期, replaced by Danan. States the scheme's five categories and 26 indicators by name, and gives 2026 network figures: 374 city routes plus 135 New Bus routes, 2,538 total vehicles, ~800,000 daily riders, 546 electric buses, 3,280+ smart bus-stop signs (~90% coverage)."
   - id: ly-fl055169
     title: Principles for handling applications to allocate and adjust joint-operation bus routes and departures
     titleOriginal: 臺北市聯營公車申請分配調整路線及車次處理原則
@@ -102,6 +120,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Released 115/05/13. Supports the scheme's existence, its outsourced contractor, the 2023 contractor change and the disputed 95% punctuality claim.
+  - id: ltn-tycg-blacklist-report
+    title: "City councillor: Taoyuan bus evaluation contractor linked to a blacklisted firm"
+    titleOriginal: 桃園公車評鑑得標商 被爆與工程會黑名單有關
+    publisher: 自由時報 (Liberty Times)
+    url: https://news.ltn.com.tw/news/Taoyuan/paper/1754739
+    accessed: 2026-08-30
+    kind: secondary
+    lang: zh-Hant
+    note: "Reports the contract values behind tycg-punctuality's succession story, not stated in the Bureau's own press release: 輿智科技 won for NT$2.2 million in 2021 and NT$4.5 million in 2022; 智晟資訊服務, the successor, won for NT$5.5 million in 2023, described as the highest amount yet. Not independently confirmed against a primary procurement record."
   - id: taichung-gl003594
     title: Taichung City Municipal Bus Operation and Service Evaluation Execution Points
     titleOriginal: 臺中市市區汽車客運營運與服務評鑑執行要點
@@ -232,17 +259,35 @@ exact fleet-size threshold that decides which treatment applies.
 ## New Taipei runs its own, separate scheme
 
 New Taipei's Department of Transportation maintains an entirely separate
-evaluation, archived back to 2012[^ntpc-zone]. Its 113年第1期 results name
-five 優等 operators — Taipei, Metropolitan, Capital, Sanchong and Taoyuan
-Bus — with Taipei Bus and Capital Bus noted as having achieved 優等 for
-16 consecutive years[^ntpc-113-1]. **This is not a republication of
-Taipei's results.** Taoyuan Bus appears on New Taipei's 優等 list but on
+evaluation, archived back to 2012[^ntpc-zone], run on the same five
+categories and 26 indicators as the national floor, including unannounced
+secret-shopper inspections riding the buses[^yam-ntpc-114-2]
+[^national-eval-rule]. Three dated rounds:
+
+| Round | 優等 operators |
+|---|---|
+| 112年第2期 (Jul 2024) | Sanchong, Taipei, Metropolitan, Capital[^ntpc-112-2] |
+| 113年第1期 (Feb 2025) | Taipei, Metropolitan, Capital, Sanchong, Taoyuan Bus[^ntpc-113-1] |
+| 114年第2期 (Jul 2026) | Metropolitan, Sanchong, Capital, Taipei, Danan[^yam-ntpc-114-2] |
+
+Taipei Bus and Capital Bus are the only two operators named across every
+round, with a stated "consecutive years" streak that itself moves in a way
+no source explains — 15 years in the 112年第2期 announcement, 16 years
+seven months later in 113年第1期[^ntpc-112-2] [^ntpc-113-1]. Taoyuan Bus
+appears on the 113年第1期 list and then drops off by 114年第2期, replaced
+by Danan[^ntpc-113-1] [^yam-ntpc-114-2]. **This is not a republication of
+Taipei's results.** Taoyuan Bus appears on New Taipei's 優等 lists but on
 neither Taipei list for the same nominal period, while Southeast, Sinbus,
-Chungshing and Danan appear on Taipei's lists but not New Taipei's,
-despite operating in both cities[^ntpc-113-1] [^pto-113-1] [^pto-113-2].
-No source found explains the jurisdictional scoping — plausibly each city
-evaluates only the portion of a shared operator's fleet or routes within
-its own boundary, but that is inference rather than a sourced claim.
+Chungshing and Danan appear on Taipei's lists but not consistently on New
+Taipei's, despite operating in both cities[^ntpc-113-1] [^pto-113-1]
+[^pto-113-2]. No source found explains the jurisdictional scoping —
+plausibly each city evaluates only the portion of a shared operator's
+fleet or routes within its own boundary, but that is inference rather than
+a sourced claim. Every source found for New Taipei is an "excellent
+operator" award announcement; as with Tainan below, none states whether a
+lower grade (甲/乙/丙/丁) is ever assigned here, or gives a citywide
+operator count to compare against the four-to-five-operator excellent
+list.
 
 ## Every major city runs one — this is a national requirement, not a Taipei quirk
 
@@ -253,16 +298,28 @@ Taichung, Kaohsiung and Tainan each run a distinctly-named, separately
 administered scheme, none of them a republication of another city's
 results.
 
-**Taoyuan.** Outsourced by tender to a third-party evaluator; the
-contractor changed in 2023 after the previous one, 輿智公司, was suspended
-for three years over a procurement-law violation[^tycg-punctuality]. The
+**Taoyuan.** Officially 桃園市轄市區公車營運服務品質評鑑, outsourced by tender
+to a third-party evaluator; the contractor changed in 2023 after the
+previous one, 輿智公司, was suspended for three years over a
+procurement-law violation[^tycg-punctuality]. A city councillor's own
+reporting, corroborated by the Bureau's own response that a different
+responsible person makes a legally separate company, gives contract
+values the Bureau's press release itself does not state: 輿智科技 won for
+NT$2.2 million in 2021 and NT$4.5 million in 2022, and its successor
+智晟資訊服務 won for NT$5.5 million in 2023 — not independently confirmed
+against a primary procurement record[^ltn-tycg-blacklist-report]. The
 Bureau's own figures claim bus departure punctuality rising from 80% to
 95% and station-trigger accuracy from 93.3% to 99.6%[^tycg-punctuality] —
 figures publicly disputed by a city councillor the same year the Bureau
-cited them[^tycg-punctuality]. Historical grade tables (2017, 2021) could
-not be sourced this pass: the archived announcement pages no longer
-resolve, so those results stay TBC rather than published from a
-search-engine summary.
+cited them[^tycg-punctuality]. Two result reports (112年度, 113年度) are
+indexed by title on the Bureau's own site but did not extract as readable
+text this pass, so their actual grade tables stay TBC. Historical grade
+tables (2017, 2021) could not be sourced either: the archived announcement
+pages no longer resolve, so those results stay TBC rather than published
+from a search-engine summary. Whether Taoyuan's own scheme predates its
+25 December 2014 upgrade to special-municipality status, and whether it
+has a named local implementing ordinance the way Taipei, Taichung and
+Tainan each do, are both TBC — not found in this search.
 
 **Taichung.** Current legal basis since 2022年 (民國108年2月22日), an
 identical five-tier 優/甲/乙/丙/丁 scale to Taipei's[^taichung-gl003594].

@@ -2,18 +2,18 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27398,
-    "tbc": 4646,
-    "asserted": 6,
-    "meta": 127
+    "sourced": 27403,
+    "tbc": 4652,
+    "asserted": 1,
+    "meta": 128
   },
   "files": [
     {
       "file": "content/air/airports/kaohsiung.md",
       "sources": 7,
       "sourced": 12,
-      "tbc": 2,
-      "asserted": 1,
+      "tbc": 3,
+      "asserted": 0,
       "meta": 1
     },
     {
@@ -490,11 +490,11 @@
     },
     {
       "file": "content/bus/network/operator-ratings.md",
-      "sources": 17,
-      "sourced": 32,
-      "tbc": 6,
-      "asserted": 0,
-      "meta": 2
+      "sources": 20,
+      "sourced": 37,
+      "tbc": 7,
+      "asserted": 1,
+      "meta": 3
     },
     {
       "file": "content/bus/network/_index.md",
@@ -9669,7 +9669,7 @@
       "sources": 10,
       "sourced": 22,
       "tbc": 0,
-      "asserted": 1,
+      "asserted": 0,
       "meta": 0
     },
     {
@@ -14900,8 +14900,8 @@
       "file": "content/statistics/national/vehicle-registration.md",
       "sources": 6,
       "sourced": 13,
-      "tbc": 0,
-      "asserted": 3,
+      "tbc": 3,
+      "asserted": 0,
       "meta": 0
     },
     {
@@ -14948,8 +14948,8 @@
       "file": "content/ticketing/guides/conflicts-index.md",
       "sources": 329,
       "sourced": 456,
-      "tbc": 9,
-      "asserted": 1,
+      "tbc": 10,
+      "asserted": 0,
       "meta": 9
     },
     {
@@ -14995,60 +14995,13 @@
   ],
   "asserted": [
     {
-      "file": "content/air/airports/kaohsiung.md",
+      "file": "content/bus/network/operator-ratings.md",
       "state": "asserted",
       "where": "prose",
-      "text": "CAA's own by-airport passenger-statistics page and the station's own performance-data and annual-report pages exist but render only via clie",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/ferry/routes/penghu.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Taihua was not the first vessel on this route.",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/statistics/national/vehicle-registration.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "No MOTC or Highway Bureau table specifically breaking out electric vehicles was reached directly — the Highway Bureau's own statistics-query",
-      "signals": [
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/statistics/national/vehicle-registration.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "A single MOTC table covering the entire 1988-2025 span without the seam between the two source PDFs used here was not located, despite tryin",
-      "signals": [
-        "date",
-        "count",
-        "superlative"
-      ]
-    },
-    {
-      "file": "content/statistics/national/vehicle-registration.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "The two original tables' own 2015-2016 overlap years remain uncross-checked against a third source.",
+      "text": "Whether Taoyuan's own scheme predates its 25 December 2014 upgrade to special-municipality status, and whether it has a named local implemen",
       "signals": [
         "date",
         "count"
-      ]
-    },
-    {
-      "file": "content/ticketing/guides/conflicts-index.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "No MOTC or Highway Bureau table specifically breaking out electric vehicles was reached directly — the Highway Bureau's own statistics-query",
-      "signals": [
-        "superlative"
       ]
     }
   ]
