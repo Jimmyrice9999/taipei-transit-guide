@@ -505,6 +505,7 @@ const ok = (label) => checks.push(label)
    */
   const ABSENCE_REGISTER = [
     { about: /route length/i, fields: ['CumulativeDistance', 'RouteLength'] },
+    { about: /route record/i, fields: [] },
     { about: /structure|elevated|underground/i, fields: [] },
     { about: /headway|班距|frequency/i, fields: [] },
     { about: /rolling stock|fleet|train|vehicle/i, fields: [] },
