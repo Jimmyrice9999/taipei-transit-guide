@@ -1,7 +1,7 @@
 ---
 title: "Wulai District Office — New Taipei TDX operator record"
-summary: "TDX operator record for Wulai District Office (烏來區公所) in NewTaipei."
-updated: 2026-08-22
+summary: "TDX operator record for Wulai District Office (烏來區公所) in NewTaipei, with the office's own seasonal community-bus timetable for its Wulai-Xiaoyi line."
+updated: 2026-08-29
 facts:
   - label: English name
     value: "TBC"
@@ -38,6 +38,15 @@ specs:
   - label: Contract history
     value: TBC
 sources:
+  - id: wulai-office-bus
+    title: "Wulai District community bus timetable — Wulai-Xiaoyi line"
+    titleOriginal: "新北市烏來區社區巴士行駛班次時刻表－烏來、孝義線"
+    publisher: "Wulai District Office, Social and Cultural Affairs Section (新北市烏來區公所社會文化課)"
+    url: https://www.wulai.ntpc.gov.tw/userfiles/9530329/files/115寒暑假-新北市烏來區社區巴士行駛班次時刻表(圖說).pdf
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "A summer-holiday timetable stated to apply 1 July-31 August 2026 (適用期間:115年7月1日至8月31日止). Gives two weekday round trips (07:00 and 15:00 departures) between 堰堤(土地公廟) and 孝義 via 加九寮. No operator or fare stated. The office's page also links a second file, 114年社區巴士烏來、信賢、福山線 (Wulai-Xinxian-Fushan lines), confirmed to exist by its filename but not readable in this research pass (an .odt file, not extractable with the tools available)."
   - id: tdx-bus-operator-pull
     title: TDX bus operator and route pull
     titleOriginal: 交通部運輸資料流通服務平臺
@@ -70,8 +79,10 @@ The snapshot associates this record with no route records, so there is no genera
 
 No route record in the committed TDX route pull currently references this operator record [^tdx-bus-operator-pull].
 
+## The office's own route, and a second route not yet read
+
+Wulai District Office's own site publishes a seasonal timetable for a Wulai-Xiaoyi (烏來、孝義) community-bus line, stated to apply from 1 July to 31 August 2026, with two weekday round trips departing the 堰堤(土地公廟) terminus at 07:00 and 15:00 via 加九寮[^wulai-office-bus]. A representative line reads "起站:堰堤(土地公廟)07:00→加九寮7:10→堰堤(土地公廟)07:15→孝義7:30"[^wulai-office-bus]. No operator or fare is stated[^wulai-office-bus]. The same page links a second route document covering Wulai-Xinxian-Fushan (烏來、信賢、福山線), confirming the district runs more than this one line, but that file is an .odt format this research pass could not extract, so its route detail remains unread rather than absent[^wulai-office-bus]. This is a genuinely distinct subject from the separate Wulai Trolley (烏來台車) tourist tramway, which does not appear on either bus-schedule page and is not conflated with these routes here.
+
 ## What remains unestablished
 
-The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. Founding, ownership, parent group and merger fields are therefore not applicable as established facts for the municipal record; fleet, depot and contract fields remain TBC.
-
-No incident or regulatory action is assigned to this record without a fetched notice naming the record or the responsible contractor. That restraint matters here because a TDX association can represent an administrative service record, while an incident report may name a different vehicle owner or contracted operator [^tdx-bus-operator-pull]. A current district-office service page, procurement notice, contractor disclosure, fleet register and garage record would be needed to fill those gaps [^ntpc-transport-management].
+The TDX pull has no founding date, shareholder or parent-group field, merger history, vehicle manufacturer, chassis/body, seating capacity, propulsion type, depot location, opening date, assigned-route garage record, contractor name or contract value [^tdx-bus-operator-pull]. The New Taipei authority index links to general policy and evaluation resources but does not provide those record-level details [^ntpc-transport-management]. No operator or fare has been confirmed for the Wulai-Xiaoyi line; the Wulai-Xinxian-Fushan document remains unread.

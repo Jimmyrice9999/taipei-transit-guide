@@ -939,6 +939,12 @@ th > .badge:only-child {
   background: var(--bg-well);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .site-search-results a {
+    transition: none;
+  }
+}
+
 .site-search-title {
   font-weight: 600;
 }
