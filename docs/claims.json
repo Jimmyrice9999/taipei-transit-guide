@@ -3,8 +3,8 @@
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
     "sourced": 27403,
-    "tbc": 4652,
-    "asserted": 1,
+    "tbc": 4653,
+    "asserted": 0,
     "meta": 128
   },
   "files": [
@@ -492,8 +492,8 @@
       "file": "content/bus/network/operator-ratings.md",
       "sources": 20,
       "sourced": 37,
-      "tbc": 7,
-      "asserted": 1,
+      "tbc": 8,
+      "asserted": 0,
       "meta": 3
     },
     {
@@ -14993,16 +14993,5 @@
       "meta": 0
     }
   ],
-  "asserted": [
-    {
-      "file": "content/bus/network/operator-ratings.md",
-      "state": "asserted",
-      "where": "prose",
-      "text": "Whether Taoyuan's own scheme predates its 25 December 2014 upgrade to special-municipality status, and whether it has a named local implemen",
-      "signals": [
-        "date",
-        "count"
-      ]
-    }
-  ]
+  "asserted": []
 }
