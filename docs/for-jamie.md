@@ -1,6 +1,6 @@
 # For Jamie
 
-## Active handoff - Run 306 - 29 August 2026 - CI fix, Air/Road/Statistics sections, nav-label gate, side rail, 5 photos, 9 pages deepened, 11 commits
+## Active handoff - Run 306 - 29 August 2026 - CI fix, Air/Road/Statistics sections, nav-label gate, side rail, 5 photos, 16 pages deepened, 13 commits
 
 **Matters most**: every dead/mistyped link on the live site has been
 showing GitHub's generic 404, not this site's own, for the project's whole
@@ -9,17 +9,21 @@ history — `postbuild.mjs` never wrote a root `out/404.html`. Fixed.
 Part 0: image-budget CI fix, structural (figures cap at 800w). Part 1: new
 permanent nav-label gate. Part 3: wide-viewport side rail, 0 axe violations
 after fixing 2 real regressions it introduced. Part 4: all 5 pending
-Commons photos sourced and wired in (KRTC/TRTC stations, a bus model) —
-caught a WebFetch summary that misdescribed a photo (verified by viewing
-the image directly) and a caption em-dash that silently ate a photo
-credit. Part 5: deepened 9 more TRA/TRTC pages via 10 scouts — real
-conflicts surfaced (a 3-way Shen'ao mining-origin-year conflict, a 1-year
-Changhua-Minxiong date conflict), not just restatement. Part 6: three new
-sections (Air, Road, Statistics).
+Commons photos sourced and wired in — caught a WebFetch summary that
+misdescribed a photo and a caption em-dash that silently ate a photo
+credit. Part 5: deepened 16 pages via 17 scouts across two waves (TRA
+history, KRTC, TMRT, TRTC, Taipei Metro depots) — real conflicts and
+findings throughout, not restatement: KRTC's joint-development case list
+rendered for the first time (15 cases, one unresolved legal-basis
+question); TRA's 2025 yearbook gave a 74-year freight-decline series;
+TMRT's Green Line got its first vendor-named signalling product. Three
+gate-format lessons learned and fixed (claims-ratchet topic-sentence
+citations, an uncited source entry, the research-check bullet format).
+Part 6: three new sections (Air, Road, Statistics). Part 7: page-weight
+note added.
 
-**Not reached**: the ~100+ remaining thin pages beyond this run's named
-clusters; a dedicated Part 4 icon/colour pass; Part 7 page-weight
-before/after reporting.
+**Not reached**: the ~90+ remaining thin pages beyond this run's named
+clusters; a dedicated Part 4 icon/colour pass.
 
 ## Run 305 - 29 August 2026 - NTPC bus depth, first photos, homepage/regions redesign, full browser sweep, 4 commits
 
