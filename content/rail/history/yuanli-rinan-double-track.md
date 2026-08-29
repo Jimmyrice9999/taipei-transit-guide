@@ -129,3 +129,5 @@ contract and completion certificate, a surveyed boundary, an intermediate
 historical station list or a current track-count/as-built survey.[^tra-history-page][^tra-construction-history]
 Those fields remain TBC rather than being inferred from the current 7.7 km
 distance between the two TDX records.[^tdx-tra-line]
+
+This page's own research searched the Mandarin secondary corpus specifically for engineering detail beyond the operator's own construction table — zh.wikipedia's 苑裡車站, 日南車站, 海岸線(臺鐵), 臺灣鐵路, 縱貫線(鐵路) and 縱貫線(北段) articles were each fetched and checked directly by this research — and none carries a dedicated double-tracking chronology entry for this segment; the station articles cover only later service-pattern changes, not the doubling work itself. The same fabricated 1974 milestone claim this project checked and rejected on the Xinpu–Tongxiao page (see that page's "Records still missing" section) also named this segment and was rejected here for the same reason: this research did not find it stated in any of the Wikipedia articles it was checked against.

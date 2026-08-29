@@ -128,3 +128,5 @@ contract and completion certificate, a surveyed boundary, an intermediate
 historical station list or a current track-count/as-built survey.[^tra-history-page][^tra-construction-history]
 Those fields remain TBC rather than being inferred from the current 5.8 km
 distance between the two TDX records.[^tdx-tra-line]
+
+This page's own research searched the Mandarin secondary corpus specifically for engineering detail beyond the operator's own construction table — zh.wikipedia's 海岸線(臺鐵), 新埔車站, 通霄車站, 臺灣鐵路, 縱貫線(鐵路) and 縱貫線(北段) articles were each fetched and checked directly — and none carries a dedicated double-tracking chronology entry for this segment, unlike the Yilan Line's own 宜蘭線鐵路擴建工程 article. A claim circulating in search-engine summaries, attributing a 1974 Coast Line double-tracking milestone to this segment together with 苑裡–日南 and 甲南（今臺中港）–清水, was checked by this research directly against all three cited Wikipedia articles and does not appear in any of them — it is not published here, and is recorded as a checked-and-failed search-tool artifact rather than a sourced claim.

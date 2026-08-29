@@ -44,6 +44,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the planned 74-space charging scope, A/B class split, battery assumptions and completion deadline; it does not verify completion or route allocation.
+  - id: dot-beitou-charging
+    title: Taipei MRT Beitou Depot electric-bus shared charging field officially launched
+    titleOriginal: 臺北捷運北投機廠電動公車共享充電場域正式啟用
+    publisher: Taipei City Government Department of Transportation (臺北市政府交通局)
+    url: "https://dot.gov.taipei/News_Content.aspx?n=D739A9F6B5C0AB95&sms=72544237BBE4C5F6&s=D2699F50C3D7D37E"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Fetched in full. Announces a separate, already-completed Danan-built shared charging facility at the Taipei MRT's own Beitou depot, opened 2 July 2025, attended by Mayor Chiang Wan-an. States Danan Bus built the whole facility (「大南汽車公司負責整體設施建置」), with 11 charging posts and 22 charging bays (「設置11個充電柱、22個充電席位」) and advanced fire-safety equipment including mobile mist-spray systems and lithium-battery-specific extinguishers. States route 288 (21 buses, serving Shilin) converted to electric simultaneously, and that the citywide electric-bus total reached 886 at that point."
 ---
 
 ## Overview and procurement record
@@ -72,6 +81,10 @@ the tender does not say that buses began using the spaces on 15 July 2026
 [^danan-guandu-tender]. A completion certificate or later operating notice is
 needed before the planned 74 spaces can be described as an active depot [^danan-guandu-tender].
 
+## A separate, already-completed Danan charging depot, at Beitou
+
+Guandu is not Danan's only electric-bus charging project, and the other one is finished.[^dot-beitou-charging] Taipei City Government's Department of Transportation announced, in a release fetched in full, that a shared electric-bus charging facility at the Taipei MRT's own Beitou depot opened on 2 July 2025, with Mayor Chiang Wan-an attending: 「大南汽車公司負責整體設施建置」— Danan Bus was responsible for the whole facility's construction.[^dot-beitou-charging] The release gives 11 charging posts and 22 charging bays, 「設置11個充電柱、22個充電席位」, with fire-safety provisions including mobile mist-spray equipment and lithium-battery-specific extinguishers.[^dot-beitou-charging] Route 288 (21 buses, serving Shilin) converted to electric operation simultaneously, and the citywide electric-bus total reached 886 vehicles at that point.[^dot-beitou-charging] This Beitou facility uses a different classification scheme (posts and bays) than the Guandu tender's Class A/B space split, and no source states that they are directly comparable measurements of the same kind of thing.[^dot-beitou-charging][^danan-guandu-tender]
+
 ## Gaps
 
-The fetched sources do not establish an opening date, current completion status, the depot’s final address, route allocation, charger manufacturer or operating capacity beyond the planned parking-space count [^danan-sites][^danan-guandu-tender]. Those fields remain TBC until a completion notice, as-built record, current depot register or route-allocation document is fetched [^danan-guandu-tender].
+The Guandu tender's own stated completion deadline was 15 July 2026, a date this page's own research pass, conducted 29 August 2026, falls after.[^danan-guandu-tender] Danan's own news archive and a direct search of the city Traffic Bureau's own site turned up no completion or opening announcement for the Guandu facility specifically as of this research pass — a genuine absence, checked rather than assumed, though it does not rule out an announcement existing somewhere this search did not reach.[^danan-guandu-tender] The fetched sources do not establish an opening date, current completion status, the depot's final address, route allocation, charger manufacturer or operating capacity beyond the planned parking-space count [^danan-sites][^danan-guandu-tender]. Those fields remain TBC until a completion notice, as-built record, current depot register or route-allocation document is fetched [^danan-guandu-tender].

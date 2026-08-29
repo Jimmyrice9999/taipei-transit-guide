@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27263,
+    "sourced": 27284,
     "tbc": 4647,
     "asserted": 0,
-    "meta": 122
+    "meta": 125
   },
   "files": [
     {
@@ -346,16 +346,16 @@
     },
     {
       "file": "content/bus/depots/guandu-danan.md",
-      "sources": 2,
-      "sourced": 10,
+      "sources": 3,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/depots/sanchung-operating-sites.md",
-      "sources": 1,
-      "sourced": 10,
+      "sources": 2,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -363,7 +363,7 @@
     {
       "file": "content/bus/depots/taipei-bus-stations.md",
       "sources": 2,
-      "sourced": 5,
+      "sourced": 8,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -642,16 +642,16 @@
     },
     {
       "file": "content/bus/operators/linkoudistrictoffice-y7olk0.md",
-      "sources": 3,
-      "sourced": 10,
+      "sources": 4,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/luzhoudistrictoffice-yrnsxy.md",
-      "sources": 3,
-      "sourced": 12,
+      "sources": 5,
+      "sourced": 13,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -690,16 +690,16 @@
     },
     {
       "file": "content/bus/operators/pinglindistrictoffice-yqziud.md",
-      "sources": 3,
-      "sourced": 10,
+      "sources": 4,
+      "sourced": 11,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/bus/operators/pingxidistrictoffice-yh32nd.md",
-      "sources": 3,
-      "sourced": 11,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -898,8 +898,8 @@
     },
     {
       "file": "content/bus/operators/wanlidistrictoffice-xx3v9f.md",
-      "sources": 3,
-      "sourced": 11,
+      "sources": 5,
+      "sourced": 12,
       "tbc": 3,
       "asserted": 0,
       "meta": 0
@@ -10090,8 +10090,8 @@
     },
     {
       "file": "content/rail/history/mudan-shuangxi-double-track.md",
-      "sources": 6,
-      "sourced": 17,
+      "sources": 7,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -10194,8 +10194,8 @@
     },
     {
       "file": "content/rail/history/sijiaoting-ruifang-double-track.md",
-      "sources": 6,
-      "sourced": 17,
+      "sources": 8,
+      "sourced": 19,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -10294,7 +10294,7 @@
       "sourced": 14,
       "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/rail/history/xinshi-yongkang-double-track.md",
@@ -10310,7 +10310,7 @@
       "sourced": 14,
       "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 2
     },
     {
       "file": "content/rail/history/zhonghe-line.md",
@@ -11402,16 +11402,16 @@
     },
     {
       "file": "content/rail/operators/ntmc.md",
-      "sources": 3,
-      "sourced": 5,
+      "sources": 6,
+      "sourced": 8,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
     {
       "file": "content/rail/operators/tmrt.md",
-      "sources": 11,
-      "sourced": 8,
+      "sources": 13,
+      "sourced": 10,
       "tbc": 1,
       "asserted": 0,
       "meta": 0
@@ -11426,8 +11426,8 @@
     },
     {
       "file": "content/rail/operators/tymc.md",
-      "sources": 3,
-      "sourced": 2,
+      "sources": 5,
+      "sourced": 3,
       "tbc": 0,
       "asserted": 0,
       "meta": 0

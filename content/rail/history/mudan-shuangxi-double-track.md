@@ -96,6 +96,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull places Mudan at source sequence 6 and 19.5 km, and Shuangxi at source sequence 7 and 22.9 km on EL; the content layer presents these as one-based positions 7 and 8.
+  - id: wiki-yilan-expansion
+    title: Yilan Line railway expansion project
+    titleOriginal: 宜蘭線鐵路擴建工程
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/宜蘭線鐵路擴建工程
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Fetched and re-verified directly. Places this segment in the same 1974/1-1978/2 'Seven Bottleneck Sections Double-Track Improvement Project' (改善瓶頸七區間雙軌工程) as the neighbouring Sijiaoting-Ruifang segment: 「牡丹=雙溪間3.0公里：此區間增建上行線『五份隧道』、『第三武丹坑橋』、『宜蘭街道陸橋』、『第二武丹坑橋』、改建牡丹站站房等等，因沿線土質鬆軟，工程期間適逢雨季，遲至1978年2月14日始完成雙線工程。本區間擴建雙線時並未改線，沿線彎道半徑及坡度維持原狀」— giving a 3.0 km scope (see Conflicts against the operator's own 3.1 km), a new up-line tunnel (五份隧道) and three named bridges/overpasses, a rebuilt Mudan station building, soft-soil and rainy-season delay, completion 1978-02-14, and an explicit statement that curve radii and grades were not altered during doubling. The article cites 交通年鑑 volumes and a 1979 中國時報 article for this passage, neither independently fetched — reported as a lead consistent with the operator's own years, not independently primary-confirmed for the engineering detail."
 ---
 
 ## One historical double-track record
@@ -135,6 +144,10 @@ Shuangxi shown after Mudan in the relevant direction.[^tra-station-mudan] This
 current ordering locates the station records, but it does not prove that the
 operator's historical 3.1 km construction boundary is identical to the current
 3.4 km endpoint interval.[^tdx-tra-line][^tra-construction-history]
+
+## Part of a named national programme
+
+Secondary reporting places this segment inside the same named seven-segment national double-tracking programme as the neighbouring Sijiaoting-Ruifang segment, the 改善瓶頸七區間雙軌工程 ("Seven Bottleneck Sections Double-Track Improvement Project"), running January 1974 to February 1978.[^wiki-yilan-expansion] That account gives this segment's scope as 3.0 km — a conflict against the operator's own 3.1 km construction-table figure, published here as an open conflict rather than resolved — and describes a new up-line tunnel (五份隧道, Wufen Tunnel), three named bridges and overpasses (第三武丹坑橋, 宜蘭街道陸橋, 第二武丹坑橋), and a rebuilt Mudan station building.[^wiki-yilan-expansion][^tra-construction-history] It attributes construction delay to soft soil and rainy-season conditions, and dates completion of the double-track work to 14 February 1978.[^wiki-yilan-expansion] Notably, it states the doubling work did not realign the route: curve radii and grades were kept as they were, 「沿線彎道半徑及坡度維持原狀」.[^wiki-yilan-expansion]
 
 ## Records still missing
 

@@ -96,6 +96,23 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The committed full pull places Sijiaoting at source sequence 2 and 3.9 km, and Ruifang at source sequence 3 and 8.9 km on EL; the content layer presents these as one-based positions 3 and 4.
+  - id: wiki-yilan-expansion
+    title: Yilan Line railway expansion project
+    titleOriginal: 宜蘭線鐵路擴建工程
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: https://zh.wikipedia.org/zh-tw/宜蘭線鐵路擴建工程
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Fetched and re-verified directly. States this segment belonged to a named national programme, the 1974/1-1978/2 'Seven Bottleneck Sections Double-Track Improvement Project' (改善瓶頸七區間雙軌工程): 「四腳亭=瑞芳間4.7公里：本區間路線截彎取直，跨越基隆河二次，新建雙線『四瑞第一號橋』、『四瑞第二號橋』，並新鑿『四瑞第一隧道』（375公尺）、『四瑞第二隧道』（290公尺）。因隧道地質複雜且施工期間遭遇豪雨，工程進行困難，遲至1977年12月2日始完工通車，並廢棄舊線」— giving a 4.7 km scope (not the operator's own 5.8 km figure — see Conflicts), route straightening, two new Keelung River bridges, two new named tunnels, a rain-and-geology-caused delay, and completion 1977-12-02 with the old alignment abandoned. The article cites 交通年鑑 volumes and a 1979 中國時報 article for this passage, neither of which was independently fetched — this Wikipedia account is therefore reported as a lead consistent with the operator's own years, not as independently primary-confirmed for the engineering detail."
+  - id: blog-siruifang-tunnels
+    title: "放羊的狼: on the Sijiaoting–Ruifang tunnels"
+    publisher: 放羊的狼 (blog)
+    url: http://ivynimay.blogspot.com/2011/10/1001023.html
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Enthusiast blog, a lead per this project's own rules on enthusiast material, fetched and re-checked directly. Gives different tunnel-length figures for the same two named tunnels — 「四瑞第一隧道全長365公尺，四瑞第二隧道全長為273公尺」— against 375 m/290 m in the Wikipedia account; see Conflicts. Its own stated construction dates, checked directly on re-fetch, actually agree with the Wikipedia/operator dating rather than conflicting with it: 「四腳亭至瑞芳的雙線工程，則於民國63年動工，民國66年完工通車」(1974 start, 1977 completion) — an earlier read of this same page reported a conflicting 1963-1966 date range attributed to a station plaque, which this direct re-fetch does not find; that earlier reading is not repeated here."
 ---
 
 ## One historical double-track record
@@ -132,6 +149,12 @@ The current ordered TDX records make these two stations adjacent in the EL
 snapshot.[^tdx-tra-line] That current ordering is useful for locating the
 station records, but it does not by itself prove that the operator's historical
 5.8 km construction boundary is identical to the current endpoint interval.[^tdx-tra-line][^tra-construction-history]
+
+## Part of a named national programme
+
+Secondary reporting places this segment inside a named seven-segment national double-tracking programme, the 改善瓶頸七區間雙軌工程 ("Seven Bottleneck Sections Double-Track Improvement Project"), running January 1974 to February 1978 — a dating consistent with, though not identical in scope to, the operator's own 1974/1977 years.[^wiki-yilan-expansion] That account gives this segment's scope as 4.7 km, describes route straightening across two Keelung River crossings, two new named bridges (四瑞第一號橋, 四瑞第二號橋) and two new named tunnels (四瑞第一隧道 at 375 m, 四瑞第二隧道 at 290 m), attributes construction difficulty to complex tunnel geology and heavy rainfall, and dates completion to 2 December 1977, with the old alignment abandoned.[^wiki-yilan-expansion] The 4.7 km figure differs from the operator's own 5.8 km construction-table scope; the two may be measuring different boundaries, and neither is discarded in favour of the other.[^wiki-yilan-expansion][^tra-construction-history]
+
+An enthusiast source gives different lengths for the same two named tunnels — 「四瑞第一隧道全長365公尺，四瑞第二隧道全長為273公尺」— which is published as an unresolved conflict against the 375 m/290 m figures above.[^blog-siruifang-tunnels] That same source's own construction dates, checked directly, agree with the operator/Wikipedia 1974-1977 dating rather than conflicting with it.[^blog-siruifang-tunnels]
 
 ## Records still missing
 

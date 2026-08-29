@@ -6,12 +6,15 @@ facts:
   - label: Operator
     value: Taipei Bus
     source: tpebus-stations
-  - label: Published station examples
-    value: Sihai, Nanya, Zhonghe, Xindian, Muzha and Sanxia 1
-    source: tpebus-stations
-  - label: Published repair facility
-    value: Lengshuikeng maintenance headquarters
+  - label: Operating stations named in the company profile
+    value: "18"
     source: tpebus-about
+  - label: Published repair facility
+    value: Lengshuikeng maintenance headquarters, overseeing 12 named repair/inspection teams at other stations
+    source: tpebus-about
+  - label: Station directory entry outside the Taipei/New Taipei region
+    value: Hualien station (花蓮站)
+    source: tpebus-stations
 specs:
   - label: Site capacity
     value: TBC
@@ -42,9 +45,9 @@ sources:
 
 ## Overview and published station network
 
-Taipei Bus’s company profile names operating sites including Banqiao Rear, Sihai, Sanxia 1 and 2, Nanya, Huanzaizai, Shulin, Zhonghe, Xindian, Muzha, Zhonghua, Wufu and Sanchong 2, and names Lengshuikeng as a maintenance headquarters [^tpebus-about].
+Taipei Bus’s company profile names 18 operating stations directly: 「板橋後站、四海站、三峽一站、三峽二站、南雅站、歡仔園站、樹林站、中和站、新店站、木柵站、中華站、五福站、林口站、江子翠站、蘆洲站、民生站、瑞芳站、三重二站」.[^tpebus-about] The same page separately describes the maintenance structure as one headquarters plus subordinate teams rather than one flat depot list: 「冷水坑保養總廠」(Lengshuikeng, the main/headquarters maintenance depot) oversees twelve named 檢修班 (repair/inspection teams) at other stations — 板後、四海、三峽一、三峽二、南雅、歡仔園、樹林、中和、新店、木柵、民生、林口.[^tpebus-about]
 
-The separate station directory publishes addresses, telephone numbers and route allocations for the facilities it details, including Sihai, Nanya, Zhonghe, Xindian, Muzha and Sanxia 1 [^tpebus-stations]. This page treats those as operator-published facility records rather than as a TDX-derived depot list [^tpebus-stations].
+The separate station directory publishes addresses, telephone numbers and route allocations for individual facilities, and covers a wider set than the company profile's headline list — 18 sites in total, including all six examples previously used on this page plus Banqiao Rear, Zhonghua, Wufu, Linkou, Luzhou, Jiangzicui, Ruifang, Sanxia 2, and, notably, a station in Hualien (花蓮站, at 花蓮縣花蓮市國聯五路221號) — outside the Taipei/New Taipei region entirely.[^tpebus-stations] Two example entries, with address and phone: Sihai station at 「新北市土城區清水村石門路15號之1」, phone 2262-2268; Luzhou station at 「新北市蘆洲區光明路136號左側」, phone 8281-6376.[^tpebus-stations] This page treats those as operator-published facility records rather than as a TDX-derived depot list [^tpebus-stations].
 
 The two official pages serve different evidentiary purposes. The company profile
 is a corporate description of the operator's station and maintenance network,
