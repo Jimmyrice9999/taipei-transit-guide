@@ -47,3 +47,62 @@ A district-office service page, procurement file, budget or award notice, contra
 ## Corpus check
 
 The earlier page was a TDX-only scaffold. This pass expands the route snapshot and records the authority context while preserving the unresolved distinction between a municipal data record and a private bus operator.
+
+## Update, 29 August 2026 — self-operation confirmed via ebus.gov.taipei, citywide programme context
+
+- **Greater Taipei Bus (ebus.gov.taipei) route pages for F711/F712/F713**,
+  PRIMARY. Operator field on all three gives 深坑區公所 (the district
+  office itself), sharing the office's own phone number — the first
+  source found naming any operator for these routes. Data-system
+  evidence of self-operation, not a prose policy statement.
+- **New Taipei City's citywide New Bus overview**
+  (`https://www.ntpc.gov.tw/ch/home.jsp?id=259bb19174111891`), PRIMARY.
+  States the programme continues pre-2010 township-level community buses'
+  free-riding policy, consolidated under one name after New Taipei's 2010
+  special-municipality upgrade; groups Shenkeng with Xindian, Shiding,
+  Pinglin and Wulai in one F7 zone.
+- **Shenkeng's own geography/transport page**, PRIMARY. Confirms no
+  current MRT station (long-term plan seeks an extension, doesn't
+  describe one built); names four intercity bus companies serving the
+  district separately from the community routes (Chinese names for two of
+  the four not independently confirmed against a verbatim quote this
+  pass).
+- **Full stop lists for all three routes** (via ebus.gov.taipei), PRIMARY.
+  Every stop is a residential hillside place name, the district market,
+  the office, or Shenkeng Elementary — no MRT station, no "old street"
+  stop. Reads as intra-district residential coverage, not an MRT feeder
+  or tourist shuttle.
+- **Conflict, not resolved**: the district office's own page states the
+  no-holiday/no-typhoon rule only for F713; ebus.gov.taipei states
+  holiday suspension for all three routes. Both published.
+- **zh.wikipedia, `新北市新巴士`**, SECONDARY, lead only. Its claim that
+  New Bus routes citywide split into two models (district-self-operated
+  vs. tendered-out) was not found stated in any NTPC or Shenkeng primary
+  page checked. Shenkeng's self-operated status specifically is
+  separately confirmed via ebus.gov.taipei (above), not via this
+  Wikipedia framework.
+
+### Checked and failed (this pass)
+
+- **政府電子採購網 (government e-procurement) tender search**, two URL
+  attempts — checked 2026-08-29; the site requires a JS-rendered
+  session/form-post flow static fetch cannot execute. No procurement
+  record found or ruled out.
+- **Shenkeng District Office's own budget, announcements and statistics
+  pages** — checked 2026-08-29, fetched in full; none contains a
+  bus-service line item, tender notice or contractor disclosure. A real
+  negative finding, not an unsearched gap.
+- **CNA (中央社) search** — checked 2026-08-29, guessed search URL
+  returned HTTP 404; no working CNA search endpoint found this pass.
+- **PTT BusTimes board search** for F711/深坑新巴士 specifically — checked
+  2026-08-29, returned only page navigation, no result entries.
+  (General 深坑 searches did return real posts, but all about the separate
+  intercity 指南/欣欣客運 routes, not the district's own F7xx buses.)
+- **Mobile01 search**, two URL patterns — checked 2026-08-29, both HTTP
+  403 Forbidden.
+- **General web search (Google, Bing, DuckDuckGo)** — checked 2026-08-29,
+  all unusable (empty page, mismatched cached results, CAPTCHA);
+  WebSearch budget exhausted before this pass's own queries.
+- **自由時報/聯合報 site search** for 深坑新巴士 — checked 2026-08-29; the one
+  自由時報 match found was about Taishan District's shuttle, not Shenkeng;
+  聯合報's tag search returned only a generic sidebar, no matches.

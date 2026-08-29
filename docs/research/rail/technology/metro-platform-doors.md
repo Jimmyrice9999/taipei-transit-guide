@@ -30,3 +30,80 @@ The full pages were opened and read. Together they establish a 58-station retrof
 - Exact completion dates for every line and station remain TBC. A dated TRTC construction or handover register would settle them.
 - Current door type, replacement history and condition remain TBC. A current station-facilities or maintenance asset register would settle them.
 - The opened pages do not quantify post-2018 replacement or refurbishment work. Dated operator maintenance records would settle that history.
+
+## Update, 29 August 2026 — a terminology distinction, a 1989 origin story, and a lot of unusable secondary detail
+
+- **DORTS's own text uses two distinct terms**: "全高式" (full-height) for
+  new-build doors from the Xinlu Line onward, and "閘門型式" (gate-type)
+  specifically for the completed high-capacity retrofit — never
+  "半高式" (half-height), the term commonly used elsewhere. Re-checked
+  directly against `no2/files/basic-html/page127.html`, PRIMARY. Also
+  gives the practical reason retrofit stations couldn't get full-height
+  doors: underground ventilation design assumed no platform-track
+  obstruction, so full-height would have required also modifying
+  ventilation equipment.
+- **DORTS `no2` pages 125/126/128/129/130 and `JRTST no48` pages
+  193/195**, all individually re-fetched — none contain half-height
+  terminology, cost figures or contractor names beyond what page 127/194
+  already give. A real, confirmed absence, not unsearched.
+- **zh.wikipedia, `文湖線`**, SECONDARY. Cites a named, dated, bylined 1989
+  聯合報 article (洪惠琪, 1989-05-08) reporting DORTS reversed an earlier
+  decision not to fit the Muzha Line with doors, adding ~NT$300 million
+  construction budget and NT$20m+/year maintenance. No URL; could not be
+  fetched or verified — a real citation (named author, dated, print
+  publication), just not one this pass could open. Reported with reduced
+  confidence, kept explicitly separate from the much larger 2006-2018
+  retrofit.
+- **A much more detailed secondary narrative exists but does not survive
+  citation-checking**: zh.wikipedia's `月台閘門` article (the redirect
+  target of `半高式月台門`) gives a batch-by-batch, station-by-station,
+  year-by-year retrofit list naming manufacturers (瑞士凱拔格里根 for
+  batch 1; 中國大陸方大自動化 for batches 2-3; 台灣廣運工程股份有限公司,
+  described as the first Taiwan-domestic manufacturer, for batches 4+,
+  covering 37 stations/72 platform sides) and four line articles giving
+  month-level per-line completion dates (Zhonghe-Xinlu Nov 2016;
+  Songshan-Xindian Apr/Sep 2018; Tamsui-Xinyi Aug/Sep 2018, with an
+  internal date wobble in the same sentence; Bannan Sep 2018). **Checked
+  every citation directly**: batch 1 uncited; batches 2-3 cite a YouTube
+  news segment (unfetchable as text); batch 4's one citation (a Taipei
+  city-government news page) returns HTTP 404 live and is unreachable via
+  archive.org (the fetch tool refuses that host entirely); all four
+  line-completion dates are uncited within their own articles. **None of
+  this is published on the content page** — it is internally consistent
+  (the batch groupings match the line articles' dates closely) but that
+  is consistency within Wikipedia, not corroboration against a primary.
+- **月台幕門's claim that the original high-capacity network substituted
+  a self-built infrared track-intrusion detection system plus
+  platform-edge warning lights for doors** — checked its footnote
+  directly: a Wayback-archived Yahoo Answers forum thread. Not used.
+- **A TRTC 2014 vs. Wikipedia 2014-batch station-count comparison**
+  (13 completed per TRTC's report vs. an implied ~10-13 from the
+  batch list) is plausibly compatible as different snapshot points within
+  the same year, but this is this page's own arithmetic inference, not
+  stated by either source, and is not asserted as resolved.
+
+### Checked and failed (this pass)
+
+- **`https://www.gov.taipei/plan/News_Content_MCP.aspx?n=C6C59233EE6191A1&sms=C04230CB75259A56&s=FD18D7D979ABCC37`**
+  (Wikipedia's batch-4 manufacturer citation) — checked 2026-08-29, live
+  URL returns HTTP 404; its archive.org snapshot cannot be fetched by the
+  tool at all.
+- **web.archive.org generally** — checked 2026-08-29, fetch tool refuses
+  this host entirely in this environment.
+- **`zh.wikipedia.org/wiki/臺北捷運事故列表`** (a guessed incident-list
+  article title) — checked 2026-08-29, 404, does not exist.
+- **`ebook.dorts.gov.taipei/JRTST/` and `/ebook/` directory listings** —
+  checked 2026-08-29, both HTTP 403 Forbidden; could not browse for other
+  relevant DORTS ebook issues this way.
+- **`web.metro.taipei/ebook/2018ebook/` and `2019ebook/`** (guessed URL
+  pattern for a later TRTC CSR report) — checked 2026-08-29, both 404.
+- **DORTS and TRTC main-site homepages**, for a dedicated platform-door
+  project page or press release — checked 2026-08-29, none found through
+  pages actually reachable; not a full site search, so absence is not
+  conclusive.
+- **Control Yuan investigation-report listing** for this subject — checked
+  2026-08-29, page loaded but showed no items at that specific listing
+  view; not a full-site search.
+- **Bing/Google via WebFetch as WebSearch substitutes** — checked
+  2026-08-29, both unusable (unrelated cached content, empty error page);
+  WebSearch budget exhausted before this pass's own queries.

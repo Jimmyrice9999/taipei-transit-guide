@@ -1,3 +1,34 @@
+## Run 306 Part 5 continuation, third wave - platform doors, 2 more NTPC district offices (2026-08-29)
+
+Three more scouts: Taipei Metro platform screen doors, and two more New
+Taipei district-office bus operators (Shenkeng, Wugu) matching the
+cluster this project has repeatedly found genuine depth in.
+
+Platform doors gained a real primary-sourced terminology finding — DORTS's
+own planning text distinguishes "全高式" (full-height, new-build) from
+"閘門型式" (gate-type, the completed high-capacity retrofit), never using
+"半高式" (half-height), the term commonly used elsewhere — plus a
+carefully-hedged 1989 origin story (a named, dated newspaper citation this
+pass couldn't fetch, kept explicit about that limit) for why the Muzha
+Line got full-height doors from the start. A much richer secondary
+narrative existed (manufacturer names, month-level per-line dates) but
+none of it survived checking its own citations (a YouTube video, a dead
+government link, an unfetchable archive snapshot) and none of it was
+published. Wugu's successor bus routes (580-583) got their operators
+identified for the first time (指南客運, 國光客運) via the project's own
+committed TDX data, cross-checked against route-terminus names; Shenkeng's
+three routes got their operator confirmed as the district office itself
+(via a Taipei bus-platform data field, not a prose statement) and their
+purpose clarified as intra-district residential coverage, not MRT feeders
+or tourist shuttles.
+
+One more claims-ratchet false positive (an unsourced topic sentence),
+fixed the same way as the prior two waves. `gate:full` clean on the sixth
+full run this session. This closes out the most promising remaining
+thin-page candidates found by re-surveying the corpus after two waves;
+most of what's left (bus/routes and TYMC/bike station pages) is
+TDX-data-only by this project's own rule 10, not a research gap.
+
 ## Run 306 Part 5 continuation, second wave - 7 more depot/KRTC/TMRT/TRA pages deepened (2026-08-29)
 
 Dispatched 7 more scouts after the first Part 5 wave's gate:full passed:

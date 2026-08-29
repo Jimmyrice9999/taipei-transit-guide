@@ -2,7 +2,7 @@
 title: Taipei Metro platform screen doors
 summary: How Taipei added platform screen doors to the early high-capacity network, and what the primary record does and does not say about completion by line.
 order: 3
-updated: 2026-08-27
+updated: 2026-08-29
 facts:
   - label: Retrofit programme
     value: 58 initially doorless high-capacity stations
@@ -66,6 +66,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "DORTS defines the platform-door isolation function and gives the high-capacity six-car platform-door planning basis, with sliding and emergency doors aligned to the train doors."
+  - id: zhwiki-muzha-1989
+    title: Muzha Line (Wenhu Line) (Wikipedia article)
+    titleOriginal: 文湖線
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/文湖線
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Cites a dated, bylined 1989 United Daily News (聯合報) article reporting DORTS reversed an earlier decision not to fit the Muzha Line with platform doors, adding an estimated NT$300 million construction budget and NT$20-million-plus annual maintenance cost. The article itself has no URL and could not be independently fetched or verified; reported with reduced confidence, and not to be confused with the much larger 2006-2018 high-capacity retrofit this page otherwise documents."
 ---
 
 Platform screen doors were not part of every original Taipei Metro station.[^dorts-psd-planning] DORTS
@@ -103,8 +112,42 @@ DORTS says a separate platform emergency-stop button is no longer required; that
 is an equipment-interface consequence, not evidence of a current station-by-station
 asset register.[^dorts-psd-planning]
 
+## A different door for the retrofit than for new stations
+
+DORTS's own planning text uses two distinct terms, not one, for two
+different door populations: "全高式" (full-height) for the doors built
+into new stations from the Xinlu Line onward, and "閘門型式" (gate-type)
+specifically for the completed retrofit of the original high-capacity
+network's already-operating stations.[^dorts-psd-planning] DORTS never
+uses the term "半高式" (half-height) anywhere in the pages checked for
+this page, even though that is the term commonly used elsewhere to
+describe the retrofit doors; this page keeps DORTS's own "gate-type"
+wording rather than substituting a term the source itself does not
+use.[^dorts-psd-planning] The same passage gives a practical reason the
+retrofit could not simply reuse the full-height design: most retrofit
+stations are underground, and their original ventilation design assumed
+no obstruction between platform and track, so a full-height door could
+not be fitted without also modifying the ventilation
+equipment.[^dorts-psd-planning]
+
+The Muzha Line's original 1996 full-height doors were not the network's
+first plan.[^zhwiki-muzha-1989] A secondary source, citing a named, dated 1989 newspaper
+report this page could not independently retrieve, describes DORTS
+reversing an earlier decision not to fit that line with doors at all,
+citing an added construction budget and ongoing annual maintenance cost —
+a different, much smaller and much earlier episode than the 2006-2018
+high-capacity retrofit this page otherwise documents, and not to be
+conflated with it.[^zhwiki-muzha-1989]
+
 ## What remains TBC
 
 The opened primary records do not provide one current station-by-station register
 of door type, replacement history, commissioning day or present condition.[^trtc-psd-report][^dorts-psd-planning] Exact per-line completion dates are
 also left TBC rather than reconstructed from secondary timelines.[^trtc-psd-report][^dorts-psd-planning]
+No cost figure or contractor/manufacturer name for the 2006-2018
+high-capacity retrofit itself was found in any source checked, primary or
+secondary — a much more detailed batch-by-batch narrative exists in
+secondary sources, naming manufacturers and month-level per-line dates,
+but none of it survived a direct check of its own cited sources (a
+YouTube video, a dead government-page link, and an unfetchable archive
+snapshot), so none of it is published here.[^dorts-psd-planning]
