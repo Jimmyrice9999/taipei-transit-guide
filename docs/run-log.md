@@ -1,3 +1,94 @@
+## Run 306 - image-budget CI fix, new Air/Road/Statistics sections, permanent nav-label gate, wide-viewport side rail, GitHub Pages 404 fix (2026-08-29)
+
+**Part 0.** CI was red: `rail/tra/rolling-stock/fleet-roster` carried 509 KB of
+imagery against the 400 KB page budget. Fixed the page, not the test — two
+body figures were referencing the 1600w tier where 800w was intended — and
+made the fix structural: `rehypeFigures` now caps any pipeline-image `<figure>`
+at 800w regardless of the literal width authored, so a future page can't ship
+the same mistake. Also bumped `actions/cache` v4→v5 in the deploy workflow
+(v4 declares a Node 20 runtime GitHub now force-runs on Node 24).
+
+**Part 1.** Audited nav/dropdown links against a real build rather than by
+spot-check. Added a permanent gate (`npm run nav:labels`, wired into
+`verify`) that resolves every dropdown-nav link through the redirect-stub
+chain and fails if the destination's own `<h1>` doesn't contain the link's
+label — verified against a real build AND against a deliberately broken
+link, after two rejected approaches (site-wide entity matching produced real
+false positives from Taiwan's own place-name reuse; breadcrumb-checking hit
+inconsistent per-template crumb conventions) are recorded in the script's
+own header.
+
+**Part 3.** Added the wide-viewport (≥1280px) side navigation rail using the
+blank margin space, top bar unchanged below that breakpoint. Native
+`<details>` per section, closed by default, sharing `NavGroupView`/
+`isInSection` with the existing popover nav.
+
+**Part 5.** Deepened 24 more thin pages across six clusters (TMRT stations/
+line/fleet/ridership, Maokong Gondola stations, the three metro operators,
+5 more NTPC bus offices, 3 bus depots, 4 TRA double-track history pages) —
+found and fixed a real a11y-checker bug along the way: the "Han text is
+zh-Hant-tagged" regex closed on the wrong tag when a tagged span had a
+nested auto-linked entity, producing false positives.
+
+**Part 6.** Built three new top-level sections from primary sources: Air
+(CAA's own airport list and passenger stats; Kaohsiung gets its own page,
+Taoyuan/Songshan/Taichung are merged since each was too thin alone),
+Road (taxi/ride-hailing regulation including the Grand Chamber's Uber
+ruling; the national freeway network, with a genuine same-agency length
+conflict on National Highway 1 published as a conflict, not resolved), and
+Statistics (modal share, traffic safety — including MOTC's own public
+clarification of the A1/A30/MOHW death-count conflict — and vehicle
+registration).
+
+**Part 7.** Ran the full 17-viewport `verify:browser:full` sweep twice.
+First run crashed mid-sweep: the harness's own static server threw an
+uncaught ENOENT on `out/404.html` reading a file that objectively existed
+on disk. Root cause, found by reading `scripts/postbuild.mjs`: with
+`trailingSlash: true`, Next's static export never wrote a root-level
+`404.html` at all — only `_not-found/index.html` — so GitHub Pages'
+convention-based 404 handling (serve `out/404.html` for any unmatched
+request) had silently never been satisfied. **Every dead or mistyped link
+on the live, deployed site has been falling through to GitHub's own generic
+404 page for this entire project's history**, not this project's own
+not-found page. Fixed: `postbuild.mjs` now copies `_not-found/index.html`
+to `out/404.html`; `tests/build-output.test.mts` already asserted this file
+exists and is passing again, not newly added. Also hardened the harness's
+own request handler with a try/catch so a transient FS hiccup during a
+600+-page sweep reports and continues rather than crashing the run.
+
+Second run completed clean end-to-end, but surfaced a real regression from
+Part 3: axe-core failed **every one of 2,087 pages** on `landmark-unique`
+(the new side rail's `<nav>` shared the top bar's `aria-label="Sections"`)
+and `nested-interactive` (a `<Link>` nested inside a `<summary>`, itself
+already an interactive control) — a defect the project's own static
+a11y-report.mjs checker structurally cannot see, since it only checks
+whether a `<nav>` has *an* aria-label, not whether two labels collide, and
+doesn't look for interactive-in-interactive nesting at all. This is exactly
+the class of bug `verify:browser:full`'s real-browser axe pass exists to
+catch that the markup-only checks cannot. Fixed by giving the rail its own
+label and moving its section link out of the `<summary>` into a separate
+"Open … index" line in the opened body. Third sweep: zero axe violations
+across all 2,087 pages, zero reflow/keyboard/painted-box failures, 904
+screenshots, 128 print PDFs, all clean.
+
+Also confirmed: the harness's per-template `PAGE_TYPES` list does not gate
+real coverage — its auto-inventory already assigns new templates their own
+key from URL structure and rendered classes, confirmed by the new Air/Road/
+Statistics pages already appearing in a sweep with no changes — but added
+named entries for them anyway, for readable screenshot/print filenames.
+Linked Taoyuan, Songshan and Kaohsiung airports into `lib/regions.ts`; Road
+and Statistics stay unlinked from any region as genuinely national-scope.
+
+**Not reached**: the 5 Commons photo candidates verified-but-rate-limited
+in Run 305 — WebSearch remained at its session budget (200/200, shared
+across the whole session including this run) with no recorded File: titles
+survivable across the compaction that hit mid-run, so re-sourcing them
+without a working search tool would mean guessing URLs, which this project
+does not do. Part 4 (icons/colour/motion) beyond the reduced-motion
+re-verification above was not otherwise touched this run. `gate:full`
+clean throughout (claims ratchet held at 0 ASSERTED, 27,284 sourced
+statements, 15% TBC). 10 commits this run, all pushed.
+
 ## Run 305 - NTPC bus-office depth, first photo pipeline batch, homepage/regions redesign, full browser sweep (2026-08-29)
 
 Dispatched 5 read-only scouts before touching Part 1: three for the thin-page

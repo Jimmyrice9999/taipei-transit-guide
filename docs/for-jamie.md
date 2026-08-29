@@ -1,6 +1,26 @@
 # For Jamie
 
-## Active handoff - Run 305 - 29 August 2026 - NTPC bus depth, first photos, homepage/regions redesign, full browser sweep, 4 commits
+## Active handoff - Run 306 - 29 August 2026 - CI fix, Air/Road/Statistics sections, nav-label gate, side rail, GitHub Pages 404 fix, 10 commits
+
+**Matters most**: every dead/mistyped link on the live site has been
+showing GitHub's generic 404, not this site's own, for the project's whole
+history — `postbuild.mjs` never wrote a root `out/404.html`. Fixed; an
+existing test now has something to actually check.
+
+Part 0: fixed the CI image-budget failure structurally (figures now cap at
+800w regardless of authored width). Part 1: new permanent gate catches any
+dropdown-nav link whose destination doesn't match its label. Part 3: added
+the wide-viewport side nav rail — which broke axe on every page
+(`nested-interactive` + `landmark-unique`; the static checker can't see
+either). Fixed and re-swept clean, 0 violations/2,087 pages. Part 6: three
+new sections from primaries — Air, Road (Uber ruling), Statistics (MOTC's
+own clarification of a 3-way death-count conflict).
+
+**Not reached**: the 5 Commons photo candidates from Run 305 (WebSearch
+still at budget, no File: titles survived to re-find them without
+guessing); Part 4 beyond what Part 3's fix required.
+
+## Run 305 - 29 August 2026 - NTPC bus depth, first photos, homepage/regions redesign, full browser sweep, 4 commits
 
 Part 1: found the New Taipei district-office bus cluster (19 pages) badly
 under-researched, not exhausted — each office runs its own named routes,
