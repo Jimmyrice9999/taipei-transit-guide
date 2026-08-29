@@ -9,6 +9,7 @@ import { CATALOGUED_LINES, getStation, getStationHref } from './stations.ts'
 import { getLine } from './lines.ts'
 import { isPlain, tokenize } from './text-tokens.ts'
 import { CITE_MARKER_PATTERN, type Source } from './sources.ts'
+import { getImage } from './images.ts'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type Node = any
@@ -358,6 +359,22 @@ function hanTaggedNodes(value: string): Node[] {
   )
 }
 
+/**
+ * The widest variant a Markdown-embedded figure is allowed to reference.
+ *
+ * The site's three generated tiers are 400/800/1600. A body figure sits in a
+ * ~760px reading column, so 800w is the tier that actually paints there —
+ * 1600w is what a *hero* image needs (it can run full-bleed above the
+ * column), not a figure inside the prose. Capping here is what makes
+ * `tests/images.test.mts`'s per-page budget mean anything: the budget test
+ * charges each image its *largest referenced* variant, so a figure that
+ * references 1600w when 800w would display identically still costs the full
+ * 1600w file — one such figure is a third of the whole page budget. This is
+ * the same reasoning `srcCapped`/`srcsetCapped` already apply to card
+ * thumbnails; body figures are the same shape of problem at a larger cap.
+ */
+const BODY_IMAGE_MAX_WIDTH = 800
+
 export function rehypeFigures({ getSize }: { getSize: (src: string) => { width: number; height: number } | null }) {
   return (tree: Node) => {
     const walk = (node: Node) => {
@@ -390,6 +407,26 @@ export function rehypeFigures({ getSize }: { getSize: (src: string) => { width: 
           image.properties.width = size.width
           image.properties.height = size.height
         }
+
+        // A figure that names a pipeline image (`/images/<id>-<width>.webp`)
+        // gets a real responsive srcset, capped at BODY_IMAGE_MAX_WIDTH,
+        // regardless of which literal tier the author typed — so a figure
+        // authored against the wrong (too-large) tier is corrected here
+        // rather than shipping over budget, and every figure gains a
+        // smaller variant for phones for free.
+        const pipelineMatch = src.match(/^(\/images\/(.+))-\d+\.webp$/)
+        const id = pipelineMatch?.[2]
+        const pipelineImage = id ? getImage(id) : null
+        if (pipelineImage && pipelineMatch) {
+          const base = pipelineMatch[1]
+          const usable = pipelineImage.widths.filter((w) => w <= BODY_IMAGE_MAX_WIDTH)
+          const widths = usable.length ? usable : [Math.min(...pipelineImage.widths)]
+          const largest = Math.max(...widths)
+          image.properties.src = `${base}-${largest}.webp`
+          image.properties.srcSet = widths.map((w) => `${base}-${w}.webp ${w}w`).join(', ')
+          image.properties.sizes = '(max-width: 780px) 100vw, 760px'
+        }
+
         image.properties.loading = 'lazy'
         image.properties.decoding = 'async'
         image.properties.alt = alt || caption || ''
@@ -553,6 +590,23 @@ export function rehypeBasePath(basePath: string) {
           if (typeof value === 'string' && value.startsWith('/') && !value.startsWith('//')) {
             node.properties[attr] = basePath + value
           }
+        }
+
+        // srcSet is a different shape: "path width, path width, …". Missing
+        // this meant a Markdown figure's srcset (see rehypeFigures) would
+        // point at the un-prefixed root on subpath hosting (GitHub Pages),
+        // 404ing every responsive variant while the plain `src` still worked.
+        const srcSet = node.properties.srcSet
+        if (typeof srcSet === 'string') {
+          node.properties.srcSet = srcSet
+            .split(',')
+            .map((candidate) => {
+              const trimmed = candidate.trim()
+              const [url, descriptor] = trimmed.split(/\s+/, 2)
+              if (!url || !url.startsWith('/') || url.startsWith('//')) return trimmed
+              return descriptor ? `${basePath}${url} ${descriptor}` : `${basePath}${url}`
+            })
+            .join(', ')
         }
       }
       for (const child of node?.children ?? []) walk(child)
