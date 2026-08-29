@@ -120,6 +120,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Operator soundscape page for local destinations and station music at G8a.
+  - id: motc-naming
+    title: Taichung Metro Green Line's 18 station names announced — rider-friendliness the top naming principle
+    titleOriginal: 台中捷運綠線18個車站站名出爐 搭乘友善度為命名首要原則
+    publisher: 交通部 (Ministry of Transportation and Communications) public-transit news portal, reporting Taichung City Government Transportation Bureau's decision
+    url: https://168.motc.gov.tw/theme/news/post/1906121102750
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "MOTC's public-transit news portal reports Taichung City Government's 2018-06-30 naming decision. States this station was added later than the line's original 17 stations, roughly 800 m from a neighbouring stop, motivated by local-development considerations, and named for its actual road intersection: 「於距離800公尺處新增的G8a站『櫻花文心站』，則以實際路口命名」— word order reversed from the station's current published name, 文心櫻花."
+  - id: tcrt-tod-greenline
+    title: Green Line Land-Development Station Introduction
+    titleOriginal: 綠線土開場站簡介
+    publisher: Taichung City Rapid Transit Systems Bureau (臺中市政府捷運工程局)
+    url: https://tcrt.taichung.gov.tw/content/index?Parser=1,7,49
+    accessed: 2026-08-28
+    kind: primary
+    lang: zh-Hant
+    note: Full page, fetched and parsed directly from raw HTML, dated 12 December 2025. Gives this station's joint-development site area, coverage/floor-area ratios, named investors, planned use and execution stage.
 ---
 
 Wenxin Yinghua is stop 8 of 18 on the Green Line, and the committed TDX record pairs the code G8a with the Traditional Chinese name 文心櫻花.[^tdx-tmrt] TDX places it in 西屯區 at 臺中市西屯區文心路三段107之28號, with a published route chainage of 7.53 km in the selected direction.[^tdx-tmrt] The address is the source-backed siting description used here; no extra catchment boundary is inferred from it.
@@ -129,6 +147,12 @@ The station belongs to the CJ920 civil package.[^cj920] That package covers the 
 The operator describes the Green Line as a steel-wheel, medium-capacity, fully driverless system using two-car trains.[^tmrt-faq] It identifies G8a as an elevated station; only G0 and G17 are ground level.[^tmrt-faq] That system-level engineering fact is kept separate from the station address because TDX publishes the latter but not the former.[^tdx-tmrt][^tmrt-faq]
 
 The operator’s soundscape page associates Wenxin Yinghua with the city hall, schools, entertainment venues and the Fengjia/nightlife side of Xitun.[^soundscape-g8a] The page records those as the operator’s soundscape context rather than converting nearby destinations into a claim about the station’s catchment size.
+
+MOTC's public-transit news portal, reporting Taichung City Government's June 2018 naming decision, states this station was a later addition to the Green Line's original 17-station plan, added roughly 800 m from a neighbouring stop "考量在地發展性" (considering local development potential), and named for its actual road intersection: 「於距離800公尺處新增的G8a站『櫻花文心站』，則以實際路口命名」.[^motc-naming] That 2018 announcement names the station 櫻花文心 — word order reversed from the station's current published name, 文心櫻花, the same reversal pattern found at G6.[^tdx-tmrt][^motc-naming] What "櫻花" (cherry blossom) itself refers to — whether Yinghua Road took its name from a historical orchard or nursery, as one unverified social-media claim suggests — is TBC; no source found states an official etymology.[^motc-naming]
+
+## Joint development
+
+This station's land is a designated Taichung Metro joint-development site. TCRT's own case-list page gives the site as 1,654 m² at 70% building coverage and a 500% floor-area ratio, with 集順生活科技股份有限公司 and 日勝生活科技股份有限公司 jointly named as investors — the same pairing as G6 — planned for residential use.[^tcrt-tod-greenline] The same page's timeline records the tender closing in March 2020, evaluation in October 2020, and a best-applicant announcement and signed investment contract both in December 2020.[^tcrt-tod-greenline] As of the bureau's page, the site is still applying for a building permit, behind both G6 and G8 in the pipeline.[^tcrt-tod-greenline]
 
 The operator's current public-art roster names works at selected Green Line stations, but it does not assign a named work to G8a in the roster consulted for this page.[^tmrt-art] Whether an unlisted or later work exists here is therefore TBC; the page does not turn a list boundary into a claim that no artwork exists.
 

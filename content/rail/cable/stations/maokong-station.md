@@ -55,6 +55,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Reused from content/rail/cable/lines/maokong-gondola.md. Source for the ordered list of the line's four passenger stations, of which this is the fourth and last."
+  - id: gondola-suspension-criteria
+    title: Suspension criteria
+    titleOriginal: 暫停營運條件
+    publisher: 貓空纜車網站 (gondola.taipei), operated by 北捷遊憩事業股份有限公司
+    url: "https://www.gondola.taipei/cp.aspx?n=94839749F15BBAB1"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's own current page, fetched in full, stating the line-wide (not station-specific) automatic suspension triggers: sustained wind of 16 m/s for 3+ seconds or any gust of 18 m/s; any lightning strike in the operating area; an earthquake of intensity 4 or greater; and a land typhoon warning covering the Taipei area, subject to conditions or a city government work/school closure announcement."
+  - id: pto-maintenance-2017
+    title: 2017 annual maintenance and bus-service adjustment
+    titleOriginal: 貓空纜車106年度檢修暨接駁公車調整
+    publisher: 臺北市公共運輸處 (Taipei Public Transportation Office)
+    url: "https://pto.gov.taipei/News_Content.aspx?n=D065CCB1467288C8&s=E2B02D07D634D66C"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Press release, fetched in full, dating a specific instance of the line's annual maintenance closure — 5 June and 13 June-1 July 2017 (民國106年) — and the resulting adjustment to feeder bus services (routes 棕15, 小10 and the left-line-to-Zoo route received increased frequency to cover demand while the gondola's own sightseeing bus services were suspended)."
 ---
 
 Maokong Station is the gondola's upper terminus, at 指南路三段38巷35號, an
@@ -82,3 +100,9 @@ The operator places Maokong Station at the centre of the hillside tea-house dist
 The same operator page names the Maokong sightseeing bus right-hand loop, 小10 and 棕15 as local connections.[^gondola-stations-maokong] 棕15 is a bus route in this corpus, but the gondola source does not claim an integrated fare or a guaranteed timed connection; the relationship here is therefore a named access connection, not a timetable promise.[^gondola-stations-maokong] The operator also presents the station as a night-view point over greater Taipei, which is an access and visitor description rather than a measured visibility claim.[^gondola-stations-maokong]
 
 The route-system page places Maokong fourth in the four-station passenger order.[^gondola-system] Its upper-terminal role is therefore established by the operator's sequence, while the elevation and rotating-platform description come from the separately cited station record.[^gondola-system][^wiki-maokong-station]
+
+## When the whole line stops running
+
+The operator's own suspension-criteria page states four automatic triggers that halt the whole line, Maokong Station included, not just this station: sustained wind of 16 m/s (roughly Beaufort force 7) for three or more seconds, or any gust of 18 m/s; any lightning strike within the operating area; an earthquake of intensity 4 or greater; and a land typhoon warning covering the Taipei area, applied according to conditions or a city government work/school closure announcement.[^gondola-suspension-criteria] None of these criteria is stated as station-specific — they apply line-wide, and this page states them here because Maokong, as the upper terminus in exposed hillside terrain, is where a rider is most likely to be waiting when one applies.[^gondola-suspension-criteria]
+
+Beyond storm-triggered suspensions, the line also closes for planned annual maintenance. A dated example: the Taipei Public Transportation Office recorded a maintenance closure of 5 June and 13 June-1 July 2017, during which the gondola's own sightseeing bus services (to Zhinan Temple and the right-hand loop) were suspended while feeder routes 棕15, 小10 and the left-line-to-Zoo route ran at increased frequency to cover demand.[^pto-maintenance-2017] This dates and sources, with a specific instance, the bus-substitution relationship the operator's own connections list otherwise only states in the abstract.[^pto-maintenance-2017][^gondola-stations-maokong]

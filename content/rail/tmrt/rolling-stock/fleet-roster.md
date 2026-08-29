@@ -61,6 +61,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full page, fetched and parsed directly from raw HTML. Names the three-firm consortium against the contract's whole scope, including the EMU subsystem, without splitting which firm built the cars.
+  - id: storm-first-emu
+    title: "From Japan via Kawasaki Heavy Industries! Taichung Metro Green Line's first EMU arrives at Taichung Port"
+    titleOriginal: 來自日本川崎重工！台中捷運綠線第一列電聯車運抵台中港
+    publisher: 風傳媒 (Storm Media)
+    url: https://www.storm.mg/article/220061
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News report, fetched in full, on the first prototype train's January 2017 factory inspection at Kawasaki Heavy Industries in Japan, led by a Taipei DORTS deputy director. States the exterior design concept as 「新芽綻放」(sprouting new buds) and the interior as 「清亮、簡輕」(clarity and lightness), and gives an average operating speed of approximately 35 km/h and a maximum of 70 km/h — figures from the 2017 prototype-testing period, lower than the operator's current FAQ figure."
 ---
 
 ## Eighteen trains, dimensioned to the centimetre
@@ -93,6 +102,10 @@ actually manufactured the cars. Kawasaki Heavy Industries has a well-known
 international rolling-stock manufacturing business, but this page does not
 assert that Kawasaki built these cars specifically beyond what the primary
 source itself states: a three-firm consortium won the whole contract.
+
+## The prototype's own delivery
+
+A news report on the first EMU's delivery, fetched in full, describes a January 2017 factory inspection and test-run of the prototype train at Kawasaki Heavy Industries' Japan facility, led personally by a deputy director of Taipei City Government's Department of Rapid Transit Systems (DORTS) — the agency Taichung's own line was built by (see the [Green Line page](/rail/tmrt/lines/green-line/)).[^storm-first-emu] The same report gives the design concept in the manufacturer's own terms: the exterior as 「新芽綻放」("sprouting new buds") and the interior as 「清亮、簡輕」("clarity and lightness").[^storm-first-emu] It states an average operating speed of approximately 35 km/h and a maximum of 70 km/h at that 2017 testing stage — lower than the 75 km/h maximum the operator's current FAQ states for the line generally.[^storm-first-emu] Both figures are published rather than picked: they may describe different things (early prototype testing versus current in-service maximum), and no source states that they are the same measurement.
 
 ## Remaining gaps
 

@@ -22,12 +22,32 @@ facts:
     source: wiki-zoo-south
 specs:
   - label: Elevation
-    value: TBC
+    value: "95.5"
+    unit: m
+    source: wiki-line-table
   - label: Station order
     value: "2"
     unit: of 4 passenger stations
     source: gondola-system
 sources:
+  - id: wiki-line-table
+    title: Maokong Gondola
+    titleOriginal: 貓空纜車
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: "https://zh.wikipedia.org/zh-tw/貓空纜車"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "The line's own station table, column-checked directly against the row for this station: 95.5 m elevation, 側式 (side) platform type — confirmed by re-fetching and verifying column alignment, not read from a snippet."
+  - id: zoo-faq-south-gate
+    title: "Zoo FAQ: the Zoo South gate and the Maokong Gondola"
+    titleOriginal: 動物園常見問答－南門與貓空纜車
+    publisher: 臺北市立動物園 (Taipei Zoo)
+    url: "https://www.zoo.gov.taipei/News_Content.aspx?n=84E812423EEBCE9C&s=24200C9DDE1F0A98"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "The zoo's own FAQ, fetched in full and re-checked for exact wording. States the south gate is about a 10 m walk from this station; ticket prices (general NT$105, Taipei-resident NT$65, discounted NT$55, free-admission-category NT$5); that tickets sold here include one-way shuttle fare to Bird Garden Station, since the gate does not open directly onto the exhibits; and that the gate closes whenever the gondola is suspended, and every Monday except the first Monday of the month."
   - id: gondola-stations-zoo-south
     title: Station information — Zoo South Station
     titleOriginal: 車站資訊 — 動物園南站
@@ -85,3 +105,7 @@ The operator locates Zoo South Station beside the wetland ecology pond on the zo
 The station article gives the former name 動物園內站 and dates the change to 動物園南站 to 26 October 2015.[^wiki-zoo-south] That naming history matters when older engineering or safety documents use the former name. The same article describes an elevated building with two above-ground floors and side platforms.[^wiki-zoo-south] Its elevation is left TBC because the current station record does not publish a figure for it.
 
 The operator's route sequence places Zoo South second of four passenger stations, between Zoo Station and Zhinan Temple Station.[^gondola-system] The ordering is a line-level fact; it does not imply that the station shares a platform with either neighbour. The station's current access description and its historical name are kept separate so a reader can distinguish present signage from archived references.[^gondola-stations-zoo-south][^wiki-zoo-south]
+
+## Elevation, and the zoo's own gate
+
+The line's own station table gives Zoo South's elevation as 95.5 m, with a 側式 (side) platform arrangement.[^wiki-line-table] Taipei Zoo's own FAQ, describing this specific gate in the zoo's own words, states it sits about 10 metres from the station: 「本園動物園南站入口位於貓空纜車動物園南站外約步行10公尺」.[^zoo-faq-south-gate] Tickets bought at this gate are priced the same as the zoo's other entrances — general NT$105, Taipei-resident NT$65, discounted NT$55, free-admission-category NT$5 — and explicitly include one-way shuttle fare, since the gate does not open directly onto the exhibits: 「本站售票皆含單程車資，需搭乘接駁列車至鳥園車站始得參觀園區」.[^zoo-faq-south-gate] The gate closes whenever the gondola itself is suspended, and on every Monday except the first Monday of each month.[^zoo-faq-south-gate]

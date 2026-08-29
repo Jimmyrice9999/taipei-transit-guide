@@ -2361,6 +2361,105 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Lead index, not independently verified against the primary source it cites (an archived MOTC Railway Bureau document, unreachable via web.archive.org in this environment). Source for the manufacturer split, fleet size, speed figures and service-start date."
+  - id: "rail-tmrt-lines-green-line-dorts-tmrt"
+    title: "Taichung Metro Green Line (Wuri-Wenxin-Beitun Line)"
+    titleOriginal: "臺中都會區大眾捷運系統烏日文心北屯線"
+    publisher: "臺北市政府捷運工程局 (Department of Rapid Transit Systems, Taipei City Government)"
+    url: "https://www.dorts.gov.taipei/cp.aspx?n=1C3E25BBF5A49242"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "DORTS's own page describing its own work. States MOTC commissioned Taipei City Government to handle the Green Line's subsequent design and construction (「交通部委託臺北市政府辦理後續設計施工事項」), and that MOTC, Taipei City Government and Taichung City Government signed a three-party construction-and-operation agreement on 2008-11-15 (「97年11月15日完成簽署...建設與營運三方協議書」)."
+  - id: "rail-tmrt-lines-green-line-storm-dorts"
+    title: "From Japan via Kawasaki Heavy Industries! Taichung Metro Green Line's first EMU arrives at Taichung Port"
+    titleOriginal: "來自日本川崎重工！台中捷運綠線第一列電聯車運抵台中港"
+    publisher: "風傳媒 (Storm Media)"
+    url: "https://www.storm.mg/article/220061"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "News report, fetched in full, corroborating DORTS's own account: 「負責代為工程施作的北市捷運局表示，台中捷運綠線目前工程進度近7成」(the Taipei DORTS office, responsible for executing the engineering work on Taichung's behalf, states progress is nearly 70%). Also describes a January 2017 factory inspection of the prototype train at Kawasaki Heavy Industries in Japan, led by DORTS deputy director 余念梓."
+  - id: "rail-tmrt-lines-green-line-nownews-selfbuild"
+    title: "No longer relying on Taipei City Government to build for us: Mayor Lu Shiow-yen says Taichung enters a peak metro-construction period for the next 30 years"
+    titleOriginal: "不再靠北市府代工！盧秀燕：未來30年台中進入捷運興建高峰期"
+    publisher: "NOWnews"
+    url: "https://www.nownews.com/news/6547020"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "News report, fetched in full, on Taichung establishing its own independent metro-engineering bureau in 2025. Quotes Mayor 盧秀燕 on why the Green Line was built by Taipei City Government rather than a Taichung agency: 「台中只有一條捷運綠線，委託最有經驗的台北市政府施作」(Taichung had only the one line, so it commissioned the most experienced body available)."
+  - id: "rail-tmrt-lines-green-line-cj910"
+    title: "CJ910 project record"
+    titleOriginal: "CJ910 工程"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C30"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Northern civil package: G0, Beitun depot and the track system."
+  - id: "rail-tmrt-lines-green-line-cj920"
+    title: "CJ920 project record"
+    titleOriginal: "CJ920 工程"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C29"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Civil package for the G3–G9 elevated section."
+  - id: "rail-tmrt-lines-green-line-cj930"
+    title: "CJ930 project record"
+    titleOriginal: "CJ930 工程"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C28"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Civil package for G10–G17, including the ground-level HSR end."
+  - id: "rail-tmrt-lines-green-line-cj900"
+    title: "CJ900/CJ907 system-equipment project record"
+    titleOriginal: "CJ900、CJ907 機電系統工程"
+    publisher: "Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局)"
+    url: "https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C31"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "System-equipment package from the depot to G17, jointly delivered by Kawasaki Heavy Industries, Alstom and CTCI."
+  - id: "rail-tmrt-stations-g6-cna-brothers"
+    title: "Second half of the season begins: Taichung Metro's Wenxin Chongde station draws attention with a CTBC Brothers 3D ground mural"
+    titleOriginal: "迎下半季開打 中捷文心崇德站中信兄弟3D地景吸睛"
+    publisher: "中央社 (Central News Agency, CNA)"
+    url: "https://www.cna.com.tw/news/ahel/202307120082.aspx"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "News report, fetched in full. States this is the Green Line's permanent sports-themed station, close to CTBC Brothers' home ground (Taichung Intercontinental Baseball Stadium), and dates a 3D-decal installation to around 12 July 2023 timed to the CPBL season's second half."
+  - id: "rail-tmrt-stations-g6-ltn-redline"
+    title: "Taichung Metro Red Line route field survey: from Chongde Road to Fengyuan, meeting the Green Line at Wenxin Chongde station"
+    titleOriginal: "中捷紅線路線實勘！走崇德路到豐原 在文心崇德站與綠線交會"
+    publisher: "自由時報 (Liberty Times)"
+    url: "https://news.ltn.com.tw/news/life/breakingnews/5080686"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "News report stating a future Red Line interchange at this station. Checked against TCRT's own Red Line project page (https://tcrt.taichung.gov.tw/content/index?Parser=1%2C6%2C137), which describes the line's own route by a different intersection (Chongde Road x Sanmin Road) and does not name this station anywhere in the text fetched — reported as a conflict, not resolved."
+  - id: "rail-tmrt-stations-g6-tmrt-art"
+    title: "Public works"
+    titleOriginal: "公共藝術"
+    publisher: "Taichung Metro Corporation (臺中捷運股份有限公司)"
+    url: "https://www.tmrt.com.tw/art/public-works"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Current operator roster of Green Line public works."
+  - id: "rail-tmrt-stations-g6-tmrt-events"
+    title: "Major events"
+    titleOriginal: "大事紀"
+    publisher: "Taichung Metro Corporation (臺中捷運股份有限公司)"
+    url: "https://www.tmrt.com.tw/about/major-events"
+    accessed: "2026-08-23"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Company and Green Line construction/operation milestones, including the 2015 G4/G5 beam accident and 2020 joint-shaft fracture."
   - id: "rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation"
     title: "TRA grade separation"
     titleOriginal: "臺鐵立體化"
@@ -4891,6 +4990,45 @@ recorded; neither is picked.
 
 - [Car Facilities](https://www.thsrc.com.tw/ArticleContent/52ffe06e-3e38-4352-8170-93a768905dbd) — primary; Taiwan High Speed Rail Corporation (台灣高速鐵路股份有限公司); accessed 2026-08-28.[^rail-thsr-rolling-stock-fleet-roster-thsr-car-facilities]
 - [Taiwan High Speed Rail 700T EMU](https://zh.wikipedia.org/zh-tw/台灣高速鐵路700T型電聯車) — secondary; Wikipedia; accessed 2026-08-28.[^rail-thsr-rolling-stock-fleet-roster-zhwiki-700t]
+
+## Green Line — Who actually built it
+
+Discussed on [Green Line](/rail/tmrt/lines/green-line/) in the source page's “Who actually built it” section.[^rail-tmrt-lines-green-line-dorts-tmrt]
+
+### Who actually built it
+
+Taichung had no metro-engineering agency of its own when the Green Line was designed and built. DORTS — Taipei City Government's own Department of Rapid Transit Systems — states directly that MOTC commissioned Taipei City Government to handle the line's subsequent design and construction, formalised in a three-party agreement MOTC, Taipei City Government and Taichung City Government signed on 15 November 2008.[^rail-tmrt-lines-green-line-dorts-tmrt] A 2017 news report corroborates DORTS actually doing the work: 「負責代為工程施作的北市捷運局表示，台中捷運綠線目前工程進度近7成」(the Taipei DORTS office, executing the work on Taichung's behalf, states progress is nearly 70%), and describes a DORTS deputy director personally leading a January 2017 factory inspection of the prototype train at Kawasaki Heavy Industries in Japan.[^rail-tmrt-lines-green-line-storm-dorts] Taichung's mayor confirmed the same arrangement in 2025, framing it as a temporary necessity now ending: 「台中只有一條捷運綠線，委託最有經驗的台北市政府施作」(with only the one line, Taichung commissioned the most experienced body available) — announced alongside Taichung establishing its own independent metro-engineering bureau for future lines.[^rail-tmrt-lines-green-line-nownews-selfbuild] The line's own current civil-package records (CJ910/CJ920/CJ930/CJ900) are attributed to Taichung's own bureau, which reflects that bureau's current role hosting the records rather than a contradiction of DORTS's construction history.[^rail-tmrt-lines-green-line-cj910][^rail-tmrt-lines-green-line-cj920][^rail-tmrt-lines-green-line-cj930][^rail-tmrt-lines-green-line-cj900][^rail-tmrt-lines-green-line-dorts-tmrt]
+
+#### Sources for this entry
+
+- [Taichung Metro Green Line (Wuri-Wenxin-Beitun Line)](https://www.dorts.gov.taipei/cp.aspx?n=1C3E25BBF5A49242) — primary; 臺北市政府捷運工程局 (Department of Rapid Transit Systems, Taipei City Government); accessed 2026-08-29.[^rail-tmrt-lines-green-line-dorts-tmrt]
+- [From Japan via Kawasaki Heavy Industries! Taichung Metro Green Line's first EMU arrives at Taichung Port](https://www.storm.mg/article/220061) — secondary; 風傳媒 (Storm Media); accessed 2026-08-29.[^rail-tmrt-lines-green-line-storm-dorts]
+- [No longer relying on Taipei City Government to build for us: Mayor Lu Shiow-yen says Taichung enters a peak metro-construction period for the next 30 years](https://www.nownews.com/news/6547020) — secondary; NOWnews; accessed 2026-08-29.[^rail-tmrt-lines-green-line-nownews-selfbuild]
+- [CJ910 project record](https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C30) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-23.[^rail-tmrt-lines-green-line-cj910]
+- [CJ920 project record](https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C29) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-23.[^rail-tmrt-lines-green-line-cj920]
+- [CJ930 project record](https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C28) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-23.[^rail-tmrt-lines-green-line-cj930]
+- [CJ900/CJ907 system-equipment project record](https://tcrt.taichung.gov.tw/form/Details?Parser=2%2C6%2C45%2C%2C%2C%2C31) — primary; Taichung City Government Rapid Transit Systems Bureau (臺中市政府捷運工程局); accessed 2026-08-23.[^rail-tmrt-lines-green-line-cj900]
+
+## G6 Wenxin Chongde — A themed station, and a disputed future interchange
+
+Discussed on [G6 Wenxin Chongde](/rail/tmrt/stations/g6/) in the source page's “A themed station, and a disputed future interchange” section.[^rail-tmrt-stations-g6-cna-brothers]
+
+### A themed station, and a disputed future interchange
+
+The operator has made this its permanent sports-themed station, sited close to the CTBC Brothers' home ground at the Taichung Intercontinental Baseball Stadium.[^rail-tmrt-stations-g6-cna-brothers] CNA reported a 3D ground-mural installation here around 12 July 2023, timed to the start of the CPBL season's second half, intended to let riders "提前感受球場氛圍" (get an early feel for the stadium atmosphere) and encourage transit use for games.[^rail-tmrt-stations-g6-cna-brothers]
+
+自由時報 has reported that a future Red Line (崇德豐原線) will interchange with the Green Line at this station: 「紅線完工後將與綠線於文心崇德站形成轉乘節點」.[^rail-tmrt-stations-g6-ltn-redline] TCRT's own Red Line project page, fetched directly and checked specifically for this station's name, does not contain it anywhere — that page instead describes the Red Line's route by a different intersection, Chongde Road and Sanmin Road.[^rail-tmrt-stations-g6-ltn-redline] The Red Line itself remains at the feasibility-study stage. This is published as an unresolved conflict between a news report's claim and the primary project page's own silence, not resolved by picking one.[^rail-tmrt-stations-g6-ltn-redline]
+
+The operator's current public-art roster names works at selected Green Line stations, but it does not assign a named work to G6 in the roster consulted for this page.[^rail-tmrt-stations-g6-tmrt-art] Whether an unlisted or later work exists here is therefore TBC; the page does not turn a list boundary into a claim that no artwork exists.
+
+The station-specific sources consulted here do not establish a separate incident at G6.[^rail-tmrt-stations-g6-tmrt-events] That is a research boundary, not a claim that no disruption or worksite event has ever occurred here.
+
+#### Sources for this entry
+
+- [Second half of the season begins: Taichung Metro's Wenxin Chongde station draws attention with a CTBC Brothers 3D ground mural](https://www.cna.com.tw/news/ahel/202307120082.aspx) — secondary; 中央社 (Central News Agency, CNA); accessed 2026-08-29.[^rail-tmrt-stations-g6-cna-brothers]
+- [Taichung Metro Red Line route field survey: from Chongde Road to Fengyuan, meeting the Green Line at Wenxin Chongde station](https://news.ltn.com.tw/news/life/breakingnews/5080686) — secondary; 自由時報 (Liberty Times); accessed 2026-08-29.[^rail-tmrt-stations-g6-ltn-redline]
+- [Public works](https://www.tmrt.com.tw/art/public-works) — primary; Taichung Metro Corporation (臺中捷運股份有限公司); accessed 2026-08-23.[^rail-tmrt-stations-g6-tmrt-art]
+- [Major events](https://www.tmrt.com.tw/about/major-events) — primary; Taichung Metro Corporation (臺中捷運股份有限公司); accessed 2026-08-23.[^rail-tmrt-stations-g6-tmrt-events]
 
 ## Taiwan Railways level crossings — Elimination by grade separation
 

@@ -18,14 +18,28 @@ facts:
   - label: Nearest MRT station
     value: BR01 Taipei Zoo (Wenhu Line), ~350 m northeast, out-of-station transfer only
     source: gondola-stations-zoo
+  - label: Platform type
+    value: 迴轉式 (rotating), same design family as Maokong Station
+    source: wiki-line-table
 specs:
   - label: Elevation
-    value: TBC
+    value: "24.1"
+    unit: m
+    source: wiki-line-table
   - label: Station order
     value: "1"
     unit: of 4 passenger stations
     source: gondola-system
 sources:
+  - id: wiki-line-table
+    title: Maokong Gondola
+    titleOriginal: 貓空纜車
+    publisher: 維基百科 (Chinese Wikipedia)
+    url: "https://zh.wikipedia.org/zh-tw/貓空纜車"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "The line's own station table, column-checked directly against the row for this station: 24.1 m elevation, 迴轉式 (rotating) platform type — confirmed by re-fetching and verifying column alignment, not read from a snippet."
   - id: gondola-stations-zoo
     title: Station information — Zoo Station
     titleOriginal: 車站資訊 — 動物園站
@@ -91,3 +105,7 @@ The operator gives Zoo Station's address as 新光路二段8號 and describes th
 The station is the first passenger stop in the operator's four-station sequence and the lower terminus for the climb toward Zoo South, Zhinan Temple and Maokong.[^gondola-system] The city release used for the line-wide opening dates the gondola's public opening to 4 July 2007; it does not establish a separate ceremony for this building alone.[^gov-taipei-40m]
 
 The operator's access page names nearby bus services but does not publish a guaranteed timed connection or a combined ticket with the Wenhu Line.[^gondola-stations-zoo] Those fields remain TBC. The station's role is consequently defined by its physical location, route order and walking transfer, not by an assumed integrated interchange design.
+
+## Elevation, platform type and the full bus-route list
+
+The line's own station table gives Zoo Station's elevation as 24.1 m, the lowest of the four passenger stations, with a 迴轉式 (rotating) platform — the same design family as the upper terminus at Maokong Station.[^wiki-line-table] The operator's current station page lists a fuller set of connecting bus routes than a general "multiple routes" description conveys: 66, 236區, 237, 282, 294, 295, 611, 676, 679, 793, 933, 1558, 小12, 棕3, 棕6, 棕11, 棕15, 棕18, 棕21, the South Ring Trunk (南環幹線), the Maokong Left Line to the zoo (貓空左線(動物園)), and the Roosevelt Road Trunk (羅斯福路幹線).[^gondola-stations-zoo]

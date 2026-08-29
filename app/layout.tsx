@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Zilla_Slab, Inter, IBM_Plex_Mono } from 'next/font/google'
 import SiteNav from '@/components/SiteNav'
+import SideNavRail from '@/components/SideNavRail'
 import SiteSearch from '@/components/SiteSearch'
 import { getNavTree } from '@/lib/nav'
 import { PROVENANCE, STATIONS } from '@/lib/stations'
@@ -235,6 +236,17 @@ export const metadata: Metadata = {
   category: 'reference',
 }
 
+/**
+ * Data is an explicit nav item, not a content folder: it is generated from
+ * the TDX records rather than written in Markdown, so it has no submenu.
+ * Shared between the top-bar popover and the wide-viewport rail — one list,
+ * so the two navs can never disagree about what's in it.
+ */
+const EXTRA_NAV_ITEMS = [
+  { href: '/regions/', title: 'Regions' },
+  { href: '/data/', title: 'Data' },
+]
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   // Read at build time, so the nav always matches the /content folder.
   const navTree = getNavTree()
@@ -264,23 +276,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 height={WORDMARK.height}
               />
             </Link>
-            {/* Data is an explicit nav item, not a content folder: it is
-                generated from the TDX records rather than written in Markdown,
-                so it has no submenu and is passed separately. */}
-            <SiteNav
-              sections={navTree}
-              extra={[
-                { href: '/regions/', title: 'Regions' },
-                { href: '/data/', title: 'Data' },
-              ]}
-            />
+            <SiteNav sections={navTree} extra={EXTRA_NAV_ITEMS} />
             {/* Last in the bar and last in the tab order: the sections are the
                 primary navigation and search is the shortcut past them. */}
             <SiteSearch />
           </div>
         </header>
 
-        {children}
+        {/*
+          Two navs, one tree (lib/nav.ts's `navTree`): SiteNav's popover stays
+          the top bar at every width; SideNavRail is CSS-only revealed from
+          ~1280px, in a two-column grid with `{children}`'s own `<main>` — see
+          `.layout-shell` in globals.css. Below that width `.layout-shell` is
+          a plain block and the rail is `display: none`, i.e. today's layout,
+          unchanged.
+        */}
+        <div className="layout-shell">
+          <SideNavRail sections={navTree} extra={EXTRA_NAV_ITEMS} />
+          {children}
+        </div>
 
         <footer className="site-footer">
           <div className="container">

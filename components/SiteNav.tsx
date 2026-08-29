@@ -12,13 +12,28 @@ import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
 import type { NavGroup, NavSection } from '@/lib/nav'
 import { rememberPath } from '@/lib/navigation-history'
 
-/** "/rail/" and "/rail" should both count as being in the Rail section. */
-function isInSection(pathname: string, href: string) {
+/**
+ * "/rail/" and "/rail" should both count as being in the Rail section.
+ *
+ * Exported for SideNavRail, which needs the identical rule to highlight the
+ * current section in the wide-viewport rail — the two navs must agree on
+ * what "current" means, or a reader could see one lit and not the other.
+ */
+export function isInSection(pathname: string, href: string) {
   const base = href.replace(/\/+$/, '')
   return pathname === base || pathname.startsWith(base + '/')
 }
 
-function NavGroupView({ group }: { group: NavGroup }) {
+/**
+ * One group's content — a type's page list, or a system's nested types —
+ * shared between the popover panel (SiteNav, hover/click, absolutely
+ * positioned) and the always-visible rail (SideNavRail, click only, static
+ * flow). Both want the identical tree: closed-by-default subgroups, the same
+ * truncation and "Open X index" framing, the same badges. Only the container
+ * around this differs between the two, which is exactly why this is its own
+ * component rather than being inlined into SiteNav's popover markup.
+ */
+export function NavGroupView({ group }: { group: NavGroup }) {
   // A system nested one level inside a section (Rail's eight systems): its
   // own disclosure, opening onto its types rather than the type's own links
   // — SYSTEM before PAGE TYPE. Checked first because a system still carries

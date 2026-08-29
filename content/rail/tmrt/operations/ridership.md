@@ -41,6 +41,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full single-page PDF, extracted with pdftotext after the fetch tooling used could not read it directly. Gives a daily figure for every date in July 2026, a monthly total and a daily average; the column-header text did not survive extraction due to the PDF's CJK font encoding.
+  - id: udn-ridership-milestone
+    title: "Green Line marks 5 years of service, cumulative ridership passes 60 million"
+    titleOriginal: 台中捷運綠線通車5年 累積運量破6000萬人次
+    publisher: 聯合報 (United Daily News)
+    url: https://udn.com/news/story/7325/9258074
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News report, fetched in full, attributing annual and cumulative figures directly to the operator: 「中捷公司指出，台中綠線2025年總運量達1722萬人次，較2024年1580萬人次成長達9%」(TMRT states 2025 annual ridership reached 17.22 million, up 9% from 15.80 million in 2024). States cumulative ridership passed 50 million on 2025-06-09 and 60 million in early January 2026."
 ---
 
 ## One month, cleanly cross-checked against itself
@@ -73,6 +82,10 @@ conventional sense used across Taiwan transit reporting, but this page does
 not present that as independently confirmed by a readable label within the
 document itself. What exactly the count measures — station entries, total
 boardings, or another definition — is published here as TBC.
+
+## Annual and cumulative figures, from news reporting
+
+Beyond the single month read directly from the operator's own PDF, 聯合報 reports figures it attributes directly to the operator: 2025 annual ridership of 17.22 million, up 9% from 15.80 million in 2024, cumulative ridership passing 50 million on 9 June 2025 and 60 million in early January 2026, and unspecified new monthly and daily records set in December 2025.[^udn-ridership-milestone] TMRT's own press-release listings, checked directly, do not currently carry a release stating these figures in the operator's own words — they rest on this news report's attribution to the company, not on a primary release read directly, and are reported with that provenance rather than as independently primary-confirmed.[^udn-ridership-milestone]
 
 ## Remaining gaps
 
