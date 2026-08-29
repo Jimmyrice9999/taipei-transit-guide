@@ -1,3 +1,75 @@
+## Run 306 Part 4/5 continuation - 5 Commons photos, 9 more TRA/TRTC pages deepened (2026-08-29)
+
+Resumed after a context break. First action: reconciled git state against
+a concurrently-running Part 7 verification fork, which had (against its
+own read-only instructions) fixed and pushed the GitHub Pages 404 bug and
+the side-rail axe violations directly to `origin/main` (commits `abd63234`,
+`9e068f12`) while this session was independently mid-fix on the same two
+issues. Local `HEAD` already matched `origin/main` exactly — the fork's
+writes had landed in the same working tree this session was using, so
+there was nothing to merge, only to confirm.
+
+**Part 4.** Sourced and integrated the 5 Commons photo candidates left
+pending since Run 305: Formosa Boulevard and Hamasen/Sizihwan (KRTC,
+via `hero:` frontmatter), Beitou and Taipei 101/World Trade Center (TRTC,
+via the existing code-keyed `stations/${code}` lookup, zero content-file
+changes needed), and a Capital Bus Scania K380 coach (a body figure on the
+imported-diesel-chassis page, explicitly captioned as a different operator
+from the 統聯客運 fleet the section's facts describe). Found real Commons
+category/file titles by direct WebFetch browsing rather than WebSearch,
+whose session budget was exhausted — categories and file pages are fetches,
+not searches. Caught two bugs in the process: a WebFetch text summary
+described the Formosa Boulevard photo as a station interior when it is
+actually a street-level exterior shot (caught only by viewing the
+downloaded image directly with the Read tool, not by trusting the fetch
+summary); and a hand-written figure caption containing its own em dash
+collided with `rehypeFigures`' caption/credit split delimiter and silently
+dropped the photographer credit, caught by `tests/images.test.mts`'s
+credit-rendering check.
+
+**Part 5.** Dispatched 10 read-only scouts (8 initially, 2 more once TRTC
+and Fengyuan-Dongshi were identified as worth a pass) covering four more
+TRA double-track corridors (Chiayi-Xinshi, Dongshan-Su'aoxin,
+Jianan-Qingshui, Changhua-Minxiong), the Shanhua platform and Sanmin track
+records, the Ruifang-Shen'ao and Shen'ao-Liandong line pair, the
+Fengyuan-Dongshi Line, and TRTC's corporate history — the last three of
+which had no dedicated research file yet despite existing content pages.
+Real depth landed in all nine, not just restatement: a staged, three-way
+mining-origin-year conflict on the Shen'ao corridor (1933/1935/1936, two
+different company names) alongside a detailed, archive-naming (but
+unverified) account of the 1975-1977 highway-versus-railway land dispute
+behind the 1977 dismantling; a Tianzhong-Ershui double-track date conflict
+a full year apart (1969 newspaper vs. 1970 government yearbook) on the
+Changhua-Minxiong corridor; Xinma station's own naming history
+(新城→聖湖→新馬) revealed it as the stated historical midpoint of the
+Dongshan-Su'aoxin project, not just a current TDX-layer artifact; Shanhua
+and Sanmin's construction-table "Add platform"/"Add track" rows gained
+purpose and approximate programme context from secondary sources, kept
+explicitly separate from the operator's own year-only primary fields;
+TRTC gained real founding, capital, business-scope and leadership material
+from its own corporate timeline and the government company registry, with
+a caught Wikipedia mis-citation (its shareholding-percentage claim's
+footnote resolves to an unrelated FAQ page) deliberately left unpublished
+rather than passed through.
+
+Three gate failures surfaced and were fixed, not weakened: a claims-ratchet
+false positive from the Scania alt text's bare, unglued plate number
+("750-FN") tripping the count-signal regex — fixed by dropping the plate
+number from the alt text, since it added nothing essential; a real
+zh-Hant tagging gap from two backtick-wrapped Han terms (rehype's auto-tagger
+does not walk `<code>` spans) — fixed by switching to the established
+`<span lang="zh-Hant">` convention; and a `npm run research` failure
+because the new TRTC research file's "Checked and failed" entries lacked
+individual dates. `npm run conflicts` needed re-running twice, since this
+run's own new "Conflict, not resolved" sections made the generated
+conflicts-index stale mid-session.
+
+`gate:full` clean on the second full run (claims ratchet held at 0
+ASSERTED). 1 commit, pushed. **Not reached**: further Part 5 continuation
+(many more thin pages remain), a dedicated Part 4 icon/colour pass beyond
+what was already clean from Part 3's reuse, Part 7's page-weight
+before/after reporting for a representative station page.
+
 ## Run 306 - image-budget CI fix, new Air/Road/Statistics sections, permanent nav-label gate, wide-viewport side rail, GitHub Pages 404 fix (2026-08-29)
 
 **Part 0.** CI was red: `rail/tra/rolling-stock/fleet-roster` carried 509 KB of
