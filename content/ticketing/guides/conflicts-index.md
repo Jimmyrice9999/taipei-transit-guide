@@ -993,6 +993,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The operator's 12 December 2024 reopening notice. It records nine repositioned steel-box-girder spans, 139 damaged items, 1,438 replaced track baseplates, 1,050 metres of restored track, 41,500 metres of replaced cable, the 248-day repair account and the added permanent unseating and uplift-restraint devices."
+  - id: "rail-history-forestry-railways-baxianshan-primary"
+    title: "Baxianshan National Forest Recreation Area (park page)"
+    titleOriginal: "八仙山國家森林遊樂區"
+    publisher: "Forestry and Nature Conservation Agency (林業及自然保育署)"
+    url: "https://www.forest.gov.tw/0000186"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "A second, separate official page giving 1963 as the year logging ended (48 years from the 1915 start) and 1986 for the recreation area's establishment — both figures conflict with dates given on the recreation.forest.gov.tw page for the same subjects, published as conflicts rather than resolved."
   - id: "rail-history-incidents-dorts-flood-technical-87"
     title: "Practical water, environmental-control and fire-safety engineering, p. 87"
     titleOriginal: "捷運工程叢書精進版－29 捷運系統水電、環控與消防工程實務"
@@ -1056,6 +1065,78 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Carries the 1997 reading of the withdrawal — 馬特拉與台北市政府捷運工程局發生合約糾紛後，將技術人員全數撤離."
+  - id: "rail-history-mining-railways-zhwiki-pingxi-line"
+    title: "Pingxi Line"
+    titleOriginal: "平溪線"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/平溪線"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Lead-only encyclopedia article. Supports the 1918 company formation and January 1919 construction start; its July 1921 completion date and 1929 government-purchase date/price rest on an in-page footnote not independently opened in this pass."
+  - id: "rail-history-mining-railways-milkyrailway-pingxi"
+    title: "Industrial heritage: coal from Shidi — the Shidi Grand Incline and the Pingxi Line railway"
+    titleOriginal: "【產業遺產】來自石底的煤礦：石底大斜坑與平溪線鐵道"
+    publisher: "Milky Railway (時光土場)"
+    url: "https://milkyrailway.blogspot.com/2023/01/blog-post_30.html"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Enthusiast blog, full page fetched. Gives a July 1922 completion date, one year later than zh.wikipedia's July 1921 — published as a conflict. Also describes the 1929 government purchase causally (relieving Taiyang Mining's cash-flow problems) without a specific day or price."
+  - id: "rail-history-mining-railways-archives-jinguashi"
+    title: "Mining mountain memory: exploring a century of Jinguashi history"
+    titleOriginal: "礦山記憶：探索金瓜石百年歷史風華"
+    publisher: "National Archives Administration, National Development Council (國家發展委員會檔案管理局)"
+    url: "https://www.archives.gov.tw/tw/arctw/69-1742.html"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Government archive publishing its own historical account. Corroborates the 1933 Nippon Mining purchase and names the Shuinandong-Baduozi line \"水八鐵路,\" matching zh.wikipedia's separate \"金瓜石線\" article rather than the National Central Library's usage of that same name."
+  - id: "rail-history-mining-railways-ncl-jinguashi-line"
+    title: "The Jinguashi mining special-purpose railway — the Jinguashi Line"
+    titleOriginal: "金瓜石礦山專用鐵道金瓜石線"
+    publisher: "Taiwan Memory, National Central Library (國家圖書館 臺灣記憶)"
+    url: "https://tm.ncl.edu.tw/article?u=001_001_0000360833"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "National library digital-heritage archive. Names the 1931-completed Jinguashi-Ruifang light railway \"金瓜石線\" — a different line from the one a separate Wikipedia article gives the same name to (see specs above)."
+  - id: "rail-history-mining-railways-zhwiki-jinguashi-line"
+    title: "Jinguashi Line"
+    titleOriginal: "金瓜石線"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/金瓜石線"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Describes a different railway under the same name — a 762 mm industrial line from Shuinandong through Baduozi to the port at Bachimen, completed 1936, ending passenger service in August 1962. Independently corroborated as \"水八鐵路\" by the National Archives Administration."
+  - id: "rail-history-mining-railways-zhwiki-houtong-station"
+    title: "Houtong Station"
+    titleOriginal: "猴硐車站"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/猴硐車站"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports the 27 January 1920 opening date, on the Yilan Line."
+  - id: "rail-history-mining-railways-zhwiki-ruisan"
+    title: "Ruisan Coal Mine"
+    titleOriginal: "瑞三煤礦"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/瑞三煤礦"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Supports the March 1922 coal-preparation-plant completion, the Mitsui predecessor operation, Li Jian-hsing's 1934 lease and the company's 1954 formal registration, cumulative 1946-1980 output figures, and the closure date corroborated independently by a New Taipei City government page."
+  - id: "rail-history-mining-railways-ntpc-ruisan"
+    title: "Ruisan Mining coal-preparation plant, 'coal for a prosperous nation' — reviving Houtong's mining heritage"
+    titleOriginal: "瑞三鑛業整煤廠「產煤裕國」，再造猴硐礦業風華"
+    publisher: "New Taipei City Government (新北市政府)"
+    url: "https://wedid.ntpc.gov.tw/Governance/Detail/gbBlm01ALMDz"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "City government's own account of its restoration project. Confirms the 1990 closure, the September 2022 restoration reopening, visitor numbers since, and a second restoration phase that broke ground 21 October 2024 targeting 2026 completion."
   - id: "rail-history-old-mountain-line-einfo-two-bridges-monument"
     title: "Two Old Mountain Line iron bridges of recognised value designated as monuments"
     titleOriginal: "具珍貴價值 舊山線2座鐵橋獲指定為古蹟"
@@ -1083,6 +1164,42 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Full official tourism-agency page, read directly. Source for the 1908 completion, the 402.326 m Shengxing elevation, the 8-tunnel/3-bridge/4-station count and the Rail Bike conversion."
+  - id: "rail-history-port-rail-connections-tra-taichung-port-station"
+    title: "Taichung Port Station information"
+    titleOriginal: "臺中港車站資訊"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2210"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Operator's own current station page. Confirms the station is active with a freight-consignment desk still listed, operating hours 05:00-24:00."
+  - id: "rail-history-port-rail-connections-zhwiki-taichung-port-line"
+    title: "Taichung Port Line"
+    titleOriginal: "台中港線"
+    publisher: "Wikipedia contributors (維基百科)"
+    url: "https://zh.wikipedia.org/zh-tw/台中港線"
+    accessed: "2026-08-29"
+    kind: "secondary"
+    lang: "zh-Hant"
+    note: "Gives 7.8 km and a 31 October 1976 opening/operator-transfer date, uncited on the page itself and conflicting with a separately-verified TRA construction-history PDF date of 1973 built/1974 operating (see tra-construction-history-pdf)."
+  - id: "rail-history-port-rail-connections-tra-construction-history-pdf"
+    title: "Chronological history of railroad construction"
+    titleOriginal: "路線修築沿革"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full operator PDF, read directly for this project's separate Jianan-Taichung Port double-track research file. Its row 45 entry for the Taichung Port Line gives 7.8 km, construction in Minguo 62 (1973), operation start Minguo 63 (1974) — conflicting with the 1976 date given elsewhere; the current TRA HTML construction-history page omits this line entirely."
+  - id: "rail-history-port-rail-connections-tra-facebook-freight"
+    title: "Annual volume passes 200,000 tonnes, a new record — TRA and Taichung Port branch cooperate closely to raise freight efficiency"
+    titleOriginal: "年運量突破20萬噸創新高／台鐵公司與台中港務分公司密切合作，提升貨運效能"
+    publisher: "Taiwan Railway Corporation official Facebook page (臺灣鐵路股份有限公司)"
+    url: "https://www.facebook.com/TaiwanRailwayCorporation/posts/800856652089039"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Operator's own social-media statement, dated 29 March 2024. States system-wide TRA freight of 6.81 million tonnes and Taichung Port Line-specific freight of 202,000 tonnes, primarily wheat to Fugang and Hsinchu flour mills."
   - id: "rail-history-public-art-dorts-general-public-art"
     title: "Taipei Metro public-art table"
     titleOriginal: "捷運公共藝術總表"
@@ -3160,6 +3277,29 @@ original cause will prevail.
 - [Investigation report 114交調0005: Circular Line 0403 earthquake damage](https://www.cy.gov.tw/CyBsBoxContent.aspx?s=49082) — primary; Control Yuan of the Republic of China (監察院); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-cy-114]
 - [New Taipei Circular Line ready; full service resumes at noon](https://www.ntmetro.com.tw/basic/?mode=detail&node=754) — primary; New Taipei Metro Corporation (新北大眾捷運股份有限公司); accessed 2026-08-27.[^rail-history-circular-line-0403-earthquake-ntmc-reopening]
 
+## Forestry railways beyond Alishan — Records still missing
+
+Discussed on [Forestry railways beyond Alishan](/rail/history/forestry-railways/) in the source page's “Records still missing” section.[^rail-history-forestry-railways-baxianshan-primary]
+
+### Records still missing
+
+Baxianshan's gauge is not established by any source found. Its
+logging-closure year is not established either — 1963 and 1965 are two
+different values from two different pages of the same government
+department, contradicting each other. Its recreation-area opening year is
+likewise not established between the same department's own conflicting
+1986 and 1988 pages. Taipingshan's true network-length total is not
+established — 100-plus km across 16 lines and 68.01 km across seven
+lines are two different published counts. The year the 見晴線 trail
+conversion took place is unverified.
+No cultural-heritage registration for Taipingshan's surviving Maoxing Line
+infrastructure or diesel locomotives was found in this search — recorded as
+not found, not confirmed absent.[^rail-history-forestry-railways-baxianshan-primary]
+
+#### Sources for this entry
+
+- [Baxianshan National Forest Recreation Area (park page)](https://www.forest.gov.tw/0000186) — primary; Forestry and Nature Conservation Agency (林業及自然保育署); accessed 2026-08-29.[^rail-history-forestry-railways-baxianshan-primary]
+
 ## Metro incidents and service disruptions — Conflicts and gaps
 
 Discussed on [Metro incidents and service disruptions](/rail/history/incidents/) in the source page's “Conflicts and gaps” section.[^rail-history-incidents-dorts-flood-technical-87]
@@ -3220,6 +3360,112 @@ second[^rail-history-matra-dispute-ltn-2005].
 - [Muzha metro line: Matra wins, Taipei to pay NT$1.64 billion](https://www.epochtimes.com/b5/5/7/23/n995027.htm) — secondary; 孫友廉, 陳曉宜, 鄭學庸, 自由時報, 23 July 2005 (via 大紀元 reprint); accessed 2026-08-06.[^rail-history-matra-dispute-ltn-2005]
 - [Wenhu line](https://zh.wikipedia.org/zh-tw/文湖線) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-06.[^rail-history-matra-dispute-zh-wenhu]
 
+## Coal and mineral mining railways — The Pingxi Line began as a private colliery railway
+
+Discussed on [Coal and mineral mining railways](/rail/history/mining-railways/) in the source page's “The Pingxi Line began as a private colliery railway” section.[^rail-history-mining-railways-zhwiki-pingxi-line]
+
+### The Pingxi Line began as a private colliery railway
+
+What is now TRA's Pingxi Line began as 石底線, a private railway built to move
+coal out of the Shidi coalfield. In June 1918, 顏雲年, who held two of the
+coalfield's mining rights, joined with the Japanese trading house 藤田組 to
+form 臺北炭礦株式會社 and build a railway once wartime raw-material prices made
+the investment worthwhile; construction began in January 1919.[^rail-history-mining-railways-zhwiki-pingxi-line]
+藤田組 withdrew after the post-WWI economic downturn, and Yan Yunian bought out
+its stake, bringing in further investors and reorganising the enlarged
+company as 臺陽礦業株式會社 in 1920.[^rail-history-mining-railways-zhwiki-pingxi-line] Sources disagree by a
+year on when the line was finished: an encyclopedia account gives July 1921,
+while an independently fetched enthusiast history gives July
+1922.[^rail-history-mining-railways-zhwiki-pingxi-line][^rail-history-mining-railways-milkyrailway-pingxi] Both are published here
+rather than resolved. The colonial government purchased the line in 1929,
+relieving Taiyang Mining's cash-flow problems and renaming it 平溪線 under the
+Railway Bureau — the exact day and purchase price given in some secondary
+accounts rest on a citation this research did not independently
+verify.[^rail-history-mining-railways-milkyrailway-pingxi]
+
+A separate, later, and unrelated operation also carries the Pingxi name:
+新平溪煤礦 (New Pingxi Coal Mine) at Shifen, now preserved as a museum with its
+own narrow-gauge electric mining train. Its own 1965 opening and 1997
+closure dates are unverified in this research, sourced only to a search
+summary rather than a fetched page. It is a different company and a
+different mine from the 1918-1929 石底線/臺陽礦業 story above, not established
+by any source found to be connected to it.
+
+#### Sources for this entry
+
+- [Pingxi Line](https://zh.wikipedia.org/zh-tw/平溪線) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-mining-railways-zhwiki-pingxi-line]
+- [Industrial heritage: coal from Shidi — the Shidi Grand Incline and the Pingxi Line railway](https://milkyrailway.blogspot.com/2023/01/blog-post_30.html) — secondary; Milky Railway (時光土場); accessed 2026-08-29.[^rail-history-mining-railways-milkyrailway-pingxi]
+
+## Coal and mineral mining railways — Jinguashi: two railways, one popular name
+
+Discussed on [Coal and mineral mining railways](/rail/history/mining-railways/) in the source page's “Jinguashi: two railways, one popular name” section.[^rail-history-mining-railways-archives-jinguashi]
+
+### Jinguashi: two railways, one popular name
+
+Japanese merchant 田中長兵衛, through 田中組, and separately 藤田組, obtained
+mining rights at Jinguashi for gold and copper extraction.[^rail-history-mining-railways-archives-jinguashi]
+金瓜石礦山株式會社, established in 1925, built a light railway connecting
+Jinguashi to Ruifang, completed in 1931.[^rail-history-mining-railways-ncl-jinguashi-line] Nippon Mining
+(日本礦業株式會社) purchased the Jinguashi mining rights in 1933 and expanded
+processing facilities, including the 十三層 ore-flotation plant.[^rail-history-mining-railways-ncl-jinguashi-line][^rail-history-mining-railways-archives-jinguashi]
+
+The name "金瓜石線" is used by different sources for two different railways.
+The National Central Library's digital archive applies it to the 1931
+Jinguashi-Ruifang light railway described above.[^rail-history-mining-railways-ncl-jinguashi-line]
+Wikipedia's dedicated article instead applies the same name to a separate,
+later 762 mm industrial line running from 水湳洞 through 焿子寮 and 深澳 to the
+port at 八尺門, completed in 1936 and measured at 12.0 km with five stations
+as of a 1953 survey — a line the National Archives Administration
+independently corroborates under the alternate name 水八鐵路, carrying ore to
+the port for shipment.[^rail-history-mining-railways-zhwiki-jinguashi-line][^rail-history-mining-railways-archives-jinguashi] This
+line's passenger service ended in August 1962 due to deteriorated
+track.[^rail-history-mining-railways-zhwiki-jinguashi-line] Both usages of "金瓜石線" are published here
+without picking one as correct.
+
+Postwar, mining continued under 臺灣金屬鑛業股份有限公司 (Taiwan Metal Mining
+Co.), formed in 1955.[^rail-history-mining-railways-archives-jinguashi] Sources disagree on when mining at
+Jinguashi finally ended — two sources agree independently on 1987, but a
+third gives 1985 under a differently named company (臺灣金礦公司), and this
+research could not determine whether that is the same entity operating under
+an inconsistent name or a genuinely separate closure event.
+
+#### Sources for this entry
+
+- [Mining mountain memory: exploring a century of Jinguashi history](https://www.archives.gov.tw/tw/arctw/69-1742.html) — primary; National Archives Administration, National Development Council (國家發展委員會檔案管理局); accessed 2026-08-29.[^rail-history-mining-railways-archives-jinguashi]
+- [The Jinguashi mining special-purpose railway — the Jinguashi Line](https://tm.ncl.edu.tw/article?u=001_001_0000360833) — primary; Taiwan Memory, National Central Library (國家圖書館 臺灣記憶); accessed 2026-08-29.[^rail-history-mining-railways-ncl-jinguashi-line]
+- [Jinguashi Line](https://zh.wikipedia.org/zh-tw/金瓜石線) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-mining-railways-zhwiki-jinguashi-line]
+
+## Coal and mineral mining railways — Houtong: a station, then a mine, then a museum
+
+Discussed on [Coal and mineral mining railways](/rail/history/mining-railways/) in the source page's “Houtong: a station, then a mine, then a museum” section.[^rail-history-mining-railways-zhwiki-houtong-station]
+
+### Houtong: a station, then a mine, then a museum
+
+Houtong Station opened on 27 January 1920 as part of the Yilan
+Line.[^rail-history-mining-railways-zhwiki-houtong-station] The Ruisan coal-preparation plant nearby was
+completed in March 1922, originally under Mitsui zaibatsu operation; Mitsui
+later abandoned the site believing reserves exhausted, and in 1934 李建興 and
+his brothers leased the workings, forming what was formally registered on
+15 November 1954 as 瑞三鑛業股份有限公司.[^rail-history-mining-railways-zhwiki-ruisan] The company became
+Taiwan's largest single coal producer, with a cumulative 1946-1980 output of
+6,741,118 tonnes — reported as 5.23% of national production over that span,
+a figure not directly comparable to a separate broadcaster's claim that the
+mine supplied "one-seventh" of Taiwan's coal at its single-year peak, since
+the two describe different measurement periods.[^rail-history-mining-railways-zhwiki-ruisan] The mine
+closed on 1 May 1990, following declining economics and three fatal
+disasters in 1984.[^rail-history-mining-railways-zhwiki-ruisan][^rail-history-mining-railways-ntpc-ruisan] The preparation plant and
+coal-transport bridge were registered as historic buildings on 7 November
+2005; the wider site was named and opened as 猴硐煤礦博物園區 (Houtong Coal
+Mine Museum Park) on 24 July 2010, and the Ruisan plant itself reopened after
+restoration in September 2022, with a second restoration phase that broke
+ground on 21 October 2024, targeted for completion in 2026.[^rail-history-mining-railways-ntpc-ruisan]
+
+#### Sources for this entry
+
+- [Houtong Station](https://zh.wikipedia.org/zh-tw/猴硐車站) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-mining-railways-zhwiki-houtong-station]
+- [Ruisan Coal Mine](https://zh.wikipedia.org/zh-tw/瑞三煤礦) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-mining-railways-zhwiki-ruisan]
+- [Ruisan Mining coal-preparation plant, 'coal for a prosperous nation' — reviving Houtong's mining heritage](https://wedid.ntpc.gov.tw/Governance/Detail/gbBlm01ALMDz) — primary; New Taipei City Government (新北市政府); accessed 2026-08-29.[^rail-history-mining-railways-ntpc-ruisan]
+
 ## The Taiwan Railways Old Mountain Line — Heritage status and today's rail bike
 
 Discussed on [The Taiwan Railways Old Mountain Line](/rail/history/old-mountain-line/) in the source page's “Heritage status and today's rail bike” section.[^rail-history-old-mountain-line-einfo-two-bridges-monument]
@@ -3252,6 +3498,40 @@ pick between them.
 - [Two Old Mountain Line iron bridges of recognised value designated as monuments](https://e-info.org.tw/node/216883) — secondary; Taiwan Environmental Information Center (環境資訊中心); accessed 2026-08-27.[^rail-history-old-mountain-line-einfo-two-bridges-monument]
 - [The Old Mountain Line Railway's Closure and Reopening](https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Event&id=233563) — secondary; Culture Memory Bank 2.0, Ministry of Culture, citing Miaoli Literature no. 49 (2012), Miaoli County Cultural and Tourism Bureau; accessed 2026-08-27.[^rail-history-old-mountain-line-culture-memory-bank-closure-reopening]
 - [The Old Mountain Line Railway](https://www.taiwan.net.tw/m1.aspx?sNo=0001110&id=A12-00494) — primary; Tourism Administration, Ministry of Transportation and Communications (交通部觀光署); accessed 2026-08-27.[^rail-history-old-mountain-line-motc-tourism-old-mountain-line]
+
+## Port rail connections — Kaohsiung, Keelung, Taichung — Taichung: the one port line still running, on a disputed birth date
+
+Discussed on [Port rail connections — Kaohsiung, Keelung, Taichung](/rail/history/port-rail-connections/) in the source page's “Taichung: the one port line still running, on a disputed birth date” section.[^rail-history-port-rail-connections-tra-taichung-port-station]
+
+### Taichung: the one port line still running, on a disputed birth date
+
+Taichung Port Station remains an active TRA station today, with a
+freight-consignment desk still listed on the operator's own current station
+page.[^rail-history-port-rail-connections-tra-taichung-port-station] The line itself is 7.8 km, but its origin
+date is genuinely disputed between two different TRA-adjacent sources: a
+Wikipedia article, uncited for this specific figure, gives an opening or
+operator-transfer date of 31 October 1976, while a TRA construction-history
+PDF — read directly for a separate piece of this project's research — lists
+the same line as built in 1973 and put into operation in 1974, and the
+current TRA HTML construction-history page omits the line
+entirely.[^rail-history-port-rail-connections-zhwiki-taichung-port-line][^rail-history-port-rail-connections-tra-construction-history-pdf] Both
+dates are published here without resolving which is correct. TRA's own 2024
+social-media statement puts the line's annual freight volume at 202,000
+tonnes — mostly wheat moved to flour mills at Fugang and Hsinchu, at roughly
+three round trips per day on the port line itself — within a system-wide TRA
+freight total of 6.81 million tonnes that year.[^rail-history-port-rail-connections-tra-facebook-freight] A
+separate, uncited claim on Wikipedia that this wheat traffic ended in June
+2025 and was replaced by irregular energy-storage-container shipments from
+November 2025 could not be corroborated against any primary or independently
+written source in repeated searches, and is not published here as
+established.
+
+#### Sources for this entry
+
+- [Taichung Port Station information](https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewStaInfo/2210) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-29.[^rail-history-port-rail-connections-tra-taichung-port-station]
+- [Taichung Port Line](https://zh.wikipedia.org/zh-tw/台中港線) — secondary; Wikipedia contributors (維基百科); accessed 2026-08-29.[^rail-history-port-rail-connections-zhwiki-taichung-port-line]
+- [Chronological history of railroad construction](https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-26.[^rail-history-port-rail-connections-tra-construction-history-pdf]
+- [Annual volume passes 200,000 tonnes, a new record — TRA and Taichung Port branch cooperate closely to raise freight efficiency](https://www.facebook.com/TaiwanRailwayCorporation/posts/800856652089039) — primary; Taiwan Railway Corporation official Facebook page (臺灣鐵路股份有限公司); accessed 2026-08-29.[^rail-history-port-rail-connections-tra-facebook-freight]
 
 ## Public art in the Taipei-region rail network — Conflicts and gaps
 

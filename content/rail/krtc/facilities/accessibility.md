@@ -27,6 +27,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full operator page, read directly. States universal elevator provision and enumerates other station facilities; checked specifically and confirmed to cite no named law, regulation or design standard.
+  - id: moi-accessibility-code
+    title: Station elevator facilities
+    titleOriginal: 站內無障礙設施
+    publisher: Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)
+    url: https://www.metro.taipei/News_Content.aspx?n=C0EB9D07B84907D9&s=4FDC24D931DE6050
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: A different Taipei-region operator's own page, fetched twice with identical results. States directly that its MRT elevators comply with the Ministry of the Interior's Building Accessibility Facility Design Code (建築物無障礙設施設計規範). Establishes what governs MRT station buildings generally in Taiwan; does not itself confirm KRTC's own stations were built or audited against this code, since KRTC names no regulation on its own page.
 ---
 
 ## What the operator states, and what it doesn't
@@ -68,9 +77,22 @@ is meant to cover the light rail too, or refers only to the Red and Orange
 Lines, is not stated by any source found and is not assumed either way
 here.
 
+## What governs MRT station accessibility generally
+
+KRTC's own page names no regulation, but a different Taipei-region
+operator's page does. TRTC's station-facilities page states directly that
+its MRT elevators comply with the Ministry of the Interior's Building
+Accessibility Facility Design Code (建築物無障礙設施設計規範), the general
+public-building accessibility standard issued under Article 167 of the
+Building Technical Regulations.[^moi-accessibility-code] This establishes
+what governs MRT station buildings generally in Taiwan; it does not itself
+confirm that KRTC's own stations were built or audited against this
+specific code, since KRTC's own page does not name it.
+
 ## Remaining gaps
 
-No numeric elevator-completion figure and no named regulatory basis for
-KRTC's accessibility programme were found in any source read for this page.
-Whether the Circular Light Rail is covered by the same "all stations"
-statement is TBC.
+No numeric elevator-completion figure was found in any source read for
+this page. Whether KRTC's own stations were designed or audited against the
+Building Accessibility Facility Design Code specifically is TBC. Whether
+the Circular Light Rail is covered by the same "all stations" statement is
+TBC.

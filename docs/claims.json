@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 26910,
-    "tbc": 4613,
+    "sourced": 27029,
+    "tbc": 4637,
     "asserted": 0,
-    "meta": 108
+    "meta": 110
   },
   "files": [
     {
@@ -9594,8 +9594,8 @@
     },
     {
       "file": "content/ferry/routes/matsu.md",
-      "sources": 11,
-      "sourced": 17,
+      "sources": 14,
+      "sourced": 18,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -9610,8 +9610,8 @@
     },
     {
       "file": "content/ferry/routes/penghu.md",
-      "sources": 4,
-      "sourced": 18,
+      "sources": 7,
+      "sourced": 20,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -9849,6 +9849,14 @@
       "meta": 0
     },
     {
+      "file": "content/rail/history/forestry-railways.md",
+      "sources": 8,
+      "sourced": 20,
+      "tbc": 3,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
       "file": "content/rail/history/haiduan-ruiyuan-single-track.md",
       "sources": 6,
       "sourced": 21,
@@ -9953,6 +9961,14 @@
       "meta": 0
     },
     {
+      "file": "content/rail/history/japanese-era-trunk-line.md",
+      "sources": 11,
+      "sourced": 20,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
       "file": "content/rail/history/jianan-qingshui-double-track.md",
       "sources": 5,
       "sourced": 15,
@@ -10009,6 +10025,14 @@
       "meta": 1
     },
     {
+      "file": "content/rail/history/mining-railways.md",
+      "sources": 8,
+      "sourced": 18,
+      "tbc": 5,
+      "asserted": 0,
+      "meta": 1
+    },
+    {
       "file": "content/rail/history/mudan-shuangxi-double-track.md",
       "sources": 6,
       "sourced": 17,
@@ -10029,6 +10053,14 @@
       "sources": 6,
       "sourced": 22,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/history/port-rail-connections.md",
+      "sources": 9,
+      "sourced": 14,
+      "tbc": 3,
       "asserted": 0,
       "meta": 0
     },
@@ -10133,6 +10165,14 @@
       "sources": 6,
       "sourced": 17,
       "tbc": 0,
+      "asserted": 0,
+      "meta": 0
+    },
+    {
+      "file": "content/rail/history/sugar-railway.md",
+      "sources": 7,
+      "sourced": 15,
+      "tbc": 2,
       "asserted": 0,
       "meta": 0
     },
@@ -14762,9 +14802,9 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 258,
-      "sourced": 375,
-      "tbc": 3,
+      "sources": 281,
+      "sourced": 404,
+      "tbc": 9,
       "asserted": 0,
       "meta": 6
     },

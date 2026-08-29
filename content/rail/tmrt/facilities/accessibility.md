@@ -32,6 +32,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full page, fetched and parsed directly from raw HTML rather than a search snippet. Lists ten accessibility facilities with descriptions; the page carries a "1 2" page-number control, and page 2's content could not be retrieved this session because its pagination is client-side.
+  - id: moi-accessibility-code
+    title: Station elevator facilities
+    titleOriginal: 站內無障礙設施
+    publisher: Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)
+    url: https://www.metro.taipei/News_Content.aspx?n=C0EB9D07B84907D9&s=4FDC24D931DE6050
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: A different Taipei-region operator's own page, fetched twice with identical results. States directly that its MRT elevators comply with the Ministry of the Interior's Building Accessibility Facility Design Code (建築物無障礙設施設計規範). Establishes what governs MRT station buildings generally in Taiwan; does not itself confirm TMRT's own stations were built or audited against this code, since TMRT names no regulation on its own page.
 ---
 
 ## Ten facilities, from the operator's own page
@@ -77,12 +86,22 @@ to page 1. This is recorded as an explicit, confirmed gap: there is more on
 this page than this record currently shows, not an assumption that ten is
 the complete list.
 
+## What governs MRT station accessibility generally
+
+TMRT's own page names no regulation, but a different Taipei-region
+operator's page does. TRTC's station-facilities page states directly that
+its MRT elevators comply with the Ministry of the Interior's Building
+Accessibility Facility Design Code (建築物無障礙設施設計規範).[^moi-accessibility-code]
+This establishes what governs MRT station buildings generally in Taiwan; it
+does not itself confirm that TMRT's own stations were built or audited
+against this specific code, since TMRT's own page does not name it.
+
 ## Remaining gaps
 
 Whatever facilities the operator's page 2 describes remain genuinely
-unread. No numeric accessibility-completion figure and no named regulatory
-standard (Taiwan's accessible-facilities design code or otherwise) were
-found on the page read. Whether every one of the ten described facilities
+unread. No numeric accessibility-completion figure was found on the page
+read, and whether TMRT's own stations were designed or audited against the
+Building Accessibility Facility Design Code specifically is TBC. Whether every one of the ten described facilities
 is present at every station without exception, versus varying by station in
 some cases (as accessible parking's own wording suggests, naming only
 "stations that have" the facility for that one item), is not established by

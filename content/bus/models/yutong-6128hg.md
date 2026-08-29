@@ -1,7 +1,7 @@
 ---
 title: Taiwan Yutong 6128HG
-summary: A Taiwan Yutong 6128HG identified in the Dàyou Bus collision factual report.
-updated: 2026-08-23
+summary: A Taiwan Yutong 6128HG identified in the Dàyou Bus collision factual report, with chassis specifications from a separate VSCC certification filing.
+updated: 2026-08-29
 facts:
   - label: Manufacturer
     value: Taiwan Yutong Bus
@@ -18,8 +18,13 @@ facts:
 specs:
   - label: Propulsion
     value: TBC
-  - label: Body builder
-    value: TBC
+  - label: Body builder (2019-era production)
+    value: 弘鉅汽車製造股份有限公司 (Hongju Automobile Manufacturing Co., Ltd.)
+    source: vscc-zk6128-chassis
+  - label: Wheelbase (VSCC chassis filing)
+    value: "5875"
+    unit: mm
+    source: vscc-zk6128-chassis
   - label: Fleet quantity
     value: TBC
 sources:
@@ -32,6 +37,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the recorded FAB-978 vehicle’s manufacturer, model, seats/standing places and Dàyou registration; it is one incident vehicle record, not a complete fleet register.
+  - id: vscc-zk6128-chassis
+    title: "Five-view chassis, frame data and component weight-location diagram, ZK6128"
+    titleOriginal: 底盤五視、骨架資料及物件重量位置示意圖 車型名稱:ZK6128
+    publisher: Vehicle Safety Certification Center (財團法人車輛安全審驗中心), filed by Hongju Automobile Manufacturing Co., Ltd. (弘鉅汽車製造股份有限公司)
+    url: https://www.vscc.org.tw/File/Download/2d61f7a1-06ab-4d5e-828c-f02a341c150f?FileName=ZK6128-%E5%85%B11%E5%9E%8B-20190517.pdf
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: VSCC chassis-certification filing, dated 2019-04-29, naming Hongju as the filing body and giving chassis dimensions and component weights. The extracted text does not itself contain the word "Yutong" — the attribution to this model rests on zh.wikipedia's ZK6128HG article citing this exact URL as its footnote, which this research independently confirmed resolves to a real, on-topic document; it is a different fact set from the TTSB report (body-builder identity and chassis engineering, not one incident vehicle's seat/standing capacity), and whether it describes the same production generation as the TTSB-recorded vehicle is unconfirmed.
 ---
 
 ## Overview: one recorded vehicle
@@ -55,6 +69,22 @@ which routes normally used it, or whether Dàyou operated other 6128HG units
 with a different interior [^ttsb-citiair]. It also gives no retirement date for
 the recorded bus [^ttsb-citiair]. Those distinctions are why the page
 does not turn one safety-investigation record into a fleet total.
+
+## A second source: a chassis-certification filing, not a fleet record
+
+A VSCC chassis-certification filing for model ZK6128, dated 29 April 2019
+and submitted by Hongju Automobile Manufacturing (弘鉅汽車製造股份有限公司) —
+the body/chassis builder that took over Yutong production in Taiwan from
+2019 — gives a five-view chassis drawing with a 5,875 mm wheelbase and
+listed component weights (engine 508.9 kg, transmission 373.6 kg, battery
+111.6 kg)[^vscc-zk6128-chassis]. This document's own extracted text does not
+contain the word "Yutong" anywhere; the attribution to this model rests on
+a Wikipedia footnote this research independently traced and confirmed
+resolves to the same URL[^vscc-zk6128-chassis]. It answers a different
+question from the TTSB report — body-builder identity and chassis
+engineering, not one incident vehicle's seat/standing capacity — and
+whether it describes the same production generation as the TTSB-recorded
+FAB-978 vehicle is unconfirmed[^vscc-zk6128-chassis][^ttsb-citiair].
 
 ## Evidence from one vehicle and remaining fields
 

@@ -1,9 +1,9 @@
 ---
 title: Taiwan Railways fare and ticket-type history
-summary: A published five-tier, three-class per-km rate table for charter trains, a dated 2026 free-seating rollout with named train numbers — and, like every metro operator this project has checked, an ordinary single-ticket fare that the operator's own page defers to an unfetched calculator rather than states as text.
+summary: A dated 2026 free-seating rollout with named train numbers, a published five-tier per-km charter rate table — and, found on a second TRA page this run, the same five-tier structure for ordinary single tickets too, effective 23 June 2025.
 order: 4
 operator: TRA
-updated: 2026-08-28
+updated: 2026-08-29
 facts:
   - label: Single-ticket categories
     value: full fare, child fare, senior fare, disability fare
@@ -23,8 +23,9 @@ facts:
   - label: Onboard no-ticket surcharge
     value: 50% of the travelled-segment fare, if not voluntarily declared
     source: tra-fare-booking
-  - label: Base single-ticket fare in NT$
-    value: TBC (operator page defers to an unfetched fare-calculator tool)
+  - label: Single-ticket rate table, effective date
+    value: "2025-06-23"
+    source: tra-fare-calculator
   - label: Named but unread fare products
     value: season pass, platform ticket, TR-PASS, university-student scheme, welfare-card points riding, nine regional TPASS-style passes
     source: tra-fare-booking
@@ -49,6 +50,30 @@ specs:
     value: "380"
     unit: NT$
     source: tra-fare-booking
+  - label: Single-ticket rate, 區間車 (Local), under 50 km
+    value: "2.18"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
+  - label: Single-ticket rate, 區間車 (Local), over 300 km
+    value: "1.42"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
+  - label: Single-ticket rate, 莒光號 (Chu-Kuang), under 50 km
+    value: "2.61"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
+  - label: Single-ticket rate, 莒光號 (Chu-Kuang), over 300 km
+    value: "1.70"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
+  - label: Single-ticket rate, 自強號 (Tzu-Chiang), under 50 km
+    value: "3.39"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
+  - label: Single-ticket rate, 自強號 (Tzu-Chiang), over 300 km
+    value: "2.20"
+    unit: NT$ per person per km
+    source: tra-fare-calculator
 sources:
   - id: tra-fare-booking
     title: Fare and Booking Process (Ticket Types and Prices)
@@ -58,20 +83,43 @@ sources:
     accessed: 2026-08-28
     kind: primary
     lang: zh-Hant
-    note: Full page, fetched and parsed directly from raw HTML rather than a search snippet, page dated 7 August 2026 in its own text. Covers single-ticket categories, the 2026 free-seating rollout, group and charter-train pricing including a full per-km rate table, and the living-room car's service fee; defers ordinary single-ticket base pricing to an unfetched calculator tool and names several fare products this report did not follow through to their own pages.
+    note: Full page, fetched and parsed directly from raw HTML rather than a search snippet, page dated 7 August 2026 in its own text. Covers single-ticket categories, the 2026 free-seating rollout, group and charter-train pricing including a full per-km rate table, and the living-room car's service fee; itself defers ordinary single-ticket base pricing to an unfetched calculator tool and names several fare products this report did not follow through to their own pages.
+  - id: tra-fare-calculator
+    title: Fare Calculator — Fare Calculation Rates
+    titleOriginal: 票價試算 — 本公司各級列車票價費率
+    publisher: National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip114/query"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: A second, separate TRA page — the fare calculator itself — publishes the ordinary single-ticket rate as static text, not only via an interactive tool. Gives a five-distance-tier, three-class per-km rate table effective for travel from 23 June 2025, independently corroborated by a third TRA service-information page (tip00C/tipC11/view13) reproducing the identical numbers.
 ---
 
-## Four ticket categories, no base fare stated
+## Four ticket categories, and a base rate table on a second page
 
 TRA's own fare page names four single-ticket categories — full fare,
 child fare, senior fare and disability fare — and a simultaneous
 round-trip booking option charged at the single-ticket rate for each
-direction.[^tra-fare-booking] The page itself does not state a base
-per-km rate or a specific NT$ fare for any route: it defers to a separate
-fare/distance calculator tool this report did not fetch. A passenger who
-boards without a ticket and voluntarily requests to pay is charged the
-fare for the segment travelled; one with no valid reason, or who only
-asks when checked, pays that fare plus a 50% surcharge.[^tra-fare-booking]
+direction.[^tra-fare-booking] That page itself does not state a base
+per-km rate or a specific NT$ fare for any route, deferring instead to a
+separate fare/distance calculator. That calculator page, fetched
+separately, turns out to publish the actual rate as static text rather
+than only through an interactive tool: a five-distance-tier table, in NT$
+per person per km, for 區間車 (Local), 莒光號 (Chu-Kuang) and 自強號
+(Tzu-Chiang) classes, effective for travel from 23 June 2025 — 區間車 runs
+from 2.18 (under 50 km) down to 1.42 (over 300 km); 莒光號 from 2.61 down
+to 1.70; 自強號 from 3.39 down to 2.20, with any journey under 10 km priced
+as if it were 10 km.[^tra-fare-calculator] These are the same five tiers
+and the same three classes as the charter-train rate table described
+below, and the two tables' figures are identical at every tier this page
+checked — a genuine, independently fetched corroboration between two
+separate TRA pages, though this page still does not assume the two
+schemes are formally the same rate structure rather than a coincidence of
+figures, since neither TRA page says so explicitly.[^tra-fare-booking][^tra-fare-calculator]
+A passenger who boards without a ticket and voluntarily requests to pay is
+charged the fare for the segment travelled; one with no valid reason, or
+who only asks when checked, pays that fare plus a 50%
+surcharge.[^tra-fare-booking]
 
 ## A dated 2026 free-seating rollout
 
@@ -132,10 +180,15 @@ established here.
 
 ## Remaining gaps
 
-No base or maximum single-ticket fare figure, in NT$ or per-km, is
-established by any source read for this page — the operator's own page
-defers to a fare-calculator tool not fetched this session, the same class
-of gap this project independently found for TYMC, KRTC and TMRT. Prices
-and rules for the season pass, platform ticket, TR-PASS,
+Whether a journey spanning more than one distance bracket is priced by a
+single bracket lookup for the whole distance or by a marginal, per-bracket
+calculation is not established by either TRA page read for this
+page — the published table gives a rate per bracket but not the formula
+for combining brackets. Whether the June 2025 rate table replaced an
+earlier structure that was itself distance-tiered, or a flat single rate
+per class, is also not established: a 2023 news report quotes flat
+pre-2025 per-km figures with no distance bracket mentioned, but this page
+does not treat that as confirming the earlier structure was genuinely
+flat. Prices and rules for the season pass, platform ticket, TR-PASS,
 university-student scheme, welfare-card points riding and all nine
 regional passes are TBC.

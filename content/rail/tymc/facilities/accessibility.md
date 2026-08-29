@@ -30,6 +30,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full operator page, fetched twice — once for content, once checking specifically for a named regulation or completion percentage, neither found. Describes facilities down to train wheelchair-space and door-opening dimensions.
+  - id: moi-accessibility-code
+    title: Station elevator facilities
+    titleOriginal: 站內無障礙設施
+    publisher: Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)
+    url: "https://www.metro.taipei/News_Content.aspx?n=C0EB9D07B84907D9&s=4FDC24D931DE6050"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: A different Taipei-region operator's own page, fetched twice with identical results. States directly that its MRT elevators comply with the Ministry of the Interior's Building Accessibility Facility Design Code (建築物無障礙設施設計規範), the general public-building accessibility standard issued under Article 167 of the Building Technical Regulations. Establishes what governs MRT station buildings generally in Taiwan; does not itself confirm TYMC's own stations were built or audited against this code, since TYMC names no regulation on its own page.
 ---
 
 ## Detailed facilities, no named standard
@@ -66,9 +75,28 @@ regulation or design standard, and states no numeric completion figure —
 no elevator count, no percentage. This is a real gap in what the operator
 currently publishes, not an oversight of this page.
 
+## What governs MRT station accessibility generally
+
+TYMC's own page names no regulation, but a related Taipei-region operator's
+page does. TRTC's station-facilities page states directly that its MRT
+system elevators comply with the Ministry of the Interior's Building
+Accessibility Facility Design Code (建築物無障礙設施設計規範), specifying a
+minimum 90 cm door width, minimum 135 cm cab depth and a 150 cm turning
+space — the same code that Article 167 of the Building Technical
+Regulations requires the Ministry of the Interior to issue for public
+buildings generally.[^moi-accessibility-code] This establishes what governs
+MRT station buildings in Taiwan as a general matter; it does not itself
+confirm that TYMC's own stations were built or audited against this
+specific code, since TYMC's own page does not name it. TRTC's separate page
+on in-train-car facilities cites no regulation at all, even though the
+legally correct citation there would be a different instrument — MOTC's
+大眾運輸工具無障礙設施設置辦法, which governs vehicles rather than
+buildings.[^moi-accessibility-code]
+
 ## Remaining gaps
 
-Whether TYMC follows a specific named accessibility standard, and whether
-any numeric completion figure exists, are both TBC. Per-station
+Whether TYMC's own stations were designed or audited against the Building
+Accessibility Facility Design Code specifically, and whether any numeric
+completion figure exists for TYMC, are both TBC. Per-station
 accessible-lift completeness across all 22 stations remains unverified
 here beyond this project's prior per-station audit.

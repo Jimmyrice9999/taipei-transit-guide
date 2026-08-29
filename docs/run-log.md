@@ -88,13 +88,105 @@ version of this and already runs in `gate:fast`.
 Scouts dispatched (see above); writes will follow once findings return,
 sequentially, one commit per subject, each gated with `gate:fast`.
 
-Not yet started this run: Part 2's broader depth pass on the 220-ish thin
-non-index content pages beyond the single-source-10 (TYMC G-stations, bike
-regional pages, NT district-office operator pages) — flagged for the next
-batch once Part 3's new-seam pages and the single-source fixes are committed.
-Part 4 (visual/photos/icons/motion) and Part 5's full device matrix are also
-not yet reached this run; will update this entry or add a new one as the
-session continues.
+### Part 2 — single-source fixes, and Part 3 — new research seams
+
+Ran 12 scouts total across two waves this run (8 at the very start for Part
+3a-3h, then 4 more once Part 1's audit identified concrete Part 2 targets).
+All 12 launched successfully at that concurrency with no rate-limit on
+dispatch; three scouts (transport statistics, accessibility regulation,
+Yutong/King Long) were later killed mid-run by a session-wide rate limit and
+resumed successfully via `SendMessage` to their existing agent IDs, per the
+brief's own guidance for exactly this failure mode. `git status` clean
+(only the pre-existing untracked `probes/`) after every batch.
+
+**New content pages** (`content/rail/history/`): the Japanese-era trunk
+line (1895-1945, gauge continuity from the Qing era rather than a fresh
+Japanese choice, two lost stations and four surviving ones); the Taiwan
+Sugar Railway network (a 3,244 km 1952 peak, 74 years of passenger service
+ending 1982, five surviving tourist lines plus one working cane-hauling
+branch, a live naming/length conflict on the Huwei survivor between the
+operator's own two pages and Wikipedia); forestry railways beyond Alishan
+(Taipingshan/Baxianshan/Luodong, with Baxianshan's own department
+contradicting itself across two pages on both its closure year and its
+recreation-area opening year); coal and mineral mining railways (the
+Pingxi Line's origin as a private colliery railway, and two railways at
+Jinguashi that different sources both call "金瓜石線"); port rail
+connections (Kaohsiung's 2018 closure independently corroborated by two
+news outlets read in full, Keelung's silent 2015 closure, and Taichung's
+still-active line on a construction date that conflicts by three years
+between a TRA PDF and an uncited Wikipedia figure). Every page hit the
+14-unsourced-assertion trip-wire on first `gate:fast` pass — not from thin
+sourcing but from "Records still missing" summary sentences that described
+real gaps without using the claims classifier's own TBC vocabulary
+("unresolved" isn't a trigger phrase, "not established" is); reworded
+rather than argued with the checker, since the checker was right that an
+uncited assertion is an uncited assertion regardless of intent. Also hit,
+and fixed correctly per the brief's own documented trap: the CJK
+stale-`out/` font regression fired twice more this run (writing a new
+content file while a background `npm run build` was still running,
+twice), caught both times by rebuilding before regenerating fonts, never
+reaching a commit.
+
+**Ferry enrichment, not new pages**: the ferries scout's Keelung-Matsu and
+Kaohsiung-Magong findings would have duplicated `content/ferry/routes/
+matsu.md` and `penghu.md`, which already exist and already cover both
+routes — checked before writing, per the brief's own audit-first
+instruction. Added the vessel-history material those pages were missing
+(New Taima's 2023 delivery/inaugural-voyage dates, the original Taima
+Ferry's 26-year service and 2023 retirement, Penghu Wheel's 2023 maiden
+voyage replacing Taihua after 34 years) as new sections with new sources,
+rather than new duplicate route pages.
+
+**Single-source fixes**: TRA's fare page went from "TBC, defers to an
+unfetched calculator" to a real five-tier per-km rate table, found on a
+second TRA page (`tip001/tip114/query`) and independently corroborated by
+a third TRA page reproducing the identical numbers — a genuine
+cross-primary corroboration, not just a second read of the same source.
+TYMC/KRTC/TMRT's three accessibility pages each gained a second source:
+not a citation those operators make themselves (none do), but TRTC's own
+page naming the Ministry of the Interior's Building Accessibility Facility
+Design Code (建築物無障礙設施設計規範) for its own MRT elevators — published
+carefully as evidence for what governs MRT station buildings generally in
+Taiwan, explicitly not overstated as confirmation that TYMC/KRTC/TMRT's
+own stations were audited against that code, since none of the three says
+so on its own page. The Yutong 6128HG bus page gained a VSCC chassis-
+certification filing as a second source (body-builder identity and
+chassis dimensions, a different fact set from the TTSB incident report);
+its attribution rests on independently re-verifying a Wikipedia footnote
+against the primary VSCC URL, since the PDF's own extracted text never
+says "Yutong." The King Long page was **not** changed — the scout found no
+genuine second source despite an exhaustive search, only a three-way
+identity ambiguity between Xiamen King Long, a 2007-2018 Sanyang-badged
+assembly channel, and an unrelated Taiwan-domestic 金龍汽車製造 — and TBC
+beats a plausible number, so it stays TBC rather than being padded with an
+unresolved ambiguity dressed up as content.
+
+**Groundwork, no page** (matching the project's own `docs/taiwan-
+expansion.md` precedent for TRA/THSR): airports and domestic aviation
+(Part 3f) and national transport statistics (Part 3i) were both
+substantively researched — ten airports and two subsidy schemes confirmed
+against primary CAA/MOI/law.moj.gov.tw sources for the former; the 2024
+National Travel Survey's mode-share figures, vehicle-registration
+time series back to 1988, and a live MOTC-acknowledged three-way
+divergence in how Taiwan counts traffic deaths (A30/A1/衛福部) for the
+latter — but neither has a natural home in the site's existing `content/`
+sections. Building either into a real page needs a section-architecture
+decision first (a new top-level section, or folding into `/regions/`) —
+not something to improvise mid-research-dump alongside everything else
+this run. Findings written to
+`docs/research/rail/history/airports-and-aviation.md`; the transport-
+statistics findings are in this run's own scout transcript, not yet
+transcribed to a docs/research file — flagged for whoever picks this up
+next.
+
+**Not reached this run**: Part 2's broader depth pass on the ~220 thin
+non-index pages beyond the single-source set (TYMC G-stations, bike
+regional pages, NT district-office operator pages — each shares one fix
+pattern rather than needing 220 bespoke passes, per the Part 1 audit);
+Part 4 (visual design, photos, icons, motion) entirely; Part 5's full
+17-viewport `verify:browser:full` matrix (only `gate:full`'s narrower
+`verify:browser` default sweep ran, as part of the pre-commit gate, not
+as a standalone Part 5 pass). See `docs/for-jamie.md` for the handoff.
 
 ## Run 303 - Taiwan rebrand, rail nav split, geography index, V4 bus depth finished (2026-08-28/29)
 
