@@ -1,16 +1,16 @@
 # Browser verification
 
-- Mode: **template**
-- Corpus pages: **2064**
+- Mode: **full**
+- Corpus pages: **2070**
 - Templates identified: **68**
-- Pages visited by this mode: **137**
+- Pages visited by this mode: **2070**
 - Canonical template pages: **68**; additional extreme pages: **69**
-- Visual/print pages: **68**
+- Visual/print pages: **120**
 - Workers: **4**
 - Per-page timeout: **30000 ms**
-- Elapsed: **6m 53s**
+- Elapsed: **14m 36s**
 
-Reflow, axe, keyboard and ARIA cover the 137 selected template/extreme pages. Screenshots and print cover 68 canonical templates; use `npm run verify:browser:full` for the 2064-page reflow and axe sweep.
+Reflow and axe cover all 2070 real pages. Keyboard and ARIA cover the 137 selected template/extreme pages; screenshots and print cover the 120 curated visual pages from the original sweep.
 
 ## Selection method
 
@@ -48,16 +48,16 @@ Each rendered export is grouped by route family plus the optional rendered furni
 - entity-detail:page-hero,table-scroll,page-title-with-icon: 1 page(s); canonical /rail/history/matra-dispute/; longest-name=/rail/history/matra-dispute/ (17); most-stops=/rail/history/matra-dispute/ (0); widest-table=/rail/history/matra-dispute/ (3); deepest-nesting=/rail/history/matra-dispute/ (24); most-citations=/rail/history/matra-dispute/ (87)
 - entity-detail:page-spine,entity-icon,has-spine,page-title-with-icon,specs: 3 page(s); canonical /rail/metro/depots/tucheng-depot/; longest-name=/rail/metro/depots/xinzhuang-depot/ (28); most-stops=/rail/metro/depots/tucheng-depot/ (0); widest-table=/rail/metro/depots/tucheng-depot/ (3); deepest-nesting=/rail/metro/depots/tucheng-depot/ (24); most-citations=/rail/metro/depots/xinzhuang-depot/ (36)
 - entity-detail:page-spine,has-map,has-spine,ridership-panel,page-title-with-icon: 3 page(s); canonical /rail/krtc/lines/red-line/; longest-name=/rail/krtc/lines/circular-light-rail/ (19); most-stops=/rail/krtc/lines/circular-light-rail/ (0); widest-table=/rail/krtc/lines/circular-light-rail/ (0); deepest-nesting=/rail/krtc/lines/circular-light-rail/ (24); most-citations=/rail/krtc/lines/red-line/ (84)
-- entity-detail:page-spine,has-map,has-spine,ridership-panel,page-title-with-icon,specs: 1 page(s); canonical /rail/tymc/lines/green-line/; longest-name=/rail/tymc/lines/green-line/ (18); most-stops=/rail/tymc/lines/green-line/ (0); widest-table=/rail/tymc/lines/green-line/ (3); deepest-nesting=/rail/tymc/lines/green-line/ (24); most-citations=/rail/tymc/lines/green-line/ (31)
+- entity-detail:page-spine,has-map,has-spine,ridership-panel,page-title-with-icon,specs: 1 page(s); canonical /rail/tymc/lines/green-line/; longest-name=/rail/tymc/lines/green-line/ (18); most-stops=/rail/tymc/lines/green-line/ (0); widest-table=/rail/tymc/lines/green-line/ (3); deepest-nesting=/rail/tymc/lines/green-line/ (24); most-citations=/rail/tymc/lines/green-line/ (36)
 - entity-detail:page-spine,has-spine,page-title-with-icon,specs: 62 page(s); canonical /rail/tmrt/stations/g0/; longest-name=/rail/tymc/stations/national-taiwan-sport-university-a7/ (62); most-stops=/rail/technology/wenhu-station-architecture/ (0); widest-table=/rail/technology/wenhu-station-architecture/ (3); deepest-nesting=/rail/technology/wenhu-station-architecture/ (24); most-citations=/rail/technology/wenhu-station-architecture/ (32)
 - entity-detail:page-spine,routemap,lead-figure,has-map,has-spine,ridership-panel,page-title-with-icon,specs: 1 page(s); canonical /rail/tmrt/lines/green-line/; longest-name=/rail/tmrt/lines/green-line/ (10); most-stops=/rail/tmrt/lines/green-line/ (18); widest-table=/rail/tmrt/lines/green-line/ (3); deepest-nesting=/rail/tmrt/lines/green-line/ (24); most-citations=/rail/tmrt/lines/green-line/ (27)
 - entity-detail:page-spine,routemap,table-scroll,has-map,has-spine,ridership-panel,page-title-with-icon,specs,section-desc: 1 page(s); canonical /rail/tymc/lines/airport-mrt/; longest-name=/rail/tymc/lines/airport-mrt/ (11); most-stops=/rail/tymc/lines/airport-mrt/ (22); widest-table=/rail/tymc/lines/airport-mrt/ (5); deepest-nesting=/rail/tymc/lines/airport-mrt/ (24); most-citations=/rail/tymc/lines/airport-mrt/ (51)
 - entity-detail:page-spine,table-scroll,has-spine,page-title-with-icon: 1 page(s); canonical /rail/technology/station-numbering/; longest-name=/rail/technology/station-numbering/ (35); most-stops=/rail/technology/station-numbering/ (0); widest-table=/rail/technology/station-numbering/ (3); deepest-nesting=/rail/technology/station-numbering/ (24); most-citations=/rail/technology/station-numbering/ (16)
-- entity-detail:page-title-with-icon: 69 page(s); canonical /rail/history/incidents/; longest-name=/rail/history/jianan-taichung-port-double-track/ (60); most-stops=/rail/history/changhua-minxiong-double-track/ (0); widest-table=/rail/history/changhua-minxiong-double-track/ (0); deepest-nesting=/rail/history/changhua-minxiong-double-track/ (24); most-citations=/rail/projects/tod-joint-development/ (49)
+- entity-detail:page-title-with-icon: 75 page(s); canonical /rail/history/incidents/; longest-name=/rail/history/jianan-taichung-port-double-track/ (60); most-stops=/rail/history/changhua-minxiong-double-track/ (0); widest-table=/rail/history/changhua-minxiong-double-track/ (0); deepest-nesting=/rail/history/changhua-minxiong-double-track/ (24); most-citations=/rail/projects/tod-joint-development/ (49)
 - entity-detail:page-title-with-icon,no-spine: 10 page(s); canonical /rail/krtc/facilities/accessibility/; longest-name=/rail/tra/facilities/accessibility-and-facilities/ (52); most-stops=/rail/krtc/facilities/accessibility/ (0); widest-table=/rail/krtc/facilities/accessibility/ (0); deepest-nesting=/rail/krtc/facilities/accessibility/ (24); most-citations=/rail/tra/facilities/accessibility-and-facilities/ (69)
 - entity-detail:page-title-with-icon,specs,no-spine: 379 page(s); canonical /bus/regional/kaohsiung/; longest-name=/rail/krtc/stations/shu-te-home-economics-commercial-high-school-c29/ (78); most-stops=/bus/regional/kaohsiung/ (0); widest-table=/bus/regional/kaohsiung/ (3); deepest-nesting=/bus/regional/kaohsiung/ (24); most-citations=/bus/regional/kaohsiung/ (59)
 - entity-detail:section-desc: 2 page(s); canonical /bus/; longest-name=/bus/routes/new-taipei/ (21); most-stops=/bus/ (0); widest-table=/bus/ (0); deepest-nesting=/bus/ (24); most-citations=/bus/routes/new-taipei/ (13)
-- entity-detail:table-scroll,entity-icon,page-title-with-icon: 2 page(s); canonical /ticketing/guides/glossary/; longest-name=/ticketing/guides/glossary/ (37); most-stops=/ticketing/guides/conflicts-index/ (0); widest-table=/ticketing/guides/conflicts-index/ (4); deepest-nesting=/ticketing/guides/conflicts-index/ (24); most-citations=/ticketing/guides/conflicts-index/ (914)
+- entity-detail:table-scroll,entity-icon,page-title-with-icon: 2 page(s); canonical /ticketing/guides/glossary/; longest-name=/ticketing/guides/glossary/ (37); most-stops=/ticketing/guides/conflicts-index/ (0); widest-table=/ticketing/guides/conflicts-index/ (4); deepest-nesting=/ticketing/guides/conflicts-index/ (24); most-citations=/ticketing/guides/conflicts-index/ (965)
 - entity-detail:table-scroll,entity-icon,page-title-with-icon,no-spine: 1 page(s); canonical /rail/metro/rolling-stock/fleet-roster/; longest-name=/rail/metro/rolling-stock/fleet-roster/ (50); most-stops=/rail/metro/rolling-stock/fleet-roster/ (0); widest-table=/rail/metro/rolling-stock/fleet-roster/ (6); deepest-nesting=/rail/metro/rolling-stock/fleet-roster/ (24); most-citations=/rail/metro/rolling-stock/fleet-roster/ (86)
 - entity-detail:table-scroll,entity-icon,page-title-with-icon,specs,no-spine: 34 page(s); canonical /ticketing/guides/bus-fare-stages/; longest-name=/bike/stations/new-taipei-unclassified/ (60); most-stops=/bike/stations/kaohsiung-unclassified/ (0); widest-table=/bus/models/master-bus-electric/ (7); deepest-nesting=/bike/stations/kaohsiung-unclassified/ (24); most-citations=/bike/stations/taipei-unclassified/ (5597)
 - entity-detail:table-scroll,page-title-with-icon: 3 page(s); canonical /rail/history/public-art/; longest-name=/rail/history/public-art/ (44); most-stops=/rail/history/circular-line-0403-earthquake/ (0); widest-table=/rail/history/public-art/ (7); deepest-nesting=/rail/history/circular-line-0403-earthquake/ (24); most-citations=/rail/history/public-art/ (92)
@@ -80,15 +80,15 @@ Each rendered export is grouped by route family plus the optional rendered furni
 - type-index:bike:entity-icon: 1 page(s); canonical /bike/history/; longest-name=/bike/history/ (7); most-stops=/bike/history/ (0); widest-table=/bike/history/ (0); deepest-nesting=/bike/history/ (24); most-citations=/bike/history/ (0)
 - type-index:bus:section-desc: 1 page(s); canonical /bus/routes/; longest-name=/bus/routes/ (10); most-stops=/bus/routes/ (0); widest-table=/bus/routes/ (0); deepest-nesting=/bus/routes/ (24); most-citations=/bus/routes/ (0)
 - type-index:ferry:entity-icon: 1 page(s); canonical /ferry/routes/; longest-name=/ferry/routes/ (12); most-stops=/ferry/routes/ (0); widest-table=/ferry/routes/ (8); deepest-nesting=/ferry/routes/ (24); most-citations=/ferry/routes/ (0)
-- type-index:rail:base: 3 page(s); canonical /rail/technology/; longest-name=/rail/technology/ (10); most-stops=/rail/history/ (0); widest-table=/rail/history/ (53); deepest-nesting=/rail/history/ (24); most-citations=/rail/history/ (0)
+- type-index:rail:base: 3 page(s); canonical /rail/technology/; longest-name=/rail/technology/ (10); most-stops=/rail/history/ (0); widest-table=/rail/history/ (59); deepest-nesting=/rail/history/ (24); most-citations=/rail/history/ (0)
 - type-index:rail:entity-icon: 1 page(s); canonical /rail/operators/; longest-name=/rail/operators/ (9); most-stops=/rail/operators/ (0); widest-table=/rail/operators/ (0); deepest-nesting=/rail/operators/ (24); most-citations=/rail/operators/ (0)
 - type-index:rail:routemap,table-scroll,ridership-panel,section-desc: 1 page(s); canonical /rail/network/; longest-name=/rail/network/ (11); most-stops=/rail/network/ (210); widest-table=/rail/network/ (7); deepest-nesting=/rail/network/ (24); most-citations=/rail/network/ (0)
 - type-index:regions:base: 7 page(s); canonical /regions/taichung/; longest-name=/regions/taipei-new-taipei/ (21); most-stops=/regions/chiayi-alishan/ (0); widest-table=/regions/chiayi-alishan/ (0); deepest-nesting=/regions/chiayi-alishan/ (24); most-citations=/regions/chiayi-alishan/ (0)
 
 ## Clipped screenshots
 
-- data-sources-2560.png (/data/sources/) — clipped to 12000px; full rendered height 233373px exceeds Chromium's fullPage capture limit
+- data-sources-2560.png (/data/sources/) — clipped to 12000px; full rendered height 242886px exceeds Chromium's fullPage capture limit
 
 ## Findings
 
-✓ none
+- ✗ Screenshots: bus-regional-kaohsiung (/bus/regional/kaohsiung/) — UNKNOWN: unknown error, open 'C:\Users\jamie\OneDrive\Documents\projects\taipei-transit-guide\docs\screenshots\bus-regional-kaohsiung-1920.png'
