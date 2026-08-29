@@ -5,7 +5,11 @@ order: 112
 line: A
 operator: TYMC
 spine: A12
-updated: 2026-08-28
+updated: 2026-08-29
+hero:
+  image: tymc/stations/airport-terminal-1-platform
+  alt: The platform at Airport Terminal 1 Station, full-height platform screen doors along the edge.
+  caption: The platform at Airport Terminal 1 Station.
 facts:
   - label: Station code
     value: A12

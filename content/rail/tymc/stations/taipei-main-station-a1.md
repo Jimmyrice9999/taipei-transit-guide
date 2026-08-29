@@ -5,7 +5,11 @@ order: 101
 line: A
 operator: TYMC
 spine: A1
-updated: 2026-08-28
+updated: 2026-08-29
+hero:
+  image: tymc/stations/taipei-main-express-platform
+  alt: The Airport MRT Express-service platform at Taipei Main Station.
+  caption: The Express-service platform at Taipei Main Station (A1).
 facts:
   - label: Station code
     value: A1
