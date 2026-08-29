@@ -1,6 +1,35 @@
 # For Jamie
 
-## Active handoff - Run 306 - 29 August 2026 - CI fix, Air/Road/Statistics sections, nav-label gate, side rail, 5 photos, 19 pages deepened, 14 commits
+## Active handoff - Run 307 - 30 August 2026 - Part 0 verification, CI cost fix, research depth, 4 commits
+
+Part 0: all five claimed fixes independently verified against the live
+site with a real headless browser, not by reading code — live site loads
+with its own 404, nav dropdowns land correctly (225 Rail links checked),
+side rail collapses cleanly, Sanying LB01/LB08 coordinates cross-checked
+against independent TDX/TRA sources (57m/177m offsets, both physically
+plausible, not a systematic projection error), Systems-dropdown removal
+confirmed correct. Part 1: no concurrent writer threatens this repo (two
+live Codex processes found are on the unrelated `taipei-commute` project);
+documented the historical fork's mechanism. Part 2: found CI's *real* cost
+via the Actions API — adversarial fixtures were 80% of a ~104-minute Tests
+job (17 serial full builds) — and cut it to 5 builds with identical 16/16
+verdicts; the brief's other three CI claims (build cache, double-build,
+Node 20) were already fixed by prior runs, confirmed not re-done. Parts
+3/4: 5 scouts deepened Kaohsiung airport (ICAO/IATA/passenger stats via a
+PDF a scout without Bash couldn't read), vehicle registration (3
+non-comparable EV figures published, not picked), Penghu ferry (pre-1989
+fleet lineage, a reused vessel name flagged), and New Taipei/Taoyuan bus
+operator ratings (both now have real depth beyond one round each).
+
+**Not reached**: Parts 5 (interactive features), 6 (Chinese mode) and most
+of 7 (full device sweep) — each is a multi-hour build in its own right
+and starting one without room to finish and verify it properly would be
+worse than leaving it explicitly for next time. Part 3's ~113 remaining
+thin pages are the TYMC-station/bike-station/bus-route clusters already
+confirmed genuinely data-only across three separate runs now (Run 306
+spot-checked again just before this run) — not a live gap.
+
+## Run 306 - 29 August 2026 - CI fix, Air/Road/Statistics sections, nav-label gate, side rail, 5 photos, 19 pages deepened, 14 commits
 
 **Matters most**: every dead/mistyped link on the live site has been
 showing GitHub's generic 404, not this site's own, for the project's whole

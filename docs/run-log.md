@@ -1,3 +1,58 @@
+## Run 307 Parts 3/4 - depth wave, and a second independent check on the "genuinely exhausted" claim (2026-08-30)
+
+Surveyed all content pages under 400 words directly (115 remain) rather
+than trusting the prior run's count. Sorted by fewest sources then fewest
+words. The two genuine outliers not already covered by a previously
+validated cluster — `content/air/airports/kaohsiung.md` (3 sources, 328
+words) and `content/statistics/national/vehicle-registration.md` (2
+sources, 294 words) — got scouts; both came back with real, addable
+material (written up in the Parts 3/4 commit above). A third outlier,
+`content/bus/operators/16476-eglll3.md` (3 sources, 390 words, a Shiding
+district-office record), was read directly rather than re-scouted: it
+already has a genuinely dug-up primary source (the office's own 8-route
+PDF timetable) and states its own remaining gaps explicitly — confirmed
+exhausted, not redispatched.
+
+The other ~110 thin pages are the TYMC-station, bike-station and
+bus-route/operator TDX clusters the last three runs have already
+spot-checked as genuinely data-only by rule 10. Rather than taking that
+on faith a fourth time, read two of them cold: `rail/tymc/stations/
+jingfu-temple-g08.md` (Taoyuan Green Line, unopened, target 2030 — a
+live TDX probe on the page itself confirms zero operational records exist
+yet for this line) and `bike/stations/taipei-daan.md` (a single YouBike
+dock's static TDX row). Both are exactly what the pattern claims: nothing
+left to research because the underlying thing either doesn't operate yet
+or has no history/engineering/controversy to write about, not a case of
+searching the wrong archive. Independent second confirmation, not a
+repeat of the same spot-check.
+
+Dispatched 5 scouts total (batch of 5, no rate-limit issues): Kaohsiung
+airport (ICAO/IATA codes, passenger series), vehicle registration (EV
+breakdown, cross-check), Taihua/Penghu Wheel ferry fleet lineage, New
+Taipei bus ratings, Taoyuan bus ratings. All 5 returned real, checkable
+material — written into 5 content pages across two commits. One scout
+(Kaohsiung airport) hit a hard tool boundary worth recording: it could
+fetch a CAA PDF but had no Bash/pdftotext access to read it (scouts run
+without that tool by design); the main session re-fetched the same two
+PDFs with `curl` and read them with `pdftotext` per the project's own
+documented PDF workaround, and one of them — a clean six-year passenger
+trend table — is now cited on the page. Two claims-ratchet false
+positives (topic/TBC sentences using "was not located" and "render only
+via... and, was found" instead of the classifier's recognised vocabulary)
+were fixed by rewording to match, not by weakening the checker — the same
+pattern six earlier runs this project have already hit and fixed the same
+way. A stray Chinese character in an English-language `titleOriginal` was
+also caught by `test:markdown` and fixed by trimming the titleOriginal to
+match its own stated `lang: en`, not by relaxing that check.
+
+Two new CJK characters (晟, 蟬, both from the New Taipei/Taoyuan bus
+content) were caught by `postbuild`'s Han-subset check on the first build
+after the batch — rebuilt, ran `npm run fonts`, rebuilt again, confirmed
+"3172 pages checked against the Han subsets — no missing glyphs" before
+committing `public/fonts/`. `gate:full` clean twice this run (once before
+Part 3/4 started, once at the end); claims ratchet held at 0 ASSERTED
+throughout. 3 commits this part, pushed.
+
 ## Run 307 Part 2 - CI cost: found and fixed the real dominant cost (2026-08-29)
 
 Pulled actual per-step timing from the GitHub Actions API for the last
