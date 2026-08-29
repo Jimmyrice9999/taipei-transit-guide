@@ -23647,11 +23647,6 @@
     },
     {
       "page": "/rail/tmrt/rolling-stock/fleet-roster/",
-      "name": "Green Line",
-      "href": "/rail/tmrt/lines/green-line/"
-    },
-    {
-      "page": "/rail/tmrt/rolling-stock/fleet-roster/",
       "name": "Taiwan High Speed Rail",
       "href": "/rail/thsr/lines/thsr/"
     },
@@ -27919,11 +27914,6 @@
       "page": "/ticketing/guides/conflicts-index/",
       "name": "中和線",
       "href": "/rail/history/zhonghe-line/"
-    },
-    {
-      "page": "/ticketing/guides/conflicts-index/",
-      "name": "Green Line",
-      "href": "/rail/tmrt/lines/green-line/"
     },
     {
       "page": "/ticketing/guides/conflicts-index/",
