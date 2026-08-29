@@ -26,6 +26,33 @@ specs:
     unit: minutes (approximate)
     source: penghu-nsa-ship-info
 sources:
+  - id: penghu-wheel-about
+    title: About Penghu Wheel
+    titleOriginal: 關於澎湖輪
+    publisher: 台灣航業股份有限公司 (Taiwan Navigation Co., Ltd.)
+    url: "https://tnc-kao.com.tw/about/about"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Operator's own booking-system 'about' page. Gives the 5 September 2023 maiden voyage, the May 2021 tender selection, and full as-delivered specifications."
+  - id: ltn-penghu-wheel-contract
+    title: New Penghu ferry contracted to a Japanese shipyard
+    titleOriginal: 新台澎輪委託日本內海船廠建造
+    publisher: 自由時報 (Liberty Times)
+    url: "https://news.ltn.com.tw/news/life/breakingnews/3982295"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News report on the pre-delivery construction contract, giving a 9,980-ton figure and other specifications that differ slightly from the operator's own as-delivered figures — reported as a conflict, not resolved. The article calls the vessel '新台澎輪,' a name not used elsewhere."
+  - id: zhwiki-taihua
+    title: Taihua Ferry
+    titleOriginal: 臺華輪
+    publisher: Wikipedia contributors (維基百科)
+    url: "https://zh.wikipedia.org/zh-tw/臺華輪"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "Lead-only encyclopedia article, footnoted to CNA, NowNews, UDN and other press but not independently verified against those primaries in this pass. Supports the September 1989 completion, 34 years of service and 23 August 2023 final sailing."
   - id: phpto-timetable
     title: Public ferry timetable
     titleOriginal: 交通船時刻表
@@ -148,6 +175,25 @@ the operator list is an orientation index rather than a live departure board.[^p
 For the same reason, this guide does not invent a year-round frequency, vessel
 capacity, or a guaranteed ferry-to-airport connection. Those fields need a
 dated operator timetable or a live official query before they can be promoted.
+
+## The Kaohsiung ferry's vessel history
+
+The "Taiwan Navigation Penghu ferry" named above as the winter mainland-island
+option is 澎湖輪 (Penghu Wheel), which made its maiden voyage from Kaohsiung to
+Magong on 5 September 2023 after Taiwan Navigation (台航) was selected by
+MOTC in a May 2021 tender for the route's long-term operation; the vessel was
+built by Naikai Zosen in Japan and carries 600 passengers on a 9,932-ton hull,
+119.99 m long, with capacity for 4 tour buses, 82 cars and 10 twenty-foot
+containers.[^penghu-wheel-about] A pre-delivery news report gave slightly
+different construction-contract specifications — 9,980 tons and a
+600-plus-passenger figure that included a stated 300-berth sleeping
+section — which this page reports alongside the operator's own as-delivered
+figures rather than treating as the same measurement.[^ltn-penghu-wheel-contract]
+
+Penghu Wheel replaced 臺華輪 (Taihua), which had served the Kaohsiung–Magong
+route for 34 years after completion in Nagasaki in September 1989, making its
+final sailing on 23 August 2023 before being sent to Bangladesh for
+scrapping.[^zhwiki-taihua]
 
 ## What remains date-sensitive
 

@@ -128,6 +128,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full official vessel record for Ji Shun No. 10 on Beigan Baisha–Fuzhou Huangqi: 149 passengers, two wheelchair securing positions, one accessible toilet, staff assistance and a ramped accessible landing."
+  - id: taimastar-about
+    title: About Taima Star
+    titleOriginal: 關於臺馬之星
+    publisher: 全港通航業公司 (All Ports Navigation Co., Ltd.)
+    url: "https://client.matsu.idv.tw/apt/taimastar.html"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Operator's own vessel page. Gives delivery date (1 August 2015), maiden-voyage ceremony (12 August 2015), and full specifications."
+  - id: newtaima-about
+    title: New Taima Ferry introduction
+    titleOriginal: 新臺馬輪簡介
+    publisher: 全港通航業公司 (All Ports Navigation Co., Ltd.)
+    url: "https://client.matsu.idv.tw/apt/newtaima.html"
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: "Operator's own vessel page. Gives keel-laying (24 March 2022), naming/launch (2 August 2022), delivery (9 March 2023) and the 16 April 2023 inaugural-voyage ceremony date, plus full specifications."
+  - id: ltn-taimalun-retirement
+    title: "Last voyage! Sailing Keelung-Matsu for 26 years, Taima Ferry retires"
+    titleOriginal: 最後航程！航行基隆馬祖26年 台馬輪除役告別
+    publisher: 自由時報 (Liberty Times)
+    url: "https://news.ltn.com.tw/news/life/breakingnews/4284086"
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: "News report of the retirement ceremony, read in full. Gives the exact final-voyage date and timing and the vessel's 37-year total age."
   - id: matsu-daqiu-alert
     title: 26–27 August 2026 Daqiu sailing suspension
     titleOriginal: 8/26-8/27鴻宇海運南竿⇔大坵全日停航
@@ -242,6 +269,23 @@ is recorded at 149 passengers with two wheelchair positions, one accessible
 toilet, staff assistance and a ramp.[^matsu-taima-star][^matsu-ji-shun]
 The records do not establish that every sailing, pier or substitute vessel has
 the same facilities.[^matsu-east-sea-pearl][^matsu-south-north-star][^matsu-taima-star][^matsu-ji-shun]
+
+## The two current vessels, and the one they replaced
+
+Taima Star was delivered to Keelung Port on 1 August 2015, with a
+maiden-voyage ceremony on 12 August; it is a 4,982-ton vessel with 380
+berths across five cabin classes plus 200 seats, giving the 580-passenger
+capacity recorded in its MOTC vessel record above.[^taimastar-about] New
+Taima was built at Miura Shipyard in Saeki, Japan — keel laid 24 March 2022,
+named and launched 2 August 2022, delivered and sailed to Keelung 9 March
+2023 — and held its official inaugural-voyage ceremony on 16 April 2023,
+presided over by President Tsai Ing-wen; it is a 5,341-tonne vessel carrying
+up to 642 passengers across 386 berths and 256
+seats.[^newtaima-about] The vessel these two replaced, the original Taima
+Ferry (台馬輪), made its final voyage on 27 April 2023 — departing Nangan at
+11:00 and Dongyin at 15:00 — after 26 of its 37 years spent on this route; it
+had itself begun as a 1985-built Japanese Seto-Inland-Sea ferry, bought
+secondhand by Lienchiang County in 1997.[^ltn-taimalun-retirement]
 
 ## What remains date-sensitive
 
