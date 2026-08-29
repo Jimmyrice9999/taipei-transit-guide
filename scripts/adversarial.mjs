@@ -329,13 +329,33 @@ const CASES = [
 
 console.log('\n═══ Adversarial fixtures ═══\n')
 
-let failures = 0
-const results = []
+/*
+ * Every case used to get its own full `next build` — one at a time, serially.
+ * With 16 cases plus the final restore, that was 17 full builds in a job that
+ * had nothing else to do meanwhile, and it dominated CI wall time (~83 of the
+ * ~104 minutes the whole Tests job took).
+ *
+ * A 'clean' or 'warns' case only needs the build to succeed; the only thing
+ * that varies is whether ITS OWN fixture's output/page shows the expected
+ * warning. Nothing about one such fixture's assertion depends on any other
+ * fixture being absent — `warnsForFixture` and every `assert` above are
+ * already scoped to that case's own file basename / output path, precisely so
+ * unrelated warnings elsewhere in the build don't cause false failures. That
+ * means every 'clean'/'warns' case can be written into the tree at once and
+ * checked against a SINGLE shared build, cutting 13 builds down to 1.
+ *
+ * 'build-fails' cases cannot join that batch: they need `next build` (or, for
+ * the font-subset case, `postbuild`) to fail for a SPECIFIC named reason, and
+ * a single build only fails once — combining two would risk one error message
+ * masking another's, silently weakening exactly the check this script exists
+ * to run. Those stay isolated, one build each.
+ */
+const sharedCases = CASES.filter((c) => c.expect === 'clean' || c.expect === 'warns')
+const isolatedCases = CASES.filter((c) => c.expect === 'build-fails')
 
-for (const testCase of CASES) {
-  for (const [rel, body] of Object.entries(testCase.files)) write(rel, body)
+const verdicts = new Map()
 
-  const { code, output } = build()
+function judge(testCase, { code, output }) {
   const warned = warnsForFixture(output, testCase)
   const built = code === 0
 
@@ -363,6 +383,26 @@ for (const testCase of CASES) {
    */
   if (!verdict && testCase.assert) verdict = testCase.assert({ output, built, code })
 
+  verdicts.set(testCase.name, { code, warned, verdict })
+}
+
+for (const testCase of sharedCases) {
+  for (const [rel, body] of Object.entries(testCase.files)) write(rel, body)
+}
+const sharedResult = build()
+for (const testCase of sharedCases) judge(testCase, sharedResult)
+cleanup()
+
+for (const testCase of isolatedCases) {
+  for (const [rel, body] of Object.entries(testCase.files)) write(rel, body)
+  judge(testCase, build())
+  cleanup()
+}
+
+let failures = 0
+const results = []
+for (const testCase of CASES) {
+  const { code, warned, verdict } = verdicts.get(testCase.name)
   results.push({ name: testCase.name, expect: testCase.expect, code, warned, verdict })
   if (verdict) failures++
 
@@ -371,8 +411,6 @@ for (const testCase of CASES) {
       `expect=${testCase.expect.padEnd(12)} exit=${code} warned=${warned ? 'y' : 'n'}` +
       (verdict ? `\n      ${verdict}` : ''),
   )
-
-  cleanup()
 }
 
 /* Restore a good build so later checks are not run against fixture output. */

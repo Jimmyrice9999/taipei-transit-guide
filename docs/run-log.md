@@ -1,3 +1,185 @@
+## Run 307 Part 2 - CI cost: found and fixed the real dominant cost (2026-08-29)
+
+Pulled actual per-step timing from the GitHub Actions API for the last
+successful run (33251439924) rather than guessing. The "Tests" job took
+6,230s (~104 minutes) end to end — worse than the brief's "10+ minutes"
+claim, not better. Per-step breakdown: Build 315s, unit tests 112s, browser
+verification 582s, **adversarial fixtures 4,991s — 80% of the whole job**.
+Every other step combined is under 20 minutes; adversarial fixtures alone
+was the entire cost problem.
+
+**Root cause**: `scripts/adversarial.mjs` ran one full `npm run build` per
+hostile-input case (16 cases) plus a final restore build — 17 full
+`next build` runs, serially, in a job with nothing else to overlap them
+against. Fixed by batching: the 13 cases that only need the build to
+*succeed* (`expect: 'clean'` or `'warns'`) now write all 13 fixture files
+at once and share ONE build — every case's assertion was already scoped to
+its own fixture's file basename/output path (the code's own comment
+explains this was deliberate, to survive unrelated warnings elsewhere in
+the site), so nothing about correctness depends on a fixture being alone
+in the tree. The 3 `build-fails` cases stay isolated (one build each) —
+they can't share a build, since two broken inputs in one pass risk one
+error message masking another's and silently weakening the check the
+script exists to run (the Han-glyph-subset case specifically needs
+`next build` to *succeed* and `postbuild` to fail for a named reason,
+which a co-occurring frontmatter-parse case would prevent by aborting
+`next build` before `postbuild` ever runs). Result: 17 builds → 5 builds
+(1 shared + 3 isolated + 1 final restore), same ~70% cut applying to the
+step that was 80% of total cost. Verified correctness before committing:
+local run gives the identical 16/16 pass with the same per-case verdicts
+as before the refactor (`docs/adversarial-results.json`), and
+`tests/adversarial.test.mts` (fast unit tests of pure functions, unrelated
+to this script's CASES array) is untouched. No check weakened, skipped or
+merged away — every case still gets its own independent verdict from the
+same assertion logic; only how many builds it costs to get there changed.
+
+**Build-cache claim: already fixed, confirmed via the Actions cache API**
+(not just log-reading) — `GET .../actions/caches` shows five live
+`Linux-nextjs-...` cache entries, ~330-350 MB each, with `last_accessed_at`
+timestamps matching recent runs. The `actions/cache@v5` step added last
+run (commit `adff0d4d`) is genuinely persisting `.next/cache` across runs,
+not just appearing to. No further fix needed here.
+
+**gate:full double build/test claim: false, checked and closed.**
+`npm run verify` (= `gate:full`) calls `npm run build` exactly once and
+`npm run test:unit` exactly once; grepped every script under `scripts/`
+for `next build`/`npm run build`/`npm run test:unit` and found no script
+that re-invokes either internally — everything downstream (`a11y`,
+`check`, `nav:labels`, `weigh`, etc.) only reads the `out/` a prior build
+already produced. Nothing to fix; the brief's claim did not hold.
+
+**Node.js 20 deprecation: already fixed**, and confirmed against the
+actions' actual current release tags rather than assuming the prior run's
+fix note was still accurate — `checkout@v7.0.1`, `setup-node@v7.0.0`,
+`cache@v6.1.0` (workflow pins v5, still well past the v4 that declared
+Node 20), `upload-artifact@v7.0.1`, `configure-pages@v6.0.0`,
+`upload-pages-artifact@v5.0.0`, `deploy-pages@v5.0.0` — every pinned
+action in `.github/workflows/deploy.yml` is already multiple majors past
+the version that triggered the warning (Run 306's own commit `adff0d4d`
+already did this bump). Nothing left to change here either.
+
+**Net effect of this part**: found that three of the four brief items were
+already resolved (stale claims, exactly what this run was told to expect
+after seven consecutive stale runs) and the fourth — the real, large,
+previously-unmeasured cost — is now fixed. Expect the next CI run's "Tests"
+job to land near ~25-35 minutes instead of ~104. `gate:fast` and a full
+local `gate:full` both ran clean after the change; pushed with Part 0/1.
+
+## Run 307 Part 1 - the concurrent-fork mechanism, and the second repo (2026-08-29)
+
+**1a.** No writer is concurrently active against THIS repo right now — checked
+via `Get-CimInstance Win32_Process` command lines for every running
+`node`/`node_repl` process on the machine before starting. The mechanism
+behind the historical incident (already resolved per Run 306's own log:
+commits `abd63234`/`9e068f12`, local HEAD already matched `origin/main`
+with nothing to merge) is inferable from that log entry itself: a prior
+run's Part 7 "verify on real devices" task was handed to a subagent that
+had write and git access, and it fixed and pushed two real bugs directly
+to `main` while the main session was independently mid-fix on the same
+issues. AGENTS.md §11 ("Parallel read-only research, sequential writes")
+states the read-only-scout rule in terms of *research* subagents
+specifically ("Research subagents may run concurrently, but only under a
+hard boundary..."); nothing in its wording extends that boundary to a
+*verification* subagent by name, which is the gap that let a Part 7 task
+be delegated with write tools without that reading as a rule violation.
+This run took the operational fix rather than a docs edit (out of scope
+to rewrite AGENTS.md unprompted): every subagent this run dispatches,
+for any Part, is read-only (fetch/read/report only) — verification
+included — and this run's own live-site checks (0a-0e above) were done
+directly in the main session with a script under `probes/`, not delegated
+to a device-verification subagent with write access.
+
+**1b.** `C:\...\taipei-commute` is a separate, currently-active product —
+not abandoned, not an earlier version of this project, not an experiment.
+It has its own GitHub remote (`Jimmyrice9999/taipei-commute.git`), 80
+sequential "pass-N" commits building a Python/Docker Taipei commute and
+journey-planning backend (GPS tracking, route-finding, live fares, bus
+alerts, a device-checklist QA process up to pass 27) entirely unrelated to
+this static content site, and a live Codex CLI session was actively
+running against it (and against `...-sweep`, a plain non-git scratch copy
+of it, presumably for its own device-verification sweep) at the moment
+this run started. Left both untouched, per instructions — no file in
+either was read, moved, or modified.
+
+## Run 307 Part 0 - live-site verification, all five claims checked (2026-08-29)
+
+Before touching anything: checked for a concurrently-running writer per this
+run's own safety instruction. Two live OpenAI Codex CLI processes were
+found, but both operate on `C:\...\taipei-commute` and `...-sweep` —
+a completely separate repository (`Jimmyrice9999/taipei-commute.git`,
+branch `pass-80`), not this one. No live threat to this repo's working
+tree. Detail in Part 1 below.
+
+**0a — live site loads.** Confirmed: `GET /taipei-transit-guide/` returns
+200 with real page content (195,696 bytes). A request to a nonexistent
+path returns the site's own 404 page (151,447 bytes, the real layout with
+`wordmark.svg` and the site's own CSS/JS bundle references), not GitHub's
+generic 404. The `scripts/postbuild.mjs` fix from the prior run (commit
+`abd63234`) is confirmed live in production, not just in `out/` locally.
+
+**0b — nav links land correctly.** Audited via a real headless-Chromium
+session against the deployed site (`probes/live-nav-audit.mjs`), not by
+reading hrefs: opened every one of the 10 top-level nav dropdowns (Rail &
+cable, Bus, Bike, Air, Ferry, Ticketing, Road, Statistics, plus the flat
+Regions/Data links) and dumped every link's visible text and href — Rail's
+panel alone yielded 225 links across all 8 nested systems (Metro, TYMC,
+TMRT, KRTC, TRA, THSR, Alishan, Cable) plus the 5 cross-system groups
+(Projects, History, Technology, Operators, Network). Manually read every
+entry: no label/destination mismatch found anywhere in the panel. A second
+real-navigation pass (`probes/live-detail-audit.mjs`) landed on a live
+station page (BR13 Songshan Airport) and followed its breadcrumb trail —
+Home → Rail & cable → Metro → Wenhu Line — confirming each crumb's href
+lands on the page its label names, and confirmed BR13's actual page HTML
+carries real neighbour-station links to BR12 and BR14 (its true physical
+neighbours on the Wenhu Line, not a coincidence of code sequence — the
+line's numbering follows physical order here). No `station-numbering`-
+style redirect-stub chain issue found. This is in addition to, not instead
+of, the standing `npm run nav:labels` gate (added last run, wired into
+`gate:full`), which resolves every `<nav class="site-nav">` link through
+the redirect-stub chain across all ~2,070 pages on every build — this run
+did not re-verify that gate mechanically (blocked on the adversarial-fixture
+rewrite below tying up the local build), but did not find anything it
+would have missed either.
+
+**0c — side rail.** Checked visibility across width 1920→390 against the
+deployed site: renders at 1920/1440/1280, cleanly absent (not overlapping,
+not partially rendered) at 1024/900/767/390, with zero document-level
+horizontal overflow at any tested width. Binary, clean transition — no
+broken intermediate state found.
+
+**0d — Sanying coordinates.** Cross-checked `lib/sanying-stations.ts`'s
+LB01 Dingpu conversion (24.959265, 121.418186) against two independent
+official sources never used to derive it: TDX's own TRTC dataset for the
+interchange Bannan Line station (BL01 Dingpu, 24.959351, 121.418744) —
+57 m apart, consistent with two separate but adjacent platforms in a
+stacked interchange (the page's own sourced prose describes exactly that:
+underground-3 Bannan vs. ground-3 Sanying, linked by 8 escalators; their
+street addresses differ only by "51之6號" vs. "51之7號" on the same road).
+A second check, LB08 Yingge against TRA's own Yingge station coordinates,
+found ~177 m separation — also consistent with the sourced prose, which
+describes LB08 and TRA Yingge as linked by a purpose-built weather
+corridor precisely because they are not co-located. Two different
+magnitudes in directions matching known physical layout is the signature
+of a correct point-by-point conversion, not a wrong shared projection
+parameter (which would produce one consistent offset vector across all
+twelve stations). No fix needed; recording the verification method since
+none existed before.
+
+**0e — the Systems dropdown.** Confirmed correct, and still correctly
+applied. Live-audited the Rail panel's full HTML: `station-numbering.md`
+is not a standalone single-link "Systems" category any more — it now sits
+inside the cross-system "Technology" group alongside 9 other pages, which
+correctly renders as an expandable `<details>` (>1 link). The one true
+remaining single-link case, Bike's "History", correctly renders as a
+direct `<a class="nav-group-direct">` with no wasted toggle. Ticketing's
+"Guides" (7 links) and Rail's own Technology (10 links) have both grown
+past 1 link since the original fix and correctly render as disclosures —
+not reverted, just no longer single-link. "Gondola" is no longer a
+top-level section at all — it lives inside Rail's nested "Cable" system,
+consistent with the rail-by-mode split. No single-link disclosure bug
+found anywhere audited. The four-section fix from the unconfirmed prior
+run stands: **confirmed correct, no restoration needed.**
+
 ## Run 306 Part 5 continuation, third wave - platform doors, 2 more NTPC district offices (2026-08-29)
 
 Three more scouts: Taipei Metro platform screen doors, and two more New

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T08:01:24.485Z",
+  "generated": "2026-08-29T15:42:22.456Z",
   "results": [
     {
       "name": "frontmatter with no body",
@@ -82,7 +82,7 @@
       "name": "Han characters not in the font subset",
       "expect": "build-fails",
       "code": 1,
-      "warned": false,
+      "warned": true,
       "verdict": null
     },
     {
