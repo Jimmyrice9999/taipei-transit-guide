@@ -2667,6 +2667,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "A genuine primary government record confirming the Hualien elevation project's existence and its feasibility/planning-stage status, covering 7 named crossings."
+  - id: "rail-tra-operations-freight-and-transportation-tra-yearbook-2025"
+    title: "Statistical Report of Taiwan Railway — 2025"
+    titleOriginal: "臺灣鐵路統計年報"
+    publisher: "National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)"
+    url: "https://www.railway.gov.tw/tra-tip-web/tip/file/727d6d90-c4c4-46f6-a4d2-d234ba4f3563"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "A 74-year annual freight-tonnage series (Table 5), freight-car counts (Table 12), the operating-revenue breakdown by category (Table 16), route-length classification (Table 1) and line-and-track length (Table 10), and freight tariff history (Table 15) with a note dating the discontinuation of less-than-carload service."
   - id: "rail-tra-rolling-stock-heritage-preservation-tra-steam-locomotive-rules"
     title: "Taiwan Railway Administration Steam Locomotive Management and Lending Guidelines"
     titleOriginal: "臺灣鐵路管理局蒸汽機車管理及租借要點"
@@ -5501,6 +5510,32 @@ construction.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
 
 - [TRA grade separation](https://zh.wikipedia.org/zh-tw/臺鐵立體化) — secondary; Wikipedia; accessed 2026-08-27.[^rail-tra-facilities-level-crossings-zhwiki-tra-grade-separation]
 - [Legislative Yuan record: Hualien-Ji'an railway elevation](https://www.ly.gov.tw/EngPages/Detail.aspx?nodeid=38514&pid=227478) — primary; Legislative Yuan (立法院); accessed 2026-08-27.[^rail-tra-facilities-level-crossings-ly-hualien-elevation]
+
+## Taiwan Railways freight and transportation statistics — Freight's share of TRA's revenue
+
+Discussed on [Taiwan Railways freight and transportation statistics](/rail/tra/operations/freight-and-transportation/) in the source page's “Freight's share of TRA's revenue” section.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025]
+
+### Freight's share of TRA's revenue
+
+TRA's own 2025 operating-revenue table gives freight revenue as 1.21% of
+total revenue (including non-operating income), against 53.90% for
+passenger revenue.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025] Measured only against operating
+revenue (passenger, freight and other, excluding non-operating income),
+freight is 1.26% — a figure this page calculates directly from the
+table's own raw NT$ amounts, not itself printed in the source, and
+reported alongside the source's own 1.21% figure rather than in place of
+it, since the two use different denominators.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025]
+
+Freight revenue rose 6.65% in 2025 even as freight tonnage fell 4.35% in
+the same year, a genuine pattern rather than a contradiction: a freight
+tariff increase took effect 23 June 2025.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025] No source
+checked states explicitly that the tariff change caused the revenue rise;
+the two facts are reported side by side, not asserted as
+cause-and-effect.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025]
+
+#### Sources for this entry
+
+- [Statistical Report of Taiwan Railway — 2025](https://www.railway.gov.tw/tra-tip-web/tip/file/727d6d90-c4c4-46f6-a4d2-d234ba4f3563) — primary; National Taiwan Railways Corporation (國營臺灣鐵路股份有限公司); accessed 2026-08-29.[^rail-tra-operations-freight-and-transportation-tra-yearbook-2025]
 
 ## Taiwan Railways heritage rolling stock and the National Railway Museum — Five locomotives, still formally managed
 

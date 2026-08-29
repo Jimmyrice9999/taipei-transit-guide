@@ -147,3 +147,68 @@ precise denominator of the 12.9-hectare field, or the date and mechanism of the
 operator transition. A current NTMC fleet/stabling document, an as-built
 cadastral plan and a formal asset or operations handover record would settle
 those gaps.
+
+## Update, 29 August 2026 — HQ co-location, independent corroboration, North Ring context
+
+- **NTMC contact page**, `https://www.ntmetro.com.tw/about/?mode=list&catid=15`,
+  PRIMARY. Gives NTMC's own registered company address as
+  新北市新店區民權路280號 — the same street address as the depot site,
+  independently of the vending-machine announcement already cited.
+- **zh.wikipedia, `南機廠 (新北市)`** (read via Special:Export raw wikitext,
+  so citation tags are visible), SECONDARY. Independently gives the same
+  address and confirms Level-5 classification from a source family outside
+  DORTS. Its naming-rationale sentence (why "South" rather than a place
+  name) carries no citation of its own — not used.
+- **New Taipei DORTS, 環狀線(南環段/北環段)**,
+  `https://www.dorts.ntpc.gov.tw/about/route/bQw92Vzy2jOk`, PRIMARY.
+  States the North Ring section has its own separate depot contract
+  (DF116), design-contract award 17 July 2019, groundbreaking 6 August
+  2019 — establishes South Depot serves Phase 1 specifically, not the
+  whole eventual ring.
+- **Phase 1's earliest contracts, re-read from the already-cited DORTS
+  Phase 1 page**: earliest whole-phase contract IQUX02 (tree relocation
+  for the Y8-Y14 corridor and Y6 station, signed 5 June 2009); earliest
+  main-works contract CF641 (Dapinglin/Y6 station diaphragm wall and
+  structure, signed 5 January 2010). **Neither is the depot's own
+  construction contract** — CF641 covers Y6 station, not the depot;
+  IQUX02 is a landscaping contract for a different corridor. No
+  depot-specific contract, contractor or date was found. This is reported
+  as a caveat against mis-attributing these dates to the depot itself, not
+  as new depot-specific evidence.
+
+### A lead chased and NOT published — verification failure
+
+An earlier automated fetch summary of the 十四張站 Wikipedia article
+claimed the station/depot site displaced Liu-family (劉氏) and
+Chen/Lin-family historic residences, with a 2011 preservation campaign and
+subsequent historic-building registrations. **Re-checking the raw
+wikitext via Special:Export found none of this content anywhere in the
+article's 歷史 or 車站周邊 sections** — no mention of 劉氏, 陳氏, 林氏, 古厝,
+路竹會, or any registration. Searches for a standalone article at several
+plausible titles all returned 404. This does not survive verification and
+is not published anywhere. Recorded per rule 2, as a checked-and-failed
+lead, not silently dropped: if a future pass has working search, the real
+十四張斯馨祠 (a genuine nearby landmark the actual station article does
+list) suggests there may be an underlying local-history topic, just not
+one documented in any page reached this pass.
+
+A second false lead, same failure mode: an earlier fetch summary gave
+North Depot (北機廠, Luzhou) construction dates ("began 3 March 2022,
+completion projected July 2029"); the raw wikitext of `北機廠 (新北市)`
+contains no such dates anywhere. Not published.
+
+### Checked and failed (this pass)
+
+- National Cultural Heritage database and New Taipei City Cultural Affairs
+  Bureau searches for 十四張/劉氏 entries — both are JS-rendered search
+  interfaces; static fetch returned only page shells.
+- Depot-specific contractor/construction dates — not found in the Phase 1
+  page or any other page reached.
+- Exact date operational responsibility transferred from Taipei Metro to
+  New Taipei Metro — a China Times headline cited by zh.wikipedia's
+  十四張站 article bears on this but is archived at web.archive.org, which
+  the fetch tool refuses entirely; the live chinatimes.com URL (paywalled
+  AMP) was not attempted.
+- Google/Bing/DuckDuckGo as WebSearch substitutes — all unusable (empty
+  shell, mismatched cached results, CAPTCHA); WebSearch budget exhausted
+  before this pass's own queries could run.

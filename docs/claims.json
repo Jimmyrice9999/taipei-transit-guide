@@ -2,10 +2,10 @@
   "generated": "npm run claims",
   "note": "A trend line, not a measurement. See the header of scripts/claims.mjs.",
   "totals": {
-    "sourced": 27344,
-    "tbc": 4648,
+    "sourced": 27376,
+    "tbc": 4647,
     "asserted": 0,
-    "meta": 127
+    "meta": 128
   },
   "files": [
     {
@@ -10411,10 +10411,10 @@
     {
       "file": "content/rail/krtc/operations/ridership.md",
       "sources": 3,
-      "sourced": 7,
+      "sourced": 8,
       "tbc": 0,
       "asserted": 0,
-      "meta": 0
+      "meta": 1
     },
     {
       "file": "content/rail/krtc/operations/_index.md",
@@ -10426,9 +10426,9 @@
     },
     {
       "file": "content/rail/krtc/projects/joint-development.md",
-      "sources": 1,
-      "sourced": 5,
-      "tbc": 1,
+      "sources": 5,
+      "sourced": 13,
+      "tbc": 0,
       "asserted": 0,
       "meta": 0
     },
@@ -11082,8 +11082,8 @@
     },
     {
       "file": "content/rail/krtc/technology/signalling.md",
-      "sources": 5,
-      "sourced": 7,
+      "sources": 8,
+      "sourced": 10,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -11114,8 +11114,8 @@
     },
     {
       "file": "content/rail/metro/depots/circular-line-south-depot.md",
-      "sources": 4,
-      "sourced": 13,
+      "sources": 7,
+      "sourced": 15,
       "tbc": 2,
       "asserted": 0,
       "meta": 0
@@ -11178,9 +11178,9 @@
     },
     {
       "file": "content/rail/metro/depots/zhonghe-depot.md",
-      "sources": 4,
-      "sourced": 13,
-      "tbc": 3,
+      "sources": 10,
+      "sourced": 16,
+      "tbc": 4,
       "asserted": 0,
       "meta": 0
     },
@@ -12114,9 +12114,9 @@
     },
     {
       "file": "content/rail/tmrt/technology/signalling.md",
-      "sources": 2,
-      "sourced": 9,
-      "tbc": 2,
+      "sources": 5,
+      "sourced": 13,
+      "tbc": 1,
       "asserted": 0,
       "meta": 0
     },
@@ -12274,8 +12274,8 @@
     },
     {
       "file": "content/rail/tra/operations/freight-and-transportation.md",
-      "sources": 1,
-      "sourced": 18,
+      "sources": 3,
+      "sourced": 25,
       "tbc": 0,
       "asserted": 0,
       "meta": 0
@@ -14946,8 +14946,8 @@
     },
     {
       "file": "content/ticketing/guides/conflicts-index.md",
-      "sources": 325,
-      "sourced": 449,
+      "sources": 326,
+      "sourced": 453,
       "tbc": 9,
       "asserted": 0,
       "meta": 9

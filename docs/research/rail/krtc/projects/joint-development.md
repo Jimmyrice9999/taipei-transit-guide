@@ -36,3 +36,44 @@ Red/Orange depot sites (already covered in this project's separate depots
 research) were themselves developed under this joint-development mechanism
 specifically, as opposed to a different disposal method, is not stated by
 any source read and is not assumed.
+
+## Update, 29 August 2026 — the case-list page rendered this time; 15 cases found
+
+The case-list page a previous pass could not render (`https://mtbu.kcg.gov.tw/JointDevProjects/C001420`)
+rendered fully via WebFetch this pass, both list pages and all 15 case
+detail pages. Full case data (station, location, investor, area,
+investment figure, status, dates) for all 15 is now on the content page.
+Two findings beyond the raw case list:
+
+- **Twelve of the 15 cases use investor-solicitation language consistent
+  with Article 7; three are titled as public urban-renewal cases**
+  (公開評選實施者, "publicly selecting an implementer") — a different legal
+  mechanism. The bureau's own regulations page
+  (`https://mtbu.kcg.gov.tw/JointDevelopmentOffice/JDO02.html`) names only
+  the Mass Rapid Transit Act and its Land Development Regulations as this
+  office's legal basis, with no mention of the Urban Renewal Act, even
+  though the same office lists these three cases alongside the Article 7
+  ones. Not resolved — reported as a genuine open question, not settled
+  either way.
+- **Formosa Boulevard (O5/R10) and Kaohsiung Main Station (R11) do not
+  appear in the current 15-case list.** This establishes only that
+  neither has an active case in the tracked pipeline today, not that no
+  joint-development building was ever proposed or completed there before
+  this online tracking system existed (the lines opened in 2008).
+- **No case in the current list is marked complete** — all 15 sit in
+  either investor-selection or construction stage, none at the mechanism
+  overview's final rights-allocation stage.
+
+### Checked and failed (this pass)
+
+- **`https://corp.krtc.com.tw/Business/LandDevelopment`** (guessed URL for
+  KRTC's own, as opposed to the bureau's, land-development page) —
+  checked 2026-08-29, returned an access-denial error page, not content.
+- **`https://www.krtco.com.tw/`** — checked 2026-08-29, DNS failure; the
+  correct KRTC domain is `https://www.krtc.com.tw/`.
+- **News-archive search for any specific building's opening or historical
+  pre-2008 joint-development cases** — checked 2026-08-29, WebSearch
+  budget exhausted before this pass began; not searched.
+- **The Bureau's FAQ page** (`FAQs/C004600?CategoryID=...`) for historical
+  case mentions — checked 2026-08-29, question titles rendered but answer
+  text is per-question JavaScript-rendered and was not retrieved.

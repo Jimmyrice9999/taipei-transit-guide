@@ -3,7 +3,7 @@ title: Kaohsiung Metro signalling and automation grade
 summary: Driver-operated track-circuit interlockings on the Red and Orange Lines since 2008, and a fully driverless Siemens CBTC system now under construction for the Yellow Line — two different technology generations, confirmed by the manufacturer itself for the newer one.
 order: 1
 operator: KRTC
-updated: 2026-08-28
+updated: 2026-08-29
 facts:
   - label: Red/Orange Line operation
     value: driver-operated; automatic between stations, manual doors/departure
@@ -66,7 +66,34 @@ sources:
     accessed: 2026-08-27
     kind: secondary
     lang: zh-Hant
-    note: News report carrying a direct on-the-record quote from the MRT Engineering Bureau's director; source for the evaluation-completion date and budget figure.
+    note: "News report carrying a direct on-the-record quote from the MRT Engineering Bureau's director; source for the evaluation-completion date and budget figure. Re-checked 2026-08-29: this URL now returns HTTP 404. The figure is retained as previously sourced, but the citation has since gone dead and could not be re-verified; a replacement source has not yet been found."
+  - id: mtbu-gangshan-luzhu-signalling-p2
+    title: Introduction to the Gangshan-Luzhu Extension Signalling System Architecture (re-read)
+    titleOriginal: 岡山路竹延伸線號誌系統架構簡介
+    publisher: Kaohsiung City Government Mass Rapid Transit Bureau, Systems Engineering Section (高雄市政府捷運工程局系統工程科)
+    url: https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=fb12bab3-733e-4218-9c6d-0375d3101dc9&id=34535d04-df4c-4b1f-a609-da31e86d91d0&PageType=1
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: Re-read for more depth. States the interlocking exchanges monitoring data with a wayside Automatic Train Protection system, and that the extension updates named existing Red Line subsystems (OCC workstations, local operation workstations, the R22 interlocking, the timetable-building system) rather than adding a standalone overlay; as of publication (2023-04-26) the project was at mid-stage detailed design.
+  - id: mtbu-yellow-line-vehicle-systems-driving
+    title: Introduction to the Kaohsiung Yellow Line EMU System's Electromechanical Equipment (re-read)
+    titleOriginal: 高雄黃線電聯車系統之機電設備簡介
+    publisher: Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)
+    url: https://mtbu.kcg.gov.tw/Activities/C002100?CategoryID=fb12bab3-733e-4218-9c6d-0375d3101dc9&id=e7693a8c-cf09-4548-97bb-b2c4418e1be9&PageType=1
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: States each Yellow Line train's two motor-end cars carry a manual driving control area even though the fleet is capable of driverless automatic operation in unmanned mode; does not state when the manual position is used.
+  - id: zhwiki-krtc-consortium
+    title: Kaohsiung MRT Red Line (Wikipedia article)
+    titleOriginal: 高雄捷運紅線
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/高雄捷運紅線
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: States a China Steel/Siemens-led consortium won priority negotiating rights over Alstom- and Bombardier-led rivals, signing construction and operating contracts with Kaohsiung City on 12 January 2001. Not independently corroborated against a primary this pass — Railway Gazette's contract report returned HTTP 403 and KRTC's corporate history page returned an access-denial response.
 ---
 
 ## Two generations, not one system upgraded
@@ -105,6 +132,41 @@ Bureau's E&M-contract director puts the YM01 evaluation's completion at 17
 August 2022 and its budget at approximately NT$43.499
 billion.[^yahoo-ym01-award]
 
+## The vendor confirmed, in its own words
+
+Siemens Mobility's Yellow Line press release states directly that Siemens
+Mobility itself "previously delivered" the Red and Orange Lines, put into
+revenue service in 2008 — the manufacturer confirming, in its own
+statement about a newer contract, that it was also the original
+vendor.[^siemens-yellow-line-press-release] The extension's own
+architecture page adds that the interlocking exchanges monitoring data
+with a wayside Automatic Train Protection system, and that the extension
+updates named existing subsystems — operations-control-centre and local
+operation workstations, the R22 interlocking, the timetable-building
+system — rather than adding a standalone overlay, which is the clearest
+evidence yet that the extension modernises the original system's own
+components rather than bolting on something separate.[^mtbu-gangshan-luzhu-signalling-p2]
+No source read names a specific product or model for the original
+2008-era system beyond "Siemens" as vendor.
+
+A secondary source gives narrative context for the original contract: a
+consortium led by China Steel and Siemens, styled "Kaohsiung Rapid Transit
+Corporation," won priority negotiating rights over rival Alstom- and
+Bombardier-led consortia, signing construction and operating contracts
+with Kaohsiung City on 12 January 2001.[^zhwiki-krtc-consortium] This is
+reported as a lead, not independently corroborated against a primary —
+Railway Gazette's own contract report returned HTTP 403 and KRTC's
+corporate history page returned an access-denial response, both unreached
+this pass.[^zhwiki-krtc-consortium]
+
+Even at GoA4, Yellow Line trains are not purely driverless in
+construction: each set's two motor-end cars carry a manual driving
+control area alongside the fleet's stated capability for unmanned
+automatic operation.[^mtbu-yellow-line-vehicle-systems-driving] No source
+read states when that manual position is actually used — presumably depot
+moves or emergencies, but that is inference, not a sourced
+claim.[^mtbu-yellow-line-vehicle-systems-driving]
+
 ## Remaining gaps
 
 The Red/Orange Line's signalling has no confirmed product/model name beyond
@@ -113,4 +175,8 @@ stated by any primary source; this page does not assign it one. No
 resignalling or upgrade history for the original 2008 system was found —
 recorded as not found, not confirmed absent. The original 2001 Siemens
 contract's exact scope rests only on an unverified secondary citation this
-page could not confirm.
+page could not confirm. The YM01 budget figure's own citation has since
+gone dead (its URL now returns HTTP 404) and could not be re-verified or
+replaced this pass; the figure is retained as previously sourced, flagged
+rather than silently dropped or silently re-asserted as freshly
+confirmed.[^yahoo-ym01-award]

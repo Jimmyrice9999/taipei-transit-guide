@@ -3,7 +3,7 @@ title: Kaohsiung Metro ridership
 summary: 71.3 million MRT trips and 13.34 million light-rail trips in 2025, from the operator's own homepage — everything more granular than an annual total stayed out of reach this run.
 order: 1
 operator: KRTC
-updated: 2026-08-28
+updated: 2026-08-29
 facts:
   - label: 2025 annual MRT ridership
     value: 71.3 million passenger-trips
@@ -33,7 +33,7 @@ sources:
     accessed: 2026-08-27
     kind: primary
     lang: zh-Hant
-    note: Full archive listing, read directly. Confirms 220 monthly reports exist back to 2009 with a parallel light-rail series; the JavaScript-rendered page's actual PDF download links could not be resolved by a non-browser fetch, so monthly and per-station content remains unread.
+    note: Full archive listing, read directly. Confirms 220 monthly reports exist back to 2009 with a parallel light-rail series. A later pass found each report's own detail sub-page does expose a working PDF download link (a two-step fetch, not JavaScript rendering, was the actual obstacle) - but the PDF's compressed content still could not be extracted to text by the tooling available, so monthly and per-station content remains unread either way.
   - id: zhwiki-krtc-ridership
     title: Kaohsiung MRT
     titleOriginal: 高雄捷運
@@ -54,19 +54,33 @@ Neither figure is broken down further — there is no published split between
 the Red and Orange Lines, and no per-station figures appear on this
 page.[^krtc-2025-operating-performance]
 
-## A large archive this page could not open
+## A large archive this page still could not open
 
 KRTC separately publishes monthly ridership statistics as PDFs, with 220
 records in the archive at the time of check, going back to 2009, in
 parallel MRT and light-rail series.[^krtc-statistics-archive] A Wikipedia
-footnote for the same URL describes the reports as per-station tables, but
-this page could not confirm that by reading a report directly: the
-archive's listing page is JavaScript-rendered, so its actual PDF download
-links are not present in the raw page a non-browser fetch receives, and a
-URL fragment obtained through a browser-capable tool did not resolve to a
-working file when retried directly. Monthly and station-level KRTC
-ridership therefore remain unread by this page's sourcing process — a
-different, more specific gap than a source simply not existing.
+footnote for the same archive URL describes the reports as per-station
+tables — but checking that description directly against the live page
+found no such wording anywhere on it; the page's own heading is "企業訊息"
+(Corporate Information) and its report titles carry no per-station
+language, an unresolved conflict between what Wikipedia's citation claims
+and what the cited page currently says.[^krtc-statistics-archive]
+
+A later pass found the reason a single report's PDF couldn't be reached
+was not JavaScript rendering, as first thought: each report's own detail
+sub-page (one fetch step further than the listing page) does expose a
+working direct download link.[^krtc-statistics-archive] One report was downloaded successfully this
+way. Its content still could not be read — the PDF's internal compression
+defeated the extraction tooling available — so monthly and per-station
+KRTC ridership remain unread either way, just for a more precise
+reason.[^krtc-statistics-archive]
+
+Several recent news headlines describe further ridership research
+opportunities — a post-pandemic profit milestone, quarterly ridership
+records, and a specific station reported by an audit finding to be
+under-performing its forecast — but none of those article bodies could
+be read this pass, only the headlines themselves, which this research
+process does not treat as sourced.
 
 ## A 2024 figure this page does not use
 

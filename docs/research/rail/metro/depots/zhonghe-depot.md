@@ -140,3 +140,56 @@ yet establish a current train roster, a road count, a standalone depot handover
 date, or which of the two function descriptions reflects the present operating
 layout. A current TRTC depot inventory or an as-built depot completion record
 would settle those gaps.
+
+## Update, 29 August 2026 — no maintenance equipment, a third area figure, TRA history
+
+- **DORTS, 捷運工程叢書 精進版－27 捷運機廠設備實務, p.106**,
+  `https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html`.
+  PRIMARY. States plainly `中和機廠：無維修設備` — no procured maintenance
+  equipment at all, unlike every other depot listed on the same page.
+- **Same publication, p.107**, Table 2-8-1. PRIMARY. Gives a THIRD area
+  figure (1.1 ha, against the existing 1.47 ha and 1.2 ha), a different
+  classification label (`駐車廠`, "parking depot," not the numbered grade
+  used for Zhonghe elsewhere), 6 stabling-track positions (matching the
+  existing 6-trainset storage figure) and a separate "8" in the line
+  fleet-requirement column. None of these reconcile with each other or
+  with the existing page's figures; none resolved.
+- **Same publication, p.196**. PRIMARY. Defines grade-1 maintenance as
+  routine daily single-person inspection with simple portable tools, no
+  lifting/disassembly equipment — consistent with, and explaining, the
+  no-equipment finding above.
+- **New Taipei Zhonghe District Office, 改制前**,
+  `https://www.zhonghe.ntpc.gov.tw/home.jsp?id=e32fc9bbd6f35420`. PRIMARY.
+  Former TRA Zhonghe Station opened freight-only 5 March 1965 (replacing
+  the Xindian Line's coal-transport role), third-class station, service
+  stopped 23 September 1990 — four days earlier than a zh.wikipedia
+  secondary claim of 19 September 1990, not independently corroborated.
+- **TRA construction-history table** (already cited elsewhere in the
+  corpus). PRIMARY. Banqiao-Zhonghe route, 6.5 km, physically dismantled
+  September 1993 — a later, separate milestone from the 1990 service stop.
+- **DORTS, 捷運技術 第39期, p.21**,
+  `https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html`.
+  PRIMARY. States the next line's project deliberately avoided using its
+  own depot as a construction staging base "after absorbing the experience
+  of the Zhonghe Line" — not stated explicitly as caused by site size, but
+  a plausible related fact.
+- **Not published**: a zh.wikipedia claim that Zhonghe is Taipei Metro's
+  only underground depot and its smallest by scale, citing a 2005 DORTS
+  newsletter (Report issue 204) whose live URL no longer resolves and
+  whose archive.org snapshot the fetch tool refuses to retrieve. Noted on
+  the content page as an unverified superlative, not asserted as fact.
+
+### Checked and failed (this pass)
+
+- DORTS Report issue 204 (2005) — live domain `www2.dorts.gov.tw` no
+  longer resolves (DNS failure); web.archive.org snapshot refused by the
+  fetch tool entirely.
+- DORTS depot-classification pages 198/201 — fetched in full looking for a
+  definition distinguishing `駐車廠` from the numbered grades; neither page
+  contains one.
+- A joint-development building record for the depot/Nanshijiao site beyond
+  "underground" — not located from a primary source; only the unreachable
+  2005 newsletter (via zh.wikipedia) makes this specific claim.
+- 自由時報/聯合報/中央社 coverage of the depot's construction or the former
+  TRA station's closure/redevelopment — WebSearch budget exhausted before
+  this could be searched.

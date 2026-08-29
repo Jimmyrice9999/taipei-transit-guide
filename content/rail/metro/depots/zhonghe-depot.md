@@ -7,7 +7,7 @@ operator: TRTC
 spine: O01
 aliases:
   - 中和機廠
-updated: 2026-08-27
+updated: 2026-08-29
 facts:
   - label: Chinese name
     value: 中和機廠
@@ -77,6 +77,60 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The technical article describes the Zhonghe track package, its underground track and simple parking/maintenance depot, and the 1998 opening.
+  - id: dorts-track-p21
+    title: Review and prospects of Taipei Metro track engineering, issue 39 (p.21)
+    titleOriginal: 捷運技術 第39期 - 臺北捷運軌道工程之回顧與展望
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/JRTST/ebook/no39/files/basic-html/page21.html
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: States that after the Zhonghe Line's experience, the next line's project deliberately avoided using its own depot as a construction staging base, using working shafts instead.
+  - id: dorts-equipment-p106
+    title: Taipei Metro depot equipment practice (p.106)
+    titleOriginal: 捷運工程叢書 精進版－27 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page106.html
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: States plainly that Zhonghe Depot has no procured maintenance equipment at all, unlike every other depot listed on the same page.
+  - id: dorts-equipment-p107
+    title: Taipei Metro depot equipment practice (p.107)
+    titleOriginal: 捷運工程叢書 精進版－27 捷運機廠設備實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no27/files/basic-html/page107.html
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: A depot/fleet table giving Zhonghe a different classification label ("駐車廠"), a third area figure (1.1 ha), 6 stabling-track positions and 8 trainsets in its line fleet-requirement column.
+  - id: dorts-planning-p196
+    title: Taipei Metro network planning practice - maintenance grade definitions
+    titleOriginal: 捷運工程叢書 精進版－1 捷運路網規劃實務
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://ebook.dorts.gov.taipei/ebook/no1/files/basic-html/page196.html
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: Defines depot maintenance grade 1 as routine daily inspection by one person using simple, portable tools inside the depot, with no lifting or disassembly equipment.
+  - id: zhonghe-district-office-history
+    title: Zhonghe District history - before municipal reorganisation
+    titleOriginal: 改制前
+    publisher: New Taipei City Zhonghe District Office (新北市中和區公所)
+    url: https://www.zhonghe.ntpc.gov.tw/home.jsp?id=e32fc9bbd6f35420
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: Dates the former TRA Zhonghe Station's freight-only opening to 5 March 1965 and its service stop to 23 September 1990.
+  - id: tra-construction-history-zhonghe
+    title: Chronological History of Railroad Construction
+    titleOriginal: 路線修築沿革
+    publisher: National Taiwan Railways Corporation / former Taiwan Railways Administration (國營臺灣鐵路股份有限公司／臺灣鐵路管理局)
+    url: https://www.railway.gov.tw/tra-tip-web/tip/file/6a439dbd-9cee-4d4b-9c4b-215439bffbf5
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: Records the Banqiao-Zhonghe route at 6.5 km, physically dismantled September 1993 - a later milestone than the 1990 service-stop date.
 ---
 
 ## Overview
@@ -105,6 +159,49 @@ function they assign to the facility. The 1.47-hectare figure includes a
 passenger station, while the table's boundary is not explained in the page
 text.[^dorts-zhonghe-line][^dorts-planning-inventory]
 
+A DORTS equipment-practice manual states the point most plainly of any source
+checked for this page: Zhonghe Depot has no procured maintenance equipment at
+all, unlike every other depot listed on the same page.[^dorts-equipment-p106]
+A depot/fleet table in the same manual gives a third area figure,
+approximately 1.1 hectares, and a different classification label,
+<span lang="zh-Hant">駐車廠</span> ("parking depot"), rather than the numbered
+grade used for Zhonghe elsewhere; the same row gives 6 stabling-track
+positions — consistent with the planning inventory's 6-trainset storage
+figure — against a separate "8" in the table's line fleet-requirement
+column.[^dorts-equipment-p107] No source checked reconciles the three area
+figures, the two classification labels, or the two trainset-related numbers;
+all are published as found.[^dorts-zhonghe-line][^dorts-planning-inventory][^dorts-equipment-p107]
+
+DORTS's own definition of grade-1 maintenance is routine daily inspection by
+a single person using simple, portable tools inside the depot, with nothing
+requiring lifting or disassembly equipment.[^dorts-planning-p196] That
+definition is consistent with, and gives concrete content to, the equipment
+manual's finding that Zhonghe has no maintenance equipment procured at
+all.[^dorts-planning-p196][^dorts-equipment-p106]
+
+## Before the depot: a TRA freight station
+
+The former Taiwan Railways Zhonghe Station, on whose site the depot and
+Nanshijiao Station were later built, opened for freight-only service on
+5 March 1965, replacing the older Xindian Line's coal-transport role, and
+was classified a third-class station.[^zhonghe-district-office-history] The
+same local-history source dates its service stop to 23 September
+1990.[^zhonghe-district-office-history] TRA's own construction-history table
+separately records the Banqiao–Zhonghe route as 6.5 km, physically
+dismantled in September 1993 — a later milestone than the 1990 service-stop
+date, and not stated by any source to be the same event as the depot's own
+construction start.[^tra-construction-history-zhonghe]
+
+## A lesson for the next line
+
+A DORTS technical review states that after "absorbing the experience of the
+Zhonghe Line," the next line's project deliberately did not use its own
+depot as a construction staging base, setting up working shafts for the
+track package instead.[^dorts-track-p21] The source does not state in so
+many words that Zhonghe's small site was the specific problem, only that its
+experience led to a changed approach — reported here as a likely-related,
+not a proven-causal, fact.[^dorts-track-p21]
+
 ## Track and opening record
 
 The DORTS track-engineering review describes the Zhonghe track package as
@@ -127,6 +224,9 @@ remains TBC.
 ## What is not published here
 
 No primary source retrieved for this page gives a current depot-level train
-roster, a separate stabling-road count, or a standalone depot completion date.
-Those fields remain TBC rather than being reconstructed from fleet models or
-from the six-trainset planning figure.
+roster or a standalone depot completion date. Those fields remain TBC rather
+than being reconstructed from fleet models or from the six-trainset planning
+figure. A secondary source claims Zhonghe is Taipei Metro's only underground
+depot and its smallest by scale, citing a 2005 DORTS newsletter this page
+could not reach; that superlative claim is reported here as unverified, not
+published as fact.

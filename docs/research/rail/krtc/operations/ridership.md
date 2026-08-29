@@ -34,3 +34,71 @@ claimed primary. Whether an open ridership dataset exists for KRTC,
 comparable to TRA's data.gov.tw entry-exit dataset, is unresolved due to
 tool/network failures on both the national and Kaohsiung portals checked.
 No per-station or per-line ridership figure is published on this page.
+
+## Update, 29 August 2026 — the archive link problem was more specific than thought, plus unread headline leads
+
+- **Corrected finding**: a more targeted fetch of the statistics-archive
+  listing page did surface a working link — not by defeating JavaScript
+  rendering, but by fetching one level deeper. `https://corp.krtc.com.tw/News/statistics?id=1`
+  links to a per-report detail page
+  (`.../News/statistics_more?id=ddf7fe6b35de4ab7b8f259975a2b424c`), which
+  in turn exposes a direct PDF download URL
+  (`.../ReadFileClick/?id=563&p=Statistics&n=4010268dd8b94e46a3656db2db3a6f29.pdf&fn=...`).
+  The July 2026 monthly PDF (70.9 KB) was downloaded successfully this
+  way. Its content still could not be extracted — the file's internal
+  compression defeated the available text-extraction tooling, and no
+  Bash/`pdftotext` access was available to this pass either. The prior
+  "links not present in the raw page" framing should not be repeated
+  unqualified; the more precise statement is in the content page now.
+- **Wikipedia's citation title for this same archive URL does not match
+  the live page.** Checked directly: the page's own heading is "企業訊息"
+  and no report title carries per-station wording, contrary to
+  Wikipedia's own title for the citation ("...各站旅運量統計表"). May reflect
+  a page redesign since Wikipedia's 2019 archive snapshot (unreachable —
+  web.archive.org is refused entirely by the fetch tool in this
+  environment) or may mean the description was never accurate. Not
+  resolved.
+- **KRTC's annual-report PDFs (2016, 2019 tried) both exceeded the fetch
+  tool's 10 MB size limit** and returned no content — these are
+  image-heavy corporate reports, not simple tables. A Wikipedia-cited
+  cumulative-ridership figure ("page 28" of one of these reports,
+  599 million by end-2018, 650 million by end-2019) remains unread.
+- **An unsourced Wikipedia sentence, checked and found genuinely
+  unfootnoted**: the article's raw wikitext states KRTC faced severe
+  losses "bordering on bankruptcy" five years into operation, requiring a
+  September 2012 petition to amend its BOT contract with Kaohsiung City —
+  no `<ref>` tag anywhere near this sentence in the wikitext. Not
+  published; recorded as a strong lead for a future pass with working
+  news-archive search (a 2012-era 中央社/自由時報/聯合報 search, or a
+  KRTC/city government BOT-amendment document, would settle it).
+- **Several 2025-2026 news headlines were found via Google News RSS feed
+  metadata (a full XML fetch, not a search snippet) but could not be
+  read past the headline** — a first post-pandemic profit (mid-2025), a
+  195,000/day 2025 full-year average, a >240,000/day Q1 2026 average
+  (corroborated by three independent outlets' headlines), and an Audit
+  Office finding that Gangshan station (RK1) reached only 39% of a
+  forecast ridership figure (corroborated by two independent outlets'
+  headlines). None are published on the content page — a headline alone
+  is not a read source under this project's rules.
+- **The 2008-opening ridership-forecast-versus-actual controversy the
+  task specifically asked about was not found anywhere** — including a
+  targeted check of zh.wikipedia's raw wikitext for 預估運量/預測運量/可行性研究,
+  which returned nothing. Completely unestablished; would need the
+  original 1990s feasibility study/EIA ridership projection, or a Control
+  Yuan investigation report, neither reached.
+
+### Checked and failed (this pass)
+
+- `stat.motc.gov.tw` — DNS failure, all paths, reconfirmed.
+- `web.archive.org` (two specific Wikipedia-cited snapshots) — fetch tool
+  refuses this host entirely.
+- KRTC 2016/2019 annual-report PDFs — exceeded the fetch tool's 10 MB
+  size limit.
+- Nine Google News RSS article-redirect fetches across six stories, plus
+  an `r.jina.ai` proxy retry (HTTP 403 both times) — all returned empty
+  page shells, not article content.
+- Direct fetch of chinatimes.com, thenewslens.com — HTTP 403 both.
+- 自由時報, CNA, and two guessed audit-office domains' own site search —
+  all 404 or DNS failure.
+- Bing/DuckDuckGo as WebSearch substitutes — unusable (mismatched
+  content, CAPTCHA); WebSearch budget exhausted before this pass began.

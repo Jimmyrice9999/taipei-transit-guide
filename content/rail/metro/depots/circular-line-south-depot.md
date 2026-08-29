@@ -7,7 +7,7 @@ operator: NTMC
 spine: Y08
 aliases:
   - 南機廠
-updated: 2026-08-27
+updated: 2026-08-29
 hero:
   image: circular-line-south-depot/hero
   alt: The depot's main gate at night, lit signage reading "環狀線 南機廠 CIRCULAR LINE SOUTH DEPOT" beside a perforated-metal perimeter fence.
@@ -89,6 +89,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The current NTMC announcement and attached PDF refer to the Circular Line South Depot as a site managed by the company; the page is also the attachment index for the full announcement PDF.
+  - id: ntmc-contact
+    title: New Taipei Metro Corporation - contact information
+    titleOriginal: 聯絡我們
+    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
+    url: https://www.ntmetro.com.tw/about/?mode=list&catid=15
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: Gives NTMC's registered company address as 新北市新店區民權路280號 - the same street address as the South Depot site, on an independent page from the vending-machine announcement.
+  - id: zhwiki-south-depot
+    title: South Depot, New Taipei City (Wikipedia article)
+    titleOriginal: 南機廠 (新北市)
+    publisher: Wikimedia Foundation / Chinese Wikipedia
+    url: https://zh.wikipedia.org/wiki/南機廠_(新北市)
+    accessed: 2026-08-29
+    kind: secondary
+    lang: zh-Hant
+    note: Independently gives the same 新北市新店區民權路280號 address and confirms Level-5 classification from a separate source family than DORTS. Its naming-rationale sentence (why "South" rather than a place name) carries no citation of its own in the article's raw wikitext and is not used here.
+  - id: dorts-circular-ring-depots
+    title: Circular Line (South Ring/North Ring)
+    titleOriginal: 環狀線(南環段/北環段)
+    publisher: New Taipei City Government Department of Rapid Transit Systems (新北市政府捷運工程局)
+    url: https://www.dorts.ntpc.gov.tw/about/route/bQw92Vzy2jOk
+    accessed: 2026-08-29
+    kind: primary
+    lang: zh-Hant
+    note: States the North Ring section has its own separate depot contract (DF116), design-contract award 17 July 2019 and groundbreaking 6 August 2019 - evidence that South Depot serves Phase 1 specifically, not the whole eventual ring.
 ---
 
 ## Overview
@@ -104,6 +131,20 @@ operator's own announcement calls it a facility under the company's management
 and offers space inside it for vending machines.[^ntmc-management] That proves
 current management of the named site, but does not by itself establish when
 operational responsibility changed hands.
+
+NTMC's own registered company address, given on a separate contact page, is
+the same street address as the depot site — 新北市新店區民權路280號 — meaning
+the company's headquarters and the depot share a postal address, though no
+source read states explicitly that the headquarters building sits inside the
+depot compound rather than merely nearby.[^ntmc-contact] An independent
+encyclopedia source gives the same address for the depot and confirms the
+Level-5 classification from outside the DORTS source
+family.[^zhwiki-south-depot]
+
+South Depot serves Circular Line Phase 1 specifically, not the whole
+eventual ring: the North Ring section under construction has its own,
+separate depot, with a design-contract award dated 17 July 2019 and
+groundbreaking 6 August 2019.[^dorts-circular-ring-depots]
 
 ## Functions and design grade
 

@@ -44,3 +44,50 @@ targeted search of KRTC annual reports or audit records was not performed.
 The original 2001 Siemens contract's exact scope and value rest only on an
 unverified Wikipedia citation to a source (Railway Gazette) this page could
 not fetch.
+
+## Update, 29 August 2026 — vendor self-confirmation, extension subsystem detail, a dead citation
+
+- **Siemens Mobility's own Yellow Line press release** (already cited)
+  re-read closely: states directly that Siemens Mobility itself
+  "previously delivered" Red/Orange, in service since 2008 — the
+  manufacturer's own confirmation of the original-system vendor, not just
+  an inference from the extension contract.
+- **MTBU Gangshan-Luzhu signalling architecture page** (already cited),
+  re-read for more depth: confirms wayside ATP data exchange with the
+  interlocking, and states the extension updates named existing Red Line
+  subsystems (OCC/local operation workstations, R22 interlocking,
+  timetable-building system) rather than adding a standalone overlay — as
+  of the page's 2023-04-26 publication, the project was at mid-stage
+  detailed design.
+- **MTBU Yellow Line EMU electromechanical page** (already cited), re-read:
+  states each train's two motor-end cars carry a manual driving control
+  area despite the fleet's stated unmanned-automatic capability. Does not
+  say when the manual position is used.
+- **zh.wikipedia, 高雄捷運紅線**, SECONDARY, lead only. Gives BOT-consortium
+  narrative context (China Steel/Siemens-led team beat Alstom- and
+  Bombardier-led rivals; contracts signed 12 January 2001) — not
+  independently corroborated against a primary this pass.
+- **The existing YM01 budget citation (Yahoo/Commercial Times) is now
+  dead** — re-checked 2026-08-29, the URL returns HTTP 404. The figure is
+  retained on the content page as previously sourced, flagged as
+  citation-rot rather than silently dropped or silently re-verified. A
+  second figure zh.wikipedia attributes to a 自由時報 article (NT$43.399bn,
+  vs. the existing NT$43.499bn) also failed verification — the LTN URL
+  fetched clean but contains no matching cost figure anywhere in its text.
+  Neither figure should be treated as currently sourced; both are recorded
+  as an open conflict, not resolved.
+
+### Checked and failed (this pass)
+
+- `https://corp.krtc.com.tw/About/history` — WAF/CDN access-denial page,
+  not content.
+- `https://mtbu.kcg.gov.tw/Home/gangshanluzhu` — guessed URL, HTTP 404.
+- Railway Gazette International's 2001 contract report — still HTTP 403;
+  retried via web.archive.org, which the fetch tool refuses entirely in
+  this environment.
+- `https://tw.stock.yahoo.com/news/高捷黃線機電工程-德西門子等團隊得標-201000863.html`
+  (existing YM01 citation) — now HTTP 404, previously live.
+- `https://news.ltn.com.tw/news/life/breakingnews/4028557` (zh.wikipedia's
+  cited source for a second YM01 figure) — fetched clean but contains no
+  cost figure anywhere in its text; a wiki-citation check that failed.
+- WebSearch — exhausted before this pass's two queries could run.

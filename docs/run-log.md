@@ -1,3 +1,52 @@
+## Run 306 Part 5 continuation, second wave - 7 more depot/KRTC/TMRT/TRA pages deepened (2026-08-29)
+
+Dispatched 7 more scouts after the first Part 5 wave's gate:full passed:
+two Taipei Metro depot pages (Circular Line South Depot, Zhonghe Depot),
+three KRTC pages (signalling, joint land development, ridership), TMRT
+signalling, and TRA freight statistics.
+
+Real depth landed in all seven. KRTC's joint-development case-list page —
+unreadable to a previous pass — rendered this time and turned up all 15
+current cases with station, investor, area and investment figures,
+including a genuine open question the bureau's own list does not resolve
+(3 of the 15 are titled as public urban-renewal cases under a different
+statute, not Article 7, mixed into the same case list with no stated
+justification) and confirmation that neither Formosa Boulevard nor
+Kaohsiung Main Station has an active case. TRA's 2025 statistical
+yearbook — a PDF that resisted every extraction method except the Read
+tool's page-image rendering — gave a 74-year freight-tonnage decline
+series (~70% off its 1976 peak), named Taiwan Cement as the one
+specific freight customer any source could name, and found freight
+revenue actually rose 6.65% in 2025 even as tonnage fell, alongside a
+23 June 2025 tariff increase — reported side by side, not asserted as
+cause and effect. TMRT's Green Line signalling gained a product name for
+the first time (Alstom's Urbalis CBTC, per Alstom's own 2025 press
+release about a *different* line's contract) after two years of the page
+carrying no vendor-confirmed product. Zhonghe Depot gained a plain
+operator statement that it has no maintenance equipment at all, and a
+third, still-unreconciled area figure. KRTC's own vendor, Siemens,
+confirmed in its own words that it delivered the original 2008 Red/Orange
+signalling system, closing a gap the existing page had left as inference.
+KRTC ridership mostly hit unread PDFs and unrenderable Google News
+redirects — the archive's link-discovery problem turned out to be solved
+by a two-step fetch, but text extraction remains blocked; several 2025-26
+ridership-record headlines were found but explicitly not published, since
+a headline is not a read source.
+
+Three gate failures this wave, all fixed: three more claims-ratchet false
+positives from unsourced topic sentences (fixed by attaching citations to
+sentences that summarize material already cited below them, not by
+weakening the checker); an added-but-never-cited source entry; and a
+research-check failure from a "Checked and failed" section written with
+backtick-wrapped items instead of the required `- **bold claim** —
+checked YYYY-MM-DD` format the checker's parser actually looks for — the
+first time this run hit that specific formatting requirement, now
+recorded for next time. `gate:full` clean on the fifth full run this
+session (claims ratchet held at 0 ASSERTED throughout). Also caught: a
+Wikipedia citation for KRTC's own ridership-archive URL whose claimed
+title ("...各站旅運量統計表") does not match anything on the live page —
+published as an unresolved conflict, not silently trusted.
+
 ## Run 306 Part 4/5 continuation - 5 Commons photos, 9 more TRA/TRTC pages deepened (2026-08-29)
 
 Resumed after a context break. First action: reconciled git state against
@@ -65,10 +114,22 @@ run's own new "Conflict, not resolved" sections made the generated
 conflicts-index stale mid-session.
 
 `gate:full` clean on the second full run (claims ratchet held at 0
-ASSERTED). 1 commit, pushed. **Not reached**: further Part 5 continuation
-(many more thin pages remain), a dedicated Part 4 icon/colour pass beyond
-what was already clean from Part 3's reuse, Part 7's page-weight
-before/after reporting for a representative station page.
+ASSERTED). 1 commit, pushed.
+
+**Part 7 supplement**: current page weight (HTML + imagery, largest
+referenced variant) for the three representative pages the brief named —
+`rail/tra/rolling-stock/fleet-roster`: 205.3 KB HTML + 352.9 KB imagery
+(558.2 KB total; imagery alone was 509 KB before Part 0's fix, now well
+under the 400 KB budget). `rail/metro/stations/br13`: 345.8 KB HTML +
+153.1 KB imagery (498.9 KB total). Homepage: 177.1 KB HTML + 47.9 KB
+imagery across 6 hero photos (225.0 KB total). Neither the station page
+nor the homepage's imagery changed this run; their HTML grew slightly from
+Part 3's side rail markup, not separately measured against a pre-Part-3
+build.
+
+**Not reached**: further Part 5 continuation (many more thin pages
+remain), a dedicated Part 4 icon/colour pass beyond what was already clean
+from Part 3's reuse.
 
 ## Run 306 - image-budget CI fix, new Air/Road/Statistics sections, permanent nav-label gate, wide-viewport side rail, GitHub Pages 404 fix (2026-08-29)
 
