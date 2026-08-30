@@ -4137,6 +4137,41 @@ remains untouched and untracked.
 
 ## Run 254 - publish operator control-centre boundary (2026-08-27)
 
+## Run 308 - stop cleanly after national network features and verification (2026-08-30)
+
+Parts 1–5 are complete. The static export now has a nationwide interactive
+network map with the existing diagram as its no-JavaScript fallback, keyboard
+station links, pan/zoom, collision-managed labels and Sanying's dashed chain;
+below 480px it also exposes a station list. Every rail station page has the
+confirmed-ID-only near-station panel (bus routes, nearby YouBike geometry,
+interchanges and exits where the committed joins support them), with the
+geometric threshold and confirmation rule stated and no guessed rows. The
+network-growth page is a vertical all-system timeline with sourced openings,
+extensions, additions and closures plus an undated TBC table. Lines, operators,
+stations and systems are generated comparison tables: every row is in static
+HTML, TBC is explicit, and client sorting is an enhancement. The changelog is
+generated from this run log and presents reader-facing additions and corrections.
+
+Part 6's thin-page audit rechecked 114 pages below 400 words. No new
+under-researched outlier remained after the institutional and archive checks;
+62 bus-route pages, 38 TYMC stations, 11 bike pages and 3 other pages are
+data-only or explicitly exhausted. Part 7's real-browser sweep covered 2,087
+pages at 17 viewport/zoom cases, produced 2,227 screenshots and 130 print
+checks, and found clean reflow, keyboard/ARIA, reduced-motion and zero axe
+violations. The only visual exception was the deliberately recorded Chromium
+texture-height limit on the exceptionally tall sources screenshot. Reported
+weights were 795.3 KB network, 1,067.8 KB station-with-near, 465.0 KB timeline
+and 482.4 KB comparisons (HTML, fonts and other assets combined).
+
+The first stop-sequence full gate caught one real CJK-subset mismatch in the
+generated changelog. Fonts were regenerated from the fresh 3,172-page export,
+comparison station names/depth values were tagged `zh-Hant`, and the full gate
+then passed all 241 tests with 0 ASSERTED claims; markers, links, nav labels,
+citation, research, geometry and CVD checks were clean. Long-page build retries
+recovered; the existing unknown station-code warnings remain non-fatal. Audit
+JSON/PDF outputs were restored and `probes/` remains intentionally untracked.
+No feature file was mid-write at stop; remaining work is future research only.
+
 ### Sourced
 
 Added a focused control-centre page and research pair. TRTC’s published 2014

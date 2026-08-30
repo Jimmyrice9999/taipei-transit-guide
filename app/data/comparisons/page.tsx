@@ -10,6 +10,12 @@ import { getLineComparison, getOperatorComparison, getStationComparison, getSyst
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getOperator } from '@/lib/operators'
 
+const hasHan = /[\u3400-\u9fff]/
+
+function StationLabel({ value }: { value: string }) {
+  return hasHan.test(value) ? <span lang="zh-Hant">{value}</span> : value
+}
+
 export const metadata: Metadata = {
   alternates: { canonical: '/data/comparisons/' },
   title: 'Network comparisons',
@@ -114,9 +120,9 @@ export default function ComparisonsPage() {
             <tbody>
               {stations.map((row) => (
                 <tr key={row.id}>
-                  <th scope="row" data-sort-value={`${row.code} ${row.name}`}>{row.href ? <Link href={row.href}>{row.code} {row.name}</Link> : `${row.code} ${row.name}`}</th>
+                  <th scope="row" data-sort-value={`${row.code} ${row.name}`}>{row.href ? <Link href={row.href}>{row.code} <StationLabel value={row.name} /></Link> : <><span>{row.code} </span><StationLabel value={row.name} /></>}</th>
                   <td data-sort-value={row.line?.name ?? row.lineCode}>{row.line ? <LineBadge code={row.line.code} operator={row.line.operator} /> : row.lineCode || 'TBC'}</td>
-                  <td>{row.depth}</td>
+                  <td><StationLabel value={row.depth} /></td>
                   <td className="num" data-sort-value={row.elevation}>{row.elevation}</td>
                   <td className="num" data-sort-value={row.ridership}>{row.ridership}{row.period && <span className="table-subtext">{row.period}</span>}</td>
                   <td className="num" data-sort-value={row.rank}>{row.rank}</td>
