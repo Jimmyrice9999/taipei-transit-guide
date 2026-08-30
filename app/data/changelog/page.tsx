@@ -18,7 +18,7 @@ function RunEntry({ entry }: { entry: ReturnType<typeof getChangelogEntries>[num
   return (
     <article className="changelog-entry" id={entry.anchor}>
       <div className="changelog-entry-head">
-        <span className="changelog-run">Run {entry.number}</span>
+        <span className="changelog-run">{entry.kind}</span>
         <time>{entry.date || 'Date TBC'}</time>
       </div>
       <h3><RichText>{entry.title}</RichText></h3>
@@ -37,7 +37,7 @@ export default function ChangelogPage() {
       <Breadcrumbs trail={[{ label: 'Data', href: '/data/' }, { label: 'Changelog' }]} />
       <BackLink href="/data/" label="Data" />
       <h1 className="page-title">Changelog</h1>
-      <p className="page-summary">{entries.length} run-log entries, generated at build time from <code>docs/run-log.md</code>.</p>
+      <p className="page-summary">{entries.length} reader-facing changes, generated at build time from the project&rsquo;s detailed research log.</p>
 
       <div className="page-body">
         <TableOfContents items={[
@@ -48,18 +48,15 @@ export default function ChangelogPage() {
         <h2 className="section-heading" id="method">How this is generated</h2>
         <p>
           This page is a static reading of the repository run log. At build time the parser
-          reads each top-level “Run” heading, keeps its number and date, and takes the first
-          substantive paragraph as the short summary. It does not query an API, render a
-          server endpoint or guess at Git history. The log remains the detailed record: it
-          contains the full source lists, conflicts, checked failures, page counts and
-          verification evidence that a short changelog cannot carry.
+          reads both generations of run headings, groups split parts into one change, and
+          selects prose about new coverage, updates or corrections. Gate output, test counts,
+          commit hashes, CI mechanics and unfinished-work notes are deliberately excluded.
+          It does not query an API, render a server endpoint or guess at Git history.
         </p>
         <p>
-          Entries are ordered newest first here so a reader can see what changed since the
-          last visit. The run number is not a release version and a run can be split into
-          several headings when one unattended session completes more than one unit of
-          work. Dates and titles are therefore displayed exactly as the log supplies them;
-          an absent date remains “Date TBC” rather than being replaced with the build date.
+          Entries are ordered newest first so a reader can see what changed since the last
+          visit. Corrections stay visible and are labelled in words. An absent date remains
+          “Date TBC” rather than being replaced with the build date.
         </p>
 
         <h2 className="section-heading" id="recent">Recent runs</h2>
