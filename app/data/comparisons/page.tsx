@@ -6,7 +6,6 @@ import LineBadge from '@/components/LineBadge'
 import PageShell from '@/components/PageShell'
 import TableOfContents from '@/components/TableOfContents'
 import SortableTable, { SortButton } from '@/components/SortableTable'
-import { getLinePageHref } from '@/lib/content'
 import { getLineComparison, getOperatorComparison, getStationComparison, getSystemComparison } from '@/lib/data-explorer'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getOperator } from '@/lib/operators'
@@ -14,7 +13,7 @@ import { getOperator } from '@/lib/operators'
 export const metadata: Metadata = {
   alternates: { canonical: '/data/comparisons/' },
   title: 'Network comparisons',
-  description: 'Accessible build-time comparisons of Taipei-region lines, operators, station structure and sourced ridership.',
+  description: 'Accessible build-time comparisons of Taiwan rail lines, operators, station structure and sourced ridership.',
 }
 
 export default function ComparisonsPage() {
@@ -55,10 +54,10 @@ export default function ComparisonsPage() {
             <thead><tr><th scope="col" aria-sort="none"><SortButton column={0}>Line</SortButton></th><th scope="col" aria-sort="none"><SortButton column={1}>System</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={2} type="number">Stations</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={3} type="number">Published km</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={4} type="number">Measured km</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={5} type="number">Opening year</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={6} type="number">Run min</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={7} type="number">Latest line ridership</SortButton></th></tr></thead>
             <tbody>
               {lines.map((row) => (
-                <tr key={row.line.key}>
-                  <th scope="row" data-sort-value={row.line.name}><LineBadge code={row.line.code} operator={row.line.operator} /> {getLinePageHref(row.line.code, row.line.operator) ? <Link href={getLinePageHref(row.line.code, row.line.operator)!}>{row.line.name}</Link> : row.line.name}</th>
+                <tr key={row.id}>
+                  <th scope="row" data-sort-value={row.name}>{row.line ? <LineBadge code={row.line.code} operator={row.line.operator} /> : <code>{row.code}</code>} <Link href={row.href}>{row.name}</Link></th>
                   <td>{row.system}</td>
-                  <td className="num" data-sort-value={row.stations || 'TBC'}>{row.stations || 'TBC'}</td>
+                  <td className="num" data-sort-value={row.stations ?? 'TBC'}>{row.stations ?? 'TBC'}</td>
                   <td className="num" data-sort-value={row.lengthKm ?? 'TBC'}>{row.lengthKm?.toFixed(2) ?? 'TBC'}</td>
                   <td className="num" data-sort-value={row.measuredKm ?? 'TBC'}>{row.measuredKm?.toFixed(2) ?? 'TBC'}</td>
                   <td className="num" data-sort-value={row.openingYear}>{row.openingYear}</td>
@@ -73,10 +72,10 @@ export default function ComparisonsPage() {
         <h2 className="section-heading" id="operators">Operators</h2>
         <p>
           This is an evidence boundary, not an estimate of the companies' complete fleets.
-          Routes and stations come from the namespaced registry; depots count documented depot
-          pages. Fleet size remains TBC because a count of researched vehicle-family pages is
-          not a fleet census. Individual-set allocations and current depot rosters are not
-          inferred.
+          Routes and stations come from the namespaced content registry; depots count documented
+          depot pages. Fleet size appears only where an operator record states a fleet-size fact.
+          Researched vehicle-family pages are never added together as though they formed a fleet
+          census, so the remaining operators read TBC.
         </p>
         <div className="wide table-scroll compare" tabIndex={0}>
           <SortableTable className="comparison-table" label="Operators comparison">
@@ -90,7 +89,7 @@ export default function ComparisonsPage() {
                     <th scope="row" data-sort-value={row.name}>{operator?.href ? <Link href={operator.href}>{row.name}</Link> : row.name} <code>{row.code}</code></th>
                     <td className="num" data-sort-value={row.lineCount}>{row.lineCount}</td>
                     <td className="num" data-sort-value={row.stationCount}>{row.stationCount}</td>
-                    <td className="num" data-sort-value="TBC">TBC</td>
+                    <td className="num" data-sort-value={row.fleetSize}>{row.fleetSize}</td>
                     <td className="num" data-sort-value={row.depots || 'TBC'}>{row.depots || 'TBC'}</td>
                     <td>{row.lines || 'TBC'}</td>
                   </tr>
@@ -114,11 +113,11 @@ export default function ComparisonsPage() {
             <thead><tr><th scope="col" aria-sort="none"><SortButton column={0}>Station</SortButton></th><th scope="col" aria-sort="none"><SortButton column={1}>Line</SortButton></th><th scope="col" aria-sort="none"><SortButton column={2}>Depth / structure</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={3} type="number">Elevation</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={4} type="number">Latest ridership</SortButton></th><th scope="col" className="num" aria-sort="none"><SortButton column={5} type="number">Line rank</SortButton></th></tr></thead>
             <tbody>
               {stations.map((row) => (
-                <tr key={`${row.station.operator}:${row.station.code}`}>
-                  <th scope="row" data-sort-value={`${row.station.code} ${row.station.name}`}>{row.href ? <Link href={row.href}>{row.station.code} {row.station.name}</Link> : `${row.station.code} ${row.station.name}`}</th>
-                  <td data-sort-value={row.line?.name ?? row.station.line}>{row.line ? <LineBadge code={row.line.code} operator={row.line.operator} /> : row.station.line}</td>
+                <tr key={row.id}>
+                  <th scope="row" data-sort-value={`${row.code} ${row.name}`}>{row.href ? <Link href={row.href}>{row.code} {row.name}</Link> : `${row.code} ${row.name}`}</th>
+                  <td data-sort-value={row.line?.name ?? row.lineCode}>{row.line ? <LineBadge code={row.line.code} operator={row.line.operator} /> : row.lineCode || 'TBC'}</td>
                   <td>{row.depth}</td>
-                  <td className="num" data-sort-value="TBC">TBC</td>
+                  <td className="num" data-sort-value={row.elevation}>{row.elevation}</td>
                   <td className="num" data-sort-value={row.ridership}>{row.ridership}{row.period && <span className="table-subtext">{row.period}</span>}</td>
                   <td className="num" data-sort-value={row.rank}>{row.rank}</td>
                 </tr>

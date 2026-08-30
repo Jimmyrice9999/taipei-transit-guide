@@ -1,4 +1,4 @@
-import { getAllPages, getLinePageHref, getPages } from './content'
+import { getAllPages, getLinePageHref, getSystem } from './content'
 import { getLine, type Line } from './lines'
 import { getOperator } from './operators'
 import { getLineRidership, getStationRidership, formatRidership } from './ridership'
@@ -142,8 +142,13 @@ export function getUndatedOpeningStations(): TimelineSubject[] {
 }
 
 export type LineComparison = {
-  line: Line
-  stations: number
+  id: string
+  code: string
+  name: string
+  operator: string
+  href: string
+  line: Line | null
+  stations: number | null
   lengthKm: number | null
   measuredKm: number | null
   travelTimeMin: number | null
@@ -155,22 +160,40 @@ export type LineComparison = {
 
 export function getLineComparison(): LineComparison[] {
   const pages = getAllPages()
-  return getLineSummaries().map((summary) => {
-    const ridership = getLineRidership(summary.line.code, summary.line.operator)
-    const page = pages.find((candidate) => candidate.href === getLinePageHref(summary.line.code, summary.line.operator))
-    const opened = page?.facts.find((fact) => /^(?:opened|opening date)$/i.test(fact.label))?.value ?? ''
+  const summaries = getLineSummaries()
+  return pages.filter((page) => page.section === 'rail' && page.type === 'lines').map((page) => {
+    const summary = summaries.find(
+      (candidate) => getLinePageHref(candidate.line.code, candidate.line.operator) === page.href,
+    )
+    const code =
+      page.line ||
+      page.facts.find((fact) => /^(?:TDX line ID|Line code)$/i.test(fact.label))?.value ||
+      (page.operator === 'THSR' ? 'HSR' : page.system.toUpperCase())
+    const operator = page.operator || page.system.toUpperCase()
+    const registered = getLine(code, operator) ?? summary?.line ?? null
+    const ridership = registered ? getLineRidership(registered.code, registered.operator) : { current: null }
+    const stationValue = page.facts.find((fact) => /(?:ordered .*stations|stations$|station members|main-line stations)/i.test(fact.label))?.value
+    const lengthValue =
+      page.facts.find((fact) => /^(?:TDX route length|Route length|Main-line published chainage|Length)$/i.test(fact.label))?.value ??
+      page.specs.find((spec) => /^(?:Route length|Main line|Length)$/i.test(spec.label))?.value
+    const opened = page.facts.find((fact) => /(?:opened|opening date|operation|passenger reopening)/i.test(fact.label))?.value ?? ''
     return {
-      line: summary.line,
-      stations: summary.stations.length || summary.published?.stations || 0,
-      lengthKm: summary.officialKm ?? summary.published?.routeKm ?? null,
-      measuredKm: summary.measuredKm,
-      travelTimeMin: summary.travelTimeMin,
+      id: page.href,
+      code,
+      name: page.title,
+      operator,
+      href: page.href,
+      line: registered,
+      stations: summary?.stations.length || summary?.published?.stations || Number(stationValue?.match(/\d+/)?.[0]) || null,
+      lengthKm: summary?.officialKm ?? summary?.published?.routeKm ?? (lengthValue ? Number(lengthValue.match(/[\d.]+/)?.[0]) : null),
+      measuredKm: summary?.measuredKm ?? null,
+      travelTimeMin: summary?.travelTimeMin ?? null,
       ridership: ridership.current ? formatRidership(ridership.current.value) : 'TBC',
       ridershipPeriod: ridership.current?.period ?? '',
       openingYear: opened.match(/(?:18|19|20)\d{2}/)?.[0] ?? 'TBC',
-      system: getOperator(summary.line.operator)?.name ?? summary.line.operator,
+      system: getOperator(operator)?.name ?? getSystem('rail', page.system).title,
     }
-  })
+  }).sort((a, b) => a.system.localeCompare(b.system) || a.name.localeCompare(b.name))
 }
 
 export type OperatorComparison = {
@@ -179,30 +202,43 @@ export type OperatorComparison = {
   lineCount: number
   stationCount: number
   fleetFamilyPages: number
+  fleetSize: string
   depots: number
   lines: string
 }
 
 export function getOperatorComparison(): OperatorComparison[] {
-  const fleetPages = getPages('rail', 'rolling-stock', 'metro').filter((page) => page.line)
-  const depotPages = getPages('rail', 'depots', 'metro')
-  const operators = [...new Set(STATIONS.map((station) => station.operator))]
+  const pages = getAllPages().filter((page) => page.section === 'rail')
+  const lineRows = getLineComparison()
+  const operators = [...new Set(lineRows.map((row) => row.operator))]
   return operators.map((code) => {
-    const lines = [...new Map(
-      STATIONS.filter((station) => station.operator === code)
-        .map((station) => {
-          const line = getLine(station.line, code)
-          return [line?.key ?? `${code}:${station.line}`, line] as const
-        }),
-    ).values()].filter((line): line is Line => Boolean(line))
-    const operatorFleetPages = fleetPages.filter((page) => getLine(page.line, page.operator || undefined)?.operator === code)
+    const lines = lineRows.filter((row) => row.operator === code)
+    const system = lines[0]?.href.split('/')[2] ?? ''
+    const contentStations = pages.filter(
+      (page) => page.type === 'stations' && (page.operator === code || (!page.operator && page.system.toUpperCase() === code)),
+    ).length
+    const registryStations = STATIONS.filter((station) => station.operator === code).length
+    const fleetFacts = pages
+      .filter(
+        (page) =>
+          page.type === 'rolling-stock' &&
+          (page.operator === code || (!page.operator && page.system.toUpperCase() === code)),
+      )
+      .flatMap((page) =>
+        page.facts
+          .filter((fact) => /^(?:Fleet size|Current fleet|Express fleet size)/i.test(fact.label))
+          .map((fact) => `${fact.label}: ${fact.value}`),
+      )
     return {
       code,
-      name: getOperator(code)?.name ?? code,
+      name: getOperator(code)?.name ?? (system ? getSystem('rail', system).title : code),
       lineCount: lines.length,
-      stationCount: STATIONS.filter((station) => station.operator === code).length,
-      fleetFamilyPages: operatorFleetPages.length,
-      depots: depotPages.filter((page) => getLine(page.line, page.operator || undefined)?.operator === code).length,
+      stationCount: Math.max(contentStations, registryStations),
+      fleetFamilyPages: 0,
+      fleetSize: fleetFacts.join('; ') || 'TBC',
+      depots: pages.filter(
+        (page) => page.type === 'depots' && (page.operator === code || (!page.operator && page.system.toUpperCase() === code)),
+      ).length,
       lines: lines.map((line) => line.name).join(', '),
     }
   })
@@ -224,7 +260,7 @@ export type SystemComparison = {
 export function getSystemComparison(): SystemComparison[] {
   const lines = getLineComparison()
   return getOperatorComparison().map((operator) => {
-    const members = lines.filter((line) => line.line.operator === operator.code)
+    const members = lines.filter((line) => line.operator === operator.code)
     const published = members.map((line) => line.lengthKm).filter((value): value is number => value !== null)
     return {
       code: operator.code,
@@ -239,9 +275,14 @@ export function getSystemComparison(): SystemComparison[] {
 }
 
 export type StationComparison = {
-  station: Station
+  id: string
+  code: string
+  name: string
+  operator: string
+  lineCode: string
   line: Line | undefined
   depth: string
+  elevation: string
   ridership: string
   period: string
   rank: string
@@ -249,22 +290,57 @@ export type StationComparison = {
 }
 
 export function getStationComparison(): StationComparison[] {
-  return STATIONS
+  const pages = getAllPages().filter((page) => page.section === 'rail' && page.type === 'stations')
+  const seen = new Set<string>()
+  const contentRows: StationComparison[] = pages.map((page) => {
+    const code =
+      page.facts.find((fact) =>
+        ['Station code', 'Light rail code', 'TDX station code', 'Station ID'].includes(fact.label),
+      )?.value ?? page.slug
+    const operator = page.operator || page.system.toUpperCase()
+    seen.add(`${operator}:${code}`.toUpperCase())
+    const lineCode = page.line || code.match(/^[A-Za-z]+/)?.[0]?.toUpperCase() || ''
+    const depth = page.facts.find((fact) => /(?:depth|structure|station type)/i.test(fact.label))?.value ?? 'TBC'
+    const elevation = page.specs.find((spec) => /elevation/i.test(spec.label))?.value ?? 'TBC'
+    const ridership = page.facts.find((fact) => /station ridership/i.test(fact.label))?.value ?? 'TBC'
+    return {
+      id: page.href,
+      code,
+      name: page.title,
+      operator,
+      lineCode,
+      line: getLine(lineCode, operator),
+      depth,
+      elevation,
+      ridership,
+      period: '',
+      rank: 'TBC',
+      href: page.href,
+    }
+  })
+  const registryRows = STATIONS
+    .filter((station) => !seen.has(`${station.operator}:${station.code}`.toUpperCase()))
     .map((station) => {
       const ridership = getStationRidership(station)
       return {
-        station,
+        id: `${station.operator}:${station.code}`,
+        code: station.code,
+        name: station.name,
+        operator: station.operator,
+        lineCode: station.line,
         line: getLine(station.line, station.operator),
         depth: station.structure === 'unknown' ? 'TBC' : station.structure,
+        elevation: 'TBC',
         ridership: ridership ? formatRidership(ridership.current.value) : 'TBC',
         period: ridership?.current.period ?? '',
         rank: ridership ? `${ridership.rank}/${ridership.rankTotal}` : 'TBC',
         href: getStationHref(station.code, station.operator),
       }
     })
+  return [...contentRows, ...registryRows]
     .sort((a, b) => {
       const left = a.ridership === 'TBC' ? -1 : Number(a.ridership.replace(/,/g, ''))
       const right = b.ridership === 'TBC' ? -1 : Number(b.ridership.replace(/,/g, ''))
-      return right - left || a.station.code.localeCompare(b.station.code)
+      return right - left || a.code.localeCompare(b.code)
     })
 }
