@@ -36,6 +36,7 @@ import RichText from '@/components/RichText'
 import RouteMap from '@/components/RouteMap'
 import SpecTable from '@/components/SpecTable'
 import TableOfContents from '@/components/TableOfContents'
+import NearStation from '@/components/NearStation'
 import Spine, { type DepotMark } from '@/components/Spine'
 import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
@@ -43,7 +44,7 @@ import EntityIcon, { getEntityIconKind } from '@/components/EntityIcon'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { branchTint, getAccent } from '@/lib/lines'
 import { getLineTrack } from '@/lib/network'
-import { getLineStations, getStationHref, resolveSpine } from '@/lib/stations'
+import { getLineStations, getStation, getStationHref, resolveSpine } from '@/lib/stations'
 import { getPage, getPages, getSection, getSystem, getType, isArticlePage } from '@/lib/content'
 import { getImage } from '@/lib/images'
 import { collapseMajorSections } from '@/lib/collapsible-html'
@@ -141,10 +142,47 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const accent = getAccent(page.line, page.operator)
   const entityKind = getEntityIconKind(section, type)
   const articlePage = isArticlePage(section, type, slug)
+  const stationCodeFact =
+    type === 'stations'
+      ? page.facts.find((fact) =>
+          ['Station code', 'Light rail code', 'TDX station code', 'Station ID'].includes(fact.label),
+        )
+      : undefined
+  const stationCode = stationCodeFact?.value || (type === 'stations' ? page.slug : '')
+  const registeredStation = stationCode ? getStation(stationCode, page.operator) : undefined
+  const nearStationSubject =
+    type === 'stations'
+      ? {
+          code: registeredStation?.code ?? stationCode,
+          operator: registeredStation?.operator ?? page.operator ?? system.toUpperCase(),
+          line:
+            registeredStation?.line ??
+            page.line ??
+            stationCode.match(/^[A-Za-z]+/)?.[0]?.toUpperCase() ??
+            '',
+          interchange: registeredStation?.interchange ?? [],
+          sources: registeredStation?.sources ?? [],
+          research: registeredStation?.research ?? null,
+          exits: registeredStation?.exits ?? null,
+        }
+      : null
+  const interchangeFact =
+    type === 'stations'
+      ? page.facts.find((fact) =>
+          /^(Named transfers|Nearest MRT station|Interchange|Rail interchanges)$/i.test(fact.label),
+        )
+      : undefined
+  const exitFact =
+    type === 'stations'
+      ? page.facts.find((fact) => /^(Exits|Exit count|Street exits|Access)$/i.test(fact.label))
+      : undefined
   const toc = [
     ...page.toc,
     ...(type === 'lines' && (page.line || page.operator === 'THSR')
       ? [{ id: 'ridership', label: 'Ridership', level: 2 as const }]
+      : []),
+    ...(type === 'stations'
+      ? [{ id: 'near-this-station', label: 'Near this station', level: 2 as const }]
       : []),
     ...(!articlePage && page.specs.length
       ? [{ id: 'specifications', label: 'Specifications', level: 2 as const }]
@@ -582,6 +620,15 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             )}
 
             {map}
+
+            {nearStationSubject && (
+              <NearStation
+                station={nearStationSubject}
+                references={page.references}
+                interchangeFact={interchangeFact}
+                exitFact={exitFact}
+              />
+            )}
 
             <SpecTable
               specs={page.specs}

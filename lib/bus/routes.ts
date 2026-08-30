@@ -252,8 +252,14 @@ export function getBusRoutesByRailLine(lineCode: string): BusRoute[] {
   return routesByLine.get(lineCode) ?? []
 }
 
-export function getBusRoutesByRailStation(stationCode: string): BusRoute[] {
-  return routesByStation.get(stationCode) ?? []
+export function getBusRoutesByRailStation(stationCode: string, lineCode?: string): BusRoute[] {
+  const routes = routesByStation.get(stationCode) ?? []
+  if (!lineCode) return routes
+  return routes.filter((route) =>
+    route.railJoins.some(
+      (join) => join.stationCode === stationCode && join.lineCode === lineCode && join.match === 'stop-id',
+    ),
+  )
 }
 
 export function getBusStopSequences(route: string | BusRoute): BusStopSequence[] {

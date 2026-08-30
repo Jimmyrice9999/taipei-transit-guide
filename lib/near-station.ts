@@ -63,7 +63,8 @@ function bikeSystemFor(station: Pick<Station, 'operator' | 'line'>): string[] {
     if (station.line === 'V') return ['New Taipei Danhai LRT']
     if (station.line === 'K') return ['New Taipei Ankeng LRT']
   }
-  return ['Taipei Metro']
+  if (station.operator === 'TRTC') return ['Taipei Metro']
+  return []
 }
 
 export function getNearStationData(station: Pick<Station, 'code' | 'operator' | 'line'>): NearStationData {
@@ -80,7 +81,8 @@ export function getNearStationData(station: Pick<Station, 'code' | 'operator' | 
     .filter((dock): dock is NearBikeDock => dock !== null)
 
   const routes = new Map<string, NearBusRoute>()
-  for (const route of getBusRoutesByRailStation(station.code)) {
+  const busJoinSupported = ['TRTC', 'NTMC', 'TYMC'].includes(station.operator)
+  for (const route of busJoinSupported ? getBusRoutesByRailStation(station.code, station.line) : []) {
     if (!routes.has(route.id)) routes.set(route.id, { route, href: busHref(route) })
   }
 

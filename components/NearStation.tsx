@@ -7,28 +7,37 @@ import { getLinePageHref } from '@/lib/content'
 import { getNearStationData } from '@/lib/near-station'
 import type { NumberedSource } from '@/lib/sources'
 import type { Station } from '@/lib/stations'
+import type { Fact } from '@/lib/content'
+
+type NearStationSubject = Pick<Station, 'code' | 'operator' | 'line'> &
+  Partial<Pick<Station, 'interchange' | 'sources' | 'research' | 'exits'>>
 
 export default function NearStation({
   station,
   references,
+  interchangeFact,
+  exitFact,
 }: {
-  station: Station
+  station: NearStationSubject
   references: NumberedSource[]
+  interchangeFact?: Fact
+  exitFact?: Fact
 }) {
   const near = getNearStationData(station)
-  const interchangeLines = station.interchange
+  const interchangeLines = (station.interchange ?? [])
     .map((code) => ({ code, line: getInterchangeLine(code, station.operator) }))
     .filter((entry): entry is { code: string; line: NonNullable<ReturnType<typeof getInterchangeLine>> } => Boolean(entry.line))
-  const interchangeSource = station.research?.interchange?.source ?? station.sources[0]?.id ?? ''
+  const interchangeSource = station.research?.interchange?.source ?? station.sources?.[0]?.id ?? ''
   const exitSource = station.research?.exitSource ?? station.research?.mapSource ?? ''
 
   return (
     <section className="near-station wide" aria-labelledby="near-this-station">
       <h2 className="section-heading" id="near-this-station">Near this station</h2>
       <p className="section-desc">
-        Nearby connections are committed build-time joins. Bus links use curated exact-stop
-        matches; YouBike links use the nearest-coordinate match within 200 metres, so a dock
-        is nearby rather than an assertion that it sits inside the station.
+        Nearby connections are committed build-time joins. Bus links require a confirmed stop
+        ID on the same line and station record; a matching stop name is never used. YouBike uses
+        a unique nearest-coordinate geometry join within 200 metres. “Near” therefore means no
+        more than 200 metres for docks, while a bus appears only through the confirmed ID join.
       </p>
 
       <div className="near-station-grid">
@@ -89,6 +98,8 @@ export default function NearStation({
                 </li>
               ))}
             </ul>
+          ) : interchangeFact ? (
+            <p><RichText>{interchangeFact.value}</RichText><CiteMark id={interchangeFact.source} references={references} /></p>
           ) : (
             <p className="absent">No published interchange is recorded.</p>
           )}
@@ -97,8 +108,9 @@ export default function NearStation({
         <section className="near-station-card" aria-labelledby="near-exits">
           <h3 id="near-exits">Exits and access</h3>
           <p>
-            {station.exits === null ? 'Street-exit count: TBC.' : `Street exits: ${station.exits}.`}
-            {station.exits !== null && <CiteMark id={exitSource} references={references} />}
+            {exitFact ? <><RichText>{exitFact.value}</RichText><CiteMark id={exitFact.source} references={references} /></> :
+              station.exits == null ? 'Street-exit count: TBC.' : `Street exits: ${station.exits}.`}
+            {!exitFact && station.exits != null && <CiteMark id={exitSource} references={references} />}
           </p>
           {station.research?.exitDetails ? (
             <p><RichText>{station.research.exitDetails}</RichText><CiteMark id={exitSource} references={references} /></p>
