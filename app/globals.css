@@ -3221,6 +3221,20 @@ a.spine-station:focus-visible .spine-name {
   position: relative;
 }
 
+.national-network-small {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .national-network-map {
+    display: none;
+  }
+
+  .national-network-small {
+    display: block;
+  }
+}
+
 /* JavaScript adds the enhanced class after hydration. The static map keeps
    its normal document flow and links when scripts are unavailable. */
 .routemap-interactive.is-enhanced {

@@ -26,15 +26,16 @@ import StationBadge from '@/components/StationBadge'
 import { NEUTRAL_LINE, branchTint } from '@/lib/lines'
 import { getInterchanges, getLineSummaries, getLineTrack } from '@/lib/network'
 import { getStationHref, PROVENANCE } from '@/lib/stations'
+import { getNationalNetworkLayers } from '@/lib/national-network'
 
 export const metadata: Metadata = {
   // Without an explicit canonical this page inherits the root layout's,
   // which declares '/' — telling search engines this page is really the
   // homepage, and that it should not be indexed in its own right.
   alternates: { canonical: '/rail/network/' },
-  title: 'The network',
+  title: 'Taiwan rail network',
   description:
-    'Every Taipei Metro line — official colours, station counts, termini and end-to-end times, drawn from Taiwan MOTC open data.',
+    'A pannable national rail overview and a detailed Taipei-region network map, generated from committed Taiwan MOTC data.',
 }
 
 /** "a, b and c" — written out rather than via Intl, which would make the build
@@ -159,6 +160,9 @@ export default function NetworkPage() {
   )
 
   const totalStations = summaries.reduce((n, s) => n + s.stations.length, 0)
+  const national = getNationalNetworkLayers()
+  const nationalLines = [...mapLines, ...national.lines]
+  const nationalStations = [...mapStations, ...national.stations]
 
   /* Lines the platform carries, and the ones it does not. Both counts are read
      off the registry rather than typed, so the sentence below cannot survive a
@@ -209,6 +213,7 @@ export default function NetworkPage() {
 
       <TableOfContents
         items={[
+          { id: 'national-overview', label: 'National overview', level: 2 },
           { id: 'ridership', label: 'Ridership', level: 2 },
           { id: 'lines', label: 'Lines', level: 2 },
           { id: 'interchanges', label: 'Interchanges', level: 2 },
@@ -216,6 +221,44 @@ export default function NetworkPage() {
       />
 
       <div className="page-body">
+          <h2 className="section-heading" id="national-overview">National overview</h2>
+          <p>
+            This overview combines every committed TDX alignment for TRA, THSR, Kaohsiung
+            Metro and the Taipei-region systems. It is generated during the static build;
+            the browser makes no map or data request. Use the zoom controls, a wheel or a
+            pinch gesture, then drag to pan. Keyboard users can enter the station layer once
+            with Tab, move between stations with the arrow keys, and use Home or End for the
+            first or last station.
+          </p>
+          <p className="note">
+            Official operator colours identify the urban lines and every line also carries a
+            code label, so colour is not the only key. TDX publishes TRA and THSR geometry but
+            no line-colour field; those alignments use neutral ink rather than an invented
+            operator colour. The committed extract has no route geometry or coordinates for
+            Kaohsiung Circular Light Rail or Maokong Gondola, so neither is given a guessed
+            alignment. The Sanying Line remains the explicitly dashed chain of published
+            station points described below.
+          </p>
+          <div className="national-network-map">
+            <RouteMap
+              lines={nationalLines}
+              stations={nationalStations}
+              width={840}
+              labels="none"
+              lineLabels
+              caption="National rail overview generated from committed TDX geometry. Every linked station has an accessible name; arrow keys move through the station layer. Urban lines use published operator colours and line-code labels. TRA and THSR use neutral ink because their TDX geometry has no colour field. Sanying is dashed because only station points, not route geometry, are published in the committed sources."
+            />
+          </div>
+          <div className="national-network-small" aria-label="National map small-screen alternative">
+            <p><strong>Small-screen view.</strong> At 480 pixels and below, the dense island-wide drawing is replaced by this useful system list. The detailed Taipei-region map and its ordinary links remain below.</p>
+            <ul>
+              <li><Link href="/rail/tra/">Taiwan Railways</Link> — 12 committed line geometries and 245 station records</li>
+              <li><Link href="/rail/thsr/">Taiwan High Speed Rail</Link> — one geometry and 12 station records</li>
+              <li><Link href="/rail/krtc/">Kaohsiung Metro and light rail</Link> — Red and Orange line geometry; Circular Light Rail is listed but not guessed</li>
+              <li><Link href="/rail/metro/">Taipei, New Taipei, Taoyuan and Taichung urban rail</Link> — the detailed diagram follows</li>
+              <li><Link href="/rail/cable/">Maokong Gondola</Link> — station pages remain available without an invented alignment</li>
+            </ul>
+          </div>
           {/*
             What is on this map is what TDX publishes, and what is missing is
             worth stating rather than leaving as an apparent oversight.

@@ -35,7 +35,7 @@ const shapes: ShapeRecord[] = [
 /* WKT                                                                 */
 /* ------------------------------------------------------------------ */
 
-function parseWkt(wkt: string): Point[][] {
+export function parseWkt(wkt: string): Point[][] {
   const open = wkt.indexOf('(')
   if (open < 0) return []
 
