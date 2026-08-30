@@ -8,13 +8,25 @@ import { getLineSummaries } from './network'
 export type TimelineEvent = {
   date: string
   year: number
-  stations: Station[]
+  subjects: TimelineSubject[]
   sources: Array<{ title: string; url: string; id: string }>
+}
+
+export type TimelineSubject = {
+  id: string
+  label: string
+  href: string | null
+  code: string
+  line: string
+  operator: string
+  kind: 'Opening' | 'Extension' | 'Station opening' | 'Closure' | 'Reopening'
 }
 
 function parseDate(value: string): number {
   const timestamp = Date.parse(value)
-  return Number.isNaN(timestamp) ? Number.MAX_SAFE_INTEGER : timestamp
+  if (!Number.isNaN(timestamp)) return timestamp
+  const year = Number(value.match(/(?:18|19|20)\d{2}/)?.[0] ?? 0)
+  return year ? Date.UTC(year, 0, 1) : Number.MAX_SAFE_INTEGER
 }
 
 function sourceFor(station: Station) {
@@ -23,31 +35,110 @@ function sourceFor(station: Station) {
   return source ? { title: source.title, url: source.url, id: source.id } : null
 }
 
+function isNetworkDateLabel(label: string): boolean {
+  return (
+    /^(Opened|Opening date|Line opened|First section opened|Public opening|Historical operation start|Passenger service began|Commercial service began|Line-wide opening|Operator-stated opening|Confirmed opening date|Full-line formal operation|Passenger reopening|Reopened|Closed by earthquake)$/i.test(label) ||
+    /^(Operation-start year|Operator-record operation-start year|Construction-history operation start|Full opening date|Full freight service opening date|Greenway opening date|Later operation-start year)/i.test(label) ||
+    /(?:line|section|extension|station|railway|transit center).*(?:opened|opening|closure|closed|reopened|full operation)$/i.test(label) ||
+    /^(Opening \(|Extension opening \(|Red\/Orange Line operation|R24 service opening)/i.test(label)
+  )
+}
+
+function eventKind(label: string, type: string): TimelineSubject['kind'] {
+  if (/reopen/i.test(label)) return 'Reopening'
+  if (/clos/i.test(label)) return 'Closure'
+  if (/extension|section/i.test(label)) return 'Extension'
+  return type === 'stations' ? 'Station opening' : 'Opening'
+}
+
 export function getNetworkOpeningTimeline(): TimelineEvent[] {
-  const grouped = new Map<string, Station[]>()
+  const grouped = new Map<string, { subjects: TimelineSubject[]; sources: TimelineEvent['sources'] }>()
   for (const station of STATIONS) {
     const date = station.research?.openingDate
-    if (!date) continue
-    const stations = grouped.get(date) ?? []
-    stations.push(station)
-    grouped.set(date, stations)
+    const source = sourceFor(station)
+    if (!date || !source) continue
+    const group = grouped.get(date) ?? { subjects: [], sources: [] }
+    group.subjects.push({
+      id: `${station.operator}:${station.code}`,
+      label: `${station.code} ${station.name}`,
+      href: getStationHref(station.code, station.operator),
+      code: station.code,
+      line: station.line,
+      operator: station.operator,
+      kind: 'Station opening',
+    })
+    group.sources.push(source)
+    grouped.set(date, group)
+  }
+
+  for (const page of getAllPages().filter((candidate) => candidate.section === 'rail')) {
+    for (const fact of page.facts.filter((candidate) => isNetworkDateLabel(candidate.label))) {
+      if (!/(?:18|19|20)\d{2}/.test(fact.value) || /TBC/i.test(fact.value)) continue
+      const source = page.sources.find((candidate) => candidate.id === fact.source)
+      if (!source?.url) continue
+      const code =
+        page.facts.find((candidate) =>
+          ['Station code', 'Light rail code', 'TDX station code', 'Station ID'].includes(candidate.label),
+        )?.value ?? page.line
+      const group = grouped.get(fact.value) ?? { subjects: [], sources: [] }
+      group.subjects.push({
+        id: page.href,
+        label: page.title,
+        href: page.href,
+        code,
+        line: page.line,
+        operator: page.operator,
+        kind: eventKind(fact.label, page.type),
+      })
+      group.sources.push({ title: source.title, url: source.url, id: `${page.href}:${source.id}` })
+      grouped.set(fact.value, group)
+    }
   }
 
   return [...grouped.entries()]
     .sort(([a], [b]) => parseDate(a) - parseDate(b) || a.localeCompare(b))
-    .map(([date, stations]) => ({
+    .map(([date, group]) => ({
       date,
       year: Number(date.match(/\d{4}/)?.[0] ?? 0),
-      stations: stations.sort((a, b) => a.sequence - b.sequence || a.code.localeCompare(b.code)),
-      sources: stations
-        .map(sourceFor)
-        .filter((source): source is NonNullable<ReturnType<typeof sourceFor>> => source !== null)
-        .filter((source, index, all) => all.findIndex((candidate) => candidate.id === source.id) === index),
+      subjects: group.subjects
+        .filter((subject, index, all) => all.findIndex((candidate) => candidate.id === subject.id) === index)
+        .sort((a, b) => a.label.localeCompare(b.label)),
+      sources: group.sources.filter(
+        (source, index, all) => all.findIndex((candidate) => candidate.url === source.url) === index,
+      ),
     }))
 }
 
-export function getUndatedOpeningStations(): Station[] {
-  return STATIONS.filter((station) => !station.research?.openingDate)
+export function getUndatedOpeningStations(): TimelineSubject[] {
+  const dated = new Set(getNetworkOpeningTimeline().flatMap((event) => event.subjects.map((subject) => subject.id)))
+  const subjects: TimelineSubject[] = STATIONS.map((station) => ({
+    id: `${station.operator}:${station.code}`,
+    label: `${station.code} ${station.name}`,
+    href: getStationHref(station.code, station.operator),
+    code: station.code,
+    line: station.line,
+    operator: station.operator,
+    kind: 'Station opening',
+  }))
+  for (const page of getAllPages().filter((candidate) => candidate.section === 'rail' && candidate.type === 'stations')) {
+    const code =
+      page.facts.find((candidate) =>
+        ['Station code', 'Light rail code', 'TDX station code', 'Station ID'].includes(candidate.label),
+      )?.value ?? page.slug
+    subjects.push({
+      id: page.href,
+      label: page.title,
+      href: page.href,
+      code,
+      line: page.line,
+      operator: page.operator || page.system.toUpperCase(),
+      kind: 'Station opening',
+    })
+  }
+  return subjects
+    .filter((subject) => !dated.has(subject.id))
+    .filter((subject, index, all) => all.findIndex((candidate) => candidate.href === subject.href) === index)
+    .sort((a, b) => a.operator.localeCompare(b.operator) || a.code.localeCompare(b.code))
 }
 
 export type LineComparison = {
@@ -177,5 +268,3 @@ export function getStationComparison(): StationComparison[] {
       return right - left || a.station.code.localeCompare(b.station.code)
     })
 }
-
-export const NETWORK_TIMELINE_START = 1996

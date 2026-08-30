@@ -6,28 +6,28 @@ import LineBadge from '@/components/LineBadge'
 import PageShell from '@/components/PageShell'
 import TableOfContents from '@/components/TableOfContents'
 import { getLine, NEUTRAL_LINE } from '@/lib/lines'
-import { getNetworkOpeningTimeline, getUndatedOpeningStations, NETWORK_TIMELINE_START } from '@/lib/data-explorer'
-import { getStationHref } from '@/lib/stations'
+import { getNetworkOpeningTimeline, getUndatedOpeningStations } from '@/lib/data-explorer'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/data/network-growth/' },
   title: 'Network growth timeline',
-  description: 'A build-time timeline of Taipei-region station openings with the primary source recorded for every dated event and TBC gaps left visible.',
+  description: 'A build-time national timeline of sourced line openings, extensions, station additions, closures and reopenings, with TBC gaps visible.',
 }
 
-function stationLink(station: { code: string; name: string; operator: string }) {
-  const href = getStationHref(station.code, station.operator)
-  return href ? <Link href={href}>{station.code} {station.name}</Link> : <span>{station.code} {station.name}</span>
+function subjectLink(subject: { label: string; href: string | null }) {
+  return subject.href ? <Link href={subject.href}>{subject.label}</Link> : <span>{subject.label}</span>
 }
 
 export default function NetworkGrowthPage() {
   const events = getNetworkOpeningTimeline()
   const undated = getUndatedOpeningStations()
+  const firstYear = events[0]?.year || 'TBC'
+  const lastYear = events.at(-1)?.year || 'TBC'
   const years = [...new Set(events.map((event) => event.year))]
   const byLine = new Map<string, typeof undated>()
-  for (const station of undated) {
-    const key = `${station.operator}:${station.line}`
-    byLine.set(key, [...(byLine.get(key) ?? []), station])
+  for (const subject of undated) {
+    const key = `${subject.operator}:${subject.line || 'unassigned'}`
+    byLine.set(key, [...(byLine.get(key) ?? []), subject])
   }
 
   return (
@@ -36,7 +36,7 @@ export default function NetworkGrowthPage() {
       <BackLink href="/data/" label="Data" />
       <h1 className="page-title">Network growth timeline</h1>
       <p className="page-summary">
-        {NETWORK_TIMELINE_START} to now: {events.length} dated opening events covering {events.reduce((total, event) => total + event.stations.length, 0)} station records, with {undated.length} records still marked TBC.
+        {firstYear} to {lastYear}: {events.length} sourced dates covering {events.reduce((total, event) => total + event.subjects.length, 0)} openings, extensions, station additions, closures or reopenings, with {undated.length} station dates still marked TBC.
       </p>
 
       <div className="page-body">
@@ -48,28 +48,25 @@ export default function NetworkGrowthPage() {
 
         <h2 className="section-heading" id="method">How to read this</h2>
         <p>
-          This is a station-opening chronology, not a reconstruction of every project
-          announcement. A dated event appears only when the station registry carries an
-          explicit opening date in its primary-source research record. Stations whose
-          operator or government record has been checked for identity but does not carry a
-          date remain in the TBC table; they are not assigned a line-opening date by
-          inference. That distinction matters for extensions opened in phases and for
-          stations whose civil completion preceded passenger service.
+          This chronology is generated from explicit dated facts in the committed station,
+          line and history records. It includes line openings, extensions, station additions,
+          closures and reopenings across every rail system represented by those records. A
+          project announcement, construction date or plausible line-wide date is never
+          substituted for passenger operation.
         </p>
         <p>
-          The first dated record in the current corpus is in 1997, so the requested 1996
-          start is retained as the timeline boundary rather than filled with an invented
-          event. Each dated row links to the station pages and names the opening source
-          read by the research record. A source can support several stations on one line;
-          it is listed once per event, while the station links keep the sequence visible.
+          Every dated row links to the content record and to the fetched source that supports
+          its date. Records without an explicit sourced opening date stay in the TBC table.
+          The layout is a vertical list at every width: at 320 pixels it needs no horizontal
+          scroll affordance and preserves the same reading order as the static HTML.
         </p>
 
         <h2 className="section-heading" id="timeline">Dated openings</h2>
         <ol className="timeline" aria-label="Station opening timeline">
           {events.map((event) => {
-            const lines = [...new Map(event.stations.map((station) => {
-              const line = getLine(station.line, station.operator)
-              return [line?.key ?? `${station.operator}:${station.line}`, line] as const
+            const lines = [...new Map(event.subjects.map((subject) => {
+              const line = getLine(subject.line, subject.operator)
+              return [line?.key ?? `${subject.operator}:${subject.line}`, line] as const
             })).values()].filter((line): line is NonNullable<ReturnType<typeof getLine>> => Boolean(line))
             return (
               <li className="timeline-item" key={event.date}>
@@ -79,9 +76,9 @@ export default function NetworkGrowthPage() {
                     {lines.map((line) => <LineBadge key={line.key} code={line.code} operator={line.operator} />)}
                   </div>
                   <p>
-                    {event.stations.map((station, index) => (
-                      <span key={`${station.operator}:${station.code}`}>
-                        {index > 0 && ', '}{stationLink(station)}
+                    {event.subjects.map((subject, index) => (
+                      <span key={subject.id}>
+                        {index > 0 && '; '}<strong>{subject.kind}:</strong> {subjectLink(subject)}
                       </span>
                     ))}
                   </p>
@@ -111,12 +108,12 @@ export default function NetworkGrowthPage() {
             <caption className="sr-only">Stations without a sourced opening date</caption>
             <thead><tr><th scope="col">Line</th><th scope="col">Station</th><th scope="col">Opening date</th></tr></thead>
             <tbody>
-              {[...byLine.entries()].map(([key, stations]) => {
-                const line = getLine(stations[0]?.line, stations[0]?.operator)
-                return stations.map((station, index) => (
-                  <tr key={`${key}:${station.code}`}>
-                    {index === 0 && <th scope="rowgroup" rowSpan={stations.length}>{line?.name ?? station.line}</th>}
-                    <td>{stationLink(station)}</td>
+              {[...byLine.entries()].map(([key, subjects]) => {
+                const line = getLine(subjects[0]?.line, subjects[0]?.operator)
+                return subjects.map((subject, index) => (
+                  <tr key={`${key}:${subject.id}`}>
+                    {index === 0 && <th scope="rowgroup" rowSpan={subjects.length}>{line?.name ?? [subject.operator, subject.line].filter(Boolean).join(' ')}</th>}
+                    <td>{subjectLink(subject)}</td>
                     <td>TBC</td>
                   </tr>
                 ))
