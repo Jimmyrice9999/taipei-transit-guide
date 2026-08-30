@@ -6490,3 +6490,25 @@ a.badge-link:focus-visible {
     padding-inline: 0.55rem;
   }
 }
+.table-sort {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: inherit;
+  padding: 0.25rem 0;
+  text-align: inherit;
+}
+
+.table-sort:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.table-sort:focus-visible {
+  border-radius: 0.15rem;
+  outline: 3px solid var(--focus, #145da0);
+  outline-offset: 3px;
+}

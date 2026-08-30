@@ -1,4 +1,4 @@
-import { getPages } from './content'
+import { getAllPages, getLinePageHref, getPages } from './content'
 import { getLine, type Line } from './lines'
 import { getOperator } from './operators'
 import { getLineRidership, getStationRidership, formatRidership } from './ridership'
@@ -58,11 +58,16 @@ export type LineComparison = {
   travelTimeMin: number | null
   ridership: string
   ridershipPeriod: string
+  openingYear: string
+  system: string
 }
 
 export function getLineComparison(): LineComparison[] {
+  const pages = getAllPages()
   return getLineSummaries().map((summary) => {
     const ridership = getLineRidership(summary.line.code, summary.line.operator)
+    const page = pages.find((candidate) => candidate.href === getLinePageHref(summary.line.code, summary.line.operator))
+    const opened = page?.facts.find((fact) => /^(?:opened|opening date)$/i.test(fact.label))?.value ?? ''
     return {
       line: summary.line,
       stations: summary.stations.length || summary.published?.stations || 0,
@@ -71,6 +76,8 @@ export function getLineComparison(): LineComparison[] {
       travelTimeMin: summary.travelTimeMin,
       ridership: ridership.current ? formatRidership(ridership.current.value) : 'TBC',
       ridershipPeriod: ridership.current?.period ?? '',
+      openingYear: opened.match(/(?:18|19|20)\d{2}/)?.[0] ?? 'TBC',
+      system: getOperator(summary.line.operator)?.name ?? summary.line.operator,
     }
   })
 }
@@ -81,11 +88,13 @@ export type OperatorComparison = {
   lineCount: number
   stationCount: number
   fleetFamilyPages: number
+  depots: number
   lines: string
 }
 
 export function getOperatorComparison(): OperatorComparison[] {
   const fleetPages = getPages('rail', 'rolling-stock', 'metro').filter((page) => page.line)
+  const depotPages = getPages('rail', 'depots', 'metro')
   const operators = [...new Set(STATIONS.map((station) => station.operator))]
   return operators.map((code) => {
     const lines = [...new Map(
@@ -102,7 +111,38 @@ export function getOperatorComparison(): OperatorComparison[] {
       lineCount: lines.length,
       stationCount: STATIONS.filter((station) => station.operator === code).length,
       fleetFamilyPages: operatorFleetPages.length,
+      depots: depotPages.filter((page) => getLine(page.line, page.operator || undefined)?.operator === code).length,
       lines: lines.map((line) => line.name).join(', '),
+    }
+  })
+}
+
+export type SystemComparison = {
+  code: string
+  name: string
+  publishedLineKm: number | null
+  stations: number
+  annualRidership: string
+}
+
+/**
+ * System rows deliberately do not turn monthly snapshots into annual totals.
+ * The length column is labelled as a sum of published line records because it
+ * is not silently interchangeable with an operator's own network-length KPI.
+ */
+export function getSystemComparison(): SystemComparison[] {
+  const lines = getLineComparison()
+  return getOperatorComparison().map((operator) => {
+    const members = lines.filter((line) => line.line.operator === operator.code)
+    const published = members.map((line) => line.lengthKm).filter((value): value is number => value !== null)
+    return {
+      code: operator.code,
+      name: operator.name,
+      publishedLineKm: published.length === members.length && members.length > 0
+        ? published.reduce((total, value) => total + value, 0)
+        : null,
+      stations: operator.stationCount,
+      annualRidership: 'TBC',
     }
   })
 }
