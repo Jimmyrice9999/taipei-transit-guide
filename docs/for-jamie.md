@@ -1,6 +1,6 @@
 # For Jamie
 
-Run 309 is active on 2 September 2026.
+Run 309 completed on 2 September 2026 and is pushed to `main`.
 
 Part 1: static locale routing is `/en/...` and `/zh-Hant/...`; both locales prerender, have reciprocal hreflang, and use plain-link toggles in the header and rail. Chinese mode displays committed source-language fields and quotations; absent equivalents stay English. Han subsets were regenerated after build with zero mismatches across 5,257 pages.
 
