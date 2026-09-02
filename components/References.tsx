@@ -18,6 +18,8 @@ import type { NumberedSource } from '@/lib/sources'
 export default function References({
   references,
   badges = true,
+  ignoreCodes,
+  stationCodes = true,
 }: {
   references: NumberedSource[]
   /**
@@ -30,6 +32,8 @@ export default function References({
    * components/RichText.
    */
   badges?: boolean
+  ignoreCodes?: ReadonlySet<string>
+  stationCodes?: boolean
 }) {
   if (references.length === 0) return null
 
@@ -60,7 +64,7 @@ export default function References({
             <div className="refs-body">
               <span className="refs-title">
                 <a href={reference.url} rel="nofollow noopener">
-                  <RichText badges={badges}>{reference.title}</RichText>
+                  <RichText badges={badges} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{reference.title}</RichText>
                 </a>
               </span>
 
@@ -82,7 +86,7 @@ export default function References({
                 >
                   {reference.kind}
                 </span>
-                <RichText badges={badges}>{reference.publisher}</RichText>
+                <RichText badges={badges} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{reference.publisher}</RichText>
                 {reference.accessed && <span className="refs-accessed">accessed {reference.accessed}</span>}
                 {/*
                   The live URL leads; the snapshot is the insurance. Labelled
@@ -110,7 +114,7 @@ export default function References({
 
               {reference.note && (
                 <span className="refs-note">
-                  <RichText badges={badges}>{reference.note}</RichText>
+                  <RichText badges={badges} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{reference.note}</RichText>
                 </span>
               )}
             </div>

@@ -96,7 +96,10 @@ const RAIL_MODE_GROUPS: { title: string; systems: string[] }[] = [
   { title: 'Heritage and special railways', systems: ['alishan', 'cable'] },
 ]
 
+let navTree: NavSection[] | null = null
+
 export function getNavTree(): NavSection[] {
+  if (navTree) return navTree
   /*
    * Line pages are ordered by the network's own line order, not by title, so
    * the dropdown reads in the same sequence as the network page and the data
@@ -329,5 +332,6 @@ export function getNavTree(): NavSection[] {
   }
 
   // A section with nothing behind it is dropped from the bar entirely.
-  return sections.filter((section) => section.groups.length > 0)
+  navTree = sections.filter((section) => section.groups.length > 0)
+  return navTree
 }

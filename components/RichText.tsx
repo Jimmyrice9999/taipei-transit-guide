@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import Link from '@/components/LocaleLink'
 import { getLine } from '@/lib/lines'
 import { getStation } from '@/lib/stations'
-import { isPlain, tokenize } from '@/lib/text-tokens'
+import { isPlain, tokenize, type TokenizeOptions } from '@/lib/text-tokens'
 import { getLinkEntities } from '@/lib/content'
 
 /**
@@ -159,6 +159,8 @@ export default function RichText({
   label,
   badges = true,
   operator,
+  ignoreCodes,
+  stationCodes = true,
 }: {
   children: string
   /**
@@ -203,8 +205,12 @@ export default function RichText({
   badges?: boolean
   /** Operator namespace for page fields whose line code is reused by another system. */
   operator?: string
+  /** Code-shaped strings that belong to the page's other numbering scheme. */
+  ignoreCodes?: ReadonlySet<string>
+  /** False for page types such as bus vehicle models. */
+  stationCodes?: boolean
 }) {
-  const tokens = tokenize(children)
+  const tokens = tokenize(children, { ignoreCodes, stationCodes } satisfies TokenizeOptions)
   if (isPlain(tokens))
     return link ? <EntityText label={label}>{children}</EntityText> : <>{children}</>
 

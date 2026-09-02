@@ -53,6 +53,8 @@ import { lineKey, LINES, getLine } from './lines.ts'
 import { STATIONS, getStation, getStationHref } from './stations.ts'
 import { rehypeAutoLink, type LinkEntity } from './markdown-plugins.ts'
 import { DEFAULT_LOCALE, type Locale } from './locale.ts'
+import { readAggregateData } from './aggregate-data.ts'
+import { getStationCodeContext } from './station-code-context.ts'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 
@@ -213,6 +215,8 @@ export type PageMeta = {
   device: string
   /** Everything this page cites, in the order it is numbered on the page. */
   sources: Source[]
+  /** Context-aware station-code exceptions shared by body and frontmatter. */
+  stationCodeContext: { stationCodes: boolean; ignoreCodes: string[] }
   /**
    * Extra strings that should auto-link to this page — Chinese names,
    * abbreviations, alternate spellings. The page title links without being
@@ -558,6 +562,17 @@ export async function getFolderContent(
 
   const relative = `content/${[...parents, slug].join('/')}/_index.md`
   const sources = toSources(parsed.data.sources)
+  const section = parents[0] ?? ''
+  const type = parents[1] ?? ''
+  const system = section === 'rail' && parents.length === 1 ? slug : ''
+  const codeContext = getStationCodeContext(
+    section,
+    type,
+    slug,
+    system,
+    toText(parsed.data.operator).toUpperCase(),
+    toText(parsed.data.line).toUpperCase(),
+  )
   const used = new Set<string>()
   const toc: TocEntry[] = []
 
@@ -571,6 +586,8 @@ export async function getFolderContent(
       file: relative,
       onWarning: reportBadgeWarning,
       operator: toText(parsed.data.operator).toUpperCase() || undefined,
+      stationCodes: codeContext.stationCodes,
+      ignoreCodes: codeContext.ignoreCodes,
     })
     .use(rehypeCitations, {
       sources,
@@ -805,7 +822,21 @@ function readPageMetaAt(
     lead: toLead(data.lead),
     device: toDevice(toText(data.device), file),
     sources: toSources(data.sources),
+    stationCodeContext: { stationCodes: true, ignoreCodes: [] },
     aliases: Array.isArray(data.aliases) ? data.aliases.map(toText).filter(Boolean) : [],
+  }
+
+  const codeContext = getStationCodeContext(
+    section,
+    type,
+    slug,
+    system,
+    meta.operator,
+    meta.line,
+  )
+  meta.stationCodeContext = {
+    stationCodes: codeContext.stationCodes,
+    ignoreCodes: [...codeContext.ignoreCodes],
   }
 
   validateFrontmatter(relative, meta)
@@ -831,8 +862,11 @@ export function getPages(section: string, type: string, system = ''): PageMeta[]
 }
 
 /** Every page on the site. Used to tell Next which pages to generate. */
+let allPages: PageMeta[] | null = null
+
 export function getAllPages(): PageMeta[] {
-  return getSections().flatMap((section) => [
+  if (allPages) return allPages
+  allPages = getSections().flatMap((section) => [
     ...getTypes(section.slug).flatMap((type) => getPages(section.slug, type.slug)),
     ...getSystems(section.slug).flatMap((system) =>
       getTypes(section.slug, system.slug).flatMap((type) =>
@@ -840,6 +874,7 @@ export function getAllPages(): PageMeta[] {
       ),
     ),
   ])
+  return allPages
 }
 
 /**
@@ -957,6 +992,8 @@ export async function getPageFromFile(
       onWarning: reportBadgeWarning,
       linkStations: article,
       operator: meta.operator || undefined,
+      stationCodes: meta.stationCodeContext.stationCodes,
+      ignoreCodes: new Set(meta.stationCodeContext.ignoreCodes),
     })
     // After rehypeRichText: a marker is plain ASCII and survives that pass
     // untouched, but running first would let a `[^br01-thing]` id be eaten by
@@ -1040,7 +1077,7 @@ export async function getPage(
  * may reasonably give the same document different slugs. The URL is the thing
  * that is actually the same document.
  */
-export async function getAllSources(): Promise<
+export async function buildAllSources(): Promise<
   { source: Source; pages: { title: string; href: string }[] }[]
 > {
   const byUrl = new Map<string, { source: Source; pages: { title: string; href: string }[] }>()
@@ -1075,4 +1112,11 @@ export async function getAllSources(): Promise<
     if (a.source.kind !== b.source.kind) return a.source.kind === 'primary' ? -1 : 1
     return a.source.title.localeCompare(b.source.title)
   })
+}
+
+/** Read the one build-time snapshot shared by both locale trees. */
+export async function getAllSources(): Promise<
+  { source: Source; pages: { title: string; href: string }[] }[]
+> {
+  return readAggregateData().sources
 }

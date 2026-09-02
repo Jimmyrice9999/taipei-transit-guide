@@ -19,10 +19,14 @@ export default function SpecTable({
   specs,
   references = [],
   operator,
+  ignoreCodes,
+  stationCodes = true,
 }: {
   specs: Spec[]
   references?: NumberedSource[]
   operator?: string
+  ignoreCodes?: ReadonlySet<string>
+  stationCodes?: boolean
 }) {
   if (specs.length === 0) return null
 
@@ -36,9 +40,9 @@ export default function SpecTable({
           {specs.map((spec) => (
             <tr key={spec.label}>
               <th scope="row">
-                <RichText operator={operator}>{spec.label}</RichText>
+                <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.label}</RichText>
               </th>
-              <td className="specs-value">{spec.value ? <RichText operator={operator}>{spec.value}</RichText> : '—'}</td>
+              <td className="specs-value">{spec.value ? <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.value}</RichText> : '—'}</td>
               <td className="specs-unit">
                 {spec.unit}
                 <CiteMark id={spec.source} references={references} />

@@ -116,7 +116,14 @@ function stationJoinLabel(join: BusRoute['railJoins'][number]) {
   return station ? `${station.code} ${station.name}` : join.stationCode
 }
 
-function RouteFacts({ route, line, references, href }: { route: BusRoute; line: Line; references: NumberedSource[]; href: string }) {
+function RouteFacts({ route, line, references, href, ignoreCodes, stationCodes }: {
+  route: BusRoute
+  line: Line
+  references: NumberedSource[]
+  href: string
+  ignoreCodes: ReadonlySet<string>
+  stationCodes: boolean
+}) {
   const sequences = routeSequences(route)
   const operators = route.operatorIds.map(getBusOperator).filter(Boolean)
   const termini = sequences
@@ -156,7 +163,7 @@ function RouteFacts({ route, line, references, href }: { route: BusRoute; line: 
       label (e.g. "R10 / 紅10"), and that same string is frequently a real,
       unrelated station's code — R10 is Taipei Main Station. See the note on
       FactsPanel's own badges prop. */}
-  return <FactsPanel facts={facts} line={line} title={route.names.en} references={references} href={href} badges={false} />
+  return <FactsPanel facts={facts} line={line} title={route.names.en} references={references} href={href} badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes} />
 }
 
 function OperatorRecords({ route, references }: { route: BusRoute; references: NumberedSource[] }) {
@@ -234,7 +241,12 @@ function StopJoin({ joins, references }: { joins: BusRoute['railJoins']; referen
   )
 }
 
-export function BusStopSequences({ route, references }: { route: BusRoute; references: NumberedSource[] }) {
+export function BusStopSequences({ route, references, ignoreCodes, stationCodes }: {
+  route: BusRoute
+  references: NumberedSource[]
+  ignoreCodes: ReadonlySet<string>
+  stationCodes: boolean
+}) {
   const joinsByStop = stopJoinMap(route)
   const sequences = routeSequences(route)
 
@@ -246,7 +258,7 @@ export function BusStopSequences({ route, references }: { route: BusRoute; refer
         sequences.map((sequence, sequenceIndex) => (
           <details key={sequence.id} open={sequenceIndex === 0} className="bus-sequence">
             <summary>
-              <span className="bus-sequence-label"><RichText>{sequence.names.en || sequence.names.zh_tw || `Direction ${sequence.direction ?? 'TBC'}`}</RichText></span>
+              <span className="bus-sequence-label"><RichText ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{sequence.names.en || sequence.names.zh_tw || `Direction ${sequence.direction ?? 'TBC'}`}</RichText></span>
               <span className="disclosure-caret" aria-hidden="true" />
             </summary>
             <div className="compare-scroll">
@@ -256,7 +268,7 @@ export function BusStopSequences({ route, references }: { route: BusRoute; refer
                   {sequence.stops.map((stop, index) => (
                     <tr key={`${sequence.id}-${stop.stopUid}-${index}`}>
                       <td>{stop.sequence ?? index + 1}</td>
-                      <td><RichText>{stopLabel(stop)}</RichText>{stop.names.zh_tw && <span className="bus-stop-zh" lang="zh-Hant">{stop.names.zh_tw}</span>}</td>
+                      <td><RichText ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{stopLabel(stop)}</RichText>{stop.names.zh_tw && <span className="bus-stop-zh" lang="zh-Hant">{stop.names.zh_tw}</span>}</td>
                       <td className="mono">{stop.stopUid}</td>
                       <td>{stop.boarding ?? 'TBC'}</td>
                       <td><StopJoin joins={joinsByStop.get(stop.stopUid) ?? []} references={references} /></td>
@@ -272,14 +284,23 @@ export function BusStopSequences({ route, references }: { route: BusRoute; refer
   )
 }
 
-export default function BusRouteData({ route, line, references, href, contents }: { route: BusRoute; line: Line; references: NumberedSource[]; href: string; contents?: ReactNode }) {
+export default function BusRouteData({ route, line, references, href, contents, ignoreCodes, stationCodes = true }: {
+  route: BusRoute
+  line: Line
+  references: NumberedSource[]
+  href: string
+  contents?: ReactNode
+  ignoreCodes?: ReadonlySet<string>
+  stationCodes?: boolean
+}) {
+  const codes = ignoreCodes ?? new Set<string>()
   return (
     <>
-      <RouteFacts route={route} line={line} references={references} href={href} />
+      <RouteFacts route={route} line={line} references={references} href={href} ignoreCodes={codes} stationCodes={stationCodes} />
       <OperatorRecords route={route} references={references} />
       {contents}
       <BusRouteMap route={route} references={references} />
-      <BusStopSequences route={route} references={references} />
+      <BusStopSequences route={route} references={references} ignoreCodes={codes} stationCodes={stationCodes} />
     </>
   )
 }

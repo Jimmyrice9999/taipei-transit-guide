@@ -1,9 +1,10 @@
-import { getAllPages, getLinePageHref, getSystem } from './content'
-import { getLine, type Line } from './lines'
-import { getOperator } from './operators'
-import { getLineRidership, getStationRidership, formatRidership } from './ridership'
-import { getStationHref, STATIONS, type Station } from './stations'
-import { getLineSummaries } from './network'
+import { getAllPages, getLinePageHref, getSystem } from './content.ts'
+import { getLine, type Line } from './lines.ts'
+import { getOperator } from './operators.ts'
+import { getLineRidership, getStationRidership, formatRidership } from './ridership.ts'
+import { getStationHref, STATIONS, type Station } from './stations.ts'
+import { getLineSummaries } from './network.ts'
+import { readAggregateData } from './aggregate-data.ts'
 
 export type TimelineEvent = {
   date: string
@@ -51,7 +52,7 @@ function eventKind(label: string, type: string): TimelineSubject['kind'] {
   return type === 'stations' ? 'Station opening' : 'Opening'
 }
 
-export function getNetworkOpeningTimeline(): TimelineEvent[] {
+export function buildNetworkOpeningTimeline(): TimelineEvent[] {
   const grouped = new Map<string, { subjects: TimelineSubject[]; sources: TimelineEvent['sources'] }>()
   for (const station of STATIONS) {
     const date = station.research?.openingDate
@@ -109,8 +110,10 @@ export function getNetworkOpeningTimeline(): TimelineEvent[] {
     }))
 }
 
-export function getUndatedOpeningStations(): TimelineSubject[] {
-  const dated = new Set(getNetworkOpeningTimeline().flatMap((event) => event.subjects.map((subject) => subject.id)))
+export function buildUndatedOpeningStations(
+  datedEvents = buildNetworkOpeningTimeline(),
+): TimelineSubject[] {
+  const dated = new Set(datedEvents.flatMap((event) => event.subjects.map((subject) => subject.id)))
   const subjects: TimelineSubject[] = STATIONS.map((station) => ({
     id: `${station.operator}:${station.code}`,
     label: `${station.code} ${station.name}`,
@@ -141,6 +144,16 @@ export function getUndatedOpeningStations(): TimelineSubject[] {
     .sort((a, b) => a.operator.localeCompare(b.operator) || a.code.localeCompare(b.code))
 }
 
+/** Locale-independent timeline snapshot generated once before Next. */
+export function getNetworkOpeningTimeline(): TimelineEvent[] {
+  return readAggregateData().networkGrowth.events
+}
+
+/** Locale-independent undated-stations snapshot generated once before Next. */
+export function getUndatedOpeningStations(): TimelineSubject[] {
+  return readAggregateData().networkGrowth.undated
+}
+
 export type LineComparison = {
   id: string
   code: string
@@ -158,7 +171,7 @@ export type LineComparison = {
   system: string
 }
 
-export function getLineComparison(): LineComparison[] {
+export function buildLineComparison(): LineComparison[] {
   const pages = getAllPages()
   const summaries = getLineSummaries()
   return pages.filter((page) => page.section === 'rail' && page.type === 'lines').map((page) => {
@@ -196,6 +209,10 @@ export function getLineComparison(): LineComparison[] {
   }).sort((a, b) => a.system.localeCompare(b.system) || a.name.localeCompare(b.name))
 }
 
+export function getLineComparison(): LineComparison[] {
+  return readAggregateData().comparisons.lines
+}
+
 export type OperatorComparison = {
   code: string
   name: string
@@ -207,9 +224,8 @@ export type OperatorComparison = {
   lines: string
 }
 
-export function getOperatorComparison(): OperatorComparison[] {
+export function buildOperatorComparison(lineRows = buildLineComparison()): OperatorComparison[] {
   const pages = getAllPages().filter((page) => page.section === 'rail')
-  const lineRows = getLineComparison()
   const operators = [...new Set(lineRows.map((row) => row.operator))]
   return operators.map((code) => {
     const lines = lineRows.filter((row) => row.operator === code)
@@ -244,6 +260,10 @@ export function getOperatorComparison(): OperatorComparison[] {
   })
 }
 
+export function getOperatorComparison(): OperatorComparison[] {
+  return readAggregateData().comparisons.operators
+}
+
 export type SystemComparison = {
   code: string
   name: string
@@ -257,9 +277,11 @@ export type SystemComparison = {
  * The length column is labelled as a sum of published line records because it
  * is not silently interchangeable with an operator's own network-length KPI.
  */
-export function getSystemComparison(): SystemComparison[] {
-  const lines = getLineComparison()
-  return getOperatorComparison().map((operator) => {
+export function buildSystemComparison(
+  lines = buildLineComparison(),
+  operators = buildOperatorComparison(lines),
+): SystemComparison[] {
+  return operators.map((operator) => {
     const members = lines.filter((line) => line.operator === operator.code)
     const published = members.map((line) => line.lengthKm).filter((value): value is number => value !== null)
     return {
@@ -272,6 +294,10 @@ export function getSystemComparison(): SystemComparison[] {
       annualRidership: 'TBC',
     }
   })
+}
+
+export function getSystemComparison(): SystemComparison[] {
+  return readAggregateData().comparisons.systems
 }
 
 export type StationComparison = {
@@ -289,7 +315,7 @@ export type StationComparison = {
   href: string | null
 }
 
-export function getStationComparison(): StationComparison[] {
+export function buildStationComparison(): StationComparison[] {
   const pages = getAllPages().filter((page) => page.section === 'rail' && page.type === 'stations')
   const seen = new Set<string>()
   const contentRows: StationComparison[] = pages.map((page) => {
@@ -343,4 +369,8 @@ export function getStationComparison(): StationComparison[] {
       const right = b.ridership === 'TBC' ? -1 : Number(b.ridership.replace(/,/g, ''))
       return right - left || a.code.localeCompare(b.code)
     })
+}
+
+export function getStationComparison(): StationComparison[] {
+  return readAggregateData().comparisons.stations
 }

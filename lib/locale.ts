@@ -24,6 +24,7 @@ export function localizedPath(locale: Locale, pathname: string): string {
 
 /** Add canonical and hreflang URLs while retaining the page's other metadata. */
 import type { Metadata } from 'next'
+import { SITE_URL } from './site.ts'
 
 export function withLocaleMetadata(
   locale: Locale,
@@ -38,6 +39,7 @@ export function withLocaleMetadata(
         : '/'
   return {
     ...metadata,
+    metadataBase: metadata.metadataBase ?? new URL(SITE_URL),
     alternates: {
       ...metadata.alternates,
       canonical: localizedPath(locale, canonicalPath),
@@ -47,13 +49,9 @@ export function withLocaleMetadata(
         'zh-Hant': localizedPath('zh-Hant', canonicalPath),
       },
     },
-    ...(metadata.openGraph
-      ? {
-          openGraph: {
-            ...metadata.openGraph,
-            url: localizedPath(locale, canonicalPath),
-          },
-        }
-      : {}),
+    openGraph: {
+      ...metadata.openGraph,
+      url: localizedPath(locale, canonicalPath),
+    },
   } as Metadata
 }

@@ -1,8 +1,8 @@
-import trtcDocument from '@/data/ridership/trtc-station.json'
-import trtcCrossSystemDocument from '@/data/ridership/trtc-cross-system.json'
-import tymcDocument from '@/data/ridership/tymc-station.json'
-import ntmcDocument from '@/data/ridership/ntmc-system.json'
-import type { Station } from '@/lib/stations'
+import trtcDocument from '../data/ridership/trtc-station.json' with { type: 'json' }
+import trtcCrossSystemDocument from '../data/ridership/trtc-cross-system.json' with { type: 'json' }
+import tymcDocument from '../data/ridership/tymc-station.json' with { type: 'json' }
+import ntmcDocument from '../data/ridership/ntmc-system.json' with { type: 'json' }
+import type { Station } from './stations.ts'
 
 export type RidershipPoint = {
   period: string

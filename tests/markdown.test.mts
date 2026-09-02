@@ -16,6 +16,8 @@ import { tokenize, isPlain, STATION_CODE_PATTERN } from '../lib/text-tokens.ts'
 import { getStation } from '../lib/stations.ts'
 import { getAllPages, getFolderContent, getPage, getSections, getTypes } from '../lib/content.ts'
 import { getLine } from '../lib/lines.ts'
+import { getBusRoutes } from '../lib/bus/routes.ts'
+import { getStationCodeContext } from '../lib/station-code-context.ts'
 
 const CONTENT = path.join(process.cwd(), 'content')
 
@@ -93,6 +95,23 @@ test('the station code pattern is anchored to whole words', () => {
   STATION_CODE_PATTERN.lastIndex = 0
   assert.equal(codesIn('XBR01').length, 0, 'matched inside a longer word')
   assert.equal(codesIn('BR012345').length, 0, 'matched a longer number')
+})
+
+test('bus route context leaves its own route number as prose', () => {
+  const route = getBusRoutes().find((candidate) => candidate.names.en === 'BL25')
+  assert.ok(route, 'BL25 route is not in the committed bus registry')
+  const context = getStationCodeContext('bus', 'routes', `colour-blue/${route.canonicalSlug}`)
+  const codes = tokenize(`BL25 and BL21`, context).filter((token) => token.kind === 'code').map((token) => token.value)
+  assert.deepEqual(codes, ['BL21'])
+})
+
+test('bus model context does not classify vehicle identifiers as rail stations', () => {
+  const context = getStationCodeContext('bus', 'models', 'imported-diesel-chassis')
+  assert.equal(context.stationCodes, false)
+  assert.deepEqual(
+    tokenize('K1 K6 A05C A09C', context).filter((token) => token.kind === 'code'),
+    [],
+  )
 })
 
 /* ---- rendered HTML ------------------------------------------------ */

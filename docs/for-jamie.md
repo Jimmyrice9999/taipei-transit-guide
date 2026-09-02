@@ -1,6 +1,10 @@
 # For Jamie
 
-Run 309 completed on 2 September 2026 and is pushed to `main`.
+Run 309 completed on 2 September 2026 and is pushed to `main`; Run 310 is in progress.
+
+Run 310 precomputes locale-neutral aggregate data once for both locales, fixes context-aware station-code tokenisation, and sets the deployed metadata origin. The fresh export produced 6,002 routes in 352 seconds with no static-generation timeout, retry, or metadataBase warning.
+
+The bounded harness regression sample passed with 143 tests, including route/model-code cases. Do not rerun the stopped full browser confirmation sweep; its measured memory evidence is recorded in the run log.
 
 Part 1: static locale routing is `/en/...` and `/zh-Hant/...`; both locales prerender, have reciprocal hreflang, and use plain-link toggles in the header and rail. Chinese mode displays committed source-language fields and quotations; absent equivalents stay English. Han subsets were regenerated after build with zero mismatches across 5,257 pages.
 

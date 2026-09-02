@@ -7,7 +7,7 @@
 
 import { CATALOGUED_LINES, getStation, getStationHref } from './stations.ts'
 import { getLine } from './lines.ts'
-import { isPlain, tokenize } from './text-tokens.ts'
+import { isPlain, tokenize, type TokenizeOptions } from './text-tokens.ts'
 import { CITE_MARKER_PATTERN, type Source } from './sources.ts'
 import { getImage } from './images.ts'
 import { localizedPath, type Locale } from './locale.ts'
@@ -113,10 +113,14 @@ export function rehypeRichText({
   onWarning,
   linkStations = false,
   operator,
+  ignoreCodes,
+  stationCodes = true,
 }: {
   file: string
   onWarning: (warning: BadgeWarning) => void
   operator?: string
+  ignoreCodes?: ReadonlySet<string>
+  stationCodes?: boolean
   /**
    * Render each station badge as a link to its station page. On by default
    * nowhere: line pages already link every station from the strip map, and a
@@ -128,7 +132,7 @@ export function rehypeRichText({
 }) {
   return (tree: Node) => {
     transformText(tree, (value, { inAnchor }) => {
-      const tokens = tokenize(value)
+      const tokens = tokenize(value, { ignoreCodes, stationCodes } satisfies TokenizeOptions)
       if (isPlain(tokens)) return null
 
       const out: Node[] = []

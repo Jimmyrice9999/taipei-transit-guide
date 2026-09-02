@@ -26811,3 +26811,29 @@ DORTS 技術彙刊, 公報, 監察院, 審計部, 交通部, 運研所, 交通�
 and Japanese-era records. No route-, model-, station- or TYMC-specific
 source-backed material was found beyond the committed data, so the pages stay
 short and TBC rather than receiving general background or unsourced claims.
+
+## Run 310 - locale-neutral build aggregates and badge context (2026-09-02)
+
+The failing build was fixed by running `npm run aggregates` once before
+`next build` and committing its deterministic `data/generated/aggregate-data.json`
+snapshot. The locale pages now read the snapshot for sources, timeline and
+comparison tables; the expensive corpus walks remain available only to the
+pre-build generator. The first clean export generated 6,002 routes in 352
+seconds, including both locales and the formerly timing-out aggregate pages.
+It completed with no static-generation timeout or retry, no badge warnings, and
+5,257 post-build Han-subset checks with zero missing glyphs. No timeout increase
+was used.
+
+The lifecycle measurements from Run 309 remain the before/after evidence:
+the previous 100-page-chunk run reached a 6.99 MiB minimum free memory, while
+the 25-page-chunk/browser-restart run held 8.02-8.96 GiB at checkpoints through
+page 2,250 and 7.16/6.66 GiB at later checkpoints through page 4,048. The
+smaller chunks cost no runtime: reflow fell from 206m33s to 182m41s, a
+23m52s saving. The stopped confirmation sweep was not rerun.
+
+Station-code parsing now receives page context: bus-only identities are plain
+text in non-rail prose, a bus route's own code is ignored even when it collides
+with a registered rail code, and bus model pages disable station parsing. The
+default share-image route now lives under each locale root, and Pages passes
+`NEXT_PUBLIC_SITE_URL=https://jimmyrice9999.github.io`; generated HTML has no
+localhost URLs and uses the deployed origin for canonical and social URLs.

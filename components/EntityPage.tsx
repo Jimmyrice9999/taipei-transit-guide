@@ -142,6 +142,10 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   const locale = isLocale(currentLocale) ? currentLocale : 'en'
   const page = await getPage(section, type, slug, system, locale).catch(() => null)
   if (!page) notFound()
+  const codeContext = {
+    ignoreCodes: new Set(page.stationCodeContext.ignoreCodes),
+    stationCodes: page.stationCodeContext.stationCodes,
+  }
   const typeMeta = getType(section, type, system)
   const systemMeta = system ? getSystem(section, system) : null
   const accent = getAccent(page.line, page.operator)
@@ -269,12 +273,12 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             <h1 className="page-title article-title page-title-with-icon">
               {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
               <span className="page-title-text">
-                <RichText operator={page.operator || undefined}>{page.title}</RichText>
+                <RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>
               </span>
             </h1>
             {page.summary && (
               <p className="article-standfirst">
-                <RichText operator={page.operator || undefined}>{page.summary}</RichText>
+                <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText>
               </p>
             )}
           </header>
@@ -288,6 +292,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             references={page.references}
             href={page.href}
             operator={page.operator || undefined}
+            {...codeContext}
           />
 
           <TableOfContents items={toc} />
@@ -297,7 +302,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             dangerouslySetInnerHTML={{ __html: collapseMajorSections(body) }}
           />
 
-          <References references={page.references} />
+          <References references={page.references} {...codeContext} />
 
           {page.updated && <p className="page-updated">Last updated: {page.updated}</p>}
         </article>
@@ -510,12 +515,12 @@ export default async function EntityPage({ section, system = '', type, slug }: E
         <h1 className="page-title page-title-with-icon">
           {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
           <span className="page-title-text">
-            <RichText operator={page.operator || undefined}>{page.title}</RichText>
+            <RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>
           </span>
         </h1>
         {page.summary && (
           <p className="page-summary">
-            <RichText operator={page.operator || undefined}>{page.summary}</RichText>
+            <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText>
           </p>
         )}
 
@@ -559,6 +564,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               references={page.references}
               href={page.href}
               operator={page.operator || undefined}
+              {...codeContext}
             />
 
             {page.hero && !heroImage && (
@@ -641,12 +647,13 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               specs={page.specs}
               references={page.references}
               operator={page.operator || undefined}
+              {...codeContext}
             />
 
             {/* Last on the page, after the specs, because a reference list is
                 what you check a figure against — it should sit below every
                 figure it answers for, not above half of them. */}
-            <References references={page.references} />
+            <References references={page.references} {...codeContext} />
 
             {page.updated && <p className="page-updated">Last updated: {page.updated}</p>}
           </div>

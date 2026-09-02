@@ -43,6 +43,13 @@ export type Token =
   | { kind: 'han'; value: string }
   | { kind: 'code'; value: string; line: string }
 
+export type TokenizeOptions = {
+  /** Code bases that are known not to be station identifiers in this context. */
+  ignoreCodes?: ReadonlySet<string>
+  /** False for a page type whose ASCII codes use a wholly different scheme. */
+  stationCodes?: boolean
+}
+
 function splitHan(value: string): Token[] {
   const out: Token[] = []
   let last = 0
@@ -60,16 +67,28 @@ function splitHan(value: string): Token[] {
 }
 
 /** Station codes are ASCII and Han is not, so the two passes never overlap. */
-export function tokenize(value: string): Token[] {
+export function tokenize(value: string, options: TokenizeOptions = {}): Token[] {
+  if (options.stationCodes === false) return splitHan(value)
+
   const out: Token[] = []
   let last = 0
   let match: RegExpExecArray | null
+  const ignored = options.ignoreCodes
   STATION_CODE_PATTERN.lastIndex = 0
 
   while ((match = STATION_CODE_PATTERN.exec(value)) !== null) {
     if (match.index > last) out.push(...splitHan(value.slice(last, match.index)))
 
     const [full, line, digits, suffix] = match
+
+    if (
+      ignored?.has(full.toUpperCase()) ||
+      (suffix && ignored?.has((line + digits).toUpperCase()))
+    ) {
+      out.push({ kind: 'text', value: full })
+      last = match.index + full.length
+      continue
+    }
 
     /*
      * A trailing letter is only part of the code when it makes a real station.

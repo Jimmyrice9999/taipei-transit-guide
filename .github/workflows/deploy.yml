@@ -170,6 +170,7 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_SITE_URL: https://jimmyrice9999.github.io
 
       # Re-check links against the deployment build specifically. A base-path
       # bug cannot show up in the root-path build the tests use, and it is
@@ -178,6 +179,7 @@ jobs:
         run: npm run check
         env:
           NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+          NEXT_PUBLIC_SITE_URL: https://jimmyrice9999.github.io
 
       - uses: actions/configure-pages@v6
 

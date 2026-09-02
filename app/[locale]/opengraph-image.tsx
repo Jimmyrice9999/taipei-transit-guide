@@ -1,16 +1,19 @@
-/** The default share image, used by any page that does not generate its own. */
+/** The default share image for pages in one locale. */
 
 import { ImageResponse } from 'next/og'
 import { OG_CONTENT_TYPE, OG_SIZE, OgContentCard, ogFonts } from '@/lib/og'
 import { SITE_DESCRIPTION } from '@/lib/site'
+import { LOCALES } from '@/lib/locale'
 
-// A static export has to be told these routes are build-time only; without it
-// the export step refuses to emit them at all.
-export const dynamic = "force-static"
+export const dynamic = 'force-static'
 
 export const size = OG_SIZE
 export const contentType = OG_CONTENT_TYPE
 export const alt = 'Taiwan Transit Guide'
+
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }))
+}
 
 export default function Image() {
   return new ImageResponse(

@@ -80,6 +80,8 @@ export default async function BusRoutePage({ params }: Props) {
   const lineOperator = getGroupLineOperator(group as BusRouteGroup)
   const accent = getAccent(lineCode, lineOperator)
   const routeTitle = `${route.names.en} / ${route.names.zh_tw}`
+  const ignoreCodes = new Set(page.stationCodeContext.ignoreCodes)
+  const stationCodes = page.stationCodeContext.stationCodes
   const toc = [
     { id: 'stop-sequence', label: 'Stop sequence', level: 2 as const },
     ...page.toc,
@@ -101,8 +103,8 @@ export default async function BusRoutePage({ params }: Props) {
       <article>
         {/* badges={false}: a bus route number that looks like a station code is
             not one — see the note on `badges` in components/RichText. */}
-        <h1 className="page-title"><RichText badges={false}>{page.title}</RichText></h1>
-        {page.summary && <p className="page-summary"><RichText badges={false}>{page.summary}</RichText></p>}
+        <h1 className="page-title"><RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.title}</RichText></h1>
+        {page.summary && <p className="page-summary"><RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.summary}</RichText></p>}
         <div className="page-grid no-spine">
           <div className="page-main">
             <BusRouteData
@@ -110,14 +112,16 @@ export default async function BusRoutePage({ params }: Props) {
               line={accent}
               references={page.references}
               href={page.href}
+              ignoreCodes={ignoreCodes}
+              stationCodes={stationCodes}
               contents={<TableOfContents items={toc} />}
             />
             <div className="prose" dangerouslySetInnerHTML={{ __html: page.html }} />
-            <SpecTable specs={page.specs} references={page.references} />
+            <SpecTable specs={page.specs} references={page.references} ignoreCodes={ignoreCodes} stationCodes={stationCodes} />
             {/* badges={false}: see the note on References' own badges prop —
                 a route's colour+number label is frequently a different,
                 unrelated real station's code. */}
-            <References references={page.references} badges={false} />
+            <References references={page.references} badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes} />
             {page.updated && <p className="page-updated">Last updated: {page.updated}</p>}
           </div>
         </div>
