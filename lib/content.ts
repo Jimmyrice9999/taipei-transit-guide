@@ -39,6 +39,7 @@ import {
   rehypeCitations,
   rehypeCollectHeadings,
   rehypeFigures,
+  rehypeLocaleLinks,
   rehypeRichText,
   rehypeSafeLinks,
   rehypeSectionStations,
@@ -51,6 +52,7 @@ import { getImageSize } from './image-size.ts'
 import { lineKey, LINES, getLine } from './lines.ts'
 import { STATIONS, getStation, getStationHref } from './stations.ts'
 import { rehypeAutoLink, type LinkEntity } from './markdown-plugins.ts'
+import { DEFAULT_LOCALE, type Locale } from './locale.ts'
 
 const CONTENT_DIR = path.join(process.cwd(), 'content')
 
@@ -546,6 +548,7 @@ function readFolder(parents: string[], slug: string): Folder {
 export async function getFolderContent(
   parents: string[],
   slug: string,
+  locale: Locale = DEFAULT_LOCALE,
 ): Promise<{ html: string; references: NumberedSource[]; toc: TocEntry[] }> {
   const indexPath = path.join(CONTENT_DIR, ...parents, slug, '_index.md')
   if (!fs.existsSync(indexPath)) return { html: '', references: [], toc: [] }
@@ -579,6 +582,7 @@ export async function getFolderContent(
     .use(rehypeSafeLinks, {
       onWarning: (message: string) => console.warn(`  ⚠ ${relative}: ${message}`),
     })
+    .use(rehypeLocaleLinks, locale)
     .use(rehypeBasePath, BASE_PATH)
     .use(rehypeStringify)
     .process(parsed.content)
@@ -586,8 +590,12 @@ export async function getFolderContent(
   return { html: String(html), references: numberSources(sources, used), toc }
 }
 
-export async function getFolderBody(parents: string[], slug: string): Promise<string> {
-  return (await getFolderContent(parents, slug)).html
+export async function getFolderBody(
+  parents: string[],
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE,
+): Promise<string> {
+  return (await getFolderContent(parents, slug, locale)).html
 }
 
 function listFolders(parents: string[]): Folder[] {
@@ -913,6 +921,7 @@ export async function getPageFromFile(
     system?: string
     href?: string
     relative?: string
+    locale?: Locale
   },
 ): Promise<Page> {
   const { section, type, slug } = options
@@ -978,6 +987,7 @@ export async function getPageFromFile(
     .use(rehypeSafeLinks, {
       onWarning: (message: string) => console.warn(`  ⚠ ${relative}: ${message}`),
     })
+    .use(rehypeLocaleLinks, options.locale ?? DEFAULT_LOCALE)
     .use(rehypeBasePath, BASE_PATH) // fix internal links for subpath hosting
     .use(rehypeStringify) // HTML tree -> HTML string
     .process(content)
@@ -1008,6 +1018,7 @@ export async function getPage(
   type: string,
   slug: string,
   system = '',
+  locale: Locale = DEFAULT_LOCALE,
 ): Promise<Page> {
   const parts = system ? [section, system, type, slug] : [section, type, slug]
   const file = path.join(CONTENT_DIR, ...parts.slice(0, -1), `${slug}.md`)
@@ -1018,6 +1029,7 @@ export async function getPage(
     system,
     href: `/${parts.join('/')}/`,
     relative: `content/${parts.join('/')}.md`,
+    locale,
   })
 }
 

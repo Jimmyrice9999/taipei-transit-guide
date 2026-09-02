@@ -15,8 +15,9 @@
 import type { MetadataRoute } from 'next'
 import { getAllPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getLineStations, LINES_WITH_STATION_PAGES, PROVENANCE } from '@/lib/stations'
-import { absoluteUrl } from '@/lib/site'
+import { absoluteUrl, SITE_URL } from '@/lib/site'
 import { REGIONS } from '@/lib/regions'
+import { LOCALES, localizedPath } from '@/lib/locale'
 
 export const dynamic = 'force-static'
 
@@ -207,5 +208,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return entries
+  // Both locales are explicit prefixes. This keeps a logical page from being
+  // reachable at two URLs inside one locale and makes hreflang counterparts
+  // mechanically predictable.
+  return LOCALES.flatMap((locale) =>
+    entries.map((entry) => ({
+      ...entry,
+      url: absoluteUrl(localizedPath(locale, entry.url.slice(SITE_URL.length) || '/')),
+    })),
+  )
 }

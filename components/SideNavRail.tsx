@@ -25,10 +25,11 @@
  * section" link styling uses.
  */
 
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { usePathname } from 'next/navigation'
 import type { NavSection } from '@/lib/nav'
 import { NavGroupView, isInSection } from './SiteNav'
+import LanguageToggle from './LanguageToggle'
 
 export default function SideNavRail({
   sections,
@@ -41,6 +42,7 @@ export default function SideNavRail({
 
   return (
     <nav className="side-nav-rail" aria-label="Sections, wide layout">
+      <LanguageToggle placement="rail" />
       <ul className="side-nav-list">
         {sections.map((section) => {
           const current = isInSection(pathname, section.href)

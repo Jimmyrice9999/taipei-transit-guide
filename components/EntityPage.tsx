@@ -16,7 +16,7 @@
  * guaranteed the two drifted apart, which is precisely the failure this
  * project keeps finding in itself.
  */
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Breadcrumbs from '@/components/Breadcrumbs'
@@ -50,6 +50,8 @@ import { getImage } from '@/lib/images'
 import { collapseMajorSections } from '@/lib/collapsible-html'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
+import { isLocale, withLocaleMetadata } from '@/lib/locale'
+import { locale as rootLocale } from 'next/root-params'
 
 
 /** Which entity to render. `system` is '' for a section that has no systems. */
@@ -102,7 +104,8 @@ export async function entityMetadata({
   let description = parts.join(' ').replace(/\s+/g, ' ').trim()
   if (description.length > 300) description = description.slice(0, 297).trimEnd() + '…'
 
-  return {
+  const currentLocale = await rootLocale()
+  return withLocaleMetadata(isLocale(currentLocale) ? currentLocale : 'en', {
     title: page.title,
     description: description || undefined,
     alternates: { canonical: page.href },
@@ -121,7 +124,7 @@ export async function entityMetadata({
       title: page.title,
       description: description || undefined,
     },
-  }
+  })
 }
 
 /**
@@ -135,7 +138,9 @@ function depotMarks(section: string, system: string, lineCode: string): DepotMar
 }
 
 export default async function EntityPage({ section, system = '', type, slug }: EntityRef) {
-  const page = await getPage(section, type, slug, system).catch(() => null)
+  const currentLocale = await rootLocale()
+  const locale = isLocale(currentLocale) ? currentLocale : 'en'
+  const page = await getPage(section, type, slug, system, locale).catch(() => null)
   if (!page) notFound()
   const typeMeta = getType(section, type, system)
   const systemMeta = system ? getSystem(section, system) : null
@@ -228,6 +233,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               description: page.summary,
               path: page.href,
               updated: page.updated || undefined,
+              locale,
             }),
             breadcrumbSchema([
               { name: 'Home', path: '/' },
@@ -235,7 +241,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
               ...(systemMeta ? [{ name: systemMeta.title, path: systemMeta.href }] : []),
               { name: typeMeta.title, path: typeMeta.href },
               { name: page.title, path: page.href },
-            ]),
+            ], locale),
           ]}
         />
 
@@ -459,6 +465,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             description: page.summary,
             path: page.href,
             updated: page.updated || undefined,
+            locale,
           }),
           breadcrumbSchema([
             { name: 'Home', path: '/' },
@@ -466,7 +473,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             ...(systemMeta ? [{ name: systemMeta.title, path: systemMeta.href }] : []),
             { name: typeMeta.title, path: typeMeta.href },
             { name: page.title, path: page.href },
-          ]),
+          ], locale),
         ]}
       />
 

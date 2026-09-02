@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import CiteMark from './CiteMark'
 import FactsPanel from './FactsPanel'
 import RouteMap, { type MapStation } from './RouteMap'

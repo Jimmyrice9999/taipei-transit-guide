@@ -1,5 +1,6 @@
 import { makeProjection, metres, type Point } from '@/lib/geometry'
 import MapInteraction from './MapInteraction'
+import LocaleSvgLink from './LocaleSvgLink'
 
 /**
  * A geographic map of one or more lines, drawn from MOTC route geometry.
@@ -358,7 +359,7 @@ export default function RouteMap({
             }
 
             return (
-              <a
+              <LocaleSvgLink
                 key={station.id ?? station.code}
                 href={station.href}
                 className="routemap-station is-link"
@@ -369,7 +370,7 @@ export default function RouteMap({
                 data-current={station.highlighted ? '' : undefined}
               >
                 {dot}
-              </a>
+              </LocaleSvgLink>
             )
           })}
 

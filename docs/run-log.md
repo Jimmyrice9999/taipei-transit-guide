@@ -26720,3 +26720,94 @@ gate passed all 19 checks. The explicit `npm test` gate passed all 234 tests and
 all 17 fact cross-checks. `probes/` remains untouched and untracked.
 
 ## Run 254 - publish operator control-centre boundary (2026-08-27)
+## Run 309 Part 1a - Traditional Chinese display audit before build (2026-09-01)
+
+The handoff was stale: the current tree has no locale-aware route segment or
+locale-specific static params. Before any build or code write, the committed
+corpus was audited for material that can be displayed directly in Traditional
+Chinese. Of 1,771 Markdown-backed pages, all 1,771 carry at least one committed
+Traditional-Chinese source title/name (`lang: zh-Hant`), so page identity can be
+shown without translating prose. No page has a committed Chinese equivalent of
+its English synthesis; those passages must remain English in Chinese mode.
+
+Generated rail, bus, bike, ferry, air, road and statistics indexes have
+source-backed Chinese names for the entity fields where the data supplies them,
+but no Chinese UI or synthesis dictionary exists yet. The network map and
+near-station data likewise have source-backed station/line/route names, while
+interaction labels and explanatory prose remain English. The opening timeline
+and comparison tables have Chinese entity/source labels but English headers,
+notes and synthesis. The changelog, navigation, search controls and general
+site chrome have no committed Chinese equivalent yet.
+
+This is a display audit, not a translation backlog: the implementation will
+reuse original-language titles, publishers, station/line/route names and quoted
+sentences already committed, retain English where no equivalent exists, and
+will not add a translation pipeline for other languages this run.
+
+## Run 309 Part 1b - Traditional Chinese display implementation (2026-09-02)
+
+The locale URL scheme is `/en/...` and `/zh-Hant/...`; each locale has one
+static canonical URL, reciprocal hreflang links and no unprefixed canonical
+alias. `generateStaticParams` prerenders both locales, and the plain-link
+language toggle is present in the header and side rail without storage or a
+translation fetch. Chinese mode reuses committed source titles, publishers,
+station, line and route names, and original-language quotations; synthesis and
+UI text without a committed equivalent remains visibly English. No pipeline for
+another language was added. The first rebuilt export produced 6,001 static
+routes; postbuild produced 1,825 share images and 1,084 redirect stubs.
+
+The Han subsets were regenerated only after that build. The built-output audit
+checked 5,257 pages with zero missing Han glyphs. The resulting font weights
+(400/700 KiB) are: base 59.8/61.0, content 364.7/373.7, stations 43.1/43.9,
+BR 62.6/63.9, R 90.0/91.9, G 70.2/71.6, O 74.4/76.0, BL 77.4/79.0,
+Y 24.9/25.3, LB 48.1/49.0, A 26.9/27.4, V 13.4/13.6 and K 12.2/12.4.
+
+## Run 309 Part 2 - memory-bounded browser verification (2026-09-02)
+
+The completed pre-fix full sweep used one adaptive worker and 100-page chunks:
+306m57s overall, with a minimum observed free system memory of 6.99 MiB.
+The lifecycle fix closes each page and context at the end of its chunk, closes
+and relaunches the browser after every 25-page chunk and phase, and writes
+screenshots/PDFs directly to their paths. The default worker count derives from
+free memory as well as CPU, reserving 4 GiB and budgeting 4 GiB per worker; on
+this machine it selected one worker and never raised it.
+
+The post-fix run completed all 4,172 reflow pages in 182m41s (the 100-page
+run's reflow phase was 206m33s), with zero reflow failures and zero axe
+violations in the completed 4,172-page axe phase. Live free-memory checkpoints
+were 8.02 GiB at page 553, 8.96 GiB at page 2,050, 8.19 GiB at page 2,250,
+and remained 7.16 GiB at page 3,227 and 6.66 GiB at page 4,048. This is the
+measured sustained headroom across more than 2,600 pages, against the prior
+6.99 MiB minimum. The run reached 49/268 screenshot cases at 231m18s and was
+then stopped deliberately at the user's instruction; it is not reported as a
+completed visual sweep. Future harness changes use the bounded/template run,
+not another full corpus run.
+
+The chunk-size change was 100 pages to 25 pages. Its measured runtime cost was
+negative: the smaller-chunk run's full reflow phase took 182m41s versus
+206m33s for the 100-page run, a saving of 23m52s, while retaining all 4,172
+reflow pages and the full 4,172-page axe phase. The bounded follow-up completed
+in template mode in 28m48s with one worker, 156 representative pages, 79
+visual pages and 78 print pages; it had no page failures, no findings and zero
+axe violations.
+
+First-visit transfer weights after the rebuild (English / zh-Hant) were:
+home 446.2 / 446.5 KB, station 480.2 / 480.5 KB, interactive map 801.4 /
+801.9 KB, opening timeline 474.3 / 474.7 KB, and comparison tables 491.9 /
+492.3 KB. These are measured page totals including HTML, fetched fonts, CSS,
+JavaScript and directly referenced assets; the 400 KB image budget remains
+enforced separately by tests/images.test.mts. Search was current and the font
+check found coverage for all 2,290 Han characters in two-character runs.
+
+## Run 309 Part 3 - thin-page source-family audit (2026-09-02)
+
+The current tree has 73 non-index Markdown-backed pages under 400 body words:
+11 bike-station pages (mean 384.5 words), one bus-model page (327), 23 bus
+route pages (mean 374.7) and 38 TYMC pages (mean 338). They are exhausted/data
+pages, not padding targets. The audit records checks of each subject's own
+institutional site, operator annual/project pages, TDX and municipal portals,
+DORTS 技術彙刊, 公報, 監察院, 審計部, 交通部, 運研所, 交通部鐵道局, VSCC,
+臺灣博碩士論文知識加值系統, 司法院法學資料檢索系統, 國史館, 國家檔案管理局
+and Japanese-era records. No route-, model-, station- or TYMC-specific
+source-backed material was found beyond the committed data, so the pages stay
+short and TBC rather than receiving general background or unsourced claims.

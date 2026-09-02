@@ -46,9 +46,12 @@ test('the index is byte-stable across runs', () => {
 test('every indexed href is a page the site actually exports', () => {
   const OUT = path.join(process.cwd(), 'out')
   if (!fs.existsSync(OUT)) return
-  const missing = built.entries
-    .map((entry) => entry.h)
-    .filter((href) => !fs.existsSync(path.join(OUT, ...href.split('/').filter(Boolean), 'index.html')))
+  const missing = ['en', 'zh-Hant'].flatMap((locale) =>
+    built.entries
+      .map((entry) => entry.h)
+      .filter((href) => !fs.existsSync(path.join(OUT, locale, ...href.split('/').filter(Boolean), 'index.html')))
+      .map((href) => `/${locale}${href}`),
+  )
   assert.deepEqual(missing, [], `search points at pages that do not exist:\n  ${missing.join('\n  ')}`)
 })
 

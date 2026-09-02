@@ -25,6 +25,7 @@ import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 import { REGIONS } from '../lib/regions.ts'
 
 const OUT = path.join(process.cwd(), 'out')
+const LOCALES = ['en', 'zh-Hant'] as const
 
 before(() => {
   assert.ok(
@@ -33,8 +34,14 @@ before(() => {
   )
 })
 
-const read = (rel: string) => fs.readFileSync(path.join(OUT, rel), 'utf8')
-const exists = (rel: string) => fs.existsSync(path.join(OUT, rel))
+const pageRel = (locale: (typeof LOCALES)[number], href: string) =>
+  `${locale}/${href.replace(/^\/+|\/+$/g, '') ? `${href.replace(/^\/+|\/+$/g, '')}/` : ''}index.html`
+const withDefaultLocale = (rel: string) =>
+  /^(en|zh-Hant)\//.test(rel) || rel.startsWith('404') || rel.startsWith('_not-found') || !rel.endsWith('index.html')
+    ? rel
+    : `en/${rel}`
+const read = (rel: string) => fs.readFileSync(path.join(OUT, withDefaultLocale(rel)), 'utf8')
+const exists = (rel: string) => fs.existsSync(path.join(OUT, withDefaultLocale(rel)))
 
 /**
  * The markup a reader actually sees, with Next's inlined navigation payload
@@ -67,8 +74,9 @@ function allHtml(): string[] {
 /* ---- page inventory ------------------------------------------------ */
 
 test('every content page exported an index.html', () => {
-  const missing = getAllPages()
-    .map((page) => page.href.replace(/^\//, '') + 'index.html')
+  const missing = LOCALES.flatMap((locale) =>
+    getAllPages().map((page) => pageRel(locale, page.href)),
+  )
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
 })
@@ -102,28 +110,33 @@ test('every page with three sections has a static ToC whose fragments exist', ()
 })
 
 test('every station on every line with station pages exported a page', () => {
-  const missing = [...LINES_WITH_STATION_PAGES]
-    .flatMap((line) => getLineStations(line).filter((station) => station.operator !== 'TMRT'))
-    .map((s) => `${getStationHref(s.code, s.operator)!.replace(/^\//, '')}index.html`)
+  const missing = LOCALES.flatMap((locale) =>
+    [...LINES_WITH_STATION_PAGES]
+      .flatMap((line) => getLineStations(line).filter((station) => station.operator !== 'TMRT'))
+      .map((s) => pageRel(locale, getStationHref(s.code, s.operator)!)),
+  )
     .filter((rel) => !exists(rel))
   assert.deepEqual(missing, [])
 })
 
 test('the generated routes exported', () => {
-  for (const rel of [
-    'index.html',
-    'rail/network/index.html',
-    'data/index.html',
-    'data/stations/index.html',
-    'data/line-colours/index.html',
-    'data/provenance/index.html',
-    'data/network-growth/index.html',
-    'data/comparisons/index.html',
-    'data/changelog/index.html',
-    'about/index.html',
-    'regions/index.html',
-  ]) {
-    assert.ok(exists(rel), `${rel} was not exported`)
+  for (const locale of LOCALES) {
+    for (const href of [
+      '/',
+      '/rail/network/',
+      '/data/',
+      '/data/stations/',
+      '/data/line-colours/',
+      '/data/provenance/',
+      '/data/network-growth/',
+      '/data/comparisons/',
+      '/data/changelog/',
+      '/about/',
+      '/regions/',
+    ]) {
+      const rel = pageRel(locale, href)
+      assert.ok(exists(rel), `${rel} was not exported`)
+    }
   }
 })
 
@@ -157,11 +170,9 @@ test('the expected number of pages was generated', () => {
       getSystems(s.slug).reduce((n, system) => n + getTypes(s.slug, system.slug).length, 0),
     0,
   )
-  // /, /rail/network, /rail/metro/stations, /data, /data/stations,
-  // /data/line-colours, /data/provenance, /data/sources, /data/network-growth,
-  // /data/comparisons, /data/changelog, /about, /404,
-  // /_not-found, /regions
-  const generated = 15
+  // These generated pages live under each locale: /, /rail/network,
+  // /rail/metro/stations, /data, the seven data pages, /about and /regions.
+  const generatedPerLocale = 13
   // One per lib/regions.ts entry (Part 2b, Run 303) — /regions/<slug>/,
   // generated from that array rather than the content tree, so it belongs
   // here alongside `generated` rather than in `content`.
@@ -177,7 +188,9 @@ test('the expected number of pages was generated', () => {
     return sum + overlays.length + 1
   }, 0)
   const expected =
-    content + stations + sections + systems + types + generated + busGroupPages + regionPages
+    (content + stations + sections + systems + types + generatedPerLocale + busGroupPages + regionPages) *
+      LOCALES.length +
+    1 // Next's global _not-found/index.html; postbuild also copies 404.html.
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
   assert.equal(
@@ -211,8 +224,12 @@ test('every moved URL redirects, in one hop, to a real page', () => {
       }),
   )
 
+  const logicalEnglishPages = [...pages]
+    .filter((url) => url.startsWith('/en/'))
+    .map((url) => url.slice('/en'.length) || '/')
+
   let checked = 0
-  for (const { old } of plannedRedirects([...pages])) {
+  for (const { old, target } of plannedRedirects(logicalEnglishPages)) {
     if (pages.has(old)) continue // a real page occupies the old path
     const file = path.join(OUT, ...old.split('/').filter(Boolean), 'index.html')
     assert.ok(fs.existsSync(file), `no redirect stub at ${old}`)
@@ -221,8 +238,8 @@ test('every moved URL redirects, in one hop, to a real page', () => {
     const target = html.match(/url=([^"'>]+)/)?.[1]
     assert.ok(target, `stub at ${old} has no refresh target`)
     assert.ok(
-      pages.has(target!),
-      `stub at ${old} points at ${target}, which is not a real page — a redirect must not chain`,
+      pages.has(`/en${target!}`),
+      `stub at ${old} points at /en${target}, which is not a real page — a redirect must not chain`,
     )
     assert.ok(html.includes('rel="canonical"'), `stub at ${old} carries no canonical`)
     assert.ok(html.includes('noindex'), `stub at ${old} is indexable`)

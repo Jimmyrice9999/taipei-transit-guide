@@ -13,14 +13,21 @@
  */
 
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import PageShell from '@/components/PageShell'
 import BackLink from '@/components/BackLink'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { LINES_WITH_STATION_PAGES, STATIONS } from '@/lib/stations'
 import { LINES } from '@/lib/lines'
+import { SITE_NAME } from '@/lib/site'
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
+const WORDMARK = { width: 246, height: 22 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    `${process.env.NEXT_PUBLIC_SITE_URL || 'https://jimmyrice9999.github.io'}${BASE_PATH}`,
+  ),
   title: 'Page not found',
 }
 
@@ -29,7 +36,33 @@ export default function NotFound() {
   const stationCount = STATIONS.filter((s) => withPages.includes(s.line)).length
 
   return (
-    <PageShell accent={NEUTRAL_LINE}>
+    <html lang="en">
+      <head>
+        <style>{'@media print {.site-header { display: none !important; }}'}</style>
+      </head>
+      <body>
+        <header className="site-header">
+          <div className="container">
+            <a href="/en/" className="site-title">
+              <img
+                className="wordmark"
+                src={`${BASE_PATH}/wordmark.svg`}
+                alt={SITE_NAME}
+                width={WORDMARK.width}
+                height={WORDMARK.height}
+              />
+            </a>
+            <nav className="language-toggle language-toggle-header" aria-label="Language switcher">
+              <a href="/zh-Hant/" lang="zh-Hant" aria-label="切換至繁體中文">繁體中文</a>
+            </nav>
+          </div>
+        </header>
+        <aside className="side-nav-rail">
+          <nav className="language-toggle language-toggle-rail" aria-label="Language switcher, side rail">
+            <a href="/zh-Hant/" lang="zh-Hant" aria-label="切換至繁體中文">繁體中文</a>
+          </nav>
+        </aside>
+        <PageShell accent={NEUTRAL_LINE}>
       {/* The one page where an up-route matters most: a 404 is usually a
           guessed URL, so there is no history to go back to. */}
       <BackLink href="/" label="the home page" />
@@ -91,6 +124,8 @@ export default function NotFound() {
           </li>
         </ul>
       </div>
-    </PageShell>
+        </PageShell>
+      </body>
+    </html>
   )
 }

@@ -10,6 +10,7 @@ import { getLine } from './lines.ts'
 import { isPlain, tokenize } from './text-tokens.ts'
 import { CITE_MARKER_PATTERN, type Source } from './sources.ts'
 import { getImage } from './images.ts'
+import { localizedPath, type Locale } from './locale.ts'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type Node = any
@@ -607,6 +608,32 @@ export function rehypeBasePath(basePath: string) {
               return descriptor ? `${basePath}${url} ${descriptor}` : `${basePath}${url}`
             })
             .join(', ')
+        }
+      }
+      for (const child of node?.children ?? []) walk(child)
+    }
+    walk(tree)
+  }
+}
+
+/** Prefix Markdown-authored page links with the locale in the static export. */
+export function rehypeLocaleLinks(locale: Locale) {
+  const isPublicAsset = (href: string) => {
+    const path = href.split(/[?#]/, 1)[0]
+    return /\.[a-z0-9]+$/i.test(path)
+  }
+
+  return (tree: Node) => {
+    const walk = (node: Node) => {
+      if (node?.type === 'element' && node.tagName === 'a' && node.properties) {
+        const value = node.properties.href
+        if (
+          typeof value === 'string' &&
+          value.startsWith('/') &&
+          !value.startsWith('//') &&
+          !isPublicAsset(value)
+        ) {
+          node.properties.href = localizedPath(locale, value)
         }
       }
       for (const child of node?.children ?? []) walk(child)

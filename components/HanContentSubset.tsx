@@ -1,4 +1,4 @@
-import { hanFontFace } from '@/app/layout'
+import { hanFontFace } from '@/app/[locale]/layout'
 
 /**
  * Declares the content-page Han subset and points --font-han at it.

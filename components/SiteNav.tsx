@@ -6,11 +6,12 @@
  * the section index is always reachable without opening a panel.
  */
 
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { usePathname } from 'next/navigation'
 import { useEffect, useId, useRef, useState, type CSSProperties } from 'react'
 import type { NavGroup, NavSection } from '@/lib/nav'
 import { rememberPath } from '@/lib/navigation-history'
+import { withoutLocale } from '@/lib/locale'
 
 /**
  * "/rail/" and "/rail" should both count as being in the Rail section.
@@ -20,6 +21,7 @@ import { rememberPath } from '@/lib/navigation-history'
  * what "current" means, or a reader could see one lit and not the other.
  */
 export function isInSection(pathname: string, href: string) {
+  pathname = withoutLocale(pathname)
   const base = href.replace(/\/+$/, '')
   return pathname === base || pathname.startsWith(base + '/')
 }

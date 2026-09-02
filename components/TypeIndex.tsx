@@ -24,6 +24,8 @@ import { getImage } from '@/lib/images'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSystem, getType, getTypes } from '@/lib/content'
 import { getEntityIconKind } from '@/components/EntityIcon'
+import { isLocale, withLocaleMetadata } from '@/lib/locale'
+import { locale as rootLocale } from 'next/root-params'
 
 
 /** Which type index to render. `system` is '' for a section with no systems. */
@@ -56,7 +58,8 @@ export async function typeIndexMetadata({ section, system = '', type }: TypeRef)
   const title = [typeMeta.title, systemMeta?.title, sectionMeta.title]
     .filter(Boolean)
     .join(' — ')
-  return {
+  const currentLocale = await rootLocale()
+  return withLocaleMetadata(isLocale(currentLocale) ? currentLocale : 'en', {
     title,
     description: typeMeta.description || undefined,
     alternates: { canonical: typeMeta.href },
@@ -65,17 +68,20 @@ export async function typeIndexMetadata({ section, system = '', type }: TypeRef)
       description: typeMeta.description || undefined,
       url: typeMeta.href,
     },
-  }
+  })
 }
 
 export default async function TypeIndex({ section, system = '', type }: TypeRef) {
   if (!getTypes(section, system).some((t) => t.slug === type)) notFound()
 
+  const currentLocale = await rootLocale()
+  const locale = isLocale(currentLocale) ? currentLocale : 'en'
+
   const sectionMeta = getSection(section)
   const systemMeta = system ? getSystem(section, system) : null
   const typeMeta = getType(section, type, system)
   const pages = getPages(section, type, system)
-  const folderContent = await getFolderContent(system ? [section, system] : [section], type)
+  const folderContent = await getFolderContent(system ? [section, system] : [section], type, locale)
 
   /*
    * ── The bug this replaced ───────────────────────────────────────────────

@@ -10,16 +10,17 @@ import { SITE_NAME, SITE_DESCRIPTION, absoluteUrl } from './site.ts'
 import { getDistrictEn } from './districts.ts'
 import type { Station } from './stations.ts'
 import type { Line } from './lines.ts'
+import { localizedPath, type Locale } from './locale.ts'
 
 type Node = Record<string, unknown>
 
 /** The site itself. Emitted once, from the root layout. */
-export function websiteSchema(): Node {
+export function websiteSchema(locale: Locale = 'en'): Node {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: SITE_NAME,
-    url: absoluteUrl('/'),
+    url: absoluteUrl(localizedPath(locale, '/')),
     description: SITE_DESCRIPTION,
     inLanguage: 'en',
     // Independent and non-commercial, and the site says so in the footer and on
@@ -27,13 +28,16 @@ export function websiteSchema(): Node {
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
-      url: absoluteUrl('/'),
+      url: absoluteUrl(localizedPath(locale, '/')),
     },
   }
 }
 
 /** Where a page sits in the site. Well supported and genuinely true here. */
-export function breadcrumbSchema(trail: { name: string; path: string }[]): Node {
+export function breadcrumbSchema(
+  trail: { name: string; path: string }[],
+  locale: Locale = 'en',
+): Node {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -41,7 +45,7 @@ export function breadcrumbSchema(trail: { name: string; path: string }[]): Node 
       '@type': 'ListItem',
       position: index + 1,
       name: crumb.name,
-      item: absoluteUrl(crumb.path),
+      item: absoluteUrl(localizedPath(locale, crumb.path)),
     })),
   }
 }
@@ -58,13 +62,19 @@ export function breadcrumbSchema(trail: { name: string; path: string }[]): Node 
  * coordinates, or an `address` that is an empty string, is worse than the field
  * being absent — it asserts a value the site does not have.
  */
-export function stationSchema(station: Station, line: Line, position: number, total: number): Node {
+export function stationSchema(
+  station: Station,
+  line: Line,
+  position: number,
+  total: number,
+  locale: Locale = 'en',
+): Node {
   const node: Node = {
     '@context': 'https://schema.org',
     '@type': 'SubwayStation',
     name: station.name,
     identifier: station.code,
-    url: absoluteUrl(`/rail/metro/stations/${station.code.toLowerCase()}/`),
+    url: absoluteUrl(localizedPath(locale, `/rail/metro/stations/${station.code.toLowerCase()}/`)),
     description: `Stop ${position} of ${total} on Taipei Metro's ${line.name} Line.`,
     publicAccess: true,
   }
@@ -108,18 +118,21 @@ export function articleSchema({
   description,
   path,
   updated,
+  locale = 'en',
 }: {
   title: string
   description: string
   path: string
   updated?: string
+  locale?: Locale
 }): Node {
+  const pagePath = localizedPath(locale, path)
   const node: Node = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
-    url: absoluteUrl(path),
-    mainEntityOfPage: absoluteUrl(path),
+    url: absoluteUrl(pagePath),
+    mainEntityOfPage: absoluteUrl(pagePath),
     inLanguage: 'en',
     isAccessibleForFree: true,
     publisher: { '@type': 'Organization', name: SITE_NAME, url: absoluteUrl('/') },
@@ -146,6 +159,7 @@ export function datasetSchema({
   downloadPath,
   encodingFormat = 'application/json',
   keywords,
+  locale = 'en',
 }: {
   name: string
   description: string
@@ -153,13 +167,15 @@ export function datasetSchema({
   downloadPath?: string
   encodingFormat?: string
   keywords: string[]
+  locale?: Locale
 }): Node {
+  const pagePath = localizedPath(locale, path)
   const node: Node = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name,
     description,
-    url: absoluteUrl(path),
+    url: absoluteUrl(pagePath),
     inLanguage: ['en', 'zh-Hant'],
     keywords,
     isAccessibleForFree: true,

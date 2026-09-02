@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { getInterchangeLine, type Line } from '@/lib/lines'
 import { STATIONS, getStationHref, type Station } from '@/lib/stations'
 

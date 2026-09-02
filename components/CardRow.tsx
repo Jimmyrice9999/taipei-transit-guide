@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import LineIcon from './LineIcon'
 import EntityIcon, { type EntityIconKind } from './EntityIcon'
 import RichText from './RichText'

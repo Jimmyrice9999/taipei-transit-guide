@@ -1,5 +1,5 @@
 import RichText from './RichText'
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { getImageSize } from '@/lib/image-size'
 import { src as imageSrc, srcset, type SiteImage } from '@/lib/images'
 

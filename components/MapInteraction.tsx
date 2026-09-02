@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, type ReactNode } from 'react'
+import Link from './LocaleLink'
 
 type MapView = { scale: number; x: number; y: number }
 
@@ -210,7 +211,7 @@ export default function MapInteraction({ children }: { children: ReactNode }) {
             {selected.name}
             {selected.zh && <span className="routemap-panel-zh" lang="zh-Hant">{selected.zh}</span>}
           </span>
-          <a className="routemap-panel-go" href={selected.href}>Open →</a>
+          <Link className="routemap-panel-go" href={selected.href}>Open →</Link>
           <button
             className="routemap-panel-close"
             type="button"

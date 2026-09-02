@@ -31,7 +31,9 @@
  * button-with-an-onClick would have broken.
  */
 
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
+import { useLocale } from '@/components/LocaleContext'
+import { localizedPath } from '@/lib/locale'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useId, useRef, useState } from 'react'
 import { searchIndex, type SearchEntry } from '@/lib/search'
@@ -40,6 +42,7 @@ const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || ''
 const INDEX_URL = `${BASE_PATH}/data/search-index.json`
 
 export default function SiteSearch() {
+  const locale = useLocale()
   const router = useRouter()
   const pathname = usePathname()
   const idBase = useId()
@@ -107,7 +110,7 @@ export default function SiteSearch() {
       const hit = hits[Math.min(active, hits.length - 1)]
       if (hit) {
         setQuery('')
-        router.push(hit.entry.h)
+        router.push(localizedPath(locale, hit.entry.h))
       }
     }
   }
@@ -143,7 +146,7 @@ export default function SiteSearch() {
 
       <noscript>
         {/* The honest fallback: the indexes this box is a shortcut through. */}
-        <a className="site-search-fallback" href="/rail/metro/stations/">
+        <a className="site-search-fallback" href={localizedPath(locale, '/rail/metro/stations/')}>
           Browse the indexes →
         </a>
       </noscript>

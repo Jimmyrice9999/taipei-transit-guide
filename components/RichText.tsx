@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import { getLine } from '@/lib/lines'
 import { getStation } from '@/lib/stations'
 import { isPlain, tokenize } from '@/lib/text-tokens'

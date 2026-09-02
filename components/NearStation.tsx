@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 import CiteMark from './CiteMark'
 import LineBadge from './LineBadge'
 import RichText from './RichText'

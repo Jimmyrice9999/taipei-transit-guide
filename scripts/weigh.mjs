@@ -313,14 +313,21 @@ console.log('  client-side navigation, never on a first visit.')
 /* ---- per page type ---- */
 
 const PAGE_TYPES = [
-  ['Home', 'index.html'],
-  ['Line page', 'rail/metro/lines/wenhu-line/index.html'],
-  ['Station page', 'rail/metro/stations/br13/index.html'],
-  ['Rolling stock', 'rail/metro/rolling-stock/val256/index.html'],
-  ['Network', 'rail/network/index.html'],
-  ['Station records', 'data/stations/index.html'],
-  ['Section index', 'rail/index.html'],
-  ['About', 'about/index.html'],
+  ['Home (en)', 'en/index.html'],
+  ['Home (zh-Hant)', 'zh-Hant/index.html'],
+  ['Station page (en)', 'en/rail/metro/stations/br13/index.html'],
+  ['Station page (zh-Hant)', 'zh-Hant/rail/metro/stations/br13/index.html'],
+  ['Map (en)', 'en/rail/network/index.html'],
+  ['Map (zh-Hant)', 'zh-Hant/rail/network/index.html'],
+  ['Timeline (en)', 'en/data/network-growth/index.html'],
+  ['Timeline (zh-Hant)', 'zh-Hant/data/network-growth/index.html'],
+  ['Comparisons (en)', 'en/data/comparisons/index.html'],
+  ['Comparisons (zh-Hant)', 'zh-Hant/data/comparisons/index.html'],
+  ['Line page (en)', 'en/rail/metro/lines/wenhu-line/index.html'],
+  ['Rolling stock (en)', 'en/rail/metro/rolling-stock/val256/index.html'],
+  ['Station records (en)', 'en/data/stations/index.html'],
+  ['Section index (en)', 'en/rail/index.html'],
+  ['About (en)', 'en/about/index.html'],
 ]
 
 console.log('\n\n═══ First visit, by page type ═══\n')
@@ -374,7 +381,7 @@ if (stationPage) {
 
 /* ---- which font files nobody fetches ---- */
 
-const line = weighPage('rail/metro/lines/wenhu-line/index.html')
+const line = weighPage('en/rail/metro/lines/wenhu-line/index.html')
 if (line) {
   console.log('\n\n═══ Font files a reader never downloads ═══\n')
   console.log('  Measured against the line page. These are emitted, committed and')

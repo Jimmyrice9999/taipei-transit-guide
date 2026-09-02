@@ -23,7 +23,7 @@ import { BOUNDARY_EXEMPT, SWATCHES, THRESHOLD, declaredColours } from '../lib/su
 import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
-const read = (rel: string) => fs.readFileSync(path.join(OUT, rel), 'utf8')
+const read = (rel: string) => fs.readFileSync(path.join(OUT, 'en', rel), 'utf8')
 
 function allHtml(): string[] {
   const walk = (dir: string): string[] =>

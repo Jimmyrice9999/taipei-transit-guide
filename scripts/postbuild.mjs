@@ -157,9 +157,16 @@ const exported = walk(OUT)
     return rel === '' ? '/' : `/${rel}/`
   })
 
+/* Historical URLs were the unprefixed English tree. Plan those redirects from
+ * the English export's logical paths, then point the stubs at the explicit
+ * `/en/` canonical tree. The Chinese tree has no historical unprefixed alias. */
+const exportedEnglishLogical = exported
+  .filter((url) => url.startsWith('/en/'))
+  .map((url) => url.slice('/en'.length) || '/')
+
 let stubs = 0
 let occupied = 0
-for (const { old, target, why } of plannedRedirects(exported)) {
+for (const { old, target, why } of plannedRedirects(exportedEnglishLogical)) {
   const file = path.join(OUT, ...old.split('/').filter(Boolean), 'index.html')
   // Never shadow a real page.
   if (fs.existsSync(file)) {
@@ -167,7 +174,7 @@ for (const { old, target, why } of plannedRedirects(exported)) {
     continue
   }
   fs.mkdirSync(path.dirname(file), { recursive: true })
-  fs.writeFileSync(file, redirectStub(`${BASE}${target}`, why))
+  fs.writeFileSync(file, redirectStub(`${BASE}/en${target}`, why))
   stubs++
 }
 console.log(

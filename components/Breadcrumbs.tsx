@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/LocaleLink'
 
 /** The "Train › Lines › Wenhu Line" trail above a page title. */
 export default function Breadcrumbs({

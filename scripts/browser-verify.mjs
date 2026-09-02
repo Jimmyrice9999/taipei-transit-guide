@@ -50,7 +50,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import http from 'node:http'
-import { availableParallelism } from 'node:os'
+import { availableParallelism, freemem, totalmem } from 'node:os'
 import { fileURLToPath } from 'node:url'
 import { chromium } from 'playwright'
 import { isRedirectStub } from './redirect-stub.mjs'
@@ -74,8 +74,27 @@ const positiveInteger = (value, fallback) => {
   const number = Number(value)
   return Number.isInteger(number) && number > 0 ? number : fallback
 }
-const DEFAULT_WORKERS = Math.max(1, Math.min(4, availableParallelism() - 1))
+const MEMORY_GIB = 1024 ** 3
+const CPU_WORKERS = Math.max(1, Math.min(4, availableParallelism() - 1))
+const AVAILABLE_MEMORY_GIB = freemem() / MEMORY_GIB
+/* Reserve room for the OS, the static server, and unrelated desktop work.
+ * Browser contexts have large transient peaks during screenshots and print,
+ * so the default budgets 4 GiB per worker after retaining a 4 GiB reserve.
+ * This is a ceiling, not a target: an explicit --workers value is still useful
+ * for a controlled probe, while the default must back off on a memory-bound
+ * host. */
+const MEMORY_RESERVE_GIB = 4
+const MEMORY_PER_WORKER_GIB = 4
+const MEMORY_WORKERS = Math.max(
+  1,
+  Math.min(4, Math.floor((AVAILABLE_MEMORY_GIB - MEMORY_RESERVE_GIB) / MEMORY_PER_WORKER_GIB)),
+)
+const DEFAULT_WORKERS = Math.min(CPU_WORKERS, MEMORY_WORKERS)
 const WORKERS = positiveInteger(optionValue('--workers') ?? process.env.BROWSER_VERIFY_WORKERS, DEFAULT_WORKERS)
+const CHUNK_SIZE = positiveInteger(
+  optionValue('--chunk-size') ?? process.env.BROWSER_VERIFY_CHUNK_SIZE,
+  25,
+)
 const PAGE_TIMEOUT_MS = positiveInteger(
   optionValue('--timeout') ?? process.env.BROWSER_VERIFY_TIMEOUT,
   30_000,
@@ -83,6 +102,30 @@ const PAGE_TIMEOUT_MS = positiveInteger(
 const FULL_SWEEP = hasFlag('--full') || process.env.BROWSER_VERIFY_FULL === '1'
 const PROBE_URL = optionValue('--probe-url') ?? process.env.BROWSER_VERIFY_PROBE_URL
 const PROBE_ONLY = hasFlag('--probe-only')
+
+/* The device matrix is deliberately explicit: a single "mobile" width hid
+ * the 414px and landscape failures in earlier runs, while the two zoom cases
+ * exercise the same CSS pixel widths under the site's documented reflow
+ * equivalents. */
+const DEVICE_VIEWPORTS = [
+  { width: 320, height: 900, label: 'phone-320' },
+  { width: 375, height: 900, label: 'phone-375' },
+  { width: 390, height: 900, label: 'phone-390' },
+  { width: 414, height: 900, label: 'phone-414' },
+  { width: 428, height: 900, label: 'phone-428' },
+  { width: 667, height: 375, label: 'landscape-667x375' },
+  { width: 844, height: 390, label: 'landscape-844x390' },
+  { width: 932, height: 430, label: 'landscape-932x430' },
+  { width: 768, height: 900, label: 'tablet-768' },
+  { width: 834, height: 900, label: 'tablet-834' },
+  { width: 1024, height: 900, label: 'tablet-1024' },
+  { width: 1280, height: 900, label: 'desktop-1280' },
+  { width: 1440, height: 900, label: 'desktop-1440' },
+  { width: 1920, height: 900, label: 'desktop-1920' },
+  { width: 2560, height: 900, label: 'desktop-2560' },
+  { width: 320, height: 900, label: 'zoom-400' },
+  { width: 640, height: 900, label: 'zoom-200' },
+]
 
 if (!fs.existsSync(OUT)) {
   console.error('No out/ directory. Run `npm run build` first.')
@@ -360,8 +403,30 @@ const PAGE_TYPES = [
   { name: 'road-national-freeways', url: '/road/network/national-freeways/' },
   { name: 'section-statistics', url: '/statistics/' },
   { name: 'statistics-modal-share', url: '/statistics/national/modal-share/' },
+  /* Runs 307–308: these are named separately so the interactive map, the
+     confirmed near-station joins, the opening timeline, comparison tables and
+     reader-facing changelog cannot disappear behind an older generic entry. */
+  { name: 'interactive-network-map', url: '/rail/network/' },
+  { name: 'station-near-this-station', url: '/rail/metro/stations/br13/' },
+  { name: 'network-opening-timeline', url: '/data/network-growth/' },
+  { name: 'comparison-tables', url: '/data/comparisons/' },
+  { name: 'reader-changelog', url: '/data/changelog/' },
   { name: '404', url: '/no/such/page/' },
 ]
+
+/* The app has one explicit, static URL space per locale. Keep the readable
+ * seed list above logical so the two locale inventories cannot drift apart. */
+const PAGE_TYPE_SEEDS = PAGE_TYPES
+const PAGE_TYPES_LOCALIZED = PAGE_TYPE_SEEDS.flatMap((candidate) => [
+  { ...candidate, name: `${candidate.name}-en`, url: `/en${candidate.url}` },
+  { ...candidate, name: `${candidate.name}-zh-Hant`, url: `/zh-Hant${candidate.url}` },
+])
+
+/* Every later phase consumes the localized list. The exported audit JSON thus
+ * names the exact URL that was rendered, while the seed list remains the
+ * human-maintained record of page types added by each run. */
+PAGE_TYPES.length = 0
+PAGE_TYPES.push(...PAGE_TYPES_LOCALIZED)
 
 /** Every real page, excluding generated redirect stubs. */
 function allPages() {
@@ -475,12 +540,22 @@ function featureKey(classes) {
   return TEMPLATE_FEATURES.filter((feature) => classes.has(feature)).join(',') || 'base'
 }
 
-function templateKey(url, classes) {
-  if (url === '/') return 'home'
-  if (url === '/no/such/page/') return 'not-found'
-  if (url === '/about/') return 'about'
-
+function logicalUrl(url) {
   const parts = url.split('/').filter(Boolean)
+  if (parts[0] === 'en' || parts[0] === 'zh-Hant') {
+    const remainder = parts.slice(1)
+    return remainder.length ? `/${remainder.join('/')}/` : '/'
+  }
+  return url || '/'
+}
+
+function templateKey(url, classes) {
+  const contentUrl = logicalUrl(url)
+  if (contentUrl === '/') return 'home'
+  if (contentUrl === '/no/such/page/') return 'not-found'
+  if (contentUrl === '/about/') return 'about'
+
+  const parts = contentUrl.split('/').filter(Boolean)
   if (parts[0] === 'data') return `data:${parts[1] ?? 'index'}`
 
   if (classes.has('bus-stops')) return `bus-route:${featureKey(classes)}`
@@ -905,6 +980,175 @@ async function ariaProbes(page) {
   })
 }
 
+async function localeProbe(page) {
+  return page.evaluate(() => {
+    const lang = document.documentElement.lang
+    const expectedTarget = lang === 'zh-Hant' ? '/en/' : '/zh-Hant/'
+    const toggles = [...document.querySelectorAll('.language-toggle a')]
+    return {
+      lang,
+      toggleCount: toggles.length,
+      toggleHrefs: toggles.map((link) => link.getAttribute('href')),
+      accessibleNames: toggles.map((link) => link.getAttribute('aria-label')),
+      targetPrefix: expectedTarget,
+      hasHeaderToggle: Boolean(document.querySelector('.language-toggle-header a')),
+      hasRailToggle: Boolean(document.querySelector('.language-toggle-rail a')),
+    }
+  })
+}
+
+async function navigationProbe(page, base, sourceUrl) {
+  await page.goto(`${base}${sourceUrl}`, { waitUntil: 'load', timeout: PAGE_TIMEOUT_MS })
+  const links = await page.locator('header a[href], .side-nav-rail a[href]').evaluateAll((elements) => {
+    const seen = new Set()
+    return elements.flatMap((element) => {
+      const href = element.getAttribute('href')
+      if (!href || seen.has(href)) return []
+      seen.add(href)
+      return [{
+        href,
+        label: (element.getAttribute('aria-label') || element.textContent || '').trim(),
+      }]
+    })
+  })
+
+  const results = []
+  for (const link of links) {
+    const target = new URL(link.href, `${base}${sourceUrl}`)
+    if (target.origin !== new URL(base).origin || !target.pathname.startsWith('/')) continue
+
+    const expectedLang = target.pathname.startsWith('/zh-Hant/') ? 'zh-Hant' : 'en'
+    let status = 0
+    let lang = ''
+    let h1 = ''
+    let error = ''
+    try {
+      const response = await page.goto(target.href, { waitUntil: 'load', timeout: PAGE_TIMEOUT_MS })
+      status = response?.status() ?? 0
+      ;({ lang, h1 } = await page.evaluate(() => ({
+        lang: document.documentElement.lang,
+        h1: document.querySelector('h1')?.textContent?.trim() || '',
+      })))
+    } catch (caught) {
+      error = errorSummary(caught)
+    }
+
+    results.push({
+      sourceUrl,
+      label: link.label,
+      href: link.href,
+      status,
+      lang,
+      h1,
+      error,
+      ok: status === 200 && lang === expectedLang && Boolean(h1),
+    })
+  }
+  return results
+}
+
+async function imageProbe(page) {
+  const images = page.locator('main img')
+  for (let index = 0; index < await images.count(); index += 1) {
+    const image = images.nth(index)
+    await image.scrollIntoViewIfNeeded()
+    await image.evaluate((element) => {
+      if (element.complete) return
+      return new Promise((resolve) => {
+        const finish = () => resolve()
+        element.addEventListener('load', finish, { once: true })
+        element.addEventListener('error', finish, { once: true })
+        setTimeout(finish, 5_000)
+      })
+    })
+  }
+  return page.evaluate(() => {
+    const wordmark = document.querySelector('.wordmark')
+    const photos = [...document.querySelectorAll('main img')]
+    return {
+      wordmark: wordmark instanceof HTMLImageElement
+        ? {
+            complete: wordmark.complete,
+            naturalWidth: wordmark.naturalWidth,
+            alt: wordmark.alt,
+            visible: wordmark.getBoundingClientRect().width > 0,
+          }
+        : null,
+      photos: photos.map((image) => ({
+        complete: image.complete,
+        naturalWidth: image.naturalWidth,
+        src: image.currentSrc || image.src,
+        hasSrcSet: Boolean(image.getAttribute('srcset')),
+        visible: image.getBoundingClientRect().width > 0,
+      })),
+      captions: document.querySelectorAll('figcaption').length,
+      attributions: document.querySelectorAll('.photo-attribution, .figure-attribution').length,
+    }
+  })
+}
+
+async function interactiveMapProbe(page) {
+  await page.waitForFunction(
+    () => Boolean(document.querySelector('.routemap-interactive.is-enhanced')),
+    { timeout: PAGE_TIMEOUT_MS },
+  )
+  await page.waitForTimeout(50)
+  const map = page.locator('.routemap-interactive.is-enhanced').first()
+  if ((await map.count()) === 0) return null
+
+  await map.scrollIntoViewIfNeeded()
+  await map.waitFor({ state: 'visible' })
+  await map.hover()
+  const before = await page.locator('.routemap-viewport').first().getAttribute('style')
+  await page.mouse.wheel(0, -160)
+  await page.waitForTimeout(100)
+  const afterZoom = await page.locator('.routemap-viewport').first().getAttribute('style')
+
+  const box = await map.boundingBox()
+  if (box) {
+    const x = box.x + box.width / 2
+    const y = box.y + box.height / 2
+    await page.mouse.move(x, y)
+    await page.mouse.down()
+    await page.mouse.move(x + 24, y + 18)
+    await page.mouse.up()
+  }
+  await page.waitForTimeout(100)
+  const afterPan = await page.locator('.routemap-viewport').first().getAttribute('style')
+
+  return page.evaluate(({ before, afterZoom, afterPan }) => ({
+    enhanced: Boolean(document.querySelector('.routemap-interactive.is-enhanced')),
+    hasControls: Boolean(document.querySelector('.routemap-controls')),
+    hasStaticSvg: Boolean(document.querySelector('.routemap-svg')),
+    stationCount: document.querySelectorAll('a.routemap-station[href]').length,
+    allStationsKeyboardReachable: [...document.querySelectorAll('a.routemap-station[href]')].every(
+      (station) => station.getAttribute('tabindex') !== null,
+    ),
+    zoomChanged: before !== afterZoom,
+    panChanged: afterZoom !== afterPan,
+    documentOverflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  }), { before, afterZoom, afterPan })
+}
+
+async function reducedMotionProbe(page) {
+  return page.evaluate(() => {
+    const animated = []
+    for (const element of document.querySelectorAll('body *')) {
+      const style = getComputedStyle(element)
+      if (style.transitionDuration !== '0s' || style.animationDuration !== '0s') {
+        animated.push({
+          tag: element.tagName.toLowerCase(),
+          className: String(element.className).slice(0, 80),
+          transition: style.transitionDuration,
+          animation: style.animationDuration,
+        })
+      }
+      if (animated.length >= 5) break
+    }
+    return { media: matchMedia('(prefers-reduced-motion: reduce)').matches, animated }
+  })
+}
+
 function duration(started) {
   const seconds = Math.max(0, (Date.now() - started) / 1000)
   if (seconds < 60) return `${seconds.toFixed(1)}s`
@@ -962,7 +1206,32 @@ function logProgress(progress, force = false) {
   console.log(`  progress: ${progress.done}/${progress.total} pages, elapsed ${duration(progress.started)}`)
 }
 
-async function runConcurrent({ browser, items, phase, contextOptions, initScript, task, report, progress }) {
+function recordMemory(report, label) {
+  const processMemory = process.memoryUsage()
+  const availableBytes = freemem()
+  const sample = {
+    label,
+    at: new Date().toISOString(),
+    rssBytes: processMemory.rss,
+    heapUsedBytes: processMemory.heapUsed,
+    externalBytes: processMemory.external,
+    arrayBuffersBytes: processMemory.arrayBuffers,
+    availableBytes,
+    totalBytes: totalmem(),
+  }
+  const memory = report.memory
+  memory.peakRssBytes = Math.max(memory.peakRssBytes, sample.rssBytes)
+  memory.peakHeapUsedBytes = Math.max(memory.peakHeapUsedBytes, sample.heapUsedBytes)
+  memory.minimumAvailableBytes = Math.min(memory.minimumAvailableBytes, sample.availableBytes)
+  memory.samples.push(sample)
+}
+
+async function relaunchBrowser() {
+  await browser.close()
+  browser = await chromium.launch()
+}
+
+async function runConcurrent({ browser: _browser, items, phase, contextOptions, initScript, task, report, progress }) {
   startProgress(report, progress, phase, items.length)
   const phaseReport = report.progress.at(-1)
   if (items.length === 0) {
@@ -971,39 +1240,53 @@ async function runConcurrent({ browser, items, phase, contextOptions, initScript
     return
   }
 
-  let cursor = 0
-  const workerCount = Math.min(WORKERS, items.length)
-  const worker = async (workerNumber) => {
-    const context = await browser.newContext(contextOptions)
-    try {
-      if (initScript) await context.addInitScript(initScript)
-      const page = await context.newPage()
-      page.setDefaultTimeout(PAGE_TIMEOUT_MS)
-      page.setDefaultNavigationTimeout(PAGE_TIMEOUT_MS)
-      while (true) {
-        const index = cursor++
-        if (index >= items.length) break
-        const item = items[index]
-        try {
-          await task(page, item, workerNumber)
-        } catch (error) {
-          recordPageFailure(report, item, phase, error)
-        } finally {
-          progress.done += 1
-          logProgress(progress, progress.done === items.length || progress.done % 25 === 0)
-        }
-      }
-    } finally {
-      await context.close().catch((error) => {
-        console.log(`  ✗ ${phase} worker ${workerNumber + 1} failed to close: ${errorSummary(error)}`)
-      })
+  for (let chunkStart = 0; chunkStart < items.length; chunkStart += CHUNK_SIZE) {
+    if (chunkStart > 0) {
+      await relaunchBrowser()
+      await new Promise((resolve) => setImmediate(resolve))
     }
-  }
+    const chunk = items.slice(chunkStart, chunkStart + CHUNK_SIZE)
+    let cursor = 0
+    const workerCount = Math.min(WORKERS, chunk.length)
+    const worker = async (workerNumber) => {
+      const context = await browser.newContext(contextOptions)
+      let page
+      try {
+        if (initScript) await context.addInitScript(initScript)
+        page = await context.newPage()
+        page.setDefaultTimeout(PAGE_TIMEOUT_MS)
+        page.setDefaultNavigationTimeout(PAGE_TIMEOUT_MS)
+        while (true) {
+          const index = cursor++
+          if (index >= chunk.length) break
+          const item = chunk[index]
+          try {
+            await task(page, item, workerNumber)
+          } catch (error) {
+            recordPageFailure(report, item, phase, error)
+          } finally {
+            progress.done += 1
+            logProgress(progress, progress.done === items.length || progress.done % 25 === 0)
+          }
+        }
+      } finally {
+        await page?.close().catch((error) => {
+          console.log(`  ✗ ${phase} worker ${workerNumber + 1} failed to close its page: ${errorSummary(error)}`)
+        })
+        await context.close().catch((error) => {
+          console.log(`  ✗ ${phase} worker ${workerNumber + 1} failed to close: ${errorSummary(error)}`)
+        })
+      }
+    }
 
-  await Promise.all(Array.from({ length: workerCount }, (_, i) => worker(i)))
+    await Promise.all(Array.from({ length: workerCount }, (_, i) => worker(i)))
+    recordMemory(report, `${phase}: chunk ${Math.floor(chunkStart / CHUNK_SIZE) + 1}`)
+  }
   logProgress(progress, true)
   phaseReport.done = progress.done
   phaseReport.elapsed = duration(progress.started)
+  // Do not carry browser caches or renderer processes into the next phase.
+  await relaunchBrowser()
 }
 
 function writeHumanReport(report) {
@@ -1027,7 +1310,10 @@ function writeHumanReport(report) {
     `- Canonical template pages: **${report.canonicalPages}**; additional extreme pages: **${report.extremePages}**`,
     `- Visual/print pages: **${report.visualPages}**`,
     `- Workers: **${report.workers}**`,
+    `- Browser chunk size: **${report.chunkSize} pages**; default worker selection saw **${report.memory.availableAtStartGiB.toFixed(2)} GiB** free, reserved **${MEMORY_RESERVE_GIB} GiB**, and budgeted **${MEMORY_PER_WORKER_GIB} GiB** per worker.`,
+    `- Peak process RSS: **${(report.memory.peakRssBytes / MEMORY_GIB).toFixed(2)} GiB**; minimum observed free system memory: **${(report.memory.minimumAvailableBytes / MEMORY_GIB).toFixed(2)} GiB**`,
     `- Per-page timeout: **${report.pageTimeoutMs} ms**`,
+    `- Device matrix: **${report.deviceViewports.map((v) => `${v.width}×${v.height} (${v.label})`).join(', ')}**`,
     `- Elapsed: **${report.elapsed}**`,
     '',
     coverage,
@@ -1092,7 +1378,19 @@ const axeSource = fs.readFileSync(AXE_PATH, 'utf8')
 const report = {
   generated: new Date().toISOString(),
   mode: FULL_SWEEP ? 'full' : 'template',
+  deviceViewports: DEVICE_VIEWPORTS,
   workers: WORKERS,
+  chunkSize: CHUNK_SIZE,
+  memory: {
+    availableAtStartGiB: AVAILABLE_MEMORY_GIB,
+    totalAtStartGiB: totalmem() / MEMORY_GIB,
+    cpuWorkers: CPU_WORKERS,
+    memoryWorkers: MEMORY_WORKERS,
+    peakRssBytes: 0,
+    peakHeapUsedBytes: 0,
+    minimumAvailableBytes: Number.POSITIVE_INFINITY,
+    samples: [],
+  },
   pageTimeoutMs: PAGE_TIMEOUT_MS,
   reflow: [],
   keyboard: {},
@@ -1102,6 +1400,12 @@ const report = {
   axeSummary: { critical: 0, serious: 0, moderate: 0, minor: 0 },
   print: [],
   spineOverlap: [],
+  locale: {},
+  navigation: [],
+  images: {},
+  maps: {},
+  noJsFallback: [],
+  reducedMotion: {},
   pageFailures: [],
   clippedScreenshots: [],
   progress: [],
@@ -1110,7 +1414,9 @@ const report = {
 const log = (msg) => console.log(msg)
 const runStarted = Date.now()
 const progress = { started: runStarted, phase: '', done: 0, total: 0, lastLogged: 0 }
+recordMemory(report, 'start')
 const progressTimer = setInterval(() => logProgress(progress, true), 30_000)
+const memoryTimer = setInterval(() => recordMemory(report, 'interval'), 10_000)
 
 const corpus = allPages()
 const inventory = selectTemplatePages(corpus)
@@ -1175,6 +1481,8 @@ if (PROBE_URL) {
   }
   if (PROBE_ONLY) {
     clearInterval(progressTimer)
+    clearInterval(memoryTimer)
+    recordMemory(report, 'end')
     report.elapsed = duration(runStarted)
     writeHumanReport(report)
     fs.writeFileSync(path.join(ROOT, 'docs', 'browser-verification.json'), JSON.stringify(report, null, 2))
@@ -1196,8 +1504,8 @@ await runConcurrent({
   phase: 'Reflow at 200% and 400% zoom equivalents',
   contextOptions: {},
   task: async (page, item) => {
-    for (const width of [640, 320]) {
-      await page.setViewportSize({ width, height: 900 })
+    for (const { width, height } of DEVICE_VIEWPORTS) {
+      await page.setViewportSize({ width, height })
       if (!(await gotoPage(page, item, base, report, 'Reflow'))) break
       const { overflow, culprits } = await measureOverflow(page)
       if (overflow > 0) {
@@ -1339,6 +1647,137 @@ log('\n═══ 3. Accessibility tree probes ═══\n')
   })
 }
 
+/* ---- 3b. locale, images and interactive map ------------------------- */
+
+log('\n═══ 3b. Locale, image and interactive-map behavior ═══\n')
+
+await runConcurrent({
+  browser,
+  items: templatePages,
+  phase: 'Locale and image behavior',
+  contextOptions: { viewport: { width: 375, height: 900 } },
+  task: async (page, item) => {
+    if (!(await gotoPage(page, item, base, report, 'Locale and image behavior'))) return
+    const locale = await localeProbe(page)
+    const images = await imageProbe(page)
+    report.locale[item.url] = locale
+    report.images[item.url] = images
+    const expectedLang = item.url.startsWith('/zh-Hant/') ? 'zh-Hant' : 'en'
+    const localeBad =
+      locale.lang !== expectedLang ||
+      locale.toggleCount !== 2 ||
+      locale.accessibleNames.some((name) => !name) ||
+      locale.toggleHrefs.some((href) => !href?.startsWith(locale.targetPrefix))
+    const imageBad =
+      !images.wordmark?.complete ||
+      !images.wordmark?.naturalWidth ||
+      !images.wordmark?.visible ||
+      images.photos.some((image) => !image.complete || !image.naturalWidth || !image.visible)
+    if (localeBad) log(`  ✗ ${item.name}: locale toggle or document language is wrong`)
+    if (imageBad) log(`  ✗ ${item.name}: a wordmark or photo did not paint as a loaded image`)
+  },
+  report,
+  progress,
+})
+
+const mapItems = [...new Map(
+  PAGE_TYPES
+    .filter((item) => item.url.includes('/rail/network/'))
+    .map((item) => [item.url, item]),
+).values()]
+
+await runConcurrent({
+  browser,
+  items: mapItems,
+  phase: 'Interactive map behavior',
+  contextOptions: { viewport: { width: 390, height: 900 } },
+  task: async (page, item) => {
+    if (!(await gotoPage(page, item, base, report, 'Interactive map behavior'))) return
+    const result = await interactiveMapProbe(page)
+    if (!result) {
+      report.maps[item.url] = { missing: true }
+      log(`  ✗ ${item.name}: interactive map is missing`)
+      return
+    }
+    report.maps[item.url] = result
+    const bad =
+      !result.enhanced ||
+      !result.hasControls ||
+      !result.hasStaticSvg ||
+      result.stationCount === 0 ||
+      !result.allStationsKeyboardReachable ||
+      !result.zoomChanged ||
+      !result.panChanged ||
+      result.documentOverflow > 1
+    log(`  ${bad ? '✗' : '✓'} ${item.name}: ${result.stationCount} linked stations; zoom=${result.zoomChanged}; pan=${result.panChanged}`)
+  },
+  report,
+  progress,
+})
+
+log('\nâ•â•â• 3c. Header and side-rail navigation â•â•â•\n')
+
+{
+  const context = await browser.newContext({ viewport: { width: 1280, height: 900 } })
+  try {
+    const page = await context.newPage()
+    page.setDefaultTimeout(PAGE_TIMEOUT_MS)
+    page.setDefaultNavigationTimeout(PAGE_TIMEOUT_MS)
+    for (const sourceUrl of ['/en/', '/zh-Hant/']) {
+      try {
+        const results = await navigationProbe(page, base, sourceUrl)
+        report.navigation.push(...results)
+        const bad = results.filter((result) => !result.ok)
+        log(`  ${bad.length ? 'âœ—' : 'âœ“'} ${sourceUrl}: ${results.length} internal navigation links checked`)
+      } catch (error) {
+        recordPageFailure(report, { name: `navigation-${sourceUrl}`, url: sourceUrl }, 'Navigation probe', error)
+      }
+    }
+  } finally {
+    await context.close()
+  }
+}
+
+await runConcurrent({
+  browser,
+  items: mapItems,
+  phase: 'No-JavaScript map fallback',
+  contextOptions: { viewport: { width: 390, height: 900 }, javaScriptEnabled: false },
+  task: async (page, item) => {
+    for (const { width, height } of [{ width: 320, height: 900 }, { width: 1440, height: 900 }]) {
+      await page.setViewportSize({ width, height })
+      if (!(await gotoPage(page, item, base, report, 'No-JavaScript map fallback'))) return
+      const result = await page.evaluate(() => ({
+        staticSvg: Boolean(document.querySelector('.routemap-svg')),
+        stationCount: document.querySelectorAll('a.routemap-station[href]').length,
+        controlsHidden: !document.querySelector('.routemap-controls'),
+      }))
+      report.noJsFallback.push({ ...result, name: item.name, url: item.url, width })
+      const bad = !result.staticSvg || result.stationCount === 0 || !result.controlsHidden
+      log(`  ${bad ? '✗' : '✓'} ${item.name} at ${width}px: static SVG=${result.staticSvg}; stations=${result.stationCount}`)
+    }
+  },
+  report,
+  progress,
+})
+
+await runConcurrent({
+  browser,
+  items: templatePages,
+  phase: 'Reduced-motion behavior',
+  contextOptions: { viewport: { width: 390, height: 900 }, reducedMotion: 'reduce' },
+  task: async (page, item) => {
+    if (!(await gotoPage(page, item, base, report, 'Reduced-motion behavior'))) return
+    const result = await reducedMotionProbe(page)
+    report.reducedMotion[item.url] = result
+    if (!result.media || result.animated.length) {
+      log(`  ✗ ${item.name}: reduced motion left ${result.animated.length} animated element(s)`)
+    }
+  },
+  report,
+  progress,
+})
+
 /* ---- 4. axe, selected pages by default; every page in --full mode ---- */
 
 log(`\n═══ 4. axe-core, ${FULL_SWEEP ? 'all pages' : 'selected pages'} ═══\n`)
@@ -1421,25 +1860,7 @@ async function captureScreenshot(page, filePath) {
 }
 
 {
-  /*
-   * 1920 and 2560 added permanently in run 10.
-   *
-   * The set was 375 / 768 / 1440, and that is exactly why three layout bugs
-   * shipped: the container caps at 1140px, so at 1440 it fills the viewport
-   * and everything looks composed. Above 1140 + margins the page stops
-   * growing and the reading column becomes a narrow strip in a field of
-   * white — a failure that is invisible at every width previously shot.
-   * A widescreen laptop at full screen is the common case, not the edge one.
-   */
-  const widths = [
-    [375, ''],
-    [768, ''],
-    [1440, ''],
-    [1920, ''],
-    [2560, ''],
-    [640, '-zoom200'],
-    [320, '-zoom400'],
-  ]
+  const widths = DEVICE_VIEWPORTS
 
   await runConcurrent({
     browser,
@@ -1447,10 +1868,10 @@ async function captureScreenshot(page, filePath) {
     phase: 'Screenshots',
     contextOptions: {},
     task: async (page, item) => {
-      for (const [width, suffix] of widths) {
-        await page.setViewportSize({ width, height: 900 })
+      for (const { width, height, label } of widths) {
+        await page.setViewportSize({ width, height })
         if (!(await gotoPage(page, item, base, report, 'Screenshots'))) break
-        const name = `${item.name}-${width}${suffix}.png`
+        const name = `${item.name}-${label}.png`
         const result = await captureScreenshot(page, path.join(SHOTS, name))
         if (result.clipped) {
           report.clippedScreenshots.push({ name, url: item.url, width, ...result })
@@ -1557,6 +1978,8 @@ log('\n═══ 6. Print PDFs ═══\n')
 /* ------------------------------------------------------------------ */
 
 clearInterval(progressTimer)
+clearInterval(memoryTimer)
+recordMemory(report, 'end')
 report.elapsed = duration(runStarted)
 await browser.close()
 server.close()
@@ -1587,6 +2010,62 @@ for (const [name, probes] of Object.entries(report.aria)) {
     (probes.mapSvg && !probes.mapSvg.name ? 1 : 0) +
     (probes.formation && !probes.formation.name ? 1 : 0)
   if (nameless) findings.push(`aria: ${nameless} unnamed graphic(s) on ${name}`)
+}
+for (const [url, probe] of Object.entries(report.locale)) {
+  const expectedLang = url.startsWith('/zh-Hant/') ? 'zh-Hant' : 'en'
+  if (
+    probe.lang !== expectedLang ||
+    probe.toggleCount !== 2 ||
+    probe.accessibleNames.some((name) => !name) ||
+    probe.toggleHrefs.some((href) => !href?.startsWith(probe.targetPrefix)) ||
+    !probe.hasHeaderToggle ||
+    !probe.hasRailToggle
+  ) {
+    findings.push(`locale: toggle/document language failed on ${url}`)
+  }
+}
+for (const result of report.navigation) {
+  if (!result.ok) {
+    findings.push(
+      `navigation: ${result.sourceUrl} â†’ ${result.href} (${result.label || 'unnamed link'}) ` +
+        `returned ${result.status}, lang=${result.lang || '(none)'}, h1=${result.h1 || '(none)'}`,
+    )
+  }
+}
+for (const [url, probe] of Object.entries(report.images)) {
+  if (
+    !probe.wordmark?.complete ||
+    !probe.wordmark?.naturalWidth ||
+    !probe.wordmark?.visible ||
+    probe.photos.some((image) => !image.complete || !image.naturalWidth || !image.visible)
+  ) {
+    findings.push(`image: wordmark or photo did not paint on ${url}`)
+  }
+}
+for (const [url, probe] of Object.entries(report.maps)) {
+  if (
+    probe.missing ||
+    !probe.enhanced ||
+    !probe.hasControls ||
+    !probe.hasStaticSvg ||
+    probe.stationCount === 0 ||
+    !probe.allStationsKeyboardReachable ||
+    !probe.zoomChanged ||
+    !probe.panChanged ||
+    probe.documentOverflow > 1
+  ) {
+    findings.push(`map: interaction/focus/overflow probe failed on ${url}`)
+  }
+}
+for (const probe of report.noJsFallback) {
+  if (!probe.staticSvg || probe.stationCount === 0 || !probe.controlsHidden) {
+    findings.push(`map: no-JavaScript fallback failed on ${probe.url} at ${probe.width}px`)
+  }
+}
+for (const [url, probe] of Object.entries(report.reducedMotion)) {
+  if (!probe.media || probe.animated.length) {
+    findings.push(`motion: reduced-motion probe found animation/transition on ${url}`)
+  }
 }
 for (const failure of report.pageFailures.filter((failure) => !failure.expected)) {
   findings.push(

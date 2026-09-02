@@ -20,7 +20,12 @@ import { SITE_URL } from '../lib/site.ts'
 import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
-const read = (rel: string) => fs.readFileSync(path.join(OUT, rel), 'utf8')
+const LOCALES = ['en', 'zh-Hant'] as const
+const withDefaultLocale = (rel: string) =>
+  /^(en|zh-Hant)\//.test(rel) || rel.startsWith('404') || rel.startsWith('_not-found') || !rel.endsWith('index.html')
+    ? rel
+    : `en/${rel}`
+const read = (rel: string) => fs.readFileSync(path.join(OUT, withDefaultLocale(rel)), 'utf8')
 
 function allHtml(): string[] {
   const walk = (dir: string): string[] =>
@@ -97,8 +102,10 @@ test('page titles are distinct and carry the site name', () => {
     const rel = path.relative(OUT, file)
     if (rel.startsWith('404') || rel.startsWith('_not-found')) continue
     const title = titleOf(fs.readFileSync(file, 'utf8'))!
-    assert.ok(!titles.has(title), `${rel} repeats the title "${title}"`)
-    titles.add(title)
+    const locale = rel.startsWith('zh-Hant' + path.sep) ? 'zh-Hant' : 'en'
+    const scopedTitle = `${locale}:${title}`
+    assert.ok(!titles.has(scopedTitle), `${rel} repeats the title "${title}" within ${locale}`)
+    titles.add(scopedTitle)
     assert.match(title, /Taiwan Transit Guide/, `${rel}: "${title}" does not name the site`)
   }
 })
@@ -136,7 +143,7 @@ test('canonical URLs are unique', () => {
 
 test('a station canonical points at its own URL', () => {
   const html = read('rail/metro/stations/br13/index.html')
-  assert.equal(canonicalOf(html), `${SITE_URL}/rail/metro/stations/br13/`)
+  assert.equal(canonicalOf(html), `${SITE_URL}/en/rail/metro/stations/br13/`)
 })
 
 /* ---- share images ---------------------------------------------------- */
@@ -195,13 +202,17 @@ test('every og:image URL ends in .png and resolves to a file', () => {
 })
 
 test('content and station pages get their own share image', () => {
-  for (const page of getAllPages()) {
-    const rel = page.href.replace(/^\//, '') + 'opengraph-image.png'
-    assert.ok(fs.existsSync(path.join(OUT, rel)), `${page.href} has no share image`)
+  for (const locale of LOCALES) {
+    for (const page of getAllPages()) {
+      const rel = `${locale}/${page.href.replace(/^\//, '')}opengraph-image.png`
+      assert.ok(fs.existsSync(path.join(OUT, rel)), `${locale}${page.href} has no share image`)
+    }
   }
-  for (const station of getLineStations('BR')) {
-    const rel = `rail/metro/stations/${station.code.toLowerCase()}/opengraph-image.png`
-    assert.ok(fs.existsSync(path.join(OUT, rel)), `${station.code} has no share image`)
+  for (const locale of LOCALES) {
+    for (const station of getLineStations('BR')) {
+      const rel = `${locale}/rail/metro/stations/${station.code.toLowerCase()}/opengraph-image.png`
+      assert.ok(fs.existsSync(path.join(OUT, rel)), `${locale} ${station.code} has no share image`)
+    }
   }
 })
 
@@ -218,14 +229,20 @@ test('the sitemap lists every page and nothing else', () => {
 
   assert.ok(locs.length > 30, `sitemap has only ${locs.length} entries`)
 
-  for (const page of getAllPages()) {
-    assert.ok(locs.includes(`${SITE_URL}${page.href}`), `${page.href} is missing from the sitemap`)
+  for (const locale of LOCALES) {
+    for (const page of getAllPages()) {
+      assert.ok(locs.includes(`${SITE_URL}/${locale}${page.href}`), `${locale}${page.href} is missing from the sitemap`)
+    }
   }
-  for (const station of getLineStations('BR')) {
-    const url = `${SITE_URL}/rail/metro/stations/${station.code.toLowerCase()}/`
-    assert.ok(locs.includes(url), `${station.code} is missing from the sitemap`)
+  for (const locale of LOCALES) {
+    for (const station of getLineStations('BR')) {
+      const url = `${SITE_URL}/${locale}/rail/metro/stations/${station.code.toLowerCase()}/`
+      assert.ok(locs.includes(url), `${locale} ${station.code} is missing from the sitemap`)
+    }
   }
-  assert.ok(locs.includes(`${SITE_URL}/about/`), '/about/ is missing from the sitemap')
+  for (const locale of LOCALES) {
+    assert.ok(locs.includes(`${SITE_URL}/${locale}/about/`), `/${locale}/about/ is missing from the sitemap`)
+  }
 
   // Every sitemap URL must be a page that exists.
   for (const loc of locs) {
