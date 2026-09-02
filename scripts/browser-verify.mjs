@@ -1047,10 +1047,22 @@ async function navigationProbe(page, base, sourceUrl) {
   return results
 }
 
+/* `load` fires before React hydration has finished. On entity pages, hydration
+ * replaces the server-rendered article subtree, including its image nodes.
+ * A locator created before that commit can therefore resolve to a node that
+ * is detached by the time the next action runs. Match stampFocusable's
+ * measured settle window, then acquire locators only at the action site. */
+async function waitForHydration(page) {
+  await page.waitForLoadState('networkidle', { timeout: PAGE_TIMEOUT_MS }).catch(() => {})
+  await page.waitForTimeout(250)
+}
+
 async function imageProbe(page) {
-  const images = page.locator('main img')
-  for (let index = 0; index < await images.count(); index += 1) {
-    const image = images.nth(index)
+  await waitForHydration(page)
+  const imageCount = await page.locator('main img').count()
+  for (let index = 0; index < imageCount; index += 1) {
+    const image = page.locator('main img').nth(index)
+    await image.waitFor({ state: 'attached' })
     await image.scrollIntoViewIfNeeded()
     await image.evaluate((element) => {
       if (element.complete) return
@@ -1088,23 +1100,25 @@ async function imageProbe(page) {
 }
 
 async function interactiveMapProbe(page) {
+  await waitForHydration(page)
   await page.waitForFunction(
     () => Boolean(document.querySelector('.routemap-interactive.is-enhanced')),
     { timeout: PAGE_TIMEOUT_MS },
   )
   await page.waitForTimeout(50)
-  const map = page.locator('.routemap-interactive.is-enhanced').first()
-  if ((await map.count()) === 0) return null
+  const getMap = () => page.locator('.routemap-interactive.is-enhanced').first()
+  if ((await getMap().count()) === 0) return null
 
-  await map.scrollIntoViewIfNeeded()
-  await map.waitFor({ state: 'visible' })
-  await map.hover()
+  await getMap().waitFor({ state: 'attached' })
+  await getMap().scrollIntoViewIfNeeded()
+  await getMap().waitFor({ state: 'visible' })
+  await getMap().hover()
   const before = await page.locator('.routemap-viewport').first().getAttribute('style')
   await page.mouse.wheel(0, -160)
   await page.waitForTimeout(100)
   const afterZoom = await page.locator('.routemap-viewport').first().getAttribute('style')
 
-  const box = await map.boundingBox()
+  const box = await getMap().boundingBox()
   if (box) {
     const x = box.x + box.width / 2
     const y = box.y + box.height / 2

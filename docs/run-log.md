@@ -26837,3 +26837,10 @@ with a registered rail code, and bus model pages disable station parsing. The
 default share-image route now lives under each locale root, and Pages passes
 `NEXT_PUBLIC_SITE_URL=https://jimmyrice9999.github.io`; generated HTML has no
 localhost URLs and uses the deployed origin for canonical and social URLs.
+## Run 311 - settle hydrated browser locators (2026-09-02)
+
+CI reported three `locator.scrollIntoViewIfNeeded: Element is not attached to the DOM` findings in the Locale and image behavior check: BL11, BR13 and R03 station pages. The local reproduction identified harness flakiness, not a site defect. After `load`, the station image node was replaced during React hydration on 19/25 BL11 runs and 25/25 BR13 and R03 runs; after a 250 ms settle the final image remained connected and healthy. The immediate concurrent probe reproduced the exact error 4/50 times on BL11 and 0/50 on BR13/R03, confirming a timing race rather than a persistent page detach.
+
+`imageProbe` now waits for network idle plus the measured 250 ms hydration settle, counts after settling, re-resolves each image locator at its action site, and waits for attachment. The only other locator held across awaits was the enhanced map locator; it now uses the same settle boundary and re-resolves at each action. Navigation/ARIA locators were immediate evaluations and had no equivalent held-locator pattern.
+
+The bounded `npm run verify:browser` run used one worker and covered 156 pages across 79 templates: reflow, painted-box, keyboard, ARIA, locale/image, navigation, reduced-motion and axe all passed; axe found zero violations. Both locale map probes reported 713 stations with zoom and pan changes, both no-JavaScript fallbacks rendered their static diagrams, and both locale navigation probes checked 288 links. It produced 1,344 screenshots and 78 PDFs; one expected 268,603 px sources capture was clipped at the existing 12,000 px limit. The full corpus was not rerun.
