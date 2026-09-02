@@ -99,6 +99,14 @@ const PAGE_TIMEOUT_MS = positiveInteger(
   optionValue('--timeout') ?? process.env.BROWSER_VERIFY_TIMEOUT,
   30_000,
 )
+/* Screenshot compositing is much more sensitive to runner contention than
+ * navigation or DOM probes. Keep the local default short enough to expose a
+ * slow capture, but let CI buy a larger budget without weakening any check. */
+const SCREENSHOT_TIMEOUT_MS = positiveInteger(
+  optionValue('--screenshot-timeout') ?? process.env.BROWSER_VERIFY_SCREENSHOT_TIMEOUT,
+  30_000,
+)
+const SCREENSHOT_SET = optionValue('--screenshot-set') ?? process.env.BROWSER_VERIFY_SCREENSHOT_SET ?? 'full'
 const FULL_SWEEP = hasFlag('--full') || process.env.BROWSER_VERIFY_FULL === '1'
 const PROBE_URL = optionValue('--probe-url') ?? process.env.BROWSER_VERIFY_PROBE_URL
 const PROBE_ONLY = hasFlag('--probe-only')
@@ -1312,8 +1320,10 @@ function writeHumanReport(report) {
     return `- ${template.key}: ${template.memberCount} page(s); canonical ${template.canonical}; ${extremes}`
   })
   const coverage = report.mode === 'full'
-    ? `Reflow and axe cover all ${report.corpusPages} real pages. Keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages; screenshots and print cover the ${report.visualPages} curated visual pages from the original sweep.`
-    : `Reflow, axe, keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages. Screenshots and print cover ${report.visualPages} canonical templates; use \`npm run verify:browser:full\` for the ${report.corpusPages}-page reflow and axe sweep.`
+    ? `Reflow and axe cover all ${report.corpusPages} real pages. Keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages; screenshots and print cover the ${report.visualPages} ${report.screenshotSet} visual pages.`
+    : report.screenshotSet === 'smoke'
+      ? `Reflow, axe, keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages. Screenshots and print cover the ${report.visualPages}-page push smoke set; the scheduled/manual full sweep covers the complete visual matrix.`
+      : `Reflow, axe, keyboard and ARIA cover the ${report.templatePages} selected template/extreme pages. Screenshots and print cover ${report.visualPages} canonical templates; use \`npm run verify:browser:full\` for the ${report.corpusPages}-page reflow and axe sweep.`
   const text = [
     '# Browser verification',
     '',
@@ -1327,6 +1337,7 @@ function writeHumanReport(report) {
     `- Browser chunk size: **${report.chunkSize} pages**; default worker selection saw **${report.memory.availableAtStartGiB.toFixed(2)} GiB** free, reserved **${MEMORY_RESERVE_GIB} GiB**, and budgeted **${MEMORY_PER_WORKER_GIB} GiB** per worker.`,
     `- Peak process RSS: **${(report.memory.peakRssBytes / MEMORY_GIB).toFixed(2)} GiB**; minimum observed free system memory: **${(report.memory.minimumAvailableBytes / MEMORY_GIB).toFixed(2)} GiB**`,
     `- Per-page timeout: **${report.pageTimeoutMs} ms**`,
+    `- Screenshot timeout: **${report.screenshotTimeoutMs} ms**; screenshot set: **${report.screenshotSet}**`,
     `- Device matrix: **${report.deviceViewports.map((v) => `${v.width}×${v.height} (${v.label})`).join(', ')}**`,
     `- Elapsed: **${report.elapsed}**`,
     '',
@@ -1406,6 +1417,8 @@ const report = {
     samples: [],
   },
   pageTimeoutMs: PAGE_TIMEOUT_MS,
+  screenshotTimeoutMs: SCREENSHOT_TIMEOUT_MS,
+  screenshotSet: SCREENSHOT_SET,
   reflow: [],
   keyboard: {},
   aria: {},
@@ -1436,9 +1449,23 @@ const corpus = allPages()
 const inventory = selectTemplatePages(corpus)
 const templatePages = inventory.pages
 const canonicalPages = templatePages.filter((page) => page.roles.includes('canonical'))
-const visualPages = FULL_SWEEP
-  ? PAGE_TYPES
-  : canonicalPages
+const SCREENSHOT_SMOKE_PAGES = [
+  { name: 'home-en', url: '/en/' },
+  { name: 'interactive-network-map-en', url: '/en/rail/network/' },
+  { name: 'data-sources-en', url: '/en/data/sources/' },
+  { name: 'krtc-facilities-accessibility-en', url: '/en/rail/krtc/facilities/accessibility/' },
+  { name: 'krtc-line-en', url: '/en/rail/krtc/lines/red-line/' },
+  { name: 'krtc-station-formosa-boulevard-en', url: '/en/rail/krtc/stations/formosa-boulevard-r10/' },
+  { name: 'rail-system-metro-en', url: '/en/rail/metro/' },
+]
+if (!['full', 'smoke'].includes(SCREENSHOT_SET)) {
+  throw new Error(`BROWSER_VERIFY_SCREENSHOT_SET must be full or smoke, got ${SCREENSHOT_SET}`)
+}
+const visualPages = SCREENSHOT_SET === 'smoke'
+  ? SCREENSHOT_SMOKE_PAGES
+  : FULL_SWEEP
+    ? PAGE_TYPES
+    : canonicalPages
 const verificationPages = FULL_SWEEP
   ? corpus.map((page) => ({ name: page.url, url: page.url }))
   : templatePages
@@ -1459,7 +1486,8 @@ log(
   `\nBrowser verification mode=${report.mode}; corpus=${report.corpusPages} pages; ` +
     `templates=${report.templateCount}; pages visited=${report.visitedPages} ` +
     `(canonical=${report.canonicalPages}, extremes=${report.extremePages}); workers=${WORKERS}; ` +
-    `timeout=${PAGE_TIMEOUT_MS}ms`,
+    `timeout=${PAGE_TIMEOUT_MS}ms; screenshotTimeout=${SCREENSHOT_TIMEOUT_MS}ms; ` +
+    `screenshotSet=${SCREENSHOT_SET}`,
 )
 if (!FULL_SWEEP) {
   log('  default selection: one canonical page per rendered template plus longest-name, most-stops, widest-table, deepest-nesting and most-citations extremes')
@@ -1853,18 +1881,30 @@ log('\n═══ 5. Screenshots ═══\n')
 const MAX_SCREENSHOT_HEIGHT = 12_000
 
 async function captureScreenshot(page, filePath) {
+  const fullHeight = await page.evaluate(() => document.documentElement.scrollHeight)
+  if (fullHeight > MAX_SCREENSHOT_HEIGHT) {
+    const clipHeight = MAX_SCREENSHOT_HEIGHT
+    const viewportWidth = page.viewportSize()?.width ?? 1280
+    await page.screenshot({
+      path: filePath,
+      clip: { x: 0, y: 0, width: viewportWidth, height: clipHeight },
+      timeout: SCREENSHOT_TIMEOUT_MS,
+    })
+    return { clipped: true, fullHeight, clipHeight }
+  }
+
   try {
-    await page.screenshot({ path: filePath, fullPage: true })
+    await page.screenshot({ path: filePath, fullPage: true, timeout: SCREENSHOT_TIMEOUT_MS })
     return { clipped: false }
   } catch (error) {
     if (!/unable to capture screenshot/i.test(String(error?.message ?? error))) throw error
-    const fullHeight = await page.evaluate(() => document.documentElement.scrollHeight)
     const clipHeight = Math.min(fullHeight, MAX_SCREENSHOT_HEIGHT)
     const viewportWidth = page.viewportSize()?.width ?? 1280
     try {
       await page.screenshot({
         path: filePath,
         clip: { x: 0, y: 0, width: viewportWidth, height: clipHeight },
+        timeout: SCREENSHOT_TIMEOUT_MS,
       })
       return { clipped: true, fullHeight, clipHeight }
     } catch (retryError) {

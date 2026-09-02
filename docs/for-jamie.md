@@ -1,12 +1,14 @@
 # For Jamie
 
-Run 310 completed on 2 September 2026 and is pushed to `main`; Run 311 is in progress.
+Run 312 completed on 2 September 2026 and is ready to push from `main`.
 
 Run 310 precomputes locale-neutral aggregate data once for both locales, fixes context-aware station-code tokenisation, and sets the deployed metadata origin. The fresh export produced 6,002 routes in 352 seconds with no static-generation timeout, retry, or metadataBase warning.
 
 The bounded harness regression sample passed with 143 tests, including route/model-code cases. Do not rerun the stopped full browser confirmation sweep; its measured memory evidence is recorded in the run log.
 
 Run 311 diagnosed the three CI detached-image findings as hydration races: the image node was replaced after `load`, then stable. The image and map probes now settle hydration and re-resolve locators at use. Bounded browser verification passed 156 pages, 1,344 screenshots, 78 PDFs, zero axe findings, both map modes and both locale navigation probes.
+
+Run 312 diagnosed five screenshot timeouts as environment-sensitive capture budget failures: the pages span distinct templates, with only `/data/sources/` being extreme. Screenshot capture is configurable (30s local, 120s in CI), tall pages clip before compositing, and pushes retain a seven-page smoke set while scheduled/manual sweeps retain the full matrix. The bounded run passed 156 pages, 120 screenshots, 7 PDFs and zero findings in 23m12s.
 
 Part 1: static locale routing is `/en/...` and `/zh-Hant/...`; both locales prerender, have reciprocal hreflang, and use plain-link toggles in the header and rail. Chinese mode displays committed source-language fields and quotations; absent equivalents stay English. Han subsets were regenerated after build with zero mismatches across 5,257 pages.
 

@@ -114,6 +114,13 @@ jobs:
 
       - name: Browser verification
         run: npm run verify:browser
+        env:
+          # GitHub-hosted runners are more contended than local development
+          # machines. Screenshot compositing gets a larger budget, while the
+          # push job keeps a representative smoke set so this check remains a
+          # fast gate; the scheduled/manual job owns the complete matrix.
+          BROWSER_VERIFY_SCREENSHOT_TIMEOUT: '120000'
+          BROWSER_VERIFY_SCREENSHOT_SET: smoke
 
       # Hostile fixtures: malformed frontmatter, injection, unicode, and the
       # inputs that used to build silently. Slow (one full build per case), so
@@ -224,6 +231,9 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Browser verification (full corpus)
         run: npm run verify:browser:full
+        env:
+          BROWSER_VERIFY_SCREENSHOT_TIMEOUT: '120000'
+          BROWSER_VERIFY_SCREENSHOT_SET: full
       - name: Upload full-sweep artifacts
         if: always()
         uses: actions/upload-artifact@v7
