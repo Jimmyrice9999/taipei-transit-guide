@@ -29,6 +29,7 @@ export const metadata: Metadata = {
     `${process.env.NEXT_PUBLIC_SITE_URL || 'https://jimmyrice9999.github.io'}${BASE_PATH}`,
   ),
   title: 'Page not found',
+  description: 'Find the Taiwan Transit Guide home page, station records, network map and transport sections.',
 }
 
 export default function NotFound() {

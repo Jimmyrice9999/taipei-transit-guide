@@ -23,6 +23,7 @@ import { BOUNDARY_EXEMPT, SWATCHES, THRESHOLD, declaredColours } from '../lib/su
 import { isRedirectStub } from '../scripts/redirect-stub.mjs'
 
 const OUT = path.join(process.cwd(), 'out')
+const CSS_SOURCE = path.join(process.cwd(), 'app', '[locale]', 'globals.css')
 const read = (rel: string) => fs.readFileSync(path.join(OUT, 'en', rel), 'utf8')
 
 function allHtml(): string[] {
@@ -263,10 +264,10 @@ test('every page has a main landmark', () => {
 })
 
 test('the 404 page offers a way back into the site', () => {
-  const html = visible(read('404.html'))
-  assert.ok(html.includes('href="/"'), 'no link home')
-  assert.ok(html.includes('/data/stations/'), 'does not point at the station records')
-  assert.ok(html.includes('/rail/network/'), 'does not point at the network page')
+  const html = visible(fs.readFileSync(path.join(OUT, '404.html'), 'utf8'))
+  assert.ok(html.includes('href="/en/"'), 'no link home')
+  assert.ok(html.includes('/en/data/stations/'), 'does not point at the station records')
+  assert.ok(html.includes('/en/rail/network/'), 'does not point at the network page')
 })
 
 test('no image is missing alt text or explicit dimensions', () => {
@@ -366,7 +367,7 @@ test('Chinese is always tagged zh-Hant', () => {
  */
 
 test('every colour declared in the stylesheet has a stated role', () => {
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(CSS_SOURCE, 'utf8')
   const declared = declaredColours(css)
   const known = new Set(SWATCHES.map((s) => s.name))
 
@@ -384,7 +385,7 @@ test('every colour declared in the stylesheet has a stated role', () => {
 })
 
 test('every colour clears the threshold for its own role', () => {
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(CSS_SOURCE, 'utf8')
   const declared = declaredColours(css)
 
   for (const swatch of SWATCHES) {
@@ -419,7 +420,7 @@ test('the map paper is a surface the accent inks were derived against', () => {
    * against white. Run 2 measured --text-3 on map paper by hand and moved on;
    * this pins it, because the map caption and the spine key both use it there.
    */
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(CSS_SOURCE, 'utf8')
   const declared = declaredColours(css)
 
   const paper = css.match(/--map-paper:\s*(#[0-9a-fA-F]{6})/)?.[1] ?? declared['bg']
@@ -468,7 +469,7 @@ test('an SVG containing links is never role="img"', () => {
 /* ---- motion --------------------------------------------------------- */
 
 test('every transition is disabled under prefers-reduced-motion', () => {
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(CSS_SOURCE, 'utf8')
 
   const reducedBlocks = [...css.matchAll(/@media\s*\(prefers-reduced-motion:\s*reduce\)\s*\{/gi)]
   assert.ok(reducedBlocks.length > 0, 'no prefers-reduced-motion block at all')
@@ -516,7 +517,7 @@ test('every transition is disabled under prefers-reduced-motion', () => {
  * cannot be added without one, which is exactly how this one arrived.
  */
 test('every horizontal scroll container has the scroll affordance', () => {
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(CSS_SOURCE, 'utf8')
 
   /** Selectors named in the affordance block, normalised to bare class names. */
   const affordance = new Set(

@@ -101,7 +101,7 @@ const unusedExports = exports.filter(({ name, file }) => {
 
 /* ---------- 2. CSS classes declared but never referenced ---------- */
 
-const cssPath = path.join(ROOT, 'app', 'globals.css')
+const cssPath = path.join(ROOT, 'app', '[locale]', 'globals.css')
 const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, 'utf8') : ''
 const declaredClasses = new Set()
 for (const m of css.matchAll(/\.([a-zA-Z][a-zA-Z0-9_-]*)/g)) declaredClasses.add(m[1])

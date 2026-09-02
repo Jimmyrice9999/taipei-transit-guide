@@ -209,7 +209,7 @@ test('line colours are distinct within each operator namespace', () => {
 test('both search fields have a boundary that identifies them', async () => {
   const fs = await import('node:fs')
   const path = await import('node:path')
-  const css = fs.readFileSync(path.join(process.cwd(), 'app', 'globals.css'), 'utf8')
+  const css = fs.readFileSync(path.join(process.cwd(), 'app', '[locale]', 'globals.css'), 'utf8')
 
   /** rgba(255,255,255,a) composited over an opaque background. */
   const over = (alpha: number, base: string) => {

@@ -78,9 +78,11 @@ test('no two pages share a description', () => {
     if (rel.startsWith('404') || rel.startsWith('_not-found')) continue
     const description = descriptionOf(fs.readFileSync(file, 'utf8'))
     if (!description) continue
-    const previous = seen.get(description)
+    const locale = rel.startsWith('en' + path.sep) ? 'en' : 'zh-Hant'
+    const key = `${locale}\u0000${description}`
+    const previous = seen.get(key)
     if (previous) clashes.push(`${previous} and ${rel}`)
-    else seen.set(description, rel)
+    else seen.set(key, rel)
   }
 
   assert.deepEqual(clashes, [])

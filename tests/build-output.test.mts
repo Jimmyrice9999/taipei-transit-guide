@@ -190,7 +190,7 @@ test('the expected number of pages was generated', () => {
   const expected =
     (content + stations + sections + systems + types + generatedPerLocale + busGroupPages + regionPages) *
       LOCALES.length +
-    1 // Next's global _not-found/index.html; postbuild also copies 404.html.
+    2 // Next's _not-found/index.html and its static 404/index.html copy.
 
   const actual = allHtml().filter((f) => f.endsWith('index.html')).length
   assert.equal(
@@ -235,11 +235,11 @@ test('every moved URL redirects, in one hop, to a real page', () => {
     assert.ok(fs.existsSync(file), `no redirect stub at ${old}`)
 
     const html = fs.readFileSync(file, 'utf8')
-    const target = html.match(/url=([^"'>]+)/)?.[1]
-    assert.ok(target, `stub at ${old} has no refresh target`)
+    const redirectTarget = html.match(/url=([^"'>]+)/)?.[1]
+    assert.ok(redirectTarget, `stub at ${old} has no refresh target`)
     assert.ok(
-      pages.has(`/en${target!}`),
-      `stub at ${old} points at /en${target}, which is not a real page — a redirect must not chain`,
+      pages.has(redirectTarget!),
+      `stub at ${old} points at ${redirectTarget}, which is not a real page — a redirect must not chain`,
     )
     assert.ok(html.includes('rel="canonical"'), `stub at ${old} carries no canonical`)
     assert.ok(html.includes('noindex'), `stub at ${old} is indexable`)
