@@ -81,9 +81,19 @@ const data = JSON.parse(
   ),
 )
 
+/*
+ * The rendered site now has one canonical page per locale. The unprefixed
+ * paths in the old export are redirect stubs, so a fact check that reads them
+ * would silently inspect the shim and report that every fact is missing.
+ * Prefer the English canonical page for this language-neutral check, with the
+ * second locale as a useful fallback when a page is English-only in a future
+ * build. Keep the root fallback for generated data files and old exports.
+ */
 const read = (rel) => {
-  const full = path.join(OUT, rel)
-  return fs.existsSync(full) ? fs.readFileSync(full, 'utf8') : null
+  for (const candidate of [path.join(OUT, 'en', rel), path.join(OUT, 'zh-Hant', rel), path.join(OUT, rel)]) {
+    if (fs.existsSync(candidate)) return fs.readFileSync(candidate, 'utf8')
+  }
+  return null
 }
 
 /** Rendered markup only — never the serialised React payload. */
