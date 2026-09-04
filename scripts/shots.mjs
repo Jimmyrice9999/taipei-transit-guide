@@ -25,6 +25,7 @@ import { chromium } from 'playwright'
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT = path.join(ROOT, 'out')
 const SHOTS = path.join(ROOT, 'docs', 'screenshots')
+const enPath = (logical) => logical === '/' ? '/en/' : /^\/((?:en|zh-Hant))(?:\/|$)/.test(logical) ? logical : `/en${logical}`
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -111,7 +112,7 @@ for (const url of urls) {
   const slug = url.replace(/^\/|\/$/g, '').replace(/\//g, '-') || 'home'
   for (const width of widths) {
     await page.setViewportSize({ width, height: clip ?? 900 })
-    await page.goto(base + url, { waitUntil: 'load' })
+    await page.goto(base + enPath(url), { waitUntil: 'load' })
     await page.evaluate(() => document.fonts.ready)
     if (click) {
       await page.click(click)

@@ -5,6 +5,7 @@ import http from 'node:http'
 import { chromium } from 'playwright'
 
 const OUT = path.join(process.cwd(), 'out')
+const enPath = (logical) => logical === '/' ? '/en/' : `/en${logical}`
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.json': 'application/json', '.txt': 'text/plain', '.xml': 'application/xml' }
 const server = http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0].replace(/\/{2,}/g, '/'))
@@ -25,7 +26,7 @@ const browser = await chromium.launch()
 for (const [name, url] of routes) {
   for (const width of widths) {
     const page = await browser.newPage({ viewport: { width, height: 1000 } })
-    await page.goto(base + url, { waitUntil: 'load' })
+    await page.goto(base + enPath(url), { waitUntil: 'load' })
     await page.screenshot({ path: `docs/screenshots/${name}-${width}-${stamp}.png`, fullPage: true })
     await page.close()
   }

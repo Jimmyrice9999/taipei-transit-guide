@@ -19,6 +19,7 @@ import http from 'node:http'
 import { chromium } from 'playwright'
 
 const OUT = path.join(process.cwd(), 'out')
+const enPath = (logical) => logical === '/' ? '/en/' : /^\/((?:en|zh-Hant))(?:\/|$)/.test(logical) ? logical : `/en${logical}`
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.css': 'text/css',
@@ -69,7 +70,7 @@ const browser = await chromium.launch()
 for (const [name, url] of routes) {
   for (const width of widths) {
     const page = await browser.newPage({ viewport: { width, height: 1000 } })
-    const response = await page.goto(base + url, { waitUntil: 'load' })
+    const response = await page.goto(base + enPath(url), { waitUntil: 'load' })
     if (!response || !response.ok()) {
       console.error(`  ${url} → HTTP ${response?.status() ?? 'no response'}`)
       await page.close()

@@ -25,6 +25,7 @@ import { chromium, devices } from 'playwright'
 
 const ROOT = 'C:/Users/jamie/OneDrive/Documents/projects/taipei-transit-guide'
 const OUT = path.join(ROOT, 'out')
+const enPath = (logical) => logical === '/' ? '/en/' : `/en${logical}`
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.txt': 'text/plain', '.xml': 'application/xml' }
 const server = http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0])
@@ -49,7 +50,7 @@ console.log('\n1. Keyboard\n')
 {
   const page = await browser.newPage()
   await page.setViewportSize({ width: 1440, height: 900 })
-  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + enPath('/rail/metro/lines/wenhu-line/'), { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
 
   // Tab until the first nav toggle has focus. If it is never reachable, that
@@ -142,7 +143,7 @@ console.log('\n2. Touch (no hover, no mouse)\n')
 {
   const context = await browser.newContext({ ...devices['Pixel 7'], hasTouch: true })
   const page = await context.newPage()
-  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + enPath('/rail/metro/lines/wenhu-line/'), { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
 
   const before = await page.evaluate(() => Boolean(document.querySelector('.nav-panel:not([hidden])')))
@@ -163,7 +164,7 @@ console.log('\n2. Touch (no hover, no mouse)\n')
   // does a mouse click behave differently from a tap?
   const trial = async (label, {open, how}) => {
     const pg = await context.newPage()
-    await pg.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
+    await pg.goto(base + enPath('/rail/metro/lines/wenhu-line/'), { waitUntil: 'load' })
     await pg.evaluate(() => document.fonts.ready)
     if (open) await pg.locator('.nav-item').first().locator('button').tap()
     const link = pg.locator('.nav-item').first().locator('a').first()
@@ -179,7 +180,7 @@ console.log('\n2. Touch (no hover, no mouse)\n')
   await trial('closed + click', { open: false, how: 'click' })
   const openTap = await trial('open + tap', { open: true, how: 'tap' })
   await trial('open + click', { open: true, how: 'click' })
-  ok('tapping the section name still navigates with the panel open', openTap === '/rail/', openTap)
+  ok('tapping the section name still navigates with the panel open', openTap === enPath('/rail/'), openTap)
 
   // No horizontal overflow with the panel open on a phone.
   await page.locator('.nav-item').first().locator('button').tap()
@@ -195,7 +196,7 @@ console.log('\n3. Hover independence\n')
 {
   const page = await browser.newPage()
   await page.setViewportSize({ width: 1440, height: 900 })
-  await page.goto(base + '/rail/metro/lines/wenhu-line/', { waitUntil: 'load' })
+  await page.goto(base + enPath('/rail/metro/lines/wenhu-line/'), { waitUntil: 'load' })
   const cssOnly = await page.evaluate(() => {
     // A panel that only opens on :hover would have a CSS rule doing it. If the
     // only mechanism is JS state, there is no such rule.
@@ -234,7 +235,7 @@ console.log('\n4. The bar, and the trail\n')
   for (const width of [1440, 780, 375]) {
     const context = await browser.newContext({ viewport: { width, height: 900 } })
     const page = await context.newPage()
-    await page.goto(base + '/', { waitUntil: 'load' })
+    await page.goto(base + enPath('/'), { waitUntil: 'load' })
     await page.evaluate(() => document.fonts.ready)
     const before = await page.evaluate(
       () => document.querySelector('.site-header').getBoundingClientRect().height,
@@ -266,13 +267,13 @@ console.log('\n4. The bar, and the trail\n')
   const settle = async () => { await page.waitForTimeout(600) }
 
   // Home → Rail dropdown → Network → an operator link.
-  await page.goto(base + '/', { waitUntil: 'load' })
+  await page.goto(base + enPath('/'), { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
   await page.locator('.nav-item').first().locator('a').first().hover()
   await page.waitForTimeout(300)
   await page.locator('.nav-panel:not([hidden]) a[href$="/rail/network/"]').first().click()
   await settle()
-  const operator = await page.locator('main a[href^="/rail/operators/"]').first().getAttribute('href')
+  const operator = await page.locator('main a[href^="/en/rail/operators/"]').first().getAttribute('href')
   await page.locator(`main a[href="${operator}"]`).first().click()
   await settle()
   ok('the trail reaches the operator page', page.url().endsWith(operator), page.url())
@@ -280,20 +281,20 @@ console.log('\n4. The bar, and the trail\n')
   // Back once: the browser's own button, which was never the broken half.
   await page.goBack(); await settle()
   const first = new URL(page.url()).pathname
-  ok('back once returns to the network page', first === '/rail/network/', first)
+  ok('back once returns to the network page', first === enPath('/rail/network/'), first)
 
   // The site's own control, which is what the reader sees on the page. It must
   // point at Home — not forward, at the operator page just left.
   const backHref = await page.locator('.back-link').first().getAttribute('href')
   ok(
     'the back control on that page points home, not forward',
-    backHref === '/',
+    backHref === enPath('/'),
     `${backHref} (operator was ${operator})`,
   )
 
   await page.goBack(); await settle()
   const second = new URL(page.url()).pathname
-  ok('back twice returns to the home page, not forward', second === '/', second)
+  ok('back twice returns to the home page, not forward', second === enPath('/'), second)
   await context.close()
 }
 

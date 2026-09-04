@@ -96,7 +96,10 @@ function warnsForFixture(output, testCase) {
 }
 
 const read = (rel) => {
-  const full = path.join(OUT, rel)
+  // The static export has one canonical output tree per locale. The fixture
+  // assertions use logical paths, so read the English canonical tree rather
+  // than the removed legacy unprefixed tree.
+  const full = path.join(OUT, 'en', rel)
   return fs.existsSync(full) ? fs.readFileSync(full, 'utf8') : null
 }
 

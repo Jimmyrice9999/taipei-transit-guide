@@ -5,6 +5,7 @@ import http from 'node:http'
 import { chromium } from 'playwright'
 
 const OUT = path.join(process.cwd(), 'out')
+const enPath = (logical) => logical === '/' ? '/en/' : `/en${logical}`
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.ico': 'image/x-icon', '.json': 'application/json', '.txt': 'text/plain', '.xml': 'application/xml' }
 const server = http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0].replace(/\/{2,}/g, '/'))
@@ -21,7 +22,7 @@ const browser = await chromium.launch()
 const page = await browser.newPage({ viewport: { width: 1280, height: 900 } })
 
 /* A. exact computed colours of every flagged muted-text style */
-await page.goto(base + '/rail/metro/stations/br13/', { waitUntil: 'load' })
+await page.goto(base + enPath('/rail/metro/stations/br13/'), { waitUntil: 'load' })
 const colours = await page.evaluate(() => {
   const probe = (sel) => {
     const el = document.querySelector(sel)

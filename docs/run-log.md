@@ -26854,3 +26854,40 @@ The exact five-page concurrent local reproduction captured every target within t
 `captureScreenshot` now accepts `--screenshot-timeout` / `BROWSER_VERIFY_SCREENSHOT_TIMEOUT`, defaulting to 30,000 ms locally and set to 120,000 ms in both CI browser jobs. It measures height first and clips anything over 12,000 px before attempting full-page compositing, preserving the existing honest clipped-artifact record. No page is excluded and no check is disabled.
 
 The per-push workflow now uses a seven-page smoke screenshot/print set containing all five reported pages plus home and the interactive map; reflow, keyboard, ARIA, locale/image, navigation, reduced-motion and axe still cover the same 156 template/extreme pages. The scheduled/manual full-browser job sets `screenshotSet=full` and retains the complete visual matrix. The bounded run passed 156 pages, zero axe violations, 120 screenshots, 46 expected clipped captures and 7 PDFs in 23m12s; the smoke screenshot phase took about 1m11s versus the previous 30m51s full screenshot phase.
+
+## Run 313 Part 0 — repair adversarial locale-path assertions (2026-09-05)
+
+The required reproduction ran against the clean tree and reported 5/16. The
+11 failures all had `exit=0` and the exact `page was not generated` assertion.
+Tracing the simplest empty-frontmatter case showed that Next had generated
+`out/en/rail/metro/lines/zz-empty-body/index.html`; the harness was reading the
+removed legacy `out/rail/metro/lines/...` tree. The same mismatch explained the
+empty file, enormous metadata, RTL/ZWJ/emoji, URL, raw-HTML and HTML-frontmatter
+cases. No real page was silently dropped: the current full build generated
+6,002/6,002 routes, postbuild checked 5,257 HTML pages with zero missing Han
+glyphs, and the clean output contained 2,085 identical HTML route inventories
+under each of `out/en/` and `out/zh-Hant/` for 1,771 Markdown-backed pages.
+
+The root fix makes the adversarial logical-path reader use `out/en/`; no case
+or expected result was special-cased. The rerun passed 16/16 and removed every
+fixture. The full build then passed again: 6,002 static routes in 2.2 minutes,
+1,826 share images renamed, 1,084 redirect stubs written, and 5,257 pages
+checked against the Han subsets.
+
+## Run 313 Part 1 — holistic CI and legacy-route audit (2026-09-05)
+
+`git show fdbc10fa` confirms the screenshot fix landed: configurable 30,000 ms
+local/120,000 ms CI screenshot timeout, 12,000 px clipping before compositing,
+and a seven-page push smoke set while scheduled/manual runs retain the full
+visual matrix. The workflow has four jobs (`test`, `build`, `deploy`,
+`full-browser-sweep`) and no explicit `timeout-minutes`; historical budgets are
+104 minutes for the test job and 306m57s for the prior complete browser sweep,
+so the latter remains close to the runner default and needs a full CI run to
+confirm. No Actions status can be confirmed from this machine.
+
+The locale scan found and fixed stale unprefixed output/navigation assumptions
+in `scripts/nav-check.mjs`, `probe.mjs`, `print-shot.mjs`, `article-shot.mjs`,
+`shot.mjs` and `shots.mjs`. The build-output, discoverability, search, facts,
+link, navigation-label, sitemap and browser-verification paths already handled
+the `/en/` and `/zh-Hant/` trees. The single-browser `npm run nav` regression
+passed all 19 checks against `/en/...` routes.
