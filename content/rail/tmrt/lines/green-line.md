@@ -8,7 +8,7 @@ aliases:
   - 綠線
   - 臺中捷運綠線
   - Taichung Metro Green Line
-updated: 2026-08-23
+updated: 2026-09-05
 lead:
   value: "16.71"
   unit: km
@@ -34,6 +34,12 @@ facts:
   - label: Automation
     value: Fully driverless
     source: tmrt-faq
+  - label: 2025 annual ridership
+    value: 17.22 million
+    source: taichung-annual-inspection
+  - label: 2025 passenger satisfaction
+    value: 95.6%
+    source: taichung-annual-inspection
 specs:
   - label: Operator route length
     value: "16.71"
@@ -176,6 +182,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Fetched in full. Names a 2.49 km, 2-station northern extension (Jueshe Station to the Dakeng area via Songzhu Road) and a 6.59 km, 5-station southern extension (from HSR Taichung Station, crossing the Wu River into Changhua County, co-located with the elevated Changhua Railway's Jinma Station). States Executive Yuan approval 2024-01-31 and combined funding of NT$35.591 billion (Taichung City NT$10.598bn, Changhua County NT$6.715bn, central government NT$18.278bn)."
+  - id: taichung-annual-inspection
+    title: Green Line annual inspection completed; passenger satisfaction 95.6%
+    titleOriginal: 中捷綠線年度定檢完成　旅客滿意度95.6%！中市持續精進安全與服務品質
+    publisher: Taichung City Government Transport Bureau (臺中市政府交通局)
+    url: https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9,4,20,,,,21624
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: Full government news page, published 14 August 2026. Reports 2025 ridership of 17.22 million, cumulative ridership above 60 million, passenger satisfaction of 95.6%, and the 2026 annual-inspection findings of 6 commendations, 35 improvement suggestions and 2 general deficiencies.
   - id: dorts-tmrt
     title: Taichung Metro Green Line (Wuri-Wenxin-Beitun Line)
     titleOriginal: 臺中都會區大眾捷運系統烏日文心北屯線
@@ -235,3 +250,17 @@ Two extensions have Executive Yuan approval, both from a Taichung City Governmen
 ## Ridership milestones
 
 TMRT's own figures, reported by 聯合報 and attributed directly to the company, give 2025 annual ridership at 17.22 million, up 9% from 15.80 million in 2024.[^udn-ridership] Cumulative ridership passed 50 million on 9 June 2025 and 60 million in early January 2026, with December 2025 reported to have set new records for monthly and daily ridership, though the article does not give the record figures themselves.[^udn-ridership] TMRT's own press-release listings, checked directly, do not currently carry a release stating these milestones in the operator's own words; the figures rest on this news report's attribution to the company, not on a primary release read directly.[^udn-ridership]
+
+## The 2026 inspection record
+
+Taichung's Transport Bureau reported that the Green Line's 2025 annual
+ridership was 17.22 million, cumulative ridership had passed 60 million, and
+passenger satisfaction was 95.6%.[^taichung-annual-inspection] The same full
+inspection report records six commendations, 35 improvement suggestions and
+two general deficiencies after experts reviewed operations management,
+service, rolling stock and equipment maintenance, operating safety and
+security.[^taichung-annual-inspection] The recommendations included studying
+AI-based automatic recognition in the control centre, strengthening
+preventive checks of signalling boards, reviewing emergency resources after
+recent power-bank fires on other public-transport systems, and improving
+coordination between lightly staffed stations and fire services.[^taichung-annual-inspection]

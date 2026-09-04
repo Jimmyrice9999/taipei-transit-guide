@@ -2,7 +2,7 @@
 
 `docs/research/` is a lead file, not an authority. Every claim below was checked against the cited primary page or committed TDX response before the content pages were written. Search results and the earlier expansion proposal were not used as sources.
 
-**Checked:** 23 August 2026. **Subject:** Taichung Metro Corporation (TMRT), Green Line, and its 18 stations.
+**Checked:** 5 September 2026. **Subject:** Taichung Metro Corporation (TMRT), Green Line, and its 18 stations.
 
 ## What is established
 
@@ -37,6 +37,7 @@
 - The Control Yuan investigation attributes the shaft failure to unverified design parameters and weaknesses in contract quality control and oversight. **PRIMARY, High:** [Investigation PDF](https://cybsbox.cy.gov.tw/CYBSBoxSSL/edoc/download/71448), 監察院, retrieved 23 August 2026. The original-language finding includes the unverified `壓縮、拉力、水平、垂直及翻滾角度` design checks and identifies Kawasaki's shaft component in the incident record.
 - Taichung City Government records test operation restarting on 25 March 2021 after remedial work and formal service beginning on 25 April 2021. **PRIMARY, High:** [Taichung Metro resumes test operation](https://www.taichung.gov.tw/8868/8872/9962/1742706), retrieved 23 August 2026. MOTC's yearbook independently gives the same restart and opening interval. **PRIMARY, High:** [MOTC yearbook](https://www.motc.gov.tw/ch/app/yearbook/doc?detailNo=2&id=21&module=directory&serno=8961&type=s&year=110), retrieved 23 August 2026.
 - TMRT's 21 March 2026 notice records a temporary signal-power interruption affecting G9–G17 and replacement of the relevant equipment. **PRIMARY, High:** [Signal-power notice](https://www.tmrt.com.tw/announcement/draft-news/detail?id=37f16f36-0823-497a-ac30-8eb80525951e), retrieved 23 August 2026.
+- Taichung City Government's Transport Bureau reported 2025 annual ridership of 17.22 million, cumulative ridership above 60 million and passenger satisfaction of 95.6%. Its 2026 annual inspection recorded 6 commendations, 35 improvement suggestions and 2 general deficiencies, with recommendations covering AI recognition, signalling-board preventive checks, emergency resources and fire-service coordination. **PRIMARY, High:** [Green Line annual inspection](https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9,4,20,,,,21624), retrieved 5 September 2026. Original-language basis: `114年度累計運量達1,722萬人次` / `旅客滿意度更達95.6%` / `6項優良嘉許事項、35項精進建議及2項一般缺失事項`.
 
 ## Conflicts
 

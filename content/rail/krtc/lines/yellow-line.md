@@ -3,7 +3,7 @@ title: Yellow Line
 summary: "Yellow Line (黃線) — 23 provisionally-named stations, a construction budget revised 64% upward in 2025, and six contract packages tracked to their current status."
 order: 4
 operator: KRTC
-updated: 2026-08-28
+updated: 2026-09-05
 facts:
   - label: Districts crossed
     value: Niaosong, Xinxing, Lingya, Qianzhen, Fengshan, Sanmin
@@ -23,6 +23,12 @@ facts:
   - label: Feasibility study approved
     value: 24 May 2019
     source: mtbu-yellow-planning
+  - label: Current progress overview
+    value: Execute stage; under construction
+    source: mtbu-yellow-progress-overview
+  - label: Long-term network label
+    value: Design stage
+    source: mtbu-yellow-network-plan
   - label: Confirmed opening date
     value: TBC
   - label: Depot name
@@ -68,6 +74,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full page, fetched and parsed directly from raw HTML, dated 27 August 2026 on its own footer. Describes six named contract packages (YM01, YT01, YC01, YC02, YC03, YD01) and their current construction status.
+  - id: mtbu-yellow-progress-overview
+    title: Metro Route Progress Overview
+    titleOriginal: 捷運路線進度圖
+    publisher: Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)
+    url: https://mtbu.kcg.gov.tw/KaohsiungMetro/Roadmapschedule.html
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: Full page, fetched and read directly. Its table labels the Yellow Line as 執行 (Execute) and 興建中 (under construction); the page footer is dated 2 September 2026.
+  - id: mtbu-yellow-network-plan
+    title: Long-term Network Description
+    titleOriginal: 路網規劃說明
+    publisher: Kaohsiung City Government Mass Rapid Transit Bureau (高雄市政府捷運工程局)
+    url: https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN02/LN021.html
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: Full page, fetched and read directly. In its long-term network list it labels the Yellow Line as 設計階段 (design stage); the page footer is dated 2 September 2026.
 ---
 
 ## Route and structure
@@ -111,6 +135,15 @@ approximately NT$236.858 billion.[^mtbu-yellow-planning] That is roughly a
 64% increase over the original comprehensive-planning figure; the bureau's
 own planning-description page states both numbers without explaining the
 cause of the increase, and this page does not guess at one.[^mtbu-yellow-planning]
+
+## Two official stage labels
+
+The bureau's current progress overview lists the Yellow Line as 執行 (execute)
+and 興建中 (under construction), while its separate long-term network
+description labels the same line 設計階段 (design stage).[^mtbu-yellow-progress-overview][^mtbu-yellow-network-plan]
+Both pages carry a 2 September 2026 footer date. They are different official
+descriptions of the project's stage, so this page records both labels rather
+than silently choosing one.
 
 ## Six contracts, six different stages
 

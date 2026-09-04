@@ -26891,3 +26891,35 @@ in `scripts/nav-check.mjs`, `probe.mjs`, `print-shot.mjs`, `article-shot.mjs`,
 link, navigation-label, sitemap and browser-verification paths already handled
 the `/en/` and `/zh-Hant/` trees. The single-browser `npm run nav` regression
 passed all 19 checks against `/en/...` routes.
+
+## Run 313 Part 2 — non-Taipei depth and current thin-page audit (2026-09-05)
+
+Two existing line pages received source-backed additions after full-page reads of
+current official material. The Kaohsiung Yellow Line page grew from 659 to 722
+body words. DORTS's `捷運路線進度圖` (https://mtbu.kcg.gov.tw/KaohsiungMetro/Roadmapschedule.html),
+footer-dated 2 September 2026, labels the line `執行 / 興建中` (Execute / under
+construction); its separate `路網規劃說明`
+(https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN02/LN021.html), with the
+same footer date, labels it `設計階段` (design stage). Both values are now
+published as an official-source conflict in `content/rail/krtc/lines/yellow-line.md`
+and recorded in its research file; neither is silently selected.
+
+The Taichung Green Line page grew from 753 to 851 body words. Taichung's
+Transport Bureau annual-inspection report
+(https://www.traffic.taichung.gov.tw/news/index-1.asp?Parser=9,4,20,,,,21624),
+published 14 August 2026, adds 2025 ridership of 17.22 million, cumulative
+ridership above 60 million, 95.6% passenger satisfaction, and the inspection
+result of 6 commendations, 35 improvement suggestions and 2 general deficiencies,
+including signalling, AI-recognition and emergency-response recommendations.
+
+A corrected current word-count audit supersedes Run 309's undercount of 73:
+113 non-index Markdown-backed pages are below 400 body words — 11 bike-station
+pages, 60 bus-route pages, one bus model, one bus operator, one bus depot, 38
+Taoyuan Metro station pages and the one Sanmin source-boundary page. They were
+checked against their existing TDX, operator and municipal source boundaries;
+the fields absent from those structured records are already TBC, and this batch
+found no new route-, vehicle-, station- or project-specific source that would
+add real information. They remain short rather than receiving identical
+background prose. All KRTC, TMRT, THSR and TRA pages are at least 400 words
+(minimums 407, 403, 635 and 436 respectively). No pages were changed in those
+checked groups.

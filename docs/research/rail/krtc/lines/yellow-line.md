@@ -1,4 +1,4 @@
-# Kaohsiung Metro Yellow Line — research findings, 28 August 2026
+# Kaohsiung Metro Yellow Line — research findings, 5 September 2026
 
 > Corpus warning: files under `docs/research/` are leads and working notes, not sources. `docs/research/rail/krtc.md` and this session's KRTC technology/rolling-stock research files (signalling.md, fleet-roster.md) already mention the Yellow Line in passing (fully driverless CBTC signalling, Stadler rolling stock); this is the first dedicated report on the line itself — route, stations, cost and construction status.
 
@@ -47,10 +47,17 @@ Orange and Circular Light Rail only.
   - **YD01** (detailed-design technical-services contract): awarded to a three-firm consortium (中興顧問工程公司/亞新工程顧問公司/萬鼎工程服務公司). Its first design segment, covering YC04 (from Y8 station body exclusive to Y10), had its design results placed for public review on 2 October 2025 (114/10/2), re-announced for tender a second time on 22 June 2026 (115/6/22), but the 21 July 2026 (115/7/21) bid opening failed with no bidders; the bureau states it is under review and plans to re-announce the tender by the end of August 2026 (115年8月底前).
   
   Source: Kaohsiung City Government Mass Rapid Transit Bureau, `工程進度` (Construction Progress), `https://mtbu.kcg.gov.tw/KaohsiungMetro/ApprovedRoutes/yellow/yellow03.html`, PRIMARY, High confidence, fetched and read in full (raw HTML parsed directly).
+- **The bureau's route-progress overview lists the Yellow Line as `執行` (Execute) and `興建中` (under construction).** Source: Kaohsiung City Government Mass Rapid Transit Bureau, `捷運路線進度圖` (Metro Route Progress Overview), `https://mtbu.kcg.gov.tw/KaohsiungMetro/Roadmapschedule.html`, PRIMARY, High confidence, fetched and read in full on 5 September 2026. Original-language basis: `捷運黃線 | 執行 | 興建中`. The page footer is dated `115-09-02` (2 September 2026).
+- **A separate long-term network description labels the Yellow Line `設計階段` (design stage).** Source: Kaohsiung City Government Mass Rapid Transit Bureau, `路網規劃說明` (Long-term Network Description), `https://mtbu.kcg.gov.tw/KaohsiungMetro/LongtermNetwork/LN02/LN021.html`, PRIMARY, High confidence, fetched and read in full on 5 September 2026. Original-language basis: `捷運都會線（黃線 - 設計階段）`. The page footer is also dated `115-09-02`.
 
 ## Conflicts
 
-None found — no second source addressing route length, station count, cost or construction status was located this session.
+The bureau's two pages use different stage labels for the Yellow Line, both
+with a 2 September 2026 footer: the route-progress overview says `執行 /
+興建中` (Execute / under construction), while the long-term network
+description says `設計階段` (design stage). They may be different reporting
+views, but the pages do not explain the difference. Both values are published
+here; neither is selected as the sole current label.
 
 ## Checked and failed
 
@@ -58,11 +65,13 @@ None found — no second source addressing route length, station count, cost or 
 - **A depot name** — checked 2026-08-28; the pages read confirm the line has one depot (機廠) as part of the YM01 contract scope, but do not give it a name of the kind this session's separate KRTC depots research found for the Red/Orange system's three depots (North, South, Daliao). TBC.
 - **The cause of the 64% construction-budget increase between the 2022 comprehensive plan and the 2025 revised plan** — checked 2026-08-28; the planning-description page states both figures but does not explain the increase. Not found on any page read.
 - **Search-engine queries for Yellow Line news coverage of the cost revision or bid failures** — checked 2026-08-28; the session's web-search budget was exhausted before this task could issue a query.
+- **The reason for the two official stage labels** — checked 2026-09-05; both full DORTS pages were fetched, but neither explains why the route-progress table says `執行 / 興建中` while the long-term network description says `設計階段`.
 
 ## Stated gaps
 
 No opening date, confirmed depot name, or explanation for the construction-
-budget revision was found in any source read for this page. Whether the
+budget revision was found in any source read for this page. The two official
+stage labels remain in conflict. Whether the
 line's signalling (already recorded elsewhere in this project's research as
 Siemens CBTC, fully driverless) and rolling stock (Stadler Rail car bodies)
 findings from this session's earlier technology/rolling-stock research
