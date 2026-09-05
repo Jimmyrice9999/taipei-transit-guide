@@ -76,7 +76,7 @@ The route is still under construction. A construction-project station should not
 
 ## Design brief
 
-The GC02 brief assigns G04 a future network role not visible in the station table: it is described as the Sanying Line terminus (LB14) and a gateway connecting southern Taoyuan with the Taipei–New Taipei metro area. The site brief places the station beside the new high-rise residential area west of Jinhe Road and Daan Forest Park to the east; its proposed palette uses green tones, with Sanying Line standard colours marking selected corners and lifts.[^dorts-gc02-design] This is a planned design relationship, not a statement that the Sanying extension or the park-facing station works are in service.
+The GC02 brief assigns G04 a future network role not visible in the station table: it is described as a Sanying Line terminal and a gateway connecting southern Taoyuan with the Taipei–New Taipei metro area. The site brief places the station beside the new high-rise residential area west of Jinhe Road and Daan Forest Park to the east; its proposed palette uses green tones, with Sanying Line standard colours marking selected corners and lifts.[^dorts-gc02-design] This is a planned design relationship, not a statement that the Sanying extension or the park-facing station works are in service.
 
 ## What the source does and does not establish
 

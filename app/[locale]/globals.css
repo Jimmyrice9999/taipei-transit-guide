@@ -14,6 +14,7 @@
      without going muddy against brown and orange. */
   --bg: #ffffff;
   --bg-well: #f4f5f7;
+  --surface-muted: #f8f9fa;
   --text: #14171a;
   --text-2: #5a6370;
   /*
@@ -32,6 +33,16 @@
   --text-3: #666e79;
   --rule: #e2e5ea;
   --rule-strong: #c6ccd4;
+  --status-ink: #42505d;
+  --status-good: #246b4a;
+  --status-data: #47617c;
+  --status-tbc: #8a5b00;
+  --status-gap: #6d6570;
+  --radius-sm: 3px;
+  --space-1: 0.35rem;
+  --space-2: 0.7rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
 
   /*
    * The filled ground in the section drawing. A surface, not a rule: the
@@ -1467,6 +1478,114 @@ main {
   color: var(--text-2);
   margin: 0 0 24px;
   max-width: var(--measure);
+}
+
+/* Editorial atlas registry: a quiet source note, then a dense but readable
+   status ledger. Status text is never encoded by colour alone. */
+.atlas-note {
+  display: grid;
+  gap: 3px;
+  max-width: var(--measure);
+  margin: 0 0 28px;
+  padding: 11px 14px;
+  border-inline-start: 4px solid var(--amber);
+  background: var(--surface-muted);
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.atlas-note strong {
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coverage-ledger {
+  max-width: 880px;
+  margin: 0 0 38px;
+}
+
+.coverage-ledger .section-kicker {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coverage-ledger-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-block: 1px solid var(--rule);
+  background: var(--rule);
+}
+
+.coverage-ledger-item {
+  min-width: 0;
+  padding: 13px 14px 14px;
+  background: var(--bg);
+}
+
+.coverage-ledger-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.coverage-status {
+  flex: none;
+  color: var(--status-ink);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.coverage-covered .coverage-status { color: var(--status-good); }
+.coverage-structured .coverage-status { color: var(--status-data); }
+.coverage-tbc .coverage-status { color: var(--status-tbc); }
+.coverage-not-researched .coverage-status,
+.coverage-not-applicable .coverage-status,
+.coverage-no-service .coverage-status { color: var(--status-gap); }
+
+.coverage-ledger-note {
+  display: block;
+  margin-top: 3px;
+  color: var(--text-2);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.coverage-ledger-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 680px) {
+  .coverage-ledger-list {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-ledger-heading {
+    gap: 7px;
+  }
+
+  .coverage-status {
+    font-size: 9px;
+  }
 }
 
 /* ------------------------------------------------------------------ */

@@ -447,9 +447,11 @@ The earlier DORTS project and engineering pages did not give a project cost or
 opening date when they were read; the later opening notice now establishes the
 30 August 2026 public-opening date.[^dorts-east-extension][^dorts-cr580c][^dorts-xinyi-opening-2026-08-30]
 
-A numbering trap worth flagging while it is still live. The station being built
-takes **`R01`**, at the end of a line whose other codes were assigned long
-before — and this line already carries one scheme laid over another: DORTS's own
+A numbering trap worth flagging while it is still live. Older secondary material
+labels the new east-terminal station with an R-prefix code, but the official
+opening notice fetched here identifies it by name rather than publishing a
+passenger-facing code. This line already carries one scheme laid over another:
+DORTS's own
 station table prints a separate 工程編號 column of original construction numbers
 beside today's passenger codes, and the two do not run in
 step[^dorts-tamsui]. Any planning-era station number for this extension should
@@ -479,9 +481,9 @@ be the same, and saying so is not the same as knowing it.
 
 **Station count.** DORTS's 22[^dorts-tamsui] and 7[^dorts-xinyi] share R08,
 which nets to 28 — the pre-extension service count, R02 to R28 plus R22A.
-Chinese Wikipedia says 29, counting the then-unopened `R01`[^zh-tamsui-xinyi].
+Chinese Wikipedia says 29, counting the then-unopened east-terminal station[^zh-tamsui-xinyi].
 Those records are now compatible with the later DORTS opening notice, which
-confirms that the R01 station is in service from 30 August 2026.[^dorts-xinyi-opening-2026-08-30]
+confirms that the east-terminal station is in service from 30 August 2026.[^dorts-xinyi-opening-2026-08-30]
 
 **Rolling stock.** Chinese Wikipedia's line infobox names C301, C381 and
 C381A[^zh-tamsui-xinyi]; its Xinbeitou article names C371 for the

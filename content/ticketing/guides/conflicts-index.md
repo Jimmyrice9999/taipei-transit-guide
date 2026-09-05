@@ -5068,9 +5068,9 @@ be the same, and saying so is not the same as knowing it.
 
 **Station count.** DORTS's 22[^rail-metro-lines-tamsui-xinyi-line-dorts-tamsui] and 7[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi] share R08,
 which nets to 28 — the pre-extension service count, R02 to R28 plus R22A.
-Chinese Wikipedia says 29, counting the then-unopened `R01`[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi].
+Chinese Wikipedia says 29, counting the then-unopened east-terminal station[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi].
 Those records are now compatible with the later DORTS opening notice, which
-confirms that the R01 station is in service from 30 August 2026.[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi-opening-2026-08-30]
+confirms that the east-terminal station is in service from 30 August 2026.[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi-opening-2026-08-30]
 
 **Rolling stock.** Chinese Wikipedia's line infobox names C301, C381 and
 C381A[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi]; its Xinbeitou article names C371 for the

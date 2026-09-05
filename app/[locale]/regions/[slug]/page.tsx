@@ -15,7 +15,7 @@ import Figure from '@/components/Figure'
 import RichText from '@/components/RichText'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getImage } from '@/lib/images'
-import { REGIONS, getRegion } from '@/lib/regions'
+import { REGIONS, getRegion, type CoverageStatus } from '@/lib/regions'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -45,6 +45,15 @@ const REGION_HERO_CAPTION: Record<string, { alt: string; caption: string }> = {
     alt: 'Shay geared steam locomotive No. 25, numbered disc on its smokebox door, coupled to open carriages, steam venting beneath it among trees.',
     caption: 'Shay locomotive No. 25 with a carriage rake.',
   },
+}
+
+const STATUS_LABELS: Record<CoverageStatus, string> = {
+  covered: 'Covered',
+  structured: 'Structured',
+  'no-service': 'No service registered',
+  'not-applicable': 'Not applicable',
+  'not-researched': 'Not yet researched',
+  tbc: 'TBC',
 }
 
 export function generateStaticParams() {
@@ -102,6 +111,28 @@ export default async function RegionPage({
       )}
 
       <div className="page-body">
+        <section className="coverage-ledger" aria-labelledby="coverage-heading">
+          <div className="section-kicker">National registry</div>
+          <h2 id="coverage-heading" className="section-heading">Coverage by mode</h2>
+          <ul className="coverage-ledger-list">
+            {region.modes.map((mode) => (
+              <li key={mode.key} className={`coverage-ledger-item coverage-${mode.status}`}>
+                <span className="coverage-ledger-heading">
+                  <span>{mode.label}</span>
+                  <span className="coverage-status">{STATUS_LABELS[mode.status]}</span>
+                </span>
+                <span className="coverage-ledger-note">
+                  <RichText>{mode.note}</RichText>
+                  {mode.href && (
+                    <Link href={mode.href} className="coverage-ledger-link">Open canonical page</Link>
+                  )}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <h2 className="section-heading">Canonical pages</h2>
         <ul className="card-list">
           {region.links.map((link) => (
             <li key={link.href}>
