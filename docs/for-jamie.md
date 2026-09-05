@@ -1,21 +1,20 @@
-# For Jamie
+# Handoff
 
-Run 314 — 5 September 2026. Part 0 is pushed through `8fce448e`.
+Run 315 — 5 September 2026. Part 0 reverified `02a94b74` and fresh
+`npm run adversarial`: 16/16 cases behaved as specified.
 
-The fresh `npm run adversarial` run was 16/16, with the full output recorded in
-the run log. Part 1 is pushed through `fa6207b0`: CI jobs now have explicit
-timeouts, the screenshot fix is confirmed on `origin/main`, and the exhaustive
-locale/URL audit found no sibling assumption.
+Part 1 inventory: KRTC 88, TMRT 26, TYMC 52, TRA 269, THSR 19; 60 bus
+routes, one bus operator and one bus model were under 400 words. Full queue
+breakdown and checked/left-alone reasons are in `docs/run-log.md`.
 
-Part 2 added sourced depth to TYMC's operator page (+67 body words) and the
-Taoyuan Green Line page (+25). It added a new TYMC research file and retained
-the DORTS progress conflict rather than resolving it. The full corpus audit
-left structured/TBC pages alone where no new primary fact survived checking.
+Part 2 added sourced depth to 16 TYMC Green Line stations, all 22 Airport MRT
+station pages, Shiding community-bus operations and the King Long model.
+The 60 short bus routes were checked against their attached full primary
+source sets and left unchanged where no new route-specific fact survived.
 
-Part 2 commit `b1e68ab3` is pushed and matches `origin/main`. The full gate
-passed: 6,002 routes, 2,636,862 links, 243 tests, 27,413 sourced claims,
-4,653 TBC, zero asserted claims, and zero genuine contrast failures.
+Local commits: `3e8c0ae3` contains the content/research batch; the gate and
+handoff record is being committed next. Do not stage generated audits,
+screenshots, PDFs, `.unsnooze/`, or `probes/`.
 
-Do not stage `probes/`, generated audit JSONs, screenshots or PDFs. CI cannot be
-confirmed from this machine: `gh` is unavailable, Actions was not polled, and
-the direct Actions API is blocked.
+CI could not be confirmed from this machine: `gh` is unavailable and the
+direct GitHub Actions API is blocked. No browser full verification was run.

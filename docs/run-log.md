@@ -27376,3 +27376,32 @@ full-source exhaustion beyond the sources named on each page.
 No bus route page was padded to reach 400 words. The short-route queue remains
 a depth candidate if a new primary source becomes available; the current
 source check found no defensible new fact to add.
+
+### Run 315 — final full-gate record (5 September 2026)
+
+The actual `npm run gate:full` command exited 0. Its decisive output was:
+
+```text
+Generating static pages using 23 workers (6002/6002) in 2.3min
+postbuild: 5257 pages checked against the Han subsets — no missing glyphs.
+Checked 2636952 internal links across 5257 pages.
+  ✓ no broken links
+  ✓ every #fragment resolves
+  ✓ no orphan pages
+nav-labels: clean (5257 pages — every dropdown-nav link lands on the page it names).
+  ✓ no errors
+  ✓ no warnings
+No contradictions across 17 cross-checks.
+citations: clean.
+  sourced   27458   86%  a citation is attached
+  TBC       4653   14%  the site says it does not know
+  ASSERTED     0    0%  resting on nobody's authority
+ℹ tests 243
+ℹ pass 243
+ℹ fail 0
+research: 288 file(s), 1138 recorded as checked and failed.
+research: clean.
+  ✓ no station sits more than 200 m from its line's alignment
+  ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
+  Genuine WCAG contrast failures: 0
+```
