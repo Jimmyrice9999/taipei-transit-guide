@@ -2,7 +2,7 @@
 
 > Corpus warning: files under `docs/research/` are leads and working notes, not sources. Every published claim below was checked against the linked primary page or live data response.
 
-**Checked:** 24 August 2026. **Subject:** the Taoyuan Metro Green Line project registry, current construction record, station table and TDX coverage boundary.
+**Checked:** 5 September 2026. **Subject:** the Taoyuan Metro Green Line project registry, current construction record, station table and TDX coverage boundary.
 
 ## What is established
 
@@ -13,12 +13,14 @@
 - The project page gives a main-line opening target of 2030. Original-language basis: `捷運綠線預估於119年主線通車。` **PRIMARY, High confidence:** this is a project target, not an operating timetable. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
 - The current DORTS construction overview lists the Green Line as `施工階段` with `計畫總進度72.19%`. **PRIMARY, High confidence:** programme-level overview fetched in full on 24 August 2026. [dorts-rail-progress](https://dorts.tycg.gov.tw/cp.aspx?n=23173)
 - The project page separately lists civil, systems, detailed-design and station-equipment packages. The checked values are GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% as of March 2026, and GC04B 6.12% as of June 2026. **PRIMARY, High confidence:** package rows on the full project page; dates are retained because these are not one common measurement date. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- A fresh full-page read of the same DORTS project page, whose footer is dated 115-09-03, still publishes the June/March snapshot above: GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12%. **PRIMARY, High confidence:** the page was fetched and read in full on 5 September 2026. Original-language basis: `截至115年6月累計實際進度55.62%`, `93.85%`, `53.41%`, `75.62%`, `29.29%`, `截至115年3月累計實際進度80.14%` and `截至115年6月累計實際進度6.12%`. [dorts-green-current](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
 - DORTS publishes a separate record linking the approved Green Line comprehensive-planning report volumes. **PRIMARY, High confidence:** official report record fetched in full; the linked volumes are the source family for deeper civil, financial and design questions not answered by the summary page. Original-language title: `桃園捷運綠線綜合規劃報告書`. [dorts-green-report](https://dorts.tycg.gov.tw/News_Content.aspx?n=23199&s=1582920)
 - A live TDX check of the TYMC Line, Station, StationOfRoute, Route, Shape, LineTransfer and FirstLastTimetable families on 24 August 2026 returned Airport MRT records, including one `LineID` `A`, but no `LineID` `G` or Green Line station/route record. **PRIMARY, High confidence for the checked response boundary:** direct MOTC TDX responses; this does not establish that no future Green Line dataset will be published. [tdx-tymc-green-check](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TYMC?$format=JSON&$top=1000&$skip=0)
 
 ## Conflicts
 
 - The DORTS construction overview gives 72.19% for the whole Green Line programme, while the project page gives package-specific values ranging from 6.12% to 93.85%, with package dates ranging from March to June 2026. These are not interchangeable measures: the first is a programme total, while the others are individual contracts or design/equipment packages. Every value is retained in the content and no average or “best” progress value is chosen. [dorts-rail-progress](https://dorts.tycg.gov.tw/cp.aspx?n=23173) [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
+- The separate DORTS progress page read on 29 August 2026 published later-looking values for the same package families — GC01 94.57%, GC03 76.222%, GM01 56.801%, GC02 53.95%, GC05 29.70% and GC04B 7.94% — while the project page fetched on 5 September retains its June/March snapshot (93.85%, 75.62%, 55.62%, 53.41%, 29.29% and 6.12%). The dates and page boundaries are published as a conflict between snapshots; neither is silently substituted for the other. [dorts-progress-2026](https://dorts.tycg.gov.tw/cp.aspx?n=23174) [dorts-green-current](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132)
 - The DORTS project registry establishes a planned 21-station Green Line, while the live TDX TYMC operating dataset exposes only the Airport MRT A line. This is a publication-state conflict between a government project registry and an operating-data API, not evidence that the project stations are open or that the project does not exist. [dorts-green](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) [tdx-tymc-green-check](https://tdx.transportdata.tw/api/basic/v2/Rail/Metro/Line/TYMC?$format=JSON&$top=1000&$skip=0)
 
 ## Checked and failed

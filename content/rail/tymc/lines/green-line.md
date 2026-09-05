@@ -3,7 +3,7 @@ title: "Taoyuan Green Line"
 summary: "Taoyuan’s under-construction green route from Bade through Taoyuan and Luzhu to the Airport MRT branches at A11 and A16."
 line: G
 operator: TYMC
-updated: 2026-08-29
+updated: 2026-09-05
 order: 2
 facts:
   - label: "Line code"
@@ -78,6 +78,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Official record and links to the approved comprehensive planning report volumes."
+  - id: dorts-green-current
+    title: "Taoyuan Metro Green Line project page — 3 September 2026 page state"
+    titleOriginal: "桃園市政府捷運工程局-捷運綠線"
+    publisher: Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)
+    url: https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Fresh full-page read. Footer dated 115-09-03; retains the DORTS project page's March/June package snapshot: GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12%."
   - id: tdx-tymc-green-check
     title: "Live TDX TYMC Green Line coverage check"
     titleOriginal: "交通部運輸資料流通服務平臺 TYMC 綠線查核"
@@ -130,6 +139,8 @@ The bureau’s route description puts the eastern section through Bade’s Jiesh
 The feasibility study was approved by the Executive Yuan on 26 August 2011, the environmental assessment on 9 September 2014 and the comprehensive planning report on 20 April 2016.[^dorts-green] The bureau records the GM01 systems package award in 2018, GC01’s elevated civil package in 2018, GC02 and GC03 underground packages in 2019, and the GC05 lifts-and-escalators package in 2022.[^dorts-green] It separately records GD04A detailed design and GC04B’s later elevated civil package, with the package progress values dated to June 2026.[^dorts-green]
 
 The current construction overview lists the Green Line as being in the construction stage at 72.19% overall progress.[^dorts-rail-progress] That programme figure is not silently substituted for any package figure: the line page records both the overview value and the bureau’s individual GM01, GC01, GC02, GC03, GC05 and GC04B values as different measurements with different dates.[^dorts-green][^dorts-rail-progress]
+
+A fresh read of the DORTS project page, whose footer is dated 3 September 2026, still carries the March/June package snapshot: GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12%.[^dorts-green-current] The separate progress page read on 29 August published different values for the same package families — GC01 94.57%, GC03 76.222%, GM01 56.801%, GC02 53.95%, GC05 29.70% and GC04B 7.94% — so both snapshots remain in the record with their page dates and are not averaged or silently resolved.[^dorts-progress-2026][^dorts-green-current]
 
 ## Package progress, station renumbering and two extensions
 

@@ -1,15 +1,18 @@
 # For Jamie
 
-Run 313 is complete through the permitted local checks; commits are on `main`.
+Run 314 — 5 September 2026. Part 0 is pushed through `8fce448e`.
 
-Part 0 fixed the adversarial harness's stale unprefixed output path. `npm run adversarial` is 16/16; the full build is 6,002/6,002 in both locales with no silent page loss.
+The fresh `npm run adversarial` run was 16/16, with the full output recorded in
+the run log. Part 1 is pushed through `fa6207b0`: CI jobs now have explicit
+timeouts, the screenshot fix is confirmed on `origin/main`, and the exhaustive
+locale/URL audit found no sibling assumption.
 
-Part 1 fixed stale locale assumptions in six manual helpers. The screenshot fix is present in `fdbc10fa`; `npm run nav` passed 19/19. Workflow jobs have no explicit `timeout-minutes`.
+Part 2 added sourced depth to TYMC's operator page (+67 body words) and the
+Taoyuan Green Line page (+25). It added a new TYMC research file and retained
+the DORTS progress conflict rather than resolving it. The full corpus audit
+left structured/TBC pages alone where no new primary fact survived checking.
 
-Part 2 added sourced depth to KRTC Yellow (659->722 words, with an official stage-label conflict) and TMRT Green (753->851 words, including the 2025 inspection record). The corrected audit found 113 short data/exhausted pages; they remain short and TBC.
-
-`npm run gate:full` passed: 6,002 routes, 2,632,852 links, 243 unit tests, 27,409 sourced claims, 4,653 TBC, zero asserted claims. `gate:fast` also passed before commits.
-
-Bounded browser verification passed with one worker: 156/156 pages, zero axe findings, both locales/maps/fallbacks, 120 smoke screenshots and 7 PDFs. Forty-six expected clips were recorded at the 12,000 px Chromium limit.
-
-The exhaustive browser sweep was deferred under the reduced-capacity requirement. Do not stage `probes/`, generated audit JSONs, screenshots or PDFs. CI could not be confirmed here; Actions was not polled and `gh` is unavailable. No push was performed.
+The final Part 2 gate and push are the next sequential actions. Do not stage
+`probes/`, generated audit JSONs, screenshots or PDFs. CI cannot be confirmed
+from this machine: `gh` is unavailable, Actions was not polled, and the direct
+Actions API is blocked.

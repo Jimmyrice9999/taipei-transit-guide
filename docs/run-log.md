@@ -27060,3 +27060,74 @@ research: clean.
   ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
   Genuine WCAG contrast failures: 0
 ```
+
+## Run 314 Part 2 - Taiwan research depth audit (2026-09-05)
+
+The systematic body-word audit covered 1,873 content pages. It used the
+rendered Markdown body after frontmatter; structured facts, specifications and
+source metadata were not counted as prose. The audit did not pad pages merely
+to hit 400 words: data-driven records and explicit TBC boundaries were retained
+when no new primary fact survived checking.
+
+### Sourced additions
+
+- `content/rail/operators/tymc.md`: added 67 body words, taking the body from
+  202 to 269 by this audit's whitespace count. The fresh full reads were TYMC's
+  company-history page and organisational-structure page. They establish the
+  three-government formation on 6 July 2010, the operator's construction-test,
+  staged-takeover, training, rehearsal and maintenance preparation, the 2017
+  operating chronology and the 2023 A22 extension; they also establish the
+  separate Airport/Green Line control centres and the Systems/Facilities
+  maintenance boundary. Sources: `tymc-history-2026` and `tymc-org-2026`.
+- `content/rail/tymc/lines/green-line.md`: added 25 body words, taking the
+  body from 263 to 288 by the same count. A fresh full read of DORTS's project
+  page (footer 115-09-03) records the March/June package snapshot. The page
+  was added as `dorts-green-current`; its values are kept beside, not merged
+  with, the separate progress-page snapshot. The research file
+  `docs/research/rail/operators/tymc.md` is new; `docs/research/rail/taoyuan-green.md`
+  records the fresh page state and the conflict.
+
+### Conflicts retained
+
+DORTS's project page retains GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03
+75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12% (March/June snapshots).
+The separately read progress page has GC01 94.57%, GC03 76.222%, GM01
+56.801%, GC02 53.95%, GC05 29.70% and GC04B 7.94%. Both page boundaries and
+dates remain published; no average or preferred value was chosen.
+
+### Checked and left alone
+
+- KRTC: all 88 Red, Orange and Circular Light Rail pages were checked; every
+  body is at least 407 words. The station records already separate TDX facts
+  from operator/government TBCs for art, accessibility and incidents, so no
+  generic station prose was added.
+- TMRT: all 26 pages were checked; the shortest body is 403 words. G13/G16
+  and the depot/system pages already contain their available contract,
+  technology and accessibility evidence, with station-specific gaps marked
+  TBC.
+- TYMC: all 52 pages were checked. Thirty-eight station bodies remain below
+  400 words (268-word minimum), chiefly structured Airport MRT records and
+  planned Green Line stations. TDX supplies the structured fields, while the
+  DORTS project page does not publish facility, art, accessibility or operating
+  facts per planned station; padding would violate the sourcing rule.
+- TRA and THSR: all 269 TRA pages and all 19 THSR pages were checked; minimum
+  bodies are 436 and 635 words. Station, branch-line, rolling-stock,
+  electrification, BOT/TOD and extension material is already source-bounded;
+  no new primary fact was found in this pass.
+- Bus: all 1,051 route pages, 61 operator pages and 10 model pages were
+  checked. Sixty route pages, one operator page and King Long's model page are
+  below 400, but these are TDX/ebus records or pages that explicitly TBC
+  unpublished fleet details. Generic route history and invented specifications
+  were not added.
+- Air, ferry, road, statistics and ticketing: all pages in these seams were
+  checked. Current minima are 423, 765, 531, 414 and 604 words respectively;
+  no page needed padding. Existing primary-backed pages cover the domestic
+  airports/carriers, ferries, taxi/motorway, modal-share/traffic safety and
+  fare/accessibility seams.
+- Bike, cable, rail history, rail projects and the remaining operator/facility
+  groups were also included in the inventory. Their short records are
+  structured or already at the evidence boundary; no additional fetched
+  primary source justified an edit in this pass.
+
+CI cannot be confirmed from this machine: `gh` is unavailable, Actions was not
+polled, and the direct Actions API is blocked.

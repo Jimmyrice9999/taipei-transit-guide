@@ -2811,6 +2811,24 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Current programme-level progress record: Green Line construction stage and 72.19% total progress."
+  - id: "rail-tymc-lines-green-line-dorts-green-current"
+    title: "Taoyuan Metro Green Line project page — 3 September 2026 page state"
+    titleOriginal: "桃園市政府捷運工程局-捷運綠線"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132"
+    accessed: "2026-09-05"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Fresh full-page read. Footer dated 115-09-03; retains the DORTS project page's March/June package snapshot: GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12%."
+  - id: "rail-tymc-lines-green-line-dorts-progress-2026"
+    title: "Green Line construction progress"
+    titleOriginal: "工程進度：捷運綠線"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: "https://dorts.tycg.gov.tw/cp.aspx?n=23174"
+    accessed: "2026-08-29"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Per-package progress figures dated 31 July 2026 (GC01/GC02/GC03/GC04B/GC05/GM01), the station-to-package mapping from the bureau's own per-station design pages, the G13a/G14/G31/G32 to G14/G15/G15a/G15b renumbering, and a July 2026 driverless-demonstration news item on the same domain."
   - id: "rail-tymc-operations-fares-gvm-tymc-discount-cancelled"
     title: "Taoyuan Airport MRT's 2024 surplus hit a record NT$500 million — why cancel the system-wide NT$10 ticket discount?"
     titleOriginal: "桃園機場捷運2024盈餘5億創新高！為何全線取消車票10元優惠？"
@@ -5697,10 +5715,14 @@ The feasibility study was approved by the Executive Yuan on 26 August 2011, the 
 
 The current construction overview lists the Green Line as being in the construction stage at 72.19% overall progress.[^rail-tymc-lines-green-line-dorts-rail-progress] That programme figure is not silently substituted for any package figure: the line page records both the overview value and the bureau’s individual GM01, GC01, GC02, GC03, GC05 and GC04B values as different measurements with different dates.[^rail-tymc-lines-green-line-dorts-green][^rail-tymc-lines-green-line-dorts-rail-progress]
 
+A fresh read of the DORTS project page, whose footer is dated 3 September 2026, still carries the March/June package snapshot: GM01 55.62%, GC01 93.85%, GC02 53.41%, GC03 75.62%, GC05 29.29%, GD04A 80.14% and GC04B 6.12%.[^rail-tymc-lines-green-line-dorts-green-current] The separate progress page read on 29 August published different values for the same package families — GC01 94.57%, GC03 76.222%, GM01 56.801%, GC02 53.95%, GC05 29.70% and GC04B 7.94% — so both snapshots remain in the record with their page dates and are not averaged or silently resolved.[^rail-tymc-lines-green-line-dorts-progress-2026][^rail-tymc-lines-green-line-dorts-green-current]
+
 #### Sources for this entry
 
 - [Taoyuan Metro Green Line project page](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-green]
 - [Taoyuan rail construction progress overview](https://dorts.tycg.gov.tw/cp.aspx?n=23173) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-24.[^rail-tymc-lines-green-line-dorts-rail-progress]
+- [Taoyuan Metro Green Line project page — 3 September 2026 page state](https://dorts.tycg.gov.tw/cp.aspx?Create=1&n=23132) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-09-05.[^rail-tymc-lines-green-line-dorts-green-current]
+- [Green Line construction progress](https://dorts.tycg.gov.tw/cp.aspx?n=23174) — primary; Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局); accessed 2026-08-29.[^rail-tymc-lines-green-line-dorts-progress-2026]
 
 ## Taoyuan Airport MRT fare history — A separately reported discount, not verified here
 
