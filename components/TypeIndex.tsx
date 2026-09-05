@@ -26,6 +26,7 @@ import { getFolderContent, getPages, getSection, getSystem, getType, getTypes } 
 import { getEntityIconKind } from '@/components/EntityIcon'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
+import NationalCoachIndex from '@/components/NationalCoachIndex'
 
 
 /** Which type index to render. `system` is '' for a section with no systems. */
@@ -147,6 +148,8 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
         than listed and apologised for.
       */}
       {folderContent.html && <div className="prose" dangerouslySetInnerHTML={{ __html: folderContent.html }} />}
+
+      {section === 'bus' && type === 'intercity' && <NationalCoachIndex />}
 
       {/*
         ── Run 51, part 4: this list is why the page exists ────────────────────
