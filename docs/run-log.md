@@ -27707,3 +27707,43 @@ while still running. No scout wrote, ran Git or changed the tree, and no
 unreturned scout claim was incorporated. The durable falsification findings
 therefore remain the source-based corrections recorded in the coverage audit,
 rather than invented summaries of work that did not return.
+
+#### Commit and push proof
+
+The four durable audit files were committed in the main session and pushed.
+Actual command output:
+
+```text
+git commit -m "Run 316: audit Taiwan-wide coverage and code UI"
+[main 6195dc75] Run 316: audit Taiwan-wide coverage and code UI
+ 4 files changed, 1700 insertions(+), 14 deletions(-)
+ create mode 100644 docs/code-ui-architecture-audit.md
+ create mode 100644 docs/taiwan-public-transport-coverage-audit.md
+
+git push origin HEAD:main
+To https://github.com/Jimmyrice9999/taipei-transit-guide.git
+   7a53e39d..6195dc75  HEAD -> main
+
+git log origin/main --oneline -1
+6195dc75 Run 316: audit Taiwan-wide coverage and code UI
+git log HEAD --oneline -1
+6195dc75 Run 316: audit Taiwan-wide coverage and code UI
+
+git status --short
+ M data/generated/aggregate-data.json
+ M docs/adversarial-results.json
+ M docs/browser-verification.json
+ M docs/browser-verification.md
+ M docs/claims.json
+ M docs/links-audit.json
+ M docs/print/_not-found.pdf
+ M docs/unused-audit.json
+?? .unsnooze/
+?? docs/print/404-en.pdf
+?? docs/print/404-zh-Hant.pdf
+... generated print artefacts omitted from this excerpt ...
+```
+
+The audit paths are absent from the final status. The working tree is not
+clean because the baseline/generated artefacts above remain intentionally
+unstaged; none were reverted or deleted.
