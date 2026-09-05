@@ -27324,6 +27324,17 @@ research: clean.
   Genuine WCAG contrast failures: 0
 ```
 
+### Run 315 — push verification (5 September 2026)
+
+The push and the required remote/local comparison produced exactly:
+
+```text
+To https://github.com/Jimmyrice9999/taipei-transit-guide.git
+   02a94b74..cae1daf2  main -> main
+cae1daf2 Run 315: record gate and handoff
+cae1daf2 Run 315: record gate and handoff
+```
+
 ## Run 315 — Part 2 bus queue audit (5 September 2026)
 
 The two non-route metadata pages were deepened from their existing official

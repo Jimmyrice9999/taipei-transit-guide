@@ -12,9 +12,9 @@ station pages, Shiding community-bus operations and the King Long model.
 The 60 short bus routes were checked against their attached full primary
 source sets and left unchanged where no new route-specific fact survived.
 
-Local commits: `3e8c0ae3` contains the content/research batch; the gate and
-handoff record is being committed next. Do not stage generated audits,
-screenshots, PDFs, `.unsnooze/`, or `probes/`.
+Local commits `3e8c0ae3` and `cae1daf2` are pushed; the latter matches
+`origin/main`. Do not stage generated audits, screenshots, PDFs, `.unsnooze/`,
+or `probes/`.
 
 CI could not be confirmed from this machine: `gh` is unavailable and the
 direct GitHub Actions API is blocked. No browser full verification was run.
