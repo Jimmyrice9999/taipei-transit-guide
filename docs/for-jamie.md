@@ -1,20 +1,22 @@
 # Handoff
 
-Run 315 — 5 September 2026. Part 0 reverified `02a94b74` and fresh
-`npm run adversarial`: 16/16 cases behaved as specified.
+Run 316 (5 September 2026) was a research, architecture and visual-design audit,
+not implementation. No speculative production content or broad redesign was made.
 
-Part 1 inventory: KRTC 88, TMRT 26, TYMC 52, TRA 269, THSR 19; 60 bus
-routes, one bus operator and one bus model were under 400 words. Full queue
-breakdown and checked/left-alone reasons are in `docs/run-log.md`.
+Reports: `docs/taiwan-public-transport-coverage-audit.md` and
+`docs/code-ui-architecture-audit.md`; detailed evidence and gates are in `docs/run-log.md`.
 
-Part 2 added sourced depth to 16 TYMC Green Line stations, all 22 Airport MRT
-station pages, Shiding community-bus operations and the King Long model.
-The 60 short bus routes were checked against their attached full primary
-source sets and left unchanged where no new route-specific fact survived.
+National headline: the 1,051 bus corpus is Taipei/New Taipei, not nationwide;
+city buses, DRT, bike systems, ferries, domestic-air route families and terminals
+are the main gaps. Alishan current status needs conflict-aware correction.
 
-The Run 315 content and handoff records are pushed; the final remote/local
-hash comparison matched. Do not stage generated audits, screenshots, PDFs,
-`.unsnooze/`, or `probes/`.
+UI headline: keep the static Next.js/Markdown/TDX architecture and proven joins,
+nav, locale and accessibility fixes; adopt an editorial wayfinding atlas direction.
 
-CI could not be confirmed from this machine: `gh` is unavailable and the
-direct GitHub Actions API is blocked. No browser full verification was run.
+Recommended next run: build the 22-jurisdiction source-backed registries first,
+then bus/intercity/DRT/bike/ferry/air layers, followed by shared title/facts/table
+and discovery improvements. Do not stage generated PDFs, screenshots, probes or `.unsnooze/`.
+
+Baseline before this run: `HEAD=origin/main=7a53e39d`; final commit and clean-status
+proof are in the closing log entry. CI remains unknown: `gh` is unavailable and
+the direct GitHub Actions API is blocked. Exhaustive browser verification was not run.

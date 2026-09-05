@@ -6891,6 +6891,8 @@ A11 destination heading do not resolve every terminal-specific first/last
 value; those gaps are retained as TBC. The research ledger now records the
 A6–A22 timetable facts and source URLs individually.
 ```
+
+after the gates and push in the final handoff; no scout commit exists.
 sourced    128   74%   a citation is attached
 TBC         10    6%   the site says out loud that it does not know
 ASSERTED    34   20%   resting on nobody's authority
@@ -27416,3 +27418,292 @@ research: clean.
   ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
   Genuine WCAG contrast failures: 0
 ```
+
+### Run 316 — Taiwan-wide coverage and code/UI architecture audit (5 September 2026)
+
+This was a research, architecture and visual-design audit, not a production
+content or broad redesign run. It read the required project instructions and
+handoff files first, then measured the current repository, reviewed the
+rendering architecture and visually inspected representative generated pages.
+
+#### Baseline and safety
+
+The live baseline was `HEAD=origin/main=7a53e39d Run 315: make handoff status
+durable`. The pre-run `git status --short` had 5,191 records. The exact tracked
+modified paths were:
+
+```text
+ M data/generated/aggregate-data.json
+ M docs/adversarial-results.json
+ M docs/browser-verification.json
+ M docs/browser-verification.md
+ M docs/claims.json
+ M docs/links-audit.json
+ M docs/unused-audit.json
+```
+
+Existing untracked material was `.unsnooze/`, generated `docs/print/` PDFs,
+generated `docs/screenshots/` PNGs and `probes/`. None was staged. A first
+diagnostic adversarial invocation overlapped another build and exposed the
+temporary named `zz-*` fixtures; those explicit fixtures were removed and a
+fresh non-overlapping adversarial run exited 0 with 16/16. No temporary fixture
+remains.
+
+Eight initial scout-launch attempts were rejected by the account thread limit.
+Six pre-assigned read-only scouts did return text-only briefs, covering TDX/bus
+taxonomy, DRT/accessibility, urban rail, ferries, public bike and aviation.
+They did not write, run Git or spawn further agents. The stable concurrency
+available to this run was therefore not the requested 8–12; findings arrived
+one at a time. Main checked the tree after the returned scout work: 5,193
+records, exactly the baseline plus the two deliberate audit reports.
+
+#### Research methodology and source seams
+
+Mandarin-first full-page research used TDX category/supply JSON and OpenAPI;
+Highway Bureau bus, intercity and Happiness registers; CAA domestic carrier,
+airport and September timetable pages; Maritime and Port Bureau Small Three
+Links and passenger-ship pages; official DORTS/NTMC/Taoyuan/Taichung/
+Kaohsiung/Tainan/Hsinchu/Keelung project pages; TRA and Alishan operator pages;
+YouBike, TDX, MOOVO and county bike pages; and official accessibility/
+rehabilitation-bus pages. Dynamic-page, 403, 429, timeout and oversized-fetch
+failures are recorded in the reports. Search snippets were not used as evidence.
+
+The fresh source findings include: TDX has 24 bus source-unit rows and a
+separate DRTS category; its V2 bus specification includes intercity coach while
+V3 separates CityBus/ShuttleBus/DRTS. The current full Highway Bureau CSV
+snapshot has 1,835 grouped variants, 43 operator labels and 132,522 rows, while
+the committed repository snapshot has the older 1,837/44/132,398 measurement.
+The fresh bike pull has 9,522 YouBike rows across 13 jurisdictions plus 202
+Changhua and 263 Yunlin MOOVO rows; the repository snapshot remains 7,403 rows
+across five jurisdictions.
+
+CAA currently lists UNI Air, Mandarin Airlines and Daily Air. Its complete
+September 2026 timetable extraction yields 24 route families, with permanent
+membership still schedule-dependent. MPB confirms four Small Three Links pairs:
+Kinmen–Xiamen Wutong, Kinmen–Quanzhou Shijing, Nangan Fuao–Fuzhou Langqi and
+Beigan Baisha–Fuzhou Huangqi. The domestic MPB fixed-service page is the next
+extraction seam, not a source for an invented national ferry count.
+
+#### Coverage findings and corrections
+
+The 1,051 route corpus is not nationwide: it is 636 New Taipei and 415 Taipei.
+Four regional bus feeds exist but are not yet one national first-class bus
+architecture. Most jurisdictions outside Taipei/New Taipei are weak or near
+zero for first-class bus, DRT, bike, ferry and terminal coverage.
+
+幸福巴士/幸福小黃 and community/reservation buses belong in a distinct DRT
+service-class layer with fixed/flexible/booking/fare fields. 復康巴士 and
+long-term-care transport belong in a labelled eligibility-limited reference
+layer, not ordinary open-route coverage. The Highway Bureau’s paginated national
+register is the source seam; exact total remains TBC pending extraction.
+
+Public-bike expansion must include YouBike and MOOVO and preserve “a dock is a
+table row, not a page.” Ferry expansion must include domestic island families,
+Penghu/Matsu inter-island routes, Xiaoliuqiu, Green/Orchid Island, Kaohsiung
+local ferries, Blue Highway public service and Small Three Links, while excluding
+private cruises and attraction-only boats. Airports should be intermodal node
+pages, not a general aviation encyclopaedia.
+
+Urban-rail corrections: Xinyi East opened 2026-08-30; Sanying entered paid
+operation 2026-09-01. Current approved/construction/active-feasibility projects
+deserve status pages, but unresolved proposals must not generate operating
+stations. Official project sources contain scope/status conflicts, including
+Xidong, Green Line–Zhongli, Tucheng–Shulin, Sanying–Bade, Taichung and
+Gangshan–Luzhu; each value is retained in the audit rather than silently chosen.
+
+Alishan is the immediate stale-content risk. Its current operator FAQ says the
+railway is not fully reopened and only Chiayi–Shizilu is operating, while the
+operator homepage reports full-line resumption after a weather suspension on
+2026-08-26. Existing content’s simple full-reopening wording needs a dated
+conflict correction before it can be called current.
+
+#### Code, UI and design decisions
+
+The site is a static-export Next.js/React/TypeScript compiler. `app/` owns
+locale-aware URL/template entry points; `components/` owns shared rendering;
+`lib/` owns Markdown parsing, registries, joins, locale, nav, images, search and
+aggregates; `content/` owns researched prose overlays; `data/` owns structured
+snapshots; scripts/tests enforce citations, claims, links, geometry, fonts,
+accessibility and determinism. Static SVG maps, static search fallback, image
+sidecars and Han subsets are deliberate parts of the deployment contract.
+
+Visually, the charcoal/amber transport identity, Zilla/Inter/Mono typography,
+line colours, facts, maps, citations, static HTML and accessibility are strong.
+The homepage is long and directory-like; cards repeat too evenly; national
+discovery is not prominent; the New Taipei group is an enormous list; data
+tables feel like raw engineering output; long pages have citation noise; and
+the 1280px side-rail/top-nav combination is visually heavy. The Traditional
+Chinese mode is honest but its coverage notice is bulky.
+
+`app/[locale]/globals.css` is 6,604 lines / 165,201 bytes, with 34 root
+variables and 51 media-query blocks. It is large but commented and organised
+around real page families. Consolidate semantic tokens, title/section
+hierarchy, facts/spec/table primitives, card surfaces and nav focus/caret
+styling incrementally. Do not rewrite it wholesale.
+
+The recommended visual direction is **editorial wayfinding atlas**: retain the
+existing transport identity, strengthen page/title/status hierarchy, facts
+panels, table framing, region/mode discovery, bus-route scanability, related
+links, citation grouping, imagery and mobile spacing. The two audit reports
+contain the complete UI priority list, coverage matrix, source register, tiers,
+canonical URL proposal, technical risks and exact next-run sequence.
+
+#### Durable outputs
+
+- `docs/taiwan-public-transport-coverage-audit.md`
+- `docs/code-ui-architecture-audit.md`
+- `docs/for-jamie.md`
+- this Run 316 entry
+
+No speculative production-content pages, broad CSS refactor, font regeneration,
+screenshot/PDF staging or `taipei-commute` changes were made. Gate, bounded
+browser, commit and push results are appended to this entry before closeout.
+
+Commit: the final main-session commit and remote/local comparison are recorded
+after the gates and push in the final handoff; no scout commit exists.
+
+#### Bounded browser verification
+
+The required bounded command completed with exit code 0. The actual important
+output was:
+
+```text
+npm notice run taipei-transit-guide@0.1.0 verify:browser
+npm notice run node scripts/browser-verify.mjs
+Browser verification mode=template; corpus=4172 pages; templates=79; pages visited=156 (canonical=79, extremes=77); workers=3; timeout=30000ms; screenshotTimeout=30000ms; screenshotSet=full
+  ✓ no page produces a document-level horizontal scrollbar
+  ✓ no painted box in .page-main runs under the spine
+  ✓ zero violations across 156 pages
+  ✓ interactive-network-map-en: 713 linked stations; zoom=true; pan=true
+  ✓ interactive-network-map-zh-Hant: 713 linked stations; zoom=true; pan=true
+  ✓ /en/: 288 internal navigation links checked
+  ✓ /zh-Hant/: 288 internal navigation links checked
+  ✓ interactive-network-map-en at 320px: static SVG=true; stations=713
+  ✓ interactive-network-map-zh-Hant at 1440px: static SVG=true; stations=713
+  ✓ zero violations across 156 pages
+  1344 screenshots → docs/screenshots/
+  351 screenshot(s) clipped to stay under Chromium's capture limit — see docs/browser-verification.json
+Full data → docs/browser-verification.json
+
+✓ browser verification clean
+```
+
+The run also emitted intentional clipping warnings for very tall data/index
+pages because Chromium’s capture limit is 12,000px; the checker still passed.
+The exhaustive `verify:browser:full` command was not run.
+
+#### `npm run gate:fast`
+
+The command exited 0. The actual relevant output was:
+
+```text
+npm notice run taipei-transit-guide@0.1.0 gate:fast
+npm notice run npm run cite && npm run markers && npm run conflicts:check && npm run search:check && npm run font:check && npm run research && npm run test:unit:fast
+citations: 1873 content files, 1814 with a sources: block
+  8747 citations resolved — 8198 to primary sources, 549 to secondary
+citations: clean.
+marker-audit: clean (1873 Markdown files checked)
+conflicts: generated index is current.
+search: generated index is current.
+font-check: clean (2290 Han characters in 2+ character runs, all covered).
+research: 288 file(s), 1138 recorded as checked and failed.
+research: clean.
+ℹ tests 143
+ℹ suites 0
+ℹ pass 143
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 47091.967
+```
+
+The fast gate also emitted this existing warning while exercising the checked
+content; it did not fail the gate:
+
+```text
+⚠ unknown station code "LB14" in content/rail/tymc/stations/danan-g04.md
+  "LB14" is not a station on that line — most likely a typo.
+  Rendered as plain text, not a badge. If it is not a station code, wrap it in `backticks`.
+```
+
+#### `npm run gate:full`
+
+The command completed with exit code 0. The terminal output was very long; the
+following is the actual output excerpt covering the build, postbuild and final
+verification sections:
+
+```text
+npm notice run taipei-transit-guide@0.1.0 gate:full
+npm notice run npm run verify
+npm notice run taipei-transit-guide@0.1.0 verify
+npm notice run npm run build && npm run markers && npm run check && npm run nav:labels && npm run links && npm run unused && npm run a11y && npm run facts && npm run cite && npm run claims && npm run test:unit && npm run research && npm run geometry:audit && npm run cvd
+npm notice run taipei-transit-guide@0.1.0 build
+npm notice run npm run conflicts:check && npm run aggregates && next build && node scripts/postbuild.mjs
+npm notice run taipei-transit-guide@0.1.0 conflicts:check
+npm notice run node scripts/generate-conflicts-index.mjs --check
+conflicts: generated index is current.
+npm notice run taipei-transit-guide@0.1.0 aggregates
+npm notice run node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-aggregates.mts
+aggregates: wrote data\generated\aggregate-data.json — 1689 sources, 75 dated events, 567 station rows in 45678 ms
+▲ Next.js 16.3.0 (Turbopack)
+✓ Compiled successfully in 2.3min
+✓ Generating static pages (6002/6002)
+postbuild: renamed 1826 share image(s) to .png, rewrote references in 7304 file(s)
+postbuild: wrote 1084 redirect stub(s) from 13 move rule(s)
+postbuild: wrote out/404.html from _not-found/index.html
+postbuild: 5257 pages checked against the Han subsets — no missing glyphs.
+marker-audit: clean (1873 Markdown files checked)
+Checked 2636952 internal links across 5257 pages.
+  ✓ no broken links
+  ✓ every #fragment resolves
+  ✓ no orphan pages
+nav-labels: clean (5257 pages — every dropdown-nav link lands on the page it names).
+✔ the accessibility audit reports no errors (24086.183ms)
+✔ every page has exactly one h1 and no skipped heading levels (15734.8211ms)
+✔ every page has a main landmark (15489.491ms)
+✔ no image is missing alt text or explicit dimensions (14920.7526ms)
+✔ no positive tabindex overrides document order (15059.3754ms)
+✔ zoom is not capped (13535.5984ms)
+✔ Chinese is always tagged zh-Hant (17432.6369ms)
+✔ every transition is disabled under prefers-reduced-motion (1.3022ms)
+✔ no nested anchors survive into the built HTML (15355.0031ms)
+✔ no internal link 404s (26688.2345ms)
+✔ no page links to a bare .html file (14411.9362ms)
+✔ no bus route page claims an MRT join absent from the curated join file (97.5025ms)
+✔ every image has a complete, allowed attribution sidecar (94.19ms)
+✔ every rendered img has explicit dimensions (17213.6791ms)
+✔ the live KRTC snapshot keeps the published Metro and LRT boundaries (2.4578ms)
+✔ same bare code in two systems remains two namespaced records (0.722ms)
+✔ every page has a title and a description (14397.6547ms)
+✔ canonical URLs are unique (13384.2796ms)
+✔ every JSON-LD block parses (14735.9932ms)
+✔ every page showing a pipeline image renders its credit, within budget (17279.2692ms)
+✔ no unresolved station badge appears anywhere (14594.5282ms)
+✔ no page is a server error placeholder or an empty shell (15863.6352ms)
+✔ every line publishes geometry (22.7567ms)
+✔ simplification never moves a station more than its tolerance (31.5786ms)
+✔ the generated routes exported (2.0992ms)
+✔ every moved URL redirects, in one hop, to a real page (9473.733ms)
+✔ every page with three sections has a static ToC whose fragments exist (18293.3787ms)
+✔ every station on every line with station pages exported a page (36.4852ms)
+✔ every page exported an index.html (648.3259ms)
+✔ all 11 badges clear 4.5:1 as authored — no real failure exists
+```
+
+The full command's last tool result reported `exit_code:0`. Its final CVD
+section also reported `Genuine WCAG contrast failures: 0` and `Indistinguishable
+pairs (ΔE00 < 3): 2`; those are colour-difference diagnostics, not a gate
+failure. The known `LB14` warning above remained non-fatal. No exhaustive
+browser sweep was run.
+
+#### Final scout attack request
+
+To satisfy the final falsification step, the main session sent six explicit
+read-only attack requests to the existing bus, DRT/accessibility, urban-rail,
+ferry, bike/geography and aviation/special-transport scout threads. Three
+bounded waits produced no returned briefs; all six threads were then shut down
+while still running. No scout wrote, ran Git or changed the tree, and no
+unreturned scout claim was incorporated. The durable falsification findings
+therefore remain the source-based corrections recorded in the coverage audit,
+rather than invented summaries of work that did not return.
