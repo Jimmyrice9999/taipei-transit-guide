@@ -47,6 +47,7 @@ jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     if: github.event_name != 'schedule'
     steps:
       - uses: actions/checkout@v7
@@ -152,6 +153,7 @@ jobs:
     name: Build for Pages
     needs: test
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
     steps:
       - uses: actions/checkout@v7
@@ -198,6 +200,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -209,6 +212,7 @@ jobs:
     name: Full browser sweep
     if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.full_sweep)
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps:
       - uses: actions/checkout@v7
 

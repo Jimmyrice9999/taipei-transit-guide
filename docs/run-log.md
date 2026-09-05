@@ -26942,3 +26942,44 @@ clipped at Chromium's 12,000 px capture limit and recorded as warnings, with an
 exit code of 0. The exhaustive `verify:browser:full` sweep was deferred under
 the reduced-capacity requirement. CI could not be confirmed from this machine;
 GitHub Actions was not polled and `gh` is unavailable.
+
+## Run 314 Part 0 - push the adversarial fix and fresh reproduction (2026-09-05)
+
+The required preflight found `main` at `8fce448e`, three commits ahead of
+`origin/main`: `2879de09` (adversarial locale paths), `e843f8a2` (Kaohsiung and
+Taichung depth), and `8fce448e` (final gates and handoff). `fdbc10fa` was already
+the remote tip's ancestor. `git push origin main` succeeded with
+`fdbc10fa..8fce448e main -> main`; `git log origin/main --oneline -1` and
+`git log HEAD --oneline -1` both returned `8fce448e Run 313: record final gates
+and handoff`.
+
+The fresh `npm run adversarial` was run after the push. Actual case output:
+
+```text
+═══ Adversarial fixtures ═══
+
+  ✓ frontmatter with no body                   expect=clean        exit=0 warned=n
+  ✓ completely empty file                      expect=clean        exit=0 warned=n
+  ✓ unterminated frontmatter fence             expect=build-fails  exit=1 warned=n
+  ✓ invalid YAML in frontmatter                expect=build-fails  exit=1 warned=n
+  ✓ unknown station code in prose              expect=warns        exit=0 warned=y
+  ✓ nonexistent line code in frontmatter       expect=warns        exit=0 warned=y
+  ✓ spine range referencing unknown stations   expect=warns        exit=0 warned=y
+  ✓ broken formation syntax                    expect=clean        exit=0 warned=n
+  ✓ enormous title and summary                 expect=clean        exit=0 warned=n
+  ✓ RTL override injection in a title          expect=clean        exit=0 warned=n
+  ✓ zero-width joiners, combining marks, emoji expect=clean        exit=0 warned=n
+  ✓ Han characters not in the font subset      expect=build-fails  exit=1 warned=n
+  ✓ javascript: URL in a Markdown link         expect=warns        exit=0 warned=y
+  ✓ data: URL in a Markdown image              expect=warns        exit=0 warned=y
+  ✓ raw HTML and event handlers in Markdown    expect=clean        exit=0 warned=n
+  ✓ HTML in frontmatter values                 expect=clean        exit=0 warned=n
+
+  16/16 cases behaved as specified
+```
+
+The clean restore build completed as part of the harness, and fixture cleanup
+left no adversarial files in the tree. The worktree still contains the previous
+session's generated audit/screenshot/print artifacts and aggregate
+modifications; these remain unstaged. CI cannot be confirmed from here: `gh` is
+unavailable, Actions was not polled, and the direct Actions API is blocked.
