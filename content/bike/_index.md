@@ -7,7 +7,28 @@ hero:
   image: youbike/hero
   alt: Orange YouBike bicycles parked in docks on a Taipei street, baskets and rental card readers visible, taxis passing behind.
   caption: YouBikes parked on a Taipei street.
+sources:
+  - id: youbike-service-areas
+    title: YouBike official service-area homepage
+    titleOriginal: YouBike 微笑單車
+    publisher: YouBike Co., Ltd. (微笑單車股份有限公司)
+    url: https://www.youbike.com.tw/region/main/
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The operator's current service-area page names the YouBike municipalities and the separate Hsinchu Science Park area.
+  - id: tdx-bike-stations
+    title: TDX Bike Station/City data service
+    titleOriginal: 公共運輸-自行車
+    publisher: Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The Ministry's TDX portal is the source platform for the committed Station/City snapshot; the repository records the exact endpoint, retrieval time and separate availability-feed boundary in data/tdx/bike/meta.json.
 ---
+
+The national bike atlas now keeps the operator's service-area list separate from this checkout's five-jurisdiction static TDX station snapshot.[^youbike-service-areas][^tdx-bike-stations] A dock remains a row in a jurisdiction or district browse index, not a standalone page; the atlas marks operator-listed areas, current-data TBC and not-yet-researched jurisdictions instead of converting scope into invented station totals.[^youbike-service-areas][^tdx-bike-stations]
 
 YouBike belongs on a transit site: it shares the stored-value cards, the
 transfer economics and — in its dock placement — the metro's own station

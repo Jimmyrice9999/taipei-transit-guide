@@ -1511,6 +1511,10 @@ main {
   max-width: 1040px;
 }
 
+.national-bike-ledger {
+  max-width: 1040px;
+}
+
 .coverage-ledger-total {
   color: var(--text-2);
   font-family: var(--font-mono);
@@ -1724,6 +1728,8 @@ main {
 
 .coverage-covered .coverage-status { color: var(--status-good); }
 .coverage-structured .coverage-status { color: var(--status-data); }
+.coverage-snapshot .coverage-status { color: var(--status-good); }
+.coverage-operator-listed .coverage-status { color: var(--status-data); }
 .coverage-tbc .coverage-status { color: var(--status-tbc); }
 .coverage-not-researched .coverage-status,
 .coverage-not-applicable .coverage-status,

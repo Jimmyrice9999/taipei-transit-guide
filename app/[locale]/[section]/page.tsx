@@ -22,6 +22,7 @@ import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSections, getSystems, getTypes } from '@/lib/content'
 import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 import NationalBusAtlas from '@/components/NationalBusAtlas'
+import NationalBikeAtlas from '@/components/NationalBikeAtlas'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -107,6 +108,7 @@ export default async function SectionPage({ params }: Props) {
       {meta.description && <p className="page-summary">{meta.description}</p>}
 
       {section === 'bus' && <NationalBusAtlas />}
+      {section === 'bike' && <NationalBikeAtlas />}
 
       {/*
         ── Two changes here in run 10, and the second is the important one ────
