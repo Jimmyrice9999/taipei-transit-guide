@@ -2082,6 +2082,15 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "Read as a lead index. Its infobox gives 路線長度 32.3公里 and 車站數目 29, and names C301, C381 and C381A as the fleet — all of which this page publishes only as conflicts, because the article's footnote list could not be retrieved and so none of it could be traced to what it cites."
+  - id: "rail-metro-lines-tamsui-xinyi-line-dorts-xinyi-opening-2026-08-30"
+    title: "Guangci/Fengtian Temple Station opens and enters service"
+    titleOriginal: "蔣萬安主持「史上最難捷運工程」通車典禮 廣慈/奉天宮直達淡水今起營運"
+    publisher: "Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)"
+    url: "https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6"
+    accessed: "2026-09-05"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "Full DORTS news notice dated 30 August 2026. It says: 廣慈/奉天宮站正式加入臺北捷運路網 and describes the completion/opening ceremony; the same notice gives the extension as 1.4 km and says the service runs through to Tamsui."
   - id: "rail-metro-lines-tamsui-xinyi-line-zh-xinbeitou"
     title: "Xinbeitou branch line"
     titleOriginal: "新北投支線"
@@ -5058,10 +5067,10 @@ turned out to be three correct measurements of three different things; this may
 be the same, and saying so is not the same as knowing it.
 
 **Station count.** DORTS's 22[^rail-metro-lines-tamsui-xinyi-line-dorts-tamsui] and 7[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi] share R08,
-which nets to 28 — the number in service today, R02 to R28 plus R22A. Chinese
-Wikipedia says 29, counting the
-unopened `R01`[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi]. Those are compatible once you know what each
-counts.
+which nets to 28 — the pre-extension service count, R02 to R28 plus R22A.
+Chinese Wikipedia says 29, counting the then-unopened `R01`[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi].
+Those records are now compatible with the later DORTS opening notice, which
+confirms that the R01 station is in service from 30 August 2026.[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi-opening-2026-08-30]
 
 **Rolling stock.** Chinese Wikipedia's line infobox names C301, C381 and
 C381A[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi]; its Xinbeitou article names C371 for the
@@ -5078,6 +5087,7 @@ See also: [Public art in the Taipei-region rail network](/rail/history/public-ar
 - [Tamsui–Xinyi Line: Tamsui section route description](https://www.dorts.gov.taipei/cp.aspx?n=0AC527D5FC9E596A) — primary; Taipei City Government, Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-10.[^rail-metro-lines-tamsui-xinyi-line-dorts-tamsui]
 - [Tamsui–Xinyi Line: Xinyi section route description](https://www.dorts.gov.taipei/cp.aspx?n=0ac527d5fc9e596a&s=CB7BC86DBDA1E44D) — primary; Taipei City Government, Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-08-10.[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi]
 - [Tamsui–Xinyi line](https://zh.wikipedia.org/zh-tw/淡水信義線) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-10.[^rail-metro-lines-tamsui-xinyi-line-zh-tamsui-xinyi]
+- [Guangci/Fengtian Temple Station opens and enters service](https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6) — primary; Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局); accessed 2026-09-05.[^rail-metro-lines-tamsui-xinyi-line-dorts-xinyi-opening-2026-08-30]
 - [Xinbeitou branch line](https://zh.wikipedia.org/zh-tw/新北投支線) — secondary; 維基百科 (Chinese Wikipedia); accessed 2026-08-10.[^rail-metro-lines-tamsui-xinyi-line-zh-xinbeitou]
 
 ## Wenhu Line — Length records and measurement conflicts

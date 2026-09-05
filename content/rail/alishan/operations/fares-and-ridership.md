@@ -1,9 +1,9 @@
 ---
 title: Alishan Forest Railway fares and ridership
-summary: A flat NT$600 to ride the full mountain line, worked out from a published per-kilometre rate — and a decade of monthly ridership data this project extracted directly from the operator's own PDF, showing the branch lines carrying five to ten times the main line's traffic every single year.
+summary: Published 2024 full-line and branch fare records, worked out from a per-kilometre rate, alongside a decade of monthly ridership data extracted directly from the operator's own PDF; current service extent remains an official-record conflict.
 order: 1
 operator: AFRCHO
-updated: 2026-08-28
+updated: 2026-09-05
 facts:
   - label: Main-line full fare, Chiayi-Alishan
     value: NT$600 (阿里山號/檜木列車) or NT$540 (中興號)

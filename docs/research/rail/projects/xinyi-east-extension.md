@@ -50,6 +50,9 @@ Research date: 2026-08-27.
 - **Claim:** DORTS reported that the final inspection was completed on 1 August 2026 with 28 items: five pre-operation improvements, 13 general items and 10 follow-up recommendations; the five pre-operation items must be corrected and reported before MOTC operating permission.
   - Source: *Guangci/Fengtian Temple Station final inspection completed* (`捷運信義線東延段廣慈/奉天宮站今履勘順利完成`), Taipei DORTS, https://www.dorts.gov.taipei/News_Content.aspx?n=E14C2501B49FA671&s=2149B49411259147, PRIMARY, confidence High — current full inspection notice.
   - Original-language evidence: `115年8月1日` and `共計28項，其中5項為營運前須改善事項、13項一般缺失及10項後續建議事項`; the notice says operating permission follows correction and reporting of the five pre-operation items.
+- **Claim:** Guangci/Fengtian Temple Station entered public operation on 30 August 2026 and formally joined the Taipei Metro network.
+  - Source: *Guangci/Fengtian Temple Station opens and enters service* (`蔣萬安主持「史上最難捷運工程」通車典禮 廣慈/奉天宮直達淡水今起營運`), Taipei City Government Department of Rapid Transit Systems (`臺北市政府捷運工程局`), https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6, PRIMARY, confidence High — full DORTS news notice fetched directly on 2026-09-05.
+  - Original-language evidence: `廣慈/奉天宮站正式加入臺北捷運路網`; the notice is dated 30 August 2026 and also gives the extension as `1.4公里` and the through-service description.
 - **Claim:** The official Taipei City FAQ gives a 1.42 km route from the Xiangshan tail track east of Songde Road via Xinyi Road Sec. 6, Fude Street and Zhongpo South Road to Yucheng Park, and places the station between Fude Street Lane 84 and the Dadao Road lane area in front of Guangci Bo'ai Park.
   - Source: *Project scope and Guangci/Fengtian Temple Station location* (`交通維持>捷運信義線東延段工程範圍及廣慈/奉天宮站位置？`), Taipei City Government (`臺北市政府`), https://www.gov.taipei/News_Content.aspx?n=EEC70A4186D4C828&s=37674C92236E0644&sms=87415A8B9CE81B16, PRIMARY, confidence High — current full FAQ.
   - Original-language evidence: `從象山站東端之尾軌段（松德路以東），沿信義路六段，接福德街轉中坡南路至玉成公園，總長約1.42公里。廣慈/奉天宮站位於福德街84巷至大道路巷間之廣慈博愛園區前。`
@@ -59,17 +62,17 @@ Research date: 2026-08-27.
 | Subject | Value 1 | Value 2 | What the records appear to measure |
 | --- | --- | --- | --- |
 | Extension length | Approximately 1.4 km on the DORTS project page | Approximately 1.42 km in the Taipei City FAQ | Similar route descriptions with different published precision or scope; neither page explains the difference. |
-| Opening timing | First-quarter 2026 target in the 18 September 2025 progress notice | Final inspection on 1 August 2026 followed by correction and operating-permission steps in the latest DORTS notice | A dated earlier target versus the later regulatory state; the earlier target is not carried forward as a current date. |
+| Opening timing | First-quarter 2026 target in the 18 September 2025 progress notice | Public opening recorded by DORTS on 30 August 2026 | A dated earlier target versus the later operating notice; the later primary source is current for this snapshot. |
 | Station count | Original environmental statement: two stations | Current DORTS route: one underground station | A documented scope change: the Xinyi Road Sec. 6 station was cancelled, rather than an unexplained count mismatch. |
 | Terminal label | Engineering page calls the station `R03` | Current route and inspection pages identify it as Guangci/Fengtian Temple | A project engineering designation versus the public station name; no public code mapping is inferred. |
 
 ## Checked and failed
 
-- **Public opening date** — Checked 2026-08-27: the latest DORTS final-inspection notice and current engineering/project pages. They require correction of five pre-operation items and subsequent MOTC operating permission but do not publish a public opening date.
+- **Public opening date was absent from the inspection/project pages** — Checked 2026-09-05. The older pages did not publish it, but the later DORTS opening notice now establishes 30 August 2026; the former TBC is not carried forward.
 - **Project budget and contract value** — Checked 2026-08-27: the full DORTS route, engineering, progress and inspection pages. The fetched pages identify CR580C, designers, contractors, dates and engineering scope but no project budget or contract value.
 - **Passenger timetable and observed ridership** — Checked 2026-08-27: the full TRTC trial-operation notice, DORTS project/status pages and Taipei City FAQ. They describe trial-operation passenger restrictions and approval status, but provide no revenue timetable or ridership series.
 - **Public station-code mapping for the terminal** — Checked 2026-08-27: the full DORTS route and engineering pages and the TRTC trial notice. The engineering page uses `R03`, while public-facing notices use Guangci/Fengtian Temple; no source read in this pass establishes a final public-code mapping.
 
 ## Stated gaps
 
-The primary record establishes the current one-station scope, its approvals, engineering dimensions, trial operation and latest inspection boundary, but not the final opening date, contract value, public station code, revenue timetable or ridership. A later MOTC operating-permission notice and TRTC opening timetable would settle the first and fourth gaps; procurement or budget records would settle contract value; an operator station record would settle the public code; and post-opening operator or TDX data would establish ridership.
+The primary record establishes the current one-station scope, its approvals, engineering dimensions, trial operation, public opening and latest inspection boundary, but not the contract value, public station code, revenue timetable or ridership. Procurement or budget records would settle contract value; an operator station record would settle the public code; and post-opening operator or TDX data would establish ridership.

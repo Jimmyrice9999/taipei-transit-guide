@@ -144,8 +144,8 @@ including two accessible seats, against the existing fleet's 108, trading
 some capacity for upgraded suspension, automatic doors, passenger
 information displays and a cleaner-emissions engine.[^afr-senli-press]
 
-The railway fully reopened on 6 July 2024 after extended restoration work,
-with the inaugural train's 85 seats selling out in under ten
+The railway's full-line passenger reopening milestone was announced for 6 July
+2024 after extended restoration work, with the inaugural train's 85 seats selling out in under ten
 minutes.[^cna-reopening-2024] A separately-branded train called 福森號
 (Formosensis) is real — the operator's own site links to a themed tour
 product under that name — but a Wikipedia claim that it launched the same

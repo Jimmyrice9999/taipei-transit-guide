@@ -1,12 +1,12 @@
 ---
 title: Alishan Forest Railway stations
-summary: The current 16-stop main-line timetable and four named forest-park branch points, with older heritage and mileage inventories kept visible as separate records.
-updated: 2026-08-25
+summary: A dated 16-stop main-line timetable view and four named forest-park branch points, with a later operator FAQ retaining an unresolved current service-extent conflict.
+updated: 2026-09-05
 aliases:
   - 阿里山車站
   - 阿里山林鐵車站
 facts:
-  - label: Current main-line timetable
+  - label: Published main-line timetable view
     value: 16 stations
     source: afr-main-timetable
   - label: Named forest-park points
@@ -72,6 +72,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Operator's complete plain-language station list from Chiayi to Alishan and the forest-park points.
+  - id: afr-faq-current-2026
+    title: Frequently asked questions, current service-status wording
+    titleOriginal: 常見問答
+    publisher: Alishan Forest Railway and Cultural Heritage Office (阿里山林業鐵路及文化資產管理處)
+    url: https://afrch.forest.gov.tw/faqs
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Full operator FAQ fetched directly. It says: 因目前林業鐵路尚未全線(嘉義-阿里山)復駛，僅行駛嘉義-十字路段。 The same FAQ also describes a Chiayi–Fenqihu train and bus connection to Alishan, so the current record is retained as a conflict rather than flattened."
   - id: boch-potential
     title: Alishan Forestry and Railway Cultural Landscape
     titleOriginal: 阿里山林業暨鐵道文化景觀
@@ -137,7 +146,7 @@ sources:
     note: Government chronology and station history for the route's early operation and later reopening.
 ---
 
-This inventory separates three things that are easy to merge by accident: the current main-line timetable, the operator's named forest-park points, and the older heritage landscape list. The current timetable names 16 main-line stations from Chiayi to Alishan, including Luma Chan, which the operator says resumed stopping in 2019.[^afr-main-timetable][^afr-faq] The operator's overview then adds Shenmu, Zhaoping, Duigaoyue and Zhushan around the Alishan terminus.[^afr-home] The branch timetable confirms scheduled service to Shenmu, Zhaoping and Zhushan, but describes Duigaoyue as a platform and passing point rather than a separate scheduled stop.[^afr-branch-timetable][^afr-home]
+This inventory separates three things that are easy to merge by accident: a dated main-line timetable, the operator's named forest-park points, and the older heritage landscape list. The timetable names 16 main-line stations from Chiayi to Alishan, including Luma Chan, which the operator says resumed stopping in 2019.[^afr-main-timetable][^afr-faq] A current FAQ fetched on 5 September 2026 says the railway has not fully resumed and only runs from Chiayi to Shizilu, while also describing a Chiayi–Fenqihu train and bus connection; the table below therefore remains a published-timetable inventory, not a claim that every row is currently reachable.[^afr-faq-current-2026] The operator's overview then adds Shenmu, Zhaoping, Duigaoyue and Zhushan around the Alishan terminus.[^afr-home] The branch timetable confirms scheduled service to Shenmu, Zhaoping and Zhushan, but describes Duigaoyue as a platform and passing point rather than a separate scheduled stop.[^afr-branch-timetable][^afr-home]
 
 | operating layer | station | Chinese | published position | status in this snapshot |
 | --- | --- | --- | --- | --- |

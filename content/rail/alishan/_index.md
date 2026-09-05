@@ -1,7 +1,7 @@
 ---
 title: Alishan Forest Railway
 kind: system
-description: Taiwan's 762 mm forest and mountain railway from Chiayi to Alishan, with active sunrise and forest-park branches.
+description: Taiwan's 762 mm forest and mountain railway from Chiayi toward Alishan, with active forest-park branches and a current operator FAQ that does not describe the main line as fully resumed.
 order: 7
 operator: AFRCHO
 hero:
@@ -81,6 +81,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The operator's current FAQ lists the 16 main-line stations and the named forest-park points and describes the Shay display and running locations.
+  - id: afr-faq-current-2026
+    title: Frequently asked questions, current service-status wording
+    titleOriginal: 常見問答
+    publisher: Alishan Forest Railway and Cultural Heritage Office (阿里山林業鐵路及文化資產管理處)
+    url: https://afrch.forest.gov.tw/faqs
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Full operator FAQ fetched directly. It says: 因目前林業鐵路尚未全線(嘉義-阿里山)復駛，僅行駛嘉義-十字路段。 The same FAQ also describes a Chiayi–Fenqihu train and bus connection to Alishan, so the operator record is retained as an internal current-status conflict rather than flattened."
   - id: afr-mileage
     title: Operation mileage
     titleOriginal: 營業里程
@@ -128,11 +137,11 @@ sources:
     note: Government chronology for the 2019 important cultural landscape registration and the 2023/2024 reopening milestones.
 ---
 
-The Alishan Forest Railway is a working heritage railway, not a scenic line invented after the forest industry ended. The operator dates its opening to 1912 and describes a main line of about 72 km with a network that once grew to 21 branches.[^afr-technology] Its current public timetable runs from Chiayi to Alishan, while the forest-park branches continue the railway beyond the main-line terminus toward Shenmu, Zhaoping and Zhushan.[^afr-main-timetable][^afr-branch-timetable]
+The Alishan Forest Railway is a working heritage railway, not a scenic line invented after the forest industry ended. The operator dates its opening to 1912 and describes a main line of about 72 km with a network that once grew to 21 branches.[^afr-technology] The dated timetable and the 2024 reopening announcement describe Chiayi–Alishan service, while the operator's current FAQ fetched on 5 September 2026 says the railway has not fully resumed and only runs from Chiayi to Shizilu.[^afr-main-timetable][^forest-2024-open][^afr-faq-current-2026] This is an unresolved current official-record conflict, not a basis for claiming a fully open route.
 
 The railway is unusually legible as a system because the operator publishes route technology and station information together. Its gauge is 762 mm, and the line climbs from Chiayi at 30 m above sea level to Alishan at 2,216 m before the Zhushan branch reaches 2,451 m.[^afr-technology][^afr-home] The line is non-electrified and its engineering vocabulary is a response to tight mountain land, not a decorative theme: the official heritage record identifies spiral, horseshoe, Ω/U-turn and Z-shaped alignments alongside the special Shay geared locomotive.[^boch-potential]
 
-The line should be read in two layers. The 16-stop main line is the current intercity-style forest-railway service between Chiayi and Alishan, with a timetable effective from 10 January 2025.[^afr-main-timetable] The branch timetable is a separate operating pattern inside the Alishan National Forest Recreation Area: Shenmu and Zhaoping have frequent short workings, while the Zhushan service is an observation train whose departure is announced the day before because it is tied to sunrise.[^afr-branch-timetable] Duigaoyue is a named platform and passing location on the Zhushan alignment in the operator's station overview, but the branch timetable does not establish it as a separately scheduled passenger stop.[^afr-home][^afr-branch-timetable]
+The line should be read in two layers. The 16-stop main-line timetable effective from 10 January 2025 is a dated published service record, not proof that the same full route is operating on every later date.[^afr-main-timetable] The current FAQ instead says the railway is only operating from Chiayi to Shizilu, while also describing a Chiayi–Fenqihu train and bus connection to Alishan.[^afr-faq-current-2026] The branch timetable is a separate operating pattern inside the Alishan National Forest Recreation Area: Shenmu and Zhaoping have frequent short workings, while the Zhushan service is an observation train whose departure is announced the day before because it is tied to sunrise.[^afr-branch-timetable] Duigaoyue is a named platform and passing location on the Zhushan alignment in the operator's station overview, but the branch timetable does not establish it as a separately scheduled passenger stop.[^afr-home][^afr-branch-timetable]
 
 This distinction also explains why station counts vary between pages. The current operator FAQ enumerates 16 main-line stations and four named forest-park points, while the heritage potential-site description uses an older landscape boundary and a different list of 16 named stations.[^afr-faq][^boch-potential] The guide keeps the inventories side by side in the station data rather than treating a heritage boundary as a current timetable. The older operation-mileage page adds another source view: its matrix omits Luma Chan and the branch points, even though the current operator overview and timetable include Luma Chan and the park services.[^afr-mileage][^afr-home][^afr-main-timetable]
 

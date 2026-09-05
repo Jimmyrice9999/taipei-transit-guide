@@ -172,6 +172,20 @@ confidence **High** for what it says, and see the gap below for what it does not
   planned on 信義路六段 was dropped because the landowners refused to take part
   in the joint land development, so the condition for building it was not met.
 
+**Current opening correction.** A later full DORTS news notice dated 30 August
+2026 records the completion/opening ceremony and says `廣慈/奉天宮站正式加入臺北捷運路網`.
+It also describes the 1.4 km extension and through service to Tamsui. This later
+primary notice supersedes the earlier inspection-page TBC for the public opening
+date; the engineering label `R03` is still not treated as a public station-code
+mapping.
+
+- **Source:** *Guangci/Fengtian Temple Station opens and enters service* ·
+  `蔣萬安主持「史上最難捷運工程」通車典禮 廣慈/奉天宮直達淡水今起營運` ·
+  Taipei City Government Department of Rapid Transit Systems · **PRIMARY** ·
+  <https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6>
+  · fetched in full on 2026-09-05 · confidence **High** for the opening
+  notice and network-membership statement.
+
 **A ROC-year trap, recorded because it nearly went into this file.** Two reads
 of this same page returned 民國99年2月12日 and "February 12, 2011" — the second
 is a conversion error (民國99 = 2010, not 2011). Publish the 民國 form and the
@@ -376,10 +390,11 @@ pick one.**
   中正紀念堂, so 22 + 7 − 1 = **28**, which matches the stations in service today
   (R02–R28 is 27, plus R22A = 28). That reconciliation is this file's arithmetic
   on two primary figures; it is offered as a check, not as a published number.
-- zh.wikipedia 淡水信義線 infobox: **29** — which is 28 plus the unopened R01.
+- zh.wikipedia 淡水信義線 infobox: **29** — which is 28 plus the then-unopened R01.
 
-These are not in conflict once you know what each counts. Recorded so nobody
-"corrects" one to the other.
+These are dated counts rather than a current contradiction. The later DORTS
+opening notice records R01's station joining the network on 30 August 2026.
+Recorded so nobody "corrects" one to the other.
 
 ### 3. Rolling stock — C371 against C381/C381A
 
@@ -487,8 +502,9 @@ The appendix preserves station engineering-number tables, construction chronolog
   預定 / 通車 / 經費 / 契約編號. It carries none of them: approvals, length,
   station location and the cancellation reason only. v1.0's CR580C contract, its
   NT$4.828 billion figure, its 7 November 2016 construction start and its
-  end-of-August-2026 opening date are therefore **still unverified against any
-  primary source** and none of them appears on the content page.
+  end-of-August-2026 opening date are therefore **still unverified against the
+  project page itself**. The opening date is now established by a later DORTS
+  news notice; the contract value remains unverified.
 - **A ridership figure for the Tamsui–Xinyi Line by itself** — TRTC's
   統計資料 index and its 各年度暨前一月旅運量統計資料 table were both read on
   2026-08-10. The table reports 文湖線 separately and aggregates the other four

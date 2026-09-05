@@ -27,6 +27,11 @@ Shenmu, Zhaoping and Fenqihu. The operator's English mirror at
 `https://afrch.forest.gov.tw/EN/0000108` was fetched in full for the No. 25 and
 No. 31 locomotive conversion record.
 
+On 5 September 2026, the operator FAQ was fetched again at
+`https://afrch.forest.gov.tw/faqs` rather than relying on the earlier paginated
+URL. The direct page is the source for the current-status conflict recorded
+below.
+
 Government primary pages were also fetched in full: the Forestry and Nature
 Conservation Agency reopening announcement,
 `https://www.forest.gov.tw/news/0073945`; the No. 42 tunnel completion notice,
@@ -173,12 +178,17 @@ Heritage potential-site page,
 | Mileage matrix | a station-distance table omitting Luma Chan and branch points | Operator page updated 31 March 2016 | dated operating-mileage table, not the current overview |
 | Engineering milestone | 29 December 2023 | Government recreation chronology | last-mile construction completion |
 | Passenger milestone | 6 July 2024 | Forestry and Nature Conservation Agency | scheduled full-line passenger reopening |
+| Current service extent | FAQ says the line has not fully resumed and only runs Chiayi–Shizilu | Alishan Forest Railway FAQ fetched 5 September 2026 | current operator wording; the same FAQ also describes a Chiayi–Fenqihu train and bus connection to Alishan |
+| Current service extent | Main-line timetable and 2024 reopening notice describe Chiayi–Alishan service | Alishan Forest Railway timetable / Forestry and Nature Conservation Agency | dated published service and reopening records; neither was silently treated as a 5 September 2026 guarantee |
 | Shay roster view | Nos. 25 and 31 returned to running after conversion; No. 26 static display | Operator English locomotive page and FAQ | different locomotive records and operating/display states, not a single unit roster |
 
 These disagreements are published rather than resolved. In particular, the
 three length values are not averaged, the older heritage list is not used to
 delete current stations, and the mileage matrix is not used to overwrite the
 current overview.
+The current FAQ is also not silently reconciled with the older full-line
+timetable and reopening notice: its exact wording is published as the present
+operator record, while the older service records remain dated.
 
 ## Checked and failed
 
@@ -188,6 +198,11 @@ current overview.
   `https://afrch.forest.gov.tw/EN/0000108` was fetched in full and is the source
   used for the No. 25 and No. 31 conversion claims. The Chinese page was not
   reconstructed from a search snippet.
+
+- **Operator homepage's 26 August 2026 full-resumption notice** — checked 5
+  September 2026, failed. A direct fetch of `https://afrch.forest.gov.tw/`
+  returned an internal error/timeout in this run, so the search lead was not
+  used to override the full FAQ fetched at `/faqs`.
 
 - **Complete historical Mianyue station inventory** — checked 25 August 2026,
   not found.** The operator's full branch page establishes the 9.2 km timber

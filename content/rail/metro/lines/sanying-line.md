@@ -1,12 +1,12 @@
 ---
 title: Sanying Line
-summary: New Taipei's first self-built medium-capacity metro — a driverless elevated railway linking Dingpu, Sanxia and Yingge, opened on 30 June 2026.
+summary: New Taipei's first self-built medium-capacity metro — a driverless elevated railway linking Dingpu, Sanxia and Yingge, opened on 30 June 2026 and entering paid operation on 1 September.
 order: 2
 line: LB
 aliases:
   - 三鶯線
   - Sanying
-updated: 2026-08-23
+updated: 2026-09-05
 hero:
   image: sanying-line/hero
   alt: The Sanying Line's arched viaduct crossing the Dahan River, hills behind.
@@ -27,6 +27,9 @@ facts:
   - label: Free trial until
     value: 31 August 2026
     source: ntmetro-opening
+  - label: Paid operation began
+    value: 1 September 2026
+    source: ntmetro-paid-2026-09-01
   - label: Stations
     value: "12"
     source: ntpc-dorts-route
@@ -67,6 +70,10 @@ specs:
     value: "35"
     unit: NT$
     source: ntmetro-opening
+  - label: One-day ticket
+    value: "60"
+    unit: NT$
+    source: ntmetro-paid-2026-09-01
   - label: Cars per train
     value: "2"
     source: ntmetro-trains
@@ -97,6 +104,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's opening notice: 全長14.29公里，全線共設有12座車站; transfers at Dingpu and Yingge; about 30 minutes end to end; six- and eight-minute initial headways; the 20–35 NT$ fare band; and stored-value-card taps free through 31 August."
+  - id: ntmetro-paid-2026-09-01
+    title: Sanying Line begins paid operation on 1 September 2026
+    titleOriginal: 捷運三鶯線9月1日起正式收費 試營運期間突破170萬人次 「三鶯線一日票」同步開賣
+    publisher: New Taipei Metro Corporation (新北大眾捷運股份有限公司)
+    url: https://ori-www.ntmetro.com.tw/basic/?mode=detail&node=893
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Full operator notice fetched directly. It says: 因應三鶯線自6月30日通車後，經過近2個月的免費試乘及系統調校，將自9月1日起正式收費; it gives the NT$20–35 distance-fare range and says the 三鶯線一日票 is NT$60."
   - id: motc-inspection
     title: Ministry of Transportation to inspect the Sanying Line on 7 June 2026
     titleOriginal: 交通部訂於115年6月7日辦理捷運三鶯線履勘
@@ -349,9 +365,10 @@ period ran through 31 August 2026: stored-value-card users tapping in and out
 paid nothing.[^ntmetro-opening] Hours began at 10:00–20:00, expanded to
 08:00–22:00 from 1 August and to 06:00–24:00 from 16 August.[^ntpc-august-hours][^ntmetro-fare-notice]
 
-The published normal fare band is NT$20–35 by distance, but the operator says
-the actual charging date will be announced separately.[^ntmetro-opening][^ntmetro-fare-notice]
-Ending the free trial therefore does not, by itself, establish when fares began.
+The earlier opening and trial notices said that the charging date would be
+announced separately.[^ntmetro-opening][^ntmetro-fare-notice] The dated operator
+notice published after that period records paid operation from 1 September 2026,
+with distance fares of NT$20–35 and a NT$60 one-day ticket.[^ntmetro-paid-2026-09-01]
 
 By 25 July the bureau counted more than **750,000 journeys**, an average of
 53,000 on holidays, and 72,000 station exits on 4 July during the museum's

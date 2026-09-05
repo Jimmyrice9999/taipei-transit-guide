@@ -1,12 +1,12 @@
 ---
 title: Tamsui–Xinyi Line
-summary: The red line — the network's north–south spine, from the riverside at Tamsui through the core to Xiangshan, and the oldest right-of-way on the system.
+summary: The red line — the network's north–south spine, from the riverside at Tamsui through the core to Xiangshan and, since 30 August 2026, Guangci/Fengtian Temple.
 order: 3
 line: R
 aliases:
   - 淡水信義線
   - Red Line
-updated: 2026-08-23
+updated: 2026-09-05
 hero:
   image: tamsui-xinyi-line/hero
   alt: The open-air platform at Tamsui Station, its temple-style tiled roof over the tracks, hills across the river beyond.
@@ -40,8 +40,8 @@ facts:
     value: One main depot on the Tamsui section
     source: dorts-tamsui
   - label: Service patterns
-    value: Tamsui–Xiangshan, Beitou–Daan, Beitou–Xinbeitou
-    source: trtc-headways-r
+    value: Tamsui–Guangci/Fengtian Temple, Beitou–Daan, Beitou–Xinbeitou
+    source: dorts-xinyi-opening-2026-08-30
   - label: Rolling stock
     value: TBC
   - label: Daily ridership
@@ -125,6 +125,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "全長約1.4公里，共設置1座地下車站 plus tail tracks, the station sited 臺北市廣慈博愛園區前福德街道路下方, shield tunnels continuing east under 福德街 and 中坡南路 to 玉成公園, and the Executive Yuan approvals of 民國99年2月12日, 103年9月24日 and 107年1月18日. Also the builder's own reason for dropping the second station: 因信義路六段設置之車站地主反對參與土地開發，未達設條件. Read in full on 10 August 2026 and again with a targeted pass: it gives no construction start date, no contract number, no cost and no opening date."
+  - id: dorts-xinyi-opening-2026-08-30
+    title: Guangci/Fengtian Temple Station opens and enters service
+    titleOriginal: 蔣萬安主持「史上最難捷運工程」通車典禮 廣慈/奉天宮直達淡水今起營運
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Full DORTS news notice dated 30 August 2026. It says: 廣慈/奉天宮站正式加入臺北捷運路網 and describes the completion/opening ceremony; the same notice gives the extension as 1.4 km and says the service runs through to Tamsui."
   - id: dorts-station-architecture
     title: Station Architectural Design
     titleOriginal: 車站建築設計
@@ -404,7 +413,9 @@ supplies the line total directly.
 
 ## Xinyi east extension
 
-An eastward extension of the Xinyi section is under construction: **about
+An eastward extension of the Xinyi section entered public operation on 30 August
+2026, when Guangci/Fengtian Temple Station formally joined the Taipei Metro
+network.[^dorts-xinyi-opening-2026-08-30] The extension is **about
 1.4 km**, **one underground station**, plus tail tracks for operational
 turnback[^dorts-east-extension]. The station is 廣慈/奉天宮, sited under Fude
 Street in front of the Guangci Boai park complex, with shield tunnels continuing
@@ -432,8 +443,9 @@ turns the historical Liugong irrigation system into blue horizontal and curved
 “water” forms, with entrances integrated into the planned Xinyi District
 administrative centre and a Guangci Boai complex building.[^dorts-cr580c]
 
-Neither opened DORTS page gives a project cost or opening date, so both remain
-TBC.[^dorts-east-extension][^dorts-cr580c]
+The earlier DORTS project and engineering pages did not give a project cost or
+opening date when they were read; the later opening notice now establishes the
+30 August 2026 public-opening date.[^dorts-east-extension][^dorts-cr580c][^dorts-xinyi-opening-2026-08-30]
 
 A numbering trap worth flagging while it is still live. The station being built
 takes **`R01`**, at the end of a line whose other codes were assigned long
@@ -466,10 +478,10 @@ turned out to be three correct measurements of three different things; this may
 be the same, and saying so is not the same as knowing it.
 
 **Station count.** DORTS's 22[^dorts-tamsui] and 7[^dorts-xinyi] share R08,
-which nets to 28 — the number in service today, R02 to R28 plus R22A. Chinese
-Wikipedia says 29, counting the
-unopened `R01`[^zh-tamsui-xinyi]. Those are compatible once you know what each
-counts.
+which nets to 28 — the pre-extension service count, R02 to R28 plus R22A.
+Chinese Wikipedia says 29, counting the then-unopened `R01`[^zh-tamsui-xinyi].
+Those records are now compatible with the later DORTS opening notice, which
+confirms that the R01 station is in service from 30 August 2026.[^dorts-xinyi-opening-2026-08-30]
 
 **Rolling stock.** Chinese Wikipedia's line infobox names C301, C381 and
 C381A[^zh-tamsui-xinyi]; its Xinbeitou article names C371 for the

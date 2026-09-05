@@ -1,15 +1,18 @@
 ---
 title: Xinyi Line East Extension
-summary: A one-station underground extension from Xiangshan toward Guangci/Fengtian Temple, with the former Xinyi Road Sec. 6 station removed from the approved scope.
+summary: A one-station underground extension from Xiangshan to the Guangci/Fengtian Temple station, which entered public operation on 30 August 2026 after the former Xinyi Road Sec. 6 station was removed from scope.
 order: 12
-updated: 2026-08-27
+updated: 2026-09-05
 facts:
   - label: Current project scope
     value: Approximately 1.4 km, one underground station and an operational tail track
     source: dorts-route
-  - label: Planned station
+  - label: Operating station
     value: Guangci/Fengtian Temple, beneath Fude Street in front of Guangci Bo'ai Park
     source: dorts-route
+  - label: Public operation
+    value: 30 August 2026
+    source: dorts-opening-2026-08-30
   - label: Original two-station plan
     value: The Xinyi Road Sec. 6 station was cancelled; only the Fude Street station remains
     source: dorts-route
@@ -49,7 +52,9 @@ specs:
     unit: m
     source: dorts-engineering
   - label: Public opening date
-    value: TBC
+    value: 2026-08-30
+    unit: date
+    source: dorts-opening-2026-08-30
   - label: Project budget and contract value
     value: TBC
 sources:
@@ -80,6 +85,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Full current notice for the 1 August 2026 final inspection, its 28 findings, the five pre-operation items and the requirement for operating permission after correction.
+  - id: dorts-opening-2026-08-30
+    title: Guangci/Fengtian Temple Station opens and enters service
+    titleOriginal: 蔣萬安主持「史上最難捷運工程」通車典禮 廣慈/奉天宮直達淡水今起營運
+    publisher: Taipei City Government Department of Rapid Transit Systems (臺北市政府捷運工程局)
+    url: https://www.dorts.gov.taipei/News_Content_table.aspx?n=41977EB83537C82B&s=6804EB85286722F7&sms=72544237BBE4C5F6
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "Full DORTS news notice dated 30 August 2026. It says: 廣慈/奉天宮站正式加入臺北捷運路網 and describes the completion/opening ceremony; the notice gives the extension as 1.4 km and the through service to Tamsui."
   - id: trtc-trial
     title: "Preparation before opening: Taipei Metro begins Xinyi Line East Extension trial operation on 11 May"
     titleOriginal: 通車前準備！臺北捷運5/11啟動信義線東延段試運轉
@@ -113,7 +127,7 @@ sources:
 
 The Xinyi Line East Extension continues east from the Xiangshan station tail track as an underground high-capacity route.[^dorts-route] It follows Xinyi Road Sec. 6 toward Fude Street, reaches the Guangci Bo'ai Park area, and continues by shield tunnel through Fude Street and Zhongpo South Road to Yucheng Park.[^dorts-route] The current DORTS project page gives approximately 1.4 km, one underground station and a tail track used for operating movements.[^dorts-route]
 
-The original environmental statement covered two stations: one at Xinyi Road Sec. 6 and one at Fude Street.[^dorts-route] DORTS says the Xinyi Road Sec. 6 station was removed after landowners opposed participating in land development and the station did not meet the siting conditions; the remaining station is at Fude Street, with a southern development site used for metro facilities.[^dorts-route] The planned station is published as Guangci/Fengtian Temple beneath Fude Street in front of Guangci Bo'ai Park.[^dorts-route]
+The original environmental statement covered two stations: one at Xinyi Road Sec. 6 and one at Fude Street.[^dorts-route] DORTS says the Xinyi Road Sec. 6 station was removed after landowners opposed participating in land development and the station did not meet the siting conditions; the remaining station is at Fude Street, with a southern development site used for metro facilities.[^dorts-route] The station is published as Guangci/Fengtian Temple beneath Fude Street in front of Guangci Bo'ai Park.[^dorts-route] It entered public operation on 30 August 2026, when the DORTS opening notice says it formally joined the Taipei Metro network.[^dorts-opening-2026-08-30]
 
 ## Approvals and construction record
 
@@ -127,6 +141,6 @@ The engineering page says the tunnels were designed for hard rock, weak clay and
 
 An official September 2025 progress notice reported 87.12% overall progress, with the main tunnel, structures and rails complete, electrical equipment installed and a first-quarter-2026 opening target at that time.[^dorts-progress-2025] That target is retained as a dated historical target, not as the current opening date.[^dorts-progress-2025]
 
-TRTC began trial operation on 11 May 2026.[^trtc-trial] During the trial, trains ran to Guangci/Fengtian Temple but the new station did not allow passengers to board or alight, so passengers continued to use Xiangshan.[^trtc-trial] DORTS reported that the final inspection was completed on 1 August 2026, producing 28 items: five pre-operation improvements, 13 general items and 10 follow-up recommendations.[^dorts-inspection] The notice says the five pre-operation items must be corrected and reported before the Ministry of Transportation and Communications can grant operating permission.[^dorts-inspection] No public opening date is promoted here because the latest fetched notice does not supply one.[^dorts-inspection]
+TRTC began trial operation on 11 May 2026.[^trtc-trial] During the trial, trains ran to Guangci/Fengtian Temple but the new station did not allow passengers to board or alight, so passengers continued to use Xiangshan.[^trtc-trial] DORTS reported that the final inspection was completed on 1 August 2026, producing 28 items: five pre-operation improvements, 13 general items and 10 follow-up recommendations.[^dorts-inspection] The notice says the five pre-operation items had to be corrected and reported before the Ministry of Transportation and Communications could grant operating permission.[^dorts-inspection] A later DORTS opening notice dated 30 August 2026 records the public opening and current service.[^dorts-opening-2026-08-30]
 
-The official project page gives 1.4 km, while a Taipei City FAQ gives 1.42 km for a similar route description.[^dorts-route][^city-faq] The records are retained as published values rather than silently rounded into one number. The engineering page calls the terminal R03, but that project designation is not converted into a public station-code claim.[^dorts-engineering] Budget, final opening date, passenger timetable and observed ridership remain TBC.
+The official project page gives 1.4 km, while a Taipei City FAQ gives 1.42 km for a similar route description.[^dorts-route][^city-faq] The records are retained as published values rather than silently rounded into one number. The engineering page calls the terminal R03, but that project designation is not converted into a public station-code claim.[^dorts-engineering] Budget, passenger timetable and observed ridership remain TBC.
