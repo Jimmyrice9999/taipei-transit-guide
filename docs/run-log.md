@@ -26983,3 +26983,52 @@ left no adversarial files in the tree. The worktree still contains the previous
 session's generated audit/screenshot/print artifacts and aggregate
 modifications; these remain unstaged. CI cannot be confirmed from here: `gh` is
 unavailable, Actions was not polled, and the direct Actions API is blocked.
+
+## Run 314 Part 1 - CI budget and localized-output audit (2026-09-05)
+
+The workflow audit covered every job in `.github/workflows/deploy.yml`. The
+current two-locale build has 2,085 `index.html` route files under `out/en/` and
+2,085 under `out/zh-Hant/`; the aggregate output contains 5,256 route indexes
+including shared export files. `fdbc10fa` is an ancestor of `origin/main`.
+
+The screenshot fix is therefore confirmed on the remote, not merely in local
+history. The exhaustive search covered app routes, locale helpers, build/output
+audits, browser harnesses, shot helpers, navigation checks, tests and content
+registries. The locale-aware inventory is present in the browser harness and
+the tests; all six helpers named by the previous handoff use the localized
+output space. Literal logical links in locale pages go through `LocaleLink`, so
+they are prefixed at render time; the remaining unprefixed strings are logical
+paths, comments, or sitemap inputs passed through `localizedPath`, not legacy
+canonical URLs. No additional stale single-locale count or unprefixed output
+reader was found.
+
+Explicit job budgets were added: `test` 180 minutes, `build` 30 minutes,
+`deploy` 15 minutes, and `full-browser-sweep` 360 minutes. The last budget is
+above the recorded 306m57s full sweep while staying within the six-hour job
+limit; the other three include the current 6,002-route/two-locale export and
+the bounded smoke verification with room for runner variance.
+
+The actual final output lines from the required pre-commit `npm run gate:fast`
+were:
+
+```text
+citations: 1873 content files, 1814 with a sources: block
+  8701 citations resolved — 8152 to primary sources, 549 to secondary
+citations: clean.
+marker-audit: clean (1873 Markdown files checked)
+conflicts: generated index is current.
+search: generated index is current.
+font-check: clean (2290 Han characters in 2+ character runs, all covered).
+research: 287 file(s), 1135 recorded as checked and failed.
+research: clean.
+ℹ tests 143
+ℹ pass 143
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+```
+
+The timeout workflow change was committed as `6858899b` after that gate. CI
+cannot be confirmed from here: `gh` is unavailable, Actions was not polled,
+and the direct Actions API is blocked.
