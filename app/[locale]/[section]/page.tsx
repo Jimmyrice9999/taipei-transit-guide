@@ -23,6 +23,9 @@ import { getFolderContent, getPages, getSection, getSections, getSystems, getTyp
 import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 import NationalBusAtlas from '@/components/NationalBusAtlas'
 import NationalBikeAtlas from '@/components/NationalBikeAtlas'
+import NationalFerryAtlas from '@/components/NationalFerryAtlas'
+import NationalAirAtlas from '@/components/NationalAirAtlas'
+import NationalCommunityTransportAtlas from '@/components/NationalCommunityTransportAtlas'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -108,7 +111,10 @@ export default async function SectionPage({ params }: Props) {
       {meta.description && <p className="page-summary">{meta.description}</p>}
 
       {section === 'bus' && <NationalBusAtlas />}
+      {section === 'bus' && <NationalCommunityTransportAtlas />}
       {section === 'bike' && <NationalBikeAtlas />}
+      {section === 'ferry' && <NationalFerryAtlas />}
+      {section === 'air' && <NationalAirAtlas />}
 
       {/*
         ── Two changes here in run 10, and the second is the important one ────

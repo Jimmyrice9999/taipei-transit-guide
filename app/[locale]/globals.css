@@ -1515,6 +1515,18 @@ main {
   max-width: 1040px;
 }
 
+.national-mode-ledger {
+  max-width: 1040px;
+}
+
+.mode-atlas-list .coverage-ledger-item {
+  min-height: 0;
+}
+
+.mode-atlas-list .coverage-ledger-item > .coverage-ledger-note {
+  max-width: 58rem;
+}
+
 .coverage-ledger-total {
   color: var(--text-2);
   font-family: var(--font-mono);
