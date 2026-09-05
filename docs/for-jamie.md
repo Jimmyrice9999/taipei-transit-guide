@@ -12,7 +12,10 @@ Taoyuan Green Line page (+25). It added a new TYMC research file and retained
 the DORTS progress conflict rather than resolving it. The full corpus audit
 left structured/TBC pages alone where no new primary fact survived checking.
 
-The final Part 2 gate and push are the next sequential actions. Do not stage
-`probes/`, generated audit JSONs, screenshots or PDFs. CI cannot be confirmed
-from this machine: `gh` is unavailable, Actions was not polled, and the direct
-Actions API is blocked.
+Part 2 commit `b1e68ab3` is pushed and matches `origin/main`. The full gate
+passed: 6,002 routes, 2,636,862 links, 243 tests, 27,413 sourced claims,
+4,653 TBC, zero asserted claims, and zero genuine contrast failures.
+
+Do not stage `probes/`, generated audit JSONs, screenshots or PDFs. CI cannot be
+confirmed from this machine: `gh` is unavailable, Actions was not polled, and
+the direct Actions API is blocked.
