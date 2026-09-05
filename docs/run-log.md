@@ -27032,3 +27032,31 @@ research: clean.
 The timeout workflow change was committed as `6858899b` after that gate. CI
 cannot be confirmed from here: `gh` is unavailable, Actions was not polled,
 and the direct Actions API is blocked.
+
+The required post-commit `npm run gate:full` completed successfully. The actual
+terminal result lines were:
+
+```text
+Generating static pages using 23 workers (6002/6002) in 2.1min
+postbuild: 5257 pages checked against the Han subsets — no missing glyphs.
+Checked 2636852 internal links across 5257 pages.
+  ✓ no broken links
+  ✓ every #fragment resolves
+  ✓ no orphan pages
+nav-labels: clean (5257 pages — every dropdown-nav link lands on the page it names).
+  ✓ no errors
+  ✓ no warnings
+No contradictions across 17 cross-checks.
+claims: three states per checkable statement in content/
+  sourced   27409   85%  a citation is attached
+  TBC       4653   15%  the site says it does not know
+  ASSERTED     0    0%  resting on nobody's authority
+ℹ tests 243
+ℹ pass 243
+ℹ fail 0
+research: 287 file(s), 1135 recorded as checked and failed.
+research: clean.
+  ✓ no station sits more than 200 m from its line's alignment
+  ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
+  Genuine WCAG contrast failures: 0
+```
