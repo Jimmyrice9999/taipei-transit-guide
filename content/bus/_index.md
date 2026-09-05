@@ -16,7 +16,45 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the operator-record count and route associations described in the operator index.
+  - id: hsinchu-bus-snapshot
+    title: Hsinchu City Government iBus public-transport portal
+    titleOriginal: 新竹市幸福巴士公共運輸資訊
+    publisher: Hsinchu City Government (新竹市政府)
+    url: https://hisatisfy.hccg.gov.tw/ibusWeb/PublicTransport/
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Supports the shared Hsinchu City and County route snapshot and its published category scope.
+  - id: taichung-bus-snapshot
+    title: Taichung city-bus route and stop information dataset
+    titleOriginal: 臺中市市區公車路線站點資訊
+    publisher: Taichung City Government Transportation Bureau (臺中市政府交通局)
+    url: https://data.gov.tw/dataset/83748
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Supports the dated Taichung route-and-stop snapshot surfaced in the national bus atlas.
+  - id: tainan-bus-snapshot
+    title: Tainan city-bus route data
+    titleOriginal: 大台南公車路線資料
+    publisher: Tainan City Government Transportation Bureau (臺南市政府交通局)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Tainan?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Supports the dated Tainan route snapshot surfaced in the national bus atlas.
+  - id: kaohsiung-bus-snapshot
+    title: Kaohsiung city-bus route response
+    titleOriginal: 高雄市公車路線資料
+    publisher: Kaohsiung City Government Transportation Bureau (高雄市政府交通局) / MOTC TDX
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Kaohsiung?$format=JSON
+    accessed: 2026-08-25
+    kind: primary
+    lang: zh-Hant
+    note: Supports the dated Kaohsiung route snapshot surfaced in the national bus atlas.
 ---
+
+The national bus atlas lists all 22 first-order jurisdictions and labels each entry by evidence state.[^tdx-bus-operator-pull] It currently joins the Taipei/New Taipei TDX snapshot with dated Hsinchu, Taichung, Tainan and Kaohsiung municipal layers; the counts remain source-record or normalized-identity counts, not a claimed national total.[^tdx-bus-operator-pull][^hsinchu-bus-snapshot][^taichung-bus-snapshot][^tainan-bus-snapshot][^kaohsiung-bus-snapshot]
 
 Taipei's city buses run as 聯營公車 — a joint operation: private companies
 operating under one fare structure, one numbering scheme and one brand, so
