@@ -41,6 +41,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: dorts-gc01-design
+    title: "Green Line GC01 station design briefs"
+    titleOriginal: "桃園捷運綠線車站設計-GC01標"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/cp.aspx?n=23242
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The GC01 design brief gives G15's farm-and-pond design references and site description."
+  - id: dorts-green-naming
+    title: "Green Line main-line station naming completed"
+    titleOriginal: "桃園捷運綠線主線車站命名完成，開啟城市新篇章"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/News_Content.aspx?n=23116&s=1581651&sms=20161
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The naming announcement records G15 as the renumbered successor to G14."
   - id: tdx-tymc-green-check
     title: "Live TDX TYMC Green Line coverage check"
     titleOriginal: "交通部運輸資料流通服務平臺 TYMC 綠線查核"
@@ -64,6 +82,10 @@ G15 sits in the Taoyuan Green Line station sequence published by the Taoyuan eng
 A live TDX check of the TYMC Line, Station, StationOfRoute, Route, Shape, transfer and timetable families returned Airport MRT records, including one A line record, but no Green Line record on 24 August 2026.[^tdx-tymc-green-check] This page therefore keeps the Green Line as a primary-research project registry. Coordinates, entrances, accessibility facilities, platform gaps, fares, headways, ridership and opening dates remain TBC rather than being inferred from a map, a neighbouring Airport MRT station or a planned interchange.[^dorts-green][^tdx-tymc-green-check]
 
 The route is still under construction. A construction-project station should not be described as though it already has passenger service, a live timetable or observed daily use. The engineering bureau’s current page gives the line-wide target as 2030, but it does not provide a station-specific opening date for G15; that field remains TBC here.[^dorts-green]
+
+## Design and numbering history
+
+The GC01 design brief responds to G15's setting with a green corrugated-steel form associated with farmland and ponds. It places the planned station west of Nankan Road Section 2 and Changxing Road.[^dorts-gc01-design] DORTS's naming announcement records the current G15 code as the former G14, part of a wider renumbering made while the city prepared its future circular network.[^dorts-green-naming] The design description does not establish the materials of the eventual built station or a passenger-service date.
 
 ## What the source does and does not establish
 

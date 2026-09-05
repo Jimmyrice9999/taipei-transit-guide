@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a15-timetable
+    title: "A15 station timetable"
+    titleOriginal: "大園站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A15
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A15's all-stop commuter intervals and shows the combined Taipei/airport direction heading."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -129,3 +138,7 @@ No rail interchange is established at this station. TYMC's own timetable page do
 Dayuan opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A15 39.13 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership and the platform screen-door type at this station are not established by any source read for this page and stay TBC. The accessible-lift count at this station is likewise not itemised beyond what the operator's general facility listing states.
+
+The operator's current A15 table lists ordinary commuter departures beginning at 06:06, 06:21, 06:36 and 06:51 in the displayed Zhongli direction, repeating a 15-minute pattern through the day, with 00:05 as the last displayed train in that table.[^tymc-a15-timetable] The page labels the heading “Taipei Main Station, airport” in the other direction rather than separating those destinations, so their individual last times remain TBC here.[^tymc-a15-timetable] A15 is not a fixed express stop.[^tymc-express-timetable]
+
+The combined heading is a genuine source boundary: it identifies the direction served but not whether a given train is terminating at A1, A12 or another intermediate destination.[^tymc-a15-timetable] The page therefore adds timetable evidence without replacing the existing TBC for a station-specific destination split.[^tymc-a15-timetable]

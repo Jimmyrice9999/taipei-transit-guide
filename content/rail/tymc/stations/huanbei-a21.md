@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a21-timetable
+    title: A21 station timetable
+    titleOriginal: A21 車站時刻表
+    publisher: Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A21
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current timetable page gives A21's first commuter departure and its peak-added express entries, including the skip-stop commuter legend."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -111,3 +120,7 @@ TYMC's own station page gives the address as Zhongfeng North Road Section 1 No. 
 Huanbei opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A21 50.81 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership at this station is not established by any source read for this page and stays TBC.
+
+The detailed timetable page shows an ordinary first departure at 05:35.[^tymc-a21-timetable] It also lists peak-added express departures at 14:15, 15:15, 16:15, 17:15, 18:15 and 19:15, in addition to the operator's separate legend for the A21 skip-stop commuter working.[^tymc-a21-timetable] This makes A21's service pattern more specific than the station-level statement that it is merely a peak-added express stop.[^tymc-express-timetable]
+
+Between those peak additions, the timetable continues to show ordinary all-stop departures at :05, :20, :35 and :50, including the 05:35 first trip and the late-morning rows.[^tymc-a21-timetable] The express additions are therefore inserted into an existing regular pattern rather than replacing it.[^tymc-a21-timetable] The same page's legend says the skip-stop commuter working serves A21, A18, A13 and A12, then stops at every station from A9 to A1; that is a distinct service from the starred express rows.[^tymc-a21-timetable]

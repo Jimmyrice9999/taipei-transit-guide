@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a14a-first-last
+    title: "A14a first and last trains"
+    titleOriginal: "First and last trains: A14a Airport Hotel Station"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/en/_pages/travel-guide/dep-A14a
+    accessed: 2026-09-05
+    kind: primary
+    lang: en
+    note: "The operator's current English first/last-train table records A14a as commuter-only and gives the displayed terminal times."
   - id: dorts-airport-a-table
     title: Airport MRT station table
     titleOriginal: 機場線車站一覽表
@@ -111,3 +120,7 @@ TYMC's own station page gives the address as Airport South Road 1-2, with operat
 Airport Hotel opened with the rest of the initial line on 2 March 2017, despite its own construction predating the wider project's later stations.[^tymc-history]
 
 TDX's own committed route data places A14a 37.232 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+TYMC's current English first/last-train table confirms the commuter-only service boundary in operational terms: it shows no express first or last train for A14a.[^tymc-a14a-first-last] The displayed commuter first trains are 06:00 to A1 and 06:00 to A12, and the displayed commuter last trains are 23:31 to A1 and 00:18 to A12; no A22 value is shown on that table.[^tymc-a14a-first-last] The page is a timetable display, not a promise that these times remain unchanged outside the operator's stated update window.[^tymc-a14a-first-last]
+
+The absence of an A22 entry is itself kept as a display boundary, not converted into a claim that no train can ever reach A22 from A14a.[^tymc-a14a-first-last] The fetched table lists the displayed directions and times for this station but does not explain why that field is blank; the reason remains TBC rather than being inferred from the route map.[^tymc-a14a-first-last]

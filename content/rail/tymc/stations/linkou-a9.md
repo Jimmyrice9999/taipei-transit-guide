@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a9-timetable
+    title: "A9 station timetable"
+    titleOriginal: "林口站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A9
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A9's all-stop commuter intervals and late added airport services."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -122,3 +131,9 @@ TYMC's own current public-art page names one work here, "A Free Wandering" (一�
 Linkou opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A9 21.35 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The current A9 timetable displays commuter first departures at 06:11 toward the airport and 06:06 toward Taipei.[^tymc-a9-timetable] The ordinary late departures are 23:39 toward the airport and 23:53 toward Taipei, followed by added airport services at 23:54 and 00:09.[^tymc-a9-timetable] Its detailed rows show the normal 15-minute all-stop pattern; A9 is not a fixed express stop, although the shared service note identifies it in the weekday skip-stop pattern toward A1.[^tymc-a9-timetable][^tymc-express-timetable]
+
+The timetable's A9 heading combines the airport and Laojie River on the southbound side, so the 00:09 extra airport service cannot be assigned to a particular southern terminal from this page alone.[^tymc-a9-timetable] The northbound display remains an A1-bound all-stop table and ends at 23:53 in the fetched version.[^tymc-a9-timetable]
+
+No fixed express row appears for A9.[^tymc-a9-timetable]

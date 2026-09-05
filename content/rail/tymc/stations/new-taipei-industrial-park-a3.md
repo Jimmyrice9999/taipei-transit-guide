@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a3-timetable
+    title: "A3 station timetable"
+    titleOriginal: "新北產業園區站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A3
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A3's express, commuter and peak-hour skip-stop service pattern."
   - id: tymc-a3-transfer-promo
     title: Circular Line Y20 opening transfer-fare notice
     titleOriginal: 環狀線Y20通車轉乘優惠公告
@@ -120,3 +129,7 @@ TYMC's own current public-art page names two works here: "The Moon Galileo and H
 New Taipei Industrial Park opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A3 7.729 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The operator's current timetable displays A3-bound service from 05:40 toward the airport and 06:02 toward Taipei, with the last displayed departures at 23:50 and 00:14 respectively.[^tymc-a3-timetable] The station also has frequent fixed express departures toward both ends, while peak-hour starred services add A18 and A21 to the express stop pattern; the page marks these separately from all-stop commuter trains.[^tymc-a3-timetable] This is a service-pattern record, not a claim that every departure has the same stopping pattern.[^tymc-a3-timetable]
+
+The page's detailed rows show why A3's schedule cannot be reduced to one headway: regular commuter departures and fixed express departures alternate through the day, and the starred peak-hour pattern adds A18 and A21.[^tymc-a3-timetable] The operator separately marks late 23:35 and 23:50 airport-bound departures as extra airport services, while the last Taipei-bound commuter departure displayed is 00:14.[^tymc-a3-timetable]

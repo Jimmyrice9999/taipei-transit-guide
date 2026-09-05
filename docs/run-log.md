@@ -6810,6 +6810,86 @@ a research one.
 
 # 26. The unsourced claim count
 
+## Run 315 — Part 2 TYMC thin-page queue (5 September 2026)
+
+The TYMC queue was worked in its required order. Full primary DORTS Green
+Line design/naming pages and full TYMC detailed timetable pages were fetched
+and read before writing. The Green Line additions use `dorts-gc01-design`,
+`dorts-gc02-design`, `dorts-gc03-design`, and, where numbering changed,
+`dorts-green-naming`. Airport MRT additions use the operator's full
+`timetable-A1` through `timetable-A22` pages; A14a used the operator's full
+English timetable because the direct Chinese departure URL did not safely
+open. No page was written from a search snippet.
+
+### Pages touched — old/new body word counts
+
+| page | old | new | addition/source |
+|---|---:|---:|---|
+| `jiande-xingfeng-g01` | 351 | 438 | G01 gateway/extension design; DORTS GC01 |
+| `rende-park-g02` | 351 | 440 | G02 greenway/settlement design; DORTS GC01 |
+| `chocolate-g03` | 344 | 420 | G03 industrial-boundary/old-track motif; DORTS GC02 |
+| `danan-g04` | 350 | 449 | G04 Sanying terminus/gateway design; DORTS GC02 |
+| `xiaodanan-g05` | 345 | 421 | G05 irrigation-canal history/joint-development provision; DORTS GC02 |
+| `yangming-sports-park-g06` | 344 | 425 | G06 park-led massing and greenery; DORTS GC02 |
+| `jingfu-temple-g08` | 345 | 426 | G08 market-redevelopment/plaza design; DORTS GC03 |
+| `zhongzheng-lixing-g09` | 345 | 421 | G09 temple-festival/night-market design; DORTS GC03 |
+| `zhongzheng-daxing-g10` | 346 | 429 | G10 arts-district/tree-growth concept; DORTS GC03 |
+| `arts-district-g11` | 349 | 425 | G11 Arts Plaza/Performing Arts Center role; DORTS GC03 |
+| `luxingpi-g12` | 346 | 417 | G12 future Nankan transfer/civic-art concept; DORTS GC03 |
+| `nanzhu-zhongzheng-north-g13` | 345 | 416 | G13 Luzhu creative/ecology concept; DORTS GC01 |
+| `luzhu-zhongzheng-north-g14` | 345 | 431 | G14 water/ripples design plus renumbering; DORTS GC01, naming page |
+| `shuiwei-g15` | 353 | 433 | G15 farm/pond design plus renumbering; DORTS GC01, naming page |
+| `guolin-g15a` | 344 | 421 | G15a seed/box design plus renumbering; DORTS GC01, naming page |
+| `kengkou-g15b` | 347 | 423 | G15b A11 transfer/wing design plus renumbering; DORTS GC01, naming page |
+| `taipei-main-station-a1` | 293 | 416 | current first/last displayed services; TYMC A1 timetable |
+| `sanchong-a2` | 277 | 425 | all-stop pattern and late airport trips; TYMC A2 timetable |
+| `new-taipei-industrial-park-a3` | 314 | 446 | first/last rows and mixed service classes; TYMC A3 timetable |
+| `xinzhuang-fuduxin-a4` | 292 | 415 | first/last rows and added airport trips; TYMC A4 timetable |
+| `taishan-a5` | 281 | 409 | first/last rows and added airport trips; TYMC A5 timetable |
+| `taishan-guihe-a6` | 306 | 419 | first/last rows, late extras, skip-stop row; TYMC A6 timetable |
+| `national-taiwan-sport-university-a7` | 288 | 400 | commuter pattern and late extras; TYMC A7 timetable |
+| `chang-gung-memorial-hospital-a8` | 308 | 416 | express/commuter alternation and late rows; TYMC A8 timetable |
+| `linkou-a9` | 282 | 406 | first/last rows and late extras; TYMC A9 timetable |
+| `shanbi-a10` | 291 | 403 | first/last rows and late extras; TYMC A10 timetable |
+| `kengkou-a11` | 280 | 410 | first/last rows and combined destination heading; TYMC A11 timetable |
+| `airport-terminal-1-a12` | 268 | 409 | express/commuter first/last rows; TYMC A12 departure page |
+| `airport-terminal-2-a13` | 302 | 442 | express/commuter first/last rows; TYMC A13 departure page |
+| `airport-hotel-a14a` | 289 | 427 | commuter first/last rows and no displayed express; TYMC A14a English page |
+| `dayuan-a15` | 288 | 403 | displayed Zhongli-direction timetable and destination-boundary gap; TYMC A15 timetable |
+| `hengshan-a16` | 299 | 404 | displayed Zhongli-direction timetable and destination-boundary gap; TYMC A16 timetable |
+| `linghang-a17` | 294 | 423 | offset all-stop patterns and late airport services; TYMC A17 timetable |
+| `taoyuan-hsr-station-a18` | 290 | 426 | express/commuter first/last rows; TYMC A18 departure page |
+| `taoyuan-sports-park-a19` | 290 | 416 | :14/:29/:44/:59 pattern and late airport services; TYMC A19 timetable |
+| `xingnan-a20` | 300 | 421 | :09/:24/:39/:54 pattern and late airport services; TYMC A20 timetable |
+| `huanbei-a21` | 298 | 431 | first ordinary row, peak express rows, skip-stop distinction; TYMC A21 timetable |
+| `laojie-river-a22` | 292 | 418 | first ordinary row, quarter-hour pattern, late airport services; TYMC A22 timetable |
+
+All 38 TYMC station pages that were under 400 words in the Part 1 queue were
+touched. A7 is exactly 400; all other queued pages now exceed 400. Citation
+ID checks over the TYMC station directory found no body reference without a
+matching source entry.
+
+### TYMC pages checked and left alone
+
+The five station pages already above 400 words — `taoyuan-g07` (574),
+`g16-g16` (448), `g17-g17` (422), `g18-g18` (652), and `g19-g19` (609) —
+were left alone because this pass was the explicitly ordered under-400 queue;
+their current length did not establish that every possible source seam was
+exhausted, so they remain candidates for the later depth pass. The TYMC line,
+operations, facilities, rolling-stock, project and index pages were also left
+alone because they were not in the Part 1 under-400 station queue; their
+system-wide audit remains separately recorded rather than being represented
+as a full-source recheck in this pass.
+
+### Research gaps recorded
+
+The timetable pages publish displayed rows, not a stable promise of future
+operation: the shared operator note says the timetable is updated to
+115/10/31, asks passengers to recheck three days before travel after that
+date, and allows rolling operational adjustment. A15/A16 and the combined
+A11 destination heading do not resolve every terminal-specific first/last
+value; those gaps are retained as TBC. The research ledger now records the
+A6–A22 timetable facts and source URLs individually.
 ```
 sourced    128   74%   a citation is attached
 TBC         10    6%   the site says out loud that it does not know
@@ -27058,8 +27138,92 @@ research: 287 file(s), 1135 recorded as checked and failed.
 research: clean.
   ✓ no station sits more than 200 m from its line's alignment
   ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
-  Genuine WCAG contrast failures: 0
+Genuine WCAG contrast failures: 0
 ```
+
+## Run 315 Part 1 - per-page short-page queue (2026-09-05)
+
+The fresh queue audit counts whitespace-separated words in the Markdown body
+after frontmatter, excluding `_index.md`. This is a triage count, not a claim
+that a page needs filler. The status below is deliberately stricter than Run
+314's blanket wording: Run 314 recorded a system-wide inventory and sampled
+pages, but did not leave a per-page ledger proving that every short page had
+been checked against its complete source list. Therefore every listed queue
+page is marked **prior inventory only — full-source check not evidenced** and is
+eligible for the Part 2 pass. No page is being called exhausted merely because
+it has a `sources:` block.
+
+| System/page type | Pages | Under 400 | Minimum body | Status |
+| --- | ---: | ---: | ---: | --- |
+| KRTC | 88 | 0 | 407 | No short-page queue; no page-specific recheck required by this threshold. |
+| TMRT | 26 | 0 | 403 | No short-page queue; no page-specific recheck required by this threshold. |
+| TYMC | 52 | 38 | 268 | The 38 listed below are prior-inventory-only and are first priority. |
+| TRA | 269 | 0 | 436 | No short-page queue; no page-specific recheck required by this threshold. |
+| THSR | 19 | 0 | 635 | No short-page queue; no page-specific recheck required by this threshold. |
+| Bus routes | 1,051 | 60 | 261 | The 60 listed below are prior-inventory-only and are second priority. |
+| Bus operators | 61 | 1 | 390 | Prior inventory only; full-source check not evidenced. |
+| Bus models | 10 | 1 | 316 | Prior inventory only; full-source check not evidenced. |
+
+### TYMC queue — prior inventory only, full-source check not evidenced
+
+`airport-hotel-a14a.md` (289); `airport-terminal-1-a12.md` (268);
+`airport-terminal-2-a13.md` (302); `arts-district-g11.md` (349);
+`chang-gung-memorial-hospital-a8.md` (308); `chocolate-g03.md` (344);
+`danan-g04.md` (350); `dayuan-a15.md` (288); `guolin-g15a.md` (344);
+`hengshan-a16.md` (299); `huanbei-a21.md` (298); `jiande-xingfeng-g01.md`
+(351); `jingfu-temple-g08.md` (345); `kengkou-a11.md` (280);
+`kengkou-g15b.md` (347); `laojie-river-a22.md` (292); `linghang-a17.md`
+(294); `linkou-a9.md` (282); `luxingpi-g12.md` (346);
+`luzhu-zhongzheng-north-g14.md` (345); `nanzhu-zhongzheng-north-g13.md`
+(345); `national-taiwan-sport-university-a7.md` (288);
+`new-taipei-industrial-park-a3.md` (314); `rende-park-g02.md` (351);
+`sanchong-a2.md` (277); `shanbi-a10.md` (291); `shuiwei-g15.md` (353);
+`taipei-main-station-a1.md` (293); `taishan-a5.md` (281);
+`taishan-guihe-a6.md` (306); `taoyuan-hsr-station-a18.md` (290);
+`taoyuan-sports-park-a19.md` (290); `xiaodanan-g05.md` (345);
+`xingnan-a20.md` (300); `xinzhuang-fuduxin-a4.md` (292);
+`yangming-sports-park-g06.md` (344); `zhongzheng-daxing-g10.md` (346);
+`zhongzheng-lixing-g09.md` (345).
+
+### Bus route queue — prior inventory only, full-source check not evidenced
+
+`new-taipei/264.md` (278); `new-taipei/857.md` (287); `new-taipei/860.md`
+(270); `new-taipei/908-abjqao.md` (261); `new-taipei/918-o75u8d.md` (319);
+`new-taipei/925.md` (272); `new-taipei/927-q5q4bo.md` (264);
+`new-taipei/936.md` (268); `new-taipei/939-12icvyr.md` (268);
+`new-taipei/947.md` (272); `new-taipei/965.md` (272);
+`new-taipei/f101-zykwis.md` (283); `new-taipei/f102.md` (301);
+`new-taipei/f103.md` (293); `new-taipei/f105-i0hamo.md` (277);
+`new-taipei/f105-ksj87h.md` (289); `new-taipei/f106.md` (287);
+`new-taipei/f109.md` (295); `new-taipei/f213-6d6wim.md` (277);
+`new-taipei/f237.md` (278); `new-taipei/f320.md` (277);
+`new-taipei/f512-1xr2akt.md` (286); `new-taipei/f626.md` (276);
+`new-taipei/f629.md` (284); `new-taipei/f723-1c7powu.md` (277);
+`new-taipei/f802.md` (278); `new-taipei/f803.md` (276);
+`new-taipei/f805.md` (275); `new-taipei/f821.md` (281);
+`new-taipei/f907.md` (278); `new-taipei/f913.md` (272);
+`new-taipei/f921-15malv6.md` (296); `new-taipei/f921-1sen5qe.md` (305);
+`new-taipei/f923-1cjhp23.md` (285); `new-taipei/f923-6wkmnz.md` (302);
+`new-taipei/route-1txkg9p.md` (293); `new-taipei/route-7cwgkp.md` (321);
+`new-taipei/route-fa6ydh.md` (283); `new-taipei/route-yhjt2h.md` (283);
+`series-0-99/41.md` (325); `series-0-99/42-1bik1pb.md` (349);
+`series-0-99/42-21isci.md` (388); `series-0-99/49.md` (324);
+`series-0-99/66.md` (355); `series-100s/108-hvewbe.md` (331);
+`series-100s/111.md` (293); `series-100s/128.md` (343);
+`series-100s/129.md` (322); `series-300s/307-1frkitg.md` (290);
+`series-300s/307-1rlhqdi.md` (345); `series-500s/539-1xoo9s.md` (361);
+`series-500s/542-1ca3gvb.md` (341); `series-700s/756.md` (339);
+`series-700s/757.md` (362); `series-700s/758.md` (319);
+`series-900s/902-1kitn6b.md` (334); `series-900s/950.md` (355);
+`series-900s/957.md` (349); `series-other/1717.md` (335);
+`unclassified/route-v9sv0g.md` (295).
+
+The remaining queue is `content/bus/operators/16476-eglll3.md` (390) and
+`content/bus/models/king-long.md` (316), both prior-inventory-only with no
+per-page full-source check evidenced in the prior run log. Part 2 begins with
+the TYMC queue, then the two bus metadata pages, then bus routes; pages are
+left alone only after their actual source list has been checked and the result
+recorded per page.
 
 ## Run 314 Part 2 - Taiwan research depth audit (2026-09-05)
 
@@ -27159,3 +27323,56 @@ research: clean.
   ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
   Genuine WCAG contrast failures: 0
 ```
+
+## Run 315 — Part 2 bus queue audit (5 September 2026)
+
+The two non-route metadata pages were deepened from their existing official
+primary sources. `content/bus/operators/16476-eglll3.md` went from 390 to 461
+words: the Shiding District Office PDF is now used to distinguish a published
+community-bus timetable from proof of ownership, contracting or vehicle
+assignment. `content/bus/models/king-long.md` went from 316 to 404 words: the
+Dàyou/CitiAir fleet page now supports the airport-bus versus Taipei joint-bus
+allocation of the three King Long year groups and the absence of vehicle
+registration numbers. Both pages remain explicit about TBC technical,
+contractor and unit-count fields.
+
+### Route pages checked and left alone
+
+The 40 New Taipei queue pages — `new-taipei/264`, `857`, `860`, `908-abjqao`,
+`918-o75u8d`, `925`, `927-q5q4bo`, `936`, `939-12icvyr`, `947`, `965`,
+`f101-zykwis`, `f102`, `f103`, `f105-i0hamo`, `f105-ksj87h`, `f106`, `f109`,
+`f213-6d6wim`, `f237`, `f320`, `f512-1xr2akt`, `f626`, `f629`, `f723-1c7powu`,
+`f802`, `f803`, `f805`, `f821`, `f907`, `f913`, `f921-15malv6`,
+`f921-1sen5qe`, `f923-1cjhp23`, `f923-6wkmnz`, `route-1txkg9p`,
+`route-7cwgkp`, `route-fa6ydh` and `route-yhjt2h` — were checked against
+the full New Taipei route-list source family already attached to each page:
+TDX, the New Taipei route-service data, the exact New Taipei category dataset,
+and the responsible transport-management index. The New Taipei dataset page
+was fetched in full this pass; it states that the data are daily, contain
+1,070 records, and publish fields for provider, endpoints, distance, first and
+last buses, headways, fares and holiday service. Each of these pages already
+uses those route-specific fields where the row supplies them and leaves
+history, contract and missing timetable values TBC. No additional
+route-specific primary fact survived the check; they were left unchanged,
+not treated as exhausted research generally.
+
+The 21 remaining queue pages — `series-0-99/41`, `42-1bik1pb`, `42-21isci`,
+`49`, `66`; `series-100s/108-hvewbe`, `111`, `128`, `129`;
+`series-300s/307-1frkitg`, `307-1rlhqdi`; `series-500s/539-1xoo9s`,
+`542-1ca3gvb`; `series-700s/756`, `757`, `758`; `series-900s/902-1kitn6b`,
+`950`, `957`; `series-other/1717`; and `unclassified/route-v9sv0g` — were
+checked against their attached full TDX/eBus or route-specific primary source
+sets. The full Taipei/New Taipei eBus catalogue and a full official route
+schedule page were fetched and read this pass; the catalogue lists route
+classes, while the schedule page publishes span, fare, headway, operator
+contact and exception rows. The queued pages already include the
+route-specific exception, historical, reservation, launch or collision facts
+where their source sets establish them. Remaining missing history, length,
+headway, fare or operator details are explicitly TBC or recorded as conflicts;
+adding generic system prose would violate the page brief. These 21 pages were
+therefore checked and left alone with a per-page result, not counted as
+full-source exhaustion beyond the sources named on each page.
+
+No bus route page was padded to reach 400 words. The short-route queue remains
+a depth candidate if a new primary source becomes available; the current
+source check found no defensible new fact to add.

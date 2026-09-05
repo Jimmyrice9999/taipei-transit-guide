@@ -90,6 +90,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a18-first-last
+    title: "A18 first and last trains"
+    titleOriginal: "各站首末班車時間：A18高鐵桃園站"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/departure.php?station=A18
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's current first/last-train table gives A18's express and commuter terminal times."
   - id: dorts-airport-a-table
     title: Airport MRT station table
     titleOriginal: 機場線車站一覽表
@@ -126,3 +135,7 @@ Taoyuan HSR Station is the line's interchange with Taiwan High Speed Rail. TYMC'
 Sources also disagree on the station's own level count: zh.wikipedia's own article states three above-ground levels in its body text but two above-ground levels in its infobox, an inconsistency within that single secondary source rather than a disagreement between two sources; this page does not attempt to resolve it.
 
 TYMC's own timetable page lists A18 among the peak-hour "Huanbei Express" (環北直達車) stops — the base express pattern of A1, A3, A8, A12 and A13 with A18 and A21 added during peak hours — alongside the commuter (普通車) service that calls at every station.[^tymc-express-timetable] A Taoyuan tourism-portal page separately gives a commuter journey time of 19 minutes from this station to Airport Terminal 1.[^tycg-tourism-airport-mrt]
+
+The operator's first/last-train table displays A18 express first trains at 14:26 toward A1/A12 and 13:54 toward A21, with displayed last trains at 19:26 toward A1/A12 and 18:54 toward A21.[^tymc-a18-first-last] Commuter first trains are 05:47 toward A1/A12 and 06:02 toward A22; the displayed commuter last trains are 23:17 toward A1, 00:04 toward A12 and 00:15 toward A22.[^tymc-a18-first-last] These are the operator's current timetable values and should be distinguished from a fixed engineering specification or a guaranteed connection to a particular HSR train.[^tymc-a18-first-last]
+
+The displayed express window at A18 is especially narrow: the A21-bound values run from 13:54 to 18:54, while the A1/A12 values run from 14:26 to 19:26.[^tymc-a18-first-last] The commuter table covers the early morning and late evening in both directions, so HSR passengers should not read the peak-hour express label as the station's only service pattern.[^tymc-a18-first-last]

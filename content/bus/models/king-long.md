@@ -50,6 +50,8 @@ The 2019 entry belongs to the operator's national-highway vehicle section,
 while the 2020 and 2024 entries sit in its city-bus section [^dayou-fleet].
 That is a classification published by Dàyou, not a claim that every vehicle
 delivered in those years had the same body, engine or interior [^dayou-fleet].
+The same fleet page assigns the 2019 King Long group to Taoyuan Airport Bus service, while the 2020 and 2024 city-bus groups are assigned to Taipei joint-operation buses.[^dayou-fleet] It also lists the operator's other published city-bus class as Taiwan Yutong for 2016/2017 and Chenyun for 2020, confirming that the King Long entries are one manufacturer grouping within a broader fleet page rather than a complete inventory of DÃ you's city vehicles.[^dayou-fleet]
+
 The page also does not say whether the two city-bus year groups are separate
 purchases, replacement batches or a mixture of vehicles acquired under one
 contract [^dayou-fleet].
@@ -60,6 +62,8 @@ Consequently the year labels cannot be converted into a fleet count or a list
 of active routes. They are useful evidence that the operator carried King Long
 in both service classes at those dates, but they are not a model-by-model
 register.
+
+The official page shows no individual vehicle registration beside any King Long entry.[^dayou-fleet]
 
 ## Technical fields
 

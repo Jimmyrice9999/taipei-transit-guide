@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a2-timetable
+    title: "A2 station timetable"
+    titleOriginal: "三重站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A2
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A2's commuter first/last departures and the airport-bound late services."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -122,3 +131,9 @@ TYMC's own current public-art page names one work here, "Conveyor Belt of Dreams
 Sanchong opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A2 4.236 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The operator's current timetable gives A2 commuter first departures at 05:59 toward the airport and 06:06 toward Taipei Main Station.[^tymc-a2-timetable] The displayed last departures are 23:46 toward the airport and 00:18 toward Taipei.[^tymc-a2-timetable] The table also shows extra airport-bound services at 23:31 and 23:46, while A2 is not in the operator's fixed express-stop list.[^tymc-a2-timetable][^tymc-express-timetable] These are dated service values, not permanent station infrastructure.[^tymc-a2-timetable]
+
+The full timetable shows the ordinary A2 pattern at roughly 15-minute intervals for most of the day in both directions.[^tymc-a2-timetable] The Taipei-bound sequence begins 06:06, 06:21, 06:36 and 06:51, while the airport-bound sequence begins 06:14, 06:29, 06:44 and 06:59.[^tymc-a2-timetable] The late-night table then narrows to 00:03 and 00:18 toward Taipei and no listed 01:00 service.[^tymc-a2-timetable]
+
+The timetable's airport-bound heading combines the airport and Laojie River destinations, so it does not by itself distinguish which late commuter trains terminate at A13 and which continue to A22.[^tymc-a2-timetable]

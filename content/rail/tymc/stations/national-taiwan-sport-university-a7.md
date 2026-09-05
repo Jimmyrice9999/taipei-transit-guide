@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a7-timetable
+    title: "A7 station timetable"
+    titleOriginal: "體育大學站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A7
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A7's all-stop commuter intervals and late added airport services."
   - id: rb-101-annual-report
     title: Railway Bureau 101st-year annual report
     titleOriginal: 鐵道局101年度年報
@@ -111,3 +120,9 @@ TYMC's own station page gives the address as Wenhua 1st Road No. 688 in Guishan 
 National Taiwan Sport University opened with the rest of the initial line on 2 March 2017.[^tymc-history] It sits within Guishan District, Taoyuan, alongside Chang Gung Memorial Hospital — the only two current Airport MRT stations in that district.[^tdx-tymc-station]
 
 TDX's own committed route data places A7 17.403 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The current A7 timetable is commuter-only and starts with 06:00, 06:15, 06:30 and 06:45 toward the airport/Laojie River, and 06:02, 06:17, 06:32 and 06:47 toward Taipei.[^tymc-a7-timetable] The evening table continues the 15-minute rhythm before marking an added airport service at 23:47 and another at 00:02; no direct-train row is shown for A7.[^tymc-a7-timetable]
+
+Because the operator combines “airport” and “Laojie River” in A7's outbound heading, the table does not establish which displayed trains terminate at A13 and which continue south to A22.[^tymc-a7-timetable] The page's ordinary rows do establish the interval and the late extra-service markings, but a station-specific destination split would require a more granular operator timetable.[^tymc-a7-timetable]
+
+No direct-train row appears for A7.[^tymc-a7-timetable]

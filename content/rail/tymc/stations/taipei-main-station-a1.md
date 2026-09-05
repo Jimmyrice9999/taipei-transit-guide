@@ -94,6 +94,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a1-first-last
+    title: "A1 first and last trains"
+    titleOriginal: "各站首末班車時間：A1台北車站"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/departure.php?station=A1
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's current first/last-train table gives A1's express and commuter terminal times and records its shared timetable warning."
   - id: dorts-airport-a1
     title: Airport MRT Taipei-section (A1) project record
     titleOriginal: 臺北車站專用區工程
@@ -130,3 +139,7 @@ The station's construction is recorded separately from the rest of the line: unl
 TYMC's own timetable page lists A1 among the express (直達車) stops, alongside the all-stop commuter (普通車) service that calls at every station on the line.[^tymc-express-timetable] A dedicated Taoyuan tourism-portal page gives express journey times from A1 of 35 minutes to Airport Terminal 1 (A12) and 39 minutes to Terminal 2 (A13).[^tycg-tourism-airport-mrt]
 
 Taipei Main Station opened with the rest of the initial line on 2 March 2017 — the only current Airport MRT station within Taipei City itself.[^tymc-history][^tdx-tymc-station]
+
+The operator's current first/last-train table displays express first departures at 05:30 to A13 and 06:15 to A21, with displayed last departures at 23:00 and 19:00 respectively.[^tymc-a1-first-last] Commuter first departures are 06:08 to A13 and A22; displayed commuter last departures are 23:38 to A13 and 23:08 to A22.[^tymc-a1-first-last] The table shows no third express direction and no blank-direction service as a timetable value, so those entries remain TBC rather than being inferred from the route map.[^tymc-a1-first-last]
+
+The A21 express window is therefore shorter than the A13 airport-service window at the northern terminus: the displayed A21 departures run from 06:15 to 19:00, while the displayed A13 express departures continue from 05:30 to 23:00.[^tymc-a1-first-last] The commuter table is the operator's only displayed A22 service at A1.[^tymc-a1-first-last]

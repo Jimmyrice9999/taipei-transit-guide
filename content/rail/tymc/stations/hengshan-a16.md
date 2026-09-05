@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a16-timetable
+    title: "A16 station timetable"
+    titleOriginal: "橫山站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A16
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A16's all-stop commuter intervals and the combined Taipei/airport direction heading."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -147,3 +156,7 @@ No rail interchange currently operates at this station. TYMC's own timetable pag
 Hengshan opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A16 41.38 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The current A16 table displays ordinary commuter departures beginning at 06:09, 06:24, 06:39 and 06:54 in the Zhongli direction, with a 15-minute rhythm through most of the day and a last displayed 00:08 train.[^tymc-a16-timetable] Its other heading combines Taipei Main Station and airport destinations rather than separating them; their individual last times remain TBC rather than being inferred.[^tymc-a16-timetable] A16 is outside the fixed express-stop list.[^tymc-express-timetable]
+
+The timetable thus establishes A16's operating cadence and the displayed southbound late service, but not a separate A1-versus-airport last-train value.[^tymc-a16-timetable] The page's combined destination label is kept as published rather than treated as evidence that every train serves both endpoints.[^tymc-a16-timetable]

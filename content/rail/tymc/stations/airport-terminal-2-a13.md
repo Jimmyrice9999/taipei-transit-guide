@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a13-first-last
+    title: "A13 first and last trains"
+    titleOriginal: "各站首末班車時間：A13機場第二航廈站"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/departure.php?station=A13
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's current first/last-train table gives A13's express and commuter terminal times and identifies the timetable-display update note."
   - id: rb-airport-risk-paper
     title: Airport MRT tunnel-crossing technical paper
     titleOriginal: 機場捷運穿越機場跑滑行道段技術報告
@@ -129,3 +138,7 @@ TYMC's own station page names an inquiry desk near the exit and a direct connect
 Airport Terminal 2 opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A13 35.896 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership at this station is not established by any source read for this page and stays TBC; TYMC's own operations disclosures cover network-wide and route-level figures rather than a per-station count for this stop.
+
+The operator's current first/last-train table displays express first trains at 05:55 toward A1 and A12 and 13:41 toward A21; the displayed express last trains are 22:55 toward A1/A12 and 18:41 toward A21.[^tymc-a13-first-last] Commuter first trains are 06:04 toward A1/A12 and 06:00 toward A22, while the displayed commuter last trains are 23:35 toward A1, 00:22 toward A12 and 23:59 toward A22.[^tymc-a13-first-last] These values belong to the operator's dated timetable display, which warns that service is adjusted operationally and should be checked again before travel.[^tymc-a13-first-last]
+
+The displayed A21 express therefore operates in a narrower daytime window than the A1/A12 express pattern: its first listed departure is 13:41 and its last is 18:41.[^tymc-a13-first-last] For the opposite direction, the page shows a commuter A22 departure at 06:00 and a last one at 23:59, a service detail not implied by the station's express-stop status alone.[^tymc-a13-first-last]

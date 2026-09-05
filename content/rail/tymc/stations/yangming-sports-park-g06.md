@@ -40,6 +40,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: dorts-gc02-design
+    title: "Green Line GC02 station design briefs"
+    titleOriginal: "桃園捷運綠線車站設計-GC02標"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/cp.aspx?n=23243
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The GC02 design brief describes G06's park-led massing, planting, colours and ground-floor treatment."
   - id: tdx-tymc-green-check
     title: "Live TDX TYMC Green Line coverage check"
     titleOriginal: "交通部運輸資料流通服務平臺 TYMC 綠線查核"
@@ -63,6 +72,10 @@ G06 sits in the Taoyuan Green Line station sequence published by the Taoyuan eng
 A live TDX check of the TYMC Line, Station, StationOfRoute, Route, Shape, transfer and timetable families returned Airport MRT records, including one A line record, but no Green Line record on 24 August 2026.[^tdx-tymc-green-check] This page therefore keeps the Green Line as a primary-research project registry. Coordinates, entrances, accessibility facilities, platform gaps, fares, headways, ridership and opening dates remain TBC rather than being inferred from a map, a neighbouring Airport MRT station or a planned interchange.[^dorts-green][^tdx-tymc-green-check]
 
 The route is still under construction. A construction-project station should not be described as though it already has passenger service, a live timetable or observed daily use. The engineering bureau’s current page gives the line-wide target as 2030, but it does not provide a station-specific opening date for G06; that field remains TBC here.[^dorts-green]
+
+## Design brief
+
+G06's GC02 brief is explicitly park-led. It calls for retaining as much of the surrounding green function as possible, lightening the station mass above the second floor with folded-plate forms, and using grey-green colours to blend with the tree canopy and the continuous green belt along Jieshou Road. It also specifies a transparent ground level and wood-patterned shop ceilings as part of the park relationship.[^dorts-gc02-design] These are proposed design measures, not a claim about the completed station's finishes.
 
 ## What the source does and does not establish
 

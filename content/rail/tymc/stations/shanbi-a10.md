@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a10-timetable
+    title: "A10 station timetable"
+    titleOriginal: "山鼻站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A10
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A10's all-stop commuter intervals and late added airport services."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -111,3 +120,9 @@ TYMC's own station page gives the address as Nanshan Road Section 3 No. 155 in L
 Shanbi opened with the rest of the initial line on 2 March 2017.[^tymc-history] It sits within Luzhu District, Taoyuan, alongside Kengkou — the only two current Airport MRT stations in that district, per this project's own committed TDX administrative-district data.[^tdx-tymc-station]
 
 TDX's own committed route data places A10 29.745 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership at this station is not established by any source read for this page and stays TBC, as is the platform screen-door type.
+
+The current A10 table displays commuter first departures at 06:05 toward the airport and 05:58 toward Taipei.[^tymc-a10-timetable] The ordinary last departures shown are 23:44 toward Taipei and 23:50 toward the airport, followed by added airport services at 00:05 and 00:20.[^tymc-a10-timetable] The daytime rows repeat a 15-minute all-stop rhythm; A10 is outside the express-stop list.[^tymc-a10-timetable][^tymc-express-timetable]
+
+The source's late-service labels matter here: 00:05 and 00:20 are not simply later repetitions of the ordinary 23:50 row, but are marked as additional airport-service workings.[^tymc-a10-timetable] The table also shows no direct-train entry for A10, so the page does not imply express service from the presence of a late airport train.[^tymc-a10-timetable]
+
+The daytime table remains all-stop commuter service.[^tymc-a10-timetable]

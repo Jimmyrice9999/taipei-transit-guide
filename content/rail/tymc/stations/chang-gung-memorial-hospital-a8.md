@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a8-timetable
+    title: "A8 station timetable"
+    titleOriginal: "長庚醫院站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A8
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A8's alternating express/commuter service and late added airport rows."
   - id: ltn-a8-bus-hub
     title: "Airport MRT station-by-station series: A8 Chang Gung Memorial Hospital, a transport transfer hub"
     titleOriginal: 機場捷運各站系列報導A8長庚醫院站 轉運交通樞紐
@@ -109,3 +118,7 @@ TYMC's own timetable page lists A8 among the fixed express (直達車) stops —
 Chang Gung Memorial Hospital opened with the rest of the initial line on 2 March 2017.[^tymc-history]
 
 TDX's own committed route data places A8 20.145 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] The exact floor area or storey count of the joint-development complex above the station is not established by any source read for this page and stays TBC, beyond the general description of a mixed residential-commercial building.
+
+The operator's detailed A8 table shows an express departure followed about two minutes later by a commuter departure in the northbound direction: for example, 05:56 express/05:58 commuter and then 06:11/06:13.[^tymc-a8-timetable] In the airport-bound direction the first displayed express is 05:52, followed by 06:08 commuter, and the late table includes added airport services at 23:51 and 00:06.[^tymc-a8-timetable] This supports the service distinction without turning it into an unsupported claim about overtaking or platform operations.[^tymc-a8-timetable]
+
+The schedule therefore supplies a second, operational reason A8 is different from neighbouring commuter-only stations: the same timetable page places fixed express and ordinary commuter departures side by side, while retaining separate late airport-service rows.[^tymc-a8-timetable]

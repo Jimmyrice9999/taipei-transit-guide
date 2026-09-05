@@ -86,6 +86,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a12-first-last
+    title: "A12 first and last trains"
+    titleOriginal: "各站首末班車時間：A12機場第一航廈站"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/departure.php?station=A12
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's current first/last-train table gives A12's express and commuter terminal times and identifies the timetable-display update note."
   - id: rb-airport-risk-paper
     title: Airport MRT tunnel-crossing technical paper
     titleOriginal: 機場捷運穿越機場跑滑行道段技術報告
@@ -120,3 +129,7 @@ Airport Terminal 1 is the first of the line's two airport stations and one of th
 This station and Terminal 2 sit within the airport's underground civil package (CU02/CU02A), an approximately 5,520 m stretch built by cut-and-cover and shield-tunnelling methods beneath runway and control-tower-adjacent ground; a Railway Bureau technical paper on the airport crossing places the East Taxiway 48 m from this section and records the red-soil and gravel-bearing strata used in the crossing's monitoring design.[^rb-airport-risk-paper] TYMC's own station page does not itself describe an in-town check-in or baggage-drop facility at this station specifically; that service, where it exists at this network's stations, is documented separately on the line's own page rather than assumed here.
 
 TYMC's own station page lists an inquiry desk in the main hall, drinking water in the non-paid area near the station's public artwork, restrooms in the paid area, and 16 large lockers (45×60×90 cm, NT$50 per three hours); it records no dedicated station parking, with the station instead sharing Terminal 1's own P1/P2 lots.[^tymc-a12-station] TYMC's own current public-art page names one work here, "Transit — Heart's Flight Path" (過境—心航線) by artist 林俊廷, without a stated year or medium.[^tymc-art]
+
+The operator's first/last-train table adds a service boundary to the station record.[^tymc-a12-first-last] Its displayed express first trains are 05:58 to A1, 06:07 to A13 and 13:37 to A21; the corresponding last trains are 22:58, 23:39 and 18:37.[^tymc-a12-first-last] Commuter first trains are 06:07 to A1 and 05:57 to A13/A22, while the displayed last trains are 23:37 to A1, 00:27 to A13 and 23:57 to A22.[^tymc-a12-first-last] The same page warns that its timetable is a live operational display and may be adjusted, so these are dated operator-published values rather than permanent station specifications.[^tymc-a12-first-last]
+
+The A21 express values are a limited part of the display rather than an all-day pattern: the first shown A21-bound express is 13:37 and the last is 18:37.[^tymc-a12-first-last] That distinction matters at A12 because the ordinary commuter table, not the express table, supplies the late-night A22 service shown at 23:57.[^tymc-a12-first-last]

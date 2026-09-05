@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a17-timetable
+    title: A17 station timetable
+    titleOriginal: A17 車站時刻表
+    publisher: Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A17
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current timetable page gives the first, regular and late added commuter departures shown for A17."
   - id: rb-airport-depot-page
     title: Airport MRT maintenance depots record
     titleOriginal: 機場捷運維修機廠
@@ -129,3 +138,7 @@ No rail interchange is established at this station. TYMC's own timetable page do
 Linghang opened with the rest of the initial line on 2 March 2017.[^tymc-history] It sits within Dayuan District, Taoyuan, one of six current Airport MRT stations there — Dayuan, Hengshan, Linghang, and the two airport terminal stations plus Airport Hotel all lie in that district, per this project's own committed TDX administrative-district data.[^tdx-tymc-station]
 
 TDX's own committed route data places A17 42.96 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The detailed timetable page currently shows the combined Taipei/airport direction beginning at 06:06, with the displayed daytime departures stepping in 15-minute increments; the late added airport-bound departures shown are 23:38, 23:53 and 00:08.[^tymc-a17-timetable] The separate Zhongli-direction display begins at 06:12 and continues to a last shown departure at 00:11, so the operator's page does not present one symmetrical first/last pair for both directions.[^tymc-a17-timetable]
+
+The timetable's normal A17-to-Taipei/airport pattern remains at :06, :21, :36 and :51 through the displayed daytime rows, while the southbound pattern is offset to :12, :27, :42 and :57.[^tymc-a17-timetable] That offset is useful operational context: the page records two ordinary all-stop streams at the station, not a single hourly timetable, and marks the three late airport services as added airport trips rather than ordinary departures.[^tymc-a17-timetable]

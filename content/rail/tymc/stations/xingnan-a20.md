@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a20-timetable
+    title: A20 station timetable
+    titleOriginal: A20 車站時刻表
+    publisher: Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A20
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current timetable page gives the first, regular and late added commuter departures shown for A20."
   - id: tymc-history
     title: Company milestones
     titleOriginal: 桃捷大事紀
@@ -102,3 +111,7 @@ TYMC's own station page gives the address as Zhongfeng North Road Section 1 No. 
 Xingnan opened with the rest of the initial line on 2 March 2017.[^tymc-history] It sits within Zhongli District, one of five current Airport MRT stations in that district — Taoyuan HSR Station, Taoyuan Sports Park, Xingnan, Huanbei and Laojie River all lie in Zhongli, per this project's own committed TDX administrative-district data.[^tdx-tymc-station]
 
 TDX's own committed route data places A20 49.27 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership at this station is not established by any source read for this page and stays TBC, and zh.wikipedia's own low-ridership claim for A20 is not independently corroborated. The accessible-lift count at this station is likewise not itemised beyond what the operator's general facility listing states.
+
+The current timetable display for the Taipei/airport direction begins at 06:09 and shows 15-minute departures at 06:24, 06:39 and 06:54; its late added airport-bound entries are 23:26, 23:41 and 23:56.[^tymc-a20-timetable] A20 is not in the operator's fixed or peak-added express stop list, so these are commuter departures.[^tymc-express-timetable]
+
+The A20 display keeps the :09, :24, :39 and :54 minute pattern through the daytime rows and shows a final regular 23:09 departure before the airport additions.[^tymc-a20-timetable] The page identifies all four daytime entries as ordinary all-stop trains and separately marks the three late trips as extra airport services.[^tymc-a20-timetable] This distinction matters at a station that is outside the published express stopping pattern: a late airport trip is still not a fixed express stop.[^tymc-a20-timetable]

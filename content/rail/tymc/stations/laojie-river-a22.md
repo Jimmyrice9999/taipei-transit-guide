@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a22-timetable
+    title: A22 station timetable
+    titleOriginal: A22 車站時刻表
+    publisher: Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A22
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current timetable page gives the first, regular and late added commuter departures shown for A22."
   - id: rb-a22-opening
     title: Airport MRT A22 Laojie River Station opens
     titleOriginal: 機場捷運延伸線A22老街溪站正式通車
@@ -118,3 +127,7 @@ A further extension to Zhongli (`A23`), continuing underground and planned to co
 Structural detail beyond "underground" rests only on a secondary source: zh.wikipedia's dedicated article describes three below-ground levels (concourse, equipment and platform) and a single island platform roughly 80 m long, a level of detail this page's primary sources do not themselves state. TYMC's own timetable page does not list A22 among the express (直達車) stops; only the commuter (普通車) service serves this stop, consistent with it being the line's newest and southernmost station.[^tymc-express-timetable]
 
 TDX's own committed route data places A22 51.76 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor]
+
+The current timetable display begins with an ordinary departure at 05:33, followed by the displayed 06:03, 06:18, 06:33 and 06:48 departures.[^tymc-a22-timetable] The page shows a regular 23:03 departure and added airport-bound departures at 23:20, 23:35 and 23:50.[^tymc-a22-timetable] A22 is not included in the operator's fixed or peak-added express stop list.[^tymc-express-timetable]
+
+The A22 display keeps ordinary all-stop departures at :03, :18, :33 and :48 through the daytime rows, so the first 05:33 service is the opening point of the same quarter-hour pattern rather than an isolated early trip.[^tymc-a22-timetable] The three later airport services are marked separately as added trips whose destination is the airport, while the regular 23:03 train remains in the normal pattern.[^tymc-a22-timetable] This page does not show an express designation for the current southern terminus.[^tymc-a22-timetable]

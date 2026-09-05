@@ -82,6 +82,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's own current page states the fixed express (直達車) stop list (A1, A3, A8, A12, A13), the peak-hour \"Huanbei Express\" addition of A18 and A21, and that the commuter (普通車) service calls at every station."
+  - id: tymc-a4-timetable
+    title: "A4 station timetable"
+    titleOriginal: "新莊副都心站時刻表"
+    publisher: "Taoyuan Metro Corporation (桃園大眾捷運股份有限公司)"
+    url: https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A4
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full current station timetable gives A4's all-stop commuter first/last departures and airport-bound added services."
   - id: rb-102-annual-report
     title: Railway Bureau 102nd-year annual report
     titleOriginal: 鐵道局102年度年報
@@ -122,3 +131,7 @@ TYMC's own timetable page does not list A4 among the express (直達車) stops; 
 Xinzhuang Fuduxin opened with the rest of the initial line on 2 March 2017.[^tymc-history] TDX records its administrative district as Taishan, not Xinzhuang, despite the station's own name — a mismatch this page states rather than silently reconciles.[^tdx-tymc-station]
 
 TDX's own committed route data places A4 9.098 km along route A-1 from Taipei Main Station by cumulative surveyed distance, the same measure this project uses for every station on the line.[^tdx-tymc-sor] Daily ridership at this station is not established by any source read for this page and stays TBC.
+
+The operator's current timetable shows A4 as commuter-only: first departures are 05:59 toward Taipei and 06:05 toward the airport, while the displayed last departures are 00:12 and 23:52.[^tymc-a4-timetable] The late airport-bound table marks 23:37 and 23:52 as extra airport services, with no direct-train row for A4.[^tymc-a4-timetable] The page's “no train” cells are retained as display data, not expanded into a claim about exceptional or unscheduled movements.[^tymc-a4-timetable]
+
+The detailed schedule is regular rather than express-based: after the first train, the airport-bound side lists 06:05, 06:20, 06:35 and 06:50, then repeats a 15-minute pattern through the day.[^tymc-a4-timetable] Taipei-bound trains begin at 05:59 and follow 15-minute marks, with a final displayed 00:12 departure.[^tymc-a4-timetable] The timetable also distinguishes two late airport extras from the ordinary commuter rows.[^tymc-a4-timetable]

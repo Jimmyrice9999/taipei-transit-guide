@@ -41,6 +41,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "Current Green Line station table, locations, structure, transfer notes, route length, station count, budget, approvals, package milestones and target opening."
+  - id: dorts-gc02-design
+    title: "Green Line GC02 station design briefs"
+    titleOriginal: "桃園捷運綠線車站設計-GC02標"
+    publisher: "Taoyuan City Department of Rapid Transit Systems (桃園市政府捷運工程局)"
+    url: https://dorts.tycg.gov.tw/cp.aspx?n=23243
+    accessed: 2026-09-05
+    kind: primary
+    lang: zh-Hant
+    note: "The GC02 design brief describes G04's Sanying Line terminus role, surrounding park and palette."
   - id: tdx-tymc-green-check
     title: "Live TDX TYMC Green Line coverage check"
     titleOriginal: "交通部運輸資料流通服務平臺 TYMC 綠線查核"
@@ -64,6 +73,10 @@ G04 sits in the Taoyuan Green Line station sequence published by the Taoyuan eng
 A live TDX check of the TYMC Line, Station, StationOfRoute, Route, Shape, transfer and timetable families returned Airport MRT records, including one A line record, but no Green Line record on 24 August 2026.[^tdx-tymc-green-check] This page therefore keeps the Green Line as a primary-research project registry. Coordinates, entrances, accessibility facilities, platform gaps, fares, headways, ridership and opening dates remain TBC rather than being inferred from a map, a neighbouring Airport MRT station or a planned interchange.[^dorts-green][^tdx-tymc-green-check]
 
 The route is still under construction. A construction-project station should not be described as though it already has passenger service, a live timetable or observed daily use. The engineering bureau’s current page gives the line-wide target as 2030, but it does not provide a station-specific opening date for G04; that field remains TBC here.[^dorts-green]
+
+## Design brief
+
+The GC02 brief assigns G04 a future network role not visible in the station table: it is described as the Sanying Line terminus (LB14) and a gateway connecting southern Taoyuan with the Taipei–New Taipei metro area. The site brief places the station beside the new high-rise residential area west of Jinhe Road and Daan Forest Park to the east; its proposed palette uses green tones, with Sanying Line standard colours marking selected corners and lifts.[^dorts-gc02-design] This is a planned design relationship, not a statement that the Sanying extension or the park-facing station works are in service.
 
 ## What the source does and does not establish
 
