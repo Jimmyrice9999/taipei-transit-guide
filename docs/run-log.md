@@ -26923,3 +26923,22 @@ add real information. They remain short rather than receiving identical
 background prose. All KRTC, TMRT, THSR and TRA pages are at least 400 words
 (minimums 407, 403, 635 and 436 respectively). No pages were changed in those
 checked groups.
+
+## Run 313 Gates and handoff (2026-09-05)
+
+The post-depth `npm run gate:full` completed successfully. It rebuilt all
+6,002 routes, checked 2,632,852 internal links across 5,257 pages with no
+broken links, passed all 243 unit tests, resolved 27,409 sourced claims with
+4,653 explicit TBC values and zero asserted claims, and completed the research,
+geometry and colour-contrast gates without failures. The full gate generated
+tracked audit snapshots and aggregate JSON; those generated files remain
+unstaged by instruction, alongside the browser screenshots, PDFs and probes.
+
+The allowed bounded browser run then completed in template mode with one worker:
+156/156 pages, zero axe violations, both locale map probes (713 stations each),
+both no-JavaScript map fallbacks, both locale navigation probes (288 links each),
+120 smoke screenshots and 7 print PDFs. Forty-six screenshot artifacts were
+clipped at Chromium's 12,000 px capture limit and recorded as warnings, with an
+exit code of 0. The exhaustive `verify:browser:full` sweep was deferred under
+the reduced-capacity requirement. CI could not be confirmed from this machine;
+GitHub Actions was not polled and `gh` is unavailable.
