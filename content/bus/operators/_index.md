@@ -30,6 +30,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full operator timetable publishes the 8101 Taitung–Jingpu stop rows, displayed departure times, Fugang calls and the reservation-required accessible-vehicle note.
+  - id: hcbus-about
+    title: Hsinchu Bus company profile
+    titleOriginal: 公司簡介
+    publisher: Hsinchu Bus (新竹汽車客運股份有限公司)
+    url: https://www.hcbus.com.tw/big5/about.asp
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The operator's full company profile states its 1919 origin, 1946 reorganisation, stated city/highway route scope and operating-area description.
+  - id: hcbus-transition
+    title: Hsinchu Bus regional service transition notice
+    titleOriginal: 陪伴桃、竹、苗在地鄉親的「新竹客運」感謝您
+    publisher: Hsinchu Bus (新竹汽車客運股份有限公司)
+    url: https://www.hcbus.com.tw/big5/news_in.asp?id=712&page=1
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full 10 September 2024 operator notice records the phased handover of Miaoli and Hsinchu-area regional services and identifies the 9003, 9010 and Hsinchu City services the operator expected to continue.
+  - id: hcbus-home
+    title: Hsinchu Bus current notices
+    titleOriginal: 新竹客運
+    publisher: Hsinchu Bus (新竹汽車客運股份有限公司)
+    url: https://hcbus.com.tw/index.asp
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The current operator homepage, fetched with August 2026 notices, identifies current 9003 and 9010 timetable/stop notices and the company's Hsinchu address/contact information.
 ---
 
 The committed TDX pull contains 61 operator records associated with 1051 route records [^tdx-bus-operator-pull].
@@ -41,6 +68,11 @@ adds current service evidence alongside the structured TDX pull. [Xingdong
 Bus](/bus/operators/xingdong-bus/) is the first regional example, with a dated
 8101 timetable through Fugang and separately dated airport and Tourist Shuttle
 notices.[^xingdong-home][^xingdong-8101]
+
+[Hsinchu Bus](/bus/operators/hsinchu-bus/) is a second regional profile. Its
+operator pages preserve the distinction between the company's historical route
+scope, its 2024 regional-service transition notice and its current homepage
+notices for 9003 and 9010.[^hcbus-about][^hcbus-transition][^hcbus-home]
 
 - [Taipei Bus Co., Ltd. — NewTaipei](/bus/operators/taipeibus-1m9ums8/) — 126 route records [^tdx-bus-operator-pull]
 - [SanChungBus — NewTaipei](/bus/operators/sanchungbus-1lzv139/) — 72 route records [^tdx-bus-operator-pull]

@@ -28029,6 +28029,56 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+### Hsinchu Bus operator depth
+
+The next depth batch added a deliberately bounded operator overlay for Hsinchu
+Bus, rather than turning the operator's historic route description into a
+current fleet or route census. Full pages were fetched from the operator on 6
+September 2026:
+
+    https://www.hcbus.com.tw/big5/about.asp
+    https://www.hcbus.com.tw/big5/news_in.asp?id=712&page=1
+    https://hcbus.com.tw/index.asp
+
+The company profile establishes the operator's 1919 origin and its stated
+historic scope. The 10 September 2024 transition notice records the Miaoli
+handover from 16 September and the Hsinchu/Zhudong/Guanxi handover from 1
+November, while naming 9003 Hsinchu–Taipei, 9010 Hsinchu–Taichung and Hsinchu
+City urban service as the continuing scope. The current homepage was checked
+for August 2026 notices for 9003 and 9010 and the Hsinchu contact block.
+
+Production changes:
+
+    content/bus/operators/hsinchu-bus.md
+    docs/research/bus/hsinchu-bus.md
+    content/bus/operators/_index.md
+    public/data/search-index.json
+
+The complete current fleet, depot ownership, procurement history and vehicle
+census remain TBC. This is a source boundary, not an inference from the TDX
+snapshot. The operator's 16-city-route/two-highway-route description and the
+later transition notice are retained as distinct source contexts.
+
+The mandatory fresh build → `npm run fonts` → fresh build sequence completed;
+the first and second builds each reported:
+
+    postbuild: 5331 pages checked against the Han subsets — no missing glyphs.
+
+The final Hsinchu `npm run gate:fast` completed exit 0:
+
+    citations: 1895 content files, 1836 with a sources: block
+      8851 citations resolved — 8302 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1895 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 306 file(s), 1191 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
 No scout worker was available in this environment, so this batch used one
 main-session reader/writer and did not run concurrent writers.
 
