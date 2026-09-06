@@ -84,7 +84,7 @@ const nationalBus = c('structured', 'National route discovery exists; a jurisdic
 const nationalCoach = c('structured', 'National intercity coach snapshot is available.', '/bus/intercity/')
 const nodeGap = c('not-researched', 'A jurisdiction-specific multimodal node page is not yet written.')
 
-export const REGIONS: Region[] = [
+const REGION_REGISTRY: Region[] = [
   region({
     slug: 'keelung', title: 'Keelung City', titleOriginal: '基隆市',
     summary: 'A national reference entry for Keelung, with TRA, bus, coach, port and regional-connection seams kept visible as separate coverage states.',
@@ -259,6 +259,22 @@ export const REGIONS: Region[] = [
     modes: { rail: c('not-applicable', 'No rail-system page is assigned to Lienchiang in this registry entry.'), bus: nationalBus, coach: c('not-applicable', 'The intercity coach snapshot is mainland-oriented; Matsu coach coverage is not claimed.'), ferry: c('tbc', 'Taiwan–Matsu, inter-island Matsu and Small Three Links are priority families; first-class pages are not yet implemented.', '/ferry/'), air: c('tbc', 'Matsu domestic aviation is a priority island-connectivity family.', '/air/airports/outlying-islands/'), nodes: c('tbc', 'Airport and ferry joins are identified; a Matsu multimodal node page is not yet written.', '/ferry/') },
   }),
 ]
+
+export const REGIONS: Region[] = REGION_REGISTRY.map((region) => {
+  if (region.slug !== 'penghu') return region
+  return {
+    ...region,
+    links: [
+      { title: 'Penghu Airport', href: '/air/airports/penghu/', note: 'Dated domestic flight snapshot and official bus/ship links.' },
+      ...region.links,
+    ],
+    modes: region.modes.map((entry) => {
+      if (entry.key === 'air') return { ...entry, status: 'covered' as const, note: 'Penghu Airport has a dedicated dated route and ground-access page.', href: '/air/airports/penghu/' }
+      if (entry.key === 'nodes') return { ...entry, status: 'structured' as const, note: 'The airport page joins official flight, bus and shipping-link surfaces without asserting a direct airport-to-port transfer.', href: '/air/airports/penghu/' }
+      return entry
+    }),
+  }
+})
 
 export function getRegion(slug: string): Region | undefined {
   return REGIONS.find((region) => region.slug === slug)
