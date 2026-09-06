@@ -28029,6 +28029,44 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+### TDX national bus operator-name correction
+
+The refreshed national route snapshot exposed a normalisation bug in the
+first national-bus fetcher: TDX returns `OperatorName` as a localised object,
+but the normaliser passed that object through a string helper. Every affected
+operator label therefore became `[object Object]` in
+`data/tdx/bus/national-routes.json`. This was a production-data defect, not a
+display-only issue.
+
+The fetcher now selects the English localised name and falls back to the
+Traditional Chinese value. The dated snapshot was fetched again on 2026-09-06
+from the official TDX `Bus/Route/City` endpoints. It still contains 3,046
+route records across all 22 jurisdictions, 5,837 source `SubRoutes` variants,
+and observed zero HTTP 429 responses during this refresh. A post-refresh
+assertion found zero remaining `[object Object]` operator labels; sampled rows
+now carry names such as Chung-Lu Bus Co., Ltd., Chang Hua Bus Co., Ltd. and
+Yuan Lin Bus Co., Ltd.
+
+Only the fetcher and its intentionally refreshed structured snapshot changed;
+no authored route prose was generated from the data. `npm run gate:fast`
+completed exit 0:
+
+    citations: 1897 content files, 1838 with a sources: block
+      8863 citations resolved — 8314 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1897 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 310 file(s), 1201 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session source/data batch with one writer.
+
 ### Hsinchu Bus operator depth
 
 The next depth batch added a deliberately bounded operator overlay for Hsinchu

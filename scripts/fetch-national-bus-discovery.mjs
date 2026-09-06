@@ -106,7 +106,12 @@ function names(value) {
 }
 
 function normalizeRoute(row, jurisdiction) {
-  const operatorNames = (row.Operators ?? []).map((operator) => text(operator.OperatorName)).filter(Boolean)
+  const operatorNames = (row.Operators ?? [])
+    .map((operator) => {
+      const localized = names(operator.OperatorName)
+      return localized.en || localized.zh
+    })
+    .filter(Boolean)
   const operatorIds = (row.Operators ?? []).map((operator) => text(operator.OperatorID)).filter(Boolean)
   return {
     id: `${jurisdiction.code}:${text(row.RouteUID)}`,
