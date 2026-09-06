@@ -55,7 +55,7 @@ export default function NationalCoachIndex() {
       <ul className="coach-operator-list">
         {operators.map((operator) => (
           <li key={operator.name}>
-            <span>{operator.name}</span>
+            <span lang="zh-Hant">{operator.name}</span>
             <span>{operator.routeVariantCount} variants</span>
           </li>
         ))}

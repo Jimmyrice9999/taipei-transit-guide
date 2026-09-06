@@ -13,6 +13,8 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BackLink from '@/components/BackLink'
 import Figure from '@/components/Figure'
 import RichText from '@/components/RichText'
+import TableOfContents from '@/components/TableOfContents'
+import type { TocEntry } from '@/lib/markdown-plugins'
 import { NEUTRAL_LINE } from '@/lib/lines'
 import { getImage } from '@/lib/images'
 import { REGIONS, getRegion, type CoverageStatus } from '@/lib/regions'
@@ -91,6 +93,11 @@ export default async function RegionPage({
 
   const heroImage = region.hero ? getImage(region.hero) : null
   const heroCaption = region.hero ? REGION_HERO_CAPTION[region.hero] : undefined
+  const toc: TocEntry[] = [
+    { id: 'coverage-heading', level: 2, label: 'Coverage by mode' },
+    { id: 'canonical-pages', level: 2, label: 'Canonical pages' },
+    ...(region.gaps && region.gaps.length > 0 ? [{ id: 'not-yet-on-this-site', level: 2 as const, label: 'Not yet on this site' }] : []),
+  ]
 
   return (
     <PageShell accent={NEUTRAL_LINE}>
@@ -109,6 +116,8 @@ export default async function RegionPage({
           className="figure page-hero"
         />
       )}
+
+      <TableOfContents items={toc} />
 
       <div className="page-body">
         <section className="coverage-ledger" aria-labelledby="coverage-heading">
@@ -132,7 +141,7 @@ export default async function RegionPage({
           </ul>
         </section>
 
-        <h2 className="section-heading">Canonical pages</h2>
+        <h2 id="canonical-pages" className="section-heading">Canonical pages</h2>
         <ul className="card-list">
           {region.links.map((link) => (
             <li key={link.href}>
@@ -155,7 +164,7 @@ export default async function RegionPage({
 
         {region.gaps && region.gaps.length > 0 && (
           <>
-            <h2 className="section-heading">Not yet on this site</h2>
+            <h2 id="not-yet-on-this-site" className="section-heading">Not yet on this site</h2>
             <ul>
               {region.gaps.map((gap) => (
                 <li key={gap}>

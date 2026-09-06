@@ -76,6 +76,12 @@ export const SWATCHES: Swatch[] = [
     on: [],
     why: 'The filled ground in the section drawing (run 11). A surface rather than a fill, because the IN TUNNEL label is written on it — the drawing was reported as unreadable, the ground is what made it readable, and a colour with text on it has to be checked like one.',
   },
+  {
+    name: 'surface-muted',
+    role: 'surface',
+    on: [],
+    why: 'Quiet atlas notes and secondary panels. It is a surface, not an ink colour.',
+  },
 
   {
     name: 'text',
@@ -114,6 +120,11 @@ export const SWATCHES: Swatch[] = [
     on: ['band'],
     why: 'Inactive nav items on the band. Dimmed, so it is the one most likely to slip.',
   },
+  { name: 'status-ink', role: 'text', on: ['bg'], why: 'Neutral status labels in the coverage ledger.' },
+  { name: 'status-good', role: 'text', on: ['bg'], why: 'Positive or source-backed status labels in the coverage ledger.' },
+  { name: 'status-data', role: 'text', on: ['bg'], why: 'Structured-data status labels in the coverage ledger.' },
+  { name: 'status-tbc', role: 'text', on: ['bg'], why: 'TBC status labels, deliberately distinct from a loading state.' },
+  { name: 'status-gap', role: 'text', on: ['bg'], why: 'Not-researched, not-applicable and no-service status labels.' },
 
   {
     name: 'rule',

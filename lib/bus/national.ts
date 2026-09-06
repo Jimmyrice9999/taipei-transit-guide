@@ -89,7 +89,7 @@ const structured: Record<string, Omit<NationalBusJurisdiction, 'slug' | 'title' 
     sourceLabel: 'Taichung City Government dataset',
     sourceUrl: taichung.source.datasetUrl,
     busHref: '/bus/regional/taichung/',
-    note: 'The same snapshot separately identifies 26 reservation-based 小黃公車 routes; they are not silently merged into the fixed-route count.',
+    note: 'The same snapshot separately identifies 26 reservation-based yellow community-bus routes; they are not silently merged into the fixed-route count.',
   },
   tainan: {
     state: 'structured',
@@ -100,7 +100,7 @@ const structured: Record<string, Omit<NationalBusJurisdiction, 'slug' | 'title' 
     sourceLabel: 'Tainan City Government / TDX',
     sourceUrl: tainan.source.routeUrl,
     busHref: '/bus/regional/tainan/',
-    note: 'The separate 小黃公車 table is retained as a community-service layer rather than counted as ordinary fixed-route city bus.',
+    note: 'The separate yellow community-bus table is retained as a community-service layer rather than counted as ordinary fixed-route city bus.',
   },
   kaohsiung: {
     state: 'structured',
