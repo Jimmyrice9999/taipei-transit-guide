@@ -8,6 +8,7 @@ const AIR_SURFACES = [
   { title: 'Hualien', original: '花蓮航空站', href: '/air/airports/hualien/', note: 'Dated east-coast flight families and ground-access evidence' },
   { title: 'Outlying-island airports', original: '離島機場', href: '/air/airports/outlying-islands/', note: 'Penghu, Kinmen, Matsu, Lanyu and Green Island' },
   { title: 'Domestic carriers', original: '國內航線航空公司', href: '/air/operators/domestic-carriers/', note: 'UNI Air, Mandarin Airlines and dated route context' },
+  { title: 'Daily Air', original: '德安航空', href: '/air/operators/daily-air/', note: 'Five small-aircraft island route families' },
 ]
 
 export default function NationalAirAtlas() {
@@ -19,7 +20,7 @@ export default function NationalAirAtlas() {
       </div>
       <div className="coverage-ledger-heading">
         <h2 className="section-heading" id="national-air-coverage">Airport and route-family surfaces</h2>
-        <span className="coverage-ledger-total">6 canonical surfaces</span>
+        <span className="coverage-ledger-total">8 canonical surfaces</span>
       </div>
       <ul className="coverage-ledger-list mode-atlas-list">
         {AIR_SURFACES.map((surface) => (

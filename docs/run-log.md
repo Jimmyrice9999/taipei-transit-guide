@@ -28329,3 +28329,39 @@ no missing glyphs.` Final ferry `npm run gate:fast` completed exit 0 with:
 No browser verification was run during this ferry data batch; the shared
 coverage-ledger change has already passed the blocker matrix, and the complete
 bounded suite remains reserved for the final UI/data boundary.
+
+### Domestic aviation atlas hardening
+
+The existing `NationalAirAtlas` array contained seven surfaces but rendered the
+literal total `6 canonical surfaces`, and its operator surface did not expose
+the already-sourced Daily Air page. The correction changes the displayed total
+to `8 canonical surfaces` and adds `/air/operators/daily-air/` as a peer surface
+with the five-route island-operator description already supported by the Daily
+Air content page. No new airline claim or timetable was invented.
+
+Focused Playwright measurement used a static `out/` server at
+`http://localhost:3000` after the fresh build. It visited `/en/air/` and
+`/zh-Hant/air/` at widths 320, 375, 390, 414, 428 and 1024 after
+`document.fonts.ready`. Every case reported `scrollWidth === clientWidth`,
+`overflow=0`; every atlas item had `scrollWidth === clientWidth` and remained
+inside its 288–976px parent track. The 320px count label wrapped to two lines
+without clipping. The focused screenshot files were:
+
+    docs/screenshots/run318-air-atlas-en-320.png
+    docs/screenshots/run318-air-atlas-zh-1024.png
+
+Visual inspection found no clipped heading, overflowing card, or unreadable
+Daily Air row. The `npm run gate:fast` after the UI change completed exit 0:
+
+    citations: 1894 content files, 1835 with a sources: block
+      8845 citations resolved — 8296 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1894 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 306 file(s), 1191 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
