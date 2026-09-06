@@ -28481,6 +28481,55 @@ The final fare `npm run gate:fast` completed exit 0:
 No scout worker was available in this environment; this was a sequential
 main-session source/content batch.
 
+### Keelung Transfer Station depth
+
+The next bus/node batch fetched and read the full current primary pages for
+Keelung's terminal and city-bus boundary:
+
+    https://www.klcg.gov.tw/tw/klcg1/3170-287263.html
+    https://www.klcba.gov.tw/
+    https://www.thb.gov.tw/cp.aspx?Create=1&n=292
+
+Production changes:
+
+    content/bus/depots/keelung-transfer-station.md
+    docs/research/bus/keelung-transfer-station.md
+    content/bus/depots/_index.md
+    public/data/search-index.json
+
+The new canonical node records the city's two published zones: the transfer
+station building and the Zhongshan 1st Road roadside shelter. It names the
+intercity operators listed inside the building, the selected operator route
+groups at the roadside shelter, and the explicit rule that Keelung Railway
+Station South Station's bus stop remains in use for the city's 3xx, 4xx and
+6xx groups. The current municipal bus portal is kept separate for August 2026
+route-change and frequency notices. No bay map, direct rail-platform join,
+step-free route, timed transfer or terminal-wide accessibility claim was added.
+
+The required fresh build → `npm run fonts` → fresh build sequence completed;
+both builds reported:
+
+    postbuild: 5335 pages checked against the Han subsets — no missing glyphs.
+
+The Keelung batch's final fast gate is recorded after the new source page and
+search index are regenerated:
+
+    citations: 1897 content files, 1838 with a sources: block
+      8863 citations resolved — 8314 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1897 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 310 file(s), 1201 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session research/content batch.
+
 ### Domestic aviation atlas hardening
 
 The existing `NationalAirAtlas` array contained seven surfaces but rendered the
