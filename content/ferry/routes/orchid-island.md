@@ -1,7 +1,7 @@
 ---
 title: Orchid Island ferry services
 summary: Public ferry services linking Fugang Port, Taitung (and a seasonal Kenting route) with Orchid Island, with a genuine spread of published crossing times and an unconfirmed resident-fare subsidy.
-updated: 2026-08-28
+updated: 2026-09-06
 aliases:
   - Lanyu ferry
   - 蘭嶼交通船
@@ -38,7 +38,7 @@ sources:
     titleOriginal: 客船
     publisher: East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處)
     url: "https://www.eastcoast-nsa.gov.tw/zh-tw/service/ferry/"
-    accessed: 2026-08-28
+    accessed: 2026-09-06
     kind: primary
     lang: zh-Hant
     note: "The scenic-area authority's own current ferry page, naming Fugang as the port, three operators for the Orchid Island route, and describing the peak-season triangle routing via Green Island."
@@ -47,7 +47,7 @@ sources:
     titleOriginal: "離島交通"
     publisher: Taitung County Government (臺東縣政府)
     url: "https://tour.taitung.gov.tw/zh-tw/traffic/island"
-    accessed: 2026-08-28
+    accessed: 2026-09-06
     kind: primary
     lang: zh-Hant
     note: "The county government's own tourism page, giving a 120-minute Fugang-Orchid Island crossing time, a 120-150 minute Houbihu figure, and Daily Air's Taitung-Orchid Island flight details."

@@ -261,6 +261,19 @@ const REGION_REGISTRY: Region[] = [
 ]
 
 export const REGIONS: Region[] = REGION_REGISTRY.map((region) => {
+  if (region.slug === 'taitung') {
+    return {
+      ...region,
+      links: [
+        { title: 'Green Island ferry', href: '/ferry/routes/green-island/', note: 'Current official Taitung–Green Island route family.' },
+        { title: 'Orchid Island ferry', href: '/ferry/routes/orchid-island/', note: 'Current official Taitung–Orchid Island and seasonal Houbihu route family.' },
+        ...region.links,
+      ],
+      modes: region.modes.map((entry) => entry.key === 'ferry'
+        ? { ...entry, status: 'covered' as const, note: 'Green Island and Orchid Island route pages are current-source verified; schedules and weather rules remain dated/TBC where the official pages do not publish them.', href: '/ferry/routes/green-island/' }
+        : entry),
+    }
+  }
   if (region.slug !== 'penghu') return region
   return {
     ...region,
