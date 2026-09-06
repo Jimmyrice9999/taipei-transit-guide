@@ -26,6 +26,7 @@ import NationalBikeAtlas from '@/components/NationalBikeAtlas'
 import NationalFerryAtlas from '@/components/NationalFerryAtlas'
 import NationalAirAtlas from '@/components/NationalAirAtlas'
 import NationalCommunityTransportAtlas from '@/components/NationalCommunityTransportAtlas'
+import NationalTouristShuttleAtlas from '@/components/NationalTouristShuttleAtlas'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -112,6 +113,7 @@ export default async function SectionPage({ params }: Props) {
 
       {section === 'bus' && <NationalBusAtlas />}
       {section === 'bus' && <NationalCommunityTransportAtlas />}
+      {section === 'bus' && <NationalTouristShuttleAtlas />}
       {section === 'bike' && <NationalBikeAtlas />}
       {section === 'ferry' && <NationalFerryAtlas />}
       {section === 'air' && <NationalAirAtlas />}

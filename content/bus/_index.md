@@ -52,6 +52,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the dated Kaohsiung route snapshot surfaced in the national bus atlas.
+  - id: motc-taiwan-tourist-shuttle
+    title: Taiwan Tourist Shuttle brand identity 3.0 wins 2026 German Red Dot Brand & Communication Design Award
+    titleOriginal: 台灣好行品牌識別3.0榮獲2026德國紅點品牌與傳達設計獎
+    publisher: Tourism Administration, Ministry of Transportation and Communications (交通部觀光署)
+    url: https://www.motc.gov.tw/ch/app/news_list/view?id=14&module=news&serno=26b361d1-da19-480d-bacd-612c7b58fcfa
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: Supports the national public-transport tourism role and the boundary described for Taiwan Tourist Shuttle.
+  - id: taiwantrip-route-selector
+    title: Taiwan Tourist Shuttle route selector
+    titleOriginal: 台灣好行旅遊服務網—好行路線—內容
+    publisher: Tourism Administration, Ministry of Transportation and Communications (交通部觀光署)
+    url: https://www.taiwantrip.com.tw/Frontend/Route/Select_p
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: Supports the dated official route-selector categories and entries described by the Tourist Shuttle page.
 ---
 
 The national bus atlas lists all 22 first-order jurisdictions and labels each entry by evidence state.[^tdx-bus-operator-pull] It currently joins the Taipei/New Taipei TDX snapshot with dated Hsinchu, Taichung, Tainan and Kaohsiung municipal layers; the counts remain source-record or normalized-identity counts, not a claimed national total.[^tdx-bus-operator-pull][^hsinchu-bus-snapshot][^taichung-bus-snapshot][^tainan-bus-snapshot][^kaohsiung-bus-snapshot]
@@ -69,6 +87,11 @@ of [Taichung](/bus/regional/taichung/), [Kaohsiung](/bus/regional/kaohsiung/),
 national [intercity coach](/bus/intercity/) services — each with its own
 operators, fare structure and, where one exists, a rating or evaluation
 scheme distinct from Taipei's.
+
+The government-backed [Taiwan Tourist Shuttle](/bus/tourist/) is kept as a
+separate public-transport tourism layer. Its dated route selector covers tourist
+shuttles, airport links and reservation or guided services without pretending
+that every entry is an ordinary city-bus route.[^motc-taiwan-tourist-shuttle][^taiwantrip-route-selector]
 
 ## What this section covers
 
