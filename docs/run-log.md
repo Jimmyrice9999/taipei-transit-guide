@@ -28064,6 +28064,47 @@ completed exit 0:
     ℹ pass 145
     ℹ fail 0
 
+### Budai passenger-terminal depth
+
+The ferry/node wave added the canonical terminal page
+`content/ferry/terminals/budai-passenger-center.md` and linked it from the
+ferry-terminal index. It is based on full primary pages fetched and read from
+the Maritime and Port Bureau and Taiwan International Ports Corporation:
+
+    https://www.motcmpb.gov.tw/Article?NodeId=50041&SiteId=1
+    https://kh.twport.com.tw/zh-tw/news/News?A=248&Id=10431&P=1
+
+The page records the official address, Budai–Magong route, 5,050-square-metre
+building area and published facilities including ticketing, control/check-in,
+waiting, family and nursing spaces, Wi-Fi, toilets, charging and electronic
+sailing information. It also keeps the 21 October 2025 port-company statement
+about passenger/cargo separation and the proposed 0.5-to-2.5-hectare service
+area as a dated development scope rather than a completed current layout. It
+does not invent a rail/bus join, current fare or undated sailing timetable.
+
+The first fast gate stopped at one uncited sentence in the new page. `npm run
+claims -- --list` identified it, the citation was attached, and the rerun
+completed exit 0:
+
+    citations: 1898 content files, 1839 with a sources: block
+      8865 citations resolved — 8316 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1898 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 312 file(s), 1203 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+Focused Playwright fallback measurement at 320px reported zero document
+overflow for `/en/ferry/`, `/zh-Hant/ferry/`, the new Budai terminal page,
+`/en/bus/` and `/en/bike/`. The in-app browser connector was unavailable, so
+this was recorded as a CLI fallback; the project browser harness remains the
+corpus-level check.
+
 No scout worker was available in this environment; this was a sequential
 main-session source/data batch with one writer.
 
