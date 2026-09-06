@@ -13,3 +13,4 @@ order: 1
 - [Green Island ferry services](/ferry/routes/green-island/)
 - [Orchid Island ferry services](/ferry/routes/orchid-island/)
 - [Donggang–Xiaoliuqiu ferry services](/ferry/routes/donggang-xiaoliuqiu/)
+- [National scheduled passenger-shipping inventory](/ferry/routes/national-scheduled-inventory/)

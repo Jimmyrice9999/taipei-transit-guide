@@ -28265,3 +28265,67 @@ The mandatory fresh build → `npm run fonts` → fresh build sequence completed
 both builds reported `postbuild: 5327 pages checked against the Han subsets —
 no missing glyphs.` No browser verification was run in this data-only batch;
 the next shared UI/data boundary will use the bounded browser suite.
+
+### National scheduled passenger-shipping inventory batch
+
+This batch used full official pages fetched/read on 6 September 2026. The
+Maritime and Port Bureau ticketing directory was:
+
+    https://www.motcmpb.gov.tw/Article?nodeId=376&siteId=1
+
+The directory's last-check field is 2026-08-07. It lists booking/operator rows
+for Keelung–Matsu, Taipei–Matsu, Kaohsiung–Magong, the Magong–Wangan–Qimei–
+Kaohsiung service, Budai–Magong operator groups, Budai–Dongji–Qimei–Magong–
+Budai, Jiangjun–Dongji, Donggang–Xiaoliuqiu, Saltpan–Xiaoliuqiu,
+Taitung–Green Island, Taitung–Orchid Island and Houbihu–Orchid Island.
+The page preserves operator differences rather than treating one corridor as
+one vessel or one timeless frequency.
+
+The Southern Navigation Centre passenger-ship index was:
+
+    https://www.motcmpb.gov.tw/Information?nodeId=276&siteId=1
+
+It has five official domestic-fixed-route information entries, including the
+Donggang–Xiaoliuqiu, Budai–Magong, Kaohsiung–Magong and Jiangjun–Dongji
+entries. This is explicitly recorded as an index/notice count, not a national
+route total. The Penghu National Scenic Area ferry-access page was also fetched:
+
+    https://www.penghu-nsa.gov.tw/ChiHoOneLer/transport/Traffic/Traffic/ship01.htm
+
+It adds the Penghu corridor boundary for Budai–Magong, Budai–Longmen,
+Kaohsiung–Magong, Kaohsiung–Qimei/Wangan/Magong and Tainan–Dongji, and says
+Taiwan–Penghu sailings vary by season and weather.
+
+Production changes:
+
+    content/ferry/routes/national-scheduled-inventory.md
+    docs/research/ferry/national-scheduled-inventory.md
+    components/NationalFerryAtlas.tsx
+    content/ferry/routes/_index.md
+
+The ferry atlas now exposes 10 route-family/index pages. The new page keeps the
+current total of unique route variants, vessels and daily sailings TBC because
+the official sources use incompatible units: notice entries, corridor rows,
+operator groups and dated schedules. Sightseeing, charter-only and general
+international shipping remain outside the core inventory.
+
+The required fresh build → `npm run fonts` → fresh build sequence completed;
+both builds reported `postbuild: 5329 pages checked against the Han subsets —
+no missing glyphs.` Final ferry `npm run gate:fast` completed exit 0 with:
+
+    citations: 1894 content files, 1835 with a sources: block
+      8845 citations resolved — 8296 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1894 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 306 file(s), 1191 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+No browser verification was run during this ferry data batch; the shared
+coverage-ledger change has already passed the blocker matrix, and the complete
+bounded suite remains reserved for the final UI/data boundary.
