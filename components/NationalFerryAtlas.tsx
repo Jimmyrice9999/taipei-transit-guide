@@ -1,6 +1,7 @@
 import Link from '@/components/LocaleLink'
 
 const FERRY_FAMILIES = [
+  { title: 'Small Three Links', original: '小三通客運', href: '/ferry/routes/small-three-links/', note: 'Cross-border scheduled passenger services' },
   { title: 'Blue Highway', original: '藍色公路', href: '/ferry/routes/blue-highway/', note: 'River and harbour passenger services' },
   { title: 'Cijin ferries', original: '旗津渡輪', href: '/ferry/routes/cijin/', note: 'Kaohsiung harbour crossing' },
   { title: 'Penghu', original: '澎湖交通船', href: '/ferry/routes/penghu/', note: 'Mainland and inter-island services' },
@@ -20,7 +21,7 @@ export default function NationalFerryAtlas() {
       </div>
       <div className="coverage-ledger-heading">
         <h2 className="section-heading" id="national-ferry-coverage">Ferry and maritime route families</h2>
-        <span className="coverage-ledger-total">8 route families</span>
+        <span className="coverage-ledger-total">9 route families</span>
       </div>
       <ul className="coverage-ledger-list mode-atlas-list">
         {FERRY_FAMILIES.map((family) => (

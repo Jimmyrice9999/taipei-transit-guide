@@ -5,6 +5,7 @@ order: 1
 ---
 
 - [Blue Highway](/ferry/routes/blue-highway/)
+- [Small Three Links cross-border passenger services](/ferry/routes/small-three-links/)
 - [Kaohsiung Cijin ferries](/ferry/routes/cijin/)
 - [Penghu island ferry services](/ferry/routes/penghu/)
 - [Kinmen island ferry services](/ferry/routes/kinmen/)

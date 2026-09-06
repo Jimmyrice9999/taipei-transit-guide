@@ -28032,6 +28032,52 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
 No scout worker was available in this environment, so this batch used one
 main-session reader/writer and did not run concurrent writers.
 
+### Small Three Links route-family batch
+
+The full Maritime and Port Bureau `BoatSchedule` page was fetched on
+2026-09-06. It identifies four current route families: Kinmen Shuitou–Xiamen
+Wutong (approximately 30 minutes), Kinmen Shuitou–Quanzhou Shijing
+(approximately 60 minutes), Nangan Fuao–Fuzhou Langqi (approximately 90
+minutes), and Beigan Baisha–Fuzhou Huangqi (approximately 30 minutes). The
+four pairs are now represented by the canonical
+`content/ferry/routes/small-three-links.md` page and the ferry atlas has nine
+route families rather than eight.
+
+The same pass fetched the Bureau's Matsu fixed-schedule page titled for
+December 2025–November 2026 and the current Kinmen cross-strait operations
+page. The Matsu validity window includes September 2026 but is dated
+publication material, not a guarantee of every sailing. A verified September
+2026 Kinmen monthly attachment was not exposed by the full index during this
+pass, so current Kinmen monthly detail, current fares, vessel assignments and
+terminal check-in procedures remain TBC. No general international shipping,
+cargo, charter or sightseeing service was added.
+
+The research record is `docs/research/ferry/small-three-links.md`; it records
+the route-family boundary, checked gaps and the decision not to duplicate the
+same route under domestic ferry and international-shipping hierarchies. The
+fresh build reported 5,325 Han-checked pages with no missing glyphs. Because
+new Traditional Chinese route/source text was added, `npm run fonts` ran from
+fresh `out/` and a fresh build followed it. The final fast gate completed exit
+0 with:
+
+    citations: 1892 content files, 1833 with a sources: block
+      8836 citations resolved — 8287 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1892 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 305 file(s), 1189 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+The first gate attempt exposed two uncited sentences in the new page; both
+were corrected with the already-fetched MPB source markers. Claims stayed at
+the committed 0 ASSERTED baseline. No scout worker was available in this
+environment, so this batch used one main-session reader/writer.
+
 ### Blocker reproduction and cause
 
 The exact 320px Playwright reproduction waited for `document.fonts.ready` and
