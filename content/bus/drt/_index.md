@@ -25,6 +25,12 @@ facts:
   - label: Rural public-transport coverage in that snapshot
     value: "95.10%"
     source: motc-happiness-2026
+  - label: Kaohsiung Rehabilitation Bus contracted operator (page dated 2026-06-30)
+    value: Kaohsiung Bus
+    source: kaohsiung-rehab-source
+  - label: Taichung universal accessible taxis (page last changed 2025-05-21)
+    value: "54 vehicles"
+    source: taichung-accessible-taxi-source
 specs:
   - label: Tainan route-count conflict
     value: "52 in the Q&A table; 49 in the 5 August 2026 expansion notice"
@@ -104,6 +110,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full index separates low-floor bus material, rehabilitation-bus information and facility entries; the linked low-floor PDF was not expanded here.
+  - id: kaohsiung-rehab-source
+    title: Rehabilitation Bus passenger service
+    titleOriginal: 復康巴士交通接送服務
+    publisher: Kaohsiung City Government Transportation Bureau (高雄市政府交通局)
+    url: https://www.tbkc.gov.tw/Service/PublicTransport/Accessibility?id=bd4fffc4-21ce-4ec5-8b1d-58f390dfe25e
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full page is dated 115-06-30 and names Kaohsiung Bus as contracted operator, lists the disability/medical eligibility classes, the city-plus-neighbouring-area service boundary, reservation windows and the distance-based fare formula.
+  - id: taichung-accessible-taxi-source
+    title: Taichung universal accessible taxis
+    titleOriginal: 臺中市通用(無障礙)計程車
+    publisher: Taichung City Government Transportation Bureau (臺中市政府交通局)
+    url: https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,498,495
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full official page, last changed 2025-05-21, lists 54 vehicles, five fleets, metered fares, electronic-ticket equipment, and states that universal taxis have no eligibility restriction while prioritising passengers with reduced mobility.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -124,3 +148,5 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 - [Kaohsiung regional buses](/bus/regional/kaohsiung/) — 公車式小黃 and accessibility links.[^kaohsiung-community-source][^kaohsiung-accessible-source]
 
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
+
+Two municipal pages show why that crosswalk must remain explicit. Kaohsiung’s page, dated 30 June 2026, names Kaohsiung Bus as the contracted Rehabilitation Bus operator, limits eligibility to stated disability or wheelchair-medical-document categories, permits different advance-booking windows by category and publishes a distance-based fare formula.[^kaohsiung-rehab-source] Taichung’s page separately lists 54 universal accessible taxis across five fleets; it says the service has no eligibility restriction, prioritises passengers with reduced mobility, and uses the city’s metered fare.[^taichung-accessible-taxi-source] Neither example is silently promoted to a national rule.

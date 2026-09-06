@@ -73,6 +73,38 @@ pages are therefore not evidence for a national eligibility rule. The guide
 keeps those programmes in a separate accessibility lane and leaves the national
 operator/eligibility crosswalk TBC.
 
+### 5. Municipal examples confirm that accessible services are not one category
+
+- **Claim.** Kaohsiung’s Rehabilitation Bus page, dated 115-06-30, names
+  Kaohsiung Bus as the contracted operator, gives two eligibility routes
+  (disability certificate or a wheelchair-use medical document for medical
+  travel), sets different advance-booking windows by eligibility group, defines
+  a city-and-neighbouring-area service boundary, and publishes a distance-based
+  fare formula.
+- **Source.** “Rehabilitation Bus passenger service” /
+  `titleOriginal`: `復康巴士交通接送服務`
+- **Publisher.** Kaohsiung City Government Transportation Bureau /
+  `高雄市政府交通局`
+- **URL.** https://www.tbkc.gov.tw/Service/PublicTransport/Accessibility?id=bd4fffc4-21ce-4ec5-8b1d-58f390dfe25e
+- **Kind.** PRIMARY. **Confidence.** High — full page fetched and read.
+- **Original-language evidence.** `日期：115-06-30`; `復康巴士委託營運單位：高雄汽車客運股份
+  有限公司`; `領有身心障礙證明者`; `持有需使用輪椅行動之診斷證明文件，而基於就醫用途者`; and
+  the page’s articles 3–8 and 13 set the boundary, reservation windows and
+  distance-rate fractions.
+
+- **Claim.** Taichung’s universal accessible taxi page lists 54 vehicles in
+  five fleets, electronic-ticket equipment and metered fares; it distinguishes
+  the service from Rehabilitation Bus by stating that universal taxis have no
+  eligibility restriction and prioritise passengers with reduced mobility.
+- **Source.** “Taichung universal accessible taxis” /
+  `titleOriginal`: `臺中市通用(無障礙)計程車`
+- **Publisher.** Taichung City Government Transportation Bureau /
+  `臺中市政府交通局`
+- **URL.** https://www.traffic.taichung.gov.tw/content/index.asp?Parser=1,7,498,495
+- **Kind.** PRIMARY. **Confidence.** High — full page fetched and read; page
+  last changed 2025-05-21.
+- **Original-language evidence.** `目前臺中市通用計程車係由大都會車隊、台灣大車隊、中華大車隊、國通車隊、友愛車隊共54輛車輛`; `通用計程車無搭乘資格限制，非身障者亦可搭乘，本服務優先提供行動不便者預約派車`.
+
 ## Conflicts and measurement boundaries
 
 - **507 route services (MOTC, cutoff February 2026)** versus the **live Highway
@@ -83,6 +115,9 @@ operator/eligibility crosswalk TBC.
   **49** in the 5 August 2026 expansion notice. Those are retained on the
   content page as a separate local conflict and are not folded into the MOTC
   national figure.
+- Kaohsiung Rehabilitation Bus is eligibility-limited while Taichung universal
+  taxi is open to general passengers with priority for reduced-mobility riders.
+  These are different service rules, not a national contradiction.
 
 ## Checked and failed
 
