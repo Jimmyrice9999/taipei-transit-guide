@@ -12,11 +12,35 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports the committed operator records, contact fields, source municipalities, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields.
+  - id: xingdong-home
+    title: Xingdong Bus homepage
+    titleOriginal: 興東客運 東海岸運轉手
+    publisher: Xingdong Bus (興東客運)
+    url: https://sdbus.com.tw/
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full current homepage carries dated notices for the 8128 Taitung–airport service and the 8101B/8101D Taiwan Tourist Shuttle suspension window.
+  - id: xingdong-8101
+    title: 8101 Taitung–Jingpu round-trip departures
+    titleOriginal: 8101 台東、靜埔 往返班次
+    publisher: Xingdong Bus (興東客運)
+    url: https://sdbus.com.tw/time-table.html
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full operator timetable publishes the 8101 Taitung–Jingpu stop rows, displayed departure times, Fugang calls and the reservation-required accessible-vehicle note.
 ---
 
 The committed TDX pull contains 61 operator records associated with 1051 route records [^tdx-bus-operator-pull].
 
 The records are sorted by the number of route associations in the pull; duplicate company names remain separate where TDX supplied separate record IDs or municipalities [^tdx-bus-operator-pull].
+
+The operator collection also includes curated profiles where a company source
+adds current service evidence that the TDX pull does not provide. [Xingdong
+Bus](/bus/operators/xingdong-bus/) is the first regional example, with a dated
+8101 timetable through Fugang and separately dated airport and Tourist Shuttle
+notices.[^xingdong-home][^xingdong-8101]
 
 - [Taipei Bus Co., Ltd. — NewTaipei](/bus/operators/taipeibus-1m9ums8/) — 126 route records [^tdx-bus-operator-pull]
 - [SanChungBus — NewTaipei](/bus/operators/sanchungbus-1lzv139/) — 72 route records [^tdx-bus-operator-pull]
