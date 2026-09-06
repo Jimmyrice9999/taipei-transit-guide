@@ -11,6 +11,7 @@ import References from '@/components/References'
 import RichText from '@/components/RichText'
 import SpecTable from '@/components/SpecTable'
 import TableOfContents from '@/components/TableOfContents'
+import EditorialHeader from '@/components/EditorialHeader'
 import JsonLd from '@/components/JsonLd'
 import { articleSchema, breadcrumbSchema } from '@/lib/structured-data'
 import { getFolder, getPageFromFile } from '@/lib/content'
@@ -103,8 +104,12 @@ export default async function BusRoutePage({ params }: Props) {
       <article>
         {/* badges={false}: a bus route number that looks like a station code is
             not one — see the note on `badges` in components/RichText. */}
-        <h1 className="page-title"><RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.title}</RichText></h1>
-        {page.summary && <p className="page-summary"><RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.summary}</RichText></p>}
+        <EditorialHeader
+          eyebrow={`Bus route · ${folder.title}`}
+          updated={page.updated || undefined}
+          title={<RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.title}</RichText>}
+          summary={page.summary ? <RichText badges={false} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{page.summary}</RichText> : undefined}
+        />
         <div className="page-grid no-spine">
           <div className="page-main">
             <BusRouteData

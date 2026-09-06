@@ -20,6 +20,7 @@ import { getImage } from '@/lib/images'
 import { REGIONS, getRegion, type CoverageStatus } from '@/lib/regions'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
+import EditorialHeader from '@/components/EditorialHeader'
 
 /**
  * The same alt/caption already written for this image where it is used as
@@ -103,10 +104,11 @@ export default async function RegionPage({
     <PageShell accent={NEUTRAL_LINE}>
       <Breadcrumbs trail={[{ href: '/regions/', label: 'Regions' }, { label: region.title }]} />
       <BackLink href="/regions/" label="all regions" />
-      <h1 className="page-title">{region.title}</h1>
-      <p className="page-summary">
-        <RichText>{region.summary}</RichText>
-      </p>
+      <EditorialHeader
+        eyebrow="National registry"
+        title={region.title}
+        summary={<RichText>{region.summary}</RichText>}
+      />
 
       {heroImage && (
         <Figure

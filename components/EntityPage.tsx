@@ -41,6 +41,7 @@ import Spine, { type DepotMark } from '@/components/Spine'
 import StationBadge from '@/components/StationBadge'
 import SpineSync from '@/components/SpineSync'
 import EntityIcon, { getEntityIconKind } from '@/components/EntityIcon'
+import EditorialHeader from '@/components/EditorialHeader'
 import { getLineGeometry, measureLine, type Point } from '@/lib/geometry'
 import { branchTint, getAccent } from '@/lib/lines'
 import { getLineTrack } from '@/lib/network'
@@ -148,6 +149,7 @@ export default async function EntityPage({ section, system = '', type, slug }: E
   }
   const typeMeta = getType(section, type, system)
   const systemMeta = system ? getSystem(section, system) : null
+  const sectionMeta = getSection(section)
   const accent = getAccent(page.line, page.operator)
   const entityKind = getEntityIconKind(section, type)
   const articlePage = isArticlePage(section, type, slug)
@@ -269,19 +271,16 @@ export default async function EntityPage({ section, system = '', type, slug }: E
             ]}
           />
 
-          <header className="article-head">
-            <h1 className="page-title article-title page-title-with-icon">
-              {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
-              <span className="page-title-text">
-                <RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>
-              </span>
-            </h1>
-            {page.summary && (
-              <p className="article-standfirst">
-                <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText>
-              </p>
-            )}
-          </header>
+          <EditorialHeader
+            className="article-head"
+            titleClassName="article-title"
+            summaryClassName="article-standfirst"
+            eyebrow={[typeMeta.title, systemMeta?.title || sectionMeta.title].filter(Boolean).join(' · ')}
+            updated={page.updated || undefined}
+            icon={entityKind ? <EntityIcon kind={entityKind} size={34} className="page-title-icon" /> : undefined}
+            title={<RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>}
+            summary={page.summary ? <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText> : undefined}
+          />
 
           {lede && <div className="prose article-lede" dangerouslySetInnerHTML={{ __html: lede }} />}
 
@@ -512,17 +511,13 @@ export default async function EntityPage({ section, system = '', type, slug }: E
         {/* The eyebrow that sat here said "Line · Wenhu Line" above an <h1>
             reading "Wenhu Line". The spine and the panel badge both carry line
             identity now, so it was the third statement of one fact. */}
-        <h1 className="page-title page-title-with-icon">
-          {entityKind && <EntityIcon kind={entityKind} size={34} className="page-title-icon" />}
-          <span className="page-title-text">
-            <RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>
-          </span>
-        </h1>
-        {page.summary && (
-          <p className="page-summary">
-            <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText>
-          </p>
-        )}
+        <EditorialHeader
+          eyebrow={[typeMeta.title, systemMeta?.title || sectionMeta.title].filter(Boolean).join(' · ')}
+          updated={page.updated || undefined}
+          icon={entityKind ? <EntityIcon kind={entityKind} size={34} className="page-title-icon" /> : undefined}
+          title={<RichText operator={page.operator || undefined} {...codeContext}>{page.title}</RichText>}
+          summary={page.summary ? <RichText operator={page.operator || undefined} {...codeContext}>{page.summary}</RichText> : undefined}
+        />
 
         <div className={`page-grid ${hasSpine ? `has-spine has-${variant}` : 'no-spine'}`}>
           {hasSpine && (

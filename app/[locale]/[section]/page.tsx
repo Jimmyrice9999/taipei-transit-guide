@@ -27,6 +27,7 @@ import NationalFerryAtlas from '@/components/NationalFerryAtlas'
 import NationalAirAtlas from '@/components/NationalAirAtlas'
 import NationalCommunityTransportAtlas from '@/components/NationalCommunityTransportAtlas'
 import NationalTouristShuttleAtlas from '@/components/NationalTouristShuttleAtlas'
+import EditorialHeader from '@/components/EditorialHeader'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -108,8 +109,7 @@ export default async function SectionPage({ params }: Props) {
       )}
       <Breadcrumbs trail={[{ label: meta.title }]} />
       <BackLink href="/" label="the home page" />
-      <h1 className="page-title">{meta.title}</h1>
-      {meta.description && <p className="page-summary">{meta.description}</p>}
+      <EditorialHeader eyebrow="National atlas" title={meta.title} summary={meta.description} />
 
       {section === 'bus' && <NationalBusAtlas />}
       {section === 'bus' && <NationalCommunityTransportAtlas />}

@@ -13,7 +13,8 @@ run several hours to a scheduled flight of well under one, and a standing
 national subsidy law prices those flights for island residents
 accordingly — see [Airports](/air/airports/) for the rates by route.
 
-Start with [Airports](/air/airports/) for the network station by station —
+Start with [Domestic route families](/air/routes/) for the dated airport-pair
+view, then [Airports](/air/airports/) for the network station by station —
 including the fare-subsidy law and CAA's own operating-loss subsidy scheme,
 covered on the outlying-islands page where they apply — then
 [Operators](/air/operators/) for UNI Air and Mandarin Airlines, the two

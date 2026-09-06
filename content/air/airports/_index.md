@@ -9,3 +9,5 @@ order: 1
 - [Penghu](/air/airports/penghu/)
 - [Hualien](/air/airports/hualien/)
 - [Outlying islands: Penghu, Kinmen, Matsu, Lanyu and Green Island](/air/airports/outlying-islands/)
+
+For the current dated airport-pair view, see [Domestic route families](/air/routes/).

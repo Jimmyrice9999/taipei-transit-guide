@@ -28,6 +28,7 @@ import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 import NationalCoachIndex from '@/components/NationalCoachIndex'
 import NationalTouristShuttleAtlas from '@/components/NationalTouristShuttleAtlas'
+import EditorialHeader from '@/components/EditorialHeader'
 
 
 /** Which type index to render. `system` is '' for a section with no systems. */
@@ -122,8 +123,11 @@ export default async function TypeIndex({ section, system = '', type }: TypeRef)
         href={systemMeta ? systemMeta.href : sectionMeta.href}
         label={systemMeta ? systemMeta.title : sectionMeta.title}
       />
-      <h1 className="page-title">{typeMeta.title}</h1>
-      {typeMeta.description && <p className="page-summary">{typeMeta.description}</p>}
+      <EditorialHeader
+        eyebrow={[sectionMeta.title, systemMeta?.title].filter(Boolean).join(' · ')}
+        title={typeMeta.title}
+        summary={typeMeta.description}
+      />
 
       <TableOfContents items={toc} />
 

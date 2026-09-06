@@ -1,6 +1,7 @@
 import Link from '@/components/LocaleLink'
 
 const AIR_SURFACES = [
+  { title: 'Domestic route families', original: '國內定期航線', href: '/air/routes/', note: 'Dated airport-pair discovery without pretending a timetable is permanent' },
   { title: 'Penghu', original: 'Penghu Aviation Station', href: '/air/airports/penghu/', note: 'Dated island flight snapshot and air–sea ground links' },
   { title: 'Main-island hubs', original: '臺灣本島主要機場', href: '/air/airports/main-island-hubs/', note: 'Airport nodes and ground-transport context' },
   { title: 'Kaohsiung', original: '高雄國際機場', href: '/air/airports/kaohsiung/', note: 'Airport, rail, metro and bus context' },

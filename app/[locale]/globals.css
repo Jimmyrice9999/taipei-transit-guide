@@ -1479,6 +1479,44 @@ main {
   text-wrap: balance;
 }
 
+/* Shared editorial header: a small cataloguing line establishes the page's
+   place in the atlas before the subject title. The optional date is metadata,
+   not a claim that the underlying operator's service is unchanged. */
+.editorial-header {
+  margin: 6px 0 24px;
+}
+
+.editorial-header-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 16px;
+  margin-bottom: 8px;
+  color: var(--text-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.editorial-header-kicker {
+  color: var(--status-ink);
+  font-weight: 700;
+}
+
+.editorial-header-meta time {
+  color: var(--text-3);
+}
+
+.editorial-header .page-title {
+  margin-bottom: 10px;
+}
+
+.editorial-header .page-summary {
+  margin-bottom: 0;
+}
+
 .page-summary {
   font-size: 17.5px;
   line-height: 1.5;
@@ -1715,6 +1753,10 @@ main {
   font-weight: 600;
 }
 
+.coverage-ledger-heading > * {
+  min-width: 0;
+}
+
 .coverage-ledger-original {
   display: block;
   margin-top: 1px;
@@ -1872,7 +1914,9 @@ main {
 }
 
 .coverage-status {
-  flex: none;
+  flex: 0 1 auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   color: var(--status-ink);
   font-family: var(--font-mono);
   font-size: 10px;
@@ -2928,6 +2972,14 @@ a.spine-station:focus-visible .spine-name {
   text-decoration: none;
   padding: 0 1px;
   border-bottom: 0;
+}
+
+/* Citation markers remain legible when a fact row deliberately uses a
+   tinted observation state. The neutral status ink has enough contrast on
+   all three state backgrounds and keeps the marker visibly link-like. */
+.platform-fact[data-state] .cite a,
+.specs tr[data-state] .cite a {
+  color: var(--status-ink);
 }
 
 .cite a:hover,
