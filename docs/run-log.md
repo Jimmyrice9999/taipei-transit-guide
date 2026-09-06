@@ -27931,3 +27931,24 @@ the secondary metadata block. A targeted Playwright probe against the rebuilt
 414, 428, 640 and 1024 px. This second correction is deliberately not counted
 as exhaustive browser verification; the required full harness must be rerun on
 the final committed tree.
+
+### Closing verification
+
+The required final exhaustive browser run completed on production commit
+`19d12728` with exit 0 and the terminal line `✓ browser verification clean`.
+It checked the 4,234-page corpus: the all-page reflow phase reported no
+document-level horizontal scrollbar, the accessibility-tree and reduced-motion
+probes were clean, and axe reported `zero violations across 4234 pages`.
+The visual phase produced 4,557 screenshots; 1,035 were clipped only by the
+documented Chromium 12,000px full-page capture limit. The print phase produced
+268/268 PDFs successfully. The earlier bounded run was also clean: 156
+canonical/extreme pages, 1,327 screenshots, and 77/77 PDFs.
+
+The final fresh adversarial run completed with exit 0 and the exact summary
+`16/16 cases behaved as specified`. It was run after the exhaustive browser
+pass and after the second intercity wrapping correction. No source or content
+files were changed by the browser or adversarial harnesses; their generated
+JSON, screenshots, PDFs, probes and `.unsnooze/` output remain the known local
+baseline and are not staged. Closing handoff documentation is the only
+deliberate work left to commit and push; the production implementation commit
+remains `19d12728`.

@@ -1,22 +1,16 @@
 # Handoff
 
-Run 316 (5 September 2026) was a research, architecture and visual-design audit,
-not implementation. No speculative production content or broad redesign was made.
-
-Reports: `docs/taiwan-public-transport-coverage-audit.md` and
-`docs/code-ui-architecture-audit.md`; detailed evidence and gates are in `docs/run-log.md`.
-
-National headline: the 1,051 bus corpus is Taipei/New Taipei, not nationwide;
-city buses, DRT, bike systems, ferries, domestic-air route families and terminals
-are the main gaps. Alishan current status needs conflict-aware correction.
-
-UI headline: keep the static Next.js/Markdown/TDX architecture and proven joins,
-nav, locale and accessibility fixes; adopt an editorial wayfinding atlas direction.
-
-Recommended next run: build the 22-jurisdiction source-backed registries first,
-then bus/intercity/DRT/bike/ferry/air layers, followed by shared title/facts/table
-and discovery improvements. Do not stage generated PDFs, screenshots, probes or `.unsnooze/`.
-
-Baseline before this run: `HEAD=origin/main=7a53e39d`; final commit and clean-status
-proof are in the closing log entry. CI remains unknown: `gh` is unavailable and
-the direct GitHub Actions API is blocked. Exhaustive browser verification was not run.
+Run 317 — 6 September 2026.
+Added all-22 jurisdiction atlas plus national bus/coach discovery, DRT, accessible transport,
+YouBike, ferries, domestic aviation, Tourist Shuttle, TPASS and multimodal node layers.
+Added airport, ferry, operator, vessel and terminal depth in Hualien, Penghu, Taitung and Kinmen.
+Corrected Sanying and Xinyi East operation status; preserved Alishan's dated official conflict.
+Editorial atlas UI now has shared entity headers, dated/TBC/conflict facts, national homepage/regions,
+source-safe Han labels, bus quick answers, improved tables and scalable navigation.
+Final gates: 243/243 tests, 0 ASSERTED, 8,825 citations, clean glyphs and no broken links/orphans.
+Adversarial: 16/16. Bounded browser: clean. Exhaustive browser: clean, 4,234 pages, 268 PDFs.
+Production implementation commit: `19d12728 Run 317: fix coach name wrapping`.
+Remaining gaps: national per-jurisdiction bus overlays, complete live ferry/air inventories,
+Small Three Links detail, MOOVO/municipal bike seams, airport/ferry joins and operator depth.
+Known generated PDFs/screenshots/probes and `.unsnooze/` baseline remain unstaged.
+CI is unknown: `gh` is unavailable and GitHub API access is blocked locally.
