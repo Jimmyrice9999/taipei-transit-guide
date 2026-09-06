@@ -1861,6 +1861,7 @@ main {
   gap: 12px;
   padding: 10px 12px;
   background: var(--bg);
+  min-width: 0;
 }
 
 .coach-route-row:hover {
@@ -1890,6 +1891,11 @@ main {
 .coach-route-directions {
   display: grid;
   gap: 2px;
+}
+
+.coach-route-directions > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 780px) {

@@ -27747,3 +27747,177 @@ git status --short
 The audit paths are absent from the final status. The working tree is not
 clean because the baseline/generated artefacts above remain intentionally
 unstaged; none were reverted or deleted.
+
+## Run 317 — national implementation pass and editorial atlas (6 September 2026)
+
+This entry records the implementation run requested after Run 316. The starting
+commit was verified as `42a45482 Run 316: record audit push proof` locally and
+on `origin/main`; the starting working tree already contained the known
+generated modifications and untracked `.unsnooze/`, `probes/`, print-PDF and
+screenshot artefacts. Those paths were never mass-cleaned, deleted, reset or
+staged. The starting `npm run adversarial` result was 16/16.
+
+### Research pipeline and sourcing
+
+No scout/subagent tool was exposed in this environment, so scout concurrency
+was 0 for this run. The main session used direct read-only full-page fetches of
+official Mandarin/English operator and government pages, then wrote evidence
+sequentially. No HTTP 429 was observed. Several dynamic or unavailable seams
+were recorded as checked-and-failed rather than inferred: MOOVO/Changhua bike
+endpoints, some Daily Air fare/time endpoints, and current per-route regional
+bus detail outside the committed structured snapshots. No fetched search
+snippet was published as evidence.
+
+Research batches and the resulting implementation commits were:
+
+1. Current rail correctness: NTMC's Sanying paid-operation notice (paid from
+   2026-09-01, NT$20–35 distance fare and NT$60 day ticket), DORTS Xinyi East
+   extension operation from 2026-08-30, DORTS current project records, and the
+   Alishan operator FAQ conflict. Commit `366bea43`.
+2. Jurisdiction registry: President's Office jurisdiction list verified the 22
+   first-order jurisdictions. Commit `dea00ef3`.
+3. Bus foundation: national discovery/index surfaces, existing TDX/regional
+   snapshots and context-aware route-code/badge handling. Commit `ad19fda0`.
+4. Intercity coach discovery: dated structured variant snapshot and defined
+   record/variant semantics. Commit `7e9ae768`.
+5. Public-bike atlas: official YouBike service-area surface and station-row
+   architecture; docks remain table rows, not pages. Commit `74028cdc`.
+6. Maritime, aviation and community-transport atlas foundations. Commit
+   `76849216`.
+7. Shared status tokens, fact states and table/accessibility foundations.
+   Commit `542d5fd2`.
+8. National homepage and facts-panel states. Commit `bdebbecb`.
+9. Highway Bureau/MOTC Happiness Bus evidence: February 2026 official report
+   covering 193 townships/districts, 507 routes and 95.10% rural-area coverage.
+   Commit `8b3e40e9`.
+10. Eligibility-limited accessible transport evidence, including Kaohsiung
+    Rehabilitation Bus and Taichung accessible taxi. Commit `2546c8d9`.
+11. Donggang–Xiaoliuqiu ferry route family. Commit `7d29d33d`.
+12. Hualien airport node, including dated flight/ground-access boundaries.
+    Commit `633f5534`.
+13. Stronger dated/TBC/conflict facts and tables. Commit `f088d4b9`.
+14. Registry status surfaces and explicit no-service/TBC/not-researched states.
+    Commit `4c951fa4`.
+15. Penghu airport node. Commit `f2f37565`.
+16. Taitung–Green Island and Taitung–Orchid Island ferry verification.
+    Commit `a8f13ce5`.
+17. Taiwan Tourist Shuttle selector evidence: 94 listed entries across 20
+    jurisdictions on the fetched official selector; Hsinchu City and
+    Kaohsiung remain an explicit selector gap, not a fabricated no-service
+    result. Commit `edf27519`.
+18. Domestic route-family index and editorial atlas surfaces. Commit
+    `32ae1238`.
+19. TPASS 1.0/2.0 official fare-integration evidence, including the dated
+    regional pass and 2.0 rebate rules. Commit `a9852c3a`.
+20. Maritime Board official passenger-ship/vessel registry. Commit `752534e2`.
+21. Kaohsiung accessible-transport reference. Commit `0878d6c0`.
+22. Fugang ferry interchange node. Commit `3baab16f`.
+23. Xingdong regional operator profile. Commit `60d29be2`.
+24. Daily Air official island-aviation profile: five route families, 19-seat /
+    DHC6-400 fleet description, dated seasonal table and ticket constraints.
+    Commit `7bf9958a`.
+25. Island-air coverage reconciliation: current Daily Air families retained;
+    fare and per-flight-time fields remain TBC where direct official pages were
+    unavailable. Commit `b1d4d72b`.
+26. Kinmen Port Passenger Transport Center node: official tourism page's
+    2026-02-03 trial-operation record and Small Three Links terminal joins.
+    Commit `fec0eae2`.
+27. Atlas-language and provenance hardening, including explicit `zh-Hant`
+    labelling for rendered navigation/facts/source links and no-JS-safe labels.
+    Commit `26086b74`.
+28. Inline Han labels in navigation audits and a client-safe `NavLabel` path;
+    this fixed the false nav mismatch introduced by semantic language spans.
+    Commit `15405f62`.
+29. Taitung Airport depth wave: official airport history, runway/terminal
+    dimensions and capacity, 2026-09-06 live-flight snapshot, airport-bus
+    access wording, Daily Air island context, research file and region/index
+    links. Fresh build/font regeneration found no missing Han glyphs. Commit
+    `081b299e`.
+
+### National counts and architecture
+
+The final fresh build generated 6,086 Next routes; postbuild checked 5,319
+pages against the Han subsets. The authored corpus contains 1,889 content
+files, of which 1,831 declare sources. The final fast/full citation run
+resolved 8,825 citation markers: 8,276 primary and 549 secondary. The claims
+ratchet reported 27,641 sourced claims, 4,676 explicit TBC claims, and 0
+ASSERTED claims. The jurisdiction registry contains all 22 jurisdictions.
+
+The national bus layer has 1,071 authored route Markdown pages and regional
+reference pages for Hsinchu, Taichung, Tainan and Kaohsiung, alongside the
+existing Taipei/New Taipei route corpus and national structured discovery
+surfaces. The route count is an authored-page count, not a claim that it is the
+national route universe. TDX/intercity structured data remains distinct from
+editorial overlays; bus/rail joins remain stop-ID-plus-geometry only.
+
+The Highway Bureau/MOTC community-transport evidence is published as a
+national programme/coverage layer rather than hundreds of empty pages: the
+dated national measurement is 193 townships/districts, 507 Happiness Bus/Taxi
+routes and 95.10% rural-area coverage. Eligibility-limited rehabilitation and
+accessible-taxi programmes remain labelled separately from open public
+transport.
+
+The official YouBike service-area page was used for current service-area
+coverage, with station/dock records retained as grouped rows. Ferry coverage
+now has 8 route-family entries, 2 terminal/node entries and 1 official vessel
+detail entry in the editorial corpus, with the Maritime Board's broader
+passenger-route table preserved as the national source boundary. The official
+Tourist Shuttle selector supplied 94 entries across 20 jurisdictions. Daily
+Air contributes 5 island route families; airport nodes now cover Hualien,
+Penghu, Taitung, outlying-island groupings, Kaohsiung and the main-island
+airport group.
+
+### UI and verification
+
+The editorial-wayfinding-atlas pass consolidated shared title/entity headers,
+status tokens, facts/spec tables, dated/TBC/conflict treatment, section/index
+intros, national homepage discovery, region cards, bus quick-answer fields,
+source/locale labels, inline Han language spans, and navigation label auditing.
+It kept static export, official line colours, side-rail mechanics, peer-list
+HTML, no-JS map fallback, and accessible semantic tables.
+
+The complete full gate after the Taitung batch reported: fresh build 6,086
+routes; 5,319 Han-checked pages; 2,768,686 internal links with no broken links,
+fragments or orphan pages; clean nav labels; 243/243 full tests passed; clean
+research (303 files, 1,185 checked-failed records); clean geometry; and zero
+genuine WCAG contrast failures. The full link-audit report separately recorded
+64,092 unlinked textual mentions as an informational cross-reference audit;
+this is not the broken-link gate and was not silently treated as route links.
+
+Bounded browser verification completed cleanly: 4,234-page corpus, 78
+templates, 156 canonical/extreme pages, no document overflow, no spine
+collision, all keyboard and accessibility-tree probes clean, zero axe
+violations, both locales' 299 navigation links clean, 713 linked stations on
+both interactive maps, static map fallback at 320px and 1440px, reduced-motion
+clean, 1,327 screenshots and 77/77 print PDFs. 369 screenshots were clipped
+only because Chromium's documented 12,000px full-page capture limit was
+exceeded by very long reference pages; the JSON records those clips.
+
+The inspected pixels included English and Traditional-Chinese homepages,
+mobile home, the all-22 regions gateway, airport and ferry indexes, Sanying
+Line, a long bus route, and table-heavy pages. Wordmark, title hierarchy,
+facts, badges, citation references, responsive layout and table overflow were
+visually usable. The in-app browser connector exposed no browser session, so
+these checks used the repository's own bounded browser harness; no connector
+session is being claimed.
+
+### Final attack and handoff state
+
+Read-only local attack scans checked the 22 registry slugs, stale-status terms,
+Sanying/Xinyi current language, Alishan conflict language, route/badge corpus
+counts and generated-source boundaries. No unexpected source/content change
+was found after the full gate or browser run. The known generated baseline
+remains dirty and unstaged; no generated PDF, screenshot, probe or `.unsnooze`
+artefact was intentionally added to the implementation commits.
+
+### Exhaustive-browser correction
+
+The first exhaustive-browser attempt was intentionally not treated as a pass:
+at 72/4,234 pages it found document overflow on `/en/bus/intercity/` at the
+320–428 px viewports. The intercity atlas's mobile grid rows retained a
+content-based minimum width, and direction spans had no mobile wrapping rule.
+The run was stopped, the cause was traced to the shared coach CSS, and
+`min-width: 0` plus `overflow-wrap: anywhere` were added to the route row and
+direction spans. A fresh 6,086-route build then completed with no Han glyph
+regressions. The exhaustive browser harness is being run again on this fixed
+tree; its final status is recorded in the closing entry below.
