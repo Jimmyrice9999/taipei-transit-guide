@@ -27921,3 +27921,13 @@ The run was stopped, the cause was traced to the shared coach CSS, and
 direction spans. A fresh 6,086-route build then completed with no Han glyph
 regressions. The exhaustive browser harness is being run again on this fixed
 tree; its final status is recorded in the closing entry below.
+
+The first rerun still found the same overflow at page 59: the direction rule
+was correct, but the flex child containing each English route name still had
+its automatic minimum width. The run was stopped again. The final CSS fix adds
+`min-width: 0` and `overflow-wrap: anywhere` to that primary-name span and to
+the secondary metadata block. A targeted Playwright probe against the rebuilt
+`/en/bus/intercity/` page now reports zero document overflow at 320, 375, 390,
+414, 428, 640 and 1024 px. This second correction is deliberately not counted
+as exhaustive browser verification; the required full harness must be rerun on
+the final committed tree.

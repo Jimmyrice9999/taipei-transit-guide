@@ -1881,6 +1881,11 @@ main {
   font-size: 13px;
 }
 
+.coach-route-primary > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .coach-route-primary strong {
   flex: none;
   color: var(--text);
@@ -1895,6 +1900,10 @@ main {
 
 .coach-route-directions > span {
   min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.coach-route-secondary {
   overflow-wrap: anywhere;
 }
 
