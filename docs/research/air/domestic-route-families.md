@@ -44,5 +44,5 @@ snippets and cached research notes are not used as evidence.
 ## Stated gaps
 
 - A verified national airport-pair matrix requires a stable official export or a complete set of airport/operator schedule pages that can be fetched and joined without guessing.
-- Daily Air's current Green Island and Orchid Island route matrix remains a separate primary-source task; the outlying-island airport page records the existing failed operator fetch and does not silently promote it to current route data.
+- Daily Air's current operator-level island-family page has now been fetched separately and is published as a five-family operator snapshot. It does not replace the need for a complete national airport-pair matrix or a per-flight timetable.
 - Current domestic fares and route-wide frequencies remain TBC until official current fare and timetable material is fetched for each family.

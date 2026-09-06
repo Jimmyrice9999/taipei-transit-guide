@@ -121,10 +121,12 @@ vs. formal station establishment), not a contradiction between sources.
   no extractable body text. Not published; TBC on the built page.
 - **Daily Air (德安航空)'s fleet, route network and schedule for
   Lanyu/Green Island** — checked 2026-08-29 and repeatedly in Run 304,
-  dailyair.com.tw returns ECONNREFUSED on every attempt across two runs now.
-  Not published beyond noting the operator's name and general service area
-  from secondary sources; a working fetch of this site remains the way to
-  settle it.
+  dailyair.com.tw returned ECONNREFUSED on every attempt across two runs then.
+  That failed-fetch record was superseded on 2026-09-06 by a successful fetch
+  of the operator's fixed-wing service page and dated live-flight page; the
+  current five-family operator snapshot is recorded in
+  `docs/research/air/daily-air.md`. Detailed per-flight times and fares still
+  remain TBC.
 
 ## Stated gaps
 
@@ -132,5 +134,6 @@ Kinmen and Penghu's runway dimensions and IATA/ICAO codes; Lanyu/Green
 Island's exact administrative status (independent CAA stations vs. branch
 units of Taitung Aviation Station); specific per-carrier, per-year amounts
 under the operating-loss subsidy scheme; a per-airport (rather than
-all-Taiwan aggregate) passenger-count breakdown; UNI Air and Mandarin
-Airlines' current fleet sizes and weekly flight frequencies.
+all-Taiwan aggregate) passenger-count breakdown; Daily Air's detailed
+per-flight times and fares; UNI Air and Mandarin Airlines' current fleet sizes
+and weekly flight frequencies.

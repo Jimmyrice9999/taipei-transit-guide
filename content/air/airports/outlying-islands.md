@@ -1,7 +1,7 @@
 ---
 title: Outlying-island airports
 summary: Penghu, Kinmen, Matsu's two fields and the Taitung-served island strips at Lanyu and Green Island — each built or upgraded because the sea crossing alone was too slow, and each still running under the national island-fare subsidy.
-updated: 2026-08-29
+updated: 2026-09-06
 aliases:
   - 澎湖機場
   - 金門機場
@@ -37,6 +37,9 @@ facts:
   - label: Magong, Qimei and Wangan stations merged into one Penghu Aviation Station
     value: effective 2023-09-15
     source: penghu-history
+  - label: Daily Air published island route families
+    value: 5, including Taitung–Lanyu and Taitung–Green Island
+    source: dailyair-flight-info
 specs:
   - label: Island-resident fare subsidy, Penghu Magong / Kinmen Shangyi routes
     value: 20
@@ -105,6 +108,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "A live document archive by fiscal year (ROC 94-114) of operating-loss subsidy notices to named carriers. Confirms the scheme is administered by CAA on a recurring annual basis; the specific per-carrier, per-year amounts are in the linked files, not opened for this page."
+  - id: dailyair-flight-info
+    title: Service items — fixed-wing operations
+    titleOriginal: 服務項目 — 定翼機營運業務
+    publisher: Daily Air / De An Airlines (德安航空股份有限公司)
+    url: "https://www.dailyair.com.tw/dailyair/page/FlightInfo/"
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full service page says it operates five island route families, names Taitung–Lanyu and Taitung–Green Island, and identifies 19-seat and DHC6-400 aircraft."
+  - id: dailyair-live
+    title: Live flight information
+    titleOriginal: 即時航班資訊
+    publisher: Daily Air / De An Airlines (德安航空股份有限公司)
+    url: "https://flight.dailyair.com.tw/"
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's live route-family page, dated 2026-09-06, lists Taitung–Lanyu, Taitung–Green Island, Kaohsiung–Wangan, Kaohsiung–Qimei and Penghu–Qimei."
 ---
 
 Taiwan's outlying-island airports share one reason for existing: the ferry
@@ -159,13 +180,16 @@ effective 15 September 2023.[^penghu-history]
 CAA's own airport-distribution page names Lanyu (蘭嶼) and Green Island
 (綠島) airports alongside every other station on this page.[^caa-airport-list]
 Both are served by Daily Air (德安航空) using 19-seat DHC6-400 Twin Otter
-aircraft on short island-hopping routes from Taitung — this operator's own
-site was unreachable for this page, so its route network and schedule are
-not independently confirmed here and are covered, to the extent sourced,
-under [Operators](/air/operators/). Whether Lanyu and Green Island are run
-as independent CAA stations or as branch units of Taitung Aviation Station
-is TBC: the airport-distribution page lists them by name without stating
-administrative subordination either way.
+aircraft on short island-hopping routes from Taitung.[^dailyair-flight-info]
+The operator's full service page names five fixed-wing island route families,
+including Taitung–Lanyu and Taitung–Green Island, and its live route page was
+dated 6 September 2026 when fetched.[^dailyair-flight-info][^dailyair-live]
+Detailed per-flight times and current fares remain TBC on the operator profile
+because the linked timetable and fare pages did not complete a full fetch.
+Whether Lanyu and Green Island are run as independent CAA stations or as
+branch units of Taitung Aviation Station is still TBC: the airport-distribution
+page lists them by name without stating administrative subordination either
+way.[^caa-airport-list]
 
 ## The subsidy framework common to all of them
 
@@ -188,7 +212,7 @@ opened.[^caa-loss-subsidy]
 
 Runway dimensions and IATA/ICAO codes for Kinmen and Penghu were not found
 on a primary kma.gov.tw or mkport.gov.tw page during this research — only in
-secondary aggregation. Daily Air's fleet, frequency and full route network
-are TBC pending a working fetch of the carrier's own site. The specific
-subsidy amounts paid to named carriers under the operating-loss scheme
+secondary aggregation. Daily Air's detailed per-flight times and current fares
+remain TBC. The specific subsidy amounts paid to named carriers under the
+operating-loss scheme
 remain in unopened CAA files by fiscal year.[^caa-loss-subsidy]

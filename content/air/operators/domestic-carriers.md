@@ -1,6 +1,6 @@
 ---
 title: UNI Air and Mandarin Airlines
-summary: Taiwan's two domestic carriers, one descended from a 1996 rebrand and 1998 triple-merger under the EVA Air Group, the other a 1991 China Airlines joint venture — with different-sized route networks that do not fully overlap.
+summary: UNI Air and Mandarin Airlines, two major domestic-carrier profiles with different-sized route networks that do not fully overlap; Daily Air's distinct island network is documented separately.
 updated: 2026-08-29
 aliases:
   - 立榮航空
@@ -59,11 +59,21 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The carrier's own booking-system destinations list, giving domestic airport codes served: TSA (Taipei Songshan), RMQ (Taichung), KHH (Kaohsiung), HUN (Hualien), TTT (Taitung), MZG (Penghu), KNH (Kinmen), LZN (Matsu Nangan) — 8 airports including the Taipei base itself, i.e. 7 destinations from Songshan."
+  - id: dailyair-flight-info
+    title: Service items — fixed-wing operations
+    titleOriginal: 服務項目 — 定翼機營運業務
+    publisher: Daily Air / De An Airlines (德安航空股份有限公司)
+    url: "https://www.dailyair.com.tw/dailyair/page/FlightInfo/"
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full page names Taitung–Lanyu and Taitung–Green Island among its five fixed-wing island route families and identifies its 19-seat/DHC6-400 aircraft."
 ---
 
-Taiwan's domestic network is flown by two carriers, both tied to the
-country's two international full-service airlines, but by different
-corporate routes.
+This page focuses on UNI Air and Mandarin Airlines, two carrier profiles tied
+to Taiwan's two international full-service airline groups.[^uniair-history][^mandarin-history]
+Daily Air's distinct fixed-wing island network is documented separately rather
+than folded into either carrier's airport list.[^dailyair-flight-info]
 
 ## UNI Air
 
@@ -85,7 +95,7 @@ The carrier's own airport-information page lists ground service points at
 Hualien, Penghu, Kinmen, and both Matsu fields at Nangan and
 Beigan.[^uniair-airports] That list does not include Lanyu or Green Island,
 which this section's [outlying-islands page](/air/airports/outlying-islands/)
-records as served instead by Daily Air's smaller Twin Otter aircraft.
+records as served instead by Daily Air's smaller Twin Otter aircraft.[^dailyair-flight-info]
 
 ## Mandarin Airlines
 
