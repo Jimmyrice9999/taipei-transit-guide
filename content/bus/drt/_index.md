@@ -147,6 +147,8 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 - [Tainan regional buses](/bus/regional/tainan/) — TDX city buses and the 52/49 route-count conflict.[^tainan-yellow-source][^tainan-yellow-notice-source]
 - [Kaohsiung regional buses](/bus/regional/kaohsiung/) — 公車式小黃 and accessibility links.[^kaohsiung-community-source][^kaohsiung-accessible-source]
 
+- [Kaohsiung Rehabilitation Bus](/bus/drt/kaohsiung-rehabilitation-bus/) — eligibility-limited accessible transport, booking windows, service boundary and fare formula.[^kaohsiung-rehab-source]
+
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
 
 Two municipal pages show why that crosswalk must remain explicit. Kaohsiung’s page, dated 30 June 2026, names Kaohsiung Bus as the contracted Rehabilitation Bus operator, limits eligibility to stated disability or wheelchair-medical-document categories, permits different advance-booking windows by category and publishes a distance-based fare formula.[^kaohsiung-rehab-source] Taichung’s page separately lists 54 universal accessible taxis across five fleets; it says the service has no eligibility restriction, prioritises passengers with reduced mobility, and uses the city’s metered fare.[^taichung-accessible-taxi-source] Neither example is silently promoted to a national rule.
