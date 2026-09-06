@@ -56,6 +56,10 @@ function displayDate(value: string | null) {
   return value ? value.slice(0, 10) : 'TBC'
 }
 
+function hanLanguage(value: string) {
+  return /[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]/.test(value) ? { lang: 'zh-Hant' as const } : {}
+}
+
 export default function NationalBusRouteDirectory() {
   return (
     <section className="national-bus-route-directory" aria-labelledby="national-bus-route-directory">
@@ -87,7 +91,7 @@ export default function NationalBusRouteDirectory() {
             <tbody>
               {operators.map((operator) => (
                 <tr key={operator.key}>
-                  <th scope="row">{operator.name}</th>
+                  <th scope="row"><span {...hanLanguage(operator.name)}>{operator.name}</span></th>
                   <td>{operator.sourceCity} · ID {operator.id}</td>
                   <td>{operator.routeCount.toLocaleString()}</td>
                 </tr>
@@ -119,16 +123,16 @@ export default function NationalBusRouteDirectory() {
                   {jurisdictionRoutes.map((route) => (
                     <tr key={route.id}>
                       <th scope="row">
-                        <span>{route.name.en || route.routeId}</span>
+                        <span {...hanLanguage(route.name.en || route.routeId)}>{route.name.en || route.routeId}</span>
                         {route.name.zh && <small lang="zh-Hant">{route.name.zh}</small>}
                         <small>{route.routeUid}</small>
                       </th>
                       <td>
-                        <span>{route.departure.en || route.departure.zh || 'TBC'}</span>
+                        <span {...hanLanguage(route.departure.en || route.departure.zh || 'TBC')}>{route.departure.en || route.departure.zh || 'TBC'}</span>
                         <span className="route-directory-arrow" aria-hidden="true">→</span>
-                        <span>{route.destination.en || route.destination.zh || 'TBC'}</span>
+                        <span {...hanLanguage(route.destination.en || route.destination.zh || 'TBC')}>{route.destination.en || route.destination.zh || 'TBC'}</span>
                       </td>
-                      <td>{route.operatorNames.length > 0 ? route.operatorNames.join('; ') : 'TBC'}</td>
+                      <td>{route.operatorNames.length > 0 ? <span {...hanLanguage(route.operatorNames.join('; '))}>{route.operatorNames.join('; ')}</span> : 'TBC'}</td>
                       <td>{route.subRouteCount ?? 'TBC'}</td>
                       <td>{displayDate(route.sourceUpdated)}</td>
                     </tr>

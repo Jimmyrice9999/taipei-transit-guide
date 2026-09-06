@@ -28133,6 +28133,55 @@ The final UI-hardening `npm run gate:fast` completed exit 0:
 No scout worker was available in this environment; this was a sequential
 main-session UI batch with one writer and no concurrent writer.
 
+### Full-gate language-tag correction
+
+The first full gate after the UI hardening found one real regression in the
+accessibility suite: the Taitung rural/island page had Han route names inside
+Markdown code spans, so the static HTML could not tag those runs as
+zh-Hant. The route directory also had Chinese TDX operator names rendered as
+plain React text in its operator and route tables.
+
+The correction removed code formatting from the Taitung route-name examples so
+the existing rich-text Markdown pass can tag them, and added a conditional Han
+language helper to NationalBusRouteDirectory. English values remain
+untagged English; only values containing the Han ranges receive
+lang="zh-Hant". No accessibility assertion was weakened.
+
+The first full gate therefore remains recorded as a failed attempt at the
+accessibility assertion, with the exact failure:
+
+    en\bus\drt\taitung-rural-and-island\index.html has untagged Han:
+    人之島環線, 彈性預約路線, 蘭嶼鄉
+
+After the correction, the second full npm run gate:full completed its
+verification sequence with the following observed results:
+
+    postbuild: 5341 pages checked against the Han subsets — no missing glyphs.
+    Checked 2825326 internal links across 5341 pages.
+      ✓ no broken links
+      ✓ every #fragment resolves
+      ✓ no orphan pages
+    nav-labels: clean (5341 pages — every dropdown-nav link lands on the page it names).
+    ✔ the accessibility audit reports no errors
+    ✔ Chinese is always tagged zh-Hant
+    ✔ every horizontal scroll container has the scroll affordance
+    ✔ every generated content page exported an index.html
+    ✔ no internal link 404s
+    ✔ no bus route page claims an MRT join absent from the curated join file
+    ✔ every citation marker resolves to a source entry
+    ✔ unsourced assertions have not increased
+    ✔ research is clean
+    ✔ geometry audit and CVD checks completed with no genuine WCAG badge failure
+
+The full test process reported 245 tests with 244 passes and 1 failure on the
+first attempt; the corrected rerun passed the previously failing accessibility
+case and continued through the remaining verification checks. A final full
+gate will be run after this corrective commit and again treated as the
+authoritative closing result.
+
+No scout worker was available in this environment; this was a sequential
+main-session correction with one writer and no concurrent writer.
+
 ### TDX national bus operator-name correction
 
 The refreshed national route snapshot exposed a normalisation bug in the
