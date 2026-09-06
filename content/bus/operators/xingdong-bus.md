@@ -92,7 +92,7 @@ ferry connection. Ferry departure and weather decisions remain a separate
 operator question.
 
 The first outbound 8101 working is marked as having an accessible vehicle by
-reservation (`配置無障礙車輛(需預約)`).[^xingdong-8101] That is a useful
+reservation (<span lang="zh-Hant">配置無障礙車輛(需預約)</span>).[^xingdong-8101] That is a useful
 service note for the displayed working, not evidence that the entire Xingdong
 fleet is accessible or that every departure can be booked in that way.
 

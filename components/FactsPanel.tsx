@@ -74,7 +74,7 @@ export default function FactsPanel({
               `${line.name} Line`
             )
           ) : (
-            title
+            <RichText badges={false} stationCodes={false}>{title}</RichText>
           )}
         </span>
         {line.nameZh && (

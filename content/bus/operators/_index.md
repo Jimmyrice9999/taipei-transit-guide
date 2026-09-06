@@ -37,7 +37,7 @@ The committed TDX pull contains 61 operator records associated with 1051 route r
 The records are sorted by the number of route associations in the pull; duplicate company names remain separate where TDX supplied separate record IDs or municipalities [^tdx-bus-operator-pull].
 
 The operator collection also includes curated profiles where a company source
-adds current service evidence that the TDX pull does not provide. [Xingdong
+adds current service evidence alongside the structured TDX pull. [Xingdong
 Bus](/bus/operators/xingdong-bus/) is the first regional example, with a dated
 8101 timetable through Fugang and separately dated airport and Tourist Shuttle
 notices.[^xingdong-home][^xingdong-8101]
@@ -104,4 +104,4 @@ notices.[^xingdong-home][^xingdong-8101]
 - [Tucheng District Office — NewTaipei](/bus/operators/tuchengdistrictoffice-x31woj/) — 0 route records [^tdx-bus-operator-pull]
 - [Wugu District Office — NewTaipei](/bus/operators/wugudistrictoffice-yho78z/) — 0 route records [^tdx-bus-operator-pull]
 
-TDX does not publish the corporate history, ownership, fleet, depot or contract-history fields needed to complete every operator profile; those gaps are marked TBC on the record pages [^tdx-bus-operator-pull].
+The structured TDX source supports the route associations and contact fields shown here; corporate history, ownership, fleet, depot and contract-history fields are left TBC on record pages until a primary source supplies them [^tdx-bus-operator-pull].

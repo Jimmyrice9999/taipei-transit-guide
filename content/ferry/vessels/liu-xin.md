@@ -1,5 +1,5 @@
 ---
-title: Liu Xin / 琉興
+title: Liu Xin
 summary: An officially recorded passenger vessel on the Donggang–Xiaoliuqiu Dafu Fishing Port service, with the Maritime and Port Bureau's identity, capacity, tonnage and published survey-validity fields.
 updated: 2026-09-06
 aliases:
@@ -62,8 +62,8 @@ or that every departure uses this vessel.[^mpb-passenger-routes]
 
 ## Identity and route join
 
-The Bureau's vessel page is headed `東港-小琉球(大福漁港) — 船舶資訊` and names
-the ship `琉興`; its English name field is `LIU XIN` and its official number is
+The Bureau's vessel page is headed <span lang="zh-Hant">東港-小琉球(大福漁港) — 船舶資訊</span> and names
+the ship <span lang="zh-Hant">琉興</span>; its English name field is `LIU XIN` and its official number is
 016441.[^mpb-liu-xin] The route join is explicit in the same official record:
 the page links the Dafu Fishing Port endpoint and the Donggang–Xiaoliuqiu
 route, so this is a verified route association rather than a place-name match

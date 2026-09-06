@@ -26,6 +26,20 @@ export function isInSection(pathname: string, href: string) {
   return pathname === base || pathname.startsWith(base + '/')
 }
 
+/** Keep original-language names accessible in both navigation renderings. */
+const HAN_RUN = /([\u2E80-\u2FDF\u3000-\u303F\u3100-\u312F\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF]+)/g
+
+export function NavLabel({ children }: { children: string }) {
+  const parts = children.split(HAN_RUN)
+  return (
+    <>
+      {parts.map((part, index) =>
+        index % 2 === 1 ? <span lang="zh-Hant" key={index}>{part}</span> : part,
+      )}
+    </>
+  )
+}
+
 /**
  * One group's content — a type's page list, or a system's nested types —
  * shared between the popover panel (SiteNav, hover/click, absolutely
@@ -45,12 +59,12 @@ export function NavGroupView({ group }: { group: NavGroup }) {
     return (
       <details className="nav-submenu nav-system">
         <summary>
-          <span>{group.title}</span>
+          <span><NavLabel>{group.title}</NavLabel></span>
           <span className="nav-submenu-caret" aria-hidden="true" />
         </summary>
         <div className="nav-submenu-body">
           <Link className="nav-group-index" href={group.href}>
-            Open {group.title.toLowerCase()}
+            <NavLabel>{`Open ${group.title.toLowerCase()}`}</NavLabel>
             <span aria-hidden="true"> →</span>
           </Link>
           <div className="nav-subgroups">
@@ -73,7 +87,7 @@ export function NavGroupView({ group }: { group: NavGroup }) {
   if (group.large || group.links.length <= 1) {
     return (
       <Link className="nav-group-direct" href={group.href}>
-        {group.title}
+        <NavLabel>{group.title}</NavLabel>
         <span aria-hidden="true"> →</span>
       </Link>
     )
@@ -82,12 +96,12 @@ export function NavGroupView({ group }: { group: NavGroup }) {
   return (
     <details className="nav-submenu">
       <summary>
-        <span>{group.title}</span>
+        <span><NavLabel>{group.title}</NavLabel></span>
         <span className="nav-submenu-caret" aria-hidden="true" />
       </summary>
       <div className="nav-submenu-body">
         <Link className="nav-group-index" href={group.href}>
-          {group.truncated ? `All ${group.title.toLowerCase()}` : `Open ${group.title.toLowerCase()} index`}
+          <NavLabel>{group.truncated ? `All ${group.title.toLowerCase()}` : `Open ${group.title.toLowerCase()} index`}</NavLabel>
           <span aria-hidden="true"> →</span>
         </Link>
         <ul>
@@ -107,7 +121,7 @@ export function NavGroupView({ group }: { group: NavGroup }) {
                     {link.badge.code}
                   </span>
                 )}
-                {link.title}
+                <NavLabel>{link.title}</NavLabel>
               </Link>
             </li>
           ))}
@@ -205,7 +219,7 @@ export default function SiteNav({
               }}
             >
               <Link href={section.href} aria-current={current ? 'true' : undefined}>
-                {section.title}
+                <NavLabel>{section.title}</NavLabel>
               </Link>
               <button
                 type="button"
@@ -249,7 +263,7 @@ export default function SiteNav({
               href={item.href}
               aria-current={isInSection(pathname, item.href) ? 'true' : undefined}
             >
-              {item.title}
+              <NavLabel>{item.title}</NavLabel>
             </Link>
           </li>
         ))}

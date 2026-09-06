@@ -28,7 +28,7 @@
 import Link from '@/components/LocaleLink'
 import { usePathname } from 'next/navigation'
 import type { NavSection } from '@/lib/nav'
-import { NavGroupView, isInSection } from './SiteNav'
+import { NavGroupView, NavLabel, isInSection } from './SiteNav'
 import LanguageToggle from './LanguageToggle'
 
 export default function SideNavRail({
@@ -63,12 +63,12 @@ export default function SideNavRail({
                   for the same click.
                 */}
                 <summary aria-current={current ? 'true' : undefined}>
-                  <span>{section.title}</span>
+                  <span><NavLabel>{section.title}</NavLabel></span>
                   <span className="nav-submenu-caret" aria-hidden="true" />
                 </summary>
                 <div className="side-nav-section-body">
                   <Link className="nav-group-index" href={section.href}>
-                    Open {section.title.toLowerCase()} index
+                    <NavLabel>{`Open ${section.title.toLowerCase()} index`}</NavLabel>
                     <span aria-hidden="true"> →</span>
                   </Link>
                   {section.groups.map((group) => (
@@ -85,7 +85,7 @@ export default function SideNavRail({
         {extra.map((item) => (
           <li className="side-nav-item side-nav-item-plain" key={item.href}>
             <Link href={item.href} aria-current={isInSection(pathname, item.href) ? 'true' : undefined}>
-              {item.title}
+              <NavLabel>{item.title}</NavLabel>
             </Link>
           </li>
         ))}

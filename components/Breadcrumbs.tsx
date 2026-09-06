@@ -1,4 +1,5 @@
 import Link from '@/components/LocaleLink'
+import RichText from '@/components/RichText'
 
 /** The "Train › Lines › Wenhu Line" trail above a page title. */
 export default function Breadcrumbs({
@@ -14,7 +15,11 @@ export default function Breadcrumbs({
           <span className="sep" aria-hidden="true">
             ›
           </span>
-          {crumb.href ? <Link href={crumb.href}>{crumb.label}</Link> : crumb.label}
+          {crumb.href ? (
+            <Link href={crumb.href}><RichText badges={false} stationCodes={false}>{crumb.label}</RichText></Link>
+          ) : (
+            <RichText badges={false} stationCodes={false}>{crumb.label}</RichText>
+          )}
         </span>
       ))}
     </nav>

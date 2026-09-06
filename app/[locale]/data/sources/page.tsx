@@ -173,7 +173,9 @@ export default async function SourcesPage() {
                             {pages.map((page, index) => (
                               <span key={page.href}>
                                 {index > 0 && ', '}
-                                <Link href={page.href}>{page.title}</Link>
+                                <Link href={page.href}>
+                                  <RichText badges={false} stationCodes={false}>{page.title}</RichText>
+                                </Link>
                               </span>
                             ))}
                           </span>

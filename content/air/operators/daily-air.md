@@ -1,5 +1,5 @@
 ---
-title: Daily Air / 德安航空
+title: Daily Air
 summary: Daily Air's five published fixed-wing island route families, seasonal service table, aircraft types and ticket-counter evidence, with current fares and per-flight times left TBC where the official pages could not be fetched.
 updated: 2026-09-06
 aliases:
