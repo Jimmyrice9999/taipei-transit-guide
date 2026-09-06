@@ -94,7 +94,12 @@ function plainTextOf(html) {
  * the nav (no badge span at all — see `pageTitleOf`) and is left alone.
  */
 function navTextOf(html) {
-  const stripped = html.replace(/<span\b[^>]*\bclass="[^"]*\bnav-badge\b[^"]*"[^>]*>[\s\S]*?<\/span>/g, ' ')
+  const stripped = html
+    .replace(/<span\b[^>]*\bclass="[^"]*\bnav-badge\b[^"]*"[^>]*>[\s\S]*?<\/span>/g, ' ')
+    // NavLabel marks Han runs with an inline lang span. It is semantic
+    // annotation, not visible whitespace: dropping its tags keeps punctuation
+    // adjacent exactly as it appears to the reader and in the target h1.
+    .replace(/<\/?span\b[^>]*>/g, '')
   return plainTextOf(stripped)
 }
 
