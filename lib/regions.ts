@@ -219,8 +219,8 @@ export const REGIONS: Region[] = [
   region({
     slug: 'pingtung', title: 'Pingtung County', titleOriginal: '屏東縣',
     summary: 'A county gateway for TRA, buses, intercity coaches, island-ferry links and future DRT research.',
-    links: [{ title: 'Taiwan Railway', href: '/rail/tra/', note: 'National TRA system and station reference.' }, { title: 'Intercity coach discovery', href: '/bus/intercity/', note: 'Dated national snapshot of highway-coach variants.' }],
-    modes: { rail: nationalRail, bus: nationalBus, coach: nationalCoach, ferry: c('tbc', 'Donggang–Xiaoliuqiu is a priority ferry family; a first-class route page is not yet implemented.', '/ferry/'), nodes: nodeGap },
+    links: [{ title: 'Taiwan Railway', href: '/rail/tra/', note: 'National TRA system and station reference.' }, { title: 'Intercity coach discovery', href: '/bus/intercity/', note: 'Dated national snapshot of highway-coach variants.' }, { title: 'Donggang–Xiaoliuqiu ferry', href: '/ferry/routes/donggang-xiaoliuqiu/', note: 'Four-entry operator family in the Maritime and Port Bureau directory.' }],
+    modes: { rail: nationalRail, bus: nationalBus, coach: nationalCoach, ferry: c('covered', 'The Donggang–Xiaoliuqiu passenger-shipping family has a canonical route page; current route-wide fares and timetables remain TBC.', '/ferry/routes/donggang-xiaoliuqiu/'), nodes: nodeGap },
   }),
   region({
     slug: 'yilan', title: 'Yilan County', titleOriginal: '宜蘭縣',

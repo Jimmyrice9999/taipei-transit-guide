@@ -8,6 +8,7 @@ const FERRY_FAMILIES = [
   { title: 'Matsu', original: '連江縣海運', href: '/ferry/routes/matsu/', note: 'Island, Keelung and Small Three Links services' },
   { title: 'Green Island', original: '綠島交通船', href: '/ferry/routes/green-island/', note: 'Taitung–Green Island service' },
   { title: 'Orchid Island', original: '蘭嶼交通船', href: '/ferry/routes/orchid-island/', note: 'Taitung–Orchid Island service' },
+  { title: 'Donggang–Xiaoliuqiu', original: '東港—小琉球', href: '/ferry/routes/donggang-xiaoliuqiu/', note: 'Pingtung passenger-shipping family' },
 ]
 
 export default function NationalFerryAtlas() {
@@ -19,7 +20,7 @@ export default function NationalFerryAtlas() {
       </div>
       <div className="coverage-ledger-heading">
         <h2 className="section-heading" id="national-ferry-coverage">Ferry and maritime route families</h2>
-        <span className="coverage-ledger-total">7 route families</span>
+        <span className="coverage-ledger-total">8 route families</span>
       </div>
       <ul className="coverage-ledger-list mode-atlas-list">
         {FERRY_FAMILIES.map((family) => (

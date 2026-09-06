@@ -11,3 +11,4 @@ order: 1
 - [Matsu island ferry services](/ferry/routes/matsu/)
 - [Green Island ferry services](/ferry/routes/green-island/)
 - [Orchid Island ferry services](/ferry/routes/orchid-island/)
+- [Donggang–Xiaoliuqiu ferry services](/ferry/routes/donggang-xiaoliuqiu/)
