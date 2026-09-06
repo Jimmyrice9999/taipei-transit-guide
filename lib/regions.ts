@@ -265,13 +265,23 @@ export const REGIONS: Region[] = REGION_REGISTRY.map((region) => {
     return {
       ...region,
       links: [
+        { title: 'Taitung Airport', href: '/air/airports/taitung/', note: 'Dated domestic-air node with official island-service and ground-access evidence.' },
         { title: 'Green Island ferry', href: '/ferry/routes/green-island/', note: 'Current official Taitung–Green Island route family.' },
         { title: 'Orchid Island ferry', href: '/ferry/routes/orchid-island/', note: 'Current official Taitung–Orchid Island and seasonal Houbihu route family.' },
         ...region.links,
       ],
-      modes: region.modes.map((entry) => entry.key === 'ferry'
-        ? { ...entry, status: 'covered' as const, note: 'Green Island and Orchid Island route pages are current-source verified; schedules and weather rules remain dated/TBC where the official pages do not publish them.', href: '/ferry/routes/green-island/' }
-        : entry),
+      modes: region.modes.map((entry) => {
+        if (entry.key === 'ferry') {
+          return { ...entry, status: 'covered' as const, note: 'Green Island and Orchid Island route pages are current-source verified; schedules and weather rules remain dated/TBC where the official pages do not publish them.', href: '/ferry/routes/green-island/' }
+        }
+        if (entry.key === 'air') {
+          return { ...entry, status: 'covered' as const, note: 'Taitung Airport now has a dated live-flight and ground-access node; per-flight times, fares and current bus frequency remain TBC.', href: '/air/airports/taitung/' }
+        }
+        if (entry.key === 'nodes') {
+          return { ...entry, status: 'structured' as const, note: 'The airport node records official bus/rail transfer language without asserting a direct station join.', href: '/air/airports/taitung/' }
+        }
+        return entry
+      }),
     }
   }
   if (region.slug !== 'penghu') return region

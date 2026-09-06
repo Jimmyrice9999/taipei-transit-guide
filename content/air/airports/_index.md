@@ -6,6 +6,7 @@ order: 1
 
 - [Taoyuan, Songshan and Taichung](/air/airports/main-island-hubs/)
 - [Kaohsiung](/air/airports/kaohsiung/)
+- [Taitung](/air/airports/taitung/) — East-coast and island-connectivity node with dated live-flight and ground-access evidence.
 - [Penghu](/air/airports/penghu/)
 - [Hualien](/air/airports/hualien/)
 - [Outlying islands: Penghu, Kinmen, Matsu, Lanyu and Green Island](/air/airports/outlying-islands/)
