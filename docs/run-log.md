@@ -28878,6 +28878,47 @@ search index are regenerated:
 No scout worker was available in this environment; this was a sequential
 main-session research/content batch.
 
+### Browser keyboard identity correction
+
+The first post-expansion bounded browser run completed reflow, painted-spine,
+accessibility-tree, locale/map, reduced-motion and axe checks, but ended with
+one finding:
+
+    ✗ 1 finding(s):
+      ✗ keyboard: focus trap on section-bus-en
+
+This was not a production focus trap. The browser verifier's focusable-element
+helper selected links, buttons, form controls and explicit tabindex elements,
+but omitted native details/summary controls. The national bus directory added
+enough consecutive route-disclosure summaries for Chromium to tab through more
+than ten summaries in a row; every omitted summary fell back to the same
+focusable-list index of -1, triggering the verifier's intended repeated-visit
+guard. The page itself continued to move focus between distinct summary
+elements.
+
+The verifier now includes summary in its shared focusable selector before it
+stamps and measures the traversal. A focused Playwright reproduction on
+section-bus-en reported 976 expected focusable elements and no trap. The
+corrected bounded run reported:
+
+    Browser verification mode=template; corpus=4256 pages; templates=79;
+    pages visited=157 (canonical=79, extremes=78); workers=3
+    ✓ no page produces a document-level horizontal scrollbar
+    ✓ no painted box in .page-main runs under the spine
+    ✓ section-bus-en 290/976 reachable (10 beyond traversal cap)
+    ✓ zero violations across 157 pages
+    ✓ interactive-network-map-en: 713 linked stations; zoom=true; pan=true
+    ✓ interactive-network-map-zh-Hant: 713 linked stations; zoom=true; pan=true
+    1344 screenshots → docs/screenshots/
+    369 screenshot(s) clipped to stay under Chromium's capture limit
+    78/78 print PDFs
+    ✓ browser verification clean
+
+The 369 clipped screenshots are expected Chromium's 12,000px capture limit
+for genuinely enormous pages and are recorded in the browser JSON; they are
+not horizontal-overflow failures. No traversal threshold was loosened and no
+content was hidden.
+
 ### Domestic aviation atlas hardening
 
 The existing `NationalAirAtlas` array contained seven surfaces but rendered the

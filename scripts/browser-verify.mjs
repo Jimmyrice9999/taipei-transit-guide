@@ -795,7 +795,7 @@ async function measureOverflow(page) {
  */
 const FOCUSABLE_HELPER = () => {
   window.__ttgFocusable = () =>
-    [...document.querySelectorAll('a[href], button, input, select, textarea, [tabindex]')].filter(
+    [...document.querySelectorAll('a[href], button, input, select, textarea, summary, [tabindex]')].filter(
       (el) => {
         const style = getComputedStyle(el)
         if (style.display === 'none' || style.visibility === 'hidden') return false
