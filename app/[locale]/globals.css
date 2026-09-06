@@ -1966,6 +1966,90 @@ main {
   font-size: 12px;
 }
 
+.national-bus-route-directory {
+  margin-block: 2.5rem;
+}
+
+.national-bus-route-directory > .atlas-note {
+  margin-block: 1rem 1.25rem;
+}
+
+.national-bus-route-directory-groups {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.national-bus-route-group {
+  border-block: 1px solid var(--border);
+}
+
+.national-bus-route-group > summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0.15rem;
+  color: var(--text-strong);
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.national-bus-route-group > summary span:last-child {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.national-bus-route-group[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.national-bus-route-group .table-scroll {
+  margin-block: 0;
+}
+
+.national-bus-route-group table {
+  min-width: 58rem;
+}
+
+.national-bus-route-group th,
+.national-bus-route-group td {
+  vertical-align: top;
+}
+
+.national-bus-route-group tbody th {
+  min-width: 8rem;
+}
+
+.national-bus-route-group tbody th,
+.national-bus-route-group tbody td {
+  padding-block: 0.7rem;
+}
+
+.national-bus-route-group tbody th span,
+.national-bus-route-group tbody th small,
+.national-bus-route-group tbody td > span {
+  display: block;
+}
+
+.national-bus-route-group tbody th small {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+}
+
+.national-bus-route-group tbody th small:last-child {
+  font-family: var(--font-mono);
+}
+
+.route-directory-arrow {
+  color: var(--accent);
+  margin-block: 0.15rem;
+}
+
 @media (max-width: 680px) {
   .coverage-ledger-list {
     grid-template-columns: 1fr;

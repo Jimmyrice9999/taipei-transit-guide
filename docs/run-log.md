@@ -28067,6 +28067,45 @@ completed exit 0:
 No scout worker was available in this environment; this was a sequential
 main-session source/data batch with one writer.
 
+### National bus route directory
+
+The national route snapshot is now a first-class discovery surface rather than
+only a coverage count. `components/NationalBusRouteDirectory.tsx` adds one
+native-details group for each of the 22 registry jurisdictions and a static
+table of all 3,046 dated TDX route records. Each row retains the route name,
+RouteUID, endpoints, refreshed operator name, source variant count and TDX
+source-update date. It deliberately does not create 3,046 authored Markdown
+pages or imply stop sequences, fares or live departures.
+
+The route directory is mounted on both locale versions of `/bus/`. A focused
+Playwright fallback check was used because the in-app browser connector was not
+available in this environment. At 320px, `/en/bus/` and `/zh-Hant/bus/` each
+reported `clientWidth=320`, `scrollWidth=320`, `overflow=0`, `groups=22` and
+`rows=3046`; `/en/bike/`, `/en/ferry/`, `/en/air/` and `/en/regions/` also
+reported zero document overflow. The browser harness itself remains the final
+corpus check.
+
+The new route names introduced additional Han characters. Following the font
+safety procedure, a fresh build first reported the missing set, `npm run fonts`
+was run against that fresh output, and a second fresh build reported:
+
+    postbuild: 5335 pages checked against the Han subsets — no missing glyphs.
+
+The subsequent `npm run gate:fast` completed exit 0:
+
+    citations: 1897 content files, 1838 with a sources: block
+      8863 citations resolved — 8314 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1897 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 310 file(s), 1201 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
 ### Hsinchu Bus operator depth
 
 The next depth batch added a deliberately bounded operator overlay for Hsinchu

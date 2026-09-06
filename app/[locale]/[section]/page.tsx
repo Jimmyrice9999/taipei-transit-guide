@@ -22,6 +22,7 @@ import { NEUTRAL_LINE } from '@/lib/lines'
 import { getFolderContent, getPages, getSection, getSections, getSystems, getTypes } from '@/lib/content'
 import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 import NationalBusAtlas from '@/components/NationalBusAtlas'
+import NationalBusRouteDirectory from '@/components/NationalBusRouteDirectory'
 import NationalBikeAtlas from '@/components/NationalBikeAtlas'
 import NationalFerryAtlas from '@/components/NationalFerryAtlas'
 import NationalAirAtlas from '@/components/NationalAirAtlas'
@@ -112,6 +113,7 @@ export default async function SectionPage({ params }: Props) {
       <EditorialHeader eyebrow="National atlas" title={meta.title} summary={meta.description} />
 
       {section === 'bus' && <NationalBusAtlas />}
+      {section === 'bus' && <NationalBusRouteDirectory />}
       {section === 'bus' && <NationalCommunityTransportAtlas />}
       {section === 'bus' && <NationalTouristShuttleAtlas />}
       {section === 'bike' && <NationalBikeAtlas />}
