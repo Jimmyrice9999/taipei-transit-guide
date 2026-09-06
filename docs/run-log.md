@@ -27962,3 +27962,95 @@ proof captured immediately after `git push origin HEAD:main` was:
 The first line was `git log origin/main --oneline -1`; the second was
 `git log HEAD --oneline -1`. A final docs-only amendment follows this historic
 proof; the final response records the matching refs for that amendment too.
+
+## Run 318 — 2026-09-06 — bike atlas mobile reflow blocker
+
+### Baseline and safety
+
+Run 318 began from `b99d78e2 Run 317: record remote push proof`; `origin/main`
+also pointed to `b99d78e2 Run 317: record remote push proof`. The initial
+`git status --short` contained 5,212 known generated/untracked entries,
+including `data/generated/aggregate-data.json`, browser/adversarial/audit JSON,
+print PDFs, screenshots, probes and `.unsnooze/`. None was cleaned, deleted or
+staged. After the fresh build and browser run the count was 5,213: the same
+baseline plus the deliberate `app/[locale]/globals.css` change. No scout
+workers were available in this execution environment, so scout concurrency was
+0; no read-only scout batch was dispatched and there was no concurrent writer.
+
+Fresh baseline adversarial output:
+
+    16/16 cases behaved as specified
+
+### Blocker reproduction and cause
+
+The exact 320px Playwright reproduction waited for `document.fonts.ready` and
+measured both document overflow and descendant intrinsic widths on
+`/en/bike/`. Before the fix it reported `clientWidth=320`,
+`scrollWidth=321`, and one pixel of document overflow. The culprit was not an
+invisible body scrollbar: the shared `.coverage-ledger-heading` flex row
+contained the `.coverage-ledger-total` text `22 jurisdictions`, whose
+intrinsic width exceeded its narrow flex allocation. The ledger heading and
+its parents consequently reported a 305px scroll width against a 304px content
+edge. The same `/en/bike/` target appeared in the canonical and extreme cases;
+the duplicate report represented the same underlying layout defect, not two
+independent elements.
+
+The production correction is deliberately content-preserving. The shared
+`.coverage-ledger-total` rule now has `min-width: 0`, `max-width: 100%`, and
+`overflow-wrap: anywhere`, allowing the count label to wrap inside its flex
+allocation. No body clipping, hidden overflow, removed atlas content or
+weakened browser assertion was used. At 320px the label wraps into two lines;
+the row remains readable and the document width equals the viewport.
+
+Focused Playwright matrix after the fix:
+
+    pages: /en/bike/ /zh-Hant/bike/ /en/bus/ /en/ferry/ /en/air/ /en/regions/
+    widths: 320 375 390 414 428 1024
+    focused-overflow-count=0
+
+The fresh production build completed successfully, including:
+
+    postbuild: 5319 pages checked against the Han subsets — no missing glyphs.
+
+The required bounded browser run then completed with exit 0 and the terminal
+line `✓ browser verification clean`. Its actual headline output was:
+
+    Browser verification mode=template; corpus=4234 pages; templates=78; pages visited=156 (canonical=78, extremes=78); workers=3
+    ✓ no page produces a document-level horizontal scrollbar
+    ✓ no painted box in .page-main runs under the spine
+    ✓ zero violations across 156 pages
+    ✓ interactive-network-map-en: 713 linked stations; zoom=true; pan=true
+    ✓ interactive-network-map-zh-Hant: 713 linked stations; zoom=true; pan=true
+    ✓ interactive-network-map-en at 320px: static SVG=true; stations=713
+    ✓ interactive-network-map-zh-Hant at 320px: static SVG=true; stations=713
+    1327 screenshots → docs/screenshots/
+    369 screenshot(s) clipped to stay under Chromium's capture limit
+    77/77 print PDFs
+    ✓ browser verification clean
+
+The screenshot clipping warnings were expected full-page captures above
+Chromium's documented 12,000px limit; they were not layout failures. Visual
+inspection of the saved before/after 320px bike captures confirmed that the
+count label wraps rather than clips, while the table and references remain
+present.
+
+### Blocker gate
+
+`npm run gate:fast` completed with exit 0. The significant actual output was:
+
+    citations: 1889 content files, 1831 with a sources: block
+      8825 citations resolved — 8276 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1889 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 303 file(s), 1185 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+The separate blocker commit and push proof are recorded in the next Run 318
+entry after the commit is made. National expansion begins only after that
+proof matches locally and remotely.

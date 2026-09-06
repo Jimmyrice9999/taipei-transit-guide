@@ -1709,6 +1709,9 @@ main {
 }
 
 .coverage-ledger-total {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   color: var(--text-2);
   font-family: var(--font-mono);
   font-size: 11px;
