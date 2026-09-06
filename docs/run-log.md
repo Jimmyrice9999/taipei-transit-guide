@@ -28084,6 +28084,55 @@ The final New Taipei `npm run gate:fast` completed exit 0:
 No scout worker was available in this environment; this was a sequential
 main-session source/content batch with one writer and no concurrent writer.
 
+### National bus disclosure UI hardening
+
+The national route directory now has an additional shared CSS guard for the
+long-label class exposed by the 3,046-row TDX layer: direct children of the
+operator and jurisdiction disclosure summaries have `min-width: 0` and
+`overflow-wrap: anywhere`. This keeps the label/count pair shrinkable without
+clipping or hiding the table; the tables themselves remain intentionally
+scrollable because their essential columns are not discarded on mobile.
+
+The fresh post-change build reported:
+
+    postbuild: 5341 pages checked against the Han subsets — no missing glyphs.
+
+Focused CLI Playwright checks visited `/en/bus/`, `/zh-Hant/bus/`, `/en/bike/`,
+`/en/ferry/`, `/en/air/`, `/en/regions/` and the New Taipei DRT page at 320,
+375, 390, 414, 428 and 1024px. All document-level measurements reported
+`scrollWidth === clientWidth` and `overflow=0`; the only elements extending
+beyond the viewport were the intentional 58rem route/42rem operator tables
+inside their horizontal `.table-scroll` containers. Disclosure summaries stayed
+inside their 288–396px tracks at mobile widths. The route directory at 320px
+showed its source note and `3,046 records` heading without clipping; the English
+and Traditional Chinese top surfaces were also checked.
+
+The screenshot probes used for pixel inspection were kept outside the deliberate
+diff under `probes/`:
+
+    run318-bus-atlas-en-320.png
+    run318-bus-directory-en-320.png
+    run318-bus-atlas-zh-320.png
+    run318-new-taipei-drt-en-320.png
+
+The final UI-hardening `npm run gate:fast` completed exit 0:
+
+    citations: 1900 content files, 1841 with a sources: block
+      8871 citations resolved — 8322 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1900 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2294 Han characters in 2+ character runs, all covered).
+    research: 313 file(s), 1210 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session UI batch with one writer and no concurrent writer.
+
 ### TDX national bus operator-name correction
 
 The refreshed national route snapshot exposed a normalisation bug in the

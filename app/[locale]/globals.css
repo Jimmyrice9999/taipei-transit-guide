@@ -1995,6 +1995,12 @@ main {
   font-weight: 650;
 }
 
+.national-bus-operator-signals > summary > *,
+.national-bus-route-group > summary > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .national-bus-operator-signals > summary span:last-child {
   color: var(--text-muted);
   font-family: var(--font-mono);
