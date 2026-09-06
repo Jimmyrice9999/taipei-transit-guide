@@ -27952,3 +27952,13 @@ JSON, screenshots, PDFs, probes and `.unsnooze/` output remain the known local
 baseline and are not staged. Closing handoff documentation is the only
 deliberate work left to commit and push; the production implementation commit
 remains `19d12728`.
+
+The first closing documentation push then completed successfully. The exact
+proof captured immediately after `git push origin HEAD:main` was:
+
+    26cc3c8e Run 317: record final verification and handoff
+    26cc3c8e Run 317: record final verification and handoff
+
+The first line was `git log origin/main --oneline -1`; the second was
+`git log HEAD --oneline -1`. A final docs-only amendment follows this historic
+proof; the final response records the matching refs for that amendment too.

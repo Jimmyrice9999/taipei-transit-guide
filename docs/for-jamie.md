@@ -13,4 +13,5 @@ Production implementation commit: `19d12728 Run 317: fix coach name wrapping`.
 Remaining gaps: national per-jurisdiction bus overlays, complete live ferry/air inventories,
 Small Three Links detail, MOOVO/municipal bike seams, airport/ferry joins and operator depth.
 Known generated PDFs/screenshots/probes and `.unsnooze/` baseline remain unstaged.
+Remote/local refs matched after the closing implementation push.
 CI is unknown: `gh` is unavailable and GitHub API access is blocked locally.
