@@ -128,6 +128,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full official page, last changed 2025-05-21, lists 54 vehicles, five fleets, metered fares, electronic-ticket equipment, and states that universal taxis have no eligibility restriction while prioritising passengers with reduced mobility.
+  - id: thb-taitung-drt
+    title: Taitung Happiness Bus route directory
+    titleOriginal: 臺東縣幸福巴士
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.thb.gov.tw/News.aspx?_CSN=4365&n=10738&sms=13903
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The official Taitung route-directory page lists route type, township, route name, stop sequence and modification date for Taitung Happiness Bus services; this page is used for the Lanyu entries.
+  - id: thb-taitung-guanshan
+    title: Guanshan Happiness Bus route directory
+    titleOriginal: 關山鎮幸福巴士
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.thb.gov.tw/News.aspx?_CSN=4369&n=10738&sms=13903
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The official Guanshan route-directory page lists two school-service routes and a town-loop service, including their stop patterns and modification dates.
+  - id: thb-national-drt-directory
+    title: National Happiness Bus directory index
+    titleOriginal: 幸福巴士專區DRTS
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://komv.thb.gov.tw/News.aspx?n=9734&sms=13353
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The official directory index exposes the Taitung route-directory family and its pagination; it is used to establish that the national inventory is a browsable collection rather than a single static total.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -138,7 +165,7 @@ Tainan remains an explicit conflict. Its full Q&A table names 52 routes across 3
 
 For access-limited transport, eligibility, booking channel, service area and fare must be read from the commissioning authority's programme page. A rehabilitation bus or accessible taxi programme is therefore not folded into the open-to-all bus count; the nationwide crosswalk remains TBC.[^kaohsiung-accessible-source]
 
-The Highway Bureau's inventory page is the national discovery surface: it names all 22 jurisdiction filters and exposes service type, area, route name, stop pattern and route-modification date.[^thb-happiness-inventory] The February 2026 MOTC report is the dated national measurement currently safe to quote: 507 services across 193 townships/districts, including 247 routes in 64 rural areas, and 95.10% rural public-transport coverage.[^motc-happiness-2026]
+The Highway Bureau's inventory page is the national discovery surface: it names all 22 jurisdiction filters and exposes service type, area, route name, stop pattern and route-modification date.[^thb-happiness-inventory][^thb-national-drt-directory] The February 2026 MOTC report is the dated national measurement currently safe to quote: 507 services across 193 townships/districts, including 247 routes in 64 rural areas, and 95.10% rural public-transport coverage.[^motc-happiness-2026]
 
 ## Regional evidence
 
@@ -148,6 +175,7 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 - [Kaohsiung regional buses](/bus/regional/kaohsiung/) — 公車式小黃 and accessibility links.[^kaohsiung-community-source][^kaohsiung-accessible-source]
 
 - [Kaohsiung Rehabilitation Bus](/bus/drt/kaohsiung-rehabilitation-bus/) — eligibility-limited accessible transport, booking windows, service boundary and fare formula.[^kaohsiung-rehab-source]
+- [Taitung rural and island Happiness Bus](/bus/drt/taitung-rural-and-island/) — sourced Lanyu and Guanshan route-directory examples with official modification dates.[^thb-taitung-drt][^thb-taitung-guanshan]
 
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
 

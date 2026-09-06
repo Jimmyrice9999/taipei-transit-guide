@@ -28216,3 +28216,52 @@ The post-acquisition fast gate completed with exit 0:
 The fresh adversarial run after the national snapshot returned:
 
     16/16 cases behaved as specified
+
+### Taitung rural and island DRT batch
+
+The existing national DRT page already carries the dated MOTC measurement of
+507 Happiness Bus/Happiness Taxi services across 193 townships/districts in
+February 2026, and keeps the national live total TBC because the Highway Bureau
+page is a filtered directory rather than a static unfiltered export. This batch
+added route-level evidence without manufacturing 507 articles. A direct local
+request to one Highway Bureau endpoint returned an Incapsula challenge, so the
+route records below are based on full official pages fetched through the
+project's read-only research channel, not on that failed local response.
+
+The fetched national directory index was `幸福巴士專區DRTS`, with a paginated
+Taitung family. The full Taitung pages used were:
+
+    https://komv.thb.gov.tw/News.aspx?n=9734&sms=13353
+    https://www.thb.gov.tw/News.aspx?_CSN=4365&n=10738&sms=13903
+    https://www.thb.gov.tw/News.aspx?_CSN=4369&n=10738&sms=13903
+
+The committed editorial page `/bus/drt/taitung-rural-and-island/` records two
+Lanyu entries (`人之島環線` and `彈性預約路線（蘭嶼鄉）`) with ROC 113-07-08
+modification dates, plus three Guanshan records: two `關山-電光就學專線`
+school-service entries modified ROC 114-10-13 and `關山環鎮生活便利線`, whose
+record says it connects six villages with central Guanshan and Guanshan Tzu Chi
+Hospital and was modified ROC 113-04-23. The page deliberately leaves current
+operator, booking phone, timetable, fare and full Taitung totals TBC.
+
+The first DRT gate attempt failed only because the new page had one claim-classifier
+assertion without a sentence-local citation. It was corrected with the already
+fetched Highway Bureau markers; the claims baseline was not changed. The final
+`npm run gate:fast` completed exit 0 with:
+
+    citations: 1893 content files, 1834 with a sources: block
+      8841 citations resolved — 8292 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1893 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 305 file(s), 1189 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+The mandatory fresh build → `npm run fonts` → fresh build sequence completed;
+both builds reported `postbuild: 5327 pages checked against the Han subsets —
+no missing glyphs.` No browser verification was run in this data-only batch;
+the next shared UI/data boundary will use the bounded browser suite.
