@@ -5,3 +5,4 @@ order: 2
 ---
 
 - [UNI Air and Mandarin Airlines](/air/operators/domestic-carriers/)
+- [Daily Air / 德安航空](/air/operators/daily-air/)
