@@ -5,3 +5,4 @@ order: 2
 ---
 
 - [Fugang Fishing Port](/ferry/terminals/fugang-fishing-port/) — Taitung's documented transfer point for Green Island and Orchid Island ferries, with ground-access modes and dated crossing references.
+- [Kinmen Port Passenger Transport Center](/ferry/terminals/kinmen-port-passenger-center/) — the dated official Small Three Links reporting node for Xiamen Wutong and Quanzhou Shijing.
