@@ -28029,6 +28029,61 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+### New Taipei large Rehabilitation Bus depth
+
+The accessible-transport wave continued with a separate group-service page
+from the full New Taipei Government primary page:
+
+    https://lkk.ntpc.gov.tw/home.jsp?id=21109602ff92db93
+
+The page was updated 2026-07-21. It states six wheelchair places and at least
+14 ordinary seats; a four-city boundary covering New Taipei, Taipei, Taoyuan
+and Keelung with one endpoint in New Taipei; a group threshold of at least five
+New Taipei disability certificates including at least one severe or extremely
+severe case; and category combinations involving the published disability
+classes. It publishes two distinct fare methods: half-price New Taipei
+city-bus segment charging for a one-way mileage trip, and NT$606 per
+vehicle-hour for charter hire with a three-hour minimum and ten-hour daily
+maximum. It gives daily 06:30–22:00 hours, a 30-to-3-day booking window, and
+contacts for Taipei Bus, Capital Bus and Metropolitan Transport. Total fleet,
+operator-by-operator allocation, vehicle register and live availability remain
+TBC.
+
+Production changes:
+
+    content/bus/drt/new-taipei-large-rehabilitation-bus.md
+    docs/research/bus/new-taipei-large-rehabilitation-bus.md
+    content/bus/drt/_index.md
+    public/data/search-index.json
+
+The first build caught the missing page-local `sources:` block. After adding it,
+the claims/citation check was clean. The Markdown unit suite then caught the
+schema rule requiring a leading numeric spec value not to contain a unit; the
+booking window was changed to a numeric `30–3` value with `days before use` as
+the separate unit. This preserved the existing test contract.
+
+The corrected fresh build reported:
+
+    postbuild: 5341 pages checked against the Han subsets — no missing glyphs.
+
+The final New Taipei `npm run gate:fast` completed exit 0:
+
+    citations: 1900 content files, 1841 with a sources: block
+      8871 citations resolved — 8322 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1900 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2294 Han characters in 2+ character runs, all covered).
+    research: 313 file(s), 1210 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session source/content batch with one writer and no concurrent writer.
+
 ### TDX national bus operator-name correction
 
 The refreshed national route snapshot exposed a normalisation bug in the
