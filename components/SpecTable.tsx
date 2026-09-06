@@ -45,7 +45,7 @@ export default function SpecTable({
             <tr key={spec.label} data-state={state}>
               <th scope="row">
                 <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.label}</RichText>
-                {stateLabel && <span className="fact-state" aria-hidden="true">{stateLabel}</span>}
+                {stateLabel && <span className="fact-state">{stateLabel}</span>}
               </th>
               <td className="specs-value">{spec.value ? <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.value}</RichText> : '—'}</td>
               <td className="specs-unit">

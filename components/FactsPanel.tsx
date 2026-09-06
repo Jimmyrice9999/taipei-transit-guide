@@ -92,7 +92,7 @@ export default function FactsPanel({
           <div className="platform-fact" data-state={state} key={fact.label}>
             <dt>
               <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{fact.label}</RichText>
-              {stateLabel && <span className="fact-state" aria-hidden="true">{stateLabel}</span>}
+              {stateLabel && <span className="fact-state">{stateLabel}</span>}
             </dt>
             {/*
               `link` on the value, not the label. A label is a field name —
