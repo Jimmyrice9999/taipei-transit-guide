@@ -28613,6 +28613,69 @@ The final fare `npm run gate:fast` completed exit 0:
 No scout worker was available in this environment; this was a sequential
 main-session source/content batch.
 
+### Taipei accessible transport depth
+
+This batch added a first jurisdiction-level page for an eligibility-limited
+mobility service rather than counting it as an ordinary fixed-route bus. The
+full current Taipei Public Transportation Office pages were fetched and read:
+
+    https://pto.gov.taipei/News_Content.aspx?n=6B4D38874E971F4B&s=552F428E9CF5508D&sms=87415A8B9CE81B16
+    https://pto.gov.taipei/cp.aspx?n=3B812B093D7FF7E8
+
+The booking-rules page was updated 25 August 2026 and reviewed 26 August 2026;
+the service-current page is older and is used only for its still-explicit
+wheelchair-lift and outsourced-operator statements. The page now records the
+point-to-point/door-to-door model, certificate-based service categories, the
+Taipei joint-operation boundary, one-third taxi-fare rule, shared-trip 66%
+discounted mileage, 06:00–23:00 ordinary window, limited ten-vehicle
+23:00–06:00 extension, booking channels, and the separately labelled
+high-priority expansion into selected New Taipei, Keelung and Taoyuan areas.
+Eden Social Welfare Foundation, Yuan San Car Rental and Shi Hao Passenger Car
+Rental are named as outsourced operators. A current fleet census, per-operator
+split, vehicle register and guaranteed availability remain TBC.
+
+Production changes:
+
+    content/bus/drt/taipei-rehabilitation-bus.md
+    docs/research/bus/taipei-rehabilitation-bus.md
+    content/bus/drt/_index.md
+    public/data/search-index.json
+
+The first fast-gate pass exposed one uncited sentence in the new page's service
+window paragraph. It was fixed by attaching the booking-rules source marker;
+the claims ratchet and test suite were not weakened.
+
+The fresh build → `npm run fonts` → fresh build sequence completed. Both builds
+reported:
+
+    postbuild: 5339 pages checked against the Han subsets — no missing glyphs.
+
+The focused static-server Playwright check visited the new English and
+Traditional Chinese page plus the bus, bike and ferry atlas pages at 320, 375,
+390, 414, 428 and 1024px. Every case reported `scrollWidth === clientWidth`
+and `overflow=0`; the new page title resolved in both locales. The in-app
+browser connector was unavailable, so this was a CLI Playwright check rather
+than an in-app screenshot session.
+
+The final Taipei accessible-transport gate completed exit 0 after the citation
+fix:
+
+    citations: 1899 content files, 1840 with a sources: block
+      8869 citations resolved — 8320 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1899 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 311 file(s), 1204 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session source/content batch with one writer and no concurrent writer.
+
 ### Keelung Transfer Station depth
 
 The next bus/node batch fetched and read the full current primary pages for

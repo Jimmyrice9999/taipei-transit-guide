@@ -155,6 +155,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official directory index exposes the Taitung route-directory family and its pagination; it is used to establish that the national inventory is a browsable collection rather than a single static total.
+  - id: taipei-rehab-booking
+    title: How to reserve the small rehabilitation bus and what are the rules?
+    titleOriginal: 小型復康巴士如何預約訂車?管理規定為何?
+    publisher: Taipei City Public Transportation Office (臺北市公共運輸處)
+    url: https://pto.gov.taipei/News_Content.aspx?n=6B4D38874E971F4B&s=552F428E9CF5508D&sms=87415A8B9CE81B16
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full booking-rules page, updated 25 August 2026 and reviewed 26 August 2026, gives the point-to-point service model, eligibility categories, service area, fare formula, booking windows and special expansion area.
+  - id: taipei-rehab-current
+    title: Small rehabilitation bus service current status
+    titleOriginal: 小型復康巴士服務現況
+    publisher: Taipei City Public Transportation Office (臺北市公共運輸處)
+    url: https://pto.gov.taipei/cp.aspx?n=3B812B093D7FF7E8
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full official current-status page states the general wheelchair-lift and outsourced-operator arrangement; its displayed content is older than the booking-rules page and is not used for a current fleet total.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -175,6 +193,7 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 - [Kaohsiung regional buses](/bus/regional/kaohsiung/) — 公車式小黃 and accessibility links.[^kaohsiung-community-source][^kaohsiung-accessible-source]
 
 - [Kaohsiung Rehabilitation Bus](/bus/drt/kaohsiung-rehabilitation-bus/) — eligibility-limited accessible transport, booking windows, service boundary and fare formula.[^kaohsiung-rehab-source]
+- [Taipei Small Rehabilitation Bus](/bus/drt/taipei-rehabilitation-bus/) — point-to-point eligibility, booking, fare and service-area rules, kept separate from ordinary buses.[^taipei-rehab-booking][^taipei-rehab-current]
 - [Taitung rural and island Happiness Bus](/bus/drt/taitung-rural-and-island/) — sourced Lanyu and Guanshan route-directory examples with official modification dates.[^thb-taitung-drt][^thb-taitung-guanshan]
 
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
