@@ -28147,6 +28147,20 @@ The subsequent `npm run gate:fast` completed exit 0:
     ℹ pass 145
     ℹ fail 0
 
+The same route-directory component now also exposes 182 source-city/operator
+pairs derived from the refreshed TDX associations. It uses `${sourceCity}:${operatorId}`
+keys, so a reused numeric ID is not silently treated as one national company;
+the table reports the source-city scope and the number of route records carrying
+that association. Focused 320px checks for both locale bus pages reported
+`groups=22`, `rows=3046`, `operatorRows=182`, and `overflow=0`. The build again
+reported:
+
+    postbuild: 5337 pages checked against the Han subsets — no missing glyphs.
+
+The operator-table fast gate remained exit 0 with the same 1,898 content files,
+8,865 resolved citations, 312 research files, 1,203 checked-and-failed entries,
+and 145 passing unit tests shown above.
+
 ### Hsinchu Bus operator depth
 
 The next depth batch added a deliberately bounded operator overlay for Hsinchu

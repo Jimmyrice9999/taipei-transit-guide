@@ -6,9 +6,11 @@ type RouteRecord = {
   jurisdiction: string
   routeId: string
   routeUid: string
+  sourceCity: string
   name: { en: string; zh: string }
   departure: { en: string; zh: string }
   destination: { en: string; zh: string }
+  operatorIds: string[]
   operatorNames: string[]
   subRouteCount: number | null
   sourceUpdated: string | null
@@ -16,6 +18,34 @@ type RouteRecord = {
 
 const routes = nationalSnapshot.routes as RouteRecord[]
 const regionNames = new Map(REGIONS.map((region) => [region.slug, region.title]))
+
+type OperatorRow = {
+  key: string
+  id: string
+  name: string
+  sourceCity: string
+  routeCount: number
+}
+
+const operatorMap = new Map<string, OperatorRow>()
+for (const route of routes) {
+  route.operatorIds.forEach((id, index) => {
+    const key = `${route.sourceCity}:${id}`
+    const existing = operatorMap.get(key)
+    if (existing) {
+      existing.routeCount += 1
+      return
+    }
+    operatorMap.set(key, {
+      key,
+      id,
+      name: route.operatorNames[index] || 'TDX name TBC',
+      sourceCity: route.sourceCity,
+      routeCount: 1,
+    })
+  })
+}
+const operators = Array.from(operatorMap.values()).sort((a, b) => b.routeCount - a.routeCount || a.name.localeCompare(b.name))
 
 const byJurisdiction = REGIONS.map((region) => ({
   region,
@@ -38,6 +68,34 @@ export default function NationalBusRouteDirectory() {
         <span>Each row is one route record returned by the dated `Bus/Route/City` snapshot. RouteUID, source city, operator labels and source update dates stay visible; a record is not silently promoted to a timeless unique-route or live-departure claim.</span>
         <span>Open a jurisdiction to browse its records. Stop sequences, fares and live vehicle positions remain separate datasets and are not implied by this route-only directory.</span>
       </p>
+      <details className="national-bus-operator-signals">
+        <summary>
+          <span>Operator signals</span>
+          <span>{operators.length.toLocaleString()} source-city/operator pairs</span>
+        </summary>
+        <p className="section-note">These rows are associations in the dated TDX route snapshot, namespaced by source city and operator ID. They are discovery signals, not a replacement for a researched canonical operator page or proof that an ID is globally unique.</p>
+        <div className="table-scroll">
+          <table>
+            <caption>Operator associations in the national TDX route snapshot</caption>
+            <thead>
+              <tr>
+                <th scope="col">Operator</th>
+                <th scope="col">Source city</th>
+                <th scope="col">Route records</th>
+              </tr>
+            </thead>
+            <tbody>
+              {operators.map((operator) => (
+                <tr key={operator.key}>
+                  <th scope="row">{operator.name}</th>
+                  <td>{operator.sourceCity} · ID {operator.id}</td>
+                  <td>{operator.routeCount.toLocaleString()}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </details>
       <div className="national-bus-route-directory-groups">
         {byJurisdiction.map(({ region, routes: jurisdictionRoutes }) => (
           <details key={region.slug} className="national-bus-route-group">

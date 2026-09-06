@@ -1979,6 +1979,38 @@ main {
   gap: 0.65rem;
 }
 
+.national-bus-operator-signals {
+  margin-block: 1rem 1.5rem;
+  border-block: 1px solid var(--border);
+}
+
+.national-bus-operator-signals > summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0.15rem;
+  color: var(--text-strong);
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.national-bus-operator-signals > summary span:last-child {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.national-bus-operator-signals[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+
+.national-bus-operator-signals table {
+  min-width: 42rem;
+}
+
 .national-bus-route-group {
   border-block: 1px solid var(--border);
 }
