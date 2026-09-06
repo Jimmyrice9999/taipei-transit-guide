@@ -231,8 +231,8 @@ export const REGIONS: Region[] = [
   region({
     slug: 'hualien', title: 'Hualien County', titleOriginal: '花蓮縣',
     summary: 'An east-coast gateway for TRA, buses, coaches, Hualien Airport and future DRT and maritime research.',
-    links: [{ title: 'Taiwan Railway', href: '/rail/tra/', note: 'National TRA system and station reference.' }, { title: 'Intercity coach discovery', href: '/bus/intercity/', note: 'Dated national snapshot of highway-coach variants.' }, { title: 'Domestic airports', href: '/air/airports/outlying-islands/', note: 'National airport index; Hualien-specific depth remains an expansion seam.' }],
-    modes: { rail: nationalRail, bus: nationalBus, coach: nationalCoach, air: c('tbc', 'Hualien airport connectivity is an identified expansion seam; a dedicated page is not yet written.', '/air/airports/outlying-islands/'), nodes: nodeGap },
+    links: [{ title: 'Taiwan Railway', href: '/rail/tra/', note: 'National TRA system and station reference.' }, { title: 'Intercity coach discovery', href: '/bus/intercity/', note: 'Dated national snapshot of highway-coach variants.' }, { title: 'Hualien Airport', href: '/air/airports/hualien/', note: 'Dated domestic flight families and airport ground-access evidence.' }],
+    modes: { rail: nationalRail, bus: nationalBus, coach: nationalCoach, air: c('covered', 'Hualien Airport has a dedicated dated route and ground-access page; direct airport–TRA interchange remains unconfirmed.', '/air/airports/hualien/'), nodes: c('structured', 'The airport page records bus and railway-information surfaces without asserting a direct station join.', '/air/airports/hualien/') },
   }),
   region({
     slug: 'taitung', title: 'Taitung County', titleOriginal: '臺東縣',

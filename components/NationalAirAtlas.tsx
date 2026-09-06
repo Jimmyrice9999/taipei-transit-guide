@@ -3,6 +3,7 @@ import Link from '@/components/LocaleLink'
 const AIR_SURFACES = [
   { title: 'Main-island hubs', original: '臺灣本島主要機場', href: '/air/airports/main-island-hubs/', note: 'Airport nodes and ground-transport context' },
   { title: 'Kaohsiung', original: '高雄國際機場', href: '/air/airports/kaohsiung/', note: 'Airport, rail, metro and bus context' },
+  { title: 'Hualien', original: '花蓮航空站', href: '/air/airports/hualien/', note: 'Dated east-coast flight families and ground-access evidence' },
   { title: 'Outlying-island airports', original: '離島機場', href: '/air/airports/outlying-islands/', note: 'Penghu, Kinmen, Matsu, Lanyu and Green Island' },
   { title: 'Domestic carriers', original: '國內航線航空公司', href: '/air/operators/domestic-carriers/', note: 'UNI Air, Mandarin Airlines and dated route context' },
 ]
@@ -16,7 +17,7 @@ export default function NationalAirAtlas() {
       </div>
       <div className="coverage-ledger-heading">
         <h2 className="section-heading" id="national-air-coverage">Airport and route-family surfaces</h2>
-        <span className="coverage-ledger-total">4 canonical surfaces</span>
+        <span className="coverage-ledger-total">5 canonical surfaces</span>
       </div>
       <ul className="coverage-ledger-list mode-atlas-list">
         {AIR_SURFACES.map((surface) => (
