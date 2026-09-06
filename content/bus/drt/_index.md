@@ -17,7 +17,14 @@ facts:
     value: "49"
     source: tainan-yellow-notice-source
   - label: National Happiness Bus / DRT total
-    value: TBC
+    value: "507 services (February 2026 snapshot)"
+    source: motc-happiness-2026
+  - label: Jurisdictions / townships in the February 2026 programme snapshot
+    value: "193"
+    source: motc-happiness-2026
+  - label: Rural public-transport coverage in that snapshot
+    value: "95.10%"
+    source: motc-happiness-2026
 specs:
   - label: Tainan route-count conflict
     value: "52 in the Q&A table; 49 in the 5 August 2026 expansion notice"
@@ -34,6 +41,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full portal category list used by the existing Hsinchu snapshot, including three medical-shuttle entries among the route categories.
+  - id: thb-happiness-inventory
+    title: Happiness Bus and Happiness Taxi operating information
+    titleOriginal: 幸福巴士及幸福小黃營運資訊
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.thb.gov.tw/News.aspx?_CSN=4106&n=10738&sms=13903
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full official inventory exposes all 22 jurisdiction filters and the service type, area, route name, stop pattern and route-modification date fields. The fetched page was updated 115-08-19; its default response is not treated as a national total.
+  - id: motc-happiness-2026
+    title: MOTC 115 annual unit settlement — public-transport implementation report
+    titleOriginal: 交通部115年度單位決算
+    publisher: Ministry of Transportation and Communications (交通部)
+    url: https://www.motc.gov.tw/ch/app/data/doc?aplistdn=&detailNo=1488795645681602560&id=811&module=policy&preview=&serno=ac2163a7-13ef-4a20-92a9-2de9f4129bcd&type=s
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: Page 77 reports a February 2026 snapshot of 507 Happiness Bus/Happiness Taxi routes across 193 townships/districts, including 247 routes in 64 rural areas, and 95.10% rural public-transport coverage. It is a dated programme measurement, not a September live total.
   - id: taichung-yellow-source
     title: Taichung 小黃公車
     titleOriginal: 臺中市小黃公車
@@ -85,9 +110,11 @@ Community transport is not one national mode. This page keeps ordinary fixed-rou
 
 The existing primary-source layer establishes three Hsinchu medical-shuttle entries, 26 Taichung 小黃公車 routes and a Kaohsiung 公車式小黃 plan that uses taxi vehicles where conventional bus operation is less practical.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source] These are service categories, not a claim that every row is demand-responsive or open to every passenger.
 
-Tainan remains an explicit conflict. Its full Q&A table names 52 routes across 32 districts, while the 5 August 2026 expansion notice reports 49 routes across 31 districts after named additions.[^tainan-yellow-source][^tainan-yellow-notice-source] The guide preserves both values and does not publish a national total until a comparable Highway Bureau or local-government inventory has been fetched.
+Tainan remains an explicit conflict. Its full Q&A table names 52 routes across 32 districts, while the 5 August 2026 expansion notice reports 49 routes across 31 districts after named additions.[^tainan-yellow-source][^tainan-yellow-notice-source] The guide preserves both values. The Highway Bureau inventory is now fetched, but its default response is a filtered row rather than a complete national export, so the dated MOTC measurement is kept separate from any future live total.[^thb-happiness-inventory][^motc-happiness-2026]
 
 For access-limited transport, eligibility, booking channel, service area and fare must be read from the commissioning authority's programme page. A rehabilitation bus or accessible taxi programme is therefore not folded into the open-to-all bus count; the nationwide crosswalk remains TBC.[^kaohsiung-accessible-source]
+
+The Highway Bureau's inventory page is the national discovery surface: it names all 22 jurisdiction filters and exposes service type, area, route name, stop pattern and route-modification date.[^thb-happiness-inventory] The February 2026 MOTC report is the dated national measurement currently safe to quote: 507 services across 193 townships/districts, including 247 routes in 64 rural areas, and 95.10% rural public-transport coverage.[^motc-happiness-2026]
 
 ## Regional evidence
 
@@ -96,4 +123,4 @@ For access-limited transport, eligibility, booking channel, service area and far
 - [Tainan regional buses](/bus/regional/tainan/) — TDX city buses and the 52/49 route-count conflict.[^tainan-yellow-source][^tainan-yellow-notice-source]
 - [Kaohsiung regional buses](/bus/regional/kaohsiung/) — 公車式小黃 and accessibility links.[^kaohsiung-community-source][^kaohsiung-accessible-source]
 
-The remaining jurisdictions need directly fetched Highway Bureau and local-government inventories before their service presence, eligibility rules or operator counts can be stated.
+The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
