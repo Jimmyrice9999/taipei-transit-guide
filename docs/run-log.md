@@ -28438,6 +28438,49 @@ The final Matsu `npm run gate:fast` completed exit 0:
 No scout worker was available in this environment. This was one main-session
 reader/writer batch; no concurrent writer was used.
 
+### Fare and payment boundary matrix
+
+The ticketing depth wave extended the already-sourceable TPASS layer instead of
+inventing a nationwide card-acceptance rule. It added a dated comparison table
+to `content/ticketing/guides/tpass-integration.md` covering:
+
+    TPASS 1.0 regional rows and the Penghu bus / bus-and-ship examples
+    TPASS 2.0 ordinary-road and 2.0+ highway-coach policy boundaries
+    Taipei joint-operation bus electronic-ticket acceptance
+    the Taipei MRT–bus transfer exclusion list
+    Kaohsiung Rehabilitation Bus eligibility/fare separation
+    the official Matsu ferry fare-portal boundary
+
+The added primary-source entries were the Taipei Public Transport Office
+electronic-ticket FAQ, the TRTC transfer FAQ, Kaohsiung's 30 June 2026
+Rehabilitation Bus page and the Lienchiang County Matsu sea-transport fare
+portal. The table explicitly says that one municipal acceptance list is not
+evidence for every county, and that a vessel/route fare portal is not a national
+ferry payment matrix.
+
+The required fresh build → `npm run fonts` → fresh build sequence completed;
+both builds reported:
+
+    postbuild: 5333 pages checked against the Han subsets — no missing glyphs.
+
+The final fare `npm run gate:fast` completed exit 0:
+
+    citations: 1896 content files, 1837 with a sources: block
+      8860 citations resolved — 8311 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1896 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 309 file(s), 1198 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment; this was a sequential
+main-session source/content batch.
+
 ### Domestic aviation atlas hardening
 
 The existing `NationalAirAtlas` array contained seven surfaces but rendered the

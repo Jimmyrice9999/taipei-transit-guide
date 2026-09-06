@@ -103,6 +103,42 @@ sources:
     kind: primary
     lang: zh-Hant
     note: Supports iPASS MONEY app version 1.11.0 purchase/refund for MeN Go and South Kaohsiung–Pingtung TPASS, the named card-design limitation and the requirement to bind the card in MeNGo. Modified 2026-09-01.
+  - id: pto-bus-cards-current
+    title: Approved electronic tickets for Taipei joint-operation buses
+    titleOriginal: 臺北市聯營公車所核備之電子票證及其優惠各為何
+    publisher: Taipei Public Transport Office (臺北市公共運輸處)
+    url: https://pto.gov.taipei/News_Content.aspx?n=6B4D38874E971F4B&s=368ADCCC65AB0818
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full official FAQ names EasyCard, iPASS and icash as approved electronic tickets for Taipei joint-operation buses and gives the Taipei MRT–bus discount amounts; it is not used as a Taiwan-wide acceptance statement.
+  - id: trtc-transfer-boundaries
+    title: MRT and bus two-way transfer discount FAQ
+    titleOriginal: 何謂捷運與公車間雙向轉乘優惠
+    publisher: Taipei Rapid Transit Corporation (臺北大眾捷運股份有限公司)
+    url: https://www.metro.taipei/News_Content.aspx?n=566DA580861CEE77&sms=87415A8B9CE81B16&s=1CDFC00134A98701
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full operator FAQ gives the 60-minute Taipei MRT–bus transfer window and names exclusions including YouBike, light rail, TRA, intercity coaches, THSR, Maokong Gondola and taxis.
+  - id: kaohsiung-rehab-fare-boundary
+    title: Rehabilitation Bus passenger service
+    titleOriginal: 復康巴士交通接送服務
+    publisher: Kaohsiung City Government Transportation Bureau (高雄市政府交通局)
+    url: https://www.tbkc.gov.tw/Service/PublicTransport/Accessibility?id=bd4fffc4-21ce-4ec5-8b1d-58f390dfe25e
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full 30 June 2026 municipal programme page provides the eligibility categories, booking rules and distance-based fare formula for Kaohsiung Rehabilitation Bus; it is not treated as an open-to-all bus fare.
+  - id: matsu-fare-portal-boundary
+    title: Matsu sea-transport booking system — fares
+    titleOriginal: 馬祖海上交通訂位購票系統 — 票價
+    publisher: Lienchiang County Government Department of Transportation and Tourism (連江縣政府交通旅遊局)
+    url: https://www.matsuebs.com/BoatNotice?contentType=notice01
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The full official fare portal is the date-sensitive source for Matsu island, Small Three Links, Daqiu and Keelung–Matsu fare categories; this matrix does not copy an undated fare into a universal ferry rule.
 ---
 
 TPASS has two layers that are easy to confuse. **TPASS 1.0** is a prepaid
@@ -174,6 +210,25 @@ iPASS's current app instructions, modified 1 September 2026, support purchasing
 and refunding MeN Go / South Kaohsiung–Pingtung monthly passes in iPASS MONEY
 1.11.0.[^ipass-app-tpass] The instruction is explicitly limited to named regional card designs
 and requires MeNGo membership and card binding.[^ipass-app-tpass]
+
+## Mode boundaries in the current evidence
+
+The useful national comparison is a boundary table, not a claim that one card
+or transfer discount works identically everywhere.
+
+| Evidence lane | What the fetched primary source establishes | What remains separate or TBC |
+|---|---|---|
+| TPASS 1.0 | The 25 August 2026 government summary lists ten regional/local rows, including Penghu's NT$150 bus and NT$400 bus-and-ship options.[^egov-tpass-2026] | The complete current fare, refund and accepted-media matrix for every row. |
+| TPASS 2.0 / 2.0+ | The current policy material distinguishes ordinary 11-ride road-transport rebates from the 91-route medium/long-distance coach extension and its 15%/30% thresholds.[^egov-tpass-2026][^thb-tpass-plus] | A timeless percentage table for every mode and every current route variant. |
+| Taipei joint-operation buses | Taipei's transport office names EasyCard, iPASS and icash as approved electronic tickets for that municipal network.[^pto-bus-cards-current] | Acceptance on every county/city bus, coach, ferry, DRT or bike system in Taiwan. |
+| Taipei MRT–bus transfer | TRTC publishes a 60-minute window and explicitly excludes YouBike, light rail, TRA, intercity coaches, THSR, Maokong Gondola and taxis from that discount.[^trtc-transfer-boundaries] | A national cross-mode transfer rule; the Taipei FAQ is not generalized beyond its stated network. |
+| Eligibility-limited mobility | Kaohsiung's Rehabilitation Bus uses eligibility categories, advance booking and a distance-based formula tied to the daytime taxi rate.[^kaohsiung-rehab-fare-boundary] | Treating the programme as an ordinary open-to-all bus fare or as a universal Taiwan rule. |
+| Matsu ferry | The county's official fare portal is the date-sensitive source for Matsu island, Small Three Links and other named ferry fare categories.[^matsu-fare-portal-boundary] | A current nationwide ferry card-acceptance or fare matrix; each route/operator remains its own evidence lane. |
+
+The table is deliberately conservative. A payment medium appearing in one
+operator FAQ is not evidence of deployment at another operator, and a TPASS
+row naming a bus-and-ship package does not make all ferry services part of one
+integrated fare system.[^egov-tpass-2026][^pto-bus-cards-current]
 
 ## What is still TBC
 
