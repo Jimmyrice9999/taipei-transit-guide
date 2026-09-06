@@ -261,6 +261,18 @@ const REGION_REGISTRY: Region[] = [
 ]
 
 export const REGIONS: Region[] = REGION_REGISTRY.map((region) => {
+  if (region.slug === 'changhua' || region.slug === 'yunlin') {
+    return {
+      ...region,
+      links: [
+        { title: 'MOOVO public bikes', href: '/bike/systems/moovo/', note: 'Official operator-map snapshot; visible station rows are dated and are not a live availability feed.' },
+        ...region.links,
+      ],
+      modes: region.modes.map((entry) => entry.key === 'bike'
+        ? { ...entry, status: 'covered' as const, note: 'MOOVO operator-map station rows are committed for Changhua and Yunlin; live capacity and coordinates remain outside this static snapshot.', href: '/bike/systems/moovo/' }
+        : entry),
+    }
+  }
   if (region.slug === 'taitung') {
     return {
       ...region,

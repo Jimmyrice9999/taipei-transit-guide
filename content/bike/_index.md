@@ -26,9 +26,18 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The Ministry's TDX portal is the source platform for the committed Station/City snapshot; the repository records the exact endpoint, retrieval time and separate availability-feed boundary in data/tdx/bike/meta.json.
+  - id: moovo-operator
+    title: MOOVO official operator homepage
+    titleOriginal: MOOVO 智慧租借服務
+    publisher: Ride Point Technology Co., Ltd. (運點科技股份有限公司)
+    url: https://www.ridemoovo.com/
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The operator's current homepage identifies MOOVO smart bicycles and electric-assist bicycles and the official service channels.
 ---
 
-The national bike atlas now keeps the operator's service-area list separate from this checkout's five-jurisdiction static TDX station snapshot.[^youbike-service-areas][^tdx-bike-stations] A dock remains a row in a jurisdiction or district browse index, not a standalone page; the atlas marks operator-listed areas, current-data TBC and not-yet-researched jurisdictions instead of converting scope into invented station totals.[^youbike-service-areas][^tdx-bike-stations]
+The national bike atlas now keeps the operator's service-area list separate from this checkout's five-jurisdiction static TDX station snapshot.[^youbike-service-areas][^tdx-bike-stations] The Changhua and Yunlin rows also expose a dated MOOVO operator-map snapshot; its visible station groups are documented on the [MOOVO system page](/bike/systems/moovo/), rather than being presented as a live capacity feed.[^moovo-operator] A dock remains a row in a jurisdiction or district browse index, not a standalone page; the atlas marks operator-listed areas, current-data TBC and not-yet-researched jurisdictions instead of converting scope into invented station totals.[^youbike-service-areas][^tdx-bike-stations]
 
 YouBike belongs on a transit site: it shares the stored-value cards, the
 transfer economics and — in its dock placement — the metro's own station

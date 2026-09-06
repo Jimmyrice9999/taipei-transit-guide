@@ -1,6 +1,7 @@
 import Link from '@/components/LocaleLink'
 import bikeMeta from '../data/tdx/bike/meta.json' with { type: 'json' }
 import bikeStations from '../data/tdx/bike/stations.json' with { type: 'json' }
+import moovo from '../data/bike/moovo.json' with { type: 'json' }
 import { REGIONS } from '@/lib/regions'
 
 type BikeState = 'snapshot' | 'operator-listed' | 'tbc' | 'not-researched'
@@ -58,6 +59,17 @@ function getBikeRow(slug: string): BikeRow {
     }
   }
   if (slug === 'changhua' || slug === 'yunlin') {
+    const system = moovo.systems.find((entry) => entry.slug === slug)
+    if (system) {
+      return {
+        state: 'snapshot',
+        countLabel: `${system.stationRows.toLocaleString()} visible MOOVO station rows`,
+        note: 'Official MOOVO operator-map snapshot; this is a station-row count, not live bicycles, return spaces or published capacity.',
+        href: '/bike/systems/moovo/',
+        sourceUrl: system.mapUrl,
+        sourceLabel: 'MOOVO operator map',
+      }
+    }
     return {
       state: 'tbc',
       countLabel: 'MOOVO current snapshot TBC',
@@ -93,7 +105,7 @@ export default function NationalBikeAtlas() {
     <section className="coverage-ledger national-bike-ledger" aria-labelledby="national-bike-coverage">
       <div className="atlas-note">
         <strong>National public-bike atlas</strong>
-        <span>All 22 jurisdictions are listed below. The committed TDX pull contains {snapshotRows.toLocaleString()} station rows and {snapshotCapacity.toLocaleString()} published dock spaces, retrieved {bikeMeta.fetchedAt.slice(0, 10)}, across five jurisdictions.</span>
+        <span>All 22 jurisdictions are listed below. The committed TDX pull contains {snapshotRows.toLocaleString()} station rows and {snapshotCapacity.toLocaleString()} published dock spaces, retrieved {bikeMeta.fetchedAt.slice(0, 10)}, across five jurisdictions; the separate MOOVO operator-map snapshot adds 202 Changhua and 263 Yunlin visible station rows, retrieved {moovo.retrievedAt}.</span>
         <span>Live available-bike and return-dock values are intentionally excluded. “Operator-listed” means the official YouBike service-area page names the area; it does not turn an unpulled feed into a station count.</span>
       </div>
       <div className="coverage-ledger-heading">

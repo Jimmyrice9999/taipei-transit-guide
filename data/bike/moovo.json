@@ -1,0 +1,55 @@
+{
+  "retrievedAt": "2026-09-06",
+  "operator": "Ride Point Technology Co., Ltd. (運點科技股份有限公司)",
+  "system": "MOOVO",
+  "sourceType": "official operator map visible station-group snapshot",
+  "systems": [
+    {
+      "slug": "changhua",
+      "title": "Changhua County",
+      "titleOriginal": "彰化縣",
+      "stationRows": 202,
+      "areas": [
+        { "name": "彰化", "stationRows": 47 },
+        { "name": "員林", "stationRows": 35 },
+        { "name": "二林", "stationRows": 9 },
+        { "name": "永靖", "stationRows": 8 },
+        { "name": "埔心", "stationRows": 11 },
+        { "name": "田尾", "stationRows": 3 },
+        { "name": "鹿港", "stationRows": 16 },
+        { "name": "和美", "stationRows": 10 },
+        { "name": "溪湖", "stationRows": 11 },
+        { "name": "溪州", "stationRows": 1 },
+        { "name": "田中", "stationRows": 13 },
+        { "name": "花壇", "stationRows": 7 },
+        { "name": "社頭", "stationRows": 9 },
+        { "name": "大村", "stationRows": 8 },
+        { "name": "二水", "stationRows": 6 },
+        { "name": "北斗", "stationRows": 8 }
+      ],
+      "mapUrl": "https://www.ridemoovo.com/city_map_Changhua"
+    },
+    {
+      "slug": "yunlin",
+      "title": "Yunlin County",
+      "titleOriginal": "雲林縣",
+      "stationRows": 263,
+      "areas": [
+        { "name": "斗六", "stationRows": 97 },
+        { "name": "虎尾", "stationRows": 64 },
+        { "name": "西螺", "stationRows": 16 },
+        { "name": "斗南", "stationRows": 29 },
+        { "name": "北港", "stationRows": 26 },
+        { "name": "土庫", "stationRows": 10 },
+        { "name": "口湖", "stationRows": 11 },
+        { "name": "水林", "stationRows": 10 }
+      ],
+      "mapUrl": "https://www.ridemoovo.com/city_map_Yunlin"
+    }
+  ],
+  "limitations": [
+    "The committed values count visible station rows grouped on the official operator maps, not live available bicycles, return spaces or guaranteed operating capacity.",
+    "Coordinates and a stable public machine-readable station endpoint were not committed from the fetched map pages.",
+    "The operator map is a current snapshot accessed on 2026-09-06; it is not a timeless system total."
+  ]
+}

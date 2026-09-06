@@ -27981,6 +27981,57 @@ Fresh baseline adversarial output:
 
     16/16 cases behaved as specified
 
+### MOOVO public-bike batch
+
+The full official MOOVO operator homepage, Changhua map, Yunlin map and
+operations feed were fetched on 2026-09-06, together with Changhua County's
+28 August notice and Yunlin County's 6 August planning notice. The operator
+map pages expose visible station groups in rendered HTML and declare a broader
+API host, but this pass did not establish a documented station JSON endpoint
+that could safely become a reproducible static pull. Coordinates, capacity
+and live availability therefore remain TBC.
+
+The new `data/bike/moovo.json` records the operator-map snapshot: 202 visible
+Changhua station rows across 16 displayed area groups and 263 visible Yunlin
+station rows across eight displayed area groups, retrieved 2026-09-06. The
+figures are station rows in an official presentation map, not active docks or
+available bikes. The editorial page is `content/bike/systems/moovo.md`, with
+the research record in `docs/research/bike/moovo.md`; no per-dock pages were
+created. Changhua and Yunlin now link to that canonical system page from the
+region atlas and the bike atlas treats both as dated snapshots.
+
+The source conflict is retained: Yunlin County's 2026-08-06 page says Douliu
+had 94 stations, while the later operator map shows 97 visible Douliu rows.
+The values have different dates/scope and were not averaged. Changhua's
+2026-08-28 county notice independently states 202 stations across 17
+townships/cities. The operator feed records further July/August additions.
+
+The first MOOVO build completed with 5,323 Han-checked pages and no missing
+glyphs. Because Han content changed, `npm run fonts` was run from fresh `out/`
+and a fresh build followed it; the second build again reported:
+
+    postbuild: 5323 pages checked against the Han subsets — no missing glyphs.
+
+The first fast-gate attempt correctly stopped on the research-check format
+requirement and then on one uncited atlas sentence. Both were fixed without
+changing the claims baseline. The final MOOVO fast gate completed exit 0:
+
+    citations: 1891 content files, 1832 with a sources: block
+      8833 citations resolved — 8284 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1891 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 304 file(s), 1186 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+No scout worker was available in this environment, so this batch used one
+main-session reader/writer and did not run concurrent writers.
+
 ### Blocker reproduction and cause
 
 The exact 320px Playwright reproduction waited for `document.fonts.ready` and

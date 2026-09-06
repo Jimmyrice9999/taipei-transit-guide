@@ -21,6 +21,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Build-time pull of the static Station/City feed for Taipei, New Taipei, Taoyuan, Taichung and Kaohsiung. Supports the 25 August 2026 row and BikesCapacity totals, source-update timestamps and the fact that live availability is a separate feed."
+  - id: "bike-systems-moovo-yunlin-douliu-2026-08-06"
+    title: "MOOVO public-bike expansion in Yunlin"
+    titleOriginal: "雲林縣公共自行車持續擴大服務範圍"
+    publisher: "Yunlin County Government Planning Office (雲林縣政府計畫處)"
+    url: "https://planning.yunlin.gov.tw/News_Content.aspx?n=1113&s=602026"
+    accessed: "2026-09-06"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The 6 August 2026 local-government page records an earlier 94-station Douliu snapshot; it is retained as a dated conflict rather than silently replaced by the later operator-map count."
   - id: "bus-models-imported-diesel-chassis-isuzu-about"
     title: "About Isuzu Taiwan"
     titleOriginal: "關於五十鈴"
@@ -3014,6 +3023,20 @@ averaged or selected as a definitive total[^bike-history-youbike-tdx-bike-statio
 
 - [TDX Bike Station City pull](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-23.[^bike-history-youbike-tdx-bike-stations]
 - [TDX Bike Station City pull — five-city snapshot](https://tdx.transportdata.tw/api/basic/v2/Bike/Station/City/{City}) — primary; Ministry of Transportation and Communications TDX / 交通部運輸資料流通服務平臺; accessed 2026-08-25.[^bike-history-youbike-tdx-bike-stations-current]
+
+## MOOVO public-bike system — Scope and limitations
+
+Discussed on [MOOVO public-bike system](/bike/systems/moovo/) in the source page's “Scope and limitations” section.[^bike-systems-moovo-yunlin-douliu-2026-08-06]
+
+### Scope and limitations
+
+- The counts above are visible station rows in two official operator maps accessed on 6 September 2026, not a live API count.
+- The county and operator sources disagree in scope and date for Yunlin's Douliu count; both values remain visible in the source record.
+- Other jurisdictions are not inferred to have no non-YouBike system merely because this page does not list them.[^bike-systems-moovo-yunlin-douliu-2026-08-06]
+
+#### Sources for this entry
+
+- [MOOVO public-bike expansion in Yunlin](https://planning.yunlin.gov.tw/News_Content.aspx?n=1113&s=602026) — primary; Yunlin County Government Planning Office (雲林縣政府計畫處); accessed 2026-09-06.[^bike-systems-moovo-yunlin-douliu-2026-08-06]
 
 ## Imported diesel bus and coach chassis — Isuzu
 
