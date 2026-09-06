@@ -2,6 +2,7 @@ import CiteMark from './CiteMark'
 import RichText from './RichText'
 import type { Spec } from '@/lib/content'
 import type { NumberedSource } from '@/lib/sources'
+import { getObservationState, observationLabel } from '@/lib/observation-state'
 
 /**
  * Technical specifications, set as engineering data rather than prose furniture.
@@ -37,10 +38,14 @@ export default function SpecTable({
       </h2>
       <table>
         <tbody>
-          {specs.map((spec) => (
-            <tr key={spec.label}>
+          {specs.map((spec) => {
+            const state = getObservationState(spec.label, spec.value)
+            const stateLabel = observationLabel(state)
+            return (
+            <tr key={spec.label} data-state={state}>
               <th scope="row">
                 <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.label}</RichText>
+                {stateLabel && <span className="fact-state" aria-hidden="true">{stateLabel}</span>}
               </th>
               <td className="specs-value">{spec.value ? <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{spec.value}</RichText> : '—'}</td>
               <td className="specs-unit">
@@ -48,7 +53,8 @@ export default function SpecTable({
                 <CiteMark id={spec.source} references={references} />
               </td>
             </tr>
-          ))}
+            )
+          })}
         </tbody>
       </table>
     </section>

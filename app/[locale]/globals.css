@@ -1480,6 +1480,142 @@ main {
   max-width: var(--measure);
 }
 
+/* Homepage gateway: a compact atlas legend before the longer editorial and
+   section lists. It makes the national shape legible without duplicating the
+   region or mode indexes below. */
+.home-atlas {
+  max-width: 1040px;
+  margin: 8px 0 34px;
+  border-block: 1px solid var(--rule-strong);
+  background: var(--surface-muted);
+}
+
+.home-atlas-lead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 18px 18px 14px;
+}
+
+.home-atlas-lead h2 {
+  margin: 2px 0 5px;
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.home-atlas-lead p {
+  max-width: 64ch;
+  margin: 0;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.home-atlas-count {
+  display: grid;
+  flex: none;
+  min-width: 112px;
+  padding: 8px 12px 9px;
+  border-inline-start: 3px solid var(--amber);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.home-atlas-count:hover,
+.home-atlas-count:focus-visible {
+  background: var(--bg);
+  text-decoration: underline;
+}
+
+.home-atlas-count strong {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1;
+}
+
+.home-atlas-count span {
+  color: var(--text-2);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.home-atlas-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  background: var(--rule);
+  list-style: none;
+}
+
+.home-atlas-links li {
+  min-width: 0;
+  background: var(--bg);
+}
+
+.home-atlas-links a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  height: 100%;
+  padding: 10px 13px;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.home-atlas-links a span {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.home-atlas-links a:hover,
+.home-atlas-links a:focus-visible {
+  background: var(--bg-well);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .home-atlas-lead {
+    gap: 16px;
+    padding-inline: 14px;
+  }
+
+  .home-atlas-lead h2 {
+    font-size: 24px;
+  }
+
+  .home-atlas-count {
+    min-width: 86px;
+    padding-inline: 9px;
+  }
+
+  .home-atlas-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .home-atlas-lead {
+    display: block;
+  }
+
+  .home-atlas-count {
+    display: inline-grid;
+    margin-top: 13px;
+  }
+}
+
 /* Editorial atlas registry: a quiet source note, then a dense but readable
    status ledger. Status text is never encoded by colour alone. */
 .atlas-note {
@@ -2152,6 +2288,53 @@ main {
   text-transform: uppercase;
   color: var(--text-3);
   margin-bottom: 3px;
+}
+
+/* The panel is a reference instrument, so uncertainty is part of its visual
+   grammar. These are labels and edge rules, not colour-only signals. */
+.fact-state {
+  display: inline-block;
+  margin-inline-start: 0.55rem;
+  padding: 1px 4px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  vertical-align: 1px;
+}
+
+.platform-fact[data-state="dated"],
+.specs tr[data-state="dated"] {
+  border-inline-start: 3px solid var(--status-data);
+}
+
+.platform-fact[data-state="dated"] .fact-state,
+.specs tr[data-state="dated"] .fact-state {
+  color: var(--status-data);
+}
+
+.platform-fact[data-state="tbc"],
+.specs tr[data-state="tbc"] {
+  border-inline-start: 3px solid var(--status-tbc);
+}
+
+.platform-fact[data-state="tbc"] .fact-state,
+.specs tr[data-state="tbc"] .fact-state {
+  color: var(--status-tbc);
+}
+
+.platform-fact[data-state="conflict"],
+.specs tr[data-state="conflict"] {
+  border-inline-start: 3px solid var(--amber);
+}
+
+.platform-fact[data-state="conflict"] .fact-state,
+.specs tr[data-state="conflict"] .fact-state {
+  color: var(--status-tbc);
 }
 
 .platform-fact dd {

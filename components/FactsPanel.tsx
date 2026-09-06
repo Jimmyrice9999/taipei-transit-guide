@@ -5,6 +5,7 @@ import RichText from './RichText'
 import { getLinePageHref, type Fact } from '@/lib/content'
 import type { Line } from '@/lib/lines'
 import type { NumberedSource } from '@/lib/sources'
+import { getObservationState, observationLabel } from '@/lib/observation-state'
 
 /**
  * Identity facts, set as a platform information panel.
@@ -84,10 +85,14 @@ export default function FactsPanel({
       </header>
 
       <dl className="platform-facts">
-        {facts.map((fact) => (
-          <div className="platform-fact" key={fact.label}>
+        {facts.map((fact) => {
+          const state = getObservationState(fact.label, fact.value)
+          const stateLabel = observationLabel(state)
+          return (
+          <div className="platform-fact" data-state={state} key={fact.label}>
             <dt>
               <RichText operator={operator} ignoreCodes={ignoreCodes} stationCodes={stationCodes}>{fact.label}</RichText>
+              {stateLabel && <span className="fact-state" aria-hidden="true">{stateLabel}</span>}
             </dt>
             {/*
               `link` on the value, not the label. A label is a field name —
@@ -106,7 +111,8 @@ export default function FactsPanel({
               <CiteMark id={fact.source} references={references} />
             </dd>
           </div>
-        ))}
+          )
+        })}
       </dl>
     </section>
   )

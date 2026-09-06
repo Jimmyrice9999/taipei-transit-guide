@@ -6,6 +6,7 @@ import { NEUTRAL_LINE } from '@/lib/lines'
 import { getPages, getSections, getSystems, getTypes } from '@/lib/content'
 import { getBuiltBusRoutePageCount } from '@/lib/bus/route-groups'
 import { getImage, src as imageSrc, srcCapped, srcsetCapped } from '@/lib/images'
+import { REGIONS } from '@/lib/regions'
 import { isLocale, withLocaleMetadata } from '@/lib/locale'
 import { locale as rootLocale } from 'next/root-params'
 
@@ -47,6 +48,34 @@ export default function HomePage() {
         systems, high speed rail, national and regional bus networks, ferries and
         bike-share.
       </p>
+
+      <section className="home-atlas" aria-labelledby="home-atlas-heading">
+        <div className="home-atlas-lead">
+          <div>
+            <div className="section-kicker">Editorial wayfinding atlas</div>
+            <h2 id="home-atlas-heading">Start with the network</h2>
+            <p>
+              Browse the guide by mode or by jurisdiction. The national register keeps
+              covered systems, structured snapshots, TBCs and research gaps visible in
+              the same map.
+            </p>
+          </div>
+          <Link className="home-atlas-count" href="/regions/">
+            <strong>{REGIONS.length}</strong>
+            <span>jurisdictions</span>
+          </Link>
+        </div>
+        <nav aria-label="National transport atlases">
+          <ul className="home-atlas-links">
+            <li><Link href="/rail/network/">Rail and metro <span aria-hidden="true">→</span></Link></li>
+            <li><Link href="/bus/">Buses and coaches <span aria-hidden="true">→</span></Link></li>
+            <li><Link href="/ferry/">Ferries <span aria-hidden="true">→</span></Link></li>
+            <li><Link href="/air/">Domestic air <span aria-hidden="true">→</span></Link></li>
+            <li><Link href="/bike/">Public bikes <span aria-hidden="true">→</span></Link></li>
+            <li><Link href="/ticketing/">Fares and payment <span aria-hidden="true">→</span></Link></li>
+          </ul>
+        </nav>
+      </section>
 
       {featured && (
         <Link className="feature-card" href={featured.href}>
