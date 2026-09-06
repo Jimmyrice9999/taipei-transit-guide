@@ -28380,6 +28380,64 @@ No browser verification was run during this ferry data batch; the shared
 coverage-ledger change has already passed the blocker matrix, and the complete
 bounded suite remains reserved for the final UI/data boundary.
 
+### Matsu ferry-port nodes and multimodal evidence guard
+
+This batch fetched and read the full Maritime and Port Bureau pages for the
+Small Three Links schedule, Ji Shun No. 10, Hong Shun No. 6, the checked
+cross-strait operating summary and the Matsu office access page:
+
+    https://www.motcmpb.gov.tw/BoatSchedule?nodeId=380&siteId=1
+    https://www.motcmpb.gov.tw/PassengerShip/Detail?NodeId=610&PassengerShipSno=016428&ShipLaneNo=X457&SiteId=1
+    https://www.motcmpb.gov.tw/PassengerShip/Detail?NodeId=610&PassengerShipSno=015545&ShipLaneNo=C014&SiteId=1
+    https://www.motcmpb.gov.tw/Information/Detail/68173c5b-6b25-401f-ab32-62a7d902bd95?NodeId=334&SiteId=1
+    https://www.motcmpb.gov.tw/Information/Detail/67c2de99-d8fc-4a9e-a6f3-59888b7cb18c?NodeId=105&SiteId=1
+
+Production changes:
+
+    content/ferry/terminals/matsu-ports.md
+    docs/research/ferry/matsu-ports.md
+    data/multimodal/curated-joins.json
+    tests/multimodal-joins.test.mts
+    content/ferry/terminals/_index.md
+    public/data/search-index.json
+
+The terminal page adds Fuao and Baisha as distinct canonical access nodes. It
+records the official Fuao airport → Fuao Village bus stop → passenger-building
+chain, the two Small Three Links route-family associations, and the vessel
+records' explicit port-building and accessibility fields. It does not call the
+airport and ferry a timed interchange, does not infer a stop-ID join, and does
+not promote vessel accessibility to a terminal-wide accessibility survey.
+
+The new join registry deliberately uses `published-access-chain` for the one
+verified Fuao relationship. The unit test only permits `confirmed-interchange`
+when evidence is an official shared-complex record or a stop-ID/geometry
+record; name-only, nearby and access-chain evidence cannot silently become a
+confirmed interchange. This is a separate guard from the existing bus/rail
+stop-ID test.
+
+The required fresh build → `npm run fonts` → fresh build sequence completed;
+both builds reported:
+
+    postbuild: 5333 pages checked against the Han subsets — no missing glyphs.
+
+The final Matsu `npm run gate:fast` completed exit 0:
+
+    citations: 1896 content files, 1837 with a sources: block
+      8856 citations resolved — 8307 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1896 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 309 file(s), 1198 recorded as checked and failed.
+    research: clean.
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+No scout worker was available in this environment. This was one main-session
+reader/writer batch; no concurrent writer was used.
+
 ### Domestic aviation atlas hardening
 
 The existing `NationalAirAtlas` array contained seven surfaces but rendered the

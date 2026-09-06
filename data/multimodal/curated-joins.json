@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "retrieved": "2026-09-06",
+  "joins": [
+    {
+      "id": "matsu-fuao-airport-access-chain",
+      "from": "Nangan Airport",
+      "to": "Fuao Passenger Transport Building",
+      "modePair": "air-ferry",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "motc-matsu-office",
+      "note": "The official access page gives airport bus to Fuao Village stop and an approximate walk to the passenger transport building; it does not establish a timed sailing connection or a stop-ID interchange."
+    }
+  ]
+}
