@@ -28054,3 +28054,68 @@ present.
 The separate blocker commit and push proof are recorded in the next Run 318
 entry after the commit is made. National expansion begins only after that
 proof matches locally and remotely.
+
+### National bus acquisition batch
+
+After the blocker push, the existing bus fetcher was inspected and confirmed to
+be hard-coded to Taipei and New Taipei. A read-only TDX probe against the
+official `Bus/Route/City` endpoint returned HTTP 200 for Keelung, Taipei,
+NewTaipei, Taoyuan and Hsinchu before the service returned HTTP 429 for the
+next probe requests. The probe was stopped rather than retried aggressively;
+the later paced acquisition recorded no 429s. No scout worker was available;
+this was a main-session fetch and write.
+
+The new `scripts/fetch-national-bus-discovery.mjs` is a route-only, static
+acquisition layer. It uses one TDX token, one jurisdiction at a time, 1,000-row
+pages, a 12-second inter-request delay and Retry-After/backoff handling. It
+does not claim that TDX Route objects are unique public routes, and it does not
+pretend that route discovery includes stop sequences or shapes. The committed
+snapshot is `data/tdx/bus/national-routes.json`, with source URL, API boundary,
+retrieval timestamp, per-jurisdiction measurements and definitions for route
+records, RouteUIDs and SubRoutes.
+
+Acquisition completed 2026-09-06 at `2026-09-06T14:51:10.283Z` with:
+
+    3046 TDX route records across 22 jurisdictions
+    3046 distinct RouteUID identities in the fetched jurisdiction rows
+    5837 source SubRoute entries (sum of source SubRoutes arrays)
+    rate limits observed: 0
+
+Per-jurisdiction route-record / source-variant measurements were: Keelung
+116/168; Taipei 416/1,223; New Taipei 635/1,351; Taoyuan 412/714; Hsinchu
+City 27/61; Hsinchu County 53/118; Miaoli 1/8; Taichung 389/755; Changhua
+17/46; Nantou 15/36; Yunlin 12/32; Chiayi City 11/29; Chiayi County 41/104;
+Tainan 165/692; Kaohsiung 316/617; Pingtung 123/333; Yilan 72/187;
+Hualien 9/31; Taitung 4/8; Penghu 21/158; Kinmen 123/123; and Lienchiang
+68/68. These are dated source measurements, not a national unique-route
+total. The national atlas now exposes all 22 as structured discovery, while
+the five authored regional overlays remain separate and canonical.
+
+The new atlas wording explicitly keeps source records, RouteUIDs and SubRoutes
+separate, labels the route-only boundary, retains the national TDX source URL,
+and keeps the existing bus-route taxonomy and confirmed bus/rail join guard
+untouched. `package.json` now exposes `npm run national-bus` for a deliberate
+refresh; the committed output remains build-time static data.
+
+The fresh national-bus build completed with TypeScript success and:
+
+    postbuild: 5319 pages checked against the Han subsets — no missing glyphs.
+
+The post-acquisition fast gate completed with exit 0:
+
+    citations: 1889 content files, 1831 with a sources: block
+      8825 citations resolved — 8276 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1889 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2293 Han characters in 2+ character runs, all covered).
+    research: 303 file(s), 1185 recorded as checked and failed.
+    research: clean.
+    ℹ tests 143
+    ℹ pass 143
+    ℹ fail 0
+
+The fresh adversarial run after the national snapshot returned:
+
+    16/16 cases behaved as specified

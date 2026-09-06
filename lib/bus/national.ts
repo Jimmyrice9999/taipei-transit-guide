@@ -10,6 +10,7 @@ import hsinchu from '../../data/hsinchu-bus/routes.json' with { type: 'json' }
 import taichung from '../../data/taichung-bus/routes.json' with { type: 'json' }
 import tainan from '../../data/tainan-bus/routes.json' with { type: 'json' }
 import kaohsiung from '../../data/kaohsiung-bus/routes.json' with { type: 'json' }
+import nationalSnapshot from '../../data/tdx/bus/national-routes.json' with { type: 'json' }
 import { REGIONS } from '@/lib/regions'
 
 export type NationalBusState = 'structured' | 'not-researched'
@@ -20,6 +21,8 @@ export type NationalBusJurisdiction = {
   titleOriginal: string
   state: NationalBusState
   routeCount: number | null
+  sourceRouteRecords: number | null
+  sourceVariantRecords: number | null
   countLabel: string
   retrieved: string | null
   scope: string
@@ -35,7 +38,21 @@ type TdxMeta = typeof tdxMeta & {
 
 const tdx = tdxMeta as TdxMeta
 
-const structured: Record<string, Omit<NationalBusJurisdiction, 'slug' | 'title' | 'titleOriginal'>> = {
+type NationalSnapshot = typeof nationalSnapshot & {
+  jurisdictions: Record<string, {
+    sourceCity: string
+    cityCode: string
+    status: string
+    routeRecords: number
+    variantRecords: number
+    routeIds: number
+    sourceUrl: string
+  }>
+}
+
+const national = nationalSnapshot as NationalSnapshot
+
+const structured: Record<string, Omit<NationalBusJurisdiction, 'slug' | 'title' | 'titleOriginal' | 'sourceRouteRecords' | 'sourceVariantRecords'>> = {
   taipei: {
     state: 'structured',
     routeCount: tdx.cities.Taipei?.datasets?.routes?.records ?? null,
@@ -118,13 +135,37 @@ const structured: Record<string, Omit<NationalBusJurisdiction, 'slug' | 'title' 
 export function getNationalBusJurisdictions(): NationalBusJurisdiction[] {
   return REGIONS.map((region) => {
     const row = structured[region.slug]
-    if (row) return { slug: region.slug, title: region.title, titleOriginal: region.titleOriginal, ...row }
+    const snapshot = national.jurisdictions[region.slug]
+    if (snapshot) {
+      const overlay = row?.busHref && row.busHref !== '/bus/'
+        ? ` Editorial overlay: ${row.scope}.`
+        : ''
+      return {
+        slug: region.slug,
+        title: region.title,
+        titleOriginal: region.titleOriginal,
+        state: 'structured',
+        routeCount: snapshot.routeRecords,
+        sourceRouteRecords: snapshot.routeRecords,
+        sourceVariantRecords: snapshot.variantRecords,
+        countLabel: `${snapshot.routeRecords.toLocaleString()} TDX route records · ${snapshot.routeIds.toLocaleString()} RouteUIDs · ${snapshot.variantRecords.toLocaleString()} source variants`,
+        retrieved: national.fetchedAt.slice(0, 10),
+        scope: `${snapshot.sourceCity} TDX Bus/Route/City snapshot`,
+        sourceLabel: 'MOTC TDX route snapshot',
+        sourceUrl: snapshot.sourceUrl,
+        busHref: row?.busHref ?? '/bus/',
+        note: `Route records and SubRoutes are retained as separate source measurements; they are not a timeless unique-route total.${overlay}`,
+      }
+    }
+    if (row) return { slug: region.slug, title: region.title, titleOriginal: region.titleOriginal, sourceRouteRecords: row.routeCount, sourceVariantRecords: null, ...row }
     return {
       slug: region.slug,
       title: region.title,
       titleOriginal: region.titleOriginal,
       state: 'not-researched',
       routeCount: null,
+      sourceRouteRecords: null,
+      sourceVariantRecords: null,
       countLabel: 'not yet researched',
       retrieved: null,
       scope: 'No jurisdiction-specific structured bus snapshot in the committed national layer',
@@ -140,8 +181,10 @@ export function getNationalBusStructuredSummary() {
   const rows = getNationalBusJurisdictions().filter((row) => row.state === 'structured')
   return {
     jurisdictionCount: rows.length,
-    sourceRouteRecords: rows.reduce((sum, row) => sum + (row.routeCount ?? 0), 0),
+    sourceRouteRecords: rows.reduce((sum, row) => sum + (row.sourceRouteRecords ?? 0), 0),
+    sourceVariantRecords: rows.reduce((sum, row) => sum + (row.sourceVariantRecords ?? 0), 0),
+    routeIdentityCount: rows.reduce((sum, row) => sum + (row.routeCount ?? 0), 0),
     normalizedTdxIdentities: tdxMeta.normalized.routeCount,
-    tdxRetrieved: tdxMeta.fetchedAt.slice(0, 10),
+    tdxRetrieved: national.fetchedAt.slice(0, 10),
   }
 }

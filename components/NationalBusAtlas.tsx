@@ -15,7 +15,7 @@ export default function NationalBusAtlas() {
       <div className="atlas-note">
         <strong>National bus atlas</strong>
         <span>
-          All 22 jurisdictions are listed below. The current structured layer covers {summary.jurisdictionCount} jurisdiction entries and {summary.sourceRouteRecords.toLocaleString()} source route records across six dated feeds; the Taipei/New Taipei TDX normaliser contains {summary.normalizedTdxIdentities.toLocaleString()} combined route identities (TDX retrieval {summary.tdxRetrieved}).
+          All 22 jurisdictions are listed below. The current structured layer covers {summary.jurisdictionCount} jurisdiction entries and {summary.sourceRouteRecords.toLocaleString()} TDX route records plus {summary.sourceVariantRecords.toLocaleString()} source variants (route snapshot retrieved {summary.tdxRetrieved}). The separate Taipei/New Taipei normaliser contains {summary.normalizedTdxIdentities.toLocaleString()} combined route identities.
         </span>
         <span>Counts are source records or identities as labelled, not a timeless national route total. “Not yet researched” is a visible evidence gap, not a claim of no service.</span>
       </div>
