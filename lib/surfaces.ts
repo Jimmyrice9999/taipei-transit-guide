@@ -82,6 +82,30 @@ export const SWATCHES: Swatch[] = [
     on: [],
     why: 'Quiet atlas notes and secondary panels. It is a surface, not an ink colour.',
   },
+  {
+    name: 'surface',
+    role: 'surface',
+    on: [],
+    why: 'The raised white surface used by the editorial atlas panels and table treatment.',
+  },
+  {
+    name: 'status-dated-bg',
+    role: 'surface',
+    on: [],
+    why: 'Pale blue background for a dated snapshot; the accompanying status ink carries the meaning.',
+  },
+  {
+    name: 'status-tbc-bg',
+    role: 'surface',
+    on: [],
+    why: 'Pale amber background for a genuine TBC state; it is not a loading indicator.',
+  },
+  {
+    name: 'status-conflict-bg',
+    role: 'surface',
+    on: [],
+    why: 'Pale amber background for conflicting official values; the conflict label and text carry the meaning.',
+  },
 
   {
     name: 'text',
