@@ -29687,3 +29687,39 @@ corrected gate output was:
 The batch also validated the ferry JSON successfully before the gate. The
 known generated/untracked baseline was 5,217 while this batch had four
 deliberate source/documentation changes; generated artefacts were not staged.
+
+### Run 319 continuation batch — Budai–Magong operator snapshot (7 September 2026)
+
+The next ferry depth batch uses Hai You Shipping's full operator page at
+`https://www.taijistar.com.tw/schedule.php?month=9&year=2026`, fetched 7
+September 2026. The page displays a 10:00 Budai→Magong and 16:00
+Magong→Budai pattern on its listed September operating dates and explicitly
+shows 2 September as an all-day suspension because wind and waves reached the
+operator's safety standard. It also publishes operator-scoped full/half/
+insurance fares of NT$1,000/500/100 one-way and NT$1,950/975/195 return, plus
+the age/concession definitions. A separate full Hai You notice dated 30 June
+2026 says the company stopped joint scheduling with Kaixuan and Manten Star
+from 2026; the three operator calendars are therefore not merged.
+
+The Penghu content page, research record and national ferry JSON now retain
+this as an operator-specific dated snapshot beside the county's 8–14 September
+South Sea query. The data test checks snapshot source/query/status fields and
+the Budai–Magong route linkage without asserting a timeless route frequency or
+common fare. The conflicts index was regenerated from 99 records before the
+successful gate.
+
+Actual fast-gate output:
+
+    citations: 1912 content files, 1853 with a sources: block
+    citations: clean.
+    marker-audit: clean (1912 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2296 Han characters in 2+ character runs, all covered).
+    research: 323 file(s), 1250 recorded as checked and failed.
+    research: clean.
+    unsourced assertions have not increased
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    native_exit=0

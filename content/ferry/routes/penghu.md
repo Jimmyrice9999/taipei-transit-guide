@@ -13,6 +13,9 @@ facts:
   - label: Retrieved schedule window
     value: 2026-09-08 to 2026-09-14
     source: phpto-timetable-september-2026
+  - label: Taiji Star September operator pattern
+    value: Budai 10:00 / Magong 16:00 when displayed
+    source: taijistar-september-2026
   - label: Magong–Qimei adult fare in the official visitor guide
     value: NT$437
     source: penghu-nsa-island-hopping
@@ -107,6 +110,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The full one-page official guidance, effective 19 July 2025. It describes fixed and special services, ticket-sales windows, online reservations, wind thresholds and refunds."
+  - id: taijistar-september-2026
+    title: 2026 September sailing schedule and fares
+    titleOriginal: 航班與票價
+    publisher: 海有航運股份有限公司 (Hai You Shipping Co., Ltd.)
+    url: "https://www.taijistar.com.tw/schedule.php?month=9&year=2026"
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full September 2026 schedule page. It displays the 10:00 Budai–Magong and 16:00 Magong–Budai pattern on its listed dates, an all-day 2 September suspension for wind and waves, current full/half/insurance fares and the operator's warning that times, frequency and vessel assignment can change."
+  - id: taijistar-independence-2026
+    title: Hai You Shipping independent scheduling statement
+    titleOriginal: 海有航運股份有限公司-重要聲明
+    publisher: 海有航運股份有限公司 (Hai You Shipping Co., Ltd.)
+    url: "https://www.taijistar.com.tw/news.php"
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The full operator notice dated 30 June 2026 says Hai You no longer shares scheduling with Kaixuan and Manten Star from 2026; each company schedules and sells its own service."
   - id: penghu-nsa-island-hopping
     title: South Sea ferry services and island-hopping transport
     titleOriginal: 南海船班及航空
@@ -215,6 +236,17 @@ For the same reason, this guide does not invent a year-round frequency, vessel
 capacity, or a guaranteed ferry-to-airport connection. Those fields need a
 dated operator timetable or a live official query before they can be promoted.
 
+Hai You's own September 2026 operator page supplies one such dated, operator-scoped
+snapshot for the Budai–Magong family: it displays Budai 10:00 and Magong 16:00
+on its listed operating dates, while marking 2 September as an all-day suspension
+because wind and waves reached the operator's safety standard.[^taijistar-september-2026]
+The same page lists NT$1,000 full / NT$500 half / NT$100 insurance one-way fares
+and NT$1,950 / NT$975 / NT$195 return fares, with its own age and concession
+definitions.[^taijistar-september-2026] These are Hai You's products, not a
+fare claim for every Budai operator. Hai You also states that, from 2026, it no
+longer shares scheduling with Kaixuan or Manten Star, so this page does not merge
+their calendars into one joint timetable.[^taijistar-independence-2026]
+
 ## The Kaohsiung ferry's vessel history
 
 The "Taiwan Navigation Penghu ferry" named above as the winter mainland-island
@@ -269,9 +301,10 @@ delivered specification.[^penghu-wheel-about][^ltn-penghu-wheel-contract]
 
 ## What remains date-sensitive
 
-The county’s live page is the source for the displayed 26 August–1 September
-week, while the ticket guidance is an effective-date document from July 2025;
-neither should be read as a permanent timetable.[^phpto-timetable][^phpto-ticket-guidance]
+The county’s live page is the source for the displayed 8–14 September week, while
+the Hai You page is an operator-scoped September snapshot and the ticket guidance
+is an effective-date document from July 2025; none should be read as a permanent
+all-operator timetable.[^phpto-timetable-september-2026][^taijistar-september-2026][^phpto-ticket-guidance]
 The live page and the older ticket PDF also publish slightly different wind
 threshold values: the live page gives 15.6, 13.6 and 10.5 m/s for its named
 service groups, while the PDF’s table displays 15.5, 10, 10 and 13.5 m/s across

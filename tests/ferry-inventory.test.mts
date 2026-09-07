@@ -24,6 +24,19 @@ test('ferry ticketing directory has unique corridor identities and honest status
     assert.ok(corridor.timetableStatus.includes('direct') || corridor.timetableStatus.includes('separate'))
     assert.ok(corridor.operators.length > 0, `${corridor.id} has no operator listing`)
   }
+
+  assert.ok(Array.isArray(inventory.datedScheduleSnapshots), 'dated ferry snapshots must be an array')
+  for (const snapshot of inventory.datedScheduleSnapshots) {
+    assert.match(snapshot.retrieved, /^2026-\d{2}-\d{2}$/)
+    assert.match(snapshot.source, /^https?:\/\//)
+    assert.ok(snapshot.queryWindow, 'dated ferry snapshot needs a query window')
+    assert.ok(snapshot.status, 'dated ferry snapshot needs a status warning')
+  }
+
+  const budai = inventory.corridors.find((corridor) => corridor.id === 'budai-magong')
+  assert.ok(budai?.scheduleSnapshot, 'Budaiâ€“Magong operator snapshot is missing')
+  assert.equal(budai.scheduleSnapshot.queryMonth, '2026-09')
+  assert.match(budai.scheduleSnapshot.pattern, /10:00/)
 })
 
 test('Small Three Links preserves current fare evidence and crossing-time conflict', () => {

@@ -2,8 +2,8 @@
 
 **Research file — leads, not sources.** The existing research corpus is a lead index. Every promoted claim below was checked against the full official page or PDF named in the record.
 
-**Version 1.1 — 7 September 2026**
-**Status: current official verification for `content/ferry/routes/penghu.md`; the live county timetable was re-fetched for a September query.**
+**Version 1.2 — 7 September 2026**
+**Status: current official verification for `content/ferry/routes/penghu.md`; the county and a Budai–Magong operator schedule were re-fetched for September.**
 
 ## What is established
 
@@ -47,6 +47,12 @@
 
 ### Taiwan–Penghu sea access
 
+- **Hai You Shipping's full September 2026 operator page displays Budai→Magong at 10:00 and Magong→Budai at 16:00 on its listed operating dates, and marks 2 September as an all-day suspension because wind and waves reached its safety standard.** **Source:** *2026 September sailing schedule and fares*, titleOriginal `航班與票價`, Hai You Shipping, `https://www.taijistar.com.tw/schedule.php?month=9&year=2026`, PRIMARY, High confidence because the complete operator page was fetched on 2026-09-07. Original-language basis: the September calendar rows `布袋→馬公10:00`, `馬公→布袋16:00`, and the 2 September notice `全天停航`.
+
+- **The same operator page displays NT$1,000 full / NT$500 half / NT$100 insurance one-way fares and NT$1,950 / NT$975 / NT$195 return fares, with its own age and concession definitions.** **Source:** the same full page. Original-language basis: the `澎湖船票價格` table and its `全票`, `半票` and `保險票` rows.
+
+- **Hai You's 30 June 2026 notice says that from 2026 it stopped joint scheduling with Kaixuan and Manten Star, with the three companies independently scheduling and selling their services.** **Source:** *Hai You Shipping independent scheduling statement*, titleOriginal `海有航運股份有限公司-重要聲明`, Hai You Shipping, `https://www.taijistar.com.tw/news.php`, PRIMARY, High confidence because the full notice was fetched on 2026-09-07. Original-language basis: `自2026年（民國115年）起，本公司已停止與凱旋海運股份有限公司、滿天星航運股份有限公司進行共同排班` and `三家公司各自獨立排定航班、銷售船票並提供運輸服務`.
+
 - **The tourism authority describes summer light passenger ferries between Chiayi Budai and Magong at about 90 minutes, winter Taiwan Navigation service between Kaohsiung Xinbin and Magong at about four hours, with possible summer night sailings.** **Source:** *Ferry information for reaching Penghu*, titleOriginal `輪船資訊`, 交通部觀光署澎湖國家風景區管理處, `https://www.penghu-nsa.gov.tw/ChiHoOneLer/transport/Traffic/Traffic/ship01.htm`, PRIMARY, High confidence because the full page was fetched on 2026-08-26 and updated 2026-08-14. Original-language basis: `輕型客輪僅於夏季時開航，行駛於嘉義布袋港與馬公商港間，航行時間約90分鐘；冬季僅有台華輪...行船時間約4小時，夏季期間亦有夜間航次`.
 
 - **The page’s port table lists Budai–Magong, Budai–Longmen, Kaohsiung–Magong, Kaohsiung–Qimei/Wangan/Magong and Tainan–Dongji.** **Source:** same full page. Original-language basis: the `航點資訊` table row beginning `嘉義布袋-澎湖馬公` and ending `台南-澎湖東吉`.
@@ -76,4 +82,4 @@
 
 ## Sources and archive status
 
-The promoted sources are official government/operator pages or a government PDF fetched in full. The current county timetable was re-fetched on 2026-09-07; the older August query remains retained as a dated historical snapshot rather than current evidence. No archive snapshot URL was captured in this unit; the live URLs and page update/effective dates are retained.
+The promoted sources are official government/operator pages or a government PDF fetched in full. The current county timetable and Hai You September operator page were re-fetched on 2026-09-07; the older August query remains retained as a dated historical snapshot rather than current evidence. No archive snapshot URL was captured in this unit; the live URLs and page update/effective dates are retained.

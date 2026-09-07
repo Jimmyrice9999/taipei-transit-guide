@@ -921,15 +921,24 @@ sources:
     kind: "secondary"
     lang: "zh-Hant"
     note: "A private (non-government) tourism portal, the only source found stating the Houbihu route's specific mid-March to mid-October operating window."
-  - id: "ferry-routes-penghu-phpto-timetable"
-    title: "Public ferry timetable"
+  - id: "ferry-routes-penghu-phpto-timetable-september-2026"
+    title: "Public ferry timetable — 8 to 14 September 2026 query"
     titleOriginal: "交通船時刻表"
-    publisher: "澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office)"
+    publisher: "Penghu County Public Vehicle and Ship Management Office (澎湖縣政府公共車船管理處)"
     url: "https://www.phpto.gov.tw/home.jsp?id=106"
-    accessed: "2026-08-26"
+    accessed: "2026-09-07"
     kind: "primary"
     lang: "zh-Hant"
-    note: "The live official timetable page fetched on 26 August 2026. Its displayed query covers 26 August–1 September 2026 and lists South Sea services, vessel names, ticket points, weather-stop rules and the page update date of 18 August 2026."
+    note: "The full live page displayed a 2026-09-08 to 2026-09-14 query, including Nanhai Star No. 2 fixed service, overnight Qimei sailings, the Friday-special Armani service, Hai You 1 fixed service and a 11 September extension to Kaohsiung; the page footer was updated 2026-09-07 and the timetable content says the page update is 2026-08-18."
+  - id: "ferry-routes-penghu-taijistar-september-2026"
+    title: "2026 September sailing schedule and fares"
+    titleOriginal: "航班與票價"
+    publisher: "海有航運股份有限公司 (Hai You Shipping Co., Ltd.)"
+    url: "https://www.taijistar.com.tw/schedule.php?month=9&year=2026"
+    accessed: "2026-09-07"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The operator's full September 2026 schedule page. It displays the 10:00 Budai–Magong and 16:00 Magong–Budai pattern on its listed dates, an all-day 2 September suspension for wind and waves, current full/half/insurance fares and the operator's warning that times, frequency and vessel assignment can change."
   - id: "ferry-routes-penghu-phpto-ticket-guidance"
     title: "Public ferry ticket-purchase guidance"
     titleOriginal: "澎湖縣政府公共車船管理處交通船船票購買須知"
@@ -939,6 +948,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "The full one-page official guidance, effective 19 July 2025. It describes fixed and special services, ticket-sales windows, online reservations, wind thresholds and refunds."
+  - id: "ferry-routes-penghu-phpto-timetable"
+    title: "Public ferry timetable"
+    titleOriginal: "交通船時刻表"
+    publisher: "澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office)"
+    url: "https://www.phpto.gov.tw/home.jsp?id=106"
+    accessed: "2026-08-26"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The live official timetable page fetched on 26 August 2026. Its displayed query covers 26 August–1 September 2026 and lists South Sea services, vessel names, ticket points, weather-stop rules and the page update date of 18 August 2026."
   - id: "rail-history-changhua-minxiong-double-track-tra-history-page"
     title: "Railway route construction history"
     titleOriginal: "臺灣鐵路路線建造史"
@@ -3659,13 +3677,14 @@ Sources disagree substantially on the Fugang–Orchid Island crossing time, and 
 
 ## Penghu island ferry services — What remains date-sensitive
 
-Discussed on [Penghu island ferry services](/ferry/routes/penghu/) in the source page's “What remains date-sensitive” section.[^ferry-routes-penghu-phpto-timetable]
+Discussed on [Penghu island ferry services](/ferry/routes/penghu/) in the source page's “What remains date-sensitive” section.[^ferry-routes-penghu-phpto-timetable-september-2026]
 
 ### What remains date-sensitive
 
-The county’s live page is the source for the displayed 26 August–1 September
-week, while the ticket guidance is an effective-date document from July 2025;
-neither should be read as a permanent timetable.[^ferry-routes-penghu-phpto-timetable][^ferry-routes-penghu-phpto-ticket-guidance]
+The county’s live page is the source for the displayed 8–14 September week, while
+the Hai You page is an operator-scoped September snapshot and the ticket guidance
+is an effective-date document from July 2025; none should be read as a permanent
+all-operator timetable.[^ferry-routes-penghu-phpto-timetable-september-2026][^ferry-routes-penghu-taijistar-september-2026][^ferry-routes-penghu-phpto-ticket-guidance]
 The live page and the older ticket PDF also publish slightly different wind
 threshold values: the live page gives 15.6, 13.6 and 10.5 m/s for its named
 service groups, while the PDF’s table displays 15.5, 10, 10 and 13.5 m/s across
@@ -3676,8 +3695,10 @@ reconciled by guesswork.
 
 #### Sources for this entry
 
-- [Public ferry timetable](https://www.phpto.gov.tw/home.jsp?id=106) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-timetable]
+- [Public ferry timetable — 8 to 14 September 2026 query](https://www.phpto.gov.tw/home.jsp?id=106) — primary; Penghu County Public Vehicle and Ship Management Office (澎湖縣政府公共車船管理處); accessed 2026-09-07.[^ferry-routes-penghu-phpto-timetable-september-2026]
+- [2026 September sailing schedule and fares](https://www.taijistar.com.tw/schedule.php?month=9&year=2026) — primary; 海有航運股份有限公司 (Hai You Shipping Co., Ltd.); accessed 2026-09-07.[^ferry-routes-penghu-taijistar-september-2026]
 - [Public ferry ticket-purchase guidance](https://www.penghu.gov.tw/userfiles/03/files/%E6%BE%8E%E6%B9%96%E7%B8%A3%E6%94%BF%E5%BA%9C%E5%85%AC%E5%85%B1%E8%BB%8A%E8%88%B9%E7%AE%A1%E7%90%86%E8%99%95%E4%BA%A4%E9%80%9A%E8%88%B9%E8%88%AA%E7%8F%AD%E8%B3%BC%E7%A5%A8%E9%A0%88%E7%9F%A5114_07_19.pdf) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-ticket-guidance]
+- [Public ferry timetable](https://www.phpto.gov.tw/home.jsp?id=106) — primary; 澎湖縣政府公共車船管理處 (Penghu County Public Vehicle and Ship Management Office); accessed 2026-08-26.[^ferry-routes-penghu-phpto-timetable]
 
 ## The Taiwan Railways Changhua–Minxiong Double Track — One historical double-track record
 
