@@ -71,6 +71,10 @@ modification dates are not treated as timetable-effective dates.
   an 11-page result set and does not expose a stable county-wide total in the
   material used here. The two-page sample is expanded; the full inventory stays
   unasserted.
+- **Pages 3–11 through a direct static fetch** — checked 7 September 2026:
+  direct requests returned a 212-byte Incapsula challenge document rather than
+  the directory HTML. Those pages were not read or used as evidence; a browser
+  session or an official export would be needed to continue this seam safely.
 
 ## Stated gaps
 
