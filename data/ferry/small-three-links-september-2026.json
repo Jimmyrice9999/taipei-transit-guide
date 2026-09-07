@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-09-07",
+  "effectiveFrom": "2026-09-01",
+  "effectiveTo": "2026-09-30",
+  "publisher": "Maritime and Port Bureau, Ministry of Transportation and Communications (交通部航港局)",
+  "indexUrl": "https://www.motcmpb.gov.tw/Information?nodeId=543&siteId=1",
+  "routeFamilies": [
+    {
+      "id": "kinmen-shuitou-xiamen-wutong",
+      "category": "small-three-links",
+      "status": "current-scheduled",
+      "origin": "Kinmen Shuitou",
+      "originOriginal": "金門水頭",
+      "destination": "Xiamen Wutong",
+      "destinationOriginal": "廈門五通",
+      "approximateCrossingMinutes": 30,
+      "serviceDates": "2026-09-01 through 2026-09-30",
+      "departureSlots": {
+        "eachDirection": ["08:30", "09:00", "10:00", "10:30", "11:30", "12:30", "13:30", "14:30", "15:30", "16:30", "17:00", "17:30"]
+      },
+      "vesselRoster": ["馬可波羅1號", "金星6號", "迅安", "新東方", "新捷安", "金瑞龍", "新五緣", "新武夷", "新金祥龍", "和平新星"],
+      "vesselAssignment": "date-specific assignments are printed in the official monthly table; this snapshot retains the roster rather than flattening it to one permanent vessel",
+      "sourceFile": "https://www.motcmpb.gov.tw/ServerFile/Get/15997edb-bc1b-435d-a5fe-5213683037ec?DLCount=1",
+      "bookingContacts": {
+        "xiamen": "Dalong Marine 0592-2020233; Jinxia Shipping 0592-2071458; Kunlong Shipping and Jinan Shipping 0592-3216666; Lunzong Passenger Travel 0592-3280577; Sanlian Shipping 0592-3190760; Yuanxin Shipping 0592-2393557",
+        "kinmen": "Dalong Marine 082-373007; Jinxia Shipping 082-312656; Kunlong Shipping 082-312501; Jinan Shipping 082-313008 / 082-312349; Nanxing Shipping 082-371725–6; Yuanxin Shipping 082-313080; Quanguo Shipping 082-313010; Heping Shipping 082-320258"
+      }
+    },
+    {
+      "id": "kinmen-shuitou-quanzhou-shijing",
+      "category": "small-three-links",
+      "status": "current-scheduled",
+      "origin": "Kinmen Shuitou",
+      "originOriginal": "金門水頭",
+      "destination": "Quanzhou Shijing",
+      "destinationOriginal": "泉州石井",
+      "approximateCrossingMinutes": 60,
+      "serviceDates": ["2026-09-02", "2026-09-04", "2026-09-06", "2026-09-08", "2026-09-10", "2026-09-12", "2026-09-14", "2026-09-16", "2026-09-18", "2026-09-20", "2026-09-22", "2026-09-24", "2026-09-26", "2026-09-28", "2026-09-30"],
+      "departureSlots": {
+        "kinmenToQuanzhou": ["09:50", "16:35"],
+        "quanzhouToKinmen": ["08:30", "11:10"]
+      },
+      "vesselRoster": ["八方輪"],
+      "vesselAssignment": "the official table prints 八方輪 on its published service dates",
+      "sourceFile": "https://www.motcmpb.gov.tw/ServerFile/Get/31506ab1-ccba-4352-beb7-8c047765edfd?DLCount=1",
+      "bookingContacts": {
+        "kinmen": "海西企業（八方）082-324579; the PDF instructs passengers to buy at the terminal one hour before departure",
+        "quanzhou": "五大洲（福建）外代（八方）0595-86097861"
+      }
+    }
+  ],
+  "matsuFixedSchedule": {
+    "effectiveFrom": "2025-12-01",
+    "effectiveTo": "2026-11-30",
+    "servicePattern": "daily as stated in the official fixed-schedule PDF",
+    "routeFamilies": [
+      {
+        "id": "matsu-baisha-huangqi",
+        "origin": "Beigan Baisha",
+        "originOriginal": "北竿白沙",
+        "destination": "Fuzhou Huangqi",
+        "destinationOriginal": "福州黃岐",
+        "vesselRoster": ["吉順10號", "安麒2號"],
+        "publishedTimes": ["10:00", "15:00"]
+      },
+      {
+        "id": "matsu-fuao-langqi",
+        "origin": "Nangan Fuao",
+        "originOriginal": "南竿福澳",
+        "destination": "Fuzhou Langqi",
+        "destinationOriginal": "福州琅岐",
+        "vesselRoster": ["金安輪", "安麒6號"],
+        "publishedTimes": ["10:00", "13:30"],
+        "bookingPhones": ["0836-22938", "0836-23031"]
+      }
+    ],
+    "sourceFile": "https://www.motcmpb.gov.tw/ServerFile/Get/3f1deeb8-8af2-4522-be49-286164b95568?DLCount=1"
+  },
+  "limitations": [
+    "The monthly tables are operational snapshots, not timeless frequency claims.",
+    "The snapshot does not assert a permanent vessel-to-departure mapping after the stated effective periods.",
+    "Current fares, terminal charges and complete border/check-in procedures remain separate date-sensitive fields until an official fare or terminal source is joined.",
+    "The extracted Matsu PDF contains a Fuao time cell adjacent to the Baisha/Huangqi table; this snapshot publishes only the unambiguous Baisha/Huangqi and Fuao/Langqi pairs without inferring an additional route."
+  ]
+}

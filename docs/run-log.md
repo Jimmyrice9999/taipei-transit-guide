@@ -28029,6 +28029,74 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+## Run 319 — September Small Three Links operational snapshot
+
+Run date: 7 September 2026. Baseline refs were `4333e874 Run 318: record
+final verification and handoff` for both `HEAD` and `origin/main`. The initial
+working-tree status contained 5,214 known generated/untracked baseline entries;
+they were not cleaned, deleted, staged or broadly reverted. No read-only scout
+worker was available in this environment, so this batch was fetched, checked
+and written sequentially by MAIN. No unexpected writer appeared in the status
+checks.
+
+`npm run adversarial` was run fresh before implementation and ended with the
+actual aggregate `16/16 cases behaved as specified`.
+
+The first depth batch resolved the previous Small Three Links September TBC.
+The full Maritime and Port Bureau notice `115年9月金門小三通航班表` was fetched
+from its information page, published 17 August 2026 and checked 1 September
+2026. Both linked PDFs were fetched and extracted: the Kinmen–Xiamen table
+(`ServerFile/Get/15997edb-...`) covers 1–30 September, prints 12 departure slots
+per direction, and contains date-specific assignments for ten named vessels;
+the Kinmen–Quanzhou table (`ServerFile/Get/31506ab1-...`) prints 09:50 and
+16:35 from Kinmen, 08:30 and 11:10 from Quanzhou on 15 even-numbered dates and
+identifies 八方輪. Its full booking note says to buy at the terminal one hour
+before departure. The Matsu fixed PDF (`ServerFile/Get/3f1deeb8-...`) was also
+re-opened; it states validity from 1 December 2025 through 30 November 2026,
+names the Baisha–Huangqi and Fuao–Langqi vessel rosters, and gives Fuao booking
+numbers. Exact source URLs and the original-language evidence are in
+`docs/research/ferry/small-three-links.md` and the content source blocks.
+
+Production changes in this batch:
+
+- Added `data/ferry/small-three-links-september-2026.json`, separating durable
+  route families from a dated timetable snapshot, service dates, published
+  time slots, date-specific vessel rosters and booking contacts.
+- Updated the canonical Small Three Links route-family page with effective
+  September fields, source dates, current snapshot links and explicit fare /
+  border-process TBCs.
+- Added the 300+ word `content/ferry/vessels/kinmen-small-links-fleet.md`
+  roster page and linked it from the passenger-vessel index; it intentionally
+  does not claim a permanent fleet census.
+- Updated the ferry atlas label from only route-family pages to `10
+  route-family pages · 1 dated timetable snapshot`.
+- Updated the research file to version 1.1 with the new established facts,
+  changed checked failures, and the remaining current-fare / full check-in gaps.
+
+The first fast gate stopped on the expected stale intentional search index after
+the new page was added. `npm run search` regenerated the tracked public index
+at 2,118 entries / 1,427 with a Chinese name / 782 KB. The next gate initially
+found two new unsourced assertions and one short/spec-format issue; those were
+fixed without touching `docs/claims-baseline.json`. The final fast gate for this
+batch reported:
+
+    citations: clean.
+    marker-audit: clean (1901 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2294 Han characters in 2+ character runs, all covered).
+    research: 313 file(s), 1210 recorded as checked and failed.
+    research: clean.
+    ✔ unsourced assertions have not increased
+    ℹ tests 145
+    ℹ pass 145
+    ℹ fail 0
+
+The pre-commit claims report was `sourced 27757`, `TBC 4691`, `ASSERTED 0`.
+The current content citation report is 1,901 content files, 8,878 resolved
+citations, 8,329 primary and 549 secondary. The batch is ready for its own
+logical commit; no full gate or browser sweep has yet been run for this batch.
+
 ### Run 318 closing verification and handoff
 
 Run 318 ran on 2026-09-06/07. The initial repository state was the known Run

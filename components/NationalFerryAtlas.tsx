@@ -22,7 +22,7 @@ export default function NationalFerryAtlas() {
       </div>
       <div className="coverage-ledger-heading">
         <h2 className="section-heading" id="national-ferry-coverage">Ferry and maritime route families</h2>
-        <span className="coverage-ledger-total">10 route-family pages</span>
+        <span className="coverage-ledger-total">10 route-family pages · 1 dated timetable snapshot</span>
       </div>
       <ul className="coverage-ledger-list mode-atlas-list">
         {FERRY_FAMILIES.map((family) => (

@@ -1,7 +1,7 @@
 ---
 title: Small Three Links passenger services
 summary: A dated reference to the scheduled cross-border passenger routes linking Kinmen and Matsu with Fujian, kept distinct from domestic island ferries.
-updated: 2026-09-06
+updated: 2026-09-07
 aliases:
   - 小三通
   - Mini Three Links
@@ -35,8 +35,20 @@ specs:
     value: 30
     unit: minutes (approximate)
     source: mpb-small-three-links
-  - label: September 2026 Kinmen monthly sailing table
-    value: TBC
+  - label: September 2026 Kinmen monthly sailing snapshot
+    value: 2026-09-01 through 2026-09-30
+    source: mpb-kinmen-september-index
+  - label: September 2026 Xiamen departures per direction
+    value: 12
+    unit: published time slots per direction
+    source: mpb-kinmen-xiamen-september
+  - label: September 2026 Quanzhou service dates
+    value: 15
+    unit: published service dates
+    source: mpb-kinmen-quanzhou-september
+  - label: Matsu fixed-schedule validity
+    value: 2025-12-01 through 2026-11-30
+    source: mpb-matsu-september-snapshot
 sources:
   - id: mpb-small-three-links
     title: Small Three Links sailing table
@@ -65,6 +77,42 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official operations page is the current source boundary for Kinmen cross-strait operational notices; monthly sailing detail remains date-sensitive.
+  - id: mpb-kinmen-september-index
+    title: September 2026 Kinmen Small Three Links timetable notice
+    titleOriginal: 115年9月金門小三通航班表
+    publisher: Maritime and Port Bureau, Ministry of Transportation and Communications (交通部航港局)
+    url: https://www.motcmpb.gov.tw/Information/Detail/b1e673f0-4ce4-4ea8-bc0b-fb48b8082ad8?NodeId=543&SiteId=1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official information page was published on 2026-08-17, checked on 2026-09-01 and links the September Kinmen–Quanzhou and Kinmen–Xiamen PDF attachments.
+  - id: mpb-kinmen-xiamen-september
+    title: September 2026 Kinmen–Xiamen Small Three Links timetable
+    titleOriginal: 115年金廈小三通9月份航班表
+    publisher: Maritime and Port Bureau, Ministry of Transportation and Communications (交通部航港局)
+    url: https://www.motcmpb.gov.tw/ServerFile/Get/15997edb-bc1b-435d-a5fe-5213683037ec?DLCount=1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The official September PDF publishes 12 departure slots in each direction, date-specific vessel assignments, a September service period and booking contacts for both terminals.
+  - id: mpb-kinmen-quanzhou-september
+    title: September 2026 Kinmen–Quanzhou Small Three Links timetable
+    titleOriginal: 115年金泉小三通9月份航班表
+    publisher: Maritime and Port Bureau, Ministry of Transportation and Communications (交通部航港局)
+    url: https://www.motcmpb.gov.tw/ServerFile/Get/31506ab1-ccba-4352-beb7-8c047765edfd?DLCount=1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The official September PDF publishes four departure slots on 15 even-numbered September dates, identifies 八方輪 on those service rows and gives booking contacts.
+  - id: mpb-matsu-september-snapshot
+    title: Matsu Small Three Links fixed passenger schedule, December 2025–November 2026
+    titleOriginal: 馬祖小三通客運固定航班表(2025年12月至2026年11月)
+    publisher: Maritime and Port Bureau, Ministry of Transportation and Communications (交通部航港局)
+    url: https://www.motcmpb.gov.tw/ServerFile/Get/3f1deeb8-8af2-4522-be49-286164b95568?DLCount=1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official fixed-schedule PDF states its validity period, vessel names for the Baisha–Huangqi and Fuao–Langqi families, daily operation wording and Fuao booking numbers.
 ---
 
 The Small Three Links (小三通) are scheduled cross-border passenger services, not a synonym for every ferry serving Kinmen or Matsu.[^mpb-small-three-links] The Maritime and Port Bureau's full sailing page identifies two Kinmen route families and two Matsu route families: Shuitou–Xiamen Wutong, Shuitou–Quanzhou Shijing, Nangan Fuao–Fuzhou Langqi and Beigan Baisha–Fuzhou Huangqi.[^mpb-small-three-links] This page is the canonical route-family reference so the same sailing is not duplicated under a domestic island-ferry page and an international-shipping page.
@@ -73,8 +121,8 @@ The official page gives approximate crossing times of about 30 minutes for Kinme
 
 For Matsu, the Bureau also publishes a fixed schedule page titled for the period December 2025 through November 2026.[^mpb-matsu-fixed-2025-2026] That validity period includes September 2026, but the page itself was published in December 2025 and is not treated as proof that a particular sailing is running on every date. The route atlas therefore links the official schedule and keeps daily operation date-sensitive.
 
-Kinmen's official cross-strait operations page is retained as a second source boundary for notices and operational context.[^mpb-cross-strait-operations] The current page does not justify turning this entry into a timeless daily frequency table. In particular, a September 2026 Kinmen monthly timetable was not promoted here because the full official index did not expose a verified September file during this pass.[^mpb-cross-strait-operations] The current monthly sailing detail is TBC rather than copied from an older month.
+Kinmen's official cross-strait operations page is retained as a second source boundary for notices and operational context.[^mpb-cross-strait-operations] The Maritime and Port Bureau's September notice was published on 17 August 2026, checked on 1 September, and links separate Kinmen–Xiamen and Kinmen–Quanzhou timetable files.[^mpb-kinmen-september-index] The attached Xiamen table covers 1–30 September, prints 12 departure slots in each direction and assigns vessels by date rather than naming one permanent vessel for the route.[^mpb-kinmen-xiamen-september] The attached Quanzhou table prints departures at 09:50 and 16:35 from Kinmen and 08:30 and 11:10 from Quanzhou on 15 even-numbered September dates; its service rows identify 八方輪.[^mpb-kinmen-quanzhou-september]
 
-The route family also does not attempt to provide immigration, customs or ticket-collection advice from a third-party travel summary. Those requirements are part of using a cross-border service and should be read from the relevant terminal, operator and government notices for the date of travel. Vessel identities, operator-by-sailing assignments and current fares likewise remain TBC in this concise route-family page unless a dated official record supports them.
+The route family also does not attempt to provide immigration, customs or ticket-collection advice from a third-party travel summary. The September PDFs do provide dated booking contacts: the Quanzhou table tells Kinmen passengers to buy at the terminal one hour before departure, while the Xiamen table lists terminal-side operator contacts.[^mpb-kinmen-quanzhou-september][^mpb-kinmen-xiamen-september] Current fares, terminal charges and a complete border/check-in procedure remain TBC here because those fields require their own dated official fare or terminal source. The September vessel roster is therefore linked as a snapshot rather than promoted to a permanent fleet assignment.
 
 The Small Three Links belong in the ferry atlas because the public-facing transport action is a scheduled passenger sailing, while the cross-border label makes the legal and operational context explicit. Kinmen, Lienchiang and terminal pages can index this canonical page; they should not create duplicate route articles.
