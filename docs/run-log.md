@@ -29684,6 +29684,60 @@ corrected gate output was:
     ℹ fail 0
     native_exit=0
 
+### Run 319 continuation batch — Changhua regional bus and evaluation depth (7 September 2026)
+
+Changhua was the next registry-only regional jurisdiction promoted to an
+editorial page. The full official county city-bus list, updated as an 11409
+list and fetched on 7 September 2026, publishes operator, route-number,
+route-name and service-area fields and identifies Changhua County as the
+city-bus authority. It keeps the many 9/10/17/19/20 variants and different
+operator/service-area rows as an editorial list rather than collapsing them
+into the TDX count.
+
+The dated TDX snapshot contains 17 Changhua County Route records and 46
+supplied variants. Its operator arrays contain four labels: Chang Hua Bus,
+Yuan Lin Bus, Chung-Lu Bus and HeMei Township Office. Those are snapshot
+measurements, not a legal-company or fleet count. The county's full contact
+page names public-transport service, city-bus management, Lugang/Xihu/Yuanlin/
+Erlin transfer-station planning and city-bus evaluation as department work.
+
+Three full route pages add useful corridor depth. Route 6 is Lukang–Yuanlin via
+Yuanlin Transfer Station and links a timetable image. Route 7 is Yuanlin–THSR
+Changhua–Tianzhong Railway Station and is explicitly labelled fully electric
+and high-speed-rail express. Route 8 is Tianzhong Railway Station–Xizhou Park
+with extensions to San Tiao and Zhangcuo villages. These are published route
+endpoints, not timed rail or THSR interchange claims.
+
+The full official evaluation rules were fetched and read. They require a
+county evaluation committee, at least annual assessment, company- and
+route-level results, five weighted categories including accessibility, and
+possible effects on route continuation or new-route applications. Current
+scores remain TBC because the linked result attachments did not yield a
+reliable full report in this pass. The full central-region pass PDF states a
+30-day unlimited-use period within its defined bus/rail scope; it is not used
+to claim that every route accepts every medium.
+
+The Changhua route page, research file and regional index were added. Search
+regenerated to 2,133 entries (1,428 with Chinese names). The fresh-build/font
+sequence generated 6,192 static pages and the postbuild checked 5,373 pages
+with no missing glyphs; the fresh post-font build repeated that check, and
+`npm run font:check` reported 2,296 Han characters in 2+ character runs, all
+covered. The corrected fast-gate output was:
+
+    citations: 1917 content files, 1858 with a sources: block
+    citations: clean.
+    marker-audit: clean (1917 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2296 Han characters in 2+ character runs, all covered).
+    research: 327 file(s), 1261 recorded as checked and failed.
+    research: clean.
+    unsourced assertions have not increased
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    native_exit=0
+
 ### Run 319 continuation batch — Hualien Happiness Bus depth (7 September 2026)
 
 The next rural-transport batch used the full current Hualien County Happiness
@@ -29756,6 +29810,67 @@ fast-gate output was:
 The batch also validated the ferry JSON successfully before the gate. The
 known generated/untracked baseline was 5,217 while this batch had four
 deliberate source/documentation changes; generated artefacts were not staged.
+
+### Run 319 continuation batch — Yilan regional bus and terminal depth (7 September 2026)
+
+Yilan was the next registry-only fixed-route jurisdiction promoted to an
+editorial regional page. The repository's full official TDX city-scoped route
+snapshot, retrieved for this pass, contains 72 Yilan County Route records and
+187 supplied SubRoutes variants. Computing the operator arrays yields eight
+distinct labels: Kuo-Kuang Bus, Kamalan Bus, Capital Bus, Metropolitan Bus,
+Yilan County Government, Wujie Township Office, Nan'ao Township Office and
+Su'ao Township Office. These are source-snapshot measurements, not timeless
+unique-route, legal-company or fleet totals.
+
+The full Yilan County Transportation Department responsibilities page was
+fetched on 7 September. It assigns the Public Transport Section route
+planning/adjustment, transfer-station construction and operation, and
+city-bus service-indicator evaluation/rewards. Its body carries an older
+109-06-15 update while its footer carries 115-09-07; this date conflict is
+retained rather than silently resolved. The full county local-transport page
+displays NT$20/10 cash and NT$15/10 electronic-ticket city-bus fares, plus
+local concession/free-ride rules. It separately presents four Taiwan Tourist
+Shuttle lines—Green 11, Green 21, Green 18 and Green 19—so those tourist
+services remain outside the ordinary city-bus count.
+
+The full county arrival guide names Yilan, Luodong and Jiaoxi transfer stations
+and selected Kuo-Kuang, Kamalan and Capital coach corridors. The full current
+Taiwan Railways Yilan station page lists a city-bus access point at Yilan
+Station and transfer buses at Yilan Transfer Station, including the published
+transfer-station address. This is published access-chain evidence, not a timed
+interchange or bay assignment. A new Yilan Transfer Station page records those
+boundaries and leaves platforms, step-free facilities and timed connections
+TBC.
+
+The first fast-test pass exposed one real repository invariant: the new
+terminal article was 138 words, below the 300-word content-article minimum.
+It was expanded with additional source-backed corridor, address and snapshot
+boundary detail; the invariant was not weakened. The corrected unit result was:
+
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    ℹ duration_ms 45041.6846
+
+The fresh-build/font sequence for the new Han content generated 6,188 static
+pages and the postbuild checked 5,371 pages with no missing glyphs. The fresh
+post-font build then reported the same 5,371-page Han check, and
+`npm run font:check` reported 2,296 Han characters in 2+ character runs, all
+covered. The batch's corrected fast-gate output was:
+
+    citations: 1916 content files, 1857 with a sources: block
+    citations: clean.
+    marker-audit: clean (1916 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2296 Han characters in 2+ character runs, all covered).
+    research: 326 file(s), 1257 recorded as checked and failed.
+    research: clean.
+    unsourced assertions have not increased
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    native_exit=0
 
 ### Run 319 continuation batch — Budai–Magong operator snapshot (7 September 2026)
 

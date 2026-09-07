@@ -345,6 +345,123 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full 15 July 2026 notice confirms the evaluation-results report attachment; scores remain TBC after the inner PDF fetch failed.
+  - id: yilan-route-tdx
+    title: Yilan County city-bus route snapshot
+    titleOriginal: 宜蘭縣公車路線資料（TDX Route/City/YilanCounty）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平台)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/YilanCounty?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated route pull contains 72 Route records and 187 supplied SubRoutes variants; the eight operator-label count is computed from its operator arrays.
+  - id: yilan-transport-department
+    title: Yilan Transportation Department responsibilities
+    titleOriginal: 業務職掌
+    publisher: Yilan County Government Transportation Department (宜蘭縣政府交通處)
+    url: https://trp.e-land.gov.tw/cp.aspx?n=15455
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full page states the Public Transport Section's remit over city-bus route planning, transfer stations and service-indicator evaluation; body/footer update signals differ and are retained as a date conflict.
+  - id: yilan-local-transport
+    title: Yilan local transport
+    titleOriginal: 區內交通
+    publisher: Yilan County Government (宜蘭縣政府)
+    url: https://travel.yilan.gov.tw/zh-tw/local-transport/
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full page displays city-bus fares and payment instructions, and four Taiwan Tourist Shuttle route descriptions kept separate from ordinary city-bus discovery.
+  - id: yilan-tourism-arrival
+    title: How to reach Yilan
+    titleOriginal: 如何到宜蘭
+    publisher: Yilan County Government (宜蘭縣政府)
+    url: https://travel.yilan.gov.tw/zh-tw/go-to-yilan/
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full page names Yilan, Luodong and Jiaoxi transfer stations and selected intercity operators/routes in its visitor-facing arrival guidance.
+  - id: yilan-tra-transfer
+    title: Yilan Taiwan Railways station transfer guide
+    titleOriginal: 宜蘭車站交通轉乘指南
+    publisher: Taiwan Railways Corporation (國營臺灣鐵路股份有限公司)
+    url: https://www.railway.gov.tw/tra-tip-web/tip/tip00H/tipH41/viewTransfer/7190
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full current station page lists city-bus access at Yilan Station and transfer buses at Yilan Transfer Station without claiming a timed interchange.
+  - id: changhua-route-tdx
+    title: Changhua County city-bus route snapshot
+    titleOriginal: 彰化縣公車路線資料（TDX Route/City/ChanghuaCounty）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平台)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/ChanghuaCounty?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated route pull contains 17 Route records and 46 supplied SubRoutes variants; the four operator-label count is computed from its operator arrays.
+  - id: changhua-citybus-list
+    title: Changhua County city-bus route list
+    titleOriginal: 彰化縣市區客運路線列表(11409更新)
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://www.chcg.gov.tw/DTO/traffic/07other/other01_con.aspx?cate_id=7265&data_id=26082&topsn=6537
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full municipal page publishes route names, operators and service areas, and identifies the county as city-bus authority.
+  - id: changhua-transport-contact
+    title: Changhua Transportation Department contact and remit listing
+    titleOriginal: 聯絡通訊
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://www.chcg.gov.tw/DTO/traffic/01intro/intro05.aspx
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full page names public-transport, city-bus management, transfer-station planning and evaluation responsibilities.
+  - id: changhua-route-6
+    title: Route 6 Lukang–Yuanlin via Yuanlin Transfer Station
+    titleOriginal: 6路 鹿港-員林(經員林轉運站)
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://www.chcg.gov.tw/DTO/traffic/07other/other01_con.aspx?cate_id=6561&data_id=24541&topsn=6537
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full route page publishes route identity, terminal wording and a linked timetable image.
+  - id: changhua-route-7
+    title: Route 7 Yuanlin–THSR Changhua–Tianzhong Railway Station
+    titleOriginal: 7路 員林-高鐵彰化站-田中火車站
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://www.chcg.gov.tw/DTO/traffic/07other/other01_con.aspx?cate_id=6562&data_id=24542&topsn=6537
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full route page labels the corridor fully electric/high-speed-rail express and does not claim a timed interchange.
+  - id: changhua-route-8
+    title: Route 8 Tianzhong Railway Station–Xizhou Park
+    titleOriginal: 8路 台鐵田中站-溪州公園(延駛三條村、張厝村)
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://www.chcg.gov.tw/DTO/traffic/07other/other01_con.aspx?cate_id=6564&data_id=24544&topsn=6537
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full route page publishes the station/park endpoints and service extensions.
+  - id: changhua-evaluation-rules
+    title: Changhua city-bus operating and service-evaluation rules
+    titleOriginal: 彰化縣政府市區汽車客運營運及服務評鑑執行要點
+    publisher: Changhua County Government (彰化縣政府)
+    url: https://lawsearch.chcg.gov.tw/GLRSNEWSOUT/LawContent.aspx?id=GL000246&media=print
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official rules define the committee, cycle, score categories and consequences but no current scores.
+  - id: changhua-tpass
+    title: Central Changhua–Taichung–Nantou–Miaoli public-transport pass
+    titleOriginal: 中彰投苗公共運輸定期票
+    publisher: Changhua County Government Transportation Department (彰化縣政府交通處)
+    url: https://traffic.chcg.gov.tw/dlfile.aspx?file=2&file_id=437496&sid=126
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full PDF states a 30-day unlimited-use period and region-defined rail/bus scope; it is not used as universal route payment proof.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -366,6 +483,10 @@ The seventh entry is [Chiayi City and County regional buses](/bus/regional/chiay
 The eighth entry is [Keelung regional buses](/bus/regional/keelung/).[^keelung-route-tdx] Its 6 September 2026 snapshot contains 116 route records and 168 supplied variants, while the city’s transfer-station notice adds the two-zone terminal boundary, the South Station exception and the named city/intercity route groups.[^keelung-terminal-current] The TPASS 288 notice is kept as a dated payment-sales source rather than a universal fare claim.[^keelung-tpass] The city’s TDX award is recorded as a data-cooperation result rather than a passenger-service grade, and the dated route-506 detour notice illustrates why service-change notices remain separate from the static route layer.[^keelung-tdx-award][^keelung-506-current]
 
 The ninth entry is [Hualien regional buses](/bus/regional/hualien/). It adds the county’s current TPASS operator and route boundary, public-transport pass scope, Hualien Transfer Station MaaS role and the 2026 evaluation-report announcement to the structured Hualien discovery layer.[^hualien-tpass][^hualien-maas][^hualien-evaluation-notice] The evaluation scores remain TBC because the linked report PDF could not be fetched in full during this verification.[^hualien-evaluation-notice]
+
+The tenth entry is [Yilan regional buses](/bus/regional/yilan/). Its 7 September 2026 TDX snapshot contains 72 route records and 187 supplied variants, with eight operator labels preserved as a source-derived mix of bus companies and county/township authorities.[^yilan-route-tdx] The county's stated transport remit, current fare summary, four separately described Taiwan Tourist Shuttle lines, Yilan-area transfer-station guidance and TRA's published station/transfer-bus access points are kept as editorial context rather than flattened into one timetable or a confirmed timed interchange.[^yilan-transport-department][^yilan-local-transport][^yilan-tourism-arrival][^yilan-tra-transfer]
+
+The eleventh entry is [Changhua regional buses](/bus/regional/changhua/). Its 7 September 2026 TDX snapshot contains 17 route records and 46 supplied variants, while the county's 11409 city-bus list preserves operator, service-area and route-variant context above that structured layer.[^changhua-route-tdx][^changhua-citybus-list] Route 6's Yuanlin Transfer Station corridor, Route 7's fully electric Yuanlin–THSR Changhua–Tianzhong line and Route 8's Tianzhong–Xizhou service add high-value published endpoints without being promoted to timed rail interchanges.[^changhua-route-6][^changhua-route-7][^changhua-route-8] The page also records the county's published management/evaluation remit and central-region pass boundary without treating either as a current score table or universal payment rule.[^changhua-transport-contact][^changhua-evaluation-rules][^changhua-tpass]
 
 ## Coverage
 
