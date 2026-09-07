@@ -2,7 +2,7 @@
 title: Hsinchu regional buses
 description: A dated snapshot of Hsinchu city and county buses, route terminals, published departures and fare links.
 summary: The Hsinchu iBus portal's city, county express, Zhubei, tourist and medical-bus categories, preserved as a dated route and stop data layer.
-updated: 2026-08-28
+updated: 2026-09-07
 facts:
   - label: Route entries
     value: "68"
@@ -17,7 +17,8 @@ facts:
     value: "970"
     source: hsinchu-detail
   - label: Fare values
-    value: TBC
+    value: "Scoped: city Blue 1 and Route 9"
+    source: hcbus-city-fares
   - label: Ridership
     value: TBC
 specs:
@@ -40,7 +41,8 @@ specs:
     value: "3"
     source: hsinchu-portal
   - label: Fares in committed layer
-    value: TBC
+    value: "City Blue 1 and Route 9 only"
+    source: hcbus-city-fares
 sources:
   - id: hsinchu-portal
     title: Hsinchu City Government iBus public-transport portal
@@ -60,6 +62,24 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official POST response for each selected route value; it supplied the operator, direction labels, run identifiers, published departure strings and fare-link URLs.
+  - id: hcbus-city-fares
+    title: Hsinchu city-bus route information
+    titleOriginal: 新竹市區公車
+    publisher: Hsinchu Bus Co., Ltd. (新竹汽車客運股份有限公司)
+    url: https://www.hcbus.com.tw/big5/information-2.asp
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The operator's full current route-information page displays NT$15 full and NT$8 half for the selected Blue 1 zone route, and says timetable information may change at stop notices.
+  - id: hsinchu-route-9-fare-table
+    title: Hsinchu County Route 9 bus fare table
+    titleOriginal: 新竹縣快捷9號公車票價表
+    publisher: Hsinchu County Government (新竹縣政府), document attachment hosted by National Yang Ming Chiao Tung University
+    url: https://bulletinboard.nycu.edu.tw/api/files/20250800075/%E9%99%84%E4%BB%B61-%E5%BF%AB%E6%8D%B79%E8%99%9F%E7%A5%A8%E5%83%B9%E8%A1%A8.pdf
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full one-page fare table headed 新竹縣快捷9號公車票價表 lists one-section full/student/half fares of NT$15/12/8 and two-section fares of NT$30/24/16. The document is used only for Route 9, not generalized to every Hsinchu route category.
   - id: hsinchu-roadline
     title: Hsinchu iBus route stop and geometry response
     titleOriginal: 路線圖站序資料
@@ -162,7 +182,7 @@ That distinction matters on circular and short-working services. For example, th
 
 The portal publishes departure strings such as 0805,0845,1225,1310,1425,1640,1805 for route 2's outward run, and it exposes separate return runs where they exist.[^hsinchu-detail] Across the retrieved direction records, the committed layer preserves 970 departure values. That is a count of published timetable values, not a headway calculation and not a promise that every trip operates on every day.[^hsinchu-detail] The portal's current-notice stream shows why the retrieval date belongs beside the data: it carried a dated Green Line summer-timetable notice and temporary stop-adjustment notices during the same period.[^hsinchu-notices]
 
-The detail response provides a linked 票價 page for routes, but it does not include a fare amount in the response used here.[^hsinchu-detail] Fare values therefore remain TBC. A later fare layer needs to fetch the linked route-level fare records, identify the effective date and concession rules, and preserve any conflict with a city or operator notice; the presence of a link is not evidence of a current numeric fare.[^hsinchu-detail]
+The detail response provides a linked 票價 page for routes, but it does not include a fare amount in the response used here.[^hsinchu-detail] The Hsinchu Bus operator's current route-information page displays NT$15 full and NT$8 half for the selected city-bus route, but that page is route-specific and is not treated as a universal fare for every category in the portal.[^hcbus-city-fares] A separate full Route 9 fare table lists one-section fares of NT$15 full, NT$12 student and NT$8 half, and two-section fares of NT$30 full, NT$24 student and NT$16 half.[^hsinchu-route-9-fare-table] Numeric fares for the remaining city/county, Zhubei, tourist and medical selections remain TBC until their linked route records and effective dates are fetched; the presence of a fare link is not evidence of a current numeric fare.[^hsinchu-detail]
 
 ## Boundary, history and gaps
 
