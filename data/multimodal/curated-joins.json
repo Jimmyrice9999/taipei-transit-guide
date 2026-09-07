@@ -11,6 +11,26 @@
       "evidence": "official-access-chain",
       "source": "motc-matsu-office",
       "note": "The official access page gives airport bus to Fuao Village stop and an approximate walk to the passenger transport building; it does not establish a timed sailing connection or a stop-ID interchange."
+    },
+    {
+      "id": "taitung-airport-fugang-ferry-access-chain",
+      "from": "Taitung Airport",
+      "to": "Fugang Fishing Port",
+      "modePair": "air-ferry",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "taitung-island-transport",
+      "note": "Taitung County's official island-transport page names Taiwan Tourist Shuttle, Xingdong Bus or taxi from Taitung Airport to Fugang before boarding the Green Island or Orchid Island ferry; it does not establish a timed transfer or direct airport-to-pier service."
+    },
+    {
+      "id": "taitung-rail-fugang-ferry-access-chain",
+      "from": "Taitung Railway Station",
+      "to": "Fugang Fishing Port",
+      "modePair": "rail-ferry",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "taitung-island-transport",
+      "note": "Taitung County's official page says passengers can continue from the railway station by Taiwan Tourist Shuttle, Xingdong Bus or taxi to Fugang; this is an access chain, not evidence of a direct rail platform, timed transfer or guaranteed sailing connection."
     }
   ]
 }

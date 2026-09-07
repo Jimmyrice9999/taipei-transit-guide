@@ -16,6 +16,14 @@ const allowedConfirmedEvidence = new Set([
   'stop-id-geometry',
 ])
 
+const allowedStatuses = new Set([
+  'confirmed-interchange',
+  'published-access-chain',
+  'nearby-unconfirmed',
+  'scheduled-connecting-service',
+  'no-evidence',
+])
+
 test('multimodal join ids and evidence references are structurally unique', () => {
   const ids = joinData.joins.map((join) => join.id)
   assert.equal(new Set(ids).size, ids.length, 'duplicate multimodal join id')
@@ -24,6 +32,9 @@ test('multimodal join ids and evidence references are structurally unique', () =
     assert.ok(join.from.trim(), `${join.id} has no origin`) 
     assert.ok(join.to.trim(), `${join.id} has no destination`)
     assert.ok(join.source.trim(), `${join.id} has no source id`)
+    assert.ok(join.status.trim(), `${join.id} has no status`)
+    assert.ok(allowedStatuses.has(join.status), `${join.id} uses unknown status ${join.status}`)
+    assert.ok(join.note.trim(), `${join.id} has no evidence boundary note`)
     assert.ok(allowedEvidence.has(join.evidence), `${join.id} uses unknown evidence ${join.evidence}`)
   }
 })

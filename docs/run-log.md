@@ -29314,3 +29314,24 @@ reported:
     ℹ tests 147
     ℹ pass 147
     ℹ fail 0
+## Run 319 — multimodal access-chain expansion
+
+Read `data/multimodal/curated-joins.json` and its permanent unit test before
+extending it. The existing Matsu Fuao record already captures an official
+airport→bus-stop→passenger-building chain without claiming a timed ferry
+connection.
+
+The Taitung County Government's full `離島交通` page was used for two more
+records: Taitung Airport→Fugang Fishing Port and Taitung Railway Station→Fugang
+Fishing Port. The source explicitly says passengers can continue by Taiwan
+Tourist Shuttle, Xingdong Bus or taxi before boarding the Green Island or
+Orchid Island ferry. These are `published-access-chain` records with
+`official-access-chain` evidence; they are deliberately not
+`confirmed-interchange` records and do not assert a direct platform, timed
+transfer, stop-ID join or guaranteed sailing connection.
+
+`tests/multimodal-joins.test.mts` now also requires every join to have a known
+status and a non-empty evidence-boundary note, while keeping confirmed joins
+restricted to official shared-complex or stop-ID/geometry evidence. The
+focused unit suite completed without a failure. The data change is pending its
+coherent fast-gate commit.
