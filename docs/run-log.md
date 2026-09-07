@@ -29579,3 +29579,72 @@ ad4c256c, 526dced2, f21f4c38, 6bdeb090, aff868bf, 81c65508, 079b69d4 and
 f77aba13. Final handoff/push-proof documentation is the remaining coherent
 commit after this entry; GitHub Actions remains unknown locally because `gh`
 and the GitHub API are unavailable.
+
+### Run 319 continuation — dated ferry, regional policy and multimodal depth (7 September 2026)
+
+The continuation stayed in the same one-writer MAIN session. No scout writers
+were used, no git operations were delegated, and the known generated/untracked
+baseline remained 5,214 status entries after each pushed commit. The continuation
+began at `b09e49bb` and added four pushed production batches:
+
+- `f727ff83 Run 319: add Pingtung service evaluation status` adds the official
+  National Audit Office follow-up to the Pingtung regional bus page and research.
+  The full audit page, fetched 7 September 2026, says Pingtung adopted its
+  evaluation execution rules on 18 November 2025 and completed its 112 and
+  113年度 city-bus evaluations in June 2026. Scores remain TBC because the audit
+  page confirms completion and intended publication but does not contain a score
+  table. The batch gate reported `citations: clean`, `marker-audit: clean (1911
+  Markdown files checked)`, current conflicts/search/font checks, `research: 322
+  file(s), 1246 recorded as checked and failed`, and 148 passing fast tests.
+
+- `023f6cd1 Run 319: add dated Green Island operator snapshot` adds a full
+  Farnlin date query for 7 September 2026 to the Green Island ferry page and
+  research. The operator calendar displayed 09:30, 11:30 and 13:30 from Taitung
+  and 10:30, 12:30 and 14:30 from Green Island; the first two pairs were labelled
+  `豪華客輪` and the last pair `凱旋3號`. This is retained as a date-specific
+  operator result beside the East Coast scenic-area page's five-sailing seasonal
+  reference, not averaged into a single daily count. The batch gate reported
+  `citations: clean`, `marker-audit: clean (1911 Markdown files checked)`,
+  `research: 322 file(s), 1247 recorded as checked and failed`, and all fast
+  tests passing.
+
+- `1c625343 Run 319: add municipal bus evaluation comparison` adds
+  `/bus/service-quality/` plus its research file and links it from the bus index.
+  Full official material now records a source-defined comparison for Kaohsiung's
+  multi-period archive, Taichung's 109年度 report (five categories, 32
+  indicators, 17 operators and 234 routes), Tainan's current plan listing, and
+  Pingtung's 2025/2026 audit follow-up. The page explicitly refuses a national
+  score ranking because years, categories, route scopes and publication layers
+  differ. Search regenerated to 2,128 entries (1,427 with Chinese names); the
+  corrected fast gate reported 1,912 content Markdown files, 1,852 with a
+  sources block, `citations: clean`, `marker-audit: clean`, current generated
+  indexes, `font-check: clean (2296 Han characters in 2+ character runs, all
+  covered)`, `research: 323 file(s), 1250 recorded as checked and failed`, and
+  no unit-test failures.
+
+- `ce534277 Run 319: extend curated airport access chains` adds three explicit
+  `published-access-chain` records to `data/multimodal/curated-joins.json`:
+  Kaohsiung International Airport to the Kaohsiung Airport MRT station from the
+  airport history page; Penghu Airport to its public-bus stop from the airport's
+  ground-transport page; and Hualien Airport to Ubus 311A from the airport's
+  external-transport page. None is promoted to a confirmed/timed interchange.
+  The fast gate reported `citations: clean`, `marker-audit: clean (1912 Markdown
+  files checked)`, current conflicts/search/font checks, `research: 323 file(s),
+  1250 recorded as checked and failed`, and passing tests.
+
+The fresh continuation adversarial check was allowed to complete its full
+fixture-build cycle. Actual output was:
+
+    16/16 cases behaved as specified
+
+Its temporary `zz-*` fixtures were removed by the harness; no deliberate source
+change was left unstaged. The remote/local proof after the latest commit was:
+
+    ce534277 Run 319: extend curated airport access chains
+    ce534277 Run 319: extend curated airport access chains
+
+The baseline remains 5,214 status entries. The added research seams preserve
+the earlier Run 319 boundaries: a route-family ferry count remains TBC where
+official directory, operator and date-query units differ; domestic aviation
+remains a dated September workbook snapshot; and access-chain evidence is not
+treated as a timed or confirmed interchange.
