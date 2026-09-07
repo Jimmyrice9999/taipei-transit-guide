@@ -28029,6 +28029,116 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+### Run 318 closing verification and handoff
+
+Run 318 ran on 2026-09-06/07. The initial repository state was the known Run
+317 generated-artifact baseline (approximately 5,212 status entries; the raw
+final status after fresh browser output printed 5,214 entries). Those entries
+are not a cleanup target: no screenshots, PDFs, probes, `.unsnooze/` content or
+generated audit output was staged. No scout worker was available in this
+environment, so primary-source work was performed sequentially in the main
+session under the one-writer rule; no concurrent writers or git users were used.
+
+The first hard blocker was reproduced at exact CSS width 320px. The browser
+harness reported `/en/bike/` overflowing by 6px and selected that same page in
+both canonical and extreme slots; focused DOM measurement isolated the
+intrinsic `.coverage-ledger-total` item, whose minimum-content width pushed the
+document by 1px in the focused reproduction. The production fix is in
+`app/[locale]/globals.css`: `.coverage-ledger-total` now has `min-width: 0`,
+`max-width: 100%`, and `overflow-wrap: anywhere`. No body clipping, hidden
+content, or relaxed browser threshold was used. The focused width matrix for
+the bike, bus, ferry, air and regions atlas pages was clean at 320, 375, 390,
+414, 428 and 1024px.
+
+The post-fix bounded browser command ended with:
+
+    Browser verification mode=template; corpus=4256 pages; templates=79;
+    pages visited=157 (canonical=79, extremes=78); workers=3
+    ✓ no page produces a document-level horizontal scrollbar
+    ✓ no painted box in .page-main runs under the spine
+    ✓ section-bus-en 290/976 reachable (10 beyond traversal cap)
+    ✓ zero violations across 157 pages
+    ✓ interactive-network-map-en: 713 linked stations; zoom=true; pan=true
+    ✓ interactive-network-map-zh-Hant: 713 linked stations; zoom=true; pan=true
+    1344 screenshots → docs/screenshots/
+    369 screenshot(s) clipped to stay under Chromium's capture limit
+    78/78 print PDFs
+    ✓ browser verification clean
+
+The required exhaustive command was then run once. It completed with:
+
+    Browser verification mode=full; corpus=4256 pages; pages visited=4256;
+    ✓ no page produces a document-level horizontal scrollbar
+    ✓ no painted box in .page-main runs under the spine
+    ✓ zero violations across 4256 pages
+    4557 screenshots → docs/screenshots/
+    1038 screenshot(s) clipped to stay under Chromium's capture limit
+    268/268 print PDFs
+    ✓ browser verification clean
+
+The screenshot clips are expected Chromium 12,000px capture-limit warnings for
+very long data, source, route and history pages; they are recorded in
+`docs/browser-verification.json`, not treated as horizontal-overflow failures.
+Visual inspection covered the desktop and 320px mobile homepage, `/en/bike/`,
+ferry routes, `/en/regions/`, dense station data, and a Traditional Chinese
+article; the wordmark and hierarchy were legible.
+
+Final fresh adversarial output:
+
+    16/16 cases behaved as specified
+
+Final `gate:fast` output:
+
+    citations: 1900 content files, 1841 with a sources: block
+      8871 citations resolved — 8322 to primary sources, 549 to secondary
+    marker-audit clean (1900)
+    conflicts current; search current
+    font-check clean (2294 Han chars)
+    research 313 files, 1210 failed
+    tests 145 pass 0 fail
+
+Final `gate:full` output included:
+
+    Generating static pages using 23 workers (6128/6128)
+    postbuild: 5341 pages checked against the Han subsets — no missing glyphs.
+    Checked 2825326 internal links across 5341 pages.
+      ✓ no broken links
+      ✓ every #fragment resolves
+      ✓ no orphan pages
+    a11y: Checked 4257 pages. ERRORS ✓ no errors. WARNINGS ✓ no warnings.
+    claims: sourced 27744; TBC 4691; ASSERTED 0
+    tests 245; pass 245; fail 0
+    research: 313 file(s), 1210 recorded as checked and failed.
+    research: clean.
+    ✓ all 11 badges clear 4.5:1 as authored — no real failure exists
+
+The run's coherent implementation commits, in chronological order, were:
+
+    6ce17a2d Run 318: fix bike atlas mobile overflow
+    572ba50a Run 318: add national TDX bus discovery
+    662a1ec5 Run 318: add MOOVO public-bike coverage
+    d52073ac Run 318: add Small Three Links route family
+    7ca6ccc7 Run 318: deepen Taitung rural transport
+    1843aa4d Run 318: add national ferry inventory
+    8515aaac Run 318: expose Daily Air in aviation atlas
+    35b80b6f Run 318: add Hsinchu Bus operator depth
+    961ef1f4 Run 318: add Matsu ferry nodes and join guard
+    8403daae Run 318: deepen national fare boundaries
+    4d890135 Run 318: add Keelung transfer node
+    a36e1bf9 Run 318: repair national bus operator names
+    f1617ba6 Run 318: expose national bus route directory
+    b1057566 Run 318: add Budai ferry terminal depth
+    4aee5060 Run 318: expose TDX bus operator signals
+    dc937870 Run 318: add Taipei rehabilitation-bus depth
+    07148694 Run 318: deepen New Taipei accessible transport
+    e16e630d Run 318: harden national bus mobile summaries
+    546dffc6 Run 318: fix national Han-language rendering
+    1a0d938b Run 318: fix summary keyboard traversal identity
+
+The closing documentation commit follows this record; the production
+implementation head before it is `1a0d938b`. GitHub Actions remains unknown locally because `gh` is
+unavailable and direct GitHub API access is blocked.
+
 ### New Taipei large Rehabilitation Bus depth
 
 The accessible-transport wave continued with a separate group-service page
