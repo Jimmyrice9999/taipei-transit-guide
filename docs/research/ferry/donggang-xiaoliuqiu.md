@@ -2,8 +2,8 @@
 
 **Research file — leads, not sources.** The existing research corpus is a lead index. Every promoted claim below was checked against the full official page named in the record.
 
-**Version 1.0 — 6 September 2026**
-**Status: current official verification for `content/ferry/routes/donggang-xiaoliuqiu.md`.**
+**Version 1.1 — 7 September 2026**
+**Status: current official verification for `content/ferry/routes/donggang-xiaoliuqiu.md`; operator pages were re-fetched on 7 September 2026.**
 
 ## What is established
 
@@ -23,6 +23,14 @@
 
 - **The official Liuxing record names the English vessel name as LIU XIN, official number 016441, passenger certification 149, gross tonnage 178, construction month October 2021, and survey validity through 25 October 2026.** **Source:** same full official vessel page, PRIMARY, High confidence because each field was visible in the fetched record. Original-language basis: `英文船名 Name LIU XIN`, `船舶號數 Official No. 016441`, `建造年月 Date of Built 110年10月`, `乘客定額 ... 149 人`, `總噸位 ... 178` and `檢查效期 到115年10月25日止`.
 
+### Current operator-scoped service evidence
+
+- **The Dongliu joint-operation office published a seasonal 2026 service adjustment effective 1 June through 30 September, restoring an 08:00 Donggang departure and a 13:00 Xiaoliuqiu departure.** The same page says extra sailings may be added for demand and names six vessels: `光輝`, `東昇`, `群益`, `飛馬`, `翔信` and `誠翔`. **Source:** *Dongliu Line Joint Passenger-ship Office*, titleOriginal `東琉線交通客船聯營處`, `https://www.tungliu.com/`, PRIMARY, High confidence because the full operator page was fetched on 7 September 2026 and the notice itself states `115/6/1～115/9/30`, `東港 08:00`, `小琉球 13:00`, and the vessel names. This is a dated operator notice, not a route-wide timetable.
+
+- **The Dongliu FAQ says the route normally takes about 15–25 minutes depending on sea conditions, requires identity documentation for the real-name boarding rule, opens the Donggang ticket counter at 06:30, and does not offer reserved seating.** **Source:** *Dongliu Line frequently asked questions*, titleOriginal `常見問題`, `https://www.tungliu.com/5`, PRIMARY, High confidence because the full FAQ page was fetched on 7 September 2026. Original-language basis: `船程約 15~25 分左右`, `購買船票需提供身份證明文件`, `東港站現場開放取票時間為早上6:30` and `本公司暫無劃位服務`.
+
+- **Taifu’s live booking page displays an operator-specific round-trip full fare of NT$450 and half fare of NT$225, requires ticket exchange 40 minutes before sailing, and describes document requirements for resident/discount tickets.** **Source:** *Taifu International Shipping online booking and passenger contract*, titleOriginal `東琉線泰富輪船`, `https://www.tfship.com.tw/taifu/internet_ticket.aspx`, PRIMARY, High confidence because the full booking page was fetched on 7 September 2026. Original-language basis: `來回 ( 全票 450元/半票 225元 )`, `請於訂票開船前40分鐘辦理換票手續` and `凡購買居民票、居民優惠票、居民親屬票者、請出示相關證件`. This is not a route-wide fare.
+
 ## Conflicts
 
 - The Maritime and Port Bureau groups both Donggang–Xiaoliuqiu and Yancheng–Xiaoliuqiu on the same ticket page, but assigns different operator sets to them. This page keeps them as separate route families: Donggang–Xiaoliuqiu has four listed entries; Yancheng–Xiaoliuqiu has two. No source read here justifies treating every Xiaoliuqiu sailing as interchangeable.
@@ -34,6 +42,8 @@
 - **All current vessels on the route** — one official Liuxing vessel detail was fetched successfully on 6 September 2026. The Bureau’s broader vessel-list surface did not yield a complete, stable route-wide vessel roster in the material read for this page; no total is claimed.
 - **Current bus/rail interchange** — no full primary source was read on 6 September 2026 that proves a specific bus-to-ferry or rail-to-ferry interchange for this route. Nearby-name joins are not promoted.
 
+- **A complete common timetable or fare across all Donggang operators** — checked 7 September 2026. The Dongliu and Taifu pages add operator-scoped evidence, but neither establishes that all four operators share one fare or one timetable. The route-wide fields remain TBC.
+
 ## Stated gaps
 
-This page still needs operator-specific current fares, sailing calendars, booking rules, vehicle carriage rules and a complete vessel roster. The route operator pages linked from the Bureau’s ticket directory, a dated local-government transport notice, or a fresh official timetable/PDF would settle those fields. The current route family is nevertheless established by the Bureau’s own directory and vessel record.
+This page still needs the complete current vessel roster, operator-specific full sailing calendars and a route-wide fare comparison. The official sources now establish a dated Dongliu seasonal adjustment, one operator’s booking fare and the joint operation’s named fleet, but those values are intentionally not generalized across the route family.
