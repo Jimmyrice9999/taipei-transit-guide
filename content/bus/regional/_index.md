@@ -192,6 +192,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full December 2025 policy report describes the 桃小巴/trunk-bus boundary and staged payment integration.
+  - id: pingtung-route-tdx
+    title: Pingtung County city-bus route snapshot
+    titleOriginal: 屏東縣公車路線資料（TDX Route/City/PingtungCounty）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/PingtungCounty?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated national pull records Pingtung RouteUID-oriented records, supplied SubRoutes variants and operator labels.
+  - id: pingtung-operator-overview
+    title: Pingtung Bus current overview and history
+    titleOriginal: 屏客故事
+    publisher: Pingtung Bus Co., Ltd. (屏東汽車客運股份有限公司)
+    url: https://www.ptbus.com.tw/intro/197/1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full operator overview states its route-scope and dated electric-bus deployment.
+  - id: pingtung-schedule-513
+    title: Pingtung railway-station circular route timetable and fare zones
+    titleOriginal: 屏東火車站環繞線
+    publisher: Pingtung Bus Co., Ltd. (屏東汽車客運股份有限公司)
+    url: https://www.ptbus.com.tw/product_info/0/1/513
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full operator timetable and fare-zone page.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -205,6 +232,8 @@ The third entry is [Tainan regional buses](/bus/regional/tainan/).[^tainan-route
 The fourth entry is [Kaohsiung regional buses](/bus/regional/kaohsiung/).[^kaohsiung-route-index][^kaohsiung-route-tdx] Its live TDX snapshot preserves 316 route records, 617 direction runs and 19,191 ordered stops, while the municipal index's separate 197-route count remains published as a scope conflict.[^kaohsiung-route-tdx][^kaohsiung-stop-tdx][^kaohsiung-route-index] The city's 公車式小黃 service is kept as a documented service category rather than merged into a conventional fixed-route timetable.[^kaohsiung-yellow]
 
 The fifth entry is [Taoyuan regional buses](/bus/regional/taoyuan/).[^taoyuan-route-tdx] Its 7 September 2026 TDX snapshot contains 412 route records and 714 supplied variants; the page uses the city’s current 106-to-5014 restructuring to explain how a corridor change, operator/service policy and dated fare evidence sit above the structured discovery layer.[^taoyuan-route-tdx][^taoyuan-106-5014] 桃小巴 is kept as a local policy/service category rather than flattened into a generic route taxonomy.[^taoyuan-dual-bus-plan]
+
+The sixth entry is [Pingtung regional buses](/bus/regional/pingtung/).[^pingtung-route-tdx] Its 7 September 2026 TDX snapshot contains 123 route records and 333 supplied variants, while Pingtung Bus’s current pages add route-specific timetable, fare-zone and accessibility evidence without pretending to reconcile every county, highway, township and tourist publication layer into one total.[^pingtung-route-tdx][^pingtung-operator-overview][^pingtung-schedule-513]
 
 ## Coverage
 

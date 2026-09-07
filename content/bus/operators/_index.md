@@ -57,6 +57,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The current operator homepage, fetched with August 2026 notices, identifies current 9003 and 9010 timetable/stop notices and the company's Hsinchu address/contact information.
+  - id: pingtung-story
+    title: Pingtung Bus current overview and history
+    titleOriginal: 屏客故事
+    publisher: Pingtung Bus Co., Ltd. (屏東汽車客運股份有限公司)
+    url: https://www.ptbus.com.tw/intro/197/1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full operator overview states current route scope, vehicle overview, QR-payment milestones and the February 2026 electric-bus deployment.
+  - id: pingtung-profile
+    title: Pingtung Bus company profile
+    titleOriginal: 企業簡介
+    publisher: Pingtung Bus Co., Ltd. (屏東汽車客運股份有限公司)
+    url: https://www.ptbus.com.tw/intro/198/1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full company profile states the group and Pingtung service scope, operating stations and maintenance facilities.
+  - id: pingtung-stations
+    title: Pingtung Bus service locations
+    titleOriginal: 服務據點
+    publisher: Pingtung Bus Co., Ltd. (屏東汽車客運股份有限公司)
+    url: https://www.ptbus.com.tw/intro/0/0?status=12
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full directory lists Pingtung, Chaozhou, Donggang, Fangliao, Hengchun and high-speed rail/airport service points.
 ---
 
 The committed TDX pull contains 61 operator records associated with 1051 route records [^tdx-bus-operator-pull].
@@ -73,6 +100,11 @@ notices.[^xingdong-home][^xingdong-8101]
 operator pages preserve the distinction between the company's historical route
 scope, its 2024 regional-service transition notice and its current homepage
 notices for 9003 and 9010.[^hcbus-about][^hcbus-transition][^hcbus-home]
+
+[Pingtung Bus](/bus/operators/pingtung-bus/) is a third regional profile. Its
+official pages publish a current route-scope statement, operating hubs, QR-payment
+milestones and a dated 2026 Hengchun electric-bus deployment; route-specific
+timetables remain separate from the profile.[^pingtung-story][^pingtung-profile][^pingtung-stations]
 
 - [Taipei Bus Co., Ltd. — NewTaipei](/bus/operators/taipeibus-1m9ums8/) — 126 route records [^tdx-bus-operator-pull]
 - [SanChungBus — NewTaipei](/bus/operators/sanchungbus-1lzv139/) — 72 route records [^tdx-bus-operator-pull]

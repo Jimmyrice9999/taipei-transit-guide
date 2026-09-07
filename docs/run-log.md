@@ -28053,6 +28053,26 @@ The Taoyuan batch initially failed the fast gate because the research checker re
     ℹ pass 147
     ℹ fail 0
 
+## Run 319 — Pingtung regional and operator depth
+
+The next regional batch targeted Pingtung, where the national TDX discovery layer already had records but no county/operator editorial overlay. Full primary pages from Pingtung Bus were fetched on 2026-09-07: its current overview/history, company profile, service locations, and route pages for 513, 8227, 8203 and 101. The route pages display a 2026-08-26 timetable update and route-specific departures, fare-zone tables and accessibility markings.
+
+The new Pingtung regional page records the 7 September TDX measurement of 123 route records, 333 supplied variants and 20 operator labels without collapsing those into a permanent county route total. It adds the route 513 railway-station circular example, the 8227 Sandimen/eastern foothill service, the 8203 Pingtung–Donggang corridor and route 101’s Hengchun/Marine Biology service boundary. The operator profile records Pingtung Bus’s own 38 highway-route, 25 county-route and 263-commercial-vehicle overview, nine operating stations/two maintenance facilities from its company profile, QR-payment milestones and 10 electric buses introduced in Hengchun/Kenting from 2026-02-10.
+
+The first corrected fast gate for this batch exposed two implementation contracts: a fact-panel spec needed a separate numeric `unit`, and an unused source block on the operator index needed removal. Both were fixed without changing tests or claims baselines. The corrected gate output was:
+
+    citations: clean.
+    marker-audit: clean (1904 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 316 file(s), 1220 recorded as checked and failed.
+    research: clean.
+    ✔ unsourced assertions have not increased (932.4019ms)
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0
+
 ### Run 319 — current ferry directory and domestic-air snapshot
 
 The next sequential research batch re-fetched the full MPB ticketing directory
