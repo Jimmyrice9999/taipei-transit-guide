@@ -200,6 +200,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full official Yilan page shows the directory fields, 2026-09-07 update date, ten visible first-page records and their route-specific stop fields; it is not used as a complete county-wide timetable.
+  - id: hualien-happiness-directory
+    title: Hualien Happiness Bus service introduction
+    titleOriginal: 幸福巴士服務介紹
+    publisher: Hualien County Government (花蓮縣政府)
+    url: https://www.hly.tw/HappinessBus/info
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full current county page describes fixed/flexible operation, the displayed 80-area/281-route count, 47 rural areas/209 routes and 11 township groups with named route links.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -213,6 +222,8 @@ For access-limited transport, eligibility, booking channel, service area and far
 The Highway Bureau's inventory page is the national discovery surface: it names all 22 jurisdiction filters and exposes service type, area, route name, stop pattern and route-modification date.[^thb-happiness-inventory][^thb-national-drt-directory] The February 2026 MOTC report is the dated national measurement currently safe to quote: 507 services across 193 townships/districts, including 247 routes in 64 rural areas, and 95.10% rural public-transport coverage.[^motc-happiness-2026]
 
 ## Regional evidence
+
+- [Hualien Happiness Bus](/bus/drt/hualien-happiness-bus/) — county directory scope, fixed/flexible operation, named township groups and the separate national-count boundary.[^hualien-happiness-directory][^motc-happiness-2026]
 
 - [Hsinchu regional buses](/bus/regional/hsinchu/) — city, county, tourist, medical and other portal categories.[^hsinchu-community-source]
 - [Taichung regional buses](/bus/regional/taichung/) — city buses and 26-route 小黃公車 layer.[^taichung-yellow-source]

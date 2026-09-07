@@ -29684,6 +29684,37 @@ corrected gate output was:
     ℹ fail 0
     native_exit=0
 
+### Run 319 continuation batch — Hualien Happiness Bus depth (7 September 2026)
+
+The next rural-transport batch used the full current Hualien County Happiness
+Bus directory at `https://www.hly.tw/HappinessBus/info`, fetched 7 September
+2026. The county page describes county/township government as the usual
+operating authority, with some services commissioned to bus companies, taxi
+companies, local groups or individuals. It distinguishes fixed-route,
+fixed-schedule operation from flexible reservation service and displays 80
+townships/areas, 281 routes, 47 rural areas and 209 routes in that rural-area
+display. It also exposes 11 named township groups and 30 named route links.
+
+Those county-directory measurements were not added to the separate MOTC
+February 2026 national measurement of 507 services across 193
+townships/districts. The difference is retained as a scope conflict rather
+than presented as a sum or a corrected total. The linked Highway Bureau route
+pages were fetched through the official site; several redirected to the
+Bureau's default page, so route-level stops, operating days, fares, booking
+contacts and contractors remain TBC. The failure is recorded in
+`docs/research/bus/hualien-happiness-bus.md`.
+
+The new page is `content/bus/drt/hualien-happiness-bus.md`, with the index,
+research record and generated search/conflict indexes updated. The first gate
+attempt caught a real font-subset regression caused by the new Han character
+`体`; no baseline or claims threshold was changed. Following the required fresh
+build → `npm run fonts` → fresh build sequence, `npm run font:check` reported
+2297 Han characters in 2+ character runs, all covered. The corrected fast gate
+reported 1,914 content files, 1,855 source blocks, 8,980 resolved citations
+(8,431 primary / 549 secondary), 1,914 clean marker-checked files, current
+conflict and search indexes, 325 research files with 1,254 checked failures,
+clean research, no increase in unsourced assertions, and 148/148 unit tests.
+
 ### Run 319 continuation batch — Hualien regional bus overlay (7 September 2026)
 
 Hualien was the next registry-only jurisdiction promoted to an editorial
