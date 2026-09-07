@@ -20,6 +20,10 @@ facts:
     value: 5 departures each direction
     unit: displayed seasonal reference; confirm before travel
     source: eastcoast-nsa-green-island-current
+  - label: Farnlin operator calendar on 2026-09-07
+    value: 3 departures from Taitung and 3 returns displayed
+    unit: date-specific operator result; not a daily route guarantee
+    source: farnlin-green-island-calendar-2026-09-07
 specs:
   - label: One-way adult fare
     value: 560
@@ -101,6 +105,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The third pooled operator's own site, confirming its new vessel's first sailing on 28 March 2025; the page states no fare figures."
+  - id: farnlin-green-island-calendar-2026-09-07
+    title: "Farnlin route calendar — Taitung to Green Island, 7 September 2026"
+    titleOriginal: "船班資訊－台東 ⟺ 綠島"
+    publisher: Farnlin Shipping Co., Ltd. (帆利航運有限公司)
+    url: "https://www.farnlin.com.tw/calendar_main_routestand.html?date=2026-09-07&mon=&routestand=25&year="
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's full date-specific calendar displayed 09:30, 11:30 and 13:30 from Taitung and 10:30, 12:30 and 14:30 from Green Island; the vessel labels were two generic 豪華客輪 entries and one 凱旋3號 entry."
   - id: cwa-bluehighway
     title: "Blue Highway marine forecast"
     titleOriginal: "藍色公路"
@@ -125,6 +138,8 @@ The administration's page separately lists two different phone numbers for Uranu
 The East Coast National Scenic Area Administration's current traffic page displays a one-way adult fare of NT$560, half fare of NT$280 and insurance fare of NT$100, while warning that operator-published changes take precedence.[^eastcoast-nsa-green-island-current] Green Island Star's operator fare table gives the same one-way figures and a NT$1,120 round trip, with half fares at NT$280/NT$560 and an infant/insurance fare at NT$100/NT$200; that operator page states the price includes NT$2,000,000 of passenger accident insurance.[^greenstar-fares] Farnlin's own fare page for its Kaixuan service states the same one-way structure independently, and Taitung County's own tourism page corroborates the one-way figures.[^farnlin-fares][^taitung-tourism-island]
 
 The current government traffic page displays a five-sailing-each-direction snapshot: outbound 07:30, 09:30, 11:30, 13:30 and 15:30; return 08:30, 10:30, 12:30, 14:30 and 16:30.[^eastcoast-nsa-green-island-current] The same page says low- and high-season times differ and directs travellers to the Ship Tour Network for the current schedule; the displayed table is therefore a dated reference snapshot, not a promise that every listed sailing operates on every date.[^eastcoast-nsa-green-island-current] Green Island Star's operator page carries the same five-sailing base pattern and says peak holidays may receive extra sailings while off-season service may be reduced.[^greenstar-fares]
+
+Farnlin's full operator calendar query for 7 September 2026 displayed a narrower date-specific result: 09:30, 11:30 and 13:30 from Taitung, with returns at 10:30, 12:30 and 14:30.[^farnlin-green-island-calendar-2026-09-07] It labelled the first two pairs as `豪華客輪` and the last pair as `凱旋3號`; this is evidence of that operator's displayed date result, not proof that the government reference table was wrong or that all operators used the same sailing set.[^farnlin-green-island-calendar-2026-09-07]
 
 A search-derived claim that Uranus raised its fares from 5 March 2026, becoming more expensive than the other two pooled operators (NT$670 one-way / NT$335 half fare, versus NT$560/NT$280 for Kaixuan and Green Island Star, with no round-trip discount), could not be verified: Uranus's own site states no fares at all in the page read for this entry.[^tsang-jai] This is recorded as an unconfirmed claim, not as an established current fare.
 
