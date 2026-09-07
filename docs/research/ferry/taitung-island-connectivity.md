@@ -2,8 +2,8 @@
 
 **Research file — leads, not sources.** The existing ferry pages are a lead corpus; this verification pass checked the current full official pages before promoting their current status.
 
-**Version 1.0 — 6 September 2026**  
-**Status: current official verification for the existing Green Island and Orchid Island route pages.**
+**Version 1.1 — 7 September 2026**
+**Status: current official verification for the existing Green Island and Orchid Island route pages; Green Island traffic page re-fetched on 7 September 2026.**
 
 ## What is established
 
@@ -14,6 +14,7 @@
 - **The current official page states that Orchid Island schedules vary by low/high season, gives a Fugang crossing of about 2–3 hours, and names Houbihu–Orchid Island as about 2–2.5 hours with the Houbihu service suspended in the October–March low season.** **Source:** the same full official page, PRIMARY, High confidence. Original-language basis: `蘭嶼客船行駛船班依淡旺季不同會做調整`, `富岡漁港搭船出發，約2-3小時`, `後壁湖...約2~2.5小時` and `後壁湖-蘭嶼船班10-3月淡季停駛`.
 - **Taitung County's official island-transport page describes both air and sea alternatives: 15–20 minutes from Taitung to Green Island by air, about 25 minutes from Taitung to Orchid Island by air, 50 minutes by ferry to Green Island, 120 minutes by ferry to Orchid Island and 120–150 minutes from Houbihu to Orchid Island.** **Source:** *Outlying-island transport*, titleOriginal `離島交通`, Taitung County Government, `https://tour.taitung.gov.tw/zh-tw/traffic/island`, PRIMARY, High confidence because the full page was fetched on 6 September 2026. Original-language basis: the `臺東航空站 ↔ 綠島航空站 15~20分鐘`, `臺東航空站 ↔ 蘭嶼航空站 25分鐘`, `臺東富岡漁港 ↔ 綠島南寮漁港 50分鐘`, `臺東富岡漁港 ↔ 蘭嶼開元漁港 120分鐘` and `墾丁後壁湖 ↔ 蘭嶼開元漁港 120~150分鐘` entries.
 - **The county page identifies Fugang as the transfer point and says passengers can reach it from Taitung Airport or railway station by Taiwan Tourist Shuttle, Xingdong Bus or taxi.** **Source:** the same full county page, PRIMARY, High confidence. Original-language basis: `可由臺東航空站、火車站出發可搭乘台灣好行、興東客運...或計程車去富岡漁港搭船`.
+- **The current East Coast National Scenic Area Administration Green Island traffic page displays five sailings each way in its schedule table: Taitung to Green Island at 07:30, 09:30, 11:30, 13:30 and 15:30, and Green Island to Taitung at 08:30, 10:30, 12:30, 14:30 and 16:30.** It also gives a 50-minute crossing, a one-way adult fare of NT$560, half fare of NT$280 and insurance fare of NT$100, while directing travellers to the booking source because low/high-season schedules differ. **Source:** *Green Island traffic information*, titleOriginal `交通資訊－天堂島嶼`, East Coast National Scenic Area Administration, `https://www.eastcoast-nsa.gov.tw/greenisland/zh-tw/tour/traffic`, PRIMARY, High confidence because the full page was fetched on 7 September 2026. Original-language basis: the `船班時刻` table, `單程時間約50分鐘`, `全票$560`, `半票$280`, `保險票$100` and `淡旺季船班時間不同，請依船遊網為主` lines.
 
 ## Conflicts
 
@@ -24,6 +25,7 @@
 ## Checked and failed
 
 - **A stable current daily sailing count for either island route** — checked on 6 September 2026: the two official pages describe seasonal and weather-sensitive operations but do not publish a complete current daily count; the route pages retain dated operator evidence and TBC where needed.
+- **Whether every displayed Green Island sailing operates on every September 2026 date** — checked 7 September 2026: the current government page displays five times each way but says low/high-season schedules differ and sends travellers to the booking source for the current schedule. The snapshot is retained with that warning rather than treated as a guaranteed daily timetable.
 - **A route-specific weather-suspension threshold** — checked on 6 September 2026: the official pages tell passengers to check with operators and describe weather/tide changes, but do not state a numeric wind or wave threshold.
 - **A timed airport-to-Fugang interchange** — checked on 6 September 2026: the county page names available bus/taxi access from the airport and station but does not provide a timed airport–port connection that can be promoted as a direct join.
 - **Current Taitung–Green Island and Taitung–Orchid Island air timetable** — checked on 6 September 2026: the county page confirms the air alternatives and links to airport/carrier timetable surfaces, but does not print a current flight schedule in the fetched page; the aviation timetable remains a separate TBC seam.

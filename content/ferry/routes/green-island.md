@@ -1,7 +1,7 @@
 ---
 title: Green Island ferry services
-summary: Public ferry services linking Fugang Port, Taitung with Green Island, with dated schedules, fares and a genuine gap on published weather-suspension thresholds.
-updated: 2026-09-06
+summary: Public ferry services linking Fugang Port, Taitung with Green Island, with a dated official schedule display, current fare/access guidance and a genuine gap on published weather-suspension thresholds.
+updated: 2026-09-07
 aliases:
   - Lyudao ferry
   - 綠島交通船
@@ -16,6 +16,10 @@ facts:
   - label: Scheduled operators
     value: 3-4, named sources disagree on the count
     source: eastcoast-nsa-ferry
+  - label: Official schedule display at 2026-09-07 retrieval
+    value: 5 departures each direction
+    unit: displayed seasonal reference; confirm before travel
+    source: eastcoast-nsa-green-island-current
 specs:
   - label: One-way adult fare
     value: 560
@@ -29,6 +33,10 @@ specs:
     value: 5
     unit: sailings
     source: greenstar-fares
+  - label: Government page displayed one-way adult fare
+    value: 560
+    unit: NT$; page says operator changes take precedence
+    source: eastcoast-nsa-green-island-current
 sources:
   - id: eastcoast-nsa-ferry
     title: Ferries
@@ -48,6 +56,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The administration's dedicated Green Island subsite, corroborating the Fugang-Nanliao port pair and crossing time, and naming the seasonal Chenggong route."
+  - id: eastcoast-nsa-green-island-current
+    title: Green Island traffic and ferry information
+    titleOriginal: 交通資訊－天堂島嶼
+    publisher: East Coast National Scenic Area Administration (交通部觀光署東部海岸國家風景區管理處)
+    url: "https://www.eastcoast-nsa.gov.tw/greenisland/zh-tw/tour/traffic"
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The current official traffic page displays five Taitung–Green Island sailings in each direction (07:30–15:30 outbound and 08:30–16:30 return), says the crossing is about 50 minutes, gives one-way adult NT$560, half NT$280 and insurance NT$100, lists operator contacts, and explicitly says operator changes take precedence."
   - id: greenstar-fares
     title: "Green Island Star fares and timetable"
     titleOriginal: "綠島之星票價及船班時刻表"
@@ -105,9 +122,9 @@ The administration's page separately lists two different phone numbers for Uranu
 
 ## Fares and schedule
 
-Green Island Star's own current fare table gives a one-way adult fare of NT$560 and a round-trip fare of NT$1,120, with half fares (children under 12, seniors 65+, disabled) at NT$280/NT$560 and an infant/insurance fare for under-3s at NT$100/NT$200; the page states the price includes NT$2,000,000 of passenger accident insurance.[^greenstar-fares] Farnlin's own fare page for its Kaixuan service states the identical structure independently, and Taitung County's own tourism page corroborates the same one-way figures — three sources, two of them competing operators, agreeing exactly.[^farnlin-fares][^taitung-tourism-island]
+The East Coast National Scenic Area Administration's current traffic page displays a one-way adult fare of NT$560, half fare of NT$280 and insurance fare of NT$100, while warning that operator-published changes take precedence.[^eastcoast-nsa-green-island-current] Green Island Star's operator fare table gives the same one-way figures and a NT$1,120 round trip, with half fares at NT$280/NT$560 and an infant/insurance fare at NT$100/NT$200; that operator page states the price includes NT$2,000,000 of passenger accident insurance.[^greenstar-fares] Farnlin's own fare page for its Kaixuan service states the same one-way structure independently, and Taitung County's own tourism page corroborates the one-way figures.[^farnlin-fares][^taitung-tourism-island]
 
-Green Island Star's own schedule page gives a base pattern of five sailings each direction daily — outbound 07:30, 09:30, 11:30, 13:30, 15:30; return 08:30, 10:30, 12:30, 14:30, 16:30 — adding that peak-season holidays may see an extra simultaneous sailing and that off-season sailings are "reduced accordingly."[^greenstar-fares] This conflicts with a frequency of "two fixed daily sailings" that recurs across several secondary summaries; the five-sailing figure comes from a fetched primary operator page and the two-sailing figure does not trace to one, but neither claim is discarded here.
+The current government traffic page displays a five-sailing-each-direction snapshot: outbound 07:30, 09:30, 11:30, 13:30 and 15:30; return 08:30, 10:30, 12:30, 14:30 and 16:30.[^eastcoast-nsa-green-island-current] The same page says low- and high-season times differ and directs travellers to the Ship Tour Network for the current schedule; the displayed table is therefore a dated reference snapshot, not a promise that every listed sailing operates on every date.[^eastcoast-nsa-green-island-current] Green Island Star's operator page carries the same five-sailing base pattern and says peak holidays may receive extra sailings while off-season service may be reduced.[^greenstar-fares]
 
 A search-derived claim that Uranus raised its fares from 5 March 2026, becoming more expensive than the other two pooled operators (NT$670 one-way / NT$335 half fare, versus NT$560/NT$280 for Kaixuan and Green Island Star, with no round-trip discount), could not be verified: Uranus's own site states no fares at all in the page read for this entry.[^tsang-jai] This is recorded as an unconfirmed claim, not as an established current fare.
 
