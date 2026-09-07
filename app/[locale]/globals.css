@@ -1758,6 +1758,8 @@ main {
 
 .coverage-ledger-heading > * {
   min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .coverage-ledger-original {
@@ -1782,6 +1784,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 0 14px;
+  min-width: 0;
 }
 
 .national-coach-index {
@@ -2094,7 +2097,9 @@ main {
   }
 
   .coverage-ledger-heading {
+    align-items: flex-start;
     gap: 7px;
+    flex-wrap: wrap;
   }
 
   .coverage-status {
