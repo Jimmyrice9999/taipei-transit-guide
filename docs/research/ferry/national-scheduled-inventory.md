@@ -4,7 +4,7 @@
 
 # National scheduled passenger-shipping inventory
 
-**Checked 6 September 2026.** This pass fetched and read the Maritime and Port
+**Checked 7 September 2026.** This pass fetched and read the Maritime and Port
 Bureau's ticketing directory, its Southern Navigation Centre passenger-ship
 index, and the Penghu National Scenic Area Administration's ferry-access page.
 The result is a corridor/operator inventory, not a unique current sailing total.
@@ -26,6 +26,13 @@ The result is a corridor/operator inventory, not a unique current sailing total.
   `布袋-東吉-七美-馬公-布袋`, `臺南將軍-澎湖東吉`,
   `屏東東港-小琉球`, `屏東鹽埔-小琉球`, `臺東-綠島`, `臺東-蘭嶼` and
   `屏東後壁湖-蘭嶼`.
+
+- **The fetched ticketing directory normalizes to 12 corridor groups and 27
+  operator-listing rows.** Source: the same full `購票資訊 — 海運與航班專區`
+  page, PRIMARY, High confidence. Method: repeated operator rows under one
+  named corridor are counted as one corridor group and each listed operator is
+  retained as an operator-listing row; this is the definition used by the
+  structured snapshot, not a unique-route or sailing count.
 
 - **Claim.** The Southern Navigation Centre's passenger-ship page has five
   domestic fixed-route information entries, including Donggang–Xiaoliuqiu,
@@ -63,11 +70,11 @@ The result is a corridor/operator inventory, not a unique current sailing total.
 
 ## Checked and failed
 
-- **Unique current national scheduled-ferry total** — checked 6 September 2026:
+- **Unique current national scheduled-ferry total** — checked 7 September 2026:
   the official sources expose different units (notice entries, corridor rows,
   operator groups and date-specific schedules); no defensible common denominator
   was found, so the content page keeps this value TBC.
-- **Current vessel assignment for every listed corridor** — checked 6 September
+- **Current vessel assignment for every listed corridor** — checked 7 September
   2026: the ticketing directory lists some vessel/operator relationships but not
   one synchronized national assignment table; the guide does not infer a vessel
   from a route name.

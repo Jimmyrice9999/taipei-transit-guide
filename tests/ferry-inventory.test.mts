@@ -1,0 +1,21 @@
+import { test } from 'node:test'
+import assert from 'node:assert/strict'
+import inventory from '../data/ferry/national-ticketing-directory-2026-09.json' with { type: 'json' }
+
+test('ferry ticketing directory has unique corridor identities and honest status fields', () => {
+  const ids = inventory.corridors.map((corridor) => corridor.id)
+  assert.equal(new Set(ids).size, ids.length, 'duplicate ferry corridor id')
+  assert.equal(inventory.counts.corridorRows, inventory.corridors.length)
+  assert.equal(
+    inventory.counts.operatorListingRows,
+    inventory.corridors.reduce((total, corridor) => total + corridor.operators.length, 0),
+    'operator listing count does not match corridor rows',
+  )
+
+  for (const corridor of inventory.corridors) {
+    assert.notEqual(corridor.originOriginal, corridor.destinationOriginal, `${corridor.id} is a self-loop`)
+    assert.equal(corridor.presence, 'official-current-ticketing-directory')
+    assert.ok(corridor.timetableStatus.includes('direct') || corridor.timetableStatus.includes('separate'))
+    assert.ok(corridor.operators.length > 0, `${corridor.id} has no operator listing`)
+  }
+})

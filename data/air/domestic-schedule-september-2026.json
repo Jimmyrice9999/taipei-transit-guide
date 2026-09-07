@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "snapshotDate": "2026-09-07",
+  "effectiveFrom": "2026-09-01",
+  "effectiveTo": "2026-09-30",
+  "source": {
+    "publisher": "Civil Aeronautics Administration, Ministry of Transportation and Communications (交通部民用航空局)",
+    "title": "September 2026 domestic scheduled-route flight timetable",
+    "titleOriginal": "115年9月國內定期航線班機時刻表",
+    "url": "https://www.caa.gov.tw/FileAtt.ashx?id=41066&lang=1",
+    "indexUrl": "https://www.caa.gov.tw/RegularFlight.aspx?a=268&lang=1",
+    "retrieved": "2026-09-07",
+    "lastUpdatedByPublisher": "2026-07-02",
+    "recordDefinition": "One timetable row with a published route direction, operator, flight number, departure and arrival time, operating-day pattern, aircraft field and note. The workbook contains 285 data rows after its title and header rows."
+  },
+  "operators": ["UNI Air / 立榮航空", "Mandarin Airlines / 華信航空", "Daily Air / 德安航空"],
+  "counts": {
+    "undirectedRouteFamilies": 24,
+    "directionalRouteLabels": 48,
+    "timetableRows": 285,
+    "airportNamesInRouteLabels": 14
+  },
+  "routeFamilies": [
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":38},
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Penghu","destinationOriginal":"澎湖","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":39},
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Matsu Nangan","destinationOriginal":"南竿","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":16},
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Matsu Beigan","destinationOriginal":"北竿","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":6},
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Taitung","destinationOriginal":"台東","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":12},
+    {"origin":"Taipei Songshan","originOriginal":"台北","destination":"Hualien","destinationOriginal":"花蓮","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":2},
+    {"origin":"Taichung","originOriginal":"台中","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":24},
+    {"origin":"Taichung","originOriginal":"台中","destination":"Penghu","destinationOriginal":"澎湖","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":24},
+    {"origin":"Taichung","originOriginal":"台中","destination":"Matsu Nangan","destinationOriginal":"南竿","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":4},
+    {"origin":"Taichung","originOriginal":"台中","destination":"Hualien","destinationOriginal":"花蓮","operators":["Mandarin Airlines / 華信航空"],"directionalTimetableRows":2},
+    {"origin":"Tainan","originOriginal":"台南","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":6},
+    {"origin":"Tainan","originOriginal":"台南","destination":"Penghu","destinationOriginal":"澎湖","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":6},
+    {"origin":"Chiayi","originOriginal":"嘉義","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":2},
+    {"origin":"Chiayi","originOriginal":"嘉義","destination":"Penghu","destinationOriginal":"澎湖","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":2},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":20},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Penghu","destinationOriginal":"澎湖","operators":["UNI Air / 立榮航空","Mandarin Airlines / 華信航空"],"directionalTimetableRows":38},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Matsu Nangan","destinationOriginal":"南竿","operators":["Mandarin Airlines / 華信航空"],"directionalTimetableRows":2},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Hualien","destinationOriginal":"花蓮","operators":["Mandarin Airlines / 華信航空"],"directionalTimetableRows":2},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Qimei","destinationOriginal":"七美","operators":["Daily Air / 德安航空"],"directionalTimetableRows":8},
+    {"origin":"Kaohsiung","originOriginal":"高雄","destination":"Wang'an","destinationOriginal":"望安","operators":["Daily Air / 德安航空"],"directionalTimetableRows":6},
+    {"origin":"Penghu","originOriginal":"澎湖","destination":"Kinmen","destinationOriginal":"金門","operators":["UNI Air / 立榮航空"],"directionalTimetableRows":2},
+    {"origin":"Penghu","originOriginal":"澎湖","destination":"Qimei","destinationOriginal":"七美","operators":["Daily Air / 德安航空"],"directionalTimetableRows":2},
+    {"origin":"Taitung","originOriginal":"台東","destination":"Green Island","destinationOriginal":"綠島","operators":["Daily Air / 德安航空"],"directionalTimetableRows":6},
+    {"origin":"Taitung","originOriginal":"台東","destination":"Orchid Island","destinationOriginal":"蘭嶼","operators":["Daily Air / 德安航空"],"directionalTimetableRows":16}
+  ],
+  "limitations": [
+    "The route-family count normalizes the workbook's directional route labels into undirected airport pairs; it is not a count of flights, seats or guaranteed daily departures.",
+    "The workbook contains date patterns, cancellations, extra flights and aircraft notes. Those row-level details are intentionally not flattened into a permanent route-frequency claim.",
+    "The CAA index warns that the timetable is for reference and that the airline announcement controls when times change.",
+    "This snapshot does not assert current scheduled service at an airport pair absent from the September workbook, and it does not turn one observed flight into a permanent route."
+  ]
+}

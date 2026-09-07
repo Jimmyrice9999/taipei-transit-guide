@@ -3,22 +3,23 @@ title: Domestic route families
 description: A dated airport-pair view of Taiwan's scheduled domestic aviation, with verified September 2026 snapshots from Hualien and Penghu and an explicit gap where the official national timetable is not a stable route catalogue.
 summary: A dated airport-pair view of Taiwan's scheduled domestic aviation, with verified September 2026 snapshots from Hualien and Penghu and an explicit gap where the official national timetable is not a stable route catalogue.
 order: 1
-updated: 2026-09-06
+updated: 2026-09-07
 facts:
-  - label: Hualien airport-origin route families in snapshot
-    value: 3 — Taipei, Taichung and Kaohsiung
-    source: hualien-route-pages
-  - label: Penghu airport-origin route families in snapshot
-    value: 6 — Taipei, Taichung, Tainan, Chiayi, Kaohsiung and Kinmen
-    source: penghu-route-page
-  - label: Combined station snapshots
-    value: 9 airport-origin family records
-    source: route-snapshot-method
-  - label: Complete national route-family total
-    value: TBC
+  - label: September 2026 undirected airport-pair families
+    value: 24
+    source: caa-september-2026-download
+  - label: September 2026 directional route labels
+    value: 48
+    source: caa-september-2026-download
+  - label: September 2026 timetable rows
+    value: 285
+    source: caa-september-2026-download
+  - label: Operators in the workbook
+    value: 3 — UNI Air, Mandarin Airlines and Daily Air
+    source: caa-september-2026-download
   - label: Timetable window
-    value: September 2026, with airline announcements controlling changes
-    source: caa-domestic-timetable
+    value: 2026-09-01 through 2026-09-30
+    source: caa-september-2026-download
 specs:
   - label: Hualien Taipei schedule database time
     value: 2026-09-06 05:50:05
@@ -30,17 +31,27 @@ specs:
     value: 2026-09-06
     source: penghu-route-page
   - label: National timetable export
-    value: TBC
+    value: 2026-07-02 publisher update; September 2026 workbook retrieved 2026-09-07
+    source: caa-september-2026-download
 sources:
   - id: caa-domestic-timetable
     title: Domestic scheduled-route flight timetable
     titleOriginal: 國內定期航線班機時刻表
     publisher: Civil Aeronautics Administration, Ministry of Transportation and Communications (交通部民用航空局)
     url: "https://www.caa.gov.tw/RegularFlight.aspx?a=268&lang=1"
-    accessed: 2026-09-06
+    accessed: 2026-09-07
     kind: primary
     lang: zh-Hant
-    note: "CAA's current timetable page exposes July, August and September 2026 selectors and a September download; it states 「僅供參考，如有異動，正確時間仍以航空公司公告為準」. It is the national official timetable surface, but the page does not present a stable, directly readable route-family catalogue in the fetched HTML."
+    note: "CAA's current timetable page exposes July, August and September 2026 selectors and links the September workbook; it states 「僅供參考，如有異動，正確時間仍以航空公司公告為準」."
+  - id: caa-september-2026-download
+    title: September 2026 domestic scheduled-route flight timetable
+    titleOriginal: 115年9月國內定期航線班機時刻表
+    publisher: Civil Aeronautics Administration, Ministry of Transportation and Communications (交通部民用航空局)
+    url: https://www.caa.gov.tw/FileAtt.ashx?id=41066&lang=1
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The full official XLSX was fetched from the CAA download link and parsed as 285 timetable rows, 48 directional route labels and 24 normalized undirected airport-pair families for 2026-09-01 through 2026-09-30."
   - id: hualien-route-pages
     title: Hualien Airport monthly flight timetables
     titleOriginal: 花蓮-台北／花蓮-台中／花蓮-高雄
@@ -70,45 +81,56 @@ sources:
     note: "The combined count is a transparent addition of the three route families shown by Hualien's three linked pages and the six destination families shown by Penghu's fixed-departure page. It is not a national total and does not deduplicate airport-origin records across different station snapshots."
 ---
 
-This is the route-family layer for domestic aviation. It answers “which
-airport pairs are visible in the current official schedule surfaces?” without
-turning one month's changing flight table into a permanent network map.[^caa-domestic-timetable]
+This is the route-family layer for domestic aviation. It answers which airport
+pairs appear in the Civil Aeronautics Administration's current official
+schedule workbook without turning one month's changing flight table into a
+permanent network map.[^caa-domestic-timetable][^caa-september-2026-download]
 
-## Verified September 2026 snapshots
+## Verified September 2026 snapshot
 
-Hualien Airport's own monthly timetable navigation exposes three airport-origin
-families: Hualien–Taipei, Hualien–Taichung and Hualien–Kaohsiung.[^hualien-route-pages]
-The Taipei page reports a database time of 2026-09-06 05:50:05; the Taichung and
-Kaohsiung pages reported 2026-09-05 database times when fetched.[^hualien-route-pages]
-Those are three dated station records, not a claim that the same pattern will
-remain in a later month.[^caa-domestic-timetable]
+The September workbook is labelled `2026/09/01~2026/09/30` and was last updated
+by the CAA on 2 July 2026.[^caa-september-2026-download] Parsing the complete
+file produced 285 timetable rows after the title and header rows. Each row has a
+directional route label, airline, flight number, departure and arrival time,
+operating-day pattern, aircraft field and an optional note; the notes include
+extra flights and cancellations, so a row is not the same thing as a daily
+departure.[^caa-september-2026-download]
 
-Penghu Airport's fixed-departure table displayed six destination families in
-the September 2026 validity window: Taipei, Taichung, Tainan, Chiayi,
-Kaohsiung and Kinmen.[^penghu-route-page] Its rows carry the flight number,
-aircraft, times and validity dates, which is why the page records a snapshot of
-families rather than a timeless daily-frequency claim.[^penghu-route-page]
+Normalising the 48 directional labels into unordered airport pairs produces 24
+route families for this month.[^caa-september-2026-download] The families reach
+the main-island airports of Taipei Songshan, Taichung, Tainan, Chiayi,
+Kaohsiung, Hualien and Taitung, and the island airports at Kinmen, Penghu,
+Nangan, Beigan, Green Island, Orchid Island, Qimei and Wang'an.[^caa-september-2026-download]
+The last statement describes airport names appearing in the workbook, not a
+claim that every airport has service from every named operator.[^caa-september-2026-download]
 
-Together these two station snapshots provide nine airport-origin family
-records for this page's dated sample: three from Hualien and six from Penghu.[^route-snapshot-method]
-The count is intentionally defined as a sample of official station surfaces,
-not as Taiwan's complete domestic route total.[^route-snapshot-method]
+The workbook contains three operator labels: UNI Air (立榮航空), Mandarin
+Airlines (華信航空) and Daily Air (德安航空).[^caa-september-2026-download] UNI
+Air and Mandarin Airlines appear across the larger main-island–island pairs,
+while Daily Air appears on the September Green Island, Orchid Island, Qimei
+and Wang'an records.[^caa-september-2026-download] This is a measurement of
+the month-specific timetable file; it is not a claim about the carriers'
+permanent fleet, full commercial network or future timetable.[^caa-september-2026-download]
 
 ## How to use the index
 
-Use the [Hualien Airport page](/air/airports/hualien/) for the flight numbers,
-operating days and ground-access qualifications behind its three families.[^hualien-route-pages]
-Use the [Penghu Airport page](/air/airports/penghu/) for the six displayed
-families and its explicit bus and passenger-shipping links.[^penghu-route-page]
+Use the [Hualien Airport page](/air/airports/hualien/) for the airport's own
+monthly timetable links and its ground-access qualifications.[^hualien-route-pages]
+Use the [Penghu Airport page](/air/airports/penghu/) for the airport-specific
+departure table and its explicit bus and passenger-shipping links.[^penghu-route-page]
+Use the CAA workbook source in the references below for the 24-family national
+September snapshot; the source file, not this prose, is the authority for the
+individual flight number and operating-day rows.[^caa-september-2026-download]
 The [airport index](/air/airports/) remains the canonical place for airport
 history, facilities and intermodal context; this page is the dated route
 discovery layer rather than a second airport dossier.[^route-snapshot-method]
 
 ## What remains TBC
 
-The complete national route-family total, a stable all-airport matrix, current
-route-wide fares and a guaranteed current frequency for every airport pair are
-TBC.[^caa-domestic-timetable] CAA's official page exposes a September 2026
-download and warns that airline announcements control when times change, but
-the fetched HTML does not provide a stable national catalogue that can be
-joined safely to every airport node.[^caa-domestic-timetable]
+The complete all-month route-family total, route-wide fares, a permanent
+airport-to-airport matrix and a guaranteed current frequency for every pair are
+TBC.[^caa-domestic-timetable][^caa-september-2026-download] The CAA explicitly
+warns that the timetable is for reference and that the correct time remains the
+airline's announcement when changes occur.[^caa-domestic-timetable] The guide
+therefore stores this as a dated acquisition snapshot and does not infer a
+route from an airport page or from one extraordinary flight alone.

@@ -28029,6 +28029,65 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+### Run 319 — current ferry directory and domestic-air snapshot
+
+The next sequential research batch re-fetched the full MPB ticketing directory
+(`https://www.motcmpb.gov.tw/Article?nodeId=376&siteId=1`) and the CAA domestic
+timetable surface. The MPB page was retrieved 7 September 2026; its own
+metadata says last checked 7 August 2026. The structured ferry snapshot
+`data/ferry/national-ticketing-directory-2026-09.json` records 12 corridor
+groups and 27 operator-listing rows. The count deliberately collapses repeated
+operators under Budai–Magong into one corridor group and retains each operator
+as a separate listing row. It is labelled `official-current-ticketing-directory`
+and does not claim a daily timetable. The national ferry content and research
+page now expose this measurement while retaining TBC for a unique live national
+route/sailing total. A focused `tests/ferry-inventory.test.mts` checks duplicate
+corridor IDs, operator-listing roll-up, date/status fields and non-empty operator
+references.
+
+The CAA page was fetched in full and its September download link followed. The
+binary official workbook was downloaded from
+`https://www.caa.gov.tw/FileAtt.ashx?id=41066&lang=1` and parsed outside the
+repository for analysis. It is labelled `2026/09/01~2026/09/30`, with publisher
+last-update date 2026-07-02. After removing the workbook title/header, there are
+285 timetable rows, 48 directional route labels and 24 normalized undirected
+airport-pair families. The 24 family definition is a sorted pair of the two
+endpoint names; it is not a flight, seat, aircraft or guaranteed-daily count.
+The three operator labels are 立榮航空 / UNI Air, 華信航空 / Mandarin Airlines
+and 德安航空 / Daily Air. The exact route-family roll-up and limitations are
+in `data/air/domestic-schedule-september-2026.json`; the public air route index
+now describes this nationwide September snapshot, while individual Hualien and
+Penghu pages remain detailed airport-node sources. A focused
+`tests/air-snapshot.test.mts` checks unique normalized pairs, declared-vs-derived
+row counts, date range, non-self-loop routes and operator references without
+pinning future refreshes to the current 24/285 values.
+
+The CAA research file records the full-fetch method, original-language column
+names, the route normalization, the CAA warning that airline announcements
+control changes, and checked failures for a live API, permanent frequency total,
+historical-airport assumptions and route-wide fares. No route was inferred from
+one observed flight. No binary workbook was staged as a production source;
+only the derived, dated JSON snapshot and its official download URL were added.
+
+The batch fast gate completed with:
+
+    citations: clean.
+    marker-audit: clean (1901 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2294 Han characters in 2+ character runs, all covered).
+    research: 314 file(s), 1214 recorded as checked and failed.
+    research: clean.
+    ✔ unsourced assertions have not increased
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0
+
+The claims report after this batch was `sourced 27768`, `TBC 4689`,
+`ASSERTED 0`. No new content file was introduced in this batch, so the search
+index remained current. A second logical commit is ready; the known generated
+baseline remains un-staged.
+
 ## Run 319 — September Small Three Links operational snapshot
 
 Run date: 7 September 2026. Baseline refs were `4333e874 Run 318: record
