@@ -29502,3 +29502,80 @@ The shared atlas CSS was hardened after reviewing the larger national ferry, air
 Bounded browser verification ran after the CSS commit: 4,256-page corpus, 79 templates, 157 selected pages (79 canonical and 78 extremes), 3 workers. Actual high-signal results were `✓ no page produces a document-level horizontal scrollbar`, `✓ no painted box in .page-main runs under the spine`, `✓ zero violations across 157 pages`, `✓ interactive-network-map-en: 713 linked stations; zoom=true; pan=true`, the same 713-station result for Traditional Chinese, static SVG fallback at 320px and 1440px for both locales, 304 internal navigation links checked for both `/en/` and `/zh-Hant/`, and `✓ browser verification clean`. The screenshot phase produced 1,344 screenshots; 369 were clipped at Chromium’s 12,000px capture limit because the full page exceeded that limit, which is expected for the site’s very long data pages and is recorded by the harness. Print generation completed 78/78 PDFs.
 
 Pixel inspection covered `/en/bike/` phone 320, ferry atlas phone/desktop, air airport index phone, homepage phone/desktop, and ferry routes desktop. The wordmark image rendered correctly. `/en/bike/` shows the atlas inside the viewport; ferry’s wide comparison table retains a controlled horizontal table region while its route list remains readable; air and homepage hierarchy remain intact at phone and desktop sizes.
+### Run 319 — final exhaustive verification and handoff (7 September 2026)
+
+The final fresh corpus checks were completed after the font-safe rebuild. The
+claims snapshot reports 27,916 sourced claims, 4,706 TBC values and 0
+ASSERTED; 1,910 content Markdown files and 322 research files are present.
+The font check reports 2,295 Han characters in 2+ character runs, all covered;
+the fresh build checked 5,361 pages with no missing Han glyphs. The committed
+TDX bus snapshot contains 3,046 city-scoped Route records; its per-jurisdiction
+`subRouteCount` sum is 6,862 supplied variants, which is a source-variant
+measurement rather than a timeless unique-route total.
+
+The final verification commands produced these actual results:
+
+    npm run adversarial
+    16/16 cases behaved as specified
+
+    npm run gate:fast
+    citations: clean.
+    marker-audit: clean (1910 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 321 file(s), 1236 recorded as checked and failed.
+    research: clean.
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    gate_fast_exit=0
+
+    npm run gate:full
+    ✓ no broken links
+    ✓ every #fragment resolves
+    ✓ no orphan pages
+    ✓ no errors
+    ✓ no warnings
+    citations: clean.
+    ✔ the accessibility audit reports no errors
+    ✔ no page is a server error placeholder or an empty shell
+    ℹ tests 248
+    ℹ pass 248
+    research: 321 file(s), 1236 recorded as checked and failed.
+    research: clean.
+    gate_full_exit=0
+
+The bounded browser run used 4,276 corpus pages, 79 templates, 157 selected
+pages and 3 workers. Its actual high-signal output included `✓ no page
+produces a document-level horizontal scrollbar`, `✓ no painted box in
+.page-main runs under the spine`, `✓ zero violations across 157 pages` and
+`✓ browser verification clean`; it produced 1,344 screenshots and 78/78 print
+PDFs. The required exhaustive run completed in 160m 25s. Its actual summary
+was:
+
+    ✓ no page produces a document-level horizontal scrollbar
+    ✓ no painted box in .page-main runs under the spine
+    ✓ zero violations across 4276 pages
+    4557 screenshots → docs/screenshots/
+    1038 screenshot(s) clipped to stay under Chromium's capture limit — see docs/browser-verification.json
+    268/268 print PDFs completed
+    Full data → docs/browser-verification.json
+    ✓ browser verification clean
+
+The 1,038 screenshot clipping notices are the harness's documented Chromium
+12,000px height limit on very long pages, not failures. The exhaustive run
+also passed all 157 keyboard traversal and accessibility-tree probes, the
+locale/image/map checks, two 713-station interactive-map checks, 306 internal
+navigation links for each locale, static SVG no-JavaScript fallbacks at 320px
+and 1440px, and reduced-motion behavior. `/en/bike/` remained free of the
+Run 318 320px overflow.
+
+No scout writers were used in this run; all repository changes remained in the
+main session. No generated screenshots, PDFs, probes, `.unsnooze/` content or
+other known baseline artefacts were staged. The deliberate Run 319 commits are
+800b2d54, de2237b0, 88c3d03b, dfa9d6a1, 9695b899, 92611c32, 51d52c74,
+ad4c256c, 526dced2, f21f4c38, 6bdeb090, aff868bf, 81c65508, 079b69d4 and
+f77aba13. Final handoff/push-proof documentation is the remaining coherent
+commit after this entry; GitHub Actions remains unknown locally because `gh`
+and the GitHub API are unavailable.
