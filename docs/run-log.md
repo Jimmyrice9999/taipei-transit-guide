@@ -28029,6 +28029,51 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+## Run 319 — Nantou rural transport depth
+
+The next editorial depth batch used the full official Nantou Happiness GO
+programme page at
+`https://ntgo.nantou.gov.tw/Nantou/WebPage/PublicWebModule/pagNantoumotc.aspx`.
+It records the county's 2024 launch, the 2026 target of service across all 13
+townships, the flexible-reservation model, booking hours and contact channels,
+township coverage, and the 2026-08-03 paid-operation notice for Puli, Yuchi
+and Xinyi. The page publishes current fare examples of NT$25 full, NT$20
+student and NT$13 half fare for that notice, with a ride card plus an accepted
+electronic card required. It also records the Lugu route suspension and
+reservation substitution dated 2026-07-01 through 2026-08-28. The new page
+keeps these fixed/flexible and dated distinctions rather than presenting the
+county programme as a complete fixed-route export.
+
+Added:
+
+* `content/bus/drt/nantou-happiness-go.md`, a sourced county programme page;
+* a linked entry in `content/bus/drt/_index.md`;
+* `docs/research/bus/nantou-happiness-go.md`, including checked failures and
+  the limits of the official page;
+* regenerated `public/data/search-index.json`.
+
+The Highway Bureau national directory remains a separate source for the
+Happiness Bus/Happiness Taxi taxonomy and dated national measurement. The
+Nantou page does not assert a universal September 2026 route export, operator
+roster, service-days table or permanent fare matrix. No page-per-service
+expansion was made.
+
+The first fast gate after writing exposed two uncited prose assertions in the
+new page. Both were fixed with direct Nantou/Highway Bureau citations; the
+claims ratchet was not changed. The corrected fast gate output was:
+
+    citations: clean.
+    marker-audit: clean (1905 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 317 file(s), 1223 recorded as checked and failed.
+    research: clean.
+    ✔ unsourced assertions have not increased
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0
+
 ## Run 319 — Taoyuan regional bus depth
 
 After the September Small Three Links, national ferry directory and domestic-air snapshot commits, the next depth batch targeted Taoyuan because it had national structured discovery but no regional editorial overlay. The working-tree baseline remained the known 5,214 generated/untracked entries; after this batch the status count was 5,217, consisting of the baseline plus the Taoyuan regional page, the Taoyuan research file and the regional-index edit. No scout or research fetch wrote to the repository.

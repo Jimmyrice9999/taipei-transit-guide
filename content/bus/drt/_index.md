@@ -2,7 +2,7 @@
 title: Community and demand-responsive transport
 description: A dated evidence layer for Taiwan's fixed-route community buses, taxi-bus services, reservation networks and eligibility-limited accessible mobility programmes.
 summary: Fixed-route community buses, taxi-bus services, reservation networks and accessible mobility programmes kept distinct from ordinary city-bus route records.
-updated: 2026-09-06
+updated: 2026-09-07
 facts:
   - label: Hsinchu medical-shuttle entries in the committed route snapshot
     value: "3"
@@ -182,6 +182,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full New Taipei page, updated 21 July 2026, gives the large vehicle's wheelchair/general-seat layout, service boundary, group eligibility, dated per-trip and charter fare formulas, service hours, three bus-company contacts and booking window.
+  - id: nantou-happiness-go
+    title: Nantou Happiness GO public-transport service
+    titleOriginal: 南投幸福GO
+    publisher: Nantou County Government Transportation Management Office (南投縣政府交通管理所)
+    url: https://ntgo.nantou.gov.tw/Nantou/WebPage/PublicWebModule/pagNantoumotc.aspx
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full current county programme page publishes the fixed/flexible boundary, booking areas, 2026 fares, phone/LINE booking and local contact examples.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -205,6 +214,7 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 - [Taipei Small Rehabilitation Bus](/bus/drt/taipei-rehabilitation-bus/) — point-to-point eligibility, booking, fare and service-area rules, kept separate from ordinary buses.[^taipei-rehab-booking][^taipei-rehab-current]
 - [New Taipei large Rehabilitation Bus](/bus/drt/new-taipei-large-rehabilitation-bus/) — group accessible transport with a published four-city boundary, eligibility threshold, dated fare formulas and operator booking contacts.[^new-taipei-large-rehab]
 - [Taitung rural and island Happiness Bus](/bus/drt/taitung-rural-and-island/) — sourced Lanyu and Guanshan route-directory examples with official modification dates.[^thb-taitung-drt][^thb-taitung-guanshan]
+- [Nantou Happiness GO](/bus/drt/nantou-happiness-go/) — county-level fixed/flexible service boundary, 2026 fares, booking channels and township examples.[^nantou-happiness-go][^thb-happiness-inventory]
 
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
 
