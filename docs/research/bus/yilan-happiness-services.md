@@ -37,6 +37,19 @@ records and does not infer a county-wide total.
 - **Original-language evidence.** The Jiaoxi row labels its type `幸福小黃` and
   prints the three service-pattern labels in the route-stop field.
 
+- **Claim.** The second full directory page adds Suao Township's `東澳紫線`
+  Happiness Bus record. Its route-stop field distinguishes `主線` and `A線`:
+  the main pattern reaches 東澳火車站 and 粉鳥林漁港, while the A pattern
+  continues via 南澳火車站 and 朝陽漁港. The record modification date is
+  `113-04-22`.
+- **Source.** *Yilan Happiness Bus and Happiness Taxi operating information —
+  page 2*, titleOriginal `幸福巴士及幸福小黃營運資訊：宜蘭縣（第2頁）`,
+  Highway Bureau, MOTC / `交通部公路局`,
+  https://www.thb.gov.tw/News.aspx?PageSize=10&_CSN=4025&n=10738&page=2&sms=13903,
+  PRIMARY. **Confidence.** High — the full official second-page HTML was fetched
+  and read on 7 September 2026. Original-language evidence: the row labelled
+  `幸福巴士 | 蘇澳鎮 | 東澳紫線`, with the `〖主線〗` and `〖A線〗` stop fields.
+
 ## Conflicts
 
 No numerical conflict was found on the fetched page. The directory's record
@@ -53,10 +66,15 @@ modification dates are not treated as timetable-effective dates.
 - **Coordinated transfers** — checked 7 September 2026: shared place names such
   as 羅東火車站 and 南澳火車站 are recorded as stops, but no timed-transfer
   claim is published from this directory alone.
+- **Complete route inventory across the second and remaining pages** — checked
+  7 September 2026: page 2 was fetched and read, but the directory still reports
+  an 11-page result set and does not expose a stable county-wide total in the
+  material used here. The two-page sample is expanded; the full inventory stays
+  unasserted.
 
 ## Stated gaps
 
 The next useful pull is the official township/county material linked to the
 visible routes, especially service days, reservation instructions, fares and
-operator/contractor identity. The remaining ten directory pages should be read
+operator/contractor identity. The remaining nine directory pages should be read
 before publishing a complete Yilan total.
