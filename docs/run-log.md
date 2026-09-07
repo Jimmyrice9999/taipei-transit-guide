@@ -29335,3 +29335,31 @@ status and a non-empty evidence-boundary note, while keeping confirmed joins
 restricted to official shared-complex or stop-ID/geometry evidence. The
 focused unit suite completed without a failure. The data change is pending its
 coherent fast-gate commit.
+## Run 319 — domestic-air route matrix
+
+The CAA September 2026 workbook remains the current domestic-air snapshot:
+2026-09-01 through 2026-09-30, publisher-updated 2026-07-02, 285 timetable
+rows, 48 directional route labels and 24 undirected airport-pair families
+across UNI Air, Mandarin Airlines and Daily Air. The existing JSON acquisition
+and test already preserve the distinction between a workbook row, a
+directional label and an undirected family.
+
+The public `/air/routes/` page now exposes all 24 airport pairs in a compact
+matrix with operators and row counts. The table defines `Rows` as directional
+timetable rows in the workbook, not daily flights or guaranteed departures,
+and keeps the CAA's airline-announcement caveat in the surrounding prose.
+This makes the snapshot genuinely discoverable without creating one page per
+flight number or pretending that the September file is a permanent network.
+
+The fast gate after the matrix change reported:
+
+    citations: clean.
+    marker-audit: clean (1906 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 318 file(s), 1226 recorded as checked and failed.
+    research: clean.
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0

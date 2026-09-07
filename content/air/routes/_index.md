@@ -112,6 +112,39 @@ and Wang'an records.[^caa-september-2026-download] This is a measurement of
 the month-specific timetable file; it is not a claim about the carriers'
 permanent fleet, full commercial network or future timetable.[^caa-september-2026-download]
 
+## September route-family matrix
+
+The 24 undirected airport-pair families normalised from the September workbook
+are listed below. `Rows` means directional timetable rows in that workbook, not
+daily departures or flights guaranteed to operate on every date.[^caa-september-2026-download]
+
+| Airport pair | Operators in snapshot | Rows |
+|---|---|---:|
+| Taipei Songshan ↔ Kinmen | UNI Air; Mandarin Airlines | 38 [^caa-september-2026-download] |
+| Taipei Songshan ↔ Penghu | UNI Air; Mandarin Airlines | 39 [^caa-september-2026-download] |
+| Taipei Songshan ↔ Matsu Nangan | UNI Air; Mandarin Airlines | 16 [^caa-september-2026-download] |
+| Taipei Songshan ↔ Matsu Beigan | UNI Air | 6 [^caa-september-2026-download] |
+| Taipei Songshan ↔ Taitung | UNI Air; Mandarin Airlines | 12 [^caa-september-2026-download] |
+| Taipei Songshan ↔ Hualien | UNI Air | 2 [^caa-september-2026-download] |
+| Taichung ↔ Kinmen | UNI Air; Mandarin Airlines | 24 [^caa-september-2026-download] |
+| Taichung ↔ Penghu | UNI Air; Mandarin Airlines | 24 [^caa-september-2026-download] |
+| Taichung ↔ Matsu Nangan | UNI Air | 4 [^caa-september-2026-download] |
+| Taichung ↔ Hualien | Mandarin Airlines | 2 [^caa-september-2026-download] |
+| Tainan ↔ Kinmen | UNI Air | 6 [^caa-september-2026-download] |
+| Tainan ↔ Penghu | UNI Air | 6 [^caa-september-2026-download] |
+| Chiayi ↔ Kinmen | UNI Air | 2 [^caa-september-2026-download] |
+| Chiayi ↔ Penghu | UNI Air | 2 [^caa-september-2026-download] |
+| Kaohsiung ↔ Kinmen | UNI Air; Mandarin Airlines | 20 [^caa-september-2026-download] |
+| Kaohsiung ↔ Penghu | UNI Air; Mandarin Airlines | 38 [^caa-september-2026-download] |
+| Kaohsiung ↔ Matsu Nangan | Mandarin Airlines | 2 [^caa-september-2026-download] |
+| Kaohsiung ↔ Hualien | Mandarin Airlines | 2 [^caa-september-2026-download] |
+| Kaohsiung ↔ Qimei | Daily Air | 8 [^caa-september-2026-download] |
+| Kaohsiung ↔ Wang’an | Daily Air | 6 [^caa-september-2026-download] |
+| Penghu ↔ Kinmen | UNI Air | 2 [^caa-september-2026-download] |
+| Penghu ↔ Qimei | Daily Air | 2 [^caa-september-2026-download] |
+| Taitung ↔ Green Island | Daily Air | 6 [^caa-september-2026-download] |
+| Taitung ↔ Orchid Island | Daily Air | 16 [^caa-september-2026-download] |
+
 ## How to use the index
 
 Use the [Hualien Airport page](/air/airports/hualien/) for the airport's own
