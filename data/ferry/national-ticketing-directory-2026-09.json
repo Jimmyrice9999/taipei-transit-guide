@@ -10,6 +10,18 @@
     "lastCheckedByPublisher": "2026-08-07",
     "recordDefinition": "A corridor row or repeated operator row in the official ticketing directory, not a unique-route, vessel or daily-sailing count."
   },
+  "fieldDefinitions": {
+    "routeFamily": "The directory corridor identity, represented by id, origin and destination. It is not a claim that every named place is a terminal building or that a multi-stop label has been decomposed into legs.",
+    "routeLeg": "Not normalised in this directory snapshot; multi-stop legs require a route-specific timetable or port source.",
+    "terminal": "Origin and destination labels are retained as corridor evidence only. Terminal building identity is a separate entity-level fact.",
+    "operator": "An operator listing row shown by the Maritime and Port Bureau directory; it is not a vessel assignment or proof of a departure on every date.",
+    "vessel": "Not supplied by this ticketing-directory snapshot; use the separate Maritime and Port Bureau vessel records where fetched.",
+    "timetable": "The timetableStatus field records whether a separate operator/government schedule or direct date check is required; it is not a frequency.",
+    "seasonalPeriod": "Not normalised here. Seasonal, weather-sensitive and date-specific periods remain TBC unless a route-specific source supplies an effective range.",
+    "status": "official-current-ticketing-directory means the corridor is present in the directory snapshot retrieved on snapshotDate; it does not mean daily operation is guaranteed.",
+    "fare": "Not enumerated by this directory snapshot; current fares require a route/operator or government fare source.",
+    "reservation": "The directory's operator/booking listing is evidence that a booking channel is published, not a universal booking rule or check-in deadline."
+  },
   "counts": {
     "corridorRows": 12,
     "operatorListingRows": 27

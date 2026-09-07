@@ -3,6 +3,11 @@ import assert from 'node:assert/strict'
 import inventory from '../data/ferry/national-ticketing-directory-2026-09.json' with { type: 'json' }
 
 test('ferry ticketing directory has unique corridor identities and honest status fields', () => {
+  const modelFields = Object.keys(inventory.fieldDefinitions)
+  for (const field of ['routeFamily', 'routeLeg', 'terminal', 'operator', 'vessel', 'timetable', 'seasonalPeriod', 'status', 'fare', 'reservation']) {
+    assert.ok(modelFields.includes(field), `ferry model is missing ${field}`)
+  }
+
   const ids = inventory.corridors.map((corridor) => corridor.id)
   assert.equal(new Set(ids).size, ids.length, 'duplicate ferry corridor id')
   assert.equal(inventory.counts.corridorRows, inventory.corridors.length)

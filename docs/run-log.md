@@ -29363,3 +29363,29 @@ The fast gate after the matrix change reported:
     ℹ tests 147
     ℹ pass 147
     ℹ fail 0
+## Run 319 — ferry snapshot field model
+
+The national ferry JSON already had honest corridor/operator counts, but its
+schema did not make the missing dimensions machine-visible. Added
+`fieldDefinitions` to `data/ferry/national-ticketing-directory-2026-09.json` for
+route family, route leg, terminal, operator, vessel, timetable, seasonal
+period, status, fare and reservation. The definitions state exactly what this
+ticketing directory can and cannot establish: corridor labels are not a
+terminal-building registry; operator rows are not vessel assignments; the
+directory does not supply a unified current fare, sailing period or daily
+frequency.
+
+`tests/ferry-inventory.test.mts` now guards the presence of those model
+dimensions without freezing the 12-row count. The fast gate after this schema
+change reported:
+
+    citations: clean.
+    marker-audit: clean (1906 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 318 file(s), 1226 recorded as checked and failed.
+    research: clean.
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0
