@@ -20,6 +20,9 @@ facts:
     value: TBC
   - label: Complete county fare matrix
     value: TBC
+  - label: Latest county service-evaluation status
+    value: 112 and 113年度 city-bus evaluations completed June 2026; scores not published here
+    source: pingtung-service-evaluation-audit
 specs:
   - label: Structured snapshot retrieved
     value: 2026-09-07
@@ -100,6 +103,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full operator directory gives the Pingtung, Chaozhou, Donggang, Fangliao and Hengchun counters, addresses, hours and high-speed/airport sales points.
+  - id: pingtung-service-evaluation-audit
+    title: "Audit follow-up: Pingtung city-bus service evaluation"
+    titleOriginal: 屏東縣市區汽車客運業營運與服務評鑑執行要點改善情形
+    publisher: National Audit Office / Pingtung County Audit Office (審計部 / 屏東縣審計室)
+    url: https://www.audit.gov.tw/p/406-1000-11766,r12.php?Lang=zh-tw
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The official audit follow-up says Pingtung adopted its evaluation execution rules on 18 November 2025 and completed the 112 and 113年度 city-bus service evaluations in June 2026; it does not publish the scores on this page.
 ---
 
 Pingtung’s regional bus layer is split between a broad structured discovery response and operator-specific timetable pages. The 7 September 2026 TDX pull contains 123 Pingtung County route records and 333 records in the supplied `SubRoutes` arrays.[^pingtung-route-tdx] Those figures describe one source response and its variants; they are not a permanent county-wide route total.[^pingtung-route-tdx]
@@ -117,6 +129,10 @@ The southern tourism/ordinary-service boundary is kept visible. Route 101 is pub
 ## Payment, hubs and gaps
 
 Pingtung Bus says its city-bus vehicles received QR scanning equipment in 2024 and that its highway-bus vehicles had received QR-capable equipment in 2022; it separately records a 2021 trial using iPASS MONEY, EasyWallet and icash Pay on route 9189.[^pingtung-operator-overview] These are operator-reported deployment milestones, not proof that every county service has identical QR products or concessions. Current route pages retain their own electronic and cash fare tables instead of being generalised into a Taiwan-wide acceptance claim.[^pingtung-schedule-513][^pingtung-schedule-8203]
+
+## Service-quality evaluation
+
+Pingtung's official audit follow-up says the county adopted `屏東縣市區汽車客運業營運與服務評鑑執行要點` on 18 November 2025 and completed the 112 and 113年度 city-bus service-quality evaluations in June 2026.[^pingtung-service-evaluation-audit] This establishes the evaluation process and completion status, not the operators' scores: the audit page says the results were to be posted, so this page does not manufacture a ranking or grade.[^pingtung-service-evaluation-audit]
 
 The operator directory lists staffed points at Pingtung, Chaozhou, Donggang, Fangliao and Hengchun, along with a high-speed rail/墾丁快線 counter at Zuoying and an airport counter.[^pingtung-stations] Pingtung Bus’s own overview says it operates 38 highway routes and 25 Pingtung-county bus routes, while the national TDX response has a different scope; both are retained as source-defined measurements.[^pingtung-operator-overview][^pingtung-route-tdx]
 

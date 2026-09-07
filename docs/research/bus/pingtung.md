@@ -11,6 +11,8 @@ This is a research lead file. Production claims are limited to the full TDX and 
 - The full operator service-location page lists staffed points at Pingtung, Chaozhou, Donggang, Fangliao and Hengchun, plus counters at Zuoying High Speed Rail station and Kaohsiung International Airport for relevant services. PRIMARY, high confidence for the listed offices/counters and their published hours.
 - The full route pages fetched for routes 513, 8227, 8203 and 101 display 26 August 2026 timetable updates and provide route-specific departures, fare zones and accessibility markings. PRIMARY, high confidence for each page’s displayed snapshot; no complete county-wide timetable is inferred.
 
+- A National Audit Office / Pingtung County Audit Office follow-up states that Pingtung adopted its city-bus service-evaluation execution rules on 18 November 2025 and completed the 112 and 113年度 evaluations in June 2026. PRIMARY, high confidence for the process/completion status; the page does not provide operator scores.
+
 ## Conflicts
 
 - The TDX snapshot’s 123 route records / 333 variants and Pingtung Bus’s 63-route overview are retained as separate values because they measure different publication scopes. No average or preferred total is published.
@@ -20,6 +22,7 @@ This is a research lead file. Production claims are limited to the full TDX and 
 - **Complete county-wide Pingtung route total** — A single current total reconciling TDX city-scoped records, highway-bus routes, county services, township services, tourist routes and operator pages was not established on 2026-09-07; the page retains TBC rather than merging unlike counts.
 - **Current full Pingtung fare matrix** — The fetched operator pages expose route-specific fare-zone tables but no single full county-wide matrix was established on 2026-09-07; no universal fare is asserted.
 - **Current vehicle census** — The operator’s 263 commercial-vehicle overview and 10-bus electric deployment do not provide a model/registration roster on 2026-09-07; a fleet census remains TBC.
+- **Published evaluation scores** — The official audit follow-up confirms completion of the 112 and 113年度 evaluations in June 2026 but does not include the scores; no operator ranking is asserted.
 
 ## Stated gaps
 
