@@ -29485,3 +29485,12 @@ The source/citation check after adding the two entities reported 1,909 content
 files, 1,850 with a sources block, 8,923 resolved citations (8,374 primary,
 549 secondary), and `citations: clean.` The search index was regenerated at
 2,126 entries and 783 KB.
+### Run 319 — Keelung regional bus depth (7 September 2026)
+
+The eighth regional bus overlay was added from full primary sources. The committed `data/tdx/bus/national-routes.json` snapshot records Keelung as 116 RouteUID-oriented route records and 168 supplied `SubRoutes` variants, fetched 6 September 2026; these are explicitly not a timeless unique-route total. `content/bus/regional/keelung.md` and `docs/research/bus/keelung-regional.md` preserve that measurement boundary.
+
+The Keelung City Government Transportation Department’s full transfer-station notice (updated 3 March 2025; fetched 7 September 2026) establishes two physical publication zones: the station building and the Zhongshan 1st Road roadside shelter. It names the highway-facing operator group in the building, route groups at the shelter, and the continuing South Station boundary for specified 3xx, 4xx and 6xx services. The page does not establish bay-level allocation, step-free access, a live timetable or a direct railway-platform interchange, so those remain TBC.
+
+The city’s full TPASS 288 notice (fetched 7 September 2026) adds dated payment-sales evidence: EasyCard, iPASS and icash 2.0 at listed railway-station and transfer-station machines, plus separate EasyWallet and convenience-store channels. This is deliberately not generalised into a complete Keelung bus fare or universal payment matrix. The city’s TDX participating-unit award page was also read in full and is described as a data-cooperation award, not a passenger-service grade. A full 2025 route-506 detour notice is retained as a dated service-change example.
+
+No scout writers were used in this batch; all repository changes remained in MAIN. The generated/untracked baseline remained present and was not staged or cleaned.

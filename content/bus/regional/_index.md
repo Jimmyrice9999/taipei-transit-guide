@@ -264,6 +264,51 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full operator page links 7211/7212 and publishes the two-direction stop tables, including the Chiayi rear-station transfer centre and HSR Chiayi Station.
+  - id: keelung-route-tdx
+    title: Keelung city-bus route snapshot
+    titleOriginal: 基隆市公車路線資料（TDX Route/City/Keelung）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平台)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Keelung?$format=JSON
+    accessed: 2026-09-06
+    kind: primary
+    lang: zh-Hant
+    note: The dated route pull records Keelung RouteUID-oriented records and supplied SubRoutes variants.
+  - id: keelung-terminal-current
+    title: Keelung Transfer Station information
+    titleOriginal: 基隆轉運站資訊
+    publisher: Keelung City Government Transportation Department (基隆市政府交通處)
+    url: https://www.klcg.gov.tw/tw/tourism/2624-287263.html
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full municipal notice defines the two terminal zones, route/operator groups and South Station boundary.
+  - id: keelung-tpass
+    title: Keelung public-transport monthly pass sales points
+    titleOriginal: 「基隆市公共運輸定期票」(TPASS 288)，販售點更新
+    publisher: Keelung City Government Transportation Department (基隆市政府交通處)
+    url: https://www.klcg.gov.tw/tw/tourism/2624-301531.html
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full notice lists TPASS 288 sales locations and payment media.
+  - id: keelung-tdx-award
+    title: 2024 TDX participating-unit performance award
+    titleOriginal: 交通部113年度「運輸資料流通服務平臺TDX」加盟協作單位績效評獎
+    publisher: Keelung City Government (基隆市政府)
+    url: https://www.klcg.gov.tw/tw/klcg1/3242-299556.html
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full notice records the city data-participation award in the bus category.
+  - id: keelung-506-current
+    title: Route 506 trial detour notice
+    titleOriginal: 506公車路線自114年10月1日起試辦平日上午10時班次繞駛成功一路
+    publisher: Keelung City Government Transportation Department (基隆市政府交通處)
+    url: https://www.klcg.gov.tw/tw/tourism/2624-307208.html
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full notice records the dated route-506 trial detour.
   - id: highway-city-bus-directory
     title: Urban bus information
     titleOriginal: 市區公車資訊
@@ -290,6 +335,8 @@ The fifth entry is [Taoyuan regional buses](/bus/regional/taoyuan/).[^taoyuan-ro
 The sixth entry is [Pingtung regional buses](/bus/regional/pingtung/).[^pingtung-route-tdx] Its 7 September 2026 TDX snapshot contains 123 route records and 333 supplied variants, while Pingtung Bus’s current pages add route-specific timetable, fare-zone and accessibility evidence without pretending to reconcile every county, highway, township and tourist publication layer into one total.[^pingtung-route-tdx][^pingtung-operator-overview][^pingtung-schedule-513]
 
 The seventh entry is [Chiayi City and County regional buses](/bus/regional/chiayi/).[^chiayi-city-route-tdx][^chiayi-county-route-tdx] It keeps the two TDX jurisdictions separate, identifies the separate city/county public-bus authorities and county-developed iBus discovery surface,[^highway-city-bus-directory][^chiayi-county-ibus] adds Chiayi Bus's published BRT corridor and links the County iBus reservation boundary without treating a transfer-centre stop name as a timed interchange.[^chiayi-bus-brt][^chiayi-county-reservation]
+
+The eighth entry is [Keelung regional buses](/bus/regional/keelung/).[^keelung-route-tdx] Its 6 September 2026 snapshot contains 116 route records and 168 supplied variants, while the city’s transfer-station notice adds the two-zone terminal boundary, the South Station exception and the named city/intercity route groups.[^keelung-terminal-current] The TPASS 288 notice is kept as a dated payment-sales source rather than a universal fare claim.[^keelung-tpass] The city’s TDX award is recorded as a data-cooperation result rather than a passenger-service grade, and the dated route-506 detour notice illustrates why service-change notices remain separate from the static route layer.[^keelung-tdx-award][^keelung-506-current]
 
 ## Coverage
 
