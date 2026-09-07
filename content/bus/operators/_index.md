@@ -84,6 +84,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full directory lists Pingtung, Chaozhou, Donggang, Fangliao, Hengchun and high-speed rail/airport service points.
+  - id: chiayi-bus-about
+    title: About Chiayi Bus
+    titleOriginal: 嘉義客運簡介
+    publisher: Chiayi Bus Co., Ltd. (嘉義汽車客運股份有限公司)
+    url: https://www.cibus.com.tw/about
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full operator page states the 1917 founding, current bus counts, employee count and operator-stated route count.
+  - id: chiayi-bus-route-index
+    title: Chiayi Bus route and fare query
+    titleOriginal: 路線票價查詢
+    publisher: Chiayi Bus Co., Ltd. (嘉義汽車客運股份有限公司)
+    url: https://www.cibus.com.tw/route
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full route index lists the operator's route groups and the separate BRT group.
+  - id: chiayi-bus-sites
+    title: Chiayi Bus operating sites
+    titleOriginal: 場站介紹
+    publisher: Chiayi Bus Co., Ltd. (嘉義汽車客運股份有限公司)
+    url: https://www.cibus.com.tw/about4
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full page names the headquarters/maintenance centre, Zhongshan terminal, Beigang station and Puzi station.
 ---
 
 The committed TDX pull contains 61 operator records associated with 1051 route records [^tdx-bus-operator-pull].
@@ -105,6 +132,11 @@ notices for 9003 and 9010.[^hcbus-about][^hcbus-transition][^hcbus-home]
 official pages publish a current route-scope statement, operating hubs, QR-payment
 milestones and a dated 2026 Hengchun electric-bus deployment; route-specific
 timetables remain separate from the profile.[^pingtung-story][^pingtung-profile][^pingtung-stations]
+
+[Chiayi Bus Co., Ltd.](/bus/operators/chiayi-bus/) is a fourth regional operator
+profile. Its own pages publish an operator-stated route/fleet scope, operating
+sites and a current BRT corridor; the route list and current notices remain
+separate dated surfaces.[^chiayi-bus-about][^chiayi-bus-route-index][^chiayi-bus-sites]
 
 - [Taipei Bus Co., Ltd. — NewTaipei](/bus/operators/taipeibus-1m9ums8/) — 126 route records [^tdx-bus-operator-pull]
 - [SanChungBus — NewTaipei](/bus/operators/sanchungbus-1lzv139/) — 72 route records [^tdx-bus-operator-pull]

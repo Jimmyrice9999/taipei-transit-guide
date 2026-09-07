@@ -29454,3 +29454,34 @@ minutes. Both values now remain in `crossingTimeConflict` with source URLs and
 dates; neither is averaged. The route page explains the conflict, and the
 ferry unit test guards that it cannot be silently flattened. The remaining
 route/operator fare matrix and complete border process remain TBC.
+## Run 319 — Chiayi Bus operator and transfer-node depth
+
+The full official Chiayi Bus pages were fetched and read on 7 September 2026:
+the company profile, route index, operating-sites page, BRT current-state page,
+BRT query/stop page and current notices page. The operator profile now records
+the company's own figures of 1917 founding, 145 commercial buses, 20 tour
+buses, 180 employees and 37 routes without reconciling them to TDX's
+jurisdiction-scoped RouteUID/SubRoutes measurements.
+
+The profile also identifies the headquarters/maintenance and parking centre,
+Zhongshan terminal, Beigang station and Puzi station. The BRT node page records
+the operator-published rear-station transfer-centre stop relationship, the
+29.3-km corridor and 18-stop current-state presentation, while keeping bay
+allocation, step-free path and timed TRA/HSR transfer TBC. The operator's
+separate query page names 7211, 7212 and the early 7212 branch and publishes
+the stop tables; the current notices page includes the 1 September 2026 7212
+Zhongxiao Beijie stop change.
+
+The first focused test run caught a numeric spec-value formatting issue and a
+short node page. The value was moved into a prose-safe form, and the node page
+was expanded with source-backed route-presentation detail. No claim baseline
+was changed. The corrected focused run reported:
+
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+
+The source/citation check after adding the two entities reported 1,909 content
+files, 1,850 with a sources block, 8,923 resolved citations (8,374 primary,
+549 secondary), and `citations: clean.` The search index was regenerated at
+2,126 entries and 783 KB.
