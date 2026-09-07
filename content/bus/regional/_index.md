@@ -318,6 +318,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full official directory identifies the separate City and County urban-bus authorities and inquiry contacts.
+  - id: hualien-tpass
+    title: Hualien public-transport TPASS usage guide
+    titleOriginal: TPASS使用指南
+    publisher: Hualien County Government (花蓮縣政府)
+    url: https://www.hly.tw/tpass/usage
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full current guide defines Hualien city/highway-bus operator and route scope, pass plans and the separate 25-station use / 22-station sales lists.
+  - id: hualien-maas
+    title: About Hualien Yo真行 MaaS
+    titleOriginal: 關於MaaS
+    publisher: Hualien County Government (花蓮縣政府)
+    url: https://www.hly.tw/about
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full county MaaS page identifies Hualien Transfer Station as the information-integration core.
+  - id: hualien-evaluation-notice
+    title: Announcement of the 114年度 Hualien city-bus operations and service-evaluation results report
+    titleOriginal: 「114年度花蓮縣市區公車營運及服務評鑑計畫委託服務案」成果報告書公告
+    publisher: Hualien County Government Construction Department (花蓮縣政府建設處)
+    url: https://pw.hl.gov.tw/Detail_sp/309bee78fdcb45d5af2ca51f02c1062e
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full 15 July 2026 notice confirms the evaluation-results report attachment; scores remain TBC after the inner PDF fetch failed.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -337,6 +364,8 @@ The sixth entry is [Pingtung regional buses](/bus/regional/pingtung/).[^pingtung
 The seventh entry is [Chiayi City and County regional buses](/bus/regional/chiayi/).[^chiayi-city-route-tdx][^chiayi-county-route-tdx] It keeps the two TDX jurisdictions separate, identifies the separate city/county public-bus authorities and county-developed iBus discovery surface,[^highway-city-bus-directory][^chiayi-county-ibus] adds Chiayi Bus's published BRT corridor and links the County iBus reservation boundary without treating a transfer-centre stop name as a timed interchange.[^chiayi-bus-brt][^chiayi-county-reservation]
 
 The eighth entry is [Keelung regional buses](/bus/regional/keelung/).[^keelung-route-tdx] Its 6 September 2026 snapshot contains 116 route records and 168 supplied variants, while the city’s transfer-station notice adds the two-zone terminal boundary, the South Station exception and the named city/intercity route groups.[^keelung-terminal-current] The TPASS 288 notice is kept as a dated payment-sales source rather than a universal fare claim.[^keelung-tpass] The city’s TDX award is recorded as a data-cooperation result rather than a passenger-service grade, and the dated route-506 detour notice illustrates why service-change notices remain separate from the static route layer.[^keelung-tdx-award][^keelung-506-current]
+
+The ninth entry is [Hualien regional buses](/bus/regional/hualien/). It adds the county’s current TPASS operator and route boundary, public-transport pass scope, Hualien Transfer Station MaaS role and the 2026 evaluation-report announcement to the structured Hualien discovery layer.[^hualien-tpass][^hualien-maas][^hualien-evaluation-notice] The evaluation scores remain TBC because the linked report PDF could not be fetched in full during this verification.[^hualien-evaluation-notice]
 
 ## Coverage
 

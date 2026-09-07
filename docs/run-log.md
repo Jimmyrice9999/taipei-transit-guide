@@ -29684,6 +29684,44 @@ corrected gate output was:
     ℹ fail 0
     native_exit=0
 
+### Run 319 continuation batch — Hualien regional bus overlay (7 September 2026)
+
+Hualien was the next registry-only jurisdiction promoted to an editorial
+regional page. The full county Hualien Yo真行 TPASS guide was fetched on 7
+September 2026. It names Taroko Bus city routes 301, 302, 302A, 303, 305 and
+305A; Ubus city routes 308, 308A, 311 and 311A; and separate highway-bus
+families from Ubus, Xingdong Bus and East Taiwan Bus. It publishes the county's
+NT$199 30-day TRA/city-bus plan and NT$399 30-day TRA/city/highway-bus plan,
+explicitly excluding all Taiwan Tourist Shuttle routes. The page contains a
+use-scope list of 25 TRA stations and a separate sales-location list of 22;
+the content and research record retain them as different measurements.
+
+The full Hualien Yo真行 MaaS page says Hualien Transfer Station is the core for
+integrating public-transport information. The full Hualien County Construction
+Department notice dated 15 July 2026 says the 114年度 city-bus operations and
+service-evaluation results report was attached. Its inner PDF returned a
+cache-miss/fetch failure in the source tool, so scores and rankings remain TBC
+and the failure is recorded in `docs/research/bus/hualien.md`.
+
+The page adds 9 TDX route records and 31 supplied variants from the 7 September
+national structured snapshot, without expanding every source row into prose.
+Search regenerated to 2,129 entries (1,427 with Chinese names). The corrected
+fast-gate output was:
+
+    citations: 1913 content files, 1854 with a sources: block
+    citations: clean.
+    marker-audit: clean (1913 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2296 Han characters in 2+ character runs, all covered).
+    research: 324 file(s), 1252 recorded as checked and failed.
+    research: clean.
+    unsourced assertions have not increased
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    native_exit=0
+
 The batch also validated the ferry JSON successfully before the gate. The
 known generated/untracked baseline was 5,217 while this batch had four
 deliberate source/documentation changes; generated artefacts were not staged.

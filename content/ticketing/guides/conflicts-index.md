@@ -471,6 +471,15 @@ sources:
     kind: "primary"
     lang: "zh-Hant"
     note: "Supports the committed operator record, contact fields, source municipality, operator IDs, route associations and route names; the pull contains no ownership, fleet-model, depot or contract-history fields."
+  - id: "bus-regional-hualien-hualien-tpass"
+    title: "Hualien public-transport TPASS usage guide"
+    titleOriginal: "TPASS使用指南"
+    publisher: "Hualien County Government (花蓮縣政府)"
+    url: "https://www.hly.tw/tpass/usage"
+    accessed: "2026-09-07"
+    kind: "primary"
+    lang: "zh-Hant"
+    note: "The full current guide defines the NT$199 and NT$399 plans, 30-day use, included TRA/city/highway-bus scopes, excluded Taiwan Tourist Shuttle routes, city-bus operators and route lists, highway-bus operators and routes, and the separate 25-station use / 22-station sales lists."
   - id: "bus-regional-kaohsiung-motc168-ksev-2018"
     title: "Green electric bus era arrives — Kaohsiung buses roll out further and further"
     titleOriginal: "綠色電動巴士時代來臨 高雄公車愈開愈遠"
@@ -3374,6 +3383,29 @@ The Highway Bureau's open-data catalogue is narrower and newer: its dataset was 
 - [Electric-bus operations observation event](https://enews.moenv.gov.tw/Page/3B3C62C78849F32F/c786de79-bdd3-43e7-ae4b-a23241d918a9) — primary; Environmental Protection Administration, Executive Yuan (行政院環境保護署; now Ministry of Environment); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-history]
 - [National electric-bus operating vehicle count and manufacturer dataset](https://www.thb.gov.tw/News_Content_thbOpenData.aspx?n=13&s=734) — primary; Highway Bureau, Ministry of Transportation and Communications (交通部公路局); accessed 2026-08-22.[^bus-operators-taoyuanbus-2ov8j-taoyuan-electric-data]
 - [TDX bus operator and route pull](https://tdx.transportdata.tw/) — primary; Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺); accessed 2026-08-15.[^bus-operators-taoyuanbus-2ov8j-tdx-bus-operator-pull]
+
+## Hualien regional buses — Hualien public-transport pass
+
+Discussed on [Hualien regional buses](/bus/regional/hualien/) in the source page's “Hualien public-transport pass” section.[^bus-regional-hualien-hualien-tpass]
+
+### Hualien public-transport pass
+
+The county publishes two 30-day plans.[^bus-regional-hualien-hualien-tpass] The NT$199 plan covers unlimited, mileage-
+independent TRA travel within the county and city-bus routes; the NT$399 plan adds
+the county’s highway-bus routes.[^bus-regional-hualien-hualien-tpass] The guide explicitly excludes all
+Taiwan Tourist Shuttle routes, so “public transport pass” here does not mean every
+tourist-labelled bus service in the county.[^bus-regional-hualien-hualien-tpass]
+
+The guide’s two station counts must not be flattened. It lists 25 TRA stations in
+the pass’s use scope, but 22 designated TRA stations where station staff can sell
+the pass.[^bus-regional-hualien-hualien-tpass] Those figures describe eligibility and sales coverage,
+not a contradiction about the railway itself. The guide also says the pass can be
+loaded through several electronic-ticket media and identifies Hualien Transfer
+Station, Fengbin Township Office and Yuli Township Office among sales channels.[^bus-regional-hualien-hualien-tpass]
+
+#### Sources for this entry
+
+- [Hualien public-transport TPASS usage guide](https://www.hly.tw/tpass/usage) — primary; Hualien County Government (花蓮縣政府); accessed 2026-09-07.[^bus-regional-hualien-hualien-tpass]
 
 ## Kaohsiung regional buses — Electric buses — three citywide counts, three different dates
 
