@@ -29280,3 +29280,37 @@ Daily Air row. The `npm run gate:fast` after the UI change completed exit 0:
     ℹ tests 143
     ℹ pass 143
     ℹ fail 0
+## Run 319 — Yilan DRT directory depth
+
+The next rural batch fetched the complete official Highway Bureau page at
+`https://www.thb.gov.tw/News.aspx?_CSN=4025&n=10738&sms=13903`. The page is
+marked updated 2026-09-07, exposes page 1 of 11, and shows ten visible records
+across Happiness Bus and Happiness Taxi. The sample covers Sanxing 藍線 and
+橘線, Datong 1795B, Wujie 紅線 and 綠線, Nan'ao 南澳線 and Aohua 澳花線,
+Jiaoxi 黃1, and Suao 南方澳藍線 and 蘇澳綠線. The route-stop fields include
+published links to transfer/rail places such as Luodong Transfer Station,
+Luodong Railway Station, Nan'ao Railway Station and Heping Station.
+
+The page also exposes distinct 正線, 通勤線 and 假日線 patterns for Jiaoxi
+Happiness Taxi 黃1. Record modification dates (including 113-04-22,
+113-07-08, 113-11-27 and 115-06-24) are retained as source metadata and are
+not promoted to a universal September 2026 timetable. The directory's 11-page
+pagination means the ten visible rows are explicitly a first-page sample; a
+complete county route total, booking/contact matrix, fare table and operator
+crosswalk remain TBC.
+
+Added `content/bus/drt/yilan-happiness-services.md` and its lead file
+`docs/research/bus/yilan-happiness-services.md`, linked the page from the DRT
+index, and regenerated the search index. The fast gate after this batch
+reported:
+
+    citations: clean.
+    marker-audit: clean (1906 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 318 file(s), 1226 recorded as checked and failed.
+    research: clean.
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0

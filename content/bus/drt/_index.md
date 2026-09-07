@@ -191,6 +191,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full current county programme page publishes the fixed/flexible boundary, booking areas, 2026 fares, phone/LINE booking and local contact examples.
+  - id: thb-yilan-drt
+    title: Yilan Happiness Bus and Happiness Taxi operating information
+    titleOriginal: 幸福巴士及幸福小黃營運資訊：宜蘭縣
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.thb.gov.tw/News.aspx?_CSN=4025&n=10738&sms=13903
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official Yilan page shows the directory fields, 2026-09-07 update date, ten visible first-page records and their route-specific stop fields; it is not used as a complete county-wide timetable.
 ---
 
 Community transport is not one national mode. This page keeps ordinary fixed-route buses, taxi-bus services, reservation networks, medical shuttles and eligibility-limited accessible transport in separate evidence lanes.[^hsinchu-community-source][^taichung-yellow-source][^kaohsiung-community-source][^kaohsiung-accessible-source]
@@ -219,3 +228,5 @@ The Highway Bureau's inventory page is the national discovery surface: it names 
 The Highway Bureau inventory provides the national jurisdiction filter, but a complete row export and a national eligibility/operator crosswalk for 復康巴士 and accessible taxi programmes remain TBC. The fixed February 2026 programme count must not be silently presented as a September 2026 live count.[^thb-happiness-inventory][^motc-happiness-2026]
 
 Two municipal pages show why that crosswalk must remain explicit. Kaohsiung’s page, dated 30 June 2026, names Kaohsiung Bus as the contracted Rehabilitation Bus operator, limits eligibility to stated disability or wheelchair-medical-document categories, permits different advance-booking windows by category and publishes a distance-based fare formula.[^kaohsiung-rehab-source] Taichung’s page separately lists 54 universal accessible taxis across five fleets; it says the service has no eligibility restriction, prioritises passengers with reduced mobility, and uses the city’s metered fare.[^taichung-accessible-taxi-source] Neither example is silently promoted to a national rule.
+
+- [Yilan Happiness Bus and Happiness Taxi](/bus/drt/yilan-happiness-services/) — dated Highway Bureau directory sample covering Sanxing, Wujie, Nan’ao, Suao and Jiaoxi records.[^thb-yilan-drt]
