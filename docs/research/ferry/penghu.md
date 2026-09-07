@@ -2,8 +2,8 @@
 
 **Research file — leads, not sources.** The existing research corpus is a lead index. Every promoted claim below was checked against the full official page or PDF named in the record.
 
-**Version 1.0 — 26 August 2026**
-**Status: current official verification for `content/ferry/routes/penghu.md`.**
+**Version 1.1 — 7 September 2026**
+**Status: current official verification for `content/ferry/routes/penghu.md`; the live county timetable was re-fetched for a September query.**
 
 ## What is established
 
@@ -14,6 +14,12 @@
 - **The tourism authority publishes current-looking fare guidance but directs readers to the operating authority for rules and timetables.** **Source:** same full page. Original-language basis: `相關開航規定、票價及時間請參考單位公布資訊為主。`
 
 ### South Sea public timetable
+
+- **The county's live timetable displayed a 2026-09-08 to 2026-09-14 query when fetched on 7 September 2026.** **Source:** *Public ferry timetable*, titleOriginal `交通船時刻表`, Penghu County Public Vehicle and Ship Management Office, `https://www.phpto.gov.tw/home.jsp?id=106`, PRIMARY, High confidence because the full page was fetched and read on 2026-09-07. Original-language basis: `※查詢結果：2026-09-08~2026-09-14之交通船班資料如下列示。` and the page footer `更新日期：2026-09-07`.
+
+- **The current query shows a fixed Nanhai Star No. 2 pattern on 8–10, 13 and 14 September: Magong 09:30, Wangan 10:20 and 10:50, Qimei 11:35, Qimei 13:30, Wangan 14:15 and 14:30, Magong 15:20.** **Source:** the same full timetable page. Original-language basis: the repeated `南海之星2號` entries and their `馬公09:30`, `10:20望安`, `望安10:50`, `11:35七美`, `七美13:30`, `14:15望安`, `望安14:30`, `15:20馬公` rows.
+
+- **The current query also shows a 11 September Nanhai Star No. 2 extension to Kaohsiung, a 12 September reverse sailing, the 11 September Friday-special Armani service, Hai You 1 entries marked `不載貨`, and overnight Qimei sailings labelled 得意1/得意2.** **Source:** the same full timetable page. Original-language basis: the rows marked `延航高雄`, `週五專船`, `*不載貨` and `夜泊七美`.
 
 - **The county’s live timetable displayed the date query 2026-08-26 to 2026-09-01 when fetched.** **Source:** *Public ferry timetable*, titleOriginal `交通船時刻表`, 澎湖縣政府公共車船管理處, `https://www.phpto.gov.tw/home.jsp?id=106`, PRIMARY, High confidence because the full page was fetched on 2026-08-26; page update date shown as 2026-08-18. Original-language basis: `※查詢結果：2026-08-26~2026-09-01之交通船班資料如下列示。`
 
@@ -55,7 +61,7 @@
 
 ## Checked and failed
 
-- **Magong City Office Tongpan/Hujing timetable** — Checked 2026-08-26: `https://www.penghu.gov.tw/Tmakun/ch/home.jsp?id=247` timed out. The tourism authority’s full page was used for the NT$120 fare and for the link to the responsible authority; no current departure time was asserted.
+- **Magong City Office Tongpan/Hujing timetable** — Checked 2026-09-07: `https://www.penghu.gov.tw/Tmakun/ch/home.jsp?id=247` remains the linked responsible-authority seam, but the current county page does not include those times; no current departure time was asserted.
 - **Wangan Township Southern Four Islands timetable** — Checked 2026-08-26: `https://www.wangan.gov.tw/ch/home.jsp?id=125` timed out. The tourism authority’s full page was used for the published fare categories and the responsible-authority link; no current departure time was asserted.
 - **County timetable alternate page** — Checked 2026-08-26: `https://www.penghu.gov.tw/phpto/home.jsp?id=108` returned an internal error on full-page fetch. The working operator-domain page at `https://www.phpto.gov.tw/home.jsp?id=106` was used instead.
 - **Monthly timetable PDF** — Checked 2026-08-26: `https://www.penghu.gov.tw/userfiles/05/files/11505%E8%88%AA%E7%8F%AD%E8%A1%A8.pdf` returned an internal error on full-page fetch. No May schedule value was promoted from its search result.
@@ -64,9 +70,10 @@
 ## Stated gaps
 
 - The full official pages reviewed here do not establish a stable annual frequency, vessel capacity, accessibility inventory, or ridership series for every Penghu island service.
-- The current Tongpan/Hujing and Southern Four Islands departure times remain TBC because the linked municipal pages timed out; a successful full fetch of each page or an operator timetable would settle them.
+- The current Tongpan/Hujing and Southern Four Islands departure times remain TBC because the current county query does not include those times; a successful full fetch of each linked municipal page or an operator timetable would settle them.
+- A complete September month-wide matrix remains TBC: the live county source exposes a seven-day query window rather than a complete monthly schedule.
 - The National Scenic Area pages identify operator families and route pairs but do not constitute a live booking feed. A dated operator schedule is needed before publishing a guaranteed Taiwan–Penghu departure, fare or seasonal frequency.
 
 ## Sources and archive status
 
-All promoted sources are official government/operator pages or a government PDF fetched in full on 2026-08-26. No archive snapshot URL was captured in this unit; the live URLs and page update/effective dates are retained.
+The promoted sources are official government/operator pages or a government PDF fetched in full. The current county timetable was re-fetched on 2026-09-07; the older August query remains retained as a dated historical snapshot rather than current evidence. No archive snapshot URL was captured in this unit; the live URLs and page update/effective dates are retained.

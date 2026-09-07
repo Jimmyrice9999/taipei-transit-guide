@@ -1,7 +1,7 @@
 ---
 title: Penghu island ferry services
 summary: Public and visitor ferry services linking Magong with Penghu's inhabited islands, the southern islands and Taiwan, with dated schedules, fares and weather limits.
-updated: 2026-08-26
+updated: 2026-09-07
 aliases:
   - Penghu ferries
   - 澎湖交通船
@@ -11,8 +11,8 @@ facts:
     value: Magong–Wangan–Qimei
     source: phpto-timetable
   - label: Retrieved schedule window
-    value: 2026-08-26 to 2026-09-01
-    source: phpto-timetable
+    value: 2026-09-08 to 2026-09-14
+    source: phpto-timetable-september-2026
   - label: Magong–Qimei adult fare in the official visitor guide
     value: NT$437
     source: penghu-nsa-island-hopping
@@ -89,6 +89,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The live official timetable page fetched on 26 August 2026. Its displayed query covers 26 August–1 September 2026 and lists South Sea services, vessel names, ticket points, weather-stop rules and the page update date of 18 August 2026."
+  - id: phpto-timetable-september-2026
+    title: Public ferry timetable — 8 to 14 September 2026 query
+    titleOriginal: 交通船時刻表
+    publisher: Penghu County Public Vehicle and Ship Management Office (澎湖縣政府公共車船管理處)
+    url: "https://www.phpto.gov.tw/home.jsp?id=106"
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The full live page displayed a 2026-09-08 to 2026-09-14 query, including Nanhai Star No. 2 fixed service, overnight Qimei sailings, the Friday-special Armani service, Hai You 1 fixed service and a 11 September extension to Kaohsiung; the page footer was updated 2026-09-07 and the timetable content says the page update is 2026-08-18."
   - id: phpto-ticket-guidance
     title: Public ferry ticket-purchase guidance
     titleOriginal: 澎湖縣政府公共車船管理處交通船船票購買須知
@@ -129,25 +138,28 @@ keeps every date attached to the schedule it describes.
 ## The county’s South Sea public service
 
 The Public Vehicle and Ship Management Office’s live timetable displayed a
-query for 26 August–1 September 2026 when fetched on 26 August.[^phpto-timetable] It lists
-南海之星2號 (Nanhai Star No. 2), 海有1, the Friday special boat 亞曼尼, and
-overnight 七美 sailings, so the week is not a single repeating table.[^phpto-timetable]
-The regular pattern shown for 26 August, 29 August, 30 August and 1 September
-is Magong 09:30, Wangan 10:20, Wangan 10:50, Qimei 11:35, Qimei 13:30,
-Wangan 14:15, Wangan 14:30 and Magong 15:20.[^phpto-timetable] On 27 August,
-the same page instead shows a service continuing from Qimei to Kaohsiung,
-with Qimei at 12:30 and Kaohsiung at 15:10.[^phpto-timetable] Its 28 August
-listing includes a Kaohsiung departure at 09:50, Qimei at 12:40, Wangan at
-14:50 and Magong at 16:20.[^phpto-timetable]
+query for 8–14 September 2026 when fetched on 7 September.[^phpto-timetable-september-2026]
+It lists 南海之星2號 (Nanhai Star No. 2), 海有1, the Friday special boat 亞曼尼
+and overnight 七美 sailings, so the week is not a single repeating table.[^phpto-timetable-september-2026]
+The fixed 南海之星2號 pattern shown on 8–10, 13 and 14 September is Magong
+09:30, Wangan 10:20, Wangan 10:50, Qimei 11:35, Qimei 13:30, Wangan 14:15,
+Wangan 14:30 and Magong 15:20.[^phpto-timetable-september-2026]
+On 11 September, the same vessel is shown continuing from Qimei to Kaohsiung,
+with Qimei at 12:30 and Kaohsiung at 15:10; on 12 September the reverse
+Kaohsiung sailing is shown at 09:50, Qimei at 12:40/14:00, Wangan at 14:50
+and Magong at 16:20.[^phpto-timetable-september-2026]
+The same current query also shows the 11 September Friday-special Armani
+service and Hai You 1 services marked `不載貨` (no cargo), while the overnight
+entries use 得意1 and 得意2.[^phpto-timetable-september-2026]
 
 These are dated departures, not a promise that a boat will run regardless of
 conditions. The live page says the Magong–Wangan–Qimei service stops at wave
 height of 3 metres or wind above 15.6 m/s, the Qimei–Kaohsiung service stops
 above 13.6 m/s, and overnight or Friday-special services stop above 10.5
-m/s; the captain may also decide from sea conditions.[^phpto-timetable] The
+m/s; the captain may also decide from sea conditions.[^phpto-timetable-september-2026] The
 same page notes that the boats carry both passengers and cargo, so heavy
 loading can delay departure, and that charter or weather-affected services may
-be adjusted.[^phpto-timetable]
+be adjusted.[^phpto-timetable-september-2026]
 
 ## Tickets, reservations and island fares
 

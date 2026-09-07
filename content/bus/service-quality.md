@@ -72,4 +72,4 @@ The Taichung report's 109年度/32-indicator scope, Tainan's plan listings, Kaoh
 
 ## What remains TBC
 
-The guide does not yet have a current, source-comparable score table for all 22 jurisdictions. It also does not infer that an authority without a readily fetched report has no evaluation system; that distinction requires a full search of the authority's own publication and procurement records.
+A current, source-comparable score table for all 22 jurisdictions: **TBC**. The absence of a readily fetched report is not treated as evidence that an authority has no evaluation system; that distinction requires a full search of the authority's own publication and procurement records.

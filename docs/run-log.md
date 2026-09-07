@@ -29648,3 +29648,42 @@ the earlier Run 319 boundaries: a route-family ferry count remains TBC where
 official directory, operator and date-query units differ; domestic aviation
 remains a dated September workbook snapshot; and access-chain evidence is not
 treated as a timed or confirmed interchange.
+
+### Run 319 continuation batch — current Penghu timetable refresh (7 September 2026)
+
+`Run 319: refresh Penghu ferry snapshot` updates the Penghu ferry route,
+research file and national ticketing-directory data with a newly fetched
+official county timetable query for 8–14 September 2026. The full page at
+`https://www.phpto.gov.tw/home.jsp?id=106` was fetched on 7 September; its
+footer was updated the same day while the timetable content identifies an
+18 August content update. The new snapshot records the repeated 南海之星2號
+pattern on 8–10, 13 and 14 September, the 11 September continuation to
+Kaohsiung, the 12 September reverse sailing, the Friday-special 亞曼尼 service,
+Hai You 1 rows marked `不載貨`, and overnight 七美 entries using 得意1/得意2.
+It retains weather, cargo and captain discretion warnings and does not turn a
+seven-day query into a month-wide timetable. Tongpan/Hujing and Southern Four
+Islands departure times remain TBC after the current query and responsible
+authority seam were checked again.
+
+The first fast-gate attempt exposed one genuine claims-ratchet assertion in the
+already committed service-quality page: “The guide does not yet have...” was
+rewritten as an explicit TBC state. The claims baseline was not changed. The
+corrected gate output was:
+
+    citations: 1912 content files, 1853 with a sources: block
+    citations: clean.
+    marker-audit: clean (1912 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2296 Han characters in 2+ character runs, all covered).
+    research: 323 file(s), 1250 recorded as checked and failed.
+    research: clean.
+    unsourced assertions have not increased
+    ℹ tests 148
+    ℹ pass 148
+    ℹ fail 0
+    native_exit=0
+
+The batch also validated the ferry JSON successfully before the gate. The
+known generated/untracked baseline was 5,217 while this batch had four
+deliberate source/documentation changes; generated artefacts were not staged.
