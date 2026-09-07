@@ -170,7 +170,7 @@ with Qimei at 12:30 and Kaohsiung at 15:10; on 12 September the reverse
 Kaohsiung sailing is shown at 09:50, Qimei at 12:40/14:00, Wangan at 14:50
 and Magong at 16:20.[^phpto-timetable-september-2026]
 The same current query also shows the 11 September Friday-special Armani
-service and Hai You 1 services marked `不載貨` (no cargo), while the overnight
+service and Hai You 1 services marked 不載貨 (no cargo), while the overnight
 entries use 得意1 and 得意2.[^phpto-timetable-september-2026]
 
 These are dated departures, not a promise that a boat will run regardless of

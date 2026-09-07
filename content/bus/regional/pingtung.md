@@ -132,7 +132,7 @@ Pingtung Bus says its city-bus vehicles received QR scanning equipment in 2024 a
 
 ## Service-quality evaluation
 
-Pingtung's official audit follow-up says the county adopted `屏東縣市區汽車客運業營運與服務評鑑執行要點` on 18 November 2025 and completed the 112 and 113年度 city-bus service-quality evaluations in June 2026.[^pingtung-service-evaluation-audit] This establishes the evaluation process and completion status, not the operators' scores: the audit page says the results were to be posted, so this page does not manufacture a ranking or grade.[^pingtung-service-evaluation-audit]
+Pingtung's official audit follow-up says the county adopted 屏東縣市區汽車客運業營運與服務評鑑執行要點 on 18 November 2025 and completed the 112 and 113年度 city-bus service-quality evaluations in June 2026.[^pingtung-service-evaluation-audit] This establishes the evaluation process and completion status, not the operators' scores: the audit page says the results were to be posted, so this page does not manufacture a ranking or grade.[^pingtung-service-evaluation-audit]
 
 The operator directory lists staffed points at Pingtung, Chaozhou, Donggang, Fangliao and Hengchun, along with a high-speed rail/墾丁快線 counter at Zuoying and an airport counter.[^pingtung-stations] Pingtung Bus’s own overview says it operates 38 highway routes and 25 Pingtung-county bus routes, while the national TDX response has a different scope; both are retained as source-defined measurements.[^pingtung-operator-overview][^pingtung-route-tdx]
 
