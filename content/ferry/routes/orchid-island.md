@@ -27,6 +27,9 @@ specs:
   - label: Farnlin calendar check for 7 September 2026
     value: No sailing displayed for the queried date
     source: farnlin-september-calendar
+  - label: Farnlin Houbihu calendar on 7 September 2026
+    value: "07:00 and 12:20 outbound; 09:30 and 14:45 return"
+    source: farnlin-houbihu-september-calendar
   - label: Fugang crossing time (county tourism page)
     value: 120
     unit: minutes
@@ -90,6 +93,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: "The operator's date-specific calendar query for 2026-09-07 displayed 今日無船班 (no sailing today). This is a dated operator-calendar result, not a route-family suspension notice."
+  - id: farnlin-houbihu-september-calendar
+    title: "Farnlin route calendar — Houbihu to Orchid Island"
+    titleOriginal: "船班資訊－後壁湖 ⟺ 蘭嶼"
+    publisher: "Farnlin Shipping Co., Ltd. (帆利航運有限公司)"
+    url: "https://www.farnlin.com.tw/calendar_main_routestand.html?date=2026-09-07&mon=&routestand=38&year="
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: "The operator's date-specific calendar query displayed 07:00 and 12:20 from Houbihu and 09:30 and 14:45 from Orchid Island, with the vessel label 豪華客輪."
   - id: pts-lanyu-subsidy
     title: "Orchid Island resident ferry-fare subsidy changes to a reimbursement model"
     titleOriginal: "蘭嶼船票補助改為先購票後申請"
@@ -140,6 +152,8 @@ That subsidy mechanism itself rests only on the PTS report, which states that Or
 Long Hong's own traffic page gives peak-season outbound sailings from Fugang at 07:00 and 12:30; a booking aggregator separately gives return times of 09:30 and 15:00 and a similar pattern for the Houbihu leg, though these return-time and Houbihu figures were not independently confirmed against a fetched primary page.[^longhong-traffic] The scenic-area administration's own page states only that schedules "are adjusted between peak and off-peak season" without giving off-season clock times.[^eastcoast-nsa-ferry-lanyu] Two incompatible claims about off-season Fugang frequency circulate in secondary sources — one describing a flat two-days-a-week pattern (itself an uncited sentence within zh.wikipedia's own article), another describing a government-subsidised fixed Monday/Wednesday/Friday-plus-alternate-Sunday pattern — and neither traces to a primary source read for this page; both stay TBC rather than being merged into one.
 
 The operator's own date-specific calendar query for 7 September 2026 displayed `今日無船班` (no sailing today).[^farnlin-september-calendar] That result is useful as a current operational snapshot, but it is not a route-suspension statement: the government page says Orchid Island sailings change with the low/high season, and the operator calendar is queried by date.[^eastcoast-nsa-ferry-lanyu] The route family therefore remains listed as current in the national directory while this particular operator-date result is retained separately from a general timetable.
+
+The same operator's Houbihu–Orchid Island calendar query for 7 September 2026 displayed two sailings from Houbihu at 07:00 and 12:20 and two returns at 09:30 and 14:45, using the generic vessel label `豪華客輪` rather than a named vessel.[^farnlin-houbihu-september-calendar] This is a dated operator display for one day; it does not override the government's seasonal warning or establish that the four sailings repeat throughout September.[^eastcoast-nsa-ferry-lanyu]
 
 On suspension decisions: a Ministry of Transportation and Communications release on one specific episode states the Maritime and Port Bureau "will closely monitor sea and weather conditions and coordinate with operators to resume service as soon as it meets sailing-safety standards," and reported that a section of Orchid Island sailings had resumed the following day once conditions allowed — without stating a numeric wind or wave threshold for this route.[^motc-lanyu-resumption] No route-specific published threshold was found in any source read for this page, consistent with the same gap found on the Green Island route.
 
