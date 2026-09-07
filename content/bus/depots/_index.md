@@ -38,6 +38,7 @@ TDX has no depot or garage field, so these are published only where an operator 
 - [San Chung Bus operating sites](/bus/depots/sanchung-operating-sites/) — 16 dispatch sites and two maintenance yards named by the operator; individual capacities and opening dates are TBC.
 - [Taipei Bus stations and facilities](/bus/depots/taipei-bus-stations/) — the operator’s station page publishes addresses and route allocations, while capacity and opening dates remain TBC.
   - [Keelung Transfer Station](/bus/depots/keelung-transfer-station/) — the city’s two-zone terminal notice, named operators and the separate railway-station bus-stop boundary.
+  - [Yilan Transfer Station](/bus/depots/yilan-transfer-station/) — TRA's published transfer-bus access point and the county's visitor-facing coach/bus terminal boundary; bay allocation and timed interchange remain TBC.
 - [Chiayi rear-station transfer centre](/bus/depots/chiayi-rear-station-transfer-centre/) — Chiayi Bus’s published BRT stop relationship, corridor metrics and explicit gap between a named stop and a confirmed timed rail interchange.[^chiayi-bus-brt-query][^chiayi-bus-brt-current]
 - [Depot electrification and charging infrastructure](/bus/depots/charging-infrastructure/) — no national depot-charger registry exists, but named installations show buses sharing an MRT depot's power draw by night, rationed charging bays, and a public-EV-charger boom that mostly isn't measured against buses at all.
 
