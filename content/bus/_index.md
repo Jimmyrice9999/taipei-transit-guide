@@ -86,7 +86,9 @@ of [Taichung](/bus/regional/taichung/), [Kaohsiung](/bus/regional/kaohsiung/),
 [Tainan](/bus/regional/tainan/) and [Hsinchu](/bus/regional/hsinchu/), plus
 national [intercity coach](/bus/intercity/) services — each with its own
 operators, fare structure and, where one exists, a rating or evaluation
-scheme distinct from Taipei's.
+scheme distinct from Taipei's. The [municipal evaluation comparison](/bus/service-quality/)
+records the different years, scopes and publication states without turning them
+into a false national ranking.
 
 The government-backed [Taiwan Tourist Shuttle](/bus/tourist/) is kept as a
 separate public-transport tourism layer. Its dated route selector covers tourist
