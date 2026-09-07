@@ -28029,6 +28029,30 @@ changing the claims baseline. The final MOOVO fast gate completed exit 0:
     ℹ pass 143
     ℹ fail 0
 
+## Run 319 — Taoyuan regional bus depth
+
+After the September Small Three Links, national ferry directory and domestic-air snapshot commits, the next depth batch targeted Taoyuan because it had national structured discovery but no regional editorial overlay. The working-tree baseline remained the known 5,214 generated/untracked entries; after this batch the status count was 5,217, consisting of the baseline plus the Taoyuan regional page, the Taoyuan research file and the regional-index edit. No scout or research fetch wrote to the repository.
+
+The full Taoyuan city announcement `106路線自3月9日起併入5014路線增班服務` was fetched from the city government on 2026-09-07. It states that route 106's operating term ended and no operator accepted the route after repeated notices, and that from 2026-03-09 the city used 5014 with new 5014A and 5014B branches. It publishes the >80% overlap analysis, the nine overlapping route labels, weekday/holiday service counts, the combined 43/33 service count, NT$18 first-8-km plus NT$2.58/km pricing, city-card basic-mileage benefit and TPASS applicability.
+
+The full Taoyuan city-government December 2025 dual-bus plan was fetched from `news.tycg.gov.tw`. It supports the policy distinction between 桃小巴 and trunk/circular buses and describes staged payment/transfer integration. The January 2026 city QR article and the 10-route 桃小巴 notice were checked as official leads but full fetches failed (HTTP 428/connection reset and timeout respectively), so their search-result text was not promoted to production claims. Those failures are recorded in `docs/research/bus/taoyuan.md`.
+
+The existing TDX national snapshot defines Taoyuan as 412 route records and 714 supplied SubRoutes variant records in the 2026-09-07 retrieval; 15 distinct operator labels are attached to those route records. The page intentionally calls these snapshot measurements, not permanent route/company totals.
+
+The Taoyuan batch initially failed the fast gate because the research checker requires checked-failure bullets to carry a bold claim label. The entries were reformatted without weakening the checker. The corrected `npm run gate:fast` output was:
+
+    citations: clean.
+    marker-audit: clean (1902 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2294 Han characters in 2+ character runs, all covered).
+    research: 315 file(s), 1217 recorded as checked and failed.
+    research: clean.
+    ✔ unsourced assertions have not increased (1465.4849ms)
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0
+
 ### Run 319 — current ferry directory and domestic-air snapshot
 
 The next sequential research batch re-fetched the full MPB ticketing directory

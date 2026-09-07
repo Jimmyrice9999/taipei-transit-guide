@@ -1,6 +1,6 @@
 ---
 title: Regional bus networks
-description: City and county bus networks beyond the Taipei core, with dated Hsinchu, Taichung, Tainan and Kaohsiung layers.
+description: City and county bus networks beyond the Taipei core, with dated Hsinchu, Taichung, Tainan, Kaohsiung and Taoyuan layers.
 order: 4
 sources:
   - id: hsinchu-portal
@@ -165,6 +165,33 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official taxi-bus service description and route boundary.
+  - id: taoyuan-route-tdx
+    title: Taoyuan city-bus route snapshot
+    titleOriginal: 桃園市公車路線資料（TDX Route/City/Taoyuan）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Taoyuan?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated national pull records Taoyuan RouteUID-oriented records, supplied SubRoutes variants and operator labels.
+  - id: taoyuan-106-5014
+    title: Route 106 joins route 5014 with added service from 9 March
+    titleOriginal: 106路線自3月9日起併入5014路線增班服務
+    publisher: Taoyuan City Government Department of Transportation (桃園市政府交通局)
+    url: https://www.tycg.gov.tw/NewsPage_Content.aspx?n=7&s=1609279&sms=7882
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full announcement records the 2026 corridor restructuring, service counts, fare and TPASS/citizen-card treatment.
+  - id: taoyuan-dual-bus-plan
+    title: Taoyuan dual-bus transfer improvement plan
+    titleOriginal: 桃市公車雙巴轉運提升計畫
+    publisher: Taoyuan City Government Information Office (桃園市政府新聞處)
+    url: https://news.tycg.gov.tw/News_Content.aspx?n=5016&s=1598080&sms=7885
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full December 2025 policy report describes the 桃小巴/trunk-bus boundary and staged payment integration.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -176,6 +203,8 @@ The second entry is [Taichung regional buses](/bus/regional/taichung/).[^taichun
 The third entry is [Tainan regional buses](/bus/regional/tainan/).[^tainan-route-dataset][^tainan-route-tdx] Its route and ordered-stop snapshot is joined to the city's annual route-ridership resources and its separate 小黃公車 route table, while timetable history remains outside the static layer.[^tainan-stop-tdx][^tainan-ridership-dataset][^tainan-yellow]
 
 The fourth entry is [Kaohsiung regional buses](/bus/regional/kaohsiung/).[^kaohsiung-route-index][^kaohsiung-route-tdx] Its live TDX snapshot preserves 316 route records, 617 direction runs and 19,191 ordered stops, while the municipal index's separate 197-route count remains published as a scope conflict.[^kaohsiung-route-tdx][^kaohsiung-stop-tdx][^kaohsiung-route-index] The city's 公車式小黃 service is kept as a documented service category rather than merged into a conventional fixed-route timetable.[^kaohsiung-yellow]
+
+The fifth entry is [Taoyuan regional buses](/bus/regional/taoyuan/).[^taoyuan-route-tdx] Its 7 September 2026 TDX snapshot contains 412 route records and 714 supplied variants; the page uses the city’s current 106-to-5014 restructuring to explain how a corridor change, operator/service policy and dated fare evidence sit above the structured discovery layer.[^taoyuan-route-tdx][^taoyuan-106-5014] 桃小巴 is kept as a local policy/service category rather than flattened into a generic route taxonomy.[^taoyuan-dual-bus-plan]
 
 ## Coverage
 
