@@ -49,6 +49,14 @@ specs:
   - label: Matsu fixed-schedule validity
     value: 2025-12-01 through 2026-11-30
     source: mpb-matsu-september-snapshot
+  - label: Kinmen–Quanzhou one-way adult fare shown by local official page
+    value: 650
+    unit: NT$ per passenger
+    source: lieyu-transport-information
+  - label: Kinmen–Quanzhou cleaning charge shown by local official page
+    value: 100
+    unit: NT$ per passenger
+    source: lieyu-transport-information
 sources:
   - id: mpb-small-three-links
     title: Small Three Links sailing table
@@ -77,6 +85,15 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The official operations page is the current source boundary for Kinmen cross-strait operational notices; monthly sailing detail remains date-sensitive.
+  - id: lieyu-transport-information
+    title: Lieyu transport information
+    titleOriginal: 交通資訊
+    publisher: Lieyu Township Office, Kinmen County (金門縣烈嶼鄉公所)
+    url: https://lieyu.kinmen.gov.tw/cp.aspx?n=A6488ABECB4F8E7D
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official page was fetched directly. Its 2026-09-07 page shows Shuitou's route context, booking/check-in contacts, fare display and a separate approximately 70-minute Kinmen–Quanzhou duration.
   - id: mpb-kinmen-september-index
     title: September 2026 Kinmen Small Three Links timetable notice
     titleOriginal: 115年9月金門小三通航班表
@@ -123,6 +140,9 @@ For Matsu, the Bureau also publishes a fixed schedule page titled for the period
 
 Kinmen's official cross-strait operations page is retained as a second source boundary for notices and operational context.[^mpb-cross-strait-operations] The Maritime and Port Bureau's September notice was published on 17 August 2026, checked on 1 September, and links separate Kinmen–Xiamen and Kinmen–Quanzhou timetable files.[^mpb-kinmen-september-index] The attached Xiamen table covers 1–30 September, prints 12 departure slots in each direction and assigns vessels by date rather than naming one permanent vessel for the route.[^mpb-kinmen-xiamen-september] The attached Quanzhou table prints departures at 09:50 and 16:35 from Kinmen and 08:30 and 11:10 from Quanzhou on 15 even-numbered September dates; its service rows identify 八方輪.[^mpb-kinmen-quanzhou-september]
 
-The route family also does not attempt to provide immigration, customs or ticket-collection advice from a third-party travel summary. The September PDFs do provide dated booking contacts: the Quanzhou table tells Kinmen passengers to buy at the terminal one hour before departure, while the Xiamen table lists terminal-side operator contacts.[^mpb-kinmen-quanzhou-september][^mpb-kinmen-xiamen-september] Current fares, terminal charges and a complete border/check-in procedure remain TBC here because those fields require their own dated official fare or terminal source. The September vessel roster is therefore linked as a snapshot rather than promoted to a permanent fleet assignment.
+The route family also does not attempt to provide immigration, customs or ticket-collection advice from a third-party travel summary. The September PDFs do provide dated booking contacts: the Quanzhou table tells Kinmen passengers to buy at the terminal one hour before departure, while the Xiamen table lists terminal-side operator contacts.[^mpb-kinmen-quanzhou-september][^mpb-kinmen-xiamen-september] The Lieyu page now resolves one current Shuitou fare display, but other route fares, terminal charges and a complete border/check-in procedure remain TBC here because those fields require their own dated official source. The September vessel roster is therefore linked as a snapshot rather than promoted to a permanent fleet assignment.
 
 The Small Three Links belong in the ferry atlas because the public-facing transport action is a scheduled passenger sailing, while the cross-border label makes the legal and operational context explicit. Kinmen, Lienchiang and terminal pages can index this canonical page; they should not create duplicate route articles.
+The current Lieyu Township Office transport page adds a dated fare and terminal-process boundary for Shuitou: it displays a one-way adult fare of NT$650 plus a NT$100 cleaning charge, a NT$325 half fare for the listed eligible groups and a NT$65 insurance ticket for children under two.[^lieyu-transport-information] It says passengers should first check the sailing time and vessel, contact the relevant operator to reserve using identity details, then buy at the terminal on the sailing day; its page was updated 7 September 2026.[^lieyu-transport-information] These are the local official page's displayed values, not a claim that every operator publishes an identical fare product.
+
+The official sources also disagree on the approximate Kinmen–Quanzhou crossing time. The Maritime and Port Bureau sailing page says about 60 minutes,[^mpb-small-three-links] while the Lieyu page says about 70 minutes.[^lieyu-transport-information] Both dated values are retained; the route family does not average them or silently choose one.

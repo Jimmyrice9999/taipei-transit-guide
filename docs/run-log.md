@@ -29434,3 +29434,23 @@ The corrected fast gate reported:
     ℹ tests 147
     ℹ pass 147
     ℹ fail 0
+## Run 319 — current Small Three Links fare boundary and source conflict
+
+The earlier September snapshot left all fares TBC. A fresh full fetch of the
+Lieyu Township Office's official `交通資訊` page (92 KB HTML, retrieved
+2026-09-07; page update `115-09-07`) resolves a narrower current fare boundary
+for Shuitou: one-way adult NT$650, plus NT$100 cleaning charge; half fare
+NT$325 for the page's listed 2–11, 65+ and disability categories; and NT$65
+insurance ticket for children under two. The page says values are primarily
+sold at the terminal. Its booking instructions say to check the sailing and
+vessel, contact the operator with identity details, and buy at the terminal on
+the day of travel. The snapshot stores this as a dated route-level fare object,
+not a universal operator fare matrix.
+
+This fetch also found a genuine official conflict: the Maritime and Port
+Bureau's full Small Three Links sailing page states approximately 60 minutes
+for Kinmen–Quanzhou, while the current Lieyu page states approximately 70
+minutes. Both values now remain in `crossingTimeConflict` with source URLs and
+dates; neither is averaged. The route page explains the conflict, and the
+ferry unit test guards that it cannot be silently flattened. The remaining
+route/operator fare matrix and complete border process remain TBC.

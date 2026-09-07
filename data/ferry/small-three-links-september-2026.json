@@ -36,6 +36,21 @@
       "destination": "Quanzhou Shijing",
       "destinationOriginal": "泉州石井",
       "approximateCrossingMinutes": 60,
+      "crossingTimeConflict": [
+        {
+          "minutes": 60,
+          "source": "Maritime and Port Bureau Small Three Links sailing page",
+          "sourceUrl": "https://www.motcmpb.gov.tw/BoatSchedule?nodeId=380&siteId=1",
+          "accessed": "2026-09-06"
+        },
+        {
+          "minutes": 70,
+          "source": "Lieyu Township Office transport information",
+          "sourceUrl": "https://lieyu.kinmen.gov.tw/cp.aspx?n=A6488ABECB4F8E7D",
+          "accessed": "2026-09-07",
+          "pageUpdated": "2026-09-07"
+        }
+      ],
       "serviceDates": ["2026-09-02", "2026-09-04", "2026-09-06", "2026-09-08", "2026-09-10", "2026-09-12", "2026-09-14", "2026-09-16", "2026-09-18", "2026-09-20", "2026-09-22", "2026-09-24", "2026-09-26", "2026-09-28", "2026-09-30"],
       "departureSlots": {
         "kinmenToQuanzhou": ["09:50", "16:35"],
@@ -47,6 +62,15 @@
       "bookingContacts": {
         "kinmen": "海西企業（八方）082-324579; the PDF instructs passengers to buy at the terminal one hour before departure",
         "quanzhou": "五大洲（福建）外代（八方）0595-86097861"
+      },
+      "fareSnapshot": {
+        "oneWayAdultTwd": 650,
+        "cleaningChargeTwd": 100,
+        "halfFareTwd": 325,
+        "insuranceTicketTwd": 65,
+        "eligibilityNote": "The local official page displays half fare for ages 2–11, people aged 65 or older and people with disabilities; insurance ticket for children under 2.",
+        "asOf": "2026-09-07",
+        "sourceUrl": "https://lieyu.kinmen.gov.tw/cp.aspx?n=A6488ABECB4F8E7D"
       }
     }
   ],
@@ -81,6 +105,7 @@
     "The monthly tables are operational snapshots, not timeless frequency claims.",
     "The snapshot does not assert a permanent vessel-to-departure mapping after the stated effective periods.",
     "Current fares, terminal charges and complete border/check-in procedures remain separate date-sensitive fields until an official fare or terminal source is joined.",
-    "The extracted Matsu PDF contains a Fuao time cell adjacent to the Baisha/Huangqi table; this snapshot publishes only the unambiguous Baisha/Huangqi and Fuao/Langqi pairs without inferring an additional route."
+    "The extracted Matsu PDF contains a Fuao time cell adjacent to the Baisha/Huangqi table; this snapshot publishes only the unambiguous Baisha/Huangqi and Fuao/Langqi pairs without inferring an additional route.",
+    "The Kinmen–Quanzhou crossing-time sources disagree: the Maritime and Port Bureau sailing page says approximately 60 minutes, while the Lieyu Township Office transport page updated 2026-09-07 says approximately 70 minutes. Both values are retained."
   ]
 }
