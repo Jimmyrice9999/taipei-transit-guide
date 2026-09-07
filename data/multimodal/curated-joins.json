@@ -31,6 +31,36 @@
       "evidence": "official-access-chain",
       "source": "taitung-island-transport",
       "note": "Taitung County's official page says passengers can continue from the railway station by Taiwan Tourist Shuttle, Xingdong Bus or taxi to Fugang; this is an access chain, not evidence of a direct rail platform, timed transfer or guaranteed sailing connection."
+    },
+    {
+      "id": "kaohsiung-airport-krtc-access-chain",
+      "from": "Kaohsiung International Airport",
+      "to": "Kaohsiung Airport MRT station",
+      "modePair": "air-rail",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "kia-history",
+      "note": "The airport's own history page records the Kaohsiung MRT Red Line reaching the airport in 2008. This records the published airport-to-rail relationship without asserting a current entrance path, platform geometry or timed flight connection."
+    },
+    {
+      "id": "penghu-airport-public-bus-access-chain",
+      "from": "Penghu Airport",
+      "to": "Penghu Airport public-bus stop",
+      "modePair": "air-bus",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "penghu-ground",
+      "note": "Penghu Airport's own ground-transport page places the public-bus stop beside the south-side terminal exit and links county and Taiwan Tourist Shuttle services; it does not establish a current fare, frequency or timed onward connection."
+    },
+    {
+      "id": "hualien-airport-ubus-access-chain",
+      "from": "Hualien Airport",
+      "to": "Ubus 311A airport bus",
+      "modePair": "air-bus",
+      "status": "published-access-chain",
+      "evidence": "official-access-chain",
+      "source": "hualien-ground",
+      "note": "Hualien Airport's official external-transport page identifies Ubus 311A and a dated 2025-11-13 through 2026-03-28 four-trip enhancement; the schedule is not carried forward as current service after its printed end date."
     }
   ]
 }
