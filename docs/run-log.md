@@ -29389,3 +29389,48 @@ change reported:
     ℹ tests 147
     ℹ pass 147
     ℹ fail 0
+## Run 319 — Chiayi regional bus depth
+
+The Chiayi batch used the committed TDX national snapshot fetched 6 September
+2026: 11 Chiayi City Route records with 29 supplied SubRoutes variants, and 41
+Chiayi County Route records with 104 supplied variants. These are source-defined
+records and variants, not a timeless unified route count. The Highway Bureau's
+full urban-bus directory was also fetched to preserve the separate City
+Transportation Department and County Public Bus Office authority boundary.
+
+The full Chiayi County iBus pages were fetched directly from the official site
+after the browser reader returned a protocol error. The `Links` page identifies
+the county-developed smart-bus surface and exposes dynamic bus, stop, transfer
+planning and Happiness Bus reservation functions. The reservation page showed a
+maintenance notice directing users to telephone booking and publishes the
+example that Puzi, Dongshi and Budai can use any boarding/alighting points
+within 15 km for NT$100 per trip. The values are kept as a local published
+example, not a county-wide fare.
+
+Chiayi Bus's official BRT page was read in full. It links routes 7211, 7212 and
+the early 7212 branch, lists 19 stop positions in each displayed direction,
+and names Chiayi rear-station transfer centre, HSR Chiayi Station and Puzi
+Transfer Station. The page is an editorial corridor overlay; no timed rail or
+HSR interchange is asserted from the stop names alone. The current-city portal
+search did not produce a fetched primary route register, so the City source
+boundary remains the TDX snapshot plus the Highway Bureau directory.
+
+The initial fast gate exposed two real content issues rather than being waved
+through: the BRT route examples were moved out of a numeric spec value that the
+markdown test interprets as a unit-bearing value, and the already-committed
+Yilan directory sample was extended with one source-backed paragraph and a
+sentence-level citation so it clears the 300-word and claims-ratchet checks.
+The corrected fast gate reported:
+
+    citations: 1907 content files, 1848 with a sources: block
+      8922 citations resolved — 8373 to primary sources, 549 to secondary
+    citations: clean.
+    marker-audit: clean (1907 Markdown files checked)
+    conflicts: generated index is current.
+    search: generated index is current.
+    font-check: clean (2295 Han characters in 2+ character runs, all covered).
+    research: 319 file(s), 1230 recorded as checked and failed.
+    research: clean.
+    ℹ tests 147
+    ℹ pass 147
+    ℹ fail 0

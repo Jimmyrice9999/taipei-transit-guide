@@ -219,6 +219,60 @@ sources:
     kind: primary
     lang: zh-Hant
     note: The full operator timetable and fare-zone page.
+  - id: chiayi-city-route-tdx
+    title: Chiayi City city-bus route snapshot
+    titleOriginal: 嘉義市公車路線資料（TDX Route/City/Chiayi）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/Chiayi?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated TDX source records Chiayi City RouteUID-oriented records and supplied SubRoutes variants.
+  - id: chiayi-county-route-tdx
+    title: Chiayi County city-bus route snapshot
+    titleOriginal: 嘉義縣公車路線資料（TDX Route/City/ChiayiCounty）
+    publisher: Taiwan Ministry of Transportation and Communications TDX (交通部運輸資料流通服務平臺)
+    url: https://tdx.transportdata.tw/api/basic/v2/Bus/Route/City/ChiayiCounty?$format=JSON
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The dated TDX source records Chiayi County RouteUID-oriented records and supplied SubRoutes variants.
+  - id: chiayi-county-ibus
+    title: Chiayi County iBus
+    titleOriginal: 嘉義縣iBus
+    publisher: Chiayi County Government (嘉義縣政府)
+    url: https://chiayiibus.cyhg.gov.tw/Links
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official iBus page identifies the county-developed smart-bus site and exposes dynamic bus, stop, transfer and Happiness Bus reservation surfaces.
+  - id: chiayi-county-reservation
+    title: Chiayi County iBus reservation interface
+    titleOriginal: 嘉義縣iBus預約幸福巴士
+    publisher: Chiayi County Government (嘉義縣政府)
+    url: https://chiayiibus.cyhg.gov.tw/DynamicBusQuery
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full reservation page publishes its reservation fields, maintenance notice and the local 15-kilometre NT$100 example for Puzi, Dongshi and Budai.
+  - id: chiayi-bus-brt
+    title: BRT bus rapid transit
+    titleOriginal: BRT公車捷運
+    publisher: Chiayi Bus Co., Ltd. (嘉義汽車客運股份有限公司)
+    url: https://www.cibus.com.tw/brt3
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full operator page links 7211/7212 and publishes the two-direction stop tables, including the Chiayi rear-station transfer centre and HSR Chiayi Station.
+  - id: highway-city-bus-directory
+    title: Urban bus information
+    titleOriginal: 市區公車資訊
+    publisher: Highway Bureau, Ministry of Transportation and Communications (交通部公路局)
+    url: https://www.taiwanbus.tw/eBUSPage/link3.aspx
+    accessed: 2026-09-07
+    kind: primary
+    lang: zh-Hant
+    note: The full official directory identifies the separate City and County urban-bus authorities and inquiry contacts.
 ---
 
 This section records regional bus networks as dated source-backed data layers. It begins with Hsinchu because the city government's iBus portal publishes a route selector, route-detail responses, direction departure lists and ordered stop data in one public interface.[^hsinchu-portal][^hsinchu-detail][^hsinchu-roadline] The second layer is Taichung's official route-map CSV, which supplies route and stop records but no route-level departure-time field.[^taichung-dataset][^taichung-csv] The scope is deliberately regional: the national Highway Bureau timetable remains the separate [national intercity-coach layer](/bus/intercity/), while each city page names the boundary of its own publication.[^hsinchu-portal][^thb-intercity-timetable][^taichung-dataset]
@@ -234,6 +288,8 @@ The fourth entry is [Kaohsiung regional buses](/bus/regional/kaohsiung/).[^kaohs
 The fifth entry is [Taoyuan regional buses](/bus/regional/taoyuan/).[^taoyuan-route-tdx] Its 7 September 2026 TDX snapshot contains 412 route records and 714 supplied variants; the page uses the city’s current 106-to-5014 restructuring to explain how a corridor change, operator/service policy and dated fare evidence sit above the structured discovery layer.[^taoyuan-route-tdx][^taoyuan-106-5014] 桃小巴 is kept as a local policy/service category rather than flattened into a generic route taxonomy.[^taoyuan-dual-bus-plan]
 
 The sixth entry is [Pingtung regional buses](/bus/regional/pingtung/).[^pingtung-route-tdx] Its 7 September 2026 TDX snapshot contains 123 route records and 333 supplied variants, while Pingtung Bus’s current pages add route-specific timetable, fare-zone and accessibility evidence without pretending to reconcile every county, highway, township and tourist publication layer into one total.[^pingtung-route-tdx][^pingtung-operator-overview][^pingtung-schedule-513]
+
+The seventh entry is [Chiayi City and County regional buses](/bus/regional/chiayi/).[^chiayi-city-route-tdx][^chiayi-county-route-tdx] It keeps the two TDX jurisdictions separate, identifies the separate city/county public-bus authorities and county-developed iBus discovery surface,[^highway-city-bus-directory][^chiayi-county-ibus] adds Chiayi Bus's published BRT corridor and links the County iBus reservation boundary without treating a transfer-centre stop name as a timed interchange.[^chiayi-bus-brt][^chiayi-county-reservation]
 
 ## Coverage
 

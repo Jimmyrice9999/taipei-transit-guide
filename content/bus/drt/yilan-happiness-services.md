@@ -43,6 +43,8 @@ The visible Happiness Bus records include Sanxing's 藍線 and 橘線, 大同's 
 
 The same page lists Jiaoxi's 黃1 as 幸福小黃 and displays separate 正線、通勤線 and 假日線 stop patterns. That distinction is retained here: this is a demand-responsive taxi-bus directory record, not an ordinary fixed-route bus claim.[^thb-yilan-drt]
 
-The records carry different modification dates, including 113-04-22, 113-07-08, 113-11-27 and 115-06-24. Those dates are source metadata and do not establish a universal September 2026 timetable, fare, booking rule or contractor for every service.[^thb-yilan-drt]
+The first page is a directory view rather than a timetable: its columns are type, area, route name, route stops and modification time, and the pager reports page 1 of 11.[^thb-yilan-drt] The records carry different modification dates, including 113-04-22, 113-07-08, 113-11-27 and 115-06-24. Those dates are source metadata and do not establish a universal September 2026 timetable, fare, booking rule or contractor for every service.[^thb-yilan-drt]
+
+Read as a first-page sample, the entries span six named areas: Sanxing, Datong, Wujie, Nan'ao, Jiaoxi and Suao.[^thb-yilan-drt] The source presents route-stop text alongside the record date, so this page preserves the directory's editorial boundary rather than turning the sample into generated stop or timetable pages.[^thb-yilan-drt]
 
 The full county export, current operating-day tables, booking contacts, operator crosswalk and fare matrix remain TBC until the linked township, county or commissioning pages are fetched. This page therefore adds route-directory depth without manufacturing a complete live Yilan DRT inventory.[^thb-yilan-drt]
