@@ -29684,6 +29684,181 @@ corrected gate output was:
     ℹ fail 0
     native_exit=0
 
+### Run 319 verification evidence and handoff record (compiled 8 September 2026)
+
+Run 319's continuation closed against production head `e65f253c` before this
+documentation-only closing commit. The repository started this continuation
+with the known generated/untracked baseline of approximately 5,214 entries
+(screenshots, PDFs, probes and `.unsnooze/`). No cleanup, deletion, broad
+checkout or baseline staging was performed. No read-only scout subprocesses
+were used in this continuation; all source reads and all writes were handled
+by MAIN, sequentially. GitHub Actions was not queried because `gh` and the
+direct Actions API are unavailable locally.
+
+The final full gate exposed one real regression after the regional content
+batches: a long Chinese evaluation title in the Pingtung bus page was inside
+a Markdown code span. Code spans intentionally bypass the renderer's
+`lang="zh-Hant"` wrapper, so the full accessibility/content test reported an
+untagged Han string. The fix removed code formatting, without changing the
+claim or citation, in `content/bus/regional/pingtung.md`,
+`content/ferry/routes/green-island.md`,
+`content/ferry/routes/orchid-island.md` and
+`content/ferry/routes/penghu.md`. The required fresh build -> `npm run fonts`
+-> fresh build sequence completed with no missing Han glyphs. The final
+font-check covered 2,296 Han characters in 2+ character runs.
+
+The final production data boundaries are:
+
+- Small Three Links: two current Kinmen route families in the September 2026
+  snapshot. Shuitou-Xiamen Wutong is effective 1-30 September with 12
+  displayed departure slots in each direction and a date-specific roster of
+  ten vessels. Shuitou-Quanzhou Shijing is listed on 15 even-numbered dates,
+  with Kinmen departures at 09:50 and 16:35, return departures at 08:30 and
+  11:10, and Ba Fang / `八方輪`. The official sources disagree on the
+  crossing time (60 minutes in the MPB material versus 70 minutes on the
+  Lieyu Township page); both values remain published. The Matsu fixed schedule
+  is retained for 1 December 2025 through 30 November 2026, with vessel and
+  departure details separated from the route family.
+- Ferry inventory: the MPB ticketing directory snapshot has 12 named corridor
+  rows and 27 operator-listing rows, plus one dated South Sea Star 2 Penghu
+  schedule and operator-specific Budai-Magong, Green Island, Orchid Island,
+  Houbihu and Penghu snapshots. These are directory/listing measurements, not
+  a timeless total of unique routes, vessels or daily sailings; that total
+  remains TBC.
+- Domestic air: the CAA September 2026 workbook has 285 timetable rows, 48
+  directional route labels, 24 normalized undirected airport-pair families,
+  14 airport names and three operators. This is a dated timetable snapshot,
+  not a promise that every row operates on every date.
+- Bus discovery: the current national TDX snapshot contains 3,046 Route
+  records and 6,862 supplied SubRoutes variants across the 22-jurisdiction
+  structured layer. These are source records/variants, not timeless unique
+  public routes. Editorial depth was added or extended for Taoyuan, Pingtung,
+  Nantou, Yilan, Chiayi City/County, Keelung, Hualien and Changhua, while
+  existing structured and authored coverage for the other jurisdictions was
+  preserved.
+- Rural transport: the national dated MOTC measurement remains 507
+  Happiness Bus/Taxi services across 193 townships/districts and 95.10% rural
+  coverage. Hualien's separate official directory displays 80 areas, 281
+  routes, 47 rural areas and 209 routes; those incompatible scopes are kept as
+  a conflict, not added together.
+- Multimodal data: `data/multimodal/curated-joins.json` now contains six
+  evidence-backed access-chain records. New records cover Nangan-Fuao,
+  Taitung Airport-Fugang and Taitung Railway Station-Fugang. They are published
+  as access-chain or nearby evidence, not timed or guaranteed interchange
+  claims.
+
+The continuation also added Hualien's 9 TDX Route records/31 supplied variants,
+Hualien Transfer Station, Yilan's 72 Route records/187 variants and Yilan
+Transfer Station, Changhua's 17 Route records/46 variants, county bus fares
+and evaluation structure, Pingtung's evaluation status, municipal evaluation
+comparison material, dated Green Island operator detail, Penghu September
+schedule and Hai You's Budai-Magong September operator snapshot. The Hai You
+page displays 10:00 Budai -> Magong and 16:00 Magong -> Budai on its listed
+dates, a 2 September wind/wave suspension, and operator-specific full/half/
+insurance fares of NT$1,000/500/100 one-way and NT$1,950/975/195 return.
+
+Important limitations retained: Hualien's evaluation PDF fetch failed and its
+scores remain TBC; Hualien's TPASS page separately reports 25 TRA stations in
+the use-scope list and 22 sales locations; Penghu's South Sea query is a dated
+8-14 September display rather than a monthly total; ferry vessel rosters are
+not flattened into permanent assignments; and the domestic-air workbook is a
+dated schedule snapshot. MOOVO remains official-map/index evidence for
+Changhua and Yunlin because no stable public JSON endpoint was found. The
+service-quality canonical page was moved to
+`content/bus/network/service-quality.md`, and navigation/search links were
+corrected without leaving a stale canonical destination.
+
+Final verification outputs on the production tree:
+
+    npm run adversarial
+      16/16 cases behaved as specified
+
+    npm run gate:fast
+      citations: 1917 content files, 1858 with a sources: block
+      9008 citations resolved - 8459 to primary sources, 549 to secondary
+      citations: clean.
+      marker-audit: clean (1917 Markdown files checked)
+      font-check: clean (2296 Han characters in 2+ character runs, all covered)
+      research: 327 file(s), 1261 recorded as checked and failed.
+      research: clean.
+      tests 148 / pass 148 / fail 0
+
+    npm run gate:full
+      build: 6196 static pages; postbuild checked 5375 pages with no missing Han glyphs
+      Checked 2864606 internal links across 5375 pages.
+      tests 248 / pass 248 / fail 0
+      sourced 28019 (86%); TBC 4721 (14%); ASSERTED 0 (0%)
+      research: 327 file(s), 1261 recorded as checked and failed.
+      geometry audit passed; contrast audit passed; no broken links/fragments/orphans
+
+    npm run verify:browser
+      corpus=4290 pages; templates=79; pages visited=157 (canonical=79, extremes=78)
+      no page produces a document-level horizontal scrollbar
+      no painted box in .page-main runs under the spine
+      zero violations across 157 pages
+      1344 screenshots; 369 clipped to Chromium's capture limit
+      78/78 PDFs
+      browser verification clean
+
+    npm run verify:browser:full
+      corpus=4290 pages; templates=79; pages visited=4290
+      no page produces a document-level horizontal scrollbar
+      no painted box in .page-main runs under the spine
+      keyboard traversal: 157/157 selected pages
+      zero violations across 4290 pages
+      4557 screenshots; 1040 clipped to Chromium's capture limit
+      268/268 PDFs
+      browser verification clean
+      exit code 0
+
+The exhaustive screenshots were also used for visual checks of the 320px bike
+atlas, desktop bike atlas, ferry Penghu page, and regional bus pages in English
+and Traditional Chinese. The bike page wraps its atlas header and status/count
+content without clipping; the ferry and regional pages keep their source-date,
+facts and references hierarchy at phone and desktop widths. The 12,000px
+capture warnings are expected for genuinely long data pages and did not count
+as browser failures.
+
+Run 319 commits, chronological:
+
+    800b2d54 Run 319: add September Small Three Links snapshot
+    de2237b0 Run 319: add dated ferry and air snapshots
+    88c3d03b Run 319: deepen Taoyuan regional buses
+    dfa9d6a1 Run 319: deepen Pingtung buses and operator
+    9695b899 Run 319: deepen Nantou rural transport
+    92611c32 Run 319: deepen Yilan rural transport
+    51d52c74 Run 319: extend multimodal access chains
+    ad4c256c Run 319: publish domestic air route matrix
+    526dced2 Run 319: formalize ferry snapshot model
+    f21f4c38 Run 319: deepen Chiayi regional buses
+    6bdeb090 Run 319: deepen Small Three Links fares
+    aff868bf Run 319: deepen Chiayi Bus operator and terminal
+    81c65508 Run 319: add Keelung regional bus depth
+    079b69d4 Run 319: harden atlas mobile wrapping
+    f77aba13 Run 319: record final font-safe verification
+    99e5b42e Run 319: record exhaustive verification and handoff
+    9d2ffc5f Run 319: deepen Donggang Xiaoliuqiu ferry evidence
+    35b7e89d Run 319: add dated Green Island ferry snapshot
+    a92ad7d9 Run 319: deepen Yilan Happiness Bus directory
+    b9dd6e48 Run 319: record Yilan DRT fetch boundary
+    0ef2c674 Run 319: record Orchid Island ferry snapshot
+    68b261d0 Run 319: deepen Hsinchu bus fares
+    4c7f782f Run 319: deepen Pingtung Happiness Bus
+    b09e49bb Run 319: add Houbihu ferry date snapshot
+    f727ff83 Run 319: add Pingtung service evaluation status
+    023f6cd1 Run 319: add dated Green Island operator snapshot
+    1c625343 Run 319: add municipal bus evaluation comparison
+    ce534277 Run 319: extend curated airport access chains
+    3c9fe4cd Run 319: record continuation depth batches
+    a5d8d313 Run 319: refresh Penghu ferry snapshot
+    c81746b7 Run 319: add Budai Penghu operator snapshot
+    3f44c7a3 Run 319: add Hualien regional bus depth
+    15cb6214 Run 319: add Hualien Happiness Bus depth
+    f39da8fa Run 319: deepen Changhua regional buses
+    fed61811 Run 319: add Yilan regional bus and terminal depth
+    48ff75a8 Run 319: fix bus evaluation canonical link
+    e65f253c Run 319: restore Han language tagging in content
+
 ### Run 319 continuation batch — Changhua regional bus and evaluation depth (7 September 2026)
 
 Changhua was the next registry-only regional jurisdiction promoted to an
@@ -29891,6 +30066,15 @@ South Sea query. The data test checks snapshot source/query/status fields and
 the Budai–Magong route linkage without asserting a timeless route frequency or
 common fare. The conflicts index was regenerated from 99 records before the
 successful gate.
+
+### Run 319 final close (8 September 2026)
+
+This is the final close after the Hualien, Yilan and Changhua continuation
+batches in this log. The deliberate production head remains `e65f253c`; the
+closing documentation update records the exhaustive browser result without
+staging generated reports, PDFs, screenshots, probes or the `.unsnooze/`
+baseline. The final remote/local ref proof and documentation commit are
+recorded after the closing gate.
 
 Actual fast-gate output:
 
